@@ -43,7 +43,7 @@ export function Navbar() {
     >
       <div className="container-wide px-6 md:px-12">
         <nav className="flex items-center justify-between">
-          {/* Logo - much bigger */}
+          {/* Logo - 15x bigger */}
           <Link
             to="/"
             className="flex items-center"
@@ -51,7 +51,7 @@ export function Navbar() {
             <img 
               src={logoFotz} 
               alt="Fotz Studio" 
-              className="h-20 md:h-24 w-auto"
+              className="h-32 md:h-40 w-auto"
             />
           </Link>
 
