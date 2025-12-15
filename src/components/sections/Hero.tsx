@@ -114,7 +114,7 @@ export function Hero() {
             className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-border/30"
           >
             {[
-              { value: "1mln+", label: "Wyświetleń naszych treści" },
+              { value: "1mln+", label: "Wyświetleń treści miesięcznie" },
               { value: "160+", label: "Opinii na Google" },
               { value: "12+", label: "Lat doświadczenia" },
             ].map((stat, index) => (
