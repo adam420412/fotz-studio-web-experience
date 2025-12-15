@@ -2,8 +2,17 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Play, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Hero() {
+  const { t } = useLanguage();
+
+  const stats = [
+    { value: "1mln+", label: t("Wyświetleń treści miesięcznie", "Monthly content views") },
+    { value: "160+", label: t("Opinii na Google", "Google reviews") },
+    { value: "12+", label: t("Lat doświadczenia", "Years of experience") },
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
@@ -57,7 +66,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-gradient-brand"></span>
             </span>
             <span className="text-sm text-foreground font-medium">
-              Studio marketingu wzrostu • Poznań
+              {t("Studio marketingu wzrostu • Poznań", "Growth Marketing Studio • Poznań")}
             </span>
           </motion.div>
 
@@ -68,9 +77,11 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6"
           >
-            Projektujemy marketing,
+            {t("Projektujemy marketing,", "We design marketing")}
             <br />
-            <span className="text-gradient-premium">który realnie pozyskuje klientów</span>
+            <span className="text-gradient-premium">
+              {t("który realnie pozyskuje klientów", "that actually acquires customers")}
+            </span>
           </motion.h1>
 
           {/* Subheading */}
@@ -80,9 +91,15 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-10"
           >
-            Od strategii, przez content i wideo, po kampanie sprzedażowe.
+            {t(
+              "Od strategii, przez content i wideo, po kampanie sprzedażowe.",
+              "From strategy, through content and video, to sales campaigns."
+            )}
             <br className="hidden md:block" />
-            Kompleksowe wsparcie dla firm, które chcą rosnąć.
+            {t(
+              "Kompleksowe wsparcie dla firm, które chcą rosnąć.",
+              "Comprehensive support for companies that want to grow."
+            )}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -94,14 +111,14 @@ export function Hero() {
           >
             <Button variant="hero" size="xl" asChild className="group min-w-[220px]">
               <Link to="/kontakt">
-                Bezpłatna konsultacja
+                {t("Bezpłatna konsultacja", "Free consultation")}
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild className="group min-w-[220px]">
               <Link to="/realizacje">
                 <Play className="w-5 h-5" />
-                Zobacz realizacje
+                {t("Zobacz realizacje", "See our work")}
               </Link>
             </Button>
           </motion.div>
@@ -113,11 +130,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-border/30"
           >
-            {[
-              { value: "1mln+", label: "Wyświetleń treści miesięcznie" },
-              { value: "160+", label: "Opinii na Google" },
-              { value: "12+", label: "Lat doświadczenia" },
-            ].map((stat, index) => (
+            {stats.map((stat, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}

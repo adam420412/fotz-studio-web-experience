@@ -1,66 +1,96 @@
 import { Link } from "react-router-dom";
-import { Globe, Video, Target, Crown, ArrowRight } from "lucide-react";
+import { ArrowRight, Palette, Video, Megaphone, Globe } from "lucide-react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-
-const services = [
-  {
-    icon: Globe,
-    title: "Strony internetowe & widoczność",
-    description:
-      "Nowoczesne strony www i sklepy, które konwertują. SEO, które stawia Cię na pierwszej stronie Google.",
-    features: ["Strony www", "E-commerce", "SEO", "Analityka"],
-    href: "/uslugi/strony-internetowe",
-  },
-  {
-    icon: Video,
-    title: "Social media & video marketing",
-    description:
-      "Treści wideo i kampanie social, które budują społeczność i angażują odbiorców.",
-    features: ["Content", "Video", "Reels", "TikTok"],
-    href: "/uslugi/social-media",
-  },
-  {
-    icon: Target,
-    title: "Kampanie reklamowe & lead generation",
-    description:
-      "Performance marketing z mierzalnymi rezultatami. Google Ads, Meta Ads i LinkedIn.",
-    features: ["Google Ads", "Meta Ads", "LinkedIn", "Remarketing"],
-    href: "/uslugi/kampanie-reklamowe",
-  },
-  {
-    icon: Crown,
-    title: "Marketing premium & instytucje",
-    description:
-      "Kompleksowe strategie dla marek premium, instytucji kultury i organizatorów eventów.",
-    features: ["Strategia", "Branding", "Events", "PR"],
-    href: "/uslugi/marketing-premium",
-  },
-];
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 50, scale: 0.95 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    scale: 1,
-    transition: { 
-      duration: 0.6,
-    } 
-  },
-};
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Services() {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      icon: Palette,
+      title: t("Strategia & Branding", "Strategy & Branding"),
+      description: t(
+        "Budujemy fundamenty Twojej marki. Strategia, identyfikacja wizualna i komunikacja, która wyróżnia.",
+        "We build the foundations of your brand. Strategy, visual identity and communication that stands out."
+      ),
+      features: [
+        t("Strategia marki", "Brand strategy"),
+        t("Identyfikacja wizualna", "Visual identity"),
+        t("Naming", "Naming"),
+        t("Brandbook", "Brandbook"),
+      ],
+      href: "/uslugi",
+    },
+    {
+      icon: Video,
+      title: t("Content & Wideo", "Content & Video"),
+      description: t(
+        "Tworzymy treści, które angażują i sprzedają. Produkcja wideo, podcasty, social media content.",
+        "We create content that engages and sells. Video production, podcasts, social media content."
+      ),
+      features: [
+        t("Produkcja wideo", "Video production"),
+        t("Studio podcastowe", "Podcast studio"),
+        t("Social media", "Social media"),
+        t("Copywriting", "Copywriting"),
+      ],
+      href: "/uslugi",
+    },
+    {
+      icon: Megaphone,
+      title: t("Performance Marketing", "Performance Marketing"),
+      description: t(
+        "Kampanie reklamowe, które przynoszą mierzalne rezultaty. Meta Ads, Google Ads, LinkedIn.",
+        "Advertising campaigns that deliver measurable results. Meta Ads, Google Ads, LinkedIn."
+      ),
+      features: [
+        t("Meta Ads", "Meta Ads"),
+        t("Google Ads", "Google Ads"),
+        t("LinkedIn Ads", "LinkedIn Ads"),
+        t("Analityka", "Analytics"),
+      ],
+      href: "/uslugi",
+    },
+    {
+      icon: Globe,
+      title: t("Strony & E-commerce", "Websites & E-commerce"),
+      description: t(
+        "Projektujemy i wdrażamy strony internetowe oraz sklepy, które konwertują odwiedzających w klientów.",
+        "We design and implement websites and stores that convert visitors into customers."
+      ),
+      features: [
+        t("Strony WWW", "Websites"),
+        t("Sklepy online", "Online stores"),
+        t("Landing pages", "Landing pages"),
+        t("SEO", "SEO"),
+      ],
+      href: "/uslugi",
+    },
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1] as const,
+      },
+    },
+  };
+
   return (
     <section className="section-padding bg-background relative overflow-hidden">
       {/* Background decoration */}
@@ -100,14 +130,16 @@ export function Services() {
             transition={{ duration: 0.5 }}
             className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
           >
-            Co robimy
+            {t("Co robimy", "What we do")}
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            4 filary <span className="text-gradient-premium">Twojego wzrostu</span>
+            {t("4 filary", "4 pillars of")} <span className="text-gradient-premium">{t("Twojego wzrostu", "your growth")}</span>
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Kompleksowe wsparcie marketingowe w jednym miejscu.
-            Strategia, kreacja i performance pod jednym dachem.
+            {t(
+              "Kompleksowe wsparcie marketingowe w jednym miejscu. Strategia, kreacja i performance pod jednym dachem.",
+              "Comprehensive marketing support in one place. Strategy, creation and performance under one roof."
+            )}
           </p>
         </motion.div>
 
@@ -120,7 +152,7 @@ export function Services() {
           className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
         >
           {services.map((service, index) => (
-            <motion.div key={service.title} variants={itemVariants}>
+            <motion.div key={index} variants={itemVariants}>
               <Link
                 to={service.href}
                 className="group relative block p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/40 transition-all duration-500 overflow-hidden h-full hover-lift"
@@ -152,16 +184,16 @@ export function Services() {
                     {service.features.map((feature) => (
                       <span
                         key={feature}
-                        className="px-3 py-1 text-xs font-medium rounded-full bg-muted text-foreground/70 group-hover:bg-primary/10 group-hover:text-primary transition-colors"
+                        className="px-3 py-1 text-xs font-medium rounded-full bg-muted text-foreground/70"
                       >
                         {feature}
                       </span>
                     ))}
                   </div>
 
-                  {/* Arrow */}
+                  {/* Link */}
                   <div className="flex items-center gap-2 text-primary font-medium">
-                    <span>Dowiedz się więcej</span>
+                    <span>{t("Dowiedz się więcej", "Learn more")}</span>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-2" />
                   </div>
                 </div>
