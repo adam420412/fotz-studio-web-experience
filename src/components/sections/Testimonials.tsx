@@ -7,28 +7,24 @@ const testimonials = [
     role: "Właścicielka firmy",
     content: "Polecam Fotz Studio i współpracę z Panem Adamem. Strona internetowa zrobiona w takim terminie jak było ustalone, strona wygląda estetycznie i każdy detal jest dopracowany.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200",
   },
   {
     name: "Robert Zyśk",
     role: "Przedsiębiorca",
     content: "Chciałbym polecić FOTZ jako profesjonalnego i rzetelnego partnera w zakresie projektowania stron internetowych. Od samego początku współpraca przebiegała sprawnie.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200",
   },
   {
     name: "Edyta",
     role: "Klientka",
     content: "Polecam Fotz Studio, a szczególnie współpracę z Panem Adamem. Bardzo doceniam świetny kontakt i szybkie działanie - konkretna robota!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200",
   },
   {
     name: "Olivier G",
     role: "Stały klient",
     content: "Polecam z całego serca... współpracowałem z panem Adamem kilkukrotnie i za każdym razem wszystko szło szybko, sprawnie i bardzo dobrze.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200",
   },
 ];
 
@@ -120,11 +116,9 @@ export function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
+                <div className="w-12 h-12 rounded-full bg-gradient-brand flex items-center justify-center text-white font-bold text-lg">
+                  {testimonial.name.charAt(0)}
+                </div>
                 <div>
                   <div className="font-semibold text-foreground">{testimonial.name}</div>
                   <div className="text-sm text-foreground/60">{testimonial.role}</div>

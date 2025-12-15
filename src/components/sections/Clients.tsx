@@ -38,14 +38,14 @@ const clientTypes = [
   },
 ];
 
-// Real Fotz Studio clients
+// Real Fotz Studio clients with placeholder logos
 const trustedBy = [
-  "Enea Stadion",
-  "Lech Poznań", 
-  "RPPG",
-  "TP Energa",
-  "Verthé",
-  "FPS Cegielski",
+  { name: "Enea Stadion", initials: "ES" },
+  { name: "Lech Poznań", initials: "LP" }, 
+  { name: "RPPG", initials: "RP" },
+  { name: "TP Energa", initials: "TE" },
+  { name: "Verthé", initials: "VT" },
+  { name: "FPS Cegielski", initials: "FPS" },
 ];
 
 export function Clients() {
@@ -133,20 +133,25 @@ export function Clients() {
           transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <p className="text-sm text-foreground/50 uppercase tracking-wider mb-8">
+          <p className="text-sm text-foreground/50 uppercase tracking-wider mb-10">
             Zaufali nam między innymi
           </p>
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
-            {trustedBy.map((name, index) => (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            {trustedBy.map((client, index) => (
               <motion.div
-                key={name}
+                key={client.name}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="text-xl md:text-2xl font-heading font-semibold text-foreground/30 hover:text-gradient-premium transition-all duration-300 cursor-default"
+                className="group flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border/30 hover:border-primary/30 transition-all duration-300"
               >
-                {name}
+                <div className="w-16 h-16 rounded-xl bg-gradient-brand flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300">
+                  {client.initials}
+                </div>
+                <span className="text-sm font-medium text-foreground/70 group-hover:text-foreground transition-colors text-center">
+                  {client.name}
+                </span>
               </motion.div>
             ))}
           </div>
