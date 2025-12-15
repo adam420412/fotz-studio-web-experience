@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function FinalCTA() {
+  const { t } = useLanguage();
+
   return (
     <section className="section-padding bg-card relative overflow-hidden">
       {/* Background */}
@@ -42,12 +45,14 @@ export function FinalCTA() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-            Porozmawiajmy o{" "}
-            <span className="text-gradient-premium">Twoim marketingu</span>
+            {t("Porozmawiajmy o", "Let's talk about")}{" "}
+            <span className="text-gradient-premium">{t("Twoim marketingu", "your marketing")}</span>
           </h2>
           <p className="text-foreground/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-            Bezpłatna konsultacja, bez zobowiązań. Opowiedz o swoim biznesie, 
-            a pokażemy, jak możemy pomóc Ci rosnąć.
+            {t(
+              "Bezpłatna konsultacja, bez zobowiązań. Opowiedz o swoim biznesie, a pokażemy, jak możemy pomóc Ci rosnąć.",
+              "Free consultation, no obligations. Tell us about your business, and we'll show you how we can help you grow."
+            )}
           </p>
 
           <motion.div
@@ -59,14 +64,14 @@ export function FinalCTA() {
           >
             <Button variant="premium" size="xl" asChild className="min-w-[250px]">
               <Link to="/kontakt" className="group">
-                Umów bezpłatną konsultację
+                {t("Umów bezpłatną konsultację", "Book a free consultation")}
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild className="min-w-[200px]">
               <a href="tel:+48790814814">
                 <Phone className="w-5 h-5" />
-                Zadzwoń teraz
+                {t("Zadzwoń teraz", "Call now")}
               </a>
             </Button>
           </motion.div>
@@ -84,7 +89,7 @@ export function FinalCTA() {
               <span>Plac Wolności 16, Poznań</span>
             </div>
             <span className="hidden sm:block text-border">•</span>
-            <span>Preferujesz online? Też możemy.</span>
+            <span>{t("Preferujesz online? Też możemy.", "Prefer online? We can do that too.")}</span>
           </motion.div>
         </motion.div>
       </div>

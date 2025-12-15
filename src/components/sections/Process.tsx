@@ -1,34 +1,55 @@
-import { Search, Lightbulb, Rocket } from "lucide-react";
+import { Target, Rocket, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
-
-const steps = [
-  {
-    number: "01",
-    icon: Search,
-    title: "Strategia i analiza",
-    description:
-      "Poznajemy Twój biznes, analizujemy rynek i konkurencję. Definiujemy cele i KPI. Tworzymy plan działania.",
-    details: ["Audyt obecnej sytuacji", "Badanie konkurencji", "Określenie celów"],
-  },
-  {
-    number: "02",
-    icon: Lightbulb,
-    title: "Projekt i wdrożenie",
-    description:
-      "Projektujemy kreacje, budujemy strony, uruchamiamy kampanie. Wszystko zgodnie z planem i harmonogramem.",
-    details: ["Kreacja i design", "Development", "Launch kampanii"],
-  },
-  {
-    number: "03",
-    icon: Rocket,
-    title: "Skalowanie i optymalizacja",
-    description:
-      "Monitorujemy wyniki, optymalizujemy działania, skalujemy to, co działa. Regularnie raportujemy postępy.",
-    details: ["Analityka", "A/B testing", "Raporty i wnioski"],
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Process() {
+  const { t } = useLanguage();
+
+  const steps = [
+    {
+      number: "01",
+      icon: Target,
+      title: t("Strategia", "Strategy"),
+      description: t(
+        "Analizujemy Twój biznes, rynek i konkurencję. Definiujemy cele i tworzymy plan działania.",
+        "We analyze your business, market and competition. We define goals and create an action plan."
+      ),
+      details: [
+        t("Audyt obecnych działań", "Current activities audit"),
+        t("Analiza konkurencji", "Competition analysis"),
+        t("Strategia komunikacji", "Communication strategy"),
+      ],
+    },
+    {
+      number: "02",
+      icon: Rocket,
+      title: t("Wdrożenie", "Implementation"),
+      description: t(
+        "Realizujemy zaplanowane działania. Tworzymy content, uruchamiamy kampanie, budujemy markę.",
+        "We execute planned activities. We create content, launch campaigns, build the brand."
+      ),
+      details: [
+        t("Produkcja contentu", "Content production"),
+        t("Kampanie reklamowe", "Ad campaigns"),
+        t("Optymalizacja", "Optimization"),
+      ],
+    },
+    {
+      number: "03",
+      icon: TrendingUp,
+      title: t("Skalowanie", "Scaling"),
+      description: t(
+        "Analizujemy wyniki, optymalizujemy działania i skalujemy to, co działa najlepiej.",
+        "We analyze results, optimize activities and scale what works best."
+      ),
+      details: [
+        t("Raportowanie", "Reporting"),
+        t("A/B testy", "A/B testing"),
+        t("Wzrost ROI", "ROI growth"),
+      ],
+    },
+  ];
+
   return (
     <section className="section-padding bg-background relative overflow-hidden">
       {/* Background Elements */}
@@ -59,13 +80,16 @@ export function Process() {
             transition={{ duration: 0.5 }}
             className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
           >
-            Jak pracujemy
+            {t("Jak pracujemy", "How we work")}
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            Prosty <span className="text-gradient-premium">proces współpracy</span>
+            {t("Prosty", "Simple")} <span className="text-gradient-premium">{t("proces współpracy", "collaboration process")}</span>
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Trzy proste kroki do skutecznego marketingu. Jasno, konkretnie, bez bełkotu.
+            {t(
+              "Trzy proste kroki do skutecznego marketingu. Jasno, konkretnie, bez bełkotu.",
+              "Three simple steps to effective marketing. Clear, specific, no fluff."
+            )}
           </p>
         </motion.div>
 
