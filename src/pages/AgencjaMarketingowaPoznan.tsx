@@ -62,25 +62,25 @@ export default function AgencjaMarketingowaPoznan() {
     {
       icon: Palette,
       title: "Branding – budowanie silnej marki",
-      description: "Tworzymy spójną tożsamość wizualną, która wyróżni Twoją firmę na rynku poznańskim i nie tylko.",
+      description: "Zapewniamy kompleksowe usługi brandingowe, które pomogą Twojej firmie w budowaniu silnej i rozpoznawalnej marki. Agencja marketingowa w Poznaniu oferuje stworzenie unikalnej identyfikacji wizualnej, która dotrze do grupy docelowej i przekona nowych klientów do skorzystania z oferty Twojej firmy.",
       link: "/branding/"
     },
     {
       icon: Globe,
-      title: "Tworzenie stron internetowych",
-      description: "Projektujemy nowoczesne strony www, które konwertują odwiedzających w klientów.",
+      title: "Tworzenie stron internetowych – profesjonalne rozwiązania",
+      description: "Specjalizujemy się w projektowaniu responsywnych stron www, dostosowanych do potrzeb wymagających klientów. Wykorzystujemy różne systemy zarządzania treścią (CMS), takie jak WordPress, Joomla, Drupal, Webflow i Shopify, aby umożliwić klientom samodzielną edycję witryny. Nasze strony www są estetyczne, funkcjonalne i zoptymalizowane pod kątem SEO.",
       link: "/strony-internetowe-poznan/"
     },
     {
       icon: Share2,
-      title: "Social media marketing",
-      description: "Zarządzamy profilami w social mediach, tworząc angażujące treści i budując społeczność wokół Twojej marki.",
+      title: "Social media – skuteczna obecność w sieci",
+      description: "Agencja social media w Poznaniu specjalizuje się w prowadzeniu profili w mediach społecznościowych. Tworzymy angażujące treści, prowadzimy kampanie reklamowe na Facebooku, Instagramie i LinkedInie, a także analizujemy wyniki, aby stale optymalizować działania i zwiększać zasięgi. Z nami dotrzesz do nowych klientów i rozwiniesz swój wizerunek.",
       link: "/agencja-social-media-poznan/"
     },
     {
       icon: Target,
-      title: "Kampanie reklamowe",
-      description: "Prowadzimy skuteczne kampanie Google Ads i Meta Ads, które generują realne wyniki biznesowe.",
+      title: "Reklama – kampanie przynoszące rezultaty",
+      description: "Nasza agencja marketingowa z Poznania specjalizuje się w kampaniach reklamowych SEM, w tym Google Ads i Meta Ads. Dbamy o to, aby Twoje reklamy były efektywne i przynosiły realne rezultaty w postaci zwiększonej sprzedaży i rozpoznawalności Twojej marki. Analizujemy dane, optymalizujemy budżet i działamy tak, aby pozyskiwać maksymalny ROAS.",
       link: "/kampanie-reklamowe-poznan/"
     }
   ];
@@ -90,25 +90,25 @@ export default function AgencjaMarketingowaPoznan() {
       number: "01",
       icon: Search,
       title: "Analiza potrzeb klienta",
-      description: "Poznajemy Twój biznes, cele i wyzwania. Analizujemy rynek i konkurencję w Poznaniu."
+      description: "Nasz proces współpracy rozpoczyna się od dogłębnej analizy potrzeb klienta. Podczas rozmów i badań dokładnie poznajemy specyfikę Twojej firmy, jej cele biznesowe oraz grupę docelową. Na tej podstawie przygotowujemy indywidualną wycenę projektu i przechodzimy do kolejnych etapów działania."
     },
     {
       number: "02",
       icon: FileText,
       title: "Opracowanie strategicznego planu",
-      description: "Tworzymy kompleksową strategię marketingową dopasowaną do Twoich potrzeb i budżetu."
+      description: "Na podstawie przeprowadzonej analizy tworzymy kompleksową strategię marketingową dopasowaną do Twoich potrzeb, budżetu i celów biznesowych. Plan obejmuje wybór kanałów komunikacji, harmonogram działań i mierzalne wskaźniki sukcesu."
     },
     {
       number: "03",
       icon: Rocket,
       title: "Wdrażanie działań marketingowych",
-      description: "Realizujemy zaplanowane działania, od brandingu przez social media po kampanie reklamowe."
+      description: "Realizujemy zaplanowane działania zgodnie z harmonogramem. Od brandingu przez social media po kampanie reklamowe – każdy element jest starannie wdrażany przez nasz zespół doświadczonych specjalistów."
     },
     {
       number: "04",
       icon: BarChart3,
       title: "Optymalizacja i raportowanie",
-      description: "Monitorujemy wyniki, optymalizujemy działania i dostarczamy przejrzyste raporty."
+      description: "Monitorujemy wyniki za pomocą narzędzi analitycznych i regularnie raportujemy postępy. Na podstawie danych optymalizujemy działania, aby maksymalizować efektywność i ROI Twoich inwestycji marketingowych."
     }
   ];
 
@@ -116,40 +116,52 @@ export default function AgencjaMarketingowaPoznan() {
     {
       icon: MapPin,
       title: "Przewaga lokalnego partnerstwa",
-      description: "Jako agencja marketingowa z siedzibą w centrum Poznania rozumiemy specyfikę lokalnego rynku. Znamy poznańskich przedsiębiorców i ich potrzeby."
+      description: "Współpraca z agencją marketingową z Poznania i okolic to gwarancja lepszego zrozumienia lokalnego rynku. Agencja z Poznania rozumie specyfikę działania firm w regionie i potrafi skuteczniej dopasować strategię marketingową do potrzeb i oczekiwań Twojej firmy. Zamiast uniwersalnych rozwiązań, otrzymasz działania skrojone na miarę."
     },
     {
       icon: Users,
-      title: "Strategia dostosowana do potrzeb",
-      description: "Nie oferujemy gotowych szablonów. Każda strategia marketingowa jest tworzona indywidualnie pod Twój biznes i cele."
+      title: "Strategia marketingowa dostosowana do potrzeb",
+      description: "Skuteczna agencja social media to taka, która tworzy strategie marketingowe dopasowane do Twoich celów biznesowych. Przed rozpoczęciem działań reklamowych, agencja analizuje Twoją markę, konkurencję i grupę docelową, aby stworzyć plan działania, który przyniesie realne rezultaty w postaci zwiększonej sprzedaży i rozpoznawalności."
     },
     {
       icon: Award,
-      title: "Doświadczenie w marketingu internetowym",
-      description: "Ponad 12 lat doświadczenia i współpraca z markami takimi jak Enea Stadion czy RPPG to gwarancja profesjonalizmu."
+      title: "Doświadczenie w branży marketingu internetowego",
+      description: "Wybierając agencję marketingową w Poznaniu, warto sprawdzić jej doświadczenie w branży marketingu internetowego. Agencja powinna mieć na swoim koncie sukcesy w prowadzeniu kampanii reklamowych w Google Ads, na Facebooku, Instagramie, LinkedInie i TikToku, a także w pozycjonowaniu stron www i sklepów internetowych."
     }
   ];
 
   const faqItems = [
     {
-      question: "Ile kosztują usługi agencji marketingowej w Poznaniu?",
-      answer: "Koszt usług zależy od zakresu współpracy. Oferujemy zarówno jednorazowe projekty, jak i stałą obsługę marketingową. Skontaktuj się z nami, aby otrzymać indywidualną wycenę dopasowaną do Twojego budżetu."
+      question: "Czym wyróżnia się marketing internetowy z Poznania i jak agencja pomoże mojemu e-commerce?",
+      answer: "Nasza agencja specjalizuje się w marketingu internetowym z Poznania, łącząc znajomość lokalnego rynku z kompleksowymi działaniami dla e-commerce — od pozycjonowania stron i sklepów internetowych, przez PPC, po content marketing. Dzięki temu szybciej zwiększamy widoczność w wyszukiwarce i konwersje Twojej strony."
     },
     {
-      question: "Jak długo trwa realizacja strategii marketingowej?",
-      answer: "Pierwsze efekty działań marketingowych widoczne są zazwyczaj po 2-3 miesiącach. Pełna realizacja strategii to proces ciągły, który dostosowujemy do zmieniających się potrzeb rynku."
+      question: "Czy agencja może prowadzić kampanie na LinkedIn dla klientów B2B i jak analizować efekty?",
+      answer: "Tak — prowadzimy kampanie na LinkedIn dedykowane B2B. Nasi doświadczeni specjaliści przygotowują treści i targetowanie, a następnie monitorują i analizują wyniki (leadów, zaangażowania, kosztu pozyskania), by optymalizować kampanie i poprawiać ROI."
     },
     {
-      question: "Czy współpracujecie tylko z firmami z Poznania?",
-      answer: "Choć nasza siedziba znajduje się w Poznaniu, współpracujemy z klientami z całej Polski. Lokalizacja w centrum miasta ułatwia jednak spotkania osobiste z poznańskimi przedsiębiorcami."
+      question: "Jakie są korzyści z pozycjonowania stron i sklepów internetowych przez lokalną agencję?",
+      answer: "Pozycjonowanie stron i sklepów internetowych przez lokalną agencję przynosi lepsze dopasowanie do zapytań użytkowników z Poznania — znamy lokalny rynek, słowa kluczowe i oczekiwania odbiorców, budując silniejszą widoczność w wyszukiwarce, co przekłada się na większy ruch i sprzedaż."
     },
     {
-      question: "Jakie branże obsługujecie?",
-      answer: "Mamy doświadczenie w różnych branżach – od sportu i eventów (Enea Stadion), przez nieruchomości premium, po e-commerce. Każdy projekt traktujemy indywidualnie."
+      question: "Jak agencja podejmuje decyzje o strategii content marketing i kto prowadzi tworzenie treści?",
+      answer: "Strategię content marketing opracowujemy na podstawie analizy odbiorców i budowy lejków sprzedażowych — nasi doświadczeni specjaliści prowadzą tworzenie treści, uwzględniając SEO, potrzeby B2B lub e-commerce oraz cele kampanii, aby content wspierał konwersje i pozycjonowanie."
     },
     {
-      question: "Czy oferujecie bezpłatną konsultację?",
-      answer: "Tak, pierwsza konsultacja jest bezpłatna. Podczas spotkania poznamy Twoje potrzeby i zaproponujemy rozwiązania dopasowane do Twojego biznesu."
+      question: "Czy agencja oferuje kompleksowe działania łączące PPC, SEO i social media?",
+      answer: "Tak, oferujemy kompleksowe działania — łączymy PPC, SEO, social media i content marketing w spójną strategię. Monitorowanie odbywa się za pomocą narzędzi analitycznych, raportów i regularnych spotkań, dzięki czemu możemy szybko optymalizować kampanie i poprawiać wydajność Twojej strony."
+    },
+    {
+      question: "Jak agencja pomaga w optymalizacji strony dla wyszukiwarek i jakie efekty można oczekiwać?",
+      answer: "Pomagamy w technicznym SEO, optymalizacji treści i budowaniu linków, aby Twoja strona lepiej wypadała w wyszukiwarce. Efekty to wyższe pozycje słów kluczowych, większy ruch organiczny i długoterminowy wzrost konwersji, zwłaszcza dla stron i sklepów internetowych."
+    },
+    {
+      question: "Jakie wsparcie daje agencja dla firm B2B i jak mierzy się sukces kampanii LinkedIn oraz content marketing?",
+      answer: "Dla B2B oferujemy dedykowane strategie generowania leadów, profile LinkedIn i treści eksperckie. Sukces mierzymy liczbą kwalifikowanych leadów, zaangażowaniem odbiorców i wskaźnikami konwersji — regularnie analizujemy dane, by optymalizować działania i zwiększać wartość marketingową."
+    },
+    {
+      question: "Czy w agencji pracują doświadczeni specjaliści i jak wygląda współpraca przy długoterminowych kampaniach?",
+      answer: "Tak, w naszej agencji pracują doświadczeni specjaliści z obszarów SEO, PPC, social media i content marketing. Współpraca przy długoterminowych kampaniach opiera się na planowaniu celów, regularnych raportach, monitorowaniu efektów i stałej komunikacji — zapewniamy transparentność i elastyczność działań."
     }
   ];
 
@@ -219,8 +231,9 @@ export default function AgencjaMarketingowaPoznan() {
               variants={fadeIn}
               className="text-lg md:text-xl text-foreground/70 mb-10 max-w-2xl mx-auto"
             >
-              Jesteśmy poznańską agencją marketingową, która łączy kreatywność ze strategicznym podejściem. 
-              Pomagamy lokalnym firmom budować silne marki i pozyskiwać klientów przez internet.
+              Szukasz agencji marketingowej w Poznaniu, która naprawdę rozumie Twoje potrzeby? 
+              Potrzebujesz partnera, który pomoże Ci dotrzeć do nowych klientów i zbudować silną markę w mediach społecznościowych? 
+              Dobrze trafiłeś. Oferujemy kompleksowe usługi marketingowe, od strategii po realizację kampanii reklamowych.
             </motion.p>
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -268,7 +281,9 @@ export default function AgencjaMarketingowaPoznan() {
                 </span>
               </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-                Lokalna obecność, globalne standardy. Łączymy znajomość poznańskiego rynku z najlepszymi praktykami marketingu internetowego.
+                Wybór odpowiedniej agencji marketingowej to kluczowy element sukcesu Twojej firmy. 
+                Agencja marketingowa w Poznaniu powinna rozumieć specyfikę lokalnego rynku i być w stanie efektywnie dotrzeć do Twojej grupy docelowej. 
+                Zamiast wybierać przypadkowych wykonawców, postaw na agencję, która analizuje potrzeby i buduje długofalowe strategie.
               </p>
             </motion.div>
 
@@ -450,8 +465,8 @@ export default function AgencjaMarketingowaPoznan() {
                     Enea Stadion Poznań
                   </h3>
                   <p className="text-foreground/70 mb-4">
-                    Kompleksowa obsługa marketingowa jednego z największych obiektów sportowych w Polsce. 
-                    Social media, content marketing i kampanie reklamowe.
+                    Prezentujemy konkretne studium przypadku, demonstrujące jak nasze działania w marketingu internetowym przełożyły się na wzrost sprzedaży i rozpoznawalność marki jednego z naszych kluczowych klientów z Poznania. 
+                    Szczegółowo opisujemy strategię, wykorzystane narzędzia, takie jak Google Ads i Facebook, oraz uzyskane ROAS.
                   </p>
                   <span className="inline-flex items-center text-[#75143F] font-medium">
                     Zobacz case study
@@ -473,8 +488,9 @@ export default function AgencjaMarketingowaPoznan() {
                   ))}
                 </div>
                 <blockquote className="text-foreground/80 italic mb-6">
-                  "Współpraca z Fotz Studio to strzał w dziesiątkę. Profesjonalne podejście, kreatywne rozwiązania 
-                  i realne efekty. Polecam każdej firmie z Poznania, która szuka skutecznej agencji marketingowej."
+                  "Posłuchaj, co mówią nasi klienci z Poznania i okolic. Ich opinie potwierdzają, że nasza agencja marketingowa to nie tylko wykonawca, 
+                  ale przede wszystkim partner, który rozumie potrzeby biznesu i potrafi stworzyć skuteczne strategie marketingowe. 
+                  Dzięki nam dotarli do nowych klientów, rozwinęli swój wizerunek w mediach społecznościowych i zwiększyli sprzedaż."
                 </blockquote>
                 <div>
                   <p className="font-semibold text-foreground">Zadowolony Klient</p>
@@ -521,9 +537,14 @@ export default function AgencjaMarketingowaPoznan() {
               {/* Contact Form */}
               <motion.div variants={fadeIn}>
                 <div className="p-8 rounded-2xl bg-gradient-to-br from-[#75143F]/5 to-[#0F3053]/5 border border-foreground/10">
-                  <h3 className="text-xl font-heading font-semibold text-foreground mb-6">
+                  <h3 className="text-xl font-heading font-semibold text-foreground mb-4">
                     Umów się na konsultację
                   </h3>
+                  <p className="text-foreground/70 text-sm mb-6">
+                    Zastanawiasz się, jak nasza agencja marketingowa z Poznania może pomóc Twojej firmie? 
+                    Skontaktuj się z nami, aby umówić się na bezpłatną konsultację. Podczas spotkania przeanalizujemy Twoje potrzeby, 
+                    cele biznesowe i grupę docelową, a następnie stworzymy plan działania dopasowany do Twojego budżetu i oczekiwań.
+                  </p>
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
@@ -625,9 +646,14 @@ export default function AgencjaMarketingowaPoznan() {
               {/* Contact Info */}
               <motion.div variants={fadeIn} className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-heading font-semibold text-foreground mb-6">
+                  <h3 className="text-xl font-heading font-semibold text-foreground mb-4">
                     Nasze biuro w Poznaniu
                   </h3>
+                  <p className="text-foreground/70 text-sm mb-6">
+                    Zapraszamy do naszego biura w Poznaniu, gdzie możemy omówić Twoje potrzeby i cele biznesowe osobiście. 
+                    Nasza agencja marketingowa działa lokalnie, ale obsługuje klientów z całej Polski i Europy. 
+                    Specjalizujemy się w marketingu internetowym z Poznania, social media, SEO i kampaniach reklamowych w Google Ads i mediach społecznościowych.
+                  </p>
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#75143F]/20 to-[#0F3053]/20 flex items-center justify-center flex-shrink-0">
