@@ -37,13 +37,13 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
         isScrolled
-          ? "bg-background/80 backdrop-blur-xl border-b border-border/50 py-4"
-          : "bg-transparent py-6"
+          ? "bg-background/90 backdrop-blur-xl border-b border-border/50 py-3"
+          : "bg-transparent py-5"
       )}
     >
       <div className="container-wide px-6 md:px-12">
         <nav className="flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - bigger size */}
           <Link
             to="/"
             className="flex items-center"
@@ -51,11 +51,11 @@ export function Navbar() {
             <img 
               src={logoFotz} 
               alt="Fotz Studio" 
-              className="h-10 w-auto"
+              className="h-14 md:h-16 w-auto"
             />
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - white text */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -64,14 +64,14 @@ export function Navbar() {
                 className={cn(
                   "text-sm font-medium transition-colors relative group",
                   location.pathname === link.href
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "text-foreground"
+                    : "text-foreground/80 hover:text-foreground"
                 )}
               >
                 {link.name}
                 <span
                   className={cn(
-                    "absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300",
+                    "absolute -bottom-1 left-0 h-0.5 bg-gradient-brand transition-all duration-300",
                     location.pathname === link.href
                       ? "w-full"
                       : "w-0 group-hover:w-full"
@@ -123,8 +123,8 @@ export function Navbar() {
               className={cn(
                 "text-lg font-medium py-2 transition-colors",
                 location.pathname === link.href
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "text-foreground"
+                  : "text-foreground/70 hover:text-foreground"
               )}
             >
               {link.name}

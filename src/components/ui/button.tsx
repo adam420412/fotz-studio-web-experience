@@ -11,13 +11,16 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-border bg-transparent text-foreground hover:bg-secondary hover:border-primary/50",
+        outline: "border border-border bg-transparent text-foreground hover:bg-card hover:border-primary/50",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "text-foreground hover:bg-secondary hover:text-foreground",
+        ghost: "text-foreground hover:bg-card hover:text-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-primary to-orange-500 text-primary-foreground font-semibold hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5",
-        heroOutline: "border-2 border-foreground/20 bg-foreground/5 text-foreground backdrop-blur-sm hover:bg-foreground/10 hover:border-foreground/40",
-        cta: "bg-primary text-primary-foreground font-semibold hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/30",
+        // Brand gradient button with glow effect
+        hero: "bg-gradient-brand text-white font-semibold hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5 border-0",
+        heroOutline: "border-2 border-foreground/30 bg-foreground/5 text-foreground backdrop-blur-sm hover:bg-foreground/10 hover:border-foreground/50",
+        cta: "bg-gradient-brand text-white font-semibold hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5",
+        // Premium gradient with stronger glow
+        premium: "bg-gradient-brand-premium text-white font-bold hover:shadow-2xl hover:shadow-primary/50 hover:-translate-y-1",
       },
       size: {
         default: "h-10 px-4 py-2",
