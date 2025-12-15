@@ -86,10 +86,10 @@ export function CaseStudies() {
               transition={{ duration: 0.5 }}
               className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
             >
-              Case Studies
+              Dowody skuteczności
             </motion.span>
             <h2 className="text-3xl md:text-5xl font-heading font-bold">
-              Zobacz <span className="text-gradient">efekty naszej pracy</span>
+              Studia przypadków <span className="text-gradient-premium">i sukcesy klientów</span>
             </h2>
           </div>
           <motion.div

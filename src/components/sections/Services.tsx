@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Palette, Video, Megaphone, Globe } from "lucide-react";
+import { ArrowRight, Palette, Megaphone, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -8,62 +8,47 @@ export function Services() {
 
   const services = [
     {
-      icon: Palette,
-      title: t("Strategia & Branding", "Strategy & Branding"),
-      description: t(
-        "Budujemy fundamenty Twojej marki. Strategia, identyfikacja wizualna i komunikacja, która wyróżnia.",
-        "We build the foundations of your brand. Strategy, visual identity and communication that stands out."
-      ),
-      features: [
-        t("Strategia marki", "Brand strategy"),
-        t("Identyfikacja wizualna", "Visual identity"),
-        t("Naming", "Naming"),
-        t("Brandbook", "Brandbook"),
-      ],
-      href: "/uslugi",
-    },
-    {
-      icon: Video,
-      title: t("Content & Wideo", "Content & Video"),
-      description: t(
-        "Tworzymy treści, które angażują i sprzedają. Produkcja wideo, podcasty, social media content.",
-        "We create content that engages and sells. Video production, podcasts, social media content."
-      ),
-      features: [
-        t("Produkcja wideo", "Video production"),
-        t("Studio podcastowe", "Podcast studio"),
-        t("Social media", "Social media"),
-        t("Copywriting", "Copywriting"),
-      ],
-      href: "/uslugi",
-    },
-    {
       icon: Megaphone,
-      title: t("Performance Marketing", "Performance Marketing"),
+      title: t("Kampanie reklamowe dostosowane do Twoich potrzeb", "Advertising campaigns tailored to your needs"),
       description: t(
-        "Kampanie reklamowe, które przynoszą mierzalne rezultaty. Meta Ads, Google Ads, LinkedIn.",
-        "Advertising campaigns that deliver measurable results. Meta Ads, Google Ads, LinkedIn."
+        "Jako agencja marketingowa oferujemy kompleksowy zakres usług, obejmujący tworzenie i realizację kampanii reklamowych na miarę Twoich potrzeb. Specjalizujemy się w kampaniach Meta Ads i Google Ads, zapewniając skuteczne dotarcie do Twojej grupy docelowej i maksymalny zwrot z inwestycji.",
+        "As a marketing agency, we offer a comprehensive range of services, including creating and executing advertising campaigns tailored to your needs. We specialize in Meta Ads and Google Ads campaigns, ensuring effective reach to your target audience and maximum ROI."
       ),
       features: [
         t("Meta Ads", "Meta Ads"),
         t("Google Ads", "Google Ads"),
-        t("LinkedIn Ads", "LinkedIn Ads"),
-        t("Analityka", "Analytics"),
+        t("Remarketing", "Remarketing"),
+        t("Optymalizacja ROI", "ROI optimization"),
+      ],
+      href: "/uslugi",
+    },
+    {
+      icon: Palette,
+      title: t("Reklama w social media: Facebook, Instagram, TikTok", "Social media advertising: Facebook, Instagram, TikTok"),
+      description: t(
+        "Skuteczna obecność w social media to klucz do budowania świadomości marki i angażowania klientów. Nasza agencja oferuje kompleksową obsługę social media, od tworzenia strategii content marketing po realizację kampanii reklamowych na Facebooku, Instagramie i TikToku.",
+        "Effective social media presence is the key to building brand awareness and engaging customers. Our agency offers comprehensive social media management, from content marketing strategy to advertising campaigns on Facebook, Instagram and TikTok."
+      ),
+      features: [
+        t("Facebook Ads", "Facebook Ads"),
+        t("Instagram Ads", "Instagram Ads"),
+        t("TikTok Ads", "TikTok Ads"),
+        t("Content marketing", "Content marketing"),
       ],
       href: "/uslugi",
     },
     {
       icon: Globe,
-      title: t("Strony & E-commerce", "Websites & E-commerce"),
+      title: t("Google Ads i optymalizacja wyników kampanii", "Google Ads and campaign optimization"),
       description: t(
-        "Projektujemy i wdrażamy strony internetowe oraz sklepy, które konwertują odwiedzających w klientów.",
-        "We design and implement websites and stores that convert visitors into customers."
+        "Google Ads to potężne narzędzie, które, właściwie wykorzystane, generuje wysoki przychód. Nasza agencja specjalizuje się w tworzeniu i optymalizacji kampanii Google Ads, zapewniając maksymalny zwrot z inwestycji. Dbamy o każdy detal, od doboru słów kluczowych po tworzenie angażujących kreacji.",
+        "Google Ads is a powerful tool that, when used properly, generates high revenue. Our agency specializes in creating and optimizing Google Ads campaigns, ensuring maximum ROI. We take care of every detail, from keyword selection to creating engaging creatives."
       ),
       features: [
-        t("Strony WWW", "Websites"),
-        t("Sklepy online", "Online stores"),
-        t("Landing pages", "Landing pages"),
-        t("SEO", "SEO"),
+        t("Search Ads", "Search Ads"),
+        t("Display Ads", "Display Ads"),
+        t("YouTube Ads", "YouTube Ads"),
+        t("Performance Max", "Performance Max"),
       ],
       href: "/uslugi",
     },
@@ -130,15 +115,15 @@ export function Services() {
             transition={{ duration: 0.5 }}
             className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
           >
-            {t("Co robimy", "What we do")}
+            {t("Nasze usługi", "Our services")}
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            {t("4 filary", "4 pillars of")} <span className="text-gradient-premium">{t("Twojego wzrostu", "your growth")}</span>
+            {t("Nasze", "Our")} <span className="text-gradient-premium">{t("usługi reklamowe", "advertising services")}</span>
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
             {t(
-              "Kompleksowe wsparcie marketingowe w jednym miejscu. Strategia, kreacja i performance pod jednym dachem.",
-              "Comprehensive marketing support in one place. Strategy, creation and performance under one roof."
+              "Kompleksowy zakres usług marketingowych dostosowanych do Twoich celów biznesowych.",
+              "Comprehensive range of marketing services tailored to your business goals."
             )}
           </p>
         </motion.div>
@@ -149,7 +134,7 @@ export function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={itemVariants}>

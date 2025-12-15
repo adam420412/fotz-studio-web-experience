@@ -63,14 +63,13 @@ export function Testimonials() {
             transition={{ duration: 0.5 }}
             className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
           >
-            Opinie klientów
+            Referencje
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            Co mówią <span className="text-gradient">nasi klienci</span>
+            Referencje i opinie <span className="text-gradient-premium">zadowolonych klientów</span>
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            Ponad 160 opinii na Google ze średnią 5.0. 
-            100% naszych klientów poleca nas znajomym.
+            Zadowolenie naszych klientów jest dla nas priorytetem. Ich referencje i opinie stanowią najlepszy dowód na skuteczność naszych działań.
           </p>
           
           {/* Google Rating Badge */}
