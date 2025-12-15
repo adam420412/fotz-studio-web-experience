@@ -463,12 +463,6 @@ const Realizacje = () => {
                       </div>
                     )}
                   </motion.div>
-                        <p className="text-foreground/60 text-sm mt-2 line-clamp-2">
-                          {project.description}
-                        </p>
-                      </div>
-                    </div>
-                  </motion.div>
                 ))}
             </AnimatePresence>
           </div>
