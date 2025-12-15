@@ -3,22 +3,30 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/contexts/LanguageContext";
 import logoFotz from "@/assets/logo-fotz.png";
 
-const navLinks = [
-  { name: "Usługi", href: "/uslugi" },
-  { name: "Realizacje", href: "/realizacje" },
-  { name: "Dla kogo", href: "/dla-kogo" },
-  { name: "Studio", href: "/studio-podcastowe" },
-  { name: "Blog", href: "/blog" },
-  { name: "O nas", href: "/o-nas" },
-  { name: "Kontakt", href: "/kontakt" },
+const navLinksData = [
+  { name: { pl: "Usługi", en: "Services" }, href: "/uslugi" },
+  { name: { pl: "Realizacje", en: "Portfolio" }, href: "/realizacje" },
+  { name: { pl: "Dla kogo", en: "For whom" }, href: "/dla-kogo" },
+  { name: { pl: "Studio", en: "Studio" }, href: "/studio-podcastowe" },
+  { name: { pl: "Blog", en: "Blog" }, href: "/blog" },
+  { name: { pl: "O nas", en: "About us" }, href: "/o-nas" },
+  { name: { pl: "Kontakt", en: "Contact" }, href: "/kontakt" },
 ];
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { language, t } = useLanguage();
+
+  const navLinks = navLinksData.map(link => ({
+    name: link.name[language],
+    href: link.href
+  }));
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,11 +89,12 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* Language Switcher & CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
+            <LanguageSwitcher />
             <Button variant="hero" size="lg" asChild>
               <Link to="/kontakt" className="group">
-                Bezpłatna konsultacja
+                {t("Bezpłatna konsultacja", "Free consultation")}
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
@@ -130,9 +139,12 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
+          <div className="pt-4">
+            <LanguageSwitcher />
+          </div>
           <Button variant="hero" size="lg" className="mt-4" asChild>
             <Link to="/kontakt">
-              Bezpłatna konsultacja
+              {t("Bezpłatna konsultacja", "Free consultation")}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>
