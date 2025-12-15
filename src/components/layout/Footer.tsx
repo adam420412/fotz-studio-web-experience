@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoFotz from "@/assets/logo-fotz.png";
 
 const footerLinks = {
   uslugi: [
@@ -40,9 +41,13 @@ export function Footer() {
             <div className="lg:col-span-2">
               <Link
                 to="/"
-                className="text-2xl font-heading font-bold text-foreground inline-block mb-4"
+                className="inline-block mb-4"
               >
-                Fotz<span className="text-primary">.</span>Studio
+                <img 
+                  src={logoFotz} 
+                  alt="Fotz Studio" 
+                  className="h-10 w-auto"
+                />
               </Link>
               <p className="text-muted-foreground mb-6 max-w-sm">
                 Studio marketingu wzrostu. Projektujemy marketing, 

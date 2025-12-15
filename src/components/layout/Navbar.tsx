@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logoFotz from "@/assets/logo-fotz.png";
 
 const navLinks = [
   { name: "Usługi", href: "/uslugi" },
@@ -48,7 +49,7 @@ export function Navbar() {
             className="flex items-center"
           >
             <img 
-              src="/logo-fotz.jpg" 
+              src={logoFotz} 
               alt="Fotz Studio" 
               className="h-10 w-auto"
             />
