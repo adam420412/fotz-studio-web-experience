@@ -12,7 +12,7 @@ const footerLinks = {
   lokalne: [
     { name: "Strony internetowe Poznań", href: "/uslugi/strony-internetowe-poznan" },
     { name: "Social Media Poznań", href: "/uslugi/social-media-poznan" },
-    { name: "Kampanie reklamowe Poznań", href: "/uslugi/kampanie-reklamowe-poznan" },
+    { name: "Marketing Poznań", href: "/uslugi/marketing-poznan" },
   ],
   firma: [
     { name: "O nas", href: "/o-nas" },
@@ -23,7 +23,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com/fotzstudio", label: "Instagram" },
+  { icon: Instagram, href: "https://instagram.com/fotz.pl", label: "Instagram" },
   { icon: Facebook, href: "https://facebook.com/fotzstudio", label: "Facebook" },
   { icon: Linkedin, href: "https://linkedin.com/company/fotzstudio", label: "LinkedIn" },
   { icon: Youtube, href: "https://youtube.com/@fotzstudio", label: "YouTube" },
@@ -31,26 +31,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t border-border">
-      {/* CTA Section */}
-      <div className="section-padding border-b border-border">
-        <div className="container-wide text-center">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            Gotowy na <span className="text-gradient">wzrost?</span>
-          </h2>
-          <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Porozmawiajmy o Twoim projekcie. Bezpłatna konsultacja pomoże nam 
-            zrozumieć Twoje potrzeby i zaproponować najlepsze rozwiązania.
-          </p>
-          <Button variant="hero" size="xl" asChild>
-            <Link to="/kontakt" className="group">
-              Umów bezpłatną konsultację
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </Button>
-        </div>
-      </div>
-
+    <footer className="bg-background border-t border-border">
       {/* Main Footer */}
       <div className="section-padding py-16">
         <div className="container-wide">
@@ -64,32 +45,32 @@ export function Footer() {
                 Fotz<span className="text-primary">.</span>Studio
               </Link>
               <p className="text-muted-foreground mb-6 max-w-sm">
-                Agencja marketingowa nowej generacji. Projektujemy marketing, 
+                Studio marketingu wzrostu. Projektujemy marketing, 
                 który realnie pozyskuje klientów.
               </p>
               
               {/* Contact Info */}
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <MapPin className="w-5 h-5 text-primary" />
+                  <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                   <span>Plac Wolności 16, 61-739 Poznań</span>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <Phone className="w-5 h-5 text-primary" />
-                  <a href="tel:+48123456789" className="hover:text-foreground transition-colors">
-                    +48 123 456 789
+                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
+                  <a href="tel:+48790814814" className="hover:text-foreground transition-colors">
+                    +48 790 814 814
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground">
-                  <Mail className="w-5 h-5 text-primary" />
-                  <a href="mailto:hello@fotz.pl" className="hover:text-foreground transition-colors">
-                    hello@fotz.pl
+                  <Mail className="w-5 h-5 text-primary flex-shrink-0" />
+                  <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors">
+                    adam@fotz.pl
                   </a>
                 </div>
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-4">
+              <div className="flex gap-3">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
@@ -113,7 +94,7 @@ export function Footer() {
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                     >
                       {link.name}
                     </Link>
@@ -129,7 +110,7 @@ export function Footer() {
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                     >
                       {link.name}
                     </Link>
@@ -145,7 +126,7 @@ export function Footer() {
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                     >
                       {link.name}
                     </Link>

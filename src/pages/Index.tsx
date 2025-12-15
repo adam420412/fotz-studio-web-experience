@@ -5,6 +5,7 @@ import { CaseStudies } from "@/components/sections/CaseStudies";
 import { Clients } from "@/components/sections/Clients";
 import { Studio } from "@/components/sections/Studio";
 import { Process } from "@/components/sections/Process";
+import { FinalCTA } from "@/components/sections/FinalCTA";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Clients />
       <Studio />
       <Process />
+      <FinalCTA />
     </Layout>
   );
 };
