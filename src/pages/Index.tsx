@@ -5,6 +5,7 @@ import { Services } from "@/components/sections/Services";
 import { CaseStudies } from "@/components/sections/CaseStudies";
 import { Clients } from "@/components/sections/Clients";
 import { Studio } from "@/components/sections/Studio";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { Process } from "@/components/sections/Process";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Preloader } from "@/components/Preloader";
@@ -31,6 +32,7 @@ const Index = () => {
         <Hero />
         <Services />
         <CaseStudies />
+        <Testimonials />
         <Clients />
         <Studio />
         <Process />

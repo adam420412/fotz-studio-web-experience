@@ -69,7 +69,7 @@ export function Studio() {
             </motion.span>
             <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
               Biuro i studio w sercu{" "}
-              <span className="text-gradient-premium">Poznania</span>
+              <span className="text-gradient">Poznania</span>
             </h2>
             <p className="text-foreground/70 text-lg mb-8">
               Nie jesteśmy agencją zdalną. Mamy realne biuro, studio produkcyjne 
@@ -118,7 +118,7 @@ export function Studio() {
             </motion.div>
           </motion.div>
 
-          {/* Images Grid */}
+          {/* Images Grid - Real Fotz Studio photos */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -136,7 +136,7 @@ export function Studio() {
             >
               <div className="relative h-full rounded-2xl overflow-hidden border border-border/30">
                 <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069"
+                  src="https://fotz.pl/wp-content/uploads/2023/02/DSC05712.jpeg"
                   alt="Biuro Fotz Studio"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
@@ -154,8 +154,8 @@ export function Studio() {
             >
               <div className="aspect-square rounded-2xl overflow-hidden border border-border/30">
                 <img
-                  src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070"
-                  alt="Studio podcastowe"
+                  src="https://fotz.pl/wp-content/uploads/2021/11/2022-11-28-e1675607839895.jpg"
+                  alt="Studio podcastowe Fotz"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -169,8 +169,8 @@ export function Studio() {
             >
               <div className="aspect-square rounded-2xl overflow-hidden border border-border/30">
                 <img
-                  src="https://images.unsplash.com/photo-1606836576983-8b458e75221d?q=80&w=2070"
-                  alt="Sprzęt video"
+                  src="https://fotz.pl/wp-content/uploads/2024/10/Cegielski-Mockup-Strona-Internetowa.png"
+                  alt="Realizacja Fotz Studio"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
