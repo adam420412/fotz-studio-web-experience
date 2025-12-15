@@ -33,7 +33,7 @@ export function WhyUs() {
   ];
 
   return (
-    <section className="section-padding bg-card relative overflow-hidden">
+    <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-card relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div

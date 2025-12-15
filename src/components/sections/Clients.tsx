@@ -11,7 +11,6 @@ const clientTypes = [
     description:
       "Budujemy silną obecność lokalnych firm w internecie. SEO lokalne, mapy Google i kampanie geotargetowane.",
     href: "/dla-kogo/firmy-lokalne",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070",
   },
   {
     icon: ShoppingBag,
@@ -20,7 +19,6 @@ const clientTypes = [
     description:
       "Strategia e-commerce, performance marketing i automatyzacja sprzedaży dla sklepów i firm B2B.",
     href: "/dla-kogo/ecommerce",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
   },
   {
     icon: Crown,
@@ -29,7 +27,6 @@ const clientTypes = [
     description:
       "Wyrafinowany marketing dla marek premium. Pozycjonowanie, ekskluzywny content i influencer marketing.",
     href: "/dla-kogo/marki-premium",
-    image: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070",
   },
   {
     icon: CalendarDays,
@@ -38,17 +35,17 @@ const clientTypes = [
     description:
       "Marketing eventowy i promocja wydarzeń kulturalnych. Kampanie sprzedaży biletów i budowanie zasięgów.",
     href: "/dla-kogo/instytucje",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2070",
   },
 ];
 
+// Real Fotz Studio clients
 const trustedBy = [
   "Enea Stadion",
   "Lech Poznań", 
-  "MTP Poznań",
-  "Arena Poznań",
-  "TP Energa",
   "RPPG",
+  "TP Energa",
+  "Verthé",
+  "FPS Cegielski",
 ];
 
 export function Clients() {
@@ -94,7 +91,7 @@ export function Clients() {
         </motion.div>
 
         {/* Client Types */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {clientTypes.map((type, index) => (
             <motion.div
               key={type.title}
@@ -105,34 +102,23 @@ export function Clients() {
             >
               <Link
                 to={type.href}
-                className="group relative block h-full rounded-2xl overflow-hidden border border-border/30 hover:border-primary/30 transition-all duration-500 hover-lift"
+                className="group relative block h-full rounded-2xl overflow-hidden border border-border/30 hover:border-primary/30 transition-all duration-500 hover-lift bg-card p-8"
               >
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                  <img
-                    src={type.image}
-                    alt={type.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/50" />
+                {/* Icon */}
+                <div className="w-14 h-14 rounded-xl bg-gradient-brand flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <type.icon className="w-7 h-7 text-white" />
                 </div>
-
-                {/* Content */}
-                <div className="relative z-10 p-6 flex flex-col h-full min-h-[280px] justify-end">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <type.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-heading font-bold mb-1 group-hover:text-gradient-premium transition-colors">
-                    {type.title}
-                  </h3>
-                  <p className="text-sm text-primary mb-2">{type.subtitle}</p>
-                  <p className="text-sm text-foreground/60 line-clamp-2">
-                    {type.description}
-                  </p>
-                  <div className="flex items-center gap-2 text-primary text-sm font-medium mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-                    <span>Dowiedz się więcej</span>
-                    <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
-                  </div>
+                
+                <h3 className="text-xl font-heading font-bold mb-2 group-hover:text-gradient-premium transition-colors">
+                  {type.title}
+                </h3>
+                <p className="text-sm text-primary mb-3">{type.subtitle}</p>
+                <p className="text-sm text-foreground/60 leading-relaxed mb-4">
+                  {type.description}
+                </p>
+                <div className="flex items-center gap-2 text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                  <span>Dowiedz się więcej</span>
+                  <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
                 </div>
               </Link>
             </motion.div>
