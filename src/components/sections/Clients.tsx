@@ -3,7 +3,7 @@ import { Building2, ShoppingBag, Crown, CalendarDays, ArrowRight } from "lucide-
 import { motion } from "framer-motion";
 
 // Client logos imports
-import eneaLogo from "@/assets/clients/enea-stadion.svg";
+import eneaLogo from "@/assets/clients/enea-stadion.png";
 import lechLogo from "@/assets/clients/lech-poznan.png";
 import rppgLogo from "@/assets/clients/rppg.svg";
 import fpsLogo from "@/assets/clients/fps.png";
@@ -157,7 +157,7 @@ export function Clients() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="group flex items-center justify-center p-6 md:p-8 rounded-xl bg-[#1e1e2e] hover:bg-[#282840] transition-all duration-300 aspect-[4/3]"
+                className="group flex items-center justify-center p-6 md:p-8 rounded-xl bg-white hover:bg-gray-50 transition-all duration-300 aspect-[4/3]"
               >
                 <img 
                   src={client.logo} 
