@@ -77,10 +77,10 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6"
           >
-            {t("Projektujemy marketing,", "We design marketing")}
+            {t("Agencja Marketingowa,", "Marketing Agency")}
             <br />
             <span className="text-gradient-premium">
-              {t("który realnie pozyskuje klientów", "that actually acquires customers")}
+              {t("która projektuje realny wzrost firm", "that designs real business growth")}
             </span>
           </motion.h1>
 
@@ -89,16 +89,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-10"
+            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10"
           >
             {t(
-              "Od strategii, przez content i wideo, po kampanie sprzedażowe.",
-              "From strategy, through content and video, to sales campaigns."
-            )}
-            <br className="hidden md:block" />
-            {t(
-              "Kompleksowe wsparcie dla firm, które chcą rosnąć.",
-              "Comprehensive support for companies that want to grow."
+              "Wybierz agencję marketingową, która rozumie Twoje cele biznesowe. Z nami zyskasz partnera, który zadba o Twój marketing internetowy, zwiększy przychód i zbuduje silną świadomość marki.",
+              "Choose a marketing agency that understands your business goals. With us, you gain a partner who will take care of your internet marketing, increase revenue, and build strong brand awareness."
             )}
           </motion.p>
 
