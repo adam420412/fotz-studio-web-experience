@@ -9,6 +9,10 @@ import Index from "./pages/Index";
 import Uslugi from "./pages/Uslugi";
 import Realizacje from "./pages/Realizacje";
 import CaseStudyEnea from "./pages/CaseStudyEnea";
+import CaseStudyRPPG from "./pages/CaseStudyRPPG";
+import CaseStudyFabrykaVirali from "./pages/CaseStudyFabrykaVirali";
+import CaseStudyFriendlyGas from "./pages/CaseStudyFriendlyGas";
+import CaseStudyFPS from "./pages/CaseStudyFPS";
 import Kontakt from "./pages/Kontakt";
 import ONas from "./pages/ONas";
 import Blog from "./pages/Blog";
@@ -32,6 +36,10 @@ const App = () => (
             <Route path="/uslugi" element={<Uslugi />} />
             <Route path="/realizacje" element={<Realizacje />} />
             <Route path="/realizacje/enea-stadion" element={<CaseStudyEnea />} />
+            <Route path="/realizacje/rppg" element={<CaseStudyRPPG />} />
+            <Route path="/realizacje/fabryka-virali" element={<CaseStudyFabrykaVirali />} />
+            <Route path="/realizacje/friendly-gas" element={<CaseStudyFriendlyGas />} />
+            <Route path="/realizacje/fps-cegielski" element={<CaseStudyFPS />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/o-nas" element={<ONas />} />
             <Route path="/blog" element={<Blog />} />

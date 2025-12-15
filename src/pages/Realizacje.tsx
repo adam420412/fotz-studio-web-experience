@@ -26,6 +26,15 @@ const categories = [
 
 const projects = [
   {
+    id: "rppg",
+    title: "RPPG Group",
+    category: "Strony www",
+    description: "Strona internetowa, SEO i produkcja foto/video dla Rady Polskich Przedsiębiorców Globalnych.",
+    image: rppgImg,
+    featured: false,
+    hasCase: true,
+  },
+  {
     id: "enea-stadion",
     title: "Enea Stadion Poznań",
     category: "Social Media",
@@ -35,22 +44,13 @@ const projects = [
     hasCase: true,
   },
   {
-    id: "rppg",
-    title: "RPPG Group",
-    category: "Strony www",
-    description: "Strona internetowa, SEO i produkcja foto/video dla Rady Polskich Przedsiębiorców Globalnych.",
-    image: rppgImg,
-    featured: false,
-    hasCase: false,
-  },
-  {
     id: "fps-cegielski",
     title: "FPS Poznań (Cegielski)",
     category: "Strony www",
     description: "Nowoczesna strona internetowa dla historycznej fabryki pojazdów szynowych z Poznania.",
     image: fpsCegielskiImg,
     featured: false,
-    hasCase: false,
+    hasCase: true,
   },
   {
     id: "fabryka-virali",
@@ -58,6 +58,24 @@ const projects = [
     category: "Social Media",
     description: "Strategia social media, SEO i produkcja materiałów foto/video.",
     image: fabrykaViraliImg,
+    featured: false,
+    hasCase: true,
+  },
+  {
+    id: "friendly-gas",
+    title: "Friendly Gas",
+    category: "Branding",
+    description: "Strona www, SEO, grafika i produkcja foto/video dla firmy z branży energetycznej.",
+    image: friendlyGasImg,
+    featured: false,
+    hasCase: true,
+  },
+  {
+    id: "cute-dumpling",
+    title: "Cute as a Dumpling",
+    category: "E-commerce",
+    description: "Sklep internetowy z ozdobami świątecznymi. Design, UX i integracje.",
+    image: cuteDumplingImg,
     featured: false,
     hasCase: false,
   },
@@ -94,24 +112,6 @@ const projects = [
     category: "Strony www",
     description: "Portal internetowy z automatyzacją i funkcjami e-commerce.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
-    featured: false,
-    hasCase: false,
-  },
-  {
-    id: "friendly-gas",
-    title: "Friendly Gas",
-    category: "Branding",
-    description: "Strona www, SEO, grafika i produkcja foto/video dla firmy z branży energetycznej.",
-    image: friendlyGasImg,
-    featured: false,
-    hasCase: false,
-  },
-  {
-    id: "cute-dumpling",
-    title: "Cute as a Dumpling",
-    category: "E-commerce",
-    description: "Sklep internetowy z ozdobami świątecznymi. Design, UX i integracje.",
-    image: cuteDumplingImg,
     featured: false,
     hasCase: false,
   },
@@ -175,15 +175,6 @@ const projects = [
     category: "Strony www",
     description: "Strona www, SEO i produkcja foto/video dla firmy instalacyjnej.",
     image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070",
-    featured: false,
-    hasCase: false,
-  },
-  {
-    id: "ipersonel",
-    title: "Ipersonel",
-    category: "Strony www",
-    description: "Strona www, SEO, grafika i produkcja foto/video dla agencji HR.",
-    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2074",
     featured: false,
     hasCase: false,
   },
@@ -433,7 +424,7 @@ const Realizacje = () => {
           </motion.p>
 
           {/* Projects Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             <AnimatePresence mode="popLayout">
               {filteredProjects
                 .filter((p) => !p.featured)
@@ -446,25 +437,32 @@ const Realizacje = () => {
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                   >
-                    <div className="group relative block rounded-2xl overflow-hidden bg-muted h-full border border-border/30 hover:border-primary/30 transition-all duration-500 hover-lift">
-                      {/* Image */}
-                      <div className="relative aspect-[4/3] overflow-hidden">
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                    {project.hasCase ? (
+                      <Link to={`/realizacje/${project.id}`} className="group relative block rounded-2xl overflow-hidden bg-muted h-full border border-border/30 hover:border-primary/30 transition-all duration-500 hover-lift">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 p-5">
+                          <span className="text-primary text-xs font-medium uppercase tracking-wider">{project.category}</span>
+                          <h3 className="text-lg font-heading font-bold mt-1 group-hover:text-gradient-premium transition-colors">{project.title}</h3>
+                          <p className="text-foreground/60 text-sm mt-2 line-clamp-2">{project.description}</p>
+                        </div>
+                      </Link>
+                    ) : (
+                      <div className="group relative block rounded-2xl overflow-hidden bg-muted h-full border border-border/30 hover:border-primary/30 transition-all duration-500 hover-lift">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                          <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                        </div>
+                        <div className="absolute bottom-0 left-0 right-0 p-5">
+                          <span className="text-primary text-xs font-medium uppercase tracking-wider">{project.category}</span>
+                          <h3 className="text-lg font-heading font-bold mt-1 group-hover:text-gradient-premium transition-colors">{project.title}</h3>
+                          <p className="text-foreground/60 text-sm mt-2 line-clamp-2">{project.description}</p>
+                        </div>
                       </div>
-
-                      {/* Content */}
-                      <div className="absolute bottom-0 left-0 right-0 p-5">
-                        <span className="text-primary text-xs font-medium uppercase tracking-wider">
-                          {project.category}
-                        </span>
-                        <h3 className="text-lg font-heading font-bold mt-1 group-hover:text-gradient-premium transition-colors">
-                          {project.title}
-                        </h3>
+                    )}
+                  </motion.div>
                         <p className="text-foreground/60 text-sm mt-2 line-clamp-2">
                           {project.description}
                         </p>
