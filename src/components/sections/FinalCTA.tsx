@@ -45,13 +45,13 @@ export function FinalCTA() {
           className="max-w-3xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-            {t("Porozmawiajmy o", "Let's talk about")}{" "}
-            <span className="text-gradient-premium">{t("Twoim marketingu", "your marketing")}</span>
+            {t("Skontaktuj się", "Contact")}{" "}
+            <span className="text-gradient-premium">{t("z nami", "us")}</span>
           </h2>
           <p className="text-foreground/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
             {t(
-              "Bezpłatna konsultacja, bez zobowiązań. Opowiedz o swoim biznesie, a pokażemy, jak możemy pomóc Ci rosnąć.",
-              "Free consultation, no obligations. Tell us about your business, and we'll show you how we can help you grow."
+              "Nie czekaj, aż konkurencja Cię wyprzedzi. Skontaktuj się z naszą agencją już dziś i umów się na bezpłatną konsultację. Porozmawiajmy o Twoich celach biznesowych i o tym, jak możemy Ci pomóc osiągnąć sukces.",
+              "Don't wait for the competition to get ahead of you. Contact our agency today and schedule a free consultation. Let's talk about your business goals and how we can help you succeed."
             )}
           </p>
 

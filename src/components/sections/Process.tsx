@@ -9,42 +9,42 @@ export function Process() {
     {
       number: "01",
       icon: Target,
-      title: t("Strategia", "Strategy"),
+      title: t("Analiza i planowanie strategii", "Analysis and strategy planning"),
       description: t(
-        "Analizujemy Twój biznes, rynek i konkurencję. Definiujemy cele i tworzymy plan działania.",
-        "We analyze your business, market and competition. We define goals and create an action plan."
+        "Proces współpracy z naszą agencją marketingową rozpoczyna się od dogłębnej analizy Twojej firmy, konkurencji i rynku. Przeprowadzamy szczegółowy audyt Twojej obecnej strategii marketingowej oraz analityki witryny i ruchu na stronie.",
+        "The collaboration process with our marketing agency begins with an in-depth analysis of your company, competition and market. We conduct a detailed audit of your current marketing strategy and website analytics and traffic."
       ),
       details: [
-        t("Audyt obecnych działań", "Current activities audit"),
+        t("Audyt strategii", "Strategy audit"),
         t("Analiza konkurencji", "Competition analysis"),
-        t("Strategia komunikacji", "Communication strategy"),
+        t("Cele biznesowe", "Business goals"),
       ],
     },
     {
       number: "02",
       icon: Rocket,
-      title: t("Wdrożenie", "Implementation"),
+      title: t("Wdrożenie i zarządzanie kampaniami", "Implementation and campaign management"),
       description: t(
-        "Realizujemy zaplanowane działania. Tworzymy content, uruchamiamy kampanie, budujemy markę.",
-        "We execute planned activities. We create content, launch campaigns, build the brand."
+        "Po opracowaniu strategii przechodzimy do jej wdrożenia i zarządzania kampaniami reklamowymi. Wykorzystujemy najnowsze narzędzia i technologie, w tym AI i automatyzację, aby zoptymalizować kampanie Google Ads i social media.",
+        "After developing the strategy, we move to its implementation and advertising campaign management. We use the latest tools and technologies, including AI and automation, to optimize Google Ads and social media campaigns."
       ),
       details: [
-        t("Produkcja contentu", "Content production"),
-        t("Kampanie reklamowe", "Ad campaigns"),
-        t("Optymalizacja", "Optimization"),
+        t("AI i automatyzacja", "AI and automation"),
+        t("Google Ads", "Google Ads"),
+        t("Social Media", "Social Media"),
       ],
     },
     {
       number: "03",
       icon: TrendingUp,
-      title: t("Skalowanie", "Scaling"),
+      title: t("Monitorowanie i analityka wyników", "Monitoring and analytics"),
       description: t(
-        "Analizujemy wyniki, optymalizujemy działania i skalujemy to, co działa najlepiej.",
-        "We analyze results, optimize activities and scale what works best."
+        "Kluczem do sukcesu każdej kampanii marketingowej jest ciągłe monitorowanie i analiza wyników. Regularnie raportujemy postępy i wyniki kampanii, wprowadzając niezbędne optymalizacje, aby zapewnić maksymalny przychód.",
+        "The key to success for any marketing campaign is continuous monitoring and analysis of results. We regularly report progress and campaign results, making necessary optimizations to ensure maximum revenue."
       ),
       details: [
         t("Raportowanie", "Reporting"),
-        t("A/B testy", "A/B testing"),
+        t("Optymalizacja", "Optimization"),
         t("Wzrost ROI", "ROI growth"),
       ],
     },
@@ -83,12 +83,12 @@ export function Process() {
             {t("Jak pracujemy", "How we work")}
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            {t("Prosty", "Simple")} <span className="text-gradient-premium">{t("proces współpracy", "collaboration process")}</span>
+            {t("Proces", "Collaboration")} <span className="text-gradient-premium">{t("współpracy z naszą agencją", "process with our agency")}</span>
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
             {t(
-              "Trzy proste kroki do skutecznego marketingu. Jasno, konkretnie, bez bełkotu.",
-              "Three simple steps to effective marketing. Clear, specific, no fluff."
+              "Transparentny proces współpracy oparty na analizie, wdrożeniu i ciągłej optymalizacji.",
+              "Transparent collaboration process based on analysis, implementation and continuous optimization."
             )}
           </p>
         </motion.div>
