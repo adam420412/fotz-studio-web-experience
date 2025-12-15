@@ -48,17 +48,17 @@ const clientTypes = [
   },
 ];
 
-// Real Fotz Studio clients with logos - some need dark bg (white logos)
+// Real Fotz Studio clients with logos
 const trustedBy = [
-  { name: "Enea Stadion", logo: eneaLogo, needsDarkBg: true },
-  { name: "Lech Poznań", logo: lechLogo, needsDarkBg: false }, 
-  { name: "RPPG", logo: rppgLogo, needsDarkBg: true },
-  { name: "FPS Cegielski", logo: fpsLogo, needsDarkBg: false },
-  { name: "Puma", logo: pumaLogo, needsDarkBg: false },
-  { name: "Mix-Bud", logo: mixbudLogo, needsDarkBg: false },
-  { name: "Klagem", logo: klagemLogo, needsDarkBg: false },
-  { name: "Parts Jewelry", logo: partsLogo, needsDarkBg: false },
-  { name: "Żabka", logo: zabkaLogo, needsDarkBg: false },
+  { name: "Enea Stadion", logo: eneaLogo },
+  { name: "Lech Poznań", logo: lechLogo }, 
+  { name: "RPPG", logo: rppgLogo },
+  { name: "FPS Cegielski", logo: fpsLogo },
+  { name: "Puma", logo: pumaLogo },
+  { name: "Mix-Bud", logo: mixbudLogo },
+  { name: "Klagem", logo: klagemLogo },
+  { name: "Parts Jewelry", logo: partsLogo },
+  { name: "Żabka", logo: zabkaLogo },
 ];
 
 export function Clients() {
@@ -157,11 +157,7 @@ export function Clients() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className={`group flex items-center justify-center p-6 md:p-8 rounded-xl transition-all duration-300 aspect-[4/3] ${
-                  client.needsDarkBg 
-                    ? 'bg-[#1a1a2e] hover:bg-[#252542]' 
-                    : 'bg-white hover:bg-gray-50'
-                }`}
+                className="group flex items-center justify-center p-6 md:p-8 rounded-xl bg-[#1e1e2e] hover:bg-[#282840] transition-all duration-300 aspect-[4/3]"
               >
                 <img 
                   src={client.logo} 
