@@ -163,7 +163,7 @@ export function CaseStudies() {
                     </p>
 
                     {/* Stats */}
-                    <div className="grid grid-cols-3 gap-4 mb-8">
+                    <div className="flex flex-wrap gap-6 mb-8">
                       {featuredCase.stats?.map((stat, index) => (
                         <motion.div 
                           key={stat.label} 
@@ -171,7 +171,7 @@ export function CaseStudies() {
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
                           transition={{ delay: 0.3 + index * 0.1 }}
-                          className="text-center p-4 rounded-xl bg-background/50 border border-border/30"
+                          className="flex-1 min-w-[140px] text-center p-4 rounded-xl bg-background/50 border border-border/30"
                         >
                           <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
                           <div className="text-2xl font-heading font-bold text-gradient">
