@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import { Building2, ShoppingBag, Crown, CalendarDays, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+
+// Client logos imports
+import eneaLogo from "@/assets/clients/enea-stadion.svg";
+import lechLogo from "@/assets/clients/lech-poznan.png";
+import rppgLogo from "@/assets/clients/rppg.svg";
+import fpsLogo from "@/assets/clients/fps.png";
+import pumaLogo from "@/assets/clients/puma.png";
+import mixbudLogo from "@/assets/clients/mixbud.png";
+import klagemLogo from "@/assets/clients/klagem.png";
+import partsLogo from "@/assets/clients/parts-jewelry.jpeg";
+import zabkaLogo from "@/assets/clients/zabka.png";
 
 const clientTypes = [
   {
@@ -38,14 +48,17 @@ const clientTypes = [
   },
 ];
 
-// Real Fotz Studio clients with placeholder logos
+// Real Fotz Studio clients with logos
 const trustedBy = [
-  { name: "Enea Stadion", initials: "ES" },
-  { name: "Lech Poznań", initials: "LP" }, 
-  { name: "RPPG", initials: "RP" },
-  { name: "TP Energa", initials: "TE" },
-  { name: "Verthé", initials: "VT" },
-  { name: "FPS Cegielski", initials: "FPS" },
+  { name: "Enea Stadion", logo: eneaLogo },
+  { name: "Lech Poznań", logo: lechLogo }, 
+  { name: "RPPG", logo: rppgLogo },
+  { name: "FPS Cegielski", logo: fpsLogo },
+  { name: "Puma", logo: pumaLogo },
+  { name: "Mix-Bud", logo: mixbudLogo },
+  { name: "Klagem", logo: klagemLogo },
+  { name: "Parts Jewelry", logo: partsLogo },
+  { name: "Żabka", logo: zabkaLogo },
 ];
 
 export function Clients() {
@@ -136,22 +149,21 @@ export function Clients() {
           <p className="text-sm text-foreground/50 uppercase tracking-wider mb-10">
             Zaufali nam między innymi
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-9 gap-4 md:gap-6">
             {trustedBy.map((client, index) => (
               <motion.div
                 key={client.name}
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group flex flex-col items-center gap-3 p-6 rounded-xl bg-card border border-border/30 hover:border-primary/30 transition-all duration-300"
+                transition={{ delay: index * 0.05 }}
+                className="group flex items-center justify-center p-4 rounded-xl bg-white hover:bg-white/90 transition-all duration-300 aspect-square"
               >
-                <div className="w-16 h-16 rounded-xl bg-gradient-brand flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300">
-                  {client.initials}
-                </div>
-                <span className="text-sm font-medium text-foreground/70 group-hover:text-foreground transition-colors text-center">
-                  {client.name}
-                </span>
+                <img 
+                  src={client.logo} 
+                  alt={client.name}
+                  className="max-w-full max-h-full w-auto h-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                />
               </motion.div>
             ))}
           </div>
