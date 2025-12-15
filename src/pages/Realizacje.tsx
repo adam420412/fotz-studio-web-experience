@@ -189,6 +189,15 @@ const projects = [
     featured: false,
     hasCase: true,
   },
+  {
+    id: "lauvjah",
+    title: "Lauvjah Transport",
+    category: "Strony www",
+    description: "Strona internetowa dla firmy transportowo-spedycyjnej z flotą 343+ zestawów Euro6.",
+    image: fpsCegielskiImg, // placeholder - będzie podmienione na właściwe zdjęcie
+    featured: false,
+    hasCase: true,
+  },
 ];
 
 const Realizacje = () => {

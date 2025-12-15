@@ -13,6 +13,19 @@ import CaseStudyRPPG from "./pages/CaseStudyRPPG";
 import CaseStudyFabrykaVirali from "./pages/CaseStudyFabrykaVirali";
 import CaseStudyFriendlyGas from "./pages/CaseStudyFriendlyGas";
 import CaseStudyFPS from "./pages/CaseStudyFPS";
+import CaseStudyGierki from "./pages/CaseStudyGierki";
+import CaseStudyPrzedszkole from "./pages/CaseStudyPrzedszkole";
+import CaseStudyVerthe from "./pages/CaseStudyVerthe";
+import CaseStudyVictoryCars from "./pages/CaseStudyVictoryCars";
+import CaseStudyKlagem from "./pages/CaseStudyKlagem";
+import CaseStudyMechanica from "./pages/CaseStudyMechanica";
+import CaseStudyCelsjusz from "./pages/CaseStudyCelsjusz";
+import CaseStudySookar from "./pages/CaseStudySookar";
+import CaseStudyGraf from "./pages/CaseStudyGraf";
+import CaseStudyStagePlan from "./pages/CaseStudyStagePlan";
+import CaseStudyCuteDumpling from "./pages/CaseStudyCuteDumpling";
+import CaseStudyApartamenty from "./pages/CaseStudyApartamenty";
+import CaseStudyLauvjah from "./pages/CaseStudyLauvjah";
 import Kontakt from "./pages/Kontakt";
 import ONas from "./pages/ONas";
 import Blog from "./pages/Blog";
@@ -40,6 +53,19 @@ const App = () => (
             <Route path="/realizacje/fabryka-virali" element={<CaseStudyFabrykaVirali />} />
             <Route path="/realizacje/friendly-gas" element={<CaseStudyFriendlyGas />} />
             <Route path="/realizacje/fps-cegielski" element={<CaseStudyFPS />} />
+            <Route path="/realizacje/gierki" element={<CaseStudyGierki />} />
+            <Route path="/realizacje/przedszkole" element={<CaseStudyPrzedszkole />} />
+            <Route path="/realizacje/verthe" element={<CaseStudyVerthe />} />
+            <Route path="/realizacje/victory-cars" element={<CaseStudyVictoryCars />} />
+            <Route path="/realizacje/klagem" element={<CaseStudyKlagem />} />
+            <Route path="/realizacje/mechanica" element={<CaseStudyMechanica />} />
+            <Route path="/realizacje/celsjusz" element={<CaseStudyCelsjusz />} />
+            <Route path="/realizacje/sookar" element={<CaseStudySookar />} />
+            <Route path="/realizacje/graf-tapicerstwo" element={<CaseStudyGraf />} />
+            <Route path="/realizacje/stageplan" element={<CaseStudyStagePlan />} />
+            <Route path="/realizacje/cute-dumpling" element={<CaseStudyCuteDumpling />} />
+            <Route path="/realizacje/apartamenty-chorwacja" element={<CaseStudyApartamenty />} />
+            <Route path="/realizacje/lauvjah" element={<CaseStudyLauvjah />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/o-nas" element={<ONas />} />
             <Route path="/blog" element={<Blog />} />
