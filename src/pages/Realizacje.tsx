@@ -24,6 +24,7 @@ import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 import gierkiImg from "@/assets/portfolio/gierki.png";
 import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
 import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
+import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 
 const categories = [
   "Wszystkie",
@@ -194,7 +195,7 @@ const projects = [
     title: "Lauvjah Transport",
     category: "Strony www",
     description: "Strona internetowa dla firmy transportowo-spedycyjnej z flotą 343+ zestawów Euro6.",
-    image: fpsCegielskiImg, // placeholder - będzie podmienione na właściwe zdjęcie
+    image: lauvjahImg,
     featured: false,
     hasCase: true,
   },
