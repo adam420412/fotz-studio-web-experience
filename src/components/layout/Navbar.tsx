@@ -45,9 +45,13 @@ export function Navbar() {
           {/* Logo */}
           <Link
             to="/"
-            className="text-2xl font-heading font-bold text-foreground hover:text-primary transition-colors"
+            className="flex items-center"
           >
-            Fotz<span className="text-primary">.</span>Studio
+            <img 
+              src="/logo-fotz.jpg" 
+              alt="Fotz Studio" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
