@@ -6,43 +6,51 @@
 
 @layer base {
   :root {
-    --background: 240 10% 4%;
-    --foreground: 0 0% 98%;
+    /* Fotz Studio Brand Colors */
+    /* Dark background: #0E0E0E */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 100%;
 
-    --card: 240 10% 6%;
-    --card-foreground: 0 0% 98%;
+    /* Card slightly lighter */
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 240 10% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 18 100% 60%;
-    --primary-foreground: 240 10% 4%;
+    /* Primary: Purple gradient #75143F */
+    --primary: 338 73% 27%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 10% 12%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary: Navy gradient #0F3053 */
+    --secondary: 209 69% 19%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 10% 15%;
-    --muted-foreground: 240 5% 60%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 18 100% 60%;
-    --accent-foreground: 240 10% 4%;
+    /* Accent: Purple brand color */
+    --accent: 338 73% 27%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 240 10% 15%;
-    --input: 240 10% 15%;
-    --ring: 18 100% 60%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 338 73% 27%;
 
     --radius: 0.75rem;
 
     /* Custom Fotz Studio tokens */
-    --glow-primary: 0 0 60px hsl(18 100% 60% / 0.3);
-    --glow-subtle: 0 0 100px hsl(18 100% 60% / 0.1);
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 4%) 0%, hsl(240 10% 8%) 50%, hsl(240 10% 4%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(240 10% 8%) 0%, hsl(240 10% 5%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(18 100% 60%) 0%, hsl(30 100% 55%) 100%);
+    --glow-primary: 0 0 60px hsl(338 73% 27% / 0.4);
+    --glow-subtle: 0 0 100px hsl(338 73% 27% / 0.15);
+    --glow-secondary: 0 0 80px hsl(209 69% 19% / 0.3);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 8%) 50%, hsl(0 0% 5%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 6%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(338 73% 27%) 0%, hsl(209 69% 19%) 100%);
     --gradient-text: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 70%) 100%);
+    --gradient-brand: linear-gradient(135deg, hsl(338 73% 35%) 0%, hsl(209 69% 25%) 100%);
     
     /* Typography */
     --font-heading: 'Syne', sans-serif;
@@ -52,14 +60,14 @@
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
-    --sidebar-background: 240 10% 6%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 18 100% 60%;
-    --sidebar-primary-foreground: 240 10% 4%;
-    --sidebar-accent: 240 10% 12%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 240 10% 15%;
-    --sidebar-ring: 18 100% 60%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 338 73% 27%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 209 69% 19%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 338 73% 27%;
   }
 }
 
@@ -221,10 +229,10 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px hsl(18 100% 60% / 0.3);
+    box-shadow: 0 0 20px hsl(338 73% 27% / 0.3);
   }
   50% {
-    box-shadow: 0 0 40px hsl(18 100% 60% / 0.5);
+    box-shadow: 0 0 40px hsl(338 73% 27% / 0.5);
   }
 }
 
@@ -251,7 +259,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(18 100% 60%);
+  background: hsl(338 73% 27%);
 }
 
 /* Video overlay gradient */

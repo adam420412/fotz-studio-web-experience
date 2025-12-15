@@ -109,12 +109,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-border/30"
+            className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-border/30"
           >
             {[
-              { value: "600+", label: "Ukończonych projektów" },
+              { value: "1mln+", label: "Wyświetleń naszych treści" },
               { value: "160+", label: "Opinii na Google" },
-              { value: "100%", label: "Poleca nas znajomym" },
               { value: "12+", label: "Lat doświadczenia" },
             ].map((stat, index) => (
               <motion.div
