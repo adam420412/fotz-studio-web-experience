@@ -14,7 +14,6 @@ const caseStudies = [
     video: true,
     stats: [
       { icon: TrendingUp, label: "Zaangażowanie", value: "+340%" },
-      { icon: Users, label: "Obserwujący", value: "150K+" },
       { icon: Eye, label: "Wyświetlenia/mies.", value: "2M+" },
     ],
     featured: true,

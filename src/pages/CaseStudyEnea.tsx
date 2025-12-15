@@ -30,7 +30,6 @@ const projectInfo = {
 
 const stats = [
   { icon: TrendingUp, value: "+340%", label: "Wzrost zaangażowania", description: "na Instagramie rok do roku" },
-  { icon: Users, value: "150K+", label: "Nowych obserwujących", description: "od początku współpracy" },
   { icon: Eye, value: "2M+", label: "Wyświetleń miesięcznie", description: "średnia z ostatnich 6 miesięcy" },
   { icon: Calendar, value: "12+", label: "Miesięcy współpracy", description: "i wciąż rozwijamy projekt" },
 ];
