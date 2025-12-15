@@ -48,17 +48,17 @@ const clientTypes = [
   },
 ];
 
-// Real Fotz Studio clients with logos
+// Real Fotz Studio clients with logos - some need dark bg (white logos)
 const trustedBy = [
-  { name: "Enea Stadion", logo: eneaLogo },
-  { name: "Lech Poznań", logo: lechLogo }, 
-  { name: "RPPG", logo: rppgLogo },
-  { name: "FPS Cegielski", logo: fpsLogo },
-  { name: "Puma", logo: pumaLogo },
-  { name: "Mix-Bud", logo: mixbudLogo },
-  { name: "Klagem", logo: klagemLogo },
-  { name: "Parts Jewelry", logo: partsLogo },
-  { name: "Żabka", logo: zabkaLogo },
+  { name: "Enea Stadion", logo: eneaLogo, needsDarkBg: true },
+  { name: "Lech Poznań", logo: lechLogo, needsDarkBg: false }, 
+  { name: "RPPG", logo: rppgLogo, needsDarkBg: true },
+  { name: "FPS Cegielski", logo: fpsLogo, needsDarkBg: false },
+  { name: "Puma", logo: pumaLogo, needsDarkBg: false },
+  { name: "Mix-Bud", logo: mixbudLogo, needsDarkBg: false },
+  { name: "Klagem", logo: klagemLogo, needsDarkBg: false },
+  { name: "Parts Jewelry", logo: partsLogo, needsDarkBg: false },
+  { name: "Żabka", logo: zabkaLogo, needsDarkBg: false },
 ];
 
 export function Clients() {
@@ -149,7 +149,7 @@ export function Clients() {
           <p className="text-sm text-foreground/50 uppercase tracking-wider mb-10">
             Zaufali nam między innymi
           </p>
-          <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-9 gap-4 md:gap-6">
+          <div className="grid grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
             {trustedBy.map((client, index) => (
               <motion.div
                 key={client.name}
@@ -157,12 +157,16 @@ export function Clients() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="group flex items-center justify-center p-4 rounded-xl bg-white hover:bg-white/90 transition-all duration-300 aspect-square"
+                className={`group flex items-center justify-center p-6 md:p-8 rounded-xl transition-all duration-300 aspect-[4/3] ${
+                  client.needsDarkBg 
+                    ? 'bg-[#1a1a2e] hover:bg-[#252542]' 
+                    : 'bg-white hover:bg-gray-50'
+                }`}
               >
                 <img 
                   src={client.logo} 
                   alt={client.name}
-                  className="max-w-full max-h-full w-auto h-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="max-w-[85%] max-h-[85%] w-auto h-auto object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
             ))}
