@@ -81,7 +81,7 @@ export default function Blog() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-20 section-padding bg-background">
+      <section className="pt-40 pb-20 section-padding bg-background">
         <div className="container-wide">
           <div className="max-w-3xl">
             <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">

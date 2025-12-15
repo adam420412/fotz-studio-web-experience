@@ -77,7 +77,7 @@ export default function StudioPodcastowe() {
   return (
     <Layout>
       {/* Hero */}
-      <section className="pt-32 pb-20 section-padding bg-background relative overflow-hidden">
+      <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl" />
         </div>

@@ -205,7 +205,7 @@ export default function AgencjaMarketinguInternetowego() {
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
 
-        <div className="container relative z-20 px-4 py-20 md:py-32">
+        <div className="container relative z-20 px-4 pt-32 pb-20 md:pt-40 md:pb-32">
           <motion.div
             initial="hidden"
             animate="visible"

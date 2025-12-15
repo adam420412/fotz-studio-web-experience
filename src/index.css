@@ -82,6 +82,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
   }
 
   body {
@@ -131,7 +132,7 @@
   }
 
   .section-padding {
-    @apply px-6 md:px-12 lg:px-24 py-20 md:py-32;
+    @apply px-6 md:px-12 lg:px-24 py-24 md:py-32;
   }
 
   .container-wide {
