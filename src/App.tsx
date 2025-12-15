@@ -14,6 +14,7 @@ import ONas from "./pages/ONas";
 import Blog from "./pages/Blog";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
+import AgencjaMarketingowaPoznan from "./pages/AgencjaMarketingowaPoznan";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
+            <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
