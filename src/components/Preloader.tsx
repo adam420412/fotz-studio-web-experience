@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Lottie from "lottie-react";
-import fotzAnimation from "@/assets/fotz-lottie.json";
 
 interface PreloaderProps {
   onComplete: () => void;
@@ -16,7 +14,7 @@ export function Preloader({ onComplete }: PreloaderProps) {
       className="fixed inset-0 z-[100] bg-background flex items-center justify-center"
     >
       <div className="relative flex flex-col items-center">
-        {/* Glow effect behind animation */}
+        {/* Glow effect behind video */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: [0, 0.5, 0.3], scale: [0.5, 1.2, 1] }}
@@ -27,13 +25,16 @@ export function Preloader({ onComplete }: PreloaderProps) {
           }}
         />
         
-        {/* Lottie Animation */}
-        <div className="w-80 h-80 md:w-[450px] md:h-[450px] relative z-10">
-          <Lottie 
-            animationData={fotzAnimation} 
-            loop={false}
-            className="w-full h-full"
-          />
+        {/* Video Animation */}
+        <div className="w-80 h-80 md:w-[450px] md:h-[450px] relative z-10 flex items-center justify-center">
+          <video 
+            autoPlay 
+            muted 
+            playsInline
+            className="w-full h-full object-contain"
+          >
+            <source src="/preloader-video.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </motion.div>

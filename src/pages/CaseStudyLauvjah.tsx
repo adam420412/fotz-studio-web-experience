@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Truck, Users 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },
@@ -94,11 +95,8 @@ const CaseStudyLauvjah = () => {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="relative"
             >
-              <div className="rounded-2xl overflow-hidden border border-border/30 bg-gradient-to-br from-primary/20 to-secondary/20 p-12 flex items-center justify-center min-h-[300px]">
-                <div className="text-center">
-                  <Truck className="w-24 h-24 text-primary mx-auto mb-4" />
-                  <p className="text-foreground/60 text-lg">ltransport.pl</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden border border-border/30">
+                <img src={lauvjahImg} alt="Lauvjah Transport - strona internetowa" className="w-full" />
               </div>
             </motion.div>
           </div>

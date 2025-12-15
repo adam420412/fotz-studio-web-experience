@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Play, TrendingUp, Users, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
 
 const caseStudies = [
   {
@@ -10,7 +11,7 @@ const caseStudies = [
     category: "Social Media & Events",
     description:
       "Kompleksowa obsługa marketingowa największego kompleksu sportowego w Polsce. Strona www, Instagram, produkcja video.",
-    image: "https://fotz.pl/wp-content/uploads/2025/09/enea-stadion-projekt.jpg",
+    image: eneaStadionImg,
     video: true,
     stats: [
       { icon: TrendingUp, label: "Zaangażowanie", value: "+340%" },
