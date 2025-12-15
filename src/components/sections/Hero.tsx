@@ -28,15 +28,17 @@ export function Hero() {
       <div className="absolute inset-0 z-5 pointer-events-none">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 0.6 }}
           transition={{ duration: 2 }}
-          className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]"
+          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full blur-[150px]"
+          style={{ background: "hsla(336, 71%, 27%, 0.3)" }}
         />
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 0.5 }}
+          animate={{ opacity: 0.4 }}
           transition={{ duration: 2, delay: 0.5 }}
-          className="absolute bottom-1/3 right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px]"
+          className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full blur-[120px]"
+          style={{ background: "hsla(209, 69%, 19%, 0.3)" }}
         />
       </div>
 
@@ -45,38 +47,38 @@ export function Hero() {
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary/80 backdrop-blur-sm border border-border/50 mb-8"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-card/80 backdrop-blur-sm border border-border/50 mb-8"
           >
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-gradient-brand"></span>
             </span>
-            <span className="text-sm text-muted-foreground font-medium">
+            <span className="text-sm text-foreground font-medium">
               Studio marketingu wzrostu • Poznań
             </span>
           </motion.div>
 
           {/* Heading */}
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6"
           >
             Projektujemy marketing,
             <br />
-            <span className="text-gradient">który realnie pozyskuje klientów</span>
+            <span className="text-gradient-premium">który realnie pozyskuje klientów</span>
           </motion.h1>
 
           {/* Subheading */}
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
+            className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-10"
           >
             Od strategii, przez content i wideo, po kampanie sprzedażowe.
             <br className="hidden md:block" />
@@ -85,7 +87,7 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
@@ -106,7 +108,7 @@ export function Hero() {
 
           {/* Stats */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-border/30"
@@ -118,15 +120,15 @@ export function Hero() {
             ].map((stat, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
+                initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient mb-2">
+                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-sm text-foreground/60">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>
@@ -145,7 +147,7 @@ export function Hero() {
           transition={{ duration: 1.5, repeat: Infinity }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-xs text-muted-foreground uppercase tracking-wider">Scroll</span>
+          <span className="text-xs text-foreground/50 uppercase tracking-wider">Scroll</span>
           <ChevronDown className="w-5 h-5 text-primary" />
         </motion.div>
       </motion.div>

@@ -56,43 +56,56 @@ export function Clients() {
     <section className="section-padding bg-background relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/3 rounded-full blur-[200px]" />
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full blur-[200px]"
+          style={{ background: "hsla(336, 71%, 27%, 0.08)" }}
+        />
       </div>
 
       <div className="container-wide relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+          <motion.span 
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
+          >
             Dla kogo pracujemy
-          </span>
+          </motion.span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            Wspieramy <span className="text-gradient">różne branże</span>
+            Wspieramy <span className="text-gradient-premium">różne branże</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
             Każda branża ma swoją specyfikę. Dostosowujemy strategię 
             do unikalnych wyzwań Twojego biznesu.
           </p>
         </motion.div>
 
-        {/* Client Types - Horizontal Scroll on Mobile */}
+        {/* Client Types */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-20">
           {clientTypes.map((type, index) => (
             <motion.div
               key={type.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 40, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <Link
                 to={type.href}
-                className="group relative block h-full rounded-2xl overflow-hidden"
+                className="group relative block h-full rounded-2xl overflow-hidden border border-border/30 hover:border-primary/30 transition-all duration-500 hover-lift"
               >
                 {/* Background Image */}
                 <div className="absolute inset-0">
@@ -101,22 +114,22 @@ export function Clients() {
                     alt={type.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/50" />
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10 p-6 flex flex-col h-full min-h-[280px] justify-end">
-                  <div className="w-12 h-12 rounded-xl bg-primary/20 backdrop-blur-sm flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">
-                    <type.icon className="w-6 h-6 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <type.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-heading font-bold mb-1 group-hover:text-primary transition-colors">
+                  <h3 className="text-lg font-heading font-bold mb-1 group-hover:text-gradient-premium transition-colors">
                     {type.title}
                   </h3>
                   <p className="text-sm text-primary mb-2">{type.subtitle}</p>
-                  <p className="text-sm text-muted-foreground line-clamp-2">
+                  <p className="text-sm text-foreground/60 line-clamp-2">
                     {type.description}
                   </p>
-                  <div className="flex items-center gap-2 text-primary text-sm font-medium mt-4 opacity-0 group-hover:opacity-100 transition-all">
+                  <div className="flex items-center gap-2 text-primary text-sm font-medium mt-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
                     <span>Dowiedz się więcej</span>
                     <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
                   </div>
@@ -128,24 +141,24 @@ export function Clients() {
 
         {/* Trusted By */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           className="text-center"
         >
-          <p className="text-sm text-muted-foreground uppercase tracking-wider mb-8">
+          <p className="text-sm text-foreground/50 uppercase tracking-wider mb-8">
             Zaufali nam między innymi
           </p>
           <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
             {trustedBy.map((name, index) => (
               <motion.div
                 key={name}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="text-xl md:text-2xl font-heading font-semibold text-muted-foreground/40 hover:text-muted-foreground/70 transition-colors cursor-default"
+                className="text-xl md:text-2xl font-heading font-semibold text-foreground/30 hover:text-gradient-premium transition-all duration-300 cursor-default"
               >
                 {name}
               </motion.div>

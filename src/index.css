@@ -7,7 +7,9 @@
 @layer base {
   :root {
     /* Fotz Studio Brand Colors - from logo gradient */
-    /* Burgundy top: #8B1E4A → Navy bottom: #1E3A5F */
+    /* Top: #75143F (burgundy) → Bottom: #0F3053 (navy) */
+    
+    /* Background: Deep dark */
     --background: 0 0% 5%;
     --foreground: 0 0% 100%;
 
@@ -18,40 +20,41 @@
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 100%;
 
-    /* Primary: Burgundy/Magenta from logo top #8B1E4A */
-    --primary: 336 64% 33%;
+    /* Primary: Burgundy #75143F = hsl(336, 71%, 27%) */
+    --primary: 336 71% 27%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Navy blue from logo bottom #1E3A5F */
-    --secondary: 213 52% 25%;
+    /* Secondary: Navy #0F3053 = hsl(209, 69%, 19%) */
+    --secondary: 209 69% 19%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 12%;
-    --muted-foreground: 0 0% 60%;
+    --muted-foreground: 0 0% 65%;
 
     /* Accent: Same as primary */
-    --accent: 336 64% 33%;
+    --accent: 336 71% 27%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 336 64% 33%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 336 71% 27%;
 
     --radius: 0.75rem;
 
-    /* Custom Fotz Studio tokens - matching logo gradient */
-    --glow-primary: 0 0 60px hsl(336 64% 33% / 0.4);
-    --glow-subtle: 0 0 100px hsl(336 64% 33% / 0.15);
-    --glow-secondary: 0 0 80px hsl(213 52% 25% / 0.3);
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 5%) 0%, hsl(0 0% 8%) 50%, hsl(0 0% 5%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 6%) 100%);
-    /* Logo gradient: burgundy → navy */
-    --gradient-accent: linear-gradient(180deg, hsl(336 64% 33%) 0%, hsl(280 45% 28%) 50%, hsl(213 52% 25%) 100%);
-    --gradient-text: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 70%) 100%);
-    --gradient-brand: linear-gradient(180deg, hsl(336 64% 40%) 0%, hsl(280 45% 32%) 50%, hsl(213 52% 30%) 100%);
+    /* Custom Fotz Studio tokens */
+    --glow-primary: 0 0 60px hsla(336, 71%, 27%, 0.5);
+    --glow-subtle: 0 0 100px hsla(336, 71%, 27%, 0.2);
+    --glow-secondary: 0 0 80px hsla(209, 69%, 19%, 0.4);
+    
+    /* Gradients matching logo exactly */
+    --gradient-brand: linear-gradient(180deg, hsl(336, 71%, 27%) 0%, hsl(209, 69%, 19%) 100%);
+    --gradient-brand-premium: linear-gradient(180deg, hsl(336, 71%, 27%) 0%, hsl(292, 36%, 21%) 45%, hsl(209, 69%, 19%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 5%) 0%, hsl(0, 0%, 8%) 50%, hsl(0, 0%, 5%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 10%) 0%, hsl(0, 0%, 6%) 100%);
+    --gradient-text: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 75%) 100%);
     
     /* Typography */
     --font-heading: 'Syne', sans-serif;
@@ -63,12 +66,12 @@
 
     --sidebar-background: 0 0% 6%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 336 64% 33%;
+    --sidebar-primary: 336 71% 27%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 213 52% 25%;
+    --sidebar-accent: 209 69% 19%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 336 64% 33%;
+    --sidebar-ring: 336 71% 27%;
   }
 }
 
@@ -94,12 +97,25 @@
 @layer components {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-accent);
+    background-image: var(--gradient-brand);
+  }
+
+  .text-gradient-premium {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-brand-premium);
   }
 
   .text-gradient-white {
     @apply bg-clip-text text-transparent;
     background-image: var(--gradient-text);
+  }
+
+  .bg-gradient-brand {
+    background-image: var(--gradient-brand);
+  }
+
+  .bg-gradient-brand-premium {
+    background-image: var(--gradient-brand-premium);
   }
 
   .glass {
@@ -121,6 +137,11 @@
   .container-wide {
     @apply max-w-7xl mx-auto;
   }
+
+  /* Icon gradient effect */
+  .icon-gradient {
+    color: hsl(336, 71%, 27%);
+  }
 }
 
 @layer utilities {
@@ -138,6 +159,10 @@
 
   .animate-slide-right {
     animation: slideRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
 
   .animation-delay-100 {
@@ -165,7 +190,7 @@
   }
 
   .hover-lift:hover {
-    @apply -translate-y-1;
+    @apply -translate-y-2;
     box-shadow: var(--glow-subtle);
   }
 
@@ -219,6 +244,17 @@
   }
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -230,10 +266,21 @@
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px hsl(336 64% 33% / 0.3);
+    box-shadow: 0 0 20px hsla(336, 71%, 27%, 0.3);
   }
   50% {
-    box-shadow: 0 0 40px hsl(336 64% 33% / 0.5);
+    box-shadow: 0 0 50px hsla(336, 71%, 27%, 0.6);
+  }
+}
+
+@keyframes logo-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 20px hsla(336, 71%, 27%, 0.5));
+  }
+  50% {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 40px hsla(336, 71%, 27%, 0.8));
   }
 }
 
@@ -245,30 +292,53 @@
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
+.animate-logo-pulse {
+  animation: logo-pulse 2s ease-in-out infinite;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(240 10% 6%);
+  background: hsl(0, 0%, 6%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(240 10% 20%);
+  background: hsl(0, 0%, 20%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(336 64% 33%);
+  background: hsl(336, 71%, 27%);
 }
 
 /* Video overlay gradient */
 .video-overlay {
   background: linear-gradient(
     180deg,
-    hsl(240 10% 4% / 0.3) 0%,
-    hsl(240 10% 4% / 0.6) 50%,
-    hsl(240 10% 4% / 0.9) 100%
+    hsla(0, 0%, 4%, 0.3) 0%,
+    hsla(0, 0%, 4%, 0.6) 50%,
+    hsla(0, 0%, 4%, 0.95) 100%
   );
+}
+
+/* Brand gradient border */
+.border-gradient {
+  position: relative;
+  background: hsl(0, 0%, 8%);
+  border-radius: var(--radius);
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: var(--gradient-brand);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }

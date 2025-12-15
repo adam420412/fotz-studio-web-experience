@@ -14,7 +14,7 @@ const caseStudies = [
     video: true,
     stats: [
       { icon: TrendingUp, label: "Zaangażowanie", value: "+340%" },
-      { icon: Users, label: "Followersi", value: "150K+" },
+      { icon: Users, label: "Obserwujący", value: "150K+" },
       { icon: Eye, label: "Wyświetlenia/mies.", value: "2M+" },
     ],
     featured: true,
@@ -52,47 +52,75 @@ export function CaseStudies() {
     <section className="section-padding bg-card relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full blur-[180px]"
+          style={{ background: "hsla(336, 71%, 27%, 0.12)" }}
+        />
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="absolute top-0 left-0 w-[500px] h-[500px] rounded-full blur-[150px]"
+          style={{ background: "hsla(209, 69%, 19%, 0.1)" }}
+        />
       </div>
 
       <div className="container-wide relative z-10">
         {/* Section Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7 }}
           className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12"
         >
           <div>
-            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+            <motion.span 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
+            >
               Case Studies
-            </span>
+            </motion.span>
             <h2 className="text-3xl md:text-5xl font-heading font-bold">
-              Zobacz <span className="text-gradient">efekty naszej pracy</span>
+              Zobacz <span className="text-gradient-premium">efekty naszej pracy</span>
             </h2>
           </div>
-          <Button variant="outline" size="lg" asChild>
-            <Link to="/realizacje" className="group">
-              Wszystkie realizacje
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </Link>
-          </Button>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/realizacje" className="group">
+                Wszystkie realizacje
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
+          </motion.div>
         </motion.div>
 
         {/* Featured Case Study */}
         {featuredCase && (
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 60, scale: 0.98 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
           >
             <Link
               to={`/realizacje/${featuredCase.id}`}
               className="group block mb-8"
             >
-              <div className="relative rounded-3xl overflow-hidden bg-secondary">
+              <div className="relative rounded-3xl overflow-hidden bg-muted border border-border/50 hover:border-primary/30 transition-all duration-500">
                 <div className="grid lg:grid-cols-2">
                   {/* Image */}
                   <div className="relative aspect-video lg:aspect-auto lg:min-h-[500px] overflow-hidden">
@@ -101,16 +129,17 @@ export function CaseStudies() {
                       alt={featuredCase.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-card/90 hidden lg:block" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-card/95 hidden lg:block" />
                     
                     {/* Play Button */}
                     {featuredCase.video && (
                       <div className="absolute inset-0 flex items-center justify-center lg:hidden">
                         <motion.div
                           whileHover={{ scale: 1.1 }}
-                          className="w-20 h-20 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-lg shadow-primary/30"
+                          className="w-20 h-20 rounded-full bg-gradient-brand backdrop-blur-sm flex items-center justify-center shadow-lg"
+                          style={{ boxShadow: "0 0 40px hsla(336, 71%, 27%, 0.5)" }}
                         >
-                          <Play className="w-8 h-8 text-primary-foreground ml-1" />
+                          <Play className="w-8 h-8 text-white ml-1" />
                         </motion.div>
                       </div>
                     )}
@@ -119,32 +148,39 @@ export function CaseStudies() {
                   {/* Content */}
                   <div className="p-8 lg:p-12 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                      <span className="px-3 py-1 rounded-full bg-gradient-brand text-white text-sm font-medium">
                         Główna realizacja
                       </span>
-                      <span className="text-muted-foreground text-sm">
+                      <span className="text-foreground/60 text-sm">
                         {featuredCase.category}
                       </span>
                     </div>
-                    <h3 className="text-2xl md:text-4xl font-heading font-bold mb-4 group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl md:text-4xl font-heading font-bold mb-4 group-hover:text-gradient-premium transition-colors">
                       {featuredCase.title}
                     </h3>
-                    <p className="text-muted-foreground mb-8 text-lg">
+                    <p className="text-foreground/60 mb-8 text-lg">
                       {featuredCase.description}
                     </p>
 
                     {/* Stats */}
                     <div className="grid grid-cols-3 gap-4 mb-8">
-                      {featuredCase.stats?.map((stat) => (
-                        <div key={stat.label} className="text-center p-4 rounded-xl bg-background/50">
+                      {featuredCase.stats?.map((stat, index) => (
+                        <motion.div 
+                          key={stat.label} 
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.3 + index * 0.1 }}
+                          className="text-center p-4 rounded-xl bg-background/50 border border-border/30"
+                        >
                           <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
-                          <div className="text-2xl font-heading font-bold text-gradient">
+                          <div className="text-2xl font-heading font-bold text-gradient-premium">
                             {stat.value}
                           </div>
-                          <div className="text-xs text-muted-foreground mt-1">
+                          <div className="text-xs text-foreground/50 mt-1">
                             {stat.label}
                           </div>
-                        </div>
+                        </motion.div>
                       ))}
                     </div>
 
@@ -164,12 +200,12 @@ export function CaseStudies() {
           {otherCases.map((caseStudy, index) => (
             <motion.div
               key={caseStudy.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 40, scale: 0.95 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
             >
-              <div className="group relative block rounded-2xl overflow-hidden bg-secondary h-full">
+              <div className="group relative block rounded-2xl overflow-hidden bg-muted h-full border border-border/30 hover:border-primary/30 transition-all duration-500 hover-lift">
                 {/* Image */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-background">
                   <img
@@ -177,7 +213,7 @@ export function CaseStudies() {
                     alt={caseStudy.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/70 to-transparent" />
                 </div>
 
                 {/* Content */}
@@ -185,10 +221,10 @@ export function CaseStudies() {
                   <span className="text-primary text-sm font-medium">
                     {caseStudy.category}
                   </span>
-                  <h3 className="text-xl font-heading font-bold mt-2 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-heading font-bold mt-2 group-hover:text-gradient-premium transition-colors">
                     {caseStudy.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mt-2 line-clamp-2">
+                  <p className="text-foreground/60 text-sm mt-2 line-clamp-2">
                     {caseStudy.description}
                   </p>
                 </div>
