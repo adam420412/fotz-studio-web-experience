@@ -10,7 +10,7 @@ const caseStudies = [
     category: "Social Media & Events",
     description:
       "Kompleksowa obsługa marketingowa największego kompleksu sportowego w Polsce. Strona www, Instagram, produkcja video.",
-    image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2005",
+    image: "https://fotz.pl/wp-content/uploads/2025/09/enea-stadion-projekt.jpg",
     video: true,
     stats: [
       { icon: TrendingUp, label: "Zaangażowanie", value: "+340%" },
@@ -25,7 +25,7 @@ const caseStudies = [
     title: "FPS Poznań (Cegielski)",
     category: "Strony www",
     description:
-      "Nowoczesna strona internetowa dla historycznej fabryki z Poznania.",
+      "Nowoczesna strona internetowa dla historycznej fabryki pojazdów szynowych z Poznania.",
     image: "https://fotz.pl/wp-content/uploads/2024/10/Cegielski-Mockup-Strona-Internetowa.png",
     video: false,
     featured: false,
@@ -36,7 +36,7 @@ const caseStudies = [
     title: "RPPG Group",
     category: "Branding & Strategia",
     description:
-      "Kompleksowy rebranding i nowa identyfikacja wizualna dla grupy kapitałowej.",
+      "Kompleksowy rebranding i nowa identyfikacja wizualna dla Rady Polskich Przedsiębiorców Globalnych.",
     image: "https://fotz.pl/wp-content/uploads/2025/09/243-900x604.png",
     video: false,
     featured: false,
@@ -90,7 +90,7 @@ export function CaseStudies() {
               Case Studies
             </motion.span>
             <h2 className="text-3xl md:text-5xl font-heading font-bold">
-              Zobacz <span className="text-gradient-premium">efekty naszej pracy</span>
+              Zobacz <span className="text-gradient">efekty naszej pracy</span>
             </h2>
           </div>
           <motion.div
@@ -114,7 +114,7 @@ export function CaseStudies() {
             initial={{ opacity: 0, y: 60, scale: 0.98 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+            transition={{ duration: 0.8 }}
           >
             <Link
               to={`/realizacje/${featuredCase.id}`}
@@ -155,7 +155,7 @@ export function CaseStudies() {
                         {featuredCase.category}
                       </span>
                     </div>
-                    <h3 className="text-2xl md:text-4xl font-heading font-bold mb-4 group-hover:text-gradient-premium transition-colors">
+                    <h3 className="text-2xl md:text-4xl font-heading font-bold mb-4 group-hover:text-gradient transition-colors">
                       {featuredCase.title}
                     </h3>
                     <p className="text-foreground/60 mb-8 text-lg">
@@ -174,7 +174,7 @@ export function CaseStudies() {
                           className="text-center p-4 rounded-xl bg-background/50 border border-border/30"
                         >
                           <stat.icon className="w-5 h-5 text-primary mx-auto mb-2" />
-                          <div className="text-2xl font-heading font-bold text-gradient-premium">
+                          <div className="text-2xl font-heading font-bold text-gradient">
                             {stat.value}
                           </div>
                           <div className="text-xs text-foreground/50 mt-1">
@@ -221,7 +221,7 @@ export function CaseStudies() {
                   <span className="text-primary text-sm font-medium">
                     {caseStudy.category}
                   </span>
-                  <h3 className="text-xl font-heading font-bold mt-2 group-hover:text-gradient-premium transition-colors">
+                  <h3 className="text-xl font-heading font-bold mt-2 group-hover:text-gradient transition-colors">
                     {caseStudy.title}
                   </h3>
                   <p className="text-foreground/60 text-sm mt-2 line-clamp-2">
