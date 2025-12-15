@@ -2,43 +2,45 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Play, TrendingUp, Users, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 const caseStudies = [
   {
     id: "enea-stadion",
     title: "Enea Stadion Poznań",
-    category: "Marketing premium & Events",
+    category: "Social Media & Events",
     description:
-      "Kompleksowa obsługa marketingowa największego stadionu w Polsce. Social media, produkcja video, kampanie eventowe i budowanie społeczności kibiców.",
+      "Kompleksowa obsługa marketingowa największego kompleksu sportowego w Polsce. Strona www, Instagram, produkcja video.",
     image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2005",
     video: true,
     stats: [
-      { icon: TrendingUp, label: "Wzrost zaangażowania", value: "+340%" },
-      { icon: Users, label: "Nowych obserwujących", value: "150K+" },
-      { icon: Eye, label: "Wyświetleń miesięcznie", value: "2M+" },
+      { icon: TrendingUp, label: "Zaangażowanie", value: "+340%" },
+      { icon: Users, label: "Followersi", value: "150K+" },
+      { icon: Eye, label: "Wyświetlenia/mies.", value: "2M+" },
     ],
     featured: true,
+    hasCase: true,
   },
   {
-    id: "rppg-rebranding",
-    title: "RPPG Rebranding",
+    id: "fps-cegielski",
+    title: "FPS Poznań (Cegielski)",
+    category: "Strony www",
+    description:
+      "Nowoczesna strona internetowa dla historycznej fabryki z Poznania.",
+    image: "https://fotz.pl/wp-content/uploads/2024/10/Cegielski-Mockup-Strona-Internetowa.png",
+    video: false,
+    featured: false,
+    hasCase: false,
+  },
+  {
+    id: "rppg",
+    title: "RPPG Group",
     category: "Branding & Strategia",
     description:
-      "Kompleksowy rebranding i nowa strategia komunikacji dla grupy kapitałowej.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
+      "Kompleksowy rebranding i nowa identyfikacja wizualna dla grupy kapitałowej.",
+    image: "https://fotz.pl/wp-content/uploads/2025/09/243-900x604.png",
     video: false,
     featured: false,
-  },
-  {
-    id: "verthe-ecommerce",
-    title: "Verthé E-commerce",
-    category: "E-commerce & Performance",
-    description:
-      "Strategia sprzedażowa i kampanie performance dla marki premium fashion.",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070",
-    video: false,
-    featured: false,
+    hasCase: false,
   },
 ];
 
@@ -147,7 +149,7 @@ export function CaseStudies() {
                     </div>
 
                     <div className="flex items-center gap-2 text-primary font-medium">
-                      <span>Zobacz case study</span>
+                      <span>Zobacz pełne case study</span>
                       <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-2" />
                     </div>
                   </div>
@@ -167,12 +169,9 @@ export function CaseStudies() {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
             >
-              <Link
-                to={`/realizacje/${caseStudy.id}`}
-                className="group relative block rounded-2xl overflow-hidden bg-secondary h-full"
-              >
+              <div className="group relative block rounded-2xl overflow-hidden bg-secondary h-full">
                 {/* Image */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden bg-background">
                   <img
                     src={caseStudy.image}
                     alt={caseStudy.title}
@@ -192,12 +191,8 @@ export function CaseStudies() {
                   <p className="text-muted-foreground text-sm mt-2 line-clamp-2">
                     {caseStudy.description}
                   </p>
-                  <div className="flex items-center gap-2 text-primary font-medium mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>Zobacz więcej</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
                 </div>
-              </Link>
+              </div>
             </motion.div>
           ))}
         </div>
