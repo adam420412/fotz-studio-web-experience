@@ -24,12 +24,11 @@ export function Hero() {
           loop
           muted
           playsInline
+          preload="auto"
           className="w-full h-full object-cover scale-105"
+          poster="/hero-video-poster.jpg"
         >
-          <source
-            src="/hero-video.mp4"
-            type="video/mp4"
-          />
+          <source src="/hero-video.mp4" type="video/mp4" />
         </video>
       </div>
 
