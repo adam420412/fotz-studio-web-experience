@@ -12,6 +12,7 @@ import { Studio } from "@/components/sections/Studio";
 import { HomeFAQ } from "@/components/sections/HomeFAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Preloader } from "@/components/Preloader";
+import { OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +38,12 @@ const Index = () => {
           content="Agencja marketingowa i reklamowa - Twój partner marketingowy. Kompleksowe strategie marketingowe, kampanie dla firm, content i skuteczny marketing dla Twojego klienta." 
         />
       </Helmet>
+      <OrganizationSchema />
+      <WebPageSchema 
+        title="Agencja Marketingowa i Reklamowa - Twój Partner Marketingowy"
+        description="Agencja marketingowa i reklamowa - Twój partner marketingowy. Kompleksowe strategie marketingowe, kampanie dla firm, content i skuteczny marketing."
+        url="https://fotz.pl"
+      />
       {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <Layout>
         <Hero />

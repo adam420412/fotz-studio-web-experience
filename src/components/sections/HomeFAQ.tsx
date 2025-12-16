@@ -6,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { FAQSchema } from "@/components/seo/StructuredData";
 
 export function HomeFAQ() {
   const { t } = useLanguage();
@@ -93,8 +94,16 @@ export function HomeFAQ() {
     },
   ];
 
+  // Prepare FAQ data for schema
+  const faqSchemaItems = faqs.map((faq) => ({
+    question: faq.question,
+    answer: faq.answer,
+  }));
+
   return (
-    <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-background relative overflow-hidden">
+    <>
+      <FAQSchema items={faqSchemaItems} />
+      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-background relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
@@ -157,6 +166,7 @@ export function HomeFAQ() {
           </Accordion>
         </motion.div>
       </div>
-    </section>
+      </section>
+    </>
   );
 }
