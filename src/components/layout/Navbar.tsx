@@ -26,6 +26,7 @@ const servicesDropdownData = [
   { name: { pl: "Social Media", en: "Social Media" }, href: "/social-media-poznan" },
   { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe-poznan" },
   { name: { pl: "Fotograf", en: "Photographer" }, href: "/fotograf-poznan" },
+  { name: { pl: "Pozycjonowanie SEO", en: "SEO" }, href: "/pozycjonowanie-stron-poznan" },
 ];
 
 export function Navbar() {
