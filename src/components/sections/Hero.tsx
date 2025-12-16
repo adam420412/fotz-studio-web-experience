@@ -3,14 +3,15 @@ import { ArrowRight, Play, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 export function Hero() {
   const { t } = useLanguage();
 
   const stats = [
-    { value: "1mln+", label: t("Wyświetleń treści miesięcznie", "Monthly content views") },
-    { value: "160+", label: t("Opinii na Google", "Google reviews") },
-    { value: "12+", label: t("Lat doświadczenia", "Years of experience") },
+    { value: 1000000, suffix: "+", label: t("Wyświetleń treści miesięcznie", "Monthly content views") },
+    { value: 160, suffix: "+", label: t("Opinii na Google", "Google reviews") },
+    { value: 12, suffix: "+", label: t("Lat doświadczenia", "Years of experience") },
   ];
 
   return (
@@ -125,18 +126,15 @@ export function Hero() {
             className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-border/30"
           >
             {stats.map((stat, index) => (
-              <motion.div
+              <AnimatedCounter
                 key={index}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-foreground/60">{stat.label}</div>
-              </motion.div>
+                end={stat.value}
+                suffix={stat.suffix}
+                label={stat.label}
+                index={index}
+                duration={2500}
+                delay={index * 200}
+              />
             ))}
           </motion.div>
         </div>
