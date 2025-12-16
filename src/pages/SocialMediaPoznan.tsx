@@ -273,8 +273,8 @@ export default function SocialMediaPoznan() {
               { src: "/videos/sequence-01.mp4", title: "Produkcja video", description: "Profesjonalna produkcja reklamowa" },
               { src: "/videos/skaland-osiedle.mp4", title: "Skaland Osiedle", description: "Prezentacja inwestycji deweloperskiej" },
               { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", description: "Relacja z eventu" },
-              { src: "/videos/fun-sport-stylish.mp4", title: "Sport & Lifestyle", description: "Dynamiczna produkcja sportowa" },
-              { src: "/videos/fotz-reel.mp4", title: "Fotz Showreel", description: "Przegląd naszych najlepszych realizacji" },
+              { src: "/videos/fun-sport-stylish.mp4", title: "Biuro Nieruchomości", description: "Produkcja video dla biura nieruchomości" },
+              { src: "/videos/fotz-reel.mp4", title: "Enea Stadion", description: "Realizacja z meczu dla Enea Stadion Poznań" },
             ].map((video, index) => (
               <motion.div
                 key={video.src}
