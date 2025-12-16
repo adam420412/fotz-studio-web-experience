@@ -24,10 +24,9 @@ export function Hero() {
           muted
           playsInline
           className="w-full h-full object-cover scale-105"
-          poster="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070"
         >
           <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-team-of-developers-working-in-an-office-4831-large.mp4"
+            src="/hero-video.mp4"
             type="video/mp4"
           />
         </video>
