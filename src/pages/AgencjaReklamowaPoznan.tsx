@@ -335,10 +335,11 @@ const AgencjaReklamowaPoznan = () => {
                 <div className="relative aspect-[9/16] md:aspect-video rounded-2xl overflow-hidden border border-border bg-card">
                   <video
                     src="/videos/fotz-reel.mp4"
-                    controls
+                    autoPlay
+                    muted
+                    loop
                     playsInline
                     className="w-full h-full object-cover"
-                    poster=""
                   />
                 </div>
                 <p className="text-center mt-3 text-muted-foreground">Kulisy pracy Fotz Studio</p>
@@ -366,7 +367,7 @@ const AgencjaReklamowaPoznan = () => {
                 </div>
               </div>
               
-              <div className="flex flex-col md:col-span-2 lg:col-span-1">
+              <div className="flex flex-col">
                 <InstagramEmbed 
                   url="https://www.instagram.com/reel/DRPhtXkkuJj/" 
                   className="flex-1"
