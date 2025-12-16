@@ -23,11 +23,9 @@ const navLinksData = [
 
 const servicesDropdownData = [
   { name: { pl: "Wszystkie usługi", en: "All services" }, href: "/uslugi" },
-  { name: { pl: "Social Media Poznań", en: "Social Media Poznań" }, href: "/social-media-poznan" },
+  { name: { pl: "Social Media", en: "Social Media" }, href: "/social-media-poznan" },
   { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe-poznan" },
-  { name: { pl: "Fotograf Poznań", en: "Photographer Poznań" }, href: "/fotograf-poznan" },
-  { name: { pl: "Agencja Marketingowa", en: "Marketing Agency" }, href: "/agencja-marketingowa-poznan" },
-  { name: { pl: "Agencja Reklamowa", en: "Advertising Agency" }, href: "/agencja-reklamowa-poznan" },
+  { name: { pl: "Fotograf", en: "Photographer" }, href: "/fotograf-poznan" },
 ];
 
 export function Navbar() {
