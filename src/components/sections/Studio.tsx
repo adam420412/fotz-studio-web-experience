@@ -144,7 +144,7 @@ export function Studio() {
               </div>
             </motion.div>
             
-            {/* Small Images */}
+            {/* Video Reel */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -152,10 +152,13 @@ export function Studio() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="col-span-5"
             >
-              <div className="aspect-square rounded-2xl overflow-hidden border border-border/30">
-                <img
-                  src="https://fotz.pl/wp-content/uploads/2021/11/2022-11-28-e1675607839895.jpg"
-                  alt="Studio podcastowe Fotz"
+              <div className="aspect-square rounded-2xl overflow-hidden border border-border/30 bg-card">
+                <video
+                  src="/videos/fotz-reel.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>

@@ -329,6 +329,22 @@ const AgencjaReklamowaPoznan = () => {
               </p>
             </motion.div>
 
+            {/* Featured Video */}
+            <motion.div variants={fadeIn} className="mb-12">
+              <div className="max-w-2xl mx-auto">
+                <div className="relative aspect-[9/16] md:aspect-video rounded-2xl overflow-hidden border border-border bg-card">
+                  <video
+                    src="/videos/fotz-reel.mp4"
+                    controls
+                    playsInline
+                    className="w-full h-full object-cover"
+                    poster=""
+                  />
+                </div>
+                <p className="text-center mt-3 text-muted-foreground">Kulisy pracy Fotz Studio</p>
+              </div>
+            </motion.div>
+
             <motion.div variants={fadeIn} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex flex-col">
                 <InstagramEmbed 
@@ -352,11 +368,11 @@ const AgencjaReklamowaPoznan = () => {
               
               <div className="flex flex-col md:col-span-2 lg:col-span-1">
                 <InstagramEmbed 
-                  url="https://www.instagram.com/reel/DRfQGqOjNMa/" 
+                  url="https://www.instagram.com/reel/DRPhtXkkuJj/" 
                   className="flex-1"
                 />
                 <div className="mt-3 text-center">
-                  <span className="text-sm text-muted-foreground">Enea Stadion Poznań</span>
+                  <span className="text-sm text-muted-foreground">Klub Muzyczny B17</span>
                 </div>
               </div>
             </motion.div>
