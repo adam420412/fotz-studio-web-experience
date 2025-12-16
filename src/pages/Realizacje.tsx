@@ -327,8 +327,8 @@ const Realizacje = () => {
               { src: "/videos/sequence-01.mp4", title: "Produkcja video", category: "Video" },
               { src: "/videos/skaland-osiedle.mp4", title: "Skaland Osiedle", category: "Nieruchomości" },
               { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Event" },
-              { src: "/videos/fun-sport-stylish.mp4", title: "Sport & Lifestyle", category: "Video" },
-              { src: "/videos/fotz-reel.mp4", title: "Fotz Showreel", category: "Portfolio" },
+              { src: "/videos/fun-sport-stylish.mp4", title: "Biuro Nieruchomości", category: "Nieruchomości" },
+              { src: "/videos/fotz-reel.mp4", title: "Enea Stadion", category: "Event" },
             ].map((video, index) => (
               <motion.div
                 key={video.src}
