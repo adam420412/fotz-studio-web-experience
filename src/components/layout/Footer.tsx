@@ -14,6 +14,7 @@ const footerLinks = {
     { name: "Strony internetowe Poznań", href: "/uslugi/strony-internetowe-poznan" },
     { name: "Social Media Poznań", href: "/uslugi/social-media-poznan" },
     { name: "Marketing Poznań", href: "/uslugi/marketing-poznan" },
+    { name: "Agencja Reklamowa Poznań", href: "/agencja-reklamowa-poznan" },
   ],
   firma: [
     { name: "O nas", href: "/o-nas" },
