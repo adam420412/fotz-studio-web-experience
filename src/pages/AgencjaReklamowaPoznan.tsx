@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, Phone, Mail, MapPin, CheckCircle, Target, TrendingUp, Users, Lightbulb, BarChart3, Palette, Video, MessageSquare, Globe, Zap, Award, Clock, Shield } from "lucide-react";
+import { ArrowRight, Phone, Mail, MapPin, CheckCircle, Target, TrendingUp, Users, Lightbulb, BarChart3, Palette, Video, MessageSquare, Globe, Zap, Award, Clock, Shield, Play } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { InstagramEmbed } from "@/components/InstagramEmbed";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -301,6 +302,71 @@ const AgencjaReklamowaPoznan = () => {
               <p className="text-muted-foreground leading-relaxed">
                 <strong className="text-foreground">Referencje i opinie klientów są najlepszym dowodem na skuteczność agencji reklamowej Poznań, Fotz Studio</strong>. Nasze kompleksowe działania marketingowe są doceniane przez klientów z różnych branż za kreatywność, profesjonalizm i efektywność.
               </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Video Realizations Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-6xl mx-auto"
+          >
+            <motion.div variants={fadeIn} className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Play className="h-8 w-8 text-primary" />
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  Nasze realizacje wideo
+                </h2>
+              </div>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Zobacz przykłady naszych produkcji wideo dla klientów z Poznania i całej Polski. Tworzymy angażujący content, który buduje markę.
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="flex flex-col">
+                <InstagramEmbed 
+                  url="https://www.instagram.com/reel/DSKans0jDzY/" 
+                  className="flex-1"
+                />
+                <div className="mt-3 text-center">
+                  <span className="text-sm text-muted-foreground">Enea Stadion Poznań</span>
+                </div>
+              </div>
+              
+              <div className="flex flex-col">
+                <InstagramEmbed 
+                  url="https://www.instagram.com/reel/DR4RyXdiOEt/" 
+                  className="flex-1"
+                />
+                <div className="mt-3 text-center">
+                  <span className="text-sm text-muted-foreground">Klub Muzyczny B17</span>
+                </div>
+              </div>
+              
+              <div className="flex flex-col md:col-span-2 lg:col-span-1">
+                <InstagramEmbed 
+                  url="https://www.instagram.com/reel/DRfQGqOjNMa/" 
+                  className="flex-1"
+                />
+                <div className="mt-3 text-center">
+                  <span className="text-sm text-muted-foreground">Enea Stadion Poznań</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="text-center mt-10">
+              <Button asChild size="lg" variant="outline">
+                <a href="https://www.instagram.com/fotzstudio/" target="_blank" rel="noopener noreferrer">
+                  Zobacz więcej na Instagram <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
             </motion.div>
           </motion.div>
         </div>
