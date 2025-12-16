@@ -250,8 +250,71 @@ export default function SocialMediaPoznan() {
         </div>
       </section>
 
-      {/* Case Studies Section */}
+      {/* Video Showcase Section */}
       <section className="py-20 section-padding bg-secondary/30">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Nasze Realizacje Video
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Zobacz przykłady naszych produkcji video dla klientów
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { src: "/videos/autospa.mp4", title: "AutoSpa" },
+              { src: "/videos/sequence-01.mp4", title: "Produkcja video" },
+              { src: "/videos/skaland-osiedle.mp4", title: "Skaland Osiedle" },
+              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki" },
+              { src: "/videos/fun-sport-stylish.mp4", title: "Sport & Lifestyle" },
+              { src: "/videos/fotz-reel.mp4", title: "Fotz Showreel" },
+            ].map((video, index) => (
+              <motion.div
+                key={video.src}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative aspect-video rounded-2xl overflow-hidden border border-border group"
+              >
+                <video
+                  src={video.src}
+                  className="w-full h-full object-cover"
+                  muted
+                  loop
+                  playsInline
+                  onMouseEnter={(e) => e.currentTarget.play()}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.pause();
+                    e.currentTarget.currentTime = 0;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <span className="text-white font-heading font-semibold">{video.title}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
+              <Link to="/realizacje">
+                Zobacz wszystkie realizacje <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section className="py-20 section-padding bg-background">
         <div className="container-wide">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -284,14 +347,6 @@ export default function SocialMediaPoznan() {
                 <p className="text-muted-foreground">{study.description}</p>
               </motion.div>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg">
-              <Link to="/realizacje">
-                Zobacz wszystkie realizacje <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
           </div>
         </div>
       </section>
