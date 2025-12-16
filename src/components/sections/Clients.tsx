@@ -157,12 +157,12 @@ export function Clients() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="group flex items-center justify-center p-6 md:p-8 rounded-xl bg-white hover:bg-gray-50 transition-all duration-300 aspect-[4/3]"
+                className="group flex items-center justify-center p-6 md:p-8 rounded-xl bg-white hover:bg-gray-50 transition-all duration-300 aspect-square"
               >
                 <img 
                   src={client.logo} 
                   alt={client.name}
-                  className="max-w-[85%] max-h-[85%] w-auto h-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  className="w-24 h-24 md:w-28 md:h-28 object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
             ))}
