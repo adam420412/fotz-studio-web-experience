@@ -36,6 +36,7 @@ import AgencjaMarketingowaPoznan from "./pages/AgencjaMarketingowaPoznan";
 import AgencjaMarketinguInternetowego from "./pages/AgencjaMarketinguInternetowego";
 import AgencjaReklamowaPoznan from "./pages/AgencjaReklamowaPoznan";
 import StronyInternetowePoznan from "./pages/StronyInternetowePoznan";
+import SocialMediaPoznan from "./pages/SocialMediaPoznan";
 import PolitykaPrywatnosci from "./pages/PolitykaPrywatnosci";
 import Regulamin from "./pages/Regulamin";
 import NotFound from "./pages/NotFound";
@@ -81,6 +82,7 @@ const App = () => (
             <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
             <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
             <Route path="/strony-internetowe-poznan" element={<StronyInternetowePoznan />} />
+            <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
             <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
             <Route path="/regulamin" element={<Regulamin />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
