@@ -33,7 +33,7 @@ export default function PolitykaPrywatnosci() {
                   <h2 className="text-2xl font-heading font-semibold text-foreground">1. Administrator Danych</h2>
                   <p className="text-muted-foreground">
                     Administratorem Twoich danych osobowych jest Fotz Studio z siedzibą w Poznaniu, 
-                    Plac Wolności 16, 61-738 Poznań, NIP: [NIP do uzupełnienia].
+                    Plac Wolności 16, 61-738 Poznań, NIP: 7851806089.
                   </p>
                   <p className="text-muted-foreground">
                     Kontakt z administratorem: <a href="mailto:adam@fotz.pl" className="text-primary hover:underline">adam@fotz.pl</a>, 

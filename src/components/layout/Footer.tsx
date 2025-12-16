@@ -67,11 +67,14 @@ export function Footer() {
                     +48 790 814 814
                   </a>
                 </div>
-                <div className="flex items-center gap-3 text-muted-foreground">
+              <div className="flex items-center gap-3 text-muted-foreground">
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                   <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors">
                     adam@fotz.pl
                   </a>
+                </div>
+                <div className="flex items-center gap-3 text-muted-foreground text-sm">
+                  <span>NIP: 7851806089</span>
                 </div>
               </div>
 

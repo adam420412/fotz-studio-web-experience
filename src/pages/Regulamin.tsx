@@ -32,7 +32,7 @@ export default function Regulamin() {
                 <section className="space-y-4">
                   <h2 className="text-2xl font-heading font-semibold text-foreground">§1. Postanowienia ogólne</h2>
                   <ol className="list-decimal list-inside text-muted-foreground space-y-2">
-                    <li>Niniejszy regulamin określa zasady świadczenia usług przez Fotz Studio z siedzibą w Poznaniu, Plac Wolności 16, 61-738 Poznań.</li>
+                    <li>Niniejszy regulamin określa zasady świadczenia usług przez Fotz Studio z siedzibą w Poznaniu, Plac Wolności 16, 61-738 Poznań, NIP: 7851806089.</li>
                     <li>Kontakt z Usługodawcą: e-mail: adam@fotz.pl, tel. +48 790 814 814.</li>
                     <li>Korzystanie z usług Fotz Studio oznacza akceptację niniejszego regulaminu.</li>
                   </ol>
