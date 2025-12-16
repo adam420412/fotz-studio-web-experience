@@ -9,13 +9,23 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import portrait1 from "@/assets/fotograf/portrait-1.png";
 import portrait2 from "@/assets/fotograf/portrait-2.jpg";
 import portrait3 from "@/assets/fotograf/portrait-3.jpg";
+import portrait4 from "@/assets/fotograf/portrait-4.jpg";
+import portrait5 from "@/assets/fotograf/portrait-5.png";
+import portrait6 from "@/assets/fotograf/portrait-6.jpg";
+import portrait7 from "@/assets/fotograf/portrait-7.png";
+import portrait8 from "@/assets/fotograf/portrait-8.jpg";
 import concert1 from "@/assets/fotograf/concert-1.jpg";
 import concert2 from "@/assets/fotograf/concert-2.jpg";
 import concert3 from "@/assets/fotograf/concert-3.png";
 import concert4 from "@/assets/fotograf/concert-4.jpg";
 import concert5 from "@/assets/fotograf/concert-5.jpg";
+import concert6 from "@/assets/fotograf/concert-6.jpg";
+import concert7 from "@/assets/fotograf/concert-7.jpg";
+import concert8 from "@/assets/fotograf/concert-8.jpg";
+import concert9 from "@/assets/fotograf/concert-9.jpg";
 import event1 from "@/assets/fotograf/event-1.jpg";
 import event2 from "@/assets/fotograf/event-2.jpg";
+import event3 from "@/assets/fotograf/event-3.jpg";
 
 const galleryImages = [
   { src: portrait1, title: "Portret artystyczny", category: "Portret" },
@@ -28,6 +38,16 @@ const galleryImages = [
   { src: concert4, title: "Koncert", category: "Event" },
   { src: concert5, title: "Festiwal muzyczny", category: "Event" },
   { src: portrait3, title: "Sesja artystyczna", category: "Portret" },
+  { src: concert6, title: "Festiwal plenerowy", category: "Event" },
+  { src: concert7, title: "Koncert na żywo", category: "Event" },
+  { src: portrait4, title: "Sesja produktowa", category: "Portret" },
+  { src: concert8, title: "Występ sceniczny", category: "Event" },
+  { src: portrait5, title: "Sesja grupowa", category: "Portret" },
+  { src: portrait6, title: "Portret męski", category: "Portret" },
+  { src: portrait7, title: "Sesja kobieca", category: "Portret" },
+  { src: portrait8, title: "Portret miejski", category: "Portret" },
+  { src: event3, title: "Impreza klubowa", category: "Event" },
+  { src: concert9, title: "Koncert stadionowy", category: "Event" },
 ];
 
 const services = [
