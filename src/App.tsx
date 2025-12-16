@@ -34,6 +34,7 @@ import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
 import AgencjaMarketingowaPoznan from "./pages/AgencjaMarketingowaPoznan";
 import AgencjaMarketinguInternetowego from "./pages/AgencjaMarketinguInternetowego";
+import AgencjaReklamowaPoznan from "./pages/AgencjaReklamowaPoznan";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -75,6 +76,7 @@ const App = () => (
             <Route path="/dla-kogo" element={<DlaKogo />} />
             <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
             <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
+            <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
