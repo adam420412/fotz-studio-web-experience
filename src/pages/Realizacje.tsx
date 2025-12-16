@@ -304,6 +304,59 @@ const Realizacje = () => {
         </section>
       )}
 
+      {/* Video Showcase Section */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+              Produkcje Video
+            </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">
+              Nasze <span className="text-gradient-premium">realizacje video</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { src: "/videos/autospa.mp4", title: "AutoSpa", category: "Reklama" },
+              { src: "/videos/sequence-01.mp4", title: "Produkcja video", category: "Video" },
+              { src: "/videos/skaland-osiedle.mp4", title: "Skaland Osiedle", category: "Nieruchomości" },
+              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Event" },
+              { src: "/videos/fun-sport-stylish.mp4", title: "Sport & Lifestyle", category: "Video" },
+              { src: "/videos/fotz-reel.mp4", title: "Fotz Showreel", category: "Portfolio" },
+            ].map((video, index) => (
+              <motion.div
+                key={video.src}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative aspect-video rounded-2xl overflow-hidden border border-border/30 hover:border-primary/30 transition-all group"
+              >
+                <video
+                  src={video.src}
+                  className="w-full h-full object-cover"
+                  muted
+                  loop
+                  playsInline
+                  controls
+                />
+                <div className="absolute top-4 left-4 pointer-events-none">
+                  <span className="px-3 py-1 rounded-full bg-gradient-brand text-white text-xs font-medium">
+                    {video.category}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Projects Grid */}
       <section className="section-padding bg-card relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

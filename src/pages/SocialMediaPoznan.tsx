@@ -267,14 +267,14 @@ export default function SocialMediaPoznan() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
-              { src: "/videos/autospa.mp4", title: "AutoSpa" },
-              { src: "/videos/sequence-01.mp4", title: "Produkcja video" },
-              { src: "/videos/skaland-osiedle.mp4", title: "Skaland Osiedle" },
-              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki" },
-              { src: "/videos/fun-sport-stylish.mp4", title: "Sport & Lifestyle" },
-              { src: "/videos/fotz-reel.mp4", title: "Fotz Showreel" },
+              { src: "/videos/autospa.mp4", title: "AutoSpa", description: "Reklama video dla myjni samochodowej" },
+              { src: "/videos/sequence-01.mp4", title: "Produkcja video", description: "Profesjonalna produkcja reklamowa" },
+              { src: "/videos/skaland-osiedle.mp4", title: "Skaland Osiedle", description: "Prezentacja inwestycji deweloperskiej" },
+              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", description: "Relacja z eventu" },
+              { src: "/videos/fun-sport-stylish.mp4", title: "Sport & Lifestyle", description: "Dynamiczna produkcja sportowa" },
+              { src: "/videos/fotz-reel.mp4", title: "Fotz Showreel", description: "Przegląd naszych najlepszych realizacji" },
             ].map((video, index) => (
               <motion.div
                 key={video.src}
@@ -282,22 +282,21 @@ export default function SocialMediaPoznan() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="relative aspect-video rounded-2xl overflow-hidden border border-border group"
+                className="bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all"
               >
-                <video
-                  src={video.src}
-                  className="w-full h-full object-cover"
-                  muted
-                  loop
-                  playsInline
-                  onMouseEnter={(e) => e.currentTarget.play()}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.pause();
-                    e.currentTarget.currentTime = 0;
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                  <span className="text-white font-heading font-semibold">{video.title}</span>
+                <div className="relative aspect-video">
+                  <video
+                    src={video.src}
+                    className="w-full h-full object-cover"
+                    muted
+                    loop
+                    playsInline
+                    controls
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-heading font-semibold mb-2">{video.title}</h3>
+                  <p className="text-muted-foreground">{video.description}</p>
                 </div>
               </motion.div>
             ))}
