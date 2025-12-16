@@ -11,7 +11,7 @@ const navLinksData = [
   { name: { pl: "Usługi", en: "Services" }, href: "/uslugi" },
   { name: { pl: "Realizacje", en: "Portfolio" }, href: "/realizacje" },
   { name: { pl: "Dla kogo", en: "For whom" }, href: "/dla-kogo" },
-  { name: { pl: "Studio", en: "Studio" }, href: "/studio-podcastowe" },
+  // { name: { pl: "Studio", en: "Studio" }, href: "/studio-podcastowe" }, // Hidden temporarily
   { name: { pl: "Blog", en: "Blog" }, href: "/blog" },
   { name: { pl: "O nas", en: "About us" }, href: "/o-nas" },
   { name: { pl: "Kontakt", en: "Contact" }, href: "/kontakt" },
