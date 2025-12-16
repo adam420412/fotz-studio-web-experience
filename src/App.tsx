@@ -39,6 +39,7 @@ import StronyInternetowePoznan from "./pages/StronyInternetowePoznan";
 import SocialMediaPoznan from "./pages/SocialMediaPoznan";
 import FotografPoznan from "./pages/FotografPoznan";
 import PozycjonowanieStronPoznan from "./pages/PozycjonowanieStronPoznan";
+import ProdukcjaFilmowPoznan from "./pages/ProdukcjaFilmowPoznan";
 import PolitykaPrywatnosci from "./pages/PolitykaPrywatnosci";
 import Regulamin from "./pages/Regulamin";
 import NotFound from "./pages/NotFound";
@@ -87,6 +88,7 @@ const App = () => (
             <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
             <Route path="/fotograf-poznan" element={<FotografPoznan />} />
             <Route path="/pozycjonowanie-stron-poznan" element={<PozycjonowanieStronPoznan />} />
+            <Route path="/produkcja-filmow-poznan" element={<ProdukcjaFilmowPoznan />} />
             <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
             <Route path="/regulamin" element={<Regulamin />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
