@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
+import { VideoShowcase } from "@/components/sections/VideoShowcase";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { Services } from "@/components/sections/Services";
 import { Process } from "@/components/sections/Process";
@@ -47,6 +48,7 @@ const Index = () => {
       {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <Layout>
         <Hero />
+        <VideoShowcase />
         <WhyUs />
         <Services />
         <Process />
