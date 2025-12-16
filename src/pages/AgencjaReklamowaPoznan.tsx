@@ -376,6 +376,36 @@ const AgencjaReklamowaPoznan = () => {
                   <span className="text-sm text-muted-foreground">Klub Muzyczny B17</span>
                 </div>
               </div>
+
+              <div className="flex flex-col">
+                <InstagramEmbed 
+                  url="https://www.instagram.com/reel/DQpSgAqjGxB/" 
+                  className="flex-1"
+                />
+                <div className="mt-3 text-center">
+                  <span className="text-sm text-muted-foreground">Enea Stadion Poznań</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col">
+                <InstagramEmbed 
+                  url="https://www.instagram.com/reel/DQCNKAajM-q/" 
+                  className="flex-1"
+                />
+                <div className="mt-3 text-center">
+                  <span className="text-sm text-muted-foreground">Enea Stadion Poznań</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col">
+                <InstagramEmbed 
+                  url="https://www.instagram.com/reel/DPtonLMDC8o/" 
+                  className="flex-1"
+                />
+                <div className="mt-3 text-center">
+                  <span className="text-sm text-muted-foreground">Enea Stadion Poznań</span>
+                </div>
+              </div>
             </motion.div>
 
             <motion.div variants={fadeIn} className="text-center mt-10">
