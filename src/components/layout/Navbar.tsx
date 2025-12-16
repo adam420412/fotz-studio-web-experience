@@ -1,20 +1,33 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import logoFotz from "@/assets/logo-fotz.png";
 
 const navLinksData = [
-  { name: { pl: "Usługi", en: "Services" }, href: "/uslugi" },
   { name: { pl: "Realizacje", en: "Portfolio" }, href: "/realizacje" },
   { name: { pl: "Dla kogo", en: "For whom" }, href: "/dla-kogo" },
-  // { name: { pl: "Studio", en: "Studio" }, href: "/studio-podcastowe" }, // Hidden temporarily
   { name: { pl: "Blog", en: "Blog" }, href: "/blog" },
   { name: { pl: "O nas", en: "About us" }, href: "/o-nas" },
   { name: { pl: "Kontakt", en: "Contact" }, href: "/kontakt" },
+];
+
+const servicesDropdownData = [
+  { name: { pl: "Wszystkie usługi", en: "All services" }, href: "/uslugi" },
+  { name: { pl: "Social Media Poznań", en: "Social Media Poznań" }, href: "/social-media-poznan" },
+  { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe-poznan" },
+  { name: { pl: "Fotograf Poznań", en: "Photographer Poznań" }, href: "/fotograf-poznan" },
+  { name: { pl: "Agencja Marketingowa", en: "Marketing Agency" }, href: "/agencja-marketingowa-poznan" },
+  { name: { pl: "Agencja Reklamowa", en: "Advertising Agency" }, href: "/agencja-reklamowa-poznan" },
 ];
 
 export function Navbar() {
@@ -24,6 +37,11 @@ export function Navbar() {
   const { language, t } = useLanguage();
 
   const navLinks = navLinksData.map(link => ({
+    name: link.name[language],
+    href: link.href
+  }));
+
+  const servicesDropdown = servicesDropdownData.map(link => ({
     name: link.name[language],
     href: link.href
   }));
@@ -65,6 +83,34 @@ export function Navbar() {
 
           {/* Desktop Navigation - white text */}
           <div className="hidden lg:flex items-center gap-8">
+            {/* Services Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className={cn(
+                "text-sm font-medium transition-colors relative group flex items-center gap-1 outline-none",
+                location.pathname.includes("/uslugi") || location.pathname.includes("-poznan")
+                  ? "text-foreground"
+                  : "text-foreground/80 hover:text-foreground"
+              )}>
+                {t("Usługi", "Services")}
+                <ChevronDown className="w-4 h-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-background border border-border shadow-xl z-50 min-w-[200px]">
+                {servicesDropdown.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link
+                      to={link.href}
+                      className={cn(
+                        "w-full cursor-pointer",
+                        location.pathname === link.href && "text-[#75143F] font-medium"
+                      )}
+                    >
+                      {link.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -125,6 +171,25 @@ export function Navbar() {
         )}
       >
         <div className="container-wide px-6 py-8 flex flex-col gap-4">
+          {/* Mobile Services */}
+          <div className="border-b border-border pb-4 mb-2">
+            <span className="text-sm text-muted-foreground mb-2 block">{t("Usługi", "Services")}</span>
+            {servicesDropdown.map((link) => (
+              <Link
+                key={link.href}
+                to={link.href}
+                className={cn(
+                  "block text-base font-medium py-1.5 transition-colors pl-2",
+                  location.pathname === link.href
+                    ? "text-[#75143F]"
+                    : "text-foreground/70 hover:text-foreground"
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          
           {navLinks.map((link) => (
             <Link
               key={link.name}
