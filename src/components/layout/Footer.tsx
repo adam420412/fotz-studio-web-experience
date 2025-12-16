@@ -11,7 +11,7 @@ const footerLinks = {
     { name: "Marketing premium", href: "/uslugi/marketing-premium" },
   ],
   lokalne: [
-    { name: "Strony internetowe Poznań", href: "/uslugi/strony-internetowe-poznan" },
+    { name: "Strony internetowe Poznań", href: "/strony-internetowe-poznan" },
     { name: "Social Media Poznań", href: "/uslugi/social-media-poznan" },
     { name: "Marketing Poznań", href: "/uslugi/marketing-poznan" },
     { name: "Agencja Reklamowa Poznań", href: "/agencja-reklamowa-poznan" },
