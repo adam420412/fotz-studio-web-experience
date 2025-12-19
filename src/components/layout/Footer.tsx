@@ -12,10 +12,14 @@ const footerLinks = {
     { name: "Produkcja filmów", href: "/produkcja-filmow-poznan" },
   ],
   lokalne: [
+    { name: "Strony Internetowe Poznań", href: "/strony-internetowe-poznan" },
+    { name: "Social Media Poznań", href: "/social-media-poznan" },
+    { name: "Fotograf Poznań", href: "/fotograf-poznan" },
+    { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
+    { name: "Produkcja Filmów Poznań", href: "/produkcja-filmow-poznan" },
     { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
     { name: "Agencja Reklamowa Poznań", href: "/agencja-reklamowa-poznan" },
     { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
-    { name: "Produkcja Filmów Poznań", href: "/produkcja-filmow-poznan" },
   ],
   firma: [
     { name: "O nas", href: "/o-nas" },
