@@ -5,21 +5,19 @@ import logoFotz from "@/assets/logo-fotz.png";
 
 const footerLinks = {
   uslugi: [
-    { name: "Strony internetowe", href: "/strony-internetowe-poznan" },
-    { name: "Social Media", href: "/social-media-poznan" },
+    { name: "Strony internetowe", href: "/strony-internetowe" },
+    { name: "Social Media", href: "/social-media" },
+    { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
     { name: "Fotograf", href: "/fotograf-poznan" },
-    { name: "Pozycjonowanie SEO", href: "/pozycjonowanie-stron-poznan" },
     { name: "Produkcja filmów", href: "/produkcja-filmow-poznan" },
   ],
   lokalne: [
-    { name: "Strony Internetowe Poznań", href: "/strony-internetowe-poznan" },
+    { name: "Strony WWW Poznań", href: "/strony-internetowe-poznan" },
+    { name: "Strony WWW Warszawa", href: "/strony-internetowe-warszawa" },
     { name: "Social Media Poznań", href: "/social-media-poznan" },
-    { name: "Fotograf Poznań", href: "/fotograf-poznan" },
     { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
-    { name: "Produkcja Filmów Poznań", href: "/produkcja-filmow-poznan" },
     { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
     { name: "Agencja Reklamowa Poznań", href: "/agencja-reklamowa-poznan" },
-    { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
   ],
   firma: [
     { name: "O nas", href: "/o-nas" },

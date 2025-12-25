@@ -617,31 +617,34 @@ const StronyInternetowe = () => {
 
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                {cityLinks.map((city, index) => (
-                  <FadeInView key={index} delay={index * 0.05}>
-                    {city.href === "/strony-internetowe-poznan" ? (
-                      <Link 
-                        to={city.href}
-                        className="flex items-center justify-center gap-2 px-4 py-4 bg-primary/10 border border-primary/30 rounded-xl text-sm font-medium hover:bg-primary/20 transition-all group"
-                      >
-                        <MapPin className="w-4 h-4 text-primary" />
-                        <span>{city.name}</span>
-                      </Link>
-                    ) : (
-                      <div 
-                        className="flex items-center justify-center gap-2 px-4 py-4 bg-background border border-border/50 rounded-xl text-sm text-muted-foreground cursor-default"
-                        title="Strona w przygotowaniu"
-                      >
-                        <MapPin className="w-4 h-4" />
-                        <span>{city.name}</span>
-                      </div>
-                    )}
-                  </FadeInView>
-                ))}
+                {cityLinks.map((city, index) => {
+                  const isActive = city.href === "/strony-internetowe-poznan" || city.href === "/strony-internetowe-warszawa";
+                  return (
+                    <FadeInView key={index} delay={index * 0.05}>
+                      {isActive ? (
+                        <Link 
+                          to={city.href}
+                          className="flex items-center justify-center gap-2 px-4 py-4 bg-primary/10 border border-primary/30 rounded-xl text-sm font-medium hover:bg-primary/20 transition-all group"
+                        >
+                          <MapPin className="w-4 h-4 text-primary" />
+                          <span>{city.name}</span>
+                        </Link>
+                      ) : (
+                        <div 
+                          className="flex items-center justify-center gap-2 px-4 py-4 bg-background border border-border/50 rounded-xl text-sm text-muted-foreground cursor-default"
+                          title="Strona w przygotowaniu"
+                        >
+                          <MapPin className="w-4 h-4" />
+                          <span>{city.name}</span>
+                        </div>
+                      )}
+                    </FadeInView>
+                  );
+                })}
               </div>
               <FadeInView delay={0.5}>
                 <p className="text-center text-sm text-muted-foreground mt-8">
-                  Strona dla Poznania jest już dostępna. Pozostałe miasta wkrótce.
+                  Strony dla Poznania i Warszawy są już dostępne. Pozostałe miasta wkrótce.
                 </p>
               </FadeInView>
             </div>
