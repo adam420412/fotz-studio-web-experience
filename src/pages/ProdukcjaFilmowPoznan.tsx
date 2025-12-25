@@ -347,109 +347,109 @@ export default function ProdukcjaFilmowPoznan() {
         </section>
 
         {/* Section: Baza wiedzy */}
-        <section className="py-24 border-t border-border/30 overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 border-t border-border/30 overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <FadeInView>
-                <div className="text-center mb-16">
-                  <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                <div className="text-center mb-10 sm:mb-12 md:mb-16">
+                  <span className="inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium uppercase tracking-wider mb-3 sm:mb-4">
                     📚 Baza wiedzy
                   </span>
-                  <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                     Wszystko o <span className="text-gradient">produkcji filmowej</span>
                   </h2>
                 </div>
               </FadeInView>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-16">
                 <FadeInView delay={0.1}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Video className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Video className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Pre-produkcja</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Pre-produkcja</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Dobry film zaczyna się od solidnego planu. <strong className="text-foreground">Scenariusz, storyboard, brief</strong> – 
                       wszystko ustalamy przed wejściem na plan, by uniknąć niespodzianek.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Brief i konsultacje kreatywne</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Scenariusz i storyboard</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Planowanie logistyki zdjęć</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Brief i konsultacje kreatywne</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Scenariusz i storyboard</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Planowanie logistyki zdjęć</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.2}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Camera className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Camera className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Realizacja zdjęć</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Realizacja zdjęć</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       <strong className="text-foreground">Profesjonalny sprzęt</strong> – kamery 4K/6K, stabilizatory, 
                       drony, oświetlenie studyjne. Ekipa z doświadczeniem w produkcjach komercyjnych.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Kamery Sony, Blackmagic, RED</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Ujęcia z drona (licencja UAVO)</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Własne studio w Poznaniu</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Kamery Sony, Blackmagic, RED</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Ujęcia z drona (licencja UAVO)</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Własne studio w Poznaniu</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.3}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Clapperboard className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Clapperboard className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Post-produkcja</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Post-produkcja</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       To tutaj dzieje się magia. <strong className="text-foreground">Montaż, color grading, efekty VFX</strong>, 
                       sound design – dopracowujemy każdy detal do perfekcji.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Montaż w DaVinci Resolve / Premiere</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Profesjonalna korekcja kolorów</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Motion graphics i animacje</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Montaż w DaVinci Resolve / Premiere</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Profesjonalna korekcja kolorów</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Motion graphics i animacje</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.4}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Play className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Play className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Formaty i dystrybucja</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Formaty i dystrybucja</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Jeden film, wiele formatów. Przygotowujemy wersje na <strong className="text-foreground">YouTube, social media, 
                       ekrany LED</strong> i eventy – każdy format zoptymalizowany.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Wersje 16:9, 9:16, 1:1</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Formaty web-ready (H.264, ProRes)</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Napisy i wersje językowe</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Wersje 16:9, 9:16, 1:1</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Formaty web-ready (H.264, ProRes)</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Napisy i wersje językowe</li>
                     </ul>
                   </div>
                 </FadeInView>
               </div>
 
               <FadeInView delay={0.5}>
-                <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
-                  <div className="absolute top-6 left-8 text-6xl text-primary/30 font-serif">"</div>
-                  <blockquote className="text-xl md:text-2xl font-medium text-center max-w-3xl mx-auto pt-6 pb-4">
+                <div className="relative p-5 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl md:rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
+                  <div className="absolute top-4 sm:top-6 left-4 sm:left-8 text-4xl sm:text-5xl md:text-6xl text-primary/30 font-serif">"</div>
+                  <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center max-w-3xl mx-auto pt-4 sm:pt-6 pb-2 sm:pb-4 px-4">
                     <span className="text-foreground">Film to najskuteczniejszy sposób na opowiedzenie historii marki. Jeden obraz jest wart tysiąca słów – a 24 klatki na sekundę?</span>
                   </blockquote>
-                  <p className="text-center text-muted-foreground">
+                  <p className="text-center text-sm sm:text-base text-muted-foreground">
                     — Zespół Fotz Studio
                   </p>
                 </div>
@@ -459,32 +459,32 @@ export default function ProdukcjaFilmowPoznan() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[150px]" />
+            <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/30 rounded-full blur-[100px] sm:blur-[150px]" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Gotowy na <span className="text-gradient">profesjonalny film?</span>
                 </h2>
-                <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
                   Porozmawiajmy o Twoim projekcie. Bezpłatna konsultacja, konkretna wycena, jasny plan realizacji.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="group text-lg px-8 py-6">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+                  <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <Link to="/kontakt">
-                      <Rocket className="mr-2 h-5 w-5" />
+                      <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       Bezpłatna wycena
-                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                  <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <a href="tel:+48790814814">
-                      <Phone className="mr-2 h-5 w-5" />
+                      <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       +48 790 814 814
                     </a>
                   </Button>
