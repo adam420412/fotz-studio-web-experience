@@ -14,26 +14,26 @@ const PozycjonowanieStronPoznan = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="pt-40 pb-20 bg-gradient-to-b from-background to-secondary/20">
-        <div className="container-wide px-6 md:px-12">
+      <section className="pt-32 sm:pt-36 md:pt-40 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-b from-background to-secondary/20">
+        <div className="container-wide px-4 sm:px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6">
               Pozycjonowanie stron{" "}
               <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">
                 Poznań
               </span>
               {" "}- Skuteczna Agencja SEO
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
               W dzisiejszym świecie, gdzie praktycznie każda firma ma swoją obecność w internecie, skuteczne pozycjonowanie stron www w Poznaniu stało się kluczem do sukcesu. Marketing internetowy, w tym SEO, odgrywa kluczową rolę w przyciąganiu potencjalnych klientów do Twojej strony.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90 w-full sm:w-auto text-sm sm:text-base">
                 <Link to="/kontakt">
-                  Bezpłatny audyt SEO <ArrowRight className="ml-2 h-5 w-5" />
+                  Bezpłatny audyt SEO <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
                 <Link to="/realizacje">Zobacz efekty</Link>
               </Button>
             </div>
@@ -369,22 +369,22 @@ const PozycjonowanieStronPoznan = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#75143F] to-[#0F3053]">
-        <div className="container-wide px-6 md:px-12">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-r from-[#75143F] to-[#0F3053]">
+        <div className="container-wide px-4 sm:px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-4 sm:mb-6">
               Zwiększ widoczność swojej strony w Google
             </h2>
-            <p className="text-white/80 text-lg mb-8">
+            <p className="text-white/80 text-base sm:text-lg mb-6 sm:mb-8 px-2">
               Skontaktuj się z nami i otrzymaj bezpłatny audyt SEO. Pokażemy Ci, jak poprawić pozycję Twojej strony w wynikach wyszukiwania.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90 w-full sm:w-auto text-sm sm:text-base">
                 <Link to="/kontakt">
-                  Bezpłatna konsultacja <ArrowRight className="ml-2 h-5 w-5" />
+                  Bezpłatna konsultacja <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 w-full sm:w-auto text-sm sm:text-base">
                 <a href="tel:+48790814814">
                   Zadzwoń: +48 790 814 814
                 </a>

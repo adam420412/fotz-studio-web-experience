@@ -123,22 +123,22 @@ export default function SocialMediaPoznan() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6 leading-tight">
               Agencja Social Media Poznań:{" "}
               <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">
                 Marketing i Prowadzenie Facebooka
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl">
               W Fotz rozumiemy, jak istotny jest profesjonalny wizerunek w sieci. Specjalizujemy się w kompleksowej obsłudze firm w zakresie marketingu w social mediach, oferując usługi od tworzenia strategii po realizację kampanii reklamowych. Działamy w Poznaniu, wspierając lokalne firmy w budowaniu silnej obecności online.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+              <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90 w-full sm:w-auto text-sm sm:text-base">
                 <Link to="/kontakt">
-                  Bezpłatna konsultacja <ArrowRight className="ml-2 h-5 w-5" />
+                  Bezpłatna konsultacja <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
                 <Link to="/realizacje">Zobacz realizacje</Link>
               </Button>
             </div>
@@ -510,28 +510,28 @@ export default function SocialMediaPoznan() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 section-padding bg-gradient-to-br from-[#75143F] to-[#0F3053]">
-        <div className="container-wide">
+      <section className="py-12 sm:py-16 md:py-20 section-padding bg-gradient-to-br from-[#75143F] to-[#0F3053]">
+        <div className="container-wide px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-center"
           >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-white">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4 sm:mb-6 text-white">
               Skontaktuj się z Nami
             </h2>
-            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
               <strong>Oferujemy bezpłatną konsultację</strong>, podczas której przeanalizujemy Państwa obecną sytuację w social mediach 
               i zaproponujemy spersonalizowaną strategię marketingową.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button asChild size="lg" variant="secondary" className="bg-white text-foreground hover:bg-white/90">
+            <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+              <Button asChild size="lg" variant="secondary" className="bg-white text-foreground hover:bg-white/90 w-full sm:w-auto text-sm sm:text-base">
                 <Link to="/kontakt">
-                  Umów darmową konsultację <ArrowRight className="ml-2 h-5 w-5" />
+                  Umów darmową konsultację <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10 w-full sm:w-auto text-sm sm:text-base">
                 <a href="tel:+48790814814">
                   Zadzwoń: +48 790 814 814
                 </a>
