@@ -47,11 +47,11 @@ export const CityServicesGrid = ({
   };
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px]" />
+        <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-primary/5 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 left-0 w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-secondary/5 rounded-full blur-[100px]" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -60,16 +60,16 @@ export const CityServicesGrid = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+          <span className="inline-block px-3 sm:px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             Usługi {cityName}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 sm:mb-4">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}
@@ -80,7 +80,7 @@ export const CityServicesGrid = ({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto"
         >
           {services.map((service, index) => (
             <motion.div
@@ -88,30 +88,30 @@ export const CityServicesGrid = ({
               variants={itemVariants}
               className="group relative"
             >
-              <div className="relative p-8 rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 h-full
+              <div className="relative p-5 sm:p-6 md:p-8 rounded-xl md:rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 h-full
                             transition-all duration-500 ease-out
                             hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10
                             hover:-translate-y-2 hover:bg-card">
                 {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 
+                <div className="absolute inset-0 rounded-xl md:rounded-2xl bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 
                               opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 {/* Icon container */}
-                <div className="relative z-10 mb-6">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 
+                <div className="relative z-10 mb-4 md:mb-6">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-lg md:rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 
                                 flex items-center justify-center
                                 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500
                                 group-hover:shadow-lg group-hover:shadow-primary/20">
-                    <service.icon className="w-7 h-7 text-primary transition-transform duration-300 group-hover:scale-110" />
+                    <service.icon className="w-6 h-6 md:w-7 md:h-7 text-primary transition-transform duration-300 group-hover:scale-110" />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-3 group-hover:text-primary transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                     {service.desc}
                   </p>
                 </div>

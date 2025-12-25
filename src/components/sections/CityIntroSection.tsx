@@ -20,7 +20,7 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
@@ -28,7 +28,7 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center max-w-7xl mx-auto">
           {/* Left column - Text content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -37,15 +37,15 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
             transition={{ duration: 0.6 }}
             className="order-2 lg:order-1"
           >
-            <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+            <span className="inline-block px-3 sm:px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               O nas w {cityName}
             </span>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 md:mb-8">
               {content.title}
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               {content.paragraphs.map((paragraph, index) => (
                 <motion.div
                   key={index}
@@ -55,7 +55,7 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
                   transition={{ delay: 0.2 + index * 0.1 }}
                   className="prose prose-invert max-w-none"
                 >
-                  <p className="text-muted-foreground leading-relaxed text-lg">
+                  <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                     {paragraph}
                   </p>
                 </motion.div>
@@ -67,15 +67,15 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="mt-10 flex flex-wrap gap-4"
+              className="mt-8 md:mt-10 flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4"
             >
-              <Button asChild size="lg" className="group">
+              <Button asChild size="lg" className="group w-full sm:w-auto">
                 <Link to="/realizacje">
                   Zobacz realizacje
                   <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
                 <Link to="/o-nas">
                   Poznaj nas bliżej
                 </Link>

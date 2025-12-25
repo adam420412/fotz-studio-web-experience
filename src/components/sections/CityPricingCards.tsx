@@ -32,7 +32,7 @@ export const CityPricingCards = ({
   }));
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
       {/* Animated background */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div 
@@ -41,7 +41,7 @@ export const CityPricingCards = ({
             opacity: [0.1, 0.15, 0.1] 
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[150px]" 
+          className="absolute top-1/4 left-1/4 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-primary/10 rounded-full blur-[150px]" 
         />
         <motion.div 
           animate={{ 
@@ -49,7 +49,7 @@ export const CityPricingCards = ({
             opacity: [0.1, 0.15, 0.1] 
           }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }}
-          className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/10 rounded-full blur-[120px]" 
+          className="absolute bottom-1/4 right-1/4 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-secondary/10 rounded-full blur-[120px]" 
         />
       </div>
 
@@ -59,22 +59,22 @@ export const CityPricingCards = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+          <span className="inline-block px-3 sm:px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             Cennik {cityName}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 sm:mb-4">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {pricingWithFeatures.map((item, index) => (
             <motion.div
               key={index}
@@ -86,16 +86,16 @@ export const CityPricingCards = ({
             >
               {/* Popular badge */}
               {item.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
-                  <div className="flex items-center gap-1 px-4 py-1.5 bg-gradient-to-r from-primary to-primary/80 
-                                rounded-full text-primary-foreground text-sm font-medium shadow-lg shadow-primary/30">
-                    <Star className="w-4 h-4 fill-current" />
+                <div className="absolute -top-3 sm:-top-4 left-1/2 -translate-x-1/2 z-20">
+                  <div className="flex items-center gap-1 px-3 sm:px-4 py-1 sm:py-1.5 bg-gradient-to-r from-primary to-primary/80 
+                                rounded-full text-primary-foreground text-xs sm:text-sm font-medium shadow-lg shadow-primary/30">
+                    <Star className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
                     Popularne
                   </div>
                 </div>
               )}
 
-              <div className={`relative h-full p-8 rounded-3xl border backdrop-blur-sm
+              <div className={`relative h-full p-5 sm:p-6 md:p-8 rounded-2xl md:rounded-3xl border backdrop-blur-sm
                             transition-all duration-500 ease-out overflow-hidden
                             ${item.popular 
                               ? 'bg-gradient-to-b from-card to-card/80 border-primary/50 shadow-xl shadow-primary/10' 
@@ -109,18 +109,18 @@ export const CityPricingCards = ({
                 )}
 
                 {/* Header */}
-                <div className="relative z-10 mb-6">
-                  <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                <div className="relative z-10 mb-4 md:mb-6">
+                  <h3 className="text-xl md:text-2xl font-bold mb-1 sm:mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">{item.desc}</p>
                 </div>
 
                 {/* Price */}
-                <div className="relative z-10 mb-8">
+                <div className="relative z-10 mb-6 md:mb-8">
                   <div className="flex items-baseline gap-1">
-                    <span className={`text-4xl font-bold ${item.popular ? 'text-gradient' : 'text-primary'}`}>
+                    <span className={`text-3xl md:text-4xl font-bold ${item.popular ? 'text-gradient' : 'text-primary'}`}>
                       {item.price.replace('od ', '').split(' ')[0]}
                     </span>
-                    <span className="text-muted-foreground text-sm">
+                    <span className="text-muted-foreground text-xs sm:text-sm">
                       {item.price.includes('zł') ? 'zł' : ''} netto
                     </span>
                   </div>
@@ -128,7 +128,7 @@ export const CityPricingCards = ({
                 </div>
 
                 {/* Features */}
-                <div className="relative z-10 space-y-4 mb-8">
+                <div className="relative z-10 space-y-3 md:space-y-4 mb-6 md:mb-8">
                   {item.features?.map((feature, fIndex) => (
                     <motion.div 
                       key={fIndex}
@@ -136,13 +136,13 @@ export const CityPricingCards = ({
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 + fIndex * 0.1 }}
-                      className="flex items-start gap-3"
+                      className="flex items-start gap-2 sm:gap-3"
                     >
-                      <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5
+                      <div className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5
                                     ${item.popular ? 'bg-primary text-primary-foreground' : 'bg-primary/20 text-primary'}`}>
-                        <Check className="w-3 h-3" />
+                        <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
                       </div>
-                      <span className="text-sm text-foreground/90">{feature}</span>
+                      <span className="text-xs sm:text-sm text-foreground/90">{feature}</span>
                     </motion.div>
                   ))}
                 </div>
