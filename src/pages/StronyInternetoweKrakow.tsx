@@ -6,24 +6,31 @@ import { motion } from "framer-motion";
 import { 
   Globe, 
   Search, 
-  Users, 
   ShoppingCart, 
   Palette, 
   MessageSquare,
   Settings,
   TrendingUp,
   Handshake,
-  ChevronRight,
   Phone,
-  CheckCircle2,
   Smartphone,
   Shield,
   Headphones,
-  FileCode,
-  Clock,
-  Award,
   MapPin,
-  ArrowRight
+  ArrowRight,
+  Sparkles,
+  Zap,
+  Target,
+  BarChart3,
+  Code2,
+  Layers,
+  Rocket,
+  CheckCircle2,
+  Play,
+  Star,
+  Clock,
+  Users,
+  Award
 } from "lucide-react";
 import {
   Accordion,
@@ -32,8 +39,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
+import { CityPricingCards } from "@/components/sections/CityPricingCards";
+import { CityIntroSection } from "@/components/sections/CityIntroSection";
+import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -59,16 +69,32 @@ const StronyInternetoweKrakow = () => {
   ];
 
   const pricing = [
-    { title: "Strona wizytówkowa / Landing page", desc: "Prosta strona www prezentująca podstawowe informacje o firmie.", price: "od 1 500 zł netto" },
-    { title: "Rozbudowana strona firmowa", desc: "Profesjonalna strona internetowa z dodatkowymi funkcjonalnościami.", price: "od 5 000 zł netto" },
-    { title: "Sklep internetowy e-commerce", desc: "Zaawansowana platforma e-commerce z integracjami płatności.", price: "od 7 000 zł netto" },
+    { 
+      title: "Landing Page", 
+      desc: "Strona wizytówkowa prezentująca firmę", 
+      price: "od 1 500 zł",
+      features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"]
+    },
+    { 
+      title: "Strona Firmowa", 
+      desc: "Rozbudowana strona z dodatkowymi funkcjami", 
+      price: "od 5 000 zł",
+      popular: true,
+      features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"]
+    },
+    { 
+      title: "Sklep E-commerce", 
+      desc: "Platforma sprzedażowa z integracjami", 
+      price: "od 7 000 zł",
+      features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"]
+    },
   ];
 
   const processSteps = [
-    { step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Krakowie." },
-    { step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
-    { step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
-    { step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
+    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Krakowie." },
+    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
+    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
+    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
   ];
 
   const caseStudies = [
@@ -143,6 +169,20 @@ const StronyInternetoweKrakow = () => {
     },
   ];
 
+  const stats = [
+    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
+    { value: "98%", label: "Zadowolonych klientów", icon: Star },
+    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
+  ];
+
+  const benefits = [
+    { icon: Zap, title: "Szybkie wdrożenie", desc: "Realizacja projektu w 2-6 tygodni" },
+    { icon: Target, title: "Skuteczne SEO", desc: "Widoczność w Google od pierwszego dnia" },
+    { icon: Smartphone, title: "Mobile-first", desc: "Perfekcyjnie na każdym urządzeniu" },
+    { icon: Shield, title: "Bezpieczeństwo", desc: "SSL i regularne aktualizacje" },
+  ];
+
   return (
     <>
       <Helmet>
@@ -175,493 +215,514 @@ const StronyInternetoweKrakow = () => {
       />
 
       <Layout>
-        {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]" />
+        {/* Hero Section - Enhanced */}
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
+          {/* Animated background */}
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
+            <motion.div 
+              animate={{ 
+                scale: [1, 1.2, 1],
+                opacity: [0.15, 0.25, 0.15] 
+              }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" 
+            />
+            <motion.div 
+              animate={{ 
+                scale: [1.2, 1, 1.2],
+                opacity: [0.15, 0.25, 0.15] 
+              }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }}
+              className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px]" 
+            />
           </div>
+          
+          {/* Floating elements */}
+          <motion.div
+            animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-32 right-[15%] hidden lg:block"
+          >
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
+              <Globe className="w-10 h-10 text-primary" />
+            </div>
+          </motion.div>
+          
+          <motion.div
+            animate={{ y: [20, -20, 20], rotate: [0, -5, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            className="absolute bottom-32 left-[10%] hidden lg:block"
+          >
+            <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-secondary/20 to-secondary/5 backdrop-blur-sm border border-secondary/20 flex items-center justify-center">
+              <Code2 className="w-8 h-8 text-secondary" />
+            </div>
+          </motion.div>
           
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
+              className="text-center max-w-5xl mx-auto"
             >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Strony WWW Kraków
-              </span>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8">
+                  <Sparkles className="w-4 h-4" />
+                  Strony WWW Kraków
+                  <Sparkles className="w-4 h-4" />
+                </span>
+              </motion.div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Strony Internetowe <span className="text-gradient">Kraków</span>
-              </h1>
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight"
+              >
+                Strony Internetowe{" "}
+                <span className="text-gradient relative">
+                  Kraków
+                  <motion.span
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ duration: 0.8, delay: 0.8 }}
+                    className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full origin-left"
+                  />
+                </span>
+              </motion.h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                W dzisiejszym cyfrowym świecie, <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
-                Jeśli szukasz partnera do stworzenia strony internetowej w Krakowie, trafiłeś we właściwe miejsce. 
-                Zajmujemy się projektowaniem i tworzeniem stron www, które pomagają firmom rosnąć i osiągać cele biznesowe.
-              </p>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed"
+              >
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}
+                Tworzymy strony www, które wyglądają świetnie, działają błyskawicznie i skutecznie pozyskują klientów dla krakowskich firm.
+              </motion.p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+              >
+                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20">
                   <Link to="/kontakt">
                     Bezpłatna wycena
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2">
                   <a href="tel:+48790814814">
                     <Phone className="mr-2 h-5 w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
-              </div>
+              </motion.div>
+
+              {/* Stats bar */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto"
+              >
+                {stats.map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
+                    className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all"
+                  >
+                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
+                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </motion.div>
+          </div>
+
+          {/* Scroll indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          >
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-1"
+            >
+              <motion.div className="w-1.5 h-3 bg-primary rounded-full" />
+            </motion.div>
+          </motion.div>
+        </section>
+
+        {/* Intro Section - Two column with video */}
+        <CityIntroSection
+          cityName="Krakowie"
+          content={{
+            title: "Projektowanie i Tworzenie Stron WWW",
+            paragraphs: [
+              <p key="1">Wybierając lokalnych specjalistów do <strong>projektowania stron www</strong>, zyskujesz partnera rozumiejącego specyfikę krakowskiego rynku. Profesjonalny projekt strony z optymalizacją SEO to klucz do lepszej widoczności w Google.</p>,
+              <p key="2">Oferujemy <strong>kompleksowe usługi tworzenia stron internetowych</strong> - od analizy potrzeb, przez projektowanie UI/UX, aż po wdrożenie i pozycjonowanie.</p>
+            ],
+            videoSrc: "/videos/fotz-reel.mp4"
+          }}
+        />
+
+        {/* Services Section - New Grid Component */}
+        <CityServicesGrid 
+          services={services}
+          title="Tworzenie stron www Kraków"
+          subtitle="Kompleksowe usługi tworzenia stron www dla krakowskich firm - od projektu graficznego po pozycjonowanie stron."
+          cityName="Kraków"
+        />
+
+        {/* Benefits Section - Visual Cards */}
+        <CityBenefitsSection
+          title="Co zyskujesz współpracując z nami?"
+          subtitle="Każdy projekt realizujemy z myślą o Twoim sukcesie biznesowym"
+          cityName="Kraków"
+          benefits={[
+            "Szybkie wdrożenie projektu w 2-6 tygodni",
+            "Skuteczne SEO - widoczność w Google od pierwszego dnia",
+            "Mobile-first - perfekcyjnie na każdym urządzeniu",
+            "Bezpieczeństwo - SSL i regularne aktualizacje",
+            "Analityka - śledzenie konwersji i ruchu",
+            "Wsparcie techniczne po wdrożeniu"
+          ]}
+        />
+
+        {/* Case Studies Section - Enhanced */}
+        <section className="py-24 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-card/50 to-background" />
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                <Award className="w-4 h-4" />
+                Nasze realizacje
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Przykłady naszych stron internetowych
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Zobacz projekty, które zrealizowaliśmy. Każda strona to unikalna historia sukcesu.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {caseStudies.map((study, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.15 }}
+                >
+                  <Link 
+                    to={study.link}
+                    className="group block rounded-2xl overflow-hidden bg-card border border-border/50 
+                             hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 
+                             hover:shadow-2xl hover:shadow-primary/10"
+                  >
+                    <div className="aspect-video overflow-hidden relative">
+                      <img 
+                        src={study.image} 
+                        alt={study.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                        <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+                          <Play className="w-4 h-4 text-primary-foreground ml-0.5" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-3">
+                        {study.category}
+                      </span>
+                      <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                        {study.title}
+                      </h3>
+                      <div className="flex items-center gap-2 text-muted-foreground">
+                        <TrendingUp className="w-4 h-4 text-green-500" />
+                        <span className="text-sm">{study.result}</span>
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-center mt-12"
+            >
+              <Button asChild variant="outline" size="lg" className="group">
+                <Link to="/realizacje">
+                  Zobacz wszystkie realizacje
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
             </motion.div>
           </div>
         </section>
 
-        {/* Intro Section */}
-        <section className="py-16 border-b border-border/30">
+        {/* Process Section - Enhanced Timeline */}
+        <section className="py-24 relative overflow-hidden bg-card/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Projektowanie i Tworzenie Stron Internetowych w Krakowie
-                </h2>
-                <div className="prose prose-invert max-w-none">
-                  <h3>Dlaczego warto projektować strony www w Krakowie?</h3>
-                  <p>
-                    Wybierając firmy z Krakowa do projektowania stron www, zyskujesz dostęp do szerokiego grona specjalistów. 
-                    <strong>Projektowanie stron internetowych w Krakowie to gwarancja zrozumienia lokalnego rynku i specyfiki Twojej firmy</strong>. 
-                    Profesjonalny projekt strony, uwzględniający optymalizację SEO, przekłada się na lepszą widoczność w wyszukiwarce Google, 
-                    co jest kluczowe dla pozyskiwania nowych klientów.
-                  </p>
-                  
-                  <h3>Jakie usługi oferujemy dla firm z Krakowa?</h3>
-                  <p>
-                    Oferujemy kompleksowy zakres usług związanych z tworzeniem stron internetowych. Oprócz samego projektowania 
-                    i tworzenia stron internetowych, możesz liczyć na branding i identyfikację wizualną, obsługę social media, 
-                    video marketing i produkcję treści. Oferowane są także kampanie reklamowe Meta Ads i Google Ads, systemy 
-                    pozyskiwania leadów i automatyzację marketingu. <strong>Celem jest stworzenie nowoczesnej strony, która będzie 
-                    efektywnie wspierać cel biznesowy twojej firmy</strong>.
-                  </p>
-                </div>
-              </FadeInView>
-            </div>
-          </div>
-        </section>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                <Layers className="w-4 h-4" />
+                Nasz proces
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Jak wygląda tworzenie strony?
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Przejrzysty proces od briefu do wdrożenia. Każdy etap realizowany z najwyższą starannością.
+              </p>
+            </motion.div>
 
-        {/* Services Section */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Usługi</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Tworzenie stron www Kraków
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi tworzenia stron www dla krakowskich firm - od projektu graficznego po pozycjonowanie stron.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {services.map((service, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full">
-                    <service.icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Koszty Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <div className="prose prose-invert max-w-none">
-                  <h2>Koszty Tworzenia Stron Internetowych w Krakowie</h2>
-                  
-                  <h3>Co wpływa na koszt stworzenia strony internetowej?</h3>
-                  <p>
-                    Koszt stworzenia strony internetowej w Krakowie jest zależny od wielu czynników. Przede wszystkim, 
-                    rodzaj strony www ma kluczowe znaczenie. Strona wizytówkowa będzie znacznie tańsza niż rozbudowany 
-                    sklep internetowy. Dodatkowe funkcjonalności również wpływają na cenę, takie jak optymalizacja SEO, 
-                    integracje z systemami CRM czy systemami płatności.
-                  </p>
-                  
-                  <h3>Indywidualny projekt strony</h3>
-                  <p>
-                    Indywidualny projekt strony, dopasowany do specyfiki Twojej firmy, wymaga więcej pracy niż szablonowe 
-                    rozwiązania. Dlatego każda wycena tworzenia stron internetowych w Krakowie jest dopasowana do celów 
-                    biznesowych klienta, a cena strony odzwierciedla kompleksowość projektu.
-                  </p>
-                  
-                  <h3>Dodatkowe koszty związane ze stroną www</h3>
-                  <p>
-                    Poza kosztami samego projektowania i tworzenia stron internetowych, warto uwzględnić dodatkowe koszty 
-                    związane z utrzymaniem i promocją nowej strony: obsługę fotograficzną, kampanie SEM, pozycjonowanie, 
-                    prowadzenie social media oraz hosting i domenę.
-                  </p>
-                </div>
-              </FadeInView>
-            </div>
-          </div>
-        </section>
-
-        {/* Case Studies Section */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Realizacje</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Przykłady naszych stron internetowych
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Zobacz projekty, które zrealizowaliśmy. Tworzymy profesjonalne strony i sklepy internetowe.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <Link 
-                    to={study.link}
-                    className="group block rounded-xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all"
+            <div className="max-w-5xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {processSteps.map((step, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.15 }}
+                    className="group relative"
                   >
-                    <div className="aspect-video overflow-hidden">
-                      <img 
-                        src={study.image} 
-                        alt={study.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
+                    {/* Connector line */}
+                    {index < processSteps.length - 1 && (
+                      <div className="hidden lg:block absolute top-12 left-[60%] w-full h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
+                    )}
+                    
+                    <div className="relative p-6 rounded-2xl bg-background border border-border/50 
+                                  hover:border-primary/30 transition-all duration-500 hover:-translate-y-2
+                                  hover:shadow-xl hover:shadow-primary/5">
+                      {/* Step number */}
+                      <div className="absolute -top-4 -left-4 w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary/80 
+                                    text-primary-foreground flex items-center justify-center font-bold text-xl
+                                    shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform">
+                        {step.step}
+                      </div>
+                      
+                      {/* Icon */}
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 ml-auto
+                                    group-hover:bg-primary/20 transition-colors">
+                        <step.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      
+                      <h3 className="text-lg font-bold mb-2">{step.title}</h3>
+                      <p className="text-sm text-muted-foreground">{step.desc}</p>
                     </div>
-                    <div className="p-6">
-                      <span className="text-primary text-sm font-medium">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-1 mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-muted-foreground">{study.result}</p>
-                    </div>
-                  </Link>
-                </FadeInView>
-              ))}
-            </div>
-
-            <FadeInView delay={0.3}>
-              <div className="text-center mt-12">
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/realizacje">
-                    Zobacz wszystkie realizacje
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
+                  </motion.div>
+                ))}
               </div>
-            </FadeInView>
-          </div>
-        </section>
-
-        {/* SEO Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <div className="prose prose-invert max-w-none">
-                  <h2>Optymalizacja SEO dla Stron WWW w Krakowie</h2>
-                  
-                  <h3>Co to jest SEO i dlaczego jest ważne?</h3>
-                  <p>
-                    SEO, czyli Search Engine Optimization, to proces optymalizacji stron internetowych pod kątem 
-                    wyszukiwarek internetowych, takich jak Google. <strong>Profesjonalna optymalizacja SEO ma na celu 
-                    poprawę widoczności Twojej strony w wynikach wyszukiwania</strong>, co przekłada się na większy 
-                    ruch i potencjalnych klientów dla Twojej firmy w Krakowie.
-                  </p>
-                  
-                  <h3>Najlepsze praktyki pozycjonowania stron w Krakowie</h3>
-                  <p>
-                    Najlepsze praktyki pozycjonowania stron w Krakowie obejmują kompleksowy audyt SEO, optymalizację 
-                    treści pod kątem słów kluczowych związanych z lokalnym rynkiem, budowanie linków z lokalnych stron 
-                    oraz dbanie o responsywność i szybkość strony.
-                  </p>
-                  
-                  <h3>Współpraca z firmą SEO w Krakowie</h3>
-                  <p>
-                    Współpraca z firmą SEO w Krakowie powinna opierać się na jasno określonych celach i regularnej 
-                    komunikacji. Dobra firma SEO oferuje optymalizację, która uwzględnia analizę słów kluczowych, 
-                    optymalizację treści i budowanie linków.
-                  </p>
-                </div>
-              </FadeInView>
             </div>
           </div>
         </section>
 
-        {/* E-commerce Section */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <div className="prose prose-invert max-w-none">
-                  <h2>Tworzenie Sklepów Internetowych w Krakowie</h2>
-                  
-                  <h3>Kluczowe elementy skutecznego sklepu internetowego</h3>
-                  <p>
-                    Kluczowe elementy skutecznego sklepu internetowego to integracja z systemami płatności i dostawy, 
-                    zaawansowana optymalizacja SEO i certyfikat SSL, przejrzysta strona główna i intuicyjny katalog 
-                    produktów, szczegółowa strona produktu, funkcjonalny koszyk i prosty proces zamówienia.
-                  </p>
-                  
-                  <h3>Wybór platformy do stworzenia sklepu www</h3>
-                  <p>
-                    Wybór odpowiedniej platformy do stworzenia sklepu www w Krakowie jest kluczową decyzją. Popularne 
-                    platformy e-commerce, takie jak WooCommerce, Shopify czy PrestaShop, oferują różne funkcje i 
-                    możliwości dostosowania. <strong>Ważne jest, aby platforma umożliwiała optymalizację SEO, integrację 
-                    z systemami płatności i była responsywna</strong>.
-                  </p>
-                  
-                  <h3>Trendy w e-commerce w Krakowie</h3>
-                  <p>
-                    Trendy w e-commerce wskazują na rosnące znaczenie personalizacji, mobilnych zakupów i 
-                    zrównoważonego rozwoju. Klienci oczekują spersonalizowanych ofert, łatwej nawigacji na urządzeniach 
-                    mobilnych oraz transparentnych informacji o produktach.
-                  </p>
-                </div>
-              </FadeInView>
-            </div>
-          </div>
-        </section>
+        {/* Pricing Section - New Component */}
+        <CityPricingCards 
+          pricing={pricing}
+          title="Cennik tworzenia stron www"
+          subtitle="Transparentne ceny dopasowane do zakresu projektu strony internetowej."
+          cityName="Kraków"
+        />
 
-        {/* Why Us Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Dlaczego my</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego warto nam zlecić tworzenie strony?
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm z Krakowa.
-                </p>
-              </div>
-            </FadeInView>
+        {/* Why Us Section - Enhanced Grid */}
+        <section className="py-24 bg-card/30 relative overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[100px]" />
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/5 rounded-full blur-[100px]" />
+          </div>
+
+          <div className="container mx-auto px-4 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                <Users className="w-4 h-4" />
+                Dlaczego my
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Dlaczego warto nam zlecić stronę?
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Zespół specjalistów z pasją do tworzenia wyjątkowych stron internetowych.
+              </p>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {whyUs.map((item, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full">
-                    <item.icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="group"
+                >
+                  <div className="h-full p-6 rounded-2xl bg-background border border-border/50 
+                                hover:border-primary/30 transition-all duration-500 hover:-translate-y-2
+                                hover:shadow-xl hover:shadow-primary/5">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 
+                                  flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                      <item.icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-bold mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
                   </div>
-                </FadeInView>
+                </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Process Section */}
-        <section className="py-20 bg-card/30">
+        {/* Cities Section - Enhanced */}
+        <section className="py-24 relative overflow-hidden">
           <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak wygląda proces tworzenia strony internetowej?
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Przejrzysty proces od briefu do wdrożenia nowej strony internetowej.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              {processSteps.map((step, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="relative p-6 rounded-xl bg-background border border-border/50">
-                    <span className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                      {step.step}
-                    </span>
-                    <h3 className="text-lg font-semibold mb-2 mt-2">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground">{step.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Cennik tworzenia stron www Kraków
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Transparentne ceny dopasowane do zakresu projektu strony internetowej.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {pricing.map((plan, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-xl border h-full flex flex-col ${index === 1 ? "bg-primary/5 border-primary/30" : "bg-card border-border/50"}`}>
-                    <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">{plan.desc}</p>
-                    <div className="text-2xl font-bold text-primary mb-6">{plan.price}</div>
-                    <Button asChild className="w-full mt-auto" variant={index === 1 ? "default" : "outline"}>
-                      <Link to="/kontakt">Zapytaj o ofertę</Link>
-                    </Button>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-
-            <FadeInView delay={0.3}>
-              <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto text-sm">
-                * Ceny orientacyjne. Ostateczna wycena zależy od zakresu funkcjonalności i złożoności projektu.
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                <MapPin className="w-4 h-4" />
+                Lokalizacje
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Tworzymy strony w całej Polsce
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Działamy zdalnie, ale znamy specyfikę lokalnych rynków. Sprawdź ofertę w Twoim mieście.
               </p>
-            </FadeInView>
-          </div>
-        </section>
+            </motion.div>
 
-        {/* Additional SEO Content */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <div className="prose prose-invert max-w-none">
-                  <h2>Strony internetowe Kraków — Czym są i dlaczego warto zainwestować?</h2>
-                  <p>
-                    Strony internetowe Kraków to wizytówka Twojej firmy w internecie. Profesjonalne strony internetowe 
-                    łączą projekt graficzny strony, responsywne strony i SEO strony, dzięki czemu Twoja firma może się 
-                    wyróżnić na tle konkurencji. Tworzenie i projektowanie stron internetowych obejmuje projekt strony www, 
-                    układ strony oraz funkcjonalności strony.
-                  </p>
-                  
-                  <h2>WWW Kraków — Jak wygląda proces tworzenia strony?</h2>
-                  <p>
-                    Proces tworzenia strony zwykle zaczyna się od briefu i identyfikacji wizualnej, następnie powstaje 
-                    projekt graficzny strony w wersji desktop i mobilnej. Kolejne etapy to wykonanie strony internetowej, 
-                    testy responsywnych stron www, uruchomienie strony i wdrożenie SEO oraz integracja z mediami społecznościowymi.
-                  </p>
-                  
-                  <h2>Stron www Kraków — Ile kosztuje stworzenie strony internetowej?</h2>
-                  <p>
-                    Cena strony internetowej zależy od zakresu: prosty projekt strony www kosztuje mniej niż rozbudowany 
-                    portal internetowy z dedykowanymi funkcjonalnościami. Przy wycenie bierzemy pod uwagę dopasowanie strony 
-                    do potrzeb Twojej strony internetowej i obsługi strony po uruchomieniu.
-                  </p>
-                  
-                  <h2>Google — Jak pozycjonowanie stron www wpływa na widoczność?</h2>
-                  <p>
-                    SEO strony i pozycjonowanie stron www to klucz do zwiększenia ruchu z Google. Skuteczne strony zawierają 
-                    zoptymalizowane treści, techniczne SEO zgodne ze standardami oraz szybkość ładowania, co poprawia 
-                    działanie strony i pozycję w wynikach wyszukiwania.
-                  </p>
-                </div>
-              </FadeInView>
-            </div>
-          </div>
-        </section>
-
-        {/* Cities Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-12">
-                <div className="flex items-center justify-center gap-2 mb-4">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  <span className="text-primary text-sm font-medium uppercase tracking-wider">Lokalizacje</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Tworzymy strony internetowe w całej Polsce
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Działamy zdalnie, ale znamy specyfikę lokalnych rynków. Sprawdź naszą ofertę w Twoim mieście.
-                </p>
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.2}>
-              <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-                {cityLinks.map((city, index) => (
-                  city.active ? (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto"
+            >
+              {cityLinks.map((city, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                >
+                  {city.active ? (
                     <Link
-                      key={index}
                       to={city.href}
-                      className={`px-6 py-3 rounded-full font-medium transition-colors ${
+                      className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                         city.href === "/strony-internetowe-krakow" 
-                          ? "bg-primary text-primary-foreground" 
-                          : "bg-card border border-border/50 text-foreground hover:border-primary/30"
+                          ? "bg-primary text-primary-foreground shadow-lg shadow-primary/30" 
+                          : "bg-card border border-border/50 text-foreground hover:border-primary/30 hover:bg-primary/5"
                       }`}
                     >
                       {city.name}
                     </Link>
                   ) : (
-                    <span
-                      key={index}
-                      className="px-6 py-3 rounded-full bg-card border border-border/50 text-muted-foreground font-medium cursor-not-allowed"
-                      title="Wkrótce"
-                    >
+                    <span className="px-6 py-3 rounded-full bg-card border border-border/50 text-muted-foreground font-medium cursor-not-allowed">
                       {city.name}
                     </span>
-                  )
-                ))}
-              </div>
-            </FadeInView>
+                  )}
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-20 bg-card/30">
+        {/* FAQ Section - Enhanced */}
+        <section className="py-24 bg-card/30 relative overflow-hidden">
           <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">FAQ</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Najczęściej zadawane pytania
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na pytania dotyczące tworzenia stron w Krakowie.
-                </p>
-              </div>
-            </FadeInView>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                <MessageSquare className="w-4 h-4" />
+                FAQ
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Najczęściej zadawane pytania
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Odpowiedzi na pytania dotyczące tworzenia stron w Krakowie.
+              </p>
+            </motion.div>
 
-            <FadeInView delay={0.2}>
-              <div className="max-w-3xl mx-auto">
-                <Accordion type="single" collapsible className="space-y-4">
-                  {faqItems.map((item, index) => (
-                    <AccordionItem 
-                      key={index} 
-                      value={`item-${index}`}
-                      className="bg-background rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
-                    >
-                      <AccordionTrigger className="text-left hover:no-underline py-6">
-                        <span className="font-semibold pr-4">{item.question}</span>
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground pb-6">
-                        {item.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </div>
-            </FadeInView>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="max-w-3xl mx-auto"
+            >
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="bg-background rounded-2xl border border-border/50 px-6 
+                             data-[state=open]:border-primary/30 data-[state=open]:shadow-lg 
+                             data-[state=open]:shadow-primary/5 transition-all duration-300"
+                  >
+                    <AccordionTrigger className="text-left hover:no-underline py-6 group">
+                      <span className="font-semibold pr-4 group-hover:text-primary transition-colors">
+                        {item.question}
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-6">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </motion.div>
           </div>
         </section>
 
