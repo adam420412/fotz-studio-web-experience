@@ -1,12 +1,25 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Play, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { TextRevealByWord } from "@/components/TextReveal";
+import { MagneticButton } from "@/components/MagneticButton";
+import { useRef } from "react";
 
 export function Hero() {
   const { t } = useLanguage();
+  const containerRef = useRef<HTMLElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
 
   const stats = [
     { value: 1000000, suffix: "+", label: t("Wyświetleń treści miesięcznie", "Monthly content views") },
@@ -15,9 +28,9 @@ export function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+    <section ref={containerRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Video Background with Parallax */}
+      <motion.div className="absolute inset-0 z-0" style={{ scale }}>
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
         <video
           autoPlay
@@ -25,12 +38,12 @@ export function Hero() {
           muted
           playsInline
           preload="auto"
-          className="w-full h-full object-cover scale-105"
+          className="w-full h-full object-cover"
           poster="/hero-video-poster.jpg"
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-      </div>
+      </motion.div>
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 z-5 pointer-events-none">
@@ -50,8 +63,11 @@ export function Hero() {
         />
       </div>
 
-      {/* Content */}
-      <div className="relative z-20 container-wide px-6 md:px-12 text-center pt-24">
+      {/* Content with Parallax */}
+      <motion.div 
+        className="relative z-20 container-wide px-6 md:px-12 text-center pt-24"
+        style={{ y, opacity }}
+      >
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
           <motion.div
@@ -69,25 +85,26 @@ export function Hero() {
             </span>
           </motion.div>
 
-          {/* Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6"
-          >
-            {t("Agencja Marketingowa,", "Marketing Agency")}
-            <br />
-            <span className="text-gradient-premium">
-              {t("która projektuje realny wzrost firm", "that designs real business growth")}
-            </span>
-          </motion.h1>
+          {/* Heading with Text Reveal */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6">
+            <TextRevealByWord
+              text={t("Agencja Marketingowa,", "Marketing Agency")}
+              className="justify-center"
+              delay={0.2}
+            />
+            <TextRevealByWord
+              text={t("która projektuje realny wzrost firm", "that designs real business growth")}
+              className="justify-center text-gradient-premium"
+              wordClassName="text-gradient-premium"
+              delay={0.5}
+            />
+          </h1>
 
           {/* Subheading */}
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.8 }}
             className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10"
           >
             {t(
@@ -96,32 +113,36 @@ export function Hero() {
             )}
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons with Magnetic Effect */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
+            transition={{ duration: 0.7, delay: 1 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button variant="hero" size="xl" asChild className="group min-w-[220px]">
-              <Link to="/kontakt">
-                {t("Bezpłatna konsultacja", "Free consultation")}
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </Button>
-            <Button variant="heroOutline" size="xl" asChild className="group min-w-[220px]">
-              <Link to="/realizacje">
-                <Play className="w-5 h-5" />
-                {t("Zobacz realizacje", "See our work")}
-              </Link>
-            </Button>
+            <MagneticButton strength={0.2}>
+              <Button variant="hero" size="xl" asChild className="group min-w-[220px]" data-cursor-text="Porozmawiajmy">
+                <Link to="/kontakt">
+                  {t("Bezpłatna konsultacja", "Free consultation")}
+                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
+            </MagneticButton>
+            <MagneticButton strength={0.2}>
+              <Button variant="heroOutline" size="xl" asChild className="group min-w-[220px]" data-cursor-text="Zobacz">
+                <Link to="/realizacje">
+                  <Play className="w-5 h-5" />
+                  {t("Zobacz realizacje", "See our work")}
+                </Link>
+              </Button>
+            </MagneticButton>
           </motion.div>
 
           {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 1.2 }}
             className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-border/30"
           >
             {stats.map((stat, index) => (
@@ -137,13 +158,13 @@ export function Hero() {
             ))}
           </motion.div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
+        transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
       >
         <motion.div
