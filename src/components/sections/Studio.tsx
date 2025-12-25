@@ -154,7 +154,7 @@ export function Studio() {
             >
               <div className="aspect-square rounded-2xl overflow-hidden border border-border/30 bg-card">
                 <video
-                  src="/videos/fotz-reel.mp4"
+                  src="/videos/skaland-osiedle.mp4"
                   autoPlay
                   muted
                   loop
