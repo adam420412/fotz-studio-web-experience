@@ -23,7 +23,7 @@ export const CityBenefitsSection = ({
   showCTA = true
 }: CityBenefitsSectionProps) => {
   return (
-    <section className="py-24 relative overflow-hidden bg-card/30">
+    <section className="py-16 md:py-24 relative overflow-hidden bg-card/30">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="absolute inset-0" style={{
@@ -33,7 +33,7 @@ export const CityBenefitsSection = ({
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center max-w-7xl mx-auto">
           {/* Left column - Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -41,22 +41,22 @@ export const CityBenefitsSection = ({
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+            <span className="inline-block px-3 sm:px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               Dlaczego my?
             </span>
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 sm:mb-6">
               {title}
             </h2>
             
             {subtitle && (
-              <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 md:mb-10 leading-relaxed">
                 {subtitle}
               </p>
             )}
 
             {/* Benefits list with stagger animation */}
-            <div className="space-y-4 mb-10">
+            <div className="space-y-3 md:space-y-4 mb-8 md:mb-10">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
@@ -64,16 +64,16 @@ export const CityBenefitsSection = ({
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 + index * 0.08, duration: 0.4 }}
-                  className="group flex items-start gap-4 p-4 rounded-xl bg-background/60 backdrop-blur-sm
+                  className="group flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg md:rounded-xl bg-background/60 backdrop-blur-sm
                            border border-border/50 hover:border-primary/30 hover:bg-background/80
                            transition-all duration-300 hover:shadow-lg hover:shadow-primary/5"
                 >
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-md sm:rounded-lg bg-gradient-to-br from-primary/20 to-primary/5 
                                 flex items-center justify-center flex-shrink-0
                                 group-hover:scale-110 group-hover:bg-primary/30 transition-all duration-300">
-                    <CheckCircle2 className="w-5 h-5 text-primary" />
+                    <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                   </div>
-                  <span className="text-foreground font-medium group-hover:text-primary transition-colors duration-300">
+                  <span className="text-sm sm:text-base text-foreground font-medium group-hover:text-primary transition-colors duration-300">
                     {benefit}
                   </span>
                 </motion.div>
@@ -103,29 +103,29 @@ export const CityBenefitsSection = ({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="relative hidden lg:block"
           >
             {/* Decorative background elements */}
             <div className="absolute -inset-4 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 rounded-3xl blur-2xl opacity-50" />
             
             {/* Image grid */}
-            <div className="relative grid grid-cols-2 gap-4">
+            <div className="relative grid grid-cols-2 gap-3 md:gap-4">
               {/* Main large image */}
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
-                className="col-span-2 relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10"
+                className="col-span-2 relative rounded-xl md:rounded-2xl overflow-hidden shadow-2xl shadow-primary/10"
               >
                 <img 
                   src={victoryCarsImg} 
                   alt="Realizacja strony internetowej"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 md:h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
+                <div className="absolute bottom-3 md:bottom-4 left-3 md:left-4 right-3 md:right-4">
                   <span className="text-xs text-primary font-medium">Case Study</span>
-                  <h4 className="text-lg font-semibold">Victory Cars</h4>
-                  <p className="text-sm text-muted-foreground">Strona motoryzacyjna premium</p>
+                  <h4 className="text-base md:text-lg font-semibold">Victory Cars</h4>
+                  <p className="text-xs md:text-sm text-muted-foreground">Strona motoryzacyjna premium</p>
                 </div>
               </motion.div>
 
