@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const cities = [
   { name: "Poznań", path: "/strony-internetowe-poznan", active: true },
   { name: "Warszawa", path: "/strony-internetowe-warszawa", active: true },
-  { name: "Kraków", path: "/strony-internetowe-krakow", active: false },
+  { name: "Kraków", path: "/strony-internetowe-krakow", active: true },
   { name: "Wrocław", path: "/strony-internetowe-wroclaw", active: true },
   { name: "Gdańsk", path: "/strony-internetowe-gdansk", active: false },
   { name: "Łódź", path: "/strony-internetowe-lodz", active: false },

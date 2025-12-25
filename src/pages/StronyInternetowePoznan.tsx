@@ -513,7 +513,7 @@ const StronyInternetowePoznan = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
               {[
                 { name: "Warszawa", path: "/strony-internetowe-warszawa", active: true },
-                { name: "Kraków", path: "/strony-internetowe-krakow", active: false },
+                { name: "Kraków", path: "/strony-internetowe-krakow", active: true },
                 { name: "Wrocław", path: "/strony-internetowe-wroclaw", active: true },
                 { name: "Gdańsk", path: "/strony-internetowe-gdansk", active: false },
                 { name: "Łódź", path: "/strony-internetowe-lodz", active: false },

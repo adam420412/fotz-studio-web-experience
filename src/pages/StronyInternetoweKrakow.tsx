@@ -38,18 +38,18 @@ import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
-const StronyInternetoweWroclaw = () => {
+const StronyInternetoweKrakow = () => {
   const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Budujemy profesjonalne strony www oraz sklepy internetowe." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Zwiększamy widoczność Twojej firmy w wyszukiwarkach." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Tworzymy nowoczesne strony internetowe z myślą o użytkowniku." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych Wrocław z integracjami." },
+    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz sklepy internetowe dla firm z Krakowa." },
+    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
+    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na użytkownika." },
+    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych Kraków z pełnymi integracjami." },
     { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
     { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
   ];
 
   const whyUs = [
-    { icon: Settings, title: "Nowoczesne technologie", desc: "React, Next.js, WordPress, Webflow - dobieramy technologię do projektu strony internetowej." },
+    { icon: Settings, title: "Nowoczesne technologie", desc: "React, Next.js, WordPress, Webflow - dobieramy technologię do projektu strony." },
     { icon: Search, title: "SEO w standardzie", desc: "Każda strona www jest zoptymalizowana pod wyszukiwarki od pierwszego dnia." },
     { icon: Handshake, title: "Partnerskie podejście", desc: "Specjalizujemy się w tworzeniu stron skrojonych na miarę Twojej firmy." },
     { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
@@ -58,14 +58,14 @@ const StronyInternetoweWroclaw = () => {
   ];
 
   const pricing = [
-    { title: "Strona wizytówkowa", desc: "Prosta strona www prezentująca podstawowe informacje o firmie.", price: "od 2 000 zł netto" },
-    { title: "Strona firmowa", desc: "Rozbudowana strona internetowa z dodatkowymi funkcjonalnościami.", price: "od 5 000 zł netto" },
-    { title: "Sklep internetowy", desc: "Zaawansowana platforma e-commerce z integracjami płatności.", price: "od 8 000 zł netto" },
+    { title: "Strona wizytówkowa / Landing page", desc: "Prosta strona www prezentująca podstawowe informacje o firmie.", price: "od 1 500 zł netto" },
+    { title: "Rozbudowana strona firmowa", desc: "Profesjonalna strona internetowa z dodatkowymi funkcjonalnościami.", price: "od 5 000 zł netto" },
+    { title: "Sklep internetowy e-commerce", desc: "Zaawansowana platforma e-commerce z integracjami płatności.", price: "od 7 000 zł netto" },
   ];
 
   const processSteps = [
-    { step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy." },
-    { step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność." },
+    { step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Krakowie." },
+    { step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
     { step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
     { step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
   ];
@@ -109,16 +109,16 @@ const StronyInternetoweWroclaw = () => {
 
   const faqItems = [
     {
-      question: "Jakie są korzyści z posiadania strony internetowej dla firm we Wrocławiu?",
-      answer: "Posiadanie strony internetowej dla firm przynosi wiele korzyści: zwiększenie widoczności online, budowanie wiarygodności, możliwość prezentacji oferty 24/7, łatwiejszy kontakt z klientami oraz potencjalne zwiększenie sprzedaży. Dobra strona www może znacząco wpłynąć na rozwój biznesu w mieście Wrocław."
+      question: "Jakie są korzyści z posiadania strony internetowej dla firm w Krakowie?",
+      answer: "Posiadanie strony internetowej dla firm przynosi wiele korzyści: zwiększenie widoczności online, budowanie wiarygodności, możliwość prezentacji oferty 24/7, łatwiejszy kontakt z klientami oraz potencjalne zwiększenie sprzedaży. Dobra strona www może znacząco wpłynąć na rozwój biznesu w Krakowie."
     },
     {
-      question: "Dlaczego warto skorzystać z usług profesjonalnej agencji do projektowania stron www?",
-      answer: "Profesjonalna agencja interaktywna zapewnia kompleksowe podejście do projektowania i tworzenia stron internetowych. Eksperci zadbają o estetykę, funkcjonalność i optymalizację strony, co przekłada się na lepsze wyniki w wyszukiwarkach internetowych i pozytywne wrażenia użytkowników."
+      question: "Dlaczego warto skorzystać z usług profesjonalnego studia do projektowania stron www?",
+      answer: "Profesjonalne studio zapewnia kompleksowe podejście do projektowania i tworzenia stron internetowych. Eksperci zadbają o estetykę, funkcjonalność i optymalizację strony, co przekłada się na lepsze wyniki w wyszukiwarkach i pozytywne wrażenia użytkowników."
     },
     {
-      question: "Czy oferujecie tworzenie sklepów internetowych we Wrocławiu?",
-      answer: "Tak, specjalizujemy się w tworzeniu sklepów internetowych we Wrocławiu. Nasze usługi obejmują projektowanie i implementację funkcjonalnych, atrakcyjnych wizualnie i łatwych w obsłudze platform e-commerce, dostosowanych do indywidualnych potrzeb klienta."
+      question: "Czy oferujecie tworzenie sklepów internetowych w Krakowie?",
+      answer: "Tak, specjalizujemy się w tworzeniu sklepów internetowych w Krakowie. Nasze usługi obejmują projektowanie i implementację funkcjonalnych, atrakcyjnych wizualnie i łatwych w obsłudze platform e-commerce, dostosowanych do indywidualnych potrzeb klienta."
     },
     {
       question: "Co wyróżnia wyjątkowe strony internetowe?",
@@ -129,43 +129,43 @@ const StronyInternetoweWroclaw = () => {
       answer: "Proces tworzenia strony internetowej obejmuje kilka etapów: konsultację z klientem, analizę potrzeb, tworzenie projektu graficznego strony, programowanie, testowanie oraz wdrożenie. Na każdym etapie dbamy o to, aby projekt Twojej strony internetowej spełniał najwyższe standardy."
     },
     {
-      question: "Czy oferujecie tworzenie stron internetowych dla małych firm?",
-      answer: "Oczywiście, specjalizujemy się w tworzeniu stron internetowych we Wrocławiu dla firm różnej wielkości, w tym małych przedsiębiorstw. Nasze rozwiązania są dostosowane do budżetu i potrzeb każdego klienta, zapewniając profesjonalną obecność online."
+      question: "Czy oferujecie tworzenie stron internetowych dla małych firm w Krakowie?",
+      answer: "Oczywiście, specjalizujemy się w tworzeniu stron internetowych w Krakowie dla firm różnej wielkości, w tym małych przedsiębiorstw. Nasze rozwiązania są dostosowane do budżetu i potrzeb każdego klienta, zapewniając profesjonalną obecność online."
     },
     {
       question: "Jakie elementy składają się na najlepsze strony internetowe?",
-      answer: "Najlepsze strony internetowe łączą w sobie atrakcyjny design, intuicyjną nawigację, szybkość ładowania, responsywność, wysokiej jakości treści oraz optymalizację SEO. Tworzymy nowoczesne strony internetowe zawierające te kluczowe elementy."
+      answer: "Najlepsze strony internetowe łączą w sobie atrakcyjny design, intuicyjną nawigację, szybkość ładowania, responsywność, wysokiej jakości treści oraz optymalizację SEO. Większość stron internetowych tworzonych przez nas zawiera te kluczowe elementy."
     },
     {
       question: "Czy oferujecie wsparcie po zakończeniu projektu strony www?",
-      answer: "Tak, zapewniamy wsparcie techniczne i konsultacje po zakończeniu projektu. Oferujemy również usługi utrzymania i aktualizacji stron www we Wrocławiu, aby zapewnić ciągłość działania i aktualność Twojej witryny."
+      answer: "Tak, zapewniamy wsparcie techniczne i konsultacje po zakończeniu projektu. Oferujemy również usługi utrzymania i aktualizacji stron www w Krakowie, aby zapewnić ciągłość działania i aktualność Twojej witryny."
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Tworzenie Stron Internetowych Wrocław | Projektowanie WWW | FOTZ</title>
+        <title>Strony Internetowe Kraków | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
         <meta 
           name="description" 
-          content="Tworzenie stron internetowych Wrocław. Projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO. Profesjonalna budowa stron dla firm z Wrocławia." 
+          content="Strony internetowe Kraków. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Krakowa." 
         />
-        <meta name="keywords" content="tworzenie stron internetowych wrocław, strony www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław, strona internetowa wrocław" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-wroclaw" />
+        <meta name="keywords" content="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków" />
+        <link rel="canonical" href="https://fotz.pl/strony-internetowe-krakow" />
       </Helmet>
       
       <ServiceSchema 
-        name="Tworzenie Stron Internetowych Wrocław"
-        description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
+        name="Strony Internetowe Kraków - Projektowanie i Tworzenie Stron WWW"
+        description="Profesjonalne tworzenie stron internetowych dla firm z Krakowa. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
         provider="FOTZ Studio"
-        areaServed="Wrocław"
+        areaServed="Kraków"
       />
       
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Wrocław", url: "https://fotz.pl/strony-internetowe-wroclaw" },
+          { name: "Kraków", url: "https://fotz.pl/strony-internetowe-krakow" },
         ]}
       />
       
@@ -190,17 +190,17 @@ const StronyInternetoweWroclaw = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Strony WWW Wrocław
+                Strony WWW Kraków
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Tworzenie stron www <span className="text-gradient">Wrocław</span>
+                Strony Internetowe <span className="text-gradient">Kraków</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                W dobie intensywnej rywalizacji na rynku cyfrowym, <strong>projektowanie i tworzenie stron</strong> odgrywa 
-                kluczową rolę w budowaniu wizerunku każdej firmy. Profesjonalna <strong>strona internetowa</strong> to nie 
-                tylko wizytówka przedsiębiorstwa, ale i efektywne narzędzie do pozyskiwania klientów we Wrocławiu.
+                W dzisiejszym cyfrowym świecie, <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
+                Jeśli szukasz partnera do stworzenia strony internetowej w Krakowie, trafiłeś we właściwe miejsce. 
+                Zajmujemy się projektowaniem i tworzeniem stron www, które pomagają firmom rosnąć i osiągać cele biznesowe.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -227,27 +227,24 @@ const StronyInternetoweWroclaw = () => {
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Czym jest profesjonalne projektowanie stron internetowych Wrocław?
+                  Projektowanie i Tworzenie Stron Internetowych w Krakowie
                 </h2>
                 <div className="prose prose-invert max-w-none">
+                  <h3>Dlaczego warto projektować strony www w Krakowie?</h3>
                   <p>
-                    Tworzenie <strong>profesjonalnych stron</strong> jest kluczem do zwiększenia rozpoznawalności firmy 
-                    w internecie. <strong>Projektowanie stron internetowych Wrocław</strong> oznacza nie tylko estetyczny 
-                    wygląd, ale również funkcjonalność, szybkość działania oraz zgodność z zasadami UX.
+                    Wybierając firmy z Krakowa do projektowania stron www, zyskujesz dostęp do szerokiego grona specjalistów. 
+                    <strong>Projektowanie stron internetowych w Krakowie to gwarancja zrozumienia lokalnego rynku i specyfiki Twojej firmy</strong>. 
+                    Profesjonalny projekt strony, uwzględniający optymalizację SEO, przekłada się na lepszą widoczność w wyszukiwarce Google, 
+                    co jest kluczowe dla pozyskiwania nowych klientów.
                   </p>
                   
-                  <h3>Inwestycja w projektowanie stron internetowych</h3>
+                  <h3>Jakie usługi oferujemy dla firm z Krakowa?</h3>
                   <p>
-                    Inwestycja w <strong>projektowania stron internetowych</strong> przekłada się na lepsze wyniki biznesowe. 
-                    <strong>Stworzenie strony internetowej</strong> dostosowanej do specyfiki branży, lokalnych potrzeb i 
-                    wymagań algorytmów wyszukiwarek sprawia, że witryna jest łatwo dostępna oraz atrakcyjna dla klientów.
-                  </p>
-                  
-                  <h3>Dla kogo jest projektowanie stron we Wrocławiu?</h3>
-                  <p>
-                    <strong>Projektowania i tworzenia stron internetowych</strong> we Wrocławiu to oferta skierowana zarówno 
-                    do małych, jak i większych przedsiębiorstw. Dzięki niej zyskujesz nie tylko wygląd i funkcjonalność, 
-                    ale i możliwość szybkiego wprowadzania zmian oraz optymalizowania <strong>zawartości strony</strong>.
+                    Oferujemy kompleksowy zakres usług związanych z tworzeniem stron internetowych. Oprócz samego projektowania 
+                    i tworzenia stron internetowych, możesz liczyć na branding i identyfikację wizualną, obsługę social media, 
+                    video marketing i produkcję treści. Oferowane są także kampanie reklamowe Meta Ads i Google Ads, systemy 
+                    pozyskiwania leadów i automatyzację marketingu. <strong>Celem jest stworzenie nowoczesnej strony, która będzie 
+                    efektywnie wspierać cel biznesowy twojej firmy</strong>.
                   </p>
                 </div>
               </FadeInView>
@@ -262,10 +259,10 @@ const StronyInternetoweWroclaw = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Usługi</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Projektowanie stron internetowych Wrocław
+                  Tworzenie stron www Kraków
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi tworzenia stron www dla wrocławskich firm - od projektu graficznego po pozycjonowanie stron.
+                  Kompleksowe usługi tworzenia stron www dla krakowskich firm - od projektu graficznego po pozycjonowanie stron.
                 </p>
               </div>
             </FadeInView>
@@ -284,35 +281,34 @@ const StronyInternetoweWroclaw = () => {
           </div>
         </section>
 
-        {/* Wizytówka Section */}
+        {/* Koszty Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Strona internetowa to wizytówka każdej firmy - czy warto postawić na pozycjonowanie stron?</h2>
+                  <h2>Koszty Tworzenia Stron Internetowych w Krakowie</h2>
                   
+                  <h3>Co wpływa na koszt stworzenia strony internetowej?</h3>
                   <p>
-                    <strong>Strona internetowa to wizytówka każdej</strong> marki w sieci. Jeśli jest starannie zaprojektowana, 
-                    staje się pierwszym punktem kontaktu z klientem, budując zaufanie oraz pozytywny wizerunek. 
-                    <strong>Strona internetowa</strong> umożliwia prezentację oferty, publikację informacji o produktach 
-                    i usługach, a także zachęca do interakcji.
+                    Koszt stworzenia strony internetowej w Krakowie jest zależny od wielu czynników. Przede wszystkim, 
+                    rodzaj strony www ma kluczowe znaczenie. Strona wizytówkowa będzie znacznie tańsza niż rozbudowany 
+                    sklep internetowy. Dodatkowe funkcjonalności również wpływają na cenę, takie jak optymalizacja SEO, 
+                    integracje z systemami CRM czy systemami płatności.
                   </p>
                   
-                  <h3>Pozycjonowanie stron internetowych</h3>
+                  <h3>Indywidualny projekt strony</h3>
                   <p>
-                    Aby Twoja <strong>strona lub sklep</strong> były widoczne w internecie, warto zainwestować w 
-                    <strong>pozycjonowanie stron</strong>. Dzięki odpowiedniej optymalizacji treści, kodu i linków, 
-                    Twój serwis będzie pojawiał się wyżej w <strong>wyszukiwarkach internetowych</strong>, co przełoży 
-                    się na większy ruch i konwersje.
+                    Indywidualny projekt strony, dopasowany do specyfiki Twojej firmy, wymaga więcej pracy niż szablonowe 
+                    rozwiązania. Dlatego każda wycena tworzenia stron internetowych w Krakowie jest dopasowana do celów 
+                    biznesowych klienta, a cena strony odzwierciedla kompleksowość projektu.
                   </p>
                   
-                  <h3>Profesjonalne audyty SEO</h3>
+                  <h3>Dodatkowe koszty związane ze stroną www</h3>
                   <p>
-                    Warto pamiętać, że <strong>pozycjonowaniu stron internetowych</strong> służy nie tylko zdobywaniu 
-                    lepszych pozycji, ale także długofalowemu utrzymaniu widoczności. Regularne audyty, w tym 
-                    <strong>profesjonalne audyty SEO już istniejących</strong> witryn, pozwalają na bieżąco dostosowywać 
-                    strategię i reagować na zmiany algorytmów.
+                    Poza kosztami samego projektowania i tworzenia stron internetowych, warto uwzględnić dodatkowe koszty 
+                    związane z utrzymaniem i promocją nowej strony: obsługę fotograficzną, kampanie SEM, pozycjonowanie, 
+                    prowadzenie social media oraz hosting i domenę.
                   </p>
                 </div>
               </FadeInView>
@@ -374,33 +370,34 @@ const StronyInternetoweWroclaw = () => {
           </div>
         </section>
 
-        {/* Agencja Section */}
+        {/* SEO Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Dlaczego agencja interaktywna z Wrocławia to dobry wybór dla Twojej strony?</h2>
+                  <h2>Optymalizacja SEO dla Stron WWW w Krakowie</h2>
                   
+                  <h3>Co to jest SEO i dlaczego jest ważne?</h3>
                   <p>
-                    Wybierając <strong>agencję interaktywną</strong> z Wrocławia, zyskujesz dostęp do specjalistów, 
-                    którzy <strong>specjalizują się w tworzeniu stron</strong> skrojonych na miarę. Lokalny rynek jest 
-                    dynamiczny, dlatego eksperci doskonale rozumieją specyfikę <strong>miasta Wrocław</strong>.
+                    SEO, czyli Search Engine Optimization, to proces optymalizacji stron internetowych pod kątem 
+                    wyszukiwarek internetowych, takich jak Google. <strong>Profesjonalna optymalizacja SEO ma na celu 
+                    poprawę widoczności Twojej strony w wynikach wyszukiwania</strong>, co przekłada się na większy 
+                    ruch i potencjalnych klientów dla Twojej firmy w Krakowie.
                   </p>
                   
-                  <h3>Kompleksowe rozwiązania</h3>
+                  <h3>Najlepsze praktyki pozycjonowania stron w Krakowie</h3>
                   <p>
-                    Taka <strong>agencja</strong> zapewni Ci nie tylko <strong>profesjonalne tworzenie stron www</strong>, 
-                    ale także integracje z mediami społecznościowymi, systemami płatności czy narzędziami analitycznymi. 
-                    Możesz liczyć na kompleksowe rozwiązania, w tym <strong>internetowe dla firm</strong>, a także na 
-                    wsparcie w zakresie optymalizacji, która poprawia <strong>funkcjonowanie strony</strong>.
+                    Najlepsze praktyki pozycjonowania stron w Krakowie obejmują kompleksowy audyt SEO, optymalizację 
+                    treści pod kątem słów kluczowych związanych z lokalnym rynkiem, budowanie linków z lokalnych stron 
+                    oraz dbanie o responsywność i szybkość strony.
                   </p>
                   
-                  <h3>Tworzenie stron internetowych Wrocław wspiera lokalny biznes</h3>
+                  <h3>Współpraca z firmą SEO w Krakowie</h3>
                   <p>
-                    <strong>Tworzenie stron internetowych Wrocław</strong> to szansa na dotarcie do klientów z okolicy 
-                    i wykorzystanie lokalnych możliwości rynkowych. Wiele osób szuka usług, wpisując w Google frazy 
-                    typu "<strong>www Wrocław</strong>" czy "<strong>stron internetowych Wrocław</strong>".
+                    Współpraca z firmą SEO w Krakowie powinna opierać się na jasno określonych celach i regularnej 
+                    komunikacji. Dobra firma SEO oferuje optymalizację, która uwzględnia analizę słów kluczowych, 
+                    optymalizację treści i budowanie linków.
                   </p>
                 </div>
               </FadeInView>
@@ -414,29 +411,28 @@ const StronyInternetoweWroclaw = () => {
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Sklepy internetowe Wrocław - zwiększ zyski Twojej firmy</h2>
+                  <h2>Tworzenie Sklepów Internetowych w Krakowie</h2>
                   
+                  <h3>Kluczowe elementy skutecznego sklepu internetowego</h3>
                   <p>
-                    <strong>Tworzymy profesjonalne</strong> rozwiązania, a profesjonalne <strong>strony i sklepy</strong> 
-                    e-commerce znacząco zwiększają potencjał sprzedażowy. Wdrożenie funkcjonalnego <strong>sklepu 
-                    internetowego</strong> z intuicyjną nawigacją, bezpiecznymi płatnościami oraz szybką realizacją 
-                    zamówień przekształca odwiedzających w klientów.
+                    Kluczowe elementy skutecznego sklepu internetowego to integracja z systemami płatności i dostawy, 
+                    zaawansowana optymalizacja SEO i certyfikat SSL, przejrzysta strona główna i intuicyjny katalog 
+                    produktów, szczegółowa strona produktu, funkcjonalny koszyk i prosty proces zamówienia.
                   </p>
                   
-                  <h3>Tworzenie sklepów internetowych</h3>
+                  <h3>Wybór platformy do stworzenia sklepu www</h3>
                   <p>
-                    <strong>Tworzenie sklepów internetowych</strong> i rozbudowanych platform zakupowych daje szansę 
-                    na dotarcie do odbiorców nie tylko z Wrocławia, ale także spoza regionu. Łatwy dostęp do produktów, 
-                    przemyślana struktura kategorii oraz integracje z mediami społecznościowymi przyczyniają się do 
-                    wzrostu zainteresowania Twoimi produktami.
+                    Wybór odpowiedniej platformy do stworzenia sklepu www w Krakowie jest kluczową decyzją. Popularne 
+                    platformy e-commerce, takie jak WooCommerce, Shopify czy PrestaShop, oferują różne funkcje i 
+                    możliwości dostosowania. <strong>Ważne jest, aby platforma umożliwiała optymalizację SEO, integrację 
+                    z systemami płatności i była responsywna</strong>.
                   </p>
                   
-                  <h3>Koszt budowy strony internetowej</h3>
+                  <h3>Trendy w e-commerce w Krakowie</h3>
                   <p>
-                    <strong>Projektowanie stron i sklepów internetowych</strong> ma bezpośredni wpływ na <strong>koszt 
-                    budowy strony internetowej</strong>. Cena zależy od złożoności funkcjonalności, designu, integracji 
-                    oraz prac programistycznych. Jednak inwestycja w <strong>profesjonalne tworzenie stron</strong> 
-                    szybko się zwraca.
+                    Trendy w e-commerce wskazują na rosnące znaczenie personalizacji, mobilnych zakupów i 
+                    zrównoważonego rozwoju. Klienci oczekują spersonalizowanych ofert, łatwej nawigacji na urządzeniach 
+                    mobilnych oraz transparentnych informacji o produktach.
                   </p>
                 </div>
               </FadeInView>
@@ -454,7 +450,7 @@ const StronyInternetoweWroclaw = () => {
                   Dlaczego warto nam zlecić tworzenie strony?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm.
+                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm z Krakowa.
                 </p>
               </div>
             </FadeInView>
@@ -511,7 +507,7 @@ const StronyInternetoweWroclaw = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Cennik tworzenia stron www Wrocław
+                  Cennik tworzenia stron www Kraków
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Transparentne ceny dopasowane do zakresu projektu strony internetowej.
@@ -542,35 +538,39 @@ const StronyInternetoweWroclaw = () => {
           </div>
         </section>
 
-        {/* SEO Section */}
+        {/* Additional SEO Content */}
         <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Strony www Wrocław i ich widoczność w internecie</h2>
-                  
+                  <h2>Strony internetowe Kraków — Czym są i dlaczego warto zainwestować?</h2>
                   <p>
-                    Wysoka jakość <strong>strony www Wrocław</strong> i <strong>stron internetowych we Wrocławiu</strong> 
-                    to klucz do uzyskania lepszej widoczności w sieci. Dobrze zaprojektowane witryny, wyposażone w 
-                    nowoczesne funkcje i zoptymalizowane pod kątem SEO, pomagają Twojej marce dotrzeć do szerszego 
-                    grona klientów.
+                    Strony internetowe Kraków to wizytówka Twojej firmy w internecie. Profesjonalne strony internetowe 
+                    łączą projekt graficzny strony, responsywne strony i SEO strony, dzięki czemu Twoja firma może się 
+                    wyróżnić na tle konkurencji. Tworzenie i projektowanie stron internetowych obejmuje projekt strony www, 
+                    układ strony oraz funkcjonalności strony.
                   </p>
                   
-                  <h3>Responsywne strony internetowe</h3>
+                  <h2>WWW Kraków — Jak wygląda proces tworzenia strony?</h2>
                   <p>
-                    Stawiając na <strong>responsywne strony internetowe</strong>, zadbasz o to, aby Twoja witryna działała 
-                    sprawnie na wszystkich urządzeniach – od komputerów stacjonarnych, przez tablety, po smartfony. 
-                    W ten sposób <strong>tworzymy responsywne strony internetowe</strong>, które są przyjazne zarówno 
-                    dla klientów, jak i algorytmów Google.
+                    Proces tworzenia strony zwykle zaczyna się od briefu i identyfikacji wizualnej, następnie powstaje 
+                    projekt graficzny strony w wersji desktop i mobilnej. Kolejne etapy to wykonanie strony internetowej, 
+                    testy responsywnych stron www, uruchomienie strony i wdrożenie SEO oraz integracja z mediami społecznościowymi.
                   </p>
                   
-                  <h3>Wrocław i cała Polska</h3>
+                  <h2>Stron www Kraków — Ile kosztuje stworzenie strony internetowej?</h2>
                   <p>
-                    Działając w ramach <strong>Wrocław i cała Polska</strong>, możesz liczyć na to, że opracowane w 
-                    stolicy Dolnego Śląska <strong>strony www Wrocław</strong> będą atrakcyjne nie tylko lokalnie, 
-                    ale i na terenie całego kraju. <strong>Tworzymy strony internetowe dla firm</strong> o różnej 
-                    skali działalności.
+                    Cena strony internetowej zależy od zakresu: prosty projekt strony www kosztuje mniej niż rozbudowany 
+                    portal internetowy z dedykowanymi funkcjonalnościami. Przy wycenie bierzemy pod uwagę dopasowanie strony 
+                    do potrzeb Twojej strony internetowej i obsługi strony po uruchomieniu.
+                  </p>
+                  
+                  <h2>Google — Jak pozycjonowanie stron www wpływa na widoczność?</h2>
+                  <p>
+                    SEO strony i pozycjonowanie stron www to klucz do zwiększenia ruchu z Google. Skuteczne strony zawierają 
+                    zoptymalizowane treści, techniczne SEO zgodne ze standardami oraz szybkość ładowania, co poprawia 
+                    działanie strony i pozycję w wynikach wyszukiwania.
                   </p>
                 </div>
               </FadeInView>
@@ -604,7 +604,7 @@ const StronyInternetoweWroclaw = () => {
                       key={index}
                       to={city.href}
                       className={`px-6 py-3 rounded-full font-medium transition-colors ${
-                        city.href === "/strony-internetowe-wroclaw" 
+                        city.href === "/strony-internetowe-krakow" 
                           ? "bg-primary text-primary-foreground" 
                           : "bg-card border border-border/50 text-foreground hover:border-primary/30"
                       }`}
@@ -636,7 +636,7 @@ const StronyInternetoweWroclaw = () => {
                   Najczęściej zadawane pytania
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na pytania dotyczące tworzenia stron we Wrocławiu.
+                  Odpowiedzi na pytania dotyczące tworzenia stron w Krakowie.
                 </p>
               </div>
             </FadeInView>
@@ -670,10 +670,10 @@ const StronyInternetoweWroclaw = () => {
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Gotowy na profesjonalną stronę internetową we Wrocławiu?
+                  Gotowy na profesjonalną stronę internetową w Krakowie?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Wrocławia i całej Polski.
+                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Krakowa i całej Polski.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="group">
@@ -698,4 +698,4 @@ const StronyInternetoweWroclaw = () => {
   );
 };
 
-export default StronyInternetoweWroclaw;
+export default StronyInternetoweKrakow;
