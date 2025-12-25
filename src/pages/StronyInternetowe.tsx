@@ -369,44 +369,44 @@ const StronyInternetowe = () => {
                 Tworzenie stron WWW
               </motion.span>
               
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 sm:mb-8 leading-tight px-2 sm:px-0">
                 <TextReveal>
                   Strony internetowe, które <span className="text-gradient">naprawdę sprzedają</span>
                 </TextReveal>
               </h1>
               
-              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                 Projektujemy z myślą o ROI. <span className="text-foreground font-medium">Szybkie, responsywne, zoptymalizowane pod SEO.</span> Od wizytówki po rozbudowany e-commerce – budujemy narzędzia, które generują przychód.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button asChild size="lg" className="group text-lg px-8 py-6">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
+                <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                   <Link to="/kontakt">
-                    <Rocket className="mr-2 h-5 w-5" />
+                    <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     Bezpłatna wycena
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                   <a href="tel:+48790814814">
-                    <Phone className="mr-2 h-5 w-5" />
+                    <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
               </div>
 
               {/* Quick stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 max-w-3xl mx-auto">
                 {results.map((stat, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 + index * 0.1 }}
-                    className="text-center p-4"
+                    className="text-center p-2 sm:p-4"
                   >
-                    <div className="text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
+                    <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">{stat.label}</div>
                   </motion.div>
                 ))}
               </div>
@@ -556,7 +556,7 @@ const StronyInternetowe = () => {
               <h3 className="text-xl font-semibold text-center mb-8">Więcej realizacji</h3>
             </FadeInView>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
               {moreCaseStudies.map((study, index) => (
                 <FadeInView key={index} delay={index * 0.05}>
                   <Link to={study.link} className="group block">
@@ -568,10 +568,10 @@ const StronyInternetowe = () => {
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
                       </div>
-                      <div className="p-3">
-                        <span className="text-[10px] text-primary font-medium uppercase tracking-wider">{study.category}</span>
-                        <h4 className="text-sm font-semibold mt-1 group-hover:text-primary transition-colors line-clamp-1">{study.title}</h4>
-                        <span className="text-xs text-muted-foreground">{study.result}</span>
+                      <div className="p-2 sm:p-3">
+                        <span className="text-[9px] sm:text-[10px] text-primary font-medium uppercase tracking-wider">{study.category}</span>
+                        <h4 className="text-xs sm:text-sm font-semibold mt-1 group-hover:text-primary transition-colors line-clamp-1">{study.title}</h4>
+                        <span className="text-[10px] sm:text-xs text-muted-foreground">{study.result}</span>
                       </div>
                     </div>
                   </Link>

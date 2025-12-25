@@ -317,44 +317,44 @@ const Pozycjonowanie = () => {
                 Pozycjonowanie SEO
               </motion.span>
               
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 sm:mb-8 leading-tight px-2 sm:px-0">
                 <TextReveal>
                   Pozycjonowanie stron WWW w <span className="text-gradient">Google</span>
                 </TextReveal>
               </h1>
               
-              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                 Zwiększamy widoczność Twojej strony w wynikach wyszukiwania. <span className="text-foreground font-medium">Skuteczne SEO, które przekłada się na ruch, leady i sprzedaż.</span>
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button asChild size="lg" className="group text-lg px-8 py-6">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
+                <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                   <Link to="/kontakt">
-                    <Rocket className="mr-2 h-5 w-5" />
+                    <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     Bezpłatny audyt SEO
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                   <a href="tel:+48790814814">
-                    <Phone className="mr-2 h-5 w-5" />
+                    <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
               </div>
 
               {/* Quick stats */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4 max-w-3xl mx-auto">
                 {results.map((stat, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 + index * 0.1 }}
-                    className="text-center p-4"
+                    className="text-center p-2 sm:p-4"
                   >
-                    <div className="text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
+                    <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground">{stat.label}</div>
                   </motion.div>
                 ))}
               </div>
@@ -365,8 +365,8 @@ const Pozycjonowanie = () => {
         {/* Section: Typy SEO */}
         <section className="py-12 border-b border-border/30">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-              <span className="text-sm text-muted-foreground uppercase tracking-wider">Specjalizacje:</span>
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 md:gap-12">
+              <span className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider w-full sm:w-auto text-center mb-2 sm:mb-0">Specjalizacje:</span>
               {seoTypes.map((type, index) => (
                 <motion.div
                   key={index}
@@ -374,10 +374,10 @@ const Pozycjonowanie = () => {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                  className="flex items-center gap-1.5 sm:gap-2 text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  <type.icon className="w-5 h-5 text-primary" />
-                  <span className="font-medium">{type.name}</span>
+                  <type.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+                  <span className="font-medium text-sm sm:text-base">{type.name}</span>
                 </motion.div>
               ))}
             </div>
