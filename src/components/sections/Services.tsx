@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Palette, Megaphone, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { TextReveal } from "@/components/TextReveal";
+import { FadeInView, StaggerContainer, StaggerItem } from "@/components/FadeInView";
 
 export function Services() {
   const { t } = useLanguage();
@@ -101,43 +103,31 @@ export function Services() {
 
       <div className="container-wide relative z-10">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
-          className="text-center mb-16"
-        >
-          <motion.span 
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
-          >
-            {t("Nasze usługi", "Our services")}
-          </motion.span>
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            {t("Nasze", "Our")} <span className="text-gradient-premium">{t("usługi reklamowe", "advertising services")}</span>
-          </h2>
-          <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
-            {t(
-              "Kompleksowy zakres usług marketingowych dostosowanych do Twoich celów biznesowych.",
-              "Comprehensive range of marketing services tailored to your business goals."
-            )}
-          </p>
-        </motion.div>
+        <div className="text-center mb-16">
+          <FadeInView animation="scale">
+            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+              {t("Nasze usługi", "Our services")}
+            </span>
+          </FadeInView>
+          <TextReveal delay={0.1}>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+              {t("Nasze", "Our")} <span className="text-gradient-premium">{t("usługi reklamowe", "advertising services")}</span>
+            </h2>
+          </TextReveal>
+          <FadeInView delay={0.2}>
+            <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+              {t(
+                "Kompleksowy zakres usług marketingowych dostosowanych do Twoich celów biznesowych.",
+                "Comprehensive range of marketing services tailored to your business goals."
+              )}
+            </p>
+          </FadeInView>
+        </div>
 
         {/* Services Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8"
-        >
+        <StaggerContainer className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8" staggerDelay={0.15}>
           {services.map((service, index) => (
-            <motion.div key={index} variants={itemVariants}>
+            <StaggerItem key={index}>
               <Link
                 to={service.href}
                 className="group relative block p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/40 transition-all duration-500 overflow-hidden h-full hover-lift"
@@ -183,9 +173,9 @@ export function Services() {
                   </div>
                 </div>
               </Link>
-            </motion.div>
+            </StaggerItem>
           ))}
-        </motion.div>
+        </StaggerContainer>
       </div>
     </section>
   );
