@@ -46,6 +46,7 @@ import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { YouTubeShowcase } from "@/components/sections/YouTubeShowcase";
+import { InstagramShowcase } from "@/components/sections/InstagramShowcase";
 
 import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali.png";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
@@ -391,6 +392,9 @@ const SocialMedia = () => {
 
         {/* YouTube Showcase Section */}
         <YouTubeShowcase />
+
+        {/* Instagram Showcase Section */}
+        <InstagramShowcase />
 
         {/* Intro Section */}
         <section className="py-20">
