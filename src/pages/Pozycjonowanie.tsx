@@ -11,7 +11,6 @@ import {
   Zap,
   Phone,
   CheckCircle2,
-  AlertTriangle,
   ArrowRight,
   MapPin,
   FileSearch,
@@ -24,7 +23,10 @@ import {
   Shield,
   Headphones,
   Eye,
-  MousePointer
+  MousePointer,
+  Sparkles,
+  Rocket,
+  Star
 } from "lucide-react";
 import {
   Accordion,
@@ -35,10 +37,14 @@ import {
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 import rppgImg from "@/assets/portfolio/rppg.png";
 import klagemlmg from "@/assets/portfolio/klagem.png";
 import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
+import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
+import friendlyGasImg from "@/assets/portfolio/friendly-gas-new.png";
 
 const Pozycjonowanie = () => {
   const problems = [
@@ -88,9 +94,10 @@ const Pozycjonowanie = () => {
   ];
 
   const results = [
-    { value: "+420%", label: "Średni wzrost ruchu organicznego", desc: "w ciągu 12 miesięcy współpracy" },
+    { value: "+420%", label: "Wzrost ruchu organicznego", desc: "w ciągu 12 miesięcy współpracy" },
     { value: "TOP 10", label: "Pozycje dla głównych fraz", desc: "średnio w ciągu 6 miesięcy" },
-    { value: "+85%", label: "Wzrost zapytań ofertowych", desc: "z ruchu organicznego" },
+    { value: "+85%", label: "Więcej zapytań ofertowych", desc: "z ruchu organicznego" },
+    { value: "100+", label: "Wypozycjonowanych stron", desc: "dla firm z całej Polski" },
   ];
 
   const pricing = [
@@ -117,23 +124,23 @@ const Pozycjonowanie = () => {
   const faqItems = [
     {
       question: "Czym jest pozycjonowanie stron w Google?",
-      answer: "Pozycjonowanie stron (SEO) to proces optymalizacji strony internetowej w celu poprawy jej widoczności w wynikach wyszukiwania Google. Obejmuje działania on-page (na stronie) i off-page (poza stroną), których celem jest osiągnięcie jak najwyższych pozycji na wybrane słowa kluczowe."
+      answer: "Pozycjonowanie stron (SEO) to proces optymalizacji strony internetowej w celu poprawy jej widoczności w wynikach wyszukiwania Google. Obejmuje działania on-page i off-page, których celem jest osiągnięcie jak najwyższych pozycji na wybrane słowa kluczowe."
     },
     {
       question: "Ile trwa pozycjonowanie, zanim zobaczę efekty?",
-      answer: "Pierwsze efekty pozycjonowania widoczne są zazwyczaj po 3-6 miesiącach. Czas zależy od konkurencyjności branży, stanu strony i intensywności działań. Pozycjonowanie to proces długoterminowy – pełne efekty osiągane są po 12-18 miesiącach systematycznej pracy."
+      answer: "Pierwsze efekty pozycjonowania widoczne są zazwyczaj po 3-6 miesiącach. Czas zależy od konkurencyjności branży, stanu strony i intensywności działań. Pełne efekty osiągane są po 12-18 miesiącach systematycznej pracy."
     },
     {
       question: "Jak agencja SEO wpływa na pozycjonowanie stron?",
-      answer: "Agencja SEO przeprowadza audyt, tworzy strategię, optymalizuje stronę technicznie i treściowo, buduje linki oraz monitoruje wyniki. Dzięki doświadczeniu i narzędziom profesjonalistów można skuteczniej i szybciej osiągnąć wysokie pozycje w Google."
+      answer: "Agencja SEO przeprowadza audyt, tworzy strategię, optymalizuje stronę technicznie i treściowo, buduje linki oraz monitoruje wyniki. Dzięki doświadczeniu można skuteczniej i szybciej osiągnąć wysokie pozycje w Google."
     },
     {
       question: "Jakie działania SEO wpływają na pozycjonowanie strony?",
-      answer: "Kluczowe działania to: optymalizacja techniczna (szybkość, mobile, struktura), optymalizacja treści (słowa kluczowe, nagłówki, meta tagi), budowanie linków zwrotnych oraz analiza i dostosowywanie strategii na podstawie danych z Google Analytics i Search Console."
+      answer: "Kluczowe działania to: optymalizacja techniczna (szybkość, mobile, struktura), optymalizacja treści (słowa kluczowe, nagłówki, meta tagi), budowanie linków zwrotnych oraz analiza i dostosowywanie strategii."
     },
     {
       question: "Czy pozycjonowanie stron w Google jest kosztowne?",
-      answer: "Koszt zależy od konkurencyjności branży, zakresu działań i celów. Pozycjonowanie lokalne zaczyna się od ok. 1500 zł/mies., ogólnopolskie od 3000 zł/mies. To inwestycja, która przy dobrze dobranej strategii zwraca się wielokrotnie poprzez stały napływ klientów."
+      answer: "Koszt zależy od konkurencyjności branży, zakresu działań i celów. Pozycjonowanie lokalne zaczyna się od ok. 1500 zł/mies., ogólnopolskie od 3000 zł/mies. To inwestycja, która przy dobrze dobranej strategii zwraca się wielokrotnie."
     },
     {
       question: "Czym różni się SEO od Google Ads?",
@@ -141,7 +148,7 @@ const Pozycjonowanie = () => {
     },
     {
       question: "Jakie narzędzia Google pomagają w pozycjonowaniu?",
-      answer: "Google Search Console pozwala monitorować widoczność i błędy indeksowania. Google Analytics dostarcza danych o ruchu i zachowaniach użytkowników. Google PageSpeed Insights mierzy szybkość strony. Te narzędzia są podstawą skutecznego SEO."
+      answer: "Google Search Console pozwala monitorować widoczność i błędy indeksowania. Google Analytics dostarcza danych o ruchu. Google PageSpeed Insights mierzy szybkość strony. Te narzędzia są podstawą skutecznego SEO."
     },
     {
       question: "Czy mogę pozycjonować stronę samodzielnie?",
@@ -149,27 +156,56 @@ const Pozycjonowanie = () => {
     },
   ];
 
-  const caseStudies = [
+  // Featured case studies
+  const featuredCaseStudies = [
     {
       title: "RPPG - Kancelaria prawna",
       category: "Pozycjonowanie lokalne",
       result: "+380% ruchu organicznego",
       link: "/realizacje/rppg",
-      image: rppgImg
+      image: rppgImg,
+      desc: "Kompleksowe SEO lokalne dla kancelarii prawnej w Poznaniu."
     },
     {
       title: "Klagem - Odszkodowania",
       category: "Pozycjonowanie ogólnopolskie",
       result: "TOP 3 dla głównych fraz",
       link: "/realizacje/klagem",
-      image: klagemlmg
+      image: klagemlmg,
+      desc: "Strategia SEO dla firmy odszkodowawczej działającej w całej Polsce."
     },
     {
       title: "FPS Cegielski",
       category: "SEO dla przemysłu",
       result: "+520% zapytań B2B",
       link: "/realizacje/fps-cegielski",
-      image: fpsCegielskiImg
+      image: fpsCegielskiImg,
+      desc: "Pozycjonowanie strony korporacyjnej lidera branży przemysłowej."
+    },
+  ];
+
+  // More case studies
+  const moreCaseStudies = [
+    {
+      title: "Victory Cars",
+      category: "SEO motoryzacja",
+      result: "+420% ruchu",
+      link: "/realizacje/victory-cars",
+      image: victoryCarsImg
+    },
+    {
+      title: "Cute Dumpling",
+      category: "SEO gastronomia",
+      result: "+190% rezerwacji",
+      link: "/realizacje/cute-dumpling",
+      image: cuteDumplingImg
+    },
+    {
+      title: "Friendly Gas",
+      category: "SEO usługi",
+      result: "+260% konwersji",
+      link: "/realizacje/friendly-gas",
+      image: friendlyGasImg
     },
   ];
 
@@ -215,6 +251,13 @@ const Pozycjonowanie = () => {
     { step: "06", title: "Monitoring i rozwój", desc: "Analizujemy wyniki i dostosowujemy strategię." },
   ];
 
+  const seoTypes = [
+    { name: "SEO lokalne", desc: "Dla firm działających lokalnie", icon: MapPin },
+    { name: "SEO ogólnopolskie", desc: "Dla firm z całej Polski", icon: Globe },
+    { name: "SEO e-commerce", desc: "Dla sklepów internetowych", icon: Target },
+    { name: "SEO B2B", desc: "Dla firm B2B", icon: Users },
+  ];
+
   return (
     <>
       <Helmet>
@@ -247,11 +290,11 @@ const Pozycjonowanie = () => {
 
       <Layout>
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
           <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]" />
+            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[150px]" />
+            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-secondary/20 rounded-full blur-[120px]" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
@@ -259,51 +302,98 @@ const Pozycjonowanie = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
+              className="text-center max-w-5xl mx-auto"
             >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+              <motion.span 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"
+              >
+                <Search className="w-4 h-4" />
                 Pozycjonowanie SEO
-              </span>
+              </motion.span>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
                 <TextReveal>
                   Pozycjonowanie stron WWW w <span className="text-gradient">Google</span>
                 </TextReveal>
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność Twojej strony w wynikach wyszukiwania. Skuteczne SEO, 
-                które przekłada się na ruch, leady i sprzedaż. Mierzalne efekty, transparentne działania.
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+                Zwiększamy widoczność Twojej strony w wynikach wyszukiwania. <span className="text-foreground font-medium">Skuteczne SEO, które przekłada się na ruch, leady i sprzedaż.</span>
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <Button asChild size="lg" className="group text-lg px-8 py-6">
                   <Link to="/kontakt">
+                    <Rocket className="mr-2 h-5 w-5" />
                     Bezpłatny audyt SEO
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
                   <a href="tel:+48790814814">
                     <Phone className="mr-2 h-5 w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
               </div>
+
+              {/* Quick stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                {results.map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 + index * 0.1 }}
+                    className="text-center p-4"
+                  >
+                    <div className="text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Section 1: Problem klienta */}
-        <section className="py-20 bg-card/30">
+        {/* Section: Typy SEO */}
+        <section className="py-12 border-b border-border/30">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+              <span className="text-sm text-muted-foreground uppercase tracking-wider">Specjalizacje:</span>
+              {seoTypes.map((type, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <type.icon className="w-5 h-5 text-primary" />
+                  <span className="font-medium">{type.name}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Problem klienta */}
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Problem</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego Twoja strona nie jest widoczna w Google?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Eye className="w-4 h-4" />
+                  Problem
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Dlaczego Twoja strona <span className="text-gradient">nie jest widoczna</span> w Google?
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   93% doświadczeń online zaczyna się od wyszukiwarki. Jeśli Cię tam nie ma, tracisz klientów.
                 </p>
               </div>
@@ -312,8 +402,10 @@ const Pozycjonowanie = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {problems.map((problem, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-destructive/30 transition-all h-full">
-                    <problem.icon className="w-10 h-10 text-destructive mb-4" />
+                  <div className="p-6 rounded-2xl bg-background border border-border/50 hover:border-destructive/30 transition-all h-full group">
+                    <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4 group-hover:bg-destructive/20 transition-colors">
+                      <problem.icon className="w-6 h-6 text-destructive" />
+                    </div>
                     <h3 className="text-lg font-semibold mb-2">{problem.title}</h3>
                     <p className="text-sm text-muted-foreground">{problem.desc}</p>
                   </div>
@@ -323,17 +415,20 @@ const Pozycjonowanie = () => {
           </div>
         </section>
 
-        {/* Section 2: Co robimy */}
-        <section className="py-20">
+        {/* Section: Co robimy */}
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Rozwiązanie</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak pozycjonujemy strony w Google?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Sparkles className="w-4 h-4" />
+                  Rozwiązanie
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Jak pozycjonujemy <span className="text-gradient">strony w Google?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Skuteczne SEO to połączenie techniki, treści i autorytetu. Działamy kompleksowo.
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Skuteczne SEO to połączenie techniki, treści i autorytetu. <strong className="text-foreground">Działamy kompleksowo.</strong>
                 </p>
               </div>
             </FadeInView>
@@ -341,12 +436,12 @@ const Pozycjonowanie = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {whatWeDo.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-8 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                      <item.icon className="w-7 h-7 text-primary" />
+                  <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all group">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                      <item.icon className="w-8 h-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.desc}</p>
+                    <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
                   </div>
                 </FadeInView>
               ))}
@@ -354,69 +449,44 @@ const Pozycjonowanie = () => {
           </div>
         </section>
 
-        {/* Section 3: Efekty */}
-        <section className="py-20 bg-card/30">
+        {/* Section: Featured Case Studies */}
+        <section className="py-24 bg-gradient-to-b from-background via-primary/5 to-background">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Efekty</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Wyniki naszych klientów
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Star className="w-4 h-4" />
+                  Najlepsze realizacje
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Strony, które <span className="text-gradient">zdominowały Google</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Efekty pozycjonowania mierzymy w ruchu, pozycjach i – najważniejsze – w przychodach.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {results.map((result, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="text-center p-8 rounded-xl bg-background border border-border/50">
-                    <div className="text-4xl md:text-5xl font-bold text-gradient mb-2">
-                      {result.value}
-                    </div>
-                    <div className="text-lg font-medium mb-1">{result.label}</div>
-                    <p className="text-sm text-muted-foreground">{result.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4: Case Studies */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Portfolio</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Wybrane realizacje SEO
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Zobacz, jak nasze pozycjonowanie zwiększyło widoczność i przychody klientów.
                 </p>
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-              {caseStudies.map((study, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
+            {/* Featured - large cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+              {featuredCaseStudies.map((study, index) => (
+                <FadeInView key={index} delay={index * 0.15}>
                   <Link to={study.link} className="group block h-full">
-                    <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
-                      <div className="aspect-[4/3] overflow-hidden">
+                    <div className="rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
+                      <div className="aspect-[16/10] overflow-hidden relative">
                         <img 
                           src={study.image} 
                           alt={study.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                       </div>
                       <div className="p-6 flex-grow flex flex-col">
                         <span className="text-xs text-primary font-medium uppercase tracking-wider">{study.category}</span>
-                        <h3 className="text-xl font-semibold mt-2 mb-3 group-hover:text-primary transition-colors">{study.title}</h3>
-                        <div className="flex items-center justify-between mt-auto">
-                          <span className="text-lg font-bold text-primary">{study.result}</span>
+                        <h3 className="text-xl font-bold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
+                        <p className="text-sm text-muted-foreground mb-4">{study.desc}</p>
+                        <div className="flex items-center justify-between mt-auto pt-4 border-t border-border/30">
+                          <span className="text-lg font-bold text-gradient">{study.result}</span>
                           <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
                         </div>
                       </div>
@@ -426,7 +496,35 @@ const Pozycjonowanie = () => {
               ))}
             </div>
 
-            <div className="text-center">
+            {/* More case studies */}
+            <FadeInView>
+              <h3 className="text-xl font-semibold text-center mb-8">Więcej realizacji SEO</h3>
+            </FadeInView>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {moreCaseStudies.map((study, index) => (
+                <FadeInView key={index} delay={index * 0.1}>
+                  <Link to={study.link} className="group block">
+                    <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden">
+                      <div className="aspect-video overflow-hidden">
+                        <img 
+                          src={study.image} 
+                          alt={study.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <span className="text-xs text-primary font-medium uppercase tracking-wider">{study.category}</span>
+                        <h4 className="font-semibold mt-1 group-hover:text-primary transition-colors">{study.title}</h4>
+                        <span className="text-sm text-muted-foreground">{study.result}</span>
+                      </div>
+                    </div>
+                  </Link>
+                </FadeInView>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
               <Button asChild variant="outline" size="lg">
                 <Link to="/realizacje">
                   Zobacz wszystkie realizacje
@@ -438,15 +536,18 @@ const Pozycjonowanie = () => {
         </section>
 
         {/* Section: Co zawiera usługa */}
-        <section className="py-20 bg-card/30">
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">W cenie</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Co zawiera usługa pozycjonowania?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <CheckCircle2 className="w-4 h-4" />
+                  W cenie
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Co zawiera usługa <span className="text-gradient">pozycjonowania?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Kompleksowe działania SEO – od audytu po systematyczny rozwój widoczności.
                 </p>
               </div>
@@ -455,8 +556,10 @@ const Pozycjonowanie = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {includedFeatures.map((feature, index) => (
                 <FadeInView key={index} delay={index * 0.05}>
-                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-primary/20 transition-all h-full">
-                    <feature.icon className="w-8 h-8 text-primary mb-4" />
+                  <div className="p-6 rounded-2xl bg-background border border-border/50 hover:border-primary/20 transition-all h-full group">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                      <feature.icon className="w-6 h-6 text-primary" />
+                    </div>
                     <h3 className="font-semibold mb-2">{feature.title}</h3>
                     <p className="text-sm text-muted-foreground">{feature.desc}</p>
                   </div>
@@ -467,15 +570,18 @@ const Pozycjonowanie = () => {
         </section>
 
         {/* Section: Dlaczego warto */}
-        <section className="py-20">
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Wyróżniki</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego warto nam zlecić pozycjonowanie?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Award className="w-4 h-4" />
+                  Wyróżniki
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Dlaczego warto <span className="text-gradient">nam zlecić pozycjonowanie?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Skuteczne SEO wymaga wiedzy, doświadczenia i systematyczności. Mamy wszystkie trzy.
                 </p>
               </div>
@@ -484,9 +590,9 @@ const Pozycjonowanie = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {whyUs.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-8 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
-                      <item.icon className="w-6 h-6 text-primary" />
+                  <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full group">
+                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                      <item.icon className="w-7 h-7 text-primary" />
                     </div>
                     <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
                     <p className="text-muted-foreground">{item.desc}</p>
@@ -497,16 +603,19 @@ const Pozycjonowanie = () => {
           </div>
         </section>
 
-        {/* Section: Etapy realizacji */}
-        <section className="py-20 bg-card/30">
+        {/* Section: Proces */}
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak wygląda proces pozycjonowania?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Rocket className="w-4 h-4" />
+                  Proces
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Jak wygląda <span className="text-gradient">proces pozycjonowania?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Od audytu do TOP 10 – przejrzysty proces z mierzalnymi efektami.
                 </p>
               </div>
@@ -515,8 +624,8 @@ const Pozycjonowanie = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {processSteps.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="relative p-6 rounded-xl bg-background border border-border/50">
-                    <div className="text-5xl font-bold text-primary/20 mb-3">{item.step}</div>
+                  <div className="relative p-6 rounded-2xl bg-background border border-border/50 hover:border-primary/20 transition-all group">
+                    <div className="text-6xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors mb-3">{item.step}</div>
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
                   </div>
@@ -526,16 +635,18 @@ const Pozycjonowanie = () => {
           </div>
         </section>
 
-        {/* Section 5: Cennik */}
-        <section className="py-20">
+        {/* Section: Cennik */}
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Ile kosztuje pozycjonowanie stron?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  💰 Cennik
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Ile kosztuje <span className="text-gradient">pozycjonowanie stron?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Cena zależy od konkurencyjności branży i zakresu działań. Transparentne warunki.
                 </p>
               </div>
@@ -544,10 +655,15 @@ const Pozycjonowanie = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {pricing.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30' : 'bg-background border-border/50 hover:border-primary/20'}`}>
+                  <div className={`p-8 rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
+                    {index === 1 && (
+                      <span className="inline-flex items-center gap-1 text-xs font-medium text-primary uppercase mb-4">
+                        <Star className="w-3 h-3" /> Najpopularniejszy
+                      </span>
+                    )}
                     <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                     <p className="text-muted-foreground mb-4">{item.desc}</p>
-                    <div className="text-2xl font-bold text-primary mb-6">{item.price}</div>
+                    <div className="text-3xl font-bold text-gradient mb-6">{item.price}</div>
                     <ul className="space-y-3 mb-8 flex-grow">
                       {item.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-2">
@@ -566,14 +682,16 @@ const Pozycjonowanie = () => {
           </div>
         </section>
 
-        {/* Section 6: FAQ */}
-        <section className="py-20 bg-card/30">
+        {/* Section: FAQ */}
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">FAQ</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Często zadawane pytania o pozycjonowanie
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  ❓ FAQ
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Często zadawane <span className="text-gradient">pytania o SEO</span>
                 </h2>
               </div>
             </FadeInView>
@@ -599,18 +717,20 @@ const Pozycjonowanie = () => {
           </div>
         </section>
 
-        {/* Section: Miasta w Polsce */}
-        <section className="py-20">
+        {/* Section: Miasta */}
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Zasięg</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Pozycjonowanie stron w całej Polsce
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <MapPin className="w-4 h-4" />
+                  Zasięg
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Pozycjonowanie stron <span className="text-gradient">w całej Polsce</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Pozycjonujemy strony dla firm z największych miast w Polsce. 
-                  Działamy zdalnie, efekty widoczne wszędzie.
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Pozycjonujemy strony dla firm z największych miast w Polsce. Działamy zdalnie, efekty widoczne wszędzie.
                 </p>
               </div>
             </FadeInView>
@@ -639,122 +759,47 @@ const Pozycjonowanie = () => {
                   </FadeInView>
                 ))}
               </div>
-              <FadeInView delay={0.5}>
-                <p className="text-center text-sm text-muted-foreground mt-8">
-                  Strona dla Poznania jest już dostępna. Pozostałe miasta wkrótce.
-                </p>
-              </FadeInView>
             </div>
           </div>
         </section>
 
-        {/* Section 7: CTA */}
-        <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-          <div className="container mx-auto px-4">
+        {/* Section: CTA */}
+        <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[150px]" />
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Gotowy na więcej klientów z Google?
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Gotowy na więcej <span className="text-gradient">klientów z Google?</span>
                 </h2>
-                <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Zamów bezpłatny audyt SEO i dowiedz się, jak możemy zwiększyć 
-                  widoczność Twojej strony w wyszukiwarce.
+                <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+                  Zamów bezpłatny audyt SEO i dowiedz się, jak możemy zwiększyć widoczność Twojej strony w wyszukiwarce.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                  <Button asChild size="lg" className="group">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" className="group text-lg px-8 py-6">
                     <Link to="/kontakt">
+                      <Rocket className="mr-2 h-5 w-5" />
                       Zamów bezpłatny audyt SEO
                       <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg">
+                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
                     <a href="tel:+48790814814">
                       <Phone className="mr-2 h-5 w-5" />
                       +48 790 814 814
                     </a>
                   </Button>
                 </div>
-
-                {/* City Links in CTA */}
-                <div className="pt-8 border-t border-border/30">
-                  <p className="text-sm text-muted-foreground mb-4 flex items-center justify-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    Działamy w całej Polsce. Sprawdź lokalne usługi:
-                  </p>
-                  <div className="flex flex-wrap justify-center gap-3">
-                    {cityLinks.filter(c => c.href === "/pozycjonowanie-stron-poznan").map((city, index) => (
-                      <Link 
-                        key={index} 
-                        to={city.href}
-                        className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm hover:border-primary/30 hover:text-primary transition-all"
-                      >
-                        {city.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
               </div>
             </FadeInView>
           </div>
         </section>
 
-        {/* SEO Content Section */}
-        <section className="py-16 border-t border-border/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <h2 className="text-2xl font-heading font-bold mb-6 text-foreground">
-                  Pozycjonowanie Stron WWW: Jak Wypozycjonować Stronę w Google?
-                </h2>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  <strong>Pozycjonowanie stron WWW w Google to kluczowy element sukcesu online dla każdej firmy.</strong> Zapewnienie 
-                  wysokiej widoczności strony internetowej w wynikach wyszukiwania Google przekłada się bezpośrednio na zwiększony 
-                  ruch na stronie, a co za tym idzie, na potencjalnych klientów i wzrost sprzedaży.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
-                  Czym jest pozycjonowanie stron?
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  <strong>Pozycjonowanie stron, znane również jako SEO (Search Engine Optimization), to proces optymalizacji 
-                  strony internetowej w celu poprawy jej widoczności w wyszukiwarce Google.</strong> Skuteczne pozycjonowanie 
-                  obejmuje zarówno optymalizację treści, jak i techniczne aspekty strony www, a także budowanie autorytetu 
-                  w sieci poprzez link building.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
-                  Jak zacząć pozycjonowanie strony www?
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  <strong>Kluczowe jest przeprowadzenie wstępnego audytu SEO</strong> – kompleksowej analizy strony www, 
-                  mającej na celu identyfikację mocnych i słabych stron w kontekście optymalizacji pod wyszukiwarkę Google. 
-                  Audyt SEO powinien obejmować analizę treści, słów kluczowych, profilu linków oraz konkurencji.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
-                  Działania SEO on-page i off-page
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  <strong>SEO on-page</strong> to optymalizacja elementów bezpośrednio na stronie: treść, meta tagi, 
-                  struktura, szybkość ładowania. <strong>SEO off-page</strong> to budowanie linków zwrotnych z innych 
-                  stron, które zwiększają autorytet domeny w oczach Google. Oba rodzaje działań są niezbędne do 
-                  skutecznego pozycjonowania.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
-                  Rola treści i linków w pozycjonowaniu
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Wysokiej jakości, unikalna treść jest jednym z najważniejszych czynników rankingowych Google. 
-                  Treść powinna być zoptymalizowana pod słowa kluczowe, ale przede wszystkim wartościowa dla 
-                  użytkowników. Linki zwrotne z renomowanych stron budują autorytet – im więcej wartościowych 
-                  linków, tym wyższa pozycja w wynikach wyszukiwania.
-                </p>
-              </FadeInView>
-            </div>
-          </div>
-        </section>
+        <ContactSection />
       </Layout>
     </>
   );
