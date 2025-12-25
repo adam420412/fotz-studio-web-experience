@@ -6,22 +6,16 @@ import { motion } from "framer-motion";
 import { 
   Globe, 
   Search, 
-  Users, 
   ShoppingCart, 
   Palette, 
   MessageSquare,
   Settings,
   TrendingUp,
   Handshake,
-  ChevronRight,
   Phone,
-  CheckCircle2,
   Smartphone,
   Shield,
   Headphones,
-  FileCode,
-  Clock,
-  Award,
   MapPin,
   ArrowRight
 } from "lucide-react";
@@ -38,14 +32,14 @@ import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
-const StronyInternetoweSzczecin = () => {
+const StronyInternetoweBydgoszcz = () => {
   const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz witryny online dla firm ze Szczecina." },
+    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz witryny online dla firm z Bydgoszczy." },
     { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na projekt graficzny." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z pełnymi integracjami płatności." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
-    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
+    { icon: Palette, title: "Projektowanie UI/UX", desc: "Responsywne strony internetowe z naciskiem na projekt graficzny." },
+    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z integracją WooCommerce i płatności." },
+    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify, Joomla i dedykowane rozwiązania." },
+    { icon: TrendingUp, title: "Marketing internetowy", desc: "Kampanie Ads i strategie, które przyciągają nowych klientów." },
   ];
 
   const whyUs = [
@@ -53,18 +47,18 @@ const StronyInternetoweSzczecin = () => {
     { icon: Search, title: "SEO w standardzie", desc: "Każda strona www jest zoptymalizowana pod wyszukiwarki od pierwszego dnia." },
     { icon: Handshake, title: "Partnerskie podejście", desc: "Specjalizujemy się w tworzeniu stron skrojonych na miarę Twojej firmy." },
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
-    { icon: Shield, title: "Certyfikat SSL", desc: "Bezpieczne strony z certyfikatem SSL i regularnymi aktualizacjami." },
+    { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
   ];
 
   const pricing = [
     { title: "Strona wizytówkowa / Landing page", desc: "Prosta strona www prezentująca podstawowe informacje o firmie.", price: "od 1 500 zł netto" },
-    { title: "Rozbudowana strona firmowa", desc: "Profesjonalna strona internetowa z dodatkowymi funkcjonalnościami.", price: "od 5 000 zł netto" },
+    { title: "Strona firmowa", desc: "Profesjonalna strona internetowa z rozbudowanymi funkcjonalnościami.", price: "od 5 000 zł netto" },
     { title: "Sklep internetowy e-commerce", desc: "Zaawansowana platforma e-commerce z integracjami płatności.", price: "od 7 000 zł netto" },
   ];
 
   const processSteps = [
-    { step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy ze Szczecina." },
+    { step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy z Bydgoszczy." },
     { step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
     { step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
     { step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
@@ -109,63 +103,63 @@ const StronyInternetoweSzczecin = () => {
 
   const faqItems = [
     {
-      question: "Czym wyróżniają się strony internetowe Szczecin tworzone przez Waszą firmę?",
-      answer: "Oferujemy kompleksowy proces zaprojektowania strony i budujemy strony zoptymalizowane pod kątem wyszukiwarek internetowych, co zwiększa widoczność Twojej strony i przyciąga klientów. Nasze nowoczesne strony internetowe łączą responsywny design z profesjonalnym podejściem do projektu strony internetowej."
+      question: "Jakie są najważniejsze aspekty tworzenia własnej strony?",
+      answer: "Tworzenie stron internetowych to proces, który wymaga uwzględnienia wielu aspektów. Kluczowe jest zrozumienie potrzeb klienta i celów biznesowych. Należy zaprojektować responsywny design, zapewniający dostosowanie strony do różnych urządzeń. Ważna jest także funkcjonalność strony, intuicyjna nawigacja oraz optymalizacja SEO."
     },
     {
-      question: "Jak wygląda proces tworzenia strony www dla firm ze Szczecina?",
-      answer: "Najpierw ustalamy zakres projektowania stron internetowych i strukturę strony, następnie przygotowujemy projekt graficzny i funkcjonalny. Po akceptacji przystępujemy do tworzenia stron internetowych, integracji z systemem zarządzania treścią oraz testów przed uruchomieniem strony."
+      question: "Co powinno znaleźć się na stronie internetowej firmy?",
+      answer: "Strona internetowa firmy powinna zawierać kilka kluczowych podstron: stronę główną jako wizytówkę firmy, podstronę 'O nas' budującą zaufanie, 'Usługi/Produkty' prezentującą ofertę, 'Kontakt' z danymi i formularzem, oraz blog/aktualności dla poprawy SEO."
     },
     {
-      question: "Czy oferujecie responsywny design zoptymalizowany pod kątem wyszukiwarek?",
-      answer: "Tak — nasze responsywne strony www są projektowane pod kątem szybkiego ładowania strony i najlepszych praktyk SEO. Tworzymy strony zoptymalizowane pod kątem wyszukiwarek internetowych, aby poprawić pozycje w wynikach i zwiększyć ruch organiczny."
+      question: "Ile kosztuje stworzenie strony dla małej firmy w Bydgoszczy?",
+      answer: "Koszt strony zależy od zakresu funkcji — prosty landing page będzie tańszy niż sklep internetowy z integracjami WooCommerce. Wycena uwzględnia domenę, hosting, projekt graficzny, optymalizację SEO oraz późniejsze wsparcie techniczne. Ceny zaczynają się od około 1500 zł netto."
     },
     {
-      question: "Co obejmuje kompleksowy pakiet usług tworzenia stron?",
-      answer: "Kompleksowy pakiet gwarantuje spójność projektu, bezproblemowe wdrożenie oraz szybką reakcję przy aktualizacjach. Dzięki temu masz pewność, że każda strona działa stabilnie, a Twoja marka zyskuje profesjonalne podejście w zakresie obsługi i rozwoju."
+      question: "Jak strony internetowe mogą przyciągnąć klientów?",
+      answer: "Strony internetowe przyciągają klientów przez przejrzysty przekaz, szybkie ładowanie, SEO i treści dopasowane do odbiorcy. Witryny zoptymalizowane oraz zintegrowane z narzędziami analitycznymi pomagają mierzyć efektywność i ulepszać konwersje."
     },
     {
-      question: "Czy pomagacie w tworzeniu sklepów internetowych?",
-      answer: "Tak, tworzymy sklepy internetowe oparte na sprawdzonych rozwiązaniach e-commerce. W ramach projektu strony internetowej wykonujemy konfigurację produktów, płatności, integracje z systemami wysyłkowymi i optymalizację pod kątem konwersji."
+      question: "Czy oferujecie gotowe pakiety i wsparcie techniczne?",
+      answer: "Tak, oferujemy gotowe pakiety obejmujące projekt, wybór domeny, SEO podstawowe i miesięczne wsparcie techniczne. Dzięki temu nawet w przypadku złożonych stron można liczyć na szybką pomoc i regularne aktualizacje bezpieczeństwa."
     },
     {
-      question: "Ile czasu trwa przygotowanie i uruchomienie strony dla firmy ze Szczecina?",
-      answer: "Czas realizacji zależy od zakresu — proste strony można uruchomić w kilku tygodniach, bardziej rozbudowane projekty wymagają kilku miesięcy. Kluczowe etapy to: analiza potrzeb, struktura strony, projekt graficzny, wdrożenie techniczne, testy i uruchomienie strony."
+      question: "Jak wygląda proces pozycjonowania dla firm z Bydgoszczy?",
+      answer: "Proces pozycjonowania zaczyna się od audytu strony i analizy słów kluczowych, następnie optymalizacji treści i technicznych elementów witryny oraz budowy linków. Dla firm z Bydgoszczy kluczowe jest lokalne SEO i optymalizacja Google Moja Firma."
     },
     {
-      question: "Czy możecie odświeżyć istniejącą stronę i poprawić jej pozycję w wyszukiwarkach?",
-      answer: "Oferujemy audyt SEO i konwersji, rekomendacje dotyczące struktury strony oraz wdrożenia zoptymalizowane pod kątem wyszukiwarek internetowych. Przeprowadzamy aktualizacje treści, optymalizujemy ładowanie strony i wersję mobilną, aby poprawić widoczność i efektywność serwisu."
+      question: "Czy można zintegrować sklep WooCommerce z projektem strony?",
+      answer: "Tak, integracja z systemami e-commerce takimi jak WooCommerce jest standardem. Pozwala to na łatwe zarządzanie produktami, płatnościami i wysyłką, a także daje możliwości optymalizacji SEO dla kart produktów."
     },
     {
-      question: "Jakie wsparcie otrzymam po zrealizowanej stronie?",
-      answer: "Po oddaniu projektu zapewniamy wsparcie techniczne, opcje hostingu i kopii zapasowych oraz szkolenie z zarządzania treścią, byś mógł samodzielnie aktualizować stronę. Oferujemy również pakiety opieki i dalszego rozwoju."
+      question: "Jakie są opcje hostingu dla stron internetowych?",
+      answer: "Dostępne są różne opcje hostingu: hosting współdzielony (najtańszy), hosting VPS oferujący większą kontrolę, oraz hosting dedykowany dla wymagających projektów. Ważne jest, aby wybrać hosting spełniający potrzeby strony i zapewniający stabilne działanie."
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Strony Internetowe Szczecin | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
+        <title>Strony Internetowe Bydgoszcz | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
         <meta 
           name="description" 
-          content="Strony internetowe Szczecin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm ze Szczecina i okolic." 
+          content="Strony internetowe Bydgoszcz. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Bydgoszczy i okolic." 
         />
-        <meta name="keywords" content="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin, strona www szczecin, www szczecin" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-szczecin" />
+        <meta name="keywords" content="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz" />
+        <link rel="canonical" href="https://fotz.pl/strony-internetowe-bydgoszcz" />
       </Helmet>
       
       <ServiceSchema 
-        name="Strony Internetowe Szczecin - Projektowanie i Tworzenie Stron WWW"
-        description="Profesjonalne tworzenie stron internetowych dla firm ze Szczecina i okolic. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
+        name="Strony Internetowe Bydgoszcz - Projektowanie i Tworzenie Stron WWW"
+        description="Profesjonalne tworzenie stron internetowych dla firm z Bydgoszczy i okolic. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
         provider="FOTZ Studio"
-        areaServed="Szczecin"
+        areaServed="Bydgoszcz"
       />
       
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Szczecin", url: "https://fotz.pl/strony-internetowe-szczecin" },
+          { name: "Bydgoszcz", url: "https://fotz.pl/strony-internetowe-bydgoszcz" },
         ]}
       />
       
@@ -190,17 +184,17 @@ const StronyInternetoweSzczecin = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Strony WWW Szczecin
+                Strony WWW Bydgoszcz
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Strony Internetowe <span className="text-gradient">Szczecin</span>
+                Strony Internetowe <span className="text-gradient">Bydgoszcz</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                W dzisiejszym cyfrowym świecie, <strong>posiadanie profesjonalnej strony internetowej to podstawa sukcesu każdej firmy</strong>. 
-                Specjalizujemy się w <Link to="/strony-internetowe" className="text-primary hover:underline">projektowaniu i tworzeniu stron www</Link> w Szczecinie, 
-                oferując kompleksowe rozwiązania dostosowane do indywidualnych potrzeb naszych klientów.
+                W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
+                Oferujemy kompleksowe usługi <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenia stron www</Link> w Bydgoszczy, 
+                dostosowane do indywidualnych potrzeb klienta.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -221,34 +215,33 @@ const StronyInternetoweSzczecin = () => {
           </div>
         </section>
 
-        {/* Intro Section */}
+        {/* Projektowanie Section */}
         <section className="py-16 border-b border-border/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Wprowadzenie do tworzenia stron www
+                  Projektowanie Stron Internetowych w Bydgoszczy
                 </h2>
                 <div className="prose prose-invert max-w-none">
-                  <h3>Co to jest strona www?</h3>
                   <p>
-                    Strona www, inaczej witryna internetowa, to zbiór powiązanych ze sobą dokumentów, grafik i innych zasobów, 
-                    dostępnych online pod jednym adresem internetowym (domeną). <strong>Profesjonalnie zaprojektowana strona www 
-                    powinna być responsywna</strong>, czyli dostosowywać się do różnych urządzeń, takich jak komputery, tablety i smartfony.
+                    <strong>Projektowanie stron internetowych to kluczowy element w procesie tworzenia efektywnej wizytówki Twojej firmy w sieci</strong>. 
+                    W Bydgoszczy nasza <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencja</Link> specjalizuje się 
+                    w projektowaniu stron www, które są nie tylko estetyczne, ale przede wszystkim funkcjonalne i responsywne.
                   </p>
                   
-                  <h3>Dlaczego warto projektować profesjonalne <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowe</Link>?</h3>
+                  <h3>Dlaczego warto projektować profesjonalne strony internetowe?</h3>
                   <p>
-                    <strong>Warto projektować profesjonalne strony internetowe, ponieważ stanowią one wizytówkę firmy w internecie.</strong> 
-                    Profesjonalny projekt graficzny oraz intuicyjna funkcjonalność budują pozytywny wizerunek marki i zwiększają zaufanie klientów. 
-                    Dobrze zaprojektowana strona www to także skuteczne narzędzie reklamowe.
+                    <strong>Profesjonalne projektowanie stron internetowych to inwestycja w przyszłość Twojej firmy</strong>. 
+                    Funkcjonalna strona www to nie tylko wizytówka, ale również skuteczne narzędzie marketingowe. 
+                    Dobrze zaprojektowana witryna przyciąga uwagę potencjalnych klientów, buduje zaufanie i zwiększa konwersję.
                   </p>
                   
-                  <h3>Znaczenie <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron internetowych</Link> Szczecin</h3>
+                  <h3>Usługi projektowania stron www w Bydgoszczy</h3>
                   <p>
-                    <strong>Pozycjonowanie stron internetowych w Szczecinie (SEO) jest kluczowe, aby Twoja strona pojawiała się 
-                    wysoko w wynikach wyszukiwania.</strong> Dzięki optymalizacji treści i struktury strony pod kątem słów kluczowych, 
-                    potencjalni klienci łatwiej znajdą Twoją ofertę w wyszukiwarce Google.
+                    Specjalizujemy się w projektowaniu responsywnych stron internetowych, dostosowanych do potrzeb klienta. 
+                    <strong>Tworzymy strony internetowe dla firm, które są wizualnie atrakcyjne, funkcjonalne i zoptymalizowane pod kątem 
+                    <Link to="/pozycjonowanie" className="text-primary hover:underline"> SEO</Link></strong>.
                   </p>
                 </div>
               </FadeInView>
@@ -263,10 +256,10 @@ const StronyInternetoweSzczecin = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Usługi</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Tworzenie stron www Szczecin
+                  Tworzenie Stron WWW w Bydgoszczy
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi tworzenia stron www dla firm ze Szczecina - od projektu graficznego po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
+                  Kompleksowe usługi tworzenia stron www dla firm z Bydgoszczy - od projektu graficznego po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
                 </p>
               </div>
             </FadeInView>
@@ -285,38 +278,96 @@ const StronyInternetoweSzczecin = () => {
           </div>
         </section>
 
-        {/* Agencje Section */}
+        {/* Proces Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Agencje projektujące strony www w Szczecinie</h2>
-                  
-                  <h3>Wybór odpowiedniej <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencji interaktywnej</Link></h3>
+                  <h2>Proces tworzenia stron internetowych Bydgoszcz</h2>
                   <p>
-                    Wybierając agencję interaktywną w Szczecinie, warto zwrócić uwagę na jej doświadczenie, portfolio oraz zakres 
-                    oferowanych usług. <strong>Profesjonalna agencja zadba o kompleksowy proces tworzenia stron www, od projektowania 
-                    graficznego po wdrożenie i pozycjonowanie.</strong>
+                    Proces tworzenia stron internetowych w Bydgoszczy rozpoczyna się od szczegółowej rozmowy, mającej na celu 
+                    poznanie potrzeb klienta. Następnie przeprowadzamy dogłębny research, który pozwala nam opracować optymalną strategię. 
+                    Po akceptacji wyceny nasi specjaliści przechodzą do tworzenia kodu i oprawy graficznej.
                   </p>
-                  
-                  <h3>Oferta agencji w Szczecinie</h3>
                   <p>
-                    Agencje w Szczecinie, takie jak Fotz, oferują szeroki zakres usług związanych z tworzeniem stron internetowych. 
-                    Kompleksowe podejście obejmuje nie tylko projektowanie i wdrażanie witryn, ale także branding i identyfikację wizualną, 
-                    <Link to="/social-media" className="text-primary hover:underline"> obsługę social media</Link>, video marketing, 
-                    kampanie reklamowe Meta Ads i Google Ads, oraz systemy pozyskiwania leadów.
-                  </p>
-                  
-                  <h3>Przykłady realizacji stron internetowych</h3>
-                  <p>
-                    Przeglądając <Link to="/realizacje" className="text-primary hover:underline">portfolio agencji</Link>, możesz 
-                    zobaczyć przykłady wcześniejszych realizacji stron internetowych. <strong>Przykłady udanych realizacji świadczą 
-                    o profesjonalizmie i umiejętnościach agencji</strong>.
+                    Dbamy o to, aby każda strona www była estetyczna, funkcjonalna i responsywna, z idealnym dostosowaniem strony 
+                    do urządzeń mobilnych. Nasza agencja wykorzystuje różne systemy zarządzania treścią (CMS), takie jak WordPress, 
+                    Joomla, Drupal, Webflow i Shopify. Dzięki temu <strong>zarządzanie Twoją witryną jest proste i intuicyjne</strong>.
                   </p>
                 </div>
               </FadeInView>
             </div>
+          </div>
+        </section>
+
+        {/* Process Steps */}
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Jak wygląda proces tworzenia strony internetowej?
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Przejrzysty proces od briefu do wdrożenia nowej strony internetowej.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+              {processSteps.map((step, index) => (
+                <FadeInView key={index} delay={index * 0.1}>
+                  <div className="relative p-6 rounded-xl bg-background border border-border/50">
+                    <span className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
+                      {step.step}
+                    </span>
+                    <h3 className="text-lg font-semibold mb-2 mt-2">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground">{step.desc}</p>
+                  </div>
+                </FadeInView>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Wycena i koszty tworzenia stron www
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Transparentne ceny dopasowane do zakresu projektu. 
+                  Sprawdź też <Link to="/blog/ile-kosztuje-strona-internetowa" className="text-primary hover:underline">ile kosztuje strona internetowa</Link>.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {pricing.map((plan, index) => (
+                <FadeInView key={index} delay={index * 0.1}>
+                  <div className={`p-8 rounded-xl border h-full flex flex-col ${index === 1 ? "bg-primary/5 border-primary/30" : "bg-card border-border/50"}`}>
+                    <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
+                    <p className="text-muted-foreground text-sm mb-4">{plan.desc}</p>
+                    <div className="text-2xl font-bold text-primary mb-6">{plan.price}</div>
+                    <Button asChild className="w-full mt-auto" variant={index === 1 ? "default" : "outline"}>
+                      <Link to="/kontakt">Zapytaj o ofertę</Link>
+                    </Button>
+                  </div>
+                </FadeInView>
+              ))}
+            </div>
+
+            <FadeInView delay={0.3}>
+              <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto text-sm">
+                * Ceny orientacyjne. Ostateczna wycena zależy od zakresu funkcjonalności i złożoności projektu.
+              </p>
+            </FadeInView>
           </div>
         </section>
 
@@ -374,33 +425,33 @@ const StronyInternetoweSzczecin = () => {
           </div>
         </section>
 
-        {/* Process Section */}
+        {/* SEO Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Proces projektowania i tworzenia stron www</h2>
+                  <h2>Optymalizacja SEO dla Stron Internetowych</h2>
                   
-                  <h3>Etapy projektowania graficznego</h3>
+                  <h3>Znaczenie SEO w tworzeniu stron www</h3>
                   <p>
-                    Proces projektowania graficznego stron www rozpoczyna się od zrozumienia potrzeb i celów biznesowych klienta. 
-                    Następnie tworzone są makiety i prototypy, które prezentują układ i wygląd strony. <strong>Ważne jest, aby 
-                    projekt graficzny był spójny z identyfikacją wizualną firmy i atrakcyjny dla potencjalnych klientów.</strong>
+                    <strong>Optymalizacja <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> jest kluczowa 
+                    w procesie tworzenia stron www, ponieważ wpływa na widoczność Twojej witryny w wyszukiwarkach internetowych</strong>. 
+                    Naszą misją jest dostarczanie klientom stron internetowych, które pozwalają dotrzeć do szerszego grona odbiorców.
                   </p>
                   
-                  <h3>Tworzenie responsywnych witryn online</h3>
+                  <h3>Strategie SEO dla firm w Bydgoszczy</h3>
                   <p>
-                    <strong>Tworzenie responsywnych witryn online jest kluczowe, aby Twoja strona była dostępna i czytelna na 
-                    wszystkich urządzeniach.</strong> Responsywny design automatycznie dopasowuje się do rozmiaru ekranu, 
-                    zapewniając optymalne wrażenia użytkownikom.
+                    Skuteczne strategie SEO dla firm w Bydgoszczy powinny uwzględniać <strong>lokalne słowa kluczowe</strong>, 
+                    które pomogą dotrzeć do klientów szukających usług w Bydgoszczy, oraz <strong>optymalizację wizytówki Google Moja Firma</strong>. 
+                    Ważne jest również monitorowanie konkurencji i budowanie lokalnych linków.
                   </p>
                   
-                  <h3>Administracja i hosting stron internetowych</h3>
+                  <h3>Jak sprawdzić pozycjonowanie strony?</h3>
                   <p>
-                    Profesjonalne agencje oferują usługi administracji i hosting stron internetowych. Korzystamy z różnych 
-                    systemów zarządzania treścią (CMS), takich jak WordPress, Joomla, Drupal, Webflow i Shopify. <strong>Hosting 
-                    zapewnia stabilne i szybkie działanie strony www</strong>.
+                    <strong>Pozycjonowanie Twojej strony internetowej można sprawdzić za pomocą różnych narzędzi analitycznych</strong>, 
+                    takich jak Google Analytics, Google Search Console czy Semrush. Pozwalają one monitorować ruch na stronie, 
+                    analizować słowa kluczowe i sprawdzać pozycje w wynikach wyszukiwania.
                   </p>
                 </div>
               </FadeInView>
@@ -408,64 +459,32 @@ const StronyInternetoweSzczecin = () => {
           </div>
         </section>
 
-        {/* Process Steps */}
+        {/* Marketing Section */}
         <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak wygląda proces tworzenia strony internetowej?
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Przejrzysty proces od briefu do wdrożenia nowej strony internetowej.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              {processSteps.map((step, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="relative p-6 rounded-xl bg-background border border-border/50">
-                    <span className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                      {step.step}
-                    </span>
-                    <h3 className="text-lg font-semibold mb-2 mt-2">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground">{step.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* SEO Section */}
-        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Optymalizacja i pozycjonowanie stron www</h2>
+                  <h2>Marketing i Reklama Internetowa</h2>
                   
-                  <h3>Jak zadbać o SEO na stronie internetowej?</h3>
+                  <h3>Jak przyciągnąć nowych klientów online w Bydgoszczy?</h3>
                   <p>
-                    Aby zadbać o SEO Twojej strony internetowej, należy skupić się na kilku kluczowych elementach. Przede wszystkim, 
-                    optymalizacja treści pod kątem słów kluczowych, które wpisują użytkownicy w wyszukiwarce. Ważna jest również 
-                    struktura strony, odpowiednie nagłówki i opisy meta. <strong>Profesjonalny audyt SEO pozwoli zidentyfikować 
-                    obszary do poprawy</strong>.
+                    Chcesz dotrzeć do nowych klientów w Bydgoszczy i okolicach? Skuteczny marketing internetowy to <strong>klucz do sukcesu</strong>! 
+                    Wykorzystaj potencjał swojej strony internetowej, aby tworzyć trwałe relacje z odbiorcami. 
+                    Twojej firmie potrzebny jest profesjonalny plan marketingowy.
                   </p>
                   
-                  <h3>Optymalizacja dla sklepów internetowych</h3>
+                  <h3>Reklama internetowa dla lokalnych firm</h3>
                   <p>
-                    Optymalizacja dla sklepów internetowych wymaga uwzględnienia specyfiki e-commerce. Należy zadbać o optymalizację 
-                    kart produktów, kategorii i opisów. <strong>Dobrze zoptymalizowany sklep internetowy to większa widoczność 
-                    w wynikach wyszukiwania i większa szansa na konwersję.</strong>
+                    Reklama internetowa to <strong>niezbędny element strategii marketingowej każdej lokalnej firmy</strong>. 
+                    Dzięki niej możesz dotrzeć do potencjalnych klientów w Bydgoszczy i okolicach, promując swoje usługi i produkty. 
+                    Nasza oferta obejmuje kampanie reklamowe Meta Ads i Google Ads.
                   </p>
                   
-                  <h3>Rola domeny w pozycjonowaniu stron</h3>
+                  <h3>Wykorzystanie <Link to="/social-media" className="text-primary hover:underline">Social Media</Link></h3>
                   <p>
-                    <strong>Domena odgrywa istotną rolę w <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniu stron</Link>.</strong> 
-                    Nazwa domeny powinna być krótka, łatwa do zapamiętania i zawierać słowa kluczowe związane z Twoją branżą.
+                    Kampanie Ads pozwalają na precyzyjne targetowanie odbiorców, wyświetlanie reklam osobom zainteresowanym 
+                    Twoją ofertą oraz mierzenie efektów reklamowych. Dzięki temu możesz zoptymalizować swoje działania marketingowe.
                   </p>
                 </div>
               </FadeInView>
@@ -474,7 +493,7 @@ const StronyInternetoweSzczecin = () => {
         </section>
 
         {/* Why Us Section */}
-        <section className="py-20 bg-card/30">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -483,7 +502,7 @@ const StronyInternetoweSzczecin = () => {
                   Dlaczego warto nam zlecić tworzenie strony?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm ze Szczecina i całej Polski.
+                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm z Bydgoszczy i całej Polski.
                 </p>
               </div>
             </FadeInView>
@@ -491,7 +510,7 @@ const StronyInternetoweSzczecin = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {whyUs.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full">
+                  <div className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full">
                     <item.icon className="w-10 h-10 text-primary mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
@@ -502,76 +521,31 @@ const StronyInternetoweSzczecin = () => {
           </div>
         </section>
 
-        {/* Pricing Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Cennik tworzenia stron www Szczecin
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Transparentne ceny dopasowane do zakresu projektu strony internetowej. 
-                  Sprawdź też <Link to="/blog/ile-kosztuje-strona-internetowa" className="text-primary hover:underline">ile kosztuje strona internetowa</Link>.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {pricing.map((plan, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-xl border h-full flex flex-col ${index === 1 ? "bg-primary/5 border-primary/30" : "bg-card border-border/50"}`}>
-                    <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">{plan.desc}</p>
-                    <div className="text-2xl font-bold text-primary mb-6">{plan.price}</div>
-                    <Button asChild className="w-full mt-auto" variant={index === 1 ? "default" : "outline"}>
-                      <Link to="/kontakt">Zapytaj o ofertę</Link>
-                    </Button>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-
-            <FadeInView delay={0.3}>
-              <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto text-sm">
-                * Ceny orientacyjne. Ostateczna wycena zależy od zakresu funkcjonalności i złożoności projektu.
-              </p>
-            </FadeInView>
-          </div>
-        </section>
-
         {/* Additional SEO Content */}
         <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>www Szczecin — jakie usługi oferować przy tworzeniu stron internetowych?</h2>
+                  <h2>Profesjonalne strony internetowe Bydgoszcz — czym się wyróżniają?</h2>
                   <p>
-                    Oferujemy kompleksowy zakres usług: projekt graficzny, tworzenie nowej strony internetowej zgodnie z 
-                    wytycznymi Google, wdrożenie podstron i formularzy kontaktowych, <Link to="/pozycjonowanie" className="text-primary hover:underline">optymalizację strony (SEO)</Link> 
-                    oraz konfigurację certyfikatu SSL i serwerów. Działamy dla firm ze Szczecina i okolic.
+                    Profesjonalne <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowe</Link> Bydgoszcz 
+                    to projektowanie witryn z myślą o optymalizacji, szybkiej responsywności i spójnym wizerunku w sieci. 
+                    Takie strony często zawierają dedykowaną domenę, integrację z systemami e-commerce oraz wsparcie techniczne po uruchomieniu.
                   </p>
                   
-                  <h2>Administracja stron internetowych — co obejmuje?</h2>
+                  <h2>Jak wybrać firmę tworzącą strony dla firm z Bydgoszczy?</h2>
                   <p>
-                    Administracja stron internetowych obejmuje zarządzanie treścią CMS WordPress, aktualizacje wtyczek i motywu, 
-                    kopie zapasowe, monitorowanie funkcjonowania strony i zapewnienie bezpieczeństwa (certyfikat SSL, zabezpieczenia serwerów).
+                    Wybierając agencję warto sprawdzić <Link to="/realizacje" className="text-primary hover:underline">portfolio zrealizowanych stron</Link>, 
+                    referencje oraz oferowane rozwiązania. Dobrze, gdy wykonawca proponuje kompleksowe usługi: projektowanie, 
+                    wybór domeny, optymalizację SEO oraz wsparcie techniczne.
                   </p>
                   
-                  <h2>WordPress — dlaczego warto wybrać CMS WordPress?</h2>
+                  <h2>Czy można zintegrować sklep WooCommerce z projektem strony?</h2>
                   <p>
-                    WordPress to elastyczna technologia internetowa pozwalająca na szybkie tworzenie i edycję treści, łatwe dodawanie 
-                    podstron i formularzy oraz zarządzanie grupą docelową. Oferujemy konfigurację, optymalizację strony i szkolenie 
-                    z zarządzania treścią.
-                  </p>
-                  
-                  <h2>Strona internetowa to wizytówka — jak wpływa na pozyskiwanie klientów?</h2>
-                  <p>
-                    Strona internetowa to wizytówka firmy — dobrze zaprojektowana i zoptymalizowana przyciąga klientów ze Szczecina 
-                    i okolic, zwiększa wiarygodność oraz konwersje. Oferujemy kompleksowe podejście: <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenie stron internetowych</Link>, 
-                    optymalizację pod wyszukiwarki, konfigurację formularzy i szkolenie z zarządzania treścią.
+                    Tak, integracja z systemami e-commerce takimi jak WooCommerce jest standardem przy tworzeniu sklepów internetowych. 
+                    Pozwala to na łatwe zarządzanie produktami, płatnościami i wysyłką, a także daje możliwości optymalizacji SEO 
+                    dla kart produktów w celu przyciągnięcia klientów.
                   </p>
                 </div>
               </FadeInView>
@@ -605,7 +579,7 @@ const StronyInternetoweSzczecin = () => {
                       key={index}
                       to={city.href}
                       className={`px-6 py-3 rounded-full font-medium transition-colors ${
-                        city.href === "/strony-internetowe-szczecin" 
+                        city.href === "/strony-internetowe-bydgoszcz" 
                           ? "bg-primary text-primary-foreground" 
                           : "bg-card border border-border/50 text-foreground hover:border-primary/30"
                       }`}
@@ -634,10 +608,10 @@ const StronyInternetoweSzczecin = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">FAQ</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Najczęściej zadawane pytania
+                  Często Zadawane Pytania
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na pytania dotyczące tworzenia stron w Szczecinie.
+                  Odpowiedzi na pytania dotyczące tworzenia stron w Bydgoszczy.
                 </p>
               </div>
             </FadeInView>
@@ -671,10 +645,10 @@ const StronyInternetoweSzczecin = () => {
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Gotowy na profesjonalną stronę internetową w Szczecinie?
+                  Gotowy na profesjonalną stronę internetową w Bydgoszczy?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm ze Szczecina i całej Polski.
+                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Bydgoszczy i całej Polski.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="group">
@@ -699,4 +673,4 @@ const StronyInternetoweSzczecin = () => {
   );
 };
 
-export default StronyInternetoweSzczecin;
+export default StronyInternetoweBydgoszcz;
