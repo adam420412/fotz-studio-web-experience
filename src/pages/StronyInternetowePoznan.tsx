@@ -493,6 +493,72 @@ const StronyInternetowePoznan = () => {
           </div>
         </section>
 
+        {/* Miasta Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Tworzenie stron internetowych w całej Polsce
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Realizujemy projekty dla klientów z całego kraju. Sprawdź nasze usługi w Twoim mieście.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+              {[
+                { name: "Warszawa", path: "/strony-internetowe-warszawa", active: true },
+                { name: "Kraków", path: "/strony-internetowe-krakow", active: false },
+                { name: "Wrocław", path: "/strony-internetowe-wroclaw", active: false },
+                { name: "Gdańsk", path: "/strony-internetowe-gdansk", active: false },
+                { name: "Łódź", path: "/strony-internetowe-lodz", active: false },
+                { name: "Katowice", path: "/strony-internetowe-katowice", active: false },
+              ].map((city, index) => (
+                <motion.div
+                  key={city.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.05 }}
+                >
+                  {city.active ? (
+                    <Link
+                      to={city.path}
+                      className="block p-4 bg-card border border-border/50 rounded-lg text-center hover:border-primary/50 hover:bg-primary/5 transition-all"
+                    >
+                      <span className="font-medium">{city.name}</span>
+                    </Link>
+                  ) : (
+                    <div className="block p-4 bg-card/50 border border-border/30 rounded-lg text-center opacity-50 cursor-not-allowed">
+                      <span className="font-medium text-muted-foreground">{city.name}</span>
+                      <span className="block text-xs text-muted-foreground mt-1">Wkrótce</span>
+                    </div>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mt-8"
+            >
+              <p className="text-muted-foreground">
+                Nie widzisz swojego miasta?{" "}
+                <Link to="/kontakt" className="text-primary hover:underline">
+                  Skontaktuj się z nami
+                </Link>
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
