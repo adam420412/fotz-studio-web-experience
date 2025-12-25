@@ -29,6 +29,7 @@ import {
 } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -590,35 +591,8 @@ const StronyInternetoweKatowice = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-b from-card/30 to-background">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Gotowy na profesjonalną stronę internetową w Katowicach?
-                </h2>
-                <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Katowic i całego Śląska.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="group">
-                    <Link to="/kontakt">
-                      Bezpłatna wycena
-                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <a href="tel:+48790814814">
-                      <Phone className="mr-2 h-5 w-5" />
-                      +48 790 814 814
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </FadeInView>
-          </div>
-        </section>
+        {/* Contact Section */}
+        <ContactSection city="Katowicach" />
       </Layout>
     </>
   );

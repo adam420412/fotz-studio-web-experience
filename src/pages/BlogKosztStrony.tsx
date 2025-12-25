@@ -14,7 +14,7 @@ const cities = [
   { name: "Łódź", path: "/strony-internetowe-lodz", active: true },
   { name: "Katowice", path: "/strony-internetowe-katowice", active: true },
   { name: "Szczecin", path: "/strony-internetowe-szczecin", active: true },
-  { name: "Lublin", path: "/strony-internetowe-lublin", active: false },
+  { name: "Lublin", path: "/strony-internetowe-lublin", active: true },
   { name: "Bydgoszcz", path: "/strony-internetowe-bydgoszcz", active: true },
   { name: "Białystok", path: "/strony-internetowe-bialystok", active: false },
   { name: "Rzeszów", path: "/strony-internetowe-rzeszow", active: false },

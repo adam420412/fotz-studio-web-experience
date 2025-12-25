@@ -35,6 +35,7 @@ import {
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -747,6 +748,9 @@ const StronyInternetowe = () => {
             </div>
           </div>
         </section>
+
+        {/* Contact Section */}
+        <ContactSection />
       </Layout>
     </>
   );
