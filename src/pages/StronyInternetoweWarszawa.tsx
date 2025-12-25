@@ -272,7 +272,7 @@ const StronyInternetoweWarszawa = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 md:mb-8 leading-tight px-2"
               >
                 Strony Internetowe{" "}
                 <span className="text-gradient relative">
@@ -290,7 +290,7 @@ const StronyInternetoweWarszawa = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed"
+                className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-4"
               >
                 <strong className="text-foreground">Na konkurencyjnym rynku warszawskim liczy się każdy detal.</strong>{" "}
                 Tworzymy strony www, które wyróżniają Twoją firmę i skutecznie pozyskują klientów.
@@ -300,17 +300,17 @@ const StronyInternetoweWarszawa = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 md:mb-12 px-4"
               >
-                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20">
+                <Button asChild size="lg" className="group text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 shadow-lg shadow-primary/20 w-full sm:w-auto">
                   <Link to="/kontakt">
                     Bezpłatna wycena
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2">
+                <Button asChild variant="outline" size="lg" className="group text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 border-2 w-full sm:w-auto">
                   <a href="tel:+48790814814">
-                    <Phone className="mr-2 h-5 w-5" />
+                    <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
@@ -320,7 +320,7 @@ const StronyInternetoweWarszawa = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto"
+                className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-8 max-w-4xl mx-auto px-4"
               >
                 {stats.map((stat, index) => (
                   <motion.div
@@ -328,11 +328,11 @@ const StronyInternetoweWarszawa = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
-                    className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all"
+                    className="group p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all"
                   >
-                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
-                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+                    <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary mx-auto mb-1 sm:mb-2 transition-transform group-hover:scale-110" />
+                    <div className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
+                    <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground leading-tight">{stat.label}</div>
                   </motion.div>
                 ))}
               </motion.div>
