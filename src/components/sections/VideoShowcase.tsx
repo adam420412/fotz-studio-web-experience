@@ -22,13 +22,13 @@ export function VideoShowcase() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-10"
+          className="text-center mb-6 sm:mb-8 md:mb-10"
         >
-          <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
-            <Play className="w-4 h-4" />
+          <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-primary uppercase tracking-wider mb-3 md:mb-4">
+            <Play className="w-3 h-3 sm:w-4 sm:h-4" />
             Zobacz nas w akcji
           </span>
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold">
             Tworzymy treści, które <span className="text-gradient">angażują</span>
           </h2>
         </motion.div>

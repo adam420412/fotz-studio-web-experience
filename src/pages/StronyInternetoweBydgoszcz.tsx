@@ -170,11 +170,11 @@ const StronyInternetoweBydgoszcz = () => {
 
       <Layout>
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
+        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-40 pb-16 md:pb-20">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
           <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]" />
+            <div className="absolute top-1/4 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/20 rounded-full blur-[120px]" />
+            <div className="absolute bottom-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-secondary/20 rounded-full blur-[120px]" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
@@ -184,28 +184,28 @@ const StronyInternetoweBydgoszcz = () => {
               transition={{ duration: 0.8 }}
               className="text-center max-w-4xl mx-auto"
             >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+              <span className="inline-block px-3 sm:px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs sm:text-sm font-medium mb-4 sm:mb-6">
                 Strony WWW Bydgoszcz
               </span>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-4 sm:mb-6">
                 Strony Internetowe <span className="text-gradient">Bydgoszcz</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
                 W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
                 Oferujemy kompleksowe usługi <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenia stron www</Link> w Bydgoszczy, 
                 dostosowane do indywidualnych potrzeb klienta.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
+                <Button asChild size="lg" className="group w-full sm:w-auto">
                   <Link to="/kontakt">
                     Bezpłatna wycena
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
                   <a href="tel:+48790814814">
                     <Phone className="mr-2 h-5 w-5" />
                     +48 790 814 814
@@ -217,14 +217,14 @@ const StronyInternetoweBydgoszcz = () => {
         </section>
 
         {/* Projektowanie Section */}
-        <section className="py-16 border-b border-border/30">
+        <section className="py-12 md:py-16 border-b border-border/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-4 sm:mb-6">
                   Projektowanie Stron Internetowych w Bydgoszczy
                 </h2>
-                <div className="prose prose-invert max-w-none">
+                <div className="prose prose-invert max-w-none prose-sm sm:prose-base">
                   <p>
                     <strong>Projektowanie stron internetowych to kluczowy element w procesie tworzenia efektywnej wizytówki Twojej firmy w sieci</strong>. 
                     W Bydgoszczy nasza <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencja</Link> specjalizuje się 
@@ -251,15 +251,15 @@ const StronyInternetoweBydgoszcz = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-20 bg-card/30">
+        <section className="py-16 md:py-20 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Usługi</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              <div className="text-center mb-10 md:mb-16">
+                <span className="text-primary text-xs sm:text-sm font-medium uppercase tracking-wider mb-3 md:mb-4 block">Usługi</span>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3 sm:mb-4">
                   Tworzenie Stron WWW w Bydgoszczy
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
                   Kompleksowe usługi tworzenia stron www dla firm z Bydgoszczy - od projektu graficznego po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
                 </p>
               </div>

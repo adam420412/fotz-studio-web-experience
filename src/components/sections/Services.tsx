@@ -103,19 +103,19 @@ export function Services() {
 
       <div className="container-wide relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16 px-4">
           <FadeInView animation="scale">
-            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+            <span className="inline-block text-xs sm:text-sm font-medium text-primary uppercase tracking-wider mb-3 md:mb-4">
               {t("Nasze usługi", "Our services")}
             </span>
           </FadeInView>
           <TextReveal delay={0.1}>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 md:mb-6">
               {t("Nasze", "Our")} <span className="text-gradient-premium">{t("usługi reklamowe", "advertising services")}</span>
             </h2>
           </TextReveal>
           <FadeInView delay={0.2}>
-            <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
+            <p className="text-foreground/70 text-base md:text-lg max-w-2xl mx-auto">
               {t(
                 "Kompleksowy zakres usług marketingowych dostosowanych do Twoich celów biznesowych.",
                 "Comprehensive range of marketing services tailored to your business goals."
@@ -125,12 +125,12 @@ export function Services() {
         </div>
 
         {/* Services Grid */}
-        <StaggerContainer className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8" staggerDelay={0.15}>
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 px-4 md:px-0" staggerDelay={0.15}>
           {services.map((service, index) => (
             <StaggerItem key={index}>
               <Link
                 to={service.href}
-                className="group relative block p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/40 transition-all duration-500 overflow-hidden h-full hover-lift"
+                className="group relative block p-5 sm:p-6 md:p-8 rounded-xl md:rounded-2xl bg-card border border-border/50 hover:border-primary/40 transition-all duration-500 overflow-hidden h-full hover-lift"
               >
                 {/* Gradient Background on Hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-primary/10 via-secondary/5 to-transparent" />
@@ -142,24 +142,24 @@ export function Services() {
 
                 <div className="relative z-10">
                   {/* Icon with gradient */}
-                  <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:scale-110 bg-gradient-brand">
-                    <service.icon className="w-7 h-7 text-white" />
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-6 transition-all duration-500 group-hover:scale-110 bg-gradient-brand">
+                    <service.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl md:text-2xl font-heading font-semibold mb-3 text-foreground group-hover:text-gradient-premium transition-colors">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-heading font-semibold mb-2 sm:mb-3 text-foreground group-hover:text-gradient-premium transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-foreground/60 mb-6">
+                  <p className="text-sm sm:text-base text-foreground/60 mb-4 sm:mb-6">
                     {service.description}
                   </p>
 
                   {/* Features */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
                     {service.features.map((feature) => (
                       <span
                         key={feature}
-                        className="px-3 py-1 text-xs font-medium rounded-full bg-muted text-foreground/70"
+                        className="px-2 sm:px-3 py-1 text-xs font-medium rounded-full bg-muted text-foreground/70"
                       >
                         {feature}
                       </span>
@@ -167,7 +167,7 @@ export function Services() {
                   </div>
 
                   {/* Link */}
-                  <div className="flex items-center gap-2 text-primary font-medium">
+                  <div className="flex items-center gap-2 text-primary font-medium text-sm sm:text-base">
                     <span>{t("Dowiedz się więcej", "Learn more")}</span>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-2" />
                   </div>

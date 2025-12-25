@@ -86,7 +86,7 @@ export function Hero() {
           </motion.div>
 
           {/* Heading with Text Reveal */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-4 md:mb-6">
             <TextRevealByWord
               text={t("Agencja Marketingowa,", "Marketing Agency")}
               className="justify-center"
@@ -105,7 +105,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.8 }}
-            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10"
+            className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-8 md:mb-10 px-2"
           >
             {t(
               "Wybierz agencję marketingową, która rozumie Twoje cele biznesowe. Z nami zyskasz partnera, który zadba o Twój marketing internetowy, zwiększy przychód i zbuduje silną świadomość marki.",
@@ -118,20 +118,20 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4"
           >
             <MagneticButton strength={0.2}>
-              <Button variant="hero" size="xl" asChild className="group min-w-[220px]" data-cursor-text="Porozmawiajmy">
+              <Button variant="hero" size="xl" asChild className="group w-full sm:w-auto min-w-[200px] sm:min-w-[220px] text-sm sm:text-base" data-cursor-text="Porozmawiajmy">
                 <Link to="/kontakt">
                   {t("Bezpłatna konsultacja", "Free consultation")}
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
             </MagneticButton>
             <MagneticButton strength={0.2}>
-              <Button variant="heroOutline" size="xl" asChild className="group min-w-[220px]" data-cursor-text="Zobacz">
+              <Button variant="heroOutline" size="xl" asChild className="group w-full sm:w-auto min-w-[200px] sm:min-w-[220px] text-sm sm:text-base" data-cursor-text="Zobacz">
                 <Link to="/realizacje">
-                  <Play className="w-5 h-5" />
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5" />
                   {t("Zobacz realizacje", "See our work")}
                 </Link>
               </Button>
@@ -143,7 +143,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
-            className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-border/30"
+            className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20 pt-8 sm:pt-10 md:pt-12 border-t border-border/30"
           >
             {stats.map((stat, index) => (
               <AnimatedCounter
