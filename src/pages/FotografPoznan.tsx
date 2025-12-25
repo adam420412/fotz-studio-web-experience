@@ -132,39 +132,39 @@ const FotografPoznan = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center pt-40 pb-20 overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center pt-32 sm:pt-40 pb-16 sm:pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#75143F]/20 via-background to-background" />
-        <div className="container-wide px-6 md:px-12 relative z-10">
+        <div className="container-wide px-4 sm:px-6 md:px-12 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <span className="inline-block px-4 py-2 bg-[#75143F]/20 text-[#75143F] rounded-full text-sm font-medium mb-6">
+            <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-[#75143F]/20 text-[#75143F] rounded-full text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               Fotograf Poznań
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
               Fotografia w Poznaniu:{" "}
               <span className="bg-gradient-brand bg-clip-text text-transparent">
                 Profesjonalny Fotograf i Usługi Fotograficzne
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
               W dobie cyfrowej, fotografia staje się nieodłącznym elementem naszego życia. 
               W Poznaniu, profesjonalny fotograf oferuje szeroki wachlarz usług fotograficznych, 
               które umożliwiają uchwycenie wyjątkowych chwil w różnorodnych sesjach zdjęciowych. 
               Od sesji rodzinnych, przez zdjęcia biznesowe, aż po fotografie ciążowe i portretowe – 
               każdy znajdzie coś dla siebie.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Button variant="hero" size="lg" asChild>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+              <Button variant="hero" size="lg" asChild className="w-full sm:w-auto">
                 <Link to="/kontakt">
                   Zarezerwuj sesję
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
                 <Link to="/realizacje">Zobacz portfolio</Link>
               </Button>
             </div>
@@ -173,29 +173,29 @@ const FotografPoznan = () => {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container-wide px-6 md:px-12">
+      <section className="py-16 sm:py-20 bg-secondary/30">
+        <div className="container-wide px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nasze realizacje fotograficzne</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Nasze realizacje fotograficzne</h2>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
               Zobacz wybrane prace z naszego portfolio - od portretów artystycznych po relacje z największych wydarzeń
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
             {galleryImages.map((image, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="group relative aspect-square overflow-hidden rounded-xl"
+                transition={{ delay: index * 0.05 }}
+                className="group relative aspect-square overflow-hidden rounded-lg sm:rounded-xl"
               >
                 <img
                   src={image.src}
@@ -203,20 +203,20 @@ const FotografPoznan = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <span className="text-xs text-[#75143F] font-medium">{image.category}</span>
-                    <h3 className="text-white font-semibold">{image.title}</h3>
+                  <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4 right-2 sm:right-4">
+                    <span className="text-[10px] sm:text-xs text-[#75143F] font-medium">{image.category}</span>
+                    <h3 className="text-white text-xs sm:text-sm md:text-base font-semibold">{image.title}</h3>
                   </div>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" asChild>
+          <div className="text-center mt-8 sm:mt-12">
+            <Button variant="outline" size="lg" asChild className="w-full sm:w-auto">
               <Link to="/realizacje">
                 Zobacz więcej realizacji
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </Button>
           </div>
@@ -224,21 +224,21 @@ const FotografPoznan = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-20">
-        <div className="container-wide px-6 md:px-12">
+      <section className="py-16 sm:py-20">
+        <div className="container-wide px-4 sm:px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Usługi fotograficzne w Poznaniu</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Usługi fotograficzne w Poznaniu</h2>
+            <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
               Oferujemy szeroki zakres profesjonalnych usług fotograficznych dostosowanych do Twoich potrzeb
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -246,15 +246,15 @@ const FotografPoznan = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-2xl bg-card border border-border hover:border-[#75143F]/50 transition-colors group"
+                className="p-5 sm:p-6 rounded-xl sm:rounded-2xl bg-card border border-border hover:border-[#75143F]/50 transition-colors group"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4">
-                  <service.icon className="w-6 h-6 text-white" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-gradient-brand flex items-center justify-center mb-3 sm:mb-4">
+                  <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-[#75143F] transition-colors">
+                <h3 className="text-lg sm:text-xl font-semibold mb-1.5 sm:mb-2 group-hover:text-[#75143F] transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground">{service.description}</p>
+                <p className="text-sm sm:text-base text-muted-foreground">{service.description}</p>
               </motion.div>
             ))}
           </div>
