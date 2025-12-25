@@ -14,10 +14,10 @@ const footerLinks = {
   lokalne: [
     { name: "Strony WWW Poznań", href: "/strony-internetowe-poznan" },
     { name: "Strony WWW Warszawa", href: "/strony-internetowe-warszawa" },
+    { name: "Strony WWW Wrocław", href: "/strony-internetowe-wroclaw" },
     { name: "Social Media Poznań", href: "/social-media-poznan" },
     { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
     { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
-    { name: "Agencja Reklamowa Poznań", href: "/agencja-reklamowa-poznan" },
   ],
   firma: [
     { name: "O nas", href: "/o-nas" },
