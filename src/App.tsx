@@ -30,6 +30,7 @@ import CaseStudyLauvjah from "./pages/CaseStudyLauvjah";
 import Kontakt from "./pages/Kontakt";
 import ONas from "./pages/ONas";
 import Blog from "./pages/Blog";
+import BlogKosztStrony from "./pages/BlogKosztStrony";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
 import AgencjaMarketingowaPoznan from "./pages/AgencjaMarketingowaPoznan";
@@ -83,6 +84,7 @@ const App = () => (
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/o-nas" element={<ONas />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
             <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
