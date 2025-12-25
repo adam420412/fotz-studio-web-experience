@@ -13,10 +13,18 @@ import {
   Phone,
   CheckCircle2,
   AlertTriangle,
-  Target,
-  BarChart3,
   ArrowRight,
-  MapPin
+  MapPin,
+  Smartphone,
+  Shield,
+  Headphones,
+  FileCode,
+  Users,
+  Clock,
+  Award,
+  Key,
+  Settings,
+  BarChart
 } from "lucide-react";
 import {
   Accordion,
@@ -167,6 +175,44 @@ const StronyInternetowe = () => {
 
   const cityLinks = [
     { name: "Poznań", href: "/strony-internetowe-poznan" },
+    { name: "Warszawa", href: "/strony-internetowe-warszawa" },
+    { name: "Kraków", href: "/strony-internetowe-krakow" },
+    { name: "Wrocław", href: "/strony-internetowe-wroclaw" },
+    { name: "Gdańsk", href: "/strony-internetowe-gdansk" },
+    { name: "Łódź", href: "/strony-internetowe-lodz" },
+    { name: "Katowice", href: "/strony-internetowe-katowice" },
+    { name: "Szczecin", href: "/strony-internetowe-szczecin" },
+    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz" },
+    { name: "Lublin", href: "/strony-internetowe-lublin" },
+  ];
+
+  const includedFeatures = [
+    { icon: Palette, title: "Indywidualny projekt graficzny", desc: "Unikalny design dopasowany do Twojej marki" },
+    { icon: Smartphone, title: "Responsywność mobile", desc: "Strona działa idealnie na każdym urządzeniu" },
+    { icon: Search, title: "Przygotowanie pod SEO", desc: "Optymalizacja techniczna i strukturalna" },
+    { icon: Settings, title: "System CMS", desc: "Łatwa edycja treści bez znajomości kodu" },
+    { icon: Shield, title: "Certyfikat SSL", desc: "Bezpieczne połączenie HTTPS" },
+    { icon: Headphones, title: "Wsparcie techniczne", desc: "Pomoc przez pierwsze 3 miesiące w cenie" },
+    { icon: FileCode, title: "Pełne dane dostępowe", desc: "Otrzymujesz wszystkie dostępy do strony" },
+    { icon: BarChart, title: "Google Analytics", desc: "Monitorowanie ruchu i zachowań użytkowników" },
+  ];
+
+  const whyUs = [
+    { icon: Award, title: "600+ zrealizowanych projektów", desc: "Wieloletnie doświadczenie w tworzeniu stron dla firm z każdej branży." },
+    { icon: Users, title: "Zespół specjalistów", desc: "Graficy, programiści i marketerzy pod jednym dachem. Zero outsourcingu." },
+    { icon: Clock, title: "Terminowość realizacji", desc: "Większość projektów kończymy przed zadeklarowanym terminem." },
+    { icon: Key, title: "Pełna transparentność", desc: "Jasne ceny, przekazanie wszystkich dostępów, brak ukrytych kosztów." },
+    { icon: Headphones, title: "Stały kontakt", desc: "Nie zostawiamy klientów bez opieki. Odpowiadamy nawet po latach." },
+    { icon: Shield, title: "Gwarancja i bezpieczeństwo", desc: "12 miesięcy gwarancji, automatyczne aktualizacje, zabezpieczenia." },
+  ];
+
+  const processSteps = [
+    { step: "01", title: "Formalności", desc: "Wycena, umowa, zaliczka – szybko i przejrzyście." },
+    { step: "02", title: "Koncepcja", desc: "Opracowanie szkicu i struktury strony." },
+    { step: "03", title: "Projekt graficzny", desc: "Wizualizacja w Figma do akceptacji." },
+    { step: "04", title: "Programowanie", desc: "Kodowanie, testy na różnych urządzeniach." },
+    { step: "05", title: "Publikacja", desc: "Uruchomienie strony na serwerze." },
+    { step: "06", title: "Szkolenie i przekazanie", desc: "Instruktaż, dane dostępowe, wsparcie." },
   ];
 
   return (
@@ -391,6 +437,95 @@ const StronyInternetowe = () => {
           </div>
         </section>
 
+        {/* Section: Co zawiera każda strona */}
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">W cenie</span>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Co zawiera każda tworzona przez nas strona?
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Bez ukrytych kosztów – te elementy są standardem w każdym projekcie.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {includedFeatures.map((feature, index) => (
+                <FadeInView key={index} delay={index * 0.05}>
+                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-primary/20 transition-all h-full">
+                    <feature.icon className="w-8 h-8 text-primary mb-4" />
+                    <h3 className="font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-sm text-muted-foreground">{feature.desc}</p>
+                  </div>
+                </FadeInView>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Dlaczego warto */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Wyróżniki</span>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Dlaczego warto nam zlecić stworzenie strony?
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  To nie są puste obietnice – to nasza codzienna praktyka.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {whyUs.map((item, index) => (
+                <FadeInView key={index} delay={index * 0.1}>
+                  <div className="p-8 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5">
+                      <item.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.desc}</p>
+                  </div>
+                </FadeInView>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Etapy realizacji */}
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Etapy realizacji strony internetowej
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Przejrzysty proces od pierwszego kontaktu do uruchomienia strony.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {processSteps.map((item, index) => (
+                <FadeInView key={index} delay={index * 0.1}>
+                  <div className="relative p-6 rounded-xl bg-background border border-border/50">
+                    <div className="text-5xl font-bold text-primary/20 mb-3">{item.step}</div>
+                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  </div>
+                </FadeInView>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Section 5: Cennik */}
         <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4">
@@ -464,6 +599,55 @@ const StronyInternetowe = () => {
           </div>
         </section>
 
+        {/* Section: Miasta w Polsce */}
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Zasięg</span>
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Tworzymy strony internetowe w całej Polsce
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Działamy zdalnie i lokalnie. Współpracujemy z firmami z największych miast w Polsce.
+                  Poznaj nasze lokalne usługi.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                {cityLinks.map((city, index) => (
+                  <FadeInView key={index} delay={index * 0.05}>
+                    {city.href === "/strony-internetowe-poznan" ? (
+                      <Link 
+                        to={city.href}
+                        className="flex items-center justify-center gap-2 px-4 py-4 bg-primary/10 border border-primary/30 rounded-xl text-sm font-medium hover:bg-primary/20 transition-all group"
+                      >
+                        <MapPin className="w-4 h-4 text-primary" />
+                        <span>{city.name}</span>
+                      </Link>
+                    ) : (
+                      <div 
+                        className="flex items-center justify-center gap-2 px-4 py-4 bg-background border border-border/50 rounded-xl text-sm text-muted-foreground cursor-default"
+                        title="Strona w przygotowaniu"
+                      >
+                        <MapPin className="w-4 h-4" />
+                        <span>{city.name}</span>
+                      </div>
+                    )}
+                  </FadeInView>
+                ))}
+              </div>
+              <FadeInView delay={0.5}>
+                <p className="text-center text-sm text-muted-foreground mt-8">
+                  Strona dla Poznania jest już dostępna. Pozostałe miasta wkrótce.
+                </p>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
         {/* Section 7: CTA */}
         <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
           <div className="container mx-auto px-4">
@@ -514,6 +698,55 @@ const StronyInternetowe = () => {
                 )}
               </div>
             </FadeInView>
+          </div>
+        </section>
+
+        {/* SEO Content Section */}
+        <section className="py-16 border-t border-border/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <h2 className="text-2xl font-heading font-bold mb-6 text-foreground">
+                  Projektowanie strony internetowej - Tworzenie strony www
+                </h2>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  Tworzenie profesjonalnych stron internetowych może wydawać się skomplikowane, ale dzięki odpowiedniemu 
+                  systemowi CMS i doświadczonemu zespołowi, możliwe jest szybkie i efektywne projektowanie. W Fotz Studio 
+                  zajmujemy się kompleksowym tworzeniem stron www – od projektu graficznego, przez wybór technologii, 
+                  aż po zarządzanie treścią i pozycjonowanie.
+                </p>
+                
+                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
+                  Jak zaprojektować skuteczną stronę www?
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  Na początku projektowania strony internetowej ważne jest, aby jasno określić cel twojej strony. 
+                  Czy ma to być profesjonalna strona firmowa, blog, sklep internetowy, czy bardziej zaawansowany 
+                  portal interaktywny? Po określeniu celu, dobieramy odpowiednią technologię – WordPress, Webflow, 
+                  Shopify lub dedykowane rozwiązania w React.
+                </p>
+                
+                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
+                  Optymalizacja strony pod kątem SEO
+                </h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  SEO jest kluczowym elementem, jeśli chcesz, aby twoja strona była łatwo znajdywana przez 
+                  potencjalnych klientów. Dbamy o odpowiedni dobór słów kluczowych, wysoką jakość treści, 
+                  szybkość ładowania oraz meta tagi, przyjazne URL-e i linkowanie wewnętrzne. Schema markup 
+                  (dane strukturalne) pomagają robotom wyszukiwarek lepiej zrozumieć strukturę twojej witryny.
+                </p>
+                
+                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
+                  WordPress, Webflow czy dedykowane rozwiązania?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  WordPress to jeden z najpopularniejszych systemów CMS – łatwy w obsłudze, z ogromną liczbą 
+                  darmowych szablonów i wtyczek. Webflow oferuje większą kontrolę nad designem bez znajomości kodu. 
+                  Dla zaawansowanych projektów tworzymy dedykowane rozwiązania w React i Next.js. Dobieramy 
+                  technologię do potrzeb projektu i oczekiwań klienta.
+                </p>
+              </FadeInView>
+            </div>
           </div>
         </section>
       </Layout>
