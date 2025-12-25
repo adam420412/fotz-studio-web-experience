@@ -28,7 +28,12 @@ import {
   LineChart,
   ThumbsUp,
   Megaphone,
-  Palette
+  Palette,
+  Sparkles,
+  Rocket,
+  Star,
+  Instagram,
+  Play
 } from "lucide-react";
 import {
   Accordion,
@@ -39,10 +44,14 @@ import {
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali.png";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 import sookarImg from "@/assets/portfolio/sookar.jpg";
+import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
+import gierkilmg from "@/assets/portfolio/gierki.png";
+import stageplanImg from "@/assets/portfolio/stageplan.jpg";
 
 const SocialMedia = () => {
   const problems = [
@@ -54,7 +63,7 @@ const SocialMedia = () => {
     { 
       icon: TrendingUp, 
       title: "Konkurencja Cię wyprzedza", 
-      desc: "Inne firmy z branży mają silniejszą obecność w social mediach i przyciągają Twoich potencjalnych klientów." 
+      desc: "Inne firmy z branży mają silniejszą obecność w social mediach i przyciągają Twoich klientów." 
     },
     { 
       icon: Target, 
@@ -92,9 +101,10 @@ const SocialMedia = () => {
   ];
 
   const results = [
-    { value: "+340%", label: "Średni wzrost zaangażowania", desc: "w ciągu 6 miesięcy współpracy" },
+    { value: "+340%", label: "Wzrost zaangażowania", desc: "w ciągu 6 miesięcy współpracy" },
     { value: "2.5M+", label: "Wygenerowanych zasięgów", desc: "dla naszych klientów miesięcznie" },
-    { value: "+180%", label: "Wzrost liczby obserwujących", desc: "średnio w pierwszym roku" },
+    { value: "+180%", label: "Więcej obserwujących", desc: "średnio w pierwszym roku" },
+    { value: "50+", label: "Aktywnych klientów", desc: "w stałej obsłudze social media" },
   ];
 
   const pricing = [
@@ -129,51 +139,80 @@ const SocialMedia = () => {
     },
     {
       question: "Czy warto inwestować w reklamy na Facebooku i Instagramie?",
-      answer: "Tak – reklama w social media to jeden z najefektywniejszych kanałów dotarcia do potencjalnych klientów. Dzięki zaawansowanemu targetowaniu Meta możesz precyzyjnie docierać do swojej grupy docelowej, mierzyć konwersje i optymalizować kampanie, co przekłada się na lepszy zwrot z inwestycji."
+      answer: "Tak – reklama w social media to jeden z najefektywniejszych kanałów dotarcia do potencjalnych klientów. Dzięki zaawansowanemu targetowaniu Meta możesz precyzyjnie docierać do swojej grupy docelowej, mierzyć konwersje i optymalizować kampanie."
     },
     {
       question: "Co obejmuje usługa prowadzenia social mediów?",
-      answer: "Usługa obejmuje: opracowanie strategii, tworzenie treści (grafiki, video, copy), planowanie i publikację postów, moderację komentarzy i wiadomości, prowadzenie kampanii reklamowych oraz regularne raportowanie wyników. Zakres dostosowujemy do potrzeb i budżetu klienta."
+      answer: "Usługa obejmuje: opracowanie strategii, tworzenie treści (grafiki, video, copy), planowanie i publikację postów, moderację komentarzy i wiadomości, prowadzenie kampanii reklamowych oraz regularne raportowanie wyników."
     },
     {
       question: "Jak agencja prowadzi Facebooka dla firm?",
-      answer: "Prowadzenie Facebooka obejmuje: tworzenie strategii treści, harmonogramu publikacji, kreacji graficznych, prowadzenie kampanii reklamowych, moderację komentarzy i wiadomości oraz analizę wyników. Dbamy o spójny wizerunek i budujemy zaangażowaną społeczność wokół Twojej marki."
+      answer: "Prowadzenie Facebooka obejmuje: tworzenie strategii treści, harmonogramu publikacji, kreacji graficznych, prowadzenie kampanii reklamowych, moderację komentarzy i wiadomości oraz analizę wyników."
     },
     {
       question: "Jakie raporty przygotowuje agencja social media?",
-      answer: "Przygotowujemy szczegółowe raporty miesięczne zawierające: zasięgi, zaangażowanie (polubienia, komentarze, udostępnienia), wzrost obserwujących, wyniki kampanii reklamowych (CPC, CTR, konwersje) oraz rekomendacje na kolejny okres. Raporty opieramy na danych, nie domysłach."
+      answer: "Przygotowujemy szczegółowe raporty miesięczne zawierające: zasięgi, zaangażowanie, wzrost obserwujących, wyniki kampanii reklamowych (CPC, CTR, konwersje) oraz rekomendacje na kolejny okres."
     },
     {
       question: "Jak wygląda wycena usług agencji social media?",
-      answer: "Wycena zależy od zakresu usług: liczby platform, częstotliwości publikacji, czy prowadzonych kampanii reklamowych. Dla małych i średnich firm proponujemy pakiety od 2000 zł/mies. Ostateczna cena uwzględnia cele marketingowe i specyfikę branży."
+      answer: "Wycena zależy od zakresu usług: liczby platform, częstotliwości publikacji, czy prowadzonych kampanii reklamowych. Dla małych i średnich firm proponujemy pakiety od 2000 zł/mies."
     },
     {
       question: "Kreatywny content czy sprzedażowy – co wybrać?",
-      answer: "Najskuteczniejsze strategie łączą oba podejścia. Kreatywny content buduje świadomość i wizerunek marki, angażuje społeczność. Content sprzedażowy z kampaniami konwersyjnymi generuje leady i sprzedaż. Proporcje dobieramy do Twoich celów biznesowych."
+      answer: "Najskuteczniejsze strategie łączą oba podejścia. Kreatywny content buduje świadomość i wizerunek marki. Content sprzedażowy z kampaniami konwersyjnymi generuje leady i sprzedaż."
     },
   ];
 
-  const caseStudies = [
+  // Featured case studies
+  const featuredCaseStudies = [
     {
       title: "Fabryka Virali",
       category: "Strategia social media",
       result: "3.2M zasięgów/mies.",
       link: "/realizacje/fabryka-virali",
-      image: fabrykaViraliImg
+      image: fabrykaViraliImg,
+      desc: "Kompleksowa strategia contentowa dla marki viralowej."
+    },
+    {
+      title: "Enea Stadion",
+      category: "Instagram & Facebook",
+      result: "+520% zaangażowania",
+      link: "/realizacje/enea-stadion",
+      image: eneaStadionImg,
+      desc: "Obsługa social mediów dla największego stadionu w Poznaniu."
     },
     {
       title: "Lauvjah",
       category: "Instagram & TikTok",
       result: "+450% obserwujących",
       link: "/realizacje/lauvjah",
-      image: lauvjahImg
+      image: lauvjahImg,
+      desc: "Budowanie marki osobistej w social mediach."
     },
+  ];
+
+  // More case studies
+  const moreCaseStudies = [
     {
       title: "Sookar",
       category: "Facebook Ads",
       result: "ROAS 8.5x",
       link: "/realizacje/sookar",
       image: sookarImg
+    },
+    {
+      title: "Gierki",
+      category: "Strategia TikTok",
+      result: "+2M wyświetleń",
+      link: "/realizacje/gierki",
+      image: gierkilmg
+    },
+    {
+      title: "Stageplan",
+      category: "LinkedIn B2B",
+      result: "+340% leadów",
+      link: "/realizacje/stageplan",
+      image: stageplanImg
     },
   ];
 
@@ -220,12 +259,10 @@ const SocialMedia = () => {
   ];
 
   const platforms = [
-    { name: "Facebook", desc: "Budowanie społeczności, kampanie reklamowe, grupy" },
-    { name: "Instagram", desc: "Content wizualny, Reels, Stories, influencerzy" },
-    { name: "LinkedIn", desc: "Marketing B2B, employer branding, networking" },
-    { name: "TikTok", desc: "Viralowy content, młodsza grupa docelowa" },
-    { name: "YouTube", desc: "Długi format video, tutoriale, vlogi" },
-    { name: "Twitter/X", desc: "Real-time marketing, obsługa klienta, news" },
+    { name: "Facebook", desc: "Budowanie społeczności, kampanie reklamowe, grupy", icon: ThumbsUp },
+    { name: "Instagram", desc: "Content wizualny, Reels, Stories, influencerzy", icon: Camera },
+    { name: "LinkedIn", desc: "Marketing B2B, employer branding, networking", icon: Users },
+    { name: "TikTok", desc: "Viralowy content, młodsza grupa docelowa", icon: Play },
   ];
 
   return (
@@ -260,11 +297,11 @@ const SocialMedia = () => {
 
       <Layout>
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
           <div className="absolute inset-0 opacity-30">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[120px]" />
+            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[150px]" />
+            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-secondary/20 rounded-full blur-[120px]" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
@@ -272,82 +309,117 @@ const SocialMedia = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
+              className="text-center max-w-5xl mx-auto"
             >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+              <motion.span 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.2 }}
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"
+              >
+                <Sparkles className="w-4 h-4" />
                 Agencja Social Media
-              </span>
+              </motion.span>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
                 <TextReveal>
                   Marketing w <span className="text-gradient">Social Mediach</span> z Agencją
                 </TextReveal>
               </h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Budujemy silne marki w mediach społecznościowych. Strategia, kreatywny content, 
-                kampanie reklamowe. Docieramy do Twoich klientów tam, gdzie spędzają czas.
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+                Budujemy silne marki w mediach społecznościowych. <span className="text-foreground font-medium">Strategia, kreatywny content, kampanie reklamowe.</span> Docieramy do Twoich klientów tam, gdzie spędzają czas.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <Button asChild size="lg" className="group text-lg px-8 py-6">
                   <Link to="/kontakt">
+                    <Rocket className="mr-2 h-5 w-5" />
                     Bezpłatna konsultacja
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
                   <a href="tel:+48790814814">
                     <Phone className="mr-2 h-5 w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
               </div>
+
+              {/* Quick stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                {results.map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 + index * 0.1 }}
+                    className="text-center p-4"
+                  >
+                    <div className="text-2xl md:text-3xl font-bold text-gradient">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Intro Section */}
-        <section className="py-16 border-b border-border/30">
+        {/* Section: Platformy */}
+        <section className="py-12 border-b border-border/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  W dzisiejszym cyfrowym świecie, <strong className="text-foreground">obecność w social mediach jest kluczowa dla sukcesu każdej firmy</strong>. 
-                  Zastanawiasz się, jak skutecznie wykorzystać potencjał Facebooka, Instagrama, LinkedIna czy TikToka? 
-                  Agencja social media to partner, który pomoże Ci zbudować silną markę w social mediach i dotrzeć do serc Twojej grupy docelowej.
-                </p>
-              </FadeInView>
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+              <span className="text-sm text-muted-foreground uppercase tracking-wider">Prowadzimy:</span>
+              {platforms.map((platform, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <platform.icon className="w-5 h-5 text-primary" />
+                  <span className="font-medium">{platform.name}</span>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Section: Co to jest agencja social media */}
+        {/* Intro Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
               <FadeInView>
                 <div>
-                  <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">O nas</span>
+                  <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                    <Heart className="w-4 h-4" />
+                    O nas
+                  </span>
                   <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                    Co to jest agencja social media?
+                    Co to jest <span className="text-gradient">agencja social media?</span>
                   </h2>
-                  <p className="text-muted-foreground mb-6">
+                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                     <strong className="text-foreground">Agencja social media to zespół specjalistów, którzy kompleksowo zajmują się marketingiem w social mediach dla firm.</strong> 
-                    Oferujemy usługi od opracowania strategii, przez prowadzenie profili w social mediach, tworzenie angażujących treści, 
-                    aż po reklamę w social media i analizę wyników.
+                    Oferujemy usługi od opracowania strategii, przez prowadzenie profili, tworzenie angażujących treści, 
+                    aż po reklamę i analizę wyników.
                   </p>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground leading-relaxed">
                     Robimy social media z pasją, dostosowując działania do specyfiki Twojej marki i branży. 
-                    Profesjonalizm i kreatywność to nasze atuty, dzięki którym Twoja komunikacja w mediach społecznościowych będzie efektywna.
+                    Profesjonalizm i kreatywność to nasze atuty.
                   </p>
                 </div>
               </FadeInView>
               
               <FadeInView delay={0.2}>
                 <div className="grid grid-cols-2 gap-4">
-                  {platforms.slice(0, 4).map((platform, index) => (
-                    <div key={index} className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all">
+                  {platforms.map((platform, index) => (
+                    <div key={index} className="p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all group">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                        <platform.icon className="w-6 h-6 text-primary" />
+                      </div>
                       <h4 className="font-semibold mb-2">{platform.name}</h4>
                       <p className="text-sm text-muted-foreground">{platform.desc}</p>
                     </div>
@@ -359,15 +431,18 @@ const SocialMedia = () => {
         </section>
 
         {/* Section: Problem klienta */}
-        <section className="py-20 bg-card/30">
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Problem</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego Twoja marka nie przebija się w social mediach?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Eye className="w-4 h-4" />
+                  Problem
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Dlaczego Twoja marka <span className="text-gradient">nie przebija się</span> w social mediach?
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Polacy spędzają średnio 2 godziny dziennie w social mediach. Jeśli Cię tam nie ma, tracisz kontakt z klientami.
                 </p>
               </div>
@@ -376,8 +451,10 @@ const SocialMedia = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {problems.map((problem, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-destructive/30 transition-all h-full">
-                    <problem.icon className="w-10 h-10 text-destructive mb-4" />
+                  <div className="p-6 rounded-2xl bg-background border border-border/50 hover:border-destructive/30 transition-all h-full group">
+                    <div className="w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center mb-4 group-hover:bg-destructive/20 transition-colors">
+                      <problem.icon className="w-6 h-6 text-destructive" />
+                    </div>
                     <h3 className="text-lg font-semibold mb-2">{problem.title}</h3>
                     <p className="text-sm text-muted-foreground">{problem.desc}</p>
                   </div>
@@ -388,16 +465,19 @@ const SocialMedia = () => {
         </section>
 
         {/* Section: Co robimy */}
-        <section className="py-20">
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Rozwiązanie</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak prowadzimy social media dla firm?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Sparkles className="w-4 h-4" />
+                  Rozwiązanie
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Jak prowadzimy <span className="text-gradient">social media dla firm?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Skuteczny social media marketing to strategia, kreatywność i analiza danych. Działamy kompleksowo.
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Skuteczny social media marketing to strategia, kreatywność i analiza danych. <strong className="text-foreground">Działamy kompleksowo.</strong>
                 </p>
               </div>
             </FadeInView>
@@ -405,12 +485,132 @@ const SocialMedia = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {whatWeDo.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-8 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                      <item.icon className="w-7 h-7 text-primary" />
+                  <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all group">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                      <item.icon className="w-8 h-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.desc}</p>
+                    <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                  </div>
+                </FadeInView>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Featured Case Studies */}
+        <section className="py-24 bg-gradient-to-b from-background via-primary/5 to-background">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Star className="w-4 h-4" />
+                  Najlepsze realizacje
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Kampanie, które <span className="text-gradient">zbudowały marki</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Zobacz, jak pomagamy firmom budować silną obecność w social mediach.
+                </p>
+              </div>
+            </FadeInView>
+
+            {/* Featured - large cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+              {featuredCaseStudies.map((study, index) => (
+                <FadeInView key={index} delay={index * 0.15}>
+                  <Link to={study.link} className="group block h-full">
+                    <div className="rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
+                      <div className="aspect-[16/10] overflow-hidden relative">
+                        <img 
+                          src={study.image} 
+                          alt={study.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                      <div className="p-6 flex-grow flex flex-col">
+                        <span className="text-xs text-primary font-medium uppercase tracking-wider">{study.category}</span>
+                        <h3 className="text-xl font-bold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
+                        <p className="text-sm text-muted-foreground mb-4">{study.desc}</p>
+                        <div className="flex items-center justify-between mt-auto pt-4 border-t border-border/30">
+                          <span className="text-lg font-bold text-gradient">{study.result}</span>
+                          <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                </FadeInView>
+              ))}
+            </div>
+
+            {/* More case studies */}
+            <FadeInView>
+              <h3 className="text-xl font-semibold text-center mb-8">Więcej realizacji</h3>
+            </FadeInView>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              {moreCaseStudies.map((study, index) => (
+                <FadeInView key={index} delay={index * 0.1}>
+                  <Link to={study.link} className="group block">
+                    <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden">
+                      <div className="aspect-video overflow-hidden">
+                        <img 
+                          src={study.image} 
+                          alt={study.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-4">
+                        <span className="text-xs text-primary font-medium uppercase tracking-wider">{study.category}</span>
+                        <h4 className="font-semibold mt-1 group-hover:text-primary transition-colors">{study.title}</h4>
+                        <span className="text-sm text-muted-foreground">{study.result}</span>
+                      </div>
+                    </div>
+                  </Link>
+                </FadeInView>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <Button asChild variant="outline" size="lg">
+                <Link to="/realizacje">
+                  Zobacz wszystkie realizacje
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Co zawiera */}
+        <section className="py-24 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <CheckCircle2 className="w-4 h-4" />
+                  W pakiecie
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Co obejmuje usługa <span className="text-gradient">"robimy social media"?</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Kompleksowa obsługa social mediów to wiele elementów. Oto, co dostajesz w ramach współpracy.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {includedFeatures.map((feature, index) => (
+                <FadeInView key={index} delay={index * 0.05}>
+                  <div className="p-6 rounded-2xl bg-background border border-border/50 hover:border-primary/20 transition-all h-full text-center group">
+                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                      <feature.icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <h3 className="font-semibold mb-2">{feature.title}</h3>
+                    <p className="text-sm text-muted-foreground">{feature.desc}</p>
                   </div>
                 </FadeInView>
               ))}
@@ -419,25 +619,62 @@ const SocialMedia = () => {
         </section>
 
         {/* Section: Dlaczego warto */}
-        <section className="py-20 bg-card/30">
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Korzyści</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego warto współpracować z agencją social media?
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Award className="w-4 h-4" />
+                  Wyróżniki
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Dlaczego warto <span className="text-gradient">współpracować z agencją?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Zamiast zatrudniać zespół in-house, zyskujesz dostęp do pełnego zestawu kompetencji.
                 </p>
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {whyUs.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full">
-                    <item.icon className="w-10 h-10 text-primary mb-4" />
+                  <div className="p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full group">
+                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                      <item.icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.desc}</p>
+                  </div>
+                </FadeInView>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Proces */}
+        <section className="py-24 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Rocket className="w-4 h-4" />
+                  Proces
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Jak wygląda <span className="text-gradient">współpraca?</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Przejrzysty proces od briefu do mierzalnych wyników.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              {processSteps.map((item, index) => (
+                <FadeInView key={index} delay={index * 0.1}>
+                  <div className="relative p-6 rounded-2xl bg-background border border-border/50 hover:border-primary/20 transition-all group">
+                    <div className="text-6xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors mb-3">{item.step}</div>
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
                   </div>
@@ -447,212 +684,44 @@ const SocialMedia = () => {
           </div>
         </section>
 
-        {/* Section: Efekty */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Efekty</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Wyniki naszych kampanii
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Efekty mierzymy w zasięgach, zaangażowaniu i – najważniejsze – w konwersjach i sprzedaży.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {results.map((result, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="text-center p-8 rounded-xl bg-card border border-border/50">
-                    <div className="text-4xl md:text-5xl font-bold text-gradient mb-2">
-                      {result.value}
-                    </div>
-                    <div className="text-lg font-medium mb-1">{result.label}</div>
-                    <p className="text-sm text-muted-foreground">{result.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Section: Case Studies */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Realizacje</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Przykłady skutecznych kampanii
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Zobacz, jak pomagamy firmom budować silną obecność w social mediach.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <Link 
-                    to={study.link}
-                    className="group block rounded-xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all"
-                  >
-                    <div className="aspect-video overflow-hidden">
-                      <img 
-                        src={study.image} 
-                        alt={study.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <span className="text-primary text-sm font-medium">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-1 mb-2 group-hover:text-primary transition-colors">
-                        {study.title}
-                      </h3>
-                      <p className="text-muted-foreground">{study.result}</p>
-                    </div>
-                  </Link>
-                </FadeInView>
-              ))}
-            </div>
-
-            <FadeInView delay={0.3}>
-              <div className="text-center mt-12">
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/realizacje">
-                    Zobacz wszystkie realizacje
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-              </div>
-            </FadeInView>
-          </div>
-        </section>
-
-        {/* Section: Co zawiera */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">W pakiecie</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Co obejmuje usługa „robimy social media"?
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowa obsługa social mediów to wiele elementów. Oto, co dostajesz w ramach współpracy.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {includedFeatures.map((feature, index) => (
-                <FadeInView key={index} delay={index * 0.05}>
-                  <div className="p-6 rounded-xl bg-card border border-border/50 text-center hover:border-primary/30 transition-all h-full">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                      <feature.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="font-semibold mb-1">{feature.title}</h3>
-                    <p className="text-sm text-muted-foreground">{feature.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Section: Proces */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak wygląda współpraca z agencją social media?
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Przejrzysty proces od briefu do mierzalnych wyników.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {processSteps.map((step, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="relative p-8 rounded-xl bg-background border border-border/50">
-                    <span className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
-                      {step.step}
-                    </span>
-                    <h3 className="text-xl font-semibold mb-2 mt-2">{step.title}</h3>
-                    <p className="text-muted-foreground">{step.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Section: Platformy */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Platformy</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Social media marketing na różnych platformach
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Każda platforma ma swoją specyfikę. Dostosowujemy strategię do charakteru kanału.
-                </p>
-              </div>
-            </FadeInView>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {platforms.map((platform, index) => (
-                <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all">
-                    <h3 className="text-xl font-semibold mb-2">{platform.name}</h3>
-                    <p className="text-muted-foreground">{platform.desc}</p>
-                  </div>
-                </FadeInView>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Section: Cennik */}
-        <section className="py-20 bg-card/30">
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Wycena usług agencji social media
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  💰 Cennik
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Ile kosztuje <span className="text-gradient">prowadzenie social mediów?</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                   Transparentne ceny dopasowane do zakresu usług i potrzeb Twojej firmy.
                 </p>
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {pricing.map((plan, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {pricing.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-xl border h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30' : 'bg-background border-border/50'}`}>
-                    <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">{plan.desc}</p>
-                    <div className="text-2xl font-bold text-primary mb-6">{plan.price}</div>
-                    <ul className="space-y-3 flex-grow">
-                      {plan.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <div className={`p-8 rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
+                    {index === 1 && (
+                      <span className="inline-flex items-center gap-1 text-xs font-medium text-primary uppercase mb-4">
+                        <Star className="w-3 h-3" /> Najpopularniejszy
+                      </span>
+                    )}
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground mb-4">{item.desc}</p>
+                    <div className="text-3xl font-bold text-gradient mb-6">{item.price}</div>
+                    <ul className="space-y-3 mb-8 flex-grow">
+                      {item.features.map((feature, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
                           <span className="text-sm">{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button asChild className="w-full mt-6" variant={index === 1 ? "default" : "outline"}>
+                    <Button asChild variant={index === 1 ? "default" : "outline"} className="w-full">
                       <Link to="/kontakt">Zapytaj o ofertę</Link>
                     </Button>
                   </div>
@@ -661,29 +730,62 @@ const SocialMedia = () => {
             </div>
 
             <FadeInView delay={0.3}>
-              <p className="text-center text-muted-foreground mt-8 max-w-2xl mx-auto">
-                * Ceny orientacyjne. Ostateczna wycena zależy od zakresu usług, branży i specyfiki projektu. 
-                Budżet reklamowy doliczany osobno.
+              <p className="text-center text-sm text-muted-foreground mt-8 max-w-2xl mx-auto">
+                * Ceny orientacyjne. Ostateczna wycena zależy od zakresu usług. Budżet reklamowy doliczany osobno.
               </p>
             </FadeInView>
           </div>
         </section>
 
-        {/* Section: Miasta */}
-        <section className="py-20">
+        {/* Section: FAQ */}
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <div className="text-center mb-12">
-                <div className="flex items-center justify-center gap-2 mb-4">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  <span className="text-primary text-sm font-medium uppercase tracking-wider">Lokalizacje</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Obsługujemy firmy w całej Polsce
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  ❓ FAQ
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Często zadawane <span className="text-gradient">pytania</span>
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Jako agencja social media działamy zdalnie, ale znamy specyfikę lokalnych rynków. 
-                  Sprawdź naszą ofertę w Twoim mieście.
+              </div>
+            </FadeInView>
+
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqItems.map((item, index) => (
+                  <AccordionItem 
+                    key={index} 
+                    value={`item-${index}`}
+                    className="bg-background rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
+                  >
+                    <AccordionTrigger className="text-left hover:no-underline py-5">
+                      <span className="font-medium">{item.question}</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-5">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Miasta */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <MapPin className="w-4 h-4" />
+                  Zasięg
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Obsługujemy firmy <span className="text-gradient">w całej Polsce</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Jako agencja social media działamy zdalnie, ale znamy specyfikę lokalnych rynków.
                 </p>
               </div>
             </FadeInView>
@@ -714,128 +816,31 @@ const SocialMedia = () => {
           </div>
         </section>
 
-        {/* Section: FAQ */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">FAQ</span>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Najczęściej zadawane pytania
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na pytania, które najczęściej słyszymy od klientów.
-                </p>
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.2}>
-              <div className="max-w-3xl mx-auto">
-                <Accordion type="single" collapsible className="space-y-4">
-                  {faqItems.map((item, index) => (
-                    <AccordionItem 
-                      key={index} 
-                      value={`item-${index}`}
-                      className="bg-background rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
-                    >
-                      <AccordionTrigger className="text-left hover:no-underline py-6">
-                        <span className="font-semibold pr-4">{item.question}</span>
-                      </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground pb-6">
-                        {item.answer}
-                      </AccordionContent>
-                    </AccordionItem>
-                  ))}
-                </Accordion>
-              </div>
-            </FadeInView>
+        {/* Section: CTA */}
+        <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[150px]" />
           </div>
-        </section>
-
-        {/* Section: SEO Content */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto prose prose-invert">
-              <FadeInView>
-                <h2>Budowanie marki w social mediach</h2>
-                
-                <h3>Jak obserwować i analizować trendy?</h3>
-                <p>
-                  <strong>Agencja social media wie, jak ważne jest monitorowanie trendów</strong>, aby Twoja marka była zawsze na czasie. 
-                  Śledzimy, co dzieje się w social mediach, analizujemy dane i dostosowujemy strategie marketingowe do zmieniających się 
-                  potrzeb Twojej grupy docelowej. Wykorzystujemy narzędzia do monitoringu mediów społecznościowych, aby być na bieżąco 
-                  z najnowszymi trendami i rekomendacjami. Dzięki temu Twoja komunikacja w kanałach social będzie zawsze aktualna i angażująca.
-                </p>
-
-                <h3>Tworzenie spójnej strategii dla marki</h3>
-                <p>
-                  <strong>Tworzenie spójnej strategii to podstawa efektywnego marketingu w social mediach.</strong> 
-                  Agencja social media opracowuje kompleksową strategię, która uwzględnia specyfikę Twojej marki, branży i grupy docelowej. 
-                  Definiujemy cele biznesowe, dobieramy odpowiednie kanały social media i tworzymy harmonogram publikacji. 
-                  Dbamy o to, aby Twoja komunikacja w social mediach była spójna z wizerunkiem marki i przekazywała jasne i klarowne przesłanie.
-                </p>
-
-                <h3>Rola zespołu specjalistów w obsłudze social</h3>
-                <p>
-                  <strong>Profesjonalna obsługa social to zasługa zespołu specjalistów.</strong> 
-                  Agencja social media zatrudnia doświadczonych specjalistów od marketingu, copywritingu, grafiki i reklamy w social mediach. 
-                  To zespół ludzi, którzy z pasją podchodzą do każdego projektu i dbają o to, aby Twoje profile w social mediach były 
-                  prowadzone na najwyższym poziomie. Dzięki temu możesz skupić się na prowadzeniu swojego biznesu, mając pewność, 
-                  że Twoja obecność w social mediach jest w dobrych rękach.
-                </p>
-
-                <h2>Przyszłość marketingu w social mediach</h2>
-                
-                <h3>Jakie są przyszłe trendy w marketingu social media?</h3>
-                <p>
-                  <strong>Przyszłość marketingu w social mediach to przede wszystkim personalizacja i automatyzacja.</strong> 
-                  Agencja social media śledzi najnowsze trendy i wdraża innowacyjne rozwiązania, aby Twoja marka była zawsze krok przed konkurencją. 
-                  Wykorzystujemy sztuczną inteligencję i machine learning do personalizacji przekazu marketingowego i automatyzacji procesów. 
-                  Warto obserwować platformy takie jak TikTok, które zyskują na znaczeniu, oraz rozwijające się formaty jak Reels czy krótkie video.
-                </p>
-
-                <h3>Dlaczego warto inwestować w agencję social media?</h3>
-                <p>
-                  <strong>Inwestycja w agencję social media to strategiczny krok, który przynosi wymierne korzyści.</strong> 
-                  Agencja social media dysponuje wiedzą, doświadczeniem i narzędziami, które pozwalają na efektywne prowadzenie social mediów. 
-                  Zamiast tracić czas i pieniądze na samodzielne próby, możesz skorzystać z usług agencji, która zapewni obsługę social 
-                  na najwyższym poziomie. Agencja pomoże Ci zaoszczędzić czas, zwiększyć rozpoznawalność marki i pozyskać nowych klientów 
-                  dzięki reklamie w mediach społecznościowych.
-                </p>
-
-                <h3>Wnioski i rekomendacje dla firm</h3>
-                <p>
-                  <strong>Obecność w social mediach to konieczność dla każdej firmy, która chce odnieść sukces w dzisiejszym cyfrowym świecie.</strong> 
-                  Współpraca z agencją social media to gwarancja profesjonalizmu, kreatywności i skuteczności. 
-                  Pamiętaj o regularnym monitoringu wyników i dostosowywaniu strategii do zmieniających się potrzeb Twojej grupy docelowej. 
-                  Agencja social media pomoże Ci zbudować silną markę w social mediach i dotrzeć do serc Twoich potencjalnych klientów. 
-                  Prowadzenie Facebooka czy Instagrama to nasza specjalność.
-                </p>
-              </FadeInView>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-b from-card/30 to-background">
-          <div className="container mx-auto px-4">
+          
+          <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Gotowy na profesjonalne social media?
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Gotowy na <span className="text-gradient">silną markę</span> w social mediach?
                 </h2>
-                <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Porozmawiajmy o Twojej marce. Bezpłatna konsultacja, podczas której przeanalizujemy 
-                  Twoje kanały i zaproponujemy konkretne działania.
+                <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+                  Porozmawiajmy o Twojej strategii. Bezpłatna konsultacja, konkretna wycena, jasny plan działania.
                 </p>
+                
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="group">
+                  <Button asChild size="lg" className="group text-lg px-8 py-6">
                     <Link to="/kontakt">
+                      <Rocket className="mr-2 h-5 w-5" />
                       Bezpłatna konsultacja
                       <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg">
+                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
                     <a href="tel:+48790814814">
                       <Phone className="mr-2 h-5 w-5" />
                       +48 790 814 814
@@ -846,6 +851,8 @@ const SocialMedia = () => {
             </FadeInView>
           </div>
         </section>
+
+        <ContactSection />
       </Layout>
     </>
   );
