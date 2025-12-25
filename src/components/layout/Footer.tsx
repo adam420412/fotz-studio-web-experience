@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube, Building2 } from "lucide-react";
 import logoFotz from "@/assets/logo-fotz.png";
 
 const footerLinks = {
@@ -10,21 +9,12 @@ const footerLinks = {
     { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
     { name: "Fotograf", href: "/fotograf-poznan" },
     { name: "Produkcja filmów", href: "/produkcja-filmow-poznan" },
+    { name: "Studio podcastowe", href: "/studio-podcastowe" },
   ],
-  lokalne: [
-    { name: "Strony WWW Poznań", href: "/strony-internetowe-poznan" },
-    { name: "Strony WWW Warszawa", href: "/strony-internetowe-warszawa" },
-    { name: "Strony WWW Wrocław", href: "/strony-internetowe-wroclaw" },
-    { name: "Strony WWW Kraków", href: "/strony-internetowe-krakow" },
-    { name: "Strony WWW Gdańsk", href: "/strony-internetowe-gdansk" },
-    { name: "Strony WWW Łódź", href: "/strony-internetowe-lodz" },
-    { name: "Strony WWW Szczecin", href: "/strony-internetowe-szczecin" },
-    { name: "Strony WWW Bydgoszcz", href: "/strony-internetowe-bydgoszcz" },
-    { name: "Strony WWW Katowice", href: "/strony-internetowe-katowice" },
-    { name: "Strony WWW Lublin", href: "/strony-internetowe-lublin" },
-    { name: "Social Media Poznań", href: "/social-media-poznan" },
-    { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
-    { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
+  realizacje: [
+    { name: "Portfolio", href: "/realizacje" },
+    { name: "Case Studies", href: "/realizacje" },
+    { name: "Dla kogo pracujemy", href: "/dla-kogo" },
   ],
   firma: [
     { name: "O nas", href: "/o-nas" },
@@ -47,9 +37,9 @@ export function Footer() {
       {/* Main Footer */}
       <div className="section-padding py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Brand Column */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-1">
               <Link
                 to="/"
                 className="inline-block mb-4"
@@ -77,14 +67,15 @@ export function Footer() {
                     +48 790 814 814
                   </a>
                 </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
+                <div className="flex items-center gap-3 text-muted-foreground">
                   <Mail className="w-5 h-5 text-primary flex-shrink-0" />
                   <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors">
                     adam@fotz.pl
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground text-sm">
-                  <span>🏢 NIP: 7851806089</span>
+                  <Building2 className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span>NIP: 7851806089</span>
                 </div>
               </div>
 
@@ -123,9 +114,9 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-heading font-semibold text-foreground mb-4">Poznań</h4>
+              <h4 className="font-heading font-semibold text-foreground mb-4">Realizacje</h4>
               <ul className="space-y-3">
-                {footerLinks.lokalne.map((link) => (
+                {footerLinks.realizacje.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
