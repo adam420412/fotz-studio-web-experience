@@ -29,6 +29,7 @@ import {
 } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -598,38 +599,8 @@ const StronyInternetoweLublin = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-b from-card/50 to-background">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="max-w-3xl mx-auto text-center">
-                <MapPin className="w-12 h-12 text-primary mx-auto mb-6" />
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Wybór odpowiedniego dostawcy usług
-                </h2>
-                <p className="text-muted-foreground mb-8">
-                  Wybór odpowiedniego dostawcy usług tworzenia stron www to kluczowa decyzja dla sukcesu Twojego biznesu. 
-                  FOTZ, z siedzibą w Wielkopolsce, świadczy usługi zdalnie dla firm z całej Polski, w tym z Lublina. 
-                  <strong> Inwestycja w profesjonalną stronę internetową to klucz do sukcesu Twojego biznesu w internecie.</strong>
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="group">
-                    <Link to="/kontakt">
-                      Skontaktuj się z nami
-                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg">
-                    <a href="tel:+48790814814">
-                      <Phone className="mr-2 h-5 w-5" />
-                      +48 790 814 814
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </FadeInView>
-          </div>
-        </section>
+        {/* Contact Section */}
+        <ContactSection city="Lublinie" />
       </Layout>
     </>
   );
