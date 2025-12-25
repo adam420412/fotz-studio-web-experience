@@ -9,13 +9,38 @@ import {
   CheckCircle2,
   ArrowRight,
   MessageSquare,
-  Loader2
+  Loader2,
+  AlertCircle
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { FadeInView } from "@/components/FadeInView";
 import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+// Validation schema
+const contactSchema = z.object({
+  name: z.string()
+    .trim()
+    .min(2, "Imię musi mieć min. 2 znaki")
+    .max(100, "Imię nie może być dłuższe niż 100 znaków"),
+  email: z.string()
+    .trim()
+    .email("Nieprawidłowy adres email")
+    .max(255, "Email nie może być dłuższy niż 255 znaków"),
+  phone: z.string()
+    .trim()
+    .optional()
+    .refine((val) => !val || /^[+]?[\d\s-]{9,20}$/.test(val), "Nieprawidłowy numer telefonu"),
+  message: z.string()
+    .trim()
+    .min(10, "Wiadomość musi mieć min. 10 znaków")
+    .max(2000, "Wiadomość nie może być dłuższa niż 2000 znaków"),
+});
+
+type ContactFormData = z.infer<typeof contactSchema>;
+type FormErrors = Partial<Record<keyof ContactFormData, string>>;
 
 interface ContactSectionProps {
   city?: string;
@@ -31,9 +56,58 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
     phone: "",
     message: ""
   });
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [touched, setTouched] = useState<Partial<Record<keyof ContactFormData, boolean>>>({});
+
+  const validateField = (field: keyof ContactFormData, value: string) => {
+    try {
+      const fieldSchema = contactSchema.shape[field];
+      fieldSchema.parse(value);
+      setErrors(prev => ({ ...prev, [field]: undefined }));
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        setErrors(prev => ({ ...prev, [field]: error.errors[0]?.message }));
+      }
+    }
+  };
+
+  const handleBlur = (field: keyof ContactFormData) => {
+    setTouched(prev => ({ ...prev, [field]: true }));
+    validateField(field, formData[field]);
+  };
+
+  const handleChange = (field: keyof ContactFormData, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+    if (touched[field]) {
+      validateField(field, value);
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate all fields
+    const result = contactSchema.safeParse(formData);
+    
+    if (!result.success) {
+      const fieldErrors: FormErrors = {};
+      result.error.errors.forEach((err) => {
+        const field = err.path[0] as keyof ContactFormData;
+        if (!fieldErrors[field]) {
+          fieldErrors[field] = err.message;
+        }
+      });
+      setErrors(fieldErrors);
+      setTouched({ name: true, email: true, phone: true, message: true });
+      
+      toast({
+        title: "Błąd walidacji",
+        description: "Popraw błędy w formularzu",
+        variant: "destructive",
+      });
+      return;
+    }
+    
     setIsSubmitting(true);
     
     // Simulate form submission
@@ -45,6 +119,8 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
     });
     
     setFormData({ name: "", email: "", phone: "", message: "" });
+    setErrors({});
+    setTouched({});
     setIsSubmitting(false);
   };
 
@@ -180,10 +256,16 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
                       id="name"
                       placeholder="Jan Kowalski"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
-                      className="bg-card/50 h-9 sm:h-10 text-sm"
+                      onChange={(e) => handleChange("name", e.target.value)}
+                      onBlur={() => handleBlur("name")}
+                      className={`bg-card/50 h-9 sm:h-10 text-sm ${errors.name && touched.name ? "border-destructive focus-visible:ring-destructive" : ""}`}
                     />
+                    {errors.name && touched.name && (
+                      <p className="text-[10px] sm:text-xs text-destructive flex items-center gap-1">
+                        <AlertCircle className="w-3 h-3" />
+                        {errors.name}
+                      </p>
+                    )}
                   </div>
                   <div className="space-y-1.5 sm:space-y-2">
                     <label htmlFor="phone" className="text-xs sm:text-sm font-medium">
@@ -194,9 +276,16 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
                       type="tel"
                       placeholder="+48 123 456 789"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="bg-card/50 h-9 sm:h-10 text-sm"
+                      onChange={(e) => handleChange("phone", e.target.value)}
+                      onBlur={() => handleBlur("phone")}
+                      className={`bg-card/50 h-9 sm:h-10 text-sm ${errors.phone && touched.phone ? "border-destructive focus-visible:ring-destructive" : ""}`}
                     />
+                    {errors.phone && touched.phone && (
+                      <p className="text-[10px] sm:text-xs text-destructive flex items-center gap-1">
+                        <AlertCircle className="w-3 h-3" />
+                        {errors.phone}
+                      </p>
+                    )}
                   </div>
                 </div>
                 
@@ -209,10 +298,16 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
                     type="email"
                     placeholder="jan@firma.pl"
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    required
-                    className="bg-card/50 h-9 sm:h-10 text-sm"
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    onBlur={() => handleBlur("email")}
+                    className={`bg-card/50 h-9 sm:h-10 text-sm ${errors.email && touched.email ? "border-destructive focus-visible:ring-destructive" : ""}`}
                   />
+                  {errors.email && touched.email && (
+                    <p className="text-[10px] sm:text-xs text-destructive flex items-center gap-1">
+                      <AlertCircle className="w-3 h-3" />
+                      {errors.email}
+                    </p>
+                  )}
                 </div>
                 
                 <div className="space-y-1.5 sm:space-y-2">
@@ -223,10 +318,16 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
                     id="message"
                     placeholder="Opisz swój projekt, potrzeby i oczekiwania..."
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    className="min-h-[120px] sm:min-h-[150px] bg-card/50 text-sm"
+                    onChange={(e) => handleChange("message", e.target.value)}
+                    onBlur={() => handleBlur("message")}
+                    className={`min-h-[120px] sm:min-h-[150px] bg-card/50 text-sm ${errors.message && touched.message ? "border-destructive focus-visible:ring-destructive" : ""}`}
                   />
+                  {errors.message && touched.message && (
+                    <p className="text-[10px] sm:text-xs text-destructive flex items-center gap-1">
+                      <AlertCircle className="w-3 h-3" />
+                      {errors.message}
+                    </p>
+                  )}
                 </div>
                 
                 <Button 
