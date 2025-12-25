@@ -45,6 +45,7 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { YouTubeShowcase } from "@/components/sections/YouTubeShowcase";
 
 import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali.png";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
@@ -387,6 +388,9 @@ const SocialMedia = () => {
             </div>
           </div>
         </section>
+
+        {/* YouTube Showcase Section */}
+        <YouTubeShowcase />
 
         {/* Intro Section */}
         <section className="py-20">
