@@ -100,7 +100,7 @@ const StronyInternetoweKatowice = () => {
     { name: "Katowice", href: "/strony-internetowe-katowice", active: true },
     { name: "Szczecin", href: "/strony-internetowe-szczecin", active: true },
     { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz", active: true },
-    { name: "Lublin", href: "/strony-internetowe-lublin", active: false },
+    { name: "Lublin", href: "/strony-internetowe-lublin", active: true },
   ];
 
   const faqItems = [
