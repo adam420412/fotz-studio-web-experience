@@ -9,7 +9,7 @@ const cities = [
   { name: "Poznań", path: "/strony-internetowe-poznan", active: true },
   { name: "Warszawa", path: "/strony-internetowe-warszawa", active: true },
   { name: "Kraków", path: "/strony-internetowe-krakow", active: false },
-  { name: "Wrocław", path: "/strony-internetowe-wroclaw", active: false },
+  { name: "Wrocław", path: "/strony-internetowe-wroclaw", active: true },
   { name: "Gdańsk", path: "/strony-internetowe-gdansk", active: false },
   { name: "Łódź", path: "/strony-internetowe-lodz", active: false },
   { name: "Katowice", path: "/strony-internetowe-katowice", active: false },
