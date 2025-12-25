@@ -104,10 +104,10 @@ const StronyInternetowe = () => {
   ];
 
   const results = [
-    { value: "+340%", label: "Wzrost ruchu organicznego", desc: "w ciągu 6 miesięcy od wdrożenia" },
-    { value: "2.1s", label: "Średni czas ładowania", desc: "vs 8+ sekund u konkurencji" },
-    { value: "+180%", label: "Więcej zapytań ofertowych", desc: "dzięki optymalizacji CTA" },
-    { value: "600+", label: "Zrealizowanych projektów", desc: "dla firm z całej Polski" },
+    { value: "78+", label: "Zrealizowanych stron", desc: "dla firm z całej Polski" },
+    { value: "94%", label: "Klientów poleca nas", desc: "opinie z Google i Clutch" },
+    { value: "<2s", label: "Czas ładowania stron", desc: "zielone wyniki PageSpeed" },
+    { value: "5 lat", label: "Doświadczenia", desc: "w branży web development" },
   ];
 
   const pricing = [
@@ -171,7 +171,7 @@ const StronyInternetowe = () => {
     {
       title: "Enea Stadion",
       category: "Strona instytucji sportowej",
-      result: "+520% ruchu",
+      result: "3x więcej rezerwacji",
       link: "/realizacje/enea-stadion",
       image: eneaStadionImg,
       desc: "Kompleksowa strona dla jednego z największych stadionów w Polsce."
@@ -179,7 +179,7 @@ const StronyInternetowe = () => {
     {
       title: "Victory Cars",
       category: "Strona motoryzacyjna",
-      result: "+420% ruchu organicznego",
+      result: "TOP 3 w Google",
       link: "/realizacje/victory-cars",
       image: victoryCarsImg,
       desc: "Premium showroom dla dealera luksusowych samochodów."
@@ -187,7 +187,7 @@ const StronyInternetowe = () => {
     {
       title: "FPS Cegielski",
       category: "Strona przemysłowa B2B",
-      result: "+380% zapytań B2B",
+      result: "+85% leadów B2B",
       link: "/realizacje/fps-cegielski",
       image: fpsCegielskiImg,
       desc: "Strona korporacyjna dla lidera branży przemysłowej."
@@ -904,50 +904,115 @@ const StronyInternetowe = () => {
           </div>
         </section>
 
-        {/* SEO Content Section */}
-        <section className="py-16 border-t border-border/30">
+        {/* SEO Content Section - Kreatywna sekcja */}
+        <section className="py-24 border-t border-border/30 overflow-hidden">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <FadeInView>
-                <h2 className="text-2xl font-heading font-bold mb-6 text-foreground">
-                  Projektowanie strony internetowej - Tworzenie strony www
-                </h2>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Tworzenie profesjonalnych stron internetowych może wydawać się skomplikowane, ale dzięki odpowiedniemu 
-                  systemowi CMS i doświadczonemu zespołowi, możliwe jest szybkie i efektywne projektowanie. W Fotz Studio 
-                  zajmujemy się kompleksowym tworzeniem stron www – od projektu graficznego, przez wybór technologii, 
-                  aż po zarządzanie treścią i pozycjonowanie.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
-                  Jak zaprojektować skuteczną stronę www?
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Na początku projektowania strony internetowej ważne jest, aby jasno określić cel twojej strony. 
-                  Czy ma to być profesjonalna strona firmowa, blog, sklep internetowy, czy bardziej zaawansowany 
-                  portal interaktywny? Po określeniu celu, dobieramy odpowiednią technologię – WordPress, Webflow, 
-                  Shopify lub dedykowane rozwiązania w React.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
-                  Optymalizacja strony pod kątem SEO
-                </h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  SEO jest kluczowym elementem, jeśli chcesz, aby twoja strona była łatwo znajdywana przez 
-                  potencjalnych klientów. Dbamy o odpowiedni dobór słów kluczowych, wysoką jakość treści, 
-                  szybkość ładowania oraz meta tagi, przyjazne URL-e i linkowanie wewnętrzne. Schema markup 
-                  (dane strukturalne) pomagają robotom wyszukiwarek lepiej zrozumieć strukturę twojej witryny.
-                </p>
-                
-                <h3 className="text-xl font-semibold mt-8 mb-4 text-foreground">
-                  WordPress, Webflow czy dedykowane rozwiązania?
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  WordPress to jeden z najpopularniejszych systemów CMS – łatwy w obsłudze, z ogromną liczbą 
-                  darmowych szablonów i wtyczek. Webflow oferuje większą kontrolę nad designem bez znajomości kodu. 
-                  Dla zaawansowanych projektów proponujemy dedykowane rozwiązania w React lub Next.js, 
-                  które oferują najwyższą wydajność i możliwości personalizacji.
-                </p>
+                <div className="text-center mb-16">
+                  <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                    📚 Baza wiedzy
+                  </span>
+                  <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                    Wszystko o <span className="text-gradient">stronach www</span>
+                  </h2>
+                </div>
+              </FadeInView>
+
+              {/* Grid z kartami wiedzy */}
+              <div className="grid md:grid-cols-2 gap-8 mb-16">
+                <FadeInView delay={0.1}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Palette className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Projektowanie UX/UI</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Tworzymy strony, które nie tylko dobrze wyglądają, ale przede wszystkim <strong className="text-foreground">konwertują</strong>. 
+                      Każdy element – od układu przycisków po kolorystykę CTA – jest przemyślany pod kątem user experience.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Makiety w Figma przed kodowaniem</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Testy A/B dla kluczowych elementów</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Mobile-first approach</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.2}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Search className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">SEO techniczne</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Strona bez SEO jest jak sklep bez szyldu. Dbamy o <strong className="text-foreground">Core Web Vitals</strong>, 
+                      strukturę URL, meta tagi i schema markup – wszystko, by Google pokochał Twoją witrynę.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Szybkość ładowania &lt;2s</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Zielone wyniki PageSpeed</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Dane strukturalne (JSON-LD)</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.3}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <FileCode className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Technologie</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Dobieramy technologię do projektu – nie na odwrót. <strong className="text-foreground">WordPress</strong> dla prostych stron, 
+                      <strong className="text-foreground"> Webflow</strong> dla designerskich projektów, <strong className="text-foreground">React/Next.js</strong> dla zaawansowanych aplikacji.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> WordPress + WooCommerce</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Webflow, Shopify</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> React, Next.js, TypeScript</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.4}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Headphones className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Wsparcie po wdrożeniu</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Strona to dopiero początek. Oferujemy <strong className="text-foreground">pakiety opieki</strong> – 
+                      aktualizacje, backupy, monitoring i rozwój funkcjonalności. Jesteśmy z Tobą na dłużej.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> 30 dni gwarancji w cenie</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Szkolenie z obsługi CMS</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Pakiety wsparcia od 300 zł/mies.</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+              </div>
+
+              {/* Sekcja z cytatem */}
+              <FadeInView delay={0.5}>
+                <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
+                  <div className="absolute top-6 left-8 text-6xl text-primary/30 font-serif">"</div>
+                  <blockquote className="text-xl md:text-2xl font-medium text-center max-w-3xl mx-auto pt-6 pb-4">
+                    <span className="text-foreground">Dobra strona internetowa to nie koszt – to inwestycja, która zwraca się wielokrotnie.</span>
+                  </blockquote>
+                  <p className="text-center text-muted-foreground">
+                    — Zespół Fotz Studio
+                  </p>
+                </div>
               </FadeInView>
             </div>
           </div>
