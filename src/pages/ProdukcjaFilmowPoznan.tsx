@@ -346,6 +346,118 @@ export default function ProdukcjaFilmowPoznan() {
           </div>
         </section>
 
+        {/* Section: Baza wiedzy */}
+        <section className="py-24 border-t border-border/30 overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <FadeInView>
+                <div className="text-center mb-16">
+                  <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                    📚 Baza wiedzy
+                  </span>
+                  <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                    Wszystko o <span className="text-gradient">produkcji filmowej</span>
+                  </h2>
+                </div>
+              </FadeInView>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-16">
+                <FadeInView delay={0.1}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Video className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Pre-produkcja</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Dobry film zaczyna się od solidnego planu. <strong className="text-foreground">Scenariusz, storyboard, brief</strong> – 
+                      wszystko ustalamy przed wejściem na plan, by uniknąć niespodzianek.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Brief i konsultacje kreatywne</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Scenariusz i storyboard</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Planowanie logistyki zdjęć</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.2}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Camera className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Realizacja zdjęć</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      <strong className="text-foreground">Profesjonalny sprzęt</strong> – kamery 4K/6K, stabilizatory, 
+                      drony, oświetlenie studyjne. Ekipa z doświadczeniem w produkcjach komercyjnych.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Kamery Sony, Blackmagic, RED</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Ujęcia z drona (licencja UAVO)</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Własne studio w Poznaniu</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.3}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Clapperboard className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Post-produkcja</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      To tutaj dzieje się magia. <strong className="text-foreground">Montaż, color grading, efekty VFX</strong>, 
+                      sound design – dopracowujemy każdy detal do perfekcji.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Montaż w DaVinci Resolve / Premiere</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Profesjonalna korekcja kolorów</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Motion graphics i animacje</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.4}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Play className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Formaty i dystrybucja</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Jeden film, wiele formatów. Przygotowujemy wersje na <strong className="text-foreground">YouTube, social media, 
+                      ekrany LED</strong> i eventy – każdy format zoptymalizowany.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Wersje 16:9, 9:16, 1:1</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Formaty web-ready (H.264, ProRes)</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Napisy i wersje językowe</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+              </div>
+
+              <FadeInView delay={0.5}>
+                <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
+                  <div className="absolute top-6 left-8 text-6xl text-primary/30 font-serif">"</div>
+                  <blockquote className="text-xl md:text-2xl font-medium text-center max-w-3xl mx-auto pt-6 pb-4">
+                    <span className="text-foreground">Film to najskuteczniejszy sposób na opowiedzenie historii marki. Jeden obraz jest wart tysiąca słów – a 24 klatki na sekundę?</span>
+                  </blockquote>
+                  <p className="text-center text-muted-foreground">
+                    — Zespół Fotz Studio
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">

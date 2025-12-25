@@ -26,7 +26,10 @@ import {
   MousePointer,
   Sparkles,
   Rocket,
-  Star
+  Star,
+  FileCode,
+  FileText,
+  ExternalLink
 } from "lucide-react";
 import {
   Accordion,
@@ -759,6 +762,118 @@ const Pozycjonowanie = () => {
                   </FadeInView>
                 ))}
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section: Baza wiedzy */}
+        <section className="py-24 border-t border-border/30 overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <FadeInView>
+                <div className="text-center mb-16">
+                  <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                    📚 Baza wiedzy
+                  </span>
+                  <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                    Wszystko o <span className="text-gradient">SEO i pozycjonowaniu</span>
+                  </h2>
+                </div>
+              </FadeInView>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-16">
+                <FadeInView delay={0.1}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <FileCode className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">SEO techniczne</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Fundament każdej skutecznej strategii SEO. <strong className="text-foreground">Core Web Vitals</strong>, 
+                      indeksacja, struktura URL, schema markup – to wszystko wpływa na pozycje w Google.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Audyt techniczny strony</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Optymalizacja szybkości</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Dane strukturalne (JSON-LD)</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.2}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <FileText className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Content marketing</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      <strong className="text-foreground">Treść jest królem</strong> – ale tylko wartościowa. 
+                      Tworzymy artykuły blogowe, opisy produktów i landing pages zoptymalizowane pod SEO.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Artykuły eksperckie (blog)</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Opisy kategorii i produktów</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Strategia słów kluczowych</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.3}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <ExternalLink className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Link building</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Linki zwrotne to wciąż kluczowy czynnik rankingowy. Budujemy <strong className="text-foreground">naturalny profil linków</strong> 
+                      z wartościowych źródeł – bez sztuczek, które mogą zaszkodzić.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Linki z portali branżowych</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Artykuły sponsorowane</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza profilu linków</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.4}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <BarChart className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Monitoring i raporty</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      SEO to proces. Monitorujemy <strong className="text-foreground">pozycje, ruch i konwersje</strong>. 
+                      Comiesięczne raporty pokazują co działa i gdzie są szanse na wzrost.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Śledzenie pozycji fraz</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza ruchu organicznego</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Raporty z rekomendacjami</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+              </div>
+
+              <FadeInView delay={0.5}>
+                <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
+                  <div className="absolute top-6 left-8 text-6xl text-primary/30 font-serif">"</div>
+                  <blockquote className="text-xl md:text-2xl font-medium text-center max-w-3xl mx-auto pt-6 pb-4">
+                    <span className="text-foreground">Pozycjonowanie to inwestycja, która rośnie z czasem. Efekty SEO są trwałe – w przeciwieństwie do płatnych reklam.</span>
+                  </blockquote>
+                  <p className="text-center text-muted-foreground">
+                    — Zespół Fotz Studio
+                  </p>
+                </div>
+              </FadeInView>
             </div>
           </div>
         </section>

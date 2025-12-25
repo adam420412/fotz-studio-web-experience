@@ -816,6 +816,118 @@ const SocialMedia = () => {
           </div>
         </section>
 
+        {/* Section: Baza wiedzy */}
+        <section className="py-24 border-t border-border/30 overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <FadeInView>
+                <div className="text-center mb-16">
+                  <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                    📚 Baza wiedzy
+                  </span>
+                  <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                    Wszystko o <span className="text-gradient">social media</span>
+                  </h2>
+                </div>
+              </FadeInView>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-16">
+                <FadeInView delay={0.1}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Target className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Strategia treści</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Skuteczne social media to nie random posting. To <strong className="text-foreground">spójna strategia</strong> – 
+                      kalendarz publikacji, content pillars i dopasowanie do algorytmów każdej platformy.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza grupy docelowej</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Content calendar na miesiąc</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Dopasowanie formatów do platform</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.2}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <TrendingUp className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Reklamy Meta Ads</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Facebook i Instagram Ads to potężne narzędzia targetowania. 
+                      <strong className="text-foreground"> Lookalike audiences</strong>, retargeting, testy A/B – maksymalizujemy ROAS.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Konfiguracja Pixel & Conversions API</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Kampanie na różne cele</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Optymalizacja budżetu</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.3}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Camera className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Content foto/video</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Reelsy, stories, karuzele – tworzymy <strong className="text-foreground">angażujący content</strong> 
+                      dopasowany do trendów. Własne studio, profesjonalny sprzęt, szybka realizacja.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Produkcja Reels i TikToków</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Sesje produktowe i wizerunkowe</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Grafiki i animacje</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+
+                <FadeInView delay={0.4}>
+                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <BarChart className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-heading font-bold">Analityka i raportowanie</h3>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Dane to podstawa decyzji. Śledzimy <strong className="text-foreground">KPI</strong>, 
+                      analizujemy engagement rate, zasięgi i konwersje. Comiesięczne raporty z wnioskami.
+                    </p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Miesięczne raporty wyników</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza konkurencji</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Rekomendacje optymalizacji</li>
+                    </ul>
+                  </div>
+                </FadeInView>
+              </div>
+
+              <FadeInView delay={0.5}>
+                <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
+                  <div className="absolute top-6 left-8 text-6xl text-primary/30 font-serif">"</div>
+                  <blockquote className="text-xl md:text-2xl font-medium text-center max-w-3xl mx-auto pt-6 pb-4">
+                    <span className="text-foreground">Social media to nie sprint, to maraton. Konsekwencja i strategia zawsze wygrywają z chaotycznym postingiem.</span>
+                  </blockquote>
+                  <p className="text-center text-muted-foreground">
+                    — Zespół Fotz Studio
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
         {/* Section: CTA */}
         <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
