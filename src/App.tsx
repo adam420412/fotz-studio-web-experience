@@ -45,6 +45,7 @@ import StronyInternetoweLodz from "./pages/StronyInternetoweLodz";
 import StronyInternetoweSzczecin from "./pages/StronyInternetoweSzczecin";
 import StronyInternetoweBydgoszcz from "./pages/StronyInternetoweBydgoszcz";
 import StronyInternetoweKatowice from "./pages/StronyInternetoweKatowice";
+import StronyInternetoweLublin from "./pages/StronyInternetoweLublin";
 import StronyInternetowe from "./pages/StronyInternetowe";
 import SocialMediaPoznan from "./pages/SocialMediaPoznan";
 import SocialMedia from "./pages/SocialMedia";
@@ -106,6 +107,7 @@ const App = () => (
             <Route path="/strony-internetowe-szczecin" element={<StronyInternetoweSzczecin />} />
             <Route path="/strony-internetowe-bydgoszcz" element={<StronyInternetoweBydgoszcz />} />
             <Route path="/strony-internetowe-katowice" element={<StronyInternetoweKatowice />} />
+            <Route path="/strony-internetowe-lublin" element={<StronyInternetoweLublin />} />
             <Route path="/strony-internetowe" element={<StronyInternetowe />} />
             <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
             <Route path="/social-media" element={<SocialMedia />} />
