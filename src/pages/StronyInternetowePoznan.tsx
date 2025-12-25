@@ -6,18 +6,27 @@ import { motion } from "framer-motion";
 import { 
   Globe, 
   Search, 
-  Users, 
   ShoppingCart, 
-  Camera, 
   Palette, 
-  Video, 
   MessageSquare,
   Settings,
   TrendingUp,
   Handshake,
-  ChevronRight,
   Phone,
-  CheckCircle2
+  Smartphone,
+  Shield,
+  Headphones,
+  ArrowRight,
+  Sparkles,
+  Zap,
+  Target,
+  Code2,
+  Layers,
+  Rocket,
+  Star,
+  Clock,
+  Camera,
+  Video
 } from "lucide-react";
 import {
   Accordion,
@@ -25,40 +34,101 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ContactSection } from "@/components/sections/ContactSection";
+import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
+import { CityPricingCards } from "@/components/sections/CityPricingCards";
+import { CityIntroSection } from "@/components/sections/CityIntroSection";
+import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
+
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
+import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
 const StronyInternetowePoznan = () => {
   const services = [
-    { icon: Camera, title: "Obsługa fotograficzna", desc: "Tworzymy koncepcje, scenariusze i całe realizacje kreatywne." },
-    { icon: Search, title: "Kampanie SEM", desc: "Kampanie marketingowe w sieci wyszukiwania." },
-    { icon: Globe, title: "Strony internetowe", desc: "Budujemy i projektujemy strony oraz sklepy internetowe." },
-    { icon: TrendingUp, title: "Pozycjonowanie", desc: "Dbanie o pozycje w wyszukiwarce dla Twojej firmy." },
-    { icon: Palette, title: "Obsługa graficzna", desc: "Studio graficzne, od druku przez digital." },
-    { icon: MessageSquare, title: "Social media", desc: "Prowadzenie Twojej obecności w internecie." },
-    { icon: ShoppingCart, title: "E-commerce", desc: "Rozwijamy sklepy internetowe." },
-    { icon: Video, title: "Reklamy video", desc: "Realizujemy klipy, reklamy i stałą obsługę video." },
+    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz sklepy internetowe dla firm z Poznania." },
+    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
+    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na użytkownika." },
+    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych Poznań z pełnymi integracjami." },
+    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
+    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
   ];
 
   const whyUs = [
-    { icon: Settings, title: "System CMS", desc: "Implementujemy systemy zarządzania treścią (CMS), np. WordPress, Webflow, Shopify." },
-    { icon: Search, title: "SEO", desc: "Pozycjonujemy strony internetowe SEO, oraz wykonujemy szereg usług komplementarnych." },
-    { icon: Handshake, title: "Strategiczny partner", desc: "Układamy strategię rozwoju strony internetowej oraz kompleksowo rozwijamy marketing." },
+    { icon: Settings, title: "Nowoczesne technologie", desc: "React, Next.js, WordPress, Webflow - dobieramy technologię do projektu strony." },
+    { icon: Search, title: "SEO w standardzie", desc: "Każda strona www jest zoptymalizowana pod wyszukiwarki od pierwszego dnia." },
+    { icon: Handshake, title: "Partnerskie podejście", desc: "Specjalizujemy się w tworzeniu stron skrojonych na miarę Twojej firmy." },
+    { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
+    { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
+    { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
   ];
 
   const pricing = [
-    { title: "Strona wizytówkowa", desc: "Prosta strona internetowa prezentująca podstawowe informacje o firmie lub osobie.", price: "od 1 500 zł do 3 500 zł netto" },
-    { title: "Strona firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjonalnościami.", price: "od 5 000 zł do 20 000 zł netto" },
-    { title: "Sklepy internetowe e-commerce", desc: "Zaawansowana platforma umożliwiająca sprzedaż produktów lub usług online.", price: "od 7 000 zł do 120 000 zł netto" },
+    { 
+      title: "Landing Page", 
+      desc: "Strona wizytówkowa prezentująca firmę", 
+      price: "od 1 500 zł",
+      features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"]
+    },
+    { 
+      title: "Strona Firmowa", 
+      desc: "Rozbudowana strona z dodatkowymi funkcjami", 
+      price: "od 5 000 zł",
+      popular: true,
+      features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"]
+    },
+    { 
+      title: "Sklep E-commerce", 
+      desc: "Platforma sprzedażowa z integracjami", 
+      price: "od 7 000 zł",
+      features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"]
+    },
   ];
 
-  const features = [
-    "Integracja z mediami społecznościowymi",
-    "Możliwość rejestracji i logowania dla użytkowników",
-    "Opłacanie usług online",
-    "Interaktywne formularze",
-    "Chat boty",
+  const processSteps = [
+    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Poznaniu." },
+    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
+    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
+    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
   ];
 
-  const cmsSystems = ["WordPress", "Joomla", "Drupal", "Webflow", "Shopify"];
+  const caseStudies = [
+    {
+      title: "Apartamenty Chorwacja",
+      category: "Strona rezerwacyjna",
+      result: "+180% rezerwacji online",
+      link: "/realizacje/apartamenty-chorwacja",
+      image: apartamentyImg
+    },
+    {
+      title: "Victory Cars",
+      category: "Strona motoryzacyjna",
+      result: "Nowoczesny design premium",
+      link: "/realizacje/victory-cars",
+      image: victoryCarsImg
+    },
+    {
+      title: "Cute Dumpling",
+      category: "Strona gastronomiczna",
+      result: "+250% ruchu organicznego",
+      link: "/realizacje/cute-dumpling",
+      image: cuteDumplingImg
+    },
+  ];
+
+  const cityLinks = [
+    { name: "Poznań", href: "/strony-internetowe-poznan", active: true },
+    { name: "Warszawa", href: "/strony-internetowe-warszawa", active: true },
+    { name: "Wrocław", href: "/strony-internetowe-wroclaw", active: true },
+    { name: "Kraków", href: "/strony-internetowe-krakow", active: true },
+    { name: "Gdańsk", href: "/strony-internetowe-gdansk", active: true },
+    { name: "Łódź", href: "/strony-internetowe-lodz", active: true },
+    { name: "Katowice", href: "/strony-internetowe-katowice", active: true },
+    { name: "Szczecin", href: "/strony-internetowe-szczecin", active: true },
+    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz", active: true },
+    { name: "Lublin", href: "/strony-internetowe-lublin", active: true },
+  ];
 
   const faqItems = [
     {
@@ -95,371 +165,362 @@ const StronyInternetowePoznan = () => {
     },
   ];
 
+  const stats = [
+    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
+    { value: "98%", label: "Zadowolonych klientów", icon: Star },
+    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
+  ];
+
+  const benefits = [
+    "Lokalna agencja z Poznania - znamy rynek",
+    "Kompleksowa obsługa od projektu po wdrożenie",
+    "SEO w standardzie każdej strony",
+    "Responsywny design mobile-first",
+    "Wsparcie techniczne po uruchomieniu",
+    "Konkurencyjne ceny bez ukrytych kosztów"
+  ];
+
+  const introContent = {
+    title: "Tworzenie stron www dla firm z Poznania",
+    paragraphs: [
+      "Fotz to agencja z Wielkopolski. Projektujemy witryny internetowe dla poznańskich firm, a także świadczymy nasze usługi zdalnie! Łączymy kompleksowe podejście z projektowaniem responsywnych stron internetowych.",
+      "Nasza agencja interaktywna prowadzi działania z zakresu projektowania, wdrażania i optymalizacji. Oferujemy również usługę tworzenia sklepów internetowych.",
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+    ],
+    videoSrc: "/videos/fotz-reel.mp4"
+  };
+
   return (
     <>
       <Helmet>
-        <title>Tworzenie Stron Internetowych Poznań | Fotz Studio</title>
+        <title>Strony Internetowe Poznań | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
         <meta 
           name="description" 
-          content="Tworzenie stron internetowych w Poznaniu. Profesjonalne projektowanie stron www, sklepów e-commerce i pozycjonowanie SEO. Fotz Studio - agencja z Wielkopolski." 
+          content="Strony internetowe Poznań. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Poznania." 
         />
+        <meta name="keywords" content="strony internetowe poznań, tworzenie stron www poznań, projektowanie stron poznań, sklepy internetowe poznań, strona internetowa poznań, www poznań" />
         <link rel="canonical" href="https://fotz.pl/strony-internetowe-poznan" />
       </Helmet>
+      
+      <ServiceSchema 
+        name="Strony Internetowe Poznań - Projektowanie i Tworzenie Stron WWW"
+        description="Profesjonalne tworzenie stron internetowych dla firm z Poznania. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
+        provider="FOTZ Studio"
+        areaServed="Poznań"
+      />
+      
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
+          { name: "Poznań", url: "https://fotz.pl/strony-internetowe-poznan" },
+        ]}
+      />
+      
+      <FAQSchema 
+        items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
+      />
 
       <Layout>
-        {/* Hero Section */}
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#75143F]/20 via-background to-background" />
+        {/* Hero Section - Enhanced */}
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
+          {/* Animated background */}
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
+            <motion.div 
+              animate={{ 
+                scale: [1, 1.2, 1],
+                opacity: [0.15, 0.25, 0.15] 
+              }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" 
+            />
+            <motion.div 
+              animate={{ 
+                scale: [1.2, 1, 1.2],
+                opacity: [0.15, 0.25, 0.15] 
+              }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }}
+              className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px]" 
+            />
+          </div>
+          
+          {/* Floating elements */}
+          <motion.div
+            animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-32 right-[15%] hidden lg:block"
+          >
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
+              <Globe className="w-10 h-10 text-primary" />
+            </div>
+          </motion.div>
+          
+          <motion.div
+            animate={{ y: [20, -20, 20], rotate: [0, -5, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            className="absolute bottom-32 left-[10%] hidden lg:block"
+          >
+            <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-secondary/20 to-secondary/5 backdrop-blur-sm border border-secondary/20 flex items-center justify-center">
+              <Code2 className="w-8 h-8 text-secondary" />
+            </div>
+          </motion.div>
           
           <div className="container mx-auto px-4 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
+              className="text-center max-w-5xl mx-auto"
             >
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Agencja interaktywna z Poznania
-              </span>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8">
+                  <Sparkles className="w-4 h-4" />
+                  Agencja z Wielkopolski
+                  <Sparkles className="w-4 h-4" />
+                </span>
+              </motion.div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">
-                Tworzenie stron internetowych Poznań
-              </h1>
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight"
+              >
+                Strony Internetowe{" "}
+                <span className="text-gradient relative">
+                  Poznań
+                  <motion.span
+                    initial={{ scaleX: 0 }}
+                    animate={{ scaleX: 1 }}
+                    transition={{ duration: 0.8, delay: 0.8 }}
+                    className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full origin-left"
+                  />
+                </span>
+              </motion.h1>
               
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Fotz to agencja z Wielkopolski. Projektujemy witryny internetowe dla poznańskich firm, 
-                a także świadczymy nasze usługi zdalnie! Łączymy kompleksowe podejście z projektowaniem 
-                responsywnych stron internetowych.
-              </p>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed"
+              >
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}
+                Tworzymy strony www, które wyglądają świetnie, działają błyskawicznie i skutecznie pozyskują klientów dla poznańskich firm.
+              </motion.p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+              >
+                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20">
                   <Link to="/kontakt">
-                    Bezpłatna rozmowa
-                    <ChevronRight className="ml-2 h-5 w-5" />
+                    Bezpłatna wycena
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2">
                   <a href="tel:+48790814814">
                     <Phone className="mr-2 h-5 w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
-              </div>
+              </motion.div>
+
+              {/* Stats bar */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.7 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto"
+              >
+                {stats.map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }}
+                    className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all"
+                  >
+                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
+                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
+                  </motion.div>
+                ))}
+              </motion.div>
             </motion.div>
           </div>
-        </section>
 
-        {/* Stats Section */}
-        <section className="py-16 bg-card/50">
-          <div className="container mx-auto px-4">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-heading font-bold text-center mb-12"
-            >
-              Statystyki od naszych klientów
-            </motion.h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              {[
-                { value: "100%", label: "Klientów poleciłoby nas swojej rodzinie i przyjaciołom" },
-                { value: "600+", label: "Ukończonych projektów dla naszych klientów z całego świata" },
-                { value: "160+", label: "Opinii, które postanowili wystawić nasi klienci na Google" },
-              ].map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-center p-6 rounded-xl bg-background border border-border/50"
-                >
-                  <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent mb-2">
-                    {stat.value}
-                  </div>
-                  <p className="text-muted-foreground">{stat.label}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* About Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
+          {/* Scroll indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          >
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="max-w-4xl mx-auto text-center mb-16"
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-2"
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                Tworzenie stron www dla firm z Poznania i okolic
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Nasza agencja interaktywna prowadzi działania z zakresu projektowania, wdrażania i optymalizacji. 
-                Fotz łączy kompleksowe podejście z projektowaniem responsywnych stron internetowych. 
-                Oferujemy również usługę tworzenia sklepów internetowych.
-              </p>
+              <motion.div className="w-1.5 h-1.5 rounded-full bg-primary" />
             </motion.div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                  className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all group"
-                >
-                  <service.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground">{service.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+          </motion.div>
         </section>
 
-        {/* Why Us Section */}
-        <section className="py-20 bg-card/50">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Dlaczego warto nam zlecić stworzenie strony internetowej?
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Wybór najlepszej firmy projektującej strony internetowe wydaje się dość trudny. 
-                Czym różnimy się od konkurencji? W Fotz:
-              </p>
-            </motion.div>
+        {/* Intro Section */}
+        <CityIntroSection 
+          content={introContent}
+          cityName="Poznań"
+        />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {whyUs.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="p-8 rounded-xl bg-background border border-border/50 text-center"
-                >
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#75143F] to-[#0F3053] flex items-center justify-center">
-                    <item.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Benefits Section */}
+        <CityBenefitsSection 
+          benefits={benefits}
+          title="Dlaczego warto nam zaufać?"
+          subtitle="Poznaj korzyści współpracy z lokalną agencją"
+          cityName="Poznań"
+        />
+
+        {/* Services Grid */}
+        <CityServicesGrid 
+          services={services}
+          title="Nasze usługi"
+          subtitle="Kompleksowe usługi tworzenia stron www dla poznańskich firm"
+          cityName="Poznań"
+        />
 
         {/* Process Section */}
-        <section className="py-20">
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Tworzenie i projektowanie stron z FOTZ Studio
+              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                Proces
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Jak tworzymy strony?
               </h2>
-              <p className="text-muted-foreground max-w-3xl mx-auto">
-                Nasza agencja posiada szerokie, różnorodne portfolio stworzonych witryn. 
-                Zrealizowaliśmy już wiele projektów dla firm z każdej branży. 
-                Cechuje nas profesjonalizm, doświadczenie, a także indywidualne podejście do klienta.
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Przejrzysty proces, który gwarantuje sukces Twojego projektu
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {[
-                { step: "01", title: "Rozmowa i research", desc: "Poznajemy Twoje potrzeby i analizujemy rynek" },
-                { step: "02", title: "Wycena projektu", desc: "Przygotowujemy szczegółową ofertę" },
-                { step: "03", title: "Projektowanie", desc: "Tworzymy kod i oprawę graficzną" },
-                { step: "04", title: "Wdrożenie", desc: "Prezentujemy projekt i wprowadzamy poprawki" },
-              ].map((item, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {processSteps.map((item, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="relative p-6 rounded-xl bg-card border border-border/50"
+                  className="group relative"
                 >
-                  <div className="text-5xl font-bold text-primary/20 mb-2">{item.step}</div>
-                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full relative overflow-hidden">
+                    <div className="absolute top-0 right-0 text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">
+                      {item.step}
+                    </div>
+                    <div className="relative z-10">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <item.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                      <p className="text-muted-foreground">{item.desc}</p>
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Pricing Section */}
-        <section className="py-20 bg-card/50">
+        {/* Case Studies Section */}
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-16"
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Jaka jest cena strony internetowej?
+              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                Realizacje
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Nasze projekty
               </h2>
-              <p className="text-muted-foreground max-w-3xl mx-auto">
-                Na cenę wpływa wiele czynników. Cena uzależniona jest od zakresu prac, 
-                skomplikowania projektu oraz technologii, jakie będą wykorzystane do jego realizacji.
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Zobacz strony internetowe, które stworzyliśmy dla naszych klientów
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {pricing.map((item, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {caseStudies.map((study, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="p-8 rounded-xl bg-background border border-border/50 hover:border-primary/30 transition-all"
                 >
-                  <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground mb-4">{item.desc}</p>
-                  <div className="text-lg font-bold text-primary">{item.price}</div>
+                  <Link 
+                    to={study.link}
+                    className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10"
+                  >
+                    <div className="aspect-video overflow-hidden">
+                      <img 
+                        src={study.image} 
+                        alt={study.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <span className="text-primary text-sm font-medium">{study.category}</span>
+                      <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
+                      <p className="text-muted-foreground">{study.result}</p>
+                    </div>
+                  </Link>
                 </motion.div>
               ))}
             </div>
-          </div>
-        </section>
 
-        {/* Features Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Funkcjonalności projektowanych stron
-                </h2>
-                <p className="text-muted-foreground mb-8">
-                  Wybierając naszą agencję możesz być pewny najlepszych funkcjonalności dla stron internetowych. 
-                  Tworząc twoją stronę uwzględniamy najnowsze trendy i wykorzystujemy innowacyjne technologie.
-                </p>
-                <ul className="space-y-4">
-                  {features.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Systemy zarządzania treścią (CMS)
-                </h2>
-                <p className="text-muted-foreground mb-8">
-                  W projektowaniu stron internetowych wykorzystujemy systemy zarządzania treścią. 
-                  Fotz korzysta z najlepszych rozwiązań dostępnych na rynku:
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  {cmsSystems.map((cms, index) => (
-                    <span
-                      key={index}
-                      className="px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm font-medium"
-                    >
-                      {cms}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* SEO Section */}
-        <section className="py-20 bg-card/50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-center mb-12"
-              >
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Pozycjonowanie nowej strony internetowej
-                </h2>
-                <p className="text-muted-foreground">
-                  Projektowanie responsywnych stron internetowych zapewnia wysoką pozycję w Google. 
-                  Optymalizacja strony internetowej SEO umożliwi polepszenie widoczności i tym samym zwiększenie zysków.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Co decyduje o sukcesie strony?
-                </h2>
-                <p className="text-muted-foreground">
-                  Każdy aspekt projektowania responsywnych stron internetowych sprowadza się do tworzenia witryn www pod SEO. 
-                  Pomożemy ci zbudować większą społeczność i poszerzyć zasięgi. 
-                  Efektywna strategia SEO zapewni długotrwałe efekty w postaci większej liczby odwiedzin i lepszej konwersji.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Portfolio CTA */}
-        <section className="py-20">
-          <div className="container mx-auto px-4 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              className="text-center mt-12"
             >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Zobacz nasze realizacje
-              </h2>
-              <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Sprawdź nasze portfolio i przekonaj się o jakości naszych projektów stron internetowych.
-              </p>
-              <Button asChild size="lg" variant="outline">
+              <Button asChild variant="outline" size="lg" className="group">
                 <Link to="/realizacje">
-                  Przejdź do portfolio
-                  <ChevronRight className="ml-2 h-5 w-5" />
+                  Zobacz więcej realizacji
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
             </motion.div>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-20 bg-card/50">
+        {/* Pricing Section */}
+        <CityPricingCards 
+          pricing={pricing}
+          title="Cennik stron internetowych"
+          subtitle="Transparentne ceny bez ukrytych kosztów"
+          cityName="Poznań"
+        />
+
+        {/* Cities Section */}
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -468,132 +529,85 @@ const StronyInternetowePoznan = () => {
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Najczęściej zadawane pytania
+                Tworzymy strony w całej Polsce
               </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Realizujemy projekty dla firm z największych polskich miast
+              </p>
+            </motion.div>
+
+            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+              {cityLinks.map((city, index) => (
+                <motion.div
+                  key={city.name}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.05 }}
+                >
+                  <Link
+                    to={city.href}
+                    className={`px-5 py-2.5 rounded-full border transition-all ${
+                      city.name === "Poznań"
+                        ? "bg-primary text-primary-foreground border-primary"
+                        : "bg-background border-border/50 hover:border-primary/50 hover:bg-primary/5"
+                    }`}
+                  >
+                    {city.name}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
+              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                FAQ
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Najczęstsze pytania
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                Odpowiedzi na pytania o strony internetowe w Poznaniu
+              </p>
             </motion.div>
 
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqItems.map((item, index) => (
-                  <AccordionItem
+                  <motion.div
                     key={index}
-                    value={`item-${index}`}
-                    className="bg-background border border-border/50 rounded-lg px-6"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.05 }}
                   >
-                    <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
+                    <AccordionItem value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-card/50">
+                      <AccordionTrigger className="text-left hover:no-underline py-6">
+                        <span className="font-medium">{item.question}</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground pb-6">
+                        {item.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
                 ))}
               </Accordion>
             </div>
           </div>
         </section>
 
-        {/* Miasta Section */}
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Tworzenie stron internetowych w całej Polsce
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Realizujemy projekty dla klientów z całego kraju. Sprawdź nasze usługi w Twoim mieście.
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
-              {[
-                { name: "Warszawa", path: "/strony-internetowe-warszawa", active: true },
-                { name: "Kraków", path: "/strony-internetowe-krakow", active: true },
-                { name: "Wrocław", path: "/strony-internetowe-wroclaw", active: true },
-                { name: "Gdańsk", path: "/strony-internetowe-gdansk", active: true },
-                { name: "Łódź", path: "/strony-internetowe-lodz", active: true },
-                { name: "Katowice", path: "/strony-internetowe-katowice", active: false },
-              ].map((city, index) => (
-                <motion.div
-                  key={city.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                >
-                  {city.active ? (
-                    <Link
-                      to={city.path}
-                      className="block p-4 bg-card border border-border/50 rounded-lg text-center hover:border-primary/50 hover:bg-primary/5 transition-all"
-                    >
-                      <span className="font-medium">{city.name}</span>
-                    </Link>
-                  ) : (
-                    <div className="block p-4 bg-card/50 border border-border/30 rounded-lg text-center opacity-50 cursor-not-allowed">
-                      <span className="font-medium text-muted-foreground">{city.name}</span>
-                      <span className="block text-xs text-muted-foreground mt-1">Wkrótce</span>
-                    </div>
-                  )}
-                </motion.div>
-              ))}
-            </div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mt-8"
-            >
-              <p className="text-muted-foreground">
-                Nie widzisz swojego miasta?{" "}
-                <Link to="/kontakt" className="text-primary hover:underline">
-                  Skontaktuj się z nami
-                </Link>
-              </p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="max-w-4xl mx-auto text-center p-12 rounded-2xl bg-gradient-to-r from-[#75143F]/20 to-[#0F3053]/20 border border-primary/20"
-            >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Porozmawiajmy o Twojej stronie
-              </h2>
-              <p className="text-muted-foreground mb-8">
-                Skontaktuj się z nami i dowiedz się, jak możemy pomóc Twojej firmie w internecie.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
-                  <Link to="/kontakt">
-                    Bezpłatna konsultacja
-                    <ChevronRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <a href="tel:+48790814814">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Zadzwoń teraz
-                  </a>
-                </Button>
-              </div>
-              <p className="text-sm text-muted-foreground mt-6">
-                Plac Wolności 16, Poznań
-              </p>
-            </motion.div>
-          </div>
-        </section>
+        {/* Contact Section */}
+        <ContactSection />
       </Layout>
     </>
   );
