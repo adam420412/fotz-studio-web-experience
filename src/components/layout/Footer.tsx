@@ -18,6 +18,7 @@ const footerLinks = {
     { name: "Strony WWW Kraków", href: "/strony-internetowe-krakow" },
     { name: "Strony WWW Gdańsk", href: "/strony-internetowe-gdansk" },
     { name: "Strony WWW Łódź", href: "/strony-internetowe-lodz" },
+    { name: "Strony WWW Szczecin", href: "/strony-internetowe-szczecin" },
     { name: "Social Media Poznań", href: "/social-media-poznan" },
     { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
     { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
