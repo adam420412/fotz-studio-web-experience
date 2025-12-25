@@ -1,32 +1,35 @@
 import { motion } from "framer-motion";
-import { Play, Youtube, Podcast, Video } from "lucide-react";
+import { Play, Youtube, Podcast, Video, Volume2, VolumeX, Pause, Loader2 } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
-
-interface YouTubeVideo {
-  id: string;
-  title: string;
-  type: "video" | "podcast" | "reel";
-}
-
-const youtubeVideos: YouTubeVideo[] = [
-  {
-    id: "dQw4w9WgXcQ", // Placeholder - zamień na prawdziwe ID
-    title: "Podcast Fotz Studio",
-    type: "podcast"
-  },
-  {
-    id: "dQw4w9WgXcQ", // Placeholder - zamień na prawdziwe ID
-    title: "Lech Poznań - Realizacja",
-    type: "video"
-  },
-  {
-    id: "dQw4w9WgXcQ", // Placeholder - zamień na prawdziwe ID
-    title: "Fotz Studio Reel",
-    type: "reel"
-  },
-];
+import { useState, useRef } from "react";
 
 export function YouTubeShowcase() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
+  const [isPodcastLoading, setIsPodcastLoading] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlayWithSound = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.muted = false;
+        setIsMuted(false);
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <section className="py-16 sm:py-20 md:py-24 bg-card/30 relative overflow-hidden">
       {/* Background effects */}
@@ -74,22 +77,55 @@ export function YouTubeShowcase() {
               className="relative aspect-[9/16] md:aspect-video rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10"
             >
               <video
+                ref={videoRef}
                 src="/videos/fotz-reel.mp4"
                 autoPlay
-                muted
+                muted={isMuted}
                 loop
                 playsInline
                 className="w-full h-full object-cover"
+                onPlay={() => setIsPlaying(true)}
+                onPause={() => setIsPlaying(false)}
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent pointer-events-none" />
               
-              {/* Play icon overlay */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black/20">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/90 flex items-center justify-center">
-                  <Play className="w-6 h-6 sm:w-8 sm:h-8 text-white ml-1" />
-                </div>
+              {/* Play/Pause overlay */}
+              <div 
+                className="absolute inset-0 flex items-center justify-center cursor-pointer group"
+                onClick={handlePlayWithSound}
+              >
+                <motion.div 
+                  initial={{ scale: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary/90 flex items-center justify-center transition-opacity duration-300 ${isPlaying && !isMuted ? 'opacity-0 group-hover:opacity-100' : 'opacity-100'}`}
+                >
+                  {isPlaying ? (
+                    <Pause className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                  ) : (
+                    <Play className="w-6 h-6 sm:w-8 sm:h-8 text-white ml-1" />
+                  )}
+                </motion.div>
               </div>
+
+              {/* Sound control button */}
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleMute();
+                }}
+                className="absolute bottom-4 right-4 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center border border-border/50 hover:bg-background transition-colors"
+              >
+                {isMuted ? (
+                  <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
+                ) : (
+                  <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
+                )}
+              </motion.button>
             </motion.div>
             
             <motion.div
@@ -125,16 +161,30 @@ export function YouTubeShowcase() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="aspect-video rounded-xl sm:rounded-2xl overflow-hidden border border-border/50 bg-card"
+              className="relative aspect-video rounded-xl sm:rounded-2xl overflow-hidden border border-border/50 bg-card"
             >
+              {/* Loading state */}
+              {isPodcastLoading && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-card z-10">
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                  >
+                    <Loader2 className="w-10 h-10 sm:w-12 sm:h-12 text-primary" />
+                  </motion.div>
+                  <p className="mt-4 text-sm text-muted-foreground">Ładowanie podcastu...</p>
+                </div>
+              )}
+              
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/videoseries?list=PLjG3OWxQw-xyzPzc_Lb_nNqDqFxNu9k5n"
+                src="https://www.youtube.com/embed/lul8QqyK_6o?rel=0"
                 title="Podcast Fotz Studio"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
                 className="w-full h-full"
+                onLoad={() => setIsPodcastLoading(false)}
               />
             </motion.div>
           </div>
