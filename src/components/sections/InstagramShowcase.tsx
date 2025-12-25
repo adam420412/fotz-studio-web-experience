@@ -11,12 +11,12 @@ interface InstagramPost {
 
 const instagramPosts: InstagramPost[] = [
   {
-    embedUrl: "https://www.instagram.com/reel/DIwWi11NySJ/?utm_source=ig_embed&amp;utm_campaign=loading",
+    embedUrl: "https://www.instagram.com/reel/DSn0ptXiHWt/embed",
     accountName: "@karlik_luxury.cars",
     category: "Luxury Cars"
   },
   {
-    embedUrl: "https://www.instagram.com/reel/DIsw-1qN5cF/?utm_source=ig_embed&amp;utm_campaign=loading",
+    embedUrl: "https://www.instagram.com/p/DSpMWiZjY9s/embed",
     accountName: "@landrover_karlik",
     category: "Land Rover"
   },
