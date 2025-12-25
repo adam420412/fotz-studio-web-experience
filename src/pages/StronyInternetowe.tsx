@@ -618,7 +618,7 @@ const StronyInternetowe = () => {
             <div className="max-w-4xl mx-auto">
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 {cityLinks.map((city, index) => {
-                  const isActive = city.href === "/strony-internetowe-poznan" || city.href === "/strony-internetowe-warszawa" || city.href === "/strony-internetowe-wroclaw" || city.href === "/strony-internetowe-krakow" || city.href === "/strony-internetowe-gdansk" || city.href === "/strony-internetowe-lodz";
+                  const isActive = city.href === "/strony-internetowe-poznan" || city.href === "/strony-internetowe-warszawa" || city.href === "/strony-internetowe-wroclaw" || city.href === "/strony-internetowe-krakow" || city.href === "/strony-internetowe-gdansk" || city.href === "/strony-internetowe-lodz" || city.href === "/strony-internetowe-szczecin";
                   return (
                     <FadeInView key={index} delay={index * 0.05}>
                       {isActive ? (
@@ -642,11 +642,6 @@ const StronyInternetowe = () => {
                   );
                 })}
               </div>
-              <FadeInView delay={0.5}>
-                <p className="text-center text-sm text-muted-foreground mt-8">
-                  Strony dla Poznania i Warszawy są już dostępne. Pozostałe miasta wkrótce.
-                </p>
-              </FadeInView>
             </div>
           </div>
         </section>
