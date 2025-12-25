@@ -702,15 +702,15 @@ const StronyInternetowe = () => {
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
               {whyUs.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full group">
-                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                      <item.icon className="w-7 h-7 text-primary" />
+                  <div className="p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full group">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-primary/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary/20 transition-colors">
+                      <item.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                     </div>
-                    <h3 className="text-lg font-semibold mb-3">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.desc}</p>
+                    <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">{item.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground">{item.desc}</p>
                   </div>
                 </FadeInView>
               ))}
@@ -719,30 +719,30 @@ const StronyInternetowe = () => {
         </section>
 
         {/* Section: Etapy realizacji */}
-        <section className="py-24">
+        <section className="py-16 sm:py-20 md:py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <div className="text-center mb-16">
-                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
-                  <Rocket className="w-4 h-4" />
+              <div className="text-center mb-10 sm:mb-12 md:mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium uppercase tracking-wider mb-3 sm:mb-4">
+                  <Rocket className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   Proces
                 </span>
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Jak wygląda <span className="text-gradient">realizacja projektu?</span>
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                   Przejrzysty proces od pierwszego kontaktu do uruchomienia strony.
                 </p>
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
               {processSteps.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="relative p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/20 transition-all group">
-                    <div className="text-6xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors mb-3">{item.step}</div>
-                    <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
+                  <div className="relative p-5 sm:p-6 rounded-xl sm:rounded-2xl bg-card border border-border/50 hover:border-primary/20 transition-all group">
+                    <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors mb-2 sm:mb-3">{item.step}</div>
+                    <h3 className="text-base sm:text-lg font-semibold mb-1.5 sm:mb-2">{item.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground">{item.desc}</p>
                   </div>
                 </FadeInView>
               ))}
@@ -751,43 +751,43 @@ const StronyInternetowe = () => {
         </section>
 
         {/* Section: Cennik */}
-        <section className="py-24 bg-card/30">
+        <section className="py-16 sm:py-20 md:py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <div className="text-center mb-16">
-                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+              <div className="text-center mb-10 sm:mb-12 md:mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium uppercase tracking-wider mb-3 sm:mb-4">
                   💰 Cennik
                 </span>
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Ile kosztuje <span className="text-gradient">strona internetowa?</span>
                 </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
                   Transparentne ceny. Bez ukrytych kosztów. Finalna wycena po poznaniu zakresu projektu.
                 </p>
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
               {pricing.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
+                  <div className={`p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 md:scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
                     {index === 1 && (
-                      <span className="inline-flex items-center gap-1 text-xs font-medium text-primary uppercase mb-4">
+                      <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-medium text-primary uppercase mb-3 sm:mb-4">
                         <Star className="w-3 h-3" /> Najpopularniejszy
                       </span>
                     )}
-                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground mb-4">{item.desc}</p>
-                    <div className="text-3xl font-bold text-gradient mb-6">{item.price}</div>
-                    <ul className="space-y-3 mb-8 flex-grow">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-1.5 sm:mb-2">{item.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">{item.desc}</p>
+                    <div className="text-2xl sm:text-3xl font-bold text-gradient mb-4 sm:mb-6">{item.price}</div>
+                    <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-grow">
                       {item.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                          <span className="text-sm">{feature}</span>
+                          <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" />
+                          <span className="text-xs sm:text-sm">{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button asChild variant={index === 1 ? "default" : "outline"} className="w-full">
+                    <Button asChild variant={index === 1 ? "default" : "outline"} className="w-full text-sm sm:text-base">
                       <Link to="/kontakt">Zapytaj o wycenę</Link>
                     </Button>
                   </div>
@@ -798,31 +798,31 @@ const StronyInternetowe = () => {
         </section>
 
         {/* Section: FAQ */}
-        <section className="py-24">
+        <section className="py-16 sm:py-20 md:py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <div className="text-center mb-16">
-                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+              <div className="text-center mb-10 sm:mb-12 md:mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium uppercase tracking-wider mb-3 sm:mb-4">
                   ❓ FAQ
                 </span>
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Często zadawane <span className="text-gradient">pytania</span>
                 </h2>
               </div>
             </FadeInView>
 
             <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
+              <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                 {faqItems.map((item, index) => (
                   <AccordionItem 
                     key={index} 
                     value={`item-${index}`} 
-                    className="border border-border/50 rounded-xl px-6 bg-card/50"
+                    className="border border-border/50 rounded-lg sm:rounded-xl px-4 sm:px-6 bg-card/50"
                   >
-                    <AccordionTrigger className="text-left hover:no-underline py-5">
-                      <span className="font-medium">{item.question}</span>
+                    <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-5">
+                      <span className="font-medium text-sm sm:text-base pr-2">{item.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-5">
+                    <AccordionContent className="text-muted-foreground pb-4 sm:pb-5 text-sm sm:text-base">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -869,32 +869,32 @@ const StronyInternetowe = () => {
         </section>
 
         {/* Section: CTA */}
-        <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[150px]" />
+            <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/30 rounded-full blur-[100px] sm:blur-[150px]" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Gotowy na stronę, która <span className="text-gradient">naprawdę sprzedaje?</span>
                 </h2>
-                <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
                   Porozmawiajmy o Twoim projekcie. Bezpłatna konsultacja, konkretna wycena, jasny plan działania.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="group text-lg px-8 py-6">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+                  <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <Link to="/kontakt">
-                      <Rocket className="mr-2 h-5 w-5" />
+                      <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       Umów bezpłatną rozmowę
-                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                  <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <a href="tel:+48790814814">
-                      <Phone className="mr-2 h-5 w-5" />
+                      <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       +48 790 814 814
                     </a>
                   </Button>
