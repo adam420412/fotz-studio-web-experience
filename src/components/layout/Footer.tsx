@@ -84,7 +84,7 @@ export function Footer() {
                   </a>
                 </div>
                 <div className="flex items-center gap-3 text-muted-foreground text-sm">
-                  <span>NIP: 7851806089</span>
+                  <span>🏢 NIP: 7851806089</span>
                 </div>
               </div>
 
