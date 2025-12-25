@@ -17,6 +17,18 @@ const categories = [
 
 const posts = [
   {
+    id: "ile-kosztuje-strona-internetowa",
+    title: "Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty",
+    excerpt:
+      "Sprawdź aktualny cennik stron internetowych w 2025 roku. Dowiedz się, ile kosztuje strona wizytówka, sklep internetowy i profesjonalna strona firmowa.",
+    category: "Strony internetowe",
+    author: "Zespół FOTZ",
+    date: "20 Dec 2024",
+    readTime: "15 min",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    featured: true,
+  },
+  {
     id: "jak-stworzyc-strone",
     title: "Jak stworzyć stronę internetową, która sprzedaje?",
     excerpt:
@@ -25,8 +37,8 @@ const posts = [
     author: "Tomasz Kowalski",
     date: "15 Dec 2024",
     readTime: "8 min",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
-    featured: true,
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    featured: false,
   },
   {
     id: "trendy-social-media-2025",
