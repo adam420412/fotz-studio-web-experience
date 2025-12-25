@@ -35,11 +35,11 @@ export function Footer() {
   return (
     <footer className="bg-background border-t border-border">
       {/* Main Footer */}
-      <div className="section-padding py-16">
+      <div className="section-padding py-10 md:py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {/* Brand Column */}
-            <div className="lg:col-span-1">
+            <div className="col-span-2 md:col-span-2 lg:col-span-1">
               <Link
                 to="/"
                 className="inline-block mb-4"
@@ -47,50 +47,50 @@ export function Footer() {
                 <img 
                   src={logoFotz} 
                   alt="Fotz Studio" 
-                  className="h-32 w-auto"
+                  className="h-16 sm:h-20 md:h-24 lg:h-32 w-auto"
                 />
               </Link>
-              <p className="text-muted-foreground mb-6 max-w-sm">
+              <p className="text-muted-foreground text-sm md:text-base mb-4 md:mb-6 max-w-sm">
                 Studio marketingu wzrostu. Projektujemy marketing, 
                 który realnie pozyskuje klientów.
               </p>
               
               {/* Contact Info */}
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Plac Wolności 16, 61-739 Poznań</span>
+              <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
+                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground text-sm">
+                  <MapPin className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
+                  <span className="text-xs md:text-sm">Plac Wolności 16, 61-739 Poznań</span>
                 </div>
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <a href="tel:+48790814814" className="hover:text-foreground transition-colors">
+                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground">
+                  <Phone className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
+                  <a href="tel:+48790814814" className="hover:text-foreground transition-colors text-xs md:text-sm">
                     +48 790 814 814
                   </a>
                 </div>
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                  <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors">
+                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground">
+                  <Mail className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
+                  <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors text-xs md:text-sm">
                     adam@fotz.pl
                   </a>
                 </div>
-                <div className="flex items-center gap-3 text-muted-foreground text-sm">
-                  <Building2 className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>NIP: 7851806089</span>
+                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground">
+                  <Building2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
+                  <span className="text-xs md:text-sm">NIP: 7851806089</span>
                 </div>
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-3">
+              <div className="flex gap-2 md:gap-3">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
+                    className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                     aria-label={social.label}
                   >
-                    <social.icon className="w-5 h-5" />
+                    <social.icon className="w-4 h-4 md:w-5 md:h-5" />
                   </a>
                 ))}
               </div>
@@ -98,13 +98,13 @@ export function Footer() {
 
             {/* Links Columns */}
             <div>
-              <h4 className="font-heading font-semibold text-foreground mb-4">Usługi</h4>
-              <ul className="space-y-3">
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Usługi</h4>
+              <ul className="space-y-2 md:space-y-3">
                 {footerLinks.uslugi.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
                     >
                       {link.name}
                     </Link>
@@ -114,13 +114,13 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-heading font-semibold text-foreground mb-4">Realizacje</h4>
-              <ul className="space-y-3">
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Realizacje</h4>
+              <ul className="space-y-2 md:space-y-3">
                 {footerLinks.realizacje.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
                     >
                       {link.name}
                     </Link>
@@ -129,14 +129,14 @@ export function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h4 className="font-heading font-semibold text-foreground mb-4">Firma</h4>
-              <ul className="space-y-3">
+            <div className="col-span-2 md:col-span-1">
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Firma</h4>
+              <ul className="space-y-2 md:space-y-3">
                 {footerLinks.firma.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
                     >
                       {link.name}
                     </Link>
@@ -149,11 +149,11 @@ export function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-border py-6">
-        <div className="container-wide px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} Fotz Studio. Wszystkie prawa zastrzeżone.</p>
-            <div className="flex gap-6">
+      <div className="border-t border-border py-4 md:py-6">
+        <div className="container-wide px-4 md:px-6 lg:px-12">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-xs md:text-sm text-muted-foreground">
+            <p className="text-center md:text-left">© {new Date().getFullYear()} Fotz Studio. Wszystkie prawa zastrzeżone.</p>
+            <div className="flex gap-4 md:gap-6">
               <Link to="/polityka-prywatnosci" className="hover:text-foreground transition-colors">
                 Polityka prywatności
               </Link>
