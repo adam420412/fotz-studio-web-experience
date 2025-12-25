@@ -700,17 +700,17 @@ const Pozycjonowanie = () => {
             </FadeInView>
 
             <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
+              <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                 {faqItems.map((item, index) => (
                   <AccordionItem 
                     key={index} 
                     value={`item-${index}`} 
-                    className="border border-border/50 rounded-xl px-6 bg-background"
+                    className="border border-border/50 rounded-lg sm:rounded-xl px-4 sm:px-6 bg-background"
                   >
-                    <AccordionTrigger className="text-left hover:no-underline py-5">
-                      <span className="font-medium">{item.question}</span>
+                    <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-5">
+                      <span className="font-medium text-sm sm:text-base pr-2">{item.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-5">
+                    <AccordionContent className="text-muted-foreground pb-4 sm:pb-5 text-sm sm:text-base">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -781,95 +781,95 @@ const Pozycjonowanie = () => {
                 </div>
               </FadeInView>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-16">
                 <FadeInView delay={0.1}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <FileCode className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <FileCode className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">SEO techniczne</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">SEO techniczne</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Fundament każdej skutecznej strategii SEO. <strong className="text-foreground">Core Web Vitals</strong>, 
                       indeksacja, struktura URL, schema markup – to wszystko wpływa na pozycje w Google.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Audyt techniczny strony</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Optymalizacja szybkości</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Dane strukturalne (JSON-LD)</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Audyt techniczny strony</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Optymalizacja szybkości</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Dane strukturalne (JSON-LD)</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.2}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <FileText className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <FileText className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Content marketing</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Content marketing</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       <strong className="text-foreground">Treść jest królem</strong> – ale tylko wartościowa. 
                       Tworzymy artykuły blogowe, opisy produktów i landing pages zoptymalizowane pod SEO.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Artykuły eksperckie (blog)</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Opisy kategorii i produktów</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Strategia słów kluczowych</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Artykuły eksperckie (blog)</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Opisy kategorii i produktów</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Strategia słów kluczowych</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.3}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <ExternalLink className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <ExternalLink className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Link building</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Link building</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Linki zwrotne to wciąż kluczowy czynnik rankingowy. Budujemy <strong className="text-foreground">naturalny profil linków</strong> 
                       z wartościowych źródeł – bez sztuczek, które mogą zaszkodzić.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Linki z portali branżowych</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Artykuły sponsorowane</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza profilu linków</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Linki z portali branżowych</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Artykuły sponsorowane</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Analiza profilu linków</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.4}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <BarChart className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <BarChart className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Monitoring i raporty</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Monitoring i raporty</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       SEO to proces. Monitorujemy <strong className="text-foreground">pozycje, ruch i konwersje</strong>. 
                       Comiesięczne raporty pokazują co działa i gdzie są szanse na wzrost.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Śledzenie pozycji fraz</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza ruchu organicznego</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Raporty z rekomendacjami</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Śledzenie pozycji fraz</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Analiza ruchu organicznego</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Raporty z rekomendacjami</li>
                     </ul>
                   </div>
                 </FadeInView>
               </div>
 
               <FadeInView delay={0.5}>
-                <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
-                  <div className="absolute top-6 left-8 text-6xl text-primary/30 font-serif">"</div>
-                  <blockquote className="text-xl md:text-2xl font-medium text-center max-w-3xl mx-auto pt-6 pb-4">
+                <div className="relative p-5 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl md:rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
+                  <div className="absolute top-4 sm:top-6 left-4 sm:left-8 text-4xl sm:text-5xl md:text-6xl text-primary/30 font-serif">"</div>
+                  <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center max-w-3xl mx-auto pt-4 sm:pt-6 pb-2 sm:pb-4 px-4">
                     <span className="text-foreground">Pozycjonowanie to inwestycja, która rośnie z czasem. Efekty SEO są trwałe – w przeciwieństwie do płatnych reklam.</span>
                   </blockquote>
-                  <p className="text-center text-muted-foreground">
+                  <p className="text-center text-sm sm:text-base text-muted-foreground">
                     — Zespół Fotz Studio
                   </p>
                 </div>
@@ -879,32 +879,32 @@ const Pozycjonowanie = () => {
         </section>
 
         {/* Section: CTA */}
-        <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[150px]" />
+            <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/30 rounded-full blur-[100px] sm:blur-[150px]" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Gotowy na więcej <span className="text-gradient">klientów z Google?</span>
                 </h2>
-                <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
                   Zamów bezpłatny audyt SEO i dowiedz się, jak możemy zwiększyć widoczność Twojej strony w wyszukiwarce.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="group text-lg px-8 py-6">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+                  <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <Link to="/kontakt">
-                      <Rocket className="mr-2 h-5 w-5" />
+                      <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       Zamów bezpłatny audyt SEO
-                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                  <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <a href="tel:+48790814814">
-                      <Phone className="mr-2 h-5 w-5" />
+                      <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       +48 790 814 814
                     </a>
                   </Button>

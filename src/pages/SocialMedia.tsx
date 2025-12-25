@@ -701,27 +701,27 @@ const SocialMedia = () => {
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
               {pricing.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
+                  <div className={`p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 md:scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
                     {index === 1 && (
-                      <span className="inline-flex items-center gap-1 text-xs font-medium text-primary uppercase mb-4">
+                      <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-medium text-primary uppercase mb-3 sm:mb-4">
                         <Star className="w-3 h-3" /> Najpopularniejszy
                       </span>
                     )}
-                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground mb-4">{item.desc}</p>
-                    <div className="text-3xl font-bold text-gradient mb-6">{item.price}</div>
-                    <ul className="space-y-3 mb-8 flex-grow">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-1.5 sm:mb-2">{item.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4">{item.desc}</p>
+                    <div className="text-2xl sm:text-3xl font-bold text-gradient mb-4 sm:mb-6">{item.price}</div>
+                    <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-grow">
                       {item.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
-                          <span className="text-sm">{feature}</span>
+                          <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" />
+                          <span className="text-xs sm:text-sm">{feature}</span>
                         </li>
                       ))}
                     </ul>
-                    <Button asChild variant={index === 1 ? "default" : "outline"} className="w-full">
+                    <Button asChild variant={index === 1 ? "default" : "outline"} className="w-full text-sm sm:text-base">
                       <Link to="/kontakt">Zapytaj o ofertę</Link>
                     </Button>
                   </div>
@@ -730,7 +730,7 @@ const SocialMedia = () => {
             </div>
 
             <FadeInView delay={0.3}>
-              <p className="text-center text-sm text-muted-foreground mt-8 max-w-2xl mx-auto">
+              <p className="text-center text-xs sm:text-sm text-muted-foreground mt-6 sm:mt-8 max-w-2xl mx-auto px-4">
                 * Ceny orientacyjne. Ostateczna wycena zależy od zakresu usług. Budżet reklamowy doliczany osobno.
               </p>
             </FadeInView>
@@ -738,31 +738,31 @@ const SocialMedia = () => {
         </section>
 
         {/* Section: FAQ */}
-        <section className="py-24 bg-card/30">
+        <section className="py-16 sm:py-20 md:py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
-              <div className="text-center mb-16">
-                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+              <div className="text-center mb-10 sm:mb-12 md:mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium uppercase tracking-wider mb-3 sm:mb-4">
                   ❓ FAQ
                 </span>
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Często zadawane <span className="text-gradient">pytania</span>
                 </h2>
               </div>
             </FadeInView>
 
             <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
+              <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
                 {faqItems.map((item, index) => (
                   <AccordionItem 
                     key={index} 
                     value={`item-${index}`}
-                    className="bg-background rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
+                    className="bg-background rounded-lg sm:rounded-xl border border-border/50 px-4 sm:px-6 data-[state=open]:border-primary/30"
                   >
-                    <AccordionTrigger className="text-left hover:no-underline py-5">
-                      <span className="font-medium">{item.question}</span>
+                    <AccordionTrigger className="text-left hover:no-underline py-4 sm:py-5">
+                      <span className="font-medium text-sm sm:text-base pr-2">{item.question}</span>
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-5">
+                    <AccordionContent className="text-muted-foreground pb-4 sm:pb-5 text-sm sm:text-base">
                       {item.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -831,95 +831,95 @@ const SocialMedia = () => {
                 </div>
               </FadeInView>
 
-              <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-16">
                 <FadeInView delay={0.1}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Target className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Target className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Strategia treści</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Strategia treści</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Skuteczne social media to nie random posting. To <strong className="text-foreground">spójna strategia</strong> – 
                       kalendarz publikacji, content pillars i dopasowanie do algorytmów każdej platformy.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza grupy docelowej</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Content calendar na miesiąc</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Dopasowanie formatów do platform</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Analiza grupy docelowej</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Content calendar na miesiąc</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Dopasowanie formatów do platform</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.2}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <TrendingUp className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <TrendingUp className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Reklamy Meta Ads</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Reklamy Meta Ads</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Facebook i Instagram Ads to potężne narzędzia targetowania. 
                       <strong className="text-foreground"> Lookalike audiences</strong>, retargeting, testy A/B – maksymalizujemy ROAS.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Konfiguracja Pixel & Conversions API</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Kampanie na różne cele</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Optymalizacja budżetu</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Konfiguracja Pixel & Conversions API</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Kampanie na różne cele</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Optymalizacja budżetu</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.3}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Camera className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Camera className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Content foto/video</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Content foto/video</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Reelsy, stories, karuzele – tworzymy <strong className="text-foreground">angażujący content</strong> 
                       dopasowany do trendów. Własne studio, profesjonalny sprzęt, szybka realizacja.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Produkcja Reels i TikToków</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Sesje produktowe i wizerunkowe</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Grafiki i animacje</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Produkcja Reels i TikToków</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Sesje produktowe i wizerunkowe</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Grafiki i animacje</li>
                     </ul>
                   </div>
                 </FadeInView>
 
                 <FadeInView delay={0.4}>
-                  <div className="group p-8 rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <BarChart className="w-7 h-7 text-primary" />
+                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <BarChart className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
                       </div>
-                      <h3 className="text-xl font-heading font-bold">Analityka i raportowanie</h3>
+                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Analityka i raportowanie</h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
                       Dane to podstawa decyzji. Śledzimy <strong className="text-foreground">KPI</strong>, 
                       analizujemy engagement rate, zasięgi i konwersje. Comiesięczne raporty z wnioskami.
                     </p>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Miesięczne raporty wyników</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Analiza konkurencji</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-primary" /> Rekomendacje optymalizacji</li>
+                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Miesięczne raporty wyników</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Analiza konkurencji</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Rekomendacje optymalizacji</li>
                     </ul>
                   </div>
                 </FadeInView>
               </div>
 
               <FadeInView delay={0.5}>
-                <div className="relative p-8 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
-                  <div className="absolute top-6 left-8 text-6xl text-primary/30 font-serif">"</div>
-                  <blockquote className="text-xl md:text-2xl font-medium text-center max-w-3xl mx-auto pt-6 pb-4">
+                <div className="relative p-5 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl md:rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
+                  <div className="absolute top-4 sm:top-6 left-4 sm:left-8 text-4xl sm:text-5xl md:text-6xl text-primary/30 font-serif">"</div>
+                  <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center max-w-3xl mx-auto pt-4 sm:pt-6 pb-2 sm:pb-4 px-4">
                     <span className="text-foreground">Social media to nie sprint, to maraton. Konsekwencja i strategia zawsze wygrywają z chaotycznym postingiem.</span>
                   </blockquote>
-                  <p className="text-center text-muted-foreground">
+                  <p className="text-center text-sm sm:text-base text-muted-foreground">
                     — Zespół Fotz Studio
                   </p>
                 </div>
@@ -929,32 +929,32 @@ const SocialMedia = () => {
         </section>
 
         {/* Section: CTA */}
-        <section className="py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
           <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[150px]" />
+            <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/30 rounded-full blur-[100px] sm:blur-[150px]" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
                   Gotowy na <span className="text-gradient">silną markę</span> w social mediach?
                 </h2>
-                <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+                <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
                   Porozmawiajmy o Twojej strategii. Bezpłatna konsultacja, konkretna wycena, jasny plan działania.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button asChild size="lg" className="group text-lg px-8 py-6">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+                  <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <Link to="/kontakt">
-                      <Rocket className="mr-2 h-5 w-5" />
+                      <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       Bezpłatna konsultacja
-                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                  <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                     <a href="tel:+48790814814">
-                      <Phone className="mr-2 h-5 w-5" />
+                      <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                       +48 790 814 814
                     </a>
                   </Button>
