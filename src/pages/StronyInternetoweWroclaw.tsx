@@ -38,36 +38,36 @@ import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
-const StronyInternetoweWarszawa = () => {
+const StronyInternetoweWroclaw = () => {
   const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Budujemy i projektujemy strony oraz sklepy internetowe." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Dbanie o pozycje w wyszukiwarce dla Twojej firmy." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Intuicyjne interfejsy, które konwertują." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Rozwijamy sklepy internetowe i platformy sprzedażowe." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i inne." },
-    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają ruch w klientów." },
+    { icon: Globe, title: "Strony internetowe", desc: "Budujemy profesjonalne strony www oraz sklepy internetowe." },
+    { icon: Search, title: "Pozycjonowanie SEO", desc: "Zwiększamy widoczność Twojej firmy w wyszukiwarkach." },
+    { icon: Palette, title: "Projektowanie UI/UX", desc: "Tworzymy nowoczesne strony internetowe z myślą o użytkowniku." },
+    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych Wrocław z integracjami." },
+    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
+    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
   ];
 
   const whyUs = [
-    { icon: Settings, title: "Nowoczesne technologie", desc: "React, Next.js, WordPress, Webflow, Shopify - dobieramy technologię do projektu." },
-    { icon: Search, title: "SEO w standardzie", desc: "Każda strona jest zoptymalizowana pod wyszukiwarki od pierwszego dnia." },
-    { icon: Handshake, title: "Partnerskie podejście", desc: "Nie tylko wykonujemy - doradzamy i wspieramy w rozwoju." },
-    { icon: Smartphone, title: "Mobile-first", desc: "Projektujemy z myślą o urządzeniach mobilnych." },
-    { icon: Shield, title: "Bezpieczeństwo", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
-    { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu strony." },
+    { icon: Settings, title: "Nowoczesne technologie", desc: "React, Next.js, WordPress, Webflow - dobieramy technologię do projektu strony internetowej." },
+    { icon: Search, title: "SEO w standardzie", desc: "Każda strona www jest zoptymalizowana pod wyszukiwarki od pierwszego dnia." },
+    { icon: Handshake, title: "Partnerskie podejście", desc: "Specjalizujemy się w tworzeniu stron skrojonych na miarę Twojej firmy." },
+    { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
+    { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
+    { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
   ];
 
   const pricing = [
-    { title: "Strona wizytówkowa", desc: "Prosta strona internetowa prezentująca podstawowe informacje o firmie.", price: "od 2 000 zł netto" },
-    { title: "Strona firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjonalnościami i podstronami.", price: "od 5 000 zł netto" },
-    { title: "Sklep internetowy", desc: "Zaawansowana platforma e-commerce z integracjami.", price: "od 8 000 zł netto" },
+    { title: "Strona wizytówkowa", desc: "Prosta strona www prezentująca podstawowe informacje o firmie.", price: "od 2 000 zł netto" },
+    { title: "Strona firmowa", desc: "Rozbudowana strona internetowa z dodatkowymi funkcjonalnościami.", price: "od 5 000 zł netto" },
+    { title: "Sklep internetowy", desc: "Zaawansowana platforma e-commerce z integracjami płatności.", price: "od 8 000 zł netto" },
   ];
 
   const processSteps = [
-    { step: "01", title: "Brief i analiza", desc: "Poznajemy Twoje cele biznesowe i analizujemy konkurencję." },
-    { step: "02", title: "Projekt UX/UI", desc: "Tworzymy makiety i projekt graficzny strony." },
-    { step: "03", title: "Programowanie", desc: "Kodujemy stronę z dbałością o wydajność i SEO." },
-    { step: "04", title: "Testy i wdrożenie", desc: "Testujemy na różnych urządzeniach i uruchamiamy." },
+    { step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy." },
+    { step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność." },
+    { step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
+    { step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
   ];
 
   const caseStudies = [
@@ -109,62 +109,63 @@ const StronyInternetoweWarszawa = () => {
 
   const faqItems = [
     {
-      question: "Dlaczego warto zainwestować w tworzenie stron internetowych Warszawa?",
-      answer: "Inwestycja w tworzenie stron internetowych w Warszawie to kluczowy krok do prezentacji swojej firmy w internecie na najwyższym poziomie. Profesjonalne wykonanie strony zwiększa zaufanie potencjalnych klientów i umożliwia skuteczne pozycjonowanie, co jest niezbędne do osiągnięcia sukcesu na konkurencyjnym rynku warszawskim."
+      question: "Jakie są korzyści z posiadania strony internetowej dla firm we Wrocławiu?",
+      answer: "Posiadanie strony internetowej dla firm przynosi wiele korzyści: zwiększenie widoczności online, budowanie wiarygodności, możliwość prezentacji oferty 24/7, łatwiejszy kontakt z klientami oraz potencjalne zwiększenie sprzedaży. Dobra strona www może znacząco wpłynąć na rozwój biznesu w mieście Wrocław."
     },
     {
-      question: "Jakie są kluczowe cechy responsywnych stron internetowych?",
-      answer: "Responsywne strony internetowe automatycznie dostosowują swoją strukturę i wygląd do rozmiaru ekranu urządzenia. To kluczowe dla użytkowników mobilnych, gwarantuje komfort przeglądania i jest jednym z kryteriów oceny przez wyszukiwarki jak Google."
+      question: "Dlaczego warto skorzystać z usług profesjonalnej agencji do projektowania stron www?",
+      answer: "Profesjonalna agencja interaktywna zapewnia kompleksowe podejście do projektowania i tworzenia stron internetowych. Eksperci zadbają o estetykę, funkcjonalność i optymalizację strony, co przekłada się na lepsze wyniki w wyszukiwarkach internetowych i pozytywne wrażenia użytkowników."
     },
     {
-      question: "Na czym polega pozycjonowanie stron www Warszawa?",
-      answer: "Pozycjonowanie stron www to działania mające na celu podniesienie pozycji strony w wynikach wyszukiwania Google dla wybranych fraz kluczowych. Strony znajdujące się na czołowych pozycjach są częściej odwiedzane, co zwiększa potencjalny ruch i liczbę leadów."
+      question: "Czy oferujecie tworzenie sklepów internetowych we Wrocławiu?",
+      answer: "Tak, specjalizujemy się w tworzeniu sklepów internetowych we Wrocławiu. Nasze usługi obejmują projektowanie i implementację funkcjonalnych, atrakcyjnych wizualnie i łatwych w obsłudze platform e-commerce, dostosowanych do indywidualnych potrzeb klienta."
     },
     {
-      question: "Ile kosztuje wykonanie strony internetowej w Warszawie?",
-      answer: "Ceny stron internetowych różnią się w zależności od kompleksowości projektu, funkcjonalności, zastosowanych technologii i czasu realizacji. Strona wizytówkowa zaczyna się od ok. 2000 zł, strona firmowa od 5000 zł, a sklep internetowy od 8000 zł netto."
+      question: "Co wyróżnia wyjątkowe strony internetowe?",
+      answer: "Wyjątkowe strony internetowe charakteryzują się unikalnym designem, intuicyjną nawigacją, szybkością działania oraz responsywnością. Każda strona www powinna odzwierciedlać tożsamość marki, być łatwa w obsłudze dla użytkowników i zoptymalizowana pod kątem wyszukiwarek."
     },
     {
-      question: "Czy oferujecie projektowanie stron www i sklepy internetowe?",
-      answer: "Tak, oferujemy kompleksowe projektowanie stron www oraz tworzenie sklepów internetowych. To umożliwia klientom posiadanie spójnej wizualnie i funkcjonalnie obecności w internecie."
+      question: "Jak przebiega proces projektowania i tworzenia stron?",
+      answer: "Proces tworzenia strony internetowej obejmuje kilka etapów: konsultację z klientem, analizę potrzeb, tworzenie projektu graficznego strony, programowanie, testowanie oraz wdrożenie. Na każdym etapie dbamy o to, aby projekt Twojej strony internetowej spełniał najwyższe standardy."
     },
     {
-      question: "Jakie są zalety posiadania sklepu internetowego?",
-      answer: "Sklep internetowy to dodatkowy kanał sprzedaży umożliwiający dotarcie do klientów z całej Polski i zagranicy. E-commerce pozwala na łatwe skalowanie biznesu, dostęp do dokładnych danych o klientach oraz działanie 24/7 bez potrzeby fizycznej przestrzeni."
+      question: "Czy oferujecie tworzenie stron internetowych dla małych firm?",
+      answer: "Oczywiście, specjalizujemy się w tworzeniu stron internetowych we Wrocławiu dla firm różnej wielkości, w tym małych przedsiębiorstw. Nasze rozwiązania są dostosowane do budżetu i potrzeb każdego klienta, zapewniając profesjonalną obecność online."
     },
     {
-      question: "Jak długo trwa proces tworzenia strony internetowej?",
-      answer: "Czas realizacji zależy od specyfiki projektu. Standardowo prosta strona wizytówkowa to 2-3 tygodnie, strona firmowa 4-8 tygodni, a sklep internetowy 8-16 tygodni. Doświadczenie naszego zespołu często skraca te czasy przy zachowaniu wysokiej jakości."
+      question: "Jakie elementy składają się na najlepsze strony internetowe?",
+      answer: "Najlepsze strony internetowe łączą w sobie atrakcyjny design, intuicyjną nawigację, szybkość ładowania, responsywność, wysokiej jakości treści oraz optymalizację SEO. Tworzymy nowoczesne strony internetowe zawierające te kluczowe elementy."
     },
     {
-      question: "Jak monitorować efektywność strony internetowej?",
-      answer: "Efektywność strony można monitorować za pomocą Google Analytics i Search Console. Pozwalają na śledzenie kluczowych metryk: liczby odwiedzin, czasu na stronie, współczynnika odrzuceń oraz konwersji. Regularna analiza pomaga w optymalizacji."
+      question: "Czy oferujecie wsparcie po zakończeniu projektu strony www?",
+      answer: "Tak, zapewniamy wsparcie techniczne i konsultacje po zakończeniu projektu. Oferujemy również usługi utrzymania i aktualizacji stron www we Wrocławiu, aby zapewnić ciągłość działania i aktualność Twojej witryny."
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Tworzenie Stron Internetowych Warszawa | Projektowanie WWW | Fotz</title>
+        <title>Tworzenie Stron Internetowych Wrocław | Projektowanie WWW | FOTZ</title>
         <meta 
           name="description" 
-          content="Tworzenie stron internetowych Warszawa. Projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO. Profesjonalna budowa stron dla firm z Warszawy." 
+          content="Tworzenie stron internetowych Wrocław. Projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO. Profesjonalna budowa stron dla firm z Wrocławia." 
         />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-warszawa" />
+        <meta name="keywords" content="tworzenie stron internetowych wrocław, strony www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław, strona internetowa wrocław" />
+        <link rel="canonical" href="https://fotz.pl/strony-internetowe-wroclaw" />
       </Helmet>
       
       <ServiceSchema 
-        name="Tworzenie Stron Internetowych Warszawa"
-        description="Profesjonalne tworzenie stron internetowych dla firm z Warszawy. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
-        provider="Fotz Studio"
-        areaServed="Warszawa"
+        name="Tworzenie Stron Internetowych Wrocław"
+        description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
+        provider="FOTZ Studio"
+        areaServed="Wrocław"
       />
       
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Warszawa", url: "https://fotz.pl/strony-internetowe-warszawa" },
+          { name: "Wrocław", url: "https://fotz.pl/strony-internetowe-wroclaw" },
         ]}
       />
       
@@ -189,17 +190,17 @@ const StronyInternetoweWarszawa = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Strony WWW Warszawa
+                Strony WWW Wrocław
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Tworzenie stron www <span className="text-gradient">Warszawa</span>
+                Tworzenie stron www <span className="text-gradient">Wrocław</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                W dynamicznie rozwijającym się świecie cyfrowym, strona internetowa stała się kluczowym elementem 
-                każdej firmy. Dla biznesów z Warszawy, konkurencyjnego rynku pełnego innowacji, profesjonalna 
-                strona www to nie opcja, ale konieczność.
+                W dobie intensywnej rywalizacji na rynku cyfrowym, <strong>projektowanie i tworzenie stron</strong> odgrywa 
+                kluczową rolę w budowaniu wizerunku każdej firmy. Profesjonalna <strong>strona internetowa</strong> to nie 
+                tylko wizytówka przedsiębiorstwa, ale i efektywne narzędzie do pozyskiwania klientów we Wrocławiu.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -226,29 +227,27 @@ const StronyInternetoweWarszawa = () => {
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Jak tworzyć efektywną stronę www dla firm z Warszawy?
+                  Czym jest profesjonalne projektowanie stron internetowych Wrocław?
                 </h2>
                 <div className="prose prose-invert max-w-none">
-                  <h3>Ustalanie celów strony internetowej</h3>
                   <p>
-                    Tworzenie stron www w Warszawie zaczyna się od zrozumienia i jasnego określenia celów biznesowych. 
-                    Czy ma to być strona wizytówka firmy, sklep internetowy, czy platforma do rezerwacji usług? 
-                    Cele te definiują funkcjonalności strony, jej strukturę oraz content, który powinien spełniać 
-                    oczekiwania docelowej grupy klientów.
+                    Tworzenie <strong>profesjonalnych stron</strong> jest kluczem do zwiększenia rozpoznawalności firmy 
+                    w internecie. <strong>Projektowanie stron internetowych Wrocław</strong> oznacza nie tylko estetyczny 
+                    wygląd, ale również funkcjonalność, szybkość działania oraz zgodność z zasadami UX.
                   </p>
                   
-                  <h3>Wybór technologii projektowania stron</h3>
+                  <h3>Inwestycja w projektowanie stron internetowych</h3>
                   <p>
-                    Wybór technologii jest krytycznym elementem w procesie tworzenia stron internetowych. 
-                    W Warszawie firmom oferowane są rozmaite technologie, od prostych konstruktorów stron www 
-                    po zaawansowane systemy zarządzania treścią (CMS) i frameworki webowe jak React czy Next.js.
+                    Inwestycja w <strong>projektowania stron internetowych</strong> przekłada się na lepsze wyniki biznesowe. 
+                    <strong>Stworzenie strony internetowej</strong> dostosowanej do specyfiki branży, lokalnych potrzeb i 
+                    wymagań algorytmów wyszukiwarek sprawia, że witryna jest łatwo dostępna oraz atrakcyjna dla klientów.
                   </p>
                   
-                  <h3>Znaczenie responsywności strony</h3>
+                  <h3>Dla kogo jest projektowanie stron we Wrocławiu?</h3>
                   <p>
-                    W dobie wszechobecnych smartfonów, projektowanie stron internetowych musi uwzględniać responsywność. 
-                    Strony, które poprawnie wyświetlają się na urządzeniach mobilnych, nie tylko zapewniają lepszą 
-                    użyteczność, ale też są lepiej oceniane przez wyszukiwarki Google.
+                    <strong>Projektowania i tworzenia stron internetowych</strong> we Wrocławiu to oferta skierowana zarówno 
+                    do małych, jak i większych przedsiębiorstw. Dzięki niej zyskujesz nie tylko wygląd i funkcjonalność, 
+                    ale i możliwość szybkiego wprowadzania zmian oraz optymalizowania <strong>zawartości strony</strong>.
                   </p>
                 </div>
               </FadeInView>
@@ -263,10 +262,10 @@ const StronyInternetoweWarszawa = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Usługi</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Projektowanie stron internetowych Warszawa
+                  Projektowanie stron internetowych Wrocław
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi tworzenia stron www dla warszawskich firm - od projektu po pozycjonowanie.
+                  Kompleksowe usługi tworzenia stron www dla wrocławskich firm - od projektu graficznego po pozycjonowanie stron.
                 </p>
               </div>
             </FadeInView>
@@ -285,33 +284,35 @@ const StronyInternetoweWarszawa = () => {
           </div>
         </section>
 
-        {/* UI/UX Section */}
+        {/* Wizytówka Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Projektowanie stron internetowych: od czego zacząć?</h2>
+                  <h2>Strona internetowa to wizytówka każdej firmy - czy warto postawić na pozycjonowanie stron?</h2>
                   
-                  <h3>Przegląd najlepszych praktyk w projektowaniu UI/UX</h3>
                   <p>
-                    Projektowanie stron internetowych musi opierać się na solidnych fundamentach UI/UX. 
-                    Dobre praktyki są kluczowe dla stworzenia intuicyjnych, atrakcyjnych i łatwych w obsłudze stron. 
-                    Kładziemy duży nacisk na analizę potrzeb użytkowników oraz testowanie prototypów strony.
+                    <strong>Strona internetowa to wizytówka każdej</strong> marki w sieci. Jeśli jest starannie zaprojektowana, 
+                    staje się pierwszym punktem kontaktu z klientem, budując zaufanie oraz pozytywny wizerunek. 
+                    <strong>Strona internetowa</strong> umożliwia prezentację oferty, publikację informacji o produktach 
+                    i usługach, a także zachęca do interakcji.
                   </p>
                   
-                  <h3>Rola badania rynku w tworzeniu projektu strony www</h3>
+                  <h3>Pozycjonowanie stron internetowych</h3>
                   <p>
-                    Zrozumienie rynku i konkurencji jest niezbędne do stworzenia strony internetowej, która będzie 
-                    wyróżniać się na tle innych. Badanie rynku umożliwia identyfikację trendów, preferencji odbiorców 
-                    oraz praktyk, które najlepiej sprawdzają się w danej branży.
+                    Aby Twoja <strong>strona lub sklep</strong> były widoczne w internecie, warto zainwestować w 
+                    <strong>pozycjonowanie stron</strong>. Dzięki odpowiedniej optymalizacji treści, kodu i linków, 
+                    Twój serwis będzie pojawiał się wyżej w <strong>wyszukiwarkach internetowych</strong>, co przełoży 
+                    się na większy ruch i konwersje.
                   </p>
                   
-                  <h3>Wybieranie kolorystyki i typografii adekwatnej do branży</h3>
+                  <h3>Profesjonalne audyty SEO</h3>
                   <p>
-                    Wybór kolorów i typografii ma ogromny wpływ na odbiór strony przez użytkowników. 
-                    Barwy powinny być spójne z identyfikacją wizualną firmy, a typografia musi zapewniać 
-                    czytelność na różnych urządzeniach oraz być adekwatna do charakteru branży.
+                    Warto pamiętać, że <strong>pozycjonowaniu stron internetowych</strong> służy nie tylko zdobywaniu 
+                    lepszych pozycji, ale także długofalowemu utrzymaniu widoczności. Regularne audyty, w tym 
+                    <strong>profesjonalne audyty SEO już istniejących</strong> witryn, pozwalają na bieżąco dostosowywać 
+                    strategię i reagować na zmiany algorytmów.
                   </p>
                 </div>
               </FadeInView>
@@ -329,7 +330,7 @@ const StronyInternetoweWarszawa = () => {
                   Przykłady naszych stron internetowych
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Zobacz projekty, które zrealizowaliśmy dla naszych klientów.
+                  Zobacz projekty, które zrealizowaliśmy. Tworzymy profesjonalne strony i sklepy internetowe.
                 </p>
               </div>
             </FadeInView>
@@ -373,32 +374,69 @@ const StronyInternetoweWarszawa = () => {
           </div>
         </section>
 
-        {/* E-commerce Section */}
+        {/* Agencja Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Sklepy internetowe Warszawa: jak zaprojektować stronę sprzedażową?</h2>
+                  <h2>Dlaczego agencja interaktywna z Wrocławia to dobry wybór dla Twojej strony?</h2>
                   
-                  <h3>Integracja z systemami płatności i zarządzania magazynem</h3>
                   <p>
-                    Projektowanie sklepów internetowych wymaga szczególnej uwagi na integrację z systemami 
-                    płatności i zarządzania magazynem. Automatyzacja procesów płatności, zarządzanie stanami 
-                    magazynowymi i łatwość dokonywania transakcji to kluczowe elementy wpływające na efektywność sprzedaży.
+                    Wybierając <strong>agencję interaktywną</strong> z Wrocławia, zyskujesz dostęp do specjalistów, 
+                    którzy <strong>specjalizują się w tworzeniu stron</strong> skrojonych na miarę. Lokalny rynek jest 
+                    dynamiczny, dlatego eksperci doskonale rozumieją specyfikę <strong>miasta Wrocław</strong>.
                   </p>
                   
-                  <h3>Optymalizacja procesu zakupowego</h3>
+                  <h3>Kompleksowe rozwiązania</h3>
                   <p>
-                    Optymalizacja procesu zakupowego jest niezbędna, aby zapewnić użytkownikom maksymalną wygodę 
-                    i minimalizować liczbę porzuconych koszyków. To obejmuje zarówno techniczne aspekty jak szybkość 
-                    ładowania, jak i intuicyjność interfejsu czy uproszczenie procesu checkout.
+                    Taka <strong>agencja</strong> zapewni Ci nie tylko <strong>profesjonalne tworzenie stron www</strong>, 
+                    ale także integracje z mediami społecznościowymi, systemami płatności czy narzędziami analitycznymi. 
+                    Możesz liczyć na kompleksowe rozwiązania, w tym <strong>internetowe dla firm</strong>, a także na 
+                    wsparcie w zakresie optymalizacji, która poprawia <strong>funkcjonowanie strony</strong>.
                   </p>
                   
-                  <h3>Użyteczność i bezpieczeństwo sklepu internetowego</h3>
+                  <h3>Tworzenie stron internetowych Wrocław wspiera lokalny biznes</h3>
                   <p>
-                    Bez względu na branżę, użyteczność i bezpieczeństwo są podstawą każdego sklepu internetowego. 
-                    Zapewniamy, że wszystkie dane klientów są bezpiecznie przechowywane i chronione przed atakami.
+                    <strong>Tworzenie stron internetowych Wrocław</strong> to szansa na dotarcie do klientów z okolicy 
+                    i wykorzystanie lokalnych możliwości rynkowych. Wiele osób szuka usług, wpisując w Google frazy 
+                    typu "<strong>www Wrocław</strong>" czy "<strong>stron internetowych Wrocław</strong>".
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* E-commerce Section */}
+        <section className="py-20 bg-card/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <div className="prose prose-invert max-w-none">
+                  <h2>Sklepy internetowe Wrocław - zwiększ zyski Twojej firmy</h2>
+                  
+                  <p>
+                    <strong>Tworzymy profesjonalne</strong> rozwiązania, a profesjonalne <strong>strony i sklepy</strong> 
+                    e-commerce znacząco zwiększają potencjał sprzedażowy. Wdrożenie funkcjonalnego <strong>sklepu 
+                    internetowego</strong> z intuicyjną nawigacją, bezpiecznymi płatnościami oraz szybką realizacją 
+                    zamówień przekształca odwiedzających w klientów.
+                  </p>
+                  
+                  <h3>Tworzenie sklepów internetowych</h3>
+                  <p>
+                    <strong>Tworzenie sklepów internetowych</strong> i rozbudowanych platform zakupowych daje szansę 
+                    na dotarcie do odbiorców nie tylko z Wrocławia, ale także spoza regionu. Łatwy dostęp do produktów, 
+                    przemyślana struktura kategorii oraz integracje z mediami społecznościowymi przyczyniają się do 
+                    wzrostu zainteresowania Twoimi produktami.
+                  </p>
+                  
+                  <h3>Koszt budowy strony internetowej</h3>
+                  <p>
+                    <strong>Projektowanie stron i sklepów internetowych</strong> ma bezpośredni wpływ na <strong>koszt 
+                    budowy strony internetowej</strong>. Cena zależy od złożoności funkcjonalności, designu, integracji 
+                    oraz prac programistycznych. Jednak inwestycja w <strong>profesjonalne tworzenie stron</strong> 
+                    szybko się zwraca.
                   </p>
                 </div>
               </FadeInView>
@@ -407,7 +445,7 @@ const StronyInternetoweWarszawa = () => {
         </section>
 
         {/* Why Us Section */}
-        <section className="py-20 bg-card/30">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -416,7 +454,7 @@ const StronyInternetoweWarszawa = () => {
                   Dlaczego warto nam zlecić tworzenie strony?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron, które działają.
+                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm.
                 </p>
               </div>
             </FadeInView>
@@ -424,7 +462,7 @@ const StronyInternetoweWarszawa = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {whyUs.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full">
+                  <div className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full">
                     <item.icon className="w-10 h-10 text-primary mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
@@ -436,16 +474,16 @@ const StronyInternetoweWarszawa = () => {
         </section>
 
         {/* Process Section */}
-        <section className="py-20">
+        <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak wygląda współpraca?
+                  Jak wygląda proces tworzenia strony internetowej?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Przejrzysty proces od briefu do wdrożenia.
+                  Przejrzysty proces od briefu do wdrożenia nowej strony internetowej.
                 </p>
               </div>
             </FadeInView>
@@ -453,7 +491,7 @@ const StronyInternetoweWarszawa = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
               {processSteps.map((step, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="relative p-6 rounded-xl bg-card border border-border/50">
+                  <div className="relative p-6 rounded-xl bg-background border border-border/50">
                     <span className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-lg">
                       {step.step}
                     </span>
@@ -467,16 +505,16 @@ const StronyInternetoweWarszawa = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-20 bg-card/30">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Cennik tworzenia stron www Warszawa
+                  Cennik tworzenia stron www Wrocław
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Transparentne ceny dopasowane do zakresu projektu.
+                  Transparentne ceny dopasowane do zakresu projektu strony internetowej.
                 </p>
               </div>
             </FadeInView>
@@ -484,7 +522,7 @@ const StronyInternetoweWarszawa = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {pricing.map((plan, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-xl border h-full flex flex-col ${index === 1 ? "bg-primary/5 border-primary/30" : "bg-background border-border/50"}`}>
+                  <div className={`p-8 rounded-xl border h-full flex flex-col ${index === 1 ? "bg-primary/5 border-primary/30" : "bg-card border-border/50"}`}>
                     <h3 className="text-xl font-semibold mb-2">{plan.title}</h3>
                     <p className="text-muted-foreground text-sm mb-4">{plan.desc}</p>
                     <div className="text-2xl font-bold text-primary mb-6">{plan.price}</div>
@@ -505,33 +543,34 @@ const StronyInternetoweWarszawa = () => {
         </section>
 
         {/* SEO Section */}
-        <section className="py-20">
+        <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Pozycjonowanie i optymalizacja stron www dla firm z Warszawy</h2>
+                  <h2>Strony www Wrocław i ich widoczność w internecie</h2>
                   
-                  <h3>Zasady skutecznego SEO dla lokalnych przedsiębiorstw</h3>
                   <p>
-                    Skuteczne pozycjonowanie stron wymaga odpowiedniej strategii SEO, szczególnie dla firm 
-                    lokalnych z Warszawy. Obejmuje to optymalizację treści pod kątem słów kluczowych, 
-                    zwiększanie prędkości ładowania strony, budowanie linków zewnętrznych oraz optymalizację 
-                    pod urządzenia mobilne. Lokalne SEO pozwala na dotarcie do klientów w najbliższym otoczeniu firmy.
+                    Wysoka jakość <strong>strony www Wrocław</strong> i <strong>stron internetowych we Wrocławiu</strong> 
+                    to klucz do uzyskania lepszej widoczności w sieci. Dobrze zaprojektowane witryny, wyposażone w 
+                    nowoczesne funkcje i zoptymalizowane pod kątem SEO, pomagają Twojej marce dotrzeć do szerszego 
+                    grona klientów.
                   </p>
                   
-                  <h3>Optymalizacja pod kątem urządzeń mobilnych</h3>
+                  <h3>Responsywne strony internetowe</h3>
                   <p>
-                    Optymalizacja strony pod kątem urządzeń mobilnych jest niezbędna, aby uzyskać wysoką pozycję 
-                    w wynikach wyszukiwania. Google oraz inne wyszukiwarki preferują strony przyjazne dla 
-                    użytkowników mobilnych, co bezpośrednio przekłada się na większą widoczność i ruch.
+                    Stawiając na <strong>responsywne strony internetowe</strong>, zadbasz o to, aby Twoja witryna działała 
+                    sprawnie na wszystkich urządzeniach – od komputerów stacjonarnych, przez tablety, po smartfony. 
+                    W ten sposób <strong>tworzymy responsywne strony internetowe</strong>, które są przyjazne zarówno 
+                    dla klientów, jak i algorytmów Google.
                   </p>
                   
-                  <h3>Monitoring efektów pozycjonowania</h3>
+                  <h3>Wrocław i cała Polska</h3>
                   <p>
-                    Monitoring efektów pozycjonowania jest kluczowy, aby ocenić skuteczność strategii SEO. 
-                    Używanie narzędzi analitycznych pozwala na śledzenie postępów w zakresie pozycji słów kluczowych, 
-                    ruchu na stronie i zachowań użytkowników.
+                    Działając w ramach <strong>Wrocław i cała Polska</strong>, możesz liczyć na to, że opracowane w 
+                    stolicy Dolnego Śląska <strong>strony www Wrocław</strong> będą atrakcyjne nie tylko lokalnie, 
+                    ale i na terenie całego kraju. <strong>Tworzymy strony internetowe dla firm</strong> o różnej 
+                    skali działalności.
                   </p>
                 </div>
               </FadeInView>
@@ -540,7 +579,7 @@ const StronyInternetoweWarszawa = () => {
         </section>
 
         {/* Cities Section */}
-        <section className="py-20 bg-card/30">
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-12">
@@ -565,7 +604,7 @@ const StronyInternetoweWarszawa = () => {
                       key={index}
                       to={city.href}
                       className={`px-6 py-3 rounded-full font-medium transition-colors ${
-                        city.href === "/strony-internetowe-warszawa" 
+                        city.href === "/strony-internetowe-wroclaw" 
                           ? "bg-primary text-primary-foreground" 
                           : "bg-card border border-border/50 text-foreground hover:border-primary/30"
                       }`}
@@ -588,7 +627,7 @@ const StronyInternetoweWarszawa = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20">
+        <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -597,7 +636,7 @@ const StronyInternetoweWarszawa = () => {
                   Najczęściej zadawane pytania
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na pytania dotyczące tworzenia stron w Warszawie.
+                  Odpowiedzi na pytania dotyczące tworzenia stron we Wrocławiu.
                 </p>
               </div>
             </FadeInView>
@@ -609,7 +648,7 @@ const StronyInternetoweWarszawa = () => {
                     <AccordionItem 
                       key={index} 
                       value={`item-${index}`}
-                      className="bg-card rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
+                      className="bg-background rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
                     >
                       <AccordionTrigger className="text-left hover:no-underline py-6">
                         <span className="font-semibold pr-4">{item.question}</span>
@@ -631,10 +670,10 @@ const StronyInternetoweWarszawa = () => {
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Gotowy na profesjonalną stronę internetową?
+                  Gotowy na profesjonalną stronę internetową we Wrocławiu?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Warszawy.
+                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Wrocławia i całej Polski.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="group">
@@ -659,4 +698,4 @@ const StronyInternetoweWarszawa = () => {
   );
 };
 
-export default StronyInternetoweWarszawa;
+export default StronyInternetoweWroclaw;
