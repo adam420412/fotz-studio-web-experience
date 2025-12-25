@@ -23,11 +23,11 @@ const navLinksData = [
 
 const servicesDropdownData = [
   { name: { pl: "Wszystkie usługi", en: "All services" }, href: "/uslugi" },
-  { name: { pl: "Social Media", en: "Social Media" }, href: "/social-media-poznan" },
-  { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe-poznan" },
-  { name: { pl: "Fotograf", en: "Photographer" }, href: "/fotograf-poznan" },
-  { name: { pl: "Pozycjonowanie SEO", en: "SEO" }, href: "/pozycjonowanie-stron-poznan" },
-  { name: { pl: "Produkcja Filmów", en: "Film Production" }, href: "/produkcja-filmow-poznan" },
+  { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe" },
+  { name: { pl: "Social Media", en: "Social Media" }, href: "/social-media" },
+  { name: { pl: "Pozycjonowanie SEO", en: "SEO" }, href: "/pozycjonowanie" },
+  { name: { pl: "Produkcja Filmów", en: "Film Production" }, href: "/produkcja-filmow" },
+  { name: { pl: "Fotografia", en: "Photography" }, href: "/fotografia" },
 ];
 
 export function Navbar() {

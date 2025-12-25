@@ -42,7 +42,7 @@ export function VideoShowcase() {
         >
           <div className="relative aspect-[9/16] md:aspect-video rounded-2xl md:rounded-3xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
             <video
-              src="/videos/fotz-reel.mp4"
+              src="/videos/skaland-osiedle.mp4"
               autoPlay
               muted
               loop
@@ -60,7 +60,7 @@ export function VideoShowcase() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="text-center mt-6 text-muted-foreground"
           >
-            Realizacja dla Lech Poznań • Enea Stadion
+            Realizacja dla Skaland Osiedle
           </motion.p>
         </motion.div>
       </div>
