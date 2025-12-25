@@ -28,6 +28,10 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
+import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
+
 const StronyInternetowe = () => {
   const problems = [
     { 
@@ -142,19 +146,22 @@ const StronyInternetowe = () => {
       title: "Skaland Osiedle",
       category: "Strona deweloperska",
       result: "+280% zapytań",
-      link: "/realizacje/apartamenty-chorwacja"
+      link: "/realizacje/apartamenty-chorwacja",
+      image: apartamentyImg
     },
     {
       title: "Victory Cars",
       category: "Strona motoryzacyjna",
       result: "+420% ruchu organicznego",
-      link: "/realizacje/victory-cars"
+      link: "/realizacje/victory-cars",
+      image: victoryCarsImg
     },
     {
       title: "Cute Dumpling",
       category: "Strona gastronomiczna",
       result: "+190% rezerwacji online",
-      link: "/realizacje/cute-dumpling"
+      link: "/realizacje/cute-dumpling",
+      image: cuteDumplingImg
     },
   ];
 
@@ -350,13 +357,22 @@ const StronyInternetowe = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
               {caseStudies.map((study, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <Link to={study.link} className="group block">
-                    <div className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all">
-                      <span className="text-xs text-primary font-medium uppercase tracking-wider">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-2 mb-3 group-hover:text-primary transition-colors">{study.title}</h3>
-                      <div className="flex items-center justify-between">
-                        <span className="text-lg font-bold text-primary">{study.result}</span>
-                        <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                  <Link to={study.link} className="group block h-full">
+                    <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img 
+                          src={study.image} 
+                          alt={study.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-6 flex-grow flex flex-col">
+                        <span className="text-xs text-primary font-medium uppercase tracking-wider">{study.category}</span>
+                        <h3 className="text-xl font-semibold mt-2 mb-3 group-hover:text-primary transition-colors">{study.title}</h3>
+                        <div className="flex items-center justify-between mt-auto">
+                          <span className="text-lg font-bold text-primary">{study.result}</span>
+                          <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
+                        </div>
                       </div>
                     </div>
                   </Link>
