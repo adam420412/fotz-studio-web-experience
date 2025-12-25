@@ -38,6 +38,7 @@ import AgencjaReklamowaPoznan from "./pages/AgencjaReklamowaPoznan";
 import StronyInternetowePoznan from "./pages/StronyInternetowePoznan";
 import StronyInternetowe from "./pages/StronyInternetowe";
 import SocialMediaPoznan from "./pages/SocialMediaPoznan";
+import SocialMedia from "./pages/SocialMedia";
 import FotografPoznan from "./pages/FotografPoznan";
 import PozycjonowanieStronPoznan from "./pages/PozycjonowanieStronPoznan";
 import Pozycjonowanie from "./pages/Pozycjonowanie";
@@ -89,6 +90,7 @@ const App = () => (
             <Route path="/strony-internetowe-poznan" element={<StronyInternetowePoznan />} />
             <Route path="/strony-internetowe" element={<StronyInternetowe />} />
             <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
+            <Route path="/social-media" element={<SocialMedia />} />
             <Route path="/fotograf-poznan" element={<FotografPoznan />} />
             <Route path="/pozycjonowanie-stron-poznan" element={<PozycjonowanieStronPoznan />} />
             <Route path="/pozycjonowanie" element={<Pozycjonowanie />} />
