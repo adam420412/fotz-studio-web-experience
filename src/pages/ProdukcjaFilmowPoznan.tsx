@@ -119,27 +119,27 @@ export default function ProdukcjaFilmowPoznan() {
                 Studio Filmowe Poznań
               </motion.span>
               
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 sm:mb-8 leading-tight px-2 sm:px-0">
                 <TextReveal>
                   Produkcja Filmów <span className="text-gradient">Reklamowych</span> w Poznaniu
                 </TextReveal>
               </h1>
               
-              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
                 Tworzymy filmy, które <span className="text-foreground font-medium">sprzedają i budują markę</span>. Spoty reklamowe, filmy korporacyjne, video marketing. Od koncepcji do gotowego materiału.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="group text-lg px-8 py-6">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+                <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                   <Link to="/kontakt">
-                    <Rocket className="mr-2 h-5 w-5" />
+                    <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     Bezpłatna wycena
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
+                <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
                   <a href="tel:+48790814814">
-                    <Phone className="mr-2 h-5 w-5" />
+                    <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
                     +48 790 814 814
                   </a>
                 </Button>
@@ -200,11 +200,11 @@ export default function ProdukcjaFilmowPoznan() {
               </div>
             </FadeInView>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {videos.map((video, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
                   <div className="group">
-                    <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-lg">
+                    <div className="relative aspect-video rounded-xl sm:rounded-2xl overflow-hidden border border-border/50 shadow-lg">
                       <video
                         src={video.src}
                         controls
@@ -213,9 +213,9 @@ export default function ProdukcjaFilmowPoznan() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="mt-4">
-                      <span className="text-xs font-medium text-primary uppercase tracking-wider">{video.category}</span>
-                      <h3 className="text-lg font-semibold mt-1">{video.title}</h3>
+                    <div className="mt-3 sm:mt-4">
+                      <span className="text-[10px] sm:text-xs font-medium text-primary uppercase tracking-wider">{video.category}</span>
+                      <h3 className="text-base sm:text-lg font-semibold mt-1">{video.title}</h3>
                     </div>
                   </div>
                 </FadeInView>
@@ -281,19 +281,19 @@ export default function ProdukcjaFilmowPoznan() {
               </div>
             </FadeInView>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
               {pricing.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className={`p-8 rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
+                  <div className={`p-6 sm:p-8 rounded-xl sm:rounded-2xl border transition-all h-full flex flex-col ${index === 1 ? 'bg-primary/5 border-primary/30 md:scale-105' : 'bg-background border-border/50 hover:border-primary/20'}`}>
                     {index === 1 && (
                       <span className="inline-flex items-center gap-1 text-xs font-medium text-primary uppercase mb-4">
                         <Star className="w-3 h-3" /> Najpopularniejszy
                       </span>
                     )}
-                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground mb-4">{item.desc}</p>
-                    <div className="text-3xl font-bold text-gradient mb-6">{item.price}</div>
-                    <ul className="space-y-3 mb-8 flex-grow">
+                    <h3 className="text-lg sm:text-xl font-semibold mb-2">{item.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground mb-4">{item.desc}</p>
+                    <div className="text-2xl sm:text-3xl font-bold text-gradient mb-4 sm:mb-6">{item.price}</div>
+                    <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 flex-grow">
                       {item.features.map((feature, i) => (
                         <li key={i} className="flex items-center gap-2">
                           <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
