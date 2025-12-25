@@ -98,7 +98,7 @@ const StronyInternetoweGdansk = () => {
     { name: "Kraków", href: "/strony-internetowe-krakow", active: true },
     { name: "Gdańsk", href: "/strony-internetowe-gdansk", active: true },
     { name: "Łódź", href: "/strony-internetowe-lodz", active: true },
-    { name: "Katowice", href: "/strony-internetowe-katowice", active: false },
+    { name: "Katowice", href: "/strony-internetowe-katowice", active: true },
     { name: "Szczecin", href: "/strony-internetowe-szczecin", active: true },
     { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz", active: true },
     { name: "Lublin", href: "/strony-internetowe-lublin", active: false },

@@ -17,7 +17,9 @@ import {
   Shield,
   Headphones,
   MapPin,
-  ArrowRight
+  ArrowRight,
+  Server,
+  FileCode
 } from "lucide-react";
 import {
   Accordion,
@@ -32,36 +34,36 @@ import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
-const StronyInternetoweBydgoszcz = () => {
+const StronyInternetoweKatowice = () => {
   const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz witryny online dla firm z Bydgoszczy." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Responsywne strony internetowe z naciskiem na projekt graficzny." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z integracją WooCommerce i płatności." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify, Joomla i dedykowane rozwiązania." },
-    { icon: TrendingUp, title: "Marketing internetowy", desc: "Kampanie Ads i strategie, które przyciągają nowych klientów." },
+    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www oraz witryny online dla firm z Katowic." },
+    { icon: Search, title: "Pozycjonowanie SEO", desc: "Kompleksowa optymalizacja SEO zwiększająca widoczność w wyszukiwarkach." },
+    { icon: Palette, title: "Projektowanie UI/UX", desc: "Responsywne strony internetowe z profesjonalnym projektem graficznym." },
+    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z pełnymi integracjami płatności." },
+    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
+    { icon: Server, title: "Hosting i domeny", desc: "Kompleksowy hosting i pomoc w rejestracji domeny." },
   ];
 
   const whyUs = [
     { icon: Settings, title: "Nowoczesne technologie", desc: "React, Next.js, WordPress, Webflow - dobieramy technologię do projektu strony." },
     { icon: Search, title: "SEO w standardzie", desc: "Każda strona www jest zoptymalizowana pod wyszukiwarki od pierwszego dnia." },
-    { icon: Handshake, title: "Partnerskie podejście", desc: "Specjalizujemy się w tworzeniu stron skrojonych na miarę Twojej firmy." },
+    { icon: Handshake, title: "Partnerskie podejście", desc: "Jesteśmy partnerem, nie tylko wykonawcą - rozumiemy Twoje cele biznesowe." },
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
-    { icon: Headphones, title: "Wsparcie techniczne", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu." },
   ];
 
   const pricing = [
-    { title: "Strona wizytówkowa / Landing page", desc: "Prosta strona www prezentująca podstawowe informacje o firmie.", price: "od 1 500 zł netto" },
-    { title: "Strona firmowa", desc: "Profesjonalna strona internetowa z rozbudowanymi funkcjonalnościami.", price: "od 5 000 zł netto" },
-    { title: "Sklep internetowy e-commerce", desc: "Zaawansowana platforma e-commerce z integracjami płatności.", price: "od 7 000 zł netto" },
+    { title: "Strona wizytówkowa / Landing page", desc: "Prosta strona www z podstawowym SEO.", price: "od 1 500 zł netto" },
+    { title: "Strona firmowa", desc: "Profesjonalna strona internetowa z zaawansowanym SEO.", price: "od 5 000 zł netto" },
+    { title: "Sklep internetowy e-commerce", desc: "Zaawansowana platforma e-commerce z kompleksową optymalizacją.", price: "od 7 000 zł netto" },
   ];
 
   const processSteps = [
-    { step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy z Bydgoszczy." },
-    { step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
-    { step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
-    { step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
+    { step: "01", title: "Rozmowa i research", desc: "Poznajemy cele biznesowe i potrzeby Twojej firmy z Katowic." },
+    { step: "02", title: "Wycena projektu", desc: "Przygotowujemy indywidualną wycenę dopasowaną do Twoich potrzeb." },
+    { step: "03", title: "Projektowanie i kod", desc: "Tworzymy responsywny projekt strony i piszemy kod." },
+    { step: "04", title: "Prezentacja i wdrożenie", desc: "Prezentujemy projekt, wprowadzamy poprawki i uruchamiamy stronę." },
   ];
 
   const caseStudies = [
@@ -103,63 +105,63 @@ const StronyInternetoweBydgoszcz = () => {
 
   const faqItems = [
     {
-      question: "Jakie są najważniejsze aspekty tworzenia własnej strony?",
-      answer: "Tworzenie stron internetowych to proces, który wymaga uwzględnienia wielu aspektów. Kluczowe jest zrozumienie potrzeb klienta i celów biznesowych. Należy zaprojektować responsywny design, zapewniający dostosowanie strony do różnych urządzeń. Ważna jest także funkcjonalność strony, intuicyjna nawigacja oraz optymalizacja SEO."
+      question: "Strony internetowe Katowice: Co to obejmuje i dlaczego warto?",
+      answer: "Usługa stron internetowych Katowice obejmuje projekt graficzny, projektowanie stron internetowych, budowę strony oraz wdrożenie responsywnej witryny. Lokalna agencja ma doświadczenie w tworzeniu stron dla firm z Katowic, zna potrzeby klientów i może szybciej reagować przy obsłudze stron internetowych."
     },
     {
-      question: "Co powinno znaleźć się na stronie internetowej firmy?",
-      answer: "Strona internetowa firmy powinna zawierać kilka kluczowych podstron: stronę główną jako wizytówkę firmy, podstronę 'O nas' budującą zaufanie, 'Usługi/Produkty' prezentującą ofertę, 'Kontakt' z danymi i formularzem, oraz blog/aktualności dla poprawy SEO."
+      question: "Tworzenie stron www Katowice: Jak wygląda proces?",
+      answer: "Proces tworzenia stron www zaczyna się od analizy wymagań i zdefiniowania celu nowej strony internetowej, przez projekt graficzny, aż po budowę strony i testy na różnych urządzeniach. Oferujemy projektowanie stron internetowych w oparciu o najlepsze praktyki SEO i responsywny design."
     },
     {
-      question: "Ile kosztuje stworzenie strony dla małej firmy w Bydgoszczy?",
-      answer: "Koszt strony zależy od zakresu funkcji — prosty landing page będzie tańszy niż sklep internetowy z integracjami WooCommerce. Wycena uwzględnia domenę, hosting, projekt graficzny, optymalizację SEO oraz późniejsze wsparcie techniczne. Ceny zaczynają się od około 1500 zł netto."
+      question: "Projektowanie stron internetowych Katowice: Ile kosztuje strona?",
+      answer: "Koszt strony internetowej zależy od zakresu prac: prosty landing page, sklep internetowy czy rozbudowana witryna firmowa. Cena uwzględnia projekt graficzny, budowę strony, integracje, pozycjonowanie i późniejszą obsługę stron internetowych."
     },
     {
-      question: "Jak strony internetowe mogą przyciągnąć klientów?",
-      answer: "Strony internetowe przyciągają klientów przez przejrzysty przekaz, szybkie ładowanie, SEO i treści dopasowane do odbiorcy. Witryny zoptymalizowane oraz zintegrowane z narzędziami analitycznymi pomagają mierzyć efektywność i ulepszać konwersje."
+      question: "Profesjonalne strony internetowe: Jaka strona będzie najlepsza?",
+      answer: "Jaka strona będzie najlepsza zależy od celów Twojej firmy — czy potrzebujesz strony firmowej, sklepu internetowego czy wizytówki online. Profesjonalne strony internetowe powinny być responsywne, zoptymalizowane pod wyszukiwarki i zaprojektowane z myślą o konwersji."
     },
     {
-      question: "Czy oferujecie gotowe pakiety i wsparcie techniczne?",
-      answer: "Tak, oferujemy gotowe pakiety obejmujące projekt, wybór domeny, SEO podstawowe i miesięczne wsparcie techniczne. Dzięki temu nawet w przypadku złożonych stron można liczyć na szybką pomoc i regularne aktualizacje bezpieczeństwa."
+      question: "Projekt graficzny: Jak ważny jest w budowie strony?",
+      answer: "Projekt graficzny ma kluczowe znaczenie — wpływa na pierwsze wrażenie, użyteczność i konwersję. Oferujemy projekt graficzny dostosowany do identyfikacji wizualnej firmy, co pomaga w budowaniu rozpoznawalności i zaufania."
     },
     {
-      question: "Jak wygląda proces pozycjonowania dla firm z Bydgoszczy?",
-      answer: "Proces pozycjonowania zaczyna się od audytu strony i analizy słów kluczowych, następnie optymalizacji treści i technicznych elementów witryny oraz budowy linków. Dla firm z Bydgoszczy kluczowe jest lokalne SEO i optymalizacja Google Moja Firma."
+      question: "Obsługa stron internetowych: Czy oferujecie wsparcie po uruchomieniu?",
+      answer: "Tak — oferujemy kompleksową obsługę stron internetowych obejmującą aktualizacje, backupy, optymalizację wydajności i poprawki bezpieczeństwa. Zapewniamy, że witryna działa bez przerw i pomaga przyciągać więcej klientów."
     },
     {
-      question: "Czy można zintegrować sklep WooCommerce z projektem strony?",
-      answer: "Tak, integracja z systemami e-commerce takimi jak WooCommerce jest standardem. Pozwala to na łatwe zarządzanie produktami, płatnościami i wysyłką, a także daje możliwości optymalizacji SEO dla kart produktów."
+      question: "Pozycjonowanie: Czy budowa strony wpływa na widoczność w wyszukiwarkach?",
+      answer: "Tak — budowa strony ma wpływ na pozycjonowanie. Struktura witryny, responsywny design, szybkość ładowania i optymalizacja treści decydują o widoczności w wyszukiwarkach. Projektujemy strony w oparciu o zasady SEO, by zwiększyć ruch organiczny."
     },
     {
-      question: "Jakie są opcje hostingu dla stron internetowych?",
-      answer: "Dostępne są różne opcje hostingu: hosting współdzielony (najtańszy), hosting VPS oferujący większą kontrolę, oraz hosting dedykowany dla wymagających projektów. Ważne jest, aby wybrać hosting spełniający potrzeby strony i zapewniający stabilne działanie."
+      question: "Stworzenie strony internetowej: Ile czasu zajmuje?",
+      answer: "Czas stworzenia strony zależy od skomplikowania projektu — od kilku dni dla prostej strony do kilku tygodni dla rozbudowanych witryn i sklepów internetowych. Podajemy harmonogram po ustaleniu wymagań i zakresu prac."
     },
   ];
 
   return (
     <>
       <Helmet>
-        <title>Strony Internetowe Bydgoszcz | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
+        <title>Strony Internetowe Katowice | Tworzenie Stron WWW | FOTZ</title>
         <meta 
           name="description" 
-          content="Strony internetowe Bydgoszcz. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Bydgoszczy i okolic." 
+          content="Strony internetowe Katowice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Katowic i Śląska." 
         />
-        <meta name="keywords" content="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-bydgoszcz" />
+        <meta name="keywords" content="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice" />
+        <link rel="canonical" href="https://fotz.pl/strony-internetowe-katowice" />
       </Helmet>
       
       <ServiceSchema 
-        name="Strony Internetowe Bydgoszcz - Projektowanie i Tworzenie Stron WWW"
-        description="Profesjonalne tworzenie stron internetowych dla firm z Bydgoszczy i okolic. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
+        name="Strony Internetowe Katowice - Tworzenie Stron WWW"
+        description="Profesjonalne tworzenie stron internetowych dla firm z Katowic i Śląska. Projektowanie responsywnych stron www, sklepów e-commerce i pozycjonowanie SEO."
         provider="FOTZ Studio"
-        areaServed="Bydgoszcz"
+        areaServed="Katowice"
       />
       
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Bydgoszcz", url: "https://fotz.pl/strony-internetowe-bydgoszcz" },
+          { name: "Katowice", url: "https://fotz.pl/strony-internetowe-katowice" },
         ]}
       />
       
@@ -184,17 +186,18 @@ const StronyInternetoweBydgoszcz = () => {
               className="text-center max-w-4xl mx-auto"
             >
               <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                Strony WWW Bydgoszcz
+                Strony WWW Katowice
               </span>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-                Strony Internetowe <span className="text-gradient">Bydgoszcz</span>
+                Strony Internetowe <span className="text-gradient">Katowice</span>
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
-                Oferujemy kompleksowe usługi <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenia stron www</Link> w Bydgoszczy, 
-                dostosowane do indywidualnych potrzeb klienta.
+                W dzisiejszych czasach <strong>strona internetowa to podstawa dla każdej firmy</strong>. 
+                Szczególnie w dynamicznie rozwijających się miastach, takich jak Katowice, obecność online jest kluczowa dla sukcesu. 
+                <Link to="/strony-internetowe" className="text-primary hover:underline"> Tworzenie stron www</Link> to inwestycja, 
+                która przynosi wymierne korzyści.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -215,33 +218,32 @@ const StronyInternetoweBydgoszcz = () => {
           </div>
         </section>
 
-        {/* Projektowanie Section */}
+        {/* Dlaczego warto Section */}
         <section className="py-16 border-b border-border/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Projektowanie Stron Internetowych w Bydgoszczy
+                  Dlaczego warto tworzyć strony internetowe w Katowicach?
                 </h2>
                 <div className="prose prose-invert max-w-none">
                   <p>
-                    <strong>Projektowanie stron internetowych to kluczowy element w procesie tworzenia efektywnej wizytówki Twojej firmy w sieci</strong>. 
-                    W Bydgoszczy nasza <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencja</Link> specjalizuje się 
-                    w projektowaniu stron www, które są nie tylko estetyczne, ale przede wszystkim funkcjonalne i responsywne.
+                    Inwestycja w <strong>stronę internetową</strong> dla Twojej firmy w Katowicach to strategiczny krok w kierunku rozwoju. 
+                    Dobrze zaprojektowana strona www staje się wizytówką firmy online, umożliwiając dotarcie do szerszego grona odbiorców. 
+                    <strong>Posiadanie strony internetowej zwiększa wiarygodność Twojej firmy</strong> w oczach potencjalnych klientów.
                   </p>
                   
-                  <h3>Dlaczego warto projektować profesjonalne strony internetowe?</h3>
+                  <h3>Korzyści z lokalnego podejścia</h3>
                   <p>
-                    <strong>Profesjonalne projektowanie stron internetowych to inwestycja w przyszłość Twojej firmy</strong>. 
-                    Funkcjonalna strona www to nie tylko wizytówka, ale również skuteczne narzędzie marketingowe. 
-                    Dobrze zaprojektowana witryna przyciąga uwagę potencjalnych klientów, buduje zaufanie i zwiększa konwersję.
+                    Wybierając <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencję</Link> z 
+                    doświadczeniem do tworzenia stron www, zyskujesz partnera, który doskonale rozumie specyfikę lokalnego rynku. 
+                    Specjalista potrafi zaprojektować stronę dopasowaną do potrzeb lokalnych klientów z Katowic i całego Śląska.
                   </p>
                   
-                  <h3>Usługi projektowania stron www w Bydgoszczy</h3>
+                  <h3>Wsparcie dla lokalnych firm</h3>
                   <p>
-                    Specjalizujemy się w projektowaniu responsywnych stron internetowych, dostosowanych do potrzeb klienta. 
-                    <strong>Tworzymy strony internetowe dla firm, które są wizualnie atrakcyjne, funkcjonalne i zoptymalizowane pod kątem 
-                    <Link to="/pozycjonowanie" className="text-primary hover:underline"> SEO</Link></strong>.
+                    Strona internetowa jest nie tylko wizytówką, ale również skutecznym narzędziem marketingowym. 
+                    <strong>Stworzenie strony internetowej, dostosowanej do Twoich potrzeb, to fundament budowania silnej pozycji na rynku.</strong>
                   </p>
                 </div>
               </FadeInView>
@@ -256,10 +258,10 @@ const StronyInternetoweBydgoszcz = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Usługi</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Tworzenie Stron WWW w Bydgoszczy
+                  Usługi tworzenia stron internetowych w Katowicach
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi tworzenia stron www dla firm z Bydgoszczy - od projektu graficznego po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
+                  Kompleksowe usługi tworzenia stron www dla firm z Katowic - od projektu graficznego po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
                 </p>
               </div>
             </FadeInView>
@@ -278,22 +280,35 @@ const StronyInternetoweBydgoszcz = () => {
           </div>
         </section>
 
-        {/* Proces Section */}
+        {/* Profesjonalne projektowanie Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Proces tworzenia stron internetowych Bydgoszcz</h2>
+                  <h2>Profesjonalne projektowanie stron www</h2>
                   <p>
-                    Proces tworzenia stron internetowych w Bydgoszczy rozpoczyna się od szczegółowej rozmowy, mającej na celu 
-                    poznanie potrzeb klienta. Następnie przeprowadzamy dogłębny research, który pozwala nam opracować optymalną strategię. 
-                    Po akceptacji wyceny nasi specjaliści przechodzą do tworzenia kodu i oprawy graficznej.
+                    Specjalizujemy się w <strong>projektowaniu responsywnych stron internetowych</strong>. Rozumiemy, że wygląd strony 
+                    ma kluczowe znaczenie, dlatego do każdego klienta podchodzimy indywidualnie, oferując profesjonalny projekt strony 
+                    oparty na naszym doświadczeniu. Dbamy o to, aby każda witryna była estetyczna, funkcjonalna i idealnie dopasowana 
+                    do urządzeń mobilnych.
                   </p>
                   <p>
-                    Dbamy o to, aby każda strona www była estetyczna, funkcjonalna i responsywna, z idealnym dostosowaniem strony 
-                    do urządzeń mobilnych. Nasza agencja wykorzystuje różne systemy zarządzania treścią (CMS), takie jak WordPress, 
-                    Joomla, Drupal, Webflow i Shopify. Dzięki temu <strong>zarządzanie Twoją witryną jest proste i intuicyjne</strong>.
+                    Wykorzystujemy różne systemy zarządzania treścią (CMS), takie jak WordPress, aby umożliwić klientom samodzielne 
+                    edytowanie strony internetowej. Nasze usługi obejmują <Link to="/strony-internetowe" className="text-primary hover:underline">projektowanie stron www</Link> i ich wdrażanie.
+                  </p>
+                  
+                  <h2>Kompleksowe usługi <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link></h2>
+                  <p>
+                    Naszą misją jest oferowanie stron internetowych, które efektywnie docierają do szerokiego grona odbiorców. 
+                    <strong>Optymalizacja SEO jest kluczowa dla widoczności Twojej strony w wyszukiwarkach</strong>, dlatego oferujemy 
+                    kompleksowe usługi SEO. Działania SEO to fundament skutecznego marketingu.
+                  </p>
+                  
+                  <h2>Hosting i rejestracja domeny</h2>
+                  <p>
+                    Oprócz projektowania stron www i optymalizacji SEO, zapewniamy również kompleksowy hosting i pomoc w rejestracji domeny. 
+                    Rozumiemy, że stabilny hosting jest niezbędny dla sprawnego działania Twojej strony internetowej.
                   </p>
                 </div>
               </FadeInView>
@@ -308,7 +323,7 @@ const StronyInternetoweBydgoszcz = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Proces</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Jak wygląda proces tworzenia strony internetowej?
+                  Proces realizacji projektu strony www
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Przejrzysty proces od briefu do wdrożenia nowej strony internetowej.
@@ -339,10 +354,10 @@ const StronyInternetoweBydgoszcz = () => {
               <div className="text-center mb-16">
                 <span className="text-primary text-sm font-medium uppercase tracking-wider mb-4 block">Cennik</span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Wycena i koszty tworzenia stron www
+                  Wycena projektu strony internetowej
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Transparentne ceny dopasowane do zakresu projektu. 
+                  Nie stosujemy sztywnego cennika – każda wycena jest dopasowywana do indywidualnych celów biznesowych. 
                   Sprawdź też <Link to="/blog/ile-kosztuje-strona-internetowa" className="text-primary hover:underline">ile kosztuje strona internetowa</Link>.
                 </p>
               </div>
@@ -425,66 +440,34 @@ const StronyInternetoweBydgoszcz = () => {
           </div>
         </section>
 
-        {/* SEO Section */}
+        {/* Ekspert Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Optymalizacja SEO dla Stron Internetowych</h2>
+                  <h2>Porozmawiaj z ekspertem w Katowicach</h2>
                   
-                  <h3>Znaczenie SEO w tworzeniu stron www</h3>
+                  <h3>Jak wybrać odpowiednią agencję?</h3>
                   <p>
-                    <strong>Optymalizacja <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> jest kluczowa 
-                    w procesie tworzenia stron www, ponieważ wpływa na widoczność Twojej witryny w wyszukiwarkach internetowych</strong>. 
-                    Naszą misją jest dostarczanie klientom stron internetowych, które pozwalają dotrzeć do szerszego grona odbiorców.
+                    Wybór odpowiedniej <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencji</Link> do 
+                    tworzenia stron www w Katowicach to kluczowa decyzja. Wybierając agencję, upewnij się, że rozumie Twoje potrzeby i cele biznesowe. 
+                    Właściciel firmy szuka partnera, nie tylko wykonawcy, i oczekuje jasnego procesu i efektów.
                   </p>
                   
-                  <h3>Strategie SEO dla firm w Bydgoszczy</h3>
+                  <h3>Co powinno zawierać kompleksowe podejście?</h3>
                   <p>
-                    Skuteczne strategie SEO dla firm w Bydgoszczy powinny uwzględniać <strong>lokalne słowa kluczowe</strong>, 
-                    które pomogą dotrzeć do klientów szukających usług w Bydgoszczy, oraz <strong>optymalizację wizytówki Google Moja Firma</strong>. 
-                    Ważne jest również monitorowanie konkurencji i budowanie lokalnych linków.
+                    Kompleksowe podejście do tworzenia stron internetowych powinno obejmować szeroki zakres usług. 
+                    Oprócz projektowania i wdrażania stron internetowych, ważne jest również branding i identyfikacja wizualna, 
+                    <Link to="/social-media" className="text-primary hover:underline"> obsługa social media</Link>, video marketing i produkcja treści. 
+                    Agencja powinna również oferować kampanie reklamowe Meta Ads i Google Ads oraz systemy pozyskiwania leadów.
                   </p>
                   
-                  <h3>Jak sprawdzić pozycjonowanie strony?</h3>
+                  <h3>Współpraca z klientem na każdym etapie</h3>
                   <p>
-                    <strong>Pozycjonowanie Twojej strony internetowej można sprawdzić za pomocą różnych narzędzi analitycznych</strong>, 
-                    takich jak Google Analytics, Google Search Console czy Semrush. Pozwalają one monitorować ruch na stronie, 
-                    analizować słowa kluczowe i sprawdzać pozycje w wynikach wyszukiwania.
-                  </p>
-                </div>
-              </FadeInView>
-            </div>
-          </div>
-        </section>
-
-        {/* Marketing Section */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <div className="prose prose-invert max-w-none">
-                  <h2>Marketing i Reklama Internetowa</h2>
-                  
-                  <h3>Jak przyciągnąć nowych klientów online w Bydgoszczy?</h3>
-                  <p>
-                    Chcesz dotrzeć do nowych klientów w Bydgoszczy i okolicach? Skuteczny marketing internetowy to <strong>klucz do sukcesu</strong>! 
-                    Wykorzystaj potencjał swojej strony internetowej, aby tworzyć trwałe relacje z odbiorcami. 
-                    Twojej firmie potrzebny jest profesjonalny plan marketingowy.
-                  </p>
-                  
-                  <h3>Reklama internetowa dla lokalnych firm</h3>
-                  <p>
-                    Reklama internetowa to <strong>niezbędny element strategii marketingowej każdej lokalnej firmy</strong>. 
-                    Dzięki niej możesz dotrzeć do potencjalnych klientów w Bydgoszczy i okolicach, promując swoje usługi i produkty. 
-                    Nasza oferta obejmuje kampanie reklamowe Meta Ads i Google Ads.
-                  </p>
-                  
-                  <h3>Wykorzystanie <Link to="/social-media" className="text-primary hover:underline">Social Media</Link></h3>
-                  <p>
-                    Kampanie Ads pozwalają na precyzyjne targetowanie odbiorców, wyświetlanie reklam osobom zainteresowanym 
-                    Twoją ofertą oraz mierzenie efektów reklamowych. Dzięki temu możesz zoptymalizować swoje działania marketingowe.
+                    Współpraca z klientem na każdym etapie realizacji projektu to dla nas priorytet. 
+                    Zapewniamy stały kontakt, oferując spotkania osobiste, kontakt telefoniczny i mailowy. 
+                    <strong>Stworzenie strony internetowej to dla nas partnerska współpraca.</strong>
                   </p>
                 </div>
               </FadeInView>
@@ -493,7 +476,7 @@ const StronyInternetoweBydgoszcz = () => {
         </section>
 
         {/* Why Us Section */}
-        <section className="py-20">
+        <section className="py-20 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -502,7 +485,7 @@ const StronyInternetoweBydgoszcz = () => {
                   Dlaczego warto nam zlecić tworzenie strony?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm z Bydgoszczy i całej Polski.
+                  Jesteśmy zespołem specjalistów z pasją do tworzenia stron internetowych dla firm z Katowic i całego Śląska.
                 </p>
               </div>
             </FadeInView>
@@ -510,45 +493,13 @@ const StronyInternetoweBydgoszcz = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {whyUs.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full">
+                  <div className="p-6 rounded-xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full">
                     <item.icon className="w-10 h-10 text-primary mb-4" />
                     <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                     <p className="text-sm text-muted-foreground">{item.desc}</p>
                   </div>
                 </FadeInView>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Additional SEO Content */}
-        <section className="py-20 bg-card/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <FadeInView>
-                <div className="prose prose-invert max-w-none">
-                  <h2>Profesjonalne strony internetowe Bydgoszcz — czym się wyróżniają?</h2>
-                  <p>
-                    Profesjonalne <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowe</Link> Bydgoszcz 
-                    to projektowanie witryn z myślą o optymalizacji, szybkiej responsywności i spójnym wizerunku w sieci. 
-                    Takie strony często zawierają dedykowaną domenę, integrację z systemami e-commerce oraz wsparcie techniczne po uruchomieniu.
-                  </p>
-                  
-                  <h2>Jak wybrać firmę tworzącą strony dla firm z Bydgoszczy?</h2>
-                  <p>
-                    Wybierając agencję warto sprawdzić <Link to="/realizacje" className="text-primary hover:underline">portfolio zrealizowanych stron</Link>, 
-                    referencje oraz oferowane rozwiązania. Dobrze, gdy wykonawca proponuje kompleksowe usługi: projektowanie, 
-                    wybór domeny, optymalizację SEO oraz wsparcie techniczne.
-                  </p>
-                  
-                  <h2>Czy można zintegrować sklep WooCommerce z projektem strony?</h2>
-                  <p>
-                    Tak, integracja z systemami e-commerce takimi jak WooCommerce jest standardem przy tworzeniu sklepów internetowych. 
-                    Pozwala to na łatwe zarządzanie produktami, płatnościami i wysyłką, a także daje możliwości optymalizacji SEO 
-                    dla kart produktów w celu przyciągnięcia klientów.
-                  </p>
-                </div>
-              </FadeInView>
             </div>
           </div>
         </section>
@@ -579,7 +530,7 @@ const StronyInternetoweBydgoszcz = () => {
                       key={index}
                       to={city.href}
                       className={`px-6 py-3 rounded-full font-medium transition-colors ${
-                        city.href === "/strony-internetowe-bydgoszcz" 
+                        city.href === "/strony-internetowe-katowice" 
                           ? "bg-primary text-primary-foreground" 
                           : "bg-card border border-border/50 text-foreground hover:border-primary/30"
                       }`}
@@ -611,7 +562,7 @@ const StronyInternetoweBydgoszcz = () => {
                   Często Zadawane Pytania
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na pytania dotyczące tworzenia stron w Bydgoszczy.
+                  Odpowiedzi na pytania dotyczące tworzenia stron w Katowicach.
                 </p>
               </div>
             </FadeInView>
@@ -645,10 +596,10 @@ const StronyInternetoweBydgoszcz = () => {
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-                  Gotowy na profesjonalną stronę internetową w Bydgoszczy?
+                  Gotowy na profesjonalną stronę internetową w Katowicach?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Bydgoszczy i całej Polski.
+                  Porozmawiajmy o Twoim projekcie. Bezpłatna wycena i konsultacja dla firm z Katowic i całego Śląska.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="group">
@@ -673,4 +624,4 @@ const StronyInternetoweBydgoszcz = () => {
   );
 };
 
-export default StronyInternetoweBydgoszcz;
+export default StronyInternetoweKatowice;
