@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Navigate, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
@@ -17,7 +17,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Plus, Edit, Trash2, BookOpen, Users, CreditCard, Loader2, ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { FileUploadField } from '@/components/admin/FileUploadField';
 
 const MaterialForm = ({ 
   material, 
@@ -87,42 +87,30 @@ const MaterialForm = ({
         </Select>
       </div>
 
-      <div className="space-y-2">
-        <Label htmlFor="thumbnail_url">URL miniatury</Label>
-        <Input
-          id="thumbnail_url"
-          type="url"
-          value={formData.thumbnail_url}
-          onChange={(e) => setFormData({ ...formData, thumbnail_url: e.target.value })}
-          className="bg-background/50 border-border/50"
-          placeholder="https://..."
-        />
-      </div>
+      <FileUploadField
+        label="Miniatura"
+        value={formData.thumbnail_url}
+        onChange={(url) => setFormData({ ...formData, thumbnail_url: url })}
+        accept="image/*"
+        folder="thumbnails"
+      />
 
       {formData.type === 'video' || formData.type === 'course' ? (
-        <div className="space-y-2">
-          <Label htmlFor="video_url">URL wideo</Label>
-          <Input
-            id="video_url"
-            type="url"
-            value={formData.video_url}
-            onChange={(e) => setFormData({ ...formData, video_url: e.target.value })}
-            className="bg-background/50 border-border/50"
-            placeholder="https://..."
-          />
-        </div>
+        <FileUploadField
+          label="Plik wideo"
+          value={formData.video_url}
+          onChange={(url) => setFormData({ ...formData, video_url: url })}
+          accept="video/*"
+          folder="videos"
+        />
       ) : (
-        <div className="space-y-2">
-          <Label htmlFor="file_url">URL pliku</Label>
-          <Input
-            id="file_url"
-            type="url"
-            value={formData.file_url}
-            onChange={(e) => setFormData({ ...formData, file_url: e.target.value })}
-            className="bg-background/50 border-border/50"
-            placeholder="https://..."
-          />
-        </div>
+        <FileUploadField
+          label="Plik (PDF, ZIP)"
+          value={formData.file_url}
+          onChange={(url) => setFormData({ ...formData, file_url: url })}
+          accept=".pdf,.zip,application/pdf,application/zip"
+          folder="ebooks"
+        />
       )}
 
       <div className="space-y-2">
