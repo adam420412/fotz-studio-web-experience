@@ -11,24 +11,32 @@ interface InstagramPost {
   title: string;
 }
 
+// Import thumbnails
+import thumb1 from "@/assets/portfolio/fabryka-virali.png";
+import thumb2 from "@/assets/portfolio/victory-cars.png";
+import thumb3 from "@/assets/portfolio/cute-dumpling-new.png";
+
 const instagramPosts: InstagramPost[] = [
   {
     url: "https://www.instagram.com/p/DNz4N4fVOJq/",
     embedUrl: "https://www.instagram.com/p/DNz4N4fVOJq/embed",
     type: "post",
     title: "Post @fotz_studio",
+    thumbnail: thumb1,
   },
   {
     url: "https://www.instagram.com/reel/DSn0ptXiHWt/",
     embedUrl: "https://www.instagram.com/reel/DSn0ptXiHWt/embed",
     type: "reel",
     title: "Reel @fotz_studio",
+    thumbnail: thumb2,
   },
   {
     url: "https://www.instagram.com/p/DSpMWiZjY9s/",
     embedUrl: "https://www.instagram.com/p/DSpMWiZjY9s/embed",
     type: "post",
     title: "Post @fotz_studio",
+    thumbnail: thumb3,
   },
 ];
 
@@ -46,16 +54,35 @@ function InstagramCard({ post, index }: { post: InstagramPost; index: number }) 
     >
       <div className="relative aspect-[9/16] bg-card/50 border border-border/50 rounded-2xl overflow-hidden">
         {!showEmbed ? (
-          // Preview state with play button
+          // Preview state with thumbnail and play button
           <div 
-            className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer bg-gradient-to-br from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#F77737]/20 hover:from-[#833AB4]/30 hover:via-[#FD1D1D]/30 hover:to-[#F77737]/30 transition-all duration-300"
+            className="absolute inset-0 cursor-pointer group/card"
             onClick={() => setShowEmbed(true)}
           >
-            <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Play className="w-8 h-8 text-white fill-white ml-1" />
+            {/* Thumbnail image */}
+            {post.thumbnail && (
+              <img 
+                src={post.thumbnail} 
+                alt={post.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-105"
+              />
+            )}
+            
+            {/* Overlay gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+            
+            {/* Play button */}
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center group-hover/card:scale-110 group-hover/card:bg-white/30 transition-all duration-300 shadow-xl">
+                <Play className="w-6 h-6 sm:w-8 sm:h-8 text-white fill-white ml-1" />
+              </div>
             </div>
-            <p className="mt-4 text-sm text-white/80 font-medium">{post.title}</p>
-            <span className="mt-2 text-xs text-white/60">Kliknij aby załadować</span>
+            
+            {/* Bottom info */}
+            <div className="absolute bottom-4 left-4 right-4">
+              <p className="text-sm text-white font-medium">{post.title}</p>
+              <span className="text-xs text-white/70">Kliknij aby odtworzyć</span>
+            </div>
           </div>
         ) : (
           // Embedded iframe
