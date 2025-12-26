@@ -36,6 +36,7 @@ import DlaKogo from "./pages/DlaKogo";
 import AkademiaLanding from "./pages/AkademiaLanding";
 import AkademiaAuth from "./pages/AkademiaAuth";
 import Akademia from "./pages/Akademia";
+import AkademiaAdmin from "./pages/AkademiaAdmin";
 import AgencjaMarketingowaPoznan from "./pages/AgencjaMarketingowaPoznan";
 import AgencjaMarketinguInternetowego from "./pages/AgencjaMarketinguInternetowego";
 import AgencjaReklamowaPoznan from "./pages/AgencjaReklamowaPoznan";
@@ -101,6 +102,7 @@ const App = () => (
             <Route path="/akademia" element={<AkademiaLanding />} />
             <Route path="/akademia/auth" element={<AkademiaAuth />} />
             <Route path="/akademia/panel" element={<Akademia />} />
+            <Route path="/akademia/admin" element={<AkademiaAdmin />} />
             <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
             <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
             <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
