@@ -33,6 +33,9 @@ import Blog from "./pages/Blog";
 import BlogKosztStrony from "./pages/BlogKosztStrony";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
+import AkademiaLanding from "./pages/AkademiaLanding";
+import AkademiaAuth from "./pages/AkademiaAuth";
+import Akademia from "./pages/Akademia";
 import AgencjaMarketingowaPoznan from "./pages/AgencjaMarketingowaPoznan";
 import AgencjaMarketinguInternetowego from "./pages/AgencjaMarketinguInternetowego";
 import AgencjaReklamowaPoznan from "./pages/AgencjaReklamowaPoznan";
@@ -95,6 +98,9 @@ const App = () => (
             <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
+            <Route path="/akademia" element={<AkademiaLanding />} />
+            <Route path="/akademia/auth" element={<AkademiaAuth />} />
+            <Route path="/akademia/panel" element={<Akademia />} />
             <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
             <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
             <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
