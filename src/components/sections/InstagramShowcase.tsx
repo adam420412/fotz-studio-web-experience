@@ -1,15 +1,111 @@
 import { motion } from "framer-motion";
-import { Instagram } from "lucide-react";
+import { Instagram, Play, ExternalLink } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
-import { InstagramEmbed } from "@/components/InstagramEmbed";
+import { useState, useRef } from "react";
 
-const instagramPosts = [
-  "https://www.instagram.com/p/DNz4N4fVOJq/",
-  "https://www.instagram.com/p/DSn0ptXiHWt/",
-  "https://www.instagram.com/p/DSpMWiZjY9s/",
+interface InstagramPost {
+  url: string;
+  embedUrl: string;
+  thumbnail?: string;
+  type: "reel" | "post";
+  title: string;
+}
+
+const instagramPosts: InstagramPost[] = [
+  {
+    url: "https://www.instagram.com/p/DNz4N4fVOJq/",
+    embedUrl: "https://www.instagram.com/p/DNz4N4fVOJq/embed",
+    type: "post",
+    title: "Post @fotz_studio",
+  },
+  {
+    url: "https://www.instagram.com/reel/DSn0ptXiHWt/",
+    embedUrl: "https://www.instagram.com/reel/DSn0ptXiHWt/embed",
+    type: "reel",
+    title: "Reel @fotz_studio",
+  },
+  {
+    url: "https://www.instagram.com/p/DSpMWiZjY9s/",
+    embedUrl: "https://www.instagram.com/p/DSpMWiZjY9s/embed",
+    type: "post",
+    title: "Post @fotz_studio",
+  },
 ];
 
+function InstagramCard({ post, index }: { post: InstagramPost; index: number }) {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [showEmbed, setShowEmbed] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="relative group"
+    >
+      <div className="relative aspect-[9/16] bg-card/50 border border-border/50 rounded-2xl overflow-hidden">
+        {!showEmbed ? (
+          // Preview state with play button
+          <div 
+            className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer bg-gradient-to-br from-[#833AB4]/20 via-[#FD1D1D]/20 to-[#F77737]/20 hover:from-[#833AB4]/30 hover:via-[#FD1D1D]/30 hover:to-[#F77737]/30 transition-all duration-300"
+            onClick={() => setShowEmbed(true)}
+          >
+            <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <Play className="w-8 h-8 text-white fill-white ml-1" />
+            </div>
+            <p className="mt-4 text-sm text-white/80 font-medium">{post.title}</p>
+            <span className="mt-2 text-xs text-white/60">Kliknij aby załadować</span>
+          </div>
+        ) : (
+          // Embedded iframe
+          <>
+            {!isLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center bg-card/80">
+                <div className="w-8 h-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
+              </div>
+            )}
+            <iframe
+              src={post.embedUrl}
+              className="w-full h-full"
+              frameBorder="0"
+              scrolling="no"
+              allowTransparency
+              allow="encrypted-media"
+              onLoad={() => setIsLoaded(true)}
+              title={post.title}
+            />
+          </>
+        )}
+        
+        {/* External link overlay */}
+        <a
+          href={post.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-3 right-3 p-2 bg-black/50 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/70 z-10"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <ExternalLink className="w-4 h-4 text-white" />
+        </a>
+      </div>
+    </motion.div>
+  );
+}
+
 export function InstagramShowcase() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: "left" | "right") => {
+    if (scrollRef.current) {
+      const scrollAmount = 320;
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="py-16 sm:py-20 md:py-24 bg-background relative overflow-hidden">
       {/* Background effects */}
@@ -54,12 +150,38 @@ export function InstagramShowcase() {
           </div>
         </FadeInView>
 
-        {/* Instagram Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-          {instagramPosts.map((url, index) => (
-            <FadeInView key={url} delay={0.1 * (index + 1)}>
-              <InstagramEmbed url={url} />
-            </FadeInView>
+        {/* Carousel Navigation */}
+        <div className="flex justify-end gap-2 mb-6 max-w-6xl mx-auto">
+          <button
+            onClick={() => scroll("left")}
+            className="p-3 rounded-full bg-card/50 border border-border/50 hover:bg-card hover:border-primary/50 transition-colors"
+            aria-label="Przewiń w lewo"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button
+            onClick={() => scroll("right")}
+            className="p-3 rounded-full bg-card/50 border border-border/50 hover:bg-card hover:border-primary/50 transition-colors"
+            aria-label="Przewiń w prawo"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Instagram Posts Carousel */}
+        <div 
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide max-w-6xl mx-auto"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
+          {instagramPosts.map((post, index) => (
+            <div key={post.url} className="flex-shrink-0 w-[280px] sm:w-[300px] snap-center">
+              <InstagramCard post={post} index={index} />
+            </div>
           ))}
         </div>
 
