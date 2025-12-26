@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Play, ExternalLink } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 interface InstagramPost {
   url: string;
@@ -121,18 +121,6 @@ function InstagramCard({ post, index }: { post: InstagramPost; index: number }) 
 }
 
 export function InstagramShowcase() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      const scrollAmount = 320;
-      scrollRef.current.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
-
   return (
     <section className="py-16 sm:py-20 md:py-24 bg-background relative overflow-hidden">
       {/* Background effects */}
@@ -177,36 +165,10 @@ export function InstagramShowcase() {
           </div>
         </FadeInView>
 
-        {/* Carousel Navigation */}
-        <div className="flex justify-end gap-2 mb-6 max-w-6xl mx-auto">
-          <button
-            onClick={() => scroll("left")}
-            className="p-3 rounded-full bg-card/50 border border-border/50 hover:bg-card hover:border-primary/50 transition-colors"
-            aria-label="Przewiń w lewo"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="p-3 rounded-full bg-card/50 border border-border/50 hover:bg-card hover:border-primary/50 transition-colors"
-            aria-label="Przewiń w prawo"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
-
-        {/* Instagram Posts Carousel */}
-        <div 
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide max-w-6xl mx-auto"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
+        {/* Instagram Posts Grid - Centered */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto justify-items-center">
           {instagramPosts.map((post, index) => (
-            <div key={post.url} className="flex-shrink-0 w-[280px] sm:w-[300px] snap-center">
+            <div key={post.url} className="w-full max-w-[300px]">
               <InstagramCard post={post} index={index} />
             </div>
           ))}
