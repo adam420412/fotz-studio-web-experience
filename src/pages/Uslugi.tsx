@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { Globe, Video, Target, Crown, ArrowRight, CheckCircle, Play, Sparkles } from "lucide-react";
+import { Globe, Video, Target, Crown, ArrowRight, CheckCircle, Play, Sparkles, Volume2, VolumeX, Maximize2 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { VideoLightbox } from "@/components/VideoLightbox";
 
 // Portfolio images for each service
 import eneaStadion from "@/assets/portfolio/enea-stadion.png";
@@ -93,7 +94,9 @@ const services = [
 
 const ServiceCard = ({ service, index }: { service: typeof services[0]; index: number }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -108,7 +111,8 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
 
   const isReversed = index % 2 === 1;
 
-  const togglePlay = () => {
+  const togglePlay = (e: React.MouseEvent) => {
+    e.stopPropagation();
     if (videoRef.current) {
       if (isPlaying) {
         videoRef.current.pause();
@@ -119,227 +123,288 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
     }
   };
 
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
+  const openLightbox = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (videoRef.current) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+    setIsLightboxOpen(true);
+  };
+
   return (
-    <motion.div
-      ref={cardRef}
-      style={{ opacity, scale }}
-      className="relative"
-    >
-      {/* Background gradient blob */}
-      <motion.div 
-        className={cn(
-          "absolute -inset-20 rounded-[100px] blur-3xl opacity-30 transition-opacity duration-700",
-          `bg-gradient-to-br ${service.color}`,
-          isHovered && "opacity-50"
-        )}
-        style={{ y }}
-      />
-
-      <div 
-        className={cn(
-          "relative grid lg:grid-cols-2 gap-8 lg:gap-16 items-center",
-          isReversed && "lg:flex-row-reverse"
-        )}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+    <>
+      <motion.div
+        ref={cardRef}
+        style={{ opacity, scale }}
+        className="relative"
       >
-        {/* Content */}
+        {/* Background gradient blob */}
         <motion.div 
-          className={cn(isReversed && "lg:order-2")}
-          initial={{ opacity: 0, x: isReversed ? 50 : -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-        >
-          {/* Icon with animated background */}
-          <motion.div 
-            className="relative w-16 h-16 mb-6"
-            whileHover={{ scale: 1.1, rotate: 5 }}
-          >
-            <div className={cn(
-              "absolute inset-0 rounded-2xl bg-gradient-to-br opacity-20",
-              service.color
-            )} />
-            <div className="absolute inset-0 rounded-2xl bg-primary/10 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
-              <service.icon className="w-8 h-8 text-primary" />
-            </div>
-            <motion.div 
-              className="absolute -inset-1 rounded-2xl bg-primary/20 blur-xl"
-              animate={{ 
-                scale: isHovered ? [1, 1.2, 1] : 1,
-                opacity: isHovered ? [0.3, 0.6, 0.3] : 0.3 
-              }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
-          </motion.div>
-
-          {/* Title with gradient on hover */}
-          <motion.h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 leading-tight"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-          >
-            <span className={cn(
-              "transition-all duration-500",
-              isHovered && "text-gradient"
-            )}>
-              {service.title}
-            </span>
-          </motion.h2>
-
-          <motion.p 
-            className="text-muted-foreground text-lg mb-8 leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-          >
-            {service.description}
-          </motion.p>
-
-          {/* Features grid with staggered animation */}
-          <motion.div 
-            className="grid sm:grid-cols-2 gap-3 mb-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: {},
-              visible: { transition: { staggerChildren: 0.05 } }
-            }}
-          >
-            {service.features.map((feature, i) => (
-              <motion.div 
-                key={feature} 
-                className="flex items-center gap-3 group/feature"
-                variants={{
-                  hidden: { opacity: 0, x: -20 },
-                  visible: { opacity: 1, x: 0 }
-                }}
-              >
-                <div className="relative">
-                  <CheckCircle className="w-5 h-5 text-primary transition-transform group-hover/feature:scale-110" />
-                  <motion.div 
-                    className="absolute inset-0 bg-primary/30 rounded-full blur-md"
-                    initial={{ scale: 0 }}
-                    animate={{ scale: isHovered ? 1 : 0 }}
-                    transition={{ delay: i * 0.05 }}
-                  />
-                </div>
-                <span className="text-sm text-foreground/80 group-hover/feature:text-foreground transition-colors">
-                  {feature}
-                </span>
-              </motion.div>
-            ))}
-          </motion.div>
-
-          {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-          >
-            <Button variant="hero" size="lg" asChild className="group">
-              <Link to={service.href}>
-                <span>Dowiedz się więcej</span>
-                <ArrowRight className="w-4 h-4 transition-all group-hover:translate-x-2" />
-              </Link>
-            </Button>
-          </motion.div>
-        </motion.div>
-
-        {/* Video Player */}
-        <motion.div
           className={cn(
-            "relative aspect-video rounded-3xl overflow-hidden group cursor-pointer",
-            isReversed && "lg:order-1"
+            "absolute -inset-20 rounded-[100px] blur-3xl opacity-30 transition-opacity duration-700",
+            `bg-gradient-to-br ${service.color}`,
+            isHovered && "opacity-50"
           )}
-          initial={{ opacity: 0, x: isReversed ? -50 : 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          onClick={togglePlay}
+          style={{ y }}
+        />
+
+        <div 
+          className={cn(
+            "relative grid lg:grid-cols-2 gap-8 lg:gap-16 items-center",
+            isReversed && "lg:flex-row-reverse"
+          )}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Decorative frame */}
-          <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 z-10 pointer-events-none" />
-          
-          {/* Glowing border on hover */}
+          {/* Content */}
           <motion.div 
-            className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-primary/50 to-secondary/50 blur-xl z-0"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: isHovered ? 0.5 : 0 }}
-            transition={{ duration: 0.5 }}
-          />
-
-          {/* Video */}
-          <video
-            ref={videoRef}
-            src={service.video}
-            poster={service.image}
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-            onPlay={() => setIsPlaying(true)}
-            onPause={() => setIsPlaying(false)}
-          />
-
-          {/* Play/Pause overlay */}
-          <motion.div 
-            className={cn(
-              "absolute inset-0 flex items-center justify-center z-20 transition-opacity duration-300",
-              isPlaying ? "opacity-0 hover:opacity-100" : "opacity-100"
-            )}
+            className={cn(isReversed && "lg:order-2")}
+            initial={{ opacity: 0, x: isReversed ? 50 : -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
+            {/* Icon with animated background */}
             <motion.div 
-              className="w-20 h-20 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-2xl shadow-primary/30"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
+              className="relative w-16 h-16 mb-6"
+              whileHover={{ scale: 1.1, rotate: 5 }}
             >
-              {isPlaying ? (
-                <div className="flex gap-1">
-                  <div className="w-2 h-8 bg-primary-foreground rounded-full" />
-                  <div className="w-2 h-8 bg-primary-foreground rounded-full" />
-                </div>
-              ) : (
-                <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
-              )}
+              <div className={cn(
+                "absolute inset-0 rounded-2xl bg-gradient-to-br opacity-20",
+                service.color
+              )} />
+              <div className="absolute inset-0 rounded-2xl bg-primary/10 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
+                <service.icon className="w-8 h-8 text-primary" />
+              </div>
+              <motion.div 
+                className="absolute -inset-1 rounded-2xl bg-primary/20 blur-xl"
+                animate={{ 
+                  scale: isHovered ? [1, 1.2, 1] : 1,
+                  opacity: isHovered ? [0.3, 0.6, 0.3] : 0.3 
+                }}
+                transition={{ duration: 2, repeat: Infinity }}
+              />
+            </motion.div>
+
+            {/* Title with gradient on hover */}
+            <motion.h2 
+              className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 leading-tight"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.6 }}
+            >
+              <span className={cn(
+                "transition-all duration-500",
+                isHovered && "text-gradient"
+              )}>
+                {service.title}
+              </span>
+            </motion.h2>
+
+            <motion.p 
+              className="text-muted-foreground text-lg mb-8 leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+            >
+              {service.description}
+            </motion.p>
+
+            {/* Features grid with staggered animation */}
+            <motion.div 
+              className="grid sm:grid-cols-2 gap-3 mb-10"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.05 } }
+              }}
+            >
+              {service.features.map((feature, i) => (
+                <motion.div 
+                  key={feature} 
+                  className="flex items-center gap-3 group/feature"
+                  variants={{
+                    hidden: { opacity: 0, x: -20 },
+                    visible: { opacity: 1, x: 0 }
+                  }}
+                >
+                  <div className="relative">
+                    <CheckCircle className="w-5 h-5 text-primary transition-transform group-hover/feature:scale-110" />
+                    <motion.div 
+                      className="absolute inset-0 bg-primary/30 rounded-full blur-md"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: isHovered ? 1 : 0 }}
+                      transition={{ delay: i * 0.05 }}
+                    />
+                  </div>
+                  <span className="text-sm text-foreground/80 group-hover/feature:text-foreground transition-colors">
+                    {feature}
+                  </span>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* CTA Button */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              <Button variant="hero" size="lg" asChild className="group">
+                <Link to={service.href}>
+                  <span>Dowiedz się więcej</span>
+                  <ArrowRight className="w-4 h-4 transition-all group-hover:translate-x-2" />
+                </Link>
+              </Button>
             </motion.div>
           </motion.div>
 
-          {/* Gradient overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent pointer-events-none" />
-          
-          {/* Title overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-6 z-20 pointer-events-none">
+          {/* Video Player */}
+          <motion.div
+            className={cn(
+              "relative aspect-video rounded-3xl overflow-hidden group",
+              isReversed && "lg:order-1"
+            )}
+            initial={{ opacity: 0, x: isReversed ? -50 : 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            {/* Decorative frame */}
+            <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 z-10 pointer-events-none" />
+            
+            {/* Glowing border on hover */}
             <motion.div 
-              className="flex items-center gap-2 text-sm text-foreground/80"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: isPlaying ? 0 : 1, y: isPlaying ? 10 : 0 }}
-            >
-              <Video className="w-4 h-4" />
-              <span>Kliknij aby odtworzyć</span>
-            </motion.div>
-          </div>
+              className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-primary/50 to-secondary/50 blur-xl z-0"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: isHovered ? 0.5 : 0 }}
+              transition={{ duration: 0.5 }}
+            />
 
-          {/* Corner decoration */}
-          <div className="absolute top-4 right-4 z-20 pointer-events-none">
+            {/* Video */}
+            <video
+              ref={videoRef}
+              src={service.video}
+              poster={service.image}
+              muted={isMuted}
+              loop
+              playsInline
+              className="w-full h-full object-cover cursor-pointer"
+              onClick={togglePlay}
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+            />
+
+            {/* Play/Pause overlay - center */}
             <motion.div 
-              className="w-10 h-10 rounded-xl bg-card/80 backdrop-blur-sm border border-border/50 flex items-center justify-center"
-              animate={{ 
-                rotate: isPlaying ? 360 : 0,
-              }}
-              transition={{ duration: 2, repeat: isPlaying ? Infinity : 0, ease: "linear" }}
+              className={cn(
+                "absolute inset-0 flex items-center justify-center z-20 transition-opacity duration-300 pointer-events-none",
+                isPlaying ? "opacity-0" : "opacity-100"
+              )}
             >
-              <Sparkles className="w-4 h-4 text-primary" />
+              <motion.div 
+                className="w-20 h-20 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-2xl shadow-primary/30 pointer-events-auto cursor-pointer"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={togglePlay}
+              >
+                <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
+              </motion.div>
             </motion.div>
-          </div>
-        </motion.div>
-      </div>
-    </motion.div>
+
+            {/* Control buttons - bottom bar */}
+            <div className={cn(
+              "absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/80 to-transparent z-20 transition-opacity duration-300",
+              isHovered || isPlaying ? "opacity-100" : "opacity-0"
+            )}>
+              <div className="flex items-center justify-between">
+                {/* Left controls */}
+                <div className="flex items-center gap-2">
+                  {/* Play/Pause button */}
+                  <motion.button
+                    className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-colors"
+                    onClick={togglePlay}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {isPlaying ? (
+                      <div className="flex gap-0.5">
+                        <div className="w-1.5 h-4 bg-foreground rounded-sm" />
+                        <div className="w-1.5 h-4 bg-foreground rounded-sm" />
+                      </div>
+                    ) : (
+                      <Play className="w-4 h-4 text-foreground ml-0.5" fill="currentColor" />
+                    )}
+                  </motion.button>
+
+                  {/* Mute/Unmute button */}
+                  <motion.button
+                    className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-colors"
+                    onClick={toggleMute}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {isMuted ? (
+                      <VolumeX className="w-4 h-4 text-foreground" />
+                    ) : (
+                      <Volume2 className="w-4 h-4 text-foreground" />
+                    )}
+                  </motion.button>
+                </div>
+
+                {/* Right controls */}
+                <div className="flex items-center gap-2">
+                  {/* Fullscreen button */}
+                  <motion.button
+                    className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-colors"
+                    onClick={openLightbox}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <Maximize2 className="w-4 h-4 text-foreground" />
+                  </motion.button>
+                </div>
+              </div>
+            </div>
+
+            {/* Corner decoration */}
+            <div className="absolute top-4 right-4 z-20 pointer-events-none">
+              <motion.div 
+                className="w-10 h-10 rounded-xl bg-card/80 backdrop-blur-sm border border-border/50 flex items-center justify-center"
+                animate={{ 
+                  rotate: isPlaying ? 360 : 0,
+                }}
+                transition={{ duration: 2, repeat: isPlaying ? Infinity : 0, ease: "linear" }}
+              >
+                <Sparkles className="w-4 h-4 text-primary" />
+              </motion.div>
+            </div>
+          </motion.div>
+        </div>
+      </motion.div>
+
+      {/* Video Lightbox */}
+      <VideoLightbox
+        isOpen={isLightboxOpen}
+        onClose={() => setIsLightboxOpen(false)}
+        videoSrc={service.video}
+        title={service.title}
+      />
+    </>
   );
 };
 
