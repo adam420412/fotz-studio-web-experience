@@ -15,6 +15,8 @@ const youtubeVideos: YouTubeVideo[] = [
   { id: "XGezvrpv_xk", title: "Produkcja wideo", type: "video" },
   { id: "OC1VEXL1PCk", title: "Produkcja wideo", type: "video" },
   { id: "N92YjnDq1ks", title: "Produkcja wideo", type: "video" },
+  { id: "U3imz76W5_g", title: "Produkcja wideo", type: "video" },
+  { id: "OjcSXP-9tnQ", title: "Produkcja wideo", type: "video" },
 ];
 
 const youtubeShorts: YouTubeVideo[] = [
