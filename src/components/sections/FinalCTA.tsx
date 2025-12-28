@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, MapPin, Phone, Sparkles } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Sparkles, MessageCircle, Zap, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useRef } from "react";
+import { SpotlightText, MarqueeText, TypewriterText } from "@/components/AnimatedText";
 
 export function FinalCTA() {
   const { t } = useLanguage();
   const sectionRef = useRef<HTMLElement>(null);
+  const headingRef = useRef<HTMLDivElement>(null);
+  const isHeadingInView = useInView(headingRef, { once: true, margin: "-100px" });
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -17,8 +20,34 @@ export function FinalCTA() {
   const backgroundY = useTransform(scrollYProgress, [0, 1], [100, -100]);
   const contentScale = useTransform(scrollYProgress, [0, 0.5], [0.9, 1]);
 
+  const ctaText = t(
+    "Nie czekaj, aż konkurencja Cię wyprzedzi. Skontaktuj się z naszą agencją już dziś i umów się na bezpłatną konsultację. Porozmawiajmy o Twoich celach biznesowych i o tym, jak możemy Ci pomóc osiągnąć sukces.",
+    "Don't wait for the competition to get ahead of you. Contact our agency today and schedule a free consultation. Let's talk about your business goals and how we can help you succeed."
+  );
+
+  const features = [
+    { icon: Zap, text: t("Szybka odpowiedź", "Fast response") },
+    { icon: MessageCircle, text: t("Bezpłatna konsultacja", "Free consultation") },
+    { icon: Star, text: t("160+ opinii Google", "160+ Google reviews") },
+  ];
+
   return (
     <section ref={sectionRef} className="section-padding bg-card relative overflow-hidden">
+      {/* Marquee background */}
+      <div className="absolute inset-0 flex flex-col justify-center pointer-events-none opacity-50 overflow-hidden">
+        <MarqueeText 
+          text={t("MARKETING • WZROST • SUKCES • STRATEGIA", "MARKETING • GROWTH • SUCCESS • STRATEGY")} 
+          speed={30}
+          direction="left"
+        />
+        <MarqueeText 
+          text={t("KAMPANIE • ROI • KONWERSJA • ANALITYKA", "CAMPAIGNS • ROI • CONVERSION • ANALYTICS")} 
+          speed={25}
+          direction="right"
+          className="mt-8"
+        />
+      </div>
+
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div 
@@ -76,7 +105,7 @@ export function FinalCTA() {
       <div className="container-wide relative z-10">
         <motion.div
           style={{ scale: contentScale }}
-          className="max-w-3xl mx-auto text-center"
+          className="max-w-4xl mx-auto text-center"
         >
           {/* Icon */}
           <motion.div
@@ -97,42 +126,76 @@ export function FinalCTA() {
             />
           </motion.div>
 
-          <motion.h2 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          {/* Animated heading with typewriter */}
+          <div ref={headingRef} className="mb-8">
+            <motion.h2 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold"
+            >
+              {t("Skontaktuj się", "Contact")}{" "}
+              <span className="text-gradient-premium relative inline-block">
+                {isHeadingInView && (
+                  <TypewriterText 
+                    text={t("z nami", "us")} 
+                    delay={0.5}
+                    speed={0.08}
+                  />
+                )}
+                <motion.span 
+                  className="absolute -inset-2 bg-primary/20 rounded-lg blur-2xl -z-10"
+                  animate={{ opacity: [0.3, 0.6, 0.3] }}
+                  transition={{ duration: 3, repeat: Infinity }}
+                />
+              </span>
+            </motion.h2>
+          </div>
+
+          {/* Spotlight animated text */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold mb-6"
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mb-10 max-w-2xl mx-auto"
           >
-            {t("Skontaktuj się", "Contact")}{" "}
-            <span className="text-gradient-premium relative">
-              {t("z nami", "us")}
-              <motion.span 
-                className="absolute -inset-2 bg-primary/20 rounded-lg blur-2xl -z-10"
-                animate={{ opacity: [0.3, 0.6, 0.3] }}
-                transition={{ duration: 3, repeat: Infinity }}
-              />
-            </span>
-          </motion.h2>
-          
-          <motion.p 
+            <SpotlightText 
+              text={ctaText}
+              className="text-foreground/70"
+            />
+          </motion.div>
+
+          {/* Feature badges */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-foreground/70 text-lg md:text-xl mb-10 max-w-2xl mx-auto"
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="flex flex-wrap items-center justify-center gap-4 mb-10"
           >
-            {t(
-              "Nie czekaj, aż konkurencja Cię wyprzedzi. Skontaktuj się z naszą agencją już dziś i umów się na bezpłatną konsultację. Porozmawiajmy o Twoich celach biznesowych i o tym, jak możemy Ci pomóc osiągnąć sukces.",
-              "Don't wait for the competition to get ahead of you. Contact our agency today and schedule a free consultation. Let's talk about your business goals and how we can help you succeed."
-            )}
-          </motion.p>
+            {features.map((feature, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 + i * 0.1, type: "spring" }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border/50"
+              >
+                <feature.icon className="w-4 h-4 text-primary" />
+                <span className="text-sm text-foreground/80">{feature.text}</span>
+              </motion.div>
+            ))}
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
           >
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -158,7 +221,7 @@ export function FinalCTA() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6 text-foreground/60"
           >
             <motion.div 
