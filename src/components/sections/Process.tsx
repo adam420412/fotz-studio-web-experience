@@ -1,9 +1,19 @@
-import { Target, Rocket, TrendingUp } from "lucide-react";
-import { motion } from "framer-motion";
+import { Target, Rocket, TrendingUp, Sparkles } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 
 export function Process() {
   const { t } = useLanguage();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"]
+  });
+
+  const lineProgress = useTransform(scrollYProgress, [0.2, 0.8], ["0%", "100%"]);
 
   const steps = [
     {
@@ -19,6 +29,7 @@ export function Process() {
         t("Analiza konkurencji", "Competition analysis"),
         t("Cele biznesowe", "Business goals"),
       ],
+      color: "from-orange-500/20 to-amber-500/10",
     },
     {
       number: "02",
@@ -33,6 +44,7 @@ export function Process() {
         t("Google Ads", "Google Ads"),
         t("Social Media", "Social Media"),
       ],
+      color: "from-purple-500/20 to-pink-500/10",
     },
     {
       number: "03",
@@ -47,21 +59,45 @@ export function Process() {
         t("Optymalizacja", "Optimization"),
         t("Wzrost ROI", "ROI growth"),
       ],
+      color: "from-blue-500/20 to-cyan-500/10",
     },
   ];
 
   return (
-    <section className="section-padding bg-background relative overflow-hidden">
+    <section ref={sectionRef} className="section-padding bg-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full blur-[200px]"
-          style={{ background: "hsla(336, 71%, 27%, 0.08)" }}
+          style={{ background: "hsl(var(--primary) / 0.05)" }}
+          animate={{ 
+            scale: [1, 1.1, 1],
+            opacity: [0.5, 0.8, 0.5]
+          }}
+          transition={{ duration: 10, repeat: Infinity }}
         />
+        
+        {/* Floating particles */}
+        {[...Array(10)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-primary/30 rounded-full"
+            style={{
+              left: `${20 + Math.random() * 60}%`,
+              top: `${20 + Math.random() * 60}%`,
+            }}
+            animate={{
+              y: [0, -60, 0],
+              opacity: [0, 1, 0],
+              scale: [0, 1, 0],
+            }}
+            transition={{
+              duration: 5 + Math.random() * 3,
+              repeat: Infinity,
+              delay: Math.random() * 5,
+            }}
+          />
+        ))}
       </div>
 
       <div className="container-wide relative z-10">
@@ -73,17 +109,27 @@ export function Process() {
           transition={{ duration: 0.7 }}
           className="text-center mb-16"
         >
-          <motion.span 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
+            transition={{ duration: 0.5, type: "spring" }}
           >
-            {t("Jak pracujemy", "How we work")}
-          </motion.span>
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+              <Sparkles className="w-4 h-4" />
+              {t("Jak pracujemy", "How we work")}
+            </span>
+          </motion.div>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            {t("Proces", "Collaboration")} <span className="text-gradient-premium">{t("współpracy z naszą agencją", "process with our agency")}</span>
+            {t("Proces", "Collaboration")}{" "}
+            <span className="text-gradient-premium relative">
+              {t("współpracy z naszą agencją", "process with our agency")}
+              <motion.span 
+                className="absolute -inset-2 bg-primary/10 rounded-lg blur-2xl -z-10"
+                animate={{ opacity: [0.3, 0.6, 0.3] }}
+                transition={{ duration: 3, repeat: Infinity }}
+              />
+            </span>
           </h2>
           <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
             {t(
@@ -95,57 +141,107 @@ export function Process() {
 
         {/* Steps */}
         <div className="relative">
-          {/* Connection Line - Desktop */}
-          <div className="hidden md:block absolute top-32 left-[16%] right-[16%] h-px">
-            <div className="w-full h-full bg-gradient-brand opacity-30" />
+          {/* Animated Connection Line - Desktop */}
+          <div className="hidden md:block absolute top-32 left-[16%] right-[16%] h-1 rounded-full overflow-hidden bg-border/30">
+            <motion.div 
+              className="h-full bg-gradient-to-r from-primary via-secondary to-primary rounded-full"
+              style={{ width: lineProgress }}
+            />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             {steps.map((step, index) => (
-              <motion.div
-                key={step.number}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="relative text-center"
-              >
-                {/* Number & Icon */}
-                <div className="relative inline-flex flex-col items-center mb-8">
-                  <span className="text-7xl md:text-8xl font-heading font-bold text-muted/50">
-                    {step.number}
-                  </span>
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    className="absolute bottom-0 w-16 h-16 rounded-2xl bg-gradient-brand flex items-center justify-center shadow-lg"
-                    style={{ boxShadow: "0 0 30px hsla(336, 71%, 27%, 0.3)" }}
-                  >
-                    <step.icon className="w-7 h-7 text-white" />
-                  </motion.div>
-                </div>
-
-                {/* Content */}
-                <h3 className="text-xl md:text-2xl font-heading font-bold mb-4">
-                  {step.title}
-                </h3>
-                <p className="text-foreground/60 mb-6">{step.description}</p>
-
-                {/* Details */}
-                <div className="flex flex-wrap justify-center gap-2">
-                  {step.details.map((detail) => (
-                    <span
-                      key={detail}
-                      className="px-3 py-1 text-xs font-medium rounded-full bg-muted text-foreground/70"
-                    >
-                      {detail}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
+              <ProcessCard key={step.number} step={step} index={index} />
             ))}
           </div>
         </div>
       </div>
     </section>
+  );
+}
+
+function ProcessCard({ step, index }: { step: any; index: number }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.6, delay: index * 0.2 }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="relative text-center group"
+    >
+      {/* Background gradient blob */}
+      <motion.div 
+        className={cn(
+          "absolute -inset-4 rounded-3xl blur-2xl opacity-0 transition-opacity duration-500",
+          `bg-gradient-to-br ${step.color}`,
+          isHovered && "opacity-40"
+        )}
+      />
+
+      {/* Number & Icon */}
+      <div className="relative inline-flex flex-col items-center mb-8">
+        <motion.span 
+          className="text-7xl md:text-8xl font-heading font-bold text-muted/30"
+          animate={{ 
+            scale: isHovered ? 1.1 : 1,
+            opacity: isHovered ? 0.5 : 0.3
+          }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          {step.number}
+        </motion.span>
+        <motion.div
+          animate={{ 
+            scale: isHovered ? 1.15 : 1,
+            rotate: isHovered ? 5 : 0,
+            y: isHovered ? -5 : 0
+          }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="absolute bottom-0 w-16 h-16 rounded-2xl bg-gradient-brand flex items-center justify-center shadow-lg"
+          style={{ boxShadow: isHovered ? "0 0 40px hsl(var(--primary) / 0.4)" : "0 0 30px hsl(var(--primary) / 0.2)" }}
+        >
+          <step.icon className="w-7 h-7 text-primary-foreground" />
+        </motion.div>
+        
+        {/* Glow effect */}
+        <motion.div 
+          className="absolute bottom-0 w-16 h-16 rounded-2xl bg-primary/30 blur-xl"
+          animate={{ 
+            scale: isHovered ? 1.5 : 1,
+            opacity: isHovered ? 0.8 : 0.3 
+          }}
+        />
+      </div>
+
+      {/* Content */}
+      <motion.h3 
+        className="text-xl md:text-2xl font-heading font-bold mb-4 transition-colors duration-300"
+        animate={{ color: isHovered ? "hsl(var(--primary))" : "hsl(var(--foreground))" }}
+      >
+        {step.title}
+      </motion.h3>
+      <p className="text-foreground/60 mb-6">{step.description}</p>
+
+      {/* Details */}
+      <div className="flex flex-wrap justify-center gap-2">
+        {step.details.map((detail: string, i: number) => (
+          <motion.span
+            key={detail}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.2 + i * 0.1 }}
+            whileHover={{ scale: 1.05, y: -2 }}
+            className="px-3 py-1.5 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20 cursor-default"
+          >
+            {detail}
+          </motion.span>
+        ))}
+      </div>
+    </motion.div>
   );
 }
