@@ -12,44 +12,56 @@ interface InstagramPost {
   client?: string;
 }
 
-// Import thumbnails
-import thumb1 from "@/assets/portfolio/enea-stadion.png";
-import thumb2 from "@/assets/portfolio/lauvjah.png";
-import thumb3 from "@/assets/portfolio/fabryka-virali.png";
-import thumb4 from "@/assets/portfolio/gierki.png";
 
 const instagramPosts: InstagramPost[] = [
-  {
-    url: "https://www.instagram.com/eneastadion/reel/DSKans0jDzY/",
-    embedUrl: "https://www.instagram.com/reel/DSKans0jDzY/embed",
-    type: "reel",
-    title: "Reel Enea Stadion",
-    client: "Enea Stadion",
-    thumbnail: thumb1,
-  },
-  {
-    url: "https://www.instagram.com/klubmuzycznyb17/reel/DRPhtXkkuJj/",
-    embedUrl: "https://www.instagram.com/reel/DRPhtXkkuJj/embed",
-    type: "reel",
-    title: "Reel Klub B17",
-    client: "Klub B17",
-    thumbnail: thumb2,
-  },
   {
     url: "https://www.instagram.com/eneastadion/reel/DQCNKAajM-q/",
     embedUrl: "https://www.instagram.com/reel/DQCNKAajM-q/embed",
     type: "reel",
     title: "Reel Enea Stadion",
     client: "Enea Stadion",
-    thumbnail: thumb3,
   },
   {
-    url: "https://www.instagram.com/eneastadion/reel/DPtonLMDC8o/",
-    embedUrl: "https://www.instagram.com/reel/DPtonLMDC8o/embed",
+    url: "https://www.instagram.com/eneastadion/reel/DPWohvwjJZl/",
+    embedUrl: "https://www.instagram.com/reel/DPWohvwjJZl/embed",
     type: "reel",
     title: "Reel Enea Stadion",
     client: "Enea Stadion",
-    thumbnail: thumb4,
+  },
+  {
+    url: "https://www.instagram.com/klubmuzycznyb17/reel/DR4RyXdiOEt/",
+    embedUrl: "https://www.instagram.com/reel/DR4RyXdiOEt/embed",
+    type: "reel",
+    title: "Reel Klub B17",
+    client: "Klub B17",
+  },
+  {
+    url: "https://www.instagram.com/eneastadion/reel/DO3BSVKDNcf/",
+    embedUrl: "https://www.instagram.com/reel/DO3BSVKDNcf/embed",
+    type: "reel",
+    title: "Reel Enea Stadion",
+    client: "Enea Stadion",
+  },
+  {
+    url: "https://www.instagram.com/eneastadion/reel/DOjM5AKCe6O/",
+    embedUrl: "https://www.instagram.com/reel/DOjM5AKCe6O/embed",
+    type: "reel",
+    title: "Reel Enea Stadion",
+    client: "Enea Stadion",
+  },
+  {
+    url: "https://www.instagram.com/klubmuzycznyb17/reel/DPHDQk6CO9p/",
+    embedUrl: "https://www.instagram.com/reel/DPHDQk6CO9p/embed",
+    type: "reel",
+    title: "Reel Klub B17",
+    client: "Klub B17",
+  },
+  {
+    url: "https://www.instagram.com/eneastadion/reel/DK4-AjTi_P-/",
+    embedUrl: "https://www.instagram.com/reel/DK4-AjTi_P-/embed",
+    type: "reel",
+    title: "Reel Enea Stadion",
+    client: "Enea Stadion",
   },
 ];
 
