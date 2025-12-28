@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Play, ChevronDown } from "lucide-react";
+import { ArrowRight, Play, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -52,15 +52,70 @@ export function Hero() {
           animate={{ opacity: 0.6 }}
           transition={{ duration: 2 }}
           className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full blur-[150px]"
-          style={{ background: "hsla(336, 71%, 27%, 0.3)" }}
+          style={{ background: "hsl(var(--primary) / 0.2)" }}
         />
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.4 }}
           transition={{ duration: 2, delay: 0.5 }}
           className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full blur-[120px]"
-          style={{ background: "hsla(209, 69%, 19%, 0.3)" }}
+          style={{ background: "hsl(var(--secondary) / 0.2)" }}
         />
+        
+        {/* Animated gradient orbs */}
+        <motion.div 
+          className="absolute top-20 -right-20 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px]"
+          animate={{ 
+            x: [0, 50, 0],
+            y: [0, 30, 0],
+            scale: [1, 1.2, 1]
+          }}
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+        />
+        <motion.div 
+          className="absolute bottom-40 -left-20 w-[300px] h-[300px] bg-secondary/10 rounded-full blur-[80px]"
+          animate={{ 
+            x: [0, -30, 0],
+            y: [0, -40, 0],
+            scale: [1, 1.3, 1]
+          }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        />
+
+        {/* Grid pattern */}
+        <div 
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, hsl(var(--foreground)) 1px, transparent 1px),
+              linear-gradient(to bottom, hsl(var(--foreground)) 1px, transparent 1px)
+            `,
+            backgroundSize: '80px 80px'
+          }}
+        />
+
+        {/* Floating particles */}
+        {[...Array(15)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-primary/40 rounded-full"
+            style={{
+              left: `${10 + Math.random() * 80}%`,
+              top: `${10 + Math.random() * 80}%`,
+            }}
+            animate={{
+              y: [0, -80, 0],
+              opacity: [0, 1, 0],
+              scale: [0, 1.5, 0],
+            }}
+            transition={{
+              duration: 4 + Math.random() * 4,
+              repeat: Infinity,
+              delay: Math.random() * 5,
+              ease: "easeInOut",
+            }}
+          />
+        ))}
       </div>
 
       {/* Content with Parallax */}
@@ -71,18 +126,23 @@ export function Hero() {
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, y: 30, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.6, type: "spring" }}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-card/80 backdrop-blur-sm border border-border/50 mb-8"
           >
-            <span className="relative flex h-2 w-2">
+            <motion.span 
+              className="relative flex h-2 w-2"
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-gradient-brand"></span>
-            </span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </motion.span>
             <span className="text-sm text-foreground font-medium">
               {t("Studio marketingu wzrostu • Poznań", "Growth Marketing Studio • Poznań")}
             </span>
+            <Sparkles className="w-4 h-4 text-primary" />
           </motion.div>
 
           {/* Heading with Text Reveal */}
@@ -92,12 +152,19 @@ export function Hero() {
               className="justify-center"
               delay={0.2}
             />
-            <TextRevealByWord
-              text={t("która projektuje realny wzrost firm", "that designs real business growth")}
-              className="justify-center text-gradient-premium"
-              wordClassName="text-gradient-premium"
-              delay={0.5}
-            />
+            <span className="relative inline-block">
+              <TextRevealByWord
+                text={t("która projektuje realny wzrost firm", "that designs real business growth")}
+                className="justify-center text-gradient-premium"
+                wordClassName="text-gradient-premium"
+                delay={0.5}
+              />
+              <motion.span 
+                className="absolute -inset-4 bg-primary/10 rounded-2xl blur-3xl -z-10"
+                animate={{ opacity: [0.3, 0.6, 0.3], scale: [1, 1.05, 1] }}
+                transition={{ duration: 4, repeat: Infinity }}
+              />
+            </span>
           </h1>
 
           {/* Subheading */}
@@ -121,10 +188,14 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4"
           >
             <MagneticButton strength={0.2}>
-              <Button variant="hero" size="xl" asChild className="group w-full sm:w-auto min-w-[200px] sm:min-w-[220px] text-sm sm:text-base" data-cursor-text="Porozmawiajmy">
+              <Button variant="hero" size="xl" asChild className="group w-full sm:w-auto min-w-[200px] sm:min-w-[220px] text-sm sm:text-base relative overflow-hidden" data-cursor-text="Porozmawiajmy">
                 <Link to="/kontakt">
-                  {t("Bezpłatna konsultacja", "Free consultation")}
-                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" />
+                  <span className="relative z-10">{t("Bezpłatna konsultacja", "Free consultation")}</span>
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-2 relative z-10" />
+                  <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                    initial={false}
+                  />
                 </Link>
               </Button>
             </MagneticButton>
@@ -146,15 +217,20 @@ export function Hero() {
             className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20 pt-8 sm:pt-10 md:pt-12 border-t border-border/30"
           >
             {stats.map((stat, index) => (
-              <AnimatedCounter
+              <motion.div
                 key={index}
-                end={stat.value}
-                suffix={stat.suffix}
-                label={stat.label}
-                index={index}
-                duration={2500}
-                delay={index * 200}
-              />
+                whileHover={{ scale: 1.05, y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <AnimatedCounter
+                  end={stat.value}
+                  suffix={stat.suffix}
+                  label={stat.label}
+                  index={index}
+                  duration={2500}
+                  delay={index * 200}
+                />
+              </motion.div>
             ))}
           </motion.div>
         </div>
@@ -168,12 +244,17 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20"
       >
         <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           className="flex flex-col items-center gap-2"
         >
-          <span className="text-xs text-foreground/50 uppercase tracking-wider">Scroll</span>
-          <ChevronDown className="w-5 h-5 text-primary" />
+          <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2">
+            <motion.div 
+              className="w-1.5 h-1.5 rounded-full bg-primary"
+              animate={{ y: [0, 16, 0], opacity: [1, 0.3, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            />
+          </div>
         </motion.div>
       </motion.div>
     </section>
