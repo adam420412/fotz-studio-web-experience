@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Palette, Megaphone, Globe } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowRight, Palette, Megaphone, Globe, CheckCircle2 } from "lucide-react";
+import { motion, useInView } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { TextReveal } from "@/components/TextReveal";
 import { FadeInView, StaggerContainer, StaggerItem } from "@/components/FadeInView";
+import { ScrollRevealText, AnimatedBulletList } from "@/components/AnimatedText";
+import { useRef, useState } from "react";
+import { cn } from "@/lib/utils";
 
 export function Services() {
   const { t } = useLanguage();
@@ -23,6 +26,8 @@ export function Services() {
         t("Optymalizacja ROI", "ROI optimization"),
       ],
       href: "/uslugi",
+      color: "from-orange-500/20 to-red-500/10",
+      accentColor: "text-orange-400",
     },
     {
       icon: Palette,
@@ -38,6 +43,8 @@ export function Services() {
         t("Content marketing", "Content marketing"),
       ],
       href: "/uslugi",
+      color: "from-purple-500/20 to-pink-500/10",
+      accentColor: "text-purple-400",
     },
     {
       icon: Globe,
@@ -53,30 +60,10 @@ export function Services() {
         t("Performance Max", "Performance Max"),
       ],
       href: "/uslugi",
+      color: "from-blue-500/20 to-cyan-500/10",
+      accentColor: "text-blue-400",
     },
   ];
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1] as const,
-      },
-    },
-  };
 
   return (
     <section className="section-padding bg-background relative overflow-hidden">
@@ -128,55 +115,124 @@ export function Services() {
         <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 px-4 md:px-0" staggerDelay={0.15}>
           {services.map((service, index) => (
             <StaggerItem key={index}>
-              <Link
-                to={service.href}
-                className="group relative block p-5 sm:p-6 md:p-8 rounded-xl md:rounded-2xl bg-card border border-border/50 hover:border-primary/40 transition-all duration-500 overflow-hidden h-full hover-lift"
-              >
-                {/* Gradient Background on Hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br from-primary/10 via-secondary/5 to-transparent" />
-
-                {/* Animated border glow */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" style={{
-                  boxShadow: "inset 0 0 30px hsla(336, 71%, 27%, 0.1)"
-                }} />
-
-                <div className="relative z-10">
-                  {/* Icon with gradient */}
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-6 transition-all duration-500 group-hover:scale-110 bg-gradient-brand">
-                    <service.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-heading font-semibold mb-2 sm:mb-3 text-foreground group-hover:text-gradient-premium transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm sm:text-base text-foreground/60 mb-4 sm:mb-6">
-                    {service.description}
-                  </p>
-
-                  {/* Features */}
-                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
-                    {service.features.map((feature) => (
-                      <span
-                        key={feature}
-                        className="px-2 sm:px-3 py-1 text-xs font-medium rounded-full bg-muted text-foreground/70"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Link */}
-                  <div className="flex items-center gap-2 text-primary font-medium text-sm sm:text-base">
-                    <span>{t("Dowiedz się więcej", "Learn more")}</span>
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-2" />
-                  </div>
-                </div>
-              </Link>
+              <ServiceCard service={service} index={index} />
             </StaggerItem>
           ))}
         </StaggerContainer>
       </div>
     </section>
+  );
+}
+
+function ServiceCard({ service, index }: { service: any; index: number }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(cardRef, { once: true, margin: "-50px" });
+
+  return (
+    <div
+      ref={cardRef}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="group relative block p-5 sm:p-6 md:p-8 rounded-xl md:rounded-2xl bg-card border border-border/50 hover:border-primary/40 transition-all duration-500 overflow-hidden h-full hover-lift"
+    >
+      {/* Gradient Background on Hover */}
+      <motion.div 
+        className={cn(
+          "absolute inset-0 opacity-0 transition-opacity duration-500 bg-gradient-to-br",
+          service.color,
+          isHovered && "opacity-20"
+        )}
+      />
+
+      {/* Animated border glow */}
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" style={{
+        boxShadow: "inset 0 0 30px hsla(336, 71%, 27%, 0.1)"
+      }} />
+
+      <div className="relative z-10">
+        {/* Icon with gradient */}
+        <motion.div 
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-6 transition-all duration-500 bg-gradient-brand"
+          animate={{ 
+            scale: isHovered ? 1.1 : 1,
+            rotate: isHovered ? 5 : 0
+          }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <service.icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+        </motion.div>
+
+        {/* Content */}
+        <h3 className="text-lg sm:text-xl md:text-2xl font-heading font-semibold mb-2 sm:mb-3 text-foreground group-hover:text-gradient-premium transition-colors">
+          {service.title}
+        </h3>
+
+        {/* Animated description with scroll reveal */}
+        <div className="relative mb-4 sm:mb-6">
+          <motion.div
+            initial={false}
+            animate={{ height: isExpanded ? "auto" : "72px" }}
+            className="overflow-hidden"
+          >
+            {isInView && (
+              <ScrollRevealText 
+                text={service.description}
+                className="text-sm sm:text-base text-foreground/60"
+                highlightWords={["Meta Ads", "Google Ads", "ROI", "Facebook", "Instagram", "TikTok"]}
+                highlightClassName={service.accentColor}
+              />
+            )}
+          </motion.div>
+          
+          {/* Gradient fade when collapsed */}
+          {!isExpanded && (
+            <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-card to-transparent" />
+          )}
+        </div>
+
+        {/* Expand/Collapse button */}
+        <motion.button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="text-xs text-primary mb-4 flex items-center gap-1 hover:gap-2 transition-all"
+          whileHover={{ x: 3 }}
+        >
+          {isExpanded ? "Zwiń opis" : "Rozwiń opis"}
+          <motion.span
+            animate={{ rotate: isExpanded ? 90 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ArrowRight className="w-3 h-3" />
+          </motion.span>
+        </motion.button>
+
+        {/* Features with animated appearance */}
+        <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-6">
+          {service.features.map((feature: string, i: number) => (
+            <motion.span
+              key={feature}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ delay: 0.3 + i * 0.1, type: "spring" }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              className="px-2 sm:px-3 py-1 text-xs font-medium rounded-full bg-muted text-foreground/70 flex items-center gap-1"
+            >
+              <CheckCircle2 className="w-3 h-3 text-primary" />
+              {feature}
+            </motion.span>
+          ))}
+        </div>
+
+        {/* Link */}
+        <Link
+          to={service.href}
+          className="flex items-center gap-2 text-primary font-medium text-sm sm:text-base group/link"
+        >
+          <span>Dowiedz się więcej</span>
+          <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-2" />
+        </Link>
+      </div>
+    </div>
   );
 }

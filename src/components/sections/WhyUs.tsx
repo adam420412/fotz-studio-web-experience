@@ -1,8 +1,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Users, Target, TrendingUp, Sparkles } from "lucide-react";
+import { Users, Target, TrendingUp, Sparkles, ArrowRight } from "lucide-react";
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { ScrollRevealText, FloatingWords, AnimatedBulletList } from "@/components/AnimatedText";
 
 export function WhyUs() {
   const { t } = useLanguage();
@@ -23,7 +24,13 @@ export function WhyUs() {
         "Współpraca z agencją marketingową to klucz do efektywnych kampanii reklamowych. Agencja staje się partnerem, który rozumie potrzeby klienta i dostosowuje strategie marketingowe do specyfiki jego biznesu. Indywidualne podejście do klienta to fundament sukcesu, pozwalający na tworzenie kampanii, które realnie wpływają na przychód i konwersję.",
         "Working with a marketing agency is the key to effective advertising campaigns. The agency becomes a partner who understands the client's needs and adapts marketing strategies to the specifics of their business. An individual approach to the client is the foundation of success, allowing the creation of campaigns that really impact revenue and conversion."
       ),
+      bullets: [
+        t("Indywidualne podejście do każdego projektu", "Individual approach to each project"),
+        t("Transparentna komunikacja i raportowanie", "Transparent communication and reporting"),
+        t("Długoterminowe partnerstwo biznesowe", "Long-term business partnership"),
+      ],
       color: "from-orange-500/20 to-amber-500/10",
+      accentColor: "text-orange-400",
     },
     {
       icon: Target,
@@ -32,7 +39,13 @@ export function WhyUs() {
         "Nasze podejście do strategii marketingowej opiera się na głębokiej analityce i zrozumieniu potrzeb klienta. Przeprowadzamy audyt oraz analizę danych z analityki witryny i ruchu na stronie. Wykorzystujemy AI i automatyzację, aby zoptymalizować kampanie Google Ads i Social Media, maksymalizując zwrot z inwestycji.",
         "Our approach to marketing strategy is based on deep analytics and understanding of client needs. We conduct audits and analyze website analytics and traffic data. We use AI and automation to optimize Google Ads and Social Media campaigns, maximizing ROI."
       ),
+      bullets: [
+        t("Dogłębna analityka i audyty", "In-depth analytics and audits"),
+        t("AI i automatyzacja procesów", "AI and process automation"),
+        t("Optymalizacja kampanii w czasie rzeczywistym", "Real-time campaign optimization"),
+      ],
       color: "from-purple-500/20 to-pink-500/10",
+      accentColor: "text-purple-400",
     },
     {
       icon: TrendingUp,
@@ -41,8 +54,25 @@ export function WhyUs() {
         "Agencja marketingowa ma bezpośredni wpływ na przychody biznesowe poprzez skuteczne kampanie reklamowe i content marketing. Kreacje copywriterów angażują odbiorców, a pozycjonowanie stron zwiększa widoczność w wyszukiwarce. Optymalizacja UX i contentu sprzyja konwersji, przekształcając ruch na stronie w realnych klientów e-commerce.",
         "A marketing agency has a direct impact on business revenue through effective advertising campaigns and content marketing. Copywriter creations engage audiences, and SEO increases visibility in search engines. UX and content optimization promotes conversion, transforming website traffic into real e-commerce customers."
       ),
+      bullets: [
+        t("Wzrost konwersji i sprzedaży", "Increased conversions and sales"),
+        t("Większa widoczność w wyszukiwarkach", "Greater visibility in search engines"),
+        t("Angażujący content marketing", "Engaging content marketing"),
+      ],
       color: "from-blue-500/20 to-cyan-500/10",
+      accentColor: "text-blue-400",
     },
+  ];
+
+  const keyWords = [
+    { text: t("Strategia", "Strategy"), color: "text-primary" },
+    { text: t("Analityka", "Analytics"), color: "text-purple-400" },
+    { text: t("Kampanie", "Campaigns"), color: "text-orange-400" },
+    { text: t("Wzrost", "Growth"), color: "text-green-400" },
+    { text: t("ROI", "ROI"), color: "text-blue-400" },
+    { text: t("Automatyzacja", "Automation"), color: "text-pink-400" },
+    { text: t("Content", "Content"), color: "text-amber-400" },
+    { text: t("Konwersja", "Conversion"), color: "text-cyan-400" },
   ];
 
   return (
@@ -82,7 +112,7 @@ export function WhyUs() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -108,6 +138,17 @@ export function WhyUs() {
           </h2>
         </motion.div>
 
+        {/* Floating Keywords */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-16"
+        >
+          <FloatingWords words={keyWords} />
+        </motion.div>
+
         {/* Items Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           {items.map((item, index) => (
@@ -121,6 +162,7 @@ export function WhyUs() {
 
 function WhyUsCard({ item, index }: { item: any; index: number }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <motion.div
@@ -176,7 +218,60 @@ function WhyUsCard({ item, index }: { item: any; index: number }) {
         >
           {item.title}
         </motion.h3>
-        <p className="text-foreground/70 leading-relaxed relative z-10">{item.description}</p>
+
+        {/* Animated description */}
+        <div className="relative">
+          <motion.div
+            initial={false}
+            animate={{ height: isExpanded ? "auto" : "80px" }}
+            className="overflow-hidden"
+          >
+            <ScrollRevealText 
+              text={item.description}
+              className="text-foreground/70 leading-relaxed text-sm"
+              highlightWords={["klucz", "partner", "sukces", "ROI", "wzrost", "konwersja"]}
+              highlightClassName={item.accentColor}
+            />
+          </motion.div>
+          
+          {/* Gradient fade */}
+          {!isExpanded && (
+            <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-background to-transparent" />
+          )}
+        </div>
+
+        {/* Expand button */}
+        <motion.button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="mt-4 text-sm text-primary flex items-center gap-1 hover:gap-2 transition-all"
+          whileHover={{ x: 3 }}
+        >
+          {isExpanded ? t("Zwiń", "Collapse") : t("Rozwiń", "Expand")}
+          <motion.span
+            animate={{ rotate: isExpanded ? 90 : 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ArrowRight className="w-4 h-4" />
+          </motion.span>
+        </motion.button>
+
+        {/* Animated bullet points */}
+        <motion.div
+          initial={false}
+          animate={{ 
+            opacity: isExpanded ? 1 : 0,
+            height: isExpanded ? "auto" : 0
+          }}
+          transition={{ duration: 0.3 }}
+          className="overflow-hidden"
+        >
+          <div className="pt-4 border-t border-border/30 mt-4">
+            <AnimatedBulletList 
+              items={item.bullets}
+              bulletColor={item.accentColor.replace("text-", "bg-")}
+            />
+          </div>
+        </motion.div>
 
         {/* Corner decoration */}
         <motion.div 
@@ -192,4 +287,8 @@ function WhyUsCard({ item, index }: { item: any; index: number }) {
       </div>
     </motion.div>
   );
+}
+
+function t(pl: string, en: string) {
+  return pl;
 }
