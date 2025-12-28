@@ -92,8 +92,8 @@ const services = [
 ];
 
 const ServiceCard = ({ service, index }: { service: typeof services[0]; index: number }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
@@ -107,6 +107,17 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
   const scale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.8, 1, 1, 0.8]);
 
   const isReversed = index % 2 === 1;
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   return (
     <motion.div
@@ -240,17 +251,17 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
           </motion.div>
         </motion.div>
 
-        {/* Media (Image/Video) */}
+        {/* Video Player */}
         <motion.div
           className={cn(
-            "relative aspect-[4/3] lg:aspect-[3/2] rounded-3xl overflow-hidden group cursor-pointer",
+            "relative aspect-video rounded-3xl overflow-hidden group cursor-pointer",
             isReversed && "lg:order-1"
           )}
           initial={{ opacity: 0, x: isReversed ? -50 : 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          whileHover={{ scale: 1.02 }}
+          onClick={togglePlay}
         >
           {/* Decorative frame */}
           <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-br from-primary/30 via-transparent to-primary/10 z-10 pointer-events-none" />
@@ -263,75 +274,67 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
             transition={{ duration: 0.5 }}
           />
 
-          {/* Image */}
-          <img
-            src={service.image}
-            alt={service.title}
-            className={cn(
-              "w-full h-full object-cover transition-all duration-700",
-              isHovered && "scale-105 blur-sm brightness-50"
-            )}
+          {/* Video */}
+          <video
+            ref={videoRef}
+            src={service.video}
+            poster={service.image}
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            onPlay={() => setIsPlaying(true)}
+            onPause={() => setIsPlaying(false)}
           />
 
-          {/* Video overlay */}
-          <div className={cn(
-            "absolute inset-0 transition-opacity duration-500",
-            isHovered && isVideoLoaded ? "opacity-100" : "opacity-0"
-          )}>
-            <video
-              ref={videoRef}
-              src={service.video}
-              muted
-              loop
-              playsInline
-              className="w-full h-full object-cover"
-              onLoadedData={() => setIsVideoLoaded(true)}
-              onMouseEnter={() => videoRef.current?.play()}
-              onMouseLeave={() => {
-                videoRef.current?.pause();
-                if (videoRef.current) videoRef.current.currentTime = 0;
-              }}
-            />
-          </div>
-
-          {/* Play icon overlay */}
+          {/* Play/Pause overlay */}
           <motion.div 
-            className="absolute inset-0 flex items-center justify-center z-20"
-            initial={{ opacity: 1 }}
-            animate={{ opacity: isHovered ? 0 : 1 }}
+            className={cn(
+              "absolute inset-0 flex items-center justify-center z-20 transition-opacity duration-300",
+              isPlaying ? "opacity-0 hover:opacity-100" : "opacity-100"
+            )}
           >
             <motion.div 
-              className="w-20 h-20 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center"
+              className="w-20 h-20 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-2xl shadow-primary/30"
               whileHover={{ scale: 1.1 }}
-              animate={{ 
-                boxShadow: isHovered 
-                  ? "0 0 60px rgba(var(--primary), 0.5)" 
-                  : "0 0 30px rgba(var(--primary), 0.3)"
-              }}
+              whileTap={{ scale: 0.95 }}
             >
-              <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
+              {isPlaying ? (
+                <div className="flex gap-1">
+                  <div className="w-2 h-8 bg-primary-foreground rounded-full" />
+                  <div className="w-2 h-8 bg-primary-foreground rounded-full" />
+                </div>
+              ) : (
+                <Play className="w-8 h-8 text-primary-foreground ml-1" fill="currentColor" />
+              )}
             </motion.div>
           </motion.div>
 
           {/* Gradient overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/20 to-transparent pointer-events-none" />
-          <div className={cn(
-            "absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity duration-500 pointer-events-none",
-            service.color,
-            isHovered && "opacity-30"
-          )} />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent pointer-events-none" />
+          
+          {/* Title overlay */}
+          <div className="absolute bottom-0 left-0 right-0 p-6 z-20 pointer-events-none">
+            <motion.div 
+              className="flex items-center gap-2 text-sm text-foreground/80"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: isPlaying ? 0 : 1, y: isPlaying ? 10 : 0 }}
+            >
+              <Video className="w-4 h-4" />
+              <span>Kliknij aby odtworzyć</span>
+            </motion.div>
+          </div>
 
           {/* Corner decoration */}
-          <div className="absolute top-4 right-4 z-20">
+          <div className="absolute top-4 right-4 z-20 pointer-events-none">
             <motion.div 
-              className="w-12 h-12 rounded-xl bg-card/80 backdrop-blur-sm border border-border/50 flex items-center justify-center"
+              className="w-10 h-10 rounded-xl bg-card/80 backdrop-blur-sm border border-border/50 flex items-center justify-center"
               animate={{ 
-                rotate: isHovered ? 180 : 0,
-                scale: isHovered ? 1.1 : 1
+                rotate: isPlaying ? 360 : 0,
               }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 2, repeat: isPlaying ? Infinity : 0, ease: "linear" }}
             >
-              <Sparkles className="w-5 h-5 text-primary" />
+              <Sparkles className="w-4 h-4 text-primary" />
             </motion.div>
           </div>
         </motion.div>
