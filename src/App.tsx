@@ -71,6 +71,7 @@ import StronyInternetowe from "./pages/StronyInternetowe";
 import SocialMediaPoznan from "./pages/SocialMediaPoznan";
 import SocialMedia from "./pages/SocialMedia";
 import FotografPoznan from "./pages/FotografPoznan";
+import FotografiaZDrona from "./pages/FotografiaZDrona";
 import PozycjonowanieStronPoznan from "./pages/PozycjonowanieStronPoznan";
 import Pozycjonowanie from "./pages/Pozycjonowanie";
 import PozycjonowanieGoogleMaps from "./pages/PozycjonowanieGoogleMaps";
@@ -166,6 +167,7 @@ const App = () => (
             <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
             <Route path="/social-media" element={<SocialMedia />} />
             <Route path="/fotograf-poznan" element={<FotografPoznan />} />
+            <Route path="/fotografia-z-drona" element={<FotografiaZDrona />} />
             <Route path="/pozycjonowanie-stron-poznan" element={<PozycjonowanieStronPoznan />} />
             <Route path="/pozycjonowanie" element={<Pozycjonowanie />} />
             <Route path="/pozycjonowanie-google-maps" element={<PozycjonowanieGoogleMaps />} />

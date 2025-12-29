@@ -38,7 +38,10 @@ import {
   Scale,
   Package,
   Heart,
-  Plane
+  Plane,
+  Briefcase,
+  HelpCircle,
+  Navigation
 } from "lucide-react";
 
 // Import portfolio images for preview
@@ -102,6 +105,7 @@ const menuCategories: MenuCategory[] = [
       { name: "Spoty Reklamowe", href: "/spoty-reklamowe", icon: Clapperboard, tooltip: "Krótkie formy reklamowe" },
       { name: "Wizualizacje 3D", href: "/wizualizacje-3d", icon: Box, tooltip: "Renderingi produktów i architektury" },
       { name: "Fotografia", href: "/fotograf-poznan", icon: Camera, tooltip: "Sesje zdjęciowe produktowe i eventowe" },
+      { name: "Fotografia z drona", href: "/fotografia-z-drona", badge: "Nowe", icon: Navigation, tooltip: "Zdjęcia i filmy z lotu ptaka" },
     ],
   },
   {
@@ -450,6 +454,48 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                           </motion.div>
                         );
                       })()}
+                    </div>
+
+                    {/* Inne section */}
+                    <div className="pt-4 border-t border-border/30">
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.35 }}
+                        className="flex flex-wrap gap-4"
+                      >
+                        <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">Inne:</span>
+                        <Tooltip delayDuration={300}>
+                          <TooltipTrigger asChild>
+                            <Link
+                              to="/kariera"
+                              onClick={onClose}
+                              className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-1.5 hover:translate-x-0.5"
+                            >
+                              <Briefcase className="w-3.5 h-3.5" />
+                              Kariera
+                            </Link>
+                          </TooltipTrigger>
+                          <TooltipContent side="bottom" className="text-xs">
+                            Dołącz do naszego zespołu - staże i praktyki
+                          </TooltipContent>
+                        </Tooltip>
+                        <Tooltip delayDuration={300}>
+                          <TooltipTrigger asChild>
+                            <Link
+                              to="/faq"
+                              onClick={onClose}
+                              className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-1.5 hover:translate-x-0.5"
+                            >
+                              <HelpCircle className="w-3.5 h-3.5" />
+                              FAQ
+                            </Link>
+                          </TooltipTrigger>
+                          <TooltipContent side="bottom" className="text-xs">
+                            Najczęściej zadawane pytania
+                          </TooltipContent>
+                        </Tooltip>
+                      </motion.div>
                     </div>
 
                     {/* Bottom CTA */}
