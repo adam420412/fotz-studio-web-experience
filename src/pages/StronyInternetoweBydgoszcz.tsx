@@ -28,6 +28,7 @@ import {
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { CityLinksSection } from "@/components/sections/CityLinksSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -87,19 +88,6 @@ const StronyInternetoweBydgoszcz = () => {
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
-  ];
-
-  const cityLinks = [
-    { name: "Poznań", href: "/strony-internetowe-poznan", active: true },
-    { name: "Warszawa", href: "/strony-internetowe-warszawa", active: true },
-    { name: "Wrocław", href: "/strony-internetowe-wroclaw", active: true },
-    { name: "Kraków", href: "/strony-internetowe-krakow", active: true },
-    { name: "Gdańsk", href: "/strony-internetowe-gdansk", active: true },
-    { name: "Łódź", href: "/strony-internetowe-lodz", active: true },
-    { name: "Katowice", href: "/strony-internetowe-katowice", active: true },
-    { name: "Szczecin", href: "/strony-internetowe-szczecin", active: true },
-    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz", active: true },
-    { name: "Lublin", href: "/strony-internetowe-lublin", active: true },
   ];
 
   const faqItems = [
@@ -554,53 +542,7 @@ const StronyInternetoweBydgoszcz = () => {
           </div>
         </section>
 
-        {/* Cities Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-12">
-                <div className="flex items-center justify-center gap-2 mb-4">
-                  <MapPin className="w-5 h-5 text-primary" />
-                  <span className="text-primary text-sm font-medium uppercase tracking-wider">Lokalizacje</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Tworzymy strony internetowe w całej Polsce
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Działamy zdalnie, ale znamy specyfikę lokalnych rynków. Sprawdź naszą ofertę w Twoim mieście.
-                </p>
-              </div>
-            </FadeInView>
-
-            <FadeInView delay={0.2}>
-              <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-                {cityLinks.map((city, index) => (
-                  city.active ? (
-                    <Link
-                      key={index}
-                      to={city.href}
-                      className={`px-6 py-3 rounded-full font-medium transition-colors ${
-                        city.href === "/strony-internetowe-bydgoszcz" 
-                          ? "bg-primary text-primary-foreground" 
-                          : "bg-card border border-border/50 text-foreground hover:border-primary/30"
-                      }`}
-                    >
-                      {city.name}
-                    </Link>
-                  ) : (
-                    <span
-                      key={index}
-                      className="px-6 py-3 rounded-full bg-card border border-border/50 text-muted-foreground font-medium cursor-not-allowed"
-                      title="Wkrótce"
-                    >
-                      {city.name}
-                    </span>
-                  )
-                ))}
-              </div>
-            </FadeInView>
-          </div>
-        </section>
+        <CityLinksSection currentCity="Bydgoszcz" />
 
         {/* FAQ Section */}
         <section className="py-20 bg-card/30">

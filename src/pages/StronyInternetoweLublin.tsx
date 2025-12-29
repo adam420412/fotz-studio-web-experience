@@ -30,6 +30,7 @@ import {
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { CityLinksSection } from "@/components/sections/CityLinksSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -89,19 +90,6 @@ const StronyInternetoweLublin = () => {
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
-  ];
-
-  const cityLinks = [
-    { name: "Poznań", href: "/strony-internetowe-poznan", active: true },
-    { name: "Warszawa", href: "/strony-internetowe-warszawa", active: true },
-    { name: "Wrocław", href: "/strony-internetowe-wroclaw", active: true },
-    { name: "Kraków", href: "/strony-internetowe-krakow", active: true },
-    { name: "Gdańsk", href: "/strony-internetowe-gdansk", active: true },
-    { name: "Łódź", href: "/strony-internetowe-lodz", active: true },
-    { name: "Katowice", href: "/strony-internetowe-katowice", active: true },
-    { name: "Szczecin", href: "/strony-internetowe-szczecin", active: true },
-    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz", active: true },
-    { name: "Lublin", href: "/strony-internetowe-lublin", active: true },
   ];
 
   const faqItems = [
@@ -558,46 +546,7 @@ const StronyInternetoweLublin = () => {
           </div>
         </section>
 
-        {/* City Links */}
-        <section className="py-16 border-t border-border/30">
-          <div className="container mx-auto px-4">
-            <FadeInView>
-              <div className="text-center mb-8">
-                <h2 className="text-2xl font-heading font-bold mb-4">
-                  Strony internetowe w innych miastach
-                </h2>
-                <p className="text-muted-foreground">
-                  Obsługujemy klientów z całej Polski. Sprawdź nasze usługi w Twoim mieście.
-                </p>
-              </div>
-              
-              <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-                {cityLinks.map((city, index) => (
-                  city.active ? (
-                    <Link 
-                      key={index}
-                      to={city.href}
-                      className={`px-4 py-2 rounded-full border transition-all ${
-                        city.name === "Lublin" 
-                          ? "bg-primary text-primary-foreground border-primary" 
-                          : "border-border/50 hover:border-primary/50 hover:text-primary"
-                      }`}
-                    >
-                      {city.name}
-                    </Link>
-                  ) : (
-                    <span 
-                      key={index}
-                      className="px-4 py-2 rounded-full border border-border/30 text-muted-foreground/50 cursor-not-allowed"
-                    >
-                      {city.name}
-                    </span>
-                  )
-                ))}
-              </div>
-            </FadeInView>
-          </div>
-        </section>
+        <CityLinksSection currentCity="Lublin" />
 
         {/* Contact Section */}
         <ContactSection city="Lublinie" />

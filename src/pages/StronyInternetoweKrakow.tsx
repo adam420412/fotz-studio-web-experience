@@ -44,6 +44,7 @@ import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
 import { CityIntroSection } from "@/components/sections/CityIntroSection";
 import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
+import { CityLinksSection } from "@/components/sections/CityLinksSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -119,19 +120,6 @@ const StronyInternetoweKrakow = () => {
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
-  ];
-
-  const cityLinks = [
-    { name: "Poznań", href: "/strony-internetowe-poznan", active: true },
-    { name: "Warszawa", href: "/strony-internetowe-warszawa", active: true },
-    { name: "Wrocław", href: "/strony-internetowe-wroclaw", active: true },
-    { name: "Kraków", href: "/strony-internetowe-krakow", active: true },
-    { name: "Gdańsk", href: "/strony-internetowe-gdansk", active: true },
-    { name: "Łódź", href: "/strony-internetowe-lodz", active: true },
-    { name: "Katowice", href: "/strony-internetowe-katowice", active: true },
-    { name: "Szczecin", href: "/strony-internetowe-szczecin", active: true },
-    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz", active: true },
-    { name: "Lublin", href: "/strony-internetowe-lublin", active: true },
   ];
 
   const faqItems = [
@@ -614,64 +602,7 @@ const StronyInternetoweKrakow = () => {
           </div>
         </section>
 
-        {/* Cities Section - Enhanced */}
-        <section className="py-24 relative overflow-hidden">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-12"
-            >
-              <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
-                <MapPin className="w-4 h-4" />
-                Lokalizacje
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
-                Tworzymy strony w całej Polsce
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Działamy zdalnie, ale znamy specyfikę lokalnych rynków. Sprawdź ofertę w Twoim mieście.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto"
-            >
-              {cityLinks.map((city, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
-                >
-                  {city.active ? (
-                    <Link
-                      to={city.href}
-                      className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                        city.href === "/strony-internetowe-krakow" 
-                          ? "bg-primary text-primary-foreground shadow-lg shadow-primary/30" 
-                          : "bg-card border border-border/50 text-foreground hover:border-primary/30 hover:bg-primary/5"
-                      }`}
-                    >
-                      {city.name}
-                    </Link>
-                  ) : (
-                    <span className="px-6 py-3 rounded-full bg-card border border-border/50 text-muted-foreground font-medium cursor-not-allowed">
-                      {city.name}
-                    </span>
-                  )}
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
+        <CityLinksSection currentCity="Kraków" />
 
         {/* FAQ Section - Enhanced */}
         <section className="py-24 bg-card/30 relative overflow-hidden">

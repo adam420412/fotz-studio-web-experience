@@ -40,6 +40,7 @@ import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
 import { CityIntroSection } from "@/components/sections/CityIntroSection";
 import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
+import { CityLinksSection } from "@/components/sections/CityLinksSection";
 
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
@@ -115,19 +116,6 @@ const StronyInternetowePoznan = () => {
       link: "/realizacje/cute-dumpling",
       image: cuteDumplingImg
     },
-  ];
-
-  const cityLinks = [
-    { name: "Poznań", href: "/strony-internetowe-poznan", active: true },
-    { name: "Warszawa", href: "/strony-internetowe-warszawa", active: true },
-    { name: "Wrocław", href: "/strony-internetowe-wroclaw", active: true },
-    { name: "Kraków", href: "/strony-internetowe-krakow", active: true },
-    { name: "Gdańsk", href: "/strony-internetowe-gdansk", active: true },
-    { name: "Łódź", href: "/strony-internetowe-lodz", active: true },
-    { name: "Katowice", href: "/strony-internetowe-katowice", active: true },
-    { name: "Szczecin", href: "/strony-internetowe-szczecin", active: true },
-    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz", active: true },
-    { name: "Lublin", href: "/strony-internetowe-lublin", active: true },
   ];
 
   const faqItems = [
@@ -519,47 +507,7 @@ const StronyInternetowePoznan = () => {
           cityName="Poznań"
         />
 
-        {/* Cities Section */}
-        <section className="py-24 bg-card/30">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Tworzymy strony w całej Polsce
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Realizujemy projekty dla firm z największych polskich miast
-              </p>
-            </motion.div>
-
-            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-              {cityLinks.map((city, index) => (
-                <motion.div
-                  key={city.name}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                >
-                  <Link
-                    to={city.href}
-                    className={`px-5 py-2.5 rounded-full border transition-all ${
-                      city.name === "Poznań"
-                        ? "bg-primary text-primary-foreground border-primary"
-                        : "bg-background border-border/50 hover:border-primary/50 hover:bg-primary/5"
-                    }`}
-                  >
-                    {city.name}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <CityLinksSection currentCity="Poznań" />
 
         {/* FAQ Section */}
         <section className="py-24">
