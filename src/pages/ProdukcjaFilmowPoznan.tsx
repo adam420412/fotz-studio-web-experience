@@ -14,6 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { BackstageGallery } from "@/components/sections/BackstageGallery";
 
 const videos = [
   { src: "/videos/fotz-reel.mp4", title: "Fotz Studio Reel", category: "Showreel" },
@@ -553,6 +554,13 @@ export default function ProdukcjaFilmowPoznan() {
             </div>
           </div>
         </section>
+
+        {/* Backstage Gallery Section */}
+        <BackstageGallery 
+          title="Backstage z produkcji"
+          subtitle="Zobacz kulisy profesjonalnej produkcji filmowej i sesji zdjęciowych w naszym studiu"
+          maxImages={8}
+        />
 
         {/* FAQ Section */}
         <section className="py-24">

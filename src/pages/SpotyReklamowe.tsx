@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { BackstageGallery } from "@/components/sections/BackstageGallery";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -580,6 +581,13 @@ export default function SpotyReklamowe() {
           </div>
         </div>
       </section>
+
+      {/* Backstage Gallery Section */}
+      <BackstageGallery 
+        title="Backstage z realizacji"
+        subtitle="Zobacz kulisy produkcji spotów reklamowych i filmów promocyjnych w naszym studiu"
+        maxImages={8}
+      />
 
       {/* FAQ Section */}
       <section className="section-padding bg-card">
