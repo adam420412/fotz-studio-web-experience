@@ -7,10 +7,20 @@ const footerLinks = {
     { name: "Strony internetowe", href: "/strony-internetowe" },
     { name: "Social Media", href: "/social-media" },
     { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
-    { name: "Google Maps", href: "/pozycjonowanie-google-maps" },
-    { name: "Fotograf", href: "/fotograf-poznan" },
-    { name: "Produkcja filmów", href: "/produkcja-filmow-poznan" },
+    { name: "Google Ads", href: "/google-ads" },
+    { name: "Facebook Ads", href: "/facebook-ads" },
+    { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
+    { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
     { name: "Studio podcastowe", href: "/studio-podcastowe" },
+  ],
+  poznan: [
+    { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
+    { name: "Agencja Reklamowa Poznań", href: "/agencja-reklamowa-poznan" },
+    { name: "Social Media Poznań", href: "/social-media-poznan" },
+    { name: "Strony Internetowe Poznań", href: "/strony-internetowe-poznan" },
+    { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
+    { name: "Fotograf Poznań", href: "/fotograf-poznan" },
+    { name: "Produkcja Filmów Poznań", href: "/produkcja-filmow-poznan" },
   ],
   realizacje: [
     { name: "Portfolio", href: "/realizacje" },
@@ -102,6 +112,22 @@ export function Footer() {
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Usługi</h4>
               <ul className="space-y-2 md:space-y-3">
                 {footerLinks.uslugi.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Poznań</h4>
+              <ul className="space-y-2 md:space-y-3">
+                {footerLinks.poznan.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
