@@ -118,10 +118,10 @@ export const CityPricingCards = ({
                 <div className="relative z-10 mb-6 md:mb-8">
                   <div className="flex items-baseline gap-1">
                     <span className={`text-3xl md:text-4xl font-bold ${item.popular ? 'text-gradient' : 'text-primary'}`}>
-                      {item.price.replace('od ', '').split(' ')[0]}
+                      {item.price.replace('od ', '').replace(' zł', '')}
                     </span>
                     <span className="text-muted-foreground text-xs sm:text-sm">
-                      {item.price.includes('zł') ? 'zł' : ''} netto
+                      zł netto
                     </span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-1">Wycena indywidualna</p>
