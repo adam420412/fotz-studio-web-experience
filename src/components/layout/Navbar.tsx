@@ -27,6 +27,7 @@ const servicesDropdownData = [
   { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe" },
   { name: { pl: "Social Media", en: "Social Media" }, href: "/social-media" },
   { name: { pl: "Pozycjonowanie SEO", en: "SEO" }, href: "/pozycjonowanie" },
+  { name: { pl: "Google Maps", en: "Google Maps" }, href: "/pozycjonowanie-google-maps" },
   { name: { pl: "Produkcja Filmów", en: "Film Production" }, href: "/produkcja-filmow" },
   { name: { pl: "Fotografia", en: "Photography" }, href: "/fotografia" },
 ];
