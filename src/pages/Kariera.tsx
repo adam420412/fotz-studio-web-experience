@@ -141,24 +141,25 @@ export default function Kariera() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-32">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-32 pb-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,hsl(var(--primary)/0.1),transparent_50%)]" />
         
-        <div className="container-wide relative z-10 py-20 md:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container-wide relative z-10">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
+              className="order-2 lg:order-1"
             >
               <Badge variant="outline" className="mb-6 text-primary border-primary/30">
                 <Briefcase className="w-4 h-4 mr-2" />
                 Dołącz do nas
               </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold text-foreground mb-6 leading-tight">
                 Kariera w <span className="text-primary">Fotz Studio</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground">
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-xl">
                 Budujemy zespół ludzi z pasją do marketingu. Jeśli chcesz tworzyć 
                 projekty dla topowych marek, to miejsce jest dla Ciebie.
               </p>
@@ -169,12 +170,12 @@ export default function Kariera() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="grid grid-cols-2 gap-4"
+              className="grid grid-cols-2 gap-3 md:gap-4 order-1 lg:order-2"
             >
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
                 <img src={teamBrainstorm2} alt="Zespół przy pracy" className="w-full h-full object-cover" />
               </div>
-              <div className="space-y-4">
+              <div className="flex flex-col gap-3 md:gap-4">
                 <div className="aspect-square rounded-xl overflow-hidden">
                   <img src={teamMeeting3} alt="Spotkanie zespołu" className="w-full h-full object-cover" />
                 </div>

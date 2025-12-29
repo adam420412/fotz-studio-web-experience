@@ -41,7 +41,8 @@ import {
   Plane,
   Briefcase,
   HelpCircle,
-  Navigation
+  Navigation,
+  X
 } from "lucide-react";
 
 // Import portfolio images for preview
@@ -161,8 +162,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
   const [hoveredCategory, setHoveredCategory] = useState<number>(0);
   const activeCategory = menuCategories[hoveredCategory];
 
-  const MenuItemLink = ({ item, categoryIndex, itemIndex }: { item: MenuItem; categoryIndex: number; itemIndex: number }) => {
-    const Icon = item.icon;
+  const renderMenuItem = (item: MenuItem, categoryIndex: number, itemIndex: number) => {
+    const IconComponent = item.icon;
     return (
       <motion.li 
         key={item.href}
@@ -177,8 +178,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
               onClick={onClose}
               className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
             >
-              <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
-              {item.name}
+              <IconComponent className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity flex-shrink-0" />
+              <span>{item.name}</span>
               {item.badge && (
                 <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
                   {item.badge}
@@ -293,6 +294,13 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                       >
                         Wszystkie usługi →
                       </Link>
+                      <button
+                        onClick={onClose}
+                        className="p-2 rounded-lg hover:bg-secondary/80 transition-colors text-muted-foreground hover:text-foreground"
+                        aria-label="Zamknij menu"
+                      >
+                        <X className="w-5 h-5" />
+                      </button>
                     </div>
                     
                     {/* Main services row */}
@@ -330,14 +338,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             {category.title}
                           </h4>
                           <ul className="space-y-2">
-                            {category.items.map((item, itemIndex) => (
-                              <MenuItemLink 
-                                key={item.href}
-                                item={item} 
-                                categoryIndex={categoryIndex} 
-                                itemIndex={itemIndex} 
-                              />
-                            ))}
+                            {category.items.map((item, itemIndex) => renderMenuItem(item, categoryIndex, itemIndex))}
                           </ul>
                         </motion.div>
                       ))}
@@ -379,14 +380,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                               {category.title}
                             </h4>
                             <ul className="space-y-2">
-                              {category.items.map((item, itemIndex) => (
-                                <MenuItemLink 
-                                  key={item.href}
-                                  item={item} 
-                                  categoryIndex={categoryIndex} 
-                                  itemIndex={itemIndex} 
-                                />
-                              ))}
+                              {category.items.map((item, itemIndex) => renderMenuItem(item, categoryIndex, itemIndex))}
                             </ul>
                           </motion.div>
                         );
@@ -431,24 +425,10 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             
                             <div className="grid grid-cols-2 gap-x-6">
                               <ul className="space-y-2">
-                                {column1.map((item, itemIndex) => (
-                                  <MenuItemLink 
-                                    key={item.href}
-                                    item={item} 
-                                    categoryIndex={categoryIndex} 
-                                    itemIndex={itemIndex} 
-                                  />
-                                ))}
+                                {column1.map((item, itemIndex) => renderMenuItem(item, categoryIndex, itemIndex))}
                               </ul>
                               <ul className="space-y-2">
-                                {column2.map((item, itemIndex) => (
-                                  <MenuItemLink 
-                                    key={item.href}
-                                    item={item} 
-                                    categoryIndex={categoryIndex} 
-                                    itemIndex={itemIndex + 6} 
-                                  />
-                                ))}
+                                {column2.map((item, itemIndex) => renderMenuItem(item, categoryIndex, itemIndex + 6))}
                               </ul>
                             </div>
                           </motion.div>
