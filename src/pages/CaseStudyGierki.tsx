@@ -4,7 +4,34 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Calendar, Use
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { ImageLightbox } from "@/components/ImageLightbox";
+import { useState } from "react";
 import gierkiImg from "@/assets/portfolio/gierki.png";
+
+// Gallery images
+import gierkyGolf from "@/assets/gierky/gierky-golf.jpg";
+import gierkyShuffleboard from "@/assets/gierky/gierky-shuffleboard.jpg";
+import gierkyLounge from "@/assets/gierky/gierky-lounge.jpg";
+import gierkyPinball from "@/assets/gierky/gierky-pinball.jpg";
+import gierkyBar from "@/assets/gierky/gierky-bar.jpg";
+import gierkyBowling from "@/assets/gierky/gierky-bowling.jpg";
+import gierkyReception from "@/assets/gierky/gierky-reception.jpg";
+import gierkyDarts from "@/assets/gierky/gierky-darts.jpg";
+import gierkyTables from "@/assets/gierky/gierky-tables.jpg";
+import gierkyHall from "@/assets/gierky/gierky-hall.jpg";
+
+const galleryImages = [
+  { src: gierkyGolf, alt: "Gierki - crazy golf i mini golf" },
+  { src: gierkyShuffleboard, alt: "Gierki - shuffleboard" },
+  { src: gierkyLounge, alt: "Gierki - strefa lounge" },
+  { src: gierkyPinball, alt: "Gierki - automaty pinball" },
+  { src: gierkyBar, alt: "Gierki - bar z drinkami" },
+  { src: gierkyBowling, alt: "Gierki - kręgle i bowling" },
+  { src: gierkyReception, alt: "Gierki - recepcja" },
+  { src: gierkyDarts, alt: "Gierki - dart elektroniczny" },
+  { src: gierkyTables, alt: "Gierki - stoły do gier" },
+  { src: gierkyHall, alt: "Gierki - główna hala" },
+];
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },
@@ -37,6 +64,18 @@ const recommendations = [
 ];
 
 const CaseStudyGierki = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const navigateLightbox = (index: number) => {
+    setLightboxIndex(index);
+  };
+
   return (
     <Layout>
       <Helmet>
@@ -280,6 +319,55 @@ const CaseStudyGierki = () => {
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery */}
+      <section className="section-padding bg-card">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="max-w-3xl mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Fotografia <span className="text-gradient-premium">wnętrz</span>
+            </h2>
+            <p className="text-foreground/70">
+              Profesjonalna sesja fotograficzna lokalu - od recepcji przez strefę gier po bar z drinkami.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {galleryImages.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
+                onClick={() => openLightbox(index)}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ImageLightbox
+        images={galleryImages}
+        currentIndex={lightboxIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        onNavigate={navigateLightbox}
+      />
 
       {/* Recommendations */}
       <section className="section-padding bg-card">

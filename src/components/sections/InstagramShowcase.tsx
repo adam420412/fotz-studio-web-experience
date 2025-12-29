@@ -14,6 +14,51 @@ interface InstagramPost {
 
 
 const instagramPosts: InstagramPost[] = [
+  // Luxury Cars
+  {
+    url: "https://www.instagram.com/karlik_luxury.cars/reel/DSpMWiZjY9s/",
+    embedUrl: "https://www.instagram.com/reel/DSpMWiZjY9s/embed",
+    type: "reel",
+    title: "Luxury Cars",
+    client: "Karlik Luxury Cars",
+  },
+  {
+    url: "https://www.instagram.com/landrover_karlik/reel/DSn0ptXiHWt/",
+    embedUrl: "https://www.instagram.com/reel/DSn0ptXiHWt/embed",
+    type: "reel",
+    title: "Land Rover",
+    client: "Karlik Land Rover",
+  },
+  {
+    url: "https://www.instagram.com/fotz_studio/reel/DMdghNJqINj/",
+    embedUrl: "https://www.instagram.com/reel/DMdghNJqINj/embed",
+    type: "reel",
+    title: "Produkcja video",
+    client: "Fotz Studio",
+  },
+  {
+    url: "https://www.instagram.com/fotz_studio/reel/DHjYbtjKZrH/",
+    embedUrl: "https://www.instagram.com/reel/DHjYbtjKZrH/embed",
+    type: "reel",
+    title: "Produkcja video",
+    client: "Fotz Studio",
+  },
+  {
+    url: "https://www.instagram.com/fotz_studio/reel/DHjaxMzqI6F/",
+    embedUrl: "https://www.instagram.com/reel/DHjaxMzqI6F/embed",
+    type: "reel",
+    title: "Produkcja video",
+    client: "Fotz Studio",
+  },
+  // Office tour
+  {
+    url: "https://www.instagram.com/fotz_studio/reel/DNIqV0nqtj2/",
+    embedUrl: "https://www.instagram.com/reel/DNIqV0nqtj2/embed",
+    type: "reel",
+    title: "Nasze biuro",
+    client: "Fotz Studio Office",
+  },
+  // Enea Stadion
   {
     url: "https://www.instagram.com/eneastadion/reel/DQCNKAajM-q/",
     embedUrl: "https://www.instagram.com/reel/DQCNKAajM-q/embed",
@@ -24,41 +69,6 @@ const instagramPosts: InstagramPost[] = [
   {
     url: "https://www.instagram.com/eneastadion/reel/DPWohvwjJZl/",
     embedUrl: "https://www.instagram.com/reel/DPWohvwjJZl/embed",
-    type: "reel",
-    title: "Reel Enea Stadion",
-    client: "Enea Stadion",
-  },
-  {
-    url: "https://www.instagram.com/klubmuzycznyb17/reel/DR4RyXdiOEt/",
-    embedUrl: "https://www.instagram.com/reel/DR4RyXdiOEt/embed",
-    type: "reel",
-    title: "Reel Klub B17",
-    client: "Klub B17",
-  },
-  {
-    url: "https://www.instagram.com/eneastadion/reel/DO3BSVKDNcf/",
-    embedUrl: "https://www.instagram.com/reel/DO3BSVKDNcf/embed",
-    type: "reel",
-    title: "Reel Enea Stadion",
-    client: "Enea Stadion",
-  },
-  {
-    url: "https://www.instagram.com/eneastadion/reel/DOjM5AKCe6O/",
-    embedUrl: "https://www.instagram.com/reel/DOjM5AKCe6O/embed",
-    type: "reel",
-    title: "Reel Enea Stadion",
-    client: "Enea Stadion",
-  },
-  {
-    url: "https://www.instagram.com/klubmuzycznyb17/reel/DPHDQk6CO9p/",
-    embedUrl: "https://www.instagram.com/reel/DPHDQk6CO9p/embed",
-    type: "reel",
-    title: "Reel Klub B17",
-    client: "Klub B17",
-  },
-  {
-    url: "https://www.instagram.com/eneastadion/reel/DK4-AjTi_P-/",
-    embedUrl: "https://www.instagram.com/reel/DK4-AjTi_P-/embed",
     type: "reel",
     title: "Reel Enea Stadion",
     client: "Enea Stadion",
