@@ -585,6 +585,79 @@ const FacebookAds = () => {
         </div>
       </section>
 
+      {/* Related Services Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Powiązane usługi
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Kompleksowe wsparcie marketingowe dla Twojego biznesu
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "Google Ads", description: "Reklamy w wyszukiwarce dla klientów z intencją zakupową", href: "/google-ads", icon: Target },
+              { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online", href: "/ecommerce-tworzenie-sklepu", icon: ShoppingCart },
+              { title: "Social Media", description: "Kompleksowa obsługa mediów społecznościowych", href: "/social-media-poznan", icon: Users },
+              { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/strony-internetowe", icon: Monitor },
+            ].map((service, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Link
+                  to={service.href}
+                  className="block bg-card border border-border rounded-2xl p-6 hover:border-blue-500/50 transition-all group h-full"
+                >
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <service.icon className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-blue-400 transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm">{service.description}</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Dla kogo section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-12 text-center"
+          >
+            <p className="text-muted-foreground mb-4">Sprawdź rozwiązania dla Twojej branży:</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link to="/dla-kogo/firmy-lokalne" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
+                Firmy lokalne
+              </Link>
+              <Link to="/dla-kogo/ecommerce" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
+                E-commerce
+              </Link>
+              <Link to="/dla-kogo/marki-premium" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
+                Marki premium
+              </Link>
+              <Link to="/dla-kogo/instytucje" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-blue-500/50 transition-colors">
+                Instytucje i eventy
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-blue-600 to-purple-600">
         <div className="container mx-auto px-4">

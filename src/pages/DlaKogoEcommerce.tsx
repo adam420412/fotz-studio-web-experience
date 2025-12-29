@@ -438,6 +438,31 @@ export default function DlaKogoEcommerce() {
         </div>
       </section>
 
+      {/* Dla kogo - inne grupy */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <p className="text-muted-foreground mb-4">Sprawdź też rozwiązania dla innych branż:</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link to="/dla-kogo/firmy-lokalne" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-primary/50 transition-colors">
+                Firmy lokalne
+              </Link>
+              <Link to="/dla-kogo/marki-premium" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-primary/50 transition-colors">
+                Marki premium
+              </Link>
+              <Link to="/dla-kogo/instytucje" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-primary/50 transition-colors">
+                Instytucje i eventy
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section-padding bg-card">
         <div className="container-wide">

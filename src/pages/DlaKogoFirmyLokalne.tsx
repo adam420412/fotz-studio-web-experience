@@ -406,6 +406,65 @@ export default function DlaKogoFirmyLokalne() {
         </div>
       </section>
 
+      {/* Portfolio Video */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-8"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+              Zobacz nasze realizacje w akcji
+            </h2>
+            <p className="text-muted-foreground">
+              Produkcja wideo dla FPS Poznań - lokalnego partnera biznesowego
+            </p>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
+              <video
+                src="/videos/fps-poznan.mp4"
+                controls
+                className="w-full h-full object-cover"
+                poster="/videos/fps-poznan.mp4#t=0.5"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Dla kogo - inne grupy */}
+      <section className="py-12 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <p className="text-muted-foreground mb-4">Sprawdź też rozwiązania dla innych branż:</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link to="/dla-kogo/ecommerce" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-primary/50 transition-colors">
+                E-commerce
+              </Link>
+              <Link to="/dla-kogo/marki-premium" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-primary/50 transition-colors">
+                Marki premium
+              </Link>
+              <Link to="/dla-kogo/instytucje" className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-primary/50 transition-colors">
+                Instytucje i eventy
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section-padding bg-background">
         <div className="container-wide">
