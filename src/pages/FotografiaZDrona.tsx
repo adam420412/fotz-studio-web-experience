@@ -40,7 +40,7 @@ import droneBullRide from "@/assets/drone/event-bull-ride.jpg";
 import dronePicnicTop from "@/assets/drone/event-picnic-top.jpg";
 import droneAerialView from "@/assets/drone/event-aerial-view.jpg";
 import droneConcert1 from "@/assets/drone/event-concert-1.jpg";
-import droneConcert2 from "@/assets/drone/event-concert-2.jpg";
+import stadionFajerwerki from "@/assets/enea/stadion-race-fajerwerki.jpg";
 
 const galleryImages = [
   { src: dronePicnic1, alt: "Event firmowy - piknik z lotu ptaka", category: "Eventy" },
@@ -48,7 +48,7 @@ const galleryImages = [
   { src: dronePicnicTop, alt: "Piknik firmowy - widok z góry", category: "Eventy" },
   { src: droneAerialView, alt: "Strefa relaksu - perspektywa lotnicza", category: "Eventy" },
   { src: droneConcert1, alt: "Koncert plenerowy - ujęcie z drona", category: "Eventy" },
-  { src: droneConcert2, alt: "Scena koncertowa - widok z lotu ptaka", category: "Eventy" },
+  { src: stadionFajerwerki, alt: "Enea Stadion Poznań - nocne fajerwerki z drona", category: "Eventy" },
 ];
 
 const stats = [
@@ -138,31 +138,31 @@ const packages = [
 const faqItems = [
   {
     question: "Co to jest fotografia z drona?",
-    answer: "Fotografia z drona to nowoczesna technika pozyskiwania zdjęć i filmów z powietrza przy użyciu bezzałogowych statków powietrznych (dronów). Dzięki dronom możemy filmować i fotografować obiekty z perspektywy lotu ptaka, uzyskując unikalne ujęcia niemożliwe do osiągnięcia tradycyjnymi metodami.",
+    answer: "Fotografia z drona to nowoczesna technika pozyskiwania zdjęć i filmów z powietrza przy użyciu bezzałogowych statków powietrznych (dronów). Dzięki dronom możemy filmować i fotografować obiekty z perspektywy lotu ptaka, uzyskując unikalne ujęcia niemożliwe do osiągnięcia tradycyjnymi metodami. Usługa ta świetnie uzupełnia tradycyjną fotografię eventową i produktową.",
   },
   {
     question: "Jakie są korzyści z wykorzystania drona w fotografii?",
-    answer: "Zdjęcia i filmy z drona pozwalają na uzyskanie unikalnych ujęć z powietrza, prezentując obiekty w atrakcyjny sposób. Drony umożliwiają filmowanie z niedostępnych wcześniej perspektyw - idealne do tworzenia filmów promocyjnych, dokumentacji prac budowlanych czy inspekcji terenów.",
+    answer: "Zdjęcia i filmy z drona pozwalają na uzyskanie unikalnych ujęć z powietrza, prezentując obiekty w atrakcyjny sposób. Drony umożliwiają filmowanie z niedostępnych wcześniej perspektyw - idealne do tworzenia filmów promocyjnych, dokumentacji prac budowlanych czy inspekcji terenów. Materiały z drona doskonale sprawdzają się w kampaniach social media i spotach reklamowych.",
   },
   {
     question: "Ile kosztuje usługa zdjęć z drona?",
-    answer: "Cennik zależy od zakresu prac: czasu lotu, liczby ujęć, postprodukcji i dodatkowych opcji. Podstawowe zdjęcia z drona zaczynają się od 800 PLN, bardziej zaawansowane usługi jak filmowanie 4K czy panoramy 360° są droższe. Przygotowujemy indywidualną wycenę.",
+    answer: "Cennik zależy od zakresu prac: czasu lotu, liczby ujęć, postprodukcji i dodatkowych opcji. Podstawowe zdjęcia z drona zaczynają się od 800 PLN, bardziej zaawansowane usługi jak filmowanie 4K czy panoramy 360° są droższe. Przygotowujemy indywidualną wycenę dopasowaną do projektu.",
   },
   {
     question: "Czy oferujecie panoramy 360° i transmisje live?",
-    answer: "Tak, wykonujemy panoramy 360° z drona do wirtualnych prezentacji oraz transmisje live wideo dla wydarzeń i relacji natychmiastowych. Nasze rozwiązania obejmują również przekazy na platformy streamingowe.",
+    answer: "Tak, wykonujemy panoramy 360° z drona do wirtualnych prezentacji oraz transmisje live wideo dla wydarzeń i relacji natychmiastowych. Nasze rozwiązania obejmują również przekazy na platformy streamingowe. To idealne uzupełnienie wizualizacji 3D dla branży nieruchomości.",
   },
   {
     question: "Dla jakich branż wykonujecie zdjęcia z drona?",
-    answer: "Usługi dronowe znajdują zastosowanie w wielu branżach: nieruchomości (prezentacja domów i działek), budownictwo (monitoring postępów), turystyka (promocja hoteli), rolnictwo, przemysł (inspekcje hal) oraz eventy i wydarzenia sportowe.",
+    answer: "Usługi dronowe znajdują zastosowanie w wielu branżach: nieruchomości (prezentacja domów i działek), budownictwo (monitoring postępów), turystyka (promocja hoteli), rolnictwo, przemysł (inspekcje hal) oraz eventy i wydarzenia sportowe. Współpracujemy z deweloperami, agencjami marketingowymi i firmami produkcyjnymi.",
   },
   {
     question: "Jaką jakość materiałów dostarczacie?",
-    answer: "Dostarczamy filmy i zdjęcia w wysokiej jakości 4K, w formatach gotowych do publikacji online i do druku. Posiadamy profesjonalne drony z kamerami stabilizowanymi gimbalem, co gwarantuje stabilny obraz nawet podczas dynamicznych ujęć.",
+    answer: "Dostarczamy filmy i zdjęcia w wysokiej jakości 4K, w formatach gotowych do publikacji online i do druku. Posiadamy profesjonalne drony z kamerami stabilizowanymi gimbalem, co gwarantuje stabilny obraz nawet podczas dynamicznych ujęć. Materiały są gotowe do wykorzystania w produkcji filmowej i kampaniach reklamowych.",
   },
   {
     question: "Jak wygląda proces przygotowania do lotu?",
-    answer: "Przygotowanie obejmuje wybór sprzętu, sprawdzenie warunków pogodowych, uzyskanie wymaganych pozwoleń oraz planowanie ujęć. Nasz zespół zajmuje się całą organizacją - od konfiguracji po profesjonalne filmowanie.",
+    answer: "Przygotowanie obejmuje wybór sprzętu, sprawdzenie warunków pogodowych, uzyskanie wymaganych pozwoleń oraz planowanie ujęć. Nasz zespół zajmuje się całą organizacją - od konfiguracji po profesjonalne filmowanie. Proces jest podobny do naszych standardowych sesji fotograficznych.",
   },
   {
     question: "Jak zamówić usługę fotografii z drona?",
@@ -523,6 +523,56 @@ export default function FotografiaZDrona() {
                 </motion.div>
               ))}
             </Accordion>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+              Powiązane usługi
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Fotografia z drona świetnie łączy się z innymi usługami, tworząc kompleksową ofertę marketingową
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "Produkcja filmów", desc: "Profesjonalne filmy promocyjne z ujęciami z drona", href: "/produkcja-filmow-poznan", icon: Film },
+              { title: "Fotografia eventowa", desc: "Kompleksowa dokumentacja wydarzeń", href: "/fotograf-poznan", icon: Camera },
+              { title: "Wizualizacje 3D", desc: "Połączenie zdjęć z drona z renderami 3D", href: "/wizualizacje-3d", icon: Building2 },
+              { title: "Marketing nieruchomości", desc: "Pełna obsługa marketingowa deweloperów", href: "/dla-kogo/nieruchomosci", icon: MapPin },
+            ].map((service, index) => (
+              <motion.div
+                key={service.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Link to={service.href} className="block group">
+                  <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all hover:shadow-lg">
+                    <CardContent className="p-6">
+                      <service.icon className="w-10 h-10 text-primary mb-4 group-hover:scale-110 transition-transform" />
+                      <h3 className="font-heading font-semibold text-foreground text-lg mb-2 group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        {service.desc}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

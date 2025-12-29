@@ -127,35 +127,35 @@ const Pozycjonowanie = () => {
   const faqItems = [
     {
       question: "Czym jest pozycjonowanie stron w Google?",
-      answer: "Pozycjonowanie stron (SEO) to proces optymalizacji strony internetowej w celu poprawy jej widoczności w wynikach wyszukiwania Google. Obejmuje działania on-page i off-page, których celem jest osiągnięcie jak najwyższych pozycji na wybrane słowa kluczowe."
+      answer: "Pozycjonowanie stron (SEO) to proces optymalizacji strony internetowej w celu poprawy jej widoczności w wynikach wyszukiwania Google. Obejmuje działania on-page i off-page, których celem jest osiągnięcie jak najwyższych pozycji na wybrane słowa kluczowe. To podstawa skutecznego marketingu internetowego."
     },
     {
       question: "Ile trwa pozycjonowanie, zanim zobaczę efekty?",
-      answer: "Pierwsze efekty pozycjonowania widoczne są zazwyczaj po 3-6 miesiącach. Czas zależy od konkurencyjności branży, stanu strony i intensywności działań. Pełne efekty osiągane są po 12-18 miesiącach systematycznej pracy."
+      answer: "Pierwsze efekty pozycjonowania widoczne są zazwyczaj po 3-6 miesiącach. Czas zależy od konkurencyjności branży, stanu strony i intensywności działań. Pełne efekty osiągane są po 12-18 miesiącach systematycznej pracy. Na szybkie efekty warto połączyć SEO z kampaniami Google Ads."
     },
     {
       question: "Jak agencja SEO wpływa na pozycjonowanie stron?",
-      answer: "Agencja SEO przeprowadza audyt, tworzy strategię, optymalizuje stronę technicznie i treściowo, buduje linki oraz monitoruje wyniki. Dzięki doświadczeniu można skuteczniej i szybciej osiągnąć wysokie pozycje w Google."
+      answer: "Agencja SEO przeprowadza audyt, tworzy strategię, optymalizuje stronę technicznie i treściowo, buduje linki oraz monitoruje wyniki. Dzięki doświadczeniu można skuteczniej i szybciej osiągnąć wysokie pozycje w Google. Oferujemy również pozycjonowanie w Google Maps dla firm lokalnych."
     },
     {
       question: "Jakie działania SEO wpływają na pozycjonowanie strony?",
-      answer: "Kluczowe działania to: optymalizacja techniczna (szybkość, mobile, struktura), optymalizacja treści (słowa kluczowe, nagłówki, meta tagi), budowanie linków zwrotnych oraz analiza i dostosowywanie strategii."
+      answer: "Kluczowe działania to: optymalizacja techniczna (szybkość, mobile, struktura), optymalizacja treści (słowa kluczowe, nagłówki, meta tagi), budowanie linków zwrotnych oraz analiza i dostosowywanie strategii. Ważna jest również jakość strony internetowej."
     },
     {
       question: "Czy pozycjonowanie stron w Google jest kosztowne?",
-      answer: "Koszt zależy od konkurencyjności branży, zakresu działań i celów. Pozycjonowanie lokalne zaczyna się od ok. 1500 zł/mies., ogólnopolskie od 3000 zł/mies. To inwestycja, która przy dobrze dobranej strategii zwraca się wielokrotnie."
+      answer: "Koszt zależy od konkurencyjności branży, zakresu działań i celów. Pozycjonowanie lokalne zaczyna się od ok. 1500 zł/mies., ogólnopolskie od 3000 zł/mies. To inwestycja, która przy dobrze dobranej strategii zwraca się wielokrotnie w postaci nowych klientów."
     },
     {
       question: "Czym różni się SEO od Google Ads?",
-      answer: "SEO to pozycjonowanie organiczne – efekty są długoterminowe, ale wymagają czasu. Google Ads to płatne reklamy – efekty natychmiastowe, ale kończą się gdy przestajesz płacić. Najskuteczniejsza strategia łączy oba podejścia."
+      answer: "SEO to pozycjonowanie organiczne – efekty są długoterminowe, ale wymagają czasu. Google Ads to płatne reklamy – efekty natychmiastowe, ale kończą się gdy przestajesz płacić. Najskuteczniejsza strategia łączy oba podejścia w ramach kompleksowej obsługi marketingowej."
     },
     {
       question: "Jakie narzędzia Google pomagają w pozycjonowaniu?",
-      answer: "Google Search Console pozwala monitorować widoczność i błędy indeksowania. Google Analytics dostarcza danych o ruchu. Google PageSpeed Insights mierzy szybkość strony. Te narzędzia są podstawą skutecznego SEO."
+      answer: "Google Search Console pozwala monitorować widoczność i błędy indeksowania. Google Analytics dostarcza danych o ruchu. Google PageSpeed Insights mierzy szybkość strony. Te narzędzia są podstawą skutecznego SEO i optymalizacji strony internetowej."
     },
     {
       question: "Czy mogę pozycjonować stronę samodzielnie?",
-      answer: "Podstawowe działania SEO można wykonać samodzielnie, ale skuteczne pozycjonowanie wymaga specjalistycznej wiedzy, narzędzi i czasu. Błędy mogą skutkować karą od Google. Dla większości firm bardziej opłacalna jest współpraca z agencją SEO."
+      answer: "Podstawowe działania SEO można wykonać samodzielnie, ale skuteczne pozycjonowanie wymaga specjalistycznej wiedzy, narzędzi i czasu. Błędy mogą skutkować karą od Google. Dla większości firm bardziej opłacalna jest współpraca z agencją marketingową."
     },
   ];
 

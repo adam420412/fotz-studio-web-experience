@@ -93,19 +93,19 @@ const GoogleAds = () => {
   const faqItems = [
     {
       question: "Jak działa Google Ads?",
-      answer: "Google Ads to system reklamowy oparty na modelu PPC (pay-per-click) - płacisz tylko za kliknięcia w reklamę. Reklamy wyświetlają się użytkownikom, którzy wpisują w Google określone frazy kluczowe lub odwiedzają strony w sieci reklamowej Google. Pozycja reklamy zależy od stawki i jakości reklamy."
+      answer: "Google Ads to system reklamowy oparty na modelu PPC (pay-per-click) - płacisz tylko za kliknięcia w reklamę. Reklamy wyświetlają się użytkownikom, którzy wpisują w Google określone frazy kluczowe lub odwiedzają strony w sieci reklamowej Google. Pozycja reklamy zależy od stawki i jakości reklamy. Warto połączyć Google Ads z pozycjonowaniem SEO dla maksymalnych efektów."
     },
     {
       question: "Ile kosztuje reklama w Google Ads?",
-      answer: "Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Średni koszt kliknięcia w Polsce to 1-5 zł, ale w konkurencyjnych branżach może wynosić nawet 20-50 zł. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie."
+      answer: "Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Średni koszt kliknięcia w Polsce to 1-5 zł, ale w konkurencyjnych branżach może wynosić nawet 20-50 zł. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie. Sprawdź także naszą ofertę Facebook Ads dla kampanii uzupełniających."
     },
     {
       question: "Jakie typy kampanii Google Ads są dostępne?",
-      answer: "Google Ads oferuje: kampanie w sieci wyszukiwania (tekstowe), kampanie displayowe (banery), Google Shopping (produkty), kampanie wideo (YouTube), Performance Max (automatyczna optymalizacja) oraz kampanie remarketingowe. Wybór zależy od celów biznesowych."
+      answer: "Google Ads oferuje: kampanie w sieci wyszukiwania (tekstowe), kampanie displayowe (banery), Google Shopping (produkty dla e-commerce), kampanie wideo (YouTube), Performance Max (automatyczna optymalizacja) oraz kampanie remarketingowe. Wybór zależy od celów biznesowych i branży."
     },
     {
       question: "Jak wybrać odpowiednie słowa kluczowe?",
-      answer: "Analizujemy frazy, które wpisują potencjalni klienci, ich konkurencyjność i intencję zakupową. Używamy narzędzi jak Google Keyword Planner. Dobieramy słowa o odpowiednim wolumenie wyszukiwań i koszcie, które prowadzą do konwersji."
+      answer: "Analizujemy frazy, które wpisują potencjalni klienci, ich konkurencyjność i intencję zakupową. Używamy narzędzi jak Google Keyword Planner. Dobieramy słowa o odpowiednim wolumenie wyszukiwań i koszcie, które prowadzą do konwersji. Ta wiedza przydaje się również w pozycjonowaniu stron."
     },
     {
       question: "Po jakim czasie widać efekty kampanii Google Ads?",
@@ -113,15 +113,15 @@ const GoogleAds = () => {
     },
     {
       question: "Czym różni się Google Ads od pozycjonowania SEO?",
-      answer: "Google Ads daje natychmiastowe wyniki - reklamy pojawiają się od razu po uruchomieniu kampanii. SEO to proces długoterminowy (3-6 miesięcy). Najlepsze rezultaty daje połączenie obu strategii - płatne reklamy na szybkie efekty i SEO na długoterminowy wzrost."
+      answer: "Google Ads daje natychmiastowe wyniki - reklamy pojawiają się od razu po uruchomieniu kampanii. SEO to proces długoterminowy (3-6 miesięcy). Najlepsze rezultaty daje połączenie obu strategii - płatne reklamy na szybkie efekty i pozycjonowanie na długoterminowy wzrost organiczny."
     },
     {
       question: "Jak mierzyć skuteczność kampanii Google Ads?",
-      answer: "Kluczowe wskaźniki to: CTR (współczynnik klikalności), koszt na konwersję, ROAS (zwrot z wydatków na reklamę), jakość ruchu. Śledzimy konwersje przez Google Analytics i pixel konwersji. Regularnie raportujemy wyniki i optymalizujemy kampanię."
+      answer: "Kluczowe wskaźniki to: CTR (współczynnik klikalności), koszt na konwersję, ROAS (zwrot z wydatków na reklamę), jakość ruchu. Śledzimy konwersje przez Google Analytics i pixel konwersji. Regularnie raportujemy wyniki i optymalizujemy kampanię pod cel biznesowy."
     },
     {
       question: "Czy warto połączyć Google Ads z Facebook Ads?",
-      answer: "Tak, obie platformy uzupełniają się. Google Ads dociera do osób aktywnie szukających produktów/usług (wysoka intencja zakupowa), Facebook Ads buduje świadomość i dociera do osób na podstawie zainteresowań. Remarketing cross-platformowy zwiększa efektywność."
+      answer: "Tak, obie platformy uzupełniają się. Google Ads dociera do osób aktywnie szukających produktów/usług (wysoka intencja zakupowa), Facebook Ads buduje świadomość i dociera do osób na podstawie zainteresowań. Remarketing cross-platformowy zwiększa efektywność. Oferujemy kompleksową obsługę marketingową łączącą oba kanały."
     },
   ];
 
