@@ -68,7 +68,7 @@ const StronyInternetowePoznan = () => {
     { 
       title: "Landing Page", 
       desc: "Strona wizytówkowa prezentująca firmę", 
-      price: "od 1 500 zł",
+      price: "od 2 000 zł",
       features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"]
     },
     { 
@@ -81,7 +81,7 @@ const StronyInternetowePoznan = () => {
     { 
       title: "Sklep E-commerce", 
       desc: "Platforma sprzedażowa z integracjami", 
-      price: "od 7 000 zł",
+      price: "od 8 000 zł",
       features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"]
     },
   ];
@@ -145,7 +145,7 @@ const StronyInternetowePoznan = () => {
     },
     {
       question: "Ile kosztuje strona internetowa w Poznaniu?",
-      answer: "Cena uzależniona jest od zakresu prac, skomplikowania projektu oraz technologii. Strona wizytówkowa kosztuje od 1 500 zł, strona firmowa od 5 000 zł, a sklep internetowy od 7 000 zł netto. Strony z pakietem SEO mogą być droższe."
+      answer: "Cena uzależniona jest od zakresu prac, skomplikowania projektu oraz technologii. Strona wizytówkowa kosztuje od 2 000 zł, strona firmowa od 5 000 zł, a sklep internetowy od 8 000 zł netto. Strony z pakietem SEO mogą być droższe."
     },
     {
       question: "Jakie systemy CMS wykorzystujecie?",

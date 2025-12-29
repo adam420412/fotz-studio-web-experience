@@ -55,9 +55,9 @@ const StronyInternetoweKatowice = () => {
   ];
 
   const pricing = [
-    { title: "Strona wizytówkowa / Landing page", desc: "Prosta strona www z podstawowym SEO.", price: "od 1 500 zł netto" },
-    { title: "Strona firmowa", desc: "Profesjonalna strona internetowa z zaawansowanym SEO.", price: "od 5 000 zł netto" },
-    { title: "Sklep internetowy e-commerce", desc: "Zaawansowana platforma e-commerce z kompleksową optymalizacją.", price: "od 7 000 zł netto" },
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
