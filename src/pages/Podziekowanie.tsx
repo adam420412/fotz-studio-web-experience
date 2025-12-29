@@ -10,15 +10,37 @@ import {
   Phone, 
   Clock, 
   ArrowRight,
-  Sparkles,
-  Calendar
+  Sparkles
 } from "lucide-react";
 import { Link } from "react-router-dom";
+
+// Declare gtag for TypeScript
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
 
 export default function Podziekowanie() {
   useEffect(() => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
+    
+    // Google Analytics conversion tracking
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL', // Replace with your actual conversion ID
+        'event_category': 'form_submission',
+        'event_label': 'pricing_inquiry',
+        'value': 1
+      });
+      
+      // Also send as a standard GA4 event
+      window.gtag('event', 'generate_lead', {
+        'event_category': 'engagement',
+        'event_label': 'pricing_form_submitted'
+      });
+    }
   }, []);
 
   return (
@@ -53,7 +75,7 @@ export default function Podziekowanie() {
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8">
               Otrzymaliśmy Twoje zgłoszenie i już nad nim pracujemy. 
-              Skontaktujemy się z Tobą w ciągu 24 godzin.
+              Skontaktujemy się z Tobą w ciągu 24 godzin roboczych.
             </p>
 
             {/* What happens next */}
@@ -70,7 +92,7 @@ export default function Podziekowanie() {
                     </div>
                     <div>
                       <p className="font-medium text-sm">Analiza zapytania</p>
-                      <p className="text-xs text-muted-foreground">Przeanalizujemy Twoje potrzeby</p>
+                      <p className="text-xs text-muted-foreground">Przeanalizujemy Twoje potrzeby i wybrane usługi</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -79,7 +101,7 @@ export default function Podziekowanie() {
                     </div>
                     <div>
                       <p className="font-medium text-sm">Kontakt</p>
-                      <p className="text-xs text-muted-foreground">Zadzwonimy lub napiszemy</p>
+                      <p className="text-xs text-muted-foreground">Adam skontaktuje się telefonicznie lub mailowo</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
@@ -87,8 +109,8 @@ export default function Podziekowanie() {
                       <span className="text-sm font-bold text-primary">3</span>
                     </div>
                     <div>
-                      <p className="font-medium text-sm">Propozycja</p>
-                      <p className="text-xs text-muted-foreground">Przedstawimy ofertę</p>
+                      <p className="font-medium text-sm">Indywidualna oferta</p>
+                      <p className="text-xs text-muted-foreground">Przedstawimy spersonalizowaną propozycję</p>
                     </div>
                   </div>
                 </div>
@@ -101,14 +123,14 @@ export default function Podziekowanie() {
                 <Clock className="w-4 h-4 text-primary" />
                 <span>Odpowiedź w 24h</span>
               </div>
-              <div className="flex items-center gap-2">
+              <a href="mailto:adam@fotz.pl" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>hello@fotz.pl</span>
-              </div>
-              <div className="flex items-center gap-2">
+                <span>adam@fotz.pl</span>
+              </a>
+              <a href="tel:+48790814814" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+48 123 456 789</span>
-              </div>
+                <span>+48 790 814 814</span>
+              </a>
             </div>
 
             {/* CTA Buttons */}
