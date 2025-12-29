@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
+import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 
 const services = [
@@ -414,6 +415,9 @@ const MarketingNieruchomosci = () => {
           </div>
         </div>
       </section>
+
+      {/* Other Industries */}
+      <OtherIndustries currentSlug="nieruchomosci" />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-background">

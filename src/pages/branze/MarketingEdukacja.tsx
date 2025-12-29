@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { GraduationCap, ArrowRight, CheckCircle, Users, Globe, Video, TrendingUp, BookOpen, Calendar, Award, Plus } from "lucide-react";
+import { GraduationCap, ArrowRight, CheckCircle, Users, Globe, Video, TrendingUp, BookOpen, Calendar, Award, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
+import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
 
 const services = [
@@ -414,6 +415,9 @@ const MarketingEdukacja = () => {
           </div>
         </div>
       </section>
+
+      {/* Other Industries */}
+      <OtherIndustries currentSlug="edukacja" />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-background">

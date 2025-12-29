@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
+import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
 const services = [
@@ -414,6 +415,9 @@ const MarketingGastronomia = () => {
           </div>
         </div>
       </section>
+
+      {/* Other Industries */}
+      <OtherIndustries currentSlug="gastronomia" />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-background">
