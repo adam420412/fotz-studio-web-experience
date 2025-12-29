@@ -26,7 +26,8 @@ const menuCategories: MenuCategory[] = [
     color: "#75143F",
     items: [
       { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" },
-      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", badge: "Nowe" },
+      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
+      { name: "Content Marketing", href: "/content-marketing", badge: "Nowe" },
       { name: "Social Media", href: "/social-media" },
       { name: "Facebook Ads", href: "/facebook-ads" },
       { name: "Google Ads", href: "/google-ads" },
@@ -39,7 +40,7 @@ const menuCategories: MenuCategory[] = [
     color: "#0F3053",
     items: [
       { name: "Strony Internetowe", href: "/strony-internetowe" },
-      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu", badge: "Nowe" },
+      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu" },
       { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
       { name: "Google Maps", href: "/pozycjonowanie-google-maps" },
     ],
@@ -50,10 +51,10 @@ const menuCategories: MenuCategory[] = [
     image: videoImg,
     color: "#422249",
     items: [
-      { name: "Produkcja Filmów", href: "/produkcja-filmow" },
+      { name: "Produkcja Filmów", href: "/produkcja-filmow-poznan" },
       { name: "Spoty Reklamowe", href: "/spoty-reklamowe" },
       { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
-      { name: "Fotografia", href: "/fotografia" },
+      { name: "Fotografia", href: "/fotograf-poznan" },
     ],
   },
   {
@@ -63,12 +64,12 @@ const menuCategories: MenuCategory[] = [
     color: "#75143F",
     items: [
       { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
-      { name: "Obsługa graficzna", href: "/agencja-graficzna", badge: "Nowe" },
+      { name: "Obsługa graficzna", href: "/agencja-graficzna" },
     ],
   },
   {
     title: "Dla kogo",
-    description: "Rozwiązania dopasowane do Twojej branży",
+    description: "Rozwiązania dla różnych typów biznesu",
     image: graphicImg,
     color: "#2D4A3E",
     items: [
@@ -76,10 +77,20 @@ const menuCategories: MenuCategory[] = [
       { name: "E-commerce", href: "/dla-kogo/ecommerce" },
       { name: "Marki premium", href: "/dla-kogo/marki-premium" },
       { name: "Instytucje i eventy", href: "/dla-kogo/instytucje" },
-      { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna", badge: "Nowe" },
-      { name: "Gastronomia", href: "/dla-kogo/gastronomia", badge: "Nowe" },
-      { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness", badge: "Nowe" },
-      { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci", badge: "Nowe" },
+    ],
+  },
+  {
+    title: "Branże",
+    description: "Marketing dopasowany do Twojej branży",
+    image: videoImg,
+    color: "#1A365D",
+    items: [
+      { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna" },
+      { name: "Gastronomia", href: "/dla-kogo/gastronomia" },
+      { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness" },
+      { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci" },
+      { name: "IT & SaaS", href: "/dla-kogo/it-saas" },
+      { name: "Więcej branż...", href: "/dla-kogo" },
     ],
   },
 ];
