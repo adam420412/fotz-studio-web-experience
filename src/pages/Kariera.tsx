@@ -1,0 +1,446 @@
+import { Layout } from "@/components/layout/Layout";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Briefcase, MapPin, Clock, Users, Rocket, Heart, Coffee, Zap, Send, Upload, CheckCircle2 } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
+
+const jobOffers = [
+  {
+    id: 1,
+    title: "Graphic Designer",
+    type: "Pełny etat",
+    location: "Poznań / Hybrid",
+    department: "Kreacja",
+    description: "Szukamy kreatywnego grafika z pasją do tworzenia wizualnych historii. Będziesz projektować identyfikacje wizualne, materiały marketingowe i grafiki social media.",
+    requirements: [
+      "Min. 2 lata doświadczenia w grafice",
+      "Biegła znajomość Adobe Creative Suite",
+      "Portfolio z realizacjami",
+      "Znajomość trendów designu",
+    ],
+    benefits: ["Elastyczne godziny", "Praca hybrydowa", "Szkolenia"],
+  },
+  {
+    id: 2,
+    title: "Social Media Specialist",
+    type: "Pełny etat",
+    location: "Poznań / Remote",
+    department: "Marketing",
+    description: "Poszukujemy specjalisty, który poprowadzi kampanie w social mediach dla naszych klientów. Od strategii po realizację - wszystko w Twoich rękach.",
+    requirements: [
+      "Doświadczenie w prowadzeniu profili firmowych",
+      "Znajomość Meta Business Suite",
+      "Umiejętność tworzenia angażujących treści",
+      "Analityczne podejście do wyników",
+    ],
+    benefits: ["100% remote możliwe", "Budżet szkoleniowy", "MacBook"],
+  },
+  {
+    id: 3,
+    title: "Video Editor / Motion Designer",
+    type: "Pełny etat / B2B",
+    location: "Poznań",
+    department: "Produkcja",
+    description: "Dołącz do naszego zespołu video! Będziesz montować spoty reklamowe, reelsy i materiały dla klientów premium.",
+    requirements: [
+      "Znajomość Premiere Pro i After Effects",
+      "Doświadczenie w montażu reklam",
+      "Wyczucie rytmu i narracji wizualnej",
+      "Portfolio z realizacjami video",
+    ],
+    benefits: ["Sprzęt Apple", "Kreatywna wolność", "Projekty dla topowych marek"],
+  },
+  {
+    id: 4,
+    title: "Account Manager",
+    type: "Pełny etat",
+    location: "Poznań",
+    department: "Obsługa klienta",
+    description: "Szukamy osoby, która będzie głównym punktem kontaktu dla naszych klientów. Zarządzanie projektami, relacjami i budowanie długoterminowych partnerstw.",
+    requirements: [
+      "Min. 2 lata w obsłudze klienta B2B",
+      "Doskonałe umiejętności komunikacyjne",
+      "Znajomość branży marketingowej",
+      "Umiejętność zarządzania wieloma projektami",
+    ],
+    benefits: ["Prowizja od projektów", "Auto służbowe", "Telefon firmowy"],
+  },
+];
+
+const benefits = [
+  { icon: Coffee, title: "Biuro w centrum Poznania", description: "Plac Wolności 16 - najlepsza lokalizacja" },
+  { icon: Rocket, title: "Rozwój i szkolenia", description: "Budżet na kursy i konferencje" },
+  { icon: Heart, title: "Work-life balance", description: "Elastyczne godziny i praca hybrydowa" },
+  { icon: Users, title: "Młody zespół", description: "Średnia wieku 28 lat, zero corporate" },
+  { icon: Zap, title: "Ciekawe projekty", description: "Dla marek takich jak Enea, Żabka, PUMA" },
+  { icon: Briefcase, title: "Stabilność", description: "Umowa o pracę lub B2B - Ty wybierasz" },
+];
+
+export default function Kariera() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    position: "",
+    message: "",
+    portfolio: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate form submission
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+
+    toast.success("Aplikacja wysłana!", {
+      description: "Dziękujemy za zainteresowanie. Odezwiemy się wkrótce!",
+    });
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      position: "",
+      message: "",
+      portfolio: "",
+    });
+    setIsSubmitting(false);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  return (
+    <Layout>
+      <Helmet>
+        <title>Kariera w Fotz Studio | Dołącz do zespołu</title>
+        <meta
+          name="description"
+          content="Szukasz pracy w marketingu? Dołącz do Fotz Studio w Poznaniu. Aktualne oferty pracy: grafik, social media specialist, video editor i więcej."
+        />
+        <link rel="canonical" href="https://fotz.pl/kariera" />
+      </Helmet>
+
+      {/* Hero Section */}
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,hsl(var(--primary)/0.1),transparent_50%)]" />
+        
+        <div className="container-wide relative z-10 py-20 md:py-32">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <Badge variant="outline" className="mb-6 text-primary border-primary/30">
+              <Briefcase className="w-4 h-4 mr-2" />
+              Dołącz do nas
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
+              Kariera w <span className="text-primary">Fotz Studio</span>
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Budujemy zespół ludzi z pasją do marketingu. Jeśli chcesz tworzyć 
+              projekty dla topowych marek, to miejsce jest dla Ciebie.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="section-padding bg-secondary/30">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+              Dlaczego warto z nami pracować?
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Oferujemy więcej niż tylko pracę - to miejsce, gdzie rozwiniesz swoje umiejętności
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {benefits.map((benefit, index) => (
+              <motion.div
+                key={benefit.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-colors">
+                  <CardContent className="p-6 flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <benefit.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold text-foreground mb-1">{benefit.title}</h3>
+                      <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Job Offers Section */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+              Aktualne oferty pracy
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Sprawdź, które stanowisko pasuje do Twoich umiejętności
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {jobOffers.map((job, index) => (
+              <motion.div
+                key={job.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Card className="h-full bg-card border-border hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/5">
+                  <CardHeader>
+                    <div className="flex items-start justify-between gap-4 flex-wrap">
+                      <div>
+                        <CardTitle className="text-xl font-heading text-foreground mb-2">
+                          {job.title}
+                        </CardTitle>
+                        <div className="flex flex-wrap gap-2">
+                          <Badge variant="secondary" className="text-xs">
+                            <Clock className="w-3 h-3 mr-1" />
+                            {job.type}
+                          </Badge>
+                          <Badge variant="secondary" className="text-xs">
+                            <MapPin className="w-3 h-3 mr-1" />
+                            {job.location}
+                          </Badge>
+                          <Badge variant="outline" className="text-xs">
+                            {job.department}
+                          </Badge>
+                        </div>
+                      </div>
+                    </div>
+                    <CardDescription className="mt-4">{job.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-medium text-foreground mb-2 text-sm">Wymagania:</h4>
+                        <ul className="space-y-1">
+                          {job.requirements.map((req, i) => (
+                            <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                              <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                              {req}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-medium text-foreground mb-2 text-sm">Oferujemy:</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {job.benefits.map((benefit, i) => (
+                            <Badge key={i} variant="outline" className="text-xs bg-primary/5 border-primary/20 text-primary">
+                              {benefit}
+                            </Badge>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Application Form Section */}
+      <section className="section-padding bg-secondary/30">
+        <div className="container-wide">
+          <div className="max-w-2xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-10"
+            >
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+                Aplikuj teraz
+              </h2>
+              <p className="text-muted-foreground">
+                Wyślij swoją aplikację - odpowiadamy w ciągu 48 godzin
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <Card className="bg-card border-border">
+                <CardContent className="p-6 md:p-8">
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label htmlFor="name" className="text-sm font-medium text-foreground">
+                          Imię i nazwisko *
+                        </label>
+                        <Input
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          placeholder="Jan Kowalski"
+                          required
+                          className="bg-background"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="email" className="text-sm font-medium text-foreground">
+                          Email *
+                        </label>
+                        <Input
+                          id="email"
+                          name="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          placeholder="jan@example.com"
+                          required
+                          className="bg-background"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label htmlFor="phone" className="text-sm font-medium text-foreground">
+                          Telefon
+                        </label>
+                        <Input
+                          id="phone"
+                          name="phone"
+                          type="tel"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          placeholder="+48 123 456 789"
+                          className="bg-background"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label htmlFor="position" className="text-sm font-medium text-foreground">
+                          Stanowisko *
+                        </label>
+                        <select
+                          id="position"
+                          name="position"
+                          value={formData.position}
+                          onChange={handleChange}
+                          required
+                          className="w-full h-10 px-3 rounded-md border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                        >
+                          <option value="">Wybierz stanowisko</option>
+                          {jobOffers.map((job) => (
+                            <option key={job.id} value={job.title}>
+                              {job.title}
+                            </option>
+                          ))}
+                          <option value="Inne">Inne / Aplikacja otwarta</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label htmlFor="portfolio" className="text-sm font-medium text-foreground">
+                        Link do portfolio / LinkedIn
+                      </label>
+                      <Input
+                        id="portfolio"
+                        name="portfolio"
+                        type="url"
+                        value={formData.portfolio}
+                        onChange={handleChange}
+                        placeholder="https://..."
+                        className="bg-background"
+                      />
+                    </div>
+
+                    <div className="space-y-2">
+                      <label htmlFor="message" className="text-sm font-medium text-foreground">
+                        Wiadomość / O sobie *
+                      </label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Opowiedz nam o sobie, swoim doświadczeniu i dlaczego chcesz dołączyć do Fotz Studio..."
+                        required
+                        rows={5}
+                        className="bg-background resize-none"
+                      />
+                    </div>
+
+                    <p className="text-xs text-muted-foreground">
+                      Wysyłając aplikację, wyrażasz zgodę na przetwarzanie danych osobowych 
+                      w procesie rekrutacji zgodnie z{" "}
+                      <a href="/polityka-prywatnosci" className="text-primary hover:underline">
+                        Polityką Prywatności
+                      </a>
+                      .
+                    </p>
+
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? (
+                        <>Wysyłanie...</>
+                      ) : (
+                        <>
+                          <Send className="w-4 h-4 mr-2" />
+                          Wyślij aplikację
+                        </>
+                      )}
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}

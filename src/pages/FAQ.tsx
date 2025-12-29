@@ -1,0 +1,289 @@
+import { Layout } from "@/components/layout/Layout";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
+import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { HelpCircle, MessageCircle, Phone, Mail, Globe, Palette, TrendingUp, Video, ShoppingCart, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { FAQSchema } from "@/components/seo/StructuredData";
+
+const faqCategories = [
+  {
+    id: "general",
+    name: "Ogólne",
+    icon: HelpCircle,
+    questions: [
+      {
+        question: "Czym zajmuje się Fotz Studio?",
+        answer: "Fotz Studio to agencja marketingowa z Poznania specjalizująca się w kompleksowej obsłudze marketingowej firm. Zajmujemy się tworzeniem stron internetowych, prowadzeniem social media, produkcją video, pozycjonowaniem SEO, kampaniami reklamowymi Google Ads i Facebook Ads, identyfikacją wizualną oraz wizualizacjami 3D.",
+      },
+      {
+        question: "Gdzie mieści się biuro Fotz Studio?",
+        answer: "Nasze biuro znajduje się w centrum Poznania, na Placu Wolności 16. Zapraszamy na spotkania od poniedziałku do piątku w godzinach 9:00-17:00. Możemy również umówić się na wideokonferencję.",
+      },
+      {
+        question: "Dla jakich branż pracujecie?",
+        answer: "Współpracujemy z firmami z różnych branż: medyczna, gastronomia, beauty & wellness, nieruchomości, automotive, edukacja, prawo i finanse, e-commerce, IT & SaaS, produkcja, NGO oraz turystyka. Każda branża ma swoją specyfikę i dostosowujemy strategię marketingową do jej potrzeb.",
+      },
+      {
+        question: "Jak wygląda proces współpracy z Fotz Studio?",
+        answer: "Proces rozpoczynamy od bezpłatnej konsultacji, podczas której poznajemy Twoje cele biznesowe. Następnie przygotowujemy indywidualną strategię i ofertę. Po akceptacji przechodzimy do realizacji, regularnie raportując postępy. Stawiamy na długoterminową współpracę opartą na zaufaniu i wynikach.",
+      },
+    ],
+  },
+  {
+    id: "websites",
+    name: "Strony internetowe",
+    icon: Globe,
+    questions: [
+      {
+        question: "Ile kosztuje strona internetowa?",
+        answer: "Ceny stron internetowych zaczynają się od około 3000 zł za prostą stronę wizytówkę, przez 5000-10000 zł za rozbudowane strony firmowe, do 15000+ zł za sklepy internetowe i zaawansowane platformy. Dokładna wycena zależy od funkcjonalności, ilości podstron i indywidualnych wymagań.",
+      },
+      {
+        question: "Jak długo trwa stworzenie strony internetowej?",
+        answer: "Czas realizacji zależy od skali projektu. Prosta strona wizytówka to 2-3 tygodnie. Rozbudowana strona firmowa to 4-6 tygodni. Sklep internetowy to 6-10 tygodni. Czas może się wydłużyć w zależności od dostarczenia materiałów i ilości poprawek.",
+      },
+      {
+        question: "Czy strona będzie responsywna (dostosowana do telefonów)?",
+        answer: "Tak, wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Ponad 70% ruchu internetowego pochodzi z telefonów, więc jest to dla nas absolutny priorytet.",
+      },
+      {
+        question: "Czy pomagacie w pozycjonowaniu strony?",
+        answer: "Tak, oferujemy kompleksowe usługi SEO. Każda strona od nas jest zoptymalizowana pod kątem wyszukiwarek już na etapie tworzenia. Dodatkowo oferujemy stałą obsługę pozycjonowania z comiesięcznym raportowaniem.",
+      },
+    ],
+  },
+  {
+    id: "social-media",
+    name: "Social Media",
+    icon: Users,
+    questions: [
+      {
+        question: "Ile kosztuje prowadzenie social media?",
+        answer: "Pakiety prowadzenia social media zaczynają się od 1500 zł/mies za podstawowy pakiet (8 postów + stories). Pakiet Business to 2500-4000 zł/mies (16 postów + reelsy). Kompleksowa obsługa z tworzeniem treści video to 5000+ zł/mies. Ceny zależą od ilości platform i zakresu usług.",
+      },
+      {
+        question: "Jakie platformy social media obsługujecie?",
+        answer: "Obsługujemy wszystkie główne platformy: Instagram, Facebook, LinkedIn, TikTok, YouTube oraz X (Twitter). Dobieramy platformy na podstawie analizy Twojej grupy docelowej i celów biznesowych.",
+      },
+      {
+        question: "Czy tworzysz również treści video (Reelsy, TikToki)?",
+        answer: "Tak, mamy własne studio podcastowe i zespół video. Tworzymy Reelsy, TikToki, YouTube Shorts i dłuższe formaty video. Zajmujemy się całym procesem - od koncepcji przez nagranie po montaż i publikację.",
+      },
+      {
+        question: "Jak mierzycie efekty działań w social media?",
+        answer: "Dostarczamy miesięczne raporty z kluczowymi metrykami: zasięgi, zaangażowanie, wzrost followersów, kliknięcia w linki i konwersje. Analizujemy, które treści działają najlepiej i optymalizujemy strategię na bieżąco.",
+      },
+    ],
+  },
+  {
+    id: "advertising",
+    name: "Reklamy płatne",
+    icon: TrendingUp,
+    questions: [
+      {
+        question: "Jaki budżet reklamowy potrzebuję na start?",
+        answer: "Rekomendujemy minimalny budżet reklamowy od 2000 zł/mies na platformę (Facebook/Instagram Ads lub Google Ads). Do tego dochodzi koszt obsługi kampanii. Optymalny budżet na start to 3000-5000 zł/mies, który pozwala na zebranie wystarczającej ilości danych do optymalizacji.",
+      },
+      {
+        question: "Google Ads czy Facebook Ads - co wybrać?",
+        answer: "To zależy od Twojego biznesu. Google Ads sprawdza się przy usługach i produktach, których ludzie aktywnie szukają (np. hydraulik, prawnik). Facebook/Instagram Ads są lepsze dla produktów impulsowych, budowania świadomości marki i e-commerce. Często rekomendujemy połączenie obu platform.",
+      },
+      {
+        question: "Jak szybko zobaczę wyniki z reklam?",
+        answer: "Pierwsze wyniki widoczne są już po kilku dniach od uruchomienia kampanii. Jednak pełna optymalizacja i stabilne wyniki wymagają 2-3 miesięcy zbierania danych i testowania. Dlatego rekomendujemy minimum 3-miesięczną współpracę.",
+      },
+      {
+        question: "Czy prowadzicie kampanie na TikToku i LinkedIn?",
+        answer: "Tak, prowadzimy kampanie reklamowe na wszystkich głównych platformach: Meta Ads (Facebook/Instagram), Google Ads, TikTok Ads, LinkedIn Ads oraz YouTube Ads. Dobieramy platformy do Twojej grupy docelowej.",
+      },
+    ],
+  },
+  {
+    id: "branding",
+    name: "Branding i grafika",
+    icon: Palette,
+    questions: [
+      {
+        question: "Co zawiera identyfikacja wizualna?",
+        answer: "Pełna identyfikacja wizualna obejmuje: logo (różne wersje), paletę kolorów, typografię, wzory i elementy graficzne, szablony materiałów (wizytówki, papier firmowy, prezentacje), social media kit oraz brandbook opisujący zasady stosowania. Zakres dostosowujemy do potrzeb.",
+      },
+      {
+        question: "Ile kosztuje projekt logo?",
+        answer: "Samo logo to koszt od 1500 zł (podstawowe) do 5000+ zł (z pełnym procesem strategicznym). Pełna identyfikacja wizualna to 5000-15000 zł w zależności od zakresu. Rebranding istniejącej marki wymaga indywidualnej wyceny.",
+      },
+      {
+        question: "Ile trwa stworzenie identyfikacji wizualnej?",
+        answer: "Podstawowe logo to 1-2 tygodnie. Pełna identyfikacja wizualna to 3-6 tygodni w zależności od zakresu. Czas może się wydłużyć przy większej liczbie rund poprawek. Priorytetowe realizacje są możliwe za dodatkową opłatą.",
+      },
+    ],
+  },
+  {
+    id: "video",
+    name: "Produkcja video",
+    icon: Video,
+    questions: [
+      {
+        question: "Ile kosztuje spot reklamowy?",
+        answer: "Prosty spot reklamowy (15-30 sek) to koszt od 3000 zł. Spot z profesjonalną ekipą, aktorem i lokacją to 8000-20000 zł. Kampanie wizerunkowe premium mogą kosztować 30000+ zł. Cena zależy od scenariusza, lokacji, obsady i postprodukcji.",
+      },
+      {
+        question: "Czy macie własne studio nagraniowe?",
+        answer: "Tak, posiadamy w pełni wyposażone studio podcastowe w centrum Poznania. Studio pozwala na nagrywanie podcastów, wywiadów, materiałów edukacyjnych i krótkich form video. Oferujemy również wynajem studia.",
+      },
+      {
+        question: "Realizujecie nagrania poza studiem?",
+        answer: "Oczywiście! Realizujemy nagrania w plenerze, w siedzibach firm, na eventach i w dowolnych lokacjach. Dysponujemy mobilnym sprzętem, który pozwala na profesjonalne nagrania w każdych warunkach.",
+      },
+    ],
+  },
+  {
+    id: "ecommerce",
+    name: "E-commerce",
+    icon: ShoppingCart,
+    questions: [
+      {
+        question: "Na jakiej platformie tworzycie sklepy internetowe?",
+        answer: "Najczęściej pracujemy z WooCommerce (WordPress), Shopify i PrestaShop. Wybór platformy zależy od skali biznesu, budżetu i specyficznych wymagań. Dla dużych sklepów rekomendujemy rozwiązania dedykowane.",
+      },
+      {
+        question: "Czy pomagacie w integracji z hurtowniami i systemami ERP?",
+        answer: "Tak, zajmujemy się integracjami z popularnymi hurtowniami, systemami magazynowymi (Subiekt, WMS), płatnościami (Przelewy24, PayU, Stripe) oraz systemami do automatyzacji (BaseLinker, IdoSell).",
+      },
+      {
+        question: "Czy oferujecie stałą obsługę sklepu?",
+        answer: "Tak, oferujemy pakiety stałej obsługi obejmujące: aktualizacje techniczne, dodawanie produktów, optymalizację SEO, obsługę kampanii reklamowych oraz analizę i optymalizację konwersji. Pakiety od 1500 zł/mies.",
+      },
+    ],
+  },
+];
+
+// Flatten all FAQs for schema
+const allFaqs = faqCategories.flatMap((cat) =>
+  cat.questions.map((q) => ({
+    question: q.question,
+    answer: q.answer,
+  }))
+);
+
+export default function FAQ() {
+  return (
+    <Layout>
+      <Helmet>
+        <title>FAQ - Najczęściej zadawane pytania | Fotz Studio</title>
+        <meta
+          name="description"
+          content="Odpowiedzi na najczęściej zadawane pytania o usługi Fotz Studio: strony internetowe, social media, reklamy, branding, produkcja video i e-commerce."
+        />
+        <link rel="canonical" href="https://fotz.pl/faq" />
+      </Helmet>
+
+      <FAQSchema items={allFaqs} />
+
+      {/* Hero Section */}
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,hsl(var(--primary)/0.1),transparent_50%)]" />
+        
+        <div className="container-wide relative z-10 py-20 md:py-28">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <Badge variant="outline" className="mb-6 text-primary border-primary/30">
+              <HelpCircle className="w-4 h-4 mr-2" />
+              FAQ
+            </Badge>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
+              Najczęściej zadawane <span className="text-primary">pytania</span>
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Znajdź odpowiedzi na pytania dotyczące naszych usług, 
+              cen i procesu współpracy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* FAQ Categories */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <div className="max-w-4xl mx-auto space-y-12">
+            {faqCategories.map((category, catIndex) => (
+              <motion.div
+                key={category.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: catIndex * 0.1 }}
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <category.icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h2 className="text-2xl font-heading font-bold text-foreground">
+                    {category.name}
+                  </h2>
+                </div>
+
+                <Accordion type="single" collapsible className="space-y-3">
+                  {category.questions.map((faq, index) => (
+                    <AccordionItem
+                      key={index}
+                      value={`${category.id}-${index}`}
+                      className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-primary/30"
+                    >
+                      <AccordionTrigger className="text-left hover:no-underline py-5">
+                        <span className="text-foreground font-medium pr-4">{faq.question}</span>
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-padding bg-secondary/30">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-2xl mx-auto text-center"
+          >
+            <MessageCircle className="w-12 h-12 text-primary mx-auto mb-6" />
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+              Nie znalazłeś odpowiedzi?
+            </h2>
+            <p className="text-muted-foreground mb-8">
+              Skontaktuj się z nami - chętnie odpowiemy na wszystkie Twoje pytania
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg">
+                <Link to="/kontakt">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Napisz do nas
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg">
+                <a href="tel:+48790814814">
+                  <Phone className="w-4 h-4 mr-2" />
+                  +48 790 814 814
+                </a>
+              </Button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
