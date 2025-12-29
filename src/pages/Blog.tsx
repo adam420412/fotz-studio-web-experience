@@ -17,6 +17,18 @@ const categories = [
 
 const posts = [
   {
+    id: "kampania-reklamowa-marketingowa",
+    title: "Kampania Reklamowa i Marketingowa: Przykłady i Definicja",
+    excerpt:
+      "Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok oraz strategie Google Ads i TikTok.",
+    category: "Reklamy",
+    author: "Zespół FOTZ",
+    date: "15 Jan 2025",
+    readTime: "12 min",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    featured: true,
+  },
+  {
     id: "ile-kosztuje-strona-internetowa",
     title: "Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty",
     excerpt:
@@ -26,7 +38,7 @@ const posts = [
     date: "20 Dec 2024",
     readTime: "15 min",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
-    featured: true,
+    featured: false,
   },
   {
     id: "jak-stworzyc-strone",

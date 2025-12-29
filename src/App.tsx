@@ -31,6 +31,7 @@ import Kontakt from "./pages/Kontakt";
 import ONas from "./pages/ONas";
 import Blog from "./pages/Blog";
 import BlogKosztStrony from "./pages/BlogKosztStrony";
+import BlogKampaniaReklamowa from "./pages/BlogKampaniaReklamowa";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
 import AkademiaLanding from "./pages/AkademiaLanding";
@@ -105,6 +106,7 @@ const App = () => (
             <Route path="/o-nas" element={<ONas />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />
+            <Route path="/blog/kampania-reklamowa-marketingowa" element={<BlogKampaniaReklamowa />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
             <Route path="/akademia" element={<AkademiaLanding />} />
