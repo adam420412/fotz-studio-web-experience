@@ -15,6 +15,10 @@ import officeStairs from "@/assets/office/office-stairs.webp";
 import officeWorkspace from "@/assets/office/office-workspace.webp";
 import officeDining from "@/assets/office/office-dining.webp";
 
+// Team images
+import teamBrainstorm2 from "@/assets/team/team-brainstorm-2.jpg";
+import teamMeeting3 from "@/assets/team/team-meeting-3.jpg";
+
 const jobOffers = [
   {
     id: 1,
@@ -160,7 +164,7 @@ export default function Kariera() {
               </p>
             </motion.div>
 
-            {/* Office Images Grid */}
+            {/* Team Images Grid */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -168,14 +172,14 @@ export default function Kariera() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+                <img src={teamBrainstorm2} alt="Zespół przy pracy" className="w-full h-full object-cover" />
               </div>
               <div className="space-y-4">
                 <div className="aspect-square rounded-xl overflow-hidden">
-                  <img src={officeWorkspace} alt="Przestrzeń pracy" className="w-full h-full object-cover" />
+                  <img src={teamMeeting3} alt="Spotkanie zespołu" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-square rounded-xl overflow-hidden">
-                  <img src={officeDining} alt="Strefa spotkań" className="w-full h-full object-cover" />
+                  <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
                 </div>
               </div>
             </motion.div>

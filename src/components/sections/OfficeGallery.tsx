@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 // Office images
@@ -10,12 +10,17 @@ import officeLounge from "@/assets/office/office-lounge.webp";
 import officeWorkspace from "@/assets/office/office-workspace.webp";
 import officeDining from "@/assets/office/office-dining.webp";
 
+// Team images
+import teamWork2 from "@/assets/team/team-work-2.jpg";
+import teamMeeting3 from "@/assets/team/team-meeting-3.jpg";
+import teamBrainstorm2 from "@/assets/team/team-brainstorm-2.jpg";
+
 const officeImages = [
-  { src: officeStairs, alt: "Wejście do biura Fotz Studio - designerskie schody" },
-  { src: officeSign, alt: "Tabliczka Fotz Studio na budynku HOFA Plac Wolności" },
-  { src: officeLounge, alt: "Strefa relaksu w biurze Fotz Studio" },
-  { src: officeWorkspace, alt: "Przestrzeń do pracy kreatywnej z piłkarzykami" },
-  { src: officeDining, alt: "Kuchnia i strefa spotkań w biurze" },
+  { src: officeStairs, alt: "Wejście do biura Fotz Studio", category: "Biuro" },
+  { src: teamWork2, alt: "Zespół przy pracy", category: "Zespół" },
+  { src: officeSign, alt: "Tabliczka Fotz Studio HOFA", category: "Biuro" },
+  { src: teamMeeting3, alt: "Spotkanie zespołu", category: "Zespół" },
+  { src: teamBrainstorm2, alt: "Burza mózgów", category: "Zespół" },
 ];
 
 interface OfficeGalleryProps {
@@ -26,7 +31,7 @@ interface OfficeGalleryProps {
 
 export function OfficeGallery({ 
   showCTA = true, 
-  title = "Nasze biuro",
+  title = "Nasze biuro i zespół",
   subtitle = "Plac Wolności 16, Poznań"
 }: OfficeGalleryProps) {
   return (
@@ -43,12 +48,11 @@ export function OfficeGallery({
             {subtitle}
           </span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold">
-            {title.includes("biuro") ? (
-              <>Nasze <span className="text-gradient">biuro</span></>
-            ) : (
-              <>{title}</>
-            )}
+            Nasze <span className="text-gradient">biuro i zespół</span>
           </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            Pracujemy w nowoczesnej przestrzeni w samym sercu Poznania
+          </p>
         </motion.div>
 
         {/* Gallery Grid */}
@@ -68,7 +72,13 @@ export function OfficeGallery({
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-4 left-4">
+                  <span className="text-xs font-medium px-2 py-1 bg-primary/20 text-primary rounded-full">
+                    {image.category}
+                  </span>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -85,8 +95,9 @@ export function OfficeGallery({
             </p>
             <Button variant="hero" size="lg" asChild>
               <Link to="/o-nas" className="group">
+                <Users className="w-5 h-5 mr-2" />
                 Poznaj nas bliżej
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
           </motion.div>

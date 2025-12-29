@@ -12,6 +12,16 @@ import officeLounge from "@/assets/office/office-lounge.webp";
 import officeWorkspace from "@/assets/office/office-workspace.webp";
 import officeDining from "@/assets/office/office-dining.webp";
 
+// Team images
+import teamWork1 from "@/assets/team/team-work-1.jpg";
+import teamWork2 from "@/assets/team/team-work-2.jpg";
+import teamWork3 from "@/assets/team/team-work-3.jpg";
+import teamMeeting1 from "@/assets/team/team-meeting-1.jpg";
+import teamMeeting3 from "@/assets/team/team-meeting-3.jpg";
+import teamWork4 from "@/assets/team/team-work-4.jpg";
+import teamBrainstorm2 from "@/assets/team/team-brainstorm-2.jpg";
+import teamBrainstorm3 from "@/assets/team/team-brainstorm-3.jpg";
+
 const values = [
   {
     icon: Target,
@@ -35,35 +45,23 @@ const values = [
   },
 ];
 
-const team = [
-  {
-    name: "Tomasz Kowalski",
-    role: "CEO & Strategy",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070",
-  },
-  {
-    name: "Anna Nowak",
-    role: "Creative Director",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2187",
-  },
-  {
-    name: "Michał Wiśniewski",
-    role: "Head of Performance",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2187",
-  },
-  {
-    name: "Karolina Lewandowska",
-    role: "Social Media Lead",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070",
-  },
-];
-
 const officeImages = [
   { src: officeStairs, alt: "Wejście do biura Fotz Studio - designerskie schody" },
   { src: officeSign, alt: "Tabliczka Fotz Studio na budynku HOFA Plac Wolności" },
   { src: officeLounge, alt: "Strefa relaksu w biurze Fotz Studio" },
   { src: officeWorkspace, alt: "Przestrzeń do pracy kreatywnej z piłkarzykami" },
   { src: officeDining, alt: "Kuchnia i strefa spotkań w biurze" },
+];
+
+const teamImages = [
+  { src: teamWork1, alt: "Praca przy komputerze w biurze Fotz Studio" },
+  { src: teamWork2, alt: "Dwóch członków zespołu pracujących nad projektem" },
+  { src: teamWork3, alt: "Rozmowa zespołu o projekcie" },
+  { src: teamMeeting1, alt: "Prezentacja projektu Klagem w sali konferencyjnej" },
+  { src: teamMeeting3, alt: "Spotkanie zespołu przy projektorze" },
+  { src: teamWork4, alt: "Grafik pracujący przy laptopie" },
+  { src: teamBrainstorm2, alt: "Burza mózgów przy kawie" },
+  { src: teamBrainstorm3, alt: "Zespół pracujący wspólnie w kuchni biurowej" },
 ];
 
 export default function ONas() {
@@ -200,7 +198,7 @@ export default function ONas() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Team Gallery */}
       <section className="section-padding bg-background">
         <div className="container-wide">
           <div className="text-center mb-16">
@@ -210,26 +208,28 @@ export default function ONas() {
             <h2 className="text-3xl md:text-5xl font-heading font-bold">
               Poznaj <span className="text-gradient">naszych ludzi</span>
             </h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              Młody, kreatywny zespół specjalistów od marketingu, grafiki, video i strategii
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member) => (
+          {/* Masonry-style grid for team photos */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {teamImages.map((image, index) => (
               <div
-                key={member.name}
-                className="group relative rounded-2xl overflow-hidden"
+                key={index}
+                className={cn(
+                  "group relative rounded-xl overflow-hidden",
+                  index === 0 || index === 4 ? "row-span-2 aspect-[3/4]" : "aspect-square"
+                )}
               >
-                <div className="aspect-[3/4]">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-heading font-bold">{member.name}</h3>
-                  <p className="text-primary">{member.role}</p>
-                </div>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             ))}
           </div>
