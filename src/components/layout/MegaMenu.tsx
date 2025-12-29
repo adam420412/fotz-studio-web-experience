@@ -246,8 +246,70 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                       </Link>
                     </div>
                     
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                      {menuCategories.map((category, categoryIndex) => {
+                    {/* Main services row */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                      {menuCategories.slice(0, 4).map((category, categoryIndex) => (
+                        <motion.div
+                          key={category.title}
+                          onMouseEnter={() => setHoveredCategory(categoryIndex)}
+                          className="space-y-3"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: categoryIndex * 0.05 + 0.1 }}
+                        >
+                          <h4 
+                            className={cn(
+                              "text-sm font-semibold transition-all duration-300 flex items-center gap-2",
+                              hoveredCategory === categoryIndex 
+                                ? "text-foreground translate-x-1" 
+                                : "text-muted-foreground"
+                            )}
+                            style={{ 
+                              color: hoveredCategory === categoryIndex ? category.color : undefined 
+                            }}
+                          >
+                            <motion.span
+                              className="w-1.5 h-1.5 rounded-full"
+                              style={{ backgroundColor: category.color }}
+                              animate={{ 
+                                scale: hoveredCategory === categoryIndex ? 1 : 0,
+                                opacity: hoveredCategory === categoryIndex ? 1 : 0
+                              }}
+                              transition={{ duration: 0.2 }}
+                            />
+                            {category.title}
+                          </h4>
+                          <ul className="space-y-2">
+                            {category.items.map((item, itemIndex) => (
+                              <motion.li 
+                                key={item.href}
+                                initial={{ opacity: 0, x: -10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
+                              >
+                                <Link
+                                  to={item.href}
+                                  onClick={onClose}
+                                  className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
+                                >
+                                  {item.name}
+                                  {item.badge && (
+                                    <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
+                                      {item.badge}
+                                    </span>
+                                  )}
+                                </Link>
+                              </motion.li>
+                            ))}
+                          </ul>
+                        </motion.div>
+                      ))}
+                    </div>
+
+                    {/* Dla kogo + Branże row */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-border/50">
+                      {menuCategories.slice(4).map((category, idx) => {
+                        const categoryIndex = idx + 4;
                         const isBranze = category.title === "Branże";
                         const halfLength = isBranze ? Math.ceil(category.items.length / 2) : category.items.length;
                         const firstColumnItems = isBranze ? category.items.slice(0, halfLength) : category.items;
@@ -257,7 +319,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                           <motion.div
                             key={category.title}
                             onMouseEnter={() => setHoveredCategory(categoryIndex)}
-                            className={cn("space-y-3", isBranze && "md:col-span-2")}
+                            className={cn("space-y-3", isBranze && "md:col-span-3")}
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: categoryIndex * 0.05 + 0.1 }}
@@ -286,14 +348,32 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             </h4>
                             
                             {isBranze ? (
-                              <div className="grid grid-cols-2 gap-x-4">
+                              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4">
                                 <ul className="space-y-2">
-                                  {firstColumnItems.map((item, itemIndex) => (
+                                  {firstColumnItems.slice(0, 4).map((item, itemIndex) => (
                                     <motion.li 
                                       key={item.href}
                                       initial={{ opacity: 0, x: -10 }}
                                       animate={{ opacity: 1, x: 0 }}
                                       transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
+                                    >
+                                      <Link
+                                        to={item.href}
+                                        onClick={onClose}
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
+                                      >
+                                        {item.name}
+                                      </Link>
+                                    </motion.li>
+                                  ))}
+                                </ul>
+                                <ul className="space-y-2">
+                                  {firstColumnItems.slice(4).map((item, itemIndex) => (
+                                    <motion.li 
+                                      key={item.href}
+                                      initial={{ opacity: 0, x: -10 }}
+                                      animate={{ opacity: 1, x: 0 }}
+                                      transition={{ delay: categoryIndex * 0.05 + (itemIndex + 4) * 0.03 + 0.15 }}
                                     >
                                       <Link
                                         to={item.href}
@@ -339,11 +419,6 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                       className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
                                     >
                                       {item.name}
-                                      {item.badge && (
-                                        <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
-                                          {item.badge}
-                                        </span>
-                                      )}
                                     </Link>
                                   </motion.li>
                                 ))}
