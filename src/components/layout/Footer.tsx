@@ -38,6 +38,7 @@ const footerLinks = {
   firma: [
     { name: "O nas", href: "/o-nas" },
     { name: "Realizacje", href: "/realizacje" },
+    { name: "Cennik", href: "/cennik" },
     { name: "Blog", href: "/blog" },
     { name: "Kariera", href: "/kariera" },
     { name: "FAQ", href: "/faq" },
