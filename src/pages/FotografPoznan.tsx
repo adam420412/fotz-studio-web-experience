@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-
+import { BackstageGallery } from "@/components/sections/BackstageGallery";
 import portrait1 from "@/assets/fotograf/portrait-1.png";
 import portrait2 from "@/assets/fotograf/portrait-2.jpg";
 import portrait3 from "@/assets/fotograf/portrait-3.jpg";
@@ -525,6 +525,13 @@ const FotografPoznan = () => {
           </div>
         </div>
       </section>
+
+      {/* Backstage Gallery Section */}
+      <BackstageGallery 
+        title="Backstage z sesji"
+        subtitle="Zobacz kulisy profesjonalnych sesji fotograficznych w naszym studiu"
+        maxImages={8}
+      />
 
       {/* FAQ Section */}
       <section className="py-20">
