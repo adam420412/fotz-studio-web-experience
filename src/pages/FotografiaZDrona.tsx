@@ -29,13 +29,28 @@ import {
 } from "@/components/ui/accordion";
 import { ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
 
-// Import gallery images from wizualizacje folder (showing aerial/architectural perspectives)
+// Import real portfolio images - aerial/architectural perspectives
+import eneaStadion from "@/assets/portfolio/enea-stadion.png";
+import apartamentyChorwacja from "@/assets/portfolio/apartamenty-chorwacja.jpg";
+import sookar from "@/assets/portfolio/sookar.jpg";
+import stadionFajerwerki from "@/assets/enea/stadion-race-fajerwerki.jpg";
+import konferencjaEvent from "@/assets/enea/conference-league.jpg";
+import bydgoszczTriatlon from "@/assets/enea/bydgoszcz-triatlon.png";
 import viz1 from "@/assets/wizualizacje/viz-1.png";
-import viz2 from "@/assets/wizualizacje/viz-2.webp";
-import viz3 from "@/assets/wizualizacje/viz-3.webp";
-import viz4 from "@/assets/wizualizacje/viz-4.png";
-import viz5 from "@/assets/wizualizacje/viz-5.webp";
-import viz6 from "@/assets/wizualizacje/viz-6.png";
+import viz15 from "@/assets/wizualizacje/viz-15.png";
+import viz17 from "@/assets/wizualizacje/viz-17.png";
+
+const galleryImages = [
+  { src: eneaStadion, alt: "Stadion Enea - ujęcie z lotu ptaka", category: "Eventy" },
+  { src: apartamentyChorwacja, alt: "Apartamenty nad morzem - widok z drona", category: "Nieruchomości" },
+  { src: stadionFajerwerki, alt: "Stadion Poznań - nocne ujęcie z drona", category: "Eventy" },
+  { src: sookar, alt: "Wnętrze gastronomii - ujęcie z góry", category: "Gastronomia" },
+  { src: konferencjaEvent, alt: "Konferencja - ujęcie eventowe", category: "Eventy" },
+  { src: bydgoszczTriatlon, alt: "Triatlon Bydgoszcz - widok z drona", category: "Sport" },
+  { src: viz1, alt: "Wizualizacja architektoniczna z lotu ptaka", category: "Architektura" },
+  { src: viz15, alt: "Osiedle - perspektywa lotnicza", category: "Nieruchomości" },
+  { src: viz17, alt: "Budynek komercyjny - widok z góry", category: "Przemysł" },
+];
 
 const stats = [
   { value: 500, suffix: "+", label: "Lotów zrealizowanych" },
@@ -119,7 +134,7 @@ const packages = [
   },
 ];
 
-const galleryImages = [viz1, viz2, viz3, viz4, viz5, viz6];
+
 
 const faqItems = [
   {
@@ -310,20 +325,23 @@ export default function FotografiaZDrona() {
           </motion.div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {galleryImages.map((img, index) => (
+            {galleryImages.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="aspect-video rounded-xl overflow-hidden group"
+                className="aspect-video rounded-xl overflow-hidden group relative"
               >
                 <img
-                  src={img}
-                  alt={`Fotografia z drona - realizacja ${index + 1}`}
+                  src={item.src}
+                  alt={item.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <span className="text-xs text-white/80 font-medium">{item.category}</span>
+                </div>
               </motion.div>
             ))}
           </div>
