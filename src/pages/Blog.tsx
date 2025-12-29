@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, Clock, User } from "lucide-react";
+import { ArrowRight, Calendar, Clock, User, Search, X } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 
@@ -92,15 +93,37 @@ const posts = [
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState("Wszystkie");
+  const [searchQuery, setSearchQuery] = useState("");
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
-  const filteredPosts =
-    activeCategory === "Wszystkie"
-      ? posts
-      : posts.filter((p) => p.category === activeCategory);
+  // Filter posts by category and search query
+  const filteredPosts = useMemo(() => {
+    let result = posts;
+    
+    // Filter by category
+    if (activeCategory !== "Wszystkie") {
+      result = result.filter((p) => p.category === activeCategory);
+    }
+    
+    // Filter by search query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase().trim();
+      result = result.filter((p) => 
+        p.title.toLowerCase().includes(query) ||
+        p.excerpt.toLowerCase().includes(query) ||
+        p.category.toLowerCase().includes(query) ||
+        p.author.toLowerCase().includes(query)
+      );
+    }
+    
+    return result;
+  }, [activeCategory, searchQuery]);
 
   const featuredPost = posts.find((p) => p.featured);
-  const regularPosts = filteredPosts.filter((p) => !p.featured);
+  const showFeatured = activeCategory === "Wszystkie" && !searchQuery.trim();
+  const regularPosts = showFeatured 
+    ? filteredPosts.filter((p) => !p.featured)
+    : filteredPosts;
 
   return (
     <Layout>
@@ -123,7 +146,7 @@ export default function Blog() {
       </section>
 
       {/* Featured Post */}
-      {featuredPost && activeCategory === "Wszystkie" && (
+      {featuredPost && showFeatured && (
         <section className="section-padding pt-0 bg-background">
           <div className="container-wide">
             <Link
@@ -176,6 +199,30 @@ export default function Blog() {
       {/* Posts Grid */}
       <section ref={ref} className="section-padding bg-card">
         <div className="container-wide">
+          {/* Search and Filter Bar */}
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6 mb-8">
+            {/* Search Input */}
+            <div className="relative flex-1 max-w-md">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+              <Input
+                type="text"
+                placeholder="Szukaj artykułów..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-11 pr-10 py-5 bg-secondary border-border/50 rounded-full focus:ring-2 focus:ring-primary/20"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="Wyczyść wyszukiwanie"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
+            </div>
+          </div>
+
           {/* Category Filter */}
           <div className="flex flex-wrap gap-3 mb-12">
             {categories.map((category) => (
@@ -193,6 +240,19 @@ export default function Blog() {
               </button>
             ))}
           </div>
+
+          {/* Search Results Info */}
+          {searchQuery.trim() && (
+            <div className="mb-8 text-muted-foreground">
+              {filteredPosts.length === 0 ? (
+                <p>Brak wyników dla "<span className="text-foreground font-medium">{searchQuery}</span>"</p>
+              ) : (
+                <p>
+                  Znaleziono <span className="text-foreground font-medium">{filteredPosts.length}</span> {filteredPosts.length === 1 ? 'artykuł' : filteredPosts.length < 5 ? 'artykuły' : 'artykułów'} dla "<span className="text-foreground font-medium">{searchQuery}</span>"
+                </p>
+              )}
+            </div>
+          )}
 
           {/* Posts Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
