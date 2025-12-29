@@ -15,15 +15,6 @@ const footerLinks = {
     { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
     { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
   ],
-  poznan: [
-    { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
-    { name: "Agencja Reklamowa Poznań", href: "/agencja-reklamowa-poznan" },
-    { name: "Social Media Poznań", href: "/social-media-poznan" },
-    { name: "Strony Internetowe Poznań", href: "/strony-internetowe-poznan" },
-    { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
-    { name: "Fotograf Poznań", href: "/fotograf-poznan" },
-    { name: "Produkcja Filmów Poznań", href: "/produkcja-filmow-poznan" },
-  ],
   dlaKogo: [
     { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
     { name: "E-commerce", href: "/dla-kogo/ecommerce" },
@@ -65,7 +56,7 @@ export function Footer() {
       {/* Main Footer */}
       <div className="section-padding py-10 md:py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-10">
             {/* Brand Column */}
             <div className="col-span-2 md:col-span-2 lg:col-span-1">
               <Link
@@ -141,21 +132,6 @@ export function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Poznań</h4>
-              <ul className="space-y-2 md:space-y-3">
-                {footerLinks.poznan.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             <div>
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Dla kogo</h4>
