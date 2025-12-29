@@ -26,7 +26,12 @@ const footerLinks = {
   realizacje: [
     { name: "Portfolio", href: "/realizacje" },
     { name: "Case Studies", href: "/realizacje" },
-    { name: "Dla kogo pracujemy", href: "/dla-kogo" },
+  ],
+  dlaKogo: [
+    { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
+    { name: "E-commerce", href: "/dla-kogo/ecommerce" },
+    { name: "Marki premium", href: "/dla-kogo/marki-premium" },
+    { name: "Instytucje i eventy", href: "/dla-kogo/instytucje" },
   ],
   firma: [
     { name: "O nas", href: "/o-nas" },
@@ -145,6 +150,20 @@ export function Footer() {
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Realizacje</h4>
               <ul className="space-y-2 md:space-y-3">
                 {footerLinks.realizacje.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4 mt-6">Dla kogo</h4>
+              <ul className="space-y-2 md:space-y-3">
+                {footerLinks.dlaKogo.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}

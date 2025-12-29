@@ -66,6 +66,18 @@ const menuCategories: MenuCategory[] = [
       { name: "Obsługa graficzna", href: "/agencja-graficzna", badge: "Nowe" },
     ],
   },
+  {
+    title: "Dla kogo",
+    description: "Rozwiązania dopasowane do Twojej branży",
+    image: graphicImg,
+    color: "#2D4A3E",
+    items: [
+      { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
+      { name: "E-commerce", href: "/dla-kogo/ecommerce" },
+      { name: "Marki premium", href: "/dla-kogo/marki-premium" },
+      { name: "Instytucje i eventy", href: "/dla-kogo/instytucje" },
+    ],
+  },
 ];
 
 interface MegaMenuProps {

@@ -662,6 +662,35 @@ const Wizualizacje3D = () => {
           </div>
         </section>
 
+        {/* Video Section */}
+        <section className="py-20 md:py-32 bg-muted/30">
+          <div className="container-wide px-6 md:px-12">
+            <FadeInView>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Zobacz nasze <span className="bg-gradient-brand bg-clip-text text-transparent">realizacje wideo</span>
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Przykład naszej produkcji filmowej prezentującej zaplecze technologiczne dla FPS Poznań
+                </p>
+              </div>
+            </FadeInView>
+            
+            <FadeInView delay={0.2}>
+              <div className="max-w-4xl mx-auto">
+                <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
+                  <video
+                    src="/videos/fps-poznan.mp4"
+                    controls
+                    className="w-full h-full object-cover"
+                    poster="/videos/fps-poznan.mp4#t=0.5"
+                  />
+                </div>
+              </div>
+            </FadeInView>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
