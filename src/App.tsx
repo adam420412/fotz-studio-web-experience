@@ -63,6 +63,7 @@ import Wizualizacje3D from "./pages/Wizualizacje3D";
 import KompleksowaObsluga from "./pages/KompleksowaObsluga";
 import FacebookAds from "./pages/FacebookAds";
 import GoogleAds from "./pages/GoogleAds";
+import IdentyfikacjaWizualna from "./pages/IdentyfikacjaWizualna";
 import PolitykaPrywatnosci from "./pages/PolitykaPrywatnosci";
 import Regulamin from "./pages/Regulamin";
 import NotFound from "./pages/NotFound";
@@ -135,6 +136,7 @@ const App = () => (
             <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
             <Route path="/facebook-ads" element={<FacebookAds />} />
             <Route path="/google-ads" element={<GoogleAds />} />
+            <Route path="/identyfikacja-wizualna" element={<IdentyfikacjaWizualna />} />
             <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
             <Route path="/regulamin" element={<Regulamin />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
