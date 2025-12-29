@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Plane, ArrowRight, CheckCircle, Camera, Video, Globe, TrendingUp, MapPin, Calendar, Star, Plus } from "lucide-react";
+import { Plane, ArrowRight, CheckCircle, Camera, Video, Globe, TrendingUp, MapPin, Calendar, Star, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
+import { OtherIndustries } from "@/components/sections/OtherIndustries";
+import sookarImg from "@/assets/portfolio/sookar.jpg";
 
 const services = [
   {
@@ -306,13 +308,21 @@ const MarketingTurystyka = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-primary/5 p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <Plane className="w-24 h-24 text-primary mx-auto mb-6" />
-                  <p className="text-2xl font-heading font-bold mb-2">Marzenia o podróżach</p>
-                  <p className="text-foreground/60">inspirowane profesjonalnym marketingiem</p>
+              <Link to="/case-study-sookar" className="block group">
+                <div className="aspect-square rounded-3xl overflow-hidden relative">
+                  <img 
+                    src={sookarImg} 
+                    alt="Sookar - case study turystyka"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
+                    <p className="text-xl font-heading font-bold mb-1">Sookar</p>
+                    <p className="text-sm opacity-80">Branding i strona dla turystyki</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -405,6 +415,9 @@ const MarketingTurystyka = () => {
           </div>
         </div>
       </section>
+
+      {/* Other Industries */}
+      <OtherIndustries currentSlug="turystyka" />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-background">

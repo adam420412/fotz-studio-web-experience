@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Code, ArrowRight, CheckCircle, Globe, Users, Rocket, TrendingUp, Database, Cloud, Cpu, Plus } from "lucide-react";
+import { Code, ArrowRight, CheckCircle, Globe, Users, Rocket, TrendingUp, Database, Cloud, Cpu, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
+import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import rppgImg from "@/assets/portfolio/rppg.png";
 
 const services = [
@@ -414,6 +415,9 @@ const MarketingIT = () => {
           </div>
         </div>
       </section>
+
+      {/* Other Industries */}
+      <OtherIndustries currentSlug="it-saas" />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-background">

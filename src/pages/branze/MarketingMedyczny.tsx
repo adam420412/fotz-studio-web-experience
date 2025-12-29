@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
-import celsjuszImg from "@/assets/portfolio/celsjusz.png";
+import { OtherIndustries } from "@/components/sections/OtherIndustries";
+import gabinetImg from "@/assets/medyczny/gabinet-stomatologiczny.jpg";
+import konsultacjaImg from "@/assets/medyczny/konsultacja-rtg.jpg";
+import poczekalniaImg from "@/assets/medyczny/poczekalnia-klinika.jpg";
 
 const services = [
   {
@@ -307,21 +310,29 @@ const MarketingMedyczny = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <Link to="/case-study-celsjusz" className="block group">
-                <div className="aspect-square rounded-3xl overflow-hidden relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="aspect-square rounded-2xl overflow-hidden">
                   <img 
-                    src={celsjuszImg} 
-                    alt="Celsjusz - case study branża medyczna"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src={gabinetImg} 
+                    alt="Nowoczesny gabinet stomatologiczny"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-6 left-6 right-6 text-white">
-                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
-                    <p className="text-xl font-heading font-bold mb-1">Celsjusz</p>
-                    <p className="text-sm opacity-80">Branding i marketing dla placówki medycznej</p>
-                  </div>
                 </div>
-              </Link>
+                <div className="aspect-square rounded-2xl overflow-hidden">
+                  <img 
+                    src={konsultacjaImg} 
+                    alt="Konsultacja z pacjentem"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="col-span-2 aspect-video rounded-2xl overflow-hidden">
+                  <img 
+                    src={poczekalniaImg} 
+                    alt="Poczekalnia w klinice"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -414,6 +425,9 @@ const MarketingMedyczny = () => {
           </div>
         </div>
       </section>
+
+      {/* Other Industries */}
+      <OtherIndustries currentSlug="branza-medyczna" />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary/10 to-background">
