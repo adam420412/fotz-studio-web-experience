@@ -246,63 +246,112 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                       </Link>
                     </div>
                     
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                      {menuCategories.map((category, categoryIndex) => (
-                        <motion.div
-                          key={category.title}
-                          onMouseEnter={() => setHoveredCategory(categoryIndex)}
-                          className="space-y-3"
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: categoryIndex * 0.05 + 0.1 }}
-                        >
-                          <h4 
-                            className={cn(
-                              "text-sm font-semibold transition-all duration-300 flex items-center gap-2",
-                              hoveredCategory === categoryIndex 
-                                ? "text-foreground translate-x-1" 
-                                : "text-muted-foreground"
-                            )}
-                            style={{ 
-                              color: hoveredCategory === categoryIndex ? category.color : undefined 
-                            }}
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                      {menuCategories.map((category, categoryIndex) => {
+                        const isBranze = category.title === "Branże";
+                        const halfLength = isBranze ? Math.ceil(category.items.length / 2) : category.items.length;
+                        const firstColumnItems = isBranze ? category.items.slice(0, halfLength) : category.items;
+                        const secondColumnItems = isBranze ? category.items.slice(halfLength) : [];
+
+                        return (
+                          <motion.div
+                            key={category.title}
+                            onMouseEnter={() => setHoveredCategory(categoryIndex)}
+                            className={cn("space-y-3", isBranze && "md:col-span-2")}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: categoryIndex * 0.05 + 0.1 }}
                           >
-                            <motion.span
-                              className="w-1.5 h-1.5 rounded-full"
-                              style={{ backgroundColor: category.color }}
-                              animate={{ 
-                                scale: hoveredCategory === categoryIndex ? 1 : 0,
-                                opacity: hoveredCategory === categoryIndex ? 1 : 0
+                            <h4 
+                              className={cn(
+                                "text-sm font-semibold transition-all duration-300 flex items-center gap-2",
+                                hoveredCategory === categoryIndex 
+                                  ? "text-foreground translate-x-1" 
+                                  : "text-muted-foreground"
+                              )}
+                              style={{ 
+                                color: hoveredCategory === categoryIndex ? category.color : undefined 
                               }}
-                              transition={{ duration: 0.2 }}
-                            />
-                            {category.title}
-                          </h4>
-                          <ul className="space-y-2">
-                            {category.items.map((item, itemIndex) => (
-                              <motion.li 
-                                key={item.href}
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
-                              >
-                                <Link
-                                  to={item.href}
-                                  onClick={onClose}
-                                  className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
-                                >
-                                  {item.name}
-                                  {item.badge && (
-                                    <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
-                                      {item.badge}
-                                    </span>
-                                  )}
-                                </Link>
-                              </motion.li>
-                            ))}
-                          </ul>
-                        </motion.div>
-                      ))}
+                            >
+                              <motion.span
+                                className="w-1.5 h-1.5 rounded-full"
+                                style={{ backgroundColor: category.color }}
+                                animate={{ 
+                                  scale: hoveredCategory === categoryIndex ? 1 : 0,
+                                  opacity: hoveredCategory === categoryIndex ? 1 : 0
+                                }}
+                                transition={{ duration: 0.2 }}
+                              />
+                              {category.title}
+                            </h4>
+                            
+                            {isBranze ? (
+                              <div className="grid grid-cols-2 gap-x-4">
+                                <ul className="space-y-2">
+                                  {firstColumnItems.map((item, itemIndex) => (
+                                    <motion.li 
+                                      key={item.href}
+                                      initial={{ opacity: 0, x: -10 }}
+                                      animate={{ opacity: 1, x: 0 }}
+                                      transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
+                                    >
+                                      <Link
+                                        to={item.href}
+                                        onClick={onClose}
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
+                                      >
+                                        {item.name}
+                                      </Link>
+                                    </motion.li>
+                                  ))}
+                                </ul>
+                                <ul className="space-y-2">
+                                  {secondColumnItems.map((item, itemIndex) => (
+                                    <motion.li 
+                                      key={item.href}
+                                      initial={{ opacity: 0, x: -10 }}
+                                      animate={{ opacity: 1, x: 0 }}
+                                      transition={{ delay: categoryIndex * 0.05 + (itemIndex + halfLength) * 0.03 + 0.15 }}
+                                    >
+                                      <Link
+                                        to={item.href}
+                                        onClick={onClose}
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
+                                      >
+                                        {item.name}
+                                      </Link>
+                                    </motion.li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ) : (
+                              <ul className="space-y-2">
+                                {category.items.map((item, itemIndex) => (
+                                  <motion.li 
+                                    key={item.href}
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
+                                  >
+                                    <Link
+                                      to={item.href}
+                                      onClick={onClose}
+                                      className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
+                                    >
+                                      {item.name}
+                                      {item.badge && (
+                                        <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
+                                          {item.badge}
+                                        </span>
+                                      )}
+                                    </Link>
+                                  </motion.li>
+                                ))}
+                              </ul>
+                            )}
+                          </motion.div>
+                        );
+                      })}
                     </div>
 
                     {/* Bottom CTA */}
