@@ -7,7 +7,7 @@ import { useState } from "react";
 import { 
   ShoppingCart, ArrowRight, CheckCircle, CreditCard, Truck, 
   Bot, Palette, TrendingUp, Users, Package, Plus, Minus, 
-  Phone, BarChart3, Zap, Settings, Globe
+  Phone, BarChart3, Zap, Settings, Globe, Target
 } from "lucide-react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
@@ -635,6 +635,73 @@ export default function EcommerceTworzenie() {
                 </motion.div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Powiązane <span className="text-gradient">usługi</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Uzupełnij swój sklep internetowy o dodatkowe usługi, które zwiększą sprzedaż.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link 
+              to="/strony-internetowe" 
+              className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
+            >
+              <Globe className="w-10 h-10 text-primary mb-4" />
+              <h3 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                Strony Internetowe
+              </h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Strony firmowe, landing page i witryny korporacyjne.
+              </p>
+              <span className="inline-flex items-center gap-1 text-primary text-sm group-hover:gap-2 transition-all">
+                Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+            <Link 
+              to="/pozycjonowanie" 
+              className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
+            >
+              <TrendingUp className="w-10 h-10 text-primary mb-4" />
+              <h3 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                Pozycjonowanie SEO
+              </h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Zwiększ widoczność sklepu w Google i zdobywaj organiczny ruch.
+              </p>
+              <span className="inline-flex items-center gap-1 text-primary text-sm group-hover:gap-2 transition-all">
+                Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
+            <Link 
+              to="/google-ads" 
+              className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
+            >
+              <Target className="w-10 h-10 text-primary mb-4" />
+              <h3 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                Google Ads
+              </h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                Kampanie produktowe i remarketing dla e-commerce.
+              </p>
+              <span className="inline-flex items-center gap-1 text-primary text-sm group-hover:gap-2 transition-all">
+                Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
           </div>
         </div>
       </section>

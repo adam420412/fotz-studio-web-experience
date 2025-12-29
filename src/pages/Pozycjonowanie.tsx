@@ -874,6 +874,63 @@ const Pozycjonowanie = () => {
                   </p>
                 </div>
               </FadeInView>
+
+              {/* Sekcja powiązanych usług */}
+              <FadeInView delay={0.6}>
+                <div className="mt-16 p-8 rounded-2xl bg-card border border-border">
+                  <h3 className="text-2xl font-heading font-bold mb-6 text-center">Powiązane usługi</h3>
+                  <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                    Pozycjonowanie działa najlepiej w połączeniu z innymi usługami. Sprawdź, co jeszcze możemy dla Ciebie zrobić.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <Link 
+                      to="/strony-internetowe" 
+                      className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
+                    >
+                      <Globe className="w-10 h-10 text-primary mb-4" />
+                      <h4 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                        Strony Internetowe
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Profesjonalne strony WWW zoptymalizowane pod SEO od podstaw.
+                      </p>
+                      <span className="inline-flex items-center gap-1 text-primary text-sm mt-4 group-hover:gap-2 transition-all">
+                        Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                    <Link 
+                      to="/ecommerce-tworzenie-sklepu" 
+                      className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
+                    >
+                      <Target className="w-10 h-10 text-primary mb-4" />
+                      <h4 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                        E-commerce & Sklepy
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Sklepy internetowe z SEO e-commerce wbudowanym od startu.
+                      </p>
+                      <span className="inline-flex items-center gap-1 text-primary text-sm mt-4 group-hover:gap-2 transition-all">
+                        Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                    <Link 
+                      to="/google-ads" 
+                      className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
+                    >
+                      <TrendingUp className="w-10 h-10 text-primary mb-4" />
+                      <h4 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                        Google Ads
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Uzupełnij SEO o płatne kampanie dla szybkich efektów.
+                      </p>
+                      <span className="inline-flex items-center gap-1 text-primary text-sm mt-4 group-hover:gap-2 transition-all">
+                        Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </FadeInView>
             </div>
           </div>
         </section>
