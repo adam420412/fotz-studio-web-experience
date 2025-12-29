@@ -105,10 +105,6 @@ const projectCategories = [
   "Wszystkie",
   "Strony www",
   "E-commerce",
-  "Social Media",
-  "Branding",
-  "SEO",
-  "Video",
   "Wizualizacje 3D",
 ];
 
