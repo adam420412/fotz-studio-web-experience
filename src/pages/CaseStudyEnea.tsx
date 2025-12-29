@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { 
   ArrowLeft, 
@@ -11,11 +12,13 @@ import {
   Globe,
   CheckCircle,
   Play,
-  ExternalLink
+  ExternalLink,
+  X,
+  ZoomIn
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { InstagramEmbed } from "@/components/InstagramEmbed";
 
@@ -106,6 +109,8 @@ const galleryImages = [
 
 
 export default function CaseStudyEnea() {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
   return (
     <Layout>
       {/* Hero Section with Video */}
@@ -319,6 +324,7 @@ export default function CaseStudyEnea() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                onClick={() => setSelectedImage({ src: image.src, alt: image.alt })}
                 className={cn(
                   "relative rounded-xl overflow-hidden group cursor-pointer",
                   image.span
@@ -330,7 +336,7 @@ export default function CaseStudyEnea() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-background/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <Play className="w-12 h-12 text-primary" />
+                  <ZoomIn className="w-12 h-12 text-primary" />
                 </div>
               </motion.div>
             ))}
@@ -438,11 +444,16 @@ export default function CaseStudyEnea() {
               transition={{ duration: 0.7 }}
               className="order-2 lg:order-1"
             >
-              <div className="aspect-video rounded-2xl overflow-hidden bg-secondary flex items-center justify-center">
-                <div className="text-center">
-                  <Play className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <p className="text-muted-foreground">Video case study</p>
-                </div>
+              <div className="aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
+                <video
+                  src="/videos/enea-stadion-casestudy.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  controls
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
 
@@ -514,6 +525,41 @@ export default function CaseStudyEnea() {
           </motion.div>
         </div>
       </section>
+
+      {/* Image Lightbox */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer"
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="relative max-w-5xl max-h-[90vh] w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute -top-12 right-0 p-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <X className="w-8 h-8" />
+              </button>
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="w-full h-full object-contain rounded-xl"
+              />
+              <p className="text-center mt-4 text-muted-foreground">{selectedImage.alt}</p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </Layout>
   );
 }
