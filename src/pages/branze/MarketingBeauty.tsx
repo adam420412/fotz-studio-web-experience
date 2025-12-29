@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { useCountUp } from "@/hooks/useCountUp";
 
 const services = [
   {
@@ -171,14 +171,17 @@ const MarketingBeauty = () => {
               { value: 10, suffix: "k+", label: "obserwatorek" },
               { value: 80, suffix: "+", label: "salonów beauty" },
               { value: 4.9, suffix: "", label: "średnia ocen" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                  <AnimatedCounter end={stat.value} suffix={stat.suffix} decimals={stat.value === 4.9 ? 1 : 0} />
+            ].map((stat, index) => {
+              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
+              return (
+                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
+                    {displayValue}
+                  </div>
+                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
                 </div>
-                <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-              </div>
-            ))}
+              );
+            })}
           </motion.div>
         </div>
       </section>

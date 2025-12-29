@@ -76,6 +76,10 @@ const menuCategories: MenuCategory[] = [
       { name: "E-commerce", href: "/dla-kogo/ecommerce" },
       { name: "Marki premium", href: "/dla-kogo/marki-premium" },
       { name: "Instytucje i eventy", href: "/dla-kogo/instytucje" },
+      { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna", badge: "Nowe" },
+      { name: "Gastronomia", href: "/dla-kogo/gastronomia", badge: "Nowe" },
+      { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness", badge: "Nowe" },
+      { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci", badge: "Nowe" },
     ],
   },
 ];
