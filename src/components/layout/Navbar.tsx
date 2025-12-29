@@ -153,62 +153,64 @@ export function Navbar() {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border transition-all duration-300 max-h-[80vh] overflow-y-auto",
+            "lg:hidden fixed top-[60px] sm:top-[72px] left-0 right-0 bottom-0 bg-background/98 backdrop-blur-xl border-t border-border transition-all duration-300 overflow-hidden",
             isMobileMenuOpen
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-4 pointer-events-none"
           )}
         >
-          <div className="container-wide px-6 py-8 flex flex-col gap-4">
-            {/* Mobile Services */}
-            <div className="border-b border-border pb-4 mb-2">
-              <Link 
-                to="/uslugi" 
-                className="text-sm text-muted-foreground mb-3 block hover:text-foreground transition-colors"
-              >
-                {t("Wszystkie usługi", "All services")} →
-              </Link>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-                {mobileServicesData.map((link) => (
-                  <Link
-                    key={link.href}
-                    to={link.href}
-                    className={cn(
-                      "text-sm font-medium py-1.5 transition-colors",
-                      location.pathname === link.href
-                        ? "text-[#75143F]"
-                        : "text-foreground/70 hover:text-foreground"
-                    )}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
+          <div className="h-full overflow-y-auto overscroll-contain">
+            <div className="container-wide px-4 sm:px-6 py-6 flex flex-col gap-3">
+              {/* Mobile Services */}
+              <div className="border-b border-border pb-4 mb-2">
+                <Link 
+                  to="/uslugi" 
+                  className="text-xs sm:text-sm text-muted-foreground mb-3 block hover:text-foreground transition-colors"
+                >
+                  {t("Wszystkie usługi", "All services")} →
+                </Link>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-3 sm:gap-x-4 gap-y-1.5 sm:gap-y-2">
+                  {mobileServicesData.map((link) => (
+                    <Link
+                      key={link.href}
+                      to={link.href}
+                      className={cn(
+                        "text-xs sm:text-sm font-medium py-1 sm:py-1.5 transition-colors truncate",
+                        location.pathname === link.href
+                          ? "text-[#75143F]"
+                          : "text-foreground/70 hover:text-foreground"
+                      )}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
+              
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className={cn(
+                    "text-base sm:text-lg font-medium py-1.5 sm:py-2 transition-colors",
+                    location.pathname === link.href
+                      ? "text-foreground"
+                      : "text-foreground/70 hover:text-foreground"
+                  )}
+                >
+                  {link.name}
+                </Link>
+              ))}
+              <div className="pt-3 sm:pt-4">
+                <LanguageSwitcher />
+              </div>
+              <Button variant="hero" size="default" className="mt-3 sm:mt-4 text-sm sm:text-base" asChild>
+                <Link to="/kontakt">
+                  {t("Bezpłatna konsultacja", "Free consultation")}
+                  <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
+                </Link>
+              </Button>
             </div>
-            
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className={cn(
-                  "text-lg font-medium py-2 transition-colors",
-                  location.pathname === link.href
-                    ? "text-foreground"
-                    : "text-foreground/70 hover:text-foreground"
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <div className="pt-4">
-              <LanguageSwitcher />
-            </div>
-            <Button variant="hero" size="lg" className="mt-4" asChild>
-              <Link to="/kontakt">
-                {t("Bezpłatna konsultacja", "Free consultation")}
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </Button>
           </div>
         </div>
       </header>
