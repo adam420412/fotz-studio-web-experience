@@ -7,6 +7,7 @@ const footerLinks = {
     { name: "Strony internetowe", href: "/strony-internetowe" },
     { name: "Social Media", href: "/social-media" },
     { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
+    { name: "Google Maps", href: "/pozycjonowanie-google-maps" },
     { name: "Fotograf", href: "/fotograf-poznan" },
     { name: "Produkcja filmów", href: "/produkcja-filmow-poznan" },
     { name: "Studio podcastowe", href: "/studio-podcastowe" },

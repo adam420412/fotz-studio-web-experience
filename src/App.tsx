@@ -56,6 +56,7 @@ import SocialMedia from "./pages/SocialMedia";
 import FotografPoznan from "./pages/FotografPoznan";
 import PozycjonowanieStronPoznan from "./pages/PozycjonowanieStronPoznan";
 import Pozycjonowanie from "./pages/Pozycjonowanie";
+import PozycjonowanieGoogleMaps from "./pages/PozycjonowanieGoogleMaps";
 import ProdukcjaFilmowPoznan from "./pages/ProdukcjaFilmowPoznan";
 import PolitykaPrywatnosci from "./pages/PolitykaPrywatnosci";
 import Regulamin from "./pages/Regulamin";
@@ -122,6 +123,7 @@ const App = () => (
             <Route path="/fotograf-poznan" element={<FotografPoznan />} />
             <Route path="/pozycjonowanie-stron-poznan" element={<PozycjonowanieStronPoznan />} />
             <Route path="/pozycjonowanie" element={<Pozycjonowanie />} />
+            <Route path="/pozycjonowanie-google-maps" element={<PozycjonowanieGoogleMaps />} />
             <Route path="/produkcja-filmow-poznan" element={<ProdukcjaFilmowPoznan />} />
             <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
             <Route path="/regulamin" element={<Regulamin />} />
