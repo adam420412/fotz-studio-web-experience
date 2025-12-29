@@ -49,11 +49,11 @@ interface CategoryStep {
   services: ServiceOption[];
 }
 
-const steps: CategoryStep[] = [
+const categories: CategoryStep[] = [
   {
     id: "strony",
     title: "Strona internetowa",
-    description: "Wybierz rodzaj strony, której potrzebujesz",
+    description: "Strony WWW, landing page, sklepy",
     icon: Globe,
     services: [
       {
@@ -92,7 +92,7 @@ const steps: CategoryStep[] = [
   {
     id: "marketing",
     title: "Marketing & Reklama",
-    description: "Dodaj usługi marketingowe do pakietu",
+    description: "Social media, kampanie płatne",
     icon: Share2,
     services: [
       {
@@ -131,7 +131,7 @@ const steps: CategoryStep[] = [
   {
     id: "seo",
     title: "Pozycjonowanie SEO",
-    description: "Zwiększ widoczność w wyszukiwarkach",
+    description: "Widoczność w wyszukiwarkach",
     icon: TrendingUp,
     services: [
       {
@@ -170,7 +170,7 @@ const steps: CategoryStep[] = [
   {
     id: "produkcja",
     title: "Produkcja foto/video",
-    description: "Profesjonalne materiały wizualne",
+    description: "Sesje, filmy, wizualizacje 3D",
     icon: Film,
     services: [
       {
@@ -219,7 +219,7 @@ const steps: CategoryStep[] = [
   {
     id: "branding",
     title: "Branding & Grafika",
-    description: "Buduj rozpoznawalną markę",
+    description: "Logo, identyfikacja wizualna",
     icon: Brush,
     services: [
       {
@@ -247,9 +247,21 @@ const steps: CategoryStep[] = [
   },
 ];
 
+type FlowStep = "categories" | "services" | "summary";
+
 export default function Cennik() {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [flowStep, setFlowStep] = useState<FlowStep>("categories");
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
+
+  const toggleCategory = (categoryId: string) => {
+    setSelectedCategories(prev => 
+      prev.includes(categoryId) 
+        ? prev.filter(id => id !== categoryId)
+        : [...prev, categoryId]
+    );
+  };
 
   const toggleService = (serviceId: string) => {
     setSelectedServices(prev => 
@@ -259,7 +271,10 @@ export default function Cennik() {
     );
   };
 
-  const allServices = steps.flatMap(s => s.services);
+  const selectedCategoryObjects = categories.filter(c => selectedCategories.includes(c.id));
+  const currentCategory = selectedCategoryObjects[currentCategoryIndex];
+  
+  const allServices = categories.flatMap(s => s.services);
   
   const selectedDetails = useMemo(() => {
     const selected = allServices.filter(s => selectedServices.includes(s.id));
@@ -282,16 +297,32 @@ export default function Cennik() {
     return new Intl.NumberFormat('pl-PL').format(price);
   };
 
-  const currentCategory = steps[currentStep];
-  const isLastStep = currentStep === steps.length - 1;
-  const isFirstStep = currentStep === 0;
-
-  const nextStep = () => {
-    if (!isLastStep) setCurrentStep(prev => prev + 1);
+  const proceedToServices = () => {
+    if (selectedCategories.length > 0) {
+      setCurrentCategoryIndex(0);
+      setFlowStep("services");
+    }
   };
 
-  const prevStep = () => {
-    if (!isFirstStep) setCurrentStep(prev => prev - 1);
+  const nextCategory = () => {
+    if (currentCategoryIndex < selectedCategoryObjects.length - 1) {
+      setCurrentCategoryIndex(prev => prev + 1);
+    } else {
+      setFlowStep("summary");
+    }
+  };
+
+  const prevCategory = () => {
+    if (currentCategoryIndex > 0) {
+      setCurrentCategoryIndex(prev => prev - 1);
+    } else {
+      setFlowStep("categories");
+    }
+  };
+
+  const goBackToCategories = () => {
+    setFlowStep("categories");
+    setCurrentCategoryIndex(0);
   };
 
   return (
@@ -324,45 +355,45 @@ export default function Cennik() {
               Zbuduj swój <span className="text-primary">pakiet usług</span>
             </h1>
             <p className="text-base md:text-lg text-muted-foreground">
-              Przejdź przez kroki i wybierz usługi, których potrzebujesz. Cena aktualizuje się na żywo.
+              {flowStep === "categories" && "Wybierz kategorie usług, które Cię interesują"}
+              {flowStep === "services" && "Wybierz konkretne warianty w każdej kategorii"}
+              {flowStep === "summary" && "Podsumowanie Twojego pakietu"}
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Progress Steps */}
+      {/* Flow Steps Indicator */}
       <section className="py-6 border-b border-border/50 sticky top-16 bg-background/95 backdrop-blur-sm z-30">
         <div className="container-wide">
-          <div className="flex items-center justify-between gap-2 overflow-x-auto pb-2">
-            {steps.map((step, index) => {
-              const Icon = step.icon;
-              const isActive = index === currentStep;
-              const isCompleted = index < currentStep;
-              const hasSelection = step.services.some(s => selectedServices.includes(s.id));
-              
-              return (
-                <button
-                  key={step.id}
-                  onClick={() => setCurrentStep(index)}
-                  className={cn(
-                    "flex items-center gap-2 px-3 py-2 rounded-lg transition-all whitespace-nowrap min-w-fit",
-                    isActive && "bg-primary text-primary-foreground",
-                    !isActive && hasSelection && "bg-primary/10 text-primary",
-                    !isActive && !hasSelection && "text-muted-foreground hover:text-foreground hover:bg-secondary"
-                  )}
-                >
-                  <div className={cn(
-                    "w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold",
-                    isActive && "bg-primary-foreground text-primary",
-                    !isActive && hasSelection && "bg-primary text-primary-foreground",
-                    !isActive && !hasSelection && "bg-secondary text-muted-foreground"
-                  )}>
-                    {hasSelection ? <Check className="w-3 h-3" /> : index + 1}
-                  </div>
-                  <span className="text-sm font-medium hidden sm:block">{step.title}</span>
-                </button>
-              );
-            })}
+          <div className="flex items-center justify-center gap-4">
+            <div className={cn(
+              "flex items-center gap-2 px-4 py-2 rounded-full transition-all",
+              flowStep === "categories" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+            )}>
+              <div className="w-6 h-6 rounded-full bg-current/20 flex items-center justify-center text-xs font-bold">
+                {selectedCategories.length > 0 && flowStep !== "categories" ? <Check className="w-3 h-3" /> : "1"}
+              </div>
+              <span className="text-sm font-medium">Kategorie</span>
+            </div>
+            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+            <div className={cn(
+              "flex items-center gap-2 px-4 py-2 rounded-full transition-all",
+              flowStep === "services" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+            )}>
+              <div className="w-6 h-6 rounded-full bg-current/20 flex items-center justify-center text-xs font-bold">
+                {flowStep === "summary" ? <Check className="w-3 h-3" /> : "2"}
+              </div>
+              <span className="text-sm font-medium">Warianty</span>
+            </div>
+            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+            <div className={cn(
+              "flex items-center gap-2 px-4 py-2 rounded-full transition-all",
+              flowStep === "summary" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+            )}>
+              <div className="w-6 h-6 rounded-full bg-current/20 flex items-center justify-center text-xs font-bold">3</div>
+              <span className="text-sm font-medium">Podsumowanie</span>
+            </div>
           </div>
         </div>
       </section>
@@ -371,312 +402,506 @@ export default function Cennik() {
       <section className="py-12">
         <div className="container-wide">
           <div className="grid lg:grid-cols-[1fr_340px] gap-8">
-            {/* Services Grid */}
+            {/* Main Area */}
             <div>
               <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentStep}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <currentCategory.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h2 className="text-xl font-heading font-bold text-foreground">
-                        {currentCategory.title}
-                      </h2>
-                      <p className="text-sm text-muted-foreground">{currentCategory.description}</p>
-                    </div>
-                  </div>
+                {/* Step 1: Category Selection */}
+                {flowStep === "categories" && (
+                  <motion.div
+                    key="categories"
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <h2 className="text-xl font-heading font-bold text-foreground mb-2">
+                      Jakie usługi Cię interesują?
+                    </h2>
+                    <p className="text-muted-foreground mb-6">
+                      Wybierz wszystkie kategorie, które chcesz uwzględnić w swojej wycenie
+                    </p>
 
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {currentCategory.services.map((service, index) => {
-                      const isSelected = selectedServices.includes(service.id);
-                      const Icon = service.icon;
-                      
-                      return (
-                        <motion.div
-                          key={service.id}
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: index * 0.05 }}
-                        >
-                          <Card 
-                            className={cn(
-                              "relative cursor-pointer transition-all duration-300 h-full",
-                              isSelected 
-                                ? 'border-primary bg-primary/5 shadow-lg shadow-primary/10' 
-                                : 'border-border hover:border-primary/30 hover:shadow-md'
-                            )}
-                            onClick={() => toggleService(service.id)}
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {categories.map((category, index) => {
+                        const isSelected = selectedCategories.includes(category.id);
+                        const Icon = category.icon;
+                        
+                        return (
+                          <motion.div
+                            key={category.id}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.05 }}
                           >
-                            {service.popular && (
-                              <Badge className="absolute -top-2 right-4 bg-primary text-primary-foreground text-[10px]">
-                                <Sparkles className="w-3 h-3 mr-1" />
-                                Popularne
-                              </Badge>
-                            )}
-                            <CardHeader className="pb-2">
-                              <div className="flex items-start justify-between gap-2">
-                                <div className={cn(
-                                  "w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors",
-                                  isSelected ? 'bg-primary text-primary-foreground' : 'bg-secondary text-foreground'
-                                )}>
-                                  <Icon className="w-5 h-5" />
-                                </div>
-                                <button
-                                  className={cn(
-                                    "w-8 h-8 rounded-full flex items-center justify-center transition-all",
-                                    isSelected 
-                                      ? "bg-primary text-primary-foreground" 
-                                      : "bg-secondary text-muted-foreground hover:bg-primary/20 hover:text-primary"
-                                  )}
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    toggleService(service.id);
-                                  }}
-                                >
-                                  {isSelected ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                                </button>
-                              </div>
-                              <CardTitle className="text-base font-heading mt-3">
-                                {service.name}
-                              </CardTitle>
-                              <CardDescription className="text-xs">
-                                {service.description}
-                              </CardDescription>
-                            </CardHeader>
-                            <CardContent className="pt-0">
-                              <div className="mb-3">
-                                <span className="text-lg font-bold text-foreground">
-                                  od {formatPrice(service.priceFrom)} PLN
-                                </span>
-                                <span className="text-xs text-muted-foreground block">
-                                  {service.priceType}
-                                </span>
-                              </div>
-                              
-                              {service.includes && (
-                                <ul className="space-y-1">
-                                  {service.includes.slice(0, 3).map((item, i) => (
-                                    <li key={i} className="text-xs text-muted-foreground flex items-center gap-1.5">
-                                      <Check className="w-3 h-3 text-primary flex-shrink-0" />
-                                      {item}
-                                    </li>
-                                  ))}
-                                  {service.includes.length > 3 && (
-                                    <li className="text-xs text-muted-foreground">
-                                      +{service.includes.length - 3} więcej...
-                                    </li>
-                                  )}
-                                </ul>
+                            <Card 
+                              className={cn(
+                                "relative cursor-pointer transition-all duration-300 h-full",
+                                isSelected 
+                                  ? 'border-primary bg-primary/5 shadow-lg shadow-primary/10' 
+                                  : 'border-border hover:border-primary/30 hover:shadow-md'
                               )}
-                            </CardContent>
-                          </Card>
-                        </motion.div>
-                      );
-                    })}
-                  </div>
+                              onClick={() => toggleCategory(category.id)}
+                            >
+                              <CardHeader className="pb-3">
+                                <div className="flex items-start justify-between gap-2">
+                                  <div className={cn(
+                                    "w-12 h-12 rounded-xl flex items-center justify-center transition-colors",
+                                    isSelected ? 'bg-primary text-primary-foreground' : 'bg-secondary text-foreground'
+                                  )}>
+                                    <Icon className="w-6 h-6" />
+                                  </div>
+                                  <button
+                                    className={cn(
+                                      "w-8 h-8 rounded-full flex items-center justify-center transition-all",
+                                      isSelected 
+                                        ? "bg-primary text-primary-foreground" 
+                                        : "bg-secondary text-muted-foreground hover:bg-primary/20 hover:text-primary"
+                                    )}
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      toggleCategory(category.id);
+                                    }}
+                                  >
+                                    {isSelected ? <Check className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                                  </button>
+                                </div>
+                                <CardTitle className="text-lg font-heading mt-3">
+                                  {category.title}
+                                </CardTitle>
+                                <CardDescription className="text-sm">
+                                  {category.description}
+                                </CardDescription>
+                              </CardHeader>
+                              <CardContent className="pt-0">
+                                <p className="text-xs text-muted-foreground">
+                                  {category.services.length} opcji do wyboru
+                                </p>
+                              </CardContent>
+                            </Card>
+                          </motion.div>
+                        );
+                      })}
+                    </div>
 
-                  {/* Navigation */}
-                  <div className="flex items-center justify-between mt-8 pt-6 border-t border-border/50">
-                    <Button
-                      variant="outline"
-                      onClick={prevStep}
-                      disabled={isFirstStep}
-                      className="gap-2"
-                    >
-                      <ChevronLeft className="w-4 h-4" />
-                      Poprzedni
-                    </Button>
-                    
-                    <span className="text-sm text-muted-foreground">
-                      Krok {currentStep + 1} z {steps.length}
-                    </span>
-                    
-                    <Button
-                      onClick={nextStep}
-                      disabled={isLastStep}
-                      className="gap-2"
-                    >
-                      Następny
-                      <ChevronRight className="w-4 h-4" />
-                    </Button>
-                  </div>
-                </motion.div>
+                    <div className="flex justify-end mt-8">
+                      <Button
+                        size="lg"
+                        onClick={proceedToServices}
+                        disabled={selectedCategories.length === 0}
+                        className="gap-2"
+                      >
+                        Dalej: Wybierz warianty
+                        <ChevronRight className="w-4 h-4" />
+                      </Button>
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Step 2: Service Selection within categories */}
+                {flowStep === "services" && currentCategory && (
+                  <motion.div
+                    key={`services-${currentCategory.id}`}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {/* Category tabs */}
+                    <div className="flex items-center gap-2 mb-6 overflow-x-auto pb-2">
+                      {selectedCategoryObjects.map((cat, index) => {
+                        const Icon = cat.icon;
+                        const isActive = index === currentCategoryIndex;
+                        const hasSelection = cat.services.some(s => selectedServices.includes(s.id));
+                        
+                        return (
+                          <button
+                            key={cat.id}
+                            onClick={() => setCurrentCategoryIndex(index)}
+                            className={cn(
+                              "flex items-center gap-2 px-3 py-2 rounded-lg transition-all whitespace-nowrap",
+                              isActive && "bg-primary text-primary-foreground",
+                              !isActive && hasSelection && "bg-primary/10 text-primary",
+                              !isActive && !hasSelection && "bg-secondary text-muted-foreground hover:text-foreground"
+                            )}
+                          >
+                            <Icon className="w-4 h-4" />
+                            <span className="text-sm font-medium">{cat.title}</span>
+                            {hasSelection && !isActive && <Check className="w-3 h-3" />}
+                          </button>
+                        );
+                      })}
+                    </div>
+
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                        <currentCategory.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-heading font-bold text-foreground">
+                          {currentCategory.title}
+                        </h2>
+                        <p className="text-sm text-muted-foreground">
+                          Wybierz warianty, które Cię interesują
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {currentCategory.services.map((service, index) => {
+                        const isSelected = selectedServices.includes(service.id);
+                        const Icon = service.icon;
+                        
+                        return (
+                          <motion.div
+                            key={service.id}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.05 }}
+                          >
+                            <Card 
+                              className={cn(
+                                "relative cursor-pointer transition-all duration-300 h-full",
+                                isSelected 
+                                  ? 'border-primary bg-primary/5 shadow-lg shadow-primary/10' 
+                                  : 'border-border hover:border-primary/30 hover:shadow-md'
+                              )}
+                              onClick={() => toggleService(service.id)}
+                            >
+                              {service.popular && (
+                                <Badge className="absolute -top-2 right-4 bg-primary text-primary-foreground text-[10px]">
+                                  <Sparkles className="w-3 h-3 mr-1" />
+                                  Popularne
+                                </Badge>
+                              )}
+                              <CardHeader className="pb-2">
+                                <div className="flex items-start justify-between gap-2">
+                                  <div className={cn(
+                                    "w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-colors",
+                                    isSelected ? 'bg-primary text-primary-foreground' : 'bg-secondary text-foreground'
+                                  )}>
+                                    <Icon className="w-5 h-5" />
+                                  </div>
+                                  <button
+                                    className={cn(
+                                      "w-8 h-8 rounded-full flex items-center justify-center transition-all",
+                                      isSelected 
+                                        ? "bg-primary text-primary-foreground" 
+                                        : "bg-secondary text-muted-foreground hover:bg-primary/20 hover:text-primary"
+                                    )}
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      toggleService(service.id);
+                                    }}
+                                  >
+                                    {isSelected ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                                  </button>
+                                </div>
+                                <CardTitle className="text-base font-heading mt-3">
+                                  {service.name}
+                                </CardTitle>
+                                <CardDescription className="text-xs">
+                                  {service.description}
+                                </CardDescription>
+                              </CardHeader>
+                              <CardContent className="pt-0">
+                                <div className="mb-3">
+                                  <span className="text-lg font-bold text-foreground">
+                                    od {formatPrice(service.priceFrom)} PLN
+                                  </span>
+                                  <span className="text-xs text-muted-foreground block">
+                                    {service.priceType}
+                                  </span>
+                                </div>
+                                
+                                {service.includes && (
+                                  <ul className="space-y-1">
+                                    {service.includes.slice(0, 3).map((item, i) => (
+                                      <li key={i} className="text-xs text-muted-foreground flex items-center gap-1.5">
+                                        <Check className="w-3 h-3 text-primary flex-shrink-0" />
+                                        {item}
+                                      </li>
+                                    ))}
+                                    {service.includes.length > 3 && (
+                                      <li className="text-xs text-primary">
+                                        +{service.includes.length - 3} więcej
+                                      </li>
+                                    )}
+                                  </ul>
+                                )}
+                              </CardContent>
+                            </Card>
+                          </motion.div>
+                        );
+                      })}
+                    </div>
+
+                    <div className="flex justify-between mt-8">
+                      <Button
+                        variant="outline"
+                        size="lg"
+                        onClick={prevCategory}
+                        className="gap-2"
+                      >
+                        <ChevronLeft className="w-4 h-4" />
+                        {currentCategoryIndex === 0 ? "Wróć do kategorii" : "Poprzednia"}
+                      </Button>
+                      <Button
+                        size="lg"
+                        onClick={nextCategory}
+                        className="gap-2"
+                      >
+                        {currentCategoryIndex === selectedCategoryObjects.length - 1 ? "Podsumowanie" : "Następna kategoria"}
+                        <ChevronRight className="w-4 h-4" />
+                      </Button>
+                    </div>
+                  </motion.div>
+                )}
+
+                {/* Step 3: Summary */}
+                {flowStep === "summary" && (
+                  <motion.div
+                    key="summary"
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <h2 className="text-xl font-heading font-bold text-foreground mb-2">
+                      Podsumowanie Twojego pakietu
+                    </h2>
+                    <p className="text-muted-foreground mb-6">
+                      Sprawdź wybrane usługi i prześlij zapytanie o wycenę
+                    </p>
+
+                    {selectedDetails.count === 0 ? (
+                      <Card className="p-8 text-center">
+                        <p className="text-muted-foreground mb-4">Nie wybrano żadnych usług</p>
+                        <Button variant="outline" onClick={goBackToCategories}>
+                          Wróć do wyboru kategorii
+                        </Button>
+                      </Card>
+                    ) : (
+                      <div className="space-y-4">
+                        {selectedCategoryObjects.map(category => {
+                          const categoryServices = category.services.filter(s => selectedServices.includes(s.id));
+                          if (categoryServices.length === 0) return null;
+                          
+                          return (
+                            <Card key={category.id} className="overflow-hidden">
+                              <CardHeader className="bg-secondary/50 py-3">
+                                <div className="flex items-center gap-3">
+                                  <category.icon className="w-5 h-5 text-primary" />
+                                  <CardTitle className="text-base">{category.title}</CardTitle>
+                                </div>
+                              </CardHeader>
+                              <CardContent className="pt-4">
+                                <div className="space-y-3">
+                                  {categoryServices.map(service => (
+                                    <div key={service.id} className="flex items-center justify-between py-2 border-b border-border/50 last:border-0">
+                                      <div className="flex items-center gap-3">
+                                        <Check className="w-4 h-4 text-primary" />
+                                        <div>
+                                          <p className="font-medium text-foreground">{service.name}</p>
+                                          <p className="text-xs text-muted-foreground">{service.description}</p>
+                                        </div>
+                                      </div>
+                                      <div className="text-right">
+                                        <p className="font-bold text-foreground">
+                                          od {formatPrice(service.priceFrom)} PLN
+                                        </p>
+                                        <p className="text-xs text-muted-foreground">{service.priceType}</p>
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </CardContent>
+                            </Card>
+                          );
+                        })}
+
+                        <div className="flex justify-between mt-8">
+                          <Button
+                            variant="outline"
+                            size="lg"
+                            onClick={() => {
+                              setCurrentCategoryIndex(selectedCategoryObjects.length - 1);
+                              setFlowStep("services");
+                            }}
+                            className="gap-2"
+                          >
+                            <ChevronLeft className="w-4 h-4" />
+                            Wróć do edycji
+                          </Button>
+                        </div>
+                      </div>
+                    )}
+                  </motion.div>
+                )}
               </AnimatePresence>
             </div>
 
-            {/* Live Summary Panel */}
-            <div className="lg:sticky lg:top-32 h-fit">
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <Card className="bg-card border-border shadow-xl overflow-hidden">
-                  <CardHeader className="border-b border-border bg-secondary/30">
-                    <CardTitle className="flex items-center gap-2 font-heading">
-                      <Calculator className="w-5 h-5 text-primary" />
-                      Twój pakiet
-                    </CardTitle>
-                    <CardDescription>
-                      {selectedDetails.count === 0 
-                        ? "Wybierz usługi z listy"
-                        : `${selectedDetails.count} ${selectedDetails.count === 1 ? 'usługa' : selectedDetails.count < 5 ? 'usługi' : 'usług'} w pakiecie`
-                      }
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="pt-4">
-                    <AnimatePresence mode="popLayout">
-                      {selectedDetails.count === 0 ? (
-                        <motion.div 
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={{ opacity: 0 }}
-                          className="text-center py-8"
-                        >
-                          <div className="w-16 h-16 rounded-full bg-secondary/50 flex items-center justify-center mx-auto mb-4">
-                            <Plus className="w-8 h-8 text-muted-foreground" />
-                          </div>
-                          <p className="text-sm text-muted-foreground">
-                            Kliknij na usługi, aby dodać je do pakietu
-                          </p>
-                        </motion.div>
-                      ) : (
-                        <motion.div 
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          exit={{ opacity: 0 }}
-                          className="space-y-3"
-                        >
-                          {/* Selected services list */}
-                          <div className="space-y-2 max-h-[250px] overflow-y-auto pr-2">
-                            {selectedDetails.selected.map((service) => (
-                              <motion.div
-                                key={service.id}
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: 10 }}
-                                layout
-                                className="flex items-center justify-between text-sm py-2 px-3 rounded-lg bg-secondary/30 group"
-                              >
-                                <div className="flex items-center gap-2 min-w-0">
-                                  <service.icon className="w-4 h-4 text-primary flex-shrink-0" />
-                                  <span className="text-foreground truncate">{service.name}</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                  <span className="text-muted-foreground whitespace-nowrap text-xs">
-                                    {formatPrice(service.priceFrom)}
-                                    <span className="ml-0.5">/{service.priceType === "miesięcznie" ? "msc" : "1x"}</span>
-                                  </span>
-                                  <button
-                                    onClick={() => toggleService(service.id)}
-                                    className="opacity-0 group-hover:opacity-100 w-5 h-5 rounded-full bg-destructive/10 text-destructive flex items-center justify-center transition-opacity"
-                                  >
-                                    <Minus className="w-3 h-3" />
-                                  </button>
-                                </div>
-                              </motion.div>
-                            ))}
-                          </div>
-
-                          {/* Totals */}
-                          <div className="pt-4 border-t border-border space-y-2">
-                            {selectedDetails.hasOneTime && (
-                              <div className="flex justify-between text-sm">
-                                <span className="text-muted-foreground">Jednorazowo:</span>
-                                <span className="font-medium text-foreground">
-                                  {formatPrice(selectedDetails.oneTimeTotal)} - {formatPrice(selectedDetails.oneTimeTotalMax)} PLN
-                                </span>
-                              </div>
-                            )}
-                            {selectedDetails.hasMonthly && (
-                              <div className="flex justify-between text-sm">
-                                <span className="text-muted-foreground">Miesięcznie:</span>
-                                <span className="font-medium text-foreground">
-                                  {formatPrice(selectedDetails.monthlyTotal)} - {formatPrice(selectedDetails.monthlyTotalMax)} PLN
-                                </span>
-                              </div>
-                            )}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-
-                    {/* Grand total */}
-                    {selectedDetails.count > 0 && (
-                      <motion.div 
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="mt-4 pt-4 border-t border-primary/20 bg-gradient-to-r from-primary/5 to-primary/10 -mx-6 px-6 py-4"
-                      >
-                        <div className="text-center">
-                          <span className="text-sm text-muted-foreground block mb-1">Razem od</span>
-                          <motion.span 
-                            key={selectedDetails.oneTimeTotal + selectedDetails.monthlyTotal}
-                            initial={{ scale: 1.1 }}
-                            animate={{ scale: 1 }}
-                            className="text-3xl font-bold text-primary block"
-                          >
-                            {formatPrice(selectedDetails.oneTimeTotal + selectedDetails.monthlyTotal)} PLN
-                          </motion.span>
-                          <span className="text-xs text-muted-foreground">
-                            {selectedDetails.hasMonthly && selectedDetails.hasOneTime 
-                              ? "start + abonament miesięczny" 
-                              : selectedDetails.hasMonthly 
-                                ? "miesięcznie" 
-                                : "jednorazowo"
-                            }
+            {/* Sticky Summary Sidebar */}
+            <div className="lg:sticky lg:top-36 h-fit">
+              <Card className="border-primary/20 bg-gradient-to-b from-background to-secondary/30">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-lg">
+                    <Calculator className="w-5 h-5 text-primary" />
+                    Twój pakiet
+                  </CardTitle>
+                  <CardDescription>
+                    {selectedDetails.count} {selectedDetails.count === 1 ? 'usługa' : selectedDetails.count < 5 ? 'usługi' : 'usług'} wybrano
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {/* Selected items preview */}
+                  {selectedDetails.selected.length > 0 && (
+                    <div className="space-y-2 pb-4 border-b border-border/50">
+                      {selectedDetails.selected.slice(0, 5).map(service => (
+                        <div key={service.id} className="flex items-center justify-between text-sm">
+                          <span className="text-muted-foreground truncate flex-1 mr-2">{service.name}</span>
+                          <span className="font-medium text-foreground whitespace-nowrap">
+                            {formatPrice(service.priceFrom)} PLN
                           </span>
                         </div>
-                      </motion.div>
-                    )}
+                      ))}
+                      {selectedDetails.selected.length > 5 && (
+                        <p className="text-xs text-primary">
+                          +{selectedDetails.selected.length - 5} więcej usług
+                        </p>
+                      )}
+                    </div>
+                  )}
 
-                    {/* CTA */}
-                    <div className="mt-6">
-                      <Button asChild className="w-full" size="lg">
-                        <Link to="/kontakt">
-                          <Send className="w-4 h-4 mr-2" />
-                          {selectedDetails.count > 0 ? "Zamów wycenę pakietu" : "Bezpłatna konsultacja"}
-                          <ArrowRight className="w-4 h-4 ml-2" />
-                        </Link>
+                  {/* Totals */}
+                  <div className="space-y-3">
+                    {selectedDetails.hasOneTime && (
+                      <div className="p-3 rounded-lg bg-secondary/50">
+                        <p className="text-xs text-muted-foreground mb-1">Koszty jednorazowe</p>
+                        <p className="text-xl font-bold text-foreground">
+                          {formatPrice(selectedDetails.oneTimeTotal)} - {formatPrice(selectedDetails.oneTimeTotalMax)} PLN
+                        </p>
+                      </div>
+                    )}
+                    
+                    {selectedDetails.hasMonthly && (
+                      <div className="p-3 rounded-lg bg-primary/10">
+                        <p className="text-xs text-muted-foreground mb-1">Koszty miesięczne</p>
+                        <p className="text-xl font-bold text-primary">
+                          {formatPrice(selectedDetails.monthlyTotal)} - {formatPrice(selectedDetails.monthlyTotalMax)} PLN
+                        </p>
+                        <p className="text-xs text-muted-foreground">/ miesiąc</p>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* CTA */}
+                  <div className="pt-4 space-y-3">
+                    <Link to="/kontakt" className="block">
+                      <Button 
+                        className="w-full gap-2" 
+                        size="lg"
+                        disabled={selectedDetails.count === 0}
+                      >
+                        <Send className="w-4 h-4" />
+                        Wyślij zapytanie
                       </Button>
-                      <p className="text-xs text-center text-muted-foreground mt-3">
-                        Ceny netto. Ostateczna wycena po konsultacji.
+                    </Link>
+                    <p className="text-xs text-center text-muted-foreground">
+                      Ceny orientacyjne netto. Finalna wycena po analizie wymagań.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Quick tips */}
+              <Card className="mt-4 bg-secondary/30 border-border/50">
+                <CardContent className="pt-4">
+                  <div className="flex items-start gap-3">
+                    <Sparkles className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-medium text-foreground mb-1">
+                        Pakiety kompleksowe = lepsze ceny
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        Łącząc usługi z różnych kategorii, możesz liczyć na atrakcyjniejsze stawki.
                       </p>
                     </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Info section */}
-      <section className="section-padding bg-secondary/30">
+      {/* FAQ Section */}
+      <section className="py-16 bg-secondary/30">
         <div className="container-wide">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
-              Nie wiesz, czego potrzebujesz?
+              Najczęściej zadawane pytania
             </h2>
-            <p className="text-muted-foreground mb-6">
-              Umów się na bezpłatną konsultację - pomożemy dobrać optymalny pakiet usług do Twojego budżetu i celów biznesowych.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Button variant="outline" asChild>
-                <Link to="/uslugi">Zobacz szczegóły usług</Link>
-              </Button>
-              <Button variant="outline" asChild>
-                <Link to="/realizacje">Portfolio realizacji</Link>
-              </Button>
-            </div>
           </div>
+          
+          <div className="max-w-3xl mx-auto grid gap-4">
+            {[
+              {
+                q: "Czy ceny są ostateczne?",
+                a: "Podane ceny są orientacyjne i stanowią punkt wyjścia. Finalna wycena zależy od szczegółowych wymagań projektu i jest ustalana po bezpłatnej konsultacji."
+              },
+              {
+                q: "Czy mogę łączyć usługi z różnych kategorii?",
+                a: "Tak! Zachęcamy do tworzenia kompleksowych pakietów. Przy łączeniu usług oferujemy atrakcyjniejsze stawki."
+              },
+              {
+                q: "Jak długo trwa realizacja?",
+                a: "Czas realizacji zależy od zakresu projektu. Landing page to około 1-2 tygodni, strona firmowa 3-6 tygodni, a kampanie marketingowe uruchamiamy w ciągu 7 dni."
+              },
+              {
+                q: "Czy oferujecie wsparcie po realizacji?",
+                a: "Tak, oferujemy pakiety wsparcia technicznego i rozwoju. Dla stron internetowych zapewniamy również hosting i aktualizacje."
+              },
+            ].map((faq, index) => (
+              <Card key={index} className="bg-background">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-base font-heading">{faq.q}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">{faq.a}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16">
+        <div className="container-wide">
+          <Card className="bg-gradient-to-r from-primary/10 to-primary/5 border-primary/20 p-8 md:p-12">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
+                Potrzebujesz indywidualnej wyceny?
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Każdy projekt jest inny. Umów się na bezpłatną konsultację, a przygotujemy ofertę dopasowaną do Twoich potrzeb.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/kontakt">
+                  <Button size="lg" className="gap-2 w-full sm:w-auto">
+                    <Send className="w-4 h-4" />
+                    Bezpłatna konsultacja
+                  </Button>
+                </Link>
+                <Link to="/realizacje">
+                  <Button variant="outline" size="lg" className="gap-2 w-full sm:w-auto">
+                    Zobacz realizacje
+                    <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
     </Layout>
