@@ -2,6 +2,43 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { 
+  Megaphone, 
+  Globe, 
+  Video, 
+  Palette, 
+  Users, 
+  Building2,
+  Layers,
+  PenTool,
+  Share2,
+  Facebook,
+  Target,
+  ShoppingCart,
+  Search,
+  MapPin,
+  Film,
+  Clapperboard,
+  Box,
+  Camera,
+  Fingerprint,
+  Brush,
+  Store,
+  ShoppingBag,
+  Crown,
+  CalendarDays,
+  Stethoscope,
+  UtensilsCrossed,
+  Sparkles,
+  Home,
+  Car,
+  Monitor,
+  GraduationCap,
+  Scale,
+  Package,
+  Heart,
+  Plane
+} from "lucide-react";
 
 // Import portfolio images for preview
 import brandingImg from "@/assets/portfolio/klagem.png";
@@ -11,12 +48,19 @@ import marketingImg from "@/assets/portfolio/fabryka-virali.png";
 import graphicImg from "@/assets/portfolio/verthe.png";
 import branzeImg from "@/assets/portfolio/fps-cegielski.png";
 
+interface MenuItem {
+  name: string;
+  href: string;
+  badge?: string;
+  icon: React.ComponentType<{ className?: string }>;
+}
+
 interface MenuCategory {
   title: string;
   description: string;
   image: string;
   color: string;
-  items: { name: string; href: string; badge?: string }[];
+  items: MenuItem[];
 }
 
 const menuCategories: MenuCategory[] = [
@@ -26,12 +70,12 @@ const menuCategories: MenuCategory[] = [
     image: marketingImg,
     color: "#75143F",
     items: [
-      { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" },
-      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
-      { name: "Content Marketing", href: "/content-marketing", badge: "Nowe" },
-      { name: "Social Media", href: "/social-media" },
-      { name: "Facebook Ads", href: "/facebook-ads" },
-      { name: "Google Ads", href: "/google-ads" },
+      { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers },
+      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone },
+      { name: "Content Marketing", href: "/content-marketing", badge: "Nowe", icon: PenTool },
+      { name: "Social Media", href: "/social-media", icon: Share2 },
+      { name: "Facebook Ads", href: "/facebook-ads", icon: Facebook },
+      { name: "Google Ads", href: "/google-ads", icon: Target },
     ],
   },
   {
@@ -40,10 +84,10 @@ const menuCategories: MenuCategory[] = [
     image: websiteImg,
     color: "#0F3053",
     items: [
-      { name: "Strony Internetowe", href: "/strony-internetowe" },
-      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu" },
-      { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
-      { name: "Google Maps", href: "/pozycjonowanie-google-maps" },
+      { name: "Strony Internetowe", href: "/strony-internetowe", icon: Globe },
+      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu", icon: ShoppingCart },
+      { name: "Pozycjonowanie SEO", href: "/pozycjonowanie", icon: Search },
+      { name: "Google Maps", href: "/pozycjonowanie-google-maps", icon: MapPin },
     ],
   },
   {
@@ -52,10 +96,10 @@ const menuCategories: MenuCategory[] = [
     image: videoImg,
     color: "#422249",
     items: [
-      { name: "Produkcja Filmów", href: "/produkcja-filmow-poznan" },
-      { name: "Spoty Reklamowe", href: "/spoty-reklamowe" },
-      { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
-      { name: "Fotografia", href: "/fotograf-poznan" },
+      { name: "Produkcja Filmów", href: "/produkcja-filmow-poznan", icon: Film },
+      { name: "Spoty Reklamowe", href: "/spoty-reklamowe", icon: Clapperboard },
+      { name: "Wizualizacje 3D", href: "/wizualizacje-3d", icon: Box },
+      { name: "Fotografia", href: "/fotograf-poznan", icon: Camera },
     ],
   },
   {
@@ -64,8 +108,8 @@ const menuCategories: MenuCategory[] = [
     image: brandingImg,
     color: "#75143F",
     items: [
-      { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
-      { name: "Obsługa graficzna", href: "/agencja-graficzna" },
+      { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", icon: Fingerprint },
+      { name: "Obsługa graficzna", href: "/agencja-graficzna", icon: Brush },
     ],
   },
   {
@@ -74,10 +118,10 @@ const menuCategories: MenuCategory[] = [
     image: graphicImg,
     color: "#2D4A3E",
     items: [
-      { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
-      { name: "E-commerce", href: "/dla-kogo/ecommerce" },
-      { name: "Marki premium", href: "/dla-kogo/marki-premium" },
-      { name: "Instytucje i eventy", href: "/dla-kogo/instytucje" },
+      { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne", icon: Store },
+      { name: "E-commerce", href: "/dla-kogo/ecommerce", icon: ShoppingBag },
+      { name: "Marki premium", href: "/dla-kogo/marki-premium", icon: Crown },
+      { name: "Instytucje i eventy", href: "/dla-kogo/instytucje", icon: CalendarDays },
     ],
   },
   {
@@ -86,18 +130,18 @@ const menuCategories: MenuCategory[] = [
     image: branzeImg,
     color: "#1A365D",
     items: [
-      { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna" },
-      { name: "Gastronomia", href: "/dla-kogo/gastronomia" },
-      { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness" },
-      { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci" },
-      { name: "Automotive", href: "/dla-kogo/automotive" },
-      { name: "IT & SaaS", href: "/dla-kogo/it-saas" },
-      { name: "Edukacja", href: "/dla-kogo/edukacja" },
-      { name: "Prawo & Finanse", href: "/dla-kogo/prawo-finanse" },
-      { name: "E-commerce & Retail", href: "/dla-kogo/ecommerce-retail" },
-      { name: "Produkcja", href: "/dla-kogo/produkcja" },
-      { name: "NGO & Fundacje", href: "/dla-kogo/ngo" },
-      { name: "Turystyka", href: "/dla-kogo/turystyka" },
+      { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna", icon: Stethoscope },
+      { name: "Gastronomia", href: "/dla-kogo/gastronomia", icon: UtensilsCrossed },
+      { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness", icon: Sparkles },
+      { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci", icon: Home },
+      { name: "Automotive", href: "/dla-kogo/automotive", icon: Car },
+      { name: "IT & SaaS", href: "/dla-kogo/it-saas", icon: Monitor },
+      { name: "Edukacja", href: "/dla-kogo/edukacja", icon: GraduationCap },
+      { name: "Prawo & Finanse", href: "/dla-kogo/prawo-finanse", icon: Scale },
+      { name: "E-commerce & Retail", href: "/dla-kogo/ecommerce-retail", icon: ShoppingCart },
+      { name: "Produkcja", href: "/dla-kogo/produkcja", icon: Package },
+      { name: "NGO & Fundacje", href: "/dla-kogo/ngo", icon: Heart },
+      { name: "Turystyka", href: "/dla-kogo/turystyka", icon: Plane },
     ],
   },
 ];
@@ -252,7 +296,10 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         <motion.div
                           key={category.title}
                           onMouseEnter={() => setHoveredCategory(categoryIndex)}
-                          className="space-y-3"
+                          className={cn(
+                            "space-y-3 relative",
+                            categoryIndex < 3 && "md:border-r md:border-border/30 md:pr-6"
+                          )}
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: categoryIndex * 0.05 + 0.1 }}
@@ -280,46 +327,111 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             {category.title}
                           </h4>
                           <ul className="space-y-2">
-                            {category.items.map((item, itemIndex) => (
-                              <motion.li 
-                                key={item.href}
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
-                              >
-                                <Link
-                                  to={item.href}
-                                  onClick={onClose}
-                                  className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
+                            {category.items.map((item, itemIndex) => {
+                              const Icon = item.icon;
+                              return (
+                                <motion.li 
+                                  key={item.href}
+                                  initial={{ opacity: 0, x: -10 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
                                 >
-                                  {item.name}
-                                  {item.badge && (
-                                    <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
-                                      {item.badge}
-                                    </span>
-                                  )}
-                                </Link>
-                              </motion.li>
-                            ))}
+                                  <Link
+                                    to={item.href}
+                                    onClick={onClose}
+                                    className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
+                                  >
+                                    <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
+                                    {item.name}
+                                    {item.badge && (
+                                      <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
+                                        {item.badge}
+                                      </span>
+                                    )}
+                                  </Link>
+                                </motion.li>
+                              );
+                            })}
                           </ul>
                         </motion.div>
                       ))}
                     </div>
 
                     {/* Dla kogo + Branże row */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-border/50">
-                      {menuCategories.slice(4).map((category, idx) => {
-                        const categoryIndex = idx + 4;
-                        const isBranze = category.title === "Branże";
-                        const halfLength = isBranze ? Math.ceil(category.items.length / 2) : category.items.length;
-                        const firstColumnItems = isBranze ? category.items.slice(0, halfLength) : category.items;
-                        const secondColumnItems = isBranze ? category.items.slice(halfLength) : [];
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 border-t border-border/50">
+                      {/* Dla kogo */}
+                      {(() => {
+                        const category = menuCategories[4];
+                        const categoryIndex = 4;
+                        return (
+                          <motion.div
+                            key={category.title}
+                            onMouseEnter={() => setHoveredCategory(categoryIndex)}
+                            className="space-y-3 md:border-r md:border-border/30 md:pr-6"
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: categoryIndex * 0.05 + 0.1 }}
+                          >
+                            <h4 
+                              className={cn(
+                                "text-sm font-semibold transition-all duration-300 flex items-center gap-2",
+                                hoveredCategory === categoryIndex 
+                                  ? "text-foreground translate-x-1" 
+                                  : "text-muted-foreground"
+                              )}
+                              style={{ 
+                                color: hoveredCategory === categoryIndex ? category.color : undefined 
+                              }}
+                            >
+                              <motion.span
+                                className="w-1.5 h-1.5 rounded-full"
+                                style={{ backgroundColor: category.color }}
+                                animate={{ 
+                                  scale: hoveredCategory === categoryIndex ? 1 : 0,
+                                  opacity: hoveredCategory === categoryIndex ? 1 : 0
+                                }}
+                                transition={{ duration: 0.2 }}
+                              />
+                              {category.title}
+                            </h4>
+                            <ul className="space-y-2">
+                              {category.items.map((item, itemIndex) => {
+                                const Icon = item.icon;
+                                return (
+                                  <motion.li 
+                                    key={item.href}
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
+                                  >
+                                    <Link
+                                      to={item.href}
+                                      onClick={onClose}
+                                      className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
+                                    >
+                                      <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
+                                      {item.name}
+                                    </Link>
+                                  </motion.li>
+                                );
+                              })}
+                            </ul>
+                          </motion.div>
+                        );
+                      })()}
+
+                      {/* Branże - 2 columns */}
+                      {(() => {
+                        const category = menuCategories[5];
+                        const categoryIndex = 5;
+                        const column1 = category.items.slice(0, 6);
+                        const column2 = category.items.slice(6);
 
                         return (
                           <motion.div
                             key={category.title}
                             onMouseEnter={() => setHoveredCategory(categoryIndex)}
-                            className={cn("space-y-3", isBranze && "md:col-span-3")}
+                            className="space-y-3 md:col-span-2"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: categoryIndex * 0.05 + 0.1 }}
@@ -347,10 +459,11 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                               {category.title}
                             </h4>
                             
-                            {isBranze ? (
-                              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4">
-                                <ul className="space-y-2">
-                                  {firstColumnItems.slice(0, 4).map((item, itemIndex) => (
+                            <div className="grid grid-cols-2 gap-x-6">
+                              <ul className="space-y-2">
+                                {column1.map((item, itemIndex) => {
+                                  const Icon = item.icon;
+                                  return (
                                     <motion.li 
                                       key={item.href}
                                       initial={{ opacity: 0, x: -10 }}
@@ -360,73 +473,41 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                       <Link
                                         to={item.href}
                                         onClick={onClose}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
                                       >
+                                        <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
                                         {item.name}
                                       </Link>
                                     </motion.li>
-                                  ))}
-                                </ul>
-                                <ul className="space-y-2">
-                                  {firstColumnItems.slice(4).map((item, itemIndex) => (
-                                    <motion.li 
-                                      key={item.href}
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
-                                      transition={{ delay: categoryIndex * 0.05 + (itemIndex + 4) * 0.03 + 0.15 }}
-                                    >
-                                      <Link
-                                        to={item.href}
-                                        onClick={onClose}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
-                                      >
-                                        {item.name}
-                                      </Link>
-                                    </motion.li>
-                                  ))}
-                                </ul>
-                                <ul className="space-y-2">
-                                  {secondColumnItems.map((item, itemIndex) => (
-                                    <motion.li 
-                                      key={item.href}
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
-                                      transition={{ delay: categoryIndex * 0.05 + (itemIndex + halfLength) * 0.03 + 0.15 }}
-                                    >
-                                      <Link
-                                        to={item.href}
-                                        onClick={onClose}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
-                                      >
-                                        {item.name}
-                                      </Link>
-                                    </motion.li>
-                                  ))}
-                                </ul>
-                              </div>
-                            ) : (
-                              <ul className="space-y-2">
-                                {category.items.map((item, itemIndex) => (
-                                  <motion.li 
-                                    key={item.href}
-                                    initial={{ opacity: 0, x: -10 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
-                                  >
-                                    <Link
-                                      to={item.href}
-                                      onClick={onClose}
-                                      className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
-                                    >
-                                      {item.name}
-                                    </Link>
-                                  </motion.li>
-                                ))}
+                                  );
+                                })}
                               </ul>
-                            )}
+                              <ul className="space-y-2">
+                                {column2.map((item, itemIndex) => {
+                                  const Icon = item.icon;
+                                  return (
+                                    <motion.li 
+                                      key={item.href}
+                                      initial={{ opacity: 0, x: -10 }}
+                                      animate={{ opacity: 1, x: 0 }}
+                                      transition={{ delay: categoryIndex * 0.05 + (itemIndex + 6) * 0.03 + 0.15 }}
+                                    >
+                                      <Link
+                                        to={item.href}
+                                        onClick={onClose}
+                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
+                                      >
+                                        <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
+                                        {item.name}
+                                      </Link>
+                                    </motion.li>
+                                  );
+                                })}
+                              </ul>
+                            </div>
                           </motion.div>
                         );
-                      })}
+                      })()}
                     </div>
 
                     {/* Bottom CTA */}
