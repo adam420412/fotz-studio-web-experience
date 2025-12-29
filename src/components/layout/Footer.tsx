@@ -33,6 +33,20 @@ const footerLinks = {
     { name: "Marki premium", href: "/dla-kogo/marki-premium" },
     { name: "Instytucje i eventy", href: "/dla-kogo/instytucje" },
   ],
+  branze: [
+    { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna" },
+    { name: "Gastronomia", href: "/dla-kogo/gastronomia" },
+    { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness" },
+    { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci" },
+    { name: "Automotive", href: "/dla-kogo/automotive" },
+    { name: "Edukacja", href: "/dla-kogo/edukacja" },
+    { name: "Prawo & Finanse", href: "/dla-kogo/prawo-finanse" },
+    { name: "E-commerce & Retail", href: "/dla-kogo/ecommerce-retail" },
+    { name: "IT & SaaS", href: "/dla-kogo/it-saas" },
+    { name: "Produkcja", href: "/dla-kogo/produkcja" },
+    { name: "NGO & Fundacje", href: "/dla-kogo/ngo" },
+    { name: "Turystyka", href: "/dla-kogo/turystyka" },
+  ],
   firma: [
     { name: "O nas", href: "/o-nas" },
     { name: "Realizacje", href: "/realizacje" },
@@ -54,7 +68,7 @@ export function Footer() {
       {/* Main Footer */}
       <div className="section-padding py-10 md:py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12">
             {/* Brand Column */}
             <div className="col-span-2 md:col-span-2 lg:col-span-1">
               <Link
@@ -147,21 +161,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Realizacje</h4>
-              <ul className="space-y-2 md:space-y-3">
-                {footerLinks.realizacje.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-              
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4 mt-6">Dla kogo</h4>
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Dla kogo</h4>
               <ul className="space-y-2 md:space-y-3">
                 {footerLinks.dlaKogo.map((link) => (
                   <li key={link.name}>
@@ -176,7 +176,23 @@ export function Footer() {
               </ul>
             </div>
 
-            <div className="col-span-2 md:col-span-1">
+            <div>
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Branże</h4>
+              <ul className="space-y-2 md:space-y-3">
+                {footerLinks.branze.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Firma</h4>
               <ul className="space-y-2 md:space-y-3">
                 {footerLinks.firma.map((link) => (

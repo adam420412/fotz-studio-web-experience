@@ -42,6 +42,14 @@ import MarketingMedyczny from "./pages/branze/MarketingMedyczny";
 import MarketingGastronomia from "./pages/branze/MarketingGastronomia";
 import MarketingBeauty from "./pages/branze/MarketingBeauty";
 import MarketingNieruchomosci from "./pages/branze/MarketingNieruchomosci";
+import MarketingAutomotive from "./pages/branze/MarketingAutomotive";
+import MarketingEdukacja from "./pages/branze/MarketingEdukacja";
+import MarketingPrawoFinanse from "./pages/branze/MarketingPrawoFinanse";
+import MarketingEcommerceRetail from "./pages/branze/MarketingEcommerceRetail";
+import MarketingIT from "./pages/branze/MarketingIT";
+import MarketingProdukcja from "./pages/branze/MarketingProdukcja";
+import MarketingNGO from "./pages/branze/MarketingNGO";
+import MarketingTurystyka from "./pages/branze/MarketingTurystyka";
 import AkademiaLanding from "./pages/AkademiaLanding";
 import AkademiaAuth from "./pages/AkademiaAuth";
 import Akademia from "./pages/Akademia";
@@ -126,6 +134,14 @@ const App = () => (
             <Route path="/dla-kogo/gastronomia" element={<MarketingGastronomia />} />
             <Route path="/dla-kogo/beauty-wellness" element={<MarketingBeauty />} />
             <Route path="/dla-kogo/nieruchomosci" element={<MarketingNieruchomosci />} />
+            <Route path="/dla-kogo/automotive" element={<MarketingAutomotive />} />
+            <Route path="/dla-kogo/edukacja" element={<MarketingEdukacja />} />
+            <Route path="/dla-kogo/prawo-finanse" element={<MarketingPrawoFinanse />} />
+            <Route path="/dla-kogo/ecommerce-retail" element={<MarketingEcommerceRetail />} />
+            <Route path="/dla-kogo/it-saas" element={<MarketingIT />} />
+            <Route path="/dla-kogo/produkcja" element={<MarketingProdukcja />} />
+            <Route path="/dla-kogo/ngo" element={<MarketingNGO />} />
+            <Route path="/dla-kogo/turystyka" element={<MarketingTurystyka />} />
             <Route path="/akademia" element={<AkademiaLanding />} />
             <Route path="/akademia/auth" element={<AkademiaAuth />} />
             <Route path="/akademia/panel" element={<Akademia />} />

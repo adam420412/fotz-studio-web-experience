@@ -233,8 +233,7 @@ const MarketingEcommerceRetail = () => {
             >
               <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-muted to-muted/50 border border-border/30">
                 <ModelViewer3D 
-                  modelPath="/models/regulator-3d.glb"
-                  className="w-full h-full"
+                  modelUrl="/models/regulator-3d.glb"
                 />
               </div>
               <p className="text-center text-foreground/60 text-sm mt-4">
