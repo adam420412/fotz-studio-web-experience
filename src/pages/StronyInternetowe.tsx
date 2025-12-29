@@ -1014,6 +1014,63 @@ const StronyInternetowe = () => {
                   </p>
                 </div>
               </FadeInView>
+
+              {/* Sekcja powiązanych usług */}
+              <FadeInView delay={0.6}>
+                <div className="mt-16 p-8 rounded-2xl bg-card border border-border">
+                  <h3 className="text-2xl font-heading font-bold mb-6 text-center">Powiązane usługi</h3>
+                  <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                    Strona internetowa to dopiero początek. Uzupełnij ją o dodatkowe usługi, które zwiększą Twój sukces online.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <Link 
+                      to="/ecommerce-tworzenie-sklepu" 
+                      className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
+                    >
+                      <ShoppingCart className="w-10 h-10 text-primary mb-4" />
+                      <h4 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                        E-commerce & Sklepy
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Rozbudowane sklepy internetowe z integracją płatności i kurierów.
+                      </p>
+                      <span className="inline-flex items-center gap-1 text-primary text-sm mt-4 group-hover:gap-2 transition-all">
+                        Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                    <Link 
+                      to="/pozycjonowanie" 
+                      className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
+                    >
+                      <Search className="w-10 h-10 text-primary mb-4" />
+                      <h4 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                        Pozycjonowanie SEO
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Zwiększ widoczność strony w Google i zdobywaj organiczny ruch.
+                      </p>
+                      <span className="inline-flex items-center gap-1 text-primary text-sm mt-4 group-hover:gap-2 transition-all">
+                        Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                    <Link 
+                      to="/google-ads" 
+                      className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
+                    >
+                      <Target className="w-10 h-10 text-primary mb-4" />
+                      <h4 className="font-heading font-bold mb-2 group-hover:text-primary transition-colors">
+                        Google Ads
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Natychmiastowy ruch i konwersje dzięki kampaniom reklamowym.
+                      </p>
+                      <span className="inline-flex items-center gap-1 text-primary text-sm mt-4 group-hover:gap-2 transition-all">
+                        Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </FadeInView>
             </div>
           </div>
         </section>

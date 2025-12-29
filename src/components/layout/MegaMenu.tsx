@@ -34,11 +34,12 @@ const menuCategories: MenuCategory[] = [
   },
   {
     title: "Strony & SEO",
-    description: "Strony internetowe i pozycjonowanie w wyszukiwarkach",
+    description: "Strony internetowe, e-commerce i pozycjonowanie w wyszukiwarkach",
     image: websiteImg,
     color: "#0F3053",
     items: [
       { name: "Strony Internetowe", href: "/strony-internetowe" },
+      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu", badge: "Nowe" },
       { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
       { name: "Google Maps", href: "/pozycjonowanie-google-maps" },
     ],

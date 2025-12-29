@@ -6,6 +6,7 @@ const footerLinks = {
   uslugi: [
     { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
     { name: "Strony internetowe", href: "/strony-internetowe" },
+    { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu" },
     { name: "Social Media", href: "/social-media" },
     { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
     { name: "Google Ads", href: "/google-ads" },
