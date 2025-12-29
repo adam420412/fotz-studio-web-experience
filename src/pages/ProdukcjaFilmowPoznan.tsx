@@ -1,12 +1,13 @@
 import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Film, Play, Video, Camera, Clapperboard, Sparkles, Phone, ArrowRight, CheckCircle2, Rocket, Star, Award, Clock, Users } from "lucide-react";
+import { Film, Play, Video, Camera, Clapperboard, Sparkles, Phone, ArrowRight, CheckCircle2, Rocket, Star, Award, Clock, Users, Target, TrendingUp, Palette, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import {
   Accordion,
   AccordionContent,
@@ -24,10 +25,10 @@ const videos = [
 ];
 
 const services = [
-  { icon: Clapperboard, title: "Spoty reklamowe", desc: "Krótkie, dynamiczne materiały idealne do kampanii w social mediach i TV." },
-  { icon: Film, title: "Filmy korporacyjne", desc: "Prezentują firmę, jej wartości, misję oraz kulturę organizacyjną." },
-  { icon: Video, title: "Filmy produktowe", desc: "Skupiają się na prezentacji produktów lub usług, podkreślając ich zalety." },
-  { icon: Camera, title: "Filmy wizerunkowe", desc: "Budują i promują markę, tworzą pozytywny obraz w oczach klientów." },
+  { icon: Clapperboard, title: "Spoty reklamowe", desc: "Krótkie, dynamiczne materiały idealne do kampanii w social mediach i TV.", link: "/spoty-reklamowe" },
+  { icon: Film, title: "Filmy korporacyjne", desc: "Prezentują firmę, jej wartości, misję oraz kulturę organizacyjną.", link: "/kontakt" },
+  { icon: Video, title: "Filmy produktowe", desc: "Skupiają się na prezentacji produktów lub usług, podkreślając ich zalety.", link: "/kontakt" },
+  { icon: Camera, title: "Filmy wizerunkowe", desc: "Budują i promują markę, tworzą pozytywny obraz w oczach klientów.", link: "/kontakt" },
 ];
 
 const whyUs = [
@@ -64,12 +65,16 @@ const faqItems = [
     a: "Produkcja spotów reklamowych w Poznaniu to skuteczne narzędzie marketingowe, które pozwala na efektywną promocję swojej marki. Dzięki profesjonalnym filmom możesz dotrzeć do szerszej grupy odbiorców i budować pozytywne skojarzenia z Twoją firmą."
   },
   {
+    q: "Co powinienem wiedzieć o filmach promocyjnych dla firm w Poznaniu?",
+    a: "Filmy promocyjne dla firm w Poznaniu są doskonałym sposobem na przedstawienie oferty w najlepszym świetle. Dzięki naszemu profesjonalizmowi i doświadczeniu w produkcji filmowej możesz skutecznie zaprezentować swoją markę i przyciągnąć nowych klientów."
+  },
+  {
     q: "Jakie są etapy produkcji filmów reklamowych?",
     a: "Proces produkcji filmów reklamowych obejmuje: koncepcję i scenariusz, pre-produkcję (planowanie, casting, lokacje), nagrania, postprodukcję (montaż, korekcja barw, dźwięk) oraz finalizację i dostawę materiałów."
   },
   {
     q: "Jak długo trwa produkcja filmów reklamowych?",
-    a: "Czas produkcji zależy od skomplikowania projektu. Proste spoty reklamowe realizujemy w 2-3 tygodnie. Rozbudowane produkcje mogą trwać od 4 do 8 tygodni."
+    a: "Czas produkcji zależy od skomplikowania projektu. Proste spoty reklamowe realizujemy w 2-3 tygodnie. Rozbudowane produkcje mogą trwać od 4 do 8 tygodni, szczególnie gdy mówimy o ważnych wydarzeniach."
   },
   {
     q: "Jakie rodzaje filmów reklamowych można zrealizować?",
@@ -81,8 +86,22 @@ const faqItems = [
   },
   {
     q: "Czym różni się film wizerunkowy od produktowego?",
-    a: "Film wizerunkowy koncentruje się na budowaniu i promowaniu marki. Film produktowy skupia się na prezentacji konkretnych produktów lub usług, podkreślając ich zalety i unikalne cechy."
+    a: "Film wizerunkowy koncentruje się na budowaniu i promowaniu marki, a jego celem jest stworzenie pozytywnego obrazu w oczach konsumentów. Z kolei film produktowy skupia się na prezentacji konkretnych produktów lub usług, podkreślając ich zalety i unikalne cechy."
   },
+  {
+    q: "Czy studio filmowe w Poznaniu specjalizuje się w video marketingu?",
+    a: "Tak, nasze studio filmowe w Poznaniu specjalizuje się w video marketingu. Dzięki temu możemy zaoferować kreatywne rozwiązania, które pomogą w efektywnej promocji Twojej marki poprzez filmy korporacyjne i reklamowe."
+  },
+  {
+    q: "Jakie elementy są ważne przy tworzeniu filmów promocyjnych?",
+    a: "Przy tworzeniu filmów promocyjnych ważne jest, aby skupić się na koncepcji, scenariuszu, jakości obrazu i dźwięku, a także na efektywnej narracji. Dzięki tym elementom film stanie się skutecznym narzędziem marketingowym."
+  },
+];
+
+const breadcrumbItems = [
+  { name: "Strona główna", url: "https://fotz.pl" },
+  { name: "Usługi", url: "https://fotz.pl/uslugi" },
+  { name: "Produkcja filmów reklamowych Poznań", url: "https://fotz.pl/produkcja-filmow-poznan" }
 ];
 
 export default function ProdukcjaFilmowPoznan() {
@@ -90,8 +109,25 @@ export default function ProdukcjaFilmowPoznan() {
     <Layout>
       <Helmet>
         <title>Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz</title>
-        <meta name="description" content="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing. Studio filmowe Fotz." />
+        <meta name="description" content="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing. Studio filmowe Fotz z wieloletnim doświadczeniem." />
+        <meta name="keywords" content="produkcja filmów reklamowych poznań, studio filmowe poznań, spoty reklamowe, filmy promocyjne, video marketing, film korporacyjny, film produktowy" />
+        <link rel="canonical" href="https://fotz.pl/produkcja-filmow-poznan" />
+        <meta property="og:title" content="Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz" />
+        <meta property="og:description" content="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing." />
+        <meta property="og:url" content="https://fotz.pl/produkcja-filmow-poznan" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz" />
+        <meta name="twitter:description" content="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing." />
       </Helmet>
+
+      <OrganizationSchema />
+      <ServiceSchema 
+        name="Produkcja Filmów Reklamowych Poznań"
+        description="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing."
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <FAQSchema items={faqItems.map(item => ({ question: item.q, answer: item.a }))} />
 
       <main className="bg-background min-h-screen">
         {/* Hero Section */}
@@ -121,12 +157,12 @@ export default function ProdukcjaFilmowPoznan() {
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-6 sm:mb-8 leading-tight px-2 sm:px-0">
                 <TextReveal>
-                  Produkcja Filmów <span className="text-gradient">Reklamowych</span> w Poznaniu
+                  Produkcja Filmów <span className="text-gradient">Reklamowych i Promocyjnych</span> w Poznaniu
                 </TextReveal>
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                Tworzymy filmy, które <span className="text-foreground font-medium">sprzedają i budują markę</span>. Spoty reklamowe, filmy korporacyjne, video marketing. Od koncepcji do gotowego materiału.
+                Produkcja filmów reklamowych i promocyjnych w Poznaniu stała się kluczowym elementem strategii marketingowych wielu firm. Tworzymy filmy, które <span className="text-foreground font-medium">sprzedają i budują markę</span>.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
@@ -148,8 +184,98 @@ export default function ProdukcjaFilmowPoznan() {
           </div>
         </section>
 
-        {/* Services Section */}
+        {/* Intro Section */}
+        <section className="py-16 sm:py-20 md:py-24 border-t border-border/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <div className="prose prose-lg prose-invert max-w-none">
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                    W dobie dynamicznie rozwijającego się rynku, skuteczna <strong>reklama wideo</strong> staje się nie tylko sposobem na promocję produktów, ale również na budowanie wizerunku marki. 
+                    W tym artykule przyjrzymy się etapom produkcji filmów reklamowych, skutecznym praktykom w <Link to="/social-media" className="text-primary hover:underline">video marketingu</Link>, a także aktualnym trendom w tej dziedzinie.
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* Production Process Section */}
         <section className="py-24 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Clapperboard className="w-4 h-4" />
+                  Proces produkcji
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Produkcja filmów <span className="text-gradient">reklamowych Poznań</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Produkcja filmów reklamowych w Poznaniu obejmuje kilka kluczowych etapów, od koncepcji po gotowy materiał.
+                </p>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <FadeInView delay={0.1}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Target className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Etap 1: Definicja celu</h3>
+                  <p className="text-muted-foreground">
+                    Na początku konieczne jest zdefiniowanie celu kampanii reklamowej, co pozwala na skuteczne zaplanowanie realizacji. 
+                    Przeprowadzamy szczegółowy research dotyczący grupy docelowej oraz analizę konkurencji.
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.2}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Film className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Etap 2: Scenariusz</h3>
+                  <p className="text-muted-foreground">
+                    Projektujemy scenariusz, który odpowiada na potrzeby i oczekiwania widzów. 
+                    Po zaakceptowaniu scenariusza następuje casting aktorów oraz przygotowanie lokacji do nagrań.
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.3}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Camera className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Kluczowe elementy skutecznej produkcji</h3>
+                  <p className="text-muted-foreground">
+                    Jakość obrazu oraz dźwięku mają ogromny wpływ na odbiór reklamy przez widzów. 
+                    Użycie profesjonalnego sprzętu, takiego jak kamery 4K i mikrofony, jest niezbędne do uzyskania wysokiej jakości wideo.
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.4}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Clock className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Jak długo trwa produkcja?</h3>
+                  <p className="text-muted-foreground">
+                    W przypadku prostych <Link to="/spoty-reklamowe" className="text-primary hover:underline">spotów reklamowych</Link>, produkcja może zająć od kilku dni do tygodnia. 
+                    Bardziej złożone produkcje mogą trwać nawet kilka miesięcy.
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -169,15 +295,71 @@ export default function ProdukcjaFilmowPoznan() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full group">
-                    <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                      <service.icon className="w-7 h-7 text-primary" />
+                  <Link to={service.link} className="block h-full">
+                    <div className="p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full group">
+                      <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                        <service.icon className="w-7 h-7 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
+                      <p className="text-sm text-muted-foreground">{service.desc}</p>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.desc}</p>
-                  </div>
+                  </Link>
                 </FadeInView>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Video Marketing Section */}
+        <section className="py-24 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <TrendingUp className="w-4 h-4" />
+                  Video Marketing
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Jak stworzyć efektywny <span className="text-gradient">film promocyjny?</span>
+                </h2>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <FadeInView delay={0.1}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <h3 className="text-xl font-semibold mb-4">Najlepsze praktyki w video marketingu</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Skuteczny film promocyjny powinien być dopasowany do strategii marketingowej firmy. 
+                    Ważne jest, aby film był krótki, treściwy i angażował widzów poprzez storytelling.
+                  </p>
+                  <p className="text-muted-foreground">
+                    Wykorzystanie <Link to="/social-media-poznan" className="text-primary hover:underline">mediów społecznościowych</Link> do promocji filmów stało się nieodzownym elementem strategii marketingowych.
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.2}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <h3 className="text-xl font-semibold mb-4">Narzędzia do produkcji</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Korzystamy z profesjonalnych programów do montażu wideo, takich jak Adobe Premiere Pro i DaVinci Resolve.
+                  </p>
+                  <p className="text-muted-foreground">
+                    Wzbogacamy materiały o <Link to="/wizualizacje-3d" className="text-primary hover:underline">animacje 2D i 3D</Link>, które znacząco podnoszą atrakcyjność przekazu reklamowego.
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.3}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <h3 className="text-xl font-semibold mb-4">Styl dopasowany do kampanii</h3>
+                  <p className="text-muted-foreground">
+                    W zależności od celu kampanii, film może przyjąć formę humorystyczną, emocjonalną lub informacyjną. 
+                    Dobrze zaprojektowany film wizerunkowy może stać się ważnym elementem <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">budowania tożsamości marki</Link>.
+                  </p>
+                </div>
+              </FadeInView>
             </div>
           </div>
         </section>
@@ -233,8 +415,66 @@ export default function ProdukcjaFilmowPoznan() {
           </div>
         </section>
 
-        {/* Why Us Section */}
+        {/* Trends Section */}
         <section className="py-24 bg-card/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium uppercase tracking-wider mb-4">
+                  <Sparkles className="w-4 h-4" />
+                  Trendy 2024
+                </span>
+                <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
+                  Trendy w produkcji <span className="text-gradient">filmów reklamowych</span>
+                </h2>
+              </div>
+            </FadeInView>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              <FadeInView delay={0.1}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Palette className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Nowoczesne techniki animacji</h3>
+                  <p className="text-muted-foreground">
+                    Animacja 2D i 3D zyskują na popularności, umożliwiając tworzenie dynamicznych i angażujących filmów. 
+                    Coraz powszechniejsze stają się też techniki AR (rozszerzonej rzeczywistości).
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.2}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Share2 className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Wideo w mediach społecznościowych</h3>
+                  <p className="text-muted-foreground">
+                    Platformy takie jak Instagram czy TikTok preferują krótkie, angażujące treści wideo. 
+                    Skuteczna produkcja wymaga zrozumienia specyfiki każdej platformy.
+                  </p>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.3}>
+                <div className="p-6 rounded-2xl bg-background border border-border/50 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <Video className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-3">Nowe narzędzia produkcji</h3>
+                  <p className="text-muted-foreground">
+                    Oprogramowanie jak DaVinci Resolve oferuje zaawansowane funkcje montażu i kolorowania. 
+                    Narzędzia do automatyzacji umożliwiają szybsze zarządzanie projektami.
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Us Section */}
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -243,15 +483,18 @@ export default function ProdukcjaFilmowPoznan() {
                   Wyróżniki
                 </span>
                 <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Dlaczego warto <span className="text-gradient">wybrać Fotz Studio?</span>
+                  Korzyści współpracy z <span className="text-gradient">profesjonalnym studiem</span>
                 </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Współpraca z profesjonalnym studiem filmowym przynosi szereg korzyści - doświadczenie, nowoczesny sprzęt i znajomość aktualnych trendów.
+                </p>
               </div>
             </FadeInView>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {whyUs.map((item, index) => (
                 <FadeInView key={index} delay={index * 0.1}>
-                  <div className="p-6 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full text-center group">
+                  <div className="p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all h-full text-center group">
                     <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                       <item.icon className="w-7 h-7 text-primary" />
                     </div>
@@ -265,7 +508,7 @@ export default function ProdukcjaFilmowPoznan() {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-24">
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -312,7 +555,7 @@ export default function ProdukcjaFilmowPoznan() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-card/30">
+        <section className="py-24">
           <div className="container mx-auto px-4">
             <FadeInView>
               <div className="text-center mb-16">
@@ -331,7 +574,7 @@ export default function ProdukcjaFilmowPoznan() {
                   <AccordionItem 
                     key={index} 
                     value={`item-${index}`}
-                    className="bg-background rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
+                    className="bg-card rounded-xl border border-border/50 px-6 data-[state=open]:border-primary/30"
                   >
                     <AccordionTrigger className="text-left hover:no-underline py-5">
                       <span className="font-medium">{item.q}</span>
@@ -346,145 +589,63 @@ export default function ProdukcjaFilmowPoznan() {
           </div>
         </section>
 
-        {/* Section: Baza wiedzy */}
-        <section className="py-16 sm:py-20 md:py-24 border-t border-border/30 overflow-hidden">
+        {/* Related Services Section */}
+        <section className="py-16 bg-card/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <FadeInView>
-                <div className="text-center mb-10 sm:mb-12 md:mb-16">
-                  <span className="inline-flex items-center gap-2 text-primary text-xs sm:text-sm font-medium uppercase tracking-wider mb-3 sm:mb-4">
-                    📚 Baza wiedzy
-                  </span>
-                  <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
-                    Wszystko o <span className="text-gradient">produkcji filmowej</span>
-                  </h2>
-                </div>
-              </FadeInView>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-16">
-                <FadeInView delay={0.1}>
-                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Video className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
-                      </div>
-                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Pre-produkcja</h3>
-                    </div>
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      Dobry film zaczyna się od solidnego planu. <strong className="text-foreground">Scenariusz, storyboard, brief</strong> – 
-                      wszystko ustalamy przed wejściem na plan, by uniknąć niespodzianek.
-                    </p>
-                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Brief i konsultacje kreatywne</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Scenariusz i storyboard</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Planowanie logistyki zdjęć</li>
-                    </ul>
-                  </div>
-                </FadeInView>
-
-                <FadeInView delay={0.2}>
-                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-secondary/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Camera className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
-                      </div>
-                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Realizacja zdjęć</h3>
-                    </div>
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      <strong className="text-foreground">Profesjonalny sprzęt</strong> – kamery 4K/6K, stabilizatory, 
-                      drony, oświetlenie studyjne. Ekipa z doświadczeniem w produkcjach komercyjnych.
-                    </p>
-                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Kamery Sony, Blackmagic, RED</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Ujęcia z drona (licencja UAVO)</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Własne studio w Poznaniu</li>
-                    </ul>
-                  </div>
-                </FadeInView>
-
-                <FadeInView delay={0.3}>
-                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-green-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Clapperboard className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
-                      </div>
-                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Post-produkcja</h3>
-                    </div>
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      To tutaj dzieje się magia. <strong className="text-foreground">Montaż, color grading, efekty VFX</strong>, 
-                      sound design – dopracowujemy każdy detal do perfekcji.
-                    </p>
-                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Montaż w DaVinci Resolve / Premiere</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Profesjonalna korekcja kolorów</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Motion graphics i animacje</li>
-                    </ul>
-                  </div>
-                </FadeInView>
-
-                <FadeInView delay={0.4}>
-                  <div className="group p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500/5 via-card to-card border border-border/50 hover:border-primary/30 transition-all duration-500">
-                    <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                      <div className="w-10 h-10 sm:w-12 md:w-14 sm:h-12 md:h-14 rounded-lg sm:rounded-xl bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <Play className="w-5 h-5 sm:w-6 md:w-7 sm:h-6 md:h-7 text-primary" />
-                      </div>
-                      <h3 className="text-base sm:text-lg md:text-xl font-heading font-bold">Formaty i dystrybucja</h3>
-                    </div>
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6">
-                      Jeden film, wiele formatów. Przygotowujemy wersje na <strong className="text-foreground">YouTube, social media, 
-                      ekrany LED</strong> i eventy – każdy format zoptymalizowany.
-                    </p>
-                    <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Wersje 16:9, 9:16, 1:1</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Formaty web-ready (H.264, ProRes)</li>
-                      <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary flex-shrink-0" /> Napisy i wersje językowe</li>
-                    </ul>
-                  </div>
-                </FadeInView>
+            <FadeInView>
+              <div className="text-center mb-12">
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Powiązane <span className="text-gradient">usługi</span>
+                </h2>
               </div>
+            </FadeInView>
 
-              <FadeInView delay={0.5}>
-                <div className="relative p-5 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl md:rounded-3xl bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 border border-primary/20">
-                  <div className="absolute top-4 sm:top-6 left-4 sm:left-8 text-4xl sm:text-5xl md:text-6xl text-primary/30 font-serif">"</div>
-                  <blockquote className="text-base sm:text-lg md:text-xl lg:text-2xl font-medium text-center max-w-3xl mx-auto pt-4 sm:pt-6 pb-2 sm:pb-4 px-4">
-                    <span className="text-foreground">Film to najskuteczniejszy sposób na opowiedzenie historii marki. Jeden obraz jest wart tysiąca słów – a 24 klatki na sekundę?</span>
-                  </blockquote>
-                  <p className="text-center text-sm sm:text-base text-muted-foreground">
-                    — Zespół Fotz Studio
-                  </p>
-                </div>
-              </FadeInView>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              {[
+                { name: "Spoty reklamowe", href: "/spoty-reklamowe" },
+                { name: "Social Media", href: "/social-media-poznan" },
+                { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
+                { name: "Fotografia", href: "/fotograf-poznan" },
+                { name: "Strony internetowe", href: "/strony-internetowe-poznan" },
+                { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
+                { name: "Google Ads", href: "/google-ads" },
+                { name: "Facebook Ads", href: "/facebook-ads" },
+              ].map((service, index) => (
+                <FadeInView key={index} delay={index * 0.05}>
+                  <Link 
+                    to={service.href}
+                    className="p-4 rounded-xl bg-background border border-border/50 hover:border-primary/30 transition-all text-center group"
+                  >
+                    <span className="text-sm font-medium group-hover:text-primary transition-colors">{service.name}</span>
+                  </Link>
+                </FadeInView>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-1/4 right-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/30 rounded-full blur-[100px] sm:blur-[150px]" />
-          </div>
-          
-          <div className="container mx-auto px-4 relative z-10">
+        {/* Final CTA Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
             <FadeInView>
               <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold mb-4 sm:mb-6 px-2">
+                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
                   Gotowy na <span className="text-gradient">profesjonalny film?</span>
                 </h2>
-                <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
-                  Porozmawiajmy o Twoim projekcie. Bezpłatna konsultacja, konkretna wycena, jasny plan realizacji.
+                <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                  Skontaktuj się z nami, aby omówić Twój projekt. Bezpłatna konsultacja i wycena.
                 </p>
-                
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
-                  <Button asChild size="lg" className="group text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button asChild size="lg" className="group">
                     <Link to="/kontakt">
-                      <Rocket className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                      <Rocket className="mr-2 h-5 w-5" />
                       Bezpłatna wycena
-                      <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
+                  <Button asChild variant="outline" size="lg">
                     <a href="tel:+48790814814">
-                      <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                      <Phone className="mr-2 h-5 w-5" />
                       +48 790 814 814
                     </a>
                   </Button>
