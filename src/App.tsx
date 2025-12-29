@@ -113,6 +113,10 @@ const App = () => (
             <Route path="/blog/kampania-reklamowa-marketingowa" element={<BlogKampaniaReklamowa />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
+            <Route path="/dla-kogo/firmy-lokalne" element={<DlaKogoFirmyLokalne />} />
+            <Route path="/dla-kogo/ecommerce" element={<DlaKogoEcommerce />} />
+            <Route path="/dla-kogo/marki-premium" element={<DlaKogoMarkiPremium />} />
+            <Route path="/dla-kogo/instytucje" element={<DlaKogoInstytucje />} />
             <Route path="/akademia" element={<AkademiaLanding />} />
             <Route path="/akademia/auth" element={<AkademiaAuth />} />
             <Route path="/akademia/panel" element={<Akademia />} />
