@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -21,6 +22,7 @@ import {
   Megaphone
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -88,6 +90,19 @@ const faqItems = [
 export default function SpotyReklamowe() {
   return (
     <Layout>
+      <Helmet>
+        <title>Spoty Reklamowe - Produkcja Filmów Promocyjnych | Fotz Studio</title>
+        <meta name="description" content="Profesjonalna produkcja spotów reklamowych i filmów promocyjnych. Kreatywne reklamy wideo dla Twojej marki. Studio Fotz Poznań." />
+        <link rel="canonical" href="https://fotz.pl/spoty-reklamowe" />
+      </Helmet>
+      
+      <OrganizationSchema />
+      <ServiceSchema 
+        name="Spoty Reklamowe"
+        description="Profesjonalna produkcja spotów reklamowych i filmów promocyjnych dla firm."
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
