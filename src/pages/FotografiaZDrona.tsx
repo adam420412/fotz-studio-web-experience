@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { 
   Navigation, 
   Camera, 
@@ -18,7 +19,9 @@ import {
   Mountain,
   CheckCircle2,
   ArrowRight,
-  Phone
+  Phone,
+  Play,
+  Expand
 } from "lucide-react";
 import { useCountUp } from "@/hooks/useCountUp";
 import {
@@ -28,6 +31,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ImageLightbox } from "@/components/ImageLightbox";
+import { VideoLightbox } from "@/components/VideoLightbox";
 
 // Import real portfolio images - aerial/architectural perspectives
 import eneaStadion from "@/assets/portfolio/enea-stadion.png";
@@ -183,7 +188,33 @@ function StatCounter({ value, suffix, label }: { value: number; suffix: string; 
   );
 }
 
+const droneVideos = [
+  { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion Poznań", category: "Eventy sportowe" },
+  { src: "/videos/skaland-osiedle.mp4", title: "Osiedle Skaland", category: "Nieruchomości" },
+  { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Inwestycje" },
+  { src: "/videos/fps-poznan.mp4", title: "FPS Cegielski Poznań", category: "Przemysł" },
+  { src: "/videos/autospa.mp4", title: "Auto Spa", category: "Motoryzacja" },
+  { src: "/videos/fun-sport-stylish.mp4", title: "Fun Sport Stylish", category: "Sport" },
+];
+
 export default function FotografiaZDrona() {
+  const [imageLightboxOpen, setImageLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [videoLightboxOpen, setVideoLightboxOpen] = useState(false);
+  const [currentVideoSrc, setCurrentVideoSrc] = useState("");
+  const [currentVideoTitle, setCurrentVideoTitle] = useState("");
+
+  const openImageLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setImageLightboxOpen(true);
+  };
+
+  const openVideoLightbox = (src: string, title: string) => {
+    setCurrentVideoSrc(src);
+    setCurrentVideoTitle(title);
+    setVideoLightboxOpen(true);
+  };
+
   return (
     <Layout>
       <Helmet>
@@ -332,13 +363,17 @@ export default function FotografiaZDrona() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="aspect-video rounded-xl overflow-hidden group relative"
+                className="aspect-video rounded-xl overflow-hidden group relative cursor-pointer"
+                onClick={() => openImageLightbox(index)}
               >
                 <img
                   src={item.src}
                   alt={item.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                  <Expand className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
                   <span className="text-xs text-white/80 font-medium">{item.category}</span>
                 </div>
@@ -366,30 +401,29 @@ export default function FotografiaZDrona() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion Poznań", category: "Eventy sportowe" },
-              { src: "/videos/skaland-osiedle.mp4", title: "Osiedle Skaland", category: "Nieruchomości" },
-              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Inwestycje" },
-              { src: "/videos/fps-poznan.mp4", title: "FPS Cegielski Poznań", category: "Przemysł" },
-              { src: "/videos/autospa.mp4", title: "Auto Spa", category: "Motoryzacja" },
-              { src: "/videos/fun-sport-stylish.mp4", title: "Fun Sport Stylish", category: "Sport" },
-            ].map((video, index) => (
+            {droneVideos.map((video, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group"
+                className="group cursor-pointer"
+                onClick={() => openVideoLightbox(video.src, video.title)}
               >
                 <div className="aspect-video rounded-xl overflow-hidden bg-secondary/50 relative">
                   <video
                     src={video.src}
                     className="w-full h-full object-cover"
-                    controls
                     preload="metadata"
                     playsInline
+                    muted
                   />
+                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Play className="w-7 h-7 text-primary-foreground ml-1" fill="currentColor" />
+                    </div>
+                  </div>
                 </div>
                 <div className="mt-3">
                   <h3 className="font-medium text-foreground">{video.title}</h3>
@@ -532,6 +566,20 @@ export default function FotografiaZDrona() {
           </motion.div>
         </div>
       </section>
+      {/* Lightboxes */}
+      <ImageLightbox
+        isOpen={imageLightboxOpen}
+        onClose={() => setImageLightboxOpen(false)}
+        images={galleryImages}
+        currentIndex={currentImageIndex}
+        onNavigate={setCurrentImageIndex}
+      />
+      <VideoLightbox
+        isOpen={videoLightboxOpen}
+        onClose={() => setVideoLightboxOpen(false)}
+        videoSrc={currentVideoSrc}
+        title={currentVideoTitle}
+      />
     </Layout>
   );
 }
