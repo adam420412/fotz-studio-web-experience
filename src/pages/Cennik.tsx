@@ -803,44 +803,49 @@ export default function Cennik() {
       </section>
 
       {/* Flow Steps Indicator */}
-      <section className="py-6 border-b border-border/50 sticky top-16 bg-background/95 backdrop-blur-sm z-30">
+      <section className="py-4 md:py-6 border-b border-border/50 sticky top-16 bg-background/95 backdrop-blur-sm z-30">
         <div className="container-wide">
-          <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap">
+          <div className="grid grid-cols-4 gap-1 md:flex md:items-center md:justify-center md:gap-4">
             <div className={cn(
-              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              "flex flex-col md:flex-row items-center gap-1 md:gap-2 px-2 md:px-3 py-2 rounded-lg md:rounded-full transition-all text-xs md:text-sm text-center",
               flowStep === "categories" ? "bg-primary text-primary-foreground" : selectedCategories.length > 0 ? "bg-green-500/20 text-green-500" : "bg-secondary text-muted-foreground"
             )}>
-              <span className="font-medium">1. Kategorie</span>
+              <span className="font-medium hidden md:inline">1. Kategorie</span>
+              <span className="font-medium md:hidden">1</span>
+              <span className="text-[10px] md:hidden">Kategorie</span>
             </div>
-            <ChevronRight className="w-4 h-4 text-muted-foreground hidden md:block" />
             <div className={cn(
-              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              "flex flex-col md:flex-row items-center gap-1 md:gap-2 px-2 md:px-3 py-2 rounded-lg md:rounded-full transition-all text-xs md:text-sm text-center",
               flowStep === "services" ? "bg-primary text-primary-foreground" : flowStep === "summary" || flowStep === "contact" ? "bg-green-500/20 text-green-500" : "bg-secondary text-muted-foreground"
             )}>
-              <span className="font-medium">2. Warianty</span>
+              <span className="font-medium hidden md:inline">2. Warianty</span>
+              <span className="font-medium md:hidden">2</span>
+              <span className="text-[10px] md:hidden">Warianty</span>
             </div>
-            <ChevronRight className="w-4 h-4 text-muted-foreground hidden md:block" />
             <div className={cn(
-              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              "flex flex-col md:flex-row items-center gap-1 md:gap-2 px-2 md:px-3 py-2 rounded-lg md:rounded-full transition-all text-xs md:text-sm text-center",
               flowStep === "summary" ? "bg-primary text-primary-foreground" : flowStep === "contact" ? "bg-green-500/20 text-green-500" : "bg-secondary text-muted-foreground"
             )}>
-              <span className="font-medium">3. Podsumowanie</span>
+              <span className="font-medium hidden md:inline">3. Podsumowanie</span>
+              <span className="font-medium md:hidden">3</span>
+              <span className="text-[10px] md:hidden">Suma</span>
             </div>
-            <ChevronRight className="w-4 h-4 text-muted-foreground hidden md:block" />
             <div className={cn(
-              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              "flex flex-col md:flex-row items-center gap-1 md:gap-2 px-2 md:px-3 py-2 rounded-lg md:rounded-full transition-all text-xs md:text-sm text-center",
               flowStep === "contact" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
             )}>
-              <span className="font-medium">4. Kontakt</span>
+              <span className="font-medium hidden md:inline">4. Kontakt</span>
+              <span className="font-medium md:hidden">4</span>
+              <span className="text-[10px] md:hidden">Kontakt</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-12">
+      <section className="py-8 md:py-12">
         <div className="container-wide">
-          <div className="grid lg:grid-cols-[1fr_340px] gap-8">
+          <div className="flex flex-col-reverse lg:flex-row lg:grid lg:grid-cols-[1fr_340px] gap-6 lg:gap-8">
             {/* Main Area */}
             <div>
               <AnimatePresence mode="wait">
@@ -1309,8 +1314,8 @@ export default function Cennik() {
               </AnimatePresence>
             </div>
 
-            {/* Sticky Summary Sidebar */}
-            <div className="lg:sticky lg:top-36 h-fit">
+            {/* Sticky Summary Sidebar - shows first on mobile */}
+            <div className="lg:sticky lg:top-36 h-fit order-first lg:order-last">
               <Card className="border-primary/20 bg-gradient-to-b from-background to-secondary/30">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-lg">
