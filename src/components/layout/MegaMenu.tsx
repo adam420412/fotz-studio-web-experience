@@ -344,7 +344,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     </div>
 
                     {/* Dla kogo + Branże row */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 border-t border-border/50">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 mt-2 border-t border-border/50">
                       {/* Dla kogo */}
                       {(() => {
                         const category = menuCategories[4];
@@ -457,7 +457,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     </div>
 
                     {/* Inne section */}
-                    <div className="pt-4 border-t border-border/30">
+                    <div className="pt-6 mt-4 border-t border-border/30">
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
