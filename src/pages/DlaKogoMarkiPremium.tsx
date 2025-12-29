@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
 import klageImage from "@/assets/portfolio/klagem.png";
@@ -198,6 +199,19 @@ export default function DlaKogoMarkiPremium() {
                 </a>
               </Button>
             </div>
+            
+            {/* Animated Statistics */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 p-6 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/30"
+            >
+              <AnimatedCounter end={25} suffix="+" label="Marek premium" index={0} />
+              <AnimatedCounter end={300} suffix="%" label="Wzrost rozpoznawalności" index={1} />
+              <AnimatedCounter end={15} prefix="" suffix=" mln" label="Zasięg kampanii" index={2} />
+              <AnimatedCounter end={95} suffix="%" label="Zadowolonych klientów" index={3} />
+            </motion.div>
           </motion.div>
         </div>
       </section>

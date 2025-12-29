@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
 import vertheImage from "@/assets/portfolio/verthe.png";
@@ -190,25 +191,14 @@ export default function DlaKogoEcommerce() {
         </div>
       </section>
 
-      {/* Metrics */}
+      {/* Animated Metrics */}
       <section className="py-12 bg-card border-y border-border">
         <div className="container-wide">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {metrics.map((metric, index) => (
-              <motion.div
-                key={metric.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-4xl md:text-5xl font-heading font-bold text-primary mb-2">
-                  {metric.value}
-                </div>
-                <p className="text-muted-foreground">{metric.label}</p>
-              </motion.div>
-            ))}
+            <AnimatedCounter end={500} suffix="%" label="Średni wzrost ROAS" index={0} />
+            <AnimatedCounter end={180} suffix="%" label="Wzrost konwersji" index={1} />
+            <AnimatedCounter end={50} suffix="+" label="Sklepów e-commerce" index={2} />
+            <AnimatedCounter end={10} prefix="" suffix=" mln zł" label="Wygenerowanej sprzedaży" index={3} />
           </div>
         </div>
       </section>
