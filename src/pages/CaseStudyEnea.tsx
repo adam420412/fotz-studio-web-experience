@@ -14,7 +14,10 @@ import {
   Play,
   ExternalLink,
   X,
-  ZoomIn
+  ZoomIn,
+  ChevronLeft,
+  ChevronRight,
+  Heart
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -42,6 +45,7 @@ const projectInfo = {
 const stats = [
   { icon: TrendingUp, value: "+340%", label: "Wzrost zaangażowania", description: "na Instagramie rok do roku" },
   { icon: Eye, value: "2M+", label: "Wyświetleń miesięcznie", description: "średnia z ostatnich 6 miesięcy" },
+  { icon: Heart, value: "50K+", label: "Nowych obserwujących", description: "w ciągu roku współpracy" },
   { icon: Calendar, value: "12+", label: "Miesięcy współpracy", description: "i wciąż rozwijamy projekt" },
 ];
 
@@ -105,11 +109,45 @@ const galleryImages = [
     alt: "Catering eventowy na Enea Stadion",
     span: "col-span-1",
   },
+  // Dodatkowe zdjęcia wykorzystujące istniejące materiały
+  {
+    src: eneaFajerwerki,
+    alt: "Oprawa meczowa - race kibiców Lecha Poznań",
+    span: "col-span-1",
+  },
+  {
+    src: eneaKoncert,
+    alt: "Koncert na Enea Stadion - atmosfera",
+    span: "col-span-1",
+  },
+  {
+    src: eneaKonferencja,
+    alt: "Event firmowy - All for One Group",
+    span: "col-span-2",
+  },
 ];
 
 
 export default function CaseStudyEnea() {
-  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+  const handlePrevImage = () => {
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex(selectedImageIndex === 0 ? galleryImages.length - 1 : selectedImageIndex - 1);
+    }
+  };
+
+  const handleNextImage = () => {
+    if (selectedImageIndex !== null) {
+      setSelectedImageIndex(selectedImageIndex === galleryImages.length - 1 ? 0 : selectedImageIndex + 1);
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'ArrowLeft') handlePrevImage();
+    if (e.key === 'ArrowRight') handleNextImage();
+    if (e.key === 'Escape') setSelectedImageIndex(null);
+  };
 
   return (
     <Layout>
@@ -165,15 +203,21 @@ export default function CaseStudyEnea() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="section-padding bg-card border-y border-border">
-        <div className="container-wide">
+      {/* Stats Section - Full Width */}
+      <section className="py-16 md:py-24 bg-gradient-to-b from-card to-background border-y border-border relative overflow-hidden">
+        {/* Background glow */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[200px] bg-primary/10" />
+          <div className="absolute top-1/2 right-1/4 translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[200px] bg-primary/5" />
+        </div>
+        
+        <div className="w-full px-4 md:px-8 lg:px-16 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -182,13 +226,15 @@ export default function CaseStudyEnea() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-6 rounded-2xl bg-secondary/50"
+                className="text-center p-8 md:p-10 rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300"
               >
-                <stat.icon className="w-8 h-8 text-primary mx-auto mb-4" />
-                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient mb-2">
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                  <stat.icon className="w-8 h-8 text-primary" />
+                </div>
+                <div className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gradient mb-3">
                   {stat.value}
                 </div>
-                <div className="font-medium mb-1">{stat.label}</div>
+                <div className="text-lg font-medium mb-2">{stat.label}</div>
                 <div className="text-sm text-muted-foreground">{stat.description}</div>
               </motion.div>
             ))}
@@ -324,7 +370,7 @@ export default function CaseStudyEnea() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                onClick={() => setSelectedImage({ src: image.src, alt: image.alt })}
+                onClick={() => setSelectedImageIndex(index)}
                 className={cn(
                   "relative rounded-xl overflow-hidden group cursor-pointer",
                   image.span
@@ -526,17 +572,36 @@ export default function CaseStudyEnea() {
         </div>
       </section>
 
-      {/* Image Lightbox */}
+      {/* Image Lightbox with Navigation */}
       <AnimatePresence>
-        {selectedImage && (
+        {selectedImageIndex !== null && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelectedImage(null)}
-            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer"
+            onClick={() => setSelectedImageIndex(null)}
+            onKeyDown={handleKeyDown}
+            tabIndex={0}
+            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-sm flex items-center justify-center p-4 cursor-pointer outline-none"
           >
+            {/* Previous Arrow */}
+            <button
+              onClick={(e) => { e.stopPropagation(); handlePrevImage(); }}
+              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-secondary/80 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors z-10"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+
+            {/* Next Arrow */}
+            <button
+              onClick={(e) => { e.stopPropagation(); handleNextImage(); }}
+              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-secondary/80 text-foreground hover:bg-primary hover:text-primary-foreground transition-colors z-10"
+            >
+              <ChevronRight className="w-8 h-8" />
+            </button>
+
             <motion.div
+              key={selectedImageIndex}
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
@@ -545,17 +610,22 @@ export default function CaseStudyEnea() {
               onClick={(e) => e.stopPropagation()}
             >
               <button
-                onClick={() => setSelectedImage(null)}
+                onClick={() => setSelectedImageIndex(null)}
                 className="absolute -top-12 right-0 p-2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 <X className="w-8 h-8" />
               </button>
               <img
-                src={selectedImage.src}
-                alt={selectedImage.alt}
+                src={galleryImages[selectedImageIndex].src}
+                alt={galleryImages[selectedImageIndex].alt}
                 className="w-full h-full object-contain rounded-xl"
               />
-              <p className="text-center mt-4 text-muted-foreground">{selectedImage.alt}</p>
+              <div className="text-center mt-4">
+                <p className="text-muted-foreground">{galleryImages[selectedImageIndex].alt}</p>
+                <p className="text-sm text-muted-foreground/60 mt-2">
+                  {selectedImageIndex + 1} / {galleryImages.length}
+                </p>
+              </div>
             </motion.div>
           </motion.div>
         )}
