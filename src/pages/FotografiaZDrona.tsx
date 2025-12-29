@@ -348,6 +348,59 @@ export default function FotografiaZDrona() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="section-padding">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+              Filmy z drona
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Dynamiczne ujęcia video z lotu ptaka - od nieruchomości po eventy sportowe
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion Poznań", category: "Eventy sportowe" },
+              { src: "/videos/skaland-osiedle.mp4", title: "Osiedle Skaland", category: "Nieruchomości" },
+              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Inwestycje" },
+              { src: "/videos/fps-poznan.mp4", title: "FPS Cegielski Poznań", category: "Przemysł" },
+              { src: "/videos/autospa.mp4", title: "Auto Spa", category: "Motoryzacja" },
+              { src: "/videos/fun-sport-stylish.mp4", title: "Fun Sport Stylish", category: "Sport" },
+            ].map((video, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group"
+              >
+                <div className="aspect-video rounded-xl overflow-hidden bg-secondary/50 relative">
+                  <video
+                    src={video.src}
+                    className="w-full h-full object-cover"
+                    controls
+                    preload="metadata"
+                    playsInline
+                  />
+                </div>
+                <div className="mt-3">
+                  <h3 className="font-medium text-foreground">{video.title}</h3>
+                  <p className="text-sm text-muted-foreground">{video.category}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="section-padding">
         <div className="container-wide">
