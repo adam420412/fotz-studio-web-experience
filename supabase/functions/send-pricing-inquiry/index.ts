@@ -93,7 +93,7 @@ const handler = async (req: Request): Promise<Response> => {
     console.log("Sending admin email...");
     const adminEmailResponse = await sendEmail(
       RESEND_API_KEY,
-      ["adam@fotz.pl"],
+      ["a.mazziarz@gmail.com"],
       `Nowe zapytanie z cennika od ${name}`,
       `
         <h1>Nowe zapytanie ofertowe z konfiguratora cennika</h1>
