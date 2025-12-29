@@ -42,7 +42,8 @@ import {
   Briefcase,
   HelpCircle,
   Navigation,
-  X
+  X,
+  Calculator
 } from "lucide-react";
 
 // Import portfolio images for preview
@@ -458,6 +459,21 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                           </TooltipTrigger>
                           <TooltipContent side="bottom" className="text-xs">
                             Dołącz do naszego zespołu - staże i praktyki
+                          </TooltipContent>
+                        </Tooltip>
+                        <Tooltip delayDuration={300}>
+                          <TooltipTrigger asChild>
+                            <Link
+                              to="/cennik"
+                              onClick={onClose}
+                              className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-1.5 hover:translate-x-0.5"
+                            >
+                              <Calculator className="w-3.5 h-3.5" />
+                              Cennik
+                            </Link>
+                          </TooltipTrigger>
+                          <TooltipContent side="bottom" className="text-xs">
+                            Orientacyjne ceny naszych usług
                           </TooltipContent>
                         </Tooltip>
                         <Tooltip delayDuration={300}>
