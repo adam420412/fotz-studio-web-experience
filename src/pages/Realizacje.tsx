@@ -30,7 +30,6 @@ import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 // Import visualization images
 import viz17 from "@/assets/wizualizacje/viz-17.png";
 import viz18 from "@/assets/wizualizacje/viz-18.png";
-import viz19 from "@/assets/wizualizacje/viz-19.png";
 
 const categories = [
   "Wszystkie",
@@ -217,19 +216,10 @@ const projects = [
   },
   {
     id: "viz-salon-schody",
-    title: "Salon ze schodami",
+    title: "Salon ze schodami (Klagem)",
     category: "Wizualizacje 3D",
-    description: "Wizualizacja wnętrza salonu z nowoczesnymi schodami i meblami modułowymi.",
+    description: "Wizualizacja wnętrza salonu z nowoczesnymi schodami i meblami modułowymi Klagem.",
     image: viz18,
-    featured: false,
-    hasCase: false,
-  },
-  {
-    id: "viz-loft",
-    title: "Loft industrialny",
-    category: "Wizualizacje 3D",
-    description: "Wizualizacja nowoczesnego loftu z industrialnymi elementami.",
-    image: viz19,
     featured: false,
     hasCase: false,
   },
