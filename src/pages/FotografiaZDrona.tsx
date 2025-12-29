@@ -34,27 +34,21 @@ import { ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { VideoLightbox } from "@/components/VideoLightbox";
 
-// Import real portfolio images - aerial/architectural perspectives
-import eneaStadion from "@/assets/portfolio/enea-stadion.png";
-import apartamentyChorwacja from "@/assets/portfolio/apartamenty-chorwacja.jpg";
-import sookar from "@/assets/portfolio/sookar.jpg";
-import stadionFajerwerki from "@/assets/enea/stadion-race-fajerwerki.jpg";
-import konferencjaEvent from "@/assets/enea/conference-league.jpg";
-import bydgoszczTriatlon from "@/assets/enea/bydgoszcz-triatlon.png";
-import viz1 from "@/assets/wizualizacje/viz-1.png";
-import viz15 from "@/assets/wizualizacje/viz-15.png";
-import viz17 from "@/assets/wizualizacje/viz-17.png";
+// Import real drone photos
+import dronePicnic1 from "@/assets/drone/event-picnic-1.jpg";
+import droneBullRide from "@/assets/drone/event-bull-ride.jpg";
+import dronePicnicTop from "@/assets/drone/event-picnic-top.jpg";
+import droneAerialView from "@/assets/drone/event-aerial-view.jpg";
+import droneConcert1 from "@/assets/drone/event-concert-1.jpg";
+import droneConcert2 from "@/assets/drone/event-concert-2.jpg";
 
 const galleryImages = [
-  { src: eneaStadion, alt: "Stadion Enea - ujęcie z lotu ptaka", category: "Eventy" },
-  { src: apartamentyChorwacja, alt: "Apartamenty nad morzem - widok z drona", category: "Nieruchomości" },
-  { src: stadionFajerwerki, alt: "Stadion Poznań - nocne ujęcie z drona", category: "Eventy" },
-  { src: sookar, alt: "Wnętrze gastronomii - ujęcie z góry", category: "Gastronomia" },
-  { src: konferencjaEvent, alt: "Konferencja - ujęcie eventowe", category: "Eventy" },
-  { src: bydgoszczTriatlon, alt: "Triatlon Bydgoszcz - widok z drona", category: "Sport" },
-  { src: viz1, alt: "Wizualizacja architektoniczna z lotu ptaka", category: "Architektura" },
-  { src: viz15, alt: "Osiedle - perspektywa lotnicza", category: "Nieruchomości" },
-  { src: viz17, alt: "Budynek komercyjny - widok z góry", category: "Przemysł" },
+  { src: dronePicnic1, alt: "Event firmowy - piknik z lotu ptaka", category: "Eventy" },
+  { src: droneBullRide, alt: "Event plenerowy - atrakcje z drona", category: "Eventy" },
+  { src: dronePicnicTop, alt: "Piknik firmowy - widok z góry", category: "Eventy" },
+  { src: droneAerialView, alt: "Strefa relaksu - perspektywa lotnicza", category: "Eventy" },
+  { src: droneConcert1, alt: "Koncert plenerowy - ujęcie z drona", category: "Eventy" },
+  { src: droneConcert2, alt: "Scena koncertowa - widok z lotu ptaka", category: "Eventy" },
 ];
 
 const stats = [
@@ -191,10 +185,8 @@ function StatCounter({ value, suffix, label }: { value: number; suffix: string; 
 const droneVideos = [
   { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion Poznań", category: "Eventy sportowe" },
   { src: "/videos/skaland-osiedle.mp4", title: "Osiedle Skaland", category: "Nieruchomości" },
-  { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Inwestycje" },
-  { src: "/videos/fps-poznan.mp4", title: "FPS Cegielski Poznań", category: "Przemysł" },
-  { src: "/videos/autospa.mp4", title: "Auto Spa", category: "Motoryzacja" },
-  { src: "/videos/fun-sport-stylish.mp4", title: "Fun Sport Stylish", category: "Sport" },
+  { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Nieruchomości" },
+  { src: "/videos/sequence-01.mp4", title: "Realizacja eventowa", category: "Eventy" },
 ];
 
 export default function FotografiaZDrona() {
@@ -400,7 +392,7 @@ export default function FotografiaZDrona() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {droneVideos.map((video, index) => (
               <motion.div
                 key={index}
