@@ -29,6 +29,7 @@ const mobileServicesData = [
   { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
   { name: "Fotografia", href: "/fotografia" },
   { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
+  { name: "Obsługa graficzna", href: "/agencja-graficzna" },
 ];
 
 export function Navbar() {
