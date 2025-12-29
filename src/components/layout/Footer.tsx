@@ -39,6 +39,8 @@ const footerLinks = {
     { name: "O nas", href: "/o-nas" },
     { name: "Realizacje", href: "/realizacje" },
     { name: "Blog", href: "/blog" },
+    { name: "Kariera", href: "/kariera" },
+    { name: "FAQ", href: "/faq" },
     { name: "Kontakt", href: "/kontakt" },
   ],
 };
