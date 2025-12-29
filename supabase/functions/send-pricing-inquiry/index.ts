@@ -1,7 +1,5 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
-
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers":
@@ -26,25 +24,32 @@ interface PricingInquiryRequest {
   };
 }
 
-async function sendEmail(to: string[], subject: string, html: string, replyTo?: string) {
+async function sendEmail(apiKey: string, to: string[], subject: string, html: string, replyTo?: string) {
+  const headers = new Headers();
+  headers.set("Content-Type", "application/json");
+  headers.set("Authorization", `Bearer ${apiKey}`);
+
+  const body: Record<string, unknown> = {
+    from: "Fotz Studio <onboarding@resend.dev>",
+    to,
+    subject,
+    html,
+  };
+
+  if (replyTo) {
+    body.reply_to = replyTo;
+  }
+
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${RESEND_API_KEY}`,
-    },
-    body: JSON.stringify({
-      from: "Fotz Studio <onboarding@resend.dev>",
-      to,
-      subject,
-      html,
-      ...(replyTo && { reply_to: replyTo }),
-    }),
+    headers,
+    body: JSON.stringify(body),
   });
 
   if (!response.ok) {
-    const error = await response.text();
-    throw new Error(`Failed to send email: ${error}`);
+    const errorText = await response.text();
+    console.error("Resend API error:", response.status, errorText);
+    throw new Error(`Failed to send email: ${response.status} - ${errorText}`);
   }
 
   return response.json();
@@ -57,6 +62,17 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
+    const rawApiKey = Deno.env.get("RESEND_API_KEY");
+    
+    if (!rawApiKey) {
+      console.error("RESEND_API_KEY is not configured");
+      throw new Error("Email service not configured");
+    }
+
+    // Clean the API key - remove any whitespace or newline characters
+    const RESEND_API_KEY = rawApiKey.trim().replace(/[\r\n]/g, '');
+    console.log("RESEND_API_KEY length after cleaning:", RESEND_API_KEY.length);
+
     const { name, email, phone, message, selectedServices, totals }: PricingInquiryRequest = await req.json();
 
     console.log("Received pricing inquiry from:", email);
@@ -74,7 +90,9 @@ const handler = async (req: Request): Promise<Response> => {
     `;
 
     // Send notification to admin
+    console.log("Sending admin email...");
     const adminEmailResponse = await sendEmail(
+      RESEND_API_KEY,
       ["adam@fotz.pl"],
       `Nowe zapytanie z cennika od ${name}`,
       `
@@ -104,10 +122,12 @@ const handler = async (req: Request): Promise<Response> => {
       email
     );
 
-    console.log("Admin email sent:", adminEmailResponse);
+    console.log("Admin email sent:", JSON.stringify(adminEmailResponse));
 
     // Send confirmation to client
+    console.log("Sending client confirmation email...");
     const clientEmailResponse = await sendEmail(
+      RESEND_API_KEY,
       [email],
       "Dziękujemy za zapytanie - Fotz Studio",
       `
@@ -138,7 +158,7 @@ const handler = async (req: Request): Promise<Response> => {
       `
     );
 
-    console.log("Client confirmation email sent:", clientEmailResponse);
+    console.log("Client confirmation email sent:", JSON.stringify(clientEmailResponse));
 
     return new Response(
       JSON.stringify({ 
@@ -154,10 +174,11 @@ const handler = async (req: Request): Promise<Response> => {
         },
       }
     );
-  } catch (error: any) {
-    console.error("Error in send-pricing-inquiry function:", error);
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    console.error("Error in send-pricing-inquiry function:", errorMessage);
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: errorMessage }),
       {
         status: 500,
         headers: { "Content-Type": "application/json", ...corsHeaders },
