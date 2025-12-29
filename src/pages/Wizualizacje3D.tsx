@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Box, Building, Camera, Layers, Play, Sparkles, Eye, Palette, CheckCircle, ChevronLeft, ChevronRight, X, Check, Zap, Crown, Repeat } from "lucide-react";
+import { ArrowRight, Box, Building, Camera, Layers, Play, Sparkles, Eye, Palette, CheckCircle, ChevronLeft, ChevronRight, X, Check, Zap, Crown, Repeat, Home, ShoppingBag, Factory, Sofa, Bath, Utensils, Building2, Store, Warehouse, Car } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { useState, useCallback, useEffect, Suspense, lazy } from "react";
@@ -13,6 +13,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 
 // Lazy load the 3D viewer for performance
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
@@ -40,52 +41,182 @@ import viz20 from "@/assets/wizualizacje/viz-20.png";
 import viz21 from "@/assets/wizualizacje/viz-21.png";
 import viz22 from "@/assets/wizualizacje/viz-22.png";
 
-const portfolioImages = [
-  { src: viz17, title: "Sypialnia - styl japoński" },
-  { src: viz18, title: "Salon ze schodami" },
-  { src: viz19, title: "Salon nowoczesny" },
-  { src: viz20, title: "Loft industrialny" },
-  { src: viz21, title: "Przestrzeń dzienna" },
-  { src: viz22, title: "Biurko modułowe" },
-  { src: viz1, title: "Wizualizacja produktowa" },
-  { src: viz2, title: "Wizualizacja kosmiczna" },
-  { src: viz3, title: "Wizualizacja produktowa" },
-  { src: viz4, title: "Wizualizacja koncepcyjna" },
-  { src: viz5, title: "Studio filmowe" },
-  { src: viz6, title: "Wizualizacja produktowa" },
-  { src: viz7, title: "Studio produkcyjne" },
-  { src: viz8, title: "Wizualizacja architektoniczna" },
-  { src: viz9, title: "Studio produkcyjne" },
-  { src: viz10, title: "Wizualizacja produktowa" },
-  { src: viz11, title: "Wizualizacja sci-fi" },
-  { src: viz12, title: "Wizualizacja kosmiczna" },
-  { src: viz13, title: "Wizualizacja przemysłowa" },
-  { src: viz14, title: "Wizualizacja wnętrza" },
-  { src: viz15, title: "Wizualizacja produktowa" },
-  { src: viz16, title: "Studio produkcyjne" },
+// Categories with images
+const portfolioCategories = [
+  { id: "all", label: "Wszystkie", icon: Sparkles },
+  { id: "interior", label: "Wnętrza", icon: Home },
+  { id: "architecture", label: "Architektura", icon: Building },
+  { id: "product", label: "Produkty", icon: ShoppingBag },
+  { id: "industrial", label: "Przemysłowe", icon: Factory },
 ];
 
-const services = [
+const portfolioImages = [
+  // Wnętrza
+  { src: viz17, title: "Sypialnia - styl japoński", category: "interior" },
+  { src: viz18, title: "Salon ze schodami", category: "interior" },
+  { src: viz19, title: "Salon nowoczesny", category: "interior" },
+  { src: viz20, title: "Loft industrialny", category: "interior" },
+  { src: viz21, title: "Przestrzeń dzienna", category: "interior" },
+  { src: viz22, title: "Biurko modułowe", category: "interior" },
+  { src: viz14, title: "Wizualizacja wnętrza", category: "interior" },
+  
+  // Architektura
+  { src: viz8, title: "Wizualizacja architektoniczna", category: "architecture" },
+  { src: viz5, title: "Studio filmowe", category: "architecture" },
+  { src: viz7, title: "Studio produkcyjne", category: "architecture" },
+  { src: viz9, title: "Studio produkcyjne 2", category: "architecture" },
+  { src: viz16, title: "Przestrzeń produkcyjna", category: "architecture" },
+  
+  // Produkty
+  { src: viz1, title: "Wizualizacja produktowa", category: "product" },
+  { src: viz3, title: "Wizualizacja produktowa 2", category: "product" },
+  { src: viz4, title: "Wizualizacja koncepcyjna", category: "product" },
+  { src: viz6, title: "Wizualizacja produktowa 3", category: "product" },
+  { src: viz10, title: "Wizualizacja produktowa 4", category: "product" },
+  { src: viz15, title: "Wizualizacja produktowa 5", category: "product" },
+  
+  // Przemysłowe / Sci-fi
+  { src: viz2, title: "Wizualizacja kosmiczna", category: "industrial" },
+  { src: viz11, title: "Wizualizacja sci-fi", category: "industrial" },
+  { src: viz12, title: "Wizualizacja kosmiczna 2", category: "industrial" },
+  { src: viz13, title: "Wizualizacja przemysłowa", category: "industrial" },
+];
+
+// Service categories with variants
+const serviceCategories = [
   {
-    icon: Building,
+    id: "interior",
+    icon: Home,
     title: "Wizualizacje wnętrz",
-    description: "Pokażemy, jak Twoje pomieszczenia mogą wyglądać po aranżacji."
+    description: "Fotorealistyczne wizualizacje pomieszczeń mieszkalnych i komercyjnych",
+    variants: [
+      { name: "Salon / Pokój dzienny", price: "od 800 zł", time: "3-5 dni" },
+      { name: "Sypialnia", price: "od 700 zł", time: "3-5 dni" },
+      { name: "Kuchnia", price: "od 900 zł", time: "4-6 dni" },
+      { name: "Łazienka", price: "od 800 zł", time: "3-5 dni" },
+      { name: "Biuro / Open space", price: "od 1200 zł", time: "5-7 dni" },
+      { name: "Restauracja / Kawiarnia", price: "od 1500 zł", time: "5-8 dni" },
+      { name: "Hotel / Apartament", price: "od 1800 zł", time: "6-10 dni" },
+      { name: "Sklep / Showroom", price: "od 1400 zł", time: "5-8 dni" },
+    ]
   },
   {
-    icon: Box,
+    id: "architecture",
+    icon: Building2,
     title: "Wizualizacje architektoniczne",
-    description: "Precyzyjnie zaprezentujemy projekt budynku."
+    description: "Zewnętrzne wizualizacje budynków i osiedli",
+    variants: [
+      { name: "Dom jednorodzinny", price: "od 1500 zł", time: "5-8 dni" },
+      { name: "Budynek wielorodzinny", price: "od 3000 zł", time: "8-14 dni" },
+      { name: "Osiedle mieszkaniowe", price: "od 5000 zł", time: "14-21 dni" },
+      { name: "Budynek biurowy", price: "od 3500 zł", time: "10-14 dni" },
+      { name: "Obiekt handlowy", price: "od 2500 zł", time: "7-12 dni" },
+      { name: "Obiekt przemysłowy", price: "od 3000 zł", time: "8-14 dni" },
+      { name: "Zagospodarowanie terenu", price: "od 2000 zł", time: "5-10 dni" },
+      { name: "Wizualizacja nocna", price: "+30%", time: "+1-2 dni" },
+    ]
   },
   {
-    icon: Camera,
+    id: "product",
+    icon: ShoppingBag,
     title: "Wizualizacje produktowe",
-    description: "Idealne dla agencji reklamowych i inwestorów."
+    description: "Renderingi produktów dla e-commerce i reklamy",
+    variants: [
+      { name: "Produkt prosty (1 ujęcie)", price: "od 300 zł", time: "1-2 dni" },
+      { name: "Produkt prosty (pakiet 5 ujęć)", price: "od 1200 zł", time: "3-5 dni" },
+      { name: "Produkt złożony (1 ujęcie)", price: "od 600 zł", time: "2-4 dni" },
+      { name: "Produkt złożony (pakiet 5 ujęć)", price: "od 2500 zł", time: "5-8 dni" },
+      { name: "Packshot na białym tle", price: "od 200 zł", time: "1 dzień" },
+      { name: "Lifestyle / Kontekst", price: "od 500 zł", time: "2-4 dni" },
+      { name: "Exploded view (rozłożony)", price: "od 800 zł", time: "3-5 dni" },
+      { name: "Animacja produktowa (10s)", price: "od 1500 zł", time: "5-10 dni" },
+    ]
   },
   {
-    icon: Play,
-    title: "Animacje 3D i spacery wirtualne",
-    description: "Pozwól swoim klientom odkryć przestrzeń w nowoczesny sposób."
-  }
+    id: "furniture",
+    icon: Sofa,
+    title: "Wizualizacje mebli",
+    description: "Renderingi mebli dla producentów i deweloperów",
+    variants: [
+      { name: "Pojedynczy mebel (1 ujęcie)", price: "od 400 zł", time: "2-3 dni" },
+      { name: "Pojedynczy mebel (pakiet 5 ujęć)", price: "od 1500 zł", time: "4-6 dni" },
+      { name: "Zestaw mebli", price: "od 800 zł", time: "3-5 dni" },
+      { name: "Mebel w kontekście wnętrza", price: "od 1000 zł", time: "4-6 dni" },
+      { name: "Konfiguracja wariantów kolorystycznych", price: "od 200 zł/wariant", time: "+1 dzień" },
+      { name: "Model 3D do konfiguratora", price: "od 600 zł", time: "3-5 dni" },
+    ]
+  },
+  {
+    id: "bathroom",
+    icon: Bath,
+    title: "Wizualizacje łazienek",
+    description: "Specjalistyczne wizualizacje armatury i ceramiki",
+    variants: [
+      { name: "Łazienka kompletna", price: "od 1000 zł", time: "4-6 dni" },
+      { name: "Armatura sanitarna (1 produkt)", price: "od 350 zł", time: "2-3 dni" },
+      { name: "Ceramika łazienkowa", price: "od 400 zł", time: "2-4 dni" },
+      { name: "Kabina prysznicowa / Wanna", price: "od 500 zł", time: "2-4 dni" },
+      { name: "Meble łazienkowe", price: "od 450 zł", time: "2-4 dni" },
+      { name: "Pakiet produktowy (10 produktów)", price: "od 2500 zł", time: "7-10 dni" },
+    ]
+  },
+  {
+    id: "kitchen",
+    icon: Utensils,
+    title: "Wizualizacje kuchni",
+    description: "Wizualizacje zabudów i sprzętów kuchennych",
+    variants: [
+      { name: "Kuchnia kompletna", price: "od 1200 zł", time: "5-7 dni" },
+      { name: "Zabudowa kuchenna", price: "od 900 zł", time: "4-6 dni" },
+      { name: "AGD (1 produkt)", price: "od 400 zł", time: "2-3 dni" },
+      { name: "AGD pakiet (5 produktów)", price: "od 1600 zł", time: "5-7 dni" },
+      { name: "Blat / Zlewozmywak", price: "od 350 zł", time: "2-3 dni" },
+      { name: "Kuchnia w kontekście salonu", price: "od 1500 zł", time: "5-8 dni" },
+    ]
+  },
+  {
+    id: "commercial",
+    icon: Store,
+    title: "Wizualizacje komercyjne",
+    description: "Wizualizacje dla retail, hoteli i gastronomii",
+    variants: [
+      { name: "Sklep / Butik", price: "od 1800 zł", time: "6-10 dni" },
+      { name: "Restauracja", price: "od 2000 zł", time: "7-12 dni" },
+      { name: "Bar / Kawiarnia", price: "od 1500 zł", time: "5-8 dni" },
+      { name: "Recepcja hotelowa", price: "od 1600 zł", time: "5-8 dni" },
+      { name: "Pokój hotelowy", price: "od 1200 zł", time: "4-7 dni" },
+      { name: "Sala konferencyjna", price: "od 1400 zł", time: "5-8 dni" },
+      { name: "Fitness / SPA", price: "od 2000 zł", time: "7-12 dni" },
+    ]
+  },
+  {
+    id: "industrial",
+    icon: Warehouse,
+    title: "Wizualizacje przemysłowe",
+    description: "Wizualizacje maszyn, hal i procesów produkcyjnych",
+    variants: [
+      { name: "Maszyna / Urządzenie", price: "od 1500 zł", time: "5-10 dni" },
+      { name: "Linia produkcyjna", price: "od 3000 zł", time: "10-18 dni" },
+      { name: "Hala produkcyjna", price: "od 2500 zł", time: "8-14 dni" },
+      { name: "Magazyn / Logistyka", price: "od 2000 zł", time: "6-10 dni" },
+      { name: "Schemat technologiczny", price: "od 1200 zł", time: "4-7 dni" },
+      { name: "Animacja procesu (30s)", price: "od 4000 zł", time: "14-21 dni" },
+    ]
+  },
+  {
+    id: "automotive",
+    icon: Car,
+    title: "Wizualizacje automotive",
+    description: "Wizualizacje pojazdów i części samochodowych",
+    variants: [
+      { name: "Samochód - ujęcie zewnętrzne", price: "od 2000 zł", time: "7-12 dni" },
+      { name: "Samochód - wnętrze", price: "od 1800 zł", time: "6-10 dni" },
+      { name: "Część samochodowa", price: "od 600 zł", time: "3-5 dni" },
+      { name: "Opona / Felga", price: "od 400 zł", time: "2-4 dni" },
+      { name: "Konfiguracja kolorystyczna", price: "od 300 zł/wariant", time: "+1 dzień" },
+      { name: "Animacja 360° pojazdu", price: "od 3500 zł", time: "10-18 dni" },
+    ]
+  },
 ];
 
 const benefits = [
@@ -157,7 +288,7 @@ const faqItems = [
   },
   {
     question: "Jaki jest koszt wizualizacji 3D?",
-    answer: "Koszt zależy od złożoności projektu. Proste wizualizacje produktowe zaczynają się od 500 zł, natomiast kompleksowe projekty architektoniczne wyceniamy indywidualnie."
+    answer: "Koszt zależy od złożoności projektu. Proste wizualizacje produktowe zaczynają się od 300 zł, natomiast kompleksowe projekty architektoniczne wyceniamy indywidualnie. Sprawdź nasze kategorie cenowe poniżej."
   }
 ];
 
@@ -167,8 +298,8 @@ const pricingPackages = [
     icon: Zap,
     description: "Pojedyncze wizualizacje na zamówienie",
     prices: [
-      { type: "Wizualizacja produktowa", price: "od 500 zł" },
-      { type: "Wizualizacja wnętrza", price: "od 800 zł" },
+      { type: "Wizualizacja produktowa", price: "od 300 zł" },
+      { type: "Wizualizacja wnętrza", price: "od 700 zł" },
       { type: "Wizualizacja architektoniczna", price: "od 1500 zł" },
       { type: "Animacja 3D (do 30s)", price: "od 3000 zł" },
     ],
@@ -237,18 +368,26 @@ const pricingPackages = [
 
 const Wizualizacje3D = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [expandedService, setExpandedService] = useState<string | null>(null);
+
+  const filteredImages = activeCategory === "all" 
+    ? portfolioImages 
+    : portfolioImages.filter(img => img.category === activeCategory);
 
   const handlePrevious = useCallback(() => {
+    const currentFiltered = filteredImages;
     setSelectedImage(prev => 
-      prev !== null ? (prev - 1 + portfolioImages.length) % portfolioImages.length : null
+      prev !== null ? (prev - 1 + currentFiltered.length) % currentFiltered.length : null
     );
-  }, []);
+  }, [filteredImages]);
 
   const handleNext = useCallback(() => {
+    const currentFiltered = filteredImages;
     setSelectedImage(prev => 
-      prev !== null ? (prev + 1) % portfolioImages.length : null
+      prev !== null ? (prev + 1) % currentFiltered.length : null
     );
-  }, []);
+  }, [filteredImages]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -275,10 +414,10 @@ const Wizualizacje3D = () => {
       <Layout>
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-          <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-[#75143F]/10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/10" />
           <div className="absolute inset-0 opacity-20">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#75143F]/30 rounded-full blur-3xl" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#75143F]/20 rounded-full blur-3xl" />
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/30 rounded-full blur-3xl" />
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
           </div>
           
           <div className="container-wide px-6 md:px-12 relative z-10">
@@ -287,7 +426,7 @@ const Wizualizacje3D = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#75143F]/20 border border-[#75143F]/30 text-[#75143F] mb-6"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 border border-primary/30 text-primary mb-6"
               >
                 <Box className="w-4 h-4" />
                 <span className="text-sm font-medium">Wizualizacje 3D</span>
@@ -325,8 +464,8 @@ const Wizualizacje3D = () => {
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="#portfolio">
-                    Zobacz portfolio
+                  <a href="#kategorie">
+                    Zobacz kategorie
                   </a>
                 </Button>
               </motion.div>
@@ -334,30 +473,75 @@ const Wizualizacje3D = () => {
           </div>
         </section>
 
-        {/* Services Section */}
-        <section className="py-20 md:py-32 bg-muted/30">
+        {/* Service Categories Section */}
+        <section id="kategorie" className="py-20 md:py-32 bg-muted/30">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
               <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Nasza oferta</h2>
+                <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+                  Kategorie usług
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Wybierz <span className="bg-gradient-brand bg-clip-text text-transparent">rodzaj wizualizacji</span>
+                </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Specjalizujemy się w tworzeniu profesjonalnych wizualizacji 3D dla różnych branż
+                  Kliknij w kategorię, aby zobaczyć szczegółowe warianty i ceny
                 </p>
               </div>
             </FadeInView>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service, index) => (
-                <FadeInView key={service.title} delay={index * 0.1}>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {serviceCategories.map((category, index) => (
+                <FadeInView key={category.id} delay={index * 0.05}>
                   <motion.div
-                    whileHover={{ y: -8 }}
-                    className="bg-card border border-border rounded-2xl p-6 h-full hover:border-[#75143F]/50 transition-all duration-300"
+                    className={cn(
+                      "bg-card border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer",
+                      expandedService === category.id 
+                        ? "border-primary/50 ring-2 ring-primary/20" 
+                        : "border-border hover:border-primary/30"
+                    )}
+                    onClick={() => setExpandedService(expandedService === category.id ? null : category.id)}
                   >
-                    <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4">
-                      <service.icon className="w-6 h-6 text-white" />
+                    <div className="p-6">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center flex-shrink-0">
+                          <category.icon className="w-6 h-6 text-white" />
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="text-lg font-semibold mb-1">{category.title}</h3>
+                          <p className="text-sm text-muted-foreground">{category.description}</p>
+                        </div>
+                        <ChevronRight className={cn(
+                          "w-5 h-5 text-muted-foreground transition-transform",
+                          expandedService === category.id && "rotate-90"
+                        )} />
+                      </div>
+                      
+                      {/* Expanded variants */}
+                      <motion.div
+                        initial={false}
+                        animate={{ 
+                          height: expandedService === category.id ? "auto" : 0,
+                          opacity: expandedService === category.id ? 1 : 0
+                        }}
+                        className="overflow-hidden"
+                      >
+                        <div className="pt-4 border-t border-border/50 space-y-3">
+                          {category.variants.map((variant, vIndex) => (
+                            <div 
+                              key={vIndex}
+                              className="flex items-center justify-between text-sm p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors"
+                            >
+                              <span className="font-medium">{variant.name}</span>
+                              <div className="flex items-center gap-4">
+                                <span className="text-muted-foreground text-xs">{variant.time}</span>
+                                <span className="text-primary font-semibold">{variant.price}</span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </motion.div>
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                    <p className="text-muted-foreground">{service.description}</p>
                   </motion.div>
                 </FadeInView>
               ))}
@@ -403,7 +587,7 @@ const Wizualizacje3D = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-20 md:py-32">
+        <section className="py-20 md:py-32 bg-muted/30">
           <div className="container-wide px-6 md:px-12">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <FadeInView>
@@ -427,8 +611,8 @@ const Wizualizacje3D = () => {
                         transition={{ delay: index * 0.1 }}
                         className="flex gap-4 items-start"
                       >
-                        <div className="w-10 h-10 rounded-lg bg-[#75143F]/20 flex items-center justify-center flex-shrink-0">
-                          <benefit.icon className="w-5 h-5 text-[#75143F]" />
+                        <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
+                          <benefit.icon className="w-5 h-5 text-primary" />
                         </div>
                         <div>
                           <h3 className="font-semibold mb-1">{benefit.title}</h3>
@@ -441,124 +625,99 @@ const Wizualizacje3D = () => {
               </FadeInView>
               
               <FadeInView delay={0.2}>
-                <div className="relative">
-                  <div className="grid grid-cols-2 gap-4">
-                    <motion.img
+                <div className="grid grid-cols-2 gap-4">
+                  {portfolioImages.slice(0, 4).map((image, index) => (
+                    <motion.div
+                      key={index}
                       whileHover={{ scale: 1.02 }}
-                      src={viz3}
-                      alt="Wizualizacja 3D"
-                      className="rounded-2xl w-full aspect-square object-cover"
-                    />
-                    <motion.img
-                      whileHover={{ scale: 1.02 }}
-                      src={viz8}
-                      alt="Wizualizacja architektoniczna"
-                      className="rounded-2xl w-full aspect-square object-cover mt-8"
-                    />
-                  </div>
-                  <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-brand rounded-2xl -z-10" />
+                      className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer"
+                      onClick={() => setSelectedImage(portfolioImages.indexOf(image))}
+                    >
+                      <img
+                        src={image.src}
+                        alt={image.title}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity">
+                        <span className="absolute bottom-3 left-3 text-white text-sm font-medium">{image.title}</span>
+                      </div>
+                    </motion.div>
+                  ))}
                 </div>
               </FadeInView>
             </div>
           </div>
         </section>
 
-        {/* Portfolio Section */}
-        <section id="portfolio" className="py-20 md:py-32 bg-muted/30">
+        {/* Portfolio Gallery */}
+        <section id="portfolio" className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
-              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Nasze portfolio</h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  W naszym portfolio znajdziesz różnorodne aranżacje wnętrza, które zrealizowaliśmy dla klientów w Poznaniu i okolicach. 
-                  Każda realizacja to unikalny projekt, który pokazuje nasze umiejętności i kreatywność.
-                </p>
+              <div className="text-center mb-12">
+                <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+                  Portfolio
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Nasze <span className="bg-gradient-brand bg-clip-text text-transparent">realizacje</span>
+                </h2>
               </div>
             </FadeInView>
+
+            {/* Category Filters */}
+            <div className="flex flex-wrap justify-center gap-3 mb-10">
+              {portfolioCategories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  className={cn(
+                    "flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300",
+                    activeCategory === cat.id
+                      ? "bg-gradient-brand text-white"
+                      : "bg-card border border-border text-foreground/70 hover:border-primary/30"
+                  )}
+                >
+                  <cat.icon className="w-4 h-4" />
+                  {cat.label}
+                </button>
+              ))}
+            </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {portfolioImages.map((image, index) => (
-                <FadeInView key={index} delay={index * 0.05}>
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    className="relative group cursor-pointer overflow-hidden rounded-xl"
-                    onClick={() => setSelectedImage(index)}
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.title}
-                      className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                      <span className="text-foreground font-medium">{image.title}</span>
-                    </div>
-                  </motion.div>
-                </FadeInView>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {filteredImages.map((image, index) => (
+                <motion.div
+                  key={`${image.category}-${index}`}
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  whileHover={{ scale: 1.02 }}
+                  className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group"
+                  onClick={() => setSelectedImage(index)}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span className="absolute bottom-3 left-3 text-white text-sm font-medium">{image.title}</span>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Lightbox */}
-        {selectedImage !== null && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-background/95 backdrop-blur-xl z-50 flex items-center justify-center p-4"
-            onClick={() => setSelectedImage(null)}
-          >
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                handlePrevious();
-              }}
-              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-muted/80 hover:bg-muted transition-colors z-10"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                handleNext();
-              }}
-              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-muted/80 hover:bg-muted transition-colors z-10"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-            
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 p-2 rounded-full bg-muted/80 hover:bg-muted transition-colors"
-            >
-              <X className="w-6 h-6" />
-            </button>
-            
-            <motion.img
-              key={selectedImage}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              src={portfolioImages[selectedImage].src}
-              alt={portfolioImages[selectedImage].title}
-              className="max-w-full max-h-[85vh] object-contain rounded-lg"
-              onClick={(e) => e.stopPropagation()}
-            />
-            
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-muted-foreground text-sm">
-              {selectedImage + 1} / {portfolioImages.length}
-            </div>
-          </motion.div>
-        )}
-
         {/* Process Section */}
-        <section className="py-20 md:py-32">
+        <section className="py-20 md:py-32 bg-muted/30">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
               <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Jak z nami współpracować?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Jak <span className="bg-gradient-brand bg-clip-text text-transparent">pracujemy?</span>
+                </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Aby rozpocząć współpracę, wystarczy, że skontaktujesz się z nami. Razem omówimy Twoje potrzeby i oczekiwania.
+                  Prosty i przejrzysty proces współpracy
                 </p>
               </div>
             </FadeInView>
@@ -567,7 +726,7 @@ const Wizualizacje3D = () => {
               {processSteps.map((step, index) => (
                 <FadeInView key={step.step} delay={index * 0.1}>
                   <div className="text-center">
-                    <div className="text-5xl font-bold bg-gradient-brand bg-clip-text text-transparent mb-4">
+                    <div className="w-16 h-16 rounded-full bg-gradient-brand text-white text-2xl font-bold flex items-center justify-center mx-auto mb-4">
                       {step.step}
                     </div>
                     <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
@@ -580,16 +739,19 @@ const Wizualizacje3D = () => {
         </section>
 
         {/* Pricing Section */}
-        <section id="cennik" className="py-20 md:py-32 bg-muted/30">
+        <section className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
               <div className="text-center mb-16">
+                <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+                  Pakiety abonamentowe
+                </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Cennik i{" "}
-                  <span className="bg-gradient-brand bg-clip-text text-transparent">pakiety subskrypcyjne</span>
+                  Stała współpraca ={" "}
+                  <span className="bg-gradient-brand bg-clip-text text-transparent">niższe ceny</span>
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Wybierz model współpracy dopasowany do Twoich potrzeb - jednorazowe zlecenia lub stałą subskrypcję z rabatami
+                  Wybierz pakiet dopasowany do Twoich potrzeb
                 </p>
               </div>
             </FadeInView>
@@ -599,21 +761,24 @@ const Wizualizacje3D = () => {
                 <FadeInView key={pkg.name} delay={index * 0.1}>
                   <motion.div
                     whileHover={{ y: -8 }}
-                    className={`relative bg-card border rounded-2xl p-6 h-full flex flex-col ${
+                    className={cn(
+                      "relative bg-card border rounded-2xl p-6 h-full flex flex-col",
                       pkg.popular 
-                        ? "border-[#75143F] ring-2 ring-[#75143F]/20" 
-                        : "border-border hover:border-[#75143F]/50"
-                    } transition-all duration-300`}
+                        ? "border-primary ring-2 ring-primary/20" 
+                        : "border-border"
+                    )}
                   >
                     {pkg.popular && (
-                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-brand rounded-full text-white text-xs font-medium">
-                        Najpopularniejszy
+                      <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                        <span className="px-3 py-1 rounded-full bg-gradient-brand text-white text-xs font-medium">
+                          Najpopularniejszy
+                        </span>
                       </div>
                     )}
                     
-                    <div className="mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4">
-                        <pkg.icon className="w-6 h-6 text-white" />
+                    <div className="mb-6">
+                      <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
+                        <pkg.icon className="w-6 h-6 text-primary" />
                       </div>
                       <h3 className="text-xl font-bold mb-1">{pkg.name}</h3>
                       <p className="text-sm text-muted-foreground">{pkg.description}</p>
@@ -621,24 +786,24 @@ const Wizualizacje3D = () => {
                     
                     {pkg.price ? (
                       <div className="mb-6">
-                        <span className="text-4xl font-bold">{pkg.price}</span>
+                        <span className="text-3xl font-bold">{pkg.price}</span>
                         <span className="text-muted-foreground"> zł{pkg.period}</span>
                       </div>
-                    ) : pkg.prices ? (
+                    ) : (
                       <div className="mb-6 space-y-2">
-                        {pkg.prices.map((p, i) => (
+                        {pkg.prices?.map((p, i) => (
                           <div key={i} className="flex justify-between text-sm">
                             <span className="text-muted-foreground">{p.type}</span>
                             <span className="font-medium">{p.price}</span>
                           </div>
                         ))}
                       </div>
-                    ) : null}
+                    )}
                     
                     <ul className="space-y-3 mb-6 flex-1">
                       {pkg.features.map((feature, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
-                          <Check className="w-4 h-4 text-[#75143F] flex-shrink-0 mt-0.5" />
+                        <li key={i} className="flex items-start gap-2 text-sm">
+                          <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -646,88 +811,59 @@ const Wizualizacje3D = () => {
                     
                     <Button 
                       variant={pkg.popular ? "hero" : "outline"} 
-                      className="w-full" 
+                      className="w-full"
                       asChild
                     >
-                      <Link to="/kontakt">
-                        {pkg.price ? "Wybierz pakiet" : "Zapytaj o wycenę"}
-                      </Link>
+                      <Link to="/kontakt">Wybierz pakiet</Link>
                     </Button>
                   </motion.div>
                 </FadeInView>
               ))}
             </div>
-            
-            <FadeInView delay={0.4}>
-              <div className="mt-12 text-center">
-                <p className="text-muted-foreground">
-                  Potrzebujesz indywidualnej wyceny?{" "}
-                  <Link to="/kontakt" className="text-[#75143F] hover:underline font-medium">
-                    Skontaktuj się z nami
-                  </Link>
-                </p>
-              </div>
-            </FadeInView>
           </div>
         </section>
 
         {/* FAQ Section */}
         <section className="py-20 md:py-32 bg-muted/30">
           <div className="container-wide px-6 md:px-12">
-            <FadeInView>
-              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Często zadawane pytania</h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Odpowiedzi na najczęściej zadawane pytania dotyczące wizualizacji 3D
-                </p>
-              </div>
-            </FadeInView>
-            
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <FadeInView key={index} delay={index * 0.05}>
-                    <AccordionItem value={`item-${index}`} className="bg-card border border-border rounded-xl px-6">
-                      <AccordionTrigger className="text-left hover:no-underline">
+            <div className="grid lg:grid-cols-2 gap-12">
+              <FadeInView>
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Często zadawane{" "}
+                    <span className="bg-gradient-brand bg-clip-text text-transparent">pytania</span>
+                  </h2>
+                  <p className="text-muted-foreground mb-8">
+                    Odpowiadamy na najczęściej zadawane pytania dotyczące wizualizacji 3D
+                  </p>
+                  <Button variant="hero" asChild>
+                    <Link to="/kontakt" className="group">
+                      Masz inne pytanie?
+                      <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </Button>
+                </div>
+              </FadeInView>
+              
+              <FadeInView delay={0.2}>
+                <Accordion type="single" collapsible className="space-y-4">
+                  {faqItems.map((item, index) => (
+                    <AccordionItem
+                      key={index}
+                      value={`item-${index}`}
+                      className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-primary/50"
+                    >
+                      <AccordionTrigger className="text-left hover:no-underline py-4">
                         {item.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground">
+                      <AccordionContent className="text-muted-foreground pb-4">
                         {item.answer}
                       </AccordionContent>
                     </AccordionItem>
-                  </FadeInView>
-                ))}
-              </Accordion>
+                  ))}
+                </Accordion>
+              </FadeInView>
             </div>
-          </div>
-        </section>
-
-        {/* Video Section */}
-        <section className="py-20 md:py-32 bg-muted/30">
-          <div className="container-wide px-6 md:px-12">
-            <FadeInView>
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                  Zobacz nasze <span className="bg-gradient-brand bg-clip-text text-transparent">realizacje wideo</span>
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Przykład naszej produkcji filmowej prezentującej zaplecze technologiczne dla FPS Poznań
-                </p>
-              </div>
-            </FadeInView>
-            
-            <FadeInView delay={0.2}>
-              <div className="max-w-4xl mx-auto">
-                <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
-                  <video
-                    src="/videos/fps-poznan.mp4"
-                    controls
-                    className="w-full h-full object-cover"
-                    poster="/videos/fps-poznan.mp4#t=0.5"
-                  />
-                </div>
-              </div>
-            </FadeInView>
           </div>
         </section>
 
@@ -735,31 +871,71 @@ const Wizualizacje3D = () => {
         <section className="py-20 md:py-32">
           <div className="container-wide px-6 md:px-12">
             <FadeInView>
-              <div className="relative overflow-hidden rounded-3xl bg-gradient-brand p-12 md:p-20 text-center">
-                <div className="absolute inset-0 opacity-20">
-                  <div className="absolute top-0 right-0 w-96 h-96 bg-white/30 rounded-full blur-3xl" />
-                  <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/20 rounded-full blur-3xl" />
-                </div>
-                
-                <div className="relative z-10">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                    Skontaktuj się z nami
-                  </h2>
-                  <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8">
-                    Nie czekaj! Skontaktuj się z nami już dziś, aby uzyskać więcej informacji na temat naszych usług wizualizacji 3D w Poznaniu. 
-                    Razem stworzymy coś wyjątkowego!
-                  </p>
-                  <Button variant="secondary" size="lg" asChild>
-                    <Link to="/kontakt" className="group">
-                      Zamów bezpłatną wycenę
-                      <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  </Button>
-                </div>
+              <div className="text-center max-w-3xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  Gotowy na profesjonalne{" "}
+                  <span className="bg-gradient-brand bg-clip-text text-transparent">wizualizacje 3D?</span>
+                </h2>
+                <p className="text-muted-foreground text-lg mb-8">
+                  Skontaktuj się z nami i otrzymaj bezpłatną wycenę dla Twojego projektu
+                </p>
+                <Button variant="hero" size="lg" asChild>
+                  <Link to="/kontakt" className="group">
+                    Zamów bezpłatną wycenę
+                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
               </div>
             </FadeInView>
           </div>
         </section>
+
+        {/* Lightbox */}
+        {selectedImage !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              className="absolute top-4 right-4 text-white/70 hover:text-white p-2"
+              onClick={() => setSelectedImage(null)}
+            >
+              <X className="w-8 h-8" />
+            </button>
+            
+            <button
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white p-2"
+              onClick={(e) => { e.stopPropagation(); handlePrevious(); }}
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+            
+            <motion.img
+              key={selectedImage}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              src={filteredImages[selectedImage].src}
+              alt={filteredImages[selectedImage].title}
+              className="max-w-full max-h-[85vh] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+            
+            <button
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white p-2"
+              onClick={(e) => { e.stopPropagation(); handleNext(); }}
+            >
+              <ChevronRight className="w-8 h-8" />
+            </button>
+            
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-center">
+              <p className="font-medium">{filteredImages[selectedImage].title}</p>
+              <p className="text-sm text-white/60">{selectedImage + 1} / {filteredImages.length}</p>
+            </div>
+          </motion.div>
+        )}
       </Layout>
     </>
   );
