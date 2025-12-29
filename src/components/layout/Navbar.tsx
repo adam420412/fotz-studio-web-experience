@@ -30,6 +30,7 @@ const servicesDropdownData = [
   { name: { pl: "Google Maps", en: "Google Maps" }, href: "/pozycjonowanie-google-maps" },
   { name: { pl: "Produkcja Filmów", en: "Film Production" }, href: "/produkcja-filmow" },
   { name: { pl: "Spoty Reklamowe", en: "Commercials" }, href: "/spoty-reklamowe" },
+  { name: { pl: "Wizualizacje 3D", en: "3D Visualizations" }, href: "/wizualizacje-3d" },
   { name: { pl: "Fotografia", en: "Photography" }, href: "/fotografia" },
 ];
 

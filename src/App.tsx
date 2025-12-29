@@ -59,6 +59,7 @@ import Pozycjonowanie from "./pages/Pozycjonowanie";
 import PozycjonowanieGoogleMaps from "./pages/PozycjonowanieGoogleMaps";
 import ProdukcjaFilmowPoznan from "./pages/ProdukcjaFilmowPoznan";
 import SpotyReklamowe from "./pages/SpotyReklamowe";
+import Wizualizacje3D from "./pages/Wizualizacje3D";
 import PolitykaPrywatnosci from "./pages/PolitykaPrywatnosci";
 import Regulamin from "./pages/Regulamin";
 import NotFound from "./pages/NotFound";
@@ -127,6 +128,7 @@ const App = () => (
             <Route path="/pozycjonowanie-google-maps" element={<PozycjonowanieGoogleMaps />} />
             <Route path="/produkcja-filmow-poznan" element={<ProdukcjaFilmowPoznan />} />
             <Route path="/spoty-reklamowe" element={<SpotyReklamowe />} />
+            <Route path="/wizualizacje-3d" element={<Wizualizacje3D />} />
             <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
             <Route path="/regulamin" element={<Regulamin />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
