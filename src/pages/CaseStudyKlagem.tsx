@@ -319,6 +319,42 @@ const CaseStudyKlagem = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="text-center max-w-3xl mx-auto mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Zobacz nasze <span className="text-gradient-premium">realizacje wideo</span>
+            </h2>
+            <p className="text-foreground/70">
+              Przykład naszej produkcji filmowej dla klientów B2B.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
+              <video
+                src="/videos/fps-poznan.mp4"
+                controls
+                className="w-full h-full object-cover"
+                poster="/videos/fps-poznan.mp4#t=0.5"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section-padding bg-background">
         <div className="container-wide">
