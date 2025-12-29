@@ -16,7 +16,6 @@ import logoFotz from "@/assets/logo-fotz.png";
 const navLinksData = [
   { name: { pl: "Realizacje", en: "Portfolio" }, href: "/realizacje" },
   { name: { pl: "Dla kogo", en: "For whom" }, href: "/dla-kogo" },
-  { name: { pl: "Akademia", en: "Academy" }, href: "/akademia" },
   { name: { pl: "Blog", en: "Blog" }, href: "/blog" },
   { name: { pl: "O nas", en: "About us" }, href: "/o-nas" },
   { name: { pl: "Kontakt", en: "Contact" }, href: "/kontakt" },
@@ -24,6 +23,7 @@ const navLinksData = [
 
 const servicesDropdownData = [
   { name: { pl: "Wszystkie usługi", en: "All services" }, href: "/uslugi" },
+  { name: { pl: "Kompleksowa obsługa", en: "Full-service" }, href: "/kompleksowa-obsluga-marketingowa" },
   { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe" },
   { name: { pl: "Social Media", en: "Social Media" }, href: "/social-media" },
   { name: { pl: "Pozycjonowanie SEO", en: "SEO" }, href: "/pozycjonowanie" },
