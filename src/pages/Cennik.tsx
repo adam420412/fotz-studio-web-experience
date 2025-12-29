@@ -44,7 +44,7 @@ import {
   Minus,
   ArrowRight
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
@@ -600,6 +600,7 @@ type FlowStep = "categories" | "services" | "summary" | "contact";
 
 export default function Cennik() {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [flowStep, setFlowStep] = useState<FlowStep>("categories");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
@@ -750,14 +751,11 @@ export default function Cennik() {
 
       toast({
         title: "Zapytanie wysłane!",
-        description: "Odezwiemy się do Ciebie w ciągu 24h.",
+        description: "Przekierowujemy Cię na stronę potwierdzenia...",
       });
 
-      // Reset
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      setSelectedServices([]);
-      setSelectedCategories([]);
-      setFlowStep("categories");
+      // Przekierowanie na stronę z podziękowaniem
+      navigate("/podziekowanie");
     } catch (error) {
       console.error("Error sending inquiry:", error);
       toast({
