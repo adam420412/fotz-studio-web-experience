@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Box, Building, Camera, Layers, Play, Sparkles, Eye, Palette, CheckCircle, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ArrowRight, Box, Building, Camera, Layers, Play, Sparkles, Eye, Palette, CheckCircle, ChevronLeft, ChevronRight, X, Check, Zap, Crown, Repeat } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { useState, useCallback, useEffect } from "react";
@@ -23,6 +23,13 @@ import viz6 from "@/assets/wizualizacje/viz-6.png";
 import viz7 from "@/assets/wizualizacje/viz-7.webp";
 import viz8 from "@/assets/wizualizacje/viz-8.webp";
 import viz9 from "@/assets/wizualizacje/viz-9.webp";
+import viz10 from "@/assets/wizualizacje/viz-10.webp";
+import viz11 from "@/assets/wizualizacje/viz-11.webp";
+import viz12 from "@/assets/wizualizacje/viz-12.webp";
+import viz13 from "@/assets/wizualizacje/viz-13.webp";
+import viz14 from "@/assets/wizualizacje/viz-14.webp";
+import viz15 from "@/assets/wizualizacje/viz-15.png";
+import viz16 from "@/assets/wizualizacje/viz-16.webp";
 
 const portfolioImages = [
   { src: viz1, title: "Wizualizacja produktowa" },
@@ -34,6 +41,13 @@ const portfolioImages = [
   { src: viz7, title: "Studio produkcyjne" },
   { src: viz8, title: "Wizualizacja architektoniczna" },
   { src: viz9, title: "Studio produkcyjne" },
+  { src: viz10, title: "Wizualizacja produktowa" },
+  { src: viz11, title: "Wizualizacja sci-fi" },
+  { src: viz12, title: "Wizualizacja kosmiczna" },
+  { src: viz13, title: "Wizualizacja przemysłowa" },
+  { src: viz14, title: "Wizualizacja wnętrza" },
+  { src: viz15, title: "Wizualizacja produktowa" },
+  { src: viz16, title: "Studio produkcyjne" },
 ];
 
 const services = [
@@ -130,6 +144,80 @@ const faqItems = [
     question: "Jaki jest koszt wizualizacji 3D?",
     answer: "Koszt zależy od złożoności projektu. Proste wizualizacje produktowe zaczynają się od 500 zł, natomiast kompleksowe projekty architektoniczne wyceniamy indywidualnie."
   }
+];
+
+const pricingPackages = [
+  {
+    name: "Jednorazowo",
+    icon: Zap,
+    description: "Pojedyncze wizualizacje na zamówienie",
+    prices: [
+      { type: "Wizualizacja produktowa", price: "od 500 zł" },
+      { type: "Wizualizacja wnętrza", price: "od 800 zł" },
+      { type: "Wizualizacja architektoniczna", price: "od 1500 zł" },
+      { type: "Animacja 3D (do 30s)", price: "od 3000 zł" },
+    ],
+    features: [
+      "2 rundy poprawek w cenie",
+      "Wysokiej rozdzielczości pliki",
+      "Realizacja 5-14 dni roboczych",
+      "Wsparcie konsultacyjne",
+    ],
+    popular: false,
+  },
+  {
+    name: "Start",
+    icon: Box,
+    price: "1 499",
+    period: "/mies.",
+    description: "Idealne dla małych firm i startupów",
+    features: [
+      "2 wizualizacje produktowe miesięcznie",
+      "1 wizualizacja wnętrza miesięcznie",
+      "3 rundy poprawek na projekt",
+      "Priorytetowa realizacja (3-7 dni)",
+      "Dedykowany opiekun projektu",
+      "Rabat 10% na dodatkowe projekty",
+    ],
+    popular: false,
+  },
+  {
+    name: "Business",
+    icon: Crown,
+    price: "2 999",
+    period: "/mies.",
+    description: "Dla firm z regularnymi potrzebami",
+    features: [
+      "5 wizualizacji produktowych miesięcznie",
+      "3 wizualizacje wnętrz miesięcznie",
+      "1 wizualizacja architektoniczna miesięcznie",
+      "Nieograniczone poprawki",
+      "Ekspresowa realizacja (2-5 dni)",
+      "Dedykowany opiekun projektu",
+      "Rabat 20% na animacje 3D",
+      "Dostęp do panoram 360°",
+    ],
+    popular: true,
+  },
+  {
+    name: "Premium",
+    icon: Repeat,
+    price: "5 999",
+    period: "/mies.",
+    description: "Kompleksowa obsługa dla dużych projektów",
+    features: [
+      "Nieograniczone wizualizacje produktowe",
+      "8 wizualizacji wnętrz miesięcznie",
+      "3 wizualizacje architektoniczne miesięcznie",
+      "2 animacje 3D (do 30s) miesięcznie",
+      "Nieograniczone poprawki",
+      "Realizacja priorytetowa (1-3 dni)",
+      "Dedykowany zespół projektowy",
+      "Panoramy 360° w cenie",
+      "Spacery wirtualne w cenie",
+    ],
+    popular: false,
+  },
 ];
 
 const Wizualizacje3D = () => {
@@ -436,6 +524,98 @@ const Wizualizacje3D = () => {
                 </FadeInView>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Pricing Section */}
+        <section id="cennik" className="py-20 md:py-32 bg-muted/30">
+          <div className="container-wide px-6 md:px-12">
+            <FadeInView>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Cennik i{" "}
+                  <span className="bg-gradient-brand bg-clip-text text-transparent">pakiety subskrypcyjne</span>
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Wybierz model współpracy dopasowany do Twoich potrzeb - jednorazowe zlecenia lub stałą subskrypcję z rabatami
+                </p>
+              </div>
+            </FadeInView>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {pricingPackages.map((pkg, index) => (
+                <FadeInView key={pkg.name} delay={index * 0.1}>
+                  <motion.div
+                    whileHover={{ y: -8 }}
+                    className={`relative bg-card border rounded-2xl p-6 h-full flex flex-col ${
+                      pkg.popular 
+                        ? "border-[#75143F] ring-2 ring-[#75143F]/20" 
+                        : "border-border hover:border-[#75143F]/50"
+                    } transition-all duration-300`}
+                  >
+                    {pkg.popular && (
+                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-brand rounded-full text-white text-xs font-medium">
+                        Najpopularniejszy
+                      </div>
+                    )}
+                    
+                    <div className="mb-4">
+                      <div className="w-12 h-12 rounded-xl bg-gradient-brand flex items-center justify-center mb-4">
+                        <pkg.icon className="w-6 h-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold mb-1">{pkg.name}</h3>
+                      <p className="text-sm text-muted-foreground">{pkg.description}</p>
+                    </div>
+                    
+                    {pkg.price ? (
+                      <div className="mb-6">
+                        <span className="text-4xl font-bold">{pkg.price}</span>
+                        <span className="text-muted-foreground"> zł{pkg.period}</span>
+                      </div>
+                    ) : pkg.prices ? (
+                      <div className="mb-6 space-y-2">
+                        {pkg.prices.map((p, i) => (
+                          <div key={i} className="flex justify-between text-sm">
+                            <span className="text-muted-foreground">{p.type}</span>
+                            <span className="font-medium">{p.price}</span>
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                    
+                    <ul className="space-y-3 mb-6 flex-1">
+                      {pkg.features.map((feature, i) => (
+                        <li key={i} className="flex gap-2 text-sm">
+                          <Check className="w-4 h-4 text-[#75143F] flex-shrink-0 mt-0.5" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    <Button 
+                      variant={pkg.popular ? "hero" : "outline"} 
+                      className="w-full" 
+                      asChild
+                    >
+                      <Link to="/kontakt">
+                        {pkg.price ? "Wybierz pakiet" : "Zapytaj o wycenę"}
+                      </Link>
+                    </Button>
+                  </motion.div>
+                </FadeInView>
+              ))}
+            </div>
+            
+            <FadeInView delay={0.4}>
+              <div className="mt-12 text-center">
+                <p className="text-muted-foreground">
+                  Potrzebujesz indywidualnej wyceny?{" "}
+                  <Link to="/kontakt" className="text-[#75143F] hover:underline font-medium">
+                    Skontaktuj się z nami
+                  </Link>
+                </p>
+              </div>
+            </FadeInView>
           </div>
         </section>
 
