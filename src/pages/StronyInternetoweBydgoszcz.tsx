@@ -53,9 +53,9 @@ const StronyInternetoweBydgoszcz = () => {
   ];
 
   const pricing = [
-    { title: "Strona wizytówkowa / Landing page", desc: "Prosta strona www prezentująca podstawowe informacje o firmie.", price: "od 1 500 zł netto" },
-    { title: "Strona firmowa", desc: "Profesjonalna strona internetowa z rozbudowanymi funkcjonalnościami.", price: "od 5 000 zł netto" },
-    { title: "Sklep internetowy e-commerce", desc: "Zaawansowana platforma e-commerce z integracjami płatności.", price: "od 7 000 zł netto" },
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
@@ -113,7 +113,7 @@ const StronyInternetoweBydgoszcz = () => {
     },
     {
       question: "Ile kosztuje stworzenie strony dla małej firmy w Bydgoszczy?",
-      answer: "Koszt strony zależy od zakresu funkcji — prosty landing page będzie tańszy niż sklep internetowy z integracjami WooCommerce. Wycena uwzględnia domenę, hosting, projekt graficzny, optymalizację SEO oraz późniejsze wsparcie techniczne. Ceny zaczynają się od około 1500 zł netto."
+      answer: "Koszt strony zależy od zakresu funkcji — prosty landing page będzie tańszy niż sklep internetowy z integracjami WooCommerce. Wycena uwzględnia domenę, hosting, projekt graficzny, optymalizację SEO oraz późniejsze wsparcie techniczne. Ceny zaczynają się od 2 000 zł netto."
     },
     {
       question: "Jak strony internetowe mogą przyciągnąć klientów?",

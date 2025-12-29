@@ -72,7 +72,7 @@ const StronyInternetoweKrakow = () => {
     { 
       title: "Landing Page", 
       desc: "Strona wizytówkowa prezentująca firmę", 
-      price: "od 1 500 zł",
+      price: "od 2 000 zł",
       features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"]
     },
     { 
@@ -85,7 +85,7 @@ const StronyInternetoweKrakow = () => {
     { 
       title: "Sklep E-commerce", 
       desc: "Platforma sprzedażowa z integracjami", 
-      price: "od 7 000 zł",
+      price: "od 8 000 zł",
       features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"]
     },
   ];
