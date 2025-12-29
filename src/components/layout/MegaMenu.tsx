@@ -8,7 +8,7 @@ import brandingImg from "@/assets/portfolio/klagem.png";
 import websiteImg from "@/assets/portfolio/rppg.png";
 import videoImg from "@/assets/portfolio/enea-stadion.png";
 import marketingImg from "@/assets/portfolio/fabryka-virali.png";
-import seoImg from "@/assets/portfolio/celsjusz.png";
+import graphicImg from "@/assets/portfolio/verthe.png";
 
 interface MenuCategory {
   title: string;
@@ -60,7 +60,8 @@ const menuCategories: MenuCategory[] = [
     image: brandingImg,
     color: "#75143F",
     items: [
-      { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", badge: "Nowe" },
+      { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
+      { name: "Obsługa graficzna", href: "/agencja-graficzna", badge: "Nowe" },
     ],
   },
 ];
@@ -83,16 +84,20 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
             className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
             onClick={onClose}
           />
           
           {/* Menu */}
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, y: -20, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -10, scale: 0.98 }}
+            transition={{ 
+              duration: 0.3, 
+              ease: [0.4, 0, 0.2, 1]
+            }}
             className="fixed top-20 left-0 right-0 z-50 px-4 md:px-12"
           >
             <div className="container mx-auto">
@@ -100,45 +105,97 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                 <div className="grid lg:grid-cols-[320px_1fr] min-h-[400px]">
                   {/* Left Preview Panel */}
                   <div className="hidden lg:block relative overflow-hidden">
-                    <AnimatePresence mode="wait">
+                    {/* Background layer - always visible for smooth transition */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#75143F] to-[#0F3053]" />
+                    
+                    <AnimatePresence mode="sync">
                       <motion.div
                         key={hoveredCategory}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.3 }}
+                        initial={{ opacity: 0, scale: 1.1 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        transition={{ 
+                          duration: 0.5, 
+                          ease: [0.4, 0, 0.2, 1]
+                        }}
                         className="absolute inset-0"
                       >
-                        <div 
+                        {/* Image with crossfade */}
+                        <motion.div 
                           className="absolute inset-0 bg-cover bg-center"
                           style={{ backgroundImage: `url(${activeCategory.image})` }}
+                          initial={{ scale: 1.1 }}
+                          animate={{ scale: 1 }}
+                          transition={{ duration: 0.8, ease: "easeOut" }}
                         />
-                        <div 
+                        
+                        {/* Color overlay with smooth transition */}
+                        <motion.div 
                           className="absolute inset-0"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ duration: 0.4 }}
                           style={{ 
                             background: `linear-gradient(135deg, ${activeCategory.color}E6 0%, ${activeCategory.color}99 100%)` 
                           }}
                         />
-                        <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                      </motion.div>
+                    </AnimatePresence>
+                    
+                    {/* Content overlay */}
+                    <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
+                      <AnimatePresence mode="wait">
+                        <motion.div
+                          key={`content-${hoveredCategory}`}
+                          initial={{ y: 30, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          exit={{ y: -20, opacity: 0 }}
+                          transition={{ 
+                            duration: 0.4, 
+                            ease: [0.4, 0, 0.2, 1],
+                            delay: 0.1
+                          }}
+                        >
                           <motion.h3 
-                            initial={{ y: 20, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.1 }}
                             className="text-2xl font-bold text-white mb-2"
                           >
                             {activeCategory.title}
                           </motion.h3>
                           <motion.p
-                            initial={{ y: 20, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ delay: 0.15 }}
                             className="text-white/80 text-sm"
                           >
                             {activeCategory.description}
                           </motion.p>
-                        </div>
-                      </motion.div>
-                    </AnimatePresence>
+                        </motion.div>
+                      </AnimatePresence>
+                    </div>
+                    
+                    {/* Animated decorative elements */}
+                    <motion.div 
+                      className="absolute top-4 right-4 w-20 h-20 rounded-full border border-white/20"
+                      animate={{ 
+                        scale: [1, 1.1, 1],
+                        opacity: [0.3, 0.5, 0.3]
+                      }}
+                      transition={{ 
+                        duration: 3, 
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                    />
+                    <motion.div 
+                      className="absolute bottom-20 right-8 w-12 h-12 rounded-full border border-white/10"
+                      animate={{ 
+                        scale: [1, 1.2, 1],
+                        opacity: [0.2, 0.4, 0.2]
+                      }}
+                      transition={{ 
+                        duration: 4, 
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: 1
+                      }}
+                    />
                   </div>
 
                   {/* Right Menu Items */}
@@ -155,48 +212,70 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                       {menuCategories.map((category, categoryIndex) => (
-                        <div
+                        <motion.div
                           key={category.title}
                           onMouseEnter={() => setHoveredCategory(categoryIndex)}
                           className="space-y-3"
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: categoryIndex * 0.05 + 0.1 }}
                         >
                           <h4 
                             className={cn(
-                              "text-sm font-semibold transition-colors",
+                              "text-sm font-semibold transition-all duration-300 flex items-center gap-2",
                               hoveredCategory === categoryIndex 
-                                ? "text-foreground" 
+                                ? "text-foreground translate-x-1" 
                                 : "text-muted-foreground"
                             )}
                             style={{ 
                               color: hoveredCategory === categoryIndex ? category.color : undefined 
                             }}
                           >
+                            <motion.span
+                              className="w-1.5 h-1.5 rounded-full"
+                              style={{ backgroundColor: category.color }}
+                              animate={{ 
+                                scale: hoveredCategory === categoryIndex ? 1 : 0,
+                                opacity: hoveredCategory === categoryIndex ? 1 : 0
+                              }}
+                              transition={{ duration: 0.2 }}
+                            />
                             {category.title}
                           </h4>
                           <ul className="space-y-2">
-                            {category.items.map((item) => (
-                              <li key={item.href}>
+                            {category.items.map((item, itemIndex) => (
+                              <motion.li 
+                                key={item.href}
+                                initial={{ opacity: 0, x: -10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
+                              >
                                 <Link
                                   to={item.href}
                                   onClick={onClose}
-                                  className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
+                                  className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1"
                                 >
                                   {item.name}
                                   {item.badge && (
-                                    <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded">
+                                    <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
                                       {item.badge}
                                     </span>
                                   )}
                                 </Link>
-                              </li>
+                              </motion.li>
                             ))}
                           </ul>
-                        </div>
+                        </motion.div>
                       ))}
                     </div>
 
                     {/* Bottom CTA */}
-                    <div className="mt-8 pt-6 border-t border-border">
+                    <motion.div 
+                      className="mt-8 pt-6 border-t border-border"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: 0.3 }}
+                    >
                       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                         <p className="text-sm text-muted-foreground">
                           Nie wiesz, czego potrzebujesz?
@@ -204,12 +283,19 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         <Link
                           to="/kontakt"
                           onClick={onClose}
-                          className="text-sm font-medium text-[#75143F] hover:text-[#75143F]/80 transition-colors"
+                          className="text-sm font-medium text-[#75143F] hover:text-[#75143F]/80 transition-colors group flex items-center gap-1"
                         >
-                          Umów bezpłatną konsultację →
+                          Umów bezpłatną konsultację 
+                          <motion.span
+                            className="inline-block"
+                            animate={{ x: [0, 4, 0] }}
+                            transition={{ duration: 1.5, repeat: Infinity }}
+                          >
+                            →
+                          </motion.span>
                         </Link>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               </div>
