@@ -4,6 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, User, ChevronRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const cities = [
   { name: "Poznań", path: "/strony-internetowe-poznan", active: true },
@@ -444,6 +445,9 @@ const BlogKosztStrony = () => {
             </div>
           </div>
         </article>
+
+        {/* Related Articles */}
+        <RelatedArticles currentArticleId="ile-kosztuje-strona-internetowa" />
       </Layout>
     </>
   );

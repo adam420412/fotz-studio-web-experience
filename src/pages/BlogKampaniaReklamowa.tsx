@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const BlogKampaniaReklamowa = () => {
   return (
@@ -234,6 +235,9 @@ const BlogKampaniaReklamowa = () => {
             </div>
           </div>
         </article>
+
+        {/* Related Articles */}
+        <RelatedArticles currentArticleId="kampania-reklamowa-marketingowa" />
       </Layout>
     </>
   );
