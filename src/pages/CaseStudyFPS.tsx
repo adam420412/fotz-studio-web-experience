@@ -270,7 +270,7 @@ const CaseStudyFPS = () => {
                 src="/videos/fps-poznan.mp4"
                 controls
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                poster="/videos/fps-poznan.mp4#t=0.5"
+                poster={fpsImg}
               />
               {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-2xl pointer-events-none" />
