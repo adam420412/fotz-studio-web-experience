@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { CalendarDays, ArrowRight, CheckCircle, Megaphone, Camera, Video, Share2, Star, Phone, Users } from "lucide-react";
+import { CalendarDays, ArrowRight, CheckCircle, Megaphone, Camera, Video, Share2, Star, Phone, Users, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { OrganizationSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { useState } from "react";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 // Import case study images
 import eneaImage from "@/assets/portfolio/enea-stadion.png";
@@ -86,7 +87,36 @@ const benefits = [
   "Zespół gotowy do pracy w weekendy i wieczory",
 ];
 
+const faqItems = [
+  {
+    question: "Kiedy zacząć promocję wydarzenia?",
+    answer: "Dla dużych eventów rekomendujemy start 2-3 miesiące przed datą. Dla mniejszych wydarzeń wystarczy 4-6 tygodni. Kluczowe jest zaplanowanie faz kampanii: early birds, regularna sprzedaż i last minute.",
+  },
+  {
+    question: "Jak skutecznie sprzedawać bilety online?",
+    answer: "Kluczowe elementy to: dobra strona wydarzenia, remarketing do osób zainteresowanych, kampanie lookalike, współpraca z influencerami i media partnerzy. Ważne jest też tworzenie FOMO - limitowane pule biletów i odliczanie.",
+  },
+  {
+    question: "Czy dokumentujecie wydarzenia foto i video?",
+    answer: "Tak, oferujemy pełną obsługę foto i video eventów. Nasz zespół ma doświadczenie z koncertami, konferencjami i wydarzeniami sportowymi. Dostarczamy materiały do wykorzystania w przyszłych kampaniach promocyjnych.",
+  },
+  {
+    question: "Jak promować wydarzenie cykliczne?",
+    answer: "Dla wydarzeń cyklicznych budujemy rozpoznawalną markę i społeczność. Wykorzystujemy materiały z poprzednich edycji, tworzymy programy lojalnościowe dla stałych uczestników i prowadzimy ciągłą komunikację między edycjami.",
+  },
+  {
+    question: "Jaki budżet reklamowy potrzebny na promocję eventu?",
+    answer: "Budżet zależy od skali wydarzenia. Dla lokalnych eventów na 100-500 osób wystarczy 2000-5000 zł. Większe wydarzenia na 1000+ osób wymagają budżetów 10000-50000 zł. Ważny jest też budżet na produkcję contentu.",
+  },
+  {
+    question: "Czy pomagacie w relacjach live z wydarzeń?",
+    answer: "Tak, oferujemy transmisje live na social media i platformy streamingowe. Realizujemy również relacje stories i posty w czasie rzeczywistym. To świetny sposób na budowanie zasięgów i promocję przyszłych edycji.",
+  },
+];
+
 export default function DlaKogoInstytucje() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  
   return (
     <Layout>
       <Helmet>
@@ -110,6 +140,7 @@ export default function DlaKogoInstytucje() {
           { name: "Instytucje i eventy", url: "https://fotz.pl/dla-kogo/instytucje" },
         ]}
       />
+      <FAQSchema items={faqItems} />
 
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">
@@ -348,6 +379,55 @@ export default function DlaKogoInstytucje() {
                     </Link>
                   </Button>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+              Często zadawane <span className="text-gradient">pytania</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Odpowiedzi na najczęstsze pytania o marketing wydarzeń.
+            </p>
+          </motion.div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-card rounded-xl border border-border overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full flex items-center justify-between p-6 text-left hover:bg-muted/50 transition-colors"
+                >
+                  <span className="font-heading font-bold pr-4">{item.question}</span>
+                  {openFaq === index ? (
+                    <Minus className="w-5 h-5 text-primary flex-shrink-0" />
+                  ) : (
+                    <Plus className="w-5 h-5 text-primary flex-shrink-0" />
+                  )}
+                </button>
+                {openFaq === index && (
+                  <div className="px-6 pb-6 text-muted-foreground">
+                    {item.answer}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

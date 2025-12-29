@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Star, Phone, Target } from "lucide-react";
+import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Star, Phone, Target, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { OrganizationSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { useState } from "react";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 // Import case study images
 import vertheImage from "@/assets/portfolio/verthe.png";
@@ -82,7 +83,36 @@ const benefits = [
   "Optymalizacja feed'ów produktowych",
 ];
 
+const faqItems = [
+  {
+    question: "Jaki budżet reklamowy potrzebuję na start?",
+    answer: "Dla małych sklepów rekomendujemy start od 3000-5000 zł miesięcznie na reklamy (Google + Meta). Pozwala to zebrać dane i zoptymalizować kampanie. Większe sklepy z szerszym asortymentem powinny zaczynać od 10000+ zł miesięcznie.",
+  },
+  {
+    question: "Co to jest ROAS i jaki powinienem mieć?",
+    answer: "ROAS (Return on Ad Spend) to zwrot z wydatków reklamowych. Jeśli ROAS wynosi 5x, oznacza to, że każda wydana złotówka na reklamy generuje 5 zł przychodu. Dobry ROAS zależy od marży - przy marży 30% potrzebujesz minimum ROAS 3.3x, aby wyjść na zero.",
+  },
+  {
+    question: "Jak długo trwa optymalizacja kampanii e-commerce?",
+    answer: "Pierwsze wyniki widoczne są po 2-4 tygodniach. Pełna optymalizacja kampanii trwa 2-3 miesiące - algorytmy potrzebują danych o konwersjach. Po tym okresie kampanie osiągają stabilną wydajność i można je skalować.",
+  },
+  {
+    question: "Czy pomożecie z remarketingiem?",
+    answer: "Tak, remarketing to nasza specjalność. Konfigurujemy dynamiczny remarketing produktowy, kampanie odzyskiwania porzuconych koszyków i cross-selling. Remarketing często ma najwyższy ROAS ze wszystkich kanałów.",
+  },
+  {
+    question: "Jakie platformy e-commerce obsługujecie?",
+    answer: "Mamy doświadczenie ze wszystkimi popularnymi platformami: Shopify, WooCommerce, PrestaShop, Magento, Shoper, IdoSell. Integrujemy się z każdą platformą obsługującą feedy produktowe.",
+  },
+  {
+    question: "Czy zajmujecie się również SEO dla sklepów?",
+    answer: "Tak, oferujemy pełne SEO e-commerce: optymalizację kategorii i produktów, content marketing, link building i technical SEO. SEO to świetne uzupełnienie płatnych kampanii - buduje długoterminowy, darmowy ruch.",
+  },
+];
+
 export default function DlaKogoEcommerce() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  
   return (
     <Layout>
       <Helmet>
@@ -106,6 +136,7 @@ export default function DlaKogoEcommerce() {
           { name: "E-commerce", url: "https://fotz.pl/dla-kogo/ecommerce" },
         ]}
       />
+      <FAQSchema items={faqItems} />
 
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">
@@ -344,6 +375,55 @@ export default function DlaKogoEcommerce() {
                     </Link>
                   </Button>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+              Często zadawane <span className="text-gradient">pytania</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Odpowiedzi na najczęstsze pytania o marketing e-commerce.
+            </p>
+          </motion.div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-card rounded-xl border border-border overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full flex items-center justify-between p-6 text-left hover:bg-muted/50 transition-colors"
+                >
+                  <span className="font-heading font-bold pr-4">{item.question}</span>
+                  {openFaq === index ? (
+                    <Minus className="w-5 h-5 text-primary flex-shrink-0" />
+                  ) : (
+                    <Plus className="w-5 h-5 text-primary flex-shrink-0" />
+                  )}
+                </button>
+                {openFaq === index && (
+                  <div className="px-6 pb-6 text-muted-foreground">
+                    {item.answer}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

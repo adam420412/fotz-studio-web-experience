@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Crown, ArrowRight, CheckCircle, Sparkles, Palette, Users, Megaphone, Star, Phone } from "lucide-react";
+import { Crown, ArrowRight, CheckCircle, Sparkles, Palette, Users, Megaphone, Star, Phone, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { OrganizationSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { useState } from "react";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 // Import case study images
 import klageImage from "@/assets/portfolio/klagem.png";
@@ -94,7 +95,36 @@ const benefits = [
   "Strategiczne myślenie o pozycjonowaniu marki",
 ];
 
+const faqItems = [
+  {
+    question: "Czym różni się marketing premium od standardowego?",
+    answer: "Marketing premium skupia się na budowaniu ekskluzywności i pożądania, nie na promocjach cenowych. Komunikacja jest bardziej wyrafinowana, content wyższej jakości, a każdy element musi oddawać wartości marki luksusowej.",
+  },
+  {
+    question: "Jak budować wizerunek marki premium?",
+    answer: "Kluczowe elementy to: spójna, wysokiej jakości identyfikacja wizualna, ekskluzywny content (profesjonalne zdjęcia, video), strategiczny influencer marketing, selektywna dystrybucja i storytelling budujący aspiracyjny wizerunek.",
+  },
+  {
+    question: "Jaki budżet potrzebny jest na marketing marki premium?",
+    answer: "Marketing premium wymaga wyższych inwestycji niż standardowy - minimum 10000-15000 zł miesięcznie na pełną obsługę. Obejmuje to produkcję premium contentu, współpracę z influencerami i starannie targetowane kampanie.",
+  },
+  {
+    question: "Czy influencer marketing działa dla marek premium?",
+    answer: "Tak, ale wymaga starannego doboru ambasadorów. Dla marek premium ważniejsza jest autentyczność i dopasowanie wartości niż liczba followersów. Współpracujemy z mikroinfluencerami z segmentu lifestyle i luxury.",
+  },
+  {
+    question: "Jak mierzyć sukces marketingu premium?",
+    answer: "Oprócz standardowych KPI (sprzedaż, ROI), mierzymy: perception metrics (postrzeganie marki), share of voice w segmencie premium, jakość leadów, średnią wartość zamówienia (AOV) i wskaźniki lojalności klientów.",
+  },
+  {
+    question: "Czy obsługujecie marki dopiero wchodzące w segment premium?",
+    answer: "Tak, pomagamy markom w repozycjonowaniu do segmentu premium. To proces wymagający kompleksowej strategii - od rebrandingu przez nową komunikację po zmianę kanałów dystrybucji. Mamy doświadczenie w takich transformacjach.",
+  },
+];
+
 export default function DlaKogoMarkiPremium() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  
   return (
     <Layout>
       <Helmet>
@@ -118,6 +148,7 @@ export default function DlaKogoMarkiPremium() {
           { name: "Marki premium", url: "https://fotz.pl/dla-kogo/marki-premium" },
         ]}
       />
+      <FAQSchema items={faqItems} />
 
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">
@@ -329,6 +360,55 @@ export default function DlaKogoMarkiPremium() {
                     </Link>
                   </Button>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-card">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+              Często zadawane <span className="text-gradient">pytania</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Odpowiedzi na najczęstsze pytania o marketing marek premium.
+            </p>
+          </motion.div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-background rounded-xl border border-border overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full flex items-center justify-between p-6 text-left hover:bg-muted/50 transition-colors"
+                >
+                  <span className="font-heading font-bold pr-4">{item.question}</span>
+                  {openFaq === index ? (
+                    <Minus className="w-5 h-5 text-primary flex-shrink-0" />
+                  ) : (
+                    <Plus className="w-5 h-5 text-primary flex-shrink-0" />
+                  )}
+                </button>
+                {openFaq === index && (
+                  <div className="px-6 pb-6 text-muted-foreground">
+                    {item.answer}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>
