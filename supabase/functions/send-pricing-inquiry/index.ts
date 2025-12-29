@@ -75,7 +75,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification to admin
     const adminEmailResponse = await sendEmail(
-      ["kontakt@fotz.pl"],
+      ["adam@fotz.pl"],
       `Nowe zapytanie z cennika od ${name}`,
       `
         <h1>Nowe zapytanie ofertowe z konfiguratora cennika</h1>
