@@ -17,6 +17,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { InstagramEmbed } from "@/components/InstagramEmbed";
 
 // Importy zdjęć Enea Stadion
 import eneaTriatlon from "@/assets/enea/bydgoszcz-triatlon.png";
@@ -103,44 +104,6 @@ const galleryImages = [
   },
 ];
 
-// Posty z Instagrama - realne zdjęcia z realizacji
-const instagramPosts = [
-  {
-    id: 1,
-    image: eneaFajerwerki,
-    likes: "4,521",
-    comments: "156",
-    type: "reel",
-  },
-  {
-    id: 2,
-    image: eneaKoncert,
-    likes: "3,120",
-    comments: "102",
-    type: "reel",
-  },
-  {
-    id: 3,
-    image: eneaTriatlon,
-    likes: "2,340",
-    comments: "87",
-    type: "post",
-  },
-  {
-    id: 4,
-    image: eneaKonferencja,
-    likes: "1,892",
-    comments: "54",
-    type: "post",
-  },
-  {
-    id: 5,
-    image: eneaCatering,
-    likes: "1,567",
-    comments: "43",
-    type: "post",
-  },
-];
 
 export default function CaseStudyEnea() {
   return (
@@ -375,7 +338,7 @@ export default function CaseStudyEnea() {
         </div>
       </section>
 
-      {/* Instagram Section */}
+      {/* Instagram Reels Section */}
       <section className="section-padding bg-card">
         <div className="container-wide">
           <motion.div
@@ -387,14 +350,14 @@ export default function CaseStudyEnea() {
           >
             <div>
               <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-                Social Media
+                Nasze Reels
               </span>
               <h2 className="text-3xl md:text-5xl font-heading font-bold">
                 Prowadzimy <span className="text-gradient">@eneastadion</span>
               </h2>
               <p className="text-muted-foreground mt-4 max-w-xl">
                 Od ponad roku tworzymy content na Instagramie Enea Stadion. 
-                Dynamiczne reels, relacje z eventów i spójna komunikacja wizualna.
+                Dynamiczne reels z koncertów, meczów i eventów.
               </p>
             </div>
             <Button variant="outline" size="lg" asChild>
@@ -411,39 +374,56 @@ export default function CaseStudyEnea() {
             </Button>
           </motion.div>
 
-          {/* Instagram Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {instagramPosts.map((post, index) => (
-              <motion.a
-                key={post.id}
-                href="https://instagram.com/eneastadion"
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="relative aspect-square rounded-xl overflow-hidden group"
-              >
-                <img
-                  src={post.image}
-                  alt={`Instagram post ${post.id}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                {post.type === "reel" && (
-                  <div className="absolute top-2 right-2">
-                    <Play className="w-5 h-5 text-white drop-shadow-lg" />
-                  </div>
-                )}
-                <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
-                  <div className="flex items-center gap-4 text-sm font-medium">
-                    <span>❤️ {post.likes}</span>
-                    <span>💬 {post.comments}</span>
-                  </div>
-                </div>
-              </motion.a>
-            ))}
-          </div>
+          {/* Instagram Reels Grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <div className="flex flex-col">
+              <InstagramEmbed 
+                url="https://www.instagram.com/reel/DQCNKAajM-q/" 
+                className="flex-1"
+              />
+            </div>
+            
+            <div className="flex flex-col">
+              <InstagramEmbed 
+                url="https://www.instagram.com/reel/DPWohvwjJZl/" 
+                className="flex-1"
+              />
+            </div>
+            
+            <div className="flex flex-col">
+              <InstagramEmbed 
+                url="https://www.instagram.com/reel/DO3BSVKDNcf/" 
+                className="flex-1"
+              />
+            </div>
+
+            <div className="flex flex-col">
+              <InstagramEmbed 
+                url="https://www.instagram.com/reel/DOjM5AKCe6O/" 
+                className="flex-1"
+              />
+            </div>
+
+            <div className="flex flex-col">
+              <InstagramEmbed 
+                url="https://www.instagram.com/reel/DK4-AjTi_P-/" 
+                className="flex-1"
+              />
+            </div>
+
+            <div className="flex flex-col">
+              <InstagramEmbed 
+                url="https://www.instagram.com/reel/DPtonLMDC8o/" 
+                className="flex-1"
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 
