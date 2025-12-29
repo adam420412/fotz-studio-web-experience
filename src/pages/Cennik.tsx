@@ -5,6 +5,9 @@ import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
 import { 
   Globe, 
   Film, 
@@ -22,12 +25,36 @@ import {
   ChevronRight,
   ChevronLeft,
   Sparkles,
+  MapPin,
+  Megaphone,
+  Users,
+  Image,
+  Video,
+  Smartphone,
+  Linkedin,
+  Mail,
+  User,
+  MessageSquare,
+  Building,
+  Palette,
+  FileText,
+  PenTool,
+  Loader2,
   Plus,
   Minus,
   ArrowRight
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
+  email: z.string().trim().email("Nieprawidłowy adres email").max(255, "Email max 255 znaków"),
+  phone: z.string().trim().optional(),
+  message: z.string().trim().min(10, "Wiadomość musi mieć minimum 10 znaków").max(2000, "Wiadomość max 2000 znaków"),
+});
 
 interface ServiceOption {
   id: string;
@@ -59,7 +86,7 @@ const categories: CategoryStep[] = [
       {
         id: "landing",
         name: "Landing Page",
-        description: "Jednostronicowa witryna z formularzem",
+        description: "Jednostronicowa witryna konwersyjna",
         priceFrom: 2000,
         priceTo: 4000,
         priceType: "jednorazowo",
@@ -67,64 +94,225 @@ const categories: CategoryStep[] = [
         includes: ["Responsywny design", "Formularz kontaktowy", "Optymalizacja SEO", "Hosting (1 rok)"]
       },
       {
+        id: "wizytowka",
+        name: "Strona Wizytówka",
+        description: "Prosta prezentacja firmy (3-5 podstron)",
+        priceFrom: 3000,
+        priceTo: 5000,
+        priceType: "jednorazowo",
+        icon: Globe,
+        includes: ["Do 5 podstron", "Galeria", "Mapa dojazdu", "Formularz"]
+      },
+      {
         id: "firmowa",
         name: "Strona Firmowa",
-        description: "Wielostronicowa wizytówka z CMS",
+        description: "Rozbudowana witryna z CMS",
         priceFrom: 5000,
         priceTo: 12000,
         priceType: "jednorazowo",
         icon: Globe,
         popular: true,
-        includes: ["Do 10 podstron", "System CMS", "Blog firmowy", "Integracje", "Szkolenie"]
+        includes: ["Do 15 podstron", "System CMS", "Blog firmowy", "Integracje", "Szkolenie"]
       },
       {
-        id: "ecommerce",
-        name: "Sklep E-commerce",
-        description: "Pełna integracja płatności i logistyki",
-        priceFrom: 8000,
+        id: "korporacyjna",
+        name: "Strona Korporacyjna",
+        description: "Zaawansowana strona dla dużych firm",
+        priceFrom: 12000,
+        priceTo: 30000,
+        priceType: "jednorazowo",
+        icon: Building,
+        includes: ["Nieograniczone podstrony", "Wiele języków", "Zaawansowane integracje", "Panel administracyjny"]
+      },
+      {
+        id: "ecommerce-maly",
+        name: "Sklep E-commerce Mały",
+        description: "Do 100 produktów",
+        priceFrom: 6000,
+        priceTo: 12000,
+        priceType: "jednorazowo",
+        icon: ShoppingCart,
+        includes: ["Do 100 produktów", "Płatności online", "Koszyk", "Panel zamówień"]
+      },
+      {
+        id: "ecommerce-sredni",
+        name: "Sklep E-commerce Średni",
+        description: "100-1000 produktów",
+        priceFrom: 12000,
         priceTo: 25000,
         priceType: "jednorazowo",
         icon: ShoppingCart,
-        includes: ["Nieograniczone produkty", "Płatności online", "Integracja z kurierami", "Panel administracyjny"]
+        popular: true,
+        includes: ["Do 1000 produktów", "Integracja z kurierami", "Hurtownie", "Automatyzacje"]
+      },
+      {
+        id: "ecommerce-duzy",
+        name: "Sklep E-commerce Duży",
+        description: "1000+ produktów, zaawansowane integracje",
+        priceFrom: 25000,
+        priceTo: 80000,
+        priceType: "jednorazowo",
+        icon: ShoppingCart,
+        includes: ["Nieograniczone produkty", "ERP/WMS", "Multi-walutowość", "Marketplace"]
       },
     ],
   },
   {
-    id: "marketing",
-    title: "Marketing & Reklama",
-    description: "Social media, kampanie płatne",
+    id: "social-media",
+    title: "Social Media",
+    description: "Prowadzenie profili społecznościowych",
     icon: Share2,
     services: [
       {
-        id: "social-media",
-        name: "Prowadzenie Social Media",
-        description: "Kompleksowa obsługa profili",
-        priceFrom: 1500,
-        priceTo: 4000,
+        id: "sm-start",
+        name: "Pakiet Start",
+        description: "1 platforma, podstawowa obsługa",
+        priceFrom: 1200,
+        priceTo: 1800,
+        priceType: "miesięcznie",
+        icon: Share2,
+        includes: ["8 postów/mies.", "Stories", "Moderacja", "Raport miesięczny"]
+      },
+      {
+        id: "sm-business",
+        name: "Pakiet Business",
+        description: "2 platformy, rozszerzona obsługa",
+        priceFrom: 2000,
+        priceTo: 3000,
         priceType: "miesięcznie",
         icon: Share2,
         popular: true,
-        includes: ["12 postów/mies.", "Stories", "Moderacja", "Raporty"]
+        includes: ["12 postów/mies.", "Reels/TikTok", "Moderacja 7 dni", "Analityka"]
       },
       {
-        id: "facebook-ads",
-        name: "Facebook Ads",
-        description: "Kampanie w ekosystemie Meta",
-        priceFrom: 1500,
-        priceTo: 5000,
-        priceType: "miesięcznie",
-        icon: Facebook,
-        includes: ["Strategia kampanii", "Kreacje", "Optymalizacja", "Raportowanie"]
-      },
-      {
-        id: "google-ads",
-        name: "Google Ads",
-        description: "Reklamy w wyszukiwarce i display",
-        priceFrom: 1500,
+        id: "sm-premium",
+        name: "Pakiet Premium",
+        description: "3+ platformy, pełna obsługa",
+        priceFrom: 3500,
         priceTo: 6000,
         priceType: "miesięcznie",
+        icon: Share2,
+        includes: ["20+ postów/mies.", "Video content", "Influencer mgmt", "Dedykowany opiekun"]
+      },
+      {
+        id: "sm-facebook",
+        name: "Tylko Facebook",
+        description: "Dedykowana obsługa FB",
+        priceFrom: 1000,
+        priceTo: 1500,
+        priceType: "miesięcznie",
+        icon: Facebook,
+        includes: ["8 postów", "Stories", "Events", "Moderacja"]
+      },
+      {
+        id: "sm-instagram",
+        name: "Tylko Instagram",
+        description: "Dedykowana obsługa IG",
+        priceFrom: 1200,
+        priceTo: 2000,
+        priceType: "miesięcznie",
+        icon: Camera,
+        includes: ["10 postów", "Reels", "Stories", "Współprace"]
+      },
+      {
+        id: "sm-linkedin",
+        name: "Tylko LinkedIn",
+        description: "B2B personal branding",
+        priceFrom: 1500,
+        priceTo: 2500,
+        priceType: "miesięcznie",
+        icon: Linkedin,
+        includes: ["8 postów", "Artykuły", "Networking", "Lead generation"]
+      },
+      {
+        id: "sm-tiktok",
+        name: "Tylko TikTok",
+        description: "Kreacje video dla Gen Z",
+        priceFrom: 2000,
+        priceTo: 4000,
+        priceType: "miesięcznie",
+        icon: Video,
+        includes: ["8-12 filmów", "Trendy", "Hashtagi", "Duety"]
+      },
+    ],
+  },
+  {
+    id: "kampanie",
+    title: "Kampanie Reklamowe",
+    description: "Facebook Ads, Google Ads, kampanie płatne",
+    icon: Megaphone,
+    services: [
+      {
+        id: "fb-ads-start",
+        name: "Facebook Ads Start",
+        description: "Budżet do 3000 PLN/mies.",
+        priceFrom: 1200,
+        priceTo: 1800,
+        priceType: "miesięcznie",
+        icon: Facebook,
+        includes: ["Konfiguracja", "2-3 kampanie", "Kreacje", "Optymalizacja"]
+      },
+      {
+        id: "fb-ads-business",
+        name: "Facebook Ads Business",
+        description: "Budżet 3000-10000 PLN/mies.",
+        priceFrom: 2000,
+        priceTo: 3500,
+        priceType: "miesięcznie",
+        icon: Facebook,
+        popular: true,
+        includes: ["Remarketing", "Lookalike", "A/B testy", "Konwersje API"]
+      },
+      {
+        id: "fb-ads-premium",
+        name: "Facebook Ads Premium",
+        description: "Budżet 10000+ PLN/mies.",
+        priceFrom: 3500,
+        priceTo: 6000,
+        priceType: "miesięcznie",
+        icon: Facebook,
+        includes: ["Zaawansowane strategie", "Katalog produktów", "Dynamic ads", "Dedykowany specjalista"]
+      },
+      {
+        id: "google-ads-start",
+        name: "Google Ads Start",
+        description: "Search, budżet do 3000 PLN",
+        priceFrom: 1200,
+        priceTo: 1800,
+        priceType: "miesięcznie",
         icon: Target,
-        includes: ["Konfiguracja", "Search/Display", "Remarketing", "Analityka"]
+        includes: ["Kampania Search", "Do 50 słów kluczowych", "Reklamy", "Raportowanie"]
+      },
+      {
+        id: "google-ads-business",
+        name: "Google Ads Business",
+        description: "Search + Display, budżet do 10000 PLN",
+        priceFrom: 2000,
+        priceTo: 3500,
+        priceType: "miesięcznie",
+        icon: Target,
+        popular: true,
+        includes: ["Search + Display", "Remarketing", "YouTube Ads", "Analityka zaawansowana"]
+      },
+      {
+        id: "google-ads-premium",
+        name: "Google Ads Premium",
+        description: "Pełna obsługa, budżet 10000+",
+        priceFrom: 3500,
+        priceTo: 7000,
+        priceType: "miesięcznie",
+        icon: Target,
+        includes: ["Wszystkie formaty", "Shopping", "Performance Max", "Dedykowany specjalista"]
+      },
+      {
+        id: "linkedin-ads",
+        name: "LinkedIn Ads",
+        description: "Kampanie B2B",
+        priceFrom: 2500,
+        priceTo: 5000,
+        priceType: "miesięcznie",
+        icon: Linkedin,
+        includes: ["Sponsored Content", "Message Ads", "Lead Gen Forms", "Account targeting"]
       },
     ],
   },
@@ -134,6 +322,16 @@ const categories: CategoryStep[] = [
     description: "Widoczność w wyszukiwarkach",
     icon: TrendingUp,
     services: [
+      {
+        id: "seo-audyt",
+        name: "Audyt SEO",
+        description: "Jednorazowa analiza strony",
+        priceFrom: 1500,
+        priceTo: 3000,
+        priceType: "jednorazowo",
+        icon: FileText,
+        includes: ["Analiza techniczna", "Analiza treści", "Konkurencja", "Rekomendacje"]
+      },
       {
         id: "seo-start",
         name: "SEO Start",
@@ -149,21 +347,51 @@ const categories: CategoryStep[] = [
         name: "SEO Business",
         description: "Kompleksowe pozycjonowanie",
         priceFrom: 2500,
-        priceTo: 4000,
+        priceTo: 4500,
         priceType: "miesięcznie",
         icon: TrendingUp,
         popular: true,
-        includes: ["Pełny audyt", "On-page + Off-page", "15 fraz", "Content marketing"]
+        includes: ["Pełny audyt", "On-page + Off-page", "15 fraz", "Content marketing", "Link building"]
       },
       {
         id: "seo-premium",
         name: "SEO Premium",
         description: "Agresywna strategia SEO",
-        priceFrom: 4000,
+        priceFrom: 4500,
         priceTo: 8000,
         priceType: "miesięcznie",
         icon: TrendingUp,
-        includes: ["Dedykowany strateg", "Nieograniczone frazy", "Link building", "PR & outreach"]
+        includes: ["Dedykowany strateg", "Nieograniczone frazy", "Link building premium", "PR & outreach"]
+      },
+      {
+        id: "seo-ecommerce",
+        name: "SEO E-commerce",
+        description: "Pozycjonowanie sklepów online",
+        priceFrom: 3500,
+        priceTo: 7000,
+        priceType: "miesięcznie",
+        icon: ShoppingCart,
+        includes: ["Optymalizacja produktów", "Kategorie", "Rich snippets", "Google Merchant"]
+      },
+      {
+        id: "google-maps",
+        name: "Wizytówka Google Maps",
+        description: "Optymalizacja profilu Google",
+        priceFrom: 500,
+        priceTo: 1500,
+        priceType: "miesięcznie",
+        icon: MapPin,
+        includes: ["Optymalizacja profilu", "Zdjęcia", "Posty", "Odpowiadanie na opinie"]
+      },
+      {
+        id: "local-seo",
+        name: "Lokalne SEO",
+        description: "Widoczność w okolicy",
+        priceFrom: 1500,
+        priceTo: 3000,
+        priceType: "miesięcznie",
+        icon: MapPin,
+        includes: ["Google Maps", "Katalogi lokalne", "Opinie", "NAP consistency"]
       },
     ],
   },
@@ -174,28 +402,59 @@ const categories: CategoryStep[] = [
     icon: Film,
     services: [
       {
-        id: "foto",
-        name: "Sesja Fotograficzna",
-        description: "Profesjonalna sesja zdjęciowa",
-        priceFrom: 1500,
-        priceTo: 5000,
+        id: "foto-produktowa",
+        name: "Sesja Produktowa",
+        description: "Zdjęcia produktów na białym tle",
+        priceFrom: 800,
+        priceTo: 2000,
         priceType: "jednorazowo",
         icon: Camera,
-        includes: ["Do 4h sesji", "50+ zdjęć", "Retusz", "Prawa autorskie"]
+        includes: ["Do 20 produktów", "Packshoty", "Retusz", "Format e-commerce"]
       },
       {
-        id: "reels",
-        name: "Pakiet Reels/TikTok",
-        description: "Krótkie formy video",
+        id: "foto-firmowa",
+        name: "Sesja Firmowa",
+        description: "Zdjęcia zespołu i biura",
+        priceFrom: 1500,
+        priceTo: 3500,
+        priceType: "jednorazowo",
+        icon: Users,
+        includes: ["Do 4h sesji", "Zdjęcia zespołu", "Przestrzenie biurowe", "50+ zdjęć"]
+      },
+      {
+        id: "foto-eventowa",
+        name: "Sesja Eventowa",
+        description: "Reportaż z wydarzeń",
         priceFrom: 2000,
         priceTo: 5000,
         priceType: "jednorazowo",
-        icon: Film,
+        icon: Camera,
         popular: true,
-        includes: ["5-10 reelsów", "Montaż", "Napisy", "Muzyka"]
+        includes: ["Cały dzień", "200+ zdjęć", "Retusz", "Galeria online"]
       },
       {
-        id: "film",
+        id: "foto-portretowa",
+        name: "Sesja Portretowa",
+        description: "Portrety biznesowe",
+        priceFrom: 500,
+        priceTo: 1500,
+        priceType: "jednorazowo",
+        icon: User,
+        includes: ["1h sesji", "10 zdjęć", "Retusz", "Pliki HD"]
+      },
+      {
+        id: "reels-pakiet",
+        name: "Pakiet Reels/TikTok",
+        description: "Krótkie formy video",
+        priceFrom: 2500,
+        priceTo: 6000,
+        priceType: "jednorazowo",
+        icon: Smartphone,
+        popular: true,
+        includes: ["5-10 reelsów", "Montaż", "Napisy", "Muzyka", "Trendy"]
+      },
+      {
+        id: "film-promo",
         name: "Film Promocyjny",
         description: "Profesjonalna produkcja video",
         priceFrom: 5000,
@@ -205,55 +464,154 @@ const categories: CategoryStep[] = [
         includes: ["Scenariusz", "Dzień zdjęciowy", "Postprodukcja", "Licencja muzyczna"]
       },
       {
-        id: "viz3d",
-        name: "Wizualizacje 3D",
+        id: "film-reklamowy",
+        name: "Spot Reklamowy",
+        description: "Reklama TV/online (30s)",
+        priceFrom: 8000,
+        priceTo: 30000,
+        priceType: "jednorazowo",
+        icon: Film,
+        includes: ["Koncepcja kreatywna", "Produkcja", "Aktorzy", "Postprodukcja premium"]
+      },
+      {
+        id: "dron",
+        name: "Ujęcia z Drona",
+        description: "Filmowanie i zdjęcia z powietrza",
+        priceFrom: 1500,
+        priceTo: 4000,
+        priceType: "jednorazowo",
+        icon: Camera,
+        includes: ["Do 3h lotu", "Zdjęcia + video", "Montaż", "Licencje PANSA"]
+      },
+      {
+        id: "viz3d-produkt",
+        name: "Wizualizacja 3D Produktu",
         description: "Renderingi produktowe",
-        priceFrom: 1000,
-        priceTo: 5000,
+        priceFrom: 500,
+        priceTo: 2000,
         priceType: "jednorazowo",
         icon: Box,
-        includes: ["Modelowanie 3D", "Teksturowanie", "Renderingi HD", "Rewizje"]
+        includes: ["Modelowanie 3D", "3 ujęcia", "Renderingi HD", "2 rewizje"]
+      },
+      {
+        id: "viz3d-wnetrze",
+        name: "Wizualizacja 3D Wnętrza",
+        description: "Fotorealistyczne wizualizacje wnętrz",
+        priceFrom: 1000,
+        priceTo: 3000,
+        priceType: "jednorazowo",
+        icon: Box,
+        includes: ["1 pomieszczenie", "2 ujęcia", "Fotorealizm", "Rewizje"]
+      },
+      {
+        id: "viz3d-architektura",
+        name: "Wizualizacja Architektoniczna",
+        description: "Wizualizacje budynków",
+        priceFrom: 2000,
+        priceTo: 8000,
+        priceType: "jednorazowo",
+        icon: Building,
+        includes: ["Zewnętrzna wizualizacja", "Otoczenie", "Oświetlenie", "Rewizje"]
       },
     ],
   },
   {
     id: "branding",
     title: "Branding & Grafika",
-    description: "Logo, identyfikacja wizualna",
+    description: "Logo, identyfikacja wizualna, materiały",
     icon: Brush,
     services: [
       {
-        id: "logo",
-        name: "Projekt Logo",
-        description: "Profesjonalne logo firmy",
-        priceFrom: 1500,
-        priceTo: 4000,
+        id: "logo-podstawowe",
+        name: "Logo Podstawowe",
+        description: "Prosty znak graficzny",
+        priceFrom: 1000,
+        priceTo: 2500,
         priceType: "jednorazowo",
-        icon: Brush,
-        includes: ["3 koncepcje", "Rewizje", "Pliki źródłowe", "Księga znaku"]
+        icon: PenTool,
+        includes: ["2 koncepcje", "Rewizje", "Pliki źródłowe", "Wersje kolorystyczne"]
       },
       {
-        id: "branding",
-        name: "Identyfikacja Wizualna",
-        description: "Kompletny system identyfikacji",
+        id: "logo-premium",
+        name: "Logo Premium",
+        description: "Kompleksowy projekt logo",
+        priceFrom: 2500,
+        priceTo: 5000,
+        priceType: "jednorazowo",
+        icon: PenTool,
+        popular: true,
+        includes: ["4 koncepcje", "Badanie rynku", "Księga znaku", "Animacja logo"]
+      },
+      {
+        id: "identyfikacja-podstawowa",
+        name: "Identyfikacja Podstawowa",
+        description: "Logo + podstawowe elementy",
+        priceFrom: 3500,
+        priceTo: 7000,
+        priceType: "jednorazowo",
+        icon: Palette,
+        includes: ["Logo", "Kolory", "Typografia", "Wizytówki", "Papier firmowy"]
+      },
+      {
+        id: "identyfikacja-pelna",
+        name: "Identyfikacja Pełna",
+        description: "Kompletny system wizualny",
+        priceFrom: 8000,
+        priceTo: 20000,
+        priceType: "jednorazowo",
+        icon: Brush,
+        includes: ["Pełna identyfikacja", "Brandbook", "Szablony", "Materiały reklamowe", "Social media kit"]
+      },
+      {
+        id: "rebranding",
+        name: "Rebranding",
+        description: "Odświeżenie marki",
         priceFrom: 5000,
         priceTo: 15000,
         priceType: "jednorazowo",
         icon: Brush,
-        popular: true,
-        includes: ["Logo", "Paleta kolorów", "Typografia", "Szablony", "Brandbook"]
+        includes: ["Audyt marki", "Strategia", "Nowa identyfikacja", "Wdrożenie"]
+      },
+      {
+        id: "grafika-social",
+        name: "Grafiki Social Media",
+        description: "Szablony i kreacje",
+        priceFrom: 1500,
+        priceTo: 4000,
+        priceType: "jednorazowo",
+        icon: Image,
+        includes: ["10 szablonów", "Różne formaty", "Edytowalne pliki", "Guidelines"]
+      },
+      {
+        id: "grafika-druk",
+        name: "Materiały Drukowane",
+        description: "Ulotki, katalogi, plakaty",
+        priceFrom: 500,
+        priceTo: 3000,
+        priceType: "jednorazowo",
+        icon: FileText,
+        includes: ["Projekt graficzny", "Przygotowanie do druku", "Rewizje", "Nadzór druku"]
       },
     ],
   },
 ];
 
-type FlowStep = "categories" | "services" | "summary";
+type FlowStep = "categories" | "services" | "summary" | "contact";
 
 export default function Cennik() {
+  const { toast } = useToast();
   const [flowStep, setFlowStep] = useState<FlowStep>("categories");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  });
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
 
   const toggleCategory = (categoryId: string) => {
     setSelectedCategories(prev => 
@@ -325,6 +683,51 @@ export default function Cennik() {
     setCurrentCategoryIndex(0);
   };
 
+  const proceedToContact = () => {
+    setFlowStep("contact");
+  };
+
+  const generateServicesSummary = () => {
+    return selectedDetails.selected.map(s => 
+      `${s.name} (od ${formatPrice(s.priceFrom)} PLN ${s.priceType})`
+    ).join("\n");
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormErrors({});
+
+    // Walidacja
+    const result = contactSchema.safeParse(formData);
+    if (!result.success) {
+      const errors: Record<string, string> = {};
+      result.error.errors.forEach(err => {
+        if (err.path[0]) {
+          errors[err.path[0] as string] = err.message;
+        }
+      });
+      setFormErrors(errors);
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    // Symulacja wysyłki (w rzeczywistości byłoby to edge function)
+    await new Promise(resolve => setTimeout(resolve, 1500));
+
+    toast({
+      title: "Zapytanie wysłane!",
+      description: "Odezwiemy się do Ciebie w ciągu 24h.",
+    });
+
+    setIsSubmitting(false);
+    // Reset
+    setFormData({ name: "", email: "", phone: "", message: "" });
+    setSelectedServices([]);
+    setSelectedCategories([]);
+    setFlowStep("categories");
+  };
+
   return (
     <Layout>
       <Helmet>
@@ -358,6 +761,7 @@ export default function Cennik() {
               {flowStep === "categories" && "Wybierz kategorie usług, które Cię interesują"}
               {flowStep === "services" && "Wybierz konkretne warianty w każdej kategorii"}
               {flowStep === "summary" && "Podsumowanie Twojego pakietu"}
+              {flowStep === "contact" && "Wyślij zapytanie ofertowe"}
             </p>
           </motion.div>
         </div>
@@ -366,33 +770,33 @@ export default function Cennik() {
       {/* Flow Steps Indicator */}
       <section className="py-6 border-b border-border/50 sticky top-16 bg-background/95 backdrop-blur-sm z-30">
         <div className="container-wide">
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap">
             <div className={cn(
-              "flex items-center gap-2 px-4 py-2 rounded-full transition-all",
-              flowStep === "categories" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              flowStep === "categories" ? "bg-primary text-primary-foreground" : selectedCategories.length > 0 ? "bg-green-500/20 text-green-500" : "bg-secondary text-muted-foreground"
             )}>
-              <div className="w-6 h-6 rounded-full bg-current/20 flex items-center justify-center text-xs font-bold">
-                {selectedCategories.length > 0 && flowStep !== "categories" ? <Check className="w-3 h-3" /> : "1"}
-              </div>
-              <span className="text-sm font-medium">Kategorie</span>
+              <span className="font-medium">1. Kategorie</span>
             </div>
-            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+            <ChevronRight className="w-4 h-4 text-muted-foreground hidden md:block" />
             <div className={cn(
-              "flex items-center gap-2 px-4 py-2 rounded-full transition-all",
-              flowStep === "services" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              flowStep === "services" ? "bg-primary text-primary-foreground" : flowStep === "summary" || flowStep === "contact" ? "bg-green-500/20 text-green-500" : "bg-secondary text-muted-foreground"
             )}>
-              <div className="w-6 h-6 rounded-full bg-current/20 flex items-center justify-center text-xs font-bold">
-                {flowStep === "summary" ? <Check className="w-3 h-3" /> : "2"}
-              </div>
-              <span className="text-sm font-medium">Warianty</span>
+              <span className="font-medium">2. Warianty</span>
             </div>
-            <ChevronRight className="w-4 h-4 text-muted-foreground" />
+            <ChevronRight className="w-4 h-4 text-muted-foreground hidden md:block" />
             <div className={cn(
-              "flex items-center gap-2 px-4 py-2 rounded-full transition-all",
-              flowStep === "summary" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              flowStep === "summary" ? "bg-primary text-primary-foreground" : flowStep === "contact" ? "bg-green-500/20 text-green-500" : "bg-secondary text-muted-foreground"
             )}>
-              <div className="w-6 h-6 rounded-full bg-current/20 flex items-center justify-center text-xs font-bold">3</div>
-              <span className="text-sm font-medium">Podsumowanie</span>
+              <span className="font-medium">3. Podsumowanie</span>
+            </div>
+            <ChevronRight className="w-4 h-4 text-muted-foreground hidden md:block" />
+            <div className={cn(
+              "flex items-center gap-2 px-3 py-2 rounded-full transition-all text-sm",
+              flowStep === "contact" ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+            )}>
+              <span className="font-medium">4. Kontakt</span>
             </div>
           </div>
         </div>
@@ -719,7 +1123,7 @@ export default function Cennik() {
                           );
                         })}
 
-                        <div className="flex justify-between mt-8">
+                        <div className="flex flex-col sm:flex-row justify-between gap-4 mt-8">
                           <Button
                             variant="outline"
                             size="lg"
@@ -732,7 +1136,129 @@ export default function Cennik() {
                             <ChevronLeft className="w-4 h-4" />
                             Wróć do edycji
                           </Button>
+                          <Button
+                            size="lg"
+                            onClick={proceedToContact}
+                            className="gap-2"
+                          >
+                            Przejdź do formularza
+                            <Send className="w-4 h-4" />
+                          </Button>
                         </div>
+                      </div>
+                    )}
+
+                    {/* Step 4: Contact Form */}
+                    {flowStep === "contact" && (
+                      <div className="max-w-2xl mx-auto">
+                        <Card className="border-primary/20">
+                          <CardHeader>
+                            <CardTitle className="flex items-center gap-2">
+                              <Mail className="w-5 h-5 text-primary" />
+                              Wyślij zapytanie ofertowe
+                            </CardTitle>
+                            <CardDescription>
+                              Wypełnij formularz, a skontaktujemy się w ciągu 24h
+                            </CardDescription>
+                          </CardHeader>
+                          <CardContent>
+                            <form onSubmit={handleSubmit} className="space-y-6">
+                              <div className="grid md:grid-cols-2 gap-4">
+                                <div className="space-y-2">
+                                  <Label htmlFor="name">Imię i nazwisko *</Label>
+                                  <Input
+                                    id="name"
+                                    value={formData.name}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                                    placeholder="Jan Kowalski"
+                                    className={formErrors.name ? "border-red-500" : ""}
+                                  />
+                                  {formErrors.name && <p className="text-xs text-red-500">{formErrors.name}</p>}
+                                </div>
+                                <div className="space-y-2">
+                                  <Label htmlFor="email">Email *</Label>
+                                  <Input
+                                    id="email"
+                                    type="email"
+                                    value={formData.email}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                                    placeholder="jan@firma.pl"
+                                    className={formErrors.email ? "border-red-500" : ""}
+                                  />
+                                  {formErrors.email && <p className="text-xs text-red-500">{formErrors.email}</p>}
+                                </div>
+                              </div>
+                              <div className="space-y-2">
+                                <Label htmlFor="phone">Telefon (opcjonalnie)</Label>
+                                <Input
+                                  id="phone"
+                                  type="tel"
+                                  value={formData.phone}
+                                  onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                                  placeholder="+48 123 456 789"
+                                />
+                              </div>
+                              <div className="space-y-2">
+                                <Label htmlFor="message">Wiadomość *</Label>
+                                <Textarea
+                                  id="message"
+                                  value={formData.message}
+                                  onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
+                                  placeholder="Opisz krótko swój projekt lub potrzeby..."
+                                  rows={4}
+                                  className={formErrors.message ? "border-red-500" : ""}
+                                />
+                                {formErrors.message && <p className="text-xs text-red-500">{formErrors.message}</p>}
+                              </div>
+
+                              {/* Selected services summary */}
+                              {selectedDetails.count > 0 && (
+                                <div className="p-4 rounded-lg bg-secondary/50">
+                                  <p className="text-sm font-medium mb-2">Wybrane usługi:</p>
+                                  <ul className="text-sm text-muted-foreground space-y-1">
+                                    {selectedDetails.selected.slice(0, 5).map(s => (
+                                      <li key={s.id}>• {s.name}</li>
+                                    ))}
+                                    {selectedDetails.count > 5 && (
+                                      <li className="text-primary">+{selectedDetails.count - 5} więcej</li>
+                                    )}
+                                  </ul>
+                                </div>
+                              )}
+
+                              <div className="flex flex-col sm:flex-row gap-4">
+                                <Button
+                                  type="button"
+                                  variant="outline"
+                                  size="lg"
+                                  onClick={() => setFlowStep("summary")}
+                                  className="gap-2"
+                                >
+                                  <ChevronLeft className="w-4 h-4" />
+                                  Wróć
+                                </Button>
+                                <Button
+                                  type="submit"
+                                  size="lg"
+                                  className="flex-1 gap-2"
+                                  disabled={isSubmitting}
+                                >
+                                  {isSubmitting ? (
+                                    <>
+                                      <Loader2 className="w-4 h-4 animate-spin" />
+                                      Wysyłanie...
+                                    </>
+                                  ) : (
+                                    <>
+                                      <Send className="w-4 h-4" />
+                                      Wyślij zapytanie
+                                    </>
+                                  )}
+                                </Button>
+                              </div>
+                            </form>
+                          </CardContent>
+                        </Card>
                       </div>
                     )}
                   </motion.div>
