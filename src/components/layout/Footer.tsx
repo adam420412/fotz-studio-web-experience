@@ -4,6 +4,7 @@ import logoFotz from "@/assets/logo-fotz.png";
 
 const footerLinks = {
   uslugi: [
+    { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
     { name: "Strony internetowe", href: "/strony-internetowe" },
     { name: "Social Media", href: "/social-media" },
     { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
@@ -11,7 +12,6 @@ const footerLinks = {
     { name: "Facebook Ads", href: "/facebook-ads" },
     { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
     { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
-    { name: "Studio podcastowe", href: "/studio-podcastowe" },
   ],
   poznan: [
     { name: "Agencja Marketingowa Poznań", href: "/agencja-marketingowa-poznan" },
