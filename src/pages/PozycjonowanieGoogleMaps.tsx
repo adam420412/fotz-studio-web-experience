@@ -350,6 +350,169 @@ const PozycjonowanieGoogleMaps = () => {
         </div>
       </section>
 
+      {/* Cennik Section */}
+      <section className="py-20 bg-secondary/20">
+        <div className="container-wide px-6 md:px-12">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                Cennik pozycjonowania Google Maps
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Oferujemy elastyczne pakiety dopasowane do potrzeb Twojej firmy. Każdy pakiet zawiera kompleksową optymalizację wizytówki Google Moja Firma.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Pakiet Start */}
+              <div className="bg-background rounded-2xl p-8 border border-border hover:border-primary/30 transition-all hover:shadow-lg">
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-heading font-semibold mb-2">Pakiet Start</h3>
+                  <p className="text-muted-foreground text-sm mb-4">Dla małych firm lokalnych</p>
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-4xl font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">499</span>
+                    <span className="text-muted-foreground">zł/mies.</span>
+                  </div>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Założenie/przejęcie wizytówki</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Optymalizacja podstawowych danych</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Dodanie 10 zdjęć miesięcznie</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">2 posty Google miesięcznie</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Monitoring pozycji</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Raport miesięczny</span>
+                  </li>
+                </ul>
+                <Button asChild variant="outline" className="w-full">
+                  <Link to="/kontakt">Wybierz pakiet</Link>
+                </Button>
+              </div>
+
+              {/* Pakiet Business - Popular */}
+              <div className="bg-gradient-to-b from-[#75143F] to-[#0F3053] rounded-2xl p-8 border-2 border-primary relative transform md:scale-105 shadow-xl">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-primary px-4 py-1 rounded-full text-sm font-semibold">
+                  Najpopularniejszy
+                </div>
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-heading font-semibold mb-2 text-white">Pakiet Business</h3>
+                  <p className="text-white/70 text-sm mb-4">Dla rozwijających się firm</p>
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-4xl font-bold text-white">899</span>
+                    <span className="text-white/70">zł/mies.</span>
+                  </div>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white">Wszystko z pakietu Start</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white">Zaawansowana optymalizacja SEO</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white">Dodanie 20 zdjęć miesięcznie</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white">4 posty Google miesięcznie</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white">Zarządzanie recenzjami</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white">Cytowania NAP (10 katalogów)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-white">Analiza konkurencji</span>
+                  </li>
+                </ul>
+                <Button asChild className="w-full bg-white text-primary hover:bg-white/90">
+                  <Link to="/kontakt">Wybierz pakiet</Link>
+                </Button>
+              </div>
+
+              {/* Pakiet Premium */}
+              <div className="bg-background rounded-2xl p-8 border border-border hover:border-primary/30 transition-all hover:shadow-lg">
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-heading font-semibold mb-2">Pakiet Premium</h3>
+                  <p className="text-muted-foreground text-sm mb-4">Dla sieci lokali i franczyz</p>
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-4xl font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">1499</span>
+                    <span className="text-muted-foreground">zł/mies.</span>
+                  </div>
+                </div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Wszystko z pakietu Business</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Do 5 lokalizacji w cenie</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Profesjonalna sesja zdjęciowa</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">8 postów Google miesięcznie</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Cytowania NAP (25 katalogów)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Dedykowany opiekun</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Raporty tygodniowe</span>
+                  </li>
+                </ul>
+                <Button asChild variant="outline" className="w-full">
+                  <Link to="/kontakt">Wybierz pakiet</Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-muted-foreground mb-4">
+                Potrzebujesz indywidualnej wyceny? Masz wiele lokalizacji?
+              </p>
+              <Button asChild variant="outline" size="lg">
+                <Link to="/kontakt">
+                  Skontaktuj się po wycenę <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-secondary/20">
         <div className="container-wide px-6 md:px-12">
