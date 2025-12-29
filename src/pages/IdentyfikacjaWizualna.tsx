@@ -1,10 +1,11 @@
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { 
   Palette, Eye, Layers, FileText, PenTool, 
   Monitor, Printer, Target, CheckCircle2, ArrowRight,
-  Sparkles, BookOpen, Zap, Award, RefreshCw, Users
+  Sparkles, BookOpen, Zap, Award, RefreshCw, Users, X
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,7 +16,18 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 
+// Import Klagem branding images
+import klageHomepage from "@/assets/branding/klagem-homepage.jpg";
+import klagemAbout from "@/assets/branding/klagem-about.jpg";
+import klagemProduct from "@/assets/branding/klagem-product.jpg";
+import klagemProducts from "@/assets/branding/klagem-products.jpg";
+import klagemHero from "@/assets/branding/klagem-hero.jpg";
+import klagemContact from "@/assets/branding/klagem-contact.jpg";
+import klagemMenu from "@/assets/branding/klagem-menu.jpg";
+
 const IdentyfikacjaWizualna = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  
   const benefits = [
     { icon: Eye, title: "Rozpoznawalność", description: "Wyróżnij się na tle konkurencji spójnym wizerunkiem" },
     { icon: Target, title: "Zaufanie klientów", description: "Profesjonalny wygląd buduje wiarygodność marki" },
@@ -126,6 +138,7 @@ const IdentyfikacjaWizualna = () => {
   ];
 
   return (
+    <>
     <Layout>
       <Helmet>
         <title>Identyfikacja Wizualna Firmy - Projektowanie logo i branding | Fotz Studio Poznań</title>
@@ -418,8 +431,131 @@ const IdentyfikacjaWizualna = () => {
         </div>
       </section>
 
+      {/* Portfolio Case Study Section - Klagem */}
+      <section className="py-20 bg-background overflow-hidden">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span className="inline-block px-4 py-2 bg-orange-500/20 text-orange-500 rounded-full text-sm font-medium mb-4">
+              Case Study
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Realizacja: Klagem – System Mebli Modułowych
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Kompleksowy branding dla producenta nowoczesnych mebli modułowych – od logo po pełną stronę internetową
+            </p>
+          </motion.div>
+
+          {/* Main Hero Image */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-8"
+          >
+            <div 
+              className="relative rounded-2xl overflow-hidden cursor-pointer group"
+              onClick={() => setSelectedImage(klagemHero)}
+            >
+              <img 
+                src={klagemHero} 
+                alt="Klagem - identyfikacja wizualna strona główna" 
+                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute bottom-6 left-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-white text-xl font-bold">Strona główna</h3>
+                <p className="text-white/80 text-sm">Minimalistyczny design z wyrazistym akcentem kolorystycznym</p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Grid of other images */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            {[
+              { src: klageHomepage, title: "Homepage", desc: "Pełna strona główna" },
+              { src: klagemAbout, title: "O nas", desc: "Sekcja prezentacji firmy" },
+              { src: klagemProduct, title: "Produkt", desc: "Strona produktowa" },
+              { src: klagemProducts, title: "Produkty", desc: "Katalog produktów" },
+              { src: klagemMenu, title: "Menu", desc: "Nawigacja strony" },
+              { src: klagemContact, title: "Kontakt", desc: "Formularz kontaktowy" },
+            ].map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative rounded-xl overflow-hidden cursor-pointer group aspect-[3/4]"
+                onClick={() => setSelectedImage(item.src)}
+              >
+                <img 
+                  src={item.src} 
+                  alt={`Klagem - ${item.title}`} 
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h4 className="text-white font-semibold">{item.title}</h4>
+                  <p className="text-white/70 text-sm">{item.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Project details */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            <div className="bg-card border border-border rounded-xl p-6">
+              <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
+                <Palette className="w-5 h-5 text-orange-500" />
+              </div>
+              <h4 className="font-semibold text-foreground mb-2">Identyfikacja wizualna</h4>
+              <p className="text-muted-foreground text-sm">Logo, kolorystyka (pomarańcz + biel), typografia, elementy graficzne i spójny system wizualny</p>
+            </div>
+            <div className="bg-card border border-border rounded-xl p-6">
+              <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
+                <Monitor className="w-5 h-5 text-orange-500" />
+              </div>
+              <h4 className="font-semibold text-foreground mb-2">Strona internetowa</h4>
+              <p className="text-muted-foreground text-sm">Responsywna strona www z konfiguratorem produktów, katalogiem i formularzem kontaktowym</p>
+            </div>
+            <div className="bg-card border border-border rounded-xl p-6">
+              <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
+                <Layers className="w-5 h-5 text-orange-500" />
+              </div>
+              <h4 className="font-semibold text-foreground mb-2">Materiały drukowane</h4>
+              <p className="text-muted-foreground text-sm">Katalogi produktowe, wizytówki, papier firmowy i materiały prezentacyjne</p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mt-8"
+          >
+            <Button asChild variant="outline" size="lg">
+              <Link to="/realizacje/klagem">
+                Zobacz pełne case study
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Brand Book Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -614,6 +750,33 @@ const IdentyfikacjaWizualna = () => {
         </div>
       </section>
     </Layout>
+
+    {/* Lightbox for enlarged images */}
+    {selectedImage && (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4"
+        onClick={() => setSelectedImage(null)}
+      >
+        <button 
+          className="absolute top-6 right-6 text-white hover:text-white/80 transition-colors"
+          onClick={() => setSelectedImage(null)}
+        >
+          <X className="w-8 h-8" />
+        </button>
+        <motion.img
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          src={selectedImage}
+          alt="Powiększone zdjęcie"
+          className="max-w-full max-h-[90vh] object-contain rounded-lg"
+          onClick={(e) => e.stopPropagation()}
+        />
+      </motion.div>
+    )}
+    </>
   );
 };
 
