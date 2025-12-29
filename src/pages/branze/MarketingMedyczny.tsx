@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Heart, ArrowRight, CheckCircle, Calendar, Shield, Users, TrendingUp, Star, Phone, Stethoscope, ClipboardList, Clock } from "lucide-react";
+import { Heart, ArrowRight, CheckCircle, Calendar, Shield, Users, TrendingUp, Star, Phone, Stethoscope, ClipboardList, Clock, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { useCountUp } from "@/hooks/useCountUp";
 
 const services = [
   {
@@ -171,14 +171,17 @@ const MarketingMedyczny = () => {
               { value: 40, suffix: "%", label: "mniej nieobecności" },
               { value: 50, suffix: "+", label: "obsłużonych gabinetów" },
               { value: 100, suffix: "%", label: "zgodność z prawem" },
-            ].map((stat, index) => (
-              <div key={index} className="text-center p-6 rounded-2xl bg-card border border-border/30">
-                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
-                  <AnimatedCounter end={stat.value} suffix={stat.suffix} />
+            ].map((stat, index) => {
+              const { ref, displayValue } = useCountUp({ end: stat.value, suffix: stat.suffix });
+              return (
+                <div key={index} ref={ref} className="text-center p-6 rounded-2xl bg-card border border-border/30">
+                  <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium">
+                    {displayValue}
+                  </div>
+                  <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
                 </div>
-                <p className="text-foreground/60 text-sm mt-2">{stat.label}</p>
-              </div>
-            ))}
+              );
+            })}
           </motion.div>
         </div>
       </section>

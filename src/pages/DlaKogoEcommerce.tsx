@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Star, Phone, Target, Plus, Minus } from "lucide-react";
+import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Star, Phone, Target, Plus, Minus, Cuboid, ExternalLink } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { ModelViewer3D } from "@/components/ModelViewer3D";
 
 // Import case study images
 import vertheImage from "@/assets/portfolio/verthe.png";
@@ -453,7 +454,7 @@ export default function DlaKogoEcommerce() {
         </div>
       </section>
 
-      {/* Portfolio Video */}
+      {/* 3D Configurator Section */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <motion.div
@@ -462,26 +463,44 @@ export default function DlaKogoEcommerce() {
             viewport={{ once: true }}
             className="text-center mb-8"
           >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-4">
+              <Cuboid className="w-4 h-4" />
+              <span className="text-sm font-medium">Konfiguratory 3D dla e-commerce</span>
+            </div>
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Zobacz nasze realizacje w akcji
+              Interaktywne konfiguratory produktów
             </h2>
-            <p className="text-muted-foreground">
-              Produkcja wideo dla FPS Poznań - realizacja dla partnera biznesowego
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Tworzymy zaawansowane konfiguratory 3D, które pozwalają klientom wizualizować produkty 
+              przed zakupem. Zwiększ konwersję i zmniejsz zwroty.
             </p>
           </motion.div>
+          
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
-              <video
-                src="/videos/fps-poznan.mp4"
-                controls
-                className="w-full h-full object-cover"
-                poster="/videos/fps-poznan.mp4#t=0.5"
+            <div className="rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
+              <ModelViewer3D 
+                modelUrl="/models/regulator-3d.glb" 
+                title="Konfigurator produktu 3D" 
+                description="Przykład interaktywnego konfiguratora - obracaj modelem myszką lub dotykiem" 
               />
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-muted-foreground mb-4">
+                Zobacz działający konfigurator 3D na stronie klienta:
+              </p>
+              <Button asChild size="lg" className="group">
+                <a href="https://klagem.pl/" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 w-4 h-4" />
+                  Zobacz konfigurator na klagem.pl
+                  <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
             </div>
           </motion.div>
         </div>

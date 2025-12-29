@@ -1,10 +1,11 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Package, Users } from "lucide-react";
+import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Package, Users, ExternalLink, Cuboid } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import klagemImg from "@/assets/portfolio/klagem.png";
+import { ModelViewer3D } from "@/components/ModelViewer3D";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },
@@ -319,7 +320,7 @@ const CaseStudyKlagem = () => {
         </div>
       </section>
 
-      {/* Video Section */}
+      {/* 3D Configurator Section */}
       <section className="section-padding bg-background">
         <div className="container-wide">
           <motion.div
@@ -329,11 +330,15 @@ const CaseStudyKlagem = () => {
             transition={{ duration: 0.7 }}
             className="text-center max-w-3xl mx-auto mb-12"
           >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-4">
+              <Cuboid className="w-4 h-4" />
+              <span className="text-sm font-medium">Konfigurator 3D</span>
+            </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Zobacz nasze <span className="text-gradient-premium">realizacje wideo</span>
+              Interaktywny <span className="text-gradient-premium">model 3D</span>
             </h2>
             <p className="text-foreground/70">
-              Przykład naszej produkcji filmowej dla klientów B2B.
+              Przykład konfiguratora produktów 3D - obracaj model myszką lub dotykiem.
             </p>
           </motion.div>
 
@@ -343,13 +348,18 @@ const CaseStudyKlagem = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
-              <video
-                src="/videos/fps-poznan.mp4"
-                controls
-                className="w-full h-full object-cover"
-                poster="/videos/fps-poznan.mp4#t=0.5"
-              />
+            <div className="rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
+              <ModelViewer3D modelUrl="/models/regulator-3d.glb" title="Konfigurator mebli Klagem" description="Interaktywny podgląd 3D produktu - obracaj myszką lub dotykiem" />
+            </div>
+            
+            <div className="mt-8 text-center">
+              <Button asChild size="lg" className="group">
+                <a href="https://klagem.pl/" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 w-4 h-4" />
+                  Zobacz konfigurator na klagem.pl
+                  <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
             </div>
           </motion.div>
         </div>

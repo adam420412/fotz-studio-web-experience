@@ -38,6 +38,10 @@ import DlaKogoFirmyLokalne from "./pages/DlaKogoFirmyLokalne";
 import DlaKogoEcommerce from "./pages/DlaKogoEcommerce";
 import DlaKogoMarkiPremium from "./pages/DlaKogoMarkiPremium";
 import DlaKogoInstytucje from "./pages/DlaKogoInstytucje";
+import MarketingMedyczny from "./pages/branze/MarketingMedyczny";
+import MarketingGastronomia from "./pages/branze/MarketingGastronomia";
+import MarketingBeauty from "./pages/branze/MarketingBeauty";
+import MarketingNieruchomosci from "./pages/branze/MarketingNieruchomosci";
 import AkademiaLanding from "./pages/AkademiaLanding";
 import AkademiaAuth from "./pages/AkademiaAuth";
 import Akademia from "./pages/Akademia";
@@ -118,6 +122,10 @@ const App = () => (
             <Route path="/dla-kogo/ecommerce" element={<DlaKogoEcommerce />} />
             <Route path="/dla-kogo/marki-premium" element={<DlaKogoMarkiPremium />} />
             <Route path="/dla-kogo/instytucje" element={<DlaKogoInstytucje />} />
+            <Route path="/dla-kogo/branza-medyczna" element={<MarketingMedyczny />} />
+            <Route path="/dla-kogo/gastronomia" element={<MarketingGastronomia />} />
+            <Route path="/dla-kogo/beauty-wellness" element={<MarketingBeauty />} />
+            <Route path="/dla-kogo/nieruchomosci" element={<MarketingNieruchomosci />} />
             <Route path="/akademia" element={<AkademiaLanding />} />
             <Route path="/akademia/auth" element={<AkademiaAuth />} />
             <Route path="/akademia/panel" element={<Akademia />} />
