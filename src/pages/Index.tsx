@@ -14,6 +14,7 @@ import { HomeFAQ } from "@/components/sections/HomeFAQ";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Preloader } from "@/components/Preloader";
 import { OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
+import { OfficeGallery } from "@/components/sections/OfficeGallery";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,6 +56,7 @@ const Index = () => {
         <CaseStudies />
         <Testimonials />
         <Clients />
+        <OfficeGallery />
         <Studio />
         <HomeFAQ />
         <FinalCTA />

@@ -3,10 +3,14 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HelpCircle, MessageCircle, Phone, Mail, Globe, Palette, TrendingUp, Video, ShoppingCart, Users } from "lucide-react";
+import { HelpCircle, MessageCircle, Phone, Mail, Globe, Palette, TrendingUp, Video, ShoppingCart, Users, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { FAQSchema } from "@/components/seo/StructuredData";
+
+// Office images
+import officeStairs from "@/assets/office/office-stairs.webp";
+import officeSign from "@/assets/office/office-sign.webp";
 
 const faqCategories = [
   {
@@ -183,28 +187,48 @@ export default function FAQ() {
       <FAQSchema items={allFaqs} />
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20">
+      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,hsl(var(--primary)/0.1),transparent_50%)]" />
         
         <div className="container-wide relative z-10 py-20 md:py-28">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <Badge variant="outline" className="mb-6 text-primary border-primary/30">
-              <HelpCircle className="w-4 h-4 mr-2" />
-              FAQ
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
-              Najczęściej zadawane <span className="text-primary">pytania</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Znajdź odpowiedzi na pytania dotyczące naszych usług, 
-              cen i procesu współpracy.
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <Badge variant="outline" className="mb-6 text-primary border-primary/30">
+                <HelpCircle className="w-4 h-4 mr-2" />
+                FAQ
+              </Badge>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
+                Najczęściej zadawane <span className="text-primary">pytania</span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground">
+                Znajdź odpowiedzi na pytania dotyczące naszych usług, 
+                cen i procesu współpracy.
+              </p>
+              <div className="flex items-center gap-2 mt-6 text-muted-foreground">
+                <MapPin className="w-4 h-4 text-primary" />
+                <span>Plac Wolności 16, Poznań</span>
+              </div>
+            </motion.div>
+
+            {/* Office Images */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid grid-cols-2 gap-4"
+            >
+              <div className="aspect-[3/4] rounded-xl overflow-hidden">
+                <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[3/4] rounded-xl overflow-hidden">
+                <img src={officeSign} alt="Tabliczka Fotz Studio HOFA" className="w-full h-full object-cover" />
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

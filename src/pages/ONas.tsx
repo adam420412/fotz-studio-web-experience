@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Target, Heart, Zap, Users } from "lucide-react";
+import { ArrowRight, Target, Heart, Zap, Users, MapPin } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
+
+// Office images
+import officeStairs from "@/assets/office/office-stairs.webp";
+import officeSign from "@/assets/office/office-sign.webp";
+import officeLounge from "@/assets/office/office-lounge.webp";
+import officeWorkspace from "@/assets/office/office-workspace.webp";
+import officeDining from "@/assets/office/office-dining.webp";
 
 const values = [
   {
@@ -51,6 +58,14 @@ const team = [
   },
 ];
 
+const officeImages = [
+  { src: officeStairs, alt: "Wejście do biura Fotz Studio - designerskie schody" },
+  { src: officeSign, alt: "Tabliczka Fotz Studio na budynku HOFA Plac Wolności" },
+  { src: officeLounge, alt: "Strefa relaksu w biurze Fotz Studio" },
+  { src: officeWorkspace, alt: "Przestrzeń do pracy kreatywnej z piłkarzykami" },
+  { src: officeDining, alt: "Kuchnia i strefa spotkań w biurze" },
+];
+
 export default function ONas() {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
@@ -86,8 +101,8 @@ export default function ONas() {
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070"
-                  alt="Zespół Fotz Studio"
+                  src={officeStairs}
+                  alt="Biuro Fotz Studio w Poznaniu"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -96,6 +111,42 @@ export default function ONas() {
                 <div className="text-muted-foreground">lat doświadczenia</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Office Gallery */}
+      <section className="section-padding bg-card">
+        <div className="container-wide">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
+              <MapPin className="w-4 h-4" />
+              Plac Wolności 16, Poznań
+            </span>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold">
+              Nasze <span className="text-gradient">biuro</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {officeImages.map((image, index) => (
+              <div
+                key={index}
+                className={cn(
+                  "group relative aspect-[3/4] rounded-xl overflow-hidden transition-all duration-700",
+                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                )}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+            ))}
           </div>
         </div>
       </section>

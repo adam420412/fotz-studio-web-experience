@@ -10,6 +10,11 @@ import { Briefcase, MapPin, Clock, Users, Rocket, Heart, Coffee, Zap, Send, Uplo
 import { useState } from "react";
 import { toast } from "sonner";
 
+// Office images
+import officeStairs from "@/assets/office/office-stairs.webp";
+import officeWorkspace from "@/assets/office/office-workspace.webp";
+import officeDining from "@/assets/office/office-dining.webp";
+
 const jobOffers = [
   {
     id: 1,
@@ -132,28 +137,49 @@ export default function Kariera() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-32">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,hsl(var(--primary)/0.1),transparent_50%)]" />
         
         <div className="container-wide relative z-10 py-20 md:py-32">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <Badge variant="outline" className="mb-6 text-primary border-primary/30">
-              <Briefcase className="w-4 h-4 mr-2" />
-              Dołącz do nas
-            </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
-              Kariera w <span className="text-primary">Fotz Studio</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Budujemy zespół ludzi z pasją do marketingu. Jeśli chcesz tworzyć 
-              projekty dla topowych marek, to miejsce jest dla Ciebie.
-            </p>
-          </motion.div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <Badge variant="outline" className="mb-6 text-primary border-primary/30">
+                <Briefcase className="w-4 h-4 mr-2" />
+                Dołącz do nas
+              </Badge>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
+                Kariera w <span className="text-primary">Fotz Studio</span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground">
+                Budujemy zespół ludzi z pasją do marketingu. Jeśli chcesz tworzyć 
+                projekty dla topowych marek, to miejsce jest dla Ciebie.
+              </p>
+            </motion.div>
+
+            {/* Office Images Grid */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid grid-cols-2 gap-4"
+            >
+              <div className="aspect-[3/4] rounded-xl overflow-hidden">
+                <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+              </div>
+              <div className="space-y-4">
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img src={officeWorkspace} alt="Przestrzeń pracy" className="w-full h-full object-cover" />
+                </div>
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img src={officeDining} alt="Strefa spotkań" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
