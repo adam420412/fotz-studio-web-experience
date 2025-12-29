@@ -2,20 +2,21 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { 
   Megaphone, 
   Globe, 
-  Video, 
-  Palette, 
-  Users, 
-  Building2,
   Layers,
-  PenTool,
+  FileText,
   Share2,
   Facebook,
   Target,
   ShoppingCart,
-  Search,
+  TrendingUp,
   MapPin,
   Film,
   Clapperboard,
@@ -53,6 +54,7 @@ interface MenuItem {
   href: string;
   badge?: string;
   icon: React.ComponentType<{ className?: string }>;
+  tooltip: string;
 }
 
 interface MenuCategory {
@@ -70,12 +72,12 @@ const menuCategories: MenuCategory[] = [
     image: marketingImg,
     color: "#75143F",
     items: [
-      { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers },
-      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone },
-      { name: "Content Marketing", href: "/content-marketing", badge: "Nowe", icon: PenTool },
-      { name: "Social Media", href: "/social-media", icon: Share2 },
-      { name: "Facebook Ads", href: "/facebook-ads", icon: Facebook },
-      { name: "Google Ads", href: "/google-ads", icon: Target },
+      { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers, tooltip: "Pełna obsługa marketingowa od A do Z" },
+      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Strategia digital i promocja online" },
+      { name: "Content Marketing", href: "/content-marketing", badge: "Nowe", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
+      { name: "Social Media", href: "/social-media", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
+      { name: "Facebook Ads", href: "/facebook-ads", icon: Facebook, tooltip: "Kampanie reklamowe Meta Ads" },
+      { name: "Google Ads", href: "/google-ads", icon: Target, tooltip: "Reklamy w wyszukiwarce Google" },
     ],
   },
   {
@@ -84,10 +86,10 @@ const menuCategories: MenuCategory[] = [
     image: websiteImg,
     color: "#0F3053",
     items: [
-      { name: "Strony Internetowe", href: "/strony-internetowe", icon: Globe },
-      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu", icon: ShoppingCart },
-      { name: "Pozycjonowanie SEO", href: "/pozycjonowanie", icon: Search },
-      { name: "Google Maps", href: "/pozycjonowanie-google-maps", icon: MapPin },
+      { name: "Strony Internetowe", href: "/strony-internetowe", icon: Globe, tooltip: "Projektowanie i wdrażanie stron www" },
+      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu", icon: ShoppingCart, tooltip: "Sklepy internetowe z integracjami" },
+      { name: "Pozycjonowanie SEO", href: "/pozycjonowanie", icon: TrendingUp, tooltip: "Wysoka pozycja w wynikach Google" },
+      { name: "Google Maps", href: "/pozycjonowanie-google-maps", icon: MapPin, tooltip: "Widoczność w mapach lokalnych" },
     ],
   },
   {
@@ -96,10 +98,10 @@ const menuCategories: MenuCategory[] = [
     image: videoImg,
     color: "#422249",
     items: [
-      { name: "Produkcja Filmów", href: "/produkcja-filmow-poznan", icon: Film },
-      { name: "Spoty Reklamowe", href: "/spoty-reklamowe", icon: Clapperboard },
-      { name: "Wizualizacje 3D", href: "/wizualizacje-3d", icon: Box },
-      { name: "Fotografia", href: "/fotograf-poznan", icon: Camera },
+      { name: "Produkcja Filmów", href: "/produkcja-filmow-poznan", icon: Film, tooltip: "Filmy promocyjne i korporacyjne" },
+      { name: "Spoty Reklamowe", href: "/spoty-reklamowe", icon: Clapperboard, tooltip: "Krótkie formy reklamowe" },
+      { name: "Wizualizacje 3D", href: "/wizualizacje-3d", icon: Box, tooltip: "Renderingi produktów i architektury" },
+      { name: "Fotografia", href: "/fotograf-poznan", icon: Camera, tooltip: "Sesje zdjęciowe produktowe i eventowe" },
     ],
   },
   {
@@ -108,8 +110,8 @@ const menuCategories: MenuCategory[] = [
     image: brandingImg,
     color: "#75143F",
     items: [
-      { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", icon: Fingerprint },
-      { name: "Obsługa graficzna", href: "/agencja-graficzna", icon: Brush },
+      { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", icon: Fingerprint, tooltip: "Logo, kolory, typografia marki" },
+      { name: "Obsługa graficzna", href: "/agencja-graficzna", icon: Brush, tooltip: "Projekty graficzne na zamówienie" },
     ],
   },
   {
@@ -118,10 +120,10 @@ const menuCategories: MenuCategory[] = [
     image: graphicImg,
     color: "#2D4A3E",
     items: [
-      { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne", icon: Store },
-      { name: "E-commerce", href: "/dla-kogo/ecommerce", icon: ShoppingBag },
-      { name: "Marki premium", href: "/dla-kogo/marki-premium", icon: Crown },
-      { name: "Instytucje i eventy", href: "/dla-kogo/instytucje", icon: CalendarDays },
+      { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne", icon: Store, tooltip: "Marketing dla lokalnych przedsiębiorstw" },
+      { name: "E-commerce", href: "/dla-kogo/ecommerce", icon: ShoppingBag, tooltip: "Strategie dla sklepów online" },
+      { name: "Marki premium", href: "/dla-kogo/marki-premium", icon: Crown, tooltip: "Ekskluzywny marketing premium" },
+      { name: "Instytucje i eventy", href: "/dla-kogo/instytucje", icon: CalendarDays, tooltip: "Promocja wydarzeń i instytucji" },
     ],
   },
   {
@@ -130,18 +132,18 @@ const menuCategories: MenuCategory[] = [
     image: branzeImg,
     color: "#1A365D",
     items: [
-      { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna", icon: Stethoscope },
-      { name: "Gastronomia", href: "/dla-kogo/gastronomia", icon: UtensilsCrossed },
-      { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness", icon: Sparkles },
-      { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci", icon: Home },
-      { name: "Automotive", href: "/dla-kogo/automotive", icon: Car },
-      { name: "IT & SaaS", href: "/dla-kogo/it-saas", icon: Monitor },
-      { name: "Edukacja", href: "/dla-kogo/edukacja", icon: GraduationCap },
-      { name: "Prawo & Finanse", href: "/dla-kogo/prawo-finanse", icon: Scale },
-      { name: "E-commerce & Retail", href: "/dla-kogo/ecommerce-retail", icon: ShoppingCart },
-      { name: "Produkcja", href: "/dla-kogo/produkcja", icon: Package },
-      { name: "NGO & Fundacje", href: "/dla-kogo/ngo", icon: Heart },
-      { name: "Turystyka", href: "/dla-kogo/turystyka", icon: Plane },
+      { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna", icon: Stethoscope, tooltip: "Marketing dla klinik i gabinetów" },
+      { name: "Gastronomia", href: "/dla-kogo/gastronomia", icon: UtensilsCrossed, tooltip: "Promocja restauracji i kawiarni" },
+      { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness", icon: Sparkles, tooltip: "Marketing salonów beauty" },
+      { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci", icon: Home, tooltip: "Sprzedaż i wynajem nieruchomości" },
+      { name: "Automotive", href: "/dla-kogo/automotive", icon: Car, tooltip: "Marketing dla motoryzacji" },
+      { name: "IT & SaaS", href: "/dla-kogo/it-saas", icon: Monitor, tooltip: "Promocja produktów technologicznych" },
+      { name: "Edukacja", href: "/dla-kogo/edukacja", icon: GraduationCap, tooltip: "Marketing szkół i kursów" },
+      { name: "Prawo & Finanse", href: "/dla-kogo/prawo-finanse", icon: Scale, tooltip: "Komunikacja kancelarii i firm" },
+      { name: "E-commerce & Retail", href: "/dla-kogo/ecommerce-retail", icon: ShoppingCart, tooltip: "Strategie sprzedaży detalicznej" },
+      { name: "Produkcja", href: "/dla-kogo/produkcja", icon: Package, tooltip: "Marketing dla producentów B2B" },
+      { name: "NGO & Fundacje", href: "/dla-kogo/ngo", icon: Heart, tooltip: "Komunikacja organizacji non-profit" },
+      { name: "Turystyka", href: "/dla-kogo/turystyka", icon: Plane, tooltip: "Promocja hoteli i biur podróży" },
     ],
   },
 ];
@@ -154,6 +156,39 @@ interface MegaMenuProps {
 export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
   const [hoveredCategory, setHoveredCategory] = useState<number>(0);
   const activeCategory = menuCategories[hoveredCategory];
+
+  const MenuItemLink = ({ item, categoryIndex, itemIndex }: { item: MenuItem; categoryIndex: number; itemIndex: number }) => {
+    const Icon = item.icon;
+    return (
+      <motion.li 
+        key={item.href}
+        initial={{ opacity: 0, x: -10 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
+      >
+        <Tooltip delayDuration={300}>
+          <TooltipTrigger asChild>
+            <Link
+              to={item.href}
+              onClick={onClose}
+              className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
+            >
+              <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
+              {item.name}
+              {item.badge && (
+                <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
+                  {item.badge}
+                </span>
+              )}
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent side="right" className="text-xs max-w-[200px]">
+            {item.tooltip}
+          </TooltipContent>
+        </Tooltip>
+      </motion.li>
+    );
+  };
 
   return (
     <AnimatePresence>
@@ -185,7 +220,6 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                 <div className="grid lg:grid-cols-[320px_1fr] min-h-[400px]">
                   {/* Left Preview Panel */}
                   <div className="hidden lg:block relative overflow-hidden">
-                    {/* Background layer - always visible for smooth transition */}
                     <div className="absolute inset-0 bg-gradient-to-br from-[#75143F] to-[#0F3053]" />
                     
                     <AnimatePresence mode="sync">
@@ -194,13 +228,9 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         initial={{ opacity: 0, scale: 1.1 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
-                        transition={{ 
-                          duration: 0.5, 
-                          ease: [0.4, 0, 0.2, 1]
-                        }}
+                        transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
                         className="absolute inset-0"
                       >
-                        {/* Image with crossfade */}
                         <motion.div 
                           className="absolute inset-0 bg-cover bg-center"
                           style={{ backgroundImage: `url(${activeCategory.image})` }}
@@ -208,21 +238,16 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                           animate={{ scale: 1 }}
                           transition={{ duration: 0.8, ease: "easeOut" }}
                         />
-                        
-                        {/* Color overlay with smooth transition */}
                         <motion.div 
                           className="absolute inset-0"
                           initial={{ opacity: 0 }}
                           animate={{ opacity: 1 }}
                           transition={{ duration: 0.4 }}
-                          style={{ 
-                            background: `linear-gradient(135deg, ${activeCategory.color}E6 0%, ${activeCategory.color}99 100%)` 
-                          }}
+                          style={{ background: `linear-gradient(135deg, ${activeCategory.color}E6 0%, ${activeCategory.color}99 100%)` }}
                         />
                       </motion.div>
                     </AnimatePresence>
                     
-                    {/* Content overlay */}
                     <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
                       <AnimatePresence mode="wait">
                         <motion.div
@@ -230,51 +255,27 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                           initial={{ y: 30, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
                           exit={{ y: -20, opacity: 0 }}
-                          transition={{ 
-                            duration: 0.4, 
-                            ease: [0.4, 0, 0.2, 1],
-                            delay: 0.1
-                          }}
+                          transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1], delay: 0.1 }}
                         >
-                          <motion.h3 
-                            className="text-2xl font-bold text-white mb-2"
-                          >
+                          <motion.h3 className="text-2xl font-bold text-white mb-2">
                             {activeCategory.title}
                           </motion.h3>
-                          <motion.p
-                            className="text-white/80 text-sm"
-                          >
+                          <motion.p className="text-white/80 text-sm">
                             {activeCategory.description}
                           </motion.p>
                         </motion.div>
                       </AnimatePresence>
                     </div>
                     
-                    {/* Animated decorative elements */}
                     <motion.div 
                       className="absolute top-4 right-4 w-20 h-20 rounded-full border border-white/20"
-                      animate={{ 
-                        scale: [1, 1.1, 1],
-                        opacity: [0.3, 0.5, 0.3]
-                      }}
-                      transition={{ 
-                        duration: 3, 
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
+                      animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
+                      transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
                     />
                     <motion.div 
                       className="absolute bottom-20 right-8 w-12 h-12 rounded-full border border-white/10"
-                      animate={{ 
-                        scale: [1, 1.2, 1],
-                        opacity: [0.2, 0.4, 0.2]
-                      }}
-                      transition={{ 
-                        duration: 4, 
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                        delay: 1
-                      }}
+                      animate={{ scale: [1, 1.2, 1], opacity: [0.2, 0.4, 0.2] }}
+                      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                     />
                   </div>
 
@@ -311,9 +312,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                 ? "text-foreground translate-x-1" 
                                 : "text-muted-foreground"
                             )}
-                            style={{ 
-                              color: hoveredCategory === categoryIndex ? category.color : undefined 
-                            }}
+                            style={{ color: hoveredCategory === categoryIndex ? category.color : undefined }}
                           >
                             <motion.span
                               className="w-1.5 h-1.5 rounded-full"
@@ -327,31 +326,14 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             {category.title}
                           </h4>
                           <ul className="space-y-2">
-                            {category.items.map((item, itemIndex) => {
-                              const Icon = item.icon;
-                              return (
-                                <motion.li 
-                                  key={item.href}
-                                  initial={{ opacity: 0, x: -10 }}
-                                  animate={{ opacity: 1, x: 0 }}
-                                  transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
-                                >
-                                  <Link
-                                    to={item.href}
-                                    onClick={onClose}
-                                    className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
-                                  >
-                                    <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
-                                    {item.name}
-                                    {item.badge && (
-                                      <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
-                                        {item.badge}
-                                      </span>
-                                    )}
-                                  </Link>
-                                </motion.li>
-                              );
-                            })}
+                            {category.items.map((item, itemIndex) => (
+                              <MenuItemLink 
+                                key={item.href}
+                                item={item} 
+                                categoryIndex={categoryIndex} 
+                                itemIndex={itemIndex} 
+                              />
+                            ))}
                           </ul>
                         </motion.div>
                       ))}
@@ -379,9 +361,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                   ? "text-foreground translate-x-1" 
                                   : "text-muted-foreground"
                               )}
-                              style={{ 
-                                color: hoveredCategory === categoryIndex ? category.color : undefined 
-                              }}
+                              style={{ color: hoveredCategory === categoryIndex ? category.color : undefined }}
                             >
                               <motion.span
                                 className="w-1.5 h-1.5 rounded-full"
@@ -395,26 +375,14 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                               {category.title}
                             </h4>
                             <ul className="space-y-2">
-                              {category.items.map((item, itemIndex) => {
-                                const Icon = item.icon;
-                                return (
-                                  <motion.li 
-                                    key={item.href}
-                                    initial={{ opacity: 0, x: -10 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
-                                  >
-                                    <Link
-                                      to={item.href}
-                                      onClick={onClose}
-                                      className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
-                                    >
-                                      <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
-                                      {item.name}
-                                    </Link>
-                                  </motion.li>
-                                );
-                              })}
+                              {category.items.map((item, itemIndex) => (
+                                <MenuItemLink 
+                                  key={item.href}
+                                  item={item} 
+                                  categoryIndex={categoryIndex} 
+                                  itemIndex={itemIndex} 
+                                />
+                              ))}
                             </ul>
                           </motion.div>
                         );
@@ -443,9 +411,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                   ? "text-foreground translate-x-1" 
                                   : "text-muted-foreground"
                               )}
-                              style={{ 
-                                color: hoveredCategory === categoryIndex ? category.color : undefined 
-                              }}
+                              style={{ color: hoveredCategory === categoryIndex ? category.color : undefined }}
                             >
                               <motion.span
                                 className="w-1.5 h-1.5 rounded-full"
@@ -461,48 +427,24 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             
                             <div className="grid grid-cols-2 gap-x-6">
                               <ul className="space-y-2">
-                                {column1.map((item, itemIndex) => {
-                                  const Icon = item.icon;
-                                  return (
-                                    <motion.li 
-                                      key={item.href}
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
-                                      transition={{ delay: categoryIndex * 0.05 + itemIndex * 0.03 + 0.15 }}
-                                    >
-                                      <Link
-                                        to={item.href}
-                                        onClick={onClose}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
-                                      >
-                                        <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
-                                        {item.name}
-                                      </Link>
-                                    </motion.li>
-                                  );
-                                })}
+                                {column1.map((item, itemIndex) => (
+                                  <MenuItemLink 
+                                    key={item.href}
+                                    item={item} 
+                                    categoryIndex={categoryIndex} 
+                                    itemIndex={itemIndex} 
+                                  />
+                                ))}
                               </ul>
                               <ul className="space-y-2">
-                                {column2.map((item, itemIndex) => {
-                                  const Icon = item.icon;
-                                  return (
-                                    <motion.li 
-                                      key={item.href}
-                                      initial={{ opacity: 0, x: -10 }}
-                                      animate={{ opacity: 1, x: 0 }}
-                                      transition={{ delay: categoryIndex * 0.05 + (itemIndex + 6) * 0.03 + 0.15 }}
-                                    >
-                                      <Link
-                                        to={item.href}
-                                        onClick={onClose}
-                                        className="text-sm text-muted-foreground hover:text-foreground transition-all duration-200 flex items-center gap-2 hover:translate-x-1 group"
-                                      >
-                                        <Icon className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity" />
-                                        {item.name}
-                                      </Link>
-                                    </motion.li>
-                                  );
-                                })}
+                                {column2.map((item, itemIndex) => (
+                                  <MenuItemLink 
+                                    key={item.href}
+                                    item={item} 
+                                    categoryIndex={categoryIndex} 
+                                    itemIndex={itemIndex + 6} 
+                                  />
+                                ))}
                               </ul>
                             </div>
                           </motion.div>
