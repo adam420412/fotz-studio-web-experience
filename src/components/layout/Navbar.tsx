@@ -26,6 +26,7 @@ const servicesDropdownData = [
   { name: { pl: "Kompleksowa obsługa", en: "Full-service" }, href: "/kompleksowa-obsluga-marketingowa" },
   { name: { pl: "Strony Internetowe", en: "Websites" }, href: "/strony-internetowe" },
   { name: { pl: "Social Media", en: "Social Media" }, href: "/social-media" },
+  { name: { pl: "Facebook Ads", en: "Facebook Ads" }, href: "/facebook-ads" },
   { name: { pl: "Pozycjonowanie SEO", en: "SEO" }, href: "/pozycjonowanie" },
   { name: { pl: "Google Maps", en: "Google Maps" }, href: "/pozycjonowanie-google-maps" },
   { name: { pl: "Produkcja Filmów", en: "Film Production" }, href: "/produkcja-filmow" },
