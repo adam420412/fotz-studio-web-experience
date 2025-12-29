@@ -89,6 +89,7 @@ import PolitykaPrywatnosci from "./pages/PolitykaPrywatnosci";
 import Regulamin from "./pages/Regulamin";
 import Kariera from "./pages/Kariera";
 import FAQ from "./pages/FAQ";
+import Cennik from "./pages/Cennik";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -185,6 +186,7 @@ const App = () => (
             <Route path="/regulamin" element={<Regulamin />} />
             <Route path="/kariera" element={<Kariera />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/cennik" element={<Cennik />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
