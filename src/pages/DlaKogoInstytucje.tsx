@@ -19,28 +19,28 @@ const caseStudies = [
     description: "Kompleksowa obsługa marketingowa stadionu - od wydarzeń sportowych po koncerty i eventy biznesowe.",
     image: eneaImage,
     results: ["500+ wydarzeń", "Miliony widzów", "Pełna obsługa foto/video"],
-    href: "/case-study-enea-stadion",
+    href: "/realizacje/enea-stadion",
   },
   {
     title: "FPS Cegielski",
     description: "Dokumentacja i promocja wydarzeń dla historycznej instytucji przemysłowej.",
     image: fpsImage,
     results: ["Profesjonalna dokumentacja", "Promocja wydarzeń", "Archiwum cyfrowe"],
-    href: "/case-study-fps",
+    href: "/realizacje/fps",
   },
   {
     title: "Fabryka Virali",
     description: "Viral marketing i kampanie social media dla organizatora wydarzeń rozrywkowych.",
     image: fabrykaViraliImage,
     results: ["10M+ wyświetleń", "Viralowe kampanie", "Sold-out wydarzeń"],
-    href: "/case-study-fabryka-virali",
+    href: "/realizacje/fabryka-virali",
   },
   {
     title: "Gierki",
     description: "Branding i marketing dla cyklicznych wydarzeń gamingowych i esportowych.",
     image: gierkiImage,
     results: ["Rozpoznawalna marka", "Społeczność graczy", "Pełne sale"],
-    href: "/case-study-gierki",
+    href: "/realizacje/gierki",
   },
 ];
 
@@ -423,11 +423,19 @@ export default function DlaKogoInstytucje() {
                     <Plus className="w-5 h-5 text-primary flex-shrink-0" />
                   )}
                 </button>
-                {openFaq === index && (
+                <motion.div
+                  initial={false}
+                  animate={{ 
+                    height: openFaq === index ? "auto" : 0,
+                    opacity: openFaq === index ? 1 : 0
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
                   <div className="px-6 pb-6 text-muted-foreground">
                     {item.answer}
                   </div>
-                )}
+                </motion.div>
               </motion.div>
             ))}
           </div>

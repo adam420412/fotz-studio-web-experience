@@ -19,28 +19,28 @@ const caseStudies = [
     description: "Kompleksowa obsługa e-commerce dla marki modowej - sklep, kampanie reklamowe i content marketing.",
     image: vertheImage,
     results: ["+320% wzrost sprzedaży", "ROAS 8.5", "+45% AOV"],
-    href: "/case-study-verthe",
+    href: "/realizacje/verthe",
   },
   {
     title: "Klagem",
     description: "Rebranding i nowy sklep internetowy dla marki kosmetycznej z kampaniami performance.",
     image: klageImage,
     results: ["+250% konwersji", "Nowa identyfikacja", "Sukces rebrandingu"],
-    href: "/case-study-klagem",
+    href: "/realizacje/klagem",
   },
   {
     title: "Cute Dumpling",
     description: "Branding i sklep online dla marki lifestyle z optymalizacją pod mobile.",
     image: cuteDumplingImage,
     results: ["85% ruchu z mobile", "+180% sprzedaży", "Silny brand"],
-    href: "/case-study-cute-dumpling",
+    href: "/realizacje/cute-dumpling",
   },
   {
     title: "Friendly Gas",
     description: "Platforma e-commerce B2B z systemem zamówień i integracją z magazynem.",
     image: friendlyGasImage,
     results: ["+400% zamówień online", "Automatyzacja procesów", "Oszczędność czasu"],
-    href: "/case-study-friendly-gas",
+    href: "/realizacje/friendly-gas",
   },
 ];
 
@@ -419,11 +419,19 @@ export default function DlaKogoEcommerce() {
                     <Plus className="w-5 h-5 text-primary flex-shrink-0" />
                   )}
                 </button>
-                {openFaq === index && (
+                <motion.div
+                  initial={false}
+                  animate={{ 
+                    height: openFaq === index ? "auto" : 0,
+                    opacity: openFaq === index ? 1 : 0
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
                   <div className="px-6 pb-6 text-muted-foreground">
                     {item.answer}
                   </div>
-                )}
+                </motion.div>
               </motion.div>
             ))}
           </div>

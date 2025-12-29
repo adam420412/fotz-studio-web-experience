@@ -19,28 +19,28 @@ const caseStudies = [
     description: "Strona internetowa dla Rady Polskich Przedsiębiorców Globalnych z systemem zarządzania treścią.",
     image: rppgImage,
     results: ["Profesjonalny wizerunek online", "+200% więcej zapytań", "Nowoczesna strona WWW"],
-    href: "/case-study-rppg",
+    href: "/realizacje/rppg",
   },
   {
     title: "Graf Tapicerstwo",
     description: "Strona internetowa i pozycjonowanie lokalne dla firmy specjalizującej się w tapicerowaniu autobusów.",
     image: grafImage,
     results: ["TOP 3 w Google Maps", "+150% ruchu organicznego", "Stały napływ zleceń"],
-    href: "/case-study-graf",
+    href: "/realizacje/graf",
   },
   {
     title: "Mechanica",
     description: "Kompleksowa strona WWW dla producenta suwnic i wciągników przemysłowych.",
     image: mechanicaImage,
     results: ["Profesjonalna wizytówka B2B", "+180% zapytań ofertowych", "Widoczność w branży"],
-    href: "/case-study-mechanica",
+    href: "/realizacje/mechanica",
   },
   {
     title: "Przedszkole",
     description: "Strona internetowa i marketing lokalny dla przedszkola z pełną funkcjonalnością dla rodziców.",
     image: przedszkoleImage,
     results: ["100% zapełnienie miejsc", "Top 5 w lokalnych wynikach", "Zaufanie rodziców"],
-    href: "/case-study-przedszkole",
+    href: "/realizacje/przedszkole",
   },
 ];
 
@@ -387,11 +387,19 @@ export default function DlaKogoFirmyLokalne() {
                     <Plus className="w-5 h-5 text-primary flex-shrink-0" />
                   )}
                 </button>
-                {openFaq === index && (
+                <motion.div
+                  initial={false}
+                  animate={{ 
+                    height: openFaq === index ? "auto" : 0,
+                    opacity: openFaq === index ? 1 : 0
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
                   <div className="px-6 pb-6 text-muted-foreground">
                     {item.answer}
                   </div>
-                )}
+                </motion.div>
               </motion.div>
             ))}
           </div>
