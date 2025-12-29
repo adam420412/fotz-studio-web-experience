@@ -1,10 +1,12 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Palette, Users } from "lucide-react";
+import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Palette, Users, ChevronLeft, ChevronRight, X, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { useState, useCallback, useEffect } from "react";
 import fpsImg from "@/assets/portfolio/fps-cegielski.png";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },
@@ -28,7 +30,37 @@ const results = [
   { metric: "UX", value: "100%", description: "Pełna optymalizacja użytkownika" },
 ];
 
+// Gallery images for the case study
+const galleryImages = [
+  { src: fpsImg, title: "Strona główna FPS", category: "Web Design" },
+];
+
 const CaseStudyFPS = () => {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  const handlePrevious = useCallback(() => {
+    setSelectedImage(prev => 
+      prev !== null ? (prev - 1 + galleryImages.length) % galleryImages.length : null
+    );
+  }, []);
+
+  const handleNext = useCallback(() => {
+    setSelectedImage(prev => 
+      prev !== null ? (prev + 1) % galleryImages.length : null
+    );
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedImage === null) return;
+      if (e.key === 'ArrowLeft') handlePrevious();
+      if (e.key === 'ArrowRight') handleNext();
+      if (e.key === 'Escape') setSelectedImage(null);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedImage, handlePrevious, handleNext]);
   return (
     <Layout>
       <Helmet>
@@ -237,7 +269,7 @@ const CaseStudyFPS = () => {
         </div>
       </section>
 
-      {/* Video Section */}
+      {/* Video Section - Website Presentation */}
       <section className="section-padding bg-background">
         <div className="container-wide">
           <motion.div
@@ -247,11 +279,15 @@ const CaseStudyFPS = () => {
             transition={{ duration: 0.7 }}
             className="text-center max-w-3xl mx-auto mb-12"
           >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-4">
+              <Play className="w-4 h-4" />
+              <span className="text-sm font-medium">Prezentacja strony</span>
+            </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Zobacz <span className="text-gradient-premium">realizację wideo</span>
+              Zobacz <span className="text-gradient-premium">stronę w akcji</span>
             </h2>
             <p className="text-foreground/70">
-              Produkcja filmowa dla FPS Poznań prezentująca nowoczesne zaplecze produkcyjne fabryki.
+              Prezentacja wideo nowej strony internetowej FPS Poznań - pokaz funkcjonalności i designu.
             </p>
           </motion.div>
 
@@ -261,17 +297,127 @@ const CaseStudyFPS = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10 group">
               <video
                 src="/videos/fps-poznan.mp4"
                 controls
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 poster="/videos/fps-poznan.mp4#t=0.5"
               />
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary/20 to-transparent rounded-full blur-2xl pointer-events-none" />
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-tr from-primary/15 to-transparent rounded-full blur-2xl pointer-events-none" />
             </div>
           </motion.div>
         </div>
       </section>
+
+      {/* Interactive Gallery Section */}
+      <section className="section-padding bg-card">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="text-center max-w-3xl mx-auto mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Galeria <span className="text-gradient-premium">projektu</span>
+            </h2>
+            <p className="text-foreground/70">
+              Kliknij na zdjęcie, aby zobaczyć szczegóły realizacji
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                onClick={() => setSelectedImage(index)}
+                className="relative group cursor-pointer overflow-hidden rounded-2xl border border-border/30"
+              >
+                <img
+                  src={image.src}
+                  alt={image.title}
+                  className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs rounded-full mb-2">
+                      {image.category}
+                    </span>
+                    <h3 className="text-foreground font-semibold">{image.title}</h3>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {selectedImage !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-background/95 backdrop-blur-xl z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrevious();
+              }}
+              className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-muted/80 hover:bg-muted transition-colors z-10"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            
+            <motion.div
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.9 }}
+              className="relative max-w-5xl max-h-[90vh]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img
+                src={galleryImages[selectedImage].src}
+                alt={galleryImages[selectedImage].title}
+                className="max-w-full max-h-[90vh] object-contain rounded-xl"
+              />
+              <div className="absolute bottom-4 left-4 right-4 p-4 bg-background/80 backdrop-blur-sm rounded-xl">
+                <h3 className="font-semibold text-foreground">{galleryImages[selectedImage].title}</h3>
+                <p className="text-sm text-muted-foreground">{galleryImages[selectedImage].category}</p>
+              </div>
+            </motion.div>
+            
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNext();
+              }}
+              className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 p-3 rounded-full bg-muted/80 hover:bg-muted transition-colors z-10"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+            
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 p-3 rounded-full bg-muted/80 hover:bg-muted transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* CTA */}
       <section className="section-padding bg-background">

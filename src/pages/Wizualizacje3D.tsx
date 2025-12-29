@@ -6,13 +6,16 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Box, Building, Camera, Layers, Play, Sparkles, Eye, Palette, CheckCircle, ChevronLeft, ChevronRight, X, Check, Zap, Crown, Repeat } from "lucide-react";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, Suspense, lazy } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
+// Lazy load the 3D viewer for performance
+const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
 
 import viz1 from "@/assets/wizualizacje/viz-1.png";
 import viz2 from "@/assets/wizualizacje/viz-2.webp";
@@ -359,6 +362,43 @@ const Wizualizacje3D = () => {
                 </FadeInView>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Interactive 3D Model Section */}
+        <section className="py-20 md:py-32">
+          <div className="container-wide px-6 md:px-12">
+            <FadeInView>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Interaktywny model{" "}
+                  <span className="bg-gradient-brand bg-clip-text text-transparent">3D</span>
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Obracaj model 3D, przybliżaj i odkrywaj każdy szczegół. 
+                  Tak prezentujemy produkty naszych klientów.
+                </p>
+              </div>
+            </FadeInView>
+            
+            <FadeInView delay={0.2}>
+              <div className="max-w-4xl mx-auto">
+                <Suspense fallback={
+                  <div className="aspect-square md:aspect-video bg-card rounded-3xl border border-border flex items-center justify-center">
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="w-12 h-12 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
+                      <span className="text-sm text-muted-foreground">Ładowanie podglądu 3D...</span>
+                    </div>
+                  </div>
+                }>
+                  <ModelViewer3D 
+                    modelUrl="/models/regulator-3d.glb"
+                    title="Wizualizacja produktu przemysłowego"
+                    description="Regulator ciśnienia - przykład wizualizacji produktowej 3D dla klienta B2B"
+                  />
+                </Suspense>
+              </div>
+            </FadeInView>
           </div>
         </section>
 

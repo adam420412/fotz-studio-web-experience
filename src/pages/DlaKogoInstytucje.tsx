@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 // Import case study images
 import eneaImage from "@/assets/portfolio/enea-stadion.png";
@@ -194,30 +195,25 @@ export default function DlaKogoInstytucje() {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Animated Stats */}
       <section className="py-12 bg-card border-y border-border">
         <div className="container-wide">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { value: "500+", label: "Wydarzeń" },
-              { value: "5M+", label: "Widzów" },
-              { value: "Enea", label: "Stadion Poznań" },
-              { value: "8+", label: "Lat doświadczenia" },
-            ].map((stat, index) => (
+            <AnimatedCounter end={500} suffix="+" label="Wydarzeń" index={0} />
+            <AnimatedCounter end={5} prefix="" suffix=" mln" label="Widzów" index={1} />
+            <div className="text-center">
               <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center"
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2"
               >
-                <div className="text-4xl md:text-5xl font-heading font-bold text-primary mb-2">
-                  {stat.value}
-                </div>
-                <p className="text-muted-foreground">{stat.label}</p>
+                Enea
               </motion.div>
-            ))}
+              <div className="text-sm text-foreground/60">Stadion Poznań</div>
+            </div>
+            <AnimatedCounter end={8} suffix="+" label="Lat doświadczenia" index={3} />
           </div>
         </div>
       </section>
