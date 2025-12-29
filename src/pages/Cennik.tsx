@@ -712,20 +712,55 @@ export default function Cennik() {
 
     setIsSubmitting(true);
 
-    // Symulacja wysyłki (w rzeczywistości byłoby to edge function)
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch(
+        "https://vhzmfebggxeovtkznlby.supabase.co/functions/v1/send-pricing-inquiry",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+            selectedServices: selectedDetails.selected.map(s => ({
+              name: s.name,
+              priceFrom: s.priceFrom,
+              priceType: s.priceType,
+            })),
+            totals: {
+              oneTimeTotal: selectedDetails.oneTimeTotal,
+              oneTimeTotalMax: selectedDetails.oneTimeTotalMax,
+              monthlyTotal: selectedDetails.monthlyTotal,
+              monthlyTotalMax: selectedDetails.monthlyTotalMax,
+            },
+          }),
+        }
+      );
 
-    toast({
-      title: "Zapytanie wysłane!",
-      description: "Odezwiemy się do Ciebie w ciągu 24h.",
-    });
+      if (!response.ok) {
+        throw new Error("Błąd podczas wysyłania zapytania");
+      }
 
-    setIsSubmitting(false);
-    // Reset
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setSelectedServices([]);
-    setSelectedCategories([]);
-    setFlowStep("categories");
+      toast({
+        title: "Zapytanie wysłane!",
+        description: "Odezwiemy się do Ciebie w ciągu 24h. Sprawdź skrzynkę email.",
+      });
+
+      // Reset
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setSelectedServices([]);
+      setSelectedCategories([]);
+      setFlowStep("categories");
+    } catch (error) {
+      console.error("Error sending inquiry:", error);
+      toast({
+        title: "Błąd wysyłania",
+        description: "Nie udało się wysłać zapytania. Spróbuj ponownie lub skontaktuj się bezpośrednio.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -1147,120 +1182,128 @@ export default function Cennik() {
                         </div>
                       </div>
                     )}
+                  </motion.div>
+                )}
 
-                    {/* Step 4: Contact Form */}
-                    {flowStep === "contact" && (
-                      <div className="max-w-2xl mx-auto">
-                        <Card className="border-primary/20">
-                          <CardHeader>
-                            <CardTitle className="flex items-center gap-2">
-                              <Mail className="w-5 h-5 text-primary" />
-                              Wyślij zapytanie ofertowe
-                            </CardTitle>
-                            <CardDescription>
-                              Wypełnij formularz, a skontaktujemy się w ciągu 24h
-                            </CardDescription>
-                          </CardHeader>
-                          <CardContent>
-                            <form onSubmit={handleSubmit} className="space-y-6">
-                              <div className="grid md:grid-cols-2 gap-4">
-                                <div className="space-y-2">
-                                  <Label htmlFor="name">Imię i nazwisko *</Label>
-                                  <Input
-                                    id="name"
-                                    value={formData.name}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                                    placeholder="Jan Kowalski"
-                                    className={formErrors.name ? "border-red-500" : ""}
-                                  />
-                                  {formErrors.name && <p className="text-xs text-red-500">{formErrors.name}</p>}
-                                </div>
-                                <div className="space-y-2">
-                                  <Label htmlFor="email">Email *</Label>
-                                  <Input
-                                    id="email"
-                                    type="email"
-                                    value={formData.email}
-                                    onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
-                                    placeholder="jan@firma.pl"
-                                    className={formErrors.email ? "border-red-500" : ""}
-                                  />
-                                  {formErrors.email && <p className="text-xs text-red-500">{formErrors.email}</p>}
-                                </div>
-                              </div>
+                {/* Step 4: Contact Form */}
+                {flowStep === "contact" && (
+                  <motion.div
+                    key="contact"
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <div className="max-w-2xl mx-auto">
+                      <Card className="border-primary/20">
+                        <CardHeader>
+                          <CardTitle className="flex items-center gap-2">
+                            <Mail className="w-5 h-5 text-primary" />
+                            Wyślij zapytanie ofertowe
+                          </CardTitle>
+                          <CardDescription>
+                            Wypełnij formularz, a skontaktujemy się w ciągu 24h
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                          <form onSubmit={handleSubmit} className="space-y-6">
+                            <div className="grid md:grid-cols-2 gap-4">
                               <div className="space-y-2">
-                                <Label htmlFor="phone">Telefon (opcjonalnie)</Label>
+                                <Label htmlFor="name">Imię i nazwisko *</Label>
                                 <Input
-                                  id="phone"
-                                  type="tel"
-                                  value={formData.phone}
-                                  onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                                  placeholder="+48 123 456 789"
+                                  id="name"
+                                  value={formData.name}
+                                  onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                                  placeholder="Jan Kowalski"
+                                  className={formErrors.name ? "border-red-500" : ""}
                                 />
+                                {formErrors.name && <p className="text-xs text-red-500">{formErrors.name}</p>}
                               </div>
                               <div className="space-y-2">
-                                <Label htmlFor="message">Wiadomość *</Label>
-                                <Textarea
-                                  id="message"
-                                  value={formData.message}
-                                  onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                                  placeholder="Opisz krótko swój projekt lub potrzeby..."
-                                  rows={4}
-                                  className={formErrors.message ? "border-red-500" : ""}
+                                <Label htmlFor="email">Email *</Label>
+                                <Input
+                                  id="email"
+                                  type="email"
+                                  value={formData.email}
+                                  onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                                  placeholder="jan@firma.pl"
+                                  className={formErrors.email ? "border-red-500" : ""}
                                 />
-                                {formErrors.message && <p className="text-xs text-red-500">{formErrors.message}</p>}
+                                {formErrors.email && <p className="text-xs text-red-500">{formErrors.email}</p>}
                               </div>
+                            </div>
+                            <div className="space-y-2">
+                              <Label htmlFor="phone">Telefon (opcjonalnie)</Label>
+                              <Input
+                                id="phone"
+                                type="tel"
+                                value={formData.phone}
+                                onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                                placeholder="+48 123 456 789"
+                              />
+                            </div>
+                            <div className="space-y-2">
+                              <Label htmlFor="message">Wiadomość *</Label>
+                              <Textarea
+                                id="message"
+                                value={formData.message}
+                                onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
+                                placeholder="Opisz krótko swój projekt lub potrzeby..."
+                                rows={4}
+                                className={formErrors.message ? "border-red-500" : ""}
+                              />
+                              {formErrors.message && <p className="text-xs text-red-500">{formErrors.message}</p>}
+                            </div>
 
-                              {/* Selected services summary */}
-                              {selectedDetails.count > 0 && (
-                                <div className="p-4 rounded-lg bg-secondary/50">
-                                  <p className="text-sm font-medium mb-2">Wybrane usługi:</p>
-                                  <ul className="text-sm text-muted-foreground space-y-1">
-                                    {selectedDetails.selected.slice(0, 5).map(s => (
-                                      <li key={s.id}>• {s.name}</li>
-                                    ))}
-                                    {selectedDetails.count > 5 && (
-                                      <li className="text-primary">+{selectedDetails.count - 5} więcej</li>
-                                    )}
-                                  </ul>
-                                </div>
-                              )}
-
-                              <div className="flex flex-col sm:flex-row gap-4">
-                                <Button
-                                  type="button"
-                                  variant="outline"
-                                  size="lg"
-                                  onClick={() => setFlowStep("summary")}
-                                  className="gap-2"
-                                >
-                                  <ChevronLeft className="w-4 h-4" />
-                                  Wróć
-                                </Button>
-                                <Button
-                                  type="submit"
-                                  size="lg"
-                                  className="flex-1 gap-2"
-                                  disabled={isSubmitting}
-                                >
-                                  {isSubmitting ? (
-                                    <>
-                                      <Loader2 className="w-4 h-4 animate-spin" />
-                                      Wysyłanie...
-                                    </>
-                                  ) : (
-                                    <>
-                                      <Send className="w-4 h-4" />
-                                      Wyślij zapytanie
-                                    </>
+                            {/* Selected services summary */}
+                            {selectedDetails.count > 0 && (
+                              <div className="p-4 rounded-lg bg-secondary/50">
+                                <p className="text-sm font-medium mb-2">Wybrane usługi:</p>
+                                <ul className="text-sm text-muted-foreground space-y-1">
+                                  {selectedDetails.selected.slice(0, 5).map(s => (
+                                    <li key={s.id}>• {s.name}</li>
+                                  ))}
+                                  {selectedDetails.count > 5 && (
+                                    <li className="text-primary">+{selectedDetails.count - 5} więcej</li>
                                   )}
-                                </Button>
+                                </ul>
                               </div>
-                            </form>
-                          </CardContent>
-                        </Card>
-                      </div>
-                    )}
+                            )}
+
+                            <div className="flex flex-col sm:flex-row gap-4">
+                              <Button
+                                type="button"
+                                variant="outline"
+                                size="lg"
+                                onClick={() => setFlowStep("summary")}
+                                className="gap-2"
+                              >
+                                <ChevronLeft className="w-4 h-4" />
+                                Wróć
+                              </Button>
+                              <Button
+                                type="submit"
+                                size="lg"
+                                className="flex-1 gap-2"
+                                disabled={isSubmitting}
+                              >
+                                {isSubmitting ? (
+                                  <>
+                                    <Loader2 className="w-4 h-4 animate-spin" />
+                                    Wysyłanie...
+                                  </>
+                                ) : (
+                                  <>
+                                    <Send className="w-4 h-4" />
+                                    Wyślij zapytanie
+                                  </>
+                                )}
+                              </Button>
+                            </div>
+                          </form>
+                        </CardContent>
+                      </Card>
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
