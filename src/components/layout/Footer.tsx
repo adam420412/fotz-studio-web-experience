@@ -5,6 +5,7 @@ import logoFotz from "@/assets/logo-fotz.png";
 const footerLinks = {
   uslugi: [
     { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
+    { name: "Content Marketing", href: "/content-marketing" },
     { name: "Strony internetowe", href: "/strony-internetowe" },
     { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu" },
     { name: "Social Media", href: "/social-media" },
@@ -22,10 +23,6 @@ const footerLinks = {
     { name: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan" },
     { name: "Fotograf Poznań", href: "/fotograf-poznan" },
     { name: "Produkcja Filmów Poznań", href: "/produkcja-filmow-poznan" },
-  ],
-  realizacje: [
-    { name: "Portfolio", href: "/realizacje" },
-    { name: "Case Studies", href: "/realizacje" },
   ],
   dlaKogo: [
     { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
@@ -68,7 +65,7 @@ export function Footer() {
       {/* Main Footer */}
       <div className="section-padding py-10 md:py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-12">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10">
             {/* Brand Column */}
             <div className="col-span-2 md:col-span-2 lg:col-span-1">
               <Link
