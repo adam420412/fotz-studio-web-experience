@@ -20,9 +20,12 @@ import {
   Users,
   Instagram,
   Linkedin,
-  Facebook
+  Facebook,
+  Video,
+  Palette
 } from "lucide-react";
 import { useState } from "react";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -175,15 +178,37 @@ export default function AgencjaMarketinguInternetowego() {
         <title>Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio</title>
         <meta 
           name="description" 
-          content="Agencja marketingu internetowego. Skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM, social media marketing. Zwiększ widoczność online." 
+          content="Agencja marketingu internetowego oferuje skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM i social media marketing. Zwiększ widoczność online swojej firmy." 
         />
-        <meta name="keywords" content="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing" />
-        <link rel="canonical" href="https://fotz.pl/agencja-marketingu-internetowego/" />
+        <meta name="keywords" content="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing, performance marketing" />
+        <link rel="canonical" href="https://fotz.pl/agencja-marketingu-internetowego" />
         <meta property="og:title" content="Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio" />
         <meta property="og:description" content="Agencja marketingu internetowego. Skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM, social media marketing." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fotz.pl/agencja-marketingu-internetowego" />
         <meta property="og:locale" content="pl_PL" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio" />
+        <meta name="twitter:description" content="Agencja marketingu internetowego. Skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM, social media marketing." />
       </Helmet>
+
+      {/* Structured Data */}
+      <OrganizationSchema />
+      <ServiceSchema 
+        name="Agencja Marketingu Internetowego"
+        description="Kompleksowe usługi marketingu internetowego: SEO, SEM, Google Ads, social media marketing i kampanie reklamowe dla firm."
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Agencja Marketingu Internetowego", url: "https://fotz.pl/agencja-marketingu-internetowego" }
+        ]}
+      />
+      <FAQSchema 
+        items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background">
@@ -557,6 +582,65 @@ export default function AgencjaMarketinguInternetowego() {
                   )}
                 </div>
               ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="py-16 bg-gradient-to-b from-[#0F3053]/10 to-background">
+        <div className="container px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-6xl mx-auto"
+          >
+            <motion.div variants={fadeIn} className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
+                Powiązane usługi marketingowe
+              </h2>
+              <p className="text-foreground/60">
+                Sprawdź inne usługi, które pomogą rozwinąć Twój biznes online
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { title: "Google Ads", href: "/google-ads", icon: Target },
+                { title: "Facebook Ads", href: "/facebook-ads", icon: Facebook },
+                { title: "Social Media", href: "/social-media", icon: Share2 },
+                { title: "Pozycjonowanie SEO", href: "/pozycjonowanie", icon: TrendingUp },
+                { title: "Strony Internetowe", href: "/strony-internetowe", icon: Globe },
+                { title: "Produkcja Wideo", href: "/produkcja-filmow-poznan", icon: Video },
+                { title: "Identyfikacja Wizualna", href: "/identyfikacja-wizualna", icon: Palette },
+                { title: "Kompleksowa Obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Users },
+              ].map((service, index) => (
+                <Link
+                  key={index}
+                  to={service.href}
+                  className="group flex items-center gap-3 p-4 rounded-xl bg-background border border-foreground/10 hover:border-[#75143F]/40 transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#75143F]/20 to-[#0F3053]/20 flex items-center justify-center group-hover:from-[#75143F]/30 group-hover:to-[#0F3053]/30 transition-all">
+                    <service.icon className="w-5 h-5 text-[#75143F]" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground group-hover:text-[#75143F] transition-colors">
+                    {service.title}
+                  </span>
+                  <ArrowRight className="w-4 h-4 ml-auto text-foreground/40 group-hover:text-[#75143F] group-hover:translate-x-1 transition-all" />
+                </Link>
+              ))}
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="mt-8 text-center">
+              <Link 
+                to="/uslugi" 
+                className="inline-flex items-center gap-2 text-[#75143F] font-medium hover:underline"
+              >
+                Zobacz wszystkie usługi
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </motion.div>
           </motion.div>
         </div>

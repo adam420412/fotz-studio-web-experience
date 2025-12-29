@@ -26,6 +26,7 @@ const menuCategories: MenuCategory[] = [
     color: "#75143F",
     items: [
       { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" },
+      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", badge: "Nowe" },
       { name: "Social Media", href: "/social-media" },
       { name: "Facebook Ads", href: "/facebook-ads" },
       { name: "Google Ads", href: "/google-ads" },
