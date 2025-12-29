@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Building2, ArrowRight, CheckCircle, MapPin, TrendingUp, Users, Target, Star, Phone } from "lucide-react";
+import { Building2, ArrowRight, CheckCircle, MapPin, TrendingUp, Users, Target, Star, Phone, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { OrganizationSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { useState } from "react";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 // Import case study images
 import rppgImage from "@/assets/portfolio/rppg.png";
@@ -75,7 +76,36 @@ const benefits = [
   "Mierzalne rezultaty i transparentne raporty",
 ];
 
+const faqItems = [
+  {
+    question: "Ile kosztuje marketing dla małej lokalnej firmy?",
+    answer: "Budżety zaczynają się od około 2000 zł miesięcznie za podstawową obsługę SEO lokalnego i Google My Business. Pełna obsługa z kampaniami reklamowymi to zazwyczaj 4000-8000 zł miesięcznie, w zależności od zakresu działań i budżetu reklamowego.",
+  },
+  {
+    question: "Jak szybko zobaczę efekty pozycjonowania lokalnego?",
+    answer: "Pierwsze efekty SEO lokalnego widoczne są zazwyczaj po 2-3 miesiącach. Optymalizacja Google My Business może przynieść rezultaty szybciej - często już po kilku tygodniach. Pełne efekty pozycjonowania lokalnego osiągamy w ciągu 6-12 miesięcy.",
+  },
+  {
+    question: "Czy potrzebuję strony internetowej do marketingu lokalnego?",
+    answer: "Strona internetowa znacząco zwiększa skuteczność marketingu lokalnego, ale można zacząć od samego Google My Business i social media. Rekomendujemy jednak inwestycję w stronę WWW - to fundament długoterminowej strategii online.",
+  },
+  {
+    question: "Jak działają kampanie geotargetowane?",
+    answer: "Kampanie geotargetowane wyświetlają reklamy tylko osobom znajdującym się w określonej lokalizacji - np. w promieniu 10 km od Twojej firmy. Dzięki temu budżet reklamowy trafia wyłącznie do potencjalnych klientów z Twojego regionu.",
+  },
+  {
+    question: "Czy obsługujecie firmy spoza Poznania?",
+    answer: "Tak, obsługujemy firmy z całej Polski. Jednak naszą specjalizacją jest rynek poznański i wielkopolski - tutaj mamy największe doświadczenie i najlepsze rezultaty. Dla firm z innych regionów oferujemy pełną obsługę zdalną.",
+  },
+  {
+    question: "Co to jest Google My Business i dlaczego jest ważne?",
+    answer: "Google My Business to darmowa wizytówka Twojej firmy w Google. Pojawia się w wynikach wyszukiwania i na Mapach Google. Dla firm lokalnych to kluczowe narzędzie - większość klientów szuka usług lokalnych właśnie przez Google Maps.",
+  },
+];
+
 export default function DlaKogoFirmyLokalne() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  
   return (
     <Layout>
       <Helmet>
@@ -99,6 +129,7 @@ export default function DlaKogoFirmyLokalne() {
           { name: "Firmy lokalne", url: "https://fotz.pl/dla-kogo/firmy-lokalne" },
         ]}
       />
+      <FAQSchema items={faqItems} />
 
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">
@@ -312,6 +343,55 @@ export default function DlaKogoFirmyLokalne() {
                     </Link>
                   </Button>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="section-padding bg-card">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">
+              Często zadawane <span className="text-gradient">pytania</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Odpowiedzi na najczęstsze pytania o marketing dla firm lokalnych.
+            </p>
+          </motion.div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            {faqItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                className="bg-background rounded-xl border border-border overflow-hidden"
+              >
+                <button
+                  onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                  className="w-full flex items-center justify-between p-6 text-left hover:bg-muted/50 transition-colors"
+                >
+                  <span className="font-heading font-bold pr-4">{item.question}</span>
+                  {openFaq === index ? (
+                    <Minus className="w-5 h-5 text-primary flex-shrink-0" />
+                  ) : (
+                    <Plus className="w-5 h-5 text-primary flex-shrink-0" />
+                  )}
+                </button>
+                {openFaq === index && (
+                  <div className="px-6 pb-6 text-muted-foreground">
+                    {item.answer}
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>
