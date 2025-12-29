@@ -5,6 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { BackstageGallery } from "@/components/sections/BackstageGallery";
 
 // Import local portfolio images
 import rppgImg from "@/assets/portfolio/rppg.png";
@@ -530,6 +531,14 @@ const Realizacje = () => {
           </div>
         </div>
       </section>
+
+      {/* Backstage Gallery Section */}
+      <BackstageGallery 
+        title="Backstage z produkcji"
+        subtitle="Zobacz kulisy pracy nad profesjonalnymi sesjami fotograficznymi i produkcjami filmowymi"
+        maxImages={8}
+        showVideo={true}
+      />
 
       {/* CTA Section */}
       <section className="section-padding bg-background relative overflow-hidden">
