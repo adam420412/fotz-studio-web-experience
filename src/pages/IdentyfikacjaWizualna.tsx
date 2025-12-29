@@ -25,6 +25,13 @@ import klagemHero from "@/assets/branding/klagem-hero.jpg";
 import klagemContact from "@/assets/branding/klagem-contact.jpg";
 import klagemMenu from "@/assets/branding/klagem-menu.jpg";
 
+// Import Ballinn branding images
+import ballinnLogoFilled from "@/assets/branding/ballinn-logo-filled.png";
+import ballinnLogoOutline from "@/assets/branding/ballinn-logo-outline.png";
+import ballinnAppFilled from "@/assets/branding/ballinn-app-filled.png";
+import ballinnIconGradient from "@/assets/branding/ballinn-icon-gradient.png";
+import ballinnIconOutline from "@/assets/branding/ballinn-icon-outline.png";
+
 const IdentyfikacjaWizualna = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
@@ -550,6 +557,90 @@ const IdentyfikacjaWizualna = () => {
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Portfolio Case Study Section - Ballinn App */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span className="inline-block px-4 py-2 bg-[#0F0E54]/20 text-[#0F0E54] dark:bg-[#0F0E54]/40 dark:text-white rounded-full text-sm font-medium mb-4">
+              Case Study
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Ballinn App – aplikacja sportowa
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Kompletna identyfikacja wizualna dla innowacyjnej aplikacji łączącej miłośników piłki nożnej
+            </p>
+          </motion.div>
+
+          {/* Logo variations grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+            {[
+              { src: ballinnLogoFilled, title: "Logo główne", desc: "Wersja wypełniona" },
+              { src: ballinnLogoOutline, title: "Logo outline", desc: "Wersja obrysowa" },
+              { src: ballinnAppFilled, title: "Ballinn App", desc: "Wersja z nazwą" },
+              { src: ballinnIconGradient, title: "Ikona gradient", desc: "Wersja kolorowa" },
+              { src: ballinnIconOutline, title: "Ikona outline", desc: "Wersja obrysowa" },
+            ].map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative rounded-xl overflow-hidden cursor-pointer group aspect-square bg-white border border-border p-4 flex items-center justify-center"
+                onClick={() => setSelectedImage(item.src)}
+              >
+                <img 
+                  src={item.src} 
+                  alt={`Ballinn - ${item.title}`} 
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0F0E54]/90 via-[#0F0E54]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h4 className="text-white font-semibold text-sm">{item.title}</h4>
+                  <p className="text-white/70 text-xs">{item.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Project details */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-6"
+          >
+            <div className="bg-card border border-border rounded-xl p-6">
+              <div className="w-10 h-10 bg-[#0F0E54]/20 rounded-lg flex items-center justify-center mb-4">
+                <Palette className="w-5 h-5 text-[#0F0E54]" />
+              </div>
+              <h4 className="font-semibold text-foreground mb-2">Identyfikacja wizualna</h4>
+              <p className="text-muted-foreground text-sm">Logo z dynamicznym symbolem piłki i elementem play, kolorystyka (granat + limonka), wiele wariantów znaku</p>
+            </div>
+            <div className="bg-card border border-border rounded-xl p-6">
+              <div className="w-10 h-10 bg-[#0F0E54]/20 rounded-lg flex items-center justify-center mb-4">
+                <Target className="w-5 h-5 text-[#0F0E54]" />
+              </div>
+              <h4 className="font-semibold text-foreground mb-2">Koncepcja marki</h4>
+              <p className="text-muted-foreground text-sm">Połączenie dynamiki sportu z technologią - symbol piłki z wbudowanym przyciskiem play</p>
+            </div>
+            <div className="bg-card border border-border rounded-xl p-6">
+              <div className="w-10 h-10 bg-[#0F0E54]/20 rounded-lg flex items-center justify-center mb-4">
+                <BookOpen className="w-5 h-5 text-[#0F0E54]" />
+              </div>
+              <h4 className="font-semibold text-foreground mb-2">Brandbook</h4>
+              <p className="text-muted-foreground text-sm">Kompletna księga znaku z wytycznymi stosowania logo, kolorystyki i typografii</p>
+            </div>
           </motion.div>
         </div>
       </section>
