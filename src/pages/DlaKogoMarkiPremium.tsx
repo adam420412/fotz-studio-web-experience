@@ -19,28 +19,28 @@ const caseStudies = [
     description: "Kompleksowy rebranding i nowa identyfikacja wizualna dla marki kosmetyków premium.",
     image: klageImage,
     results: ["Nowa tożsamość marki", "Premium pozycjonowanie", "+180% rozpoznawalności"],
-    href: "/case-study-klagem",
+    href: "/realizacje/klagem",
   },
   {
     title: "Verthé",
     description: "Strategia marketingowa i content premium dla ekskluzywnej marki modowej.",
     image: vertheImage,
     results: ["Ekskluzywny wizerunek", "Influencer marketing", "+45% AOV"],
-    href: "/case-study-verthe",
+    href: "/realizacje/verthe",
   },
   {
     title: "Sookar",
     description: "Strona internetowa i branding dla elitarnego komisu samochodów luksusowych.",
     image: sookarImage,
     results: ["Premium experience", "Ekskluzywny design", "Wysoka konwersja"],
-    href: "/case-study-sookar",
+    href: "/realizacje/sookar",
   },
   {
     title: "Victory Cars",
     description: "Identyfikacja wizualna i marketing dla salonu samochodów premium.",
     image: victoryCarsImage,
     results: ["Spójny branding", "Prestiżowy wizerunek", "+200% leadów"],
-    href: "/case-study-victory-cars",
+    href: "/realizacje/victory-cars",
   },
 ];
 
@@ -398,17 +398,25 @@ export default function DlaKogoMarkiPremium() {
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-muted/50 transition-colors"
                 >
                   <span className="font-heading font-bold pr-4">{item.question}</span>
-                  {openFaq === index ? (
+                {openFaq === index ? (
                     <Minus className="w-5 h-5 text-primary flex-shrink-0" />
                   ) : (
                     <Plus className="w-5 h-5 text-primary flex-shrink-0" />
                   )}
                 </button>
-                {openFaq === index && (
+                <motion.div
+                  initial={false}
+                  animate={{ 
+                    height: openFaq === index ? "auto" : 0,
+                    opacity: openFaq === index ? 1 : 0
+                  }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  className="overflow-hidden"
+                >
                   <div className="px-6 pb-6 text-muted-foreground">
                     {item.answer}
                   </div>
-                )}
+                </motion.div>
               </motion.div>
             ))}
           </div>
