@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader2 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,6 +7,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
+  email: z.string().trim().email("Nieprawidłowy adres email").max(255, "Email max 255 znaków"),
+  phone: z.string().trim().optional(),
+  company: z.string().trim().optional(),
+  subject: z.string().min(1, "Wybierz temat zapytania"),
+  message: z.string().trim().min(10, "Wiadomość musi mieć minimum 10 znaków").max(2000, "Wiadomość max 2000 znaków"),
+});
 
 const contactInfo = [
   {
@@ -38,22 +48,77 @@ const contactInfo = [
 export default function Kontakt() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    subject: "",
+    message: "",
+  });
+  const [formErrors, setFormErrors] = useState<Record<string, string>>({});
   const { toast } = useToast();
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setFormErrors({});
+
+    // Walidacja
+    const result = contactSchema.safeParse(formData);
+    if (!result.success) {
+      const errors: Record<string, string> = {};
+      result.error.errors.forEach(err => {
+        if (err.path[0]) {
+          errors[err.path[0] as string] = err.message;
+        }
+      });
+      setFormErrors(errors);
+      return;
+    }
+
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          subject: `Nowe zapytanie: ${formData.subject} - od ${formData.name}`,
+          from_name: "Fotz Studio - Kontakt",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "Nie podano",
+          company: formData.company || "Nie podano",
+          topic: formData.subject,
+          message: formData.message,
+        }),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: "Wiadomość wysłana!",
-      description: "Odezwiemy się do Ciebie w ciągu 24 godzin.",
-    });
+      const data = await response.json();
+
+      if (!data.success) {
+        throw new Error("Błąd podczas wysyłania wiadomości");
+      }
+
+      setIsSubmitted(true);
+      toast({
+        title: "Wiadomość wysłana!",
+        description: "Odezwiemy się do Ciebie w ciągu 24 godzin.",
+      });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Błąd wysyłania",
+        description: "Nie udało się wysłać wiadomości. Spróbuj ponownie lub zadzwoń do nas.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -110,10 +175,15 @@ export default function Kontakt() {
                         Imię i nazwisko *
                       </label>
                       <Input
-                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                         placeholder="Jan Kowalski"
-                        className="bg-secondary border-border h-9 sm:h-10 text-sm"
+                        className={cn(
+                          "bg-secondary border-border h-9 sm:h-10 text-sm",
+                          formErrors.name && "border-red-500"
+                        )}
                       />
+                      {formErrors.name && <p className="text-xs text-red-500 mt-1">{formErrors.name}</p>}
                     </div>
                     <div>
                       <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
@@ -121,10 +191,15 @@ export default function Kontakt() {
                       </label>
                       <Input
                         type="email"
-                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                         placeholder="jan@firma.pl"
-                        className="bg-secondary border-border h-9 sm:h-10 text-sm"
+                        className={cn(
+                          "bg-secondary border-border h-9 sm:h-10 text-sm",
+                          formErrors.email && "border-red-500"
+                        )}
                       />
+                      {formErrors.email && <p className="text-xs text-red-500 mt-1">{formErrors.email}</p>}
                     </div>
                   </div>
 
@@ -135,6 +210,8 @@ export default function Kontakt() {
                       </label>
                       <Input
                         type="tel"
+                        value={formData.phone}
+                        onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                         placeholder="+48 123 456 789"
                         className="bg-secondary border-border h-9 sm:h-10 text-sm"
                       />
@@ -144,6 +221,8 @@ export default function Kontakt() {
                         Firma
                       </label>
                       <Input
+                        value={formData.company}
+                        onChange={(e) => setFormData(prev => ({ ...prev, company: e.target.value }))}
                         placeholder="Nazwa firmy"
                         className="bg-secondary border-border h-9 sm:h-10 text-sm"
                       />
@@ -155,17 +234,24 @@ export default function Kontakt() {
                       Czego dotyczy zapytanie? *
                     </label>
                     <select
-                      required
-                      className="w-full h-9 sm:h-10 px-3 rounded-lg bg-secondary border border-border text-foreground text-sm"
+                      value={formData.subject}
+                      onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
+                      className={cn(
+                        "w-full h-9 sm:h-10 px-3 rounded-lg bg-secondary border border-border text-foreground text-sm",
+                        formErrors.subject && "border-red-500"
+                      )}
                     >
                       <option value="">Wybierz temat</option>
-                      <option value="strony">Strony internetowe</option>
-                      <option value="social">Social Media</option>
-                      <option value="kampanie">Kampanie reklamowe</option>
-                      <option value="marketing">Marketing premium</option>
-                      <option value="studio">Studio podcastowe</option>
-                      <option value="inne">Inne</option>
+                      <option value="Strony internetowe">Strony internetowe</option>
+                      <option value="Social Media">Social Media</option>
+                      <option value="Kampanie reklamowe">Kampanie reklamowe</option>
+                      <option value="Marketing premium">Marketing premium</option>
+                      <option value="Studio podcastowe">Studio podcastowe</option>
+                      <option value="Produkcja foto/video">Produkcja foto/video</option>
+                      <option value="Branding">Branding i identyfikacja</option>
+                      <option value="Inne">Inne</option>
                     </select>
+                    {formErrors.subject && <p className="text-xs text-red-500 mt-1">{formErrors.subject}</p>}
                   </div>
 
                   <div>
@@ -173,11 +259,16 @@ export default function Kontakt() {
                       Wiadomość *
                     </label>
                     <Textarea
-                      required
+                      value={formData.message}
+                      onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
                       rows={4}
                       placeholder="Opisz swój projekt lub pytanie..."
-                      className="bg-secondary border-border resize-none text-sm min-h-[100px] sm:min-h-[120px]"
+                      className={cn(
+                        "bg-secondary border-border resize-none text-sm min-h-[100px] sm:min-h-[120px]",
+                        formErrors.message && "border-red-500"
+                      )}
                     />
+                    {formErrors.message && <p className="text-xs text-red-500 mt-1">{formErrors.message}</p>}
                   </div>
 
                   <Button
@@ -188,7 +279,10 @@ export default function Kontakt() {
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
-                      "Wysyłanie..."
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Wysyłanie...
+                      </>
                     ) : (
                       <>
                         Wyślij wiadomość
