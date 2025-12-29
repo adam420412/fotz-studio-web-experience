@@ -91,25 +91,6 @@ import gierkyReception from "@/assets/gierky/gierky-reception.jpg";
 import gierkyShuffleboard from "@/assets/gierky/gierky-shuffleboard.jpg";
 import gierkyTables from "@/assets/gierky/gierky-tables.jpg";
 
-// Office / Wnętrza
-import officeDining from "@/assets/office/office-dining.webp";
-import officeLounge from "@/assets/office/office-lounge.webp";
-import officeSign from "@/assets/office/office-sign.webp";
-import officeStairs from "@/assets/office/office-stairs.webp";
-import officeWorkspace from "@/assets/office/office-workspace.webp";
-
-// Team
-import teamBrainstorm1 from "@/assets/team/team-brainstorm-1.jpg";
-import teamBrainstorm2 from "@/assets/team/team-brainstorm-2.jpg";
-import teamBrainstorm3 from "@/assets/team/team-brainstorm-3.jpg";
-import teamMeeting1 from "@/assets/team/team-meeting-1.jpg";
-import teamMeeting2 from "@/assets/team/team-meeting-2.jpg";
-import teamMeeting3 from "@/assets/team/team-meeting-3.jpg";
-import teamWork1 from "@/assets/team/team-work-1.jpg";
-import teamWork2 from "@/assets/team/team-work-2.jpg";
-import teamWork3 from "@/assets/team/team-work-3.jpg";
-import teamWork4 from "@/assets/team/team-work-4.jpg";
-
 // Backstage
 import backstage1 from "@/assets/backstage/backstage-1.png";
 import backstage2 from "@/assets/backstage/backstage-2.png";
@@ -323,8 +304,6 @@ const galleryCategories = [
   { id: "drone", label: "Drona", icon: MapPin },
   { id: "enea", label: "Enea Stadion", icon: Building },
   { id: "gierky", label: "Gierky", icon: Utensils },
-  { id: "interiors", label: "Wnętrza", icon: Building },
-  { id: "team", label: "Zespół", icon: Users },
   { id: "backstage", label: "Backstage", icon: Video },
   { id: "3d", label: "Wizualizacje 3D", icon: Briefcase },
 ];
@@ -386,24 +365,6 @@ const galleryImages = [
   { src: gierkyShuffleboard, title: "Shuffleboard", category: "gierky" },
   { src: gierkyTables, title: "Stoły do gier", category: "gierky" },
   
-  // Wnętrza / Office
-  { src: officeDining, title: "Strefa jadalna", category: "interiors" },
-  { src: officeLounge, title: "Strefa relaksu", category: "interiors" },
-  { src: officeSign, title: "Oznakowanie biura", category: "interiors" },
-  { src: officeStairs, title: "Klatka schodowa", category: "interiors" },
-  { src: officeWorkspace, title: "Przestrzeń robocza", category: "interiors" },
-  
-  // Team
-  { src: teamBrainstorm1, title: "Burza mózgów", category: "team" },
-  { src: teamBrainstorm2, title: "Sesja kreatywna", category: "team" },
-  { src: teamBrainstorm3, title: "Planowanie projektu", category: "team" },
-  { src: teamMeeting1, title: "Spotkanie zespołu", category: "team" },
-  { src: teamMeeting2, title: "Prezentacja", category: "team" },
-  { src: teamMeeting3, title: "Konsultacja", category: "team" },
-  { src: teamWork1, title: "Praca w biurze", category: "team" },
-  { src: teamWork2, title: "Stanowisko pracy", category: "team" },
-  { src: teamWork3, title: "Praca kreatywna", category: "team" },
-  { src: teamWork4, title: "Współpraca", category: "team" },
   
   // Backstage
   { src: backstage1, title: "Za kulisami 1", category: "backstage" },
@@ -540,142 +501,7 @@ const Realizacje = () => {
         </section>
       )}
 
-      {/* Photo Gallery Section */}
-      <section className="section-padding bg-muted/30">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              Galeria zdjęć
-            </span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Nasze <span className="text-gradient-premium">produkcje fotograficzne</span>
-            </h2>
-            <p className="text-foreground/60 max-w-2xl">
-              Przeglądaj nasze zdjęcia z koncertów, eventów, sesji portretowych, 
-              ujęć z drona i wizualizacji 3D.
-            </p>
-          </motion.div>
-
-          {/* Gallery Category Filters */}
-          <div className="mb-8 overflow-x-auto pb-4">
-            <div className="flex gap-2 min-w-max">
-              {galleryCategories.map((cat) => (
-                <button
-                  key={cat.id}
-                  onClick={() => setActiveGalleryCategory(cat.id)}
-                  className={cn(
-                    "flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap",
-                    activeGalleryCategory === cat.id
-                      ? "bg-gradient-brand text-white"
-                      : "bg-card border border-border/50 text-foreground/70 hover:border-primary/30 hover:text-foreground"
-                  )}
-                >
-                  <cat.icon className="w-4 h-4" />
-                  {cat.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Gallery Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <AnimatePresence mode="popLayout">
-              {filteredGallery.map((image, index) => (
-                <motion.div
-                  key={`${image.category}-${index}`}
-                  layout
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
-                  className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
-                  onClick={() => openLightbox(index)}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <p className="text-white text-sm font-medium">{image.title}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
-
-          {/* Results Count */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-foreground/50 text-sm mt-6 text-center"
-          >
-            Wyświetlono {filteredGallery.length} z {galleryImages.length} zdjęć
-          </motion.p>
-        </div>
-      </section>
-
-      {/* Video Showcase Section */}
-      <section className="section-padding bg-background">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
-            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              Produkcje Video
-            </span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold">
-              Nasze <span className="text-gradient-premium">realizacje video</span>
-            </h2>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { src: "/videos/autospa.mp4", title: "AutoSpa", category: "Reklama" },
-              { src: "/videos/fps-poznan.mp4", title: "FPS Poznań", category: "Przemysł" },
-              { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion", category: "Sport" },
-              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Event" },
-              { src: "/videos/fun-sport-stylish.mp4", title: "Fun Sport", category: "Sport" },
-              { src: "/videos/fotz-reel.mp4", title: "Fotz Reel", category: "Showreel" },
-            ].map((video, index) => (
-              <motion.div
-                key={video.src}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="relative aspect-video rounded-2xl overflow-hidden border border-border/30 hover:border-primary/30 transition-all group"
-              >
-                <video
-                  src={video.src}
-                  className="w-full h-full object-cover"
-                  muted
-                  loop
-                  playsInline
-                  controls
-                />
-                <div className="absolute top-4 left-4 pointer-events-none">
-                  <span className="px-3 py-1 rounded-full bg-gradient-brand text-white text-xs font-medium">
-                    {video.category}
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Grid */}
+      {/* Projects Grid - FIRST */}
       <section className="section-padding bg-card relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <motion.div 
@@ -811,6 +637,141 @@ const Realizacje = () => {
                   </motion.div>
                 ))}
             </AnimatePresence>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery Section */}
+      <section className="section-padding bg-muted/30">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+              Galeria zdjęć
+            </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Nasze <span className="text-gradient-premium">produkcje fotograficzne</span>
+            </h2>
+            <p className="text-foreground/60 max-w-2xl">
+              Przeglądaj nasze zdjęcia z koncertów, eventów, sesji portretowych, 
+              ujęć z drona i wizualizacji 3D.
+            </p>
+          </motion.div>
+
+          {/* Gallery Category Filters */}
+          <div className="mb-8 overflow-x-auto pb-4">
+            <div className="flex gap-2 min-w-max">
+              {galleryCategories.map((cat) => (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveGalleryCategory(cat.id)}
+                  className={cn(
+                    "flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 whitespace-nowrap",
+                    activeGalleryCategory === cat.id
+                      ? "bg-gradient-brand text-white"
+                      : "bg-card border border-border/50 text-foreground/70 hover:border-primary/30 hover:text-foreground"
+                  )}
+                >
+                  <cat.icon className="w-4 h-4" />
+                  {cat.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Gallery Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <AnimatePresence mode="popLayout">
+              {filteredGallery.map((image, index) => (
+                <motion.div
+                  key={`${image.category}-${index}`}
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.3 }}
+                  className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
+                  onClick={() => openLightbox(index)}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <p className="text-white text-sm font-medium">{image.title}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </div>
+
+          {/* Results Count */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-foreground/50 text-sm mt-6 text-center"
+          >
+            Wyświetlono {filteredGallery.length} z {galleryImages.length} zdjęć
+          </motion.p>
+        </div>
+      </section>
+
+      {/* Video Showcase Section */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+              Produkcje Video
+            </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">
+              Nasze <span className="text-gradient-premium">realizacje video</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { src: "/videos/autospa.mp4", title: "AutoSpa", category: "Reklama" },
+              { src: "/videos/fps-poznan.mp4", title: "FPS Poznań", category: "Przemysł" },
+              { src: "/videos/enea-stadion-header.mp4", title: "Enea Stadion", category: "Sport" },
+              { src: "/videos/eko-kamionki.mp4", title: "Eko Kamionki", category: "Event" },
+              { src: "/videos/fun-sport-stylish.mp4", title: "Fun Sport", category: "Sport" },
+              { src: "/videos/fotz-reel.mp4", title: "Fotz Reel", category: "Showreel" },
+            ].map((video, index) => (
+              <motion.div
+                key={video.src}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative aspect-video rounded-2xl overflow-hidden border border-border/30 hover:border-primary/30 transition-all group"
+              >
+                <video
+                  src={video.src}
+                  className="w-full h-full object-cover"
+                  muted
+                  loop
+                  playsInline
+                  controls
+                />
+                <div className="absolute top-4 left-4 pointer-events-none">
+                  <span className="px-3 py-1 rounded-full bg-gradient-brand text-white text-xs font-medium">
+                    {video.category}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
