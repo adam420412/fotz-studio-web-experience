@@ -713,37 +713,44 @@ export default function Cennik() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(
-        "https://vhzmfebggxeovtkznlby.supabase.co/functions/v1/send-pricing-inquiry",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            selectedServices: selectedDetails.selected.map(s => ({
-              name: s.name,
-              priceFrom: s.priceFrom,
-              priceType: s.priceType,
-            })),
-            totals: {
-              oneTimeTotal: selectedDetails.oneTimeTotal,
-              oneTimeTotalMax: selectedDetails.oneTimeTotalMax,
-              monthlyTotal: selectedDetails.monthlyTotal,
-              monthlyTotalMax: selectedDetails.monthlyTotalMax,
-            },
-          }),
-        }
-      );
+      // Przygotuj podsumowanie usług
+      const servicesSummary = selectedDetails.selected
+        .map(s => `• ${s.name} - od ${formatPrice(s.priceFrom)} PLN (${s.priceType})`)
+        .join("\n");
 
-      if (!response.ok) {
+      const priceSummary = [
+        selectedDetails.hasOneTime ? `Koszty jednorazowe: ${formatPrice(selectedDetails.oneTimeTotal)} - ${formatPrice(selectedDetails.oneTimeTotalMax)} PLN` : '',
+        selectedDetails.hasMonthly ? `Koszty miesięczne: ${formatPrice(selectedDetails.monthlyTotal)} - ${formatPrice(selectedDetails.monthlyTotalMax)} PLN/mies.` : '',
+      ].filter(Boolean).join("\n");
+
+      // Wysyłka przez Web3Forms
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          subject: `Nowe zapytanie z cennika od ${formData.name}`,
+          from_name: "Fotz Studio - Konfigurator",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "Nie podano",
+          message: formData.message,
+          selected_services: servicesSummary,
+          price_estimate: priceSummary,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!data.success) {
         throw new Error("Błąd podczas wysyłania zapytania");
       }
 
       toast({
         title: "Zapytanie wysłane!",
-        description: "Odezwiemy się do Ciebie w ciągu 24h. Sprawdź skrzynkę email.",
+        description: "Odezwiemy się do Ciebie w ciągu 24h.",
       });
 
       // Reset
