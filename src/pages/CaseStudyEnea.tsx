@@ -18,6 +18,13 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+// Importy zdjęć Enea Stadion
+import eneaTriatlon from "@/assets/enea/bydgoszcz-triatlon.png";
+import eneaKoncert from "@/assets/enea/dawid-podsiadlo-koncert.jpg";
+import eneaCatering from "@/assets/enea/catering-event.jpg";
+import eneaKonferencja from "@/assets/enea/konferencja-event.jpg";
+import eneaFajerwerki from "@/assets/enea/stadion-race-fajerwerki.jpg";
+
 const projectInfo = {
   title: "Enea Stadion Poznań",
   subtitle: "Kompleksowa obsługa marketingowa największego kompleksu sportowego w Polsce",
@@ -70,74 +77,67 @@ const results = [
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2005",
-    alt: "Enea Stadion - widok główny",
+    src: eneaFajerwerki,
+    alt: "Enea Stadion - fajerwerki i race",
     span: "col-span-2 row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1459865264687-595d652de67e?q=80&w=2070",
-    alt: "Stadion podczas meczu",
+    src: eneaKoncert,
+    alt: "Dawid Podsiadło koncert na Enea Stadion",
     span: "col-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=2070",
-    alt: "Kibice na trybunach",
+    src: eneaTriatlon,
+    alt: "Bydgoszcz Triathlon - Enea",
     span: "col-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093",
-    alt: "Event na stadionie",
+    src: eneaKonferencja,
+    alt: "Konferencja i event na stadionie",
     span: "col-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070",
-    alt: "Nocny widok stadionu",
+    src: eneaCatering,
+    alt: "Catering eventowy na Enea Stadion",
     span: "col-span-1",
   },
 ];
 
-// Symulacja postów z Instagrama
+// Posty z Instagrama - realne zdjęcia z realizacji
 const instagramPosts = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=735",
-    likes: "2,340",
-    comments: "87",
-    type: "reel",
-  },
-  {
-    id: 2,
-    image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=2093",
-    likes: "1,892",
-    comments: "54",
-    type: "post",
-  },
-  {
-    id: 3,
-    image: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=2070",
-    likes: "3,120",
-    comments: "102",
-    type: "reel",
-  },
-  {
-    id: 4,
-    image: "https://images.unsplash.com/photo-1459865264687-595d652de67e?q=80&w=2070",
-    likes: "1,567",
-    comments: "43",
-    type: "post",
-  },
-  {
-    id: 5,
-    image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2005",
+    image: eneaFajerwerki,
     likes: "4,521",
     comments: "156",
     type: "reel",
   },
   {
-    id: 6,
-    image: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=2070",
-    likes: "2,890",
-    comments: "78",
+    id: 2,
+    image: eneaKoncert,
+    likes: "3,120",
+    comments: "102",
+    type: "reel",
+  },
+  {
+    id: 3,
+    image: eneaTriatlon,
+    likes: "2,340",
+    comments: "87",
+    type: "post",
+  },
+  {
+    id: 4,
+    image: eneaKonferencja,
+    likes: "1,892",
+    comments: "54",
+    type: "post",
+  },
+  {
+    id: 5,
+    image: eneaCatering,
+    likes: "1,567",
+    comments: "43",
     type: "post",
   },
 ];
@@ -145,13 +145,16 @@ const instagramPosts = [
 export default function CaseStudyEnea() {
   return (
     <Layout>
-      {/* Hero Section */}
+      {/* Hero Section with Video */}
       <section className="relative min-h-[80vh] flex items-end overflow-hidden">
-        {/* Background Image */}
+        {/* Background Video */}
         <div className="absolute inset-0">
-          <img
-            src={projectInfo.heroImage}
-            alt={projectInfo.title}
+          <video
+            src="/videos/enea-stadion-header.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/20" />
