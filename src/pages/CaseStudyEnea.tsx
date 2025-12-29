@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { 
   ArrowLeft, 
@@ -17,7 +17,7 @@ import {
   ZoomIn,
   ChevronLeft,
   ChevronRight,
-  Heart
+  Sparkles
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -31,6 +31,9 @@ import eneaKoncert from "@/assets/enea/dawid-podsiadlo-koncert.jpg";
 import eneaCatering from "@/assets/enea/catering-event.jpg";
 import eneaKonferencja from "@/assets/enea/konferencja-event.jpg";
 import eneaFajerwerki from "@/assets/enea/stadion-race-fajerwerki.jpg";
+import eneaLechLounge from "@/assets/enea/lech-poznan-lounge.jpg";
+import eneaGrill from "@/assets/enea/grill-event.jpg";
+import eneaConferenceLeague from "@/assets/enea/conference-league.jpg";
 
 const projectInfo = {
   title: "Enea Stadion Poznań",
@@ -43,11 +46,79 @@ const projectInfo = {
 };
 
 const stats = [
-  { icon: TrendingUp, value: "+340%", label: "Wzrost zaangażowania", description: "na Instagramie rok do roku" },
-  { icon: Eye, value: "2M+", label: "Wyświetleń miesięcznie", description: "średnia z ostatnich 6 miesięcy" },
-  { icon: Heart, value: "50K+", label: "Nowych obserwujących", description: "w ciągu roku współpracy" },
-  { icon: Calendar, value: "12+", label: "Miesięcy współpracy", description: "i wciąż rozwijamy projekt" },
+  { icon: TrendingUp, value: 340, prefix: "+", suffix: "%", label: "Wzrost zaangażowania", description: "na Instagramie rok do roku" },
+  { icon: Eye, value: 2, prefix: "", suffix: "M+", label: "Wyświetleń miesięcznie", description: "średnia z ostatnich 6 miesięcy" },
+  { icon: Sparkles, value: 120, prefix: "", suffix: "+", label: "Zrealizowanych eventów", description: "koncerty, mecze, konferencje" },
+  { icon: Calendar, value: 12, prefix: "", suffix: "+", label: "Miesięcy współpracy", description: "i wciąż rozwijamy projekt" },
 ];
+
+// Hook do animowanych liczników
+function useCountUp(end: number, duration: number = 2000, delay: number = 0) {
+  const [count, setCount] = useState(0);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+          
+          const startTime = Date.now() + delay;
+          const endTime = startTime + duration;
+
+          const animate = () => {
+            const now = Date.now();
+            if (now < startTime) {
+              requestAnimationFrame(animate);
+              return;
+            }
+            if (now >= endTime) {
+              setCount(end);
+              return;
+            }
+            const progress = (now - startTime) / duration;
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            setCount(Math.floor(end * easeOutQuart));
+            requestAnimationFrame(animate);
+          };
+          requestAnimationFrame(animate);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [end, duration, delay, hasAnimated]);
+
+  return { ref, count };
+}
+
+// Komponent animowanego licznika
+function AnimatedStat({ stat, index }: { stat: typeof stats[0]; index: number }) {
+  const { ref, count } = useCountUp(stat.value, 2000, index * 150);
+  
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      className="text-center p-8 md:p-10 rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300"
+    >
+      <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+        <stat.icon className="w-8 h-8 text-primary" />
+      </div>
+      <div className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gradient mb-3">
+        {stat.prefix}{count}{stat.suffix}
+      </div>
+      <div className="text-lg font-medium mb-2">{stat.label}</div>
+      <div className="text-sm text-muted-foreground">{stat.description}</div>
+    </motion.div>
+  );
+}
 
 const challenges = [
   "Przestarzały design strony internetowej niepasujący do prestiżu obiektu",
@@ -100,6 +171,11 @@ const galleryImages = [
     span: "col-span-1",
   },
   {
+    src: eneaConferenceLeague,
+    alt: "UEFA Conference League - Lech Poznań",
+    span: "col-span-2",
+  },
+  {
     src: eneaKonferencja,
     alt: "Konferencja i event na stadionie",
     span: "col-span-1",
@@ -109,21 +185,15 @@ const galleryImages = [
     alt: "Catering eventowy na Enea Stadion",
     span: "col-span-1",
   },
-  // Dodatkowe zdjęcia wykorzystujące istniejące materiały
   {
-    src: eneaFajerwerki,
-    alt: "Oprawa meczowa - race kibiców Lecha Poznań",
+    src: eneaLechLounge,
+    alt: "Loża VIP Lech Poznań",
     span: "col-span-1",
   },
   {
-    src: eneaKoncert,
-    alt: "Koncert na Enea Stadion - atmosfera",
+    src: eneaGrill,
+    alt: "Event grillowy na stadionie",
     span: "col-span-1",
-  },
-  {
-    src: eneaKonferencja,
-    alt: "Event firmowy - All for One Group",
-    span: "col-span-2",
   },
 ];
 
@@ -220,23 +290,7 @@ export default function CaseStudyEnea() {
             className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
           >
             {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-center p-8 md:p-10 rounded-2xl bg-card/80 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300"
-              >
-                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                  <stat.icon className="w-8 h-8 text-primary" />
-                </div>
-                <div className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gradient mb-3">
-                  {stat.value}
-                </div>
-                <div className="text-lg font-medium mb-2">{stat.label}</div>
-                <div className="text-sm text-muted-foreground">{stat.description}</div>
-              </motion.div>
+              <AnimatedStat key={stat.label} stat={stat} index={index} />
             ))}
           </motion.div>
         </div>
