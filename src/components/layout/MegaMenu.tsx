@@ -9,6 +9,7 @@ import websiteImg from "@/assets/portfolio/rppg.png";
 import videoImg from "@/assets/portfolio/enea-stadion.png";
 import marketingImg from "@/assets/portfolio/fabryka-virali.png";
 import graphicImg from "@/assets/portfolio/verthe.png";
+import branzeImg from "@/assets/portfolio/fps-cegielski.png";
 
 interface MenuCategory {
   title: string;
@@ -82,15 +83,21 @@ const menuCategories: MenuCategory[] = [
   {
     title: "Branże",
     description: "Marketing dopasowany do Twojej branży",
-    image: videoImg,
+    image: branzeImg,
     color: "#1A365D",
     items: [
       { name: "Branża medyczna", href: "/dla-kogo/branza-medyczna" },
       { name: "Gastronomia", href: "/dla-kogo/gastronomia" },
       { name: "Beauty & Wellness", href: "/dla-kogo/beauty-wellness" },
       { name: "Nieruchomości", href: "/dla-kogo/nieruchomosci" },
+      { name: "Automotive", href: "/dla-kogo/automotive" },
       { name: "IT & SaaS", href: "/dla-kogo/it-saas" },
-      { name: "Więcej branż...", href: "/dla-kogo" },
+      { name: "Edukacja", href: "/dla-kogo/edukacja" },
+      { name: "Prawo & Finanse", href: "/dla-kogo/prawo-finanse" },
+      { name: "E-commerce & Retail", href: "/dla-kogo/ecommerce-retail" },
+      { name: "Produkcja", href: "/dla-kogo/produkcja" },
+      { name: "NGO & Fundacje", href: "/dla-kogo/ngo" },
+      { name: "Turystyka", href: "/dla-kogo/turystyka" },
     ],
   },
 ];

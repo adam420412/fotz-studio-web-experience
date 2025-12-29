@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
+import celsjuszImg from "@/assets/portfolio/celsjusz.png";
 
 const services = [
   {
@@ -306,13 +307,21 @@ const MarketingMedyczny = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 to-primary/5 p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <Heart className="w-24 h-24 text-primary mx-auto mb-6" />
-                  <p className="text-2xl font-heading font-bold mb-2">Zaufanie pacjentów</p>
-                  <p className="text-foreground/60">budowane profesjonalnym marketingiem</p>
+              <Link to="/case-study-celsjusz" className="block group">
+                <div className="aspect-square rounded-3xl overflow-hidden relative">
+                  <img 
+                    src={celsjuszImg} 
+                    alt="Celsjusz - case study branża medyczna"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 text-white">
+                    <span className="text-sm opacity-80 mb-1 block">Case Study</span>
+                    <p className="text-xl font-heading font-bold mb-1">Celsjusz</p>
+                    <p className="text-sm opacity-80">Branding i marketing dla placówki medycznej</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </motion.div>
           </div>
         </div>
