@@ -20,9 +20,13 @@ import {
   ChevronDown,
   Building2,
   Users,
-  Award
+  Award,
+  Video,
+  Camera,
+  TrendingUp
 } from "lucide-react";
 import { useState } from "react";
+import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -63,25 +67,37 @@ export default function AgencjaMarketingowaPoznan() {
       icon: Palette,
       title: "Branding – budowanie silnej marki",
       description: "Zapewniamy kompleksowe usługi brandingowe, które pomogą Twojej firmie w budowaniu silnej i rozpoznawalnej marki. Agencja marketingowa w Poznaniu oferuje stworzenie unikalnej identyfikacji wizualnej, która dotrze do grupy docelowej i przekona nowych klientów do skorzystania z oferty Twojej firmy.",
-      link: "/branding/"
+      link: "/identyfikacja-wizualna"
     },
     {
       icon: Globe,
       title: "Tworzenie stron internetowych – profesjonalne rozwiązania",
       description: "Specjalizujemy się w projektowaniu responsywnych stron www, dostosowanych do potrzeb wymagających klientów. Wykorzystujemy różne systemy zarządzania treścią (CMS), takie jak WordPress, Joomla, Drupal, Webflow i Shopify, aby umożliwić klientom samodzielną edycję witryny. Nasze strony www są estetyczne, funkcjonalne i zoptymalizowane pod kątem SEO.",
-      link: "/strony-internetowe-poznan/"
+      link: "/strony-internetowe-poznan"
     },
     {
       icon: Share2,
       title: "Social media – skuteczna obecność w sieci",
       description: "Agencja social media w Poznaniu specjalizuje się w prowadzeniu profili w mediach społecznościowych. Tworzymy angażujące treści, prowadzimy kampanie reklamowe na Facebooku, Instagramie i LinkedInie, a także analizujemy wyniki, aby stale optymalizować działania i zwiększać zasięgi. Z nami dotrzesz do nowych klientów i rozwiniesz swój wizerunek.",
-      link: "/agencja-social-media-poznan/"
+      link: "/social-media-poznan"
     },
     {
       icon: Target,
       title: "Reklama – kampanie przynoszące rezultaty",
       description: "Nasza agencja marketingowa z Poznania specjalizuje się w kampaniach reklamowych SEM, w tym Google Ads i Meta Ads. Dbamy o to, aby Twoje reklamy były efektywne i przynosiły realne rezultaty w postaci zwiększonej sprzedaży i rozpoznawalności Twojej marki. Analizujemy dane, optymalizujemy budżet i działamy tak, aby pozyskiwać maksymalny ROAS.",
-      link: "/kampanie-reklamowe-poznan/"
+      link: "/google-ads"
+    },
+    {
+      icon: Video,
+      title: "Produkcja wideo – spoty i filmy promocyjne",
+      description: "Tworzymy profesjonalne materiały wideo, od spotów reklamowych po filmy korporacyjne. Nasza agencja marketingowa w Poznaniu posiada studio podcastowe i zespół do produkcji filmowej, który pomoże Ci wyróżnić się na tle konkurencji.",
+      link: "/produkcja-filmow-poznan"
+    },
+    {
+      icon: TrendingUp,
+      title: "Pozycjonowanie SEO – widoczność w Google",
+      description: "Zwiększamy widoczność Twojej strony w wynikach wyszukiwania Google. Kompleksowe działania SEO obejmują audyt, optymalizację i link building, aby Twoja firma była łatwo znajdowana przez potencjalnych klientów.",
+      link: "/pozycjonowanie-stron-poznan"
     }
   ];
 
@@ -173,15 +189,36 @@ export default function AgencjaMarketingowaPoznan() {
         <title>Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio</title>
         <meta 
           name="description" 
-          content="Agencja marketingowa w Poznaniu. Social media, kampanie reklamowe, strony internetowe i marketing internetowy. Umów bezpłatną konsultację." 
+          content="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding. Umów bezpłatną konsultację!" 
         />
-        <meta name="keywords" content="agencja marketingowa Poznań, marketing Poznań, social media Poznań, kampanie reklamowe Poznań, marketing internetowy Poznań, Google Ads Poznań, reklama internetowa Poznań" />
-        <link rel="canonical" href="https://fotz.pl/agencja-marketingowa-poznan/" />
+        <meta name="keywords" content="agencja marketingowa Poznań, marketing Poznań, social media Poznań, kampanie reklamowe Poznań, marketing internetowy Poznań, Google Ads Poznań, reklama internetowa Poznań, agencja social media, SEO Poznań" />
+        <link rel="canonical" href="https://fotz.pl/agencja-marketingowa-poznan" />
         <meta property="og:title" content="Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio" />
-        <meta property="og:description" content="Agencja marketingowa w Poznaniu. Social media, kampanie reklamowe, strony internetowe i marketing internetowy." />
+        <meta property="og:description" content="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding." />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fotz.pl/agencja-marketingowa-poznan" />
         <meta property="og:locale" content="pl_PL" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio" />
+        <meta name="twitter:description" content="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding." />
       </Helmet>
+
+      {/* Structured Data */}
+      <OrganizationSchema />
+      <ServiceSchema 
+        name="Agencja Marketingowa Poznań"
+        description="Kompleksowe usługi marketingowe: social media, kampanie reklamowe Google Ads i Meta Ads, strony internetowe, SEO i branding dla firm z Poznania."
+        areaServed="Poznań"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Agencja Marketingowa Poznań", url: "https://fotz.pl/agencja-marketingowa-poznan" }
+        ]}
+      />
+      <FAQSchema 
+        items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-background">
@@ -307,9 +344,12 @@ export default function AgencjaMarketingowaPoznan() {
               ))}
             </div>
 
-            <motion.div variants={fadeIn} className="mt-12 text-center">
+            <motion.div variants={fadeIn} className="mt-12 text-center space-y-2">
               <p className="text-foreground/60">
-                Sprawdź, jak pomogliśmy <Link to="/realizacje/enea-stadion" className="text-[#75143F] hover:underline">Enea Stadion</Link> w budowaniu obecności online.
+                Sprawdź, jak pomogliśmy <Link to="/realizacje/enea-stadion" className="text-[#75143F] hover:underline font-medium">Enea Stadion</Link> w budowaniu obecności online.
+              </p>
+              <p className="text-foreground/60 text-sm">
+                Zobacz także realizacje dla <Link to="/realizacje/klagem" className="text-[#75143F] hover:underline">Klagem</Link>, <Link to="/realizacje/friendly-gas" className="text-[#75143F] hover:underline">Friendly Gas</Link> i <Link to="/realizacje/rppg" className="text-[#75143F] hover:underline">RPPG</Link>.
               </p>
             </motion.div>
           </motion.div>
@@ -331,7 +371,8 @@ export default function AgencjaMarketingowaPoznan() {
                 Nasze <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">usługi marketingowe</span>
               </h2>
               <p className="text-foreground/70 max-w-2xl mx-auto">
-                Kompleksowa obsługa marketingowa dla firm z Poznania i całej Polski. Od strategii po realizację.
+                Kompleksowa obsługa marketingowa dla firm z Poznania i całej Polski. Od strategii po realizację. 
+                Sprawdź naszą <Link to="/kompleksowa-obsluga-marketingowa" className="text-[#75143F] hover:underline">kompleksową obsługę marketingową</Link>.
               </p>
             </motion.div>
 
@@ -748,6 +789,65 @@ export default function AgencjaMarketingowaPoznan() {
                   )}
                 </div>
               ))}
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="py-16 bg-gradient-to-b from-[#0F3053]/10 to-background">
+        <div className="container px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="max-w-6xl mx-auto"
+          >
+            <motion.div variants={fadeIn} className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
+                Powiązane usługi
+              </h2>
+              <p className="text-foreground/60">
+                Sprawdź inne usługi marketingowe dostępne w Poznaniu
+              </p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { title: "Social Media Poznań", href: "/social-media-poznan", icon: Share2 },
+                { title: "Strony Internetowe Poznań", href: "/strony-internetowe-poznan", icon: Globe },
+                { title: "Pozycjonowanie SEO", href: "/pozycjonowanie-stron-poznan", icon: TrendingUp },
+                { title: "Produkcja Filmów", href: "/produkcja-filmow-poznan", icon: Video },
+                { title: "Fotografia", href: "/fotograf-poznan", icon: Camera },
+                { title: "Google Ads", href: "/google-ads", icon: Target },
+                { title: "Facebook Ads", href: "/facebook-ads", icon: Share2 },
+                { title: "Identyfikacja Wizualna", href: "/identyfikacja-wizualna", icon: Palette },
+              ].map((service, index) => (
+                <Link
+                  key={index}
+                  to={service.href}
+                  className="group flex items-center gap-3 p-4 rounded-xl bg-background border border-foreground/10 hover:border-[#75143F]/40 transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#75143F]/20 to-[#0F3053]/20 flex items-center justify-center group-hover:from-[#75143F]/30 group-hover:to-[#0F3053]/30 transition-all">
+                    <service.icon className="w-5 h-5 text-[#75143F]" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground group-hover:text-[#75143F] transition-colors">
+                    {service.title}
+                  </span>
+                  <ArrowRight className="w-4 h-4 ml-auto text-foreground/40 group-hover:text-[#75143F] group-hover:translate-x-1 transition-all" />
+                </Link>
+              ))}
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="mt-8 text-center">
+              <Link 
+                to="/uslugi" 
+                className="inline-flex items-center gap-2 text-[#75143F] font-medium hover:underline"
+              >
+                Zobacz wszystkie usługi
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </motion.div>
           </motion.div>
         </div>
