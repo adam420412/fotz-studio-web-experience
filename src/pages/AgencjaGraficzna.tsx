@@ -1,11 +1,12 @@
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { 
   Palette, Layers, FileText, PenTool, Image, 
   Monitor, Printer, Target, CheckCircle2, ArrowRight,
   Sparkles, BookOpen, Zap, Award, Users, Briefcase,
-  MessageSquare, Clock, Shield, Star
+  MessageSquare, Clock, Shield, Star, X, ChevronLeft, ChevronRight
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,7 +17,25 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 
+// Import visualization images for portfolio section
+import viz17 from "@/assets/wizualizacje/viz-17.png";
+import viz18 from "@/assets/wizualizacje/viz-18.png";
+import viz19 from "@/assets/wizualizacje/viz-19.png";
+import viz20 from "@/assets/wizualizacje/viz-20.png";
+import viz21 from "@/assets/wizualizacje/viz-21.png";
+import viz22 from "@/assets/wizualizacje/viz-22.png";
+
+const portfolioImages = [
+  { src: viz17, title: "Wizualizacja sypialni", category: "Wnętrza" },
+  { src: viz18, title: "Salon ze schodami", category: "Wnętrza" },
+  { src: viz19, title: "Salon nowoczesny", category: "Wnętrza" },
+  { src: viz20, title: "Loft industrialny", category: "Wnętrza" },
+  { src: viz21, title: "Przestrzeń dzienna", category: "Wnętrza" },
+  { src: viz22, title: "Biurko modułowe", category: "Produkty" },
+];
+
 const AgencjaGraficzna = () => {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const benefits = [
     { icon: Palette, title: "Kreatywny zespół", description: "Doświadczeni graficy z pasją do designu" },
     { icon: Sparkles, title: "Spójność wizualna", description: "Wszystkie projekty w jednym stylu Twojej marki" },
@@ -426,6 +445,121 @@ const AgencjaGraficzna = () => {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Section - 3D Visualizations */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <span className="inline-block px-4 py-2 bg-[#75143F]/20 text-[#75143F] rounded-full text-sm font-medium mb-4">
+              Portfolio
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Przykłady naszych realizacji
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Wizualizacje 3D i projekty graficzne dla naszych klientów
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {portfolioImages.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative rounded-xl overflow-hidden cursor-pointer group aspect-video"
+                onClick={() => setSelectedImage(index)}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-xs text-white/70 uppercase tracking-wider">{image.category}</span>
+                  <h4 className="text-white font-semibold">{image.title}</h4>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mt-8"
+          >
+            <Button asChild variant="outline" size="lg">
+              <Link to="/wizualizacje-3d">
+                Zobacz więcej wizualizacji
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
+            </Button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Lightbox */}
+      {selectedImage !== null && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-6 right-6 text-white/80 hover:text-white z-50"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage((prev) => prev !== null ? (prev - 1 + portfolioImages.length) % portfolioImages.length : null);
+            }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white bg-white/10 rounded-full p-3 hover:bg-white/20 transition-colors z-50"
+          >
+            <ChevronLeft className="w-8 h-8" />
+          </button>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage((prev) => prev !== null ? (prev + 1) % portfolioImages.length : null);
+            }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white bg-white/10 rounded-full p-3 hover:bg-white/20 transition-colors z-50"
+          >
+            <ChevronRight className="w-8 h-8" />
+          </button>
+
+          <motion.img
+            key={selectedImage}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            src={portfolioImages[selectedImage].src}
+            alt={portfolioImages[selectedImage].title}
+            className="max-w-full max-h-[85vh] object-contain rounded-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+          
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
+            <h3 className="text-white font-semibold text-lg">{portfolioImages[selectedImage].title}</h3>
+            <p className="text-white/60 text-sm">{portfolioImages[selectedImage].category}</p>
+          </div>
+        </motion.div>
+      )}
 
       {/* Pricing Section */}
       <section id="cennik" className="py-20 bg-background">

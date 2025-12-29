@@ -30,8 +30,20 @@ import viz13 from "@/assets/wizualizacje/viz-13.webp";
 import viz14 from "@/assets/wizualizacje/viz-14.webp";
 import viz15 from "@/assets/wizualizacje/viz-15.png";
 import viz16 from "@/assets/wizualizacje/viz-16.webp";
+import viz17 from "@/assets/wizualizacje/viz-17.png";
+import viz18 from "@/assets/wizualizacje/viz-18.png";
+import viz19 from "@/assets/wizualizacje/viz-19.png";
+import viz20 from "@/assets/wizualizacje/viz-20.png";
+import viz21 from "@/assets/wizualizacje/viz-21.png";
+import viz22 from "@/assets/wizualizacje/viz-22.png";
 
 const portfolioImages = [
+  { src: viz17, title: "Sypialnia - styl japoński" },
+  { src: viz18, title: "Salon ze schodami" },
+  { src: viz19, title: "Salon nowoczesny" },
+  { src: viz20, title: "Loft industrialny" },
+  { src: viz21, title: "Przestrzeń dzienna" },
+  { src: viz22, title: "Biurko modułowe" },
   { src: viz1, title: "Wizualizacja produktowa" },
   { src: viz2, title: "Wizualizacja kosmiczna" },
   { src: viz3, title: "Wizualizacja produktowa" },

@@ -26,6 +26,11 @@ import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
 import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 
+// Import visualization images
+import viz17 from "@/assets/wizualizacje/viz-17.png";
+import viz18 from "@/assets/wizualizacje/viz-18.png";
+import viz19 from "@/assets/wizualizacje/viz-19.png";
+
 const categories = [
   "Wszystkie",
   "Strony www",
@@ -34,6 +39,7 @@ const categories = [
   "Branding",
   "SEO",
   "Video",
+  "Wizualizacje 3D",
 ];
 
 const projects = [
@@ -198,6 +204,33 @@ const projects = [
     image: lauvjahImg,
     featured: false,
     hasCase: true,
+  },
+  {
+    id: "viz-sypialnia",
+    title: "Wizualizacja sypialni",
+    category: "Wizualizacje 3D",
+    description: "Fotorealistyczna wizualizacja 3D sypialni w stylu japońskim.",
+    image: viz17,
+    featured: false,
+    hasCase: false,
+  },
+  {
+    id: "viz-salon-schody",
+    title: "Salon ze schodami",
+    category: "Wizualizacje 3D",
+    description: "Wizualizacja wnętrza salonu z nowoczesnymi schodami i meblami modułowymi.",
+    image: viz18,
+    featured: false,
+    hasCase: false,
+  },
+  {
+    id: "viz-loft",
+    title: "Loft industrialny",
+    category: "Wizualizacje 3D",
+    description: "Wizualizacja nowoczesnego loftu z industrialnymi elementami.",
+    image: viz19,
+    featured: false,
+    hasCase: false,
   },
 ];
 
