@@ -24,6 +24,21 @@ const cityLinks: CityLink[] = [
   { name: "Szczecin", href: "/strony-internetowe-szczecin" },
   { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz" },
   { name: "Lublin", href: "/strony-internetowe-lublin" },
+  { name: "Toruń", href: "/strony-internetowe-torun" },
+  { name: "Rzeszów", href: "/strony-internetowe-rzeszow" },
+  { name: "Radom", href: "/strony-internetowe-radom" },
+  { name: "Opole", href: "/strony-internetowe-opole" },
+  { name: "Olsztyn", href: "/strony-internetowe-olsztyn" },
+  { name: "Kielce", href: "/strony-internetowe-kielce" },
+  { name: "Konin", href: "/strony-internetowe-konin" },
+  { name: "Tarnów", href: "/strony-internetowe-tarnow" },
+  { name: "Płock", href: "/strony-internetowe-plock" },
+  { name: "Sosnowiec", href: "/strony-internetowe-sosnowiec" },
+  { name: "Koszalin", href: "/strony-internetowe-koszalin" },
+  { name: "Gliwice", href: "/strony-internetowe-gliwice" },
+  { name: "Rybnik", href: "/strony-internetowe-rybnik" },
+  { name: "Tychy", href: "/strony-internetowe-tychy" },
+  { name: "Kamionki", href: "/strony-internetowe-kamionki" },
 ];
 
 export const CityLinksSection = ({ 
