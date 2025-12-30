@@ -67,6 +67,12 @@ import StronyInternetoweSzczecin from "./pages/StronyInternetoweSzczecin";
 import StronyInternetoweBydgoszcz from "./pages/StronyInternetoweBydgoszcz";
 import StronyInternetoweKatowice from "./pages/StronyInternetoweKatowice";
 import StronyInternetoweLublin from "./pages/StronyInternetoweLublin";
+import StronyInternetoweKoszalin from "./pages/StronyInternetoweKoszalin";
+import StronyInternetoweGliwice from "./pages/StronyInternetoweGliwice";
+import StronyInternetoweRybnik from "./pages/StronyInternetoweRybnik";
+import StronyInternetoweTychy from "./pages/StronyInternetoweTychy";
+import StronyInternetoweKamionki from "./pages/StronyInternetoweKamionki";
+import StronyInternetowe from "./pages/StronyInternetowe";
 import StronyInternetowe from "./pages/StronyInternetowe";
 import SocialMediaPoznan from "./pages/SocialMediaPoznan";
 import SocialMedia from "./pages/SocialMedia";
@@ -165,6 +171,11 @@ const App = () => (
             <Route path="/strony-internetowe-bydgoszcz" element={<StronyInternetoweBydgoszcz />} />
             <Route path="/strony-internetowe-katowice" element={<StronyInternetoweKatowice />} />
             <Route path="/strony-internetowe-lublin" element={<StronyInternetoweLublin />} />
+            <Route path="/strony-internetowe-koszalin" element={<StronyInternetoweKoszalin />} />
+            <Route path="/strony-internetowe-gliwice" element={<StronyInternetoweGliwice />} />
+            <Route path="/strony-internetowe-rybnik" element={<StronyInternetoweRybnik />} />
+            <Route path="/strony-internetowe-tychy" element={<StronyInternetoweTychy />} />
+            <Route path="/strony-internetowe-kamionki" element={<StronyInternetoweKamionki />} />
             <Route path="/strony-internetowe" element={<StronyInternetowe />} />
             <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
             <Route path="/social-media" element={<SocialMedia />} />

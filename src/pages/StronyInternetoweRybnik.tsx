@@ -1,353 +1,162 @@
 import { Helmet } from "react-helmet";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { 
-  ArrowRight, 
-  CheckCircle2, 
-  Globe, 
-  Palette, 
-  Rocket, 
-  Shield,
-  Phone,
-  Code,
-  Search,
-  ShoppingCart,
-  Smartphone,
-  Zap
+  Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
-import Layout from "@/components/layout/Layout";
-import { 
-  Accordion, 
-  AccordionContent, 
-  AccordionItem, 
-  AccordionTrigger 
-} from "@/components/ui/accordion";
-import ContactSection from "@/components/sections/ContactSection";
-import CityIntroSection from "@/components/sections/CityIntroSection";
-import CityBenefitsSection from "@/components/sections/CityBenefitsSection";
-import CityServicesGrid from "@/components/sections/CityServicesGrid";
-import CityPricingCards from "@/components/sections/CityPricingCards";
-import CityLinksSection from "@/components/sections/CityLinksSection";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ContactSection } from "@/components/sections/ContactSection";
+import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
+import { CityPricingCards } from "@/components/sections/CityPricingCards";
+import { CityIntroSection } from "@/components/sections/CityIntroSection";
+import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
+import { CityLinksSection } from "@/components/sections/CityLinksSection";
 
-// Import portfolio images
-import eneaStadion from "@/assets/portfolio/enea-stadion.png";
-import fpsCegielski from "@/assets/portfolio/fps-cegielski.png";
-import klagem from "@/assets/portfolio/klagem.png";
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
+import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
+import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
 const StronyInternetoweRybnik = () => {
   const services = [
-    {
-      icon: Globe,
-      title: "Strony firmowe",
-      description: "Profesjonalne strony internetowe dla firm z Rybnika i okolic"
-    },
-    {
-      icon: ShoppingCart,
-      title: "Sklepy internetowe",
-      description: "E-commerce z płatnościami online i integracjami"
-    },
-    {
-      icon: Smartphone,
-      title: "Strony responsywne",
-      description: "Idealne wyświetlanie na wszystkich urządzeniach"
-    },
-    {
-      icon: Search,
-      title: "Optymalizacja SEO",
-      description: "Pozycjonowanie w wynikach Google dla Rybnika"
-    },
-    {
-      icon: Zap,
-      title: "Szybkie strony",
-      description: "Optymalizacja wydajności i szybkości ładowania"
-    },
-    {
-      icon: Code,
-      title: "Rozwiązania dedykowane",
-      description: "Aplikacje webowe dopasowane do potrzeb"
-    }
+    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www dla firm z Rybnika i okolic." },
+    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w Google." },
+    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony z naciskiem na użytkownika." },
+    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z integracjami." },
+    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
+    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony zamieniające odwiedzających w klientów." },
   ];
 
   const pricing = [
-    {
-      name: "Strona wizytówka",
-      price: "od 1 500 zł",
-      description: "Idealna dla małych firm z Rybnika",
-      features: [
-        "Do 5 podstron",
-        "Responsywny design",
-        "Formularz kontaktowy",
-        "Podstawowe SEO",
-        "Certyfikat SSL"
-      ]
-    },
-    {
-      name: "Strona firmowa",
-      price: "od 4 000 zł",
-      description: "Dla rozwijających się przedsiębiorstw",
-      features: [
-        "Do 15 podstron",
-        "System CMS",
-        "Blog firmowy",
-        "Zaawansowane SEO",
-        "Integracje zewnętrzne",
-        "Analityka Google"
-      ],
-      popular: true
-    },
-    {
-      name: "Sklep internetowy",
-      price: "od 8 000 zł",
-      description: "Kompleksowy e-commerce",
-      features: [
-        "Nieograniczona liczba produktów",
-        "Płatności online",
-        "Integracja z kurierami",
-        "Panel administracyjny",
-        "Marketing automation",
-        "Wsparcie techniczne"
-      ]
-    }
+    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
+    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
+    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
   ];
 
   const processSteps = [
-    {
-      step: "01",
-      title: "Analiza potrzeb",
-      description: "Poznajemy Twoją firmę, cele biznesowe i oczekiwania wobec strony internetowej"
-    },
-    {
-      step: "02",
-      title: "Projektowanie",
-      description: "Tworzymy projekt graficzny dopasowany do identyfikacji wizualnej firmy"
-    },
-    {
-      step: "03",
-      title: "Programowanie",
-      description: "Kodujemy stronę z dbałością o wydajność i bezpieczeństwo"
-    },
-    {
-      step: "04",
-      title: "Wdrożenie i wsparcie",
-      description: "Publikujemy stronę i zapewniamy dalsze wsparcie techniczne"
-    }
+    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Rybniku." },
+    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
+    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
+    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
   ];
 
   const caseStudies = [
-    {
-      title: "Enea Stadion",
-      category: "Strona korporacyjna",
-      image: eneaStadion,
-      result: "+200% więcej zapytań",
-      link: "/realizacje/enea-stadion"
-    },
-    {
-      title: "FPS Cegielski",
-      category: "Strona przemysłowa",
-      image: fpsCegielski,
-      result: "Nowa identyfikacja online",
-      link: "/realizacje/fps-cegielski"
-    },
-    {
-      title: "Klagem",
-      category: "E-commerce",
-      image: klagem,
-      result: "+150% sprzedaży online",
-      link: "/realizacje/klagem"
-    }
+    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
+    { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
+    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
   ];
 
   const faqItems = [
-    {
-      question: "Ile kosztuje strona internetowa w Rybniku?",
-      answer: "Ceny stron internetowych zaczynają się od 1 500 zł za prostą wizytówkę. Strony firmowe to koszt od 4 000 zł, a sklepy internetowe od 8 000 zł. Dokładna wycena zależy od zakresu projektu."
-    },
-    {
-      question: "Jak długo trwa realizacja strony?",
-      answer: "Prosta strona wizytówka to 1-2 tygodnie. Strona firmowa wymaga 3-4 tygodni, a sklep internetowy 4-8 tygodni w zależności od złożoności projektu."
-    },
-    {
-      question: "Czy oferujecie hosting i domenę?",
-      answer: "Tak, pomagamy w wyborze i konfiguracji hostingu oraz domeny. Możemy również przejąć pełną obsługę techniczną strony."
-    },
-    {
-      question: "Czy strona będzie zoptymalizowana pod SEO?",
-      answer: "Każda strona tworzona jest z myślą o pozycjonowaniu. Stosujemy najlepsze praktyki SEO, aby Twoja strona była widoczna w Google."
-    },
-    {
-      question: "Czy mogę samodzielnie edytować treści?",
-      answer: "Tak, wszystkie nasze strony wyposażone są w intuicyjny panel CMS, który pozwala na łatwą edycję treści bez znajomości programowania."
-    }
+    { question: "Ile kosztuje strona internetowa w Rybniku?", answer: "Ceny stron zaczynają się od 2000 zł za wizytówkę. Strony firmowe od 5000 zł, sklepy od 8000 zł. Dokładna wycena zależy od zakresu projektu." },
+    { question: "Jak długo trwa realizacja strony?", answer: "Prosta strona wizytówka to 1-2 tygodnie. Strona firmowa wymaga 3-4 tygodni, a sklep 4-8 tygodni w zależności od złożoności." },
+    { question: "Czy oferujecie hosting i domenę?", answer: "Tak, pomagamy w wyborze i konfiguracji hostingu oraz domeny. Możemy przejąć pełną obsługę techniczną." },
+    { question: "Czy strona będzie zoptymalizowana pod SEO?", answer: "Każda strona tworzona jest z myślą o pozycjonowaniu. Stosujemy najlepsze praktyki SEO dla widoczności w Google." },
+    { question: "Czy mogę samodzielnie edytować treści?", answer: "Tak, wszystkie strony wyposażone są w intuicyjny panel CMS do łatwej edycji treści." },
   ];
 
   const stats = [
-    { value: "600+", label: "Zrealizowanych projektów" },
-    { value: "100+", label: "Zadowolonych klientów" },
-    { value: "160+", label: "Opinii Google" }
+    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
+    { value: "98%", label: "Zadowolonych klientów", icon: Star },
+    { value: "5 lat", label: "Doświadczenia", icon: Clock },
+    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
   ];
 
   const benefits = [
-    {
-      icon: Shield,
-      title: "Bezpieczeństwo",
-      description: "Certyfikat SSL i regularne aktualizacje zabezpieczeń"
-    },
-    {
-      icon: Rocket,
-      title: "Wydajność",
-      description: "Szybkie ładowanie strony i optymalizacja Core Web Vitals"
-    },
-    {
-      icon: Palette,
-      title: "Unikalny design",
-      description: "Projekty dopasowane do identyfikacji wizualnej firmy"
-    }
+    "Znajomość rynku śląskiego",
+    "Kompleksowa obsługa od projektu po wdrożenie",
+    "SEO w standardzie każdej strony",
+    "Responsywny design mobile-first",
+    "Wsparcie techniczne po uruchomieniu",
+    "Konkurencyjne ceny bez ukrytych kosztów"
   ];
 
   const introContent = {
-    title: "Profesjonalne strony internetowe dla firm z Rybnika",
+    title: "Tworzenie stron www dla firm z Rybnika",
     paragraphs: [
-      "Rybnik to ważne centrum gospodarcze województwa śląskiego z dynamicznie rozwijającym się sektorem biznesowym. Profesjonalna strona internetowa jest kluczem do sukcesu każdej firmy działającej w tym regionie.",
-      "Tworzymy strony internetowe, które nie tylko świetnie wyglądają, ale przede wszystkim realizują cele biznesowe - generują zapytania, budują wiarygodność i wspierają sprzedaż."
-    ]
+      "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Rybniku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
+      "Rybnik to ważne centrum gospodarcze województwa śląskiego z dynamicznie rozwijającym się sektorem biznesowym.",
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+    ],
+    videoSrc: "/videos/fotz-reel.mp4"
   };
 
   return (
     <>
       <Helmet>
-        <title>Strony Internetowe Rybnik - Tworzenie Stron WWW | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Profesjonalne tworzenie stron internetowych w Rybniku. Responsywne strony WWW, sklepy internetowe i pozycjonowanie SEO. Sprawdź nasze realizacje!" 
-        />
-        <meta 
-          name="keywords" 
-          content="strony internetowe Rybnik, tworzenie stron Rybnik, strony WWW Rybnik, projektowanie stron Rybnik, sklepy internetowe Rybnik" 
-        />
+        <title>Strony Internetowe Rybnik | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
+        <meta name="description" content="Strony internetowe Rybnik. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Rybnika." />
+        <meta name="keywords" content="strony internetowe rybnik, tworzenie stron www rybnik, projektowanie stron rybnik, sklepy internetowe rybnik" />
         <link rel="canonical" href="https://fotz.pl/strony-internetowe-rybnik" />
       </Helmet>
-
-      <ServiceSchema 
-        name="Tworzenie Stron Internetowych Rybnik"
-        description="Profesjonalne projektowanie i tworzenie stron internetowych dla firm z Rybnika. Responsywne strony WWW, sklepy e-commerce i pozycjonowanie SEO."
-        provider="Fotz Studio"
-        areaServed="Rybnik"
-        url="https://fotz.pl/strony-internetowe-rybnik"
-      />
       
-      <BreadcrumbSchema 
-        items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Strony Internetowe Rybnik", url: "https://fotz.pl/strony-internetowe-rybnik" }
-        ]}
-      />
-      
-      <FAQSchema 
-        items={faqItems.map(item => ({
-          question: item.question,
-          answer: item.answer
-        }))}
-      />
+      <ServiceSchema name="Strony Internetowe Rybnik" description="Profesjonalne tworzenie stron internetowych dla firm z Rybnika." provider="FOTZ Studio" areaServed="Rybnik" />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Rybnik", url: "https://fotz.pl/strony-internetowe-rybnik" }]} />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
-        {/* Hero Section */}
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-background">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
+        {/* Hero */}
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
+            <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" />
+          </div>
           
-          <div className="container mx-auto px-4 py-20 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
-            >
-              <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                Strony internetowe Rybnik
-              </span>
+          <div className="container mx-auto px-4 relative z-10">
+            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center max-w-5xl mx-auto">
+              <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
+                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Rybnik<Sparkles className="w-4 h-4" /></span>
+              </motion.div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Tworzenie Stron Internetowych{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/60">
-                  Rybnik
-                </span>
-              </h1>
+              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
+                Strony Internetowe{" "}<span className="text-gradient relative">Rybnik</span>
+              </motion.h1>
               
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Projektujemy nowoczesne strony WWW dla firm z Rybnika i okolic. 
-                Responsywne, szybkie i zoptymalizowane pod SEO.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild>
-                  <Link to="/kontakt">
-                    Bezpłatna wycena
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <a href="tel:+48790814814">
-                    <Phone className="mr-2 h-5 w-5" />
-                    Zadzwoń teraz
-                  </a>
-                </Button>
-              </div>
+              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla firm z Rybnika i okolic.
+              </motion.p>
 
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></Link></Button>
+                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>
+              </motion.div>
+
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }} className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
                 {stats.map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.3 + index * 0.1 }}
-                    className="text-center"
-                  >
-                    <div className="text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }} className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all">
+                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
+                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
+                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
                   </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </motion.div>
           </div>
         </section>
 
-        <CityIntroSection content={introContent} />
-        <CityBenefitsSection benefits={benefits} city="Rybnik" />
-        <CityServicesGrid services={services} city="Rybnik" />
+        <CityIntroSection content={introContent} cityName="Rybnik" />
+        <CityBenefitsSection benefits={benefits} title="Dlaczego warto nam zaufać?" subtitle="Poznaj korzyści współpracy" cityName="Rybnik" />
+        <CityServicesGrid services={services} title="Nasze usługi" subtitle="Kompleksowe usługi tworzenia stron www dla rybnickich firm" cityName="Rybnik" />
 
-        {/* Process Section */}
-        <section className="py-20 bg-muted/30">
+        {/* Process */}
+        <section className="py-24 bg-card/30">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Jak pracujemy?
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Sprawdzony proces tworzenia stron internetowych
-              </p>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Proces</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Jak tworzymy strony?</h2>
             </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {processSteps.map((step, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  className="relative p-6 rounded-xl bg-card border border-border"
-                >
-                  <span className="text-5xl font-bold text-primary/20">{step.step}</span>
-                  <h3 className="text-xl font-semibold mt-4 mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              {processSteps.map((item, index) => (
+                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="group relative">
+                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full relative overflow-hidden">
+                    <div className="absolute top-0 right-0 text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">{item.step}</div>
+                    <div className="relative z-10">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><item.icon className="w-7 h-7 text-primary" /></div>
+                      <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                      <p className="text-muted-foreground">{item.desc}</p>
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -355,49 +164,22 @@ const StronyInternetoweRybnik = () => {
         </section>
 
         {/* Case Studies */}
-        <section className="py-20">
+        <section className="py-24">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Nasze realizacje
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Zobacz przykłady naszych projektów stron internetowych
-              </p>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Realizacje</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Nasze projekty</h2>
             </motion.div>
-
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {caseStudies.map((study, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <Link to={study.link} className="group block">
-                    <div className="relative overflow-hidden rounded-xl aspect-video mb-4">
-                      <img
-                        src={study.image}
-                        alt={study.title}
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                      <div className="absolute bottom-4 left-4">
-                        <span className="px-3 py-1 rounded-full bg-primary/20 text-primary text-sm">
-                          {study.result}
-                        </span>
-                      </div>
+                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
+                  <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
+                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="p-6">
+                      <span className="text-primary text-sm font-medium">{study.category}</span>
+                      <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
+                      <p className="text-muted-foreground">{study.result}</p>
                     </div>
-                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                      {study.title}
-                    </h3>
-                    <p className="text-muted-foreground">{study.category}</p>
                   </Link>
                 </motion.div>
               ))}
@@ -405,41 +187,25 @@ const StronyInternetoweRybnik = () => {
           </div>
         </section>
 
-        <CityPricingCards pricing={pricing} city="Rybnik" />
-        <CityLinksSection currentCity="Rybnik" currentService="strony-internetowe" />
+        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Rybnik" />
+        <CityLinksSection currentCity="Rybnik" />
 
-        {/* FAQ Section */}
-        <section className="py-20 bg-muted/30">
+        {/* FAQ */}
+        <section className="py-24">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Często zadawane pytania
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Odpowiedzi na najczęstsze pytania o tworzenie stron w Rybniku
-              </p>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">FAQ</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Najczęstsze pytania</h2>
             </motion.div>
-
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
                 {faqItems.map((item, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="bg-card border border-border rounded-lg px-6"
-                  >
-                    <AccordionTrigger className="text-left hover:no-underline">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
+                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
+                    <AccordionItem value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-card/50">
+                      <AccordionTrigger className="text-left hover:no-underline py-6"><span className="font-medium">{item.question}</span></AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground pb-6">{item.answer}</AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
                 ))}
               </Accordion>
             </div>
