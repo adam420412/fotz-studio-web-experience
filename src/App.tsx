@@ -72,7 +72,16 @@ import StronyInternetoweGliwice from "./pages/StronyInternetoweGliwice";
 import StronyInternetoweRybnik from "./pages/StronyInternetoweRybnik";
 import StronyInternetoweTychy from "./pages/StronyInternetoweTychy";
 import StronyInternetoweKamionki from "./pages/StronyInternetoweKamionki";
-import StronyInternetowe from "./pages/StronyInternetowe";
+import StronyInternetoweTorun from "./pages/StronyInternetoweTorun";
+import StronyInternetoweRzeszow from "./pages/StronyInternetoweRzeszow";
+import StronyInternetoweRadom from "./pages/StronyInternetoweRadom";
+import StronyInternetoweOpole from "./pages/StronyInternetoweOpole";
+import StronyInternetoweOlsztyn from "./pages/StronyInternetoweOlsztyn";
+import StronyInternetoweKielce from "./pages/StronyInternetoweKielce";
+import StronyInternetoweKonin from "./pages/StronyInternetoweKonin";
+import StronyInternetoweTarnow from "./pages/StronyInternetoweTarnow";
+import StronyInternetowePlock from "./pages/StronyInternetowePlock";
+import StronyInternetoweSosnowiec from "./pages/StronyInternetoweSosnowiec";
 import StronyInternetowe from "./pages/StronyInternetowe";
 import SocialMediaPoznan from "./pages/SocialMediaPoznan";
 import SocialMedia from "./pages/SocialMedia";
@@ -176,6 +185,16 @@ const App = () => (
             <Route path="/strony-internetowe-rybnik" element={<StronyInternetoweRybnik />} />
             <Route path="/strony-internetowe-tychy" element={<StronyInternetoweTychy />} />
             <Route path="/strony-internetowe-kamionki" element={<StronyInternetoweKamionki />} />
+            <Route path="/strony-internetowe-torun" element={<StronyInternetoweTorun />} />
+            <Route path="/strony-internetowe-rzeszow" element={<StronyInternetoweRzeszow />} />
+            <Route path="/strony-internetowe-radom" element={<StronyInternetoweRadom />} />
+            <Route path="/strony-internetowe-opole" element={<StronyInternetoweOpole />} />
+            <Route path="/strony-internetowe-olsztyn" element={<StronyInternetoweOlsztyn />} />
+            <Route path="/strony-internetowe-kielce" element={<StronyInternetoweKielce />} />
+            <Route path="/strony-internetowe-konin" element={<StronyInternetoweKonin />} />
+            <Route path="/strony-internetowe-tarnow" element={<StronyInternetoweTarnow />} />
+            <Route path="/strony-internetowe-plock" element={<StronyInternetowePlock />} />
+            <Route path="/strony-internetowe-sosnowiec" element={<StronyInternetoweSosnowiec />} />
             <Route path="/strony-internetowe" element={<StronyInternetowe />} />
             <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
             <Route path="/social-media" element={<SocialMedia />} />
