@@ -45,7 +45,8 @@ import {
   X,
   Calculator,
   Zap,
-  Music2
+  Music2,
+  Youtube
 } from "lucide-react";
 
 // Import portfolio images for preview
@@ -83,9 +84,10 @@ const menuCategories: MenuCategory[] = [
       { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Strategia digital i promocja online" },
       { name: "Content Marketing", href: "/content-marketing", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
       { name: "Social Media", href: "/social-media", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
-      { name: "Kampanie Reklamowe", href: "/kampanie-reklamowe", badge: "Nowe", icon: Zap, tooltip: "Google, Facebook, TikTok, LinkedIn Ads" },
+      { name: "Kampanie Reklamowe", href: "/kampanie-reklamowe", badge: "Nowe", icon: Zap, tooltip: "Google, Facebook, TikTok, LinkedIn, YouTube Ads" },
       { name: "TikTok Ads", href: "/tiktok-ads", icon: Music2, tooltip: "Reklamy na TikToku" },
       { name: "LinkedIn Ads", href: "/linkedin-ads", icon: Briefcase, tooltip: "Kampanie B2B na LinkedIn" },
+      { name: "YouTube Ads", href: "/youtube-ads", icon: Youtube, tooltip: "Reklamy wideo na YouTube" },
     ],
   },
   {
