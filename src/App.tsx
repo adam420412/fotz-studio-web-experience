@@ -96,6 +96,7 @@ import Wizualizacje3D from "./pages/Wizualizacje3D";
 import KompleksowaObsluga from "./pages/KompleksowaObsluga";
 import FacebookAds from "./pages/FacebookAds";
 import GoogleAds from "./pages/GoogleAds";
+import KampanieReklamowe from "./pages/KampanieReklamowe";
 import IdentyfikacjaWizualna from "./pages/IdentyfikacjaWizualna";
 import AgencjaGraficzna from "./pages/AgencjaGraficzna";
 import EcommerceTworzenie from "./pages/EcommerceTworzenie";
@@ -209,6 +210,7 @@ const App = () => (
             <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
             <Route path="/facebook-ads" element={<FacebookAds />} />
             <Route path="/google-ads" element={<GoogleAds />} />
+            <Route path="/kampanie-reklamowe" element={<KampanieReklamowe />} />
             <Route path="/identyfikacja-wizualna" element={<IdentyfikacjaWizualna />} />
             <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
             <Route path="/ecommerce-tworzenie-sklepu" element={<EcommerceTworzenie />} />

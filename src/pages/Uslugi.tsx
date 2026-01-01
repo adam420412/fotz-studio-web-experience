@@ -65,7 +65,7 @@ const services = [
       "Automatyzacja marketingu",
       "Lead nurturing",
     ],
-    href: "/google-ads",
+    href: "/kampanie-reklamowe",
     image: eneaStadion,
     video: "/videos/enea-stadion-header.mp4",
     color: "from-blue-500/20 to-cyan-500/10",
