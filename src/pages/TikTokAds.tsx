@@ -3,10 +3,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
   Target, Users, TrendingUp, BarChart3, Zap, Eye, 
-  MousePointer, DollarSign, Layers, CheckCircle2, 
-  ArrowRight, Search, PieChart, RefreshCw, Megaphone,
-  Monitor, ShoppingCart, Video, Globe, Settings, LineChart,
-  Facebook, Youtube, Instagram, Sparkles, Rocket, Award, Music2
+  MousePointer, DollarSign, CheckCircle2, 
+  ArrowRight, Video, Sparkles, Music2, Heart,
+  Smartphone, Play, Megaphone, RefreshCw, Rocket
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -17,66 +16,43 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 
-const KampanieReklamowe = () => {
-  const platforms = [
-    { 
-      icon: Search, 
-      title: "Google Ads", 
-      description: "Docieraj do klientów aktywnie szukających Twoich usług w wyszukiwarce Google",
-      href: "/google-ads",
-      features: ["Sieć wyszukiwania", "Google Shopping", "YouTube Ads", "Performance Max"],
-      color: "from-green-500/20 to-yellow-500/10",
-      accent: "bg-green-500/20 text-green-400"
-    },
-    { 
-      icon: Facebook, 
-      title: "Facebook & Instagram Ads", 
-      description: "Buduj świadomość marki i docieraj do idealnych klientów na podstawie zainteresowań",
-      href: "/facebook-ads",
-      features: ["Feed & Stories", "Reels Ads", "Lead Ads", "Remarketing"],
-      color: "from-blue-500/20 to-purple-500/10",
-      accent: "bg-blue-500/20 text-blue-400"
-    },
-    { 
-      icon: Music2, 
-      title: "TikTok Ads", 
-      description: "Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo",
-      href: "/tiktok-ads",
-      features: ["In-Feed Ads", "Spark Ads", "Branded Hashtag", "Influencer Marketing"],
-      color: "from-pink-500/20 to-cyan-500/10",
-      accent: "bg-pink-500/20 text-pink-400"
-    },
+const TikTokAds = () => {
+  const benefits = [
+    { icon: Users, title: "Młoda grupa docelowa", description: "Docieraj do Gen Z i Millenialsów aktywnych na TikToku" },
+    { icon: TrendingUp, title: "Viralowy potencjał", description: "Organiczny zasięg i możliwość viral contentu" },
+    { icon: Sparkles, title: "Autentyczność", description: "Naturalne reklamy dopasowane do stylu platformy" },
+    { icon: DollarSign, title: "Niższy CPM", description: "Konkurencyjne stawki w porównaniu do Meta i Google" },
   ];
 
-  const benefits = [
-    { icon: Target, title: "Precyzyjne targetowanie", description: "Docieramy do osób najbardziej zainteresowanych Twoją ofertą" },
-    { icon: BarChart3, title: "Mierzalne wyniki", description: "Śledzimy każdą konwersję i optymalizujemy pod ROI" },
-    { icon: DollarSign, title: "Kontrola budżetu", description: "Płacisz tylko za wyniki - kliknięcia lub wyświetlenia" },
-    { icon: Zap, title: "Szybkie efekty", description: "Pierwsze wyniki widoczne już po kilku dniach" },
-    { icon: RefreshCw, title: "Ciągła optymalizacja", description: "Testujemy i ulepszamy kampanie codziennie" },
-    { icon: Eye, title: "Pełna transparentność", description: "Dostęp do statystyk i regularne raporty" },
+  const adFormats = [
+    { icon: Video, title: "In-Feed Ads", description: "Reklamy wideo w feedzie użytkownika, 9-60 sekund" },
+    { icon: Sparkles, title: "Spark Ads", description: "Promowanie organicznych treści jako reklamy" },
+    { icon: Megaphone, title: "TopView", description: "Pełnoekranowa reklama przy otwarciu aplikacji" },
+    { icon: Music2, title: "Branded Hashtag Challenge", description: "Viralowe wyzwania z Twoim hashtagiem" },
+    { icon: Play, title: "Branded Effects", description: "Interaktywne filtry i efekty AR" },
+    { icon: Heart, title: "Influencer Marketing", description: "Współpraca z TikTokerami" },
   ];
 
   const processSteps = [
-    { step: "01", title: "Strategia i cele", description: "Określamy grupę docelową, budżet i KPI dla kampanii" },
-    { step: "02", title: "Kreacja reklamowa", description: "Projektujemy grafiki, wideo i teksty reklamowe" },
-    { step: "03", title: "Konfiguracja kampanii", description: "Ustawiamy targetowanie, śledzenie konwersji i remarketing" },
-    { step: "04", title: "Optymalizacja i skalowanie", description: "Analizujemy wyniki i skalujemy najlepsze reklamy" },
+    { step: "01", title: "Strategia i kreacja", description: "Tworzymy koncepcję dopasowaną do TikToka" },
+    { step: "02", title: "Produkcja wideo", description: "Nagrywamy lub adaptujemy materiały wideo" },
+    { step: "03", title: "Konfiguracja kampanii", description: "Ustawiamy targetowanie i pixel konwersji" },
+    { step: "04", title: "Optymalizacja i skalowanie", description: "Testujemy kreacje i skalujemy zwycięzców" },
   ];
 
   const pricingPackages = [
     {
       name: "Start",
-      price: "1 500",
+      price: "2 000",
       period: "/mies.",
-      description: "Jedna platforma reklamowa",
+      description: "Testowanie TikToka",
       features: [
-        "Google Ads LUB Facebook Ads",
         "Budżet reklamowy do 3 000 zł",
+        "1-2 kreacje wideo miesięcznie",
+        "In-Feed Ads",
         "Podstawowe targetowanie",
-        "Kreacje statyczne",
         "Raport miesięczny",
-        "Śledzenie konwersji",
+        "Pixel konwersji",
       ],
       popular: false,
     },
@@ -84,14 +60,14 @@ const KampanieReklamowe = () => {
       name: "Business",
       price: "3 500",
       period: "/mies.",
-      description: "Multi-platformowe kampanie",
+      description: "Pełna obsługa TikTok",
       features: [
-        "Google Ads + Facebook/Instagram Ads",
-        "Budżet reklamowy do 15 000 zł",
+        "Budżet reklamowy do 10 000 zł",
+        "4-6 kreacji wideo miesięcznie",
+        "In-Feed + Spark Ads",
         "Zaawansowane targetowanie",
-        "Kreacje statyczne + wideo",
-        "Testy A/B reklam",
-        "Remarketing cross-platform",
+        "Testy A/B kreacji",
+        "Remarketing",
         "Raporty tygodniowe",
       ],
       popular: true,
@@ -100,15 +76,15 @@ const KampanieReklamowe = () => {
       name: "Premium",
       price: "6 000",
       period: "/mies.",
-      description: "Pełna obsługa performance",
+      description: "TikTok + Influencerzy",
       features: [
-        "Wszystkie platformy reklamowe",
         "Budżet reklamowy bez limitu",
-        "YouTube + TikTok Ads",
-        "Produkcja materiałów wideo",
-        "Dedykowany opiekun kampanii",
-        "Automatyzacja i AI",
-        "Raporty na żądanie",
+        "Nielimitowane kreacje",
+        "Wszystkie formaty reklamowe",
+        "Branded Hashtag Challenge",
+        "Współpraca z influencerami",
+        "Produkcja wideo w studio",
+        "Dedykowany opiekun",
         "Strategia wielokanałowa",
       ],
       popular: false,
@@ -116,58 +92,58 @@ const KampanieReklamowe = () => {
   ];
 
   const stats = [
-    { value: "500+", label: "Przeprowadzonych kampanii" },
-    { value: "12M+", label: "Wydanego budżetu reklamowego" },
-    { value: "350%", label: "Średni ROAS klientów" },
-    { value: "45+", label: "Stałych klientów" },
+    { value: "1.5B+", label: "Aktywnych użytkowników TikToka" },
+    { value: "52 min", label: "Średni czas spędzony dziennie" },
+    { value: "67%", label: "Użytkowników to 18-34 lata" },
+    { value: "2x", label: "Wyższe zaangażowanie niż inne platformy" },
   ];
 
   const faqItems = [
     {
-      question: "Jaką platformę reklamową wybrać - Google Ads czy Facebook Ads?",
-      answer: "To zależy od Twojego celu i branży. Google Ads dociera do osób aktywnie szukających produktów (wysoka intencja zakupowa) - idealne dla e-commerce i usług B2B. Facebook/Instagram Ads buduje świadomość marki i działa na podstawie zainteresowań - świetne dla B2C, mody, lifestyle. Najlepsze wyniki daje połączenie obu platform."
+      question: "Czy TikTok Ads sprawdzi się dla mojej firmy?",
+      answer: "TikTok najlepiej sprawdza się dla marek B2C, e-commerce, fashion, beauty, FMCG, rozrywki i edukacji. Jeśli Twoja grupa docelowa to osoby 16-40 lat i jesteś gotowy na kreatywne, autentyczne treści - TikTok będzie świetnym wyborem. Dla B2B i starszych grup demograficznych lepiej sprawdzi się LinkedIn lub Google Ads."
     },
     {
-      question: "Jaki budżet reklamowy potrzebuję na start?",
-      answer: "Minimalny budżet to około 2000-3000 zł miesięcznie na jedną platformę, aby zebrać wystarczające dane do optymalizacji. W konkurencyjnych branżach warto zacząć od 5000-10000 zł. Do budżetu reklamowego dolicz koszt obsługi agencji. Pomagamy dobrać optymalny budżet do Twoich celów."
+      question: "Jaki budżet potrzebuję na TikTok Ads?",
+      answer: "Minimalny budżet dzienny to około 50 zł, ale rekomendujemy start od 100-200 zł dziennie (3000-6000 zł miesięcznie) dla zebrania wystarczających danych. TikTok często ma niższy CPM niż Facebook/Instagram, więc za ten sam budżet możesz dotrzeć do większej liczby osób."
     },
     {
-      question: "Po jakim czasie widać efekty kampanii reklamowych?",
-      answer: "Pierwsze wyniki (kliknięcia, ruch na stronie) widać już po 1-2 dniach. Stabilne konwersje i optymalizacja wymagają 2-4 tygodni zbierania danych. Pełna optymalizacja kampanii to proces ciągły - najlepsze wyniki osiągamy po 2-3 miesiącach systematycznej pracy."
+      question: "Jak powinny wyglądać reklamy na TikToku?",
+      answer: "Reklamy na TikToku muszą wyglądać natywnie - jak zwykłe treści użytkowników. Unikamy przesadnie wypolerowanych spotów reklamowych. Najlepiej działają: pionowe wideo 9:16, pierwsze 3 sekundy przyciągające uwagę, autentyczny ton, trending sounds, i jasne CTA. Pomagamy tworzyć kreacje dopasowane do platformy."
     },
     {
-      question: "Czy mogę sam śledzić wyniki kampanii?",
-      answer: "Tak, zapewniamy pełny dostęp do kont reklamowych Google Ads i Meta Business Suite. Dodatkowo wysyłamy regularne raporty z najważniejszymi wskaźnikami: wydatki, kliknięcia, konwersje, koszt na klienta, ROAS. Omawiamy wyniki na spotkaniach online."
+      question: "Czy potrzebuję własnego konta TikTok?",
+      answer: "Tak, do prowadzenia reklam potrzebne jest konto biznesowe TikTok i konto TikTok Ads Manager. Pomagamy w założeniu i konfiguracji obu. Możemy też wykorzystać Spark Ads do promowania treści organicznych z Twojego profilu."
     },
     {
-      question: "Czym różnicie się od innych agencji reklamowych?",
-      answer: "Łączymy kampanie reklamowe z całościową strategią marketingową - tworzymy landing page'e, materiały wideo, grafiki reklamowe. Nie tylko uruchamiamy reklamy, ale dbamy o całą ścieżkę klienta. Mamy własne studio produkcyjne, więc wszystko powstaje in-house."
+      question: "Jak mierzyć skuteczność reklam na TikToku?",
+      answer: "Instalujemy TikTok Pixel na Twojej stronie, który śledzi konwersje. Monitorujemy: wyświetlenia, zasięg, CTR, koszt za kliknięcie, koszt za konwersję, ROAS. TikTok oferuje też View-Through Attribution - śledzenie konwersji nawet bez kliknięcia w reklamę."
     },
     {
-      question: "Czy potrzebuję landing page do kampanii reklamowych?",
-      answer: "Landing page znacząco zwiększa konwersję reklam (nawet 3-5x). Strona zoptymalizowana pod konkretną kampanię konwertuje lepiej niż zwykła strona firmowa. W pakietach Business i Premium możemy przygotować dedykowane strony docelowe."
+      question: "Jak długo trwa produkcja reklamy TikTok?",
+      answer: "Prosta kreacja In-Feed może być gotowa w 2-3 dni. Bardziej złożone produkcje z nagraniem w studio zajmują 1-2 tygodnie. Dla Branded Hashtag Challenge potrzeba 3-4 tygodnie przygotowań. Rekomendujemy tworzenie wielu wariantów do testów A/B."
     },
     {
-      question: "Jak działa remarketing?",
-      answer: "Remarketing to wyświetlanie reklam osobom, które już odwiedziły Twoją stronę lub weszły w interakcję z marką. Działamy cross-platform - osoba, która była na stronie, zobaczy Twoje reklamy zarówno w Google, jak i na Facebooku. To najskuteczniejsza forma reklamy z najwyższym ROI."
+      question: "Czy warto łączyć TikTok Ads z innymi platformami?",
+      answer: "Zdecydowanie tak! TikTok świetnie buduje świadomość i generuje ruch. W połączeniu z remarketingiem na Facebook/Instagram i Google Ads tworzy kompletną ścieżkę konwersji. Oferujemy kompleksową obsługę kampanii reklamowych na wszystkich platformach."
     },
     {
-      question: "Czy tworzycie materiały reklamowe?",
-      answer: "Tak, w ramach obsługi przygotowujemy grafiki, teksty reklamowe i krótkie wideo. Mamy własne studio produkcyjne, więc możemy tworzyć profesjonalne spoty reklamowe i materiały foto. Zobacz nasze realizacje wideo i spoty reklamowe."
+      question: "Co to są Spark Ads i dlaczego są skuteczne?",
+      answer: "Spark Ads to format pozwalający promować organiczne treści (Twoje lub influencerów) jako reklamy płatne. Zachowują wszystkie interakcje (lajki, komentarze) i wyglądają bardziej autentycznie. Często mają wyższy CTR i niższy koszt niż tradycyjne reklamy."
     },
   ];
 
   return (
     <Layout>
       <Helmet>
-        <title>Kampanie Reklamowe Google Ads & Facebook Ads | Fotz Studio Poznań</title>
-        <meta name="description" content="Profesjonalne kampanie reklamowe Google Ads i Facebook Ads. Zwiększ sprzedaż dzięki precyzyjnemu targetowaniu i optymalizacji. Agencja reklamowa Poznań." />
-        <link rel="canonical" href="https://fotz.pl/kampanie-reklamowe" />
+        <title>TikTok Ads - Kampanie reklamowe na TikToku | Fotz Studio Poznań</title>
+        <meta name="description" content="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo. Agencja TikTok Ads Poznań." />
+        <link rel="canonical" href="https://fotz.pl/tiktok-ads" />
       </Helmet>
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-orange-600/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-pink-600/15 via-background to-cyan-600/10" />
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -175,20 +151,20 @@ const KampanieReklamowe = () => {
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
-            <span className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-medium mb-6">
-              <Megaphone className="inline-block w-4 h-4 mr-2" />
-              Performance Marketing
+            <span className="inline-block px-4 py-2 bg-pink-500/20 text-pink-400 rounded-full text-sm font-medium mb-6">
+              <Music2 className="inline-block w-4 h-4 mr-2" />
+              TikTok Ads
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-              Kampanie reklamowe,
+              Reklamy na TikToku,
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-orange-500 to-red-500">
-                które sprzedają
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
+                które zatrzymują scroll
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Google Ads, Facebook Ads, Instagram - docieramy do Twoich klientów tam, gdzie spędzają czas online. 
-              Mierzalne wyniki i pełna kontrola nad budżetem.
+              Docieraj do młodych odbiorców na najszybciej rosnącej platformie social media. 
+              Tworzymy viralowe treści, które sprzedają.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -198,7 +174,7 @@ const KampanieReklamowe = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/realizacje">Zobacz efekty</Link>
+                <Link to="/spoty-reklamowe">Zobacz nasze wideo</Link>
               </Button>
             </div>
           </motion.div>
@@ -218,7 +194,7 @@ const KampanieReklamowe = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
+                <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-500 mb-2">{stat.value}</div>
                 <div className="text-sm md:text-base text-muted-foreground">{stat.label}</div>
               </motion.div>
             ))}
@@ -226,7 +202,7 @@ const KampanieReklamowe = () => {
         </div>
       </section>
 
-      {/* Platforms Section */}
+      {/* Benefits Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <motion.div
@@ -236,51 +212,35 @@ const KampanieReklamowe = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Platformy reklamowe
+              Dlaczego TikTok Ads?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Prowadzimy kampanie na najpopularniejszych platformach reklamowych
+              Platforma z najwyższym zaangażowaniem użytkowników
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {platforms.map((platform, index) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-                className={`relative p-8 rounded-2xl bg-gradient-to-br ${platform.color} border border-border/50 hover:border-primary/50 transition-all duration-300 group`}
+                transition={{ delay: index * 0.1 }}
+                className="p-6 rounded-xl bg-card border border-border/50 hover:border-pink-500/30 transition-colors"
               >
-                <div className={`inline-flex items-center justify-center w-14 h-14 rounded-xl ${platform.accent} mb-6`}>
-                  <platform.icon className="w-7 h-7" />
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-pink-500/10 text-pink-500 mb-4">
+                  <benefit.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">{platform.title}</h3>
-                <p className="text-muted-foreground mb-6">{platform.description}</p>
-                
-                <ul className="space-y-2 mb-6">
-                  {platform.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <CheckCircle2 className="w-4 h-4 text-primary" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <Link to={platform.href}>
-                    Dowiedz się więcej
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
+                <p className="text-muted-foreground text-sm">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Ad Formats Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <motion.div
@@ -290,28 +250,28 @@ const KampanieReklamowe = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Dlaczego kampanie reklamowe?
+              Formaty reklamowe TikTok
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Płatne reklamy to najszybszy sposób na dotarcie do nowych klientów
+              Wykorzystujemy pełen potencjał platformy
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {benefits.map((benefit, index) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {adFormats.map((format, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-colors"
+                className="p-6 rounded-xl bg-card border border-border/50 hover:border-pink-500/30 transition-colors group"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary mb-4">
-                  <benefit.icon className="w-6 h-6" />
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-pink-500/20 to-cyan-500/20 text-pink-500 mb-4 group-hover:scale-110 transition-transform">
+                  <format.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{benefit.title}</h3>
-                <p className="text-muted-foreground text-sm">{benefit.description}</p>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{format.title}</h3>
+                <p className="text-muted-foreground text-sm">{format.description}</p>
               </motion.div>
             ))}
           </div>
@@ -331,7 +291,7 @@ const KampanieReklamowe = () => {
               Jak pracujemy
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Sprawdzony proces, który gwarantuje wyniki
+              Od strategii do viralowego contentu
             </p>
           </motion.div>
 
@@ -345,11 +305,11 @@ const KampanieReklamowe = () => {
                 transition={{ delay: index * 0.15 }}
                 className="relative"
               >
-                <div className="text-6xl font-bold text-primary/20 mb-4">{step.step}</div>
+                <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500/30 to-cyan-500/30 mb-4">{step.step}</div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">{step.title}</h3>
                 <p className="text-muted-foreground text-sm">{step.description}</p>
                 {index < processSteps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-primary/30 to-transparent" />
+                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-pink-500/30 to-transparent" />
                 )}
               </motion.div>
             ))}
@@ -367,10 +327,10 @@ const KampanieReklamowe = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-              Cennik kampanii reklamowych
+              Cennik TikTok Ads
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Przejrzyste ceny bez ukrytych kosztów
+              Obsługa kampanii + produkcja kreacji wideo
             </p>
           </motion.div>
 
@@ -384,12 +344,12 @@ const KampanieReklamowe = () => {
                 transition={{ delay: index * 0.15 }}
                 className={`relative p-8 rounded-2xl border ${
                   pkg.popular 
-                    ? 'bg-primary/5 border-primary' 
+                    ? 'bg-gradient-to-br from-pink-500/10 to-cyan-500/10 border-pink-500' 
                     : 'bg-card border-border/50'
                 }`}
               >
                 {pkg.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-pink-500 to-cyan-500 text-white text-sm font-medium rounded-full">
                     Najpopularniejszy
                   </div>
                 )}
@@ -404,14 +364,14 @@ const KampanieReklamowe = () => {
                 <ul className="space-y-3 mb-8">
                   {pkg.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm">
-                      <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-pink-500 shrink-0 mt-0.5" />
                       <span className="text-muted-foreground">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <Button 
                   asChild 
-                  className="w-full" 
+                  className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-pink-500 to-cyan-500 hover:from-pink-600 hover:to-cyan-600' : ''}`}
                   variant={pkg.popular ? "default" : "outline"}
                 >
                   <Link to="/kontakt">Wybierz pakiet</Link>
@@ -421,7 +381,7 @@ const KampanieReklamowe = () => {
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-8">
-            * Ceny nie zawierają budżetu reklamowego, który trafia bezpośrednio do Google/Meta
+            * Ceny nie zawierają budżetu reklamowego, który trafia bezpośrednio do TikToka
           </p>
         </div>
       </section>
@@ -439,7 +399,7 @@ const KampanieReklamowe = () => {
               Najczęściej zadawane pytania
             </h2>
             <p className="text-muted-foreground">
-              Odpowiedzi na pytania o kampanie reklamowe
+              Odpowiedzi na pytania o reklamy na TikToku
             </p>
           </motion.div>
 
@@ -481,17 +441,16 @@ const KampanieReklamowe = () => {
               Powiązane usługi
             </h2>
             <p className="text-muted-foreground">
-              Usługi, które wzmocnią Twoje kampanie reklamowe
+              Kompleksowa obsługa kampanii reklamowych
             </p>
           </motion.div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { title: "Google Ads", href: "/google-ads", icon: Search },
-              { title: "Facebook Ads", href: "/facebook-ads", icon: Facebook },
-              { title: "TikTok Ads", href: "/tiktok-ads", icon: Music2 },
+              { title: "Kampanie Reklamowe", href: "/kampanie-reklamowe", icon: Zap },
+              { title: "Facebook Ads", href: "/facebook-ads", icon: Target },
+              { title: "Google Ads", href: "/google-ads", icon: Target },
               { title: "Spoty reklamowe", href: "/spoty-reklamowe", icon: Video },
-              { title: "Landing Page", href: "/strony-internetowe", icon: Monitor },
             ].map((service, index) => (
               <motion.div
                 key={index}
@@ -502,13 +461,13 @@ const KampanieReklamowe = () => {
               >
                 <Link
                   to={service.href}
-                  className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
+                  className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border/50 hover:border-pink-500/50 transition-colors group"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <service.icon className="w-5 h-5 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-pink-500/10 flex items-center justify-center group-hover:bg-pink-500/20 transition-colors">
+                    <service.icon className="w-5 h-5 text-pink-500" />
                   </div>
                   <span className="font-medium text-foreground">{service.title}</span>
-                  <ArrowRight className="w-4 h-4 text-muted-foreground ml-auto group-hover:text-primary transition-colors" />
+                  <ArrowRight className="w-4 h-4 text-muted-foreground ml-auto group-hover:text-pink-500 transition-colors" />
                 </Link>
               </motion.div>
             ))}
@@ -517,7 +476,7 @@ const KampanieReklamowe = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-orange-600/10">
+      <section className="py-20 bg-gradient-to-br from-pink-600/10 via-background to-cyan-600/10">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -525,15 +484,15 @@ const KampanieReklamowe = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto"
           >
-            <Rocket className="w-16 h-16 text-primary mx-auto mb-6" />
+            <Rocket className="w-16 h-16 text-pink-500 mx-auto mb-6" />
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Gotowy na więcej klientów?
+              Gotowy na TikToka?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Umów się na bezpłatną konsultację. Przeanalizujemy Twój biznes i zaproponujemy strategię kampanii reklamowych.
+              Umów się na bezpłatną konsultację. Sprawdzimy, czy TikTok Ads to odpowiedni kanał dla Twojego biznesu.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="text-lg px-8">
+              <Button asChild size="lg" className="text-lg px-8 bg-gradient-to-r from-pink-500 to-cyan-500 hover:from-pink-600 hover:to-cyan-600">
                 <Link to="/kontakt">
                   Bezpłatna konsultacja
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -552,4 +511,4 @@ const KampanieReklamowe = () => {
   );
 };
 
-export default KampanieReklamowe;
+export default TikTokAds;
