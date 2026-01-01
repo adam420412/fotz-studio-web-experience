@@ -6,7 +6,7 @@ import {
   MousePointer, DollarSign, Layers, CheckCircle2, 
   ArrowRight, Search, PieChart, RefreshCw, Megaphone,
   Monitor, ShoppingCart, Video, Globe, Settings, LineChart,
-  Facebook, Youtube, Instagram, Sparkles, Rocket, Award, Music2
+  Facebook, Youtube, Instagram, Sparkles, Rocket, Award, Music2, Briefcase
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -45,6 +45,15 @@ const KampanieReklamowe = () => {
       features: ["In-Feed Ads", "Spark Ads", "Branded Hashtag", "Influencer Marketing"],
       color: "from-pink-500/20 to-cyan-500/10",
       accent: "bg-pink-500/20 text-pink-400"
+    },
+    { 
+      icon: Briefcase, 
+      title: "LinkedIn Ads", 
+      description: "Docieraj do decydentów B2B i generuj wartościowe leady biznesowe",
+      href: "/linkedin-ads",
+      features: ["Sponsored Content", "Message Ads", "Lead Gen Forms", "ABM"],
+      color: "from-sky-500/20 to-blue-500/10",
+      accent: "bg-sky-500/20 text-sky-400"
     },
   ];
 
@@ -243,7 +252,7 @@ const KampanieReklamowe = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {platforms.map((platform, index) => (
               <motion.div
                 key={index}
