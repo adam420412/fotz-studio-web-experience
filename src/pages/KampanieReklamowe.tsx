@@ -6,7 +6,7 @@ import {
   MousePointer, DollarSign, Layers, CheckCircle2, 
   ArrowRight, Search, PieChart, RefreshCw, Megaphone,
   Monitor, ShoppingCart, Video, Globe, Settings, LineChart,
-  Facebook, Youtube, Instagram, Sparkles, Rocket, Award, Music2, Briefcase
+  Facebook, Youtube, Instagram, Sparkles, Rocket, Award, Music2, Briefcase, Youtube as YoutubeIcon
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -54,6 +54,15 @@ const KampanieReklamowe = () => {
       features: ["Sponsored Content", "Message Ads", "Lead Gen Forms", "ABM"],
       color: "from-sky-500/20 to-blue-500/10",
       accent: "bg-sky-500/20 text-sky-400"
+    },
+    { 
+      icon: Youtube, 
+      title: "YouTube Ads", 
+      description: "Buduj świadomość marki dzięki profesjonalnym reklamom wideo",
+      href: "/youtube-ads",
+      features: ["TrueView In-Stream", "Bumper Ads", "YouTube Shorts", "Masthead"],
+      color: "from-red-500/20 to-orange-500/10",
+      accent: "bg-red-500/20 text-red-400"
     },
   ];
 
@@ -133,12 +142,12 @@ const KampanieReklamowe = () => {
 
   const faqItems = [
     {
-      question: "Jaką platformę reklamową wybrać - Google Ads czy Facebook Ads?",
-      answer: "To zależy od Twojego celu i branży. Google Ads dociera do osób aktywnie szukających produktów (wysoka intencja zakupowa) - idealne dla e-commerce i usług B2B. Facebook/Instagram Ads buduje świadomość marki i działa na podstawie zainteresowań - świetne dla B2C, mody, lifestyle. Najlepsze wyniki daje połączenie obu platform."
+      question: "Jaką platformę reklamową wybrać - Google Ads, Facebook Ads, TikTok czy LinkedIn?",
+      answer: "Wybór zależy od Twojego celu i grupy docelowej. Google Ads - dla osób aktywnie szukających produktów (e-commerce, B2B). Facebook/Instagram Ads - budowanie świadomości marki (B2C, lifestyle). TikTok Ads - młodzi odbiorcy 16-35 lat (moda, beauty, FMCG). LinkedIn Ads - decydenci B2B (usługi profesjonalne, rekrutacja). Najlepsze wyniki daje połączenie kilku platform."
     },
     {
       question: "Jaki budżet reklamowy potrzebuję na start?",
-      answer: "Minimalny budżet to około 2000-3000 zł miesięcznie na jedną platformę, aby zebrać wystarczające dane do optymalizacji. W konkurencyjnych branżach warto zacząć od 5000-10000 zł. Do budżetu reklamowego dolicz koszt obsługi agencji. Pomagamy dobrać optymalny budżet do Twoich celów."
+      answer: "Minimalny budżet to około 2000-3000 zł miesięcznie na jedną platformę. TikTok często ma niższy CPM niż Meta. LinkedIn jest najdroższy, ale generuje najbardziej wartościowe leady B2B. W konkurencyjnych branżach warto zacząć od 5000-10000 zł. Pomagamy dobrać optymalny budżet do Twoich celów."
     },
     {
       question: "Po jakim czasie widać efekty kampanii reklamowych?",
@@ -146,7 +155,15 @@ const KampanieReklamowe = () => {
     },
     {
       question: "Czy mogę sam śledzić wyniki kampanii?",
-      answer: "Tak, zapewniamy pełny dostęp do kont reklamowych Google Ads i Meta Business Suite. Dodatkowo wysyłamy regularne raporty z najważniejszymi wskaźnikami: wydatki, kliknięcia, konwersje, koszt na klienta, ROAS. Omawiamy wyniki na spotkaniach online."
+      answer: "Tak, zapewniamy pełny dostęp do kont reklamowych Google Ads, Meta Business Suite, TikTok Ads Manager i LinkedIn Campaign Manager. Dodatkowo wysyłamy regularne raporty z najważniejszymi wskaźnikami: wydatki, kliknięcia, konwersje, koszt na klienta, ROAS."
+    },
+    {
+      question: "Dla kogo sprawdzi się TikTok Ads?",
+      answer: "TikTok najlepiej sprawdza się dla marek B2C, e-commerce, fashion, beauty, FMCG, rozrywki i edukacji. Jeśli Twoja grupa docelowa to osoby 16-40 lat i jesteś gotowy na kreatywne, autentyczne treści wideo - TikTok będzie świetnym wyborem. Dla B2B lepiej LinkedIn lub Google Ads."
+    },
+    {
+      question: "Kiedy warto wybrać LinkedIn Ads?",
+      answer: "LinkedIn Ads to idealne rozwiązanie dla firm B2B, usług profesjonalnych, rekrutacji i branży technologicznej. Możesz targetować po stanowisku, branży, wielkości firmy czy umiejętnościach. Choć koszt za kliknięcie jest wyższy, leady są znacznie bardziej wartościowe niż na innych platformach."
     },
     {
       question: "Czym różnicie się od innych agencji reklamowych?",
@@ -157,12 +174,12 @@ const KampanieReklamowe = () => {
       answer: "Landing page znacząco zwiększa konwersję reklam (nawet 3-5x). Strona zoptymalizowana pod konkretną kampanię konwertuje lepiej niż zwykła strona firmowa. W pakietach Business i Premium możemy przygotować dedykowane strony docelowe."
     },
     {
-      question: "Jak działa remarketing?",
-      answer: "Remarketing to wyświetlanie reklam osobom, które już odwiedziły Twoją stronę lub weszły w interakcję z marką. Działamy cross-platform - osoba, która była na stronie, zobaczy Twoje reklamy zarówno w Google, jak i na Facebooku. To najskuteczniejsza forma reklamy z najwyższym ROI."
+      question: "Jak działa remarketing cross-platform?",
+      answer: "Remarketing to wyświetlanie reklam osobom, które już odwiedziły Twoją stronę. Działamy cross-platform - osoba, która była na stronie, zobaczy Twoje reklamy zarówno w Google, jak i na Facebooku, TikToku czy LinkedIn. To najskuteczniejsza forma reklamy z najwyższym ROI."
     },
     {
-      question: "Czy tworzycie materiały reklamowe?",
-      answer: "Tak, w ramach obsługi przygotowujemy grafiki, teksty reklamowe i krótkie wideo. Mamy własne studio produkcyjne, więc możemy tworzyć profesjonalne spoty reklamowe i materiały foto. Zobacz nasze realizacje wideo i spoty reklamowe."
+      question: "Czy tworzycie materiały reklamowe dla wszystkich platform?",
+      answer: "Tak, w ramach obsługi przygotowujemy grafiki, teksty reklamowe i wideo dostosowane do każdej platformy. Treści na TikToka wymagają innego podejścia niż na LinkedIn. Mamy własne studio produkcyjne, więc możemy tworzyć profesjonalne spoty i materiały foto."
     },
   ];
 
