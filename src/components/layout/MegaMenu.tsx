@@ -43,7 +43,9 @@ import {
   HelpCircle,
   Navigation,
   X,
-  Calculator
+  Calculator,
+  Zap,
+  Music2
 } from "lucide-react";
 
 // Import portfolio images for preview
@@ -79,10 +81,10 @@ const menuCategories: MenuCategory[] = [
     items: [
       { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers, tooltip: "Pełna obsługa marketingowa od A do Z" },
       { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Strategia digital i promocja online" },
-      { name: "Content Marketing", href: "/content-marketing", badge: "Nowe", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
+      { name: "Content Marketing", href: "/content-marketing", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
       { name: "Social Media", href: "/social-media", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
-      { name: "Facebook Ads", href: "/facebook-ads", icon: Facebook, tooltip: "Kampanie reklamowe Meta Ads" },
-      { name: "Google Ads", href: "/google-ads", icon: Target, tooltip: "Reklamy w wyszukiwarce Google" },
+      { name: "Kampanie Reklamowe", href: "/kampanie-reklamowe", badge: "Nowe", icon: Zap, tooltip: "Google Ads, Facebook Ads, TikTok Ads" },
+      { name: "TikTok Ads", href: "/tiktok-ads", icon: Music2, tooltip: "Reklamy na TikToku" },
     ],
   },
   {
