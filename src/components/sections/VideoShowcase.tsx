@@ -99,12 +99,12 @@ export function VideoShowcase() {
             className="max-w-4xl mx-auto"
           >
             <div className="relative aspect-[9/16] md:aspect-video rounded-2xl md:rounded-3xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10 group">
-              {/* Video placeholder/poster background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-card via-card/80 to-primary/20 flex items-center justify-center">
-                {!isInView && (
-                  <div className="w-12 h-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-                )}
-              </div>
+              {/* Video poster background */}
+              <img 
+                src="/fotz-reel-poster.jpg" 
+                alt="Fotz Studio showreel"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               
               {isInView && (
                 <video
@@ -114,6 +114,7 @@ export function VideoShowcase() {
                   loop
                   playsInline
                   preload="metadata"
+                  poster="/fotz-reel-poster.jpg"
                   className="w-full h-full object-cover relative z-10"
                   onPlay={() => setIsPlaying(true)}
                   onPause={() => setIsPlaying(false)}
