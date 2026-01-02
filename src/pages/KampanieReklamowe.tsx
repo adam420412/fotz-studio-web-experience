@@ -41,7 +41,7 @@ const KampanieReklamowe = () => {
       icon: Instagram, 
       title: "Instagram Ads", 
       description: "Angażuj odbiorców wizualnymi reklamami w Stories, Reels i feedzie",
-      href: "/facebook-ads",
+      href: "/instagram-ads",
       features: ["Stories Ads", "Reels Ads", "Shopping Ads"],
       color: "from-pink-500/20 to-purple-500/10",
       accent: "bg-pink-500/20 text-pink-400"
