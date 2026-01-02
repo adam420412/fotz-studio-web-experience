@@ -184,6 +184,10 @@ const KampanieReklamowe = () => {
       answer: "LinkedIn Ads to idealne rozwiązanie dla firm B2B, usług profesjonalnych, rekrutacji i branży technologicznej. Możesz targetować po stanowisku, branży, wielkości firmy czy umiejętnościach. Choć koszt za kliknięcie jest wyższy, leady są znacznie bardziej wartościowe niż na innych platformach."
     },
     {
+      question: "Jakie są zalety łączenia Facebook i Instagram Ads w jednej kampanii?",
+      answer: "Łączenie Facebook i Instagram Ads (Meta Ads) daje dostęp do wspólnej puli odbiorców i optymalizacji cross-platform. Reklamy automatycznie wyświetlają się tam, gdzie osiągają lepsze wyniki. Jeden Pixel śledzi konwersje z obu platform, a remarketing działa między nimi płynnie. To oszczędność czasu i wyższy ROAS dzięki szerszemu zasięgowi i lepszej optymalizacji. Więcej o synergii platform znajdziesz na naszej stronie Meta Ads."
+    },
+    {
       question: "Czym różnicie się od innych agencji reklamowych?",
       answer: "Łączymy kampanie reklamowe z całościową strategią marketingową - tworzymy landing page'e, materiały wideo, grafiki reklamowe. Nie tylko uruchamiamy reklamy, ale dbamy o całą ścieżkę klienta. Mamy własne studio produkcyjne, więc wszystko powstaje in-house."
     },
