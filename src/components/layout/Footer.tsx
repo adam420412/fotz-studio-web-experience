@@ -16,7 +16,8 @@ const footerLinks = {
   kampanie: [
     { name: "Google Ads", href: "/google-ads" },
     { name: "Facebook Ads", href: "/facebook-ads" },
-    { name: "Instagram Ads", href: "/facebook-ads" },
+    { name: "Instagram Ads", href: "/instagram-ads" },
+    { name: "Meta Ads (FB + IG)", href: "/facebook-instagram-ads" },
     { name: "TikTok Ads", href: "/tiktok-ads" },
     { name: "LinkedIn Ads", href: "/linkedin-ads" },
     { name: "YouTube Ads", href: "/youtube-ads" },
