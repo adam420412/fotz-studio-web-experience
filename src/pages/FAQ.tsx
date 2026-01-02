@@ -103,6 +103,11 @@ const faqCategories = [
         question: "Czy prowadzicie kampanie na TikToku i LinkedIn?",
         answer: "Tak, prowadzimy kampanie reklamowe na wszystkich głównych platformach: Meta Ads (Facebook/Instagram), Google Ads, TikTok Ads, LinkedIn Ads oraz YouTube Ads. Dobieramy platformy do Twojej grupy docelowej.",
       },
+      {
+        question: "Jakie są zalety łączenia Facebook i Instagram Ads?",
+        answer: "Łączenie Facebook i Instagram Ads w ramach Meta Ads daje dostęp do wspólnej puli odbiorców i automatycznej optymalizacji cross-platform. Jeden Pixel śledzi konwersje z obu platform, remarketing działa płynnie między nimi, a Advantage+ alokuje budżet tam, gdzie osiągasz najlepsze wyniki. Szczegóły znajdziesz na naszej stronie Meta Ads.",
+        link: "/facebook-instagram-ads"
+      },
     ],
   },
   {
@@ -265,6 +270,9 @@ export default function FAQ() {
                       </AccordionTrigger>
                       <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                         {faq.answer}
+                        {faq.link && (
+                          <> <Link to={faq.link} className="text-primary hover:underline">Dowiedz się więcej</Link>.</>
+                        )}
                       </AccordionContent>
                     </AccordionItem>
                   ))}

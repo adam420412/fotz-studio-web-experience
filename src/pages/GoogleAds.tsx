@@ -658,6 +658,48 @@ const GoogleAds = () => {
         </div>
       </section>
 
+      {/* Related Services */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Powiązane usługi
+            </h2>
+            <p className="text-muted-foreground">
+              Inne platformy reklamowe, które obsługujemy
+            </p>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[
+              { name: "Meta Ads (FB + IG)", href: "/facebook-instagram-ads", description: "Synergia Facebook i Instagram" },
+              { name: "TikTok Ads", href: "/tiktok-ads", description: "Viralowe kampanie wideo" },
+              { name: "LinkedIn Ads", href: "/linkedin-ads", description: "Leady B2B" },
+              { name: "YouTube Ads", href: "/youtube-ads", description: "Reklamy wideo" },
+            ].map((service) => (
+              <Link
+                key={service.name}
+                to={service.href}
+                className="group p-6 rounded-xl border border-border bg-card hover:border-green-500/50 transition-all"
+              >
+                <h3 className="font-semibold mb-2 group-hover:text-green-400 transition-colors">
+                  {service.name}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4">{service.description}</p>
+                <span className="text-green-400 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-green-600 to-yellow-600">
         <div className="container mx-auto px-4">
