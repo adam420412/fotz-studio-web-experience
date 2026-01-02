@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Play, Pause, Maximize2, X, Volume2, VolumeX } from "lucide-react";
 
@@ -6,8 +6,29 @@ export function VideoShowcase() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isInView, setIsInView] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const fullscreenVideoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Lazy load video when in viewport
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px", threshold: 0.01 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -44,14 +65,10 @@ export function VideoShowcase() {
 
   return (
     <>
-      <section className="py-16 md:py-24 bg-background relative overflow-hidden">
-        {/* Background effects */}
+      <section ref={containerRef} className="py-16 md:py-24 bg-background relative overflow-hidden">
+        {/* Background effects - simplified for performance */}
         <div className="absolute inset-0 pointer-events-none">
-          <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
+          <div 
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full blur-[200px]"
             style={{ background: "hsla(336, 71%, 27%, 0.15)" }}
           />
@@ -82,33 +99,40 @@ export function VideoShowcase() {
             className="max-w-4xl mx-auto"
           >
             <div className="relative aspect-[9/16] md:aspect-video rounded-2xl md:rounded-3xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10 group">
-              <video
-                ref={videoRef}
-                src="/videos/fotz-reel.mp4"
-                muted={isMuted}
-                loop
-                playsInline
-                poster="/videos/fotz-reel.mp4#t=0.1"
-                className="w-full h-full object-cover"
-                onPlay={() => setIsPlaying(true)}
-                onPause={() => setIsPlaying(false)}
-              />
+              {/* Video placeholder/poster background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-card via-card/80 to-primary/20 flex items-center justify-center">
+                {!isInView && (
+                  <div className="w-12 h-12 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
+                )}
+              </div>
+              
+              {isInView && (
+                <video
+                  ref={videoRef}
+                  src="/videos/fotz-reel.mp4"
+                  muted={isMuted}
+                  loop
+                  playsInline
+                  preload="metadata"
+                  className="w-full h-full object-cover relative z-10"
+                  onPlay={() => setIsPlaying(true)}
+                  onPause={() => setIsPlaying(false)}
+                />
+              )}
               
               {/* Play button overlay - center */}
-              <motion.div 
+              <div 
                 className={`absolute inset-0 flex items-center justify-center z-20 transition-opacity duration-300 ${
                   isPlaying ? "opacity-0 pointer-events-none" : "opacity-100"
                 }`}
               >
-                <motion.button 
+                <button 
                   onClick={togglePlay}
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-2xl shadow-primary/30 cursor-pointer"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center shadow-2xl shadow-primary/30 cursor-pointer hover:scale-110 active:scale-95 transition-transform"
                 >
                   <Play className="w-8 h-8 md:w-10 md:h-10 text-primary-foreground ml-1" fill="currentColor" />
-                </motion.button>
-              </motion.div>
+                </button>
+              </div>
 
               {/* Control bar - bottom */}
               <div className={`absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background/80 to-transparent z-20 transition-opacity duration-300 ${
@@ -117,43 +141,37 @@ export function VideoShowcase() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     {/* Play/Pause */}
-                    <motion.button
+                    <button
                       onClick={togglePlay}
-                      className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-colors"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
+                      className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-all hover:scale-110 active:scale-95"
                     >
                       {isPlaying ? (
                         <Pause className="w-4 h-4 text-foreground" />
                       ) : (
                         <Play className="w-4 h-4 text-foreground ml-0.5" fill="currentColor" />
                       )}
-                    </motion.button>
+                    </button>
 
                     {/* Mute/Unmute */}
-                    <motion.button
+                    <button
                       onClick={toggleMute}
-                      className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-colors"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
+                      className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-all hover:scale-110 active:scale-95"
                     >
                       {isMuted ? (
                         <VolumeX className="w-4 h-4 text-foreground" />
                       ) : (
                         <Volume2 className="w-4 h-4 text-foreground" />
                       )}
-                    </motion.button>
+                    </button>
                   </div>
 
                   {/* Fullscreen */}
-                  <motion.button
+                  <button
                     onClick={openFullscreen}
-                    className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-colors"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
+                    className="w-10 h-10 rounded-full bg-foreground/10 hover:bg-foreground/20 backdrop-blur-sm flex items-center justify-center transition-all hover:scale-110 active:scale-95"
                   >
                     <Maximize2 className="w-4 h-4 text-foreground" />
-                  </motion.button>
+                  </button>
                 </div>
               </div>
 

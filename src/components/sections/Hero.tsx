@@ -32,14 +32,15 @@ export function Hero() {
       {/* Video Background with Parallax */}
       <motion.div className="absolute inset-0 z-0" style={{ scale }}>
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
+        {/* Static gradient background as poster replacement */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-primary/20" />
         <video
           autoPlay
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           className="w-full h-full object-cover"
-          poster="/hero-video-poster.jpg"
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
@@ -94,24 +95,23 @@ export function Hero() {
           }}
         />
 
-        {/* Floating particles */}
-        {[...Array(15)].map((_, i) => (
+        {/* Floating particles - reduced for performance */}
+        {[...Array(6)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-primary/40 rounded-full"
             style={{
-              left: `${10 + Math.random() * 80}%`,
-              top: `${10 + Math.random() * 80}%`,
+              left: `${15 + i * 15}%`,
+              top: `${20 + (i % 3) * 25}%`,
             }}
             animate={{
-              y: [0, -80, 0],
+              y: [0, -60, 0],
               opacity: [0, 1, 0],
-              scale: [0, 1.5, 0],
             }}
             transition={{
-              duration: 4 + Math.random() * 4,
+              duration: 5 + i,
               repeat: Infinity,
-              delay: Math.random() * 5,
+              delay: i * 0.8,
               ease: "easeInOut",
             }}
           />
