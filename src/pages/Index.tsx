@@ -48,8 +48,8 @@ const Index = () => {
           name="description" 
           content="Agencja marketingowa i reklamowa - Twój partner marketingowy. Kompleksowe strategie marketingowe, kampanie dla firm, content i skuteczny marketing dla Twojego klienta." 
         />
-        {/* Preload critical resources */}
-        <link rel="preload" href="/hero-video.mp4" as="video" type="video/mp4" />
+        {/* Preload critical LCP image */}
+        <link rel="preload" href="/hero-poster.jpg" as="image" />
       </Helmet>
       <OrganizationSchema />
       <WebPageSchema 
