@@ -47,6 +47,15 @@ const KampanieReklamowe = () => {
       accent: "bg-pink-500/20 text-pink-400"
     },
     { 
+      icon: Layers, 
+      title: "Meta Ads (FB + IG)", 
+      description: "Wykorzystaj pełną synergię ekosystemu Meta - Facebook i Instagram w jednej strategii",
+      href: "/facebook-instagram-ads",
+      features: ["Cross-platform", "Unified Audiences", "Full Funnel"],
+      color: "from-indigo-500/20 to-pink-500/10",
+      accent: "bg-indigo-500/20 text-indigo-400"
+    },
+    { 
       icon: Music2, 
       title: "TikTok Ads", 
       description: "Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo",
