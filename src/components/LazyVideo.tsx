@@ -56,8 +56,15 @@ export function LazyVideo({
     
     // Try to match video name to a poster
     if (src.includes('enea-stadion')) return '/videos/enea-stadion-poster.jpg';
-    if (src.includes('skaland') || src.includes('real-estate')) return '/videos/real-estate-poster.jpg';
-    if (src.includes('social') || src.includes('autospa')) return '/videos/social-media-poster.jpg';
+    if (src.includes('skaland-osiedle')) return '/videos/skaland-osiedle-poster.jpg';
+    if (src.includes('autospa')) return '/videos/autospa-poster.jpg';
+    if (src.includes('eko-kamionki')) return '/videos/eko-kamionki-poster.jpg';
+    if (src.includes('fps-poznan')) return '/videos/fps-poznan-poster.jpg';
+    if (src.includes('fun-sport')) return '/videos/fun-sport-stylish-poster.jpg';
+    if (src.includes('sequence')) return '/videos/sequence-01-poster.jpg';
+    if (src.includes('fotz-reel')) return '/videos/fotz-reel-poster.jpg';
+    if (src.includes('social')) return '/videos/social-media-poster.jpg';
+    if (src.includes('real-estate')) return '/videos/real-estate-poster.jpg';
     
     return undefined;
   };
