@@ -4,10 +4,11 @@ import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
-import { ModelViewer3D } from "@/components/ModelViewer3D";
+
+const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
 
 // Import case study images
 import vertheImage from "@/assets/portfolio/verthe.png";
@@ -483,11 +484,13 @@ export default function DlaKogoEcommerce() {
             className="max-w-4xl mx-auto"
           >
             <div className="rounded-2xl overflow-hidden border border-border/50 shadow-2xl shadow-primary/10">
-              <ModelViewer3D 
-                modelUrl="/models/regulator-3d.glb" 
-                title="Konfigurator produktu 3D" 
-                description="Przykład interaktywnego konfiguratora - obracaj modelem myszką lub dotykiem" 
-              />
+              <Suspense fallback={<div className="aspect-video bg-muted animate-pulse flex items-center justify-center"><span className="text-muted-foreground">Ładowanie modelu 3D...</span></div>}>
+                <ModelViewer3D 
+                  modelUrl="/models/regulator-3d.glb" 
+                  title="Konfigurator produktu 3D" 
+                  description="Przykład interaktywnego konfiguratora - obracaj modelem myszką lub dotykiem" 
+                />
+              </Suspense>
             </div>
             
             <div className="mt-8 text-center">
