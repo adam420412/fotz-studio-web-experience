@@ -241,19 +241,21 @@ function WhyUsCard({ item, index }: { item: any; index: number }) {
         </div>
 
         {/* Expand button */}
-        <motion.button
-          onClick={() => setIsExpanded(!isExpanded)}
-          className="mt-4 text-sm text-primary flex items-center gap-1 hover:gap-2 transition-all"
-          whileHover={{ x: 3 }}
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsExpanded(!isExpanded);
+          }}
+          className="relative z-20 mt-4 text-sm text-primary flex items-center gap-1 hover:gap-2 transition-all cursor-pointer"
         >
-          {isExpanded ? t("Zwiń", "Collapse") : t("Rozwiń", "Expand")}
+          {isExpanded ? "Zwiń" : "Rozwiń"}
           <motion.span
             animate={{ rotate: isExpanded ? 90 : 0 }}
             transition={{ duration: 0.3 }}
           >
             <ArrowRight className="w-4 h-4" />
           </motion.span>
-        </motion.button>
+        </button>
 
         {/* Animated bullet points */}
         <motion.div
