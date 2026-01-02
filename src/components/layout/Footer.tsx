@@ -73,10 +73,10 @@ export function Footer() {
                 to="/"
                 className="inline-block mb-4"
               >
-                <img 
+              <img 
                   src={logoFotz} 
                   alt="Fotz Studio" 
-                  className="h-16 sm:h-20 md:h-24 lg:h-32 w-auto"
+                  className="h-20 sm:h-24 md:h-28 lg:h-36 w-auto"
                 />
               </Link>
               <p className="text-muted-foreground text-sm md:text-base mb-4 md:mb-6 max-w-sm">
