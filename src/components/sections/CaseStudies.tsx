@@ -5,6 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
+import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
+import rppgImg from "@/assets/portfolio/rppg.png";
 
 const caseStudies = [
   {
@@ -29,10 +31,10 @@ const caseStudies = [
     category: "Strony www",
     description:
       "Nowoczesna strona internetowa dla historycznej fabryki pojazdów szynowych z Poznania.",
-    image: "https://fotz.pl/wp-content/uploads/2024/10/Cegielski-Mockup-Strona-Internetowa.png",
+    image: fpsCegielskiImg,
     video: false,
     featured: false,
-    hasCase: false,
+    hasCase: true,
     color: "from-purple-500/20 to-pink-500/10",
   },
   {
@@ -41,10 +43,10 @@ const caseStudies = [
     category: "Branding & Strategia",
     description:
       "Kompleksowy rebranding i nowa identyfikacja wizualna dla Rady Polskich Przedsiębiorców Globalnych.",
-    image: "https://fotz.pl/wp-content/uploads/2025/09/243-900x604.png",
+    image: rppgImg,
     video: false,
     featured: false,
-    hasCase: false,
+    hasCase: true,
     color: "from-blue-500/20 to-cyan-500/10",
   },
 ];
