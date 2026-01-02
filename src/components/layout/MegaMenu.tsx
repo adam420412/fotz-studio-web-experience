@@ -46,7 +46,8 @@ import {
   Calculator,
   Zap,
   Music2,
-  Youtube
+  Youtube,
+  Instagram
 } from "lucide-react";
 
 // Import portfolio images for preview
@@ -85,6 +86,7 @@ const menuCategories: MenuCategory[] = [
       { name: "Content Marketing", href: "/content-marketing", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
       { name: "Social Media", href: "/social-media", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
       { name: "Kampanie Reklamowe", href: "/kampanie-reklamowe", badge: "Nowe", icon: Zap, tooltip: "Google, Facebook, TikTok, LinkedIn, YouTube Ads" },
+      { name: "Instagram Ads", href: "/instagram-ads", icon: Instagram, tooltip: "Reklamy wizualne na Instagramie" },
       { name: "TikTok Ads", href: "/tiktok-ads", icon: Music2, tooltip: "Reklamy na TikToku" },
       { name: "LinkedIn Ads", href: "/linkedin-ads", icon: Briefcase, tooltip: "Kampanie B2B na LinkedIn" },
       { name: "YouTube Ads", href: "/youtube-ads", icon: Youtube, tooltip: "Reklamy wideo na YouTube" },
