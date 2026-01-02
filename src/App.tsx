@@ -101,6 +101,7 @@ import TikTokAds from "./pages/TikTokAds";
 import LinkedInAds from "./pages/LinkedInAds";
 import YouTubeAds from "./pages/YouTubeAds";
 import InstagramAds from "./pages/InstagramAds";
+import FacebookInstagramAds from "./pages/FacebookInstagramAds";
 import IdentyfikacjaWizualna from "./pages/IdentyfikacjaWizualna";
 import AgencjaGraficzna from "./pages/AgencjaGraficzna";
 import EcommerceTworzenie from "./pages/EcommerceTworzenie";
@@ -219,6 +220,7 @@ const App = () => (
             <Route path="/linkedin-ads" element={<LinkedInAds />} />
             <Route path="/youtube-ads" element={<YouTubeAds />} />
             <Route path="/instagram-ads" element={<InstagramAds />} />
+            <Route path="/facebook-instagram-ads" element={<FacebookInstagramAds />} />
             <Route path="/identyfikacja-wizualna" element={<IdentyfikacjaWizualna />} />
             <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
             <Route path="/ecommerce-tworzenie-sklepu" element={<EcommerceTworzenie />} />
