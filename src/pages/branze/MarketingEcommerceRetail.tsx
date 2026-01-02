@@ -4,11 +4,12 @@ import { ShoppingCart, ArrowRight, CheckCircle, Package, Camera, TrendingUp, Cre
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import { ModelViewer3D } from "@/components/ModelViewer3D";
+
+const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
 import friendlyGasImg from "@/assets/portfolio/friendly-gas-new.png";
 
 const services = [
@@ -234,9 +235,11 @@ const MarketingEcommerceRetail = () => {
               className="relative"
             >
               <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-muted to-muted/50 border border-border/30">
-                <ModelViewer3D 
-                  modelUrl="/models/regulator-3d.glb"
-                />
+                <Suspense fallback={<div className="w-full h-full bg-muted animate-pulse flex items-center justify-center"><span className="text-muted-foreground">Ładowanie...</span></div>}>
+                  <ModelViewer3D 
+                    modelUrl="/models/regulator-3d.glb"
+                  />
+                </Suspense>
               </div>
               <p className="text-center text-foreground/60 text-sm mt-4">
                 Obracaj model 3D myszką lub palcem
