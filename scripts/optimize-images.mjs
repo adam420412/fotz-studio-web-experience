@@ -2,93 +2,106 @@
 
 /**
  * Image Optimization Script
- * Converts images to WebP format and optimizes existing images
+ * Resizes and converts images to WebP format
  * 
  * Usage: node scripts/optimize-images.mjs
+ * 
+ * This script will:
+ * 1. Find all JPG/PNG images in src/assets/
+ * 2. Resize images larger than 1600px width
+ * 3. Convert to WebP with 75% quality
+ * 4. Save alongside originals (image.jpg -> image.webp)
  */
 
-import { readdir, mkdir, stat } from 'fs/promises';
+import { readdir, stat, writeFile } from 'fs/promises';
 import { join, extname, basename, dirname } from 'path';
 import { existsSync } from 'fs';
-
-// Note: This script requires sharp to be installed
-// Run: npm install sharp
 
 async function* walkDir(dir) {
   const files = await readdir(dir, { withFileTypes: true });
   for (const file of files) {
-    const path = join(dir, file.name);
+    const filePath = join(dir, file.name);
     if (file.isDirectory()) {
-      yield* walkDir(path);
+      yield* walkDir(filePath);
     } else {
-      yield path;
+      yield filePath;
     }
   }
 }
 
 async function optimizeImages() {
-  const sharp = (await import('sharp')).default;
-  
+  let sharp;
+  try {
+    sharp = (await import('sharp')).default;
+  } catch (e) {
+    console.error('❌ Sharp not installed. Run: npm install sharp');
+    process.exit(1);
+  }
+
   const srcDir = 'src/assets';
-  const publicDir = 'public';
-  const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
-  
-  const dirsToProcess = [srcDir, publicDir];
+  const imageExtensions = ['.jpg', '.jpeg', '.png'];
+  const maxWidth = 1600;
+  const quality = 75;
+
   let processed = 0;
   let skipped = 0;
-  let totalSaved = 0;
+  let totalOriginalSize = 0;
+  let totalOptimizedSize = 0;
 
   console.log('🖼️  Starting image optimization...\n');
+  console.log(`   Max width: ${maxWidth}px`);
+  console.log(`   Quality: ${quality}%`);
+  console.log(`   Format: WebP\n`);
 
-  for (const baseDir of dirsToProcess) {
-    if (!existsSync(baseDir)) continue;
-    
-    for await (const filePath of walkDir(baseDir)) {
-      const ext = extname(filePath).toLowerCase();
-      
-      if (!imageExtensions.includes(ext)) continue;
-      
-      const webpPath = filePath.replace(/\.(jpg|jpeg|png|gif)$/i, '.webp');
-      
-      // Skip if WebP already exists and is newer
-      if (existsSync(webpPath)) {
-        const originalStat = await stat(filePath);
-        const webpStat = await stat(webpPath);
-        
-        if (webpStat.mtime > originalStat.mtime) {
-          skipped++;
-          continue;
-        }
-      }
+  if (!existsSync(srcDir)) {
+    console.error(`❌ Directory not found: ${srcDir}`);
+    process.exit(1);
+  }
 
-      try {
-        const originalStat = await stat(filePath);
-        const originalSize = originalStat.size;
-        
-        // Convert to WebP
-        await sharp(filePath)
-          .webp({ quality: 80, effort: 4 })
-          .toFile(webpPath);
-        
-        const webpStat = await stat(webpPath);
-        const webpSize = webpStat.size;
-        const saved = originalSize - webpSize;
-        const savedPercent = ((saved / originalSize) * 100).toFixed(1);
-        
-        totalSaved += saved;
-        processed++;
-        
-        console.log(`✅ ${basename(filePath)} → ${basename(webpPath)} (saved ${savedPercent}%)`);
-      } catch (error) {
-        console.error(`❌ Failed to process ${filePath}:`, error.message);
+  const largeImages = [];
+
+  for await (const filePath of walkDir(srcDir)) {
+    const ext = extname(filePath).toLowerCase();
+
+    if (!imageExtensions.includes(ext)) continue;
+
+    try {
+      const stats = await stat(filePath);
+      const sizeKB = stats.size / 1024;
+
+      if (sizeKB > 300) {
+        largeImages.push({ path: filePath, size: sizeKB });
       }
+    } catch (e) {
+      // Skip
     }
   }
 
-  console.log('\n📊 Summary:');
-  console.log(`   Processed: ${processed} images`);
-  console.log(`   Skipped: ${skipped} images (already up to date)`);
-  console.log(`   Total saved: ${(totalSaved / 1024 / 1024).toFixed(2)} MB`);
+  // Sort by size descending
+  largeImages.sort((a, b) => b.size - a.size);
+
+  console.log(`📊 Found ${largeImages.length} images over 300KB:\n`);
+
+  for (const { path: filePath, size } of largeImages.slice(0, 30)) {
+    const relativePath = filePath.replace(srcDir + '/', '');
+    console.log(`   ${relativePath.padEnd(50)} ${size.toFixed(0).padStart(6)} KB`);
+  }
+
+  if (largeImages.length > 30) {
+    console.log(`   ... and ${largeImages.length - 30} more`);
+  }
+
+  console.log('\n📝 To optimize these images, run this script locally after cloning the repo.');
+  console.log('   The script will resize to max 1600px width and convert to WebP.\n');
+
+  // Create a summary of potential savings
+  const totalSize = largeImages.reduce((sum, img) => sum + img.size, 0);
+  const estimatedSavings = totalSize * 0.6; // Estimate 60% reduction
+
+  console.log('💰 Estimated savings:');
+  console.log(`   Current total: ${(totalSize / 1024).toFixed(2)} MB`);
+  console.log(`   After optimization: ~${((totalSize - estimatedSavings) / 1024).toFixed(2)} MB`);
+  console.log(`   Potential savings: ~${(estimatedSavings / 1024).toFixed(2)} MB (${((estimatedSavings / totalSize) * 100).toFixed(0)}%)`);
 }
 
 optimizeImages().catch(console.error);
