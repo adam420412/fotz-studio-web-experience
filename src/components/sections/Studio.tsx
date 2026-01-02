@@ -5,6 +5,8 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { ScrollRevealText, FloatingWords, TypewriterText } from "@/components/AnimatedText";
 import { cn } from "@/lib/utils";
+import officeLounge from "@/assets/office/office-lounge.webp";
+import officeWorkspace from "@/assets/office/office-workspace.webp";
 
 const features = [
   {
@@ -221,7 +223,7 @@ export function Studio() {
             >
               <div className="relative h-full rounded-2xl overflow-hidden border border-border/30">
                 <img
-                  src="https://fotz.pl/wp-content/uploads/2023/02/DSC05712.jpeg"
+                  src={officeLounge}
                   alt="Biuro Fotz Studio"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -278,8 +280,8 @@ export function Studio() {
             >
               <div className="aspect-square rounded-2xl overflow-hidden border border-border/30 relative">
                 <img
-                  src="https://fotz.pl/wp-content/uploads/2024/10/Cegielski-Mockup-Strona-Internetowa.png"
-                  alt="Realizacja Fotz Studio"
+                  src={officeWorkspace}
+                  alt="Workspace Fotz Studio"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 
