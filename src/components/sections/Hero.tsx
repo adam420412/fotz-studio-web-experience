@@ -32,14 +32,13 @@ export function Hero() {
       {/* Video Background with Parallax */}
       <motion.div className="absolute inset-0 z-0" style={{ scale }}>
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
-        {/* Static gradient background as poster replacement */}
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-primary/20" />
         <video
           autoPlay
           loop
           muted
           playsInline
           preload="metadata"
+          poster="/hero-poster.jpg"
           className="w-full h-full object-cover"
         >
           <source src="/hero-video.mp4" type="video/mp4" />

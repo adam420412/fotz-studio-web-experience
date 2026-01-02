@@ -1,20 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
-import { VideoShowcase } from "@/components/sections/VideoShowcase";
-import { WhyUs } from "@/components/sections/WhyUs";
-import { Services } from "@/components/sections/Services";
-import { Process } from "@/components/sections/Process";
-import { CaseStudies } from "@/components/sections/CaseStudies";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { Clients } from "@/components/sections/Clients";
-import { Studio } from "@/components/sections/Studio";
-import { HomeFAQ } from "@/components/sections/HomeFAQ";
-import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Preloader } from "@/components/Preloader";
 import { OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
-import { OfficeGallery } from "@/components/sections/OfficeGallery";
+
+// Lazy load sections below the fold for better LCP
+const VideoShowcase = lazy(() => import("@/components/sections/VideoShowcase").then(m => ({ default: m.VideoShowcase })));
+const WhyUs = lazy(() => import("@/components/sections/WhyUs").then(m => ({ default: m.WhyUs })));
+const Services = lazy(() => import("@/components/sections/Services").then(m => ({ default: m.Services })));
+const Process = lazy(() => import("@/components/sections/Process").then(m => ({ default: m.Process })));
+const CaseStudies = lazy(() => import("@/components/sections/CaseStudies").then(m => ({ default: m.CaseStudies })));
+const Testimonials = lazy(() => import("@/components/sections/Testimonials").then(m => ({ default: m.Testimonials })));
+const Clients = lazy(() => import("@/components/sections/Clients").then(m => ({ default: m.Clients })));
+const OfficeGallery = lazy(() => import("@/components/sections/OfficeGallery").then(m => ({ default: m.OfficeGallery })));
+const Studio = lazy(() => import("@/components/sections/Studio").then(m => ({ default: m.Studio })));
+const HomeFAQ = lazy(() => import("@/components/sections/HomeFAQ").then(m => ({ default: m.HomeFAQ })));
+const FinalCTA = lazy(() => import("@/components/sections/FinalCTA").then(m => ({ default: m.FinalCTA })));
+
+// Minimal loading fallback
+const SectionLoader = () => (
+  <div className="py-24 flex items-center justify-center">
+    <div className="w-8 h-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
+  </div>
+);
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,6 +48,8 @@ const Index = () => {
           name="description" 
           content="Agencja marketingowa i reklamowa - Twój partner marketingowy. Kompleksowe strategie marketingowe, kampanie dla firm, content i skuteczny marketing dla Twojego klienta." 
         />
+        {/* Preload critical resources */}
+        <link rel="preload" href="/hero-video.mp4" as="video" type="video/mp4" />
       </Helmet>
       <OrganizationSchema />
       <WebPageSchema 
@@ -49,17 +60,39 @@ const Index = () => {
       {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <Layout>
         <Hero />
-        <VideoShowcase />
-        <WhyUs />
-        <Services />
-        <Process />
-        <CaseStudies />
-        <Testimonials />
-        <Clients />
-        <OfficeGallery />
-        <Studio />
-        <HomeFAQ />
-        <FinalCTA />
+        <Suspense fallback={<SectionLoader />}>
+          <VideoShowcase />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <WhyUs />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Services />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Process />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <CaseStudies />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Testimonials />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Clients />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <OfficeGallery />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <Studio />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <HomeFAQ />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <FinalCTA />
+        </Suspense>
       </Layout>
     </>
   );
