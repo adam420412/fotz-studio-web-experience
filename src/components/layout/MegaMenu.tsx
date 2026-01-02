@@ -86,6 +86,7 @@ const menuCategories: MenuCategory[] = [
       { name: "Content Marketing", href: "/content-marketing", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
       { name: "Social Media", href: "/social-media", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
       { name: "Kampanie Reklamowe", href: "/kampanie-reklamowe", badge: "Nowe", icon: Zap, tooltip: "Google, Facebook, TikTok, LinkedIn, YouTube Ads" },
+      { name: "Meta Ads (FB + IG)", href: "/facebook-instagram-ads", icon: Layers, tooltip: "Reklamy na Facebooku i Instagramie" },
       { name: "Instagram Ads", href: "/instagram-ads", icon: Instagram, tooltip: "Reklamy wizualne na Instagramie" },
       { name: "TikTok Ads", href: "/tiktok-ads", icon: Music2, tooltip: "Reklamy na TikToku" },
       { name: "LinkedIn Ads", href: "/linkedin-ads", icon: Briefcase, tooltip: "Kampanie B2B na LinkedIn" },
