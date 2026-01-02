@@ -24,34 +24,43 @@ const KampanieReklamowe = () => {
       title: "Google Ads", 
       description: "Docieraj do klientów aktywnie szukających Twoich usług w wyszukiwarce Google",
       href: "/google-ads",
-      features: ["Sieć wyszukiwania", "Google Shopping", "YouTube Ads", "Performance Max"],
+      features: ["Sieć wyszukiwania", "Google Shopping", "Performance Max"],
       color: "from-green-500/20 to-yellow-500/10",
       accent: "bg-green-500/20 text-green-400"
     },
     { 
       icon: Facebook, 
-      title: "Facebook & Instagram Ads", 
+      title: "Facebook Ads", 
       description: "Buduj świadomość marki i docieraj do idealnych klientów na podstawie zainteresowań",
       href: "/facebook-ads",
-      features: ["Feed & Stories", "Reels Ads", "Lead Ads", "Remarketing"],
+      features: ["Feed & Stories", "Lead Ads", "Remarketing"],
       color: "from-blue-500/20 to-purple-500/10",
       accent: "bg-blue-500/20 text-blue-400"
+    },
+    { 
+      icon: Instagram, 
+      title: "Instagram Ads", 
+      description: "Angażuj odbiorców wizualnymi reklamami w Stories, Reels i feedzie",
+      href: "/facebook-ads",
+      features: ["Stories Ads", "Reels Ads", "Shopping Ads"],
+      color: "from-pink-500/20 to-purple-500/10",
+      accent: "bg-pink-500/20 text-pink-400"
     },
     { 
       icon: Music2, 
       title: "TikTok Ads", 
       description: "Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo",
       href: "/tiktok-ads",
-      features: ["In-Feed Ads", "Spark Ads", "Branded Hashtag", "Influencer Marketing"],
-      color: "from-pink-500/20 to-cyan-500/10",
-      accent: "bg-pink-500/20 text-pink-400"
+      features: ["In-Feed Ads", "Spark Ads", "Branded Hashtag"],
+      color: "from-cyan-500/20 to-pink-500/10",
+      accent: "bg-cyan-500/20 text-cyan-400"
     },
     { 
       icon: Briefcase, 
       title: "LinkedIn Ads", 
       description: "Docieraj do decydentów B2B i generuj wartościowe leady biznesowe",
       href: "/linkedin-ads",
-      features: ["Sponsored Content", "Message Ads", "Lead Gen Forms", "ABM"],
+      features: ["Sponsored Content", "Message Ads", "Lead Gen Forms"],
       color: "from-sky-500/20 to-blue-500/10",
       accent: "bg-sky-500/20 text-sky-400"
     },
@@ -60,7 +69,7 @@ const KampanieReklamowe = () => {
       title: "YouTube Ads", 
       description: "Buduj świadomość marki dzięki profesjonalnym reklamom wideo",
       href: "/youtube-ads",
-      features: ["TrueView In-Stream", "Bumper Ads", "YouTube Shorts", "Masthead"],
+      features: ["TrueView In-Stream", "Bumper Ads", "YouTube Shorts"],
       color: "from-red-500/20 to-orange-500/10",
       accent: "bg-red-500/20 text-red-400"
     },
@@ -122,7 +131,7 @@ const KampanieReklamowe = () => {
       features: [
         "Wszystkie platformy reklamowe",
         "Budżet reklamowy bez limitu",
-        "YouTube + TikTok Ads",
+        "YouTube + TikTok + LinkedIn Ads",
         "Produkcja materiałów wideo",
         "Dedykowany opiekun kampanii",
         "Automatyzacja i AI",
@@ -269,7 +278,7 @@ const KampanieReklamowe = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {platforms.map((platform, index) => (
               <motion.div
                 key={index}

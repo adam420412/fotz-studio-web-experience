@@ -10,13 +10,16 @@ const footerLinks = {
     { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu" },
     { name: "Social Media", href: "/social-media" },
     { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
+    { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
+    { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
+  ],
+  kampanie: [
     { name: "Google Ads", href: "/google-ads" },
     { name: "Facebook Ads", href: "/facebook-ads" },
+    { name: "Instagram Ads", href: "/facebook-ads" },
     { name: "TikTok Ads", href: "/tiktok-ads" },
     { name: "LinkedIn Ads", href: "/linkedin-ads" },
     { name: "YouTube Ads", href: "/youtube-ads" },
-    { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
-    { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
   ],
   dlaKogo: [
     { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
@@ -62,7 +65,7 @@ export function Footer() {
       {/* Main Footer */}
       <div className="section-padding py-10 md:py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10">
             {/* Brand Column */}
             <div className="col-span-2 md:col-span-2 lg:col-span-1">
               <Link
@@ -126,6 +129,22 @@ export function Footer() {
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Usługi</h4>
               <ul className="space-y-2 md:space-y-3">
                 {footerLinks.uslugi.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+            </div>
+
+            <div>
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Kampanie Reklamowe</h4>
+              <ul className="space-y-2 md:space-y-3">
+                {footerLinks.kampanie.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
