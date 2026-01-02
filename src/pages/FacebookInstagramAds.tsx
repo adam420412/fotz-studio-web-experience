@@ -456,6 +456,41 @@ export default function FacebookInstagramAds() {
         </div>
       </section>
 
+      {/* Related Services Section */}
+      <section className="py-16 md:py-24 bg-secondary/30">
+        <div className="container-wide">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Powiązane usługi</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Poznaj inne platformy reklamowe, które możemy dla Ciebie obsłużyć.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+            {[
+              { name: "Google Ads", href: "/google-ads", description: "Docieraj do klientów szukających Twoich usług" },
+              { name: "TikTok Ads", href: "/tiktok-ads", description: "Angażuj młodą grupę docelową" },
+              { name: "LinkedIn Ads", href: "/linkedin-ads", description: "Generuj leady B2B" },
+              { name: "YouTube Ads", href: "/youtube-ads", description: "Buduj świadomość marki wideo" },
+            ].map((service) => (
+              <Link
+                key={service.name}
+                to={service.href}
+                className="group p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-all"
+              >
+                <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">
+                  {service.name}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4">{service.description}</p>
+                <span className="text-primary text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                  Dowiedz się więcej <ArrowRight className="w-4 h-4" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ContactSection />
     </Layout>
   );

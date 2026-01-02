@@ -185,7 +185,8 @@ const KampanieReklamowe = () => {
     },
     {
       question: "Jakie są zalety łączenia Facebook i Instagram Ads w jednej kampanii?",
-      answer: "Łączenie Facebook i Instagram Ads (Meta Ads) daje dostęp do wspólnej puli odbiorców i optymalizacji cross-platform. Reklamy automatycznie wyświetlają się tam, gdzie osiągają lepsze wyniki. Jeden Pixel śledzi konwersje z obu platform, a remarketing działa między nimi płynnie. To oszczędność czasu i wyższy ROAS dzięki szerszemu zasięgowi i lepszej optymalizacji. Więcej o synergii platform znajdziesz na naszej stronie Meta Ads."
+      answer: "Łączenie Facebook i Instagram Ads (Meta Ads) daje dostęp do wspólnej puli odbiorców i optymalizacji cross-platform. Reklamy automatycznie wyświetlają się tam, gdzie osiągają lepsze wyniki. Jeden Pixel śledzi konwersje z obu platform, a remarketing działa między nimi płynnie. To oszczędność czasu i wyższy ROAS dzięki szerszemu zasięgowi i lepszej optymalizacji.",
+      hasLink: true
     },
     {
       question: "Czym różnicie się od innych agencji reklamowych?",
@@ -508,6 +509,9 @@ const KampanieReklamowe = () => {
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-4">
                     {item.answer}
+                    {item.hasLink && (
+                      <> Więcej o synergii platform znajdziesz na naszej <Link to="/facebook-instagram-ads" className="text-primary hover:underline">stronie Meta Ads</Link>.</>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}
