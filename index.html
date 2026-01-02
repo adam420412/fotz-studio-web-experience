@@ -21,38 +21,92 @@
     <meta name="twitter:description" content="Projektujemy marketing, który realnie pozyskuje klientów." />
     <meta name="twitter:image" content="https://fotz.pl/og-image.jpg" />
 
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MarketingAgency",
       "name": "Fotz Studio",
       "url": "https://fotz.pl",
-      "logo": "https://fotz.pl/logo.png",
-      "description": "Agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów.",
+      "logo": "https://fotz.pl/logo-fotz.jpg",
+      "image": "https://fotz.pl/og-image.jpg",
+      "description": "Agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Plac Wolności 16",
         "addressLocality": "Poznań",
         "postalCode": "61-739",
+        "addressRegion": "Wielkopolskie",
         "addressCountry": "PL"
       },
-      "telephone": "+48123456789",
-      "email": "hello@fotz.pl",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "52.4082",
+        "longitude": "16.9194"
+      },
+      "telephone": "+48790814814",
+      "email": "adam@fotz.pl",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
       "sameAs": [
-        "https://instagram.com/fotzstudio",
+        "https://instagram.com/fotz.studio",
         "https://facebook.com/fotzstudio",
         "https://linkedin.com/company/fotzstudio"
       ],
-      "areaServed": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 52.4082,
-          "longitude": 16.9194
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Poznań"
         },
-        "geoRadius": "100000"
-      },
-      "serviceType": ["Marketing", "Web Design", "Social Media", "Advertising"]
+        {
+          "@type": "Country",
+          "name": "Polska"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Usługi marketingowe",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Strony internetowe",
+              "url": "https://fotz.pl/strony-internetowe"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Social Media Marketing",
+              "url": "https://fotz.pl/social-media"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Kampanie reklamowe",
+              "url": "https://fotz.pl/kampanie-reklamowe"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO / Pozycjonowanie",
+              "url": "https://fotz.pl/pozycjonowanie"
+            }
+          }
+        ]
+      }
     }
     </script>
   </head>
