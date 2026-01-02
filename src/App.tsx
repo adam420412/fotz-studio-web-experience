@@ -112,6 +112,7 @@ import Kariera from "./pages/Kariera";
 import FAQ from "./pages/FAQ";
 import Cennik from "./pages/Cennik";
 import Podziekowanie from "./pages/Podziekowanie";
+import Zainstaluj from "./pages/Zainstaluj";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -231,8 +232,8 @@ const App = () => (
             <Route path="/faq" element={<FAQ />} />
             <Route path="/cennik" element={<Cennik />} />
             <Route path="/podziekowanie" element={<Podziekowanie />} />
+            <Route path="/zainstaluj" element={<Zainstaluj />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
