@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -15,33 +16,12 @@ export default defineConfig(({ mode }) => ({
     mode === "development" && componentTagger(),
     // Image optimization - converts to WebP and optimizes
     ViteImageOptimizer({
-      test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
+      test: /\.(jpe?g|png|gif|webp)$/i,
       exclude: undefined,
       include: undefined,
       includePublic: true,
       logStats: true,
       ansiColors: true,
-      svg: {
-        multipass: true,
-        plugins: [
-          {
-            name: "preset-default",
-            params: {
-              overrides: {
-                cleanupNumericValues: false,
-                removeViewBox: false,
-              },
-            },
-          },
-          "sortAttrs",
-          {
-            name: "addAttributesToSVGElement",
-            params: {
-              attributes: [{ xmlns: "http://www.w3.org/2000/svg" }],
-            },
-          },
-        ],
-      },
       png: {
         quality: 80,
       },
@@ -51,9 +31,6 @@ export default defineConfig(({ mode }) => ({
       jpg: {
         quality: 80,
       },
-      tiff: {
-        quality: 80,
-      },
       gif: {},
       webp: {
         lossless: false,
@@ -61,13 +38,104 @@ export default defineConfig(({ mode }) => ({
         alphaQuality: 80,
         force: false,
       },
-      avif: {
-        lossless: false,
-        quality: 70,
-      },
       cache: true,
       cacheLocation: "node_modules/.cache/vite-plugin-image-optimizer",
     }),
+    // PWA configuration
+    VitePWA({
+      registerType: "autoUpdate",
+      includeAssets: ["favicon.ico", "logo-fotz.jpg", "hero-poster.jpg"],
+      manifest: {
+        name: "Fotz Studio - Agencja Marketingowa",
+        short_name: "Fotz Studio",
+        description: "Agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów.",
+        theme_color: "#A11B52",
+        background_color: "#0E0E0E",
+        display: "standalone",
+        orientation: "portrait",
+        scope: "/",
+        start_url: "/",
+        lang: "pl",
+        categories: ["business", "marketing"],
+        icons: [
+          {
+            src: "/logo-fotz.jpg",
+            sizes: "192x192",
+            type: "image/jpeg",
+            purpose: "any maskable"
+          },
+          {
+            src: "/logo-fotz.jpg",
+            sizes: "512x512",
+            type: "image/jpeg",
+            purpose: "any maskable"
+          }
+        ],
+        screenshots: [
+          {
+            src: "/hero-poster.jpg",
+            sizes: "1920x1080",
+            type: "image/jpeg",
+            form_factor: "wide"
+          }
+        ]
+      },
+      workbox: {
+        globPatterns: ["**/*.{js,css,html,ico,png,jpg,jpeg,webp,svg,woff,woff2}"],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "google-fonts-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "gstatic-fonts-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+              },
+              cacheableResponse: {
+                statuses: [0, 200]
+              }
+            }
+          },
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "images-cache",
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
+              }
+            }
+          },
+          {
+            urlPattern: /\.(?:mp4|webm)$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "videos-cache",
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 7 // 7 days
+              }
+            }
+          }
+        ]
+      }
+    })
   ].filter(Boolean),
   resolve: {
     alias: {
@@ -80,18 +148,12 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: {
           vendor: ["react", "react-dom", "react-router-dom"],
-          ui: ["framer-motion", "@radix-ui/react-accordion", "@radix-ui/react-dialog"],
+          ui: ["framer-motion"],
         },
       },
     },
-    // Enable minification
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: mode === "production",
-        drop_debugger: true,
-      },
-    },
+    // Use esbuild for minification (faster, no extra dependency)
+    minify: "esbuild",
     // Asset size warnings
     chunkSizeWarningLimit: 1000,
   },
