@@ -4,6 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 import { VitePWA } from "vite-plugin-pwa";
+import { imagetools } from "vite-imagetools";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -14,7 +15,21 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
-    // Image optimization - converts to WebP and optimizes
+    // Image processing with automatic WebP and resizing
+    imagetools({
+      defaultDirectives: (url) => {
+        // Auto-convert large images to WebP and resize
+        if (url.pathname.match(/\.(png|jpg|jpeg)$/i)) {
+          return new URLSearchParams({
+            format: 'webp',
+            quality: '75',
+            w: '1600', // Max width
+          });
+        }
+        return new URLSearchParams();
+      },
+    }),
+    // Additional image optimization
     ViteImageOptimizer({
       test: /\.(jpe?g|png|gif|webp)$/i,
       exclude: undefined,
@@ -23,19 +38,19 @@ export default defineConfig(({ mode }) => ({
       logStats: true,
       ansiColors: true,
       png: {
-        quality: 80,
+        quality: 70,
       },
       jpeg: {
-        quality: 80,
+        quality: 70,
       },
       jpg: {
-        quality: 80,
+        quality: 70,
       },
       gif: {},
       webp: {
         lossless: false,
-        quality: 80,
-        alphaQuality: 80,
+        quality: 70,
+        alphaQuality: 70,
         force: false,
       },
       cache: true,
@@ -90,7 +105,7 @@ export default defineConfig(({ mode }) => ({
               cacheName: "google-fonts-cache",
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365
               },
               cacheableResponse: {
                 statuses: [0, 200]
@@ -104,7 +119,7 @@ export default defineConfig(({ mode }) => ({
               cacheName: "gstatic-fonts-cache",
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365
               },
               cacheableResponse: {
                 statuses: [0, 200]
@@ -118,7 +133,7 @@ export default defineConfig(({ mode }) => ({
               cacheName: "images-cache",
               expiration: {
                 maxEntries: 100,
-                maxAgeSeconds: 60 * 60 * 24 * 30 // 30 days
+                maxAgeSeconds: 60 * 60 * 24 * 30
               }
             }
           },
@@ -129,7 +144,7 @@ export default defineConfig(({ mode }) => ({
               cacheName: "videos-cache",
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 7 // 7 days
+                maxAgeSeconds: 60 * 60 * 24 * 7
               }
             }
           }
@@ -143,7 +158,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    // Optimize chunk splitting
     rollupOptions: {
       output: {
         manualChunks: {
@@ -152,9 +166,9 @@ export default defineConfig(({ mode }) => ({
         },
       },
     },
-    // Use esbuild for minification (faster, no extra dependency)
     minify: "esbuild",
-    // Asset size warnings
     chunkSizeWarningLimit: 1000,
+    // Reduce asset inline limit for smaller bundles
+    assetsInlineLimit: 4096,
   },
 }));
