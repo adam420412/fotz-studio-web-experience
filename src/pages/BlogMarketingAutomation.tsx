@@ -263,10 +263,7 @@ const BlogMarketingAutomation = () => {
           </div>
         </article>
 
-        <RelatedArticles 
-          currentSlug="marketing-automation-2025"
-          category="poradnik"
-        />
+        <RelatedArticles currentArticleId="marketing-automation" />
       </Layout>
     </>
   );

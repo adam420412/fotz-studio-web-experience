@@ -275,10 +275,7 @@ const BlogVideoMarketing = () => {
           </div>
         </article>
 
-        <RelatedArticles 
-          currentSlug="video-marketing-2025"
-          category="poradnik"
-        />
+        <RelatedArticles currentArticleId="video-marketing-2025" />
       </Layout>
     </>
   );

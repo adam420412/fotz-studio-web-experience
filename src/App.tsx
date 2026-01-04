@@ -44,6 +44,9 @@ import BlogInfluencerMarketing from "./pages/BlogInfluencerMarketing";
 import BlogBrandingStartupy from "./pages/BlogBrandingStartupy";
 import BlogUXEcommerce from "./pages/BlogUXEcommerce";
 import BlogSEOEcommerce from "./pages/BlogSEOEcommerce";
+import BlogMarketingAutomation from "./pages/BlogMarketingAutomation";
+import BlogPersonalBrandingLinkedIn from "./pages/BlogPersonalBrandingLinkedIn";
+import BlogVideoMarketing from "./pages/BlogVideoMarketing";
 import Poradniki from "./pages/Poradniki";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
@@ -95,6 +98,12 @@ import StronyInternetoweKonin from "./pages/StronyInternetoweKonin";
 import StronyInternetoweTarnow from "./pages/StronyInternetoweTarnow";
 import StronyInternetowePlock from "./pages/StronyInternetowePlock";
 import StronyInternetoweSosnowiec from "./pages/StronyInternetoweSosnowiec";
+import StronyInternetoweBialystok from "./pages/StronyInternetoweBialystok";
+import StronyInternetoweCzestochowa from "./pages/StronyInternetoweCzestochowa";
+import StronyInternetoweZielonaGora from "./pages/StronyInternetoweZielonaGora";
+import StronyInternetoweElblag from "./pages/StronyInternetoweElblag";
+import StronyInternetoweLegnica from "./pages/StronyInternetoweLegnica";
+import StronyInternetoweKalisz from "./pages/StronyInternetoweKalisz";
 import StronyInternetowe from "./pages/StronyInternetowe";
 import SocialMediaPoznan from "./pages/SocialMediaPoznan";
 import SocialMedia from "./pages/SocialMedia";
@@ -178,6 +187,9 @@ const App = () => (
             <Route path="/blog/branding-dla-startupow" element={<BlogBrandingStartupy />} />
             <Route path="/blog/ux-ui-ecommerce" element={<BlogUXEcommerce />} />
             <Route path="/blog/seo-ecommerce" element={<BlogSEOEcommerce />} />
+            <Route path="/blog/marketing-automation" element={<BlogMarketingAutomation />} />
+            <Route path="/blog/personal-branding-linkedin" element={<BlogPersonalBrandingLinkedIn />} />
+            <Route path="/blog/video-marketing-trendy-2025" element={<BlogVideoMarketing />} />
             <Route path="/poradniki" element={<Poradniki />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
@@ -229,6 +241,12 @@ const App = () => (
             <Route path="/strony-internetowe-tarnow" element={<StronyInternetoweTarnow />} />
             <Route path="/strony-internetowe-plock" element={<StronyInternetowePlock />} />
             <Route path="/strony-internetowe-sosnowiec" element={<StronyInternetoweSosnowiec />} />
+            <Route path="/strony-internetowe-bialystok" element={<StronyInternetoweBialystok />} />
+            <Route path="/strony-internetowe-czestochowa" element={<StronyInternetoweCzestochowa />} />
+            <Route path="/strony-internetowe-zielona-gora" element={<StronyInternetoweZielonaGora />} />
+            <Route path="/strony-internetowe-elblag" element={<StronyInternetoweElblag />} />
+            <Route path="/strony-internetowe-legnica" element={<StronyInternetoweLegnica />} />
+            <Route path="/strony-internetowe-kalisz" element={<StronyInternetoweKalisz />} />
             <Route path="/strony-internetowe" element={<StronyInternetowe />} />
             <Route path="/social-media-poznan" element={<SocialMediaPoznan />} />
             <Route path="/social-media" element={<SocialMedia />} />
