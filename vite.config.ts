@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -13,101 +12,6 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     mode === "development" && componentTagger(),
-    // PWA configuration
-    VitePWA({
-      registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "logo-fotz.jpg", "hero-poster.jpg"],
-      manifest: {
-        name: "Fotz Studio - Agencja Marketingowa",
-        short_name: "Fotz Studio",
-        description: "Agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów.",
-        theme_color: "#A11B52",
-        background_color: "#0E0E0E",
-        display: "standalone",
-        orientation: "portrait",
-        scope: "/",
-        start_url: "/",
-        lang: "pl",
-        categories: ["business", "marketing"],
-        icons: [
-          {
-            src: "/logo-fotz.jpg",
-            sizes: "192x192",
-            type: "image/jpeg",
-            purpose: "any maskable"
-          },
-          {
-            src: "/logo-fotz.jpg",
-            sizes: "512x512",
-            type: "image/jpeg",
-            purpose: "any maskable"
-          }
-        ],
-        screenshots: [
-          {
-            src: "/hero-poster.jpg",
-            sizes: "1920x1080",
-            type: "image/jpeg",
-            form_factor: "wide"
-          }
-        ]
-      },
-      workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,jpg,jpeg,webp,svg,woff,woff2}"],
-        runtimeCaching: [
-          {
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "google-fonts-cache",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365
-              },
-              cacheableResponse: {
-                statuses: [0, 200]
-              }
-            }
-          },
-          {
-            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "gstatic-fonts-cache",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365
-              },
-              cacheableResponse: {
-                statuses: [0, 200]
-              }
-            }
-          },
-          {
-            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "images-cache",
-              expiration: {
-                maxEntries: 100,
-                maxAgeSeconds: 60 * 60 * 24 * 30
-              }
-            }
-          },
-          {
-            urlPattern: /\.(?:mp4|webm)$/,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "videos-cache",
-              expiration: {
-                maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 7
-              }
-            }
-          }
-        ]
-      }
-    })
   ].filter(Boolean),
   resolve: {
     alias: {
@@ -124,8 +28,7 @@ export default defineConfig(({ mode }) => ({
       },
     },
     minify: "esbuild",
-    chunkSizeWarningLimit: 1000,
-    // Reduce asset inline limit for smaller bundles
+    chunkSizeWarningLimit: 1500,
     assetsInlineLimit: 4096,
   },
 }));
