@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { format, addDays, startOfWeek, isSameDay, isWeekend, isBefore, startOfDay } from "date-fns";
 import { pl } from "date-fns/locale";
 import { ChevronLeft, ChevronRight, Clock, Calendar, CheckCircle, Loader2, User, Mail, Phone, Building, MessageSquare } from "lucide-react";
@@ -22,6 +22,11 @@ const timeSlots = [
   "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00"
 ];
 
+interface BookedSlot {
+  date: string;
+  time: string;
+}
+
 interface BookingCalendarProps {
   onClose?: () => void;
 }
@@ -32,6 +37,8 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [step, setStep] = useState<"date" | "form" | "success">("date");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [bookedSlots, setBookedSlots] = useState<BookedSlot[]>([]);
+  const [isLoadingSlots, setIsLoadingSlots] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,6 +51,37 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
 
   const weekDays = Array.from({ length: 7 }, (_, i) => addDays(currentWeekStart, i));
   const today = startOfDay(new Date());
+
+  // Fetch booked slots for the current week
+  const fetchBookedSlots = useCallback(async () => {
+    setIsLoadingSlots(true);
+    const startDate = format(currentWeekStart, "yyyy-MM-dd");
+    const endDate = format(addDays(currentWeekStart, 6), "yyyy-MM-dd");
+
+    const { data, error } = await supabase
+      .from('bookings')
+      .select('booking_date, booking_time')
+      .gte('booking_date', startDate)
+      .lte('booking_date', endDate)
+      .in('status', ['pending', 'confirmed']);
+
+    if (!error && data) {
+      setBookedSlots(data.map(b => ({ 
+        date: b.booking_date, 
+        time: b.booking_time.substring(0, 5) // Ensure format "HH:MM"
+      })));
+    }
+    setIsLoadingSlots(false);
+  }, [currentWeekStart]);
+
+  useEffect(() => {
+    fetchBookedSlots();
+  }, [fetchBookedSlots]);
+
+  const isSlotBooked = (date: Date, time: string) => {
+    const dateStr = format(date, "yyyy-MM-dd");
+    return bookedSlots.some(slot => slot.date === dateStr && slot.time === time);
+  };
 
   const handlePrevWeek = () => {
     setCurrentWeekStart(addDays(currentWeekStart, -7));
@@ -313,23 +351,35 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           <h4 className="font-medium flex items-center gap-2">
             <Clock className="w-4 h-4 text-primary" />
             Wybierz godzinę
+            {isLoadingSlots && <Loader2 className="w-3 h-3 animate-spin text-muted-foreground" />}
           </h4>
           <div className="grid grid-cols-4 gap-2">
-            {timeSlots.map((time) => (
-              <button
-                key={time}
-                onClick={() => handleTimeSelect(time)}
-                className={cn(
-                  "py-2 px-3 rounded-lg text-sm font-medium transition-all",
-                  selectedTime === time
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-secondary hover:bg-secondary/80"
-                )}
-              >
-                {time}
-              </button>
-            ))}
+            {timeSlots.map((time) => {
+              const isBooked = isSlotBooked(selectedDate, time);
+              return (
+                <button
+                  key={time}
+                  onClick={() => !isBooked && handleTimeSelect(time)}
+                  disabled={isBooked}
+                  className={cn(
+                    "py-2 px-3 rounded-lg text-sm font-medium transition-all relative",
+                    isBooked && "opacity-40 cursor-not-allowed bg-muted line-through",
+                    !isBooked && selectedTime === time && "bg-primary text-primary-foreground",
+                    !isBooked && selectedTime !== time && "bg-secondary hover:bg-secondary/80"
+                  )}
+                >
+                  {time}
+                  {isBooked && (
+                    <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
+                  )}
+                </button>
+              );
+            })}
           </div>
+          <p className="text-xs text-muted-foreground">
+            <span className="inline-block w-2 h-2 bg-red-500 rounded-full mr-1" />
+            Terminy oznaczone na czerwono są już zajęte
+          </p>
         </div>
       )}
 
