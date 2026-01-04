@@ -19,6 +19,18 @@ const categories = [
 
 const posts = [
   {
+    id: "ux-ui-ecommerce",
+    title: "UX/UI w e-commerce - jak projektować sklepy internetowe które sprzedają",
+    excerpt:
+      "Kompletny poradnik UX/UI dla sklepów internetowych. Dowiedz się jak projektować sklepy, które zwiększają konwersję.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "20 min",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+    featured: true,
+  },
+  {
     id: "branding-dla-startupow",
     title: "Branding dla startupów - jak zbudować silną markę od zera",
     excerpt:
@@ -28,7 +40,7 @@ const posts = [
     date: "4 Jan 2025",
     readTime: "19 min",
     image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070",
-    featured: true,
+    featured: false,
   },
   {
     id: "influencer-marketing-polska",

@@ -15,6 +15,15 @@ interface Article {
 // All blog articles data for cross-referencing
 const allArticles: Article[] = [
   {
+    id: "ux-ui-ecommerce",
+    title: "UX/UI w e-commerce - jak projektować sklepy internetowe które sprzedają",
+    excerpt: "Kompletny poradnik UX/UI dla sklepów internetowych. Projektowanie sklepów zwiększających konwersję.",
+    category: "Poradniki",
+    date: "4 Jan 2025",
+    readTime: "20 min",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+  },
+  {
     id: "branding-dla-startupow",
     title: "Branding dla startupów - jak zbudować silną markę od zera",
     excerpt: "Kompletny poradnik budowania marki dla startupów. Strategia i identyfikacja wizualna.",
