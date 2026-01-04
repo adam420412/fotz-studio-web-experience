@@ -37,7 +37,7 @@ export function OrganizationSchema({
 }: OrganizationSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
-    "@type": ["Organization", "LocalBusiness", "MarketingAgency"],
+    "@type": "Organization",
     name,
     url,
     logo,
@@ -49,22 +49,6 @@ export function OrganizationSchema({
       ...address,
     },
     sameAs,
-    priceRange: "$$",
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "17:00",
-    },
-    areaServed: {
-      "@type": "City",
-      name: "Poznań",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "160",
-    },
   };
 
   return (

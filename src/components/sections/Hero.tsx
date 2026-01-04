@@ -1,25 +1,15 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
-import { TextRevealByWord } from "@/components/TextReveal";
 import { MagneticButton } from "@/components/MagneticButton";
 import { useRef } from "react";
 
 export function Hero() {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
-  
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
 
   const stats = [
     { value: 1000000, suffix: "+", label: t("Wyświetleń treści miesięcznie", "Monthly content views") },
@@ -29,8 +19,8 @@ export function Hero() {
 
   return (
     <section ref={containerRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background with Parallax */}
-      <motion.div className="absolute inset-0 z-0" style={{ scale }}>
+      {/* Video Background - static for performance */}
+      <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
         <video
           autoPlay
@@ -43,128 +33,52 @@ export function Hero() {
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-      </motion.div>
-
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 z-5 pointer-events-none">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.6 }}
-          transition={{ duration: 2 }}
-          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full blur-[150px]"
-          style={{ background: "hsl(var(--primary) / 0.2)" }}
-        />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.4 }}
-          transition={{ duration: 2, delay: 0.5 }}
-          className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full blur-[120px]"
-          style={{ background: "hsl(var(--secondary) / 0.2)" }}
-        />
-        
-        {/* Animated gradient orbs */}
-        <motion.div 
-          className="absolute top-20 -right-20 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px]"
-          animate={{ 
-            x: [0, 50, 0],
-            y: [0, 30, 0],
-            scale: [1, 1.2, 1]
-          }}
-          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div 
-          className="absolute bottom-40 -left-20 w-[300px] h-[300px] bg-secondary/10 rounded-full blur-[80px]"
-          animate={{ 
-            x: [0, -30, 0],
-            y: [0, -40, 0],
-            scale: [1, 1.3, 1]
-          }}
-          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        />
-
-        {/* Grid pattern */}
-        <div 
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, hsl(var(--foreground)) 1px, transparent 1px),
-              linear-gradient(to bottom, hsl(var(--foreground)) 1px, transparent 1px)
-            `,
-            backgroundSize: '80px 80px'
-          }}
-        />
-
-        {/* Floating particles - reduced for performance */}
-        {[...Array(6)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-primary/40 rounded-full"
-            style={{
-              left: `${15 + i * 15}%`,
-              top: `${20 + (i % 3) * 25}%`,
-            }}
-            animate={{
-              y: [0, -60, 0],
-              opacity: [0, 1, 0],
-            }}
-            transition={{
-              duration: 5 + i,
-              repeat: Infinity,
-              delay: i * 0.8,
-              ease: "easeInOut",
-            }}
-          />
-        ))}
       </div>
 
-      {/* Content with Parallax */}
-      <motion.div 
-        className="relative z-20 container-wide px-6 md:px-12 text-center pt-24"
-        style={{ y, opacity }}
-      >
+      {/* Static Background Elements - no animations for performance */}
+      <div className="absolute inset-0 z-5 pointer-events-none">
+        <div 
+          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full blur-[150px] opacity-50"
+          style={{ background: "hsl(var(--primary) / 0.15)" }}
+        />
+        <div 
+          className="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] rounded-full blur-[120px] opacity-30"
+          style={{ background: "hsl(var(--secondary) / 0.15)" }}
+        />
+      </div>
+
+      {/* Content - simplified animations */}
+      <div className="relative z-20 container-wide px-6 md:px-12 text-center pt-24">
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 30, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.6, type: "spring" }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-card/80 backdrop-blur-sm border border-border/50 mb-8"
           >
-            <motion.span 
-              className="relative flex h-2 w-2"
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
+            <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </motion.span>
+            </span>
             <span className="text-sm text-foreground font-medium">
               {t("Studio marketingu wzrostu • Poznań", "Growth Marketing Studio • Poznań")}
             </span>
             <Sparkles className="w-4 h-4 text-primary" />
           </motion.div>
 
-          {/* Heading with Text Reveal */}
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.15] mb-4 md:mb-6">
-            <TextRevealByWord
-              text={t("Agencja Marketingowa,", "Marketing Agency")}
-              className="justify-center"
-              delay={0.2}
-            />
-            <span className="relative inline-block mt-1 sm:mt-2">
-              <TextRevealByWord
-                text={t("która projektuje realny wzrost firm", "that designs real business growth")}
-                className="justify-center"
-                wordClassName="text-gradient-premium"
-                delay={0.5}
-              />
-              <motion.span 
-                className="absolute -inset-4 bg-primary/10 rounded-2xl blur-3xl -z-10"
-                animate={{ opacity: [0.3, 0.6, 0.3], scale: [1, 1.05, 1] }}
-                transition={{ duration: 4, repeat: Infinity }}
-              />
+          {/* Heading - simplified */}
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.15] mb-4 md:mb-6"
+          >
+            {t("Agencja Marketingowa,", "Marketing Agency")}
+            <span className="block mt-1 sm:mt-2 text-gradient-premium">
+              {t("która projektuje realny wzrost firm", "that designs real business growth")}
             </span>
-          </h1>
+          </motion.h1>
 
           {/* Subheading */}
           <motion.p
@@ -233,7 +147,7 @@ export function Hero() {
             ))}
           </motion.div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Scroll Indicator */}
       <motion.div
