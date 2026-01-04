@@ -32,6 +32,8 @@ import ONas from "./pages/ONas";
 import Blog from "./pages/Blog";
 import BlogKosztStrony from "./pages/BlogKosztStrony";
 import BlogKampaniaReklamowa from "./pages/BlogKampaniaReklamowa";
+import BlogAIMarketing from "./pages/BlogAIMarketing";
+import BlogGoogleVsFacebook from "./pages/BlogGoogleVsFacebook";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
 import DlaKogoFirmyLokalne from "./pages/DlaKogoFirmyLokalne";
@@ -152,6 +154,8 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />
             <Route path="/blog/kampania-reklamowa-marketingowa" element={<BlogKampaniaReklamowa />} />
+            <Route path="/blog/ai-w-marketingu-msp-2025" element={<BlogAIMarketing />} />
+            <Route path="/blog/google-ads-vs-facebook-ads" element={<BlogGoogleVsFacebook />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
             <Route path="/dla-kogo/firmy-lokalne" element={<DlaKogoFirmyLokalne />} />
