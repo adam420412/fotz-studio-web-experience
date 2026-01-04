@@ -4,6 +4,7 @@ import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { MegaMenu } from "./MegaMenu";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import logoFotz from "@/assets/logo-fotz.png";
 
 const navLinksData = [
@@ -119,8 +120,9 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* CTA Button */}
-            <div className="hidden lg:flex items-center gap-4">
+            {/* CTA Button + Theme Toggle */}
+            <div className="hidden lg:flex items-center gap-3">
+              <ThemeToggle />
               <Button variant="hero" size="lg" asChild>
                 <Link to="/kontakt" className="group">
                   Bezpłatna konsultacja

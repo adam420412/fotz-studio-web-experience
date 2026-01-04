@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
 import gabinetImg from "@/assets/medyczny/gabinet-stomatologiczny.jpg";
@@ -116,6 +117,11 @@ const MarketingMedyczny = () => {
         ]}
       />
       <FAQSchema items={faqItems} />
+
+      <PageBreadcrumbs items={[
+        { label: "Dla kogo", href: "/dla-kogo" },
+        { label: "Branża medyczna" },
+      ]} />
 
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">
