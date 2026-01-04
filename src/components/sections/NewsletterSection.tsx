@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { z } from "zod";
 import { cn } from "@/lib/utils";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 
 const emailSchema = z.string().trim().email("Nieprawidłowy adres email");
 
@@ -50,6 +51,14 @@ export function NewsletterSection() {
 
       const data = await response.json();
       if (!data.success) throw new Error();
+
+      // Send to CRM webhook (fire and forget)
+      sendLeadToCRM({
+        name: email.split("@")[0], // Use email prefix as name
+        email: email,
+        source: "fotz.pl/newsletter",
+        notes: "Zapis do newslettera - pobranie checklisty kampanii",
+      });
 
       setIsSubmitted(true);
     } catch {

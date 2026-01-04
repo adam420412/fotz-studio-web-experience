@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import { sendBookingToCRM } from "@/hooks/useCRMWebhook";
 
 const bookingSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki"),
@@ -157,6 +158,19 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
         });
       } catch (emailError) {
         console.error("Email notification error:", emailError);
+      }
+
+      // Send to CRM webhook (fire and forget)
+      if (selectedDate && selectedTime) {
+        sendBookingToCRM({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || undefined,
+          booking_date: format(selectedDate, "yyyy-MM-dd"),
+          booking_time: selectedTime,
+          service_type: "konsultacja",
+          source: "fotz.pl/kontakt",
+        });
       }
 
       setStep("success");

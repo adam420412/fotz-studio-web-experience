@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
+import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -105,6 +106,16 @@ export default function Kontakt() {
       if (!data.success) {
         throw new Error("Błąd podczas wysyłania wiadomości");
       }
+
+      // Send to CRM webhook (fire and forget)
+      sendLeadToCRM({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || undefined,
+        company: formData.company || undefined,
+        source: "fotz.pl/kontakt",
+        notes: `Temat: ${formData.subject}\n\n${formData.message}`,
+      });
 
       setIsSubmitted(true);
       toast({
