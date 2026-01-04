@@ -47,6 +47,9 @@ import BlogSEOEcommerce from "./pages/BlogSEOEcommerce";
 import BlogMarketingAutomation from "./pages/BlogMarketingAutomation";
 import BlogPersonalBrandingLinkedIn from "./pages/BlogPersonalBrandingLinkedIn";
 import BlogVideoMarketing from "./pages/BlogVideoMarketing";
+import BlogRemarketing from "./pages/BlogRemarketing";
+import BlogGoogleAnalytics4 from "./pages/BlogGoogleAnalytics4";
+import BlogBudzetMarketingowy from "./pages/BlogBudzetMarketingowy";
 import Poradniki from "./pages/Poradniki";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
@@ -194,6 +197,9 @@ const App = () => (
             <Route path="/blog/marketing-automation" element={<BlogMarketingAutomation />} />
             <Route path="/blog/personal-branding-linkedin" element={<BlogPersonalBrandingLinkedIn />} />
             <Route path="/blog/video-marketing-trendy-2025" element={<BlogVideoMarketing />} />
+            <Route path="/blog/remarketing-poradnik" element={<BlogRemarketing />} />
+            <Route path="/blog/google-analytics-4-poradnik" element={<BlogGoogleAnalytics4 />} />
+            <Route path="/blog/budzet-marketingowy-planowanie" element={<BlogBudzetMarketingowy />} />
             <Route path="/poradniki" element={<Poradniki />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
