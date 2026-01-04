@@ -76,7 +76,7 @@ export function Footer() {
               <img 
                   src={logoFotz} 
                   alt="Fotz Studio" 
-                  className="h-20 sm:h-24 md:h-28 lg:h-36 w-auto"
+                  className="h-16 sm:h-20 md:h-32 lg:h-40 w-auto"
                 />
               </Link>
               <p className="text-muted-foreground text-sm md:text-base mb-4 md:mb-6 max-w-sm">
