@@ -50,6 +50,9 @@ import BlogVideoMarketing from "./pages/BlogVideoMarketing";
 import BlogRemarketing from "./pages/BlogRemarketing";
 import BlogGoogleAnalytics4 from "./pages/BlogGoogleAnalytics4";
 import BlogBudzetMarketingowy from "./pages/BlogBudzetMarketingowy";
+import BlogB2BvsB2C from "./pages/BlogB2BvsB2C";
+import BlogPsychologiaCen from "./pages/BlogPsychologiaCen";
+import BlogCopywritingLanding from "./pages/BlogCopywritingLanding";
 import Poradniki from "./pages/Poradniki";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
@@ -200,6 +203,9 @@ const App = () => (
             <Route path="/blog/remarketing-poradnik" element={<BlogRemarketing />} />
             <Route path="/blog/google-analytics-4-poradnik" element={<BlogGoogleAnalytics4 />} />
             <Route path="/blog/budzet-marketingowy-planowanie" element={<BlogBudzetMarketingowy />} />
+            <Route path="/blog/marketing-b2b-vs-b2c" element={<BlogB2BvsB2C />} />
+            <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
+            <Route path="/blog/copywriting-landing-page" element={<BlogCopywritingLanding />} />
             <Route path="/poradniki" element={<Poradniki />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
