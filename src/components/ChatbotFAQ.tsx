@@ -1,16 +1,18 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X, Send, Bot, User, Loader2, Sparkles } from "lucide-react";
+import { MessageCircle, X, Send, Bot, User, Loader2, Sparkles, UserCheck, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 interface Message {
   id: number;
   text: string;
   isBot: boolean;
   isAI?: boolean;
+  isEscalation?: boolean;
 }
 
 interface FAQ {
@@ -242,8 +244,12 @@ export function ChatbotFAQ() {
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [showEscalationForm, setShowEscalationForm] = useState(false);
+  const [escalationData, setEscalationData] = useState({ name: "", email: "", phone: "" });
+  const [isSubmittingEscalation, setIsSubmittingEscalation] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const { toast } = useToast();
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -333,6 +339,73 @@ export function ChatbotFAQ() {
   const handleKeyPress = (e: React.KeyboardEvent) => {
     if (e.key === "Enter" && !isLoading) {
       handleSend();
+    }
+  };
+
+  const handleEscalation = () => {
+    setShowEscalationForm(true);
+  };
+
+  const handleSubmitEscalation = async () => {
+    if (!escalationData.name || !escalationData.email) {
+      toast({
+        title: "Wypełnij wymagane pola",
+        description: "Imię i email są wymagane.",
+        variant: "destructive"
+      });
+      return;
+    }
+
+    setIsSubmittingEscalation(true);
+
+    // Format conversation history
+    const conversationHistory = messages
+      .map(m => `${m.isBot ? 'Bot' : 'Użytkownik'}: ${m.text}`)
+      .join('\n');
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "2c9e6e82-97a0-4fb2-88d9-f6f4b23d5e2c",
+          subject: "🔴 Eskalacja z chatbota - prośba o kontakt",
+          from_name: escalationData.name,
+          email: escalationData.email,
+          phone: escalationData.phone || "Nie podano",
+          message: `Użytkownik poprosił o kontakt z konsultantem.\n\nHistoria rozmowy:\n${conversationHistory}`,
+          source: "Chatbot - Eskalacja"
+        })
+      });
+
+      if (response.ok) {
+        setShowEscalationForm(false);
+        setEscalationData({ name: "", email: "", phone: "" });
+        
+        const escalationMessage: Message = {
+          id: Date.now(),
+          text: "✅ Dziękujemy! Nasz konsultant skontaktuje się z Tobą w ciągu 24 godzin roboczych. Jeśli sprawa jest pilna, zadzwoń: +48 123 456 789",
+          isBot: true,
+          isEscalation: true
+        };
+        setMessages(prev => [...prev, escalationMessage]);
+
+        toast({
+          title: "Zgłoszenie wysłane!",
+          description: "Skontaktujemy się wkrótce."
+        });
+      } else {
+        throw new Error("Failed to submit");
+      }
+    } catch (error) {
+      console.error("Escalation error:", error);
+      toast({
+        title: "Błąd wysyłania",
+        description: "Spróbuj ponownie lub zadzwoń: +48 123 456 789",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmittingEscalation(false);
     }
   };
 
@@ -461,34 +534,89 @@ export function ChatbotFAQ() {
               </div>
             </ScrollArea>
 
-            {/* Input */}
-            <div className="p-4 border-t border-border">
-              <div className="flex gap-2">
-                <Input
-                  ref={inputRef}
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyPress={handleKeyPress}
-                  placeholder="Zadaj pytanie..."
-                  className="flex-1"
-                  disabled={isLoading}
-                />
-                <Button
-                  onClick={() => handleSend()}
-                  size="icon"
-                  disabled={!input.trim() || isLoading}
-                >
-                  {isLoading ? (
-                    <Loader2 className="w-4 h-4 animate-spin" />
-                  ) : (
-                    <Send className="w-4 h-4" />
-                  )}
-                </Button>
+            {/* Escalation Form or Input */}
+            {showEscalationForm ? (
+              <div className="p-4 border-t border-border">
+                <div className="flex items-center gap-2 mb-3">
+                  <button 
+                    onClick={() => setShowEscalationForm(false)}
+                    className="p-1 hover:bg-muted rounded-full transition-colors"
+                  >
+                    <ArrowLeft className="w-4 h-4" />
+                  </button>
+                  <h4 className="font-medium text-sm">Poproś o kontakt</h4>
+                </div>
+                <div className="space-y-2">
+                  <Input
+                    value={escalationData.name}
+                    onChange={(e) => setEscalationData(prev => ({ ...prev, name: e.target.value }))}
+                    placeholder="Imię i nazwisko *"
+                    className="text-sm"
+                  />
+                  <Input
+                    type="email"
+                    value={escalationData.email}
+                    onChange={(e) => setEscalationData(prev => ({ ...prev, email: e.target.value }))}
+                    placeholder="Email *"
+                    className="text-sm"
+                  />
+                  <Input
+                    type="tel"
+                    value={escalationData.phone}
+                    onChange={(e) => setEscalationData(prev => ({ ...prev, phone: e.target.value }))}
+                    placeholder="Telefon (opcjonalnie)"
+                    className="text-sm"
+                  />
+                  <Button 
+                    onClick={handleSubmitEscalation} 
+                    className="w-full"
+                    disabled={isSubmittingEscalation}
+                  >
+                    {isSubmittingEscalation ? (
+                      <Loader2 className="w-4 h-4 animate-spin mr-2" />
+                    ) : (
+                      <UserCheck className="w-4 h-4 mr-2" />
+                    )}
+                    Wyślij prośbę o kontakt
+                  </Button>
+                </div>
+                <p className="text-[10px] text-muted-foreground mt-2 text-center">
+                  Odpowiemy w ciągu 24h roboczych
+                </p>
               </div>
-              <p className="text-[10px] text-muted-foreground mt-2 text-center">
-                Powered by AI • Dla złożonych pytań polecamy konsultację
-              </p>
-            </div>
+            ) : (
+              <div className="p-4 border-t border-border">
+                <div className="flex gap-2">
+                  <Input
+                    ref={inputRef}
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    placeholder="Zadaj pytanie..."
+                    className="flex-1"
+                    disabled={isLoading}
+                  />
+                  <Button
+                    onClick={() => handleSend()}
+                    size="icon"
+                    disabled={!input.trim() || isLoading}
+                  >
+                    {isLoading ? (
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                    ) : (
+                      <Send className="w-4 h-4" />
+                    )}
+                  </Button>
+                </div>
+                <button
+                  onClick={handleEscalation}
+                  className="w-full mt-2 text-xs text-muted-foreground hover:text-primary transition-colors flex items-center justify-center gap-1"
+                >
+                  <UserCheck className="w-3 h-3" />
+                  Porozmawiaj z człowiekiem
+                </button>
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
