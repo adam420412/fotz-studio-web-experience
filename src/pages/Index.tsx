@@ -15,6 +15,7 @@ const Clients = lazy(() => import("@/components/sections/Clients").then(m => ({ 
 const OfficeGallery = lazy(() => import("@/components/sections/OfficeGallery").then(m => ({ default: m.OfficeGallery })));
 const Studio = lazy(() => import("@/components/sections/Studio").then(m => ({ default: m.Studio })));
 const HomeFAQ = lazy(() => import("@/components/sections/HomeFAQ").then(m => ({ default: m.HomeFAQ })));
+const NewsletterSection = lazy(() => import("@/components/sections/NewsletterSection").then(m => ({ default: m.NewsletterSection })));
 const FinalCTA = lazy(() => import("@/components/sections/FinalCTA").then(m => ({ default: m.FinalCTA })));
 
 // Minimal loading fallback
@@ -82,6 +83,9 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <HomeFAQ />
+        </Suspense>
+        <Suspense fallback={<SectionLoader />}>
+          <NewsletterSection />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <FinalCTA />
