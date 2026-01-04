@@ -145,16 +145,16 @@ export function Hero() {
           </motion.div>
 
           {/* Heading with Text Reveal */}
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold leading-[1.1] mb-4 md:mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.15] mb-4 md:mb-6">
             <TextRevealByWord
               text={t("Agencja Marketingowa,", "Marketing Agency")}
               className="justify-center"
               delay={0.2}
             />
-            <span className="relative inline-block">
+            <span className="relative inline-block mt-1 sm:mt-2">
               <TextRevealByWord
                 text={t("która projektuje realny wzrost firm", "that designs real business growth")}
-                className="justify-center text-gradient-premium"
+                className="justify-center"
                 wordClassName="text-gradient-premium"
                 delay={0.5}
               />

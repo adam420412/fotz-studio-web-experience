@@ -72,7 +72,7 @@ export function Navbar() {
               <img 
                 src={logoFotz} 
                 alt="Fotz Studio" 
-                className="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-auto"
+                className="h-12 sm:h-14 md:h-24 lg:h-32 xl:h-36 w-auto"
               />
             </Link>
 
@@ -147,7 +147,7 @@ export function Navbar() {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "lg:hidden fixed top-[60px] sm:top-[72px] left-0 right-0 bottom-0 bg-background border-t border-border overflow-hidden",
+            "lg:hidden fixed top-[72px] sm:top-[80px] left-0 right-0 bottom-0 bg-background border-t border-border overflow-hidden",
             isMobileMenuOpen
               ? "opacity-100 visible"
               : "opacity-0 invisible pointer-events-none"
