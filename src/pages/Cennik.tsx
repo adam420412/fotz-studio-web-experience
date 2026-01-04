@@ -48,6 +48,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -748,6 +749,15 @@ export default function Cennik() {
       if (!data.success) {
         throw new Error("Błąd podczas wysyłania zapytania");
       }
+
+      // Send to CRM webhook (fire and forget)
+      sendLeadToCRM({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || undefined,
+        source: "fotz.pl/cennik",
+        notes: `${formData.message}\n\n--- Wybrane usługi ---\n${servicesSummary}\n\n${priceSummary}`,
+      });
 
       toast({
         title: "Zapytanie wysłane!",
