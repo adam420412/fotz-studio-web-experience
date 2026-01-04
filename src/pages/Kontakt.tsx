@@ -28,13 +28,13 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefon",
-    content: "+48 123 456 789",
+    content: "+48 790 814 814",
     subtitle: "Pon-Pt 9:00-17:00",
   },
   {
     icon: Mail,
     title: "Email",
-    content: "hello@fotz.pl",
+    content: "adam@fotz.pl",
     subtitle: "Odpowiadamy w 24h",
   },
   {
@@ -343,7 +343,7 @@ export default function Kontakt() {
                   Zadzwoń do nas lub umów bezpłatną konsultację online.
                 </p>
                 <Button variant="hero" asChild className="h-9 sm:h-10 text-sm sm:text-base">
-                  <a href="tel:+48123456789">
+                  <a href="tel:+48790814814">
                     <Phone className="w-4 h-4" />
                     Zadzwoń teraz
                   </a>
