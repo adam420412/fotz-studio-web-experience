@@ -8,7 +8,7 @@ import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
-import sookarImg from "@/assets/portfolio/sookar.jpg";
+import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 
 const services = [
   {
@@ -308,18 +308,18 @@ const MarketingTurystyka = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <Link to="/case-study-sookar" className="block group">
+              <Link to="/case-study-apartamenty" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
                   <img 
-                    src={sookarImg} 
-                    alt="Sookar - case study turystyka"
+                    src={apartamentyImg} 
+                    alt="Apartamenty Chorwacja - case study turystyka"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6 text-white">
                     <span className="text-sm opacity-80 mb-1 block">Case Study</span>
-                    <p className="text-xl font-heading font-bold mb-1">Sookar</p>
-                    <p className="text-sm opacity-80">Branding i strona dla turystyki</p>
+                    <p className="text-xl font-heading font-bold mb-1">Apartamenty Chorwacja</p>
+                    <p className="text-sm opacity-80">Strona i marketing dla obiektu wypoczynkowego</p>
                   </div>
                 </div>
               </Link>
