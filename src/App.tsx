@@ -42,6 +42,7 @@ import BlogLandingPage from "./pages/BlogLandingPage";
 import BlogInfluencerMarketing from "./pages/BlogInfluencerMarketing";
 import BlogBrandingStartupy from "./pages/BlogBrandingStartupy";
 import BlogUXEcommerce from "./pages/BlogUXEcommerce";
+import BlogSEOEcommerce from "./pages/BlogSEOEcommerce";
 import Poradniki from "./pages/Poradniki";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
@@ -173,6 +174,7 @@ const App = () => (
             <Route path="/blog/influencer-marketing-polska" element={<BlogInfluencerMarketing />} />
             <Route path="/blog/branding-dla-startupow" element={<BlogBrandingStartupy />} />
             <Route path="/blog/ux-ui-ecommerce" element={<BlogUXEcommerce />} />
+            <Route path="/blog/seo-ecommerce" element={<BlogSEOEcommerce />} />
             <Route path="/poradniki" element={<Poradniki />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />

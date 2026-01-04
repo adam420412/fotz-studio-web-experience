@@ -15,13 +15,22 @@ interface Article {
 // All blog articles data for cross-referencing
 const allArticles: Article[] = [
   {
+    id: "seo-ecommerce",
+    title: "SEO dla sklepów internetowych - jak pozycjonować e-commerce",
+    excerpt: "Kompletny poradnik SEO dla e-commerce. Strategie pozycjonowania sklepów internetowych.",
+    category: "Poradniki",
+    date: "4 Jan 2025",
+    readTime: "18 min",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+  },
+  {
     id: "ux-ui-ecommerce",
     title: "UX/UI w e-commerce - jak projektować sklepy internetowe które sprzedają",
     excerpt: "Kompletny poradnik UX/UI dla sklepów internetowych. Projektowanie sklepów zwiększających konwersję.",
     category: "Poradniki",
     date: "4 Jan 2025",
     readTime: "20 min",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
   },
   {
     id: "branding-dla-startupow",
