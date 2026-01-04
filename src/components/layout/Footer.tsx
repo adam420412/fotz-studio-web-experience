@@ -58,6 +58,12 @@ const footerLinks = {
     { name: "Kontakt", href: "/kontakt" },
     { name: "Panel klienta", href: "https://panel.fotz.pl/login", external: true },
   ],
+  narzedzia: [
+    { name: "Quiz rekomendacyjny", href: "/quiz" },
+    { name: "Kalkulator ROI", href: "/kalkulator-roi" },
+    { name: "Słownik marketingowy", href: "/slownik-marketingowy" },
+    { name: "Darmowe zasoby", href: "/zasoby" },
+  ],
 };
 
 const socialLinks = [
@@ -298,6 +304,22 @@ export function Footer() {
                         {link.name}
                       </Link>
                     )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Narzędzia</h4>
+              <ul className="space-y-2 md:space-y-3">
+                {footerLinks.narzedzia.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      to={link.href}
+                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
+                    >
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
