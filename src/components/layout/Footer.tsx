@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube, Building2 } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube, Building2, Send, Loader2, CheckCircle } from "lucide-react";
 import logoFotz from "@/assets/logo-fotz.png";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { z } from "zod";
+
+const emailSchema = z.string().trim().email("Nieprawidłowy email");
 
 const footerLinks = {
   uslugi: [
@@ -61,8 +67,85 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError("");
+
+    const result = emailSchema.safeParse(email);
+    if (!result.success) {
+      setError(result.error.errors[0].message);
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          subject: "Newsletter signup - Footer",
+          from_name: "Fotz Studio - Newsletter",
+          email: email,
+          message: "Zapis do newslettera z footera",
+        }),
+      });
+      const data = await response.json();
+      if (!data.success) throw new Error();
+      setIsSubmitted(true);
+    } catch {
+      setError("Błąd. Spróbuj ponownie.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer className="bg-background border-t border-border">
+      {/* Newsletter Banner */}
+      <div className="bg-card border-b border-border">
+        <div className="container-wide section-padding py-8 md:py-12">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-center md:text-left">
+              <h3 className="text-lg md:text-xl font-heading font-bold mb-1">
+                Zapisz się do newslettera
+              </h3>
+              <p className="text-muted-foreground text-sm">
+                Otrzymuj porady marketingowe i checklisty do pobrania
+              </p>
+            </div>
+            {isSubmitted ? (
+              <div className="flex items-center gap-2 text-primary">
+                <CheckCircle className="w-5 h-5" />
+                <span className="font-medium">Dziękujemy za zapis!</span>
+              </div>
+            ) : (
+              <form onSubmit={handleNewsletterSubmit} className="flex gap-2 w-full md:w-auto max-w-md">
+                <div className="flex-1">
+                  <Input
+                    type="email"
+                    placeholder="Twój email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="h-11 bg-secondary border-border"
+                  />
+                  {error && <p className="text-xs text-red-500 mt-1">{error}</p>}
+                </div>
+                <Button type="submit" variant="hero" className="h-11" disabled={isSubmitting}>
+                  {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
+                </Button>
+              </form>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer */}
       {/* Main Footer */}
       <div className="section-padding py-10 md:py-16">
         <div className="container-wide">

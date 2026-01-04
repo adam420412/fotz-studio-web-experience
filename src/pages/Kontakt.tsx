@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader2 } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader2, Calendar, Calculator, ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,6 +8,8 @@ import { useToast } from "@/hooks/use-toast";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { z } from "zod";
+import { Link } from "react-router-dom";
+import { BookingCalendar } from "@/components/BookingCalendar";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -350,6 +352,74 @@ export default function Kontakt() {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Booking Calendar Section */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left - Info */}
+            <div>
+              <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
+                <Calendar className="w-4 h-4" />
+                Rezerwacja online
+              </span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+                Umów <span className="text-gradient">bezpłatną konsultację</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Wybierz dogodny termin na 30-minutową rozmowę. Przeanalizujemy 
+                Twoje potrzeby marketingowe i zaproponujemy rozwiązania.
+              </p>
+
+              <div className="space-y-4">
+                {[
+                  "30 minut rozmowy z ekspertem",
+                  "Analiza Twojej obecnej sytuacji",
+                  "Konkretne rekomendacje działań",
+                  "Bez zobowiązań",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center">
+                      <CheckCircle className="w-4 h-4 text-primary" />
+                    </div>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right - Calendar */}
+            <div className="bg-card rounded-2xl p-6 sm:p-8 border border-border">
+              <BookingCalendar />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing CTA Section */}
+      <section className="section-padding bg-card">
+        <div className="container-wide">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
+              <Calculator className="w-4 h-4" />
+              Cennik usług
+            </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Sprawdź ceny i <span className="text-gradient">skonfiguruj ofertę</span>
+            </h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Skorzystaj z naszego interaktywnego konfiguratora cennika. 
+              Wybierz usługi i zobacz szacunkowy koszt w czasie rzeczywistym.
+            </p>
+            <Button variant="hero" size="xl" asChild>
+              <Link to="/cennik" className="group">
+                Przejdź do cennika
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
