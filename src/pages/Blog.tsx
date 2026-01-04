@@ -18,6 +18,30 @@ const categories = [
 
 const posts = [
   {
+    id: "ai-w-marketingu-msp-2025",
+    title: "AI w marketingu - praktyczne zastosowania dla MŚP w 2025",
+    excerpt:
+      "Poznaj praktyczne zastosowania sztucznej inteligencji w marketingu dla małych i średnich firm. Narzędzia AI, automatyzacja i strategie na 2025 rok.",
+    category: "Reklamy",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "15 min",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070",
+    featured: true,
+  },
+  {
+    id: "google-ads-vs-facebook-ads",
+    title: "Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu?",
+    excerpt:
+      "Porównanie Google Ads i Facebook Ads. Dowiedz się, która platforma reklamowa przyniesie lepsze wyniki dla Twojej firmy.",
+    category: "Reklamy",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "18 min",
+    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2f1d9?q=80&w=2074",
+    featured: false,
+  },
+  {
     id: "kampania-reklamowa-marketingowa",
     title: "Kampania Reklamowa i Marketingowa: Przykłady i Definicja",
     excerpt:
@@ -27,7 +51,7 @@ const posts = [
     date: "15 Jan 2025",
     readTime: "12 min",
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
-    featured: true,
+    featured: false,
   },
   {
     id: "ile-kosztuje-strona-internetowa",
