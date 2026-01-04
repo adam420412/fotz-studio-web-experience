@@ -14,9 +14,34 @@ const categories = [
   "Reklamy",
   "Video",
   "Branding",
+  "Poradniki",
 ];
 
 const posts = [
+  {
+    id: "branding-dla-startupow",
+    title: "Branding dla startupów - jak zbudować silną markę od zera",
+    excerpt:
+      "Kompletny poradnik budowania marki dla startupów. Strategia, identyfikacja wizualna, komunikacja i pozycjonowanie.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "19 min",
+    image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070",
+    featured: true,
+  },
+  {
+    id: "influencer-marketing-polska",
+    title: "Influencer marketing w Polsce - jak współpracować z influencerami",
+    excerpt:
+      "Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę i mierzyć efekty kampanii.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "17 min",
+    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
+    featured: false,
+  },
   {
     id: "instagram-reels-vs-tiktok",
     title: "Instagram Reels vs TikTok - gdzie publikować wideo w 2025?",
@@ -27,14 +52,14 @@ const posts = [
     date: "4 Jan 2025",
     readTime: "14 min",
     image: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=2074",
-    featured: true,
+    featured: false,
   },
   {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
       "Kompletny poradnik tworzenia landing page. Struktura, copywriting, CTA i optymalizacja konwersji.",
-    category: "Strony internetowe",
+    category: "Poradniki",
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "16 min",
@@ -58,7 +83,7 @@ const posts = [
     title: "TikTok dla biznesu - jak skutecznie promować firmę na TikToku",
     excerpt:
       "Kompletny poradnik TikTok dla firm. Dowiedz się jak tworzyć angażujące treści, budować społeczność i wykorzystać TikTok Ads.",
-    category: "Social Media",
+    category: "Poradniki",
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "16 min",
@@ -70,7 +95,7 @@ const posts = [
     title: "SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025",
     excerpt:
       "Jak wypozycjonować firmę lokalnie w Poznaniu? Google Moja Firma, NAP, recenzje i strategie na 2025 rok.",
-    category: "Strony internetowe",
+    category: "Poradniki",
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "20 min",
