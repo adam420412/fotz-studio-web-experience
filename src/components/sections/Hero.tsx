@@ -19,20 +19,16 @@ export function Hero() {
 
   return (
     <section ref={containerRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background - static for performance */}
+      {/* Static Background Image - for performance */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          poster="/hero-poster.jpg"
+        <img
+          src="/hero-poster.jpg"
+          alt="Fotz Studio Background"
           className="w-full h-full object-cover"
-        >
-          <source src="/hero-video.mp4" type="video/mp4" />
-        </video>
+          loading="eager"
+          fetchPriority="high"
+        />
       </div>
 
       {/* Static Background Elements - no animations for performance */}

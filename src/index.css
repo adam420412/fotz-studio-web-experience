@@ -6,6 +6,67 @@
 
 @layer base {
   :root {
+    /* Light mode */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    /* Primary: Burgundy #75143F = hsl(336, 71%, 27%) */
+    --primary: 336 71% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Navy #0F3053 = hsl(209, 69%, 19%) */
+    --secondary: 209 69% 19%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 336 71% 27%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 336 71% 27%;
+
+    --radius: 0.75rem;
+
+    /* Custom Fotz Studio tokens */
+    --glow-primary: 0 0 60px hsla(336, 71%, 27%, 0.3);
+    --glow-subtle: 0 0 100px hsla(336, 71%, 27%, 0.1);
+    --glow-secondary: 0 0 80px hsla(209, 69%, 19%, 0.2);
+    
+    --gradient-brand: linear-gradient(180deg, hsl(336, 71%, 27%) 0%, hsl(209, 69%, 19%) 100%);
+    --gradient-brand-premium: linear-gradient(180deg, hsl(336, 71%, 27%) 0%, hsl(292, 36%, 21%) 45%, hsl(209, 69%, 19%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 98%) 0%, hsl(0, 0%, 95%) 50%, hsl(0, 0%, 98%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 97%) 100%);
+    --gradient-text: linear-gradient(135deg, hsl(0, 0%, 10%) 0%, hsl(0, 0%, 30%) 100%);
+    
+    --font-heading: 'Syne', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 336 71% 27%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 209 69% 19%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 336 71% 27%;
+  }
+
+  .dark {
     /* Fotz Studio Brand Colors - from logo gradient */
     /* Top: #75143F (burgundy) → Bottom: #0F3053 (navy) */
     

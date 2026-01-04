@@ -41,6 +41,7 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 // Import wszystkich realizacji
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
@@ -344,6 +345,11 @@ const StronyInternetowe = () => {
       />
 
       <Layout>
+        <PageBreadcrumbs items={[
+          { label: "Usługi", href: "/uslugi" },
+          { label: "Strony Internetowe" },
+        ]} />
+        
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-40 pb-20">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
