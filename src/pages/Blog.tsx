@@ -18,6 +18,30 @@ const categories = [
 
 const posts = [
   {
+    id: "tiktok-dla-biznesu",
+    title: "TikTok dla biznesu - jak skutecznie promować firmę na TikToku",
+    excerpt:
+      "Kompletny poradnik TikTok dla firm. Dowiedz się jak tworzyć angażujące treści, budować społeczność i wykorzystać TikTok Ads.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "16 min",
+    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2074",
+    featured: true,
+  },
+  {
+    id: "seo-lokalne-poznan-poradnik",
+    title: "SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025",
+    excerpt:
+      "Jak wypozycjonować firmę lokalnie w Poznaniu? Google Moja Firma, NAP, recenzje i strategie na 2025 rok.",
+    category: "Strony internetowe",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "20 min",
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076",
+    featured: false,
+  },
+  {
     id: "ai-w-marketingu-msp-2025",
     title: "AI w marketingu - praktyczne zastosowania dla MŚP w 2025",
     excerpt:
@@ -27,7 +51,7 @@ const posts = [
     date: "4 Jan 2025",
     readTime: "15 min",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070",
-    featured: true,
+    featured: false,
   },
   {
     id: "google-ads-vs-facebook-ads",

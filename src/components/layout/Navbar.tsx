@@ -3,17 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { useLanguage } from "@/contexts/LanguageContext";
 import { MegaMenu } from "./MegaMenu";
 import logoFotz from "@/assets/logo-fotz.png";
 
 const navLinksData = [
-  { name: { pl: "Realizacje", en: "Portfolio" }, href: "/realizacje" },
-  { name: { pl: "Dla kogo", en: "For whom" }, href: "/dla-kogo" },
-  { name: { pl: "Blog", en: "Blog" }, href: "/blog" },
-  { name: { pl: "O nas", en: "About us" }, href: "/o-nas" },
-  { name: { pl: "Kontakt", en: "Contact" }, href: "/kontakt" },
+  { name: "Realizacje", href: "/realizacje" },
+  { name: "Dla kogo", href: "/dla-kogo" },
+  { name: "Blog", href: "/blog" },
+  { name: "O nas", href: "/o-nas" },
+  { name: "Kontakt", href: "/kontakt" },
 ];
 
 const mobileServicesData = [
@@ -37,12 +35,8 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const location = useLocation();
-  const { language, t } = useLanguage();
 
-  const navLinks = navLinksData.map(link => ({
-    name: link.name[language],
-    href: link.href
-  }));
+  const navLinks = navLinksData;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +71,7 @@ export function Navbar() {
               <img 
                 src={logoFotz} 
                 alt="Fotz Studio" 
-                className="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24 w-auto"
+                className="h-14 sm:h-16 md:h-20 lg:h-24 xl:h-28 w-auto"
               />
             </Link>
 
@@ -93,7 +87,7 @@ export function Navbar() {
                     : "text-foreground/80 hover:text-foreground"
                 )}
               >
-                {t("Usługi", "Services")}
+                Usługi
                 <ChevronDown className={cn(
                   "w-4 h-4 transition-transform duration-200",
                   isMegaMenuOpen && "rotate-180"
@@ -124,12 +118,11 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* Language Switcher & CTA Button */}
+            {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4">
-              <LanguageSwitcher />
               <Button variant="hero" size="lg" asChild>
                 <Link to="/kontakt" className="group">
-                  {t("Bezpłatna konsultacja", "Free consultation")}
+                  Bezpłatna konsultacja
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
@@ -167,7 +160,7 @@ export function Navbar() {
                   to="/uslugi" 
                   className="text-xs sm:text-sm text-muted-foreground mb-3 block hover:text-foreground transition-colors"
                 >
-                  {t("Wszystkie usługi", "All services")} →
+                  Wszystkie usługi →
                 </Link>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-3 sm:gap-x-4 gap-y-1.5 sm:gap-y-2">
                   {mobileServicesData.map((link) => (
@@ -201,12 +194,9 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-3 sm:pt-4">
-                <LanguageSwitcher />
-              </div>
               <Button variant="hero" size="default" className="mt-3 sm:mt-4 text-sm sm:text-base" asChild>
                 <Link to="/kontakt">
-                  {t("Bezpłatna konsultacja", "Free consultation")}
+                  Bezpłatna konsultacja
                   <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                 </Link>
               </Button>

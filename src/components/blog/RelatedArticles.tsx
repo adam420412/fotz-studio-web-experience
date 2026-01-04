@@ -15,6 +15,24 @@ interface Article {
 // All blog articles data for cross-referencing
 const allArticles: Article[] = [
   {
+    id: "tiktok-dla-biznesu",
+    title: "TikTok dla biznesu - jak skutecznie promować firmę na TikToku",
+    excerpt: "Kompletny poradnik TikTok dla firm. Strategie, formaty i TikTok Ads.",
+    category: "Social Media",
+    date: "4 Jan 2025",
+    readTime: "16 min",
+    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2074",
+  },
+  {
+    id: "seo-lokalne-poznan-poradnik",
+    title: "SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025",
+    excerpt: "Jak wypozycjonować firmę lokalnie w Poznaniu? Google Moja Firma, NAP i recenzje.",
+    category: "Strony internetowe",
+    date: "4 Jan 2025",
+    readTime: "20 min",
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076",
+  },
+  {
     id: "ai-w-marketingu-msp-2025",
     title: "AI w marketingu - praktyczne zastosowania dla MŚP w 2025",
     excerpt: "Poznaj praktyczne zastosowania sztucznej inteligencji w marketingu dla małych i średnich firm.",
