@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
 import { Preloader } from "@/components/Preloader";
-import { OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
 
 // Lazy load sections below the fold for better LCP
 const VideoShowcase = lazy(() => import("@/components/sections/VideoShowcase").then(m => ({ default: m.VideoShowcase })));
@@ -51,12 +50,6 @@ const Index = () => {
         {/* Preload critical LCP image */}
         <link rel="preload" href="/hero-poster.jpg" as="image" />
       </Helmet>
-      <OrganizationSchema />
-      <WebPageSchema 
-        title="Agencja Marketingowa i Reklamowa - Twój Partner Marketingowy"
-        description="Agencja marketingowa i reklamowa - Twój partner marketingowy. Kompleksowe strategie marketingowe, kampanie dla firm, content i skuteczny marketing."
-        url="https://fotz.pl"
-      />
       {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <Layout>
         <Hero />
