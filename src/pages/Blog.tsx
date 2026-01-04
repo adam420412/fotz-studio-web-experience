@@ -19,6 +19,18 @@ const categories = [
 
 const posts = [
   {
+    id: "seo-ecommerce",
+    title: "SEO dla sklepów internetowych - jak pozycjonować e-commerce",
+    excerpt:
+      "Kompletny poradnik SEO dla e-commerce. Poznaj strategie pozycjonowania sklepów internetowych, optymalizację kategorii i kart produktowych.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "18 min",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
+    featured: true,
+  },
+  {
     id: "ux-ui-ecommerce",
     title: "UX/UI w e-commerce - jak projektować sklepy internetowe które sprzedają",
     excerpt:
@@ -27,8 +39,8 @@ const posts = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "20 min",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
-    featured: true,
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    featured: false,
   },
   {
     id: "branding-dla-startupow",

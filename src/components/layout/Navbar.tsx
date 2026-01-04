@@ -22,10 +22,11 @@ const mobileServicesData = [
   { name: "Strony Internetowe", href: "/strony-internetowe" },
   { name: "Pozycjonowanie SEO", href: "/pozycjonowanie" },
   { name: "Google Maps", href: "/pozycjonowanie-google-maps" },
-  { name: "Produkcja Filmów", href: "/produkcja-filmow" },
+  { name: "Produkcja Filmów", href: "/produkcja-filmow-poznan" },
   { name: "Spoty Reklamowe", href: "/spoty-reklamowe" },
   { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
-  { name: "Fotografia", href: "/fotografia" },
+  { name: "Fotografia", href: "/fotograf-poznan" },
+  { name: "Fotografia z drona", href: "/fotografia-z-drona" },
   { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
   { name: "Obsługa graficzna", href: "/agencja-graficzna" },
 ];
@@ -146,11 +147,12 @@ export function Navbar() {
         {/* Mobile Menu */}
         <div
           className={cn(
-            "lg:hidden fixed top-[60px] sm:top-[72px] left-0 right-0 bottom-0 bg-background/98 backdrop-blur-xl border-t border-border transition-all duration-300 overflow-hidden",
+            "lg:hidden fixed top-[60px] sm:top-[72px] left-0 right-0 bottom-0 bg-background border-t border-border overflow-hidden",
             isMobileMenuOpen
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 -translate-y-4 pointer-events-none"
+              ? "opacity-100 visible"
+              : "opacity-0 invisible pointer-events-none"
           )}
+          style={{ transition: 'opacity 0.15s ease-out, visibility 0.15s ease-out' }}
         >
           <div className="h-full overflow-y-auto overscroll-contain">
             <div className="container-wide px-4 sm:px-6 py-6 flex flex-col gap-3">
