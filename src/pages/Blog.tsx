@@ -18,6 +18,18 @@ const categories = [
 
 const posts = [
   {
+    id: "email-marketing-2025",
+    title: "Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję",
+    excerpt:
+      "Kompletny poradnik email marketingu. Jak budować listę mailingową, tworzyć skuteczne kampanie i zwiększać konwersję.",
+    category: "Reklamy",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "18 min",
+    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=2074",
+    featured: true,
+  },
+  {
     id: "tiktok-dla-biznesu",
     title: "TikTok dla biznesu - jak skutecznie promować firmę na TikToku",
     excerpt:
@@ -27,7 +39,7 @@ const posts = [
     date: "4 Jan 2025",
     readTime: "16 min",
     image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2074",
-    featured: true,
+    featured: false,
   },
   {
     id: "seo-lokalne-poznan-poradnik",
