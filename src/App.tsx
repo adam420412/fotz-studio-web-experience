@@ -126,6 +126,7 @@ import FAQ from "./pages/FAQ";
 import Cennik from "./pages/Cennik";
 import Podziekowanie from "./pages/Podziekowanie";
 import Zainstaluj from "./pages/Zainstaluj";
+import AdminRezerwacje from "./pages/AdminRezerwacje";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -259,6 +260,7 @@ const App = () => (
             <Route path="/cennik" element={<Cennik />} />
             <Route path="/podziekowanie" element={<Podziekowanie />} />
             <Route path="/zainstaluj" element={<Zainstaluj />} />
+            <Route path="/admin/rezerwacje" element={<AdminRezerwacje />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
