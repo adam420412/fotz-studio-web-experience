@@ -8,7 +8,25 @@ import { useState } from "react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { useCountUp } from "@/hooks/useCountUp";
 import { OtherIndustries } from "@/components/sections/OtherIndustries";
+import { GalleryImage } from "@/components/GalleryImage";
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
+
+// Galeria turystyczna - eventy, doświadczenia, atrakcje
+import aerialViewImg from "@/assets/drone/event-aerial-view.jpg";
+import concertImg from "@/assets/drone/event-concert-1.jpg";
+import picnicTopImg from "@/assets/drone/event-picnic-top.jpg";
+import koncertImg from "@/assets/enea/dawid-podsiadlo-koncert.jpg";
+import cateringImg from "@/assets/enea/catering-event.jpg";
+import loungeImg from "@/assets/enea/lech-poznan-lounge.jpg";
+
+const tourismGalleryImages = [
+  { src: aerialViewImg, alt: "Ujęcie z drona - event plenerowy", category: "Eventy" },
+  { src: koncertImg, alt: "Koncert Dawid Podsiadło - stadion", category: "Koncerty" },
+  { src: picnicTopImg, alt: "Piknik z lotu ptaka", category: "Eventy" },
+  { src: cateringImg, alt: "Catering eventowy premium", category: "Gastronomia" },
+  { src: concertImg, alt: "Koncert - ujęcie z drona", category: "Koncerty" },
+  { src: loungeImg, alt: "Loża VIP stadion", category: "Premium" },
+];
 
 const services = [
   {
@@ -328,8 +346,50 @@ const MarketingTurystyka = () => {
         </div>
       </section>
 
-      {/* Related Services */}
+      {/* Galeria turystyczna */}
       <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-3xl mx-auto mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Nasze <span className="text-gradient-premium">realizacje turystyczne</span>
+            </h2>
+            <p className="text-foreground/70">
+              Eventy, koncerty i doświadczenia, które promowaliśmy dla branży turystycznej i eventowej
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {tourismGalleryImages.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative group"
+              >
+                <GalleryImage
+                  src={image.src}
+                  alt={image.alt}
+                  className="aspect-[4/3] rounded-xl overflow-hidden"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent rounded-b-xl opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="text-xs text-white/80">{image.category}</span>
+                  <p className="text-sm text-white font-medium">{image.alt}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="section-padding bg-card">
         <div className="container-wide">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
