@@ -5,6 +5,7 @@ import { FloatingCTA } from "../FloatingCTA";
 import { PageProgressBar } from "../PageProgressBar";
 import { WhatsAppWidget } from "../WhatsAppWidget";
 import { ExitIntentPopup } from "../ExitIntentPopup";
+import { ChatbotFAQ } from "../ChatbotFAQ";
 
 interface LayoutProps {
   children: ReactNode;
@@ -19,6 +20,7 @@ export function Layout({ children }: LayoutProps) {
       <Footer />
       <FloatingCTA />
       <WhatsAppWidget />
+      <ChatbotFAQ />
       <ExitIntentPopup />
     </div>
   );
