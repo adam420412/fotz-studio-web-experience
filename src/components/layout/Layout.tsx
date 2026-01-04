@@ -3,6 +3,9 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { FloatingCTA } from "../FloatingCTA";
 import { PageProgressBar } from "../PageProgressBar";
+import { NewsletterPopup } from "../NewsletterPopup";
+import { WhatsAppWidget } from "../WhatsAppWidget";
+import { ExitIntentPopup } from "../ExitIntentPopup";
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +19,9 @@ export function Layout({ children }: LayoutProps) {
       <main className="flex-1">{children}</main>
       <Footer />
       <FloatingCTA />
+      <WhatsAppWidget />
+      <NewsletterPopup />
+      <ExitIntentPopup />
     </div>
   );
 }
