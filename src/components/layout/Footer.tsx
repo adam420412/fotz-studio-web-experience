@@ -56,6 +56,7 @@ const footerLinks = {
     { name: "Kariera", href: "/kariera" },
     { name: "FAQ", href: "/faq" },
     { name: "Kontakt", href: "/kontakt" },
+    { name: "Panel klienta", href: "https://panel.fotz.pl/login", external: true },
   ],
 };
 
@@ -279,12 +280,24 @@ export function Footer() {
               <ul className="space-y-2 md:space-y-3">
                 {footerLinks.firma.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
-                      {link.name}
-                    </Link>
+                    {'external' in link && link.external ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm flex items-center gap-1"
+                      >
+                        {link.name}
+                        <span className="text-xs text-primary">→</span>
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.href}
+                        className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -58,6 +58,83 @@ export function OrganizationSchema({
   );
 }
 
+// LocalBusiness Schema for better local SEO
+interface LocalBusinessSchemaProps {
+  name?: string;
+  description?: string;
+  url?: string;
+  telephone?: string;
+  email?: string;
+  priceRange?: string;
+  openingHours?: string[];
+}
+
+export function LocalBusinessSchema({
+  name = "Fotz Studio - Agencja Marketingowa Poznań",
+  description = "Agencja marketingowa w Poznaniu. Strony internetowe, kampanie reklamowe, social media, produkcja filmowa i branding. Pomagamy firmom zdobywać klientów.",
+  url = "https://fotz.pl",
+  telephone = "+48790814814",
+  email = "adam@fotz.pl",
+  priceRange = "$$",
+  openingHours = ["Mo-Fr 09:00-17:00"],
+}: LocalBusinessSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://fotz.pl/#business",
+    name,
+    description,
+    url,
+    telephone,
+    email,
+    priceRange,
+    image: "https://fotz.pl/logo-fotz.jpg",
+    logo: "https://fotz.pl/logo-fotz.jpg",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Plac Wolności 16",
+      addressLocality: "Poznań",
+      postalCode: "61-739",
+      addressRegion: "Wielkopolskie",
+      addressCountry: "PL",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "52.4084",
+      longitude: "16.9342",
+    },
+    openingHoursSpecification: openingHours.map((hours) => {
+      const [days, time] = hours.split(" ");
+      const [open, close] = time.split("-");
+      return {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: days.split("-").map((d) => d.trim()),
+        opens: open,
+        closes: close,
+      };
+    }),
+    sameAs: [
+      "https://www.facebook.com/fotzstudio",
+      "https://www.instagram.com/fotzstudio",
+      "https://www.linkedin.com/company/fotzstudio",
+      "https://www.youtube.com/@fotzstudio",
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "47",
+      bestRating: "5",
+      worstRating: "1",
+    },
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+}
+
 interface ServiceSchemaProps {
   name: string;
   description: string;
