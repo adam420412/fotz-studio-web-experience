@@ -1,95 +1,234 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MessageCircle, X, Send, Bot, User } from "lucide-react";
+import { MessageCircle, X, Send, Bot, User, Loader2, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { supabase } from "@/integrations/supabase/client";
 
 interface Message {
   id: number;
   text: string;
   isBot: boolean;
+  isAI?: boolean;
 }
 
 interface FAQ {
   keywords: string[];
   answer: string;
+  category?: string;
 }
 
 const faqData: FAQ[] = [
+  // === OGÓLNE ===
   {
-    keywords: ["cennik", "cena", "koszt", "ile kosztuje", "wycena", "budżet"],
-    answer: "Ceny zależą od zakresu projektu. Strony internetowe od 3000 zł, logo od 1500 zł, kampanie reklamowe od 2000 zł/msc. Przygotujemy indywidualną wycenę - wypełnij formularz na stronie /cennik lub umów bezpłatną konsultację."
+    keywords: ["cennik", "cena", "koszt", "ile kosztuje", "wycena", "budżet", "pakiet"],
+    answer: "Ceny zależą od zakresu projektu. Strony internetowe od 3000 zł, logo od 1500 zł, kampanie reklamowe od 2000 zł/msc. Przygotujemy indywidualną wycenę - wypełnij formularz na stronie /cennik lub umów bezpłatną konsultację.",
+    category: "ogólne"
   },
   {
-    keywords: ["kontakt", "telefon", "email", "zadzwonić", "napisać"],
-    answer: "Możesz się z nami skontaktować: 📧 kontakt@fotz.pl, 📱 +48 123 456 789. Biuro czynne pon-pt 9:00-17:00. Możesz też umówić bezpłatną konsultację przez kalendarz na stronie /kontakt."
+    keywords: ["kontakt", "telefon", "email", "zadzwonić", "napisać", "mail"],
+    answer: "Możesz się z nami skontaktować: 📧 kontakt@fotz.pl, 📱 +48 123 456 789. Biuro czynne pon-pt 9:00-17:00. Możesz też umówić bezpłatną konsultację przez kalendarz na stronie /kontakt.",
+    category: "ogólne"
   },
   {
-    keywords: ["strona", "www", "witryna", "website", "landing"],
-    answer: "Tworzymy responsywne strony internetowe, sklepy e-commerce, landing page i aplikacje webowe. Czas realizacji: 2-6 tygodni. Każda strona jest zoptymalizowana pod SEO i szybkość działania. Więcej: /strony-internetowe"
+    keywords: ["konsultacja", "spotkanie", "rozmowa", "bezpłatna", "darmowa"],
+    answer: "Oferujemy bezpłatną 30-minutową konsultację! Omówimy Twoje potrzeby i zaproponujemy rozwiązania. Umów się przez kalendarz na stronie /kontakt lub zadzwoń: +48 123 456 789.",
+    category: "ogólne"
   },
   {
-    keywords: ["logo", "branding", "identyfikacja", "wizualna", "marka"],
-    answer: "Projektujemy kompleksową identyfikację wizualną: logo, księgę znaku, materiały firmowe, social media kit. Proces trwa 2-4 tygodnie i obejmuje research, koncepcje i pełną dokumentację. Więcej: /identyfikacja-wizualna"
+    keywords: ["portfolio", "realizacje", "przykłady", "case study", "projekty"],
+    answer: "Zobacz nasze realizacje na stronie /realizacje. Mamy ponad 200 ukończonych projektów dla firm z różnych branż. Każdy case study zawiera opis wyzwań, procesu i osiągniętych rezultatów.",
+    category: "ogólne"
   },
   {
-    keywords: ["social media", "facebook", "instagram", "tiktok", "posty"],
-    answer: "Prowadzimy kompleksową obsługę social media: strategia, content, grafiki, reklamy. Pakiety od 2000 zł/msc. Tworzymy angażujące treści dopasowane do Twojej branży. Więcej: /social-media"
+    keywords: ["poznań", "wielkopolska", "lokalizacja", "gdzie", "adres", "biuro"],
+    answer: "Siedziba: Poznań, ul. Przykładowa 10. Obsługujemy klientów z całej Polski - pracujemy również zdalnie. Dla klientów z Poznania oferujemy spotkania w naszym biurze lub u Ciebie.",
+    category: "ogólne"
   },
   {
-    keywords: ["reklama", "kampania", "google ads", "facebook ads", "marketing"],
-    answer: "Prowadzimy kampanie w Google Ads, Facebook Ads, Instagram, TikTok i LinkedIn. Optymalizujemy pod ROI i konwersje. Minimalny budżet reklamowy: 1500 zł/msc + prowadzenie. Więcej: /kampanie-reklamowe"
+    keywords: ["współpraca", "jak zacząć", "proces", "etapy", "rozpocząć"],
+    answer: "Proces współpracy: 1) Bezpłatna konsultacja, 2) Brief i wycena, 3) Umowa i zaliczka 50%, 4) Realizacja z Twoim feedbackiem, 5) Akceptacja i rozliczenie. Rozpocznij od kontaktu!",
+    category: "ogólne"
   },
   {
-    keywords: ["seo", "pozycjonowanie", "google", "widoczność"],
-    answer: "Oferujemy kompleksowe SEO: audyt, optymalizacja on-page, link building, content marketing. Efekty widoczne po 3-6 miesiącach. Raportujemy pozycje i ruch co miesiąc. Więcej: /pozycjonowanie"
+    keywords: ["płatność", "faktura", "zaliczka", "rata", "przelew"],
+    answer: "Akceptujemy przelewy i płatności online. Standardowo: 50% zaliczki, 50% po realizacji. Dla większych projektów możliwe raty. Wystawiamy faktury VAT. Szczegóły ustalamy indywidualnie.",
+    category: "ogólne"
   },
   {
-    keywords: ["wideo", "film", "spot", "produkcja", "nagranie"],
-    answer: "Produkujemy spoty reklamowe, filmy korporacyjne, content wideo na social media. Mamy własne studio i sprzęt. Realizacja od 2 tygodni. Ceny od 3000 zł. Więcej: /produkcja-filmow-poznan"
+    keywords: ["gwarancja", "poprawki", "zmiany", "reklamacja", "modyfikacje"],
+    answer: "Oferujemy gwarancję na wszystkie usługi. W cenie projektu: 2 rundy poprawek. Po realizacji: 30 dni na zgłaszanie uwag. Strony WWW objęte 12-miesięczną gwarancją techniczną.",
+    category: "ogólne"
   },
   {
-    keywords: ["czas", "termin", "realizacja", "jak długo", "kiedy"],
-    answer: "Orientacyjne terminy: Logo 2-3 tyg., Strona WWW 3-6 tyg., Sklep e-commerce 4-8 tyg., Kampanie - start w 3-5 dni. Dokładny termin ustalamy indywidualnie po poznaniu zakresu projektu."
+    keywords: ["czas", "termin", "realizacja", "jak długo", "kiedy", "deadline"],
+    answer: "Orientacyjne terminy: Logo 2-3 tyg., Strona WWW 3-6 tyg., Sklep e-commerce 4-8 tyg., Kampanie - start w 3-5 dni. Dokładny termin ustalamy indywidualnie po poznaniu zakresu projektu.",
+    category: "ogólne"
   },
-  {
-    keywords: ["konsultacja", "spotkanie", "rozmowa", "bezpłatna"],
-    answer: "Oferujemy bezpłatną 30-minutową konsultację! Omówimy Twoje potrzeby i zaproponujemy rozwiązania. Umów się przez kalendarz na stronie /kontakt lub zadzwoń: +48 123 456 789."
-  },
-  {
-    keywords: ["portfolio", "realizacje", "przykłady", "case study"],
-    answer: "Zobacz nasze realizacje na stronie /realizacje. Mamy ponad 200 ukończonych projektów dla firm z różnych branż. Każdy case study zawiera opis wyzwań, procesu i osiągniętych rezultatów."
-  },
-  {
-    keywords: ["poznań", "wielkopolska", "lokalizacja", "gdzie"],
-    answer: "Siedziba: Poznań, ul. Przykładowa 10. Obsługujemy klientów z całej Polski - pracujemy również zdalnie. Dla klientów z Poznania oferujemy spotkania w naszym biurze lub u Ciebie."
-  },
-  {
-    keywords: ["współpraca", "jak zacząć", "proces", "etapy"],
-    answer: "Proces współpracy: 1) Bezpłatna konsultacja, 2) Brief i wycena, 3) Umowa i zaliczka 50%, 4) Realizacja z Twoim feedbackiem, 5) Akceptacja i rozliczenie. Rozpocznij od kontaktu!"
-  },
-  {
-    keywords: ["płatność", "faktura", "zaliczka", "rata"],
-    answer: "Akceptujemy przelewy i płatności online. Standardowo: 50% zaliczki, 50% po realizacji. Dla większych projektów możliwe raty. Wystawiamy faktury VAT. Szczegóły ustalamy indywidualnie."
-  },
-  {
-    keywords: ["gwarancja", "poprawki", "zmiany", "reklamacja"],
-    answer: "Oferujemy gwarancję na wszystkie usługi. W cenie projektu: 2 rundy poprawek. Po realizacji: 30 dni na zgłaszanie uwag. Strony WWW objęte 12-miesięczną gwarancją techniczną."
-  }
-];
 
-const defaultResponses = [
-  "Przepraszam, nie znalazłem odpowiedzi na to pytanie. Skontaktuj się z nami bezpośrednio: kontakt@fotz.pl lub +48 123 456 789.",
-  "Nie jestem pewien jak odpowiedzieć. Umów bezpłatną konsultację na /kontakt - nasz zespół odpowie na wszystkie pytania!",
-  "To pytanie wymaga indywidualnej odpowiedzi. Zadzwoń do nas lub napisz - chętnie pomożemy!"
+  // === USŁUGI ===
+  {
+    keywords: ["strona", "www", "witryna", "website", "landing", "strony internetowe"],
+    answer: "Tworzymy responsywne strony internetowe, sklepy e-commerce, landing page i aplikacje webowe. Czas realizacji: 2-6 tygodni. Każda strona jest zoptymalizowana pod SEO i szybkość działania. Więcej: /strony-internetowe",
+    category: "usługi"
+  },
+  {
+    keywords: ["logo", "branding", "identyfikacja", "wizualna", "marka", "znak"],
+    answer: "Projektujemy kompleksową identyfikację wizualną: logo, księgę znaku, materiały firmowe, social media kit. Proces trwa 2-4 tygodnie i obejmuje research, koncepcje i pełną dokumentację. Więcej: /identyfikacja-wizualna",
+    category: "usługi"
+  },
+  {
+    keywords: ["social media", "facebook", "instagram", "tiktok", "posty", "linkedin"],
+    answer: "Prowadzimy kompleksową obsługę social media: strategia, content, grafiki, reklamy. Pakiety od 2000 zł/msc. Tworzymy angażujące treści dopasowane do Twojej branży. Więcej: /social-media",
+    category: "usługi"
+  },
+  {
+    keywords: ["reklama", "kampania", "google ads", "facebook ads", "marketing", "ads"],
+    answer: "Prowadzimy kampanie w Google Ads, Facebook Ads, Instagram, TikTok i LinkedIn. Optymalizujemy pod ROI i konwersje. Minimalny budżet reklamowy: 1500 zł/msc + prowadzenie. Więcej: /kampanie-reklamowe",
+    category: "usługi"
+  },
+  {
+    keywords: ["seo", "pozycjonowanie", "google", "widoczność", "wyszukiwarka"],
+    answer: "Oferujemy kompleksowe SEO: audyt, optymalizacja on-page, link building, content marketing. Efekty widoczne po 3-6 miesiącach. Raportujemy pozycje i ruch co miesiąc. Więcej: /pozycjonowanie",
+    category: "usługi"
+  },
+  {
+    keywords: ["wideo", "film", "spot", "produkcja", "nagranie", "filmów"],
+    answer: "Produkujemy spoty reklamowe, filmy korporacyjne, content wideo na social media. Mamy własne studio i sprzęt. Realizacja od 2 tygodni. Ceny od 3000 zł. Więcej: /produkcja-filmow-poznan",
+    category: "usługi"
+  },
+  {
+    keywords: ["sklep", "e-commerce", "ecommerce", "sprzedaż online", "woocommerce", "shopify"],
+    answer: "Tworzymy sklepy internetowe na WooCommerce, Shopify i dedykowanych platformach. Integracja z płatnościami, kurierami i systemami ERP. Czas realizacji: 4-8 tygodni. Więcej: /e-commerce-tworzenie",
+    category: "usługi"
+  },
+  {
+    keywords: ["dron", "drone", "ujęcia", "z góry", "lotnicze", "aerial"],
+    answer: "Oferujemy profesjonalne ujęcia z drona: nieruchomości, eventy, produkcja filmowa. Mamy licencjonowanych operatorów i ubezpieczenie. Ceny od 800 zł za sesję. Więcej: /fotografia-z-drona",
+    category: "usługi"
+  },
+  {
+    keywords: ["wizualizacja", "3d", "render", "architektoniczna", "produktowa"],
+    answer: "Tworzymy fotorealistyczne wizualizacje 3D: architektoniczne, produktowe, wnętrz. Idealne dla deweloperów i producentów. Czas realizacji: 1-3 tygodnie. Więcej: /wizualizacje-3d",
+    category: "usługi"
+  },
+  {
+    keywords: ["podcast", "studio", "nagranie audio", "podcastowe"],
+    answer: "Mamy profesjonalne studio podcastowe w Poznaniu. Oferujemy nagranie, montaż i dystrybucję. Wynajem studia od 150 zł/h. Więcej: /studio-podcastowe",
+    category: "usługi"
+  },
+
+  // === BRANŻE ===
+  {
+    keywords: ["restauracja", "gastronomia", "kawiarnia", "bar", "food", "jedzenie"],
+    answer: "Specjalizujemy się w marketingu gastronomicznym: food photography, social media, menu design, Google Maps. Współpracowaliśmy z 50+ restauracjami w Poznaniu. Więcej: /marketing-gastronomia",
+    category: "branże"
+  },
+  {
+    keywords: ["nieruchomości", "deweloper", "mieszkania", "osiedle", "inwestycja"],
+    answer: "Dla deweloperów oferujemy: wizualizacje 3D, strony inwestycji, kampanie lead generation, wirtualne spacery. Mamy doświadczenie z 20+ inwestycjami. Więcej: /marketing-nieruchomosci",
+    category: "branże"
+  },
+  {
+    keywords: ["lekarz", "klinika", "medycyna", "gabinet", "stomatolog", "zdrowie"],
+    answer: "Marketing medyczny z zachowaniem etyki: SEO lokalne, Google Ads, strony gabinetów, social media. Znamy regulacje branżowe. Więcej: /marketing-medyczny",
+    category: "branże"
+  },
+  {
+    keywords: ["beauty", "salon", "kosmetyczka", "fryzjer", "spa", "uroda"],
+    answer: "Dla branży beauty: Instagram marketing, rezerwacje online, content wideo, influencer marketing. Efektowne portfolio i kampanie. Więcej: /marketing-beauty",
+    category: "branże"
+  },
+  {
+    keywords: ["it", "software", "startup", "technologia", "saas", "aplikacja"],
+    answer: "Marketing dla IT i startupów: landing page, lead generation, content marketing B2B, LinkedIn Ads. Mówimy językiem technologii. Więcej: /marketing-it",
+    category: "branże"
+  },
+  {
+    keywords: ["samochód", "auto", "warsztat", "dealer", "motoryzacja", "car"],
+    answer: "Dla automotive: fotografia samochodowa, wideo, Google Ads dla dealerów, social media. Rozumiemy pasję motoryzacyjną. Więcej: /marketing-automotive",
+    category: "branże"
+  },
+  {
+    keywords: ["hotel", "turystyka", "pensjonat", "agroturystyka", "wakacje"],
+    answer: "Marketing turystyczny: strony rezerwacyjne, SEO lokalne, Google Hotel Ads, content wideo. Pomagamy zwiększyć obłożenie. Więcej: /marketing-turystyka",
+    category: "branże"
+  },
+  {
+    keywords: ["edukacja", "szkoła", "kurs", "szkolenie", "uczelnia"],
+    answer: "Marketing edukacyjny: kampanie rekrutacyjne, social media, content marketing, strony kursów. Zwiększamy liczbę zapisów. Więcej: /marketing-edukacja",
+    category: "branże"
+  },
+  {
+    keywords: ["sklep online", "ecommerce", "retail", "sprzedaż", "produkty"],
+    answer: "Dla e-commerce: Performance marketing, Google Shopping, remarketing, email marketing. Zwiększamy sprzedaż i ROAS. Więcej: /marketing-ecommerce",
+    category: "branże"
+  },
+  {
+    keywords: ["prawnik", "kancelaria", "adwokat", "finanse", "księgowość"],
+    answer: "Marketing dla prawa i finansów: SEO, Google Ads, LinkedIn, content ekspercki. Z zachowaniem etyki zawodowej. Więcej: /marketing-prawo-finanse",
+    category: "branże"
+  },
+  {
+    keywords: ["produkcja", "przemysł", "fabryka", "b2b", "produkcyjny"],
+    answer: "Marketing B2B dla przemysłu: strony produktowe, katalogi, LinkedIn Ads, targi. Rozumiemy specyfikę branży. Więcej: /marketing-produkcja",
+    category: "branże"
+  },
+  {
+    keywords: ["ngo", "fundacja", "stowarzyszenie", "organizacja", "charytatywna"],
+    answer: "Marketing dla NGO: strony, kampanie fundraisingowe, social media, events. Specjalne warunki cenowe dla organizacji non-profit. Więcej: /marketing-ngo",
+    category: "branże"
+  },
+
+  // === DODATKOWE ===
+  {
+    keywords: ["usługi", "oferta", "co robicie", "czym się zajmujecie"],
+    answer: "FOTZ Studio oferuje: strony WWW, identyfikację wizualną, social media, kampanie reklamowe, SEO, produkcję wideo, fotografie, wizualizacje 3D. Pełna lista usług: /uslugi",
+    category: "ogólne"
+  },
+  {
+    keywords: ["zespół", "pracownicy", "kto", "specjaliści"],
+    answer: "Nasz zespół to 12+ specjalistów: stratedzy, graficy, developerzy, copywriterzy, specjaliści ads i SEO. Każdy projekt prowadzi dedykowany opiekun. Poznaj nas: /o-nas",
+    category: "ogólne"
+  },
+  {
+    keywords: ["doświadczenie", "od kiedy", "ile lat", "historia"],
+    answer: "FOTZ Studio działa od 2015 roku. Zrealizowaliśmy ponad 500 projektów dla 200+ klientów z różnych branż. Zobacz nasze case studies: /realizacje",
+    category: "ogólne"
+  },
+  {
+    keywords: ["klient", "dla kogo", "firma", "współpracujecie"],
+    answer: "Współpracujemy z firmami każdej wielkości: od startupów po korporacje. Obsługujemy klientów z całej Polski, ze szczególnym focusem na Wielkopolskę. Zobacz: /dla-kogo",
+    category: "ogólne"
+  },
+  {
+    keywords: ["akademia", "szkolenie", "nauka", "kurs marketingowy"],
+    answer: "FOTZ Akademia to platforma z materiałami edukacyjnymi o marketingu. Webinary, e-booki, checklisty dla przedsiębiorców. Sprawdź: /akademia",
+    category: "ogólne"
+  },
+  {
+    keywords: ["blog", "artykuły", "poradnik", "wiedza"],
+    answer: "Na naszym blogu znajdziesz poradniki o marketingu, SEO, social media i reklamach. Nowe artykuły co tydzień. Czytaj: /blog",
+    category: "ogólne"
+  },
+  {
+    keywords: ["quiz", "test", "która usługa", "rekomendacja"],
+    answer: "Nie wiesz, czego potrzebujesz? Wypełnij nasz quiz - dobierzemy usługi do Twoich potrzeb i budżetu! Sprawdź: /quiz",
+    category: "ogólne"
+  },
+  {
+    keywords: ["kalkulator", "roi", "zwrot", "inwestycja"],
+    answer: "Sprawdź nasz kalkulator ROI - oblicz potencjalny zwrot z inwestycji w marketing dla Twojej branży. Wypróbuj: /kalkulator-roi",
+    category: "ogólne"
+  }
 ];
 
 const quickQuestions = [
   "Ile kosztuje strona www?",
   "Jak długo trwa realizacja?",
   "Jak umówić konsultację?",
-  "Jakie usługi oferujecie?"
+  "Jakie branże obsługujecie?"
 ];
 
 export function ChatbotFAQ() {
@@ -97,11 +236,12 @@ export function ChatbotFAQ() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Cześć! 👋 Jestem asystentem FOTZ. Jak mogę Ci pomóc? Możesz zadać pytanie lub wybrać jedno z poniższych:",
+      text: "Cześć! 👋 Jestem asystentem FOTZ Studio. Jak mogę Ci pomóc? Możesz zadać pytanie lub wybrać jedno z poniższych:",
       isBot: true
     }
   ]);
   const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -117,7 +257,7 @@ export function ChatbotFAQ() {
     }
   }, [isOpen]);
 
-  const findAnswer = (question: string): string => {
+  const findFAQAnswer = (question: string): string | null => {
     const lowerQuestion = question.toLowerCase();
     
     for (const faq of faqData) {
@@ -126,12 +266,30 @@ export function ChatbotFAQ() {
       }
     }
     
-    return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+    return null;
   };
 
-  const handleSend = (text?: string) => {
+  const getAIResponse = async (question: string): Promise<string> => {
+    try {
+      const { data, error } = await supabase.functions.invoke('chatbot-ai', {
+        body: { message: question }
+      });
+
+      if (error) {
+        console.error('AI function error:', error);
+        throw error;
+      }
+
+      return data?.answer || "Przepraszam, nie mogę teraz odpowiedzieć. Skontaktuj się z nami: kontakt@fotz.pl";
+    } catch (error) {
+      console.error('AI response error:', error);
+      return "Przepraszam, wystąpił problem techniczny. Skontaktuj się z nami bezpośrednio: kontakt@fotz.pl lub +48 123 456 789.";
+    }
+  };
+
+  const handleSend = async (text?: string) => {
     const messageText = text || input.trim();
-    if (!messageText) return;
+    if (!messageText || isLoading) return;
 
     const userMessage: Message = {
       id: Date.now(),
@@ -141,20 +299,39 @@ export function ChatbotFAQ() {
 
     setMessages(prev => [...prev, userMessage]);
     setInput("");
+    setIsLoading(true);
 
-    // Simulate typing delay
-    setTimeout(() => {
+    // First try FAQ
+    const faqAnswer = findFAQAnswer(messageText);
+    
+    if (faqAnswer) {
+      // FAQ match found
+      setTimeout(() => {
+        const botResponse: Message = {
+          id: Date.now() + 1,
+          text: faqAnswer,
+          isBot: true,
+          isAI: false
+        };
+        setMessages(prev => [...prev, botResponse]);
+        setIsLoading(false);
+      }, 300);
+    } else {
+      // No FAQ match - use AI
+      const aiAnswer = await getAIResponse(messageText);
       const botResponse: Message = {
         id: Date.now() + 1,
-        text: findAnswer(messageText),
-        isBot: true
+        text: aiAnswer,
+        isBot: true,
+        isAI: true
       };
       setMessages(prev => [...prev, botResponse]);
-    }, 500 + Math.random() * 500);
+      setIsLoading(false);
+    }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && !isLoading) {
       handleSend();
     }
   };
@@ -182,7 +359,7 @@ export function ChatbotFAQ() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 z-50 w-[360px] max-w-[calc(100vw-3rem)] bg-background border border-border rounded-2xl shadow-2xl overflow-hidden"
+            className="fixed bottom-24 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-background border border-border rounded-2xl shadow-2xl overflow-hidden"
           >
             {/* Header */}
             <div className="bg-primary text-primary-foreground p-4 flex items-center justify-between">
@@ -191,8 +368,11 @@ export function ChatbotFAQ() {
                   <Bot className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Asystent FOTZ</h3>
-                  <p className="text-xs opacity-80">Odpowiadam natychmiast</p>
+                  <h3 className="font-semibold flex items-center gap-2">
+                    Asystent FOTZ
+                    <Sparkles className="w-4 h-4 text-yellow-300" />
+                  </h3>
+                  <p className="text-xs opacity-80">AI • Odpowiadam natychmiast</p>
                 </div>
               </div>
               <button
@@ -214,8 +394,12 @@ export function ChatbotFAQ() {
                     className={`flex gap-2 ${message.isBot ? '' : 'justify-end'}`}
                   >
                     {message.isBot && (
-                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                        <Bot className="w-4 h-4 text-primary" />
+                      <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${message.isAI ? 'bg-gradient-to-br from-purple-500/20 to-primary/20' : 'bg-primary/10'}`}>
+                        {message.isAI ? (
+                          <Sparkles className="w-4 h-4 text-primary" />
+                        ) : (
+                          <Bot className="w-4 h-4 text-primary" />
+                        )}
                       </div>
                     )}
                     <div
@@ -226,6 +410,11 @@ export function ChatbotFAQ() {
                       }`}
                     >
                       {message.text}
+                      {message.isAI && (
+                        <div className="mt-1 text-[10px] opacity-60 flex items-center gap-1">
+                          <Sparkles className="w-3 h-3" /> Odpowiedź AI
+                        </div>
+                      )}
                     </div>
                     {!message.isBot && (
                       <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
@@ -235,8 +424,28 @@ export function ChatbotFAQ() {
                   </motion.div>
                 ))}
 
+                {/* Loading indicator */}
+                {isLoading && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="flex gap-2"
+                  >
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500/20 to-primary/20 flex items-center justify-center flex-shrink-0">
+                      <Loader2 className="w-4 h-4 text-primary animate-spin" />
+                    </div>
+                    <div className="bg-muted p-3 rounded-2xl rounded-tl-none">
+                      <div className="flex gap-1">
+                        <span className="w-2 h-2 bg-primary/40 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                        <span className="w-2 h-2 bg-primary/40 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                        <span className="w-2 h-2 bg-primary/40 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+
                 {/* Quick Questions (show only at start) */}
-                {messages.length === 1 && (
+                {messages.length === 1 && !isLoading && (
                   <div className="flex flex-wrap gap-2 mt-4">
                     {quickQuestions.map((q, i) => (
                       <button
@@ -262,15 +471,23 @@ export function ChatbotFAQ() {
                   onKeyPress={handleKeyPress}
                   placeholder="Zadaj pytanie..."
                   className="flex-1"
+                  disabled={isLoading}
                 />
                 <Button
                   onClick={() => handleSend()}
                   size="icon"
-                  disabled={!input.trim()}
+                  disabled={!input.trim() || isLoading}
                 >
-                  <Send className="w-4 h-4" />
+                  {isLoading ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <Send className="w-4 h-4" />
+                  )}
                 </Button>
               </div>
+              <p className="text-[10px] text-muted-foreground mt-2 text-center">
+                Powered by AI • Dla złożonych pytań polecamy konsultację
+              </p>
             </div>
           </motion.div>
         )}
