@@ -19,6 +19,42 @@ const categories = [
 
 const posts = [
   {
+    id: "remarketing-poradnik",
+    title: "Remarketing - kompletny poradnik dla firm 2025",
+    excerpt:
+      "Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Poznaj strategie, koszty i najlepsze praktyki.",
+    category: "Reklamy",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "18 min",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    featured: true,
+  },
+  {
+    id: "google-analytics-4-poradnik",
+    title: "Google Analytics 4 - kompletny poradnik GA4 dla firm",
+    excerpt:
+      "Jak skonfigurować GA4, zrozumieć nowy interfejs i mierzyć to, co ważne dla biznesu. Praktyczny przewodnik od podstaw.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "22 min",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    featured: false,
+  },
+  {
+    id: "budzet-marketingowy-planowanie",
+    title: "Budżet marketingowy - jak zaplanować wydatki na marketing",
+    excerpt:
+      "Ile wydać na marketing? Jak podzielić budżet między kanały? Benchmarki branżowe i praktyczne wskazówki.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "16 min",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072",
+    featured: false,
+  },
+  {
     id: "seo-ecommerce",
     title: "SEO dla sklepów internetowych - jak pozycjonować e-commerce",
     excerpt:
@@ -28,7 +64,7 @@ const posts = [
     date: "4 Jan 2025",
     readTime: "18 min",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
-    featured: true,
+    featured: false,
   },
   {
     id: "ux-ui-ecommerce",
