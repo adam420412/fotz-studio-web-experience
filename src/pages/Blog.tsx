@@ -55,6 +55,42 @@ const posts = [
     featured: false,
   },
   {
+    id: "marketing-b2b-vs-b2c",
+    title: "Marketing B2B vs B2C - kluczowe różnice i strategie",
+    excerpt:
+      "Sprzedajesz firmom czy konsumentom? Poznaj fundamentalne różnice w podejściu, kanałach i komunikacji między B2B a B2C.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "15 min",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
+    featured: false,
+  },
+  {
+    id: "psychologia-cen",
+    title: "Psychologia cen - jak ustalać ceny, które sprzedają",
+    excerpt:
+      "Kotwiczenie, charm pricing, decoy effect. Poznaj techniki psychologii cen zwiększające konwersję i wartość koszyka.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "14 min",
+    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2071",
+    featured: false,
+  },
+  {
+    id: "copywriting-landing-page",
+    title: "Copywriting dla landing pages - teksty, które konwertują",
+    excerpt:
+      "Headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów zwiększających konwersję.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "16 min",
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2073",
+    featured: false,
+  },
+  {
     id: "seo-ecommerce",
     title: "SEO dla sklepów internetowych - jak pozycjonować e-commerce",
     excerpt:
