@@ -105,26 +105,21 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
         console.error("Database error:", dbError);
       }
 
-      // Also send email notification
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: `Rezerwacja konsultacji - ${formData.name}`,
-          from_name: "Fotz Studio - Booking",
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          company: formData.company || "Nie podano",
-          date: selectedDate ? format(selectedDate, "dd.MM.yyyy", { locale: pl }) : "",
-          time: selectedTime,
-          message: formData.message || "Brak dodatkowej wiadomości",
-        }),
-      });
-
-      const data = await response.json();
-      if (!data.success) throw new Error();
+      // Send email notification via edge function
+      try {
+        await supabase.functions.invoke('notify-booking', {
+          body: {
+            client_name: formData.name,
+            client_email: formData.email,
+            client_phone: formData.phone || null,
+            booking_date: selectedDate ? format(selectedDate, "dd.MM.yyyy", { locale: pl }) : "",
+            booking_time: selectedTime,
+            notes: formData.company ? `Firma: ${formData.company}. ${formData.message || ''}` : formData.message || null,
+          },
+        });
+      } catch (emailError) {
+        console.error("Email notification error:", emailError);
+      }
 
       setStep("success");
     } catch {
