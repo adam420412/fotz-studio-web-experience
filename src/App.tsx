@@ -37,6 +37,8 @@ import BlogGoogleVsFacebook from "./pages/BlogGoogleVsFacebook";
 import BlogTikTokBiznes from "./pages/BlogTikTokBiznes";
 import BlogSEOLokalnePoznan from "./pages/BlogSEOLokalnePoznan";
 import BlogEmailMarketing from "./pages/BlogEmailMarketing";
+import BlogReelsVsTikTok from "./pages/BlogReelsVsTikTok";
+import BlogLandingPage from "./pages/BlogLandingPage";
 import StudioPodcastowe from "./pages/StudioPodcastowe";
 import DlaKogo from "./pages/DlaKogo";
 import DlaKogoFirmyLokalne from "./pages/DlaKogoFirmyLokalne";
@@ -162,6 +164,8 @@ const App = () => (
             <Route path="/blog/tiktok-dla-biznesu" element={<BlogTikTokBiznes />} />
             <Route path="/blog/seo-lokalne-poznan-poradnik" element={<BlogSEOLokalnePoznan />} />
             <Route path="/blog/email-marketing-2025" element={<BlogEmailMarketing />} />
+            <Route path="/blog/instagram-reels-vs-tiktok" element={<BlogReelsVsTikTok />} />
+            <Route path="/blog/jak-stworzyc-landing-page" element={<BlogLandingPage />} />
             <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
             <Route path="/dla-kogo" element={<DlaKogo />} />
             <Route path="/dla-kogo/firmy-lokalne" element={<DlaKogoFirmyLokalne />} />

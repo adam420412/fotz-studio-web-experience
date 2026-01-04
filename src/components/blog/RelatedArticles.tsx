@@ -15,6 +15,24 @@ interface Article {
 // All blog articles data for cross-referencing
 const allArticles: Article[] = [
   {
+    id: "instagram-reels-vs-tiktok",
+    title: "Instagram Reels vs TikTok - gdzie publikować wideo w 2025?",
+    excerpt: "Porównanie Reels i TikTok. Która platforma lepsza dla Twojej marki?",
+    category: "Social Media",
+    date: "4 Jan 2025",
+    readTime: "14 min",
+    image: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=2074",
+  },
+  {
+    id: "jak-stworzyc-landing-page",
+    title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
+    excerpt: "Kompletny poradnik tworzenia landing page z wysoką konwersją.",
+    category: "Strony internetowe",
+    date: "4 Jan 2025",
+    readTime: "16 min",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069",
+  },
+  {
     id: "email-marketing-2025",
     title: "Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję",
     excerpt: "Kompletny poradnik email marketingu. Lead magnety, automatyzacja i konwersja.",
@@ -30,7 +48,7 @@ const allArticles: Article[] = [
     category: "Social Media",
     date: "4 Jan 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2074",
+    image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=2074",
   },
   {
     id: "seo-lokalne-poznan-poradnik",
@@ -57,7 +75,7 @@ const allArticles: Article[] = [
     category: "Reklamy",
     date: "4 Jan 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2f1d9?q=80&w=2074",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070",
   },
   {
     id: "kampania-reklamowa-marketingowa",
@@ -93,7 +111,7 @@ const allArticles: Article[] = [
     category: "Social Media",
     date: "12 Dec 2024",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2074",
+    image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=2074",
   },
   {
     id: "google-ads-poradnik",

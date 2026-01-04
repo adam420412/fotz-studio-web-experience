@@ -18,6 +18,30 @@ const categories = [
 
 const posts = [
   {
+    id: "instagram-reels-vs-tiktok",
+    title: "Instagram Reels vs TikTok - gdzie publikować wideo w 2025?",
+    excerpt:
+      "Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki? Analiza algorytmów, zasięgów i strategii.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "14 min",
+    image: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=2074",
+    featured: true,
+  },
+  {
+    id: "jak-stworzyc-landing-page",
+    title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
+    excerpt:
+      "Kompletny poradnik tworzenia landing page. Struktura, copywriting, CTA i optymalizacja konwersji.",
+    category: "Strony internetowe",
+    author: "Zespół FOTZ",
+    date: "4 Jan 2025",
+    readTime: "16 min",
+    image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069",
+    featured: false,
+  },
+  {
     id: "email-marketing-2025",
     title: "Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję",
     excerpt:
@@ -27,7 +51,7 @@ const posts = [
     date: "4 Jan 2025",
     readTime: "18 min",
     image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=2074",
-    featured: true,
+    featured: false,
   },
   {
     id: "tiktok-dla-biznesu",
@@ -38,7 +62,7 @@ const posts = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "16 min",
-    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=2074",
+    image: "https://images.unsplash.com/photo-1611605698335-8b1569810432?q=80&w=2074",
     featured: false,
   },
   {
@@ -74,7 +98,7 @@ const posts = [
     author: "Zespół FOTZ",
     date: "4 Jan 2025",
     readTime: "18 min",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2f1d9?q=80&w=2074",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=2070",
     featured: false,
   },
   {
@@ -122,7 +146,7 @@ const posts = [
     author: "Anna Nowak",
     date: "12 Dec 2024",
     readTime: "6 min",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=2074",
+    image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?q=80&w=2074",
     featured: false,
   },
   {
@@ -146,7 +170,7 @@ const posts = [
     author: "Karolina Lewandowska",
     date: "8 Dec 2024",
     readTime: "7 min",
-    image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000",
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
     featured: false,
   },
 ];
