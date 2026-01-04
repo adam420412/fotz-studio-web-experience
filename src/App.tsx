@@ -136,6 +136,10 @@ import Cennik from "./pages/Cennik";
 import Podziekowanie from "./pages/Podziekowanie";
 import Zainstaluj from "./pages/Zainstaluj";
 import AdminRezerwacje from "./pages/AdminRezerwacje";
+import Quiz from "./pages/Quiz";
+import KalkulatorROI from "./pages/KalkulatorROI";
+import SlownikMarketingowy from "./pages/SlownikMarketingowy";
+import Zasoby from "./pages/Zasoby";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -279,6 +283,10 @@ const App = () => (
             <Route path="/podziekowanie" element={<Podziekowanie />} />
             <Route path="/zainstaluj" element={<Zainstaluj />} />
             <Route path="/admin/rezerwacje" element={<AdminRezerwacje />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/kalkulator-roi" element={<KalkulatorROI />} />
+            <Route path="/slownik-marketingowy" element={<SlownikMarketingowy />} />
+            <Route path="/zasoby" element={<Zasoby />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
