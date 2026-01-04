@@ -140,6 +140,112 @@ export default function AudytSEO() {
     return "bg-red-500";
   };
 
+  const handleDownloadPDF = () => {
+    if (!result) return;
+    
+    const printContent = `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Raport SEO - ${result.url}</title>
+        <style>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; color: #1a1a1a; line-height: 1.6; }
+          .header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #e5e5e5; }
+          .logo { font-size: 24px; font-weight: bold; color: #6366f1; margin-bottom: 8px; }
+          .header h1 { font-size: 28px; margin-bottom: 8px; }
+          .header p { color: #666; font-size: 14px; }
+          .score-section { text-align: center; margin: 40px 0; }
+          .score-circle { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 120px; border-radius: 50%; border: 8px solid ${result.score >= 80 ? '#22c55e' : result.score >= 50 ? '#eab308' : '#ef4444'}; font-size: 36px; font-weight: bold; color: ${result.score >= 80 ? '#22c55e' : result.score >= 50 ? '#eab308' : '#ef4444'}; }
+          .score-label { margin-top: 12px; font-size: 18px; color: #666; }
+          .category { margin-bottom: 30px; page-break-inside: avoid; }
+          .category-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #f5f5f5; border-radius: 8px; margin-bottom: 16px; }
+          .category-title { font-size: 16px; font-weight: 600; }
+          .category-score { font-weight: bold; color: #6366f1; }
+          .item { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid #eee; }
+          .item:last-child { border-bottom: none; }
+          .status { width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; margin-top: 2px; }
+          .status.good { background: #22c55e; }
+          .status.warning { background: #eab308; }
+          .status.error { background: #ef4444; }
+          .item-content { flex: 1; }
+          .item-label { font-weight: 500; font-size: 14px; }
+          .item-value { color: #666; font-size: 12px; margin-top: 2px; word-break: break-all; }
+          .item-recommendation { color: #ca8a04; font-size: 12px; margin-top: 4px; }
+          .recommendations { margin-top: 40px; padding: 20px; background: #fef3c7; border-radius: 8px; }
+          .recommendations h2 { font-size: 18px; margin-bottom: 16px; color: #92400e; }
+          .recommendations ol { padding-left: 20px; }
+          .recommendations li { margin-bottom: 8px; color: #78350f; }
+          .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e5e5; text-align: center; color: #666; font-size: 12px; }
+          .cta { background: #6366f1; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 30px; }
+          .cta h3 { margin-bottom: 8px; }
+          .cta p { opacity: 0.9; }
+          @media print { body { padding: 20px; } .category { page-break-inside: avoid; } }
+        </style>
+      </head>
+      <body>
+        <div class="header">
+          <div class="logo">FOTZ STUDIO</div>
+          <h1>Raport Audytu SEO</h1>
+          <p>Data: ${new Date().toLocaleDateString('pl-PL')} | URL: ${result.url}</p>
+        </div>
+        
+        <div class="score-section">
+          <div class="score-circle">${result.score}</div>
+          <div class="score-label">Wynik ogólny / 100</div>
+        </div>
+        
+        ${result.categories.map(cat => `
+          <div class="category">
+            <div class="category-header">
+              <span class="category-title">${cat.name}</span>
+              <span class="category-score">${cat.score}/${cat.maxScore}</span>
+            </div>
+            ${cat.items.map(item => `
+              <div class="item">
+                <div class="status ${item.status}"></div>
+                <div class="item-content">
+                  <div class="item-label">${item.label}</div>
+                  <div class="item-value">${item.value}</div>
+                  ${item.recommendation ? `<div class="item-recommendation">💡 ${item.recommendation}</div>` : ''}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        `).join('')}
+        
+        ${result.recommendations.length > 0 ? `
+          <div class="recommendations">
+            <h2>Główne rekomendacje</h2>
+            <ol>
+              ${result.recommendations.map(rec => `<li>${rec}</li>`).join('')}
+            </ol>
+          </div>
+        ` : ''}
+        
+        <div class="cta">
+          <h3>Chcesz poprawić te wyniki?</h3>
+          <p>Skontaktuj się z nami: fotz.pl/kontakt</p>
+        </div>
+        
+        <div class="footer">
+          <p>Raport wygenerowany przez Fotz Studio | fotz.pl | kontakt@fotz.pl</p>
+        </div>
+      </body>
+      </html>
+    `;
+    
+    const printWindow = window.open('', '_blank');
+    if (printWindow) {
+      printWindow.document.write(printContent);
+      printWindow.document.close();
+      setTimeout(() => {
+        printWindow.print();
+      }, 250);
+    }
+  };
+
   const getStatusIcon = (status: "good" | "warning" | "error") => {
     switch (status) {
       case "good":
@@ -314,6 +420,10 @@ export default function AudytSEO() {
                       <Button variant="outline" onClick={handleReset}>
                         <RotateCcw className="w-4 h-4 mr-2" />
                         Nowy audyt
+                      </Button>
+                      <Button variant="hero" onClick={handleDownloadPDF}>
+                        <Download className="w-4 h-4 mr-2" />
+                        Pobierz PDF
                       </Button>
                       <Button variant="ghost" onClick={() => setShowEmailForm(true)}>
                         <Mail className="w-4 h-4 mr-2" />
