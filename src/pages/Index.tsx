@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
 import { Preloader } from "@/components/Preloader";
+import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 
 // Lazy load sections below the fold for better LCP
 const VideoShowcase = lazy(() => import("@/components/sections/VideoShowcase").then(m => ({ default: m.VideoShowcase })));
@@ -51,6 +52,8 @@ const Index = () => {
         {/* Preload critical LCP image */}
         <link rel="preload" href="/hero-poster.jpg" as="image" />
       </Helmet>
+      <LocalBusinessSchema />
+      <OrganizationSchema />
       {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <Layout>
         <Hero />
