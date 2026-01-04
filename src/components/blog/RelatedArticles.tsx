@@ -167,6 +167,33 @@ const allArticles: Article[] = [
     readTime: "7 min",
     image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=2000",
   },
+  {
+    id: "marketing-automation",
+    title: "Marketing automation - jak zautomatyzować działania marketingowe?",
+    excerpt: "Przewodnik po automatyzacji marketingu. Narzędzia, strategie i najlepsze praktyki wdrażania.",
+    category: "Poradniki",
+    date: "10 Jan 2024",
+    readTime: "10 min",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+  },
+  {
+    id: "personal-branding-linkedin",
+    title: "Personal branding na LinkedIn - jak zbudować markę eksperta?",
+    excerpt: "Praktyczny przewodnik budowania marki osobistej na LinkedIn dla profesjonalistów.",
+    category: "LinkedIn",
+    date: "5 Jan 2024",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=2074",
+  },
+  {
+    id: "video-marketing-2025",
+    title: "Video marketing w 2025 - trendy i prognozy",
+    excerpt: "Najważniejsze trendy w marketingu wideo. AI, short-form content, live streaming i personalizacja.",
+    category: "Video",
+    date: "28 Dec 2024",
+    readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=2070",
+  },
 ];
 
 interface RelatedArticlesProps {

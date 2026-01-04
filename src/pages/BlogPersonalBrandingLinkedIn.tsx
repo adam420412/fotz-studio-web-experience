@@ -252,10 +252,7 @@ const BlogPersonalBrandingLinkedIn = () => {
           </div>
         </article>
 
-        <RelatedArticles 
-          currentSlug="personal-branding-linkedin"
-          category="poradnik"
-        />
+        <RelatedArticles currentArticleId="personal-branding-linkedin" />
       </Layout>
     </>
   );
