@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 
 const bookingSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki"),
@@ -85,6 +86,26 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     setIsSubmitting(true);
 
     try {
+      // Save to Supabase database (for CRM sync)
+      const { error: dbError } = await supabase
+        .from('bookings')
+        .insert({
+          client_name: formData.name,
+          client_email: formData.email,
+          client_phone: formData.phone || null,
+          booking_date: selectedDate ? format(selectedDate, "yyyy-MM-dd") : null,
+          booking_time: selectedTime,
+          service_type: 'konsultacja',
+          notes: formData.company ? `Firma: ${formData.company}. ${formData.message || ''}` : formData.message || null,
+          source: 'website',
+          status: 'pending',
+        });
+
+      if (dbError) {
+        console.error("Database error:", dbError);
+      }
+
+      // Also send email notification
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
