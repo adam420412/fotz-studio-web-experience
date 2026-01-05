@@ -55,6 +55,7 @@ Fotz Studio to agencja kreatywna oferująca pełen zakres usług marketingowych:
 
 - [Quiz rekomendacyjny](https://fotz.pl/quiz): Dopasowanie usług do potrzeb biznesu
 - [Kalkulator ROI](https://fotz.pl/kalkulator-roi): Obliczanie zwrotu z inwestycji w reklamę
+- [Kalkulator cen](https://fotz.pl/kalkulator-cen): Interaktywny kalkulator wstępnej wyceny usług
 - [Generator briefu](https://fotz.pl/generator-briefu): Kreator briefu projektowego z eksportem PDF
 - [Audyt SEO](https://fotz.pl/audyt-seo): Darmowy automatyczny audyt SEO strony
 - [Słownik marketingowy](https://fotz.pl/slownik-marketingowy): Definicje pojęć marketingowych

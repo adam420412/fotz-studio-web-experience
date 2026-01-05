@@ -148,6 +148,7 @@ import SlownikMarketingowy from "./pages/SlownikMarketingowy";
 import Zasoby from "./pages/Zasoby";
 import GeneratorBriefu from "./pages/GeneratorBriefu";
 import AudytSEO from "./pages/AudytSEO";
+import KalkulatorCen from "./pages/KalkulatorCen";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -303,6 +304,7 @@ const App = () => (
             <Route path="/zasoby" element={<Zasoby />} />
             <Route path="/generator-briefu" element={<GeneratorBriefu />} />
             <Route path="/audyt-seo" element={<AudytSEO />} />
+            <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

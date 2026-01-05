@@ -132,29 +132,29 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-foreground"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+            <div className="lg:hidden flex items-center gap-2">
+              <ThemeToggle />
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="p-2 text-foreground z-[60]"
+                aria-label="Toggle menu"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </nav>
         </div>
+      </header>
 
-        {/* Mobile Menu */}
-        <div
-          className={cn(
-            "lg:hidden fixed top-[72px] sm:top-[80px] left-0 right-0 bottom-0 bg-background border-t border-border overflow-hidden",
-            isMobileMenuOpen
-              ? "opacity-100 visible"
-              : "opacity-0 invisible pointer-events-none"
-          )}
-          style={{ transition: 'opacity 0.15s ease-out, visibility 0.15s ease-out' }}
+      {/* Mobile Menu - Full screen overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="lg:hidden fixed inset-0 z-40 bg-background"
+          style={{ paddingTop: isScrolled ? '72px' : '90px' }}
         >
           <div className="h-full overflow-y-auto overscroll-contain">
             <div className="container-wide px-4 sm:px-6 py-6 flex flex-col gap-3">
@@ -162,6 +162,7 @@ export function Navbar() {
               <div className="border-b border-border pb-4 mb-2">
                 <Link 
                   to="/uslugi" 
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="text-xs sm:text-sm text-muted-foreground mb-3 block hover:text-foreground transition-colors"
                 >
                   Wszystkie usługi →
@@ -171,6 +172,7 @@ export function Navbar() {
                     <Link
                       key={link.href}
                       to={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={cn(
                         "text-xs sm:text-sm font-medium py-1 sm:py-1.5 transition-colors truncate",
                         location.pathname === link.href
@@ -188,6 +190,7 @@ export function Navbar() {
                 <Link
                   key={link.name}
                   to={link.href}
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
                     "text-base sm:text-lg font-medium py-1.5 sm:py-2 transition-colors",
                     location.pathname === link.href
@@ -199,7 +202,7 @@ export function Navbar() {
                 </Link>
               ))}
               <Button variant="hero" size="default" className="mt-3 sm:mt-4 text-sm sm:text-base" asChild>
-                <Link to="/kontakt">
+                <Link to="/kontakt" onClick={() => setIsMobileMenuOpen(false)}>
                   Bezpłatna konsultacja
                   <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                 </Link>
@@ -207,7 +210,7 @@ export function Navbar() {
             </div>
           </div>
         </div>
-      </header>
+      )}
 
       {/* Mega Menu */}
       <MegaMenu 
