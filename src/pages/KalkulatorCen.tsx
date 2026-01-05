@@ -13,6 +13,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
+import { BookingCalendar } from "@/components/BookingCalendar";
 import {
   Globe,
   Share2,
@@ -28,7 +29,9 @@ import {
   Send,
   Loader2,
   Sparkles,
-  Info
+  Info,
+  Calendar,
+  CheckCircle
 } from "lucide-react";
 import {
   Tooltip,
@@ -155,6 +158,8 @@ export default function KalkulatorCen() {
   const [urgency, setUrgency] = useState("standard");
   const [contractMonths, setContractMonths] = useState(3);
   const [showContactForm, setShowContactForm] = useState(false);
+  const [showBookingModal, setShowBookingModal] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [contactData, setContactData] = useState({
     name: "",
@@ -266,7 +271,7 @@ export default function KalkulatorCen() {
           description: "Skontaktujemy się z Tobą w ciągu 24h.",
         });
         setShowContactForm(false);
-        setContactData({ name: "", email: "", phone: "", message: "" });
+        setFormSubmitted(true);
       } else {
         throw new Error("Failed to submit");
       }
@@ -279,6 +284,13 @@ export default function KalkulatorCen() {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleBookingComplete = () => {
+    setShowBookingModal(false);
+    setFormSubmitted(false);
+    setSelectedServices([]);
+    setContactData({ name: "", email: "", phone: "", message: "" });
   };
 
   return (
@@ -645,6 +657,101 @@ export default function KalkulatorCen() {
                       </Button>
                     </div>
                   </form>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Success + Booking Prompt Modal */}
+          <AnimatePresence>
+            {formSubmitted && !showBookingModal && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
+              >
+                <motion.div
+                  initial={{ scale: 0.95, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.95, opacity: 0 }}
+                  className="bg-background border rounded-xl p-8 max-w-md w-full shadow-xl text-center"
+                >
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-3">Wycena wysłana!</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Otrzymaliśmy Twoje zapytanie. Chcesz od razu zarezerwować bezpłatną konsultację, 
+                    podczas której omówimy szczegóły projektu?
+                  </p>
+                  <div className="space-y-3">
+                    <Button 
+                      className="w-full" 
+                      size="lg"
+                      onClick={() => setShowBookingModal(true)}
+                    >
+                      <Calendar className="w-4 h-4 mr-2" />
+                      Zarezerwuj konsultację
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      className="w-full"
+                      onClick={() => {
+                        setFormSubmitted(false);
+                        setSelectedServices([]);
+                        setContactData({ name: "", email: "", phone: "", message: "" });
+                      }}
+                    >
+                      Zamknij
+                    </Button>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-4">
+                    Skontaktujemy się również mailowo w ciągu 24h
+                  </p>
+                </motion.div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          {/* Booking Calendar Modal */}
+          <AnimatePresence>
+            {showBookingModal && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
+                onClick={() => setShowBookingModal(false)}
+              >
+                <motion.div
+                  initial={{ scale: 0.95, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.95, opacity: 0 }}
+                  onClick={e => e.stopPropagation()}
+                  className="bg-background border rounded-xl p-6 max-w-lg w-full shadow-xl max-h-[90vh] overflow-y-auto"
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-bold">Zarezerwuj konsultację</h3>
+                    <Button 
+                      variant="ghost" 
+                      size="sm"
+                      onClick={() => setShowBookingModal(false)}
+                    >
+                      ✕
+                    </Button>
+                  </div>
+                  <div className="p-3 bg-primary/10 rounded-lg mb-4">
+                    <p className="text-sm">
+                      <strong>Wybrane usługi:</strong>{" "}
+                      {calculation.selectedItems.map(s => s.name).join(", ")}
+                    </p>
+                    <p className="text-sm mt-1">
+                      <strong>Szacunkowa wartość:</strong>{" "}
+                      {formatPrice(calculation.totalContractValue || calculation.oneTimeTotal)} PLN
+                    </p>
+                  </div>
+                  <BookingCalendar onClose={handleBookingComplete} />
                 </motion.div>
               </motion.div>
             )}
