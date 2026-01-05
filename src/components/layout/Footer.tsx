@@ -61,6 +61,7 @@ const footerLinks = {
   narzedzia: [
     { name: "Quiz rekomendacyjny", href: "/quiz" },
     { name: "Kalkulator ROI", href: "/kalkulator-roi" },
+    { name: "Kalkulator cen", href: "/kalkulator-cen" },
     { name: "Generator briefu", href: "/generator-briefu" },
     { name: "Audyt SEO", href: "/audyt-seo" },
     { name: "Słownik marketingowy", href: "/slownik-marketingowy" },
