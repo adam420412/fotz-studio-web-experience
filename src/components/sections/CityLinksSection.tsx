@@ -39,6 +39,12 @@ const cityLinks: CityLink[] = [
   { name: "Rybnik", href: "/strony-internetowe-rybnik" },
   { name: "Tychy", href: "/strony-internetowe-tychy" },
   { name: "Kamionki", href: "/strony-internetowe-kamionki" },
+  { name: "Białystok", href: "/strony-internetowe-bialystok" },
+  { name: "Częstochowa", href: "/strony-internetowe-czestochowa" },
+  { name: "Zielona Góra", href: "/strony-internetowe-zielona-gora" },
+  { name: "Elbląg", href: "/strony-internetowe-elblag" },
+  { name: "Legnica", href: "/strony-internetowe-legnica" },
+  { name: "Kalisz", href: "/strony-internetowe-kalisz" },
 ];
 
 export const CityLinksSection = ({ 

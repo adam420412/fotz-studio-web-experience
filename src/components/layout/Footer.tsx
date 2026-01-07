@@ -67,6 +67,18 @@ const footerLinks = {
     { name: "Słownik marketingowy", href: "/slownik-marketingowy" },
     { name: "Darmowe zasoby", href: "/zasoby" },
   ],
+  miasta: [
+    { name: "Poznań", href: "/strony-internetowe-poznan" },
+    { name: "Warszawa", href: "/strony-internetowe-warszawa" },
+    { name: "Wrocław", href: "/strony-internetowe-wroclaw" },
+    { name: "Kraków", href: "/strony-internetowe-krakow" },
+    { name: "Gdańsk", href: "/strony-internetowe-gdansk" },
+    { name: "Łódź", href: "/strony-internetowe-lodz" },
+    { name: "Katowice", href: "/strony-internetowe-katowice" },
+    { name: "Szczecin", href: "/strony-internetowe-szczecin" },
+    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz" },
+    { name: "Lublin", href: "/strony-internetowe-lublin" },
+  ],
 };
 
 const socialLinks = [
@@ -326,6 +338,25 @@ export function Footer() {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            {/* Miasta - nowa kolumna dla internal linking */}
+            <div className="col-span-2 md:col-span-3 lg:col-span-6 pt-6 border-t border-border/30">
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Strony internetowe w Polsce</h4>
+              <div className="flex flex-wrap gap-2">
+                {footerLinks.miasta.map((link) => (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    className="text-muted-foreground hover:text-foreground transition-colors text-xs px-2 py-1 bg-secondary/50 rounded"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+                <Link to="/strony-internetowe" className="text-primary hover:text-primary/80 transition-colors text-xs px-2 py-1">
+                  + więcej miast
+                </Link>
+              </div>
             </div>
           </div>
         </div>
