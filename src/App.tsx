@@ -150,6 +150,7 @@ import GeneratorBriefu from "./pages/GeneratorBriefu";
 import AudytSEO from "./pages/AudytSEO";
 import KalkulatorCen from "./pages/KalkulatorCen";
 import NotFound from "./pages/NotFound";
+import { Redirect301 } from "./components/seo/Redirect301";
 
 const queryClient = new QueryClient();
 
@@ -305,6 +306,21 @@ const App = () => (
             <Route path="/generator-briefu" element={<GeneratorBriefu />} />
             <Route path="/audyt-seo" element={<AudytSEO />} />
             <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
+            
+            {/* 301 Redirects - stare URL-e /branze/* przekierowują na nowe /dla-kogo/* */}
+            <Route path="/branze/marketing-medyczny" element={<Redirect301 to="/dla-kogo/branza-medyczna" />} />
+            <Route path="/branze/marketing-gastronomia" element={<Redirect301 to="/dla-kogo/gastronomia" />} />
+            <Route path="/branze/marketing-beauty" element={<Redirect301 to="/dla-kogo/beauty-wellness" />} />
+            <Route path="/branze/marketing-nieruchomosci" element={<Redirect301 to="/dla-kogo/nieruchomosci" />} />
+            <Route path="/branze/marketing-automotive" element={<Redirect301 to="/dla-kogo/automotive" />} />
+            <Route path="/branze/marketing-edukacja" element={<Redirect301 to="/dla-kogo/edukacja" />} />
+            <Route path="/branze/marketing-prawo-finanse" element={<Redirect301 to="/dla-kogo/prawo-finanse" />} />
+            <Route path="/branze/marketing-ecommerce-retail" element={<Redirect301 to="/dla-kogo/ecommerce-retail" />} />
+            <Route path="/branze/marketing-it" element={<Redirect301 to="/dla-kogo/it-saas" />} />
+            <Route path="/branze/marketing-produkcja" element={<Redirect301 to="/dla-kogo/produkcja" />} />
+            <Route path="/branze/marketing-ngo" element={<Redirect301 to="/dla-kogo/ngo" />} />
+            <Route path="/branze/marketing-turystyka" element={<Redirect301 to="/dla-kogo/turystyka" />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
