@@ -47,6 +47,7 @@ import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { YouTubeShowcase } from "@/components/sections/YouTubeShowcase";
 import { InstagramShowcase } from "@/components/sections/InstagramShowcase";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali.png";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
@@ -971,6 +972,11 @@ const SocialMedia = () => {
             </FadeInView>
           </div>
         </section>
+
+        <RelatedServices 
+          currentService="social-media"
+          subtitle="Usługi wspierające obecność Twojej marki w social mediach"
+        />
 
         <ContactSection />
       </Layout>

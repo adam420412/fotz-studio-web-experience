@@ -41,6 +41,7 @@ import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 import rppgImg from "@/assets/portfolio/rppg.png";
 import klagemlmg from "@/assets/portfolio/klagem.png";
@@ -970,6 +971,11 @@ const Pozycjonowanie = () => {
             </FadeInView>
           </div>
         </section>
+
+        <RelatedServices 
+          currentService="pozycjonowanie"
+          subtitle="Usługi, które wspierają organiczny wzrost widoczności w Google"
+        />
 
         <ContactSection />
       </Layout>
