@@ -24,6 +24,7 @@ import {
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { BackstageGallery } from "@/components/sections/BackstageGallery";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -56,11 +57,18 @@ const processSteps = [
 const faqItems = [
   {
     question: "Jak produkcja spotów reklamowych zmienia się pod wpływem nowych technologii?",
-    answer: "Produkcja spotów reklamowych ewoluuje bardzo dynamicznie, głównie dzięki postępowi technologicznemu. Stosowanie nowoczesnych technik takich jak animacja 3D, efekty specjalne w 2D lub nawet rozbudowane techniki montażu pozwala tworzyć bardziej atrakcyjne i angażujące wideo. To sprawia, że każdy film produktowy może być nie tylko prezentacją oferty, ale też dziełem sztuki marketingowej."
+    answer: "Produkcja spotów reklamowych ewoluuje bardzo dynamicznie, głównie dzięki postępowi technologicznemu. Stosowanie nowoczesnych technik takich jak animacja 3D, efekty specjalne w 2D lub nawet rozbudowane techniki montażu pozwala tworzyć bardziej atrakcyjne i angażujące wideo. To sprawia, że każdy film produktowy może być nie tylko prezentacją oferty, ale też dziełem sztuki marketingowej.",
+    links: [
+      { text: "Wizualizacje 3D", href: "/wizualizacje-3d" }
+    ]
   },
   {
     question: "Jakie są główne zalety wykorzystania filmu produktowego w strategii marketingowej?",
-    answer: "Film produktowy oferuje możliwość przekazania kluczowych cech produktu lub usługi w sposób atrakcyjny i przystępny dla odbiorcy. Dobrze zrealizowane wideo może zwiększyć rozpoznawalność marki, osiągnąć zamierzone cele marketingowe, a także poprawić wizerunek danej firmy na stronach internetowych oraz w mediach społecznościowych."
+    answer: "Film produktowy oferuje możliwość przekazania kluczowych cech produktu lub usługi w sposób atrakcyjny i przystępny dla odbiorcy. Dobrze zrealizowane wideo może zwiększyć rozpoznawalność marki, osiągnąć zamierzone cele marketingowe, a także poprawić wizerunek danej firmy na stronach internetowych oraz w mediach społecznościowych.",
+    links: [
+      { text: "Strony internetowe", href: "/strony-internetowe" },
+      { text: "Social Media", href: "/social-media-poznan" }
+    ]
   },
   {
     question: "Jakie kroki należy podjąć, aby zrealizować film reklamowy?",
@@ -72,19 +80,34 @@ const faqItems = [
   },
   {
     question: "Czy warto skorzystać z pomocy profesjonalistów przy tworzeniu scenariusza?",
-    answer: "Tworzenie scenariusza spotu reklamowego wymaga znajomości pewnych zasad i doświadczenia w dziedzinie produkcji filmowej. Chociaż możesz spróbować stworzyć scenariusz samodzielnie, skorzystanie z pomocy profesjonalistów zapewnia, że treść będzie nie tylko kreatywna, ale również skutecznie wpisze się w wymogi rynku oraz aktualne trendy, co znacząco zwiększy potencjał marketingowy filmu."
+    answer: "Tworzenie scenariusza spotu reklamowego wymaga znajomości pewnych zasad i doświadczenia w dziedzinie produkcji filmowej. Chociaż możesz spróbować stworzyć scenariusz samodzielnie, skorzystanie z pomocy profesjonalistów zapewnia, że treść będzie nie tylko kreatywna, ale również skutecznie wpisze się w wymogi rynku oraz aktualne trendy, co znacząco zwiększy potencjał marketingowy filmu.",
+    links: [
+      { text: "Content Marketing", href: "/content-marketing" }
+    ]
   },
   {
     question: "Jak znaleźć odpowiednią ekipę do realizacji filmu produktowego?",
-    answer: "Znalezienie odpowiedniej ekipy do realizacji filmu produktowego wymaga przeprowadzenia dokładnych badań. Najlepiej zacząć od przeczytania recenzji i obejrzenia portfolio różnych studiów produkcyjnych. Ważne, aby wybrać zespół, który ma doświadczenie w tworzeniu treści dla firm z branży podobnej do Twojej. Ponadto, warto skontaktować się z wybranymi firmami, aby dokładnie omówić Twoje potrzeby i oczekiwania."
+    answer: "Znalezienie odpowiedniej ekipy do realizacji filmu produktowego wymaga przeprowadzenia dokładnych badań. Najlepiej zacząć od przeczytania recenzji i obejrzenia portfolio różnych studiów produkcyjnych. Ważne, aby wybrać zespół, który ma doświadczenie w tworzeniu treści dla firm z branży podobnej do Twojej. Ponadto, warto skontaktować się z wybranymi firmami, aby dokładnie omówić Twoje potrzeby i oczekiwania.",
+    links: [
+      { text: "Zobacz realizacje", href: "/realizacje" }
+    ]
   },
   {
     question: "Jaki jest idealny czasowy zakres filmu reklamowego?",
-    answer: "Idealna długość filmu reklamowego zależy od wielu czynników, w tym od platformy, na której ma być publikowany, oraz od przekazu, jaki chcesz przekazać. Generalnie, krótsze, dynamiczne wideo, trwające od 15 do 30 sekund, jest zalecane na media społecznościowe, podczas gdy bardziej szczegółowe przekazy mogą wymagać dłuższej formy. Kluczowe jest, aby utrzymać uwagę widza i przekazać główne wartości w jak najbardziej skondensowany sposób."
+    answer: "Idealna długość filmu reklamowego zależy od wielu czynników, w tym od platformy, na której ma być publikowany, oraz od przekazu, jaki chcesz przekazać. Generalnie, krótsze, dynamiczne wideo, trwające od 15 do 30 sekund, jest zalecane na media społecznościowe, podczas gdy bardziej szczegółowe przekazy mogą wymagać dłuższej formy. Kluczowe jest, aby utrzymać uwagę widza i przekazać główne wartości w jak najbardziej skondensowany sposób.",
+    links: [
+      { text: "TikTok Ads", href: "/tiktok-ads" },
+      { text: "Instagram Ads", href: "/instagram-ads" }
+    ]
   },
   {
     question: "Gdzie najlepiej publikować film reklamowy?",
-    answer: "Wybór platformy do publikacji filmu reklamowego zależy od Twojego docelowego odbiorcy oraz celów marketingowych. Media społecznościowe takie jak Facebook, Instagram, czy YouTube są idealne do szybkiego dotarcia do szerokiej publiczności. Dla bardziej specjalistycznych lub B2B produktów, publikacja na LinkedIn lub dedykowanej stronie internetowej może przynieść lepsze rezultaty. Rozważ też wykorzystanie telebimów czy innych form reklamy zewnętrznej, jeśli pasuje to do Twojej strategii."
+    answer: "Wybór platformy do publikacji filmu reklamowego zależy od Twojego docelowego odbiorcy oraz celów marketingowych. Media społecznościowe takie jak Facebook, Instagram, czy YouTube są idealne do szybkiego dotarcia do szerokiej publiczności. Dla bardziej specjalistycznych lub B2B produktów, publikacja na LinkedIn lub dedykowanej stronie internetowej może przynieść lepsze rezultaty. Rozważ też wykorzystanie telebimów czy innych form reklamy zewnętrznej, jeśli pasuje to do Twojej strategii.",
+    links: [
+      { text: "YouTube Ads", href: "/youtube-ads" },
+      { text: "Facebook Ads", href: "/facebook-ads" },
+      { text: "LinkedIn Ads", href: "/linkedin-ads" }
+    ]
   },
 ];
 
@@ -625,7 +648,22 @@ export default function SpotyReklamowe() {
                     <span className="font-heading font-semibold">{item.question}</span>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-6">
-                    {item.answer}
+                    <p className="mb-3">{item.answer}</p>
+                    {item.links && item.links.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-border/30">
+                        <span className="text-sm text-muted-foreground/70">Powiązane:</span>
+                        {item.links.map((link, i) => (
+                          <Link 
+                            key={i} 
+                            to={link.href} 
+                            className="text-sm text-primary hover:text-primary/80 font-medium inline-flex items-center gap-1 transition-colors"
+                          >
+                            {link.text}
+                            <ArrowRight className="w-3 h-3" />
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -633,6 +671,12 @@ export default function SpotyReklamowe() {
           </motion.div>
         </div>
       </section>
+
+      {/* Related Services */}
+      <RelatedServices 
+        currentService="spoty-reklamowe"
+        subtitle="Usługi wspierające dystrybucję i promocję Twoich materiałów wideo"
+      />
 
       {/* CTA Section */}
       <section className="section-padding bg-background">

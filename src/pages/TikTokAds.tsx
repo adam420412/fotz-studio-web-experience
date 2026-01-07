@@ -15,6 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 const TikTokAds = () => {
   const benefits = [
@@ -101,15 +102,26 @@ const TikTokAds = () => {
   const faqItems = [
     {
       question: "Czy TikTok Ads sprawdzi się dla mojej firmy?",
-      answer: "TikTok najlepiej sprawdza się dla marek B2C, e-commerce, fashion, beauty, FMCG, rozrywki i edukacji. Jeśli Twoja grupa docelowa to osoby 16-40 lat i jesteś gotowy na kreatywne, autentyczne treści - TikTok będzie świetnym wyborem. Dla B2B i starszych grup demograficznych lepiej sprawdzi się LinkedIn lub Google Ads."
+      answer: "TikTok najlepiej sprawdza się dla marek B2C, e-commerce, fashion, beauty, FMCG, rozrywki i edukacji. Jeśli Twoja grupa docelowa to osoby 16-40 lat i jesteś gotowy na kreatywne, autentyczne treści - TikTok będzie świetnym wyborem. Dla B2B i starszych grup demograficznych lepiej sprawdzi się LinkedIn Ads lub Google Ads.",
+      links: [
+        { text: "LinkedIn Ads", href: "/linkedin-ads" },
+        { text: "Google Ads", href: "/google-ads" }
+      ]
     },
     {
       question: "Jaki budżet potrzebuję na TikTok Ads?",
-      answer: "Minimalny budżet dzienny to około 50 zł, ale rekomendujemy start od 100-200 zł dziennie (3000-6000 zł miesięcznie) dla zebrania wystarczających danych. TikTok często ma niższy CPM niż Facebook/Instagram, więc za ten sam budżet możesz dotrzeć do większej liczby osób."
+      answer: "Minimalny budżet dzienny to około 50 zł, ale rekomendujemy start od 100-200 zł dziennie (3000-6000 zł miesięcznie) dla zebrania wystarczających danych. TikTok często ma niższy CPM niż Facebook/Instagram, więc za ten sam budżet możesz dotrzeć do większej liczby osób.",
+      links: [
+        { text: "Facebook Ads", href: "/facebook-ads" },
+        { text: "Instagram Ads", href: "/instagram-ads" }
+      ]
     },
     {
       question: "Jak powinny wyglądać reklamy na TikToku?",
-      answer: "Reklamy na TikToku muszą wyglądać natywnie - jak zwykłe treści użytkowników. Unikamy przesadnie wypolerowanych spotów reklamowych. Najlepiej działają: pionowe wideo 9:16, pierwsze 3 sekundy przyciągające uwagę, autentyczny ton, trending sounds, i jasne CTA. Pomagamy tworzyć kreacje dopasowane do platformy."
+      answer: "Reklamy na TikToku muszą wyglądać natywnie - jak zwykłe treści użytkowników. Unikamy przesadnie wypolerowanych spotów reklamowych. Najlepiej działają: pionowe wideo 9:16, pierwsze 3 sekundy przyciągające uwagę, autentyczny ton, trending sounds, i jasne CTA. Pomagamy tworzyć kreacje dopasowane do platformy.",
+      links: [
+        { text: "Spoty reklamowe", href: "/spoty-reklamowe" }
+      ]
     },
     {
       question: "Czy potrzebuję własnego konta TikTok?",
@@ -121,15 +133,26 @@ const TikTokAds = () => {
     },
     {
       question: "Jak długo trwa produkcja reklamy TikTok?",
-      answer: "Prosta kreacja In-Feed może być gotowa w 2-3 dni. Bardziej złożone produkcje z nagraniem w studio zajmują 1-2 tygodnie. Dla Branded Hashtag Challenge potrzeba 3-4 tygodnie przygotowań. Rekomendujemy tworzenie wielu wariantów do testów A/B."
+      answer: "Prosta kreacja In-Feed może być gotowa w 2-3 dni. Bardziej złożone produkcje z nagraniem w studio zajmują 1-2 tygodnie. Dla Branded Hashtag Challenge potrzeba 3-4 tygodnie przygotowań. Rekomendujemy tworzenie wielu wariantów do testów A/B.",
+      links: [
+        { text: "Produkcja wideo", href: "/spoty-reklamowe" }
+      ]
     },
     {
       question: "Czy warto łączyć TikTok Ads z innymi platformami?",
-      answer: "Zdecydowanie tak! TikTok świetnie buduje świadomość i generuje ruch. W połączeniu z remarketingiem na Facebook/Instagram i Google Ads tworzy kompletną ścieżkę konwersji. Oferujemy kompleksową obsługę kampanii reklamowych na wszystkich platformach."
+      answer: "Zdecydowanie tak! TikTok świetnie buduje świadomość i generuje ruch. W połączeniu z remarketingiem na Facebook/Instagram i Google Ads tworzy kompletną ścieżkę konwersji. Oferujemy kompleksową obsługę kampanii reklamowych na wszystkich platformach.",
+      links: [
+        { text: "Facebook Ads", href: "/facebook-ads" },
+        { text: "Google Ads", href: "/google-ads" },
+        { text: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" }
+      ]
     },
     {
       question: "Co to są Spark Ads i dlaczego są skuteczne?",
-      answer: "Spark Ads to format pozwalający promować organiczne treści (Twoje lub influencerów) jako reklamy płatne. Zachowują wszystkie interakcje (lajki, komentarze) i wyglądają bardziej autentycznie. Często mają wyższy CTR i niższy koszt niż tradycyjne reklamy."
+      answer: "Spark Ads to format pozwalający promować organiczne treści (Twoje lub influencerów) jako reklamy płatne. Zachowują wszystkie interakcje (lajki, komentarze) i wyglądają bardziej autentycznie. Często mają wyższy CTR i niższy koszt niż tradycyjne reklamy.",
+      links: [
+        { text: "Social Media", href: "/social-media-poznan" }
+      ]
     },
   ];
 
@@ -419,7 +442,22 @@ const TikTokAds = () => {
                     <span className="text-foreground font-medium">{item.question}</span>
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-4">
-                    {item.answer}
+                    <p className="mb-3">{item.answer}</p>
+                    {item.links && item.links.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-border/30">
+                        <span className="text-sm text-muted-foreground/70">Powiązane:</span>
+                        {item.links.map((link, i) => (
+                          <Link 
+                            key={i} 
+                            to={link.href} 
+                            className="text-sm text-pink-400 hover:text-pink-300 font-medium inline-flex items-center gap-1 transition-colors"
+                          >
+                            {link.text}
+                            <ArrowRight className="w-3 h-3" />
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               ))}
@@ -428,94 +466,12 @@ const TikTokAds = () => {
         </div>
       </section>
 
-      {/* Related Services */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Powiązane usługi
-            </h2>
-            <p className="text-muted-foreground">
-              Kompleksowa obsługa kampanii reklamowych
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {[
-              { title: "Kampanie Reklamowe", href: "/kampanie-reklamowe", icon: Zap },
-              { title: "Facebook Ads", href: "/facebook-ads", icon: Target },
-              { title: "Google Ads", href: "/google-ads", icon: Target },
-              { title: "Spoty reklamowe", href: "/spoty-reklamowe", icon: Video },
-            ].map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Link
-                  to={service.href}
-                  className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border/50 hover:border-pink-500/50 transition-colors group"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-pink-500/10 flex items-center justify-center group-hover:bg-pink-500/20 transition-colors">
-                    <service.icon className="w-5 h-5 text-pink-500" />
-                  </div>
-                  <span className="font-medium text-foreground">{service.title}</span>
-                  <ArrowRight className="w-4 h-4 text-muted-foreground ml-auto group-hover:text-pink-500 transition-colors" />
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Related Services */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Powiązane usługi
-            </h2>
-            <p className="text-muted-foreground">
-              Inne platformy reklamowe, które obsługujemy
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {[
-              { name: "Meta Ads (FB + IG)", href: "/facebook-instagram-ads", description: "Synergia Facebook i Instagram" },
-              { name: "Google Ads", href: "/google-ads", description: "Reklamy w wyszukiwarce" },
-              { name: "LinkedIn Ads", href: "/linkedin-ads", description: "Leady B2B" },
-              { name: "YouTube Ads", href: "/youtube-ads", description: "Reklamy wideo" },
-            ].map((service) => (
-              <Link
-                key={service.name}
-                to={service.href}
-                className="group p-6 rounded-xl border border-border bg-card hover:border-pink-500/50 transition-all"
-              >
-                <h3 className="font-semibold mb-2 group-hover:text-pink-400 transition-colors">
-                  {service.name}
-                </h3>
-                <p className="text-muted-foreground text-sm mb-4">{service.description}</p>
-                <span className="text-pink-400 text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                  Dowiedz się więcej <ArrowRight className="w-4 h-4" />
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <RelatedServices 
+        currentService="tiktok-ads"
+        subtitle="Inne platformy reklamowe i usługi wspierające kampanie wideo"
+      />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-pink-600/10 via-background to-cyan-600/10">
