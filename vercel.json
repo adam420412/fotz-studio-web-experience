@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    { "source": "/branze/marketing-medyczny", "destination": "/dla-kogo/branza-medyczna", "permanent": true },
+    { "source": "/branze/marketing-gastronomia", "destination": "/dla-kogo/gastronomia", "permanent": true },
+    { "source": "/branze/marketing-beauty", "destination": "/dla-kogo/beauty-wellness", "permanent": true },
+    { "source": "/branze/marketing-nieruchomosci", "destination": "/dla-kogo/nieruchomosci", "permanent": true },
+    { "source": "/branze/marketing-automotive", "destination": "/dla-kogo/automotive", "permanent": true },
+    { "source": "/branze/marketing-edukacja", "destination": "/dla-kogo/edukacja", "permanent": true },
+    { "source": "/branze/marketing-prawo-finanse", "destination": "/dla-kogo/prawo-finanse", "permanent": true },
+    { "source": "/branze/marketing-ecommerce-retail", "destination": "/dla-kogo/ecommerce-retail", "permanent": true },
+    { "source": "/branze/marketing-it", "destination": "/dla-kogo/it-saas", "permanent": true },
+    { "source": "/branze/marketing-produkcja", "destination": "/dla-kogo/produkcja", "permanent": true },
+    { "source": "/branze/marketing-ngo", "destination": "/dla-kogo/ngo", "permanent": true },
+    { "source": "/branze/marketing-turystyka", "destination": "/dla-kogo/turystyka", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
