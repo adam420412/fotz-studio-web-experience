@@ -94,7 +94,7 @@ export function LocalBusinessSchema({
       "@type": "PostalAddress",
       streetAddress: "Plac Wolności 16",
       addressLocality: "Poznań",
-      postalCode: "61-739",
+      postalCode: "61739",
       addressRegion: "Wielkopolskie",
       addressCountry: "PL",
     },

@@ -46,6 +46,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://fotz.pl/poradniki</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Usługi główne -->
   <url>
@@ -319,65 +324,95 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://fotz.pl/strony-internetowe-bialystok</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/strony-internetowe-czestochowa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/strony-internetowe-zielona-gora</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/strony-internetowe-elblag</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/strony-internetowe-legnica</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/strony-internetowe-kalisz</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
-  <!-- Branże -->
+  <!-- Branże (poprawione URL do /dla-kogo/*) -->
   <url>
-    <loc>https://fotz.pl/branze/marketing-medyczny</loc>
+    <loc>https://fotz.pl/dla-kogo/branza-medyczna</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-gastronomia</loc>
+    <loc>https://fotz.pl/dla-kogo/gastronomia</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-nieruchomosci</loc>
+    <loc>https://fotz.pl/dla-kogo/nieruchomosci</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-beauty</loc>
+    <loc>https://fotz.pl/dla-kogo/beauty-wellness</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-ecommerce-retail</loc>
+    <loc>https://fotz.pl/dla-kogo/ecommerce-retail</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-edukacja</loc>
+    <loc>https://fotz.pl/dla-kogo/edukacja</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-turystyka</loc>
+    <loc>https://fotz.pl/dla-kogo/turystyka</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-automotive</loc>
+    <loc>https://fotz.pl/dla-kogo/automotive</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-prawo-finanse</loc>
+    <loc>https://fotz.pl/dla-kogo/prawo-finanse</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-it</loc>
+    <loc>https://fotz.pl/dla-kogo/it-saas</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-produkcja</loc>
+    <loc>https://fotz.pl/dla-kogo/produkcja</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/branze/marketing-ngo</loc>
+    <loc>https://fotz.pl/dla-kogo/ngo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -503,12 +538,112 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://fotz.pl/blog/kampania-reklamowa-marketingowa-przyklady-definicja</loc>
+    <loc>https://fotz.pl/blog/ile-kosztuje-strona-internetowa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/blog/ile-kosztuje-strona-internetowa</loc>
+    <loc>https://fotz.pl/blog/kampania-reklamowa-marketingowa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/ai-w-marketingu-msp-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/google-ads-vs-facebook-ads</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/tiktok-dla-biznesu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/seo-lokalne-poznan-poradnik</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/email-marketing-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/instagram-reels-vs-tiktok</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/jak-stworzyc-landing-page</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/influencer-marketing-polska</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/branding-dla-startupow</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/ux-ui-ecommerce</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/seo-ecommerce</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/marketing-automation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/personal-branding-linkedin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/video-marketing-trendy-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/remarketing-poradnik</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/google-analytics-4-poradnik</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/budzet-marketingowy-planowanie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/marketing-b2b-vs-b2c</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/psychologia-cen</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fotz.pl/blog/copywriting-landing-page</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
