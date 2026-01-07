@@ -10,6 +10,7 @@ import {
   MessageSquare, Mail, PenTool, Video, Image, BookOpen
 } from "lucide-react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema, WebPageSchema } from "@/components/seo/StructuredData";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 // Case studies for content marketing
 import klageImage from "@/assets/portfolio/klagem.png";
@@ -843,6 +844,13 @@ export default function ContentMarketing() {
           </div>
         </div>
       </section>
+
+
+      {/* Related Services */}
+      <RelatedServices 
+        currentService="content-marketing"
+        subtitle="Usługi wspierające Twoją strategię content marketingową"
+      />
 
       {/* CTA */}
       <section className="section-padding bg-gradient-to-br from-primary/10 via-background to-background">

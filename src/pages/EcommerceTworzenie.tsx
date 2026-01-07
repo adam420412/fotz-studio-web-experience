@@ -10,6 +10,7 @@ import {
   Phone, BarChart3, Zap, Settings, Globe, Target
 } from "lucide-react";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 // Import portfolio images
 import klageImage from "@/assets/portfolio/klagem.png";
@@ -705,6 +706,13 @@ export default function EcommerceTworzenie() {
           </div>
         </div>
       </section>
+
+
+      {/* Related Services */}
+      <RelatedServices 
+        currentService="ecommerce"
+        subtitle="Usługi wspierające sprzedaż w Twoim sklepie internetowym"
+      />
 
       {/* CTA */}
       <section className="section-padding bg-card">

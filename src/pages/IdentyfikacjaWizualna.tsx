@@ -15,6 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 // Import Klagem branding images
 import klageHomepage from "@/assets/branding/klagem-homepage.jpg";
@@ -840,6 +841,12 @@ const IdentyfikacjaWizualna = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* Related Services */}
+      <RelatedServices 
+        currentService="identyfikacja-wizualna"
+        subtitle="Usługi uzupełniające budowę wizerunku Twojej marki"
+      />
     </Layout>
 
     {/* Lightbox for enlarged images */}

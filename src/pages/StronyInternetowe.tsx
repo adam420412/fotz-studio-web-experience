@@ -42,6 +42,7 @@ import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 // Import wszystkich realizacji
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
@@ -1080,6 +1081,11 @@ const StronyInternetowe = () => {
             </div>
           </div>
         </section>
+
+        <RelatedServices 
+          currentService="strony-internetowe"
+          subtitle="Usługi wspierające rozwój i promocję Twojej strony www"
+        />
 
         <ContactSection />
       </Layout>
