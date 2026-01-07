@@ -14,6 +14,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
+import { RelatedServices } from "@/components/sections/RelatedServices";
 
 // Lazy load the 3D viewer for performance
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
@@ -889,6 +890,12 @@ const Wizualizacje3D = () => {
             </FadeInView>
           </div>
         </section>
+
+        {/* Related Services */}
+        <RelatedServices 
+          currentService="wizualizacje-3d"
+          subtitle="Usługi uzupełniające wizualizacje i prezentację produktów"
+        />
 
         {/* Lightbox */}
         {selectedImage !== null && (
