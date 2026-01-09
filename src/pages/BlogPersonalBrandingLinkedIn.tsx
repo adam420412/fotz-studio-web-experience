@@ -23,7 +23,7 @@ const BlogPersonalBrandingLinkedIn = () => {
         description="Kompletny przewodnik po budowaniu marki osobistej na LinkedIn."
         url="https://fotz.pl/blog/personal-branding-linkedin"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -232,6 +232,8 @@ const BlogPersonalBrandingLinkedIn = () => {
                   Personal branding na LinkedIn to maraton, nie sprint. Konsekwencja, autentyczność i wartość 
                   dla odbiorców - to klucz do sukcesu. Zacznij od optymalizacji profilu, ustal strategię 
                   contentową i publikuj regularnie. Efekty przyjdą po 6-12 miesiącach systematycznej pracy.
+                  Warto rozważyć wsparcie kampanii na LinkedIn płatnymi <Link to="/linkedin-ads" className="text-primary hover:underline">reklamami LinkedIn Ads</Link> oraz 
+                  uzupełnienie strategii o <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link>.
                 </p>
 
                 <div className="mt-12 p-6 rounded-xl bg-card border border-border not-prose">

@@ -23,7 +23,7 @@ const BlogLandingPage = () => {
         description="Kompletny poradnik tworzenia landing page z wysoką konwersją."
         url="https://fotz.pl/blog/jak-stworzyc-landing-page"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -82,7 +82,7 @@ const BlogLandingPage = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Landing page (strona lądowania) to strona internetowa zaprojektowana z jednym konkretnym celem – <strong>skłonienie odwiedzającego do podjęcia określonej akcji</strong>. Może to być zakup, zapis na newsletter, pobranie e-booka czy umówienie się na konsultację.
+                Landing page (strona lądowania) to strona internetowa zaprojektowana z jednym konkretnym celem – <strong>skłonienie odwiedzającego do podjęcia określonej akcji</strong>. Może to być zakup, zapis na newsletter, pobranie e-booka czy umówienie się na konsultację. Skuteczny landing page wymaga zarówno dobrego <Link to="/strony-internetowe" className="text-primary hover:underline">projektu strony internetowej</Link>, jak i <Link to="/pozycjonowanie" className="text-primary hover:underline">optymalizacji SEO</Link>.
               </p>
 
               {/* Key stats */}
