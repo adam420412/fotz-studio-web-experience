@@ -51,7 +51,7 @@ const BlogKosztStrony = () => {
               }
             },
             "datePublished": "2024-12-20",
-            "dateModified": "2024-12-25"
+            "dateModified": "2026-01-09"
           })}
         </script>
         <script type="application/ld+json">
@@ -178,7 +178,7 @@ const BlogKosztStrony = () => {
                   Różne typy stron internetowych
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Koszt stworzenia strony internetowej zależy w dużej mierze od jej typu.</strong> Prosta strona wizytówka, prezentująca podstawowe informacje o Twojej firmie, będzie znacznie tańsza niż rozbudowany sklep internetowy z systemem płatności online i bazą produktów. Cena strony internetowej rośnie wraz z jej złożonością i funkcjonalnością.
+                  <strong>Koszt stworzenia strony internetowej zależy w dużej mierze od jej typu.</strong> Prosta strona wizytówka, prezentująca podstawowe informacje o Twojej firmie, będzie znacznie tańsza niż rozbudowany sklep internetowy z systemem płatności online i bazą produktów. Cena strony internetowej rośnie wraz z jej złożonością i funkcjonalnością. Sprawdź naszą ofertę <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link>.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -314,7 +314,7 @@ const BlogKosztStrony = () => {
                   Ile kosztuje pozycjonowanie strony internetowej?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Pozycjonowanie stron internetowych to proces optymalizacji Twojej strony, mający na celu poprawę jej widoczności w wynikach wyszukiwania.</strong> Cennik SEO obejmuje audyt strony, analizę słów kluczowych, optymalizację treści i link building. Koszty pozycjonowania zaczynają się od kilkuset złotych miesięcznie dla mniej konkurencyjnych branż.
+                  <strong>Pozycjonowanie stron internetowych to proces optymalizacji Twojej strony, mający na celu poprawę jej widoczności w wynikach wyszukiwania.</strong> Cennik SEO obejmuje audyt strony, analizę słów kluczowych, optymalizację treści i link building. Koszty pozycjonowania zaczynają się od kilkuset złotych miesięcznie dla mniej konkurencyjnych branż. Dowiedz się więcej o naszej usłudze <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link>.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">

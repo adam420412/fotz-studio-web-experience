@@ -23,7 +23,7 @@ const BlogReelsVsTikTok = () => {
         description="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki?"
         url="https://fotz.pl/blog/instagram-reels-vs-tiktok"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -82,7 +82,7 @@ const BlogReelsVsTikTok = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Krótkie wideo to absolutny must-have w strategii social media 2025. Ale pojawia się pytanie: <strong>TikTok czy Instagram Reels?</strong> A może obie platformy? W tym artykule porównamy obie opcje i pomożemy Ci podjąć strategiczną decyzję.
+                Krótkie wideo to absolutny must-have w strategii <Link to="/social-media" className="text-primary hover:underline">social media</Link> 2025. Ale pojawia się pytanie: <strong>TikTok czy Instagram Reels?</strong> A może obie platformy? W tym artykule porównamy obie opcje i pomożemy Ci podjąć strategiczną decyzję. Jeśli interesują Cię płatne <Link to="/instagram-ads" className="text-primary hover:underline">kampanie Instagram Ads</Link> lub <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link>, sprawdź nasze dedykowane usługi.
               </p>
 
               {/* Quick comparison */}
