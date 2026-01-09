@@ -43,7 +43,7 @@ export default function BlogGoogleAnalytics4() {
         description="Google Analytics 4 krok po kroku: instalacja, konfiguracja, raporty i konwersje."
         url="https://fotz.pl/blog/google-analytics-4-poradnik"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -119,7 +119,7 @@ export default function BlogGoogleAnalytics4() {
                 <strong>Google Analytics 4 (GA4)</strong> to najnowsza generacja platformy analitycznej Google, 
                 która całkowicie zmieniła podejście do mierzenia ruchu na stronach internetowych. 
                 W przeciwieństwie do Universal Analytics (UA), GA4 opiera się na modelu <strong>event-based</strong> 
-                (opartym na zdarzeniach), a nie sesyjnym.
+                (opartym na zdarzeniach), a nie sesyjnym. Właściwa konfiguracja GA4 jest kluczowa dla skutecznego <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link> oraz optymalizacji <Link to="/google-ads" className="text-primary hover:underline">kampanii Google Ads</Link>.
               </p>
               <p>
                 Od 1 lipca 2023 roku Universal Analytics przestał zbierać nowe dane, co oznacza, 

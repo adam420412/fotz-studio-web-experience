@@ -43,7 +43,7 @@ export default function BlogCopywritingLanding() {
         description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."
         url="https://fotz.pl/blog/copywriting-landing-page"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -118,7 +118,7 @@ export default function BlogCopywritingLanding() {
               <p>
                 <strong>Copywriting dla landing pages</strong> to sztuka pisania tekstów, które prowadzą 
                 do działania. Nie chodzi o piękne słowa - chodzi o konwersję. Dobry copy odpowiada na 
-                pytania odwiedzającego: <em>Co to jest? Dla kogo? Dlaczego powinienem to chcieć?</em>
+                pytania odwiedzającego: <em>Co to jest? Dla kogo? Dlaczego powinienem to chcieć?</em> Skuteczny copy wspiera <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link> i zwiększa efektywność <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanii reklamowych</Link>.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">
