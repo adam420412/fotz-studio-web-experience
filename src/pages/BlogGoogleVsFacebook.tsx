@@ -241,7 +241,7 @@ const BlogGoogleVsFacebook = () => {
 
               <h3>4. Działasz w e-commerce</h3>
               <p>
-                Facebook + Instagram to potęga dla sklepów internetowych. Dynamiczne reklamy produktowe, katalogi produktów i remarketing to must-have dla każdego e-commerce.
+                Facebook + <Link to="/instagram-ads" className="text-primary hover:underline">Instagram</Link> to potęga dla <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">sklepów internetowych</Link>. Dynamiczne reklamy produktowe, katalogi produktów i remarketing to must-have dla każdego e-commerce.
               </p>
 
               <h2>Porównanie formatów reklamowych</h2>

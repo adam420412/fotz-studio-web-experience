@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import { RelatedServices } from "@/components/sections/RelatedServices";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 // Lazy load the 3D viewer for performance
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
@@ -410,7 +411,26 @@ const Wizualizacje3D = () => {
           name="description" 
           content="Profesjonalne wizualizacje 3D w Poznaniu. Wizualizacje wnętrz, architektoniczne, produktowe oraz animacje 3D. Fotorealistyczna jakość i nowoczesne technologie." 
         />
+        <meta name="keywords" content="wizualizacje 3D, wizualizacje architektoniczne, wizualizacje wnętrz, renderingi 3D, animacje 3D, Poznań" />
+        <link rel="canonical" href="https://fotz.pl/wizualizacje-3d" />
       </Helmet>
+      
+      <ServiceSchema 
+        name="Wizualizacje 3D"
+        description="Profesjonalne wizualizacje 3D - wnętrza, architektura, produkty. Fotorealistyczne renderingi i animacje 3D dla deweloperów i firm."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Wizualizacje 3D", url: "https://fotz.pl/wizualizacje-3d" },
+        ]}
+      />
+      
+      <FAQSchema items={faqItems} />
       
       <Layout>
         {/* Hero Section */}

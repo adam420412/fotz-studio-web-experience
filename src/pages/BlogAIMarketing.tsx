@@ -160,7 +160,7 @@ const BlogAIMarketing = () => {
 
               <h3>Dynamiczne treści na stronie</h3>
               <p>
-                AI może dostosowywać treść strony internetowej do każdego odwiedzającego. Nowy użytkownik zobaczy inne komunikaty niż powracający klient, a osoba z Poznania inne niż ta z Warszawy.
+                AI może dostosowywać treść <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link> do każdego odwiedzającego. Nowy użytkownik zobaczy inne komunikaty niż powracający klient, a osoba z Poznania inne niż ta z Warszawy.
               </p>
 
               <h2>3. Chatboty i obsługa klienta</h2>
@@ -265,7 +265,7 @@ const BlogAIMarketing = () => {
               <ul>
                 <li><strong>Google Analytics 4</strong> – darmowe, z wbudowanym AI</li>
                 <li><strong>Hotjar AI</strong> – analiza zachowań użytkowników</li>
-                <li><strong>SEMrush</strong> – analiza SEO i konkurencji</li>
+                <li><strong>SEMrush</strong> – analiza <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> i konkurencji</li>
               </ul>
 
               <h2>7. Wyzwania i pułapki</h2>
