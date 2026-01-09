@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Lightbulb, Target, Palette, MessageSquare, Eye, Heart, Zap, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function BlogBrandingStartupy() {
   const handleShare = async () => {
@@ -30,6 +31,21 @@ export default function BlogBrandingStartupy() {
         <meta name="keywords" content="branding startup, budowanie marki, identyfikacja wizualna, strategia marki, logo startup, brand book, pozycjonowanie marki" />
         <link rel="canonical" href="https://fotz.pl/blog/branding-dla-startupow" />
       </Helmet>
+      <ArticleSchema
+        title="Branding dla Startupów - Jak Zbudować Silną Markę od Zera"
+        description="Kompletny poradnik budowania marki dla startupów. Strategia brandingowa, identyfikacja wizualna, tone of voice."
+        url="https://fotz.pl/blog/branding-dla-startupow"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Branding dla startupów", url: "https://fotz.pl/blog/branding-dla-startupow" },
+        ]}
+      />
 
       <article className="pt-32 pb-20 bg-background">
         <div className="container-wide">

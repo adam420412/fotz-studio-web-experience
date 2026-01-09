@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, Target, Users, TrendingUp, DollarSign, BarChart3, RefreshCw } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -38,6 +38,21 @@ export default function BlogRemarketing() {
         <meta name="keywords" content="remarketing, retargeting, remarketing google ads, remarketing facebook, porzucone koszyki, remarketing dynamiczny" />
         <link rel="canonical" href="https://fotz.pl/blog/remarketing-poradnik" />
       </Helmet>
+      <ArticleSchema
+        title="Remarketing - kompletny poradnik dla firm 2025"
+        description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Strategie, koszty i najlepsze praktyki."
+        url="https://fotz.pl/blog/remarketing-poradnik"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Remarketing", url: "https://fotz.pl/blog/remarketing-poradnik" },
+        ]}
+      />
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

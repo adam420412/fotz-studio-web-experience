@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Search, ShoppingCart, TrendingUp, FileText, Globe, Link2, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const BlogSEOEcommerce = () => {
   return (
@@ -17,6 +18,21 @@ const BlogSEOEcommerce = () => {
         <meta name="keywords" content="seo e-commerce, pozycjonowanie sklepu internetowego, seo dla sklepów, optymalizacja e-commerce, seo produktów" />
         <link rel="canonical" href="https://fotz.pl/blog/seo-ecommerce" />
       </Helmet>
+      <ArticleSchema
+        title="SEO dla sklepów internetowych - jak pozycjonować e-commerce"
+        description="Kompletny poradnik SEO dla e-commerce. Strategie pozycjonowania sklepów internetowych."
+        url="https://fotz.pl/blog/seo-ecommerce"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "SEO e-commerce", url: "https://fotz.pl/blog/seo-ecommerce" },
+        ]}
+      />
       
       <Layout>
         <article className="pt-32 pb-20">

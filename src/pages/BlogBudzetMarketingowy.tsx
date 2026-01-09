@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, DollarSign, PieChart, TrendingUp, Calculator, Target, BarChart3 } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -38,6 +38,21 @@ export default function BlogBudzetMarketingowy() {
         <meta name="keywords" content="budżet marketingowy, planowanie budżetu, wydatki na marketing, ROI marketing, koszty reklamy" />
         <link rel="canonical" href="https://fotz.pl/blog/budzet-marketingowy-planowanie" />
       </Helmet>
+      <ArticleSchema
+        title="Budżet marketingowy - jak zaplanować wydatki na marketing 2025"
+        description="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik dla MŚP."
+        url="https://fotz.pl/blog/budzet-marketingowy-planowanie"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Budżet marketingowy", url: "https://fotz.pl/blog/budzet-marketingowy-planowanie" },
+        ]}
+      />
       <FAQSchema items={faqItems} />
 
       {/* Hero */}
