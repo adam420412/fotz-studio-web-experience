@@ -82,7 +82,7 @@ const BlogEmailMarketing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                W erze social media i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najskuteczniejszych kanałów marketingowych z ROI sięgającym 4200%. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów.
+                W erze <Link to="/social-media" className="text-primary hover:underline">social media</Link> i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najskuteczniejszych kanałów marketingowych z ROI sięgającym 4200%. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów.
               </p>
 
               {/* Key stats */}
@@ -178,7 +178,7 @@ const BlogEmailMarketing = () => {
               <h3>3. Optymalizacja landing page zapisu</h3>
 
               <p>
-                Landing page dla lead magnetu powinien być prosty i skupiony na jednym celu:
+                <Link to="/strony-internetowe" className="text-primary hover:underline">Landing page</Link> dla lead magnetu powinien być prosty i skupiony na jednym celu:
               </p>
 
               <ul>
