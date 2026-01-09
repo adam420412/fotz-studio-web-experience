@@ -24,7 +24,7 @@ export default function BlogUXEcommerce() {
         description="Kompletny poradnik UX/UI dla sklepów internetowych. Jak projektować sklepy e-commerce zwiększające konwersję."
         url="https://fotz.pl/blog/ux-ui-ecommerce"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -102,7 +102,7 @@ export default function BlogUXEcommerce() {
                 <strong className="text-foreground"> dobry UX/UI może być różnicą między sukcesem a porażką</strong>. 
                 Sklep internetowy to nie tylko katalog produktów - to doświadczenie zakupowe, które musi być 
                 intuicyjne, przyjemne i efektywne. W tym poradniku pokażemy, jak projektować sklepy, które 
-                nie tylko dobrze wyglądają, ale przede wszystkim sprzedają.
+                nie tylko dobrze wyglądają, ale przede wszystkim sprzedają. Sprawdź również nasze usługi <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">tworzenia sklepów e-commerce</Link> oraz <Link to="/strony-internetowe" className="text-primary hover:underline">projektowania stron internetowych</Link>.
               </p>
             </motion.div>
 
