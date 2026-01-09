@@ -43,7 +43,7 @@ export default function BlogB2BvsB2C() {
         description="Marketing B2B vs B2C: kluczowe różnice w strategii, kanałach i komunikacji. Jak dostosować marketing do modelu biznesowego."
         url="https://fotz.pl/blog/marketing-b2b-vs-b2c"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -117,7 +117,7 @@ export default function BlogB2BvsB2C() {
               </h2>
               <p>
                 <strong>B2B (Business-to-Business)</strong> to model, w którym sprzedajesz produkty lub usługi 
-                innym firmom. <strong>B2C (Business-to-Consumer)</strong> to sprzedaż bezpośrednio do konsumentów końcowych.
+                innym firmom. <strong>B2C (Business-to-Consumer)</strong> to sprzedaż bezpośrednio do konsumentów końcowych. Niezależnie od modelu, skuteczny <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link> oraz odpowiednia <Link to="/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> są fundamentem sukcesu.
               </p>
               <p>
                 Ta pozornie prosta różnica przekłada się na fundamentalnie inne podejście do marketingu, 

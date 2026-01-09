@@ -23,7 +23,7 @@ const BlogEmailMarketing = () => {
         description="Kompletny poradnik email marketingu. Strategie budowania listy i zwiększania konwersji."
         url="https://fotz.pl/blog/email-marketing-2025"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -375,7 +375,7 @@ const BlogEmailMarketing = () => {
               </ul>
 
               <p>
-                Zacznij od jednego lead magnetu i prostej sekwencji powitalnej. Rozbudowuj system stopniowo, analizując wyniki. Z czasem email marketing stanie się jednym z najważniejszych kanałów pozyskiwania i utrzymywania klientów.
+                Zacznij od jednego lead magnetu i prostej sekwencji powitalnej. Rozbudowuj system stopniowo, analizując wyniki. Z czasem email marketing stanie się jednym z najważniejszych kanałów pozyskiwania i utrzymywania klientów. Połącz go z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link> i <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniem SEO</Link> dla maksymalnych efektów.
               </p>
 
               {/* FAQ Section */}
