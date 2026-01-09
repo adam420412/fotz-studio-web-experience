@@ -23,7 +23,7 @@ const BlogSEOLokalnePoznan = () => {
         description="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego."
         url="https://fotz.pl/blog/seo-lokalne-poznan-poradnik"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -82,7 +82,7 @@ const BlogSEOLokalnePoznan = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Wyobraź sobie: klient w Poznaniu szuka "dentysta Jeżyce" lub "mechanik Grunwald". <strong>Czy Twoja firma pojawia się w wynikach?</strong> Jeśli nie, tracisz klientów na rzecz konkurencji, która zadbała o SEO lokalne. Ten poradnik pokaże Ci krok po kroku, jak to zmienić.
+                Wyobraź sobie: klient w Poznaniu szuka "dentysta Jeżyce" lub "mechanik Grunwald". <strong>Czy Twoja firma pojawia się w wynikach?</strong> Jeśli nie, tracisz klientów na rzecz konkurencji, która zadbała o SEO lokalne. Ten poradnik pokaże Ci krok po kroku, jak to zmienić. Sprawdź również nasze usługi <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link> i <Link to="/pozycjonowanie-google-maps" className="text-primary hover:underline">pozycjonowania w Google Maps</Link>.
               </p>
 
               {/* Key stats */}
