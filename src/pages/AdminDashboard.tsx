@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Input } from "@/components/ui/input";
 import { 
   BarChart3, 
   Gauge, 
@@ -23,7 +24,11 @@ import {
   TrendingUp,
   Calendar,
   Users,
-  Shield
+  Shield,
+  Globe,
+  Smartphone,
+  Monitor,
+  ExternalLink
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -36,6 +41,27 @@ interface WebVitalsMetrics {
   ttfb: number | null;
   fcp: number | null;
   timestamp: Date;
+}
+
+interface PageSpeedResult {
+  score: number;
+  metrics: {
+    fcp: number;
+    lcp: number;
+    tbt: number;
+    cls: number;
+    si: number;
+    tti: number;
+  };
+  audits: {
+    name: string;
+    score: number;
+    displayValue?: string;
+    description: string;
+  }[];
+  timestamp: string;
+  url: string;
+  strategy: 'mobile' | 'desktop';
 }
 
 interface MetricThresholds {
@@ -121,6 +147,14 @@ export default function AdminDashboard() {
   const [isLoading, setIsLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
   const [isCollecting, setIsCollecting] = useState(false);
+  
+  // PageSpeed Insights state
+  const [pageSpeedUrl, setPageSpeedUrl] = useState('https://fotz.pl');
+  const [pageSpeedStrategy, setPageSpeedStrategy] = useState<'mobile' | 'desktop'>('mobile');
+  const [pageSpeedResult, setPageSpeedResult] = useState<PageSpeedResult | null>(null);
+  const [isTestingPageSpeed, setIsTestingPageSpeed] = useState(false);
+  const [pageSpeedHistory, setPageSpeedHistory] = useState<PageSpeedResult[]>([]);
+  
   const { toast } = useToast();
 
   useEffect(() => {
@@ -241,6 +275,44 @@ export default function AdminDashboard() {
     updateMetrics();
   }, []);
 
+  const runPageSpeedTest = async () => {
+    if (!pageSpeedUrl) {
+      toast({
+        title: "Brak URL",
+        description: "Wprowadź adres URL do przetestowania",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsTestingPageSpeed(true);
+    
+    try {
+      const { data, error } = await supabase.functions.invoke('pagespeed-test', {
+        body: { url: pageSpeedUrl, strategy: pageSpeedStrategy }
+      });
+
+      if (error) throw error;
+
+      setPageSpeedResult(data);
+      setPageSpeedHistory(prev => [...prev.slice(-4), data]);
+      
+      toast({
+        title: "Test zakończony",
+        description: `Wynik: ${data.score}/100 (${pageSpeedStrategy})`,
+      });
+    } catch (error) {
+      console.error('PageSpeed test error:', error);
+      toast({
+        title: "Błąd testu",
+        description: "Nie udało się wykonać testu PageSpeed. Sprawdź URL i spróbuj ponownie.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsTestingPageSpeed(false);
+    }
+  };
+
   if (isAdmin === false) {
     return <Navigate to="/" replace />;
   }
@@ -276,11 +348,15 @@ export default function AdminDashboard() {
               <Loader2 className="w-8 h-8 animate-spin text-primary" />
             </div>
           ) : (
-            <Tabs defaultValue="vitals" className="space-y-6">
-              <TabsList className="grid w-full max-w-md grid-cols-3">
+            <Tabs defaultValue="pagespeed" className="space-y-6">
+              <TabsList className="grid w-full max-w-xl grid-cols-4">
+                <TabsTrigger value="pagespeed" className="gap-2">
+                  <Globe className="w-4 h-4" />
+                  PageSpeed
+                </TabsTrigger>
                 <TabsTrigger value="vitals" className="gap-2">
                   <Gauge className="w-4 h-4" />
-                  Core Web Vitals
+                  Web Vitals
                 </TabsTrigger>
                 <TabsTrigger value="security" className="gap-2">
                   <Shield className="w-4 h-4" />
@@ -291,6 +367,219 @@ export default function AdminDashboard() {
                   Statystyki
                 </TabsTrigger>
               </TabsList>
+
+              {/* PageSpeed Insights Tab */}
+              <TabsContent value="pagespeed" className="space-y-6">
+                {/* Test Form */}
+                <Card className="border-border">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Globe className="w-5 h-5 text-primary" />
+                      Google PageSpeed Insights
+                    </CardTitle>
+                    <CardDescription>
+                      Przetestuj wydajność dowolnej strony za pomocą Google PageSpeed API
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex flex-col md:flex-row gap-4">
+                      <div className="flex-1">
+                        <Input
+                          type="url"
+                          placeholder="https://fotz.pl"
+                          value={pageSpeedUrl}
+                          onChange={(e) => setPageSpeedUrl(e.target.value)}
+                          className="w-full"
+                        />
+                      </div>
+                      <div className="flex gap-2">
+                        <Button
+                          variant={pageSpeedStrategy === 'mobile' ? 'default' : 'outline'}
+                          size="icon"
+                          onClick={() => setPageSpeedStrategy('mobile')}
+                          title="Test mobilny"
+                        >
+                          <Smartphone className="w-4 h-4" />
+                        </Button>
+                        <Button
+                          variant={pageSpeedStrategy === 'desktop' ? 'default' : 'outline'}
+                          size="icon"
+                          onClick={() => setPageSpeedStrategy('desktop')}
+                          title="Test desktopowy"
+                        >
+                          <Monitor className="w-4 h-4" />
+                        </Button>
+                        <Button onClick={runPageSpeedTest} disabled={isTestingPageSpeed}>
+                          {isTestingPageSpeed ? (
+                            <>
+                              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                              Testowanie...
+                            </>
+                          ) : (
+                            <>
+                              <Zap className="w-4 h-4 mr-2" />
+                              Uruchom test
+                            </>
+                          )}
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Results */}
+                {pageSpeedResult && (
+                  <>
+                    {/* Score Card */}
+                    <Card className="border-border">
+                      <CardHeader className="pb-2">
+                        <CardTitle className="flex items-center justify-between">
+                          <div className="flex items-center gap-3">
+                            <div className={cn(
+                              "w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold",
+                              pageSpeedResult.score >= 90 ? "bg-green-500/20 text-green-500" :
+                              pageSpeedResult.score >= 50 ? "bg-yellow-500/20 text-yellow-500" :
+                              "bg-red-500/20 text-red-500"
+                            )}>
+                              {pageSpeedResult.score}
+                            </div>
+                            <div>
+                              <p className="text-xl font-bold">Wynik PageSpeed</p>
+                              <p className="text-sm text-muted-foreground flex items-center gap-2">
+                                {pageSpeedResult.strategy === 'mobile' ? <Smartphone className="w-4 h-4" /> : <Monitor className="w-4 h-4" />}
+                                {pageSpeedResult.strategy === 'mobile' ? 'Test mobilny' : 'Test desktopowy'}
+                              </p>
+                            </div>
+                          </div>
+                          <a 
+                            href={`https://pagespeed.web.dev/report?url=${encodeURIComponent(pageSpeedResult.url)}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1 text-sm text-primary hover:underline"
+                          >
+                            Pełny raport <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <Progress 
+                          value={pageSpeedResult.score} 
+                          className={cn(
+                            "h-3",
+                            pageSpeedResult.score >= 90 ? "[&>div]:bg-green-500" :
+                            pageSpeedResult.score >= 50 ? "[&>div]:bg-yellow-500" :
+                            "[&>div]:bg-red-500"
+                          )}
+                        />
+                        <p className="text-xs text-muted-foreground mt-2">
+                          Testowano: {new Date(pageSpeedResult.timestamp).toLocaleString('pl-PL')}
+                        </p>
+                      </CardContent>
+                    </Card>
+
+                    {/* Metrics Grid */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {pageSpeedResult.audits.map((audit, index) => {
+                        const status = audit.score >= 0.9 ? 'good' : audit.score >= 0.5 ? 'needs-improvement' : 'poor';
+                        const StatusIcon = getStatusIcon(status);
+                        
+                        return (
+                          <Card key={index} className="border-border">
+                            <CardHeader className="pb-2">
+                              <div className="flex items-center justify-between">
+                                <CardTitle className="text-base">{audit.name}</CardTitle>
+                                <Badge className={cn("gap-1", getStatusColor(status))}>
+                                  <StatusIcon className="w-3 h-3" />
+                                  {Math.round(audit.score * 100)}%
+                                </Badge>
+                              </div>
+                            </CardHeader>
+                            <CardContent>
+                              <p className="text-2xl font-bold mb-1">{audit.displayValue || 'N/A'}</p>
+                              <p className="text-xs text-muted-foreground">{audit.description}</p>
+                            </CardContent>
+                          </Card>
+                        );
+                      })}
+                    </div>
+
+                    {/* Raw Metrics */}
+                    <Card className="border-border">
+                      <CardHeader>
+                        <CardTitle>Szczegółowe metryki (ms)</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                          {[
+                            { label: 'FCP', value: pageSpeedResult.metrics.fcp },
+                            { label: 'LCP', value: pageSpeedResult.metrics.lcp },
+                            { label: 'TBT', value: pageSpeedResult.metrics.tbt },
+                            { label: 'CLS', value: pageSpeedResult.metrics.cls },
+                            { label: 'SI', value: pageSpeedResult.metrics.si },
+                            { label: 'TTI', value: pageSpeedResult.metrics.tti },
+                          ].map((metric) => (
+                            <div key={metric.label} className="text-center p-3 rounded-lg bg-muted/30">
+                              <p className="text-xs text-muted-foreground mb-1">{metric.label}</p>
+                              <p className="text-lg font-bold">
+                                {metric.label === 'CLS' ? metric.value.toFixed(3) : `${Math.round(metric.value)}ms`}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </>
+                )}
+
+                {/* History */}
+                {pageSpeedHistory.length > 0 && (
+                  <Card className="border-border">
+                    <CardHeader>
+                      <CardTitle>Historia testów</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-2">
+                        {pageSpeedHistory.slice().reverse().map((result, index) => (
+                          <div key={index} className="flex items-center justify-between p-3 rounded-lg bg-muted/20">
+                            <div className="flex items-center gap-3">
+                              <div className={cn(
+                                "w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold",
+                                result.score >= 90 ? "bg-green-500/20 text-green-500" :
+                                result.score >= 50 ? "bg-yellow-500/20 text-yellow-500" :
+                                "bg-red-500/20 text-red-500"
+                              )}>
+                                {result.score}
+                              </div>
+                              <div>
+                                <p className="text-sm font-medium truncate max-w-[200px]">{result.url}</p>
+                                <p className="text-xs text-muted-foreground flex items-center gap-1">
+                                  {result.strategy === 'mobile' ? <Smartphone className="w-3 h-3" /> : <Monitor className="w-3 h-3" />}
+                                  {new Date(result.timestamp).toLocaleTimeString('pl-PL')}
+                                </p>
+                              </div>
+                            </div>
+                            <Badge variant="outline">
+                              LCP: {Math.round(result.metrics.lcp)}ms
+                            </Badge>
+                          </div>
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                )}
+
+                {!pageSpeedResult && !isTestingPageSpeed && (
+                  <Card className="border-dashed border-2 border-muted">
+                    <CardContent className="flex flex-col items-center justify-center py-12">
+                      <Globe className="w-12 h-12 text-muted-foreground mb-4" />
+                      <p className="text-lg font-medium mb-2">Brak wyników</p>
+                      <p className="text-sm text-muted-foreground text-center max-w-md">
+                        Wprowadź adres URL i uruchom test, aby zobaczyć szczegółowe metryki wydajności z Google PageSpeed Insights.
+                      </p>
+                    </CardContent>
+                  </Card>
+                )}
+              </TabsContent>
 
               {/* Core Web Vitals Tab */}
               <TabsContent value="vitals" className="space-y-6">
