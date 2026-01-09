@@ -23,7 +23,7 @@ const BlogTikTokBiznes = () => {
         description="Kompletny poradnik TikTok dla firm. Strategie, formaty i TikTok Ads."
         url="https://fotz.pl/blog/tiktok-dla-biznesu"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -288,6 +288,8 @@ const BlogTikTokBiznes = () => {
 
               <p>
                 Jeśli Twoja grupa docelowa jest na TikToku (a prawdopodobnie jest), czas zacząć działać. Konkurencja rośnie z każdym dniem.
+                Rozważ również uzupełnienie strategii o <Link to="/social-media" className="text-primary hover:underline">zarządzanie social media</Link> oraz 
+                kampanie <Link to="/instagram-ads" className="text-primary hover:underline">Instagram Reels</Link> dla pełnego pokrycia video-first platform.
               </p>
 
               {/* FAQ Section */}
