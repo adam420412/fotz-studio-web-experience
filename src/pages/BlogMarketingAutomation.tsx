@@ -242,7 +242,9 @@ const BlogMarketingAutomation = () => {
                 <p>
                   Marketing automation to nie luksus, ale konieczność w 2025 roku. Firmy, które wdrożą automatyzację, 
                   zyskują przewagę konkurencyjną, oszczędzają czas i generują więcej kwalifikowanych leadów. 
-                  Kluczem jest rozpoczęcie od prostych procesów i stopniowe rozbudowywanie systemu.
+                  Kluczem jest rozpoczęcie od prostych procesów i stopniowe rozbudowywanie systemu. Automatyzacja 
+                  doskonale współgra z <Link to="/content-marketing" className="text-primary hover:underline">content marketingiem</Link> oraz 
+                  kampaniami <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
                 </p>
 
                 <div className="mt-12 p-6 rounded-xl bg-card border border-border not-prose">

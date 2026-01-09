@@ -246,7 +246,8 @@ const BlogVideoMarketing = () => {
                   Video marketing to nie przyszłość - to teraźniejszość. W 2025 roku firmy, które 
                   nie wykorzystują wideo, zostaną w tyle. Zacznij od małych kroków: jeden 
                   short-form content tygodniowo, testimoniale klientów, behind-the-scenes. 
-                  Testuj, mierz, optymalizuj.
+                  Testuj, mierz, optymalizuj. Warto również rozważyć integrację wideo z <Link to="/social-media" className="text-primary hover:underline">strategią social media</Link> oraz 
+                  kampaniami na <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link> i <Link to="/youtube-ads" className="text-primary hover:underline">YouTube Ads</Link>.
                 </p>
 
                 <div className="mt-12 p-6 rounded-xl bg-card border border-border not-prose">
