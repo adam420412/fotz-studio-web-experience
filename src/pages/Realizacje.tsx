@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { ArrowRight, Filter, X, Camera, Video, Building, Users, Sparkles, MapPin, Music, Utensils, Briefcase } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ImageLightbox } from "@/components/ImageLightbox";
+import { BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 // Import local portfolio images
 import rppgImg from "@/assets/portfolio/rppg.png";
@@ -407,6 +409,21 @@ const Realizacje = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Portfolio i Realizacje - Case Studies | Fotz Studio</title>
+        <meta name="description" content="Ponad 600 zrealizowanych projektów: strony internetowe, e-commerce, kampanie marketingowe, fotografia i produkcja video. Zobacz nasze case studies." />
+        <meta name="keywords" content="portfolio, realizacje, case studies, strony internetowe przykłady, projekty marketingowe, fotografia eventowa, wizualizacje 3D" />
+        <link rel="canonical" href="https://fotz.pl/realizacje" />
+        <meta property="og:title" content="Portfolio i Realizacje | Fotz Studio" />
+        <meta property="og:description" content="Ponad 600 zrealizowanych projektów. Zobacz nasze case studies i portfolio." />
+        <meta property="og:url" content="https://fotz.pl/realizacje" />
+      </Helmet>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Realizacje", url: "https://fotz.pl/realizacje" }
+        ]}
+      />
       {/* Hero Section */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

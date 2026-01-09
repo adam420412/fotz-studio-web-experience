@@ -11,7 +11,8 @@
     { "source": "/branze/marketing-it", "destination": "/dla-kogo/it-saas", "permanent": true },
     { "source": "/branze/marketing-produkcja", "destination": "/dla-kogo/produkcja", "permanent": true },
     { "source": "/branze/marketing-ngo", "destination": "/dla-kogo/ngo", "permanent": true },
-    { "source": "/branze/marketing-turystyka", "destination": "/dla-kogo/turystyka", "permanent": true }
+    { "source": "/branze/marketing-turystyka", "destination": "/dla-kogo/turystyka", "permanent": true },
+    { "source": "/blog/kampania-reklamowa-marketingowa-przyklady-definicja", "destination": "/blog/kampania-reklamowa-marketingowa", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }

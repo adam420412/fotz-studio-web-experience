@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader2, Calendar, Calculator, ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -11,6 +12,7 @@ import { z } from "zod";
 import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { BreadcrumbSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -136,6 +138,22 @@ export default function Kontakt() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Kontakt - Umów Bezpłatną Konsultację | Fotz Studio Poznań</title>
+        <meta name="description" content="Skontaktuj się z nami! Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Email: adam@fotz.pl. Umów bezpłatną konsultację marketingową online." />
+        <meta name="keywords" content="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań agencja, Plac Wolności 16" />
+        <link rel="canonical" href="https://fotz.pl/kontakt" />
+        <meta property="og:title" content="Kontakt | Fotz Studio Poznań" />
+        <meta property="og:description" content="Skontaktuj się z nami! Biuro w centrum Poznania. Umów bezpłatną konsultację marketingową." />
+        <meta property="og:url" content="https://fotz.pl/kontakt" />
+      </Helmet>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kontakt", url: "https://fotz.pl/kontakt" }
+        ]}
+      />
+      <LocalBusinessSchema />
       {/* Hero */}
       <section className="pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-16 md:pb-20 section-padding bg-background">
         <div className="container-wide">
