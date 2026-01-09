@@ -36,7 +36,7 @@ export default function BlogBrandingStartupy() {
         description="Kompletny poradnik budowania marki dla startupów. Strategia brandingowa, identyfikacja wizualna, tone of voice."
         url="https://fotz.pl/blog/branding-dla-startupow"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -104,7 +104,7 @@ export default function BlogBrandingStartupy() {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               
               <p className="lead">
-                Branding to nie tylko logo i kolorystyka. To całościowe doświadczenie, jakie klient ma z Twoją marką. Dla startupów silny branding jest szczególnie ważny - pomaga wyróżnić się w tłumie, budować zaufanie i przyciągać inwestorów.
+                Branding to nie tylko logo i kolorystyka. To całościowe doświadczenie, jakie klient ma z Twoją marką. Dla startupów silny branding jest szczególnie ważny - pomaga wyróżnić się w tłumie, budować zaufanie i przyciągać inwestorów. Profesjonalna <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">identyfikacja wizualna</Link> oraz skuteczna <Link to="/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> to fundamenty sukcesu.
               </p>
 
               <div className="bg-card rounded-2xl p-8 my-8">

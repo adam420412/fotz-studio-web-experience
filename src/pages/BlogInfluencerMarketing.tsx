@@ -36,7 +36,7 @@ export default function BlogInfluencerMarketing() {
         description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii."
         url="https://fotz.pl/blog/influencer-marketing-polska"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -104,7 +104,7 @@ export default function BlogInfluencerMarketing() {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               
               <p className="lead">
-                Influencer marketing w Polsce to już dojrzały rynek wart ponad 500 milionów złotych rocznie. Współpraca z twórcami internetowymi może być niezwykle skuteczna, ale wymaga strategicznego podejścia i znajomości specyfiki polskiego rynku.
+                Influencer marketing w Polsce to już dojrzały rynek wart ponad 500 milionów złotych rocznie. Współpraca z twórcami internetowymi może być niezwykle skuteczna, ale wymaga strategicznego podejścia i znajomości specyfiki polskiego rynku. Kluczowe jest odpowiednie <Link to="/social-media" className="text-primary hover:underline">zarządzanie social media</Link> oraz integracja z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>.
               </p>
 
               <div className="bg-card rounded-2xl p-8 my-8">
