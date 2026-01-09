@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, PenTool, Target, Zap, CheckCircle, AlertCircle, Lightbulb } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -38,6 +38,21 @@ export default function BlogCopywritingLanding() {
         <meta name="keywords" content="copywriting landing page, jak pisać landing page, teksty na stronę, headline, CTA, konwersja" />
         <link rel="canonical" href="https://fotz.pl/blog/copywriting-landing-page" />
       </Helmet>
+      <ArticleSchema
+        title="Copywriting dla landing pages - jak pisać teksty, które konwertują"
+        description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."
+        url="https://fotz.pl/blog/copywriting-landing-page"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Copywriting Landing Page", url: "https://fotz.pl/blog/copywriting-landing-page" },
+        ]}
+      />
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

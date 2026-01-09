@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Users, Target, TrendingUp, CheckCircle, AlertCircle, DollarSign, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function BlogInfluencerMarketing() {
   const handleShare = async () => {
@@ -30,6 +31,21 @@ export default function BlogInfluencerMarketing() {
         <meta name="keywords" content="influencer marketing, współpraca z influencerami, kampanie influencerskie, mikro influencerzy, nano influencerzy, Instagram influencerzy, TikTok influencerzy" />
         <link rel="canonical" href="https://fotz.pl/blog/influencer-marketing-polska" />
       </Helmet>
+      <ArticleSchema
+        title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami"
+        description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii."
+        url="https://fotz.pl/blog/influencer-marketing-polska"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Influencer Marketing", url: "https://fotz.pl/blog/influencer-marketing-polska" },
+        ]}
+      />
 
       <article className="pt-32 pb-20 bg-background">
         <div className="container-wide">

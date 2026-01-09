@@ -5,6 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ArrowLeft, Calendar, Clock, User, Share2, ShoppingCart, Eye, MousePointer, Zap, CheckCircle2, ArrowRight, Lightbulb, Target, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function BlogUXEcommerce() {
   return (
@@ -18,6 +19,21 @@ export default function BlogUXEcommerce() {
         <meta name="keywords" content="UX e-commerce, UI sklep internetowy, projektowanie sklepów, konwersja e-commerce, user experience" />
         <link rel="canonical" href="https://fotz.pl/blog/ux-ui-ecommerce" />
       </Helmet>
+      <ArticleSchema
+        title="UX/UI w e-commerce - jak projektować sklepy które sprzedają"
+        description="Kompletny poradnik UX/UI dla sklepów internetowych. Jak projektować sklepy e-commerce zwiększające konwersję."
+        url="https://fotz.pl/blog/ux-ui-ecommerce"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "UX/UI e-commerce", url: "https://fotz.pl/blog/ux-ui-ecommerce" },
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="pt-32 pb-12 section-padding bg-background">

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, BarChart3, Target, TrendingUp, Settings, Database, Zap } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -38,6 +38,21 @@ export default function BlogGoogleAnalytics4() {
         <meta name="keywords" content="google analytics 4, ga4, analytics, śledzenie konwersji, google analytics poradnik, ga4 konfiguracja" />
         <link rel="canonical" href="https://fotz.pl/blog/google-analytics-4-poradnik" />
       </Helmet>
+      <ArticleSchema
+        title="Google Analytics 4 - kompletny poradnik GA4 dla firm 2025"
+        description="Google Analytics 4 krok po kroku: instalacja, konfiguracja, raporty i konwersje."
+        url="https://fotz.pl/blog/google-analytics-4-poradnik"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Google Analytics 4", url: "https://fotz.pl/blog/google-analytics-4-poradnik" },
+        ]}
+      />
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

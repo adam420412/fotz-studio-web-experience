@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, Users, Building2, Target, TrendingUp, Megaphone, ShoppingCart } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -38,6 +38,21 @@ export default function BlogB2BvsB2C() {
         <meta name="keywords" content="marketing b2b, marketing b2c, b2b vs b2c, strategia b2b, sprzedaż b2b, lead generation b2b" />
         <link rel="canonical" href="https://fotz.pl/blog/marketing-b2b-vs-b2c" />
       </Helmet>
+      <ArticleSchema
+        title="Marketing B2B vs B2C - kluczowe różnice i strategie"
+        description="Marketing B2B vs B2C: kluczowe różnice w strategii, kanałach i komunikacji. Jak dostosować marketing do modelu biznesowego."
+        url="https://fotz.pl/blog/marketing-b2b-vs-b2c"
+        datePublished="2025-01-04"
+        dateModified="2025-01-04"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Marketing B2B vs B2C", url: "https://fotz.pl/blog/marketing-b2b-vs-b2c" },
+        ]}
+      />
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

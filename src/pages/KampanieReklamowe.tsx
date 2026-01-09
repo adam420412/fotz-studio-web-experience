@@ -16,6 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const KampanieReklamowe = () => {
   const platforms = [
@@ -213,6 +214,22 @@ const KampanieReklamowe = () => {
         <meta name="description" content="Profesjonalne kampanie reklamowe Google Ads i Facebook Ads. Zwiększ sprzedaż dzięki precyzyjnemu targetowaniu i optymalizacji. Agencja reklamowa Poznań." />
         <link rel="canonical" href="https://fotz.pl/kampanie-reklamowe" />
       </Helmet>
+      <ServiceSchema 
+        name="Kampanie Reklamowe Google Ads i Facebook Ads"
+        description="Profesjonalne kampanie reklamowe Google Ads, Facebook Ads, Instagram, TikTok i LinkedIn. Precyzyjne targetowanie i optymalizacja ROI."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Kampanie Reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
+        ]}
+      />
+      <FAQSchema 
+        items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">

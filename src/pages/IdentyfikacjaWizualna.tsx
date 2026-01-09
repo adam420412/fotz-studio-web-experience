@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 // Import Klagem branding images
 import klageHomepage from "@/assets/branding/klagem-homepage.jpg";
@@ -153,6 +154,22 @@ const IdentyfikacjaWizualna = () => {
         <meta name="description" content="Profesjonalna identyfikacja wizualna firmy. Projektowanie logo, księgi znaku, materiałów firmowych. Spójna i efektywna komunikacja marki. Agencja brandingowa Poznań." />
         <link rel="canonical" href="https://fotz.pl/identyfikacja-wizualna" />
       </Helmet>
+      <ServiceSchema 
+        name="Identyfikacja Wizualna i Branding"
+        description="Profesjonalna identyfikacja wizualna firmy. Projektowanie logo, księgi znaku, materiałów firmowych."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Identyfikacja Wizualna", url: "https://fotz.pl/identyfikacja-wizualna" },
+        ]}
+      />
+      <FAQSchema 
+        items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center bg-background overflow-hidden pt-24">
