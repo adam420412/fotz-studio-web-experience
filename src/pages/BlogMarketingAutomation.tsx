@@ -23,7 +23,7 @@ const BlogMarketingAutomation = () => {
         description="Kompletny przewodnik po marketing automation. Automatyzacja procesów marketingowych."
         url="https://fotz.pl/blog/marketing-automation-2025"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -87,7 +87,8 @@ const BlogMarketingAutomation = () => {
                 <p>
                   Marketing automation to wykorzystanie oprogramowania do automatyzacji powtarzalnych zadań marketingowych. 
                   Obejmuje email marketing, zarządzanie leadami, scoring, kampanie wielokanałowe i personalizację treści 
-                  - wszystko bez ręcznej interwencji.
+                  - wszystko bez ręcznej interwencji. Automatyzacja świetnie wspiera <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link> oraz 
+                  strategie <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link>.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 my-12 not-prose">
