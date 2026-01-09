@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, DollarSign, Brain, TrendingUp, Tag, Percent, Zap } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -38,6 +38,21 @@ export default function BlogPsychologiaCen() {
         <meta name="keywords" content="psychologia cen, pricing psychology, ustalanie cen, kotwiczenie cen, charm pricing, strategia cenowa" />
         <link rel="canonical" href="https://fotz.pl/blog/psychologia-cen" />
       </Helmet>
+      <ArticleSchema
+        title="Psychologia cen - jak ustalać ceny, które sprzedają"
+        description="Psychologia cen w praktyce: kotwiczenie, charm pricing, decoy effect. Techniki cenowe zwiększające konwersję."
+        url="https://fotz.pl/blog/psychologia-cen"
+        datePublished="2025-01-04"
+        dateModified="2026-01-09"
+        author="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Psychologia cen", url: "https://fotz.pl/blog/psychologia-cen" },
+        ]}
+      />
       <FAQSchema items={faqItems} />
 
       {/* Hero */}
@@ -294,7 +309,9 @@ export default function BlogPsychologiaCen() {
               <p>
                 Pamiętaj: cena to nie tylko koszt - to sygnał wartości. Testuj różne strategie, 
                 analizuj dane i optymalizuj. Małe zmiany w prezentacji cen mogą przynieść duże 
-                wzrosty przychodów.
+                wzrosty przychodów. Dobrze zaprojektowany <Link to="/strony-internetowe" className="text-primary hover:underline">landing page</Link> z 
+                odpowiednim cennikiem, wspierany przez <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie SEO</Link>, 
+                może znacząco zwiększyć sprzedaż.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-8 my-8 text-center">

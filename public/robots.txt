@@ -1,10 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
+# Robots.txt for fotz.pl
+# Last updated: 2026-01-09
 
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
 
 User-agent: Twitterbot
 Allow: /
@@ -15,12 +19,23 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
 User-agent: *
 Allow: /
 
 # Disallow admin and auth pages
 Disallow: /akademia/admin
 Disallow: /akademia/auth
+Disallow: /admin/
 
-# Sitemap
+# Disallow API and internal paths
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap location
 Sitemap: https://fotz.pl/sitemap.xml
