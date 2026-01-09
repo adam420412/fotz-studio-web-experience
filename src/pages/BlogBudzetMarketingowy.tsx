@@ -43,7 +43,7 @@ export default function BlogBudzetMarketingowy() {
         description="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik dla MŚP."
         url="https://fotz.pl/blog/budzet-marketingowy-planowanie"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema
@@ -117,7 +117,7 @@ export default function BlogBudzetMarketingowy() {
               </h2>
               <p>
                 <strong>Budżet marketingowy</strong> to nie tylko liczba w arkuszu kalkulacyjnym - to strategiczne 
-                narzędzie, które determinuje, jak szybko i efektywnie Twoja firma będzie rosnąć. 
+                narzędzie, które determinuje, jak szybko i efektywnie Twoja firma będzie rosnąć. Właściwe planowanie budżetu pozwala zoptymalizować wydatki na <Link to="/google-ads" className="text-primary hover:underline">kampanie Google Ads</Link> oraz <Link to="/facebook-ads" className="text-primary hover:underline">reklamy Facebook Ads</Link>.
                 Bez jasnego planu wydatków marketingowych ryzykujesz:
               </p>
               <ul>
