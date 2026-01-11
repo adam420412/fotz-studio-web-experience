@@ -92,27 +92,7 @@ export function CaseStudies() {
           }}
         />
 
-        {/* Floating particles */}
-        {[...Array(10)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-primary/30 rounded-full"
-            style={{
-              left: `${20 + Math.random() * 60}%`,
-              top: `${20 + Math.random() * 60}%`,
-            }}
-            animate={{
-              y: [0, -60, 0],
-              opacity: [0, 1, 0],
-              scale: [0, 1.5, 0],
-            }}
-            transition={{
-              duration: 5 + Math.random() * 3,
-              repeat: Infinity,
-              delay: Math.random() * 5,
-            }}
-          />
-        ))}
+        {/* Removed floating particles for performance */}
       </div>
 
       <div className="container-wide relative z-10">
