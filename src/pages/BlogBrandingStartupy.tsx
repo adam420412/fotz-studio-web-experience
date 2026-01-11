@@ -4,7 +4,30 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Lightbulb, Target, Palette, MessageSquare, Eye, Heart, Zap, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const faqItems = [
+  {
+    question: "Ile kosztuje branding dla startupu?",
+    answer: "Podstawowa identyfikacja wizualna (logo, kolory, typografia) to koszt 3000-10000 PLN. Pełny branding (strategia, brand book, materiały) to 10000-50000 PLN. Inwestycja zwraca się przez wyższe ceny i łatwiejsze pozyskiwanie klientów."
+  },
+  {
+    question: "Od czego zacząć budowanie marki startupu?",
+    answer: "Zacznij od strategii: zdefiniuj WHY (misję), grupę docelową, pozycjonowanie i wartości. Dopiero potem przejdź do identyfikacji wizualnej (logo, kolory) i tone of voice. Bez strategii design będzie przypadkowy."
+  },
+  {
+    question: "Czy startup potrzebuje brand booka?",
+    answer: "Tak, nawet prosty brand book zapewnia spójność komunikacji w miarę rozwoju firmy. Zawiera logo i jego użycie, paletę kolorów, typografię, tone of voice i przykłady zastosowań."
+  },
+  {
+    question: "Jak często aktualizować branding startupu?",
+    answer: "Rebranding pełny co 5-10 lat lub przy zmianie strategii. Odświeżenie (refresh) co 3-5 lat. Kluczowe jest zachowanie rozpoznawalności - ewolucja, nie rewolucja. Airbnb i Slack to dobre przykłady."
+  },
+  {
+    question: "Jakie błędy brandingowe popełniają startupy?",
+    answer: "Najczęstsze błędy: kopiowanie konkurencji, zbyt skomplikowane logo, brak spójności w komunikacji, pomijanie strategii na rzecz designu, zbyt częste zmiany brandingu i niedocenianie tone of voice."
+  }
+];
 
 export default function BlogBrandingStartupy() {
   const handleShare = async () => {
@@ -46,6 +69,7 @@ export default function BlogBrandingStartupy() {
           { name: "Branding dla startupów", url: "https://fotz.pl/blog/branding-dla-startupow" },
         ]}
       />
+      <FAQSchema items={faqItems} />
 
       <article className="pt-32 pb-20 bg-background">
         <div className="container-wide">

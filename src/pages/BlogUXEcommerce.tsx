@@ -5,7 +5,30 @@ import { Layout } from "@/components/layout/Layout";
 import { ArrowLeft, Calendar, Clock, User, Share2, ShoppingCart, Eye, MousePointer, Zap, CheckCircle2, ArrowRight, Lightbulb, Target, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const faqItems = [
+  {
+    question: "Jak poprawić konwersję w sklepie internetowym?",
+    answer: "Kluczowe elementy to: uproszczenie procesu zakupowego (max 3-4 kroki), wyraźne CTA, szybkie ładowanie strony (max 3 sekundy), zaufanie (opinie, certyfikaty), dobre zdjęcia produktów z zoomem i widokiem 360°."
+  },
+  {
+    question: "Ile kroków powinien mieć checkout w e-commerce?",
+    answer: "Optymalnie 2-3 kroki. Każdy dodatkowy krok to około 10% spadku konwersji. Oferuj opcję 'guest checkout' bez rejestracji - 35% użytkowników porzuca koszyk gdy wymaga się rejestracji."
+  },
+  {
+    question: "Czy warto inwestować w UX dla sklepu internetowego?",
+    answer: "Zdecydowanie tak. Dobrze zaprojektowany UX może zwiększyć konwersję nawet o 400%. 88% użytkowników nie wraca po złym doświadczeniu, a 70% koszyków jest porzucanych z powodu słabego UX."
+  },
+  {
+    question: "Jakie zdjęcia produktów najlepiej konwertują?",
+    answer: "Minimum 4-6 zdjęć z różnych kątów, funkcja zoom (min. 2x), zdjęcia lifestyle pokazujące produkt w użyciu, video prezentujące produkt (wzrost konwersji o 80%), widok 360° dla produktów premium."
+  },
+  {
+    question: "Jak zaprojektować skuteczną stronę produktu?",
+    answer: "Kluczowe elementy: wysokiej jakości galeria zdjęć, wyraźna cena i dostępność, kontrastowy przycisk 'Dodaj do koszyka', opinie klientów, specyfikacja produktu, produkty powiązane (cross-selling)."
+  }
+];
 
 export default function BlogUXEcommerce() {
   return (
@@ -34,6 +57,7 @@ export default function BlogUXEcommerce() {
           { name: "UX/UI e-commerce", url: "https://fotz.pl/blog/ux-ui-ecommerce" },
         ]}
       />
+      <FAQSchema items={faqItems} />
 
       {/* Hero Section */}
       <section className="pt-32 pb-12 section-padding bg-background">
