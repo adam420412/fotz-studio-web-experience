@@ -182,7 +182,10 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: {
+        "@type": "WebPage",
+        "@id": item.url,
+      },
     })),
   };
 
@@ -262,7 +265,7 @@ export function ArticleSchema({
   title,
   description,
   url,
-  image,
+  image = "https://fotz.pl/og-image.jpg",
   datePublished,
   dateModified,
   author = "Fotz Studio",
@@ -270,24 +273,37 @@ export function ArticleSchema({
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: title,
+    "@id": url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    headline: title.length > 110 ? title.substring(0, 107) + "..." : title,
     description,
     url,
-    image,
+    image: {
+      "@type": "ImageObject",
+      url: image,
+    },
     datePublished,
     dateModified: dateModified || datePublished,
     author: {
       "@type": "Organization",
       name: author,
+      url: "https://fotz.pl",
     },
     publisher: {
       "@type": "Organization",
       name: "Fotz Studio",
+      url: "https://fotz.pl",
       logo: {
         "@type": "ImageObject",
         url: "https://fotz.pl/logo-fotz.jpg",
+        width: 200,
+        height: 60,
       },
     },
+    inLanguage: "pl-PL",
   };
 
   return (

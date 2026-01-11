@@ -1,3 +1,7 @@
+# Trailing slash normalization - redirect /page/ to /page
+# This must be before other rules
+/*/  /:splat  301
+
 # Netlify 301 Redirects - stare URL-e /branze/* do nowych /dla-kogo/*
 /branze/marketing-medyczny /dla-kogo/branza-medyczna 301
 /branze/marketing-gastronomia /dla-kogo/gastronomia 301
@@ -11,20 +15,6 @@
 /branze/marketing-produkcja /dla-kogo/produkcja 301
 /branze/marketing-ngo /dla-kogo/ngo 301
 /branze/marketing-turystyka /dla-kogo/turystyka 301
-
-# Dodatkowe przekierowania dla starych URL-i zgłoszonych w Search Console
-/branze/marketing-medyczny/ /dla-kogo/branza-medyczna 301
-/branze/marketing-gastronomia/ /dla-kogo/gastronomia 301
-/branze/marketing-beauty/ /dla-kogo/beauty-wellness 301
-/branze/marketing-nieruchomosci/ /dla-kogo/nieruchomosci 301
-/branze/marketing-automotive/ /dla-kogo/automotive 301
-/branze/marketing-edukacja/ /dla-kogo/edukacja 301
-/branze/marketing-prawo-finanse/ /dla-kogo/prawo-finanse 301
-/branze/marketing-ecommerce-retail/ /dla-kogo/ecommerce-retail 301
-/branze/marketing-it/ /dla-kogo/it-saas 301
-/branze/marketing-produkcja/ /dla-kogo/produkcja 301
-/branze/marketing-ngo/ /dla-kogo/ngo 301
-/branze/marketing-turystyka/ /dla-kogo/turystyka 301
 
 # Przekierowanie starego URL-a bloga
 /blog/kampania-reklamowa-marketingowa-przyklady-definicja /blog/kampania-reklamowa-marketingowa 301

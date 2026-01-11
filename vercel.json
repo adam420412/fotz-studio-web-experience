@@ -1,4 +1,5 @@
 {
+  "trailingSlash": false,
   "redirects": [
     { "source": "/branze/marketing-medyczny", "destination": "/dla-kogo/branza-medyczna", "permanent": true },
     { "source": "/branze/marketing-gastronomia", "destination": "/dla-kogo/gastronomia", "permanent": true },
@@ -16,5 +17,15 @@
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
   ]
 }
