@@ -3,7 +3,30 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Linkedin, Users, TrendingUp, MessageSquare, Award, Eye, Heart, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const faqItems = [
+  {
+    question: "Jak często publikować na LinkedIn?",
+    answer: "Optymalna częstotliwość to 3-5 postów tygodniowo. Kluczowa jest regularność - algorytm nagradza konsekwentnych twórców. Lepiej 3 posty tygodniowo przez rok niż 20 postów przez tydzień."
+  },
+  {
+    question: "Jakie formaty postów działają najlepiej na LinkedIn?",
+    answer: "Najlepiej działają: posty tekstowe (najlepszy zasięg organiczny), karuzele PDF (wysokie zaangażowanie), natywne wideo (priorytet w algorytmie) i newslettery (budowanie stałej bazy)."
+  },
+  {
+    question: "O której godzinie publikować na LinkedIn?",
+    answer: "W Polsce najlepsze wyniki dają: wtorek-czwartek, godziny 7:00-8:00 (przed pracą) oraz 12:00-13:00 (przerwa obiadowa). Testuj co działa u Twojej grupy docelowej."
+  },
+  {
+    question: "Jak napisać skuteczny headline na LinkedIn?",
+    answer: "Użyj formuły: 'Pomagam [komu?] osiągnąć [co?] dzięki [jak?]'. Np. 'Pomagam firmom B2B zwiększać sprzedaż o 30% dzięki content marketingowi | 10+ lat doświadczenia'."
+  },
+  {
+    question: "Czy komentowanie postów innych osób pomaga w budowaniu marki?",
+    answer: "Tak! 10-20 wartościowych komentarzy dziennie pod postami liderów w Twojej branży może dać więcej widoczności niż własne posty. Pisz merytoryczne, przemyślane komentarze."
+  }
+];
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const BlogPersonalBrandingLinkedIn = () => {
@@ -33,6 +56,7 @@ const BlogPersonalBrandingLinkedIn = () => {
           { name: "Personal Branding LinkedIn", url: "https://fotz.pl/blog/personal-branding-linkedin" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">

@@ -3,7 +3,30 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Mail, Users, TrendingUp, Target, Zap, BarChart3, CheckCircle2, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const faqItems = [
+  {
+    question: "Jaki jest średni ROI email marketingu?",
+    answer: "Email marketing ma średni ROI 4200%, czyli 42 złote zwrotu z każdej zainwestowanej złotówki. To jeden z najskuteczniejszych kanałów marketingowych."
+  },
+  {
+    question: "Co to jest lead magnet i jak go stworzyć?",
+    answer: "Lead magnet to wartościowy materiał oferowany w zamian za adres email. Może to być e-book, checklista, szablon, webinar lub darmowe narzędzie. Musi rozwiązywać konkretny problem grupy docelowej."
+  },
+  {
+    question: "Jak często wysyłać newsletter?",
+    answer: "Optymalna częstotliwość zależy od branży, ale zazwyczaj 1-4 razy w miesiącu. Ważniejsza jest regularność i wartość contentu niż sama częstotliwość."
+  },
+  {
+    question: "Jaki powinien być open rate emaili?",
+    answer: "Dobry open rate to 20-25%. CTR powinien wynosić 2-5%, a unsubscribe rate poniżej 0.5%. Te benchmarki różnią się w zależności od branży."
+  },
+  {
+    question: "Jakie narzędzia do email marketingu polecacie?",
+    answer: "Dla początkujących: Mailchimp (darmowy do 500 kontaktów), MailerLite (darmowy do 1000). Dla zaawansowanych: ActiveCampaign (najlepsza automatyzacja), Klaviyo (idealne dla e-commerce)."
+  }
+];
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const BlogEmailMarketing = () => {
@@ -33,6 +56,7 @@ const BlogEmailMarketing = () => {
           { name: "Email marketing 2025", url: "https://fotz.pl/blog/email-marketing-2025" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">

@@ -3,7 +3,30 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Video, Play, TrendingUp, BarChart3, Smartphone, Tv, Youtube, Film } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const faqItems = [
+  {
+    question: "Dlaczego video marketing jest tak skuteczny?",
+    answer: "Ludzie zapamiętują 95% przekazu z wideo vs 10% z tekstu. 82% ruchu internetowego to wideo, a 88% marketerów widzi pozytywny ROI z video marketingu."
+  },
+  {
+    question: "Jaki format wideo jest najskuteczniejszy w 2025?",
+    answer: "Short-form video (15-60 sekund) w formacie pionowym 9:16 dominuje na TikTok, Reels i YouTube Shorts. 73% konsumentów preferuje krótkie wideo przy poznawaniu produktów."
+  },
+  {
+    question: "Ile kosztuje profesjonalne wideo reklamowe?",
+    answer: "Profesjonalne wideo to koszt od 5000 do 50000+ zł zależnie od złożoności. Jednak UGC i autentyczne wideo ze smartfona często performuje równie dobrze jak wypolerowane produkcje."
+  },
+  {
+    question: "Jak tworzyć skuteczne wideo marketingowe?",
+    answer: "Kluczowe zasady: hook w pierwszych 3 sekundach, jeden główny przekaz, napisy (85% ogląda bez dźwięku), wyraźne CTA i optymalizacja pod platformę."
+  },
+  {
+    question: "Czy potrzebuję profesjonalnego sprzętu do video marketingu?",
+    answer: "Nie, smartfon z dobrym oświetleniem wystarczy na start. User-Generated Content jest 2.4x bardziej wiarygodny niż profesjonalne produkcje."
+  }
+];
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const BlogVideoMarketing = () => {
@@ -33,6 +56,7 @@ const BlogVideoMarketing = () => {
           { name: "Video Marketing 2025", url: "https://fotz.pl/blog/video-marketing-2025" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
