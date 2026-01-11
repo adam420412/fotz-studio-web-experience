@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Video, Shield, Smartphone, Car } 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 
 const services = [
@@ -42,7 +43,22 @@ const CaseStudyVictoryCars = () => {
       <Helmet>
         <title>Victory Cars - Dealer Samochodów Premium Poznań | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Victory Cars - dealera samochodów premium w Poznaniu. Katalog pojazdów, SEO i produkcja foto/video." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/victory-cars" />
       </Helmet>
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+        { name: "Victory Cars", url: "https://fotz.pl/realizacje/victory-cars" }
+      ]} />
+      <ArticleSchema
+        title="Victory Cars - Dealer Samochodów Premium Poznań - Case Study"
+        description="Realizacja strony internetowej dla Victory Cars - dealera samochodów premium."
+        author="Fotz Studio"
+        datePublished="2024-02-18"
+        dateModified="2026-01-09"
+        image="https://fotz.pl/og-image.jpg"
+        url="https://fotz.pl/realizacje/victory-cars"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

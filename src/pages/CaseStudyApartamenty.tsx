@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Calendar, Use
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
 
 const services = [
@@ -42,7 +43,22 @@ const CaseStudyApartamenty = () => {
       <Helmet>
         <title>Apartamenty Chorwacja - System Rezerwacji | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla apartamentów w Chorwacji. System rezerwacji online, SEO turystyczne i responsywny design." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/apartamenty-chorwacja" />
       </Helmet>
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+        { name: "Apartamenty Chorwacja", url: "https://fotz.pl/realizacje/apartamenty-chorwacja" }
+      ]} />
+      <ArticleSchema
+        title="Apartamenty Chorwacja - System Rezerwacji - Case Study"
+        description="Realizacja strony internetowej dla apartamentów w Chorwacji z systemem rezerwacji."
+        author="Fotz Studio"
+        datePublished="2023-11-10"
+        dateModified="2026-01-09"
+        image="https://fotz.pl/og-image.jpg"
+        url="https://fotz.pl/realizacje/apartamenty-chorwacja"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

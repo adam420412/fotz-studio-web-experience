@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { X, AlertTriangle, CheckCircle, XCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { X, AlertTriangle, CheckCircle, XCircle, ChevronDown, ChevronUp, Settings } from 'lucide-react';
 
 interface SEOCheck {
   name: string;
@@ -9,29 +9,46 @@ interface SEOCheck {
   details?: string;
 }
 
+const SEO_DEV_KEY = 'fotz_seo_dev_enabled';
+
 /**
- * Development-only SEO Panel
- * Shows real-time SEO validation in the corner of the screen
+ * SEO Developer Panel - Only visible for developers
+ * Enable with: localStorage.setItem('fotz_seo_dev_enabled', 'true') in console
+ * Disable with: localStorage.removeItem('fotz_seo_dev_enabled')
  */
 export function SEODevPanel() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(true);
   const [checks, setChecks] = useState<SEOCheck[]>([]);
+  const [isEnabled, setIsEnabled] = useState(false);
   const location = useLocation();
 
+  // Check if developer mode is enabled
   useEffect(() => {
-    // Only show in development
-    if (import.meta.env.PROD) return;
+    const checkEnabled = () => {
+      const enabled = localStorage.getItem(SEO_DEV_KEY) === 'true';
+      setIsEnabled(enabled);
+    };
+    
+    checkEnabled();
+    
+    // Listen for storage changes
+    window.addEventListener('storage', checkEnabled);
+    return () => window.removeEventListener('storage', checkEnabled);
+  }, []);
+
+  useEffect(() => {
+    if (!isEnabled) return;
 
     const timer = setTimeout(() => {
       setChecks(runSEOChecks());
     }, 800);
 
     return () => clearTimeout(timer);
-  }, [location.pathname]);
+  }, [location.pathname, isEnabled]);
 
-  // Don't render in production
-  if (import.meta.env.PROD) return null;
+  // Don't render if not enabled
+  if (!isEnabled) return null;
 
   const errors = checks.filter(c => c.status === 'fail').length;
   const warnings = checks.filter(c => c.status === 'warn').length;
@@ -45,7 +62,7 @@ export function SEODevPanel() {
         onClick={() => setIsOpen(true)}
         className={`fixed bottom-4 left-4 z-[9999] ${statusColor} text-white px-3 py-2 rounded-full shadow-lg flex items-center gap-2 text-sm font-medium hover:scale-105 transition-transform`}
       >
-        <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+        <Settings className="w-4 h-4" />
         SEO {errors > 0 ? `❌${errors}` : warnings > 0 ? `⚠️${warnings}` : '✅'}
       </button>
     );
@@ -57,7 +74,7 @@ export function SEODevPanel() {
       <div className="flex items-center justify-between p-3 border-b border-slate-700 bg-slate-800">
         <div className="flex items-center gap-2">
           <span className={`w-3 h-3 rounded-full ${statusColor}`} />
-          <span className="font-semibold text-sm">SEO Validator</span>
+          <span className="font-semibold text-sm">SEO Validator (Dev)</span>
         </div>
         <div className="flex items-center gap-1">
           <button onClick={() => setIsMinimized(!isMinimized)} className="p-1 hover:bg-slate-700 rounded">
@@ -109,6 +126,11 @@ export function SEODevPanel() {
               )}
             </div>
           ))}
+          
+          {/* Disable instructions */}
+          <div className="mt-4 p-2 bg-slate-800 rounded text-[10px] text-slate-500">
+            Wyłącz: localStorage.removeItem('fotz_seo_dev_enabled')
+          </div>
         </div>
       )}
     </div>

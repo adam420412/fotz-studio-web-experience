@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Car, Users } 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import sookarImg from "@/assets/portfolio/sookar.jpg";
 
 const services = [
@@ -42,7 +43,22 @@ const CaseStudySookar = () => {
       <Helmet>
         <title>Sookar - Elite Car Market | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Sookar - elite car market. Katalog samochodów luksusowych, premium design i optymalizacja SEO." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/sookar" />
       </Helmet>
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+        { name: "Sookar", url: "https://fotz.pl/realizacje/sookar" }
+      ]} />
+      <ArticleSchema
+        title="Sookar - Elite Car Market - Case Study"
+        description="Realizacja strony internetowej dla Sookar - elite car market."
+        author="Fotz Studio"
+        datePublished="2023-10-05"
+        dateModified="2026-01-09"
+        image="https://fotz.pl/og-image.jpg"
+        url="https://fotz.pl/realizacje/sookar"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

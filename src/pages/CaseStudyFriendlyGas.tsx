@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Video, Shield, Smartphone, Palett
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import friendlyGasImg from "@/assets/portfolio/friendly-gas.png";
 
 const services = [
@@ -35,7 +36,22 @@ const CaseStudyFriendlyGas = () => {
       <Helmet>
         <title>Friendly Gas - Sprzedaż Gazu Online | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Friendly Gas - firmy sprzedającej gaz online. Intuicyjny system zamówień, płatności online i optymalizacja SEO." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/friendly-gas" />
       </Helmet>
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+        { name: "Friendly Gas", url: "https://fotz.pl/realizacje/friendly-gas" }
+      ]} />
+      <ArticleSchema
+        title="Friendly Gas - Sprzedaż Gazu Online - Case Study"
+        description="Realizacja strony internetowej dla Friendly Gas z systemem zamówień online."
+        author="Fotz Studio"
+        datePublished="2024-03-25"
+        dateModified="2026-01-09"
+        image="https://fotz.pl/og-image.jpg"
+        url="https://fotz.pl/realizacje/friendly-gas"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

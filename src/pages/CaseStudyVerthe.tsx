@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, ShoppingCart, Search, Video, Shield, Smartphone,
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import vertheImg from "@/assets/portfolio/verthe.png";
 
 const services = [
@@ -42,7 +43,22 @@ const CaseStudyVerthe = () => {
       <Helmet>
         <title>Verthé - Sklep E-commerce z Kosmetykami Wegańskimi | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja sklepu e-commerce dla Verthé - greckich kosmetyków wegańskich. SEM, SEO, produkcja foto/video i optymalizacja konwersji." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/verthe" />
       </Helmet>
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+        { name: "Verthé", url: "https://fotz.pl/realizacje/verthe" }
+      ]} />
+      <ArticleSchema
+        title="Verthé - Sklep E-commerce z Kosmetykami Wegańskimi - Case Study"
+        description="Realizacja sklepu e-commerce dla Verthé - greckich kosmetyków wegańskich."
+        author="Fotz Studio"
+        datePublished="2023-12-20"
+        dateModified="2026-01-09"
+        image="https://fotz.pl/og-image.jpg"
+        url="https://fotz.pl/realizacje/verthe"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">
