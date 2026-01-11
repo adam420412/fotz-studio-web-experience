@@ -7,6 +7,7 @@ import { ThemeProvider } from "next-themes";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { CookieBanner } from "@/components/CookieBanner";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { SEODevPanel } from "@/components/dev/SEODevPanel";
 import Index from "./pages/Index";
 import Uslugi from "./pages/Uslugi";
 import Realizacje from "./pages/Realizacje";
@@ -326,6 +327,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <SEODevPanel />
         </BrowserRouter>
         <CookieBanner />
         </TooltipProvider>
