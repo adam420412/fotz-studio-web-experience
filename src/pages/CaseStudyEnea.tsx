@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -24,6 +25,7 @@ import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { InstagramEmbed } from "@/components/InstagramEmbed";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 // Importy zdjęć Enea Stadion
 import eneaTriatlon from "@/assets/enea/bydgoszcz-triatlon.png";
@@ -221,6 +223,26 @@ export default function CaseStudyEnea() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Enea Stadion Poznań - Case Study | Fotz Studio</title>
+        <meta name="description" content="Kompleksowa obsługa marketingowa Enea Stadion Poznań: +340% wzrost zaangażowania, 2M+ wyświetleń miesięcznie. Strona www, social media, produkcja video." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/enea-stadion" />
+      </Helmet>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+          { name: "Enea Stadion", url: "https://fotz.pl/realizacje/enea-stadion" }
+        ]}
+      />
+      <ArticleSchema 
+        title="Enea Stadion Poznań - Kompleksowa obsługa marketingowa"
+        description="Case study: jak zwiększyliśmy zaangażowanie o 340% dla największego kompleksu sportowego w Polsce"
+        url="https://fotz.pl/realizacje/enea-stadion"
+        image="https://fotz.pl/videos/enea-stadion-poster.jpg"
+        datePublished="2023-06-01"
+        dateModified="2026-01-09"
+      />
       {/* Hero Section with Video */}
       <section className="relative min-h-[80vh] flex items-end overflow-hidden">
         {/* Background Video */}

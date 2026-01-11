@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { useState } from "react";
 import gierkiImg from "@/assets/portfolio/gierki.png";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 // Gallery images
 import gierkyGolf from "@/assets/gierky/gierky-golf.jpg";
@@ -81,7 +82,22 @@ const CaseStudyGierki = () => {
       <Helmet>
         <title>Gierki Activity Bar - Strona z Systemem Rezerwacji | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Gierki Activity Bar w Poznaniu. System rezerwacji online, optymalizacja SEO i responsywny design." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/gierki" />
       </Helmet>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+          { name: "Gierki", url: "https://fotz.pl/realizacje/gierki" }
+        ]}
+      />
+      <ArticleSchema 
+        title="Gierki Activity Bar - Strona z systemem rezerwacji"
+        description="Case study: strona internetowa z systemem rezerwacji online dla centrum rozrywki w Poznaniu"
+        url="https://fotz.pl/realizacje/gierki"
+        datePublished="2024-01-10"
+        dateModified="2026-01-09"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

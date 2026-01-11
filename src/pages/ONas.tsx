@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { ArrowRight, Target, Heart, Zap, Users, MapPin, Camera, Video, Film, Clapperboard } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
+import { BreadcrumbSchema, OrganizationSchema, WebPageSchema } from "@/components/seo/StructuredData";
 
 // Office images
 import officeStairs from "@/assets/office/office-stairs.webp";
@@ -96,6 +98,27 @@ export default function ONas() {
 
   return (
     <Layout>
+      <Helmet>
+        <title>O nas - Zespół Fotz Studio | Agencja Marketingowa Poznań</title>
+        <meta name="description" content="Poznaj zespół Fotz Studio - agencji marketingowej nowej generacji. Pasjonaci marketingu z 12+ latami doświadczenia. Biuro: Plac Wolności 16, Poznań." />
+        <meta name="keywords" content="zespół marketingowy, agencja marketingowa Poznań, Fotz Studio, o nas, marketing team" />
+        <link rel="canonical" href="https://fotz.pl/o-nas" />
+        <meta property="og:title" content="O nas | Fotz Studio Poznań" />
+        <meta property="og:description" content="Poznaj zespół Fotz Studio - pasjonaci marketingu, strategii i kreatywności." />
+        <meta property="og:url" content="https://fotz.pl/o-nas" />
+      </Helmet>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "O nas", url: "https://fotz.pl/o-nas" }
+        ]}
+      />
+      <OrganizationSchema />
+      <WebPageSchema 
+        title="O nas - Fotz Studio"
+        description="Poznaj zespół Fotz Studio - agencji marketingowej nowej generacji z Poznania"
+        url="https://fotz.pl/o-nas"
+      />
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

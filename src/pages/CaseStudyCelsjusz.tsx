@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import celsjuszImg from "@/assets/portfolio/celsjusz.png";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },
@@ -42,7 +43,10 @@ const CaseStudyCelsjusz = () => {
       <Helmet>
         <title>Celsjusz OZE - Pompy Ciepła i Fotowoltaika | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Celsjusz OZE - firmy specjalizującej się w pompach ciepła i fotowoltaice. SEO, lead generation i responsywny design." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/celsjusz" />
       </Helmet>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Celsjusz", url: "https://fotz.pl/realizacje/celsjusz" }]} />
+      <ArticleSchema title="Celsjusz OZE - Strona dla firmy OZE" description="Case study: strona z lead generation dla firmy oferującej pompy ciepła i fotowoltaikę" url="https://fotz.pl/realizacje/celsjusz" datePublished="2024-06-15" dateModified="2026-01-09" />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">
