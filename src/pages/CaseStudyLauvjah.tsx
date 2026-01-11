@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },
@@ -42,7 +43,22 @@ const CaseStudyLauvjah = () => {
       <Helmet>
         <title>Lauvjah - Firma Transportowo-Spedycyjna | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Lauvjah - firmy transportowo-spedycyjnej z flotą 343+ zestawów Euro6. SEO, prezentacja floty i lead generation." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/lauvjah" />
       </Helmet>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+          { name: "Lauvjah", url: "https://fotz.pl/realizacje/lauvjah" }
+        ]}
+      />
+      <ArticleSchema 
+        title="Lauvjah - Strona dla firmy transportowej"
+        description="Case study: strona z prezentacją floty 343+ zestawów Euro6 dla firmy TSL"
+        url="https://fotz.pl/realizacje/lauvjah"
+        datePublished="2024-04-05"
+        dateModified="2026-01-09"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { lazy, Suspense } from "react";
 import klagemImg from "@/assets/portfolio/klagem.png";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
 
@@ -44,8 +45,24 @@ const CaseStudyKlagem = () => {
     <Layout>
       <Helmet>
         <title>Klagem - Modułowe Systemy Meblowe | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Klagem - producenta modułowych systemów meblowych. Konfigurator produktów, SEO i responsywny design." />
+        <meta name="description" content="Realizacja strony internetowej dla Klagem - producenta modułowych systemów meblowych. Konfigurator produktów 3D, SEO B2B i responsywny design. +180% zapytań." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/klagem" />
       </Helmet>
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+          { name: "Klagem", url: "https://fotz.pl/realizacje/klagem" }
+        ]}
+      />
+      <ArticleSchema 
+        title="Klagem - Konfigurator 3D i strona B2B"
+        description="Case study: strona internetowa z konfiguratorem produktów 3D dla producenta mebli modułowych"
+        url="https://fotz.pl/realizacje/klagem"
+        image="https://fotz.pl/portfolio/klagem.png"
+        datePublished="2024-03-15"
+        dateModified="2026-01-09"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

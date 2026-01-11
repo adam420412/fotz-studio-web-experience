@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
 const services = [
   { icon: Globe, label: "Strona internetowa" },
@@ -42,7 +43,10 @@ const CaseStudyPrzedszkole = () => {
       <Helmet>
         <title>Przedszkole Mali Przyjaciele - Strona dla Placówki Edukacyjnej | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Publicznego Przedszkola Mali Przyjaciele. SEO, produkcja foto/video i responsywny design dla rodziców." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/przedszkole" />
       </Helmet>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Przedszkole", url: "https://fotz.pl/realizacje/przedszkole" }]} />
+      <ArticleSchema title="Przedszkole Mali Przyjaciele - Strona dla placówki edukacyjnej" description="Case study: strona internetowa dla przedszkola z SEO lokalnym" url="https://fotz.pl/realizacje/przedszkole" datePublished="2024-05-10" dateModified="2026-01-09" />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">
