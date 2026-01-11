@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const FacebookAds = () => {
   const benefits = [
@@ -133,6 +134,21 @@ const FacebookAds = () => {
         <meta name="description" content="Profesjonalne kampanie reklamowe na Facebook Ads. Zwiększ zasięg, generuj leady i sprzedaż dzięki precyzyjnemu targetowaniu. Agencja Facebook Ads Poznań." />
         <link rel="canonical" href="https://fotz.pl/facebook-ads" />
       </Helmet>
+
+      <ServiceSchema 
+        name="Facebook Ads - Kampanie reklamowe"
+        description="Profesjonalne kampanie reklamowe na Facebook Ads. Precyzyjne targetowanie, retargeting i Lookalike Audiences."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Facebook Ads", url: "https://fotz.pl/facebook-ads" }
+        ]}
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center bg-background overflow-hidden pt-24">
