@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const GoogleAds = () => {
   const benefits = [
@@ -133,6 +134,21 @@ const GoogleAds = () => {
         <meta name="description" content="Profesjonalne kampanie Google Ads. Zwiększ sprzedaż dzięki reklamom w wyszukiwarce Google, sieci reklamowej i YouTube. Agencja Google Ads Poznań." />
         <link rel="canonical" href="https://fotz.pl/google-ads" />
       </Helmet>
+
+      <ServiceSchema 
+        name="Google Ads - Kampanie SEM"
+        description="Profesjonalne kampanie Google Ads. Reklamy w wyszukiwarce Google, sieci reklamowej, YouTube i Performance Max."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Google Ads", url: "https://fotz.pl/google-ads" }
+        ]}
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center bg-background overflow-hidden pt-24">

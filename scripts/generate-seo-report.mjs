@@ -284,6 +284,30 @@ const pagesWithSchema = [
   "/dla-kogo/ngo",
   "/dla-kogo/turystyka",
   
+  // Case Studies (all have Schema now)
+  "/realizacje/enea-stadion",
+  "/realizacje/klagem",
+  "/realizacje/gierki",
+  "/realizacje/mechanica",
+  "/realizacje/lauvjah",
+  "/realizacje/przedszkole",
+  "/realizacje/celsjusz",
+  "/realizacje/fps",
+  "/realizacje/rppg",
+  "/realizacje/fabryka-virali",
+  "/realizacje/friendly-gas",
+  "/realizacje/victory-cars",
+  "/realizacje/stageplan",
+  "/realizacje/cute-dumpling",
+  "/realizacje/verthe",
+  "/realizacje/apartamenty-chorwacja",
+  "/realizacje/sookar",
+  "/realizacje/graf",
+  
+  // Core pages with Schema
+  "/o-nas",
+  "/dla-kogo",
+  
   // Blog
   "/blog",
 ];

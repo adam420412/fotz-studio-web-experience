@@ -15,6 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const InstagramAds = () => {
   const benefits = [
@@ -139,6 +140,21 @@ const InstagramAds = () => {
         <meta name="description" content="Profesjonalne kampanie Instagram Ads. Angażujące reklamy w Stories, Reels i feedzie. Docieraj do klientów wizualnym storytellingiem. Agencja Instagram Ads Poznań." />
         <link rel="canonical" href="https://fotz.pl/instagram-ads" />
       </Helmet>
+
+      <ServiceSchema 
+        name="Instagram Ads - Kampanie reklamowe"
+        description="Profesjonalne kampanie Instagram Ads. Reklamy w Stories, Reels, Feed i Shopping. Wizualny storytelling dla Twojej marki."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Instagram Ads", url: "https://fotz.pl/instagram-ads" }
+        ]}
+      />
+      <FAQSchema items={faqItems} />
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">
