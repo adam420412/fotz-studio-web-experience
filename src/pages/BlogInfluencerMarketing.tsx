@@ -4,7 +4,30 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Users, Target, TrendingUp, CheckCircle, AlertCircle, DollarSign, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const faqItems = [
+  {
+    question: "Ile kosztuje współpraca z influencerem w Polsce?",
+    answer: "Ceny zależą od wielkości influencera: nano (1-10K) - 100-500 PLN za post, mikro (10-100K) - 500-3000 PLN, makro (100K-1M) - 3000-15000 PLN, mega (1M+) - 15000+ PLN. TikTok jest zazwyczaj droższy niż Instagram."
+  },
+  {
+    question: "Jak znaleźć odpowiedniego influencera dla mojej marki?",
+    answer: "Użyj platform jak InfluTool, Reach a Blogger lub HypeAuditor. Sprawdź engagement rate (min. 3%), dopasowanie do wartości marki, historię współprac i autentyczność followersów."
+  },
+  {
+    question: "Czym różnią się nano, mikro i makro influencerzy?",
+    answer: "Nano (1-10K) mają najwyższy engagement i niski koszt. Mikro (10-100K) oferują dobry stosunek ceny do zasięgu. Makro (100K-1M) dają duży zasięg, ale niższy engagement. Mega (1M+) budują świadomość marki."
+  },
+  {
+    question: "Jak mierzyć ROI kampanii influencerskiej?",
+    answer: "Monitoruj: zasięg i wyświetlenia, engagement (reakcje, komentarze), kliknięcia w linki/kody rabatowe, konwersje i sprzedaż, wzrost followersów marki oraz wzmianki o marce."
+  },
+  {
+    question: "Co powinien zawierać brief dla influencera?",
+    answer: "Brief powinien zawierać: opis marki i wartości, cel kampanii, grupę docelową, kluczowe przekazy, deliverables, timeline, budżet i KPI do zmierzenia efektów."
+  }
+];
 
 export default function BlogInfluencerMarketing() {
   const handleShare = async () => {
@@ -46,6 +69,7 @@ export default function BlogInfluencerMarketing() {
           { name: "Influencer Marketing", url: "https://fotz.pl/blog/influencer-marketing-polska" },
         ]}
       />
+      <FAQSchema items={faqItems} />
 
       <article className="pt-32 pb-20 bg-background">
         <div className="container-wide">
