@@ -3,8 +3,31 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Zap, Settings, BarChart3, Mail, Users, Target, Bot, Workflow, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Ile kosztuje wdrożenie marketing automation?",
+    answer: "Koszty zależą od narzędzia i skali. Podstawowe platformy (Mailchimp, GetResponse): 100-500 PLN/mies. Zaawansowane (HubSpot, ActiveCampaign): 500-3000 PLN/mies. Enterprise (Salesforce): od 10000 PLN/mies. Do tego dochodzi koszt wdrożenia."
+  },
+  {
+    question: "Od czego zacząć automatyzację marketingu?",
+    answer: "Zacznij od najprostszych automatyzacji: welcome email dla nowych subskrybentów, sekwencja onboardingowa, przypomnienia o porzuconym koszyku. Dopiero potem rozbudowuj o scoring leadów i zaawansowane workflow."
+  },
+  {
+    question: "Czy marketing automation zastąpi pracowników?",
+    answer: "Nie, automatyzacja przejmuje powtarzalne zadania, ale nie zastępuje strategii i kreatywności. Pozwala zespołowi skupić się na wartościowej pracy: tworzeniu treści, analizie danych i budowaniu relacji z klientami."
+  },
+  {
+    question: "Jak długo trwa wdrożenie systemu automatyzacji?",
+    answer: "Podstawowa konfiguracja: 2-4 tygodnie. Pełne wdrożenie z integracjami CRM i zaawansowanymi workflow: 2-3 miesiące. Kluczowe jest stopniowe wdrażanie i testowanie każdego elementu osobno."
+  },
+  {
+    question: "Jakie KPI mierzyć w marketing automation?",
+    answer: "Kluczowe metryki: open rate i CTR emaili, współczynnik konwersji leadów (MQL do SQL), czas w lejku sprzedażowym, wartość leadów według źródła, ROI automatyzacji. Większość platform oferuje wbudowane dashboardy."
+  }
+];
 
 const BlogMarketingAutomation = () => {
   return (
@@ -33,6 +56,7 @@ const BlogMarketingAutomation = () => {
           { name: "Marketing Automation 2025", url: "https://fotz.pl/blog/marketing-automation-2025" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">

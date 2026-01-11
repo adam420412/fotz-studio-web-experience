@@ -4,7 +4,30 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Search, ShoppingCart, TrendingUp, FileText, Globe, Link2, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+
+const faqItems = [
+  {
+    question: "Jak długo trwa pozycjonowanie sklepu internetowego?",
+    answer: "Pierwsze efekty widoczne po 3-6 miesiącach, stabilne pozycje po 6-12 miesiącach. E-commerce wymaga więcej czasu ze względu na dużą liczbę podstron i konkurencję. Kluczowe jest ciągłe działanie i optymalizacja."
+  },
+  {
+    question: "Czy warto inwestować w SEO dla sklepu online?",
+    answer: "Zdecydowanie tak. SEO generuje 53% ruchu w e-commerce i ma najwyższy ROI spośród kanałów marketingowych. W przeciwieństwie do reklam, ruch organiczny nie znika po zakończeniu kampanii."
+  },
+  {
+    question: "Jakie błędy SEO najczęściej popełniają sklepy internetowe?",
+    answer: "Najczęstsze błędy: duplikaty treści (warianty produktów), słabe opisy kategorii, brak optymalizacji obrazów, ignorowanie filtrowanych URL-i, wolne ładowanie strony, brak wersji mobilnej i thin content na kartach produktów."
+  },
+  {
+    question: "Jak zoptymalizować kartę produktu pod SEO?",
+    answer: "Kluczowe elementy: unikatowy opis min. 300 słów, optymalizowane zdjęcia z alt-text, Product Schema (cena, dostępność, opinie), właściwy H1 z frazą kluczową, breadcrumbs, linkowanie do powiązanych produktów."
+  },
+  {
+    question: "Ile kosztuje SEO dla sklepu e-commerce?",
+    answer: "Koszt zależy od wielkości sklepu i konkurencji. Małe sklepy: 2000-5000 PLN/mies., średnie: 5000-15000 PLN/mies., duże marketplace: 15000-50000+ PLN/mies. Inwestycja zwraca się przez wzrost ruchu organicznego."
+  }
+];
 
 const BlogSEOEcommerce = () => {
   return (
@@ -33,6 +56,7 @@ const BlogSEOEcommerce = () => {
           { name: "SEO e-commerce", url: "https://fotz.pl/blog/seo-ecommerce" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       
       <Layout>
         <article className="pt-32 pb-20">
