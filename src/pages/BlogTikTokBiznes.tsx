@@ -3,8 +3,31 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Video, Users, TrendingUp, Sparkles, Music, Zap, Target, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Czy TikTok sprawdzi się dla B2B?",
+    answer: "Tak! Firmy B2B mogą budować ekspertyzę, pokazywać kulturę firmy i docierać do decydentów w mniej formalny sposób. LinkedIn nie jest jedyną opcją."
+  },
+  {
+    question: "Jak często publikować na TikToku?",
+    answer: "Minimum 3-5 razy w tygodniu, optymalne to 1-2 razy dziennie. Algorytm nagradza regularność i aktywność."
+  },
+  {
+    question: "Czy potrzebuję profesjonalnego sprzętu?",
+    answer: "Nie! Smartfon z dobrą kamerą wystarczy. Na TikToku liczy się autentyczność, nie produkcja. Zbyt wypolerowane wideo może nawet odstraszać."
+  },
+  {
+    question: "Jak długie powinny być TikToki?",
+    answer: "15-60 sekund to sweet spot. Platforma pozwala na dłuższe wideo (do 10 minut), ale krótsze treści mają lepsze wskaźniki watch time."
+  },
+  {
+    question: "Czy mogę używać muzyki w reklamach?",
+    answer: "Konto Business ma dostęp do biblioteki dźwięków komercyjnych. Nie możesz używać wszystkich trendujących piosenek, ale są alternatywy."
+  }
+];
 
 const BlogTikTokBiznes = () => {
   return (
@@ -33,6 +56,7 @@ const BlogTikTokBiznes = () => {
           { name: "TikTok dla biznesu", url: "https://fotz.pl/blog/tiktok-dla-biznesu" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">

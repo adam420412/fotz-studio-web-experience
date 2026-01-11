@@ -3,8 +3,31 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, MapPin, Search, Star, Building2, CheckCircle2, Globe, Map } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Ile kosztuje pozycjonowanie lokalne w Poznaniu?",
+    answer: "Profesjonalne SEO lokalne to koszt od 1500 do 5000 PLN miesięcznie, w zależności od konkurencyjności branży i zakresu działań."
+  },
+  {
+    question: "Jak szybko zobaczę efekty SEO lokalnego?",
+    answer: "Pierwsze efekty mogą być widoczne już po 2-4 tygodniach. Pełne efekty pozycjonowania organicznego wymagają 3-6 miesięcy."
+  },
+  {
+    question: "Czy mogę samodzielnie robić SEO lokalne?",
+    answer: "Podstawy tak – założenie profilu GMB, zbieranie recenzji, spójność NAP. Zaawansowane działania wymagają wiedzy i doświadczenia."
+  },
+  {
+    question: "Czy jedna strona wystarczy dla kilku lokalizacji?",
+    answer: "Nie zalecamy. Każda lokalizacja powinna mieć osobny profil GMB i dedykowaną podstronę na stronie internetowej."
+  },
+  {
+    question: "Co jest ważniejsze – recenzje czy optymalizacja strony?",
+    answer: "Oba elementy są kluczowe. Recenzje wpływają na ranking w Google Maps, optymalizacja strony na wyniki organiczne."
+  }
+];
 
 const BlogSEOLokalnePoznan = () => {
   return (
@@ -33,6 +56,7 @@ const BlogSEOLokalnePoznan = () => {
           { name: "SEO lokalne Poznań", url: "https://fotz.pl/blog/seo-lokalne-poznan-poradnik" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">

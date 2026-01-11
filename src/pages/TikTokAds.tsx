@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const TikTokAds = () => {
   const benefits = [
@@ -163,6 +164,19 @@ const TikTokAds = () => {
         <meta name="description" content="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo. Agencja TikTok Ads Poznań." />
         <link rel="canonical" href="https://fotz.pl/tiktok-ads" />
       </Helmet>
+      <ServiceSchema
+        name="TikTok Ads - Kampanie reklamowe"
+        description="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo."
+        provider="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
+          { name: "TikTok Ads", url: "https://fotz.pl/tiktok-ads" },
+        ]}
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">

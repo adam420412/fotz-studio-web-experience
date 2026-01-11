@@ -3,8 +3,27 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Co to są kampanie reklamowe w marketingu digital i jak działają?",
+    answer: "Kampanie reklamowe w marketingu digital to zespół działań marketingowych prowadzonych w internecie z wykorzystaniem różnorodnych kanałów, takich jak social media, Google Ads, pozycjonowania (SEO) oraz kampanie display."
+  },
+  {
+    question: "Jak zaplanować strategię marketing promocyjny dla produktu?",
+    answer: "Strategia marketing promocyjny zaczyna się od określenia celów, grupy docelowej i budżetu, następnie wybiera się media masowe oraz kanały digital. Ważne jest wykorzystanie kreatywnych materiałów i testowanie komunikatów."
+  },
+  {
+    question: "Jak kampanie reklamowe wykorzystują sztucznej inteligencji w planowaniu marketingu?",
+    answer: "Sztuczna inteligencja przyspiesza optymalizację kampanii reklamowych — od automatycznego dostosowywania stawek, przez personalizację komunikatów, po analizę dużych zbiorów danych z badań rynku."
+  },
+  {
+    question: "Jak mierzyć skuteczność kampanii marketing mediowy?",
+    answer: "Skuteczność kampanii marketing mediowy mierzy się za pomocą wskaźników takich jak zasięg całkowity, zasięg efektywny, CTR, koszt konwersji i sprzedaż. Analizy porównawcze i raporty mediowe pomagają ocenić efekty."
+  }
+];
 
 const BlogKampaniaReklamowa = () => {
   return (
@@ -33,6 +52,7 @@ const BlogKampaniaReklamowa = () => {
           { name: "Kampania Reklamowa i Marketingowa", url: "https://fotz.pl/blog/kampania-reklamowa-marketingowa" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">

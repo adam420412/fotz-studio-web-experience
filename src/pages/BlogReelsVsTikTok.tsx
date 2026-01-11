@@ -3,8 +3,27 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Video, Users, TrendingUp, Zap, BarChart3, CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Która platforma jest lepsza dla początkujących?",
+    answer: "TikTok ma niższą barierę wejścia i łatwiejszy algorytm dla nowych twórców. Instagram Reels lepiej sprawdzi się jeśli już masz społeczność na Instagramie."
+  },
+  {
+    question: "Czy mogę publikować te same treści na obu platformach?",
+    answer: "Tak, cross-posting jest popularną strategią. Jednak najlepsze wyniki daje dostosowanie treści do specyfiki każdej platformy."
+  },
+  {
+    question: "Jak często publikować wideo?",
+    answer: "Na TikToku minimum 3-5 razy w tygodniu, optymalnie codziennie. Na Reels 3-4 razy w tygodniu wystarcza dla większości marek."
+  },
+  {
+    question: "Która platforma ma lepsze zasięgi organiczne?",
+    answer: "TikTok oferuje lepsze zasięgi organiczne dla nowych kont. Instagram Reels faworyzuje konta z już zbudowaną społecznością."
+  }
+];
 
 const BlogReelsVsTikTok = () => {
   return (
@@ -33,6 +52,7 @@ const BlogReelsVsTikTok = () => {
           { name: "Reels vs TikTok", url: "https://fotz.pl/blog/instagram-reels-vs-tiktok" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">

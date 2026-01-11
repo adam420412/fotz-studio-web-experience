@@ -3,8 +3,31 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Search, Users, Target, BarChart3, DollarSign, CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Jaki budżet minimalny potrzebuję na start?",
+    answer: "Dla Google Ads rekomendujemy minimum 1500-2000 PLN miesięcznie, dla Facebook Ads można startować od 1000 PLN. Mniejsze budżety utrudniają zbieranie danych i optymalizację."
+  },
+  {
+    question: "Która platforma jest lepsza dla początkujących?",
+    answer: "Facebook Ads jest łatwiejszy do nauki, ma bardziej intuicyjny interfejs i szybciej widać wyniki kampanii świadomościowych. Google Ads wymaga więcej wiedzy o słowach kluczowych i strukturze kampanii."
+  },
+  {
+    question: "Czy mogę prowadzić kampanie samodzielnie?",
+    answer: "Tak, obie platformy oferują tryby automatyczne dla początkujących. Jednak profesjonalne zarządzanie kampaniami może zwiększyć ROAS nawet o 50-100%."
+  },
+  {
+    question: "Jak długo trwa zanim zobaczę wyniki?",
+    answer: "Google Ads może generować ruch od pierwszego dnia. Facebook Ads potrzebuje 1-2 tygodni na nauczenie się algorytmu. Pełna optymalizacja obu platform zajmuje 2-3 miesiące."
+  },
+  {
+    question: "Czy powinienem używać obu platform jednocześnie?",
+    answer: "Jeśli pozwala na to budżet – tak. Każda platforma dociera do klientów na innym etapie ścieżki zakupowej. Synergia między nimi zwiększa ogólną efektywność marketingu."
+  }
+];
 
 const BlogGoogleVsFacebook = () => {
   return (
@@ -33,6 +56,7 @@ const BlogGoogleVsFacebook = () => {
           { name: "Google Ads vs Facebook Ads", url: "https://fotz.pl/blog/google-ads-vs-facebook-ads" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
