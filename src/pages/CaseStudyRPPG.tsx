@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Video, Shield, Smartphone, Zap } 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import rppgImg from "@/assets/portfolio/rppg.png";
 
 const services = [
@@ -36,7 +37,22 @@ const CaseStudyRPPG = () => {
       <Helmet>
         <title>RPPG - Rada Polskich Przedsiębiorców Globalnych | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla RPPG - Rady Polskich Przedsiębiorców Globalnych. Interaktywny globus 3D, optymalizacja SEO i nowoczesny design." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/rppg" />
       </Helmet>
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+        { name: "RPPG", url: "https://fotz.pl/realizacje/rppg" }
+      ]} />
+      <ArticleSchema
+        title="RPPG - Rada Polskich Przedsiębiorców Globalnych - Case Study"
+        description="Realizacja strony internetowej dla RPPG z interaktywnym globusem 3D."
+        author="Fotz Studio"
+        datePublished="2024-05-20"
+        dateModified="2026-01-09"
+        image="https://fotz.pl/og-image.jpg"
+        url="https://fotz.pl/realizacje/rppg"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

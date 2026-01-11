@@ -4,6 +4,7 @@ import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Truck, Users 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import grafImg from "@/assets/portfolio/graf-tapicerstwo.png";
 
 const services = [
@@ -42,7 +43,22 @@ const CaseStudyGraf = () => {
       <Helmet>
         <title>Graf Tapicerstwo - Zabudowa Busów | Case Study | Fotz Studio</title>
         <meta name="description" content="Realizacja strony internetowej dla Graf Tapicerstwo - firmy specjalizującej się w zabudowie i tapicerowaniu busów. SEO i galeria realizacji." />
+        <link rel="canonical" href="https://fotz.pl/realizacje/graf-tapicerstwo" />
       </Helmet>
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
+        { name: "Graf Tapicerstwo", url: "https://fotz.pl/realizacje/graf-tapicerstwo" }
+      ]} />
+      <ArticleSchema
+        title="Graf Tapicerstwo - Zabudowa Busów - Case Study"
+        description="Realizacja strony internetowej dla Graf Tapicerstwo - zabudowa busów."
+        author="Fotz Studio"
+        datePublished="2023-09-15"
+        dateModified="2026-01-09"
+        image="https://fotz.pl/og-image.jpg"
+        url="https://fotz.pl/realizacje/graf-tapicerstwo"
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">
