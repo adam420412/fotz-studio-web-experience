@@ -41,11 +41,18 @@ serve(async (req) => {
       );
     }
 
-    // Google PageSpeed Insights API (no key required for basic usage)
+    // Google PageSpeed Insights API
     const apiUrl = new URL('https://www.googleapis.com/pagespeedonline/v5/runPagespeed');
     apiUrl.searchParams.set('url', url);
     apiUrl.searchParams.set('strategy', strategy);
     apiUrl.searchParams.set('category', 'performance');
+    
+    // Use API key if available for higher quota
+    const apiKey = Deno.env.get('PAGESPEED_API_KEY');
+    if (apiKey) {
+      apiUrl.searchParams.set('key', apiKey);
+      console.log('Using PageSpeed API key for higher quota');
+    }
 
     console.log(`Testing URL: ${url} with strategy: ${strategy}`);
 
