@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const YouTubeAds = () => {
   const benefits = [
@@ -141,6 +142,19 @@ const YouTubeAds = () => {
         <meta name="description" content="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo. Produkcja spotów i obsługa kampanii. Agencja YouTube Ads Poznań." />
         <link rel="canonical" href="https://fotz.pl/youtube-ads" />
       </Helmet>
+      <ServiceSchema
+        name="YouTube Ads - Reklamy wideo"
+        description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo."
+        provider="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
+          { name: "YouTube Ads", url: "https://fotz.pl/youtube-ads" },
+        ]}
+      />
+      <FAQSchema items={faqItems} />
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">

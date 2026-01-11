@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const LinkedInAds = () => {
   const benefits = [
@@ -141,6 +142,19 @@ const LinkedInAds = () => {
         <meta name="description" content="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady. Agencja LinkedIn Ads Poznań." />
         <link rel="canonical" href="https://fotz.pl/linkedin-ads" />
       </Helmet>
+      <ServiceSchema
+        name="LinkedIn Ads - Kampanie B2B"
+        description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady."
+        provider="Fotz Studio"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
+          { name: "LinkedIn Ads", url: "https://fotz.pl/linkedin-ads" },
+        ]}
+      />
+      <FAQSchema items={faqItems} />
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-background overflow-hidden pt-24">

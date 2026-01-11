@@ -3,8 +3,31 @@ import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Bot, TrendingUp, Target, Zap, Users, BarChart3, MessageSquare, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Ile kosztuje wdrożenie AI w małej firmie?",
+    answer: "Podstawowe narzędzia AI są dostępne od 50-200 PLN miesięcznie. ChatGPT Plus kosztuje około 100 PLN/miesiąc, a Canva Pro z funkcjami AI około 60 PLN. Dla małej firmy realistyczny budżet na start to 200-500 PLN miesięcznie."
+  },
+  {
+    question: "Czy AI zastąpi pracowników marketingu?",
+    answer: "Nie – AI zmienia rolę marketerów, ale ich nie zastępuje. Zamiast pisać wszystko od zera, marketerzy stają się kuratorami i edytorami treści AI. Kreatywność, strategia i relacje z klientami pozostają domeną ludzi."
+  },
+  {
+    question: "Od czego zacząć wdrażanie AI?",
+    answer: "Zacznij od jednego narzędzia i jednego procesu. Polecamy start od ChatGPT do tworzenia treści lub chatbota do obsługi klienta. Opanuj jedno narzędzie przed dodaniem kolejnych."
+  },
+  {
+    question: "Czy treści generowane przez AI są unikalne?",
+    answer: "Tak, ale wymagają edycji. AI generuje treści na podstawie wzorców, więc bez personalizacji mogą brzmieć generycznie. Zawsze dodawaj własne przykłady, dane i ton głosu marki."
+  },
+  {
+    question: "Jak mierzyć efektywność AI w marketingu?",
+    answer: "Śledź czas oszczędzony na zadaniach, koszt produkcji treści, wskaźniki zaangażowania (CTR, konwersje) oraz satysfakcję klientów (NPS). Porównuj wyniki przed i po wdrożeniu AI."
+  }
+];
 
 const BlogAIMarketing = () => {
   return (
@@ -33,6 +56,7 @@ const BlogAIMarketing = () => {
           { name: "AI w marketingu dla MŚP", url: "https://fotz.pl/blog/ai-w-marketingu-msp-2025" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
