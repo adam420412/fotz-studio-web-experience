@@ -42,17 +42,24 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "MarketingAgency",
+      "@type": "ProfessionalService",
+      "@id": "https://fotz.pl/#organization",
       "name": "Fotz Studio",
+      "alternateName": "Fotz Studio - Agencja Marketingowa",
       "url": "https://fotz.pl",
-      "logo": "https://fotz.pl/logo-fotz.jpg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://fotz.pl/logo-fotz.jpg",
+        "width": 200,
+        "height": 60
+      },
       "image": "https://fotz.pl/og-image.jpg",
       "description": "Agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Plac Wolności 16",
         "addressLocality": "Poznań",
-        "postalCode": "61739",
+        "postalCode": "61-739",
         "addressRegion": "Wielkopolskie",
         "addressCountry": "PL"
       },
@@ -64,6 +71,8 @@
       "telephone": "+48790814814",
       "email": "adam@fotz.pl",
       "priceRange": "$$",
+      "currenciesAccepted": "PLN",
+      "paymentAccepted": "Przelew bankowy, Karta kredytowa",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -71,9 +80,10 @@
         "closes": "17:00"
       },
       "sameAs": [
-        "https://instagram.com/fotz.studio",
+        "https://instagram.com/fotz.pl",
         "https://facebook.com/fotzstudio",
-        "https://linkedin.com/company/fotzstudio"
+        "https://linkedin.com/company/fotzstudio",
+        "https://youtube.com/@fotzstudio"
       ],
       "areaServed": [
         {
@@ -122,6 +132,13 @@
             }
           }
         ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "160",
+        "bestRating": "5",
+        "worstRating": "1"
       }
     }
     </script>

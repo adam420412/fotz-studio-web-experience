@@ -12,8 +12,8 @@ interface SEOHeadProps {
 
 /**
  * SEO Head component that automatically adds:
- * - Title and meta description
- * - Canonical URL based on current route
+ * - Title and meta description (truncated to 155 chars)
+ * - Canonical URL based on current route (without trailing slash)
  * - Open Graph tags
  * - Twitter Card tags
  */
@@ -26,16 +26,26 @@ export function SEOHead({
   children,
 }: SEOHeadProps) {
   const location = useLocation();
-  const canonicalUrl = `https://fotz.pl${location.pathname}`;
   
-  // Truncate description to 155 chars for meta
+  // Remove trailing slash from pathname (except for root)
+  const cleanPath = location.pathname === "/" 
+    ? "" 
+    : location.pathname.replace(/\/$/, "");
+  const canonicalUrl = `https://fotz.pl${cleanPath}`;
+  
+  // Truncate description to 155 chars for meta (Google shows ~155-160)
   const metaDescription = description.length > 155 
     ? description.substring(0, 152) + "..." 
     : description;
 
+  // Truncate title to 60 chars (Google shows ~50-60)
+  const metaTitle = title.length > 60 
+    ? title.substring(0, 57) + "..." 
+    : title;
+
   return (
     <Helmet>
-      <title>{title}</title>
+      <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonicalUrl} />
@@ -43,16 +53,17 @@ export function SEOHead({
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       
       {/* Open Graph */}
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="pl_PL" />
+      <meta property="og:site_name" content="Fotz Studio" />
       
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={metaTitle} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={ogImage} />
       
