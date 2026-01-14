@@ -106,7 +106,7 @@ const BlogGoogleVsFacebook = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
               <p>
-                "Gdzie powinienem reklamować swoją firmę – w Google czy na Facebooku?" To jedno z najczęściej zadawanych pytań przez przedsiębiorców rozpoczynających przygodę z marketingiem online. <strong>Odpowiedź brzmi: to zależy.</strong> W tym artykule pomożemy Ci podjąć właściwą decyzję.
+                "Gdzie powinienem reklamować swoją firmę – w Google czy na Facebooku?" To jedno z najczęściej zadawanych pytań przez przedsiębiorców rozpoczynających przygodę z marketingiem online. <strong>Odpowiedź brzmi: to zależy.</strong> W tym artykule pomożemy Ci podjąć właściwą decyzję. Sprawdź nasze kompleksowe <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link> na wszystkich platformach.
               </p>
 
               {/* Quick comparison */}

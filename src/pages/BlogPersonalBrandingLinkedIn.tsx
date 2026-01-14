@@ -113,7 +113,9 @@ const BlogPersonalBrandingLinkedIn = () => {
                   LinkedIn przestał być tylko portalem do szukania pracy. To obecnie najpotężniejsza platforma 
                   do budowania marki osobistej w sferze B2B. Decydenci, prezesi, menedżerowie - wszyscy są tam aktywni. 
                   Profesjonalna <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">identyfikacja wizualna</Link> i spójne 
-                  <Link to="/social-media" className="text-primary hover:underline">social media</Link> wzmacniają Twój wizerunek eksperta.
+                  <Link to="/social-media" className="text-primary hover:underline">social media</Link> wzmacniają Twój wizerunek eksperta. 
+                  <Link to="/linkedin-ads" className="text-primary hover:underline">Kampanie LinkedIn Ads</Link> mogą dodatkowo wzmocnić Twoją widoczność, 
+                  a wartościowy <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link> buduje autorytet w branży.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 my-12 not-prose">

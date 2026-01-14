@@ -102,7 +102,7 @@ const BlogKampaniaReklamowa = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
               <p>
-                Zrozumienie różnic między kampanią reklamową a marketingową jest kluczowe dla skutecznego budowania marki i docierania do odbiorców. Ten artykuł ma na celu wyjaśnienie tych pojęć, przedstawienie przykładów z ostatnich lat oraz analizę trendów, które będą kształtować przyszłość reklamy. Skupimy się na efektywnych strategiach i kreatywnych rozwiązaniach, które mogą przyczynić się do sukcesu marketingowego w dynamicznie zmieniającym się środowisku.
+                Zrozumienie różnic między kampanią reklamową a marketingową jest kluczowe dla skutecznego budowania marki i docierania do odbiorców. Sprawdź nasze <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kompleksowe kampanie reklamowe</Link> na wszystkich platformach: <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link>, <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> i <Link to="/social-media" className="text-primary hover:underline">social media</Link>. Ten artykuł ma na celu wyjaśnienie tych pojęć, przedstawienie przykładów z ostatnich lat oraz analizę trendów, które będą kształtować przyszłość reklamy.
               </p>
 
               <h2>Kampania Reklamowa w 2025 roku</h2>

@@ -102,7 +102,7 @@ const BlogReelsVsTikTok = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Krótkie wideo to absolutny must-have w strategii <Link to="/social-media" className="text-primary hover:underline">social media</Link> 2025. Ale pojawia się pytanie: <strong>TikTok czy Instagram Reels?</strong> A może obie platformy? W tym artykule porównamy obie opcje i pomożemy Ci podjąć strategiczną decyzję. Jeśli interesują Cię płatne <Link to="/instagram-ads" className="text-primary hover:underline">kampanie Instagram Ads</Link> lub <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link>, sprawdź nasze dedykowane usługi.
+                Krótkie wideo to absolutny must-have w strategii <Link to="/social-media" className="text-primary hover:underline">social media</Link> 2025. Ale pojawia się pytanie: <strong>TikTok czy Instagram Reels?</strong> A może obie platformy? W tym artykule porównamy obie opcje i pomożemy Ci podjąć strategiczną decyzję. Jeśli interesują Cię płatne <Link to="/instagram-ads" className="text-primary hover:underline">kampanie Instagram Ads</Link> lub <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link>, sprawdź nasze dedykowane usługi. Profesjonalna <Link to="/produkcja-filmow-poznan" className="text-primary hover:underline">produkcja wideo</Link> może znacząco podnieść jakość Twoich treści.
               </p>
 
               {/* Quick comparison */}
