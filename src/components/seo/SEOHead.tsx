@@ -13,9 +13,14 @@ interface SEOHeadProps {
 /**
  * SEO Head component that automatically adds:
  * - Title and meta description (truncated to 155 chars)
- * - Canonical URL based on current route (without trailing slash)
+ * - Canonical URL based on current route (WITHOUT trailing slash - policy decision)
  * - Open Graph tags
  * - Twitter Card tags
+ * 
+ * URL Policy: https://fotz.pl/path (NO trailing slash)
+ * - Matches sitemap.xml format
+ * - Matches vercel.json trailingSlash: false
+ * - Matches _redirects normalization
  */
 export function SEOHead({
   title,
@@ -27,11 +32,13 @@ export function SEOHead({
 }: SEOHeadProps) {
   const location = useLocation();
   
-  // Remove trailing slash from pathname - always use clean URLs without trailing slash
+  // URL Policy: NO trailing slash (except homepage)
+  // Remove any trailing slashes from pathname
   const cleanPath = location.pathname === "/" 
     ? "" 
-    : location.pathname.replace(/\/$/, "");
-  // Root URL should be https://fotz.pl without trailing slash for consistency
+    : location.pathname.replace(/\/+$/, "");
+  
+  // Canonical URL: always https://fotz.pl/path (no trailing slash)
   const canonicalUrl = `https://fotz.pl${cleanPath}`;
   
   // Truncate description to 155 chars for meta (Google shows ~155-160)
