@@ -1,6 +1,7 @@
 {
   "trailingSlash": false,
   "redirects": [
+    { "source": "/:path((?!api|_next|favicon\\.ico|.*\\..*).*)/", "destination": "/:path", "permanent": true },
     { "source": "/branze/marketing-medyczny", "destination": "/dla-kogo/branza-medyczna", "permanent": true },
     { "source": "/branze/marketing-gastronomia", "destination": "/dla-kogo/gastronomia", "permanent": true },
     { "source": "/branze/marketing-beauty", "destination": "/dla-kogo/beauty-wellness", "permanent": true },
