@@ -106,7 +106,7 @@ const BlogTikTokBiznes = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Z ponad 1,5 miliarda aktywnych użytkowników miesięcznie, TikTok stał się jedną z najważniejszych platform marketingowych na świecie. <strong>Co ciekawe, to już nie tylko młodzież</strong> – użytkownicy w wieku 25-44 lat stanowią obecnie ponad 40% bazy użytkowników. To ogromna szansa dla firm, które chcą dotrzeć do nowych odbiorców.
+                Z ponad 1,5 miliarda aktywnych użytkowników miesięcznie, TikTok stał się jedną z najważniejszych platform marketingowych na świecie. <strong>Co ciekawe, to już nie tylko młodzież</strong> – użytkownicy w wieku 25-44 lat stanowią obecnie ponad 40% bazy użytkowników. To ogromna szansa dla firm, które chcą dotrzeć do nowych odbiorców poprzez <Link to="/tiktok-ads" className="text-primary hover:underline">reklamy TikTok Ads</Link> oraz organiczny <Link to="/social-media" className="text-primary hover:underline">marketing w social media</Link>.
               </p>
 
               {/* Key stats */}
@@ -167,10 +167,10 @@ const BlogTikTokBiznes = () => {
                 Twój profil to pierwsza wizytówka. Zadbaj o:
               </p>
               <ul>
-                <li><strong>Zdjęcie profilowe</strong> – czytelne logo lub twarz właściciela</li>
+                <li><strong>Zdjęcie profilowe</strong> – czytelne logo lub twarz właściciela (jak w <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">identyfikacji wizualnej</Link>)</li>
                 <li><strong>Nazwa użytkownika</strong> – krótka, łatwa do zapamiętania</li>
                 <li><strong>Bio</strong> – 80 znaków na przedstawienie się i CTA</li>
-                <li><strong>Link</strong> – kieruj ruch na stronę, sklep lub landing page</li>
+                <li><strong>Link</strong> – kieruj ruch na <Link to="/strony-internetowe" className="text-primary hover:underline">stronę</Link>, sklep lub landing page</li>
               </ul>
 
               <h2>Strategie content marketingu na TikToku</h2>

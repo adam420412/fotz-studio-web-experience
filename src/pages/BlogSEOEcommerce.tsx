@@ -137,7 +137,7 @@ const BlogSEOEcommerce = () => {
               <section id="wprowadzenie">
                 <h2>Dlaczego SEO jest kluczowe dla e-commerce?</h2>
                 <p>
-                  Pozycjonowanie sklepu internetowego to jeden z najważniejszych kanałów pozyskiwania klientów. W przeciwieństwie do płatnych reklam, ruch organiczny jest bezpłatny i buduje długoterminową wartość biznesu.
+                  <Link to="/pozycjonowanie" className="text-primary hover:underline">Pozycjonowanie</Link> sklepu internetowego to jeden z najważniejszych kanałów pozyskiwania klientów. W przeciwieństwie do płatnych reklam jak <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link>, ruch organiczny jest bezpłatny i buduje długoterminową wartość biznesu.
                 </p>
 
                 <div className="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8 my-8 not-prose">
@@ -163,7 +163,7 @@ const BlogSEOEcommerce = () => {
                 </div>
 
                 <p>
-                  Dobrze zoptymalizowany sklep może generować tysiące odwiedzin miesięcznie bez wydawania budżetu na reklamy. To szczególnie ważne dla małych i średnich e-commerce, które nie mogą konkurować budżetami reklamowymi z gigantami.
+                  Dobrze zoptymalizowany sklep może generować tysiące odwiedzin miesięcznie bez wydawania budżetu na reklamy. To szczególnie ważne dla małych i średnich <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">sklepów e-commerce</Link>, które nie mogą konkurować budżetami reklamowymi z gigantami. Warto połączyć SEO z <Link to="/content-marketing" className="text-primary hover:underline">content marketingiem</Link> dla maksymalnych efektów.
                 </p>
               </section>
 

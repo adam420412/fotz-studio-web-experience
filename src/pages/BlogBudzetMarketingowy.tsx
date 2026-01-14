@@ -204,25 +204,25 @@ export default function BlogBudzetMarketingowy() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Google Ads (Search)</td>
+                      <td><Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> (Search)</td>
                       <td>35%</td>
                       <td>3 500 zł</td>
                       <td>Lead generation</td>
                     </tr>
                     <tr>
-                      <td>SEO + Content</td>
+                      <td><Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> + <Link to="/content-marketing" className="text-primary hover:underline">Content</Link></td>
                       <td>25%</td>
                       <td>2 500 zł</td>
                       <td>Ruch organiczny</td>
                     </tr>
                     <tr>
-                      <td>Social Media Ads</td>
+                      <td><Link to="/facebook-ads" className="text-primary hover:underline">Social Media Ads</Link></td>
                       <td>20%</td>
                       <td>2 000 zł</td>
-                      <td>Świadomość + remarketing</td>
+                      <td>Świadomość + <Link to="/blog/remarketing-poradnik" className="text-primary hover:underline">remarketing</Link></td>
                     </tr>
                     <tr>
-                      <td>Social Media (organiczny)</td>
+                      <td><Link to="/social-media" className="text-primary hover:underline">Social Media</Link> (organiczny)</td>
                       <td>10%</td>
                       <td>1 000 zł</td>
                       <td>Budowanie społeczności</td>
