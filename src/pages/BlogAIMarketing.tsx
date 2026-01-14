@@ -106,7 +106,7 @@ const BlogAIMarketing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
               <p>
-                Rok 2025 przynosi przełom w dostępności narzędzi AI dla małych i średnich przedsiębiorstw. To, co jeszcze niedawno było zarezerwowane dla korporacji z ogromnymi budżetami, dziś jest w zasięgu każdej firmy. W tym artykule przedstawiamy praktyczne zastosowania sztucznej inteligencji, które możesz wdrożyć już dziś.
+                Rok 2025 przynosi przełom w dostępności narzędzi AI dla małych i średnich przedsiębiorstw. To, co jeszcze niedawno było zarezerwowane dla korporacji z ogromnymi budżetami, dziś jest w zasięgu każdej firmy. AI rewolucjonizuje <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link>, <Link to="/social-media" className="text-primary hover:underline">zarządzanie social media</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link>. W tym artykule przedstawiamy praktyczne zastosowania sztucznej inteligencji, które możesz wdrożyć już dziś.
               </p>
 
               {/* Key benefits section */}

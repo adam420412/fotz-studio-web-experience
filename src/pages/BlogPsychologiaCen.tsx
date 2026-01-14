@@ -118,11 +118,11 @@ export default function BlogPsychologiaCen() {
               <p>
                 <strong>Psychologia cen</strong> (pricing psychology) to nauka o tym, jak ludzie 
                 postrzegają i reagują na ceny. Wykorzystuje wiedzę o heurystykach, błędach 
-                poznawczych i emocjach, aby wpływać na decyzje zakupowe.
+                poznawczych i emocjach, aby wpływać na decyzje zakupowe. Strategia cenowa jest kluczowa dla sukcesu <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">sklepów e-commerce</Link>.
               </p>
               <p>
                 Cena to nie tylko liczba - to sygnał wartości, jakości i statusu. Odpowiednia 
-                strategia cenowa może zwiększyć konwersję nawet o 25% bez zmiany produktu.
+                strategia cenowa może zwiększyć konwersję nawet o 25% bez zmiany produktu. Dobrze zaprojektowana <Link to="/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> z przemyślaną prezentacją cen wspiera decyzje zakupowe, a efektywny <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link> buduje wartość w oczach klientów.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">

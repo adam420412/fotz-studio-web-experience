@@ -106,7 +106,7 @@ const BlogSEOLokalnePoznan = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Wyobraź sobie: klient w Poznaniu szuka "dentysta Jeżyce" lub "mechanik Grunwald". <strong>Czy Twoja firma pojawia się w wynikach?</strong> Jeśli nie, tracisz klientów na rzecz konkurencji, która zadbała o SEO lokalne. Ten poradnik pokaże Ci krok po kroku, jak to zmienić. Sprawdź również nasze usługi <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link> i <Link to="/pozycjonowanie-google-maps" className="text-primary hover:underline">pozycjonowania w Google Maps</Link>.
+                Wyobraź sobie: klient w Poznaniu szuka "dentysta Jeżyce" lub "mechanik Grunwald". <strong>Czy Twoja firma pojawia się w wynikach?</strong> Jeśli nie, tracisz klientów na rzecz konkurencji, która zadbała o SEO lokalne. Ten poradnik pokaże Ci krok po kroku, jak to zmienić. Sprawdź również nasze usługi <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link> i <Link to="/pozycjonowanie-google-maps" className="text-primary hover:underline">pozycjonowania w Google Maps</Link>. Profesjonalna <Link to="/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> z optymalizacją lokalną to fundament sukcesu.
               </p>
 
               {/* Key stats */}

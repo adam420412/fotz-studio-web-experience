@@ -106,7 +106,7 @@ const BlogEmailMarketing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                W erze <Link to="/social-media" className="text-primary hover:underline">social media</Link> i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najskuteczniejszych kanałów marketingowych z ROI sięgającym 4200%. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów.
+                W erze <Link to="/social-media" className="text-primary hover:underline">social media</Link> i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najskuteczniejszych kanałów marketingowych z ROI sięgającym 4200%. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów. Email marketing doskonale współgra z <Link to="/content-marketing" className="text-primary hover:underline">content marketingiem</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>.
               </p>
 
               {/* Key stats */}

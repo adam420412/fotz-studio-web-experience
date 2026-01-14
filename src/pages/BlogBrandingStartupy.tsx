@@ -128,7 +128,7 @@ export default function BlogBrandingStartupy() {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               
               <p className="lead">
-                Branding to nie tylko logo i kolorystyka. To całościowe doświadczenie, jakie klient ma z Twoją marką. Dla startupów silny branding jest szczególnie ważny - pomaga wyróżnić się w tłumie, budować zaufanie i przyciągać inwestorów. Profesjonalna <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">identyfikacja wizualna</Link> oraz skuteczna <Link to="/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> to fundamenty sukcesu.
+                Branding to nie tylko logo i kolorystyka. To całościowe doświadczenie, jakie klient ma z Twoją marką. Dla startupów silny branding jest szczególnie ważny - pomaga wyróżnić się w tłumie, budować zaufanie i przyciągać inwestorów. Profesjonalna <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">identyfikacja wizualna</Link> oraz skuteczna <Link to="/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> to fundamenty sukcesu. Równie istotna jest strategia <Link to="/social-media" className="text-primary hover:underline">social media</Link>, która pozwala budować społeczność wokół marki od samego początku.
               </p>
 
               <div className="bg-card rounded-2xl p-8 my-8">

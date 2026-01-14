@@ -112,7 +112,9 @@ const BlogVideoMarketing = () => {
                 <p>
                   Wideo to najskuteczniejszy format contentowy. Ludzie zapamiętują 95% przekazu z wideo, 
                   w porównaniu do 10% z tekstu. W erze krótkich uwagi wideo przyciąga i angażuje 
-                  jak żaden inny format.
+                  jak żaden inny format. Profesjonalna <Link to="/produkcja-filmow-poznan" className="text-primary hover:underline">produkcja filmów</Link> zapewnia jakość, 
+                  która wyróżni Twoją markę. Wideo doskonale sprawdza się w <Link to="/social-media" className="text-primary hover:underline">social media</Link>, 
+                  <Link to="/youtube-ads" className="text-primary hover:underline">reklamach YouTube</Link> oraz <Link to="/tiktok-ads" className="text-primary hover:underline">kampaniach TikTok</Link>.
                 </p>
 
                 <div className="grid md:grid-cols-4 gap-4 my-12 not-prose">
