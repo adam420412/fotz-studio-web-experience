@@ -9,7 +9,7 @@
  * Wymaga: Node.js 18+ (native fetch)
  */
 
-const BASE_URL = process.env.TEST_URL || 'https://fotz.pl';
+const BASE_URL = process.env.TEST_URL || "https://fotz.pl";
 
 // URL-e do testowania (z trailing slashem - powinny być 301)
 const TRAILING_SLASH_URLS = [
