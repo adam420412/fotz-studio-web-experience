@@ -13,7 +13,36 @@
     { "source": "/branze/marketing-produkcja", "destination": "/dla-kogo/produkcja", "permanent": true },
     { "source": "/branze/marketing-ngo", "destination": "/dla-kogo/ngo", "permanent": true },
     { "source": "/branze/marketing-turystyka", "destination": "/dla-kogo/turystyka", "permanent": true },
-    { "source": "/blog/kampania-reklamowa-marketingowa-przyklady-definicja", "destination": "/blog/kampania-reklamowa-marketingowa", "permanent": true }
+    { "source": "/blog/kampania-reklamowa-marketingowa-przyklady-definicja", "destination": "/blog/kampania-reklamowa-marketingowa", "permanent": true },
+    { "source": "/blog/remarketing-retargeting-co-to", "destination": "/blog/remarketing-poradnik", "permanent": true },
+    { "source": "/blog/seo-dla-sklepow-internetowych", "destination": "/blog/seo-ecommerce", "permanent": true },
+    { "source": "/blog/automatyzacja-marketingu", "destination": "/blog/marketing-automation", "permanent": true },
+    { "source": "/blog/b2b-b2c-roznice", "destination": "/blog/marketing-b2b-vs-b2c", "permanent": true },
+    { "source": "/blog/ga4-poradnik", "destination": "/blog/google-analytics-4-poradnik", "permanent": true },
+    { "source": "/blog/ai-w-marketingu", "destination": "/blog/ai-w-marketingu-msp-2025", "permanent": true },
+    { "source": "/blog/branding-startupy", "destination": "/blog/branding-dla-startupow", "permanent": true },
+    { "source": "/blog/ile-kosztuje-strona", "destination": "/blog/ile-kosztuje-strona-internetowa", "permanent": true },
+    { "source": "/blog/copywriting-na-landing-page", "destination": "/blog/copywriting-landing-page", "permanent": true },
+    { "source": "/blog/influencer-marketing-poradnik", "destination": "/blog/influencer-marketing-polska", "permanent": true },
+    { "source": "/blog/personal-branding-na-linkedin", "destination": "/blog/personal-branding-linkedin", "permanent": true },
+    { "source": "/blog/psychologia-cenowa", "destination": "/blog/psychologia-cen", "permanent": true },
+    { "source": "/blog/tiktok-dla-firm", "destination": "/blog/tiktok-dla-biznesu", "permanent": true },
+    { "source": "/blog/ux-dla-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true },
+    { "source": "/blog/video-marketing-poradnik", "destination": "/blog/video-marketing-trendy-2025", "permanent": true },
+    { "source": "/blog/email-marketing", "destination": "/blog/email-marketing-2025", "permanent": true },
+    { "source": "/blog/landing-page", "destination": "/blog/jak-stworzyc-landing-page", "permanent": true },
+    { "source": "/blog/reels-vs-tiktok", "destination": "/blog/instagram-reels-vs-tiktok", "permanent": true },
+    { "source": "/blog/google-vs-facebook", "destination": "/blog/google-ads-vs-facebook-ads", "permanent": true },
+    { "source": "/blog/seo-lokalne-poznan", "destination": "/blog/seo-lokalne-poznan-poradnik", "permanent": true },
+    { "source": "/blog/budzet-marketingowy", "destination": "/blog/budzet-marketingowy-planowanie", "permanent": true },
+    { "source": "/blog/koszt-strony-internetowej", "destination": "/blog/ile-kosztuje-strona-internetowa", "permanent": true },
+    { "source": "/blog/b2b-vs-b2c", "destination": "/blog/marketing-b2b-vs-b2c", "permanent": true },
+    { "source": "/blog/google-analytics-4", "destination": "/blog/google-analytics-4-poradnik", "permanent": true },
+    { "source": "/blog/ai-marketing", "destination": "/blog/ai-w-marketingu-msp-2025", "permanent": true },
+    { "source": "/blog/video-marketing", "destination": "/blog/video-marketing-trendy-2025", "permanent": true },
+    { "source": "/blog/influencer-marketing", "destination": "/blog/influencer-marketing-polska", "permanent": true },
+    { "source": "/blog/tiktok-biznes", "destination": "/blog/tiktok-dla-biznesu", "permanent": true },
+    { "source": "/blog/ux-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
@@ -27,5 +56,7 @@
         { "key": "X-XSS-Protection", "value": "1; mode=block" }
       ]
     }
+  ]
+}
   ]
 }
