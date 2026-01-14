@@ -16,8 +16,37 @@
 /branze/marketing-ngo /dla-kogo/ngo 301
 /branze/marketing-turystyka /dla-kogo/turystyka 301
 
-# Przekierowanie starego URL-a bloga
+# Przekierowania starych URL-ów bloga do nowych (zgodnych z App.tsx)
 /blog/kampania-reklamowa-marketingowa-przyklady-definicja /blog/kampania-reklamowa-marketingowa 301
+/blog/remarketing-retargeting-co-to /blog/remarketing-poradnik 301
+/blog/seo-dla-sklepow-internetowych /blog/seo-ecommerce 301
+/blog/automatyzacja-marketingu /blog/marketing-automation 301
+/blog/b2b-b2c-roznice /blog/marketing-b2b-vs-b2c 301
+/blog/ga4-poradnik /blog/google-analytics-4-poradnik 301
+/blog/ai-w-marketingu /blog/ai-w-marketingu-msp-2025 301
+/blog/branding-startupy /blog/branding-dla-startupow 301
+/blog/ile-kosztuje-strona /blog/ile-kosztuje-strona-internetowa 301
+/blog/copywriting-na-landing-page /blog/copywriting-landing-page 301
+/blog/influencer-marketing-poradnik /blog/influencer-marketing-polska 301
+/blog/personal-branding-na-linkedin /blog/personal-branding-linkedin 301
+/blog/psychologia-cenowa /blog/psychologia-cen 301
+/blog/tiktok-dla-firm /blog/tiktok-dla-biznesu 301
+/blog/ux-dla-ecommerce /blog/ux-ui-ecommerce 301
+/blog/video-marketing-poradnik /blog/video-marketing-trendy-2025 301
+/blog/email-marketing /blog/email-marketing-2025 301
+/blog/landing-page /blog/jak-stworzyc-landing-page 301
+/blog/reels-vs-tiktok /blog/instagram-reels-vs-tiktok 301
+/blog/google-vs-facebook /blog/google-ads-vs-facebook-ads 301
+/blog/seo-lokalne-poznan /blog/seo-lokalne-poznan-poradnik 301
+/blog/budzet-marketingowy /blog/budzet-marketingowy-planowanie 301
+/blog/koszt-strony-internetowej /blog/ile-kosztuje-strona-internetowa 301
+/blog/b2b-vs-b2c /blog/marketing-b2b-vs-b2c 301
+/blog/google-analytics-4 /blog/google-analytics-4-poradnik 301
+/blog/ai-marketing /blog/ai-w-marketingu-msp-2025 301
+/blog/video-marketing /blog/video-marketing-trendy-2025 301
+/blog/influencer-marketing /blog/influencer-marketing-polska 301
+/blog/tiktok-biznes /blog/tiktok-dla-biznesu 301
+/blog/ux-ecommerce /blog/ux-ui-ecommerce 301
 
 # Przekierowania ze ścieżek /branze/* bez przedrostka marketing-
 /branze/* /dla-kogo/:splat 301
