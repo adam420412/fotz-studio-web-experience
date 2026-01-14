@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Users, Target, TrendingUp, CheckCircle, AlertCircle, DollarSign, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -503,6 +504,9 @@ export default function BlogInfluencerMarketing() {
 
             </div>
           </div>
+
+          {/* Related Services */}
+          <RelatedServices services={servicesByCategory.socialMedia} />
 
           {/* Related Articles */}
           <RelatedArticles currentArticleId="influencer-marketing-polska" />

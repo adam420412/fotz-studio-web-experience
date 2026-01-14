@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, BarChart3, Target, TrendingUp, Settings, Database, Zap } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 
 const faqItems = [
   {
@@ -359,7 +360,10 @@ export default function BlogGoogleAnalytics4() {
               <h2>Podsumowanie</h2>
               <p>
                 Google Analytics 4 to potężne narzędzie, które wymaga nowego podejścia do analityki. 
-                Model event-based daje większą elastyczność, ale wymaga przemyślanej konfiguracji.
+                Model event-based daje większą elastyczność, ale wymaga przemyślanej konfiguracji. 
+                Dzięki GA4 możesz lepiej śledzić efekty <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link>, 
+                optymalizować <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link> oraz 
+                mierzyć ROI z <Link to="/content-marketing" className="text-primary hover:underline">content marketingu</Link>.
               </p>
               <p>
                 Kluczowe kroki na start:
@@ -372,6 +376,11 @@ export default function BlogGoogleAnalytics4() {
                 <li>Połącz z Google Ads</li>
                 <li>Rozważ eksport do BigQuery</li>
               </ol>
+
+              <p>
+                Aby w pełni wykorzystać potencjał GA4, warto również zapoznać się z <Link to="/blog/remarketing-poradnik" className="text-primary hover:underline">remarketingiem</Link>, 
+                który pozwala odzyskiwać użytkowników, oraz ze strategiami <Link to="/blog/seo-ecommerce" className="text-primary hover:underline">SEO dla e-commerce</Link>.
+              </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-8 my-8 text-center">
                 <h3 className="text-xl font-bold mb-4 mt-0">Potrzebujesz pomocy z konfiguracją GA4?</h3>
@@ -396,6 +405,15 @@ export default function BlogGoogleAnalytics4() {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="section-padding pt-0 bg-background">
+        <div className="container-wide">
+          <div className="max-w-3xl mx-auto">
+            <RelatedServices services={servicesByCategory.analytics} />
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Clock, User, Zap, Settings, BarChart3, Mail, Users
 import { Link } from "react-router-dom";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 
 const faqItems = [
   {
@@ -289,6 +290,13 @@ const BlogMarketingAutomation = () => {
             </div>
           </div>
         </article>
+
+        {/* Related Services */}
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <RelatedServices services={servicesByCategory.automation} />
+          </div>
+        </div>
 
         <RelatedArticles currentArticleId="marketing-automation" />
       </Layout>

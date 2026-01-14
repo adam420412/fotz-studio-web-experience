@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, User, ChevronRight, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 
 const cities = [
   { name: "Poznań", path: "/strony-internetowe-poznan", active: true },
@@ -445,6 +446,13 @@ const BlogKosztStrony = () => {
             </div>
           </div>
         </article>
+
+        {/* Related Services */}
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <RelatedServices services={servicesByCategory.websites} />
+          </div>
+        </div>
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="ile-kosztuje-strona-internetowa" />
