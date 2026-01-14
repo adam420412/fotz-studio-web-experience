@@ -47,7 +47,7 @@
     { "source": "/blog/ux-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!sitemap\\.xml|robots\\.txt|favicon\\.ico|.*\\..*).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
