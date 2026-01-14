@@ -13,6 +13,7 @@
     { "source": "/branze/marketing-produkcja", "destination": "/dla-kogo/produkcja", "permanent": true },
     { "source": "/branze/marketing-ngo", "destination": "/dla-kogo/ngo", "permanent": true },
     { "source": "/branze/marketing-turystyka", "destination": "/dla-kogo/turystyka", "permanent": true },
+    { "source": "/branze/:path*", "destination": "/dla-kogo/:path*", "permanent": true },
     { "source": "/blog/kampania-reklamowa-marketingowa-przyklady-definicja", "destination": "/blog/kampania-reklamowa-marketingowa", "permanent": true },
     { "source": "/blog/remarketing-retargeting-co-to", "destination": "/blog/remarketing-poradnik", "permanent": true },
     { "source": "/blog/seo-dla-sklepow-internetowych", "destination": "/blog/seo-ecommerce", "permanent": true },
@@ -53,10 +54,9 @@
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
-  ]
-}
   ]
 }

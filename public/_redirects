@@ -2,6 +2,9 @@
 # This must be before other rules
 /*/  /:splat  301
 
+# Query parameter cleanup - strip tracking parameters
+# (Netlify doesn't support query param redirects natively, handled by app)
+
 # Netlify 301 Redirects - stare URL-e /branze/* do nowych /dla-kogo/*
 /branze/marketing-medyczny /dla-kogo/branza-medyczna 301
 /branze/marketing-gastronomia /dla-kogo/gastronomia 301
