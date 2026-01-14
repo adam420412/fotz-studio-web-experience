@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, Target, Users, TrendingUp, DollarSign, BarChart3, RefreshCw } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 
 const faqItems = [
   {
@@ -371,6 +372,15 @@ export default function BlogRemarketing() {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="section-padding pt-0 bg-background">
+        <div className="container-wide">
+          <div className="max-w-3xl mx-auto">
+            <RelatedServices services={servicesByCategory.ads} />
           </div>
         </div>
       </section>

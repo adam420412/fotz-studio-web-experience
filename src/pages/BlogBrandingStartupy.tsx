@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Lightbulb, Target, Palette, MessageSquare, Eye, Heart, Zap, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -541,6 +542,9 @@ export default function BlogBrandingStartupy() {
 
             </div>
           </div>
+
+          {/* Related Services */}
+          <RelatedServices services={servicesByCategory.branding} />
 
           {/* Related Articles */}
           <RelatedArticles currentArticleId="branding-dla-startupow" />

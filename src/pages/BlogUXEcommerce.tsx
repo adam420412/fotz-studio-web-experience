@@ -5,6 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { ArrowLeft, Calendar, Clock, User, Share2, ShoppingCart, Eye, MousePointer, Zap, CheckCircle2, ArrowRight, Lightbulb, Target, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -739,6 +740,11 @@ export default function BlogUXEcommerce() {
           </div>
         </div>
       </article>
+
+      {/* Related Services */}
+      <div className="container-wide max-w-4xl">
+        <RelatedServices services={servicesByCategory.ecommerce} />
+      </div>
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="ux-ui-ecommerce" />

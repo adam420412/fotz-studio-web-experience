@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, Users, Building2, Target, TrendingUp, Megaphone, ShoppingCart } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -384,6 +385,15 @@ export default function BlogB2BvsB2C() {
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services */}
+      <section className="section-padding pt-0 bg-background">
+        <div className="container-wide">
+          <div className="max-w-3xl mx-auto">
+            <RelatedServices services={servicesByCategory.ads} />
           </div>
         </div>
       </section>
