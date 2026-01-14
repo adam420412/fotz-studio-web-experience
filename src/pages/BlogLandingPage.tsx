@@ -167,14 +167,14 @@ const BlogLandingPage = () => {
               <h2>2. Social Proof – buduj zaufanie</h2>
 
               <p>
-                Ludzie ufają opinii innych. <strong>92% konsumentów czyta opinie przed zakupem.</strong> Oto elementy social proof:
+                Ludzie ufają opinii innych. <strong>92% konsumentów czyta opinie przed zakupem.</strong> Oto elementy social proof, które warto wykorzystać w połączeniu z <Link to="/content-marketing" className="text-primary hover:underline">content marketingiem</Link>:
               </p>
 
               <ul>
                 <li><strong>Testimoniale</strong> – opinie klientów ze zdjęciem i imieniem</li>
                 <li><strong>Loga klientów</strong> – "Zaufali nam: [logo] [logo] [logo]"</li>
                 <li><strong>Liczby</strong> – "10,000+ zadowolonych klientów"</li>
-                <li><strong>Case studies</strong> – konkretne wyniki klientów</li>
+                <li><strong>Case studies</strong> – konkretne wyniki klientów (jak nasze <Link to="/realizacje" className="text-primary hover:underline">realizacje</Link>)</li>
                 <li><strong>Certyfikaty i nagrody</strong> – dowody ekspertyzy</li>
                 <li><strong>Media</strong> – "Pisali o nas: Forbes, Business Insider"</li>
               </ul>

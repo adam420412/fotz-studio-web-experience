@@ -211,20 +211,20 @@ export default function BlogB2BvsB2C() {
 
               <h3>Najskuteczniejsze kanały B2B</h3>
               <ol>
-                <li><strong>LinkedIn</strong> - #1 dla B2B, 80% leadów B2B z social media</li>
-                <li><strong>Content marketing</strong> - whitepapers, ebooki, webinary</li>
-                <li><strong>Email marketing</strong> - nurturing, automatyzacja</li>
-                <li><strong>SEO + Google Ads</strong> - intencyjne wyszukiwania</li>
+                <li><strong><Link to="/linkedin-ads" className="text-primary hover:underline">LinkedIn</Link></strong> - #1 dla B2B, 80% leadów B2B z social media</li>
+                <li><strong><Link to="/content-marketing" className="text-primary hover:underline">Content marketing</Link></strong> - whitepapers, ebooki, webinary</li>
+                <li><strong>Email marketing</strong> - nurturing, <Link to="/blog/marketing-automation" className="text-primary hover:underline">automatyzacja</Link></li>
+                <li><strong><Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> + <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link></strong> - intencyjne wyszukiwania</li>
                 <li><strong>Targi i wydarzenia</strong> - networking, demo</li>
               </ol>
 
               <h3>Najskuteczniejsze kanały B2C</h3>
               <ol>
-                <li><strong>Instagram + TikTok</strong> - visual, lifestyle, influencerzy</li>
-                <li><strong>Facebook Ads</strong> - precyzyjne targetowanie</li>
-                <li><strong>Google Shopping</strong> - dla e-commerce</li>
-                <li><strong>Email marketing</strong> - promocje, porzucone koszyki</li>
-                <li><strong>Influencer marketing</strong> - social proof</li>
+                <li><strong><Link to="/instagram-ads" className="text-primary hover:underline">Instagram</Link> + <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok</Link></strong> - visual, lifestyle, influencerzy</li>
+                <li><strong><Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link></strong> - precyzyjne targetowanie</li>
+                <li><strong>Google Shopping</strong> - dla <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">e-commerce</Link></li>
+                <li><strong>Email marketing</strong> - promocje, <Link to="/blog/remarketing-poradnik" className="text-primary hover:underline">porzucone koszyki</Link></li>
+                <li><strong><Link to="/blog/influencer-marketing-polska" className="text-primary hover:underline">Influencer marketing</Link></strong> - social proof</li>
               </ol>
 
               <div className="bg-card border border-border rounded-xl p-6 my-8">
