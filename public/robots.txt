@@ -1,6 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 # Robots.txt for fotz.pl
-# Last updated: 2026-01-09
+# Last updated: 2026-01-14
 
 User-agent: Googlebot
 Allow: /
@@ -36,6 +36,30 @@ Disallow: /admin/
 # Disallow API and internal paths
 Disallow: /api/
 Disallow: /_next/
+
+# Disallow URL parameters (query strings)
+Disallow: /*?*
+Disallow: /*?utm_*
+Disallow: /*?lang=*
+Disallow: /*?v=*
+Disallow: /*?filter=*
+Disallow: /*?page=*
+Disallow: /*?sort=*
+Disallow: /*?ref=*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+
+# Disallow pagination and archive-like patterns
+Disallow: /page/
+Disallow: /tag/
+Disallow: /author/
+Disallow: /search/
+Disallow: /filter/
+
+# Disallow cart/checkout if added in future
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
 
 # Sitemap location
 Sitemap: https://fotz.pl/sitemap.xml
