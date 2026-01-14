@@ -50,7 +50,7 @@ const Index = () => {
           content="Fotz Studio to agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe. Poznań." 
         />
         <meta name="keywords" content="agencja marketingowa, marketing Poznań, strony internetowe Poznań, social media, kampanie reklamowe, lead generation, marketing premium" />
-        <link rel="canonical" href="https://fotz.pl/" />
+        <link rel="canonical" href="https://fotz.pl" />
         <meta property="og:title" content="Fotz Studio - Agencja Marketingowa Poznań" />
         <meta property="og:description" content="Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe." />
         <meta property="og:url" content="https://fotz.pl/" />
