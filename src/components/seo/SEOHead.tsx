@@ -27,10 +27,11 @@ export function SEOHead({
 }: SEOHeadProps) {
   const location = useLocation();
   
-  // Remove trailing slash from pathname (except for root)
+  // Remove trailing slash from pathname - always use clean URLs without trailing slash
   const cleanPath = location.pathname === "/" 
     ? "" 
     : location.pathname.replace(/\/$/, "");
+  // Root URL should be https://fotz.pl without trailing slash for consistency
   const canonicalUrl = `https://fotz.pl${cleanPath}`;
   
   // Truncate description to 155 chars for meta (Google shows ~155-160)
