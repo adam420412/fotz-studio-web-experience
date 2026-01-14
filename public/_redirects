@@ -1,11 +1,17 @@
-# Trailing slash normalization - redirect /page/ to /page
-# This must be before other rules
-/*/  /:splat  301
+# ===========================================
+# FOTZ.PL URL NORMALIZATION & REDIRECTS
+# Policy: HTTPS, no-www, NO trailing slash
+# ===========================================
 
-# Query parameter cleanup - strip tracking parameters
-# (Netlify doesn't support query param redirects natively, handled by app)
+# 1. TRAILING SLASH NORMALIZATION (most critical)
+# Redirect /page/ to /page (301)
+# This MUST be first - handles the non-canonical issue
+/*/  /:splat  301!
 
-# Netlify 301 Redirects - stare URL-e /branze/* do nowych /dla-kogo/*
+# 2. QUERY PARAMETER CLEANUP
+# Strip tracking parameters (handled by app-level, not Netlify)
+
+# 3. LEGACY BRANZE -> DLA-KOGO REDIRECTS
 /branze/marketing-medyczny /dla-kogo/branza-medyczna 301
 /branze/marketing-gastronomia /dla-kogo/gastronomia 301
 /branze/marketing-beauty /dla-kogo/beauty-wellness 301
@@ -18,8 +24,9 @@
 /branze/marketing-produkcja /dla-kogo/produkcja 301
 /branze/marketing-ngo /dla-kogo/ngo 301
 /branze/marketing-turystyka /dla-kogo/turystyka 301
+/branze/* /dla-kogo/:splat 301
 
-# Przekierowania starych URL-ów bloga do nowych (zgodnych z App.tsx)
+# 4. BLOG URL MIGRATIONS
 /blog/kampania-reklamowa-marketingowa-przyklady-definicja /blog/kampania-reklamowa-marketingowa 301
 /blog/remarketing-retargeting-co-to /blog/remarketing-poradnik 301
 /blog/seo-dla-sklepow-internetowych /blog/seo-ecommerce 301
@@ -51,8 +58,5 @@
 /blog/tiktok-biznes /blog/tiktok-dla-biznesu 301
 /blog/ux-ecommerce /blog/ux-ui-ecommerce 301
 
-# Przekierowania ze ścieżek /branze/* bez przedrostka marketing-
-/branze/* /dla-kogo/:splat 301
-
-# SPA fallback - must be last
+# 5. SPA FALLBACK (must be last)
 /* /index.html 200
