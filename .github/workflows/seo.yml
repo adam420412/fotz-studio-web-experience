@@ -1,0 +1,41 @@
+name: SEO checks
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run redirect smoke test
+        run: node scripts/seo-smoke-test.mjs
+
+      - name: Run sitemap + canonical checks (static)
+        run: node scripts/seo-canonical-check.mjs
+
+  # Live check - tylko ręcznie (workflow_dispatch)
+  seo_live:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run live canonical check (all 135+ URLs)
+        run: node scripts/seo-canonical-check.mjs --live
