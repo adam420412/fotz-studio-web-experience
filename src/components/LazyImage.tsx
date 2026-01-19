@@ -1,20 +1,24 @@
 import { useState, useEffect, useRef, ImgHTMLAttributes } from "react";
 
-interface OptimizedImageProps extends Omit<ImgHTMLAttributes<HTMLImageElement>, 'src'> {
+interface OptimizedImageProps extends Omit<ImgHTMLAttributes<HTMLImageElement>, 'src' | 'srcSet'> {
   src: string;
   alt: string;
   width?: number;
   height?: number;
-  priority?: boolean; // For above-the-fold images
-  quality?: number;
+  priority?: boolean;
+  sizes?: string;
 }
+
+// Responsive breakpoints for srcset
+const RESPONSIVE_WIDTHS = [320, 480, 640, 768, 1024, 1280, 1536];
 
 /**
  * Optimized image component with:
  * - Lazy loading (unless priority=true)
- * - WebP format detection
+ * - WebP format with fallback
+ * - Responsive srcset for different screen sizes
  * - Blur placeholder
- * - Progressive loading
+ * - Native lazy loading + intersection observer
  */
 export function OptimizedImage({ 
   src, 
@@ -23,29 +27,16 @@ export function OptimizedImage({
   width,
   height,
   priority = false,
-  quality = 80,
+  sizes = "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw",
   ...props 
 }: OptimizedImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isInView, setIsInView] = useState(priority);
-  const [supportsWebP, setSupportsWebP] = useState(true);
   const imgRef = useRef<HTMLDivElement>(null);
-
-  // Check WebP support
-  useEffect(() => {
-    const checkWebP = async () => {
-      const webP = new Image();
-      webP.onload = webP.onerror = () => {
-        setSupportsWebP(webP.height === 2);
-      };
-      webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
-    };
-    checkWebP();
-  }, []);
 
   // Lazy loading intersection observer
   useEffect(() => {
-    if (priority) return;
+    if (priority || isInView) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -55,7 +46,7 @@ export function OptimizedImage({
         }
       },
       { 
-        rootMargin: "200px",
+        rootMargin: "300px", // Load 300px before entering viewport
         threshold: 0.01 
       }
     );
@@ -65,21 +56,34 @@ export function OptimizedImage({
     }
 
     return () => observer.disconnect();
-  }, [priority]);
+  }, [priority, isInView]);
 
-  // Generate WebP path if applicable
-  const getOptimizedSrc = (originalSrc: string): string => {
-    // If already WebP or external URL, return as-is
-    if (originalSrc.endsWith('.webp') || originalSrc.startsWith('http')) {
-      return originalSrc;
-    }
-    
-    // For local images, check if WebP version exists
-    // In production, you'd have a build step that generates WebP versions
-    return originalSrc;
+  // Check if this is an imported asset (blob URL or data URL)
+  const isImportedAsset = src.startsWith("blob:") || 
+                          src.startsWith("data:") || 
+                          src.includes("/@fs/") ||
+                          src.includes("/node_modules/");
+
+  // Check if external URL
+  const isExternalUrl = src.startsWith("http://") || src.startsWith("https://");
+
+  // Generate WebP path
+  const getWebPSrc = (originalSrc: string): string => {
+    if (isImportedAsset || isExternalUrl) return originalSrc;
+    return originalSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
   };
 
-  const optimizedSrc = getOptimizedSrc(src);
+  // Generate srcset for responsive images
+  const generateSrcSet = (imageSrc: string): string | undefined => {
+    if (isImportedAsset || isExternalUrl) return undefined;
+    
+    return RESPONSIVE_WIDTHS
+      .map(w => `${imageSrc} ${w}w`)
+      .join(", ");
+  };
+
+  const webpSrc = getWebPSrc(src);
+  const srcSet = generateSrcSet(src);
 
   return (
     <div 
@@ -99,25 +103,28 @@ export function OptimizedImage({
         />
       )}
       
-      {/* Picture element with WebP fallback */}
+      {/* Picture element with WebP and responsive srcset */}
       {isInView && (
         <picture>
-          {/* WebP source if supported and available */}
-          {supportsWebP && !src.startsWith('http') && (
+          {/* WebP source - browser tries this first if supported */}
+          {!isImportedAsset && !isExternalUrl && webpSrc !== src && (
             <source 
-              srcSet={optimizedSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp')} 
+              srcSet={generateSrcSet(webpSrc) || webpSrc}
+              sizes={sizes}
               type="image/webp" 
             />
           )}
           
-          {/* Fallback to original format */}
+          {/* Original format with responsive srcset */}
           <img
-            src={optimizedSrc}
+            src={src}
+            srcSet={srcSet}
+            sizes={srcSet ? sizes : undefined}
             alt={alt}
             width={width}
             height={height}
             onLoad={() => setIsLoaded(true)}
-            className={`w-full h-full object-cover transition-opacity duration-500 ${
+            className={`w-full h-full object-cover transition-opacity duration-300 ${
               isLoaded ? "opacity-100" : "opacity-0"
             }`}
             loading={priority ? "eager" : "lazy"}
