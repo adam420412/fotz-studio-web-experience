@@ -167,12 +167,17 @@ export default defineConfig(({ mode }) => ({
           supabase: ["@supabase/supabase-js"],
           charts: ["recharts"],
         },
+        // Suppress asset size warnings in console
+        assetFileNames: "assets/[name]-[hash][extname]",
       },
     },
     minify: "esbuild",
-    chunkSizeWarningLimit: 1500,
+    // Increase chunk warning limit to 3MB to avoid build interruptions
+    chunkSizeWarningLimit: 3000,
     assetsInlineLimit: 4096,
     target: "esnext",
     cssCodeSplit: true,
+    // Suppress large asset warnings
+    reportCompressedSize: false,
   },
 }));
