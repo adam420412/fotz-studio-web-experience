@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { OptimizedImage } from "@/components/OptimizedImage";
+
+// Import portfolio images
 import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
 import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
 import rppgImg from "@/assets/portfolio/rppg.png";
@@ -197,12 +200,12 @@ function FeaturedCaseCard({ caseStudy }: { caseStudy: typeof caseStudies[0] }) {
           <div className="grid lg:grid-cols-2 relative">
             {/* Image */}
             <div className="relative aspect-video lg:aspect-auto lg:min-h-[500px] overflow-hidden">
-              <motion.img
+              <OptimizedImage
                 src={caseStudy.image}
                 alt={caseStudy.title}
-                className="w-full h-full object-cover"
-                animate={{ scale: isHovered ? 1.05 : 1 }}
-                transition={{ duration: 0.7 }}
+                className="w-full h-full"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority={true}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-card/95 hidden lg:block" />
               
@@ -328,14 +331,12 @@ function CaseCard({ caseStudy, index }: { caseStudy: typeof caseStudies[0]; inde
           transition={{ duration: 0.4 }}
         />
 
-        {/* Image */}
         <div className="relative aspect-[16/10] overflow-hidden bg-background">
-          <motion.img
+          <OptimizedImage
             src={caseStudy.image}
             alt={caseStudy.title}
-            className="w-full h-full object-cover"
-            animate={{ scale: isHovered ? 1.08 : 1 }}
-            transition={{ duration: 0.7 }}
+            className="w-full h-full"
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-card via-card/70 to-transparent" />
           
