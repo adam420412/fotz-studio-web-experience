@@ -62,10 +62,26 @@ export default defineConfig(({ mode }) => ({
         ],
       },
       workbox: {
+        // Increase max file size limit to 5MB to handle large images
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        // Exclude large image files from precaching - they'll be cached at runtime
+        globIgnores: [
+          "**/backstage-*.png",
+          "**/concert-*.{jpg,png}",
+          "**/portrait-*.{jpg,png}",
+          "**/viz-1[7-9].png",
+          "**/viz-2[0-2].png",
+          "**/session-final-*.png",
+          "**/event-*.jpg",
+          "**/team-*.jpg",
+          "**/gabinet-*.jpg",
+          "**/konsultacja-*.jpg",
+          "**/conference-*.jpg",
+        ],
         // Cache strategies
         runtimeCaching: [
           {
-            // Cache images
+            // Cache images at runtime instead of precaching
             urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|avif)$/i,
             handler: "CacheFirst",
             options: {
@@ -146,8 +162,8 @@ export default defineConfig(({ mode }) => ({
             },
           },
         ],
-        // Precache critical assets
-        globPatterns: ["**/*.{js,css,html,ico,png,jpg,svg,woff2}"],
+        // Precache only critical assets (smaller files)
+        globPatterns: ["**/*.{js,css,html,ico,svg,woff2}"],
         // Skip waiting for faster updates
         skipWaiting: true,
         clientsClaim: true,
