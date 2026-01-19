@@ -6,10 +6,10 @@ import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
-// Import portfolio images
-import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
-import fpsCegielskiImg from "@/assets/portfolio/fps-cegielski.png";
-import rppgImg from "@/assets/portfolio/rppg.png";
+// Import WebP portfolio images with PNG fallbacks
+import eneaStadionWebp from "@/assets/portfolio/enea-stadion.webp";
+import fpsCegielskiWebp from "@/assets/portfolio/fps-cegielski.webp";
+import rppgWebp from "@/assets/portfolio/rppg.webp";
 
 const caseStudies = [
   {
@@ -18,7 +18,7 @@ const caseStudies = [
     category: "Social Media & Events",
     description:
       "Kompleksowa obsługa marketingowa największego kompleksu sportowego w Polsce. Strona www, Instagram, produkcja video.",
-    image: eneaStadionImg,
+    image: eneaStadionWebp,
     video: true,
     stats: [
       { icon: TrendingUp, label: "Zaangażowanie", value: "+340%" },
@@ -34,7 +34,7 @@ const caseStudies = [
     category: "Strony www",
     description:
       "Nowoczesna strona internetowa dla historycznej fabryki pojazdów szynowych z Poznania.",
-    image: fpsCegielskiImg,
+    image: fpsCegielskiWebp,
     video: false,
     featured: false,
     hasCase: true,
@@ -46,7 +46,7 @@ const caseStudies = [
     category: "Branding & Strategia",
     description:
       "Kompleksowy rebranding i nowa identyfikacja wizualna dla Rady Polskich Przedsiębiorców Globalnych.",
-    image: rppgImg,
+    image: rppgWebp,
     video: false,
     featured: false,
     hasCase: true,
