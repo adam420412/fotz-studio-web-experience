@@ -2,25 +2,22 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
-// Office images
+// Office images - using lighter WebP images only
 import officeStairs from "@/assets/office/office-stairs.webp";
 import officeSign from "@/assets/office/office-sign.webp";
 import officeLounge from "@/assets/office/office-lounge.webp";
 import officeWorkspace from "@/assets/office/office-workspace.webp";
 import officeDining from "@/assets/office/office-dining.webp";
 
-// Team images
-import teamWork2 from "@/assets/team/team-work-2.jpg";
-import teamMeeting3 from "@/assets/team/team-meeting-3.jpg";
-import teamBrainstorm2 from "@/assets/team/team-brainstorm-2.jpg";
-
+// Use only lightweight office images - removed heavy 2MB team photos
 const officeImages = [
   { src: officeStairs, alt: "Wejście do biura Fotz Studio", category: "Biuro" },
-  { src: teamWork2, alt: "Zespół przy pracy", category: "Zespół" },
+  { src: officeLounge, alt: "Strefa relaksu Fotz Studio", category: "Biuro" },
   { src: officeSign, alt: "Tabliczka Fotz Studio HOFA", category: "Biuro" },
-  { src: teamMeeting3, alt: "Spotkanie zespołu", category: "Zespół" },
-  { src: teamBrainstorm2, alt: "Burza mózgów", category: "Zespół" },
+  { src: officeWorkspace, alt: "Przestrzeń robocza", category: "Biuro" },
+  { src: officeDining, alt: "Kuchnia biurowa", category: "Biuro" },
 ];
 
 interface OfficeGalleryProps {
@@ -64,13 +61,13 @@ export function OfficeGallery({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="group relative aspect-[3/4] rounded-xl overflow-hidden"
+            className="group relative aspect-[3/4] rounded-xl overflow-hidden"
             >
-              <img
+              <OptimizedImage
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
+                className="w-full h-full"
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4">

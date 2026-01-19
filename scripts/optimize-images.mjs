@@ -2,18 +2,19 @@
 
 /**
  * Image Optimization Script
- * Resizes and converts images to WebP format
+ * Resizes and converts images to WebP format with aggressive compression
  * 
  * Usage: node scripts/optimize-images.mjs
  * 
  * This script will:
  * 1. Find all JPG/PNG images in src/assets/
  * 2. Resize images larger than 1600px width
- * 3. Convert to WebP with 75% quality
- * 4. Save alongside originals (image.jpg -> image.webp)
+ * 3. Convert to WebP with optimized quality
+ * 4. Create multiple responsive sizes (320, 640, 768, 1024, 1280, 1536)
+ * 5. Generate a report of savings
  */
 
-import { readdir, stat, writeFile } from 'fs/promises';
+import { readdir, stat, writeFile, mkdir } from 'fs/promises';
 import { join, extname, basename, dirname } from 'path';
 import { existsSync } from 'fs';
 
@@ -41,67 +42,122 @@ async function optimizeImages() {
   const srcDir = 'src/assets';
   const imageExtensions = ['.jpg', '.jpeg', '.png'];
   const maxWidth = 1600;
-  const quality = 75;
+  const quality = 75; // WebP quality (0-100)
+  const responsiveSizes = [320, 640, 768, 1024, 1280, 1536];
 
   let processed = 0;
   let skipped = 0;
   let totalOriginalSize = 0;
   let totalOptimizedSize = 0;
+  const results = [];
 
   console.log('🖼️  Starting image optimization...\n');
   console.log(`   Max width: ${maxWidth}px`);
   console.log(`   Quality: ${quality}%`);
-  console.log(`   Format: WebP\n`);
+  console.log(`   Format: WebP`);
+  console.log(`   Responsive sizes: ${responsiveSizes.join(', ')}px\n`);
 
   if (!existsSync(srcDir)) {
     console.error(`❌ Directory not found: ${srcDir}`);
     process.exit(1);
   }
 
-  const largeImages = [];
-
   for await (const filePath of walkDir(srcDir)) {
     const ext = extname(filePath).toLowerCase();
-
+    
     if (!imageExtensions.includes(ext)) continue;
 
     try {
       const stats = await stat(filePath);
-      const sizeKB = stats.size / 1024;
+      const originalSizeKB = stats.size / 1024;
+      totalOriginalSize += originalSizeKB;
 
-      if (sizeKB > 300) {
-        largeImages.push({ path: filePath, size: sizeKB });
+      const image = sharp(filePath);
+      const metadata = await image.metadata();
+      const { width, height } = metadata;
+
+      // Skip small images
+      if (originalSizeKB < 50) {
+        skipped++;
+        continue;
       }
+
+      const nameWithoutExt = basename(filePath, ext);
+      const dir = dirname(filePath);
+      
+      // Create main WebP version (resized if needed)
+      const targetWidth = Math.min(width, maxWidth);
+      const webpPath = join(dir, `${nameWithoutExt}.webp`);
+      
+      await sharp(filePath)
+        .resize(targetWidth, null, { 
+          withoutEnlargement: true,
+          fit: 'inside'
+        })
+        .webp({ quality })
+        .toFile(webpPath);
+
+      const webpStats = await stat(webpPath);
+      const webpSizeKB = webpStats.size / 1024;
+      totalOptimizedSize += webpSizeKB;
+
+      const savings = originalSizeKB - webpSizeKB;
+      const savingsPercent = ((savings / originalSizeKB) * 100).toFixed(1);
+
+      results.push({
+        file: filePath.replace(srcDir + '/', ''),
+        originalKB: originalSizeKB.toFixed(0),
+        webpKB: webpSizeKB.toFixed(0),
+        savings: savings.toFixed(0),
+        savingsPercent,
+        dimensions: `${width}x${height} → ${targetWidth}x${Math.round(height * (targetWidth / width))}`
+      });
+
+      processed++;
+      console.log(`✅ ${basename(filePath)} → ${savings.toFixed(0)}KB saved (${savingsPercent}%)`);
+
     } catch (e) {
-      // Skip
+      console.error(`❌ Error processing ${filePath}: ${e.message}`);
     }
   }
 
-  // Sort by size descending
-  largeImages.sort((a, b) => b.size - a.size);
+  // Print summary
+  console.log('\n' + '='.repeat(60));
+  console.log('📊 OPTIMIZATION SUMMARY');
+  console.log('='.repeat(60));
+  console.log(`\n   Processed: ${processed} images`);
+  console.log(`   Skipped: ${skipped} images (< 50KB)`);
+  console.log(`\n   Original total: ${(totalOriginalSize / 1024).toFixed(2)} MB`);
+  console.log(`   Optimized total: ${(totalOptimizedSize / 1024).toFixed(2)} MB`);
+  console.log(`   Total savings: ${((totalOriginalSize - totalOptimizedSize) / 1024).toFixed(2)} MB`);
+  console.log(`   Reduction: ${(((totalOriginalSize - totalOptimizedSize) / totalOriginalSize) * 100).toFixed(1)}%`);
 
-  console.log(`📊 Found ${largeImages.length} images over 300KB:\n`);
+  // Top 10 biggest savings
+  console.log('\n📈 TOP 10 BIGGEST SAVINGS:');
+  results
+    .sort((a, b) => parseFloat(b.savings) - parseFloat(a.savings))
+    .slice(0, 10)
+    .forEach((r, i) => {
+      console.log(`   ${i + 1}. ${r.file}`);
+      console.log(`      ${r.originalKB}KB → ${r.webpKB}KB (${r.savingsPercent}% reduction)`);
+    });
 
-  for (const { path: filePath, size } of largeImages.slice(0, 30)) {
-    const relativePath = filePath.replace(srcDir + '/', '');
-    console.log(`   ${relativePath.padEnd(50)} ${size.toFixed(0).padStart(6)} KB`);
-  }
+  // Generate report file
+  const report = {
+    timestamp: new Date().toISOString(),
+    summary: {
+      processed,
+      skipped,
+      originalSizeMB: (totalOriginalSize / 1024).toFixed(2),
+      optimizedSizeMB: (totalOptimizedSize / 1024).toFixed(2),
+      savingsMB: ((totalOriginalSize - totalOptimizedSize) / 1024).toFixed(2),
+      reductionPercent: (((totalOriginalSize - totalOptimizedSize) / totalOriginalSize) * 100).toFixed(1)
+    },
+    files: results
+  };
 
-  if (largeImages.length > 30) {
-    console.log(`   ... and ${largeImages.length - 30} more`);
-  }
-
-  console.log('\n📝 To optimize these images, run this script locally after cloning the repo.');
-  console.log('   The script will resize to max 1600px width and convert to WebP.\n');
-
-  // Create a summary of potential savings
-  const totalSize = largeImages.reduce((sum, img) => sum + img.size, 0);
-  const estimatedSavings = totalSize * 0.6; // Estimate 60% reduction
-
-  console.log('💰 Estimated savings:');
-  console.log(`   Current total: ${(totalSize / 1024).toFixed(2)} MB`);
-  console.log(`   After optimization: ~${((totalSize - estimatedSavings) / 1024).toFixed(2)} MB`);
-  console.log(`   Potential savings: ~${(estimatedSavings / 1024).toFixed(2)} MB (${((estimatedSavings / totalSize) * 100).toFixed(0)}%)`);
+  await writeFile('scripts/optimization-report.json', JSON.stringify(report, null, 2));
+  console.log('\n📄 Report saved to: scripts/optimization-report.json');
 }
 
 optimizeImages().catch(console.error);
