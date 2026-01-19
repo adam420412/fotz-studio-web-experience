@@ -9,8 +9,72 @@
     <meta name="keywords" content="agencja marketingowa, marketing Poznań, strony internetowe Poznań, social media, kampanie reklamowe, lead generation, marketing premium" />
     <link rel="canonical" href="https://fotz.pl" />
     
+    <!-- Critical CSS - inline for instant above-the-fold render -->
+    <style>
+      /* Reset & Base */
+      *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+      html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+      body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#0d0d0d;color:#fff;line-height:1.6;min-height:100vh;overflow-x:hidden}
+      
+      /* CSS Variables - Dark mode defaults */
+      :root{
+        --background:0 0% 5%;
+        --foreground:0 0% 100%;
+        --primary:336 71% 27%;
+        --card:0 0% 8%;
+        --border:0 0% 15%;
+        --muted-foreground:0 0% 65%;
+      }
+      
+      /* Hero section critical styles */
+      .hero-section{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+      .hero-bg{position:absolute;inset:0;z-index:0}
+      .hero-bg img{width:100%;height:100%;object-fit:cover}
+      .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(13,13,13,0.4),rgba(13,13,13,0.6),rgba(13,13,13,1));z-index:1}
+      .hero-content{position:relative;z-index:2;text-align:center;padding:6rem 1.5rem 2rem;max-width:80rem;margin:0 auto}
+      
+      /* Typography */
+      h1{font-family:'Syne',sans-serif;font-weight:700;font-size:clamp(1.5rem,5vw,4.5rem);line-height:1.15;margin-bottom:1rem}
+      .text-gradient{background:linear-gradient(135deg,hsl(336,71%,45%),hsl(292,36%,35%),hsl(209,69%,35%));-webkit-background-clip:text;background-clip:text;color:transparent}
+      
+      /* Badge */
+      .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;padding:0.625rem 1.25rem;border-radius:9999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);margin-bottom:2rem;font-size:0.875rem}
+      .pulse-dot{width:0.5rem;height:0.5rem;background:hsl(336,71%,45%);border-radius:50%;animation:pulse 2s infinite}
+      @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+      
+      /* Buttons */
+      .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:1rem 2rem;border-radius:0.75rem;font-weight:600;font-size:1rem;text-decoration:none;transition:all 0.3s ease}
+      .btn-primary{background:linear-gradient(135deg,hsl(336,71%,27%),hsl(336,71%,35%));color:#fff;border:none}
+      .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.3)}
+      .btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(117,20,63,0.4)}
+      .btn-outline:hover{border-color:rgba(255,255,255,0.6);background:rgba(255,255,255,0.05)}
+      
+      /* Stats */
+      .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
+      .stat-item{text-align:center}
+      .stat-value{font-family:'Syne',sans-serif;font-size:clamp(1.5rem,4vw,2.5rem);font-weight:700}
+      .stat-label{font-size:0.75rem;color:rgba(255,255,255,0.6);margin-top:0.25rem}
+      
+      /* Animations */
+      @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+      @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+      .animate-fade-in{animation:fadeIn 0.5s ease-out forwards}
+      .animate-fade-in-up{animation:fadeInUp 0.6s ease-out forwards}
+      .animation-delay-200{animation-delay:200ms}
+      .animation-delay-300{animation-delay:300ms}
+      .animation-delay-500{animation-delay:500ms}
+      
+      /* Loading state */
+      #root:empty{display:flex;align-items:center;justify-content:center;min-height:100vh}
+      #root:empty::after{content:'';width:2rem;height:2rem;border:2px solid rgba(117,20,63,0.3);border-top-color:hsl(336,71%,45%);border-radius:50%;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      
+      /* Navbar placeholder */
+      .nav-placeholder{position:fixed;top:0;left:0;right:0;height:5rem;background:rgba(13,13,13,0.8);backdrop-filter:blur(12px);z-index:50;border-bottom:1px solid rgba(255,255,255,0.05)}
+    </style>
+
     <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#A11B52" />
+    <meta name="theme-color" content="#75143F" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Fotz Studio" />
@@ -34,9 +98,11 @@
     <!-- Preload critical assets for LCP -->
     <link rel="preload" href="/hero-poster.jpg" as="image" type="image/jpeg" fetchpriority="high" />
     <link rel="preload" href="/logo-fotz.jpg" as="image" type="image/jpeg" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Google Fonts - loaded with display=swap for non-blocking render -->
+    <!-- Google Fonts - loaded async for non-blocking render -->
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" /></noscript>
