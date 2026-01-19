@@ -54,17 +54,20 @@ export function Hero() {
 
   return (
     <section ref={containerRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Static Background Image - Critical LCP element */}
+      {/* Static Background Image - Critical LCP element with WebP */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
-        <img
-          src="/hero-poster.jpg"
-          alt=""
-          className="w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
-          decoding="sync"
-        />
+        <picture>
+          <source srcSet="/hero-poster.webp" type="image/webp" />
+          <img
+            src="/hero-poster.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+          />
+        </picture>
       </div>
 
       {/* Static Background Elements */}
