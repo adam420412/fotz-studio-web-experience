@@ -7,6 +7,8 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Reduce build output verbosity
+  logLevel: "warn",
   server: {
     host: "::",
     port: 8080,
