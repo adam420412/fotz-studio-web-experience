@@ -22,13 +22,23 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ["react", "react-dom", "react-router-dom"],
-          ui: ["framer-motion"],
+          // Core React
+          vendor: ["react", "react-dom"],
+          router: ["react-router-dom"],
+          // UI libraries - separate chunks
+          motion: ["framer-motion"],
+          // Supabase
+          supabase: ["@supabase/supabase-js"],
+          // Heavy libraries
+          charts: ["recharts"],
+          lottie: ["@lottiefiles/dotlottie-react"],
         },
       },
     },
     minify: "esbuild",
     chunkSizeWarningLimit: 1500,
     assetsInlineLimit: 4096,
+    target: "esnext",
+    cssCodeSplit: true,
   },
 }));
