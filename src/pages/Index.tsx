@@ -1,8 +1,7 @@
-import { useState, useEffect, lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
-import { Preloader } from "@/components/Preloader";
 import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 
 // Lazy load sections below the fold for better LCP
@@ -27,20 +26,6 @@ const SectionLoader = () => (
 );
 
 const Index = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Prevent scroll during preloader
-    if (isLoading) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isLoading]);
-
   return (
     <>
       <Helmet>
@@ -57,11 +42,10 @@ const Index = () => {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="pl_PL" />
         {/* Preload critical LCP image */}
-        <link rel="preload" href="/hero-poster.jpg" as="image" />
+        <link rel="preload" href="/hero-poster.jpg" as="image" fetchPriority="high" />
       </Helmet>
       <LocalBusinessSchema />
       <OrganizationSchema />
-      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       <Layout>
         <Hero />
         <Suspense fallback={<SectionLoader />}>
