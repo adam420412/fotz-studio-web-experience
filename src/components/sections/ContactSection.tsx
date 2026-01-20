@@ -18,7 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { FadeInView } from "@/components/FadeInView";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-
+import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 // Validation schema
 const contactSchema = z.object({
   name: z.string()
@@ -110,18 +110,57 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
     
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Wiadomość wysłana!",
-      description: "Odezwiemy się w ciągu 24 godzin.",
-    });
-    
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setErrors({});
-    setTouched({});
-    setIsSubmitting(false);
+    try {
+      // Send to Web3Forms
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          subject: `Nowe zapytanie od ${formData.name}${city ? ` (${city})` : ''}`,
+          from_name: "Fotz Studio - Kontakt",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "Nie podano",
+          message: formData.message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!data.success) {
+        throw new Error("Błąd podczas wysyłania wiadomości");
+      }
+
+      // Send to CRM webhook (fire-and-forget)
+      sendLeadToCRM({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || undefined,
+        source: city ? `fotz.pl - ${city}` : "fotz.pl/kontakt-sekcja",
+        notes: formData.message,
+      });
+
+      toast({
+        title: "Wiadomość wysłana!",
+        description: "Odezwiemy się w ciągu 24 godzin.",
+      });
+      
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setErrors({});
+      setTouched({});
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Błąd wysyłania",
+        description: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
