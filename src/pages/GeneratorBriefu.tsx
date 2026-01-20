@@ -242,6 +242,17 @@ export default function GeneratorBriefu() {
 
       const data = await response.json();
       if (data.success) {
+        // Send to CRM webhook (fire and forget)
+        const { sendLeadToCRM } = await import("@/hooks/useCRMWebhook");
+        sendLeadToCRM({
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone || undefined,
+          company: formData.companyName,
+          source: "fotz.pl/generator-briefu",
+          notes: `Typ projektu: ${projectTypes.find(p => p.value === formData.projectType)?.label}\nBranża: ${formData.industry}\nBudżet: ${budgets.find(b => b.value === formData.budget)?.label}\nTermin: ${deadlines.find(d => d.value === formData.deadline)?.label}\nCele: ${formData.goals.join(", ")}\n\nOpis: ${formData.description}`,
+        });
+        
         setIsSubmitted(true);
       }
     } catch (error) {
