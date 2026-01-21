@@ -2,61 +2,18 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { useRef, useEffect, useState } from "react";
 
 export function Hero() {
   const { t } = useLanguage();
-  const containerRef = useRef<HTMLElement>(null);
-  const [counts, setCounts] = useState([1000000, 160, 12]); // Start with final values for mobile
-  const [isMobile, setIsMobile] = useState(true);
 
   const stats = [
-    { value: 1000000, suffix: "+", label: t("Wyświetleń treści miesięcznie", "Monthly content views"), display: "1M" },
-    { value: 160, suffix: "+", label: t("Opinii na Google", "Google reviews"), display: "160" },
-    { value: 12, suffix: "+", label: t("Lat doświadczenia", "Years of experience"), display: "12" },
+    { value: "1M+", label: t("Wyświetleń treści miesięcznie", "Monthly content views") },
+    { value: "160+", label: t("Opinii na Google", "Google reviews") },
+    { value: "12+", label: t("Lat doświadczenia", "Years of experience") },
   ];
 
-  // Check if mobile on mount
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768);
-    checkMobile();
-    
-    // Only run animation on desktop
-    if (window.innerWidth >= 768) {
-      setCounts([0, 0, 0]);
-      
-      const timer = setTimeout(() => {
-        const duration = 2000;
-        const steps = 60;
-        const interval = duration / steps;
-        
-        let step = 0;
-        const animationTimer = setInterval(() => {
-          step++;
-          const progress = Math.min(step / steps, 1);
-          const eased = 1 - Math.pow(1 - progress, 3);
-          
-          setCounts([
-            Math.floor(eased * 1000000),
-            Math.floor(eased * 160),
-            Math.floor(eased * 12),
-          ]);
-          
-          if (step >= steps) clearInterval(animationTimer);
-        }, interval);
-      }, 300);
-      
-      return () => clearTimeout(timer);
-    }
-  }, []);
-
-  const formatNumber = (num: number, index: number) => {
-    if (index === 0) return num >= 1000000 ? "1M" : `${Math.floor(num / 1000)}K`;
-    return num.toString();
-  };
-
   return (
-    <section ref={containerRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Static Background Image - Critical LCP element with WebP */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
@@ -74,7 +31,7 @@ export function Hero() {
       </div>
 
       {/* Static Background Elements - Hidden on mobile */}
-      <div className="absolute inset-0 z-5 pointer-events-none hidden md:block">
+      <div className="absolute inset-0 z-5 pointer-events-none hidden lg:block">
         <div 
           className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full blur-[150px] opacity-50"
           style={{ background: "hsl(var(--primary) / 0.15)" }}
@@ -85,13 +42,12 @@ export function Hero() {
         />
       </div>
 
-      {/* Content - CSS animations only, no framer-motion */}
+      {/* Content - no animations for fastest render */}
       <div className="relative z-20 container-wide px-6 md:px-12 text-center pt-24">
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
-          <div className="animate-fade-in inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-card/80 backdrop-blur-sm border border-border/50 mb-8">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-card/80 backdrop-blur-sm border border-border/50 mb-8">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
             <span className="text-sm text-foreground font-medium">
@@ -121,7 +77,7 @@ export function Hero() {
             <Button variant="hero" size="xl" asChild className="group w-full sm:w-auto min-w-[200px] sm:min-w-[220px] text-sm sm:text-base">
               <Link to="/kontakt">
                 <span>{t("Bezpłatna konsultacja", "Free consultation")}</span>
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-2" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </Button>
             <Button variant="heroOutline" size="xl" asChild className="group w-full sm:w-auto min-w-[200px] sm:min-w-[220px] text-sm sm:text-base">
@@ -132,12 +88,12 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Stats - instant on mobile, animated on desktop */}
+          {/* Stats - static, no animation */}
           <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20 pt-8 sm:pt-10 md:pt-12 border-t border-border/30">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2">
-                  {formatNumber(counts[index], index)}{stat.suffix}
+                  {stat.value}
                 </div>
                 <div className="text-xs sm:text-sm text-foreground/60">{stat.label}</div>
               </div>
@@ -147,9 +103,9 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator - hidden on mobile */}
-      <div className="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-2">
+      <div className="hidden lg:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-2">
         <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2">
-          <div className="w-1.5 h-1.5 rounded-full bg-primary animate-scroll-indicator" />
+          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
         </div>
       </div>
     </section>
