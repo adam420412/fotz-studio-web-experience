@@ -1,7 +1,6 @@
 import { ReactNode, lazy, Suspense, useEffect, useState } from "react";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { PageProgressBar } from "../PageProgressBar";
 
 // Lazy load non-critical widgets - they're not needed for initial render
 const FloatingCTA = lazy(() => import("../FloatingCTA").then(m => ({ default: m.FloatingCTA })));
@@ -14,18 +13,17 @@ interface LayoutProps {
 }
 
 export function Layout({ children }: LayoutProps) {
-  // Defer loading of widgets until after initial render
+  // Defer loading of widgets until after initial render - increased delay for mobile
   const [loadWidgets, setLoadWidgets] = useState(false);
 
   useEffect(() => {
-    // Load widgets after 2 seconds to prioritize content
-    const timer = setTimeout(() => setLoadWidgets(true), 2000);
+    // Load widgets after 4 seconds to prioritize content on mobile
+    const timer = setTimeout(() => setLoadWidgets(true), 4000);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <PageProgressBar />
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />

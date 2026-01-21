@@ -146,6 +146,25 @@
     scroll-padding-top: 100px;
   }
 
+  /* MOBILE PERFORMANCE: Disable all animations on mobile and tablets */
+  @media (max-width: 1024px) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-delay: 0ms !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Also respect user preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-delay: 0ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);

@@ -18,11 +18,9 @@ const HomeFAQ = lazy(() => import("@/components/sections/HomeFAQ").then(m => ({ 
 const NewsletterSection = lazy(() => import("@/components/sections/NewsletterSection").then(m => ({ default: m.NewsletterSection })));
 const FinalCTA = lazy(() => import("@/components/sections/FinalCTA").then(m => ({ default: m.FinalCTA })));
 
-// Minimal loading fallback
+// Ultra minimal loading fallback - no spinner
 const SectionLoader = () => (
-  <div className="py-24 flex items-center justify-center">
-    <div className="w-8 h-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-  </div>
+  <div className="py-16 md:py-24" />
 );
 
 const Index = () => {

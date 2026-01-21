@@ -189,11 +189,9 @@ const Redirect301 = lazy(() => import("./components/seo/Redirect301").then(m => 
 
 const queryClient = new QueryClient();
 
-// Minimal page loader
+// Ultra minimal page loader - just a subtle fade
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-background">
-    <div className="w-8 h-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
-  </div>
+  <div className="min-h-screen bg-background" />
 );
 
 const App = () => (
