@@ -7,8 +7,8 @@ import { useRef, useEffect, useState } from "react";
 export function Hero() {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
-  const [countersVisible, setCountersVisible] = useState(false);
-  const [counts, setCounts] = useState([0, 0, 0]);
+  const [counts, setCounts] = useState([1000000, 160, 12]); // Start with final values for mobile
+  const [isMobile, setIsMobile] = useState(true);
 
   const stats = [
     { value: 1000000, suffix: "+", label: t("Wyświetleń treści miesięcznie", "Monthly content views"), display: "1M" },
@@ -16,36 +16,39 @@ export function Hero() {
     { value: 12, suffix: "+", label: t("Lat doświadczenia", "Years of experience"), display: "12" },
   ];
 
-  // Simple counter animation without framer-motion
+  // Check if mobile on mount
   useEffect(() => {
-    const timer = setTimeout(() => setCountersVisible(true), 300);
-    return () => clearTimeout(timer);
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    
+    // Only run animation on desktop
+    if (window.innerWidth >= 768) {
+      setCounts([0, 0, 0]);
+      
+      const timer = setTimeout(() => {
+        const duration = 2000;
+        const steps = 60;
+        const interval = duration / steps;
+        
+        let step = 0;
+        const animationTimer = setInterval(() => {
+          step++;
+          const progress = Math.min(step / steps, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          
+          setCounts([
+            Math.floor(eased * 1000000),
+            Math.floor(eased * 160),
+            Math.floor(eased * 12),
+          ]);
+          
+          if (step >= steps) clearInterval(animationTimer);
+        }, interval);
+      }, 300);
+      
+      return () => clearTimeout(timer);
+    }
   }, []);
-
-  useEffect(() => {
-    if (!countersVisible) return;
-    
-    const duration = 2000;
-    const steps = 60;
-    const interval = duration / steps;
-    
-    let step = 0;
-    const timer = setInterval(() => {
-      step++;
-      const progress = Math.min(step / steps, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      
-      setCounts([
-        Math.floor(eased * 1000000),
-        Math.floor(eased * 160),
-        Math.floor(eased * 12),
-      ]);
-      
-      if (step >= steps) clearInterval(timer);
-    }, interval);
-    
-    return () => clearInterval(timer);
-  }, [countersVisible]);
 
   const formatNumber = (num: number, index: number) => {
     if (index === 0) return num >= 1000000 ? "1M" : `${Math.floor(num / 1000)}K`;
@@ -70,8 +73,8 @@ export function Hero() {
         </picture>
       </div>
 
-      {/* Static Background Elements */}
-      <div className="absolute inset-0 z-5 pointer-events-none">
+      {/* Static Background Elements - Hidden on mobile */}
+      <div className="absolute inset-0 z-5 pointer-events-none hidden md:block">
         <div 
           className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full blur-[150px] opacity-50"
           style={{ background: "hsl(var(--primary) / 0.15)" }}
@@ -98,7 +101,7 @@ export function Hero() {
           </div>
 
           {/* Heading */}
-          <h1 className="animate-fade-in-up text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.15] mb-4 md:mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold leading-[1.15] mb-4 md:mb-6">
             {t("Agencja Marketingowa,", "Marketing Agency")}
             <span className="block mt-1 sm:mt-2 text-gradient-premium">
               {t("która projektuje realny wzrost firm", "that designs real business growth")}
@@ -106,15 +109,15 @@ export function Hero() {
           </h1>
 
           {/* Subheading */}
-          <p className="animate-fade-in-up animation-delay-200 text-base sm:text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-8 md:mb-10 px-2">
+          <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-8 md:mb-10 px-2">
             {t(
               "Wybierz agencję marketingową, która rozumie Twoje cele biznesowe. Z nami zyskasz partnera, który zadba o Twój marketing internetowy, zwiększy przychód i zbuduje silną świadomość marki.",
               "Choose a marketing agency that understands your business goals. With us, you gain a partner who will take care of your internet marketing, increase revenue, and build strong brand awareness."
             )}
           </p>
 
-          {/* CTA Buttons - no MagneticButton overhead */}
-          <div className="animate-fade-in-up animation-delay-300 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-4">
             <Button variant="hero" size="xl" asChild className="group w-full sm:w-auto min-w-[200px] sm:min-w-[220px] text-sm sm:text-base">
               <Link to="/kontakt">
                 <span>{t("Bezpłatna konsultacja", "Free consultation")}</span>
@@ -129,26 +132,24 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Stats - native JS counter */}
-          <div className="animate-fade-in-up animation-delay-500 grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20 pt-8 sm:pt-10 md:pt-12 border-t border-border/30">
+          {/* Stats - instant on mobile, animated on desktop */}
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-12 sm:mt-16 md:mt-20 pt-8 sm:pt-10 md:pt-12 border-t border-border/30">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center hover:scale-105 transition-transform duration-300">
-                <div className="text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2">
+              <div key={index} className="text-center">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-gradient-premium mb-2">
                   {formatNumber(counts[index], index)}{stat.suffix}
                 </div>
-                <div className="text-sm text-foreground/60">{stat.label}</div>
+                <div className="text-xs sm:text-sm text-foreground/60">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* Scroll Indicator - CSS only */}
-      <div className="animate-fade-in animation-delay-700 absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
-        <div className="flex flex-col items-center gap-2">
-          <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-primary animate-scroll-indicator" />
-          </div>
+      {/* Scroll Indicator - hidden on mobile */}
+      <div className="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex-col items-center gap-2">
+        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex justify-center pt-2">
+          <div className="w-1.5 h-1.5 rounded-full bg-primary animate-scroll-indicator" />
         </div>
       </div>
     </section>
