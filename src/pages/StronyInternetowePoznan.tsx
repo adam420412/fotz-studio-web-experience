@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -181,15 +181,12 @@ const StronyInternetowePoznan = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Poznań | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Strony internetowe Poznań. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Poznania." 
-        />
-        <meta name="keywords" content="strony internetowe poznań, tworzenie stron www poznań, projektowanie stron poznań, sklepy internetowe poznań, strona internetowa poznań, www poznań" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-poznan" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Poznań | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Poznań. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Poznania."
+        canonical="https://fotz.pl/strony-internetowe-poznan"
+        keywords="strony internetowe poznań, tworzenie stron www poznań, projektowanie stron poznań, sklepy internetowe poznań, strona internetowa poznań, www poznań"
+      />
       
       <ServiceSchema 
         name="Strony Internetowe Poznań - Projektowanie i Tworzenie Stron WWW"

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -75,12 +75,12 @@ const StronyInternetoweElblag = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Elbląg | Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Elbląg. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Elbląga." />
-        <meta name="keywords" content="strony internetowe elbląg, tworzenie stron www elbląg, projektowanie stron elbląg" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-elblag" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Elbląg | Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Elbląg. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Elbląga."
+        canonical="https://fotz.pl/strony-internetowe-elblag"
+        keywords="strony internetowe elbląg, tworzenie stron www elbląg, projektowanie stron elbląg"
+      />
       
       <ServiceSchema name="Strony Internetowe Elbląg" description="Tworzenie stron internetowych dla firm z Elbląga." provider="FOTZ Studio" areaServed="Elbląg" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Elbląg", url: "https://fotz.pl/strony-internetowe-elblag" }]} />

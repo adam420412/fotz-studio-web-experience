@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweTorun = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Toruń | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Toruń. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Torunia." />
-        <meta name="keywords" content="strony internetowe toruń, tworzenie stron www toruń, projektowanie stron toruń, sklepy internetowe toruń" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-torun" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Toruń | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Toruń. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Torunia."
+        canonical="https://fotz.pl/strony-internetowe-torun"
+        keywords="strony internetowe toruń, tworzenie stron www toruń, projektowanie stron toruń, sklepy internetowe toruń"
+      />
       
       <ServiceSchema name="Strony Internetowe Toruń" description="Profesjonalne tworzenie stron internetowych dla firm z Torunia." provider="FOTZ Studio" areaServed="Toruń" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Toruń", url: "https://fotz.pl/strony-internetowe-torun" }]} />

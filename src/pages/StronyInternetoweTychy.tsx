@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -84,12 +84,12 @@ const StronyInternetoweTychy = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Tychy | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Tychy. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tychów." />
-        <meta name="keywords" content="strony internetowe tychy, tworzenie stron www tychy, projektowanie stron tychy, sklepy internetowe tychy" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-tychy" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Tychy | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Tychy. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tychów."
+        canonical="https://fotz.pl/strony-internetowe-tychy"
+        keywords="strony internetowe tychy, tworzenie stron www tychy, projektowanie stron tychy, sklepy internetowe tychy"
+      />
       
       <ServiceSchema name="Strony Internetowe Tychy" description="Profesjonalne tworzenie stron internetowych dla firm z Tychów." provider="FOTZ Studio" areaServed="Tychy" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Tychy", url: "https://fotz.pl/strony-internetowe-tychy" }]} />

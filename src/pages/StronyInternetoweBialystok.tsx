@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -82,12 +82,12 @@ const StronyInternetoweBialystok = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Białystok | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Białystok. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Białegostoku." />
-        <meta name="keywords" content="strony internetowe białystok, tworzenie stron www białystok, projektowanie stron białystok, sklepy internetowe białystok" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-bialystok" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Białystok | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Białystok. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Białegostoku."
+        canonical="https://fotz.pl/strony-internetowe-bialystok"
+        keywords="strony internetowe białystok, tworzenie stron www białystok, projektowanie stron białystok, sklepy internetowe białystok"
+      />
       
       <ServiceSchema name="Strony Internetowe Białystok" description="Profesjonalne tworzenie stron internetowych dla firm z Białegostoku." provider="FOTZ Studio" areaServed="Białystok" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Białystok", url: "https://fotz.pl/strony-internetowe-bialystok" }]} />

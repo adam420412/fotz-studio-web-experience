@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweSzczecin = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Szczecin | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Szczecin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm ze Szczecina." />
-        <meta name="keywords" content="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-szczecin" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Szczecin | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Szczecin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm ze Szczecina."
+        canonical="https://fotz.pl/strony-internetowe-szczecin"
+        keywords="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin"
+      />
       
       <ServiceSchema name="Strony Internetowe Szczecin" description="Profesjonalne tworzenie stron internetowych dla firm ze Szczecina." provider="FOTZ Studio" areaServed="Szczecin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Szczecin", url: "https://fotz.pl/strony-internetowe-szczecin" }]} />

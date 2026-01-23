@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweOlsztyn = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Olsztyn | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Olsztyn. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Olsztyna." />
-        <meta name="keywords" content="strony internetowe olsztyn, tworzenie stron www olsztyn, projektowanie stron olsztyn, sklepy internetowe olsztyn" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-olsztyn" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Olsztyn | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Olsztyn. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Olsztyna."
+        canonical="https://fotz.pl/strony-internetowe-olsztyn"
+        keywords="strony internetowe olsztyn, tworzenie stron www olsztyn, projektowanie stron olsztyn, sklepy internetowe olsztyn"
+      />
       
       <ServiceSchema name="Strony Internetowe Olsztyn" description="Profesjonalne tworzenie stron internetowych dla firm z Olsztyna." provider="FOTZ Studio" areaServed="Olsztyn" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Olsztyn", url: "https://fotz.pl/strony-internetowe-olsztyn" }]} />

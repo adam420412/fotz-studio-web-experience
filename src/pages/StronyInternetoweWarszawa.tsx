@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -171,15 +171,12 @@ const StronyInternetoweWarszawa = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Warszawa | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Strony internetowe Warszawa. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Warszawy." 
-        />
-        <meta name="keywords" content="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-warszawa" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Warszawa | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Warszawa. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Warszawy."
+        canonical="https://fotz.pl/strony-internetowe-warszawa"
+        keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa"
+      />
       
       <ServiceSchema 
         name="Strony Internetowe Warszawa - Projektowanie i Tworzenie Stron WWW"

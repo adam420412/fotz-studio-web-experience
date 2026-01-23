@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweGdansk = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Gdańsk | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Gdańsk. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Trójmiasta." />
-        <meta name="keywords" content="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-gdansk" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Gdańsk | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Gdańsk. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Trójmiasta."
+        canonical="https://fotz.pl/strony-internetowe-gdansk"
+        keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk"
+      />
       
       <ServiceSchema name="Strony Internetowe Gdańsk" description="Profesjonalne tworzenie stron internetowych dla firm z Gdańska i Trójmiasta." provider="FOTZ Studio" areaServed="Gdańsk" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Gdańsk", url: "https://fotz.pl/strony-internetowe-gdansk" }]} />

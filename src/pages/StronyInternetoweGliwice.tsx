@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -84,12 +84,12 @@ const StronyInternetoweGliwice = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Gliwice | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Gliwice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Gliwic." />
-        <meta name="keywords" content="strony internetowe gliwice, tworzenie stron www gliwice, projektowanie stron gliwice, sklepy internetowe gliwice" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-gliwice" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Gliwice | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Gliwice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Gliwic."
+        canonical="https://fotz.pl/strony-internetowe-gliwice"
+        keywords="strony internetowe gliwice, tworzenie stron www gliwice, projektowanie stron gliwice, sklepy internetowe gliwice"
+      />
       
       <ServiceSchema name="Strony Internetowe Gliwice" description="Profesjonalne tworzenie stron internetowych dla firm z Gliwic." provider="FOTZ Studio" areaServed="Gliwice" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Gliwice", url: "https://fotz.pl/strony-internetowe-gliwice" }]} />

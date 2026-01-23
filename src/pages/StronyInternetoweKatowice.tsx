@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -129,15 +129,12 @@ const StronyInternetoweKatowice = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Katowice | Tworzenie Stron WWW | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Strony internetowe Katowice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Katowic i Śląska." 
-        />
-        <meta name="keywords" content="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-katowice" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Katowice | Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Katowice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Katowic i Śląska."
+        canonical="https://fotz.pl/strony-internetowe-katowice"
+        keywords="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice"
+      />
       
       <ServiceSchema 
         name="Strony Internetowe Katowice - Tworzenie Stron WWW"

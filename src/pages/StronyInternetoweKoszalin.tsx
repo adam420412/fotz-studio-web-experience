@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -84,12 +84,12 @@ const StronyInternetoweKoszalin = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Koszalin | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Koszalin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Koszalina." />
-        <meta name="keywords" content="strony internetowe koszalin, tworzenie stron www koszalin, projektowanie stron koszalin, sklepy internetowe koszalin" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-koszalin" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Koszalin | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Koszalin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Koszalina."
+        canonical="https://fotz.pl/strony-internetowe-koszalin"
+        keywords="strony internetowe koszalin, tworzenie stron www koszalin, projektowanie stron koszalin, sklepy internetowe koszalin"
+      />
       
       <ServiceSchema name="Strony Internetowe Koszalin" description="Profesjonalne tworzenie stron internetowych dla firm z Koszalina." provider="FOTZ Studio" areaServed="Koszalin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Koszalin", url: "https://fotz.pl/strony-internetowe-koszalin" }]} />

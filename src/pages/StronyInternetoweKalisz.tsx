@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -75,12 +75,12 @@ const StronyInternetoweKalisz = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Kalisz | Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Kalisz. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Kalisza." />
-        <meta name="keywords" content="strony internetowe kalisz, tworzenie stron www kalisz, projektowanie stron kalisz" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-kalisz" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Kalisz | Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Kalisz. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Kalisza."
+        canonical="https://fotz.pl/strony-internetowe-kalisz"
+        keywords="strony internetowe kalisz, tworzenie stron www kalisz, projektowanie stron kalisz"
+      />
       
       <ServiceSchema name="Strony Internetowe Kalisz" description="Tworzenie stron internetowych dla firm z Kalisza." provider="FOTZ Studio" areaServed="Kalisz" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Kalisz", url: "https://fotz.pl/strony-internetowe-kalisz" }]} />

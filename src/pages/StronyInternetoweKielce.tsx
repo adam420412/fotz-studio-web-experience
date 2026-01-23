@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweKielce = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Kielce | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Kielce. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kielc." />
-        <meta name="keywords" content="strony internetowe kielce, tworzenie stron www kielce, projektowanie stron kielce, sklepy internetowe kielce" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-kielce" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Kielce | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Kielce. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kielc."
+        canonical="https://fotz.pl/strony-internetowe-kielce"
+        keywords="strony internetowe kielce, tworzenie stron www kielce, projektowanie stron kielce, sklepy internetowe kielce"
+      />
       
       <ServiceSchema name="Strony Internetowe Kielce" description="Profesjonalne tworzenie stron internetowych dla firm z Kielc." provider="FOTZ Studio" areaServed="Kielce" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Kielce", url: "https://fotz.pl/strony-internetowe-kielce" }]} />

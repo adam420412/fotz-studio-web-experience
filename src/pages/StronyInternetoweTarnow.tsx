@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweTarnow = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Tarnów | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Tarnów. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tarnowa." />
-        <meta name="keywords" content="strony internetowe tarnów, tworzenie stron www tarnów, projektowanie stron tarnów, sklepy internetowe tarnów" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-tarnow" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Tarnów | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Tarnów. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tarnowa."
+        canonical="https://fotz.pl/strony-internetowe-tarnow"
+        keywords="strony internetowe tarnów, tworzenie stron www tarnów, projektowanie stron tarnów, sklepy internetowe tarnów"
+      />
       
       <ServiceSchema name="Strony Internetowe Tarnów" description="Profesjonalne tworzenie stron internetowych dla firm z Tarnowa." provider="FOTZ Studio" areaServed="Tarnów" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Tarnów", url: "https://fotz.pl/strony-internetowe-tarnow" }]} />

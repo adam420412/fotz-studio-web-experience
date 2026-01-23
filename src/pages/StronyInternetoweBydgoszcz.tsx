@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -127,15 +127,12 @@ const StronyInternetoweBydgoszcz = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Bydgoszcz | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Strony internetowe Bydgoszcz. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Bydgoszczy i okolic." 
-        />
-        <meta name="keywords" content="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-bydgoszcz" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Bydgoszcz | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Bydgoszcz. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Bydgoszczy i okolic."
+        canonical="https://fotz.pl/strony-internetowe-bydgoszcz"
+        keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz"
+      />
       
       <ServiceSchema 
         name="Strony Internetowe Bydgoszcz - Projektowanie i Tworzenie Stron WWW"
