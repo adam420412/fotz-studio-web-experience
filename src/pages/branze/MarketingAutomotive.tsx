@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Car, ArrowRight, CheckCircle, Camera, Video, Globe, TrendingUp, Star, Gauge, Wrench, Users, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingAutomotive = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Branży Motoryzacyjnej | Salony, Dealerzy, Serwisy | Fotz Studio</title>
-        <meta name="description" content="Marketing dla branży motoryzacyjnej - strony dla dealerów, fotografia samochodów, spoty reklamowe, kampanie leadowe. Zwiększ sprzedaż w salonie." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/automotive" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Branży Motoryzacyjnej | Salony, Dealerzy, Serwisy | Fotz Studio"
+        description="Marketing dla branży motoryzacyjnej - strony dla dealerów, fotografia samochodów, spoty reklamowe, kampanie leadowe. Zwiększ sprzedaż w salonie."
+        canonical="https://fotz.pl/dla-kogo/automotive"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

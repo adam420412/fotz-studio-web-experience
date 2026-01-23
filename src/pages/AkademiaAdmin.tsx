@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Navigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { SEOHead } from '@/components/seo/SEOHead';
 import { motion } from 'framer-motion';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
 import { useAdminMaterials, MaterialFormData, AcademyMaterial } from '@/hooks/useAdminMaterials';
@@ -416,10 +416,12 @@ const AkademiaAdmin = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Panel Administracyjny | Akademia FOTZ</title>
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+      <SEOHead
+        title="Panel Administracyjny | Akademia FOTZ"
+        description="Panel administracyjny Akademii FOTZ"
+        canonical="https://fotz.pl/akademia/admin"
+        noIndex={true}
+      />
 
       <div className="min-h-screen bg-background">
         <div className="max-w-7xl mx-auto px-4 py-8">

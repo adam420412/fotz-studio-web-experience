@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { GraduationCap, ArrowRight, CheckCircle, Users, Globe, Video, TrendingUp, BookOpen, Calendar, Award, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingEdukacja = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Edukacji | Szkoły, Uczelnie, Kursy | Fotz Studio</title>
-        <meta name="description" content="Marketing dla placówek edukacyjnych - strony dla szkół, kampanie rekrutacyjne, e-learning. Zwiększ liczbę zgłoszeń i buduj prestiż placówki." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/edukacja" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Edukacji | Szkoły, Uczelnie, Kursy | Fotz Studio"
+        description="Marketing dla placówek edukacyjnych - strony dla szkół, kampanie rekrutacyjne, e-learning. Zwiększ liczbę zgłoszeń i buduj prestiż placówki."
+        canonical="https://fotz.pl/dla-kogo/edukacja"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

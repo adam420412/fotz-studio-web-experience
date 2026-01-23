@@ -12,7 +12,7 @@ import {
   Award,
   Sparkles
 } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
+import { SEOHead } from '@/components/seo/SEOHead';
 import logoFotz from '@/assets/logo-fotz.png';
 
 // Sample product covers for marquee - reduced for performance
@@ -51,13 +51,11 @@ const benefits = [
 export default function AkademiaLanding() {
   return (
     <Layout>
-      <Helmet>
-        <title>Akademia FOTZ - Praktyczna Wiedza Marketingowa | E-booki i Kursy</title>
-        <meta 
-          name="description" 
-          content="Gotowe materiały marketingowe dla Twojego biznesu. E-booki, kursy wideo, checklisty i strategie. Subskrypcja 99 PLN/miesiąc. Dołącz do Akademii FOTZ."
-        />
-      </Helmet>
+      <SEOHead
+        title="Akademia FOTZ - Praktyczna Wiedza Marketingowa | E-booki i Kursy"
+        description="Gotowe materiały marketingowe dla Twojego biznesu. E-booki, kursy wideo, checklisty i strategie. Subskrypcja 99 PLN/miesiąc. Dołącz do Akademii FOTZ."
+        canonical="https://fotz.pl/akademia"
+      />
 
       {/* Top Banner */}
       <div className="bg-gradient-brand-premium py-3 px-4">

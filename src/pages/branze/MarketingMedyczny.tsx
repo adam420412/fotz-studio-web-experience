@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Heart, ArrowRight, CheckCircle, Calendar, Shield, Users, TrendingUp, Star, Phone, Stethoscope, ClipboardList, Clock, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -98,11 +98,11 @@ const MarketingMedyczny = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Branży Medycznej | Gabinety, Kliniki, Lekarze | Fotz Studio</title>
-        <meta name="description" content="Marketing dla branży medycznej - systemy rezerwacji online, strony WWW dla gabinetów, SEO medyczne. Kampanie zgodne z prawem. Zwiększ liczbę pacjentów." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/branza-medyczna" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Branży Medycznej | Gabinety, Kliniki, Lekarze | Fotz Studio"
+        description="Marketing dla branży medycznej - systemy rezerwacji online, strony WWW dla gabinetów, SEO medyczne. Kampanie zgodne z prawem. Zwiększ liczbę pacjentów."
+        canonical="https://fotz.pl/dla-kogo/branza-medyczna"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

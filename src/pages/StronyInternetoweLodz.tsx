@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweLodz = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Łódź | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Łódź. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Łodzi." />
-        <meta name="keywords" content="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-lodz" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Łódź | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Łódź. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Łodzi."
+        canonical="https://fotz.pl/strony-internetowe-lodz"
+        keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź"
+      />
       
       <ServiceSchema name="Strony Internetowe Łódź" description="Profesjonalne tworzenie stron internetowych dla firm z Łodzi." provider="FOTZ Studio" areaServed="Łódź" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Łódź", url: "https://fotz.pl/strony-internetowe-lodz" }]} />

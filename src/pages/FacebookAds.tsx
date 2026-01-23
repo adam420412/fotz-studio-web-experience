@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
@@ -129,11 +129,11 @@ const FacebookAds = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Facebook Ads Poznań - Skuteczne kampanie reklamowe | Fotz Studio</title>
-        <meta name="description" content="Profesjonalne kampanie reklamowe na Facebook Ads. Zwiększ zasięg, generuj leady i sprzedaż dzięki precyzyjnemu targetowaniu. Agencja Facebook Ads Poznań." />
-        <link rel="canonical" href="https://fotz.pl/facebook-ads" />
-      </Helmet>
+      <SEOHead
+        title="Facebook Ads Poznań - Skuteczne kampanie reklamowe | Fotz Studio"
+        description="Profesjonalne kampanie reklamowe na Facebook Ads. Zwiększ zasięg, generuj leady i sprzedaż dzięki precyzyjnemu targetowaniu. Agencja Facebook Ads Poznań."
+        canonical="https://fotz.pl/facebook-ads"
+      />
 
       <ServiceSchema 
         name="Facebook Ads - Kampanie reklamowe"

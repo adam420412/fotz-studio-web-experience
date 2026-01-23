@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Code, ArrowRight, CheckCircle, Globe, Users, Rocket, TrendingUp, Database, Cloud, Cpu, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingIT = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla IT i SaaS | Software House, Startupy | Fotz Studio</title>
-        <meta name="description" content="Marketing dla firm IT i SaaS - strony dla software house, LinkedIn B2B, lead generation. Pozyskuj klientów enterprise i buduj markę technologiczną." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/it-saas" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla IT i SaaS | Software House, Startupy | Fotz Studio"
+        description="Marketing dla firm IT i SaaS - strony dla software house, LinkedIn B2B, lead generation. Pozyskuj klientów enterprise i buduj markę technologiczną."
+        canonical="https://fotz.pl/dla-kogo/it-saas"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

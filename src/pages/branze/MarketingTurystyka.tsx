@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Plane, ArrowRight, CheckCircle, Camera, Video, Globe, TrendingUp, MapPin, Calendar, Star, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -113,11 +113,11 @@ const MarketingTurystyka = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Turystyki | Hotele, Biura Podróży | Fotz Studio</title>
-        <meta name="description" content="Marketing dla turystyki - strony dla hoteli, systemy rezerwacji, wirtualne spacery 360°. Zwiększ rezerwacje bezpośrednie i buduj markę destynacji." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/turystyka" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Turystyki | Hotele, Biura Podróży | Fotz Studio"
+        description="Marketing dla turystyki - strony dla hoteli, systemy rezerwacji, wirtualne spacery 360°. Zwiększ rezerwacje bezpośrednie i buduj markę destynacji."
+        canonical="https://fotz.pl/dla-kogo/turystyka"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 
