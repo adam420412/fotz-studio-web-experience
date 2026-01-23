@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Building, ArrowRight, CheckCircle, Camera, Cuboid, Users, TrendingUp, Phone, MapPin, Video, Home, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingNieruchomosci = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Nieruchomości | Deweloperzy, Biura, Architekci | Fotz Studio</title>
-        <meta name="description" content="Marketing dla branży nieruchomości - wizualizacje 3D, spoty promocyjne, sesje zdjęciowe, kampanie lead generation. Sprzedawaj szybciej." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/nieruchomosci" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Nieruchomości | Deweloperzy, Biura, Architekci | Fotz Studio"
+        description="Marketing dla branży nieruchomości - wizualizacje 3D, spoty promocyjne, sesje zdjęciowe, kampanie lead generation. Sprzedawaj szybciej."
+        canonical="https://fotz.pl/dla-kogo/nieruchomosci"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

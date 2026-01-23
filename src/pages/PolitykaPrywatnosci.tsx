@@ -1,15 +1,15 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 
 export default function PolitykaPrywatnosci() {
   return (
     <>
-      <Helmet>
-        <title>Polityka Prywatności | Fotz Studio</title>
-        <meta name="description" content="Polityka prywatności Fotz Studio. Informacje o przetwarzaniu danych osobowych, cookies i prawach użytkowników zgodnie z RODO." />
-        <link rel="canonical" href="https://fotz.pl/polityka-prywatnosci" />
-      </Helmet>
+      <SEOHead
+        title="Polityka Prywatności | Fotz Studio"
+        description="Polityka prywatności Fotz Studio. Informacje o przetwarzaniu danych osobowych, cookies i prawach użytkowników zgodnie z RODO."
+        canonical="https://fotz.pl/polityka-prywatnosci"
+      />
       
       <Layout>
         <section className="pt-32 pb-20 bg-background">

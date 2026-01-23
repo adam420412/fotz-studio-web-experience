@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Scale, ArrowRight, CheckCircle, Shield, Globe, FileText, TrendingUp, Briefcase, Award, Lock, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingPrawoFinanse = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Prawników i Finansów | Kancelarie, Doradcy | Fotz Studio</title>
-        <meta name="description" content="Marketing dla kancelarii prawnych i firm finansowych - strony WWW, LinkedIn, content marketing. Kampanie zgodne z regulacjami. Buduj autorytet eksperta." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/prawo-finanse" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Prawników i Finansów | Kancelarie, Doradcy | Fotz Studio"
+        description="Marketing dla kancelarii prawnych i firm finansowych - strony WWW, LinkedIn, content marketing. Kampanie zgodne z regulacjami. Buduj autorytet eksperta."
+        canonical="https://fotz.pl/dla-kogo/prawo-finanse"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

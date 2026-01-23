@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { UtensilsCrossed, ArrowRight, CheckCircle, Camera, Star, Users, TrendingUp, Phone, ClipboardList, Smartphone, MapPin, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingGastronomia = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Gastronomii | Restauracje, Kawiarnie, Catering | Fotz Studio</title>
-        <meta name="description" content="Marketing dla restauracji i gastronomii - fotografia kulinarna, social media, systemy rezerwacji online. Zwiększ liczbę gości w lokalu." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/gastronomia" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Gastronomii | Restauracje, Kawiarnie, Catering | Fotz Studio"
+        description="Marketing dla restauracji i gastronomii - fotografia kulinarna, social media, systemy rezerwacji online. Zwiększ liczbę gości w lokalu."
+        canonical="https://fotz.pl/dla-kogo/gastronomia"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

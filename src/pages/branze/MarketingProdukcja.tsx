@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Factory, ArrowRight, CheckCircle, Globe, Camera, Video, TrendingUp, Cog, Package, Users, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingProdukcja = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Produkcji i Przemysłu | B2B Industrial | Fotz Studio</title>
-        <meta name="description" content="Marketing dla firm produkcyjnych - strony B2B, fotografia przemysłowa, filmy korporacyjne. Pozyskuj klientów i dystrybutorów dla swojego zakładu." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/produkcja" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Produkcji i Przemysłu | B2B Industrial | Fotz Studio"
+        description="Marketing dla firm produkcyjnych - strony B2B, fotografia przemysłowa, filmy korporacyjne. Pozyskuj klientów i dystrybutorów dla swojego zakładu."
+        canonical="https://fotz.pl/dla-kogo/produkcja"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

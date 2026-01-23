@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, ShoppingCart, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
@@ -40,11 +40,11 @@ const recommendations = [
 const CaseStudyCuteDumpling = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Cute as a Dumpling - Sklep z Ozdobami Świątecznymi | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja sklepu e-commerce dla Cute as a Dumpling - marki oferującej ręcznie robione ozdoby świąteczne. Design, UX i optymalizacja konwersji." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/cute-dumpling" />
-      </Helmet>
+      <SEOHead
+        title="Cute as a Dumpling - Sklep z Ozdobami Świątecznymi | Case Study | Fotz Studio"
+        description="Realizacja sklepu e-commerce dla Cute as a Dumpling - marki oferującej ręcznie robione ozdoby świąteczne. Design, UX i optymalizacja konwersji."
+        canonical="https://fotz.pl/realizacje/cute-dumpling"
+      />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },

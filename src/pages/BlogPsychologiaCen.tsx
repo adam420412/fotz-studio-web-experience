@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -32,12 +32,12 @@ const faqItems = [
 export default function BlogPsychologiaCen() {
   return (
     <Layout>
-      <Helmet>
-        <title>Psychologia cen - jak ustalać ceny, które sprzedają 2025 | FOTZ Studio</title>
-        <meta name="description" content="Psychologia cen w praktyce: kotwiczenie, charm pricing, decoy effect. Poznaj techniki cenowe, które zwiększają konwersję i wartość koszyka." />
-        <meta name="keywords" content="psychologia cen, pricing psychology, ustalanie cen, kotwiczenie cen, charm pricing, strategia cenowa" />
-        <link rel="canonical" href="https://fotz.pl/blog/psychologia-cen" />
-      </Helmet>
+      <SEOHead
+        title="Psychologia cen - jak ustalać ceny, które sprzedają 2025 | FOTZ Studio"
+        description="Psychologia cen w praktyce: kotwiczenie, charm pricing, decoy effect. Poznaj techniki cenowe, które zwiększają konwersję i wartość koszyka."
+        canonical="https://fotz.pl/blog/psychologia-cen"
+        keywords="psychologia cen, pricing psychology, ustalanie cen, kotwiczenie cen, charm pricing, strategia cenowa"
+      />
       <ArticleSchema
         title="Psychologia cen - jak ustalać ceny, które sprzedają"
         description="Psychologia cen w praktyce: kotwiczenie, charm pricing, decoy effect. Techniki cenowe zwiększające konwersję."

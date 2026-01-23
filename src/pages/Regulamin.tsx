@@ -1,15 +1,15 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 
 export default function Regulamin() {
   return (
     <>
-      <Helmet>
-        <title>Regulamin | Fotz Studio</title>
-        <meta name="description" content="Regulamin świadczenia usług Fotz Studio. Warunki współpracy, prawa i obowiązki stron." />
-        <link rel="canonical" href="https://fotz.pl/regulamin" />
-      </Helmet>
+      <SEOHead
+        title="Regulamin | Fotz Studio"
+        description="Regulamin świadczenia usług Fotz Studio. Warunki współpracy, prawa i obowiązki stron."
+        canonical="https://fotz.pl/regulamin"
+      />
       
       <Layout>
         <section className="pt-32 pb-20 bg-background">

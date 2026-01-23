@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Heart, ArrowRight, CheckCircle, Globe, Users, Video, TrendingUp, HandHeart, Megaphone, Target, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingNGO = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla NGO i Fundacji | Organizacje Pozarządowe | Fotz Studio</title>
-        <meta name="description" content="Marketing dla organizacji pozarządowych - strony dla fundacji, kampanie fundraisingowe, filmy społeczne. Zwiększ wpływy z darowizn i buduj społeczność." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/ngo" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla NGO i Fundacji | Organizacje Pozarządowe | Fotz Studio"
+        description="Marketing dla organizacji pozarządowych - strony dla fundacji, kampanie fundraisingowe, filmy społeczne. Zwiększ wpływy z darowizn i buduj społeczność."
+        canonical="https://fotz.pl/dla-kogo/ngo"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

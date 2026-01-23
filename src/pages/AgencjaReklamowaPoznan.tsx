@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone, Mail, MapPin, CheckCircle, Target, TrendingUp, Users, Lightbulb, BarChart3, Palette, Video, MessageSquare, Globe, Zap, Award, Clock, Shield, Play } from "lucide-react";
@@ -69,12 +69,12 @@ const AgencjaReklamowaPoznan = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Agencja Marketingowa Poznań: Partner reklamowy | Agencja reklamowa Poznań</title>
-        <meta name="description" content="Agencja reklamowa Poznań - Twój strategiczny partner w budowaniu silnej marki. Kompleksowe kampanie reklamowe, branding, Google Ads, Meta Ads. Fotz Studio." />
-        <meta name="keywords" content="agencja reklamowa poznań, agencja marketingowa poznań, reklama poznań, kampanie reklamowe, branding poznań, google ads poznań" />
-        <link rel="canonical" href="https://fotz.pl/agencja-reklamowa-poznan" />
-      </Helmet>
+      <SEOHead
+        title="Agencja Marketingowa Poznań: Partner reklamowy | Agencja reklamowa Poznań"
+        description="Agencja reklamowa Poznań - Twój strategiczny partner w budowaniu silnej marki. Kompleksowe kampanie reklamowe, branding, Google Ads, Meta Ads. Fotz Studio."
+        canonical="https://fotz.pl/agencja-reklamowa-poznan"
+        keywords="agencja reklamowa poznań, agencja marketingowa poznań, reklama poznań, kampanie reklamowe, branding poznań, google ads poznań"
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">

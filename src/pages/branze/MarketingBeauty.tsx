@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Sparkles, ArrowRight, CheckCircle, Calendar, Camera, Users, TrendingUp, Phone, Instagram, Scissors, Heart, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -95,11 +95,11 @@ const MarketingBeauty = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla Beauty & Wellness | Salony, SPA, Fryzjerzy | Fotz Studio</title>
-        <meta name="description" content="Marketing dla salonów kosmetycznych, fryzjerskich i SPA - Instagram, systemy rezerwacji, sesje metamorfoz. Przyciągnij więcej klientek." />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/beauty-wellness" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla Beauty & Wellness | Salony, SPA, Fryzjerzy | Fotz Studio"
+        description="Marketing dla salonów kosmetycznych, fryzjerskich i SPA - Instagram, systemy rezerwacji, sesje metamorfoz. Przyciągnij więcej klientek."
+        canonical="https://fotz.pl/dla-kogo/beauty-wellness"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 
