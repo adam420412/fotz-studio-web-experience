@@ -139,10 +139,10 @@ export default function Kontakt() {
   return (
     <Layout>
       <SEOHead
-        title="Kontakt - Umów Bezpłatną Konsultację | Fotz Studio Poznań"
-        description="Skontaktuj się z nami! Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Email: adam@fotz.pl. Umów bezpłatną konsultację marketingową online."
+        title="Kontakt | Fotz Studio Poznań"
+        description="Skontaktuj się z Fotz Studio. Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Umów bezpłatną konsultację."
         canonical="https://fotz.pl/kontakt"
-        keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań agencja, Plac Wolności 16"
+        keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"
       />
       <BreadcrumbSchema 
         items={[
@@ -348,18 +348,20 @@ export default function Kontakt() {
                 ))}
               </div>
 
-              {/* Map */}
+              {/* Map - lazy loaded for LCP optimization */}
               <div className="aspect-video rounded-xl sm:rounded-2xl overflow-hidden bg-secondary">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.0!2d16.9194!3d52.4082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDI0JzI5LjUiTiAxNsKwNTUnMTAuMCJF!5e0!3m2!1spl!2spl!4v1234567890"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Lokalizacja Fotz Studio"
-                />
+                {isVisible && (
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.0!2d16.9194!3d52.4082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDI0JzI5LjUiTiAxNsKwNTUnMTAuMCJF!5e0!3m2!1spl!2spl!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Lokalizacja Fotz Studio"
+                  />
+                )}
               </div>
 
               {/* CTA */}
