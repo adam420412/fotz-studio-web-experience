@@ -1,10 +1,9 @@
 import { Helmet } from "react-helmet-async";
-import { useLocation } from "react-router-dom";
 
 interface SEOHeadProps {
   title: string;
   description: string;
-  canonical?: string;
+  canonical: string; // Required - must be full URL like https://fotz.pl/path
   ogImage?: string;
   noIndex?: boolean;
   schemaJson?: object | object[];
@@ -15,7 +14,7 @@ interface SEOHeadProps {
 /**
  * SEO Head component using react-helmet-async that automatically adds:
  * - Title and meta description (truncated to 155 chars)
- * - Canonical URL based on current route (WITHOUT trailing slash - policy decision)
+ * - Canonical URL (must be provided as full URL)
  * - Open Graph tags
  * - Twitter Card tags
  * - Optional JSON-LD structured data
@@ -35,16 +34,10 @@ export function SEOHead({
   keywords,
   children,
 }: SEOHeadProps) {
-  const location = useLocation();
-  
-  // URL Policy: NO trailing slash (except homepage)
-  // Remove any trailing slashes from pathname
-  const cleanPath = location.pathname === "/" 
-    ? "" 
-    : location.pathname.replace(/\/+$/, "");
-  
-  // Canonical URL: use provided or generate from path
-  const canonicalUrl = canonical || `https://fotz.pl${cleanPath}`;
+  // Ensure canonical has no trailing slash (except for homepage)
+  const canonicalUrl = canonical === "https://fotz.pl/" 
+    ? "https://fotz.pl" 
+    : canonical.replace(/\/+$/, "");
   
   // Truncate description to 155 chars for meta (Google shows ~155-160)
   const metaDescription = description.length > 155 
