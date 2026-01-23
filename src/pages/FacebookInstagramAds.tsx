@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { Button } from "@/components/ui/button";
@@ -199,15 +199,12 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
 export default function FacebookInstagramAds() {
   return (
     <Layout>
-      <Helmet>
-        <title>Meta Ads - Facebook & Instagram Ads | Fotz Studio Poznań</title>
-        <meta 
-          name="description" 
-          content="Kompleksowa obsługa reklam Meta Ads - Facebook i Instagram w jednej strategii. Cross-platform retargeting, Advantage+ i synergia platform. Agencja Poznań." 
-        />
-        <meta name="keywords" content="meta ads, facebook ads, instagram ads, reklamy facebook, reklamy instagram, agencja meta, poznań" />
-        <link rel="canonical" href="https://fotz.pl/facebook-instagram-ads" />
-      </Helmet>
+      <SEOHead
+        title="Meta Ads - Facebook & Instagram Ads | Fotz Studio Poznań"
+        description="Kompleksowa obsługa reklam Meta Ads - Facebook i Instagram w jednej strategii. Cross-platform retargeting, Advantage+ i synergia platform. Agencja Poznań."
+        canonical="https://fotz.pl/facebook-instagram-ads"
+        keywords="meta ads, facebook ads, instagram ads, reklamy facebook, reklamy instagram, agencja meta, poznań"
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">

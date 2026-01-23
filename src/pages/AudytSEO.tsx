@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -259,15 +259,12 @@ export default function AudytSEO() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Darmowy Audyt SEO Online | Sprawdź swoją stronę | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Sprawdź optymalizację SEO swojej strony za darmo. Automatyczny audyt analizuje title, meta description, nagłówki, Open Graph i więcej. Otrzymaj raport z rekomendacjami."
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://fotz.pl/audyt-seo" />
-      </Helmet>
+      <SEOHead
+        title="Darmowy Audyt SEO Online | Sprawdź swoją stronę | Fotz Studio"
+        description="Sprawdź optymalizację SEO swojej strony za darmo. Automatyczny audyt analizuje title, meta description, nagłówki, Open Graph i więcej. Otrzymaj raport z rekomendacjami."
+        canonical="https://fotz.pl/audyt-seo"
+        keywords="audyt seo, darmowy audyt seo, analiza seo, optymalizacja seo, sprawdź seo strony"
+      />
 
       <section className="py-16 md:py-24 min-h-screen">
         <div className="container-wide section-padding">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Video, Shield, Smartphone, Car } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
 
@@ -40,11 +40,11 @@ const recommendations = [
 const CaseStudyVictoryCars = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Victory Cars - Dealer Samochodów Premium Poznań | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Victory Cars - dealera samochodów premium w Poznaniu. Katalog pojazdów, SEO i produkcja foto/video." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/victory-cars" />
-      </Helmet>
+      <SEOHead
+        title="Victory Cars - Dealer Samochodów Premium Poznań | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Victory Cars - dealera samochodów premium w Poznaniu. Katalog pojazdów, SEO i produkcja foto/video."
+        canonical="https://fotz.pl/realizacje/victory-cars"
+      />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },

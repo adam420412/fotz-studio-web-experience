@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
@@ -129,11 +129,12 @@ const GoogleAds = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Google Ads Poznań - Skuteczne kampanie reklamowe SEM | Fotz Studio</title>
-        <meta name="description" content="Profesjonalne kampanie Google Ads. Zwiększ sprzedaż dzięki reklamom w wyszukiwarce Google, sieci reklamowej i YouTube. Agencja Google Ads Poznań." />
-        <link rel="canonical" href="https://fotz.pl/google-ads" />
-      </Helmet>
+      <SEOHead
+        title="Google Ads Poznań - Skuteczne kampanie reklamowe SEM | Fotz Studio"
+        description="Profesjonalne kampanie Google Ads. Zwiększ sprzedaż dzięki reklamom w wyszukiwarce Google, sieci reklamowej i YouTube. Agencja Google Ads Poznań."
+        canonical="https://fotz.pl/google-ads"
+        keywords="google ads, kampanie google, reklama google, sem, ppc, agencja google ads poznań"
+      />
 
       <ServiceSchema 
         name="Google Ads - Kampanie SEM"

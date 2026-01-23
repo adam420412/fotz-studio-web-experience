@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -150,14 +150,12 @@ export default function ContentMarketing() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Content Marketing - Definicja, Zalety i Strategia SEO | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Co to jest content marketing? Poznaj definicję, zalety marketingu treści i dowiedz się jak mierzyć efekty kampanii SEO. Kompleksowy przewodnik content marketingowy."
-        />
-        <link rel="canonical" href="https://fotz.pl/content-marketing" />
-      </Helmet>
+      <SEOHead
+        title="Content Marketing - Definicja, Zalety i Strategia SEO | Fotz Studio"
+        description="Co to jest content marketing? Poznaj definicję, zalety marketingu treści i dowiedz się jak mierzyć efekty kampanii SEO. Kompleksowy przewodnik content marketingowy."
+        canonical="https://fotz.pl/content-marketing"
+        keywords="content marketing, marketing treści, strategia content marketing, seo content, blog firmowy"
+      />
 
       <OrganizationSchema />
       <WebPageSchema

@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { HelpCircle, MessageCircle, Phone, Mail, Globe, Palette, TrendingUp, Video, ShoppingCart, Users, MapPin } from "lucide-react";
@@ -180,14 +180,12 @@ const allFaqs = faqCategories.flatMap((cat) =>
 export default function FAQ() {
   return (
     <Layout>
-      <Helmet>
-        <title>FAQ - Najczęściej zadawane pytania | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Odpowiedzi na najczęściej zadawane pytania o usługi Fotz Studio: strony internetowe, social media, reklamy, branding, produkcja video i e-commerce."
-        />
-        <link rel="canonical" href="https://fotz.pl/faq" />
-      </Helmet>
+      <SEOHead
+        title="FAQ - Najczęściej zadawane pytania | Fotz Studio"
+        description="Odpowiedzi na najczęściej zadawane pytania o usługi Fotz Studio: strony internetowe, social media, reklamy, branding, produkcja video i e-commerce."
+        canonical="https://fotz.pl/faq"
+        keywords="faq fotz studio, pytania i odpowiedzi, pomoc, kontakt"
+      />
 
       <FAQSchema items={allFaqs} />
 

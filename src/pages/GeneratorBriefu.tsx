@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -790,15 +790,12 @@ DANE KONTAKTOWE:
 
   return (
     <Layout>
-      <Helmet>
-        <title>Generator Briefu Projektowego | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Stwórz profesjonalny brief projektowy w 5 minut. Wieloetapowy formularz pomoże Ci określić cele, budżet i oczekiwania dla Twojego projektu marketingowego."
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://fotz.pl/generator-briefu" />
-      </Helmet>
+      <SEOHead
+        title="Generator Briefu Projektowego | Fotz Studio"
+        description="Stwórz profesjonalny brief projektowy w 5 minut. Wieloetapowy formularz pomoże Ci określić cele, budżet i oczekiwania dla Twojego projektu marketingowego."
+        canonical="https://fotz.pl/generator-briefu"
+        keywords="generator briefu, brief projektowy, brief marketingowy, brief online"
+      />
 
       <section className="py-16 md:py-24 min-h-screen">
         <div className="container-wide section-padding">

@@ -314,7 +314,7 @@ export default function BlogBrandingStartupy() {
                     </tr>
                     <tr>
                       <td className="py-3 px-4 flex items-center gap-2">
-                        <div className="w-4 h-4 rounded-full bg-gray-900"></div>
+                        <div className="w-4 h-4 rounded-full bg-foreground"></div>
                         Czarny
                       </td>
                       <td className="py-3 px-4">Elegancja, siła</td>
