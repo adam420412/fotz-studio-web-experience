@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { Building2, ShoppingBag, Crown, CalendarDays, ArrowRight, CheckCircle } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
 
 const audiences = [
@@ -79,15 +79,12 @@ export default function DlaKogo() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Dla kogo pracujemy - Marketing dla branż | Fotz Studio</title>
-        <meta name="description" content="Marketing dopasowany do Twojej branży: firmy lokalne, e-commerce, marki premium, instytucje. Strategie i narzędzia dostosowane do specyfiki biznesu." />
-        <meta name="keywords" content="marketing dla firm, marketing branżowy, agencja marketingowa, marketing B2B, marketing e-commerce" />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo" />
-        <meta property="og:title" content="Dla kogo pracujemy | Fotz Studio" />
-        <meta property="og:description" content="Marketing dopasowany do Twojej branży - strategie dla firm lokalnych, e-commerce, marek premium i instytucji." />
-        <meta property="og:url" content="https://fotz.pl/dla-kogo" />
-      </Helmet>
+      <SEOHead
+        title="Dla kogo pracujemy - Marketing dla branż | Fotz Studio"
+        description="Marketing dopasowany do Twojej branży: firmy lokalne, e-commerce, marki premium, instytucje. Strategie i narzędzia dostosowane do specyfiki biznesu."
+        canonical="https://fotz.pl/dla-kogo"
+        keywords="marketing dla firm, marketing branżowy, agencja marketingowa, marketing B2B, marketing e-commerce"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

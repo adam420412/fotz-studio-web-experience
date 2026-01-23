@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Video, Users, TrendingUp, Zap, BarChart3, CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
@@ -28,15 +28,12 @@ const faqItems = [
 const BlogReelsVsTikTok = () => {
   return (
     <>
-      <Helmet>
-        <title>Instagram Reels vs TikTok - gdzie publikować wideo w 2025? | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki? Analiza algorytmów, zasięgów i strategii content marketingu." 
-        />
-        <meta name="keywords" content="Instagram Reels, TikTok, krótkie wideo, social media, porównanie platform, vertical video, content marketing" />
-        <link rel="canonical" href="https://fotz.pl/blog/instagram-reels-vs-tiktok" />
-      </Helmet>
+      <SEOHead
+        title="Instagram Reels vs TikTok - gdzie publikować wideo w 2025? | Fotz Studio"
+        description="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki? Analiza algorytmów, zasięgów i strategii content marketingu."
+        canonical="https://fotz.pl/blog/instagram-reels-vs-tiktok"
+        keywords="Instagram Reels, TikTok, krótkie wideo, social media, porównanie platform, vertical video, content marketing"
+      />
       <ArticleSchema
         title="Instagram Reels vs TikTok - gdzie publikować wideo w 2025?"
         description="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki?"

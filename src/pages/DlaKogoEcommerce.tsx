@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { ShoppingBag, ArrowRight, CheckCircle, TrendingUp, BarChart3, RefreshCcw, Zap, Star, Phone, Target, Plus, Minus, Cuboid, ExternalLink } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState, lazy, Suspense } from "react";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
@@ -118,14 +118,12 @@ export default function DlaKogoEcommerce() {
   
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla e-commerce | Sklepy internetowe | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Zwiększamy sprzedaż w sklepach internetowych. Performance marketing, optymalizacja konwersji, remarketing. Średni ROAS 8.5x dla naszych klientów."
-        />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/ecommerce" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla e-commerce | Sklepy internetowe | Fotz Studio"
+        description="Zwiększamy sprzedaż w sklepach internetowych. Performance marketing, optymalizacja konwersji, remarketing. Średni ROAS 8.5x dla naszych klientów."
+        canonical="https://fotz.pl/dla-kogo/ecommerce"
+        keywords="marketing e-commerce, sklepy internetowe, performance marketing, ROAS, CRO"
+      />
       
       <OrganizationSchema />
       <ServiceSchema 

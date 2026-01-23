@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Mail, Users, TrendingUp, Target, Zap, BarChart3, CheckCircle2, AlertCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -32,15 +32,12 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 const BlogEmailMarketing = () => {
   return (
     <>
-      <Helmet>
-        <title>Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny poradnik email marketingu. Jak budować listę mailingową, tworzyć skuteczne kampanie i zwiększać konwersję w 2025 roku." 
-        />
-        <meta name="keywords" content="email marketing, lista mailingowa, newsletter, kampanie email, automatyzacja email, konwersja, lead magnet" />
-        <link rel="canonical" href="https://fotz.pl/blog/email-marketing-2025" />
-      </Helmet>
+      <SEOHead
+        title="Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję | Fotz Studio"
+        description="Kompletny poradnik email marketingu. Jak budować listę mailingową, tworzyć skuteczne kampanie i zwiększać konwersję w 2025 roku."
+        canonical="https://fotz.pl/blog/email-marketing-2025"
+        keywords="email marketing, lista mailingowa, newsletter, kampanie email, automatyzacja email, konwersja, lead magnet"
+      />
       <ArticleSchema
         title="Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję"
         description="Kompletny poradnik email marketingu. Strategie budowania listy i zwiększania konwersji."

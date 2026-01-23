@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
@@ -28,15 +28,12 @@ const faqItems = [
 const BlogKampaniaReklamowa = () => {
   return (
     <>
-      <Helmet>
-        <title>Kampania Reklamowa i Marketingowa: Przykłady i Definicja | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok oraz strategie Google Ads i TikTok." 
-        />
-        <meta name="keywords" content="kampania reklamowa, kampania marketingowa, Google Ads, TikTok, social media, reklama, marketing" />
-        <link rel="canonical" href="https://fotz.pl/blog/kampania-reklamowa-marketingowa" />
-      </Helmet>
+      <SEOHead
+        title="Kampania Reklamowa i Marketingowa: Przykłady i Definicja | Fotz Studio"
+        description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok oraz strategie Google Ads i TikTok."
+        canonical="https://fotz.pl/blog/kampania-reklamowa-marketingowa"
+        keywords="kampania reklamowa, kampania marketingowa, Google Ads, TikTok, social media, reklama, marketing"
+      />
       <ArticleSchema
         title="Kampania Reklamowa i Marketingowa: Przykłady i Definicja"
         description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok."

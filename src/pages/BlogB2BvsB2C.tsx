@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, Users, Building2, Target, TrendingUp, Megaphone, ShoppingCart } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -33,12 +33,12 @@ const faqItems = [
 export default function BlogB2BvsB2C() {
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing B2B vs B2C - różnice, strategie i kanały 2025 | FOTZ Studio</title>
-        <meta name="description" content="Marketing B2B vs B2C: kluczowe różnice w strategii, kanałach i komunikacji. Dowiedz się, jak dostosować marketing do swojego modelu biznesowego." />
-        <meta name="keywords" content="marketing b2b, marketing b2c, b2b vs b2c, strategia b2b, sprzedaż b2b, lead generation b2b" />
-        <link rel="canonical" href="https://fotz.pl/blog/marketing-b2b-vs-b2c" />
-      </Helmet>
+      <SEOHead
+        title="Marketing B2B vs B2C - różnice, strategie i kanały 2025 | FOTZ Studio"
+        description="Marketing B2B vs B2C: kluczowe różnice w strategii, kanałach i komunikacji. Dowiedz się, jak dostosować marketing do swojego modelu biznesowego."
+        canonical="https://fotz.pl/blog/marketing-b2b-vs-b2c"
+        keywords="marketing b2b, marketing b2c, b2b vs b2c, strategia b2b, sprzedaż b2b, lead generation b2b"
+      />
       <ArticleSchema
         title="Marketing B2B vs B2C - kluczowe różnice i strategie"
         description="Marketing B2B vs B2C: kluczowe różnice w strategii, kanałach i komunikacji. Jak dostosować marketing do modelu biznesowego."
