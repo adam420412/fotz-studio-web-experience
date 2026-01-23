@@ -1,21 +1,24 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
 interface SEOHeadProps {
   title: string;
   description: string;
-  keywords?: string;
+  canonical?: string;
   ogImage?: string;
-  noindex?: boolean;
+  noIndex?: boolean;
+  schemaJson?: object | object[];
+  keywords?: string;
   children?: React.ReactNode;
 }
 
 /**
- * SEO Head component that automatically adds:
+ * SEO Head component using react-helmet-async that automatically adds:
  * - Title and meta description (truncated to 155 chars)
  * - Canonical URL based on current route (WITHOUT trailing slash - policy decision)
  * - Open Graph tags
  * - Twitter Card tags
+ * - Optional JSON-LD structured data
  * 
  * URL Policy: https://fotz.pl/path (NO trailing slash)
  * - Matches sitemap.xml format
@@ -25,9 +28,11 @@ interface SEOHeadProps {
 export function SEOHead({
   title,
   description,
-  keywords,
+  canonical,
   ogImage = "https://fotz.pl/og-image.jpg",
-  noindex = false,
+  noIndex = false,
+  schemaJson,
+  keywords,
   children,
 }: SEOHeadProps) {
   const location = useLocation();
@@ -38,8 +43,8 @@ export function SEOHead({
     ? "" 
     : location.pathname.replace(/\/+$/, "");
   
-  // Canonical URL: always https://fotz.pl/path (no trailing slash)
-  const canonicalUrl = `https://fotz.pl${cleanPath}`;
+  // Canonical URL: use provided or generate from path
+  const canonicalUrl = canonical || `https://fotz.pl${cleanPath}`;
   
   // Truncate description to 155 chars for meta (Google shows ~155-160)
   const metaDescription = description.length > 155 
@@ -58,7 +63,7 @@ export function SEOHead({
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={canonicalUrl} />
       
-      {noindex && <meta name="robots" content="noindex, nofollow" />}
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
       
       {/* Open Graph */}
       <meta property="og:title" content={metaTitle} />
@@ -74,6 +79,17 @@ export function SEOHead({
       <meta name="twitter:title" content={metaTitle} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={ogImage} />
+      
+      {/* JSON-LD Structured Data */}
+      {schemaJson && (
+        Array.isArray(schemaJson) 
+          ? schemaJson.map((schema, index) => (
+              <script key={index} type="application/ld+json">
+                {JSON.stringify(schema)}
+              </script>
+            ))
+          : <script type="application/ld+json">{JSON.stringify(schemaJson)}</script>
+      )}
       
       {children}
     </Helmet>

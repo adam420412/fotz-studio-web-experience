@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import { Globe, Video, Target, Crown, ArrowRight, CheckCircle, Play, Sparkles, Volume2, VolumeX, Maximize2 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -7,6 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { VideoLightbox } from "@/components/VideoLightbox";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
 
 // Portfolio images for each service
@@ -422,15 +422,11 @@ export default function Uslugi() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Usługi Marketingowe - Strony www, Social Media, Reklama | Fotz Studio</title>
-        <meta name="description" content="Kompleksowe usługi marketingowe: tworzenie stron internetowych, social media marketing, kampanie reklamowe Google Ads i Facebook Ads, SEO i branding." />
-        <meta name="keywords" content="usługi marketingowe, strony internetowe, social media marketing, kampanie reklamowe, Google Ads, Facebook Ads, SEO, branding, agencja marketingowa" />
-        <link rel="canonical" href="https://fotz.pl/uslugi" />
-        <meta property="og:title" content="Usługi Marketingowe | Fotz Studio" />
-        <meta property="og:description" content="Kompleksowe usługi marketingowe: strony www, social media, kampanie reklamowe, SEO i branding." />
-        <meta property="og:url" content="https://fotz.pl/uslugi" />
-      </Helmet>
+      <SEOHead
+        title="Usługi Marketingowe - Strony www, Social Media, Reklama | Fotz Studio"
+        description="Kompleksowe usługi marketingowe: tworzenie stron internetowych, social media marketing, kampanie reklamowe Google Ads i Facebook Ads, SEO i branding."
+        keywords="usługi marketingowe, strony internetowe, social media marketing, kampanie reklamowe, Google Ads, Facebook Ads, SEO, branding, agencja marketingowa"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
