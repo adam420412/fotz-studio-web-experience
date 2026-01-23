@@ -189,7 +189,7 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
   const { ref, displayValue } = useCountUp({ end: value, duration: 2000 });
   return (
     <div ref={ref} className="text-center">
-      <div className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <div className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#75143F] via-[#422249] to-[#0F3053] bg-clip-text text-transparent">
         {displayValue}{suffix}
       </div>
       <p className="text-muted-foreground mt-2 text-sm md:text-base">{label}</p>
@@ -223,25 +223,25 @@ export default function FacebookInstagramAds() {
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/20" />
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-pink-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
         </div>
         
         <div className="container-wide relative z-10 text-center py-20 md:py-32">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="p-3 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-800">
+            <div className="p-3 rounded-2xl bg-gradient-to-br from-[#1877F2] to-[#0D65D9]">
               <Facebook className="w-8 h-8 text-white" />
             </div>
             <span className="text-2xl font-bold text-muted-foreground">+</span>
-            <div className="p-3 rounded-2xl bg-gradient-to-br from-pink-500 via-purple-500 to-orange-400">
+            <div className="p-3 rounded-2xl bg-gradient-to-br from-[#E4405F] via-[#C13584] to-[#F77737]">
               <Instagram className="w-8 h-8 text-white" />
             </div>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">
               Meta Ads
             </span>
             <br />
@@ -254,7 +254,7 @@ export default function FacebookInstagramAds() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:opacity-90" asChild>
+            <Button size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90" asChild>
               <Link to="/kontakt">Zamów bezpłatną konsultację</Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
@@ -341,7 +341,7 @@ export default function FacebookInstagramAds() {
                 key={index}
                 className="p-6 rounded-xl border border-border bg-card hover:border-primary/50 transition-all"
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500/20 to-pink-500/20 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4">
                   <item.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
@@ -403,7 +403,7 @@ export default function FacebookInstagramAds() {
               >
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="px-4 py-1 rounded-full bg-gradient-to-r from-blue-600 to-pink-600 text-white text-sm font-medium">
+                    <span className="px-4 py-1 rounded-full bg-gradient-to-r from-[#75143F] to-[#0F3053] text-white text-sm font-medium">
                       Najpopularniejszy
                     </span>
                   </div>
@@ -427,7 +427,7 @@ export default function FacebookInstagramAds() {
                 </ul>
                 
                 <Button 
-                  className={`w-full ${pkg.popular ? "bg-gradient-to-r from-blue-600 to-pink-600 hover:opacity-90" : ""}`}
+                  className={`w-full ${pkg.popular ? "bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90" : ""}`}
                   variant={pkg.popular ? "default" : "outline"}
                   asChild
                 >

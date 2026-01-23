@@ -74,9 +74,6 @@ export function WhatsAppWidget() {
         aria-label="Napisz na WhatsApp"
       >
         <MessageCircle className="w-7 h-7 text-white fill-white" />
-        
-        {/* Pulse animation */}
-        <span className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-25" />
       </button>
     </div>
   );
