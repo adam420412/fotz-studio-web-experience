@@ -1,9 +1,9 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, DollarSign, PieChart, TrendingUp, Calculator, Target, BarChart3 } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -32,12 +32,12 @@ const faqItems = [
 export default function BlogBudzetMarketingowy() {
   return (
     <Layout>
-      <Helmet>
-        <title>Budżet marketingowy - jak zaplanować wydatki na marketing 2025 | FOTZ Studio</title>
-        <meta name="description" content="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik planowania wydatków marketingowych dla MŚP." />
-        <meta name="keywords" content="budżet marketingowy, planowanie budżetu, wydatki na marketing, ROI marketing, koszty reklamy" />
-        <link rel="canonical" href="https://fotz.pl/blog/budzet-marketingowy-planowanie" />
-      </Helmet>
+      <SEOHead
+        title="Budżet marketingowy - jak zaplanować wydatki na marketing 2025 | FOTZ Studio"
+        description="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik planowania wydatków marketingowych dla MŚP."
+        canonical="https://fotz.pl/blog/budzet-marketingowy-planowanie"
+        keywords="budżet marketingowy, planowanie budżetu, wydatki na marketing, ROI marketing, koszty reklamy"
+      />
       <ArticleSchema
         title="Budżet marketingowy - jak zaplanować wydatki na marketing 2025"
         description="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik dla MŚP."

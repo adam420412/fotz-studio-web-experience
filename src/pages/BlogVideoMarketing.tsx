@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Video, Play, TrendingUp, BarChart3, Smartphone, Tv, Youtube, Film } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -32,15 +32,12 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 const BlogVideoMarketing = () => {
   return (
     <>
-      <Helmet>
-        <title>Video Marketing - trendy i statystyki 2025 | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny przewodnik po video marketingu w 2025. Trendy, formaty, statystyki i praktyczne wskazówki jak wykorzystać wideo w marketingu." 
-        />
-        <meta name="keywords" content="video marketing, marketing wideo, YouTube, TikTok, Reels, produkcja video, content video, reklamy wideo" />
-        <link rel="canonical" href="https://fotz.pl/blog/video-marketing-2025" />
-      </Helmet>
+      <SEOHead
+        title="Video Marketing - trendy i statystyki 2025 | Fotz Studio"
+        description="Kompletny przewodnik po video marketingu w 2025. Trendy, formaty, statystyki i praktyczne wskazówki jak wykorzystać wideo w marketingu."
+        canonical="https://fotz.pl/blog/video-marketing-2025"
+        keywords="video marketing, marketing wideo, YouTube, TikTok, Reels, produkcja video, content video, reklamy wideo"
+      />
       <ArticleSchema
         title="Video Marketing - trendy i statystyki 2025"
         description="Kompletny przewodnik po video marketingu. Trendy, formaty i praktyczne wskazówki."

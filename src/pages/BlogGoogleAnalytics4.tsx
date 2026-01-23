@@ -1,9 +1,9 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, BarChart3, Target, TrendingUp, Settings, Database, Zap } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 
@@ -33,12 +33,12 @@ const faqItems = [
 export default function BlogGoogleAnalytics4() {
   return (
     <Layout>
-      <Helmet>
-        <title>Google Analytics 4 - kompletny poradnik GA4 dla firm 2025 | FOTZ Studio</title>
-        <meta name="description" content="Google Analytics 4 krok po kroku: instalacja, konfiguracja, raporty i konwersje. Praktyczny przewodnik GA4 dla marketerów i właścicieli firm." />
-        <meta name="keywords" content="google analytics 4, ga4, analytics, śledzenie konwersji, google analytics poradnik, ga4 konfiguracja" />
-        <link rel="canonical" href="https://fotz.pl/blog/google-analytics-4-poradnik" />
-      </Helmet>
+      <SEOHead
+        title="Google Analytics 4 - kompletny poradnik GA4 dla firm 2025 | FOTZ Studio"
+        description="Google Analytics 4 krok po kroku: instalacja, konfiguracja, raporty i konwersje. Praktyczny przewodnik GA4 dla marketerów i właścicieli firm."
+        canonical="https://fotz.pl/blog/google-analytics-4-poradnik"
+        keywords="google analytics 4, ga4, analytics, śledzenie konwersji, google analytics poradnik, ga4 konfiguracja"
+      />
       <ArticleSchema
         title="Google Analytics 4 - kompletny poradnik GA4 dla firm 2025"
         description="Google Analytics 4 krok po kroku: instalacja, konfiguracja, raporty i konwersje."

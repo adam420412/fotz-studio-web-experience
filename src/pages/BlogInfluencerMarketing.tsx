@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Users, Target, TrendingUp, CheckCircle, AlertCircle, DollarSign, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -46,15 +46,12 @@ export default function BlogInfluencerMarketing() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Influencer Marketing w Polsce - Jak Współpracować z Influencerami | FOTZ Studio</title>
-        <meta
-          name="description"
-          content="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii w Polsce."
-        />
-        <meta name="keywords" content="influencer marketing, współpraca z influencerami, kampanie influencerskie, mikro influencerzy, nano influencerzy, Instagram influencerzy, TikTok influencerzy" />
-        <link rel="canonical" href="https://fotz.pl/blog/influencer-marketing-polska" />
-      </Helmet>
+      <SEOHead
+        title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami | FOTZ Studio"
+        description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii w Polsce."
+        canonical="https://fotz.pl/blog/influencer-marketing-polska"
+        keywords="influencer marketing, współpraca z influencerami, kampanie influencerskie, mikro influencerzy, nano influencerzy, Instagram influencerzy, TikTok influencerzy"
+      />
       <ArticleSchema
         title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami"
         description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii."

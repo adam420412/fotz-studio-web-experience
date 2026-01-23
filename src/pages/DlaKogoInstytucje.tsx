@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { CalendarDays, ArrowRight, CheckCircle, Megaphone, Camera, Video, Share2, Star, Phone, Users, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
@@ -120,14 +120,12 @@ export default function DlaKogoInstytucje() {
   
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla instytucji i wydarzeń | Eventy | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Wspieramy instytucje kultury i organizatorów wydarzeń. Marketing eventowy, promocja biletów, dokumentacja foto/video. Doświadczenie z Enea Stadion."
-        />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/instytucje" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla instytucji i wydarzeń | Eventy | Fotz Studio"
+        description="Wspieramy instytucje kultury i organizatorów wydarzeń. Marketing eventowy, promocja biletów, dokumentacja foto/video. Doświadczenie z Enea Stadion."
+        canonical="https://fotz.pl/dla-kogo/instytucje"
+        keywords="marketing eventowy, promocja wydarzeń, instytucje kultury, marketing kulturalny"
+      />
       
       <OrganizationSchema />
       <ServiceSchema 

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { Building2, ArrowRight, CheckCircle, MapPin, TrendingUp, Users, Target, Star, Phone, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
@@ -109,14 +109,12 @@ export default function DlaKogoFirmyLokalne() {
   
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla firm lokalnych Poznań | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Pomagamy lokalnym firmom z Poznania budować silną obecność online. SEO lokalne, Google Maps, kampanie geotargetowane. Znamy poznański rynek."
-        />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/firmy-lokalne" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla firm lokalnych Poznań | Fotz Studio"
+        description="Pomagamy lokalnym firmom z Poznania budować silną obecność online. SEO lokalne, Google Maps, kampanie geotargetowane. Znamy poznański rynek."
+        canonical="https://fotz.pl/dla-kogo/firmy-lokalne"
+        keywords="marketing lokalny, SEO lokalne Poznań, Google Maps, firmy lokalne"
+      />
       
       <OrganizationSchema />
       <ServiceSchema 

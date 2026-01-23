@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Search, Users, Target, BarChart3, DollarSign, CheckCircle2, XCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
@@ -32,15 +32,12 @@ const faqItems = [
 const BlogGoogleVsFacebook = () => {
   return (
     <>
-      <Helmet>
-        <title>Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu? | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Porównanie Google Ads i Facebook Ads. Dowiedz się, która platforma reklamowa przyniesie lepsze wyniki dla Twojej firmy. Analiza kosztów, targetowania i ROI." 
-        />
-        <meta name="keywords" content="Google Ads, Facebook Ads, reklama online, porównanie platform reklamowych, PPC, kampanie reklamowe, ROI" />
-        <link rel="canonical" href="https://fotz.pl/blog/google-ads-vs-facebook-ads" />
-      </Helmet>
+      <SEOHead
+        title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu? | Fotz Studio"
+        description="Porównanie Google Ads i Facebook Ads. Dowiedz się, która platforma reklamowa przyniesie lepsze wyniki dla Twojej firmy. Analiza kosztów, targetowania i ROI."
+        canonical="https://fotz.pl/blog/google-ads-vs-facebook-ads"
+        keywords="Google Ads, Facebook Ads, reklama online, porównanie platform reklamowych, PPC, kampanie reklamowe, ROI"
+      />
       <ArticleSchema
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu?"
         description="Porównanie Google Ads i Facebook Ads. Analiza kosztów, targetowania i ROI."

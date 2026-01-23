@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Linkedin, Users, TrendingUp, MessageSquare, Award, Eye, Heart, Share2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
@@ -32,15 +32,12 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 const BlogPersonalBrandingLinkedIn = () => {
   return (
     <>
-      <Helmet>
-        <title>Personal Branding na LinkedIn - jak budować markę osobistą | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny przewodnik po budowaniu marki osobistej na LinkedIn. Strategie, formaty postów i taktyki, które działają w 2025 roku." 
-        />
-        <meta name="keywords" content="personal branding, LinkedIn, marka osobista, networking, content LinkedIn, profil LinkedIn, thought leadership" />
-        <link rel="canonical" href="https://fotz.pl/blog/personal-branding-linkedin" />
-      </Helmet>
+      <SEOHead
+        title="Personal Branding na LinkedIn - jak budować markę osobistą | Fotz Studio"
+        description="Kompletny przewodnik po budowaniu marki osobistej na LinkedIn. Strategie, formaty postów i taktyki, które działają w 2025 roku."
+        canonical="https://fotz.pl/blog/personal-branding-linkedin"
+        keywords="personal branding, LinkedIn, marka osobista, networking, content LinkedIn, profil LinkedIn, thought leadership"
+      />
       <ArticleSchema
         title="Personal Branding na LinkedIn - jak budować markę osobistą"
         description="Kompletny przewodnik po budowaniu marki osobistej na LinkedIn."

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { Crown, ArrowRight, CheckCircle, Sparkles, Palette, Users, Megaphone, Star, Phone, Plus, Minus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { OrganizationSchema, ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
@@ -128,14 +128,12 @@ export default function DlaKogoMarkiPremium() {
   
   return (
     <Layout>
-      <Helmet>
-        <title>Marketing dla marek premium i luksusowych | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Tworzymy wyrafinowane strategie marketingowe dla marek premium. Branding, influencer marketing, ekskluzywny content. Dla tych, którzy stawiają na jakość."
-        />
-        <link rel="canonical" href="https://fotz.pl/dla-kogo/marki-premium" />
-      </Helmet>
+      <SEOHead
+        title="Marketing dla marek premium i luksusowych | Fotz Studio"
+        description="Tworzymy wyrafinowane strategie marketingowe dla marek premium. Branding, influencer marketing, ekskluzywny content. Dla tych, którzy stawiają na jakość."
+        canonical="https://fotz.pl/dla-kogo/marki-premium"
+        keywords="marketing premium, marki luksusowe, branding premium, influencer marketing"
+      />
       
       <OrganizationSchema />
       <ServiceSchema 

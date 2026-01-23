@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Zap, Settings, BarChart3, Mail, Users, Target, Bot, Workflow, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
@@ -33,15 +33,12 @@ const faqItems = [
 const BlogMarketingAutomation = () => {
   return (
     <>
-      <Helmet>
-        <title>Marketing Automation - jak zautomatyzować sprzedaż w 2025 | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny przewodnik po marketing automation. Dowiedz się jak automatyzować procesy marketingowe i zwiększać sprzedaż bez zwiększania zespołu." 
-        />
-        <meta name="keywords" content="marketing automation, automatyzacja marketingu, lead nurturing, CRM, email automation, sales funnel, konwersja" />
-        <link rel="canonical" href="https://fotz.pl/blog/marketing-automation-2025" />
-      </Helmet>
+      <SEOHead
+        title="Marketing Automation - jak zautomatyzować sprzedaż w 2025 | Fotz Studio"
+        description="Kompletny przewodnik po marketing automation. Dowiedz się jak automatyzować procesy marketingowe i zwiększać sprzedaż bez zwiększania zespołu."
+        canonical="https://fotz.pl/blog/marketing-automation-2025"
+        keywords="marketing automation, automatyzacja marketingu, lead nurturing, CRM, email automation, sales funnel, konwersja"
+      />
       <ArticleSchema
         title="Marketing Automation - jak zautomatyzować sprzedaż w 2025"
         description="Kompletny przewodnik po marketing automation. Automatyzacja procesów marketingowych."

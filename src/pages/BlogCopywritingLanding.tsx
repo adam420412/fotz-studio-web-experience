@@ -1,9 +1,9 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Bookmark, PenTool, Target, Zap, CheckCircle, AlertCircle, Lightbulb } from "lucide-react";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 
@@ -33,12 +33,12 @@ const faqItems = [
 export default function BlogCopywritingLanding() {
   return (
     <Layout>
-      <Helmet>
-        <title>Copywriting dla landing pages - jak pisać teksty, które konwertują | FOTZ Studio</title>
-        <meta name="description" content="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów, które zwiększają konwersję." />
-        <meta name="keywords" content="copywriting landing page, jak pisać landing page, teksty na stronę, headline, CTA, konwersja" />
-        <link rel="canonical" href="https://fotz.pl/blog/copywriting-landing-page" />
-      </Helmet>
+      <SEOHead
+        title="Copywriting dla landing pages - jak pisać teksty, które konwertują | FOTZ Studio"
+        description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów, które zwiększają konwersję."
+        canonical="https://fotz.pl/blog/copywriting-landing-page"
+        keywords="copywriting landing page, jak pisać landing page, teksty na stronę, headline, CTA, konwersja"
+      />
       <ArticleSchema
         title="Copywriting dla landing pages - jak pisać teksty, które konwertują"
         description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."

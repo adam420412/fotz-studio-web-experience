@@ -1,23 +1,20 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Target, Zap, CheckCircle2, XCircle, MousePointer, BarChart3, Eye, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const BlogLandingPage = () => {
   return (
     <>
-      <Helmet>
-        <title>Jak stworzyć skuteczny landing page - poradnik z przykładami | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny poradnik tworzenia landing page. Struktura, copywriting, CTA i optymalizacja konwersji. Praktyczne przykłady i wskazówki." 
-        />
-        <meta name="keywords" content="landing page, strona lądowania, konwersja, CTA, UX, copywriting, lead generation, optymalizacja" />
-        <link rel="canonical" href="https://fotz.pl/blog/jak-stworzyc-landing-page" />
-      </Helmet>
+      <SEOHead
+        title="Jak stworzyć skuteczny landing page - poradnik z przykładami | Fotz Studio"
+        description="Kompletny poradnik tworzenia landing page. Struktura, copywriting, CTA i optymalizacja konwersji. Praktyczne przykłady i wskazówki."
+        canonical="https://fotz.pl/blog/jak-stworzyc-landing-page"
+        keywords="landing page, strona lądowania, konwersja, CTA, UX, copywriting, lead generation, optymalizacja"
+      />
       <ArticleSchema
         title="Jak stworzyć skuteczny landing page - poradnik z przykładami"
         description="Kompletny poradnik tworzenia landing page z wysoką konwersją."
