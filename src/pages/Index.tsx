@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
-import { Helmet } from "react-helmet";
 import { Layout } from "@/components/layout/Layout";
 import { Hero } from "@/components/sections/Hero";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 
 // Lazy load sections below the fold for better LCP
@@ -26,22 +26,15 @@ const SectionLoader = () => (
 const Index = () => {
   return (
     <>
-      <Helmet>
-        <title>Fotz Studio - Agencja Marketingowa Poznań | Marketing Premium</title>
-        <meta 
-          name="description" 
-          content="Fotz Studio to agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe. Poznań." 
-        />
-        <meta name="keywords" content="agencja marketingowa, marketing Poznań, strony internetowe Poznań, social media, kampanie reklamowe, lead generation, marketing premium" />
-        <link rel="canonical" href="https://fotz.pl" />
-        <meta property="og:title" content="Fotz Studio - Agencja Marketingowa Poznań" />
-        <meta property="og:description" content="Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe." />
-        <meta property="og:url" content="https://fotz.pl/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="pl_PL" />
+      <SEOHead
+        title="Fotz Studio - Agencja Marketingowa Poznań | Marketing Premium"
+        description="Fotz Studio to agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe. Poznań."
+        keywords="agencja marketingowa, marketing Poznań, strony internetowe Poznań, social media, kampanie reklamowe, lead generation, marketing premium"
+        canonical="https://fotz.pl"
+      >
         {/* Preload critical LCP image */}
         <link rel="preload" href="/hero-poster.jpg" as="image" fetchPriority="high" />
-      </Helmet>
+      </SEOHead>
       <LocalBusinessSchema />
       <OrganizationSchema />
       <Layout>

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import { ArrowRight, Filter, X, Camera, Video, Building, Users, Sparkles, MapPin, Music, Utensils, Briefcase } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ImageLightbox } from "@/components/ImageLightbox";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 // Import local portfolio images
@@ -409,15 +409,11 @@ const Realizacje = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Portfolio i Realizacje - Case Studies | Fotz Studio</title>
-        <meta name="description" content="Ponad 600 zrealizowanych projektów: strony internetowe, e-commerce, kampanie marketingowe, fotografia i produkcja video. Zobacz nasze case studies." />
-        <meta name="keywords" content="portfolio, realizacje, case studies, strony internetowe przykłady, projekty marketingowe, fotografia eventowa, wizualizacje 3D" />
-        <link rel="canonical" href="https://fotz.pl/realizacje" />
-        <meta property="og:title" content="Portfolio i Realizacje | Fotz Studio" />
-        <meta property="og:description" content="Ponad 600 zrealizowanych projektów. Zobacz nasze case studies i portfolio." />
-        <meta property="og:url" content="https://fotz.pl/realizacje" />
-      </Helmet>
+      <SEOHead
+        title="Portfolio i Realizacje - Case Studies | Fotz Studio"
+        description="Ponad 600 zrealizowanych projektów: strony internetowe, e-commerce, kampanie marketingowe, fotografia i produkcja video. Zobacz nasze case studies."
+        keywords="portfolio, realizacje, case studies, strony internetowe przykłady, projekty marketingowe, fotografia eventowa, wizualizacje 3D"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

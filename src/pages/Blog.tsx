@@ -1,12 +1,12 @@
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import { ArrowRight, Calendar, Clock, User, Search, X } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const categories = [
@@ -334,16 +334,11 @@ export default function Blog() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Blog Marketingowy - Poradniki i Wiedza | Fotz Studio</title>
-        <meta name="description" content="Blog o marketingu, social media, SEO i reklamie internetowej. Poradniki, case studies i najnowsze trendy w marketingu cyfrowym." />
-        <meta name="keywords" content="blog marketingowy, poradniki marketing, social media trendy, SEO poradnik, Google Ads poradnik, marketing cyfrowy" />
-        <link rel="canonical" href="https://fotz.pl/blog" />
-        <meta property="og:title" content="Blog Marketingowy - Poradniki i Wiedza | Fotz Studio" />
-        <meta property="og:description" content="Blog o marketingu, social media, SEO i reklamie internetowej. Poradniki, case studies i najnowsze trendy." />
-        <meta property="og:url" content="https://fotz.pl/blog" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      <SEOHead
+        title="Blog Marketingowy - Poradniki i Wiedza | Fotz Studio"
+        description="Blog o marketingu, social media, SEO i reklamie internetowej. Poradniki, case studies i najnowsze trendy w marketingu cyfrowym."
+        keywords="blog marketingowy, poradniki marketing, social media trendy, SEO poradnik, Google Ads poradnik, marketing cyfrowy"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

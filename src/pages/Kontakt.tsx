@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader2, Calendar, Calculator, ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -12,6 +11,7 @@ import { z } from "zod";
 import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
 
 const contactSchema = z.object({
@@ -138,15 +138,11 @@ export default function Kontakt() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Kontakt - Umów Bezpłatną Konsultację | Fotz Studio Poznań</title>
-        <meta name="description" content="Skontaktuj się z nami! Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Email: adam@fotz.pl. Umów bezpłatną konsultację marketingową online." />
-        <meta name="keywords" content="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań agencja, Plac Wolności 16" />
-        <link rel="canonical" href="https://fotz.pl/kontakt" />
-        <meta property="og:title" content="Kontakt | Fotz Studio Poznań" />
-        <meta property="og:description" content="Skontaktuj się z nami! Biuro w centrum Poznania. Umów bezpłatną konsultację marketingową." />
-        <meta property="og:url" content="https://fotz.pl/kontakt" />
-      </Helmet>
+      <SEOHead
+        title="Kontakt - Umów Bezpłatną Konsultację | Fotz Studio Poznań"
+        description="Skontaktuj się z nami! Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Email: adam@fotz.pl. Umów bezpłatną konsultację marketingową online."
+        keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań agencja, Plac Wolności 16"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
