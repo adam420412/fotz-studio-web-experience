@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Phone, Mail, MapPin, CheckCircle, Target, TrendingUp, Users, Lightbulb, BarChart3, Palette, Video, MessageSquare, Globe, Zap, Award, Clock, Shield, Play } from "lucide-react";

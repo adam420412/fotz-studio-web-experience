@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Package, Users, ExternalLink, Cuboid } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { lazy, Suspense } from "react";
 import klagemImg from "@/assets/portfolio/klagem.png";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";

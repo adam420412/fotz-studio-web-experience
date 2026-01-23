@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Sun, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import celsjuszImg from "@/assets/portfolio/celsjusz.png";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 

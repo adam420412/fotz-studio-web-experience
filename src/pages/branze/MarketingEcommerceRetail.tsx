@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { ShoppingCart, ArrowRight, CheckCircle, Package, Camera, TrendingUp, CreditCard, BarChart, Truck, Percent, Plus, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";

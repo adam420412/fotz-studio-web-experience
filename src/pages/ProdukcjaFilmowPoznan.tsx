@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Film, Play, Video, Camera, Clapperboard, Sparkles, Phone, ArrowRight, CheckCircle2, Rocket, Star, Award, Clock, Users, Target, TrendingUp, Palette, Share2 } from "lucide-react";

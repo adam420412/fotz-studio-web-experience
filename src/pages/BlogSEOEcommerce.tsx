@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Search, ShoppingCart, TrendingUp, FileText, Globe, Link2, BarChart3 } from "lucide-react";

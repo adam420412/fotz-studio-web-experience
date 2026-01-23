@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { UtensilsCrossed, ArrowRight, CheckCircle, Camera, Star, Users, TrendingUp, Phone, ClipboardList, Smartphone, MapPin, Plus } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
