@@ -6,6 +6,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { useSubscription } from '@/hooks/useSubscription';
 import { useAcademyMaterials } from '@/hooks/useAcademyMaterials';
 import { motion } from 'framer-motion';
+import { SEOHead } from '@/components/seo/SEOHead';
 import { 
   GraduationCap, 
   BookOpen, 
@@ -38,18 +39,33 @@ export default function Akademia() {
 
   if (authLoading || subLoading) {
     return (
-      <Layout>
-        <div className="min-h-screen flex items-center justify-center">
-          <Loader2 className="w-8 h-8 animate-spin text-primary" />
-        </div>
-      </Layout>
+      <>
+        <SEOHead
+          title="Akademia FOTZ | Materiały Edukacyjne | Fotz Studio"
+          description="Akademia FOTZ - e-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego. Ucz się od ekspertów i rozwijaj swoje umiejętności."
+          canonical="https://fotz.pl/akademia/panel"
+          noIndex={true}
+        />
+        <Layout>
+          <div className="min-h-screen flex items-center justify-center">
+            <Loader2 className="w-8 h-8 animate-spin text-primary" />
+          </div>
+        </Layout>
+      </>
     );
   }
 
   // User is not subscribed - show upgrade prompt
   if (!hasActiveSubscription) {
     return (
-      <Layout>
+      <>
+        <SEOHead
+          title="Akademia FOTZ | Uzyskaj Dostęp | Fotz Studio"
+          description="Odblokuj pełny dostęp do Akademii FOTZ. E-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego."
+          canonical="https://fotz.pl/akademia/panel"
+          noIndex={true}
+        />
+        <Layout>
         <section className="min-h-screen flex items-center justify-center py-24 px-6">
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -120,13 +136,21 @@ export default function Akademia() {
           </motion.div>
         </section>
       </Layout>
+      </>
     );
   }
 
   // User has active subscription - show materials
   return (
-    <Layout>
-      <section className="py-24 md:py-32 px-6">
+    <>
+      <SEOHead
+        title="Akademia FOTZ | Materiały Edukacyjne | Fotz Studio"
+        description="Akademia FOTZ - e-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego. Ucz się od ekspertów i rozwijaj swoje umiejętności."
+        canonical="https://fotz.pl/akademia/panel"
+        noIndex={true}
+      />
+      <Layout>
+        <section className="py-24 md:py-32 px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <motion.div
@@ -320,6 +344,7 @@ export default function Akademia() {
           )}
         </div>
       </section>
-    </Layout>
+      </Layout>
+    </>
   );
 }

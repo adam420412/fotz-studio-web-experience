@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { ArrowRight, Home } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import { SEOHead } from "@/components/seo/SEOHead";
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,7 +13,14 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <Layout>
+    <>
+      <SEOHead
+        title="404 - Strona nie istnieje | Fotz Studio"
+        description="Przepraszamy, strona której szukasz nie została znaleziona. Sprawdź adres URL lub wróć na stronę główną Fotz Studio."
+        canonical="https://fotz.pl/404"
+        noIndex={true}
+      />
+      <Layout>
       <section className="min-h-[80vh] flex items-center justify-center section-padding">
         <div className="text-center">
           <div className="text-8xl md:text-9xl font-heading font-bold text-gradient mb-6">
@@ -41,7 +49,8 @@ const NotFound = () => {
           </div>
         </div>
       </section>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 

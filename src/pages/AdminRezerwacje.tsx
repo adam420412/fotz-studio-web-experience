@@ -3,6 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Calendar, Clock, Mail, Phone, User, CheckCircle, XCircle, Clock3, Loader2, RefreshCw, ArrowLeft } from "lucide-react";
 import { format } from "date-fns";
 import { pl } from "date-fns/locale";
@@ -118,8 +119,15 @@ export default function AdminRezerwacje() {
   }
 
   return (
-    <Layout>
-      <section className="pt-24 sm:pt-32 pb-12 section-padding bg-background min-h-screen">
+    <>
+      <SEOHead
+        title="Zarządzanie Rezerwacjami | Panel Admina | Fotz Studio"
+        description="Panel administracyjny do zarządzania rezerwacjami konsultacji i spotkań."
+        canonical="https://fotz.pl/admin/rezerwacje"
+        noIndex={true}
+      />
+      <Layout>
+        <section className="pt-24 sm:pt-32 pb-12 section-padding bg-background min-h-screen">
         <div className="container-wide">
           <div className="flex items-center justify-between mb-8">
             <div>
@@ -268,6 +276,7 @@ export default function AdminRezerwacje() {
           )}
         </div>
       </section>
-    </Layout>
+      </Layout>
+    </>
   );
 }
