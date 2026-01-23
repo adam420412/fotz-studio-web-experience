@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
@@ -34,15 +34,12 @@ const faqItems = [
 export default function BlogUXEcommerce() {
   return (
     <Layout>
-      <Helmet>
-        <title>UX/UI w e-commerce - jak projektować sklepy które sprzedają | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Kompletny poradnik UX/UI dla sklepów internetowych. Dowiedz się jak projektować sklepy e-commerce, które zwiększają konwersję i sprzedaż." 
-        />
-        <meta name="keywords" content="UX e-commerce, UI sklep internetowy, projektowanie sklepów, konwersja e-commerce, user experience" />
-        <link rel="canonical" href="https://fotz.pl/blog/ux-ui-ecommerce" />
-      </Helmet>
+      <SEOHead
+        title="UX/UI w e-commerce - jak projektować sklepy które sprzedają | FOTZ"
+        description="Kompletny poradnik UX/UI dla sklepów internetowych. Dowiedz się jak projektować sklepy e-commerce, które zwiększają konwersję i sprzedaż."
+        canonical="https://fotz.pl/blog/ux-ui-ecommerce"
+        keywords="UX e-commerce, UI sklep internetowy, projektowanie sklepów, konwersja e-commerce, user experience"
+      />
       <ArticleSchema
         title="UX/UI w e-commerce - jak projektować sklepy które sprzedają"
         description="Kompletny poradnik UX/UI dla sklepów internetowych. Jak projektować sklepy e-commerce zwiększające konwersję."

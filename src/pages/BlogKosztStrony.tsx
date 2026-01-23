@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, User, ChevronRight, MapPin } from "lucide-react";
@@ -25,16 +25,13 @@ const cities = [
 const BlogKosztStrony = () => {
   return (
     <>
-      <Helmet>
-        <title>Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Sprawdź aktualny cennik stron internetowych w 2025 roku. Dowiedz się, ile kosztuje strona wizytówka, sklep internetowy i profesjonalna strona firmowa." 
-        />
-        <meta name="keywords" content="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025" />
-        <link rel="canonical" href="https://fotz.pl/blog/ile-kosztuje-strona-internetowa" />
-        <script type="application/ld+json">
-          {JSON.stringify({
+      <SEOHead
+        title="Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty | FOTZ"
+        description="Sprawdź aktualny cennik stron internetowych w 2025 roku. Dowiedz się, ile kosztuje strona wizytówka, sklep internetowy i profesjonalna strona firmowa."
+        canonical="https://fotz.pl/blog/ile-kosztuje-strona-internetowa"
+        keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
+        schemaJson={[
+          {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty",
@@ -53,10 +50,8 @@ const BlogKosztStrony = () => {
             },
             "datePublished": "2024-12-20",
             "dateModified": "2026-01-09"
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
+          },
+          {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
@@ -64,10 +59,8 @@ const BlogKosztStrony = () => {
               { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Ile kosztuje strona internetowa w 2025?" }
             ]
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
+          },
+          {
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [
@@ -96,9 +89,9 @@ const BlogKosztStrony = () => {
                 }
               }
             ]
-          })}
-        </script>
-      </Helmet>
+          }
+        ]}
+      />
 
       <Layout>
         {/* Breadcrumb */}

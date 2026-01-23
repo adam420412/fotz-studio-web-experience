@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Sun, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import celsjuszImg from "@/assets/portfolio/celsjusz.png";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
@@ -40,11 +40,11 @@ const recommendations = [
 const CaseStudyCelsjusz = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Celsjusz OZE - Pompy Ciepła i Fotowoltaika | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Celsjusz OZE - firmy specjalizującej się w pompach ciepła i fotowoltaice. SEO, lead generation i responsywny design." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/celsjusz" />
-      </Helmet>
+      <SEOHead
+        title="Celsjusz OZE - Pompy Ciepła i Fotowoltaika | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Celsjusz OZE - firmy specjalizującej się w pompach ciepła i fotowoltaice. SEO, lead generation i responsywny design."
+        canonical="https://fotz.pl/realizacje/celsjusz"
+      />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Celsjusz", url: "https://fotz.pl/realizacje/celsjusz" }]} />
       <ArticleSchema title="Celsjusz OZE - Strona dla firmy OZE" description="Case study: strona z lead generation dla firmy oferującej pompy ciepła i fotowoltaikę" url="https://fotz.pl/realizacje/celsjusz" datePublished="2024-06-15" dateModified="2026-01-09" />
 

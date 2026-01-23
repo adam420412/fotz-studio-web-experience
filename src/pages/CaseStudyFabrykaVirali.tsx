@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Video, Shield, Smartphone, DollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import fabrykaViraliImg from "@/assets/portfolio/fabryka-virali.png";
 
@@ -32,11 +32,11 @@ const results = [
 const CaseStudyFabrykaVirali = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Fabryka Virali - Agencja Marketingowa | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Fabryki Virali - agencji social media. Przejrzysty cennik, portfolio i optymalizacja konwersji." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/fabryka-virali" />
-      </Helmet>
+      <SEOHead
+        title="Fabryka Virali - Agencja Marketingowa | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Fabryki Virali - agencji social media. Przejrzysty cennik, portfolio i optymalizacja konwersji."
+        canonical="https://fotz.pl/realizacje/fabryka-virali"
+      />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },

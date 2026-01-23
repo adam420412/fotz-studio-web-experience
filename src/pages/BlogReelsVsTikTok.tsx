@@ -109,7 +109,7 @@ const BlogReelsVsTikTok = () => {
                   <div className="p-6 bg-gradient-to-br from-pink-500/10 to-purple-500/10 rounded-xl border border-pink-500/20">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-500 rounded-lg flex items-center justify-center">
-                        <Video className="w-5 h-5 text-white" />
+                        <Video className="w-5 h-5 text-primary-foreground" />
                       </div>
                       <h3 className="text-xl font-semibold">Instagram Reels</h3>
                     </div>
@@ -134,8 +134,8 @@ const BlogReelsVsTikTok = () => {
                   </div>
                   <div className="p-6 bg-card rounded-xl border border-border">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
-                        <Video className="w-5 h-5 text-white" />
+                      <div className="w-10 h-10 bg-foreground rounded-lg flex items-center justify-center">
+                        <Video className="w-5 h-5 text-background" />
                       </div>
                       <h3 className="text-xl font-semibold">TikTok</h3>
                     </div>

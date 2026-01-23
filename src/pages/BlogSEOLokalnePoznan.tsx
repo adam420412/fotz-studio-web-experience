@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, MapPin, Search, Star, Building2, CheckCircle2, Globe, Map } from "lucide-react";
@@ -32,15 +32,12 @@ const faqItems = [
 const BlogSEOLokalnePoznan = () => {
   return (
     <>
-      <Helmet>
-        <title>SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025 | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego: Google Moja Firma, cytaty NAP, recenzje i strategie na 2025 rok." 
-        />
-        <meta name="keywords" content="SEO lokalne Poznań, pozycjonowanie lokalne, Google Moja Firma, Google Maps, NAP, lokalne wyszukiwanie, SEO dla firm lokalnych" />
-        <link rel="canonical" href="https://fotz.pl/blog/seo-lokalne-poznan-poradnik" />
-      </Helmet>
+      <SEOHead
+        title="SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025 | Fotz Studio"
+        description="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego: Google Moja Firma, cytaty NAP, recenzje i strategie na 2025 rok."
+        canonical="https://fotz.pl/blog/seo-lokalne-poznan-poradnik"
+        keywords="SEO lokalne Poznań, pozycjonowanie lokalne, Google Moja Firma, Google Maps, NAP, lokalne wyszukiwanie, SEO dla firm lokalnych"
+      />
       <ArticleSchema
         title="SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025"
         description="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego."

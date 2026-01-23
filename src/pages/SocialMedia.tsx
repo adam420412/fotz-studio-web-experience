@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -270,14 +270,12 @@ const SocialMedia = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Agencja Social Media | Marketing w Mediach Społecznościowych | Fotz</title>
-        <meta 
-          name="description" 
-          content="Agencja social media - prowadzenie Facebooka, Instagrama, LinkedIna. Strategia, content, kampanie reklamowe. Budujemy silne marki w social mediach." 
-        />
-        <link rel="canonical" href="https://fotz.pl/social-media" />
-      </Helmet>
+      <SEOHead
+        title="Agencja Social Media | Marketing w Mediach Społecznościowych | Fotz"
+        description="Agencja social media - prowadzenie Facebooka, Instagrama, LinkedIna. Strategia, content, kampanie reklamowe. Budujemy silne marki w social mediach."
+        canonical="https://fotz.pl/social-media"
+        keywords="agencja social media, marketing social media, prowadzenie facebooka, instagram marketing, linkedin marketing"
+      />
       
       <ServiceSchema 
         name="Agencja Social Media - Marketing w Mediach Społecznościowych"

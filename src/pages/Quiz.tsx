@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion, AnimatePresence } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -213,14 +213,12 @@ const Quiz = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Quiz - Która usługa marketingowa jest dla Ciebie? | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Odpowiedz na 5 pytań i dowiedz się, które usługi marketingowe najlepiej odpowiadają potrzebom Twojego biznesu. Personalizowana rekomendacja w 2 minuty." 
-        />
-        <link rel="canonical" href="https://fotz.pl/quiz" />
-      </Helmet>
+      <SEOHead
+        title="Quiz - Która usługa marketingowa jest dla Ciebie? | Fotz Studio"
+        description="Odpowiedz na 5 pytań i dowiedz się, które usługi marketingowe najlepiej odpowiadają potrzebom Twojego biznesu. Personalizowana rekomendacja w 2 minuty."
+        canonical="https://fotz.pl/quiz"
+        keywords="quiz marketingowy, usługi marketingowe, test marketingowy"
+      />
       <Layout>
         <section className="min-h-screen pt-32 pb-20 px-4 bg-gradient-to-b from-background to-muted/20">
           <div className="container mx-auto max-w-3xl">

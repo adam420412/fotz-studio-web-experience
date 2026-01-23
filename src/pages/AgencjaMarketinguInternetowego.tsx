@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
@@ -174,23 +174,12 @@ export default function AgencjaMarketinguInternetowego() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Agencja marketingu internetowego oferuje skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM i social media marketing. Zwiększ widoczność online swojej firmy." 
-        />
-        <meta name="keywords" content="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing, performance marketing" />
-        <link rel="canonical" href="https://fotz.pl/agencja-marketingu-internetowego" />
-        <meta property="og:title" content="Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio" />
-        <meta property="og:description" content="Agencja marketingu internetowego. Skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM, social media marketing." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fotz.pl/agencja-marketingu-internetowego" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio" />
-        <meta name="twitter:description" content="Agencja marketingu internetowego. Skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM, social media marketing." />
-      </Helmet>
+      <SEOHead
+        title="Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio"
+        description="Agencja marketingu internetowego oferuje skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM i social media marketing. Zwiększ widoczność online swojej firmy."
+        canonical="https://fotz.pl/agencja-marketingu-internetowego"
+        keywords="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing, performance marketing"
+      />
 
       {/* Structured Data */}
       <OrganizationSchema />

@@ -232,10 +232,10 @@ const BlogLandingPage = () => {
                     <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium">
                       Rozpocznij darmowy trial
                     </button>
-                    <button className="px-6 py-3 bg-green-600 text-white rounded-full font-medium">
+                    <button className="px-6 py-3 bg-accent text-accent-foreground rounded-full font-medium">
                       Pobierz za darmo
                     </button>
-                    <button className="px-6 py-3 bg-blue-600 text-white rounded-full font-medium">
+                    <button className="px-6 py-3 bg-secondary text-secondary-foreground rounded-full font-medium">
                       Umów bezpłatną konsultację
                     </button>
                   </div>

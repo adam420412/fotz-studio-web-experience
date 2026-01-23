@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -80,13 +80,11 @@ const Zainstaluj = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Zainstaluj aplikację Fotz Studio | PWA</title>
-        <meta 
-          name="description" 
-          content="Zainstaluj aplikację Fotz Studio na swoim telefonie. Szybki dostęp do usług marketingowych, offline i bez konieczności pobierania ze sklepu." 
-        />
-      </Helmet>
+      <SEOHead
+        title="Zainstaluj aplikację Fotz Studio | PWA"
+        description="Zainstaluj aplikację Fotz Studio na swoim telefonie. Szybki dostęp do usług marketingowych, offline i bez konieczności pobierania ze sklepu."
+        canonical="https://fotz.pl/zainstaluj"
+      />
       
       <Layout>
         <section className="min-h-screen py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-background relative overflow-hidden">

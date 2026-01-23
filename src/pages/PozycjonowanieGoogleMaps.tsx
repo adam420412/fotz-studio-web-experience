@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -56,11 +56,12 @@ const faqItems = [
 const PozycjonowanieGoogleMaps = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Pozycjonowanie Google Maps - Wizytówka Google Moja Firma | Fotz Studio</title>
-        <meta name="description" content="Profesjonalne pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy w wynikach lokalnych, zdobądź więcej klientów. Optymalizacja Google Moja Firma." />
-        <meta name="keywords" content="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google" />
-      </Helmet>
+      <SEOHead
+        title="Pozycjonowanie Google Maps - Wizytówka Google Moja Firma | Fotz Studio"
+        description="Profesjonalne pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy w wynikach lokalnych, zdobądź więcej klientów. Optymalizacja Google Moja Firma."
+        canonical="https://fotz.pl/pozycjonowanie-google-maps"
+        keywords="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google"
+      />
 
       {/* Hero Section */}
       <section className="pt-32 sm:pt-36 md:pt-40 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-b from-background to-secondary/20">

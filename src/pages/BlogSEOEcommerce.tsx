@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Search, ShoppingCart, TrendingUp, FileText, Globe, Link2, BarChart3 } from "lucide-react";
@@ -32,15 +32,12 @@ const faqItems = [
 const BlogSEOEcommerce = () => {
   return (
     <>
-      <Helmet>
-        <title>SEO dla sklepów internetowych - jak pozycjonować e-commerce | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny poradnik SEO dla e-commerce. Poznaj strategie pozycjonowania sklepów internetowych, optymalizację kategorii i kart produktowych." 
-        />
-        <meta name="keywords" content="seo e-commerce, pozycjonowanie sklepu internetowego, seo dla sklepów, optymalizacja e-commerce, seo produktów" />
-        <link rel="canonical" href="https://fotz.pl/blog/seo-ecommerce" />
-      </Helmet>
+      <SEOHead
+        title="SEO dla sklepów internetowych - jak pozycjonować e-commerce | Fotz Studio"
+        description="Kompletny poradnik SEO dla e-commerce. Poznaj strategie pozycjonowania sklepów internetowych, optymalizację kategorii i kart produktowych."
+        canonical="https://fotz.pl/blog/seo-ecommerce"
+        keywords="seo e-commerce, pozycjonowanie sklepu internetowego, seo dla sklepów, optymalizacja e-commerce, seo produktów"
+      />
       <ArticleSchema
         title="SEO dla sklepów internetowych - jak pozycjonować e-commerce"
         description="Kompletny poradnik SEO dla e-commerce. Strategie pozycjonowania sklepów internetowych."

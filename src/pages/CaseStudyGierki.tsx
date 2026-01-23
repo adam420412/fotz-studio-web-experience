@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { useState } from "react";
 import gierkiImg from "@/assets/portfolio/gierki.png";
@@ -79,11 +79,11 @@ const CaseStudyGierki = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Gierki Activity Bar - Strona z Systemem Rezerwacji | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Gierki Activity Bar w Poznaniu. System rezerwacji online, optymalizacja SEO i responsywny design." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/gierki" />
-      </Helmet>
+      <SEOHead
+        title="Gierki Activity Bar - Strona z Systemem Rezerwacji | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Gierki Activity Bar w Poznaniu. System rezerwacji online, optymalizacja SEO i responsywny design."
+        canonical="https://fotz.pl/realizacje/gierki"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
