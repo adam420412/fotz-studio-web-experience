@@ -4,6 +4,8 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
 
 const features = [
   {
@@ -75,9 +77,26 @@ export default function StudioPodcastowe() {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   return (
-    <Layout>
-      {/* Hero */}
-      <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 section-padding bg-background relative overflow-hidden">
+    <>
+      <SEOHead
+        title="Studio Podcastowe Poznań | Nagrywanie Podcastów | Fotz Studio"
+        description="Profesjonalne studio podcastowe w centrum Poznania. Mikrofony Shure i Rode, nagrania video 4K, pełna postprodukcja. Nagraj podcast na najwyższym poziomie."
+        canonical="https://fotz.pl/studio-podcastowe"
+        keywords="studio podcastowe, nagrywanie podcastów, podcast Poznań, studio nagrań, produkcja podcastów"
+      />
+      <ServiceSchema 
+        name="Studio Podcastowe"
+        description="Profesjonalne studio do nagrywania podcastów z pełnym wyposażeniem audio i video"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Studio Podcastowe", url: "https://fotz.pl/studio-podcastowe" }
+        ]}
+      />
+      <Layout>
+        {/* Hero */}
+        <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 section-padding bg-background relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 right-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-primary/5 rounded-full blur-3xl" />
         </div>
@@ -272,6 +291,7 @@ export default function StudioPodcastowe() {
           </Button>
         </div>
       </section>
-    </Layout>
+      </Layout>
+    </>
   );
 }

@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { 
   BarChart3, 
   Gauge, 
@@ -320,8 +321,15 @@ export default function AdminDashboard() {
   const overallScore = calculateScore(metrics);
 
   return (
-    <Layout>
-      <section className="pt-24 sm:pt-32 pb-12 section-padding bg-background min-h-screen">
+    <>
+      <SEOHead
+        title="Dashboard Wydajności | Panel Admina | Fotz Studio"
+        description="Panel administracyjny do monitorowania Core Web Vitals i wydajności strony w czasie rzeczywistym."
+        canonical="https://fotz.pl/admin/dashboard"
+        noIndex={true}
+      />
+      <Layout>
+        <section className="pt-24 sm:pt-32 pb-12 section-padding bg-background min-h-screen">
         <div className="container-wide">
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
@@ -838,6 +846,7 @@ export default function AdminDashboard() {
           )}
         </div>
       </section>
-    </Layout>
+      </Layout>
+    </>
   );
 }

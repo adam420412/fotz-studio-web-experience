@@ -3,6 +3,8 @@ import { ArrowRight, Calendar, Clock, User, BookOpen } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
+import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const poradniki = [
   {
@@ -74,9 +76,22 @@ export default function Poradniki() {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   return (
-    <Layout>
-      {/* Hero */}
-      <section className="pt-40 pb-20 section-padding bg-background">
+    <>
+      <SEOHead
+        title="Poradniki Marketingowe | Praktyczne Przewodniki | Fotz Studio"
+        description="Kompletne poradniki i tutoriale marketingu cyfrowego. Od podstaw po zaawansowane strategie: SEO, Google Ads, social media, landing pages i więcej."
+        canonical="https://fotz.pl/poradniki"
+        keywords="poradniki marketingowe, tutoriale marketing, przewodnik SEO, poradnik Google Ads, marketing cyfrowy"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Poradniki", url: "https://fotz.pl/poradniki" }
+        ]}
+      />
+      <Layout>
+        {/* Hero */}
+        <section className="pt-40 pb-20 section-padding bg-background">
         <div className="container-wide">
           <div className="max-w-3xl">
             <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
@@ -177,6 +192,7 @@ export default function Poradniki() {
           </div>
         </div>
       </section>
-    </Layout>
+      </Layout>
+    </>
   );
 }

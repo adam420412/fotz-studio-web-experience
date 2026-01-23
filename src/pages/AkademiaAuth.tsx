@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { useAuth } from '@/hooks/useAuth';
 import { toast } from 'sonner';
 import { motion } from 'framer-motion';
+import { SEOHead } from '@/components/seo/SEOHead';
 import { GraduationCap, Mail, Lock, User, ArrowRight, Loader2 } from 'lucide-react';
 import { z } from 'zod';
 
@@ -100,17 +101,32 @@ export default function AkademiaAuth() {
 
   if (authLoading) {
     return (
-      <Layout>
-        <div className="min-h-screen flex items-center justify-center">
-          <Loader2 className="w-8 h-8 animate-spin text-primary" />
-        </div>
-      </Layout>
+      <>
+        <SEOHead
+          title="Logowanie - Akademia FOTZ | Fotz Studio"
+          description="Zaloguj się lub zarejestruj do Akademii FOTZ. Dostęp do e-booków, kursów wideo i materiałów edukacyjnych z marketingu cyfrowego."
+          canonical="https://fotz.pl/akademia/auth"
+          noIndex={true}
+        />
+        <Layout>
+          <div className="min-h-screen flex items-center justify-center">
+            <Loader2 className="w-8 h-8 animate-spin text-primary" />
+          </div>
+        </Layout>
+      </>
     );
   }
 
   return (
-    <Layout>
-      <section className="min-h-screen flex items-center justify-center py-24 px-6">
+    <>
+      <SEOHead
+        title="Logowanie - Akademia FOTZ | Fotz Studio"
+        description="Zaloguj się lub zarejestruj do Akademii FOTZ. Dostęp do e-booków, kursów wideo i materiałów edukacyjnych z marketingu cyfrowego."
+        canonical="https://fotz.pl/akademia/auth"
+        noIndex={true}
+      />
+      <Layout>
+        <section className="min-h-screen flex items-center justify-center py-24 px-6">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
@@ -226,6 +242,7 @@ export default function AkademiaAuth() {
           </div>
         </motion.div>
       </section>
-    </Layout>
+      </Layout>
+    </>
   );
 }
