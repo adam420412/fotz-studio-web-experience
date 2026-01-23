@@ -61,5 +61,6 @@ Disallow: /cart/
 Disallow: /checkout/
 Disallow: /my-account/
 
-# Sitemap location
+# Sitemap locations (index + individual sitemaps)
+Sitemap: https://fotz.pl/sitemap-index.xml
 Sitemap: https://fotz.pl/sitemap.xml
