@@ -626,9 +626,9 @@ DANE KONTAKTOWE:
                     setEmailError("");
                   }}
                   placeholder="jan@example.com"
-                  className={`mt-1 ${emailError ? "border-red-500" : ""}`}
+                  className={`mt-1 ${emailError ? "border-destructive" : ""}`}
                 />
-                {emailError && <p className="text-sm text-red-500 mt-1">{emailError}</p>}
+                {emailError && <p className="text-sm text-destructive mt-1">{emailError}</p>}
               </div>
               <div>
                 <Label htmlFor="phone">Telefon (opcjonalnie)</Label>
@@ -671,8 +671,8 @@ DANE KONTAKTOWE:
     <div className="space-y-8" ref={printRef}>
       {isSubmitted ? (
         <div className="text-center py-12">
-          <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-green-500/20 flex items-center justify-center">
-            <CheckCircle className="w-10 h-10 text-green-500" />
+          <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center">
+            <CheckCircle className="w-10 h-10 text-primary" />
           </div>
           <h2 className="text-2xl font-heading font-bold mb-2">Brief został wysłany!</h2>
           <p className="text-muted-foreground mb-8">

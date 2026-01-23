@@ -167,7 +167,7 @@ export function NewsletterSection() {
                           className="pl-10 h-12 bg-background border-border"
                         />
                       </div>
-                      {error && <p className="text-xs text-red-500 mt-1">{error}</p>}
+                      {error && <p className="text-xs text-destructive mt-1">{error}</p>}
                     </div>
 
                     <Button 

@@ -156,7 +156,7 @@ export function Footer() {
                     onChange={(e) => setEmail(e.target.value)}
                     className="h-11 bg-secondary border-border"
                   />
-                  {error && <p className="text-xs text-red-500 mt-1">{error}</p>}
+                  {error && <p className="text-xs text-destructive mt-1">{error}</p>}
                 </div>
                 <Button type="submit" variant="hero" className="h-11" disabled={isSubmitting}>
                   {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
