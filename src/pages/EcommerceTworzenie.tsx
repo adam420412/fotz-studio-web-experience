@@ -159,8 +159,8 @@ export default function EcommerceTworzenie() {
   return (
     <Layout>
       <SEOHead
-        title="Załóż Sklep Internetowy Online | Tworzenie E-sklepu | Fotz Studio"
-        description="Tworzymy sklepy internetowe od podstaw. Wybór platformy e-commerce, integracja płatności i dostaw, AI i automatyzacja. Zacznij sprzedaż online z Fotz Studio."
+        title="Sklep Internetowy | Tworzenie E-commerce | Fotz"
+        description="Tworzymy sklepy internetowe - wybór platformy, integracje płatności, automatyzacja AI. Zacznij sprzedaż online. Fotz Studio."
         canonical="https://fotz.pl/ecommerce-tworzenie-sklepu"
       />
 

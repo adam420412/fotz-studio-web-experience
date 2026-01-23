@@ -99,8 +99,8 @@ const MarketingEcommerceRetail = () => {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla E-commerce i Retail | Sklepy Online | Fotz Studio"
-        description="Marketing dla e-commerce - sklepy internetowe, fotografia produktowa, konfiguratory 3D, kampanie performance. Zwiększ sprzedaż online."
+        title="Marketing E-commerce | Sklepy Online | Fotz"
+        description="Marketing dla e-commerce - sklepy, fotografia produktowa, konfiguratory 3D, performance. Zwiększ sprzedaż. Fotz."
         canonical="https://fotz.pl/dla-kogo/ecommerce-retail"
       />
 

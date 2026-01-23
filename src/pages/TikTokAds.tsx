@@ -160,8 +160,8 @@ const TikTokAds = () => {
   return (
     <Layout>
       <SEOHead
-        title="TikTok Ads - Kampanie reklamowe na TikToku | Fotz Studio Poznań"
-        description="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo. Agencja TikTok Ads Poznań."
+        title="TikTok Ads Poznań | Kampanie Wideo | Fotz"
+        description="Kampanie TikTok Ads - docieraj do Gen Z. In-Feed Ads, Spark Ads, viralowy content. Agencja TikTok Ads od 2000 zł/mies."
         canonical="https://fotz.pl/tiktok-ads"
         keywords="TikTok Ads, reklamy TikTok, kampanie TikTok, marketing TikTok, agencja TikTok Ads Poznań"
       />

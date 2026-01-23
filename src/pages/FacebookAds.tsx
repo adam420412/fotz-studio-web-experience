@@ -130,8 +130,8 @@ const FacebookAds = () => {
   return (
     <Layout>
       <SEOHead
-        title="Facebook Ads Poznań - Skuteczne kampanie reklamowe | Fotz Studio"
-        description="Profesjonalne kampanie reklamowe na Facebook Ads. Zwiększ zasięg, generuj leady i sprzedaż dzięki precyzyjnemu targetowaniu. Agencja Facebook Ads Poznań."
+        title="Facebook Ads Poznań | Kampanie Meta Ads | Fotz"
+        description="Kampanie Facebook Ads - leady, sprzedaż, remarketing. Precyzyjne targetowanie. Agencja Meta Ads Poznań od 1500 zł/mies."
         canonical="https://fotz.pl/facebook-ads"
       />
 

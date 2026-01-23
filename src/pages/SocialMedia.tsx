@@ -271,8 +271,8 @@ const SocialMedia = () => {
   return (
     <>
       <SEOHead
-        title="Agencja Social Media | Marketing w Mediach Społecznościowych | Fotz"
-        description="Agencja social media - prowadzenie Facebooka, Instagrama, LinkedIna. Strategia, content, kampanie reklamowe. Budujemy silne marki w social mediach."
+        title="Agencja Social Media | Obsługa FB, IG, LinkedIn | Fotz"
+        description="Agencja social media - prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie. Pakiety od 2500 zł/mies."
         canonical="https://fotz.pl/social-media"
         keywords="agencja social media, marketing social media, prowadzenie facebooka, instagram marketing, linkedin marketing"
       />

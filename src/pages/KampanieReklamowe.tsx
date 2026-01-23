@@ -210,8 +210,8 @@ const KampanieReklamowe = () => {
   return (
     <Layout>
       <SEOHead
-        title="Kampanie Reklamowe Google Ads & Facebook Ads | Fotz Studio Poznań"
-        description="Profesjonalne kampanie reklamowe Google Ads i Facebook Ads. Zwiększ sprzedaż dzięki precyzyjnemu targetowaniu i optymalizacji. Agencja reklamowa Poznań."
+        title="Kampanie Reklamowe | Google Ads, Meta Ads | Fotz"
+        description="Kampanie Google Ads, Facebook Ads, TikTok, LinkedIn. Precyzyjne targetowanie, optymalizacja ROAS. Agencja Poznań."
         canonical="https://fotz.pl/kampanie-reklamowe"
       />
       <ServiceSchema 

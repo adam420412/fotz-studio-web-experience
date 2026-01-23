@@ -151,8 +151,8 @@ export default function ContentMarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Content Marketing - Definicja, Zalety i Strategia SEO | Fotz Studio"
-        description="Co to jest content marketing? Poznaj definicję, zalety marketingu treści i dowiedz się jak mierzyć efekty kampanii SEO. Kompleksowy przewodnik content marketingowy."
+        title="Content Marketing | Strategia Treści | Fotz"
+        description="Content marketing dla firm - artykuły SEO, blogi, case studies. Buduj autorytet i pozyskuj klientów treścią. Fotz Studio."
         canonical="https://fotz.pl/content-marketing"
         keywords="content marketing, marketing treści, strategia content marketing, seo content, blog firmowy"
       />

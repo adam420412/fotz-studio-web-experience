@@ -210,8 +210,8 @@ export default function FotografiaZDrona() {
   return (
     <Layout>
       <SEOHead
-        title="Fotografia z Drona | Zdjęcia i Filmy z Lotu Ptaka - Fotz Studio"
-        description="Profesjonalne zdjęcia i filmy z drona w Poznaniu. Ujęcia z lotu ptaka dla nieruchomości, przemysłu i turystyki. Jakość 4K, panoramy 360°. Sprawdź cennik!"
+        title="Zdjęcia z Drona | Fotografia Lotnicza 4K | Fotz"
+        description="Zdjęcia i filmy z drona 4K. Ujęcia z lotu ptaka dla nieruchomości, eventów, przemysłu. Panoramy 360°. Fotz Poznań."
         canonical="https://fotz.pl/fotografia-z-drona"
       />
 

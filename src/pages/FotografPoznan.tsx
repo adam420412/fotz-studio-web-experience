@@ -126,8 +126,8 @@ const FotografPoznan = () => {
   return (
     <Layout>
       <SEOHead
-        title="Fotograf Poznań - Profesjonalne Sesje Fotograficzne | Fotz Studio"
-        description="Profesjonalny fotograf w Poznaniu. Sesje rodzinne, biznesowe, ciążowe, portretowe i eventowe. Uwieczniamy wyjątkowe chwile w różnorodnych sesjach zdjęciowych."
+        title="Fotograf Poznań | Sesje Zdjęciowe | Fotz"
+        description="Fotograf Poznań - sesje rodzinne, biznesowe, eventowe. Profesjonalne zdjęcia i obróbka. Fotz Studio."
         canonical="https://fotz.pl/fotograf-poznan"
         keywords="fotograf Poznań, sesje fotograficzne, fotografia eventowa, zdjęcia biznesowe, fotograf rodzinny"
       />

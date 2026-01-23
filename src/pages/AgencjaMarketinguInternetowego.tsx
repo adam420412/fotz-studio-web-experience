@@ -175,8 +175,8 @@ export default function AgencjaMarketinguInternetowego() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingu Internetowego – Kampanie i Pozycjonowanie | Fotz Studio"
-        description="Agencja marketingu internetowego oferuje skuteczne kampanie Google Ads, pozycjonowanie stron SEO/SEM i social media marketing. Zwiększ widoczność online swojej firmy."
+        title="Agencja Marketingu Internetowego | SEO, SEM | Fotz"
+        description="Agencja marketingu internetowego - kampanie Google Ads, pozycjonowanie SEO, social media. Zwiększ widoczność online. Fotz Studio."
         canonical="https://fotz.pl/agencja-marketingu-internetowego"
         keywords="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing, performance marketing"
       />

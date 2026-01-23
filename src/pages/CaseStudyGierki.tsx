@@ -80,8 +80,8 @@ const CaseStudyGierki = () => {
   return (
     <Layout>
       <SEOHead
-        title="Gierki Activity Bar - Strona z Systemem Rezerwacji | Case Study | Fotz Studio"
-        description="Realizacja strony internetowej dla Gierki Activity Bar w Poznaniu. System rezerwacji online, optymalizacja SEO i responsywny design."
+        title="Gierki Activity Bar - Case Study | Fotz Studio"
+        description="Strona z systemem rezerwacji dla Gierki Poznań. SEO, responsywny design, +180% rezerwacji online."
         canonical="https://fotz.pl/realizacje/gierki"
       />
       <BreadcrumbSchema 
