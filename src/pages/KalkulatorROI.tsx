@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -61,6 +62,18 @@ const KalkulatorROI = () => {
         title="Kalkulator ROI Reklam - Oblicz zwrot z inwestycji | Fotz Studio"
         description="Oblicz szacowany zwrot z inwestycji w kampanie reklamowe Google Ads i Facebook Ads. Interaktywny kalkulator ROI dla Twojego biznesu."
         canonical="https://fotz.pl/kalkulator-roi"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Kalkulator ROI", url: "https://fotz.pl/kalkulator-roi" }
+        ]}
+      />
+      <ServiceSchema 
+        name="Kalkulator ROI kampanii reklamowych"
+        description="Interaktywny kalkulator zwrotu z inwestycji dla kampanii Google Ads i Facebook Ads."
+        provider="Fotz Studio"
       />
       <Layout>
         {/* Hero */}

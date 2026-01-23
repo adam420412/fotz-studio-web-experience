@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Input } from "@/components/ui/input";
@@ -153,6 +154,12 @@ const SlownikMarketingowy = () => {
         title="Słownik Marketingowy - Pojęcia i Definicje | Fotz Studio"
         description="Kompletny słownik pojęć marketingowych od A do Z. Poznaj definicje: SEO, PPC, ROI, CTR, konwersja i wiele innych terminów marketingu cyfrowego."
         canonical="https://fotz.pl/slownik-marketingowy"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Słownik marketingowy", url: "https://fotz.pl/slownik-marketingowy" }
+        ]}
       />
       <FAQSchema items={faqItems} />
       <Layout>

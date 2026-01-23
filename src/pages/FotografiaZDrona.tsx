@@ -30,7 +30,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { VideoLightbox } from "@/components/VideoLightbox";
 
@@ -218,6 +218,13 @@ export default function FotografiaZDrona() {
       <ServiceSchema
         name="Fotografia z Drona"
         description="Profesjonalne zdjęcia i filmy z drona. Ujęcia z lotu ptaka dla nieruchomości, przemysłu, turystyki i eventów."
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Fotografia z drona", url: "https://fotz.pl/fotografia-z-drona" }
+        ]}
       />
       <FAQSchema items={faqItems} />
 
