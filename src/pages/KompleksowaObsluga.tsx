@@ -194,8 +194,8 @@ const KompleksowaObsluga = () => {
   return (
     <>
       <SEOHead
-        title="Kompleksowa Obsługa Marketingowa dla Małych Firm | Fotz Studio"
-        description="Kompleksowa obsługa marketingowa dla małych firm. Strategia, social media, SEO, kampanie reklamowe, content marketing. Skuteczny marketing z Fotz Studio."
+        title="Kompleksowy Marketing dla Firm | Obsługa 360° | Fotz"
+        description="Kompleksowa obsługa marketingowa: strategia, social media, SEO, kampanie. Pakiety od 3499 zł/mies. Fotz Studio."
         canonical="https://fotz.pl/kompleksowa-obsluga"
       />
       <BreadcrumbSchema 

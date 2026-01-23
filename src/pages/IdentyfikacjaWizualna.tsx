@@ -150,8 +150,8 @@ const IdentyfikacjaWizualna = () => {
     <>
     <Layout>
       <SEOHead
-        title="Identyfikacja Wizualna Firmy - Projektowanie logo i branding | Fotz Studio Poznań"
-        description="Profesjonalna identyfikacja wizualna firmy. Projektowanie logo, księgi znaku, materiałów firmowych. Spójna i efektywna komunikacja marki. Agencja brandingowa Poznań."
+        title="Identyfikacja Wizualna | Logo i Branding | Fotz"
+        description="Identyfikacja wizualna firmy - logo, księga znaku, materiały firmowe. Spójny branding dla Twojej marki. Agencja Poznań."
         canonical="https://fotz.pl/identyfikacja-wizualna"
         keywords="identyfikacja wizualna, branding, projektowanie logo, księga znaku, agencja brandingowa Poznań"
       />

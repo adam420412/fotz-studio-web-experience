@@ -8,8 +8,8 @@ const PozycjonowanieStronPoznan = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie stron Poznań - Skuteczna Agencja SEO Poznań | Fotz Studio"
-        description="Profesjonalne pozycjonowanie stron www w Poznaniu. Agencja SEO Poznań - audyt SEO, optymalizacja, link building. Zwiększ widoczność w Google i pozyskaj nowych klientów."
+        title="Pozycjonowanie Stron Poznań | Agencja SEO | Fotz"
+        description="Pozycjonowanie stron www Poznań. Audyt SEO, optymalizacja, link building. Zwiększ widoczność w Google. Fotz Studio."
         canonical="https://fotz.pl/pozycjonowanie-stron-poznan"
         keywords="pozycjonowanie stron Poznań, SEO Poznań, agencja SEO Poznań, pozycjonowanie stron www, optymalizacja SEO"
       />

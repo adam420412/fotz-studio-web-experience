@@ -58,5 +58,32 @@
 /blog/tiktok-biznes /blog/tiktok-dla-biznesu 301
 /blog/ux-ecommerce /blog/ux-ui-ecommerce 301
 
-# 5. SPA FALLBACK (must be last)
+# 5. CASE STUDY REDIRECTS (old /case-study-* -> new /realizacje/*)
+/case-study-enea /realizacje/enea-stadion 301
+/case-study-fps /realizacje/fps-cegielski 301
+/case-study-rppg /realizacje/rppg 301
+/case-study-verthe /realizacje/verthe 301
+/case-study-victory-cars /realizacje/victory-cars 301
+/case-study-przedszkole /realizacje/przedszkole 301
+/case-study-cute-dumpling /realizacje/cute-dumpling 301
+/case-study-klagem /realizacje/klagem 301
+/case-study-mechanica /realizacje/mechanica 301
+/case-study-gierki /realizacje/gierki 301
+/case-study-graf /realizacje/graf-tapicerstwo 301
+/case-study-fabryka-virali /realizacje/fabryka-virali 301
+/case-study-friendly-gas /realizacje/friendly-gas 301
+/case-study-celsjusz /realizacje/celsjusz 301
+/case-study-sookar /realizacje/sookar 301
+/case-study-stageplan /realizacje/stageplan 301
+/case-study-apartamenty /realizacje/apartamenty-chorwacja 301
+/case-study-lauvjah /realizacje/lauvjah 301
+
+# 6. LEGACY URL FIXES
+/realizacje/fps /realizacje/fps-cegielski 301
+/realizacje/graf /realizacje/graf-tapicerstwo 301
+/login /akademia/auth 301
+/agencja-social-media-poznan /social-media-poznan 301
+/kampanie-reklamowe-poznan /kampanie-reklamowe 301
+
+# 7. SPA FALLBACK (must be last)
 /* /index.html 200

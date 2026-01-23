@@ -136,8 +136,8 @@ const InstagramAds = () => {
   return (
     <Layout>
       <SEOHead
-        title="Instagram Ads - Kampanie reklamowe na Instagramie | Fotz Studio Poznań"
-        description="Profesjonalne kampanie Instagram Ads. Angażujące reklamy w Stories, Reels i feedzie. Docieraj do klientów wizualnym storytellingiem. Agencja Instagram Ads Poznań."
+        title="Instagram Ads Poznań | Reklamy IG | Fotz"
+        description="Kampanie Instagram Ads - Stories, Reels, Feed. Wizualny storytelling i Shopping Ads. Agencja IG Ads od 1500 zł/mies."
         canonical="https://fotz.pl/instagram-ads"
         keywords="Instagram Ads, reklamy Instagram, kampanie Instagram, Stories Ads, Reels Ads, agencja Instagram Poznań"
       />

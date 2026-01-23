@@ -423,8 +423,8 @@ export default function Uslugi() {
   return (
     <Layout>
       <SEOHead
-        title="Usługi Marketingowe - Strony www, Social Media, Reklama | Fotz Studio"
-        description="Kompleksowe usługi marketingowe: tworzenie stron internetowych, social media marketing, kampanie reklamowe Google Ads i Facebook Ads, SEO i branding."
+        title="Usługi Marketingowe | Strony, Reklama, Social | Fotz"
+        description="Strony internetowe, social media, Google Ads, Facebook Ads, SEO i branding. Kompleksowe usługi marketingowe. Fotz Studio Poznań."
         canonical="https://fotz.pl/uslugi"
         keywords="usługi marketingowe, strony internetowe, social media marketing, kampanie reklamowe, Google Ads, Facebook Ads, SEO, branding, agencja marketingowa"
       />

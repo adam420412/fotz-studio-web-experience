@@ -44,7 +44,33 @@
     { "source": "/blog/video-marketing", "destination": "/blog/video-marketing-trendy-2025", "permanent": true },
     { "source": "/blog/influencer-marketing", "destination": "/blog/influencer-marketing-polska", "permanent": true },
     { "source": "/blog/tiktok-biznes", "destination": "/blog/tiktok-dla-biznesu", "permanent": true },
-    { "source": "/blog/ux-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true }
+    { "source": "/blog/ux-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true },
+    
+    { "source": "/case-study-enea", "destination": "/realizacje/enea-stadion", "permanent": true },
+    { "source": "/case-study-fps", "destination": "/realizacje/fps-cegielski", "permanent": true },
+    { "source": "/case-study-rppg", "destination": "/realizacje/rppg", "permanent": true },
+    { "source": "/case-study-verthe", "destination": "/realizacje/verthe", "permanent": true },
+    { "source": "/case-study-victory-cars", "destination": "/realizacje/victory-cars", "permanent": true },
+    { "source": "/case-study-przedszkole", "destination": "/realizacje/przedszkole", "permanent": true },
+    { "source": "/case-study-cute-dumpling", "destination": "/realizacje/cute-dumpling", "permanent": true },
+    { "source": "/case-study-klagem", "destination": "/realizacje/klagem", "permanent": true },
+    { "source": "/case-study-mechanica", "destination": "/realizacje/mechanica", "permanent": true },
+    { "source": "/case-study-gierki", "destination": "/realizacje/gierki", "permanent": true },
+    { "source": "/case-study-graf", "destination": "/realizacje/graf-tapicerstwo", "permanent": true },
+    { "source": "/case-study-fabryka-virali", "destination": "/realizacje/fabryka-virali", "permanent": true },
+    { "source": "/case-study-friendly-gas", "destination": "/realizacje/friendly-gas", "permanent": true },
+    { "source": "/case-study-celsjusz", "destination": "/realizacje/celsjusz", "permanent": true },
+    { "source": "/case-study-sookar", "destination": "/realizacje/sookar", "permanent": true },
+    { "source": "/case-study-stageplan", "destination": "/realizacje/stageplan", "permanent": true },
+    { "source": "/case-study-apartamenty", "destination": "/realizacje/apartamenty-chorwacja", "permanent": true },
+    { "source": "/case-study-lauvjah", "destination": "/realizacje/lauvjah", "permanent": true },
+    
+    { "source": "/realizacje/fps", "destination": "/realizacje/fps-cegielski", "permanent": true },
+    { "source": "/realizacje/graf", "destination": "/realizacje/graf-tapicerstwo", "permanent": true },
+    
+    { "source": "/login", "destination": "/akademia/auth", "permanent": true },
+    { "source": "/agencja-social-media-poznan", "destination": "/social-media-poznan", "permanent": true },
+    { "source": "/kampanie-reklamowe-poznan", "destination": "/kampanie-reklamowe", "permanent": true }
   ],
   "rewrites": [
     { "source": "/((?!sitemap\\.xml|robots\\.txt|favicon\\.ico|.*\\..*).*)", "destination": "/index.html" }

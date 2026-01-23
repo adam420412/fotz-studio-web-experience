@@ -130,8 +130,8 @@ const GoogleAds = () => {
   return (
     <Layout>
       <SEOHead
-        title="Google Ads Poznań - Skuteczne kampanie reklamowe SEM | Fotz Studio"
-        description="Profesjonalne kampanie Google Ads. Zwiększ sprzedaż dzięki reklamom w wyszukiwarce Google, sieci reklamowej i YouTube. Agencja Google Ads Poznań."
+        title="Google Ads Poznań | Kampanie SEM i PPC | Fotz"
+        description="Kampanie Google Ads - wyszukiwarka, YouTube, Shopping. Zwiększ sprzedaż i leady. Agencja Google Ads Poznań od 1500 zł/mies."
         canonical="https://fotz.pl/google-ads"
         keywords="google ads, kampanie google, reklama google, sem, ppc, agencja google ads poznań"
       />

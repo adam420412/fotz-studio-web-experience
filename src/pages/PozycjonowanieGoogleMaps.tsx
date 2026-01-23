@@ -58,8 +58,8 @@ const PozycjonowanieGoogleMaps = () => {
   return (
     <Layout>
       <SEOHead
-        title="Pozycjonowanie Google Maps - Wizytówka Google Moja Firma | Fotz Studio"
-        description="Profesjonalne pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy w wynikach lokalnych, zdobądź więcej klientów. Optymalizacja Google Moja Firma."
+        title="Pozycjonowanie Google Maps | Wizytówka GMB | Fotz"
+        description="Pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy lokalnie. Optymalizacja Google Moja Firma. Fotz Studio."
         canonical="https://fotz.pl/pozycjonowanie-google-maps"
         keywords="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google"
       />

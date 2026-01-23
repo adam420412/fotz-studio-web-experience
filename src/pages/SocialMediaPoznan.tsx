@@ -106,8 +106,8 @@ export default function SocialMediaPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Social Media Poznań | Prowadzenie Facebooka i Instagrama | Fotz Studio"
-        description="Agencja social media Poznań - profesjonalne prowadzenie Facebooka, Instagrama i LinkedIn. Kampanie Meta Ads, content marketing i budowanie wizerunku marki. Bezpłatna konsultacja!"
+        title="Agencja Social Media Poznań | FB, IG, LinkedIn | Fotz"
+        description="Social media Poznań - prowadzenie FB, IG, LinkedIn. Kampanie Meta Ads, content. Bezpłatna konsultacja. Fotz Studio."
         canonical="https://fotz.pl/social-media-poznan"
         keywords="agencja social media poznań, prowadzenie facebooka poznań, social media poznań, instagram poznań, meta ads poznań"
       />
