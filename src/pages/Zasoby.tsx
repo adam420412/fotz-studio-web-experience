@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -130,6 +131,17 @@ const Zasoby = () => {
         title="Darmowe Zasoby Marketingowe - E-booki, Checklisty | Fotz Studio"
         description="Pobierz darmowe materiały marketingowe: e-booki, checklisty, szablony. Praktyczna wiedza o kampaniach reklamowych, SEO, social media i content marketingu."
         canonical="https://fotz.pl/zasoby"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Zasoby", url: "https://fotz.pl/zasoby" }
+        ]}
+      />
+      <WebPageSchema 
+        title="Darmowe zasoby marketingowe"
+        description="E-booki, checklisty i szablony marketingowe do pobrania."
+        url="https://fotz.pl/zasoby"
       />
       <Layout>
         {/* Hero */}

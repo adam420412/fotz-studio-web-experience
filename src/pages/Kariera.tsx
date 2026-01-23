@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -135,6 +136,17 @@ export default function Kariera() {
         title="Kariera w Fotz Studio | Dołącz do zespołu"
         description="Szukasz pracy w marketingu? Dołącz do Fotz Studio w Poznaniu. Aktualne oferty pracy: grafik, social media specialist, video editor i więcej."
         canonical="https://fotz.pl/kariera"
+      />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kariera", url: "https://fotz.pl/kariera" }
+        ]}
+      />
+      <WebPageSchema 
+        title="Kariera w Fotz Studio"
+        description="Aktualne oferty pracy w agencji marketingowej Fotz Studio w Poznaniu."
+        url="https://fotz.pl/kariera"
       />
 
       {/* Hero Section */}

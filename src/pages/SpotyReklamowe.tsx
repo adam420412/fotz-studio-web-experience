@@ -125,6 +125,13 @@ export default function SpotyReklamowe() {
         name="Spoty Reklamowe"
         description="Profesjonalna produkcja spotów reklamowych i filmów promocyjnych dla firm."
       />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Spoty reklamowe", url: "https://fotz.pl/spoty-reklamowe" }
+        ]}
+      />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}

@@ -1,4 +1,5 @@
 import { SEOHead } from "@/components/seo/SEOHead";
+import { BreadcrumbSchema, ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -197,6 +198,19 @@ const KompleksowaObsluga = () => {
         description="Kompleksowa obsługa marketingowa dla małych firm. Strategia, social media, SEO, kampanie reklamowe, content marketing. Skuteczny marketing z Fotz Studio."
         canonical="https://fotz.pl/kompleksowa-obsluga"
       />
+      <BreadcrumbSchema 
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Usługi", url: "https://fotz.pl/uslugi" },
+          { name: "Kompleksowa obsługa", url: "https://fotz.pl/kompleksowa-obsluga" }
+        ]}
+      />
+      <ServiceSchema 
+        name="Kompleksowa obsługa marketingowa"
+        description="Pełna obsługa marketingowa dla małych firm - strategia, social media, SEO, kampanie, content marketing."
+        provider="Fotz Studio"
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
       
       <Layout>
         {/* Hero Section */}
