@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweSosnowiec = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Sosnowiec | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Sosnowiec. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Sosnowca." />
-        <meta name="keywords" content="strony internetowe sosnowiec, tworzenie stron www sosnowiec, projektowanie stron sosnowiec, sklepy internetowe sosnowiec" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-sosnowiec" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Sosnowiec | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Sosnowiec. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Sosnowca."
+        canonical="https://fotz.pl/strony-internetowe-sosnowiec"
+        keywords="strony internetowe sosnowiec, tworzenie stron www sosnowiec, projektowanie stron sosnowiec, sklepy internetowe sosnowiec"
+      />
       
       <ServiceSchema name="Strony Internetowe Sosnowiec" description="Profesjonalne tworzenie stron internetowych dla firm z Sosnowca." provider="FOTZ Studio" areaServed="Sosnowiec" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Sosnowiec", url: "https://fotz.pl/strony-internetowe-sosnowiec" }]} />

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -84,12 +84,12 @@ const StronyInternetoweKamionki = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Kamionki | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Kamionki. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kamionek." />
-        <meta name="keywords" content="strony internetowe kamionki, tworzenie stron www kamionki, projektowanie stron kamionki, sklepy internetowe kamionki" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-kamionki" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Kamionki | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Kamionki. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kamionek."
+        canonical="https://fotz.pl/strony-internetowe-kamionki"
+        keywords="strony internetowe kamionki, tworzenie stron www kamionki, projektowanie stron kamionki, sklepy internetowe kamionki"
+      />
       
       <ServiceSchema name="Strony Internetowe Kamionki" description="Profesjonalne tworzenie stron internetowych dla firm z Kamionek." provider="FOTZ Studio" areaServed="Kamionki" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Kamionki", url: "https://fotz.pl/strony-internetowe-kamionki" }]} />

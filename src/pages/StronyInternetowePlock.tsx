@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetowePlock = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Płock | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Płock. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Płocka." />
-        <meta name="keywords" content="strony internetowe płock, tworzenie stron www płock, projektowanie stron płock, sklepy internetowe płock" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-plock" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Płock | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Płock. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Płocka."
+        canonical="https://fotz.pl/strony-internetowe-plock"
+        keywords="strony internetowe płock, tworzenie stron www płock, projektowanie stron płock, sklepy internetowe płock"
+      />
       
       <ServiceSchema name="Strony Internetowe Płock" description="Profesjonalne tworzenie stron internetowych dla firm z Płocka." provider="FOTZ Studio" areaServed="Płock" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Płock", url: "https://fotz.pl/strony-internetowe-plock" }]} />

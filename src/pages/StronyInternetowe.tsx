@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -317,14 +317,12 @@ const StronyInternetowe = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Tworzenie Stron Internetowych | Projektowanie WWW | Fotz</title>
-        <meta 
-          name="description" 
-          content="Profesjonalne tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page. Responsywne, szybkie i zoptymalizowane pod SEO. Sprawdź cennik." 
-        />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe" />
-      </Helmet>
+      <SEOHead
+        title="Tworzenie Stron Internetowych | Projektowanie WWW | Fotz"
+        description="Profesjonalne tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page. Responsywne, szybkie i zoptymalizowane pod SEO. Sprawdź cennik."
+        canonical="https://fotz.pl/strony-internetowe"
+        keywords="strony internetowe, tworzenie stron www, projektowanie stron, sklepy e-commerce, landing page, strony firmowe"
+      />
       
       <ServiceSchema 
         name="Tworzenie Stron Internetowych"

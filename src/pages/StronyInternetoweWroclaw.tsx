@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweWroclaw = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Wrocław | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Wrocław. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Wrocławia." />
-        <meta name="keywords" content="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-wroclaw" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Wrocław | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Wrocław. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Wrocławia."
+        canonical="https://fotz.pl/strony-internetowe-wroclaw"
+        keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław"
+      />
       
       <ServiceSchema name="Strony Internetowe Wrocław" description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia." provider="FOTZ Studio" areaServed="Wrocław" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Wrocław", url: "https://fotz.pl/strony-internetowe-wroclaw" }]} />

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -133,15 +133,12 @@ const StronyInternetoweLublin = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Lublin | Tworzenie Stron WWW i Sklepów | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Strony internetowe Lublin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Lublina i okolic." 
-        />
-        <meta name="keywords" content="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-lublin" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Lublin | Tworzenie Stron WWW i Sklepów | FOTZ"
+        description="Strony internetowe Lublin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Lublina i okolic."
+        canonical="https://fotz.pl/strony-internetowe-lublin"
+        keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin"
+      />
       
       <ServiceSchema 
         name="Strony Internetowe Lublin - Tworzenie Stron WWW i Sklepów"

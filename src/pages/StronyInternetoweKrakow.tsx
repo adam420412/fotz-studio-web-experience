@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -173,15 +173,12 @@ const StronyInternetoweKrakow = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Kraków | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta 
-          name="description" 
-          content="Strony internetowe Kraków. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Krakowa." 
-        />
-        <meta name="keywords" content="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-krakow" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Kraków | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Kraków. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Krakowa."
+        canonical="https://fotz.pl/strony-internetowe-krakow"
+        keywords="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków"
+      />
       
       <ServiceSchema 
         name="Strony Internetowe Kraków - Projektowanie i Tworzenie Stron WWW"

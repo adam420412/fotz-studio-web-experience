@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -75,12 +75,12 @@ const StronyInternetoweLegnica = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Legnica | Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Legnica. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Legnicy." />
-        <meta name="keywords" content="strony internetowe legnica, tworzenie stron www legnica, projektowanie stron legnica" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-legnica" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Legnica | Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Legnica. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Legnicy."
+        canonical="https://fotz.pl/strony-internetowe-legnica"
+        keywords="strony internetowe legnica, tworzenie stron www legnica, projektowanie stron legnica"
+      />
       
       <ServiceSchema name="Strony Internetowe Legnica" description="Tworzenie stron internetowych dla firm z Legnicy." provider="FOTZ Studio" areaServed="Legnica" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Legnica", url: "https://fotz.pl/strony-internetowe-legnica" }]} />

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweKonin = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Konin | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Konin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Konina." />
-        <meta name="keywords" content="strony internetowe konin, tworzenie stron www konin, projektowanie stron konin, sklepy internetowe konin" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-konin" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Konin | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Konin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Konina."
+        canonical="https://fotz.pl/strony-internetowe-konin"
+        keywords="strony internetowe konin, tworzenie stron www konin, projektowanie stron konin, sklepy internetowe konin"
+      />
       
       <ServiceSchema name="Strony Internetowe Konin" description="Profesjonalne tworzenie stron internetowych dla firm z Konina." provider="FOTZ Studio" areaServed="Konin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Konin", url: "https://fotz.pl/strony-internetowe-konin" }]} />

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -85,12 +85,12 @@ const StronyInternetoweOpole = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Strony Internetowe Opole | Projektowanie i Tworzenie Stron WWW | FOTZ</title>
-        <meta name="description" content="Strony internetowe Opole. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Opola." />
-        <meta name="keywords" content="strony internetowe opole, tworzenie stron www opole, projektowanie stron opole, sklepy internetowe opole" />
-        <link rel="canonical" href="https://fotz.pl/strony-internetowe-opole" />
-      </Helmet>
+      <SEOHead
+        title="Strony Internetowe Opole | Projektowanie i Tworzenie Stron WWW | FOTZ"
+        description="Strony internetowe Opole. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Opola."
+        canonical="https://fotz.pl/strony-internetowe-opole"
+        keywords="strony internetowe opole, tworzenie stron www opole, projektowanie stron opole, sklepy internetowe opole"
+      />
       
       <ServiceSchema name="Strony Internetowe Opole" description="Profesjonalne tworzenie stron internetowych dla firm z Opola." provider="FOTZ Studio" areaServed="Opole" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Opole", url: "https://fotz.pl/strony-internetowe-opole" }]} />
