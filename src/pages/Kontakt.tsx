@@ -141,6 +141,7 @@ export default function Kontakt() {
       <SEOHead
         title="Kontakt - Umów Bezpłatną Konsultację | Fotz Studio Poznań"
         description="Skontaktuj się z nami! Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Email: adam@fotz.pl. Umów bezpłatną konsultację marketingową online."
+        canonical="https://fotz.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań agencja, Plac Wolności 16"
       />
       <BreadcrumbSchema 

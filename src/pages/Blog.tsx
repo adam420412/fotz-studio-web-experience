@@ -337,6 +337,7 @@ export default function Blog() {
       <SEOHead
         title="Blog Marketingowy - Poradniki i Wiedza | Fotz Studio"
         description="Blog o marketingu, social media, SEO i reklamie internetowej. Poradniki, case studies i najnowsze trendy w marketingu cyfrowym."
+        canonical="https://fotz.pl/blog"
         keywords="blog marketingowy, poradniki marketing, social media trendy, SEO poradnik, Google Ads poradnik, marketing cyfrowy"
       />
       <BreadcrumbSchema 

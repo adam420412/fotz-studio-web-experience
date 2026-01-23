@@ -412,6 +412,7 @@ const Realizacje = () => {
       <SEOHead
         title="Portfolio i Realizacje - Case Studies | Fotz Studio"
         description="Ponad 600 zrealizowanych projektów: strony internetowe, e-commerce, kampanie marketingowe, fotografia i produkcja video. Zobacz nasze case studies."
+        canonical="https://fotz.pl/realizacje"
         keywords="portfolio, realizacje, case studies, strony internetowe przykłady, projekty marketingowe, fotografia eventowa, wizualizacje 3D"
       />
       <BreadcrumbSchema 
