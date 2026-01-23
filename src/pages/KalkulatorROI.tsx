@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -57,14 +57,11 @@ const KalkulatorROI = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Kalkulator ROI Reklam - Oblicz zwrot z inwestycji | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Oblicz szacowany zwrot z inwestycji w kampanie reklamowe Google Ads i Facebook Ads. Interaktywny kalkulator ROI dla Twojego biznesu." 
-        />
-        <link rel="canonical" href="https://fotz.pl/kalkulator-roi" />
-      </Helmet>
+      <SEOHead
+        title="Kalkulator ROI Reklam - Oblicz zwrot z inwestycji | Fotz Studio"
+        description="Oblicz szacowany zwrot z inwestycji w kampanie reklamowe Google Ads i Facebook Ads. Interaktywny kalkulator ROI dla Twojego biznesu."
+        canonical="https://fotz.pl/kalkulator-roi"
+      />
       <Layout>
         {/* Hero */}
         <section className="pt-32 pb-12 px-4 bg-gradient-to-b from-background to-muted/20">

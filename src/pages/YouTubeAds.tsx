@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
@@ -137,11 +137,11 @@ const YouTubeAds = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>YouTube Ads - Reklamy wideo na YouTube | Fotz Studio Poznań</title>
-        <meta name="description" content="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo. Produkcja spotów i obsługa kampanii. Agencja YouTube Ads Poznań." />
-        <link rel="canonical" href="https://fotz.pl/youtube-ads" />
-      </Helmet>
+      <SEOHead
+        title="YouTube Ads - Reklamy wideo na YouTube | Fotz Studio Poznań"
+        description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo. Produkcja spotów i obsługa kampanii. Agencja YouTube Ads Poznań."
+        canonical="https://fotz.pl/youtube-ads"
+      />
       <ServiceSchema
         name="YouTube Ads - Reklamy wideo"
         description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo."

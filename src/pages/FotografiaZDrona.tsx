@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -209,14 +209,11 @@ export default function FotografiaZDrona() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Fotografia z Drona | Zdjęcia i Filmy z Lotu Ptaka - Fotz Studio</title>
-        <meta
-          name="description"
-          content="Profesjonalne zdjęcia i filmy z drona w Poznaniu. Ujęcia z lotu ptaka dla nieruchomości, przemysłu i turystyki. Jakość 4K, panoramy 360°. Sprawdź cennik!"
-        />
-        <link rel="canonical" href="https://fotz.pl/fotografia-z-drona" />
-      </Helmet>
+      <SEOHead
+        title="Fotografia z Drona | Zdjęcia i Filmy z Lotu Ptaka - Fotz Studio"
+        description="Profesjonalne zdjęcia i filmy z drona w Poznaniu. Ujęcia z lotu ptaka dla nieruchomości, przemysłu i turystyki. Jakość 4K, panoramy 360°. Sprawdź cennik!"
+        canonical="https://fotz.pl/fotografia-z-drona"
+      />
 
       <ServiceSchema
         name="Fotografia z Drona"

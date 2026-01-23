@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Film, Play, Video, Camera, Clapperboard, Sparkles, Phone, ArrowRight, CheckCircle2, Rocket, Star, Award, Clock, Users, Target, TrendingUp, Palette, Share2 } from "lucide-react";
@@ -108,19 +108,12 @@ const breadcrumbItems = [
 export default function ProdukcjaFilmowPoznan() {
   return (
     <Layout>
-      <Helmet>
-        <title>Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz</title>
-        <meta name="description" content="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing. Studio filmowe Fotz z wieloletnim doświadczeniem." />
-        <meta name="keywords" content="produkcja filmów reklamowych poznań, studio filmowe poznań, spoty reklamowe, filmy promocyjne, video marketing, film korporacyjny, film produktowy" />
-        <link rel="canonical" href="https://fotz.pl/produkcja-filmow-poznan" />
-        <meta property="og:title" content="Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz" />
-        <meta property="og:description" content="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing." />
-        <meta property="og:url" content="https://fotz.pl/produkcja-filmow-poznan" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz" />
-        <meta name="twitter:description" content="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing." />
-      </Helmet>
+      <SEOHead
+        title="Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz"
+        description="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing. Studio filmowe Fotz z wieloletnim doświadczeniem."
+        canonical="https://fotz.pl/produkcja-filmow-poznan"
+        keywords="produkcja filmów reklamowych poznań, studio filmowe poznań, spoty reklamowe, filmy promocyjne, video marketing, film korporacyjny, film produktowy"
+      />
 
       <OrganizationSchema />
       <ServiceSchema 

@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -295,10 +295,11 @@ export default function KalkulatorCen() {
 
   return (
     <>
-      <Helmet>
-        <title>Kalkulator Cen Usług Marketingowych | Fotz Studio</title>
-        <meta name="description" content="Oblicz wstępny koszt usług marketingowych. Interaktywny kalkulator cen stron WWW, social media, kampanii reklamowych i więcej." />
-      </Helmet>
+      <SEOHead
+        title="Kalkulator Cen Usług Marketingowych | Fotz Studio"
+        description="Oblicz wstępny koszt usług marketingowych. Interaktywny kalkulator cen stron WWW, social media, kampanii reklamowych i więcej."
+        canonical="https://fotz.pl/kalkulator-cen"
+      />
       <Layout>
         <TooltipProvider>
           <section className="pt-40 pb-20 bg-gradient-to-b from-muted/30 to-background">

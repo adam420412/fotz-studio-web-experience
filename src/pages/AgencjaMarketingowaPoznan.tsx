@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
@@ -185,23 +185,12 @@ export default function AgencjaMarketingowaPoznan() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding. Umów bezpłatną konsultację!" 
-        />
-        <meta name="keywords" content="agencja marketingowa Poznań, marketing Poznań, social media Poznań, kampanie reklamowe Poznań, marketing internetowy Poznań, Google Ads Poznań, reklama internetowa Poznań, agencja social media, SEO Poznań" />
-        <link rel="canonical" href="https://fotz.pl/agencja-marketingowa-poznan" />
-        <meta property="og:title" content="Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio" />
-        <meta property="og:description" content="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fotz.pl/agencja-marketingowa-poznan" />
-        <meta property="og:locale" content="pl_PL" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio" />
-        <meta name="twitter:description" content="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding." />
-      </Helmet>
+      <SEOHead
+        title="Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio"
+        description="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding. Umów bezpłatną konsultację!"
+        canonical="https://fotz.pl/agencja-marketingowa-poznan"
+        keywords="agencja marketingowa Poznań, marketing Poznań, social media Poznań, kampanie reklamowe Poznań, marketing internetowy Poznań, Google Ads Poznań, reklama internetowa Poznań, agencja social media, SEO Poznań"
+      />
 
       {/* Structured Data */}
       <OrganizationSchema />

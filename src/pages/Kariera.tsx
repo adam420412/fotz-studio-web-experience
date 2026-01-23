@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -131,14 +131,11 @@ export default function Kariera() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Kariera w Fotz Studio | Dołącz do zespołu</title>
-        <meta
-          name="description"
-          content="Szukasz pracy w marketingu? Dołącz do Fotz Studio w Poznaniu. Aktualne oferty pracy: grafik, social media specialist, video editor i więcej."
-        />
-        <link rel="canonical" href="https://fotz.pl/kariera" />
-      </Helmet>
+      <SEOHead
+        title="Kariera w Fotz Studio | Dołącz do zespołu"
+        description="Szukasz pracy w marketingu? Dołącz do Fotz Studio w Poznaniu. Aktualne oferty pracy: grafik, social media specialist, video editor i więcej."
+        canonical="https://fotz.pl/kariera"
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-background to-secondary/20 pt-32 pb-16">

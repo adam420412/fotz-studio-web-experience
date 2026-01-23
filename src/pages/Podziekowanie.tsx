@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -45,11 +45,12 @@ export default function Podziekowanie() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Dziękujemy za zapytanie | Fotz Studio</title>
-        <meta name="description" content="Otrzymaliśmy Twoje zapytanie. Skontaktujemy się z Tobą w ciągu 24 godzin." />
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+      <SEOHead
+        title="Dziękujemy za zapytanie | Fotz Studio"
+        description="Otrzymaliśmy Twoje zapytanie. Skontaktujemy się z Tobą w ciągu 24 godzin."
+        canonical="https://fotz.pl/podziekowanie"
+        noIndex={true}
+      />
 
       <section className="min-h-[80vh] flex items-center justify-center pt-32 pb-20 bg-gradient-to-b from-background to-secondary/20">
         <div className="container-wide">

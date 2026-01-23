@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -114,11 +114,11 @@ const faqItems = [
 export default function SpotyReklamowe() {
   return (
     <Layout>
-      <Helmet>
-        <title>Spoty Reklamowe - Produkcja Filmów Promocyjnych | Fotz Studio</title>
-        <meta name="description" content="Profesjonalna produkcja spotów reklamowych i filmów promocyjnych. Kreatywne reklamy wideo dla Twojej marki. Studio Fotz Poznań." />
-        <link rel="canonical" href="https://fotz.pl/spoty-reklamowe" />
-      </Helmet>
+      <SEOHead
+        title="Spoty Reklamowe - Produkcja Filmów Promocyjnych | Fotz Studio"
+        description="Profesjonalna produkcja spotów reklamowych i filmów promocyjnych. Kreatywne reklamy wideo dla Twojej marki. Studio Fotz Poznań."
+        canonical="https://fotz.pl/spoty-reklamowe"
+      />
       
       <OrganizationSchema />
       <ServiceSchema 
