@@ -28,6 +28,7 @@ import {
   AccordionItem, 
   AccordionTrigger 
 } from "@/components/ui/accordion";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const stats = [
   { value: 3800, suffix: "M+", label: "Aktywnych użytkowników Meta" },
@@ -205,6 +206,20 @@ export default function FacebookInstagramAds() {
         canonical="https://fotz.pl/facebook-instagram-ads"
         keywords="meta ads, facebook ads, instagram ads, reklamy facebook, reklamy instagram, agencja meta, poznań"
       />
+      <ServiceSchema
+        name="Meta Ads - Facebook & Instagram"
+        description="Kompleksowa obsługa reklam Meta Ads - Facebook i Instagram w jednej strategii. Cross-platform retargeting i Advantage+."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
+          { name: "Facebook & Instagram Ads", url: "https://fotz.pl/facebook-instagram-ads" }
+        ]}
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">

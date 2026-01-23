@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { InstagramEmbed } from "@/components/InstagramEmbed";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -75,6 +76,19 @@ const AgencjaReklamowaPoznan = () => {
         canonical="https://fotz.pl/agencja-reklamowa-poznan"
         keywords="agencja reklamowa poznań, agencja marketingowa poznań, reklama poznań, kampanie reklamowe, branding poznań, google ads poznań"
       />
+      <ServiceSchema
+        name="Agencja Reklamowa Poznań"
+        description="Kompleksowe kampanie reklamowe, branding, Google Ads, Meta Ads. Strategiczny partner w budowaniu silnej marki."
+        provider="Fotz Studio"
+        areaServed="Poznań"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Agencja Reklamowa Poznań", url: "https://fotz.pl/agencja-reklamowa-poznan" }
+        ]}
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-background">

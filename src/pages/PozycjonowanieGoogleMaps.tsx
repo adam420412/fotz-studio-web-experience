@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -62,6 +63,20 @@ const PozycjonowanieGoogleMaps = () => {
         canonical="https://fotz.pl/pozycjonowanie-google-maps"
         keywords="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google"
       />
+      <ServiceSchema
+        name="Pozycjonowanie Google Maps"
+        description="Profesjonalne pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy w wynikach lokalnych."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Pozycjonowanie", url: "https://fotz.pl/pozycjonowanie" },
+          { name: "Google Maps", url: "https://fotz.pl/pozycjonowanie-google-maps" }
+        ]}
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}
       <section className="pt-32 sm:pt-36 md:pt-40 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-b from-background to-secondary/20">

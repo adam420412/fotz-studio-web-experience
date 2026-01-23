@@ -10,6 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 const services = [
   {
@@ -110,6 +111,20 @@ export default function SocialMediaPoznan() {
         canonical="https://fotz.pl/social-media-poznan"
         keywords="agencja social media poznań, prowadzenie facebooka poznań, social media poznań, instagram poznań, meta ads poznań"
       />
+      <ServiceSchema
+        name="Agencja Social Media Poznań"
+        description="Profesjonalne prowadzenie Facebooka, Instagrama i LinkedIn. Kampanie Meta Ads, content marketing i budowanie wizerunku marki."
+        provider="Fotz Studio"
+        areaServed="Poznań"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Social Media", url: "https://fotz.pl/social-media" },
+          { name: "Social Media Poznań", url: "https://fotz.pl/social-media-poznan" }
+        ]}
+      />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}
       <section className="pt-40 pb-20 section-padding bg-background">
