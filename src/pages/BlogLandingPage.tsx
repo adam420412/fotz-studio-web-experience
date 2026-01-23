@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Target, Zap, CheckCircle2, XCircle, MousePointer, BarChart3, Eye, ArrowRight } from "lucide-react";

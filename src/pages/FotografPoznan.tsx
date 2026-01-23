@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowRight, Camera, Users, Star, Heart, Calendar, MapPin, Clock, Image } from "lucide-react";
 import { Link } from "react-router-dom";

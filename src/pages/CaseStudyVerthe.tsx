@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, ShoppingCart, Search, Video, Shield, Smartphone, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import vertheImg from "@/assets/portfolio/verthe.png";
 
