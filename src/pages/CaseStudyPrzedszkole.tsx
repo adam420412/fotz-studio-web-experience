@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Video, Shield, Smartphone, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import przedszkoleImg from "@/assets/portfolio/przedszkole.png";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
@@ -40,11 +40,12 @@ const recommendations = [
 const CaseStudyPrzedszkole = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Przedszkole Mali Przyjaciele - Strona dla Placówki Edukacyjnej | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Publicznego Przedszkola Mali Przyjaciele. SEO, produkcja foto/video i responsywny design dla rodziców." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/przedszkole" />
-      </Helmet>
+      <SEOHead
+        title="Przedszkole Mali Przyjaciele - Strona dla Placówki Edukacyjnej | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Publicznego Przedszkola Mali Przyjaciele. SEO, produkcja foto/video i responsywny design dla rodziców."
+        canonical="https://fotz.pl/realizacje/przedszkole"
+        keywords="przedszkole, strona dla przedszkola, case study, SEO lokalne, edukacja"
+      />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Przedszkole", url: "https://fotz.pl/realizacje/przedszkole" }]} />
       <ArticleSchema title="Przedszkole Mali Przyjaciele - Strona dla placówki edukacyjnej" description="Case study: strona internetowa dla przedszkola z SEO lokalnym" url="https://fotz.pl/realizacje/przedszkole" datePublished="2024-05-10" dateModified="2026-01-09" />
 

@@ -1,5 +1,5 @@
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Link } from "react-router-dom";
 import { 
   Target, Users, TrendingUp, BarChart3, Zap, Eye, 
@@ -159,11 +159,12 @@ const TikTokAds = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>TikTok Ads - Kampanie reklamowe na TikToku | Fotz Studio Poznań</title>
-        <meta name="description" content="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo. Agencja TikTok Ads Poznań." />
-        <link rel="canonical" href="https://fotz.pl/tiktok-ads" />
-      </Helmet>
+      <SEOHead
+        title="TikTok Ads - Kampanie reklamowe na TikToku | Fotz Studio Poznań"
+        description="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo. Agencja TikTok Ads Poznań."
+        canonical="https://fotz.pl/tiktok-ads"
+        keywords="TikTok Ads, reklamy TikTok, kampanie TikTok, marketing TikTok, agencja TikTok Ads Poznań"
+      />
       <ServiceSchema
         name="TikTok Ads - Kampanie reklamowe"
         description="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo."

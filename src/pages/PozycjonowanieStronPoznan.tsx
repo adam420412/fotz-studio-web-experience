@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -7,11 +7,12 @@ import { ArrowRight, Search, TrendingUp, BarChart3, Target, CheckCircle, Globe, 
 const PozycjonowanieStronPoznan = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Pozycjonowanie stron Poznań - Skuteczna Agencja SEO Poznań | Fotz Studio</title>
-        <meta name="description" content="Profesjonalne pozycjonowanie stron www w Poznaniu. Agencja SEO Poznań - audyt SEO, optymalizacja, link building. Zwiększ widoczność w Google i pozyskaj nowych klientów." />
-        <meta name="keywords" content="pozycjonowanie stron Poznań, SEO Poznań, agencja SEO Poznań, pozycjonowanie stron www, optymalizacja SEO" />
-      </Helmet>
+      <SEOHead
+        title="Pozycjonowanie stron Poznań - Skuteczna Agencja SEO Poznań | Fotz Studio"
+        description="Profesjonalne pozycjonowanie stron www w Poznaniu. Agencja SEO Poznań - audyt SEO, optymalizacja, link building. Zwiększ widoczność w Google i pozyskaj nowych klientów."
+        canonical="https://fotz.pl/pozycjonowanie-stron-poznan"
+        keywords="pozycjonowanie stron Poznań, SEO Poznań, agencja SEO Poznań, pozycjonowanie stron www, optymalizacja SEO"
+      />
 
       {/* Hero Section */}
       <section className="pt-32 sm:pt-36 md:pt-40 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-b from-background to-secondary/20">

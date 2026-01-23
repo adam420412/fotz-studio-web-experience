@@ -1,5 +1,5 @@
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Link } from "react-router-dom";
 import { 
   Target, Users, TrendingUp, BarChart3, Zap, Eye, 
@@ -137,11 +137,12 @@ const LinkedInAds = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>LinkedIn Ads - Kampanie reklamowe B2B | Fotz Studio Poznań</title>
-        <meta name="description" content="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady. Agencja LinkedIn Ads Poznań." />
-        <link rel="canonical" href="https://fotz.pl/linkedin-ads" />
-      </Helmet>
+      <SEOHead
+        title="LinkedIn Ads - Kampanie reklamowe B2B | Fotz Studio Poznań"
+        description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady. Agencja LinkedIn Ads Poznań."
+        canonical="https://fotz.pl/linkedin-ads"
+        keywords="LinkedIn Ads, reklamy LinkedIn, kampanie B2B, marketing B2B, agencja LinkedIn Ads Poznań"
+      />
       <ServiceSchema
         name="LinkedIn Ads - Kampanie B2B"
         description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady."

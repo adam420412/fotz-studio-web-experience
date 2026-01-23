@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { motion, AnimatePresence } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -780,14 +780,12 @@ export default function Cennik() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Cennik Usług Marketingowych | Konfigurator | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Skonfiguruj pakiet usług marketingowych: strony internetowe, social media, SEO, produkcja video. Interaktywny konfigurator cen online."
-        />
-        <link rel="canonical" href="https://fotz.pl/cennik" />
-      </Helmet>
+      <SEOHead
+        title="Cennik Usług Marketingowych | Konfigurator | Fotz Studio"
+        description="Skonfiguruj pakiet usług marketingowych: strony internetowe, social media, SEO, produkcja video. Interaktywny konfigurator cen online."
+        canonical="https://fotz.pl/cennik"
+        keywords="cennik marketing, cennik usług, konfigurator cen, strony internetowe cena, social media cena, SEO cena"
+      />
 
       {/* Hero */}
       <section className="relative pt-32 pb-8 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">

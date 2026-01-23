@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Package, Users, ExternalLink, Cuboid } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { lazy, Suspense } from "react";
 import klagemImg from "@/assets/portfolio/klagem.png";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
@@ -43,11 +43,12 @@ const recommendations = [
 const CaseStudyKlagem = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Klagem - Modułowe Systemy Meblowe | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Klagem - producenta modułowych systemów meblowych. Konfigurator produktów 3D, SEO B2B i responsywny design. +180% zapytań." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/klagem" />
-      </Helmet>
+      <SEOHead
+        title="Klagem - Modułowe Systemy Meblowe | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Klagem - producenta modułowych systemów meblowych. Konfigurator produktów 3D, SEO B2B i responsywny design. +180% zapytań."
+        canonical="https://fotz.pl/realizacje/klagem"
+        keywords="Klagem, meble modułowe, konfigurator 3D, case study, strona B2B, SEO"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

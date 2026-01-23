@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Palette, Users, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import fpsImg from "@/assets/portfolio/fps-cegielski.png";
 
@@ -32,11 +32,12 @@ const results = [
 const CaseStudyFPS = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>FPS Fabryka Pojazdów Szynowych Poznań | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla FPS Poznań (Cegielski) - producenta pojazdów szynowych. Nowoczesny design, identyfikacja wizualna i UX." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/fps-poznan" />
-      </Helmet>
+      <SEOHead
+        title="FPS Fabryka Pojazdów Szynowych Poznań | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla FPS Poznań (Cegielski) - producenta pojazdów szynowych. Nowoczesny design, identyfikacja wizualna i UX."
+        canonical="https://fotz.pl/realizacje/fps-poznan"
+        keywords="FPS Poznań, Cegielski, strona internetowa, case study, UX design, branding"
+      />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },

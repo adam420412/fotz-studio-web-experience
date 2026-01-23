@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -33,12 +33,12 @@ const faqItems = [
 export default function BlogRemarketing() {
   return (
     <Layout>
-      <Helmet>
-        <title>Remarketing - kompletny poradnik dla firm 2025 | FOTZ Studio</title>
-        <meta name="description" content="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Poznaj strategie, koszty i najlepsze praktyki remarketingu dla e-commerce i usług." />
-        <meta name="keywords" content="remarketing, retargeting, remarketing google ads, remarketing facebook, porzucone koszyki, remarketing dynamiczny" />
-        <link rel="canonical" href="https://fotz.pl/blog/remarketing-poradnik" />
-      </Helmet>
+      <SEOHead
+        title="Remarketing - kompletny poradnik dla firm 2025 | FOTZ Studio"
+        description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Poznaj strategie, koszty i najlepsze praktyki remarketingu dla e-commerce i usług."
+        canonical="https://fotz.pl/blog/remarketing-poradnik"
+        keywords="remarketing, retargeting, remarketing google ads, remarketing facebook, porzucone koszyki, remarketing dynamiczny"
+      />
       <ArticleSchema
         title="Remarketing - kompletny poradnik dla firm 2025"
         description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Strategie, koszty i najlepsze praktyki."

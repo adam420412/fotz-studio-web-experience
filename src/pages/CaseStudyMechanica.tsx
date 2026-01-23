@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Factory, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import mechanicaImg from "@/assets/portfolio/mechanica.png";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
@@ -40,11 +40,12 @@ const recommendations = [
 const CaseStudyMechanica = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Mechanica - Producent Żurawi i Suwnic | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Mechanica - producenta urządzeń do transportu bliskiego. Żurawie, suwnice, wciągniki. SEO i design B2B." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/mechanica" />
-      </Helmet>
+      <SEOHead
+        title="Mechanica - Producent Żurawi i Suwnic | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Mechanica - producenta urządzeń do transportu bliskiego. Żurawie, suwnice, wciągniki. SEO i design B2B."
+        canonical="https://fotz.pl/realizacje/mechanica"
+        keywords="Mechanica, żurawie przemysłowe, suwnice, wciągniki, strona B2B, case study"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

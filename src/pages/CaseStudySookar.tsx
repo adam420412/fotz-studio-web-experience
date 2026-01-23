@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Car, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 import sookarImg from "@/assets/portfolio/sookar.jpg";
 
@@ -40,11 +40,12 @@ const recommendations = [
 const CaseStudySookar = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Sookar - Elite Car Market | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Sookar - elite car market. Katalog samochodów luksusowych, premium design i optymalizacja SEO." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/sookar" />
-      </Helmet>
+      <SEOHead
+        title="Sookar - Elite Car Market | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Sookar - elite car market. Katalog samochodów luksusowych, premium design i optymalizacja SEO."
+        canonical="https://fotz.pl/realizacje/sookar"
+        keywords="Sookar, samochody premium, luksusowe auta, case study, strona internetowa"
+      />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
