@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { 
@@ -209,11 +209,11 @@ const KampanieReklamowe = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Kampanie Reklamowe Google Ads & Facebook Ads | Fotz Studio Poznań</title>
-        <meta name="description" content="Profesjonalne kampanie reklamowe Google Ads i Facebook Ads. Zwiększ sprzedaż dzięki precyzyjnemu targetowaniu i optymalizacji. Agencja reklamowa Poznań." />
-        <link rel="canonical" href="https://fotz.pl/kampanie-reklamowe" />
-      </Helmet>
+      <SEOHead
+        title="Kampanie Reklamowe Google Ads & Facebook Ads | Fotz Studio Poznań"
+        description="Profesjonalne kampanie reklamowe Google Ads i Facebook Ads. Zwiększ sprzedaż dzięki precyzyjnemu targetowaniu i optymalizacji. Agencja reklamowa Poznań."
+        canonical="https://fotz.pl/kampanie-reklamowe"
+      />
       <ServiceSchema 
         name="Kampanie Reklamowe Google Ads i Facebook Ads"
         description="Profesjonalne kampanie reklamowe Google Ads, Facebook Ads, Instagram, TikTok i LinkedIn. Precyzyjne targetowanie i optymalizacja ROI."

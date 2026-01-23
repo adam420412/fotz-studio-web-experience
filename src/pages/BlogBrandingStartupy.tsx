@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, User, Share2, Lightbulb, Target, Palette, MessageSquare, Eye, Heart, Zap, CheckCircle } from "lucide-react";
@@ -46,15 +46,12 @@ export default function BlogBrandingStartupy() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Branding dla Startupów - Jak Zbudować Silną Markę od Zera | FOTZ Studio</title>
-        <meta
-          name="description"
-          content="Kompletny poradnik budowania marki dla startupów. Strategia brandingowa, identyfikacja wizualna, tone of voice i pozycjonowanie marki."
-        />
-        <meta name="keywords" content="branding startup, budowanie marki, identyfikacja wizualna, strategia marki, logo startup, brand book, pozycjonowanie marki" />
-        <link rel="canonical" href="https://fotz.pl/blog/branding-dla-startupow" />
-      </Helmet>
+      <SEOHead
+        title="Branding dla Startupów - Jak Zbudować Silną Markę od Zera | FOTZ Studio"
+        description="Kompletny poradnik budowania marki dla startupów. Strategia brandingowa, identyfikacja wizualna, tone of voice i pozycjonowanie marki."
+        canonical="https://fotz.pl/blog/branding-dla-startupow"
+        keywords="branding startup, budowanie marki, identyfikacja wizualna, strategia marki, logo startup, brand book, pozycjonowanie marki"
+      />
       <ArticleSchema
         title="Branding dla Startupów - Jak Zbudować Silną Markę od Zera"
         description="Kompletny poradnik budowania marki dla startupów. Strategia brandingowa, identyfikacja wizualna, tone of voice."

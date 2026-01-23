@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArrowRight, Target, Heart, Zap, Users, MapPin, Camera, Video, Film, Clapperboard } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -98,15 +98,12 @@ export default function ONas() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>O nas - Zespół Fotz Studio | Agencja Marketingowa Poznań</title>
-        <meta name="description" content="Poznaj zespół Fotz Studio - agencji marketingowej nowej generacji. Pasjonaci marketingu z 12+ latami doświadczenia. Biuro: Plac Wolności 16, Poznań." />
-        <meta name="keywords" content="zespół marketingowy, agencja marketingowa Poznań, Fotz Studio, o nas, marketing team" />
-        <link rel="canonical" href="https://fotz.pl/o-nas" />
-        <meta property="og:title" content="O nas | Fotz Studio Poznań" />
-        <meta property="og:description" content="Poznaj zespół Fotz Studio - pasjonaci marketingu, strategii i kreatywności." />
-        <meta property="og:url" content="https://fotz.pl/o-nas" />
-      </Helmet>
+      <SEOHead
+        title="O nas - Zespół Fotz Studio | Agencja Marketingowa Poznań"
+        description="Poznaj zespół Fotz Studio - agencji marketingowej nowej generacji. Pasjonaci marketingu z 12+ latami doświadczenia. Biuro: Plac Wolności 16, Poznań."
+        canonical="https://fotz.pl/o-nas"
+        keywords="zespół marketingowy, agencja marketingowa Poznań, Fotz Studio, o nas, marketing team"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

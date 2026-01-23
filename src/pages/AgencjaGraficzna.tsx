@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -145,11 +145,11 @@ const AgencjaGraficzna = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Agencja Graficzna Poznań - Kompleksowa obsługa graficzna firm | Fotz Studio</title>
-        <meta name="description" content="Profesjonalna agencja graficzna Poznań. Projektowanie logo, materiałów reklamowych, katalogów, ulotek. Kompleksowa obsługa graficzna dla firm. Sprawdź naszą ofertę!" />
-        <link rel="canonical" href="https://fotz.pl/agencja-graficzna" />
-      </Helmet>
+      <SEOHead
+        title="Agencja Graficzna Poznań - Kompleksowa obsługa graficzna firm | Fotz Studio"
+        description="Profesjonalna agencja graficzna Poznań. Projektowanie logo, materiałów reklamowych, katalogów, ulotek. Kompleksowa obsługa graficzna dla firm. Sprawdź naszą ofertę!"
+        canonical="https://fotz.pl/agencja-graficzna"
+      />
       <ServiceSchema 
         name="Agencja Graficzna - Obsługa graficzna firm"
         description="Profesjonalna agencja graficzna Poznań. Projektowanie logo, materiałów reklamowych, katalogów, ulotek."

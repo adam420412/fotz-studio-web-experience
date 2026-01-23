@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -405,15 +405,12 @@ const Wizualizacje3D = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Wizualizacje 3D Poznań - Fotorealistyczne Wizualizacje Architektoniczne | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Profesjonalne wizualizacje 3D w Poznaniu. Wizualizacje wnętrz, architektoniczne, produktowe oraz animacje 3D. Fotorealistyczna jakość i nowoczesne technologie." 
-        />
-        <meta name="keywords" content="wizualizacje 3D, wizualizacje architektoniczne, wizualizacje wnętrz, renderingi 3D, animacje 3D, Poznań" />
-        <link rel="canonical" href="https://fotz.pl/wizualizacje-3d" />
-      </Helmet>
+      <SEOHead
+        title="Wizualizacje 3D Poznań - Fotorealistyczne Wizualizacje Architektoniczne | Fotz Studio"
+        description="Profesjonalne wizualizacje 3D w Poznaniu. Wizualizacje wnętrz, architektoniczne, produktowe oraz animacje 3D. Fotorealistyczna jakość i nowoczesne technologie."
+        canonical="https://fotz.pl/wizualizacje-3d"
+        keywords="wizualizacje 3D, wizualizacje architektoniczne, wizualizacje wnętrz, renderingi 3D, animacje 3D, Poznań"
+      />
       
       <ServiceSchema 
         name="Wizualizacje 3D"

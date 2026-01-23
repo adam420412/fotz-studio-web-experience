@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -126,14 +126,11 @@ const Zasoby = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Darmowe Zasoby Marketingowe - E-booki, Checklisty | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Pobierz darmowe materiały marketingowe: e-booki, checklisty, szablony. Praktyczna wiedza o kampaniach reklamowych, SEO, social media i content marketingu." 
-        />
-        <link rel="canonical" href="https://fotz.pl/zasoby" />
-      </Helmet>
+      <SEOHead
+        title="Darmowe Zasoby Marketingowe - E-booki, Checklisty | Fotz Studio"
+        description="Pobierz darmowe materiały marketingowe: e-booki, checklisty, szablony. Praktyczna wiedza o kampaniach reklamowych, SEO, social media i content marketingu."
+        canonical="https://fotz.pl/zasoby"
+      />
       <Layout>
         {/* Hero */}
         <section className="pt-32 pb-12 px-4 bg-gradient-to-b from-background to-muted/20">

@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Input } from "@/components/ui/input";
@@ -149,14 +149,11 @@ const SlownikMarketingowy = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Słownik Marketingowy - Pojęcia i Definicje | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny słownik pojęć marketingowych od A do Z. Poznaj definicje: SEO, PPC, ROI, CTR, konwersja i wiele innych terminów marketingu cyfrowego." 
-        />
-        <link rel="canonical" href="https://fotz.pl/slownik-marketingowy" />
-      </Helmet>
+      <SEOHead
+        title="Słownik Marketingowy - Pojęcia i Definicje | Fotz Studio"
+        description="Kompletny słownik pojęć marketingowych od A do Z. Poznaj definicje: SEO, PPC, ROI, CTR, konwersja i wiele innych terminów marketingu cyfrowego."
+        canonical="https://fotz.pl/slownik-marketingowy"
+      />
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero */}

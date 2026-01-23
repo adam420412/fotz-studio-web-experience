@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -158,14 +158,11 @@ export default function EcommerceTworzenie() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Załóż Sklep Internetowy Online | Tworzenie E-sklepu | Fotz Studio</title>
-        <meta
-          name="description"
-          content="Tworzymy sklepy internetowe od podstaw. Wybór platformy e-commerce, integracja płatności i dostaw, AI i automatyzacja. Zacznij sprzedaż online z Fotz Studio."
-        />
-        <link rel="canonical" href="https://fotz.pl/ecommerce-tworzenie-sklepu" />
-      </Helmet>
+      <SEOHead
+        title="Załóż Sklep Internetowy Online | Tworzenie E-sklepu | Fotz Studio"
+        description="Tworzymy sklepy internetowe od podstaw. Wybór platformy e-commerce, integracja płatności i dostaw, AI i automatyzacja. Zacznij sprzedaż online z Fotz Studio."
+        canonical="https://fotz.pl/ecommerce-tworzenie-sklepu"
+      />
 
       <OrganizationSchema />
       <ServiceSchema

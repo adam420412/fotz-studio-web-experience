@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -192,13 +192,11 @@ const faqItems = [
 const KompleksowaObsluga = () => {
   return (
     <>
-      <Helmet>
-        <title>Kompleksowa Obsługa Marketingowa dla Małych Firm | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompleksowa obsługa marketingowa dla małych firm. Strategia, social media, SEO, kampanie reklamowe, content marketing. Skuteczny marketing z Fotz Studio." 
-        />
-      </Helmet>
+      <SEOHead
+        title="Kompleksowa Obsługa Marketingowa dla Małych Firm | Fotz Studio"
+        description="Kompleksowa obsługa marketingowa dla małych firm. Strategia, social media, SEO, kampanie reklamowe, content marketing. Skuteczny marketing z Fotz Studio."
+        canonical="https://fotz.pl/kompleksowa-obsluga"
+      />
       
       <Layout>
         {/* Hero Section */}
