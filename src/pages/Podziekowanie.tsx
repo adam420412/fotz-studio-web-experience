@@ -72,9 +72,9 @@ export default function Podziekowanie() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="w-24 h-24 mx-auto mb-8 rounded-full bg-green-500/20 flex items-center justify-center"
+              className="w-24 h-24 mx-auto mb-8 rounded-full bg-primary/20 flex items-center justify-center"
             >
-              <CheckCircle className="w-12 h-12 text-green-500" />
+              <CheckCircle className="w-12 h-12 text-primary" />
             </motion.div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">

@@ -95,15 +95,15 @@ const FacebookAds = () => {
   const faqItems = [
     {
       question: "Jakie są pierwsze kroki do stworzenia skutecznej kampanii na Facebooku?",
-      answer: <>Pierwszym krokiem jest zdefiniowanie celu kampanii reklamowej, wybór grupy docelowej oraz ustalenie budżetu. Następnie należy wybrać format reklamy, który najlepiej odpowiada celom twojej kampanii. Istotne jest także skonfigurowanie kampanii w Menadżerze Reklam Facebook i połączenie z profesjonalną <Link to="/strony-internetowe" className="text-blue-400 hover:underline">stroną internetową</Link>.</>
+      answer: <>Pierwszym krokiem jest zdefiniowanie celu kampanii reklamowej, wybór grupy docelowej oraz ustalenie budżetu. Następnie należy wybrać format reklamy, który najlepiej odpowiada celom twojej kampanii. Istotne jest także skonfigurowanie kampanii w Menadżerze Reklam Facebook i połączenie z profesjonalną <Link to="/strony-internetowe" className="text-primary hover:underline">stroną internetową</Link>.</>
     },
     {
       question: "Jak wybrać odbiorców swojej reklamy na Facebooku?",
-      answer: <>Aby wybrać swoich odbiorców, należy określić demograficzne, geograficzne i behawioralne kryteria wyboru. Facebook umożliwia również targetowanie na podstawie zainteresowań potencjalnych klientów, ich zachowań online oraz danych z fanpage'a twojego biznesu. Podobne możliwości oferują reklamy <Link to="/google-ads" className="text-blue-400 hover:underline">Google Ads</Link>.</>
+      answer: <>Aby wybrać swoich odbiorców, należy określić demograficzne, geograficzne i behawioralne kryteria wyboru. Facebook umożliwia również targetowanie na podstawie zainteresowań potencjalnych klientów, ich zachowań online oraz danych z fanpage'a twojego biznesu. Podobne możliwości oferują reklamy <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link>.</>
     },
     {
       question: "Jaki format reklamy na Facebooku będzie najskuteczniejszy?",
-      answer: <>Wybór formatu zależy od celów twojej kampanii. Facebook oferuje różnorodne formy reklamy, w tym posty sponsorowane, historie, materiały błyskawiczne, filmy, karuzele czy reklamy w Messengerze. Profesjonalne materiały wideo znacząco zwiększają skuteczność kampanii - sprawdź naszą <Link to="/produkcja-filmow-poznan" className="text-blue-400 hover:underline">produkcję wideo</Link>.</>
+      answer: <>Wybór formatu zależy od celów twojej kampanii. Facebook oferuje różnorodne formy reklamy, w tym posty sponsorowane, historie, materiały błyskawiczne, filmy, karuzele czy reklamy w Messengerze. Profesjonalne materiały wideo znacząco zwiększają skuteczność kampanii - sprawdź naszą <Link to="/produkcja-filmow-poznan" className="text-primary hover:underline">produkcję wideo</Link>.</>
     },
     {
       question: "Ile kosztuje reklama na Facebook Ads?",
@@ -111,19 +111,19 @@ const FacebookAds = () => {
     },
     {
       question: "Jak określić cel reklamowy kampanii na Facebooku?",
-      answer: <>Podczas tworzenia kampanii możesz wybrać jedną z dostępnych opcji celów, takich jak zwiększenie świadomości marki, generowanie leadów, konwersje na stronie internetowej, ruch na stronie czy promocja aplikacji mobilnej. Wybór celu powinien być dopasowany do strategii <Link to="/kompleksowa-obsluga-marketingowa" className="text-blue-400 hover:underline">marketingowej</Link>.</>
+      answer: <>Podczas tworzenia kampanii możesz wybrać jedną z dostępnych opcji celów, takich jak zwiększenie świadomości marki, generowanie leadów, konwersje na stronie internetowej, ruch na stronie czy promocja aplikacji mobilnej. Wybór celu powinien być dopasowany do strategii <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">marketingowej</Link>.</>
     },
     {
       question: "Jak mierzyć efektywność kampanii reklamowej na Facebooku?",
-      answer: <>Efektywność kampanii można mierzyć za pomocą narzędzi analitycznych oferowanych przez Facebooka, takich jak Menadżer Reklam oraz Insights. Te narzędzia udostępniają dane na temat zasięgu, interakcji, konwersji oraz ROI. Warto połączyć te dane z analityką <Link to="/strony-internetowe" className="text-blue-400 hover:underline">strony internetowej</Link>.</>
+      answer: <>Efektywność kampanii można mierzyć za pomocą narzędzi analitycznych oferowanych przez Facebooka, takich jak Menadżer Reklam oraz Insights. Te narzędzia udostępniają dane na temat zasięgu, interakcji, konwersji oraz ROI. Warto połączyć te dane z analityką <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
     },
     {
       question: "Czy warto powierzyć prowadzenie kampanii agencji reklamowej?",
-      answer: <>Decyzja o współpracy z agencją powinna zależeć od budżetu, dostępnych zasobów oraz wiedzy specjalistycznej. <Link to="/kompleksowa-obsluga-marketingowa" className="text-blue-400 hover:underline">Agencje marketingowe</Link> oferują profesjonalne usługi, które mogą znacząco zwiększyć efektywność kampanii dzięki doświadczeniu i dostępowi do zaawansowanych narzędzi.</>
+      answer: <>Decyzja o współpracy z agencją powinna zależeć od budżetu, dostępnych zasobów oraz wiedzy specjalistycznej. <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">Agencje marketingowe</Link> oferują profesjonalne usługi, które mogą znacząco zwiększyć efektywność kampanii dzięki doświadczeniu i dostępowi do zaawansowanych narzędzi.</>
     },
     {
       question: "Jakie są najczęstsze błędy przy tworzeniu reklam na Facebooku?",
-      answer: <>Najczęstsze błędy to nieprecyzyjne określenie grupy docelowej, nieodpowiedni wybór formatu reklamy, brak jasnego wezwania do działania, a także niedostosowanie treści i grafiki reklamy do preferencji odbiorców. Profesjonalna <Link to="/social-media-poznan" className="text-blue-400 hover:underline">obsługa social media</Link> pomaga uniknąć tych błędów.</>
+      answer: <>Najczęstsze błędy to nieprecyzyjne określenie grupy docelowej, nieodpowiedni wybór formatu reklamy, brak jasnego wezwania do działania, a także niedostosowanie treści i grafiki reklamy do preferencji odbiorców. Profesjonalna <Link to="/social-media-poznan" className="text-primary hover:underline">obsługa social media</Link> pomaga uniknąć tych błędów.</>
     },
   ];
 

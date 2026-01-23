@@ -227,10 +227,10 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                   value={formData.name}
                   onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                   placeholder="Jan Kowalski"
-                  className={cn("pl-10 bg-secondary", formErrors.name && "border-red-500")}
+                  className={cn("pl-10 bg-secondary", formErrors.name && "border-destructive")}
                 />
               </div>
-              {formErrors.name && <p className="text-xs text-red-500 mt-1">{formErrors.name}</p>}
+              {formErrors.name && <p className="text-xs text-destructive mt-1">{formErrors.name}</p>}
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">Email *</label>
@@ -241,10 +241,10 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                   value={formData.email}
                   onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                   placeholder="jan@firma.pl"
-                  className={cn("pl-10 bg-secondary", formErrors.email && "border-red-500")}
+                  className={cn("pl-10 bg-secondary", formErrors.email && "border-destructive")}
                 />
               </div>
-              {formErrors.email && <p className="text-xs text-red-500 mt-1">{formErrors.email}</p>}
+              {formErrors.email && <p className="text-xs text-destructive mt-1">{formErrors.email}</p>}
             </div>
           </div>
 
@@ -258,10 +258,10 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                   value={formData.phone}
                   onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                   placeholder="+48 123 456 789"
-                  className={cn("pl-10 bg-secondary", formErrors.phone && "border-red-500")}
+                  className={cn("pl-10 bg-secondary", formErrors.phone && "border-destructive")}
                 />
               </div>
-              {formErrors.phone && <p className="text-xs text-red-500 mt-1">{formErrors.phone}</p>}
+              {formErrors.phone && <p className="text-xs text-destructive mt-1">{formErrors.phone}</p>}
             </div>
             <div>
               <label className="block text-sm font-medium mb-2">Firma</label>
@@ -291,7 +291,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           </div>
 
           {formErrors.general && (
-            <p className="text-sm text-red-500 text-center">{formErrors.general}</p>
+            <p className="text-sm text-destructive text-center">{formErrors.general}</p>
           )}
 
           <div className="flex gap-3">
@@ -384,14 +384,14 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                 >
                   {time}
                   {isBooked && (
-                    <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full" />
+                    <span className="absolute -top-1 -right-1 w-3 h-3 bg-destructive rounded-full" />
                   )}
                 </button>
               );
             })}
           </div>
           <p className="text-xs text-muted-foreground">
-            <span className="inline-block w-2 h-2 bg-red-500 rounded-full mr-1" />
+            <span className="inline-block w-2 h-2 bg-destructive rounded-full mr-1" />
             Terminy oznaczone na czerwono są już zajęte
           </p>
         </div>
