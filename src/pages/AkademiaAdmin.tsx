@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Navigate, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
 import { useAdminMaterials, MaterialFormData, AcademyMaterial } from '@/hooks/useAdminMaterials';

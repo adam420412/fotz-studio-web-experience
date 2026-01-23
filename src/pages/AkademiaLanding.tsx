@@ -12,7 +12,7 @@ import {
   Award,
   Sparkles
 } from 'lucide-react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import logoFotz from '@/assets/logo-fotz.png';
 
 // Sample product covers for marquee - reduced for performance
