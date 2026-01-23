@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { 
   ArrowLeft, 
   ArrowRight, 
@@ -223,11 +223,12 @@ export default function CaseStudyEnea() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Enea Stadion Poznań - Case Study | Fotz Studio</title>
-        <meta name="description" content="Kompleksowa obsługa marketingowa Enea Stadion Poznań: +340% wzrost zaangażowania, 2M+ wyświetleń miesięcznie. Strona www, social media, produkcja video." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/enea-stadion" />
-      </Helmet>
+      <SEOHead
+        title="Enea Stadion Poznań - Case Study | Fotz Studio"
+        description="Kompleksowa obsługa marketingowa Enea Stadion Poznań: +340% wzrost zaangażowania, 2M+ wyświetleń miesięcznie. Strona www, social media, produkcja video."
+        canonical="https://fotz.pl/realizacje/enea-stadion"
+        keywords="Enea Stadion, case study, marketing sportowy, social media, produkcja video, Poznań"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

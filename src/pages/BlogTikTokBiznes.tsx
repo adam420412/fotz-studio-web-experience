@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Video, Users, TrendingUp, Sparkles, Music, Zap, Target, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
@@ -32,15 +32,12 @@ const faqItems = [
 const BlogTikTokBiznes = () => {
   return (
     <>
-      <Helmet>
-        <title>TikTok dla biznesu - jak skutecznie promować firmę na TikToku | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Kompletny poradnik TikTok dla firm. Dowiedz się jak tworzyć angażujące treści, budować społeczność i wykorzystać TikTok Ads do promocji biznesu." 
-        />
-        <meta name="keywords" content="TikTok dla biznesu, TikTok marketing, TikTok Ads, reklamy TikTok, social media marketing, wideo marketing" />
-        <link rel="canonical" href="https://fotz.pl/blog/tiktok-dla-biznesu" />
-      </Helmet>
+      <SEOHead
+        title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku | Fotz Studio"
+        description="Kompletny poradnik TikTok dla firm. Dowiedz się jak tworzyć angażujące treści, budować społeczność i wykorzystać TikTok Ads do promocji biznesu."
+        canonical="https://fotz.pl/blog/tiktok-dla-biznesu"
+        keywords="TikTok dla biznesu, TikTok marketing, TikTok Ads, reklamy TikTok, social media marketing, wideo marketing"
+      />
       <ArticleSchema
         title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku"
         description="Kompletny poradnik TikTok dla firm. Strategie, formaty i TikTok Ads."

@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Bot, TrendingUp, Target, Zap, Users, BarChart3, MessageSquare, Lightbulb } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
@@ -32,15 +32,12 @@ const faqItems = [
 const BlogAIMarketing = () => {
   return (
     <>
-      <Helmet>
-        <title>AI w marketingu - praktyczne zastosowania dla MŚP w 2025 | Fotz Studio</title>
-        <meta 
-          name="description" 
-          content="Poznaj praktyczne zastosowania sztucznej inteligencji w marketingu dla małych i średnich firm. Narzędzia AI, automatyzacja i strategie na 2025 rok." 
-        />
-        <meta name="keywords" content="AI marketing, sztuczna inteligencja, marketing MŚP, automatyzacja marketingu, ChatGPT, narzędzia AI, marketing 2025" />
-        <link rel="canonical" href="https://fotz.pl/blog/ai-w-marketingu-msp-2025" />
-      </Helmet>
+      <SEOHead
+        title="AI w marketingu - praktyczne zastosowania dla MŚP w 2025 | Fotz Studio"
+        description="Poznaj praktyczne zastosowania sztucznej inteligencji w marketingu dla małych i średnich firm. Narzędzia AI, automatyzacja i strategie na 2025 rok."
+        canonical="https://fotz.pl/blog/ai-w-marketingu-msp-2025"
+        keywords="AI marketing, sztuczna inteligencja, marketing MŚP, automatyzacja marketingu, ChatGPT, narzędzia AI, marketing 2025"
+      />
       <ArticleSchema
         title="AI w marketingu - praktyczne zastosowania dla MŚP w 2025"
         description="Poznaj praktyczne zastosowania sztucznej inteligencji w marketingu dla małych i średnich firm."

@@ -1,10 +1,10 @@
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { ArrowRight, Camera, Users, Star, Heart, Calendar, MapPin, Clock, Image } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { BackstageGallery } from "@/components/sections/BackstageGallery";
 import portrait1 from "@/assets/fotograf/portrait-1.png";
 import portrait2 from "@/assets/fotograf/portrait-2.jpg";
@@ -125,11 +125,12 @@ const faqItems = [
 const FotografPoznan = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Fotograf Poznań - Profesjonalne Sesje Fotograficzne | Fotz Studio</title>
-        <meta name="description" content="Profesjonalny fotograf w Poznaniu. Sesje rodzinne, biznesowe, ciążowe, portretowe i eventowe. Uwieczniamy wyjątkowe chwile w różnorodnych sesjach zdjęciowych." />
-        <link rel="canonical" href="https://fotz.pl/fotograf-poznan" />
-      </Helmet>
+      <SEOHead
+        title="Fotograf Poznań - Profesjonalne Sesje Fotograficzne | Fotz Studio"
+        description="Profesjonalny fotograf w Poznaniu. Sesje rodzinne, biznesowe, ciążowe, portretowe i eventowe. Uwieczniamy wyjątkowe chwile w różnorodnych sesjach zdjęciowych."
+        canonical="https://fotz.pl/fotograf-poznan"
+        keywords="fotograf Poznań, sesje fotograficzne, fotografia eventowa, zdjęcia biznesowe, fotograf rodzinny"
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center pt-32 sm:pt-40 pb-16 sm:pb-20 overflow-hidden">

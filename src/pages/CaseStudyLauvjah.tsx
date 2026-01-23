@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Globe, Search, Shield, Smartphone, Truck, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
 
@@ -40,11 +40,12 @@ const recommendations = [
 const CaseStudyLauvjah = () => {
   return (
     <Layout>
-      <Helmet>
-        <title>Lauvjah - Firma Transportowo-Spedycyjna | Case Study | Fotz Studio</title>
-        <meta name="description" content="Realizacja strony internetowej dla Lauvjah - firmy transportowo-spedycyjnej z flotą 343+ zestawów Euro6. SEO, prezentacja floty i lead generation." />
-        <link rel="canonical" href="https://fotz.pl/realizacje/lauvjah" />
-      </Helmet>
+      <SEOHead
+        title="Lauvjah - Firma Transportowo-Spedycyjna | Case Study | Fotz Studio"
+        description="Realizacja strony internetowej dla Lauvjah - firmy transportowo-spedycyjnej z flotą 343+ zestawów Euro6. SEO, prezentacja floty i lead generation."
+        canonical="https://fotz.pl/realizacje/lauvjah"
+        keywords="Lauvjah, transport, spedycja, TSL, strona internetowa, case study, SEO"
+      />
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },

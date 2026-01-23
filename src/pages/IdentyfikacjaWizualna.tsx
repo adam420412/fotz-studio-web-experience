@@ -1,7 +1,7 @@
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { 
   Palette, Eye, Layers, FileText, PenTool, 
   Monitor, Printer, Target, CheckCircle2, ArrowRight,
@@ -149,11 +149,12 @@ const IdentyfikacjaWizualna = () => {
   return (
     <>
     <Layout>
-      <Helmet>
-        <title>Identyfikacja Wizualna Firmy - Projektowanie logo i branding | Fotz Studio Poznań</title>
-        <meta name="description" content="Profesjonalna identyfikacja wizualna firmy. Projektowanie logo, księgi znaku, materiałów firmowych. Spójna i efektywna komunikacja marki. Agencja brandingowa Poznań." />
-        <link rel="canonical" href="https://fotz.pl/identyfikacja-wizualna" />
-      </Helmet>
+      <SEOHead
+        title="Identyfikacja Wizualna Firmy - Projektowanie logo i branding | Fotz Studio Poznań"
+        description="Profesjonalna identyfikacja wizualna firmy. Projektowanie logo, księgi znaku, materiałów firmowych. Spójna i efektywna komunikacja marki. Agencja brandingowa Poznań."
+        canonical="https://fotz.pl/identyfikacja-wizualna"
+        keywords="identyfikacja wizualna, branding, projektowanie logo, księga znaku, agencja brandingowa Poznań"
+      />
       <ServiceSchema 
         name="Identyfikacja Wizualna i Branding"
         description="Profesjonalna identyfikacja wizualna firmy. Projektowanie logo, księgi znaku, materiałów firmowych."

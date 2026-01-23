@@ -1,5 +1,5 @@
-import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Link } from "react-router-dom";
 import { 
   Target, Users, TrendingUp, BarChart3, Zap, Eye, 
@@ -135,11 +135,12 @@ const InstagramAds = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Instagram Ads - Kampanie reklamowe na Instagramie | Fotz Studio Poznań</title>
-        <meta name="description" content="Profesjonalne kampanie Instagram Ads. Angażujące reklamy w Stories, Reels i feedzie. Docieraj do klientów wizualnym storytellingiem. Agencja Instagram Ads Poznań." />
-        <link rel="canonical" href="https://fotz.pl/instagram-ads" />
-      </Helmet>
+      <SEOHead
+        title="Instagram Ads - Kampanie reklamowe na Instagramie | Fotz Studio Poznań"
+        description="Profesjonalne kampanie Instagram Ads. Angażujące reklamy w Stories, Reels i feedzie. Docieraj do klientów wizualnym storytellingiem. Agencja Instagram Ads Poznań."
+        canonical="https://fotz.pl/instagram-ads"
+        keywords="Instagram Ads, reklamy Instagram, kampanie Instagram, Stories Ads, Reels Ads, agencja Instagram Poznań"
+      />
 
       <ServiceSchema 
         name="Instagram Ads - Kampanie reklamowe"

@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -276,14 +276,12 @@ const Pozycjonowanie = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Pozycjonowanie Stron WWW | SEO Google | Fotz</title>
-        <meta 
-          name="description" 
-          content="Pozycjonowanie stron internetowych w Google. Skuteczne SEO, audyt strony, link building. Zwiększamy widoczność i ruch organiczny. Sprawdź cennik." 
-        />
-        <link rel="canonical" href="https://fotz.pl/pozycjonowanie" />
-      </Helmet>
+      <SEOHead
+        title="Pozycjonowanie Stron WWW | SEO Google | Fotz"
+        description="Pozycjonowanie stron internetowych w Google. Skuteczne SEO, audyt strony, link building. Zwiększamy widoczność i ruch organiczny. Sprawdź cennik."
+        canonical="https://fotz.pl/pozycjonowanie"
+        keywords="pozycjonowanie stron, SEO, pozycjonowanie Google, optymalizacja SEO, link building, audyt SEO"
+      />
       
       <ServiceSchema 
         name="Pozycjonowanie Stron Internetowych"
