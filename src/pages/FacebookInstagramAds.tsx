@@ -201,8 +201,8 @@ export default function FacebookInstagramAds() {
   return (
     <Layout>
       <SEOHead
-        title="Meta Ads - Facebook & Instagram Ads | Fotz Studio Poznań"
-        description="Kompleksowa obsługa reklam Meta Ads - Facebook i Instagram w jednej strategii. Cross-platform retargeting, Advantage+ i synergia platform. Agencja Poznań."
+        title="Meta Ads - Facebook & Instagram | Fotz Poznań"
+        description="Reklamy Meta Ads - Facebook i Instagram w jednej strategii. Cross-platform retargeting i Advantage+. Agencja Poznań."
         canonical="https://fotz.pl/facebook-instagram-ads"
         keywords="meta ads, facebook ads, instagram ads, reklamy facebook, reklamy instagram, agencja meta, poznań"
       />
