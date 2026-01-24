@@ -335,10 +335,10 @@ export default function Blog() {
   return (
     <Layout>
       <SEOHead
-        title="Blog Marketingowy - Poradniki i Wiedza | Fotz Studio"
-        description="Blog o marketingu, social media, SEO i reklamie internetowej. Poradniki, case studies i najnowsze trendy w marketingu cyfrowym."
+        title="Blog Marketingowy | Fotz Studio"
+        description="Poradniki marketingu, SEO i social media. Praktyczna wiedza dla firm od agencji Fotz Studio."
         canonical="https://fotz.pl/blog"
-        keywords="blog marketingowy, poradniki marketing, social media trendy, SEO poradnik, Google Ads poradnik, marketing cyfrowy"
+        keywords="blog marketingowy, poradniki marketing, SEO, social media, Google Ads"
       />
       <BreadcrumbSchema 
         items={[
@@ -377,6 +377,8 @@ export default function Blog() {
                   <img
                     src={featuredPost.image}
                     alt={featuredPost.title}
+                    loading="eager"
+                    fetchPriority="high"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
@@ -491,6 +493,8 @@ export default function Blog() {
                   <img
                     src={post.image}
                     alt={post.title}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
