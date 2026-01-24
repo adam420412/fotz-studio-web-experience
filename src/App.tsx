@@ -148,6 +148,7 @@ const StudioPodcastowe = lazy(() => import("./pages/StudioPodcastowe"));
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
 const GoogleAds = lazy(() => import("./pages/GoogleAds"));
 const KampanieReklamowe = lazy(() => import("./pages/KampanieReklamowe"));
+const KampanieReklamowePoznan = lazy(() => import("./pages/KampanieReklamowePoznan"));
 const TikTokAds = lazy(() => import("./pages/TikTokAds"));
 const LinkedInAds = lazy(() => import("./pages/LinkedInAds"));
 const YouTubeAds = lazy(() => import("./pages/YouTubeAds"));
@@ -323,6 +324,7 @@ const App = () => (
                 <Route path="/facebook-ads" element={<FacebookAds />} />
                 <Route path="/google-ads" element={<GoogleAds />} />
                 <Route path="/kampanie-reklamowe" element={<KampanieReklamowe />} />
+                <Route path="/kampanie-reklamowe-poznan" element={<KampanieReklamowePoznan />} />
                 <Route path="/tiktok-ads" element={<TikTokAds />} />
                 <Route path="/linkedin-ads" element={<LinkedInAds />} />
                 <Route path="/youtube-ads" element={<YouTubeAds />} />

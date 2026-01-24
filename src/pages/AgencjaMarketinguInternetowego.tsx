@@ -416,7 +416,7 @@ export default function AgencjaMarketinguInternetowego() {
 
             <motion.div variants={fadeIn} className="mt-12 text-center">
               <Button asChild variant="outline" size="lg" className="border-foreground/20 hover:bg-foreground/5">
-                <Link to="/kampanie-reklamowe-poznan/">
+                <Link to="/kampanie-reklamowe-poznan">
                   Dowiedz się więcej o kampaniach
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
