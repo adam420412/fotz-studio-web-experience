@@ -308,7 +308,7 @@ const MarketingGastronomia = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <Link to="/case-study-cute-dumpling" className="block group">
+              <Link to="/realizacje/cute-dumpling" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
                   <img 
                     src={cuteDumplingImg} 
