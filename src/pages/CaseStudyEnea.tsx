@@ -618,6 +618,96 @@ export default function CaseStudyEnea() {
         </div>
       </section>
 
+      {/* Related Services & Case Studies - Internal Links */}
+      <section className="section-padding bg-background">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-12"
+          >
+            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
+              Powiązane usługi
+            </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold">
+              Jak możemy <span className="text-gradient">pomóc Twojej marce?</span>
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <Link to="/social-media" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+                <Instagram className="w-8 h-8 text-primary mb-4" />
+                <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Social Media</h3>
+                <p className="text-sm text-muted-foreground">Prowadzenie profili, tworzenie contentu i budowanie zaangażowanej społeczności.</p>
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <Link to="/produkcja-filmow-poznan" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+                <Video className="w-8 h-8 text-primary mb-4" />
+                <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Produkcja Video</h3>
+                <p className="text-sm text-muted-foreground">Spoty reklamowe, relacje z eventów i materiały promocyjne dla social media.</p>
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
+              <Link to="/strony-internetowe" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+                <Globe className="w-8 h-8 text-primary mb-4" />
+                <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Strony Internetowe</h3>
+                <p className="text-sm text-muted-foreground">Nowoczesne strony www z systemami rezerwacji i integracjami.</p>
+              </Link>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-8"
+          >
+            <h3 className="text-2xl font-heading font-bold mb-6">
+              Zobacz inne <span className="text-gradient">realizacje</span>
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-4 gap-4">
+            <Link to="/realizacje/fps-cegielski" className="block p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+              <h4 className="font-bold mb-1 group-hover:text-primary transition-colors">FPS Cegielski</h4>
+              <p className="text-xs text-muted-foreground">Strona www dla producenta</p>
+            </Link>
+            <Link to="/realizacje/gierki" className="block p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+              <h4 className="font-bold mb-1 group-hover:text-primary transition-colors">Gierki</h4>
+              <p className="text-xs text-muted-foreground">Centrum rozrywki premium</p>
+            </Link>
+            <Link to="/realizacje/klagem" className="block p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+              <h4 className="font-bold mb-1 group-hover:text-primary transition-colors">Klagem</h4>
+              <p className="text-xs text-muted-foreground">E-commerce dla branży beauty</p>
+            </Link>
+            <Link to="/realizacje/rppg" className="block p-4 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+              <h4 className="font-bold mb-1 group-hover:text-primary transition-colors">RPPG</h4>
+              <p className="text-xs text-muted-foreground">Strona dla organizacji</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-card">
         <div className="container-wide text-center">
