@@ -370,7 +370,7 @@ const MarketingEcommerceRetail = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <Link to="/case-study-friendly-gas" className="block group">
+              <Link to="/realizacje/friendly-gas" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
                   <img 
                     src={friendlyGasImg} 

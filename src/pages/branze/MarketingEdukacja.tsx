@@ -308,7 +308,7 @@ const MarketingEdukacja = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <Link to="/case-study-przedszkole" className="block group">
+              <Link to="/realizacje/przedszkole" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
                   <img 
                     src={przedszkoleImg} 

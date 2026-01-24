@@ -308,7 +308,7 @@ const MarketingPrawoFinanse = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <Link to="/case-study-klagem" className="block group">
+              <Link to="/realizacje/klagem" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
                   <img 
                     src={klagemlImg} 
