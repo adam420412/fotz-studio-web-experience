@@ -515,7 +515,7 @@ export default function AgencjaMarketinguInternetowego() {
 
             <motion.div variants={fadeIn} className="mt-12 text-center">
               <Button asChild variant="outline" size="lg" className="border-foreground/20 hover:bg-foreground/5">
-                <Link to="/agencja-social-media-poznan/">
+                <Link to="/social-media-poznan">
                   Poznaj nasze usługi social media
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
