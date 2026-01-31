@@ -69,8 +69,7 @@
     { "source": "/realizacje/graf", "destination": "/realizacje/graf-tapicerstwo", "permanent": true },
     
     { "source": "/login", "destination": "/akademia/auth", "permanent": true },
-    { "source": "/agencja-social-media-poznan", "destination": "/social-media-poznan", "permanent": true },
-    { "source": "/kampanie-reklamowe-poznan", "destination": "/kampanie-reklamowe", "permanent": true }
+    { "source": "/agencja-social-media-poznan", "destination": "/social-media-poznan", "permanent": true }
   ],
   "rewrites": [
     { "source": "/((?!sitemap\\.xml|robots\\.txt|favicon\\.ico|.*\\..*).*)", "destination": "/index.html" }
