@@ -27,6 +27,7 @@ const footerLinks = {
     { name: "TikTok Ads", href: "/tiktok-ads" },
     { name: "LinkedIn Ads", href: "/linkedin-ads" },
     { name: "YouTube Ads", href: "/youtube-ads" },
+    { name: "Kampanie Poznań", href: "/kampanie-reklamowe-poznan" },
   ],
   dlaKogo: [
     { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
