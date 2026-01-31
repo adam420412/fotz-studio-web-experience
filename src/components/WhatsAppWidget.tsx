@@ -42,7 +42,7 @@ export function WhatsAppWidget() {
   return (
     <div 
       className={cn(
-        "fixed left-4 sm:left-6 bottom-4 sm:bottom-6 z-50 transition-all duration-500",
+        "fixed left-4 sm:left-6 bottom-4 sm:bottom-6 z-50 transition-all duration-500 hidden lg:block",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
       )}
     >
