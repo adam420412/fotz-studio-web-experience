@@ -72,7 +72,7 @@
     { "source": "/agencja-social-media-poznan", "destination": "/social-media-poznan", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/((?!sitemap\\.xml|robots\\.txt|favicon\\.ico|.*\\..*).*)", "destination": "/index.html" }
+    { "source": "/((?!sitemap.*\\.xml|robots\\.txt|favicon\\.ico|llms\\.txt|.*\\..*).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
