@@ -83,7 +83,6 @@
 /realizacje/graf /realizacje/graf-tapicerstwo 301
 /login /akademia/auth 301
 /agencja-social-media-poznan /social-media-poznan 301
-/kampanie-reklamowe-poznan /kampanie-reklamowe 301
 
 # 7. SPA FALLBACK (must be last)
 /* /index.html 200
