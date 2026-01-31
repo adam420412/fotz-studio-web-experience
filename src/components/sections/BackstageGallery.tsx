@@ -1,4 +1,4 @@
-import { useState, forwardRef } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Camera, Sparkles, X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 
@@ -36,13 +36,13 @@ interface BackstageGalleryProps {
   showVideo?: boolean;
 }
 
-export const BackstageGallery = forwardRef<HTMLElement, BackstageGalleryProps>(({ 
+export const BackstageGallery = ({ 
   title = "Backstage z realizacji", 
   subtitle = "Zobacz jak wygląda praca nad profesjonalną sesją fotograficzną i produkcją filmową",
   showOnlyBackstage = false,
   maxImages = 8,
   showVideo = true
-}, ref) => {
+}: BackstageGalleryProps) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showVideoLightbox, setShowVideoLightbox] = useState(false);
@@ -79,7 +79,7 @@ export const BackstageGallery = forwardRef<HTMLElement, BackstageGalleryProps>((
 
   return (
     <>
-      <section ref={ref} className="py-16 sm:py-20 bg-card/30">
+      <section className="py-16 sm:py-20 bg-card/30">
         <div className="container-wide px-4 sm:px-6 md:px-12">
           <div className="text-center mb-8 sm:mb-12">
             <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
@@ -280,6 +280,4 @@ export const BackstageGallery = forwardRef<HTMLElement, BackstageGalleryProps>((
       </AnimatePresence>
     </>
   );
-});
-
-BackstageGallery.displayName = "BackstageGallery";
+};

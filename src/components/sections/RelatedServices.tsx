@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, LucideIcon } from "lucide-react";
 import {
@@ -191,13 +190,13 @@ interface RelatedServicesProps {
   className?: string;
 }
 
-export const RelatedServices = forwardRef<HTMLElement, RelatedServicesProps>(({
+export const RelatedServices = ({
   currentService,
   title = "Powiązane usługi",
   subtitle = "Poznaj inne usługi, które mogą wspierać Twój biznes",
   limit = 4,
   className = ""
-}, ref) => {
+}: RelatedServicesProps) => {
   const relatedKeys = relatedServicesMap[currentService] || [];
   const services = relatedKeys
     .slice(0, limit)
@@ -207,7 +206,7 @@ export const RelatedServices = forwardRef<HTMLElement, RelatedServicesProps>(({
   if (services.length === 0) return null;
 
   return (
-    <section ref={ref} className={`py-20 bg-muted/30 ${className}`}>
+    <section className={`py-20 bg-muted/30 ${className}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -245,9 +244,7 @@ export const RelatedServices = forwardRef<HTMLElement, RelatedServicesProps>(({
       </div>
     </section>
   );
-});
-
-RelatedServices.displayName = "RelatedServices";
+};
 
 // Eksport dla inline linków w treści
 export const InlineServiceLink = ({ 
