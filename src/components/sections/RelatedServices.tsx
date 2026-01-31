@@ -1,10 +1,10 @@
+import { forwardRef } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { ArrowRight, LucideIcon } from "lucide-react";
 import {
   Search, Target, Megaphone, Globe, Camera, Palette,
   TrendingUp, Monitor, ShoppingCart, Play, Share2, 
-  MapPin, FileText, Smartphone, BarChart3, Users
+  MapPin, FileText, Users
 } from "lucide-react";
 
 interface RelatedService {
@@ -191,13 +191,13 @@ interface RelatedServicesProps {
   className?: string;
 }
 
-export const RelatedServices = ({
+export const RelatedServices = forwardRef<HTMLElement, RelatedServicesProps>(({
   currentService,
   title = "Powiązane usługi",
   subtitle = "Poznaj inne usługi, które mogą wspierać Twój biznes",
   limit = 4,
   className = ""
-}: RelatedServicesProps) => {
+}, ref) => {
   const relatedKeys = relatedServicesMap[currentService] || [];
   const services = relatedKeys
     .slice(0, limit)
@@ -207,31 +207,20 @@ export const RelatedServices = ({
   if (services.length === 0) return null;
 
   return (
-    <section className={`py-20 bg-muted/30 ${className}`}>
+    <section ref={ref} className={`py-20 bg-muted/30 ${className}`}>
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             {title}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             {subtitle}
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.href}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
+          {services.map((service) => (
+            <div key={service.href}>
               <Link
                 to={service.href}
                 className="group block bg-card border border-border rounded-2xl p-6 hover:border-primary/50 transition-all h-full"
@@ -250,13 +239,15 @@ export const RelatedServices = ({
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
+});
+
+RelatedServices.displayName = "RelatedServices";
 
 // Eksport dla inline linków w treści
 export const InlineServiceLink = ({ 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, forwardRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Camera, Sparkles, X, ChevronLeft, ChevronRight, Play } from "lucide-react";
 
@@ -36,13 +36,13 @@ interface BackstageGalleryProps {
   showVideo?: boolean;
 }
 
-export function BackstageGallery({ 
+export const BackstageGallery = forwardRef<HTMLElement, BackstageGalleryProps>(({ 
   title = "Backstage z realizacji", 
   subtitle = "Zobacz jak wygląda praca nad profesjonalną sesją fotograficzną i produkcją filmową",
   showOnlyBackstage = false,
   maxImages = 8,
   showVideo = true
-}: BackstageGalleryProps) {
+}, ref) => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showVideoLightbox, setShowVideoLightbox] = useState(false);
@@ -79,14 +79,9 @@ export function BackstageGallery({
 
   return (
     <>
-      <section className="py-16 sm:py-20 bg-card/30">
+      <section ref={ref} className="py-16 sm:py-20 bg-card/30">
         <div className="container-wide px-4 sm:px-6 md:px-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-8 sm:mb-12"
-          >
+          <div className="text-center mb-8 sm:mb-12">
             <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
               <Camera className="w-4 h-4" />
               Za kulisami
@@ -101,17 +96,13 @@ export function BackstageGallery({
             <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
               {subtitle}
             </p>
-          </motion.div>
+          </div>
 
           {/* Video + Images Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {/* Video Thumbnail */}
             {showVideo && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+              <div
                 className="group relative overflow-hidden rounded-xl col-span-2 row-span-2 cursor-pointer ring-2 ring-primary/30"
                 onClick={() => setShowVideoLightbox(true)}
               >
@@ -137,17 +128,13 @@ export function BackstageGallery({
                   </div>
                   <h3 className="text-white text-sm sm:text-base font-semibold">{backstageVideo.title}</h3>
                 </div>
-              </motion.div>
+              </div>
             )}
 
             {/* Images */}
             {imagesToShow.slice(0, showVideo ? 6 : maxImages).map((image, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: (showVideo ? index + 1 : index) * 0.05, duration: 0.5 }}
                 className={`group relative overflow-hidden rounded-xl cursor-pointer ${
                   image.type === "final" 
                     ? "ring-2 ring-primary/30" 
@@ -178,7 +165,7 @@ export function BackstageGallery({
                     <h3 className="text-white text-xs sm:text-sm font-semibold">{image.title}</h3>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -293,4 +280,6 @@ export function BackstageGallery({
       </AnimatePresence>
     </>
   );
-}
+});
+
+BackstageGallery.displayName = "BackstageGallery";
