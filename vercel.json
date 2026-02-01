@@ -1,4 +1,5 @@
 {
+  "_comment": "Vercel integration test - 2026-02-01",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "trailingSlash": false,
