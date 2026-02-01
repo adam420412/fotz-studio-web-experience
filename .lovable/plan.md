@@ -1,4 +1,4 @@
-# Projekt FOTZ - Status
+# Projekt FOTZ - Status (updated 2026-02-01)
 
 
 ## Plan: Test integracji Vercel
