@@ -1,8 +1,7 @@
 {
-  "_comment": "Vercel integration test - 2026-02-01",
+  "trailingSlash": false,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "trailingSlash": false,
   "redirects": [
     { "source": "/branze/marketing-medyczny", "destination": "/dla-kogo/branza-medyczna", "permanent": true },
     { "source": "/branze/marketing-gastronomia", "destination": "/dla-kogo/gastronomia", "permanent": true },
