@@ -56,6 +56,57 @@ export type Database = {
         }
         Relationships: []
       }
+      blog_articles: {
+        Row: {
+          content_html: string | null
+          content_markdown: string | null
+          created_at: string
+          external_created_at: string | null
+          external_id: number
+          hero_image_url: string | null
+          id: string
+          is_published: boolean
+          language_code: string | null
+          meta_description: string | null
+          public_url: string | null
+          published_at: string | null
+          slug: string
+          title: string
+        }
+        Insert: {
+          content_html?: string | null
+          content_markdown?: string | null
+          created_at?: string
+          external_created_at?: string | null
+          external_id: number
+          hero_image_url?: string | null
+          id?: string
+          is_published?: boolean
+          language_code?: string | null
+          meta_description?: string | null
+          public_url?: string | null
+          published_at?: string | null
+          slug: string
+          title: string
+        }
+        Update: {
+          content_html?: string | null
+          content_markdown?: string | null
+          created_at?: string
+          external_created_at?: string | null
+          external_id?: number
+          hero_image_url?: string | null
+          id?: string
+          is_published?: boolean
+          language_code?: string | null
+          meta_description?: string | null
+          public_url?: string | null
+          published_at?: string | null
+          slug?: string
+          title?: string
+        }
+        Relationships: []
+      }
       bookings: {
         Row: {
           booking_date: string
