@@ -63,6 +63,7 @@ const BlogBudzetMarketingowy = lazy(() => import("./pages/BlogBudzetMarketingowy
 const BlogB2BvsB2C = lazy(() => import("./pages/BlogB2BvsB2C"));
 const BlogPsychologiaCen = lazy(() => import("./pages/BlogPsychologiaCen"));
 const BlogCopywritingLanding = lazy(() => import("./pages/BlogCopywritingLanding"));
+const BlogArticleDynamic = lazy(() => import("./pages/BlogArticleDynamic"));
 
 // DlaKogo pages
 const DlaKogo = lazy(() => import("./pages/DlaKogo"));
@@ -252,6 +253,7 @@ const App = () => (
                 <Route path="/blog/marketing-b2b-vs-b2c" element={<BlogB2BvsB2C />} />
                 <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
                 <Route path="/blog/copywriting-landing-page" element={<BlogCopywritingLanding />} />
+                <Route path="/blog/:slug" element={<BlogArticleDynamic />} />
                 <Route path="/poradniki" element={<Poradniki />} />
                 <Route path="/studio-podcastowe" element={<StudioPodcastowe />} />
                 <Route path="/dla-kogo" element={<DlaKogo />} />
