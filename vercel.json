@@ -46,7 +46,6 @@
     { "source": "/blog/influencer-marketing", "destination": "/blog/influencer-marketing-polska", "permanent": true },
     { "source": "/blog/tiktok-biznes", "destination": "/blog/tiktok-dla-biznesu", "permanent": true },
     { "source": "/blog/ux-ecommerce", "destination": "/blog/ux-ui-ecommerce", "permanent": true },
-    
     { "source": "/case-study-enea", "destination": "/realizacje/enea-stadion", "permanent": true },
     { "source": "/case-study-fps", "destination": "/realizacje/fps-cegielski", "permanent": true },
     { "source": "/case-study-rppg", "destination": "/realizacje/rppg", "permanent": true },
@@ -65,10 +64,8 @@
     { "source": "/case-study-stageplan", "destination": "/realizacje/stageplan", "permanent": true },
     { "source": "/case-study-apartamenty", "destination": "/realizacje/apartamenty-chorwacja", "permanent": true },
     { "source": "/case-study-lauvjah", "destination": "/realizacje/lauvjah", "permanent": true },
-    
     { "source": "/realizacje/fps", "destination": "/realizacje/fps-cegielski", "permanent": true },
     { "source": "/realizacje/graf", "destination": "/realizacje/graf-tapicerstwo", "permanent": true },
-    
     { "source": "/login", "destination": "/akademia/auth", "permanent": true },
     { "source": "/agencja-social-media-poznan", "destination": "/social-media-poznan", "permanent": true }
   ],
@@ -77,7 +74,56 @@
   ],
   "headers": [
     {
-      "source": "/sitemap*.xml",
+      "source": "/sitemap-index.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap-main.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap-blog.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap-services.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap-cities.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap-industries.xml",
+      "headers": [
+        { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/sitemap-casestudies.xml",
       "headers": [
         { "key": "Content-Type", "value": "application/xml; charset=utf-8" },
         { "key": "Cache-Control", "value": "public, max-age=3600" }
