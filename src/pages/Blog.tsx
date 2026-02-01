@@ -8,6 +8,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { useBlogArticles } from "@/hooks/useBlogArticles";
 
 const categories = [
   "Wszystkie",
@@ -302,10 +303,36 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState("Wszystkie");
   const [searchQuery, setSearchQuery] = useState("");
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
+  const { data: dbArticles = [] } = useBlogArticles();
+
+  // Transform database articles to match static posts format
+  const dynamicPosts = useMemo(() => {
+    return dbArticles.map((article) => ({
+      id: article.slug,
+      title: article.title,
+      excerpt: article.meta_description || "",
+      category: "Poradniki",
+      author: "Zespół FOTZ",
+      date: article.published_at 
+        ? new Date(article.published_at).toLocaleDateString("pl-PL", { day: "numeric", month: "short", year: "numeric" })
+        : "Nowy",
+      readTime: "10 min",
+      image: article.hero_image_url || "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+      featured: false,
+      isDynamic: true,
+    }));
+  }, [dbArticles]);
+
+  // Combine static posts with dynamic posts from database
+  const allPosts = useMemo(() => {
+    const staticIds = new Set(posts.map(p => p.id));
+    const uniqueDynamic = dynamicPosts.filter(dp => !staticIds.has(dp.id));
+    return [...uniqueDynamic, ...posts];
+  }, [dynamicPosts]);
 
   // Filter posts by category and search query
   const filteredPosts = useMemo(() => {
-    let result = posts;
+    let result = allPosts;
     
     // Filter by category
     if (activeCategory !== "Wszystkie") {
@@ -326,7 +353,7 @@ export default function Blog() {
     return result;
   }, [activeCategory, searchQuery]);
 
-  const featuredPost = posts.find((p) => p.featured);
+  const featuredPost = allPosts.find((p) => p.featured);
   const showFeatured = activeCategory === "Wszystkie" && !searchQuery.trim();
   const regularPosts = showFeatured 
     ? filteredPosts.filter((p) => !p.featured)
