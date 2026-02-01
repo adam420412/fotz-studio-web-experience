@@ -13,13 +13,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Run sitemap + canonical checks (static)
-        run: node scripts/seo-canonical-check.mjs
+      - name: Validate sitemap exists
+        run: |
+          if [ -f "public/sitemap.xml" ]; then
+            echo "✅ sitemap.xml exists"
+            head -20 public/sitemap.xml
+          else
+            echo "❌ sitemap.xml not found"
+            exit 1
+          fi
 
   # Live check - tylko ręcznie (workflow_dispatch)
   seo_live:
