@@ -1,3 +1,4 @@
+# Projekt FOTZ - Status
 
 
 ## Plan: Test integracji Vercel
