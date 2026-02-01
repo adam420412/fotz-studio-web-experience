@@ -3,7 +3,6 @@
   "outputDirectory": "dist",
   "trailingSlash": false,
   "redirects": [
-    { "source": "/:path((?!api|_next|favicon\\.ico|robots\\.txt|sitemap\\.xml|.*\\..*).*)/", "destination": "/:path", "permanent": true },
     { "source": "/branze/marketing-medyczny", "destination": "/dla-kogo/branza-medyczna", "permanent": true },
     { "source": "/branze/marketing-gastronomia", "destination": "/dla-kogo/gastronomia", "permanent": true },
     { "source": "/branze/marketing-beauty", "destination": "/dla-kogo/beauty-wellness", "permanent": true },
@@ -74,7 +73,7 @@
     { "source": "/agencja-social-media-poznan", "destination": "/social-media-poznan", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/((?!sitemap.*\\.xml|robots\\.txt|favicon\\.ico|llms\\.txt|.*\\..*).*)", "destination": "/index.html" }
+    { "source": "/:path*", "destination": "/index.html" }
   ],
   "headers": [
     {
