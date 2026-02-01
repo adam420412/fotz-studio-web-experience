@@ -1,138 +1,74 @@
 
 
-# Plan: Integracja BabyLove Growth Webhook
+# Plan naprawy buildu GitHub Actions + Vercel deployment
 
-## Problem
-BabyLoveGrowth próbuje wysłać artykuły na URL `https://vhzmfebggxeovtkznlby.supabase.co/functions/v1/babylove-webhook`, ale ta funkcja nie istnieje. Dlatego system zewnętrzny nie otrzymuje odpowiedzi HTTP 200.
+## Diagnoza problemu
 
-## Co muszę zrobić
+Po analizie konfiguracji zauważyłem potencjalne problemy:
 
-### 1. Dodać Secret
-Dodać `BABYLOVE_WEBHOOK_SECRET` z wartością:
-```
-fotz-blg-wh-9K4mX2pL7vQ8nR3tY6wZ1aB5cD0eF4gH8jM2kN6sP9qU3xV7yW0zA
-```
+1. **GitHub Actions SEO workflow** - obecna wersja wygląda poprawnie, ale logi które widzę to końcówka jobu (Post Checkout), nie pokazują właściwego błędu
+2. **Vercel deployment** - może mieć problem z konfiguracja build output directory
 
-### 2. Utworzyć tabelę `blog_articles`
-Migracja SQL tworząca tabelę z polami pasującymi do payloadu z BabyLove:
+## Planowane zmiany
 
-```text
-+---------------------+
-|   blog_articles     |
-+---------------------+
-| id (uuid, PK)       |
-| external_id (int)   |
-| title (text)        |
-| slug (text, unique) |
-| meta_description    |
-| content_html        |
-| content_markdown    |
-| hero_image_url      |
-| language_code       |
-| public_url          |
-| created_at          |
-| published_at        |
-| is_published (bool) |
-+---------------------+
-```
+### 1. Upewnij się że Vercel ma poprawne ustawienia buildu
+W panelu Vercel sprawdź:
+- **Build Command**: `npm run build` lub `vite build`
+- **Output Directory**: `dist` (Vite buduje do `dist/`, nie `public/`)
+- **Install Command**: `npm install`
 
-RLS: Publiczny odczyt dla wszystkich, zapis tylko przez service role (webhook).
+### 2. Dodaj jawną konfigurację outputDirectory do vercel.json
 
-### 3. Utworzyć Edge Function `babylove-webhook`
-
-Nowa funkcja w `supabase/functions/babylove-webhook/index.ts`:
-
-- Obsługa CORS (OPTIONS)
-- Weryfikacja tokena Bearer z nagłówka `Authorization`
-- Parsowanie JSON z payloadem artykułu
-- Zapis do tabeli `blog_articles`
-- Zwrot HTTP 200 przy sukcesie
-
-Payload z BabyLove:
 ```json
 {
-  "id": 10,
-  "title": "Test Article",
-  "slug": "test-article",
-  "metaDescription": "...",
-  "content_html": "<h1>...</h1>",
-  "heroImageUrl": "https://...",
-  "content_markdown": "# ...",
-  "languageCode": "en",
-  "publicUrl": "https://...",
-  "createdAt": "2025-03-20T..."
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  ...reszta konfiguracji
 }
 ```
 
-### 4. Zaktualizować config.toml
+### 3. Workflow SEO - dodaj timeout i continue-on-error (zabezpieczenie)
 
-Dodać konfigurację nowej funkcji:
-```toml
-[functions.babylove-webhook]
-verify_jwt = false
+```yaml
+- name: Validate sitemap exists
+  timeout-minutes: 1
+  continue-on-error: false
+  run: |
+    if [ -f "public/sitemap.xml" ]; then
+      echo "✅ sitemap.xml exists"
+    else
+      echo "❌ sitemap.xml not found"
+      exit 1
+    fi
 ```
 
-### 5. Zaktualizować Blog.tsx
+## Część techniczna
 
-- Dodać hook pobierający artykuły z `blog_articles`
-- Połączyć artykuły z bazy ze statycznymi artykułami
-- Wyświetlać wszystkie razem posortowane po dacie
+### Pliki do modyfikacji
 
-### 6. Utworzyć dynamiczną stronę artykułu
+| Plik | Zmiana |
+|------|--------|
+| `vercel.json` | Dodanie `buildCommand` i `outputDirectory` |
+| `.github/workflows/seo.yml` | Dodanie timeout i lepszego logowania |
 
-- Nowy komponent do wyświetlania artykułów z bazy
-- Routing dla `/blog/:slug` który sprawdza zarówno statyczne jak i dynamiczne artykuły
+### Konfiguracja vercel.json
+Obecna konfiguracja nie określa jawnie gdzie jest output buildu. Vite buduje do `dist/`, a Vercel może szukać w `public/` - stąd błąd "Missing public directory".
 
----
+### Kroki implementacji
 
-## Szczegóły techniczne
+1. Dodaj do `vercel.json`:
+   ```json
+   "buildCommand": "npm run build",
+   "outputDirectory": "dist"
+   ```
 
-### Edge Function - kluczowe elementy
+2. Sprawdź w panelu Vercel → Project Settings → General:
+   - Framework Preset: Vite
+   - Output Directory: dist
 
-```typescript
-// Weryfikacja tokena
-const authHeader = req.headers.get('Authorization');
-const token = authHeader?.replace('Bearer ', '');
-if (token !== Deno.env.get('BABYLOVE_WEBHOOK_SECRET')) {
-  return new Response('Unauthorized', { status: 401 });
-}
+3. Re-deploy projekt
 
-// Zapis do bazy
-const supabaseAdmin = createClient(url, serviceRoleKey);
-await supabaseAdmin.from('blog_articles').upsert({
-  external_id: payload.id,
-  title: payload.title,
-  slug: payload.slug,
-  // ...
-});
-```
+## Alternatywne rozwiązanie
 
-### Blog.tsx - pobieranie danych
-
-```typescript
-const { data: dbArticles } = useQuery({
-  queryKey: ['blog-articles'],
-  queryFn: async () => {
-    const { data } = await supabase
-      .from('blog_articles')
-      .select('*')
-      .eq('is_published', true)
-      .order('published_at', { ascending: false });
-    return data;
-  }
-});
-
-// Połączenie ze statycznymi
-const allPosts = [...staticPosts, ...transformedDbArticles];
-```
-
----
-
-## Rezultat
-
-Po implementacji:
-1. BabyLove Growth wyśle POST na webhook
-2. Funkcja zweryfikuje token i zapisze artykuł
-3. Artykuł pojawi się automatycznie na stronie `/blog`
-4. Będzie można go otworzyć pod `/blog/[slug]`
+Jeśli problem dotyczy samego GitHub Actions (nie Vercel), mogę całkowicie wyłączyć SEO workflow zmieniając trigger na `workflow_dispatch` only - wtedy testy SEO będą uruchamiane tylko ręcznie i nie będą blokować deploymentu.
 
