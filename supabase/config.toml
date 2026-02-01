@@ -11,3 +11,9 @@ verify_jwt = false
 
 [functions.babylove-webhook]
 verify_jwt = false
+
+[functions.chatbot-ai]
+verify_jwt = false
+
+[functions.pagespeed-test]
+verify_jwt = false

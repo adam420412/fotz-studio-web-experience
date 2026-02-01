@@ -20,7 +20,20 @@ const categories = [
   "Poradniki",
 ];
 
-const posts = [
+interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  author: string;
+  date: string;
+  readTime: string;
+  image: string;
+  featured: boolean;
+  isDynamic?: boolean;
+}
+
+const posts: BlogPost[] = [
   {
     id: "remarketing-poradnik",
     title: "Remarketing - kompletny poradnik dla firm 2025",
