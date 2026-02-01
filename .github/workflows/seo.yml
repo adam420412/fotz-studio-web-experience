@@ -2,8 +2,9 @@ name: SEO checks
 
 on:
   workflow_dispatch:
-  push:
-    branches: ["main"]
+  # Wyłączono automatyczne testy na push - uruchamiaj ręcznie przez Actions → Run workflow
+  # push:
+  #   branches: ["main"]
 
 jobs:
   seo:
