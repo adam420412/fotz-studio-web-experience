@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Run redirect smoke test
-        run: node scripts/seo-smoke-test.mjs
-
       - name: Run sitemap + canonical checks (static)
         run: node scripts/seo-canonical-check.mjs
 
@@ -36,6 +33,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
+      - name: Run redirect smoke test (live)
+        run: node scripts/seo-smoke-test.mjs
 
       - name: Run live canonical check (all 135+ URLs)
         run: node scripts/seo-canonical-check.mjs --live
