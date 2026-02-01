@@ -1,4 +1,6 @@
-# Welcome to your Lovable project
+# FOTZ Studio - Agencja Marketingowa Poznań
+
+> Last sync test: 2025-02-01
 
 ## Project info
 
