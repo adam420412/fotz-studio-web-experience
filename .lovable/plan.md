@@ -1,28 +1,24 @@
-# Projekt FOTZ - Status (updated 2026-02-01)
 
 
-## Plan: Test integracji Vercel
+## Przekierowanie /sitemap na /sitemap-index.xml
 
-### Co zrobię
-Dodam mały, nieszkodliwy komentarz do pliku `vercel.json` (lub innego pliku konfiguracyjnego), który wywoła commit do GitHub.
+### Problem
+Wejście na `/sitemap` pokazuje stronę 404, ponieważ React Router nie ma takiej trasy. Pliki XML sitemap istnieją, ale tylko pod pełnymi nazwami (np. `/sitemap-index.xml`).
 
-### Zmiana testowa
-Plik: `vercel.json`
-- Dodam komentarz w nagłówku pliku lub drobną zmianę formatowania
+### Rozwiazanie
+Dodanie przekierowania 301 z `/sitemap` na `/sitemap-index.xml` w dwoch miejscach:
 
-### Po wykonaniu zmiany
-1. Commit zostanie automatycznie wysłany do GitHub (branch `main`)
-2. Jeśli integracja działa - Vercel powinien w ciągu 1-2 minut wykryć nowy commit i rozpocząć build
-3. Sprawdź w Vercel: **Deployments** → powinna pojawić się nowa pozycja ze statusem "Building" lub "Ready"
+### Zmiany
 
-### Jak zweryfikować sukces
-- W Vercel Dashboard → Deployments pojawi się nowy deployment
-- Status zmieni się z "Building" → "Ready" 
-- Commit message będzie widoczny przy deploymencie
+1. **vercel.json** - dodanie w sekcji `redirects`:
+   ```json
+   { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true }
+   ```
 
-### Co jeśli nie zadziała
-Jeśli po 5 minutach nie pojawi się nowy deployment:
-1. Sprawdź zakładkę **Activity** w Vercel
-2. Sprawdź **Settings → Git** czy webhook jest aktywny
-3. Możliwe że trzeba będzie ponownie połączyć repo
+2. **public/_redirects** - dodanie przed regula SPA fallback:
+   ```
+   /sitemap /sitemap-index.xml 301
+   ```
+
+To zapewni, ze uzytkownik lub bot wchodzacy na `/sitemap` zostanie automatycznie przekierowany do glownego indeksu sitemap.
 
