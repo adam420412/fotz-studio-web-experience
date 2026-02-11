@@ -84,5 +84,8 @@
 /login /akademia/auth 301
 /agencja-social-media-poznan /social-media-poznan 301
 
-# 7. SPA FALLBACK (must be last)
+# 7. SITEMAP REDIRECT
+/sitemap /sitemap-index.xml 301
+
+# 8. SPA FALLBACK (must be last)
 /* /index.html 200
