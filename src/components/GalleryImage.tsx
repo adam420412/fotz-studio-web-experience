@@ -28,7 +28,7 @@ export function GalleryImage({
           observer.disconnect();
         }
       },
-      { rootMargin: "100px", threshold: 0.01 }
+      { rootMargin: "400px", threshold: 0.01 }
     );
 
     if (ref.current) {
