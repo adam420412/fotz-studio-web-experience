@@ -212,7 +212,7 @@ const KampanieReklamowe = () => {
       <SEOHead
         title="Kampanie Reklamowe | Google Ads, Meta Ads | Fotz"
         description="Kampanie Google Ads, Facebook Ads, TikTok, LinkedIn. Precyzyjne targetowanie, optymalizacja ROAS. Agencja Poznań."
-        canonical="https://fotz.pl/performance-marketing/kampanie"
+        canonical="https://fotz.pl/kampanie-reklamowe"
       />
       <ServiceSchema 
         name="Kampanie Reklamowe Google Ads i Facebook Ads"

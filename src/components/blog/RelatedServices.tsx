@@ -89,7 +89,7 @@ export const servicesByCategory = {
   websites: [
     { title: "Strony internetowe", description: "Nowoczesne strony dla firm", path: "/uslugi/strony-internetowe" },
     { title: "Sklepy e-commerce", description: "Sklepy z wysoką konwersją", path: "/uslugi/strony-internetowe/ecommerce" },
-    { title: "Landing Page", description: "Strony sprzedażowe", path: "/landing-page" },
+    { title: "Landing Page", description: "Strony sprzedażowe", path: "/blog/jak-stworzyc-landing-page" },
     { title: "Identyfikacja wizualna", description: "Spójny branding marki", path: "/uslugi/branding" },
   ],
   ecommerce: [

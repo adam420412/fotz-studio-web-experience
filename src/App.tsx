@@ -359,6 +359,10 @@ const App = () => (
                 <Route path="/generator-briefu" element={<GeneratorBriefu />} />
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
                 
+                {/* 301 Redirects - broken/legacy paths */}
+                <Route path="/login" element={<Redirect301 to="/akademia/auth" />} />
+                <Route path="/landing-page" element={<Redirect301 to="/blog/jak-stworzyc-landing-page" />} />
+
                 {/* 301 Redirects - stare URL-e /branze/* */}
                 <Route path="/branze/marketing-medyczny" element={<Redirect301 to="/dla-kogo/branza-medyczna" />} />
                 <Route path="/branze/marketing-gastronomia" element={<Redirect301 to="/dla-kogo/gastronomia" />} />
