@@ -313,8 +313,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     </div>
                     
                     {/* Main services row */}
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-6">
-                      {menuCategories.slice(0, 5).map((category, categoryIndex) => (
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
+                      {menuCategories.slice(0, 4).map((category, categoryIndex) => (
                         <motion.div
                           key={category.title}
                           onMouseEnter={() => setHoveredCategory(categoryIndex)}
