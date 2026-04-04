@@ -6,7 +6,7 @@ export default function UslugiCluster() {
       <SEOHead
         title="Usługi | Fotz Studio"
         description="Pełny zakres usług marketingowych: strony internetowe, branding, fotografia, produkcja video, projekty graficzne, e-commerce i więcej."
-        canonical="/uslugi"
+        canonical="https://fotz.pl/uslugi"
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white pt-24 pb-12">

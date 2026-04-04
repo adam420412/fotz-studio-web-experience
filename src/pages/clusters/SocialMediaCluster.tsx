@@ -6,7 +6,7 @@ export default function SocialMediaCluster() {
       <SEOHead
         title="Social Media Marketing | Fotz Studio"
         description="Kompleksowa obsługa social media. Zarządzanie profilami, tworzenie treści, strategie mediów społecznościowych. Zwiększ zaangażowanie i zasięg."
-        canonical="/social-media"
+        canonical="https://fotz.pl/social-media"
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white pt-24 pb-12">

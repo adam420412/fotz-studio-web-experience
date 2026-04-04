@@ -330,6 +330,7 @@ const App = () => (
                 <Route path="/content-marketing/copywriting-landing" element={<BlogCopywritingLanding />} />
                 <Route path="/content-marketing/email-2025" element={<BlogEmailMarketing />} />
                 <Route path="/content-marketing/kampanie" element={<BlogKampaniaReklamowa />} />
+                <Route path="/content-marketing/tresci-seo" element={<ContentMarketing />} />
 
                 {/* Legacy local SEO pages (unchanged paths) */}
                 <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
