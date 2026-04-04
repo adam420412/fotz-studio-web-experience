@@ -18,6 +18,11 @@ const footerLinks = {
     { name: "Pozycjonowanie SEO", href: "/seo/pozycjonowanie" },
     { name: "Identyfikacja wizualna", href: "/uslugi/branding" },
     { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
+    { name: "Produkcja filmów", href: "/uslugi/produkcja-filmow" },
+    { name: "Spoty reklamowe", href: "/uslugi/produkcja-video" },
+    { name: "Fotografia z drona", href: "/uslugi/fotografia-z-drona" },
+    { name: "Obsługa graficzna", href: "/agencja-graficzna" },
+    { name: "Agencja reklamowa", href: "/agencja-reklamowa-poznan" },
   ],
   kampanie: [
     { name: "Google Ads", href: "/performance-marketing/google-ads" },
@@ -27,6 +32,8 @@ const footerLinks = {
     { name: "TikTok Ads", href: "/performance-marketing/tiktok-ads" },
     { name: "LinkedIn Ads", href: "/performance-marketing/linkedin-ads" },
     { name: "YouTube Ads", href: "/performance-marketing/youtube-ads" },
+    { name: "Remarketing", href: "/performance-marketing/remarketing" },
+    { name: "Google vs Facebook", href: "/performance-marketing/google-vs-facebook" },
     { name: "Kampanie Poznań", href: "/kampanie-reklamowe-poznan" },
   ],
   dlaKogo: [
@@ -54,6 +61,8 @@ const footerLinks = {
     { name: "Realizacje", href: "/realizacje" },
     { name: "Cennik", href: "/cennik" },
     { name: "Blog", href: "/blog" },
+    { name: "Poradniki", href: "/poradniki" },
+    { name: "Akademia", href: "/akademia" },
     { name: "Kariera", href: "/kariera" },
     { name: "FAQ", href: "/faq" },
     { name: "Kontakt", href: "/kontakt" },
@@ -79,6 +88,27 @@ const footerLinks = {
     { name: "Szczecin", href: "/uslugi/strony-internetowe/szczecin" },
     { name: "Bydgoszcz", href: "/uslugi/strony-internetowe/bydgoszcz" },
     { name: "Lublin", href: "/uslugi/strony-internetowe/lublin" },
+    { name: "Toruń", href: "/uslugi/strony-internetowe/torun" },
+    { name: "Rzeszów", href: "/uslugi/strony-internetowe/rzeszow" },
+    { name: "Olsztyn", href: "/uslugi/strony-internetowe/olsztyn" },
+    { name: "Kielce", href: "/uslugi/strony-internetowe/kielce" },
+    { name: "Opole", href: "/uslugi/strony-internetowe/opole" },
+    { name: "Radom", href: "/uslugi/strony-internetowe/radom" },
+    { name: "Tarnów", href: "/uslugi/strony-internetowe/tarnow" },
+    { name: "Płock", href: "/uslugi/strony-internetowe/plock" },
+    { name: "Sosnowiec", href: "/uslugi/strony-internetowe/sosnowiec" },
+    { name: "Koszalin", href: "/uslugi/strony-internetowe/koszalin" },
+    { name: "Gliwice", href: "/uslugi/strony-internetowe/gliwice" },
+    { name: "Rybnik", href: "/uslugi/strony-internetowe/rybnik" },
+    { name: "Tychy", href: "/uslugi/strony-internetowe/tychy" },
+    { name: "Konin", href: "/uslugi/strony-internetowe/konin" },
+    { name: "Kamionki", href: "/uslugi/strony-internetowe/kamionki" },
+    { name: "Białystok", href: "/uslugi/strony-internetowe/bialystok" },
+    { name: "Częstochowa", href: "/uslugi/strony-internetowe/czestochowa" },
+    { name: "Zielona Góra", href: "/uslugi/strony-internetowe/zielona-gora" },
+    { name: "Elbląg", href: "/uslugi/strony-internetowe/elblag" },
+    { name: "Legnica", href: "/uslugi/strony-internetowe/legnica" },
+    { name: "Kalisz", href: "/uslugi/strony-internetowe/kalisz" },
   ],
 };
 
@@ -331,9 +361,6 @@ export function Footer() {
                   {link.name}
                 </Link>
               ))}
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:text-primary/80 transition-colors text-xs px-2 py-1">
-                + więcej miast
-              </Link>
             </div>
           </div>
         </div>
