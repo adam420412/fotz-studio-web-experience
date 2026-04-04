@@ -161,7 +161,6 @@ export default function EcommerceTworzenie() {
       <SEOHead
         title="Sklep Internetowy | Tworzenie E-commerce | Fotz"
         description="Tworzymy sklepy internetowe - wybór platformy, integracje płatności, automatyzacja AI. Zacznij sprzedaż online. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/ecommerce"
         canonical="https://fotz.pl/uslugi/strony-internetowe/ecommerce"
       />
 
