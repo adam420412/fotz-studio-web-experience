@@ -573,7 +573,7 @@ export default function Blog() {
             {regularPosts.map((post, index) => (
               <Link
                 key={post.id}
-                to={`/blog/${post.id}`}
+                to={getPostUrl(post.id)}
                 className={cn(
                   "group rounded-2xl overflow-hidden bg-secondary transition-all duration-700 hover-lift",
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
