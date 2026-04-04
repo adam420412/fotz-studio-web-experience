@@ -52,8 +52,8 @@ export default function AkademiaLanding() {
   return (
     <Layout>
       <SEOHead
-        title="Akademia FOTZ - Praktyczna Wiedza Marketingowa | E-booki i Kursy"
-        description="Gotowe materiały marketingowe dla Twojego biznesu. E-booki, kursy wideo, checklisty i strategie. Subskrypcja 99 PLN/miesiąc. Dołącz do Akademii FOTZ."
+        title="Akademia FOTZ - Kursy i E-booki Marketingowe"
+        description="Gotowe materiały marketingowe: e-booki, kursy wideo i checklisty. Subskrypcja od 99 PLN/mies. Dołącz do Akademii FOTZ."
         canonical="https://fotz.pl/akademia"
       />
 
