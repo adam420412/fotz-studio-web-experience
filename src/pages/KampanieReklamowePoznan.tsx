@@ -202,7 +202,7 @@ const KampanieReklamowePoznan = () => {
       <SEOHead
         title="Kampanie Reklamowe Poznań | Google & Meta Ads"
         description="Kampanie Google Ads i Facebook Ads w Poznaniu. Lokalna agencja, spotkania w biurze. Średni ROAS 350%."
-        canonical="https://fotz.pl/performance-marketing/kampanie-poznan"
+        canonical="https://fotz.pl/kampanie-reklamowe-poznan"
       />
       <ServiceSchema 
         name="Kampanie Reklamowe Poznań - Google Ads i Facebook Ads"

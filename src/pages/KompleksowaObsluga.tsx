@@ -196,7 +196,7 @@ const KompleksowaObsluga = () => {
       <SEOHead
         title="Kompleksowy Marketing dla Firm | Obsługa 360° | Fotz"
         description="Kompleksowa obsługa marketingowa: strategia, social media, SEO, kampanie. Pakiety od 3499 zł/mies. Fotz Studio."
-        canonical="https://fotz.pl/kompleksowa-obsluga"
+        canonical="https://fotz.pl/kompleksowa-obsluga-marketingowa"
       />
       <BreadcrumbSchema 
         items={[
