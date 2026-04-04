@@ -81,7 +81,7 @@ export function useWebVitals() {
   }, []);
 
   const logMetrics = useCallback(() => {
-    if (process.env.NODE_ENV !== 'development') return;
+    if (import.meta.env.MODE !== 'development') return;
     
     console.group('🚀 Core Web Vitals');
     console.log(`LCP: ${metrics.lcp?.toFixed(0) || 'pending'}ms (good < 2500ms)`);
