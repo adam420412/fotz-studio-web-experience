@@ -100,9 +100,15 @@ export default function Poradniki() {
             <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
               Praktyczne <span className="text-gradient">poradniki</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground mb-6">
               Kompletne przewodniki i tutoriale, które pomogą Ci opanować marketing cyfrowy. 
               Od podstaw po zaawansowane strategie.
+            </p>
+            <h2 className="text-2xl font-heading font-semibold mb-4">Czego się nauczysz?</h2>
+            <p className="text-muted-foreground">
+              Nasze poradniki obejmują kluczowe obszary marketingu cyfrowego: pozycjonowanie SEO, kampanie Google Ads i Meta Ads, 
+              strategię social media, email marketing, budowanie marki oraz tworzenie skutecznych landing page. 
+              Każdy poradnik zawiera praktyczne wskazówki gotowe do natychmiastowego wdrożenia w Twojej firmie.
             </p>
           </div>
         </div>
