@@ -34,7 +34,7 @@ const BlogGoogleVsFacebook = () => {
     <>
       <SEOHead
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu? | Fotz Studio"
-        description="Porównanie Google Ads i Facebook Ads. Dowiedz się, która platforma reklamowa przyniesie lepsze wyniki dla Twojej firmy. Analiza kosztów, targetowania i ROI."
+        description="Porównanie Google Ads i Facebook Ads. Dowiedz się, która platforma reklamowa przyniesie lepsze wyniki dla Twojej firmy."
         canonical="https://fotz.pl/performance-marketing/google-vs-facebook"
         keywords="Google Ads, Facebook Ads, reklama online, porównanie platform reklamowych, PPC, kampanie reklamowe, ROI"
       />

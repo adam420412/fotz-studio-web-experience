@@ -135,7 +135,7 @@ const StronyInternetoweLublin = () => {
     <>
       <SEOHead
         title="Strony Internetowe Lublin | Tworzenie Stron WWW i Sklepów | FOTZ"
-        description="Strony internetowe Lublin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Lublina i okolic."
+        description="Strony internetowe Lublin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
         canonical="https://fotz.pl/uslugi/strony-internetowe/lublin"
         keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin"
       />

@@ -87,7 +87,7 @@ const StronyInternetoweSosnowiec = () => {
     <>
       <SEOHead
         title="Strony Internetowe Sosnowiec | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Sosnowiec. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Sosnowca."
+        description="Strony internetowe Sosnowiec. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
         canonical="https://fotz.pl/uslugi/strony-internetowe/sosnowiec"
         keywords="strony internetowe sosnowiec, tworzenie stron www sosnowiec, projektowanie stron sosnowiec, sklepy internetowe sosnowiec"
       />

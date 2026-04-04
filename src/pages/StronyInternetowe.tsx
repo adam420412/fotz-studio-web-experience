@@ -319,7 +319,7 @@ const StronyInternetowe = () => {
     <>
       <SEOHead
         title="Tworzenie Stron Internetowych | Projektowanie WWW | Fotz"
-        description="Profesjonalne tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page. Responsywne, szybkie i zoptymalizowane pod SEO. Sprawdź cennik."
+        description="Profesjonalne tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page. Responsywne, szybkie i zoptymalizowane pod SEO."
         canonical="https://fotz.pl/uslugi/strony-internetowe"
         keywords="strony internetowe, tworzenie stron www, projektowanie stron, sklepy e-commerce, landing page, strony firmowe"
       />

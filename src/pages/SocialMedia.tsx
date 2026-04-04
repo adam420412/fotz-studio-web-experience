@@ -279,7 +279,7 @@ const SocialMedia = () => {
       
       <ServiceSchema 
         name="Agencja Social Media - Marketing w Mediach Społecznościowych"
-        description="Profesjonalne prowadzenie social mediów: strategia, tworzenie contentu, kampanie reklamowe Facebook Ads i Instagram Ads. Budujemy zaangażowane społeczności wokół marek."
+        description="Profesjonalne prowadzenie social mediów: strategia, tworzenie contentu, kampanie reklamowe Facebook Ads i Instagram Ads."
         provider="Fotz Studio"
         areaServed="Polska"
       />

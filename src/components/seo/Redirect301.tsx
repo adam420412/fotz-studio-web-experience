@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 interface Redirect301Props {
   to: string;
@@ -7,16 +8,20 @@ interface Redirect301Props {
 
 /**
  * Component that performs a 301-like redirect in SPA context.
- * For true 301 redirects, server-side configuration would be needed,
- * but this ensures consistent UX and prevents 404s.
+ * Adds noindex to prevent search engines from indexing redirect pages.
+ * For true 301 redirects, server-side configuration (vercel.json) is used.
  */
 export function Redirect301({ to }: Redirect301Props) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Replace current entry in history (like a 301 redirect)
     navigate(to, { replace: true });
   }, [navigate, to]);
 
-  return null;
+  return (
+    <Helmet>
+      <meta name="robots" content="noindex, nofollow" />
+      <title>Przekierowanie...</title>
+    </Helmet>
+  );
 }

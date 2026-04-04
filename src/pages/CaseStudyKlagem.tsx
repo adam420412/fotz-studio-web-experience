@@ -45,7 +45,7 @@ const CaseStudyKlagem = () => {
     <Layout>
       <SEOHead
         title="Klagem - Modułowe Systemy Meblowe | Case Study | Fotz Studio"
-        description="Realizacja strony internetowej dla Klagem - producenta modułowych systemów meblowych. Konfigurator produktów 3D, SEO B2B i responsywny design. +180% zapytań."
+        description="Realizacja strony internetowej dla Klagem - producenta modułowych systemów meblowych. Konfigurator produktów 3D, SEO B2B i responsywny design."
         canonical="https://fotz.pl/realizacje/klagem"
         keywords="Klagem, meble modułowe, konfigurator 3D, case study, strona B2B, SEO"
       />
