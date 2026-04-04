@@ -263,6 +263,42 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "marketing-automation",
+    title: "Marketing Automation - jak automatyzować działania marketingowe",
+    excerpt:
+      "Kompletny poradnik automatyzacji marketingu. Narzędzia, strategie i wdrożenie marketing automation w Twojej firmie.",
+    category: "Poradniki",
+    author: "Zespół FOTZ",
+    date: "4 sty 2025",
+    readTime: "16 min",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
+    featured: false,
+  },
+  {
+    id: "personal-branding-linkedin",
+    title: "Personal branding na LinkedIn - jak budować markę osobistą",
+    excerpt:
+      "Jak wyróżnić się na LinkedIn? Strategia personal brandingu, optymalizacja profilu i tworzenie angażujących treści.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "4 sty 2025",
+    readTime: "14 min",
+    image: "https://images.unsplash.com/photo-1611944212129-29977ae1398c?q=80&w=2074",
+    featured: false,
+  },
+  {
+    id: "video-marketing-trendy-2025",
+    title: "Video marketing - trendy i strategie na 2025 rok",
+    excerpt:
+      "Najważniejsze trendy w video marketingu. Short-form video, live streaming, video SEO i produkcja treści wideo dla firm.",
+    category: "Video",
+    author: "Zespół FOTZ",
+    date: "4 sty 2025",
+    readTime: "15 min",
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-strone",
     title: "Jak stworzyć stronę internetową, która sprzedaje?",
     excerpt:

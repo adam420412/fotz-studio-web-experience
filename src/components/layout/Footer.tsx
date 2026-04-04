@@ -361,9 +361,6 @@ export function Footer() {
                   {link.name}
                 </Link>
               ))}
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:text-primary/80 transition-colors text-xs px-2 py-1">
-                + więcej miast
-              </Link>
             </div>
           </div>
         </div>
