@@ -252,6 +252,18 @@ const App = () => (
                 <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
                 <Route path="/blog/:slug" element={<BlogArticleDynamic />} />
 
+                {/* Blog → cluster redirects (prevent duplicate content) */}
+                <Route path="/blog/seo-ecommerce" element={<Redirect301 to="/seo/ecommerce" />} />
+                <Route path="/blog/influencer-marketing-polska" element={<Redirect301 to="/social-media/influencer" />} />
+                <Route path="/blog/remarketing-poradnik" element={<Redirect301 to="/performance-marketing/remarketing" />} />
+                <Route path="/blog/google-ads-vs-facebook-ads" element={<Redirect301 to="/performance-marketing/google-vs-facebook" />} />
+                <Route path="/blog/seo-lokalne-poznan-poradnik" element={<Redirect301 to="/seo/lokalne-poznan" />} />
+                <Route path="/blog/instagram-reels-vs-tiktok" element={<Redirect301 to="/social-media/reels-vs-tiktok" />} />
+                <Route path="/blog/tiktok-dla-biznesu" element={<Redirect301 to="/social-media/tiktok-biznes" />} />
+                <Route path="/blog/copywriting-landing-page" element={<Redirect301 to="/content-marketing/copywriting-landing" />} />
+                <Route path="/blog/email-marketing-2025" element={<Redirect301 to="/content-marketing/email-2025" />} />
+                <Route path="/blog/kampania-reklamowa-marketingowa" element={<Redirect301 to="/content-marketing/kampanie" />} />
+
                 {/* Cluster hubs */}
                 <Route path="/seo" element={<SEOCluster />} />
                 <Route path="/social-media" element={<SocialMediaCluster />} />

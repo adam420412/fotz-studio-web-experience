@@ -336,6 +336,8 @@ export default function KalkulatorCen() {
                 </p>
               </motion.div>
 
+              <h2 className="text-2xl font-heading font-bold mb-6">Wybierz usługi</h2>
+
               <div className="grid lg:grid-cols-3 gap-8">
                 {/* Left: Service Selection */}
                 <div className="lg:col-span-2 space-y-6">

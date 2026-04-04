@@ -253,10 +253,10 @@ const Quiz = () => {
                     <Progress value={progress} className="h-2 mb-8" />
                   </div>
 
-                  {/* Question */}
-                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
-                    {questions[currentQuestion].question}
-                  </h1>
+                   {/* Question */}
+                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
+                     {questions[currentQuestion].question}
+                   </h2>
 
                   {/* Options */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

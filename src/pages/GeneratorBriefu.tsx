@@ -805,8 +805,13 @@ DANE KONTAKTOWE:
             <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4">
               Generator Briefu Projektowego
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-4">
               Wypełnij formularz, a my przygotujemy dla Ciebie indywidualną ofertę. Brief możesz pobrać jako PDF lub wysłać na email.
+            </p>
+            <p className="text-sm text-muted-foreground/70 max-w-3xl mx-auto">
+              Nasz kreator briefu projektowego prowadzi Cię krok po kroku: określ typ projektu (strona WWW, e-commerce, kampanie reklamowe, 
+              social media, branding, foto/video), opisz swoją firmę i cele biznesowe, wskaż budżet i termin — a otrzymasz gotowy dokument 
+              briefu do pobrania w formacie PDF. Możesz go też przesłać bezpośrednio do naszego zespołu, abyśmy przygotowali spersonalizowaną wycenę.
             </p>
           </div>
 
