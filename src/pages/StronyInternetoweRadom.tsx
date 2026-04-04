@@ -88,7 +88,7 @@ const StronyInternetoweRadom = () => {
       <SEOHead
         title="Strony Internetowe Radom | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Radom. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Radomia."
-        canonical="https://fotz.pl/strony-internetowe-radom"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/radom"
         keywords="strony internetowe radom, tworzenie stron www radom, projektowanie stron radom, sklepy internetowe radom"
       />
       

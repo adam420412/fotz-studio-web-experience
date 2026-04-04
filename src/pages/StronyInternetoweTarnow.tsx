@@ -88,7 +88,7 @@ const StronyInternetoweTarnow = () => {
       <SEOHead
         title="Strony Internetowe Tarnów | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Tarnów. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tarnowa."
-        canonical="https://fotz.pl/strony-internetowe-tarnow"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/tarnow"
         keywords="strony internetowe tarnów, tworzenie stron www tarnów, projektowanie stron tarnów, sklepy internetowe tarnów"
       />
       

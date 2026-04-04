@@ -88,7 +88,7 @@ const StronyInternetoweOlsztyn = () => {
       <SEOHead
         title="Strony Internetowe Olsztyn | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Olsztyn. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Olsztyna."
-        canonical="https://fotz.pl/strony-internetowe-olsztyn"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/olsztyn"
         keywords="strony internetowe olsztyn, tworzenie stron www olsztyn, projektowanie stron olsztyn, sklepy internetowe olsztyn"
       />
       

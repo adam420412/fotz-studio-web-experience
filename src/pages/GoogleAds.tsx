@@ -132,7 +132,7 @@ const GoogleAds = () => {
       <SEOHead
         title="Google Ads Poznań | Kampanie SEM i PPC | Fotz"
         description="Kampanie Google Ads - wyszukiwarka, YouTube, Shopping. Zwiększ sprzedaż i leady. Agencja Google Ads Poznań od 1500 zł/mies."
-        canonical="https://fotz.pl/google-ads"
+        canonical="https://fotz.pl/performance-marketing/google-ads"
         keywords="google ads, kampanie google, reklama google, sem, ppc, agencja google ads poznań"
       />
 

@@ -140,7 +140,7 @@ const YouTubeAds = () => {
       <SEOHead
         title="YouTube Ads - Reklamy wideo na YouTube | Fotz Studio Poznań"
         description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo. Produkcja spotów i obsługa kampanii. Agencja YouTube Ads Poznań."
-        canonical="https://fotz.pl/youtube-ads"
+        canonical="https://fotz.pl/performance-marketing/youtube-ads"
       />
       <ServiceSchema
         name="YouTube Ads - Reklamy wideo"

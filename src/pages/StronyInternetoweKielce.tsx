@@ -88,7 +88,7 @@ const StronyInternetoweKielce = () => {
       <SEOHead
         title="Strony Internetowe Kielce | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Kielce. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kielc."
-        canonical="https://fotz.pl/strony-internetowe-kielce"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/kielce"
         keywords="strony internetowe kielce, tworzenie stron www kielce, projektowanie stron kielce, sklepy internetowe kielce"
       />
       

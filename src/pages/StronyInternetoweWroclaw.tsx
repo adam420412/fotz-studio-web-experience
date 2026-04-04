@@ -88,7 +88,7 @@ const StronyInternetoweWroclaw = () => {
       <SEOHead
         title="Strony Internetowe Wrocław | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Wrocław. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Wrocławia."
-        canonical="https://fotz.pl/strony-internetowe-wroclaw"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/wroclaw"
         keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław"
       />
       

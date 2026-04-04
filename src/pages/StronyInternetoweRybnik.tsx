@@ -87,7 +87,7 @@ const StronyInternetoweRybnik = () => {
       <SEOHead
         title="Strony Internetowe Rybnik | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Rybnik. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Rybnika."
-        canonical="https://fotz.pl/strony-internetowe-rybnik"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/rybnik"
         keywords="strony internetowe rybnik, tworzenie stron www rybnik, projektowanie stron rybnik, sklepy internetowe rybnik"
       />
       

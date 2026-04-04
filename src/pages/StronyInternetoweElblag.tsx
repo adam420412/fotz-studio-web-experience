@@ -78,7 +78,7 @@ const StronyInternetoweElblag = () => {
       <SEOHead
         title="Strony Internetowe Elbląg | Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Elbląg. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Elbląga."
-        canonical="https://fotz.pl/strony-internetowe-elblag"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/elblag"
         keywords="strony internetowe elbląg, tworzenie stron www elbląg, projektowanie stron elbląg"
       />
       

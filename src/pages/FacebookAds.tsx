@@ -132,7 +132,7 @@ const FacebookAds = () => {
       <SEOHead
         title="Facebook Ads Poznań | Kampanie Meta Ads | Fotz"
         description="Kampanie Facebook Ads - leady, sprzedaż, remarketing. Precyzyjne targetowanie. Agencja Meta Ads Poznań od 1500 zł/mies."
-        canonical="https://fotz.pl/facebook-ads"
+        canonical="https://fotz.pl/performance-marketing/facebook-ads"
       />
 
       <ServiceSchema 

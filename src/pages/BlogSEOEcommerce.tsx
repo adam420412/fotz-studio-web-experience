@@ -35,7 +35,7 @@ const BlogSEOEcommerce = () => {
       <SEOHead
         title="SEO dla sklepów internetowych - jak pozycjonować e-commerce | Fotz Studio"
         description="Kompletny poradnik SEO dla e-commerce. Poznaj strategie pozycjonowania sklepów internetowych, optymalizację kategorii i kart produktowych."
-        canonical="https://fotz.pl/blog/seo-ecommerce"
+        canonical="https://fotz.pl/seo/ecommerce"
         keywords="seo e-commerce, pozycjonowanie sklepu internetowego, seo dla sklepów, optymalizacja e-commerce, seo produktów"
       />
       <ArticleSchema

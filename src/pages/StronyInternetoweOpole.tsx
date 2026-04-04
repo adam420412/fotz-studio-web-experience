@@ -88,7 +88,7 @@ const StronyInternetoweOpole = () => {
       <SEOHead
         title="Strony Internetowe Opole | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Opole. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Opola."
-        canonical="https://fotz.pl/strony-internetowe-opole"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/opole"
         keywords="strony internetowe opole, tworzenie stron www opole, projektowanie stron opole, sklepy internetowe opole"
       />
       

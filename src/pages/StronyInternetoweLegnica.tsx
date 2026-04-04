@@ -78,7 +78,7 @@ const StronyInternetoweLegnica = () => {
       <SEOHead
         title="Strony Internetowe Legnica | Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Legnica. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Legnicy."
-        canonical="https://fotz.pl/strony-internetowe-legnica"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/legnica"
         keywords="strony internetowe legnica, tworzenie stron www legnica, projektowanie stron legnica"
       />
       

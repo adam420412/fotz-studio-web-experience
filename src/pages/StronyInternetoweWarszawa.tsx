@@ -174,7 +174,7 @@ const StronyInternetoweWarszawa = () => {
       <SEOHead
         title="Strony Internetowe Warszawa | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Warszawa. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Warszawy."
-        canonical="https://fotz.pl/strony-internetowe-warszawa"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/warszawa"
         keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa"
       />
       

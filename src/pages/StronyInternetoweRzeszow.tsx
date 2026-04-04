@@ -88,7 +88,7 @@ const StronyInternetoweRzeszow = () => {
       <SEOHead
         title="Strony Internetowe Rzeszów | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Rzeszów. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Rzeszowa."
-        canonical="https://fotz.pl/strony-internetowe-rzeszow"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/rzeszow"
         keywords="strony internetowe rzeszów, tworzenie stron www rzeszów, projektowanie stron rzeszów, sklepy internetowe rzeszów"
       />
       

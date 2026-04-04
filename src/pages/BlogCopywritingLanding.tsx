@@ -36,7 +36,7 @@ export default function BlogCopywritingLanding() {
       <SEOHead
         title="Copywriting dla landing pages - jak pisać teksty, które konwertują | FOTZ Studio"
         description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów, które zwiększają konwersję."
-        canonical="https://fotz.pl/blog/copywriting-landing-page"
+        canonical="https://fotz.pl/content-marketing/copywriting-landing"
         keywords="copywriting landing page, jak pisać landing page, teksty na stronę, headline, CTA, konwersja"
       />
       <ArticleSchema

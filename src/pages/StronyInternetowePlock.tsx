@@ -88,7 +88,7 @@ const StronyInternetowePlock = () => {
       <SEOHead
         title="Strony Internetowe Płock | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Płock. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Płocka."
-        canonical="https://fotz.pl/strony-internetowe-plock"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/plock"
         keywords="strony internetowe płock, tworzenie stron www płock, projektowanie stron płock, sklepy internetowe płock"
       />
       

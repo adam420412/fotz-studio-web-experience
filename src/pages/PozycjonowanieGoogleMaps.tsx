@@ -60,7 +60,7 @@ const PozycjonowanieGoogleMaps = () => {
       <SEOHead
         title="Pozycjonowanie Google Maps | Wizytówka GMB | Fotz"
         description="Pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy lokalnie. Optymalizacja Google Moja Firma. Fotz Studio."
-        canonical="https://fotz.pl/pozycjonowanie-google-maps"
+        canonical="https://fotz.pl/seo/google-maps"
         keywords="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google"
       />
       <ServiceSchema

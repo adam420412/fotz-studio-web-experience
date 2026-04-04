@@ -88,7 +88,7 @@ const StronyInternetoweGdansk = () => {
       <SEOHead
         title="Strony Internetowe Gdańsk | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Gdańsk. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Trójmiasta."
-        canonical="https://fotz.pl/strony-internetowe-gdansk"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/gdansk"
         keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk"
       />
       

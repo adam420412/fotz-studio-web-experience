@@ -88,7 +88,7 @@ const StronyInternetoweSzczecin = () => {
       <SEOHead
         title="Strony Internetowe Szczecin | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Szczecin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm ze Szczecina."
-        canonical="https://fotz.pl/strony-internetowe-szczecin"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/szczecin"
         keywords="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin"
       />
       

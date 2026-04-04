@@ -153,7 +153,7 @@ export default function ContentMarketing() {
       <SEOHead
         title="Content Marketing | Strategia Treści | Fotz"
         description="Content marketing dla firm - artykuły SEO, blogi, case studies. Buduj autorytet i pozyskuj klientów treścią. Fotz Studio."
-        canonical="https://fotz.pl/content-marketing"
+        canonical="https://fotz.pl/content-marketing/strategia"
         keywords="content marketing, marketing treści, strategia content marketing, seo content, blog firmowy"
       />
 

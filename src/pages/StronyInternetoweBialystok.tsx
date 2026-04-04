@@ -85,7 +85,7 @@ const StronyInternetoweBialystok = () => {
       <SEOHead
         title="Strony Internetowe Białystok | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Białystok. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Białegostoku."
-        canonical="https://fotz.pl/strony-internetowe-bialystok"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/bialystok"
         keywords="strony internetowe białystok, tworzenie stron www białystok, projektowanie stron białystok, sklepy internetowe białystok"
       />
       

@@ -35,7 +35,7 @@ const BlogTikTokBiznes = () => {
       <SEOHead
         title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku | Fotz Studio"
         description="Kompletny poradnik TikTok dla firm. Dowiedz się jak tworzyć angażujące treści, budować społeczność i wykorzystać TikTok Ads do promocji biznesu."
-        canonical="https://fotz.pl/blog/tiktok-dla-biznesu"
+        canonical="https://fotz.pl/social-media/tiktok-biznes"
         keywords="TikTok dla biznesu, TikTok marketing, TikTok Ads, reklamy TikTok, social media marketing, wideo marketing"
       />
       <ArticleSchema

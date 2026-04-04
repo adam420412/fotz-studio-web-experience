@@ -31,7 +31,7 @@ const BlogKampaniaReklamowa = () => {
       <SEOHead
         title="Kampania Reklamowa i Marketingowa: Przykłady i Definicja | Fotz Studio"
         description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok oraz strategie Google Ads i TikTok."
-        canonical="https://fotz.pl/blog/kampania-reklamowa-marketingowa"
+        canonical="https://fotz.pl/content-marketing/kampanie"
         keywords="kampania reklamowa, kampania marketingowa, Google Ads, TikTok, social media, reklama, marketing"
       />
       <ArticleSchema

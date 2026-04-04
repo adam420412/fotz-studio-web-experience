@@ -87,7 +87,7 @@ const StronyInternetoweGliwice = () => {
       <SEOHead
         title="Strony Internetowe Gliwice | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Gliwice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Gliwic."
-        canonical="https://fotz.pl/strony-internetowe-gliwice"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/gliwice"
         keywords="strony internetowe gliwice, tworzenie stron www gliwice, projektowanie stron gliwice, sklepy internetowe gliwice"
       />
       

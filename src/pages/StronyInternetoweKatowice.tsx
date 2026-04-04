@@ -132,7 +132,7 @@ const StronyInternetoweKatowice = () => {
       <SEOHead
         title="Strony Internetowe Katowice | Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Katowice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Katowic i Śląska."
-        canonical="https://fotz.pl/strony-internetowe-katowice"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/katowice"
         keywords="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice"
       />
       

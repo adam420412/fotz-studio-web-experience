@@ -35,7 +35,7 @@ const BlogEmailMarketing = () => {
       <SEOHead
         title="Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję | Fotz Studio"
         description="Kompletny poradnik email marketingu. Jak budować listę mailingową, tworzyć skuteczne kampanie i zwiększać konwersję w 2025 roku."
-        canonical="https://fotz.pl/blog/email-marketing-2025"
+        canonical="https://fotz.pl/content-marketing/email-2025"
         keywords="email marketing, lista mailingowa, newsletter, kampanie email, automatyzacja email, konwersja, lead magnet"
       />
       <ArticleSchema

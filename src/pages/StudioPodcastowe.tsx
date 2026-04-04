@@ -81,7 +81,7 @@ export default function StudioPodcastowe() {
       <SEOHead
         title="Studio Podcastowe Poznań | Nagrania Audio/Video | Fotz"
         description="Studio podcastowe w centrum Poznania. Mikrofony Shure, nagrania 4K, postprodukcja. Profesjonalne wynajem studia od 350 zł/h."
-        canonical="https://fotz.pl/studio-podcastowe"
+        canonical="https://fotz.pl/uslugi/studio-podcastowe"
         keywords="studio podcastowe, nagrywanie podcastów, podcast Poznań, studio nagrań, produkcja podcastów"
       />
       <ServiceSchema 

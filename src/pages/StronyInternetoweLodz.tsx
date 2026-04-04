@@ -88,7 +88,7 @@ const StronyInternetoweLodz = () => {
       <SEOHead
         title="Strony Internetowe Łódź | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Łódź. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Łodzi."
-        canonical="https://fotz.pl/strony-internetowe-lodz"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/lodz"
         keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź"
       />
       
