@@ -250,9 +250,8 @@ const App = () => (
                 <Route path="/blog/budzet-marketingowy-planowanie" element={<BlogBudzetMarketingowy />} />
                 <Route path="/blog/marketing-b2b-vs-b2c" element={<BlogB2BvsB2C />} />
                 <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
-                <Route path="/blog/:slug" element={<BlogArticleDynamic />} />
 
-                {/* Blog → cluster redirects (prevent duplicate content) */}
+                {/* Blog → cluster redirects MUST be BEFORE the catch-all /blog/:slug */}
                 <Route path="/blog/seo-ecommerce" element={<Redirect301 to="/seo/ecommerce" />} />
                 <Route path="/blog/influencer-marketing-polska" element={<Redirect301 to="/social-media/influencer" />} />
                 <Route path="/blog/remarketing-poradnik" element={<Redirect301 to="/performance-marketing/remarketing" />} />
@@ -263,6 +262,9 @@ const App = () => (
                 <Route path="/blog/copywriting-landing-page" element={<Redirect301 to="/content-marketing/copywriting-landing" />} />
                 <Route path="/blog/email-marketing-2025" element={<Redirect301 to="/content-marketing/email-2025" />} />
                 <Route path="/blog/kampania-reklamowa-marketingowa" element={<Redirect301 to="/content-marketing/kampanie" />} />
+
+                {/* Dynamic blog catch-all - MUST be AFTER all specific /blog/* routes */}
+                <Route path="/blog/:slug" element={<BlogArticleDynamic />} />
 
                 {/* Cluster hubs */}
                 <Route path="/seo" element={<SEOCluster />} />
