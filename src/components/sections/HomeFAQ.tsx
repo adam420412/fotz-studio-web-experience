@@ -44,7 +44,7 @@ export function HomeFAQ() {
         "Skuteczne kreacje reklamowe łączą atrakcyjny content marketing, jasne CTA oraz dopasowanie do grupy docelowej. Agencja interaktywna testuje różne formaty mediowe, content i warianty graficzne w kampaniach performance, aby maksymalizować wynik konwersji i minimalizować koszt pozyskania leadów.",
         "Effective advertising creatives combine attractive content marketing, clear CTAs and targeting."
       ),
-      link: { text: t("Nasze studio tworzy profesjonalne materiały wideo", "Our studio creates professional video materials"), url: "/spoty-reklamowe" },
+      link: { text: t("Nasze studio tworzy profesjonalne materiały wideo", "Our studio creates professional video materials"), url: "/uslugi/produkcja-video" },
     },
     {
       question: t(
@@ -55,7 +55,7 @@ export function HomeFAQ() {
         "Plan content marketingu powinien zawierać analizę słów kluczowych, harmonogram publikacji, integrację z kampaniami mediowymi i działania SEO poprawiające widoczność w wynikach wyszukiwania. Content musi być dopasowany do potrzeb odbiorców i wspierać cele sprzedażowe produktów i usług oraz generowanie leadów.",
         "A content marketing plan should include keyword analysis, publication schedule, integration with media campaigns and SEO activities."
       ),
-      link: { text: t("Poznaj naszą ofertę pozycjonowania stron", "Learn about our website positioning services"), url: "/pozycjonowanie" },
+      link: { text: t("Poznaj naszą ofertę pozycjonowania stron", "Learn about our website positioning services"), url: "/seo/pozycjonowanie" },
     },
     {
       question: t(
@@ -66,7 +66,7 @@ export function HomeFAQ() {
         "Agencja marketingowa optymalizuje stronę i sklep internetowy poprzez testy A/B, poprawę ścieżki zakupowej, optymalizację landing page'y oraz analizy w Google Analytics. Połączenie kampanii performance, remarketingu i treści dopasowanych do klientów zwiększa współczynnik konwersji i efektywność pozyskiwania klientów.",
         "A marketing agency optimizes websites and online stores through A/B testing."
       ),
-      link: { text: t("Tworzymy skuteczne sklepy e-commerce", "We create effective e-commerce stores"), url: "/ecommerce-tworzenie-sklepu" },
+      link: { text: t("Tworzymy skuteczne sklepy e-commerce", "We create effective e-commerce stores"), url: "/uslugi/strony-internetowe/ecommerce" },
     },
     {
       question: t(
@@ -77,7 +77,7 @@ export function HomeFAQ() {
         "Efekty mierzy się za pomocą KPI takich jak liczba leadów, koszt za konwersję, ROI i wskaźniki z Google Analytics. Agencja digital ustala cele kampanii, monitoruje algorytmy Google i raportuje wyniki, proponując korekty strategii, by osiągać skuteczne strategie zarówno w Polsce i na świecie.",
         "Effects are measured using KPIs such as number of leads, cost per conversion, ROI and Google Analytics metrics."
       ),
-      link: { text: t("Dowiedz się więcej o pozycjonowaniu w Google Maps", "Learn more about Google Maps positioning"), url: "/pozycjonowanie-google-maps" },
+      link: { text: t("Dowiedz się więcej o pozycjonowaniu w Google Maps", "Learn more about Google Maps positioning"), url: "/seo/google-maps" },
     },
     {
       question: t(
@@ -99,7 +99,7 @@ export function HomeFAQ() {
         "Tak — agencje interaktywne proponują indywidualne rozwiązania, integrujące CRM, narzędzia do pozyskiwania klientów i automatyzację marketingu. Dzięki temu kampanie dla firm są lepiej skalowalne, a komunikacja z leadami bardziej spersonalizowana, zgodna z wytycznymi Google i zasadami ochrony danych.",
         "Yes — interactive agencies offer custom solutions integrating CRM, customer acquisition tools and marketing automation."
       ),
-      link: { text: t("Tworzymy profesjonalne strony internetowe", "We create professional websites"), url: "/strony-internetowe" },
+      link: { text: t("Tworzymy profesjonalne strony internetowe", "We create professional websites"), url: "/uslugi/strony-internetowe" },
     },
   ];
 

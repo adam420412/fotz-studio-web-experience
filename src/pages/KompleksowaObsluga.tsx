@@ -19,25 +19,25 @@ const services = [
     icon: Globe,
     title: "Strony internetowe",
     description: "Profesjonalne strony www zoptymalizowane pod SEO",
-    link: "/strony-internetowe"
+    link: "/uslugi/strony-internetowe"
   },
   {
     icon: Smartphone,
     title: "Social Media",
     description: "Kompleksowe prowadzenie profili w mediach społecznościowych",
-    link: "/social-media"
+    link: "/social-media/obsluga"
   },
   {
     icon: Search,
     title: "Pozycjonowanie SEO",
     description: "Optymalizacja i pozycjonowanie w Google",
-    link: "/pozycjonowanie"
+    link: "/seo/pozycjonowanie"
   },
   {
     icon: Megaphone,
     title: "Kampanie reklamowe",
     description: "Google Ads, Meta Ads i kampanie display",
-    link: "/spoty-reklamowe"
+    link: "/uslugi/produkcja-video"
   },
   {
     icon: PenTool,
@@ -292,8 +292,8 @@ const KompleksowaObsluga = () => {
                     <p>
                       Kompleksowa obsługa powinna obejmować wszystkie aspekty <Link to="/uslugi" className="text-[#75143F] hover:underline">marketingu internetowego</Link> - 
                       od analizy rynku, przez planowanie strategii, realizację kampanii reklamowych, 
-                      <Link to="/pozycjonowanie" className="text-[#75143F] hover:underline"> optymalizację SEO</Link>, 
-                      <Link to="/social-media" className="text-[#75143F] hover:underline"> marketing w social media</Link>, 
+                      <Link to="/seo/pozycjonowanie" className="text-[#75143F] hover:underline"> optymalizację SEO</Link>, 
+                      <Link to="/social-media/obsluga" className="text-[#75143F] hover:underline"> marketing w social media</Link>, 
                       aż po analizę i raportowanie wyników.
                     </p>
                     <p>
@@ -384,8 +384,8 @@ const KompleksowaObsluga = () => {
                     <p className="text-muted-foreground mb-4">
                       Dla małych firm kluczowe są działania umożliwiające budowanie świadomości marki i pozyskiwanie nowych klientów. 
                       Obejmują one efektywny <strong className="text-foreground">content marketing</strong>, 
-                      obecność w <Link to="/social-media" className="text-[#75143F] hover:underline">social media</Link> (Facebook, Instagram), 
-                      a także lokalne <Link to="/pozycjonowanie" className="text-[#75143F] hover:underline">działania SEO</Link>.
+                      obecność w <Link to="/social-media/obsluga" className="text-[#75143F] hover:underline">social media</Link> (Facebook, Instagram), 
+                      a także lokalne <Link to="/seo/pozycjonowanie" className="text-[#75143F] hover:underline">działania SEO</Link>.
                     </p>
                   </div>
                   
@@ -393,18 +393,18 @@ const KompleksowaObsluga = () => {
                     <h3 className="text-xl font-semibold mb-4">Budowanie rozpoznawalności w internecie</h3>
                     <p className="text-muted-foreground mb-4">
                       Budowanie rozpoznawalności wymaga strategicznego podejścia do content marketingu oraz efektywnego wykorzystania 
-                      kanałów <Link to="/social-media" className="text-[#75143F] hover:underline">social media</Link>. 
+                      kanałów <Link to="/social-media/obsluga" className="text-[#75143F] hover:underline">social media</Link>. 
                       Tworzenie wartościowych treści odpowiadających na potrzeby klientów, wsparte 
-                      <Link to="/spoty-reklamowe" className="text-[#75143F] hover:underline"> kampaniami reklamowymi</Link> w Google Ads czy Meta Ads.
+                      <Link to="/uslugi/produkcja-video" className="text-[#75143F] hover:underline"> kampaniami reklamowymi</Link> w Google Ads czy Meta Ads.
                     </p>
                   </div>
                   
                   <div className="bg-card border border-border rounded-2xl p-8">
                     <h3 className="text-xl font-semibold mb-4">Profesjonalna strona internetowa</h3>
                     <p className="text-muted-foreground">
-                      <Link to="/strony-internetowe" className="text-[#75143F] hover:underline">Tworzenie stron www</Link> jest kluczowym 
+                      <Link to="/uslugi/strony-internetowe" className="text-[#75143F] hover:underline">Tworzenie stron www</Link> jest kluczowym 
                       elementem strategii marketingowej. Profesjonalnie zaprojektowana strona buduje pozytywny wizerunek marki i stanowi 
-                      platformę do komunikacji z klientami. <Link to="/pozycjonowanie" className="text-[#75143F] hover:underline">Optymalizacja pod kątem SEO</Link> pozwala 
+                      platformę do komunikacji z klientami. <Link to="/seo/pozycjonowanie" className="text-[#75143F] hover:underline">Optymalizacja pod kątem SEO</Link> pozwala 
                       łatwiej dotrzeć do potencjalnych klientów przez wyszukiwarki.
                     </p>
                   </div>

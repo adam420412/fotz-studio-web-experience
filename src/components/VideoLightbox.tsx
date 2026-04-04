@@ -18,7 +18,7 @@ export const VideoLightbox = ({ isOpen, onClose, videoSrc, title }: VideoLightbo
   const [showControls, setShowControls] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const controlsTimeoutRef = useRef<NodeJS.Timeout>();
+  const controlsTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => {
     if (isOpen && videoRef.current) {

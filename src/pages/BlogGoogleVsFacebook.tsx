@@ -35,13 +35,13 @@ const BlogGoogleVsFacebook = () => {
       <SEOHead
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu? | Fotz Studio"
         description="Porównanie Google Ads i Facebook Ads. Dowiedz się, która platforma reklamowa przyniesie lepsze wyniki dla Twojej firmy. Analiza kosztów, targetowania i ROI."
-        canonical="https://fotz.pl/blog/google-ads-vs-facebook-ads"
+        canonical="https://fotz.pl/performance-marketing/google-vs-facebook"
         keywords="Google Ads, Facebook Ads, reklama online, porównanie platform reklamowych, PPC, kampanie reklamowe, ROI"
       />
       <ArticleSchema
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu?"
         description="Porównanie Google Ads i Facebook Ads. Analiza kosztów, targetowania i ROI."
-        url="https://fotz.pl/blog/google-ads-vs-facebook-ads"
+        url="https://fotz.pl/performance-marketing/google-vs-facebook"
         datePublished="2025-01-04"
         dateModified="2025-01-04"
         author="Fotz Studio"
@@ -50,7 +50,7 @@ const BlogGoogleVsFacebook = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Google Ads vs Facebook Ads", url: "https://fotz.pl/blog/google-ads-vs-facebook-ads" },
+          { name: "Google Ads vs Facebook Ads", url: "https://fotz.pl/performance-marketing/google-vs-facebook" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -191,7 +191,7 @@ const BlogGoogleVsFacebook = () => {
               <h2>Kiedy wybrać Google Ads?</h2>
 
               <p>
-                <Link to="/google-ads" className="text-primary hover:underline">Reklamy w Google</Link> są idealne w następujących sytuacjach:
+                <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Reklamy w Google</Link> są idealne w następujących sytuacjach:
               </p>
 
               <h3>1. Ludzie szukają Twoich produktów/usług</h3>
@@ -236,7 +236,7 @@ const BlogGoogleVsFacebook = () => {
               <h2>Kiedy wybrać Facebook Ads?</h2>
 
               <p>
-                <Link to="/facebook-ads" className="text-primary hover:underline">Reklamy na Facebooku</Link> sprawdzają się najlepiej gdy:
+                <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Reklamy na Facebooku</Link> sprawdzają się najlepiej gdy:
               </p>
 
               <h3>1. Twój produkt jest impulsywny lub wizualny</h3>
@@ -262,7 +262,7 @@ const BlogGoogleVsFacebook = () => {
 
               <h3>4. Działasz w e-commerce</h3>
               <p>
-                Facebook + <Link to="/instagram-ads" className="text-primary hover:underline">Instagram</Link> to potęga dla <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">sklepów internetowych</Link>. Dynamiczne reklamy produktowe, katalogi produktów i remarketing to must-have dla każdego e-commerce.
+                Facebook + <Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">Instagram</Link> to potęga dla <Link to="/uslugi/strony-internetowe/ecommerce" className="text-primary hover:underline">sklepów internetowych</Link>. Dynamiczne reklamy produktowe, katalogi produktów i remarketing to must-have dla każdego e-commerce.
               </p>
 
               <h2>Porównanie formatów reklamowych</h2>

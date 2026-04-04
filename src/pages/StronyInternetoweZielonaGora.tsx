@@ -78,12 +78,12 @@ const StronyInternetoweZielonaGora = () => {
       <SEOHead
         title="Strony Internetowe Zielona Góra | Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Zielona Góra. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Zielonej Góry."
-        canonical="https://fotz.pl/strony-internetowe-zielona-gora"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/zielona-gora"
         keywords="strony internetowe zielona góra, tworzenie stron www zielona góra, projektowanie stron zielona góra"
       />
       
       <ServiceSchema name="Strony Internetowe Zielona Góra" description="Tworzenie stron internetowych dla firm z Zielonej Góry." provider="FOTZ Studio" areaServed="Zielona Góra" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Zielona Góra", url: "https://fotz.pl/strony-internetowe-zielona-gora" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Zielona Góra", url: "https://fotz.pl/uslugi/strony-internetowe/zielona-gora" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

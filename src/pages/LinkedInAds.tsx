@@ -140,7 +140,7 @@ const LinkedInAds = () => {
       <SEOHead
         title="LinkedIn Ads - Kampanie reklamowe B2B | Fotz Studio Poznań"
         description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady. Agencja LinkedIn Ads Poznań."
-        canonical="https://fotz.pl/linkedin-ads"
+        canonical="https://fotz.pl/performance-marketing/linkedin-ads"
         keywords="LinkedIn Ads, reklamy LinkedIn, kampanie B2B, marketing B2B, agencja LinkedIn Ads Poznań"
       />
       <ServiceSchema
@@ -152,7 +152,7 @@ const LinkedInAds = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "LinkedIn Ads", url: "https://fotz.pl/linkedin-ads" },
+          { name: "LinkedIn Ads", url: "https://fotz.pl/performance-marketing/linkedin-ads" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -456,7 +456,7 @@ const LinkedInAds = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link 
-              to="/google-ads" 
+              to="/performance-marketing/google-ads" 
               className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
             >
               <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
@@ -467,7 +467,7 @@ const LinkedInAds = () => {
               </p>
             </Link>
             <Link 
-              to="/content-marketing" 
+              to="/content-marketing/strategia" 
               className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
             >
               <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">

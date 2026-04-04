@@ -67,37 +67,37 @@ export default function AgencjaMarketingowaPoznan() {
       icon: Palette,
       title: "Branding – budowanie silnej marki",
       description: "Zapewniamy kompleksowe usługi brandingowe, które pomogą Twojej firmie w budowaniu silnej i rozpoznawalnej marki. Agencja marketingowa w Poznaniu oferuje stworzenie unikalnej identyfikacji wizualnej, która dotrze do grupy docelowej i przekona nowych klientów do skorzystania z oferty Twojej firmy.",
-      link: "/identyfikacja-wizualna"
+      link: "/uslugi/branding"
     },
     {
       icon: Globe,
       title: "Tworzenie stron internetowych – profesjonalne rozwiązania",
       description: "Specjalizujemy się w projektowaniu responsywnych stron www, dostosowanych do potrzeb wymagających klientów. Wykorzystujemy różne systemy zarządzania treścią (CMS), takie jak WordPress, Joomla, Drupal, Webflow i Shopify, aby umożliwić klientom samodzielną edycję witryny. Nasze strony www są estetyczne, funkcjonalne i zoptymalizowane pod kątem SEO.",
-      link: "/strony-internetowe-poznan"
+      link: "/uslugi/strony-internetowe/poznan"
     },
     {
       icon: Share2,
       title: "Social media – skuteczna obecność w sieci",
       description: "Agencja social media w Poznaniu specjalizuje się w prowadzeniu profili w mediach społecznościowych. Tworzymy angażujące treści, prowadzimy kampanie reklamowe na Facebooku, Instagramie i LinkedInie, a także analizujemy wyniki, aby stale optymalizować działania i zwiększać zasięgi. Z nami dotrzesz do nowych klientów i rozwiniesz swój wizerunek.",
-      link: "/social-media-poznan"
+      link: "/social-media/poznan"
     },
     {
       icon: Target,
       title: "Reklama – kampanie przynoszące rezultaty",
       description: "Nasza agencja marketingowa z Poznania specjalizuje się w kampaniach reklamowych SEM, w tym Google Ads i Meta Ads. Dbamy o to, aby Twoje reklamy były efektywne i przynosiły realne rezultaty w postaci zwiększonej sprzedaży i rozpoznawalności Twojej marki. Analizujemy dane, optymalizujemy budżet i działamy tak, aby pozyskiwać maksymalny ROAS.",
-      link: "/google-ads"
+      link: "/performance-marketing/google-ads"
     },
     {
       icon: Video,
       title: "Produkcja wideo – spoty i filmy promocyjne",
       description: "Tworzymy profesjonalne materiały wideo, od spotów reklamowych po filmy korporacyjne. Nasza agencja marketingowa w Poznaniu posiada studio podcastowe i zespół do produkcji filmowej, który pomoże Ci wyróżnić się na tle konkurencji.",
-      link: "/produkcja-filmow-poznan"
+      link: "/uslugi/produkcja-filmow"
     },
     {
       icon: TrendingUp,
       title: "Pozycjonowanie SEO – widoczność w Google",
       description: "Zwiększamy widoczność Twojej strony w wynikach wyszukiwania Google. Kompleksowe działania SEO obejmują audyt, optymalizację i link building, aby Twoja firma była łatwo znajdowana przez potencjalnych klientów.",
-      link: "/pozycjonowanie-stron-poznan"
+      link: "/seo/pozycjonowanie-poznan"
     }
   ];
 
@@ -804,14 +804,14 @@ export default function AgencjaMarketingowaPoznan() {
 
             <motion.div variants={fadeIn} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { title: "Social Media Poznań", href: "/social-media-poznan", icon: Share2 },
-                { title: "Strony Internetowe Poznań", href: "/strony-internetowe-poznan", icon: Globe },
-                { title: "Pozycjonowanie SEO", href: "/pozycjonowanie-stron-poznan", icon: TrendingUp },
-                { title: "Produkcja Filmów", href: "/produkcja-filmow-poznan", icon: Video },
-                { title: "Fotografia", href: "/fotograf-poznan", icon: Camera },
-                { title: "Google Ads", href: "/google-ads", icon: Target },
-                { title: "Facebook Ads", href: "/facebook-ads", icon: Share2 },
-                { title: "Identyfikacja Wizualna", href: "/identyfikacja-wizualna", icon: Palette },
+                { title: "Social Media Poznań", href: "/social-media/poznan", icon: Share2 },
+                { title: "Strony Internetowe Poznań", href: "/uslugi/strony-internetowe/poznan", icon: Globe },
+                { title: "Pozycjonowanie SEO", href: "/seo/pozycjonowanie-poznan", icon: TrendingUp },
+                { title: "Produkcja Filmów", href: "/uslugi/produkcja-filmow", icon: Video },
+                { title: "Fotografia", href: "/uslugi/fotografia", icon: Camera },
+                { title: "Google Ads", href: "/performance-marketing/google-ads", icon: Target },
+                { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", icon: Share2 },
+                { title: "Identyfikacja Wizualna", href: "/uslugi/branding", icon: Palette },
               ].map((service, index) => (
                 <Link
                   key={index}

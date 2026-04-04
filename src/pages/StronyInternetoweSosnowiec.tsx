@@ -88,12 +88,12 @@ const StronyInternetoweSosnowiec = () => {
       <SEOHead
         title="Strony Internetowe Sosnowiec | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Sosnowiec. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Sosnowca."
-        canonical="https://fotz.pl/strony-internetowe-sosnowiec"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/sosnowiec"
         keywords="strony internetowe sosnowiec, tworzenie stron www sosnowiec, projektowanie stron sosnowiec, sklepy internetowe sosnowiec"
       />
       
       <ServiceSchema name="Strony Internetowe Sosnowiec" description="Profesjonalne tworzenie stron internetowych dla firm z Sosnowca." provider="FOTZ Studio" areaServed="Sosnowiec" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Sosnowiec", url: "https://fotz.pl/strony-internetowe-sosnowiec" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Sosnowiec", url: "https://fotz.pl/uslugi/strony-internetowe/sosnowiec" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

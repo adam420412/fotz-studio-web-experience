@@ -108,7 +108,7 @@ export default function SocialMediaPoznan() {
       <SEOHead
         title="Agencja Social Media Poznań | FB, IG, LinkedIn | Fotz"
         description="Social media Poznań - prowadzenie FB, IG, LinkedIn. Kampanie Meta Ads, content. Bezpłatna konsultacja. Fotz Studio."
-        canonical="https://fotz.pl/social-media-poznan"
+        canonical="https://fotz.pl/social-media/poznan"
         keywords="agencja social media poznań, prowadzenie facebooka poznań, social media poznań, instagram poznań, meta ads poznań"
       />
       <ServiceSchema
@@ -120,8 +120,8 @@ export default function SocialMediaPoznan() {
       <BreadcrumbSchema
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Social Media", url: "https://fotz.pl/social-media" },
-          { name: "Social Media Poznań", url: "https://fotz.pl/social-media-poznan" }
+          { name: "Social Media", url: "https://fotz.pl/social-media/obsluga" },
+          { name: "Social Media Poznań", url: "https://fotz.pl/social-media/poznan" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

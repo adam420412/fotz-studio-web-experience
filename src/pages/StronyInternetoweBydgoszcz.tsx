@@ -130,7 +130,7 @@ const StronyInternetoweBydgoszcz = () => {
       <SEOHead
         title="Strony Internetowe Bydgoszcz | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Bydgoszcz. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Bydgoszczy i okolic."
-        canonical="https://fotz.pl/strony-internetowe-bydgoszcz"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/bydgoszcz"
         keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz"
       />
       
@@ -144,8 +144,8 @@ const StronyInternetoweBydgoszcz = () => {
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Bydgoszcz", url: "https://fotz.pl/strony-internetowe-bydgoszcz" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
+          { name: "Bydgoszcz", url: "https://fotz.pl/uslugi/strony-internetowe/bydgoszcz" },
         ]}
       />
       
@@ -179,7 +179,7 @@ const StronyInternetoweBydgoszcz = () => {
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
                 W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
-                Oferujemy kompleksowe usługi <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenia stron www</Link> w Bydgoszczy, 
+                Oferujemy kompleksowe usługi <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron www</Link> w Bydgoszczy, 
                 dostosowane do indywidualnych potrzeb klienta.
               </p>
 
@@ -227,7 +227,7 @@ const StronyInternetoweBydgoszcz = () => {
                   <p>
                     Specjalizujemy się w projektowaniu responsywnych stron internetowych, dostosowanych do potrzeb klienta. 
                     <strong>Tworzymy strony internetowe dla firm, które są wizualnie atrakcyjne, funkcjonalne i zoptymalizowane pod kątem 
-                    <Link to="/pozycjonowanie" className="text-primary hover:underline"> SEO</Link></strong>.
+                    <Link to="/seo/pozycjonowanie" className="text-primary hover:underline"> SEO</Link></strong>.
                   </p>
                 </div>
               </FadeInView>
@@ -245,7 +245,7 @@ const StronyInternetoweBydgoszcz = () => {
                   Tworzenie Stron WWW w Bydgoszczy
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi tworzenia stron www dla firm z Bydgoszczy - od projektu graficznego po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
+                  Kompleksowe usługi tworzenia stron www dla firm z Bydgoszczy - od projektu graficznego po <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
                 </p>
               </div>
             </FadeInView>
@@ -421,7 +421,7 @@ const StronyInternetoweBydgoszcz = () => {
                   
                   <h3>Znaczenie SEO w tworzeniu stron www</h3>
                   <p>
-                    <strong>Optymalizacja <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> jest kluczowa 
+                    <strong>Optymalizacja <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> jest kluczowa 
                     w procesie tworzenia stron www, ponieważ wpływa na widoczność Twojej witryny w wyszukiwarkach internetowych</strong>. 
                     Naszą misją jest dostarczanie klientom stron internetowych, które pozwalają dotrzeć do szerszego grona odbiorców.
                   </p>
@@ -467,7 +467,7 @@ const StronyInternetoweBydgoszcz = () => {
                     Nasza oferta obejmuje kampanie reklamowe Meta Ads i Google Ads.
                   </p>
                   
-                  <h3>Wykorzystanie <Link to="/social-media" className="text-primary hover:underline">Social Media</Link></h3>
+                  <h3>Wykorzystanie <Link to="/social-media/obsluga" className="text-primary hover:underline">Social Media</Link></h3>
                   <p>
                     Kampanie Ads pozwalają na precyzyjne targetowanie odbiorców, wyświetlanie reklam osobom zainteresowanym 
                     Twoją ofertą oraz mierzenie efektów reklamowych. Dzięki temu możesz zoptymalizować swoje działania marketingowe.
@@ -515,7 +515,7 @@ const StronyInternetoweBydgoszcz = () => {
                 <div className="prose prose-invert max-w-none">
                   <h2>Profesjonalne strony internetowe Bydgoszcz — czym się wyróżniają?</h2>
                   <p>
-                    Profesjonalne <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowe</Link> Bydgoszcz 
+                    Profesjonalne <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowe</Link> Bydgoszcz 
                     to projektowanie witryn z myślą o optymalizacji, szybkiej responsywności i spójnym wizerunku w sieci. 
                     Takie strony często zawierają dedykowaną domenę, integrację z systemami e-commerce oraz wsparcie techniczne po uruchomieniu.
                   </p>

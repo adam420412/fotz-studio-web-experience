@@ -95,15 +95,15 @@ const FacebookAds = () => {
   const faqItems = [
     {
       question: "Jakie są pierwsze kroki do stworzenia skutecznej kampanii na Facebooku?",
-      answer: <>Pierwszym krokiem jest zdefiniowanie celu kampanii reklamowej, wybór grupy docelowej oraz ustalenie budżetu. Następnie należy wybrać format reklamy, który najlepiej odpowiada celom twojej kampanii. Istotne jest także skonfigurowanie kampanii w Menadżerze Reklam Facebook i połączenie z profesjonalną <Link to="/strony-internetowe" className="text-primary hover:underline">stroną internetową</Link>.</>
+      answer: <>Pierwszym krokiem jest zdefiniowanie celu kampanii reklamowej, wybór grupy docelowej oraz ustalenie budżetu. Następnie należy wybrać format reklamy, który najlepiej odpowiada celom twojej kampanii. Istotne jest także skonfigurowanie kampanii w Menadżerze Reklam Facebook i połączenie z profesjonalną <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">stroną internetową</Link>.</>
     },
     {
       question: "Jak wybrać odbiorców swojej reklamy na Facebooku?",
-      answer: <>Aby wybrać swoich odbiorców, należy określić demograficzne, geograficzne i behawioralne kryteria wyboru. Facebook umożliwia również targetowanie na podstawie zainteresowań potencjalnych klientów, ich zachowań online oraz danych z fanpage'a twojego biznesu. Podobne możliwości oferują reklamy <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link>.</>
+      answer: <>Aby wybrać swoich odbiorców, należy określić demograficzne, geograficzne i behawioralne kryteria wyboru. Facebook umożliwia również targetowanie na podstawie zainteresowań potencjalnych klientów, ich zachowań online oraz danych z fanpage'a twojego biznesu. Podobne możliwości oferują reklamy <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link>.</>
     },
     {
       question: "Jaki format reklamy na Facebooku będzie najskuteczniejszy?",
-      answer: <>Wybór formatu zależy od celów twojej kampanii. Facebook oferuje różnorodne formy reklamy, w tym posty sponsorowane, historie, materiały błyskawiczne, filmy, karuzele czy reklamy w Messengerze. Profesjonalne materiały wideo znacząco zwiększają skuteczność kampanii - sprawdź naszą <Link to="/produkcja-filmow-poznan" className="text-primary hover:underline">produkcję wideo</Link>.</>
+      answer: <>Wybór formatu zależy od celów twojej kampanii. Facebook oferuje różnorodne formy reklamy, w tym posty sponsorowane, historie, materiały błyskawiczne, filmy, karuzele czy reklamy w Messengerze. Profesjonalne materiały wideo znacząco zwiększają skuteczność kampanii - sprawdź naszą <Link to="/uslugi/produkcja-filmow" className="text-primary hover:underline">produkcję wideo</Link>.</>
     },
     {
       question: "Ile kosztuje reklama na Facebook Ads?",
@@ -115,7 +115,7 @@ const FacebookAds = () => {
     },
     {
       question: "Jak mierzyć efektywność kampanii reklamowej na Facebooku?",
-      answer: <>Efektywność kampanii można mierzyć za pomocą narzędzi analitycznych oferowanych przez Facebooka, takich jak Menadżer Reklam oraz Insights. Te narzędzia udostępniają dane na temat zasięgu, interakcji, konwersji oraz ROI. Warto połączyć te dane z analityką <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
+      answer: <>Efektywność kampanii można mierzyć za pomocą narzędzi analitycznych oferowanych przez Facebooka, takich jak Menadżer Reklam oraz Insights. Te narzędzia udostępniają dane na temat zasięgu, interakcji, konwersji oraz ROI. Warto połączyć te dane z analityką <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
     },
     {
       question: "Czy warto powierzyć prowadzenie kampanii agencji reklamowej?",
@@ -123,7 +123,7 @@ const FacebookAds = () => {
     },
     {
       question: "Jakie są najczęstsze błędy przy tworzeniu reklam na Facebooku?",
-      answer: <>Najczęstsze błędy to nieprecyzyjne określenie grupy docelowej, nieodpowiedni wybór formatu reklamy, brak jasnego wezwania do działania, a także niedostosowanie treści i grafiki reklamy do preferencji odbiorców. Profesjonalna <Link to="/social-media-poznan" className="text-primary hover:underline">obsługa social media</Link> pomaga uniknąć tych błędów.</>
+      answer: <>Najczęstsze błędy to nieprecyzyjne określenie grupy docelowej, nieodpowiedni wybór formatu reklamy, brak jasnego wezwania do działania, a także niedostosowanie treści i grafiki reklamy do preferencji odbiorców. Profesjonalna <Link to="/social-media/poznan" className="text-primary hover:underline">obsługa social media</Link> pomaga uniknąć tych błędów.</>
     },
   ];
 
@@ -132,7 +132,7 @@ const FacebookAds = () => {
       <SEOHead
         title="Facebook Ads Poznań | Kampanie Meta Ads | Fotz"
         description="Kampanie Facebook Ads - leady, sprzedaż, remarketing. Precyzyjne targetowanie. Agencja Meta Ads Poznań od 1500 zł/mies."
-        canonical="https://fotz.pl/facebook-ads"
+        canonical="https://fotz.pl/performance-marketing/facebook-ads"
       />
 
       <ServiceSchema 
@@ -145,7 +145,7 @@ const FacebookAds = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Facebook Ads", url: "https://fotz.pl/facebook-ads" }
+          { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
@@ -250,7 +250,7 @@ const FacebookAds = () => {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link to="/social-media-poznan" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
+                <Link to="/social-media/poznan" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Social Media Marketing
                 </Link>
                 <Link to="/kompleksowa-obsluga-marketingowa" className="text-blue-400 hover:text-blue-300 text-sm flex items-center gap-1">
@@ -394,7 +394,7 @@ const FacebookAds = () => {
               <p className="text-muted-foreground mb-6">
                 Wykorzystanie <strong>Lookalike Audience</strong> i <strong>retargetingu</strong> to zaawansowane opcje, które pozwalają na zwiększenie efektywności kampanii. Lookalike umożliwia tworzenie grup podobnych do aktualnych klientów, natomiast retargeting pozwala na ponowne dotarcie do osób, które już wcześniej zetknęły się z marką.
               </p>
-              <Link to="/pozycjonowanie" className="text-blue-400 hover:text-blue-300 flex items-center gap-2">
+              <Link to="/seo/pozycjonowanie" className="text-blue-400 hover:text-blue-300 flex items-center gap-2">
                 Zobacz jak łączymy Facebook Ads z SEO <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>
@@ -621,10 +621,10 @@ const FacebookAds = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Google Ads", description: "Reklamy w wyszukiwarce dla klientów z intencją zakupową", href: "/google-ads", icon: Target },
-              { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online", href: "/ecommerce-tworzenie-sklepu", icon: ShoppingCart },
-              { title: "Social Media", description: "Kompleksowa obsługa mediów społecznościowych", href: "/social-media-poznan", icon: Users },
-              { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/strony-internetowe", icon: Monitor },
+              { title: "Google Ads", description: "Reklamy w wyszukiwarce dla klientów z intencją zakupową", href: "/performance-marketing/google-ads", icon: Target },
+              { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online", href: "/uslugi/strony-internetowe/ecommerce", icon: ShoppingCart },
+              { title: "Social Media", description: "Kompleksowa obsługa mediów społecznościowych", href: "/social-media/poznan", icon: Users },
+              { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/uslugi/strony-internetowe", icon: Monitor },
             ].map((service, index) => (
               <motion.div
                 key={service.title}

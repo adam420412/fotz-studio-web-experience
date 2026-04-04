@@ -212,7 +212,7 @@ export default function FotografiaZDrona() {
       <SEOHead
         title="Zdjęcia z Drona | Fotografia Lotnicza 4K | Fotz"
         description="Zdjęcia i filmy z drona 4K. Ujęcia z lotu ptaka dla nieruchomości, eventów, przemysłu. Panoramy 360°. Fotz Poznań."
-        canonical="https://fotz.pl/fotografia-z-drona"
+        canonical="https://fotz.pl/uslugi/fotografia-z-drona"
       />
 
       <ServiceSchema
@@ -223,7 +223,7 @@ export default function FotografiaZDrona() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Fotografia z drona", url: "https://fotz.pl/fotografia-z-drona" }
+          { name: "Fotografia z drona", url: "https://fotz.pl/uslugi/fotografia-z-drona" }
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -550,8 +550,8 @@ export default function FotografiaZDrona() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Produkcja filmów", desc: "Profesjonalne filmy promocyjne z ujęciami z drona", href: "/produkcja-filmow-poznan", icon: Film },
-              { title: "Fotografia eventowa", desc: "Kompleksowa dokumentacja wydarzeń", href: "/fotograf-poznan", icon: Camera },
+              { title: "Produkcja filmów", desc: "Profesjonalne filmy promocyjne z ujęciami z drona", href: "/uslugi/produkcja-filmow", icon: Film },
+              { title: "Fotografia eventowa", desc: "Kompleksowa dokumentacja wydarzeń", href: "/uslugi/fotografia", icon: Camera },
               { title: "Wizualizacje 3D", desc: "Połączenie zdjęć z drona z renderami 3D", href: "/wizualizacje-3d", icon: Building2 },
               { title: "Marketing nieruchomości", desc: "Pełna obsługa marketingowa deweloperów", href: "/dla-kogo/nieruchomosci", icon: MapPin },
             ].map((service, index) => (

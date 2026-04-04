@@ -140,7 +140,7 @@ const YouTubeAds = () => {
       <SEOHead
         title="YouTube Ads - Reklamy wideo na YouTube | Fotz Studio Poznań"
         description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo. Produkcja spotów i obsługa kampanii. Agencja YouTube Ads Poznań."
-        canonical="https://fotz.pl/youtube-ads"
+        canonical="https://fotz.pl/performance-marketing/youtube-ads"
       />
       <ServiceSchema
         name="YouTube Ads - Reklamy wideo"
@@ -151,7 +151,7 @@ const YouTubeAds = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "YouTube Ads", url: "https://fotz.pl/youtube-ads" },
+          { name: "YouTube Ads", url: "https://fotz.pl/performance-marketing/youtube-ads" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -189,7 +189,7 @@ const YouTubeAds = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/spoty-reklamowe">Zobacz nasze spoty</Link>
+                <Link to="/uslugi/produkcja-video">Zobacz nasze spoty</Link>
               </Button>
             </div>
           </motion.div>
@@ -463,9 +463,9 @@ const YouTubeAds = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               { title: "Kampanie reklamowe", href: "/kampanie-reklamowe", icon: Megaphone },
-              { title: "Google Ads", href: "/google-ads", icon: Target },
-              { title: "Spoty reklamowe", href: "/spoty-reklamowe", icon: Video },
-              { title: "Produkcja filmów", href: "/produkcja-filmow-poznan", icon: Film },
+              { title: "Google Ads", href: "/performance-marketing/google-ads", icon: Target },
+              { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", icon: Video },
+              { title: "Produkcja filmów", href: "/uslugi/produkcja-filmow", icon: Film },
             ].map((service, index) => (
               <motion.div
                 key={index}

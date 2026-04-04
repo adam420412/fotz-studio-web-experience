@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Spoty reklamowe", href: "/spoty-reklamowe", description: "Produkcja filmów dla motoryzacji" },
+  { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", description: "Produkcja filmów dla motoryzacji" },
   { title: "Wizualizacje 3D", href: "/wizualizacje-3d", description: "Konfiguratory i renderingi" },
-  { title: "Google Ads", href: "/google-ads", description: "Kampanie na frazy motoryzacyjne" },
-  { title: "Fotograf", href: "/fotograf-poznan", description: "Sesje zdjęciowe pojazdów" },
+  { title: "Google Ads", href: "/performance-marketing/google-ads", description: "Kampanie na frazy motoryzacyjne" },
+  { title: "Fotograf", href: "/uslugi/fotografia", description: "Sesje zdjęciowe pojazdów" },
 ];
 
 const MarketingAutomotive = () => {

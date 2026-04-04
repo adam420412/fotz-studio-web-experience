@@ -124,7 +124,7 @@ export default function BlogUXEcommerce() {
                 <strong className="text-foreground"> dobry UX/UI może być różnicą między sukcesem a porażką</strong>. 
                 Sklep internetowy to nie tylko katalog produktów - to doświadczenie zakupowe, które musi być 
                 intuicyjne, przyjemne i efektywne. W tym poradniku pokażemy, jak projektować sklepy, które 
-                nie tylko dobrze wyglądają, ale przede wszystkim sprzedają. Sprawdź również nasze usługi <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">tworzenia sklepów e-commerce</Link> oraz <Link to="/strony-internetowe" className="text-primary hover:underline">projektowania stron internetowych</Link>.
+                nie tylko dobrze wyglądają, ale przede wszystkim sprzedają. Sprawdź również nasze usługi <Link to="/uslugi/strony-internetowe/ecommerce" className="text-primary hover:underline">tworzenia sklepów e-commerce</Link> oraz <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">projektowania stron internetowych</Link>.
               </p>
             </motion.div>
 
@@ -712,7 +712,7 @@ export default function BlogUXEcommerce() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link to="/ecommerce-tworzenie-sklepu">
+                  <Link to="/uslugi/strony-internetowe/ecommerce">
                     Zobacz ofertę e-commerce
                   </Link>
                 </Button>

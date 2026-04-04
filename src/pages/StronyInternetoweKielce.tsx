@@ -88,12 +88,12 @@ const StronyInternetoweKielce = () => {
       <SEOHead
         title="Strony Internetowe Kielce | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Kielce. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kielc."
-        canonical="https://fotz.pl/strony-internetowe-kielce"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/kielce"
         keywords="strony internetowe kielce, tworzenie stron www kielce, projektowanie stron kielce, sklepy internetowe kielce"
       />
       
       <ServiceSchema name="Strony Internetowe Kielce" description="Profesjonalne tworzenie stron internetowych dla firm z Kielc." provider="FOTZ Studio" areaServed="Kielce" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Kielce", url: "https://fotz.pl/strony-internetowe-kielce" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kielce", url: "https://fotz.pl/uslugi/strony-internetowe/kielce" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

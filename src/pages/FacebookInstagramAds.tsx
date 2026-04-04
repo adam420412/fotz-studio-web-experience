@@ -44,7 +44,7 @@ const platforms = [
     color: "from-blue-600 to-blue-800",
     description: "Największa platforma społecznościowa z precyzyjnym targetowaniem demograficznym i behawioralnym.",
     formats: ["Feed Ads", "Stories", "Reels", "Messenger", "Marketplace"],
-    link: "/facebook-ads"
+    link: "/performance-marketing/facebook-ads"
   },
   {
     name: "Instagram Ads",
@@ -52,7 +52,7 @@ const platforms = [
     color: "from-pink-500 via-purple-500 to-orange-400",
     description: "Platforma wizualna idealna dla marek lifestyle, beauty, fashion i e-commerce.",
     formats: ["Feed", "Stories", "Reels", "Explore", "Shopping"],
-    link: "/instagram-ads"
+    link: "/performance-marketing/instagram-ads"
   }
 ];
 
@@ -203,7 +203,7 @@ export default function FacebookInstagramAds() {
       <SEOHead
         title="Meta Ads - Facebook & Instagram | Fotz Poznań"
         description="Reklamy Meta Ads - Facebook i Instagram w jednej strategii. Cross-platform retargeting i Advantage+. Agencja Poznań."
-        canonical="https://fotz.pl/facebook-instagram-ads"
+        canonical="https://fotz.pl/performance-marketing/meta-ads"
         keywords="meta ads, facebook ads, instagram ads, reklamy facebook, reklamy instagram, agencja meta, poznań"
       />
       <ServiceSchema
@@ -216,7 +216,7 @@ export default function FacebookInstagramAds() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "Facebook & Instagram Ads", url: "https://fotz.pl/facebook-instagram-ads" }
+          { name: "Facebook & Instagram Ads", url: "https://fotz.pl/performance-marketing/meta-ads" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
@@ -480,10 +480,10 @@ export default function FacebookInstagramAds() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { name: "Google Ads", href: "/google-ads", description: "Docieraj do klientów szukających Twoich usług" },
-              { name: "TikTok Ads", href: "/tiktok-ads", description: "Angażuj młodą grupę docelową" },
-              { name: "LinkedIn Ads", href: "/linkedin-ads", description: "Generuj leady B2B" },
-              { name: "YouTube Ads", href: "/youtube-ads", description: "Buduj świadomość marki wideo" },
+              { name: "Google Ads", href: "/performance-marketing/google-ads", description: "Docieraj do klientów szukających Twoich usług" },
+              { name: "TikTok Ads", href: "/performance-marketing/tiktok-ads", description: "Angażuj młodą grupę docelową" },
+              { name: "LinkedIn Ads", href: "/performance-marketing/linkedin-ads", description: "Generuj leady B2B" },
+              { name: "YouTube Ads", href: "/performance-marketing/youtube-ads", description: "Buduj świadomość marki wideo" },
             ].map((service) => (
               <Link
                 key={service.name}

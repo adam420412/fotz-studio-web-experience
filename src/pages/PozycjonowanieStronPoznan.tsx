@@ -10,7 +10,7 @@ const PozycjonowanieStronPoznan = () => {
       <SEOHead
         title="Pozycjonowanie Stron Poznań | Agencja SEO | Fotz"
         description="Pozycjonowanie stron www Poznań. Audyt SEO, optymalizacja, link building. Zwiększ widoczność w Google. Fotz Studio."
-        canonical="https://fotz.pl/pozycjonowanie-stron-poznan"
+        canonical="https://fotz.pl/seo/pozycjonowanie-poznan"
         keywords="pozycjonowanie stron Poznań, SEO Poznań, agencja SEO Poznań, pozycjonowanie stron www, optymalizacja SEO"
       />
 

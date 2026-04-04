@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Fotograf Poznań", href: "/fotograf-poznan", description: "Sesje metamorfoz i portfolio" },
-  { title: "Social Media", href: "/social-media", description: "Instagram i Facebook" },
-  { title: "Google Maps", href: "/pozycjonowanie-google-maps", description: "Widoczność lokalna" },
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Strony z rezerwacją online" },
+  { title: "Fotograf Poznań", href: "/uslugi/fotografia", description: "Sesje metamorfoz i portfolio" },
+  { title: "Social Media", href: "/social-media/obsluga", description: "Instagram i Facebook" },
+  { title: "Google Maps", href: "/seo/google-maps", description: "Widoczność lokalna" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony z rezerwacją online" },
 ];
 
 const MarketingBeauty = () => {

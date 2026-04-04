@@ -120,7 +120,7 @@ export default function BlogGoogleAnalytics4() {
                 <strong>Google Analytics 4 (GA4)</strong> to najnowsza generacja platformy analitycznej Google, 
                 która całkowicie zmieniła podejście do mierzenia ruchu na stronach internetowych. 
                 W przeciwieństwie do Universal Analytics (UA), GA4 opiera się na modelu <strong>event-based</strong> 
-                (opartym na zdarzeniach), a nie sesyjnym. Właściwa konfiguracja GA4 jest kluczowa dla skutecznego <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link> oraz optymalizacji <Link to="/google-ads" className="text-primary hover:underline">kampanii Google Ads</Link>.
+                (opartym na zdarzeniach), a nie sesyjnym. Właściwa konfiguracja GA4 jest kluczowa dla skutecznego <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link> oraz optymalizacji <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">kampanii Google Ads</Link>.
               </p>
               <p>
                 Od 1 lipca 2023 roku Universal Analytics przestał zbierać nowe dane, co oznacza, 
@@ -361,9 +361,9 @@ export default function BlogGoogleAnalytics4() {
               <p>
                 Google Analytics 4 to potężne narzędzie, które wymaga nowego podejścia do analityki. 
                 Model event-based daje większą elastyczność, ale wymaga przemyślanej konfiguracji. 
-                Dzięki GA4 możesz lepiej śledzić efekty <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link>, 
+                Dzięki GA4 możesz lepiej śledzić efekty <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link>, 
                 optymalizować <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link> oraz 
-                mierzyć ROI z <Link to="/content-marketing" className="text-primary hover:underline">content marketingu</Link>.
+                mierzyć ROI z <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketingu</Link>.
               </p>
               <p>
                 Kluczowe kroki na start:
@@ -378,8 +378,8 @@ export default function BlogGoogleAnalytics4() {
               </ol>
 
               <p>
-                Aby w pełni wykorzystać potencjał GA4, warto również zapoznać się z <Link to="/blog/remarketing-poradnik" className="text-primary hover:underline">remarketingiem</Link>, 
-                który pozwala odzyskiwać użytkowników, oraz ze strategiami <Link to="/blog/seo-ecommerce" className="text-primary hover:underline">SEO dla e-commerce</Link>.
+                Aby w pełni wykorzystać potencjał GA4, warto również zapoznać się z <Link to="/performance-marketing/remarketing" className="text-primary hover:underline">remarketingiem</Link>, 
+                który pozwala odzyskiwać użytkowników, oraz ze strategiami <Link to="/seo/ecommerce" className="text-primary hover:underline">SEO dla e-commerce</Link>.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-8 my-8 text-center">

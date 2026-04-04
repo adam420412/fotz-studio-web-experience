@@ -106,7 +106,7 @@ const faqCategories = [
       {
         question: "Jakie są zalety łączenia Facebook i Instagram Ads?",
         answer: "Łączenie Facebook i Instagram Ads w ramach Meta Ads daje dostęp do wspólnej puli odbiorców i automatycznej optymalizacji cross-platform. Jeden Pixel śledzi konwersje z obu platform, remarketing działa płynnie między nimi, a Advantage+ alokuje budżet tam, gdzie osiągasz najlepsze wyniki. Szczegóły znajdziesz na naszej stronie Meta Ads.",
-        link: "/facebook-instagram-ads"
+        link: "/performance-marketing/meta-ads"
       },
     ],
   },

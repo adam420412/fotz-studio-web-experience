@@ -36,13 +36,13 @@ export default function BlogRemarketing() {
       <SEOHead
         title="Remarketing - kompletny poradnik dla firm 2025 | FOTZ Studio"
         description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Poznaj strategie, koszty i najlepsze praktyki remarketingu dla e-commerce i usług."
-        canonical="https://fotz.pl/blog/remarketing-poradnik"
+        canonical="https://fotz.pl/performance-marketing/remarketing"
         keywords="remarketing, retargeting, remarketing google ads, remarketing facebook, porzucone koszyki, remarketing dynamiczny"
       />
       <ArticleSchema
         title="Remarketing - kompletny poradnik dla firm 2025"
         description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Strategie, koszty i najlepsze praktyki."
-        url="https://fotz.pl/blog/remarketing-poradnik"
+        url="https://fotz.pl/performance-marketing/remarketing"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
@@ -51,7 +51,7 @@ export default function BlogRemarketing() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Remarketing", url: "https://fotz.pl/blog/remarketing-poradnik" },
+          { name: "Remarketing", url: "https://fotz.pl/performance-marketing/remarketing" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -125,7 +125,7 @@ export default function BlogRemarketing() {
               <p>
                 Statystyki są bezlitosne: <strong>97% użytkowników opuszcza stronę bez zakupu</strong> podczas pierwszej wizyty. 
                 Remarketing pozwala "podążać" za tymi użytkownikami i przypominać im o Twojej ofercie, znacząco 
-                zwiększając szanse na konwersję. Najlepiej działa w połączeniu z <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
+                zwiększając szanse na konwersję. Najlepiej działa w połączeniu z <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">

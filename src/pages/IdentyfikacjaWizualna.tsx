@@ -152,7 +152,7 @@ const IdentyfikacjaWizualna = () => {
       <SEOHead
         title="Identyfikacja Wizualna | Logo i Branding | Fotz"
         description="Identyfikacja wizualna firmy - logo, księga znaku, materiały firmowe. Spójny branding dla Twojej marki. Agencja Poznań."
-        canonical="https://fotz.pl/identyfikacja-wizualna"
+        canonical="https://fotz.pl/uslugi/branding"
         keywords="identyfikacja wizualna, branding, projektowanie logo, księga znaku, agencja brandingowa Poznań"
       />
       <ServiceSchema 
@@ -165,7 +165,7 @@ const IdentyfikacjaWizualna = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Identyfikacja Wizualna", url: "https://fotz.pl/identyfikacja-wizualna" },
+          { name: "Identyfikacja Wizualna", url: "https://fotz.pl/uslugi/branding" },
         ]}
       />
       <FAQSchema 
@@ -272,10 +272,10 @@ const IdentyfikacjaWizualna = () => {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link to="/strony-internetowe" className="text-[#75143F] hover:text-[#75143F]/80 text-sm flex items-center gap-1">
+                <Link to="/uslugi/strony-internetowe" className="text-[#75143F] hover:text-[#75143F]/80 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Strony internetowe
                 </Link>
-                <Link to="/social-media" className="text-[#75143F] hover:text-[#75143F]/80 text-sm flex items-center gap-1">
+                <Link to="/social-media/obsluga" className="text-[#75143F] hover:text-[#75143F]/80 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Social media
                 </Link>
               </div>

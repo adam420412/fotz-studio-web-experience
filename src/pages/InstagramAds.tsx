@@ -138,7 +138,7 @@ const InstagramAds = () => {
       <SEOHead
         title="Instagram Ads Poznań | Reklamy IG | Fotz"
         description="Kampanie Instagram Ads - Stories, Reels, Feed. Wizualny storytelling i Shopping Ads. Agencja IG Ads od 1500 zł/mies."
-        canonical="https://fotz.pl/instagram-ads"
+        canonical="https://fotz.pl/performance-marketing/instagram-ads"
         keywords="Instagram Ads, reklamy Instagram, kampanie Instagram, Stories Ads, Reels Ads, agencja Instagram Poznań"
       />
 
@@ -152,7 +152,7 @@ const InstagramAds = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Instagram Ads", url: "https://fotz.pl/instagram-ads" }
+          { name: "Instagram Ads", url: "https://fotz.pl/performance-marketing/instagram-ads" }
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -479,10 +479,10 @@ const InstagramAds = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { name: "Meta Ads (FB + IG)", href: "/facebook-instagram-ads", description: "Synergia Facebook i Instagram" },
-              { name: "Google Ads", href: "/google-ads", description: "Reklamy w wyszukiwarce" },
-              { name: "TikTok Ads", href: "/tiktok-ads", description: "Viralowe kampanie wideo" },
-              { name: "YouTube Ads", href: "/youtube-ads", description: "Reklamy wideo" },
+              { name: "Meta Ads (FB + IG)", href: "/performance-marketing/meta-ads", description: "Synergia Facebook i Instagram" },
+              { name: "Google Ads", href: "/performance-marketing/google-ads", description: "Reklamy w wyszukiwarce" },
+              { name: "TikTok Ads", href: "/performance-marketing/tiktok-ads", description: "Viralowe kampanie wideo" },
+              { name: "YouTube Ads", href: "/performance-marketing/youtube-ads", description: "Reklamy wideo" },
             ].map((service) => (
               <Link
                 key={service.name}

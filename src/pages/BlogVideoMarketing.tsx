@@ -109,9 +109,9 @@ const BlogVideoMarketing = () => {
                 <p>
                   Wideo to najskuteczniejszy format contentowy. Ludzie zapamiętują 95% przekazu z wideo, 
                   w porównaniu do 10% z tekstu. W erze krótkich uwagi wideo przyciąga i angażuje 
-                  jak żaden inny format. Profesjonalna <Link to="/produkcja-filmow-poznan" className="text-primary hover:underline">produkcja filmów</Link> zapewnia jakość, 
-                  która wyróżni Twoją markę. Wideo doskonale sprawdza się w <Link to="/social-media" className="text-primary hover:underline">social media</Link>, 
-                  <Link to="/youtube-ads" className="text-primary hover:underline">reklamach YouTube</Link> oraz <Link to="/tiktok-ads" className="text-primary hover:underline">kampaniach TikTok</Link>.
+                  jak żaden inny format. Profesjonalna <Link to="/uslugi/produkcja-filmow" className="text-primary hover:underline">produkcja filmów</Link> zapewnia jakość, 
+                  która wyróżni Twoją markę. Wideo doskonale sprawdza się w <Link to="/social-media/obsluga" className="text-primary hover:underline">social media</Link>, 
+                  <Link to="/performance-marketing/youtube-ads" className="text-primary hover:underline">reklamach YouTube</Link> oraz <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">kampaniach TikTok</Link>.
                 </p>
 
                 <div className="grid md:grid-cols-4 gap-4 my-12 not-prose">
@@ -269,8 +269,8 @@ const BlogVideoMarketing = () => {
                   Video marketing to nie przyszłość - to teraźniejszość. W 2025 roku firmy, które 
                   nie wykorzystują wideo, zostaną w tyle. Zacznij od małych kroków: jeden 
                   short-form content tygodniowo, testimoniale klientów, behind-the-scenes. 
-                  Testuj, mierz, optymalizuj. Warto również rozważyć integrację wideo z <Link to="/social-media" className="text-primary hover:underline">strategią social media</Link> oraz 
-                  kampaniami na <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link> i <Link to="/youtube-ads" className="text-primary hover:underline">YouTube Ads</Link>.
+                  Testuj, mierz, optymalizuj. Warto również rozważyć integrację wideo z <Link to="/social-media/obsluga" className="text-primary hover:underline">strategią social media</Link> oraz 
+                  kampaniami na <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link> i <Link to="/performance-marketing/youtube-ads" className="text-primary hover:underline">YouTube Ads</Link>.
                 </p>
 
                 <div className="mt-12 p-6 rounded-xl bg-card border border-border not-prose">
@@ -281,7 +281,7 @@ const BlogVideoMarketing = () => {
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Link 
-                      to="/spoty-reklamowe" 
+                      to="/uslugi/produkcja-video" 
                       className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
                     >
                       Spoty reklamowe <ArrowLeft className="w-4 h-4 rotate-180" />

@@ -102,10 +102,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Strony dla hoteli" },
-  { title: "Fotograf", href: "/fotograf-poznan", description: "Fotografia turystyczna" },
-  { title: "Spoty reklamowe", href: "/spoty-reklamowe", description: "Filmy promocyjne" },
-  { title: "Google Ads", href: "/google-ads", description: "Kampanie Hotel Ads" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony dla hoteli" },
+  { title: "Fotograf", href: "/uslugi/fotografia", description: "Fotografia turystyczna" },
+  { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", description: "Filmy promocyjne" },
+  { title: "Google Ads", href: "/performance-marketing/google-ads", description: "Kampanie Hotel Ads" },
 ];
 
 const MarketingTurystyka = () => {

@@ -643,7 +643,7 @@ export default function CaseStudyEnea() {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <Link to="/social-media" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+              <Link to="/social-media/obsluga" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
                 <Instagram className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Social Media</h3>
                 <p className="text-sm text-muted-foreground">Prowadzenie profili, tworzenie contentu i budowanie zaangażowanej społeczności.</p>
@@ -655,7 +655,7 @@ export default function CaseStudyEnea() {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <Link to="/produkcja-filmow-poznan" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+              <Link to="/uslugi/produkcja-filmow" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
                 <Video className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Produkcja Video</h3>
                 <p className="text-sm text-muted-foreground">Spoty reklamowe, relacje z eventów i materiały promocyjne dla social media.</p>
@@ -667,7 +667,7 @@ export default function CaseStudyEnea() {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <Link to="/strony-internetowe" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
+              <Link to="/uslugi/strony-internetowe" className="block p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all group">
                 <Globe className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">Strony Internetowe</h3>
                 <p className="text-sm text-muted-foreground">Nowoczesne strony www z systemami rezerwacji i integracjami.</p>

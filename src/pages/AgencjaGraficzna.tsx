@@ -305,7 +305,7 @@ const AgencjaGraficzna = () => {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link to="/identyfikacja-wizualna" className="text-[#75143F] hover:text-[#75143F]/80 text-sm flex items-center gap-1">
+                <Link to="/uslugi/branding" className="text-[#75143F] hover:text-[#75143F]/80 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Identyfikacja wizualna
                 </Link>
                 <Link to="/realizacje" className="text-[#75143F] hover:text-[#75143F]/80 text-sm flex items-center gap-1">
