@@ -1,6 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This file is deprecated. All sitemaps are now served via sitemap-index.xml -->
-<!-- Crawlers should use https://fotz.pl/sitemap-index.xml -->
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://fotz.pl/sitemap-index.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Strony główne -->
+<url><loc>https://fotz.pl</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://fotz.pl/uslugi</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/realizacje</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/kontakt</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/o-nas</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/blog</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/poradniki</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/cennik</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/faq</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/kariera</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://fotz.pl/dla-kogo</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<!-- Narzędzia -->
+<url><loc>https://fotz.pl/quiz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/kalkulator-cen</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/kalkulator-roi</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/generator-briefu</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/slownik-marketingowy</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/zasoby</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://fotz.pl/zainstaluj</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+<url><loc>https://fotz.pl/podziekowanie</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+<!-- Akademia -->
+<url><loc>https://fotz.pl/akademia</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<!-- Prawne -->
+<url><loc>https://fotz.pl/polityka-prywatnosci</loc><lastmod>2026-04-04</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://fotz.pl/regulamin</loc><lastmod>2026-04-04</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<!-- Case Studies -->
+<url><loc>https://fotz.pl/realizacje/enea-stadion</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/realizacje/rppg</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/realizacje/fabryka-virali</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/friendly-gas</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/fps-cegielski</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/realizacje/gierki</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/realizacje/przedszkole</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/verthe</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/victory-cars</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/klagem</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/realizacje/mechanica</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/celsjusz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/sookar</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/graf-tapicerstwo</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/stageplan</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/cute-dumpling</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/apartamenty-chorwacja</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/realizacje/lauvjah</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<!-- Blog -->
+<url><loc>https://fotz.pl/blog/ile-kosztuje-strona-internetowa</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/blog/ai-w-marketingu-msp-2025</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/blog/jak-stworzyc-landing-page</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/blog/branding-dla-startupow</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/ux-ui-ecommerce</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/marketing-automation</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/personal-branding-linkedin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/video-marketing-trendy-2025</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/google-analytics-4-poradnik</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/budzet-marketingowy-planowanie</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/marketing-b2b-vs-b2c</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/blog/psychologia-cen</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<!-- Cluster hubs -->
+<url><loc>https://fotz.pl/seo</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/social-media</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/performance-marketing</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/content-marketing</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<!-- Usługi -->
+<url><loc>https://fotz.pl/uslugi/strony-internetowe</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/ecommerce</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/uslugi/branding</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/uslugi/produkcja-video</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/uslugi/fotografia</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/fotografia-z-drona</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/studio-podcastowe</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/produkcja-filmow</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<!-- SEO cluster -->
+<url><loc>https://fotz.pl/seo/pozycjonowanie</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/seo/audyt</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/seo/pozycjonowanie-poznan</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/seo/google-maps</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/seo/ecommerce</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/seo/lokalne-poznan</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<!-- Social media cluster -->
+<url><loc>https://fotz.pl/social-media/obsluga</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/social-media/poznan</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/social-media/influencer</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/social-media/reels-vs-tiktok</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/social-media/tiktok-biznes</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<!-- Performance marketing cluster -->
+<url><loc>https://fotz.pl/performance-marketing/google-ads</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/facebook-ads</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/instagram-ads</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/meta-ads</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/linkedin-ads</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/tiktok-ads</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/youtube-ads</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/google-vs-facebook</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/performance-marketing/remarketing</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<!-- Content marketing cluster -->
+<url><loc>https://fotz.pl/content-marketing/strategia</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/content-marketing/copywriting-landing</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/content-marketing/email-2025</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/content-marketing/kampanie</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/content-marketing/tresci-seo</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<!-- SEO lokalne - Poznań -->
+<url><loc>https://fotz.pl/agencja-marketingowa-poznan</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/agencja-reklamowa-poznan</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/agencja-marketingu-internetowego</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/agencja-graficzna</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/kompleksowa-obsluga-marketingowa</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/wizualizacje-3d</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/kampanie-reklamowe</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/kampanie-reklamowe-poznan</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<!-- Strony internetowe - miasta -->
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/poznan</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/warszawa</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/wroclaw</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/krakow</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/gdansk</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/lodz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/szczecin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/bydgoszcz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/katowice</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/lublin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/koszalin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/gliwice</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/rybnik</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/tychy</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/kamionki</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/torun</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/rzeszow</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/radom</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/opole</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/olsztyn</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/kielce</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/konin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/tarnow</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/plock</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/sosnowiec</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/bialystok</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/czestochowa</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/zielona-gora</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/elblag</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/legnica</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe/kalisz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<!-- Dla kogo - grupy docelowe -->
+<url><loc>https://fotz.pl/dla-kogo/firmy-lokalne</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/ecommerce</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/marki-premium</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/instytucje</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<!-- Dla kogo - branże -->
+<url><loc>https://fotz.pl/dla-kogo/branza-medyczna</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/gastronomia</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/beauty-wellness</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/nieruchomosci</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/automotive</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/edukacja</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/prawo-finanse</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/ecommerce-retail</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/it-saas</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/produkcja</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/ngo</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://fotz.pl/dla-kogo/turystyka</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>
