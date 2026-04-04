@@ -402,6 +402,23 @@ export default function Blog() {
     return result;
   }, [allPosts, activeCategory, searchQuery]);
 
+  // Map blog post IDs to their canonical URLs (some moved to cluster paths)
+  const getPostUrl = (postId: string) => {
+    const clusterRedirects: Record<string, string> = {
+      "seo-ecommerce": "/seo/ecommerce",
+      "influencer-marketing-polska": "/social-media/influencer",
+      "remarketing-poradnik": "/performance-marketing/remarketing",
+      "google-ads-vs-facebook-ads": "/performance-marketing/google-vs-facebook",
+      "seo-lokalne-poznan-poradnik": "/seo/lokalne-poznan",
+      "instagram-reels-vs-tiktok": "/social-media/reels-vs-tiktok",
+      "tiktok-dla-biznesu": "/social-media/tiktok-biznes",
+      "copywriting-landing-page": "/content-marketing/copywriting-landing",
+      "email-marketing-2025": "/content-marketing/email-2025",
+      "kampania-reklamowa-marketingowa": "/content-marketing/kampanie",
+    };
+    return clusterRedirects[postId] || `/blog/${postId}`;
+  };
+
   const featuredPost = allPosts.find((p) => p.featured);
   const showFeatured = activeCategory === "Wszystkie" && !searchQuery.trim();
   const regularPosts = showFeatured 
@@ -445,7 +462,7 @@ export default function Blog() {
         <section className="section-padding pt-0 bg-background">
           <div className="container-wide">
             <Link
-              to={`/blog/${featuredPost.id}`}
+              to={getPostUrl(featuredPost.id)}
               className="group block rounded-3xl overflow-hidden bg-card"
             >
               <div className="grid lg:grid-cols-2">
@@ -556,7 +573,7 @@ export default function Blog() {
             {regularPosts.map((post, index) => (
               <Link
                 key={post.id}
-                to={`/blog/${post.id}`}
+                to={getPostUrl(post.id)}
                 className={cn(
                   "group rounded-2xl overflow-hidden bg-secondary transition-all duration-700 hover-lift",
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

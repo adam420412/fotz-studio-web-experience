@@ -222,6 +222,20 @@ const Quiz = () => {
       <Layout>
         <section className="min-h-screen pt-32 pb-20 px-4 bg-gradient-to-b from-background to-muted/20">
           <div className="container mx-auto max-w-3xl">
+            {/* SEO intro text - visible to crawlers, helps with thin content */}
+            {!showResults && currentQuestion === 0 && (
+              <div className="text-center mb-8">
+                <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+                  Quiz marketingowy — dopasuj usługi do potrzeb
+                </h1>
+                <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+                  Nie wiesz, od czego zacząć? Odpowiedz na 5 krótkich pytań, a nasz quiz rekomendacyjny wskaże usługi 
+                  marketingowe najlepiej dopasowane do Twojego biznesu, budżetu i celów. Otrzymasz spersonalizowaną 
+                  rekomendację w mniej niż 2 minuty — bezpłatnie i bez zobowiązań. Quiz uwzględnia takie obszary jak 
+                  SEO, kampanie Google Ads i Meta Ads, social media, content marketing oraz tworzenie stron internetowych.
+                </p>
+              </div>
+            )}
             <AnimatePresence mode="wait">
               {!showResults ? (
                 <motion.div
@@ -239,10 +253,10 @@ const Quiz = () => {
                     <Progress value={progress} className="h-2 mb-8" />
                   </div>
 
-                  {/* Question */}
-                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
-                    {questions[currentQuestion].question}
-                  </h1>
+                   {/* Question */}
+                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12">
+                     {questions[currentQuestion].question}
+                   </h2>
 
                   {/* Options */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
