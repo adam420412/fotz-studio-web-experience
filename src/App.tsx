@@ -342,7 +342,27 @@ const App = () => (
                 <Route path="/kampanie-reklamowe" element={<KampanieReklamowe />} />
                 <Route path="/kampanie-reklamowe-poznan" element={<KampanieReklamowePoznan />} />
 
-                {/* Legal & utility */}
+                {/* Dla kogo - hub + audience pages */}
+                <Route path="/dla-kogo" element={<DlaKogo />} />
+                <Route path="/dla-kogo/firmy-lokalne" element={<DlaKogoFirmyLokalne />} />
+                <Route path="/dla-kogo/ecommerce" element={<DlaKogoEcommerce />} />
+                <Route path="/dla-kogo/marki-premium" element={<DlaKogoMarkiPremium />} />
+                <Route path="/dla-kogo/instytucje" element={<DlaKogoInstytucje />} />
+
+                {/* Dla kogo - industry pages */}
+                <Route path="/dla-kogo/branza-medyczna" element={<MarketingMedyczny />} />
+                <Route path="/dla-kogo/gastronomia" element={<MarketingGastronomia />} />
+                <Route path="/dla-kogo/beauty-wellness" element={<MarketingBeauty />} />
+                <Route path="/dla-kogo/nieruchomosci" element={<MarketingNieruchomosci />} />
+                <Route path="/dla-kogo/automotive" element={<MarketingAutomotive />} />
+                <Route path="/dla-kogo/edukacja" element={<MarketingEdukacja />} />
+                <Route path="/dla-kogo/prawo-finanse" element={<MarketingPrawoFinanse />} />
+                <Route path="/dla-kogo/ecommerce-retail" element={<MarketingEcommerceRetail />} />
+                <Route path="/dla-kogo/it-saas" element={<MarketingIT />} />
+                <Route path="/dla-kogo/produkcja" element={<MarketingProdukcja />} />
+                <Route path="/dla-kogo/ngo" element={<MarketingNGO />} />
+                <Route path="/dla-kogo/turystyka" element={<MarketingTurystyka />} />
+
                 <Route path="/polityka-prywatnosci" element={<PolitykaPrywatnosci />} />
                 <Route path="/regulamin" element={<Regulamin />} />
                 <Route path="/kariera" element={<Kariera />} />
