@@ -16,7 +16,7 @@ export function useWebVitals() {
   const [metrics, setMetrics] = useState<PerformanceMetrics>({});
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'development') return;
+    if (import.meta.env.MODE !== 'development') return;
 
     // Largest Contentful Paint
     const lcpObserver = new PerformanceObserver((list) => {
