@@ -357,8 +357,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 mt-2 border-t border-border/50">
                       {/* Dla kogo */}
                       {(() => {
-                        const category = menuCategories[5];
-                        const categoryIndex = 5;
+                        const category = menuCategories[4];
+                        const categoryIndex = 4;
                         return (
                           <motion.div
                             key={category.title}
