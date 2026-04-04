@@ -462,7 +462,80 @@ const App = () => (
                 <Route path="/branze/marketing-produkcja" element={<Redirect301 to="/dla-kogo/produkcja" />} />
                 <Route path="/branze/marketing-ngo" element={<Redirect301 to="/dla-kogo/ngo" />} />
                 <Route path="/branze/marketing-turystyka" element={<Redirect301 to="/dla-kogo/turystyka" />} />
-                
+
+                {/* 301 Redirects - City pages (Phase 5) */}
+                <Route path="/strony-internetowe-poznan" element={<Redirect301 to="/uslugi/strony-internetowe/poznan" />} />
+                <Route path="/strony-internetowe-warszawa" element={<Redirect301 to="/uslugi/strony-internetowe/warszawa" />} />
+                <Route path="/strony-internetowe-wroclaw" element={<Redirect301 to="/uslugi/strony-internetowe/wroclaw" />} />
+                <Route path="/strony-internetowe-krakow" element={<Redirect301 to="/uslugi/strony-internetowe/krakow" />} />
+                <Route path="/strony-internetowe-gdansk" element={<Redirect301 to="/uslugi/strony-internetowe/gdansk" />} />
+                <Route path="/strony-internetowe-lodz" element={<Redirect301 to="/uslugi/strony-internetowe/lodz" />} />
+                <Route path="/strony-internetowe-szczecin" element={<Redirect301 to="/uslugi/strony-internetowe/szczecin" />} />
+                <Route path="/strony-internetowe-bydgoszcz" element={<Redirect301 to="/uslugi/strony-internetowe/bydgoszcz" />} />
+                <Route path="/strony-internetowe-katowice" element={<Redirect301 to="/uslugi/strony-internetowe/katowice" />} />
+                <Route path="/strony-internetowe-lublin" element={<Redirect301 to="/uslugi/strony-internetowe/lublin" />} />
+                <Route path="/strony-internetowe-koszalin" element={<Redirect301 to="/uslugi/strony-internetowe/koszalin" />} />
+                <Route path="/strony-internetowe-gliwice" element={<Redirect301 to="/uslugi/strony-internetowe/gliwice" />} />
+                <Route path="/strony-internetowe-rybnik" element={<Redirect301 to="/uslugi/strony-internetowe/rybnik" />} />
+                <Route path="/strony-internetowe-tychy" element={<Redirect301 to="/uslugi/strony-internetowe/tychy" />} />
+                <Route path="/strony-internetowe-kamionki" element={<Redirect301 to="/uslugi/strony-internetowe/kamionki" />} />
+                <Route path="/strony-internetowe-torun" element={<Redirect301 to="/uslugi/strony-internetowe/torun" />} />
+                <Route path="/strony-internetowe-rzeszow" element={<Redirect301 to="/uslugi/strony-internetowe/rzeszow" />} />
+                <Route path="/strony-internetowe-radom" element={<Redirect301 to="/uslugi/strony-internetowe/radom" />} />
+                <Route path="/strony-internetowe-opole" element={<Redirect301 to="/uslugi/strony-internetowe/opole" />} />
+                <Route path="/strony-internetowe-olsztyn" element={<Redirect301 to="/uslugi/strony-internetowe/olsztyn" />} />
+                <Route path="/strony-internetowe-kielce" element={<Redirect301 to="/uslugi/strony-internetowe/kielce" />} />
+                <Route path="/strony-internetowe-konin" element={<Redirect301 to="/uslugi/strony-internetowe/konin" />} />
+                <Route path="/strony-internetowe-tarnow" element={<Redirect301 to="/uslugi/strony-internetowe/tarnow" />} />
+                <Route path="/strony-internetowe-plock" element={<Redirect301 to="/uslugi/strony-internetowe/plock" />} />
+                <Route path="/strony-internetowe-sosnowiec" element={<Redirect301 to="/uslugi/strony-internetowe/sosnowiec" />} />
+                <Route path="/strony-internetowe-bialystok" element={<Redirect301 to="/uslugi/strony-internetowe/bialystok" />} />
+                <Route path="/strony-internetowe-czestochowa" element={<Redirect301 to="/uslugi/strony-internetowe/czestochowa" />} />
+                <Route path="/strony-internetowe-zielona-gora" element={<Redirect301 to="/uslugi/strony-internetowe/zielona-gora" />} />
+                <Route path="/strony-internetowe-elblag" element={<Redirect301 to="/uslugi/strony-internetowe/elblag" />} />
+                <Route path="/strony-internetowe-legnica" element={<Redirect301 to="/uslugi/strony-internetowe/legnica" />} />
+                <Route path="/strony-internetowe-kalisz" element={<Redirect301 to="/uslugi/strony-internetowe/kalisz" />} />
+
+                {/* 301 Redirects - Service pages to clusters (Phase 5) */}
+                <Route path="/facebook-ads" element={<Redirect301 to="/performance-marketing/facebook-ads" />} />
+                <Route path="/google-ads" element={<Redirect301 to="/performance-marketing/google-ads" />} />
+                <Route path="/tiktok-ads" element={<Redirect301 to="/performance-marketing/tiktok-ads" />} />
+                <Route path="/linkedin-ads" element={<Redirect301 to="/performance-marketing/linkedin-ads" />} />
+                <Route path="/youtube-ads" element={<Redirect301 to="/performance-marketing/youtube-ads" />} />
+                <Route path="/instagram-ads" element={<Redirect301 to="/performance-marketing/instagram-ads" />} />
+                <Route path="/facebook-instagram-ads" element={<Redirect301 to="/performance-marketing/facebook-instagram-ads" />} />
+                <Route path="/kampanie-reklamowe" element={<Redirect301 to="/performance-marketing/kampanie" />} />
+                <Route path="/kampanie-reklamowe-poznan" element={<Redirect301 to="/performance-marketing/kampanie-poznan" />} />
+                <Route path="/pozycjonowanie" element={<Redirect301 to="/seo/pozycjonowanie" />} />
+                <Route path="/pozycjonowanie-stron-poznan" element={<Redirect301 to="/seo/pozycjonowanie-poznan" />} />
+                <Route path="/pozycjonowanie-google-maps" element={<Redirect301 to="/seo/google-maps" />} />
+                <Route path="/audyt-seo" element={<Redirect301 to="/seo/audyt" />} />
+                <Route path="/social-media" element={<Redirect301 to="/social-media/obsluga" />} />
+                <Route path="/social-media-poznan" element={<Redirect301 to="/social-media/poznan" />} />
+                <Route path="/content-marketing" element={<Redirect301 to="/content-marketing/strategia" />} />
+                <Route path="/identyfikacja-wizualna" element={<Redirect301 to="/uslugi/branding" />} />
+                <Route path="/agencja-graficzna" element={<Redirect301 to="/uslugi/grafika" />} />
+                <Route path="/produkcja-filmow-poznan" element={<Redirect301 to="/uslugi/produkcja-filmow" />} />
+                <Route path="/fotograf-poznan" element={<Redirect301 to="/uslugi/fotografia" />} />
+                <Route path="/fotografia-z-drona" element={<Redirect301 to="/uslugi/fotografia-z-drona" />} />
+                <Route path="/spoty-reklamowe" element={<Redirect301 to="/uslugi/spoty-reklamowe" />} />
+                <Route path="/wizualizacje-3d" element={<Redirect301 to="/uslugi/wizualizacje-3d" />} />
+                <Route path="/kompleksowa-obsluga-marketingowa" element={<Redirect301 to="/uslugi/kompleksowa-obsluga" />} />
+                <Route path="/ecommerce-tworzenie-sklepu" element={<Redirect301 to="/uslugi/ecommerce" />} />
+                <Route path="/studio-podcastowe" element={<Redirect301 to="/uslugi/studio-podcastowe" />} />
+
+                {/* 301 Redirects - Blog posts moved to clusters (Phase 5) */}
+                <Route path="/blog/seo-lokalne-poznan-poradnik" element={<Redirect301 to="/seo/lokalne-poznan" />} />
+                <Route path="/blog/seo-ecommerce" element={<Redirect301 to="/seo/ecommerce" />} />
+                <Route path="/blog/google-ads-vs-facebook-ads" element={<Redirect301 to="/performance-marketing/google-vs-facebook" />} />
+                <Route path="/blog/remarketing-poradnik" element={<Redirect301 to="/performance-marketing/remarketing" />} />
+                <Route path="/blog/email-marketing-2025" element={<Redirect301 to="/content-marketing/email-2025" />} />
+                <Route path="/blog/kampania-reklamowa-marketingowa" element={<Redirect301 to="/content-marketing/kampanie" />} />
+                <Route path="/blog/copywriting-landing-page" element={<Redirect301 to="/content-marketing/copywriting-landing" />} />
+                <Route path="/blog/influencer-marketing-polska" element={<Redirect301 to="/social-media/influencer" />} />
+                <Route path="/blog/instagram-reels-vs-tiktok" element={<Redirect301 to="/social-media/reels-vs-tiktok" />} />
+                <Route path="/blog/tiktok-dla-biznesu" element={<Redirect301 to="/social-media/tiktok-biznes" />} />
+
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
