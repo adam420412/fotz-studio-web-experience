@@ -1,96 +1,91 @@
-# Information Architecture Optimization Implementation Plan
 
-## Overview
-Restructure Fotz Studio website from flat 140+ root-level pages into logical hierarchy with topical clusters for better UX, SEO, and conversion.
 
-## Pelna restrukturyzacja architektury informacji Fotz Studio
+# Plan naprawy SEO po audycie crawlera (248 issues, health 85.5)
 
-### Zakres zmian
+## Diagnoza
 
-Na podstawie raportu i mapy przekierowan (64 pozycje) trzeba zmodyfikowac nastepujace elementy:
+Crawler znalazł 94 z 143 stron. **83 URLe z sitemap nie zostały odnalezione** — to stary plik `sitemap.xml` z pre-restrukturyzacyjnymi URLami, wciąż wskazywany w `robots.txt`. Pozostałe problemy to głównie **canonical mismatch** (stare strony mają canonical wskazujący na nowe URLe klastrowe) oraz **DUPLICATE_TITLE/META_DESC/BODY** na 12 stronach branżowych `/dla-kogo/*`.
 
-### Faza 1: Routing i przekierowania (App.tsx + vercel.json + _redirects)
+---
 
-**App.tsx** - zmiana sciezek tras:
-- 30 stron miast: `/strony-internetowe-{city}` → `/uslugi/strony-internetowe/{city}`
-- `/strony-internetowe` → `/uslugi/strony-internetowe`
-- `/ecommerce-tworzenie-sklepu` → `/uslugi/strony-internetowe/ecommerce`
-- `/identyfikacja-wizualna` → `/uslugi/branding`
-- `/spoty-reklamowe` → `/uslugi/produkcja-video`
-- `/fotograf-poznan` → `/uslugi/fotografia`
-- `/fotografia-z-drona` → `/uslugi/fotografia-z-drona`
-- `/studio-podcastowe` → `/uslugi/studio-podcastowe`
-- `/produkcja-filmow-poznan` → `/uslugi/produkcja-filmow`
-- `/audyt-seo` → `/seo/audyt`
-- `/pozycjonowanie` → `/seo/pozycjonowanie`
-- `/pozycjonowanie-stron-poznan` → `/seo/pozycjonowanie-poznan`
-- `/pozycjonowanie-google-maps` → `/seo/google-maps`
-- `/social-media` → `/social-media/obsluga`
-- `/social-media-poznan` → `/social-media/poznan`
-- `/google-ads` → `/performance-marketing/google-ads`
-- `/facebook-ads` → `/performance-marketing/facebook-ads`
-- `/instagram-ads` → `/performance-marketing/instagram-ads`
-- `/facebook-instagram-ads` → `/performance-marketing/meta-ads`
-- `/linkedin-ads` → `/performance-marketing/linkedin-ads`
-- `/tiktok-ads` → `/performance-marketing/tiktok-ads`
-- `/youtube-ads` → `/performance-marketing/youtube-ads`
-- `/content-marketing` → `/content-marketing/strategia`
-- 10 postow bloga przenoszonych do klastrow tematycznych (np. `/blog/seo-ecommerce` → `/seo/ecommerce`)
+## Krok 1: Usunięcie starego sitemap.xml i naprawienie robots.txt
 
-**Dodanie Redirect301 routes** dla kazdej starej sciezki wskazujacej na nowa.
+**Problem:** `robots.txt` wskazuje na DWA sitemapy: `sitemap-index.xml` (nowy, poprawny) i `sitemap.xml` (stary, 143 URLe z pre-restrukturyzacji). Stąd 83 "orphaned URLs".
 
-**vercel.json** - dodanie 64 nowych przekierowan 301.
+**Działanie:**
+- Zastąpić `public/sitemap.xml` przekierowaniem lub usunąć go — zostawić TYLKO `sitemap-index.xml`
+- W `robots.txt` usunąć linię `Sitemap: https://fotz.pl/sitemap.xml`
 
-**public/_redirects** - analogiczne przekierowania dla Netlify/Lovable.
+---
 
-### Faza 2: Nawigacja (MegaMenu + Footer)
+## Krok 2: Naprawienie canonical mismatch na 8 stronach
 
-- **MegaMenu.tsx** - aktualizacja wszystkich `href` w menuCategories
-- **Footer.tsx** - aktualizacja wszystkich `href` w footerLinks (uslugi, kampanie, miasta, narzedzia)
+Strony serwowane pod starymi URLami mają canonical wskazujący na nowe URLe klastrowe, które są innymi stronami. Canonical musi wskazywać na URL, pod którym strona jest faktycznie dostępna:
 
-### Faza 3: Kanoniczne URL-e i SEO w komponentach stron
+| Strona | Aktualny canonical (zły) | Poprawny canonical |
+|---|---|---|
+| `/kampanie-reklamowe` | `/performance-marketing/kampanie` | `/kampanie-reklamowe` |
+| `/kampanie-reklamowe-poznan` | `/performance-marketing/kampanie-poznan` | `/kampanie-reklamowe-poznan` |
+| `/kompleksowa-obsluga-marketingowa` | `/kompleksowa-obsluga` | `/kompleksowa-obsluga-marketingowa` |
+| `/wizualizacje-3d` | `/uslugi/wizualizacje-3d` | `/wizualizacje-3d` |
+| `/realizacje/fps-cegielski` | `/realizacje/fps-poznan` | `/realizacje/fps-cegielski` |
+| `/blog/seo-ecommerce` (jeśli nadal dostępny) | `/seo/ecommerce` | dopasować do faktycznej trasy |
+| `/blog/remarketing-poradnik` | `/performance-marketing/remarketing` | dopasować do faktycznej trasy |
+| `/blog/copywriting-landing-page` | `/content-marketing/copywriting-landing` | dopasować do faktycznej trasy |
+| `/blog/influencer-marketing-polska` | `/social-media/influencer` | dopasować do faktycznej trasy |
 
-Kazda z ~60 przeniesionych stron ma komponent `SEOHead` z `canonical` prop. Trzeba zaktualizowac:
-- `canonical` URL na nowy adres
-- Breadcrumbs (jesli uzywane)
-- Linki wewnetrzne w tresci stron
+**Pliki:** `KampanieReklamowe.tsx`, `KampanieReklamowePoznan.tsx`, `KompleksowaObsluga.tsx`, `Wizualizacje3D.tsx`, `CaseStudyFPS.tsx`, `BlogSEOEcommerce.tsx`, `BlogRemarketing.tsx`, `BlogCopywritingLanding.tsx`, `BlogInfluencerMarketing.tsx`
 
-Dotyczy plikow: wszystkie StronyInternetowe*.tsx, FacebookAds.tsx, GoogleAds.tsx, InstagramAds.tsx, LinkedInAds.tsx, TikTokAds.tsx, YouTubeAds.tsx, FacebookInstagramAds.tsx, Pozycjonowanie*.tsx, SocialMedia*.tsx, SpotyReklamowe.tsx, FotografPoznan.tsx, IdentyfikacjaWizualna.tsx, ContentMarketing.tsx, AudytSEO.tsx, EcommerceTworzenie.tsx, StudioPodcastowe.tsx, FotografiaZDrona.tsx, ProdukcjaFilmowPoznan.tsx, oraz 10 artykulow blogowych.
+---
 
-### Faza 4: Sitemaps XML
+## Krok 3: Naprawa DUPLICATE_TITLE/META_DESC na stronach `/dla-kogo/*`
 
-Aktualizacja 6 plikow sitemap w `public/`:
-- `sitemap-services.xml` - nowe URL-e /uslugi/*, /seo/*, /performance-marketing/*
-- `sitemap-cities.xml` - nowe URL-e /uslugi/strony-internetowe/{city}
-- `sitemap-blog.xml` - usuniecie przeniesionych postow, dodanie nowych URL-i w odpowiednich sitemapach
-- `sitemap-main.xml` - aktualizacja zmienionych URL-i
-- `sitemap-industries.xml` - bez zmian
-- `sitemap-casestudies.xml` - bez zmian
+**Problem:** Wszystkie 12 stron branżowych (`/dla-kogo/turystyka`, `/dla-kogo/ngo`, itd.) zgłaszają DUPLICATE_TITLE, DUPLICATE_META_DESC, DUPLICATE_BODY i THIN_CONTENT.
 
-### Faza 5: Linki wewnetrzne w tresci
+**Działanie:** Sprawdzić, czy strony branżowe (`MarketingTurystyka.tsx`, `MarketingNGO.tsx` itd.) mają unikalne `<title>` i `<meta description>`. Z crawla wynika, że tytuły i opisy się duplikują — prawdopodobnie renderuje się fallback z `DlaKogo.tsx` zamiast właściwej strony branżowej. Trzeba zweryfikować routing i upewnić się, że każda podstrona renderuje własny SEOHead.
 
-Przeszukanie calego codebase (`search_files`) pod katem starych URL-i i ich zamiana na nowe. Dotyczy to glownie:
-- Sekcji RelatedServices na stronach
-- Linkow w tresci artykulow blogowych
-- CTA i linkow w sekcjach FAQ
-- Komponentow CaseStudy
+---
 
-### Wazne uwagi techniczne
+## Krok 4: Naprawa `/dla-kogo` (hub) i `/uslugi/strony-internetowe` (hub)
 
-- **Domena produkcyjna**: canonical URL-e uzywaja `https://fotz.pl`, nie `.lovable.app`
-- **vercel.json**: musi uzywac skladni path-to-regexp (`:path*`), nie regex
-- **Nie tworzymy nowych stron** (oznaczonych "New" w raporcie jak /seo/on-page/) - tylko przenosimy istniejace
-- **Nie edytujemy** plikow auto-generowanych (client.ts, types.ts, .env)
-- Implementacja bedzie wymagala wielu iteracji ze wzgledu na liczbe plikow (~100+)
+Te dwie strony hubowe mają DUPLICATE_TITLE/META_DESC/BODY. Sprawdzić ich SEOHead i upewnić się, że title/description są unikalne i nie kolidują z podstronami.
 
-### Kolejnosc implementacji
+---
 
-1. App.tsx (trasy + Redirect301)
-2. vercel.json + _redirects (przekierowania serwerowe)
-3. MegaMenu.tsx + Footer.tsx (nawigacja)
-4. Kanoniczne URL-e w komponentach stron (po ~10-15 plikow na iteracje)
-5. Sitemaps XML
-6. Linki wewnetrzne (search & replace)
+## Krok 5: Naprawa `/blog` DUPLICATE_TITLE/META_DESC
 
-**Status:** Ready to start Phase 1
-**Next Step:** Awaiting go-ahead to begin implementation
+Blog hub (`/blog`) ma zduplikowany title/description — prawdopodobnie pokrywa się z inną stroną. Nadać unikalny title.
+
+---
+
+## Krok 6: Usunięcie `/login` z crawla lub dodanie redirect
+
+`/login` ma 8 błędów (brak H1, brak canonical, brak meta). Strona nie istnieje jako trasa w `App.tsx`. Dodać redirect 301 z `/login` → `/akademia/auth` (komponent `Redirect301`).
+
+---
+
+## Krok 7: Usunięcie `/landing-page` lub redirect
+
+`/landing-page` ma 7 błędów i nie istnieje jako trasa. Dodać redirect do `/blog/jak-stworzyc-landing-page` lub `/uslugi/strony-internetowe`.
+
+---
+
+## Krok 8: Aktualizacja `sitemap-industries.xml`
+
+Daty `lastmod` w `sitemap-industries.xml` to `2026-01-31` — zaktualizować na `2026-04-04`.
+
+---
+
+## Podsumowanie zmian
+
+| Plik | Zmiana |
+|---|---|
+| `public/sitemap.xml` | Usunąć lub zastąpić redirectem do sitemap-index.xml |
+| `public/robots.txt` | Usunąć drugą linię Sitemap |
+| 9 plików `.tsx` | Naprawić canonical URLs |
+| 12 plików `branze/*.tsx` | Zweryfikować unikalne title/desc (jeśli duplikaty) |
+| `public/sitemap-industries.xml` | Zaktualizować lastmod |
+| `src/App.tsx` | Dodać redirect `/login` → `/akademia/auth` i `/landing-page` |
+
+**Szacowany efekt:** Eliminacja ~200 z 248 issues, wzrost health score z 85.5 do ~95+.
+
