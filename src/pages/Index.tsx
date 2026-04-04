@@ -27,8 +27,8 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Fotz Studio - Agencja Marketingowa Poznań | Marketing Premium"
-        description="Fotz Studio to agencja marketingowa nowej generacji. Projektujemy marketing, który realnie pozyskuje klientów. Strony www, social media, kampanie reklamowe. Poznań."
+        title="Agencja Marketingowa Poznań | Fotz Studio"
+        description="Agencja marketingowa Poznań. Strony www, social media, kampanie Google i Meta Ads, SEO. Umów bezpłatną konsultację!"
         keywords="agencja marketingowa, marketing Poznań, strony internetowe Poznań, social media, kampanie reklamowe, lead generation, marketing premium"
         canonical="https://fotz.pl"
       >
