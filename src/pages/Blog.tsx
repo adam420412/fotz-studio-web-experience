@@ -462,7 +462,7 @@ export default function Blog() {
         <section className="section-padding pt-0 bg-background">
           <div className="container-wide">
             <Link
-              to={`/blog/${featuredPost.id}`}
+              to={getPostUrl(featuredPost.id)}
               className="group block rounded-3xl overflow-hidden bg-card"
             >
               <div className="grid lg:grid-cols-2">
