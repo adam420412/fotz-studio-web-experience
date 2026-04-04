@@ -288,6 +288,40 @@ const App = () => (
                 <Route path="/dla-kogo/produkcja" element={<MarketingProdukcja />} />
                 <Route path="/dla-kogo/ngo" element={<MarketingNGO />} />
                 <Route path="/dla-kogo/turystyka" element={<MarketingTurystyka />} />
+
+                {/* City pages under /uslugi/strony-internetowe/ (Phase 2) */}
+                <Route path="/uslugi/strony-internetowe/poznan" element={<StronyInternetowePoznan />} />
+                <Route path="/uslugi/strony-internetowe/warszawa" element={<StronyInternetoweWarszawa />} />
+                <Route path="/uslugi/strony-internetowe/wroclaw" element={<StronyInternetoweWroclaw />} />
+                <Route path="/uslugi/strony-internetowe/krakow" element={<StronyInternetoweKrakow />} />
+                <Route path="/uslugi/strony-internetowe/gdansk" element={<StronyInternetoweGdansk />} />
+                <Route path="/uslugi/strony-internetowe/lodz" element={<StronyInternetoweLodz />} />
+                <Route path="/uslugi/strony-internetowe/szczecin" element={<StronyInternetoweSzczecin />} />
+                <Route path="/uslugi/strony-internetowe/bydgoszcz" element={<StronyInternetoweBydgoszcz />} />
+                <Route path="/uslugi/strony-internetowe/katowice" element={<StronyInternetoweKatowice />} />
+                <Route path="/uslugi/strony-internetowe/lublin" element={<StronyInternetoweLublin />} />
+                <Route path="/uslugi/strony-internetowe/koszalin" element={<StronyInternetoweKoszalin />} />
+                <Route path="/uslugi/strony-internetowe/gliwice" element={<StronyInternetoweGliwice />} />
+                <Route path="/uslugi/strony-internetowe/rybnik" element={<StronyInternetoweRybnik />} />
+                <Route path="/uslugi/strony-internetowe/tychy" element={<StronyInternetoweTychy />} />
+                <Route path="/uslugi/strony-internetowe/kamionki" element={<StronyInternetoweKamionki />} />
+                <Route path="/uslugi/strony-internetowe/torun" element={<StronyInternetoweTorun />} />
+                <Route path="/uslugi/strony-internetowe/rzeszow" element={<StronyInternetoweRzeszow />} />
+                <Route path="/uslugi/strony-internetowe/radom" element={<StronyInternetoweRadom />} />
+                <Route path="/uslugi/strony-internetowe/opole" element={<StronyInternetoweOpole />} />
+                <Route path="/uslugi/strony-internetowe/olsztyn" element={<StronyInternetoweOlsztyn />} />
+                <Route path="/uslugi/strony-internetowe/kielce" element={<StronyInternetoweKielce />} />
+                <Route path="/uslugi/strony-internetowe/konin" element={<StronyInternetoweKonin />} />
+                <Route path="/uslugi/strony-internetowe/tarnow" element={<StronyInternetoweTarnow />} />
+                <Route path="/uslugi/strony-internetowe/plock" element={<StronyInternetowePlock />} />
+                <Route path="/uslugi/strony-internetowe/sosnowiec" element={<StronyInternetoweSosnowiec />} />
+                <Route path="/uslugi/strony-internetowe/bialystok" element={<StronyInternetoweBialystok />} />
+                <Route path="/uslugi/strony-internetowe/czestochowa" element={<StronyInternetoweCzestochowa />} />
+                <Route path="/uslugi/strony-internetowe/zielona-gora" element={<StronyInternetoweZielonaGora />} />
+                <Route path="/uslugi/strony-internetowe/elblag" element={<StronyInternetoweElblag />} />
+                <Route path="/uslugi/strony-internetowe/legnica" element={<StronyInternetoweLegnica />} />
+                <Route path="/uslugi/strony-internetowe/kalisz" element={<StronyInternetoweKalisz />} />
+
                 <Route path="/akademia" element={<AkademiaLanding />} />
                 <Route path="/akademia/auth" element={<AkademiaAuth />} />
                 <Route path="/akademia/panel" element={<Akademia />} />
