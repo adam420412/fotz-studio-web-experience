@@ -203,7 +203,7 @@ export default function FacebookInstagramAds() {
       <SEOHead
         title="Meta Ads - Facebook & Instagram | Fotz Poznań"
         description="Reklamy Meta Ads - Facebook i Instagram w jednej strategii. Cross-platform retargeting i Advantage+. Agencja Poznań."
-        canonical="https://fotz.pl/facebook-instagram-ads"
+        canonical="https://fotz.pl/performance-marketing/meta-ads"
         keywords="meta ads, facebook ads, instagram ads, reklamy facebook, reklamy instagram, agencja meta, poznań"
       />
       <ServiceSchema
@@ -216,7 +216,7 @@ export default function FacebookInstagramAds() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "Facebook & Instagram Ads", url: "https://fotz.pl/facebook-instagram-ads" }
+          { name: "Facebook & Instagram Ads", url: "https://fotz.pl/performance-marketing/meta-ads" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

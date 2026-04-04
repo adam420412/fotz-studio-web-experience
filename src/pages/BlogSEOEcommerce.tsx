@@ -35,13 +35,13 @@ const BlogSEOEcommerce = () => {
       <SEOHead
         title="SEO dla sklepów internetowych - jak pozycjonować e-commerce | Fotz Studio"
         description="Kompletny poradnik SEO dla e-commerce. Poznaj strategie pozycjonowania sklepów internetowych, optymalizację kategorii i kart produktowych."
-        canonical="https://fotz.pl/blog/seo-ecommerce"
+        canonical="https://fotz.pl/seo/ecommerce"
         keywords="seo e-commerce, pozycjonowanie sklepu internetowego, seo dla sklepów, optymalizacja e-commerce, seo produktów"
       />
       <ArticleSchema
         title="SEO dla sklepów internetowych - jak pozycjonować e-commerce"
         description="Kompletny poradnik SEO dla e-commerce. Strategie pozycjonowania sklepów internetowych."
-        url="https://fotz.pl/blog/seo-ecommerce"
+        url="https://fotz.pl/seo/ecommerce"
         datePublished="2025-01-04"
         dateModified="2025-01-04"
         author="Fotz Studio"
@@ -50,7 +50,7 @@ const BlogSEOEcommerce = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SEO e-commerce", url: "https://fotz.pl/blog/seo-ecommerce" },
+          { name: "SEO e-commerce", url: "https://fotz.pl/seo/ecommerce" },
         ]}
       />
       <FAQSchema items={faqItems} />

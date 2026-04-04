@@ -35,13 +35,13 @@ const BlogSEOLokalnePoznan = () => {
       <SEOHead
         title="SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025 | Fotz Studio"
         description="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego: Google Moja Firma, cytaty NAP, recenzje i strategie na 2025 rok."
-        canonical="https://fotz.pl/blog/seo-lokalne-poznan-poradnik"
+        canonical="https://fotz.pl/seo/lokalne-poznan"
         keywords="SEO lokalne Poznań, pozycjonowanie lokalne, Google Moja Firma, Google Maps, NAP, lokalne wyszukiwanie, SEO dla firm lokalnych"
       />
       <ArticleSchema
         title="SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025"
         description="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego."
-        url="https://fotz.pl/blog/seo-lokalne-poznan-poradnik"
+        url="https://fotz.pl/seo/lokalne-poznan"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
@@ -50,7 +50,7 @@ const BlogSEOLokalnePoznan = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SEO lokalne Poznań", url: "https://fotz.pl/blog/seo-lokalne-poznan-poradnik" },
+          { name: "SEO lokalne Poznań", url: "https://fotz.pl/seo/lokalne-poznan" },
         ]}
       />
       <FAQSchema items={faqItems} />

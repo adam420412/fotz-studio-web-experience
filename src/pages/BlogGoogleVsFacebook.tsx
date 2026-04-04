@@ -35,13 +35,13 @@ const BlogGoogleVsFacebook = () => {
       <SEOHead
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu? | Fotz Studio"
         description="Porównanie Google Ads i Facebook Ads. Dowiedz się, która platforma reklamowa przyniesie lepsze wyniki dla Twojej firmy. Analiza kosztów, targetowania i ROI."
-        canonical="https://fotz.pl/blog/google-ads-vs-facebook-ads"
+        canonical="https://fotz.pl/performance-marketing/google-vs-facebook"
         keywords="Google Ads, Facebook Ads, reklama online, porównanie platform reklamowych, PPC, kampanie reklamowe, ROI"
       />
       <ArticleSchema
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu?"
         description="Porównanie Google Ads i Facebook Ads. Analiza kosztów, targetowania i ROI."
-        url="https://fotz.pl/blog/google-ads-vs-facebook-ads"
+        url="https://fotz.pl/performance-marketing/google-vs-facebook"
         datePublished="2025-01-04"
         dateModified="2025-01-04"
         author="Fotz Studio"
@@ -50,7 +50,7 @@ const BlogGoogleVsFacebook = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Google Ads vs Facebook Ads", url: "https://fotz.pl/blog/google-ads-vs-facebook-ads" },
+          { name: "Google Ads vs Facebook Ads", url: "https://fotz.pl/performance-marketing/google-vs-facebook" },
         ]}
       />
       <FAQSchema items={faqItems} />

@@ -279,7 +279,7 @@ const Pozycjonowanie = () => {
       <SEOHead
         title="Pozycjonowanie Stron WWW | SEO Google | Fotz"
         description="Pozycjonowanie stron internetowych w Google. Skuteczne SEO, audyt strony, link building. Zwiększamy widoczność i ruch organiczny. Sprawdź cennik."
-        canonical="https://fotz.pl/pozycjonowanie"
+        canonical="https://fotz.pl/seo/pozycjonowanie"
         keywords="pozycjonowanie stron, SEO, pozycjonowanie Google, optymalizacja SEO, link building, audyt SEO"
       />
       
@@ -294,7 +294,7 @@ const Pozycjonowanie = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
         ]}
       />
       

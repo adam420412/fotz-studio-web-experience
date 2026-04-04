@@ -60,7 +60,7 @@ const PozycjonowanieGoogleMaps = () => {
       <SEOHead
         title="Pozycjonowanie Google Maps | Wizytówka GMB | Fotz"
         description="Pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy lokalnie. Optymalizacja Google Moja Firma. Fotz Studio."
-        canonical="https://fotz.pl/pozycjonowanie-google-maps"
+        canonical="https://fotz.pl/seo/google-maps"
         keywords="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google"
       />
       <ServiceSchema
@@ -72,8 +72,8 @@ const PozycjonowanieGoogleMaps = () => {
       <BreadcrumbSchema
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/pozycjonowanie" },
-          { name: "Google Maps", url: "https://fotz.pl/pozycjonowanie-google-maps" }
+          { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
+          { name: "Google Maps", url: "https://fotz.pl/seo/google-maps" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

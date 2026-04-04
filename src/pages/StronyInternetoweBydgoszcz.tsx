@@ -130,7 +130,7 @@ const StronyInternetoweBydgoszcz = () => {
       <SEOHead
         title="Strony Internetowe Bydgoszcz | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Bydgoszcz. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Bydgoszczy i okolic."
-        canonical="https://fotz.pl/strony-internetowe-bydgoszcz"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/bydgoszcz"
         keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz"
       />
       
@@ -144,8 +144,8 @@ const StronyInternetoweBydgoszcz = () => {
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Bydgoszcz", url: "https://fotz.pl/strony-internetowe-bydgoszcz" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
+          { name: "Bydgoszcz", url: "https://fotz.pl/uslugi/strony-internetowe/bydgoszcz" },
         ]}
       />
       

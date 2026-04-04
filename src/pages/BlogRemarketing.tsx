@@ -36,13 +36,13 @@ export default function BlogRemarketing() {
       <SEOHead
         title="Remarketing - kompletny poradnik dla firm 2025 | FOTZ Studio"
         description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Poznaj strategie, koszty i najlepsze praktyki remarketingu dla e-commerce i usług."
-        canonical="https://fotz.pl/blog/remarketing-poradnik"
+        canonical="https://fotz.pl/performance-marketing/remarketing"
         keywords="remarketing, retargeting, remarketing google ads, remarketing facebook, porzucone koszyki, remarketing dynamiczny"
       />
       <ArticleSchema
         title="Remarketing - kompletny poradnik dla firm 2025"
         description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Strategie, koszty i najlepsze praktyki."
-        url="https://fotz.pl/blog/remarketing-poradnik"
+        url="https://fotz.pl/performance-marketing/remarketing"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
@@ -51,7 +51,7 @@ export default function BlogRemarketing() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Remarketing", url: "https://fotz.pl/blog/remarketing-poradnik" },
+          { name: "Remarketing", url: "https://fotz.pl/performance-marketing/remarketing" },
         ]}
       />
       <FAQSchema items={faqItems} />

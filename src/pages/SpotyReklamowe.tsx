@@ -117,7 +117,7 @@ export default function SpotyReklamowe() {
       <SEOHead
         title="Spoty Reklamowe | Produkcja Filmów Video | Fotz"
         description="Produkcja spotów reklamowych i filmów promocyjnych. Kreatywne reklamy wideo dla firm. Studio Fotz Poznań."
-        canonical="https://fotz.pl/spoty-reklamowe"
+        canonical="https://fotz.pl/uslugi/produkcja-video"
       />
       
       <OrganizationSchema />
@@ -129,7 +129,7 @@ export default function SpotyReklamowe() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Spoty reklamowe", url: "https://fotz.pl/spoty-reklamowe" }
+          { name: "Spoty reklamowe", url: "https://fotz.pl/uslugi/produkcja-video" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

@@ -140,7 +140,7 @@ const LinkedInAds = () => {
       <SEOHead
         title="LinkedIn Ads - Kampanie reklamowe B2B | Fotz Studio Poznań"
         description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady. Agencja LinkedIn Ads Poznań."
-        canonical="https://fotz.pl/linkedin-ads"
+        canonical="https://fotz.pl/performance-marketing/linkedin-ads"
         keywords="LinkedIn Ads, reklamy LinkedIn, kampanie B2B, marketing B2B, agencja LinkedIn Ads Poznań"
       />
       <ServiceSchema
@@ -152,7 +152,7 @@ const LinkedInAds = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "LinkedIn Ads", url: "https://fotz.pl/linkedin-ads" },
+          { name: "LinkedIn Ads", url: "https://fotz.pl/performance-marketing/linkedin-ads" },
         ]}
       />
       <FAQSchema items={faqItems} />

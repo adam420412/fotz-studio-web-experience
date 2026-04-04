@@ -212,7 +212,7 @@ export default function FotografiaZDrona() {
       <SEOHead
         title="Zdjęcia z Drona | Fotografia Lotnicza 4K | Fotz"
         description="Zdjęcia i filmy z drona 4K. Ujęcia z lotu ptaka dla nieruchomości, eventów, przemysłu. Panoramy 360°. Fotz Poznań."
-        canonical="https://fotz.pl/fotografia-z-drona"
+        canonical="https://fotz.pl/uslugi/fotografia-z-drona"
       />
 
       <ServiceSchema
@@ -223,7 +223,7 @@ export default function FotografiaZDrona() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Fotografia z drona", url: "https://fotz.pl/fotografia-z-drona" }
+          { name: "Fotografia z drona", url: "https://fotz.pl/uslugi/fotografia-z-drona" }
         ]}
       />
       <FAQSchema items={faqItems} />

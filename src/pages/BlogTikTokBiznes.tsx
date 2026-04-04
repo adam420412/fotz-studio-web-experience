@@ -35,13 +35,13 @@ const BlogTikTokBiznes = () => {
       <SEOHead
         title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku | Fotz Studio"
         description="Kompletny poradnik TikTok dla firm. Dowiedz się jak tworzyć angażujące treści, budować społeczność i wykorzystać TikTok Ads do promocji biznesu."
-        canonical="https://fotz.pl/blog/tiktok-dla-biznesu"
+        canonical="https://fotz.pl/social-media/tiktok-biznes"
         keywords="TikTok dla biznesu, TikTok marketing, TikTok Ads, reklamy TikTok, social media marketing, wideo marketing"
       />
       <ArticleSchema
         title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku"
         description="Kompletny poradnik TikTok dla firm. Strategie, formaty i TikTok Ads."
-        url="https://fotz.pl/blog/tiktok-dla-biznesu"
+        url="https://fotz.pl/social-media/tiktok-biznes"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
@@ -50,7 +50,7 @@ const BlogTikTokBiznes = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TikTok dla biznesu", url: "https://fotz.pl/blog/tiktok-dla-biznesu" },
+          { name: "TikTok dla biznesu", url: "https://fotz.pl/social-media/tiktok-biznes" },
         ]}
       />
       <FAQSchema items={faqItems} />

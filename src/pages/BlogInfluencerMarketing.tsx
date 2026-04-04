@@ -49,13 +49,13 @@ export default function BlogInfluencerMarketing() {
       <SEOHead
         title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami | FOTZ Studio"
         description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii w Polsce."
-        canonical="https://fotz.pl/blog/influencer-marketing-polska"
+        canonical="https://fotz.pl/social-media/influencer"
         keywords="influencer marketing, współpraca z influencerami, kampanie influencerskie, mikro influencerzy, nano influencerzy, Instagram influencerzy, TikTok influencerzy"
       />
       <ArticleSchema
         title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami"
         description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii."
-        url="https://fotz.pl/blog/influencer-marketing-polska"
+        url="https://fotz.pl/social-media/influencer"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
@@ -64,7 +64,7 @@ export default function BlogInfluencerMarketing() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Influencer Marketing", url: "https://fotz.pl/blog/influencer-marketing-polska" },
+          { name: "Influencer Marketing", url: "https://fotz.pl/social-media/influencer" },
         ]}
       />
       <FAQSchema items={faqItems} />

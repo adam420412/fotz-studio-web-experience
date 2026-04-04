@@ -78,12 +78,12 @@ const StronyInternetoweLegnica = () => {
       <SEOHead
         title="Strony Internetowe Legnica | Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Legnica. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Legnicy."
-        canonical="https://fotz.pl/strony-internetowe-legnica"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/legnica"
         keywords="strony internetowe legnica, tworzenie stron www legnica, projektowanie stron legnica"
       />
       
       <ServiceSchema name="Strony Internetowe Legnica" description="Tworzenie stron internetowych dla firm z Legnicy." provider="FOTZ Studio" areaServed="Legnica" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Legnica", url: "https://fotz.pl/strony-internetowe-legnica" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Legnica", url: "https://fotz.pl/uslugi/strony-internetowe/legnica" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

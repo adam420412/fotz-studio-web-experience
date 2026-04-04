@@ -31,13 +31,13 @@ const BlogReelsVsTikTok = () => {
       <SEOHead
         title="Instagram Reels vs TikTok - gdzie publikować wideo w 2025? | Fotz Studio"
         description="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki? Analiza algorytmów, zasięgów i strategii content marketingu."
-        canonical="https://fotz.pl/blog/instagram-reels-vs-tiktok"
+        canonical="https://fotz.pl/social-media/reels-vs-tiktok"
         keywords="Instagram Reels, TikTok, krótkie wideo, social media, porównanie platform, vertical video, content marketing"
       />
       <ArticleSchema
         title="Instagram Reels vs TikTok - gdzie publikować wideo w 2025?"
         description="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki?"
-        url="https://fotz.pl/blog/instagram-reels-vs-tiktok"
+        url="https://fotz.pl/social-media/reels-vs-tiktok"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
@@ -46,7 +46,7 @@ const BlogReelsVsTikTok = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Reels vs TikTok", url: "https://fotz.pl/blog/instagram-reels-vs-tiktok" },
+          { name: "Reels vs TikTok", url: "https://fotz.pl/social-media/reels-vs-tiktok" },
         ]}
       />
       <FAQSchema items={faqItems} />

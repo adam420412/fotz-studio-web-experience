@@ -176,7 +176,7 @@ const StronyInternetoweKrakow = () => {
       <SEOHead
         title="Strony Internetowe Kraków | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Kraków. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Krakowa."
-        canonical="https://fotz.pl/strony-internetowe-krakow"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/krakow"
         keywords="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków"
       />
       
@@ -190,8 +190,8 @@ const StronyInternetoweKrakow = () => {
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Kraków", url: "https://fotz.pl/strony-internetowe-krakow" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
+          { name: "Kraków", url: "https://fotz.pl/uslugi/strony-internetowe/krakow" },
         ]}
       />
       

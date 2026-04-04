@@ -152,7 +152,7 @@ const IdentyfikacjaWizualna = () => {
       <SEOHead
         title="Identyfikacja Wizualna | Logo i Branding | Fotz"
         description="Identyfikacja wizualna firmy - logo, księga znaku, materiały firmowe. Spójny branding dla Twojej marki. Agencja Poznań."
-        canonical="https://fotz.pl/identyfikacja-wizualna"
+        canonical="https://fotz.pl/uslugi/branding"
         keywords="identyfikacja wizualna, branding, projektowanie logo, księga znaku, agencja brandingowa Poznań"
       />
       <ServiceSchema 
@@ -165,7 +165,7 @@ const IdentyfikacjaWizualna = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Identyfikacja Wizualna", url: "https://fotz.pl/identyfikacja-wizualna" },
+          { name: "Identyfikacja Wizualna", url: "https://fotz.pl/uslugi/branding" },
         ]}
       />
       <FAQSchema 

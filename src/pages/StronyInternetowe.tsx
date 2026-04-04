@@ -320,7 +320,7 @@ const StronyInternetowe = () => {
       <SEOHead
         title="Tworzenie Stron Internetowych | Projektowanie WWW | Fotz"
         description="Profesjonalne tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page. Responsywne, szybkie i zoptymalizowane pod SEO. Sprawdź cennik."
-        canonical="https://fotz.pl/strony-internetowe"
+        canonical="https://fotz.pl/uslugi/strony-internetowe"
         keywords="strony internetowe, tworzenie stron www, projektowanie stron, sklepy e-commerce, landing page, strony firmowe"
       />
       
@@ -335,7 +335,7 @@ const StronyInternetowe = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
         ]}
       />
       

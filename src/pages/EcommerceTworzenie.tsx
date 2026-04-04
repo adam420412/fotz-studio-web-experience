@@ -161,7 +161,7 @@ export default function EcommerceTworzenie() {
       <SEOHead
         title="Sklep Internetowy | Tworzenie E-commerce | Fotz"
         description="Tworzymy sklepy internetowe - wybór platformy, integracje płatności, automatyzacja AI. Zacznij sprzedaż online. Fotz Studio."
-        canonical="https://fotz.pl/ecommerce-tworzenie-sklepu"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/ecommerce"
       />
 
       <OrganizationSchema />
@@ -173,7 +173,7 @@ export default function EcommerceTworzenie() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "E-commerce", url: "https://fotz.pl/ecommerce-tworzenie-sklepu" },
+          { name: "E-commerce", url: "https://fotz.pl/uslugi/strony-internetowe/ecommerce" },
         ]}
       />
       <FAQSchema items={faqItems} />

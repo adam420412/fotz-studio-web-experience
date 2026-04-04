@@ -88,12 +88,12 @@ const StronyInternetoweGdansk = () => {
       <SEOHead
         title="Strony Internetowe Gdańsk | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Gdańsk. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Trójmiasta."
-        canonical="https://fotz.pl/strony-internetowe-gdansk"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/gdansk"
         keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk"
       />
       
       <ServiceSchema name="Strony Internetowe Gdańsk" description="Profesjonalne tworzenie stron internetowych dla firm z Gdańska i Trójmiasta." provider="FOTZ Studio" areaServed="Gdańsk" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Gdańsk", url: "https://fotz.pl/strony-internetowe-gdansk" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gdańsk", url: "https://fotz.pl/uslugi/strony-internetowe/gdansk" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

@@ -262,7 +262,7 @@ export default function AudytSEO() {
       <SEOHead
         title="Darmowy Audyt SEO Online | Sprawdź swoją stronę | Fotz Studio"
         description="Sprawdź optymalizację SEO swojej strony za darmo. Automatyczny audyt analizuje title, meta description, nagłówki, Open Graph i więcej. Otrzymaj raport z rekomendacjami."
-        canonical="https://fotz.pl/audyt-seo"
+        canonical="https://fotz.pl/seo/audyt"
         keywords="audyt seo, darmowy audyt seo, analiza seo, optymalizacja seo, sprawdź seo strony"
       />
 

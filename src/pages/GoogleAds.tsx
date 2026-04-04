@@ -132,7 +132,7 @@ const GoogleAds = () => {
       <SEOHead
         title="Google Ads Poznań | Kampanie SEM i PPC | Fotz"
         description="Kampanie Google Ads - wyszukiwarka, YouTube, Shopping. Zwiększ sprzedaż i leady. Agencja Google Ads Poznań od 1500 zł/mies."
-        canonical="https://fotz.pl/google-ads"
+        canonical="https://fotz.pl/performance-marketing/google-ads"
         keywords="google ads, kampanie google, reklama google, sem, ppc, agencja google ads poznań"
       />
 
@@ -146,7 +146,7 @@ const GoogleAds = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Google Ads", url: "https://fotz.pl/google-ads" }
+          { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />

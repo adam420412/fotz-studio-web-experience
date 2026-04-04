@@ -136,7 +136,7 @@ const StronyInternetoweLublin = () => {
       <SEOHead
         title="Strony Internetowe Lublin | Tworzenie Stron WWW i Sklepów | FOTZ"
         description="Strony internetowe Lublin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Lublina i okolic."
-        canonical="https://fotz.pl/strony-internetowe-lublin"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/lublin"
         keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin"
       />
       
@@ -150,8 +150,8 @@ const StronyInternetoweLublin = () => {
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Lublin", url: "https://fotz.pl/strony-internetowe-lublin" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
+          { name: "Lublin", url: "https://fotz.pl/uslugi/strony-internetowe/lublin" },
         ]}
       />
       

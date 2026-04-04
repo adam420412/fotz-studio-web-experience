@@ -87,12 +87,12 @@ const StronyInternetoweTychy = () => {
       <SEOHead
         title="Strony Internetowe Tychy | Projektowanie i Tworzenie Stron WWW | FOTZ"
         description="Strony internetowe Tychy. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tychów."
-        canonical="https://fotz.pl/strony-internetowe-tychy"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/tychy"
         keywords="strony internetowe tychy, tworzenie stron www tychy, projektowanie stron tychy, sklepy internetowe tychy"
       />
       
       <ServiceSchema name="Strony Internetowe Tychy" description="Profesjonalne tworzenie stron internetowych dla firm z Tychów." provider="FOTZ Studio" areaServed="Tychy" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Tychy", url: "https://fotz.pl/strony-internetowe-tychy" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Tychy", url: "https://fotz.pl/uslugi/strony-internetowe/tychy" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
