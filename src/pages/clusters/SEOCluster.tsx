@@ -298,7 +298,7 @@ export default function SEOCluster() {
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Najczęstsze pytania o SEO</h2>
           </motion.div>
-          <FAQSchema faqs={faqs} />
+          <FAQSchema items={faqs} />
           <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
               <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-xl border border-border/50 px-6">
