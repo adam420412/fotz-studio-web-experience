@@ -76,56 +76,76 @@ interface MenuCategory {
 
 const menuCategories: MenuCategory[] = [
   {
-    title: "Marketing",
-    description: "Kompleksowa obsługa marketingowa dla Twojej firmy",
+    title: "Performance Marketing",
+    description: "Kampanie reklamowe z mierzalnym zwrotem na inwestycję",
     image: marketingImg,
     color: "#75143F",
     items: [
-      { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers, tooltip: "Pełna obsługa marketingowa od A do Z" },
-      { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Strategia digital i promocja online" },
-      { name: "Content Marketing", href: "/content-marketing", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
-      { name: "Social Media", href: "/social-media", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
-      { name: "Kampanie Reklamowe", href: "/kampanie-reklamowe", badge: "Nowe", icon: Zap, tooltip: "Google, Facebook, TikTok, LinkedIn, YouTube Ads" },
-      { name: "Meta Ads (FB + IG)", href: "/facebook-instagram-ads", icon: Layers, tooltip: "Reklamy na Facebooku i Instagramie" },
-      { name: "Instagram Ads", href: "/instagram-ads", icon: Instagram, tooltip: "Reklamy wizualne na Instagramie" },
-      { name: "TikTok Ads", href: "/tiktok-ads", icon: Music2, tooltip: "Reklamy na TikToku" },
-      { name: "LinkedIn Ads", href: "/linkedin-ads", icon: Briefcase, tooltip: "Kampanie B2B na LinkedIn" },
-      { name: "YouTube Ads", href: "/youtube-ads", icon: Youtube, tooltip: "Reklamy wideo na YouTube" },
+      { name: "Kampanie Reklamowe", href: "/performance-marketing", badge: "HUB", icon: Zap, tooltip: "Google, Facebook, TikTok, LinkedIn, YouTube Ads" },
+      { name: "Google Ads", href: "/performance-marketing/google-ads", icon: Target, tooltip: "Kampanie w wyszukiwarce Google" },
+      { name: "Meta Ads (FB + IG)", href: "/performance-marketing/facebook-instagram-ads", icon: Layers, tooltip: "Reklamy na Facebooku i Instagramie" },
+      { name: "Facebook Ads", href: "/performance-marketing/facebook-ads", icon: Facebook, tooltip: "Reklamy na Facebookie" },
+      { name: "Instagram Ads", href: "/performance-marketing/instagram-ads", icon: Instagram, tooltip: "Reklamy wizualne na Instagramie" },
+      { name: "TikTok Ads", href: "/performance-marketing/tiktok-ads", icon: Music2, tooltip: "Reklamy na TikToku" },
+      { name: "LinkedIn Ads", href: "/performance-marketing/linkedin-ads", icon: Briefcase, tooltip: "Kampanie B2B na LinkedIn" },
+      { name: "YouTube Ads", href: "/performance-marketing/youtube-ads", icon: Youtube, tooltip: "Reklamy wideo na YouTube" },
     ],
   },
   {
-    title: "Strony & SEO",
-    description: "Strony internetowe, e-commerce i pozycjonowanie w wyszukiwarkach",
+    title: "SEO i Pozycjonowanie",
+    description: "Zwiększ widoczność Twojej strony w wyszukiwarkach",
     image: websiteImg,
     color: "#0F3053",
     items: [
-      { name: "Strony Internetowe", href: "/strony-internetowe", icon: Globe, tooltip: "Projektowanie i wdrażanie stron www" },
-      { name: "E-commerce & Sklepy", href: "/ecommerce-tworzenie-sklepu", icon: ShoppingCart, tooltip: "Sklepy internetowe z integracjami" },
-      { name: "Pozycjonowanie SEO", href: "/pozycjonowanie", icon: TrendingUp, tooltip: "Wysoka pozycja w wynikach Google" },
-      { name: "Google Maps", href: "/pozycjonowanie-google-maps", icon: MapPin, tooltip: "Widoczność w mapach lokalnych" },
+      { name: "SEO", href: "/seo", badge: "HUB", icon: TrendingUp, tooltip: "Kompleksowe usługi SEO" },
+      { name: "Audyt SEO", href: "/seo/audyt", icon: Globe, tooltip: "Analiza problematyki SEO" },
+      { name: "Pozycjonowanie", href: "/seo/pozycjonowanie", icon: TrendingUp, tooltip: "Wysoka pozycja w wynikach Google" },
+      { name: "SEO Lokalne", href: "/seo/lokalne-poznan", icon: MapPin, tooltip: "Dominuj w lokalnych wynikach" },
+      { name: "Google Maps", href: "/seo/google-maps", icon: MapPin, tooltip: "Widoczność w mapach lokalnych" },
+      { name: "SEO e-commerce", href: "/seo/ecommerce", icon: ShoppingCart, tooltip: "Pozycjonowanie sklepów online" },
     ],
   },
   {
-    title: "Produkcja",
-    description: "Profesjonalna produkcja video i foto",
+    title: "Social Media",
+    description: "Zwiększ zasięg i zaangażowanie na mediach społecznościowych",
     image: videoImg,
     color: "#422249",
     items: [
-      { name: "Produkcja Filmów", href: "/produkcja-filmow-poznan", icon: Film, tooltip: "Filmy promocyjne i korporacyjne" },
-      { name: "Spoty Reklamowe", href: "/spoty-reklamowe", icon: Clapperboard, tooltip: "Krótkie formy reklamowe" },
-      { name: "Wizualizacje 3D", href: "/wizualizacje-3d", icon: Box, tooltip: "Renderingi produktów i architektury" },
-      { name: "Fotografia", href: "/fotograf-poznan", icon: Camera, tooltip: "Sesje zdjęciowe produktowe i eventowe" },
-      { name: "Fotografia z drona", href: "/fotografia-z-drona", badge: "Nowe", icon: Navigation, tooltip: "Zdjęcia i filmy z lotu ptaka" },
+      { name: "Social Media", href: "/social-media", badge: "HUB", icon: Share2, tooltip: "Obsługa mediów społecznościowych" },
+      { name: "Obsługa Social Media", href: "/social-media/obsluga", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
+      { name: "Marketing Influencer", href: "/social-media/influencer", icon: Crown, tooltip: "Współpraca z influencerami" },
+      { name: "Reels vs TikTok", href: "/social-media/reels-vs-tiktok", icon: Music2, tooltip: "Strategie content na Reels i TikTok" },
+      { name: "TikTok dla biznesu", href: "/social-media/tiktok-biznes", icon: Music2, tooltip: "Kampanie na TikToku" },
     ],
   },
   {
-    title: "Branding",
-    description: "Identyfikacja wizualna i budowanie marki",
+    title: "Content Marketing",
+    description: "Wartościowe treści, które przyciągają i konwertują",
     image: brandingImg,
     color: "#75143F",
     items: [
-      { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", icon: Fingerprint, tooltip: "Logo, kolory, typografia marki" },
-      { name: "Obsługa graficzna", href: "/agencja-graficzna", icon: Brush, tooltip: "Projekty graficzne na zamówienie" },
+      { name: "Content Marketing", href: "/content-marketing", badge: "HUB", icon: FileText, tooltip: "Strategie tworzenia treści" },
+      { name: "Copywriting", href: "/content-marketing/copywriting-landing", icon: FileText, tooltip: "Tekst, który sprzedaje" },
+      { name: "Email Marketing", href: "/content-marketing/email-2025", icon: Share2, tooltip: "Kampanie emailowe" },
+      { name: "Kampanie Treści", href: "/content-marketing/kampanie", icon: Layers, tooltip: "Strategie treściowe" },
+    ],
+  },
+  {
+    title: "Usługi",
+    description: "Pełny zakres usług marketingowych",
+    image: graphicImg,
+    color: "#2D4A3E",
+    items: [
+      { name: "Wszystkie usługi", href: "/uslugi", badge: "HUB", icon: Layers, tooltip: "Pełny katalog naszych usług" },
+      { name: "Strony Internetowe", href: "/uslugi/strony-internetowe", icon: Globe, tooltip: "Projektowanie i wdrażanie stron www" },
+      { name: "E-commerce", href: "/uslugi/ecommerce", icon: ShoppingCart, tooltip: "Sklepy internetowe z integracjami" },
+      { name: "Branding", href: "/uslugi/branding", icon: Fingerprint, tooltip: "Identyfikacja wizualna i projektowanie" },
+      { name: "Grafika", href: "/uslugi/grafika", icon: Brush, tooltip: "Projekty graficzne na zamówienie" },
+      { name: "Produkcja Wideo", href: "/uslugi/produkcja-filmow", icon: Film, tooltip: "Filmy promocyjne i korporacyjne" },
+      { name: "Fotografia", href: "/uslugi/fotografia", icon: Camera, tooltip: "Sesje zdjęciowe profesjonalne" },
+      { name: "Fotografia z drona", href: "/uslugi/fotografia-z-drona", badge: "Nowe", icon: Navigation, tooltip: "Zdjęcia i filmy z lotu ptaka" },
+      { name: "Spoty Reklamowe", href: "/uslugi/spoty-reklamowe", icon: Clapperboard, tooltip: "Krótkie formy reklamowe" },
+      { name: "Wizualizacje 3D", href: "/uslugi/wizualizacje-3d", icon: Box, tooltip: "Renderingi produktów" },
     ],
   },
   {
@@ -313,14 +333,14 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     </div>
                     
                     {/* Main services row */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
-                      {menuCategories.slice(0, 4).map((category, categoryIndex) => (
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-6">
+                      {menuCategories.slice(0, 5).map((category, categoryIndex) => (
                         <motion.div
                           key={category.title}
                           onMouseEnter={() => setHoveredCategory(categoryIndex)}
                           className={cn(
                             "space-y-3 relative",
-                            categoryIndex < 3 && "md:border-r md:border-border/30 md:pr-6"
+                            categoryIndex < 4 && "md:border-r md:border-border/30 md:pr-6"
                           )}
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -357,8 +377,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 mt-2 border-t border-border/50">
                       {/* Dla kogo */}
                       {(() => {
-                        const category = menuCategories[4];
-                        const categoryIndex = 4;
+                        const category = menuCategories[5];
+                        const categoryIndex = 5;
                         return (
                           <motion.div
                             key={category.title}
@@ -397,8 +417,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
 
                       {/* Branże - 2 columns */}
                       {(() => {
-                        const category = menuCategories[5];
-                        const categoryIndex = 5;
+                        const category = menuCategories[6];
+                        const categoryIndex = 6;
                         const column1 = category.items.slice(0, 6);
                         const column2 = category.items.slice(6);
 
