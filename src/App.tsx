@@ -184,6 +184,13 @@ const GeneratorBriefu = lazy(() => import("./pages/GeneratorBriefu"));
 const AudytSEO = lazy(() => import("./pages/AudytSEO"));
 const KalkulatorCen = lazy(() => import("./pages/KalkulatorCen"));
 
+// Cluster hub pages (Phase 1 - new IA structure)
+const SEOCluster = lazy(() => import("./pages/clusters/SEOCluster"));
+const SocialMediaCluster = lazy(() => import("./pages/clusters/SocialMediaCluster"));
+const PerformanceMarketingCluster = lazy(() => import("./pages/clusters/PerformanceMarketingCluster"));
+const ContentMarketingCluster = lazy(() => import("./pages/clusters/ContentMarketingCluster"));
+const UslugiCluster = lazy(() => import("./pages/clusters/UslugiCluster"));
+
 // Lazy load non-critical global components
 const CookieBanner = lazy(() => import("./components/CookieBanner").then(m => ({ default: m.CookieBanner })));
 const SEODevPanel = lazy(() => import("./components/dev/SEODevPanel").then(m => ({ default: m.SEODevPanel })));
@@ -254,6 +261,14 @@ const App = () => (
                 <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
                 <Route path="/content-marketing/copywriting-landing" element={<BlogCopywritingLanding />} />
                 <Route path="/blog/:slug" element={<BlogArticleDynamic />} />
+
+                {/* New cluster hubs (Phase 1) */}
+                <Route path="/seo" element={<SEOCluster />} />
+                <Route path="/social-media" element={<SocialMediaCluster />} />
+                <Route path="/performance-marketing" element={<PerformanceMarketingCluster />} />
+                <Route path="/content-marketing" element={<ContentMarketingCluster />} />
+                <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />
+
                 <Route path="/poradniki" element={<Poradniki />} />
                 {/* Uslugi cluster */}
                 <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />

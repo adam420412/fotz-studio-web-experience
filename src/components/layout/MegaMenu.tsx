@@ -76,8 +76,8 @@ interface MenuCategory {
 
 const menuCategories: MenuCategory[] = [
   {
-    title: "Marketing",
-    description: "Kompleksowa obsługa marketingowa dla Twojej firmy",
+    title: "Performance Marketing",
+    description: "Kampanie reklamowe z mierzalnym zwrotem na inwestycję",
     image: marketingImg,
     color: "#75143F",
     items: [
@@ -94,8 +94,8 @@ const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    title: "Strony & SEO",
-    description: "Strony internetowe, e-commerce i pozycjonowanie w wyszukiwarkach",
+    title: "SEO i Pozycjonowanie",
+    description: "Zwiększ widoczność Twojej strony w wyszukiwarkach",
     image: websiteImg,
     color: "#0F3053",
     items: [
@@ -106,8 +106,8 @@ const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    title: "Produkcja",
-    description: "Profesjonalna produkcja video i foto",
+    title: "Social Media",
+    description: "Zwiększ zasięg i zaangażowanie na mediach społecznościowych",
     image: videoImg,
     color: "#422249",
     items: [
@@ -119,8 +119,8 @@ const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    title: "Branding",
-    description: "Identyfikacja wizualna i budowanie marki",
+    title: "Content Marketing",
+    description: "Wartościowe treści, które przyciągają i konwertują",
     image: brandingImg,
     color: "#75143F",
     items: [
@@ -313,14 +313,14 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     </div>
                     
                     {/* Main services row */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6">
-                      {menuCategories.slice(0, 4).map((category, categoryIndex) => (
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-6">
+                      {menuCategories.slice(0, 5).map((category, categoryIndex) => (
                         <motion.div
                           key={category.title}
                           onMouseEnter={() => setHoveredCategory(categoryIndex)}
                           className={cn(
                             "space-y-3 relative",
-                            categoryIndex < 3 && "md:border-r md:border-border/30 md:pr-6"
+                            categoryIndex < 4 && "md:border-r md:border-border/30 md:pr-6"
                           )}
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -357,8 +357,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6 mt-2 border-t border-border/50">
                       {/* Dla kogo */}
                       {(() => {
-                        const category = menuCategories[4];
-                        const categoryIndex = 4;
+                        const category = menuCategories[5];
+                        const categoryIndex = 5;
                         return (
                           <motion.div
                             key={category.title}
@@ -397,8 +397,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
 
                       {/* Branże - 2 columns */}
                       {(() => {
-                        const category = menuCategories[5];
-                        const categoryIndex = 5;
+                        const category = menuCategories[6];
+                        const categoryIndex = 6;
                         const column1 = category.items.slice(0, 6);
                         const column2 = category.items.slice(6);
 

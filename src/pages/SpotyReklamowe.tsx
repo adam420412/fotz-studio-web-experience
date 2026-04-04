@@ -117,6 +117,7 @@ export default function SpotyReklamowe() {
       <SEOHead
         title="Spoty Reklamowe | Produkcja Filmów Video | Fotz"
         description="Produkcja spotów reklamowych i filmów promocyjnych. Kreatywne reklamy wideo dla firm. Studio Fotz Poznań."
+        canonical="https://fotz.pl/uslugi/spoty-reklamowe"
         canonical="https://fotz.pl/uslugi/produkcja-video"
       />
       

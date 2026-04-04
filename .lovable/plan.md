@@ -1,4 +1,7 @@
+# Information Architecture Optimization Implementation Plan
 
+## Overview
+Restructure Fotz Studio website from flat 140+ root-level pages into logical hierarchy with topical clusters for better UX, SEO, and conversion.
 
 ## Pelna restrukturyzacja architektury informacji Fotz Studio
 
@@ -89,3 +92,5 @@ Przeszukanie calego codebase (`search_files`) pod katem starych URL-i i ich zami
 5. Sitemaps XML
 6. Linki wewnetrzne (search & replace)
 
+**Status:** Ready to start Phase 1
+**Next Step:** Awaiting go-ahead to begin implementation
