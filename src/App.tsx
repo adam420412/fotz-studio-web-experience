@@ -239,35 +239,24 @@ const App = () => (
                 <Route path="/o-nas" element={<ONas />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />
-                <Route path="/content-marketing/kampanie" element={<BlogKampaniaReklamowa />} />
                 <Route path="/blog/ai-w-marketingu-msp-2025" element={<BlogAIMarketing />} />
-                <Route path="/performance-marketing/google-vs-facebook" element={<BlogGoogleVsFacebook />} />
-                <Route path="/social-media/tiktok-biznes" element={<BlogTikTokBiznes />} />
-                <Route path="/seo/lokalne-poznan" element={<BlogSEOLokalnePoznan />} />
-                <Route path="/content-marketing/email-2025" element={<BlogEmailMarketing />} />
-                <Route path="/social-media/reels-vs-tiktok" element={<BlogReelsVsTikTok />} />
                 <Route path="/blog/jak-stworzyc-landing-page" element={<BlogLandingPage />} />
-                <Route path="/social-media/influencer" element={<BlogInfluencerMarketing />} />
                 <Route path="/blog/branding-dla-startupow" element={<BlogBrandingStartupy />} />
                 <Route path="/blog/ux-ui-ecommerce" element={<BlogUXEcommerce />} />
-                <Route path="/seo/ecommerce" element={<BlogSEOEcommerce />} />
                 <Route path="/blog/marketing-automation" element={<BlogMarketingAutomation />} />
                 <Route path="/blog/personal-branding-linkedin" element={<BlogPersonalBrandingLinkedIn />} />
                 <Route path="/blog/video-marketing-trendy-2025" element={<BlogVideoMarketing />} />
-                <Route path="/performance-marketing/remarketing" element={<BlogRemarketing />} />
                 <Route path="/blog/google-analytics-4-poradnik" element={<BlogGoogleAnalytics4 />} />
                 <Route path="/blog/budzet-marketingowy-planowanie" element={<BlogBudzetMarketingowy />} />
                 <Route path="/blog/marketing-b2b-vs-b2c" element={<BlogB2BvsB2C />} />
                 <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
-                <Route path="/content-marketing/copywriting-landing" element={<BlogCopywritingLanding />} />
                 <Route path="/blog/:slug" element={<BlogArticleDynamic />} />
 
-                {/* New cluster hubs (Phase 1) */}
+                {/* Cluster hubs */}
                 <Route path="/seo" element={<SEOCluster />} />
                 <Route path="/social-media" element={<SocialMediaCluster />} />
                 <Route path="/performance-marketing" element={<PerformanceMarketingCluster />} />
                 <Route path="/content-marketing" element={<ContentMarketingCluster />} />
-                <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />
 
                 <Route path="/poradniki" element={<Poradniki />} />
                 {/* Uslugi cluster */}
