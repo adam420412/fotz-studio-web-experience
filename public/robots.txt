@@ -63,3 +63,4 @@ Disallow: /my-account/
 
 # Sitemap locations (index + individual sitemaps)
 Sitemap: https://fotz.pl/sitemap-index.xml
+Sitemap: https://fotz.pl/sitemap.xml
