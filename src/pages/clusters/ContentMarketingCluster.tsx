@@ -6,7 +6,7 @@ export default function ContentMarketingCluster() {
       <SEOHead
         title="Content Marketing | Fotz Studio"
         description="Tworzenie treści, copywriting, strategie content marketing. E-booki, artykuły, video content. Zarabiaj na swoich kompetencjach."
-        canonical="/content-marketing"
+        canonical="https://fotz.pl/content-marketing"
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white pt-24 pb-12">

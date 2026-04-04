@@ -6,7 +6,7 @@ export default function PerformanceMarketingCluster() {
       <SEOHead
         title="Performance Marketing & Kampanie Reklamowe | Fotz Studio"
         description="Kampanie Google Ads, Facebook Ads, Instagram. Pozycjonowanie wydajne, retargeting, optymalizacja ROI. Zarabiaj na każdy klik."
-        canonical="/performance-marketing"
+        canonical="https://fotz.pl/performance-marketing"
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white pt-24 pb-12">

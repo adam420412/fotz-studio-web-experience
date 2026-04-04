@@ -6,7 +6,7 @@ export default function SEOCluster() {
       <SEOHead
         title="SEO i Pozycjonowanie | Fotz Studio"
         description="Kompleksowe usługi SEO dla Twojej strony. Pozycjonowanie w Google, SEO lokalne, optymalizacja on-page i techniczne. Zwiększ widoczność i organiczny ruch."
-        canonical="/seo"
+        canonical="https://fotz.pl/seo"
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white pt-24 pb-12">
