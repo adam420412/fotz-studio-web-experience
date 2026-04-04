@@ -3,15 +3,55 @@
 # Policy: HTTPS, no-www, NO trailing slash
 # ===========================================
 
-# 1. TRAILING SLASH NORMALIZATION (most critical)
-# Redirect /page/ to /page (301)
-# This MUST be first - handles the non-canonical issue
+# 1. TRAILING SLASH NORMALIZATION
 /*/  /:splat  301!
 
-# 2. QUERY PARAMETER CLEANUP
-# Strip tracking parameters (handled by app-level, not Netlify)
+# 2. RESTRUCTURED SERVICE URLs
+/strony-internetowe /uslugi/strony-internetowe 301
+/strony-internetowe-* /uslugi/strony-internetowe/:splat 301
+/ecommerce-tworzenie-sklepu /uslugi/strony-internetowe/ecommerce 301
+/identyfikacja-wizualna /uslugi/branding 301
+/spoty-reklamowe /uslugi/produkcja-video 301
+/fotograf-poznan /uslugi/fotografia 301
+/fotografia-z-drona /uslugi/fotografia-z-drona 301
+/studio-podcastowe /uslugi/studio-podcastowe 301
+/produkcja-filmow-poznan /uslugi/produkcja-filmow 301
 
-# 3. LEGACY BRANZE -> DLA-KOGO REDIRECTS
+# 3. SEO CLUSTER
+/audyt-seo /seo/audyt 301
+/pozycjonowanie /seo/pozycjonowanie 301
+/pozycjonowanie-stron-poznan /seo/pozycjonowanie-poznan 301
+/pozycjonowanie-google-maps /seo/google-maps 301
+
+# 4. SOCIAL MEDIA CLUSTER
+/social-media /social-media/obsluga 301
+/social-media-poznan /social-media/poznan 301
+
+# 5. PERFORMANCE MARKETING CLUSTER
+/google-ads /performance-marketing/google-ads 301
+/facebook-ads /performance-marketing/facebook-ads 301
+/instagram-ads /performance-marketing/instagram-ads 301
+/facebook-instagram-ads /performance-marketing/meta-ads 301
+/linkedin-ads /performance-marketing/linkedin-ads 301
+/tiktok-ads /performance-marketing/tiktok-ads 301
+/youtube-ads /performance-marketing/youtube-ads 301
+
+# 6. CONTENT MARKETING CLUSTER
+/content-marketing /content-marketing/strategia 301
+
+# 7. BLOG POSTS MOVED TO CLUSTERS
+/blog/seo-ecommerce /seo/ecommerce 301
+/blog/seo-lokalne-poznan-poradnik /seo/lokalne-poznan 301
+/blog/influencer-marketing-polska /social-media/influencer 301
+/blog/instagram-reels-vs-tiktok /social-media/reels-vs-tiktok 301
+/blog/tiktok-dla-biznesu /social-media/tiktok-biznes 301
+/blog/google-ads-vs-facebook-ads /performance-marketing/google-vs-facebook 301
+/blog/remarketing-poradnik /performance-marketing/remarketing 301
+/blog/copywriting-landing-page /content-marketing/copywriting-landing 301
+/blog/email-marketing-2025 /content-marketing/email-2025 301
+/blog/kampania-reklamowa-marketingowa /content-marketing/kampanie 301
+
+# 8. LEGACY BRANZE -> DLA-KOGO REDIRECTS
 /branze/marketing-medyczny /dla-kogo/branza-medyczna 301
 /branze/marketing-gastronomia /dla-kogo/gastronomia 301
 /branze/marketing-beauty /dla-kogo/beauty-wellness 301
@@ -26,39 +66,39 @@
 /branze/marketing-turystyka /dla-kogo/turystyka 301
 /branze/* /dla-kogo/:splat 301
 
-# 4. BLOG URL MIGRATIONS
-/blog/kampania-reklamowa-marketingowa-przyklady-definicja /blog/kampania-reklamowa-marketingowa 301
-/blog/remarketing-retargeting-co-to /blog/remarketing-poradnik 301
-/blog/seo-dla-sklepow-internetowych /blog/seo-ecommerce 301
+# 9. BLOG URL MIGRATIONS (legacy slugs -> new locations)
+/blog/kampania-reklamowa-marketingowa-przyklady-definicja /content-marketing/kampanie 301
+/blog/remarketing-retargeting-co-to /performance-marketing/remarketing 301
+/blog/seo-dla-sklepow-internetowych /seo/ecommerce 301
 /blog/automatyzacja-marketingu /blog/marketing-automation 301
 /blog/b2b-b2c-roznice /blog/marketing-b2b-vs-b2c 301
 /blog/ga4-poradnik /blog/google-analytics-4-poradnik 301
 /blog/ai-w-marketingu /blog/ai-w-marketingu-msp-2025 301
 /blog/branding-startupy /blog/branding-dla-startupow 301
 /blog/ile-kosztuje-strona /blog/ile-kosztuje-strona-internetowa 301
-/blog/copywriting-na-landing-page /blog/copywriting-landing-page 301
-/blog/influencer-marketing-poradnik /blog/influencer-marketing-polska 301
+/blog/copywriting-na-landing-page /content-marketing/copywriting-landing 301
+/blog/influencer-marketing-poradnik /social-media/influencer 301
 /blog/personal-branding-na-linkedin /blog/personal-branding-linkedin 301
 /blog/psychologia-cenowa /blog/psychologia-cen 301
-/blog/tiktok-dla-firm /blog/tiktok-dla-biznesu 301
+/blog/tiktok-dla-firm /social-media/tiktok-biznes 301
 /blog/ux-dla-ecommerce /blog/ux-ui-ecommerce 301
 /blog/video-marketing-poradnik /blog/video-marketing-trendy-2025 301
-/blog/email-marketing /blog/email-marketing-2025 301
+/blog/email-marketing /content-marketing/email-2025 301
 /blog/landing-page /blog/jak-stworzyc-landing-page 301
-/blog/reels-vs-tiktok /blog/instagram-reels-vs-tiktok 301
-/blog/google-vs-facebook /blog/google-ads-vs-facebook-ads 301
-/blog/seo-lokalne-poznan /blog/seo-lokalne-poznan-poradnik 301
+/blog/reels-vs-tiktok /social-media/reels-vs-tiktok 301
+/blog/google-vs-facebook /performance-marketing/google-vs-facebook 301
+/blog/seo-lokalne-poznan /seo/lokalne-poznan 301
 /blog/budzet-marketingowy /blog/budzet-marketingowy-planowanie 301
 /blog/koszt-strony-internetowej /blog/ile-kosztuje-strona-internetowa 301
 /blog/b2b-vs-b2c /blog/marketing-b2b-vs-b2c 301
 /blog/google-analytics-4 /blog/google-analytics-4-poradnik 301
 /blog/ai-marketing /blog/ai-w-marketingu-msp-2025 301
 /blog/video-marketing /blog/video-marketing-trendy-2025 301
-/blog/influencer-marketing /blog/influencer-marketing-polska 301
-/blog/tiktok-biznes /blog/tiktok-dla-biznesu 301
+/blog/influencer-marketing /social-media/influencer 301
+/blog/tiktok-biznes /social-media/tiktok-biznes 301
 /blog/ux-ecommerce /blog/ux-ui-ecommerce 301
 
-# 5. CASE STUDY REDIRECTS (old /case-study-* -> new /realizacje/*)
+# 10. CASE STUDY REDIRECTS
 /case-study-enea /realizacje/enea-stadion 301
 /case-study-fps /realizacje/fps-cegielski 301
 /case-study-rppg /realizacje/rppg 301
@@ -78,14 +118,14 @@
 /case-study-apartamenty /realizacje/apartamenty-chorwacja 301
 /case-study-lauvjah /realizacje/lauvjah 301
 
-# 6. LEGACY URL FIXES
+# 11. LEGACY URL FIXES
 /realizacje/fps /realizacje/fps-cegielski 301
 /realizacje/graf /realizacje/graf-tapicerstwo 301
 /login /akademia/auth 301
-/agencja-social-media-poznan /social-media-poznan 301
+/agencja-social-media-poznan /social-media/poznan 301
 
-# 7. SITEMAP REDIRECT
+# 12. SITEMAP REDIRECT
 /sitemap /sitemap-index.xml 301
 
-# 8. SPA FALLBACK (must be last)
+# 13. SPA FALLBACK (must be last)
 /* /index.html 200
