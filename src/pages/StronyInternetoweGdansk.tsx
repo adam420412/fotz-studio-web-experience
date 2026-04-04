@@ -93,7 +93,7 @@ const StronyInternetoweGdansk = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Gdańsk" description="Profesjonalne tworzenie stron internetowych dla firm z Gdańska i Trójmiasta." provider="FOTZ Studio" areaServed="Gdańsk" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Gdańsk", url: "https://fotz.pl/strony-internetowe-gdansk" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gdańsk", url: "https://fotz.pl/uslugi/strony-internetowe/gdansk" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

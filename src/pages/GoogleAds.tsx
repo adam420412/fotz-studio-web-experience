@@ -95,19 +95,19 @@ const GoogleAds = () => {
   const faqItems = [
     {
       question: "Jak działa Google Ads?",
-      answer: <>Google Ads to system reklamowy oparty na modelu PPC (pay-per-click) - płacisz tylko za kliknięcia w reklamę. Reklamy wyświetlają się użytkownikom, którzy wpisują w Google określone frazy kluczowe lub odwiedzają strony w sieci reklamowej Google. Pozycja reklamy zależy od stawki i jakości reklamy. Warto połączyć Google Ads z <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniem SEO</Link> dla maksymalnych efektów.</>
+      answer: <>Google Ads to system reklamowy oparty na modelu PPC (pay-per-click) - płacisz tylko za kliknięcia w reklamę. Reklamy wyświetlają się użytkownikom, którzy wpisują w Google określone frazy kluczowe lub odwiedzają strony w sieci reklamowej Google. Pozycja reklamy zależy od stawki i jakości reklamy. Warto połączyć Google Ads z <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniem SEO</Link> dla maksymalnych efektów.</>
     },
     {
       question: "Ile kosztuje reklama w Google Ads?",
-      answer: <>Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Średni koszt kliknięcia w Polsce to 1-5 zł, ale w konkurencyjnych branżach może wynosić nawet 20-50 zł. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie. Sprawdź także naszą ofertę <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> dla kampanii uzupełniających.</>
+      answer: <>Koszt zależy od konkurencyjności słów kluczowych, jakości reklamy i branży. Średni koszt kliknięcia w Polsce to 1-5 zł, ale w konkurencyjnych branżach może wynosić nawet 20-50 zł. Ty decydujesz o dziennym budżecie i maksymalnej stawce za kliknięcie. Sprawdź także naszą ofertę <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> dla kampanii uzupełniających.</>
     },
     {
       question: "Jakie typy kampanii Google Ads są dostępne?",
-      answer: <>Google Ads oferuje: kampanie w sieci wyszukiwania (tekstowe), kampanie displayowe (banery), Google Shopping (produkty dla <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">e-commerce</Link>), kampanie wideo (<Link to="/youtube-ads" className="text-primary hover:underline">YouTube</Link>), Performance Max (automatyczna optymalizacja) oraz kampanie remarketingowe. Wybór zależy od celów biznesowych i branży.</>
+      answer: <>Google Ads oferuje: kampanie w sieci wyszukiwania (tekstowe), kampanie displayowe (banery), Google Shopping (produkty dla <Link to="/uslugi/strony-internetowe/ecommerce" className="text-primary hover:underline">e-commerce</Link>), kampanie wideo (<Link to="/performance-marketing/youtube-ads" className="text-primary hover:underline">YouTube</Link>), Performance Max (automatyczna optymalizacja) oraz kampanie remarketingowe. Wybór zależy od celów biznesowych i branży.</>
     },
     {
       question: "Jak wybrać odpowiednie słowa kluczowe?",
-      answer: <>Analizujemy frazy, które wpisują potencjalni klienci, ich konkurencyjność i intencję zakupową. Używamy narzędzi jak Google Keyword Planner. Dobieramy słowa o odpowiednim wolumenie wyszukiwań i koszcie, które prowadzą do konwersji. Ta wiedza przydaje się również w <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniu stron</Link>.</>
+      answer: <>Analizujemy frazy, które wpisują potencjalni klienci, ich konkurencyjność i intencję zakupową. Używamy narzędzi jak Google Keyword Planner. Dobieramy słowa o odpowiednim wolumenie wyszukiwań i koszcie, które prowadzą do konwersji. Ta wiedza przydaje się również w <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniu stron</Link>.</>
     },
     {
       question: "Po jakim czasie widać efekty kampanii Google Ads?",
@@ -115,7 +115,7 @@ const GoogleAds = () => {
     },
     {
       question: "Czym różni się Google Ads od pozycjonowania SEO?",
-      answer: <>Google Ads daje natychmiastowe wyniki - reklamy pojawiają się od razu po uruchomieniu kampanii. <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> to proces długoterminowy (3-6 miesięcy). Najlepsze rezultaty daje połączenie obu strategii - płatne reklamy na szybkie efekty i <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie</Link> na długoterminowy wzrost organiczny.</>
+      answer: <>Google Ads daje natychmiastowe wyniki - reklamy pojawiają się od razu po uruchomieniu kampanii. <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> to proces długoterminowy (3-6 miesięcy). Najlepsze rezultaty daje połączenie obu strategii - płatne reklamy na szybkie efekty i <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie</Link> na długoterminowy wzrost organiczny.</>
     },
     {
       question: "Jak mierzyć skuteczność kampanii Google Ads?",
@@ -123,7 +123,7 @@ const GoogleAds = () => {
     },
     {
       question: "Czy warto połączyć Google Ads z Facebook Ads?",
-      answer: <>Tak, obie platformy uzupełniają się. Google Ads dociera do osób aktywnie szukających produktów/usług (wysoka intencja zakupowa), <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> buduje świadomość i dociera do osób na podstawie zainteresowań. Remarketing cross-platformowy zwiększa efektywność. Oferujemy <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">kompleksową obsługę marketingową</Link> łączącą oba kanały.</>
+      answer: <>Tak, obie platformy uzupełniają się. Google Ads dociera do osób aktywnie szukających produktów/usług (wysoka intencja zakupowa), <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> buduje świadomość i dociera do osób na podstawie zainteresowań. Remarketing cross-platformowy zwiększa efektywność. Oferujemy <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">kompleksową obsługę marketingową</Link> łączącą oba kanały.</>
     },
   ];
 
@@ -146,7 +146,7 @@ const GoogleAds = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Google Ads", url: "https://fotz.pl/google-ads" }
+          { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
@@ -251,10 +251,10 @@ const GoogleAds = () => {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link to="/pozycjonowanie" className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1">
+                <Link to="/seo/pozycjonowanie" className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Pozycjonowanie SEO
                 </Link>
-                <Link to="/facebook-ads" className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1">
+                <Link to="/performance-marketing/facebook-ads" className="text-green-400 hover:text-green-300 text-sm flex items-center gap-1">
                   <ArrowRight className="w-4 h-4" /> Facebook Ads
                 </Link>
               </div>
@@ -395,7 +395,7 @@ const GoogleAds = () => {
               <p className="text-muted-foreground mb-6">
                 Wykorzystujemy narzędzia takie jak <strong>Google Keyword Planner</strong> do identyfikacji najbardziej efektywnych fraz. Optymalizujemy grupy reklam wokół jednej tematyki, co zwiększa ich relewancję dla wyników wyszukiwania.
               </p>
-              <Link to="/strony-internetowe" className="text-green-400 hover:text-green-300 flex items-center gap-2">
+              <Link to="/uslugi/strony-internetowe" className="text-green-400 hover:text-green-300 flex items-center gap-2">
                 Zobacz jak optymalizujemy strony docelowe <ArrowRight className="w-4 h-4" />
               </Link>
             </motion.div>
@@ -622,10 +622,10 @@ const GoogleAds = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online zintegrowane z kampaniami", href: "/ecommerce-tworzenie-sklepu", icon: ShoppingCart },
-              { title: "Pozycjonowanie SEO", description: "Organiczny wzrost widoczności w wyszukiwarce", href: "/pozycjonowanie", icon: TrendingUp },
-              { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/strony-internetowe", icon: Globe },
-              { title: "Facebook Ads", description: "Kampanie w social media dla szerszego zasięgu", href: "/facebook-ads", icon: Users },
+              { title: "E-commerce & Sklepy", description: "Tworzymy skuteczne sklepy online zintegrowane z kampaniami", href: "/uslugi/strony-internetowe/ecommerce", icon: ShoppingCart },
+              { title: "Pozycjonowanie SEO", description: "Organiczny wzrost widoczności w wyszukiwarce", href: "/seo/pozycjonowanie", icon: TrendingUp },
+              { title: "Strony internetowe", description: "Profesjonalne strony z wysoką konwersją", href: "/uslugi/strony-internetowe", icon: Globe },
+              { title: "Facebook Ads", description: "Kampanie w social media dla szerszego zasięgu", href: "/performance-marketing/facebook-ads", icon: Users },
             ].map((service, index) => (
               <motion.div
                 key={service.title}

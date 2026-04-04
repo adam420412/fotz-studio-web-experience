@@ -93,7 +93,7 @@ const StronyInternetoweRadom = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Radom" description="Profesjonalne tworzenie stron internetowych dla firm z Radomia." provider="FOTZ Studio" areaServed="Radom" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Radom", url: "https://fotz.pl/strony-internetowe-radom" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Radom", url: "https://fotz.pl/uslugi/strony-internetowe/radom" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

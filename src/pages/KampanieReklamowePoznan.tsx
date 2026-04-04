@@ -29,7 +29,7 @@ const KampanieReklamowePoznan = () => {
       icon: Search, 
       title: "Google Ads Poznań", 
       description: "Docieraj do klientów z Poznania szukających Twoich usług w Google",
-      href: "/google-ads",
+      href: "/performance-marketing/google-ads",
       features: ["Kampanie lokalne", "Google Maps Ads", "Performance Max"],
       color: "from-green-500/20 to-yellow-500/10",
       accent: "bg-green-500/20 text-green-400"
@@ -38,7 +38,7 @@ const KampanieReklamowePoznan = () => {
       icon: Facebook, 
       title: "Facebook Ads Poznań", 
       description: "Buduj świadomość marki wśród mieszkańców Poznania i okolic",
-      href: "/facebook-ads",
+      href: "/performance-marketing/facebook-ads",
       features: ["Targetowanie lokalne", "Lead Ads", "Remarketing"],
       color: "from-blue-500/20 to-purple-500/10",
       accent: "bg-blue-500/20 text-blue-400"
@@ -47,7 +47,7 @@ const KampanieReklamowePoznan = () => {
       icon: Instagram, 
       title: "Instagram Ads", 
       description: "Angażuj poznańskich odbiorców w Stories, Reels i feedzie",
-      href: "/instagram-ads",
+      href: "/performance-marketing/instagram-ads",
       features: ["Stories Ads", "Reels Ads", "Shopping Ads"],
       color: "from-pink-500/20 to-purple-500/10",
       accent: "bg-pink-500/20 text-pink-400"
@@ -56,7 +56,7 @@ const KampanieReklamowePoznan = () => {
       icon: Layers, 
       title: "Meta Ads (FB + IG)", 
       description: "Wykorzystaj synergię Facebooka i Instagrama w jednej strategii",
-      href: "/facebook-instagram-ads",
+      href: "/performance-marketing/meta-ads",
       features: ["Cross-platform", "Unified Audiences", "Full Funnel"],
       color: "from-indigo-500/20 to-pink-500/10",
       accent: "bg-indigo-500/20 text-indigo-400"
@@ -65,7 +65,7 @@ const KampanieReklamowePoznan = () => {
       icon: Music2, 
       title: "TikTok Ads", 
       description: "Docieraj do młodych poznaniaków kreatywnymi reklamami wideo",
-      href: "/tiktok-ads",
+      href: "/performance-marketing/tiktok-ads",
       features: ["In-Feed Ads", "Spark Ads", "Branded Hashtag"],
       color: "from-cyan-500/20 to-pink-500/10",
       accent: "bg-cyan-500/20 text-cyan-400"
@@ -74,7 +74,7 @@ const KampanieReklamowePoznan = () => {
       icon: Briefcase, 
       title: "LinkedIn Ads", 
       description: "Docieraj do decydentów B2B z firm poznańskich",
-      href: "/linkedin-ads",
+      href: "/performance-marketing/linkedin-ads",
       features: ["Sponsored Content", "Message Ads", "Lead Gen Forms"],
       color: "from-sky-500/20 to-blue-500/10",
       accent: "bg-sky-500/20 text-sky-400"
@@ -576,10 +576,10 @@ const KampanieReklamowePoznan = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { title: "Social Media Poznań", href: "/social-media-poznan", icon: Users },
-              { title: "Strony internetowe Poznań", href: "/strony-internetowe-poznan", icon: Layers },
-              { title: "Pozycjonowanie Poznań", href: "/pozycjonowanie-stron-poznan", icon: Search },
-              { title: "Produkcja filmów", href: "/produkcja-filmow-poznan", icon: Youtube },
+              { title: "Social Media Poznań", href: "/social-media/poznan", icon: Users },
+              { title: "Strony internetowe Poznań", href: "/uslugi/strony-internetowe/poznan", icon: Layers },
+              { title: "Pozycjonowanie Poznań", href: "/seo/pozycjonowanie-poznan", icon: Search },
+              { title: "Produkcja filmów", href: "/uslugi/produkcja-filmow", icon: Youtube },
             ].map((service, index) => (
               <motion.div
                 key={index}

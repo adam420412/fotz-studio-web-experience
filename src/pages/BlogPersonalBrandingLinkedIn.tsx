@@ -109,10 +109,10 @@ const BlogPersonalBrandingLinkedIn = () => {
                 <p>
                   LinkedIn przestał być tylko portalem do szukania pracy. To obecnie najpotężniejsza platforma 
                   do budowania marki osobistej w sferze B2B. Decydenci, prezesi, menedżerowie - wszyscy są tam aktywni. 
-                  Profesjonalna <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">identyfikacja wizualna</Link> i spójne 
-                  <Link to="/social-media" className="text-primary hover:underline">social media</Link> wzmacniają Twój wizerunek eksperta. 
-                  <Link to="/linkedin-ads" className="text-primary hover:underline">Kampanie LinkedIn Ads</Link> mogą dodatkowo wzmocnić Twoją widoczność, 
-                  a wartościowy <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link> buduje autorytet w branży.
+                  Profesjonalna <Link to="/uslugi/branding" className="text-primary hover:underline">identyfikacja wizualna</Link> i spójne 
+                  <Link to="/social-media/obsluga" className="text-primary hover:underline">social media</Link> wzmacniają Twój wizerunek eksperta. 
+                  <Link to="/performance-marketing/linkedin-ads" className="text-primary hover:underline">Kampanie LinkedIn Ads</Link> mogą dodatkowo wzmocnić Twoją widoczność, 
+                  a wartościowy <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link> buduje autorytet w branży.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 my-12 not-prose">
@@ -257,8 +257,8 @@ const BlogPersonalBrandingLinkedIn = () => {
                   Personal branding na LinkedIn to maraton, nie sprint. Konsekwencja, autentyczność i wartość 
                   dla odbiorców - to klucz do sukcesu. Zacznij od optymalizacji profilu, ustal strategię 
                   contentową i publikuj regularnie. Efekty przyjdą po 6-12 miesiącach systematycznej pracy.
-                  Warto rozważyć wsparcie kampanii na LinkedIn płatnymi <Link to="/linkedin-ads" className="text-primary hover:underline">reklamami LinkedIn Ads</Link> oraz 
-                  uzupełnienie strategii o <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link>.
+                  Warto rozważyć wsparcie kampanii na LinkedIn płatnymi <Link to="/performance-marketing/linkedin-ads" className="text-primary hover:underline">reklamami LinkedIn Ads</Link> oraz 
+                  uzupełnienie strategii o <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link>.
                 </p>
 
                 <div className="mt-12 p-6 rounded-xl bg-card border border-border not-prose">

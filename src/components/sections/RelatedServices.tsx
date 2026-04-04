@@ -18,98 +18,98 @@ interface RelatedService {
 const serviceDatabase: Record<string, RelatedService> = {
   "google-ads": {
     title: "Google Ads",
-    href: "/google-ads",
+    href: "/performance-marketing/google-ads",
     description: "Kampanie w wyszukiwarce Google",
     icon: Search,
     color: "from-green-500/20 to-yellow-500/20"
   },
   "facebook-ads": {
     title: "Facebook Ads",
-    href: "/facebook-ads",
+    href: "/performance-marketing/facebook-ads",
     description: "Reklamy na największej platformie",
     icon: Megaphone,
     color: "from-blue-500/20 to-purple-500/20"
   },
   "instagram-ads": {
     title: "Instagram Ads",
-    href: "/instagram-ads",
+    href: "/performance-marketing/instagram-ads",
     description: "Reklamy wizualne i Reels",
     icon: Camera,
     color: "from-pink-500/20 to-orange-500/20"
   },
   "tiktok-ads": {
     title: "TikTok Ads",
-    href: "/tiktok-ads",
+    href: "/performance-marketing/tiktok-ads",
     description: "Dynamiczne reklamy wideo",
     icon: Play,
     color: "from-pink-500/20 to-cyan-500/20"
   },
   "linkedin-ads": {
     title: "LinkedIn Ads",
-    href: "/linkedin-ads",
+    href: "/performance-marketing/linkedin-ads",
     description: "Marketing B2B",
     icon: Users,
     color: "from-blue-600/20 to-blue-400/20"
   },
   "youtube-ads": {
     title: "YouTube Ads",
-    href: "/youtube-ads",
+    href: "/performance-marketing/youtube-ads",
     description: "Reklamy wideo przed filmami",
     icon: Play,
     color: "from-red-500/20 to-orange-500/20"
   },
   "meta-ads": {
     title: "Meta Ads",
-    href: "/facebook-instagram-ads",
+    href: "/performance-marketing/meta-ads",
     description: "Facebook + Instagram razem",
     icon: Share2,
     color: "from-blue-500/20 to-pink-500/20"
   },
   "pozycjonowanie": {
     title: "Pozycjonowanie SEO",
-    href: "/pozycjonowanie",
+    href: "/seo/pozycjonowanie",
     description: "Organiczny wzrost widoczności",
     icon: TrendingUp,
     color: "from-emerald-500/20 to-teal-500/20"
   },
   "strony-internetowe": {
     title: "Strony internetowe",
-    href: "/strony-internetowe",
+    href: "/uslugi/strony-internetowe",
     description: "Profesjonalne witryny www",
     icon: Globe,
     color: "from-violet-500/20 to-indigo-500/20"
   },
   "social-media": {
     title: "Social Media",
-    href: "/social-media-poznan",
+    href: "/social-media/poznan",
     description: "Prowadzenie profili",
     icon: Share2,
     color: "from-cyan-500/20 to-blue-500/20"
   },
   "identyfikacja-wizualna": {
     title: "Identyfikacja wizualna",
-    href: "/identyfikacja-wizualna",
+    href: "/uslugi/branding",
     description: "Branding i logo",
     icon: Palette,
     color: "from-amber-500/20 to-orange-500/20"
   },
   "content-marketing": {
     title: "Content Marketing",
-    href: "/content-marketing",
+    href: "/content-marketing/strategia",
     description: "Strategia treści",
     icon: FileText,
     color: "from-purple-500/20 to-pink-500/20"
   },
   "ecommerce": {
     title: "E-commerce",
-    href: "/ecommerce-tworzenie-sklepu",
+    href: "/uslugi/strony-internetowe/ecommerce",
     description: "Sklepy internetowe",
     icon: ShoppingCart,
     color: "from-emerald-500/20 to-lime-500/20"
   },
   "spoty-reklamowe": {
     title: "Spoty reklamowe",
-    href: "/spoty-reklamowe",
+    href: "/uslugi/produkcja-video",
     description: "Produkcja filmów reklamowych",
     icon: Play,
     color: "from-red-500/20 to-pink-500/20"
@@ -123,7 +123,7 @@ const serviceDatabase: Record<string, RelatedService> = {
   },
   "fotograf": {
     title: "Fotografia",
-    href: "/fotograf-poznan",
+    href: "/uslugi/fotografia",
     description: "Profesjonalne sesje zdjęciowe",
     icon: Camera,
     color: "from-amber-500/20 to-yellow-500/20"
@@ -137,14 +137,14 @@ const serviceDatabase: Record<string, RelatedService> = {
   },
   "google-maps": {
     title: "Google Maps",
-    href: "/pozycjonowanie-google-maps",
+    href: "/seo/google-maps",
     description: "Lokalne SEO i wizytówka",
     icon: MapPin,
     color: "from-green-500/20 to-blue-500/20"
   },
   "drone": {
     title: "Fotografia z drona",
-    href: "/fotografia-z-drona",
+    href: "/uslugi/fotografia-z-drona",
     description: "Ujęcia z lotu ptaka",
     icon: Camera,
     color: "from-sky-500/20 to-blue-500/20"

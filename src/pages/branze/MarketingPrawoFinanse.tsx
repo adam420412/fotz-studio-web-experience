@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Strony dla kancelarii" },
-  { title: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", description: "Branding prawniczy" },
-  { title: "Pozycjonowanie SEO", href: "/pozycjonowanie", description: "SEO dla prawników" },
-  { title: "Social Media", href: "/social-media", description: "LinkedIn marketing" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony dla kancelarii" },
+  { title: "Identyfikacja wizualna", href: "/uslugi/branding", description: "Branding prawniczy" },
+  { title: "Pozycjonowanie SEO", href: "/seo/pozycjonowanie", description: "SEO dla prawników" },
+  { title: "Social Media", href: "/social-media/obsluga", description: "LinkedIn marketing" },
 ];
 
 const MarketingPrawoFinanse = () => {

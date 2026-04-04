@@ -96,7 +96,7 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
       services: [
         { name: "Kompleksowa obsługa", link: "/kompleksowa-obsluga-marketingowa" },
         { name: "Kampanie reklamowe", link: "/kampanie-reklamowe" },
-        { name: "Pozycjonowanie SEO", link: "/pozycjonowanie" },
+        { name: "Pozycjonowanie SEO", link: "/seo/pozycjonowanie" },
       ],
       budget: "od 8 000 zł/mies.",
     };
@@ -107,9 +107,9 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
       title: "Marketing e-commerce",
       description: "Dla sklepów internetowych rekomendujemy kampanie reklamowe Google Shopping, remarketing oraz pozycjonowanie produktów.",
       services: [
-        { name: "Google Ads", link: "/google-ads" },
-        { name: "Facebook Ads", link: "/facebook-ads" },
-        { name: "SEO dla e-commerce", link: "/pozycjonowanie" },
+        { name: "Google Ads", link: "/performance-marketing/google-ads" },
+        { name: "Facebook Ads", link: "/performance-marketing/facebook-ads" },
+        { name: "SEO dla e-commerce", link: "/seo/pozycjonowanie" },
       ],
       budget: "od 3 000 zł/mies.",
     };
@@ -120,9 +120,9 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
       title: "Marketing lokalny",
       description: "Dla firm działających lokalnie najlepiej sprawdzi się pozycjonowanie w Google Maps, lokalne SEO oraz targetowane kampanie Facebook Ads.",
       services: [
-        { name: "Pozycjonowanie Google Maps", link: "/pozycjonowanie-google-maps" },
-        { name: "SEO lokalne", link: "/pozycjonowanie-stron-poznan" },
-        { name: "Social Media", link: "/social-media" },
+        { name: "Pozycjonowanie Google Maps", link: "/seo/google-maps" },
+        { name: "SEO lokalne", link: "/seo/pozycjonowanie-poznan" },
+        { name: "Social Media", link: "/social-media/obsluga" },
       ],
       budget: "od 2 000 zł/mies.",
     };
@@ -133,9 +133,9 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
       title: "Strona internetowa + marketing",
       description: "Pierwszym krokiem powinna być profesjonalna strona internetowa, która będzie fundamentem Twoich działań marketingowych.",
       services: [
-        { name: "Strony internetowe", link: "/strony-internetowe" },
-        { name: "Identyfikacja wizualna", link: "/identyfikacja-wizualna" },
-        { name: "Pozycjonowanie SEO", link: "/pozycjonowanie" },
+        { name: "Strony internetowe", link: "/uslugi/strony-internetowe" },
+        { name: "Identyfikacja wizualna", link: "/uslugi/branding" },
+        { name: "Pozycjonowanie SEO", link: "/seo/pozycjonowanie" },
       ],
       budget: "od 4 000 zł jednorazowo + 1 500 zł/mies.",
     };
@@ -146,8 +146,8 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
       title: "Kampanie reklamowe",
       description: "Płatne reklamy to najszybsza droga do nowych klientów. Rekomendujemy kombinację Google Ads i Meta Ads dla maksymalnego zasięgu.",
       services: [
-        { name: "Google Ads", link: "/google-ads" },
-        { name: "Facebook & Instagram Ads", link: "/facebook-instagram-ads" },
+        { name: "Google Ads", link: "/performance-marketing/google-ads" },
+        { name: "Facebook & Instagram Ads", link: "/performance-marketing/meta-ads" },
         { name: "Kampanie reklamowe", link: "/kampanie-reklamowe" },
       ],
       budget: "od 2 500 zł/mies. + budżet reklamowy",
@@ -159,9 +159,9 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
       title: "Social Media Marketing",
       description: "Budowanie marki poprzez angażujący content w social mediach to długoterminowa strategia, która przynosi lojalnych klientów.",
       services: [
-        { name: "Social Media", link: "/social-media" },
-        { name: "Content Marketing", link: "/content-marketing" },
-        { name: "Produkcja wideo", link: "/produkcja-filmow-poznan" },
+        { name: "Social Media", link: "/social-media/obsluga" },
+        { name: "Content Marketing", link: "/content-marketing/strategia" },
+        { name: "Produkcja wideo", link: "/uslugi/produkcja-filmow" },
       ],
       budget: "od 2 500 zł/mies.",
     };
@@ -172,9 +172,9 @@ const getRecommendation = (answers: Record<number, string>): Recommendation => {
     title: "Pozycjonowanie SEO",
     description: "Dla długoterminowego wzrostu organicznego rekomendujemy profesjonalne pozycjonowanie strony w wyszukiwarce Google.",
     services: [
-      { name: "Pozycjonowanie SEO", link: "/pozycjonowanie" },
-      { name: "Content Marketing", link: "/content-marketing" },
-      { name: "Strony internetowe", link: "/strony-internetowe" },
+      { name: "Pozycjonowanie SEO", link: "/seo/pozycjonowanie" },
+      { name: "Content Marketing", link: "/content-marketing/strategia" },
+      { name: "Strony internetowe", link: "/uslugi/strony-internetowe" },
     ],
     budget: "od 2 000 zł/mies.",
   };

@@ -66,8 +66,8 @@ const faqItems = [
     question: "Jakie są główne zalety wykorzystania filmu produktowego w strategii marketingowej?",
     answer: "Film produktowy oferuje możliwość przekazania kluczowych cech produktu lub usługi w sposób atrakcyjny i przystępny dla odbiorcy. Dobrze zrealizowane wideo może zwiększyć rozpoznawalność marki, osiągnąć zamierzone cele marketingowe, a także poprawić wizerunek danej firmy na stronach internetowych oraz w mediach społecznościowych.",
     links: [
-      { text: "Strony internetowe", href: "/strony-internetowe" },
-      { text: "Social Media", href: "/social-media-poznan" }
+      { text: "Strony internetowe", href: "/uslugi/strony-internetowe" },
+      { text: "Social Media", href: "/social-media/poznan" }
     ]
   },
   {
@@ -82,7 +82,7 @@ const faqItems = [
     question: "Czy warto skorzystać z pomocy profesjonalistów przy tworzeniu scenariusza?",
     answer: "Tworzenie scenariusza spotu reklamowego wymaga znajomości pewnych zasad i doświadczenia w dziedzinie produkcji filmowej. Chociaż możesz spróbować stworzyć scenariusz samodzielnie, skorzystanie z pomocy profesjonalistów zapewnia, że treść będzie nie tylko kreatywna, ale również skutecznie wpisze się w wymogi rynku oraz aktualne trendy, co znacząco zwiększy potencjał marketingowy filmu.",
     links: [
-      { text: "Content Marketing", href: "/content-marketing" }
+      { text: "Content Marketing", href: "/content-marketing/strategia" }
     ]
   },
   {
@@ -96,17 +96,17 @@ const faqItems = [
     question: "Jaki jest idealny czasowy zakres filmu reklamowego?",
     answer: "Idealna długość filmu reklamowego zależy od wielu czynników, w tym od platformy, na której ma być publikowany, oraz od przekazu, jaki chcesz przekazać. Generalnie, krótsze, dynamiczne wideo, trwające od 15 do 30 sekund, jest zalecane na media społecznościowe, podczas gdy bardziej szczegółowe przekazy mogą wymagać dłuższej formy. Kluczowe jest, aby utrzymać uwagę widza i przekazać główne wartości w jak najbardziej skondensowany sposób.",
     links: [
-      { text: "TikTok Ads", href: "/tiktok-ads" },
-      { text: "Instagram Ads", href: "/instagram-ads" }
+      { text: "TikTok Ads", href: "/performance-marketing/tiktok-ads" },
+      { text: "Instagram Ads", href: "/performance-marketing/instagram-ads" }
     ]
   },
   {
     question: "Gdzie najlepiej publikować film reklamowy?",
     answer: "Wybór platformy do publikacji filmu reklamowego zależy od Twojego docelowego odbiorcy oraz celów marketingowych. Media społecznościowe takie jak Facebook, Instagram, czy YouTube są idealne do szybkiego dotarcia do szerokiej publiczności. Dla bardziej specjalistycznych lub B2B produktów, publikacja na LinkedIn lub dedykowanej stronie internetowej może przynieść lepsze rezultaty. Rozważ też wykorzystanie telebimów czy innych form reklamy zewnętrznej, jeśli pasuje to do Twojej strategii.",
     links: [
-      { text: "YouTube Ads", href: "/youtube-ads" },
-      { text: "Facebook Ads", href: "/facebook-ads" },
-      { text: "LinkedIn Ads", href: "/linkedin-ads" }
+      { text: "YouTube Ads", href: "/performance-marketing/youtube-ads" },
+      { text: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+      { text: "LinkedIn Ads", href: "/performance-marketing/linkedin-ads" }
     ]
   },
 ];
@@ -118,6 +118,7 @@ export default function SpotyReklamowe() {
         title="Spoty Reklamowe | Produkcja Filmów Video | Fotz"
         description="Produkcja spotów reklamowych i filmów promocyjnych. Kreatywne reklamy wideo dla firm. Studio Fotz Poznań."
         canonical="https://fotz.pl/uslugi/spoty-reklamowe"
+        canonical="https://fotz.pl/uslugi/produkcja-video"
       />
       
       <OrganizationSchema />
@@ -129,7 +130,7 @@ export default function SpotyReklamowe() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Spoty reklamowe", url: "https://fotz.pl/spoty-reklamowe" }
+          { name: "Spoty reklamowe", url: "https://fotz.pl/uslugi/produkcja-video" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

@@ -93,7 +93,7 @@ const StronyInternetoweKonin = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Konin" description="Profesjonalne tworzenie stron internetowych dla firm z Konina." provider="FOTZ Studio" areaServed="Konin" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Konin", url: "https://fotz.pl/strony-internetowe-konin" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Konin", url: "https://fotz.pl/uslugi/strony-internetowe/konin" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

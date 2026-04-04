@@ -24,7 +24,7 @@ const KampanieReklamowe = () => {
       icon: Search, 
       title: "Google Ads", 
       description: "Docieraj do klientów aktywnie szukających Twoich usług w wyszukiwarce Google",
-      href: "/google-ads",
+      href: "/performance-marketing/google-ads",
       features: ["Sieć wyszukiwania", "Google Shopping", "Performance Max"],
       color: "from-green-500/20 to-yellow-500/10",
       accent: "bg-green-500/20 text-green-400"
@@ -33,7 +33,7 @@ const KampanieReklamowe = () => {
       icon: Facebook, 
       title: "Facebook Ads", 
       description: "Buduj świadomość marki i docieraj do idealnych klientów na podstawie zainteresowań",
-      href: "/facebook-ads",
+      href: "/performance-marketing/facebook-ads",
       features: ["Feed & Stories", "Lead Ads", "Remarketing"],
       color: "from-blue-500/20 to-purple-500/10",
       accent: "bg-blue-500/20 text-blue-400"
@@ -42,7 +42,7 @@ const KampanieReklamowe = () => {
       icon: Instagram, 
       title: "Instagram Ads", 
       description: "Angażuj odbiorców wizualnymi reklamami w Stories, Reels i feedzie",
-      href: "/instagram-ads",
+      href: "/performance-marketing/instagram-ads",
       features: ["Stories Ads", "Reels Ads", "Shopping Ads"],
       color: "from-pink-500/20 to-purple-500/10",
       accent: "bg-pink-500/20 text-pink-400"
@@ -51,7 +51,7 @@ const KampanieReklamowe = () => {
       icon: Layers, 
       title: "Meta Ads (FB + IG)", 
       description: "Wykorzystaj pełną synergię ekosystemu Meta - Facebook i Instagram w jednej strategii",
-      href: "/facebook-instagram-ads",
+      href: "/performance-marketing/meta-ads",
       features: ["Cross-platform", "Unified Audiences", "Full Funnel"],
       color: "from-indigo-500/20 to-pink-500/10",
       accent: "bg-indigo-500/20 text-indigo-400"
@@ -60,7 +60,7 @@ const KampanieReklamowe = () => {
       icon: Music2, 
       title: "TikTok Ads", 
       description: "Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo",
-      href: "/tiktok-ads",
+      href: "/performance-marketing/tiktok-ads",
       features: ["In-Feed Ads", "Spark Ads", "Branded Hashtag"],
       color: "from-cyan-500/20 to-pink-500/10",
       accent: "bg-cyan-500/20 text-cyan-400"
@@ -69,7 +69,7 @@ const KampanieReklamowe = () => {
       icon: Briefcase, 
       title: "LinkedIn Ads", 
       description: "Docieraj do decydentów B2B i generuj wartościowe leady biznesowe",
-      href: "/linkedin-ads",
+      href: "/performance-marketing/linkedin-ads",
       features: ["Sponsored Content", "Message Ads", "Lead Gen Forms"],
       color: "from-sky-500/20 to-blue-500/10",
       accent: "bg-sky-500/20 text-sky-400"
@@ -78,7 +78,7 @@ const KampanieReklamowe = () => {
       icon: Youtube, 
       title: "YouTube Ads", 
       description: "Buduj świadomość marki dzięki profesjonalnym reklamom wideo",
-      href: "/youtube-ads",
+      href: "/performance-marketing/youtube-ads",
       features: ["TrueView In-Stream", "Bumper Ads", "YouTube Shorts"],
       color: "from-red-500/20 to-orange-500/10",
       accent: "bg-red-500/20 text-red-400"
@@ -527,7 +527,7 @@ const KampanieReklamowe = () => {
                   <AccordionContent className="text-muted-foreground pb-4">
                     {item.answer}
                     {item.hasLink && (
-                      <> Więcej o synergii platform znajdziesz na naszej <Link to="/facebook-instagram-ads" className="text-primary hover:underline">stronie Meta Ads</Link>.</>
+                      <> Więcej o synergii platform znajdziesz na naszej <Link to="/performance-marketing/meta-ads" className="text-primary hover:underline">stronie Meta Ads</Link>.</>
                     )}
                   </AccordionContent>
                 </AccordionItem>
@@ -556,11 +556,11 @@ const KampanieReklamowe = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
             {[
-              { title: "Google Ads", href: "/google-ads", icon: Search },
-              { title: "Facebook Ads", href: "/facebook-ads", icon: Facebook },
-              { title: "TikTok Ads", href: "/tiktok-ads", icon: Music2 },
-              { title: "Spoty reklamowe", href: "/spoty-reklamowe", icon: Video },
-              { title: "Landing Page", href: "/strony-internetowe", icon: Monitor },
+              { title: "Google Ads", href: "/performance-marketing/google-ads", icon: Search },
+              { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", icon: Facebook },
+              { title: "TikTok Ads", href: "/performance-marketing/tiktok-ads", icon: Music2 },
+              { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", icon: Video },
+              { title: "Landing Page", href: "/uslugi/strony-internetowe", icon: Monitor },
             ].map((service, index) => (
               <motion.div
                 key={index}

@@ -110,7 +110,7 @@ const BlogMarketingAutomation = () => {
                   Marketing automation to wykorzystanie oprogramowania do automatyzacji powtarzalnych zadań marketingowych. 
                   Obejmuje email marketing, zarządzanie leadami, scoring, kampanie wielokanałowe i personalizację treści 
                   - wszystko bez ręcznej interwencji. Automatyzacja świetnie wspiera <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link> oraz 
-                  strategie <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link>.
+                  strategie <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowania SEO</Link>.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 my-12 not-prose">
@@ -266,8 +266,8 @@ const BlogMarketingAutomation = () => {
                   Marketing automation to nie luksus, ale konieczność w 2025 roku. Firmy, które wdrożą automatyzację, 
                   zyskują przewagę konkurencyjną, oszczędzają czas i generują więcej kwalifikowanych leadów. 
                   Kluczem jest rozpoczęcie od prostych procesów i stopniowe rozbudowywanie systemu. Automatyzacja 
-                  doskonale współgra z <Link to="/content-marketing" className="text-primary hover:underline">content marketingiem</Link> oraz 
-                  kampaniami <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
+                  doskonale współgra z <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketingiem</Link> oraz 
+                  kampaniami <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
                 </p>
 
                 <div className="mt-12 p-6 rounded-xl bg-card border border-border not-prose">

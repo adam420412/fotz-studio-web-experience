@@ -85,9 +85,9 @@ const faqItems = [
 
 const relatedServices = [
   { title: "Wizualizacje 3D", href: "/wizualizacje-3d", description: "Fotorealistyczne rendery" },
-  { title: "Spoty reklamowe", href: "/spoty-reklamowe", description: "Filmowe prezentacje" },
-  { title: "Fotograf Poznań", href: "/fotograf-poznan", description: "Sesje nieruchomości" },
-  { title: "Facebook Ads", href: "/facebook-ads", description: "Kampanie lead generation" },
+  { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", description: "Filmowe prezentacje" },
+  { title: "Fotograf Poznań", href: "/uslugi/fotografia", description: "Sesje nieruchomości" },
+  { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", description: "Kampanie lead generation" },
 ];
 
 const MarketingNieruchomosci = () => {

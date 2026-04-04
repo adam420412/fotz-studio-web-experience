@@ -265,16 +265,16 @@ const StronyInternetowe = () => {
   ];
 
   const cityLinks = [
-    { name: "Poznań", href: "/strony-internetowe-poznan" },
-    { name: "Warszawa", href: "/strony-internetowe-warszawa" },
-    { name: "Kraków", href: "/strony-internetowe-krakow" },
-    { name: "Wrocław", href: "/strony-internetowe-wroclaw" },
-    { name: "Gdańsk", href: "/strony-internetowe-gdansk" },
-    { name: "Łódź", href: "/strony-internetowe-lodz" },
-    { name: "Katowice", href: "/strony-internetowe-katowice" },
-    { name: "Szczecin", href: "/strony-internetowe-szczecin" },
-    { name: "Bydgoszcz", href: "/strony-internetowe-bydgoszcz" },
-    { name: "Lublin", href: "/strony-internetowe-lublin" },
+    { name: "Poznań", href: "/uslugi/strony-internetowe/poznan" },
+    { name: "Warszawa", href: "/uslugi/strony-internetowe/warszawa" },
+    { name: "Kraków", href: "/uslugi/strony-internetowe/krakow" },
+    { name: "Wrocław", href: "/uslugi/strony-internetowe/wroclaw" },
+    { name: "Gdańsk", href: "/uslugi/strony-internetowe/gdansk" },
+    { name: "Łódź", href: "/uslugi/strony-internetowe/lodz" },
+    { name: "Katowice", href: "/uslugi/strony-internetowe/katowice" },
+    { name: "Szczecin", href: "/uslugi/strony-internetowe/szczecin" },
+    { name: "Bydgoszcz", href: "/uslugi/strony-internetowe/bydgoszcz" },
+    { name: "Lublin", href: "/uslugi/strony-internetowe/lublin" },
   ];
 
   const includedFeatures = [
@@ -320,7 +320,7 @@ const StronyInternetowe = () => {
       <SEOHead
         title="Tworzenie Stron Internetowych | Projektowanie WWW | Fotz"
         description="Profesjonalne tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page. Responsywne, szybkie i zoptymalizowane pod SEO. Sprawdź cennik."
-        canonical="https://fotz.pl/strony-internetowe"
+        canonical="https://fotz.pl/uslugi/strony-internetowe"
         keywords="strony internetowe, tworzenie stron www, projektowanie stron, sklepy e-commerce, landing page, strony firmowe"
       />
       
@@ -335,7 +335,7 @@ const StronyInternetowe = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
         ]}
       />
       
@@ -1029,7 +1029,7 @@ const StronyInternetowe = () => {
                   </p>
                   <div className="grid md:grid-cols-3 gap-6">
                     <Link 
-                      to="/ecommerce-tworzenie-sklepu" 
+                      to="/uslugi/strony-internetowe/ecommerce" 
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <ShoppingCart className="w-10 h-10 text-primary mb-4" />
@@ -1044,7 +1044,7 @@ const StronyInternetowe = () => {
                       </span>
                     </Link>
                     <Link 
-                      to="/pozycjonowanie" 
+                      to="/seo/pozycjonowanie" 
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <Search className="w-10 h-10 text-primary mb-4" />
@@ -1059,7 +1059,7 @@ const StronyInternetowe = () => {
                       </span>
                     </Link>
                     <Link 
-                      to="/google-ads" 
+                      to="/performance-marketing/google-ads" 
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <Target className="w-10 h-10 text-primary mb-4" />

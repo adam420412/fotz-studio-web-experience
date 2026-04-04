@@ -83,7 +83,7 @@ const StronyInternetoweKalisz = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Kalisz" description="Tworzenie stron internetowych dla firm z Kalisza." provider="FOTZ Studio" areaServed="Kalisz" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Kalisz", url: "https://fotz.pl/strony-internetowe-kalisz" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kalisz", url: "https://fotz.pl/uslugi/strony-internetowe/kalisz" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

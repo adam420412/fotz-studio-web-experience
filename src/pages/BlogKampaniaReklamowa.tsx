@@ -37,7 +37,7 @@ const BlogKampaniaReklamowa = () => {
       <ArticleSchema
         title="Kampania Reklamowa i Marketingowa: Przykłady i Definicja"
         description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok."
-        url="https://fotz.pl/blog/kampania-reklamowa-marketingowa"
+        url="https://fotz.pl/content-marketing/kampanie"
         datePublished="2025-01-15"
         dateModified="2025-01-15"
         author="Fotz Studio"
@@ -46,7 +46,7 @@ const BlogKampaniaReklamowa = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Kampania Reklamowa i Marketingowa", url: "https://fotz.pl/blog/kampania-reklamowa-marketingowa" },
+          { name: "Kampania Reklamowa i Marketingowa", url: "https://fotz.pl/content-marketing/kampanie" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -99,7 +99,7 @@ const BlogKampaniaReklamowa = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
               <p>
-                Zrozumienie różnic między kampanią reklamową a marketingową jest kluczowe dla skutecznego budowania marki i docierania do odbiorców. Sprawdź nasze <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kompleksowe kampanie reklamowe</Link> na wszystkich platformach: <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link>, <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> i <Link to="/social-media" className="text-primary hover:underline">social media</Link>. Ten artykuł ma na celu wyjaśnienie tych pojęć, przedstawienie przykładów z ostatnich lat oraz analizę trendów, które będą kształtować przyszłość reklamy.
+                Zrozumienie różnic między kampanią reklamową a marketingową jest kluczowe dla skutecznego budowania marki i docierania do odbiorców. Sprawdź nasze <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kompleksowe kampanie reklamowe</Link> na wszystkich platformach: <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link>, <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link> i <Link to="/social-media/obsluga" className="text-primary hover:underline">social media</Link>. Ten artykuł ma na celu wyjaśnienie tych pojęć, przedstawienie przykładów z ostatnich lat oraz analizę trendów, które będą kształtować przyszłość reklamy.
               </p>
 
               <h2>Kampania Reklamowa w 2025 roku</h2>
@@ -147,7 +147,7 @@ const BlogKampaniaReklamowa = () => {
 
               <p>W roku 2025 kampania reklamowa w Google Ads będzie jeszcze bardziej zaawansowana, wykorzystując AI do optymalizacji stawek i precyzyjnego targetowania grup docelowych. Reklamodawca będzie mógł tworzyć wysoce docelowy przekaz, dostosowany do indywidualnych potrzeb każdego odbiorcy. <strong>Kluczowym elementem będzie analiza danych w czasie rzeczywistym, pozwalająca na bieżące dostosowywanie kampanii i maksymalizację konwersji.</strong></p>
 
-              <p>Google Ads zaoferuje także bardziej rozbudowane możliwości reklamy wideo, w tym interaktywne spoty reklamowe. Fotz Studio oferuje kompleksowe <Link to="/google-ads" className="text-primary hover:underline">kampanie reklamowe Google Ads</Link>, które są dostosowane do indywidualnych celów biznesowych klienta, z naciskiem na efektywny zwrot z inwestycji.</p>
+              <p>Google Ads zaoferuje także bardziej rozbudowane możliwości reklamy wideo, w tym interaktywne spoty reklamowe. Fotz Studio oferuje kompleksowe <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">kampanie reklamowe Google Ads</Link>, które są dostosowane do indywidualnych celów biznesowych klienta, z naciskiem na efektywny zwrot z inwestycji.</p>
 
               <h3>Kampanie marketingowe na TikToku</h3>
 
@@ -159,7 +159,7 @@ const BlogKampaniaReklamowa = () => {
 
               <p>Kampanie reklamowe w mediach społecznościowych w 2025 roku będą musiały uwzględniać dynamiczne zmiany w algorytmach platform i preferencjach użytkowników. Reklamodawcy będą coraz częściej korzystać z formatów interaktywnych, takich jak quizy, ankiety i konkursy, aby zwiększyć zaangażowanie odbiorców i budować relacje z potencjalnymi klientami.</p>
 
-              <p><strong>Social media staną się także ważnym kanałem komunikacji w czasie rzeczywistym, umożliwiającym markom szybkie reagowanie na potrzeby i zapytania klientów.</strong> Fotz Studio oferuje kompleksową obsługę <Link to="/social-media-poznan" className="text-primary hover:underline">social media</Link>, w tym tworzenie strategii marketingowych, zarządzanie treścią i realizację kampanii reklamowych. Fotz Studio oferuje również <Link to="/facebook-ads" className="text-primary hover:underline">kampanie reklamowe Meta Ads</Link>, które pozwalają na precyzyjne dotarcie do grupy docelowej na Facebooku i Instagramie.</p>
+              <p><strong>Social media staną się także ważnym kanałem komunikacji w czasie rzeczywistym, umożliwiającym markom szybkie reagowanie na potrzeby i zapytania klientów.</strong> Fotz Studio oferuje kompleksową obsługę <Link to="/social-media/poznan" className="text-primary hover:underline">social media</Link>, w tym tworzenie strategii marketingowych, zarządzanie treścią i realizację kampanii reklamowych. Fotz Studio oferuje również <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">kampanie reklamowe Meta Ads</Link>, które pozwalają na precyzyjne dotarcie do grupy docelowej na Facebooku i Instagramie.</p>
 
               <h2>Analiza Przykładów Kampanii</h2>
 

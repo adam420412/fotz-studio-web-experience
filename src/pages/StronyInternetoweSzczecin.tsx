@@ -93,7 +93,7 @@ const StronyInternetoweSzczecin = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Szczecin" description="Profesjonalne tworzenie stron internetowych dla firm ze Szczecina." provider="FOTZ Studio" areaServed="Szczecin" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Szczecin", url: "https://fotz.pl/strony-internetowe-szczecin" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Szczecin", url: "https://fotz.pl/uslugi/strony-internetowe/szczecin" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

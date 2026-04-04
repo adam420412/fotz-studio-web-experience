@@ -120,8 +120,8 @@ export default function SocialMediaPoznan() {
       <BreadcrumbSchema
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Social Media", url: "https://fotz.pl/social-media" },
-          { name: "Social Media Poznań", url: "https://fotz.pl/social-media-poznan" }
+          { name: "Social Media", url: "https://fotz.pl/social-media/obsluga" },
+          { name: "Social Media Poznań", url: "https://fotz.pl/social-media/poznan" }
         ]}
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

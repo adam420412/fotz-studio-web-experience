@@ -37,7 +37,7 @@ const BlogReelsVsTikTok = () => {
       <ArticleSchema
         title="Instagram Reels vs TikTok - gdzie publikować wideo w 2025?"
         description="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki?"
-        url="https://fotz.pl/blog/instagram-reels-vs-tiktok"
+        url="https://fotz.pl/social-media/reels-vs-tiktok"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
@@ -46,7 +46,7 @@ const BlogReelsVsTikTok = () => {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Reels vs TikTok", url: "https://fotz.pl/blog/instagram-reels-vs-tiktok" },
+          { name: "Reels vs TikTok", url: "https://fotz.pl/social-media/reels-vs-tiktok" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -99,7 +99,7 @@ const BlogReelsVsTikTok = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Krótkie wideo to absolutny must-have w strategii <Link to="/social-media" className="text-primary hover:underline">social media</Link> 2025. Ale pojawia się pytanie: <strong>TikTok czy Instagram Reels?</strong> A może obie platformy? W tym artykule porównamy obie opcje i pomożemy Ci podjąć strategiczną decyzję. Jeśli interesują Cię płatne <Link to="/instagram-ads" className="text-primary hover:underline">kampanie Instagram Ads</Link> lub <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link>, sprawdź nasze dedykowane usługi. Profesjonalna <Link to="/produkcja-filmow-poznan" className="text-primary hover:underline">produkcja wideo</Link> może znacząco podnieść jakość Twoich treści.
+                Krótkie wideo to absolutny must-have w strategii <Link to="/social-media/obsluga" className="text-primary hover:underline">social media</Link> 2025. Ale pojawia się pytanie: <strong>TikTok czy Instagram Reels?</strong> A może obie platformy? W tym artykule porównamy obie opcje i pomożemy Ci podjąć strategiczną decyzję. Jeśli interesują Cię płatne <Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">kampanie Instagram Ads</Link> lub <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">TikTok Ads</Link>, sprawdź nasze dedykowane usługi. Profesjonalna <Link to="/uslugi/produkcja-filmow" className="text-primary hover:underline">produkcja wideo</Link> może znacząco podnieść jakość Twoich treści.
               </p>
 
               {/* Quick comparison */}
@@ -420,7 +420,7 @@ const BlogReelsVsTikTok = () => {
                     Bezpłatna konsultacja
                   </Link>
                   <Link 
-                    to="/social-media" 
+                    to="/social-media/obsluga" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-border rounded-full font-medium hover:bg-card transition-colors"
                   >
                     Zobacz ofertę social media

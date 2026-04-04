@@ -93,7 +93,7 @@ const StronyInternetoweRzeszow = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Rzeszów" description="Profesjonalne tworzenie stron internetowych dla firm z Rzeszowa." provider="FOTZ Studio" areaServed="Rzeszów" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Rzeszów", url: "https://fotz.pl/strony-internetowe-rzeszow" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Rzeszów", url: "https://fotz.pl/uslugi/strony-internetowe/rzeszow" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

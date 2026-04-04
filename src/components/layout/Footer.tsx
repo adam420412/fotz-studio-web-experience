@@ -10,34 +10,24 @@ const emailSchema = z.string().trim().email("Nieprawidłowy email");
 
 const footerLinks = {
   uslugi: [
-    { name: "Wszystkie usługi", href: "/uslugi" },
+    { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
+    { name: "Content Marketing", href: "/content-marketing/strategia" },
     { name: "Strony internetowe", href: "/uslugi/strony-internetowe" },
-    { name: "E-commerce & Sklepy", href: "/uslugi/ecommerce" },
-    { name: "Branding", href: "/uslugi/branding" },
-    { name: "Fotografia & Wideo", href: "/uslugi/produkcja-filmow" },
-    { name: "Wizualizacje 3D", href: "/uslugi/wizualizacje-3d" },
-    { name: "Grafika", href: "/uslugi/grafika" },
-    { name: "Studio Podcastowe", href: "/uslugi/studio-podcastowe" },
+    { name: "E-commerce & Sklepy", href: "/uslugi/strony-internetowe/ecommerce" },
+    { name: "Social Media", href: "/social-media/obsluga" },
+    { name: "Pozycjonowanie SEO", href: "/seo/pozycjonowanie" },
+    { name: "Identyfikacja wizualna", href: "/uslugi/branding" },
+    { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
   ],
-  marketing: [
-    { name: "Performance Marketing", href: "/performance-marketing" },
+  kampanie: [
     { name: "Google Ads", href: "/performance-marketing/google-ads" },
     { name: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
     { name: "Instagram Ads", href: "/performance-marketing/instagram-ads" },
+    { name: "Meta Ads (FB + IG)", href: "/performance-marketing/meta-ads" },
     { name: "TikTok Ads", href: "/performance-marketing/tiktok-ads" },
     { name: "LinkedIn Ads", href: "/performance-marketing/linkedin-ads" },
     { name: "YouTube Ads", href: "/performance-marketing/youtube-ads" },
-    { name: "Meta Ads (FB + IG)", href: "/performance-marketing/facebook-instagram-ads" },
-  ],
-  kampanie: [
-    { name: "SEO", href: "/seo" },
-    { name: "Audyt SEO", href: "/seo/audyt" },
-    { name: "Pozycjonowanie", href: "/seo/pozycjonowanie" },
-    { name: "SEO Lokalne", href: "/seo/lokalne-poznan" },
-    { name: "Google Maps", href: "/seo/google-maps" },
-    { name: "Social Media", href: "/social-media" },
-    { name: "Content Marketing", href: "/content-marketing" },
-    { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego" },
+    { name: "Kampanie Poznań", href: "/kampanie-reklamowe-poznan" },
   ],
   dlaKogo: [
     { name: "Firmy lokalne", href: "/dla-kogo/firmy-lokalne" },
@@ -74,7 +64,7 @@ const footerLinks = {
     { name: "Kalkulator ROI", href: "/kalkulator-roi" },
     { name: "Kalkulator cen", href: "/kalkulator-cen" },
     { name: "Generator briefu", href: "/generator-briefu" },
-    { name: "Audyt SEO", href: "/audyt-seo" },
+    { name: "Audyt SEO", href: "/seo/audyt" },
     { name: "Słownik marketingowy", href: "/slownik-marketingowy" },
     { name: "Darmowe zasoby", href: "/zasoby" },
   ],
@@ -364,7 +354,7 @@ export function Footer() {
                     {link.name}
                   </Link>
                 ))}
-                <Link to="/strony-internetowe" className="text-primary hover:text-primary/80 transition-colors text-xs px-2 py-1">
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:text-primary/80 transition-colors text-xs px-2 py-1">
                   + więcej miast
                 </Link>
               </div>

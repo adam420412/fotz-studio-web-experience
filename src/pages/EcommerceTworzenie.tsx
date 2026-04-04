@@ -162,6 +162,7 @@ export default function EcommerceTworzenie() {
         title="Sklep Internetowy | Tworzenie E-commerce | Fotz"
         description="Tworzymy sklepy internetowe - wybór platformy, integracje płatności, automatyzacja AI. Zacznij sprzedaż online. Fotz Studio."
         canonical="https://fotz.pl/uslugi/ecommerce"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/ecommerce"
       />
 
       <OrganizationSchema />
@@ -173,7 +174,7 @@ export default function EcommerceTworzenie() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "E-commerce", url: "https://fotz.pl/ecommerce-tworzenie-sklepu" },
+          { name: "E-commerce", url: "https://fotz.pl/uslugi/strony-internetowe/ecommerce" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -656,7 +657,7 @@ export default function EcommerceTworzenie() {
 
           <div className="grid md:grid-cols-3 gap-6">
             <Link 
-              to="/strony-internetowe" 
+              to="/uslugi/strony-internetowe" 
               className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
             >
               <Globe className="w-10 h-10 text-primary mb-4" />
@@ -671,7 +672,7 @@ export default function EcommerceTworzenie() {
               </span>
             </Link>
             <Link 
-              to="/pozycjonowanie" 
+              to="/seo/pozycjonowanie" 
               className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
             >
               <TrendingUp className="w-10 h-10 text-primary mb-4" />
@@ -686,7 +687,7 @@ export default function EcommerceTworzenie() {
               </span>
             </Link>
             <Link 
-              to="/google-ads" 
+              to="/performance-marketing/google-ads" 
               className="group p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
             >
               <Target className="w-10 h-10 text-primary mb-4" />

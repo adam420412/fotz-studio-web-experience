@@ -83,7 +83,7 @@ const StronyInternetoweLegnica = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Legnica" description="Tworzenie stron internetowych dla firm z Legnicy." provider="FOTZ Studio" areaServed="Legnica" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Legnica", url: "https://fotz.pl/strony-internetowe-legnica" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Legnica", url: "https://fotz.pl/uslugi/strony-internetowe/legnica" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

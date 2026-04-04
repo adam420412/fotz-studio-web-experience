@@ -91,7 +91,7 @@ export default function StudioPodcastowe() {
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Studio Podcastowe", url: "https://fotz.pl/studio-podcastowe" }
+          { name: "Studio Podcastowe", url: "https://fotz.pl/uslugi/studio-podcastowe" }
         ]}
       />
       <Layout>

@@ -93,7 +93,7 @@ const StronyInternetoweKielce = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Kielce" description="Profesjonalne tworzenie stron internetowych dla firm z Kielc." provider="FOTZ Studio" areaServed="Kielce" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Kielce", url: "https://fotz.pl/strony-internetowe-kielce" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kielce", url: "https://fotz.pl/uslugi/strony-internetowe/kielce" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

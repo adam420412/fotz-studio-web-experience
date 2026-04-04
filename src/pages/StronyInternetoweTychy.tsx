@@ -92,7 +92,7 @@ const StronyInternetoweTychy = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Tychy" description="Profesjonalne tworzenie stron internetowych dla firm z Tychów." provider="FOTZ Studio" areaServed="Tychy" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Tychy", url: "https://fotz.pl/strony-internetowe-tychy" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Tychy", url: "https://fotz.pl/uslugi/strony-internetowe/tychy" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

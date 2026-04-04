@@ -117,7 +117,7 @@ export default function BlogBudzetMarketingowy() {
               </h2>
               <p>
                 <strong>Budżet marketingowy</strong> to nie tylko liczba w arkuszu kalkulacyjnym - to strategiczne 
-                narzędzie, które determinuje, jak szybko i efektywnie Twoja firma będzie rosnąć. Właściwe planowanie budżetu pozwala zoptymalizować wydatki na <Link to="/google-ads" className="text-primary hover:underline">kampanie Google Ads</Link> oraz <Link to="/facebook-ads" className="text-primary hover:underline">reklamy Facebook Ads</Link>.
+                narzędzie, które determinuje, jak szybko i efektywnie Twoja firma będzie rosnąć. Właściwe planowanie budżetu pozwala zoptymalizować wydatki na <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">kampanie Google Ads</Link> oraz <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">reklamy Facebook Ads</Link>.
                 Bez jasnego planu wydatków marketingowych ryzykujesz:
               </p>
               <ul>
@@ -204,25 +204,25 @@ export default function BlogBudzetMarketingowy() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td><Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> (Search)</td>
+                      <td><Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> (Search)</td>
                       <td>35%</td>
                       <td>3 500 zł</td>
                       <td>Lead generation</td>
                     </tr>
                     <tr>
-                      <td><Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> + <Link to="/content-marketing" className="text-primary hover:underline">Content</Link></td>
+                      <td><Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> + <Link to="/content-marketing/strategia" className="text-primary hover:underline">Content</Link></td>
                       <td>25%</td>
                       <td>2 500 zł</td>
                       <td>Ruch organiczny</td>
                     </tr>
                     <tr>
-                      <td><Link to="/facebook-ads" className="text-primary hover:underline">Social Media Ads</Link></td>
+                      <td><Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Social Media Ads</Link></td>
                       <td>20%</td>
                       <td>2 000 zł</td>
-                      <td>Świadomość + <Link to="/blog/remarketing-poradnik" className="text-primary hover:underline">remarketing</Link></td>
+                      <td>Świadomość + <Link to="/performance-marketing/remarketing" className="text-primary hover:underline">remarketing</Link></td>
                     </tr>
                     <tr>
-                      <td><Link to="/social-media" className="text-primary hover:underline">Social Media</Link> (organiczny)</td>
+                      <td><Link to="/social-media/obsluga" className="text-primary hover:underline">Social Media</Link> (organiczny)</td>
                       <td>10%</td>
                       <td>1 000 zł</td>
                       <td>Budowanie społeczności</td>

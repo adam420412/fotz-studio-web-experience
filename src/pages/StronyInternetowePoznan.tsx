@@ -198,8 +198,8 @@ const StronyInternetowePoznan = () => {
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Poznań", url: "https://fotz.pl/strony-internetowe-poznan" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
+          { name: "Poznań", url: "https://fotz.pl/uslugi/strony-internetowe/poznan" },
         ]}
       />
       

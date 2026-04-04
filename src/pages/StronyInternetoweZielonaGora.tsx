@@ -83,7 +83,7 @@ const StronyInternetoweZielonaGora = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Zielona Góra" description="Tworzenie stron internetowych dla firm z Zielonej Góry." provider="FOTZ Studio" areaServed="Zielona Góra" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Zielona Góra", url: "https://fotz.pl/strony-internetowe-zielona-gora" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Zielona Góra", url: "https://fotz.pl/uslugi/strony-internetowe/zielona-gora" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

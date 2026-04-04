@@ -93,7 +93,7 @@ const StronyInternetoweTorun = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Toruń" description="Profesjonalne tworzenie stron internetowych dla firm z Torunia." provider="FOTZ Studio" areaServed="Toruń" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Toruń", url: "https://fotz.pl/strony-internetowe-torun" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Toruń", url: "https://fotz.pl/uslugi/strony-internetowe/torun" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

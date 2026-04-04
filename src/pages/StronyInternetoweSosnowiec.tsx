@@ -93,7 +93,7 @@ const StronyInternetoweSosnowiec = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Sosnowiec" description="Profesjonalne tworzenie stron internetowych dla firm z Sosnowca." provider="FOTZ Studio" areaServed="Sosnowiec" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Sosnowiec", url: "https://fotz.pl/strony-internetowe-sosnowiec" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Sosnowiec", url: "https://fotz.pl/uslugi/strony-internetowe/sosnowiec" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>

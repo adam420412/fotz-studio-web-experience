@@ -146,8 +146,8 @@ const StronyInternetoweKatowice = () => {
       <BreadcrumbSchema 
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Katowice", url: "https://fotz.pl/strony-internetowe-katowice" },
+          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
+          { name: "Katowice", url: "https://fotz.pl/uslugi/strony-internetowe/katowice" },
         ]}
       />
       
@@ -182,7 +182,7 @@ const StronyInternetoweKatowice = () => {
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
                 W dzisiejszych czasach <strong>strona internetowa to podstawa dla każdej firmy</strong>. 
                 Szczególnie w dynamicznie rozwijających się miastach, takich jak Katowice, obecność online jest kluczowa dla sukcesu. 
-                <Link to="/strony-internetowe" className="text-primary hover:underline"> Tworzenie stron www</Link> to inwestycja, 
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline"> Tworzenie stron www</Link> to inwestycja, 
                 która przynosi wymierne korzyści.
               </p>
 
@@ -247,7 +247,7 @@ const StronyInternetoweKatowice = () => {
                   Usługi tworzenia stron internetowych w Katowicach
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi tworzenia stron www dla firm z Katowic - od projektu graficznego po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
+                  Kompleksowe usługi tworzenia stron www dla firm z Katowic - od projektu graficznego po <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link>.
                 </p>
               </div>
             </FadeInView>
@@ -281,10 +281,10 @@ const StronyInternetoweKatowice = () => {
                   </p>
                   <p>
                     Wykorzystujemy różne systemy zarządzania treścią (CMS), takie jak WordPress, aby umożliwić klientom samodzielne 
-                    edytowanie strony internetowej. Nasze usługi obejmują <Link to="/strony-internetowe" className="text-primary hover:underline">projektowanie stron www</Link> i ich wdrażanie.
+                    edytowanie strony internetowej. Nasze usługi obejmują <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">projektowanie stron www</Link> i ich wdrażanie.
                   </p>
                   
-                  <h2>Kompleksowe usługi <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link></h2>
+                  <h2>Kompleksowe usługi <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link></h2>
                   <p>
                     Naszą misją jest oferowanie stron internetowych, które efektywnie docierają do szerokiego grona odbiorców. 
                     <strong>Optymalizacja SEO jest kluczowa dla widoczności Twojej strony w wyszukiwarkach</strong>, dlatego oferujemy 
@@ -445,7 +445,7 @@ const StronyInternetoweKatowice = () => {
                   <p>
                     Kompleksowe podejście do tworzenia stron internetowych powinno obejmować szeroki zakres usług. 
                     Oprócz projektowania i wdrażania stron internetowych, ważne jest również branding i identyfikacja wizualna, 
-                    <Link to="/social-media" className="text-primary hover:underline"> obsługa social media</Link>, video marketing i produkcja treści. 
+                    <Link to="/social-media/obsluga" className="text-primary hover:underline"> obsługa social media</Link>, video marketing i produkcja treści. 
                     Agencja powinna również oferować kampanie reklamowe Meta Ads i Google Ads oraz systemy pozyskiwania leadów.
                   </p>
                   

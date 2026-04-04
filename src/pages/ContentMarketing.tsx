@@ -161,7 +161,7 @@ export default function ContentMarketing() {
       <WebPageSchema
         title="Content Marketing - Definicja, Zalety i Strategia SEO"
         description="Co to jest content marketing? Poznaj definicję, zalety marketingu treści i dowiedz się jak mierzyć efekty kampanii SEO."
-        url="https://fotz.pl/content-marketing"
+        url="https://fotz.pl/content-marketing/strategia"
       />
       <ServiceSchema
         name="Content Marketing - Marketing Treści"
@@ -171,7 +171,7 @@ export default function ContentMarketing() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Content Marketing", url: "https://fotz.pl/content-marketing" },
+          { name: "Content Marketing", url: "https://fotz.pl/content-marketing/strategia" },
         ]}
       />
       <FAQSchema items={faqItems} />
@@ -816,10 +816,10 @@ export default function ContentMarketing() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { title: "SEO / Pozycjonowanie", href: "/pozycjonowanie", desc: "Zwiększ widoczność w Google" },
-              { title: "Social Media", href: "/social-media", desc: "Dystrybucja treści w mediach społecznościowych" },
-              { title: "Strony internetowe", href: "/strony-internetowe", desc: "Blog firmowy i platforma contentowa" },
-              { title: "Produkcja video", href: "/produkcja-filmow-poznan", desc: "Video content marketing" },
+              { title: "SEO / Pozycjonowanie", href: "/seo/pozycjonowanie", desc: "Zwiększ widoczność w Google" },
+              { title: "Social Media", href: "/social-media/obsluga", desc: "Dystrybucja treści w mediach społecznościowych" },
+              { title: "Strony internetowe", href: "/uslugi/strony-internetowe", desc: "Blog firmowy i platforma contentowa" },
+              { title: "Produkcja video", href: "/uslugi/produkcja-filmow", desc: "Video content marketing" },
             ].map((service, index) => (
               <motion.div
                 key={service.title}

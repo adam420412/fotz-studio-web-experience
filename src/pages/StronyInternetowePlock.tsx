@@ -93,7 +93,7 @@ const StronyInternetowePlock = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Płock" description="Profesjonalne tworzenie stron internetowych dla firm z Płocka." provider="FOTZ Studio" areaServed="Płock" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Płock", url: "https://fotz.pl/strony-internetowe-plock" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Płock", url: "https://fotz.pl/uslugi/strony-internetowe/plock" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
