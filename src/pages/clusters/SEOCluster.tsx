@@ -1,5 +1,4 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { SEOServiceCard } from "@/components/SEOServiceCard";
 
 export default function SEOCluster() {
   return (

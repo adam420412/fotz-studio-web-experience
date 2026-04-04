@@ -397,8 +397,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
 
                       {/* Branże - 2 columns */}
                       {(() => {
-                        const category = menuCategories[6];
-                        const categoryIndex = 6;
+                        const category = menuCategories[5];
+                        const categoryIndex = 5;
                         const column1 = category.items.slice(0, 6);
                         const column2 = category.items.slice(6);
 
