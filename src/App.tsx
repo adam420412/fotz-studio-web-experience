@@ -322,6 +322,53 @@ const App = () => (
                 <Route path="/uslugi/strony-internetowe/legnica" element={<StronyInternetoweLegnica />} />
                 <Route path="/uslugi/strony-internetowe/kalisz" element={<StronyInternetoweKalisz />} />
 
+                {/* SEO Cluster routes (Phase 4) */}
+                <Route path="/seo/audyt" element={<AudytSEO />} />
+                <Route path="/seo/pozycjonowanie" element={<Pozycjonowanie />} />
+                <Route path="/seo/pozycjonowanie-poznan" element={<PozycjonowanieStronPoznan />} />
+                <Route path="/seo/lokalne-poznan" element={<BlogSEOLokalnePoznan />} />
+                <Route path="/seo/ecommerce" element={<BlogSEOEcommerce />} />
+                <Route path="/seo/google-maps" element={<PozycjonowanieGoogleMaps />} />
+
+                {/* Social Media Cluster routes (Phase 4) */}
+                <Route path="/social-media/obsluga" element={<SocialMedia />} />
+                <Route path="/social-media/poznan" element={<SocialMediaPoznan />} />
+                <Route path="/social-media/influencer" element={<BlogInfluencerMarketing />} />
+                <Route path="/social-media/reels-vs-tiktok" element={<BlogReelsVsTikTok />} />
+                <Route path="/social-media/tiktok-biznes" element={<BlogTikTokBiznes />} />
+
+                {/* Performance Marketing Cluster routes (Phase 4) */}
+                <Route path="/performance-marketing/google-ads" element={<GoogleAds />} />
+                <Route path="/performance-marketing/facebook-ads" element={<FacebookAds />} />
+                <Route path="/performance-marketing/instagram-ads" element={<InstagramAds />} />
+                <Route path="/performance-marketing/tiktok-ads" element={<TikTokAds />} />
+                <Route path="/performance-marketing/linkedin-ads" element={<LinkedInAds />} />
+                <Route path="/performance-marketing/youtube-ads" element={<YouTubeAds />} />
+                <Route path="/performance-marketing/facebook-instagram-ads" element={<FacebookInstagramAds />} />
+                <Route path="/performance-marketing/kampanie" element={<KampanieReklamowe />} />
+                <Route path="/performance-marketing/kampanie-poznan" element={<KampanieReklamowePoznan />} />
+                <Route path="/performance-marketing/remarketing" element={<BlogRemarketing />} />
+                <Route path="/performance-marketing/google-vs-facebook" element={<BlogGoogleVsFacebook />} />
+
+                {/* Content Marketing Cluster routes (Phase 4) */}
+                <Route path="/content-marketing/strategia" element={<ContentMarketing />} />
+                <Route path="/content-marketing/copywriting-landing" element={<BlogCopywritingLanding />} />
+                <Route path="/content-marketing/email-2025" element={<BlogEmailMarketing />} />
+                <Route path="/content-marketing/kampanie" element={<BlogKampaniaReklamowa />} />
+
+                {/* Uslugi Cluster routes (Phase 4) */}
+                <Route path="/uslugi/branding" element={<IdentyfikacjaWizualna />} />
+                <Route path="/uslugi/grafika" element={<AgencjaGraficzna />} />
+                <Route path="/uslugi/produkcja-filmow" element={<ProdukcjaFilmowPoznan />} />
+                <Route path="/uslugi/produkcja-video" element={<ProdukcjaFilmowPoznan />} />
+                <Route path="/uslugi/fotografia" element={<FotografPoznan />} />
+                <Route path="/uslugi/fotografia-z-drona" element={<FotografiaZDrona />} />
+                <Route path="/uslugi/spoty-reklamowe" element={<SpotyReklamowe />} />
+                <Route path="/uslugi/wizualizacje-3d" element={<Wizualizacje3D />} />
+                <Route path="/uslugi/kompleksowa-obsluga" element={<KompleksowaObsluga />} />
+                <Route path="/uslugi/ecommerce" element={<EcommerceTworzenie />} />
+                <Route path="/uslugi/studio-podcastowe" element={<StudioPodcastowe />} />
+
                 <Route path="/akademia" element={<AkademiaLanding />} />
                 <Route path="/akademia/auth" element={<AkademiaAuth />} />
                 <Route path="/akademia/panel" element={<Akademia />} />
