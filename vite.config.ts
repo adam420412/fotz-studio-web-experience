@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => ({
   // Reduce build output verbosity
   logLevel: "warn",
   server: {
-    host: "::",
-    port: 8080,
+    host: "0.0.0.0",
+    port: 5173,
   },
   plugins: [
     react(),
