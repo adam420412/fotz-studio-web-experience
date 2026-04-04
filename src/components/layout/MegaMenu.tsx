@@ -320,7 +320,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                           onMouseEnter={() => setHoveredCategory(categoryIndex)}
                           className={cn(
                             "space-y-3 relative",
-                            categoryIndex < 4 && "md:border-r md:border-border/30 md:pr-6"
+                            categoryIndex < 3 && "md:border-r md:border-border/30 md:pr-6"
                           )}
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
