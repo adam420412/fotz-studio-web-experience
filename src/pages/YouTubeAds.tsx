@@ -189,7 +189,7 @@ const YouTubeAds = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/spoty-reklamowe">Zobacz nasze spoty</Link>
+                <Link to="/uslugi/produkcja-video">Zobacz nasze spoty</Link>
               </Button>
             </div>
           </motion.div>
@@ -463,9 +463,9 @@ const YouTubeAds = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               { title: "Kampanie reklamowe", href: "/kampanie-reklamowe", icon: Megaphone },
-              { title: "Google Ads", href: "/google-ads", icon: Target },
-              { title: "Spoty reklamowe", href: "/spoty-reklamowe", icon: Video },
-              { title: "Produkcja filmów", href: "/produkcja-filmow-poznan", icon: Film },
+              { title: "Google Ads", href: "/performance-marketing/google-ads", icon: Target },
+              { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", icon: Video },
+              { title: "Produkcja filmów", href: "/uslugi/produkcja-filmow", icon: Film },
             ].map((service, index) => (
               <motion.div
                 key={index}

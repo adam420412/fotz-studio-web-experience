@@ -103,7 +103,7 @@ const BlogTikTokBiznes = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Z ponad 1,5 miliarda aktywnych użytkowników miesięcznie, TikTok stał się jedną z najważniejszych platform marketingowych na świecie. <strong>Co ciekawe, to już nie tylko młodzież</strong> – użytkownicy w wieku 25-44 lat stanowią obecnie ponad 40% bazy użytkowników. To ogromna szansa dla firm, które chcą dotrzeć do nowych odbiorców poprzez <Link to="/tiktok-ads" className="text-primary hover:underline">reklamy TikTok Ads</Link> oraz organiczny <Link to="/social-media" className="text-primary hover:underline">marketing w social media</Link>.
+                Z ponad 1,5 miliarda aktywnych użytkowników miesięcznie, TikTok stał się jedną z najważniejszych platform marketingowych na świecie. <strong>Co ciekawe, to już nie tylko młodzież</strong> – użytkownicy w wieku 25-44 lat stanowią obecnie ponad 40% bazy użytkowników. To ogromna szansa dla firm, które chcą dotrzeć do nowych odbiorców poprzez <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">reklamy TikTok Ads</Link> oraz organiczny <Link to="/social-media/obsluga" className="text-primary hover:underline">marketing w social media</Link>.
               </p>
 
               {/* Key stats */}
@@ -164,10 +164,10 @@ const BlogTikTokBiznes = () => {
                 Twój profil to pierwsza wizytówka. Zadbaj o:
               </p>
               <ul>
-                <li><strong>Zdjęcie profilowe</strong> – czytelne logo lub twarz właściciela (jak w <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">identyfikacji wizualnej</Link>)</li>
+                <li><strong>Zdjęcie profilowe</strong> – czytelne logo lub twarz właściciela (jak w <Link to="/uslugi/branding" className="text-primary hover:underline">identyfikacji wizualnej</Link>)</li>
                 <li><strong>Nazwa użytkownika</strong> – krótka, łatwa do zapamiętania</li>
                 <li><strong>Bio</strong> – 80 znaków na przedstawienie się i CTA</li>
-                <li><strong>Link</strong> – kieruj ruch na <Link to="/strony-internetowe" className="text-primary hover:underline">stronę</Link>, sklep lub landing page</li>
+                <li><strong>Link</strong> – kieruj ruch na <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">stronę</Link>, sklep lub landing page</li>
               </ul>
 
               <h2>Strategie content marketingu na TikToku</h2>
@@ -219,7 +219,7 @@ const BlogTikTokBiznes = () => {
               <h2>TikTok Ads – reklama płatna</h2>
 
               <p>
-                Organiczny zasięg to świetnie, ale <Link to="/tiktok-ads" className="text-primary hover:underline">reklamy TikTok Ads</Link> pozwalają skalować działania i precyzyjnie targetować grupę docelową.
+                Organiczny zasięg to świetnie, ale <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">reklamy TikTok Ads</Link> pozwalają skalować działania i precyzyjnie targetować grupę docelową.
               </p>
 
               <h3>Formaty reklamowe TikTok</h3>
@@ -309,8 +309,8 @@ const BlogTikTokBiznes = () => {
 
               <p>
                 Jeśli Twoja grupa docelowa jest na TikToku (a prawdopodobnie jest), czas zacząć działać. Konkurencja rośnie z każdym dniem.
-                Rozważ również uzupełnienie strategii o <Link to="/social-media" className="text-primary hover:underline">zarządzanie social media</Link> oraz 
-                kampanie <Link to="/instagram-ads" className="text-primary hover:underline">Instagram Reels</Link> dla pełnego pokrycia video-first platform.
+                Rozważ również uzupełnienie strategii o <Link to="/social-media/obsluga" className="text-primary hover:underline">zarządzanie social media</Link> oraz 
+                kampanie <Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">Instagram Reels</Link> dla pełnego pokrycia video-first platform.
               </p>
 
               {/* FAQ Section */}
@@ -359,7 +359,7 @@ const BlogTikTokBiznes = () => {
                     Bezpłatna konsultacja
                   </Link>
                   <Link 
-                    to="/tiktok-ads" 
+                    to="/performance-marketing/tiktok-ads" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-border rounded-full font-medium hover:bg-card transition-colors"
                   >
                     Zobacz ofertę TikTok Ads

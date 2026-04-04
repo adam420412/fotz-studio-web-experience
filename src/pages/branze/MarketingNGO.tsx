@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Strony dla fundacji" },
-  { title: "Social Media", href: "/social-media", description: "Budowanie społeczności" },
-  { title: "Produkcja video", href: "/produkcja-filmow-poznan", description: "Filmy społeczne" },
-  { title: "Google Ads", href: "/google-ads", description: "Google Grants" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony dla fundacji" },
+  { title: "Social Media", href: "/social-media/obsluga", description: "Budowanie społeczności" },
+  { title: "Produkcja video", href: "/uslugi/produkcja-filmow", description: "Filmy społeczne" },
+  { title: "Google Ads", href: "/performance-marketing/google-ads", description: "Google Grants" },
 ];
 
 const MarketingNGO = () => {

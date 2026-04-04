@@ -816,10 +816,10 @@ export default function ContentMarketing() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { title: "SEO / Pozycjonowanie", href: "/pozycjonowanie", desc: "Zwiększ widoczność w Google" },
-              { title: "Social Media", href: "/social-media", desc: "Dystrybucja treści w mediach społecznościowych" },
-              { title: "Strony internetowe", href: "/strony-internetowe", desc: "Blog firmowy i platforma contentowa" },
-              { title: "Produkcja video", href: "/produkcja-filmow-poznan", desc: "Video content marketing" },
+              { title: "SEO / Pozycjonowanie", href: "/seo/pozycjonowanie", desc: "Zwiększ widoczność w Google" },
+              { title: "Social Media", href: "/social-media/obsluga", desc: "Dystrybucja treści w mediach społecznościowych" },
+              { title: "Strony internetowe", href: "/uslugi/strony-internetowe", desc: "Blog firmowy i platforma contentowa" },
+              { title: "Produkcja video", href: "/uslugi/produkcja-filmow", desc: "Video content marketing" },
             ].map((service, index) => (
               <motion.div
                 key={service.title}

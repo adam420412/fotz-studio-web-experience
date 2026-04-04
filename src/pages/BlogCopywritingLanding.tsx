@@ -119,7 +119,7 @@ export default function BlogCopywritingLanding() {
               <p>
                 <strong>Copywriting dla landing pages</strong> to sztuka pisania tekstów, które prowadzą 
                 do działania. Nie chodzi o piękne słowa - chodzi o konwersję. Dobry copy odpowiada na 
-                pytania odwiedzającego: <em>Co to jest? Dla kogo? Dlaczego powinienem to chcieć?</em> Skuteczny copy wspiera <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link> i zwiększa efektywność <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanii reklamowych</Link>.
+                pytania odwiedzającego: <em>Co to jest? Dla kogo? Dlaczego powinienem to chcieć?</em> Skuteczny copy wspiera <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link> i zwiększa efektywność <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanii reklamowych</Link>.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">

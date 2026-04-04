@@ -456,7 +456,7 @@ const LinkedInAds = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link 
-              to="/google-ads" 
+              to="/performance-marketing/google-ads" 
               className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
             >
               <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
@@ -467,7 +467,7 @@ const LinkedInAds = () => {
               </p>
             </Link>
             <Link 
-              to="/content-marketing" 
+              to="/content-marketing/strategia" 
               className="p-6 rounded-xl bg-card border border-border/50 hover:border-primary/50 transition-colors group"
             >
               <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">

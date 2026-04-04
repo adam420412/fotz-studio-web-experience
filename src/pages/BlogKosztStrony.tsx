@@ -8,18 +8,18 @@ import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 
 const cities = [
-  { name: "Poznań", path: "/strony-internetowe-poznan", active: true },
-  { name: "Warszawa", path: "/strony-internetowe-warszawa", active: true },
-  { name: "Kraków", path: "/strony-internetowe-krakow", active: true },
-  { name: "Wrocław", path: "/strony-internetowe-wroclaw", active: true },
-  { name: "Gdańsk", path: "/strony-internetowe-gdansk", active: true },
-  { name: "Łódź", path: "/strony-internetowe-lodz", active: true },
-  { name: "Katowice", path: "/strony-internetowe-katowice", active: true },
-  { name: "Szczecin", path: "/strony-internetowe-szczecin", active: true },
-  { name: "Lublin", path: "/strony-internetowe-lublin", active: true },
-  { name: "Bydgoszcz", path: "/strony-internetowe-bydgoszcz", active: true },
-  { name: "Białystok", path: "/strony-internetowe-bialystok", active: false },
-  { name: "Rzeszów", path: "/strony-internetowe-rzeszow", active: false },
+  { name: "Poznań", path: "/uslugi/strony-internetowe/poznan", active: true },
+  { name: "Warszawa", path: "/uslugi/strony-internetowe/warszawa", active: true },
+  { name: "Kraków", path: "/uslugi/strony-internetowe/krakow", active: true },
+  { name: "Wrocław", path: "/uslugi/strony-internetowe/wroclaw", active: true },
+  { name: "Gdańsk", path: "/uslugi/strony-internetowe/gdansk", active: true },
+  { name: "Łódź", path: "/uslugi/strony-internetowe/lodz", active: true },
+  { name: "Katowice", path: "/uslugi/strony-internetowe/katowice", active: true },
+  { name: "Szczecin", path: "/uslugi/strony-internetowe/szczecin", active: true },
+  { name: "Lublin", path: "/uslugi/strony-internetowe/lublin", active: true },
+  { name: "Bydgoszcz", path: "/uslugi/strony-internetowe/bydgoszcz", active: true },
+  { name: "Białystok", path: "/uslugi/strony-internetowe/bialystok", active: false },
+  { name: "Rzeszów", path: "/uslugi/strony-internetowe/rzeszow", active: false },
 ];
 
 const BlogKosztStrony = () => {
@@ -172,7 +172,7 @@ const BlogKosztStrony = () => {
                   Różne typy stron internetowych
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Koszt stworzenia strony internetowej zależy w dużej mierze od jej typu.</strong> Prosta strona wizytówka, prezentująca podstawowe informacje o Twojej firmie, będzie znacznie tańsza niż rozbudowany sklep internetowy z systemem płatności online i bazą produktów. Cena strony internetowej rośnie wraz z jej złożonością i funkcjonalnością. Sprawdź naszą ofertę <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link>.
+                  <strong>Koszt stworzenia strony internetowej zależy w dużej mierze od jej typu.</strong> Prosta strona wizytówka, prezentująca podstawowe informacje o Twojej firmie, będzie znacznie tańsza niż rozbudowany sklep internetowy z systemem płatności online i bazą produktów. Cena strony internetowej rośnie wraz z jej złożonością i funkcjonalnością. Sprawdź naszą ofertę <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link>.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
@@ -308,14 +308,14 @@ const BlogKosztStrony = () => {
                   Ile kosztuje pozycjonowanie strony internetowej?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  <strong>Pozycjonowanie stron internetowych to proces optymalizacji Twojej strony, mający na celu poprawę jej widoczności w wynikach wyszukiwania.</strong> Cennik SEO obejmuje audyt strony, analizę słów kluczowych, optymalizację treści i link building. Koszty pozycjonowania zaczynają się od kilkuset złotych miesięcznie dla mniej konkurencyjnych branż. Dowiedz się więcej o naszej usłudze <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link>.
+                  <strong>Pozycjonowanie stron internetowych to proces optymalizacji Twojej strony, mający na celu poprawę jej widoczności w wynikach wyszukiwania.</strong> Cennik SEO obejmuje audyt strony, analizę słów kluczowych, optymalizację treści i link building. Koszty pozycjonowania zaczynają się od kilkuset złotych miesięcznie dla mniej konkurencyjnych branż. Dowiedz się więcej o naszej usłudze <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowania stron</Link>.
                 </p>
 
                 <h3 className="text-xl font-heading font-semibold mt-8 mb-4">
                   Dlaczego warto inwestować w SEO?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Inwestycja w SEO jest kluczowa dla zwiększenia widoczności Twojej strony i dotarcia do potencjalnych klientów. Dobrze wypozycjonowana witryna generuje większy ruch organiczny, co przekłada się na wzrost sprzedaży. Dowiedz się więcej o <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniu stron</Link>.
+                  Inwestycja w SEO jest kluczowa dla zwiększenia widoczności Twojej strony i dotarcia do potencjalnych klientów. Dobrze wypozycjonowana witryna generuje większy ruch organiczny, co przekłada się na wzrost sprzedaży. Dowiedz się więcej o <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniu stron</Link>.
                 </p>
 
                 {/* FAQ Section */}
@@ -361,7 +361,7 @@ const BlogKosztStrony = () => {
                   </h2>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Realizujemy projekty dla klientów z całego kraju. Sprawdź nasze usługi <Link to="/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> w Twoim mieście:
+                  Realizujemy projekty dla klientów z całego kraju. Sprawdź nasze usługi <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> w Twoim mieście:
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
                   {cities.map((city) => (
@@ -394,15 +394,15 @@ const BlogKosztStrony = () => {
               >
                 <h3 className="text-xl font-heading font-bold mb-4">Powiązane usługi</h3>
                 <div className="grid sm:grid-cols-3 gap-4">
-                  <Link to="/strony-internetowe" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/uslugi/strony-internetowe" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Strony internetowe</h4>
                     <p className="text-sm text-muted-foreground">Profesjonalne strony www dla firm</p>
                   </Link>
-                  <Link to="/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/seo/pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Pozycjonowanie SEO</h4>
                     <p className="text-sm text-muted-foreground">Zwiększ widoczność w Google</p>
                   </Link>
-                  <Link to="/social-media" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/social-media/obsluga" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Social Media</h4>
                     <p className="text-sm text-muted-foreground">Marketing w mediach społecznościowych</p>
                   </Link>

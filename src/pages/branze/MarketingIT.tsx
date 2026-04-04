@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Strony dla firm IT" },
-  { title: "Social Media", href: "/social-media", description: "LinkedIn B2B" },
-  { title: "Google Ads", href: "/google-ads", description: "Kampanie B2B" },
-  { title: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", description: "Branding tech" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony dla firm IT" },
+  { title: "Social Media", href: "/social-media/obsluga", description: "LinkedIn B2B" },
+  { title: "Google Ads", href: "/performance-marketing/google-ads", description: "Kampanie B2B" },
+  { title: "Identyfikacja wizualna", href: "/uslugi/branding", description: "Branding tech" },
 ];
 
 const MarketingIT = () => {

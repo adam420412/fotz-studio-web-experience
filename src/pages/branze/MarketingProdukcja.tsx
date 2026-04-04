@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Strony B2B dla producentów" },
-  { title: "Spoty reklamowe", href: "/spoty-reklamowe", description: "Filmy korporacyjne" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony B2B dla producentów" },
+  { title: "Spoty reklamowe", href: "/uslugi/produkcja-video", description: "Filmy korporacyjne" },
   { title: "Wizualizacje 3D", href: "/wizualizacje-3d", description: "Renderingi produktów" },
-  { title: "Identyfikacja wizualna", href: "/identyfikacja-wizualna", description: "Branding przemysłowy" },
+  { title: "Identyfikacja wizualna", href: "/uslugi/branding", description: "Branding przemysłowy" },
 ];
 
 const MarketingProdukcja = () => {

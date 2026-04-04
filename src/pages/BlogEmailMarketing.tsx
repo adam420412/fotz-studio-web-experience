@@ -103,7 +103,7 @@ const BlogEmailMarketing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                W erze <Link to="/social-media" className="text-primary hover:underline">social media</Link> i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najskuteczniejszych kanałów marketingowych z ROI sięgającym 4200%. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów. Email marketing doskonale współgra z <Link to="/content-marketing" className="text-primary hover:underline">content marketingiem</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>.
+                W erze <Link to="/social-media/obsluga" className="text-primary hover:underline">social media</Link> i chatbotów, email marketing może wydawać się przestarzały. <strong>Nic bardziej mylnego.</strong> Email pozostaje jednym z najskuteczniejszych kanałów marketingowych z ROI sięgającym 4200%. W tym artykule pokażemy, jak zbudować listę mailingową od zera i przekształcić subskrybentów w klientów. Email marketing doskonale współgra z <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketingiem</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>.
               </p>
 
               {/* Key stats */}
@@ -199,7 +199,7 @@ const BlogEmailMarketing = () => {
               <h3>3. Optymalizacja landing page zapisu</h3>
 
               <p>
-                <Link to="/strony-internetowe" className="text-primary hover:underline">Landing page</Link> dla lead magnetu powinien być prosty i skupiony na jednym celu:
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">Landing page</Link> dla lead magnetu powinien być prosty i skupiony na jednym celu:
               </p>
 
               <ul>
@@ -396,7 +396,7 @@ const BlogEmailMarketing = () => {
               </ul>
 
               <p>
-                Zacznij od jednego lead magnetu i prostej sekwencji powitalnej. Rozbudowuj system stopniowo, analizując wyniki. Z czasem email marketing stanie się jednym z najważniejszych kanałów pozyskiwania i utrzymywania klientów. Połącz go z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link> i <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniem SEO</Link> dla maksymalnych efektów.
+                Zacznij od jednego lead magnetu i prostej sekwencji powitalnej. Rozbudowuj system stopniowo, analizując wyniki. Z czasem email marketing stanie się jednym z najważniejszych kanałów pozyskiwania i utrzymywania klientów. Połącz go z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link> i <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowaniem SEO</Link> dla maksymalnych efektów.
               </p>
 
               {/* FAQ Section */}
@@ -445,7 +445,7 @@ const BlogEmailMarketing = () => {
                     Bezpłatna konsultacja
                   </Link>
                   <Link 
-                    to="/content-marketing" 
+                    to="/content-marketing/strategia" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-border rounded-full font-medium hover:bg-card transition-colors"
                   >
                     Zobacz ofertę content marketingu

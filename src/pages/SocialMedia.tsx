@@ -220,7 +220,7 @@ const SocialMedia = () => {
   ];
 
   const cityLinks = [
-    { name: "Poznań", href: "/social-media-poznan" },
+    { name: "Poznań", href: "/social-media/poznan" },
     { name: "Warszawa", href: "/social-media-warszawa" },
     { name: "Kraków", href: "/social-media-krakow" },
     { name: "Wrocław", href: "/social-media-wroclaw" },
@@ -800,7 +800,7 @@ const SocialMedia = () => {
             <FadeInView delay={0.2}>
               <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
                 {cityLinks.map((city, index) => (
-                  city.href === "/social-media-poznan" ? (
+                  city.href === "/social-media/poznan" ? (
                     <Link
                       key={index}
                       to={city.href}

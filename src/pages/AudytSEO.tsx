@@ -536,7 +536,7 @@ export default function AudytSEO() {
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Button>
                     </Link>
-                    <Link to="/pozycjonowanie">
+                    <Link to="/seo/pozycjonowanie">
                       <Button variant="outline" size="lg">
                         Zobacz ofertę SEO
                       </Button>

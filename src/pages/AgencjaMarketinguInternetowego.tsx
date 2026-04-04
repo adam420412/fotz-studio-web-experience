@@ -515,7 +515,7 @@ export default function AgencjaMarketinguInternetowego() {
 
             <motion.div variants={fadeIn} className="mt-12 text-center">
               <Button asChild variant="outline" size="lg" className="border-foreground/20 hover:bg-foreground/5">
-                <Link to="/social-media-poznan">
+                <Link to="/social-media/poznan">
                   Poznaj nasze usługi social media
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
@@ -597,13 +597,13 @@ export default function AgencjaMarketinguInternetowego() {
 
             <motion.div variants={fadeIn} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { title: "Google Ads", href: "/google-ads", icon: Target },
-                { title: "Facebook Ads", href: "/facebook-ads", icon: Facebook },
-                { title: "Social Media", href: "/social-media", icon: Share2 },
-                { title: "Pozycjonowanie SEO", href: "/pozycjonowanie", icon: TrendingUp },
-                { title: "Strony Internetowe", href: "/strony-internetowe", icon: Globe },
-                { title: "Produkcja Wideo", href: "/produkcja-filmow-poznan", icon: Video },
-                { title: "Identyfikacja Wizualna", href: "/identyfikacja-wizualna", icon: Palette },
+                { title: "Google Ads", href: "/performance-marketing/google-ads", icon: Target },
+                { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", icon: Facebook },
+                { title: "Social Media", href: "/social-media/obsluga", icon: Share2 },
+                { title: "Pozycjonowanie SEO", href: "/seo/pozycjonowanie", icon: TrendingUp },
+                { title: "Strony Internetowe", href: "/uslugi/strony-internetowe", icon: Globe },
+                { title: "Produkcja Wideo", href: "/uslugi/produkcja-filmow", icon: Video },
+                { title: "Identyfikacja Wizualna", href: "/uslugi/branding", icon: Palette },
                 { title: "Kompleksowa Obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Users },
               ].map((service, index) => (
                 <Link

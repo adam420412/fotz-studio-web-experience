@@ -186,7 +186,7 @@ const StronyInternetoweLublin = () => {
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
                 <strong>Posiadanie profesjonalnej strony www to podstawa sukcesu każdego biznesu.</strong> Niezależnie od tego, 
                 czy prowadzisz małą firmę w Lublinie, czy dużą korporację, Twoja strona internetowa jest wizytówką Twojej działalności w sieci. 
-                Zajmujemy się <Link to="/strony-internetowe" className="text-primary hover:underline">tworzeniem stron www</Link>, które 
+                Zajmujemy się <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzeniem stron www</Link>, które 
                 nie tylko wyglądają estetycznie, ale przede wszystkim są funkcjonalne i skuteczne w pozyskiwaniu klientów.
               </p>
 
@@ -254,7 +254,7 @@ const StronyInternetoweLublin = () => {
                   <p>
                     Nasze profesjonalne tworzenie stron internetowych to gwarancja indywidualnego podejścia do klienta. 
                     Zapewniamy stały kontakt i wsparcie na każdym etapie projektu, od koncepcji po wdrożenie i późniejszą optymalizację. 
-                    Rozumiemy, że <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> jest 
+                    Rozumiemy, że <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> jest 
                     kluczowe dla sukcesu w internecie, dlatego oferujemy kompleksowe usługi SEO.
                   </p>
                 </div>
@@ -273,7 +273,7 @@ const StronyInternetoweLublin = () => {
                   Kompleksowe usługi tworzenia stron w Lublinie
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-                  Od projektu graficznego przez wdrożenie po <Link to="/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> - 
+                  Od projektu graficznego przez wdrożenie po <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron</Link> - 
                   wszystko w jednym miejscu.
                 </p>
               </div>
@@ -373,7 +373,7 @@ const StronyInternetoweLublin = () => {
                 <div className="prose prose-invert max-w-none">
                   <h2>Pozycjonowanie stron internetowych</h2>
                   <p>
-                    Oferujemy usługi <Link to="/pozycjonowanie" className="text-primary hover:underline">optymalizacji SEO</Link>, 
+                    Oferujemy usługi <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">optymalizacji SEO</Link>, 
                     aby poprawić widoczność strony w wyszukiwarkach internetowych, co jest kluczowe dla sukcesu Twojego biznesu online. 
                     <strong>Pozycjonowanie stron internetowych to proces, który ma na celu poprawę widoczności Twojej strony w wynikach wyszukiwania Google.</strong> 
                     Skuteczne pozycjonowanie stron www przekłada się na zwiększenie ruchu na stronie, co z kolei prowadzi do wzrostu liczby klientów i sprzedaży.

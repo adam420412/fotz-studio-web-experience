@@ -84,10 +84,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Fotograf Poznań", href: "/fotograf-poznan", description: "Profesjonalna fotografia kulinarna" },
-  { title: "Social Media", href: "/social-media", description: "Obsługa social media restauracji" },
-  { title: "Google Maps", href: "/pozycjonowanie-google-maps", description: "Widoczność lokalna" },
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Strony z menu i rezerwacją" },
+  { title: "Fotograf Poznań", href: "/uslugi/fotografia", description: "Profesjonalna fotografia kulinarna" },
+  { title: "Social Media", href: "/social-media/obsluga", description: "Obsługa social media restauracji" },
+  { title: "Google Maps", href: "/seo/google-maps", description: "Widoczność lokalna" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Strony z menu i rezerwacją" },
 ];
 
 const MarketingGastronomia = () => {

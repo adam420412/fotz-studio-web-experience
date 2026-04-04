@@ -126,7 +126,7 @@ export default function BlogInfluencerMarketing() {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               
               <p className="lead">
-                Influencer marketing w Polsce to już dojrzały rynek wart ponad 500 milionów złotych rocznie. Współpraca z twórcami internetowymi może być niezwykle skuteczna, ale wymaga strategicznego podejścia i znajomości specyfiki polskiego rynku. Kluczowe jest odpowiednie <Link to="/social-media" className="text-primary hover:underline">zarządzanie social media</Link> oraz integracja z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>. Szczególnie skuteczne są kampanie na <Link to="/instagram-ads" className="text-primary hover:underline">Instagramie</Link> i <Link to="/tiktok-ads" className="text-primary hover:underline">TikToku</Link>.
+                Influencer marketing w Polsce to już dojrzały rynek wart ponad 500 milionów złotych rocznie. Współpraca z twórcami internetowymi może być niezwykle skuteczna, ale wymaga strategicznego podejścia i znajomości specyfiki polskiego rynku. Kluczowe jest odpowiednie <Link to="/social-media/obsluga" className="text-primary hover:underline">zarządzanie social media</Link> oraz integracja z <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampaniami reklamowymi</Link>. Szczególnie skuteczne są kampanie na <Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">Instagramie</Link> i <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">TikToku</Link>.
               </p>
 
               <div className="bg-card rounded-2xl p-8 my-8">

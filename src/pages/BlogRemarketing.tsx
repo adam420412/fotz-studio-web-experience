@@ -125,7 +125,7 @@ export default function BlogRemarketing() {
               <p>
                 Statystyki są bezlitosne: <strong>97% użytkowników opuszcza stronę bez zakupu</strong> podczas pierwszej wizyty. 
                 Remarketing pozwala "podążać" za tymi użytkownikami i przypominać im o Twojej ofercie, znacząco 
-                zwiększając szanse na konwersję. Najlepiej działa w połączeniu z <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
+                zwiększając szanse na konwersję. Najlepiej działa w połączeniu z <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link>.
               </p>
 
               <div className="bg-primary/10 border border-primary/20 rounded-xl p-6 my-8">

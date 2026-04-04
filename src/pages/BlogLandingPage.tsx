@@ -79,7 +79,7 @@ const BlogLandingPage = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose">
               <p>
-                Landing page (strona lądowania) to strona internetowa zaprojektowana z jednym konkretnym celem – <strong>skłonienie odwiedzającego do podjęcia określonej akcji</strong>. Może to być zakup, zapis na newsletter, pobranie e-booka czy umówienie się na konsultację. Skuteczny landing page wymaga zarówno dobrego <Link to="/strony-internetowe" className="text-primary hover:underline">projektu strony internetowej</Link>, jak i <Link to="/pozycjonowanie" className="text-primary hover:underline">optymalizacji SEO</Link>.
+                Landing page (strona lądowania) to strona internetowa zaprojektowana z jednym konkretnym celem – <strong>skłonienie odwiedzającego do podjęcia określonej akcji</strong>. Może to być zakup, zapis na newsletter, pobranie e-booka czy umówienie się na konsultację. Skuteczny landing page wymaga zarówno dobrego <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">projektu strony internetowej</Link>, jak i <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">optymalizacji SEO</Link>.
               </p>
 
               {/* Key stats */}
@@ -164,7 +164,7 @@ const BlogLandingPage = () => {
               <h2>2. Social Proof – buduj zaufanie</h2>
 
               <p>
-                Ludzie ufają opinii innych. <strong>92% konsumentów czyta opinie przed zakupem.</strong> Oto elementy social proof, które warto wykorzystać w połączeniu z <Link to="/content-marketing" className="text-primary hover:underline">content marketingiem</Link>:
+                Ludzie ufają opinii innych. <strong>92% konsumentów czyta opinie przed zakupem.</strong> Oto elementy social proof, które warto wykorzystać w połączeniu z <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketingiem</Link>:
               </p>
 
               <ul>
@@ -395,7 +395,7 @@ const BlogLandingPage = () => {
                     Bezpłatna konsultacja
                   </Link>
                   <Link 
-                    to="/strony-internetowe" 
+                    to="/uslugi/strony-internetowe" 
                     className="inline-flex items-center justify-center px-6 py-3 border border-border rounded-full font-medium hover:bg-card transition-colors"
                   >
                     Zobacz ofertę stron www

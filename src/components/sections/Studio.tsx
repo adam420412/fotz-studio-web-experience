@@ -200,7 +200,7 @@ export function Studio() {
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link to="/studio-podcastowe">Zobacz studio</Link>
+                <Link to="/uslugi/studio-podcastowe">Zobacz studio</Link>
               </Button>
             </motion.div>
           </motion.div>

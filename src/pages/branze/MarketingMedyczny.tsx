@@ -87,10 +87,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "Strony internetowe", href: "/strony-internetowe", description: "Profesjonalne strony dla placówek medycznych" },
-  { title: "Pozycjonowanie Google Maps", href: "/pozycjonowanie-google-maps", description: "Lokalna widoczność gabinetu" },
-  { title: "Social Media", href: "/social-media", description: "Budowanie społeczności pacjentów" },
-  { title: "Google Ads", href: "/google-ads", description: "Kampanie na frazy medyczne" },
+  { title: "Strony internetowe", href: "/uslugi/strony-internetowe", description: "Profesjonalne strony dla placówek medycznych" },
+  { title: "Pozycjonowanie Google Maps", href: "/seo/google-maps", description: "Lokalna widoczność gabinetu" },
+  { title: "Social Media", href: "/social-media/obsluga", description: "Budowanie społeczności pacjentów" },
+  { title: "Google Ads", href: "/performance-marketing/google-ads", description: "Kampanie na frazy medyczne" },
 ];
 
 const MarketingMedyczny = () => {

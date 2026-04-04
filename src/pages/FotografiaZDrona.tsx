@@ -550,8 +550,8 @@ export default function FotografiaZDrona() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Produkcja filmów", desc: "Profesjonalne filmy promocyjne z ujęciami z drona", href: "/produkcja-filmow-poznan", icon: Film },
-              { title: "Fotografia eventowa", desc: "Kompleksowa dokumentacja wydarzeń", href: "/fotograf-poznan", icon: Camera },
+              { title: "Produkcja filmów", desc: "Profesjonalne filmy promocyjne z ujęciami z drona", href: "/uslugi/produkcja-filmow", icon: Film },
+              { title: "Fotografia eventowa", desc: "Kompleksowa dokumentacja wydarzeń", href: "/uslugi/fotografia", icon: Camera },
               { title: "Wizualizacje 3D", desc: "Połączenie zdjęć z drona z renderami 3D", href: "/wizualizacje-3d", icon: Building2 },
               { title: "Marketing nieruchomości", desc: "Pełna obsługa marketingowa deweloperów", href: "/dla-kogo/nieruchomosci", icon: MapPin },
             ].map((service, index) => (

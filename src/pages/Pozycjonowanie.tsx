@@ -144,15 +144,15 @@ const Pozycjonowanie = () => {
     },
     {
       question: "Ile trwa pozycjonowanie, zanim zobaczę efekty?",
-      answer: <>Pierwsze efekty pozycjonowania widoczne są zazwyczaj po 3-6 miesiącach. Czas zależy od konkurencyjności branży, stanu strony i intensywności działań. Pełne efekty osiągane są po 12-18 miesiącach systematycznej pracy. Na szybkie efekty warto połączyć SEO z kampaniami <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link>.</>
+      answer: <>Pierwsze efekty pozycjonowania widoczne są zazwyczaj po 3-6 miesiącach. Czas zależy od konkurencyjności branży, stanu strony i intensywności działań. Pełne efekty osiągane są po 12-18 miesiącach systematycznej pracy. Na szybkie efekty warto połączyć SEO z kampaniami <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link>.</>
     },
     {
       question: "Jak agencja SEO wpływa na pozycjonowanie stron?",
-      answer: <>Agencja SEO przeprowadza audyt, tworzy strategię, optymalizuje stronę technicznie i treściowo, buduje linki oraz monitoruje wyniki. Dzięki doświadczeniu można skuteczniej i szybciej osiągnąć wysokie pozycje w Google. Oferujemy również <Link to="/pozycjonowanie-google-maps" className="text-primary hover:underline">pozycjonowanie w Google Maps</Link> dla firm lokalnych.</>
+      answer: <>Agencja SEO przeprowadza audyt, tworzy strategię, optymalizuje stronę technicznie i treściowo, buduje linki oraz monitoruje wyniki. Dzięki doświadczeniu można skuteczniej i szybciej osiągnąć wysokie pozycje w Google. Oferujemy również <Link to="/seo/google-maps" className="text-primary hover:underline">pozycjonowanie w Google Maps</Link> dla firm lokalnych.</>
     },
     {
       question: "Jakie działania SEO wpływają na pozycjonowanie strony?",
-      answer: <>Kluczowe działania to: optymalizacja techniczna (szybkość, mobile, struktura), optymalizacja treści (słowa kluczowe, nagłówki, meta tagi), budowanie linków zwrotnych oraz analiza i dostosowywanie strategii. Ważna jest również jakość <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
+      answer: <>Kluczowe działania to: optymalizacja techniczna (szybkość, mobile, struktura), optymalizacja treści (słowa kluczowe, nagłówki, meta tagi), budowanie linków zwrotnych oraz analiza i dostosowywanie strategii. Ważna jest również jakość <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
     },
     {
       question: "Czy pozycjonowanie stron w Google jest kosztowne?",
@@ -160,11 +160,11 @@ const Pozycjonowanie = () => {
     },
     {
       question: "Czym różni się SEO od Google Ads?",
-      answer: <>SEO to pozycjonowanie organiczne – efekty są długoterminowe, ale wymagają czasu. <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> to płatne reklamy – efekty natychmiastowe, ale kończą się gdy przestajesz płacić. Najskuteczniejsza strategia łączy oba podejścia w ramach <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">kompleksowej obsługi marketingowej</Link>.</>
+      answer: <>SEO to pozycjonowanie organiczne – efekty są długoterminowe, ale wymagają czasu. <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> to płatne reklamy – efekty natychmiastowe, ale kończą się gdy przestajesz płacić. Najskuteczniejsza strategia łączy oba podejścia w ramach <Link to="/kompleksowa-obsluga-marketingowa" className="text-primary hover:underline">kompleksowej obsługi marketingowej</Link>.</>
     },
     {
       question: "Jakie narzędzia Google pomagają w pozycjonowaniu?",
-      answer: <>Google Search Console pozwala monitorować widoczność i błędy indeksowania. Google Analytics dostarcza danych o ruchu. Google PageSpeed Insights mierzy szybkość strony. Te narzędzia są podstawą skutecznego SEO i optymalizacji <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
+      answer: <>Google Search Console pozwala monitorować widoczność i błędy indeksowania. Google Analytics dostarcza danych o ruchu. Google PageSpeed Insights mierzy szybkość strony. Te narzędzia są podstawą skutecznego SEO i optymalizacji <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link>.</>
     },
     {
       question: "Czy mogę pozycjonować stronę samodzielnie?",
@@ -226,7 +226,7 @@ const Pozycjonowanie = () => {
   ];
 
   const cityLinks = [
-    { name: "Poznań", href: "/pozycjonowanie-stron-poznan" },
+    { name: "Poznań", href: "/seo/pozycjonowanie-poznan" },
     { name: "Warszawa", href: "/pozycjonowanie-warszawa" },
     { name: "Kraków", href: "/pozycjonowanie-krakow" },
     { name: "Wrocław", href: "/pozycjonowanie-wroclaw" },
@@ -753,7 +753,7 @@ const Pozycjonowanie = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 {cityLinks.map((city, index) => (
                   <FadeInView key={index} delay={index * 0.05}>
-                    {city.href === "/pozycjonowanie-stron-poznan" ? (
+                    {city.href === "/seo/pozycjonowanie-poznan" ? (
                       <Link 
                         to={city.href}
                         className="flex items-center justify-center gap-2 px-4 py-4 bg-primary/10 border border-primary/30 rounded-xl text-sm font-medium hover:bg-primary/20 transition-all group"
@@ -895,7 +895,7 @@ const Pozycjonowanie = () => {
                   </p>
                   <div className="grid md:grid-cols-3 gap-6">
                     <Link 
-                      to="/strony-internetowe" 
+                      to="/uslugi/strony-internetowe" 
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <Globe className="w-10 h-10 text-primary mb-4" />
@@ -910,7 +910,7 @@ const Pozycjonowanie = () => {
                       </span>
                     </Link>
                     <Link 
-                      to="/ecommerce-tworzenie-sklepu" 
+                      to="/uslugi/strony-internetowe/ecommerce" 
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <Target className="w-10 h-10 text-primary mb-4" />
@@ -925,7 +925,7 @@ const Pozycjonowanie = () => {
                       </span>
                     </Link>
                     <Link 
-                      to="/google-ads" 
+                      to="/performance-marketing/google-ads" 
                       className="group p-6 rounded-xl bg-background border border-border hover:border-primary/50 transition-all duration-300"
                     >
                       <TrendingUp className="w-10 h-10 text-primary mb-4" />

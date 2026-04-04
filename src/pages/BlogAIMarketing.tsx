@@ -103,7 +103,7 @@ const BlogAIMarketing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto prose prose-invert prose-lg">
               <p>
-                Rok 2025 przynosi przełom w dostępności narzędzi AI dla małych i średnich przedsiębiorstw. To, co jeszcze niedawno było zarezerwowane dla korporacji z ogromnymi budżetami, dziś jest w zasięgu każdej firmy. AI rewolucjonizuje <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link>, <Link to="/social-media" className="text-primary hover:underline">zarządzanie social media</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link>. W tym artykule przedstawiamy praktyczne zastosowania sztucznej inteligencji, które możesz wdrożyć już dziś.
+                Rok 2025 przynosi przełom w dostępności narzędzi AI dla małych i średnich przedsiębiorstw. To, co jeszcze niedawno było zarezerwowane dla korporacji z ogromnymi budżetami, dziś jest w zasięgu każdej firmy. AI rewolucjonizuje <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link>, <Link to="/social-media/obsluga" className="text-primary hover:underline">zarządzanie social media</Link> oraz <Link to="/kampanie-reklamowe" className="text-primary hover:underline">kampanie reklamowe</Link>. W tym artykule przedstawiamy praktyczne zastosowania sztucznej inteligencji, które możesz wdrożyć już dziś.
               </p>
 
               {/* Key benefits section */}
@@ -181,7 +181,7 @@ const BlogAIMarketing = () => {
 
               <h3>Dynamiczne treści na stronie</h3>
               <p>
-                AI może dostosowywać treść <Link to="/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link> do każdego odwiedzającego. Nowy użytkownik zobaczy inne komunikaty niż powracający klient, a osoba z Poznania inne niż ta z Warszawy.
+                AI może dostosowywać treść <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowej</Link> do każdego odwiedzającego. Nowy użytkownik zobaczy inne komunikaty niż powracający klient, a osoba z Poznania inne niż ta z Warszawy.
               </p>
 
               <h2>3. Chatboty i obsługa klienta</h2>
@@ -228,7 +228,7 @@ const BlogAIMarketing = () => {
 
               <h3>Optymalizacja kampanii reklamowych</h3>
               <p>
-                <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/facebook-ads" className="text-primary hover:underline">Meta Ads</Link> intensywnie wykorzystują AI do optymalizacji kampanii. Algorytmy automatycznie dostosowują stawki, targetowanie i kreacje, aby maksymalizować ROI.
+                <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link> i <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Meta Ads</Link> intensywnie wykorzystują AI do optymalizacji kampanii. Algorytmy automatycznie dostosowują stawki, targetowanie i kreacje, aby maksymalizować ROI.
               </p>
 
               <h2>5. Generowanie grafik i wideo</h2>
@@ -286,7 +286,7 @@ const BlogAIMarketing = () => {
               <ul>
                 <li><strong>Google Analytics 4</strong> – darmowe, z wbudowanym AI</li>
                 <li><strong>Hotjar AI</strong> – analiza zachowań użytkowników</li>
-                <li><strong>SEMrush</strong> – analiza <Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> i konkurencji</li>
+                <li><strong>SEMrush</strong> – analiza <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> i konkurencji</li>
               </ul>
 
               <h2>7. Wyzwania i pułapki</h2>

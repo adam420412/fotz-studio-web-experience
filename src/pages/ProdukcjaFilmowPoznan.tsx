@@ -26,7 +26,7 @@ const videos = [
 ];
 
 const services = [
-  { icon: Clapperboard, title: "Spoty reklamowe", desc: "Krótkie, dynamiczne materiały idealne do kampanii w social mediach i TV.", link: "/spoty-reklamowe" },
+  { icon: Clapperboard, title: "Spoty reklamowe", desc: "Krótkie, dynamiczne materiały idealne do kampanii w social mediach i TV.", link: "/uslugi/produkcja-video" },
   { icon: Film, title: "Filmy korporacyjne", desc: "Prezentują firmę, jej wartości, misję oraz kulturę organizacyjną.", link: "/kontakt" },
   { icon: Video, title: "Filmy produktowe", desc: "Skupiają się na prezentacji produktów lub usług, podkreślając ich zalety.", link: "/kontakt" },
   { icon: Camera, title: "Filmy wizerunkowe", desc: "Budują i promują markę, tworzą pozytywny obraz w oczach klientów.", link: "/kontakt" },
@@ -186,7 +186,7 @@ export default function ProdukcjaFilmowPoznan() {
                 <div className="prose prose-lg prose-invert max-w-none">
                   <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                     W dobie dynamicznie rozwijającego się rynku, skuteczna <strong>reklama wideo</strong> staje się nie tylko sposobem na promocję produktów, ale również na budowanie wizerunku marki. 
-                    W tym artykule przyjrzymy się etapom produkcji filmów reklamowych, skutecznym praktykom w <Link to="/social-media" className="text-primary hover:underline">video marketingu</Link>, a także aktualnym trendom w tej dziedzinie.
+                    W tym artykule przyjrzymy się etapom produkcji filmów reklamowych, skutecznym praktykom w <Link to="/social-media/obsluga" className="text-primary hover:underline">video marketingu</Link>, a także aktualnym trendom w tej dziedzinie.
                   </p>
                 </div>
               </FadeInView>
@@ -259,7 +259,7 @@ export default function ProdukcjaFilmowPoznan() {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">Jak długo trwa produkcja?</h3>
                   <p className="text-muted-foreground">
-                    W przypadku prostych <Link to="/spoty-reklamowe" className="text-primary hover:underline">spotów reklamowych</Link>, produkcja może zająć od kilku dni do tygodnia. 
+                    W przypadku prostych <Link to="/uslugi/produkcja-video" className="text-primary hover:underline">spotów reklamowych</Link>, produkcja może zająć od kilku dni do tygodnia. 
                     Bardziej złożone produkcje mogą trwać nawet kilka miesięcy.
                   </p>
                 </div>
@@ -328,7 +328,7 @@ export default function ProdukcjaFilmowPoznan() {
                     Ważne jest, aby film był krótki, treściwy i angażował widzów poprzez storytelling.
                   </p>
                   <p className="text-muted-foreground">
-                    Wykorzystanie <Link to="/social-media-poznan" className="text-primary hover:underline">mediów społecznościowych</Link> do promocji filmów stało się nieodzownym elementem strategii marketingowych.
+                    Wykorzystanie <Link to="/social-media/poznan" className="text-primary hover:underline">mediów społecznościowych</Link> do promocji filmów stało się nieodzownym elementem strategii marketingowych.
                   </p>
                 </div>
               </FadeInView>
@@ -350,7 +350,7 @@ export default function ProdukcjaFilmowPoznan() {
                   <h3 className="text-xl font-semibold mb-4">Styl dopasowany do kampanii</h3>
                   <p className="text-muted-foreground">
                     W zależności od celu kampanii, film może przyjąć formę humorystyczną, emocjonalną lub informacyjną. 
-                    Dobrze zaprojektowany film wizerunkowy może stać się ważnym elementem <Link to="/identyfikacja-wizualna" className="text-primary hover:underline">budowania tożsamości marki</Link>.
+                    Dobrze zaprojektowany film wizerunkowy może stać się ważnym elementem <Link to="/uslugi/branding" className="text-primary hover:underline">budowania tożsamości marki</Link>.
                   </p>
                 </div>
               </FadeInView>
@@ -603,14 +603,14 @@ export default function ProdukcjaFilmowPoznan() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
               {[
-                { name: "Spoty reklamowe", href: "/spoty-reklamowe" },
-                { name: "Social Media", href: "/social-media-poznan" },
+                { name: "Spoty reklamowe", href: "/uslugi/produkcja-video" },
+                { name: "Social Media", href: "/social-media/poznan" },
                 { name: "Wizualizacje 3D", href: "/wizualizacje-3d" },
-                { name: "Fotografia", href: "/fotograf-poznan" },
-                { name: "Strony internetowe", href: "/strony-internetowe-poznan" },
-                { name: "Identyfikacja wizualna", href: "/identyfikacja-wizualna" },
-                { name: "Google Ads", href: "/google-ads" },
-                { name: "Facebook Ads", href: "/facebook-ads" },
+                { name: "Fotografia", href: "/uslugi/fotografia" },
+                { name: "Strony internetowe", href: "/uslugi/strony-internetowe/poznan" },
+                { name: "Identyfikacja wizualna", href: "/uslugi/branding" },
+                { name: "Google Ads", href: "/performance-marketing/google-ads" },
+                { name: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
               ].map((service, index) => (
                 <FadeInView key={index} delay={index * 0.05}>
                   <Link 

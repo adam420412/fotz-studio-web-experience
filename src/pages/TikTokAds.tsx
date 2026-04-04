@@ -105,23 +105,23 @@ const TikTokAds = () => {
       question: "Czy TikTok Ads sprawdzi się dla mojej firmy?",
       answer: "TikTok najlepiej sprawdza się dla marek B2C, e-commerce, fashion, beauty, FMCG, rozrywki i edukacji. Jeśli Twoja grupa docelowa to osoby 16-40 lat i jesteś gotowy na kreatywne, autentyczne treści - TikTok będzie świetnym wyborem. Dla B2B i starszych grup demograficznych lepiej sprawdzi się LinkedIn Ads lub Google Ads.",
       links: [
-        { text: "LinkedIn Ads", href: "/linkedin-ads" },
-        { text: "Google Ads", href: "/google-ads" }
+        { text: "LinkedIn Ads", href: "/performance-marketing/linkedin-ads" },
+        { text: "Google Ads", href: "/performance-marketing/google-ads" }
       ]
     },
     {
       question: "Jaki budżet potrzebuję na TikTok Ads?",
       answer: "Minimalny budżet dzienny to około 50 zł, ale rekomendujemy start od 100-200 zł dziennie (3000-6000 zł miesięcznie) dla zebrania wystarczających danych. TikTok często ma niższy CPM niż Facebook/Instagram, więc za ten sam budżet możesz dotrzeć do większej liczby osób.",
       links: [
-        { text: "Facebook Ads", href: "/facebook-ads" },
-        { text: "Instagram Ads", href: "/instagram-ads" }
+        { text: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+        { text: "Instagram Ads", href: "/performance-marketing/instagram-ads" }
       ]
     },
     {
       question: "Jak powinny wyglądać reklamy na TikToku?",
       answer: "Reklamy na TikToku muszą wyglądać natywnie - jak zwykłe treści użytkowników. Unikamy przesadnie wypolerowanych spotów reklamowych. Najlepiej działają: pionowe wideo 9:16, pierwsze 3 sekundy przyciągające uwagę, autentyczny ton, trending sounds, i jasne CTA. Pomagamy tworzyć kreacje dopasowane do platformy.",
       links: [
-        { text: "Spoty reklamowe", href: "/spoty-reklamowe" }
+        { text: "Spoty reklamowe", href: "/uslugi/produkcja-video" }
       ]
     },
     {
@@ -136,15 +136,15 @@ const TikTokAds = () => {
       question: "Jak długo trwa produkcja reklamy TikTok?",
       answer: "Prosta kreacja In-Feed może być gotowa w 2-3 dni. Bardziej złożone produkcje z nagraniem w studio zajmują 1-2 tygodnie. Dla Branded Hashtag Challenge potrzeba 3-4 tygodnie przygotowań. Rekomendujemy tworzenie wielu wariantów do testów A/B.",
       links: [
-        { text: "Produkcja wideo", href: "/spoty-reklamowe" }
+        { text: "Produkcja wideo", href: "/uslugi/produkcja-video" }
       ]
     },
     {
       question: "Czy warto łączyć TikTok Ads z innymi platformami?",
       answer: "Zdecydowanie tak! TikTok świetnie buduje świadomość i generuje ruch. W połączeniu z remarketingiem na Facebook/Instagram i Google Ads tworzy kompletną ścieżkę konwersji. Oferujemy kompleksową obsługę kampanii reklamowych na wszystkich platformach.",
       links: [
-        { text: "Facebook Ads", href: "/facebook-ads" },
-        { text: "Google Ads", href: "/google-ads" },
+        { text: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
+        { text: "Google Ads", href: "/performance-marketing/google-ads" },
         { text: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" }
       ]
     },
@@ -152,7 +152,7 @@ const TikTokAds = () => {
       question: "Co to są Spark Ads i dlaczego są skuteczne?",
       answer: "Spark Ads to format pozwalający promować organiczne treści (Twoje lub influencerów) jako reklamy płatne. Zachowują wszystkie interakcje (lajki, komentarze) i wyglądają bardziej autentycznie. Często mają wyższy CTR i niższy koszt niż tradycyjne reklamy.",
       links: [
-        { text: "Social Media", href: "/social-media-poznan" }
+        { text: "Social Media", href: "/social-media/poznan" }
       ]
     },
   ];
@@ -212,7 +212,7 @@ const TikTokAds = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <Link to="/spoty-reklamowe">Zobacz nasze wideo</Link>
+                <Link to="/uslugi/produkcja-video">Zobacz nasze wideo</Link>
               </Button>
             </div>
           </motion.div>

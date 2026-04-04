@@ -118,7 +118,7 @@ export default function BlogB2BvsB2C() {
               </h2>
               <p>
                 <strong>B2B (Business-to-Business)</strong> to model, w którym sprzedajesz produkty lub usługi 
-                innym firmom. <strong>B2C (Business-to-Consumer)</strong> to sprzedaż bezpośrednio do konsumentów końcowych. Niezależnie od modelu, skuteczny <Link to="/content-marketing" className="text-primary hover:underline">content marketing</Link> oraz odpowiednia <Link to="/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> są fundamentem sukcesu.
+                innym firmom. <strong>B2C (Business-to-Consumer)</strong> to sprzedaż bezpośrednio do konsumentów końcowych. Niezależnie od modelu, skuteczny <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link> oraz odpowiednia <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> są fundamentem sukcesu.
               </p>
               <p>
                 Ta pozornie prosta różnica przekłada się na fundamentalnie inne podejście do marketingu, 
@@ -212,20 +212,20 @@ export default function BlogB2BvsB2C() {
 
               <h3>Najskuteczniejsze kanały B2B</h3>
               <ol>
-                <li><strong><Link to="/linkedin-ads" className="text-primary hover:underline">LinkedIn</Link></strong> - #1 dla B2B, 80% leadów B2B z social media</li>
-                <li><strong><Link to="/content-marketing" className="text-primary hover:underline">Content marketing</Link></strong> - whitepapers, ebooki, webinary</li>
+                <li><strong><Link to="/performance-marketing/linkedin-ads" className="text-primary hover:underline">LinkedIn</Link></strong> - #1 dla B2B, 80% leadów B2B z social media</li>
+                <li><strong><Link to="/content-marketing/strategia" className="text-primary hover:underline">Content marketing</Link></strong> - whitepapers, ebooki, webinary</li>
                 <li><strong>Email marketing</strong> - nurturing, <Link to="/blog/marketing-automation" className="text-primary hover:underline">automatyzacja</Link></li>
-                <li><strong><Link to="/pozycjonowanie" className="text-primary hover:underline">SEO</Link> + <Link to="/google-ads" className="text-primary hover:underline">Google Ads</Link></strong> - intencyjne wyszukiwania</li>
+                <li><strong><Link to="/seo/pozycjonowanie" className="text-primary hover:underline">SEO</Link> + <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">Google Ads</Link></strong> - intencyjne wyszukiwania</li>
                 <li><strong>Targi i wydarzenia</strong> - networking, demo</li>
               </ol>
 
               <h3>Najskuteczniejsze kanały B2C</h3>
               <ol>
-                <li><strong><Link to="/instagram-ads" className="text-primary hover:underline">Instagram</Link> + <Link to="/tiktok-ads" className="text-primary hover:underline">TikTok</Link></strong> - visual, lifestyle, influencerzy</li>
-                <li><strong><Link to="/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link></strong> - precyzyjne targetowanie</li>
-                <li><strong>Google Shopping</strong> - dla <Link to="/ecommerce-tworzenie-sklepu" className="text-primary hover:underline">e-commerce</Link></li>
-                <li><strong>Email marketing</strong> - promocje, <Link to="/blog/remarketing-poradnik" className="text-primary hover:underline">porzucone koszyki</Link></li>
-                <li><strong><Link to="/blog/influencer-marketing-polska" className="text-primary hover:underline">Influencer marketing</Link></strong> - social proof</li>
+                <li><strong><Link to="/performance-marketing/instagram-ads" className="text-primary hover:underline">Instagram</Link> + <Link to="/performance-marketing/tiktok-ads" className="text-primary hover:underline">TikTok</Link></strong> - visual, lifestyle, influencerzy</li>
+                <li><strong><Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline">Facebook Ads</Link></strong> - precyzyjne targetowanie</li>
+                <li><strong>Google Shopping</strong> - dla <Link to="/uslugi/strony-internetowe/ecommerce" className="text-primary hover:underline">e-commerce</Link></li>
+                <li><strong>Email marketing</strong> - promocje, <Link to="/performance-marketing/remarketing" className="text-primary hover:underline">porzucone koszyki</Link></li>
+                <li><strong><Link to="/social-media/influencer" className="text-primary hover:underline">Influencer marketing</Link></strong> - social proof</li>
               </ol>
 
               <div className="bg-card border border-border rounded-xl p-6 my-8">

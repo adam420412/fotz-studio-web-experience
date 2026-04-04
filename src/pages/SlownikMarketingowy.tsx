@@ -27,12 +27,12 @@ const glossaryTerms: Term[] = [
   { term: "B2B (Business to Business)", definition: "Model biznesowy, w którym firma sprzedaje produkty lub usługi innym firmom, a nie konsumentom indywidualnym.", category: "Strategia" },
   { term: "B2C (Business to Consumer)", definition: "Model biznesowy, w którym firma sprzedaje bezpośrednio do konsumentów końcowych.", category: "Strategia" },
   { term: "Bounce Rate", definition: "Współczynnik odrzuceń - procent użytkowników, którzy opuścili stronę po obejrzeniu tylko jednej podstrony.", category: "Analityka" },
-  { term: "Branding", definition: "Proces budowania marki, obejmujący tworzenie tożsamości wizualnej, wartości i przekazu, który wyróżnia firmę na rynku.", category: "Branding", relatedLink: "/identyfikacja-wizualna", relatedLinkText: "Poznaj nasze usługi brandingowe" },
+  { term: "Branding", definition: "Proces budowania marki, obejmujący tworzenie tożsamości wizualnej, wartości i przekazu, który wyróżnia firmę na rynku.", category: "Branding", relatedLink: "/uslugi/branding", relatedLinkText: "Poznaj nasze usługi brandingowe" },
   
   // C
   { term: "Call to Action (CTA)", definition: "Wezwanie do działania - przycisk lub link zachęcający użytkownika do podjęcia konkretnej akcji, np. 'Kup teraz', 'Zapisz się'.", category: "Konwersja" },
   { term: "Click-Through Rate (CTR)", definition: "Współczynnik klikalności - stosunek liczby kliknięć do liczby wyświetleń reklamy lub linku.", category: "Reklama" },
-  { term: "Content Marketing", definition: "Strategia marketingowa polegająca na tworzeniu i dystrybucji wartościowych treści w celu przyciągnięcia i zaangażowania grupy docelowej.", category: "Content", relatedLink: "/content-marketing", relatedLinkText: "Zobacz ofertę content marketingu" },
+  { term: "Content Marketing", definition: "Strategia marketingowa polegająca na tworzeniu i dystrybucji wartościowych treści w celu przyciągnięcia i zaangażowania grupy docelowej.", category: "Content", relatedLink: "/content-marketing/strategia", relatedLinkText: "Zobacz ofertę content marketingu" },
   { term: "Conversion Rate", definition: "Współczynnik konwersji - procent użytkowników, którzy wykonali pożądaną akcję (zakup, zapis, kontakt) względem wszystkich odwiedzających.", category: "Konwersja" },
   { term: "CPC (Cost Per Click)", definition: "Koszt za kliknięcie - model rozliczenia reklam, w którym płacisz za każde kliknięcie w reklamę.", category: "Reklama" },
   { term: "CPM (Cost Per Mille)", definition: "Koszt za tysiąc wyświetleń - model rozliczenia reklam, w którym płacisz za każde 1000 wyświetleń reklamy.", category: "Reklama" },
@@ -42,18 +42,18 @@ const glossaryTerms: Term[] = [
   { term: "Domain Authority (DA)", definition: "Wskaźnik autorytetu domeny opracowany przez Moz, przewidujący jak dobrze strona będzie się pozycjonować w wynikach wyszukiwania.", category: "SEO" },
   
   // E
-  { term: "E-commerce", definition: "Handel elektroniczny - sprzedaż produktów lub usług przez internet za pomocą sklepu online.", category: "E-commerce", relatedLink: "/ecommerce-tworzenie-sklepu", relatedLinkText: "Tworzenie sklepów internetowych" },
+  { term: "E-commerce", definition: "Handel elektroniczny - sprzedaż produktów lub usług przez internet za pomocą sklepu online.", category: "E-commerce", relatedLink: "/uslugi/strony-internetowe/ecommerce", relatedLinkText: "Tworzenie sklepów internetowych" },
   { term: "Email Marketing", definition: "Forma marketingu bezpośredniego wykorzystująca pocztę elektroniczną do komunikacji z potencjalnymi i obecnymi klientami.", category: "Email" },
   { term: "Engagement Rate", definition: "Współczynnik zaangażowania - miara interakcji użytkowników z treściami (polubienia, komentarze, udostępnienia) względem zasięgu.", category: "Social Media" },
   
   // F
-  { term: "Facebook Ads", definition: "System reklamowy Meta pozwalający na tworzenie i zarządzanie reklamami na Facebooku i Instagramie.", category: "Reklama", relatedLink: "/facebook-ads", relatedLinkText: "Kampanie Facebook Ads" },
+  { term: "Facebook Ads", definition: "System reklamowy Meta pozwalający na tworzenie i zarządzanie reklamami na Facebooku i Instagramie.", category: "Reklama", relatedLink: "/performance-marketing/facebook-ads", relatedLinkText: "Kampanie Facebook Ads" },
   { term: "Funnel (Lejek sprzedażowy)", definition: "Model przedstawiający ścieżkę klienta od pierwszego kontaktu z marką do zakupu, podzielony na etapy: świadomość, zainteresowanie, decyzja, akcja.", category: "Strategia" },
   
   // G
-  { term: "Google Ads", definition: "Platforma reklamowa Google umożliwiająca wyświetlanie reklam w wynikach wyszukiwania, na YouTube i w sieci partnerskiej.", category: "Reklama", relatedLink: "/google-ads", relatedLinkText: "Kampanie Google Ads" },
+  { term: "Google Ads", definition: "Platforma reklamowa Google umożliwiająca wyświetlanie reklam w wynikach wyszukiwania, na YouTube i w sieci partnerskiej.", category: "Reklama", relatedLink: "/performance-marketing/google-ads", relatedLinkText: "Kampanie Google Ads" },
   { term: "Google Analytics", definition: "Bezpłatne narzędzie Google do analizy ruchu na stronie internetowej. Aktualna wersja to GA4.", category: "Analityka" },
-  { term: "Google My Business", definition: "Bezpłatne narzędzie Google pozwalające zarządzać widocznością firmy w Google Search i Maps.", category: "Lokalne SEO", relatedLink: "/pozycjonowanie-google-maps", relatedLinkText: "Pozycjonowanie w Google Maps" },
+  { term: "Google My Business", definition: "Bezpłatne narzędzie Google pozwalające zarządzać widocznością firmy w Google Search i Maps.", category: "Lokalne SEO", relatedLink: "/seo/google-maps", relatedLinkText: "Pozycjonowanie w Google Maps" },
   
   // H
   { term: "Hashtag", definition: "Słowo lub fraza poprzedzona znakiem #, używana w social mediach do kategoryzacji treści i zwiększenia ich zasięgu.", category: "Social Media" },
@@ -75,7 +75,7 @@ const glossaryTerms: Term[] = [
   
   // M
   { term: "Marketing Automation", definition: "Wykorzystanie oprogramowania do automatyzacji powtarzalnych zadań marketingowych, takich jak email marketing czy scoring leadów.", category: "Automatyzacja" },
-  { term: "Meta Ads", definition: "Platforma reklamowa Meta (dawniej Facebook Inc.) obejmująca reklamy na Facebooku, Instagramie i Messengerze.", category: "Reklama", relatedLink: "/facebook-instagram-ads", relatedLinkText: "Kampanie Meta Ads" },
+  { term: "Meta Ads", definition: "Platforma reklamowa Meta (dawniej Facebook Inc.) obejmująca reklamy na Facebooku, Instagramie i Messengerze.", category: "Reklama", relatedLink: "/performance-marketing/meta-ads", relatedLinkText: "Kampanie Meta Ads" },
   { term: "Meta Description", definition: "Krótki opis strony wyświetlany w wynikach wyszukiwania, wpływający na CTR organiczny.", category: "SEO" },
   
   // O
@@ -92,21 +92,21 @@ const glossaryTerms: Term[] = [
   { term: "ROI (Return on Investment)", definition: "Zwrot z inwestycji - procentowy wskaźnik pokazujący zysk w stosunku do poniesionych kosztów.", category: "Analityka", relatedLink: "/kalkulator-roi", relatedLinkText: "Oblicz swój ROI" },
   
   // S
-  { term: "SEO (Search Engine Optimization)", definition: "Optymalizacja dla wyszukiwarek - działania mające na celu poprawę widoczności strony w organicznych wynikach wyszukiwania.", category: "SEO", relatedLink: "/pozycjonowanie", relatedLinkText: "Usługi pozycjonowania SEO" },
+  { term: "SEO (Search Engine Optimization)", definition: "Optymalizacja dla wyszukiwarek - działania mające na celu poprawę widoczności strony w organicznych wynikach wyszukiwania.", category: "SEO", relatedLink: "/seo/pozycjonowanie", relatedLinkText: "Usługi pozycjonowania SEO" },
   { term: "SERP (Search Engine Results Page)", definition: "Strona wyników wyszukiwania - to, co widzisz po wpisaniu zapytania w Google.", category: "SEO" },
-  { term: "Social Media Marketing", definition: "Wykorzystanie platform społecznościowych do promocji marki, budowania relacji i generowania ruchu.", category: "Social Media", relatedLink: "/social-media", relatedLinkText: "Obsługa Social Media" },
+  { term: "Social Media Marketing", definition: "Wykorzystanie platform społecznościowych do promocji marki, budowania relacji i generowania ruchu.", category: "Social Media", relatedLink: "/social-media/obsluga", relatedLinkText: "Obsługa Social Media" },
   { term: "Social Proof", definition: "Dowód społeczny - wykorzystanie opinii, recenzji i rekomendacji do budowania zaufania do marki.", category: "Konwersja" },
   
   // T
   { term: "Target Audience", definition: "Grupa docelowa - konkretna grupa ludzi, do której kierujesz swoje działania marketingowe.", category: "Strategia" },
-  { term: "TikTok Ads", definition: "Platforma reklamowa TikTok umożliwiająca docieranie do młodszej grupy odbiorców poprzez krótkie formy wideo.", category: "Reklama", relatedLink: "/tiktok-ads", relatedLinkText: "Kampanie TikTok Ads" },
+  { term: "TikTok Ads", definition: "Platforma reklamowa TikTok umożliwiająca docieranie do młodszej grupy odbiorców poprzez krótkie formy wideo.", category: "Reklama", relatedLink: "/performance-marketing/tiktok-ads", relatedLinkText: "Kampanie TikTok Ads" },
   
   // U
   { term: "UGC (User-Generated Content)", definition: "Treści tworzone przez użytkowników - recenzje, zdjęcia, filmy publikowane przez klientów.", category: "Content" },
   { term: "UX (User Experience)", definition: "Doświadczenie użytkownika - ogół wrażeń i emocji towarzyszących korzystaniu ze strony lub aplikacji.", category: "Web Design" },
   
   // V
-  { term: "Video Marketing", definition: "Wykorzystanie materiałów wideo do promocji marki, produktów lub usług.", category: "Content", relatedLink: "/produkcja-filmow-poznan", relatedLinkText: "Produkcja filmów reklamowych" },
+  { term: "Video Marketing", definition: "Wykorzystanie materiałów wideo do promocji marki, produktów lub usług.", category: "Content", relatedLink: "/uslugi/produkcja-filmow", relatedLinkText: "Produkcja filmów reklamowych" },
   { term: "Viral Marketing", definition: "Strategia polegająca na tworzeniu treści, które użytkownicy chętnie udostępniają, osiągając organicznie duży zasięg.", category: "Social Media" },
   
   // W

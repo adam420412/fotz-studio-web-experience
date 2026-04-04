@@ -87,10 +87,10 @@ const faqItems = [
 ];
 
 const relatedServices = [
-  { title: "E-commerce", href: "/ecommerce-tworzenie-sklepu", description: "Tworzenie sklepów online" },
+  { title: "E-commerce", href: "/uslugi/strony-internetowe/ecommerce", description: "Tworzenie sklepów online" },
   { title: "Wizualizacje 3D", href: "/wizualizacje-3d", description: "Konfiguratory produktów" },
-  { title: "Google Ads", href: "/google-ads", description: "Kampanie Shopping" },
-  { title: "Facebook Ads", href: "/facebook-ads", description: "Dynamic Ads" },
+  { title: "Google Ads", href: "/performance-marketing/google-ads", description: "Kampanie Shopping" },
+  { title: "Facebook Ads", href: "/performance-marketing/facebook-ads", description: "Dynamic Ads" },
 ];
 
 const MarketingEcommerceRetail = () => {
