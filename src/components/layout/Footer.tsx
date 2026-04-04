@@ -172,91 +172,67 @@ export function Footer() {
       {/* Main Footer */}
       <div className="section-padding py-10 md:py-16">
         <div className="container-wide">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10">
-            {/* Brand Column */}
-            <div className="col-span-2 md:col-span-2 lg:col-span-1">
-              <Link
-                to="/"
-                className="inline-block mb-4"
-              >
-              <img 
+          {/* Brand section - full width on mobile */}
+          <div className="mb-8 md:mb-10 pb-8 border-b border-border/30">
+            <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+              <Link to="/" className="inline-block shrink-0">
+                <img 
                   src={logoFotz} 
                   alt="Fotz Studio" 
-                  className="h-16 sm:h-20 md:h-32 lg:h-40 w-auto"
+                  className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto"
                 />
               </Link>
-              <p className="text-muted-foreground text-sm md:text-base mb-4 md:mb-6 max-w-sm">
-                Studio marketingu wzrostu. Projektujemy marketing, 
-                który realnie pozyskuje klientów.
-              </p>
-              
-              {/* Contact Info */}
-              <div className="space-y-2 md:space-y-3 mb-4 md:mb-6">
-                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground text-sm">
-                  <MapPin className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <span className="text-xs md:text-sm">Plac Wolności 16, 61-739 Poznań</span>
+              <div className="flex-1">
+                <p className="text-muted-foreground text-sm md:text-base mb-4 max-w-sm">
+                  Studio marketingu wzrostu. Projektujemy marketing, 
+                  który realnie pozyskuje klientów.
+                </p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
+                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
+                    <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>Plac Wolności 16, 61-739 Poznań</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
+                    <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                    <a href="tel:+48790814814" className="hover:text-foreground transition-colors">+48 790 814 814</a>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
+                    <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+                    <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors">adam@fotz.pl</a>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
+                    <Building2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    <span>NIP: 7851806089</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground">
-                  <Phone className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <a href="tel:+48790814814" className="hover:text-foreground transition-colors text-xs md:text-sm">
-                    +48 790 814 814
-                  </a>
-                </div>
-                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground">
-                  <Mail className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors text-xs md:text-sm">
-                    adam@fotz.pl
-                  </a>
-                </div>
-                <div className="flex items-center gap-2 md:gap-3 text-muted-foreground">
-                  <Building2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <span className="text-xs md:text-sm">NIP: 7851806089</span>
-                </div>
-              </div>
 
-              {/* Social Links */}
-              <div className="flex gap-2 md:gap-3">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-4 h-4 md:w-5 md:h-5" />
-                  </a>
-                ))}
+                <div className="flex gap-2">
+                  {socialLinks.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
+                      aria-label={social.label}
+                    >
+                      <social.icon className="w-4 h-4 md:w-5 md:h-5" />
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
+          </div>
 
-            {/* Links Columns */}
+          {/* Links grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
             <div>
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Usługi</h4>
-              <ul className="space-y-2 md:space-y-3">
+              <ul className="space-y-2">
                 {footerLinks.uslugi.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-            </ul>
-            </div>
-
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Kampanie Reklamowe</h4>
-              <ul className="space-y-2 md:space-y-3">
-                {footerLinks.kampanie.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
+                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
                       {link.name}
                     </Link>
                   </li>
@@ -264,16 +240,25 @@ export function Footer() {
               </ul>
             </div>
 
+            <div>
+              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Kampanie</h4>
+              <ul className="space-y-2">
+                {footerLinks.kampanie.map((link) => (
+                  <li key={link.name}>
+                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             <div>
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Dla kogo</h4>
-              <ul className="space-y-2 md:space-y-3">
+              <ul className="space-y-2">
                 {footerLinks.dlaKogo.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
+                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
                       {link.name}
                     </Link>
                   </li>
@@ -283,13 +268,10 @@ export function Footer() {
 
             <div>
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Branże</h4>
-              <ul className="space-y-2 md:space-y-3">
+              <ul className="space-y-2">
                 {footerLinks.branze.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
+                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
                       {link.name}
                     </Link>
                   </li>
@@ -299,7 +281,7 @@ export function Footer() {
 
             <div>
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Firma</h4>
-              <ul className="space-y-2 md:space-y-3">
+              <ul className="space-y-2">
                 {footerLinks.firma.map((link) => (
                   <li key={link.name}>
                     {'external' in link && link.external ? (
@@ -313,10 +295,7 @@ export function Footer() {
                         <span className="text-xs text-primary">→</span>
                       </a>
                     ) : (
-                      <Link
-                        to={link.href}
-                        className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                      >
+                      <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
                         {link.name}
                       </Link>
                     )}
@@ -327,37 +306,34 @@ export function Footer() {
 
             <div>
               <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Narzędzia</h4>
-              <ul className="space-y-2 md:space-y-3">
+              <ul className="space-y-2">
                 {footerLinks.narzedzia.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm"
-                    >
+                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
                       {link.name}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
+          </div>
 
-            {/* Miasta - nowa kolumna dla internal linking */}
-            <div className="col-span-2 md:col-span-3 lg:col-span-6 pt-6 border-t border-border/30">
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Strony internetowe w Polsce</h4>
-              <div className="flex flex-wrap gap-2">
-                {footerLinks.miasta.map((link) => (
-                  <Link
-                    key={link.name}
-                    to={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors text-xs px-2 py-1 bg-secondary/50 rounded"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-                <Link to="/uslugi/strony-internetowe" className="text-primary hover:text-primary/80 transition-colors text-xs px-2 py-1">
-                  + więcej miast
+          {/* Miasta - full width */}
+          <div className="mt-8 pt-6 border-t border-border/30">
+            <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Strony internetowe w Polsce</h4>
+            <div className="flex flex-wrap gap-2">
+              {footerLinks.miasta.map((link) => (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-xs px-2 py-1 bg-secondary/50 rounded"
+                >
+                  {link.name}
                 </Link>
-              </div>
+              ))}
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:text-primary/80 transition-colors text-xs px-2 py-1">
+                + więcej miast
+              </Link>
             </div>
           </div>
         </div>
