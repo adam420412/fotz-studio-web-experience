@@ -30,9 +30,9 @@ export function OrganizationSchema({
     addressCountry: "PL",
   },
   sameAs = [
-    "https://www.facebook.com/fotzstudio",
-    "https://www.instagram.com/fotzstudio",
-    "https://www.linkedin.com/company/fotzstudio",
+    "https://www.facebook.com/fotzpoznan/",
+    "https://www.instagram.com/fotz_studio/",
+    "https://www.linkedin.com/company/fotz-studio/",
   ],
 }: OrganizationSchemaProps) {
   const schema = {
@@ -114,10 +114,10 @@ export function LocalBusinessSchema({
       };
     }),
     sameAs: [
-      "https://www.facebook.com/fotzstudio",
-      "https://www.instagram.com/fotzstudio",
-      "https://www.linkedin.com/company/fotzstudio",
-      "https://www.youtube.com/@fotzstudio",
+      "https://www.facebook.com/fotzpoznan/",
+      "https://www.instagram.com/fotz_studio/",
+      "https://www.linkedin.com/company/fotz-studio/",
+      "https://www.youtube.com/@Studio-Fotz",
     ],
     aggregateRating: {
       "@type": "AggregateRating",

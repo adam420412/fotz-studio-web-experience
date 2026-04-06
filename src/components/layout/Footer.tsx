@@ -113,10 +113,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Instagram, href: "https://instagram.com/fotz.pl", label: "Instagram" },
-  { icon: Facebook, href: "https://facebook.com/fotzstudio", label: "Facebook" },
-  { icon: Linkedin, href: "https://linkedin.com/company/fotzstudio", label: "LinkedIn" },
-  { icon: Youtube, href: "https://youtube.com/@fotzstudio", label: "YouTube" },
+  { icon: Instagram, href: "https://www.instagram.com/fotz_studio/", label: "Instagram" },
+  { icon: Facebook, href: "https://www.facebook.com/fotzpoznan/", label: "Facebook" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/fotz-studio/", label: "LinkedIn" },
+  { icon: Youtube, href: "https://www.youtube.com/@Studio-Fotz", label: "YouTube" },
 ];
 
 export function Footer() {

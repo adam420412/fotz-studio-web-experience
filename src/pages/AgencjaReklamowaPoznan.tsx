@@ -424,7 +424,7 @@ const AgencjaReklamowaPoznan = () => {
 
             <motion.div variants={fadeIn} className="text-center mt-10">
               <Button asChild size="lg" variant="outline">
-                <a href="https://www.instagram.com/fotzstudio/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/fotz_studio/" target="_blank" rel="noopener noreferrer">
                   Zobacz więcej na Instagram <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
