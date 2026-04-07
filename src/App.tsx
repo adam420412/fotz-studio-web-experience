@@ -274,6 +274,7 @@ const App = () => (
 
                 <Route path="/poradniki" element={<Poradniki />} />
                 {/* Uslugi cluster */}
+                <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />
                 <Route path="/uslugi/strony-internetowe/ecommerce" element={<EcommerceTworzenie />} />
                 <Route path="/uslugi/strony-internetowe/poznan" element={<StronyInternetowePoznan />} />
                 <Route path="/uslugi/strony-internetowe/warszawa" element={<StronyInternetoweWarszawa />} />
