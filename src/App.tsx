@@ -391,7 +391,7 @@ const App = () => (
                 <Route path="/content-marketing/copywriting-landing" element={<BlogCopywritingLanding />} />
                 <Route path="/content-marketing/email-2025" element={<BlogEmailMarketing />} />
                 <Route path="/content-marketing/kampanie" element={<BlogKampaniaReklamowa />} />
-                <Route path="/content-marketing/tresci-seo" element={<ContentMarketing />} />
+                <Route path="/content-marketing/tresci-seo" element={<Redirect301 to="/content-marketing/strategia" />} />
                 <Route path="/content-marketing/ebooki" element={<CMEbooki />} />
                 <Route path="/content-marketing/video-content" element={<CMVideoContent />} />
 

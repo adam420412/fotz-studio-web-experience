@@ -35,13 +35,13 @@ const BlogVideoMarketing = () => {
       <SEOHead
         title="Video Marketing - trendy i statystyki 2025 | Fotz Studio"
         description="Kompletny przewodnik po video marketingu w 2025. Trendy, formaty, statystyki i praktyczne wskazówki jak wykorzystać wideo w marketingu."
-        canonical="https://fotz.pl/blog/video-marketing-2025"
+        canonical="https://fotz.pl/blog/video-marketing-trendy-2025"
         keywords="video marketing, marketing wideo, YouTube, TikTok, Reels, produkcja video, content video, reklamy wideo"
       />
       <ArticleSchema
         title="Video Marketing - trendy i statystyki 2025"
         description="Kompletny przewodnik po video marketingu. Trendy, formaty i praktyczne wskazówki."
-        url="https://fotz.pl/blog/video-marketing-2025"
+        url="https://fotz.pl/blog/video-marketing-trendy-2025"
         datePublished="2025-01-04"
         dateModified="2025-01-04"
         author="Fotz Studio"

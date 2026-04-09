@@ -36,13 +36,13 @@ const BlogMarketingAutomation = () => {
       <SEOHead
         title="Marketing Automation - jak zautomatyzować sprzedaż w 2025 | Fotz Studio"
         description="Kompletny przewodnik po marketing automation. Dowiedz się jak automatyzować procesy marketingowe i zwiększać sprzedaż bez zwiększania zespołu."
-        canonical="https://fotz.pl/blog/marketing-automation-2025"
+        canonical="https://fotz.pl/blog/marketing-automation"
         keywords="marketing automation, automatyzacja marketingu, lead nurturing, CRM, email automation, sales funnel, konwersja"
       />
       <ArticleSchema
         title="Marketing Automation - jak zautomatyzować sprzedaż w 2025"
         description="Kompletny przewodnik po marketing automation. Automatyzacja procesów marketingowych."
-        url="https://fotz.pl/blog/marketing-automation-2025"
+        url="https://fotz.pl/blog/marketing-automation"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"

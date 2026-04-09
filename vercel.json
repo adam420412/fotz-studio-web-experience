@@ -106,7 +106,8 @@
     { "source": "/login", "destination": "/zasoby", "permanent": true },
     { "source": "/agencja-social-media-poznan", "destination": "/social-media/poznan", "permanent": true },
     { "source": "/landing-page", "destination": "/blog/jak-stworzyc-landing-page", "permanent": true },
-    { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true }
+    { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true },
+    { "source": "/content-marketing/tresci-seo", "destination": "/content-marketing/strategia", "permanent": true }
   ],
   "rewrites": [
     { "source": "/:path*", "destination": "/index.html" }

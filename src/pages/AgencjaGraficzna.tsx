@@ -148,7 +148,7 @@ const AgencjaGraficzna = () => {
       <SEOHead
         title="Agencja Graficzna Poznań - Kompleksowa obsługa graficzna firm | Fotz Studio"
         description="Profesjonalna agencja graficzna Poznań. Projektowanie logo, materiałów reklamowych, katalogów, ulotek. Kompleksowa obsługa graficzna dla firm."
-        canonical="https://fotz.pl/uslugi/grafika"
+        canonical="https://fotz.pl/agencja-graficzna"
       />
       <ServiceSchema 
         name="Agencja Graficzna - Obsługa graficzna firm"

@@ -92,7 +92,9 @@ function extractRoutes() {
 }
 
 /**
- * Find the source file for a component name
+ * Find the source file for a component name.
+ * Uses EXACT matching (word boundary) to avoid false positives like
+ * "function Blog" matching "function BlogCopywritingLanding".
  */
 function findComponentFile(componentName) {
   // Search patterns - check pages/ and pages/clusters/ and pages/branze/
@@ -101,27 +103,41 @@ function findComponentFile(componentName) {
     path.join(SRC, 'pages', 'clusters'),
     path.join(SRC, 'pages', 'branze'),
   ];
-  
+
+  // Build exact-match patterns with word boundaries:
+  // - "function ComponentName(" or "function ComponentName "
+  // - "export default ComponentName" at end/newline
+  // - "const ComponentName =" (only this exact pattern, not longer names)
+  const exactPatterns = [
+    `export default function ${componentName}(`,
+    `export default function ${componentName} `,
+    `export default function ${componentName}\n`,
+    `export default ${componentName}\n`,
+    `export default ${componentName};`,
+    `export default ${componentName},`,
+    `function ${componentName}(`,
+    `function ${componentName} `,
+    `const ${componentName} = (`,
+    `const ${componentName} = function`,
+    `const ${componentName}: React`,
+    `const ${componentName} = lazy`,
+  ];
+
   for (const dir of searchDirs) {
     if (!fs.existsSync(dir)) continue;
-    const files = fs.readdirSync(dir);
+    // Sort files so shorter/simpler names (e.g. Blog.tsx) match before longer ones
+    const files = fs.readdirSync(dir).sort();
     for (const file of files) {
       if (!file.endsWith('.tsx')) continue;
       const filePath = path.join(dir, file);
       const content = fs.readFileSync(filePath, 'utf-8');
-      
-      // Check if this file exports the component (default or named)
-      if (
-        content.includes(`export default function ${componentName}`) ||
-        content.includes(`export default ${componentName}`) ||
-        content.includes(`const ${componentName} =`) ||
-        content.includes(`function ${componentName}`)
-      ) {
+
+      if (exactPatterns.some(p => content.includes(p))) {
         return filePath;
       }
     }
   }
-  
+
   return null;
 }
 
