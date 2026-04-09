@@ -129,6 +129,17 @@ function findComponentFile(componentName) {
  * Inject meta tags into the HTML template
  */
 function injectMeta(html, meta) {
+  // Step 1: Remove existing default tags that will be replaced with page-specific ones.
+  // This prevents duplicate canonical/title/description tags in the prerendered output.
+  html = html.replace(/<title>[^<]*<\/title>/g, '');
+  html = html.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
+  html = html.replace(/<meta\s+name="description"[^>]*\/?>/gi, '');
+  html = html.replace(/<meta\s+name="keywords"[^>]*\/?>/gi, '');
+  html = html.replace(/<meta\s+name="robots"[^>]*\/?>/gi, '');
+  html = html.replace(/<meta\s+property="og:[^>]*\/?>/gi, '');
+  html = html.replace(/<meta\s+name="twitter:[^>]*\/?>/gi, '');
+
+  // Step 2: Build the full set of page-specific meta tags
   const metaTags = [
     `<title>${meta.title}</title>`,
     `<meta name="description" content="${meta.description}" />`,
@@ -147,8 +158,8 @@ function injectMeta(html, meta) {
     `<meta name="twitter:description" content="${meta.description}" />`,
     `<meta name="twitter:image" content="${meta.ogImage}" />`,
   ].filter(Boolean).join('\n    ');
-  
-  // Insert after <meta name="author" ...> line
+
+  // Step 3: Insert after <meta name="author" ...> line
   return html.replace(
     '<meta name="author" content="Fotz Studio" />',
     `<meta name="author" content="Fotz Studio" />\n    <!-- Prerendered SEO meta -->\n    ${metaTags}`

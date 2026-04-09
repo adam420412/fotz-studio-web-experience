@@ -62,7 +62,7 @@ const footerLinks = {
     { name: "Cennik", href: "/cennik" },
     { name: "Blog", href: "/blog" },
     { name: "Poradniki", href: "/poradniki" },
-    { name: "Akademia", href: "/akademia" },
+    { name: "Zasoby", href: "/zasoby" },
     { name: "Kariera", href: "/kariera" },
     { name: "FAQ", href: "/faq" },
     { name: "Kontakt", href: "/kontakt" },

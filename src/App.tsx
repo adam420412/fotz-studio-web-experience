@@ -93,6 +93,23 @@ const AkademiaAuth = lazy(() => import("./pages/AkademiaAuth"));
 const Akademia = lazy(() => import("./pages/Akademia"));
 const AkademiaAdmin = lazy(() => import("./pages/AkademiaAdmin"));
 
+// Wave 4: SEO cluster expansion
+const SEOLinkBuilding = lazy(() => import("./pages/SEOLinkBuilding"));
+const SEOCopywriting = lazy(() => import("./pages/SEOCopywriting"));
+const SEOCoreWebVitals = lazy(() => import("./pages/SEOCoreWebVitals"));
+
+// Wave 4: AI visibility pages
+const AIMarketing = lazy(() => import("./pages/AIMarketing"));
+const AISEO = lazy(() => import("./pages/AISEO"));
+
+// Wave 4: Local SEO - city positioning pages
+const SEOPozycjonowanieWarszawa = lazy(() => import("./pages/SEOPozycjonowanieWarszawa"));
+const SEOPozycjonowanieKrakow = lazy(() => import("./pages/SEOPozycjonowanieKrakow"));
+const SEOPozycjonowanieWroclaw = lazy(() => import("./pages/SEOPozycjonowanieWroclaw"));
+const SEOPozycjonowanieGdansk = lazy(() => import("./pages/SEOPozycjonowanieGdansk"));
+const SEOPozycjonowanieKatowice = lazy(() => import("./pages/SEOPozycjonowanieKatowice"));
+const SEOPozycjonowanieLodz = lazy(() => import("./pages/SEOPozycjonowanieLodz"));
+
 // Local SEO pages
 const AgencjaMarketingowaPoznan = lazy(() => import("./pages/AgencjaMarketingowaPoznan"));
 const AgencjaMarketinguInternetowego = lazy(() => import("./pages/AgencjaMarketinguInternetowego"));
@@ -336,6 +353,15 @@ const App = () => (
                 <Route path="/seo/on-page" element={<SEOOnPage />} />
                 <Route path="/seo/off-page" element={<SEOOffPage />} />
                 <Route path="/seo/techniczne" element={<SEOTechniczne />} />
+                <Route path="/seo/link-building" element={<SEOLinkBuilding />} />
+                <Route path="/seo/copywriting-seo" element={<SEOCopywriting />} />
+                <Route path="/seo/core-web-vitals" element={<SEOCoreWebVitals />} />
+                <Route path="/seo/pozycjonowanie-warszawa" element={<SEOPozycjonowanieWarszawa />} />
+                <Route path="/seo/pozycjonowanie-krakow" element={<SEOPozycjonowanieKrakow />} />
+                <Route path="/seo/pozycjonowanie-wroclaw" element={<SEOPozycjonowanieWroclaw />} />
+                <Route path="/seo/pozycjonowanie-gdansk" element={<SEOPozycjonowanieGdansk />} />
+                <Route path="/seo/pozycjonowanie-katowice" element={<SEOPozycjonowanieKatowice />} />
+                <Route path="/seo/pozycjonowanie-lodz" element={<SEOPozycjonowanieLodz />} />
 
                 {/* Social media cluster */}
                 <Route path="/social-media/obsluga" element={<SocialMedia />} />
@@ -376,6 +402,8 @@ const App = () => (
                 <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
                 <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
                 <Route path="/wizualizacje-3d" element={<Wizualizacje3D />} />
+                <Route path="/ai-marketing" element={<AIMarketing />} />
+                <Route path="/ai-seo" element={<AISEO />} />
                 <Route path="/kampanie-reklamowe" element={<KampanieReklamowe />} />
                 <Route path="/kampanie-reklamowe-poznan" element={<KampanieReklamowePoznan />} />
 
@@ -417,7 +445,9 @@ const App = () => (
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
                 
                 {/* 301 Redirects - broken/legacy paths */}
-                <Route path="/login" element={<Redirect301 to="/akademia/auth" />} />
+                <Route path="/login" element={<Redirect301 to="/zasoby" />} />
+                <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
+                <Route path="/akademia/*" element={<Redirect301 to="/zasoby" />} />
                 <Route path="/landing-page" element={<Redirect301 to="/blog/jak-stworzyc-landing-page" />} />
 
                 {/* 301 Redirects - stare URL-e /branze/* */}
