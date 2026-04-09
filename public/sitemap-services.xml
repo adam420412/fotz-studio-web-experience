@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Topical cluster hub pages -->
+<url><loc>https://fotz.pl/seo</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/social-media</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/performance-marketing</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/content-marketing</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://fotz.pl/uslugi/strony-internetowe</loc><lastmod>2026-04-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 <!-- Usługi główne -->
 <url><loc>https://fotz.pl/uslugi/strony-internetowe</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
 <url><loc>https://fotz.pl/social-media/obsluga</loc><lastmod>2026-04-04</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
