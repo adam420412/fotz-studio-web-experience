@@ -186,6 +186,16 @@ const AudytSEO = lazy(() => import("./pages/AudytSEO"));
 const KalkulatorCen = lazy(() => import("./pages/KalkulatorCen"));
 
 // Cluster hub pages (Phase 1 - new IA structure)
+const SEOOnPage = lazy(() => import("./pages/SEOOnPage"));
+const SEOOffPage = lazy(() => import("./pages/SEOOffPage"));
+const SEOTechniczne = lazy(() => import("./pages/SEOTechniczne"));
+const SocialMediaStrategia = lazy(() => import("./pages/SocialMediaStrategia"));
+const SocialMediaContent = lazy(() => import("./pages/SocialMediaContent"));
+const SocialMediaAnalityka = lazy(() => import("./pages/SocialMediaAnalityka"));
+const PMOptymalizacja = lazy(() => import("./pages/PMOptymalizacja"));
+const PMTargetowanie = lazy(() => import("./pages/PMTargetowanie"));
+const CMEbooki = lazy(() => import("./pages/CMEbooki"));
+const CMVideoContent = lazy(() => import("./pages/CMVideoContent"));
 const SEOCluster = lazy(() => import("./pages/clusters/SEOCluster"));
 const SocialMediaCluster = lazy(() => import("./pages/clusters/SocialMediaCluster"));
 const PerformanceMarketingCluster = lazy(() => import("./pages/clusters/PerformanceMarketingCluster"));
@@ -323,12 +333,18 @@ const App = () => (
                 <Route path="/seo/google-maps" element={<PozycjonowanieGoogleMaps />} />
                 <Route path="/seo/ecommerce" element={<BlogSEOEcommerce />} />
                 <Route path="/seo/lokalne-poznan" element={<BlogSEOLokalnePoznan />} />
+                <Route path="/seo/on-page" element={<SEOOnPage />} />
+                <Route path="/seo/off-page" element={<SEOOffPage />} />
+                <Route path="/seo/techniczne" element={<SEOTechniczne />} />
 
                 {/* Social media cluster */}
                 <Route path="/social-media/obsluga" element={<SocialMedia />} />
                 <Route path="/social-media/poznan" element={<SocialMediaPoznan />} />
                 <Route path="/social-media/influencer" element={<BlogInfluencerMarketing />} />
                 <Route path="/social-media/reels-vs-tiktok" element={<BlogReelsVsTikTok />} />
+                <Route path="/social-media/strategia" element={<SocialMediaStrategia />} />
+                <Route path="/social-media/content" element={<SocialMediaContent />} />
+                <Route path="/social-media/analityka" element={<SocialMediaAnalityka />} />
                 <Route path="/social-media/tiktok-biznes" element={<BlogTikTokBiznes />} />
 
                 {/* Performance marketing cluster */}
@@ -341,6 +357,8 @@ const App = () => (
                 <Route path="/performance-marketing/youtube-ads" element={<YouTubeAds />} />
                 <Route path="/performance-marketing/google-vs-facebook" element={<BlogGoogleVsFacebook />} />
                 <Route path="/performance-marketing/remarketing" element={<BlogRemarketing />} />
+                <Route path="/performance-marketing/optymalizacja" element={<PMOptymalizacja />} />
+                <Route path="/performance-marketing/targetowanie" element={<PMTargetowanie />} />
 
                 {/* Content marketing cluster */}
                 <Route path="/content-marketing/strategia" element={<ContentMarketing />} />
@@ -348,6 +366,8 @@ const App = () => (
                 <Route path="/content-marketing/email-2025" element={<BlogEmailMarketing />} />
                 <Route path="/content-marketing/kampanie" element={<BlogKampaniaReklamowa />} />
                 <Route path="/content-marketing/tresci-seo" element={<ContentMarketing />} />
+                <Route path="/content-marketing/ebooki" element={<CMEbooki />} />
+                <Route path="/content-marketing/video-content" element={<CMVideoContent />} />
 
                 {/* Legacy local SEO pages (unchanged paths) */}
                 <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />

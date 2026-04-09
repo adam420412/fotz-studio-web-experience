@@ -43,6 +43,27 @@ const services = [
     href: "/social-media/tiktok-biznes",
     features: ["Strategia TikTok", "Content creation", "Ads na TikToku"],
   },
+  {
+    icon: Sparkles,
+    title: "Strategia Social Media",
+    description: "Kompleksowa strategia: analiza grupy docelowej, plan contentowy, harmonogram publikacji i KPI. Fundament skutecznej obecności online.",
+    href: "/social-media/strategia",
+    features: ["Analiza grupy docelowej", "Plan contentowy", "KPI i monitoring"],
+  },
+  {
+    icon: Video,
+    title: "Tworzenie Treści Social Media",
+    description: "Grafiki, reelsy, karuzele, copywriting. Profesjonalny content dla Instagramu, Facebooka, TikToka i LinkedIn.",
+    href: "/social-media/content",
+    features: ["Grafiki i wideo", "Reelsy i TikToki", "Copywriting postów"],
+  },
+  {
+    icon: Share2,
+    title: "Analityka Social Media",
+    description: "Monitoring zasięgów, zaangażowania, konwersji. Raporty miesięczne z interpretacją danych i rekomendacjami.",
+    href: "/social-media/analityka",
+    features: ["KPI i metryki", "Raporty miesięczne", "Tracking konwersji"],
+  },
 ];
 
 const stats = [

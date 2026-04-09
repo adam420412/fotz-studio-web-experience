@@ -64,6 +64,20 @@ const services = [
     href: "/performance-marketing/remarketing",
     features: ["Remarketing dynamiczny", "Sekwencje reklamowe", "Cross-platform"],
   },
+  {
+    icon: Zap,
+    title: "Optymalizacja Kampanii",
+    description: "Zwiększamy ROAS, obniżamy CPA, testujemy kreacje i targetowanie. Systematyczna optymalizacja oparta na danych.",
+    href: "/performance-marketing/optymalizacja",
+    features: ["Audyt kampanii", "Testy A/B", "Optymalizacja ROAS/CPA"],
+  },
+  {
+    icon: Target,
+    title: "Precyzyjne Targetowanie",
+    description: "Grupy docelowe, lookalike audiences, retargeting, custom audiences z CRM. Każda złotówka do właściwej osoby.",
+    href: "/performance-marketing/targetowanie",
+    features: ["Lookalike audiences", "Retargeting", "Custom audiences"],
+  },
 ];
 
 const stats = [
