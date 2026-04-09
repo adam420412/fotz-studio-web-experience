@@ -205,8 +205,8 @@ const faqData: FAQ[] = [
     category: "ogólne"
   },
   {
-    keywords: ["akademia", "szkolenie", "nauka", "kurs marketingowy"],
-    answer: "FOTZ Akademia to platforma z materiałami edukacyjnymi o marketingu. Webinary, e-booki, checklisty dla przedsiębiorców. Sprawdź: /akademia",
+    keywords: ["akademia", "szkolenie", "nauka", "kurs marketingowy", "zasoby"],
+    answer: "FOTZ oferuje bezpłatne materiały edukacyjne o marketingu: e-booki, checklisty i webinary dla przedsiębiorców. Sprawdź sekcję Zasoby: /zasoby",
     category: "ogólne"
   },
   {
