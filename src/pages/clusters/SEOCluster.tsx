@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Search, BarChart3, MapPin, ShoppingCart, ArrowRight, CheckCircle, TrendingUp, Eye, Target, Zap, FileSearch, Link2 } from "lucide-react";
+import { Search, BarChart3, MapPin, ShoppingCart, ArrowRight, CheckCircle, TrendingUp, Eye, Target, Zap, FileSearch, Link2, Code2, Globe } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const services = [
@@ -70,6 +70,20 @@ const services = [
     description: "Szybkość, indeksacja, crawl budget, robots.txt, sitemap, HTTPS. Fundament bez którego inne działania SEO nie dają efektów.",
     href: "/seo/techniczne",
     features: ["Core Web Vitals", "Optymalizacja crawl budget", "Audyt techniczny"],
+  },
+  {
+    icon: Link2,
+    title: "Link Building",
+    description: "Budujemy profil backlinków wysokiej jakości: linki z mediów, portali branżowych i prasy lokalnej. Bezpiecznie i skutecznie.",
+    href: "/seo/link-building",
+    features: ["Linki z mediów i prasy", "Guest posting", "Broken link building"],
+  },
+  {
+    icon: FileSearch,
+    title: "Copywriting SEO",
+    description: "Piszemy teksty, które rankują wysoko i konwertują. Analiza intencji wyszukiwania, optymalizacja fraz, treści, które sprzedają.",
+    href: "/seo/copywriting-seo",
+    features: ["Analiza intencji wyszukiwania", "Optymalizacja fraz", "Teksty konwertujące"],
   },
 ];
 
