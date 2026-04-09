@@ -71,10 +71,10 @@ const AgencjaReklamowaPoznan = () => {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Poznań: Partner reklamowy | Agencja reklamowa Poznań"
-        description="Agencja reklamowa Poznań - Twój strategiczny partner w budowaniu silnej marki. Kompleksowe kampanie reklamowe, branding, Google Ads, Meta Ads. Fotz Studio."
+        title="Agencja Reklamowa Poznań | Google Ads, Meta Ads, Branding | Fotz"
+        description="Agencja reklamowa Poznań — kampanie Google Ads, Meta Ads, branding i video marketing. Skuteczna reklama online i ATL dla firm z Wielkopolski. Fotz Studio."
         canonical="https://fotz.pl/agencja-reklamowa-poznan"
-        keywords="agencja reklamowa poznań, agencja marketingowa poznań, reklama poznań, kampanie reklamowe, branding poznań, google ads poznań"
+        keywords="agencja reklamowa poznań, kampanie reklamowe poznań, reklama google ads, meta ads poznań, branding poznań, reklama atl btl"
       />
       <ServiceSchema
         name="Agencja Reklamowa Poznań"

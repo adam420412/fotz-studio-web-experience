@@ -70,6 +70,7 @@
     { "source": "/blog/landing-page", "destination": "/blog/jak-stworzyc-landing-page", "permanent": true },
     { "source": "/blog/reels-vs-tiktok", "destination": "/social-media/reels-vs-tiktok", "permanent": true },
     { "source": "/blog/google-vs-facebook", "destination": "/performance-marketing/google-vs-facebook", "permanent": true },
+    { "source": "/blog/google-ads-poradnik", "destination": "/performance-marketing/google-ads", "permanent": true },
     { "source": "/blog/seo-lokalne-poznan", "destination": "/seo/lokalne-poznan", "permanent": true },
     { "source": "/blog/budzet-marketingowy", "destination": "/blog/budzet-marketingowy-planowanie", "permanent": true },
     { "source": "/blog/koszt-strony-internetowej", "destination": "/blog/ile-kosztuje-strona-internetowa", "permanent": true },
