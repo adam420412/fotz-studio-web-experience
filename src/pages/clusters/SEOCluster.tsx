@@ -4,7 +4,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, ServiceSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Search, BarChart3, MapPin, ShoppingCart, ArrowRight, CheckCircle, TrendingUp, Eye, Target, Zap } from "lucide-react";
+import { Search, BarChart3, MapPin, ShoppingCart, ArrowRight, CheckCircle, TrendingUp, Eye, Target, Zap, FileSearch, Link2 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const services = [
@@ -49,6 +49,27 @@ const services = [
     description: "Dedykowane usługi SEO dla firm z Poznania i okolic. Lokalna ekspertyza, znajomość rynku i bezpośredni kontakt z zespołem.",
     href: "/seo/pozycjonowanie-poznan",
     features: ["Lokalna ekspertyza", "Bezpośredni kontakt", "Raporty miesięczne"],
+  },
+  {
+    icon: FileSearch,
+    title: "Optymalizacja On-Page",
+    description: "Meta tagi, nagłówki, treści, schema markup, Core Web Vitals. Wszystko, co Google analizuje bezpośrednio na Twojej stronie.",
+    href: "/seo/on-page",
+    features: ["Meta tagi i H1-H6", "Core Web Vitals", "Schema markup JSON-LD"],
+  },
+  {
+    icon: Link2,
+    title: "SEO Off-Page i Link Building",
+    description: "Budowanie autorytetu domeny przez wartościowe linki, digital PR i wzmianki. Naturalnie i bezpiecznie.",
+    href: "/seo/off-page",
+    features: ["Link building white hat", "Digital PR", "Analiza profilu linków"],
+  },
+  {
+    icon: Zap,
+    title: "Techniczne SEO",
+    description: "Szybkość, indeksacja, crawl budget, robots.txt, sitemap, HTTPS. Fundament bez którego inne działania SEO nie dają efektów.",
+    href: "/seo/techniczne",
+    features: ["Core Web Vitals", "Optymalizacja crawl budget", "Audyt techniczny"],
   },
 ];
 
