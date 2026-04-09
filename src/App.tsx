@@ -417,7 +417,9 @@ const App = () => (
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
                 
                 {/* 301 Redirects - broken/legacy paths */}
-                <Route path="/login" element={<Redirect301 to="/akademia/auth" />} />
+                <Route path="/login" element={<Redirect301 to="/zasoby" />} />
+                <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
+                <Route path="/akademia/*" element={<Redirect301 to="/zasoby" />} />
                 <Route path="/landing-page" element={<Redirect301 to="/blog/jak-stworzyc-landing-page" />} />
 
                 {/* 301 Redirects - stare URL-e /branze/* */}
