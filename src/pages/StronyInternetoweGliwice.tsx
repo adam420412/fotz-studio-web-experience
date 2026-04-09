@@ -77,7 +77,8 @@ const StronyInternetoweGliwice = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Gliwicach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Gliwice to jedno z najważniejszych miast aglomeracji śląskiej, będące centrum nauki i technologii. Profesjonalna strona internetowa jest niezbędna dla sukcesu na tym rynku.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Gliwice to centrum innowacji na Śląsku – siedziba Politechniki Śląskiej i licznych firm technologicznych. Dynamicznie rozwijający się sektor IT i automotive tworzy zapotrzebowanie na nowoczesne strony internetowe."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

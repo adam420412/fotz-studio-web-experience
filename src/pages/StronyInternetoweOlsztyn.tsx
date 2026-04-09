@@ -78,7 +78,8 @@ const StronyInternetoweOlsztyn = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Olsztynie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Olsztyn to centrum Warmii i Mazur – regionu słynącego z jezior i natury. Firmy turystyczne, hotelarskie i lokalne usługowe mają tu ogromne możliwości pozyskania klientów przez internet."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

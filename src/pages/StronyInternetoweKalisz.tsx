@@ -68,7 +68,8 @@ const StronyInternetoweKalisz = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej? Nasza agencja specjalizuje się w projektowaniu nowoczesnych stron www.",
       "Kalisz to najstarsze miasto w Polsce i ważne centrum biznesowe. Twoja strona będzie efektywna w pozyskiwaniu klientów.",
-      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO."
+      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO.",
+      "Kalisz, jedno z najstarszych miast Polski z bogatą tradycją handlową, dziś prężnie się rozwija jako centrum usług i handlu Wielkopolski Południowej. Profesjonalna strona www to most między tradycją a nowoczesnością."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

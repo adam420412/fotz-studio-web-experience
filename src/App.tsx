@@ -15,6 +15,7 @@ import Index from "./pages/Index";
 const Uslugi = lazy(() => import("./pages/Uslugi"));
 const Realizacje = lazy(() => import("./pages/Realizacje"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
+const Konsultacja = lazy(() => import("./pages/Konsultacja"));
 const ONas = lazy(() => import("./pages/ONas"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Poradniki = lazy(() => import("./pages/Poradniki"));
@@ -236,6 +237,7 @@ const App = () => (
                 <Route path="/realizacje/apartamenty-chorwacja" element={<CaseStudyApartamenty />} />
                 <Route path="/realizacje/lauvjah" element={<CaseStudyLauvjah />} />
                 <Route path="/kontakt" element={<Kontakt />} />
+                <Route path="/konsultacja" element={<Konsultacja />} />
                 <Route path="/o-nas" element={<ONas />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />

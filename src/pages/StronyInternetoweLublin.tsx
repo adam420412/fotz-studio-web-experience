@@ -53,6 +53,7 @@ const StronyInternetoweLublin = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Lublin to akademickie miasto na wschodzie Polski z prężnie rozwijającym się sektorem MŚP. Tworzymy strony skrojone pod potrzeby lokalnych firm i start-upów." },
   ];
 
   const pricing = [

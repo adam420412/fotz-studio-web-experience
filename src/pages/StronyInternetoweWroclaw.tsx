@@ -78,7 +78,8 @@ const StronyInternetoweWroclaw = () => {
     paragraphs: [
       "W dobie intensywnej rywalizacji na rynku cyfrowym, projektowanie i tworzenie stron odgrywa kluczową rolę w budowaniu wizerunku każdej firmy.",
       "Profesjonalna strona internetowa to nie tylko wizytówka przedsiębiorstwa, ale i efektywne narzędzie do pozyskiwania klientów we Wrocławiu.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Wrocław to centrum technologiczne Dolnego Śląska z setkami firm IT, start-upów i korporacji. Profesjonalna strona internetowa to Twój cyfrowy ambasador na tym wymagającym, nowoczesnym rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

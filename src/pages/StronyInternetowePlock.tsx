@@ -78,7 +78,8 @@ const StronyInternetowePlock = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Płocku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Płock to centrum polskiego przemysłu petrochemicznego i siedziba PKN Orlen. Lokalne firmy – dostawcy, usługodawcy i handlowcy – potrzebują profesjonalnych stron internetowych, by wyróżnić się w tym specjalistycznym środowisku biznesowym."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

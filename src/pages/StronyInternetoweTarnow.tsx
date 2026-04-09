@@ -78,7 +78,8 @@ const StronyInternetoweTarnow = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Tarnowie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Tarnów to ważny ośrodek przemysłu chemicznego i centrum gospodarcze wschodniej Małopolski. Lokalne firmy z branży przemysłowej, handlowej i usługowej mogą znacznie zwiększyć zasięg dzięki profesjonalnej stronie internetowej."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

@@ -68,7 +68,8 @@ const StronyInternetoweZielonaGora = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej? Nasza agencja specjalizuje się w projektowaniu nowoczesnych stron www.",
       "Zielona Góra to dynamiczne centrum biznesowe Lubuskiego. Twoja strona będzie efektywna w pozyskiwaniu klientów.",
-      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO."
+      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO.",
+      "Zielona Góra to stolica województwa lubuskiego z wyjątkową tożsamością – znana z tradycji winiarskich i rosnącego sektora technologicznego. Profesjonalna strona www pomaga lokalnym firmom wyróżnić się na dynamicznie rosnącym rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

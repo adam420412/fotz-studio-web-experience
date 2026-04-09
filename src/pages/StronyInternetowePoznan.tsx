@@ -174,7 +174,8 @@ const StronyInternetowePoznan = () => {
     paragraphs: [
       "Fotz to agencja z Wielkopolski. Projektujemy witryny internetowe dla poznańskich firm, a także świadczymy nasze usługi zdalnie! Łączymy kompleksowe podejście z projektowaniem responsywnych stron internetowych.",
       "Nasza agencja interaktywna prowadzi działania z zakresu projektowania, wdrażania i optymalizacji. Oferujemy również usługę tworzenia sklepów internetowych.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Poznań to jedno z najszybciej rozwijających się centrów biznesowych w Polsce – miasto innowacji, silnego sektora MŚP i prężnej sceny startupowej. Jako lokalna agencja z Poznania rozumiemy tutejszy rynek od podszewki i tworzymy strony, które realnie wspierają wzrost poznańskich firm."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

@@ -77,7 +77,8 @@ const StronyInternetoweTychy = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Tychach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Tychy to dynamicznie rozwijające się miasto aglomeracji śląskiej, znane z silnego sektora przemysłowego i motoryzacyjnego.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Tychy to prężny ośrodek przemysłowy Śląska z silnym sektorem motoryzacyjnym. Lokalne firmy – od dostawców przemysłowych po usługi dla mieszkańców – potrzebują profesjonalnej obecności online do pozyskiwania klientów."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

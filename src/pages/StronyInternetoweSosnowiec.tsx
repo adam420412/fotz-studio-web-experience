@@ -78,7 +78,8 @@ const StronyInternetoweSosnowiec = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Sosnowcu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Sosnowiec leży w sercu Górnośląskiego Obszaru Metropolitalnego, otoczonego przez miliony potencjalnych klientów. Lokalne firmy handlowe i usługowe mogą znacznie powiększyć zasięg dzięki profesjonalnej obecności online."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

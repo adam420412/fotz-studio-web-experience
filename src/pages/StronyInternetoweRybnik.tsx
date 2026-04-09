@@ -77,7 +77,8 @@ const StronyInternetoweRybnik = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Rybniku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Rybnik to ważne centrum gospodarcze województwa śląskiego z dynamicznie rozwijającym się sektorem biznesowym.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Rybnik przechodzi transformację z miasta górniczego w nowoczesny ośrodek usługowy i handlowy. To doskonały moment, by wyróżnić swoją firmę w internecie i przyciągnąć nowych klientów w zmieniającym się rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

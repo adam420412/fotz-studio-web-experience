@@ -67,6 +67,7 @@ const StronyInternetoweKrakow = () => {
     { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
     { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Rozumiemy krakowski rynek – połączenie turystyki, akademickości i rosnącego sektora IT. Tworzymy strony, które docierają do lokalnych i międzynarodowych klientów." },
   ];
 
   const pricing = [
