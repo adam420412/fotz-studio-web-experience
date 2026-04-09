@@ -75,7 +75,8 @@ const StronyInternetoweBialystok = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Białymstoku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Białystok to dynamicznie rozwijające się centrum biznesowe Podlasia. Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Białystok, jako stolica Podlasia, łączy tradycję z nowoczesnością. Lokalne firmy z sektora handlu, usług i produkcji coraz chętniej inwestują w profesjonalne strony internetowe jako motor wzrostu."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

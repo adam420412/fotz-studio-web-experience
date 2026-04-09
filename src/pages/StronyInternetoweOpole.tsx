@@ -78,7 +78,8 @@ const StronyInternetoweOpole = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Opolu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Opole, słynne z Krajowego Festiwalu Polskiej Piosenki, to jedno z najbardziej rozpoznawalnych miast w Polsce. Ta wyjątkowa marka regionu tworzy szanse dla lokalnego biznesu – szczególnie turystyki, gastronomii i kultury."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

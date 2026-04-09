@@ -77,7 +77,8 @@ const StronyInternetoweKamionki = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Kamionkach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Kamionki to dynamicznie rozwijająca się miejscowość w okolicach Poznania, z rosnącym sektorem biznesowym i mieszkaniowym.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Nawet mniejsze miejscowości mają szansę na duże sukcesy w internecie. Pomagamy lokalnym firmom z Kamionek i okolic zbudować profesjonalną obecność online, która przyciąga klientów z całego regionu."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

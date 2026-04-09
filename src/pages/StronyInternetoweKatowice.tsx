@@ -53,6 +53,7 @@ const StronyInternetoweKatowice = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Śląska metropolia to miliony potencjalnych klientów w zasięgu. Tworzymy strony dla firm chcących dotrzeć do całego Górnośląskiego Obszaru Metropolitalnego." },
   ];
 
   const pricing = [

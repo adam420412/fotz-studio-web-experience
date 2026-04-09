@@ -78,7 +78,8 @@ const StronyInternetoweKonin = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Koninie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Konin to ważny ośrodek przemysłowy i usługowy Wielkopolski Wschodniej. Lokalne firmy – od branży energetycznej po usługi dla mieszkańców – coraz bardziej potrzebują profesjonalnej obecności online."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

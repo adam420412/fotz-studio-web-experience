@@ -78,7 +78,8 @@ const StronyInternetoweTorun = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Toruniu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Toruń – miasto Kopernika i piernika – przyciąga turystów z całego świata. Lokalne firmy, hotele, restauracje i sklepy mają szansę dotrzeć do milionów odwiedzających przez profesjonalną stronę internetową."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

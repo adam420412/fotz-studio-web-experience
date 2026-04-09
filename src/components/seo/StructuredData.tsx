@@ -26,7 +26,7 @@ export function OrganizationSchema({
   address = {
     streetAddress: "Plac Wolności 16",
     addressLocality: "Poznań",
-    postalCode: "61-738",
+    postalCode: "61-739",
     addressCountry: "PL",
   },
   sameAs = [

@@ -43,7 +43,7 @@ const BlogAIMarketing = () => {
         description="Poznaj praktyczne zastosowania sztucznej inteligencji w marketingu dla małych i średnich firm."
         url="https://fotz.pl/blog/ai-w-marketingu-msp-2025"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-04-01"
         author="Fotz Studio"
       />
       <BreadcrumbSchema

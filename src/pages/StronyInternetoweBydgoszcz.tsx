@@ -51,6 +51,7 @@ const StronyInternetoweBydgoszcz = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Bydgoszcz to centrum przemysłowe i logistyczne kujawsko-pomorskiej. Tworzymy strony dla firm produkcyjnych, logistycznych i usługowych z tego regionu." },
   ];
 
   const pricing = [

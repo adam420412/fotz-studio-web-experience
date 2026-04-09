@@ -78,7 +78,8 @@ const StronyInternetoweKielce = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Kielcach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Kielce to prężny ośrodek biznesowy Świętokrzyskiego, z silnym sektorem budowlanym i targowym (targi KIELCE). Profesjonalna strona www pomaga firmom dotrzeć do partnerów biznesowych w całej Polsce."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

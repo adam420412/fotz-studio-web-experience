@@ -78,7 +78,8 @@ const StronyInternetoweRadom = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Radomiu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Radom to jedno z większych miast Mazowsza z silnym sektorem przemysłowym i handlowym. Profesjonalna strona internetowa to dla radomskich firm klucz do nowych rynków i klientów."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

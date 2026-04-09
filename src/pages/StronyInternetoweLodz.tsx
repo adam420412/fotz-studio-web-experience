@@ -78,7 +78,8 @@ const StronyInternetoweLodz = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Łodzi? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Łódź to miasto w transformacji – od przemysłu włókienniczego do centrum biznesu, kreatywności i e-commerce. To unikalna szansa dla firm, które chcą zaistnieć w przestrzeni online na rosnącym rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
