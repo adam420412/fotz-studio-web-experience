@@ -77,7 +77,8 @@ const StronyInternetoweKoszalin = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Koszalinie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Koszalin leży blisko Bałtyku i jest centrum Pomorza Środkowego. Firmy turystyczne, hotelarskie i lokalne usługi mają wyjątkową szansę dotarcia do turystów i lokalnych mieszkańców przez internet."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

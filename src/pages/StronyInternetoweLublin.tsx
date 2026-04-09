@@ -3,11 +3,11 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Globe, 
-  Search, 
-  ShoppingCart, 
-  Palette, 
+import {
+  Globe,
+  Search,
+  ShoppingCart,
+  Palette,
   MessageSquare,
   Settings,
   TrendingUp,
@@ -19,7 +19,11 @@ import {
   MapPin,
   ArrowRight,
   Server,
-  FileCode
+  FileCode,
+  Sparkles,
+  BarChart3,
+  Users,
+  Building2
 } from "lucide-react";
 import {
   Accordion,
@@ -53,6 +57,7 @@ const StronyInternetoweLublin = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Lublin to akademickie miasto na wschodzie Polski z prężnie rozwijającym się sektorem MŚP. Tworzymy strony skrojone pod potrzeby lokalnych firm i start-upów." },
   ];
 
   const pricing = [
@@ -205,6 +210,35 @@ const StronyInternetoweLublin = () => {
                 </Button>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Lublin Stats Section */}
+        <section className="py-12 bg-card/40 border-y border-border/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-8">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Lublin w liczbach</span>
+                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Dlaczego warto inwestować w stronę www w Lublinie?</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
+                  Lublin to 5. pod względem liczby studentów miasto w Polsce — dynamiczny rynek z rosnącym popytem na usługi online.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                {[
+                  { icon: Users, value: "340 tys.", label: "mieszkańców Lublina" },
+                  { icon: Building2, value: "45 tys.", label: "aktywnych firm w regionie" },
+                  { icon: BarChart3, value: "Top 5", label: "miasto akademickie PL" },
+                  { icon: Globe, value: "82%", label: "firm szuka klientów online" },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
+                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </FadeInView>
           </div>
         </section>
 

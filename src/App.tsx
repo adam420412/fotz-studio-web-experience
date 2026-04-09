@@ -15,6 +15,7 @@ import Index from "./pages/Index";
 const Uslugi = lazy(() => import("./pages/Uslugi"));
 const Realizacje = lazy(() => import("./pages/Realizacje"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
+const Konsultacja = lazy(() => import("./pages/Konsultacja"));
 const ONas = lazy(() => import("./pages/ONas"));
 const Blog = lazy(() => import("./pages/Blog"));
 const Poradniki = lazy(() => import("./pages/Poradniki"));
@@ -91,6 +92,23 @@ const AkademiaLanding = lazy(() => import("./pages/AkademiaLanding"));
 const AkademiaAuth = lazy(() => import("./pages/AkademiaAuth"));
 const Akademia = lazy(() => import("./pages/Akademia"));
 const AkademiaAdmin = lazy(() => import("./pages/AkademiaAdmin"));
+
+// Wave 4: SEO cluster expansion
+const SEOLinkBuilding = lazy(() => import("./pages/SEOLinkBuilding"));
+const SEOCopywriting = lazy(() => import("./pages/SEOCopywriting"));
+const SEOCoreWebVitals = lazy(() => import("./pages/SEOCoreWebVitals"));
+
+// Wave 4: AI visibility pages
+const AIMarketing = lazy(() => import("./pages/AIMarketing"));
+const AISEO = lazy(() => import("./pages/AISEO"));
+
+// Wave 4: Local SEO - city positioning pages
+const SEOPozycjonowanieWarszawa = lazy(() => import("./pages/SEOPozycjonowanieWarszawa"));
+const SEOPozycjonowanieKrakow = lazy(() => import("./pages/SEOPozycjonowanieKrakow"));
+const SEOPozycjonowanieWroclaw = lazy(() => import("./pages/SEOPozycjonowanieWroclaw"));
+const SEOPozycjonowanieGdansk = lazy(() => import("./pages/SEOPozycjonowanieGdansk"));
+const SEOPozycjonowanieKatowice = lazy(() => import("./pages/SEOPozycjonowanieKatowice"));
+const SEOPozycjonowanieLodz = lazy(() => import("./pages/SEOPozycjonowanieLodz"));
 
 // Local SEO pages
 const AgencjaMarketingowaPoznan = lazy(() => import("./pages/AgencjaMarketingowaPoznan"));
@@ -185,6 +203,16 @@ const AudytSEO = lazy(() => import("./pages/AudytSEO"));
 const KalkulatorCen = lazy(() => import("./pages/KalkulatorCen"));
 
 // Cluster hub pages (Phase 1 - new IA structure)
+const SEOOnPage = lazy(() => import("./pages/SEOOnPage"));
+const SEOOffPage = lazy(() => import("./pages/SEOOffPage"));
+const SEOTechniczne = lazy(() => import("./pages/SEOTechniczne"));
+const SocialMediaStrategia = lazy(() => import("./pages/SocialMediaStrategia"));
+const SocialMediaContent = lazy(() => import("./pages/SocialMediaContent"));
+const SocialMediaAnalityka = lazy(() => import("./pages/SocialMediaAnalityka"));
+const PMOptymalizacja = lazy(() => import("./pages/PMOptymalizacja"));
+const PMTargetowanie = lazy(() => import("./pages/PMTargetowanie"));
+const CMEbooki = lazy(() => import("./pages/CMEbooki"));
+const CMVideoContent = lazy(() => import("./pages/CMVideoContent"));
 const SEOCluster = lazy(() => import("./pages/clusters/SEOCluster"));
 const SocialMediaCluster = lazy(() => import("./pages/clusters/SocialMediaCluster"));
 const PerformanceMarketingCluster = lazy(() => import("./pages/clusters/PerformanceMarketingCluster"));
@@ -236,6 +264,7 @@ const App = () => (
                 <Route path="/realizacje/apartamenty-chorwacja" element={<CaseStudyApartamenty />} />
                 <Route path="/realizacje/lauvjah" element={<CaseStudyLauvjah />} />
                 <Route path="/kontakt" element={<Kontakt />} />
+                <Route path="/konsultacja" element={<Konsultacja />} />
                 <Route path="/o-nas" element={<ONas />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />
@@ -321,12 +350,27 @@ const App = () => (
                 <Route path="/seo/google-maps" element={<PozycjonowanieGoogleMaps />} />
                 <Route path="/seo/ecommerce" element={<BlogSEOEcommerce />} />
                 <Route path="/seo/lokalne-poznan" element={<BlogSEOLokalnePoznan />} />
+                <Route path="/seo/on-page" element={<SEOOnPage />} />
+                <Route path="/seo/off-page" element={<SEOOffPage />} />
+                <Route path="/seo/techniczne" element={<SEOTechniczne />} />
+                <Route path="/seo/link-building" element={<SEOLinkBuilding />} />
+                <Route path="/seo/copywriting-seo" element={<SEOCopywriting />} />
+                <Route path="/seo/core-web-vitals" element={<SEOCoreWebVitals />} />
+                <Route path="/seo/pozycjonowanie-warszawa" element={<SEOPozycjonowanieWarszawa />} />
+                <Route path="/seo/pozycjonowanie-krakow" element={<SEOPozycjonowanieKrakow />} />
+                <Route path="/seo/pozycjonowanie-wroclaw" element={<SEOPozycjonowanieWroclaw />} />
+                <Route path="/seo/pozycjonowanie-gdansk" element={<SEOPozycjonowanieGdansk />} />
+                <Route path="/seo/pozycjonowanie-katowice" element={<SEOPozycjonowanieKatowice />} />
+                <Route path="/seo/pozycjonowanie-lodz" element={<SEOPozycjonowanieLodz />} />
 
                 {/* Social media cluster */}
                 <Route path="/social-media/obsluga" element={<SocialMedia />} />
                 <Route path="/social-media/poznan" element={<SocialMediaPoznan />} />
                 <Route path="/social-media/influencer" element={<BlogInfluencerMarketing />} />
                 <Route path="/social-media/reels-vs-tiktok" element={<BlogReelsVsTikTok />} />
+                <Route path="/social-media/strategia" element={<SocialMediaStrategia />} />
+                <Route path="/social-media/content" element={<SocialMediaContent />} />
+                <Route path="/social-media/analityka" element={<SocialMediaAnalityka />} />
                 <Route path="/social-media/tiktok-biznes" element={<BlogTikTokBiznes />} />
 
                 {/* Performance marketing cluster */}
@@ -339,6 +383,8 @@ const App = () => (
                 <Route path="/performance-marketing/youtube-ads" element={<YouTubeAds />} />
                 <Route path="/performance-marketing/google-vs-facebook" element={<BlogGoogleVsFacebook />} />
                 <Route path="/performance-marketing/remarketing" element={<BlogRemarketing />} />
+                <Route path="/performance-marketing/optymalizacja" element={<PMOptymalizacja />} />
+                <Route path="/performance-marketing/targetowanie" element={<PMTargetowanie />} />
 
                 {/* Content marketing cluster */}
                 <Route path="/content-marketing/strategia" element={<ContentMarketing />} />
@@ -346,6 +392,8 @@ const App = () => (
                 <Route path="/content-marketing/email-2025" element={<BlogEmailMarketing />} />
                 <Route path="/content-marketing/kampanie" element={<BlogKampaniaReklamowa />} />
                 <Route path="/content-marketing/tresci-seo" element={<ContentMarketing />} />
+                <Route path="/content-marketing/ebooki" element={<CMEbooki />} />
+                <Route path="/content-marketing/video-content" element={<CMVideoContent />} />
 
                 {/* Legacy local SEO pages (unchanged paths) */}
                 <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
@@ -354,6 +402,8 @@ const App = () => (
                 <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
                 <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
                 <Route path="/wizualizacje-3d" element={<Wizualizacje3D />} />
+                <Route path="/ai-marketing" element={<AIMarketing />} />
+                <Route path="/ai-seo" element={<AISEO />} />
                 <Route path="/kampanie-reklamowe" element={<KampanieReklamowe />} />
                 <Route path="/kampanie-reklamowe-poznan" element={<KampanieReklamowePoznan />} />
 
@@ -395,7 +445,9 @@ const App = () => (
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
                 
                 {/* 301 Redirects - broken/legacy paths */}
-                <Route path="/login" element={<Redirect301 to="/akademia/auth" />} />
+                <Route path="/login" element={<Redirect301 to="/zasoby" />} />
+                <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
+                <Route path="/akademia/*" element={<Redirect301 to="/zasoby" />} />
                 <Route path="/landing-page" element={<Redirect301 to="/blog/jak-stworzyc-landing-page" />} />
 
                 {/* 301 Redirects - stare URL-e /branze/* */}

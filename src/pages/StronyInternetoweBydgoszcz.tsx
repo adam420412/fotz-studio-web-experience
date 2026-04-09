@@ -3,11 +3,11 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Globe, 
-  Search, 
-  ShoppingCart, 
-  Palette, 
+import {
+  Globe,
+  Search,
+  ShoppingCart,
+  Palette,
   MessageSquare,
   Settings,
   TrendingUp,
@@ -17,7 +17,11 @@ import {
   Shield,
   Headphones,
   MapPin,
-  ArrowRight
+  ArrowRight,
+  Sparkles,
+  BarChart3,
+  Users,
+  Building2
 } from "lucide-react";
 import {
   Accordion,
@@ -51,6 +55,7 @@ const StronyInternetoweBydgoszcz = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Bydgoszcz to centrum przemysłowe i logistyczne kujawsko-pomorskiej. Tworzymy strony dla firm produkcyjnych, logistycznych i usługowych z tego regionu." },
   ];
 
   const pricing = [
@@ -198,6 +203,65 @@ const StronyInternetoweBydgoszcz = () => {
                 </Button>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Bydgoszcz Stats Section */}
+        <section className="py-12 bg-card/40 border-y border-border/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-8">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Bydgoszcz w liczbach</span>
+                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Bydgoszcz — serce kujawsko-pomorskiego</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
+                  8. miasto w Polsce z silnym sektorem przemysłowym, logistycznym i MŚP — rosnący rynek dla e-commerce i usług online.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                {[
+                  { icon: Users, value: "350 tys.", label: "mieszkańców Bydgoszczy" },
+                  { icon: Building2, value: "40 tys.", label: "zarejestrowanych firm" },
+                  { icon: BarChart3, value: "Top 8", label: "miasto w Polsce" },
+                  { icon: Globe, value: "76%", label: "MŚP poszukuje klientów online" },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
+                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </FadeInView>
+          </div>
+        </section>
+
+        {/* Bydgoszcz local context */}
+        <section className="py-10 md:py-14">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <div className="prose prose-invert max-w-none prose-sm sm:prose-base">
+                  <h2>Strony www dla firm z Bydgoszczy — rozumiemy lokalny rynek</h2>
+                  <p>
+                    Bydgoszcz to centrum logistyczne i przemysłowe kujawsko-pomorskiego. Miasto znane jest z
+                    <strong> przemysłu chemicznego, elektrotechnicznego i telekomunikacyjnego</strong>, a rosnący
+                    sektor MŚP i startupów sprawia, że konkurencja online jest coraz silniejsza.
+                    Tworzymy strony internetowe, które wyróżniają firmy z Bydgoszczy w wyszukiwarce Google
+                    i konwertują odwiedzających w klientów.
+                  </p>
+                  <ul>
+                    <li><strong>Produkcja i przemysł</strong> — profesjonalne witryny B2B dla firm produkcyjnych</li>
+                    <li><strong>Logistyka i transport</strong> — strony dla operatorów logistycznych i spedytorów</li>
+                    <li><strong>Handel lokalny i e-commerce</strong> — sklepy online dla detalistów z Bydgoszczy</li>
+                    <li><strong>Usługi medyczne i wellness</strong> — strony dla klinik, gabinetów i centrów zdrowia</li>
+                  </ul>
+                  <p>
+                    Znamy Bydgoszcz i wiemy, jak dotrzeć do jej mieszkańców. Lokalne SEO, optymalizacja
+                    Google Moja Firma i treści pisane z myślą o bydgoskim rynku to nasza specjalność.
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
           </div>
         </section>
 

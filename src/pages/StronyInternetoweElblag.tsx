@@ -68,7 +68,8 @@ const StronyInternetoweElblag = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej? Nasza agencja specjalizuje się w projektowaniu nowoczesnych stron www.",
       "Elbląg to ważne centrum biznesowe regionu. Twoja strona będzie efektywna w pozyskiwaniu klientów.",
-      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO."
+      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO.",
+      "Elbląg – historyczne miasto portowe na Żuławach – to centrum usług i handlu dla całego regionu. Lokalne firmy mogą skutecznie poszerzyć zasięg działania dzięki profesjonalnej stronie internetowej."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

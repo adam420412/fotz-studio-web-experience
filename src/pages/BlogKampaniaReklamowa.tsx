@@ -39,7 +39,7 @@ const BlogKampaniaReklamowa = () => {
         description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok."
         url="https://fotz.pl/content-marketing/kampanie"
         datePublished="2025-01-15"
-        dateModified="2025-01-15"
+        dateModified="2026-04-01"
         author="Fotz Studio"
       />
       <BreadcrumbSchema

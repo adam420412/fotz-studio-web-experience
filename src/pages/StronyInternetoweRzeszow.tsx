@@ -78,7 +78,8 @@ const StronyInternetoweRzeszow = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Rzeszowie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Rzeszów dynamicznie się rozwija jako centrum Doliny Lotniczej, skupiającej najważniejsze firmy lotnicze i kosmiczne w Polsce. To miasto o ogromnym potencjale, gdzie profesjonalna strona www wyróżnia Cię wśród innowacyjnych firm."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

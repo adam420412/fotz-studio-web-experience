@@ -68,7 +68,8 @@ const StronyInternetoweLegnica = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej? Nasza agencja specjalizuje się w projektowaniu nowoczesnych stron www.",
       "Legnica to ważne centrum biznesowe Dolnego Śląska. Twoja strona będzie efektywna w pozyskiwaniu klientów.",
-      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO."
+      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO.",
+      "Legnica leży w centrum Zagłębia Miedziowego – regionu zdominowanego przez KGHM. To silna baza przemysłowa generująca zapotrzebowanie na usługi, dostawy i specjalistyczne rozwiązania – które można skutecznie promować online."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

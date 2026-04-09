@@ -75,7 +75,8 @@ const StronyInternetoweCzestochowa = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Częstochowie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Częstochowa to ważne centrum biznesowe i turystyczne. Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Częstochowa przyciąga miliony pielgrzymów rocznie z całego świata. Lokalne firmy – hotele, restauracje, sklepy z pamiątkami i usługi – mają wyjątkową szansę na dotarcie do tej ogromnej grupy klientów przez internet."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

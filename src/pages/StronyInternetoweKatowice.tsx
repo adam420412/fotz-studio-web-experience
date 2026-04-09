@@ -3,11 +3,11 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Globe, 
-  Search, 
-  ShoppingCart, 
-  Palette, 
+import {
+  Globe,
+  Search,
+  ShoppingCart,
+  Palette,
   MessageSquare,
   Settings,
   TrendingUp,
@@ -19,7 +19,11 @@ import {
   MapPin,
   ArrowRight,
   Server,
-  FileCode
+  FileCode,
+  Sparkles,
+  BarChart3,
+  Users,
+  Building2
 } from "lucide-react";
 import {
   Accordion,
@@ -53,6 +57,7 @@ const StronyInternetoweKatowice = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Śląska metropolia to miliony potencjalnych klientów w zasięgu. Tworzymy strony dla firm chcących dotrzeć do całego Górnośląskiego Obszaru Metropolitalnego." },
   ];
 
   const pricing = [
@@ -201,6 +206,65 @@ const StronyInternetoweKatowice = () => {
                 </Button>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Katowice Stats Section */}
+        <section className="py-12 bg-card/40 border-y border-border/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-8">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Śląsk w liczbach</span>
+                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Katowice i Górnośląski Obszar Metropolitalny</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
+                  Metropolia katowicka skupia ponad 2 mln mieszkańców — jeden z największych rynków konsumenckich w Polsce Central-Wschodniej.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                {[
+                  { icon: Users, value: "2 mln+", label: "mieszkańców metropolii" },
+                  { icon: Building2, value: "120 tys.", label: "firm na Śląsku" },
+                  { icon: BarChart3, value: "Top 3", label: "rynek e-commerce w PL" },
+                  { icon: Globe, value: "79%", label: "zakupów zaczyna online" },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
+                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </FadeInView>
+          </div>
+        </section>
+
+        {/* Katowice local context section */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <div className="prose prose-invert max-w-none prose-sm sm:prose-base">
+                  <h2>Strony internetowe dla firm ze Śląska — branże, w których działamy</h2>
+                  <p>
+                    Katowice to centrum gospodarcze województwa śląskiego, skupiające firmy z branży przemysłowej,
+                    hutniczej, IT oraz sektora usługowego. <strong>Tworzymy strony internetowe dla firm z Katowic</strong>,
+                    które chcą zwiększyć swoją widoczność online i zbudować silną pozycję w Internecie.
+                    Nasze doświadczenie obejmuje sektory:
+                  </p>
+                  <ul>
+                    <li><strong>Przemysł i produkcja</strong> — strony B2B dla firm produkcyjnych i dostawców komponentów</li>
+                    <li><strong>Usługi dla biznesu</strong> — kancelarie prawne, doradztwo finansowe, firmy konsultingowe</li>
+                    <li><strong>Handel i e-commerce</strong> — sklepy internetowe obsługujące rynek śląski i ogólnopolski</li>
+                    <li><strong>Gastronomia i hotelarstwo</strong> — restauracje, hotele i obiekty eventowe w metropolii</li>
+                  </ul>
+                  <p>
+                    Znamy specyfikę rynku śląskiego — rozumiemy potrzeby firm działających w <strong>Górnośląskim Obszarze Metropolitalnym (GOM)</strong>,
+                    który łączy 41 miast, w tym Gliwice, Bytom, Sosnowiec, Zabrze i Chorzów. Tworzymy strony,
+                    które docierają do klientów z całego regionu.
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
           </div>
         </section>
 

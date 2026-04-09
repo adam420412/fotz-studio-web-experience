@@ -78,7 +78,8 @@ const StronyInternetoweGdansk = () => {
     paragraphs: [
       "W dzisiejszych czasach posiadanie profesjonalnej strony internetowej to podstawa sukcesu w biznesie. Nasza agencja specjalizuje się w tworzeniu stron WWW dla firm z Gdańska, Gdyni i Sopotu.",
       "Tworzymy strony, które nie tylko wyglądają estetycznie, ale przede wszystkim generują realne korzyści dla Twojej marki w Trójmieście.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Gdańsk, Gdynia i Sopot tworzą jeden z najbardziej dynamicznych obszarów biznesowych w Polsce. Silny sektor morski, turystyczny i technologiczny generuje ogromne zapotrzebowanie na profesjonalne strony internetowe."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

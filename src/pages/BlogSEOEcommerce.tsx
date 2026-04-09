@@ -43,7 +43,7 @@ const BlogSEOEcommerce = () => {
         description="Kompletny poradnik SEO dla e-commerce. Strategie pozycjonowania sklepów internetowych."
         url="https://fotz.pl/seo/ecommerce"
         datePublished="2025-01-04"
-        dateModified="2025-01-04"
+        dateModified="2026-04-01"
         author="Fotz Studio"
       />
       <BreadcrumbSchema

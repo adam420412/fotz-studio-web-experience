@@ -43,6 +43,20 @@ const services = [
     href: "/content-marketing/tresci-seo",
     features: ["Pillar pages", "Cluster content", "Optymalizacja on-page"],
   },
+  {
+    icon: BookOpen,
+    title: "Ebooki i Lead Magnety",
+    description: "Ebooki, whitepapery, checklisty i mini-kursy budujące bazę mailingową i autorytet eksperta w branży.",
+    href: "/content-marketing/ebooki",
+    features: ["Ebooki i whitepapery", "Lead magnety", "Landing pages"],
+  },
+  {
+    icon: FileText,
+    title: "Video Content Marketing",
+    description: "Reelsy, explainer videos, testimoniale, webinary. Wideo generuje 82% ruchu internetowego — bądź tam gdzie są klienci.",
+    href: "/content-marketing/video-content",
+    features: ["Reelsy i TikToki", "Explainer videos", "Produkcja i montaż"],
+  },
 ];
 
 const stats = [

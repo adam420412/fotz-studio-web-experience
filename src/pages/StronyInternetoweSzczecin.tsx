@@ -78,7 +78,8 @@ const StronyInternetoweSzczecin = () => {
     paragraphs: [
       "W dzisiejszym cyfrowym świecie, posiadanie profesjonalnej strony internetowej to podstawa sukcesu każdej firmy.",
       "Specjalizujemy się w projektowaniu i tworzeniu stron www w Szczecinie, oferując kompleksowe rozwiązania dostosowane do indywidualnych potrzeb naszych klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Szczecin to brama na rynek niemiecki – doskonała lokalizacja dla firm obsługujących klientów po obu stronach granicy. Profesjonalna strona internetowa to podstawa ekspansji na zachodnioeuropejskie rynki."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

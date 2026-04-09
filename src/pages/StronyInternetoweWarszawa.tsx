@@ -61,6 +61,7 @@ const StronyInternetoweWarszawa = () => {
     { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
     { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Znamy specyfikę największego rynku biznesowego w Polsce. Tworzymy strony, które wyróżniają się wśród dziesiątek tysięcy warszawskich firm w wynikach Google." },
   ];
 
   const pricing = [
@@ -164,7 +165,8 @@ const StronyInternetoweWarszawa = () => {
     paragraphs: [
       "W dynamicznie rozwijającym się świecie cyfrowym, strona internetowa stała się kluczowym elementem każdej firmy. Dla biznesów z Warszawy, konkurencyjnego rynku pełnego innowacji, profesjonalna strona www to nie opcja, ale konieczność.",
       "Specjalizujemy się w tworzeniu nowoczesnych stron internetowych, które nie tylko wyglądają profesjonalnie, ale przede wszystkim skutecznie pozyskują klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Warszawa skupia największą koncentrację firm w Polsce – od globalnych korporacji po dynamiczne start-upy. Na tak wymagającym rynku strona internetowa musi działać bezbłędnie i konwertować już od pierwszego dnia."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };

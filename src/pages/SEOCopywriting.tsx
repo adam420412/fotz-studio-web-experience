@@ -1,0 +1,119 @@
+import { SEOHead } from "@/components/seo/SEOHead";
+import { Layout } from "@/components/layout/Layout";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { BarChart2, FileText, Search, Zap, ArrowRight, CheckCircle, TrendingUp } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ContactSection } from "@/components/sections/ContactSection";
+
+const SEOCopywriting = () => {
+  const features = [
+    { icon: FileText, title: "Analiza intencji wyszukiwania", desc: "Przed napisaniem tekstu analizujemy, czego dokładnie szukają użytkownicy. Tworzymy treści odpowiadające na konkretne pytania i potrzeby, co przekłada się na wyższy CTR i niższy współczynnik odrzuceń." },
+    { icon: Search, title: "Optymalizacja pod frazy kluczowe", desc: "Naturalne wplecenie słów kluczowych, LSI, nagłówków H1-H4 i meta tagów. Teksty czytają się naturalnie, a jednocześnie są precyzyjnie zoptymalizowane pod algorytmy Google." },
+    { icon: Zap, title: "Treści konwertujące", desc: "SEO bez konwersji to strata budżetu. Każdy tekst ma jasne CTA, buduje zaufanie i prowadzi użytkownika przez lejek sprzedażowy. Łączymy SEO z psychologią sprzedaży." },
+    { icon: BarChart2, title: "Aktualizacja istniejących treści", desc: "Audytujemy istniejące teksty i aktualizujemy je zgodnie z obecnymi trendami i wymaganiami algorytmów. Odświeżona treść może przeskoczyć w rankingach bez tworzenia czegoś od zera." },
+  ];
+
+  const faqItems = [
+    { question: "Jak długi powinien być tekst SEO?", answer: "Nie ma sztywnej reguły, ale w 2025 roku Google premiuje treści wyczerpujące temat (zazwyczaj 800-2000+ słów dla landing pages, 1500-3000+ dla artykułów blogowych). Ważniejsza jest jakość i kompletność niż sama liczba słów." },
+    { question: "Czy AI może pisać teksty SEO?", answer: "AI może wspierać copywriting, ale wymaga nadzoru eksperta. Google nie penalizuje treści AI, jeśli są wartościowe i dokładne. Używamy AI jako narzędzia do przyspieszenia pracy, ale każdy tekst jest weryfikowany i dostosowywany przez copywritera." },
+    { question: "Jak szybko teksty SEO zaczną rankować?", answer: "Nowe treści mogą pojawić się w indeksie Google już po kilku dniach od publikacji. Stabilne pozycje dla docelowych fraz osiągamy zazwyczaj po 2-4 miesiącach, w zależności od konkurencyjności." },
+  ];
+
+  return (
+    <>
+      <SEOHead
+        title="Copywriting SEO – Teksty Optymalizowane pod Google | Fotz Studio"
+        description="Profesjonalny copywriting SEO: teksty na strony, opisy produktów, artykuły blogowe. Piszemy treści, które rankują wysoko i konwertują odwiedzających w klientów."
+        canonical="https://fotz.pl/seo/copywriting-seo"
+        keywords="copywriting seo, teksty seo, pisanie treści seo, treści pod google, artykuły seo, opisy seo"
+      />
+      <ServiceSchema
+        name="Copywriting SEO: Teksty, Które Rankują"
+        description="Profesjonalny copywriting SEO: teksty na strony, opisy produktów, artykuły blogowe. Piszemy treści, które rankują wysoko i konwertują odwiedzających w klientów."
+        provider="Fotz Studio"
+        areaServed="Polska"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "SEO", url: "https://fotz.pl/seo" },
+        { name: "Copywriting SEO", url: "https://fotz.pl/seo/copywriting-seo" }
+      ]} />
+      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <Layout>
+        <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-28 sm:pt-32 md:pt-40 pb-16 md:pb-20">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background to-background" />
+          <div className="container mx-auto px-4 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center max-w-4xl mx-auto"
+            >
+              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">
+                Copywriting SEO
+              </span>
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+                Copywriting SEO: <span className="text-gradient">Teksty, Które Rankują</span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                Dobra treść to fundament skutecznego SEO. Piszemy teksty, które odpowiadają na intencje użytkowników, zawierają właściwe frazy kluczowe i są na tyle wartościowe, że Google chce je pokazywać na pierwszej stronie wyników.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild size="lg" className="group">
+                  <Link to="/kontakt">
+                    Bezpłatna konsultacja
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <Link to="/seo/audyt">Darmowy audyt SEO</Link>
+                </Button>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-heading font-bold text-center mb-12">Co obejmuje usługa?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+              {features.map((f) => (
+              <div key={f.title} className="bg-card border rounded-xl p-6 hover:border-primary/40 transition-colors">
+                <f.icon className="h-8 w-8 text-primary mb-4" />
+                <h3 className="font-heading font-semibold text-lg mb-2">{f.title}</h3>
+                <p className="text-muted-foreground text-sm">{f.desc}</p>
+              </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <div className="container mx-auto px-4 max-w-3xl">
+            <h2 className="text-3xl font-heading font-bold text-center mb-12">Często zadawane pytania</h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqItems.map((item, i) => (
+                <AccordionItem key={i} value={`item-${i}`} className="border rounded-xl px-6">
+                  <AccordionTrigger className="text-left font-heading font-semibold py-4">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground pb-4">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+
+        <ContactSection />
+      </Layout>
+    </>
+  );
+};
+
+export default SEOCopywriting;
