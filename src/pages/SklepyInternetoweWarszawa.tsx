@@ -52,12 +52,12 @@ const features = [
   {
     icon: CreditCard,
     title: "Integracje płatności",
-    desc: "PayU, Przelewy24, Stripe, PayPal, BLIK, Apple Pay, Google Pay. Wdrażamy bramki płatnicze odpowiednie dla Twojego rynku i grupy docelowej."
+    desc: "PayU, Przelewy24, Stripe, PayPal, BLIK, Apple Pay, Google Pay. Integracje z systemami płatności i formularz zamówień dopasowane do Twojego rynku i grupy docelowej."
   },
   {
     icon: Truck,
     title: "Logistyka i dostawa",
-    desc: "Integracje z DHL, InPost, DPD, GLS, Furgonetka. Automatyczne etykiety, śledzenie przesyłek i obsługa zwrotów wbudowane w sklep."
+    desc: "Integracje z firmami kurierskimi — DHL, InPost, DPD, GLS. Automatyczne etykiety, śledzenie przesyłek i obsługa zwrotów wbudowane bezpośrednio w sklep."
   },
   {
     icon: BarChart3,
@@ -72,7 +72,7 @@ const features = [
   {
     icon: Shield,
     title: "Bezpieczeństwo i RODO",
-    desc: "Certyfikat SSL, regulamin, polityka prywatności, zgodność z RODO. Sklep bezpieczny prawnie i technicznie — gotowy na audyt e-commerce."
+    desc: "Certyfikat SSL, regulamin sklepu, ochrona danych osobowych i polityka prywatności — pełna zgodność z RODO. Sklep bezpieczny prawnie i technicznie."
   }
 ];
 
@@ -85,12 +85,12 @@ const process = [
   {
     number: "02",
     title: "Projekt graficzny UX/UI sklepu internetowego",
-    desc: "Projektujemy architekturę sklepu, podstrony kategorii, kartę produktu i ścieżkę zakupową. Projekt graficzny, makiety i prototypy — zanim zaczniemy kodować, wiesz jak sklep będzie wyglądał na każdym urządzeniu."
+    desc: "Tworzymy projekt sklepu internetowego — architektura, podstrony kategorii, karta produktu i ścieżka zakupowa. Makiety sklepu i prototypy interaktywne — zanim zaczniemy kodować, wiesz jak sklep będzie wyglądał na każdym urządzeniu."
   },
   {
     number: "03",
     title: "Wdrożenie sklepu i integracje techniczne",
-    desc: "Tworzymy sklep internetowy, wdrażamy platformę e-commerce, integrujemy systemami płatności, logistykę, ERP i marketing automation. Testy wydajności sklepu na urządzeniach mobilnych i desktopowych."
+    desc: "Tworzymy sklep internetowy, wdrażamy platformę e-commerce, konfigurujemy integracje z systemami płatności, logistykę, ERP i marketing automation. Testy responsywności i wydajności sklepu na wszystkich urządzeniach."
   },
   {
     number: "04",
@@ -123,6 +123,22 @@ const faqItems = [
   {
     question: "Czy tworzycie sklepy z integracją Allegro i systemów ERP?",
     answer: "Tak — integrujemy sklepy internetowe z Allegro, Amazon, Ceneo i Google Shopping. Możemy skonfigurować synchronizację zamówieniami i stanami magazynowymi między sklepem a platformami zewnętrznymi. Integracja sklepu z systemem ERP (Subiekt GT, Comarch) to standard w naszych wdrożeniach dla klientów z Warszawy i Mazowsza."
+  },
+  {
+    question: "Jak wygląda projekt sklepu internetowego od podstaw — proces tworzenia?",
+    answer: "Projektowanie i tworzenie sklepów internetowych zaczynamy od analizy Twojego biznesu i asortymentu. Rozpoczynamy projektowanie od architektury informacji i makiety sklepu. Następnie tworzymy właściwy projekt — profesjonalne projektowanie sklepów pod kątem UX i konwersji. Profesjonalne tworzenie sklepów internetowych to nasz wyróżnik: własny zespół, żadnych podwykonawców. Tworzenie nowoczesnych sklepów internetowych obejmuje responsywny design, szybkość ładowania i optymalizację SEO. Własnego sklepu internetowego nie budujemy szablonowo — każde rozwiązanie jest unikalne i dopasowane do biznesu. Cały proces tworzenia sklepu internetowego składa się z etapów zatwierdzanych przez klienta — całe wykonanie sklepu trwa 4–16 tygodni. Wdrażamy sklepy w branży e-commerce dla firm z całej Polski."
+  },
+  {
+    question: "Sklep internetowy a sklep stacjonarny — porównanie i jak je połączyć?",
+    answer: "Właściciel sklepu stacjonarnego, który otwiera sklep online, zyskuje dostęp do klientów w całej Polsce bez kosztów wynajmu lokalu. Prowadzenia sklepu internetowego kosztuje ułamek utrzymania tradycyjnego punktu handlowego. Swój sklep online możesz sprawdzić i zarządzać nim 24/7 z dowolnego miejsca. Sklepu internetowego w porównaniu do stacjonarnego — widoczność w Google buduje ruch organiczny bez dodatkowych kosztów reklamy. Tworzenie sklepów www pozwala dotrzeć do klientów z całej Polski — sklepu stacjonarnego nie ogranicza do lokalnego rynku. Sklep stacjonarny i online działają najlepiej razem jako strategia omnichannel."
+  },
+  {
+    question: "Jaki jest cennik tworzenia sklepu internetowego — co wchodzi w zakres?",
+    answer: "Cennik tworzenia sklepu internetowego zależy od platformy i zakresu projektu. Budowy sklepu internetowego składa się z: projektu UX/UI, wdrożenia technicznego, integracji z systemami płatności i firmami kurierskimi, skonfigurowania strony www sklepu oraz dostosowania do specyfiki branży. Regulamin sklepu i ochrona danych osobowych to standard każdego wdrożenia. Tworzenie wartościowych treści SEO opcjonalnie zwiększa widoczność w Google. Prowadzenie sklepu internetowego (marketing, SEO) wyceniamy oddzielnie. Chcesz sprawdzić koszt swojego sklepu — umów bezpłatną konsultację."
+  },
+  {
+    question: "Czy tworzycie strony internetowe i sklepy dla firm z branży e-commerce?",
+    answer: "Tak — Fotz Studio realizuje zarówno strony internetowe, jak i sklepy e-commerce dla firm z Warszawy i całej Polski. Projektowania stron i sklep www tworzymy własnym zespołem — jedno miejsce dla stron i sklepów internetowych. Wdrażamy sklepy na Shopify, WooCommerce, PrestaShop i rozwiązaniach custom. Prowadzenie sklepu internetowego po wdrożeniu to kolejny krok — marketing, SEO i wsparcie techniczne. Nasze sklepy www to kompletne rozwiązania dla branży e-commerce: od projektu po kampanie reklamowe."
   }
 ];
 
@@ -176,8 +192,8 @@ export default function SklepyInternetoweWarszawa() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Tworzymy sklepy internetowe dla firm z Warszawy i Mazowsza — profesjonalne, szybkie i gotowe na sprzedaż.
-              Shopify, WooCommerce, PrestaShop i sklepy custom — z pełnymi integracjami systemami płatności, logistyki i ERP.
+              Tworzymy sklepy internetowe dla firm z Warszawy i Mazowsza — profesjonalne, responsywne i gotowe na sprzedaż.
+              Shopify, WooCommerce, PrestaShop i sklepy custom — każda strona www sklepu z integracjami płatności, logistyki i ERP.
             </motion.p>
 
             <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
@@ -361,7 +377,7 @@ export default function SklepyInternetoweWarszawa() {
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 Tworzymy sklepy internetowe kompleksowo — od projektu graficznego przez wdrożenie sklepu
-                po marketing i wsparcie techniczne. Twój sklep w jednym miejscu.
+                po marketing i widoczność online. Twój sklep i jego marketing w jednym miejscu.
               </p>
             </motion.div>
             <div className="grid md:grid-cols-3 gap-6">
@@ -374,12 +390,12 @@ export default function SklepyInternetoweWarszawa() {
                 {
                   icon: TrendingUp,
                   title: "Sklep internetowy + marketing = całość",
-                  desc: "Wdrożenie sklepu to dopiero start. Oferujemy marketing twojego sklepu (pozycjonowania SEO, Google Ads, Meta Ads) jako kontynuację projektu — klienci nie muszą szukać kolejnej agencji."
+                  desc: "Wdrożenie sklepu to dopiero start. Oferujemy marketing twojego sklepu (SEO, Google Ads, Meta Ads) jako kontynuację projektu. Sklepy internetowe wykonane przez nas mają wsparcie marketingowe od dnia uruchomienia."
                 },
                 {
                   icon: Users,
                   title: "Wsparcie sklepu po uruchomieniu",
-                  desc: "Każdy sklep internetowy objęty jest wsparciem technicznym. Monitorujemy wydajność sklepu, reagujemy na błędy i rozwijamy funkcjonalność sklepu zgodnie z potrzebami biznesu klienta."
+                  desc: "Każdy sklep internetowy objęty jest wsparciem technicznym. Monitorujemy wydajność, reagujemy na błędy i rozwijamy funkcjonalny sklep zgodnie z potrzebami biznesowymi klienta."
                 }
               ].map((item, i) => (
                 <motion.div key={i} variants={fadeIn} className="p-6 rounded-2xl border border-border/40 bg-background">
