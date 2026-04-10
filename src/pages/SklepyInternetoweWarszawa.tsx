@@ -8,7 +8,7 @@ import {
   CheckCircle2, MapPin, Globe, Smartphone, Zap, Shield, Search,
   Users, Award, TrendingUp, Code, Palette
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -144,6 +144,8 @@ const faqItems = [
 
 export default function SklepyInternetoweWarszawa() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Sklepy Internetowe Warszawa — Tworzenie Sklepu E-commerce | Fotz Studio"

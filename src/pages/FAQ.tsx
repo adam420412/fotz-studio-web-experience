@@ -6,7 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { HelpCircle, MessageCircle, Phone, Mail, Globe, Palette, TrendingUp, Video, ShoppingCart, Users, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Office images
 import officeStairs from "@/assets/office/office-stairs.webp";
@@ -179,6 +179,8 @@ const allFaqs = faqCategories.flatMap((cat) =>
 
 export default function FAQ() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="FAQ — Najczęściej Zadawane Pytania o Marketing, SEO i Strony WWW | Fotz Studio"

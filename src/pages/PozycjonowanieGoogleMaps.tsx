@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -56,6 +56,8 @@ const faqItems = [
 
 const PozycjonowanieGoogleMaps = () => {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Pozycjonowanie Google Maps — Wizytówka Google Moja Firma | Fotz Studio"

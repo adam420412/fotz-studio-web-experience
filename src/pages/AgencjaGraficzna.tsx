@@ -16,7 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Import visualization images for portfolio section
 import viz17 from "@/assets/wizualizacje/viz-17.png";
@@ -144,6 +144,8 @@ const AgencjaGraficzna = () => {
   ];
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Agencja Graficzna Poznań — Projektowanie Graficzne i Identyfikacja Wizualna | Fotz Studio"

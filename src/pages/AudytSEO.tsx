@@ -24,6 +24,7 @@ import {
 import { z } from "zod";
 import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 interface SEOResult {
   url: string;
@@ -258,6 +259,8 @@ export default function AudytSEO() {
   };
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Darmowy Audyt SEO Online — Audyt Strony Internetowej i Analiza SEO | Fotz Studio"

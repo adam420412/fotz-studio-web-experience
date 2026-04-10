@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const LinkedInAds = () => {
   const benefits = [
@@ -136,6 +136,8 @@ const LinkedInAds = () => {
   ];
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="LinkedIn Ads — Reklama na LinkedIn dla Firm B2B | Fotz Studio"

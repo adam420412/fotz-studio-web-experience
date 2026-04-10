@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -137,6 +137,8 @@ export default function Kontakt() {
   };
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Kontakt z Fotz Studio — Agencja Marketingowa Poznań | Napisz lub Zadzwoń"

@@ -7,7 +7,7 @@ import {
   ArrowRight, Search, TrendingUp, BarChart3, Target, CheckCircle2,
   Globe, Settings, FileText, Link2, MapPin, Award, Users, Zap
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -88,6 +88,8 @@ const faqItems = [
 
 export default function AgencjaSEOPoznan() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Agencja SEO Poznań — Pozycjonowanie Stron Internetowych | Fotz Studio"

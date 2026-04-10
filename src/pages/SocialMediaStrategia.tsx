@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Target, Users, Calendar, BarChart, TrendingUp, MessageSquare, Sparkles, Eye, Zap, CheckCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const SocialMediaStrategia = () => {
@@ -52,6 +52,9 @@ const SocialMediaStrategia = () => {
         { name: "Strategia Social Media", url: "https://fotz.pl/social-media/strategia" },
       ]} />
       <FAQSchema items={faqItems} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}

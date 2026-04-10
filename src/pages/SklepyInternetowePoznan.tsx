@@ -7,7 +7,7 @@ import {
   ArrowRight, ShoppingCart, CreditCard, Truck, BarChart3, Settings,
   CheckCircle2, MapPin, Globe, Smartphone, Zap, Shield
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -60,6 +60,8 @@ const faqItems = [
 
 export default function SklepyInternetowePoznan() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Sklepy Internetowe Poznań — Tworzenie E-commerce i Sklepów Online | Fotz Studio"

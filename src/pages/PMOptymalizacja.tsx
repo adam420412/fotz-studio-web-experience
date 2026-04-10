@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { TrendingUp, Target, BarChart, Zap, Search, CheckCircle, Sparkles, Shield, LineChart, Eye } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const PMOptymalizacja = () => {
@@ -52,6 +52,9 @@ const PMOptymalizacja = () => {
         { name: "Optymalizacja Kampanii", url: "https://fotz.pl/performance-marketing/optymalizacja" },
       ]} />
       <FAQSchema items={faqItems} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}

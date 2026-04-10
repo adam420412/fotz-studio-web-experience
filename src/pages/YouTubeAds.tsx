@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const YouTubeAds = () => {
   const benefits = [
@@ -136,6 +136,8 @@ const YouTubeAds = () => {
   ];
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="YouTube Ads — Reklama na YouTube dla Firm | Video Advertising | Fotz Studio"

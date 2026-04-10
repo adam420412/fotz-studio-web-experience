@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { InstagramEmbed } from "@/components/InstagramEmbed";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -69,6 +69,8 @@ const AgencjaReklamowaPoznan = () => {
   ];
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Agencja Reklamowa Poznań — Reklama Online, Spoty, Kampanie | Fotz Studio"

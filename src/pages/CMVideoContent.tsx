@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Video, Camera, TrendingUp, Users, Target, Sparkles, Eye, Zap, BarChart, CheckCircle } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const CMVideoContent = () => {
@@ -52,6 +52,9 @@ const CMVideoContent = () => {
         { name: "Video Content Marketing", url: "https://fotz.pl/content-marketing/video-content" },
       ]} />
       <FAQSchema items={faqItems} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}

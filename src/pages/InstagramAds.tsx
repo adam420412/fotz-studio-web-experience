@@ -15,7 +15,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const InstagramAds = () => {
   const benefits = [
@@ -134,6 +134,8 @@ const InstagramAds = () => {
   ];
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Instagram Ads — Reklama na Instagramie dla Firm | Fotz Studio"

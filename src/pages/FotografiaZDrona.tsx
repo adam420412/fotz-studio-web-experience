@@ -30,7 +30,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, FAQSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { VideoLightbox } from "@/components/VideoLightbox";
 
@@ -208,6 +208,8 @@ export default function FotografiaZDrona() {
   };
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Fotografia z Drona Poznań — Zdjęcia Lotnicze 4K i Film Dronem | Fotz Studio"

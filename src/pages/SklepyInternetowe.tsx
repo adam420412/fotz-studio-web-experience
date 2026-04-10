@@ -7,7 +7,7 @@ import {
   ArrowRight, ShoppingCart, CreditCard, Truck, BarChart3, Settings,
   CheckCircle2, Globe, Smartphone, Zap, Shield, Store, TrendingUp, Users
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -158,6 +158,8 @@ const faqItems = [
 
 export default function SklepyInternetowe() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Tworzenie Sklepów Internetowych — Projektowanie i Budowa Sklepów Online | Fotz Studio"

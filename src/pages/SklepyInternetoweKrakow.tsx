@@ -8,7 +8,7 @@ import {
   CheckCircle2, MapPin, Globe, Smartphone, Zap, Shield,
   Users, TrendingUp, Code, Building2
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -148,6 +148,8 @@ const faqItems = [
 
 export default function SklepyInternetoweKrakow() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Sklepy Internetowe Kraków — Tworzenie Sklepów E-commerce | Fotz Studio"

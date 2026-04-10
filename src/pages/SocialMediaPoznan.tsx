@@ -10,7 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const services = [
   {
@@ -104,6 +104,8 @@ const faqItems = [
 
 export default function SocialMediaPoznan() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Social Media Poznań — Obsługa i Prowadzenie Social Media | Fotz Studio"

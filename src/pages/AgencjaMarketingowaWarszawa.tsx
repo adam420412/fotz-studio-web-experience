@@ -24,7 +24,7 @@ import {
   Zap,
   Star
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -162,6 +162,8 @@ const faqItems = [
 
 export default function AgencjaMarketingowaWarszawa() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Warszawa — Marketing Internetowy dla Firm | Fotz Studio"

@@ -26,6 +26,7 @@ import concert9 from "@/assets/fotograf/concert-9.jpg";
 import event1 from "@/assets/fotograf/event-1.jpg";
 import event2 from "@/assets/fotograf/event-2.jpg";
 import event3 from "@/assets/fotograf/event-3.jpg";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const galleryImages = [
   { src: portrait1, title: "Portret artystyczny", category: "Portret" },
@@ -124,6 +125,8 @@ const faqItems = [
 
 const FotografPoznan = () => {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Fotograf Poznań — Fotografia Biznesowa i Firmowa | Fotz Studio"

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const features = [
   {
@@ -94,6 +94,8 @@ export default function StudioPodcastowe() {
           { name: "Studio Podcastowe", url: "https://fotz.pl/uslugi/studio-podcastowe" }
         ]}
       />
+      <OrganizationSchema />
+
       <Layout>
         {/* Hero */}
         <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 section-padding bg-background relative overflow-hidden">

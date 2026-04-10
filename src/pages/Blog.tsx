@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { useBlogArticles } from "@/hooks/useBlogArticles";
 
 const categories = [
@@ -426,6 +426,8 @@ export default function Blog() {
     : filteredPosts;
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Blog Marketingowy — Artykuły o SEO, Google Ads i Social Media | Fotz Studio"

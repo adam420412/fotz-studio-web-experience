@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const audiences = [
   {
@@ -78,6 +78,8 @@ export default function DlaKogo() {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Dla Kogo Pracujemy — Marketing dla Firm, E-commerce i Instytucji | Fotz Studio"

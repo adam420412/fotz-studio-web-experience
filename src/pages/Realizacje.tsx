@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Import local portfolio images
 import rppgImg from "@/assets/portfolio/rppg.png";
@@ -408,6 +408,8 @@ const Realizacje = () => {
   };
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Realizacje i Portfolio — Case Studies Projektów Marketingowych | Fotz Studio"

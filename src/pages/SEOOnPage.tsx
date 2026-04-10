@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Search, FileText, Heading1, Image, Zap, Code2, CheckCircle, TrendingUp, Target, BarChart } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 
 const SEOOnPage = () => {
@@ -52,6 +52,9 @@ const SEOOnPage = () => {
         { name: "Optymalizacja On-Page", url: "https://fotz.pl/seo/on-page" },
       ]} />
       <FAQSchema items={faqItems} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}

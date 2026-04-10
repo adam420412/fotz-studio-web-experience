@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Lazy load the 3D viewer for performance
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
@@ -428,6 +428,9 @@ const Wizualizacje3D = () => {
       />
       
       <FAQSchema items={faqItems} />
+      
+      <OrganizationSchema />
+
       
       <Layout>
         {/* Hero Section */}

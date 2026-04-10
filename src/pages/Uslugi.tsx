@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { VideoLightbox } from "@/components/VideoLightbox";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Portfolio images for each service
 import eneaStadion from "@/assets/portfolio/enea-stadion.png";
@@ -421,6 +421,8 @@ export default function Uslugi() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Usługi Marketingowe — SEO, Strony WWW, Reklamy i Social Media | Fotz Studio"

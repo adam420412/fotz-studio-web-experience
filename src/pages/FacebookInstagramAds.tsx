@@ -28,7 +28,7 @@ import {
   AccordionItem, 
   AccordionTrigger 
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const stats = [
   { value: 3800, suffix: "M+", label: "Aktywnych użytkowników Meta" },
@@ -199,6 +199,8 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
 
 export default function FacebookInstagramAds() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Kampania Facebook Ads - Reklama na Facebooku dla Firm | Cennik | Fotz Studio"

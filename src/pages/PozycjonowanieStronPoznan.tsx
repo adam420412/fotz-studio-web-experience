@@ -3,9 +3,12 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Search, TrendingUp, BarChart3, Target, CheckCircle, Globe, Settings, FileText, Link2 } from "lucide-react";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const PozycjonowanieStronPoznan = () => {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Pozycjonowanie Stron Poznań — Agencja SEO dla Firm z Poznania | Fotz Studio"

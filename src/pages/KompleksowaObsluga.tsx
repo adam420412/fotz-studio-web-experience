@@ -1,5 +1,5 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -211,6 +211,9 @@ const KompleksowaObsluga = () => {
         provider="Fotz Studio"
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+      
+      <OrganizationSchema />
+
       
       <Layout>
         {/* Hero Section */}

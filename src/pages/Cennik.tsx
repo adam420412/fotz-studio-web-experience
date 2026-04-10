@@ -50,6 +50,7 @@ import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -780,6 +781,8 @@ export default function Cennik() {
   };
 
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Cennik Usług Marketingowych — Ile Kosztuje SEO, Strona WWW i Reklamy? | Fotz Studio"

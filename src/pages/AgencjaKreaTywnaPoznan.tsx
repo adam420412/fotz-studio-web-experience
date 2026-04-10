@@ -7,7 +7,7 @@ import {
   ArrowRight, Palette, Camera, Video, Globe, Layers, Sparkles,
   MapPin, Award, Zap, Target, CheckCircle2, Users
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -82,6 +82,8 @@ const faqItems = [
 
 export default function AgencjaKreaTywnaPoznan() {
   return (
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Agencja Kreatywna Poznań — Branding, Design, Kampanie Kreatywne | Fotz Studio"

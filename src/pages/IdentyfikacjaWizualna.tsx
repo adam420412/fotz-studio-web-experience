@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Import Klagem branding images
 import klageHomepage from "@/assets/branding/klagem-homepage.jpg";
@@ -148,6 +148,8 @@ const IdentyfikacjaWizualna = () => {
 
   return (
     <>
+    <OrganizationSchema />
+
     <Layout>
       <SEOHead
         title="Identyfikacja Wizualna Firmy — Logo i Branding | Projektowanie Graficzne | Fotz Studio"
