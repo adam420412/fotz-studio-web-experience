@@ -667,93 +667,44 @@ const StronyInternetoweKrakow = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
+            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Kraków — strony internetowe dla firm z Krakowa
+              Strony internetowe Kraków — specyfika krakowskiego rynku
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Kraków to nasza specjalność. Budujemy strony internetowe dla firm z Krakowa,
-              które chcą zaprezentować dawnej stolicy Polski i centrum kultury z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Kraków to drugie co do wielkości miasto w Polsce i jedno z najważniejszych centrów akademickich, kulturalnych i technologicznych w Europie Środkowej. Ponad 200 000 studentów, rozwijający się sektor IT (krakowski hub firm takich jak Google, IBM, Motorola), prężna branża turystyczna i silna scena MŚP sprawiają, że rynek online w Krakowie jest zarówno wymagający, jak i pełen możliwości. Profesjonalna strona internetowa dla firmy z Krakowa musi odpowiadać na oczekiwania wymagającej, często anglojęzycznej, grupy docelowej.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Krakowa tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Kraków to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Fotz Studio tworzy strony internetowe dla krakowskich firm zdalnie — pełen projekt od briefu po wdrożenie realizujemy online, z regularnym statusem przez Teams lub Slack. Jeśli preferujesz spotkanie stacjonarne, możemy się zorganizować — skontaktuj się z nami. Każda strona www jest projektowana przez nasz własny zespół: bez podwykonawców, bez tłumaczenia wizji przez pośredników.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Kraków — www dla Twojej firmy
+              Projektowanie stron internetowych Kraków — co wyróżnia nasze podejście?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Kraków to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Kraków jest miastem, w którym estetyka ma znaczenie — od architektury przez kulturę po design produktów cyfrowych. Strony internetowe, które projektujemy dla krakowskich firm, łączą nowoczesny, czysty design z funkcjonalnością zorientowaną na konwersję. Nie korzystamy z gotowych szablonów — każdy projekt graficzny tworzony jest od zera w Figma, z uwzględnieniem tożsamości marki, grupy docelowej i celów biznesowych.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Krakowie.
+              Specyfika krakowskiego rynku wymaga też myślenia o wielojęzyczności — szczególnie w branżach turystycznej, edukacyjnej i IT. Dla klientów z Krakowa, którzy obsługują zagranicznych gości lub partnerów, regularnie budujemy strony dwu- i trzyjęzyczne (PL/EN/DE) z poprawną strukturą hreflang dla SEO.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              SEO dla stron internetowych w Krakowie — lokalna widoczność w Google
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Krakowa tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
+              Tworzenie stron internetowych dla krakowskich firm realizujemy z wbudowaną optymalizacją SEO — meta tagi, Core Web Vitals, schema LocalBusiness z danymi krakowskiej firmy, mapa strony XML i linkowanie wewnętrzne. Dzięki temu strony naszych klientów szybciej osiągają widoczność w Google Maps i wynikach organicznych dla zapytań lokalnych.
             </p>
             <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Krakowa budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
+              Jeśli chcesz kompleksowego wsparcia SEO, oferujemy również{" "}
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron internetowych</Link> dla firm z Krakowa — od audytu i strategii słów kluczowych, przez optymalizację treści, po link building z lokalnych portali krakowskich.
             </p>
 
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Krakowie? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Stron www Kraków tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Krakowie. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
-            </p>
-            <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Krakowa dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
-            </p>
-          
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie SEO</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
             </div>
           </motion.div>
         </div>
