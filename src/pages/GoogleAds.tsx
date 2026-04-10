@@ -719,11 +719,61 @@ const GoogleAds = () => {
               Nawet najlepsza kampania Google Ads nie przyniesie efektów bez dobrego landing page. Strony internetowej jakość po kliknięciu w reklamę decyduje o współczynniku konwersji i koszcie leadu. Quality Score w Google Ads ocenia trafność reklamy, słów kluczowych i strony docelowej — im wyższy, tym niższy koszt kliknięcia. Prowadzenie i optymalizacja kampanii Google Ads wymaga więc holistycznego podejścia: reklama + landing page + analityka. Fotz Studio dba o wszystkie trzy elementy w ramach kompleksowej obsługi kampanii.
             </p>
           
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+              Google Ads vs SEO — kiedy wybrać reklamę, a kiedy pozycjonowanie?
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Google Ads i SEO to dwa komplementarne kanały pozyskiwania ruchu z Google. Reklamy Google Ads dają natychmiastowe efekty — kampania może generować leady już pierwszego dnia. SEO wymaga 3-6 miesięcy, ale buduje trwałą widoczność organiczną bez stałych kosztów kliknięć. Najlepsza strategia łączy oba kanały: Google Ads zapewnia natychmiastowy ruch i dane o konwertujących frazach, a SEO buduje długoterminową bazę organiczną. Dane z kampanii Google Ads (konwertujące słowa kluczowe, CTR, bounce rate) są bezcenne dla strategii SEO — pozwalają priorytetyzować optymalizację pod frazy o najwyższym potencjale konwersji.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Remarketing i kampanie Performance Max — zaawansowane strategie Google Ads
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Remarketing w Google Ads pozwala dotrzeć do użytkowników, którzy odwiedzili Twoją stronę, ale nie dokonali konwersji. Wyświetlamy im spersonalizowane reklamy w sieci reklamowej Google, YouTube i Gmailu, przypominając o ofercie. Kampanie Performance Max to najnowszy typ kampanii Google Ads, który automatycznie optymalizuje wyświetlanie reklam we wszystkich kanałach Google (wyszukiwarka, display, YouTube, Discovery, Maps, Gmail) przy użyciu machine learningu. Performance Max wymaga dobrego feedu produktowego i jasnych celów konwersji — to narzędzie dla zaawansowanych reklamodawców, które w rękach doświadczonej agencji daje znakomite wyniki.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Google Ads dla e-commerce — kampanie Shopping i produktowe
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Kampanie Google Shopping (Zakupy Google) to must-have dla sklepów internetowych. Reklamy produktowe wyświetlają zdjęcie, cenę i nazwę produktu bezpośrednio w wynikach wyszukiwania — mają wyższy CTR i konwersję niż reklamy tekstowe. Konfiguracja wymaga Google Merchant Center z poprawnym feedem produktowym (tytuły, opisy, ceny, zdjęcia, kategorie). Optymalizacja kampanii Shopping obejmuje: segmentację produktów, wykluczanie nierentownych pozycji, dostosowywanie stawek per kategoria i testy różnych strategii licytacji. Dla klientów e-commerce łączymy kampanie Shopping z Performance Max i remarketingiem, tworząc pełny lejek sprzedażowy.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Analityka i raportowanie kampanii Google Ads — mierzalność każdego grosza
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Jedną z największych zalet Google Ads jest pełna mierzalność wyników. Każde kliknięcie, wyświetlenie i konwersja są śledzone w czasie rzeczywistym. Google Analytics 4 w połączeniu z Google Ads pozwala analizować pełną ścieżkę użytkownika — od kliknięcia w reklamę, przez przeglądanie strony, aż po zakup lub wysłanie formularza. W Fotz Studio tworzymy dedykowane dashboardy w Looker Studio (dawniej Google Data Studio), które prezentują kluczowe metryki: CTR, CPC, CPA, ROAS, wartość konwersji i quality score. Klient ma dostęp do danych 24/7 i otrzymuje comiesięczny raport z analizą trendów i rekomendacjami optymalizacyjnymi.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Ile kosztuje reklama w Google Ads — budżet i cennik kampanii
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Koszt reklamy w Google Ads zależy od konkurencyjności branży, wybranych słów kluczowych i lokalizacji. Średni koszt kliknięcia (CPC) w Polsce wynosi 1-5 zł dla fraz ogólnych i 5-25 zł dla branż konkurencyjnych (prawo, finanse, medycyna). Minimalny rekomendowany budżet miesięczny to 2000-3000 zł na sam budżet reklamowy plus koszty zarządzania kampanią. W Fotz Studio prowadzenie kampanii Google Ads zaczyna się od 1500 zł miesięcznie za zarządzanie plus budżet reklamowy. Każdy złoty zainwestowany w Google Ads jest mierzalny — wiemy dokładnie, ile kosztował każdy lead i jaki jest ROAS (Return on Ad Spend).
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Google Ads dla firm lokalnych — reklamy geotargetowane
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Dla firm działających lokalnie Google Ads oferuje precyzyjne geotargetowanie — reklamy wyświetlają się tylko użytkownikom w określonym promieniu od lokalizacji firmy. Kampanie lokalne w Google Ads obejmują reklamy w wyszukiwarce, mapach Google i sieci reklamowej. Rozszerzenia lokalizacji pokazują adres i numer telefonu bezpośrednio w reklamie, co zwiększa CTR o 10-20%. Dla firm usługowych w Poznaniu i Wielkopolsce konfigurujemy kampanie z geotargetowaniem na konkretne dzielnice, miasta i powiaty. Połączenie Google Ads z optymalizacją Google Business Profile daje maksymalną widoczność w lokalnych wynikach wyszukiwania.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Współpraca z Fotz Studio — jak rozpocząć kampanię Google Ads?
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Proces rozpoczynamy od bezpłatnej konsultacji i analizy potencjału reklamowego — badamy konkurencję, wolumeny wyszukiwań i szacujemy budżet. Następnie konfigurujemy konto Google Ads, implementujemy śledzenie konwersji (Google Tag Manager, GA4) i uruchamiamy kampanię testową. Po zebraniu pierwszych danych (zwykle 2-4 tygodnie) optymalizujemy kampanię pod realne wyniki — eliminujemy nieefektywne frazy, testujemy nowe teksty reklam i dostosowujemy stawki. Klient otrzymuje pełny dostęp do konta Google Ads i comiesięczny raport z analizą wyników. Naszym celem jest nie tylko generowanie kliknięć, ale przede wszystkim dostarczanie konwersji — leadów, sprzedaży i zapytań ofertowych, które bezpośrednio przekładają się na przychód firmy. Każda kampania jest prowadzona z myślą o maksymalizacji zwrotu z inwestycji reklamowej przy jednoczesnym utrzymaniu optymalnego kosztu pozyskania klienta. Stale testujemy nowe formaty reklam, strategie licytacji i grupy odbiorców, aby zapewnić najlepsze możliwe wyniki. Nasza przewaga to połączenie wiedzy technicznej o platformie Google Ads z głębokim zrozumieniem biznesowych celów klienta — nie prowadzimy kampanii "na ślepo", lecz strategicznie, z jasno zdefiniowanymi KPI i regularnymi przeglądami wyników. Dla nowych klientów oferujemy bezpłatny audyt istniejących kampanii Google Ads z konkretnymi rekomendacjami optymalizacyjnymi i szacunkowym potencjałem wzrostu przy optymalnej konfiguracji kampanii reklamowych w Google. Niezależnie od tego, czy dopiero zaczynasz przygodę z reklamą online, czy szukasz agencji, która zoptymalizuje istniejące kampanie Google Ads i zwiększy ich rentowność — skontaktuj się z naszym zespołem specjalistów SEM.
+            </p>
+
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/case-studies/optymalizacja-konwersji-ecommerce" className="text-primary hover:underline font-medium text-sm">→ Case Study: Optymalizacja konwersji</Link>
             </div>
           </motion.div>
         </div>

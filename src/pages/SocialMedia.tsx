@@ -1029,11 +1029,61 @@ const SocialMedia = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Gotowy współpracować i prowadzić social media z Fotz Studio? Specjalistów od social media z naszego zespołu cechuje kreatywne podejście i orientacja na wyniki. Razem ustalić możemy zakres obsługi social i dostosować ofertę do budżetu. Kompleksowe prowadzenie profili w social media dla firm, które chcą wyróżnić się w mediach społecznościowych — skontaktuj się i zamów bezpłatny audyt.
                 </p>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+              Social media dla firm — dlaczego obecność w mediach społecznościowych jest kluczowa?
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              W 2026 roku ponad 27 milionów Polaków aktywnie korzysta z mediów społecznościowych — to ponad 70% populacji. Facebook, Instagram, LinkedIn i TikTok to nie tylko platformy rozrywkowe, lecz pełnoprawne kanały sprzedaży i budowania marki. Dla firm obecność w social media to nie opcja, a konieczność — potencjalni klienci sprawdzają profile społecznościowe przed decyzją zakupową. Brak aktywnego profilu w mediach społecznościowych obniża zaufanie do marki i oddaje pole konkurencji. Social media to jedyny kanał marketingowy, który umożliwia bezpośrednią, dwustronną komunikację z klientami w czasie rzeczywistym.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Social media marketing — ROI i mierzenie efektywności kampanii
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Mierzenie ROI w social media marketing wymaga śledzenia zarówno metryk miękkich (zasięg, zaangażowanie, wzrost followerów), jak i twardych (leady, konwersje, sprzedaż). Piksel Meta (Facebook Pixel) pozwala śledzić ścieżkę użytkownika od kliknięcia w reklamę do zakupu na stronie. Integracja z Google Analytics 4 umożliwia atrybuowanie konwersji do konkretnych kampanii i treści. Raportowanie w Fotz Studio obejmuje: miesięczne podsumowanie KPI, porównanie z poprzednim okresem, rekomendacje optymalizacyjne i plan na kolejny miesiąc. Średni ROAS (Return on Ad Spend) naszych kampanii Facebook Ads wynosi 4-8x, co oznacza 4-8 zł przychodu za każdą złotówkę wydaną na reklamy.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              TikTok i nowe platformy — gdzie być w 2026 roku?
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              TikTok dynamicznie rośnie w Polsce, szczególnie wśród użytkowników 18-34 lata. TikTok Ads oferuje konkurencyjne koszty reklam — CPM (koszt za 1000 wyświetleń) jest nawet 3x niższy niż na Facebooku. Dla marek B2B LinkedIn pozostaje kluczową platformą — organiczne zasięgi na LinkedInie są znacznie wyższe niż na Facebooku. YouTube Shorts i Instagram Reels to formaty wideo, które algorytmy faworyzują — treści wideo generują 2-3x wyższe zaangażowanie niż statyczne posty. W Fotz Studio pomagamy dobrać odpowiedni mix platform do grupy docelowej i celów biznesowych klienta.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Social media a SEO — jak profile społecznościowe wpierają pozycjonowanie?
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Choć linki z social media nie przekazują bezpośrednio link juice (są nofollow), aktywna obecność w mediach społecznościowych wspiera SEO pośrednio. Udostępnianie treści blogowych w social media zwiększa ich zasięg i szansę na pozyskanie naturalnych backlinków. Profile społecznościowe pojawiają się w wynikach branded search, budując dominację nad własną marką w Google. Sygnały społecznościowe (udostępnienia, komentarze, polubienia) korelują z wyższymi pozycjami — Google postrzega popularne treści jako bardziej wartościowe. Spójna strategia content marketingu łącząca blog, social media i SEO daje efekt synergii — każdy kanał wzmacnia pozostałe.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Influencer marketing i User Generated Content — autentyczność w social media
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Współpraca z influencerami i mikroinfluencerami (1000-50000 obserwujących) to skuteczna strategia budowania zaufania do marki. Mikroinfluencerzy mają wyższy wskaźnik zaangażowania (3-8%) niż duże konta (1-2%) i bardziej autentyczny kontakt z odbiorcami. User Generated Content (UGC) — treści tworzone przez klientów i fanów marki — buduje social proof i obniża koszty produkcji contentu. W ramach strategii social media pomagamy identyfikować influencerów w branży klienta, negocjować warunki współpracy i mierzyć efektywność kampanii influencerskich.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Narzędzia do zarządzania social media — automatyzacja i analityka
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Profesjonalne prowadzenie social media wymaga odpowiednich narzędzi. W Fotz Studio korzystamy z: Meta Business Suite (zarządzanie Facebookiem i Instagramem), Hootsuite (planowanie publikacji cross-platform), Canva Pro (tworzenie grafik i szablonów), CapCut (edycja wideo i reels), Brand24 (monitoring wzmianek o marce) i Sprout Social (zaawansowana analityka). Automatyzacja harmonogramu publikacji pozwala zachować regularność bez konieczności codziennego logowania. Narzędzia analityczne dostarczają danych o najlepszych godzinach publikacji, najbardziej angażujących formatach i demografii odbiorców — co pozwala stale optymalizować strategię contentową.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Fotz Studio — Twoja agencja social media w Poznaniu
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Fotz Studio to agencja social media z siedzibą w Poznaniu, obsługująca firmy z całej Polski. Nasz zespół składa się z social media managerów, grafików, copywriterów i specjalistów od kampanii reklamowych. Oferujemy elastyczne pakiety współpracy — od prowadzenia jednej platformy po kompleksową obsługę social media na wszystkich kanałach. Każdy klient otrzymuje dedykowanego opiekuna, regularny content plan do akceptacji i comiesięczny raport z analizą wyników. Bezpłatna konsultacja pozwala nam zrozumieć Twoje cele i zaproponować strategię dopasowaną do budżetu i branży. Współpracujemy z firmami lokalnymi, e-commerce, startupami i korporacjami — niezależnie od skali działalności pomagamy budować silną i rozpoznawalną obecność w mediach społecznościowych. Skontaktuj się z nami i zamów bezpłatny audyt swoich profili social media — pokażemy, gdzie tkwi niewykorzystany potencjał i jak zamienić obserwujących w lojalnych klientów Twojej firmy dzięki profesjonalnej obsłudze social media i skutecznym kampaniom reklamowym na platformach społecznościowych.
+            </p>
+
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/blog/strategia-social-media-marketing" className="text-primary hover:underline font-medium text-sm">→ Blog: Strategia Social Media 2026</Link>
             </div>
               </FadeInView>
             </div>

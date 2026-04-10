@@ -115,6 +115,18 @@ const faqs = [
     question: "Czy pozycjonujecie strony na WordPressie?",
     answer: "Tak, pozycjonujemy strony na każdej platformie – WordPress, Shopify, custom CMS i inne. Każda platforma wymaga specyficznego podejścia technicznego, które znamy i stosujemy."
   },
+  {
+    question: "Jak mierzycie efekty pozycjonowania?",
+    answer: "Monitorujemy pozycje na wybrane frazy kluczowe, ruch organiczny z Google Analytics 4, widoczność w Google Search Console, Domain Rating w Ahrefs oraz konwersje i leady. Klient otrzymuje miesięczny raport z danymi i rekomendacjami."
+  },
+  {
+    question: "Czy oferujecie pozycjonowanie lokalne w Poznaniu?",
+    answer: "Tak, SEO lokalne w Poznaniu to nasza specjalizacja. Optymalizujemy Google Business Profile, budujemy cytaty NAP na lokalnych portalach i pozycjonujemy strony na frazy z nazwą miasta. Nasze case study pokazuje wzrost ruchu o 520% dla klienta lokalnego."
+  },
+  {
+    question: "Ile kosztuje pozycjonowanie strony?",
+    answer: "Koszt pozycjonowania zależy od konkurencyjności branży, obecnego stanu strony i zakresu działań. Typowe budżety SEO zaczynają się od 1500 zł miesięcznie dla firm lokalnych do 5000+ zł dla e-commerce i branż ogólnopolskich. Oferujemy bezpłatną wycenę po audycie."
+  },
 ];
 
 export default function SEOCluster() {
@@ -319,6 +331,129 @@ export default function SEOCluster() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* SEO Article Content */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+              Pozycjonowanie stron internetowych — jak działa SEO i dlaczego warto inwestować?
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Pozycjonowanie stron internetowych (SEO — Search Engine Optimization) to proces optymalizacji strony www tak, aby zajmowała jak najwyższe pozycje w organicznych wynikach wyszukiwania Google. W Polsce ponad 95% wyszukiwań odbywa się przez Google, a 75% użytkowników nigdy nie przechodzi na drugą stronę wyników. Dlatego pozycjonowanie strony w Google to jedna z najskuteczniejszych form marketingu online — docierasz do osób, które aktywnie szukają Twoich produktów lub usług. Koszt pozyskania klienta (CAC) przez SEO jest średnio 5-7 razy niższy niż przez reklamy płatne, a efekty utrzymują się długoterminowo.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Optymalizacja on-page — fundament skutecznego SEO
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Optymalizacja on-page obejmuje wszystkie działania wykonywane bezpośrednio na stronie internetowej: od meta tagów (title, description), przez strukturę nagłówków H1-H6, aż po treści i linkowanie wewnętrzne. Poprawna optymalizacja on-page zapewnia, że Googlebot rozumie tematykę strony i przypisuje ją do odpowiednich zapytań. Schema markup (dane strukturalne JSON-LD) pomaga Google wyświetlać rich snippets — gwiazdki, FAQ, breadcrumby — co zwiększa CTR nawet o 30%. Core Web Vitals (LCP, FID, CLS) to od 2021 roku oficjalny czynnik rankingowy — szybkość ładowania strony bezpośrednio wpływa na pozycje w Google. Optymalizujemy każdy element strony zgodnie z wytycznymi Google Search Central.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Link building i SEO off-page — budowanie autorytetu domeny
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              SEO off-page koncentruje się na działaniach poza stroną, przede wszystkim na pozyskiwaniu wartościowych linków zwrotnych (backlinków). Autorytet domeny (Domain Rating w Ahrefs) rośnie proporcjonalnie do jakości i liczby linków wskazujących na stronę. W Fotz Studio stosujemy wyłącznie white-hat link building: digital PR, guest posting na portalach branżowych, broken link building i lokalne cytaty NAP. Budowanie profilu linków to proces długoterminowy — unikamy sztucznych linków, które mogą skutkować karą algorytmiczną od Google. Naturalny profil linków w połączeniu z wartościowym contentem to recepta na trwałe, wysokie pozycje w wynikach wyszukiwania.
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+              SEO lokalne — pozycjonowanie dla firm działających lokalnie
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              SEO lokalne to specjalizacja Fotz Studio — pomagamy firmom z Poznania i innych miast Polski dominować w lokalnych wynikach wyszukiwania. Optymalizacja Google Business Profile (dawniej Google Moja Firma) to pierwszy krok: uzupełniamy kategorie, opisy, godziny otwarcia, zdjęcia i zarządzamy opiniami. Lokalne SEO obejmuje też optymalizację strony pod frazy z nazwą miasta, budowanie cytatów NAP (Name, Address, Phone) na portalach branżowych i lokalnych oraz zbieranie opinii Google. Algorytm Google Maps bierze pod uwagę trzy czynniki: trafność, odległość i rozpoznawalność (prominence). Pozycjonowanie w Google Maps pozwala firmom lokalnym pojawić się w tzw. Local Pack — trzech wynikach mapowych wyświetlanych nad wynikami organicznymi. Dla firm usługowych i gastronomii Local Pack generuje nawet 50% całego ruchu z Google.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Skuteczne SEO lokalne wymaga systematycznego podejścia: regularne publikowanie Google Posts, odpowiadanie na opinie klientów, aktualizowanie informacji o firmie i budowanie relacji z lokalnymi portalami informacyjnymi. Monitorujemy pozycje w lokalnych wynikach za pomocą narzędzi BrightLocal i Whitespark, śledząc widoczność na mapach i w organicznych wynikach dla fraz z nazwą miasta. Firmy lokalne, które systematycznie inwestują w SEO lokalne, osiągają pozycje w top 3 Google Maps w ciągu 3-6 miesięcy.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Audyt SEO — diagnoza i plan naprawczy dla Twojej strony
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Każdą współpracę rozpoczynamy od szczegółowego audytu SEO. Nasz audyt obejmuje: analizę techniczną (crawlability, indeksacja, szybkość, bezpieczeństwo HTTPS), analizę on-page (treści, meta tagi, nagłówki, schema markup), analizę off-page (profil linków, cytaty NAP, domain rating) oraz analizę konkurencji (porównanie z top 10 wynikami dla głównych fraz). Audyt SEO to nie lista błędów, lecz priorytetyzowany plan naprawczy z jasnym harmonogramem wdrożeń. Identyfikujemy szybkie wygrane (quick wins) — zmiany, które dają natychmiastowe efekty, oraz działania strategiczne budujące widoczność długoterminowo.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              SEO dla e-commerce — pozycjonowanie sklepów internetowych
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Sklepy internetowe mają specyficzne wyzwania SEO: tysiące podstron produktowych, duplikacja treści, filtry faceted, paginacja i canonical tags. Optymalizacja e-commerce SEO wymaga innego podejścia niż strony firmowe — pracujemy nad strukturą kategorii, schema produktowe (Product, Offer, AggregateRating), optymalizacją kart produktów i zarządzaniem indeksacją filtrów. Dobrze zoptymalizowany sklep internetowy generuje ruch na frazy long-tail o wysokim intencje zakupowym. Nasze case studies pokazują wzrosty ruchu organicznego o 200-500% w ciągu 6-12 miesięcy dla sklepów e-commerce.
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+              SEO techniczne — wydajność, indeksacja i Core Web Vitals
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              SEO techniczne to fundament, bez którego inne działania SEO tracą na efektywności. Obejmuje: optymalizację szybkości ładowania (Core Web Vitals — LCP pod 2.5s, FID pod 100ms, CLS pod 0.1), poprawną konfigurację robots.txt i sitemap.xml, zarządzanie crawl budgetem, wdrożenie protokołu HTTPS, eliminację błędów 404 i redirect chains, oraz optymalizację mobile-first (Google indeksuje mobilną wersję strony). Stosujemy narzędzia takie jak Google Search Console, Ahrefs, Screaming Frog i PageSpeed Insights do ciągłego monitorowania zdrowia technicznego strony. Regularne audyty techniczne zapewniają, że Googlebot może efektywnie crawlować i indeksować wszystkie ważne podstrony.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Narzędzia SEO — czym się posługujemy w codziennej pracy?
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Profesjonalne pozycjonowanie wymaga zaawansowanych narzędzi analitycznych. W Fotz Studio korzystamy z: Ahrefs (analiza backlinków, pozycji i konkurencji), Google Search Console (monitoring indeksacji i wydajności), Google Analytics 4 (analiza ruchu i konwersji), Screaming Frog (audyty techniczne i crawl), NeuronWriter (optymalizacja treści pod SEO semantyczne), PageSpeed Insights (Core Web Vitals) i BrightLocal (SEO lokalne i monitoring map). Każde narzędzie dostarcza unikalnych danych — ich połączenie daje pełny obraz widoczności strony i pozwala podejmować decyzje oparte na faktach, nie na intuicji.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Content marketing i SEO — jak treści wspierają pozycjonowanie?
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Content marketing to integralna część strategii SEO. Regularne publikowanie wartościowych treści na blogu firmowym buduje topical authority — Google postrzega stronę jako eksperta w danej dziedzinie i nagradza wyższymi pozycjami. Każdy artykuł blogowy to nowa podstrona, która może rankować na dodatkowe frazy long-tail i przyciągać nowy ruch organiczny. Strategia content marketingowa obejmuje: badanie słów kluczowych (keyword research), analizę intencji wyszukiwania (search intent), tworzenie treści odpowiadających na pytania użytkowników i optymalizację pod kątem featured snippets. W Fotz Studio łączymy tworzenie treści z SEO copywritingiem — każdy tekst jest optymalizowany pod NeuronWriter, co gwarantuje pokrycie wszystkich semantycznie powiązanych fraz.
+            </p>
+
+            <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+              Pozycjonowanie stron Poznań — lokalna agencja SEO z doświadczeniem
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Fotz Studio to agencja SEO z siedzibą w Poznaniu, specjalizująca się w pozycjonowaniu stron internetowych dla firm z Wielkopolski i całej Polski. Nasza lokalna ekspertyza oznacza znajomość rynku poznańskiego, bezpośredni kontakt z klientem i zrozumienie specyfiki lokalnych branż. Pozycjonowanie stron w Poznaniu prowadziliśmy dla firm z branży gastronomicznej, usługowej, produkcyjnej, medycznej i e-commerce. Oferujemy przejrzyste raporty miesięczne, regularne spotkania strategiczne i dedykowanego specjalistę SEO dla każdego klienta. Nasze podejście łączy dane z Ahrefs, Google Search Console i Google Analytics z kreatywnym content marketingiem.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              SEO a AI — jak sztuczna inteligencja zmienia pozycjonowanie w 2026?
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Wyszukiwanie zmienia się dynamicznie — AI Overviews w Google, odpowiedzi ChatGPT i Gemini zmieniają sposób, w jaki użytkownicy konsumują informacje. Strony, które są cytowane przez modele AI, zyskują nowy kanał widoczności i ruchu. Strategia SEO w 2026 roku musi uwzględniać nie tylko tradycyjne pozycjonowanie w Google, ale też optymalizację pod cytowania w AI — publikowanie oryginalnych badań, case studies z konkretnymi danymi i unikalnych insightów branżowych. Fotz Studio monitoruje AI visibility swoich klientów i wdraża strategie zwiększające szanse na cytowanie przez modele językowe.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Jak wybrać agencję SEO — na co zwrócić uwagę?
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Wybierając agencję SEO, zwróć uwagę na: doświadczenie potwierdzone case studies z konkretnymi wynikami, transparentność w raportowaniu (dostęp do Google Search Console i Analytics), stosowanie wyłącznie metod white-hat SEO, brak długoterminowych umów wiążących bez możliwości rezygnacji oraz dedykowany zespół specjalistów. Unikaj agencji gwarantujących pozycję nr 1 w określonym czasie — Google nie pozwala na takie gwarancje. Dobra agencja SEO jasno komunikuje strategię, ryzyka i realistyczne oczekiwania co do terminów i wyników. W Fotz Studio oferujemy elastyczne warunki współpracy, miesięczne rozliczenia i pełną transparentność w każdym etapie.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Proces współpracy SEO z Fotz Studio — od audytu do wzrostu
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Współpraca z Fotz Studio rozpoczyna się od bezpłatnej konsultacji, podczas której omawiamy cele biznesowe, obecny stan strony i budżet. Następnie przeprowadzamy szczegółowy audyt SEO i przygotowujemy strategię z priorytetyzacją działań. W pierwszym miesiącu wdrażamy quick wins — zmiany techniczne i on-page dające najszybsze efekty. W kolejnych miesiącach budujemy content, profil linków i monitorujemy postępy. Klient otrzymuje dostęp do dashboardu z aktualnymi danymi o pozycjach, ruchu i konwersjach. Regularnie spotykamy się na calls strategicznych, aby omawiać wyniki i dostosowywać strategię do zmieniających się warunków rynkowych.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Nasze podejście do SEO opiera się na trzech filarach: dane (wszystkie decyzje są poparte analityką), jakość (tworzymy wartościowe treści i pozyskujemy naturalne linki) oraz transparentność (klient wie dokładnie, co robimy i jakie efekty to przynosi). To podejście sprawia, że nasi klienci zostają z nami średnio ponad 18 miesięcy — bo widzą realne rezultaty i stały wzrost widoczności w Google.
+            </p>
+
+            <h3 className="text-xl font-heading font-semibold mb-3">
+              Mobile-first indexing i Core Web Vitals — wymogi Google w 2026
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Od 2021 roku Google stosuje mobile-first indexing — indeksuje mobilną wersję strony jako główną. Strona, która nie jest responsywna lub ładuje się wolno na smartfonie, traci pozycje niezależnie od jakości treści i linków. Core Web Vitals — Largest Contentful Paint (LCP), First Input Delay (FID) i Cumulative Layout Shift (CLS) — to mierzalne metryki wydajności, które bezpośrednio wpływają na ranking. Optymalizacja obejmuje kompresję obrazów (WebP, lazy loading), minimalizację JavaScript i CSS, wdrożenie CDN (Content Delivery Network) i optymalizację czcionek. W Fotz Studio regularnie monitorujemy Core Web Vitals wszystkich stron klientów i natychmiast reagujemy na pogorszenie wyników. Strony zoptymalizowane pod Core Web Vitals osiągają średnio 15-25% wyższy CTR w wynikach wyszukiwania Google. Każdy projekt SEO w Fotz Studio rozpoczyna się od audytu wydajności — mierzymy aktualne wyniki Core Web Vitals, identyfikujemy wąskie gardła i wdrażamy poprawki. Dla stron na WordPressie optymalizujemy wtyczki i konfigurację serwera, dla stron custom (React, Next.js, Vite) pracujemy bezpośrednio z kodem źródłowym, wdrażając lazy loading, code splitting i server-side rendering. Inwestycja w wydajność techniczną strony to nie tylko lepsze SEO — szybsza strona oznacza wyższy współczynnik konwersji, niższy bounce rate i lepsze doświadczenie użytkownika na każdym urządzeniu, zarówno desktop jak i mobilnym.
+            </p>
+
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social Media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content Marketing</Link>
+              <Link to="/case-studies/seo-lokalne-poznan-wzrost-ruchu" className="text-primary hover:underline font-medium text-sm">→ Case Study: SEO Lokalne Poznań</Link>
+            </div>
+          </motion.div>
         </div>
       </section>
 
