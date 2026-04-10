@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- Branże /dla-kogo/* -->
-<url><loc>https://fotz.pl/dla-kogo/firmy-lokalne</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/ecommerce</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/marki-premium</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/instytucje</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/branza-medyczna</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/gastronomia</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/nieruchomosci</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/beauty-wellness</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/ecommerce-retail</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/edukacja</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/turystyka</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/automotive</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/prawo-finanse</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/it-saas</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/produkcja</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/dla-kogo/ngo</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-automotive</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-beauty</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-ecommerce-retail</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-edukacja</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-gastronomia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-it</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-medyczny</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-ngo</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-nieruchomosci</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-prawo-finanse</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-produkcja</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/branze/marketing-turystyka</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/ecommerce</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/firmy-lokalne</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/instytucje</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/marki-premium</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/automotive</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/beauty-wellness</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/branza-medyczna</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/ecommerce-retail</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/edukacja</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/gastronomia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/it-saas</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/ngo</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/nieruchomosci</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/prawo-finanse</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/produkcja</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fotz.pl/dla-kogo/turystyka</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

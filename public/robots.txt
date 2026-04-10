@@ -1,6 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 # Robots.txt for fotz.pl
-# Last updated: 2026-01-14
+# Last updated: 2026-04-10
 
 User-agent: Googlebot
 Allow: /
@@ -64,3 +64,9 @@ Disallow: /my-account/
 # Sitemap locations (index + individual sitemaps)
 Sitemap: https://fotz.pl/sitemap-index.xml
 Sitemap: https://fotz.pl/sitemap.xml
+Sitemap: https://fotz.pl/sitemap-main.xml
+Sitemap: https://fotz.pl/sitemap-services.xml
+Sitemap: https://fotz.pl/sitemap-cities.xml
+Sitemap: https://fotz.pl/sitemap-blog.xml
+Sitemap: https://fotz.pl/sitemap-casestudies.xml
+Sitemap: https://fotz.pl/sitemap-industries.xml

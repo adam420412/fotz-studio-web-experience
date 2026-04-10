@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- Strony internetowe - miasta -->
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/warszawa</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/wroclaw</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/krakow</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/gdansk</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/lodz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/szczecin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/bydgoszcz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/lublin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/katowice</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/torun</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/rzeszow</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/olsztyn</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/kielce</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/opole</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/gliwice</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/sosnowiec</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/tychy</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/rybnik</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/plock</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/radom</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/tarnow</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/koszalin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/konin</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/kamionki</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/bialystok</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/czestochowa</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/zielona-gora</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/elblag</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/legnica</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://fotz.pl/uslugi/strony-internetowe/kalisz</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/bialystok</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/bydgoszcz</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/czestochowa</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/elblag</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/gdansk</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/gdynia</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/gliwice</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/gorzow</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/kalisz</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/kamionki</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/katowice</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/kielce</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/konin</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/koszalin</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/krakow</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/legnica</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/lodz</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/lublin</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/olsztyn</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/opole</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/plock</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/poznan</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/radom</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/rybnik</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/rzeszow</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/sosnowiec</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/szczecin</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/tarnow</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/torun</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/tychy</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/warszawa</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/wroclaw</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fotz.pl/uslugi/strony-internetowe/zielona-gora</loc><lastmod>2026-04-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
