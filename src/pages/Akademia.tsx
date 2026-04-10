@@ -147,9 +147,9 @@ export default function Akademia() {
                 <Lock className="w-10 h-10 text-foreground" />
               </div>
               
-              <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
                 Odblokuj dostęp do Akademii
-              </h1>
+              </h2>
               
               <p className="text-lg text-muted-foreground mb-8">
                 Zalogowano jako: <span className="text-foreground">{user?.email}</span>
