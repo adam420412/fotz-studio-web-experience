@@ -79,7 +79,7 @@ export default function BlogStronaDlaFirmy() {
     <Layout>
       <SEOHead
         title="Strona Internetowa Dla Firmy - Kompletny Poradnik 2026"
-        description="Dowiedz się, jak stworzyć profesjonalną stronę internetową dla firmy. Poradnik obejmuje typy stron, koszty, technologie i wskazówki SEO. Sprawdź praktyczne porady."
+        description="Jak stworzyć stronę internetową dla firmy? Poradnik: typy stron, koszty, technologie i wskazówki SEO. Praktyczne porady 2026."
         ogType="article"
         canonical="https://fotz.pl/blog/strona-internetowa-dla-firmy"
         keywords="strona internetowa dla firmy, strona www dla firmy, jak stworzyć stronę firmową, strona biznesowa, website dla firm"

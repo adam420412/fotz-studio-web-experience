@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Layout } from "@/components/layout/Layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { WebPageSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { WebPageSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -51,7 +51,7 @@ import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
-import { OrganizationSchema } from "@/components/seo/StructuredData";
+
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -799,6 +799,16 @@ export default function Cennik() {
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Cennik", url: "https://fotz.pl/cennik" },
+      ]} />
+      <FAQSchema items={[
+        { question: "Ile kosztuje strona internetowa w Fotz Studio?", answer: "Strona wizytówkowa od 3000 zł, strona firmowa z CMS od 5000 zł, sklep internetowy od 8000 zł, rozbudowany portal od 15000 zł. Każda wycena jest indywidualna i bezpłatna — zależy od liczby podstron, funkcjonalności i projektu graficznego." },
+        { question: "Ile kosztuje pozycjonowanie SEO miesięcznie?", answer: "Pozycjonowanie lokalne zaczyna się od 800 zł/mies., SEO ogólnopolskie od 1500 zł/mies., a SEO dla sklepów e-commerce od 2000 zł/mies. Cena zależy od konkurencyjności branży, liczby fraz kluczowych i aktualnego stanu strony." },
+        { question: "Ile kosztują kampanie Google Ads?", answer: "Obsługa kampanii Google Ads od 500 zł miesięcznie plus budżet reklamowy (minimum 1000 zł/mies. zalecane). Budżet reklamowy ustalamy indywidualnie na podstawie branży, celów i konkurencji w Google." },
+        { question: "Czy mogę wybrać pakiet miesięczny bez długiej umowy?", answer: "Tak, w Fotz Studio nie wymagamy długoterminowych umów. Oferujemy elastyczne pakiety miesięczne z 30-dniowym okresem wypowiedzenia. Wierzymy, że klienci zostają z nami dzięki wynikom, nie umowom." },
+        { question: "Co zawiera cena obsługi social media?", answer: "Pakiet podstawowy (od 1200 zł/mies.) obejmuje 3 posty tygodniowo, grafikę, copywriting i harmonogram publikacji. Pakiet premium (od 2500 zł/mies.) dodaje Stories, Reels, moderację komentarzy i raportowanie. Pełne zarządzanie z reklamami od 3500 zł/mies." },
+        { question: "Czy wycena usług jest bezpłatna?", answer: "Tak, wycena i konsultacja wstępna są całkowicie bezpłatne i niezobowiązujące. Przygotowujemy ofertę w ciągu 48 godzin od wypełnienia briefu lub rozmowy telefonicznej." },
+        { question: "Jakie formy płatności akceptujecie?", answer: "Akceptujemy przelew bankowy, płatność kartą i płatności ratalne dla większych projektów. Dla usług abonamentowych wystawiamy faktury miesięczne z 14-dniowym terminem płatności." },
+        { question: "Czy mogę łączyć usługi w pakiet z rabatem?", answer: "Tak, oferujemy rabaty przy łączeniu usług. Np. SEO + Google Ads = 10% rabatu, kompleksowa obsługa (strona + SEO + social media) = do 20% rabatu. Im szerszy zakres współpracy, tym korzystniejsze warunki cenowe." },
       ]} />
 
       {/* Hero */}
