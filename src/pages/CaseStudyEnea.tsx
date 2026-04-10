@@ -224,8 +224,8 @@ export default function CaseStudyEnea() {
   return (
     <Layout>
       <SEOHead
-        title="Enea Stadion Poznań - Case Study | Fotz Studio"
-        description="Kompleksowa obsługa marketingowa Enea Stadion Poznań: +340% wzrost zaangażowania, 2M+ wyświetleń miesięcznie. Strona www, social media, produkcja video."
+        title="Enea Stadion Poznań — Kompleksowa Obsługa Marketingowa | Case Study Fotz Studio"
+        description="Case study Enea Stadion Poznań: +340% zaangażowania, 2M+ wyświetleń/mc. Strona www, social media, produkcja wideo. Fotz Studio."
         canonical="https://fotz.pl/realizacje/enea-stadion"
         keywords="Enea Stadion, case study, marketing sportowy, social media, produkcja video, Poznań"
       />
@@ -797,6 +797,61 @@ export default function CaseStudyEnea() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Case study Enea Stadion Poznań — Kompleksowa obsługa marketingowa dla sportowej i rozrywkowej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Projekt dla Enea Stadion Poznań to przykład, jak profesjonalne kompleksowa obsługa marketingowa przekłada się
+              na realne wyniki biznesowe. Wzrost zaangażowania o 340% i ponad 2 miliony wyświetleń miesięcznie dzięki spójnej strategii content marketingu. Fotz Studio realizuje podobne projekty
+              dla firm z branży sportowej i rozrywkowej i pokrewnych — każdorazowo z indywidualnym podejściem
+              do celów i specyfiki klienta.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Każde case study w naszym portfolio pokazuje nie tylko efekt wizualny, ale przede wszystkim
+              mierzalne wyniki: wzrost ruchu organicznego, więcej zapytań ofertowych, wyższy współczynnik
+              konwersji lub zwiększona sprzedaż online. Wierzymy, że marketing musi przynosić zwrot
+              z inwestycji — i to udowadniamy konkretnymi liczbami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak pracujemy — proces realizacji projektu od briefu do efektów
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każdy projekt w Fotz Studio przebiega według sprawdzonego procesu: konsultacja i brief,
+              analiza rynku i konkurencji, strategia i koncepcja, projektowanie i realizacja,
+              testy i wdrożenie, optymalizacja i wsparcie po-wdrożeniowe. Klient jest informowany
+              o postępach na każdym etapie — żadnych niespodzianek w trakcie i po realizacji.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Transparentność to nasz standard. Regularnie raportujemy wyniki, proaktywnie
+              informujemy o problemach i rekomendujemy kolejne kroki. Długoterminowe relacje
+              z klientami to nasz największy sukces — wiele firm współpracuje z nami od lat.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Potrzebujesz podobnego projektu? Sprawdź nasze usługi kompleksowej obsługi marketingowej
+            </h2>
+            <p className="text-muted-foreground">
+              Jeśli szukasz partnera do realizacji projektu podobnego do Enea Stadion Poznań, zapraszamy
+              do kontaktu. Oferujemy bezpłatną konsultację i wycenę. Fotz Studio realizuje
+              projekty dla firm z całej Polski — pracujemy zdalnie z pełną efektywnością.
+              Skontaktuj się z nami, by omówić Twój projekt i sprawdzić, czy możemy osiągnąć
+              podobne wyniki dla Twojej firmy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

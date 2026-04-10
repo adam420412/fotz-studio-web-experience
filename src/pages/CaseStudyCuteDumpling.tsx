@@ -41,8 +41,8 @@ const CaseStudyCuteDumpling = () => {
   return (
     <Layout>
       <SEOHead
-        title="Cute as a Dumpling - Sklep z Ozdobami Świątecznymi | Case Study | Fotz Studio"
-        description="Realizacja sklepu e-commerce dla Cute as a Dumpling - marki oferującej ręcznie robione ozdoby świąteczne. Design, UX i optymalizacja konwersji."
+        title="Cute as a Dumpling — Sklep E-commerce z Ozdobami Świątecznymi | Case Study Fotz Studio"
+        description="Case study: sklep e-commerce dla Cute as a Dumpling — ręcznie robione ozdoby świąteczne. Design, UX i optymalizacja konwersji. Fotz Studio."
         canonical="https://fotz.pl/realizacje/cute-dumpling"
       />
       <BreadcrumbSchema items={[
@@ -353,6 +353,61 @@ const CaseStudyCuteDumpling = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Case study Cute as a Dumpling — Tworzenie sklepu e-commerce dla handmade i dekoracji świątecznych
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Projekt dla Cute as a Dumpling to przykład, jak profesjonalne tworzenie sklepu e-commerce przekłada się
+              na realne wyniki biznesowe. Sklep e-commerce z indywidualnym designem premium zwiększył konwersję i wartość średniego koszyka. Fotz Studio realizuje podobne projekty
+              dla firm z branży handmade i dekoracji świątecznych i pokrewnych — każdorazowo z indywidualnym podejściem
+              do celów i specyfiki klienta.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Każde case study w naszym portfolio pokazuje nie tylko efekt wizualny, ale przede wszystkim
+              mierzalne wyniki: wzrost ruchu organicznego, więcej zapytań ofertowych, wyższy współczynnik
+              konwersji lub zwiększona sprzedaż online. Wierzymy, że marketing musi przynosić zwrot
+              z inwestycji — i to udowadniamy konkretnymi liczbami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak pracujemy — proces realizacji projektu od briefu do efektów
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każdy projekt w Fotz Studio przebiega według sprawdzonego procesu: konsultacja i brief,
+              analiza rynku i konkurencji, strategia i koncepcja, projektowanie i realizacja,
+              testy i wdrożenie, optymalizacja i wsparcie po-wdrożeniowe. Klient jest informowany
+              o postępach na każdym etapie — żadnych niespodzianek w trakcie i po realizacji.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Transparentność to nasz standard. Regularnie raportujemy wyniki, proaktywnie
+              informujemy o problemach i rekomendujemy kolejne kroki. Długoterminowe relacje
+              z klientami to nasz największy sukces — wiele firm współpracuje z nami od lat.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Potrzebujesz podobnego projektu? Sprawdź nasze usługi sklepów internetowych
+            </h2>
+            <p className="text-muted-foreground">
+              Jeśli szukasz partnera do realizacji projektu podobnego do Cute as a Dumpling, zapraszamy
+              do kontaktu. Oferujemy bezpłatną konsultację i wycenę. Fotz Studio realizuje
+              projekty dla firm z całej Polski — pracujemy zdalnie z pełną efektywnością.
+              Skontaktuj się z nami, by omówić Twój projekt i sprawdzić, czy możemy osiągnąć
+              podobne wyniki dla Twojej firmy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };
