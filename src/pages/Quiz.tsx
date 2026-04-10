@@ -214,8 +214,8 @@ const Quiz = () => {
   return (
     <>
       <SEOHead
-        title="Quiz - Która usługa marketingowa jest dla Ciebie? | Fotz Studio"
-        description="Odpowiedz na 5 pytań i dowiedz się, które usługi marketingowe najlepiej odpowiadają potrzebom Twojego biznesu. Personalizowana rekomendacja w 2 minuty."
+        title="Quiz Marketingowy — Sprawdź Stan Marketingu Swojej Firmy | Fotz Studio"
+        description="Quiz marketingowy Fotz Studio — sprawdź stan marketingu swojej firmy online. Analiza SEO, social media i reklam w 5 minut. Bezpłatne narzędzie diagnostyczne."
         canonical="https://fotz.pl/quiz"
         keywords="quiz marketingowy, usługi marketingowe, test marketingowy"
       />
@@ -364,6 +364,51 @@ const Quiz = () => {
             </AnimatePresence>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Quiz marketingowy — zdiagnozuj stan marketingu swojej firmy online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Quiz marketingowy Fotz Studio to szybkie narzędzie do oceny stanu
+              marketingu online Twojej firmy. Odpowiedz na kilka pytań dotyczących
+              SEO, aktywności w social media, kampanii reklamowych i strony internetowej —
+              a na końcu otrzymasz diagnozę z konkretnymi rekomendacjami, co poprawić
+              w pierwszej kolejności.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Quiz zajmuje 3-5 minut i jest całkowicie bezpłatny. Wyniki pokazują,
+              w których obszarach marketingu masz mocne strony, a gdzie tracisz
+              potencjalne leady i klientów. To dobry punkt wyjścia przed rozmową
+              z agencją marketingową o możliwościach współpracy.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Ocena marketingu firmy — SEO, reklamy, social media i strona www
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Quiz ocenia cztery kluczowe obszary: widoczność w Google (SEO i pozycjonowanie),
+              aktywność i skuteczność w mediach społecznościowych, kampanie reklamowe
+              (Google Ads, Meta Ads) oraz jakość i konwersję strony internetowej.
+              Razem te obszary decydują o sukcesie firmy online.
+            </p>
+            <p className="text-muted-foreground">
+              Po wypełnieniu quizu możesz umówić się na bezpłatną konsultację z ekspertem
+              Fotz Studio, by omówić wyniki i konkretne kroki do poprawy marketingu.
+              Diagnoza marketingowa to pierwszy krok do skutecznych działań i lepszych wyników biznesowych.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

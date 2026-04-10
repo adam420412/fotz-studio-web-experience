@@ -41,8 +41,8 @@ export default function Akademia() {
     return (
       <>
         <SEOHead
-          title="Akademia FOTZ | Materiały Edukacyjne | Fotz Studio"
-          description="Akademia FOTZ - e-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego. Ucz się od ekspertów i rozwijaj swoje umiejętności."
+          title="Akademia FOTZ — Kursy i Materiały Edukacyjne z Marketingu Online | Fotz Studio"
+          description="Akademia FOTZ — kursy marketingowe, materiały edukacyjne, e-booki i webinary o SEO, Google Ads, social media i content marketingu. Nauka marketingu online z praktykami."
           canonical="https://fotz.pl/akademia/panel"
           noIndex={true}
         />
@@ -50,6 +50,64 @@ export default function Akademia() {
           <div className="min-h-screen flex items-center justify-center">
             <Loader2 className="w-8 h-8 animate-spin text-primary" />
           </div>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Akademia FOTZ — edukacja marketingowa dla firm i marketerów
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Akademia FOTZ to platforma edukacyjna Fotz Studio, na której znajdziesz
+              kursy, materiały wideo, e-booki i checklisty z marketingu online.
+              Edukujemy właścicieli firm, marketerów i freelancerów, którzy chcą
+              lepiej rozumieć SEO, Google Ads, social media marketing i content marketing.
+              Wiedza praktyczna oparta na realnych projektach — bez zbędnej teorii.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Akademia marketingowa online to inwestycja w kompetencje, które zwracają
+              się wielokrotnie. Firmy, które rozumieją mechanizmy marketingu internetowego,
+              podejmują lepsze decyzje, efektywniej współpracują z agencjami i osiągają
+              wyższy ROI ze swoich działań marketingowych.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Kursy SEO, Google Ads i social media — materiały edukacyjne z Akademii FOTZ
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              W Akademii FOTZ znajdziesz materiały edukacyjne z zakresu: SEO
+              i pozycjonowania stron (od podstaw po zaawansowane techniki link buildingu),
+              kampanii Google Ads i Meta Ads (struktura, optymalizacja, remarketing),
+              content marketingu i copywritingu, social media marketingu i analityki webowej
+              (Google Analytics 4, Search Console). Wszystkie kursy prowadzone przez
+              praktyków z Fotz Studio.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              E-booki, checklisty i szablony z Akademii FOTZ to gotowe narzędzia
+              do wdrożenia w swojej firmie od razu po pobraniu. Praktyczne, konkretne,
+              oparte na najnowszych danych i trendach rynkowych.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Nauka marketingu online — samodzielnie czy z agencją?
+            </h2>
+            <p className="text-muted-foreground">
+              Akademia FOTZ wyposaza Cię w wiedzę, by lepiej rozumieć marketing — i podejmować
+              świadome decyzje: co robić samodzielnie, a co zlecać agencji. Jeśli chcesz
+              wdrożyć nowo zdobytą wiedzę z pomocą ekspertów, Fotz Studio oferuje
+              bezpłatną konsultację marketingową. Edukacja i usługi to dwie ścieżki
+              do tego samego celu — sukcesu online Twojej firmy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
         </Layout>
       </>
     );

@@ -52,8 +52,8 @@ export default function AkademiaLanding() {
   return (
     <Layout>
       <SEOHead
-        title="Akademia FOTZ - Kursy i E-booki Marketingowe"
-        description="Gotowe materiały marketingowe: e-booki, kursy wideo i checklisty. Subskrypcja od 99 PLN/mies. Dołącz do Akademii FOTZ."
+        title="Akademia FOTZ — Kursy Marketingowe Online dla Firm i Marketerów | Fotz Studio"
+        description="Akademia FOTZ — kursy i e-booki marketingowe. Naucz się SEO, Google Ads, social media i content marketingu od praktyków. Dostęp online 24/7. Fotz Studio."
         canonical="https://fotz.pl/akademia"
       />
 
@@ -363,6 +363,52 @@ export default function AkademiaLanding() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Kursy marketingowe online — naucz się od praktyków z Fotz Studio
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Akademia FOTZ oferuje kursy marketingowe online tworzone przez praktyków
+              z wieloletnim doświadczeniem w prowadzeniu kampanii dla polskich firm.
+              Uczysz się tego, co naprawdę działa na polskim rynku — bez angielskojęzycznych
+              teorii oderwanych od rzeczywistości. Każdy kurs zawiera konkretne ćwiczenia,
+              szablony i case studies z prawdziwych projektów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kursy dostępne online 24/7 — uczysz się w swoim tempie, w dowolnym miejscu.
+              Materiały wideo, PDF-y do pobrania i quizy sprawdzające wiedzę. Certyfikat
+              ukończenia dla każdego kursu, który możesz dodać do profilu LinkedIn.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Dla kogo są kursy Akademii FOTZ? Właściciele firm, marketerzy, freelancerzy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Akademia FOTZ jest idealna dla: właścicieli firm chcących samodzielnie
+              prowadzić podstawowe działania marketingowe lub lepiej nadzorować agencję,
+              marketerów i specjalistów poszerzających kompetencje, freelancerów
+              budujących portfolio usług marketingowych oraz studentów chcących wejść
+              do branży marketingowej z praktyczną wiedzą.
+            </p>
+            <p className="text-muted-foreground">
+              Inwestycja w wiedzę marketingową to jedna z najlepszych decyzji biznesowych.
+              Nawet jeśli zlecasz marketing zewnętrznej agencji — wiedza pozwala Ci
+              oceniać jakość pracy, zadawać właściwe pytania i osiągać lepsze wyniki
+              ze współpracy. Zarejestruj się w Akademii FOTZ i zacznij się rozwijać już dziś.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

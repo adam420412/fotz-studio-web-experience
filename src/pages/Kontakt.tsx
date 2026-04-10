@@ -139,8 +139,8 @@ export default function Kontakt() {
   return (
     <Layout>
       <SEOHead
-        title="Kontakt | Fotz Studio Poznań"
-        description="Skontaktuj się z Fotz Studio. Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Umów bezpłatną konsultację."
+        title="Kontakt z Fotz Studio — Agencja Marketingowa Poznań | Napisz lub Zadzwoń"
+        description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i kampanii online."
         canonical="https://fotz.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"
       />
@@ -451,6 +451,62 @@ export default function Kontakt() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Skontaktuj się z nami — agencja marketingowa Fotz Studio Poznań
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio to agencja marketingowa z Poznania. Jesteśmy dostępni przez
+              formularz kontaktowy, e-mail, telefon i osobiście w biurze. Każde zapytanie
+              traktujemy priorytetowo — odpowiadamy w ciągu 24 godzin roboczych.
+              Niezależnie od etapu Twojego projektu — czy dopiero planujesz, czy potrzebujesz
+              szybkiej pomocy — skontaktuj się z nami.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Bezpłatna konsultacja marketingowa dostępna dla nowych klientów. Podczas
+              konsultacji omawiamy aktualną sytuację online Twojej firmy, potencjał
+              SEO i reklam płatnych oraz możliwości współpracy. Bez zobowiązań,
+              bez ukrytych opłat.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak nawiązać współpracę z agencją marketingową? Proste kroki do startu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nawiązanie współpracy z Fotz Studio jest proste: wyślij zapytanie przez formularz
+              lub e-mail → umówimy bezpłatną konsultację (online lub w biurze) → przygotujemy
+              ofertę dopasowaną do Twoich celów → podpiszemy umowę i zaczynamy działać.
+              Typowy czas od pierwszego kontaktu do startu projektu to 1-2 tygodnie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Pracujemy z firmami z całej Polski zdalnie — spotkania przez Zoom lub Google Meet,
+              komunikacja przez e-mail i Slack, dostęp do raportów online 24/7.
+              Jeśli jesteś z Poznania lub Wielkopolski, zapraszamy też do biura.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Zapytaj o ofertę SEO, stronę internetową, kampanię reklamową lub social media
+            </h2>
+            <p className="text-muted-foreground">
+              Fotz Studio realizuje projekty w zakresie: tworzenia stron internetowych
+              i sklepów e-commerce, pozycjonowania SEO, kampanii Google Ads i Meta Ads,
+              obsługi social media, content marketingu, produkcji wideo i identyfikacji
+              wizualnej. Wypełnij formularz kontaktowy, opisując swoje potrzeby —
+              przygotujemy wstępną ofertę w ciągu 48 godzin.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }
