@@ -432,7 +432,7 @@ const StronyInternetoweKrakow = () => {
                              hover:shadow-2xl hover:shadow-primary/10"
                   >
                     <div className="aspect-video overflow-hidden relative">
-                      <img 
+                      <img loading="lazy" 
                         src={study.image} 
                         alt={study.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"

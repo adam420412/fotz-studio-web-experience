@@ -76,7 +76,7 @@ export function LazyVideo({
       {/* Poster/Thumbnail when not playing */}
       {videoPoster && !isPlaying && (
         <div className="absolute inset-0 z-10">
-          <img 
+          <img loading="lazy" 
             src={videoPoster} 
             alt={title || "Video thumbnail"}
             className="w-full h-full object-cover"

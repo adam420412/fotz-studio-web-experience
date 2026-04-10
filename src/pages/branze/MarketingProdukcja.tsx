@@ -310,7 +310,7 @@ const MarketingProdukcja = () => {
             >
               <Link to="/realizacje/fps-cegielski" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={fpsImg} 
                     alt="FPS Cegielski - case study produkcja"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

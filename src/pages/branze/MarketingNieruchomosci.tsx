@@ -310,7 +310,7 @@ const MarketingNieruchomosci = () => {
             >
               <Link to="/realizacje/apartamenty-chorwacja" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={apartamentyImg} 
                     alt="Apartamenty Chorwacja - case study nieruchomości"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

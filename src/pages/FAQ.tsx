@@ -227,10 +227,10 @@ export default function FAQ() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+                <img loading="lazy" src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img src={officeSign} alt="Tabliczka Fotz Studio HOFA" className="w-full h-full object-cover" />
+                <img loading="lazy" src={officeSign} alt="Tabliczka Fotz Studio HOFA" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </div>

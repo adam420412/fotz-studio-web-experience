@@ -217,7 +217,7 @@ const Zasoby = () => {
                   >
                     {/* Thumbnail */}
                     <div className="aspect-video relative overflow-hidden">
-                      <img 
+                      <img loading="lazy" 
                         src={resource.thumbnail}
                         alt={resource.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

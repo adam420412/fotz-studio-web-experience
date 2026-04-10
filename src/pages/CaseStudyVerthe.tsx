@@ -112,7 +112,7 @@ const CaseStudyVerthe = () => {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden border border-border/30">
-                <img src={vertheImg} alt="Verthé - sklep e-commerce" className="w-full" />
+                <img loading="lazy" src={vertheImg} alt="Verthé - sklep e-commerce" className="w-full" />
               </div>
             </motion.div>
           </div>

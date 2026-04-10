@@ -310,7 +310,7 @@ const MarketingGastronomia = () => {
             >
               <Link to="/realizacje/cute-dumpling" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={cuteDumplingImg} 
                     alt="Cute Dumpling - case study gastronomia"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

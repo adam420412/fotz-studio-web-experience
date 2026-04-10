@@ -98,7 +98,7 @@ export default function BlogRemarketing() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015"
               alt="Remarketing - strategie odzyskiwania klientów"
               className="w-full rounded-2xl aspect-video object-cover"

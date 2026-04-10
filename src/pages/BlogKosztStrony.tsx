@@ -171,7 +171,7 @@ const BlogKosztStrony = () => {
                 </div>
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
-                  <img 
+                  <img loading="lazy" 
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015" 
                     alt="Ile kosztuje strona internetowa w 2025 - cennik" 
                     className="w-full h-full object-cover"

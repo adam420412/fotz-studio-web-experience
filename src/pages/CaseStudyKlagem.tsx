@@ -117,7 +117,7 @@ const CaseStudyKlagem = () => {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden border border-border/30">
-                <img src={klagemImg} alt="Klagem - strona internetowa" className="w-full" />
+                <img loading="lazy" src={klagemImg} alt="Klagem - strona internetowa" className="w-full" />
               </div>
             </motion.div>
           </div>

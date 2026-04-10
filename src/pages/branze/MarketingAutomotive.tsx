@@ -310,7 +310,7 @@ const MarketingAutomotive = () => {
             >
               <Link to="/realizacje/victory-cars" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={victoryCarsImg} 
                     alt="Victory Cars - case study automotive"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

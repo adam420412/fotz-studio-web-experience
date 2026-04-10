@@ -490,7 +490,7 @@ const IdentyfikacjaWizualna = () => {
               className="relative rounded-2xl overflow-hidden cursor-pointer group"
               onClick={() => setSelectedImage(klagemHero)}
             >
-              <img 
+              <img loading="lazy" 
                 src={klagemHero} 
                 alt="Klagem - identyfikacja wizualna strona główna" 
                 className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
@@ -522,7 +522,7 @@ const IdentyfikacjaWizualna = () => {
                 className="relative rounded-xl overflow-hidden cursor-pointer group aspect-[3/4]"
                 onClick={() => setSelectedImage(item.src)}
               >
-                <img 
+                <img loading="lazy" 
                   src={item.src} 
                   alt={`Klagem - ${item.title}`} 
                   className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
@@ -620,7 +620,7 @@ const IdentyfikacjaWizualna = () => {
                 className="relative rounded-xl overflow-hidden cursor-pointer group aspect-square bg-white border border-border p-4 flex items-center justify-center"
                 onClick={() => setSelectedImage(item.src)}
               >
-                <img 
+                <img loading="lazy" 
                   src={item.src} 
                   alt={`Ballinn - ${item.title}`} 
                   className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"

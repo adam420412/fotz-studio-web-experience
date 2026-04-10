@@ -310,7 +310,7 @@ const MarketingPrawoFinanse = () => {
             >
               <Link to="/realizacje/klagem" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={klagemlImg} 
                     alt="Klagem - case study meble premium"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

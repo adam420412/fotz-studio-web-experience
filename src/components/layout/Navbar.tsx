@@ -70,7 +70,7 @@ export function Navbar() {
               to="/"
               className="flex items-center"
             >
-              <img 
+              <img loading="lazy" 
                 src={logoFotz} 
                 alt="Fotz Studio" 
                 className="h-16 sm:h-20 md:h-24 lg:h-32 xl:h-36 w-auto"

@@ -151,7 +151,7 @@ const CaseStudyGierki = () => {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden border border-border/30">
-                <img src={gierkiImg} alt="Gierki Activity Bar - strona internetowa" className="w-full" />
+                <img loading="lazy" src={gierkiImg} alt="Gierki Activity Bar - strona internetowa" className="w-full" />
               </div>
             </motion.div>
           </div>
@@ -365,7 +365,7 @@ const CaseStudyGierki = () => {
                 className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
                 onClick={() => openLightbox(index)}
               >
-                <img 
+                <img loading="lazy" 
                   src={image.src} 
                   alt={image.alt} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

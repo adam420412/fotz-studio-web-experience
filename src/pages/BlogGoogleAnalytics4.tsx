@@ -98,7 +98,7 @@ export default function BlogGoogleAnalytics4() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070"
               alt="Google Analytics 4 - dashboard i raporty"
               className="w-full rounded-2xl aspect-video object-cover"

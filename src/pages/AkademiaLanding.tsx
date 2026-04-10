@@ -240,7 +240,7 @@ export default function AkademiaLanding() {
                 </div>
 
                 <div className="text-center mb-8 pt-4">
-                  <img src={logoFotz} alt="FOTZ" className="h-12 mx-auto mb-4" />
+                  <img loading="lazy" src={logoFotz} alt="FOTZ" className="h-12 mx-auto mb-4" />
                   <h3 className="text-2xl font-heading font-bold mb-2">Akademia FOTZ</h3>
                   <p className="text-muted-foreground">Pełny dostęp do wszystkich materiałów</p>
                 </div>

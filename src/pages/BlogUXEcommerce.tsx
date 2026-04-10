@@ -98,7 +98,7 @@ export default function BlogUXEcommerce() {
             </div>
 
             <div className="relative aspect-video rounded-2xl overflow-hidden mb-8">
-              <img 
+              <img loading="lazy" 
                 src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070"
                 alt="UX/UI w e-commerce"
                 className="w-full h-full object-cover"

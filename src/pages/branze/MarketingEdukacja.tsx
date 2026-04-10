@@ -310,7 +310,7 @@ const MarketingEdukacja = () => {
             >
               <Link to="/realizacje/przedszkole" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={przedszkoleImg} 
                     alt="Przedszkole - case study edukacja"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

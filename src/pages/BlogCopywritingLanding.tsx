@@ -98,7 +98,7 @@ export default function BlogCopywritingLanding() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2073"
               alt="Copywriting dla landing pages"
               className="w-full rounded-2xl aspect-video object-cover"

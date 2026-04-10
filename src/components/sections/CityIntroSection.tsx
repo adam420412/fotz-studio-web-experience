@@ -121,7 +121,7 @@ export const CityIntroSection = ({ content, cityName }: CityIntroSectionProps) =
                   )}
                 </div>
               ) : content.imageSrc ? (
-                <img 
+                <img loading="lazy" 
                   src={content.imageSrc}
                   alt={`Strony internetowe ${cityName}`}
                   className="w-full aspect-video object-cover"

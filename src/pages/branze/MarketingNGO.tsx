@@ -310,7 +310,7 @@ const MarketingNGO = () => {
             >
               <Link to="/realizacje/enea-stadion" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={eneaImg} 
                     alt="Enea Stadion - case study eventy i instytucje"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

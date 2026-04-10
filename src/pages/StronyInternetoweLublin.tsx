@@ -463,7 +463,7 @@ const StronyInternetoweLublin = () => {
                   <Link to={study.link} className="group block">
                     <div className="rounded-xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all">
                       <div className="aspect-video overflow-hidden">
-                        <img 
+                        <img loading="lazy" 
                           src={study.image} 
                           alt={study.title}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

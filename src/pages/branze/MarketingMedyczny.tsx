@@ -318,21 +318,21 @@ const MarketingMedyczny = () => {
             >
               <div className="grid grid-cols-2 gap-4">
                 <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img 
+                  <img loading="lazy" 
                     src={gabinetImg} 
                     alt="Nowoczesny gabinet stomatologiczny"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden">
-                  <img 
+                  <img loading="lazy" 
                     src={konsultacjaImg} 
                     alt="Konsultacja z pacjentem"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="col-span-2 aspect-video rounded-2xl overflow-hidden">
-                  <img 
+                  <img loading="lazy" 
                     src={poczekalniaImg} 
                     alt="Poczekalnia w klinice"
                     className="w-full h-full object-cover"

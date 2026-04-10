@@ -206,7 +206,7 @@ export function Footer() {
           <div className="mb-8 md:mb-10 pb-8 border-b border-border/30">
             <div className="flex flex-col sm:flex-row sm:items-start gap-6">
               <Link to="/" className="inline-block shrink-0">
-                <img 
+                <img loading="lazy" 
                   src={logoFotz} 
                   alt="Fotz Studio" 
                   className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto"

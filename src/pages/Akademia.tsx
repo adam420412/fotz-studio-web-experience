@@ -270,7 +270,7 @@ export default function Akademia() {
                       >
                         {ebook.thumbnail_url && (
                           <div className="aspect-[4/3] overflow-hidden">
-                            <img 
+                            <img loading="lazy" 
                               src={ebook.thumbnail_url} 
                               alt={ebook.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -322,7 +322,7 @@ export default function Akademia() {
                       >
                         <div className="aspect-video overflow-hidden relative">
                           {video.thumbnail_url ? (
-                            <img 
+                            <img loading="lazy" 
                               src={video.thumbnail_url} 
                               alt={video.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -370,7 +370,7 @@ export default function Akademia() {
                       >
                         {course.thumbnail_url && (
                           <div className="aspect-[21/9] overflow-hidden">
-                            <img 
+                            <img loading="lazy" 
                               src={course.thumbnail_url} 
                               alt={course.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

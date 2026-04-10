@@ -312,8 +312,8 @@ const FotografPoznan = () => {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4"
             >
-              <img src={portrait1} alt="Sesja portretowa" className="rounded-2xl aspect-[3/4] object-cover" />
-              <img src={portrait2} alt="Sesja lifestyle" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
+              <img loading="lazy" src={portrait1} alt="Sesja portretowa" className="rounded-2xl aspect-[3/4] object-cover" />
+              <img loading="lazy" src={portrait2} alt="Sesja lifestyle" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
             </motion.div>
           </div>
         </div>
@@ -329,8 +329,8 @@ const FotografPoznan = () => {
               viewport={{ once: true }}
               className="order-2 lg:order-1 grid grid-cols-2 gap-4"
             >
-              <img src={concert1} alt="Fotografia eventowa" className="rounded-2xl aspect-[3/4] object-cover" />
-              <img src={concert4} alt="Fotografia koncertowa" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
+              <img loading="lazy" src={concert1} alt="Fotografia eventowa" className="rounded-2xl aspect-[3/4] object-cover" />
+              <img loading="lazy" src={concert4} alt="Fotografia koncertowa" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
             </motion.div>
 
             <motion.div
@@ -457,7 +457,7 @@ const FotografPoznan = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <img src={portrait3} alt="Sesja artystyczna" className="rounded-2xl aspect-square object-cover w-full" />
+              <img loading="lazy" src={portrait3} alt="Sesja artystyczna" className="rounded-2xl aspect-square object-cover w-full" />
             </motion.div>
           </div>
         </div>

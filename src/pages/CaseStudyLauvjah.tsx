@@ -113,7 +113,7 @@ const CaseStudyLauvjah = () => {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden border border-border/30">
-                <img src={lauvjahImg} alt="Lauvjah Transport - strona internetowa" className="w-full" />
+                <img loading="lazy" src={lauvjahImg} alt="Lauvjah Transport - strona internetowa" className="w-full" />
               </div>
             </motion.div>
           </div>

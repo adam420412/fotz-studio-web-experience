@@ -537,7 +537,7 @@ const StronyInternetowe = () => {
                   <Link to={study.link} className="group block h-full">
                     <div className="rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
                       <div className="aspect-[16/10] overflow-hidden relative">
-                        <img 
+                        <img loading="lazy" 
                           src={study.image} 
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -570,7 +570,7 @@ const StronyInternetowe = () => {
                   <Link to={study.link} className="group block">
                     <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden">
                       <div className="aspect-square overflow-hidden">
-                        <img 
+                        <img loading="lazy" 
                           src={study.image} 
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -673,7 +673,7 @@ const StronyInternetowe = () => {
                     <Link key={index} to={study.link} className="group">
                       <div className="rounded-xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all">
                         <div className="aspect-[3/4] overflow-hidden">
-                          <img 
+                          <img loading="lazy" 
                             src={study.image} 
                             alt={study.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

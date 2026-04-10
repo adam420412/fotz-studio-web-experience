@@ -310,7 +310,7 @@ const MarketingIT = () => {
             >
               <Link to="/realizacje/rppg" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={rppgImg} 
                     alt="RPPG - case study IT"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

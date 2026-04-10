@@ -97,7 +97,7 @@ export default function BlogBudzetMarketingowy() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072"
               alt="Planowanie budżetu marketingowego"
               className="w-full rounded-2xl aspect-video object-cover"

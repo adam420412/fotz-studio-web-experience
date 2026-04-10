@@ -496,7 +496,7 @@ const AgencjaGraficzna = () => {
                 className="relative rounded-xl overflow-hidden cursor-pointer group aspect-video"
                 onClick={() => setSelectedImage(index)}
               >
-                <img 
+                <img loading="lazy" 
                   src={image.src} 
                   alt={image.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

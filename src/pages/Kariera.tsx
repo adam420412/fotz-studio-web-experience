@@ -183,14 +183,14 @@ export default function Kariera() {
               className="grid grid-cols-2 gap-3 md:gap-4 order-1 lg:order-2"
             >
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img src={teamBrainstorm2} alt="Zespół przy pracy" className="w-full h-full object-cover" />
+                <img loading="lazy" src={teamBrainstorm2} alt="Zespół przy pracy" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col gap-3 md:gap-4">
                 <div className="aspect-square rounded-xl overflow-hidden">
-                  <img src={teamMeeting3} alt="Spotkanie zespołu" className="w-full h-full object-cover" />
+                  <img loading="lazy" src={teamMeeting3} alt="Spotkanie zespołu" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-square rounded-xl overflow-hidden">
-                  <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+                  <img loading="lazy" src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
                 </div>
               </div>
             </motion.div>
