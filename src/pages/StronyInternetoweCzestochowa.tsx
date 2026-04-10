@@ -166,90 +166,40 @@ const StronyInternetoweCzestochowa = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Częstochowa — strony internetowe dla firm z Częstochowy
+              Strony internetowe Częstochowa — tworzenie stron www dla firm z regionu
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Częstochowa to nasza specjalność. Budujemy strony internetowe dla firm z Częstochowy,
-              które chcą zaprezentować perły Jury Krakowsko-Częstochowskiej z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Częstochowa to miasto, które kojarzy się przede wszystkim z Jasną Górą i pielgrzymkami — ale to też prężny ośrodek przemysłowy i usługowy. Sektor stalowy (ISD Częstochowa), metalurgiczny i rosnąca branża turystyczna tworzą różnorodny popyt na profesjonalne strony internetowe. Firmy związane z obsługą pielgrzymów, hotelarstwo i handel pamiątkami intensywnie digitalizują się — i potrzebują stron www na miarę swoich ambicji.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Częstochowy tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Częstochowa to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Tworzymy strony internetowe dla firm z Częstochowy i okolic — Zawiercie, Myszków, Blachownia. Zdalny model współpracy sprawia, że lokalizacja nie jest barierą. Projekt w Figmie, wdrożenie w React lub WordPress, optymalizacja SEO i 30-dniowy support po wdrożeniu. Termin: 3–5 tygodni.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Częstochowa — www dla Twojej firmy
+              Strony www dla turystyki i pielgrzymkowego biznesu
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Częstochowa to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Specyfika Częstochowy to sezonowy ruch pielgrzymkowy — setki tysięcy odwiedzających rocznie, z Polski i zagranicy. Hotele, pensjonaty, restauracje i sklepy z pamiątkami muszą być widoczne online, szczególnie w języku angielskim, włoskim i słowackim. Tworzymy wielojęzyczne strony turystyczne z systemem rezerwacji i integracją z mapami.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Częstochowie.
+              Dla firm produkcyjnych i B2B z Częstochowy projektujemy solidne strony korporacyjne z portfolio, danymi technicznymi i formularzami zapytań ofertowych. Eksport to kluczowy obszar dla lokalnego przemysłu — angielska wersja strony to konieczność dla firm nastawionych na rynki zachodnie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              SEO lokalne i regionalne — bądź widoczny w Częstochowie i na Śląsku
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Częstochowy tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Częstochowy budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Częstochowie? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Stron www Częstochowa tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Częstochowie. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
+              Optymalizacja lokalna dla firm z Częstochowy obejmuje frazy z geolokalizacją, konfigurację Google Moja Firma i budowanie linków z lokalnych katalogów. Dla firm działających na Śląsku rozszerzamy zasięg na Katowice, Sosnowiec i Gliwice — bez powielania treści, z właściwą strukturą URL.
             </p>
             <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Częstochowy dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
+              Skontaktuj się z nami — bezpłatna wycena w 24 godziny, projekt w 3–5 tygodni. Firmy z Częstochowy i regionu mogą liczyć na strony, które naprawdę sprzedają.
             </p>
           
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
             </div>
           </motion.div>
         </div>

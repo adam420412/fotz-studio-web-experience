@@ -233,90 +233,61 @@ const StronyInternetoweOlsztyn = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Olsztyn — strony internetowe dla firm z Olsztyna
+              Strony internetowe Olsztyn — tworzenie stron www dla firm z Warmii i Mazur
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Olsztyn to nasza specjalność. Budujemy strony internetowe dla firm z Olsztyna,
-              które chcą zaprezentować stolicy krainy Warmii i Mazur z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Olsztyn to stolica jednego z najbardziej atrakcyjnych turystycznie
+              regionów w Polsce — Warmii i Mazur. Jeziora, lasy, Wielkie Jeziora Mazurskie
+              i Kanał Elbląski przyciągają rocznie miliony turystów, co tworzy ogromny popyt
+              na profesjonalne strony internetowe: hotele, pensjonaty, agencje turystyczne,
+              wypożyczalnie jachtów i kajaków, restauracje i agroturystyki.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Olsztyna tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Olsztyn to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Olsztyn jest też centrum usług, akademickim (UWM — 14 wydziałów) i rosnącym
+              centrum logistycznym. Firmy spoza turystyki — producenci mebli, firmy budowlane,
+              biura rachunkowe, gabinety medyczne — coraz częściej inwestują w obecność
+              online, by dotrzeć do klientów z całego regionu.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Olsztyn — www dla Twojej firmy
+              Strony www dla turystyki i agroturystyki — region Warmii i Mazur
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Olsztyn to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Projektujemy strony dla obiektów turystycznych z naciskiem na piękne
+              galerie zdjęć, systemy rezerwacji online (BookingSync, Bookero),
+              integrację z Google Maps i wielojęzyczność (PL/EN/DE) dla gości z Niemiec,
+              Skandynawii i Ukrainy. Strona hotelu czy pensjonatu musi być wizualnie
+              zachwycająca — każde zdjęcie to argument za rezerwacją.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Olsztynie.
+              Tworzymy też strony dla firm usługowych z Olsztyna — gabinetów stomatologicznych,
+              fizjoterapeutycznych, kancelarii i firm budowlanych. Każda strona jest
+              zoptymalizowana pod lokalne frazy — „usługa + Olsztyn" — by klienci szukający
+              usług w mieście trafiali właśnie do Ciebie, a nie do konkurencji.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              SEO sezonowe i całoroczna widoczność — wyzwanie turystycznego regionu
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Olsztyna tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Olsztyna budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Olsztynie? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Stron www Olsztyn tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Olsztynie. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
+              Firmy turystyczne z Warmii i Mazur mierzą się z wyzwaniem sezonowości —
+              szczyt ruchu latem, cisza zimą. Budujemy strategie SEO i contentu,
+              które generują ruch całorocznie: zimowe pakiety weekendowe, oferty
+              dla firm (team building na Mazurach), spływy kajakowe wiosną i jesienią.
+              Strona to inwestycja na cały rok, nie tylko na sezon.
             </p>
             <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Olsztyna dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
+              Zdalny model współpracy sprawia, że obsługa firm z Olsztyna jest tak samo
+              sprawna jak z Warszawy czy Krakowa. Projekt w 3–5 tygodni, bezpłatna wycena
+              w 24 godziny. Skontaktuj się z nami i opowiedz o swoim biznesie —
+              stworzymy stronę, która będzie pracować dla Ciebie przez cały rok.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
             </div>
           </motion.div>
         </div>

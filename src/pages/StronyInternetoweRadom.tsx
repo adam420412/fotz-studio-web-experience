@@ -233,90 +233,40 @@ const StronyInternetoweRadom = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Radom — strony internetowe dla firm z Radomia
+              Strony internetowe Radom — tworzenie stron www dla firm z Mazowsza
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Radom to nasza specjalność. Budujemy strony internetowe dla firm z Radomia,
-              które chcą zaprezentować centrum Mazowsza Południowego z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Radom to drugie największe miasto Mazowsza po Warszawie — centrum przemysłowe z tradycjami zbrojeniowymi (PGZ, Łucznik), skórzanymi i lotniczymi (lotnisko Radom). Miasto dynamicznie przyciąga nowych inwestorów i rozbudowuje infrastrukturę — co oznacza rosnące zapotrzebowanie na profesjonalne strony www dla firm produkcyjnych, logistycznych i usługowych szukających klientów B2B i B2C.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Radomia tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Radom to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Firmy z Radomia obsługujemy zdalnie — projekt w Figmie, wdrożenie w React lub WordPress, pełna optymalizacja SEO. Bliskość Warszawy (100 km) sprawia, że część klientów radomskich firm pochodzi ze stolicy — strony optymalizujemy pod oba rynki jednocześnie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Radom — www dla Twojej firmy
+              Tworzenie stron dla radomskich firm — B2B i B2C
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Radom to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Sektor zbrojeniowy i obronny to specyfika Radomia — firmy z tej branży potrzebują stron z sekcją certyfikatów, przetargów publicznych i kontaktów dla partnerów instytucjonalnych. Tworzymy profesjonalne strony korporacyjne zgodne z wymogami zamówień publicznych i standardami branży obronnej.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Radomiu.
+              Dla mniejszych firm usługowych — gabinetów, salonów, restauracji, firm budowlanych — projektujemy przystępne strony wizytówkowe z lokalną optymalizacją SEO. Czas realizacji: 3–5 tygodni. Cena: od 2000 zł. Pełna dokumentacja i transfer dostępów.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              SEO dla firm z Radomia — lokalna widoczność w Google
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Radomia tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Radomia budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Radomiu? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Stron www Radom tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Radomiu. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
+              Frazy lokalne — „usługa + Radom", „usługa + Mazowsze" — to najtańszy sposób na pozyskanie klientów. Konfigurujemy Google Moja Firma, optymalizujemy stronę pod frazy lokalne i budujemy widoczność w mapach Google. Efekt: klienci z Radomia i okolic trafiają do Ciebie, a nie do konkurencji.
             </p>
             <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Radomia dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
+              Bezpłatna wycena w 24 godziny. Skontaktuj się z nami i porozmawiajmy o stronie internetowej dla Twojej firmy z Radomia.
             </p>
           
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
             </div>
           </motion.div>
         </div>

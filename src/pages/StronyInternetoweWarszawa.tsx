@@ -445,90 +445,96 @@ const StronyInternetoweWarszawa = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Warszawa — strony internetowe dla firm z Warszawy
+              Strony internetowe Warszawa — tworzenie stron www dla warszawskich firm
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Warszawa to nasza specjalność. Budujemy strony internetowe dla firm z Warszawy,
-              które chcą zaprezentować stolicy Polski z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Warszawa to największy rynek biznesowy w Polsce — prawie 400 000 zarejestrowanych
+              przedsiębiorstw, siedziby PKO BP, PZU, Orlenu i dziesiątek międzynarodowych korporacji.
+              To też miasto, w którym wyrosły globalne startupy: OLX, Docplanner, Packhelp, Brainly.
+              W tak konkurencyjnym środowisku profesjonalna strona internetowa nie jest opcją —
+              jest koniecznością. Tworzenie stron www w Warszawie to nasza codzienna praca.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Warszawy tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Warszawa to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Obsługujemy zarówno duże firmy, jak i freelancerów czy małe biznesy z Woli, Mokotowa,
+              Ursynowa czy Pragi. Każdą stronę internetową projektujemy indywidualnie — bez gotowych
+              szablonów, bez powtarzających się układów. Strony dla firm z Warszawy budujemy
+              w technologiach React i Next.js, które zapewniają błyskawiczne ładowanie i doskonałą
+              optymalizację pod algorytmy Google.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Warszawa — www dla Twojej firmy
+              Dlaczego firmy z Warszawy potrzebują silnej strony www?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Warszawa to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Warszawski rynek jest nasycony — w każdej branży działa kilkuset konkurentów walczących
+              o tę samą grupę klientów. Gdy potencjalny klient szuka usługi w Google, trafia do
+              pierwszych trzech wyników. Strona, która nie jest zoptymalizowana pod SEO, nie istnieje
+              dla większości klientów. Dlatego każdą stronę internetową dla firm z Warszawy budujemy
+              z myślą o pozycjonowaniu od pierwszego dnia projektu.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Warszawie.
+              Pracujemy zdalnie — spotkania i konsultacje odbywają się przez Google Meet lub Zoom,
+              a wszystkie etapy projektu są dostępne online w czasie rzeczywistym. Mimo braku
+              fizycznego biura w Warszawie, nasi klienci mają pełen wgląd w postęp prac przez
+              całą dobę. Ten model sprawdza się doskonale w dynamicznym środowisku stolicy.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              Strony internetowe dla różnych sektorów warszawskiego rynku
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Warszawy tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
+              Warszawa to mozaika sektorów. Tworzymy strony internetowe dla firm prawniczych
+              z centrum, agencji nieruchomości z Wilanowa, restauracji na Starym Mieście,
+              kancelarii podatkowych z Mokotowa i startupów technologicznych z Mordoru.
+              Każda branża ma inne potrzeby — od rozbudowanych systemów rezerwacji po proste
+              strony prezentacyjne z formularzem kontaktowym.
             </p>
             <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Warszawy budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
+              Szczególnym wyzwaniem dla warszawskich firm jest wielojęzyczność — część naszych
+              klientów ze stolicy potrzebuje stron w kilku wersjach językowych (PL/EN/DE/UK),
+              by obsługiwać klientów zagranicznych lub expat community. Projektujemy i kodujemy
+              wielojęzyczne strony www bez kompromisów w zakresie wydajności i pozycjonowania.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
+              Proces tworzenia strony www — jak wygląda współpraca?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Warszawie? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
+              Zaczynamy od bezpłatnej konsultacji, podczas której poznajemy Twój biznes, grupę
+              docelową i cele strony. Następnie przygotowujemy projekt graficzny w Figmie —
+              widzisz dokładnie, jak będzie wyglądać strona, zanim powstanie jedna linia kodu.
+              Po akceptacji projektu przechodzimy do wdrożenia w wybranej technologii.
             </p>
             <p className="text-muted-foreground mb-6">
-              Stron www Warszawa tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
+              Standardowy projekt strony internetowej dla firmy z Warszawy trwa 3–6 tygodni.
+              W tym czasie dostarczamy: projekt UX/UI, responsywną stronę www, podstawową
+              optymalizację SEO (meta tagi, schema, sitemap, prędkość), szkolenie z obsługi CMS
+              i 30-dniowy support po wdrożeniu. Strony internetowe dla warszawskich firm
+              przekazujemy z pełną dokumentacją i dostępem administracyjnym.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
+              Lokalne SEO dla firm z Warszawy — znajdź się w Google Maps
             </h2>
             <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Warszawie. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
+              Dla firm z lokalną obsługą klientów — gabinetów, restauracji, salonów, kancelarii —
+              kluczowe jest pojawienie się w wynikach lokalnych Google. Optymalizujemy strony
+              pod frazy z geolokalizacją („usługa + Warszawa", „usługa + Mokotów") i integrujemy
+              je z profilem Google Moja Firma. To podwójna widoczność: w organicznych wynikach
+              i w mapach Google — bezpłatny ruch od klientów w Twojej okolicy.
             </p>
             <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Warszawy dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
+              Jeśli szukasz partnera do tworzenia strony internetowej dla firmy z Warszawy,
+              skontaktuj się z nami. Bezpłatna wycena w ciągu 24 godzin, projekt w 3–6 tygodni,
+              gwarancja satysfakcji na każdym etapie. Dziesiątki firm ze stolicy już nam zaufały —
+              dołącz do nich i zacznij pozyskiwać klientów przez internet.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
             </div>
           </motion.div>
         </div>

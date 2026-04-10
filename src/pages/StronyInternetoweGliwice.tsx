@@ -226,90 +226,40 @@ const StronyInternetoweGliwice = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Gliwice — strony internetowe dla firm z Gliwic
+              Strony internetowe Gliwice — tworzenie stron www dla firm z aglomeracji śląskiej
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Gliwice to nasza specjalność. Budujemy strony internetowe dla firm z Gliwic,
-              które chcą zaprezentować centrum Górnego Śląska z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Gliwice to miasto-laboratorium przemysłu 4.0 na Śląsku. Politechnika Śląska, GM Manufacturing Poland (produkcja Opla), Centrum Edukacji i Biznesu "Nowe Gliwice" i rosnący klaster IT tworzą środowisko, w którym nowoczesność jest standardem. Firmy z Gliwic — zarówno technologiczne startupy jak i tradycyjne zakłady produkcyjne — potrzebują stron www na poziomie odpowiadającym ich ambicjom.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Gliwic tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Gliwice to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Gliwice są częścią GOP (Górnośląski Okręg Przemysłowy) — aglomeracji 2 milionów mieszkańców. Strony tworzone dla firm z Gliwic optymalizujemy pod frazy lokalne i aglomeracyjne, by docierać do klientów z całego Śląska: Katowic, Bytomia, Zabrza.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Gliwice — www dla Twojej firmy
+              Strony www dla technologii i automotive — Śląski Kontekst
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Gliwice to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Sektor automotive jest mocno obecny w Gliwicach — dostawcy GM, firmy logistyczne i serwisowe potrzebują stron B2B z sekcją partnerstwa, certyfikatów i katalogu usług. Projektujemy strony korporacyjne z wysokimi standardami wizualnymi i technicznymi — Core Web Vitals na poziomie top 10% w Polsce.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Gliwicach.
+              Dla środowiska akademickiego i startupowego Gliwic tworzymy strony dla spin-offów Politechniki, firm doradczych i agencji technologicznych. Strony, które muszą jednocześnie rekrutować pracowników, pozyskiwać klientów i budować markę eksperta.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              SEO dla firm z Gliwic i aglomeracji górnośląskiej
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Gliwic tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Gliwic budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Gliwicach? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Stron www Gliwice tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Gliwicach. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
+              Optymalizujemy strony pod słowa kluczowe z Gliwic i całego GOP. Dla firm z zasięgiem ogólnopolskim budujemy strukturę treści, które rankują na frazy ogólne i lokalne jednocześnie. Google Moja Firma, lokalne linki, cytaty — pełen pakiet lokalnego SEO.
             </p>
             <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Gliwic dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
+              Skontaktuj się z nami — bezpłatna wycena w 24 godziny, projekt w 3–5 tygodni. Tworzymy strony dla firm z Gliwic, które wyróżniają się na tle śląskiej konkurencji.
             </p>
           
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
             </div>
           </motion.div>
         </div>

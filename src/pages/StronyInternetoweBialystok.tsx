@@ -214,90 +214,65 @@ const StronyInternetoweBialystok = () => {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Białystok — strony internetowe dla firm z Białegostoku
+              Strony internetowe Białystok — tworzenie stron www dla firm z Podlasia
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Białystok to nasza specjalność. Budujemy strony internetowe dla firm z Białegostoku,
-              które chcą zaprezentować stolicy województwa podlaskiego z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Białystok to największe miasto wschodniej Polski i centrum gospodarcze
+              Podlasia. Lokalna gospodarka opiera się na przemyśle spożywczym
+              (Mlekpol, Bialski), medycznym (Uniwersytet Medyczny), akademickim
+              i rosnącym sektorze e-commerce. Firmy z regionu coraz aktywniej
+              rozwijają sprzedaż online — i potrzebują profesjonalnych stron www,
+              które im w tym pomagają.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Białegostoku tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Białystok to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Białystok jest też bramą do rynku wschodniej Europy i Litwy.
+              Część firm z regionu obsługuje klientów z Litwy, Białorusi (rynek UE)
+              i Ukrainy — co oznacza potrzebę stron wielojęzycznych.
+              Projektujemy strony internetowe z pełną obsługą i18n (PL/EN/LT/UK)
+              bez kompromisów w zakresie wydajności i pozycjonowania.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Białystok — www dla Twojej firmy
+              E-commerce i handel online — Białystok i region Podlaski
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Białystok to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Rynek e-commerce w Białymstoku i regionie rośnie dynamicznie.
+              Lokalni producenci żywności, odzieży i wyrobów rzemieślniczych
+              coraz częściej sprzedają przez internet — zarówno na platformach
+              jak Allegro i Amazon, jak i przez własne sklepy online.
+              Tworzymy sklepy e-commerce w WooCommerce i Shopify, integrując je
+              z systemami magazynowymi i kurierskimi.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Białymstoku.
+              Dla małych i średnich firm handlowych z Białegostoku projektujemy
+              przystępne strony wizytówkowe i katalogowe — funkcjonalne, szybkie
+              i zoptymalizowane pod lokalny Google. Czas realizacji: 3–5 tygodni,
+              cena: od 2000 zł. Bez ukrytych kosztów, z pełnym transferem dostępów.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              Lokalne SEO w Białymstoku — bądź widoczny w Google dla klientów z Podlasia
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Białegostoku tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Białegostoku budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Białymstoku? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Stron www Białystok tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Białymstoku. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
+              Optymalizacja lokalna dla firm z Białegostoku oznacza widoczność pod frazami
+              „usługa + Białystok", „usługa + Podlasie" i w Google Maps.
+              Konfigurujemy profil Google Moja Firma, zbieramy opinie i dbamy o spójność
+              NAP (nazwa, adres, telefon) na wszystkich platformach.
+              Dla firm obsługujących klientów z okolic — Suwałki, Łomża, Augustów —
+              rozszerzamy zasięg o frazy regionalne.
             </p>
             <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Białegostoku dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
+              Jeśli prowadzisz firmę w Białymstoku lub na Podlasiu i potrzebujesz
+              profesjonalnej strony internetowej — skontaktuj się z nami.
+              Bezpłatna wycena w 24 godziny, zdalny model współpracy,
+              pełna optymalizacja SEO. Zacznij pozyskiwać klientów przez internet.
             </p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
             </div>
           </motion.div>
         </div>
