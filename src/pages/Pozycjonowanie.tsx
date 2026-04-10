@@ -277,10 +277,10 @@ const Pozycjonowanie = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie Stron WWW | SEO Google | Fotz"
-        description="Pozycjonowanie stron internetowych w Google. Skuteczne SEO, audyt strony, link building. Zwiększamy widoczność i ruch organiczny. Sprawdź cennik."
+        title="Pozycjonowanie Stron Internetowych | SEO Poznań | Fotz"
+        description="Pozycjonowanie stron internetowych w Google. Skuteczne SEO, audyt strony, link building. Zwiększamy widoczność i ruch organiczny dla firm z Poznania. Sprawdź cennik."
         canonical="https://fotz.pl/seo/pozycjonowanie"
-        keywords="pozycjonowanie stron, SEO, pozycjonowanie Google, optymalizacja SEO, link building, audyt SEO"
+        keywords="pozycjonowanie stron internetowych, SEO Poznań, pozycjonowanie Google, optymalizacja SEO, link building, audyt SEO, pozycjonowanie stron"
       />
       
       <ServiceSchema 

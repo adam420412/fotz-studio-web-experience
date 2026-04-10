@@ -271,8 +271,8 @@ const SocialMedia = () => {
   return (
     <>
       <SEOHead
-        title="Agencja Social Media | Obsługa FB, IG, LinkedIn | Fotz"
-        description="Agencja social media - prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie. Pakiety od 2500 zł/mies."
+        title="Obsługa Social Media | FB, IG, TikTok, LinkedIn | Fotz"
+        description="Obsługa social media dla firm: prowadzenie Facebooka, Instagrama, TikToka i LinkedIn. Strategia, content foto/video, kampanie Meta Ads. Pakiety od 2500 zł/mies."
         canonical="https://fotz.pl/social-media/obsluga"
         keywords="agencja social media, marketing social media, prowadzenie facebooka, instagram marketing, linkedin marketing"
       />

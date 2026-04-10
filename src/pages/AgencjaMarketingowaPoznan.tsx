@@ -186,10 +186,10 @@ export default function AgencjaMarketingowaPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Poznań – Social Media i Marketing | Fotz Studio"
-        description="Agencja marketingowa w Poznaniu. Kompleksowe usługi: social media, kampanie Google Ads i Meta Ads, strony internetowe, SEO i branding."
+        title="Agencja Marketingowa Poznań | Marketing 360° | Fotz"
+        description="Agencja marketingowa Poznań z 160+ opiniami. Kompleksowy marketing: social media, Google Ads, Meta Ads, SEO, strony www i branding. Bezpłatna konsultacja."
         canonical="https://fotz.pl/agencja-marketingowa-poznan"
-        keywords="agencja marketingowa Poznań, marketing Poznań, social media Poznań, kampanie reklamowe Poznań, marketing internetowy Poznań, Google Ads Poznań, reklama internetowa Poznań, agencja social media, SEO Poznań"
+        keywords="agencja marketingowa Poznań, marketing internetowy Poznań, agencja 360 poznań, social media Poznań, kampanie reklamowe Poznań, Google Ads Poznań, reklama internetowa Poznań, agencja social media, SEO Poznań, agencja reklamowa poznań"
       />
 
       {/* Structured Data */}
@@ -287,6 +287,33 @@ export default function AgencjaMarketingowaPoznan() {
         >
           <ChevronDown className="w-8 h-8 text-foreground/40" />
         </motion.div>
+      </section>
+
+      {/* Stats Bar */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-[#75143F]/10 via-background to-[#0F3053]/10 border-y border-foreground/10">
+        <div className="container px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
+          >
+            {[
+              { value: "160+", label: "opinii 5★ w Google" },
+              { value: "8+", label: "lat na rynku" },
+              { value: "300+", label: "zrealizowanych projektów" },
+              { value: "100+", label: "aktywnych klientów" },
+            ].map((stat, i) => (
+              <motion.div key={i} variants={fadeIn}>
+                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent mb-1">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-foreground/60">{stat.label}</div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </section>
 
       {/* Why Us Section */}
@@ -458,6 +485,63 @@ export default function AgencjaMarketingowaPoznan() {
         </div>
       </section>
 
+      {/* Industries / Branże Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-[#75143F]/5">
+        <div className="container px-4">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+            className="max-w-6xl mx-auto"
+          >
+            <motion.div variants={fadeIn} className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+                Obsługujemy firmy z różnych{" "}
+                <span className="bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">
+                  branż
+                </span>
+              </h2>
+              <p className="text-foreground/70 max-w-2xl mx-auto">
+                Nasza agencja marketingowa z Poznania ma doświadczenie w tworzeniu strategii dla firm z różnych sektorów.
+                Znamy specyfikę każdej branży i dopasowujemy działania do jej wymagań.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[
+                { icon: "🛒", name: "E-commerce", desc: "Sklepy internetowe, dropshipping, marketplace" },
+                { icon: "🍽️", name: "Gastronomia", desc: "Restauracje, kawiarnie, catering, food delivery" },
+                { icon: "🏗️", name: "Budownictwo", desc: "Deweloperzy, wykonawcy, materiały budowlane" },
+                { icon: "💆", name: "Beauty & Wellness", desc: "Salony urody, spa, kliniki estetyczne" },
+                { icon: "🏥", name: "Medycyna", desc: "Przychodnie, gabinety lekarskie, stomatologia" },
+                { icon: "⚖️", name: "Prawo & Finanse", desc: "Kancelarie prawne, doradcy finansowi, biura rachunkowe" },
+                { icon: "🏠", name: "Nieruchomości", desc: "Agencje nieruchomości, deweloperzy, zarządcy" },
+                { icon: "🎓", name: "Edukacja", desc: "Szkoły, kursy online, platformy e-learningowe" },
+              ].map((industry, i) => (
+                <motion.div
+                  key={i}
+                  variants={fadeIn}
+                  className="p-5 rounded-xl bg-background border border-foreground/10 hover:border-[#75143F]/30 transition-all duration-300"
+                >
+                  <div className="text-3xl mb-3">{industry.icon}</div>
+                  <h3 className="font-heading font-semibold text-foreground mb-1 text-sm">
+                    {industry.name}
+                  </h3>
+                  <p className="text-xs text-foreground/60">{industry.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div variants={fadeIn} className="mt-10 text-center">
+              <p className="text-foreground/60 text-sm">
+                Twoja branża nie jest na liście? <Link to="/kontakt" className="text-[#75143F] hover:underline font-medium">Skontaktuj się z nami</Link> — obsługujemy firmy z każdego sektora.
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Proof Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-[#0F3053]/10 to-background">
         <div className="container px-4">
@@ -505,26 +589,42 @@ export default function AgencjaMarketingowaPoznan() {
                 </Link>
               </motion.div>
 
-              {/* Testimonial Card */}
-              <motion.div 
+              {/* Testimonial Cards */}
+              <motion.div
                 variants={fadeIn}
-                className="p-8 rounded-2xl bg-background border border-foreground/10"
+                className="flex flex-col gap-6"
               >
-                <div className="flex items-center gap-2 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-5 h-5 text-[#75143F]" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+                <div className="p-6 rounded-2xl bg-background border border-foreground/10">
+                  <div className="flex items-center gap-1 mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-[#75143F]" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <blockquote className="text-foreground/80 italic mb-4 text-sm">
+                    "Fotz Studio zrobiło dla nas kompletną transformację wizerunkową — nowa strona, social media i kampania Meta Ads. W ciągu 3 miesięcy liczba zapytań ofertowych wzrosła o 180%. Polecam każdemu, kto chce realnych wyników."
+                  </blockquote>
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">Marcin K.</p>
+                    <p className="text-xs text-foreground/60">Właściciel, firma budowlana, Poznań</p>
+                  </div>
                 </div>
-                <blockquote className="text-foreground/80 italic mb-6">
-                  "Posłuchaj, co mówią nasi klienci z Poznania i okolic. Ich opinie potwierdzają, że nasza agencja marketingowa to nie tylko wykonawca, 
-                  ale przede wszystkim partner, który rozumie potrzeby biznesu i potrafi stworzyć skuteczne strategie marketingowe. 
-                  Dzięki nam dotarli do nowych klientów, rozwinęli swój wizerunek w mediach społecznościowych i zwiększyli sprzedaż."
-                </blockquote>
-                <div>
-                  <p className="font-semibold text-foreground">Zadowolony Klient</p>
-                  <p className="text-sm text-foreground/60">Właściciel firmy z Poznania</p>
+                <div className="p-6 rounded-2xl bg-background border border-foreground/10">
+                  <div className="flex items-center gap-1 mb-3">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-[#75143F]" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <blockquote className="text-foreground/80 italic mb-4 text-sm">
+                    "Profesjonalne podejście, terminowość i świetna komunikacja. Fotz prowadzi nasze social media od roku — zaangażowanie pod postami wzrosło 4-krotnie, a sprzedaż przez Instagram regularnie rośnie."
+                  </blockquote>
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">Anna W.</p>
+                    <p className="text-xs text-foreground/60">Właścicielka, sklep online, Poznań</p>
+                  </div>
                 </div>
               </motion.div>
             </div>
