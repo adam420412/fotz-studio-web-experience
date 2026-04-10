@@ -7,9 +7,9 @@ import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const PozycjonowanieStronPoznan = () => {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Pozycjonowanie Stron Poznań — Agencja SEO dla Firm z Poznania | Fotz Studio"
         description="Pozycjonowanie stron internetowych Poznań — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Poznania. Fotz Studio."
@@ -419,6 +419,7 @@ const PozycjonowanieStronPoznan = () => {
       </section>
 
     </Layout>
+    </>
   );
 };
 

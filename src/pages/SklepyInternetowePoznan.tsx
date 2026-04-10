@@ -60,9 +60,9 @@ const faqItems = [
 
 export default function SklepyInternetowePoznan() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Sklepy Internetowe Poznań — Tworzenie E-commerce i Sklepów Online | Fotz Studio"
         description="Tworzenie sklepów internetowych Poznań — e-commerce WooCommerce, Shopify, PrestaShop dla firm z Poznania. Projektowanie sklepów online z integracjami…"
@@ -404,5 +404,6 @@ export default function SklepyInternetowePoznan() {
       </section>
 
     </Layout>
+    </>
   );
 }

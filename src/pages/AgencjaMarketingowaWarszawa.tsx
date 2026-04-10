@@ -162,9 +162,9 @@ const faqItems = [
 
 export default function AgencjaMarketingowaWarszawa() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Agencja Marketingowa Warszawa — Marketing Internetowy dla Firm | Fotz Studio"
         description="Agencja marketingowa Warszawa — SEO, Google Ads, social media, tworzenie stron internetowych. Kompleksowy marketing digital dla firm z Warszawy. Fotz Studio."
@@ -611,5 +611,6 @@ export default function AgencjaMarketingowaWarszawa() {
       </section>
 
     </Layout>
+    </>
   );
 }

@@ -45,9 +45,9 @@ export default function Podziekowanie() {
   }, []);
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Dziękujemy za zapytanie | Fotz Studio"
         description="Otrzymaliśmy Twoje zapytanie. Skontaktujemy się z Tobą w ciągu 24 godzin."
@@ -161,5 +161,6 @@ export default function Podziekowanie() {
         </div>
       </section>
     </Layout>
+    </>
   );
 }

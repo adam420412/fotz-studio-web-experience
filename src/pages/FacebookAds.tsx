@@ -128,9 +128,9 @@ const FacebookAds = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Facebook Ads — Reklama na Facebooku dla Firm | Kampanie Meta Ads | Fotz Studio"
         description="Facebook Ads — tworzenie i prowadzenie kampanii reklamowych na Facebooku. Targetowanie, kreacje, retargeting i optymalizacja ROAS. Fotz Studio."
@@ -730,6 +730,7 @@ const FacebookAds = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

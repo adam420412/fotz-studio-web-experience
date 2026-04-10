@@ -158,9 +158,9 @@ const TikTokAds = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="TikTok Ads — Reklama na TikToku dla Firm | Kampanie TikTok | Fotz Studio"
         description="TikTok Ads — tworzenie i prowadzenie reklam na TikToku. In-Feed Ads, TopView, Branded Effects. Skuteczne kampanie dla firm na TikToku. Fotz Studio."
@@ -544,6 +544,7 @@ const TikTokAds = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

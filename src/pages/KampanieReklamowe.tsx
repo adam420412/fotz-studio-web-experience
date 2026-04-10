@@ -208,9 +208,9 @@ const KampanieReklamowe = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Kampanie Reklamowe Google Ads i Meta Ads — Reklama Online dla Firm | Fotz Studio"
         description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Skuteczna reklama online dla firm — planowanie, prowadzenie i optymalizacja…"
@@ -646,6 +646,7 @@ const KampanieReklamowe = () => {
       </section>
 
     </Layout>
+    </>
   );
 };
 

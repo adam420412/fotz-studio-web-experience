@@ -88,9 +88,9 @@ const faqItems = [
 
 export default function AgencjaSEOPoznan() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Agencja SEO Poznań — Pozycjonowanie Stron Internetowych | Fotz Studio"
         description="Agencja SEO Poznań — pozycjonowanie stron internetowych, audyt SEO, link building i optymalizacja techniczna. Zwiększ widoczność w Google. Fotz Studio."
@@ -449,5 +449,6 @@ export default function AgencjaSEOPoznan() {
       </section>
 
     </Layout>
+    </>
   );
 }

@@ -199,9 +199,9 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
 
 export default function FacebookInstagramAds() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Kampania Facebook Ads - Reklama na Facebooku dla Firm | Cennik | Fotz Studio"
         description="Kampanie Facebook Ads dla firm — reklama na Facebooku i Instagramie. Formy reklamy, targetowanie odbiorców, cennik. Agencja Facebook Ads — bezpłatna wycena 24h."
@@ -545,5 +545,6 @@ export default function FacebookInstagramAds() {
 
       <ContactSection />
     </Layout>
+    </>
   );
 }

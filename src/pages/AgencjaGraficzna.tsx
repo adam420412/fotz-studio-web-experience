@@ -144,9 +144,9 @@ const AgencjaGraficzna = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Agencja Graficzna Poznań — Projektowanie Graficzne i Identyfikacja Wizualna | Fotz Studio"
         description="Agencja graficzna Poznań — projektowanie graficzne, identyfikacja wizualna firmy, logo, materiały reklamowe, grafika na social media. Fotz Studio."
@@ -801,6 +801,7 @@ const AgencjaGraficzna = () => {
       </section>
 
     </Layout>
+    </>
   );
 };
 

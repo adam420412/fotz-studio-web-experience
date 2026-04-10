@@ -259,9 +259,9 @@ export default function AudytSEO() {
   };
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Darmowy Audyt SEO Online — Audyt Strony Internetowej i Analiza SEO | Fotz Studio"
         description="Darmowy audyt SEO online — sprawdź swoją stronę, wykryj błędy i dowiedz się jak poprawić widoczność w Google. Kompleksowy audyt SEO strony internetowej…"
@@ -579,5 +579,6 @@ export default function AudytSEO() {
       </section>
 
     </Layout>
+    </>
   );
 }

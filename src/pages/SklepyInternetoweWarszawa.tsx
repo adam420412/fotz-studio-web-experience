@@ -144,9 +144,9 @@ const faqItems = [
 
 export default function SklepyInternetoweWarszawa() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Sklepy Internetowe Warszawa — Tworzenie Sklepu E-commerce | Fotz Studio"
         description="Tworzenie sklepów internetowych Warszawa — sklep e-commerce WooCommerce, Shopify dla firm z Warszawy. Projektowanie sklepów online z SEO i integracjami…"
@@ -573,5 +573,6 @@ export default function SklepyInternetoweWarszawa() {
       </section>
 
     </Layout>
+    </>
   );
 }

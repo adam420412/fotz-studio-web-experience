@@ -179,9 +179,9 @@ const allFaqs = faqCategories.flatMap((cat) =>
 
 export default function FAQ() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="FAQ — Najczęściej Zadawane Pytania o Marketing, SEO i Strony WWW | Fotz Studio"
         description="FAQ Fotz Studio — odpowiedzi na najczęstsze pytania o SEO, marketing internetowy, tworzenie stron www, Google Ads i social media. Wszystko co chcesz…"
@@ -388,5 +388,6 @@ export default function FAQ() {
       </section>
 
     </Layout>
+    </>
   );
 }

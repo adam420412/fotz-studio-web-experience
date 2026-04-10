@@ -137,9 +137,9 @@ export default function Kontakt() {
   };
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Kontakt z Fotz Studio — Agencja Marketingowa Poznań | Napisz lub Zadzwoń"
         description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i…"
@@ -517,5 +517,6 @@ export default function Kontakt() {
       </section>
 
     </Layout>
+    </>
   );
 }

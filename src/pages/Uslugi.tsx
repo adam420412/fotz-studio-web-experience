@@ -421,9 +421,9 @@ export default function Uslugi() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Usługi Marketingowe — SEO, Strony WWW, Reklamy i Social Media | Fotz Studio"
         description="Usługi marketingowe Fotz Studio: SEO, strony internetowe, Google Ads, Meta Ads, social media, content marketing i produkcja wideo. Pełna oferta agencji…"
@@ -729,5 +729,6 @@ export default function Uslugi() {
       </section>
 
     </Layout>
+    </>
   );
 }

@@ -781,9 +781,9 @@ export default function Cennik() {
   };
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Cennik Usług Marketingowych — Ile Kosztuje SEO, Strona WWW i Reklamy? | Fotz Studio"
         description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo. Transparentne ceny…"
@@ -1565,5 +1565,6 @@ export default function Cennik() {
       </section>
 
     </Layout>
+    </>
   );
 }

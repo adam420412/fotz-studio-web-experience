@@ -136,9 +136,9 @@ const LinkedInAds = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="LinkedIn Ads — Reklama na LinkedIn dla Firm B2B | Fotz Studio"
         description="LinkedIn Ads — kampanie reklamowe na LinkedIn dla firm B2B. Sponsored Content, InMail, Lead Gen Forms i display. Fotz Studio."
@@ -552,6 +552,7 @@ const LinkedInAds = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

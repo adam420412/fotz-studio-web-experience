@@ -208,9 +208,9 @@ export default function FotografiaZDrona() {
   };
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Fotografia z Drona Poznań — Zdjęcia Lotnicze 4K i Film Dronem | Fotz Studio"
         description="Fotografia z drona Poznań — profesjonalne zdjęcia z drona 4K, film dronem, ujęcia lotnicze dla firm, deweloperów i agencji nieruchomości. Fotz Studio."
@@ -696,5 +696,6 @@ export default function FotografiaZDrona() {
       </section>
 
     </Layout>
+    </>
   );
 }

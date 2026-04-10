@@ -148,9 +148,9 @@ const faqItems = [
 
 export default function SklepyInternetoweKrakow() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Sklepy Internetowe Kraków — Tworzenie Sklepów E-commerce | Fotz Studio"
         description="Tworzenie sklepów internetowych Kraków — sklep online WooCommerce, Shopify dla firm z Krakowa. E-commerce z SEO, integracjami płatności i obsługą. Fotz Studio."
@@ -567,5 +567,6 @@ export default function SklepyInternetoweKrakow() {
       </section>
 
     </Layout>
+    </>
   );
 }

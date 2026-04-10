@@ -82,9 +82,9 @@ const faqItems = [
 
 export default function AgencjaKreaTywnaPoznan() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Agencja Kreatywna Poznań — Branding, Design, Kampanie Kreatywne | Fotz Studio"
         description="Agencja kreatywna Poznań — branding, identyfikacja wizualna, kampanie kreatywne, produkcja wideo i content. Kompleksowe wsparcie kreatywne dla firm. Fotz…"
@@ -483,5 +483,6 @@ export default function AgencjaKreaTywnaPoznan() {
       </section>
 
     </Layout>
+    </>
   );
 }

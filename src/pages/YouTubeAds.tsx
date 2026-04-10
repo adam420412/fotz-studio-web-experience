@@ -136,9 +136,9 @@ const YouTubeAds = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="YouTube Ads — Reklama na YouTube dla Firm | Video Advertising | Fotz Studio"
         description="YouTube Ads — kampanie wideo na YouTube: TrueView, bumper ads, discovery. Skuteczna reklama wideo dla firm. Fotz Studio."
@@ -552,6 +552,7 @@ const YouTubeAds = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

@@ -134,9 +134,9 @@ const InstagramAds = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Instagram Ads — Reklama na Instagramie dla Firm | Fotz Studio"
         description="Instagram Ads — tworzenie i prowadzenie kampanii reklamowych na Instagramie. Reklamy wideo, stories, reels i karuzele. Fotz Studio."
@@ -525,6 +525,7 @@ const InstagramAds = () => {
       </section>
 
     </Layout>
+    </>
   );
 };
 

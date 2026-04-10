@@ -56,9 +56,9 @@ const faqItems = [
 
 const PozycjonowanieGoogleMaps = () => {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Pozycjonowanie Google Maps — Wizytówka Google Moja Firma | Fotz Studio"
         description="Pozycjonowanie Google Maps i optymalizacja wizytówki Google Moja Firma (GMB). Pojawiaj się wysoko w lokalnych wynikach wyszukiwania. Fotz Studio."
@@ -611,6 +611,7 @@ const PozycjonowanieGoogleMaps = () => {
       </section>
 
     </Layout>
+    </>
   );
 };
 

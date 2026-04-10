@@ -158,9 +158,9 @@ const faqItems = [
 
 export default function SklepyInternetowe() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Tworzenie Sklepów Internetowych — Projektowanie i Budowa Sklepów Online | Fotz Studio"
         description="Tworzenie sklepów internetowych dla firm — e-commerce na WooCommerce, Shopify, PrestaShop. Budowa sklepów online z SEO, integracjami płatności i obsługą…"
@@ -720,5 +720,6 @@ export default function SklepyInternetowe() {
       </section>
 
     </Layout>
+    </>
   );
 }

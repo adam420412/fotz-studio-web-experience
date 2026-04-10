@@ -426,9 +426,9 @@ export default function Blog() {
     : filteredPosts;
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Blog Marketingowy — Artykuły o SEO, Google Ads i Social Media | Fotz Studio"
         description="Blog marketingowy Fotz Studio — artykuły i poradniki o SEO, Google Ads, content marketingu, social media i tworzeniu stron. Praktyczna wiedza dla firm i…"
@@ -686,5 +686,6 @@ export default function Blog() {
       </section>
 
     </Layout>
+    </>
   );
 }

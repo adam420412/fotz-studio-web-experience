@@ -128,9 +128,9 @@ const GoogleAds = () => {
   ];
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Kampanie Google Ads - Skuteczna Reklama w Google dla Firm | Fotz Studio"
         description="Kampanie Google Ads dla firm — reklamy w wyszukiwarce Google, YouTube, Shopping. Prowadzenie i optymalizacja kampanii Google Ads. Agencja Google Partners…"
@@ -760,6 +760,7 @@ const GoogleAds = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

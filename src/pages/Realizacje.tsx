@@ -408,9 +408,9 @@ const Realizacje = () => {
   };
 
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Realizacje i Portfolio — Case Studies Projektów Marketingowych | Fotz Studio"
         description="Portfolio Fotz Studio — realizacje stron internetowych, kampanii SEO, social media i produkcji wideo. Case studies z wynikami dla klientów z różnych branż."
@@ -886,6 +886,7 @@ const Realizacje = () => {
       </section>
 
     </Layout>
+    </>
   );
 };
 

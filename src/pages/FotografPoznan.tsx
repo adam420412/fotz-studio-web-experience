@@ -125,9 +125,9 @@ const faqItems = [
 
 const FotografPoznan = () => {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Fotograf Poznań — Fotografia Biznesowa i Firmowa | Fotz Studio"
         description="Fotograf Poznań — profesjonalna fotografia firmowa, korporacyjna, produktowa i eventowa dla firm z Poznania. Studio fotograficzne Fotz."
@@ -616,6 +616,7 @@ const FotografPoznan = () => {
       </section>
 
     </Layout>
+    </>
   );
 };
 

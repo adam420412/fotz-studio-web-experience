@@ -104,9 +104,9 @@ const faqItems = [
 
 export default function SocialMediaPoznan() {
   return (
-    <OrganizationSchema />
-
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Social Media Poznań — Obsługa i Prowadzenie Social Media | Fotz Studio"
         description="Obsługa social media Poznań — prowadzenie Facebooka, Instagrama, LinkedIn dla firm z Poznania. Content, kampanie reklamowe, analityka. Fotz Studio."
@@ -576,5 +576,6 @@ export default function SocialMediaPoznan() {
       </section>
 
     </Layout>
+    </>
   );
 }
