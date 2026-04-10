@@ -166,6 +166,18 @@ const StronyInternetowe = () => {
       question: "Czy mogę zobaczyć projekt przed realizacją?",
       answer: "Tak! Przed kodowaniem przedstawiamy makiety UX/UI w Figma. Możesz zatwierdzić wygląd i nawigację zanim przejdziemy do programowania."
     },
+    {
+      question: "Ile kosztuje jedna strona internetowa?",
+      answer: "Koszt strony internetowej zależy od jej rodzaju i funkcjonalności. Strona wizytówkowa to wydatek od 2 000 do 5 000 zł, strona firmowa 5 000–15 000 zł, a sklep e-commerce od 12 000 zł wzwyż. Każdą wycenę przygotowujemy indywidualnie — skontaktuj się z nami, by otrzymać bezpłatną wycenę dopasowaną do Twojego projektu."
+    },
+    {
+      question: "Gdzie mogę założyć stronę internetową?",
+      answer: "Stronę internetową możesz założyć na platformach takich jak WordPress, Webflow, Wix czy Squarespace — każda ma swoje zalety. My polecamy WordPress lub Webflow dla firm, które potrzebują elastyczności i dobrego SEO. Jeśli zależy Ci na profesjonalnym efekcie i pozycjach w Google, warto powierzyć to specjalistom — stawiamy strony od podstaw lub migrujemy istniejące serwisy."
+    },
+    {
+      question: "Jakie są najpopularniejsze rodzaje stron internetowych?",
+      answer: "Najpopularniejsze rodzaje stron internetowych to: strony wizytówkowe (dla freelancerów i małych firm), strony firmowe (wielostronicowe serwisy dla przedsiębiorstw), sklepy internetowe (e-commerce), landing page (strony kampanijne), blogi oraz portale z treściami. Fotz Studio specjalizuje się w stronach firmowych, sklepach e-commerce i landing page zoptymalizowanych pod konwersję."
+    },
   ];
 
   // Główne realizacje - showcase
@@ -275,6 +287,7 @@ const StronyInternetowe = () => {
     { name: "Szczecin", href: "/uslugi/strony-internetowe/szczecin" },
     { name: "Bydgoszcz", href: "/uslugi/strony-internetowe/bydgoszcz" },
     { name: "Lublin", href: "/uslugi/strony-internetowe/lublin" },
+    { name: "Rzeszów", href: "/uslugi/strony-internetowe/rzeszow" },
   ];
 
   const includedFeatures = [
@@ -318,10 +331,10 @@ const StronyInternetowe = () => {
   return (
     <>
       <SEOHead
-        title="Tworzenie Stron Internetowych — Projektowanie Stron WWW dla Firm | Fotz Studio"
-        description="Profesjonalne tworzenie stron internetowych dla firm. Projektowanie stron www zoptymalizowanych pod SEO, Core Web Vitals i konwersję. WordPress, Webflow…"
+        title="Strony Internetowe — Tworzenie i Projektowanie Stron WWW dla Firm | Fotz Studio"
+        description="Strony internetowe dla firm od Fotz Studio — szybkie, nowoczesne, zoptymalizowane pod SEO. Tworzymy strony www, sklepy e-commerce i landing page. Wycena gratis."
         canonical="https://fotz.pl/uslugi/strony-internetowe"
-        keywords="tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, tworzenie strony www, stworzenie strony internetowej, strona firmowa"
+        keywords="strony internetowe, tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, nowoczesne strony internetowe, profesjonalne strony internetowe"
       />
       
       <ServiceSchema 
@@ -1078,6 +1091,42 @@ const StronyInternetowe = () => {
                     </Link>
                   </div>
                 </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* Co to jest strona internetowa — Informational Section */}
+        <section className="py-20 border-t border-border/30 bg-card/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-6">
+                  Co to jest strona internetowa?
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Strona internetowa to zbiór powiązanych ze sobą dokumentów i zasobów dostępnych w sieci pod unikalnym adresem URL (domeną). Składa się z kodu HTML, CSS i JavaScript, które przeglądarka interpretuje i wyświetla użytkownikowi jako tekst, zdjęcia, filmy i interaktywne elementy. Każda witryna internetowa działa na serwerze — fizycznym lub wirtualnym komputerze podłączonym do internetu, który przechowuje pliki strony i udostępnia je odwiedzającym 24 godziny na dobę.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Dla firmy strona www to przede wszystkim narzędzie sprzedaży i budowania wizerunku. Profesjonalna witryna internetowa działa jak całodobowy handlowiec — prezentuje ofertę, odpowiada na pytania klientów i generuje zapytania ofertowe nawet wtedy, gdy Ty śpisz. Według badań ponad 70% konsumentów sprawdza firmę w internecie przed podjęciem decyzji zakupowej, dlatego brak strony lub nieaktualna witryna oznaczają realną utratę klientów.
+                </p>
+
+                <h3 className="text-xl font-heading font-semibold mb-4">Jakie są rodzaje stron internetowych?</h3>
+                <ul className="list-none space-y-3 mb-6">
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Strona wizytówkowa</strong> — prosta, 1–5-stronicowa prezentacja firmy lub freelancera. Zawiera podstawowe informacje: ofertę, kontakt i lokalizację.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Strona firmowa</strong> — rozbudowana witryna z pełną ofertą, case studies, blogiem i formularzami. Fundament obecności online każdej firmy.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Sklep internetowy (e-commerce)</strong> — platforma sprzedaży online z koszykiem, płatnościami i zarządzaniem produktami.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Landing page</strong> — pojedyncza strona kampanijna zaprojektowana pod jeden cel: sprzedaż, zapis na listę lub rejestrację.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Blog / portal</strong> — serwis oparty na treściach, budujący autorytet i ruch organiczny z Google.</span></li>
+                </ul>
+
+                <h3 className="text-xl font-heading font-semibold mb-4">Jak działa pozycjonowanie stron internetowych?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Pozycjonowanie stron internetowych (SEO) to działania mające na celu poprawę widoczności witryny w wynikach wyszukiwania Google. Algorytm Google ocenia strony pod kątem setek czynników: jakości treści, szybkości ładowania, linków przychodzących, struktury technicznej i dopasowania do zapytania użytkownika. Wysoka pozycja w wynikach wyszukiwania przekłada się na bezpłatny, regularny ruch na stronie — bez kosztów reklamowych.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Fotz Studio tworzy strony internetowe z myślą o SEO od pierwszego dnia — optymalizacja techniczna, szybkość Core Web Vitals, struktura nagłówków i schema markup są standardem, nie dodatkiem. Dzięki temu strony naszych klientów osiągają dobre pozycje w Google znacznie szybciej niż witryny zbudowane bez tej filozofii.
+                </p>
               </FadeInView>
             </div>
           </div>
