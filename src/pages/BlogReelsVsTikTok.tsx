@@ -441,6 +441,12 @@ const BlogReelsVsTikTok = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Marketing wideo dla Twojej firmy — konsultacja z Fotz Studio</h2>
               <p className="text-muted-foreground">Chcesz zacząć z video marketingiem lub poprawić istniejące treści wideo? Fotz Studio oferuje strategię wideo, produkcję reelsów i TikToków oraz szkolenia z obsługi kamery i montażu. Skontaktuj się z nami po bezpłatną konsultację.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
             </div>
 
 

@@ -404,6 +404,13 @@ const PozycjonowanieStronPoznan = () => {
             <p className="text-muted-foreground mb-6">Pozycjonowanie Google Maps Poznań — optymalizacja wizytówki Google Moja Firma dla firm z Poznania, by pojawiały się w Local Pack na frazy lokalne. Studio fotograficzne Poznań, agencja reklamowa Poznań, restauracja Poznań — każda branża korzysta z pozycjonowania lokalnego.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO Poznań — pozycjonowanie stron w Poznaniu od audytu do efektów</h2>
             <p className="text-muted-foreground">Pozycjonowanie stron Poznań zaczyna się od audytu SEO — analizy obecnego stanu strony, identyfikacji błędów i możliwości. Następnie: optymalizacja techniczna, tworzenie treści SEO z frazami lokalnymi, link building z portali poznańskich i regionalnych (portale wielkopolskie, katalogi firm, media lokalne). Pozycjonowanie stron Poznań z Fotz Studio — transparentne raportowanie wyników co miesiąc.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -417,6 +417,12 @@ const BlogBriefMarketingowy = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Wyślij brief do Fotz Studio — bezpłatna wycena w 48 godzin</h2>
               <p className="text-muted-foreground">Masz gotowy brief? Wyślij go do Fotz Studio na bezpłatną wycenę. Realizujemy projekty stron internetowych, kampanii reklamowych, identyfikacji wizualnej i content marketingu. Odpowiadamy w ciągu 24-48 godzin od otrzymania briefu.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+            </div>
             </div>
 
 

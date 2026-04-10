@@ -553,6 +553,13 @@ export default function SklepyInternetoweKrakow() {
               zapewniają bezpieczeństwo i rozwój sklepu przez lata. Skontaktuj się
               z nami po bezpłatną konsultację i wycenę projektu e-commerce dla Twojej firmy.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -120,6 +120,13 @@ const SEOCoreWebVitals = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Jak poprawić Core Web Vitals — optymalizacja techniczna strony</h2>
             <p className="text-muted-foreground mb-4">Poprawa LCP: optymalizacja obrazów (WebP, lazy loading, preload dla krytycznych zasobów), CDN, minimalizacja czasu serwera (TTFB). Poprawa CLS: ustalanie wymiarów dla obrazów i wideo, unikanie dynamicznego wstawiania treści nad foldą, stabilne ładowanie fontów webowych.</p>
             <p className="text-muted-foreground">Narzędzia do monitorowania Core Web Vitals: Google Search Console (zakładka Core Web Vitals), PageSpeed Insights, Lighthouse w Chrome DevTools. Audyt strony internetowej pod kątem CWV to pierwszy krok do optymalizacji. Szybkość ładowania strony i stabilny layout to dziś obowiązkowy standard dla każdej strony firmowej.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/ai-seo" className="text-primary hover:underline font-medium text-sm">→ AI SEO</Link>
+            </div>
           </motion.div>
         </div>
       </section>

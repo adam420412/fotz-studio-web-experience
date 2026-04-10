@@ -405,6 +405,13 @@ const Quiz = () => {
               Fotz Studio, by omówić wyniki i konkretne kroki do poprawy marketingu.
               Diagnoza marketingowa to pierwszy krok do skutecznych działań i lepszych wyników biznesowych.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -124,6 +124,13 @@ const SEOPozycjonowanieLodz = () => {
             <p className="text-muted-foreground mb-6">Agencja SEO Łódź oferuje kompleksowe pozycjonowanie: audyt SEO strony, optymalizację techniczną i treściową, local SEO dla firm z Łodzi (Google Maps, frazy lokalne), link building z portali łódzkich i regionalnych.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO Łódź — więcej klientów z Google dla Twojej firmy</h2>
             <p className="text-muted-foreground">Pozycjonowanie Łódź przynosi trwałe efekty — ruch organiczny z SEO jest darmowy po opłaceniu usługi, w przeciwieństwie do reklam Google Ads. Firmy z Łodzi, które zainwestowały w SEO z Fotz Studio, odnotowują wzrosty ruchu organicznego o 200-400% w ciągu roku. Sprawdź, co możemy zrobić dla Twojej firmy w Łodzi.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

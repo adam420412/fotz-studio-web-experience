@@ -706,6 +706,13 @@ export default function SklepyInternetowe() {
             <h2 className="text-3xl font-heading font-bold mb-6">Sklep internetowy a SEO — pozycjonowanie sklepów i optymalizacja e-commerce</h2>
             <p className="text-muted-foreground mb-4">Budowa sklepu internetowego bez myślenia o SEO to przepalony budżet. Każdy sklep internetowy, który budujemy, jest od podstaw zoptymalizowany pod wyszukiwarki — poprawna struktura URL, schema markup produktów, szybkość ładowania strony, zoptymalizowane meta tagi i opisy produktów bogate w słowa kluczowe.</p>
             <p className="text-muted-foreground">Stronie sklepu internetowego z dobrym SEO nie są potrzebne kolosalne budżety reklamowe — ruch organiczny pracuje 24/7. Połączenie profesjonalnej budowy sklepów z SEO i kampaniami Google Shopping to strategia, która przynosi wymierne wyniki sprzedażowe. Skontaktuj się z nami i stwórz sklep internetowy, który sprzedaje.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

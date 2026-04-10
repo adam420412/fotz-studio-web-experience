@@ -511,6 +511,13 @@ const InstagramAds = () => {
             <p className="text-muted-foreground mb-6">Reklama na Instagramie szczególnie efektywna jest dla branż wizualnych: moda, uroda, jedzenie, wnętrza, fitness, turystyka. Wysoka jakość kreacji graficznych i wideo jest kluczem do sukcesu na Instagramie — odbiorcy są wymagający i ignorują reklamy niespójne z estetycznym kontekstem platformy.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Formaty Instagram Ads — Stories, Reels i feed reklamy</h2>
             <p className="text-muted-foreground">Formaty reklam na Instagramie: Single image (feed), karuzele, wideo (feed i Reels), Stories Ads (pełnoekranowe, pionowe), reklamy Explore. Reels Ads wyróżniają się najwyższym zasięgiem organicznym i viralnym potencjałem. Instagram Shopping Ads pozwalają na oznaczanie produktów i bezpośredni zakup z aplikacji — idealne dla e-commerce. Tworzenie reklam wideo na Instagram Reels i Stories to nasza specjalność.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
           </motion.div>
         </div>
       </section>

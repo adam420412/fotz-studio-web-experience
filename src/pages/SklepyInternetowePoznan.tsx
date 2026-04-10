@@ -390,6 +390,13 @@ export default function SklepyInternetowePoznan() {
               terminowości i skuteczności. Umów się na bezpłatną konsultację i wycenę
               projektu e-commerce — stworzymy sklep, który naprawdę sprzedaje.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

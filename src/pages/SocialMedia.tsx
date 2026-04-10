@@ -1026,6 +1026,12 @@ const SocialMedia = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Gotowy współpracować i prowadzić social media z Fotz Studio? Specjalistów od social media z naszego zespołu cechuje kreatywne podejście i orientacja na wyniki. Razem ustalić możemy zakres obsługi social i dostosować ofertę do budżetu. Kompleksowe prowadzenie profili w social media dla firm, które chcą wyróżnić się w mediach społecznościowych — skontaktuj się i zamów bezpłatny audyt.
                 </p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
               </FadeInView>
             </div>
           </div>

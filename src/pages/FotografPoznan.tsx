@@ -601,6 +601,13 @@ const FotografPoznan = () => {
             <p className="text-muted-foreground mb-6">Studio fotograficzne Poznań — dysponujemy własnym studiem z profesjonalnym oświetleniem, tłami i wyposażeniem. Sesje fotograficzne realizujemy zarówno w studiu, jak i na plenerze lub w siedzibie klienta. Fotografia poznań to nasza pasja — każde zdjęcie opowiadamy starannie dobranymi kadrami i oświetleniem.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Fotografia produktowa i biznesowa Poznań — jak wyglądają sesje?</h2>
             <p className="text-muted-foreground">Fotografia produktowa Poznań — profesjonalne zdjęcia produktów do sklepów internetowych, katalogów i materiałów marketingowych. Zdjęcia produktowe z białym tłem, lifestyle i detail shots. Fotografia korporacyjna — portrety dla stron www, LinkedIn i materiałów prasowych. Zdjęcia lotnicze nieruchomości i obiektów — z drona dla deweloperów, pośredników i firm budowlanych. Usługi foto i wideo dla firm z Poznania — zapytaj o ofertę.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -379,6 +379,12 @@ const BlogAIMarketing = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Wdrożenie AI marketing w Twojej firmie — konsultacja z Fotz Studio</h2>
               <p className="text-muted-foreground">Chcesz wdrożyć AI w marketing swojej firmy? Fotz Studio oferuje konsultacje i wdrożenia narzędzi AI marketing dla MŚP — od automatyzacji treści po inteligentne kampanie reklamowe. Skontaktuj się z nami, by dowiedzieć się, jak sztuczna inteligencja może przyspieszyć wzrost Twojego biznesu online.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/ai-marketing" className="text-primary hover:underline font-medium text-sm">→ AI Marketing</Link>
+              <Link to="/ai-seo" className="text-primary hover:underline font-medium text-sm">→ AI SEO</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
             </div>
 
 

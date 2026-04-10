@@ -175,6 +175,13 @@ const SocialMediaStrategia = () => {
             <p className="text-muted-foreground mb-6">Tworzenie strategii content social media zaczyna się od audytu obecnych profili, analizy konkurencji i badania grupy docelowej. Na tej podstawie definiujemy tone of voice, główne tematy komunikacji, formaty postów i harmonogram publikacji (content calendar). Zarządzanie mediami społecznościowymi według strategii pozwala mierzyć efekty i optymalizować działania.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Zarządzanie social media — obsługa profili i social media marketing</h2>
             <p className="text-muted-foreground">Zarządzanie mediami społecznościowymi obejmuje: tworzenie i publikowanie treści, odpowiadanie na komentarze i wiadomości, prowadzenie kampanii reklamowych, analizę wyników i raportowanie. Social media marketing to połączenie organicznych działań contentowych z płatną reklamą — razem dają najlepsze efekty. Sprawdź naszą ofertę zarządzania social mediami dla firm.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
           </motion.div>
         </div>
       </section>

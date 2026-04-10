@@ -120,6 +120,13 @@ const SEOCopywriting = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Artykuły SEO, opisy produktów i teksty na stronę — co wchodzi w SEO copywriting?</h2>
             <p className="text-muted-foreground mb-4">SEO copywriting obejmuje: artykuły blogowe zoptymalizowane pod long-tail keywords, opisy produktów i kategorii w sklepach e-commerce, teksty na strony usługowe i landingowe, meta tytuly i meta opisy, nagłówki H1-H6 z kluczowymi frazami oraz alternatywne opisy obrazów (atrybuty alt).</p>
             <p className="text-muted-foreground">Optymalizacja pod wyszukiwarki (SEO) i pisanie dla ludzi to nie wykluczające się cele — wręcz przeciwnie. Treści, które faktycznie odpowiadają na pytania użytkowników, naturalnie spełniają wymogi Google E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). SEO copywriting to inwestycja, która pracuje miesiącami i latami po publikacji.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

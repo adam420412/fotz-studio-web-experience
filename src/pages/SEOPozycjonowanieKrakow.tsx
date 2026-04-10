@@ -124,6 +124,13 @@ const SEOPozycjonowanieKrakow = () => {
             <p className="text-muted-foreground mb-6">Agencja SEO Kraków — Fotz Studio oferuje: audyt SEO, optymalizację techniczną strony, content marketing SEO z lokalnymi frazami, link building z portali krakowskich i ogólnopolskich, pozycjonowanie Google Maps dla firm z Krakowa.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO dla firm z Krakowa — jak wygląda skuteczne pozycjonowanie?</h2>
             <p className="text-muted-foreground">Pozycjonowanie Kraków to długoterminowa inwestycja — pierwsze efekty widać po 3-6 miesiącach, a po roku SEO staje się głównym kanałem pozyskiwania klientów dla wielu firm. Przejrzyste raportowanie, regularne optymalizacje i partnerskie podejście — to nasza agencja SEO w Krakowie. Umów bezpłatną konsultację.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -829,6 +829,13 @@ export default function KalkulatorCen() {
               kalkulator ROI pomoże Ci ocenić potencjalne efekty przed podjęciem decyzji.
               Skontaktuj się z nami po indywidualną wycenę i plan działania.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

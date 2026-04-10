@@ -447,6 +447,12 @@ const BlogSEOLokalnePoznan = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Lokalne SEO Poznań dla Twojej firmy — skontaktuj się z Fotz Studio</h2>
               <p className="text-muted-foreground">Chcesz pojawić się w Google Maps na frazy związane z Twoją branżą i Poznaniem? Fotz Studio przeprowadzi audyt lokalnego SEO i wdroży strategię, która poprawi Twoją widoczność w lokalnych wynikach w ciągu 2-3 miesięcy. Bezpłatna konsultacja — skontaktuj się z nami.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+            </div>
             </div>
 
 

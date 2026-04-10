@@ -435,6 +435,13 @@ export default function AgencjaSEOPoznan() {
             <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie stron Poznań — lokalne i ogólnopolskie SEO dla firm</h2>
             <p className="text-muted-foreground mb-4">Pozycjonowanie stron Poznań obejmuje zarówno lokalne SEO (widoczność w Google Maps i dla fraz z "Poznań"), jak i SEO ogólnopolskie dla firm chcących dotrzeć do klientów z całego kraju. Każda kampania SEO zaczyna się od audytu SEO — analizy obecnego stanu strony, identyfikacji słów kluczowych i analizy konkurencji.</p>
             <p className="text-muted-foreground">Agencja SEO Poznań oferuje transparentne raportowanie — miesięczne raporty z pozycji w Google, ruchu organicznego i wykonanych działań. Pozycjonowanie Google Maps dla firm lokalnych z Poznania i Wielkopolski to oddzielna usługa, uzupełniająca standardowe SEO. Skontaktuj się z naszą agencją SEO w Poznaniu i sprawdź, co możemy zrobić dla Twojej strony.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -1059,6 +1059,12 @@ const Pozycjonowanie = () => {
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   Wynikach wyszukiwania Google na pozycjach 1–3 kumuluje się ponad 60% kliknięć — dlatego walczymy o TOP 3, nie tylko o pierwszą stronę. Wysokie pozycje w wynikach wyszukiwania Google budujemy systematycznie: audyt SEO, optymalizacja, content i linki. Pozycjonowanie w internecie i czym jest SEO rozumiemy kompleksowo — to nie tylko technikalia, ale całościowa strategia widoczności w wyszukiwarce Google. Skuteczne pozycjonowanie stron w wyszukiwarkach daje trwały ruch organiczny — Fotz Studio, agencja SEO z doświadczeniem w pozycjonowaniu stron i sklepów internetowych dla firm z całej Polski.
                 </p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+            </div>
               </FadeInView>
             </div>
           </div>

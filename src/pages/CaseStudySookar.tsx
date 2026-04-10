@@ -405,6 +405,13 @@ const CaseStudySookar = () => {
               Skontaktuj się z nami, by omówić Twój projekt i sprawdzić, czy możemy osiągnąć
               podobne wyniki dla Twojej firmy.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+            </div>
           </motion.div>
         </div>
       </section>

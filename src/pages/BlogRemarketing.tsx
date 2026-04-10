@@ -395,6 +395,12 @@ export default function BlogRemarketing() {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Wdróż remarketing w swojej firmie — skontaktuj się z Fotz Studio</h2>
               <p className="text-muted-foreground">Czy Twoje kampanie reklamowe obejmują remarketing? Fotz Studio skonfiguruje remarketing od zera lub zoptymalizuje istniejące kampanie. Bezpłatny audyt kampanii i konsultacja dostępne online. Skontaktuj się z nami, by przestać tracić potencjalnych klientów.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
             </div>
 
 

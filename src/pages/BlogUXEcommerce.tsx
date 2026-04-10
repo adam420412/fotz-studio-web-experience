@@ -753,6 +753,12 @@ export default function BlogUXEcommerce() {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Audyt UX i optymalizacja konwersji Twojego sklepu — Fotz Studio</h2>
               <p className="text-muted-foreground">Twój sklep ma ruch, ale sprzedaż nie rośnie proporcjonalnie? Problem może leżeć w UX. Fotz Studio przeprowadzi audyt UX i zaproponuje konkretne zmiany zwiększające konwersję. Skontaktuj się z nami po bezpłatną wstępną ocenę UX swojego sklepu e-commerce.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
             </div>
 
 

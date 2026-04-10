@@ -263,6 +263,12 @@ const BlogKampaniaReklamowa = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Uruchom kampanię reklamową z Fotz Studio — od strategii po wyniki</h2>
               <p className="text-muted-foreground">Czy planujesz pierwszą kampanię reklamową, czy chcesz zoptymalizować istniejące? Fotz Studio przeprowadzi audyt, zaproponuje strategię i poprowadzi kampanię od A do Z. Skontaktuj się z nami po bezpłatną wycenę obsługi kampanii reklamowej dla Twojej firmy.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
             </div>
 
 

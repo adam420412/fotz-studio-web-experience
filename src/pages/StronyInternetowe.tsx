@@ -1176,6 +1176,12 @@ const StronyInternetowe = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Cena zawiera: projekt graficzny (makiety UX/UI w Figma), kodowanie, responsywność mobile, SEO techniczne, integrację z Google Analytics 4, formularz kontaktowy, certyfikat SSL i szkolenie z obsługi CMS. Potrzebujesz strony z dodatkowymi funkcjami (sklep, rezerwacje, wielojęzyczność)? Wyceniamy indywidualnie — bezpłatna konsultacja w 24h. Twojej firmie zapewniamy pełne wsparcie na każdym etapie wdrożenia i po nim.
                 </p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
               </FadeInView>
             </div>
           </div>

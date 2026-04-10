@@ -119,6 +119,13 @@ const AIMarketing = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Narzędzia AI w marketingu — co możesz zautomatyzować?</h2>
             <p className="text-muted-foreground mb-4">AI copywriting (ChatGPT, Claude, Gemini) przyspiesza tworzenie treści — artykułów, opisów produktów, postów social media i emaili marketingowych. AI w reklamach (Google Performance Max, Meta Advantage+) automatyzuje targetowanie i optymalizację stawek w kampaniach PPC. Analityka predyktywna pomaga prognozować zachowania klientów i wartość lifetime (CLV).</p>
             <p className="text-muted-foreground">AI marketing nie zastępuje strategii marketingowej — ją wzmacnia. Potrzebujesz nadal jasnych celów biznesowych, znajomości grupy docelowej i kreatywności. AI to narzędzie, które pozwala działać szybciej, taniej i precyzyjniej. Dowiedz się, jak wdrożyć AI w swoim marketingu — umów bezpłatną konsultację.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/ai-seo" className="text-primary hover:underline font-medium text-sm">→ AI SEO</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -289,6 +289,12 @@ const BlogPersonalBrandingLinkedIn = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Zbuduj markę osobistą na LinkedIn z pomocą Fotz Studio</h2>
               <p className="text-muted-foreground">Chcesz regularnie pojawiać się na LinkedIn, ale brakuje Ci czasu lub pomysłów na treści? Fotz Studio obsługuje profile LinkedIn ekspertów — od strategii przez produkcję contentu po zarządzanie interakcjami. Skontaktuj się z nami po bezpłatną konsultację.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+            </div>
             </div>
 
 

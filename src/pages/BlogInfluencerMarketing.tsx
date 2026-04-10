@@ -515,6 +515,12 @@ export default function BlogInfluencerMarketing() {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kampania z influencerami dla Twojej marki — skontaktuj się z Fotz Studio</h2>
               <p className="text-muted-foreground">Chcesz uruchomić kampanię influencer marketingową? Fotz Studio przeprowadzi Cię przez cały proces — od strategii i doboru twórców po realizację i raportowanie. Bezpłatna konsultacja dostępna dla firm planujących pierwsze kampanie z influencerami.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
             </div>
 
 

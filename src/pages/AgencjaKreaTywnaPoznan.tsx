@@ -469,6 +469,13 @@ export default function AgencjaKreaTywnaPoznan() {
               od startupów szukających pierwszego brandingu po duże korporacje potrzebujące
               wsparcia w konkretnych projektach. Skontaktuj się z nami, by omówić Twoje potrzeby kreatywne.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

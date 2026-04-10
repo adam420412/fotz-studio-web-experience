@@ -876,6 +876,13 @@ const IdentyfikacjaWizualna = () => {
 
             <h3 className="text-2xl font-heading font-bold mb-4">Animacje i grafika ruchoma — nowoczesny branding w mediach cyfrowych</h3>
             <p className="text-muted-foreground">Współczesna identyfikacja wizualna coraz częściej wykracza poza statyczne elementy. Animacje i grafika ruchoma — animowane logo, intro video, motion graphics do social media — są standardem w nowoczesnym brandingu. Identyfikacja wizualna firmy w środowiskach cyfrowych (social media, strony www, reklamy) musi być dynamiczna i przyciągająca wzrok. Stwórzmy razem wizerunek, który zostaje w pamięci.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

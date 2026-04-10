@@ -124,6 +124,13 @@ const SEOPozycjonowanieKatowice = () => {
             <p className="text-muted-foreground mb-6">Agencja SEO Katowice oferuje: audyt SEO strony, optymalizację techniczną, content SEO dla firm ze Śląska, link building z portali regionalnych (Śląsk, Zagłębie), pozycjonowanie Google Maps dla firm z Katowic i okolic.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO dla firm ze Śląska — pozycjonowanie na Katowice i regiony</h2>
             <p className="text-muted-foreground">Pozycjonowanie Katowice to inwestycja w organiczny kanał sprzedaży. Firmy usługowe, produkcyjne i handlowe ze Śląska, które pojawią się wysoko w Google na frazy lokalne, zdobywają klientów o wysokiej intencji zakupowej. Skontaktuj się z Fotz Studio — agencją SEO dla Katowic i Śląska.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

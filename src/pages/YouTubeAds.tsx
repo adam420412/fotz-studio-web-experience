@@ -501,6 +501,13 @@ const YouTubeAds = () => {
             <p className="text-muted-foreground mb-6">Formaty YouTube Ads: TrueView In-Stream (reklamy z możliwością pominięcia po 5 sek.), Non-Skippable In-Stream (obowiązkowe do 15 sek.), Bumper Ads (6 sek., krótkie, niemożliwe do pominięcia), Video Discovery Ads (w wynikach wyszukiwania YouTube) i Masthead (na stronie głównej YouTube). Tworzenie reklam wideo na YouTube to element video marketingu dla firm.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">YouTube Ads a spoty reklamowe — produkcja wideo na kampanie</h2>
             <p className="text-muted-foreground">Skuteczna reklama na YouTube wymaga profesjonalnie wyprodukowanych materiałów wideo. Spoty reklamowe do YouTube powinny przykuć uwagę w pierwszych 5 sekundach (nim użytkownik pominie reklamę). Produkcja filmów reklamowych, animacji i spotów — od scenariusza po montaż — to pełny zakres usług Fotz Studio. Reklamy wideo na YouTube w połączeniu z kampaniami w sieci Google tworzą kompleksową strategię video advertisingu.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
           </motion.div>
         </div>
       </section>

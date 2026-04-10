@@ -124,6 +124,13 @@ const SEOPozycjonowanieWarszawa = () => {
             <p className="text-muted-foreground mb-6">Agencja SEO Warszawa — oferujemy kompleksowe usługi pozycjonowania: audyt SEO strony, optymalizację techniczną i treściową, lokalny link building oraz monitoring pozycji i raportowanie. Każda strategia SEO dla firm z Warszawy jest indywidualnie dopasowana do branży i celów biznesowych.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO Warszawa — lokalne pozycjonowanie dla firm ze stolicy</h2>
             <p className="text-muted-foreground">Lokalne SEO Warszawa obejmuje optymalizację pod frazy z "Warszawa" i okoliczne dzielnice, pozycjonowanie Google Maps (wizytówka Google), budowanie lokalnych linków (portale warszawskie, katalogi firm) oraz tworzenie treści lokalnych. Firmy z Warszawy, które inwestują w SEO, generują leady przez 24h — bez ciągłego wydawania na reklamy Google Ads.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

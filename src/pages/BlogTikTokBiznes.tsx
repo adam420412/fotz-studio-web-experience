@@ -380,6 +380,12 @@ const BlogTikTokBiznes = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">TikTok marketing dla Twojej firmy — skontaktuj się z Fotz Studio</h2>
               <p className="text-muted-foreground">Czy Twoja firma jest gotowa na TikToka? Fotz Studio przeprowadzi audyt, zaproponuje strategię contentu i w razie potrzeby zajmie się produkcją wideo. Konsultacja TikTok marketing dostępna bezpłatnie. Skontaktuj się z nami, by nie pozostawać za konkurencją w tym dynamicznym kanale.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
             </div>
 
 

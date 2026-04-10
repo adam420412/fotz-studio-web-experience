@@ -180,6 +180,13 @@ const SEOOnPage = () => {
 
             <h3 className="text-2xl font-heading font-bold mb-4">SEO on-page vs. SEO off-page — kluczowe różnice</h3>
             <p className="text-muted-foreground">SEO on-page obejmuje elementy strony, nad którymi masz bezpośrednią kontrolę. SEO off-page to działania poza stroną — przede wszystkim link building i budowanie autorytetu domeny. Skuteczna strategia SEO łączy oba podejścia: optymalizacja stron internetowych pod kątem SEO (on-page) tworzy solidne fundamenty, a link building wzmacnia pozycję w wynikach wyszukiwania Google.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -665,6 +665,13 @@ export default function ProdukcjaFilmowPoznan() {
             <p className="text-muted-foreground mb-6">Filmy reklamowe Poznań — od scenariusza, przez preprodukcję (scouting lokacji, casting), produkcję (zdjęcia), po postprodukcję (montaż, korekcja barwna, dźwięk, motion graphics) — kompleksowy proces tworzenia filmów reklamowych pod jednym dachem. Fotografia i video z drona — realizujemy ujęcia lotnicze nieruchomości i eventów.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Wideo firmowe i sesje fotograficzne Poznań</h2>
             <p className="text-muted-foreground">Sesje fotograficzne Poznań — fotografia firmowa, fotografia korporacyjna, fotografia produktowa, fotografia biznesowa i zdjęcia eventowe dla firm z Poznania. Studio fotograficzne Poznań z pełnym wyposażeniem (tła, oświetlenie, rekwizyty). Usługi foto i wideo — kompleksowa dokumentacja i kreacja materiałów marketingowych dla Twojej firmy z Poznania.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
           </motion.div>
         </div>
       </section>

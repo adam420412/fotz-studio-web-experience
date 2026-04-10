@@ -360,6 +360,12 @@ export default function BlogCopywritingLanding() {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Copywriting dla Twojej strony — zwiększ konwersję z profesjonalnym tekstem</h2>
               <p className="text-muted-foreground">Chcesz poprawić konwersję swojej strony lub landing page? Fotz Studio audytuje istniejące teksty i pisze nowy copy zoptymalizowany pod konwersję. Skontaktuj się z nami — pierwsze konsultacje są bezpłatne.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+            </div>
             </div>
 
 

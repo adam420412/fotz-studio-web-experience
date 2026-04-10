@@ -635,6 +635,12 @@ const BlogSprzedazOnline = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Zwiększ sprzedaż online z Fotz Studio — bezpłatna konsultacja e-commerce</h2>
               <p className="text-muted-foreground">Czy Twój sklep internetowy osiąga pełen potencjał sprzedaży online? Fotz Studio przeprowadzi audyt e-commerce i zaproponuje strategię wzrostu. Bezpłatna konsultacja dostępna dla właścicieli sklepów online z całej Polski. Skontaktuj się z nami.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
             </div>
 
         <RelatedArticles

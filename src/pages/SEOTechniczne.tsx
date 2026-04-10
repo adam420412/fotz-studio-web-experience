@@ -176,6 +176,13 @@ const SEOTechniczne = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Core Web Vitals i szybkość ładowania strony — kluczowe wskaźniki SEO technicznego</h2>
             <p className="text-muted-foreground mb-4">Core Web Vitals to trzy metryki Google mierzące doświadczenie użytkownika: LCP (Largest Contentful Paint) — szybkość ładowania głównej treści, FID/INP — responsywność na interakcje, CLS — stabilność layoutu strony. Optymalizacja pod Core Web Vitals poprawia zarówno UX, jak i pozycje SEO.</p>
             <p className="text-muted-foreground">Optymalizacja stron internetowych pod kątem SEO technicznego obejmuje też: poprawę czasu do pierwszego bajtu (TTFB), kompresję obrazów, lazy loading, minifikację kodu JS i CSS, wdrożenie CDN oraz structured data (schema markup). Monitorowanie ruchu na stronie i śledzenie Core Web Vitals przez Google Search Console to podstawa dobrego SEO technicznego.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/ai-seo" className="text-primary hover:underline font-medium text-sm">→ AI SEO</Link>
+            </div>
           </motion.div>
         </div>
       </section>

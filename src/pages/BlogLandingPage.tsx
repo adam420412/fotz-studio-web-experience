@@ -416,6 +416,12 @@ const BlogLandingPage = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Landing page dla Twojej kampanii reklamowej — projekt i wdrożenie</h2>
               <p className="text-muted-foreground">Planujesz kampanię Google Ads lub Meta Ads? Potrzebujesz dedykowanego landing page dla każdej grupy docelowej i oferty. Fotz Studio tworzy landing pages w ciągu 5-10 dni roboczych. Skontaktuj się z nami, by wycenić projekt strony lądowania dla Twojej kampanii.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
             </div>
 
 

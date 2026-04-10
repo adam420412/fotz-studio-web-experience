@@ -124,6 +124,13 @@ const SEOLinkBuilding = () => {
 
             <h3 className="text-2xl font-heading font-bold mb-4">Link building a zarządzanie mediami społecznościowymi — synergia działań SEO</h3>
             <p className="text-muted-foreground">Choć linki z mediów społecznościowych nie są bezpośrednimi czynnikami rankingowymi, mają pośredni wpływ na SEO — zwiększają zasięg treści i szansę na zdobycie organicznych backlinków. Spójna strategia budowania linków (link building) połączona z content marketingiem i zarządzaniem mediami społecznościowymi tworzy synergię, która długoterminowo wzmacnia autorytet domeny i pozycje w Google.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

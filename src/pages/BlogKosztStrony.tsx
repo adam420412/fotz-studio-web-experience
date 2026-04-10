@@ -457,6 +457,12 @@ const BlogKosztStrony = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Bezpłatna wycena strony internetowej — co zawiera oferta Fotz Studio?</h2>
               <p className="text-muted-foreground">Wycena strony internetowej w Fotz Studio jest bezpłatna i obejmuje: zakres projektu, proponowane technologie, timeline realizacji i warunki opieki po wdrożeniu. Skontaktuj się z nami przez formularz lub telefon — ofertę przygotowujemy w 48 godzin od wypełnienia briefu.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+            </div>
             </div>
 
 

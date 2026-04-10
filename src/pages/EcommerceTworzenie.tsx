@@ -721,6 +721,13 @@ export default function EcommerceTworzenie() {
 
             <h2 className="text-3xl font-heading font-bold mb-6">Sklep internetowy i SEO — sprzedaż online bez granic</h2>
             <p className="text-muted-foreground">Sprzedaż online rośnie rok do roku, a sklep internetowy jest najefektywniejszym kanałem dotarcia do klientów. Rozwiązania e-commerce, które tworzymy, są zoptymalizowane pod Google Shopping, kampanie Meta Ads i organiczne SEO. Dzięki temu Twój sklep sprzedaje przez całą dobę — bez ograniczeń geograficznych i godzin otwarcia.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -597,6 +597,13 @@ const PozycjonowanieGoogleMaps = () => {
 
             <h3 className="text-2xl font-heading font-bold mb-4">Pozycjonowanie lokalne — GMB a pozycjonowanie stron internetowych</h3>
             <p className="text-muted-foreground">Pozycjonowanie Google Maps działa najlepiej w połączeniu z lokalnym SEO strony internetowej — podstron z lokalnymi frazami, budowy lokalnych linków (np. katalogi firm, portale lokalne) i optymalizacji on-page pod lokalne słowa kluczowe. To kompleksowe podejście do widoczności lokalnej sprawia, że Twoja firma dominuje zarówno w wynikach organicznych, jak i na mapach Google.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+            </div>
           </motion.div>
         </div>
       </section>

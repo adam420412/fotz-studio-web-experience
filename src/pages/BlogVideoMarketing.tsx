@@ -309,6 +309,12 @@ const BlogVideoMarketing = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Wideo dla Twojej firmy — skontaktuj się z Fotz Studio i zacznij sprzedawać przez wideo</h2>
               <p className="text-muted-foreground">Nie masz jeszcze wideo na swojej stronie i w kampaniach? Tracisz klientów na rzecz konkurencji, która już korzysta z video marketingu. Fotz Studio produkuje wideo dla firm z Poznania i całej Polski. Bezpłatna konsultacja i wycena — umów się z nami już dziś.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
             </div>
 
 

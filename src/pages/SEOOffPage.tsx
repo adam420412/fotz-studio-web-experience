@@ -176,6 +176,13 @@ const SEOOffPage = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Digital PR i guest posting — skuteczne techniki budowania linków</h2>
             <p className="text-muted-foreground mb-4">Digital PR to publikowanie wartościowych materiałów (badania, raporty, infografiki) w mediach online, które naturalnie generują wzmianki i linki. Guest posting (artykuły gościnne) na branżowych blogach i portalach to sprawdzona metoda zdobywania tematycznych backlinków wysokiej jakości.</p>
             <p className="text-muted-foreground">Zarządzanie mediami społecznościowymi uzupełnia strategię SEO off-page — sygnały społecznościowe pośrednio wpływają na widoczność strony, a popularny content ma większą szansę na zdobycie organicznych linków. Link building i digital PR działają najlepiej jako długofalowa strategia SEO.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -493,6 +493,13 @@ const TikTokAds = () => {
             <p className="text-muted-foreground mb-6">TikTok preferuje treści autentyczne i natywne — reklamy, które wyglądają jak organiczne wideo, osiągają znacznie lepsze wyniki. Tworzenie rolek pod social media i TikToka wymaga rozumienia kultury platformy: trendy, dźwięki, filtry i challenge. Dobra reklama TikTok to taka, którą użytkownicy chcą oglądać — nie przewijają.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Kampanie TikTok — jak reklamować firmę na TikToku?</h2>
             <p className="text-muted-foreground">TikTok for Business (TikTok Ads Manager) oferuje możliwości targetowania podobne do Meta — zainteresowania, demografika, custom audiences. Reklama na TikTok biznes coraz częściej staje się elementem mediamixu firm B2C, szczególnie w branży e-commerce, beauty, fashion i gastronomii. Video content marketing na TikToku może viralowo zwiększyć świadomość marki przy niskich kosztach — jeśli content trafia w trendy.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
           </motion.div>
         </div>
       </section>

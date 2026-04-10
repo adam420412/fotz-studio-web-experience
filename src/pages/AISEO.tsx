@@ -119,6 +119,13 @@ const AISEO = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Jak zoptymalizować stronę pod AI Search i Generative AI?</h2>
             <p className="text-muted-foreground mb-4">Kluczowe działania w AI SEO: tworzenie wyczerpujących, eksperckich treści odpowiadających na konkretne pytania (długie formy), implementacja structured data (JSON-LD, schema.org), budowanie autorytetu domeny przez backlinki z zaufanych źródeł, optymalizacja treści pod pytania konwersacyjne i frazy long-tail.</p>
             <p className="text-muted-foreground">Monitorowanie widoczności w AI Search to nowe wyzwanie — tradycyjne narzędzia SEO nie mierzą cytowań przez ChatGPT czy Perplexity. Nowe narzędzia do AI visibility (BrandRadar, Profound, Track AI) pozwalają śledzić, jak często i w jakim kontekście Twoja marka pojawia się w odpowiedziach AI. Połączenie klasycznego SEO z AI SEO to przyszłościowa strategia widoczności online.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/ai-marketing" className="text-primary hover:underline font-medium text-sm">→ AI Marketing</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -428,6 +428,12 @@ export default function BlogGoogleAnalytics4() {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Audyt GA4 i analityka webowa — sprawdź czy mierzysz właściwe dane</h2>
               <p className="text-muted-foreground">Niepoprawnie skonfigurowane GA4 to brak danych lub dane wprowadzające w błąd. Fotz Studio przeprowadza audyt istniejącej konfiguracji GA4 i naprawia błędy w śledzeniu. Skontaktuj się z nami po bezpłatny audyt analityczny swojej strony.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
             </div>
 
 

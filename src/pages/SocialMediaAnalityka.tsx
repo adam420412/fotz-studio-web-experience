@@ -175,6 +175,13 @@ const SocialMediaAnalityka = () => {
             <p className="text-muted-foreground mb-6">Narzędzia analityczne social media: Meta Business Suite (Facebook, Instagram), LinkedIn Analytics, TikTok Analytics, Google Analytics 4 (atrybucja konwersji z social media). Raporty efektywności kampanii dostarczamy miesięcznie — z analizą trendów i rekomendacjami optymalizacyjnymi.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Jak mierzyć ROI z social media marketingu?</h2>
             <p className="text-muted-foreground">ROI z social media jest trudniejszy do zmierzenia niż ROI z Google Ads, ale możliwy. Kluczowe jest śledzenie konwersji (zakupy, zapytania ofertowe, zapisy na newsletter) pochodzących z social mediów. Monitorowanie ruchu na stronie z social media przez Google Analytics 4, ustawianie UTM do kampanii i śledzenie przychodów atrybucyjnych pozwala ocenić realny zwrot z inwestycji w social media marketing.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/ai-marketing" className="text-primary hover:underline font-medium text-sm">→ AI Marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -553,6 +553,12 @@ export default function BlogBrandingStartupy() {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Zbuduj markę swojego startupu z Fotz Studio — branding od 2000 zł</h2>
               <p className="text-muted-foreground">Nie odkładaj brandingu na później — każdy dzień bez spójnej identyfikacji wizualnej to utracona szansa na budowanie rozpoznawalności. Skontaktuj się z Fotz Studio, by omówić projekt brandingowy dla Twojego startupu. Wycenę przygotowujemy w 48 godzin.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
             </div>
 
 

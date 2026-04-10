@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, WebPageSchema } from "@/components/seo/StructuredData";
@@ -536,6 +537,13 @@ export default function Kariera() {
               nie robi kawy, ale prawdziwe projekty marketingowe.
               Wyślij CV na adres kontaktowy lub odwiedź nas w biurze w Poznaniu.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

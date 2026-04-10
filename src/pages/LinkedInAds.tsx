@@ -503,6 +503,13 @@ const LinkedInAds = () => {
             <p className="text-muted-foreground mb-6">Formaty LinkedIn Ads: Sponsored Content (posty w feedzie), Sponsored InMail (wiadomości do skrzynek odbiorczych), Lead Gen Forms (generowanie leadów bez opuszczania LinkedIn), Text Ads, Dynamic Ads i Conversation Ads. Reklama na LinkedIn jest droższa niż na Facebooku, ale jakość leadów B2B jest znacząco wyższa.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Kampanie LinkedIn dla firm — personal branding i employer branding</h2>
             <p className="text-muted-foreground">Personal branding na LinkedIn — budowanie marki osobistej CEO i ekspertów firmowych — to jeden z najefektywniejszych sposobów na organiczną widoczność na platformie. Połączenie organic LinkedIn (wartościowe posty eksperckie) z LinkedIn Ads daje najlepsze efekty dla firm B2B. Zarządzanie kampaniami PPC na LinkedIn wymaga innego podejścia niż Facebook — liczy się personalizacja i jasna propozycja wartości (UVP) w komunikacie. Skontaktuj się — doradzimy strategię LinkedIn Ads dla Twojej firmy.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
           </motion.div>
         </div>
       </section>

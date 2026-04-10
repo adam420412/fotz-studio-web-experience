@@ -608,6 +608,13 @@ const AgencjaReklamowaPoznan = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Spoty reklamowe, filmy reklamowe Poznań i produkcja wideo dla firm</h2>
             <p className="text-muted-foreground mb-4">Filmy reklamowe Poznań — produkcja spotów od scenariusza po post-produkcję. Tworzymy: spoty reklamowe do emisji w TV i online, filmy prezentacyjne firm, materiały wideo na social media (rolki, reelsy), video marketing dla e-commerce (zdjęcia 360°, wideo produktowe) i animacje 2D i 3D.</p>
             <p className="text-muted-foreground">Agencja reklamowa Poznań to jeden punkt obsługi dla wszystkich potrzeb reklamowych — kreacja, produkcja i media planning. Zarządzanie kampaniami PPC, obsługa graficzna oraz usługi foto i wideo — wszystko pod jednym dachem. Zbudujmy razem kampanię, która zostawi ślad w głowach Twoich klientów.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

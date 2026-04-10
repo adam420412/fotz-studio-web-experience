@@ -175,6 +175,13 @@ const SocialMediaContent = () => {
             <p className="text-muted-foreground mb-6">Każda platforma rządzi się innymi prawami. Content na Instagrama musi być wizualnie spójny i estetyczny. Na LinkedIn liczy się merytoryka i profesjonalizm. TikTok i Reels nagradzają autentyczność i kreatywność. Dobry content manager wie, jak dopasować styl komunikacji do kanału.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Tworzenie rolek i wideo na social media — video content marketing</h2>
             <p className="text-muted-foreground">Tworzenie rolek pod social media to jeden z najefektywniejszych sposobów na zwiększenie zasięgu organicznego. Algorytmy Instagrama, TikToka i YouTube premiują krótkie wideo, dając mu wielokrotnie większy zasięg niż statycznym postom. Tworzenie reklam wideo i organicznego video contentu to nasza specjalność — od scenariusza po montaż.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
           </motion.div>
         </div>
       </section>

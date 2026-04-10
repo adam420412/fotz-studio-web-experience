@@ -1006,6 +1006,13 @@ export default function AgencjaMarketingowaPoznan() {
 
             <h3 className="text-2xl font-heading font-bold mb-4">Agencja kreatywna Poznań — co nas wyróżnia na rynku?</h3>
             <p className="text-muted-foreground">Agencja kreatywna Poznań łącząca kreatywność z analityką — każda decyzja jest poparta danymi, każda kampania mierzona i optymalizowana. Agencja reklamowa Poznań z naciskiem na ROI — nie tworzymy sztuki dla sztuki, lecz kampanie, które przynoszą realne wyniki biznesowe. Sprawdź nasze realizacje i przekonaj się, dlaczego firmy z Poznania wybierają Fotz Studio.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

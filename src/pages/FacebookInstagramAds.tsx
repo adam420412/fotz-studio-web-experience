@@ -531,6 +531,12 @@ export default function FacebookInstagramAds() {
             <p className="text-muted-foreground leading-relaxed mb-4">
               Prowadzenie facebooku z agencją Fotz Studio to gwarancja efektywnych kampanii. Kampanii reklamowej Facebook cennik: konfiguracja od 800 zł jednorazowo, miesięczna obsługa od 1 200 zł. Trzymamy rękę na pulsie — reagujemy na zmiany wyników kampanii i optymalizujemy twoich reklam efektywność na bieżąco. Twojej stronie internetowej i twojej firmie zapewniamy poprawną konfigurację piksela Meta i śledzenie konwersji. Google Ads i Facebook Ads to komplementarne kanały — razem tworzą kompletną strategię digital marketingu. Możesz utworzyć kampanię na Facebooku i równolegle prowadzić reklamy Google — to optymalna synergia. Ruch w firmie generowany z kampanii Facebook monitorujemy w Google Analytics 4. Facebooku z agencją współpraca zapewnia Ci spokój i mierzalne wyniki — raportujemy każdej kampanii wyniki co miesiąc.
             </p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
           </div>
         </div>
       </section>

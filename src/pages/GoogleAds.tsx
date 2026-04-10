@@ -716,6 +716,13 @@ const GoogleAds = () => {
             <p className="text-muted-foreground leading-relaxed mb-6">
               Nawet najlepsza kampania Google Ads nie przyniesie efektów bez dobrego landing page. Strony internetowej jakość po kliknięciu w reklamę decyduje o współczynniku konwersji i koszcie leadu. Quality Score w Google Ads ocenia trafność reklamy, słów kluczowych i strony docelowej — im wyższy, tym niższy koszt kliknięcia. Prowadzenie i optymalizacja kampanii Google Ads wymaga więc holistycznego podejścia: reklama + landing page + analityka. Fotz Studio dba o wszystkie trzy elementy w ramach kompleksowej obsługi kampanii.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

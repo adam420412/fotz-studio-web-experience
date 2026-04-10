@@ -124,6 +124,13 @@ const SEOPozycjonowanieWroclaw = () => {
             <p className="text-muted-foreground mb-6">Kompleksowe pozycjonowanie Wrocław: audyt SEO strony, optymalizacja techniczna, content SEO z frazami lokalnymi, link building z portali wrocławskich i regionalnych, pozycjonowanie Google Maps dla firm ze Wrocławia.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO dla firm z Wrocławia — wyniki, które mierzysz</h2>
             <p className="text-muted-foreground">Pozycjonowanie stron Wrocław przynosi wymierne efekty: wzrost ruchu organicznego, wyższe pozycje na frazy lokalne i branżowe, więcej leadów ze strony internetowej. Raportujemy wyniki transparentnie — każdy miesiąc dostajesz raport z pozycji, ruchu i wykonanych działań SEO. Skontaktuj się z Fotz Studio — agencją SEO we Wrocławiu.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -562,6 +562,13 @@ export default function SocialMediaPoznan() {
             <p className="text-muted-foreground mb-6">Prowadzenie social media dla firm z Poznania to nasza codzienność od kilku lat. Znamy lokalny rynek, wiemy jakie treści angażują poznańskich odbiorców i jak docierać do potencjalnych klientów w Wielkopolsce. Agencja social media Poznań z portfolio dziesiątek lokalnych firm.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Social media marketing Poznań — kampanie reklamowe i organiczny growth</h2>
             <p className="text-muted-foreground">Social media marketing Poznań łączy organiczny content z płatnymi kampaniami Facebook Ads i Instagram Ads. Targetowanie reklam na Poznań i okolice, kreacje dopasowane do lokalnej specyfiki i systematyczne raportowanie efektów — to nasza agencja social media w Poznaniu. Skontaktuj się i sprawdź ofertę obsługi social media dla Twojej firmy.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+            </div>
           </motion.div>
         </div>
       </section>

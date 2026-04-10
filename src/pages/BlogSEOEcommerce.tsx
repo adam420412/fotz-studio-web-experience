@@ -516,6 +516,12 @@ const BlogSEOEcommerce = () => {
 
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Bezpłatny audyt SEO sklepu internetowego — skontaktuj się z Fotz Studio</h2>
               <p className="text-muted-foreground">Twój sklep internetowy nie generuje ruchu organicznego? Fotz Studio przeprowadzi bezpłatny audyt SEO i wskaże najważniejsze problemy do naprawy. Skontaktuj się z nami, by zamówić audyt SEO e-commerce — odpowiadamy w ciągu 24 godzin.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
             </div>
 
 

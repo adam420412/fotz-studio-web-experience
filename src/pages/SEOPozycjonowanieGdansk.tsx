@@ -124,6 +124,13 @@ const SEOPozycjonowanieGdansk = () => {
             <p className="text-muted-foreground mb-6">Agencja SEO Gdańsk — kompleksowe pozycjonowanie: audyt SEO strony, optymalizacja techniczna i treściowa, link building z portali trójmiejskich, pozycjonowanie Google Maps dla firm z Trójmiasta, content SEO pod lokalne frazy (Gdańsk, Gdynia, Sopot, Trójmiasto).</p>
             <h2 className="text-3xl font-heading font-bold mb-6">SEO Trójmiasto — dominuj w Google na Gdańsk, Gdynię i Sopot</h2>
             <p className="text-muted-foreground">Pozycjonowanie Gdańsk i całego Trójmiasta — z Fotz Studio zbudujesz widoczność online, która generuje stały napływ klientów. Transparentne raportowanie wyników, regularne optymalizacje i indywidualne podejście do każdego klienta. Umów konsultację z naszą agencją SEO w Gdańsku.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
           </motion.div>
         </div>
       </section>

@@ -175,6 +175,13 @@ const PMTargetowanie = () => {
             <p className="text-muted-foreground mb-6">Rodzaje targetowania: demograficzne (wiek, płeć, wykształcenie), geograficzne (lokalizacja, promień od adresu), zainteresowania i zachowania, własne listy klientów (Custom Audiences — na podstawie danych CRM, pikseli śledzących), Lookalike Audiences (podobni do istniejących klientów) oraz retargeting/remarketing (osoby, które już odwiedziły stronę).</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Retargeting i remarketing — reklamy dla osób, które już Cię znają</h2>
             <p className="text-muted-foreground">Retargeting (Meta, Google Display) i remarketing (Google Ads) to reklamy kierowane do użytkowników, którzy odwiedzili Twoją stronę lub weszli w interakcję z Twoją marką, ale nie skonwertowali. Reklamy remarketingowe wyróżniają się wyjątkowo wysokim CTR i niskim CPA — bo trafiają do osób już zaznajomionych z Twoją ofertą. Analiza konkurencji w internecie pomaga też identyfikować grupy docelowe, które Twoi konkurenci pozyskują skutecznie.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

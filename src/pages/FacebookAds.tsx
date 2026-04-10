@@ -687,6 +687,13 @@ const FacebookAds = () => {
             <h2 className="text-3xl font-heading font-bold mb-6">Kampanie Facebook Ads — formaty reklam i cele kampanii</h2>
             <p className="text-muted-foreground mb-4">Formy reklamy na Facebooku: reklamy graficzne (single image), karuzele, reklamy wideo, kolekcje, reklamy lead (Lead Ads do zbierania kontaktów), reklamy dynamiczne dla e-commerce (DPA), Stories Ads i Reels Ads. Każdy format ma inne zastosowanie zależnie od celu kampanii.</p>
             <p className="text-muted-foreground">Reklama na Facebooku dla firm lokalnych pozwala targetować odbiorców po lokalizacji — w promieniu kilometrów od Twojej siedziby. Formy reklamy na Facebooku można dostosować do każdego etapu lejka sprzedażowego: od budowania świadomości marki, przez generowanie leadów, po retargeting i zwiększenie sprzedaży. Sprawdź, jak kampanie Facebook Ads mogą rozwinąć Twój biznes.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
           </motion.div>
         </div>
       </section>

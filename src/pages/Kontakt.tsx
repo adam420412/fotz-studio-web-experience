@@ -503,6 +503,13 @@ export default function Kontakt() {
               wizualnej. Wypełnij formularz kontaktowy, opisując swoje potrzeby —
               przygotujemy wstępną ofertę w ciągu 48 godzin.
             </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>

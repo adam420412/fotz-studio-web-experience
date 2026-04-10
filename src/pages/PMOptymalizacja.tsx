@@ -175,6 +175,13 @@ const PMOptymalizacja = () => {
             <p className="text-muted-foreground mb-6">Optymalizacja konwersji (CRO) to nieodłączny element optymalizacji kampanii — nawet najlepiej ustawiona kampania nie przyniesie efektów, jeśli strona docelowa (landing page) nie konwertuje odwiedzających w klientów. Raporty efektywności kampanii pozwalają identyfikować słabe punkty i priorytetyzować działania optymalizacyjne.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Testy A/B i analiza danych w optymalizacji reklam</h2>
             <p className="text-muted-foreground">Testy A/B kreacji reklamowych, landing page'ów i grup docelowych pozwalają systematycznie poprawiać wyniki kampanii. Monitorowanie ruchu na stronie (Google Analytics 4, Microsoft Clarity, heatmapy) dostarcza danych o zachowaniu użytkowników po kliknięciu reklamy. Systematyczna analiza seo strony i kampanii płatnych — to fundament data-driven marketingu. Zlecenie optymalizacji kampanii doświadczonym specjalistom może wielokrotnie poprawić efektywność Twojego budżetu reklamowego.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
           </motion.div>
         </div>
       </section>
