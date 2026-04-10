@@ -121,6 +121,7 @@ const StronyInternetoweWarszawa = lazy(() => import("./pages/StronyInternetoweWa
 const StronyInternetoweWroclaw = lazy(() => import("./pages/StronyInternetoweWroclaw"));
 const StronyInternetoweKrakow = lazy(() => import("./pages/StronyInternetoweKrakow"));
 const StronyInternetoweGdansk = lazy(() => import("./pages/StronyInternetoweGdansk"));
+const StronyInternetoweGdynia = lazy(() => import("./pages/StronyInternetoweGdynia"));
 const StronyInternetoweLodz = lazy(() => import("./pages/StronyInternetoweLodz"));
 const StronyInternetoweSzczecin = lazy(() => import("./pages/StronyInternetoweSzczecin"));
 const StronyInternetoweBydgoszcz = lazy(() => import("./pages/StronyInternetoweBydgoszcz"));
@@ -157,6 +158,7 @@ const FotografiaZDrona = lazy(() => import("./pages/FotografiaZDrona"));
 const PozycjonowanieStronPoznan = lazy(() => import("./pages/PozycjonowanieStronPoznan"));
 const AgencjaSEOPoznan = lazy(() => import("./pages/AgencjaSEOPoznan"));
 const SklepyInternetowePoznan = lazy(() => import("./pages/SklepyInternetowePoznan"));
+const AgencjaKreaTywnaPoznan = lazy(() => import("./pages/AgencjaKreaTywnaPoznan"));
 const Pozycjonowanie = lazy(() => import("./pages/Pozycjonowanie"));
 const PozycjonowanieGoogleMaps = lazy(() => import("./pages/PozycjonowanieGoogleMaps"));
 const ProdukcjaFilmowPoznan = lazy(() => import("./pages/ProdukcjaFilmowPoznan"));
@@ -312,6 +314,7 @@ const App = () => (
                 <Route path="/uslugi/strony-internetowe/wroclaw" element={<StronyInternetoweWroclaw />} />
                 <Route path="/uslugi/strony-internetowe/krakow" element={<StronyInternetoweKrakow />} />
                 <Route path="/uslugi/strony-internetowe/gdansk" element={<StronyInternetoweGdansk />} />
+                <Route path="/uslugi/strony-internetowe/gdynia" element={<StronyInternetoweGdynia />} />
                 <Route path="/uslugi/strony-internetowe/lodz" element={<StronyInternetoweLodz />} />
                 <Route path="/uslugi/strony-internetowe/szczecin" element={<StronyInternetoweSzczecin />} />
                 <Route path="/uslugi/strony-internetowe/bydgoszcz" element={<StronyInternetoweBydgoszcz />} />
@@ -403,6 +406,7 @@ const App = () => (
                 <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
                 <Route path="/agencja-seo-poznan" element={<AgencjaSEOPoznan />} />
                 <Route path="/uslugi/sklepy-internetowe/poznan" element={<SklepyInternetowePoznan />} />
+                <Route path="/agencja-kreatywna-poznan" element={<AgencjaKreaTywnaPoznan />} />
                 <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
                 <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
                 <Route path="/wizualizacje-3d" element={<Wizualizacje3D />} />
