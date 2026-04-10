@@ -19,8 +19,8 @@ const cities = [
   { name: "Szczecin", path: "/uslugi/strony-internetowe/szczecin", active: true },
   { name: "Lublin", path: "/uslugi/strony-internetowe/lublin", active: true },
   { name: "Bydgoszcz", path: "/uslugi/strony-internetowe/bydgoszcz", active: true },
-  { name: "Białystok", path: "/uslugi/strony-internetowe/bialystok", active: false },
-  { name: "Rzeszów", path: "/uslugi/strony-internetowe/rzeszow", active: false },
+  { name: "Białystok", path: "/uslugi/strony-internetowe/bialystok", active: true },
+  { name: "Rzeszów", path: "/uslugi/strony-internetowe/rzeszow", active: true },
 ];
 
 const faqItems = [
@@ -50,8 +50,8 @@ const BlogKosztStrony = () => {
   return (
     <>
       <SEOHead
-        title="Ile Kosztuje Strona Internetowa w 2025? Cennik i Aktualne Koszty | Fotz Studio"
-        description="Ile kosztuje strona internetowa w 2025? Cennik stron www: landing page, strona firmowa, sklep e-commerce. Aktualne koszty tworzenia stron internetowych…"
+        title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Aktualne Koszty | Fotz Studio"
+        description="Ile kosztuje strona internetowa w 2026? Cennik stron www: landing page od 2 000 zł, strona firmowa od 5 000 zł, sklep e-commerce od 10 000 zł. Aktualne koszty tworzenia stron."
         ogType="article"
         canonical="https://fotz.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
@@ -59,7 +59,7 @@ const BlogKosztStrony = () => {
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty",
+            "headline": "Ile kosztuje strona internetowa w 2026? Cennik i aktualne koszty",
             "description": "Kompleksowy przewodnik po kosztach tworzenia stron internetowych w 2025 roku",
             "author": {
               "@type": "Organization",
@@ -74,7 +74,7 @@ const BlogKosztStrony = () => {
               }
             },
             "datePublished": "2024-12-20",
-            "dateModified": "2026-01-09"
+            "dateModified": "2026-04-11"
           },
           {
             "@context": "https://schema.org",
@@ -128,7 +128,7 @@ const BlogKosztStrony = () => {
               <ChevronRight className="h-4 w-4" />
               <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
               <ChevronRight className="h-4 w-4" />
-              <span className="text-foreground">Ile kosztuje strona internetowa w 2025?</span>
+              <span className="text-foreground">Ile kosztuje strona internetowa w 2026?</span>
             </nav>
           </div>
         </section>
@@ -152,7 +152,7 @@ const BlogKosztStrony = () => {
                 </span>
                 
                 <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty
+                  Ile kosztuje strona internetowa w 2026? Cennik i aktualne koszty
                 </h1>
                 
                 <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
@@ -187,7 +187,7 @@ const BlogKosztStrony = () => {
                 className="prose prose-lg prose-invert max-w-none"
               >
                 <p className="lead text-xl text-muted-foreground mb-8">
-                  Zastanawiasz się, ile będzie kosztować strona internetowa w 2025 roku? Ten artykuł rozwieje Twoje wątpliwości, przedstawiając aktualny cennik i koszty związane z tworzeniem stron internetowych. Omówimy różne typy stron, czynniki wpływające na cenę, a także średni koszt wykonania strony internetowej w nadchodzącym roku.
+                  Zastanawiasz się, ile będzie kosztować strona internetowa w 2026 roku? Ten artykuł rozwieje Twoje wątpliwości, przedstawiając aktualny cennik i koszty związane z tworzeniem stron internetowych. Omówimy różne typy stron, czynniki wpływające na cenę, a także średni koszt wykonania strony internetowej w nadchodzącym roku.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -237,7 +237,7 @@ const BlogKosztStrony = () => {
                   Średni koszt wykonania strony internetowej w 2025
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Ustalenie dokładnego średniego kosztu wykonania strony internetowej w 2025 roku jest trudne, ponieważ zależy on od wielu wspomnianych czynników.
+                  Ustalenie dokładnego średniego kosztu wykonania strony internetowej w 2026 roku jest trudne, ponieważ zależy on od wielu wspomnianych czynników.
                 </p>
 
                 <div className="overflow-x-auto mb-8">
@@ -321,6 +321,39 @@ const BlogKosztStrony = () => {
                       <tr className="border-b border-border/50">
                         <td className="py-4 px-4 text-muted-foreground">Sklep internetowy</td>
                         <td className="py-4 px-4 text-muted-foreground">300 - 2 000 zł</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Ile kosztuje landing page?
+                </h2>
+
+                <p className="text-muted-foreground mb-4">
+                  <strong>Landing page</strong> to oddzielna kategoria stron internetowych — pojedyncza strona zaprojektowana pod jeden cel: sprzedaż, zbieranie leadów lub zapis na newsletter. Jest tańsza i szybsza w realizacji od pełnej strony firmowej, ale wymaga precyzyjnego projektu konwersji. Więcej o tym, <Link to="/uslugi/landing-page" className="text-primary hover:underline">czym jest landing page i ile kosztuje</Link>, znajdziesz na naszej stronie usługi.
+                </p>
+
+                <div className="overflow-x-auto mb-8">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-4 px-4 font-semibold">Typ landing page</th>
+                        <th className="text-left py-4 px-4 font-semibold">Orientacyjny koszt</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Landing page basic (do kampanii reklamowej)</td>
+                        <td className="py-4 px-4 text-muted-foreground">od 2 000 zł</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Landing page pro (animacje, integracje CRM)</td>
+                        <td className="py-4 px-4 text-muted-foreground">od 4 500 zł</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Landing page enterprise (funnel, A/B testing)</td>
+                        <td className="py-4 px-4 text-muted-foreground">od 9 000 zł</td>
                       </tr>
                     </tbody>
                   </table>
