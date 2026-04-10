@@ -34,8 +34,8 @@ const BlogMarketingAutomation = () => {
   return (
     <>
       <SEOHead
-        title="Marketing Automation - jak zautomatyzować sprzedaż w 2025 | Fotz Studio"
-        description="Kompletny przewodnik po marketing automation. Dowiedz się jak automatyzować procesy marketingowe i zwiększać sprzedaż bez zwiększania zespołu."
+        title="Marketing Automation — Jak Zautomatyzować Sprzedaż i Pozyskiwanie Leadów? | Fotz Studio"
+        description="Marketing automation — jak zautomatyzować email marketing, lead nurturing i sprzedaż online. Narzędzia i strategie automatyzacji marketingu dla firm 2025. Fotz Studio."
         canonical="https://fotz.pl/blog/marketing-automation"
         keywords="marketing automation, automatyzacja marketingu, lead nurturing, CRM, email automation, sales funnel, konwersja"
       />
@@ -294,6 +294,19 @@ const BlogMarketingAutomation = () => {
             <RelatedServices services={servicesByCategory.automation} />
           </div>
         </div>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Marketing automation — automatyzacja marketingu jako klucz do skalowalnego wzrostu</h2>
+              <p className="text-muted-foreground mb-6">Marketing automation pozwala firmom prowadzić spersonalizowaną komunikację z setkami lub tysiącami potencjalnych klientów jednocześnie, bez proporcjonalnego zwiększania zespołu. Automatyczne sekwencje emaili, dynamiczne treści na stronie, chatboty i scoring leadów — to tylko przykłady automatyzacji, które pracują 24/7 zamiast Ciebie.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Wdrożenie marketing automation w Fotz Studio — HubSpot, Mailchimp, ActiveCampaign</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio wdraża systemy marketing automation dla firm B2B i B2C. Pracujemy z platformami: HubSpot, ActiveCampaign, MailerLite, Mailchimp, Klaviyo i Make (Integromat). Konfigurujemy automatyzacje: sekwencje nurturujące, odzysk koszyka, scoring leadów, CRM i integracje z systemami sprzedażowymi.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Automatyzacja marketingu dla Twojej firmy — skontaktuj się z Fotz Studio</h2>
+              <p className="text-muted-foreground">Czy Twoja firma jest gotowa na marketing automation? Fotz Studio przeprowadza bezpłatny audyt procesów i wskazuje, jakie automatyzacje przyniosą największy ROI. Skontaktuj się z nami, by omówić wdrożenie systemu marketing automation dla Twojego biznesu.</p>
+            </div>
+
 
         <RelatedArticles currentArticleId="marketing-automation" />
       </Layout>

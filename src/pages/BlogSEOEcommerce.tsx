@@ -33,8 +33,8 @@ const BlogSEOEcommerce = () => {
   return (
     <>
       <SEOHead
-        title="SEO dla sklepów internetowych - jak pozycjonować e-commerce | Fotz Studio"
-        description="Kompletny poradnik SEO dla e-commerce. Poznaj strategie pozycjonowania sklepów internetowych, optymalizację kategorii i kart produktowych."
+        title="SEO dla Sklepów Internetowych — Jak Pozycjonować E-commerce? | Fotz Studio"
+        description="SEO dla e-commerce — optymalizacja sklepów internetowych: SEO kart produktów, kategorii, link building i techniczne SEO. Jak pozycjonować sklep w Google? Fotz Studio."
         canonical="https://fotz.pl/seo/ecommerce"
         keywords="seo e-commerce, pozycjonowanie sklepu internetowego, seo dla sklepów, optymalizacja e-commerce, seo produktów"
       />
@@ -505,6 +505,19 @@ const BlogSEOEcommerce = () => {
                 </div>
               </div>
             </div>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">SEO e-commerce — dlaczego sklepy internetowe potrzebują kompleksowej strategii SEO?</h2>
+              <p className="text-muted-foreground mb-6">SEO dla sklepów internetowych jest bardziej złożone niż SEO zwykłych stron. Tysiące produktów, dynamiczne filtry kategorii (faceted navigation), zduplikowane treści, zmieniające się stany magazynowe i konkurencja z marketplace'ami — to wyzwania specyficzne dla e-commerce. Skuteczna strategia SEO sklep e-commerce wymaga technicznej biegłości i bieżącej optymalizacji.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Pozycjonowanie sklepów e-commerce w Fotz Studio — WooCommerce, Shopify, PrestaShop</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio specjalizuje się w SEO dla sklepów e-commerce na wszystkich popularnych platformach: WooCommerce, Shopify, PrestaShop, Magento. Audyt SEO e-commerce, optymalizacja kart produktowych i kategorii, link building i SEO techniczne to nasze codzienne działania przynoszące mierzalne wzrosty sprzedaży organicznej.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Bezpłatny audyt SEO sklepu internetowego — skontaktuj się z Fotz Studio</h2>
+              <p className="text-muted-foreground">Twój sklep internetowy nie generuje ruchu organicznego? Fotz Studio przeprowadzi bezpłatny audyt SEO i wskaże najważniejsze problemy do naprawy. Skontaktuj się z nami, by zamówić audyt SEO e-commerce — odpowiadamy w ciągu 24 godzin.</p>
+            </div>
+
 
             {/* Related Articles */}
             <RelatedArticles 

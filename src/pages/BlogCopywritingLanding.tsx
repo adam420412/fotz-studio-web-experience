@@ -34,8 +34,8 @@ export default function BlogCopywritingLanding() {
   return (
     <Layout>
       <SEOHead
-        title="Copywriting dla landing pages - jak pisać teksty, które konwertują | FOTZ Studio"
-        description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów, które zwiększają konwersję."
+        title="Copywriting dla Landing Page — Jak Pisać Teksty, które Konwertują | Fotz Studio"
+        description="Copywriting landing page — jak pisać teksty sprzedażowe, które konwertują. Nagłówki, CTA, storytelling. Praktyczny poradnik copywritingu dla stron lądowania 2025."
         canonical="https://fotz.pl/content-marketing/copywriting-landing"
         keywords="copywriting landing page, jak pisać landing page, teksty na stronę, headline, CTA, konwersja"
       />
@@ -349,6 +349,19 @@ export default function BlogCopywritingLanding() {
           </div>
         </div>
       </section>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Copywriting na stronie lądowania — dlaczego tekst decyduje o konwersji?</h2>
+              <p className="text-muted-foreground mb-6">Copywriting to dusza każdej strony lądowania. Piękny design bez przekonującego tekstu nie konwertuje. Dobry copywriting strony lądowania prowadzi użytkownika przez lejek: zrozumienie problemu → prezentacja rozwiązania → budowanie zaufania → wezwanie do działania. Każde zdanie musi mieć cel.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">SEO copywriting i copy sprzedażowy — tworzenie tekstów dla firm w Fotz Studio</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio tworzy copy dla stron lądowania, stron usługowych, reklam Google Ads i Meta Ads oraz emaili sprzedażowych. Nasi copywriterzy łączą techniki copywritingu sprzedażowego z optymalizacją SEO — teksty, które zarówno wyróżniają się w wynikach wyszukiwania, jak i konwertują odwiedzających.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Copywriting dla Twojej strony — zwiększ konwersję z profesjonalnym tekstem</h2>
+              <p className="text-muted-foreground">Chcesz poprawić konwersję swojej strony lub landing page? Fotz Studio audytuje istniejące teksty i pisze nowy copy zoptymalizowany pod konwersję. Skontaktuj się z nami — pierwsze konsultacje są bezpłatne.</p>
+            </div>
+
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="copywriting-landing-page" />

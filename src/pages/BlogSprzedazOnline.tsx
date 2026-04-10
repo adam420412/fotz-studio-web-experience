@@ -37,8 +37,8 @@ const BlogSprzedazOnline = () => {
   return (
     <>
       <SEOHead
-        title="Jak zwiększyć sprzedaż przez internet? 12 sprawdzonych metod [2025] | Fotz Studio"
-        description="Praktyczny przewodnik: jak zwiększyć sprzedaż online krok po kroku. SEO, Google Ads, CRO, social media, email marketing — sprawdzone strategie dla firm."
+        title="Sprzedaż Online — Jak Sprzedawać w Internecie? Poradnik dla Firm | Fotz Studio"
+        description="Jak sprzedawać online? Kanały sprzedaży internetowej: sklep własny, marketplace, social commerce. Jak zwiększyć sprzedaż online? Kompleksowy poradnik 2025. Fotz Studio."
         canonical="https://fotz.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet"
         keywords="jak zwiększyć sprzedaż przez internet, zwiększenie sprzedaży online, sprzedaż w internecie, jak sprzedawać więcej online, strategie sprzedaży online, marketing internetowy sprzedaż"
       />
@@ -624,6 +624,19 @@ const BlogSprzedazOnline = () => {
         </section>
 
         {/* Related */}
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Sprzedaż online — jak wybrać właściwe kanały sprzedaży internetowej?</h2>
+              <p className="text-muted-foreground mb-6">Sprzedaż online to wiele kanałów: własny sklep internetowy, marketplace (Allegro, Amazon, Empik), social commerce (Instagram Shopping, Facebook Shop), drop shipping. Każdy kanał ma plusy i minusy. Własny sklep daje pełną kontrolę i marżę, marketplace — gotowy ruch i zaufanie. Optymalna strategia to często wielokanałowa obecność.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Tworzenie sklepów internetowych i strategie e-commerce — Fotz Studio</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio tworzy sklepy internetowe i pomaga firmom rozwijać sprzedaż online. Oferujemy: projektowanie i budowę sklepów e-commerce (WooCommerce, Shopify), SEO produktowe, kampanie Google Shopping i Meta Ads dla sklepów, email marketing e-commerce i optymalizację konwersji (CRO).</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Zwiększ sprzedaż online z Fotz Studio — bezpłatna konsultacja e-commerce</h2>
+              <p className="text-muted-foreground">Czy Twój sklep internetowy osiąga pełen potencjał sprzedaży online? Fotz Studio przeprowadzi audyt e-commerce i zaproponuje strategię wzrostu. Bezpłatna konsultacja dostępna dla właścicieli sklepów online z całej Polski. Skontaktuj się z nami.</p>
+            </div>
+
         <RelatedArticles
           currentSlug="jak-zwiekszyc-sprzedaz-przez-internet"
           tags={["sprzedaż", "marketing", "e-commerce", "SEO"]}

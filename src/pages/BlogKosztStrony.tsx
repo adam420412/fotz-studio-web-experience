@@ -26,8 +26,8 @@ const BlogKosztStrony = () => {
   return (
     <>
       <SEOHead
-        title="Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty | FOTZ"
-        description="Sprawdź aktualny cennik stron internetowych w 2025 roku. Dowiedz się, ile kosztuje strona wizytówka, sklep internetowy i profesjonalna strona firmowa."
+        title="Ile Kosztuje Strona Internetowa w 2025? Cennik i Aktualne Koszty | Fotz Studio"
+        description="Ile kosztuje strona internetowa w 2025? Cennik stron www: landing page, strona firmowa, sklep e-commerce. Aktualne koszty tworzenia stron internetowych. Fotz Studio."
         canonical="https://fotz.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
         schemaJson={[
@@ -446,6 +446,19 @@ const BlogKosztStrony = () => {
             <RelatedServices services={servicesByCategory.websites} />
           </div>
         </div>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Koszty strony internetowej w 2025 roku — cennik i co wpływa na cenę?</h2>
+              <p className="text-muted-foreground mb-6">Koszt strony internetowej w Polsce waha się od 1500 zł za prostą stronę wizytówkową do 50 000+ zł za rozbudowany portal korporacyjny lub sklep e-commerce. Na cenę wpływa: zakres funkcjonalności, design (szablonowy vs. niestandardowy), platforma (WordPress, React, dedykowany CMS), liczba podstron i integracjami. Wycena zawsze powinna być indywidualna.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Tworzenie stron internetowych w Fotz Studio — transparentne ceny i jakość</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio tworzy strony internetowe dla firm z Polski: landing page od 2500 zł, strona firmowa od 4000 zł, sklep WooCommerce od 6000 zł, sklep Shopify od 4000 zł, portale korporacyjne wyceniane indywidualnie. Każda strona zoptymalizowana pod SEO i wydajność (Core Web Vitals).</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Bezpłatna wycena strony internetowej — co zawiera oferta Fotz Studio?</h2>
+              <p className="text-muted-foreground">Wycena strony internetowej w Fotz Studio jest bezpłatna i obejmuje: zakres projektu, proponowane technologie, timeline realizacji i warunki opieki po wdrożeniu. Skontaktuj się z nami przez formularz lub telefon — ofertę przygotowujemy w 48 godzin od wypełnienia briefu.</p>
+            </div>
+
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="ile-kosztuje-strona-internetowa" />

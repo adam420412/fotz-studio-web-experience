@@ -10,8 +10,8 @@ const BlogLandingPage = () => {
   return (
     <>
       <SEOHead
-        title="Jak stworzyć skuteczny landing page - poradnik z przykładami | Fotz Studio"
-        description="Kompletny poradnik tworzenia landing page. Struktura, copywriting, CTA i optymalizacja konwersji. Praktyczne przykłady i wskazówki."
+        title="Landing Page — Jak Stworzyć Skuteczną Stronę Lądowania? Poradnik | Fotz Studio"
+        description="Jak stworzyć skuteczny landing page? Elementy konwertującej strony lądowania, przykłady i najlepsze praktyki. Poradnik tworzenia landing page 2025. Fotz Studio."
         canonical="https://fotz.pl/blog/jak-stworzyc-landing-page"
         keywords="landing page, strona lądowania, konwersja, CTA, UX, copywriting, lead generation, optymalizacja"
       />
@@ -405,6 +405,19 @@ const BlogLandingPage = () => {
             </div>
           </div>
         </article>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Landing page a strona firmowa — kluczowe różnice i kiedy używać których?</h2>
+              <p className="text-muted-foreground mb-6">Landing page (strona lądowania) to strona zoptymalizowana pod jedną konkretną akcję (konwersję). W przeciwieństwie do strony firmowej, nie ma menu nawigacyjnego, oferuje jedno CTA i skupia się na jednym przekazie. Landing page sprawdza się idealnie dla kampanii reklamowych, promocji produktów i zbierania leadów.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Projektowanie landing page — Fotz Studio tworzy strony lądowania z wysokim CR</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio projektuje i buduje landing page zoptymalizowane pod konwersję. Nasze landing pages zawierają: wyraźny nagłówek z propozycją wartości (USP), social proof (opinie, liczby, certyfikaty), sekcję z korzyściami, silne CTA i ograniczenie dystraktorów. Testujemy A/B, by stale poprawiać CR.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Landing page dla Twojej kampanii reklamowej — projekt i wdrożenie</h2>
+              <p className="text-muted-foreground">Planujesz kampanię Google Ads lub Meta Ads? Potrzebujesz dedykowanego landing page dla każdej grupy docelowej i oferty. Fotz Studio tworzy landing pages w ciągu 5-10 dni roboczych. Skontaktuj się z nami, by wycenić projekt strony lądowania dla Twojej kampanii.</p>
+            </div>
+
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="jak-stworzyc-landing-page" maxArticles={3} />
