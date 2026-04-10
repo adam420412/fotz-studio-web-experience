@@ -61,6 +61,9 @@ Disallow: /login
 Disallow: /api/
 Disallow: /_next/
 
+# Disallow Vite/React build assets (JS/CSS bundles) - these should never be indexed
+Disallow: /assets/
+
 # Disallow URL parameters (query strings)
 Disallow: /*?*
 Disallow: /*?utm_*

@@ -7,7 +7,7 @@ export default function Regulamin() {
     <>
       <SEOHead
         title="Regulamin | Fotz Studio"
-        description="Regulamin świadczenia usług Fotz Studio. Warunki współpracy, prawa i obowiązki stron."
+        description="Regulamin świadczenia usług Fotz Studio. Zapoznaj się z warunkami współpracy, prawami i obowiązkami stron, zasadami płatności i polityką reklamacji."
         canonical="https://fotz.pl/regulamin"
       />
       

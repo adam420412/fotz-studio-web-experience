@@ -44,13 +44,23 @@ export default function BlogArticleDynamic() {
 
   const canonicalUrl = `https://fotz.pl/blog/${article.slug}`;
 
+  // Build a description of at least 120 chars for SEO
+  const rawDesc = article.meta_description || article.title;
+  const metaDescription = rawDesc.length >= 120
+    ? rawDesc
+    : `${rawDesc} — przeczytaj artykuł na blogu Fotz Studio i dowiedz się więcej o marketingu, SEO i tworzeniu stron internetowych.`;
+
+  // Noindex test/draft articles with very short descriptions (likely test content)
+  const isTestArticle = rawDesc.length < 80 && article.title.toLowerCase().includes("test");
+
   return (
     <Layout>
       <SEOHead
         title={`${article.title} | Blog FOTZ`}
-        description={article.meta_description || article.title}
+        description={metaDescription}
         canonical={canonicalUrl}
         ogImage={article.hero_image_url || undefined}
+        noIndex={isTestArticle}
       />
       <BreadcrumbSchema
         items={[
@@ -61,7 +71,7 @@ export default function BlogArticleDynamic() {
       />
       <ArticleSchema
         title={article.title}
-        description={article.meta_description || article.title}
+        description={metaDescription}
         url={canonicalUrl}
         image={article.hero_image_url || "https://fotz.pl/og-image.jpg"}
         datePublished={article.published_at || article.created_at}
@@ -129,7 +139,12 @@ export default function BlogArticleDynamic() {
                 prose-li:my-1
                 prose-img:rounded-xl
                 prose-blockquote:border-primary prose-blockquote:text-muted-foreground"
-              dangerouslySetInnerHTML={{ __html: article.content_html }}
+              dangerouslySetInnerHTML={{
+                // Replace any <h1> tags in CMS content with <h2> to avoid duplicate H1 on page
+                __html: article.content_html
+                  .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
+                  .replace(/<\/h1>/gi, '</h2>'),
+              }}
             />
           )}
 
