@@ -389,6 +389,31 @@ export default function AgencjaKreaTywnaPoznan() {
           </motion.div>
         </div>
       </section>
+
+      {/* Internal linking — related services */}
+      <section className="py-12 border-t border-border/30 bg-card/20">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { label: "Agencja reklamowa Poznań", to: "/agencja-reklamowa-poznan" },
+              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
+              { label: "Identyfikacja wizualna", to: "/uslugi/identyfikacja-wizualna" },
+              { label: "Social media Poznań", to: "/uslugi/social-media/poznan" },
+              { label: "Produkcja filmów Poznań", to: "/uslugi/produkcja-filmow/poznan" },
+              { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
+            ].map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
