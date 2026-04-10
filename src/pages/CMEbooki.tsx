@@ -35,8 +35,8 @@ const CMEbooki = () => {
   return (
     <>
       <SEOHead
-        title="Ebooki i Lead Magnety | Content Marketing B2B | Fotz Studio"
-        description="Tworzenie ebooków, whitepaperów i lead magnetów. Wartościowy content, który buduje bazę mailingową i pozycjonuje markę jako eksperta w branży."
+        title="E-booki i Lead Magnety — Content Marketing B2B i Generowanie Leadów | Fotz Studio"
+        description="E-booki, lead magnety i content marketing B2B — tworzenie materiałów edukacyjnych, whitepaper, checklisty do pozyskiwania leadów. Fotz Studio."
         canonical="https://fotz.pl/content-marketing/ebooki"
         keywords="ebooki marketing, lead magnet, whitepaper, content marketing b2b, tworzenie ebooka, lead generation content"
       />
@@ -165,6 +165,66 @@ const CMEbooki = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              E-booki i lead magnety — skuteczne narzędzia content marketingu B2B
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              E-booki, whitepapers i lead magnety to jedne z najskuteczniejszych narzędzi
+              content marketingu B2B. Dostarczają wartościową wiedzę potencjalnym klientom
+              w zamian za dane kontaktowe, budując bazę leadów gotowych do konwersji.
+              Fotz Studio tworzy profesjonalne e-booki, checklisty, raporty i inne materiały
+              edukacyjne, które generują leady i budują autorytet marki.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dobry lead magnet rozwiązuje konkretny problem docelowej grupy odbiorców.
+              Tworzymy materiały, które są naprawdę użyteczne — nie tylko ładne PDF-y,
+              ale wartościowe zasoby, po które użytkownicy chętnie zostawią swój e-mail.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Tworzenie e-booków — od konceptu po dystrybucję i generowanie leadów
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Proces tworzenia e-booka w Fotz Studio obejmuje: researach i merytorykę,
+              copywriting, projekt graficzny i layout, skład PDF, landing page do pobrania
+              oraz integrację z systemem marketing automation. Dbamy o każdy etap — od
+              pomysłu na temat po automatyczną wysyłkę i follow-up do leadów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              E-booki, raporty branżowe i whitepapers budują pozycję eksperta w swojej
+              dziedzinie. Content marketing B2B oparty na wartościowych materiałach
+              edukacyjnych skraca cykl sprzedaży i zwiększa jakość pozyskiwanych leadów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lead magnety, checklisty i kursy online — content marketing dla B2B i B2C
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Poza e-bookami tworzymy różnorodne lead magnety: checklisty, szablony,
+              kalkulatory, mini-kursy, webinary i quizy. Każdy format ma swoje zastosowanie
+              — checklisty sprawdzają się w branżach operacyjnych, kalkulatory w financial,
+              mini-kursy w edukacji i usługach profesjonalnych.
+            </p>
+            <p className="text-muted-foreground">
+              Content marketing oparty na lead magnetach przynosi trwałe rezultaty —
+              zbudowana baza e-mail to aktywo firmy, które pracuje latami. Skontaktuj się
+              z Fotz Studio, by omówić strategię content marketingu i lead generation
+              dopasowaną do Twojej branży i celów biznesowych.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

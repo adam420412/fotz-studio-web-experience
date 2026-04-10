@@ -84,8 +84,8 @@ export default function AgencjaKreaTywnaPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Kreatywna Poznań | Branding, Design, Video | Fotz"
-        description="Agencja kreatywna Poznań — identyfikacja wizualna, logo, web design, produkcja wideo i fotografia. Kompleksowa obsługa kreatywna dla firm. Fotz Studio."
+        title="Agencja Kreatywna Poznań — Branding, Design, Kampanie Kreatywne | Fotz Studio"
+        description="Agencja kreatywna Poznań — branding, identyfikacja wizualna, kampanie kreatywne, produkcja wideo i content. Kompleksowe wsparcie kreatywne dla firm. Fotz Studio."
         canonical="https://fotz.pl/agencja-kreatywna-poznan"
         keywords="agencja kreatywna poznań, studio kreatywne poznań, branding poznań, identyfikacja wizualna poznań, web design poznań, produkcja wideo poznań, grafika reklamowa poznań"
       />
@@ -414,6 +414,65 @@ export default function AgencjaKreaTywnaPoznan() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Agencja kreatywna Poznań — kompleksowe wsparcie kreatywne dla biznesu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Agencja kreatywna Fotz Studio w Poznaniu łączy strategię, design i produkcję
+              w jednym miejscu. Oferujemy kompleksowe wsparcie kreatywne dla firm — od brandingu
+              i identyfikacji wizualnej po kampanie marketingowe, produkcję wideo i content
+              na media społecznościowe. Agencja kreatywna to partner, który rozumie Twój biznes
+              i przekształca pomysły w skuteczne komunikaty.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kreatywność wsparta strategią to nasza filozofia. Każdy projekt kreatywny zaczyna
+              się od zrozumienia celów biznesowych, grupy docelowej i pozycjonowania marki.
+              Dopiero wtedy tworzymy koncepcje kreatywne, które wyróżniają i sprzedają.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Branding i kampanie kreatywne — agencja marketingowa z duszą kreatywną
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Branding to znacznie więcej niż logo. To spójny system komunikacji wizualnej
+              i werbalnej, który buduje rozpoznawalność i zaufanie. Nasza agencja kreatywna
+              tworzy kompletny branding: strategia marki, naming, identyfikacja wizualna,
+              tone of voice i brand book.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kampanie kreatywne dla firm z Poznania i całej Polski realizujemy w oparciu
+              o dane i insighty konsumenckie. Pomysły kreatywne muszą nie tylko zachwycać
+              — muszą też działać i generować mierzalne wyniki.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Produkcja treści kreatywnych — wideo, grafika, copywriting
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Agencja kreatywna Fotz Studio oferuje produkcję wszelkich treści: wideo (spoty
+              reklamowe, reelsy, filmy wizerunkowe), grafika (posty social media, banery,
+              infografiki) oraz copywriting (artykuły, hasła, slogany). Wszystko pod jednym
+              dachem — bez konieczności koordynowania wielu dostawców.
+            </p>
+            <p className="text-muted-foreground">
+              Jako agencja kreatywna w Poznaniu obsługujemy firmy na każdym etapie rozwoju —
+              od startupów szukających pierwszego brandingu po duże korporacje potrzebujące
+              wsparcia w konkretnych projektach. Skontaktuj się z nami, by omówić Twoje potrzeby kreatywne.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

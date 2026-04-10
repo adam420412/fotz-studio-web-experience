@@ -150,8 +150,8 @@ export default function SklepyInternetoweKrakow() {
   return (
     <Layout>
       <SEOHead
-        title="Tworzenie Sklepów Internetowych Kraków — Sklep Internetowy | Fotz Studio"
-        description="Tworzenie sklepów internetowych Kraków — projektujemy i wdrażamy profesjonalne sklepy internetowe dla firm z Krakowa. Shopify, WooCommerce, sklep custom z integracjami ERP. Oferta dla firm z Małopolski. Wycena bezpłatna."
+        title="Sklepy Internetowe Kraków — Tworzenie Sklepów E-commerce | Fotz Studio"
+        description="Tworzenie sklepów internetowych Kraków — sklep online WooCommerce, Shopify dla firm z Krakowa. E-commerce z SEO, integracjami płatności i obsługą. Fotz Studio."
         canonical="https://fotz.pl/uslugi/sklepy-internetowe/krakow"
         keywords="tworzenie sklepów internetowych Kraków, sklep internetowy Kraków, wdrożenie e-commerce Kraków, agencja e-commerce Kraków, Shopify Kraków, WooCommerce Kraków, sklep online Kraków"
       />
@@ -500,6 +500,63 @@ export default function SklepyInternetoweKrakow() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Sklepy internetowe Kraków — tworzenie e-commerce dla firm z Małopolski
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tworzenie sklepów internetowych w Krakowie dla firm z Małopolski i całej
+              Polski południowej to oferta Fotz Studio. Kraków to drugie co do wielkości
+              centrum biznesowe w Polsce — rynek e-commerce jest tu bardzo dynamiczny.
+              Projektujemy i budujemy sklepy internetowe na WooCommerce, Shopify
+              i platformach dedykowanych, dostosowane do specyfiki krakowskich firm.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Sklep online dla firmy z Krakowa budujemy z myślą o długoterminowym
+              sukcesie w wyszukiwarce. Strukturę kategorii, opisy produktów i techniczne
+              SEO wdrażamy od pierwszego dnia, by sklep generował ruch organiczny
+              bez zależności od płatnych kampanii.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              E-commerce Kraków — WooCommerce, Shopify i sklep na miarę
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Dla firm z Krakowa dopasowujemy platformę e-commerce do ich potrzeb:
+              WooCommerce dla firm szukających elastyczności i pełnej kontroli,
+              Shopify dla firm ceniących prostotę zarządzania, dedykowane rozwiązania
+              dla złożonych projektów e-commerce z unikalnymi wymaganiami.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Projektowanie sklepów internetowych dla firm z Krakowa uwzględnia
+              lokalne preferencje konsumentów, integracje z popularnymi bramkami
+              płatności (PayU, Przelewy24, BLIK) i firmami kurierskimi (InPost, DPD).
+              Optymalizacja UX i szybkości ładowania to standard każdej realizacji.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Sklep internetowy Kraków z SEO, marketingiem i stałą obsługą
+            </h2>
+            <p className="text-muted-foreground">
+              Fotz Studio to partner e-commerce dla firm z Krakowa oferujący pełen
+              pakiet usług: budowa sklepu, SEO, kampanie Google Shopping, Meta Ads
+              i email marketing. Stała obsługa techniczna i regularne aktualizacje
+              zapewniają bezpieczeństwo i rozwój sklepu przez lata. Skontaktuj się
+              z nami po bezpłatną konsultację i wycenę projektu e-commerce dla Twojej firmy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

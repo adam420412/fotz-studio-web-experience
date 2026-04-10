@@ -35,8 +35,8 @@ const CMVideoContent = () => {
   return (
     <>
       <SEOHead
-        title="Video Content Marketing | Produkcja Wideo dla Firm | Fotz Studio"
-        description="Video content marketing: reelsy, webinary, explainer videos, testimoniale. Tworzymy wideo, które buduje markę, angażuje i sprzedaje. Produkcja wideo Poznań."
+        title="Video Content Marketing — Produkcja Wideo dla Firm, Reelsy, Filmy Reklamowe | Fotz Studio"
+        description="Video content marketing — produkcja wideo dla firm: reelsy, explainer video, filmy wizerunkowe, YouTube Ads. Tworzenie wideo, które buduje markę i generuje sprzedaż. Fotz Studio."
         canonical="https://fotz.pl/content-marketing/video-content"
         keywords="video content marketing, produkcja wideo dla firm, reelsy marketing, explainer video, marketing wideo, video marketing"
       />
@@ -165,6 +165,67 @@ const CMVideoContent = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Video content marketing — produkcja wideo dla firm jako filar strategii content
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Video content marketing to najpotężniejszy format treści w 2024 roku. Wideo
+              generuje 82% całego ruchu internetowego, zwiększa konwersję na landing page
+              o 80% i jest 6-krotnie częściej udostępniane niż tekst. Fotz Studio oferuje
+              kompleksową produkcję wideo dla firm — od krótkich reelsów po pełne filmy
+              wizerunkowe i spoty reklamowe.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Content marketing oparty na wideo buduje autorytet marki, angażuje odbiorców
+              i wspiera SEO (Google premiuje strony z wideo). Nasze produkcje wideo są
+              optymalizowane pod konkretne cele biznesowe i platformy dystrybucji.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Reelsy, explainer video i filmy reklamowe — formaty wideo dla każdego celu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Dobieramy format wideo do celu marketingowego. Reelsy i Shorts (15-90 sekund)
+              to najwyższy organiczny zasięg w social media. Explainer video (2-3 minuty)
+              tłumaczy skomplikowany produkt lub usługę. Filmy wizerunkowe budują zaufanie.
+              Testimoniale klientów to najsilniejszy social proof. YouTube Ads generują
+              zasięg przy precyzyjnym targetowaniu.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Produkcja wideo w Fotz Studio obejmuje pełny proces: brief i koncepcja,
+              scenariusz, nagranie (studio lub plenery), montaż, korekcja kolorów, grafiki,
+              napisy i muzyka. Kompletna produkcja wideo pod klucz — bez stresu po Twojej stronie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Wideo w strategii content marketingowej — jak wideo napędza wyniki biznesowe
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Wideo to nie koszt, to inwestycja. Film wizerunkowy na stronie głównej
+              zwiększa czas przebywania użytkownika i zmniejsza współczynnik odrzuceń.
+              Wideo na landing page podnosi konwersję. Reelsy na Instagramie budują
+              zasięg organiczny bez płatnych kampanii. YouTube pozycjonuje markę jako eksperta.
+            </p>
+            <p className="text-muted-foreground">
+              Fotz Studio tworzy strategię video content marketingu dostosowaną do Twojego
+              budżetu i celów. Zaczynamy od jednej produkcji, rozwijamy w spójną strategię
+              wideo, która pracuje na markę przez lata. Umów się na bezpłatną konsultację
+              i dowiedz się, jak wideo może przyspieszyć rozwój Twojej firmy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

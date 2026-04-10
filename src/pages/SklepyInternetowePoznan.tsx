@@ -62,8 +62,8 @@ export default function SklepyInternetowePoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Sklepy Internetowe Poznań | E-commerce | Fotz Studio"
-        description="Tworzymy sklepy internetowe dla firm z Poznania. Shopify, WooCommerce, PrestaShop i custom e-commerce. Integracje płatności, dostaw i SEO. Bezpłatna wycena."
+        title="Sklepy Internetowe Poznań — Tworzenie E-commerce i Sklepów Online | Fotz Studio"
+        description="Tworzenie sklepów internetowych Poznań — e-commerce WooCommerce, Shopify, PrestaShop dla firm z Poznania. Projektowanie sklepów online z integracjami płatności i SEO. Fotz Studio."
         canonical="https://fotz.pl/uslugi/sklepy-internetowe/poznan"
         keywords="sklepy internetowe Poznań, tworzenie sklepu internetowego Poznań, e-commerce Poznań, sklep online Poznań, Shopify Poznań, WooCommerce Poznań, sklep www Poznań"
       />
@@ -332,6 +332,68 @@ export default function SklepyInternetowePoznan() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Sklepy internetowe Poznań — tworzenie e-commerce dla firm z Wielkopolski
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tworzenie sklepów internetowych w Poznaniu to nasza specjalność. Fotz Studio
+              projektuje i buduje sklepy e-commerce dla firm z Poznania i całej Wielkopolski,
+              które chcą sprzedawać online. Tworzymy sklepy na platformach WooCommerce,
+              Shopify i PrestaShop — dobieramy technologię do specyfiki biznesu, budżetu
+              i planowanej skali sprzedaży.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Sklep internetowy to nie tylko strona — to system sprzedażowy z integracjami
+              płatności (Przelewy24, PayU, Stripe), logistyki (InPost, DPD, GLS),
+              fakturowania i marketing automation. Budujemy kompletne rozwiązania e-commerce
+              gotowe do sprzedaży od pierwszego dnia.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              WooCommerce, Shopify i sklep na miarę — sklep online dla firmy z Poznania
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              WooCommerce to najpopularniejsza platforma sklepowa na świecie — idealna
+              dla firm szukających elastyczności i kontroli nad sklepem. Shopify sprawdza
+              się dla firm ceniących prostotę zarządzania i szybkie wdrożenie. Dla dużych
+              projektów e-commerce tworzymy dedykowane sklepy internetowe dopasowane
+              do unikalnych wymagań biznesowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Każdy sklep internetowy tworzymy z naciskiem na UX i konwersję — przejrzyste
+              kategorie, szybkie wyszukiwanie produktów, zoptymalizowany checkout i mobilność.
+              SEO dla sklepów internetowych wdrażamy od pierwszego dnia, by sklep zaczął
+              generować ruch organiczny możliwie szybko.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              E-commerce Poznań — sklep internetowy z obsługą, hostingiem i SEO
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tworzenie sklepu internetowego w Poznaniu to dla nas nie jednorazowa usługa
+              — to długoterminowe partnerstwo. Oferujemy hosting, opiekę techniczną,
+              aktualizacje i rozwój sklepu. Kampanie Google Shopping, SEO produktowe
+              i email marketing dla e-commerce realizujemy we własnym zakresie.
+            </p>
+            <p className="text-muted-foreground">
+              Sklep internetowy dla firmy z Poznania od Fotz Studio to gwarancja jakości,
+              terminowości i skuteczności. Umów się na bezpłatną konsultację i wycenę
+              projektu e-commerce — stworzymy sklep, który naprawdę sprzedaje.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

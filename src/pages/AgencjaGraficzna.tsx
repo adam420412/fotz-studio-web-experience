@@ -146,8 +146,8 @@ const AgencjaGraficzna = () => {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Graficzna Poznań - Kompleksowa obsługa graficzna firm | Fotz Studio"
-        description="Profesjonalna agencja graficzna Poznań. Projektowanie logo, materiałów reklamowych, katalogów, ulotek. Kompleksowa obsługa graficzna dla firm."
+        title="Agencja Graficzna Poznań — Projektowanie Graficzne i Identyfikacja Wizualna | Fotz Studio"
+        description="Agencja graficzna Poznań — projektowanie graficzne, identyfikacja wizualna firmy, logo, materiały reklamowe, grafika na social media. Fotz Studio."
         canonical="https://fotz.pl/agencja-graficzna"
       />
       <ServiceSchema 
@@ -718,6 +718,79 @@ const AgencjaGraficzna = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Agencja graficzna Poznań — projektowanie graficzne dla firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Agencja graficzna Poznań Fotz Studio oferuje kompleksowe projektowanie graficzne dla firm z całej
+              Wielkopolski. Tworzymy identyfikację wizualną, logotypy, materiały reklamowe i grafikę
+              na media społecznościowe. Nasze projekty graficzne łączą estetykę z funkcjonalnością
+              — każdy element wizualny wspiera Twoją markę i buduje jej rozpoznawalność.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Projektowanie graficzne to nie tylko estetyka — to komunikacja wartości marki. Jako
+              agencja graficzna zapewniamy spójną identyfikację wizualną firmy: od logo i materiałów
+              drukowanych po grafiki na social media i strony internetowe.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Identyfikacja wizualna firmy — logo, branding i materiały reklamowe
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Identyfikacja wizualna firmy to fundament marki. Tworzymy kompleksowy branding:
+              projektowanie logo, księgi znaku, systemy typograficzne i kolorystyczne. Materiały
+              reklamowe — ulotki, banery, roll-upy, katalogi — projektujemy z dbałością o detal
+              i zgodność z identyfikacją wizualną.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Profesjonalne projektowanie graficzne przekłada się bezpośrednio na postrzeganie marki
+              przez klientów. Agencja kreatywna Fotz Studio łączy doświadczenie designerów z wiedzą
+              o marketingu, by grafiki były nie tylko piękne, ale i skuteczne sprzedażowo.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Grafika na social media i projekty graficzne do reklam online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Grafika na social media wymaga specyficznego podejścia — musi przyciągać uwagę
+              w ciągu 1-2 sekund. Tworzymy grafiki do postów, stories, okładek i reklam
+              na Facebooku, Instagramie i LinkedIn. Projekty graficzne do reklam Google Display
+              i Meta Ads w odpowiednich formatach i proporcjach.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Nasze studio graficzne oferuje szybkie terminy realizacji, nieograniczone poprawki
+              i pełne prawa autorskie do projektów. Stała współpraca z agencją graficzną pozwala
+              utrzymać spójność komunikacji wizualnej na wszystkich kanałach.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Dlaczego warto wybrać naszą agencję graficzną w Poznaniu?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio to agencja graficzna z wieloletnim doświadczeniem w projektowaniu dla
+              firm z różnych branż. Nasz zespół designerów tworzy projekty graficzne, które
+              wyróżniają się na tle konkurencji i skutecznie wspierają sprzedaż. Oferujemy
+              kompleksową obsługę graficzną — od konceptu po finalny projekt gotowy do druku lub publikacji online.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami, by omówić projekt graficzny dla Twojej firmy. Ofertę
+              przygotowujemy bezpłatnie na podstawie briefu. Projektowanie graficzne w Fotz Studio
+              to gwarancja jakości, terminowości i pełnego zaangażowania w Twój sukces.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };
