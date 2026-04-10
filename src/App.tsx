@@ -155,6 +155,8 @@ const SocialMedia = lazy(() => import("./pages/SocialMedia"));
 const FotografPoznan = lazy(() => import("./pages/FotografPoznan"));
 const FotografiaZDrona = lazy(() => import("./pages/FotografiaZDrona"));
 const PozycjonowanieStronPoznan = lazy(() => import("./pages/PozycjonowanieStronPoznan"));
+const AgencjaSEOPoznan = lazy(() => import("./pages/AgencjaSEOPoznan"));
+const SklepyInternetowePoznan = lazy(() => import("./pages/SklepyInternetowePoznan"));
 const Pozycjonowanie = lazy(() => import("./pages/Pozycjonowanie"));
 const PozycjonowanieGoogleMaps = lazy(() => import("./pages/PozycjonowanieGoogleMaps"));
 const ProdukcjaFilmowPoznan = lazy(() => import("./pages/ProdukcjaFilmowPoznan"));
@@ -399,6 +401,8 @@ const App = () => (
                 <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
                 <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
                 <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
+                <Route path="/agencja-seo-poznan" element={<AgencjaSEOPoznan />} />
+                <Route path="/uslugi/sklepy-internetowe/poznan" element={<SklepyInternetowePoznan />} />
                 <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
                 <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
                 <Route path="/wizualizacje-3d" element={<Wizualizacje3D />} />
