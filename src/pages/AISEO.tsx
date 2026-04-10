@@ -25,8 +25,8 @@ const AISEO = () => {
   return (
     <>
       <SEOHead
-        title="AI SEO – Optymalizacja pod ChatGPT, Perplexity i Gemini | Fotz Studio"
-        description="Optymalizacja widoczności w AI search: ChatGPT, Perplexity, Gemini, Claude. Sprawdź, czy Twoja firma jest cytowana przez modele AI i jak zwiększyć obecność w AI search."
+        title="AI SEO — Optymalizacja pod ChatGPT, Perplexity i Gemini | Fotz Studio"
+        description="AI SEO — optymalizacja strony pod generatywne AI: ChatGPT, Perplexity, Google Gemini i Bing Copilot. GEO (Generative Engine Optimization). Fotz Studio."
         canonical="https://fotz.pl/ai-seo"
         keywords="ai seo, ai search, chatgpt seo, perplexity seo, optymalizacja ai, widoczność w ai, llm seo"
       />
@@ -108,6 +108,21 @@ const AISEO = () => {
             </Accordion>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">AI SEO — optymalizacja pod wyszukiwarki oparte na sztucznej inteligencji</h2>
+            <p className="text-muted-foreground mb-4">AI SEO (Generative Engine Optimization, GEO) to nowa dyscyplina optymalizacji stron pod generatywne modele AI: ChatGPT, Perplexity, Google Gemini, Microsoft Copilot i inne asystenty AI, które coraz częściej odpowiadają na pytania użytkowników zamiast kierować ich na strony. Celem GEO jest pojawienie się Twojej marki i treści w odpowiedziach tych systemów.</p>
+            <p className="text-muted-foreground mb-6">Tradycyjne SEO i AI SEO mają wiele wspólnego — obydwa wymagają tworzenia wartościowych, eksperckich treści. Jednak GEO kładzie szczególny nacisk na E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness), structured data (dane strukturalne), cytowania przez autorytety branżowe i jasną strukturę treści.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Jak zoptymalizować stronę pod AI Search i Generative AI?</h2>
+            <p className="text-muted-foreground mb-4">Kluczowe działania w AI SEO: tworzenie wyczerpujących, eksperckich treści odpowiadających na konkretne pytania (długie formy), implementacja structured data (JSON-LD, schema.org), budowanie autorytetu domeny przez backlinki z zaufanych źródeł, optymalizacja treści pod pytania konwersacyjne i frazy long-tail.</p>
+            <p className="text-muted-foreground">Monitorowanie widoczności w AI Search to nowe wyzwanie — tradycyjne narzędzia SEO nie mierzą cytowań przez ChatGPT czy Perplexity. Nowe narzędzia do AI visibility (BrandRadar, Profound, Track AI) pozwalają śledzić, jak często i w jakim kontekście Twoja marka pojawia się w odpowiedziach AI. Połączenie klasycznego SEO z AI SEO to przyszłościowa strategia widoczności online.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

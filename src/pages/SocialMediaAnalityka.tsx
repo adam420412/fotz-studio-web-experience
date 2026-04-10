@@ -35,8 +35,8 @@ const SocialMediaAnalityka = () => {
   return (
     <>
       <SEOHead
-        title="Analityka Social Media | Raporty i Monitoring | Fotz Studio"
-        description="Profesjonalna analityka social media: monitoring zasięgów, zaangażowania, konwersji i ROAS. Raportowanie danych i optymalizacja strategii na podstawie wyników."
+        title="Analityka Social Media — Mierzenie Efektów i KPI Social Media | Fotz Studio"
+        description="Analityka social media — mierzenie efektów kampanii, KPI, raporty zasięgów i zaangażowania. Optymalizacja działań w oparciu o dane. Fotz Studio."
         canonical="https://fotz.pl/social-media/analityka"
         keywords="analityka social media, monitoring social media, raporty social media, kpi social media, meta analytics, tiktok analytics"
       />
@@ -165,6 +165,20 @@ const SocialMediaAnalityka = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Analityka social media — mierzenie efektów w mediach społecznościowych</h2>
+            <p className="text-muted-foreground mb-4">Analityka social media to systematyczne mierzenie i interpretacja danych z platform społecznościowych w celu optymalizacji działań marketingowych. Kluczowe KPI social media: zasięg organiczny i płatny, zaangażowanie (engagement rate), wzrost liczby obserwujących, kliknięcia w linki, konwersje z social media, koszt za kliknięcie (CPC) i koszt za tysiąc wyświetleń (CPM).</p>
+            <p className="text-muted-foreground mb-6">Narzędzia analityczne social media: Meta Business Suite (Facebook, Instagram), LinkedIn Analytics, TikTok Analytics, Google Analytics 4 (atrybucja konwersji z social media). Raporty efektywności kampanii dostarczamy miesięcznie — z analizą trendów i rekomendacjami optymalizacyjnymi.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Jak mierzyć ROI z social media marketingu?</h2>
+            <p className="text-muted-foreground">ROI z social media jest trudniejszy do zmierzenia niż ROI z Google Ads, ale możliwy. Kluczowe jest śledzenie konwersji (zakupy, zapytania ofertowe, zapisy na newsletter) pochodzących z social mediów. Monitorowanie ruchu na stronie z social media przez Google Analytics 4, ustawianie UTM do kampanii i śledzenie przychodów atrybucyjnych pozwala ocenić realny zwrot z inwestycji w social media marketing.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

@@ -26,8 +26,8 @@ const SEOPozycjonowanieGdansk = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie Gdańsk – SEO dla Firm z Gdańsk | Fotz Studio"
-        description="Pozycjonowanie stron w Gdańsk. Zwiększamy widoczność Twojej firmy w Google dla fraz lokalnych z Gdańsk i okolic. Audyt SEO, Google Maps, link building."
+        title="Pozycjonowanie Gdańsk — Agencja SEO dla Firm z Trójmiasta | Fotz Studio"
+        description="Pozycjonowanie stron internetowych Gdańsk — SEO dla firm z Trójmiasta (Gdańsk, Gdynia, Sopot). Audyt SEO, link building. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-gdansk"
         keywords="pozycjonowanie gdansk, seo gdansk, agencja seo gdansk, pozycjonowanie lokalne gdansk, google maps gdansk"
       />
@@ -114,6 +114,20 @@ const SEOPozycjonowanieGdansk = () => {
             </Accordion>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Gdańsk — agencja SEO dla firm z Trójmiasta</h2>
+            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Gdańsk — Fotz Studio obsługuje firmy z Gdańska, Gdyni, Sopotu i całego Trójmiasta. Trójmiasto to dynamiczny rynek z silnym sektorem turystycznym, technologicznym i morskim. Lokalne SEO dla firm z Gdańska wymaga specjalistycznej wiedzy o regionalnej specyfice i konkurencji.</p>
+            <p className="text-muted-foreground mb-6">Agencja SEO Gdańsk — kompleksowe pozycjonowanie: audyt SEO strony, optymalizacja techniczna i treściowa, link building z portali trójmiejskich, pozycjonowanie Google Maps dla firm z Trójmiasta, content SEO pod lokalne frazy (Gdańsk, Gdynia, Sopot, Trójmiasto).</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">SEO Trójmiasto — dominuj w Google na Gdańsk, Gdynię i Sopot</h2>
+            <p className="text-muted-foreground">Pozycjonowanie Gdańsk i całego Trójmiasta — z Fotz Studio zbudujesz widoczność online, która generuje stały napływ klientów. Transparentne raportowanie wyników, regularne optymalizacje i indywidualne podejście do każdego klienta. Umów konsultację z naszą agencją SEO w Gdańsku.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

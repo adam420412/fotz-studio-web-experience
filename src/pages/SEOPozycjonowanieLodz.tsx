@@ -26,8 +26,8 @@ const SEOPozycjonowanieLodz = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie Łódź – SEO dla Firm z Łódź | Fotz Studio"
-        description="Pozycjonowanie stron w Łódź. Zwiększamy widoczność Twojej firmy w Google dla fraz lokalnych z Łódź i okolic. Audyt SEO, Google Maps, link building."
+        title="Pozycjonowanie Łódź — Agencja SEO dla Firm z Łodzi | Fotz Studio"
+        description="Pozycjonowanie stron internetowych Łódź — SEO lokalne i ogólnopolskie dla firm z Łodzi. Audyt SEO, link building, content SEO. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-lodz"
         keywords="pozycjonowanie lodz, seo lodz, agencja seo lodz, pozycjonowanie lokalne lodz, google maps lodz"
       />
@@ -114,6 +114,20 @@ const SEOPozycjonowanieLodz = () => {
             </Accordion>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Łódź — agencja SEO dla firm z Łodzi i regionu łódzkiego</h2>
+            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Łódź — Fotz Studio obsługuje firmy z Łodzi i województwa łódzkiego. Łódź dynamicznie się rozwija, przyciągając nowe firmy i inwestycje — widoczność w Google jest kluczem do wyróżnienia się na tym rosnącym rynku.</p>
+            <p className="text-muted-foreground mb-6">Agencja SEO Łódź oferuje kompleksowe pozycjonowanie: audyt SEO strony, optymalizację techniczną i treściową, local SEO dla firm z Łodzi (Google Maps, frazy lokalne), link building z portali łódzkich i regionalnych.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">SEO Łódź — więcej klientów z Google dla Twojej firmy</h2>
+            <p className="text-muted-foreground">Pozycjonowanie Łódź przynosi trwałe efekty — ruch organiczny z SEO jest darmowy po opłaceniu usługi, w przeciwieństwie do reklam Google Ads. Firmy z Łodzi, które zainwestowały w SEO z Fotz Studio, odnotowują wzrosty ruchu organicznego o 200-400% w ciągu roku. Sprawdź, co możemy zrobić dla Twojej firmy w Łodzi.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

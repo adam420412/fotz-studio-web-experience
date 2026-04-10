@@ -138,8 +138,8 @@ const YouTubeAds = () => {
   return (
     <Layout>
       <SEOHead
-        title="YouTube Ads - Reklamy wideo na YouTube | Fotz Studio Poznań"
-        description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo. Produkcja spotów i obsługa kampanii."
+        title="YouTube Ads — Reklama na YouTube dla Firm | Video Advertising | Fotz Studio"
+        description="YouTube Ads — kampanie wideo na YouTube: TrueView, bumper ads, discovery. Skuteczna reklama wideo dla firm. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/youtube-ads"
       />
       <ServiceSchema
@@ -491,6 +491,20 @@ const YouTubeAds = () => {
       </section>
 
       {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">YouTube Ads — reklama wideo na YouTube i video marketing dla firm</h2>
+            <p className="text-muted-foreground mb-4">YouTube Ads to platforma reklamowa Google umożliwiająca wyświetlanie reklam wideo przed, w trakcie i po filmach na YouTube. To druga największa wyszukiwarka na świecie — z ponad 2 miliardami użytkowników miesięcznie. Kampanie YouTube Ads są zarządzane przez Google Ads, co daje dostęp do precyzyjnych możliwości targetowania Google.</p>
+            <p className="text-muted-foreground mb-6">Formaty YouTube Ads: TrueView In-Stream (reklamy z możliwością pominięcia po 5 sek.), Non-Skippable In-Stream (obowiązkowe do 15 sek.), Bumper Ads (6 sek., krótkie, niemożliwe do pominięcia), Video Discovery Ads (w wynikach wyszukiwania YouTube) i Masthead (na stronie głównej YouTube). Tworzenie reklam wideo na YouTube to element video marketingu dla firm.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">YouTube Ads a spoty reklamowe — produkcja wideo na kampanie</h2>
+            <p className="text-muted-foreground">Skuteczna reklama na YouTube wymaga profesjonalnie wyprodukowanych materiałów wideo. Spoty reklamowe do YouTube powinny przykuć uwagę w pierwszych 5 sekundach (nim użytkownik pominie reklamę). Produkcja filmów reklamowych, animacji i spotów — od scenariusza po montaż — to pełny zakres usług Fotz Studio. Reklamy wideo na YouTube w połączeniu z kampaniami w sieci Google tworzą kompleksową strategię video advertisingu.</p>
+          </motion.div>
+        </div>
+      </section>
+
       <RelatedServices 
         currentService="youtube-ads"
         subtitle="Inne platformy i usługi wspierające kampanie wideo"

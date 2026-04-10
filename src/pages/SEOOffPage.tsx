@@ -35,8 +35,8 @@ const SEOOffPage = () => {
   return (
     <>
       <SEOHead
-        title="SEO Off-Page i Link Building | Fotz Studio"
-        description="Profesjonalny link building i SEO off-page. Budujemy autorytet domeny przez wartościowe linki, wzmianki i cyfrowy PR. Bezpieczne działania zgodne z Google."
+        title="SEO Off-Page — Link Building, Digital PR i Budowanie Autorytetu | Fotz Studio"
+        description="SEO off-page — budowanie linków zewnętrznych, digital PR, guest posting i wzmacnianie autorytetu domeny. Skuteczne SEO poza stroną. Fotz Studio."
         canonical="https://fotz.pl/seo/off-page"
         keywords="link building, seo off-page, budowanie linków, autorytet domeny, digital pr, pozyskiwanie linków"
       />
@@ -165,6 +165,21 @@ const SEOOffPage = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">SEO off-page — czym jest i jak działa SEO poza stroną?</h2>
+            <p className="text-muted-foreground mb-4">SEO off-page obejmuje działania podejmowane poza Twoją stroną internetową, które wpływają na jej autorytet i pozycje w Google. Kluczowe działania off-page to: link building (pozyskiwanie backlinków), budowanie marki online, wzmianki w mediach, recenzje i oceny oraz aktywność w mediach społecznościowych.</p>
+            <p className="text-muted-foreground mb-6">Budowanie linków zewnętrznych pozostaje najważniejszym czynnikiem SEO off-page. Im więcej wartościowych serwisów linkuje do Twojej strony, tym Google postrzega ją jako bardziej autorytatywną. Jednak jakość linków ważniejsza jest od ilości — jeden link z portalu o Domain Rating 80+ działa lepiej niż 100 linków z przypadkowych stron.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Digital PR i guest posting — skuteczne techniki budowania linków</h2>
+            <p className="text-muted-foreground mb-4">Digital PR to publikowanie wartościowych materiałów (badania, raporty, infografiki) w mediach online, które naturalnie generują wzmianki i linki. Guest posting (artykuły gościnne) na branżowych blogach i portalach to sprawdzona metoda zdobywania tematycznych backlinków wysokiej jakości.</p>
+            <p className="text-muted-foreground">Zarządzanie mediami społecznościowymi uzupełnia strategię SEO off-page — sygnały społecznościowe pośrednio wpływają na widoczność strony, a popularny content ma większą szansę na zdobycie organicznych linków. Link building i digital PR działają najlepiej jako długofalowa strategia SEO.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

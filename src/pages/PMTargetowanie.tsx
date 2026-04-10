@@ -35,8 +35,8 @@ const PMTargetowanie = () => {
   return (
     <>
       <SEOHead
-        title="Targetowanie Reklam | Grupy Docelowe Google i Meta Ads | Fotz Studio"
-        description="Precyzyjne targetowanie reklam w Google Ads, Meta Ads i TikTok Ads. Grupy docelowe, lookalike audiences, retargeting i wykluczenia. Każda złotówka do właściwej osoby."
+        title="Targetowanie Reklam — Precyzyjne Dotarcie do Grupy Docelowej | Fotz Studio"
+        description="Targetowanie reklam — budowanie grup odbiorców, Custom Audiences, Lookalike, retargeting i remarketing. Precyzyjne kampanie dla firm. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/targetowanie"
         keywords="targetowanie reklam, grupy docelowe reklamy, lookalike audience, retargeting, targetowanie google ads, targetowanie facebook ads"
       />
@@ -165,6 +165,20 @@ const PMTargetowanie = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Targetowanie reklam — jak precyzyjnie dotrzeć do swoich odbiorców?</h2>
+            <p className="text-muted-foreground mb-4">Targetowanie reklam to proces definiowania grupy odbiorców, do których kierowane są kampanie reklamowe. Im precyzyjniejsze targetowanie, tym wyższa trafność reklam i niższy koszt pozyskania klienta (CPA). Nowoczesne platformy reklamowe (Google, Meta, TikTok, LinkedIn) oferują zaawansowane możliwości targetowania swoich odbiorców.</p>
+            <p className="text-muted-foreground mb-6">Rodzaje targetowania: demograficzne (wiek, płeć, wykształcenie), geograficzne (lokalizacja, promień od adresu), zainteresowania i zachowania, własne listy klientów (Custom Audiences — na podstawie danych CRM, pikseli śledzących), Lookalike Audiences (podobni do istniejących klientów) oraz retargeting/remarketing (osoby, które już odwiedziły stronę).</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Retargeting i remarketing — reklamy dla osób, które już Cię znają</h2>
+            <p className="text-muted-foreground">Retargeting (Meta, Google Display) i remarketing (Google Ads) to reklamy kierowane do użytkowników, którzy odwiedzili Twoją stronę lub weszli w interakcję z Twoją marką, ale nie skonwertowali. Reklamy remarketingowe wyróżniają się wyjątkowo wysokim CTR i niskim CPA — bo trafiają do osób już zaznajomionych z Twoją ofertą. Analiza konkurencji w internecie pomaga też identyfikować grupy docelowe, które Twoi konkurenci pozyskują skutecznie.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

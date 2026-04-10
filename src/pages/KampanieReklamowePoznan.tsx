@@ -200,8 +200,8 @@ const KampanieReklamowePoznan = () => {
   return (
     <Layout>
       <SEOHead
-        title="Kampanie Reklamowe Poznań | Google & Meta Ads"
-        description="Kampanie Google Ads i Facebook Ads w Poznaniu. Lokalna agencja, spotkania w biurze. Średni ROAS 350%."
+        title="Kampanie Reklamowe Poznań — Google Ads i Meta Ads dla Firm | Fotz Studio"
+        description="Kampanie reklamowe Poznań — Google Ads, Facebook Ads, Instagram Ads dla firm z Poznania. Prowadzenie i optymalizacja kampanii PPC. Fotz Studio."
         canonical="https://fotz.pl/kampanie-reklamowe-poznan"
       />
       <ServiceSchema 
@@ -646,6 +646,20 @@ const KampanieReklamowePoznan = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie reklamowe Poznań — Google Ads i Meta Ads dla firm z Poznania</h2>
+            <p className="text-muted-foreground mb-4">Kampanie reklamowe Poznań — Fotz Studio prowadzi kampanie Google Ads i Meta Ads (Facebook, Instagram) dla firm z Poznania i Wielkopolski. Reklama online dla firm z Poznania musi uwzględniać lokalną specyfikę — targetowanie na Poznań, Wielkopolskę i dostosowanie komunikacji do poznańskich odbiorców.</p>
+            <p className="text-muted-foreground mb-6">Zarządzanie kampaniami PPC w Poznaniu — konfiguracja kont reklamowych, tworzenie struktury kampanii, produkcja kreacji, optymalizacja stawek i targeting, miesięczne raportowanie wyników. Firmy z Poznania, które powierzają prowadzenie kampanii reklamowych Fotz Studio, osiągają lepszy ROAS i niższy CPA dzięki ciągłej optymalizacji.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja reklamowa Poznań — kampanie PPC dla każdej branży</h2>
+            <p className="text-muted-foreground">Agencja reklamowa Poznań z doświadczeniem w prowadzeniu kampanii dla firm z branży: usługi, e-commerce, gastronomia, nieruchomości, medycyna, edukacja, budownictwo. Reklamy w Google Ads (search, shopping, display, YouTube) i Meta Ads (Facebook, Instagram) — kompleksowe zarządzanie budżetem reklamowym dla firm z Poznania. Sprawdź efekty i skontaktuj się po bezpłatną wycenę.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };

@@ -35,8 +35,8 @@ const SocialMediaContent = () => {
   return (
     <>
       <SEOHead
-        title="Tworzenie Treści Social Media | Content Creator | Fotz Studio"
-        description="Profesjonalne tworzenie treści na social media: grafiki, reelsy, karuzele, copywriting. Angażujący content dla Instagramu, Facebooka, TikToka i LinkedIn."
+        title="Content Social Media — Tworzenie Treści na Social Media | Fotz Studio"
+        description="Tworzenie contentu na social media — posty, grafiki, rolki, stories. Profesjonalna produkcja treści dla Facebooka, Instagrama i LinkedIn. Fotz Studio."
         canonical="https://fotz.pl/social-media/content"
         keywords="tworzenie treści social media, content creator, grafiki social media, reelsy instagram, copywriting social media, posty facebook"
       />
@@ -165,6 +165,20 @@ const SocialMediaContent = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Content social media — tworzenie treści na Facebooka, Instagrama i LinkedIn</h2>
+            <p className="text-muted-foreground mb-4">Content social media to rdzeń skutecznej strategii w mediach społecznościowych. Tworzenie treści na social media obejmuje: grafiki i infografiki, posty tekstowe i karuzelowe, rolki (Reels) i wideo na Instagrama i TikToka, stories, relacje na żywo, artykuły na LinkedIn i posty blogowe dystrybuowane w social mediach.</p>
+            <p className="text-muted-foreground mb-6">Każda platforma rządzi się innymi prawami. Content na Instagrama musi być wizualnie spójny i estetyczny. Na LinkedIn liczy się merytoryka i profesjonalizm. TikTok i Reels nagradzają autentyczność i kreatywność. Dobry content manager wie, jak dopasować styl komunikacji do kanału.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Tworzenie rolek i wideo na social media — video content marketing</h2>
+            <p className="text-muted-foreground">Tworzenie rolek pod social media to jeden z najefektywniejszych sposobów na zwiększenie zasięgu organicznego. Algorytmy Instagrama, TikToka i YouTube premiują krótkie wideo, dając mu wielokrotnie większy zasięg niż statycznym postom. Tworzenie reklam wideo i organicznego video contentu to nasza specjalność — od scenariusza po montaż.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

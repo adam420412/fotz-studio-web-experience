@@ -26,8 +26,8 @@ const SEOPozycjonowanieKrakow = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie Kraków – SEO dla Firm z Kraków | Fotz Studio"
-        description="Pozycjonowanie stron w Kraków. Zwiększamy widoczność Twojej firmy w Google dla fraz lokalnych z Kraków i okolic. Audyt SEO, Google Maps, link building."
+        title="Pozycjonowanie Kraków — Agencja SEO dla Firm z Krakowa | Fotz Studio"
+        description="Pozycjonowanie stron internetowych Kraków — SEO lokalne i ogólnopolskie, audyt SEO, link building dla firm z Krakowa. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-krakow"
         keywords="pozycjonowanie krakow, seo krakow, agencja seo krakow, pozycjonowanie lokalne krakow, google maps krakow"
       />
@@ -114,6 +114,20 @@ const SEOPozycjonowanieKrakow = () => {
             </Accordion>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Kraków — agencja SEO dla firm z Krakowa i Małopolski</h2>
+            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Kraków to usługa dedykowana firmom z Krakowa, Małopolski i okolic. Kraków to jeden z najważniejszych rynków biznesowych w Polsce — silna konkurencja wymaga skutecznej strategii SEO, by wybić się ponad inne firmy w wynikach Google.</p>
+            <p className="text-muted-foreground mb-6">Agencja SEO Kraków — Fotz Studio oferuje: audyt SEO, optymalizację techniczną strony, content marketing SEO z lokalnymi frazami, link building z portali krakowskich i ogólnopolskich, pozycjonowanie Google Maps dla firm z Krakowa.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">SEO dla firm z Krakowa — jak wygląda skuteczne pozycjonowanie?</h2>
+            <p className="text-muted-foreground">Pozycjonowanie Kraków to długoterminowa inwestycja — pierwsze efekty widać po 3-6 miesiącach, a po roku SEO staje się głównym kanałem pozyskiwania klientów dla wielu firm. Przejrzyste raportowanie, regularne optymalizacje i partnerskie podejście — to nasza agencja SEO w Krakowie. Umów bezpłatną konsultację.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

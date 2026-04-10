@@ -136,8 +136,8 @@ const InstagramAds = () => {
   return (
     <Layout>
       <SEOHead
-        title="Instagram Ads Poznań | Reklamy IG | Fotz"
-        description="Kampanie Instagram Ads - Stories, Reels, Feed. Wizualny storytelling i Shopping Ads. Agencja IG Ads od 1500 zł/mies."
+        title="Instagram Ads — Reklama na Instagramie dla Firm | Fotz Studio"
+        description="Instagram Ads — tworzenie i prowadzenie kampanii reklamowych na Instagramie. Reklamy wideo, stories, reels i karuzele. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/instagram-ads"
         keywords="Instagram Ads, reklamy Instagram, kampanie Instagram, Stories Ads, Reels Ads, agencja Instagram Poznań"
       />
@@ -501,6 +501,20 @@ const InstagramAds = () => {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Instagram Ads — skuteczna reklama na Instagramie dla firm</h2>
+            <p className="text-muted-foreground mb-4">Instagram Ads to reklamy wyświetlane w aplikacji Instagram — w feedzie, Stories, Reels i Explore. Zarządzane przez Meta Ads Manager, kampanie Instagram Ads korzystają z tych samych potężnych możliwości targetowania co Facebook Ads: zainteresowania, demografika, zachowania, własne listy klientów i lookalike audiences.</p>
+            <p className="text-muted-foreground mb-6">Reklama na Instagramie szczególnie efektywna jest dla branż wizualnych: moda, uroda, jedzenie, wnętrza, fitness, turystyka. Wysoka jakość kreacji graficznych i wideo jest kluczem do sukcesu na Instagramie — odbiorcy są wymagający i ignorują reklamy niespójne z estetycznym kontekstem platformy.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Formaty Instagram Ads — Stories, Reels i feed reklamy</h2>
+            <p className="text-muted-foreground">Formaty reklam na Instagramie: Single image (feed), karuzele, wideo (feed i Reels), Stories Ads (pełnoekranowe, pionowe), reklamy Explore. Reels Ads wyróżniają się najwyższym zasięgiem organicznym i viralnym potencjałem. Instagram Shopping Ads pozwalają na oznaczanie produktów i bezpośredni zakup z aplikacji — idealne dla e-commerce. Tworzenie reklam wideo na Instagram Reels i Stories to nasza specjalność.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };

@@ -35,8 +35,8 @@ const SocialMediaStrategia = () => {
   return (
     <>
       <SEOHead
-        title="Strategia Social Media | Plan i Harmonogram Treści | Fotz Studio"
-        description="Kompleksowa strategia social media: analiza grupy docelowej, plan contentowy, harmonogram publikacji, KPI i monitoring. Budujemy obecność, która sprzedaje."
+        title="Strategia Social Media — Planowanie i Zarządzanie Social Media | Fotz Studio"
+        description="Strategia social media dla firm — tworzenie strategii, calendar content, zarządzanie profilami i mierzenie efektów. Fotz Studio."
         canonical="https://fotz.pl/social-media/strategia"
         keywords="strategia social media, plan contentowy, harmonogram publikacji social media, marketing w mediach społecznościowych, strategia facebook instagram"
       />
@@ -165,6 +165,20 @@ const SocialMediaStrategia = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Strategia social media — plan działań w mediach społecznościowych</h2>
+            <p className="text-muted-foreground mb-4">Strategia social media to dokument definiujący cele, grupę docelową, komunikację marki, wybór kanałów i plan contentowy dla mediów społecznościowych. Bez strategii działania w social mediach są chaotyczne i nieskuteczne. Z dobrą strategią — systematyczne i mierzalne.</p>
+            <p className="text-muted-foreground mb-6">Tworzenie strategii content social media zaczyna się od audytu obecnych profili, analizy konkurencji i badania grupy docelowej. Na tej podstawie definiujemy tone of voice, główne tematy komunikacji, formaty postów i harmonogram publikacji (content calendar). Zarządzanie mediami społecznościowymi według strategii pozwala mierzyć efekty i optymalizować działania.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Zarządzanie social media — obsługa profili i social media marketing</h2>
+            <p className="text-muted-foreground">Zarządzanie mediami społecznościowymi obejmuje: tworzenie i publikowanie treści, odpowiadanie na komentarze i wiadomości, prowadzenie kampanii reklamowych, analizę wyników i raportowanie. Social media marketing to połączenie organicznych działań contentowych z płatną reklamą — razem dają najlepsze efekty. Sprawdź naszą ofertę zarządzania social mediami dla firm.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

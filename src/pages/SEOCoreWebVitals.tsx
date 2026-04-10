@@ -25,8 +25,8 @@ const SEOCoreWebVitals = () => {
   return (
     <>
       <SEOHead
-        title="Core Web Vitals – Optymalizacja PageSpeed i LCP | Fotz Studio"
-        description="Optymalizacja Core Web Vitals: LCP, CLS, INP. Poprawiamy PageSpeed Insights, przyspieszamy ładowanie i eliminujemy błędy UX. Lepsza szybkość = wyższe pozycje."
+        title="Core Web Vitals — Optymalizacja LCP, FID, CLS i Szybkości Strony | Fotz Studio"
+        description="Core Web Vitals — optymalizacja wskaźników LCP, INP (FID), CLS. Popraw szybkość ładowania strony i User Experience dla lepszego SEO. Fotz Studio."
         canonical="https://fotz.pl/seo/core-web-vitals"
         keywords="core web vitals, pagespeed, lcp optymalizacja, cls, inp, szybkość strony, page speed insights"
       />
@@ -109,6 +109,21 @@ const SEOCoreWebVitals = () => {
             </Accordion>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Core Web Vitals — kluczowe wskaźniki User Experience w SEO</h2>
+            <p className="text-muted-foreground mb-4">Core Web Vitals to zestaw mierzalnych wskaźników, które Google używa do oceny doświadczenia użytkownika na stronie internetowej: LCP (Largest Contentful Paint) — czas ładowania największego elementu strony (cel: poniżej 2,5s), INP (Interaction to Next Paint) — responsywność na kliknięcia i interakcje (cel: poniżej 200ms), CLS (Cumulative Layout Shift) — stabilność layoutu strony (cel: poniżej 0,1).</p>
+            <p className="text-muted-foreground mb-6">Słabe wyniki Core Web Vitals mogą negatywnie wpływać na pozycje SEO strony w Google. Google oficjalnie włączyło je do algorytmu rankingowego jako czynnik "strona experience", kładąc nacisk na szybkość ładowania strony i jakość UX.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Jak poprawić Core Web Vitals — optymalizacja techniczna strony</h2>
+            <p className="text-muted-foreground mb-4">Poprawa LCP: optymalizacja obrazów (WebP, lazy loading, preload dla krytycznych zasobów), CDN, minimalizacja czasu serwera (TTFB). Poprawa CLS: ustalanie wymiarów dla obrazów i wideo, unikanie dynamicznego wstawiania treści nad foldą, stabilne ładowanie fontów webowych.</p>
+            <p className="text-muted-foreground">Narzędzia do monitorowania Core Web Vitals: Google Search Console (zakładka Core Web Vitals), PageSpeed Insights, Lighthouse w Chrome DevTools. Audyt strony internetowej pod kątem CWV to pierwszy krok do optymalizacji. Szybkość ładowania strony i stabilny layout to dziś obowiązkowy standard dla każdej strony firmowej.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

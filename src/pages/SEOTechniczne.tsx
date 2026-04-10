@@ -35,8 +35,8 @@ const SEOTechniczne = () => {
   return (
     <>
       <SEOHead
-        title="Techniczne SEO | Optymalizacja Techniczna Strony | Fotz Studio"
-        description="Techniczne SEO: szybkość strony, indeksacja, Core Web Vitals, robots.txt, sitemap, HTTPS, crawl budget. Naprawiamy błędy techniczne blokujące wzrost pozycji."
+        title="SEO Techniczne — Optymalizacja Techniczna Strony pod Google | Fotz Studio"
+        description="SEO techniczne — optymalizacja szybkości ładowania, Core Web Vitals, indeksowanie, structured data i bezpieczeństwo strony. Fotz Studio."
         canonical="https://fotz.pl/seo/techniczne"
         keywords="techniczne seo, optymalizacja techniczna, crawl budget, indeksacja google, core web vitals, robots.txt, sitemap xml"
       />
@@ -165,6 +165,21 @@ const SEOTechniczne = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">SEO techniczne — optymalizacja techniczna strony internetowej</h2>
+            <p className="text-muted-foreground mb-4">SEO techniczne to zbiór działań, które zapewniają, że wyszukiwarki mogą sprawnie indeksować i rozumieć zawartość Twojej strony. Obejmuje: szybkość ładowania strony (Core Web Vitals), poprawną strukturę URL, mapa strony XML, plik robots.txt, przekierowania 301/302, struktura nagłówków oraz HTTPS i bezpieczeństwo stron internetowych.</p>
+            <p className="text-muted-foreground mb-6">Bezpieczeństwo stron internetowych to nie tylko kwestia ochrony danych użytkowników, ale też czynnik rankingowy Google — strony bez HTTPS (SSL) są traktowane jako niezabezpieczone i mogą mieć niższe pozycje w wynikach wyszukiwania.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Core Web Vitals i szybkość ładowania strony — kluczowe wskaźniki SEO technicznego</h2>
+            <p className="text-muted-foreground mb-4">Core Web Vitals to trzy metryki Google mierzące doświadczenie użytkownika: LCP (Largest Contentful Paint) — szybkość ładowania głównej treści, FID/INP — responsywność na interakcje, CLS — stabilność layoutu strony. Optymalizacja pod Core Web Vitals poprawia zarówno UX, jak i pozycje SEO.</p>
+            <p className="text-muted-foreground">Optymalizacja stron internetowych pod kątem SEO technicznego obejmuje też: poprawę czasu do pierwszego bajtu (TTFB), kompresję obrazów, lazy loading, minifikację kodu JS i CSS, wdrożenie CDN oraz structured data (schema markup). Monitorowanie ruchu na stronie i śledzenie Core Web Vitals przez Google Search Console to podstawa dobrego SEO technicznego.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

@@ -25,8 +25,8 @@ const SEOCopywriting = () => {
   return (
     <>
       <SEOHead
-        title="Copywriting SEO – Teksty Optymalizowane pod Google | Fotz Studio"
-        description="Profesjonalny copywriting SEO: teksty na strony, opisy produktów, artykuły blogowe. Piszemy treści, które rankują wysoko i konwertują odwiedzających w klientów."
+        title="SEO Copywriting — Pisanie Tekstów pod SEO i Pozycjonowanie | Fotz Studio"
+        description="SEO copywriting — tworzenie treści zoptymalizowanych pod wyszukiwarki: artykuły SEO, opisy produktów, teksty na stronę. Pisanie tekstów dla Google i czytelnika. Fotz Studio."
         canonical="https://fotz.pl/seo/copywriting-seo"
         keywords="copywriting seo, teksty seo, pisanie treści seo, treści pod google, artykuły seo, opisy seo"
       />
@@ -109,6 +109,21 @@ const SEOCopywriting = () => {
             </Accordion>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">SEO copywriting — tworzenie treści pod wyszukiwarki internetowe</h2>
+            <p className="text-muted-foreground mb-4">SEO copywriting to sztuka tworzenia treści, które są jednocześnie wartościowe dla czytelnika i zoptymalizowane pod wyszukiwarki internetowe. Dobry tekst SEO naturalnie wplata słowa kluczowe w merytoryczną, angażującą treść — bez sztucznego upychania fraz kluczowych (keyword stuffing), które algorytmy Google penalizują.</p>
+            <p className="text-muted-foreground mb-6">Analiza słów kluczowych to fundament SEO copywritingu — identyfikacja fraz, których szukają Twoi potencjalni klienci, pozwala tworzyć treści, które odpowiadają na ich rzeczywiste pytania i potrzeby. Narzędzia do badania słów kluczowych (Ahrefs, Semrush) są niezbędne w pracy copywritera SEO.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Artykuły SEO, opisy produktów i teksty na stronę — co wchodzi w SEO copywriting?</h2>
+            <p className="text-muted-foreground mb-4">SEO copywriting obejmuje: artykuły blogowe zoptymalizowane pod long-tail keywords, opisy produktów i kategorii w sklepach e-commerce, teksty na strony usługowe i landingowe, meta tytuly i meta opisy, nagłówki H1-H6 z kluczowymi frazami oraz alternatywne opisy obrazów (atrybuty alt).</p>
+            <p className="text-muted-foreground">Optymalizacja pod wyszukiwarki (SEO) i pisanie dla ludzi to nie wykluczające się cele — wręcz przeciwnie. Treści, które faktycznie odpowiadają na pytania użytkowników, naturalnie spełniają wymogi Google E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). SEO copywriting to inwestycja, która pracuje miesiącami i latami po publikacji.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

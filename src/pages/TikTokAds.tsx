@@ -160,8 +160,8 @@ const TikTokAds = () => {
   return (
     <Layout>
       <SEOHead
-        title="TikTok Ads Poznań | Kampanie Wideo | Fotz"
-        description="Kampanie TikTok Ads - docieraj do Gen Z. In-Feed Ads, Spark Ads, viralowy content. Agencja TikTok Ads od 2000 zł/mies."
+        title="TikTok Ads — Reklama na TikToku dla Firm | Kampanie TikTok | Fotz Studio"
+        description="TikTok Ads — tworzenie i prowadzenie reklam na TikToku. In-Feed Ads, TopView, Branded Effects. Skuteczne kampanie dla firm na TikToku. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/tiktok-ads"
         keywords="TikTok Ads, reklamy TikTok, kampanie TikTok, marketing TikTok, agencja TikTok Ads Poznań"
       />
@@ -483,6 +483,20 @@ const TikTokAds = () => {
 
 
       {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">TikTok Ads — reklama na TikToku i kampanie marketingowe</h2>
+            <p className="text-muted-foreground mb-4">TikTok Ads to platforma reklamowa TikToka — jednej z najszybciej rosnących platform społecznościowych na świecie. Reklama na TikToku dociera do młodych, zaangażowanych odbiorców (głównie Z i Millennialsi), ale platforma dynamicznie się demograficznie rozszerza. Formaty TikTok Ads: In-Feed Ads (w feedzie "Dla Ciebie"), TopView (pierwsza reklama przy otwarciu apki), Brand Takeover i Branded Hashtag Challenge.</p>
+            <p className="text-muted-foreground mb-6">TikTok preferuje treści autentyczne i natywne — reklamy, które wyglądają jak organiczne wideo, osiągają znacznie lepsze wyniki. Tworzenie rolek pod social media i TikToka wymaga rozumienia kultury platformy: trendy, dźwięki, filtry i challenge. Dobra reklama TikTok to taka, którą użytkownicy chcą oglądać — nie przewijają.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie TikTok — jak reklamować firmę na TikToku?</h2>
+            <p className="text-muted-foreground">TikTok for Business (TikTok Ads Manager) oferuje możliwości targetowania podobne do Meta — zainteresowania, demografika, custom audiences. Reklama na TikTok biznes coraz częściej staje się elementem mediamixu firm B2C, szczególnie w branży e-commerce, beauty, fashion i gastronomii. Video content marketing na TikToku może viralowo zwiększyć świadomość marki przy niskich kosztach — jeśli content trafia w trendy.</p>
+          </motion.div>
+        </div>
+      </section>
+
       <RelatedServices 
         currentService="tiktok-ads"
         subtitle="Inne platformy reklamowe i usługi wspierające kampanie wideo"

@@ -106,8 +106,8 @@ export default function SocialMediaPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Social Media Poznań | FB, IG, LinkedIn | Fotz"
-        description="Social media Poznań - prowadzenie FB, IG, LinkedIn. Kampanie Meta Ads, content. Bezpłatna konsultacja. Fotz Studio."
+        title="Social Media Poznań — Obsługa i Prowadzenie Social Media | Fotz Studio"
+        description="Obsługa social media Poznań — prowadzenie Facebooka, Instagrama, LinkedIn dla firm z Poznania. Content, kampanie reklamowe, analityka. Fotz Studio."
         canonical="https://fotz.pl/social-media/poznan"
         keywords="agencja social media poznań, prowadzenie facebooka poznań, social media poznań, instagram poznań, meta ads poznań"
       />
@@ -552,6 +552,20 @@ export default function SocialMediaPoznan() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja social media Poznań — obsługa social mediów dla firm z Poznania</h2>
+            <p className="text-muted-foreground mb-4">Agencja social media Poznań — Fotz Studio prowadzi profile społecznościowe dla firm z Poznania i Wielkopolski. Obsługa social media obejmuje: tworzenie strategii, produkcję contentu (grafiki, wideo, teksty), zarządzanie profilami (Facebook, Instagram, LinkedIn, TikTok), prowadzenie kampanii reklamowych i analizę wyników.</p>
+            <p className="text-muted-foreground mb-6">Prowadzenie social media dla firm z Poznania to nasza codzienność od kilku lat. Znamy lokalny rynek, wiemy jakie treści angażują poznańskich odbiorców i jak docierać do potencjalnych klientów w Wielkopolsce. Agencja social media Poznań z portfolio dziesiątek lokalnych firm.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Social media marketing Poznań — kampanie reklamowe i organiczny growth</h2>
+            <p className="text-muted-foreground">Social media marketing Poznań łączy organiczny content z płatnymi kampaniami Facebook Ads i Instagram Ads. Targetowanie reklam na Poznań i okolice, kreacje dopasowane do lokalnej specyfiki i systematyczne raportowanie efektów — to nasza agencja social media w Poznaniu. Skontaktuj się i sprawdź ofertę obsługi social media dla Twojej firmy.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }
