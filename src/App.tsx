@@ -188,6 +188,7 @@ const FacebookInstagramAds = lazy(() => import("./pages/FacebookInstagramAds"));
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
 const EcommerceTworzenie = lazy(() => import("./pages/EcommerceTworzenie"));
+const SklepyInternetowe = lazy(() => import("./pages/SklepyInternetowe"));
 const ContentMarketing = lazy(() => import("./pages/ContentMarketing"));
 
 // Legal & utility pages
@@ -414,6 +415,7 @@ const App = () => (
                 <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
                 <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
                 <Route path="/agencja-seo-poznan" element={<AgencjaSEOPoznan />} />
+                <Route path="/uslugi/sklepy-internetowe" element={<SklepyInternetowe />} />
                 <Route path="/uslugi/sklepy-internetowe/poznan" element={<SklepyInternetowePoznan />} />
                 <Route path="/uslugi/sklepy-internetowe/warszawa" element={<SklepyInternetoweWarszawa />} />
                 <Route path="/uslugi/sklepy-internetowe/krakow" element={<SklepyInternetoweKrakow />} />
