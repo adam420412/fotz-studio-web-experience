@@ -35,6 +35,7 @@ export default function BlogPsychologiaCen() {
       <SEOHead
         title="Psychologia Cen — Strategie Cenowe, które Zwiększają Sprzedaż | Fotz Studio"
         description="Psychologia cen w marketingu — strategie cenowe, efekt zakotwiczenia, ceny .99 i bundling. Jak psychologia cenowa zwiększa konwersję i sprzedaż. Fotz Studio."
+        ogType="article"
         canonical="https://fotz.pl/blog/psychologia-cen"
         keywords="psychologia cen, pricing psychology, ustalanie cen, kotwiczenie cen, charm pricing, strategia cenowa"
       />

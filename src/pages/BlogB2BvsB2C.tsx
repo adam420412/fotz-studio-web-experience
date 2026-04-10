@@ -36,6 +36,7 @@ export default function BlogB2BvsB2C() {
       <SEOHead
         title="Marketing B2B vs B2C — Różnice, Strategie i Kanały Marketingowe | Fotz Studio"
         description="Marketing B2B vs B2C — kluczowe różnice w strategii, kanałach i treściach. Jak prowadzić skuteczny marketing B2B i B2C? Poradnik Fotz Studio."
+        ogType="article"
         canonical="https://fotz.pl/blog/marketing-b2b-vs-b2c"
         keywords="marketing b2b, marketing b2c, b2b vs b2c, strategia b2b, sprzedaż b2b, lead generation b2b"
       />

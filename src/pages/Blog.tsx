@@ -432,6 +432,7 @@ export default function Blog() {
       <SEOHead
         title="Blog Marketingowy — Artykuły o SEO, Google Ads i Social Media | Fotz Studio"
         description="Blog marketingowy Fotz Studio — artykuły i poradniki o SEO, Google Ads, content marketingu, social media i tworzeniu stron. Praktyczna wiedza dla firm i…"
+        ogType="article"
         canonical="https://fotz.pl/blog"
         keywords="blog marketingowy, poradniki marketing, SEO, social media, Google Ads"
       />

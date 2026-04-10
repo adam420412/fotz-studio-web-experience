@@ -28,6 +28,7 @@ const BlogKosztStrony = () => {
       <SEOHead
         title="Ile Kosztuje Strona Internetowa w 2025? Cennik i Aktualne Koszty | Fotz Studio"
         description="Ile kosztuje strona internetowa w 2025? Cennik stron www: landing page, strona firmowa, sklep e-commerce. Aktualne koszty tworzenia stron internetowych…"
+        ogType="article"
         canonical="https://fotz.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
         schemaJson={[

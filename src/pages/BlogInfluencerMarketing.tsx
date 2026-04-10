@@ -49,6 +49,7 @@ export default function BlogInfluencerMarketing() {
       <SEOHead
         title="Influencer Marketing w Polsce — Jak Współpracować z Influencerami? | Fotz Studio"
         description="Influencer marketing w Polsce — jak wybierać influencerów, negocjować współpracę i mierzyć ROI. Mikro i makro influencerzy. Poradnik influencer marketing…"
+        ogType="article"
         canonical="https://fotz.pl/social-media/influencer"
         keywords="influencer marketing, współpraca z influencerami, kampanie influencerskie, mikro influencerzy, nano influencerzy, Instagram influencerzy, TikTok influencerzy"
       />
