@@ -271,10 +271,10 @@ const SocialMedia = () => {
   return (
     <>
       <SEOHead
-        title="Obsługa Social Media | FB, IG, TikTok, LinkedIn | Fotz"
-        description="Obsługa social media dla firm: prowadzenie Facebooka, Instagrama, TikToka i LinkedIn. Strategia, content foto/video, kampanie Meta Ads. Pakiety od 2500 zł/mies."
+        title="Obsługa i Prowadzenie Social Media Facebook Instagram - Cennik | Fotz Studio"
+        description="Obsługa social media dla firm — prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie Facebook Ads. Cennik prowadzenia social media od 1200 zł/mies. Bezpłatny audyt."
         canonical="https://fotz.pl/social-media/obsluga"
-        keywords="agencja social media, marketing social media, prowadzenie facebooka, instagram marketing, linkedin marketing"
+        keywords="obsługa social media, prowadzenie social media, agencja social media, prowadzenie facebooka, prowadzenie instagrama, cennik social media, social media marketing"
       />
       
       <ServiceSchema 
@@ -971,7 +971,67 @@ const SocialMedia = () => {
           </div>
         </section>
 
-        <RelatedServices 
+        {/* SEO Article Section */}
+        <section className="py-20 border-t border-border/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Prowadzenie social media — co obejmuje profesjonalna obsługa social media?
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Prowadzenie social media twojej firmy to znacznie więcej niż publikowanie postów. Profesjonalna obsługa social media obejmuje: strategię komunikacji, tworzenie contentu (grafiki, wideo, copywriting), zarządzanie społecznością, kampanie reklamowe (Facebook Ads, Instagram Ads) i raportowanie wyników. Social media manager prowadzący Twoje kanały dba o harmonogram publikacji, odpowiadanie na komentarze i monitoring konkurencji. Obsługa social media zapewnia spójność marki w mediach społecznościowych i regularne budowanie zasięgów organicznych.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Jak wygląda prowadzenie social media — Facebook, Instagram, LinkedIn
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Prowadzenie facebooka obejmuje: zarządzanie profilem firmowym, tworzenie i publikowanie postów, obsługę wydarzeń, moderację komentarzy i kampanie Facebook Ads. Prowadzenie instagrama skupia się na estetyce siatki, stories, reels i hashtagach. LinkedIn to kluczowy kanał B2B — budujemy profil marki z myślą o pozyskiwaniu partnerów i klientów biznesowych. Facebooka czy instagrama — które medium wybrać? Zależy od branży i grupy docelowej — razem ustalamy priorytety podczas briefu. Marki w social media, które są aktywne na kilku platformach społecznościowych, budują silniejszą pozycję w świadomości potencjalnych klientów.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Agencja social media — prowadzenie mediów społecznościowych dla firm
+                </h2>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Audyt social media i strategia social media — punkt startowy współpracy z klientem
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Audyt social media to analiza obecnych profili firmy: zasięgów, zaangażowania, contentu, targetowania reklam i konkurencji. Współpraca z klientem rozpoczyna się od audytu — razem ustalamy cele biznesowe (sprzedaż produktów lub usług, budowanie marki, leady) i strategię social media na kolejne miesiące. Strategia social media określa: platformy, częstotliwość publikacji, typy contentu, budżet reklamowy i KPI. Profesjonalne prowadzenie social media to kompleksowe zarządzanie obecnością w social media twojej firmy.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Content i wideo w social media — tworzenie treści i budowanie zasięgów
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Content w social media to paliwo dla algorytmów. Wideo (reels, shorts, stories) to format z najwyższym organicznym zasięgiem. Content marketing w social media łączy posty edukacyjne, rozrywkowe i sprzedażowe. Social media manager i kreatywny team tworzą treści, które angażują odbiorców i budują społeczność wokół marki. Tworzenie treści na profil na facebooku i instagramie wymaga znajomości trendów — stale śledzimy zmiany algorytmów i testujemy nowe formaty. Zarządzanie profilem marki to budowania relacji z odbiorcami i tworzenie obecności w social media rozpoznawalnej w branży.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Social media marketing — kampanie i reklamy w social media
+                </h2>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Facebook Ads i reklamy w social media — kampania dla Twojej firmy
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Reklamy w social media pozwalają precyzyjnie targetować odbiorców — wiek, lokalizacja, zainteresowania, zachowania. Kampania Facebook Ads obejmuje: konfigurację piksela Meta, grupy odbiorców, kreacje reklamowe i optymalizację pod cel (leady, sprzedaż, zasięg). Marketing w mediach społecznościowych w połączeniu z działaniami organicznymi daje najlepsze efekty. Zakresie obsługi social media zawsze rekomendujemy synergię kampanii płatnych i organicznych.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Social media cennik i cennik prowadzenia social media — przejrzyste ceny
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Cennik prowadzenia social media w Fotz Studio: pakiet podstawowy (1–2 platformy, 12 postów) od 1 200 zł/mies., pakiet growth (3 platformy, 20 postów, Facebook Ads) od 2 500 zł/mies., pakiet pro (pełna obsługa, wideo, kampanie) od 4 500 zł/mies. Prowadzenie i obsługa social media w każdym pakiecie obejmuje: strategię, content plan, moderację i raportowanie. Ramach obsługi social media możemy też współpracować projektowo — jednorazowy audyt, sesja zdjęciowa lub produkcja wideo.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Prowadzenie social media twojej firmy — zacznij współpracę
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Gotowy współpracować i prowadzić social media z Fotz Studio? Specjalistów od social media z naszego zespołu cechuje kreatywne podejście i orientacja na wyniki. Razem ustalić możemy zakres obsługi social i dostosować ofertę do budżetu. Kompleksowe prowadzenie profili w social media dla firm, które chcą wyróżnić się w mediach społecznościowych — skontaktuj się i zamów bezpłatny audyt.
+                </p>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        <RelatedServices
           currentService="social-media"
           subtitle="Usługi wspierające obecność Twojej marki w social mediach"
         />
