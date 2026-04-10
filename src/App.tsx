@@ -65,6 +65,7 @@ const BlogB2BvsB2C = lazy(() => import("./pages/BlogB2BvsB2C"));
 const BlogPsychologiaCen = lazy(() => import("./pages/BlogPsychologiaCen"));
 const BlogCopywritingLanding = lazy(() => import("./pages/BlogCopywritingLanding"));
 const BlogArticleDynamic = lazy(() => import("./pages/BlogArticleDynamic"));
+const BlogSprzedazOnline = lazy(() => import("./pages/BlogSprzedazOnline"));
 
 // DlaKogo pages
 const DlaKogo = lazy(() => import("./pages/DlaKogo"));
@@ -284,6 +285,7 @@ const App = () => (
                 <Route path="/blog/budzet-marketingowy-planowanie" element={<BlogBudzetMarketingowy />} />
                 <Route path="/blog/marketing-b2b-vs-b2c" element={<BlogB2BvsB2C />} />
                 <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
+                <Route path="/blog/jak-zwiekszyc-sprzedaz-przez-internet" element={<BlogSprzedazOnline />} />
 
                 {/* Blog → cluster redirects MUST be BEFORE the catch-all /blog/:slug */}
                 <Route path="/blog/seo-ecommerce" element={<Redirect301 to="/seo/ecommerce" />} />
