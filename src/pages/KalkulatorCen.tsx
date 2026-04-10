@@ -298,7 +298,7 @@ export default function KalkulatorCen() {
     <>
       <SEOHead
         title="Kalkulator Cen Usług Marketingowych — Ile Kosztuje Marketing? | Fotz Studio"
-        description="Kalkulator cen usług marketingowych — oblicz orientacyjny koszt SEO, strony internetowej, kampanii Google Ads i social media dla Twojej firmy. Darmowe narzędzie online Fotz Studio."
+        description="Kalkulator cen usług marketingowych — oblicz orientacyjny koszt SEO, strony internetowej, kampanii Google Ads i social media dla Twojej firmy. Darmowe…"
         canonical="https://fotz.pl/kalkulator-cen"
       />
       <BreadcrumbSchema 

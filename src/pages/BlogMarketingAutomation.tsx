@@ -35,7 +35,7 @@ const BlogMarketingAutomation = () => {
     <>
       <SEOHead
         title="Marketing Automation — Jak Zautomatyzować Sprzedaż i Pozyskiwanie Leadów? | Fotz Studio"
-        description="Marketing automation — jak zautomatyzować email marketing, lead nurturing i sprzedaż online. Narzędzia i strategie automatyzacji marketingu dla firm 2025. Fotz Studio."
+        description="Marketing automation — jak zautomatyzować email marketing, lead nurturing i sprzedaż online. Narzędzia i strategie automatyzacji marketingu dla firm 2025…"
         canonical="https://fotz.pl/blog/marketing-automation"
         keywords="marketing automation, automatyzacja marketingu, lead nurturing, CRM, email automation, sales funnel, konwersja"
       />

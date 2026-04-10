@@ -34,7 +34,7 @@ const BlogTikTokBiznes = () => {
     <>
       <SEOHead
         title="TikTok dla Biznesu — Marketing i Reklamy na TikToku dla Firm | Fotz Studio"
-        description="TikTok dla biznesu — jak prowadzić marketing na TikToku, tworzyć treści i reklamować firmę. TikTok Ads i organiczny zasięg. Poradnik TikTok marketing dla firm 2025. Fotz Studio."
+        description="TikTok dla biznesu — jak prowadzić marketing na TikToku, tworzyć treści i reklamować firmę. TikTok Ads i organiczny zasięg. Poradnik TikTok marketing dla…"
         canonical="https://fotz.pl/social-media/tiktok-biznes"
         keywords="TikTok dla biznesu, TikTok marketing, TikTok Ads, reklamy TikTok, social media marketing, wideo marketing"
       />

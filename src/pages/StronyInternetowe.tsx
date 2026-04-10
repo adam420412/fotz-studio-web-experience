@@ -319,7 +319,7 @@ const StronyInternetowe = () => {
     <>
       <SEOHead
         title="Tworzenie Stron Internetowych — Projektowanie Stron WWW dla Firm | Fotz Studio"
-        description="Profesjonalne tworzenie stron internetowych dla firm. Projektowanie stron www zoptymalizowanych pod SEO, Core Web Vitals i konwersję. WordPress, Webflow, React — bezpłatna wycena 24h."
+        description="Profesjonalne tworzenie stron internetowych dla firm. Projektowanie stron www zoptymalizowanych pod SEO, Core Web Vitals i konwersję. WordPress, Webflow…"
         canonical="https://fotz.pl/uslugi/strony-internetowe"
         keywords="tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, tworzenie strony www, stworzenie strony internetowej, strona firmowa"
       />

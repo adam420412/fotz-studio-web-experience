@@ -195,7 +195,7 @@ const KompleksowaObsluga = () => {
     <>
       <SEOHead
         title="Kompleksowa Obsługa Marketingowa Firm — Marketing 360° dla Biznesu | Fotz Studio"
-        description="Kompleksowa obsługa marketingowa firm — marketing 360°: SEO, social media, content, reklamy Google i Meta, produkcja wideo. Jeden partner dla całego marketingu firmy. Fotz Studio."
+        description="Kompleksowa obsługa marketingowa firm — marketing 360°: SEO, social media, content, reklamy Google i Meta, produkcja wideo. Jeden partner dla całego…"
         canonical="https://fotz.pl/kompleksowa-obsluga-marketingowa"
       />
       <BreadcrumbSchema 

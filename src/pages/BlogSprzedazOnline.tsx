@@ -38,7 +38,7 @@ const BlogSprzedazOnline = () => {
     <>
       <SEOHead
         title="Sprzedaż Online — Jak Sprzedawać w Internecie? Poradnik dla Firm | Fotz Studio"
-        description="Jak sprzedawać online? Kanały sprzedaży internetowej: sklep własny, marketplace, social commerce. Jak zwiększyć sprzedaż online? Kompleksowy poradnik 2025. Fotz Studio."
+        description="Jak sprzedawać online? Kanały sprzedaży internetowej: sklep własny, marketplace, social commerce. Jak zwiększyć sprzedaż online? Kompleksowy poradnik…"
         canonical="https://fotz.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet"
         keywords="jak zwiększyć sprzedaż przez internet, zwiększenie sprzedaży online, sprzedaż w internecie, jak sprzedawać więcej online, strategie sprzedaży online, marketing internetowy sprzedaż"
       />

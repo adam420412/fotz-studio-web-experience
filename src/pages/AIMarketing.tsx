@@ -26,7 +26,7 @@ const AIMarketing = () => {
     <>
       <SEOHead
         title="AI Marketing — Sztuczna Inteligencja w Marketingu | Fotz Studio"
-        description="AI Marketing — wykorzystanie sztucznej inteligencji w strategii marketingowej: automatyzacja, personalizacja treści, AI copywriting i analityka predyktywna. Fotz Studio."
+        description="AI Marketing — wykorzystanie sztucznej inteligencji w strategii marketingowej: automatyzacja, personalizacja treści, AI copywriting i analityka…"
         canonical="https://fotz.pl/ai-marketing"
         keywords="ai marketing, sztuczna inteligencja marketing, marketing automation ai, narzędzia ai marketing, chatgpt marketing"
       />

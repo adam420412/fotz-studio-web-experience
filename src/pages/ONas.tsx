@@ -100,7 +100,7 @@ export default function ONas() {
     <Layout>
       <SEOHead
         title="O Nas — Agencja Marketingowa Fotz Studio Poznań | Zespół i Misja"
-        description="Fotz Studio — agencja marketingowa z Poznania. Poznaj nasz zespół, wartości i misję. SEO, strony internetowe, social media i produkcja wideo dla firm z całej Polski."
+        description="Fotz Studio — agencja marketingowa z Poznania. Poznaj nasz zespół, wartości i misję. SEO, strony internetowe, social media i produkcja wideo dla firm z…"
         canonical="https://fotz.pl/o-nas"
         keywords="zespół marketingowy, agencja marketingowa Poznań, Fotz Studio, o nas, marketing team"
       />

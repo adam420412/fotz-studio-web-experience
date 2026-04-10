@@ -792,7 +792,7 @@ DANE KONTAKTOWE:
     <Layout>
       <SEOHead
         title="Generator Briefu Projektowego — Stwórz Brief Marketingowy Online | Fotz Studio"
-        description="Generator briefu projektowego — stwórz profesjonalny brief marketingowy, brief strony internetowej lub kampanii reklamowej online. Darmowe narzędzie Fotz Studio."
+        description="Generator briefu projektowego — stwórz profesjonalny brief marketingowy, brief strony internetowej lub kampanii reklamowej online. Darmowe narzędzie Fotz…"
         canonical="https://fotz.pl/generator-briefu"
         keywords="generator briefu, brief projektowy, brief marketingowy, brief online"
       />

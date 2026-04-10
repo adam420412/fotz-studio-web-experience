@@ -120,7 +120,7 @@ export default function DlaKogoEcommerce() {
     <Layout>
       <SEOHead
         title="Marketing dla E-commerce — SEO, Google Shopping i Reklamy dla Sklepów Internetowych | Fotz Studio"
-        description="Marketing e-commerce: SEO sklepów internetowych, Google Shopping, Meta Ads, email marketing i automatyzacja. Fotz Studio pomaga sklepom online rosnąć. Sprawdź ofertę."
+        description="Marketing e-commerce: SEO sklepów internetowych, Google Shopping, Meta Ads, email marketing i automatyzacja. Fotz Studio pomaga sklepom online rosnąć…"
         canonical="https://fotz.pl/dla-kogo/ecommerce"
         keywords="marketing e-commerce, sklepy internetowe, performance marketing, ROAS, CRO"
       />

@@ -181,7 +181,7 @@ export default function Konsultacja() {
     <Layout>
       <SEOHead
         title="Bezpłatna Konsultacja Marketingowa — Umów się z Ekspertem Fotz Studio"
-        description="Bezpłatna konsultacja marketingowa Fotz Studio — omów SEO, strategię online, kampanie Google Ads i social media z ekspertem. Umów się na 30-minutowe spotkanie online."
+        description="Bezpłatna konsultacja marketingowa Fotz Studio — omów SEO, strategię online, kampanie Google Ads i social media z ekspertem. Umów się na 30-minutowe…"
         canonical="https://fotz.pl/konsultacja"
         keywords="konsultacja marketingowa, darmowa konsultacja, marketing Poznań, strategia marketingowa"
       />

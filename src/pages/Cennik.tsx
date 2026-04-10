@@ -786,7 +786,7 @@ export default function Cennik() {
     <Layout>
       <SEOHead
         title="Cennik Usług Marketingowych — Ile Kosztuje SEO, Strona WWW i Reklamy? | Fotz Studio"
-        description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo. Transparentne ceny, konfigurowalny pakiet."
+        description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo. Transparentne ceny…"
         canonical="https://fotz.pl/cennik"
         keywords="cennik marketing, cennik usług, konfigurator cen, strony internetowe cena, social media cena, SEO cena"
       />

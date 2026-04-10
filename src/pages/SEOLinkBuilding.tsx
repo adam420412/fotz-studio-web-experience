@@ -26,7 +26,7 @@ const SEOLinkBuilding = () => {
     <>
       <SEOHead
         title="Link Building — Budowanie Linków i Zdobywanie Backlinków | SEO Off-Page | Fotz Studio"
-        description="Link building i budowanie linków zewnętrznych — pozyskiwanie wartościowych backlinków, guest posting, digital PR. Wzmocnij autorytet domeny i pozycje SEO. Fotz Studio."
+        description="Link building i budowanie linków zewnętrznych — pozyskiwanie wartościowych backlinków, guest posting, digital PR. Wzmocnij autorytet domeny i pozycje SEO…"
         canonical="https://fotz.pl/seo/link-building"
         keywords="link building, zdobywanie linków, backlinki, profil linkowy, off-page seo, linki zewnętrzne"
       />

@@ -26,7 +26,7 @@ const SEOCopywriting = () => {
     <>
       <SEOHead
         title="SEO Copywriting — Pisanie Tekstów pod SEO i Pozycjonowanie | Fotz Studio"
-        description="SEO copywriting — tworzenie treści zoptymalizowanych pod wyszukiwarki: artykuły SEO, opisy produktów, teksty na stronę. Pisanie tekstów dla Google i czytelnika. Fotz Studio."
+        description="SEO copywriting — tworzenie treści zoptymalizowanych pod wyszukiwarki: artykuły SEO, opisy produktów, teksty na stronę. Pisanie tekstów dla Google i…"
         canonical="https://fotz.pl/seo/copywriting-seo"
         keywords="copywriting seo, teksty seo, pisanie treści seo, treści pod google, artykuły seo, opisy seo"
       />

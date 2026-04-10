@@ -83,7 +83,7 @@ export default function DlaKogo() {
     <Layout>
       <SEOHead
         title="Dla Kogo Pracujemy — Marketing dla Firm, E-commerce i Instytucji | Fotz Studio"
-        description="Fotz Studio pracuje dla firm lokalnych, e-commerce, marek premium, instytucji i startupów. Marketing internetowy, SEO, social media i produkcja wideo dla każdej branży."
+        description="Fotz Studio pracuje dla firm lokalnych, e-commerce, marek premium, instytucji i startupów. Marketing internetowy, SEO, social media i produkcja wideo dla…"
         canonical="https://fotz.pl/dla-kogo"
         keywords="marketing dla firm, marketing branżowy, agencja marketingowa, marketing B2B, marketing e-commerce"
       />
