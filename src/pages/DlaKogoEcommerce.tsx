@@ -119,8 +119,8 @@ export default function DlaKogoEcommerce() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla e-commerce | Sklepy internetowe | Fotz Studio"
-        description="Zwiększamy sprzedaż w sklepach internetowych. Performance marketing, optymalizacja konwersji, remarketing. Średni ROAS 8.5x dla naszych klientów."
+        title="Marketing dla E-commerce — SEO, Google Shopping i Reklamy dla Sklepów Internetowych | Fotz Studio"
+        description="Marketing e-commerce: SEO sklepów internetowych, Google Shopping, Meta Ads, email marketing i automatyzacja. Fotz Studio pomaga sklepom online rosnąć. Sprawdź ofertę."
         canonical="https://fotz.pl/dla-kogo/ecommerce"
         keywords="marketing e-commerce, sklepy internetowe, performance marketing, ROAS, CRO"
       />
@@ -537,6 +537,67 @@ export default function DlaKogoEcommerce() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Marketing dla e-commerce — jak skutecznie promować sklep internetowy?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Marketing e-commerce różni się od marketingu usług — kluczowe są tu
+              Google Shopping, SEO produktowe, retargeting i email marketing.
+              Fotz Studio specjalizuje się w marketingu dla sklepów internetowych
+              i e-commerce. Pomagamy sklepom zwiększyć widoczność w Google,
+              obniżyć koszt pozyskania klienta i zwiększyć średnią wartość koszyka.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kompleksowy marketing e-commerce to synergia kanałów: SEO organiczne
+              buduje długoterminowy ruch, Google Shopping i Meta Ads generują
+              szybką sprzedaż, email marketing i automatyzacja pielęgnują relacje
+              z klientami i stymulują powroty do sklepu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Google Shopping, SEO e-commerce i reklamy dla sklepów — jak to robimy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Google Shopping to jeden z najefektywniejszych kanałów dla e-commerce —
+              reklamy produktowe z ceną i zdjęciem wyświetlają się na samej górze
+              wyników wyszukiwania. Zarządzamy feed produktowym, strategiami stawek
+              i strukturą kampanii Shopping dla maksymalizacji ROAS.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              SEO dla sklepów e-commerce obejmuje: optymalizację kart produktów,
+              kategorii i stron filtrowania (faceted navigation), budowanie linków
+              do stron produktowych, SEO techniczne (Core Web Vitals, szybkość,
+              dane strukturalne schema.org dla produktów i recenzji).
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Email marketing i automatyzacja dla e-commerce — odzysk porzuconych koszyków i retencja
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Email marketing dla e-commerce to jeden z kanałów z najwyższym ROI.
+              Konfigurujemy automatyzacje: odzysk porzuconych koszyków (średnio 10-15%
+              konwersji), sekwencje powitalne, rekomendacje produktowe po zakupie
+              i kampanie win-back dla nieaktywnych klientów.
+            </p>
+            <p className="text-muted-foreground">
+              Fotz Studio obsługuje sklepy internetowe na każdym etapie — od startupu
+              z pierwszymi produktami po duże sklepy z tysiącami SKU. Skontaktuj się
+              z nami po bezpłatny audyt marketingowy swojego sklepu e-commerce.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

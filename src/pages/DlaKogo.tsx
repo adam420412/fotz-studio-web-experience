@@ -80,8 +80,8 @@ export default function DlaKogo() {
   return (
     <Layout>
       <SEOHead
-        title="Dla kogo pracujemy - Marketing dla branż | Fotz Studio"
-        description="Marketing dopasowany do Twojej branży: firmy lokalne, e-commerce, marki premium, instytucje. Strategie i narzędzia dostosowane do specyfiki biznesu."
+        title="Dla Kogo Pracujemy — Marketing dla Firm, E-commerce i Instytucji | Fotz Studio"
+        description="Fotz Studio pracuje dla firm lokalnych, e-commerce, marek premium, instytucji i startupów. Marketing internetowy, SEO, social media i produkcja wideo dla każdej branży."
         canonical="https://fotz.pl/dla-kogo"
         keywords="marketing dla firm, marketing branżowy, agencja marketingowa, marketing B2B, marketing e-commerce"
       />
@@ -197,6 +197,66 @@ export default function DlaKogo() {
           </Button>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Dla kogo pracujemy — marketing internetowy dla firm każdej branży
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio to agencja marketingowa obsługująca firmy z całej Polski.
+              Pracujemy z firmami lokalnymi szukającymi klientów w okolicy, sklepami
+              e-commerce walczącymi o pozycje w Google Shopping, markami premium
+              budującymi luksusowy wizerunek, instytucjami kultury promującymi wydarzenia
+              oraz startupami potrzebującymi mocnego wejścia na rynek.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dobór strategii marketingowej zależy od branży, grupy docelowej i etapu
+              rozwoju firmy. Dlatego zawsze zaczynamy od dokładnego audytu i konsultacji
+              — by zaproponować działania, które przyniosą realny zwrot z inwestycji.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Marketing dla małych i średnich firm — skuteczny marketing online w każdym budżecie
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Małe i średnie firmy to trzon naszej bazy klientów. Rozumiemy ograniczenia
+              budżetowe i wiemy, jak priorytetyzować działania, by każda złotówka
+              pracowała efektywnie. SEO, Google Ads, social media marketing i content
+              marketing — dobieramy miks kanałów do możliwości i celów konkretnej firmy.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Przedsiębiorcy często pytają: od czego zacząć marketing online? Odpowiedź
+              zależy od specyfiki firmy — dla firmy usługowej lokalnej priorytetem
+              jest Google Moja Firma i lokalne SEO; dla e-commerce — SEO produktowe
+              i Google Shopping; dla B2B — content marketing i LinkedIn Ads.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Agencja marketingowa dla różnych branż — nasi klienci i ich sukcesy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nasze portfolio obejmuje firmy z branży nieruchomości, gastronomii,
+              zdrowia i urody, edukacji, produkcji, handlu detalicznego, usług prawnych
+              i finansowych, motoryzacji, turystyki i wielu innych. Każda branża
+              ma swoje specyficzne wyzwania marketingowe — i dla każdej mamy sprawdzone rozwiązania.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami, by dowiedzieć się, jak możemy pomóc Twojej firmie.
+              Bezpłatna konsultacja i audyt marketingowy — bez zobowiązań. Sprawdź,
+              co możemy osiągnąć razem.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

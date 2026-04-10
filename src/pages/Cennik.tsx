@@ -781,8 +781,8 @@ export default function Cennik() {
   return (
     <Layout>
       <SEOHead
-        title="Cennik Usług Marketingowych | Konfigurator | Fotz Studio"
-        description="Skonfiguruj pakiet usług marketingowych: strony internetowe, social media, SEO, produkcja video. Interaktywny konfigurator cen online."
+        title="Cennik Usług Marketingowych — Ile Kosztuje SEO, Strona WWW i Reklamy? | Fotz Studio"
+        description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo. Transparentne ceny, konfigurowalny pakiet."
         canonical="https://fotz.pl/cennik"
         keywords="cennik marketing, cennik usług, konfigurator cen, strony internetowe cena, social media cena, SEO cena"
       />
@@ -1491,6 +1491,68 @@ export default function Cennik() {
           </Card>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Cennik usług marketingowych — transparentne ceny bez ukrytych opłat
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Cennik usług marketingowych Fotz Studio jest transparentny i elastyczny.
+              Rozumiemy, że każda firma ma inne potrzeby i budżet — dlatego oferujemy
+              zarówno pakiety stałe, jak i wyceny indywidualne. Ile kosztuje marketing
+              internetowy? To zależy od zakresu, intensywności działań i branży.
+              Poniżej znajdziesz orientacyjne ceny naszych usług.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Nasze ceny uwzględniają pełen zakres pracy — od strategii, przez
+              realizację, po raportowanie wyników. Nie doliczamy opłat za komunikację,
+              spotkania ani standardowe poprawki. Przejrzyste zasady współpracy
+              to nasz standard.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Ile kosztuje SEO, strona internetowa i kampanie Google Ads?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Koszt pozycjonowania SEO dla małej firmy lokalnej zaczyna się od ok. 800 zł
+              miesięcznie. Strony internetowe wyceniamy od 3000 zł za prostą stronę
+              wizytówkową do 20 000+ zł za rozbudowany portal z CMS. Kampanie Google Ads
+              — obsługa od 500 zł miesięcznie (minimalny budżet reklamowy ustalamy
+              osobno, zależy od branży i celów).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługa social media (Facebook, Instagram) — pakiety od 1200 zł miesięcznie
+              za 3 posty tygodniowo do 3500+ zł za pełne zarządzanie z reklamami.
+              Produkcja wideo — reelsy od 500 zł, profesjonalne spoty reklamowe
+              od 3000 zł. Każda wycena jest indywidualna i bezpłatna.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Pakiety marketingowe i ROI z inwestycji — marketing jako koszt czy inwestycja?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Marketing to inwestycja, nie koszt — pod warunkiem, że jest dobrze
+              zaplanowany i mierzony. Fotz Studio mierzy ROI wszystkich kampanii
+              i regularnie raportuje wyniki. Klient zawsze wie, ile zarabia na każdej
+              złotówce zainwestowanej w marketing.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami po bezpłatną wycenę usług marketingowych
+              dostosowaną do potrzeb Twojej firmy. Ofertę przygotowujemy w ciągu 48 godzin
+              od wypełnienia briefu. Bez zobowiązań, bez ukrytych kosztów.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

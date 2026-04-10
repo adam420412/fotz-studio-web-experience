@@ -78,8 +78,8 @@ export default function Poradniki() {
   return (
     <>
       <SEOHead
-        title="Poradniki Marketingowe | Praktyczne Przewodniki | Fotz Studio"
-        description="Kompletne poradniki i tutoriale marketingu cyfrowego. Od podstaw po zaawansowane strategie: SEO, Google Ads, social media, landing pages i więcej."
+        title="Poradniki Marketingowe — Praktyczne Przewodniki SEO, Social Media i Reklam | Fotz Studio"
+        description="Poradniki marketingowe Fotz Studio — praktyczne przewodniki po SEO, Google Ads, social media marketing, content marketingu i tworzeniu stron internetowych dla firm."
         canonical="https://fotz.pl/poradniki"
         keywords="poradniki marketingowe, tutoriale marketing, przewodnik SEO, poradnik Google Ads, marketing cyfrowy"
       />
@@ -198,6 +198,64 @@ export default function Poradniki() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Poradniki marketingowe — praktyczna wiedza dla firm i przedsiębiorców
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Poradniki marketingowe Fotz Studio to kompleksowe przewodniki po
+              najważniejszych obszarach marketingu internetowego. Piszemy dla
+              przedsiębiorców i marketerów, którzy chcą lepiej rozumieć SEO,
+              kampanie Google Ads, social media marketing, content marketing
+              i tworzenie stron internetowych. Każdy poradnik oparty jest na
+              praktycznym doświadczeniu z setek zrealizowanych projektów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Wiedza to podstawa skutecznego marketingu. Firma, która rozumie
+              jak działa SEO i reklama online, podejmuje lepsze decyzje
+              i efektywniej współpracuje z agencją marketingową. Nasze poradniki
+              edukują, inspirują i pomagają unikać kosztownych błędów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Przewodniki po SEO, Google Ads i social media — od podstaw do zaawansowanych technik
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nasze poradniki SEO tłumaczą, jak działają algorytmy Google,
+              jak optymalizować stronę pod wyszukiwarki i jak budować linki.
+              Przewodniki po Google Ads wyjaśniają strukturę kampanii, dobór
+              słów kluczowych i optymalizację stawek. Poradniki social media
+              omawiają strategie dla różnych platform i branż.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Content marketing, email marketing, marketing automation, analityka
+              webowa — każdy obszar opisujemy krok po kroku, z przykładami
+              z polskiego rynku i polskich firm.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Nauka marketingu online dla właścicieli firm — praktyczne porady od ekspertów
+            </h2>
+            <p className="text-muted-foreground">
+              Fotz Studio dzieli się wiedzą, bo wierzymy w partnerską relację
+              z klientami. Właściciel firmy, który rozumie marketing, jest
+              lepszym partnerem do współpracy. Zapraszamy do lektury naszych
+              poradników i subskrypcji bloga — regularnie publikujemy nowe
+              materiały edukacyjne.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

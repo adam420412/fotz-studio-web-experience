@@ -428,8 +428,8 @@ export default function Blog() {
   return (
     <Layout>
       <SEOHead
-        title="Blog Marketingowy | Fotz Studio"
-        description="Poradniki marketingu, SEO i social media. Praktyczna wiedza dla firm od agencji Fotz Studio."
+        title="Blog Marketingowy — Artykuły o SEO, Google Ads i Social Media | Fotz Studio"
+        description="Blog marketingowy Fotz Studio — artykuły i poradniki o SEO, Google Ads, content marketingu, social media i tworzeniu stron. Praktyczna wiedza dla firm i marketerów."
         canonical="https://fotz.pl/blog"
         keywords="blog marketingowy, poradniki marketing, SEO, social media, Google Ads"
       />
@@ -618,6 +618,63 @@ export default function Blog() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Blog marketingowy Fotz Studio — wiedza praktyczna o SEO i marketingu online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Blog marketingowy Fotz Studio to źródło aktualnej wiedzy o marketingu
+              internetowym dla firm i marketerów. Piszemy o SEO, pozycjonowaniu stron,
+              kampaniach Google Ads i Meta Ads, content marketingu, social media
+              i tworzeniu stron internetowych. Każdy artykuł oparty jest na
+              praktycznym doświadczeniu z obsługi klientów i bieżącym śledzeniu
+              zmian algorytmów Google i platform reklamowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Marketing internetowy zmienia się szybko — aktualizacje Google,
+              nowe funkcje Meta Ads, zmiany w algorytmach social media. Na naszym
+              blogu znajdziesz bieżące informacje i interpretacje zmian
+              w kontekście polskiego rynku.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Artykuły o SEO, Google Ads, content marketingu i social media
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kategorie artykułów na naszym blogu marketingowym: SEO i pozycjonowanie
+              (techniczne SEO, link building, SEO lokalne, SEO e-commerce), kampanie
+              reklamowe (Google Ads, Meta Ads, YouTube Ads, LinkedIn Ads), content
+              marketing (copywriting, video content, e-booki), social media (Instagram,
+              TikTok, LinkedIn, Facebook) i strony internetowe (UX, konwersja, WordPress).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Nasz blog marketingowy jest czytany przez właścicieli firm, marketerów
+              i studentów marketingu z całej Polski. Regularnie piszemy case studies
+              z naszych projektów — z konkretnymi wynikami i wnioskami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Subskrybuj blog i newsletter — bądź na bieżąco z marketingiem online
+            </h2>
+            <p className="text-muted-foreground">
+              Zapisz się do newslettera Fotz Studio, by otrzymywać najnowsze artykuły
+              i aktualizacje marketingowe. Co tydzień — jeden wartościowy email
+              z praktyczną wiedzą o marketingu online. Bez spamu, bez reklam,
+              tylko wartościowa treść przydatna w prowadzeniu biznesu online.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

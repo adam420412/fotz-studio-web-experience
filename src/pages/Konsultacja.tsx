@@ -180,8 +180,8 @@ export default function Konsultacja() {
   return (
     <Layout>
       <SEOHead
-        title="Darmowa Konsultacja Marketingowa | Fotz Studio Poznań"
-        description="Umów bezpłatną 30-minutową konsultację marketingową. Omówimy strategię, cele i budżet Twojej firmy. Bez zobowiązań."
+        title="Bezpłatna Konsultacja Marketingowa — Umów się z Ekspertem Fotz Studio"
+        description="Bezpłatna konsultacja marketingowa Fotz Studio — omów SEO, strategię online, kampanie Google Ads i social media z ekspertem. Umów się na 30-minutowe spotkanie online."
         canonical="https://fotz.pl/konsultacja"
         keywords="konsultacja marketingowa, darmowa konsultacja, marketing Poznań, strategia marketingowa"
       />
@@ -520,6 +520,62 @@ export default function Konsultacja() {
           </FadeInView>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Bezpłatna konsultacja marketingowa — porozmawiaj z ekspertem Fotz Studio
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Bezpłatna konsultacja marketingowa z Fotz Studio to 30-60 minut
+              rozmowy z ekspertem o Twoim biznesie i możliwościach marketingu online.
+              Omawiamy aktualną sytuację w wyszukiwarce (audyt SEO), potencjał
+              reklam Google i Meta, stan obecności w social media i możliwości
+              poprawy strony internetowej. Konsultacja jest bezpłatna i bez zobowiązań.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Po konsultacji otrzymujesz skrócony raport z wnioskami i rekomendacjami
+              działań. To gotowy punkt wyjścia do planowania strategii marketingowej,
+              niezależnie od tego, czy zdecydujesz się na współpracę z nami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Co omówimy podczas konsultacji marketingowej? Audyt SEO i strategia online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Podczas konsultacji analizujemy: pozycję strony w Google i potencjał
+              SEO, aktualny ruch organiczny i płatny, aktywność konkurencji online,
+              jakość i aktywność profili social media, efektywność kampanii reklamowych
+              (jeśli już działają) oraz konwersję strony internetowej. Na podstawie
+              tej analizy wskazujemy priorytety i najszybsze „quick wins".
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Konsultacja marketingowa online dostępna jest przez Zoom, Google Meet
+              lub telefon — w terminie dogodnym dla Ciebie. Możemy też umówić się
+              na spotkanie w biurze Fotz Studio w Poznaniu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Umów się na konsultację — pierwszy krok do skutecznego marketingu online
+            </h2>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami przez formularz, telefon lub e-mail,
+              by umówić bezpłatną konsultację marketingową. W ciągu 24 godzin
+              oddzwonimy lub odpiszemy z propozycją terminu. Nie odkładaj marketingu
+              na jutro — każdy dzień bez skutecznych działań to utracone leady
+              i klienci dla konkurencji.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

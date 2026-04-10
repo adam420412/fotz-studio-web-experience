@@ -151,8 +151,8 @@ const SlownikMarketingowy = () => {
   return (
     <>
       <SEOHead
-        title="Słownik Marketingowy - Pojęcia i Definicje | Fotz Studio"
-        description="Kompletny słownik pojęć marketingowych od A do Z. Poznaj definicje: SEO, PPC, ROI, CTR, konwersja i wiele innych terminów marketingu cyfrowego."
+        title="Słownik Marketingowy — Pojęcia i Definicje z Marketingu Online | Fotz Studio"
+        description="Słownik marketingowy Fotz Studio — definicje pojęć z SEO, Google Ads, social media, content marketingu i e-commerce. Poznaj kluczowe terminy marketingu internetowego."
         canonical="https://fotz.pl/slownik-marketingowy"
       />
       <BreadcrumbSchema 
@@ -317,6 +317,63 @@ const SlownikMarketingowy = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Słownik marketingowy — kluczowe pojęcia i definicje marketingu online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Słownik marketingowy Fotz Studio to kompendium definicji pojęć
+              z marketingu internetowego. Obejmuje terminy z SEO i pozycjonowania,
+              kampanii Google Ads i Meta Ads, social media marketingu, content
+              marketingu, e-commerce i analityki webowej. Definicje pisane są
+              prostym językiem, z przykładami z praktyki — bez zbędnego żargonu.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Marketing online pełen jest skrótów i anglicyzmów: CTR, CPC, CPA,
+              ROAS, SEM, SERP, KPI, UX, CR — nasz słownik wyjaśnia wszystkie
+              najważniejsze pojęcia i pokazuje, jak stosować je w praktyce.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Definicje SEO, PPC, CTR, ROAS i innych pojęć marketingowych
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              SEO (Search Engine Optimization) — optymalizacja strony pod wyszukiwarki.
+              PPC (Pay Per Click) — model rozliczenia kampanii, płacisz za kliknięcie.
+              CTR (Click-Through Rate) — wskaźnik klikalności. CPA (Cost Per Acquisition)
+              — koszt pozyskania klienta. ROAS (Return on Ad Spend) — zwrot z wydatków
+              reklamowych. KPI (Key Performance Indicator) — kluczowy wskaźnik efektywności.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Słownik obejmuje też pojęcia z content marketingu: landing page (strona
+              lądowania), lead magnet (materiał przyciągający leady), call-to-action (CTA,
+              wezwanie do działania), konwersja (pożądana akcja użytkownika na stronie),
+              lejek sprzedażowy (customer journey od pierwszego kontaktu do zakupu).
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Podstawy marketingu internetowego — terminologia dla początkujących i zaawansowanych
+            </h2>
+            <p className="text-muted-foreground">
+              Nasz słownik marketingowy przydaje się zarówno osobom zaczynającym przygodę
+              z marketingiem online, jak i doświadczonym marketerom potrzebującym
+              szybkiego odświeżenia definicji. Regularnie aktualizujemy słownik
+              o nowe pojęcia pojawiające się w dynamicznie rozwijającym się świecie
+              marketingu cyfrowego.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

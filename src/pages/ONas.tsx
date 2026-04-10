@@ -99,8 +99,8 @@ export default function ONas() {
   return (
     <Layout>
       <SEOHead
-        title="O nas - Zespół Fotz Studio | Agencja Marketingowa Poznań"
-        description="Poznaj zespół Fotz Studio - agencji marketingowej nowej generacji. Pasjonaci marketingu z 12+ latami doświadczenia. Biuro: Plac Wolności 16, Poznań."
+        title="O Nas — Agencja Marketingowa Fotz Studio Poznań | Zespół i Misja"
+        description="Fotz Studio — agencja marketingowa z Poznania. Poznaj nasz zespół, wartości i misję. SEO, strony internetowe, social media i produkcja wideo dla firm z całej Polski."
         canonical="https://fotz.pl/o-nas"
         keywords="zespół marketingowy, agencja marketingowa Poznań, Fotz Studio, o nas, marketing team"
       />
@@ -353,6 +353,71 @@ export default function ONas() {
           </Button>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              O nas — Fotz Studio, agencja marketingowa z Poznania
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio to agencja marketingowa z Poznania, łącząca kreatywność
+              z analitycznym podejściem do marketingu. Tworzymy strony internetowe
+              i sklepy e-commerce, prowadzimy kampanie SEO i Google Ads, obsługujemy
+              social media i produkujemy wideo. Naszą misją jest pomaganie firmom
+              w budowaniu silnej obecności online i przekształcaniu internetu
+              w efektywne źródło klientów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Fotz Studio założone zostało przez pasjonatów marketingu i technologii.
+              Od pierwszego projektu stawiamy na jakość, transparentność i mierzalne
+              wyniki. Nie obiecujemy cudów — dostarczamy solidną, systematyczną pracę,
+              która przynosi trwałe efekty.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Nasz zespół — specjaliści SEO, designerzy, copywriterzy i producenci wideo
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Zespół Fotz Studio tworzą doświadczeni specjaliści: eksperci SEO
+              i pozycjonowania, web developerzy, graficy i designerzy UX, copywriterzy
+              i content marketerzy, specjaliści Google Ads i Meta Ads, social media
+              managerzy oraz operatorzy kamer i montażyści wideo. Każdy obszar obsługują
+              dedykowani eksperci, a nie osoby „od wszystkiego".
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Stawiamy na stały rozwój kompetencji — regularnie uczestniczymy
+              w branżowych konferencjach, kursach i certyfikacjach Google i Meta.
+              Nasi specjaliści posiadają certyfikaty Google Ads i Analytics,
+              co potwierdza najwyższy poziom kompetencji.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Dlaczego warto wybrać Fotz Studio jako agencję marketingową w Poznaniu?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Wyróżnia nas kilka rzeczy: podejście oparte na danych i ROI,
+              transparentne raportowanie wszystkich działań, elastyczne modele
+              współpracy (bez długich umów), kompleksowe usługi pod jednym dachem
+              i indywidualne podejście do każdego klienta.
+            </p>
+            <p className="text-muted-foreground">
+              Agencja marketingowa Fotz Studio obsługuje klientów z Poznania,
+              Warszawy, Wrocławia, Krakowa i całej Polski. Pracujemy zdalnie
+              z pełną efektywnością — spotkania online, digitalne narzędzia
+              współpracy i cotygodniowe raporty to nasz standard. Skontaktuj się
+              z nami i sprawdź, czy jesteśmy odpowiednim partnerem dla Twojej firmy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

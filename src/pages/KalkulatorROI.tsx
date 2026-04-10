@@ -59,8 +59,8 @@ const KalkulatorROI = () => {
   return (
     <>
       <SEOHead
-        title="Kalkulator ROI Reklam - Oblicz zwrot z inwestycji | Fotz Studio"
-        description="Oblicz szacowany zwrot z inwestycji w kampanie reklamowe Google Ads i Facebook Ads. Interaktywny kalkulator ROI dla Twojego biznesu."
+        title="Kalkulator ROI Reklam — Oblicz Zwrot z Inwestycji w Marketing | Fotz Studio"
+        description="Kalkulator ROI reklam online — oblicz zwrot z inwestycji w kampanie Google Ads, Meta Ads i SEO. Darmowe narzędzie do planowania budżetu marketingowego. Fotz Studio."
         canonical="https://fotz.pl/kalkulator-roi"
       />
       <BreadcrumbSchema 
@@ -315,6 +315,65 @@ const KalkulatorROI = () => {
             </motion.div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Kalkulator ROI reklam — oblicz zwrot z inwestycji w marketing online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              ROI (Return on Investment) z kampanii marketingowych to kluczowy wskaźnik
+              decydujący o efektywności działań. Kalkulator ROI reklam Fotz Studio
+              pozwala oszacować potencjalny zwrot z inwestycji w kampanie Google Ads,
+              Meta Ads lub SEO na podstawie Twoich danych: budżetu, współczynnika
+              konwersji, wartości klienta i kosztu pozyskania.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Planowanie budżetu marketingowego bez analizy ROI to jak latanie na oślep.
+              Nasz kalkulator pomaga firmom podejmować decyzje oparte na danych,
+              a nie intuicji. Sprawdź, ile możesz zarobić inwestując w marketing online.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak obliczyć ROI kampanii Google Ads i Meta Ads? Wzór i przykłady
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              ROI = (Przychód z kampanii - Koszt kampanii) / Koszt kampanii × 100%.
+              Przykład: budżet kampanii 2000 zł, 50 konwersji, średnia wartość
+              klienta 200 zł = przychód 10 000 zł. ROI = (10 000 - 2000) / 2000 × 100%
+              = 400%. Dobry ROI dla kampanii Google Ads to 300-600%, dla SEO
+              (licząc długoterminowo) często powyżej 1000%.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              ROAS (Return on Ad Spend) to uproszczona wersja ROI używana
+              w e-commerce: ROAS = Przychód / Wydatki reklamowe. Dobry ROAS
+              dla Google Shopping to 4-8x (400-800%), dla Meta Ads 3-6x (300-600%).
+              Fotz Studio optymalizuje kampanie pod maksymalizację ROAS przy
+              utrzymaniu docelowego CPA (Cost per Acquisition).
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              ROI z SEO vs. reklamy płatne — co się bardziej opłaca?
+            </h2>
+            <p className="text-muted-foreground">
+              SEO ma wyższy ROI długoterminowo — raz osiągnięte pozycje generują
+              ruch bez stałych kosztów. Reklamy płatne mają natychmiastowy efekt,
+              ale kończą się wraz z budżetem. Optymalna strategia łączy SEO
+              (długoterminowe), PPC (szybkie wyniki) i email marketing (retencja).
+              Skontaktuj się z Fotz Studio, by zaplanować strategię marketingową
+              z realnym ROI dla Twojej firmy.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

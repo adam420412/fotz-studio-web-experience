@@ -791,8 +791,8 @@ DANE KONTAKTOWE:
   return (
     <Layout>
       <SEOHead
-        title="Generator Briefu Projektowego | Fotz Studio"
-        description="Stwórz profesjonalny brief projektowy w 5 minut. Wieloetapowy formularz pomoże Ci określić cele, budżet i oczekiwania dla Twojego projektu marketingowego."
+        title="Generator Briefu Projektowego — Stwórz Brief Marketingowy Online | Fotz Studio"
+        description="Generator briefu projektowego — stwórz profesjonalny brief marketingowy, brief strony internetowej lub kampanii reklamowej online. Darmowe narzędzie Fotz Studio."
         canonical="https://fotz.pl/generator-briefu"
         keywords="generator briefu, brief projektowy, brief marketingowy, brief online"
       />
@@ -880,6 +880,66 @@ DANE KONTAKTOWE:
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Generator briefu projektowego — stwórz profesjonalny brief marketingowy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Brief projektowy to dokument opisujący wymagania i cele projektu
+              marketingowego — jest podstawą każdej udanej współpracy z agencją.
+              Generator briefu Fotz Studio prowadzi przez krok po kroku, zadając
+              właściwe pytania o Twoją firmę, grupę docelową, cele, konkurencję
+              i budżet. Na końcu otrzymujesz gotowy brief w formacie PDF gotowy
+              do wysłania do agencji.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dobry brief skraca czas realizacji projektu i zmniejsza liczbę poprawek.
+              Gdy agencja dokładnie rozumie Twoje oczekiwania, może skupić się
+              na realizacji zamiast doprecyzowywaniu wymagań. Nasz generator
+              pomaga zebrać wszystkie niezbędne informacje w jednym miejscu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Brief strony internetowej, kampanii reklamowej i identyfikacji wizualnej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Generuj briefy dla różnych typów projektów: brief strony internetowej
+              (cel strony, grupy docelowe, funkcjonalności, styl wizualny), brief
+              kampanii reklamowej (budżet, cele, grupy docelowe, przekaz), brief
+              identyfikacji wizualnej (wartości marki, grupy docelowe, preferencje
+              stylistyczne) i brief content marketingu (tematy, ton of voice, kanały).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Wypełniony brief to nie tylko narzędzie komunikacji z agencją —
+              to okazja do przemyślenia celów i strategii własnego projektu.
+              Wielu klientów odkrywa nowe aspekty swoich potrzeb właśnie przy
+              okazji wypełniania briefu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak napisać brief marketingowy? Elementy dobrego briefu
+            </h2>
+            <p className="text-muted-foreground">
+              Dobry brief marketingowy zawiera: opis firmy i produktu/usługi,
+              grupę docelową i persony klientów, cel projektu (mierzalne KPI),
+              analizę konkurencji, budżet i timeline, wymagania techniczne
+              i preferencje stylistyczne oraz prawa i ograniczenia. Nasz generator
+              przeprowadzi Cię przez wszystkie te elementy i stworzy profesjonalny
+              dokument gotowy do wysyłki.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

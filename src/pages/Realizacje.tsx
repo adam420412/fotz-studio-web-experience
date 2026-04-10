@@ -410,8 +410,8 @@ const Realizacje = () => {
   return (
     <Layout>
       <SEOHead
-        title="Portfolio i Realizacje - Case Studies | Fotz Studio"
-        description="Ponad 600 zrealizowanych projektów: strony internetowe, e-commerce, kampanie marketingowe, fotografia i produkcja video. Zobacz nasze case studies."
+        title="Realizacje i Portfolio — Case Studies Projektów Marketingowych | Fotz Studio"
+        description="Portfolio Fotz Studio — realizacje stron internetowych, kampanii SEO, social media i produkcji wideo. Case studies z wynikami dla klientów z różnych branż."
         canonical="https://fotz.pl/realizacje"
         keywords="portfolio, realizacje, case studies, strony internetowe przykłady, projekty marketingowe, fotografia eventowa, wizualizacje 3D"
       />
@@ -820,6 +820,62 @@ const Realizacje = () => {
         onClose={() => setLightboxOpen(false)}
         onNavigate={setLightboxIndex}
       />
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Nasze realizacje — portfolio projektów marketingowych i SEO
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Portfolio Fotz Studio to zbiór zrealizowanych projektów marketingowych
+              dla firm z różnych branż i miast Polski. Tworzymy strony internetowe,
+              prowadzimy kampanie SEO i Google Ads, obsługujemy social media i produkujemy
+              wideo. Nasze realizacje pokazują nie tylko efekty wizualne, ale przede
+              wszystkim mierzalne wyniki biznesowe: wzrost ruchu, więcej zapytań
+              i wyższy przychód klientów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Wierzymy, że najlepszym dowodem jakości pracy jest efekt. Dlatego
+              w naszych case studies dzielimy się konkretnymi liczbami — wzrost
+              ruchu organicznego o X%, obniżenie kosztu kliknięcia o Y%,
+              wzrost sprzedaży z kanałów digitalowych o Z%.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Case studies SEO, stron internetowych i kampanii reklamowych
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nasze case studies obejmują projekty pozycjonowania stron w Google,
+              tworzenia nowych stron internetowych i sklepów e-commerce, kampanii
+              reklamowych Google Ads i Meta Ads, zarządzania profilami social media
+              oraz produkcji wideo wizerunkowych i reklamowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Pracujemy z firmami lokalnymi z Poznania i Wielkopolski, jak i z klientami
+              z całej Polski. Obsługujemy zarówno małe firmy, jak i duże przedsiębiorstwa
+              i instytucje. Każdy projekt traktujemy indywidualnie z pełnym zaangażowaniem.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Projekty stron internetowych, identyfikacji wizualnej i marketingu — sprawdź nasze prace
+            </h2>
+            <p className="text-muted-foreground">
+              Zapraszamy do zapoznania się z naszymi realizacjami. Jeśli masz pytania
+              dotyczące konkretnego projektu lub chcesz osiągnąć podobne efekty
+              dla swojej firmy — skontaktuj się z nami. Bezpłatna konsultacja
+              i analiza potrzeb bez zobowiązań.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };

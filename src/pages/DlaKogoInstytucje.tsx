@@ -121,8 +121,8 @@ export default function DlaKogoInstytucje() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla instytucji i wydarzeń | Eventy | Fotz Studio"
-        description="Wspieramy instytucje kultury i organizatorów wydarzeń. Marketing eventowy, promocja biletów, dokumentacja foto/video. Doświadczenie z Enea Stadion."
+        title="Marketing dla Instytucji i Wydarzeń — Promocja Eventów i Kultury | Fotz Studio"
+        description="Marketing dla instytucji kultury, organizacji i wydarzeń — promocja eventów, reklama imprez, social media i produkcja wideo. Fotz Studio obsługuje instytucje publiczne i NGO."
         canonical="https://fotz.pl/dla-kogo/instytucje"
         keywords="marketing eventowy, promocja wydarzeń, instytucje kultury, marketing kulturalny"
       />
@@ -491,6 +491,67 @@ export default function DlaKogoInstytucje() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Marketing dla instytucji i wydarzeń — promocja eventów, kultury i NGO
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Marketing dla instytucji kultury, organizacji pozarządowych i organizatorów
+              wydarzeń to nasza specjalność. Fotz Studio pomaga teatrom, muzeom, galeriom,
+              fundacjom i organizatorom eventów dotrzeć do szerokiej publiczności.
+              Kampanie promocyjne wydarzeń, social media marketing i produkcja wideo
+              dla instytucji — z rozumieniem specyfiki sektora publicznego i NGO.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Instytucje mają inne potrzeby niż komercyjne firmy — często działają
+              na ograniczonych budżetach, z procedurami przetargowymi i koniecznością
+              raportowania do organów nadzorczych. Rozumiemy tę specyfikę i dostosowujemy
+              nasze usługi do realiów sektora publicznego i pozarządowego.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Promocja wydarzeń i eventów — marketing online i offline dla imprez masowych
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Promocja wydarzenia wymaga spójnej strategii obejmującej wiele kanałów:
+              social media (Facebook Events, Instagram, TikTok), płatne kampanie
+              Google i Meta z targetowaniem na lokalną publiczność, relacje z mediami,
+              email marketing do bazy uczestników i content marketing budujący anticipation.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Produkcja wideo dla eventów — zapowiedzi, relacje live, aftermovie —
+              buduje trwałe archiwum i pomaga w promocji kolejnych edycji. Dokumentacja
+              fotograficzna i wideo z wydarzeń to materiał marketingowy, który pracuje latami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Social media dla instytucji — budowanie społeczności i angażowanie odbiorców
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Instytucje kultury i organizacje pozarządowe mają wyjątkową misję —
+              social media to dla nich narzędzie budowania społeczności wokół wartości.
+              Zarządzamy profilami instytucji na Facebooku, Instagramie i LinkedInie,
+              tworząc treści edukacyjne, relacje z wydarzeń i angażujące kampanie,
+              które przyciągają nowych odbiorców.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z Fotz Studio, by omówić współpracę marketingową dla
+              Twojej instytucji lub następnego wydarzenia. Ofertę dostosowujemy
+              do specyfiki budżetów publicznych i pozarządowych.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }
