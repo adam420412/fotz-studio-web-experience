@@ -84,8 +84,9 @@ export function LazyVideo({
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           
           {/* Play button */}
-          <button 
+          <button
             onClick={handlePlay}
+            aria-label="Odtwórz film"
             className="absolute inset-0 flex items-center justify-center group"
           >
             <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/90 flex items-center justify-center shadow-2xl shadow-primary/30 group-hover:scale-110 transition-transform">

@@ -46,8 +46,9 @@ export function ExitIntentPopup() {
       {/* Popup */}
       <div className="relative w-full max-w-lg bg-card border border-border rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-300">
         {/* Close button */}
-        <button 
+        <button
           onClick={handleClose}
+          aria-label="Zamknij okno"
           className="absolute top-4 right-4 p-2 rounded-full hover:bg-secondary transition-colors z-10"
         >
           <X className="w-5 h-5 text-muted-foreground" />

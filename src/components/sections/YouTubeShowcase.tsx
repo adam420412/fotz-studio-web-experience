@@ -130,6 +130,7 @@ function VideoLightbox({ video, onClose, onPrev, onNext, hasPrev, hasNext }: {
     >
       <button
         onClick={onClose}
+        aria-label="Zamknij lightbox"
         className="absolute top-4 right-4 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-50"
       >
         <X className="w-6 h-6 text-white" />
@@ -138,6 +139,7 @@ function VideoLightbox({ video, onClose, onPrev, onNext, hasPrev, hasNext }: {
       {hasPrev && (
         <button
           onClick={(e) => { e.stopPropagation(); onPrev(); }}
+          aria-label="Poprzedni film"
           className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-50"
         >
           <ChevronLeft className="w-6 h-6 text-white" />
@@ -146,6 +148,7 @@ function VideoLightbox({ video, onClose, onPrev, onNext, hasPrev, hasNext }: {
       {hasNext && (
         <button
           onClick={(e) => { e.stopPropagation(); onNext(); }}
+          aria-label="Następny film"
           className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors z-50"
         >
           <ChevronRight className="w-6 h-6 text-white" />

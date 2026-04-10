@@ -148,6 +148,7 @@ const StronyInternetoweZielonaGora = lazy(() => import("./pages/StronyInternetow
 const StronyInternetoweElblag = lazy(() => import("./pages/StronyInternetoweElblag"));
 const StronyInternetoweLegnica = lazy(() => import("./pages/StronyInternetoweLegnica"));
 const StronyInternetoweKalisz = lazy(() => import("./pages/StronyInternetoweKalisz"));
+const StronyInternetoweGorzow = lazy(() => import("./pages/StronyInternetoweGorzow"));
 const StronyInternetowe = lazy(() => import("./pages/StronyInternetowe"));
 
 // Service pages
@@ -341,6 +342,7 @@ const App = () => (
                 <Route path="/uslugi/strony-internetowe/elblag" element={<StronyInternetoweElblag />} />
                 <Route path="/uslugi/strony-internetowe/legnica" element={<StronyInternetoweLegnica />} />
                 <Route path="/uslugi/strony-internetowe/kalisz" element={<StronyInternetoweKalisz />} />
+                <Route path="/uslugi/strony-internetowe/gorzow" element={<StronyInternetoweGorzow />} />
                 <Route path="/uslugi/branding" element={<IdentyfikacjaWizualna />} />
                 <Route path="/uslugi/produkcja-video" element={<SpotyReklamowe />} />
                 <Route path="/uslugi/fotografia" element={<FotografPoznan />} />

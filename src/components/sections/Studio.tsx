@@ -332,9 +332,9 @@ function FeatureCard({ feature, index }: { feature: typeof features[0]; index: n
           <feature.icon className="w-5 h-5 text-white" />
         </motion.div>
         
-        <h4 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
+        <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
           {feature.title}
-        </h4>
+        </h3>
         <p className="text-xs text-foreground/60">
           {feature.description}
         </p>
