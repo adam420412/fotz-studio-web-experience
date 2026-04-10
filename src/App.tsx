@@ -66,6 +66,7 @@ const BlogPsychologiaCen = lazy(() => import("./pages/BlogPsychologiaCen"));
 const BlogCopywritingLanding = lazy(() => import("./pages/BlogCopywritingLanding"));
 const BlogArticleDynamic = lazy(() => import("./pages/BlogArticleDynamic"));
 const BlogSprzedazOnline = lazy(() => import("./pages/BlogSprzedazOnline"));
+const BlogBriefMarketingowy = lazy(() => import("./pages/BlogBriefMarketingowy"));
 
 // DlaKogo pages
 const DlaKogo = lazy(() => import("./pages/DlaKogo"));
@@ -160,6 +161,9 @@ const FotografiaZDrona = lazy(() => import("./pages/FotografiaZDrona"));
 const PozycjonowanieStronPoznan = lazy(() => import("./pages/PozycjonowanieStronPoznan"));
 const AgencjaSEOPoznan = lazy(() => import("./pages/AgencjaSEOPoznan"));
 const SklepyInternetowePoznan = lazy(() => import("./pages/SklepyInternetowePoznan"));
+const SklepyInternetoweWarszawa = lazy(() => import("./pages/SklepyInternetoweWarszawa"));
+const SklepyInternetoweKrakow = lazy(() => import("./pages/SklepyInternetoweKrakow"));
+const AgencjaMarketingowaWarszawa = lazy(() => import("./pages/AgencjaMarketingowaWarszawa"));
 const AgencjaKreaTywnaPoznan = lazy(() => import("./pages/AgencjaKreaTywnaPoznan"));
 const Pozycjonowanie = lazy(() => import("./pages/Pozycjonowanie"));
 const PozycjonowanieGoogleMaps = lazy(() => import("./pages/PozycjonowanieGoogleMaps"));
@@ -286,6 +290,7 @@ const App = () => (
                 <Route path="/blog/marketing-b2b-vs-b2c" element={<BlogB2BvsB2C />} />
                 <Route path="/blog/psychologia-cen" element={<BlogPsychologiaCen />} />
                 <Route path="/blog/jak-zwiekszyc-sprzedaz-przez-internet" element={<BlogSprzedazOnline />} />
+                <Route path="/blog/jak-napisac-brief-marketingowy" element={<BlogBriefMarketingowy />} />
 
                 {/* Blog → cluster redirects MUST be BEFORE the catch-all /blog/:slug */}
                 <Route path="/blog/seo-ecommerce" element={<Redirect301 to="/seo/ecommerce" />} />
@@ -410,6 +415,9 @@ const App = () => (
                 <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
                 <Route path="/agencja-seo-poznan" element={<AgencjaSEOPoznan />} />
                 <Route path="/uslugi/sklepy-internetowe/poznan" element={<SklepyInternetowePoznan />} />
+                <Route path="/uslugi/sklepy-internetowe/warszawa" element={<SklepyInternetoweWarszawa />} />
+                <Route path="/uslugi/sklepy-internetowe/krakow" element={<SklepyInternetoweKrakow />} />
+                <Route path="/agencja-marketingowa-warszawa" element={<AgencjaMarketingowaWarszawa />} />
                 <Route path="/agencja-kreatywna-poznan" element={<AgencjaKreaTywnaPoznan />} />
                 <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
                 <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
