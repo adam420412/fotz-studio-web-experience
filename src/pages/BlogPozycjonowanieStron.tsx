@@ -41,13 +41,13 @@ export default function BlogPozycjonowanieStron() {
         title="Pozycjonowanie Stron Internetowych — Kompletny Poradnik SEO 2026 | Fotz Studio"
         description="Jak pozycjonować stronę w Google? Poznaj sprawdzone techniki SEO: optymalizacja on-page, link building, content marketing. Poradnik krok po kroku."
         ogType="article"
-        canonical="https://fotz.pl/blog/pozycjonowanie-stron-internetowych"
+        canonical="https://fotz.pl/blog/pozycjonowanie-stron-internetowych-poradnik"
         keywords="pozycjonowanie stron, SEO, pozycjonowanie stron internetowych, optymalizacja SEO, jak pozycjonować stronę, link building, SEO poradnik"
       />
       <ArticleSchema
         title="Pozycjonowanie Stron Internetowych — Kompletny Poradnik SEO 2026"
         description="Jak pozycjonować stronę w Google? Poznaj sprawdzone techniki SEO: optymalizacja on-page, off-page, SEO techniczne i content marketing."
-        url="https://fotz.pl/blog/pozycjonowanie-stron-internetowych"
+        url="https://fotz.pl/blog/pozycjonowanie-stron-internetowych-poradnik"
         datePublished="2026-04-10"
         dateModified="2026-04-10"
         author="Fotz Studio"
@@ -56,7 +56,7 @@ export default function BlogPozycjonowanieStron() {
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Pozycjonowanie Stron Internetowych", url: "https://fotz.pl/blog/pozycjonowanie-stron-internetowych" },
+          { name: "Pozycjonowanie Stron Internetowych", url: "https://fotz.pl/blog/pozycjonowanie-stron-internetowych-poradnik" },
         ]}
       />
       <FAQSchema items={faqItems} />

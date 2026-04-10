@@ -43,8 +43,6 @@ const CaseStudyLauvjah = lazy(() => import("./pages/CaseStudyLauvjah"));
 
 // Blog posts - grouped
 const BlogKosztStrony = lazy(() => import("./pages/BlogKosztStrony"));
-const BlogWordPressVsCustom = lazy(() => import("./pages/BlogWordPressVsCustom"));
-const BlogAudytStrony = lazy(() => import("./pages/BlogAudytStrony"));
 const BlogKampaniaReklamowa = lazy(() => import("./pages/BlogKampaniaReklamowa"));
 const BlogAIMarketing = lazy(() => import("./pages/BlogAIMarketing"));
 const BlogGoogleVsFacebook = lazy(() => import("./pages/BlogGoogleVsFacebook"));
@@ -292,8 +290,6 @@ const App = () => (
                 <Route path="/o-nas" element={<ONas />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/ile-kosztuje-strona-internetowa" element={<BlogKosztStrony />} />
-                <Route path="/blog/wordpress-vs-strona-na-zamowienie" element={<BlogWordPressVsCustom />} />
-                <Route path="/blog/audyt-strony-internetowej" element={<BlogAudytStrony />} />
                 <Route path="/blog/ai-w-marketingu-msp-2025" element={<BlogAIMarketing />} />
                 <Route path="/blog/jak-stworzyc-landing-page" element={<BlogLandingPage />} />
                 <Route path="/blog/branding-dla-startupow" element={<BlogBrandingStartupy />} />
