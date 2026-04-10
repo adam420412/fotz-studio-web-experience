@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -70,10 +70,15 @@ const KalkulatorROI = () => {
           { name: "Kalkulator ROI", url: "https://fotz.pl/kalkulator-roi" }
         ]}
       />
-      <ServiceSchema 
+      <ServiceSchema
         name="Kalkulator ROI kampanii reklamowych"
         description="Interaktywny kalkulator zwrotu z inwestycji dla kampanii Google Ads i Facebook Ads."
         provider="Fotz Studio"
+      />
+      <WebPageSchema
+        title="Kalkulator ROI Kampanii Reklamowych — Fotz Studio"
+        description="Kalkulator ROI reklam online — oblicz zwrot z inwestycji w kampanie Google Ads, Meta Ads i SEO."
+        url="https://fotz.pl/kalkulator-roi"
       />
       <Layout>
         {/* Hero */}

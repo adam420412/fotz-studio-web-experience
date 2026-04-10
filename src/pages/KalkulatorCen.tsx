@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -308,10 +308,15 @@ export default function KalkulatorCen() {
           { name: "Kalkulator cen", url: "https://fotz.pl/kalkulator-cen" }
         ]}
       />
-      <ServiceSchema 
+      <ServiceSchema
         name="Kalkulator cen usług marketingowych"
         description="Interaktywny kalkulator wyceny usług marketingowych - strony WWW, social media, kampanie reklamowe."
         provider="Fotz Studio"
+      />
+      <WebPageSchema
+        title="Kalkulator Cen Usług Marketingowych — Fotz Studio"
+        description="Interaktywny kalkulator wyceny usług marketingowych — oblicz koszt SEO, strony internetowej, kampanii Google Ads i social media."
+        url="https://fotz.pl/kalkulator-cen"
       />
       <Layout>
         <TooltipProvider>

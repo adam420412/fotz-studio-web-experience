@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Layout } from "@/components/layout/Layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { WebPageSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -790,6 +791,15 @@ export default function Cennik() {
         canonical="https://fotz.pl/cennik"
         keywords="cennik marketing, cennik usług, konfigurator cen, strony internetowe cena, social media cena, SEO cena"
       />
+      <WebPageSchema
+        title="Cennik Usług Marketingowych — Fotz Studio"
+        description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo."
+        url="https://fotz.pl/cennik"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Cennik", url: "https://fotz.pl/cennik" },
+      ]} />
 
       {/* Hero */}
       <section className="relative pt-32 pb-8 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">
