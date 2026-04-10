@@ -165,6 +165,7 @@ const StronyInternetoweLegnica = lazy(() => import("./pages/StronyInternetoweLeg
 const StronyInternetoweKalisz = lazy(() => import("./pages/StronyInternetoweKalisz"));
 const StronyInternetoweGorzow = lazy(() => import("./pages/StronyInternetoweGorzow"));
 const StronyInternetowe = lazy(() => import("./pages/StronyInternetowe"));
+const UslugiLandingPage = lazy(() => import("./pages/UslugiLandingPage"));
 
 // Service pages
 const SocialMediaPoznan = lazy(() => import("./pages/SocialMediaPoznan"));
@@ -343,6 +344,7 @@ const App = () => (
                 <Route path="/poradniki" element={<Poradniki />} />
                 {/* Uslugi cluster */}
                 <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />
+                <Route path="/uslugi/landing-page" element={<UslugiLandingPage />} />
                 <Route path="/uslugi/strony-internetowe/ecommerce" element={<EcommerceTworzenie />} />
                 <Route path="/uslugi/strony-internetowe/poznan" element={<StronyInternetowePoznan />} />
                 <Route path="/uslugi/strony-internetowe/warszawa" element={<StronyInternetoweWarszawa />} />
