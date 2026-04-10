@@ -6,6 +6,7 @@ import { ArrowLeft, Calendar, Clock, User, ChevronRight, MapPin } from "lucide-r
 import { motion } from "framer-motion";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
+import { FAQSchema } from "@/components/seo/StructuredData";
 
 const cities = [
   { name: "Poznań", path: "/uslugi/strony-internetowe/poznan", active: true },
@@ -20,6 +21,29 @@ const cities = [
   { name: "Bydgoszcz", path: "/uslugi/strony-internetowe/bydgoszcz", active: true },
   { name: "Białystok", path: "/uslugi/strony-internetowe/bialystok", active: false },
   { name: "Rzeszów", path: "/uslugi/strony-internetowe/rzeszow", active: false },
+];
+
+const faqItems = [
+  {
+    question: "Ile kosztuje prosta strona internetowa dla firmy?",
+    answer: "Prosta strona firmowa (5-10 podstron) kosztuje od 2 000 do 8 000 PLN netto. Cena zależy od liczby podstron, funkcji (formularz, blog, rezerwacje) i stopnia personalizacji projektu graficznego."
+  },
+  {
+    question: "Ile kosztuje sklep internetowy?",
+    answer: "Sklep internetowy na WooCommerce lub Shopify to wydatek od 5 000 do 25 000 PLN. Kluczowe czynniki cenotwórcze to liczba produktów, integracje płatności, automatyzacja zamówień i projekt UI/UX."
+  },
+  {
+    question: "Czy warto płacić za droższe tworzenie stron?",
+    answer: "Tak — tańsze strony często nie są zoptymalizowane pod SEO, mają wolne ładowanie i brak responsywności. Dobra strona to inwestycja, która zwraca się przez wiele lat poprzez pozyskiwanie klientów z Google."
+  },
+  {
+    question: "Ile kosztuje utrzymanie strony internetowej miesięcznie?",
+    answer: "Hosting i domena to koszt 50-200 PLN/miesiąc. Do tego dochodzi obsługa techniczna (aktualizacje, bezpieczeństwo) — 200-500 PLN/miesiąc. Całościowy koszt utrzymania to zwykle 300-800 PLN miesięcznie."
+  },
+  {
+    question: "Jak długo trwa tworzenie strony internetowej?",
+    answer: "Prosta strona firmowa: 3-6 tygodni. Rozbudowany serwis z funkcjami niestandardowymi: 2-4 miesiące. Sklep internetowy: 4-8 tygodni. Czas zależy od szybkości dostarczonego contentu."
+  },
 ];
 
 const BlogKosztStrony = () => {
@@ -94,6 +118,7 @@ const BlogKosztStrony = () => {
         ]}
       />
 
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Breadcrumb */}
         <section className="pt-32 pb-4 bg-background">

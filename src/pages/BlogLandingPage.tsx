@@ -3,8 +3,31 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Target, Zap, CheckCircle2, XCircle, MousePointer, BarChart3, Eye, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema} from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Czym różni się landing page od zwykłej strony internetowej?",
+    answer: "Landing page ma jeden cel konwersji (zapis, zakup, kontakt) i nie zawiera rozbudowanego menu. Strona firmowa prezentuje całą ofertę. LP konwertuje 3-5x lepiej od ogólnych stron dla ruchu z reklam."
+  },
+  {
+    question: "Ile kosztuje stworzenie landing page?",
+    answer: "Landing page kosztuje od 1 500 do 6 000 PLN netto. Cena zależy od stopnia personalizacji, animacji, integracji z CRM i systemu A/B testów. Dobry LP zwraca się już przy kilku pozyskanych klientach."
+  },
+  {
+    question: "Jak mierzyć skuteczność landing page?",
+    answer: "Główna metryka to współczynnik konwersji (CR) — stosunek odwiedzin do wypełnionych formularzy/zakupów. Dobry LP osiąga CR 5-15%. Monitoruj też czas na stronie, scroll depth i heatmapy (np. Hotjar)."
+  },
+  {
+    question: "Co musi zawierać skuteczny landing page?",
+    answer: "Kluczowe elementy to: mocny nagłówek z USP, czytelne CTA, social proof (opinie, logo klientów), sekcja z korzyściami, formularz lub przycisk zakupowy. Ważna jest też szybkość ładowania — każda sekunda opóźnienia to -7% konwersji."
+  },
+  {
+    question: "Czy landing page pomaga w pozycjonowaniu?",
+    answer: "Tak, jeśli jest zoptymalizowany pod jedno słowo kluczowe z odpowiednią treścią i nagłówkami H1/H2. LP łączący reklamy Google Ads z SEO to najskuteczniejsza kombinacja do generowania leadów."
+  },
+];
 
 const BlogLandingPage = () => {
   return (
@@ -31,6 +54,7 @@ const BlogLandingPage = () => {
           { name: "Jak stworzyć landing page", url: "https://fotz.pl/blog/jak-stworzyc-landing-page" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
