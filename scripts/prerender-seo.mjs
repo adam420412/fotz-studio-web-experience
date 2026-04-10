@@ -145,15 +145,21 @@ function findComponentFile(componentName) {
  * Inject meta tags into the HTML template
  */
 function injectMeta(html, meta) {
-  // Step 1: Remove existing default tags that will be replaced with page-specific ones.
-  // This prevents duplicate canonical/title/description tags in the prerendered output.
-  html = html.replace(/<title>[^<]*<\/title>/g, '');
-  html = html.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
-  html = html.replace(/<meta\s+name="description"[^>]*\/?>/gi, '');
-  html = html.replace(/<meta\s+name="keywords"[^>]*\/?>/gi, '');
-  html = html.replace(/<meta\s+name="robots"[^>]*\/?>/gi, '');
-  html = html.replace(/<meta\s+property="og:[^>]*\/?>/gi, '');
-  html = html.replace(/<meta\s+name="twitter:[^>]*\/?>/gi, '');
+  // Step 1: Remove ALL existing tags that will be replaced with page-specific ones.
+  // Run replacements TWICE to handle the case where the template itself was
+  // already prerendered (e.g. dist/index.html modified by a previous run).
+  // This ensures idempotency no matter how many times the script is re-run.
+  for (let pass = 0; pass < 2; pass++) {
+    html = html.replace(/<title>[^<]*<\/title>/g, '');
+    html = html.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="description"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="keywords"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="robots"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+property="og:[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="twitter:[^>]*\/?>/gi, '');
+    // Also strip the prerendered comment block to avoid accumulation
+    html = html.replace(/\s*<!-- Prerendered SEO meta -->\s*/g, '\n    ');
+  }
 
   // Step 2: Build the full set of page-specific meta tags
   const metaTags = [
@@ -176,10 +182,25 @@ function injectMeta(html, meta) {
   ].filter(Boolean).join('\n    ');
 
   // Step 3: Insert after <meta name="author" ...> line
-  return html.replace(
+  html = html.replace(
     '<meta name="author" content="Fotz Studio" />',
     `<meta name="author" content="Fotz Studio" />\n    <!-- Prerendered SEO meta -->\n    ${metaTags}`
   );
+
+  // Step 4: Inject a visually-hidden semantic section into <body> so crawlers that
+  // don't execute JavaScript still see an H1 and descriptive text (fixes "Thin Content"
+  // and "Missing H1" issues on all pages). The section is hidden via inline style so it
+  // doesn't affect the visual design — React replaces #root on load.
+  // Strip any previously injected SEO section before re-injecting (idempotent).
+  html = html.replace(/<section\s+id="seo-prerender"[^>]*>[\s\S]*?<\/section>\s*/g, '');
+  const seoSection = `<section id="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;pointer-events:none" aria-hidden="true">
+      <h1>${meta.title.replace(/ \| Fotz.*$/, '')}</h1>
+      <p>${meta.description}</p>
+    </section>
+    `;
+  html = html.replace('<div id="root">', seoSection + '<div id="root">');
+
+  return html;
 }
 
 // Main
