@@ -172,10 +172,10 @@ const StronyInternetowePoznan = () => {
   const introContent = {
     title: "Tworzenie stron www dla firm z Poznania",
     paragraphs: [
-      "Fotz to agencja z Wielkopolski. Projektujemy witryny internetowe dla poznańskich firm, a także świadczymy nasze usługi zdalnie! Łączymy kompleksowe podejście z projektowaniem responsywnych stron internetowych.",
-      "Nasza agencja interaktywna prowadzi działania z zakresu projektowania, wdrażania i optymalizacji. Oferujemy również usługę tworzenia sklepów internetowych.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
-      "Poznań to jedno z najszybciej rozwijających się centrów biznesowych w Polsce – miasto innowacji, silnego sektora MŚP i prężnej sceny startupowej. Jako lokalna agencja z Poznania rozumiemy tutejszy rynek od podszewki i tworzymy strony, które realnie wspierają wzrost poznańskich firm."
+      "Fotz Studio to agencja z Wielkopolski specjalizująca się w tworzeniu stron internetowych dla firm z Poznania i okolic. Projektujemy responsywne witryny www, sklepy e-commerce i landing page — lokalnie i zdalnie.",
+      "Strony internetowe realizujemy od A do Z: brief, projekt graficzny w Figma, kodowanie (WordPress, Webflow, React), wdrożenie i opieka techniczna. Nie ma u nas podwykonawców — całość realizuje nasz własny zespół z Poznania.",
+      "Każda strona www jest tworzona z myślą o użytkowniku i zoptymalizowana pod wyszukiwarki — SEO w standardzie, Core Web Vitals w zielonym, schema markup LocalBusiness w cenie projektu.",
+      "Poznań to jedno z najszybciej rozwijających się centrów biznesowych w Polsce — miasto innowacji, silnego sektora MŚP i prężnej sceny startupowej. Jako lokalna agencja z Poznania rozumiemy tutejszy rynek od podszewki i tworzymy strony, które realnie wspierają wzrost poznańskich firm."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -564,92 +564,55 @@ const StronyInternetowePoznan = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
+            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Tworzenie stron www Poznań — strony internetowe dla firm z Poznania
+              Strony internetowe Poznań — dlaczego lokalna agencja robi różnicę?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Tworzenie stron www Poznań to nasza specjalność. Budujemy strony internetowe dla firm z Poznania,
-              które chcą zaprezentować centrum Wielkopolski i targów z najlepszej strony i pozyskiwać klientów online.
-              Stron to nasza pasja — każdy projekt realizujemy z zaangażowaniem, łącząc estetykę
-              z funkcjonalnością i skutecznością w wynikach wyszukiwania Google.
+              Tworzenie stron internetowych dla firm z Poznania to nasza codzienna praca od ponad 5 lat. Znamy poznański rynek — wiemy, jakie oczekiwania mają klienci z Jeżyc, Wildy czy Nowego Miasta, rozumiemy specyfikę lokalnych branż (od gastronomii na Starym Rynku po firmy logistyczne z Franowa) i jesteśmy dostępni na spotkanie stacjonarne w ciągu 24 godzin. Zdalna współpraca jest oczywiście możliwa, jednak poznańscy klienci szczególnie cenią możliwość bezpośredniego kontaktu z naszym zespołem.
             </p>
             <p className="text-muted-foreground mb-6">
-              Nasze doświadczenie w projektowaniu stron obejmuje setki realizacji dla różnych branż.
-              Strony internetowe dla klientów z Poznania tworzymy zgodnie z najlepszymi praktykami SEO,
-              UX i dostępności. Miasto Poznań to dynamiczne centrum biznesowe — Twoja strona www
-              powinna dotrzymywać kroku tej dynamice.
+              Poznań jest jednym z najszybciej rozwijających się centrów biznesowych w Polsce — tu działa ponad 90 000 firm, a konkurencja online jest intensywna. Profesjonalna strona internetowa to dziś nie opcja, lecz warunek wejścia na rynek. Nasze strony internetowe dla firm z Poznania są projektowane z myślą o widoczności w Google, szybkości działania i konwersji — bo samo ładnie wyglądające www bez klientów to strata inwestycji.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Projektowanie stron internetowych Poznań — www dla Twojej firmy
+              Projektowanie stron internetowych Poznań — jak wygląda nasz proces?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projektowanie stron internetowych Poznań to kompleksowy proces, który obejmuje
-              strategię, projekt graficzny, kodowanie i optymalizację SEO. Strona www dla Twojej firmy
-              powinna nie tylko wyglądać profesjonalnie, ale przede wszystkim konwertować
-              odwiedzających w klientów.
+              Każde zlecenie na tworzenie stron www dla poznańskiej firmy zaczynamy od bezpłatnej konsultacji — telefonicznie, przez Teams lub osobiście w Poznaniu. Na spotkaniu omawiamy cele biznesowe, grupę docelową, budżet i harmonogram. Następnie przygotowujemy ofertę i brief projektowy.
             </p>
             <p className="text-muted-foreground mb-6">
-              Tworząc stronę internetową z wykorzystaniem nowoczesnych technologii (React, Next.js,
-              WordPress), dbamy o to, by strony wyświetlały się poprawnie na wszystkich urządzeniach.
-              Inwestycja w rozwój Twojej firmy poprzez profesjonalną stronę internetową to jeden
-              z najlepszych kroków dla biznesu w Poznaniu.
+              Projektowanie strony internetowej realizujemy w Figma — otrzymujesz klikalny prototyp do akceptacji przed startem kodowania. Dzięki temu wiesz dokładnie, jak będzie wyglądać Twoja strona, zanim zostanie zbudowana. Po zatwierdzeniu projektu przechodzimy do programowania (WordPress, Webflow lub React/Next.js — zależnie od potrzeb), testów na różnych urządzeniach i wdrożenia. Po uruchomieniu strony oferujemy 30 dni bezpłatnej opieki technicznej.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www i sklepy internetowe — CMS, kompleksowy projekt graficzny i profesjonalna strona
+              Strony www a pozycjonowanie w Poznaniu — co warto wiedzieć
             </h2>
             <p className="text-muted-foreground mb-4">
-              Strony www i sklepy internetowe dla firm z Poznania tworzymy w oparciu o sprawdzone systemy
-              CMS — WordPress, WooCommerce, Shopify i własne rozwiązania dedykowane. Kompleksowy projekt
-              graficzny obejmuje identyfikację wizualną, layouty podstron i dobór typografii
-              zgodnej z marką.
+              Strony internetowe tworzymy z wbudowaną optymalizacją SEO — meta tagi, szybkość Core Web Vitals, struktura nagłówków, schema markup LocalBusiness i mapa strony XML to nasz standard, nie dodatek płatny. Dzięki temu Twoja nowa strona www startuje z solidnym fundamentem i szybciej osiąga wysokie pozycje w Google dla lokalnych zapytań z Poznania.
             </p>
             <p className="text-muted-foreground mb-6">
-              Profesjonalna strona internetowa to fundament obecności online każdej firmy.
-              Strony internetowych dla klientów z Poznania budujemy tak, by były skalowalne,
-              bezpieczne i łatwe w zarządzaniu. Projektowania stron www nie traktujemy
-              jako jednorazowej usługi — jesteśmy partnerem na lata.
+              Jeśli zależy Ci na dalszym rozwoju widoczności, oferujemy kompleksowe{" "}
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron internetowych</Link> — od audytu SEO przez budowę linków po content marketing. Połączenie profesjonalnej strony www z regularnym SEO to najskuteczniejsza strategia pozyskiwania klientów online dla firm z Poznania.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">
-              Jak stworzyć stronę — profesjonalny projekt, budujemy strony na miarę Twojego biznesu
+              Ile kosztuje strona internetowa w Poznaniu? Transparentne wyceny
             </h2>
             <p className="text-muted-foreground mb-4">
-              Jak stworzyć stronę internetową, która wyróżni Twoją firmę w Poznaniu? Profesjonalny
-              projekt graficzny, dobra architektura informacji i optymalizacja pod Google to podstawy.
-              Budujemy strony internetowe z myślą o Twoim biznesie — od prostych stron wizytówkowych
-              po rozbudowane portale korporacyjne i sklepy e-commerce.
+              Ceny stron internetowych w Poznaniu wahają się od kilkuset złotych za strony na kreatorach (Wix, Squarespace) do kilkudziesięciu tysięcy za zaawansowane portale e-commerce. W Fotz Studio działamy w segmencie profesjonalnym: strona wizytówkowa od 2 000 zł, strona firmowa od 5 000 zł, sklep internetowy od 8 000 zł. Każda wycena jest bezpłatna i przygotowywana indywidualnie — bez ukrytych kosztów.
             </p>
-            <p className="text-muted-foreground mb-6">
-              Stron www Poznań tworzymy według sprawdzonego procesu: analiza celów → projektowanie
-              stron www → kodowanie → testowanie → wdrożenie → optymalizacja SEO. Internetowych
-              z wykorzystaniem najlepszych narzędzi i frameworków, co gwarantuje wysoką jakość
-              i trwałość efektu dla Twojego biznesu.
+            <p className="text-muted-foreground mb-4">
+              Jeśli szukasz więcej informacji o kosztach i rodzajach stron internetowych, przejdź do naszej strony głównej usługi:{" "}
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium">Tworzenie stron internetowych — oferta ogólnopolska</Link>.
             </p>
 
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Własna strona www i swojej strony www — zadbaj o swoją stronę
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Zadbaj o swoją stronę www, zanim zrobi to Twoja konkurencja w Poznaniu. Swojej strony
-              internetowej nie warto odkładać — każdy dzień bez profesjonalnej strony to utracone
-              leady i klienci. Twojego biznesu wizerunku w sieci nie możesz zostawić przypadkowi.
-            </p>
-            <p className="text-muted-foreground">
-              Www dla Twojej firmy i swojej strony www to nie koszt, lecz inwestycja w rozwój
-              Twojej firmy. Strony internetowych dla klientów z Poznania dostarczamy regularnie, a każda
-              z nich jest zaprojektowana z myślą o celach biznesowych właściciela. Swojej strony
-              nie oddajemy bez dokładnych testów — kompleksowy odbiór projektu to nasz standard.
-            </p>
-          
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron SEO</Link>
+              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie Google Ads</Link>
+              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media marketing</Link>
             </div>
           </motion.div>
         </div>
