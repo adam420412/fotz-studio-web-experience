@@ -40,25 +40,25 @@ const services = [
   {
     icon: Globe,
     title: "Strony i sklepy internetowe",
-    description: "Projektujemy i wdrażamy strony www oraz sklepy e-commerce. Responsywne, szybkie, zoptymalizowane pod pozycjonowania i konwersję. Obsługujemy klientów z Warszawy i całej Polski — online. Shopify, WooCommerce, Next.js, rozwiązania custom.",
+    description: "Projektujemy i wdrażamy strony www oraz sklepy e-commerce. Responsywne, szybkie, z content zoptymalizowanym pod SEO i konwersję. Shopify, WooCommerce, Next.js — kompleksowe rozwiązania dla firm z Warszawy.",
     link: "/uslugi/strony-internetowe/warszawa"
   },
   {
     icon: Search,
     title: "Pozycjonowanie SEO",
-    description: "Zwiększamy widoczność Twojej firmy w Google. Audyt techniczny, optymalizacja treści, budowanie linków. Eksperci SEO specjalizujący się w pozycjonowania lokalnego dla Warszawy i Mazowsza oraz e-commerce.",
+    description: "Fotz Studio jako agencja SEO Warszawa zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla Warszawy i Mazowsza oraz e-commerce.",
     link: "/seo/pozycjonowanie"
   },
   {
     icon: Target,
     title: "Kampanie Google Ads i Facebook Ads",
-    description: "Efektywne kampanie reklamowe w Google Ads i Facebook/Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Kampanie nastawione na nowych klientów.",
+    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Wyniki sprzedażowe mierzone w leadach i konwersjach.",
     link: "/performance-marketing/google-ads"
   },
   {
     icon: Share2,
     title: "Social media i mediach społecznościowych",
-    description: "Prowadzenie profili na Instagramie, Facebooku, LinkedIn i TikToku. Kreacje treści, harmonogram publikacji, kampanie zasięgowe i leadowe. Kompleksowa obsługa mediach społecznościowych dla firm z Warszawy.",
+    description: "Fotz Studio to agencja social media dla firm z Warszawy i całej Polski. Prowadzenie profili na Instagramie, Facebooku, LinkedIn i TikToku. Kreacje treści, harmonogram, kampanie zasięgowe i leadowe.",
     link: "/social-media/poznan"
   },
   {
@@ -70,7 +70,7 @@ const services = [
   {
     icon: Palette,
     title: "Branding i identyfikacja wizualna",
-    description: "Budujemy i rozwijamy Twoją markę. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna wizualna tożsamość twojej marki przekłada się na wyższe ceny i lepsze konwersje.",
+    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna Twojej marki przekłada się na wyższe ceny i lepsze konwersje.",
     link: "/uslugi/identyfikacja-wizualna"
   }
 ];
@@ -106,7 +106,7 @@ const chooseCriteria = [
   {
     icon: Award,
     title: "Kreatywny zespół z doświadczeniem branżowym",
-    desc: "Sprawdź, czy agencja marketingowa realizowała kampanie dla firm podobnych do Twojej. Kreatywny pomysł bez strategii biznesowej nie sprzeda. Case studies z mierzalnymi wynikami to lepszy dowód niż kolorowe portfolio."
+    desc: "Kreatywna agencja to nie tylko ładne projekty — to wyniki. Kreatywny pomysł bez strategii biznesowej nie sprzeda. Sprawdź, czy agencja realizowała kampanie dla firm podobnych do Twojej. Case studies z mierzalnymi wynikami to lepszy dowód niż kolorowe portfolio."
   },
   {
     icon: BarChart3,
@@ -121,14 +121,14 @@ const chooseCriteria = [
   {
     icon: TrendingUp,
     title: "Cyfrowy marketing pełnego zakresu",
-    desc: "Agencja, która projektuje i prowadzi działania w wielu kanałach — cyfrowy i offline — ma pełny obraz kampanii. Może lepiej optymalizować budżet reklamowy i wybrać strategie dopasowane do rynków, na których działasz."
+    desc: "Agencja oferująca usługi z zakresu działań online i offline ma pełny obraz kampanii. Kompleksowe rozwiązania marketingowe w wielu kanałach pozwalają lepiej optymalizować budżet i dobierać strategie dopasowane do Twojego rynku."
   }
 ];
 
 const faqItems = [
   {
     question: "Jak wybrać właściwą agencję marketingową w Warszawie?",
-    answer: "Kluczowe kryteria: udokumentowane wyniki (case studies z ROAS, wzrostem widoczności, liczbą leadów), transparentne raportowanie kampanii, dedykowany ekspert projektu (nie infolinia), oraz kompleksowa obsługa – strategia, kreacje i kampanie reklamowe pod jednym dachem. Umów bezpłatną konsultację z 2–3 agencjami i porównaj ich indywidualne podejście do Twojego przypadku, nie tylko cenniki."
+    answer: "Kluczowe kryteria przy wyborze spośród najlepszych agencji marketingowych w Warszawie: udokumentowane wyniki (case studies z ROAS, wzrostem widoczności, liczbą leadów), transparentne raportowanie, dedykowany ekspert projektu (nie infolinia), oraz kompleksowa obsługa pod jednym dachem. Umów bezpłatną konsultację z 2–3 agencjami i porównaj ich indywidualne podejście."
   },
   {
     question: "Czy agencja z Poznania obsługuje klientów z Warszawy?",
@@ -144,7 +144,7 @@ const faqItems = [
   },
   {
     question: "Czym różni się agencja marketingowa od agencji reklamowej?",
-    answer: "Agencja reklamowa tradycyjnie skupia się na kreacji reklamy — visual, copy, spot. Agencja marketingowa ma szerszy zakres usług: strategia, digital marketingu, SEO, kampanie reklamowe, social media, email, analityka, branding. W praktyce współczesne agencje marketingowe łączą obie funkcje — kreacje i efektywne kampanie online. Fotz Studio to agencja full-service — projektujemy i wdrażamy, a następnie promujemy."
+    answer: "Agencja reklamowa tradycyjnie skupia się na kreacji reklamy — visual, copy, spot. Agencja marketingowa ma szerszy zakres usług: strategia, SEO, kampanie, social media, email, analityka, branding, content. Agencja digital lub agencja interaktywna to kolejne określenia firm łączących technologię z kreatywnością. Fotz Studio to profesjonalna agencja full-service — projektujemy, wdrażamy i promujemy marki online."
   },
   {
     question: "Jak budować widoczność firmy w internecie w Warszawie?",
@@ -152,7 +152,11 @@ const faqItems = [
   },
   {
     question: "Czy oferujecie kompleksową obsługę marketingową?",
-    answer: "Tak, jesteśmy agencją full-service. Możemy zaprojektować stronę lub sklep, a następnie prowadzić jej kompleksowy marketing — SEO i pozycjonowania, Google Ads, kampanie Meta, social media (Instagram, Facebook, LinkedIn, TikTok), wideo, email. Jeden partner, pełna odpowiedzialność. Spójność strategii i kreacje dają lepsze efekty niż współpracować z kilkoma firmami naraz."
+    answer: "Tak, jesteśmy agencją full-service. Możemy zaprojektować stronę lub sklep, a następnie prowadzić jej kompleksowy marketing — SEO, Google Ads, kampanie Meta, social media (Instagram, Facebook, LinkedIn, TikTok), wideo, email. Jeden partner, pełna odpowiedzialność. Spójność strategii i kreacje dają lepsze efekty niż współpracować z kilkoma firmami naraz."
+  },
+  {
+    question: "Czego szukać w agencji reklamowej Warszawa — kompletna lista?",
+    answer: "Dobra agencja reklamowa Warszawa to pełne wsparcie marketingowe: kompleksowe usługi od SEO i Google Ads, przez agencja social media obsługę profili, po produkcję wideo i branding. Szukając jednej z 10 najlepszych agencji w Warszawie, sprawdź udokumentowane rozwiązania marketingowe dla swojej branży, dedykowany zespół i przejrzyste raportowanie wyników sprzedażowych."
   }
 ];
 
@@ -204,13 +208,14 @@ export default function AgencjaMarketingowaWarszawa() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Kompleksowy marketing internetowy dla firm z Warszawy i Mazowsza. SEO i pozycjonowania, kampanie Google Ads,
-              reklama w mediach społecznościowych, strony internetowe i wideo — wszystko w jednej agencji marketingowej.
+              Kompleksowy marketing internetowy dla firm z Warszawy i Mazowsza. SEO, Google Ads,
+              social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to profesjonalna agencja reklamowa Warszawa
+              i agencja digital łącząca kreatywność z analityką danych.
             </motion.p>
 
             <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
               Warszawski rynek biznesowy jest jednym z najbardziej konkurencyjnych w Polsce. Firmy, które inwestują
-              w profesjonalne kampanie reklamowe i strategię marketingową, systematycznie zyskują nowych klientów
+              w profesjonalne kampanie marketingowe i strategię, systematycznie zyskują nowych klientów
               i budują widoczność w internecie.
             </motion.p>
 
@@ -313,8 +318,9 @@ export default function AgencjaMarketingowaWarszawa() {
                 <span className="text-gradient">wybierają Fotz Studio?</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Nie jesteśmy najtańszą agencją reklamową. Jesteśmy agencją marketingową, która dostarcza
-                mierzalne wyniki i buduje długoterminową widoczność twojej marki na rynkach cyfrowych.
+                Nie jesteśmy najtańszą agencją — jesteśmy jedną z najlepszych agencji marketingowych w Warszawie pod względem wyników.
+                Łączymy profesjonalizm i kreatywność, by budować trwałą widoczność Twojej marki i wyniki sprzedażowe,
+                które realnie przekładają się na biznes.
               </p>
             </motion.div>
 
@@ -333,7 +339,7 @@ export default function AgencjaMarketingowaWarszawa() {
                 {
                   icon: Award,
                   title: "Kompleksowy marketing bez podwykonawców",
-                  desc: "SEO i pozycjonowania, Google Ads, social media, strony, wideo i kreacje graficzne — wszystko robimy wewnętrznie. Spójna strategia marketingowa, jedna faktura. Zakres usług dobieramy do budżetu i celu."
+                  desc: "Pełne wsparcie i kompleksowe usługi z zakresu SEO, Google Ads, social media, stron i wideo — wszystko wewnętrznie. Kompleksowe rozwiązania marketingowe pod jednym dachem. Dedykowany zespół specjalistów, jedna faktura."
                 }
               ].map((item, i) => (
                 <motion.div key={i} variants={fadeIn} className="p-6 rounded-2xl border border-border/40 bg-card/20">
