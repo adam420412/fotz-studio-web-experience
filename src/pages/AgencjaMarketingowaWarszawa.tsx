@@ -164,8 +164,8 @@ export default function AgencjaMarketingowaWarszawa() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Warszawa | Marketing Internetowy | Fotz Studio"
-        description="Agencja marketingowa obsługująca firmy z Warszawy. SEO, Google Ads, kampanie Meta, social media, strony internetowe i produkcja wideo. Bezpłatna konsultacja."
+        title="Agencja Marketingowa Warszawa — Marketing Internetowy dla Firm | Fotz Studio"
+        description="Agencja marketingowa Warszawa — SEO, Google Ads, social media, tworzenie stron internetowych. Kompleksowy marketing digital dla firm z Warszawy. Fotz Studio."
         canonical="https://fotz.pl/agencja-marketingowa-warszawa"
         keywords="agencja marketingowa Warszawa, marketing internetowy Warszawa, agencja reklamowa Warszawa, kampanie reklamowe Warszawa, agencja SEO Warszawa, Google Ads Warszawa, digital marketing Warszawa, marketing dla firm Warszawa"
       />
@@ -585,6 +585,22 @@ export default function AgencjaMarketingowaWarszawa() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja marketingowa Warszawa — marketing internetowy dla firm ze stolicy</h2>
+            <p className="text-muted-foreground mb-4">Agencja marketingowa Warszawa — Fotz Studio oferuje kompleksowe usługi marketingu cyfrowego dla firm z Warszawy i Mazowsza. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem, generujący leady i sprzedaż.</p>
+            <p className="text-muted-foreground mb-6">Warszawa to największy rynek reklamowy w Polsce — i jeden z najbardziej konkurencyjnych. Agencja marketingowa w Warszawie musi znać specyfikę stołecznego rynku i dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle dziesiątek konkurentów.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Marketing cyfrowy dla firm z Warszawy — SEO, Google Ads i social media</h2>
+            <p className="text-muted-foreground mb-4">Oferujemy: pozycjonowanie stron internetowych w Warszawie, kampanie Google Ads (search, shopping, display), obsługę Social Media (Facebook, Instagram, LinkedIn, TikTok), tworzenie stron internetowych Warszawa i sklepów e-commerce, email marketing i marketing automation.</p>
+            <p className="text-muted-foreground">Agencja marketingowa Warszawa z podejściem data-driven — analizujemy dane, by optymalizować każdy aspekt Twojej obecności online. Raporty efektywności kampanii, monitorowanie ruchu na stronie i analiza konwersji to elementy naszej standardowej usługi. Skontaktuj się — bezpłatna konsultacja dla firm z Warszawy.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

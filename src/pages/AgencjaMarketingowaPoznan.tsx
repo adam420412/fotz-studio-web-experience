@@ -186,8 +186,8 @@ export default function AgencjaMarketingowaPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Poznań | Marketing 360° | Fotz"
-        description="Agencja marketingowa Poznań z 160+ opiniami. Kompleksowy marketing: social media, Google Ads, Meta Ads, SEO, strony www i branding. Bezpłatna konsultacja."
+        title="Agencja Marketingowa Poznań — Marketing 360°, SEO i Reklama Online | Fotz Studio"
+        description="Agencja marketingowa Poznań — kompleksowy marketing internetowy: SEO, Google Ads, social media, strony internetowe. Fotz Studio, Twój partner w Poznaniu."
         canonical="https://fotz.pl/agencja-marketingowa-poznan"
         keywords="agencja marketingowa Poznań, marketing internetowy Poznań, agencja 360 poznań, social media Poznań, kampanie reklamowe Poznań, Google Ads Poznań, reklama internetowa Poznań, agencja social media, SEO Poznań, agencja reklamowa poznań"
       />
@@ -991,6 +991,25 @@ export default function AgencjaMarketingowaPoznan() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja marketingowa Poznań — kompleksowy marketing internetowy dla firm z Poznania</h2>
+            <p className="text-muted-foreground mb-4">Agencja marketingowa Poznań — Fotz Studio to zespół specjalistów od marketingu internetowego, SEO, reklam Google i Facebook, tworzenia stron internetowych i content marketingu. Obsługujemy firmy z Poznania i Wielkopolski, a także klientów z całej Polski. Marketing Poznań to nasza lokalna specjalizacja — znamy rynek, branże i specyfikę lokalnej konkurencji.</p>
+            <p className="text-muted-foreground mb-6">Jak rozpocząć marketing nowej firmy lub zmienić agencję? Proponujemy bezpłatną konsultację, podczas której audytujemy obecne działania i wskazujemy obszary o największym potencjale wzrostu. Agencja marketingowa Poznań z wieloletnim doświadczeniem — ponad 150 zrealizowanych projektów.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja marketingu internetowego Poznań — SEO, Google Ads, social media</h2>
+            <p className="text-muted-foreground mb-4">Agencja marketingu internetowego w Poznaniu oferuje pełen zakres usług cyfrowych: pozycjonowanie stron Poznań (SEO lokalne i ogólnopolskie), kampanie Google Ads i Meta Ads, obsługę social media (Facebook, Instagram, LinkedIn), tworzenie stron internetowych i sklepów e-commerce, content marketing i email marketing.</p>
+            <p className="text-muted-foreground mb-6">Studio graficzne Poznań — w ramach naszej agencji oferujemy też projekty graficzne: logo, identyfikację wizualną, materiały reklamowe, animacje 2D i 3D. Kompleksowa obsługa marketingowa firmy to nasza przewaga — jeden partner zamiast kilku freelancerów.</p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">Agencja kreatywna Poznań — co nas wyróżnia na rynku?</h3>
+            <p className="text-muted-foreground">Agencja kreatywna Poznań łącząca kreatywność z analityką — każda decyzja jest poparta danymi, każda kampania mierzona i optymalizowana. Agencja reklamowa Poznań z naciskiem na ROI — nie tworzymy sztuki dla sztuki, lecz kampanie, które przynoszą realne wyniki biznesowe. Sprawdź nasze realizacje i przekonaj się, dlaczego firmy z Poznania wybierają Fotz Studio.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

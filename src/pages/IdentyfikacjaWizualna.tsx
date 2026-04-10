@@ -150,8 +150,8 @@ const IdentyfikacjaWizualna = () => {
     <>
     <Layout>
       <SEOHead
-        title="Identyfikacja Wizualna | Logo i Branding | Fotz"
-        description="Identyfikacja wizualna firmy - logo, księga znaku, materiały firmowe. Spójny branding dla Twojej marki. Agencja Poznań."
+        title="Identyfikacja Wizualna Firmy — Logo i Branding | Projektowanie Graficzne | Fotz Studio"
+        description="Identyfikacja wizualna firmy — projektowanie logo, branding, księga znaku, materiały firmowe. Profesjonalne projektowanie graficzne tożsamości marki. Fotz Studio."
         canonical="https://fotz.pl/uslugi/branding"
         keywords="identyfikacja wizualna, branding, projektowanie logo, księga znaku, agencja brandingowa Poznań"
       />
@@ -861,6 +861,25 @@ const IdentyfikacjaWizualna = () => {
       </section>
 
       {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Identyfikacja wizualna firmy — co to jest i dlaczego jest kluczowa?</h2>
+            <p className="text-muted-foreground mb-4">Identyfikacja wizualna firmy to kompletny system graficzny, który definiuje, jak marka wygląda we wszystkich punktach styku z klientem. Obejmuje logo, typografię, kolorystykę, szablony dokumentów firmowych, materiały marketingowe i zasady ich stosowania opisane w księdze znaku. Spójna identyfikacja wizualna buduje rozpoznawalność i zaufanie do marki.</p>
+            <p className="text-muted-foreground mb-6">Projektowanie logo i branding to fundament każdej identyfikacji wizualnej. Logo to twarz firmy — prosty, zapamiętałby symbol, który odróżnia Twoją markę od konkurencji. Dobry projekt logo powinien być czytelny w każdej skali, od wizytówki po billboard, oraz działać w kolorze i w wersji monochromatycznej.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Projektowanie graficzne — logo, branding i materiały firmowe</h2>
+            <p className="text-muted-foreground mb-4">Projektowanie graficzne w ramach identyfikacji wizualnej obejmuje: logotyp, sign mark i kombinację obu, paletę kolorów korporacyjnych z kodami Pantone/CMYK/RGB/HEX, typografię korporacyjną (czcionki firmowe), szablony wizytówek, papierów firmowych, prezentacji, stopek mailowych i materiałów reklamowych.</p>
+            <p className="text-muted-foreground mb-6">Projektowanie interfejsów użytkownika (UI) i projektowanie doświadczenia użytkownika (UX) są coraz częściej włączane do systemu identyfikacji wizualnej — szczególnie w kontekście stron internetowych i aplikacji mobilnych. Spójna estetyka na wszystkich platformach wzmacnia brand experience.</p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">Animacje i grafika ruchoma — nowoczesny branding w mediach cyfrowych</h3>
+            <p className="text-muted-foreground">Współczesna identyfikacja wizualna coraz częściej wykracza poza statyczne elementy. Animacje i grafika ruchoma — animowane logo, intro video, motion graphics do social media — są standardem w nowoczesnym brandingu. Identyfikacja wizualna firmy w środowiskach cyfrowych (social media, strony www, reklamy) musi być dynamiczna i przyciągająca wzrok. Stwórzmy razem wizerunek, który zostaje w pamięci.</p>
+          </motion.div>
+        </div>
+      </section>
+
       <RelatedServices 
         currentService="identyfikacja-wizualna"
         subtitle="Usługi uzupełniające budowę wizerunku Twojej marki"

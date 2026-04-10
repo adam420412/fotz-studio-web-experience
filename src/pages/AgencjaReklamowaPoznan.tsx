@@ -71,8 +71,8 @@ const AgencjaReklamowaPoznan = () => {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Reklamowa Poznań | Google Ads, Meta Ads | Fotz"
-        description="Agencja reklamowa Poznań — kampanie Google Ads, Meta Ads, branding i video marketing. Skuteczna reklama online i offline dla firm z Wielkopolski. Bezpłatna konsultacja."
+        title="Agencja Reklamowa Poznań — Reklama Online, Spoty, Kampanie | Fotz Studio"
+        description="Agencja reklamowa Poznań — tworzenie reklam wideo, spoty reklamowe, kampanie Google Ads i Meta Ads, identyfikacja wizualna. Fotz Studio."
         canonical="https://fotz.pl/agencja-reklamowa-poznan"
         keywords="agencja reklamowa poznań, kampanie reklamowe poznań, reklama google ads, meta ads poznań, branding poznań, reklama atl btl, agencja kreatywna poznań"
       />
@@ -596,6 +596,22 @@ const AgencjaReklamowaPoznan = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja reklamowa Poznań — tworzenie reklam wideo i kampanie reklamowe</h2>
+            <p className="text-muted-foreground mb-4">Agencja reklamowa Poznań — Fotz Studio specjalizuje się w tworzeniu reklam wideo, spotów reklamowych, kampanii Google Ads i Meta Ads oraz kompleksowej identyfikacji wizualnej. Obsługujemy firmy z Poznania, Wielkopolski i całej Polski, tworząc materiały reklamowe wysokiej jakości, które przyciągają uwagę i budują markę.</p>
+            <p className="text-muted-foreground mb-6">Tworzenie reklam wideo to jeden z najefektywniejszych formatów we współczesnej reklamie. Spoty reklamowe online (pre-roll na YouTube, reklamy wideo na Facebooku i Instagramie) generują wysoki zasięg i zaangażowanie przy relatywnie niskim koszcie dotarcia.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Spoty reklamowe, filmy reklamowe Poznań i produkcja wideo dla firm</h2>
+            <p className="text-muted-foreground mb-4">Filmy reklamowe Poznań — produkcja spotów od scenariusza po post-produkcję. Tworzymy: spoty reklamowe do emisji w TV i online, filmy prezentacyjne firm, materiały wideo na social media (rolki, reelsy), video marketing dla e-commerce (zdjęcia 360°, wideo produktowe) i animacje 2D i 3D.</p>
+            <p className="text-muted-foreground">Agencja reklamowa Poznań to jeden punkt obsługi dla wszystkich potrzeb reklamowych — kreacja, produkcja i media planning. Zarządzanie kampaniami PPC, obsługa graficzna oraz usługi foto i wideo — wszystko pod jednym dachem. Zbudujmy razem kampanię, która zostawi ślad w głowach Twoich klientów.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };

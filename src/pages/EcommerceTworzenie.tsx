@@ -159,8 +159,8 @@ export default function EcommerceTworzenie() {
   return (
     <Layout>
       <SEOHead
-        title="Sklep Internetowy | Tworzenie E-commerce | Fotz"
-        description="Tworzymy sklepy internetowe - wybór platformy, integracje płatności, automatyzacja AI. Zacznij sprzedaż online. Fotz Studio."
+        title="Tworzenie Sklepu Internetowego — E-commerce i Sprzedaż Online | Fotz Studio"
+        description="Sklep internetowy szyty na miarę — tworzenie e-commerce od A do Z. WooCommerce, Shopify, integracje płatności, SEO dla sklepów online. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/ecommerce"
       />
 
@@ -706,6 +706,25 @@ export default function EcommerceTworzenie() {
 
 
       {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Sklep internetowy — tworzenie e-commerce i rozwiązania e-commerce dla firm</h2>
+            <p className="text-muted-foreground mb-4">Sklep internetowy to dziś podstawowe narzędzie sprzedaży dla firm każdej branży. Tworzenie e-commerce obejmuje dobór platformy, projektowanie UX, integracje płatności online, konfigurację logistyki i optymalizację SEO. Rozwiązania e-commerce, które dostarczamy, są skalowalne — rosną razem z Twoim biznesem.</p>
+            <p className="text-muted-foreground mb-6">Budowa sklepów internetowych to nie tylko technologia, ale przede wszystkim strategia sprzedaży online. Analizujemy Twoją branżę, grupę docelową i konkurencję, by sklep internetowy od pierwszego dnia generował sprzedaż. Integracje płatności online (PayU, PayPal, Apple Pay) i systemy magazynowe to standard w każdym projekcie.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">E-commerce na WooCommerce i dedykowane rozwiązania sklepowe</h2>
+            <p className="text-muted-foreground mb-4">WooCommerce to najpopularniejsze rozwiązanie e-commerce na świecie — elastyczne, skalowalne i z ogromną bazą integracji. Tworzenie sklepu internetowego na WooCommerce jest szczególnie opłacalne dla firm, które chcą mieć pełną kontrolę nad kodem i zawartością. Alternatywnie oferujemy dedykowane rozwiązania e-commerce pisane na zamówienie.</p>
+            <p className="text-muted-foreground mb-6">Tworzenie e-commerce wymaga uwzględnienia wielu aspektów: ścieżki zakupowej (customer journey), karty produktu, koszyka i checkoutu, systemu rekomendacji produktów oraz automatycznych e-maili sprzedażowych. Każdy z tych elementów wpływa na współczynnik konwersji sklepu.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Sklep internetowy i SEO — sprzedaż online bez granic</h2>
+            <p className="text-muted-foreground">Sprzedaż online rośnie rok do roku, a sklep internetowy jest najefektywniejszym kanałem dotarcia do klientów. Rozwiązania e-commerce, które tworzymy, są zoptymalizowane pod Google Shopping, kampanie Meta Ads i organiczne SEO. Dzięki temu Twój sklep sprzedaje przez całą dobę — bez ograniczeń geograficznych i godzin otwarcia.</p>
+          </motion.div>
+        </div>
+      </section>
+
       <RelatedServices 
         currentService="ecommerce"
         subtitle="Usługi wspierające sprzedaż w Twoim sklepie internetowym"

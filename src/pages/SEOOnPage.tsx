@@ -35,8 +35,8 @@ const SEOOnPage = () => {
   return (
     <>
       <SEOHead
-        title="Optymalizacja On-Page SEO | Fotz Studio"
-        description="Kompleksowa optymalizacja on-page: meta tagi, nagłówki, treści, Core Web Vitals, schema markup. Zwiększamy widoczność Twojej strony w Google."
+        title="Optymalizacja On-Page SEO — Techniczne i Treściowe SEO Strony | Fotz Studio"
+        description="Optymalizacja SEO on-page — poprawa struktury strony, meta tagów, nagłówków, treści i szybkości ładowania. Zwiększ widoczność w Google. Fotz Studio."
         canonical="https://fotz.pl/seo/on-page"
         keywords="optymalizacja on-page, seo on-page, meta tagi seo, nagłówki seo, core web vitals, schema markup"
       />
@@ -165,6 +165,25 @@ const SEOOnPage = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Optymalizacja SEO on-page — optymalizacja stron internetowych pod kątem SEO</h2>
+            <p className="text-muted-foreground mb-4">Optymalizacja SEO on-page to zbiór działań wykonywanych bezpośrednio na stronie internetowej, by poprawić jej widoczność w wynikach wyszukiwania Google. Optymalizacja stron internetowych pod kątem SEO obejmuje: poprawę meta tagów (tytuł, opis), optymalizację nagłówków H1-H6, treści stron, linkowania wewnętrznego, struktury URL i szybkości ładowania.</p>
+            <p className="text-muted-foreground mb-6">Optymalizacja SEO on-page jest fundamentem każdej strategii SEO — bez niej nawet najlepsza kampania link buildingowa nie przyniesie oczekiwanych rezultatów. Analiza SEO strony pozwala zidentyfikować konkretne elementy do poprawy i ustalić priorytety działań optymalizacyjnych.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Optymalizacja pod wyszukiwarki internetowe (SEO) — narzędzia i techniki</h2>
+            <p className="text-muted-foreground mb-4">Narzędzia do badania słów kluczowych (Ahrefs, Semrush, Google Keyword Planner) pomagają identyfikować frazy, na które warto optymalizować treści. Google Search Console dostarcza danych o aktualnej widoczności strony i błędach technicznych. Google Analytics umożliwia śledzenie ruchu organicznego i konwersji z SEO.</p>
+            <p className="text-muted-foreground mb-6">Optymalizacja treści on-page skupia się na tworzeniu wartościowych, eksperckich artykułów odpowiadających na pytania użytkowników (E-E-A-T). Core Web Vitals — LCP, FID i CLS — to techniczne wskaźniki SEO mierzone przez Google, które bezpośrednio wpływają na ranking strony w wynikach wyszukiwania.</p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">SEO on-page vs. SEO off-page — kluczowe różnice</h3>
+            <p className="text-muted-foreground">SEO on-page obejmuje elementy strony, nad którymi masz bezpośrednią kontrolę. SEO off-page to działania poza stroną — przede wszystkim link building i budowanie autorytetu domeny. Skuteczna strategia SEO łączy oba podejścia: optymalizacja stron internetowych pod kątem SEO (on-page) tworzy solidne fundamenty, a link building wzmacnia pozycję w wynikach wyszukiwania Google.</p>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

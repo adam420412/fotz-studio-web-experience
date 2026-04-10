@@ -260,8 +260,8 @@ export default function AudytSEO() {
   return (
     <Layout>
       <SEOHead
-        title="Darmowy Audyt SEO Online | Sprawdź swoją stronę | Fotz Studio"
-        description="Sprawdź optymalizację SEO swojej strony za darmo. Automatyczny audyt analizuje title, meta description, nagłówki, Open Graph i więcej."
+        title="Darmowy Audyt SEO Online — Audyt Strony Internetowej i Analiza SEO | Fotz Studio"
+        description="Darmowy audyt SEO online — sprawdź swoją stronę, wykryj błędy i dowiedz się jak poprawić widoczność w Google. Kompleksowy audyt SEO strony internetowej. Fotz Studio."
         canonical="https://fotz.pl/seo/audyt"
         keywords="audyt seo, darmowy audyt seo, analiza seo, optymalizacja seo, sprawdź seo strony"
       />
@@ -548,6 +548,26 @@ export default function AudytSEO() {
           </AnimatePresence>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Darmowy audyt SEO — audyt SEO strony internetowej online</h2>
+            <p className="text-muted-foreground mb-4">Darmowy audyt SEO online to pierwszy krok do poprawy widoczności Twojej strony w Google. Audyt SEO strony internetowej analizuje elementy strony pod kątem technicznym, treściowym i linkowym, wskazując konkretne problemy do naprawy. Dzięki audytowi SEO wiesz, dlaczego Twoja strona nie wyświetla się wysoko w wynikach wyszukiwania i co należy zmienić.</p>
+            <p className="text-muted-foreground mb-6">Warto przeprowadzić audyt SEO regularnie — przynajmniej raz na kwartał. Algorytmy Google ciągle się zmieniają, a Twoja konkurencja non-stop optymalizuje swoje strony. Analiza SEO strony pozwala wyprzedzić konkurencję i utrzymać wysokie pozycje w wyszukiwarce Google.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Audyt SEO strony — co zawiera kompleksowy audyt SEO?</h2>
+            <p className="text-muted-foreground mb-4">Kompleksowy audyt SEO strony internetowej obejmuje: analizę techniczną (szybkość ładowania strony, indeksowanie, błędy 404, przekierowania), analizę treści (unikalne opisy, optymalizacja słów kluczowych, nagłówki H1-H6), analizę linków (profil backlinków, linki wewnętrzne) oraz analizę Core Web Vitals.</p>
+            <p className="text-muted-foreground mb-6">Zlecenie audytu SEO u specjalistów daje pełen obraz stanu witryny. Wykonanie audytu trwa zwykle 3–7 dni roboczych dla typowej strony firmowej. Przeprowadzenia audytu SEO nie warto odkładać — każdy dzień z błędami na stronie to utracony ruch organiczny i potencjalni klienci.</p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">Audyt strony — jak sprawdzić i przeprowadzić audyt SEO online?</h3>
+            <p className="text-muted-foreground mb-4">Jak zrobić audyt SEO samodzielnie? Możesz skorzystać z narzędzi takich jak Google Search Console, Ahrefs, Screaming Frog lub Semrush. Audyt SEO online pozwala na szybką analizę — jednak prawdziwa wartość kryje się w interpretacji wyników i planie naprawczym.</p>
+            <p className="text-muted-foreground">Warto przeprowadzić audyt SEO zarówno dla nowych stron (przed publikacją), jak i istniejących, które nie generują oczekiwanego ruchu. Analizę SEO przeprowadzamy dla firm z całej Polski. Dzięki audytowi SEO możliwa jest szybka identyfikacja i naprawa krytycznych błędów, które blokują widoczność w wyszukiwarce. Seo online to inwestycja, która się zwraca.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

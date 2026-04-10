@@ -210,8 +210,8 @@ const KampanieReklamowe = () => {
   return (
     <Layout>
       <SEOHead
-        title="Kampanie Reklamowe | Google Ads, Meta Ads | Fotz"
-        description="Kampanie Google Ads, Facebook Ads, TikTok, LinkedIn. Precyzyjne targetowanie, optymalizacja ROAS. Agencja Poznań."
+        title="Kampanie Reklamowe Google Ads i Meta Ads — Reklama Online dla Firm | Fotz Studio"
+        description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Skuteczna reklama online dla firm — planowanie, prowadzenie i optymalizacja kampanii. Fotz Studio."
         canonical="https://fotz.pl/kampanie-reklamowe"
       />
       <ServiceSchema 
@@ -617,6 +617,25 @@ const KampanieReklamowe = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie reklamowe Google Ads i Meta Ads — reklamy online dla firm</h2>
+            <p className="text-muted-foreground mb-4">Kampanie reklamowe w Google Ads i Meta Ads (Facebook, Instagram) to najszybszy sposób na dotarcie do nowych klientów. Zarządzanie kampaniami PPC wymaga wiedzy, czasu i ciągłej optymalizacji — dlatego warto powierzyć je specjalistom. Reklamy online pozwalają precyzyjnie targetować odbiorców według demografii, zainteresowań, lokalizacji i zachowań zakupowych.</p>
+            <p className="text-muted-foreground mb-6">Planowanie kampanii reklamowych zaczyna się od analizy celów biznesowych i grupy docelowej. Definiujemy KPI, dobieramy kanały, tworzymy kreacje reklamowe i ustawiamy śledzenie konwersji. Raporty efektywności kampanii dostarczamy regularnie, by zawsze wiedzieć, jak Twoje budżety reklamowe pracują.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie PPC — Google Shopping, remarketing i reklama display</h2>
+            <p className="text-muted-foreground mb-4">Zarządzanie kampaniami PPC (Pay-Per-Click) obejmuje różne formaty reklamowe: kampanie w wyszukiwarce (search), Google Shopping dla sklepów e-commerce, kampanie display w sieci reklamowej Google oraz remarketing — reklamy kierowane do osób, które już odwiedziły Twoją stronę. Każdy format ma swoje zastosowanie w lejku sprzedażowym.</p>
+            <p className="text-muted-foreground mb-6">Efektywne kampanie reklamowe to nie tylko kliknięcia, ale przede wszystkim konwersje. Optymalizujemy kampanie pod CPA (koszt za pozyskanie), ROAS (zwrot z wydatków na reklamę) i inne kluczowe wskaźniki. Analiza konkurencji w internecie pozwala nam ustalać stawki i targetowanie, by Twoje kampanie były opłacalne.</p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">Prowadzenie kampanii reklamowych — co wchodzi w skład obsługi?</h3>
+            <p className="text-muted-foreground">Prowadzenie kampanii reklamowych przez agencję obejmuje: konfigurację konta, tworzenie struktury kampanii, kreację reklam tekstowych i graficznych, ustawienie grup odbiorców, monitorowanie wyników i miesięczną optymalizację. Monitorowanie ruchu na stronie i analiza konwersji są integralną częścią każdej prowadzonej kampanii. Sprawdź, jak nasze kampanie reklamowe mogą zwiększyć Twoje przychody.</p>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };
