@@ -70,6 +70,14 @@ const BlogBriefMarketingowy = lazy(() => import("./pages/BlogBriefMarketingowy")
 const BlogPozycjonowanieStron = lazy(() => import("./pages/BlogPozycjonowanieStron"));
 const BlogKosztGoogleAds = lazy(() => import("./pages/BlogKosztGoogleAds"));
 const BlogJakWybracAgencje = lazy(() => import("./pages/BlogJakWybracAgencje"));
+const BlogKonwersjeNaStronie = lazy(() => import("./pages/BlogKonwersjeNaStronie"));
+const BlogSocialMediaStrategia = lazy(() => import("./pages/BlogSocialMediaStrategia"));
+const BlogStronaDlaFirmy = lazy(() => import("./pages/BlogStronaDlaFirmy"));
+
+// Case Studies
+const CaseStudyEcommerceCRO = lazy(() => import("./pages/CaseStudyEcommerceCRO"));
+const CaseStudyLocalSEO = lazy(() => import("./pages/CaseStudyLocalSEO"));
+const CaseStudyStronaWWW = lazy(() => import("./pages/CaseStudyStronaWWW"));
 
 // DlaKogo pages
 const DlaKogo = lazy(() => import("./pages/DlaKogo"));
@@ -298,6 +306,14 @@ const App = () => (
                 <Route path="/blog/pozycjonowanie-stron-internetowych-poradnik" element={<BlogPozycjonowanieStron />} />
                 <Route path="/blog/ile-kosztuje-reklama-w-google" element={<BlogKosztGoogleAds />} />
                 <Route path="/blog/jak-wybrac-agencje-marketingowa" element={<BlogJakWybracAgencje />} />
+                <Route path="/blog/jak-zwiekszyc-konwersje-na-stronie" element={<BlogKonwersjeNaStronie />} />
+                <Route path="/blog/strategia-social-media-marketing" element={<BlogSocialMediaStrategia />} />
+                <Route path="/blog/strona-internetowa-dla-firmy" element={<BlogStronaDlaFirmy />} />
+
+                {/* Case Studies */}
+                <Route path="/case-studies/optymalizacja-konwersji-ecommerce" element={<CaseStudyEcommerceCRO />} />
+                <Route path="/case-studies/seo-lokalne-poznan-wzrost-ruchu" element={<CaseStudyLocalSEO />} />
+                <Route path="/case-studies/strona-internetowa-dla-firmy-produkcyjnej" element={<CaseStudyStronaWWW />} />
 
                 {/* Blog → cluster redirects MUST be BEFORE the catch-all /blog/:slug */}
                 <Route path="/blog/seo-ecommerce" element={<Redirect301 to="/seo/ecommerce" />} />
