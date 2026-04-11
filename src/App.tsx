@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 177: TanStack Table, Expo Router, Web Components
+const BlogTanstackTableCoTo = lazy(() => import("./pages/BlogTanstackTableCoTo"));
+const BlogExpoRouterCoTo = lazy(() => import("./pages/BlogExpoRouterCoTo"));
+const BlogWebComponentsCoTo = lazy(() => import("./pages/BlogWebComponentsCoTo"));
+
 // Wave 176: React 19, OpenAPI/Zod, MSW Contract Testing
 const BlogReact19CoTo = lazy(() => import("./pages/BlogReact19CoTo"));
 const BlogOpenApiCoTo = lazy(() => import("./pages/BlogOpenApiCoTo"));
@@ -1369,6 +1374,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 177 */}
+                <Route path="/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024" element={<BlogTanstackTableCoTo />} />
+                <Route path="/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024" element={<BlogExpoRouterCoTo />} />
+                <Route path="/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024" element={<BlogWebComponentsCoTo />} />
                 {/* Wave 176 */}
                 <Route path="/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024" element={<BlogReact19CoTo />} />
                 <Route path="/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024" element={<BlogOpenApiCoTo />} />
