@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 168: Vue 3/Pinia/Nuxt, React Native/Expo, Angular Signals
+const BlogVue3CoTo = lazy(() => import("./pages/BlogVue3CoTo"));
+const BlogReactNativeExpoCoTo = lazy(() => import("./pages/BlogReactNativeExpoCoTo"));
+const BlogAngularSignalsCoTo = lazy(() => import("./pages/BlogAngularSignalsCoTo"));
+
 // Wave 167: ESLint/Biome, TypeScript Advanced, React Patterns
 const BlogEslintBiomeCoTo = lazy(() => import("./pages/BlogEslintBiomeCoTo"));
 const BlogTypescriptAdvancedCoTo = lazy(() => import("./pages/BlogTypescriptAdvancedCoTo"));
@@ -1324,6 +1329,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 168 */}
+                <Route path="/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala" element={<BlogVue3CoTo />} />
+                <Route path="/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024" element={<BlogReactNativeExpoCoTo />} />
+                <Route path="/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024" element={<BlogAngularSignalsCoTo />} />
                 {/* Wave 167 */}
                 <Route path="/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024" element={<BlogEslintBiomeCoTo />} />
                 <Route path="/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5" element={<BlogTypescriptAdvancedCoTo />} />
