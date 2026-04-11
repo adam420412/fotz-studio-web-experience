@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 134: Retention Curve, Headcount Planning, Data Room
+const BlogRetentionCurveCoTo = lazy(() => import("./pages/BlogRetentionCurveCoTo"));
+const BlogHeadcountPlanningCoTo = lazy(() => import("./pages/BlogHeadcountPlanningCoTo"));
+const BlogDataRoomCoTo = lazy(() => import("./pages/BlogDataRoomCoTo"));
+
 // Wave 133: Usage-Based Pricing, Two-Sided Marketplace, Growth Accounting
 const BlogUsageBasedPricingCoTo = lazy(() => import("./pages/BlogUsageBasedPricingCoTo"));
 const BlogTwoSidedMarketplaceCoTo = lazy(() => import("./pages/BlogTwoSidedMarketplaceCoTo"));
@@ -1156,6 +1161,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 134 */}
+                <Route path="/blog/retention-curve-krzywa-retencji-co-to-jest" element={<BlogRetentionCurveCoTo />} />
+                <Route path="/blog/headcount-planning-planowanie-zatrudnienia-startup" element={<BlogHeadcountPlanningCoTo />} />
+                <Route path="/blog/data-room-co-to-jest-jak-przygotowac-startup" element={<BlogDataRoomCoTo />} />
                 {/* Wave 133 */}
                 <Route path="/blog/usage-based-pricing-co-to-jest-jak-wdrozyz" element={<BlogUsageBasedPricingCoTo />} />
                 <Route path="/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest" element={<BlogTwoSidedMarketplaceCoTo />} />
