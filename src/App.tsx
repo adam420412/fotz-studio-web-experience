@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 176: React 19, OpenAPI/Zod, MSW Contract Testing
+const BlogReact19CoTo = lazy(() => import("./pages/BlogReact19CoTo"));
+const BlogOpenApiCoTo = lazy(() => import("./pages/BlogOpenApiCoTo"));
+const BlogMswTestingCoTo = lazy(() => import("./pages/BlogMswTestingCoTo"));
+
 // Wave 175: Package Managers, TypeScript tsconfig, Tauri/Electron Desktop
 const BlogPackageManagersCoTo = lazy(() => import("./pages/BlogPackageManagersCoTo"));
 const BlogTsconfigCoTo = lazy(() => import("./pages/BlogTsconfigCoTo"));
@@ -1364,6 +1369,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 176 */}
+                <Route path="/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024" element={<BlogReact19CoTo />} />
+                <Route path="/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024" element={<BlogOpenApiCoTo />} />
+                <Route path="/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024" element={<BlogMswTestingCoTo />} />
                 {/* Wave 175 */}
                 <Route path="/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024" element={<BlogPackageManagersCoTo />} />
                 <Route path="/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references" element={<BlogTsconfigCoTo />} />
