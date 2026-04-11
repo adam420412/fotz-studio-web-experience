@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 91: Email Deliverability, Customer LTV, Content Distribution
+const BlogEmailDeliverabilityCoTo = lazy(() => import("./pages/BlogEmailDeliverabilityCoTo"));
+const BlogCustomerLtvCoTo = lazy(() => import("./pages/BlogCustomerLtvCoTo"));
+const BlogContentDistributionCoTo = lazy(() => import("./pages/BlogContentDistributionCoTo"));
+
 // Wave 90: Design System, Subscription Model, UX Audit
 const BlogDesignSystemCoTo = lazy(() => import("./pages/BlogDesignSystemCoTo"));
 const BlogSubscriptionModelCoTo = lazy(() => import("./pages/BlogSubscriptionModelCoTo"));
@@ -941,6 +946,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 91 */}
+                <Route path="/blog/email-deliverability-co-to" element={<BlogEmailDeliverabilityCoTo />} />
+                <Route path="/blog/customer-ltv-co-to" element={<BlogCustomerLtvCoTo />} />
+                <Route path="/blog/content-distribution-co-to" element={<BlogContentDistributionCoTo />} />
                 {/* Wave 90 */}
                 <Route path="/blog/design-system-co-to" element={<BlogDesignSystemCoTo />} />
                 <Route path="/blog/subscription-model-co-to" element={<BlogSubscriptionModelCoTo />} />
