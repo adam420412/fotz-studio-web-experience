@@ -285,6 +285,13 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 32: Leasing, Hipoteka, KRS, Outsourcing, Faktoring
+const BlogLeasingCoToJest = lazy(() => import("./pages/BlogLeasingCoToJest"));
+const BlogHipotekaCoToJest = lazy(() => import("./pages/BlogHipotekaCoToJest"));
+const BlogKRSCoToJest = lazy(() => import("./pages/BlogKRSCoToJest"));
+const BlogOutsourcingCoToJest = lazy(() => import("./pages/BlogOutsourcingCoToJest"));
+const BlogFaktoringCoToJest = lazy(() => import("./pages/BlogFaktoringCoToJest"));
+
 // Wave 31: VAT, PIT, REGON, ZUS
 const BlogVATCoToJest = lazy(() => import("./pages/BlogVATCoToJest"));
 const BlogPITCoToJest = lazy(() => import("./pages/BlogPITCoToJest"));
@@ -659,6 +666,12 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 32 */}
+                <Route path="/blog/leasing-co-to-jest" element={<BlogLeasingCoToJest />} />
+                <Route path="/blog/hipoteka-co-to-jest" element={<BlogHipotekaCoToJest />} />
+                <Route path="/blog/krs-co-to-jest" element={<BlogKRSCoToJest />} />
+                <Route path="/blog/outsourcing-co-to-jest" element={<BlogOutsourcingCoToJest />} />
+                <Route path="/blog/faktoring-co-to-jest" element={<BlogFaktoringCoToJest />} />
                 {/* Wave 31 */}
                 <Route path="/blog/vat-co-to-jest" element={<BlogVATCoToJest />} />
                 <Route path="/blog/pit-co-to-jest" element={<BlogPITCoToJest />} />
