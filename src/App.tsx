@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 40: GTM Strategy, ABM, Demand Generation
+const BlogGTMStrategyCoTo = lazy(() => import("./pages/BlogGTMStrategyCoTo"));
+const BlogABMCoTo = lazy(() => import("./pages/BlogABMCoTo"));
+const BlogDemandGenerationCoTo = lazy(() => import("./pages/BlogDemandGenerationCoTo"));
+
 // Wave 39: Product-Market Fit, Brand Awareness, B2B Marketing
 const BlogProductMarketFit = lazy(() => import("./pages/BlogProductMarketFit"));
 const BlogBrandAwarenessCoTo = lazy(() => import("./pages/BlogBrandAwarenessCoTo"));
@@ -701,6 +706,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 40 */}
+                <Route path="/blog/gtm-strategy-co-to" element={<BlogGTMStrategyCoTo />} />
+                <Route path="/blog/abm-co-to-jest" element={<BlogABMCoTo />} />
+                <Route path="/blog/demand-generation-co-to" element={<BlogDemandGenerationCoTo />} />
                 {/* Wave 39 */}
                 <Route path="/blog/product-market-fit-co-to" element={<BlogProductMarketFit />} />
                 <Route path="/blog/brand-awareness-co-to" element={<BlogBrandAwarenessCoTo />} />
