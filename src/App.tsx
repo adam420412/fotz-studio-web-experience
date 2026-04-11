@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 36: Customer Journey, CRM, Influencer Marketing
+const BlogCustomerJourneyCoTo = lazy(() => import("./pages/BlogCustomerJourneyCoTo"));
+const BlogCRMCoToJest = lazy(() => import("./pages/BlogCRMCoToJest"));
+const BlogInfluencerMarketingCoTo = lazy(() => import("./pages/BlogInfluencerMarketingCoTo"));
+
 // Wave 35: Webinar, Persona, A/B Testing
 const BlogWebinarCoToJest = lazy(() => import("./pages/BlogWebinarCoToJest"));
 const BlogPersonaMarketingowa = lazy(() => import("./pages/BlogPersonaMarketingowa"));
@@ -680,6 +685,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 36 */}
+                <Route path="/blog/customer-journey-co-to" element={<BlogCustomerJourneyCoTo />} />
+                <Route path="/blog/crm-co-to-jest" element={<BlogCRMCoToJest />} />
+                <Route path="/blog/influencer-marketing-co-to" element={<BlogInfluencerMarketingCoTo />} />
                 {/* Wave 35 */}
                 <Route path="/blog/webinar-co-to-jest" element={<BlogWebinarCoToJest />} />
                 <Route path="/blog/persona-marketingowa" element={<BlogPersonaMarketingowa />} />
