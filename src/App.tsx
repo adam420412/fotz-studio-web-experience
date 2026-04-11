@@ -285,6 +285,12 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 31: VAT, PIT, REGON, ZUS
+const BlogVATCoToJest = lazy(() => import("./pages/BlogVATCoToJest"));
+const BlogPITCoToJest = lazy(() => import("./pages/BlogPITCoToJest"));
+const BlogREGONCoToJest = lazy(() => import("./pages/BlogREGONCoToJest"));
+const BlogZUSCoToJest = lazy(() => import("./pages/BlogZUSCoToJest"));
+
 // Wave 30: Freelancer, NIP
 const BlogFreelancerCoToJest = lazy(() => import("./pages/BlogFreelancerCoToJest"));
 const BlogNIPCoToJest = lazy(() => import("./pages/BlogNIPCoToJest"));
@@ -653,6 +659,11 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 31 */}
+                <Route path="/blog/vat-co-to-jest" element={<BlogVATCoToJest />} />
+                <Route path="/blog/pit-co-to-jest" element={<BlogPITCoToJest />} />
+                <Route path="/blog/regon-co-to-jest" element={<BlogREGONCoToJest />} />
+                <Route path="/blog/zus-co-to-jest" element={<BlogZUSCoToJest />} />
                 {/* Wave 30 */}
                 <Route path="/blog/freelancer-co-to-jest" element={<BlogFreelancerCoToJest />} />
                 <Route path="/blog/nip-co-to-jest" element={<BlogNIPCoToJest />} />
