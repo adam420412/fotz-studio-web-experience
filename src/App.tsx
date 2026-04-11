@@ -285,6 +285,12 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 23: GTM, Link building, Core Web Vitals, Google Search Console
+const BlogGoogleTagManager = lazy(() => import("./pages/BlogGoogleTagManager"));
+const BlogLinkBuilding = lazy(() => import("./pages/BlogLinkBuilding"));
+const BlogCoreWebVitals = lazy(() => import("./pages/BlogCoreWebVitals"));
+const BlogGoogleSearchConsole = lazy(() => import("./pages/BlogGoogleSearchConsole"));
+
 // Wave 22: KPI, API, Konwersja, CTR, Fotograf
 const BlogKPICoToJest = lazy(() => import("./pages/BlogKPICoToJest"));
 const BlogAPICoToJest = lazy(() => import("./pages/BlogAPICoToJest"));
@@ -607,6 +613,11 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 23 */}
+                <Route path="/blog/google-tag-manager-co-to" element={<BlogGoogleTagManager />} />
+                <Route path="/blog/link-building-co-to" element={<BlogLinkBuilding />} />
+                <Route path="/blog/core-web-vitals-co-to" element={<BlogCoreWebVitals />} />
+                <Route path="/blog/google-search-console-co-to" element={<BlogGoogleSearchConsole />} />
                 {/* Wave 22 */}
                 <Route path="/blog/kpi-co-to-jest" element={<BlogKPICoToJest />} />
                 <Route path="/blog/api-co-to-jest" element={<BlogAPICoToJest />} />
