@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 66: Design Thinking, Sales Funnel, Community Marketing
+const BlogDesignThinkingCoTo = lazy(() => import("./pages/BlogDesignThinkingCoTo"));
+const BlogSalesFunnelCoTo = lazy(() => import("./pages/BlogSalesFunnelCoTo"));
+const BlogCommunityMarketingCoTo = lazy(() => import("./pages/BlogCommunityMarketingCoTo"));
+
 // Wave 65: Brand Positioning, TAM SAM SOM, User Onboarding
 const BlogBrandPositioningCoTo = lazy(() => import("./pages/BlogBrandPositioningCoTo"));
 const BlogTAMSAMSOMCoTo = lazy(() => import("./pages/BlogTAMSAMSOMCoTo"));
@@ -817,6 +822,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 66 */}
+                <Route path="/blog/design-thinking-co-to" element={<BlogDesignThinkingCoTo />} />
+                <Route path="/blog/sales-funnel-co-to" element={<BlogSalesFunnelCoTo />} />
+                <Route path="/blog/community-marketing-co-to" element={<BlogCommunityMarketingCoTo />} />
                 {/* Wave 65 */}
                 <Route path="/blog/brand-positioning-co-to" element={<BlogBrandPositioningCoTo />} />
                 <Route path="/blog/tam-sam-som-co-to" element={<BlogTAMSAMSOMCoTo />} />
