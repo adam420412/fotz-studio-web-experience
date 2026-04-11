@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 166: Tailwind/shadcn, Core Web Vitals, Accessibility a11y
+const BlogTailwindShadcnCoTo = lazy(() => import("./pages/BlogTailwindShadcnCoTo"));
+const BlogCoreWebVitalsCoTo = lazy(() => import("./pages/BlogCoreWebVitalsCoTo"));
+const BlogAccessibilityA11yCoTo = lazy(() => import("./pages/BlogAccessibilityA11yCoTo"));
+
 // Wave 165: JWT/OAuth/OIDC, NextAuth/Lucia/Clerk, React Server Components
 const BlogJwtOauthCoTo = lazy(() => import("./pages/BlogJwtOauthCoTo"));
 const BlogNextAuthCoTo = lazy(() => import("./pages/BlogNextAuthCoTo"));
@@ -1314,6 +1319,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 166 */}
+                <Route path="/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024" element={<BlogTailwindShadcnCoTo />} />
+                <Route path="/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024" element={<BlogCoreWebVitalsCoTo />} />
+                <Route path="/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie" element={<BlogAccessibilityA11yCoTo />} />
                 {/* Wave 165 */}
                 <Route path="/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys" element={<BlogJwtOauthCoTo />} />
                 <Route path="/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024" element={<BlogNextAuthCoTo />} />
