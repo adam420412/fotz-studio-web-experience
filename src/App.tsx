@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 110: Kubernetes, Redis, AWS
+const BlogKubernetesCoTo = lazy(() => import("./pages/BlogKubernetesCoTo"));
+const BlogRedisCoTo = lazy(() => import("./pages/BlogRedisCoTo"));
+const BlogAwsCoTo = lazy(() => import("./pages/BlogAwsCoTo"));
+
 // Wave 109: Docker, REST API, GraphQL
 const BlogDockerCoTo = lazy(() => import("./pages/BlogDockerCoTo"));
 const BlogRestApiCoTo = lazy(() => import("./pages/BlogRestApiCoTo"));
@@ -1036,6 +1041,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 110 */}
+                <Route path="/blog/kubernetes-co-to-jest" element={<BlogKubernetesCoTo />} />
+                <Route path="/blog/redis-co-to-jest" element={<BlogRedisCoTo />} />
+                <Route path="/blog/aws-co-to-jest" element={<BlogAwsCoTo />} />
                 {/* Wave 109 */}
                 <Route path="/blog/docker-co-to-jest" element={<BlogDockerCoTo />} />
                 <Route path="/blog/rest-api-co-to" element={<BlogRestApiCoTo />} />
