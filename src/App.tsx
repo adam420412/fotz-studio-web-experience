@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 165: JWT/OAuth/OIDC, NextAuth/Lucia/Clerk, React Server Components
+const BlogJwtOauthCoTo = lazy(() => import("./pages/BlogJwtOauthCoTo"));
+const BlogNextAuthCoTo = lazy(() => import("./pages/BlogNextAuthCoTo"));
+const BlogRscCoTo = lazy(() => import("./pages/BlogRscCoTo"));
+
 // Wave 164: Prisma/Drizzle ORM, Vitest/Playwright, XState
 const BlogPrizmaDrizzleCoTo = lazy(() => import("./pages/BlogPrizmaDrizzleCoTo"));
 const BlogVitestPlaywrightCoTo = lazy(() => import("./pages/BlogVitestPlaywrightCoTo"));
@@ -1309,6 +1314,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 165 */}
+                <Route path="/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys" element={<BlogJwtOauthCoTo />} />
+                <Route path="/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024" element={<BlogNextAuthCoTo />} />
+                <Route path="/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024" element={<BlogRscCoTo />} />
                 {/* Wave 164 */}
                 <Route path="/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac" element={<BlogPrizmaDrizzleCoTo />} />
                 <Route path="/blog/vitest-playwright-cypress-storybook-testowanie-react-2024" element={<BlogVitestPlaywrightCoTo />} />
