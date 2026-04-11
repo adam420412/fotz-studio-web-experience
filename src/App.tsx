@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 199: React Router 7, Kysely+MikroORM, Astro 5
+const BlogReactRouter7CoTo = lazy(() => import("./pages/BlogReactRouter7CoTo"));
+const BlogKyselyMikroOrmCoTo = lazy(() => import("./pages/BlogKyselyMikroOrmCoTo"));
+const BlogAstro5CoTo = lazy(() => import("./pages/BlogAstro5CoTo"));
+
 // Wave 198: Rspack+Farm+Rolldown, Legend State+Nanostores, CSS Container+@layer
 const BlogRspackFarmRolldownCoTo = lazy(() => import("./pages/BlogRspackFarmRolldownCoTo"));
 const BlogLegendStateNanostoresCoTo = lazy(() => import("./pages/BlogLegendStateNanostoresCoTo"));
@@ -1479,6 +1484,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 199 */}
+                <Route path="/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024" element={<BlogReactRouter7CoTo />} />
+                <Route path="/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024" element={<BlogKyselyMikroOrmCoTo />} />
+                <Route path="/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024" element={<BlogAstro5CoTo />} />
                 {/* Wave 198 */}
                 <Route path="/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024" element={<BlogRspackFarmRolldownCoTo />} />
                 <Route path="/blog/legend-state-nanostores-valtio-signals-state-management-react-2024" element={<BlogLegendStateNanostoresCoTo />} />
