@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 206: nuqs URL State, Prisma 6+Accelerate, react-spring+Motion
+const BlogNuqsUrlStateCoTo = lazy(() => import("./pages/BlogNuqsUrlStateCoTo"));
+const BlogPrisma6AccelerateCoTo = lazy(() => import("./pages/BlogPrisma6AccelerateCoTo"));
+const BlogReactSpringMotionCoTo = lazy(() => import("./pages/BlogReactSpringMotionCoTo"));
+
 // Wave 205: ESLint 9 Flat Config, Zustand v5+Jotai v2, GraphQL Yoga+Pothos
 const BlogEslint9FlatConfigCoTo = lazy(() => import("./pages/BlogEslint9FlatConfigCoTo"));
 const BlogZustandAdvCoTo = lazy(() => import("./pages/BlogZustandAdvCoTo"));
@@ -1514,6 +1519,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 206 */}
+                <Route path="/blog/nuqs-url-state-management-useQueryState-nextjs-react-router-2024" element={<BlogNuqsUrlStateCoTo />} />
+                <Route path="/blog/prisma-6-accelerate-pulse-driver-adapters-neon-turso-2024" element={<BlogPrisma6AccelerateCoTo />} />
+                <Route path="/blog/react-spring-framer-motion-motion-one-gsap-animacje-react-2024" element={<BlogReactSpringMotionCoTo />} />
                 {/* Wave 205 */}
                 <Route path="/blog/eslint-9-flat-config-typescript-eslint-v8-stylistic-migracja-2024" element={<BlogEslint9FlatConfigCoTo />} />
                 <Route path="/blog/zustand-v5-jotai-v2-persist-immer-devtools-atomfamily-2024" element={<BlogZustandAdvCoTo />} />
