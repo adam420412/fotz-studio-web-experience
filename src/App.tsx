@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 132: Magic Number, DAU/MAU, Viral Coefficient
+const BlogMagicNumberCoTo = lazy(() => import("./pages/BlogMagicNumberCoTo"));
+const BlogDauMauCoTo = lazy(() => import("./pages/BlogDauMauCoTo"));
+const BlogViralCoefficientCoTo = lazy(() => import("./pages/BlogViralCoefficientCoTo"));
+
 // Wave 131: Feature Flags, Product Discovery, CRO
 const BlogFeatureFlagCoTo = lazy(() => import("./pages/BlogFeatureFlagCoTo"));
 const BlogProductDiscoveryCoTo = lazy(() => import("./pages/BlogProductDiscoveryCoTo"));
@@ -1146,6 +1151,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 132 */}
+                <Route path="/blog/magic-number-efektywnosc-sprzedazy-saas" element={<BlogMagicNumberCoTo />} />
+                <Route path="/blog/dau-mau-stickiness-metryki-zaangazowania" element={<BlogDauMauCoTo />} />
+                <Route path="/blog/viral-coefficient-wspolczynnik-viralnosci-produktu" element={<BlogViralCoefficientCoTo />} />
                 {/* Wave 131 */}
                 <Route path="/blog/feature-flags-co-to-jest-jak-stosowac" element={<BlogFeatureFlagCoTo />} />
                 <Route path="/blog/product-discovery-co-to-jest-jak-przeprowadzic" element={<BlogProductDiscoveryCoTo />} />
