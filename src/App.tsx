@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 24: Dropshipping, Allegro, E-commerce, Inbound marketing, Lejek
+const BlogDropshippingCoToJest = lazy(() => import("./pages/BlogDropshippingCoToJest"));
+const BlogJakSprzedawacNaAllegro = lazy(() => import("./pages/BlogJakSprzedawacNaAllegro"));
+const BlogEcommerceCoToJest = lazy(() => import("./pages/BlogEcommerceCoToJest"));
+
 // Wave 23: GTM, Link building, Core Web Vitals, Google Search Console
 const BlogGoogleTagManager = lazy(() => import("./pages/BlogGoogleTagManager"));
 const BlogLinkBuilding = lazy(() => import("./pages/BlogLinkBuilding"));
@@ -613,6 +618,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 24 */}
+                <Route path="/blog/dropshipping-co-to-jest" element={<BlogDropshippingCoToJest />} />
+                <Route path="/blog/jak-sprzedawac-na-allegro" element={<BlogJakSprzedawacNaAllegro />} />
+                <Route path="/blog/e-commerce-co-to-jest" element={<BlogEcommerceCoToJest />} />
                 {/* Wave 23 */}
                 <Route path="/blog/google-tag-manager-co-to" element={<BlogGoogleTagManager />} />
                 <Route path="/blog/link-building-co-to" element={<BlogLinkBuilding />} />
