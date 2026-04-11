@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 97: Design Sprint, Tech Debt, Value Stream Mapping
+const BlogDesignSprintCoTo = lazy(() => import("./pages/BlogDesignSprintCoTo"));
+const BlogTechDebtCoTo = lazy(() => import("./pages/BlogTechDebtCoTo"));
+const BlogValueStreamMappingCoTo = lazy(() => import("./pages/BlogValueStreamMappingCoTo"));
+
 // Wave 96: OKR, Service Blueprint, MVP
 const BlogOkrCoTo = lazy(() => import("./pages/BlogOkrCoTo"));
 const BlogServiceBlueprintCoTo = lazy(() => import("./pages/BlogServiceBlueprintCoTo"));
@@ -971,6 +976,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 97 */}
+                <Route path="/blog/design-sprint-co-to" element={<BlogDesignSprintCoTo />} />
+                <Route path="/blog/dług-techniczny-co-to" element={<BlogTechDebtCoTo />} />
+                <Route path="/blog/value-stream-mapping-co-to" element={<BlogValueStreamMappingCoTo />} />
                 {/* Wave 96 */}
                 <Route path="/blog/okr-co-to-jest" element={<BlogOkrCoTo />} />
                 <Route path="/blog/service-blueprint-co-to" element={<BlogServiceBlueprintCoTo />} />
