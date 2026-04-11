@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 158: Saga Pattern, Outbox Pattern, Idempotency
+const BlogSagaPatternCoTo = lazy(() => import("./pages/BlogSagaPatternCoTo"));
+const BlogOutboxPatternCoTo = lazy(() => import("./pages/BlogOutboxPatternCoTo"));
+const BlogIdempotencyCoTo = lazy(() => import("./pages/BlogIdempotencyCoTo"));
+
 // Wave 157: API Versioning, Real-time Comms, Envoy Proxy
 const BlogApiVersioningCoTo = lazy(() => import("./pages/BlogApiVersioningCoTo"));
 const BlogRealtimeCommsCoTo = lazy(() => import("./pages/BlogRealtimeCommsCoTo"));
@@ -1274,6 +1279,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 158 */}
+                <Route path="/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka" element={<BlogSagaPatternCoTo />} />
+                <Route path="/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring" element={<BlogOutboxPatternCoTo />} />
+                <Route path="/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka" element={<BlogIdempotencyCoTo />} />
                 {/* Wave 157 */}
                 <Route path="/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" element={<BlogApiVersioningCoTo />} />
                 <Route path="/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt" element={<BlogRealtimeCommsCoTo />} />
