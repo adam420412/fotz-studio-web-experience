@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 190: AI Image Generation, Supabase deep dive, Cloudflare Workers
+const BlogAiImageGenCoTo = lazy(() => import("./pages/BlogAiImageGenCoTo"));
+const BlogSupabaseDeepDiveCoTo = lazy(() => import("./pages/BlogSupabaseDeepDiveCoTo"));
+const BlogCloudflareWorkersCoTo = lazy(() => import("./pages/BlogCloudflareWorkersCoTo"));
+
 // Wave 189: Remix deep dive, React Compiler, Nuxt.js 3
 const BlogRemixDeepDiveCoTo = lazy(() => import("./pages/BlogRemixDeepDiveCoTo"));
 const BlogReactCompilerCoTo = lazy(() => import("./pages/BlogReactCompilerCoTo"));
@@ -1434,6 +1439,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 190 */}
+                <Route path="/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" element={<BlogAiImageGenCoTo />} />
+                <Route path="/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024" element={<BlogSupabaseDeepDiveCoTo />} />
+                <Route path="/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024" element={<BlogCloudflareWorkersCoTo />} />
                 {/* Wave 189 */}
                 <Route path="/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024" element={<BlogRemixDeepDiveCoTo />} />
                 <Route path="/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024" element={<BlogReactCompilerCoTo />} />
