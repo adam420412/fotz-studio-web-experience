@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 172: AI SDK/OpenAI, Stripe Payments, Email/Resend
+const BlogAiSdkCoTo = lazy(() => import("./pages/BlogAiSdkCoTo"));
+const BlogStripeCoTo = lazy(() => import("./pages/BlogStripeCoTo"));
+const BlogEmailResendCoTo = lazy(() => import("./pages/BlogEmailResendCoTo"));
+
 // Wave 171: Web Security, Firebase/Supabase, Algolia/Search
 const BlogWebSecurityCoTo = lazy(() => import("./pages/BlogWebSecurityCoTo"));
 const BlogFirebaseSupabaseCoTo = lazy(() => import("./pages/BlogFirebaseSupabaseCoTo"));
@@ -1344,6 +1349,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 172 */}
+                <Route path="/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024" element={<BlogAiSdkCoTo />} />
+                <Route path="/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024" element={<BlogStripeCoTo />} />
+                <Route path="/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024" element={<BlogEmailResendCoTo />} />
                 {/* Wave 171 */}
                 <Route path="/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs" element={<BlogWebSecurityCoTo />} />
                 <Route path="/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024" element={<BlogFirebaseSupabaseCoTo />} />
