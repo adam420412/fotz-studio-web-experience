@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 202: React Email+Resend, Local-First, PostHog+Sentry
+const BlogReactEmailResendCoTo = lazy(() => import("./pages/BlogReactEmailResendCoTo"));
+const BlogLocalFirstCoTo = lazy(() => import("./pages/BlogLocalFirstCoTo"));
+const BlogPosthogSentryCoTo = lazy(() => import("./pages/BlogPosthogSentryCoTo"));
+
 // Wave 201: Svelte 5 Runes+Angular 18/19, Capacitor+Ionic, GitHub Actions
 const BlogSvelte5RunesCoTo = lazy(() => import("./pages/BlogSvelte5RunesCoTo"));
 const BlogCapacitorIonicCoTo = lazy(() => import("./pages/BlogCapacitorIonicCoTo"));
@@ -1494,6 +1499,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 202 */}
+                <Route path="/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" element={<BlogReactEmailResendCoTo />} />
+                <Route path="/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024" element={<BlogLocalFirstCoTo />} />
+                <Route path="/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024" element={<BlogPosthogSentryCoTo />} />
                 {/* Wave 201 */}
                 <Route path="/blog/svelte-5-runes-angular-18-19-signals-sveltekit-2-frameworki-2024" element={<BlogSvelte5RunesCoTo />} />
                 <Route path="/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024" element={<BlogCapacitorIonicCoTo />} />
