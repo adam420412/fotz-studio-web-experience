@@ -275,6 +275,16 @@ const TworzenieStronTorun = lazy(() => import("./pages/TworzenieStronTorun"));
 const TworzenieStronSzczecin = lazy(() => import("./pages/TworzenieStronSzczecin"));
 const BlogJakZalozycSklep = lazy(() => import("./pages/BlogJakZalozycSklep"));
 
+// Wave 11: More tworzenie stron city pages + service pages + blog
+const TworzenieStronBydgoszcz = lazy(() => import("./pages/TworzenieStronBydgoszcz"));
+const TworzenieStronKatowice = lazy(() => import("./pages/TworzenieStronKatowice"));
+const TworzenieStronLublin = lazy(() => import("./pages/TworzenieStronLublin"));
+const TworzenieStronPoznan = lazy(() => import("./pages/TworzenieStronPoznan"));
+const MarketingInternetowy = lazy(() => import("./pages/MarketingInternetowy"));
+const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
+const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
+const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
+
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
@@ -499,6 +509,14 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/torun" element={<TworzenieStronTorun />} />
                 <Route path="/uslugi/tworzenie-stron-internetowych/szczecin" element={<TworzenieStronSzczecin />} />
                 <Route path="/blog/jak-zalozyc-sklep-internetowy" element={<BlogJakZalozycSklep />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/bydgoszcz" element={<TworzenieStronBydgoszcz />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/katowice" element={<TworzenieStronKatowice />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/lublin" element={<TworzenieStronLublin />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/poznan" element={<TworzenieStronPoznan />} />
+                <Route path="/uslugi/marketing-internetowy" element={<MarketingInternetowy />} />
+                <Route path="/agencja-seo-warszawa" element={<AgencjaSEOWarszawa />} />
+                <Route path="/blog/dropshipping-polska" element={<BlogDropshippingPolska />} />
+                <Route path="/blog/reklama-w-google" element={<BlogReklamaWGoogle />} />
                 <Route path="/uslugi/projektowanie-stron-internetowych" element={<ProjektowanieStronInternetowych />} />
                 <Route path="/uslugi/strony-internetowe/lubelskie" element={<StronyInternetoweLubelskie />} />
                 <Route path="/uslugi/strony-internetowe/wielkopolska" element={<StronyInternetoweWielkopolska />} />
