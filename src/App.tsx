@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 75: Loyalty Program, Personalization Marketing, Mobile Marketing
+const BlogLoyaltyProgramCoTo = lazy(() => import("./pages/BlogLoyaltyProgramCoTo"));
+const BlogPersonalizationMarketingCoTo = lazy(() => import("./pages/BlogPersonalizationMarketingCoTo"));
+const BlogMobileMarketingCoTo = lazy(() => import("./pages/BlogMobileMarketingCoTo"));
+
 // Wave 74: Cause Marketing, Customer Acquisition, Customer Retention
 const BlogCauseMarketingCoTo = lazy(() => import("./pages/BlogCauseMarketingCoTo"));
 const BlogCustomerAcquisitionCoTo = lazy(() => import("./pages/BlogCustomerAcquisitionCoTo"));
@@ -862,6 +867,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 75 */}
+                <Route path="/blog/loyalty-program-co-to" element={<BlogLoyaltyProgramCoTo />} />
+                <Route path="/blog/personalizacja-marketingu-co-to" element={<BlogPersonalizationMarketingCoTo />} />
+                <Route path="/blog/mobile-marketing-co-to" element={<BlogMobileMarketingCoTo />} />
                 {/* Wave 74 */}
                 <Route path="/blog/cause-marketing-co-to" element={<BlogCauseMarketingCoTo />} />
                 <Route path="/blog/customer-acquisition-co-to" element={<BlogCustomerAcquisitionCoTo />} />
