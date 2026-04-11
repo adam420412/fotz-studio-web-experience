@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 167: ESLint/Biome, TypeScript Advanced, React Patterns
+const BlogEslintBiomeCoTo = lazy(() => import("./pages/BlogEslintBiomeCoTo"));
+const BlogTypescriptAdvancedCoTo = lazy(() => import("./pages/BlogTypescriptAdvancedCoTo"));
+const BlogReactPatternsCoTo = lazy(() => import("./pages/BlogReactPatternsCoTo"));
+
 // Wave 166: Tailwind/shadcn, Core Web Vitals, Accessibility a11y
 const BlogTailwindShadcnCoTo = lazy(() => import("./pages/BlogTailwindShadcnCoTo"));
 const BlogCoreWebVitalsCoTo = lazy(() => import("./pages/BlogCoreWebVitalsCoTo"));
@@ -1319,6 +1324,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 167 */}
+                <Route path="/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024" element={<BlogEslintBiomeCoTo />} />
+                <Route path="/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5" element={<BlogTypescriptAdvancedCoTo />} />
+                <Route path="/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary" element={<BlogReactPatternsCoTo />} />
                 {/* Wave 166 */}
                 <Route path="/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024" element={<BlogTailwindShadcnCoTo />} />
                 <Route path="/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024" element={<BlogCoreWebVitalsCoTo />} />
