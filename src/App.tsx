@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 144: Win Rate, Conversion Funnel, Churn Prediction
+const BlogWinRateCoTo = lazy(() => import("./pages/BlogWinRateCoTo"));
+const BlogConversionFunnelCoTo = lazy(() => import("./pages/BlogConversionFunnelCoTo"));
+const BlogChurnPredictionCoTo = lazy(() => import("./pages/BlogChurnPredictionCoTo"));
+
 // Wave 143: Quota Planning, NRR/GRR, Pipeline Velocity
 const BlogQuotaPlanningCoTo = lazy(() => import("./pages/BlogQuotaPlanningCoTo"));
 const BlogNrrGrrCoTo = lazy(() => import("./pages/BlogNrrGrrCoTo"));
@@ -1206,6 +1211,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 144 */}
+                <Route path="/blog/win-rate-wskaznik-wygranych-jak-poprawic" element={<BlogWinRateCoTo />} />
+                <Route path="/blog/lejek-konwersji-conversion-funnel-co-to-jest" element={<BlogConversionFunnelCoTo />} />
+                <Route path="/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu" element={<BlogChurnPredictionCoTo />} />
                 {/* Wave 143 */}
                 <Route path="/blog/quota-planning-targetowanie-sprzedazowe-saas" element={<BlogQuotaPlanningCoTo />} />
                 <Route path="/blog/nrr-grr-net-revenue-retention-co-to-jest" element={<BlogNrrGrrCoTo />} />
