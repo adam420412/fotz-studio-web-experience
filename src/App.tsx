@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 128: Category Creation, Churn Prevention, Expansion Revenue
+const BlogCategoryCreationCoTo = lazy(() => import("./pages/BlogCategoryCreationCoTo"));
+const BlogChurnPreventionCoTo = lazy(() => import("./pages/BlogChurnPreventionCoTo"));
+const BlogExpansionRevenueCoTo = lazy(() => import("./pages/BlogExpansionRevenueCoTo"));
+
 // Wave 127: Investor Update, OTE, Champion Building
 const BlogInvestorUpdateCoTo = lazy(() => import("./pages/BlogInvestorUpdateCoTo"));
 const BlogOteCoToJest = lazy(() => import("./pages/BlogOteCoToJest"));
@@ -1126,6 +1131,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 128 */}
+                <Route path="/blog/category-creation-tworzenie-kategorii-rynkowej" element={<BlogCategoryCreationCoTo />} />
+                <Route path="/blog/churn-prevention-zapobieganie-odejsciom-klientow" element={<BlogChurnPreventionCoTo />} />
+                <Route path="/blog/expansion-revenue-upsell-cross-sell-saas" element={<BlogExpansionRevenueCoTo />} />
                 {/* Wave 127 */}
                 <Route path="/blog/investor-update-aktualizacja-dla-inwestorow" element={<BlogInvestorUpdateCoTo />} />
                 <Route path="/blog/ote-on-target-earnings-sprzedaz-b2b" element={<BlogOteCoToJest />} />
