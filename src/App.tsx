@@ -285,6 +285,10 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 41: Programmatic Advertising, Customer Success
+const BlogProgrammaticCoTo = lazy(() => import("./pages/BlogProgrammaticCoTo"));
+const BlogCustomerSuccessCoTo = lazy(() => import("./pages/BlogCustomerSuccessCoTo"));
+
 // Wave 40: GTM Strategy, ABM, Demand Generation
 const BlogGTMStrategyCoTo = lazy(() => import("./pages/BlogGTMStrategyCoTo"));
 const BlogABMCoTo = lazy(() => import("./pages/BlogABMCoTo"));
@@ -706,6 +710,9 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 41 */}
+                <Route path="/blog/programmatic-advertising-co-to" element={<BlogProgrammaticCoTo />} />
+                <Route path="/blog/customer-success-co-to" element={<BlogCustomerSuccessCoTo />} />
                 {/* Wave 40 */}
                 <Route path="/blog/gtm-strategy-co-to" element={<BlogGTMStrategyCoTo />} />
                 <Route path="/blog/abm-co-to-jest" element={<BlogABMCoTo />} />
