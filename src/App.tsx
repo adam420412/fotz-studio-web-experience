@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 111: Terraform, MongoDB, TypeScript
+const BlogTerraformCoTo = lazy(() => import("./pages/BlogTerraformCoTo"));
+const BlogMongodbCoTo = lazy(() => import("./pages/BlogMongodbCoTo"));
+const BlogTypescriptCoTo = lazy(() => import("./pages/BlogTypescriptCoTo"));
+
 // Wave 110: Kubernetes, Redis, AWS
 const BlogKubernetesCoTo = lazy(() => import("./pages/BlogKubernetesCoTo"));
 const BlogRedisCoTo = lazy(() => import("./pages/BlogRedisCoTo"));
@@ -1041,6 +1046,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 111 */}
+                <Route path="/blog/terraform-co-to-jest" element={<BlogTerraformCoTo />} />
+                <Route path="/blog/mongodb-co-to-jest" element={<BlogMongodbCoTo />} />
+                <Route path="/blog/typescript-co-to-jest" element={<BlogTypescriptCoTo />} />
                 {/* Wave 110 */}
                 <Route path="/blog/kubernetes-co-to-jest" element={<BlogKubernetesCoTo />} />
                 <Route path="/blog/redis-co-to-jest" element={<BlogRedisCoTo />} />
