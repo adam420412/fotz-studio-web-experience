@@ -285,6 +285,14 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 14: Social media, rebranding, copywriting, WordPress, identyfikacja wizualna
+const SocialMediaMarketing = lazy(() => import("./pages/SocialMediaMarketing"));
+const BlogRebrandingCoTo = lazy(() => import("./pages/BlogRebrandingCoTo"));
+const BlogCopywritingCoTo = lazy(() => import("./pages/BlogCopywritingCoTo"));
+const StronaWordPress = lazy(() => import("./pages/StronaWordPress"));
+const IdentyfikacjaWizualnaFirmy = lazy(() => import("./pages/IdentyfikacjaWizualnaFirmy"));
+const BlogCopywritingCennik = lazy(() => import("./pages/BlogCopywritingCennik"));
+
 // Wave 13: Google Ads campaign, B2B marketing, optimization, one-page, SEO cities
 const KampaniaGoogleAds = lazy(() => import("./pages/KampaniaGoogleAds"));
 const MarketingB2B = lazy(() => import("./pages/MarketingB2B"));
@@ -545,6 +553,13 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 14 */}
+                <Route path="/uslugi/social-media-marketing" element={<SocialMediaMarketing />} />
+                <Route path="/blog/rebranding-co-to" element={<BlogRebrandingCoTo />} />
+                <Route path="/blog/copywriting-co-to" element={<BlogCopywritingCoTo />} />
+                <Route path="/uslugi/strona-wordpress" element={<StronaWordPress />} />
+                <Route path="/uslugi/identyfikacja-wizualna-firmy" element={<IdentyfikacjaWizualnaFirmy />} />
+                <Route path="/blog/copywriting-cennik" element={<BlogCopywritingCennik />} />
                 <Route path="/uslugi/kampania-google-ads" element={<KampaniaGoogleAds />} />
                 <Route path="/uslugi/marketing-b2b" element={<MarketingB2B />} />
                 <Route path="/uslugi/audyt-strony-internetowej" element={<AudytStronyInternetowej />} />
