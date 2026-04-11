@@ -285,6 +285,10 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 49: ICP, Content Strategy
+const BlogICPCoTo = lazy(() => import("./pages/BlogICPCoTo"));
+const BlogContentStrategyCoTo = lazy(() => import("./pages/BlogContentStrategyCoTo"));
+
 // Wave 48: Marketing Automation
 const BlogMarketingAutomationCoTo = lazy(() => import("./pages/BlogMarketingAutomationCoTo"));
 
@@ -738,6 +742,9 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 49 */}
+                <Route path="/blog/icp-co-to-jest" element={<BlogICPCoTo />} />
+                <Route path="/blog/content-strategy-co-to" element={<BlogContentStrategyCoTo />} />
                 {/* Wave 48 */}
                 <Route path="/blog/marketing-automation-co-to" element={<BlogMarketingAutomationCoTo />} />
                 {/* Wave 47 */}
