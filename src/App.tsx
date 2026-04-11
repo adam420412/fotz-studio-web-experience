@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 180: React Flow/Graphs, Canvas/Konva, React Three Fiber 3D
+const BlogReactFlowCoTo = lazy(() => import("./pages/BlogReactFlowCoTo"));
+const BlogKonvaCanvasCoTo = lazy(() => import("./pages/BlogKonvaCanvasCoTo"));
+const BlogReactThreeFiberCoTo = lazy(() => import("./pages/BlogReactThreeFiberCoTo"));
+
 // Wave 179: Image Optimization, Tiptap/Rich Text, Font Optimization
 const BlogNextImageCoTo = lazy(() => import("./pages/BlogNextImageCoTo"));
 const BlogTiptapLexicalCoTo = lazy(() => import("./pages/BlogTiptapLexicalCoTo"));
@@ -1384,6 +1389,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 180 */}
+                <Route path="/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024" element={<BlogReactFlowCoTo />} />
+                <Route path="/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024" element={<BlogKonvaCanvasCoTo />} />
+                <Route path="/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024" element={<BlogReactThreeFiberCoTo />} />
                 {/* Wave 179 */}
                 <Route path="/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024" element={<BlogNextImageCoTo />} />
                 <Route path="/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024" element={<BlogTiptapLexicalCoTo />} />
