@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 100: Sentiment Analysis, Growth Loop, Data-Driven Marketing
+const BlogSentimentAnalysisCoTo = lazy(() => import("./pages/BlogSentimentAnalysisCoTo"));
+const BlogGrowthLoopCoTo = lazy(() => import("./pages/BlogGrowthLoopCoTo"));
+const BlogDataDrivenMarketingCoTo = lazy(() => import("./pages/BlogDataDrivenMarketingCoTo"));
+
 // Wave 99: Event Tracking, Funnel Analytics, Social Listening
 const BlogEventTrackingCoTo = lazy(() => import("./pages/BlogEventTrackingCoTo"));
 const BlogFunnelAnalyticsCoTo = lazy(() => import("./pages/BlogFunnelAnalyticsCoTo"));
@@ -986,6 +991,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 100 */}
+                <Route path="/blog/analiza-sentymentu-co-to" element={<BlogSentimentAnalysisCoTo />} />
+                <Route path="/blog/growth-loop-co-to" element={<BlogGrowthLoopCoTo />} />
+                <Route path="/blog/data-driven-marketing-co-to" element={<BlogDataDrivenMarketingCoTo />} />
                 {/* Wave 99 */}
                 <Route path="/blog/event-tracking-co-to" element={<BlogEventTrackingCoTo />} />
                 <Route path="/blog/funnel-analytics-co-to" element={<BlogFunnelAnalyticsCoTo />} />
