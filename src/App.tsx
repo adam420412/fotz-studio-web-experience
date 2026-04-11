@@ -285,6 +285,12 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 21: Newsletter, CMS, marketing afiliacyjny, prawnik, landing page
+const BlogNewsletterCoTo = lazy(() => import("./pages/BlogNewsletterCoTo"));
+const BlogMarketingAfiliacyjny = lazy(() => import("./pages/BlogMarketingAfiliacyjny"));
+const BlogCMSCoToJest = lazy(() => import("./pages/BlogCMSCoToJest"));
+const StronaInternetowaDlaPrawnika = lazy(() => import("./pages/StronaInternetowaDlaPrawnika"));
+
 // Wave 20: Pozycjonowanie sklepu, branding, UI/UX, stomatolog, SEO e-commerce
 const BlogPozycjonowanieSklepu = lazy(() => import("./pages/BlogPozycjonowanieSklepu"));
 const BlogBrandingCoTo = lazy(() => import("./pages/BlogBrandingCoTo"));
@@ -594,6 +600,11 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 21 */}
+                <Route path="/blog/newsletter-co-to" element={<BlogNewsletterCoTo />} />
+                <Route path="/blog/marketing-afiliacyjny-co-to" element={<BlogMarketingAfiliacyjny />} />
+                <Route path="/blog/co-to-jest-cms" element={<BlogCMSCoToJest />} />
+                <Route path="/uslugi/strona-internetowa-dla-prawnika" element={<StronaInternetowaDlaPrawnika />} />
                 {/* Wave 20 */}
                 <Route path="/blog/pozycjonowanie-sklepu-internetowego" element={<BlogPozycjonowanieSklepu />} />
                 <Route path="/blog/branding-co-to" element={<BlogBrandingCoTo />} />
