@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 198: Rspack+Farm+Rolldown, Legend State+Nanostores, CSS Container+@layer
+const BlogRspackFarmRolldownCoTo = lazy(() => import("./pages/BlogRspackFarmRolldownCoTo"));
+const BlogLegendStateNanostoresCoTo = lazy(() => import("./pages/BlogLegendStateNanostoresCoTo"));
+const BlogCssContainerLayerCoTo = lazy(() => import("./pages/BlogCssContainerLayerCoTo"));
+
 // Wave 197: Valibot+ArkType, React Concurrent, JS Memory Management
 const BlogValibotArktypeCoTo = lazy(() => import("./pages/BlogValibotArktypeCoTo"));
 const BlogReactConcurrentCoTo = lazy(() => import("./pages/BlogReactConcurrentCoTo"));
@@ -1474,6 +1479,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 198 */}
+                <Route path="/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024" element={<BlogRspackFarmRolldownCoTo />} />
+                <Route path="/blog/legend-state-nanostores-valtio-signals-state-management-react-2024" element={<BlogLegendStateNanostoresCoTo />} />
+                <Route path="/blog/css-container-queries-layer-nesting-scope-view-transitions-2024" element={<BlogCssContainerLayerCoTo />} />
                 {/* Wave 197 */}
                 <Route path="/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024" element={<BlogValibotArktypeCoTo />} />
                 <Route path="/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024" element={<BlogReactConcurrentCoTo />} />
