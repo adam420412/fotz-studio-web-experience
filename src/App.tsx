@@ -285,6 +285,9 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 51: Growth Marketing
+const BlogGrowthMarketingCoTo = lazy(() => import("./pages/BlogGrowthMarketingCoTo"));
+
 // Wave 50: SEO Lokalne, Technical SEO
 const BlogSEOLokalneCoTo = lazy(() => import("./pages/BlogSEOLokalneCoTo"));
 const BlogTechnicalSEOCoTo = lazy(() => import("./pages/BlogTechnicalSEOCoTo"));
@@ -746,6 +749,8 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 51 */}
+                <Route path="/blog/growth-marketing-co-to" element={<BlogGrowthMarketingCoTo />} />
                 {/* Wave 50 */}
                 <Route path="/blog/seo-lokalne-co-to" element={<BlogSEOLokalneCoTo />} />
                 <Route path="/blog/technical-seo-co-to" element={<BlogTechnicalSEOCoTo />} />
