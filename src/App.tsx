@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 207: shadcn/ui Advanced, Payload CMS v3, Biome+OXC
+const BlogShadcnAdvCoTo = lazy(() => import("./pages/BlogShadcnAdvCoTo"));
+const BlogPayloadCmsCoTo = lazy(() => import("./pages/BlogPayloadCmsCoTo"));
+const BlogBiomeOxcCoTo = lazy(() => import("./pages/BlogBiomeOxcCoTo"));
+
 // Wave 206: nuqs URL State, Prisma 6+Accelerate, react-spring+Motion
 const BlogNuqsUrlStateCoTo = lazy(() => import("./pages/BlogNuqsUrlStateCoTo"));
 const BlogPrisma6AccelerateCoTo = lazy(() => import("./pages/BlogPrisma6AccelerateCoTo"));
@@ -1519,6 +1524,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 207 */}
+                <Route path="/blog/shadcn-ui-charts-sidebar-blocks-registry-better-auth-next-safe-action-2024" element={<BlogShadcnAdvCoTo />} />
+                <Route path="/blog/payload-cms-v3-sanity-keystatic-tina-headless-cms-nextjs-2024" element={<BlogPayloadCmsCoTo />} />
+                <Route path="/blog/biome-oxlint-oxc-rust-linting-formatowanie-zamiast-eslint-prettier-2024" element={<BlogBiomeOxcCoTo />} />
                 {/* Wave 206 */}
                 <Route path="/blog/nuqs-url-state-management-useQueryState-nextjs-react-router-2024" element={<BlogNuqsUrlStateCoTo />} />
                 <Route path="/blog/prisma-6-accelerate-pulse-driver-adapters-neon-turso-2024" element={<BlogPrisma6AccelerateCoTo />} />
