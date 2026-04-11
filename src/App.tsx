@@ -285,6 +285,12 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 37: Lejek Sprzedazowy, Churn Rate, Onboarding, Omnichannel
+const BlogLejekSprzedazowy = lazy(() => import("./pages/BlogLejekSprzedazowy"));
+const BlogChurnRateCoTo = lazy(() => import("./pages/BlogChurnRateCoTo"));
+const BlogOnboardingCoToJest = lazy(() => import("./pages/BlogOnboardingCoToJest"));
+const BlogOmnichannelCoTo = lazy(() => import("./pages/BlogOmnichannelCoTo"));
+
 // Wave 36: Customer Journey, CRM, Influencer Marketing
 const BlogCustomerJourneyCoTo = lazy(() => import("./pages/BlogCustomerJourneyCoTo"));
 const BlogCRMCoToJest = lazy(() => import("./pages/BlogCRMCoToJest"));
@@ -685,6 +691,11 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 37 */}
+                <Route path="/blog/lejek-sprzedazowy-co-to" element={<BlogLejekSprzedazowy />} />
+                <Route path="/blog/churn-rate-co-to" element={<BlogChurnRateCoTo />} />
+                <Route path="/blog/onboarding-co-to-jest" element={<BlogOnboardingCoToJest />} />
+                <Route path="/blog/omnichannel-co-to" element={<BlogOmnichannelCoTo />} />
                 {/* Wave 36 */}
                 <Route path="/blog/customer-journey-co-to" element={<BlogCustomerJourneyCoTo />} />
                 <Route path="/blog/crm-co-to-jest" element={<BlogCRMCoToJest />} />
