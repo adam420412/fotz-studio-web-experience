@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 55: Social Proof, Digital PR, Voice Search
+const BlogSocialProofCoTo = lazy(() => import("./pages/BlogSocialProofCoTo"));
+const BlogDigitalPRCoTo = lazy(() => import("./pages/BlogDigitalPRCoTo"));
+const BlogVoiceSearchCoTo = lazy(() => import("./pages/BlogVoiceSearchCoTo"));
+
 // Wave 54: Internal Linking, Keyword Research, Google Business Profile
 const BlogInternalLinkingCoTo = lazy(() => import("./pages/BlogInternalLinkingCoTo"));
 const BlogKeywordResearchCoTo = lazy(() => import("./pages/BlogKeywordResearchCoTo"));
@@ -763,6 +768,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 55 */}
+                <Route path="/blog/social-proof-co-to" element={<BlogSocialProofCoTo />} />
+                <Route path="/blog/digital-pr-co-to" element={<BlogDigitalPRCoTo />} />
+                <Route path="/blog/voice-search-seo" element={<BlogVoiceSearchCoTo />} />
                 {/* Wave 54 */}
                 <Route path="/blog/internal-linking-co-to" element={<BlogInternalLinkingCoTo />} />
                 <Route path="/blog/keyword-research-co-to" element={<BlogKeywordResearchCoTo />} />
