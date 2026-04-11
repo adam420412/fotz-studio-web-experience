@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 152: WebAssembly, GraphQL Federation, Event-Driven Architecture
+const BlogWasmCoTo = lazy(() => import("./pages/BlogWasmCoTo"));
+const BlogGraphQLFederationCoTo = lazy(() => import("./pages/BlogGraphQLFederationCoTo"));
+const BlogEventDrivenCoTo = lazy(() => import("./pages/BlogEventDrivenCoTo"));
+
 // Wave 151: PWA, Low-Code/No-Code, Web3
 const BlogPwaCoTo = lazy(() => import("./pages/BlogPwaCoTo"));
 const BlogLowCodeCoTo = lazy(() => import("./pages/BlogLowCodeCoTo"));
@@ -1246,6 +1251,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 152 */}
+                <Route path="/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten" element={<BlogWasmCoTo />} />
+                <Route path="/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy" element={<BlogGraphQLFederationCoTo />} />
+                <Route path="/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing" element={<BlogEventDrivenCoTo />} />
                 {/* Wave 151 */}
                 <Route path="/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz" element={<BlogPwaCoTo />} />
                 <Route path="/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n" element={<BlogLowCodeCoTo />} />
