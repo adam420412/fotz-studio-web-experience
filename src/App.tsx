@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 205: ESLint 9 Flat Config, Zustand v5+Jotai v2, GraphQL Yoga+Pothos
+const BlogEslint9FlatConfigCoTo = lazy(() => import("./pages/BlogEslint9FlatConfigCoTo"));
+const BlogZustandAdvCoTo = lazy(() => import("./pages/BlogZustandAdvCoTo"));
+const BlogGraphqlYogaPothosCoTo = lazy(() => import("./pages/BlogGraphqlYogaPothosCoTo"));
+
 // Wave 204: Vite 6+Rolldown, Drizzle ORM Advanced, Node.js 22/23
 const BlogVite6RolldownCoTo = lazy(() => import("./pages/BlogVite6RolldownCoTo"));
 const BlogDrizzleAdvCoTo = lazy(() => import("./pages/BlogDrizzleAdvCoTo"));
@@ -1509,6 +1514,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 205 */}
+                <Route path="/blog/eslint-9-flat-config-typescript-eslint-v8-stylistic-migracja-2024" element={<BlogEslint9FlatConfigCoTo />} />
+                <Route path="/blog/zustand-v5-jotai-v2-persist-immer-devtools-atomfamily-2024" element={<BlogZustandAdvCoTo />} />
+                <Route path="/blog/graphql-yoga-pothos-codegen-dataloader-subscriptions-2024" element={<BlogGraphqlYogaPothosCoTo />} />
                 {/* Wave 204 */}
                 <Route path="/blog/vite-6-rolldown-environment-api-rust-bundler-oxc-2024" element={<BlogVite6RolldownCoTo />} />
                 <Route path="/blog/drizzle-orm-relations-kit-studio-neon-turso-drizzle-seed-2024" element={<BlogDrizzleAdvCoTo />} />
