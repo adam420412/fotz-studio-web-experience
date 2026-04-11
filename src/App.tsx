@@ -285,6 +285,13 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 18: Google Ads co to, SEO co to, pozycjonowanie co to, WooCommerce, kurs Google Ads
+const BlogGoogleAdsCoTo = lazy(() => import("./pages/BlogGoogleAdsCoTo"));
+const BlogSEOCoToJest = lazy(() => import("./pages/BlogSEOCoToJest"));
+const BlogPozycjonowanieCoTo = lazy(() => import("./pages/BlogPozycjonowanieCoTo"));
+const SklepWooCommerce = lazy(() => import("./pages/SklepWooCommerce"));
+const BlogKursGoogleAds = lazy(() => import("./pages/BlogKursGoogleAds"));
+
 // Wave 17: Shopify, cenniki stron, wizytówka Google, sklep cena
 const BlogShopifyPolska = lazy(() => import("./pages/BlogShopifyPolska"));
 const BlogTworzenieStronCennik = lazy(() => import("./pages/BlogTworzenieStronCennik"));
@@ -574,6 +581,12 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 18 */}
+                <Route path="/blog/google-ads-co-to" element={<BlogGoogleAdsCoTo />} />
+                <Route path="/blog/seo-co-to-jest" element={<BlogSEOCoToJest />} />
+                <Route path="/blog/pozycjonowanie-co-to" element={<BlogPozycjonowanieCoTo />} />
+                <Route path="/uslugi/sklep-woocommerce" element={<SklepWooCommerce />} />
+                <Route path="/blog/kurs-google-ads" element={<BlogKursGoogleAds />} />
                 {/* Wave 17 */}
                 <Route path="/blog/shopify-polska" element={<BlogShopifyPolska />} />
                 <Route path="/blog/tworzenie-stron-internetowych-cennik" element={<BlogTworzenieStronCennik />} />
