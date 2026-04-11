@@ -285,6 +285,10 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 46: SaaS Pricing, Email Sequence
+const BlogSaaSPricingCoTo = lazy(() => import("./pages/BlogSaaSPricingCoTo"));
+const BlogEmailSequenceCoTo = lazy(() => import("./pages/BlogEmailSequenceCoTo"));
+
 // Wave 45: LinkedIn Marketing, Content Calendar, RevOps
 const BlogLinkedInMarketingCoTo = lazy(() => import("./pages/BlogLinkedInMarketingCoTo"));
 const BlogContentCalendarCoTo = lazy(() => import("./pages/BlogContentCalendarCoTo"));
@@ -728,6 +732,9 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 46 */}
+                <Route path="/blog/saas-pricing-modele-cenowe" element={<BlogSaaSPricingCoTo />} />
+                <Route path="/blog/email-sequence-co-to" element={<BlogEmailSequenceCoTo />} />
                 {/* Wave 45 */}
                 <Route path="/blog/linkedin-marketing-co-to" element={<BlogLinkedInMarketingCoTo />} />
                 <Route path="/blog/content-calendar-co-to" element={<BlogContentCalendarCoTo />} />
