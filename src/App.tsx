@@ -285,6 +285,13 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 29: NPS, Startup, SaaS, UX Design, MRR/ARR
+const BlogNPSCoToJest = lazy(() => import("./pages/BlogNPSCoToJest"));
+const BlogStartupCoToJest = lazy(() => import("./pages/BlogStartupCoToJest"));
+const BlogSaaSCoToJest = lazy(() => import("./pages/BlogSaaSCoToJest"));
+const BlogUXDesignCoTo = lazy(() => import("./pages/BlogUXDesignCoTo"));
+const BlogMRRARRCoTo = lazy(() => import("./pages/BlogMRRARRCoTo"));
+
 // Wave 28: B2B, Venture Capital, Pitch deck, Cross-selling, ERP
 const BlogB2BCoToJest = lazy(() => import("./pages/BlogB2BCoToJest"));
 const BlogVentureCapital = lazy(() => import("./pages/BlogVentureCapital"));
@@ -642,6 +649,12 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 29 */}
+                <Route path="/blog/nps-co-to-jest" element={<BlogNPSCoToJest />} />
+                <Route path="/blog/startup-co-to-jest" element={<BlogStartupCoToJest />} />
+                <Route path="/blog/saas-co-to-jest" element={<BlogSaaSCoToJest />} />
+                <Route path="/blog/ux-design-co-to" element={<BlogUXDesignCoTo />} />
+                <Route path="/blog/mrr-arr-co-to" element={<BlogMRRARRCoTo />} />
                 {/* Wave 28 */}
                 <Route path="/blog/b2b-co-to-jest" element={<BlogB2BCoToJest />} />
                 <Route path="/blog/venture-capital-co-to" element={<BlogVentureCapital />} />
