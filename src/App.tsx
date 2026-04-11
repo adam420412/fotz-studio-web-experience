@@ -285,6 +285,10 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 42: Freemium, Social Selling
+const BlogFreemiumCoTo = lazy(() => import("./pages/BlogFreemiumCoTo"));
+const BlogSocialSellingCoTo = lazy(() => import("./pages/BlogSocialSellingCoTo"));
+
 // Wave 41: Programmatic Advertising, Customer Success
 const BlogProgrammaticCoTo = lazy(() => import("./pages/BlogProgrammaticCoTo"));
 const BlogCustomerSuccessCoTo = lazy(() => import("./pages/BlogCustomerSuccessCoTo"));
@@ -710,6 +714,9 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 42 */}
+                <Route path="/blog/freemium-co-to" element={<BlogFreemiumCoTo />} />
+                <Route path="/blog/social-selling-co-to" element={<BlogSocialSellingCoTo />} />
                 {/* Wave 41 */}
                 <Route path="/blog/programmatic-advertising-co-to" element={<BlogProgrammaticCoTo />} />
                 <Route path="/blog/customer-success-co-to" element={<BlogCustomerSuccessCoTo />} />
