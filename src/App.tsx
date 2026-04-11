@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 115: CSAT, Customer Health Score, Land & Expand
+const BlogCsatCoTo = lazy(() => import("./pages/BlogCsatCoTo"));
+const BlogCustomerHealthScoreCoTo = lazy(() => import("./pages/BlogCustomerHealthScoreCoTo"));
+const BlogLandAndExpandCoTo = lazy(() => import("./pages/BlogLandAndExpandCoTo"));
+
 // Wave 114: Sales Forecasting, MEDDIC, Objection Handling
 const BlogSalesForecastingCoTo = lazy(() => import("./pages/BlogSalesForecastingCoTo"));
 const BlogMeddicCoTo = lazy(() => import("./pages/BlogMeddicCoTo"));
@@ -1061,6 +1066,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 115 */}
+                <Route path="/blog/csat-customer-satisfaction-score-co-to" element={<BlogCsatCoTo />} />
+                <Route path="/blog/customer-health-score-co-to" element={<BlogCustomerHealthScoreCoTo />} />
+                <Route path="/blog/land-and-expand-strategia" element={<BlogLandAndExpandCoTo />} />
                 {/* Wave 114 */}
                 <Route path="/blog/sales-forecasting-prognozowanie-sprzedazy" element={<BlogSalesForecastingCoTo />} />
                 <Route path="/blog/meddic-kwalifikacja-sprzedazy-b2b" element={<BlogMeddicCoTo />} />
