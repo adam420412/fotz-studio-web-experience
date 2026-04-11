@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 147: Observability, Service Mesh, gRPC
+const BlogObservabilityCoTo = lazy(() => import("./pages/BlogObservabilityCoTo"));
+const BlogServiceMeshCoTo = lazy(() => import("./pages/BlogServiceMeshCoTo"));
+const BlogGrpcCoTo = lazy(() => import("./pages/BlogGrpcCoTo"));
+
 // Wave 146: GitOps, DORA Metrics, Chaos Engineering
 const BlogGitOpsCoTo = lazy(() => import("./pages/BlogGitOpsCoTo"));
 const BlogDoraMetricsCoTo = lazy(() => import("./pages/BlogDoraMetricsCoTo"));
@@ -1221,6 +1226,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 147 */}
+                <Route path="/blog/observability-co-to-jest-opentelemetry-prometheus-grafana" element={<BlogObservabilityCoTo />} />
+                <Route path="/blog/service-mesh-co-to-jest-istio-linkerd-mtls" element={<BlogServiceMeshCoTo />} />
+                <Route path="/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy" element={<BlogGrpcCoTo />} />
                 {/* Wave 146 */}
                 <Route path="/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux" element={<BlogGitOpsCoTo />} />
                 <Route path="/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops" element={<BlogDoraMetricsCoTo />} />
