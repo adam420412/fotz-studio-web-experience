@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 187: SvelteKit, OpenAI Assistants API, Zod Advanced
+const BlogSvelteKitCoTo = lazy(() => import("./pages/BlogSvelteKitCoTo"));
+const BlogOpenAiAssistantsCoTo = lazy(() => import("./pages/BlogOpenAiAssistantsCoTo"));
+const BlogZodAdvancedCoTo = lazy(() => import("./pages/BlogZodAdvancedCoTo"));
+
 // Wave 186: BullMQ Job Queues, Next.js Middleware, LLM Tool Calling
 const BlogBullmqCoTo = lazy(() => import("./pages/BlogBullmqCoTo"));
 const BlogNextMiddlewareCoTo = lazy(() => import("./pages/BlogNextMiddlewareCoTo"));
@@ -1419,6 +1424,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 187 */}
+                <Route path="/blog/sveltekit-routing-load-functions-form-actions-adaptery-2024" element={<BlogSvelteKitCoTo />} />
+                <Route path="/blog/openai-assistants-api-threads-file-search-code-interpreter-2024" element={<BlogOpenAiAssistantsCoTo />} />
+                <Route path="/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024" element={<BlogZodAdvancedCoTo />} />
                 {/* Wave 186 */}
                 <Route path="/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024" element={<BlogBullmqCoTo />} />
                 <Route path="/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024" element={<BlogNextMiddlewareCoTo />} />
