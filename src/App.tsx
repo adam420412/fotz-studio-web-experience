@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 72: Event Marketing, Brand Activation, Social Commerce
+const BlogEventMarketingCoTo = lazy(() => import("./pages/BlogEventMarketingCoTo"));
+const BlogBrandActivationCoTo = lazy(() => import("./pages/BlogBrandActivationCoTo"));
+const BlogSocialCommerceCoTo = lazy(() => import("./pages/BlogSocialCommerceCoTo"));
+
 // Wave 71: Viral Marketing, Word of Mouth, Guerrilla Marketing
 const BlogViralMarketingCoTo = lazy(() => import("./pages/BlogViralMarketingCoTo"));
 const BlogWordOfMouthCoTo = lazy(() => import("./pages/BlogWordOfMouthCoTo"));
@@ -847,6 +852,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 72 */}
+                <Route path="/blog/event-marketing-co-to" element={<BlogEventMarketingCoTo />} />
+                <Route path="/blog/brand-activation-co-to" element={<BlogBrandActivationCoTo />} />
+                <Route path="/blog/social-commerce-co-to" element={<BlogSocialCommerceCoTo />} />
                 {/* Wave 71 */}
                 <Route path="/blog/viral-marketing-co-to" element={<BlogViralMarketingCoTo />} />
                 <Route path="/blog/word-of-mouth-marketing-co-to" element={<BlogWordOfMouthCoTo />} />
