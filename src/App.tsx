@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 148: Platform Engineering, eBPF, FinOps
+const BlogPlatformEngineeringCoTo = lazy(() => import("./pages/BlogPlatformEngineeringCoTo"));
+const BlogEbpfCoTo = lazy(() => import("./pages/BlogEbpfCoTo"));
+const BlogFinOpsCoTo = lazy(() => import("./pages/BlogFinOpsCoTo"));
+
 // Wave 147: Observability, Service Mesh, gRPC
 const BlogObservabilityCoTo = lazy(() => import("./pages/BlogObservabilityCoTo"));
 const BlogServiceMeshCoTo = lazy(() => import("./pages/BlogServiceMeshCoTo"));
@@ -1226,6 +1231,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 148 */}
+                <Route path="/blog/platform-engineering-co-to-jest-internal-developer-platform" element={<BlogPlatformEngineeringCoTo />} />
+                <Route path="/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability" element={<BlogEbpfCoTo />} />
+                <Route path="/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud" element={<BlogFinOpsCoTo />} />
                 {/* Wave 147 */}
                 <Route path="/blog/observability-co-to-jest-opentelemetry-prometheus-grafana" element={<BlogObservabilityCoTo />} />
                 <Route path="/blog/service-mesh-co-to-jest-istio-linkerd-mtls" element={<BlogServiceMeshCoTo />} />
