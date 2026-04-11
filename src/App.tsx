@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 39: Product-Market Fit, Brand Awareness, B2B Marketing
+const BlogProductMarketFit = lazy(() => import("./pages/BlogProductMarketFit"));
+const BlogBrandAwarenessCoTo = lazy(() => import("./pages/BlogBrandAwarenessCoTo"));
+const BlogB2BMarketingCoTo = lazy(() => import("./pages/BlogB2BMarketingCoTo"));
+
 // Wave 38: USP, Value Proposition, Cold Email
 const BlogUSPCoToJest = lazy(() => import("./pages/BlogUSPCoToJest"));
 const BlogValuePropositionCoTo = lazy(() => import("./pages/BlogValuePropositionCoTo"));
@@ -696,6 +701,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 39 */}
+                <Route path="/blog/product-market-fit-co-to" element={<BlogProductMarketFit />} />
+                <Route path="/blog/brand-awareness-co-to" element={<BlogBrandAwarenessCoTo />} />
+                <Route path="/blog/marketing-b2b-co-to" element={<BlogB2BMarketingCoTo />} />
                 {/* Wave 38 */}
                 <Route path="/blog/usp-co-to-jest" element={<BlogUSPCoToJest />} />
                 <Route path="/blog/value-proposition-co-to" element={<BlogValuePropositionCoTo />} />
