@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 150: Edge Computing, Micro Frontends, QUIC/HTTP3
+const BlogEdgeComputingCoTo = lazy(() => import("./pages/BlogEdgeComputingCoTo"));
+const BlogMicroFrontendsCoTo = lazy(() => import("./pages/BlogMicroFrontendsCoTo"));
+const BlogQuicHttp3CoTo = lazy(() => import("./pages/BlogQuicHttp3CoTo"));
+
 // Wave 149: DevSecOps, SBOM, WebRTC
 const BlogDevSecOpsCoTo = lazy(() => import("./pages/BlogDevSecOpsCoTo"));
 const BlogSbomCoTo = lazy(() => import("./pages/BlogSbomCoTo"));
@@ -1236,6 +1241,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 150 */}
+                <Route path="/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions" element={<BlogEdgeComputingCoTo />} />
+                <Route path="/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation" element={<BlogMicroFrontendsCoTo />} />
+                <Route path="/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance" element={<BlogQuicHttp3CoTo />} />
                 {/* Wave 149 */}
                 <Route path="/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd" element={<BlogDevSecOpsCoTo />} />
                 <Route path="/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz" element={<BlogSbomCoTo />} />
