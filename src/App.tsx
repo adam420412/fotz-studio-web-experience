@@ -285,6 +285,13 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 22: KPI, API, Konwersja, CTR, Fotograf
+const BlogKPICoToJest = lazy(() => import("./pages/BlogKPICoToJest"));
+const BlogAPICoToJest = lazy(() => import("./pages/BlogAPICoToJest"));
+const BlogKonwersjaCoTo = lazy(() => import("./pages/BlogKonwersjaCoTo"));
+const BlogCTRCoToJest = lazy(() => import("./pages/BlogCTRCoToJest"));
+const StronaInternetowaDlaFotografa = lazy(() => import("./pages/StronaInternetowaDlaFotografa"));
+
 // Wave 21: Newsletter, CMS, marketing afiliacyjny, prawnik, landing page
 const BlogNewsletterCoTo = lazy(() => import("./pages/BlogNewsletterCoTo"));
 const BlogMarketingAfiliacyjny = lazy(() => import("./pages/BlogMarketingAfiliacyjny"));
@@ -600,6 +607,12 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 22 */}
+                <Route path="/blog/kpi-co-to-jest" element={<BlogKPICoToJest />} />
+                <Route path="/blog/api-co-to-jest" element={<BlogAPICoToJest />} />
+                <Route path="/blog/konwersja-co-to" element={<BlogKonwersjaCoTo />} />
+                <Route path="/blog/ctr-co-to-jest" element={<BlogCTRCoToJest />} />
+                <Route path="/uslugi/strona-internetowa-dla-fotografa" element={<StronaInternetowaDlaFotografa />} />
                 {/* Wave 21 */}
                 <Route path="/blog/newsletter-co-to" element={<BlogNewsletterCoTo />} />
                 <Route path="/blog/marketing-afiliacyjny-co-to" element={<BlogMarketingAfiliacyjny />} />
