@@ -285,6 +285,13 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 16: Google Moja Firma, marketing automation, lead gen, SEO Lublin, restauracja
+const GoogleMojaFirma = lazy(() => import("./pages/GoogleMojaFirma"));
+const MarketingAutomation = lazy(() => import("./pages/MarketingAutomation"));
+const LeadGeneration = lazy(() => import("./pages/LeadGeneration"));
+const AgencjaSEOLublin = lazy(() => import("./pages/AgencjaSEOLublin"));
+const StronaInternetowaDlaRestauracji = lazy(() => import("./pages/StronaInternetowaDlaRestauracji"));
+
 // Wave 15: FB/IG Ads, email marketing, content marketing, strona cena, pozycjonowanie cena
 const StronaInternetowaCena = lazy(() => import("./pages/StronaInternetowaCena"));
 const ReklamaFacebook = lazy(() => import("./pages/ReklamaFacebook"));
@@ -561,6 +568,12 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 16 */}
+                <Route path="/blog/google-moja-firma" element={<GoogleMojaFirma />} />
+                <Route path="/uslugi/marketing-automation" element={<MarketingAutomation />} />
+                <Route path="/uslugi/lead-generation" element={<LeadGeneration />} />
+                <Route path="/agencja-seo-lublin" element={<AgencjaSEOLublin />} />
+                <Route path="/uslugi/strona-internetowa-dla-restauracji" element={<StronaInternetowaDlaRestauracji />} />
                 {/* Wave 15 */}
                 <Route path="/blog/strona-internetowa-cena" element={<StronaInternetowaCena />} />
                 <Route path="/uslugi/reklama-facebook" element={<ReklamaFacebook />} />
