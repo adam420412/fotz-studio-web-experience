@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 210: OG Image+Satori, XState v5+RTK v2, Auth.js v5+Clerk
+const BlogOgImageSatoriCoTo = lazy(() => import("./pages/BlogOgImageSatoriCoTo"));
+const BlogXstateV5CoTo = lazy(() => import("./pages/BlogXstateV5CoTo"));
+const BlogAuthJsV5CoTo = lazy(() => import("./pages/BlogAuthJsV5CoTo"));
+
 // Wave 209: PWA+Workbox, Vue 3.5+Nuxt 4, TypeScript 5.7/5.8
 const BlogPwaWorkboxCoTo = lazy(() => import("./pages/BlogPwaWorkboxCoTo"));
 const BlogVue35CoTo = lazy(() => import("./pages/BlogVue35CoTo"));
@@ -1534,6 +1539,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 210 */}
+                <Route path="/blog/og-image-satori-vercel-og-dynamiczne-social-preview-nextjs-2024" element={<BlogOgImageSatoriCoTo />} />
+                <Route path="/blog/xstate-v5-createactor-maszyny-stanow-redux-toolkit-v2-2024" element={<BlogXstateV5CoTo />} />
+                <Route path="/blog/authjs-v5-nextauth-credentials-drizzle-adapter-clerk-autentykacja-2024" element={<BlogAuthJsV5CoTo />} />
                 {/* Wave 209 */}
                 <Route path="/blog/pwa-vite-plugin-workbox-next-pwa-background-sync-push-notifications-2024" element={<BlogPwaWorkboxCoTo />} />
                 <Route path="/blog/vue-3-5-usetemplateref-vapor-mode-pinia-colada-nuxt-4-2024" element={<BlogVue35CoTo />} />
