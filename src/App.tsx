@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 208: Vitest v2+Medusa v2, Starlight+Nextra+Fumadocs, Deno 2+Bun 1.x
+const BlogVitest2BrowserCoTo = lazy(() => import("./pages/BlogVitest2BrowserCoTo"));
+const BlogStarlightNextraCoTo = lazy(() => import("./pages/BlogStarlightNextraCoTo"));
+const BlogDeno2BunCoTo = lazy(() => import("./pages/BlogDeno2BunCoTo"));
+
 // Wave 207: shadcn/ui Advanced, Payload CMS v3, Biome+OXC
 const BlogShadcnAdvCoTo = lazy(() => import("./pages/BlogShadcnAdvCoTo"));
 const BlogPayloadCmsCoTo = lazy(() => import("./pages/BlogPayloadCmsCoTo"));
@@ -1524,6 +1529,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 208 */}
+                <Route path="/blog/vitest-v2-browser-mode-workspace-medusa-js-v2-ecommerce-2024" element={<BlogVitest2BrowserCoTo />} />
+                <Route path="/blog/starlight-nextra-fumadocs-dokumentacja-astro-nextjs-2024" element={<BlogStarlightNextraCoTo />} />
+                <Route path="/blog/deno-2-bun-1-runtime-jsr-kv-shell-node-kompatybilnosc-2024" element={<BlogDeno2BunCoTo />} />
                 {/* Wave 207 */}
                 <Route path="/blog/shadcn-ui-charts-sidebar-blocks-registry-better-auth-next-safe-action-2024" element={<BlogShadcnAdvCoTo />} />
                 <Route path="/blog/payload-cms-v3-sanity-keystatic-tina-headless-cms-nextjs-2024" element={<BlogPayloadCmsCoTo />} />
