@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 145: Time to Value, Activation Rate, Feature Adoption
+const BlogTimeToValueCoTo = lazy(() => import("./pages/BlogTimeToValueCoTo"));
+const BlogActivationRateCoTo = lazy(() => import("./pages/BlogActivationRateCoTo"));
+const BlogFeatureAdoptionCoTo = lazy(() => import("./pages/BlogFeatureAdoptionCoTo"));
+
 // Wave 144: Win Rate, Conversion Funnel, Churn Prediction
 const BlogWinRateCoTo = lazy(() => import("./pages/BlogWinRateCoTo"));
 const BlogConversionFunnelCoTo = lazy(() => import("./pages/BlogConversionFunnelCoTo"));
@@ -1211,6 +1216,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 145 */}
+                <Route path="/blog/time-to-value-co-to-jest-jak-skrocic-ttv" element={<BlogTimeToValueCoTo />} />
+                <Route path="/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje" element={<BlogActivationRateCoTo />} />
+                <Route path="/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji" element={<BlogFeatureAdoptionCoTo />} />
                 {/* Wave 144 */}
                 <Route path="/blog/win-rate-wskaznik-wygranych-jak-poprawic" element={<BlogWinRateCoTo />} />
                 <Route path="/blog/lejek-konwersji-conversion-funnel-co-to-jest" element={<BlogConversionFunnelCoTo />} />
