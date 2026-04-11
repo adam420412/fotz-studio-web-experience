@@ -83,6 +83,13 @@ const BlogJakZaprojektowacLogo = lazy(() => import("./pages/BlogJakZaprojektowac
 const BlogGoogleAdsCennik = lazy(() => import("./pages/BlogGoogleAdsCennik"));
 const BlogGoogleAdsVsSeo = lazy(() => import("./pages/BlogGoogleAdsVsSeo"));
 const BlogProwadzenieSocialMediaCennik = lazy(() => import("./pages/BlogProwadzenieSocialMediaCennik"));
+const BlogFotografiaProduktowa = lazy(() => import("./pages/BlogFotografiaProduktowa"));
+const BlogLandingPageVsStrona = lazy(() => import("./pages/BlogLandingPageVsStrona"));
+const BlogSocialMediaMarketingPoradnik = lazy(() => import("./pages/BlogSocialMediaMarketingPoradnik"));
+const BlogStronaInternetowaDlaRestauracji = lazy(() => import("./pages/BlogStronaInternetowaDlaRestauracji"));
+const BlogBlogFirmowy = lazy(() => import("./pages/BlogBlogFirmowy"));
+const BlogIleKosztujeFIlmReklamowy = lazy(() => import("./pages/BlogIleKosztujeFIlmReklamowy"));
+const BlogPozycjonowanieDlaMalychFirm = lazy(() => import("./pages/BlogPozycjonowanieDlaMalychFirm"));
 
 // Case Studies
 const CaseStudyEcommerceCRO = lazy(() => import("./pages/CaseStudyEcommerceCRO"));
@@ -198,6 +205,7 @@ const StudioPodcastowe = lazy(() => import("./pages/StudioPodcastowe"));
 // Ads pages
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
 const GoogleAds = lazy(() => import("./pages/GoogleAds"));
+const GoogleAdsWarszawa = lazy(() => import("./pages/GoogleAdsWarszawa"));
 const KampanieReklamowe = lazy(() => import("./pages/KampanieReklamowe"));
 const KampanieReklamowePoznan = lazy(() => import("./pages/KampanieReklamowePoznan"));
 const TikTokAds = lazy(() => import("./pages/TikTokAds"));
@@ -1383,6 +1391,13 @@ const App = () => (
                 <Route path="/blog/google-ads-cennik" element={<BlogGoogleAdsCennik />} />
                 <Route path="/blog/google-ads-vs-seo" element={<BlogGoogleAdsVsSeo />} />
                 <Route path="/blog/prowadzenie-social-media-cennik" element={<BlogProwadzenieSocialMediaCennik />} />
+                <Route path="/blog/fotografia-produktowa-poradnik" element={<BlogFotografiaProduktowa />} />
+                <Route path="/blog/landing-page-vs-strona-internetowa" element={<BlogLandingPageVsStrona />} />
+                <Route path="/blog/social-media-marketing-poradnik" element={<BlogSocialMediaMarketingPoradnik />} />
+                <Route path="/blog/strona-internetowa-dla-restauracji" element={<BlogStronaInternetowaDlaRestauracji />} />
+                <Route path="/blog/blog-firmowy-poradnik" element={<BlogBlogFirmowy />} />
+                <Route path="/blog/ile-kosztuje-film-reklamowy" element={<BlogIleKosztujeFIlmReklamowy />} />
+                <Route path="/blog/pozycjonowanie-dla-malych-firm" element={<BlogPozycjonowanieDlaMalychFirm />} />
                 <Route path="/blog/co-to-jest-seo" element={<BlogCoToJestSeo />} />
                 <Route path="/blog/ile-kosztuje-pozycjonowanie" element={<BlogIleKosztujePozycjonowanie />} />
                 <Route path="/blog/social-media-dla-firm" element={<BlogSocialMediaDlaFirm />} />
@@ -2323,6 +2338,7 @@ const App = () => (
 
                 {/* Performance marketing cluster */}
                 <Route path="/performance-marketing/google-ads" element={<GoogleAds />} />
+                <Route path="/performance-marketing/google-ads/warszawa" element={<GoogleAdsWarszawa />} />
                 <Route path="/performance-marketing/facebook-ads" element={<FacebookAds />} />
                 <Route path="/performance-marketing/instagram-ads" element={<InstagramAds />} />
                 <Route path="/performance-marketing/meta-ads" element={<FacebookInstagramAds />} />
