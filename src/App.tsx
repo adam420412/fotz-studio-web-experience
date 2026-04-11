@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 192: Tailwind CSS v4, Speech AI, CSS Custom Properties
+const BlogTailwindV4CoTo = lazy(() => import("./pages/BlogTailwindV4CoTo"));
+const BlogSpeechAiCoTo = lazy(() => import("./pages/BlogSpeechAiCoTo"));
+const BlogCssCustomPropsCoTo = lazy(() => import("./pages/BlogCssCustomPropsCoTo"));
+
 // Wave 191: HTMX, Astro deep dive, React Error Handling
 const BlogHtmxCoTo = lazy(() => import("./pages/BlogHtmxCoTo"));
 const BlogAstroDeepDiveCoTo = lazy(() => import("./pages/BlogAstroDeepDiveCoTo"));
@@ -1444,6 +1449,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 192 */}
+                <Route path="/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025" element={<BlogTailwindV4CoTo />} />
+                <Route path="/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024" element={<BlogSpeechAiCoTo />} />
+                <Route path="/blog/css-custom-properties-variables-design-tokens-theming-2024" element={<BlogCssCustomPropsCoTo />} />
                 {/* Wave 191 */}
                 <Route path="/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024" element={<BlogHtmxCoTo />} />
                 <Route path="/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024" element={<BlogAstroDeepDiveCoTo />} />
