@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 164: Prisma/Drizzle ORM, Vitest/Playwright, XState
+const BlogPrizmaDrizzleCoTo = lazy(() => import("./pages/BlogPrizmaDrizzleCoTo"));
+const BlogVitestPlaywrightCoTo = lazy(() => import("./pages/BlogVitestPlaywrightCoTo"));
+const BlogXstateCoTo = lazy(() => import("./pages/BlogXstateCoTo"));
+
 // Wave 163: Astro/SvelteKit/Remix, Vite/Bundlers, Bun/Deno/Node.js
 const BlogAstroCoTo = lazy(() => import("./pages/BlogAstroCoTo"));
 const BlogViteCoTo = lazy(() => import("./pages/BlogViteCoTo"));
@@ -1304,6 +1309,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 164 */}
+                <Route path="/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac" element={<BlogPrizmaDrizzleCoTo />} />
+                <Route path="/blog/vitest-playwright-cypress-storybook-testowanie-react-2024" element={<BlogVitestPlaywrightCoTo />} />
+                <Route path="/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react" element={<BlogXstateCoTo />} />
                 {/* Wave 163 */}
                 <Route path="/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac" element={<BlogAstroCoTo />} />
                 <Route path="/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac" element={<BlogViteCoTo />} />
