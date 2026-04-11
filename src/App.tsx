@@ -81,6 +81,8 @@ const BlogStronaDlaFirmy = lazy(() => import("./pages/BlogStronaDlaFirmy"));
 const BlogIdentyfikacjaWizualna = lazy(() => import("./pages/BlogIdentyfikacjaWizualna"));
 const BlogJakZaprojektowacLogo = lazy(() => import("./pages/BlogJakZaprojektowacLogo"));
 const BlogGoogleAdsCennik = lazy(() => import("./pages/BlogGoogleAdsCennik"));
+const BlogGoogleAdsVsSeo = lazy(() => import("./pages/BlogGoogleAdsVsSeo"));
+const BlogProwadzenieSocialMediaCennik = lazy(() => import("./pages/BlogProwadzenieSocialMediaCennik"));
 
 // Case Studies
 const CaseStudyEcommerceCRO = lazy(() => import("./pages/CaseStudyEcommerceCRO"));
@@ -1379,6 +1381,8 @@ const App = () => (
                 <Route path="/blog/co-to-jest-identyfikacja-wizualna" element={<BlogIdentyfikacjaWizualna />} />
                 <Route path="/blog/jak-zaprojektowac-logo-dla-firmy" element={<BlogJakZaprojektowacLogo />} />
                 <Route path="/blog/google-ads-cennik" element={<BlogGoogleAdsCennik />} />
+                <Route path="/blog/google-ads-vs-seo" element={<BlogGoogleAdsVsSeo />} />
+                <Route path="/blog/prowadzenie-social-media-cennik" element={<BlogProwadzenieSocialMediaCennik />} />
                 <Route path="/blog/co-to-jest-seo" element={<BlogCoToJestSeo />} />
                 <Route path="/blog/ile-kosztuje-pozycjonowanie" element={<BlogIleKosztujePozycjonowanie />} />
                 <Route path="/blog/social-media-dla-firm" element={<BlogSocialMediaDlaFirm />} />
