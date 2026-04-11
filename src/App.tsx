@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 113: DCF, WACC, Break-even
+const BlogDcfCoTo = lazy(() => import("./pages/BlogDcfCoTo"));
+const BlogWaccCoTo = lazy(() => import("./pages/BlogWaccCoTo"));
+const BlogBreakevenCoTo = lazy(() => import("./pages/BlogBreakevenCoTo"));
+
 // Wave 112: PostgreSQL, Elasticsearch, Kafka
 const BlogPostgresqlCoTo = lazy(() => import("./pages/BlogPostgresqlCoTo"));
 const BlogElasticsearchCoTo = lazy(() => import("./pages/BlogElasticsearchCoTo"));
@@ -1051,6 +1056,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 113 */}
+                <Route path="/blog/dcf-discounted-cash-flow-co-to" element={<BlogDcfCoTo />} />
+                <Route path="/blog/wacc-sredni-wazony-koszt-kapitalu" element={<BlogWaccCoTo />} />
+                <Route path="/blog/break-even-prog-rentownosci-co-to" element={<BlogBreakevenCoTo />} />
                 {/* Wave 112 */}
                 <Route path="/blog/postgresql-co-to-jest" element={<BlogPostgresqlCoTo />} />
                 <Route path="/blog/elasticsearch-co-to-jest" element={<BlogElasticsearchCoTo />} />
