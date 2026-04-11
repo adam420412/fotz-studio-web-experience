@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 136: Deal Desk, Sales Compensation, Territory Planning
+const BlogDealDeskCoTo = lazy(() => import("./pages/BlogDealDeskCoTo"));
+const BlogSalesCompCoTo = lazy(() => import("./pages/BlogSalesCompCoTo"));
+const BlogTerritoryPlanningCoTo = lazy(() => import("./pages/BlogTerritoryPlanningCoTo"));
+
 // Wave 135: Cap Table, SAFE Note, Vesting Schedule
 const BlogCapTableCoTo = lazy(() => import("./pages/BlogCapTableCoTo"));
 const BlogSafeNoteCoTo = lazy(() => import("./pages/BlogSafeNoteCoTo"));
@@ -1166,6 +1171,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 136 */}
+                <Route path="/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise" element={<BlogDealDeskCoTo />} />
+                <Route path="/blog/sales-compensation-plan-prowizyjny-co-to-jest" element={<BlogSalesCompCoTo />} />
+                <Route path="/blog/territory-planning-planowanie-terytoriow-sprzedazowych" element={<BlogTerritoryPlanningCoTo />} />
                 {/* Wave 135 */}
                 <Route path="/blog/cap-table-tabela-kapitalizacji-co-to-jest" element={<BlogCapTableCoTo />} />
                 <Route path="/blog/safe-note-co-to-jest-jak-dziala-startup" element={<BlogSafeNoteCoTo />} />
