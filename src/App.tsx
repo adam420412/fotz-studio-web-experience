@@ -285,7 +285,12 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
-// Wave 60: Hreflang, Robots.txt, A/B Testing
+// Wave 61: Attribution Modeling, Native Advertising, Customer Segmentation
+const BlogAttributionModelingCoTo = lazy(() => import("./pages/BlogAttributionModelingCoTo"));
+const BlogNativeAdvertisingCoTo = lazy(() => import("./pages/BlogNativeAdvertisingCoTo"));
+const BlogCustomerSegmentationCoTo = lazy(() => import("./pages/BlogCustomerSegmentationCoTo"));
+
+// Wave 60: Hreflang, Robots.txt
 const BlogHreflangCoTo = lazy(() => import("./pages/BlogHreflangCoTo"));
 const BlogRobotsTxtCoTo = lazy(() => import("./pages/BlogRobotsTxtCoTo"));
 
@@ -792,6 +797,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 61 */}
+                <Route path="/blog/attribution-modeling-co-to" element={<BlogAttributionModelingCoTo />} />
+                <Route path="/blog/native-advertising-co-to" element={<BlogNativeAdvertisingCoTo />} />
+                <Route path="/blog/customer-segmentation-co-to" element={<BlogCustomerSegmentationCoTo />} />
                 {/* Wave 60 */}
                 <Route path="/blog/hreflang-co-to" element={<BlogHreflangCoTo />} />
                 <Route path="/blog/robots-txt-co-to" element={<BlogRobotsTxtCoTo />} />
