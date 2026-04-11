@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 131: Feature Flags, Product Discovery, CRO
+const BlogFeatureFlagCoTo = lazy(() => import("./pages/BlogFeatureFlagCoTo"));
+const BlogProductDiscoveryCoTo = lazy(() => import("./pages/BlogProductDiscoveryCoTo"));
+const BlogCroCoToJest = lazy(() => import("./pages/BlogCroCoToJest"));
+
 // Wave 130: Channel Sales, Annual Planning, Financial Model
 const BlogChannelSalesCoTo = lazy(() => import("./pages/BlogChannelSalesCoTo"));
 const BlogAnnualPlanningCoTo = lazy(() => import("./pages/BlogAnnualPlanningCoTo"));
@@ -1141,6 +1146,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 131 */}
+                <Route path="/blog/feature-flags-co-to-jest-jak-stosowac" element={<BlogFeatureFlagCoTo />} />
+                <Route path="/blog/product-discovery-co-to-jest-jak-przeprowadzic" element={<BlogProductDiscoveryCoTo />} />
+                <Route path="/blog/cro-conversion-rate-optimization-co-to-jest" element={<BlogCroCoToJest />} />
                 {/* Wave 130 */}
                 <Route path="/blog/channel-sales-sprzedaz-partnerska-co-to-jest" element={<BlogChannelSalesCoTo />} />
                 <Route path="/blog/annual-planning-planowanie-roczne-firmy" element={<BlogAnnualPlanningCoTo />} />
