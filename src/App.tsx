@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 44: UTM, CRO, Heatmapy
+const BlogUTMCoToJest = lazy(() => import("./pages/BlogUTMCoToJest"));
+const BlogCROCoTo = lazy(() => import("./pages/BlogCROCoTo"));
+const BlogHeatmapyCoTo = lazy(() => import("./pages/BlogHeatmapyCoTo"));
+
 // Wave 43: Storytelling, Podcast Marketing
 const BlogStorytellingCoTo = lazy(() => import("./pages/BlogStorytellingCoTo"));
 const BlogPodcastMarketingCoTo = lazy(() => import("./pages/BlogPodcastMarketingCoTo"));
@@ -718,6 +723,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 44 */}
+                <Route path="/blog/utm-co-to-jest" element={<BlogUTMCoToJest />} />
+                <Route path="/blog/cro-co-to-jest" element={<BlogCROCoTo />} />
+                <Route path="/blog/heatmapy-co-to-jest" element={<BlogHeatmapyCoTo />} />
                 {/* Wave 43 */}
                 <Route path="/blog/storytelling-co-to" element={<BlogStorytellingCoTo />} />
                 <Route path="/blog/podcast-marketing-co-to" element={<BlogPodcastMarketingCoTo />} />
