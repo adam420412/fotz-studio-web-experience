@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 200: TypeScript 5.5/5.6, Elysia.js+Bun, AI Agents+MCP
+const BlogTs55CoTo = lazy(() => import("./pages/BlogTs55CoTo"));
+const BlogElysiaJsCoTo = lazy(() => import("./pages/BlogElysiaJsCoTo"));
+const BlogAiAgentsMcpCoTo = lazy(() => import("./pages/BlogAiAgentsMcpCoTo"));
+
 // Wave 199: React Router 7, Kysely+MikroORM, Astro 5
 const BlogReactRouter7CoTo = lazy(() => import("./pages/BlogReactRouter7CoTo"));
 const BlogKyselyMikroOrmCoTo = lazy(() => import("./pages/BlogKyselyMikroOrmCoTo"));
@@ -1484,6 +1489,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 200 */}
+                <Route path="/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024" element={<BlogTs55CoTo />} />
+                <Route path="/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024" element={<BlogElysiaJsCoTo />} />
+                <Route path="/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024" element={<BlogAiAgentsMcpCoTo />} />
                 {/* Wave 199 */}
                 <Route path="/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024" element={<BlogReactRouter7CoTo />} />
                 <Route path="/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024" element={<BlogKyselyMikroOrmCoTo />} />
