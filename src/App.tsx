@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 99: Event Tracking, Funnel Analytics, Social Listening
+const BlogEventTrackingCoTo = lazy(() => import("./pages/BlogEventTrackingCoTo"));
+const BlogFunnelAnalyticsCoTo = lazy(() => import("./pages/BlogFunnelAnalyticsCoTo"));
+const BlogSocialListeningCoTo = lazy(() => import("./pages/BlogSocialListeningCoTo"));
+
 // Wave 98: Burn Rate, Unit Economics, North Star Metric
 const BlogBurnRateCoTo = lazy(() => import("./pages/BlogBurnRateCoTo"));
 const BlogUnitEconomicsCoTo = lazy(() => import("./pages/BlogUnitEconomicsCoTo"));
@@ -981,6 +986,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 99 */}
+                <Route path="/blog/event-tracking-co-to" element={<BlogEventTrackingCoTo />} />
+                <Route path="/blog/funnel-analytics-co-to" element={<BlogFunnelAnalyticsCoTo />} />
+                <Route path="/blog/social-listening-co-to" element={<BlogSocialListeningCoTo />} />
                 {/* Wave 98 */}
                 <Route path="/blog/burn-rate-runway-co-to" element={<BlogBurnRateCoTo />} />
                 <Route path="/blog/unit-economics-co-to" element={<BlogUnitEconomicsCoTo />} />
