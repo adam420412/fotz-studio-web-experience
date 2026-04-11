@@ -285,6 +285,13 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 19: Hosting, SSL, WordPress co to, domena, jak pozycjonować
+const BlogCoToJestHosting = lazy(() => import("./pages/BlogCoToJestHosting"));
+const BlogCertyfikatSSL = lazy(() => import("./pages/BlogCertyfikatSSL"));
+const BlogWordPressCoTo = lazy(() => import("./pages/BlogWordPressCoTo"));
+const BlogDomenaCoToJest = lazy(() => import("./pages/BlogDomenaCoToJest"));
+const BlogJakPozycjonowacStrone = lazy(() => import("./pages/BlogJakPozycjonowacStrone"));
+
 // Wave 18: Google Ads co to, SEO co to, pozycjonowanie co to, WooCommerce, kurs Google Ads
 const BlogGoogleAdsCoTo = lazy(() => import("./pages/BlogGoogleAdsCoTo"));
 const BlogSEOCoToJest = lazy(() => import("./pages/BlogSEOCoToJest"));
@@ -581,6 +588,12 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 19 */}
+                <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
+                <Route path="/blog/certyfikat-ssl-co-to" element={<BlogCertyfikatSSL />} />
+                <Route path="/blog/wordpress-co-to" element={<BlogWordPressCoTo />} />
+                <Route path="/blog/domena-co-to-jest" element={<BlogDomenaCoToJest />} />
+                <Route path="/blog/jak-pozycjonowac-strone" element={<BlogJakPozycjonowacStrone />} />
                 {/* Wave 18 */}
                 <Route path="/blog/google-ads-co-to" element={<BlogGoogleAdsCoTo />} />
                 <Route path="/blog/seo-co-to-jest" element={<BlogSEOCoToJest />} />
