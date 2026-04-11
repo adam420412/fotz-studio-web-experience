@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 193: CSS Anchor+Popover API, RN New Architecture, TanStack Form
+const BlogCssAnchorPopoverCoTo = lazy(() => import("./pages/BlogCssAnchorPopoverCoTo"));
+const BlogRnNewArchCoTo = lazy(() => import("./pages/BlogRnNewArchCoTo"));
+const BlogTanstackFormCoTo = lazy(() => import("./pages/BlogTanstackFormCoTo"));
+
 // Wave 192: Tailwind CSS v4, Speech AI, CSS Custom Properties
 const BlogTailwindV4CoTo = lazy(() => import("./pages/BlogTailwindV4CoTo"));
 const BlogSpeechAiCoTo = lazy(() => import("./pages/BlogSpeechAiCoTo"));
@@ -1449,6 +1454,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 193 */}
+                <Route path="/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024" element={<BlogCssAnchorPopoverCoTo />} />
+                <Route path="/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024" element={<BlogRnNewArchCoTo />} />
+                <Route path="/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024" element={<BlogTanstackFormCoTo />} />
                 {/* Wave 192 */}
                 <Route path="/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025" element={<BlogTailwindV4CoTo />} />
                 <Route path="/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024" element={<BlogSpeechAiCoTo />} />
