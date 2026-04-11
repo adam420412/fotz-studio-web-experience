@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 108: CI/CD, DevOps, Mikroserwisy
+const BlogCiCdCoTo = lazy(() => import("./pages/BlogCiCdCoTo"));
+const BlogDevOpsCoTo = lazy(() => import("./pages/BlogDevOpsCoTo"));
+const BlogMicroservicesCoTo = lazy(() => import("./pages/BlogMicroservicesCoTo"));
+
 // Wave 107: User Story, SLA/SLO/SLI, Postmortem
 const BlogUserStoryCoTo = lazy(() => import("./pages/BlogUserStoryCoTo"));
 const BlogSlaCoTo = lazy(() => import("./pages/BlogSlaCoTo"));
@@ -1026,6 +1031,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 108 */}
+                <Route path="/blog/ci-cd-co-to-jest" element={<BlogCiCdCoTo />} />
+                <Route path="/blog/devops-co-to-jest" element={<BlogDevOpsCoTo />} />
+                <Route path="/blog/mikroserwisy-co-to-jest" element={<BlogMicroservicesCoTo />} />
                 {/* Wave 107 */}
                 <Route path="/blog/user-story-co-to" element={<BlogUserStoryCoTo />} />
                 <Route path="/blog/sla-slo-sli-co-to" element={<BlogSlaCoTo />} />
