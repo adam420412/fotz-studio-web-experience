@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 65: Brand Positioning, TAM SAM SOM, User Onboarding
+const BlogBrandPositioningCoTo = lazy(() => import("./pages/BlogBrandPositioningCoTo"));
+const BlogTAMSAMSOMCoTo = lazy(() => import("./pages/BlogTAMSAMSOMCoTo"));
+const BlogUserOnboardingCoTo = lazy(() => import("./pages/BlogUserOnboardingCoTo"));
+
 // Wave 64: Customer Data Platform, Lead Nurturing, Account Management
 const BlogCustomerDataPlatformCoTo = lazy(() => import("./pages/BlogCustomerDataPlatformCoTo"));
 const BlogLeadNurturingCoTo = lazy(() => import("./pages/BlogLeadNurturingCoTo"));
@@ -812,6 +817,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 65 */}
+                <Route path="/blog/brand-positioning-co-to" element={<BlogBrandPositioningCoTo />} />
+                <Route path="/blog/tam-sam-som-co-to" element={<BlogTAMSAMSOMCoTo />} />
+                <Route path="/blog/user-onboarding-co-to" element={<BlogUserOnboardingCoTo />} />
                 {/* Wave 64 */}
                 <Route path="/blog/customer-data-platform-cdp-co-to" element={<BlogCustomerDataPlatformCoTo />} />
                 <Route path="/blog/lead-nurturing-co-to" element={<BlogLeadNurturingCoTo />} />
