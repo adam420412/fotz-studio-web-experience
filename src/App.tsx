@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 195: AI Coding Tools, Passkeys+WebAuthn, TanStack Start
+const BlogAiCodingToolsCoTo = lazy(() => import("./pages/BlogAiCodingToolsCoTo"));
+const BlogPasskeysWebAuthnCoTo = lazy(() => import("./pages/BlogPasskeysWebAuthnCoTo"));
+const BlogTanstackStartCoTo = lazy(() => import("./pages/BlogTanstackStartCoTo"));
+
 // Wave 194: Panda CSS+UnoCSS, Node.js version managers, Next.js 15
 const BlogPandaCssUnoCoTo = lazy(() => import("./pages/BlogPandaCssUnoCoTo"));
 const BlogNodeVersionMgrCoTo = lazy(() => import("./pages/BlogNodeVersionMgrCoTo"));
@@ -1459,6 +1464,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 195 */}
+                <Route path="/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024" element={<BlogAiCodingToolsCoTo />} />
+                <Route path="/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024" element={<BlogPasskeysWebAuthnCoTo />} />
+                <Route path="/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024" element={<BlogTanstackStartCoTo />} />
                 {/* Wave 194 */}
                 <Route path="/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024" element={<BlogPandaCssUnoCoTo />} />
                 <Route path="/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024" element={<BlogNodeVersionMgrCoTo />} />
