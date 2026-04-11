@@ -77,6 +77,11 @@ const BlogKonwersjeNaStronie = lazy(() => import("./pages/BlogKonwersjeNaStronie
 const BlogSocialMediaStrategia = lazy(() => import("./pages/BlogSocialMediaStrategia"));
 const BlogStronaDlaFirmy = lazy(() => import("./pages/BlogStronaDlaFirmy"));
 
+// New blog posts (Wave 5 - content gaps)
+const BlogIdentyfikacjaWizualna = lazy(() => import("./pages/BlogIdentyfikacjaWizualna"));
+const BlogJakZaprojektowacLogo = lazy(() => import("./pages/BlogJakZaprojektowacLogo"));
+const BlogGoogleAdsCennik = lazy(() => import("./pages/BlogGoogleAdsCennik"));
+
 // Case Studies
 const CaseStudyEcommerceCRO = lazy(() => import("./pages/CaseStudyEcommerceCRO"));
 const CaseStudyLocalSEO = lazy(() => import("./pages/CaseStudyLocalSEO"));
@@ -199,6 +204,16 @@ const YouTubeAds = lazy(() => import("./pages/YouTubeAds"));
 const InstagramAds = lazy(() => import("./pages/InstagramAds"));
 const FacebookInstagramAds = lazy(() => import("./pages/FacebookInstagramAds"));
 
+// Wave 5: New service pages (logo, pozycjonowanie, fotografia, video)
+const LogoIBranding = lazy(() => import("./pages/LogoIBranding"));
+const UslugiPozycjonowanie = lazy(() => import("./pages/UslugiPozycjonowanie"));
+const PozycjonowanieWarszawa = lazy(() => import("./pages/PozycjonowanieWarszawa"));
+const PozycjonowanieKrakow = lazy(() => import("./pages/PozycjonowanieKrakow"));
+const PozycjonowanieWroclaw = lazy(() => import("./pages/PozycjonowanieWroclaw"));
+const PozycjonowaniePoznan = lazy(() => import("./pages/PozycjonowaniePoznan"));
+const FotografiaProduktowa = lazy(() => import("./pages/FotografiaProduktowa"));
+const VideoMarketing = lazy(() => import("./pages/VideoMarketing"));
+
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
@@ -316,6 +331,9 @@ const App = () => (
                 <Route path="/blog/jak-zwiekszyc-konwersje-na-stronie" element={<BlogKonwersjeNaStronie />} />
                 <Route path="/blog/strategia-social-media-marketing" element={<BlogSocialMediaStrategia />} />
                 <Route path="/blog/strona-internetowa-dla-firmy" element={<BlogStronaDlaFirmy />} />
+                <Route path="/blog/co-to-jest-identyfikacja-wizualna" element={<BlogIdentyfikacjaWizualna />} />
+                <Route path="/blog/jak-zaprojektowac-logo-dla-firmy" element={<BlogJakZaprojektowacLogo />} />
+                <Route path="/blog/google-ads-cennik" element={<BlogGoogleAdsCennik />} />
 
                 {/* Case Studies */}
                 <Route path="/case-studies/optymalizacja-konwersji-ecommerce" element={<CaseStudyEcommerceCRO />} />
@@ -381,6 +399,14 @@ const App = () => (
                 <Route path="/uslugi/strony-internetowe/legnica" element={<StronyInternetoweLegnica />} />
                 <Route path="/uslugi/strony-internetowe/kalisz" element={<StronyInternetoweKalisz />} />
                 <Route path="/uslugi/strony-internetowe/gorzow" element={<StronyInternetoweGorzow />} />
+                <Route path="/uslugi/logo-i-branding" element={<LogoIBranding />} />
+                <Route path="/uslugi/pozycjonowanie" element={<UslugiPozycjonowanie />} />
+                <Route path="/uslugi/pozycjonowanie/warszawa" element={<PozycjonowanieWarszawa />} />
+                <Route path="/uslugi/pozycjonowanie/krakow" element={<PozycjonowanieKrakow />} />
+                <Route path="/uslugi/pozycjonowanie/wroclaw" element={<PozycjonowanieWroclaw />} />
+                <Route path="/uslugi/pozycjonowanie/poznan" element={<PozycjonowaniePoznan />} />
+                <Route path="/uslugi/fotografia-produktowa" element={<FotografiaProduktowa />} />
+                <Route path="/uslugi/video-marketing" element={<VideoMarketing />} />
                 <Route path="/uslugi/branding" element={<IdentyfikacjaWizualna />} />
                 <Route path="/uslugi/produkcja-video" element={<SpotyReklamowe />} />
                 <Route path="/uslugi/fotografia" element={<FotografPoznan />} />
