@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 142: Data Governance, GDPR, API Gateway
+const BlogDataGovernanceCoTo = lazy(() => import("./pages/BlogDataGovernanceCoTo"));
+const BlogGdprCoTo = lazy(() => import("./pages/BlogGdprCoTo"));
+const BlogApiGatewayCoTo = lazy(() => import("./pages/BlogApiGatewayCoTo"));
+
 // Wave 141: Event-Driven Architecture, CQRS, Data Mesh
 const BlogEventDrivenArchCoTo = lazy(() => import("./pages/BlogEventDrivenArchCoTo"));
 const BlogCqrsCoTo = lazy(() => import("./pages/BlogCqrsCoTo"));
@@ -1196,6 +1201,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 142 */}
+                <Route path="/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych" element={<BlogDataGovernanceCoTo />} />
+                <Route path="/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" element={<BlogGdprCoTo />} />
+                <Route path="/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee" element={<BlogApiGatewayCoTo />} />
                 {/* Wave 141 */}
                 <Route path="/blog/event-driven-architecture-co-to-jest-jak-wdrozyz" element={<BlogEventDrivenArchCoTo />} />
                 <Route path="/blog/cqrs-command-query-responsibility-segregation-co-to-jest" element={<BlogCqrsCoTo />} />
