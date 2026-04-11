@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 26: CPM, Scrum, Digital marketing
+const BlogCPMCoTo = lazy(() => import("./pages/BlogCPMCoTo"));
+const BlogScrumCoToJest = lazy(() => import("./pages/BlogScrumCoToJest"));
+const BlogDigitalMarketingCoTo = lazy(() => import("./pages/BlogDigitalMarketingCoTo"));
+
 // Wave 25: Cold calling, Lead magnet, Trener personalny
 const BlogColdCallingCoTo = lazy(() => import("./pages/BlogColdCallingCoTo"));
 const BlogLeadMagnetCoTo = lazy(() => import("./pages/BlogLeadMagnetCoTo"));
@@ -623,6 +628,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 26 */}
+                <Route path="/blog/cpm-co-to" element={<BlogCPMCoTo />} />
+                <Route path="/blog/scrum-co-to-jest" element={<BlogScrumCoToJest />} />
+                <Route path="/blog/digital-marketing-co-to" element={<BlogDigitalMarketingCoTo />} />
                 {/* Wave 25 */}
                 <Route path="/blog/cold-calling-co-to" element={<BlogColdCallingCoTo />} />
                 <Route path="/blog/lead-magnet-co-to" element={<BlogLeadMagnetCoTo />} />
