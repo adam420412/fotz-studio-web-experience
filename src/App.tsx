@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 183: Serverless Databases, TanStack Router, Effect.ts FP
+const BlogServerlessDbCoTo = lazy(() => import("./pages/BlogServerlessDbCoTo"));
+const BlogTanstackRouterCoTo = lazy(() => import("./pages/BlogTanstackRouterCoTo"));
+const BlogEffectTsCoTo = lazy(() => import("./pages/BlogEffectTsCoTo"));
+
 // Wave 182: React Native Reanimated, Web Workers, CRDT Collaboration
 const BlogRNReanimatedCoTo = lazy(() => import("./pages/BlogRNReanimatedCoTo"));
 const BlogWebWorkersCoTo = lazy(() => import("./pages/BlogWebWorkersCoTo"));
@@ -1399,6 +1404,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 183 */}
+                <Route path="/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024" element={<BlogServerlessDbCoTo />} />
+                <Route path="/blog/tanstack-router-react-router-v7-type-safe-routing-2024" element={<BlogTanstackRouterCoTo />} />
+                <Route path="/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024" element={<BlogEffectTsCoTo />} />
                 {/* Wave 182 */}
                 <Route path="/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024" element={<BlogRNReanimatedCoTo />} />
                 <Route path="/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024" element={<BlogWebWorkersCoTo />} />
