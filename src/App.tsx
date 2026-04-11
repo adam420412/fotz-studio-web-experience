@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 90: Design System, Subscription Model, UX Audit
+const BlogDesignSystemCoTo = lazy(() => import("./pages/BlogDesignSystemCoTo"));
+const BlogSubscriptionModelCoTo = lazy(() => import("./pages/BlogSubscriptionModelCoTo"));
+const BlogUxAuditCoTo = lazy(() => import("./pages/BlogUxAuditCoTo"));
+
 // Wave 89: Brand Guidelines, Information Architecture, Revenue Model
 const BlogBrandGuidelinesCoTo = lazy(() => import("./pages/BlogBrandGuidelinesCoTo"));
 const BlogInformationArchitectureCoTo = lazy(() => import("./pages/BlogInformationArchitectureCoTo"));
@@ -936,6 +941,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 90 */}
+                <Route path="/blog/design-system-co-to" element={<BlogDesignSystemCoTo />} />
+                <Route path="/blog/subscription-model-co-to" element={<BlogSubscriptionModelCoTo />} />
+                <Route path="/blog/ux-audit-co-to" element={<BlogUxAuditCoTo />} />
                 {/* Wave 89 */}
                 <Route path="/blog/brand-guidelines-co-to" element={<BlogBrandGuidelinesCoTo />} />
                 <Route path="/blog/information-architecture-co-to" element={<BlogInformationArchitectureCoTo />} />
