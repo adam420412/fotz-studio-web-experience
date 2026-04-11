@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 83: Visual Identity, Multichannel Marketing, Competitive Intelligence
+const BlogVisualIdentityCoTo = lazy(() => import("./pages/BlogVisualIdentityCoTo"));
+const BlogMultichannelMarketingCoTo = lazy(() => import("./pages/BlogMultichannelMarketingCoTo"));
+const BlogCompetitiveIntelligenceCoTo = lazy(() => import("./pages/BlogCompetitiveIntelligenceCoTo"));
+
 // Wave 82: Data Storytelling, Brand Equity, Sponsorship Marketing
 const BlogDataStorytellingCoTo = lazy(() => import("./pages/BlogDataStorytellingCoTo"));
 const BlogBrandEquityCoTo = lazy(() => import("./pages/BlogBrandEquityCoTo"));
@@ -902,6 +907,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 83 */}
+                <Route path="/blog/identyfikacja-wizualna-co-to" element={<BlogVisualIdentityCoTo />} />
+                <Route path="/blog/multichannel-marketing-co-to" element={<BlogMultichannelMarketingCoTo />} />
+                <Route path="/blog/competitive-intelligence-co-to" element={<BlogCompetitiveIntelligenceCoTo />} />
                 {/* Wave 82 */}
                 <Route path="/blog/data-storytelling-co-to" element={<BlogDataStorytellingCoTo />} />
                 <Route path="/blog/brand-equity-co-to" element={<BlogBrandEquityCoTo />} />
