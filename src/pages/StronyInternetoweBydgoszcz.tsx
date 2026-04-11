@@ -580,28 +580,40 @@ const StronyInternetoweBydgoszcz = () => {
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Profesjonalne strony internetowe Bydgoszcz — czym się wyróżniają?</h2>
+                  <h2>Strony internetowe Bydgoszcz — miasto dwóch rzek i dwóch rynków</h2>
                   <p>
-                    Profesjonalne <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowe</Link> Bydgoszcz 
-                    to projektowanie witryn z myślą o optymalizacji, szybkiej responsywności i spójnym wizerunku w sieci. 
-                    Takie strony często zawierają dedykowaną domenę, integrację z systemami e-commerce oraz wsparcie techniczne po uruchomieniu.
+                    Bydgoszcz to wyjątkowe miasto z perspektywy biznesu online. Jako część Bydgosko-Toruńskiego Obszaru Metropolitalnego (ok. 700 000 mieszkańców), bydgoskie firmy mają dostęp do szerokiego rynku konsumentów — zarówno lokalnych, jak i z aglomeracji. <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">Profesjonalna strona internetowa</Link> to dla bydgoskich przedsiębiorców kluczowy element dotarcia do klientów w całym regionie Kujawsko-Pomorskim.
                   </p>
-                  
-                  <h2>Jak wybrać firmę tworzącą strony dla firm z Bydgoszczy?</h2>
                   <p>
-                    Wybierając agencję warto sprawdzić <Link to="/realizacje" className="text-primary hover:underline">portfolio zrealizowanych stron</Link>, 
-                    referencje oraz oferowane rozwiązania. Dobrze, gdy wykonawca proponuje kompleksowe usługi: projektowanie, 
-                    wybór domeny, optymalizację SEO oraz wsparcie techniczne.
+                    Bydgoszcz łączy silną tradycję przemysłową (PESA, Bombardier, Nitroerg) z rosnącym sektorem usługowym i technologicznym. Firmy z branży logistycznej korzystają z węzła komunikacyjnego — skrzyżowania tras między Warszawą, Gdańskiem i Berlinem. Strona www musi komunikować zarówno lokalną obecność, jak i gotowość do obsługi klientów B2B z całej Polski.
                   </p>
-                  
-                  <h2>Czy można zintegrować sklep WooCommerce z projektem strony?</h2>
+
+                  <h2>Branże, dla których tworzymy strony internetowe w Bydgoszczy</h2>
                   <p>
-                    Tak, integracja z systemami e-commerce takimi jak WooCommerce jest standardem przy tworzeniu sklepów internetowych. 
-                    Pozwala to na łatwe zarządzanie produktami, płatnościami i wysyłką, a także daje możliwości optymalizacji SEO 
-                    dla kart produktów w celu przyciągnięcia klientów.
+                    Bydgoski rynek ma swoje specyficzne sektory. Szczególnie aktywnie tworzymy strony dla firm z branży:
+                    <strong> produkcyjnej i przemysłowej</strong> (PESA, lokalni podwykonawcy automotive),
+                    <strong> medycznej i rehabilitacyjnej</strong> (prywatne kliniki, gabinety fizjoterapii),
+                    <strong> edukacyjnej</strong> (UTP, WSG, prywatne szkoły),
+                    <strong> gastronomicznej</strong> (restauracje przy Wyspie Młyńskiej, barki na Brdzie),
+                    <strong> nieruchomości</strong> (rosnący rynek deweloperski),
+                    oraz dla freelancerów i lokalnych sklepów online.
+                  </p>
+
+                  <h2>Strony www Bydgoszcz — co wyróżnia naszą ofertę?</h2>
+                  <p>
+                    Fotz Studio tworzy strony internetowe dla firm z Bydgoszczy w 100% zdalnie — bez pośredników i bez szablonów kupowanych hurtowo. Każdy projekt to indywidualny design w Figma, własna implementacja i pełna optymalizacja SEO pod frazy bydgoskie (np. &quot;strony internetowe Bydgoszcz&quot;, usługi branżowe + miasto). Dostarczamy kompletny pakiet: projekt, wdrożenie, szkolenie z CMS i 30-dniowe wsparcie po starcie.
+                  </p>
+                  <p>
+                    Chcesz zobaczyć nasze realizacje lub uzyskać bezpłatną wycenę? <Link to="/kontakt" className="text-primary hover:underline">Skontaktuj się z nami</Link> — odpowiemy w ciągu 24 godzin.
                   </p>
                 </div>
               </FadeInView>
+              <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
+                <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
+                <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+                <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
+              </div>
             </div>
           </div>
         </section>

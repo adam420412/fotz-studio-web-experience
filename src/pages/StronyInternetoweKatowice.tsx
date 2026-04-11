@@ -499,31 +499,34 @@ const StronyInternetoweKatowice = () => {
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Porozmawiaj z ekspertem w Katowicach</h2>
-                  
-                  <h3>Jak wybrać odpowiednią agencję?</h3>
+                  <h2>Strony internetowe Katowice — centrum biznesu Górnośląskiego Obszaru Metropolitalnego</h2>
                   <p>
-                    Wybór odpowiedniej <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencji</Link> do 
-                    tworzenia stron www w Katowicach to kluczowa decyzja. Wybierając agencję, upewnij się, że rozumie Twoje potrzeby i cele biznesowe. 
-                    Właściciel firmy szuka partnera, nie tylko wykonawcy, i oczekuje jasnego procesu i efektów.
+                    Katowice to centrum GOM-u (Górnośląski Obszar Metropolitalny) — konurbacji 2,2 mln mieszkańców, jednej z największych aglomeracji w Polsce. Dla firm z Katowic, Gliwic, Bytomia, Zabrza, Chorzowa czy Rudy Śląskiej, dobrze zaprojektowana <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strona internetowa</Link> to kluczowe narzędzie dotarcia do klientów z całego Śląska.
                   </p>
-                  
-                  <h3>Co powinno zawierać kompleksowe podejście?</h3>
                   <p>
-                    Kompleksowe podejście do tworzenia stron internetowych powinno obejmować szeroki zakres usług. 
-                    Oprócz projektowania i wdrażania stron internetowych, ważne jest również branding i identyfikacja wizualna, 
-                    <Link to="/social-media/obsluga" className="text-primary hover:underline"> obsługa social media</Link>, video marketing i produkcja treści. 
-                    Agencja powinna również oferować kampanie reklamowe Meta Ads i Google Ads oraz systemy pozyskiwania leadów.
+                    Katowicka gospodarka przechodzi transformację: od przemysłu ciężkiego (węgiel, stal) do usług, technologii (GovTech, FinTech) i kultury (Muzeum Śląskie, NOSPR, Spodek jako symbol nowoczesności). Firmy z regionu potrzebują stron, które komunikują nowoczesność i wiarygodność — zarówno dla klientów B2C, jak i wymagających partnerów B2B.
                   </p>
-                  
-                  <h3>Współpraca z klientem na każdym etapie</h3>
+
+                  <h2>Branże w Katowicach, dla których tworzymy strony www</h2>
                   <p>
-                    Współpraca z klientem na każdym etapie realizacji projektu to dla nas priorytet. 
-                    Zapewniamy stały kontakt, oferując spotkania osobiste, kontakt telefoniczny i mailowy. 
-                    <strong>Stworzenie strony internetowej to dla nas partnerska współpraca.</strong>
+                    Specjalizujemy się w tworzeniu stron internetowych dla firm z kluczowych sektorów katowickiego rynku: <strong>górnictwa i energetyki</strong> (dostawcy i podwykonawcy JSW, Tauron), <strong>budownictwa i nieruchomości</strong> (dynamiczny rynek deweloperski GOM), <strong>usług medycznych i rehabilitacyjnych</strong>, <strong>branży motoryzacyjnej</strong> (liczne salony i serwisy w aglomeracji), <strong>HoReCa</strong> (restauracje w centrum Katowic, hotele przy Spodku) oraz startupów technologicznych z Katowickiej Strefy Ekonomicznej.
+                  </p>
+
+                  <h2>Dlaczego Fotz Studio dla firm ze Śląska?</h2>
+                  <p>
+                    Tworzymy strony w 100% zdalnie dla firm z całej Polski — w tym z Katowic i całego Śląska. Nasz proces jest przejrzysty: bezpłatna konsultacja → projekt UX/UI w Figma → wdrożenie → testy → launch. Wszystkie strony są optymalizowane pod lokalne słowa kluczowe (np. &quot;strony internetowe Katowice&quot;, &quot;agencja marketingowa Śląsk&quot;) i mają pełne SEO techniczne w cenie.
+                  </p>
+                  <p>
+                    Potrzebujesz strony dla firmy z Katowic lub z całego Śląska? <Link to="/kontakt" className="text-primary hover:underline">Umów bezpłatną konsultację</Link> — odpowiemy w ciągu 24 godzin.
                   </p>
                 </div>
               </FadeInView>
+              <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
+                <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
+                <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+                <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
+              </div>
             </div>
           </div>
         </section>

@@ -211,8 +211,14 @@ const PozycjonowanieWarszawa = lazy(() => import("./pages/PozycjonowanieWarszawa
 const PozycjonowanieKrakow = lazy(() => import("./pages/PozycjonowanieKrakow"));
 const PozycjonowanieWroclaw = lazy(() => import("./pages/PozycjonowanieWroclaw"));
 const PozycjonowaniePoznan = lazy(() => import("./pages/PozycjonowaniePoznan"));
+const PozycjonowanieGdansk = lazy(() => import("./pages/PozycjonowanieGdansk"));
+const PozycjonowanieLodz = lazy(() => import("./pages/PozycjonowanieLodz"));
 const FotografiaProduktowa = lazy(() => import("./pages/FotografiaProduktowa"));
 const VideoMarketing = lazy(() => import("./pages/VideoMarketing"));
+
+// Wave 6: Agencja city pages
+const AgencjaMarketingowaKatowice = lazy(() => import("./pages/AgencjaMarketingowaKatowice"));
+const AgencjaMarketingowaWroclaw = lazy(() => import("./pages/AgencjaMarketingowaWroclaw"));
 
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
@@ -405,6 +411,8 @@ const App = () => (
                 <Route path="/uslugi/pozycjonowanie/krakow" element={<PozycjonowanieKrakow />} />
                 <Route path="/uslugi/pozycjonowanie/wroclaw" element={<PozycjonowanieWroclaw />} />
                 <Route path="/uslugi/pozycjonowanie/poznan" element={<PozycjonowaniePoznan />} />
+                <Route path="/uslugi/pozycjonowanie/gdansk" element={<PozycjonowanieGdansk />} />
+                <Route path="/uslugi/pozycjonowanie/lodz" element={<PozycjonowanieLodz />} />
                 <Route path="/uslugi/fotografia-produktowa" element={<FotografiaProduktowa />} />
                 <Route path="/uslugi/video-marketing" element={<VideoMarketing />} />
                 <Route path="/uslugi/branding" element={<IdentyfikacjaWizualna />} />
@@ -476,6 +484,8 @@ const App = () => (
                 <Route path="/uslugi/sklepy-internetowe/warszawa" element={<SklepyInternetoweWarszawa />} />
                 <Route path="/uslugi/sklepy-internetowe/krakow" element={<SklepyInternetoweKrakow />} />
                 <Route path="/agencja-marketingowa-warszawa" element={<AgencjaMarketingowaWarszawa />} />
+                <Route path="/agencja-marketingowa-katowice" element={<AgencjaMarketingowaKatowice />} />
+                <Route path="/agencja-marketingowa-wroclaw" element={<AgencjaMarketingowaWroclaw />} />
                 <Route path="/agencja-kreatywna-poznan" element={<AgencjaKreaTywnaPoznan />} />
                 <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
                 <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
