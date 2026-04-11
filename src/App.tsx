@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 174: Git Workflow, GraphQL Apollo, CSS-in-JS Zero Runtime
+const BlogGitWorkflowCoTo = lazy(() => import("./pages/BlogGitWorkflowCoTo"));
+const BlogGraphQLApolloCoTo = lazy(() => import("./pages/BlogGraphQLApolloCoTo"));
+const BlogCssInJsCoTo = lazy(() => import("./pages/BlogCssInJsCoTo"));
+
 // Wave 173: File Uploads, Deployment Platforms, Date Libraries
 const BlogFileUploadsCoTo = lazy(() => import("./pages/BlogFileUploadsCoTo"));
 const BlogDeploymentPlatformsCoTo = lazy(() => import("./pages/BlogDeploymentPlatformsCoTo"));
@@ -1354,6 +1359,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 174 */}
+                <Route path="/blog/git-flow-trunk-based-conventional-commits-strategie-git-2024" element={<BlogGitWorkflowCoTo />} />
+                <Route path="/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024" element={<BlogGraphQLApolloCoTo />} />
+                <Route path="/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024" element={<BlogCssInJsCoTo />} />
                 {/* Wave 173 */}
                 <Route path="/blog/file-uploads-uploadthing-cloudinary-s3-mux-nextjs-2024" element={<BlogFileUploadsCoTo />} />
                 <Route path="/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024" element={<BlogDeploymentPlatformsCoTo />} />
