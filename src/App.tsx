@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 57: XML Sitemap, Bounce Rate, Referral Marketing
+const BlogXMLSitemapCoTo = lazy(() => import("./pages/BlogXMLSitemapCoTo"));
+const BlogBounceRateCoTo = lazy(() => import("./pages/BlogBounceRateCoTo"));
+const BlogReferralMarketingCoTo = lazy(() => import("./pages/BlogReferralMarketingCoTo"));
+
 // Wave 56: Long Tail Keywords, Page Speed, JTBD
 const BlogLongTailKeywordsCoTo = lazy(() => import("./pages/BlogLongTailKeywordsCoTo"));
 const BlogPageSpeedCoTo = lazy(() => import("./pages/BlogPageSpeedCoTo"));
@@ -773,6 +778,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 57 */}
+                <Route path="/blog/xml-sitemap-co-to" element={<BlogXMLSitemapCoTo />} />
+                <Route path="/blog/bounce-rate-co-to" element={<BlogBounceRateCoTo />} />
+                <Route path="/blog/referral-marketing-co-to" element={<BlogReferralMarketingCoTo />} />
                 {/* Wave 56 */}
                 <Route path="/blog/long-tail-keywords-co-to" element={<BlogLongTailKeywordsCoTo />} />
                 <Route path="/blog/page-speed-co-to" element={<BlogPageSpeedCoTo />} />
