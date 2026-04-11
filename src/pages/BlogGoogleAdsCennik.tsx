@@ -1,389 +1,218 @@
-import { Layout } from "@/components/layout/Layout";
-import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock, User, Share2, TrendingUp, DollarSign, Target, BarChart2, CheckCircle, AlertCircle, Zap } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { Layout } from "@/components/layout/Layout";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FadeInView } from "@/components/FadeInView";
+import { ContactSection } from "@/components/sections/ContactSection";
+import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { Link } from "react-router-dom";
 
 const faqItems = [
   {
-    question: "Ile kosztuje kliknięcie w Google Ads?",
-    answer: "Średni koszt kliknięcia (CPC) w Google Ads w Polsce waha się od 0,20 zł (e-commerce masowy) do nawet 80 zł (branża prawnicza). Dla większości firm usługowych CPC wynosi 2–15 zł. Koszt zależy od konkurencyjności słów kluczowych i jakości kampanii.",
+    question: "Ile kosztuje Google Ads — jaki jest minimalny budżet?",
+    answer: "Google Ads nie ma minimalnego budżetu. Możesz zacząć od 300-500 zł miesięcznie i uzyskać pierwsze wyniki. W praktyce dla małych firm lokalnych budżet 500-2 000 zł/miesiąc na kliknięcia wystarcza do sensownych wyników. Dla e-commerce lub silnie konkurencyjnych branż (ubezpieczenia, prawo, nieruchomości) potrzeba 5 000-20 000 zł/miesiąc. Sam budżet na kliknięcia to jednak nie wszystko — do tego dochodzi koszt obsługi kampanii przez agencję.",
   },
   {
-    question: "Jaki budżet minimalny jest potrzebny na Google Ads?",
-    answer: "Google Ads nie ma wymaganego budżetu minimalnego, ale aby kampania generowała realne dane i efekty, zalecamy minimum 1000–1500 zł/mies. dla firm lokalnych i 3000–5000 zł/mies. dla firm ogólnopolskich. Poniżej tych kwot trudno zebrać wystarczającą liczbę kliknięć do optymalizacji.",
+    question: "Ile kosztuje obsługa kampanii Google Ads przez agencję?",
+    answer: "Obsługa kampanii Google Ads przez agencję to zazwyczaj 15-25% budżetu reklamowego lub stała opłata miesięczna w przedziale 400-2 500 zł netto/miesiąc. Przy budżecie 2 000 zł/miesiąc możesz oczekiwać opłaty agencyjnej od 400 do 800 zł. Przy budżecie 10 000 zł — od 1 500 do 2 500 zł.",
   },
   {
-    question: "Ile pobiera agencja za obsługę Google Ads?",
-    answer: "Agencje marketingowe pobierają zazwyczaj 15–25% budżetu reklamowego lub stałą opłatę od 800 do 3000 zł/mies. Model mieszany (stała opłata + % od budżetu) jest coraz popularniejszy. Fotz Studio oferuje przejrzyste pakiety bez ukrytych prowizji.",
+    question: "Ile wynosi CPC (koszt za kliknięcie) w Google Ads w Polsce?",
+    answer: "Koszt za kliknięcie (CPC) w Google Ads w Polsce jest bardzo zróżnicowany. Najtańsze frazy to 0,20-0,80 zł za kliknięcie. Średnie branże (marketing, IT, moda) to 1-4 zł za kliknięcie. Drogie branże (ubezpieczenia, prawo, finanse, nieruchomości) to 8-30 zł za kliknięcie.",
   },
   {
-    question: "Czy Google Ads jest droższe od Facebook Ads?",
-    answer: "Zależy od branży i celu. Google Ads (search) jest droższe per kliknięcie, ale trafia do osób aktywnie szukających produktu/usługi — konwersje są zazwyczaj lepsze. Facebook Ads jest tańszy per kliknięcie, ale wymaga więcej czasu na budowę zamiaru zakupowego. Dla większości firm B2C optymalny jest mix obu.",
+    question: "Jaka jest różnica między Google Ads a pozycjonowaniem SEO?",
+    answer: "Google Ads to płatne reklamy w Google — pojawiają się natychmiast po uruchomieniu kampanii, ale znikają gdy kończysz płacić. Koszt: płacisz za każde kliknięcie. Pozycjonowanie SEO to organiczne wyniki wyszukiwania — wymaga czasu (3-12 miesięcy do efektów), ale ruch jest bezpłatny i trwały. Optymalna strategia: Google Ads na start (szybkie leady), SEO długoterminowo (darmowy ruch). Oba razem dają najlepsze wyniki.",
   },
   {
-    question: "Jak obniżyć koszty reklamy w Google Ads?",
-    answer: "Kluczowe metody: (1) Optymalizacja Quality Score — dobre landing page i trafne słowa kluczowe obniżają CPC. (2) Wykluczające słowa kluczowe — blokuj nietrafiające zapytania. (3) Rozszerzenia reklam — zwiększają CTR bez wzrostu kosztów. (4) Targetowanie geolokalizacyjne — koncentruj budżet na rentownych obszarach. (5) Harmonogram reklam — wyłącz w porach bez konwersji.",
+    question: "Ile kosztuje reklama w Google Ads dla małej firmy?",
+    answer: "Dla małej firmy lokalnej (np. salon fryzjerski, gabinet dentystyczny, usługi budowlane) realistyczny budżet Google Ads to 800-2 000 zł/miesiąc na kliknięcia + 400-600 zł za obsługę agencji. Łącznie 1 200-2 600 zł/miesiąc. Przy dobrze zoptymalizowanej kampanii dla usług lokalnych możesz oczekiwać 30-100 kliknięć miesięcznie.",
+  },
+  {
+    question: "Co to są kampanie Performance Max w Google Ads?",
+    answer: "Performance Max (PMax) to typ kampanii Google Ads oparty na AI, który automatycznie wyświetla reklamy we wszystkich kanałach Google: wyszukiwarka, YouTube, Gmail, Maps, Display. PMax sam optymalizuje stawki, dobiera odbiorców i testuje kreacje. Dla nowych kampanii lub małych budżetów lepiej zacząć od kampanii w sieci wyszukiwania.",
   },
 ];
 
-export default function BlogGoogleAdsCennik() {
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: "Google Ads cennik 2025 — ile kosztuje reklama w Google?",
-          url: window.location.href,
-        });
-      } catch (err) {
-        console.log("Error sharing:", err);
-      }
-    }
-  };
+const adTypes = [
+  { typ: "Sieć wyszukiwania (Search)", kiedy: "Gdy klient aktywnie szuka Twojej usługi", cpc: "0,50–15 zł", opis: "Reklamy tekstowe wyświetlane nad wynikami Google na konkretne słowa kluczowe" },
+  { typ: "Performance Max (PMax)", kiedy: "Retargeting, e-commerce, zasięg", cpc: "0,30–5 zł", opis: "Automatyczne kampanie we wszystkich kanałach Google (AI-driven)" },
+  { typ: "Sieć reklamowa (Display)", kiedy: "Budowanie świadomości marki", cpc: "0,10–1 zł", opis: "Banery graficzne i video na milionach stron partnerskich Google" },
+  { typ: "YouTube Video", kiedy: "Content marketing, brand awareness", cpc: "3–15 zł CPM", opis: "Reklamy wideo przed filmami YouTube — płacisz za obejrzenie 30 sek." },
+  { typ: "Google Shopping", kiedy: "Sklepy internetowe, produkty fizyczne", cpc: "0,20–3 zł", opis: "Reklamy produktowe z ceną i zdjęciem w wyszukiwarce Google i Maps" },
+  { typ: "Kampanie lokalne", kiedy: "Firmy z jedną lokalizacją", cpc: "0,50–5 zł", opis: "Reklamy w Google Maps i wynikach lokalnych — napędzają ruch do fizycznych lokalizacji" },
+];
 
+export default function BlogGoogleAdsCennik() {
   return (
     <Layout>
       <SEOHead
-        title="Google Ads Cennik 2025 — Ile Kosztuje Reklama w Google? | Fotz Studio"
-        description="Google Ads cennik 2025 — ile kosztuje reklama w Google? Koszty CPC w różnych branżach, budżety minimalne, prowizje agencji. Konkretne liczby i porady."
-        ogType="article"
-        canonical="https://fotz.pl/blog/google-ads-cennik"
-        keywords="google ads cennik, ile kosztuje google ads, reklama w google cena, koszt kliknięcia google, cpc google ads polska"
+        title="Google Ads cennik 2025 — ile kosztuje reklama w Google? | Fotz.pl"
+        description="Google Ads cennik 2025: ile kosztuje reklama w Google? CPC, budżet minimalny, obsługa agencji. Porównanie kampanii Search, PMax, Display i Shopping. Sprawdź koszty."
+        canonicalUrl="https://fotz.pl/blog/google-ads-cennik"
       />
       <ArticleSchema
-        title="Google Ads Cennik 2025 — Ile Kosztuje Reklama w Google?"
-        description="Kompleksowy przewodnik po kosztach Google Ads w Polsce. Cennik CPC w różnych branżach, minimalne budżety i opłaty agencji."
+        title="Google Ads cennik 2025 — ile kosztuje reklama w Google?"
+        description="Kompleksowy przewodnik po kosztach Google Ads: CPC w poszczególnych branżach, budżety reklamowe, koszt obsługi agencji, porównanie typów kampanii."
         url="https://fotz.pl/blog/google-ads-cennik"
-        datePublished="2025-04-01"
-        dateModified="2025-04-01"
-        author="Fotz Studio"
+        datePublished="2025-04-12"
       />
+      <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Google Ads Cennik 2025", url: "https://fotz.pl/blog/google-ads-cennik" },
+          { name: "Google Ads cennik 2025", url: "https://fotz.pl/blog/google-ads-cennik" },
         ]}
       />
-      <FAQSchema items={faqItems} />
 
-      <article className="pt-32 pb-20 bg-background">
-        <div className="container-wide">
-          <Link
-            to="/blog"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Powrót do bloga
-          </Link>
-
-          <header className="max-w-4xl mb-12">
-            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              Google Ads
+      <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <PageBreadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: "Google Ads cennik 2025", href: "/blog/google-ads-cennik" },
+            ]}
+          />
+          <div className="mt-8">
+            <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
+              Google Ads / SEM / Reklama online
             </span>
-            <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
-              Google Ads Cennik 2025 — Ile Kosztuje Reklama w Google?
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Google Ads cennik 2025 — ile kosztuje reklama w Google?
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Konkretne liczby: koszt kliknięcia w różnych branżach, minimalne
-              budżety, opłaty agencji. Wszystko, co musisz wiedzieć przed startem
-              kampanii Google Ads.
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl">
+              Budżet reklamowy, koszt obsługi agencji, CPC w branżach. Ile naprawdę kosztuje Google Ads i kiedy się opłaca?
             </p>
-
-            <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
-              <span className="flex items-center gap-2">
-                <User className="w-4 h-4" />
-                Zespół Fotz Studio
-              </span>
-              <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                1 kwietnia 2025
-              </span>
-              <span className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                7 min czytania
-              </span>
-              <button
-                onClick={handleShare}
-                className="flex items-center gap-2 hover:text-primary transition-colors ml-auto"
-              >
-                <Share2 className="w-4 h-4" />
-                Udostępnij
-              </button>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { label: "Min. budżet", value: "300 zł" },
+                { label: "CPC od", value: "0,20 zł" },
+                { label: "Obsługa agencji", value: "15–25%" },
+                { label: "Efekty od", value: "24–48h" },
+              ].map((s) => (
+                <div key={s.label} className="bg-white/10 rounded-lg p-4 text-center">
+                  <div className="text-lg font-bold text-sky-400">{s.value}</div>
+                  <div className="text-sm text-gray-300">{s.label}</div>
+                </div>
+              ))}
             </div>
-          </header>
-
-          <div className="grid lg:grid-cols-[1fr_320px] gap-12 max-w-7xl">
-            <div className="max-w-4xl">
-              {/* Intro */}
-              <div className="prose prose-lg max-w-none text-muted-foreground mb-12">
-                <p>
-                  <strong className="text-foreground">Google Ads</strong> działa w
-                  modelu Pay Per Click (PPC) — płacisz tylko wtedy, gdy ktoś
-                  kliknie w Twoją reklamę. Brzmi prosto, ale{" "}
-                  <strong className="text-foreground">
-                    ile faktycznie kosztuje reklama w Google?
-                  </strong>{" "}
-                  Odpowiedź zależy od dziesiątek zmiennych: branży, słów
-                  kluczowych, jakości reklamy i ustawień kampanii.
-                </p>
-                <p>
-                  W tym artykule podajemy konkretne liczby i przedziały kosztów —
-                  bez owijania w bawełnę.
-                </p>
-              </div>
-
-              {/* How pricing works */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Jak działa wycena Google Ads?
-                </h2>
-                <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
-                  <p>
-                    Google Ads korzysta z systemu aukcji w czasie rzeczywistym
-                    (Real-Time Bidding). Gdy użytkownik wpisuje zapytanie, Google
-                    przeprowadza błyskawiczną aukcję wśród reklamodawców
-                    targetujących to słowo kluczowe. Decyduje Ad Rank:
-                  </p>
-                </div>
-                <div className="bg-card border border-border/60 rounded-xl p-6 my-6">
-                  <div className="font-mono text-center text-lg font-bold text-primary mb-2">
-                    Ad Rank = Max CPC bid × Quality Score
-                  </div>
-                  <p className="text-sm text-muted-foreground text-center">
-                    Quality Score (1–10) zależy od: trafności reklamy, jakości
-                    strony docelowej i oczekiwanego CTR
-                  </p>
-                </div>
-                <p className="text-muted-foreground">
-                  Oznacza to, że{" "}
-                  <strong className="text-foreground">
-                    dobrze zoptymalizowana kampania zapłaci mniej za kliknięcie
-                  </strong>{" "}
-                  niż konkurent z wyższą stawką, ale słabą reklamą.
-                </p>
-              </section>
-
-              {/* CPC by industry */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Średni koszt kliknięcia w Google Ads — branże w Polsce
-                </h2>
-                <p className="text-muted-foreground mb-6">
-                  Poniżej przybliżone wartości CPC (Cost Per Click) dla
-                  popularnych branż w Polsce. To dane szacunkowe — rzeczywiste
-                  koszty zależą od konkretnych słów kluczowych i ustawień.
-                </p>
-                <div className="overflow-x-auto rounded-xl border border-border/60">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="bg-muted/40 border-b border-border/60">
-                        <th className="text-left p-4 font-semibold text-foreground">Branża</th>
-                        <th className="text-left p-4 font-semibold text-foreground">CPC (szac.)</th>
-                        <th className="text-left p-4 font-semibold text-foreground">Konkurencyjność</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-border/40">
-                      {[
-                        ["Prawo i kancelarie", "20–80 zł", "🔴 Bardzo wysoka"],
-                        ["Finanse i ubezpieczenia", "15–60 zł", "🔴 Bardzo wysoka"],
-                        ["Nieruchomości", "8–30 zł", "🟠 Wysoka"],
-                        ["Stomatologia i medycyna", "5–20 zł", "🟠 Wysoka"],
-                        ["Usługi remontowo-budowlane", "3–15 zł", "🟡 Średnia"],
-                        ["Restauracje i gastronomia", "1–8 zł", "🟡 Średnia"],
-                        ["E-commerce (odzież, elektronika)", "0,50–5 zł", "🟢 Niska-średnia"],
-                        ["Oprogramowanie i IT (B2B)", "5–25 zł", "🟠 Wysoka"],
-                        ["Turystyka i hotele", "2–12 zł", "🟡 Średnia"],
-                      ].map(([industry, cpc, competition], i) => (
-                        <tr key={i} className={i % 2 === 0 ? "bg-background" : "bg-muted/10"}>
-                          <td className="p-4 text-foreground font-medium">{industry}</td>
-                          <td className="p-4 text-primary font-bold">{cpc}</td>
-                          <td className="p-4 text-muted-foreground">{competition}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                <p className="text-xs text-muted-foreground mt-3">
-                  *Dane szacunkowe na podstawie Google Keyword Planner dla polskiego rynku, Q1 2025.
-                </p>
-              </section>
-
-              {/* Budgets */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Jaki budżet na Google Ads wybrać?
-                </h2>
-                <div className="grid md:grid-cols-3 gap-4 mb-6">
-                  {[
-                    {
-                      type: "Mała firma lokalna",
-                      budget: "1 000–2 000 zł/mies.",
-                      desc: "Usługi lokalne, gastronomia, małe sklepy. Kampania lokalna w 1–2 miastach.",
-                      cls: "border-green-500/30 bg-green-500/5",
-                    },
-                    {
-                      type: "Firma ogólnopolska / B2B",
-                      budget: "3 000–10 000 zł/mies.",
-                      desc: "Usługi na skalę ogólnopolską lub droższe produkty. Mix kampanii search + display.",
-                      cls: "border-primary/30 bg-primary/5",
-                    },
-                    {
-                      type: "E-commerce / Duże firmy",
-                      budget: "10 000–100 000+ zł/mies.",
-                      desc: "Sklepy internetowe, Google Shopping + remarketing, agresywne targetowanie.",
-                      cls: "border-purple-500/30 bg-purple-500/5",
-                    },
-                  ].map((tier, i) => (
-                    <div key={i} className={`rounded-xl border p-5 ${tier.cls}`}>
-                      <div className="font-semibold text-foreground mb-2">{tier.type}</div>
-                      <div className="text-xl font-bold text-primary mb-3">{tier.budget}</div>
-                      <p className="text-sm text-muted-foreground">{tier.desc}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Agency fees */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Koszty obsługi agencji Google Ads
-                </h2>
-                <div className="space-y-4">
-                  {[
-                    {
-                      model: "Procent od budżetu",
-                      fee: "15–25% budżetu reklamowego",
-                      desc: "Popularny model, ale agencja może być zainteresowana wzrostem budżetu a nie efektywności.",
-                      icon: BarChart2,
-                    },
-                    {
-                      model: "Stała miesięczna opłata",
-                      fee: "800–3 000 zł/mies.",
-                      desc: "Przewidywalny koszt — agencja skupia się na efektach, nie na wzroście wydatków.",
-                      icon: DollarSign,
-                    },
-                    {
-                      model: "Model hybrydowy",
-                      fee: "Stała + % od budżetu",
-                      desc: "Popularny kompromis — minimalna opłata niezależnie od budżetu + procent od wydatków.",
-                      icon: Target,
-                    },
-                  ].map((m, i) => (
-                    <div key={i} className="bg-card border border-border/60 rounded-xl p-5 flex gap-4">
-                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                        <m.icon className="w-5 h-5 text-primary" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-foreground mb-1">{m.model}</div>
-                        <div className="text-primary font-bold text-sm mb-1">{m.fee}</div>
-                        <p className="text-sm text-muted-foreground">{m.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Cost reduction tips */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  5 sposobów na obniżenie kosztów Google Ads
-                </h2>
-                <div className="space-y-4">
-                  {[
-                    { tip: "Popraw Quality Score", desc: "Wyższy Quality Score = niższy CPC. Twórz trafne reklamy i landing page'e dopasowane do słów kluczowych.", icon: TrendingUp },
-                    { tip: "Dodaj wykluczające słowa kluczowe", desc: "Regularnie sprawdzaj raport wyszukiwanych haseł i wykluczaj nietrafiające zapytania marnujące budżet.", icon: AlertCircle },
-                    { tip: "Używaj rozszerzeń reklam", desc: "Rozszerzenia zwiększają CTR bez wzrostu kosztów za kliknięcie — linki do podstron, objaśnienia, fragmenty.", icon: Zap },
-                    { tip: "Ogranicz geografię", desc: "Nie targetuj całego kraju, jeśli obsługujesz 1–2 regiony. Precyzyjne targetowanie obniża CPC.", icon: Target },
-                    { tip: "Ustaw harmonogram reklam", desc: "Wyłącz reklamy w godzinach i dniach z niską konwersją (np. weekend dla B2B). Analityka pokaże optymalne okna.", icon: CheckCircle },
-                  ].map((tip, i) => (
-                    <div key={i} className="bg-card border border-border/60 rounded-xl p-5 flex gap-4">
-                      <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                        <tip.icon className="w-5 h-5 text-primary" />
-                      </div>
-                      <div>
-                        <div className="font-semibold text-foreground mb-1">{i + 1}. {tip.tip}</div>
-                        <p className="text-sm text-muted-foreground">{tip.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Small business section */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Google Ads dla małych firm — czy to się opłaca?
-                </h2>
-                <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
-                  <p>
-                    Tak — pod warunkiem, że kampania jest dobrze zarządzana. Nawet
-                    przy budżecie 1000–2000 zł/mies. można osiągnąć dobry ROI w mniej
-                    konkurencyjnych branżach i lokalizacjach.
-                  </p>
-                  <p>
-                    Kluczem jest precyzja: zamiast targetować ogólne frazy z ogromną
-                    konkurencją, warto skupić się na{" "}
-                    <strong className="text-foreground">frazach long-tail z lokalną intencją</strong>{" "}
-                    (np. &quot;hydraulik 24h Poznań Grunwald&quot; zamiast
-                    &quot;hydraulik&quot;). Mniejsza liczba wyszukań, ale znacznie wyższy
-                    współczynnik konwersji.
-                  </p>
-                  <p>
-                    Fotz Studio prowadzi kampanie Google Ads od budżetu 1000 zł netto
-                    miesięcznie. Zapraszamy na{" "}
-                    <Link to="/kontakt" className="text-primary hover:underline">
-                      bezpłatną wycenę
-                    </Link>.
-                  </p>
-                </div>
-              </section>
-
-              {/* FAQ */}
-              <section className="mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Często zadawane pytania — Google Ads cennik
-                </h2>
-                <div className="space-y-4">
-                  {faqItems.map((item, i) => (
-                    <div key={i} className="bg-card border border-border/60 rounded-xl p-6">
-                      <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                      <p className="text-muted-foreground text-sm">{item.answer}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              <RelatedArticles currentArticleId="google-ads-cennik" />
-            </div>
-
-            {/* Sidebar */}
-            <aside className="hidden lg:block">
-              <div className="sticky top-32 space-y-6">
-                <div className="bg-card border border-border/60 rounded-xl p-6">
-                  <h3 className="font-semibold text-foreground mb-3">
-                    Potrzebujesz kampanii Google Ads?
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Fotz Studio prowadzi kampanie od 1000 zł/mies. budżetu
-                    reklamowego. Bezpłatna analiza i wycena.
-                  </p>
-                  <Button asChild className="w-full">
-                    <Link to="/kontakt">Zamów bezpłatną wycenę</Link>
-                  </Button>
-                </div>
-
-                <RelatedServices
-                  services={servicesByCategory["ads"] || []}
-                />
-              </div>
-            </aside>
           </div>
         </div>
-      </article>
+      </section>
+
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <FadeInView>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Ile kosztuje Google Ads? Struktura kosztów</h2>
+            <p className="text-gray-600 mb-4">
+              Całkowity koszt kampanii Google Ads składa się z dwóch elementów: <strong>budżetu reklamowego</strong> (pieniądze płacone bezpośrednio Google za kliknięcia lub wyświetlenia) i <strong>kosztu obsługi</strong> (opłata dla agencji lub specjalisty zarządzającego kampanią).
+            </p>
+            <p className="text-gray-600 mb-6">
+              Wiele firm popełnia błąd planując "budżet Google Ads" i rozumiejąc przez to tylko pieniądze idące na reklamy. Tymczasem bez kompetentnej obsługi nawet duży budżet reklamowy może zostać przepalony na nieskutecznych słowach kluczowych i złych stawkach.
+            </p>
+          </FadeInView>
+
+          <FadeInView>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">CPC (koszt za kliknięcie) w Google Ads — zestawienie branż</h2>
+            <div className="overflow-x-auto my-8">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Branża</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Średni CPC</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Przykładowe frazy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { branza: "Ubezpieczenia", cpc: "8–30 zł", frazy: "ubezpieczenie OC, ubezpieczenie zdrowotne" },
+                    { branza: "Prawo i usługi prawne", cpc: "5–25 zł", frazy: "adwokat Warszawa, kancelaria prawna" },
+                    { branza: "Nieruchomości", cpc: "4–18 zł", frazy: "mieszkania na sprzedaż, biuro nieruchomości" },
+                    { branza: "Finanse i kredyty", cpc: "5–20 zł", frazy: "kredyt hipoteczny, pożyczka online" },
+                    { branza: "Marketing i agencje", cpc: "2–8 zł", frazy: "agencja marketingowa, pozycjonowanie" },
+                    { branza: "Budownictwo i remonty", cpc: "1–6 zł", frazy: "firma remontowa, malarz Kraków" },
+                    { branza: "Medycyna i stomatologia", cpc: "2–10 zł", frazy: "dentysta Poznań, implant zębowy" },
+                    { branza: "E-commerce / produkty", cpc: "0,20–3 zł", frazy: "kup buty online, AGD do kuchni" },
+                    { branza: "Usługi lokalne", cpc: "0,30–2 zł", frazy: "fryzjer Gdańsk, ślusarz Wrocław" },
+                    { branza: "Turystyka i hotele", cpc: "1–5 zł", frazy: "hotel Zakopane, wczasy all inclusive" },
+                  ].map((row, i) => (
+                    <tr key={row.branza} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                      <td className="p-3 border border-gray-200 font-medium text-gray-900">{row.branza}</td>
+                      <td className="p-3 border border-gray-200 text-blue-600 font-semibold">{row.cpc}</td>
+                      <td className="p-3 border border-gray-200 text-gray-600 text-xs">{row.frazy}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </FadeInView>
+
+          <FadeInView>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Typy kampanii Google Ads i ich koszty</h2>
+            <div className="overflow-x-auto my-6">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Typ kampanii</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Kiedy stosować?</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Orientacyjny koszt</th>
+                    <th className="text-left p-3 font-semibold text-gray-700 border border-gray-200">Opis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {adTypes.map((t, i) => (
+                    <tr key={t.typ} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                      <td className="p-3 border border-gray-200 font-medium text-gray-900 text-xs">{t.typ}</td>
+                      <td className="p-3 border border-gray-200 text-gray-700 text-xs">{t.kiedy}</td>
+                      <td className="p-3 border border-gray-200 text-blue-600 font-semibold text-xs">{t.cpc}</td>
+                      <td className="p-3 border border-gray-200 text-gray-600 text-xs">{t.opis}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </FadeInView>
+
+          <FadeInView>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Ile kosztuje obsługa Google Ads przez agencję?</h2>
+            <p className="text-gray-600 mb-4">
+              Obsługa kampanii Google Ads przez agencję to zazwyczaj jedna z dwóch modeli rozliczeń. <strong>Procent od budżetu</strong> — najczęściej 15-25% miesięcznego wydatku reklamowego. Przy budżecie 2 000 zł to 300-500 zł opłaty agencyjnej. <strong>Stała opłata miesięczna</strong> — zazwyczaj 500-2 500 zł netto, niezależnie od budżetu. Bardziej przewidywalne koszty, dobra opcja przy budżetach powyżej 5 000 zł/miesiąc.
+            </p>
+
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-10">Google Ads — kiedy się opłaca, a kiedy nie?</h2>
+            <p className="text-gray-600 mb-4">
+              Google Ads opłaca się gdy: wartość klienta jest wysoka (usługi, B2B, nieruchomości), potrzebujesz szybkich wyników, masz dobrze zoptymalizowaną stronę docelową i śledzisz konwersje.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Google Ads może nie opłacać się gdy: Twój produkt jest bardzo niszowy (brak wyszukiwań), marże są niskie (np. produkty za 20 zł), nie masz strony z wyraźnym CTA lub nie śledzisz co dzieje się po kliknięciu w reklamę.
+            </p>
+            <p className="text-gray-600 mb-4">
+              Szukasz agencji do prowadzenia kampanii Google Ads? <Link to="/kontakt" className="text-blue-600 hover:underline">Skontaktuj się z nami</Link> po bezpłatną analizę Twojej sytuacji i propozycję budżetu.
+            </p>
+          </FadeInView>
+        </div>
+      </section>
+
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <FadeInView>
+            <h2 className="text-3xl font-bold text-gray-900 mb-10">Często zadawane pytania — Google Ads cennik</h2>
+          </FadeInView>
+          <div className="space-y-6">
+            {faqItems.map((item) => (
+              <FadeInView key={item.question}>
+                <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm">
+                  <h3 className="text-lg font-bold text-gray-900 mb-3">{item.question}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+                </div>
+              </FadeInView>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ContactSection />
     </Layout>
   );
 }
