@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 155: Serverless Architecture, CI/CD Best Practices, Technical Debt
+const BlogServerlessArchCoTo = lazy(() => import("./pages/BlogServerlessArchCoTo"));
+const BlogCiCdBestPracticesCoTo = lazy(() => import("./pages/BlogCiCdBestPracticesCoTo"));
+const BlogTechnicalDebtCoTo = lazy(() => import("./pages/BlogTechnicalDebtCoTo"));
+
 // Wave 154: K8s Operators, OpenTelemetry deep dive, Feature Flags
 const BlogK8sOperatorsCoTo = lazy(() => import("./pages/BlogK8sOperatorsCoTo"));
 const BlogOpenTelemetryCoTo = lazy(() => import("./pages/BlogOpenTelemetryCoTo"));
@@ -1259,6 +1264,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 155 */}
+                <Route path="/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions" element={<BlogServerlessArchCoTo />} />
+                <Route path="/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa" element={<BlogCiCdBestPracticesCoTo />} />
+                <Route path="/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac" element={<BlogTechnicalDebtCoTo />} />
                 {/* Wave 154 */}
                 <Route path="/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi" element={<BlogK8sOperatorsCoTo />} />
                 <Route path="/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger" element={<BlogOpenTelemetryCoTo />} />
