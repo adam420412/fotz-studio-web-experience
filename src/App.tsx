@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 143: Quota Planning, NRR/GRR, Pipeline Velocity
+const BlogQuotaPlanningCoTo = lazy(() => import("./pages/BlogQuotaPlanningCoTo"));
+const BlogNrrGrrCoTo = lazy(() => import("./pages/BlogNrrGrrCoTo"));
+const BlogPipelineVelocityCoTo = lazy(() => import("./pages/BlogPipelineVelocityCoTo"));
+
 // Wave 142: Data Governance, GDPR, API Gateway
 const BlogDataGovernanceCoTo = lazy(() => import("./pages/BlogDataGovernanceCoTo"));
 const BlogGdprCoTo = lazy(() => import("./pages/BlogGdprCoTo"));
@@ -1201,6 +1206,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 143 */}
+                <Route path="/blog/quota-planning-targetowanie-sprzedazowe-saas" element={<BlogQuotaPlanningCoTo />} />
+                <Route path="/blog/nrr-grr-net-revenue-retention-co-to-jest" element={<BlogNrrGrrCoTo />} />
+                <Route path="/blog/pipeline-velocity-co-to-jest-jak-poprawic" element={<BlogPipelineVelocityCoTo />} />
                 {/* Wave 142 */}
                 <Route path="/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych" element={<BlogDataGovernanceCoTo />} />
                 <Route path="/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" element={<BlogGdprCoTo />} />
