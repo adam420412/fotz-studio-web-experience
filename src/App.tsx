@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 157: API Versioning, Real-time Comms, Envoy Proxy
+const BlogApiVersioningCoTo = lazy(() => import("./pages/BlogApiVersioningCoTo"));
+const BlogRealtimeCommsCoTo = lazy(() => import("./pages/BlogRealtimeCommsCoTo"));
+const BlogEnvoyProxyCoTo = lazy(() => import("./pages/BlogEnvoyProxyCoTo"));
+
 // Wave 156: DDD, Monorepo, Container Security
 const BlogDddCoTo = lazy(() => import("./pages/BlogDddCoTo"));
 const BlogMonorepoCoTo = lazy(() => import("./pages/BlogMonorepoCoTo"));
@@ -1269,6 +1274,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 157 */}
+                <Route path="/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" element={<BlogApiVersioningCoTo />} />
+                <Route path="/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt" element={<BlogRealtimeCommsCoTo />} />
+                <Route path="/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking" element={<BlogEnvoyProxyCoTo />} />
                 {/* Wave 156 */}
                 <Route path="/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming" element={<BlogDddCoTo />} />
                 <Route path="/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud" element={<BlogMonorepoCoTo />} />
