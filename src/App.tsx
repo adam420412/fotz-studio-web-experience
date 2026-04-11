@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 186: BullMQ Job Queues, Next.js Middleware, LLM Tool Calling
+const BlogBullmqCoTo = lazy(() => import("./pages/BlogBullmqCoTo"));
+const BlogNextMiddlewareCoTo = lazy(() => import("./pages/BlogNextMiddlewareCoTo"));
+const BlogLlmToolCallingCoTo = lazy(() => import("./pages/BlogLlmToolCallingCoTo"));
+
 // Wave 185: React Aria a11y, Docker Node.js, React Testing Library
 const BlogReactAriaCoTo = lazy(() => import("./pages/BlogReactAriaCoTo"));
 const BlogDockerNodeCoTo = lazy(() => import("./pages/BlogDockerNodeCoTo"));
@@ -1414,6 +1419,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 186 */}
+                <Route path="/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024" element={<BlogBullmqCoTo />} />
+                <Route path="/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024" element={<BlogNextMiddlewareCoTo />} />
+                <Route path="/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024" element={<BlogLlmToolCallingCoTo />} />
                 {/* Wave 185 */}
                 <Route path="/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024" element={<BlogReactAriaCoTo />} />
                 <Route path="/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024" element={<BlogDockerNodeCoTo />} />
