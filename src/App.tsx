@@ -220,6 +220,12 @@ const VideoMarketing = lazy(() => import("./pages/VideoMarketing"));
 const AgencjaMarketingowaKatowice = lazy(() => import("./pages/AgencjaMarketingowaKatowice"));
 const AgencjaMarketingowaWroclaw = lazy(() => import("./pages/AgencjaMarketingowaWroclaw"));
 
+// Wave 7: SEO city pages + new service/blog pages
+const PozycjonowanieSzczecin = lazy(() => import("./pages/PozycjonowanieSzczecin"));
+const PozycjonowanieBialystok = lazy(() => import("./pages/PozycjonowanieBialystok"));
+const UslugiIdentyfikacjaWizualna = lazy(() => import("./pages/UslugiIdentyfikacjaWizualna"));
+const BlogCoToJestSeo = lazy(() => import("./pages/BlogCoToJestSeo"));
+
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
@@ -340,6 +346,7 @@ const App = () => (
                 <Route path="/blog/co-to-jest-identyfikacja-wizualna" element={<BlogIdentyfikacjaWizualna />} />
                 <Route path="/blog/jak-zaprojektowac-logo-dla-firmy" element={<BlogJakZaprojektowacLogo />} />
                 <Route path="/blog/google-ads-cennik" element={<BlogGoogleAdsCennik />} />
+                <Route path="/blog/co-to-jest-seo" element={<BlogCoToJestSeo />} />
 
                 {/* Case Studies */}
                 <Route path="/case-studies/optymalizacja-konwersji-ecommerce" element={<CaseStudyEcommerceCRO />} />
@@ -413,6 +420,9 @@ const App = () => (
                 <Route path="/uslugi/pozycjonowanie/poznan" element={<PozycjonowaniePoznan />} />
                 <Route path="/uslugi/pozycjonowanie/gdansk" element={<PozycjonowanieGdansk />} />
                 <Route path="/uslugi/pozycjonowanie/lodz" element={<PozycjonowanieLodz />} />
+                <Route path="/uslugi/pozycjonowanie/szczecin" element={<PozycjonowanieSzczecin />} />
+                <Route path="/uslugi/pozycjonowanie/bialystok" element={<PozycjonowanieBialystok />} />
+                <Route path="/uslugi/identyfikacja-wizualna" element={<UslugiIdentyfikacjaWizualna />} />
                 <Route path="/uslugi/fotografia-produktowa" element={<FotografiaProduktowa />} />
                 <Route path="/uslugi/video-marketing" element={<VideoMarketing />} />
                 <Route path="/uslugi/branding" element={<IdentyfikacjaWizualna />} />
