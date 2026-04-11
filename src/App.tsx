@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 123: Multithreading, Ramp period, Pipeline Management
+const BlogMultithreadingSprzedaz = lazy(() => import("./pages/BlogMultithreadingSprzedaz"));
+const BlogRampingSprzedaz = lazy(() => import("./pages/BlogRampingSprzedaz"));
+const BlogPipelineManagementCoTo = lazy(() => import("./pages/BlogPipelineManagementCoTo"));
+
 // Wave 122: Sales Forecast, Closing, Sales Ops
 const BlogSalesForecastCoTo = lazy(() => import("./pages/BlogSalesForecastCoTo"));
 const BlogClosingTechniqueCoTo = lazy(() => import("./pages/BlogClosingTechniqueCoTo"));
@@ -1101,6 +1106,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 123 */}
+                <Route path="/blog/multithreading-sprzedaz-b2b-buying-committee" element={<BlogMultithreadingSprzedaz />} />
+                <Route path="/blog/ramp-period-onboarding-handlowca-b2b" element={<BlogRampingSprzedaz />} />
+                <Route path="/blog/pipeline-management-zarzadzanie-sprzedaza-b2b" element={<BlogPipelineManagementCoTo />} />
                 {/* Wave 122 */}
                 <Route path="/blog/sales-forecast-prognoza-sprzedazy" element={<BlogSalesForecastCoTo />} />
                 <Route path="/blog/techniki-closingu-zamykanie-sprzedazy" element={<BlogClosingTechniqueCoTo />} />
