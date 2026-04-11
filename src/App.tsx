@@ -285,45 +285,6 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
-// Wave 210: OG Image+Satori, XState v5+RTK v2, Auth.js v5+Clerk
-const BlogOgImageSatoriCoTo = lazy(() => import("./pages/BlogOgImageSatoriCoTo"));
-const BlogXstateV5CoTo = lazy(() => import("./pages/BlogXstateV5CoTo"));
-const BlogAuthJsV5CoTo = lazy(() => import("./pages/BlogAuthJsV5CoTo"));
-
-// Wave 209: PWA+Workbox, Vue 3.5+Nuxt 4, TypeScript 5.7/5.8
-const BlogPwaWorkboxCoTo = lazy(() => import("./pages/BlogPwaWorkboxCoTo"));
-const BlogVue35CoTo = lazy(() => import("./pages/BlogVue35CoTo"));
-const BlogTs578CoTo = lazy(() => import("./pages/BlogTs578CoTo"));
-
-// Wave 208: Vitest v2+Medusa v2, Starlight+Nextra+Fumadocs, Deno 2+Bun 1.x
-const BlogVitest2BrowserCoTo = lazy(() => import("./pages/BlogVitest2BrowserCoTo"));
-const BlogStarlightNextraCoTo = lazy(() => import("./pages/BlogStarlightNextraCoTo"));
-const BlogDeno2BunCoTo = lazy(() => import("./pages/BlogDeno2BunCoTo"));
-
-// Wave 207: shadcn/ui Advanced, Payload CMS v3, Biome+OXC
-const BlogShadcnAdvCoTo = lazy(() => import("./pages/BlogShadcnAdvCoTo"));
-const BlogPayloadCmsCoTo = lazy(() => import("./pages/BlogPayloadCmsCoTo"));
-const BlogBiomeOxcCoTo = lazy(() => import("./pages/BlogBiomeOxcCoTo"));
-
-// Wave 206: nuqs URL State, Prisma 6+Accelerate, react-spring+Motion
-const BlogNuqsUrlStateCoTo = lazy(() => import("./pages/BlogNuqsUrlStateCoTo"));
-const BlogPrisma6AccelerateCoTo = lazy(() => import("./pages/BlogPrisma6AccelerateCoTo"));
-const BlogReactSpringMotionCoTo = lazy(() => import("./pages/BlogReactSpringMotionCoTo"));
-
-// Wave 205: ESLint 9 Flat Config, Zustand v5+Jotai v2, GraphQL Yoga+Pothos
-const BlogEslint9FlatConfigCoTo = lazy(() => import("./pages/BlogEslint9FlatConfigCoTo"));
-const BlogZustandAdvCoTo = lazy(() => import("./pages/BlogZustandAdvCoTo"));
-const BlogGraphqlYogaPothosCoTo = lazy(() => import("./pages/BlogGraphqlYogaPothosCoTo"));
-
-// Wave 204: Vite 6+Rolldown, Drizzle ORM Advanced, Node.js 22/23
-const BlogVite6RolldownCoTo = lazy(() => import("./pages/BlogVite6RolldownCoTo"));
-const BlogDrizzleAdvCoTo = lazy(() => import("./pages/BlogDrizzleAdvCoTo"));
-const BlogNode22FeaturesCoTo = lazy(() => import("./pages/BlogNode22FeaturesCoTo"));
-
-// Wave 203: React PDF+Virtual, TanStack Query v5, Next.js Routing Advanced
-const BlogReactPdfCoTo = lazy(() => import("./pages/BlogReactPdfCoTo"));
-const BlogTanstackQueryAdvCoTo = lazy(() => import("./pages/BlogTanstackQueryAdvCoTo"));
-const BlogNextjsRoutingAdvCoTo = lazy(() => import("./pages/BlogNextjsRoutingAdvCoTo"));
 
 // Wave 202: React Email+Resend, Local-First, PostHog+Sentry
 const BlogReactEmailResendCoTo = lazy(() => import("./pages/BlogReactEmailResendCoTo"));
@@ -1539,38 +1500,6 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
-                {/* Wave 210 */}
-                <Route path="/blog/og-image-satori-vercel-og-dynamiczne-social-preview-nextjs-2024" element={<BlogOgImageSatoriCoTo />} />
-                <Route path="/blog/xstate-v5-createactor-maszyny-stanow-redux-toolkit-v2-2024" element={<BlogXstateV5CoTo />} />
-                <Route path="/blog/authjs-v5-nextauth-credentials-drizzle-adapter-clerk-autentykacja-2024" element={<BlogAuthJsV5CoTo />} />
-                {/* Wave 209 */}
-                <Route path="/blog/pwa-vite-plugin-workbox-next-pwa-background-sync-push-notifications-2024" element={<BlogPwaWorkboxCoTo />} />
-                <Route path="/blog/vue-3-5-usetemplateref-vapor-mode-pinia-colada-nuxt-4-2024" element={<BlogVue35CoTo />} />
-                <Route path="/blog/typescript-5-7-5-8-satisfies-noinfer-const-type-params-dekoratory-2024" element={<BlogTs578CoTo />} />
-                {/* Wave 208 */}
-                <Route path="/blog/vitest-v2-browser-mode-workspace-medusa-js-v2-ecommerce-2024" element={<BlogVitest2BrowserCoTo />} />
-                <Route path="/blog/starlight-nextra-fumadocs-dokumentacja-astro-nextjs-2024" element={<BlogStarlightNextraCoTo />} />
-                <Route path="/blog/deno-2-bun-1-runtime-jsr-kv-shell-node-kompatybilnosc-2024" element={<BlogDeno2BunCoTo />} />
-                {/* Wave 207 */}
-                <Route path="/blog/shadcn-ui-charts-sidebar-blocks-registry-better-auth-next-safe-action-2024" element={<BlogShadcnAdvCoTo />} />
-                <Route path="/blog/payload-cms-v3-sanity-keystatic-tina-headless-cms-nextjs-2024" element={<BlogPayloadCmsCoTo />} />
-                <Route path="/blog/biome-oxlint-oxc-rust-linting-formatowanie-zamiast-eslint-prettier-2024" element={<BlogBiomeOxcCoTo />} />
-                {/* Wave 206 */}
-                <Route path="/blog/nuqs-url-state-management-useQueryState-nextjs-react-router-2024" element={<BlogNuqsUrlStateCoTo />} />
-                <Route path="/blog/prisma-6-accelerate-pulse-driver-adapters-neon-turso-2024" element={<BlogPrisma6AccelerateCoTo />} />
-                <Route path="/blog/react-spring-framer-motion-motion-one-gsap-animacje-react-2024" element={<BlogReactSpringMotionCoTo />} />
-                {/* Wave 205 */}
-                <Route path="/blog/eslint-9-flat-config-typescript-eslint-v8-stylistic-migracja-2024" element={<BlogEslint9FlatConfigCoTo />} />
-                <Route path="/blog/zustand-v5-jotai-v2-persist-immer-devtools-atomfamily-2024" element={<BlogZustandAdvCoTo />} />
-                <Route path="/blog/graphql-yoga-pothos-codegen-dataloader-subscriptions-2024" element={<BlogGraphqlYogaPothosCoTo />} />
-                {/* Wave 204 */}
-                <Route path="/blog/vite-6-rolldown-environment-api-rust-bundler-oxc-2024" element={<BlogVite6RolldownCoTo />} />
-                <Route path="/blog/drizzle-orm-relations-kit-studio-neon-turso-drizzle-seed-2024" element={<BlogDrizzleAdvCoTo />} />
-                <Route path="/blog/nodejs-22-23-typescript-strip-types-sqlite-websocket-sea-2024" element={<BlogNode22FeaturesCoTo />} />
-                {/* Wave 203 */}
-                <Route path="/blog/react-pdf-pdflib-puppeteer-tanstack-virtual-generowanie-pdf-listy-2024" element={<BlogReactPdfCoTo />} />
-                <Route path="/blog/tanstack-query-v5-prefetching-suspense-infinite-scroll-ssr-nextjs-2024" element={<BlogTanstackQueryAdvCoTo />} />
-                <Route path="/blog/nextjs-parallel-routes-intercepting-routes-slots-modals-advanced-2024" element={<BlogNextjsRoutingAdvCoTo />} />
                 {/* Wave 202 */}
                 <Route path="/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" element={<BlogReactEmailResendCoTo />} />
                 <Route path="/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024" element={<BlogLocalFirstCoTo />} />
