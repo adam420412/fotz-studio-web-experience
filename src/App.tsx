@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 203: React PDF+Virtual, TanStack Query v5, Next.js Routing Advanced
+const BlogReactPdfCoTo = lazy(() => import("./pages/BlogReactPdfCoTo"));
+const BlogTanstackQueryAdvCoTo = lazy(() => import("./pages/BlogTanstackQueryAdvCoTo"));
+const BlogNextjsRoutingAdvCoTo = lazy(() => import("./pages/BlogNextjsRoutingAdvCoTo"));
+
 // Wave 202: React Email+Resend, Local-First, PostHog+Sentry
 const BlogReactEmailResendCoTo = lazy(() => import("./pages/BlogReactEmailResendCoTo"));
 const BlogLocalFirstCoTo = lazy(() => import("./pages/BlogLocalFirstCoTo"));
@@ -1499,6 +1504,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 203 */}
+                <Route path="/blog/react-pdf-pdflib-puppeteer-tanstack-virtual-generowanie-pdf-listy-2024" element={<BlogReactPdfCoTo />} />
+                <Route path="/blog/tanstack-query-v5-prefetching-suspense-infinite-scroll-ssr-nextjs-2024" element={<BlogTanstackQueryAdvCoTo />} />
+                <Route path="/blog/nextjs-parallel-routes-intercepting-routes-slots-modals-advanced-2024" element={<BlogNextjsRoutingAdvCoTo />} />
                 {/* Wave 202 */}
                 <Route path="/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" element={<BlogReactEmailResendCoTo />} />
                 <Route path="/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024" element={<BlogLocalFirstCoTo />} />
