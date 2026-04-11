@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 197: Valibot+ArkType, React Concurrent, JS Memory Management
+const BlogValibotArktypeCoTo = lazy(() => import("./pages/BlogValibotArktypeCoTo"));
+const BlogReactConcurrentCoTo = lazy(() => import("./pages/BlogReactConcurrentCoTo"));
+const BlogJsMemoryMgmtCoTo = lazy(() => import("./pages/BlogJsMemoryMgmtCoTo"));
+
 // Wave 196: NativeWind+Tamagui, HTTP Clients TypeScript, TS Utility Types
 const BlogNativeWindTamaguiCoTo = lazy(() => import("./pages/BlogNativeWindTamaguiCoTo"));
 const BlogHttpClientsCoTo = lazy(() => import("./pages/BlogHttpClientsCoTo"));
@@ -1469,6 +1474,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 197 */}
+                <Route path="/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024" element={<BlogValibotArktypeCoTo />} />
+                <Route path="/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024" element={<BlogReactConcurrentCoTo />} />
+                <Route path="/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024" element={<BlogJsMemoryMgmtCoTo />} />
                 {/* Wave 196 */}
                 <Route path="/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024" element={<BlogNativeWindTamaguiCoTo />} />
                 <Route path="/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024" element={<BlogHttpClientsCoTo />} />
