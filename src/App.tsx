@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 162: Zustand/Jotai, TanStack Query, tRPC
+const BlogZustandCoTo = lazy(() => import("./pages/BlogZustandCoTo"));
+const BlogTanstackQueryCoTo = lazy(() => import("./pages/BlogTanstackQueryCoTo"));
+const BlogTrpcCoTo = lazy(() => import("./pages/BlogTrpcCoTo"));
+
 // Wave 161: PostgreSQL Optimization, ClickHouse, DB Migrations
 const BlogPostgresOptCoTo = lazy(() => import("./pages/BlogPostgresOptCoTo"));
 const BlogClickhouseCoTo = lazy(() => import("./pages/BlogClickhouseCoTo"));
@@ -1294,6 +1299,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 162 */}
+                <Route path="/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024" element={<BlogZustandCoTo />} />
+                <Route path="/blog/tanstack-query-react-query-co-to-jest-cache-usemutation-nextjs-ssr" element={<BlogTanstackQueryCoTo />} />
+                <Route path="/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql" element={<BlogTrpcCoTo />} />
                 {/* Wave 161 */}
                 <Route path="/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni" element={<BlogPostgresOptCoTo />} />
                 <Route path="/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake" element={<BlogClickhouseCoTo />} />
