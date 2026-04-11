@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 95: User Persona, Empathy Map, Net Promoter Score
+const BlogUserPersonaCoTo = lazy(() => import("./pages/BlogUserPersonaCoTo"));
+const BlogEmpathyMapCoTo = lazy(() => import("./pages/BlogEmpathyMapCoTo"));
+const BlogNetPromoterScoreCoTo = lazy(() => import("./pages/BlogNetPromoterScoreCoTo"));
+
 // Wave 94: SEO Copywriting, A/B Testing, Heatmap
 const BlogSeoCopywritingCoTo = lazy(() => import("./pages/BlogSeoCopywritingCoTo"));
 const BlogAbTestingCoTo = lazy(() => import("./pages/BlogAbTestingCoTo"));
@@ -961,6 +966,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 95 */}
+                <Route path="/blog/user-persona-co-to" element={<BlogUserPersonaCoTo />} />
+                <Route path="/blog/mapa-empatii-co-to" element={<BlogEmpathyMapCoTo />} />
+                <Route path="/blog/net-promoter-score-co-to" element={<BlogNetPromoterScoreCoTo />} />
                 {/* Wave 94 */}
                 <Route path="/blog/seo-copywriting-co-to" element={<BlogSeoCopywritingCoTo />} />
                 <Route path="/blog/ab-testing-co-to" element={<BlogAbTestingCoTo />} />
