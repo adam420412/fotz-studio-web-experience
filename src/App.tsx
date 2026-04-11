@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 204: Vite 6+Rolldown, Drizzle ORM Advanced, Node.js 22/23
+const BlogVite6RolldownCoTo = lazy(() => import("./pages/BlogVite6RolldownCoTo"));
+const BlogDrizzleAdvCoTo = lazy(() => import("./pages/BlogDrizzleAdvCoTo"));
+const BlogNode22FeaturesCoTo = lazy(() => import("./pages/BlogNode22FeaturesCoTo"));
+
 // Wave 203: React PDF+Virtual, TanStack Query v5, Next.js Routing Advanced
 const BlogReactPdfCoTo = lazy(() => import("./pages/BlogReactPdfCoTo"));
 const BlogTanstackQueryAdvCoTo = lazy(() => import("./pages/BlogTanstackQueryAdvCoTo"));
@@ -1504,6 +1509,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 204 */}
+                <Route path="/blog/vite-6-rolldown-environment-api-rust-bundler-oxc-2024" element={<BlogVite6RolldownCoTo />} />
+                <Route path="/blog/drizzle-orm-relations-kit-studio-neon-turso-drizzle-seed-2024" element={<BlogDrizzleAdvCoTo />} />
+                <Route path="/blog/nodejs-22-23-typescript-strip-types-sqlite-websocket-sea-2024" element={<BlogNode22FeaturesCoTo />} />
                 {/* Wave 203 */}
                 <Route path="/blog/react-pdf-pdflib-puppeteer-tanstack-virtual-generowanie-pdf-listy-2024" element={<BlogReactPdfCoTo />} />
                 <Route path="/blog/tanstack-query-v5-prefetching-suspense-infinite-scroll-ssr-nextjs-2024" element={<BlogTanstackQueryAdvCoTo />} />
