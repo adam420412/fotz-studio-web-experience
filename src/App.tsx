@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 105: Risk Management, Sprint Retrospective, Pivot
+const BlogRiskManagementCoTo = lazy(() => import("./pages/BlogRiskManagementCoTo"));
+const BlogSprintRetrospectiveCoTo = lazy(() => import("./pages/BlogSprintRetrospectiveCoTo"));
+const BlogPivotCoTo = lazy(() => import("./pages/BlogPivotCoTo"));
+
 // Wave 104: TAM/SAM/SOM, KPI Dashboard, Stakeholder Management
 const BlogTamSamSomCoTo = lazy(() => import("./pages/BlogTamSamSomCoTo"));
 const BlogKpiDashboardCoTo = lazy(() => import("./pages/BlogKpiDashboardCoTo"));
@@ -1011,6 +1016,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 105 */}
+                <Route path="/blog/risk-management-co-to" element={<BlogRiskManagementCoTo />} />
+                <Route path="/blog/sprint-retrospective-co-to" element={<BlogSprintRetrospectiveCoTo />} />
+                <Route path="/blog/pivot-startup-co-to" element={<BlogPivotCoTo />} />
                 {/* Wave 104 */}
                 <Route path="/blog/tam-sam-som-co-to" element={<BlogTamSamSomCoTo />} />
                 <Route path="/blog/dashboard-kpi-co-to" element={<BlogKpiDashboardCoTo />} />
