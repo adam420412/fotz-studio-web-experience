@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 137: Sprint Planning, Partner Ecosystem, SRE
+const BlogSprintPlanningCoTo = lazy(() => import("./pages/BlogSprintPlanningCoTo"));
+const BlogPartnerEcosystemCoTo = lazy(() => import("./pages/BlogPartnerEcosystemCoTo"));
+const BlogSrePracticeCoTo = lazy(() => import("./pages/BlogSrePracticeCoTo"));
+
 // Wave 136: Deal Desk, Sales Compensation, Territory Planning
 const BlogDealDeskCoTo = lazy(() => import("./pages/BlogDealDeskCoTo"));
 const BlogSalesCompCoTo = lazy(() => import("./pages/BlogSalesCompCoTo"));
@@ -1171,6 +1176,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 137 */}
+                <Route path="/blog/sprint-planning-co-to-jest-jak-przeprowadzic" element={<BlogSprintPlanningCoTo />} />
+                <Route path="/blog/partner-ecosystem-ekosystem-partnerski-saas" element={<BlogPartnerEcosystemCoTo />} />
+                <Route path="/blog/sre-site-reliability-engineering-co-to-jest" element={<BlogSrePracticeCoTo />} />
                 {/* Wave 136 */}
                 <Route path="/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise" element={<BlogDealDeskCoTo />} />
                 <Route path="/blog/sales-compensation-plan-prowizyjny-co-to-jest" element={<BlogSalesCompCoTo />} />
