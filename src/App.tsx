@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 64: Customer Data Platform, Lead Nurturing, Account Management
+const BlogCustomerDataPlatformCoTo = lazy(() => import("./pages/BlogCustomerDataPlatformCoTo"));
+const BlogLeadNurturingCoTo = lazy(() => import("./pages/BlogLeadNurturingCoTo"));
+const BlogAccountManagementCoTo = lazy(() => import("./pages/BlogAccountManagementCoTo"));
+
 // Wave 63: Win/Loss Analysis, Email Marketing CoTo, Retention Marketing
 const BlogWinLossAnalysisCoTo = lazy(() => import("./pages/BlogWinLossAnalysisCoTo"));
 const BlogEmailMarketingCoTo = lazy(() => import("./pages/BlogEmailMarketingCoTo"));
@@ -807,6 +812,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 64 */}
+                <Route path="/blog/customer-data-platform-cdp-co-to" element={<BlogCustomerDataPlatformCoTo />} />
+                <Route path="/blog/lead-nurturing-co-to" element={<BlogLeadNurturingCoTo />} />
+                <Route path="/blog/account-management-co-to" element={<BlogAccountManagementCoTo />} />
                 {/* Wave 63 */}
                 <Route path="/blog/win-loss-analysis-co-to" element={<BlogWinLossAnalysisCoTo />} />
                 <Route path="/blog/email-marketing-co-to" element={<BlogEmailMarketingCoTo />} />
