@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 53: Meta Tagi, Featured Snippets, Product-Led Growth
+const BlogMetaTagiCoTo = lazy(() => import("./pages/BlogMetaTagiCoTo"));
+const BlogFeaturedSnippetsCoTo = lazy(() => import("./pages/BlogFeaturedSnippetsCoTo"));
+const BlogProductLedGrowthCoTo = lazy(() => import("./pages/BlogProductLedGrowthCoTo"));
+
 // Wave 52: Schema Markup, E-commerce Marketing
 const BlogSchemaMarkupCoTo = lazy(() => import("./pages/BlogSchemaMarkupCoTo"));
 const BlogEcommerceMarketingCoTo = lazy(() => import("./pages/BlogEcommerceMarketingCoTo"));
@@ -753,6 +758,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 53 */}
+                <Route path="/blog/meta-tagi-co-to" element={<BlogMetaTagiCoTo />} />
+                <Route path="/blog/featured-snippets-co-to" element={<BlogFeaturedSnippetsCoTo />} />
+                <Route path="/blog/product-led-growth-co-to" element={<BlogProductLedGrowthCoTo />} />
                 {/* Wave 52 */}
                 <Route path="/blog/schema-markup-co-to" element={<BlogSchemaMarkupCoTo />} />
                 <Route path="/blog/ecommerce-marketing-co-to" element={<BlogEcommerceMarketingCoTo />} />
