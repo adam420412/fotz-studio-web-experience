@@ -226,6 +226,31 @@ const PozycjonowanieBialystok = lazy(() => import("./pages/PozycjonowanieBialyst
 const UslugiIdentyfikacjaWizualna = lazy(() => import("./pages/UslugiIdentyfikacjaWizualna"));
 const BlogCoToJestSeo = lazy(() => import("./pages/BlogCoToJestSeo"));
 
+// Wave 8: New city pages + pricing
+const CennikStronInternetowych = lazy(() => import("./pages/CennikStronInternetowych"));
+const PozycjonowanieLublin = lazy(() => import("./pages/PozycjonowanieLublin"));
+const PozycjonowanieRzeszow = lazy(() => import("./pages/PozycjonowanieRzeszow"));
+const PozycjonowanieKatowice = lazy(() => import("./pages/PozycjonowanieKatowice"));
+const PozycjonowanieCzestochowa = lazy(() => import("./pages/PozycjonowanieCzestochowa"));
+const AgencjaMarketingowaLodz = lazy(() => import("./pages/AgencjaMarketingowaLodz"));
+const AgencjaMarketingowaGdansk = lazy(() => import("./pages/AgencjaMarketingowaGdansk"));
+const AgencjaMarketingowaKrakow = lazy(() => import("./pages/AgencjaMarketingowaKrakow"));
+const AgencjaMarketingowaLublin = lazy(() => import("./pages/AgencjaMarketingowaLublin"));
+const BlogIleKosztujePozycjonowanie = lazy(() => import("./pages/BlogIleKosztujePozycjonowanie"));
+const BlogSocialMediaDlaFirm = lazy(() => import("./pages/BlogSocialMediaDlaFirm"));
+const BlogJakWybracAgencjeSEO = lazy(() => import("./pages/BlogJakWybracAgencjeSEO"));
+const PozycjonowanieTorun = lazy(() => import("./pages/PozycjonowanieTorun"));
+const PozycjonowanieBydgoszcz = lazy(() => import("./pages/PozycjonowanieBydgoszcz"));
+const PozycjonowanieRadom = lazy(() => import("./pages/PozycjonowanieRadom"));
+const PozycjonowanieKielce = lazy(() => import("./pages/PozycjonowanieKielce"));
+const AgencjaMarketingowaRzeszow = lazy(() => import("./pages/AgencjaMarketingowaRzeszow"));
+const AgencjaMarketingowaBydgoszcz = lazy(() => import("./pages/AgencjaMarketingowaBydgoszcz"));
+const AgencjaMarketingowaTorun = lazy(() => import("./pages/AgencjaMarketingowaTorun"));
+const AgencjaMarketingowaSzczecin = lazy(() => import("./pages/AgencjaMarketingowaSzczecin"));
+const CennikPozycjonowania = lazy(() => import("./pages/CennikPozycjonowania"));
+const BlogPozycjonowanieLokalnePoradnik = lazy(() => import("./pages/BlogPozycjonowanieLokalnePoradnik"));
+const BlogContentMarketing = lazy(() => import("./pages/BlogContentMarketing"));
+
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
@@ -347,6 +372,11 @@ const App = () => (
                 <Route path="/blog/jak-zaprojektowac-logo-dla-firmy" element={<BlogJakZaprojektowacLogo />} />
                 <Route path="/blog/google-ads-cennik" element={<BlogGoogleAdsCennik />} />
                 <Route path="/blog/co-to-jest-seo" element={<BlogCoToJestSeo />} />
+                <Route path="/blog/ile-kosztuje-pozycjonowanie" element={<BlogIleKosztujePozycjonowanie />} />
+                <Route path="/blog/social-media-dla-firm" element={<BlogSocialMediaDlaFirm />} />
+                <Route path="/blog/jak-wybrac-agencje-seo" element={<BlogJakWybracAgencjeSEO />} />
+                <Route path="/blog/pozycjonowanie-lokalne-dla-firm" element={<BlogPozycjonowanieLokalnePoradnik />} />
+                <Route path="/blog/content-marketing-dla-firm" element={<BlogContentMarketing />} />
 
                 {/* Case Studies */}
                 <Route path="/case-studies/optymalizacja-konwersji-ecommerce" element={<CaseStudyEcommerceCRO />} />
@@ -422,6 +452,14 @@ const App = () => (
                 <Route path="/uslugi/pozycjonowanie/lodz" element={<PozycjonowanieLodz />} />
                 <Route path="/uslugi/pozycjonowanie/szczecin" element={<PozycjonowanieSzczecin />} />
                 <Route path="/uslugi/pozycjonowanie/bialystok" element={<PozycjonowanieBialystok />} />
+                <Route path="/uslugi/pozycjonowanie/lublin" element={<PozycjonowanieLublin />} />
+                <Route path="/uslugi/pozycjonowanie/rzeszow" element={<PozycjonowanieRzeszow />} />
+                <Route path="/uslugi/pozycjonowanie/katowice" element={<PozycjonowanieKatowice />} />
+                <Route path="/uslugi/pozycjonowanie/czestochowa" element={<PozycjonowanieCzestochowa />} />
+                <Route path="/uslugi/pozycjonowanie/torun" element={<PozycjonowanieTorun />} />
+                <Route path="/uslugi/pozycjonowanie/bydgoszcz" element={<PozycjonowanieBydgoszcz />} />
+                <Route path="/uslugi/pozycjonowanie/radom" element={<PozycjonowanieRadom />} />
+                <Route path="/uslugi/pozycjonowanie/kielce" element={<PozycjonowanieKielce />} />
                 <Route path="/uslugi/identyfikacja-wizualna" element={<UslugiIdentyfikacjaWizualna />} />
                 <Route path="/uslugi/fotografia-produktowa" element={<FotografiaProduktowa />} />
                 <Route path="/uslugi/video-marketing" element={<VideoMarketing />} />
@@ -496,6 +534,16 @@ const App = () => (
                 <Route path="/agencja-marketingowa-warszawa" element={<AgencjaMarketingowaWarszawa />} />
                 <Route path="/agencja-marketingowa-katowice" element={<AgencjaMarketingowaKatowice />} />
                 <Route path="/agencja-marketingowa-wroclaw" element={<AgencjaMarketingowaWroclaw />} />
+                <Route path="/agencja-marketingowa-lodz" element={<AgencjaMarketingowaLodz />} />
+                <Route path="/agencja-marketingowa-gdansk" element={<AgencjaMarketingowaGdansk />} />
+                <Route path="/agencja-marketingowa-krakow" element={<AgencjaMarketingowaKrakow />} />
+                <Route path="/agencja-marketingowa-lublin" element={<AgencjaMarketingowaLublin />} />
+                <Route path="/agencja-marketingowa-rzeszow" element={<AgencjaMarketingowaRzeszow />} />
+                <Route path="/agencja-marketingowa-bydgoszcz" element={<AgencjaMarketingowaBydgoszcz />} />
+                <Route path="/agencja-marketingowa-torun" element={<AgencjaMarketingowaTorun />} />
+                <Route path="/agencja-marketingowa-szczecin" element={<AgencjaMarketingowaSzczecin />} />
+                <Route path="/cennik-stron-internetowych" element={<CennikStronInternetowych />} />
+                <Route path="/cennik-pozycjonowania" element={<CennikPozycjonowania />} />
                 <Route path="/agencja-kreatywna-poznan" element={<AgencjaKreaTywnaPoznan />} />
                 <Route path="/agencja-graficzna" element={<AgencjaGraficzna />} />
                 <Route path="/kompleksowa-obsluga-marketingowa" element={<KompleksowaObsluga />} />
