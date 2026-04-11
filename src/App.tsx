@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 69: OKR, Product Marketing, Employer Branding
+const BlogOKRCoTo = lazy(() => import("./pages/BlogOKRCoTo"));
+const BlogProductMarketingCoTo = lazy(() => import("./pages/BlogProductMarketingCoTo"));
+const BlogEmployerBrandingCoTo = lazy(() => import("./pages/BlogEmployerBrandingCoTo"));
+
 // Wave 68: Pricing Strategy, Micro-Moments, Buyer Journey
 const BlogPricingStrategyCoTo = lazy(() => import("./pages/BlogPricingStrategyCoTo"));
 const BlogMicroMomentsCoTo = lazy(() => import("./pages/BlogMicroMomentsCoTo"));
@@ -832,6 +837,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 69 */}
+                <Route path="/blog/okr-co-to" element={<BlogOKRCoTo />} />
+                <Route path="/blog/product-marketing-co-to" element={<BlogProductMarketingCoTo />} />
+                <Route path="/blog/employer-branding-co-to" element={<BlogEmployerBrandingCoTo />} />
                 {/* Wave 68 */}
                 <Route path="/blog/pricing-strategy-co-to" element={<BlogPricingStrategyCoTo />} />
                 <Route path="/blog/micro-moments-co-to" element={<BlogMicroMomentsCoTo />} />
