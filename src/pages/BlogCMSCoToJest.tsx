@@ -2,7 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Clock, Settings, Globe, ShoppingBag, Code2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Clock, Globe, Settings, Zap, FileText } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -16,160 +16,160 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 export default function BlogCMSCoToJest() {
   const breadcrumbs = [
-    { label: "Strona główna", href: "/" },
+    { label: "Strona glowna", href: "/" },
     { label: "Blog", href: "/blog" },
-    { label: "CMS — co to jest? Systemy zarządzania treścią" },
+    { label: "CMS - co to jest? System zarzadzania trescia" },
   ];
 
-  const cmsSystems = [
-    { name: "WordPress", share: "43%", bestFor: "Blogi, strony firmowe, sklepy (WooCommerce)", pros: "Ogromna społeczność, tysiące motywów i wtyczek, świetne SEO", cons: "Wymaga aktualizacji, podatny na ataki jeśli zaniedbany" },
-    { name: "Shopify", share: "4%", bestFor: "Sklepy e-commerce", pros: "Łatwość obsługi, hosting w cenie, 24/7 wsparcie", cons: "Prowizja od sprzedaży, ograniczona customizacja, abonament" },
-    { name: "Wix", share: "3%", bestFor: "Proste strony, portfolio", pros: "Drag & drop, hosting w cenie, szybki start", cons: "Słabsze SEO, zamknięta platforma, trudna migracja" },
-    { name: "Joomla", share: "2%", bestFor: "Portale, magazyny, społeczności", pros: "Elastyczny system uprawnień, dobry dla złożonych portali", cons: "Stroma krzywa nauki, mniej popularny = mniej zasobów" },
-    { name: "Drupal", share: "1,5%", bestFor: "Duże portale, instytucje rządowe", pros: "Bardzo bezpieczny, skalowalny, enterprise-grade", cons: "Bardzo trudny bez dewelopera, drogie wdrożenia" },
-    { name: "Headless CMS", share: "Rosnący", bestFor: "Aplikacje webowe, omnichannel", pros: "Pełna elastyczność, nowoczesna architektura", cons: "Wymaga dewelopera, wyższy koszt wdrożenia" },
+  const cmsPlatforms = [
+    { name: "WordPress", share: "~43%", type: "Open source", best: "Blogi, strony firmowe, male sklepy. Najwiekszy ekosystem wtyczek." },
+    { name: "Shopify", share: "~4%", type: "SaaS (subskrypcja)", best: "Sklepy e-commerce - szybki start, hosting w cenie." },
+    { name: "Webflow", share: "~1%", type: "SaaS (visual)", best: "Agencje i designerzy - pikselowo doskonale strony bez kodu." },
+    { name: "Strapi / Directus", share: "Rosnacy", type: "Headless CMS", best: "Deweloperzy i aplikacje wymagajace API-first podejscia." },
+    { name: "Wix / Squarespace", share: "~4% lacznie", type: "SaaS (drag & drop)", best: "Male firmy i freelancerzy - prostota nad elastycznosc." },
+    { name: "Contentful / Sanity", share: "Enterprise", type: "Headless SaaS", best: "Duze firmy, wielokanalowe publikowanie tresci." },
   ];
 
   const faqItems = [
     {
       question: "Co to jest CMS?",
       answer:
-        "CMS (Content Management System) to system zarządzania treścią — oprogramowanie umożliwiające tworzenie, edytowanie i zarządzanie stroną internetową bez znajomości programowania. Dzięki CMS możesz dodawać artykuły, zdjęcia i podstrony przez panel administracyjny — jak edytor tekstowy. Najpopularniejszy CMS to WordPress, który obsługuje 43% wszystkich stron internetowych na świecie.",
+        "CMS (Content Management System, system zarzadzania trescia) to oprogramowanie umozliwiajace tworzenie, edytowanie i zarzadzanie trescia strony internetowej bez znajomosci kodowania. Zamiast pisac HTML i CSS, uzywasz interfejsu graficznego. Najpopularniejszy CMS to WordPress (43% wszystkich stron na swiecie). CMS obsluguje: strony i podstrony, blogi i artykuly, sklepy e-commerce (WooCommerce, Shopify), media (zdjecia, wideo, pliki), SEO i metadata.",
     },
     {
-      question: "Jaki CMS wybrać dla strony firmowej?",
+      question: "Do czego sluzy CMS?",
       answer:
-        "Dla strony firmowej najczęściej polecamy WordPress — dojrzały, elastyczny, świetny dla SEO. Alternatywy: Wix lub Squarespace jeśli chcesz bardzo prostego narzędzia bez angażowania dewelopera. Dla sklepu: WooCommerce (WordPress) lub Shopify. Kluczowe pytania: Jak duża będzie strona? Czy potrzebujesz sklepu? Jak ważne jest SEO? Czy masz dewelopera?",
+        "CMS sluzy do: 1) Publikowania tresci - artykuly, produkty, strony bez pomocy programisty. 2) Zarzadzania wieloma autorami - kazdy ma konto z okreslonymi uprawnieniami. 3) SEO - wbudowane narzedzia do meta tagow, sitemap, struktury URL. 4) E-commerce - WooCommerce na WordPress, sklep Shopify. 5) Integracji z narzedzami - Google Analytics, MailChimp, social media. Dla kogo CMS: wlasciciele malych firm chcacy samodzielnie aktualizowac strone, redakcje i blogi z wieloma autorami, sklepy e-commerce bez budzetu na custom development.",
     },
     {
-      question: "Czy CMS jest bezpłatny?",
+      question: "WordPress vs inne CMS - co wybrac?",
       answer:
-        "WordPress, Joomla i Drupal są bezpłatne (open source) — płacisz tylko za hosting i domenę. Shopify, Wix i Squarespace to platformy SaaS — płacisz miesięczny abonament (wszystko w pakiecie: hosting + CMS + wsparcie). Za WordPress płacisz: hosting (20-200 zł/mies.), domenę (80 zł/rok) i ewentualnie motyw i wtyczki premium.",
+        "WordPress: zalety - ogromny ekosystem wtyczek (60 000+), darmowy, latwa customizacja, doskonale wsparcie community. Wady - wymaga aktualizacji, moze byc powolny bez optymalizacji. Shopify: zalety - hosting, bezpieczenstwo i aktualizacje w cenie, idealny dla e-commerce. Wady - drozszy dlugoterminowo, mniejsza elastycznosc. Webflow: zalety - doskonale narzedzie dla designerow, wizualny edytor, czyste kody. Wady - wyzsza cena, stroma krzywa uczenia. Strona firmowa: WordPress lub Webflow. Sklep: Shopify lub WooCommerce. Startup: Webflow lub custom.",
     },
     {
       question: "Co to jest headless CMS?",
       answer:
-        "Headless CMS to system gdzie backend (zarządzanie treścią) jest oddzielony od frontendu (wyświetlania). Treść jest dostarczana przez API do dowolnego frontendu — strony www, aplikacji mobilnej, smart TV. Popularne headless CMS: Contentful, Strapi, Sanity. Zalety: dowolny frontend (React, Vue), omnichannel. Wady: wymaga dewelopera, wyższy koszt. Dla większości firm klasyczny WordPress jest lepszy.",
+        "Headless CMS to system zarzadzania trescia bez frontend (bez warstwy prezentacji). Przechowuje tresci i udostepnia je przez API (REST lub GraphQL) dowolnemu frontend - stronie React, aplikacji mobilnej, smart TV, asystentowi glosowemu. Przyklady: Contentful, Sanity, Strapi, Directus. Kiedy headless CMS: wiele kanalow (strona + aplikacja + newsletter), wysoka wydajnosc (React/Next.js), duze zespoly z oddzielnymi frontend i backend deweloperami. Wada jest wyzszy koszt wdrozenia i potrzeba programistow.",
     },
     {
-      question: "Czy mogę zmienić CMS bez utraty SEO?",
+      question: "Czy strona na CMS jest gorsza od custom development?",
       answer:
-        "Zmiana CMS (migracja) możliwa jest bez utraty SEO jeśli jest prawidłowo przeprowadzona: zachowaj te same URL-e lub stosuj przekierowania 301, przenieś meta tagi, tytuły i opisy, zachowaj mapę strony sitemap.xml, zaktualizuj Google Search Console. Migracja CMS to duże przedsięwzięcie — warto zlecić specjaliście SEO. Niedbała migracja może oznaczać utratę 30-70% pozycji.",
+        "Nie - dobrze zbudowana strona na CMS jest rownie dobra (lub lepsza) niz custom. Kluczowe czynniki: wydajnosc (Core Web Vitals, szybkosc ladowania), SEO (poprawna struktura, meta tagi, sitemap), bezpieczenstwo (aktualne wtyczki, SSL, backup), design (responsywnosc, UX). CMS ma zalety nad custom: szybszy czas wdrozenia, nizsze koszty, latosc samodzielnej edycji tresci. Custom development ma sens gdy: wymagania sa bardzo specyficzne, wydajnosc jest krytyczna (np. miliony sesji/dzien), integracje sa niestandardowe.",
+    },
+    {
+      question: "Ile kosztuje strona na CMS?",
+      answer:
+        "Koszty strony na CMS zaleza od platformy i zlozonosci: WordPress (basic, 5-10 podstron): 2000-8000 zl. WordPress (zaawansowany z customizacjami): 8000-30 000 zl. Shopify (sklep podstawowy): 3000-10 000 zl + abonament 29-299 USD/mies. Webflow (strona marketingowa): 5000-20 000 zl + hosting 23-36 USD/mies. Custom CMS (np. Strapi + Next.js): 20 000-100 000+ zl. Do kosztow dodaj: hosting (50-500 zl/mies.), wtyczki premium (100-2000 zl/rok), utrzymanie i aktualizacje (200-1000 zl/mies.).",
     },
   ];
 
   return (
     <>
       <SEOHead
-        title="CMS — co to jest? Systemy zarządzania treścią porównanie | fotz.pl"
-        description="CMS co to jest — wyjaśniamy czym jest Content Management System, porównanie WordPress, Shopify, Wix, Joomla i Drupal. Który CMS wybrać dla strony firmowej?"
-        canonical="https://fotz.pl/blog/co-to-jest-cms"
+        title="CMS - co to jest? System zarzadzania trescia - poradnik | fotz.pl"
+        description="CMS co to jest - wyjasniamy czym jest Content Management System, porownanie WordPress vs Shopify vs Webflow, headless CMS i ile kosztuje strona na CMS."
+        canonical="https://fotz.pl/blog/cms-co-to-jest"
       />
       <ArticleSchema
-        title="CMS — co to jest? Systemy zarządzania treścią"
-        description="Czym jest CMS, porównanie popularnych systemów (WordPress, Shopify, Wix), który wybrać dla strony firmowej lub sklepu."
-        datePublished="2025-01-30"
-        dateModified="2025-03-28"
-        url="https://fotz.pl/blog/co-to-jest-cms"
+        title="CMS - co to jest? System zarzadzania trescia"
+        description="Czym jest CMS (Content Management System), popularne platformy (WordPress, Shopify, Webflow), co to jest headless CMS i ile kosztuje strona na CMS."
+        datePublished="2025-04-10"
+        dateModified="2025-04-10"
+        url="https://fotz.pl/blog/cms-co-to-jest"
       />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
 
       <Layout>
         <PageBreadcrumbs breadcrumbs={breadcrumbs} />
 
-        {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 7 min czytania</span>
-                <span className="flex items-center gap-1"><Settings className="w-4 h-4" /> CMS i technologie</span>
+                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 6 min czytania</span>
+                <span className="flex items-center gap-1"><Globe className="w-4 h-4" /> Strony internetowe</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                CMS — co to jest i który wybrać?
+                CMS - co to jest i jaki system wybrac?
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                CMS (Content Management System) pozwala zarządzać stroną internetową bez znajomości programowania.
-                WordPress, Shopify, Wix — który system wybrać i kiedy?
+                CMS (Content Management System) to system zarzadzania trescia strony bez kodowania.
+                WordPress, Shopify, Webflow - ktory wybrac i ile to kosztuje?
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Content */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
 
             <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-4 mb-4">Jak działa CMS?</h2>
-              <p className="text-slate-700 mb-4">
-                Bez CMS strona internetowa to pliki HTML, CSS i JavaScript wymagające znajomości kodu.
-                CMS dodaje warstwę abstrakcji — edytor podobny do Worda, przez który tworzysz treści,
-                a system sam generuje odpowiedni kod.
-              </p>
-              <div className="grid md:grid-cols-3 gap-4 mb-6">
-                {[
-                  { icon: Globe, label: "Łatwość", desc: "Dodajesz treści jak w edytorze tekstowym — zero kodu" },
-                  { icon: Settings, label: "Kontrola", desc: "Zarządzasz wszystkimi podstronami z jednego panelu" },
-                  { icon: Code2, label: "Elastyczność", desc: "Wtyczki rozszerzają funkcjonalność bez pisania kodu" },
-                ].map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={idx} className="bg-blue-50 p-4 rounded-lg border border-blue-200 text-center">
-                      <Icon className="w-6 h-6 text-blue-600 mx-auto mb-2" />
-                      <div className="font-bold text-slate-900 text-sm mb-1">{item.label}</div>
-                      <p className="text-slate-600 text-xs">{item.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </FadeInView>
-
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Najpopularniejsze systemy CMS 2025</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mt-4 mb-4">Najpopularniejsze systemy CMS</h2>
               <div className="space-y-3 mb-6">
-                {cmsSystems.map((cms, idx) => (
-                  <div key={idx} className="bg-slate-50 p-5 rounded-lg border border-slate-200">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="font-bold text-slate-900">{cms.name}</span>
-                      <span className="bg-blue-100 text-blue-700 text-xs px-2 py-0.5 rounded-full">{cms.share} rynku</span>
-                    </div>
-                    <p className="text-slate-600 text-xs mb-2"><span className="font-medium">Najlepszy dla:</span> {cms.bestFor}</p>
-                    <div className="grid md:grid-cols-2 gap-2 text-xs">
-                      <div>
-                        <span className="text-green-600 font-medium">✓ </span>
-                        <span className="text-slate-600">{cms.pros}</span>
-                      </div>
-                      <div>
-                        <span className="text-red-500 font-medium">✗ </span>
-                        <span className="text-slate-600">{cms.cons}</span>
+                {cmsPlatforms.map((cms, idx) => (
+                  <div key={idx} className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <div className="flex items-center justify-between mb-1">
+                      <h3 className="font-bold text-slate-900 text-sm">{cms.name}</h3>
+                      <div className="flex gap-2">
+                        <span className="bg-blue-100 text-blue-700 text-xs px-2 py-0.5 rounded">{cms.type}</span>
+                        <span className="bg-slate-200 text-slate-700 text-xs px-2 py-0.5 rounded">{cms.share}</span>
                       </div>
                     </div>
+                    <p className="text-slate-600 text-xs">{cms.best}</p>
                   </div>
                 ))}
               </div>
             </FadeInView>
 
             <FadeInView>
+              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">CMS tradycyjny vs Headless CMS</h2>
+              <div className="overflow-x-auto mb-6">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-slate-800 text-white">
+                      <th className="text-left p-3 border border-slate-700">Aspekt</th>
+                      <th className="text-left p-3 border border-slate-700">Tradycyjny CMS</th>
+                      <th className="text-left p-3 border border-slate-700">Headless CMS</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      { aspect: "Frontend", trad: "Wbudowany w CMS (theme/template)", headless: "Oddzielny (React, Next.js, Vue)" },
+                      { aspect: "API", trad: "Opcjonalne (REST Plugin)", headless: "Natywne (REST / GraphQL)" },
+                      { aspect: "Kanaly", trad: "Glownie strona www", headless: "Web + mobile + IoT + voice" },
+                      { aspect: "Trudnosc", trad: "Niska (dla edytorow)", headless: "Wysoka (wymaga dev)" },
+                      { aspect: "Przyklady", trad: "WordPress, Webflow", headless: "Contentful, Sanity, Strapi" },
+                    ].map((row, idx) => (
+                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                        <td className="p-3 border border-slate-200 font-bold text-slate-700 text-xs">{row.aspect}</td>
+                        <td className="p-3 border border-slate-200 text-blue-700 text-xs">{row.trad}</td>
+                        <td className="p-3 border border-slate-200 text-slate-500 text-xs">{row.headless}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </FadeInView>
+
+            <FadeInView>
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-                <ShoppingBag className="w-5 h-5 text-blue-600 mb-2" />
-                <p className="text-blue-800 font-semibold mb-2">Nie wiesz który CMS wybrać?</p>
+                <Settings className="w-5 h-5 text-blue-600 mb-2" />
+                <p className="text-blue-800 font-semibold mb-2">Potrzebujesz strony na odpowiednim CMS?</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Doradzamy i wdrażamy na WordPress, WooCommerce i inne systemy. Bezpłatna konsultacja.
+                  Dobieramy CMS do potrzeb projektu - WordPress, Webflow lub custom. Zawsze z SEO i szybkoscia ladowania.
                 </p>
                 <Link to="/uslugi/tworzenie-stron-internetowych" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
-                  Tworzenie stron internetowych <ArrowRight className="w-4 h-4" />
+                  Tworzenie stron - oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </FadeInView>
           </div>
         </section>
 
-        {/* FAQ */}
         <FadeInView>
           <section className="py-12 md:py-16 bg-slate-50">
             <div className="max-w-3xl mx-auto px-4 md:px-6">
-              <h2 className="text-2xl font-bold text-center mb-8">FAQ — CMS co to jest</h2>
+              <h2 className="text-2xl font-bold text-center mb-8">FAQ - CMS co to jest</h2>
               <FAQSchema items={faqItems} />
               <Accordion type="single" collapsible className="w-full bg-white rounded-lg border border-slate-200">
                 {faqItems.map((item, idx) => (
@@ -188,8 +188,8 @@ export default function BlogCMSCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Pomożemy wybrać i wdrożyć właściwy CMS"
-          subheading="WordPress, WooCommerce, custom — doradztwo i realizacja w jednym miejscu."
+          heading="Zbudujemy strone na idealnym CMS dla Twojego projektu"
+          subheading="WordPress, Webflow lub custom - zawsze z wydajnoscia, SEO i latwoscia edycji."
         />
       </Layout>
     </>
