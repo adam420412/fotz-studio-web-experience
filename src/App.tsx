@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 129: Sales Playbook, Key Account Management, Board Meeting
+const BlogSalesPlaybookCoTo = lazy(() => import("./pages/BlogSalesPlaybookCoTo"));
+const BlogKeyAccountManagement = lazy(() => import("./pages/BlogKeyAccountManagement"));
+const BlogBoardMeetingCoTo = lazy(() => import("./pages/BlogBoardMeetingCoTo"));
+
 // Wave 128: Category Creation, Churn Prevention, Expansion Revenue
 const BlogCategoryCreationCoTo = lazy(() => import("./pages/BlogCategoryCreationCoTo"));
 const BlogChurnPreventionCoTo = lazy(() => import("./pages/BlogChurnPreventionCoTo"));
@@ -1131,6 +1136,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 129 */}
+                <Route path="/blog/sales-playbook-co-to-jest-jak-budowac" element={<BlogSalesPlaybookCoTo />} />
+                <Route path="/blog/key-account-management-kam-co-to-jest" element={<BlogKeyAccountManagement />} />
+                <Route path="/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac" element={<BlogBoardMeetingCoTo />} />
                 {/* Wave 128 */}
                 <Route path="/blog/category-creation-tworzenie-kategorii-rynkowej" element={<BlogCategoryCreationCoTo />} />
                 <Route path="/blog/churn-prevention-zapobieganie-odejsciom-klientow" element={<BlogChurnPreventionCoTo />} />
