@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 98: Burn Rate, Unit Economics, North Star Metric
+const BlogBurnRateCoTo = lazy(() => import("./pages/BlogBurnRateCoTo"));
+const BlogUnitEconomicsCoTo = lazy(() => import("./pages/BlogUnitEconomicsCoTo"));
+const BlogNorthStarMetricCoTo = lazy(() => import("./pages/BlogNorthStarMetricCoTo"));
+
 // Wave 97: Design Sprint, Tech Debt, Value Stream Mapping
 const BlogDesignSprintCoTo = lazy(() => import("./pages/BlogDesignSprintCoTo"));
 const BlogTechDebtCoTo = lazy(() => import("./pages/BlogTechDebtCoTo"));
@@ -976,6 +981,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 98 */}
+                <Route path="/blog/burn-rate-runway-co-to" element={<BlogBurnRateCoTo />} />
+                <Route path="/blog/unit-economics-co-to" element={<BlogUnitEconomicsCoTo />} />
+                <Route path="/blog/north-star-metric-co-to" element={<BlogNorthStarMetricCoTo />} />
                 {/* Wave 97 */}
                 <Route path="/blog/design-sprint-co-to" element={<BlogDesignSprintCoTo />} />
                 <Route path="/blog/dług-techniczny-co-to" element={<BlogTechDebtCoTo />} />
