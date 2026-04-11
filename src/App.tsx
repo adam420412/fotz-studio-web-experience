@@ -251,6 +251,20 @@ const CennikPozycjonowania = lazy(() => import("./pages/CennikPozycjonowania"));
 const BlogPozycjonowanieLokalnePoradnik = lazy(() => import("./pages/BlogPozycjonowanieLokalnePoradnik"));
 const BlogContentMarketing = lazy(() => import("./pages/BlogContentMarketing"));
 
+// Wave 9: Strony internetowe cluster + city pages
+const TworzenieStronInternetowych = lazy(() => import("./pages/TworzenieStronInternetowych"));
+const ProjektowanieStronInternetowych = lazy(() => import("./pages/ProjektowanieStronInternetowych"));
+const StronyInternetoweLubelskie = lazy(() => import("./pages/StronyInternetoweLubelskie"));
+const StronyInternetoweWielkopolska = lazy(() => import("./pages/StronyInternetoweWielkopolska"));
+const StronyInternetowePodkarpacie = lazy(() => import("./pages/StronyInternetowePodkarpacie"));
+const BlogJakStworzyc = lazy(() => import("./pages/BlogJakStworzyc"));
+const BlogStronaInternetowaOdZera = lazy(() => import("./pages/BlogStronaInternetowaOdZera"));
+const CennikTworzenieStron = lazy(() => import("./pages/CennikTworzenieStron"));
+const PozycjonowanieOpole = lazy(() => import("./pages/PozycjonowanieOpole"));
+const PozycjonowanieOlsztyn = lazy(() => import("./pages/PozycjonowanieOlsztyn"));
+const AgencjaMarketingowaOpole = lazy(() => import("./pages/AgencjaMarketingowaOpole"));
+const AgencjaMarketingowaOlsztyn = lazy(() => import("./pages/AgencjaMarketingowaOlsztyn"));
+
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
@@ -377,6 +391,9 @@ const App = () => (
                 <Route path="/blog/jak-wybrac-agencje-seo" element={<BlogJakWybracAgencjeSEO />} />
                 <Route path="/blog/pozycjonowanie-lokalne-dla-firm" element={<BlogPozycjonowanieLokalnePoradnik />} />
                 <Route path="/blog/content-marketing-dla-firm" element={<BlogContentMarketing />} />
+                <Route path="/blog/jak-stworzyc-strone-internetowa" element={<BlogJakStworzyc />} />
+                <Route path="/blog/strona-internetowa-dla-malej-firmy" element={<BlogStronaInternetowaOdZera />} />
+                <Route path="/cennik-tworzenia-stron" element={<CennikTworzenieStron />} />
 
                 {/* Case Studies */}
                 <Route path="/case-studies/optymalizacja-konwersji-ecommerce" element={<CaseStudyEcommerceCRO />} />
@@ -460,7 +477,14 @@ const App = () => (
                 <Route path="/uslugi/pozycjonowanie/bydgoszcz" element={<PozycjonowanieBydgoszcz />} />
                 <Route path="/uslugi/pozycjonowanie/radom" element={<PozycjonowanieRadom />} />
                 <Route path="/uslugi/pozycjonowanie/kielce" element={<PozycjonowanieKielce />} />
+                <Route path="/uslugi/pozycjonowanie/opole" element={<PozycjonowanieOpole />} />
+                <Route path="/uslugi/pozycjonowanie/olsztyn" element={<PozycjonowanieOlsztyn />} />
                 <Route path="/uslugi/identyfikacja-wizualna" element={<UslugiIdentyfikacjaWizualna />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych" element={<TworzenieStronInternetowych />} />
+                <Route path="/uslugi/projektowanie-stron-internetowych" element={<ProjektowanieStronInternetowych />} />
+                <Route path="/uslugi/strony-internetowe/lubelskie" element={<StronyInternetoweLubelskie />} />
+                <Route path="/uslugi/strony-internetowe/wielkopolska" element={<StronyInternetoweWielkopolska />} />
+                <Route path="/uslugi/strony-internetowe/podkarpacie" element={<StronyInternetowePodkarpacie />} />
                 <Route path="/uslugi/fotografia-produktowa" element={<FotografiaProduktowa />} />
                 <Route path="/uslugi/video-marketing" element={<VideoMarketing />} />
                 <Route path="/uslugi/branding" element={<IdentyfikacjaWizualna />} />
@@ -542,6 +566,8 @@ const App = () => (
                 <Route path="/agencja-marketingowa-bydgoszcz" element={<AgencjaMarketingowaBydgoszcz />} />
                 <Route path="/agencja-marketingowa-torun" element={<AgencjaMarketingowaTorun />} />
                 <Route path="/agencja-marketingowa-szczecin" element={<AgencjaMarketingowaSzczecin />} />
+                <Route path="/agencja-marketingowa-opole" element={<AgencjaMarketingowaOpole />} />
+                <Route path="/agencja-marketingowa-olsztyn" element={<AgencjaMarketingowaOlsztyn />} />
                 <Route path="/cennik-stron-internetowych" element={<CennikStronInternetowych />} />
                 <Route path="/cennik-pozycjonowania" element={<CennikPozycjonowania />} />
                 <Route path="/agencja-kreatywna-poznan" element={<AgencjaKreaTywnaPoznan />} />
