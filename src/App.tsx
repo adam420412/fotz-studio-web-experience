@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 151: PWA, Low-Code/No-Code, Web3
+const BlogPwaCoTo = lazy(() => import("./pages/BlogPwaCoTo"));
+const BlogLowCodeCoTo = lazy(() => import("./pages/BlogLowCodeCoTo"));
+const BlogWeb3CoTo = lazy(() => import("./pages/BlogWeb3CoTo"));
+
 // Wave 150: Edge Computing, Micro Frontends, QUIC/HTTP3
 const BlogEdgeComputingCoTo = lazy(() => import("./pages/BlogEdgeComputingCoTo"));
 const BlogMicroFrontendsCoTo = lazy(() => import("./pages/BlogMicroFrontendsCoTo"));
@@ -1241,6 +1246,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 151 */}
+                <Route path="/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz" element={<BlogPwaCoTo />} />
+                <Route path="/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n" element={<BlogLowCodeCoTo />} />
+                <Route path="/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow" element={<BlogWeb3CoTo />} />
                 {/* Wave 150 */}
                 <Route path="/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions" element={<BlogEdgeComputingCoTo />} />
                 <Route path="/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation" element={<BlogMicroFrontendsCoTo />} />
