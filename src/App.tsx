@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 102: Feedback Loop, Community-Led Growth, QBR
+const BlogFeedbackLoopCoTo = lazy(() => import("./pages/BlogFeedbackLoopCoTo"));
+const BlogCommunityLedGrowthCoTo = lazy(() => import("./pages/BlogCommunityLedGrowthCoTo"));
+const BlogQbrCoTo = lazy(() => import("./pages/BlogQbrCoTo"));
+
 // Wave 101: Network Effects, Switching Costs, Competitive Moat
 const BlogNetworkEffectsCoTo = lazy(() => import("./pages/BlogNetworkEffectsCoTo"));
 const BlogSwitchingCostsCoTo = lazy(() => import("./pages/BlogSwitchingCostsCoTo"));
@@ -996,6 +1001,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 102 */}
+                <Route path="/blog/feedback-loop-co-to" element={<BlogFeedbackLoopCoTo />} />
+                <Route path="/blog/community-led-growth-co-to" element={<BlogCommunityLedGrowthCoTo />} />
+                <Route path="/blog/qbr-co-to" element={<BlogQbrCoTo />} />
                 {/* Wave 101 */}
                 <Route path="/blog/efekty-sieciowe-network-effects" element={<BlogNetworkEffectsCoTo />} />
                 <Route path="/blog/switching-costs-co-to" element={<BlogSwitchingCostsCoTo />} />
