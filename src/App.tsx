@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 160: Structured Logging, Sentry, Incident Management
+const BlogStructuredLoggingCoTo = lazy(() => import("./pages/BlogStructuredLoggingCoTo"));
+const BlogSentryCoTo = lazy(() => import("./pages/BlogSentryCoTo"));
+const BlogIncidentManagementCoTo = lazy(() => import("./pages/BlogIncidentManagementCoTo"));
+
 // Wave 159: Caching Strategies, Rate Limiting, Resilience Patterns
 const BlogCachingStrategiesCoTo = lazy(() => import("./pages/BlogCachingStrategiesCoTo"));
 const BlogRateLimitingCoTo = lazy(() => import("./pages/BlogRateLimitingCoTo"));
@@ -1284,6 +1289,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 160 */}
+                <Route path="/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana" element={<BlogStructuredLoggingCoTo />} />
+                <Route path="/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python" element={<BlogSentryCoTo />} />
+                <Route path="/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla" element={<BlogIncidentManagementCoTo />} />
                 {/* Wave 159 */}
                 <Route path="/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation" element={<BlogCachingStrategiesCoTo />} />
                 <Route path="/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway" element={<BlogRateLimitingCoTo />} />
