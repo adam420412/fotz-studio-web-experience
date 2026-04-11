@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 56: Long Tail Keywords, Page Speed, JTBD
+const BlogLongTailKeywordsCoTo = lazy(() => import("./pages/BlogLongTailKeywordsCoTo"));
+const BlogPageSpeedCoTo = lazy(() => import("./pages/BlogPageSpeedCoTo"));
+const BlogJTBDCoTo = lazy(() => import("./pages/BlogJTBDCoTo"));
+
 // Wave 55: Social Proof, Digital PR, Voice Search
 const BlogSocialProofCoTo = lazy(() => import("./pages/BlogSocialProofCoTo"));
 const BlogDigitalPRCoTo = lazy(() => import("./pages/BlogDigitalPRCoTo"));
@@ -768,6 +773,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 56 */}
+                <Route path="/blog/long-tail-keywords-co-to" element={<BlogLongTailKeywordsCoTo />} />
+                <Route path="/blog/page-speed-co-to" element={<BlogPageSpeedCoTo />} />
+                <Route path="/blog/jobs-to-be-done-jtbd" element={<BlogJTBDCoTo />} />
                 {/* Wave 55 */}
                 <Route path="/blog/social-proof-co-to" element={<BlogSocialProofCoTo />} />
                 <Route path="/blog/digital-pr-co-to" element={<BlogDigitalPRCoTo />} />
