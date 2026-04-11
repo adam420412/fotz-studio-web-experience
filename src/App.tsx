@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 194: Panda CSS+UnoCSS, Node.js version managers, Next.js 15
+const BlogPandaCssUnoCoTo = lazy(() => import("./pages/BlogPandaCssUnoCoTo"));
+const BlogNodeVersionMgrCoTo = lazy(() => import("./pages/BlogNodeVersionMgrCoTo"));
+const BlogNextJs15CoTo = lazy(() => import("./pages/BlogNextJs15CoTo"));
+
 // Wave 193: CSS Anchor+Popover API, RN New Architecture, TanStack Form
 const BlogCssAnchorPopoverCoTo = lazy(() => import("./pages/BlogCssAnchorPopoverCoTo"));
 const BlogRnNewArchCoTo = lazy(() => import("./pages/BlogRnNewArchCoTo"));
@@ -1454,6 +1459,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 194 */}
+                <Route path="/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024" element={<BlogPandaCssUnoCoTo />} />
+                <Route path="/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024" element={<BlogNodeVersionMgrCoTo />} />
+                <Route path="/blog/nextjs-15-turbopack-async-params-after-caching-migracja-v14-2024" element={<BlogNextJs15CoTo />} />
                 {/* Wave 193 */}
                 <Route path="/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024" element={<BlogCssAnchorPopoverCoTo />} />
                 <Route path="/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024" element={<BlogRnNewArchCoTo />} />
