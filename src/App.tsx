@@ -285,6 +285,12 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 17: Shopify, cenniki stron, wizytówka Google, sklep cena
+const BlogShopifyPolska = lazy(() => import("./pages/BlogShopifyPolska"));
+const BlogTworzenieStronCennik = lazy(() => import("./pages/BlogTworzenieStronCennik"));
+const BlogWizytowkaGoogle = lazy(() => import("./pages/BlogWizytowkaGoogle"));
+const BlogSklepInternetowyCena = lazy(() => import("./pages/BlogSklepInternetowyCena"));
+
 // Wave 16: Google Moja Firma, marketing automation, lead gen, SEO Lublin, restauracja
 const GoogleMojaFirma = lazy(() => import("./pages/GoogleMojaFirma"));
 const MarketingAutomation = lazy(() => import("./pages/MarketingAutomation"));
@@ -568,6 +574,11 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 17 */}
+                <Route path="/blog/shopify-polska" element={<BlogShopifyPolska />} />
+                <Route path="/blog/tworzenie-stron-internetowych-cennik" element={<BlogTworzenieStronCennik />} />
+                <Route path="/blog/wizytowka-google" element={<BlogWizytowkaGoogle />} />
+                <Route path="/blog/sklep-internetowy-cena" element={<BlogSklepInternetowyCena />} />
                 {/* Wave 16 */}
                 <Route path="/blog/google-moja-firma" element={<GoogleMojaFirma />} />
                 <Route path="/uslugi/marketing-automation" element={<MarketingAutomation />} />
