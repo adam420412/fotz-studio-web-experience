@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 161: PostgreSQL Optimization, ClickHouse, DB Migrations
+const BlogPostgresOptCoTo = lazy(() => import("./pages/BlogPostgresOptCoTo"));
+const BlogClickhouseCoTo = lazy(() => import("./pages/BlogClickhouseCoTo"));
+const BlogDbMigrationsCoTo = lazy(() => import("./pages/BlogDbMigrationsCoTo"));
+
 // Wave 160: Structured Logging, Sentry, Incident Management
 const BlogStructuredLoggingCoTo = lazy(() => import("./pages/BlogStructuredLoggingCoTo"));
 const BlogSentryCoTo = lazy(() => import("./pages/BlogSentryCoTo"));
@@ -1289,6 +1294,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 161 */}
+                <Route path="/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni" element={<BlogPostgresOptCoTo />} />
+                <Route path="/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake" element={<BlogClickhouseCoTo />} />
+                <Route path="/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback" element={<BlogDbMigrationsCoTo />} />
                 {/* Wave 160 */}
                 <Route path="/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana" element={<BlogStructuredLoggingCoTo />} />
                 <Route path="/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python" element={<BlogSentryCoTo />} />
