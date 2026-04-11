@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 130: Channel Sales, Annual Planning, Financial Model
+const BlogChannelSalesCoTo = lazy(() => import("./pages/BlogChannelSalesCoTo"));
+const BlogAnnualPlanningCoTo = lazy(() => import("./pages/BlogAnnualPlanningCoTo"));
+const BlogFinancialModelCoTo = lazy(() => import("./pages/BlogFinancialModelCoTo"));
+
 // Wave 129: Sales Playbook, Key Account Management, Board Meeting
 const BlogSalesPlaybookCoTo = lazy(() => import("./pages/BlogSalesPlaybookCoTo"));
 const BlogKeyAccountManagement = lazy(() => import("./pages/BlogKeyAccountManagement"));
@@ -1136,6 +1141,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 130 */}
+                <Route path="/blog/channel-sales-sprzedaz-partnerska-co-to-jest" element={<BlogChannelSalesCoTo />} />
+                <Route path="/blog/annual-planning-planowanie-roczne-firmy" element={<BlogAnnualPlanningCoTo />} />
+                <Route path="/blog/financial-model-co-to-jest-saas-startup" element={<BlogFinancialModelCoTo />} />
                 {/* Wave 129 */}
                 <Route path="/blog/sales-playbook-co-to-jest-jak-budowac" element={<BlogSalesPlaybookCoTo />} />
                 <Route path="/blog/key-account-management-kam-co-to-jest" element={<BlogKeyAccountManagement />} />
