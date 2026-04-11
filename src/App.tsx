@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 189: Remix deep dive, React Compiler, Nuxt.js 3
+const BlogRemixDeepDiveCoTo = lazy(() => import("./pages/BlogRemixDeepDiveCoTo"));
+const BlogReactCompilerCoTo = lazy(() => import("./pages/BlogReactCompilerCoTo"));
+const BlogNuxtCoTo = lazy(() => import("./pages/BlogNuxtCoTo"));
+
 // Wave 188: Qwik framework, SolidJS, CSS Grid Subgrid
 const BlogQwikCoTo = lazy(() => import("./pages/BlogQwikCoTo"));
 const BlogSolidJsCoTo = lazy(() => import("./pages/BlogSolidJsCoTo"));
@@ -1429,6 +1434,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 189 */}
+                <Route path="/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024" element={<BlogRemixDeepDiveCoTo />} />
+                <Route path="/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024" element={<BlogReactCompilerCoTo />} />
+                <Route path="/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024" element={<BlogNuxtCoTo />} />
                 {/* Wave 188 */}
                 <Route path="/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024" element={<BlogQwikCoTo />} />
                 <Route path="/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024" element={<BlogSolidJsCoTo />} />
