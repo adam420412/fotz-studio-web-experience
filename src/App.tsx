@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 78: Thought Leadership, Public Relations, Co-Marketing
+const BlogThoughtLeadershipCoTo = lazy(() => import("./pages/BlogThoughtLeadershipCoTo"));
+const BlogPublicRelationsCoTo = lazy(() => import("./pages/BlogPublicRelationsCoTo"));
+const BlogCoMarketingCoTo = lazy(() => import("./pages/BlogCoMarketingCoTo"));
+
 // Wave 77: Creator Economy, Micro Influencer, Brand Storytelling
 const BlogCreatorEconomyCoTo = lazy(() => import("./pages/BlogCreatorEconomyCoTo"));
 const BlogMicroInfluencerCoTo = lazy(() => import("./pages/BlogMicroInfluencerCoTo"));
@@ -877,6 +882,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 78 */}
+                <Route path="/blog/thought-leadership-co-to" element={<BlogThoughtLeadershipCoTo />} />
+                <Route path="/blog/public-relations-co-to" element={<BlogPublicRelationsCoTo />} />
+                <Route path="/blog/co-marketing-co-to" element={<BlogCoMarketingCoTo />} />
                 {/* Wave 77 */}
                 <Route path="/blog/creator-economy-co-to" element={<BlogCreatorEconomyCoTo />} />
                 <Route path="/blog/micro-influencer-marketing-co-to" element={<BlogMicroInfluencerCoTo />} />
