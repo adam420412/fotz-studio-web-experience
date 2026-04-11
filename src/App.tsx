@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 62: Sales Enablement, Zero-Click Search, Market Research
+const BlogSalesEnablementCoTo = lazy(() => import("./pages/BlogSalesEnablementCoTo"));
+const BlogZeroClickSearchCoTo = lazy(() => import("./pages/BlogZeroClickSearchCoTo"));
+const BlogMarketResearchCoTo = lazy(() => import("./pages/BlogMarketResearchCoTo"));
+
 // Wave 61: Attribution Modeling, Native Advertising, Customer Segmentation
 const BlogAttributionModelingCoTo = lazy(() => import("./pages/BlogAttributionModelingCoTo"));
 const BlogNativeAdvertisingCoTo = lazy(() => import("./pages/BlogNativeAdvertisingCoTo"));
@@ -797,6 +802,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 62 */}
+                <Route path="/blog/sales-enablement-co-to" element={<BlogSalesEnablementCoTo />} />
+                <Route path="/blog/zero-click-search-co-to" element={<BlogZeroClickSearchCoTo />} />
+                <Route path="/blog/market-research-co-to" element={<BlogMarketResearchCoTo />} />
                 {/* Wave 61 */}
                 <Route path="/blog/attribution-modeling-co-to" element={<BlogAttributionModelingCoTo />} />
                 <Route path="/blog/native-advertising-co-to" element={<BlogNativeAdvertisingCoTo />} />
