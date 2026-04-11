@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 201: Svelte 5 Runes+Angular 18/19, Capacitor+Ionic, GitHub Actions
+const BlogSvelte5RunesCoTo = lazy(() => import("./pages/BlogSvelte5RunesCoTo"));
+const BlogCapacitorIonicCoTo = lazy(() => import("./pages/BlogCapacitorIonicCoTo"));
+const BlogGithubActionsAdvCoTo = lazy(() => import("./pages/BlogGithubActionsAdvCoTo"));
+
 // Wave 200: TypeScript 5.5/5.6, Elysia.js+Bun, AI Agents+MCP
 const BlogTs55CoTo = lazy(() => import("./pages/BlogTs55CoTo"));
 const BlogElysiaJsCoTo = lazy(() => import("./pages/BlogElysiaJsCoTo"));
@@ -1489,6 +1494,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 201 */}
+                <Route path="/blog/svelte-5-runes-angular-18-19-signals-sveltekit-2-frameworki-2024" element={<BlogSvelte5RunesCoTo />} />
+                <Route path="/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024" element={<BlogCapacitorIonicCoTo />} />
+                <Route path="/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024" element={<BlogGithubActionsAdvCoTo />} />
                 {/* Wave 200 */}
                 <Route path="/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024" element={<BlogTs55CoTo />} />
                 <Route path="/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024" element={<BlogElysiaJsCoTo />} />
