@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 171: Web Security, Firebase/Supabase, Algolia/Search
+const BlogWebSecurityCoTo = lazy(() => import("./pages/BlogWebSecurityCoTo"));
+const BlogFirebaseSupabaseCoTo = lazy(() => import("./pages/BlogFirebaseSupabaseCoTo"));
+const BlogAlgoliaSearchCoTo = lazy(() => import("./pages/BlogAlgoliaSearchCoTo"));
+
 // Wave 170: React Hook Form+Zod, Framer Motion, i18n
 const BlogReactHookFormCoTo = lazy(() => import("./pages/BlogReactHookFormCoTo"));
 const BlogFramerMotionCoTo = lazy(() => import("./pages/BlogFramerMotionCoTo"));
@@ -1339,6 +1344,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 171 */}
+                <Route path="/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs" element={<BlogWebSecurityCoTo />} />
+                <Route path="/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024" element={<BlogFirebaseSupabaseCoTo />} />
+                <Route path="/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024" element={<BlogAlgoliaSearchCoTo />} />
                 {/* Wave 170 */}
                 <Route path="/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024" element={<BlogReactHookFormCoTo />} />
                 <Route path="/blog/framer-motion-gsap-css-animations-web-animacje-react-2024" element={<BlogFramerMotionCoTo />} />
