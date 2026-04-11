@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 139: MLOps, Vector Database, RAG Pattern
+const BlogMlopsCoTo = lazy(() => import("./pages/BlogMlopsCoTo"));
+const BlogVectorDatabaseCoTo = lazy(() => import("./pages/BlogVectorDatabaseCoTo"));
+const BlogRagPatternCoTo = lazy(() => import("./pages/BlogRagPatternCoTo"));
+
 // Wave 138: SOC2, Data Warehouse, Zero Trust
 const BlogSoc2CoTo = lazy(() => import("./pages/BlogSoc2CoTo"));
 const BlogDataWarehouseCoTo = lazy(() => import("./pages/BlogDataWarehouseCoTo"));
@@ -1181,6 +1186,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 139 */}
+                <Route path="/blog/mlops-machine-learning-operations-co-to-jest" element={<BlogMlopsCoTo />} />
+                <Route path="/blog/vector-database-co-to-jest-jak-wybrac" element={<BlogVectorDatabaseCoTo />} />
+                <Route path="/blog/rag-retrieval-augmented-generation-co-to-jest" element={<BlogRagPatternCoTo />} />
                 {/* Wave 138 */}
                 <Route path="/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup" element={<BlogSoc2CoTo />} />
                 <Route path="/blog/data-warehouse-co-to-jest-jak-wybrac" element={<BlogDataWarehouseCoTo />} />
