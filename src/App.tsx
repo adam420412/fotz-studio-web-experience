@@ -285,6 +285,16 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 12: High-value service pages + city SEO + blog
+const TworzenieStronWWW = lazy(() => import("./pages/TworzenieStronWWW"));
+const StronyInternetoweDlaFirm = lazy(() => import("./pages/StronyInternetoweDlaFirm"));
+const PozycjonowanieLokalne = lazy(() => import("./pages/PozycjonowanieLokalne"));
+const TworzenieSklepowInternetowych = lazy(() => import("./pages/TworzenieSklepowInternetowych"));
+const ProjektStronyInternetowej = lazy(() => import("./pages/ProjektStronyInternetowej"));
+const AgencjaSEOKrakow = lazy(() => import("./pages/AgencjaSEOKrakow"));
+const TworzenieStronBialystok = lazy(() => import("./pages/TworzenieStronBialystok"));
+const BlogJakSprzedawacWInternecie = lazy(() => import("./pages/BlogJakSprzedawacWInternecie"));
+
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
@@ -517,6 +527,14 @@ const App = () => (
                 <Route path="/agencja-seo-warszawa" element={<AgencjaSEOWarszawa />} />
                 <Route path="/blog/dropshipping-polska" element={<BlogDropshippingPolska />} />
                 <Route path="/blog/reklama-w-google" element={<BlogReklamaWGoogle />} />
+                <Route path="/uslugi/tworzenie-stron-www" element={<TworzenieStronWWW />} />
+                <Route path="/uslugi/strony-internetowe-dla-firm" element={<StronyInternetoweDlaFirm />} />
+                <Route path="/uslugi/pozycjonowanie-lokalne" element={<PozycjonowanieLokalne />} />
+                <Route path="/uslugi/tworzenie-sklepow-internetowych" element={<TworzenieSklepowInternetowych />} />
+                <Route path="/uslugi/projekt-strony-internetowej" element={<ProjektStronyInternetowej />} />
+                <Route path="/agencja-seo-krakow" element={<AgencjaSEOKrakow />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
+                <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/projektowanie-stron-internetowych" element={<ProjektowanieStronInternetowych />} />
                 <Route path="/uslugi/strony-internetowe/lubelskie" element={<StronyInternetoweLubelskie />} />
                 <Route path="/uslugi/strony-internetowe/wielkopolska" element={<StronyInternetoweWielkopolska />} />
