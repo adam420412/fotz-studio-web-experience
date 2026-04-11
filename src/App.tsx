@@ -285,6 +285,9 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 153: Database Sharding (Zero Trust + API Gateway already declared in Wave 138/142)
+const BlogShardingCoTo = lazy(() => import("./pages/BlogShardingCoTo"));
+
 // Wave 152: WebAssembly, GraphQL Federation, Event-Driven Architecture
 const BlogWasmCoTo = lazy(() => import("./pages/BlogWasmCoTo"));
 const BlogGraphQLFederationCoTo = lazy(() => import("./pages/BlogGraphQLFederationCoTo"));
@@ -1251,6 +1254,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 153 */}
+                <Route path="/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa" element={<BlogZeroTrustCoTo />} />
+                <Route path="/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress" element={<BlogApiGatewayCoTo />} />
+                <Route path="/blog/database-sharding-co-to-jest-strategie-vitess-cassandra" element={<BlogShardingCoTo />} />
                 {/* Wave 152 */}
                 <Route path="/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten" element={<BlogWasmCoTo />} />
                 <Route path="/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy" element={<BlogGraphQLFederationCoTo />} />

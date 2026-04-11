@@ -7,113 +7,98 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 const faqItems = [
   {
-    question: "Co to jest Zero Trust Security?",
-    answer: "Zero Trust to model bezpieczeństwa IT oparty na zasadzie 'Never Trust, Always Verify' — nigdy nie ufaj, zawsze weryfikuj. W tradycyjnym modelu perimeter security zakładano że wszystko wewnątrz sieci firmowej jest bezpieczne (trusted zone). Zero Trust odrzuca to założenie: każde żądanie dostępu — niezależnie od tego czy pochodzi z sieci wewnętrznej czy zewnętrznej — musi być uwierzytelnione, autoryzowane i szyfrowane. Termin Zero Trust stworzył John Kindervag z Forrester Research w 2010 roku. Microsoft, Google (BeyondCorp) i NIST sformalizowały go jako standard. Kluczowe zasady: Verify explicitly — zawsze uwierzytelniaj na podstawie wielu czynników (tożsamość, urządzenie, lokalizacja, czas). Use least privilege — minimalny konieczny dostęp, nie 'wide open' po zalogowaniu. Assume breach — zakładaj że sieć jest już skompromitowana.",
+    question: "Co to jest Zero Trust Security i jakie są jego podstawowe zasady?",
+    answer: "Zero Trust to model bezpieczeństwa oparty na zasadzie 'Never Trust, Always Verify' — żaden użytkownik, urządzenie ani serwis nie jest domyślnie zaufany, nawet jeśli jest wewnątrz sieci korporacyjnej. Tradycyjny model (Castle and Moat): wszystko wewnątrz sieci jest zaufane, wszystko na zewnątrz — nie. Problem: lateral movement po przejęciu jednego węzła wewnętrznego. Zero Trust zasady: Verify explicitly — uwierzytelniaj każde żądanie (identity, device health, location, service). Least privilege access — dostęp tylko do zasobów niezbędnych do zadania. Assume breach — zachowuj się jakby naruszenie już nastąpiło, minimalizuj promień rażenia (blast radius). Mikrosegmentacja — podziel sieć na małe segmenty z kontrolowanym przepływem. Filary Zero Trust (NIST SP 800-207): Identity — MFA, RBAC, Just-In-Time access. Device — compliance check (patch level, endpoint detection). Network — mikrosegmentacja, encrypted traffic, software-defined perimeter. Application — per-request authorization, WAF. Data — encryption at rest/in transit, DLP. Visibility — SIEM, logging wszystkich dostępów. Dlaczego Zero Trust teraz: praca zdalna — perimeter sieci nieistnieje. Cloud — zasoby poza tradycyjną siecią. SaaS — dane i aplikacje poza kontrolą IT. Zaawansowane ataki — lateral movement, supply chain attacks.",
   },
   {
-    question: "Dlaczego tradycyjny perimeter security nie wystarcza?",
-    answer: "Problemy z perimeter security: Praca zdalna — pracownicy łączą się z niezaufanych sieci (home WiFi, kawiarnia). Perimeter przestał istnieć. Cloud adoption — dane i aplikacje są w chmurze (SaaS, IaaS), nie za korporacyjnym firewallem. Insider threats — pracownik ze złośliwym zamiarem MA dostęp do sieci wewnętrznej. Perimeter go nie zatrzyma. Supply chain attacks — atakujący uzyskują dostęp przez zaufanych vendorów (SolarWinds attack 2020). Lateral movement — gdy atakujący przełamie perimeter, ma swobodny dostęp do wszystkiego wewnątrz. Zero Trust minimalizuje 'blast radius' naruszenia przez segmentację. VPN limitations — VPN daje pełny dostęp do sieci, nie granularny. Powolne, podatne na ataki. Zero Trust zastępuje VPN rozwiązaniami ZTNA (Zero Trust Network Access).",
+    question: "Identity i MFA — jak zbudować silne uwierzytelnianie w Zero Trust?",
+    answer: "Identity jest fundamentem Zero Trust — każdy użytkownik i serwis musi być jednoznacznie identyfikowany. MFA (Multi-Factor Authentication): coś wiesz (hasło), coś masz (TOTP app, hardware key), coś jesteś (biometria). Phishing-resistant MFA: FIDO2/WebAuthn + hardware keys (YubiKey). Passkeys — nowy standard (Apple/Google/Microsoft) — bez haseł, oparte na biometrii + kluczu kryptograficznym. SMS OTP — najsłabsze MFA (SIM swapping, SS7 attacks) — unikaj dla krytycznych systemów. Conditional Access: zamiast prostego tak/nie — decyzja oparta na ryzyku. Czynniki: lokalizacja IP, device compliance, czas dnia, sensitivity zasobu. Jeśli ryzyko wysokie — wymóg silniejszego MFA. Privileged Access Management (PAM): Just-In-Time (JIT) access — dostęp przyznawany na czas sesji, nie stały. Privileged Identity Management (PIM) — Azure AD PIM, CyberArk. Break-glass accounts — awaryjna procedura dostępu z pełnym auditingiem. Service accounts i workload identity: OIDC workload identity zamiast long-lived credentials. AWS IAM Roles for Service Accounts (IRSA) w Kubernetes. Workload Identity Federation (GCP, Azure). Identity providers: Okta, Microsoft Entra ID, Auth0, Keycloak (open-source). SAML vs. OIDC/OAuth2 — OIDC nowszy, lepszy dla API i mobile.",
   },
   {
-    question: "Jakie są kluczowe komponenty Zero Trust?",
-    answer: "Komponenty Zero Trust: Identity — silne uwierzytelnianie (MFA), SSO, Identity Provider (Okta, Azure AD, Google Workspace). Każdy user jest weryfikowany przed dostępem. Device — weryfikacja stanu urządzenia (MDM, endpoint security, patch level). Niezarządzane urządzenia = ograniczony dostęp. Network — mikrosegmentacja sieci, ZTNA zamiast VPN, szyfrowanie end-to-end. Application — aplikacje niewidoczne publicznie. Dostęp tylko przez identity-aware proxy. Data — klasyfikacja danych, DLP (Data Loss Prevention), szyfrowanie. Visibility — pełna telemetria i monitorowanie wszystkich requestów. SIEM, CASB (Cloud Access Security Broker). Analityka behawioralna (UEBA) — wykrywanie anomalii w zachowaniu użytkowników.",
+    question: "Mikrosegmentacja i sieć w Zero Trust — jak ją zbudować?",
+    answer: "Mikrosegmentacja: podział sieci na małe strefy z granularną kontrolą przepływu. Cel: ograniczenie lateral movement nawet po przejęciu jednego węzła. Podejścia do mikrosegmentacji: Network-based: VLAN segmentation, SDN (Software-Defined Networking), firewall rules. Application/Workload-based: polityki per workload niezależne od sieci (Illumio, Guardicore). Identity-based: policy oparta na identity workloada (service mesh mTLS). Software-Defined Perimeter (SDP): zastępuje VPN. Użytkownik/urządzenie weryfikowane ZANIM uzyska dostęp do sieci. Zero Trust Network Access (ZTNA): Cloudflare Access, Zscaler Private Access, Palo Alto Prisma Access. Każda aplikacja ma własną politykę dostępu, nie jeden VPN tunel. Service Mesh i mTLS: w mikroserwisach — Istio/Linkerd implementuje mTLS between services. Każdy serwis ma własny certyfikat (SVID). Polityki: allow-list który serwis może rozmawiać z którym. Network policy w Kubernetes: domyślnie deny-all, explicit allow rules. Cilium — eBPF-based network policy, L7 aware (HTTP, gRPC). Encrypted traffic: TLS 1.3 wszędzie. Certificate management: cert-manager w K8s. Private PKI (HashiCorp Vault PKI, AWS ACM Private CA). Monitorowanie ruchu: east-west traffic (między workloadami) często niewidoczny — service mesh telemetry go odkrywa.",
   },
   {
-    question: "Jak wdrożyć Zero Trust w organizacji?",
-    answer: "Wdrożenie Zero Trust: Zacznij od Identity — wdrożenie silnego MFA (Okta, Azure AD MFA). To największy zwrot z inwestycji. 90% ataków można zatrzymać przez MFA. Zinwentaryzuj zasoby — co musisz chronić? Aplikacje, dane, sieci. Podziel na tiery według krytyczności. Wdrożenie least privilege — przegląd i ograniczenie uprawnień. Usuń 'standing admin access'. Implement JIT (Just-in-Time) access dla uprawnień administratora. Micro-segmentacja — podziel sieć na małe segmenty. Ruch między segmentami jest domyślnie blokowany i wymaga autoryzacji. Zastąp VPN ZTNA — rozwiązania jak Zscaler, Cloudflare Access, Palo Alto Prisma Access. Visibility — wdrożenie SIEM i monitorowania behawioralnego. Ciągłe doskonalenie — Zero Trust to podróż, nie projekt. Regularnie audytuj, testuj i poprawiaj.",
+    question: "Zero Trust dla aplikacji i danych — RBAC, ABAC, DLP?",
+    answer: "Authorization modele: RBAC (Role-Based Access Control) — dostęp na podstawie roli (Admin, Editor, Viewer). Prostszy, mniej granularny. ABAC (Attribute-Based Access Control) — dostęp na podstawie atrybutów (user.department, resource.sensitivity, time.hour). Bardziej granularny, bardziej złożony. ReBAC (Relationship-Based Access Control) — Google Zanzibar model. Dostęp na podstawie relacji (owner, viewer, member of group). Używany przez Google Drive, GitHub. Open Policy Agent (OPA): silnik polityk jako kod. Polityki w języku Rego. Używany w Kubernetes (admission controller), API Gateway, service mesh. Separacja polityki od kodu aplikacji. Just-In-Time (JIT) Access dla zasobów: produkcyjne bazy danych dostępne tylko na czas sesji debug. Automatyczne odwołanie po czasie lub zakończeniu sesji. Pełny audit log każdego użycia. Data Loss Prevention (DLP): wykrywanie i blokowanie wycieku danych wrażliwych. Email DLP — blokuj wysyłanie SSN, kart kredytowych. Cloud DLP — Google, Microsoft Purview. CASB (Cloud Access Security Broker): widoczność i kontrola używania SaaS. Shadow IT discovery. Polityki dla Dropbox, Slack, Google Drive. Encryption: at rest — AES-256, KMS (AWS KMS, Azure Key Vault, HashiCorp Vault). In transit — TLS 1.3. In use — Confidential Computing (Intel SGX, AMD SEV). Data classification: oznaczanie danych (Public, Internal, Confidential, Restricted) — podstawa polityk DLP i dostępu.",
   },
   {
-    question: "Jakie narzędzia wspierają Zero Trust?",
-    answer: "Narzędzia Zero Trust: Identity (IdP) — Okta, Azure Active Directory, Ping Identity, JumpCloud. SSO + MFA + lifecycle management. Device Management (MDM/UEM) — Microsoft Intune, Jamf, VMware Workspace ONE. Zarządzanie urządzeniami i compliance. ZTNA (Zastępuje VPN) — Zscaler Private Access, Cloudflare Access, Palo Alto Prisma, Cisco Duo. Endpoint Security — CrowdStrike Falcon, SentinelOne, Microsoft Defender. CASB (Cloud Security) — Netskope, Microsoft Defender for Cloud Apps. Mikrosegmentacja — Illumio, Guardicore, VMware NSX. SIEM — Splunk, Microsoft Sentinel, Google Chronicle. PAM (Privileged Access Management) — CyberArk, BeyondTrust, Thycotic. Budżet Zero Trust dla startupów: zacznij od Okta ($6-15/user/mies.) + Microsoft Defender/CrowdStrike. To core Zero Trust za rozsądne pieniądze.",
+    question: "Jak wdrożyć Zero Trust krok po kroku — od czego zacząć?",
+    answer: "Zero Trust to podróż, nie produkt. Nie kupisz 'Zero Trust w pudełku'. Krok 1: Inwentaryzacja i widoczność: Co masz? Jakie zasoby, użytkownicy, urządzenia, sieci, aplikacje. Zacznij od Identity — gdzie są twoje tożsamości (AD, Azure AD, Google). Device inventory — MDM (Intune, Jamf). Krok 2: Wzmocnienie Identity: MFA dla wszystkich (zacznij od admins i krytycznych systemów). Conditional access policies. Single Sign-On (SSO) dla wszystkich aplikacji. Krok 3: Widoczność i monitoring: Centralny logging (SIEM — Microsoft Sentinel, Splunk, Elastic SIEM). User and Entity Behavior Analytics (UEBA). Krok 4: Aplikacje: Przenieś remote access z VPN na ZTNA. Per-app access policies zamiast network-level VPN. Krok 5: Segmentacja sieci: Mikrosegmentacja krytycznych zasobów. Network policies w cloud. Krok 6: Dane: Klasyfikacja danych. DLP dla email i cloud. Encryption zarządzana centralnie (KMS). Frameworki i certyfikacje: NIST SP 800-207 — oficjalny framework Zero Trust. CISA Zero Trust Maturity Model — 5 poziomów dojrzałości per filar. Microsoft Zero Trust deployment guide. Narzędzia: Cloudflare One (ZTNA + email security + DNS). Zscaler Zero Trust Exchange. Palo Alto Prisma Access. Microsoft Entra + Defender for Cloud. Okta Identity Platform.",
   },
 ];
 
-const zeroTrustPrinciples = [
-  {
-    zasada: "Never Trust, Always Verify",
-    opis: "Każdy request dostępu jest weryfikowany niezależnie od źródła — sieć wewnętrzna nie jest 'zaufana' z definicji.",
-    implementacja: "Continuous authentication, context-aware access policies, re-verification po każdej wrażliwej akcji.",
-    kolor: "blue",
-  },
-  {
-    zasada: "Least Privilege Access",
-    opis: "Użytkownicy i systemy mają minimalny dostęp konieczny do wykonania zadania — nie 'wszystko co mogą potrzebować'.",
-    implementacja: "RBAC, JIT access, automatic privilege expiration, access reviews co 90 dni.",
-    kolor: "green",
-  },
-  {
-    zasada: "Assume Breach",
-    opis: "Zakładaj że atakujący jest już w sieci. Projektuj systemy tak jakby perimeter już był przełamany.",
-    implementacja: "Mikrosegmentacja, end-to-end encryption, lateral movement prevention, comprehensive logging.",
-    kolor: "red",
-  },
-  {
-    zasada: "Verify Explicitly",
-    opis: "Uwierzytelniaj i autoryzuj używając wszystkich dostępnych danych: tożsamość, urządzenie, lokalizacja, usługa, obciążenie.",
-    implementacja: "Contextual access policies (user + device + location + time + risk score = access decision).",
-    kolor: "purple",
-  },
+const ztPillars = [
+  { filar: "Identity", opis: "Każdy użytkownik i serwis posiada silną tożsamość. MFA, RBAC, JIT access, PAM.", narzedzia: "Okta, Microsoft Entra, Auth0, CyberArk" },
+  { filar: "Device", opis: "Weryfikuj stan urządzenia przed dostępem — patch level, EDR, MDM enrollment.", narzedzia: "Intune, Jamf, CrowdStrike, SentinelOne" },
+  { filar: "Network", opis: "Mikrosegmentacja, ZTNA zamiast VPN, encrypted east-west traffic, SDP.", narzedzia: "Cloudflare Access, Zscaler, Prisma Access" },
+  { filar: "Application", opis: "Per-request authorization, WAF, API security, mTLS między serwisami.", narzedzia: "OPA, Istio, Apigee, Kong, AWS WAF" },
+  { filar: "Data", opis: "Klasyfikacja, szyfrowanie, DLP, dostęp JIT do wrażliwych zasobów.", narzedzia: "Azure Purview, Google DLP, HashiCorp Vault" },
+  { filar: "Visibility", opis: "Logging każdego dostępu, SIEM, UEBA, threat detection, audit trails.", narzedzia: "Sentinel, Splunk, Elastic SIEM, Datadog" },
 ];
 
-const ztMaturityLevels = [
-  { poziom: "Initial", opis: "Podstawowe MFA, brak segmentacji, VPN jako główny mechanizm dostępu zdalnego. Punkt startowy większości firm.", akcje: "Wdróż MFA dla wszystkich, zacznij inwentaryzację zasobów.", kolor: "red" },
-  { poziom: "Advanced", opis: "Identity-centric security, SSO, conditional access, ZTNA zastępuje VPN, podstawowa segmentacja sieci.", akcje: "Implementacja ZTNA, mikrosegmentacja kluczowych systemów, endpoint compliance.", kolor: "orange" },
-  { poziom: "Optimal", opis: "Pełna implementacja Zero Trust: continuous verification, automated threat response, just-in-time access, comprehensive telemetry.", akcje: "Behavioral analytics, automated remediation, mature security operations.", kolor: "green" },
+const ztVsTraditional = [
+  { aspekt: "Model zaufania", traditional: "Ufaj wszystkiemu wewnątrz sieci", zeroTrust: "Nigdy nie ufaj — zawsze weryfikuj" },
+  { aspekt: "Dostęp zdalny", traditional: "VPN do całej sieci korporacyjnej", zeroTrust: "ZTNA — dostęp per aplikacja" },
+  { aspekt: "Lateral movement", traditional: "Po przejęciu węzła — swobodny ruch", zeroTrust: "Mikrosegmentacja ogranicza promień rażenia" },
+  { aspekt: "Identity", traditional: "Hasło wystarczy wewnątrz", zeroTrust: "MFA + context + device + risk" },
+  { aspekt: "Autoryzacja", traditional: "Network-level (VLAN, firewall)", zeroTrust: "Per-request, per-resource (RBAC/ABAC)" },
+  { aspekt: "Widoczność", traditional: "Ograniczona (east-west niewidoczny)", zeroTrust: "Pełny audit trail każdego dostępu" },
 ];
 
 export default function BlogZeroTrustCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Zero Trust Security — co to jest i jak wdrożyć? | Fotz.pl"
-        description="Zero Trust Security: zasady Never Trust Always Verify, komponenty (Identity, Device, Network, App, Data), narzędzia i jak wdrożyć Zero Trust w organizacji SaaS."
-        canonicalUrl="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz"
+        title="Zero Trust Security — co to jest, jak wdrożyć, MFA, ZTNA i mikrosegmentacja? | Fotz.pl"
+        description="Zero Trust Security: 6 filarów, mikrosegmentacja, ZTNA vs VPN, MFA, RBAC, OPA, DLP — jak budować bezpieczeństwo 'Never Trust, Always Verify' krok po kroku."
+        canonicalUrl="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
       />
       <ArticleSchema
-        title="Zero Trust Security — co to jest i jak wdrożyć?"
-        description="Zero Trust: Never Trust Always Verify, Least Privilege, Assume Breach, komponenty, narzędzia (Okta, Zscaler, CrowdStrike) i poziomy dojrzałości. Przewodnik dla firm."
-        url="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz"
-        datePublished="2024-02-27"
+        title="Zero Trust Security — co to jest, jak wdrożyć, MFA, ZTNA i mikrosegmentacja?"
+        description="Zero Trust: 6 filarów (Identity/Device/Network/App/Data/Visibility), ZTNA vs VPN, mikrosegmentacja, OPA polityki, DLP i roadmapa wdrożenia."
+        url="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
+        datePublished="2024-04-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Zero Trust Security", url: "https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz" },
+          { name: "Zero Trust Security", url: "https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa" },
         ]}
       />
 
-      <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-slate-950 via-red-950 to-orange-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <PageBreadcrumbs
             items={[
               { label: "Home", href: "/" },
               { label: "Blog", href: "/blog" },
-              { label: "Zero Trust Security", href: "/blog/zero-trust-security-co-to-jest-jak-wdrozyz" },
+              { label: "Zero Trust Security", href: "/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa" },
             ]}
           />
           <div className="mt-8">
             <span className="inline-block bg-red-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
-              Security
+              Security / Cloud
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Zero Trust Security
             </h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl">
-              "Never Trust, Always Verify" — era firewalla i VPN minęła.
-              Praca zdalna, cloud i insider threats wymagają nowego podejścia
-              gdzie każdy request jest weryfikowany niezależnie od lokalizacji.
+              'Never Trust, Always Verify.' W erze pracy zdalnej i cloud
+              tradycyjny perimeter sieci nie istnieje. Zero Trust weryfikuje
+              każde żądanie niezależnie od lokalizacji użytkownika.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { label: "Główna zasada", value: "Never Trust" },
-                { label: "Ataki przez MFA", value: "-90%" },
-                { label: "Stworzony", value: "Forrester 2010" },
-                { label: "Kluczowy start", value: "Identity + MFA" },
+                { label: "Zasada", value: "Never Trust, Always Verify" },
+                { label: "Dostęp zdalny", value: "ZTNA (nie VPN)" },
+                { label: "Framework", value: "NIST SP 800-207" },
+                { label: "Identity", value: "MFA + JIT + PAM" },
               ].map((s) => (
                 <div key={s.label} className="bg-white/10 rounded-lg p-4 text-center">
-                  <div className="text-xl font-bold text-red-400">{s.value}</div>
+                  <div className="text-lg font-bold text-red-400">{s.value}</div>
                   <div className="text-sm text-gray-300">{s.label}</div>
                 </div>
               ))}
@@ -122,38 +107,23 @@ export default function BlogZeroTrustCoTo() {
         </div>
       </section>
 
-      {/* Zasady */}
+      {/* Filary */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">4 fundamentalne zasady Zero Trust</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">6 filarów Zero Trust</h2>
             <p className="text-gray-600 mb-10 max-w-3xl">
-              Zero Trust to nie produkt który kupujesz — to filozofia i architektura
-              oparta na czterech kluczowych zasadach.
+              Zero Trust to nie jeden produkt — to architektura obejmująca
+              tożsamość, urządzenia, sieć, aplikacje, dane i widoczność.
             </p>
           </FadeInView>
-          <div className="space-y-4">
-            {zeroTrustPrinciples.map((z) => (
-              <FadeInView key={z.zasada}>
-                <div className={`rounded-xl border-2 p-6 ${
-                  z.kolor === "blue" ? "border-blue-200 bg-blue-50" :
-                  z.kolor === "green" ? "border-green-200 bg-green-50" :
-                  z.kolor === "red" ? "border-red-200 bg-red-50" :
-                  "border-purple-200 bg-purple-50"
-                }`}>
-                  <h3 className={`font-bold text-xl mb-3 font-mono ${
-                    z.kolor === "blue" ? "text-blue-800" :
-                    z.kolor === "green" ? "text-green-800" :
-                    z.kolor === "red" ? "text-red-800" :
-                    "text-purple-800"
-                  }`}>{z.zasada}</h3>
-                  <div className="grid md:grid-cols-2 gap-3 text-sm">
-                    <p className="text-gray-700">{z.opis}</p>
-                    <div>
-                      <div className="text-xs font-bold text-gray-500 uppercase mb-1">Implementacja</div>
-                      <p className="text-gray-700">{z.implementacja}</p>
-                    </div>
-                  </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            {ztPillars.map((p) => (
+              <FadeInView key={p.filar}>
+                <div className="bg-gray-50 rounded-xl border border-gray-200 p-5">
+                  <h3 className="font-bold text-gray-900 mb-2">{p.filar}</h3>
+                  <p className="text-gray-700 text-sm mb-2">{p.opis}</p>
+                  <p className="text-xs text-red-700 font-medium">{p.narzedzia}</p>
                 </div>
               </FadeInView>
             ))}
@@ -161,41 +131,35 @@ export default function BlogZeroTrustCoTo() {
         </div>
       </section>
 
-      {/* Dojrzałość */}
+      {/* Porównanie */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <FadeInView>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Poziomy dojrzałości Zero Trust</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Zero Trust vs. tradycyjne bezpieczeństwo</h2>
             <p className="text-gray-600 mb-10 max-w-3xl">
-              Zero Trust to podróż — nie każda firma musi od razu osiągnąć poziom optymalny.
-              Zacznij od fundamentów i buduj stopniowo.
+              Zero Trust fundamentalnie zmienia założenia — zamiast chronić
+              perimeter sieci, weryfikujesz każde żądanie per zasobie.
             </p>
           </FadeInView>
-          <div className="space-y-4">
-            {ztMaturityLevels.map((l) => (
-              <FadeInView key={l.poziom}>
-                <div className={`rounded-xl border-2 p-5 ${
-                  l.kolor === "red" ? "border-red-200 bg-red-50" :
-                  l.kolor === "orange" ? "border-orange-200 bg-orange-50" :
-                  "border-green-200 bg-green-50"
-                }`}>
-                  <div className="flex gap-4 items-start">
-                    <div className={`px-3 py-1 rounded-full text-white text-sm font-bold flex-shrink-0 ${
-                      l.kolor === "red" ? "bg-red-500" :
-                      l.kolor === "orange" ? "bg-orange-500" :
-                      "bg-green-600"
-                    }`}>{l.poziom}</div>
-                    <div className="flex-1">
-                      <p className="text-gray-700 text-sm mb-2">{l.opis}</p>
-                      <div>
-                        <span className="text-xs font-bold text-gray-500 uppercase">Następne kroki: </span>
-                        <span className="text-sm text-gray-700">{l.akcje}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </FadeInView>
-            ))}
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-gray-100 border-b border-gray-200">
+                  <th className="text-left p-3 font-bold text-gray-900">Aspekt</th>
+                  <th className="text-left p-3 font-bold text-gray-900">Tradycyjne</th>
+                  <th className="text-left p-3 font-bold text-gray-900">Zero Trust</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ztVsTraditional.map((r, i) => (
+                  <tr key={r.aspekt} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="p-3 font-bold text-gray-900">{r.aspekt}</td>
+                    <td className="p-3 text-red-700 text-xs">{r.traditional}</td>
+                    <td className="p-3 text-green-700 text-xs">{r.zeroTrust}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
