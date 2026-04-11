@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 191: HTMX, Astro deep dive, React Error Handling
+const BlogHtmxCoTo = lazy(() => import("./pages/BlogHtmxCoTo"));
+const BlogAstroDeepDiveCoTo = lazy(() => import("./pages/BlogAstroDeepDiveCoTo"));
+const BlogReactErrorHandlingCoTo = lazy(() => import("./pages/BlogReactErrorHandlingCoTo"));
+
 // Wave 190: AI Image Generation, Supabase deep dive, Cloudflare Workers
 const BlogAiImageGenCoTo = lazy(() => import("./pages/BlogAiImageGenCoTo"));
 const BlogSupabaseDeepDiveCoTo = lazy(() => import("./pages/BlogSupabaseDeepDiveCoTo"));
@@ -1439,6 +1444,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 191 */}
+                <Route path="/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024" element={<BlogHtmxCoTo />} />
+                <Route path="/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024" element={<BlogAstroDeepDiveCoTo />} />
+                <Route path="/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024" element={<BlogReactErrorHandlingCoTo />} />
                 {/* Wave 190 */}
                 <Route path="/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" element={<BlogAiImageGenCoTo />} />
                 <Route path="/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024" element={<BlogSupabaseDeepDiveCoTo />} />
