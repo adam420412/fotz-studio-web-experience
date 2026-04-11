@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 209: PWA+Workbox, Vue 3.5+Nuxt 4, TypeScript 5.7/5.8
+const BlogPwaWorkboxCoTo = lazy(() => import("./pages/BlogPwaWorkboxCoTo"));
+const BlogVue35CoTo = lazy(() => import("./pages/BlogVue35CoTo"));
+const BlogTs578CoTo = lazy(() => import("./pages/BlogTs578CoTo"));
+
 // Wave 208: Vitest v2+Medusa v2, Starlight+Nextra+Fumadocs, Deno 2+Bun 1.x
 const BlogVitest2BrowserCoTo = lazy(() => import("./pages/BlogVitest2BrowserCoTo"));
 const BlogStarlightNextraCoTo = lazy(() => import("./pages/BlogStarlightNextraCoTo"));
@@ -1529,6 +1534,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 209 */}
+                <Route path="/blog/pwa-vite-plugin-workbox-next-pwa-background-sync-push-notifications-2024" element={<BlogPwaWorkboxCoTo />} />
+                <Route path="/blog/vue-3-5-usetemplateref-vapor-mode-pinia-colada-nuxt-4-2024" element={<BlogVue35CoTo />} />
+                <Route path="/blog/typescript-5-7-5-8-satisfies-noinfer-const-type-params-dekoratory-2024" element={<BlogTs578CoTo />} />
                 {/* Wave 208 */}
                 <Route path="/blog/vitest-v2-browser-mode-workspace-medusa-js-v2-ecommerce-2024" element={<BlogVitest2BrowserCoTo />} />
                 <Route path="/blog/starlight-nextra-fumadocs-dokumentacja-astro-nextjs-2024" element={<BlogStarlightNextraCoTo />} />
