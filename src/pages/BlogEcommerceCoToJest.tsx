@@ -2,7 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Clock, ShoppingBag, Globe, TrendingUp, DollarSign } from "lucide-react";
+import { ArrowRight, Clock, ShoppingCart, TrendingUp, Globe, DollarSign } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -16,63 +16,65 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 export default function BlogEcommerceCoToJest() {
   const breadcrumbs = [
-    { label: "Strona główna", href: "/" },
+    { label: "Strona glowna", href: "/" },
     { label: "Blog", href: "/blog" },
-    { label: "E-commerce — co to jest i jak działa sprzedaż online?" },
+    { label: "E-commerce — co to jest? Handel elektroniczny — poradnik" },
   ];
 
   const ecommerceModels = [
-    { icon: ShoppingBag, name: "B2C (Business to Consumer)", desc: "Firma sprzedaje bezpośrednio klientom indywidualnym. Przykłady: Zalando, MediaMarkt, Allegro. Najpopularniejszy model e-commerce." },
-    { icon: Globe, name: "B2B (Business to Business)", desc: "Firma sprzedaje innym firmom. Hurtownie, platformy zakupowe dla firm, oprogramowanie SaaS. Wyższe wartości zamówień, dłuższy cykl." },
-    { icon: TrendingUp, name: "C2C (Consumer to Consumer)", desc: "Sprzedaż między konsumentami przez platformy. Allegro, OLX, Vinted. Platforma pobiera prowizję za pośrednictwo." },
-    { icon: DollarSign, name: "D2C (Direct to Consumer)", desc: "Producent sprzedaje bezpośrednio pomijając pośredników. Wyższe marże, bezpośredni kontakt z klientem, budowanie marki." },
+    { model: "B2C (Business to Consumer)", przyklady: "Allegro, Zalando, H&M online, sklep producenta", desc: "Firma sprzedaje bezposrednio konsumentom." },
+    { model: "B2B (Business to Business)", przyklady: "Hurt online, platforma zakupowa dla firm", desc: "Transakcje miedzy firmami — hurtownie, przetargi." },
+    { model: "C2C (Consumer to Consumer)", przyklady: "OLX, Vinted, Facebook Marketplace", desc: "Konsumenci sprzedaja innym konsumentom." },
+    { model: "D2C (Direct to Consumer)", przyklady: "Nike.com, Apple Store, marki DTC", desc: "Producent sprzedaje bezposrednio, omijajac posrednikow." },
+    { model: "Marketplace", przyklady: "Allegro, Amazon, Etsy", desc: "Platforma agregujaca wielu sprzedawcow." },
+    { model: "Dropshipping", przyklady: "Sklep bez magazynu — dostawca wysy la do klienta", desc: "Sprzedaz bez posiadania wlasnego towaru." },
   ];
 
   const faqItems = [
     {
       question: "Co to jest e-commerce?",
       answer:
-        "E-commerce (electronic commerce) to handel elektroniczny — sprzedaż produktów i usług przez internet. Obejmuje sklepy internetowe, platformy marketplace (Allegro, Amazon), sprzedaż przez social media (Instagram Shopping, Facebook) i aplikacje mobilne. E-commerce to jeden z najszybciej rosnących sektorów — w Polsce wartość rynku przekracza 90 mld zł rocznie.",
+        "E-commerce (handel elektroniczny) to kupowanie i sprzedawanie towarow lub uslug przez internet — w sklepach internetowych, na platformach marketplace lub przez aplikacje mobilne. E-commerce to jedna z najszybciej rosnacych galezi gospodarki: wartosc polskiego rynku e-commerce: ok. 100 mld zl (2024). Glowne platformy w Polsce: Allegro (lider), Amazon, Empik.com, Zalando. Modele e-commerce: B2C (firma do konsumenta), B2B (firma do firmy), C2C (uzytkownik do uzytkownika). E-commerce obok tradycyjnego handlu stacjonarnego to dwa kanaly sprzedazy — dzis wiele firm laczy oba (omnichannel).",
     },
     {
-      question: "Jak zacząć e-commerce — od czego zacząć?",
+      question: "Jak zalozyc sklep internetowy?",
       answer:
-        "Kroki do uruchomienia e-commerce: 1) Wybierz model biznesowy (własne produkty, dropshipping, marketplace). 2) Zdefiniuj grupę docelową i niszę. 3) Wybierz platformę (WooCommerce, Shopify, PrestaShop). 4) Skonfiguruj płatności (PayU, Przelewy24, BLIK). 5) Zadbaj o logistykę (magazyn, kurierzy, zwroty). 6) Zaplanuj marketing (SEO, reklamy, social media). 7) Dopełnij formalności prawne (regulamin, polityka prywatności, RODO).",
+        "Kroki do zalozenia sklepu internetowego: 1) Wybierz niche i produkt — sprawdz popyt (Google Trends, Ahrefs), marze i konkurencje. 2) Wybierz platforme e-commerce: Shopify (najpopularniejszy, abonament od 29 USD/mies.), WooCommerce (darmowy plugin do WordPress, wlasny hosting), PrestaShop (open source, dla wiekszych), IdoSell (polskie rozwiazanie dla B2C i B2B). 3) Zarejestruj firme (JDG w CEIDG lub spolke). 4) Skonfiguruj platnosci: Przelewy24, PayU, Stripe. 5) Wybierz dostawe: InPost (paczkomaty), DHL, Poczta Polska. 6) Zadbaj o SEO i marketing (Google Shopping, Facebook Ads).",
     },
     {
-      question: "Ile kosztuje sklep internetowy?",
+      question: "Ile kosztuje zalozenie sklepu internetowego?",
       answer:
-        "Koszty sklepu internetowego są bardzo zróżnicowane: Shopify (gotowe rozwiązanie): 29-79 USD/mies. + prowizja. WooCommerce (open source): 0 zł + hosting (50-300 zł/mies.) + programista (2000-20 000 zł za wdrożenie). PrestaShop/Magento: dla większych sklepów, wyższe koszty. Marketplace (Allegro, Amazon): bez kosztów startu ale prowizje. Dla małych sklepów WooCommerce lub Shopify to optymalne rozwiązanie.",
+        "Koszty uruchomienia sklepu internetowego: Sklep na Shopify: 29-299 USD/mies. + prowizja od transakcji. Sklep na WooCommerce: hosting ok. 50-200 zl/mies., domena ok. 50 zl/rok, plugin WooCommerce darmowy, ale dodatkowe wtyczki 0-500 zl. Projekt graficzny sklepu: 2 000-20 000 zl (agencja) lub 500-2 000 zl (gotowy motyw). Wdrozenie e-commerce przez agencje: 5 000-50 000 zl (w zaleznosci od skomplikowania). Zdjecia produktow: 500-5 000 zl. Marketing startowy (Google Ads): minimum 1 000-3 000 zl/mies. Calkowity budzet na start: od 5 000 zl (sklep DIY) do 100 000 zl (profesjonalny projekt).",
     },
     {
-      question: "Jakie platformy e-commerce są najlepsze?",
+      question: "Czym rozni sie sklep na Allegro od wlasnego sklepu?",
       answer:
-        "Najpopularniejsze platformy e-commerce: WooCommerce (60%+ polskich sklepów) — bezpłatna, elastyczna, wymaga WordPressa. Shopify — hosting w cenie, łatwy start, prowizja od sprzedaży, idealna dla dropshippingu. PrestaShop — popularna w Europie, darmowa, bogata funkcjonalność. Allegro/Amazon — marketplace, gotowy ruch, ale prowizje. Wybór zależy od budżetu, skali i technicznej wiedzy.",
+        "Allegro vs wlasny sklep internetowy: Allegro — gotowy ruch klientow, brak kosztow budowania brand, prowizja 5-15% od transakcji, wysokie koszty przy duzych obrotach, klientela lojalnie do Allegro (nie do marki). Wlasny sklep — brak prowizji od sprzedazy, budowanie brandu i lojalnosci klientow, pelna kontrola nad danymi klientow i UX, koniecznosc samodzielnego pozyskiwania ruchu (SEO, Google Ads). Rekomendacja: zacznij od Allegro do walidacji produktu, a kiedy potwierdzisz popyt — zbuduj wlasny sklep i stopniowo dywersyfikuj. Nie rezygnuj z Allegro calkowicie — to cenny kanal.",
     },
     {
-      question: "Jak zwiększyć sprzedaż w sklepie internetowym?",
+      question: "Jak zwiekszyc sprzedaz w sklepie internetowym?",
       answer:
-        "Sprawdzone metody wzrostu e-commerce: SEO (pozycjonowanie na frazy produktowe i kategoryczne), Google Shopping (reklamy produktowe), remarketing (powrót porzuconych koszyków), email marketing (abandon cart, upsell, cross-sell), optymalizacja konwersji (szybkość, UX, checkout), opinie i recenzje, darmowa dostawa od określonej kwoty, programy lojalnościowe. Warto mierzyć każde działanie przez GA4 i Attribution.",
+        "Metody zwiekszania sprzedazy e-commerce: SEO — pozycjonowanie produktow i kategorii na frazy zakupowe (np. 'buty do biegania meskie'). Google Shopping i Performance Max — reklamy produktowe. Facebook/Instagram Ads — skuteczne dla B2C i mody. Email marketing — odzyskiwanie porzuconych koszykow (avg. 69% porzucen). Optymalizacja konwersji (CRO): uproszcz checkout, dodaj recenzje, popraw zdjecia. Retargeting — pokazuj reklamy osobom ktore odwiedzily sklep. Program lojalnosciowy — powracajacy klienci sa 5x tansi niz nowi. Kluczowy wskaznik: wspolczynnik konwersji — srednia dla e-commerce to 1-3%, powyaej 3% to dobry wynik.",
     },
     {
-      question: "Jakie przepisy prawne obowiązują sklepy internetowe?",
+      question: "Jakie sa najwazniejsze metryki w e-commerce?",
       answer:
-        "Sklep internetowy w Polsce musi spełniać: Ustawa o prawach konsumenta (14 dni na zwrot dla konsumentów bez podawania przyczyny), RODO (polityka prywatności, zgody, prawo do usunięcia danych), ustawa o usługach świadczonych drogą elektroniczną (regulamin sklepu), ustawa o VAT (faktury, paragony, stawki VAT), dyrektywa Omnibus (obowiązek pokazywania najniższej ceny z 30 dni przy promocjach). Sklep B2C musi mieć regulamin i politykę prywatności.",
+        "Kluczowe KPI dla sklepu internetowego: Wspolczynnik konwersji (CR) = liczba zakupow / liczba sesji x 100%. Srednia wartosc zamowienia (AOV) = przychody / liczba zamowien. Customer Lifetime Value (CLV) — wartosc klienta przez caly czas wspolpracy. CAC (Customer Acquisition Cost) — koszt pozyskania jednego klienta. Return Rate — procent zwrotow (wysoki = problem z jakoscia lub opisami). Cart Abandonment Rate — procent porzuconych koszykow (reduce-uj emailami!). ROAS (Return on Ad Spend) — przychod z reklam / wydatki na reklamy (dobry wynik: >4). Narzedzia analityczne: Google Analytics 4, Facebook Pixel, Hotjar (heatmapy), ClickMeter.",
     },
   ];
 
   return (
     <>
       <SEOHead
-        title="E-commerce — co to jest i jak działa sprzedaż online? | fotz.pl"
-        description="E-commerce co to jest — wyjaśniamy czym jest handel elektroniczny, modele biznesowe B2C B2B D2C, jak zacząć sklep internetowy i ile to kosztuje. Poradnik 2025."
+        title="E-commerce — co to jest? Sklep internetowy — poradnik | fotz.pl"
+        description="E-commerce co to jest — wyjasnamy czym jest handel elektroniczny, jak zalozyc sklep internetowy, koszty, Allegro vs wlasny sklep i jak zwiekszyc sprzedaz."
         canonical="https://fotz.pl/blog/e-commerce-co-to-jest"
       />
       <ArticleSchema
-        title="E-commerce — co to jest i jak działa sprzedaż online?"
-        description="Czym jest e-commerce, modele sprzedaży online (B2C, B2B, D2C), jak zacząć sklep internetowy, platformy e-commerce i przepisy prawne."
-        datePublished="2025-04-07"
-        dateModified="2025-04-09"
+        title="E-commerce — co to jest? Sklep internetowy — poradnik"
+        description="Czym jest e-commerce, modele (B2C, B2B, D2C), jak zalozyc sklep internetowy, koszty, Allegro vs wlasny sklep i kluczowe metryki sklepu online."
+        datePublished="2025-04-11"
+        dateModified="2025-04-11"
         url="https://fotz.pl/blog/e-commerce-co-to-jest"
       />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
@@ -80,90 +82,58 @@ export default function BlogEcommerceCoToJest() {
       <Layout>
         <PageBreadcrumbs breadcrumbs={breadcrumbs} />
 
-        {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 7 min czytania</span>
-                <span className="flex items-center gap-1"><ShoppingBag className="w-4 h-4" /> Sprzedaż online</span>
+                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 6 min czytania</span>
+                <span className="flex items-center gap-1"><ShoppingCart className="w-4 h-4" /> Handel online</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                E-commerce — co to jest i jak działa?
+                E-commerce — co to jest i jak zalozyc sklep internetowy?
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                E-commerce to sprzedaż przez internet — sklepy www, marketplace i social commerce.
-                Rynek e-commerce w Polsce przekracza 90 mld zł rocznie i rośnie w dwucyfrowym tempie.
+                E-commerce to sprzedaz przez internet. Modele, platformy, koszty startu
+                i jak zwiekszyc sprzedaz — wszystko co musisz wiedziec.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Content */}
         <section className="py-12 md:py-16 bg-white">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
 
             <FadeInView>
               <h2 className="text-2xl font-bold text-slate-900 mt-4 mb-4">Modele e-commerce</h2>
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                {ecommerceModels.map((model, idx) => {
-                  const Icon = model.icon;
-                  return (
-                    <div key={idx} className="bg-slate-50 p-5 rounded-lg border border-slate-200">
-                      <Icon className="w-5 h-5 text-blue-600 mb-2" />
-                      <h3 className="font-bold text-slate-900 mb-1 text-sm">{model.name}</h3>
-                      <p className="text-slate-600 text-sm">{model.desc}</p>
+              <div className="grid md:grid-cols-2 gap-3 mb-6">
+                {ecommerceModels.map((m, idx) => (
+                  <div key={idx} className="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <div className="flex items-center gap-2 mb-1">
+                      <ShoppingCart className="w-4 h-4 text-blue-600 flex-shrink-0" />
+                      <h3 className="font-bold text-slate-900 text-sm">{m.model}</h3>
                     </div>
-                  );
-                })}
-              </div>
-            </FadeInView>
-
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Kluczowe metryki e-commerce</h2>
-              <div className="overflow-x-auto mb-6">
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="bg-slate-800 text-white">
-                      <th className="text-left p-3 border border-slate-700">Metryka</th>
-                      <th className="text-left p-3 border border-slate-700">Co mierzy</th>
-                      <th className="text-left p-3 border border-slate-700">Benchmark</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      { metric: "Conversion Rate (CR)", desc: "% odwiedzin = zakup", benchmark: "1-3% (e-commerce)" },
-                      { metric: "AOV (Average Order Value)", desc: "Średnia wartość zamówienia", benchmark: "Zależy od branży" },
-                      { metric: "CAC (Customer Acquisition Cost)", desc: "Koszt pozyskania klienta", benchmark: "< LTV/3" },
-                      { metric: "LTV (Lifetime Value)", desc: "Wartość klienta przez całą relację", benchmark: "LTV > 3x CAC" },
-                      { metric: "Cart Abandonment Rate", desc: "% porzuconych koszyków", benchmark: "65-75% to norma" },
-                    ].map((row, idx) => (
-                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-slate-50"}>
-                        <td className="p-3 border border-slate-200 font-bold text-blue-600">{row.metric}</td>
-                        <td className="p-3 border border-slate-200 text-slate-700">{row.desc}</td>
-                        <td className="p-3 border border-slate-200 text-slate-500 text-xs">{row.benchmark}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    <p className="text-blue-600 text-xs font-medium mb-1">{m.przyklady}</p>
+                    <p className="text-slate-500 text-xs">{m.desc}</p>
+                  </div>
+                ))}
               </div>
             </FadeInView>
 
             <FadeInView>
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-                <p className="text-blue-800 font-semibold mb-2">Chcesz uruchomić sklep internetowy?</p>
+                <TrendingUp className="w-5 h-5 text-blue-600 mb-2" />
+                <p className="text-blue-800 font-semibold mb-2">Zbudujemy Twoj sklep internetowy</p>
                 <p className="text-blue-700 text-sm mb-3">
-                  Projektujemy i wdrażamy sklepy e-commerce — WooCommerce, Shopify, integracje z hurtowniami.
+                  Tworzymy sklepy WooCommerce i Shopify zaprojektowane pod konwersje — z SEO, szybkoscia i UX w centrum.
                 </p>
                 <Link to="/uslugi/tworzenie-sklepow-internetowych" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
-                  Sklepy internetowe — oferta <ArrowRight className="w-4 h-4" />
+                  Tworzenie sklepow — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </FadeInView>
           </div>
         </section>
 
-        {/* FAQ */}
         <FadeInView>
           <section className="py-12 md:py-16 bg-slate-50">
             <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -186,8 +156,8 @@ export default function BlogEcommerceCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Wejdź w e-commerce z profesjonalnym sklepem"
-          subheading="Od strategii przez sklep do marketingu — kompletne wsparcie e-commerce."
+          heading="Zbuduj sklep internetowy ktory naprawde sprzedaje"
+          subheading="Tworzymy sklepy e-commerce z wysoka konwersja — WooCommerce, Shopify, SEO i UX w pakiecie."
         />
       </Layout>
     </>
