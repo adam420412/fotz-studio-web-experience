@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 120: Challenger Sale, Negocjacje sprzedażowe, Prospecting B2B
+const BlogChallengerSaleCoTo = lazy(() => import("./pages/BlogChallengerSaleCoTo"));
+const BlogNegocjacjeSprzedazowe = lazy(() => import("./pages/BlogNegocjacjeSprzedazowe"));
+const BlogProspectingB2bCoTo = lazy(() => import("./pages/BlogProspectingB2bCoTo"));
+
 // Wave 119: Value Selling, SPIN Selling, Sales Discovery
 const BlogValueSellingCoTo = lazy(() => import("./pages/BlogValueSellingCoTo"));
 const BlogSpinSellingCoTo = lazy(() => import("./pages/BlogSpinSellingCoTo"));
@@ -1086,6 +1091,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 120 */}
+                <Route path="/blog/challenger-sale-metodologia-sprzedazy" element={<BlogChallengerSaleCoTo />} />
+                <Route path="/blog/negocjacje-sprzedazowe-techniki-b2b" element={<BlogNegocjacjeSprzedazowe />} />
+                <Route path="/blog/prospecting-b2b-generowanie-leadow" element={<BlogProspectingB2bCoTo />} />
                 {/* Wave 119 */}
                 <Route path="/blog/value-selling-sprzedaz-przez-wartosc" element={<BlogValueSellingCoTo />} />
                 <Route path="/blog/spin-selling-metodologia-sprzedazy" element={<BlogSpinSellingCoTo />} />
