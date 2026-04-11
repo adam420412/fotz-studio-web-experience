@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 133: Usage-Based Pricing, Two-Sided Marketplace, Growth Accounting
+const BlogUsageBasedPricingCoTo = lazy(() => import("./pages/BlogUsageBasedPricingCoTo"));
+const BlogTwoSidedMarketplaceCoTo = lazy(() => import("./pages/BlogTwoSidedMarketplaceCoTo"));
+const BlogGrowthAccountingCoTo = lazy(() => import("./pages/BlogGrowthAccountingCoTo"));
+
 // Wave 132: Magic Number, DAU/MAU, Viral Coefficient
 const BlogMagicNumberCoTo = lazy(() => import("./pages/BlogMagicNumberCoTo"));
 const BlogDauMauCoTo = lazy(() => import("./pages/BlogDauMauCoTo"));
@@ -1151,6 +1156,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 133 */}
+                <Route path="/blog/usage-based-pricing-co-to-jest-jak-wdrozyz" element={<BlogUsageBasedPricingCoTo />} />
+                <Route path="/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest" element={<BlogTwoSidedMarketplaceCoTo />} />
+                <Route path="/blog/growth-accounting-analiza-wzrostu-uzytkownikow" element={<BlogGrowthAccountingCoTo />} />
                 {/* Wave 132 */}
                 <Route path="/blog/magic-number-efektywnosc-sprzedazy-saas" element={<BlogMagicNumberCoTo />} />
                 <Route path="/blog/dau-mau-stickiness-metryki-zaangazowania" element={<BlogDauMauCoTo />} />
