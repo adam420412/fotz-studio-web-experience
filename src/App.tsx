@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 80: Topic Clusters, Zero-Party Data, Brand Ambassador
+const BlogTopicClustersCoTo = lazy(() => import("./pages/BlogTopicClustersCoTo"));
+const BlogZeroPartyDataCoTo = lazy(() => import("./pages/BlogZeroPartyDataCoTo"));
+const BlogBrandAmbassadorCoTo = lazy(() => import("./pages/BlogBrandAmbassadorCoTo"));
+
 // Wave 79: Dark Social, Content Audit, Employee Advocacy
 const BlogDarkSocialCoTo = lazy(() => import("./pages/BlogDarkSocialCoTo"));
 const BlogContentAuditCoTo = lazy(() => import("./pages/BlogContentAuditCoTo"));
@@ -887,6 +892,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 80 */}
+                <Route path="/blog/topic-clusters-co-to" element={<BlogTopicClustersCoTo />} />
+                <Route path="/blog/zero-party-data-co-to" element={<BlogZeroPartyDataCoTo />} />
+                <Route path="/blog/brand-ambassador-co-to" element={<BlogBrandAmbassadorCoTo />} />
                 {/* Wave 79 */}
                 <Route path="/blog/dark-social-co-to" element={<BlogDarkSocialCoTo />} />
                 <Route path="/blog/content-audit-co-to" element={<BlogContentAuditCoTo />} />
