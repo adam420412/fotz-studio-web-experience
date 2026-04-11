@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 149: DevSecOps, SBOM, WebRTC
+const BlogDevSecOpsCoTo = lazy(() => import("./pages/BlogDevSecOpsCoTo"));
+const BlogSbomCoTo = lazy(() => import("./pages/BlogSbomCoTo"));
+const BlogWebRtcCoTo = lazy(() => import("./pages/BlogWebRtcCoTo"));
+
 // Wave 148: Platform Engineering, eBPF, FinOps
 const BlogPlatformEngineeringCoTo = lazy(() => import("./pages/BlogPlatformEngineeringCoTo"));
 const BlogEbpfCoTo = lazy(() => import("./pages/BlogEbpfCoTo"));
@@ -1231,6 +1236,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 149 */}
+                <Route path="/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd" element={<BlogDevSecOpsCoTo />} />
+                <Route path="/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz" element={<BlogSbomCoTo />} />
+                <Route path="/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje" element={<BlogWebRtcCoTo />} />
                 {/* Wave 148 */}
                 <Route path="/blog/platform-engineering-co-to-jest-internal-developer-platform" element={<BlogPlatformEngineeringCoTo />} />
                 <Route path="/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability" element={<BlogEbpfCoTo />} />
