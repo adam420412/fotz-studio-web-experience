@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 122: Sales Forecast, Closing, Sales Ops
+const BlogSalesForecastCoTo = lazy(() => import("./pages/BlogSalesForecastCoTo"));
+const BlogClosingTechniqueCoTo = lazy(() => import("./pages/BlogClosingTechniqueCoTo"));
+const BlogSalesOpsCoTo = lazy(() => import("./pages/BlogSalesOpsCoTo"));
+
 // Wave 121: Demo sprzedażowe, POC, Quota
 const BlogDemoSalesCoTo = lazy(() => import("./pages/BlogDemoSalesCoTo"));
 const BlogPocCoToJest = lazy(() => import("./pages/BlogPocCoToJest"));
@@ -1096,6 +1101,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 122 */}
+                <Route path="/blog/sales-forecast-prognoza-sprzedazy" element={<BlogSalesForecastCoTo />} />
+                <Route path="/blog/techniki-closingu-zamykanie-sprzedazy" element={<BlogClosingTechniqueCoTo />} />
+                <Route path="/blog/sales-operations-co-to-jest" element={<BlogSalesOpsCoTo />} />
                 {/* Wave 121 */}
                 <Route path="/blog/demo-sprzedazowe-jak-prowadzic" element={<BlogDemoSalesCoTo />} />
                 <Route path="/blog/poc-proof-of-concept-sprzedaz-b2b" element={<BlogPocCoToJest />} />
