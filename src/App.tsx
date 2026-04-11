@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 170: React Hook Form+Zod, Framer Motion, i18n
+const BlogReactHookFormCoTo = lazy(() => import("./pages/BlogReactHookFormCoTo"));
+const BlogFramerMotionCoTo = lazy(() => import("./pages/BlogFramerMotionCoTo"));
+const BlogI18nCoTo = lazy(() => import("./pages/BlogI18nCoTo"));
+
 // Wave 169: NestJS, Hono/Fastify/Express, DI/SOLID/Patterns
 const BlogNestJsCoTo = lazy(() => import("./pages/BlogNestJsCoTo"));
 const BlogHonoFastifyCoTo = lazy(() => import("./pages/BlogHonoFastifyCoTo"));
@@ -1334,6 +1339,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 170 */}
+                <Route path="/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024" element={<BlogReactHookFormCoTo />} />
+                <Route path="/blog/framer-motion-gsap-css-animations-web-animacje-react-2024" element={<BlogFramerMotionCoTo />} />
+                <Route path="/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024" element={<BlogI18nCoTo />} />
                 {/* Wave 169 */}
                 <Route path="/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify" element={<BlogNestJsCoTo />} />
                 <Route path="/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024" element={<BlogHonoFastifyCoTo />} />
