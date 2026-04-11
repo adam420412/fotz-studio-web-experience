@@ -285,6 +285,10 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 43: Storytelling, Podcast Marketing
+const BlogStorytellingCoTo = lazy(() => import("./pages/BlogStorytellingCoTo"));
+const BlogPodcastMarketingCoTo = lazy(() => import("./pages/BlogPodcastMarketingCoTo"));
+
 // Wave 42: Freemium, Social Selling
 const BlogFreemiumCoTo = lazy(() => import("./pages/BlogFreemiumCoTo"));
 const BlogSocialSellingCoTo = lazy(() => import("./pages/BlogSocialSellingCoTo"));
@@ -714,6 +718,9 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 43 */}
+                <Route path="/blog/storytelling-co-to" element={<BlogStorytellingCoTo />} />
+                <Route path="/blog/podcast-marketing-co-to" element={<BlogPodcastMarketingCoTo />} />
                 {/* Wave 42 */}
                 <Route path="/blog/freemium-co-to" element={<BlogFreemiumCoTo />} />
                 <Route path="/blog/social-selling-co-to" element={<BlogSocialSellingCoTo />} />
