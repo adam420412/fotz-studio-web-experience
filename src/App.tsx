@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 106: JTBD, Product Owner, Scrum Master
+const BlogJobsToBeDeoneCoTo = lazy(() => import("./pages/BlogJobsToBeDeoneCoTo"));
+const BlogProductOwnerCoTo = lazy(() => import("./pages/BlogProductOwnerCoTo"));
+const BlogScrumMasterCoTo = lazy(() => import("./pages/BlogScrumMasterCoTo"));
+
 // Wave 105: Risk Management, Sprint Retrospective, Pivot
 const BlogRiskManagementCoTo = lazy(() => import("./pages/BlogRiskManagementCoTo"));
 const BlogSprintRetrospectiveCoTo = lazy(() => import("./pages/BlogSprintRetrospectiveCoTo"));
@@ -1016,6 +1021,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 106 */}
+                <Route path="/blog/jobs-to-be-done-co-to" element={<BlogJobsToBeDeoneCoTo />} />
+                <Route path="/blog/product-owner-co-to" element={<BlogProductOwnerCoTo />} />
+                <Route path="/blog/scrum-master-co-to" element={<BlogScrumMasterCoTo />} />
                 {/* Wave 105 */}
                 <Route path="/blog/risk-management-co-to" element={<BlogRiskManagementCoTo />} />
                 <Route path="/blog/sprint-retrospective-co-to" element={<BlogSprintRetrospectiveCoTo />} />
