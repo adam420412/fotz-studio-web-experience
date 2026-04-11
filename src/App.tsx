@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 173: File Uploads, Deployment Platforms, Date Libraries
+const BlogFileUploadsCoTo = lazy(() => import("./pages/BlogFileUploadsCoTo"));
+const BlogDeploymentPlatformsCoTo = lazy(() => import("./pages/BlogDeploymentPlatformsCoTo"));
+const BlogDateLibrariesCoTo = lazy(() => import("./pages/BlogDateLibrariesCoTo"));
+
 // Wave 172: AI SDK/OpenAI, Stripe Payments, Email/Resend
 const BlogAiSdkCoTo = lazy(() => import("./pages/BlogAiSdkCoTo"));
 const BlogStripeCoTo = lazy(() => import("./pages/BlogStripeCoTo"));
@@ -1349,6 +1354,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 173 */}
+                <Route path="/blog/file-uploads-uploadthing-cloudinary-s3-mux-nextjs-2024" element={<BlogFileUploadsCoTo />} />
+                <Route path="/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024" element={<BlogDeploymentPlatformsCoTo />} />
+                <Route path="/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024" element={<BlogDateLibrariesCoTo />} />
                 {/* Wave 172 */}
                 <Route path="/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024" element={<BlogAiSdkCoTo />} />
                 <Route path="/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024" element={<BlogStripeCoTo />} />
