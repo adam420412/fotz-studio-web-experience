@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 138: SOC2, Data Warehouse, Zero Trust
+const BlogSoc2CoTo = lazy(() => import("./pages/BlogSoc2CoTo"));
+const BlogDataWarehouseCoTo = lazy(() => import("./pages/BlogDataWarehouseCoTo"));
+const BlogZeroTrustCoTo = lazy(() => import("./pages/BlogZeroTrustCoTo"));
+
 // Wave 137: Sprint Planning, Partner Ecosystem, SRE
 const BlogSprintPlanningCoTo = lazy(() => import("./pages/BlogSprintPlanningCoTo"));
 const BlogPartnerEcosystemCoTo = lazy(() => import("./pages/BlogPartnerEcosystemCoTo"));
@@ -1176,6 +1181,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 138 */}
+                <Route path="/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup" element={<BlogSoc2CoTo />} />
+                <Route path="/blog/data-warehouse-co-to-jest-jak-wybrac" element={<BlogDataWarehouseCoTo />} />
+                <Route path="/blog/zero-trust-security-co-to-jest-jak-wdrozyz" element={<BlogZeroTrustCoTo />} />
                 {/* Wave 137 */}
                 <Route path="/blog/sprint-planning-co-to-jest-jak-przeprowadzic" element={<BlogSprintPlanningCoTo />} />
                 <Route path="/blog/partner-ecosystem-ekosystem-partnerski-saas" element={<BlogPartnerEcosystemCoTo />} />
