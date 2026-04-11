@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 163: Astro/SvelteKit/Remix, Vite/Bundlers, Bun/Deno/Node.js
+const BlogAstroCoTo = lazy(() => import("./pages/BlogAstroCoTo"));
+const BlogViteCoTo = lazy(() => import("./pages/BlogViteCoTo"));
+const BlogBunDenoCoTo = lazy(() => import("./pages/BlogBunDenoCoTo"));
+
 // Wave 162: Zustand/Jotai, TanStack Query, tRPC
 const BlogZustandCoTo = lazy(() => import("./pages/BlogZustandCoTo"));
 const BlogTanstackQueryCoTo = lazy(() => import("./pages/BlogTanstackQueryCoTo"));
@@ -1299,6 +1304,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 163 */}
+                <Route path="/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac" element={<BlogAstroCoTo />} />
+                <Route path="/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac" element={<BlogViteCoTo />} />
+                <Route path="/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac" element={<BlogBunDenoCoTo />} />
                 {/* Wave 162 */}
                 <Route path="/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024" element={<BlogZustandCoTo />} />
                 <Route path="/blog/tanstack-query-react-query-co-to-jest-cache-usemutation-nextjs-ssr" element={<BlogTanstackQueryCoTo />} />
