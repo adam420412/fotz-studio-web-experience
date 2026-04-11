@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 141: Event-Driven Architecture, CQRS, Data Mesh
+const BlogEventDrivenArchCoTo = lazy(() => import("./pages/BlogEventDrivenArchCoTo"));
+const BlogCqrsCoTo = lazy(() => import("./pages/BlogCqrsCoTo"));
+const BlogDataMeshCoTo = lazy(() => import("./pages/BlogDataMeshCoTo"));
+
 // Wave 140: AI Agents, Prompt Engineering, Fine-Tuning LLM
 const BlogAiAgentsCoTo = lazy(() => import("./pages/BlogAiAgentsCoTo"));
 const BlogPromptEngineeringCoTo = lazy(() => import("./pages/BlogPromptEngineeringCoTo"));
@@ -1191,6 +1196,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 141 */}
+                <Route path="/blog/event-driven-architecture-co-to-jest-jak-wdrozyz" element={<BlogEventDrivenArchCoTo />} />
+                <Route path="/blog/cqrs-command-query-responsibility-segregation-co-to-jest" element={<BlogCqrsCoTo />} />
+                <Route path="/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych" element={<BlogDataMeshCoTo />} />
                 {/* Wave 140 */}
                 <Route path="/blog/ai-agents-autonomiczne-agenty-co-to-jest" element={<BlogAiAgentsCoTo />} />
                 <Route path="/blog/prompt-engineering-co-to-jest-jak-pisac-prompty" element={<BlogPromptEngineeringCoTo />} />
