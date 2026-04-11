@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 188: Qwik framework, SolidJS, CSS Grid Subgrid
+const BlogQwikCoTo = lazy(() => import("./pages/BlogQwikCoTo"));
+const BlogSolidJsCoTo = lazy(() => import("./pages/BlogSolidJsCoTo"));
+const BlogCssGridSubgridCoTo = lazy(() => import("./pages/BlogCssGridSubgridCoTo"));
+
 // Wave 187: SvelteKit, OpenAI Assistants API, Zod Advanced
 const BlogSvelteKitCoTo = lazy(() => import("./pages/BlogSvelteKitCoTo"));
 const BlogOpenAiAssistantsCoTo = lazy(() => import("./pages/BlogOpenAiAssistantsCoTo"));
@@ -1424,6 +1429,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 188 */}
+                <Route path="/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024" element={<BlogQwikCoTo />} />
+                <Route path="/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024" element={<BlogSolidJsCoTo />} />
+                <Route path="/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024" element={<BlogCssGridSubgridCoTo />} />
                 {/* Wave 187 */}
                 <Route path="/blog/sveltekit-routing-load-functions-form-actions-adaptery-2024" element={<BlogSvelteKitCoTo />} />
                 <Route path="/blog/openai-assistants-api-threads-file-search-code-interpreter-2024" element={<BlogOpenAiAssistantsCoTo />} />
