@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 175: Package Managers, TypeScript tsconfig, Tauri/Electron Desktop
+const BlogPackageManagersCoTo = lazy(() => import("./pages/BlogPackageManagersCoTo"));
+const BlogTsconfigCoTo = lazy(() => import("./pages/BlogTsconfigCoTo"));
+const BlogTauriElectronCoTo = lazy(() => import("./pages/BlogTauriElectronCoTo"));
+
 // Wave 174: Git Workflow, GraphQL Apollo, CSS-in-JS Zero Runtime
 const BlogGitWorkflowCoTo = lazy(() => import("./pages/BlogGitWorkflowCoTo"));
 const BlogGraphQLApolloCoTo = lazy(() => import("./pages/BlogGraphQLApolloCoTo"));
@@ -1359,6 +1364,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 175 */}
+                <Route path="/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024" element={<BlogPackageManagersCoTo />} />
+                <Route path="/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references" element={<BlogTsconfigCoTo />} />
+                <Route path="/blog/tauri-electron-wails-desktop-apps-react-typescript-2024" element={<BlogTauriElectronCoTo />} />
                 {/* Wave 174 */}
                 <Route path="/blog/git-flow-trunk-based-conventional-commits-strategie-git-2024" element={<BlogGitWorkflowCoTo />} />
                 <Route path="/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024" element={<BlogGraphQLApolloCoTo />} />
