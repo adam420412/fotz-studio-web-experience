@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 127: Investor Update, OTE, Champion Building
+const BlogInvestorUpdateCoTo = lazy(() => import("./pages/BlogInvestorUpdateCoTo"));
+const BlogOteCoToJest = lazy(() => import("./pages/BlogOteCoToJest"));
+const BlogChampionBuildingCoTo = lazy(() => import("./pages/BlogChampionBuildingCoTo"));
+
 // Wave 126: Jobs To Be Done, ESG, IPO
 const BlogJobsToBeDoneCoTo = lazy(() => import("./pages/BlogJobsToBeDoneCoTo"));
 const BlogEsgCoToJest = lazy(() => import("./pages/BlogEsgCoToJest"));
@@ -1121,6 +1126,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 127 */}
+                <Route path="/blog/investor-update-aktualizacja-dla-inwestorow" element={<BlogInvestorUpdateCoTo />} />
+                <Route path="/blog/ote-on-target-earnings-sprzedaz-b2b" element={<BlogOteCoToJest />} />
+                <Route path="/blog/champion-building-sprzedaz-b2b-enterprise" element={<BlogChampionBuildingCoTo />} />
                 {/* Wave 126 */}
                 <Route path="/blog/jobs-to-be-done-jtbd-co-to-jest" element={<BlogJobsToBeDoneCoTo />} />
                 <Route path="/blog/esg-co-to-jest-environmental-social-governance" element={<BlogEsgCoToJest />} />
