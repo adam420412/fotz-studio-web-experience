@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 182: React Native Reanimated, Web Workers, CRDT Collaboration
+const BlogRNReanimatedCoTo = lazy(() => import("./pages/BlogRNReanimatedCoTo"));
+const BlogWebWorkersCoTo = lazy(() => import("./pages/BlogWebWorkersCoTo"));
+const BlogCrdtCollabCoTo = lazy(() => import("./pages/BlogCrdtCollabCoTo"));
+
 // Wave 181: React Performance, Modern CSS, Modern Browser APIs
 const BlogReactPerfCoTo = lazy(() => import("./pages/BlogReactPerfCoTo"));
 const BlogModernCssCoTo = lazy(() => import("./pages/BlogModernCssCoTo"));
@@ -1394,6 +1399,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 182 */}
+                <Route path="/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024" element={<BlogRNReanimatedCoTo />} />
+                <Route path="/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024" element={<BlogWebWorkersCoTo />} />
+                <Route path="/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024" element={<BlogCrdtCollabCoTo />} />
                 {/* Wave 181 */}
                 <Route path="/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024" element={<BlogReactPerfCoTo />} />
                 <Route path="/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024" element={<BlogModernCssCoTo />} />
