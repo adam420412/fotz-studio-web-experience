@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 118: Payback Period, ICP, ABM
+const BlogPaybackPeriodCoTo = lazy(() => import("./pages/BlogPaybackPeriodCoTo"));
+const BlogIcpCoToJest = lazy(() => import("./pages/BlogIcpCoToJest"));
+const BlogAbmCoToJest = lazy(() => import("./pages/BlogAbmCoToJest"));
+
 // Wave 117: MRR, Gross Margin, Rule of 40
 const BlogMrrCoToJest = lazy(() => import("./pages/BlogMrrCoToJest"));
 const BlogGrossMarginCoTo = lazy(() => import("./pages/BlogGrossMarginCoTo"));
@@ -1076,6 +1081,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 118 */}
+                <Route path="/blog/cac-payback-period-co-to" element={<BlogPaybackPeriodCoTo />} />
+                <Route path="/blog/icp-ideal-customer-profile-co-to" element={<BlogIcpCoToJest />} />
+                <Route path="/blog/abm-account-based-marketing-co-to" element={<BlogAbmCoToJest />} />
                 {/* Wave 117 */}
                 <Route path="/blog/mrr-monthly-recurring-revenue-co-to" element={<BlogMrrCoToJest />} />
                 <Route path="/blog/gross-margin-marza-brutto-co-to" element={<BlogGrossMarginCoTo />} />
