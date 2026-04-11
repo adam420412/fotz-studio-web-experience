@@ -206,6 +206,10 @@ const StudioPodcastowe = lazy(() => import("./pages/StudioPodcastowe"));
 const FacebookAds = lazy(() => import("./pages/FacebookAds"));
 const GoogleAds = lazy(() => import("./pages/GoogleAds"));
 const GoogleAdsWarszawa = lazy(() => import("./pages/GoogleAdsWarszawa"));
+const SocialMediaWarszawa = lazy(() => import("./pages/SocialMediaWarszawa"));
+const BlogFotografiaBiznesowa = lazy(() => import("./pages/BlogFotografiaBiznesowa"));
+const BlogIdentyfikacjaWizualnaCennik = lazy(() => import("./pages/BlogIdentyfikacjaWizualnaCennik"));
+const BlogJakWybracAgencjeMarketingowa = lazy(() => import("./pages/BlogJakWybracAgencjeMarketingowa"));
 const KampanieReklamowe = lazy(() => import("./pages/KampanieReklamowe"));
 const KampanieReklamowePoznan = lazy(() => import("./pages/KampanieReklamowePoznan"));
 const TikTokAds = lazy(() => import("./pages/TikTokAds"));
@@ -1398,6 +1402,9 @@ const App = () => (
                 <Route path="/blog/blog-firmowy-poradnik" element={<BlogBlogFirmowy />} />
                 <Route path="/blog/ile-kosztuje-film-reklamowy" element={<BlogIleKosztujeFIlmReklamowy />} />
                 <Route path="/blog/pozycjonowanie-dla-malych-firm" element={<BlogPozycjonowanieDlaMalychFirm />} />
+                <Route path="/blog/fotografia-biznesowa" element={<BlogFotografiaBiznesowa />} />
+                <Route path="/blog/identyfikacja-wizualna-cennik" element={<BlogIdentyfikacjaWizualnaCennik />} />
+                <Route path="/blog/jak-wybrac-agencje-marketingowa" element={<BlogJakWybracAgencjeMarketingowa />} />
                 <Route path="/blog/co-to-jest-seo" element={<BlogCoToJestSeo />} />
                 <Route path="/blog/ile-kosztuje-pozycjonowanie" element={<BlogIleKosztujePozycjonowanie />} />
                 <Route path="/blog/social-media-dla-firm" element={<BlogSocialMediaDlaFirm />} />
@@ -2329,6 +2336,7 @@ const App = () => (
                 {/* Social media cluster */}
                 <Route path="/social-media/obsluga" element={<SocialMedia />} />
                 <Route path="/social-media/poznan" element={<SocialMediaPoznan />} />
+                <Route path="/social-media/warszawa" element={<SocialMediaWarszawa />} />
                 <Route path="/social-media/influencer" element={<BlogInfluencerMarketing />} />
                 <Route path="/social-media/reels-vs-tiktok" element={<BlogReelsVsTikTok />} />
                 <Route path="/social-media/strategia" element={<SocialMediaStrategia />} />
