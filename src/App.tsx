@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 179: Image Optimization, Tiptap/Rich Text, Font Optimization
+const BlogNextImageCoTo = lazy(() => import("./pages/BlogNextImageCoTo"));
+const BlogTiptapLexicalCoTo = lazy(() => import("./pages/BlogTiptapLexicalCoTo"));
+const BlogNextFontCoTo = lazy(() => import("./pages/BlogNextFontCoTo"));
+
 // Wave 178: Recharts/DataViz, dnd-kit, Lottie/Rive Animations
 const BlogRechartsCoTo = lazy(() => import("./pages/BlogRechartsCoTo"));
 const BlogDndKitCoTo = lazy(() => import("./pages/BlogDndKitCoTo"));
@@ -1379,6 +1384,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 179 */}
+                <Route path="/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024" element={<BlogNextImageCoTo />} />
+                <Route path="/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024" element={<BlogTiptapLexicalCoTo />} />
+                <Route path="/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024" element={<BlogNextFontCoTo />} />
                 {/* Wave 178 */}
                 <Route path="/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024" element={<BlogRechartsCoTo />} />
                 <Route path="/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024" element={<BlogDndKitCoTo />} />
