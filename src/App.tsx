@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 79: Dark Social, Content Audit, Employee Advocacy
+const BlogDarkSocialCoTo = lazy(() => import("./pages/BlogDarkSocialCoTo"));
+const BlogContentAuditCoTo = lazy(() => import("./pages/BlogContentAuditCoTo"));
+const BlogEmployeeAdvocacyCoTo = lazy(() => import("./pages/BlogEmployeeAdvocacyCoTo"));
+
 // Wave 78: Thought Leadership, Public Relations, Co-Marketing
 const BlogThoughtLeadershipCoTo = lazy(() => import("./pages/BlogThoughtLeadershipCoTo"));
 const BlogPublicRelationsCoTo = lazy(() => import("./pages/BlogPublicRelationsCoTo"));
@@ -882,6 +887,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 79 */}
+                <Route path="/blog/dark-social-co-to" element={<BlogDarkSocialCoTo />} />
+                <Route path="/blog/content-audit-co-to" element={<BlogContentAuditCoTo />} />
+                <Route path="/blog/employee-advocacy-co-to" element={<BlogEmployeeAdvocacyCoTo />} />
                 {/* Wave 78 */}
                 <Route path="/blog/thought-leadership-co-to" element={<BlogThoughtLeadershipCoTo />} />
                 <Route path="/blog/public-relations-co-to" element={<BlogPublicRelationsCoTo />} />
