@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 119: Value Selling, SPIN Selling, Sales Discovery
+const BlogValueSellingCoTo = lazy(() => import("./pages/BlogValueSellingCoTo"));
+const BlogSpinSellingCoTo = lazy(() => import("./pages/BlogSpinSellingCoTo"));
+const BlogSalesDiscoveryCoTo = lazy(() => import("./pages/BlogSalesDiscoveryCoTo"));
+
 // Wave 118: Payback Period, ICP, ABM
 const BlogPaybackPeriodCoTo = lazy(() => import("./pages/BlogPaybackPeriodCoTo"));
 const BlogIcpCoToJest = lazy(() => import("./pages/BlogIcpCoToJest"));
@@ -1081,6 +1086,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 119 */}
+                <Route path="/blog/value-selling-sprzedaz-przez-wartosc" element={<BlogValueSellingCoTo />} />
+                <Route path="/blog/spin-selling-metodologia-sprzedazy" element={<BlogSpinSellingCoTo />} />
+                <Route path="/blog/sales-discovery-rozmowa-sprzedazowa" element={<BlogSalesDiscoveryCoTo />} />
                 {/* Wave 118 */}
                 <Route path="/blog/cac-payback-period-co-to" element={<BlogPaybackPeriodCoTo />} />
                 <Route path="/blog/icp-ideal-customer-profile-co-to" element={<BlogIcpCoToJest />} />
