@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 63: Win/Loss Analysis, Email Marketing CoTo, Retention Marketing
+const BlogWinLossAnalysisCoTo = lazy(() => import("./pages/BlogWinLossAnalysisCoTo"));
+const BlogEmailMarketingCoTo = lazy(() => import("./pages/BlogEmailMarketingCoTo"));
+const BlogRetentionMarketingCoTo = lazy(() => import("./pages/BlogRetentionMarketingCoTo"));
+
 // Wave 62: Sales Enablement, Zero-Click Search, Market Research
 const BlogSalesEnablementCoTo = lazy(() => import("./pages/BlogSalesEnablementCoTo"));
 const BlogZeroClickSearchCoTo = lazy(() => import("./pages/BlogZeroClickSearchCoTo"));
@@ -802,6 +807,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 63 */}
+                <Route path="/blog/win-loss-analysis-co-to" element={<BlogWinLossAnalysisCoTo />} />
+                <Route path="/blog/email-marketing-co-to" element={<BlogEmailMarketingCoTo />} />
+                <Route path="/blog/retention-marketing-co-to" element={<BlogRetentionMarketingCoTo />} />
                 {/* Wave 62 */}
                 <Route path="/blog/sales-enablement-co-to" element={<BlogSalesEnablementCoTo />} />
                 <Route path="/blog/zero-click-search-co-to" element={<BlogZeroClickSearchCoTo />} />
