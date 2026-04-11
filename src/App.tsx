@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 76: Neuromarketing, Pricing Psychology, FOMO Marketing
+const BlogNeuromarketingCoTo = lazy(() => import("./pages/BlogNeuromarketingCoTo"));
+const BlogPricingPsychologyCoTo = lazy(() => import("./pages/BlogPricingPsychologyCoTo"));
+const BlogFOMOMarketingCoTo = lazy(() => import("./pages/BlogFOMOMarketingCoTo"));
+
 // Wave 75: Loyalty Program, Personalization Marketing, Mobile Marketing
 const BlogLoyaltyProgramCoTo = lazy(() => import("./pages/BlogLoyaltyProgramCoTo"));
 const BlogPersonalizationMarketingCoTo = lazy(() => import("./pages/BlogPersonalizationMarketingCoTo"));
@@ -867,6 +872,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 76 */}
+                <Route path="/blog/neuromarketing-co-to" element={<BlogNeuromarketingCoTo />} />
+                <Route path="/blog/psychologia-cen-co-to" element={<BlogPricingPsychologyCoTo />} />
+                <Route path="/blog/fomo-marketing-co-to" element={<BlogFOMOMarketingCoTo />} />
                 {/* Wave 75 */}
                 <Route path="/blog/loyalty-program-co-to" element={<BlogLoyaltyProgramCoTo />} />
                 <Route path="/blog/personalizacja-marketingu-co-to" element={<BlogPersonalizationMarketingCoTo />} />
