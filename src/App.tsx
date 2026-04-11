@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 124: Proposal, Term Sheet, Moat
+const BlogProposalSprzedazowy = lazy(() => import("./pages/BlogProposalSprzedazowy"));
+const BlogTermSheetCoTo = lazy(() => import("./pages/BlogTermSheetCoTo"));
+const BlogMoatCoToJest = lazy(() => import("./pages/BlogMoatCoToJest"));
+
 // Wave 123: Multithreading, Ramp period, Pipeline Management
 const BlogMultithreadingSprzedaz = lazy(() => import("./pages/BlogMultithreadingSprzedaz"));
 const BlogRampingSprzedaz = lazy(() => import("./pages/BlogRampingSprzedaz"));
@@ -1106,6 +1111,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 124 */}
+                <Route path="/blog/proposal-sprzedazowy-oferta-handlowa-b2b" element={<BlogProposalSprzedazowy />} />
+                <Route path="/blog/term-sheet-co-to-jest-vc-inwestycje" element={<BlogTermSheetCoTo />} />
+                <Route path="/blog/moat-przewaga-konkurencyjna-co-to-jest" element={<BlogMoatCoToJest />} />
                 {/* Wave 123 */}
                 <Route path="/blog/multithreading-sprzedaz-b2b-buying-committee" element={<BlogMultithreadingSprzedaz />} />
                 <Route path="/blog/ramp-period-onboarding-handlowca-b2b" element={<BlogRampingSprzedaz />} />
