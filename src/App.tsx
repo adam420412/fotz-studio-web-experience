@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 25: Cold calling, Lead magnet, Trener personalny
+const BlogColdCallingCoTo = lazy(() => import("./pages/BlogColdCallingCoTo"));
+const BlogLeadMagnetCoTo = lazy(() => import("./pages/BlogLeadMagnetCoTo"));
+const StronaInternetowaDlaTrenera = lazy(() => import("./pages/StronaInternetowaDlaTrenera"));
+
 // Wave 24: Dropshipping, Allegro, E-commerce, Inbound marketing, Lejek
 const BlogDropshippingCoToJest = lazy(() => import("./pages/BlogDropshippingCoToJest"));
 const BlogJakSprzedawacNaAllegro = lazy(() => import("./pages/BlogJakSprzedawacNaAllegro"));
@@ -618,6 +623,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 25 */}
+                <Route path="/blog/cold-calling-co-to" element={<BlogColdCallingCoTo />} />
+                <Route path="/blog/lead-magnet-co-to" element={<BlogLeadMagnetCoTo />} />
+                <Route path="/uslugi/strona-internetowa-dla-trenera-personalnego" element={<StronaInternetowaDlaTrenera />} />
                 {/* Wave 24 */}
                 <Route path="/blog/dropshipping-co-to-jest" element={<BlogDropshippingCoToJest />} />
                 <Route path="/blog/jak-sprzedawac-na-allegro" element={<BlogJakSprzedawacNaAllegro />} />
