@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 94: SEO Copywriting, A/B Testing, Heatmap
+const BlogSeoCopywritingCoTo = lazy(() => import("./pages/BlogSeoCopywritingCoTo"));
+const BlogAbTestingCoTo = lazy(() => import("./pages/BlogAbTestingCoTo"));
+const BlogHeatmapCoTo = lazy(() => import("./pages/BlogHeatmapCoTo"));
+
 // Wave 93: Accessibility, Market Segmentation, Paid Social
 const BlogAccessibilityWebCoTo = lazy(() => import("./pages/BlogAccessibilityWebCoTo"));
 const BlogMarketSegmentationCoTo = lazy(() => import("./pages/BlogMarketSegmentationCoTo"));
@@ -956,6 +961,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 94 */}
+                <Route path="/blog/seo-copywriting-co-to" element={<BlogSeoCopywritingCoTo />} />
+                <Route path="/blog/ab-testing-co-to" element={<BlogAbTestingCoTo />} />
+                <Route path="/blog/heatmapa-co-to" element={<BlogHeatmapCoTo />} />
                 {/* Wave 93 */}
                 <Route path="/blog/dostepnosc-stron-internetowych" element={<BlogAccessibilityWebCoTo />} />
                 <Route path="/blog/segmentacja-rynku-co-to" element={<BlogMarketSegmentationCoTo />} />
