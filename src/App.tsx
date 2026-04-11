@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 181: React Performance, Modern CSS, Modern Browser APIs
+const BlogReactPerfCoTo = lazy(() => import("./pages/BlogReactPerfCoTo"));
+const BlogModernCssCoTo = lazy(() => import("./pages/BlogModernCssCoTo"));
+const BlogBrowserApisCoTo = lazy(() => import("./pages/BlogBrowserApisCoTo"));
+
 // Wave 180: React Flow/Graphs, Canvas/Konva, React Three Fiber 3D
 const BlogReactFlowCoTo = lazy(() => import("./pages/BlogReactFlowCoTo"));
 const BlogKonvaCanvasCoTo = lazy(() => import("./pages/BlogKonvaCanvasCoTo"));
@@ -1389,6 +1394,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 181 */}
+                <Route path="/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024" element={<BlogReactPerfCoTo />} />
+                <Route path="/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024" element={<BlogModernCssCoTo />} />
+                <Route path="/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024" element={<BlogBrowserApisCoTo />} />
                 {/* Wave 180 */}
                 <Route path="/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024" element={<BlogReactFlowCoTo />} />
                 <Route path="/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024" element={<BlogKonvaCanvasCoTo />} />
