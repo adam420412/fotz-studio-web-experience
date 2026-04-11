@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 125: NPS, AARRR Pirate Metrics, Burn Multiple
+const BlogNpsCoToJest = lazy(() => import("./pages/BlogNpsCoToJest"));
+const BlogAarrrPirateMetrics = lazy(() => import("./pages/BlogAarrrPirateMetrics"));
+const BlogBurnMultipleCoTo = lazy(() => import("./pages/BlogBurnMultipleCoTo"));
+
 // Wave 124: Proposal, Term Sheet, Moat
 const BlogProposalSprzedazowy = lazy(() => import("./pages/BlogProposalSprzedazowy"));
 const BlogTermSheetCoTo = lazy(() => import("./pages/BlogTermSheetCoTo"));
@@ -1111,6 +1116,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 125 */}
+                <Route path="/blog/nps-net-promoter-score-co-to-jest" element={<BlogNpsCoToJest />} />
+                <Route path="/blog/aarrr-pirate-metrics-framework-wzrostu" element={<BlogAarrrPirateMetrics />} />
+                <Route path="/blog/burn-multiple-efektywnosc-kapitalowa-saas" element={<BlogBurnMultipleCoTo />} />
                 {/* Wave 124 */}
                 <Route path="/blog/proposal-sprzedazowy-oferta-handlowa-b2b" element={<BlogProposalSprzedazowy />} />
                 <Route path="/blog/term-sheet-co-to-jest-vc-inwestycje" element={<BlogTermSheetCoTo />} />
