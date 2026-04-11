@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 156: DDD, Monorepo, Container Security
+const BlogDddCoTo = lazy(() => import("./pages/BlogDddCoTo"));
+const BlogMonorepoCoTo = lazy(() => import("./pages/BlogMonorepoCoTo"));
+const BlogContainerSecCoTo = lazy(() => import("./pages/BlogContainerSecCoTo"));
+
 // Wave 155: Serverless Architecture, CI/CD Best Practices, Technical Debt
 const BlogServerlessArchCoTo = lazy(() => import("./pages/BlogServerlessArchCoTo"));
 const BlogCiCdBestPracticesCoTo = lazy(() => import("./pages/BlogCiCdBestPracticesCoTo"));
@@ -1264,6 +1269,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 156 */}
+                <Route path="/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming" element={<BlogDddCoTo />} />
+                <Route path="/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud" element={<BlogMonorepoCoTo />} />
+                <Route path="/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac" element={<BlogContainerSecCoTo />} />
                 {/* Wave 155 */}
                 <Route path="/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions" element={<BlogServerlessArchCoTo />} />
                 <Route path="/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa" element={<BlogCiCdBestPracticesCoTo />} />
