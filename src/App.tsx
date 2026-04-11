@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 196: NativeWind+Tamagui, HTTP Clients TypeScript, TS Utility Types
+const BlogNativeWindTamaguiCoTo = lazy(() => import("./pages/BlogNativeWindTamaguiCoTo"));
+const BlogHttpClientsCoTo = lazy(() => import("./pages/BlogHttpClientsCoTo"));
+const BlogTsUtilityTypesCoTo = lazy(() => import("./pages/BlogTsUtilityTypesCoTo"));
+
 // Wave 195: AI Coding Tools, Passkeys+WebAuthn, TanStack Start
 const BlogAiCodingToolsCoTo = lazy(() => import("./pages/BlogAiCodingToolsCoTo"));
 const BlogPasskeysWebAuthnCoTo = lazy(() => import("./pages/BlogPasskeysWebAuthnCoTo"));
@@ -1464,6 +1469,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 196 */}
+                <Route path="/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024" element={<BlogNativeWindTamaguiCoTo />} />
+                <Route path="/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024" element={<BlogHttpClientsCoTo />} />
+                <Route path="/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024" element={<BlogTsUtilityTypesCoTo />} />
                 {/* Wave 195 */}
                 <Route path="/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024" element={<BlogAiCodingToolsCoTo />} />
                 <Route path="/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024" element={<BlogPasskeysWebAuthnCoTo />} />
