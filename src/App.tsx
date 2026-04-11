@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 71: Viral Marketing, Word of Mouth, Guerrilla Marketing
+const BlogViralMarketingCoTo = lazy(() => import("./pages/BlogViralMarketingCoTo"));
+const BlogWordOfMouthCoTo = lazy(() => import("./pages/BlogWordOfMouthCoTo"));
+const BlogGuerrillaMarketingCoTo = lazy(() => import("./pages/BlogGuerrillaMarketingCoTo"));
+
 // Wave 70: Bootstrapping, Lean Startup, Kanban
 const BlogBootstrappingCoTo = lazy(() => import("./pages/BlogBootstrappingCoTo"));
 const BlogLeanStartupCoTo = lazy(() => import("./pages/BlogLeanStartupCoTo"));
@@ -842,6 +847,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 71 */}
+                <Route path="/blog/viral-marketing-co-to" element={<BlogViralMarketingCoTo />} />
+                <Route path="/blog/word-of-mouth-marketing-co-to" element={<BlogWordOfMouthCoTo />} />
+                <Route path="/blog/guerrilla-marketing-co-to" element={<BlogGuerrillaMarketingCoTo />} />
                 {/* Wave 70 */}
                 <Route path="/blog/bootstrapping-co-to" element={<BlogBootstrappingCoTo />} />
                 <Route path="/blog/lean-startup-co-to" element={<BlogLeanStartupCoTo />} />
