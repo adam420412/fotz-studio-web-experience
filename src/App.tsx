@@ -285,6 +285,14 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 15: FB/IG Ads, email marketing, content marketing, strona cena, pozycjonowanie cena
+const StronaInternetowaCena = lazy(() => import("./pages/StronaInternetowaCena"));
+const ReklamaFacebook = lazy(() => import("./pages/ReklamaFacebook"));
+const EmailMarketing = lazy(() => import("./pages/EmailMarketing"));
+const BlogContentMarketingCoTo = lazy(() => import("./pages/BlogContentMarketingCoTo"));
+const ReklamaInstagram = lazy(() => import("./pages/ReklamaInstagram"));
+const BlogPozycjonowanieStronCena = lazy(() => import("./pages/BlogPozycjonowanieStronCena"));
+
 // Wave 14: Social media, rebranding, copywriting, WordPress, identyfikacja wizualna
 const SocialMediaMarketing = lazy(() => import("./pages/SocialMediaMarketing"));
 const BlogRebrandingCoTo = lazy(() => import("./pages/BlogRebrandingCoTo"));
@@ -553,6 +561,13 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 15 */}
+                <Route path="/blog/strona-internetowa-cena" element={<StronaInternetowaCena />} />
+                <Route path="/uslugi/reklama-facebook" element={<ReklamaFacebook />} />
+                <Route path="/uslugi/email-marketing" element={<EmailMarketing />} />
+                <Route path="/blog/content-marketing-co-to" element={<BlogContentMarketingCoTo />} />
+                <Route path="/uslugi/reklama-instagram" element={<ReklamaInstagram />} />
+                <Route path="/blog/pozycjonowanie-stron-cena" element={<BlogPozycjonowanieStronCena />} />
                 {/* Wave 14 */}
                 <Route path="/uslugi/social-media-marketing" element={<SocialMediaMarketing />} />
                 <Route path="/blog/rebranding-co-to" element={<BlogRebrandingCoTo />} />
