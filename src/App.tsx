@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 114: Sales Forecasting, MEDDIC, Objection Handling
+const BlogSalesForecastingCoTo = lazy(() => import("./pages/BlogSalesForecastingCoTo"));
+const BlogMeddicCoTo = lazy(() => import("./pages/BlogMeddicCoTo"));
+const BlogObjectionHandlingCoTo = lazy(() => import("./pages/BlogObjectionHandlingCoTo"));
+
 // Wave 113: DCF, WACC, Break-even
 const BlogDcfCoTo = lazy(() => import("./pages/BlogDcfCoTo"));
 const BlogWaccCoTo = lazy(() => import("./pages/BlogWaccCoTo"));
@@ -1056,6 +1061,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 114 */}
+                <Route path="/blog/sales-forecasting-prognozowanie-sprzedazy" element={<BlogSalesForecastingCoTo />} />
+                <Route path="/blog/meddic-kwalifikacja-sprzedazy-b2b" element={<BlogMeddicCoTo />} />
+                <Route path="/blog/objection-handling-obsluga-obiekcji-sprzedaz" element={<BlogObjectionHandlingCoTo />} />
                 {/* Wave 113 */}
                 <Route path="/blog/dcf-discounted-cash-flow-co-to" element={<BlogDcfCoTo />} />
                 <Route path="/blog/wacc-sredni-wazony-koszt-kapitalu" element={<BlogWaccCoTo />} />
