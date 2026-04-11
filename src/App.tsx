@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 159: Caching Strategies, Rate Limiting, Resilience Patterns
+const BlogCachingStrategiesCoTo = lazy(() => import("./pages/BlogCachingStrategiesCoTo"));
+const BlogRateLimitingCoTo = lazy(() => import("./pages/BlogRateLimitingCoTo"));
+const BlogResiliencePatternsCoTo = lazy(() => import("./pages/BlogResiliencePatternsCoTo"));
+
 // Wave 158: Saga Pattern, Outbox Pattern, Idempotency
 const BlogSagaPatternCoTo = lazy(() => import("./pages/BlogSagaPatternCoTo"));
 const BlogOutboxPatternCoTo = lazy(() => import("./pages/BlogOutboxPatternCoTo"));
@@ -1279,6 +1284,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 159 */}
+                <Route path="/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation" element={<BlogCachingStrategiesCoTo />} />
+                <Route path="/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway" element={<BlogRateLimitingCoTo />} />
+                <Route path="/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j" element={<BlogResiliencePatternsCoTo />} />
                 {/* Wave 158 */}
                 <Route path="/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka" element={<BlogSagaPatternCoTo />} />
                 <Route path="/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring" element={<BlogOutboxPatternCoTo />} />
