@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 103: SDR, Buyer Persona, Change Management
+const BlogSdrCoTo = lazy(() => import("./pages/BlogSdrCoTo"));
+const BlogBuyerPersonaCoTo = lazy(() => import("./pages/BlogBuyerPersonaCoTo"));
+const BlogChangeManagementCoTo = lazy(() => import("./pages/BlogChangeManagementCoTo"));
+
 // Wave 102: Feedback Loop, Community-Led Growth, QBR
 const BlogFeedbackLoopCoTo = lazy(() => import("./pages/BlogFeedbackLoopCoTo"));
 const BlogCommunityLedGrowthCoTo = lazy(() => import("./pages/BlogCommunityLedGrowthCoTo"));
@@ -1001,6 +1006,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 103 */}
+                <Route path="/blog/sdr-co-to-jest" element={<BlogSdrCoTo />} />
+                <Route path="/blog/buyer-persona-co-to" element={<BlogBuyerPersonaCoTo />} />
+                <Route path="/blog/change-management-co-to" element={<BlogChangeManagementCoTo />} />
                 {/* Wave 102 */}
                 <Route path="/blog/feedback-loop-co-to" element={<BlogFeedbackLoopCoTo />} />
                 <Route path="/blog/community-led-growth-co-to" element={<BlogCommunityLedGrowthCoTo />} />
