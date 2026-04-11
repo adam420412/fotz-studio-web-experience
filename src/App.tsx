@@ -285,6 +285,10 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 88: Lead Scoring, SaaS Metrics
+const BlogLeadScoringCoTo = lazy(() => import("./pages/BlogLeadScoringCoTo"));
+const BlogSaasMetricsCoTo = lazy(() => import("./pages/BlogSaasMetricsCoTo"));
+
 // Wave 87: Service Design, Churn Analysis, Programmatic Advertising
 const BlogServiceDesignCoTo = lazy(() => import("./pages/BlogServiceDesignCoTo"));
 const BlogChurnAnalysisCoTo = lazy(() => import("./pages/BlogChurnAnalysisCoTo"));
@@ -927,10 +931,13 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 88 */}
+                <Route path="/blog/lead-scoring-co-to" element={<BlogLeadScoringCoTo />} />
+                <Route path="/blog/saas-metrics-co-to" element={<BlogSaasMetricsCoTo />} />
                 {/* Wave 87 */}
                 <Route path="/blog/service-design-co-to" element={<BlogServiceDesignCoTo />} />
                 <Route path="/blog/churn-analysis-co-to" element={<BlogChurnAnalysisCoTo />} />
-                <Route path="/blog/programmatic-advertising-co-to" element={<BlogProgrammaticAdvertisingCoTo />} />
+                <Route path="/blog/reklama-programatyczna-co-to" element={<BlogProgrammaticAdvertisingCoTo />} />
                 {/* Wave 86 */}
                 <Route path="/blog/usability-testing-co-to" element={<BlogUsabilityTestingCoTo />} />
                 <Route path="/blog/strategia-komunikacji-co-to" element={<BlogCommunicationStrategyCoTo />} />

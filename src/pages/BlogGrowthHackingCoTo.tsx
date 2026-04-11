@@ -1,185 +1,240 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, Clock, TrendingUp, Zap, Target, CheckCircle2 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
+const faqItems = [
+  {
+    question: "Co to jest growth hacking?",
+    answer:
+      "Growth hacking to podejście do wzrostu firmy oparte na szybkich eksperymentach w całym lejku (nie tylko top-of-funnel), które łączy marketing, product development i dane analityczne. Termin wprowadził Sean Ellis w 2010 roku. Celem growth hackera jest znalezienie skalowalnych, powtarzalnych mechanizmów wzrostu — najczęściej poprzez setki małych eksperymentów, które dają 10× efekty przy ułamku tradycyjnych kosztów marketingowych.",
+  },
+  {
+    question: "Czym różni się growth hacking od marketingu?",
+    answer:
+      "Tradycyjny marketing skupia się na awareness i generowaniu leadów (top-of-funnel). Growth hacking obejmuje cały AARRR lejek — akwizycję, aktywację, retencję, przychody i polecania — i optymalizuje każdy etap. Growth hackerzy działają bliżej produktu niż tradycyjni marketerzy: testują zmiany w onboardingu, mechanikach viralności, pricing, feature discovery. Growth to funkcja na styku marketing, product i data.",
+  },
+  {
+    question: "Jakie są przykłady growth hacks?",
+    answer:
+      "Klasyczne przykłady: Dropbox — viral loop poprzez 'poleć znajomego, dostaniesz 500MB' (wzrost 3900% w 15 miesięcy); Hotmail — 'P.S. Zdobądź darmowy email w Hotmail' w stopce każdego emaila (12 mln użytkowników w 18 miesięcy); Airbnb — integracja z Craigslist (crosspost ofert); LinkedIn — import kontaktów email; PayPal — płatność za rejestrację ($10 za nowego użytkownika i $10 za polecenie). Każdy 'hack' to znalezienie niezatłoczonego kanału wzrostu.",
+  },
+  {
+    question: "Co to jest viral coefficient (K-factor)?",
+    answer:
+      "Viral coefficient (K-factor) to liczba nowych użytkowników których przyciąga każdy istniejący użytkownik. Wzór: K = Liczba wysłanych zaproszeń × Wskaźnik konwersji zaproszenia. Jeśli K jest większy niż 1 — produkt rośnie wykładniczo (każdy użytkownik przyciąga więcej niż 1 nowego). K = 0.5 oznacza, że trzeba pozyskać 2 użytkowników żeby przyciągnęli 1 dodatkowego. Nawet K = 0.3 znacznie redukuje koszt akwizycji.",
+  },
+  {
+    question: "Jak zbudować growth team?",
+    answer:
+      "Skuteczny growth team łączy: Growth Lead / Head of Growth (strategia, priorytetyzacja eksperymentów), Product Manager z growth focus, Data Analyst lub Data Scientist, Frontend Developer (implementacja eksperymentów), Marketing specialist (content, paid). Kluczowe: cross-functional ownership (nie silo), dedykowany engineering capacity, culture eksperymentowania i psychologiczne bezpieczeństwo porażki.",
+  },
+];
+
+const aarrr = [
+  { etap: "Acquisition (Akwizycja)", cel: "Jak użytkownicy dowiadują się o produkcie?", kanały: "SEO, paid ads, social, PR, partnerships, viral", metryki: "CAC, CPL, channel attribution, conversion rate" },
+  { etap: "Activation (Aktywacja)", cel: "Czy nowi użytkownicy mają 'aha moment'?", kanały: "Onboarding flow, in-app messages, email, setup wizard", metryki: "Activation rate, Time to First Value, onboarding completion" },
+  { etap: "Retention (Retencja)", cel: "Czy użytkownicy wracają regularnie?", kanały: "Email, push notifications, feature updates, CS outreach", metryki: "Day 1/7/30 retention, churn rate, DAU/MAU" },
+  { etap: "Revenue (Przychody)", cel: "Jak monetyzować? Jak zwiększać ARPU?", kanały: "Pricing experiments, upsell, cross-sell, freemium conversion", metryki: "MRR/ARR, ARPU, LTV, conversion free-to-paid" },
+  { etap: "Referral (Polecenia)", cel: "Czy użytkownicy polecają produkt?", kanały: "Referral programs, sharing features, NPS follow-up", metryki: "NPS, K-factor, referral rate, viral coefficient" },
+];
+
+const growthLoops = [
+  {
+    typ: "Viral Loop",
+    opis: "Użytkownicy automatycznie zapraszają innych przez sam produkt",
+    przykład: "Dropbox — poleć znajomego, oboje dostają więcej miejsca",
+    warunek: "Produkt musi być lepszy lub bardziej wartościowy z innymi użytkownikami",
+  },
+  {
+    typ: "Content Loop",
+    opis: "Użytkownicy tworzą content który przyciąga nowych użytkowników",
+    przykład: "Quora — odpowiedzi rankują w Google i przyciągają organic traffic",
+    warunek: "User-generated content musi mieć wartość dla zewnętrznych odbiorców",
+  },
+  {
+    typ: "Paid Acquisition Loop",
+    opis: "Przychody z klientów finansują akwizycję nowych klientów",
+    przykład: "LTV/CAC większy niż 3:1 pozwala skalować paid ads profitably",
+    warunek: "LTV powinien być 3–5× wyższy niż CAC",
+  },
+  {
+    typ: "Sales Loop",
+    opis: "Klienci generują leady przez referral lub expansion w organizacji",
+    przykład: "Slack — jeden team w firmie, viral expansion do innych teamów",
+    warunek: "Product-led growth lub strong referral incentives",
+  },
+];
+
+const experimentFramework = [
+  { krok: "Ice Score Prioritization", opis: "Oceniaj eksperymenty wg ICE: Impact (1–10), Confidence (1–10), Ease (1–10). Priorytety mają najwyższe ICE scores.", cel: "Fokus na eksperymenty z najwyższym potencjałem" },
+  { krok: "Hypothesis Formation", opis: "Zawsze: 'Wierzymy, że [zmiana] spowoduje [wynik] ponieważ [powód]. Mierzymy sukces przez [metryka].'", cel: "Testowanie założeń, nie preferencji" },
+  { krok: "Minimum Viable Test", opis: "Jak minimalnym nakładem walidować hipotezę? Unikaj tygodni pracy dla testu który można przeprowadzić w 2 dni.", cel: "Szybka nauka, niskie ryzyko" },
+  { krok: "Statistical Validity", opis: "Zbierz wystarczającą próbkę (kalkulator AB test). Poczekaj na istotność statystyczną zanim ogłosisz wynik.", cel: "Wiarygodne dane zamiast złudzeń" },
+  { krok: "Document and Share", opis: "Każdy eksperyment dokumentuj: hipoteza, wynik, learning. Buduj institutional knowledge.", cel: "Compound learning — nie powtarzaj tych samych błędów" },
+];
+
 export default function BlogGrowthHackingCoTo() {
-  const breadcrumbs = [
-    { label: "Strona glowna", href: "/" },
-    { label: "Blog", href: "/blog" },
-    { label: "Growth hacking — co to jest? Techniki i przyklady" },
-  ];
-
-  const growthTechniques = [
-    { technika: "Viral loops (petla wiralowa)", przyklad: "Dropbox: 'zaproś znajomego, dostaniesz 500 MB za darmo' — baza uzytkownikow +60% w rok.", kategoria: "Acquisition" },
-    { technika: "Product-Led Growth (PLG)", przyklad: "Slack, Notion, Figma — freemium model, produkt sam sprzedaje przez codzienne uzytkowanie.", kategoria: "Acquisition" },
-    { technika: "A/B testowanie onboardingu", przyklad: "Testuj rozne przeplywu rejestracji — jeden Airbnb test zwieksyl konwersje o 30%.", kategoria: "Activation" },
-    { technika: "Email automation", przyklad: "Sekwencja emaili aktywujacych nieaktywnych uzytkownikow — odzysk 15-25% churnujacych.", kategoria: "Retention" },
-    { technika: "SEO at scale", przyklad: "Tworzenie setek stron landingowych na frazy longtailowe — HubSpot tak zbudowal 75% ruchu organicznego.", kategoria: "Acquisition" },
-    { technika: "Referral program", przyklad: "Uber: 20 zl dla Ciebie i znajomego. Revolut: bezplatna karta za polecenie.", kategoria: "Referral" },
-  ];
-
-  const faqItems = [
-    {
-      question: "Co to jest growth hacking?",
-      answer:
-        "Growth hacking (po polsku: hakowanie wzrostu) to podejscie do marketingu i rozwoju produktu skupione na szybkim i tanim wzroscie przy uzyciu kreatywnych, danych i eksperymentow zamiast tradycyjnych budzetow reklamowych. Termin zostal ukuty przez Seana Ellisa w 2010 roku. Growth hacker to osoba, ktora laczy marketing, programowanie i analitike danych, by znalezc skalowalne, powtarzalne sposoby na pozyskanie i utrzymanie uzytkownikow. Przykladowe efekty: Dropbox ursl od 100 000 do 4 000 000 uzytkownikow w 15 miesiecy dzieki programowi referral. Airbnb zdobyl miliony uzytkownikow przez integracje z Craigslist (bez platnej reklamy).",
-    },
-    {
-      question: "Czym growth hacking rozni sie od tradycyjnego marketingu?",
-      answer:
-        "Growth hacking vs tradycyjny marketing: Tradycyjny marketing — duze budzety reklamowe, brand building, dlugi cykl kampanii, trudna mierzalnosc ROI. Growth hacking — eksperymenty o niskim koszcie, szybkie iteracje, dane jako fundament decyzji, skalowalnosc jest kluczem. Umiejetnosci growth hackera: podstawy kodu (SQL, Python, API), analitika (GA4, Mixpanel, Amplitude), UX (testy A/B), SEO, email marketing, copywriting, psychologia behawioralna. Wspolne z marketingiem: komunikacja, zrozumienie klienta, kreatywnosc. Growth hacking sprawdza sie szczegolnie dla startupow i scaleupow — firmy z ograniczonym budzetem, ktore musza rosnac szybko.",
-    },
-    {
-      question: "Jak wdrozyc growth hacking w firmie?",
-      answer:
-        "Framework wdrozenia growth hackingu: 1) Zdefiniuj North Star Metric — jeden wskaznik ktory reprezentuje wartosc dla klienta (np. aktywni tygodniowi uzytkownicy, MRR). 2) Zbuduj funnel AARRR (Pirate Metrics): Acquisition (pozyskanie), Activation (aktywacja), Retention (zatrzymanie), Referral (polecenie), Revenue (przychod). 3) Identyfikuj waski gardlo — gdzie tracisz najwiecej uzytkownikow. 4) Generuj hipotezy — 'Jezeli zmienimy X, konwersja wzrosnie o Y%.' 5) Testuj szybko — A/B test, Minimum Viable Test. 6) Analizuj dane — czy hipoteza sie potwierdzila? 7) Skaluj to co dziala, porzuc co nie dziala. Iteruj co 1-2 tygodnie.",
-    },
-    {
-      question: "Jakie sa najslynniejsze przykladdy growth hackingu?",
-      answer:
-        "Ikoniczne przyklady growth hackingu: Dropbox (2008-2009): Program referral 'zaproś znajomego = 500 MB za darmo'. Koszt: 0. Efekt: wzrost z 100 000 do 4 000 000 uzytkownikow w 15 miesiecy. Hotmail (1996): stopka 'PS: I love you. Get your free email at Hotmail' w kazdym emailu. 12 mln uzytkownikow w 18 miesiecy. Airbnb: integracja z Craigslist (bez platnej reklamy) — automatyczne wysy lanie ofert Airbnb na Craigslist. Linkedin: importowanie listy kontaktow z emaila przy rejestracji → wiralowe zaproszenia. Spotify: ekskluzywny dostep przez zaproszenie (FOMO) → ogromne zainteresowanie przed otwarciem. Instagram: maly team, zero reklam, milion uzytkownikow w 3 miesiace przez fokus na iPhone i filtry.",
-    },
-    {
-      question: "Jakie narzedzia stosuje growth hacker?",
-      answer:
-        "Narzedzia growth hackingu: Analitika: Google Analytics 4, Mixpanel, Amplitude, Heap. A/B testing: Google Optimize (zakonczono), VWO, Optimizely, AB Tasty. Heatmapy i nagrania: Hotjar, Microsoft Clarity, FullStory. Email automation: ActiveCampaign, Customer.io, Klaviyo, Drip. Scraping i automatyzacja: Python (Scrapy, Selenium), Phantombuster, Make (Integromat). SEO: Ahrefs, Semrush, Screaming Frog. Push powiadomienia: OneSignal. Chatboty i onboarding: Intercom, Userflow, Appcues. Podstawa: wszystko oparte na danych — bez danych growth hacking to tylko zgadywanie.",
-    },
-    {
-      question: "Czy growth hacking nadaje sie dla malych firm i sklepow internetowych?",
-      answer:
-        "Growth hacking dla MŚP i e-commerce: Tak — wiele technik growth hackingu jest dostepnych dla malych firm bez duzego budzetu: SEO longtailowe — setki artykulow na frazy long tail (tak jak ten artykul). Email marketing z automatyzacja — odzysk porzuconych koszykow. Referral program — nagradzaj polecajacych. Optymalizacja stron produktowych (A/B testy nagłowkow, zdjec, CTA). Recenzje i User Generated Content — bezplatny social proof. Retargeting — remarketing do odwiedzajacych strone za kilka groszy za klikniecie. Kluczowe dla MŚP: zacznij od jednej lub dwoch technik, mierz wyniki, skaluj co dziala. Nie probuj wszystkiego naraz.",
-    },
-  ];
-
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Growth hacking — co to jest? Techniki i przyklady | fotz.pl"
-        description="Growth hacking co to jest — wyjasnamy czym jest growth hacking, techniki, slynne przyklady (Dropbox, Airbnb), narzedzia i jak wdrozyc w firmie."
-        canonical="https://fotz.pl/blog/growth-hacking-co-to"
+        title="Growth Hacking — co to jest? Strategie wzrostu i AARRR framework"
+        description="Growth hacking — definicja, AARRR lejek, viral coefficient, 4 growth loops i framework eksperymentowania. Przykłady Dropbox, Airbnb, Hotmail. Kompletny przewodnik."
+        canonicalUrl="https://fotz.pl/blog/growth-hacking-co-to"
       />
       <ArticleSchema
-        title="Growth hacking — co to jest? Techniki i przyklady"
-        description="Czym jest growth hacking, roznica z tradycyjnym marketingiem, techniki AARRR, slynne przyklady (Dropbox, Airbnb, Hotmail) i narzedzia growth hackera."
-        datePublished="2025-04-11"
-        dateModified="2025-04-11"
+        title="Growth Hacking — co to jest i jak znaleźć mechanizmy wzrostu?"
+        description="Kompletny przewodnik po growth hackingu: AARRR framework, viral coefficient, 4 growth loops i jak budować kulturę eksperymentowania."
         url="https://fotz.pl/blog/growth-hacking-co-to"
+        datePublished="2024-01-16"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <FAQSchema items={faqItems} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Growth Hacking", url: "https://fotz.pl/blog/growth-hacking-co-to" },
+        ]}
+      />
 
-      <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+      <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <PageBreadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "Growth Hacking" }]} />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
+            Growth Hacking — co to jest i jak znaleźć mechanizmy wzrostu?
+          </h1>
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            Growth hacking łączy marketing, product i dane w celu szybkiego wzrostu przez eksperymenty.
+            Poznaj AARRR lejek, viral coefficient, 4 growth loops i jak budować eksperymenty.
+          </p>
+        </div>
+      </section>
 
-        <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
-          <div className="max-w-3xl mx-auto px-4 md:px-6">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-              <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 6 min czytania</span>
-                <span className="flex items-center gap-1"><TrendingUp className="w-4 h-4" /> Marketing i wzrost</span>
-              </div>
-              <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Growth hacking — co to jest i jak dziala?
-              </h1>
-              <p className="text-xl text-slate-300 leading-relaxed">
-                Growth hacking to szybki wzrost bez duzych budzetow reklamowych. Techniki,
-                slynne przyklady (Dropbox, Airbnb) i jak wdrozyc w swojej firmie.
-              </p>
-            </motion.div>
-          </div>
-        </section>
-
-        <section className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4 md:px-6">
-
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-4 mb-4">Sprawdzone techniki growth hackingu</h2>
-              <div className="space-y-3 mb-6">
-                {growthTechniques.map((t, idx) => (
-                  <div key={idx} className="p-4 bg-slate-50 rounded-lg border border-slate-200">
-                    <div className="flex items-center justify-between mb-1">
-                      <p className="font-bold text-slate-900 text-sm">{t.technika}</p>
-                      <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-medium">{t.kategoria}</span>
-                    </div>
-                    <p className="text-slate-600 text-xs">{t.przyklad}</p>
-                  </div>
-                ))}
-              </div>
-            </FadeInView>
-
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Funnel AARRR — Pirate Metrics</h2>
-              <div className="bg-slate-900 rounded-lg p-5 mb-6 font-mono text-sm">
-                <div className="space-y-2 text-slate-300">
-                  {[
-                    { litera: "A", krok: "Acquisition", desc: "Jak uzytkownik trafia do produktu?", color: "text-blue-400" },
-                    { litera: "A", krok: "Activation", desc: "Czy uzytkownik osiaga wartosc w pierwszym uzyciu?", color: "text-green-400" },
-                    { litera: "R", krok: "Retention", desc: "Czy wraca i korzysta regularnie?", color: "text-yellow-400" },
-                    { litera: "R", krok: "Referral", desc: "Czy poleca produkt innym?", color: "text-purple-400" },
-                    { litera: "R", krok: "Revenue", desc: "Czy platci lub generuje przychod?", color: "text-red-400" },
-                  ].map((step, idx) => (
-                    <div key={idx} className="flex items-center gap-3">
-                      <span className={`font-bold text-lg ${step.color}`}>{step.litera}</span>
-                      <span className={`font-bold ${step.color}`}>{step.krok}:</span>
-                      <span>{step.desc}</span>
-                    </div>
-                  ))}
+      <FadeInView>
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Czym jest growth hacking?</h2>
+            <p className="text-lg text-slate-700 mb-4">
+              <strong>Growth hacking</strong> to podejście do wzrostu firmy oparte na szybkich,
+              tanich eksperymentach we wszystkich etapach lejka (nie tylko w marketingu),
+              które łączy kreatywne myślenie z analizą danych. Termin wprowadził Sean Ellis w 2010 roku,
+              opisując rolę która "jedynym celem jest wzrost".
+            </p>
+            <p className="text-lg text-slate-700 mb-6">
+              Firmy jak Dropbox, Airbnb, Slack i Uber zbudowały swój wzrost na growth hackach —
+              nie przez masowe wydatki reklamowe, lecz przez znalezienie mechanizmów
+              viralności i retencji wbudowanych w produkt.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                { stat: "3900%", opis: "wzrost Dropbox po wprowadzeniu viral referral loop — 100k do 4 mln użytkowników w 15 miesięcy" },
+                { stat: "40%", opis: "wyższy wzrost firm stosujących product-led growth vs. sales-led (OpenView)" },
+                { stat: "K powyżej 1", opis: "viral coefficient powyżej 1 = eksponencjalny wzrost bez wydatków na akwizycję" },
+              ].map((s, i) => (
+                <div key={i} className="bg-green-50 rounded-xl p-5 text-center">
+                  <p className="text-3xl font-bold text-green-600 mb-2">{s.stat}</p>
+                  <p className="text-slate-600 text-sm">{s.opis}</p>
                 </div>
-              </div>
-            </FadeInView>
-
-            <FadeInView>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-                <Zap className="w-5 h-5 text-blue-600 mb-2" />
-                <p className="text-blue-800 font-semibold mb-2">Zacznij growth hacking od dobrej strony internetowej</p>
-                <p className="text-blue-700 text-sm mb-3">
-                  Optymalizowana strona z SEO to podstawa growth hackingu — przyciaga organiczny ruch bez platnej reklamy.
-                </p>
-                <Link to="/uslugi/tworzenie-stron-internetowych" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
-                  Tworzenie stron — oferta <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </FadeInView>
+              ))}
+            </div>
           </div>
         </section>
+      </FadeInView>
 
-        <FadeInView>
-          <section className="py-12 md:py-16 bg-slate-50">
-            <div className="max-w-3xl mx-auto px-4 md:px-6">
-              <h2 className="text-2xl font-bold text-center mb-8">FAQ — Growth hacking co to jest</h2>
-              <FAQSchema items={faqItems} />
-              <Accordion type="single" collapsible className="w-full bg-white rounded-lg border border-slate-200">
-                {faqItems.map((item, idx) => (
-                  <AccordionItem key={idx} value={`item-${idx}`}>
-                    <AccordionTrigger className="text-left px-6">
-                      <span className="font-semibold text-slate-900">{item.question}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-slate-700 px-6 leading-relaxed">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+      <FadeInView>
+        <section className="py-16 px-4 bg-slate-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">AARRR — framework pirata</h2>
+            <p className="text-slate-600 mb-8">Framework Dave McClure'a: 5 etapów lejka growth. Zamiast fokusować tylko na akwizycji — optymalizuj każdy etap.</p>
+            <div className="space-y-3">
+              {aarrr.map((a, i) => (
+                <div key={i} className="bg-white rounded-xl p-5 border border-slate-200">
+                  <div className="flex items-start gap-4">
+                    <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">{a.etap[0]}</div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-slate-900 mb-1">{a.etap}</h3>
+                      <p className="text-slate-500 text-sm italic mb-2">{a.cel}</p>
+                      <div className="grid md:grid-cols-2 gap-2 text-sm">
+                        <div className="bg-green-50 rounded p-2">
+                          <p className="text-xs font-semibold text-green-600 mb-1">Kanały:</p>
+                          <p className="text-green-800">{a.kanały}</p>
+                        </div>
+                        <div className="bg-slate-50 rounded p-2">
+                          <p className="text-xs font-semibold text-slate-500 mb-1">Metryki:</p>
+                          <p className="text-slate-700">{a.metryki}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        <ContactSection
-          heading="Wdrozymy growth hacking w Twojej firmie"
-          subheading="Strona, SEO i automatyzacja — budujemy systemy ktore rosnaz same."
-        />
-      </Layout>
-    </>
+      <FadeInView>
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">4 typy growth loops</h2>
+            <div className="grid md:grid-cols-2 gap-5">
+              {growthLoops.map((l, i) => (
+                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                  <h3 className="font-bold text-slate-900 text-lg mb-2">{l.typ}</h3>
+                  <p className="text-slate-600 text-sm mb-3">{l.opis}</p>
+                  <div className="bg-green-50 rounded p-2 mb-2">
+                    <p className="text-xs font-semibold text-green-600 mb-1">Przykład:</p>
+                    <p className="text-green-800 text-sm">{l.przykład}</p>
+                  </div>
+                  <p className="text-xs text-slate-500 italic">Warunek: {l.warunek}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      <FadeInView>
+        <section className="py-16 px-4 bg-slate-50">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">Framework eksperymentowania growth</h2>
+            <div className="space-y-4">
+              {experimentFramework.map((krok, i) => (
+                <div key={i} className="bg-white rounded-xl p-5 border border-slate-200">
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">{i + 1}</div>
+                    <div>
+                      <h3 className="font-bold text-slate-900 mb-1">{krok.krok}</h3>
+                      <p className="text-slate-600 text-sm mb-1">{krok.opis}</p>
+                      <p className="text-xs text-green-700 font-semibold">Cel: {krok.cel}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      <FadeInView>
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — growth hacking</h2>
+            <div className="space-y-4">
+              {faqItems.map((item, i) => (
+                <div key={i} className="bg-slate-50 border border-slate-200 rounded-xl p-6">
+                  <h3 className="font-bold text-slate-900 mb-3">{item.question}</h3>
+                  <p className="text-slate-600">{item.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      <ContactSection />
+    </Layout>
   );
 }

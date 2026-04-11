@@ -1,165 +1,202 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, Clock, Star, Users, TrendingUp, CheckCircle2 } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
+const faqItems = [
+  {
+    question: "Co to jest social proof w marketingu?",
+    answer:
+      "Social proof (dowód społeczny) to psychologiczny fenomen, w którym ludzie naśladują zachowania innych, zakładając że skoro inni tak robią, to jest to właściwy wybór. W marketingu to wszelkie sygnały pokazujące, że inni klienci zaufali i są zadowoleni z produktu lub usługi. Termin spopularyzował Robert Cialdini w 'Influence: The Psychology of Persuasion' (1984). Social proof redukuje ryzyko i niepewność decyzji zakupowej.",
+  },
+  {
+    question: "Jakie są rodzaje social proof?",
+    answer:
+      "Główne typy: Expert social proof (endorsement eksperta, certyfikaty, nagrody branżowe), Celebrity social proof (influencerzy, znane osobowości — mniej wiarygodne niż peer), User social proof (opinie klientów, recenzje, case studies), Wisdom of crowds (liczby: 10 000 klientów, 4.8 gwiazdek z 2000 opinii), Wisdom of friends (rekomendacje od znajomych — najsilniejszy typ), oraz Certifications (ISO, nagrody, akredytacje — third-party validation).",
+  },
+  {
+    question: "Jak zbierać opinie klientów do social proof?",
+    answer:
+      "Strategie zbierania opinii: automatyczny email po zakupie (3–7 dni po dostarczeniu produktu lub pierwszym sukcesie z usługą), prośba NPS z opcją share, incentyw za zostawienie recenzji (zniżka, darmowa próbka), interview case study z najlepszymi klientami, monitoring i odpowiadanie na recenzje Google/Trustpilot/G2, oraz prośba via SDR od churned klientów o exit feedback.",
+  },
+  {
+    question: "Czy liczba gwiazdek czy treść opinii jest ważniejsza?",
+    answer:
+      "Badania Nielsen: 66% konsumentów ufa opiniom online od nieznajomych prawie tak samo jak od znajomych. Kombinacja jest idealna: wysoka ocena (4.2–4.8 gwiazdki — nie perfekcyjna 5.0 bo wydaje się fałszywa) plus autentyczna treść. Klienci czytają negatywne opinie i reakcję firmy — brak odpowiedzi na negatywne recenzje szkodzi bardziej niż sama opinia. Szczegółowe opinie wideo mają 4× wyższą skuteczność niż tekstowe.",
+  },
+  {
+    question: "Jak używać social proof na landing page?",
+    answer:
+      "Najlepsze praktyki social proof na landing page: umieść liczbę klientów lub użytkowników w hero section, dodaj 3–5 testimoniali od konkretnych osób (imię, stanowisko, firma, zdjęcie), logo klientów (szczególnie rozpoznawalne marki) w pierwszym scrollu, video testimonial od zadowolonego klienta, case study z konkretnymi wynikami (np. 40% wzrost sprzedaży w 3 miesiące), oraz rating na zewnętrznych platformach (Google, G2, Clutch).",
+  },
+];
+
+const socialProofTypes = [
+  { typ: "Opinie i recenzje klientów", opis: "Tekstowe lub wideo opinie rzeczywistych użytkowników — najczęstsza forma social proof", przykład: "'Fotz zwiększył nasze przychody o 300% w 6 miesięcy' — Jan K., CEO TechStartup", skuteczność: "★★★★☆", gdzie: "Landing page, strona oferty, email, Google My Business, G2/Trustpilot", jak_zbierać: "Email post-purchase, prośba NPS, dedicated review link" },
+  { typ: "Logo klientów (Logo Wall)", opis: "Loga znanych firm które korzystają z produktu — natychmiastowa wiarygodność przez asocjację", przykład: "Wiersz logo: KPMG, Santander, Allegro, PKO BP, CD Projekt", skuteczność: "★★★★☆", gdzie: "Hero section, strona O nas, pitch deck", jak_zbierać: "Prośba o zgodę od klienta, partner program" },
+  { typ: "Case Studies", opis: "Szczegółowe opisy wyników osiągniętych przez klientów z konkretnymi danymi i kontekstem", przykład: "'Jak Marka X osiągnęła 40% wzrost konwersji przez redesign strony głównej'", skuteczność: "★★★★★", gdzie: "Strona klientów, blog, sales enablement, email sequences", jak_zbierać: "Interview z customer success, structured questionnaire" },
+  { typ: "Liczby i statystyki", opis: "Konkretne liczby budujące wiarygodność przez skalę — X firm nam zaufało", przykład: "'10,000+ klientów', '4.9/5 z 2000 opinii', 'Obecni w 15 krajach'", skuteczność: "★★★☆☆", gdzie: "Hero section, footer, media kit", jak_zbierać: "Analytics + CRM + review platform aggregation" },
+  { typ: "Nagrody i certyfikaty", opis: "Zewnętrzna walidacja przez nagrody branżowe, certyfikaty, rankingi", przykład: "G2 Leader 2024, ISO 27001, Forbes 30 Under 30, Clutch Top Agency", skuteczność: "★★★☆☆", gdzie: "Footer, O nas, press section, LinkedIn", jak_zbierać: "Aplikowanie do nagród, utrzymanie certyfikatów" },
+  { typ: "Video Testimonials", opis: "Nagrania wideo zadowolonych klientów — najtrudniejsze do sfabrykowania, najwyższa wiarygodność", przykład: "2-minutowy wywiad z CEO klienta o wynikach i doświadczeniu pracy", skuteczność: "★★★★★", gdzie: "Landing page hero, strona klientów, reklamy social media", jak_zbierać: "Customer interview po osiągnięciu milestone, Zoom recording" },
+];
+
+const spOptimization = [
+  { miejsce: "Hero Section (Above the fold)", co_dodac: "Liczba klientów LUB znane logo LUB 1 kluczowy testimonial", przykład: "'Zaufało nam ponad 500 firm z Polski'" },
+  { miejsce: "Below Hero", co_dodac: "Logo wall — 5–10 rozpoznawalnych logotypów", przykład: "Loga bez nagłówka lub z 'Zaufali nam'" },
+  { miejsce: "Sekcja oferty/produktu", co_dodac: "Testimoniale bezpośrednio przy opisie danej usługi", przykład: "Testimonial o SEO obok opisu usługi SEO" },
+  { miejsce: "Strona cennika", co_dodac: "Testimoniale przy każdym planie lub ROI case study", przykład: "'Plan Pro — Marek z firmy X zaoszczędził 2000h rocznie'" },
+  { miejsce: "Checkout / Formularz", co_dodac: "Redukcja anxiety — gwarancja, certyfikat, testimonial", przykład: "Zdjęcie i opinia klienta obok przycisku CTA" },
+  { miejsce: "Email sequences", co_dodac: "Dedykowany email z case study lub testimonialami", przykład: "Email 3 w welcome sequence — 'Wyniki naszych klientów'" },
+];
+
 export default function BlogSocialProofCoTo() {
-  const breadcrumbs = [
-    { label: "Strona główna", href: "/" },
-    { label: "Blog", href: "/blog" },
-    { label: "Social Proof — co to jest i jak zwiększa konwersję?" },
-  ];
-
-  const socialProofTypes = [
-    { type: "Recenzje i opinie klientów", icon: Star, desc: "Najsilniejszy typ social proof — autentyczne opinie na Google, Trustpilot, Ceneo. 93% konsumentów czyta recenzje przed zakupem (BrightLocal).", example: "5.0 ★ z 214 recenzji na Google" },
-    { type: "Case studies i success stories", icon: TrendingUp, desc: "Szczegółowe opisy jak klient osiągnął wyniki dzięki Twojemu produktowi/usłudze. Świetne dla B2B i wysokich cen.", example: "Jak XYZ zwiększyło sprzedaż o 180% w 6 miesięcy" },
-    { type: "Liczby i statystyki", icon: Users, desc: "Liczba klientów, lat doświadczenia, zrealizowanych projektów. Tworzy wrażenie skali i zaufania.", example: "Zaufało nam 500+ firm z Polski" },
-    { type: "Loga klientów (client logos)", icon: CheckCircle2, desc: "Loga znanych marek wśród klientów — natychmiastowe podniesienie wiarygodności przez asocjację.", example: "Naszymi klientami są: [logo Allegro, Orlen, PKO BP]" },
-    { type: "Certyfikaty i nagrody", icon: Star, desc: "Branżowe wyróżnienia, certyfikaty partnerskie (Google Premier Partner, Meta Business Partner), nagrody.", example: "Google Premier Partner 2024, Forbes 30 under 30" },
-    { type: "Social media followers", icon: Users, desc: "Liczba obserwujących, subskrybentów, reakcji — szczególnie dla twórców treści i personal brand.", example: "12 000 obserwujących na LinkedIn" },
-  ];
-
-  const faqItems = [
-    {
-      question: "Co to jest social proof (dowód społeczny)?",
-      answer: "Social proof (dowód społeczny) to psychologiczne zjawisko polegające na tym, że ludzie kierują się zachowaniem i opiniami innych przy podejmowaniu decyzji — szczególnie w sytuacjach niepewności. Termin ukuty przez Roberta Cialdiniego w 'Influence: The Psychology of Persuasion' (1984). W marketingu: social proof to wszelkie sygnały sugerujące, że inni ludzie ufają Twojej firmie, kupili produkt lub polecają usługę. Typy: recenzje, case studies, loga klientów, liczba użytkowników, certyfikaty, media mentions. Skuteczność: Według badań, strony z recenzjami konwertują o 270% lepiej niż bez recenzji (Spiegel Research Center).",
-    },
-    {
-      question: "Jak social proof wpływa na konwersję?",
-      answer: "Dane o wpływie social proof na konwersję: Recenzje produktów — produkty z 5 recenzjami konwertują o 270% lepiej niż bez recenzji (Spiegel). Liczba gwiazdek — przejście z 3.5 do 3.7 gwiazdki zwiększa konwersję o 120% (Qualtrics). Case studies — 70% kupujących B2B czyta case studies przed decyzją zakupową (DemandGen). Loga klientów — strony z logami znanych klientów mają o 32% wyższy trust score. Recenzje 4-4.5 gwiazdki — konwertują lepiej niż perfekcyjne 5.0 (zbyt idealne budzi podejrzenia). Aktualność recenzji — 85% konsumentów nie ufa recenzjom starszym niż 3 miesiące.",
-    },
-    {
-      question: "Jak zbierać social proof dla swojej firmy?",
-      answer: "Metody zbierania social proof: 1) Recenzje Google — generuj link i proś klientów po zakończeniu współpracy. Odpowiadaj na każdą recenzję. 2) Testimoniale video — poproś najlojalniejszych klientów o 1-2 minutowy film. Najsilniejszy format. 3) Case studies — zbierz dane przed/po, opisz challenge i rozwiązanie. Zaproś klienta do współtworzenia. 4) Zbieraj dane ilościowe — liczba klientów, zakończonych projektów, lat na rynku. 5) Certyfikaty i partnerstwa — Google Partner, ISO, branżowe stowarzyszenia. 6) Media mentions — umieszczaj loga mediów które o Tobie pisały ('Jak w Forbes/Gazeta.pl'). 7) Automatyzacja — Trustpilot, Opineo.pl automatycznie proszą o opinie po transakcji.",
-    },
-    {
-      question: "Gdzie umieszczać social proof na stronie?",
-      answer: "Optymalne miejsca dla social proof: 1) Strona główna — hero section lub tuż pod CTA: liczba klientów, loga, gwiazdki Google. 2) Landing page — między sekcjami benefitów a CTA: testimoniale, case study highlights. 3) Strony produktów/usług — recenzje, specyficzne case studies dla tej usługi. 4) Strona 'O nas' — certyfikaty, nagrody, historia firmy, liczby. 5) Checkout/formularz kontaktowy — tuż obok przycisku: 'Zaufało nam 500+ firm' lub opinia klienta. 6) Email marketing — social proof w emailach sprzedażowych i nurturing. Zasada: im bliżej decyzji zakupowej, tym mocniejszy social proof (nie ogólne liczby, ale konkretne opinie).",
-    },
-    {
-      question: "Czym różni się social proof od FOMO?",
-      answer: "Social proof i FOMO (Fear of Missing Out) to dwie powiązane, ale różne taktyki perswazji: Social proof — 'Inni już to kupili/polecają' → naśladuję innych bo im ufam. Przykłady: recenzje, 'X osób kupiło', loga klientów. FOMO — 'Zostało tylko X sztuk/oferta wygasa za Y godzin' → boję się stracić okazję. Przykłady: 'Ostatnie 3 pokoje', 'Oferta kończy się za 2 godziny', 'X osób przegląda teraz ten produkt'. Oba działają na różne mechanizmy psychologiczne: social proof na przynależność i zaufanie, FOMO na strach przed stratą (loss aversion). Najlepsze strony łączą obie techniki — np. 'Zaufało nam 1000 firm, a ta oferta wygasa w piątek'.",
-    },
-    {
-      question: "Jak radzić sobie z negatywnym social proof?",
-      answer: "Negatywny social proof to sytuacja gdzie mała liczba recenzji lub niskie oceny szkodzą konwersji. Jak zarządzać: 1) Odpowiadaj profesjonalnie na negatywne recenzje — pokaż empatię i gotowość rozwiązania problemu. Potencjalni klienci oceniają jak firma reaguje, nie tylko ocenę. 2) Nie usuwaj negatywnych recenzji — to niemożliwe na Google i wygląda podejrzanie. 3) Rozcieńcz negatywne recenzje pozytywnymi — aktywnie proś zadowolonych klientów o opinie. 4) Unikaj 'paradoksu social proof': nie pisz 'większość firm NIE korzysta z naszej usługi' — to negatywny social proof. 5) Strony z recenzjami 4.3-4.7 (nie idealne 5.0) konwertują lepiej — trochę 'niedoskonałości' buduje autentyczność.",
-    },
-  ];
-
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Social Proof — co to jest i jak zwiększa konwersję? | fotz.pl"
-        description="Social proof co to jest — wyjaśniamy czym jest dowód społeczny, typy social proof, jak go zbierać i gdzie umieszczać na stronie dla maksymalnej konwersji."
-        canonical="https://fotz.pl/blog/social-proof-co-to"
+        title="Social Proof — co to jest? Dowód społeczny w marketingu i konwersji"
+        description="Social proof — definicja, 6 typów (opinie, logo, case studies, liczby, nagrody, wideo), jak zbierać testimoniale i gdzie umieszczać dowód społeczny. Kompletny przewodnik."
+        canonicalUrl="https://fotz.pl/blog/social-proof-co-to"
       />
       <ArticleSchema
-        title="Social Proof — co to jest i jak zwiększa konwersję?"
-        description="Czym jest social proof (dowód społeczny), typy (recenzje, case studies, loga klientów), jak wpływa na konwersję i gdzie umieszczać na stronie."
-        datePublished="2025-04-11"
-        dateModified="2025-04-11"
+        title="Social Proof — co to jest i jak używać dowodu społecznego?"
+        description="Kompletny przewodnik po social proof: 6 typów, skuteczność każdego, jak zbierać i gdzie umieszczać na stronie dla maksymalnej konwersji."
         url="https://fotz.pl/blog/social-proof-co-to"
+        datePublished="2024-01-16"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <FAQSchema items={faqItems} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Social Proof", url: "https://fotz.pl/blog/social-proof-co-to" },
+        ]}
+      />
 
-      <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+      <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <PageBreadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "Social Proof" }]} />
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
+            Social Proof — co to jest i jak używać dowodu społecznego?
+          </h1>
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+            Dowód społeczny redukuje niepewność zakupową i zwiększa konwersję.
+            Poznaj 6 typów social proof, jak je zbierać i gdzie umieszczać na stronie.
+          </p>
+        </div>
+      </section>
 
-        {/* Hero */}
-        <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
-          <div className="max-w-3xl mx-auto px-4 md:px-6">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-              <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 5 min czytania</span>
-                <span className="flex items-center gap-1"><Star className="w-4 h-4" /> Konwersja i UX</span>
-              </div>
-              <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Social Proof — co to jest i jak dowód społeczny zwiększa konwersję?
-              </h1>
-              <p className="text-xl text-slate-300 leading-relaxed">
-                Social proof (dowód społeczny) to jeden z najsilniejszych mechanizmów perswazji w marketingu.
-                Strony z recenzjami konwertują o 270% lepiej. Jak to wykorzystać?
-              </p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Content */}
-        <section className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4 md:px-6">
-
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-4 mb-4">Typy social proof w marketingu</h2>
-              <div className="space-y-3 mb-6">
-                {socialProofTypes.map((t, idx) => {
-                  const Icon = t.icon;
-                  return (
-                    <div key={idx} className="p-4 bg-slate-50 rounded-lg border border-slate-200">
-                      <div className="flex items-center gap-2 mb-1">
-                        <Icon className="w-4 h-4 text-blue-600 flex-shrink-0" />
-                        <span className="font-bold text-slate-900 text-sm">{t.type}</span>
-                      </div>
-                      <p className="text-slate-600 text-xs mb-1">{t.desc}</p>
-                      <p className="text-blue-600 text-xs italic">Przykład: {t.example}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </FadeInView>
-
-            <FadeInView>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-                <TrendingUp className="w-5 h-5 text-blue-600 mb-2" />
-                <p className="text-blue-800 font-semibold mb-2">Chcesz zwiększyć konwersję przez lepszy social proof?</p>
-                <p className="text-blue-700 text-sm mb-3">
-                  Projektujemy strony z optymalnie umieszczonym social proof — recenzje, case studies i liczby które konwertują.
-                </p>
-                <Link to="/uslugi/tworzenie-stron-internetowych" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
-                  Tworzenie stron — oferta <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
-            </FadeInView>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-12 md:py-16 bg-slate-50">
-            <div className="max-w-3xl mx-auto px-4 md:px-6">
-              <h2 className="text-2xl font-bold text-center mb-8">FAQ — Social Proof co to jest</h2>
-              <FAQSchema items={faqItems} />
-              <Accordion type="single" collapsible className="w-full bg-white rounded-lg border border-slate-200">
-                {faqItems.map((item, idx) => (
-                  <AccordionItem key={idx} value={`item-${idx}`}>
-                    <AccordionTrigger className="text-left px-6">
-                      <span className="font-semibold text-slate-900">{item.question}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-slate-700 px-6 leading-relaxed">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+      <FadeInView>
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Czym jest social proof?</h2>
+            <p className="text-lg text-slate-700 mb-4">
+              <strong>Social proof</strong> to psychologiczny mechanizm, w którym ludzie
+              patrzą na zachowania innych aby podjąć właściwą decyzję w sytuacji niepewności.
+              Robert Cialdini opisał go jako jeden z 6 głównych czynników wpływu w książce
+              "Influence: The Psychology of Persuasion". W e-commerce i B2B marketingu
+              to fundament budowania zaufania online.
+            </p>
+            <p className="text-lg text-slate-700 mb-6">
+              Nielsen: 88% konsumentów ufa opiniom online prawie tak samo jak rekomendacjom znajomych.
+              Spiegel Research: produkty z recenzjami konwertują o 270% lepiej niż bez nich.
+              Case studies i testimoniale to najskuteczniejszy content w procesie decyzji zakupowej B2B.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                { stat: "270%", opis: "wyższa konwersja produktów z recenzjami vs. bez recenzji (Spiegel Research)" },
+                { stat: "88%", opis: "konsumentów ufa opiniom online prawie tak samo jak rekomendacjom znajomych" },
+                { stat: "92%", opis: "kupujących B2B czyta case studies przed podjęciem decyzji zakupowej" },
+              ].map((s, i) => (
+                <div key={i} className="bg-yellow-50 rounded-xl p-5 text-center">
+                  <p className="text-3xl font-bold text-yellow-600 mb-2">{s.stat}</p>
+                  <p className="text-slate-600 text-sm">{s.opis}</p>
+                </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        <ContactSection
-          heading="Zaprojektujemy stronę z social proof który konwertuje"
-          subheading="Recenzje, testimoniale, case studies i loga klientów — w miejscach które budują zaufanie i sprzedają."
-        />
-      </Layout>
-    </>
+      <FadeInView>
+        <section className="py-16 px-4 bg-slate-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">6 typów social proof</h2>
+            <div className="space-y-4">
+              {socialProofTypes.map((t, i) => (
+                <div key={i} className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="font-bold text-slate-900 text-lg">{t.typ}</h3>
+                    <span className="text-yellow-500 text-sm">{t.skuteczność}</span>
+                  </div>
+                  <p className="text-slate-600 text-sm mb-3">{t.opis}</p>
+                  <div className="grid md:grid-cols-3 gap-2 text-sm">
+                    <div className="bg-yellow-50 rounded p-2">
+                      <p className="text-xs font-semibold text-yellow-700 mb-1">Przykład:</p>
+                      <p className="text-yellow-800 italic">{t.przykład}</p>
+                    </div>
+                    <div className="bg-slate-50 rounded p-2">
+                      <p className="text-xs font-semibold text-slate-500 mb-1">Gdzie używać:</p>
+                      <p className="text-slate-700">{t.gdzie}</p>
+                    </div>
+                    <div className="bg-blue-50 rounded p-2">
+                      <p className="text-xs font-semibold text-blue-600 mb-1">Jak zbierać:</p>
+                      <p className="text-blue-800">{t.jak_zbierać}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      <FadeInView>
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">Gdzie umieszczać social proof na stronie?</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="bg-slate-900 text-white">
+                    <th className="p-3 text-left">Miejsce</th>
+                    <th className="p-3 text-left">Co dodać</th>
+                    <th className="p-3 text-left">Przykład</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {spOptimization.map((row, i) => (
+                    <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <td className="p-3 font-semibold text-yellow-700">{row.miejsce}</td>
+                      <td className="p-3 text-slate-600 text-sm">{row.co_dodac}</td>
+                      <td className="p-3 text-slate-600 text-sm italic">{row.przykład}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      <FadeInView>
+        <section className="py-16 px-4 bg-slate-50">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ — social proof</h2>
+            <div className="space-y-4">
+              {faqItems.map((item, i) => (
+                <div key={i} className="bg-white border border-slate-200 rounded-xl p-6">
+                  <h3 className="font-bold text-slate-900 mb-3">{item.question}</h3>
+                  <p className="text-slate-600">{item.answer}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      <ContactSection />
+    </Layout>
   );
 }
