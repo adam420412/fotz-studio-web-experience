@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 140: AI Agents, Prompt Engineering, Fine-Tuning LLM
+const BlogAiAgentsCoTo = lazy(() => import("./pages/BlogAiAgentsCoTo"));
+const BlogPromptEngineeringCoTo = lazy(() => import("./pages/BlogPromptEngineeringCoTo"));
+const BlogFineTuningCoTo = lazy(() => import("./pages/BlogFineTuningCoTo"));
+
 // Wave 139: MLOps, Vector Database, RAG Pattern
 const BlogMlopsCoTo = lazy(() => import("./pages/BlogMlopsCoTo"));
 const BlogVectorDatabaseCoTo = lazy(() => import("./pages/BlogVectorDatabaseCoTo"));
@@ -1186,6 +1191,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 140 */}
+                <Route path="/blog/ai-agents-autonomiczne-agenty-co-to-jest" element={<BlogAiAgentsCoTo />} />
+                <Route path="/blog/prompt-engineering-co-to-jest-jak-pisac-prompty" element={<BlogPromptEngineeringCoTo />} />
+                <Route path="/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai" element={<BlogFineTuningCoTo />} />
                 {/* Wave 139 */}
                 <Route path="/blog/mlops-machine-learning-operations-co-to-jest" element={<BlogMlopsCoTo />} />
                 <Route path="/blog/vector-database-co-to-jest-jak-wybrac" element={<BlogVectorDatabaseCoTo />} />
