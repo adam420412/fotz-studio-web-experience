@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 178: Recharts/DataViz, dnd-kit, Lottie/Rive Animations
+const BlogRechartsCoTo = lazy(() => import("./pages/BlogRechartsCoTo"));
+const BlogDndKitCoTo = lazy(() => import("./pages/BlogDndKitCoTo"));
+const BlogLottieRiveCoTo = lazy(() => import("./pages/BlogLottieRiveCoTo"));
+
 // Wave 177: TanStack Table, Expo Router, Web Components
 const BlogTanstackTableCoTo = lazy(() => import("./pages/BlogTanstackTableCoTo"));
 const BlogExpoRouterCoTo = lazy(() => import("./pages/BlogExpoRouterCoTo"));
@@ -1374,6 +1379,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 178 */}
+                <Route path="/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024" element={<BlogRechartsCoTo />} />
+                <Route path="/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024" element={<BlogDndKitCoTo />} />
+                <Route path="/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024" element={<BlogLottieRiveCoTo />} />
                 {/* Wave 177 */}
                 <Route path="/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024" element={<BlogTanstackTableCoTo />} />
                 <Route path="/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024" element={<BlogExpoRouterCoTo />} />
