@@ -285,6 +285,12 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 20: Pozycjonowanie sklepu, branding, UI/UX, stomatolog, SEO e-commerce
+const BlogPozycjonowanieSklepu = lazy(() => import("./pages/BlogPozycjonowanieSklepu"));
+const BlogBrandingCoTo = lazy(() => import("./pages/BlogBrandingCoTo"));
+const BlogUIUXCoTo = lazy(() => import("./pages/BlogUIUXCoTo"));
+const StronaInternetowaDlaStomatologa = lazy(() => import("./pages/StronaInternetowaDlaStomatologa"));
+
 // Wave 19: Hosting, SSL, WordPress co to, domena, jak pozycjonować
 const BlogCoToJestHosting = lazy(() => import("./pages/BlogCoToJestHosting"));
 const BlogCertyfikatSSL = lazy(() => import("./pages/BlogCertyfikatSSL"));
@@ -588,6 +594,11 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 20 */}
+                <Route path="/blog/pozycjonowanie-sklepu-internetowego" element={<BlogPozycjonowanieSklepu />} />
+                <Route path="/blog/branding-co-to" element={<BlogBrandingCoTo />} />
+                <Route path="/blog/ui-ux-co-to" element={<BlogUIUXCoTo />} />
+                <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
                 <Route path="/blog/certyfikat-ssl-co-to" element={<BlogCertyfikatSSL />} />
