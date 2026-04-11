@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 58: E-E-A-T, Crawl Budget, UGC
+const BlogEEATCoTo = lazy(() => import("./pages/BlogEEATCoTo"));
+const BlogCrawlBudgetCoTo = lazy(() => import("./pages/BlogCrawlBudgetCoTo"));
+const BlogUGCCoTo = lazy(() => import("./pages/BlogUGCCoTo"));
+
 // Wave 57: XML Sitemap, Bounce Rate, Referral Marketing
 const BlogXMLSitemapCoTo = lazy(() => import("./pages/BlogXMLSitemapCoTo"));
 const BlogBounceRateCoTo = lazy(() => import("./pages/BlogBounceRateCoTo"));
@@ -778,6 +783,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 58 */}
+                <Route path="/blog/e-e-a-t-seo" element={<BlogEEATCoTo />} />
+                <Route path="/blog/crawl-budget-co-to" element={<BlogCrawlBudgetCoTo />} />
+                <Route path="/blog/ugc-co-to" element={<BlogUGCCoTo />} />
                 {/* Wave 57 */}
                 <Route path="/blog/xml-sitemap-co-to" element={<BlogXMLSitemapCoTo />} />
                 <Route path="/blog/bounce-rate-co-to" element={<BlogBounceRateCoTo />} />
