@@ -285,6 +285,9 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 48: Marketing Automation
+const BlogMarketingAutomationCoTo = lazy(() => import("./pages/BlogMarketingAutomationCoTo"));
+
 // Wave 47: Affiliate Marketing
 const BlogAffiliateMarketingCoTo = lazy(() => import("./pages/BlogAffiliateMarketingCoTo"));
 
@@ -735,6 +738,8 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 48 */}
+                <Route path="/blog/marketing-automation-co-to" element={<BlogMarketingAutomationCoTo />} />
                 {/* Wave 47 */}
                 <Route path="/blog/affiliate-marketing-co-to" element={<BlogAffiliateMarketingCoTo />} />
                 {/* Wave 46 */}
