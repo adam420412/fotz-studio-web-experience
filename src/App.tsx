@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 116: ARR, CAC, LTV
+const BlogArrCoToJest = lazy(() => import("./pages/BlogArrCoToJest"));
+const BlogCacCoToJest = lazy(() => import("./pages/BlogCacCoToJest"));
+const BlogLtvCoToJest = lazy(() => import("./pages/BlogLtvCoToJest"));
+
 // Wave 115: CSAT, Customer Health Score, Land & Expand
 const BlogCsatCoTo = lazy(() => import("./pages/BlogCsatCoTo"));
 const BlogCustomerHealthScoreCoTo = lazy(() => import("./pages/BlogCustomerHealthScoreCoTo"));
@@ -1066,6 +1071,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 116 */}
+                <Route path="/blog/arr-annual-recurring-revenue-co-to" element={<BlogArrCoToJest />} />
+                <Route path="/blog/cac-customer-acquisition-cost-co-to" element={<BlogCacCoToJest />} />
+                <Route path="/blog/ltv-customer-lifetime-value-co-to" element={<BlogLtvCoToJest />} />
                 {/* Wave 115 */}
                 <Route path="/blog/csat-customer-satisfaction-score-co-to" element={<BlogCsatCoTo />} />
                 <Route path="/blog/customer-health-score-co-to" element={<BlogCustomerHealthScoreCoTo />} />
