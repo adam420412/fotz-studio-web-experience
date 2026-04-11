@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 184: Storybook 8, Node.js Streams, JS ES2024 Proposals
+const BlogStorybook8CoTo = lazy(() => import("./pages/BlogStorybook8CoTo"));
+const BlogNodeStreamsCoTo = lazy(() => import("./pages/BlogNodeStreamsCoTo"));
+const BlogJsProposalsCoTo = lazy(() => import("./pages/BlogJsProposalsCoTo"));
+
 // Wave 183: Serverless Databases, TanStack Router, Effect.ts FP
 const BlogServerlessDbCoTo = lazy(() => import("./pages/BlogServerlessDbCoTo"));
 const BlogTanstackRouterCoTo = lazy(() => import("./pages/BlogTanstackRouterCoTo"));
@@ -1404,6 +1409,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 184 */}
+                <Route path="/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024" element={<BlogStorybook8CoTo />} />
+                <Route path="/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024" element={<BlogNodeStreamsCoTo />} />
+                <Route path="/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers" element={<BlogJsProposalsCoTo />} />
                 {/* Wave 183 */}
                 <Route path="/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024" element={<BlogServerlessDbCoTo />} />
                 <Route path="/blog/tanstack-router-react-router-v7-type-safe-routing-2024" element={<BlogTanstackRouterCoTo />} />
