@@ -265,6 +265,16 @@ const PozycjonowanieOlsztyn = lazy(() => import("./pages/PozycjonowanieOlsztyn")
 const AgencjaMarketingowaOpole = lazy(() => import("./pages/AgencjaMarketingowaOpole"));
 const AgencjaMarketingowaOlsztyn = lazy(() => import("./pages/AgencjaMarketingowaOlsztyn"));
 
+// Wave 10: Tworzenie stron city pages
+const TworzenieStronWarszawa = lazy(() => import("./pages/TworzenieStronWarszawa"));
+const TworzenieStronKrakow = lazy(() => import("./pages/TworzenieStronKrakow"));
+const TworzenieStronWroclaw = lazy(() => import("./pages/TworzenieStronWroclaw"));
+const TworzenieStronGdansk = lazy(() => import("./pages/TworzenieStronGdansk"));
+const TworzenieStronLodz = lazy(() => import("./pages/TworzenieStronLodz"));
+const TworzenieStronTorun = lazy(() => import("./pages/TworzenieStronTorun"));
+const TworzenieStronSzczecin = lazy(() => import("./pages/TworzenieStronSzczecin"));
+const BlogJakZalozycSklep = lazy(() => import("./pages/BlogJakZalozycSklep"));
+
 // Other service pages
 const IdentyfikacjaWizualna = lazy(() => import("./pages/IdentyfikacjaWizualna"));
 const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
@@ -481,6 +491,14 @@ const App = () => (
                 <Route path="/uslugi/pozycjonowanie/olsztyn" element={<PozycjonowanieOlsztyn />} />
                 <Route path="/uslugi/identyfikacja-wizualna" element={<UslugiIdentyfikacjaWizualna />} />
                 <Route path="/uslugi/tworzenie-stron-internetowych" element={<TworzenieStronInternetowych />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/warszawa" element={<TworzenieStronWarszawa />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/krakow" element={<TworzenieStronKrakow />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/wroclaw" element={<TworzenieStronWroclaw />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/gdansk" element={<TworzenieStronGdansk />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/lodz" element={<TworzenieStronLodz />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/torun" element={<TworzenieStronTorun />} />
+                <Route path="/uslugi/tworzenie-stron-internetowych/szczecin" element={<TworzenieStronSzczecin />} />
+                <Route path="/blog/jak-zalozyc-sklep-internetowy" element={<BlogJakZalozycSklep />} />
                 <Route path="/uslugi/projektowanie-stron-internetowych" element={<ProjektowanieStronInternetowych />} />
                 <Route path="/uslugi/strony-internetowe/lubelskie" element={<StronyInternetoweLubelskie />} />
                 <Route path="/uslugi/strony-internetowe/wielkopolska" element={<StronyInternetoweWielkopolska />} />
