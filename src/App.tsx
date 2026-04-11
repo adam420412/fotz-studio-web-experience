@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 135: Cap Table, SAFE Note, Vesting Schedule
+const BlogCapTableCoTo = lazy(() => import("./pages/BlogCapTableCoTo"));
+const BlogSafeNoteCoTo = lazy(() => import("./pages/BlogSafeNoteCoTo"));
+const BlogVestingScheduleCoTo = lazy(() => import("./pages/BlogVestingScheduleCoTo"));
+
 // Wave 134: Retention Curve, Headcount Planning, Data Room
 const BlogRetentionCurveCoTo = lazy(() => import("./pages/BlogRetentionCurveCoTo"));
 const BlogHeadcountPlanningCoTo = lazy(() => import("./pages/BlogHeadcountPlanningCoTo"));
@@ -1161,6 +1166,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 135 */}
+                <Route path="/blog/cap-table-tabela-kapitalizacji-co-to-jest" element={<BlogCapTableCoTo />} />
+                <Route path="/blog/safe-note-co-to-jest-jak-dziala-startup" element={<BlogSafeNoteCoTo />} />
+                <Route path="/blog/vesting-schedule-co-to-jest-equity-startup" element={<BlogVestingScheduleCoTo />} />
                 {/* Wave 134 */}
                 <Route path="/blog/retention-curve-krzywa-retencji-co-to-jest" element={<BlogRetentionCurveCoTo />} />
                 <Route path="/blog/headcount-planning-planowanie-zatrudnienia-startup" element={<BlogHeadcountPlanningCoTo />} />
