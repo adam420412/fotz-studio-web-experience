@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 73: Account-Based Marketing, Inbound Marketing, Outbound Marketing
+const BlogAccountBasedMarketingCoTo = lazy(() => import("./pages/BlogAccountBasedMarketingCoTo"));
+const BlogInboundMarketingCoTo = lazy(() => import("./pages/BlogInboundMarketingCoTo"));
+const BlogOutboundMarketingCoTo = lazy(() => import("./pages/BlogOutboundMarketingCoTo"));
+
 // Wave 72: Event Marketing, Brand Activation, Social Commerce
 const BlogEventMarketingCoTo = lazy(() => import("./pages/BlogEventMarketingCoTo"));
 const BlogBrandActivationCoTo = lazy(() => import("./pages/BlogBrandActivationCoTo"));
@@ -852,6 +857,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 73 */}
+                <Route path="/blog/account-based-marketing-co-to" element={<BlogAccountBasedMarketingCoTo />} />
+                <Route path="/blog/inbound-marketing-co-to" element={<BlogInboundMarketingCoTo />} />
+                <Route path="/blog/outbound-marketing-co-to" element={<BlogOutboundMarketingCoTo />} />
                 {/* Wave 72 */}
                 <Route path="/blog/event-marketing-co-to" element={<BlogEventMarketingCoTo />} />
                 <Route path="/blog/brand-activation-co-to" element={<BlogBrandActivationCoTo />} />
