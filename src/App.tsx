@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 169: NestJS, Hono/Fastify/Express, DI/SOLID/Patterns
+const BlogNestJsCoTo = lazy(() => import("./pages/BlogNestJsCoTo"));
+const BlogHonoFastifyCoTo = lazy(() => import("./pages/BlogHonoFastifyCoTo"));
+const BlogDiContainerCoTo = lazy(() => import("./pages/BlogDiContainerCoTo"));
+
 // Wave 168: Vue 3/Pinia/Nuxt, React Native/Expo, Angular Signals
 const BlogVue3CoTo = lazy(() => import("./pages/BlogVue3CoTo"));
 const BlogReactNativeExpoCoTo = lazy(() => import("./pages/BlogReactNativeExpoCoTo"));
@@ -1329,6 +1334,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 169 */}
+                <Route path="/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify" element={<BlogNestJsCoTo />} />
+                <Route path="/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024" element={<BlogHonoFastifyCoTo />} />
+                <Route path="/blog/dependency-injection-solid-design-patterns-typescript-nodejs" element={<BlogDiContainerCoTo />} />
                 {/* Wave 168 */}
                 <Route path="/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala" element={<BlogVue3CoTo />} />
                 <Route path="/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024" element={<BlogReactNativeExpoCoTo />} />
