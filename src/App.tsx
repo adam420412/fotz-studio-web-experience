@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 112: PostgreSQL, Elasticsearch, Kafka
+const BlogPostgresqlCoTo = lazy(() => import("./pages/BlogPostgresqlCoTo"));
+const BlogElasticsearchCoTo = lazy(() => import("./pages/BlogElasticsearchCoTo"));
+const BlogKafkaCoTo = lazy(() => import("./pages/BlogKafkaCoTo"));
+
 // Wave 111: Terraform, MongoDB, TypeScript
 const BlogTerraformCoTo = lazy(() => import("./pages/BlogTerraformCoTo"));
 const BlogMongodbCoTo = lazy(() => import("./pages/BlogMongodbCoTo"));
@@ -1046,6 +1051,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 112 */}
+                <Route path="/blog/postgresql-co-to-jest" element={<BlogPostgresqlCoTo />} />
+                <Route path="/blog/elasticsearch-co-to-jest" element={<BlogElasticsearchCoTo />} />
+                <Route path="/blog/kafka-co-to-jest" element={<BlogKafkaCoTo />} />
                 {/* Wave 111 */}
                 <Route path="/blog/terraform-co-to-jest" element={<BlogTerraformCoTo />} />
                 <Route path="/blog/mongodb-co-to-jest" element={<BlogMongodbCoTo />} />
