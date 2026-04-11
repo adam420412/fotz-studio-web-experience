@@ -285,6 +285,11 @@ const AgencjaSEOWarszawa = lazy(() => import("./pages/AgencjaSEOWarszawa"));
 const BlogDropshippingPolska = lazy(() => import("./pages/BlogDropshippingPolska"));
 const BlogReklamaWGoogle = lazy(() => import("./pages/BlogReklamaWGoogle"));
 
+// Wave 34: Growth Hacking, Retargeting, Lead Generation
+const BlogGrowthHackingCoTo = lazy(() => import("./pages/BlogGrowthHackingCoTo"));
+const BlogRetargetingCoTo = lazy(() => import("./pages/BlogRetargetingCoTo"));
+const BlogLeadGenerationCoTo = lazy(() => import("./pages/BlogLeadGenerationCoTo"));
+
 // Wave 33: Umowa B2B, CEIDG
 const BlogUmowaBCoToJest = lazy(() => import("./pages/BlogUmowaBCoToJest"));
 const BlogCEIDGCoToJest = lazy(() => import("./pages/BlogCEIDGCoToJest"));
@@ -670,6 +675,10 @@ const App = () => (
                 <Route path="/uslugi/tworzenie-stron-internetowych/bialystok" element={<TworzenieStronBialystok />} />
                 <Route path="/blog/jak-sprzedawac-w-internecie" element={<BlogJakSprzedawacWInternecie />} />
                 <Route path="/uslugi/audyt-seo" element={<AudytSEO />} />
+                {/* Wave 34 */}
+                <Route path="/blog/growth-hacking-co-to" element={<BlogGrowthHackingCoTo />} />
+                <Route path="/blog/retargeting-co-to" element={<BlogRetargetingCoTo />} />
+                <Route path="/blog/lead-generation-co-to" element={<BlogLeadGenerationCoTo />} />
                 {/* Wave 33 */}
                 <Route path="/blog/umowa-b2b-co-to-jest" element={<BlogUmowaBCoToJest />} />
                 <Route path="/blog/ceidg-co-to-jest" element={<BlogCEIDGCoToJest />} />
