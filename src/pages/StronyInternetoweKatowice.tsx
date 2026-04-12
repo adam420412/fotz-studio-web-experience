@@ -138,7 +138,7 @@ const StronyInternetoweKatowice = () => {
         title="Strony Internetowe Katowice | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Katowice — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Katowic. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/katowice"
-        keywords="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice"
+        keywords="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice, wykonanie strony internetowej katowice, responsywna strona www katowice, wordpress katowice, strony internetowe śląsk"
       />
       
       <ServiceSchema 
@@ -188,10 +188,9 @@ const StronyInternetoweKatowice = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-                W dzisiejszych czasach <strong>strona internetowa to podstawa dla każdej firmy</strong>. 
-                Szczególnie w dynamicznie rozwijających się miastach, takich jak Katowice, obecność online jest kluczowa dla sukcesu. 
-                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline"> Tworzenie stron www</Link> to inwestycja, 
-                która przynosi wymierne korzyści.
+                W dzisiejszych czasach <strong>strona internetowa to podstawa dla każdej firmy</strong>.
+                Szczególnie w dynamicznie rozwijających się miastach, takich jak Katowice i cały Śląsk, obecność online jest kluczowa dla sukcesu.
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">Tworzenie stron www Katowice</Link> — responsywne strony internetowe i wykonanie strony w WordPress lub React to inwestycja, która przynosi wymierne korzyści.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">

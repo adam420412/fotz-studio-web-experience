@@ -90,7 +90,7 @@ const StronyInternetoweWroclaw = () => {
         title="Strony Internetowe Wrocław | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Wrocław — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wrocławia. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/wroclaw"
-        keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław"
+        keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław, wykonanie strony internetowej wrocław, responsywna strona www wrocław, wordpress wrocław, nowoczesne strony www wrocław, agencja stron internetowych wrocław"
       />
       
       <ServiceSchema name="Strony Internetowe Wrocław" description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia." provider="FOTZ Studio" areaServed="Wrocław" />
@@ -124,7 +124,7 @@ const StronyInternetoweWroclaw = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla wrocławskich firm.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Wrocław w React, Next.js i WordPress. Projektowanie stron Wrocław dla firm, które chcą wyróżnić się w Google.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

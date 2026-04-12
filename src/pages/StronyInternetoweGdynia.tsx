@@ -142,7 +142,7 @@ const StronyInternetoweGdynia = () => {
         title="Strony Internetowe Gdynia | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Gdynia — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gdyni. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gdynia"
-        keywords="strony internetowe gdynia, tworzenie stron www gdynia, projektowanie stron gdynia, sklepy internetowe gdynia, strona www gdynia, www gdynia, strony trójmiasto"
+        keywords="strony internetowe gdynia, tworzenie stron www gdynia, projektowanie stron gdynia, sklepy internetowe gdynia, strona www gdynia, www gdynia, strony trójmiasto, wykonanie strony internetowej gdynia, responsywna strona www gdynia, wordpress gdynia, strony internetowe trójmiasto"
       />
 
       <ServiceSchema
@@ -194,8 +194,7 @@ const StronyInternetoweGdynia = () => {
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
                 <strong>Profesjonalna strona internetowa to kluczowy element sukcesu każdego biznesu w Trójmieście.</strong> Niezależnie od tego,
                 czy prowadzisz małą firmę w Gdyni, sklep online czy agencję, Twoja strona www jest wizytówką w sieci.
-                Zajmujemy się <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzeniem stron internetowych</Link>, które
-                nie tylko wyglądają estetycznie, ale przede wszystkim są funkcjonalne i skuteczne w pozyskiwaniu klientów.
+                Zajmujemy się <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzeniem stron internetowych Gdynia</Link> — responsywne strony www, nowoczesne strony internetowe i wykonanie strony w WordPress lub React dla firm z całego Trójmiasta.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">

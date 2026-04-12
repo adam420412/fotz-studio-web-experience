@@ -160,10 +160,11 @@ export default function AgencjaMarketingowaPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Poznań | FOTZ – Marketing Dla Firm w Poznaniu"
-        description="Agencja marketingowa Poznań ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Poznania i Wielkopolski. Bezpłatna wycena!"
+        title="Agencja Marketingowa Poznań | FOTZ – Marketing Internetowy dla Firm"
+        description="Agencja marketingowa Poznań ✓ SEO, Google Ads, Social Media, strony WWW. Marketing internetowy i reklama internetowa dla firm z Poznania i Wielkopolski. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/poznan"
         ogImage="https://fotz.pl/og-poznan.jpg"
+        keywords="agencja marketingowa poznań, marketing internetowy poznań, agencja reklamowa poznań, seo poznań, google ads poznań, firma marketingowa poznań, reklama internetowa poznań, marketing dla firm poznań"
       />
 
       <BreadcrumbSchema
@@ -189,11 +190,10 @@ export default function AgencjaMarketingowaPoznan() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Agencja Marketingowa Poznań
+                Agencja Marketingowa Poznań — marketing internetowy dla firm
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                SEO, Google Ads, Social Media i strony WWW dla firm z Poznania i Wielkopolski.
-                Ponad 200 projektów, 8 lat doświadczenia, 97% zadowolonych klientów.
+                Agencja reklamowa Poznań z kompleksową ofertą: SEO, Google Ads, Social Media i strony WWW. Marketing internetowy Poznań — ponad 200 projektów dla firm z Poznania i Wielkopolski, 8 lat doświadczenia, 97% zadowolonych klientów.
               </p>
               <div className="flex gap-4">
                 <Link to="/kontakt">
@@ -241,13 +241,13 @@ export default function AgencjaMarketingowaPoznan() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold mb-6">
-                Poznań - Miasto Biznesu i Przedsiębiorczości
+                Agencja Marketingowa dla Firm z Całego Poznania i Wielkopolski
               </h2>
               <p className="text-gray-700 mb-4">
-                Poznań to jedno z największych i najbogatszych miast w Polsce. Siedziba Międzynarodowych Targów Poznańskich (MTP) przyciąga przedsiębiorców z całego świata.
+                Poznań to jedno z największych i najbogatszych miast w Polsce. Siedziba Międzynarodowych Targów Poznańskich (MTP) przyciąga przedsiębiorców z całego świata. Firma marketingowa Fotz to Twój lokalny partner w marketingu internetowym Poznań.
               </p>
               <p className="text-gray-700 mb-6">
-                Nasza agencja zna specyficzne wyzwania rynku poznańskiego i potrafi skutecznie pozycjonować firmy w konkurencyjnym środowisku.
+                Nasza agencja reklamowa Poznań zna specyficzne wyzwania rynku poznańskiego i potrafi skutecznie pozycjonować firmy w konkurencyjnym środowisku. Oferujemy pełne strategie marketingowe, kampanie reklamowe online oraz pozycjonowanie SEO Poznań.
               </p>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
@@ -289,9 +289,9 @@ export default function AgencjaMarketingowaPoznan() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nasze Usługi Marketingowe</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nasze Usługi Marketingowe w Poznaniu</h2>
             <p className="text-xl text-gray-600">
-              Kompleksowe rozwiązania dla firm z Poznania
+              Kompleksowe rozwiązania marketingowe i reklama internetowa dla firm z Poznania i Wielkopolski
             </p>
           </div>
 
@@ -384,7 +384,7 @@ export default function AgencjaMarketingowaPoznan() {
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Dlaczego My?
+            Dlaczego Fotz — Twoja Agencja Reklamowa w Poznaniu?
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -455,10 +455,10 @@ export default function AgencjaMarketingowaPoznan() {
       <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Gotowy Na Zmianę?
+            Zacznij marketing internetowy Poznań — bezpłatna wycena!
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Skontaktuj się z nami już dzisiaj i otrzymaj bezpłatną konsultację oraz wycenę dla Twojej firmy.
+            Skontaktuj się z naszą agencją marketingową w Poznaniu już dzisiaj i otrzymaj bezpłatną konsultację oraz wycenę dla Twojej firmy. Reklama internetowa, SEO Poznań i Google Ads — wszystko w jednym miejscu.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/kontakt">

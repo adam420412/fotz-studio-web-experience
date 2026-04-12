@@ -90,7 +90,7 @@ const StronyInternetoweSzczecin = () => {
         title="Strony Internetowe Szczecin | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Szczecin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Szczecina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/szczecin"
-        keywords="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin"
+        keywords="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin, wykonanie strony internetowej szczecin, responsywna strona www szczecin, wordpress szczecin, nowoczesne strony www szczecin, agencja stron internetowych szczecin"
       />
       
       <ServiceSchema name="Strony Internetowe Szczecin" description="Profesjonalne tworzenie stron internetowych dla firm ze Szczecina." provider="FOTZ Studio" areaServed="Szczecin" />
@@ -124,7 +124,7 @@ const StronyInternetoweSzczecin = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla szczecińskich firm.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Szczecin w React, Next.js i WordPress. Projektowanie stron Szczecin dla firm gotowych na sukces w Google.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

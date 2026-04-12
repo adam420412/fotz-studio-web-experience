@@ -140,9 +140,10 @@ const YouTubeAds = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="YouTube Ads — Reklama na YouTube dla Firm | Video Advertising | Fotz Studio"
-        description="YouTube Ads — kampanie wideo na YouTube: TrueView, bumper ads, discovery. Skuteczna reklama wideo dla firm. Fotz Studio."
+        title="YouTube Ads Warszawa — Reklama Wideo na YouTube dla Firm | Fotz Studio"
+        description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads — skuteczna reklama wideo od 2000 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/youtube-ads"
+        keywords="youtube ads warszawa, reklama na youtube, kampanie youtube, youtube advertising, agencja youtube ads, reklamy wideo warszawa, video marketing"
       />
       <ServiceSchema
         name="YouTube Ads - Reklamy wideo"
@@ -173,15 +174,15 @@ const YouTubeAds = () => {
               YouTube Ads
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-              Reklamy wideo,
+              YouTube Ads Warszawa —
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">
-                które budują markę
+                reklama wideo dla Twojej firmy
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Docieraj do miliardów użytkowników YouTube dzięki profesjonalnym kampaniom wideo. 
-              Od strategii, przez produkcję, po optymalizację.
+              Kampanie YouTube Ads (YouTube Advertising) dla firm z Warszawy i całej Polski.
+              Od strategii i produkcji wideo, przez konfigurację w Google Ads, po codzienną optymalizację i mierzalne wyniki.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -498,11 +499,11 @@ const YouTubeAds = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">YouTube Ads — reklama wideo na YouTube i video marketing dla firm</h2>
-            <p className="text-muted-foreground mb-4">YouTube Ads to platforma reklamowa Google umożliwiająca wyświetlanie reklam wideo przed, w trakcie i po filmach na YouTube. To druga największa wyszukiwarka na świecie — z ponad 2 miliardami użytkowników miesięcznie. Kampanie YouTube Ads są zarządzane przez Google Ads, co daje dostęp do precyzyjnych możliwości targetowania Google.</p>
-            <p className="text-muted-foreground mb-6">Formaty YouTube Ads: TrueView In-Stream (reklamy z możliwością pominięcia po 5 sek.), Non-Skippable In-Stream (obowiązkowe do 15 sek.), Bumper Ads (6 sek., krótkie, niemożliwe do pominięcia), Video Discovery Ads (w wynikach wyszukiwania YouTube) i Masthead (na stronie głównej YouTube). Tworzenie reklam wideo na YouTube to element video marketingu dla firm.</p>
-            <h2 className="text-3xl font-heading font-bold mb-6">YouTube Ads a spoty reklamowe — produkcja wideo na kampanie</h2>
-            <p className="text-muted-foreground">Skuteczna reklama na YouTube wymaga profesjonalnie wyprodukowanych materiałów wideo. Spoty reklamowe do YouTube powinny przykuć uwagę w pierwszych 5 sekundach (nim użytkownik pominie reklamę). Produkcja filmów reklamowych, animacji i spotów — od scenariusza po montaż — to pełny zakres usług Fotz Studio. Reklamy wideo na YouTube w połączeniu z kampaniami w sieci Google tworzą kompleksową strategię video advertisingu.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">YouTube Ads Warszawa — reklama wideo na YouTube i video marketing dla firm</h2>
+            <p className="text-muted-foreground mb-4">YouTube Ads Warszawa to kampanie reklamowe wideo w Google Ads dla firm, które chcą dotrzeć do warszawskich odbiorców. YouTube to druga największa wyszukiwarka na świecie — z ponad 2 miliardami użytkowników miesięcznie. Kampanie YouTube Ads zarządzane są przez Google Ads, co daje dostęp do danych Google o intencjach użytkowników i precyzyjnego targetowania geograficznego — możesz targetować tylko Warszawę, Mazowsze lub całą Polskę.</p>
+            <p className="text-muted-foreground mb-6">Formaty YouTube Ads: TrueView In-Stream (reklamy z możliwością pominięcia po 5 sek., model CPV — płacisz za obejrzenie), Non-Skippable In-Stream (obowiązkowe do 15 sek.), Bumper Ads (6 sek., niemożliwe do pominięcia, świetne do budowania świadomości marki), Video Discovery Ads (w wynikach wyszukiwania YouTube — widoczne dla użytkowników szukających Twoich usług) i Masthead (na stronie głównej YouTube). YouTube Advertising jest ważnym elementem video marketingu dla firm w Warszawie.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja YouTube Ads Warszawa — produkcja wideo i zarządzanie kampaniami</h2>
+            <p className="text-muted-foreground">Skuteczna reklama na YouTube wymaga profesjonalnie wyprodukowanych materiałów wideo. Spoty reklamowe do YouTube powinny przykuć uwagę w pierwszych 5 sekundach (nim użytkownik pominie reklamę). Produkcja filmów reklamowych, animacji i spotów — od scenariusza po montaż — to pełny zakres Fotz Studio jako agencji YouTube Ads w Warszawie. Reklamy wideo na YouTube w połączeniu z kampaniami Google Ads tworzą kompleksową strategię video advertisingu dla Twojej firmy w stolicy.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>

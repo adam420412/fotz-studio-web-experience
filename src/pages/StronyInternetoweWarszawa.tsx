@@ -177,7 +177,7 @@ const StronyInternetoweWarszawa = () => {
         title="Strony Internetowe Warszawa | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Warszawa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Warszawy. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/warszawa"
-        keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa"
+        keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa, wykonanie strony internetowej warszawa, responsywna strona www warszawa, wordpress warszawa, nowoczesne strony www warszawa, agencja stron internetowych warszawa"
       />
       
       <ServiceSchema 
@@ -283,7 +283,7 @@ const StronyInternetoweWarszawa = () => {
                 className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-4"
               >
                 <strong className="text-foreground">Na konkurencyjnym rynku warszawskim liczy się każdy detal.</strong>{" "}
-                Tworzymy strony www, które wyróżniają Twoją firmę i skutecznie pozyskują klientów.
+                Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Warszawa w technologiach React, Next.js i WordPress, które wyróżniają Twoją firmę i skutecznie pozyskują klientów.
               </motion.p>
 
               <motion.div 
@@ -458,8 +458,8 @@ const StronyInternetoweWarszawa = () => {
               Obsługujemy zarówno duże firmy, jak i freelancerów czy małe biznesy z Woli, Mokotowa,
               Ursynowa czy Pragi. Każdą stronę internetową projektujemy indywidualnie — bez gotowych
               szablonów, bez powtarzających się układów. Strony dla firm z Warszawy budujemy
-              w technologiach React i Next.js, które zapewniają błyskawiczne ładowanie i doskonałą
-              optymalizację pod algorytmy Google.
+              w technologiach React, Next.js i WordPress Warszawa, które zapewniają błyskawiczne ładowanie i doskonałą
+              optymalizację pod algorytmy Google. Nowoczesna strona www to fundament skutecznego marketingu online.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">

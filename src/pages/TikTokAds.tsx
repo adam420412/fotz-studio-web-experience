@@ -162,10 +162,10 @@ const TikTokAds = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="TikTok Ads — Reklama na TikToku dla Firm | Kampanie TikTok | Fotz Studio"
-        description="TikTok Ads — tworzenie i prowadzenie reklam na TikToku. In-Feed Ads, TopView, Branded Effects. Skuteczne kampanie dla firm na TikToku. Fotz Studio."
+        title="Agencja TikTok Ads — Reklamy na TikToku dla Firm | Fotz Studio"
+        description="Agencja TikTok Ads ✓ Tworzenie i prowadzenie kampanii na TikToku. In-Feed Ads, Spark Ads, TopView, TikTok for Business. Skuteczne reklamy TikTok. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/tiktok-ads"
-        keywords="TikTok Ads, reklamy TikTok, kampanie TikTok, marketing TikTok, agencja TikTok Ads Poznań"
+        keywords="agencja tiktok ads, tiktok ads, reklamy tiktok, kampanie tiktok, tiktok ads manager, tiktok for business, tiktok pixel, in-feed ads"
       />
       <ServiceSchema
         name="TikTok Ads - Kampanie reklamowe"
@@ -196,15 +196,15 @@ const TikTokAds = () => {
               TikTok Ads
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-              Reklamy na TikToku,
+              Agencja TikTok Ads —
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500">
-                które zatrzymują scroll
+                reklamy, które zatrzymują scroll
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Docieraj do młodych odbiorców na najszybciej rosnącej platformie social media. 
-              Tworzymy viralowe treści, które sprzedają.
+              Prowadzimy kampanie TikTok Ads dla firm przez TikTok for Business i TikTok Ads Manager.
+              Tworzymy viralowe kreacje wideo, In-Feed Ads i Spark Ads, które docierają do Twojej grupy docelowej i generują realne konwersje.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -490,11 +490,11 @@ const TikTokAds = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">TikTok Ads — reklama na TikToku i kampanie marketingowe</h2>
-            <p className="text-muted-foreground mb-4">TikTok Ads to platforma reklamowa TikToka — jednej z najszybciej rosnących platform społecznościowych na świecie. Reklama na TikToku dociera do młodych, zaangażowanych odbiorców (głównie Z i Millennialsi), ale platforma dynamicznie się demograficznie rozszerza. Formaty TikTok Ads: In-Feed Ads (w feedzie "Dla Ciebie"), TopView (pierwsza reklama przy otwarciu apki), Brand Takeover i Branded Hashtag Challenge.</p>
-            <p className="text-muted-foreground mb-6">TikTok preferuje treści autentyczne i natywne — reklamy, które wyglądają jak organiczne wideo, osiągają znacznie lepsze wyniki. Tworzenie rolek pod social media i TikToka wymaga rozumienia kultury platformy: trendy, dźwięki, filtry i challenge. Dobra reklama TikTok to taka, którą użytkownicy chcą oglądać — nie przewijają.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja TikTok Ads — reklama na TikToku i kampanie marketingowe</h2>
+            <p className="text-muted-foreground mb-4">Agencja TikTok Ads Fotz Studio to specjaliści od kampanii na TikTok for Business dla firm B2C i e-commerce w Polsce. TikTok to jedna z najszybciej rosnących platform społecznościowych na świecie — reklamy TikTok docierają do zaangażowanych odbiorców (głównie Gen Z i Millennialsi). Formaty TikTok Ads: In-Feed Ads (w feedzie "Dla Ciebie"), Spark Ads (promocja treści organicznych), TopView (pierwsza reklama przy otwarciu aplikacji), Brand Takeover i Branded Hashtag Challenge. TikTok Pixel umożliwia śledzenie konwersji i budowanie custom audiences.</p>
+            <p className="text-muted-foreground mb-6">TikTok preferuje treści autentyczne i natywne — reklamy wyglądające jak organiczne wideo osiągają znacznie lepsze wyniki. Tworzenie kreacji pod TikToka wymaga rozumienia kultury platformy: trendy, dźwięki, filtry i challenge. Dobra reklama TikTok to taka, którą użytkownicy chcą oglądać. Zarządzamy kampaniami przez TikTok Ads Manager, monitorując CPM, CTR, CPC i ROAS każdej kampanii.</p>
             <h2 className="text-3xl font-heading font-bold mb-6">Kampanie TikTok — jak reklamować firmę na TikToku?</h2>
-            <p className="text-muted-foreground">TikTok for Business (TikTok Ads Manager) oferuje możliwości targetowania podobne do Meta — zainteresowania, demografika, custom audiences. Reklama na TikTok biznes coraz częściej staje się elementem mediamixu firm B2C, szczególnie w branży e-commerce, beauty, fashion i gastronomii. Video content marketing na TikToku może viralowo zwiększyć świadomość marki przy niskich kosztach — jeśli content trafia w trendy.</p>
+            <p className="text-muted-foreground">TikTok for Business oferuje targetowanie podobne do Meta — zainteresowania, demografika, lookalike audiences i retargeting przez TikTok Pixel. Reklama na TikTok biznes staje się coraz ważniejszym elementem mediamixu firm B2C, szczególnie w e-commerce, beauty, fashion i gastronomii. Jako agencja TikTok Ads oferujemy pełną obsługę: od strategii kreatywnej i produkcji wideo, przez konfigurację kampanii w TikTok Ads Manager, po optymalizację i raportowanie wyników.</p>
           
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>

@@ -90,7 +90,7 @@ const StronyInternetoweGdansk = () => {
         title="Strony Internetowe Gdańsk | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Gdańsk — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gdańska. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gdansk"
-        keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk"
+        keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk, wykonanie strony internetowej gdańsk, responsywna strona www gdańsk, wordpress gdańsk, strony internetowe trójmiasto, agencja stron internetowych gdańsk"
       />
       
       <ServiceSchema name="Strony Internetowe Gdańsk" description="Profesjonalne tworzenie stron internetowych dla firm z Gdańska i Trójmiasta." provider="FOTZ Studio" areaServed="Gdańsk" />
@@ -124,7 +124,7 @@ const StronyInternetoweGdansk = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla firm z Trójmiasta.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Gdańsk i Trójmiasto w React, Next.js i WordPress. Projektowanie stron Gdańsk dla firm gotowych na sukces w Google.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

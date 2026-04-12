@@ -22,7 +22,7 @@ export default function FacebookAdsWarszawa() {
     },
     {
       question: "Czy potrzebuję Pixel Facebooka (Meta Pixel) do kampanii?",
-      answer: "Tak — Meta Pixel jest kluczowy dla efektywnych kampanii. Instalujemy pixel na Twojej stronie, aby śledzić konwersje, budować audience retargeting i wspierać AI Facebooka w znalezeniu nowych klientów. Pixel pozwala także na precise audience targeting: ludzie, którzy odwiedzili Twoją stronę, zainteresowali się produktami, ale nie kupili. To retargeting — i działa bardzo dobrze.",
+      answer: "Tak — Meta Pixel (piksel Facebooka) jest kluczowy dla efektywnych kampanii. Instalujemy pixel na Twojej stronie, aby śledzić konwersje, budować grupy niestandardowych odbiorców do retargetingu i wspierać AI Facebooka w znalezeniu nowych klientów. Pixel pozwala na precyzyjne targetowanie: docierasz do osób, które odwiedziły Twoją stronę, zainteresowały się produktami, ale jeszcze nie kupiły. To retargeting — i działa bardzo dobrze. Wszystko zarządzane jest przez Facebook Business Manager (Menedżer Reklam Meta).",
     },
     {
       question: "Jakie jest CPM i CPC na Facebook/Instagram w Warszawie?",
@@ -47,9 +47,9 @@ export default function FacebookAdsWarszawa() {
       <Layout>
         <SEOHead
           title="Agencja Facebook Ads Warszawa — reklamy Meta dla firm | Fotz.pl"
-          description="Facebook Ads Warszawa ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści, wyniki od 48h. Bezpłatna konsultacja!"
+          description="Facebook Ads Warszawa ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści Meta, skuteczne reklamy na Facebooku. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/facebook-ads/warszawa"
-          keywords="facebook ads warszawa, meta ads warszawa, instagram ads warszawa, reklamy facebook, kampanie meta"
+          keywords="facebook ads warszawa, meta ads warszawa, instagram ads warszawa, reklamy facebook, reklamy na facebooku, kampanie meta, agencja facebook ads warszawa"
         />
 
         <ServiceSchema
@@ -129,16 +129,16 @@ export default function FacebookAdsWarszawa() {
                 </h2>
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p>
-                    Warszawa to 1,8 miliona mieszkańców, z czego ponad 80% aktywnie korzysta z Facebooka i Instagrama codziennie. To naturalny rynek do testowania kampanii dla całego kraju, a Facebook Ads oferuje najlepsze targeting dla warszawskiego segmentu.
+                    Warszawa to 1,8 miliona mieszkańców, z czego ponad 80% aktywnie korzysta z Facebooka i Instagrama codziennie. To naturalny rynek do testowania kampanii dla całego kraju, a reklamy na Facebooku oferują najlepsze targetowanie dla warszawskiego segmentu.
                   </p>
                   <p>
-                    Facebook i Instagram są najskuteczniejsze dla e-commerce, restauracji, usług Beauty/SPA, nieruchomości i handlu lokalnego. W Warszawie, gdzie średnia płaca jest wysoka i ludzie mają pieniądze na zakupy, Facebook Ads generuje sprzedaż szybciej niż SEO lub Google Ads.
+                    Facebook i Instagram są najskuteczniejsze dla e-commerce, restauracji, usług Beauty/SPA, nieruchomości i handlu lokalnego. W Warszawie, gdzie średnia płaca jest wysoka i ludzie mają pieniądze na zakupy, skuteczna kampania reklamowa na Facebooku generuje sprzedaż szybciej niż SEO lub Google Ads.
                   </p>
                   <p>
-                    Pixel Facebooka umożliwia precyzyjny retargeting — reklamy dla osób, które już widziały Twoją stronę lub produkt. Konwersja z retargeting jest 3-5x wyższa niż z kampanii prospecting, a koszt za konwersję jest znacznie niższy.
+                    Pixel Facebooka (Meta Pixel) umożliwia precyzyjny retargeting — reklamy dla osób, które już widziały Twoją stronę lub produkt. Konwersja z retargetingu jest 3-5x wyższa niż z kampanii prospectingowych, a koszt za konwersję jest znacznie niższy. Właściwy cel reklamowy — konwersje, leady czy zasięg — decyduje o efektywności każdej kampanii.
                   </p>
                   <p>
-                    Algorytm Meta (Facebook, Instagram, Messenger) automatycznie znajduje ludzi zainteresowanych Twoimi produktami — nie musisz sam wybiór ręcznie. AI-driven optimization oznacza, że kampania jest coraz bardziej efektywna każdego dnia.
+                    Algorytm Meta (Facebook, Instagram, Messenger) automatycznie tworzy grupy niestandardowych odbiorców i znajduje ludzi zainteresowanych Twoimi produktami — nie musisz nic robić ręcznie. AI-driven optimization z Facebook Business Managera oznacza, że kampania jest coraz bardziej efektywna każdego dnia.
                   </p>
                 </div>
               </div>
@@ -219,9 +219,9 @@ export default function FacebookAdsWarszawa() {
                     <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">2</div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Setup Pixel &amp; Audience</h3>
+                    <h3 className="text-xl font-bold mb-2">Setup Pixel, Menedżer Reklam &amp; Audience</h3>
                     <p className="text-muted-foreground">
-                      Instalujemy Meta Pixel na Twojej stronie, definiujemy konwersje (zakup, contact, lead). Tworzymy Custom Audience (już istniejący klienci), Lookalike Audience (nowi ludzie podobni do klientów), retargeting segments dla remarketing kampanii.
+                      Instalujemy Meta Pixel na Twojej stronie i konfigurujemy Facebook Business Manager. Definiujemy konwersje (zakup, kontakt, lead) oraz cel reklamowy. Tworzymy grupy niestandardowych odbiorców (już istniejący klienci), Lookalike Audience (nowi ludzie podobni do Twoich klientów) i segmenty retargetingowe dla kampanii remarketingowych.
                     </p>
                   </div>
                 </div>
@@ -230,9 +230,9 @@ export default function FacebookAdsWarszawa() {
                     <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">3</div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Kreatywne (Copy &amp; Design)</h3>
+                    <h3 className="text-xl font-bold mb-2">Kreacje reklamowe (Copy &amp; Design)</h3>
                     <p className="text-muted-foreground">
-                      Tworzymy copy (teksty reklam) i visual creative (zdjęcia/wideo) dla każdego segmentu. A/B testujemy wiele wariantów — różne headlines, call-to-actions, obrazy. Meta AI pomaga nam znaleźć najlepsze kombinacje.
+                      Tworzymy copy (teksty reklam) i kreacje reklamowe (zdjęcia/wideo) dla każdego segmentu odbiorców. A/B testujemy wiele wariantów — różne nagłówki, call-to-actions, obrazy. Menedżer reklam Meta AI pomaga nam znaleźć najlepsze kombinacje kreacji dla Twojej branży.
                     </p>
                   </div>
                 </div>
@@ -378,6 +378,42 @@ export default function FacebookAdsWarszawa() {
           </section>
         </FadeInView>
 
+        {/* Targeting Section */}
+        <FadeInView>
+          <section className="py-16 md:py-24 bg-background">
+            <div className="container px-4">
+              <div className="max-w-3xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                  Targetowanie reklam na Facebooku w Warszawie
+                </h2>
+                <div className="space-y-6 text-lg text-muted-foreground">
+                  <p>
+                    Skuteczna kampania reklamowa na Facebooku zaczyna się od właściwego targetowania. Menedżer reklam Meta oferuje kilka typów grup odbiorców, które dobieramy dla każdego klienta indywidualnie.
+                  </p>
+                  <div className="grid md:grid-cols-2 gap-4 mt-6">
+                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
+                      <h3 className="font-bold mb-2 text-foreground">Grupy niestandardowych odbiorców</h3>
+                      <p className="text-base">Targetowanie osób, które już interagowały z Twoją firmą — odwiedziły stronę (piksel Facebooka), kupiły produkt lub są na liście CRM. Najwyższa konwersja z wszystkich typów odbiorców.</p>
+                    </div>
+                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
+                      <h3 className="font-bold mb-2 text-foreground">Lookalike Audience</h3>
+                      <p className="text-base">Meta tworzy grupę nowych użytkowników podobnych do Twoich obecnych klientów. Doskonałe narzędzie do skalowania kampanii poza retargeting na zupełnie nowych odbiorców w Warszawie.</p>
+                    </div>
+                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
+                      <h3 className="font-bold mb-2 text-foreground">Targetowanie zainteresowań</h3>
+                      <p className="text-base">Docierasz do osób zainteresowanych konkretnymi tematami, markami lub aktywnościami. Świetne do kampanii zasięgowych i budowania świadomości marki w Warszawie.</p>
+                    </div>
+                    <div className="bg-secondary/30 rounded-lg p-5 border border-border">
+                      <h3 className="font-bold mb-2 text-foreground">Cel reklamowy a konwersje</h3>
+                      <p className="text-base">Dobieramy cel reklamowy (konwersje, ruch, leady, zasięg) do etapu lejka sprzedażowego. Właściwy cel to podstawa — zły cel powoduje, że algorytm Meta optymalizuje się pod złe zdarzenia.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
         {/* Why Fotz Studio */}
         <FadeInView>
           <section className="py-16 md:py-24 bg-secondary/30">
@@ -387,9 +423,9 @@ export default function FacebookAdsWarszawa() {
               </h2>
               <div className="max-w-3xl mx-auto space-y-6">
                 <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Certyfikowani Meta Partners</h3>
+                  <h3 className="text-xl font-bold mb-2">Certyfikowani Meta Partners — specjaliści Facebook Ads</h3>
                   <p className="text-muted-foreground">
-                    Nasi specjaliści są certyfikowani przez Meta (Facebook Blueprint). Mamy dostęp do beta features, advanced audience targeting tools i najnowszych algorytmów Meta AI.
+                    Nasi specjaliści Facebook Ads są certyfikowani przez Meta (Facebook Blueprint). Mamy dostęp do beta features, zaawansowanych narzędzi targetowania, najnowszych algorytmów Meta AI i wsparcia dedykowanego opiekuna Meta w Polsce.
                   </p>
                 </div>
                 <div className="bg-background rounded-lg border border-border p-6">
@@ -446,10 +482,10 @@ export default function FacebookAdsWarszawa() {
             <div className="container px-4">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  Uruchom kampanie Facebook Ads w Warszawie
+                  Uruchom skuteczne reklamy na Facebooku w Warszawie
                 </h2>
                 <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię dla Twojej branży. Wyniki od 48h.
+                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię kampanii Meta Ads dla Twojej branży. Wyniki od 48h — mierzony ROAS i realne konwersje.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link

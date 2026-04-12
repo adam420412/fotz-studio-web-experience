@@ -274,7 +274,7 @@ const SocialMedia = () => {
         title="Obsługa i Prowadzenie Social Media Facebook Instagram - Cennik | Fotz Studio"
         description="Obsługa social media dla firm — prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie Facebook Ads. Cennik prowadzenia social media od…"
         canonical="https://fotz.pl/social-media"
-        keywords="obsługa social media, prowadzenie social media, agencja social media, prowadzenie facebooka, prowadzenie instagrama, cennik social media, social media marketing"
+        keywords="obsługa social media, prowadzenie social media, agencja social media, prowadzenie facebooka, prowadzenie instagrama, community management, cennik social media, social media marketing, zarządzanie social media"
       />
       
       <ServiceSchema 
@@ -983,7 +983,7 @@ const SocialMedia = () => {
                   Prowadzenie social media — co obejmuje profesjonalna obsługa social media?
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Prowadzenie social media twojej firmy to znacznie więcej niż publikowanie postów. Profesjonalna obsługa social media obejmuje: strategię komunikacji, tworzenie contentu (grafiki, wideo, copywriting), zarządzanie społecznością, kampanie reklamowe (Facebook Ads, Instagram Ads) i raportowanie wyników. Social media manager prowadzący Twoje kanały dba o harmonogram publikacji, odpowiadanie na komentarze i monitoring konkurencji. Obsługa social media zapewnia spójność marki w mediach społecznościowych i regularne budowanie zasięgów organicznych.
+                  Prowadzenie social media twojej firmy to znacznie więcej niż publikowanie postów. Profesjonalna obsługa social media obejmuje: strategię komunikacji, tworzenie contentu (grafiki, wideo, copywriting), community management (zarządzanie społecznością i moderacja komentarzy), kampanie reklamowe (Facebook Ads, Instagram Ads) i raportowanie wyników. Social media manager prowadzący Twoje kanały dba o harmonogram publikacji (kalendarz contentowy), odpowiadanie na komentarze i monitoring konkurencji. Obsługa social media zapewnia spójność komunikacji marki w mediach społecznościowych i regularne budowanie zasięgów organicznych.
                 </p>
                 <h3 className="text-xl font-heading font-semibold mb-3">
                   Jak wygląda prowadzenie social media — Facebook, Instagram, LinkedIn

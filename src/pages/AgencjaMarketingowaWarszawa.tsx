@@ -227,8 +227,9 @@ const AgencjaMarketingowaWarszawa = () => {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Warszawa | FOTZ – Marketing Dla Firm w Warszawie"
-        description="Agencja marketingowa Warszawa ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Warszawy i Mazowsza. Bezpłatna wycena!"
+        description="Agencja marketingowa Warszawa ✓ SEO, Google Ads, Social Media, strony internetowe. Marketing internetowy Warszawa — 200+ projektów dla firm. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/warszawa"
+        keywords="agencja marketingowa warszawa, marketing internetowy warszawa, agencja reklamowa warszawa, seo warszawa, google ads warszawa, firma marketingowa warszawa, reklama internetowa warszawa"
         ogImage="https://fotz.pl/og-image-warszawa.jpg"
       />
 
@@ -266,9 +267,8 @@ const AgencjaMarketingowaWarszawa = () => {
           </h1>
 
           <p className="mb-6 max-w-2xl text-lg text-blue-100 sm:text-xl">
-            Zwiększaj przychody Twojej firmy. Specjaliści SEO, Google Ads, Social
-            Media i Stron WWW. Ponad 200 projektów dla firm z Warszawy, Mazowsza
-            i całej Polski.
+            Agencja reklamowa Warszawa — specjaliści SEO, Google Ads, Social Media i stron internetowych.
+            Kompleksowy marketing internetowy dla firm z Warszawy i Mazowsza. Ponad 200 projektów. Bezpłatna wycena!
           </p>
 
           <div className="flex flex-col gap-3 sm:flex-row">
@@ -403,11 +403,10 @@ const AgencjaMarketingowaWarszawa = () => {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
-              Nasze Usługi Marketingowe
+              Nasze Usługi Marketingowe w Warszawie
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-600">
-              Kompleksowe rozwiązania dla biznesu. Od strategii po realizację i
-              optymalizację.
+              Kompleksowe usługi marketingu internetowego dla firm w Warszawie — od strategii i reklamy internetowej po SEO, strony internetowe i obsługę social media.
             </p>
           </div>
 
@@ -528,12 +527,12 @@ const AgencjaMarketingowaWarszawa = () => {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
-              Obsługujemy Całą Warszawę i Mazowsze
+              Agencja Marketingowa dla Firm z Całej Warszawy i Mazowsza
             </h2>
             <p className="text-lg text-gray-600">
-              Posiadamy biuro w centrum Warszawy i pracujemy z firmami ze wszystkich
-              dzielnic oraz okolicznych miast. Specjalizujemy się w lokalnym SEO dla
-              każdej dzielnicy Warszawy.
+              Firma marketingowa Fotz obsługuje klientów ze wszystkich dzielnic Warszawy i okolicznych miast.
+              Realizujemy strategie marketingowe, kampanie reklamowe w Google Ads i Meta Ads, pozycjonowanie SEO Warszawa
+              i tworzenie stron internetowych — dla małych i dużych firm z Warszawy.
             </p>
           </div>
 

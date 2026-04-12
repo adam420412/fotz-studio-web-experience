@@ -178,7 +178,7 @@ const StronyInternetoweKrakow = () => {
         title="Strony Internetowe Kraków | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Kraków — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Krakowa. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/krakow"
-        keywords="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków"
+        keywords="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków, wykonanie strony internetowej kraków, responsywna strona www kraków, wordpress kraków, nowoczesne strony www kraków, agencja stron internetowych kraków"
       />
       
       <ServiceSchema 
@@ -292,7 +292,7 @@ const StronyInternetoweKrakow = () => {
                 className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed"
               >
                 <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}
-                Tworzymy strony www, które wyglądają świetnie, działają błyskawicznie i skutecznie pozyskują klientów dla krakowskich firm.
+                Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Kraków w React, Next.js i WordPress. Projektowanie stron kraków dla firm, które chcą wyróżnić się w Google.
               </motion.p>
 
               <motion.div 
@@ -676,7 +676,7 @@ const StronyInternetoweKrakow = () => {
               Kraków to drugie co do wielkości miasto w Polsce i jedno z najważniejszych centrów akademickich, kulturalnych i technologicznych w Europie Środkowej. Ponad 200 000 studentów, rozwijający się sektor IT (krakowski hub firm takich jak Google, IBM, Motorola), prężna branża turystyczna i silna scena MŚP sprawiają, że rynek online w Krakowie jest zarówno wymagający, jak i pełen możliwości. Profesjonalna strona internetowa dla firmy z Krakowa musi odpowiadać na oczekiwania wymagającej, często anglojęzycznej, grupy docelowej.
             </p>
             <p className="text-muted-foreground mb-6">
-              Fotz Studio tworzy strony internetowe dla krakowskich firm zdalnie — pełen projekt od briefu po wdrożenie realizujemy online, z regularnym statusem przez Teams lub Slack. Jeśli preferujesz spotkanie stacjonarne, możemy się zorganizować — skontaktuj się z nami. Każda strona www jest projektowana przez nasz własny zespół: bez podwykonawców, bez tłumaczenia wizji przez pośredników.
+              Fotz Studio tworzy strony internetowe dla krakowskich firm zdalnie — pełen projekt od briefu po wdrożenie realizujemy online, z regularnym statusem przez Teams lub Slack. Jeśli preferujesz spotkanie stacjonarne, możemy się zorganizować — skontaktuj się z nami. Każda strona www jest projektowana przez nasz własny zespół: bez podwykonawców, bez tłumaczenia wizji przez pośredników. Wykonanie strony internetowej Kraków z gwarancją terminowości i jakości.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">

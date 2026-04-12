@@ -136,7 +136,7 @@ const StronyInternetoweBydgoszcz = () => {
         title="Strony Internetowe Bydgoszcz | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Bydgoszcz — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Bydgoszczy. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/bydgoszcz"
-        keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz"
+        keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz, wykonanie strony internetowej bydgoszcz, responsywna strona www bydgoszcz, wordpress bydgoszcz, nowoczesne strony www bydgoszcz"
       />
       
       <ServiceSchema 
@@ -186,9 +186,8 @@ const StronyInternetoweBydgoszcz = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-                W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
-                Oferujemy kompleksowe usługi <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron www</Link> w Bydgoszczy, 
-                dostosowane do indywidualnych potrzeb klienta.
+                W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>.
+                Oferujemy kompleksowe usługi <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron www Bydgoszcz</Link> — responsywne strony internetowe, nowoczesne strony www i wykonanie strony w WordPress lub React, dostosowane do indywidualnych potrzeb klienta.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">

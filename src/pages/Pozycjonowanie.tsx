@@ -280,7 +280,7 @@ const Pozycjonowanie = () => {
         title="Pozycjonowanie Stron Internetowych - Agencja SEO dla Firm | Fotz Studio"
         description="Pozycjonowanie stron internetowych w Google. Agencja SEO — audyt SEO, optymalizacja, link building. Skuteczne pozycjonowanie stron www i sklepów…"
         canonical="https://fotz.pl/seo/pozycjonowanie"
-        keywords="pozycjonowanie stron internetowych, agencja seo, pozycjonowanie stron www, audyt seo, optymalizacja seo, pozycjonowanie w google, pozycjonowanie lokalne"
+        keywords="pozycjonowanie stron internetowych, agencja seo, pozycjonowanie stron www, audyt seo, optymalizacja seo, pozycjonowanie w google, pozycjonowanie lokalne, core web vitals, frazy kluczowe, seo techniczne, link building"
       />
       
       <ServiceSchema 
@@ -1051,10 +1051,10 @@ const Pozycjonowanie = () => {
                   Jak działa pozycjonowanie stron? Robot Google crawluje witrynę, indeksuje treści i przypisuje pozycje na podstawie setek czynników rankingowych. Wynikach wyszukiwania Google zmiany wynikające z pozycjonowania stron w internecie widać stopniowo. Pozycjonowanie stron w internecie działa najskuteczniej, gdy łączy optymalizację techniczną, wartościowe treści i silny profil linków zewnętrznych. Pozycjonowanie twojej strony prowadzone przez doświadczoną agencję SEO daje trwałe efekty — witryn internetowych, które zdobyły wysokie pozycje, nie wypiera się łatwo z rankingu.
                 </p>
                 <h3 className="text-xl font-heading font-semibold mb-3">
-                  Optymalizacja dla wyszukiwarek internetowych i skuteczne SEO
+                  SEO techniczne i Core Web Vitals — fundamenty widoczności w Google
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Optymalizacja dla wyszukiwarek internetowych obejmuje dziesiątki czynników technicznych i contentowych. Stron pod kątem wyszukiwarek internetowych optymalizacja to m.in.: prędkość ładowania, responsywność, semantyczny HTML, schema markup i wewnętrzne linkowanie. Skuteczne SEO i skuteczne pozycjonowanie stron w wyszukiwarkach wymaga też optymalizacji treści — każda dana strona powinna być unikalna i odpowiadać na pytania użytkowników. Wysokie pozycje w Google osiągają strony, które spełniają wymagania techniczne i dostarczają wartościowy content. Pozycje strony w wynikach wyszukiwania rosną przy konsekwentnych działaniach z zakresu SEO — stron to proces długofalowy, nie jednorazowe działanie.
+                  SEO techniczne (Technical SEO) obejmuje optymalizację kodu strony, struktury URL, pliku robots.txt, mapy strony XML i danych strukturalnych Schema.org. Core Web Vitals — wskaźniki LCP, FID i CLS — to sygnały jakości strony bezpośrednio wpływające na ranking Google. Strony z dobrymi wynikami Core Web Vitals uzyskują premię w rankingu. Frazy kluczowe long-tail (długoogonowe) — bardziej szczegółowe zapytania — mają mniejszą konkurencję i wyższy intent zakupowy. Pozycjonowanie na frazy kluczowe long-tail to strategia szczególnie skuteczna dla nowych stron i nisz rynkowych. SEO techniczne, content SEO i link building tworzą kompletną strategię pozycjonowania stron internetowych.
                 </p>
                 <h3 className="text-xl font-heading font-semibold mb-3">
                   Wynikach wyszukiwania Google — jak zdobyć najwyższe pozycje?

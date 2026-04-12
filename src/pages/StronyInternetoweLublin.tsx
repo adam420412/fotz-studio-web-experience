@@ -142,7 +142,7 @@ const StronyInternetoweLublin = () => {
         title="Strony Internetowe Lublin | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Lublin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Lublina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/lublin"
-        keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin"
+        keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin, wykonanie strony internetowej lublin, responsywna strona www lublin, wordpress lublin, nowoczesne strony www lublin"
       />
       
       <ServiceSchema 
@@ -192,10 +192,9 @@ const StronyInternetoweLublin = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-                <strong>Posiadanie profesjonalnej strony www to podstawa sukcesu każdego biznesu.</strong> Niezależnie od tego, 
-                czy prowadzisz małą firmę w Lublinie, czy dużą korporację, Twoja strona internetowa jest wizytówką Twojej działalności w sieci. 
-                Zajmujemy się <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzeniem stron www</Link>, które 
-                nie tylko wyglądają estetycznie, ale przede wszystkim są funkcjonalne i skuteczne w pozyskiwaniu klientów.
+                <strong>Posiadanie profesjonalnej strony www to podstawa sukcesu każdego biznesu.</strong> Niezależnie od tego,
+                czy prowadzisz małą firmę w Lublinie, czy dużą korporację, Twoja strona internetowa jest wizytówką Twojej działalności w sieci.
+                Zajmujemy się <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzeniem stron www Lublin</Link> — responsywne strony internetowe, nowoczesne strony www i wykonanie strony w WordPress lub React, które są funkcjonalne i skuteczne w pozyskiwaniu klientów.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">

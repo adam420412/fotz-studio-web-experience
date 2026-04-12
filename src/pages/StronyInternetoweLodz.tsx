@@ -90,7 +90,7 @@ const StronyInternetoweLodz = () => {
         title="Strony Internetowe Łódź | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Łódź — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Łodzi. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/lodz"
-        keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź"
+        keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź, wykonanie strony internetowej łódź, responsywna strona www łódź, wordpress łódź, nowoczesne strony www łódź, agencja stron internetowych łódź"
       />
       
       <ServiceSchema name="Strony Internetowe Łódź" description="Profesjonalne tworzenie stron internetowych dla firm z Łodzi." provider="FOTZ Studio" areaServed="Łódź" />
@@ -124,7 +124,7 @@ const StronyInternetoweLodz = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla łódzkich firm.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Łódź w React, Next.js i WordPress. Projektowanie stron Łódź z pełną optymalizacją SEO.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
