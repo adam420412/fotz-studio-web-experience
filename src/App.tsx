@@ -1350,6 +1350,10 @@ const BlogPinterestDlaFirmy = lazy(() => import("./pages/BlogPinterestDlaFirmy")
 const PozycjonowanieKalisz = lazy(() => import("./pages/PozycjonowanieKalisz"));
 const BlogChatGPTWMarketingu = lazy(() => import("./pages/BlogChatGPTWMarketingu"));
 
+// Wave 238 pages
+const BlogSztukaPromocjiInstagram = lazy(() => import("./pages/BlogSztukaPromocjiInstagram"));
+const AgencjaMarketingowaKalisz = lazy(() => import("./pages/AgencjaMarketingowaKalisz"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2383,6 +2387,8 @@ const App = () => (
                 <Route path="/blog/pinterest-dla-firmy" element={<BlogPinterestDlaFirmy />} />
                 <Route path="/pozycjonowanie/kalisz" element={<PozycjonowanieKalisz />} />
                 <Route path="/blog/chatgpt-w-marketingu" element={<BlogChatGPTWMarketingu />} />
+                <Route path="/blog/reklama-na-instagramie" element={<BlogSztukaPromocjiInstagram />} />
+                <Route path="/agencja-marketingowa/kalisz" element={<AgencjaMarketingowaKalisz />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />

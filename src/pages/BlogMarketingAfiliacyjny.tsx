@@ -1,211 +1,932 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { Layout } from "@/components/layout/Layout";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Clock, DollarSign, Users, TrendingUp, Link2 } from "lucide-react";
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+  FAQSchema,
+  ArticleSchema,
+  BreadcrumbSchema,
+} from "@/components/seo/StructuredData";
+import { Layout } from "@/components/layout/Layout";
+import {
+  Link,
+  DollarSign,
+  Share2,
+  TrendingUp,
+  Award,
+  CheckCircle,
+  Target,
+  Users,
+} from "lucide-react";
 
 export default function BlogMarketingAfiliacyjny() {
   const breadcrumbs = [
-    { label: "Strona główna", href: "/" },
-    { label: "Blog", href: "/blog" },
-    { label: "Marketing afiliacyjny — co to jest i jak zarabiać na afiliacji?" },
+    { name: "Strona główna", url: "/" },
+    { name: "Blog", url: "/blog" },
+    { name: "Marketing afiliacyjny", url: "/blog/marketing-afiliacyjny" },
   ];
 
-  const affiliateRoles = [
-    { icon: Users, title: "Reklamodawca (Merchant)", desc: "Firma posiadająca produkt lub usługę. Tworzy program partnerski i płaci prowizję za każdą sprzedaż/lead pozyskany przez partnerów." },
-    { icon: Link2, title: "Partner (Affiliate)", desc: "Osoba lub firma promująca produkty reklamodawcy. Zarabia prowizję (%) od każdej sprzedaży przez swój unikalny link." },
-    { icon: TrendingUp, title: "Sieć afiliacyjna", desc: "Platforma pośrednicząca między reklamodawcami a partnerami — zarządza linkami, śledzi konwersje, wypłaca prowizje." },
-    { icon: DollarSign, title: "Klient końcowy", desc: "Osoba kupująca produkt przez link afiliacyjny. Zazwyczaj nie wie że kupuje przez program partnerski — i zazwyczaj nie płaci więcej." },
-  ];
-
-  const polishNetworks = [
-    { name: "WebePartners (WP Affiliate)", desc: "Polska sieć, współpraca z dużymi wydawcami medialnymi. Produkty finansowe, ubezpieczenia, e-commerce." },
-    { name: "TradeTracker Polska", desc: "Europejska sieć z silną obecnością w Polsce. Szeroki wybór reklamodawców z różnych branż." },
-    { name: "Convertiser", desc: "Polska platforma afiliacyjna, dobre narzędzia analityczne, lokalne wsparcie." },
-    { name: "Awin Polska", desc: "Jedna z największych światowych sieci, aktywna w Polsce. Fashion, beauty, e-commerce." },
-  ];
-
-  const faqItems = [
+  const faqs = [
     {
-      question: "Co to jest marketing afiliacyjny?",
+      question:
+        "Ile mogę zarobić jako publisher w marketingu afiliacyjnym?",
       answer:
-        "Marketing afiliacyjny (affiliate marketing) to model biznesowy, w którym partner (affiliate) promuje produkty lub usługi innej firmy i otrzymuje prowizję za każdą wygenerowaną sprzedaż lub lead. Działa przez unikalne linki śledzące — gdy ktoś kliknie link i kupi produkt, system automatycznie przypisuje sprzedaż do partnera i nalicza prowizję.",
+        "Zarobki zależą od Twojego ruchu, konwersji i wysokości prowizji. Jako początkujący możesz zarabiać od 100-500 PLN miesięcznie, a doświadczeni publisherzy osiągają 5000+ PLN. Najlepsze wyniki dają niszowe strony o wysokiej konwersji.",
     },
     {
-      question: "Jak zarabiać na marketingu afiliacyjnym?",
+      question: "Jakie są główne modele wynagrodzeń w afiliacji?",
       answer:
-        "Kroki do zarobków z afiliacji: 1) Wybierz niszę — o czym piszesz lub do kogo dotrzesz. 2) Zbuduj kanał komunikacji (blog, YouTube, Instagram, email lista). 3) Dołącz do programów partnerskich (bezpośrednich lub sieci afiliacyjnych). 4) Twórz wartościowe treści z naturalnymi linkami afiliacyjnymi. 5) Optymalizuj pod konwersje — testuj różne produkty i formaty treści. 6) Skaluj to co działa.",
+        "Trzy główne modele to: CPS (Cost Per Sale) - płata za sprzedaż, CPA (Cost Per Action) - płata za określoną akcję, CPL (Cost Per Lead) - płata za pozyskanego klienta. CPS jest najpopularniejszy, ale CPA oferuje wyższe prowizje.",
     },
     {
-      question: "Ile można zarobić na afiliacji?",
+      question:
+        "Czy mogę zacząć marketing afiliacyjny bez własnej strony internetowej?",
       answer:
-        "Zarobki z marketingu afiliacyjnego są bardzo zróżnicowane: początkujący 0-500 zł/mies. (budowanie kanału), średniozaawansowani 1000-10 000 zł/mies., profesjonalni afilianci 10 000-100 000+ zł/mies. Kluczowe czynniki: niszwa (finanse i zdrowie = wyższe prowizje), jakość i skala kanału, wybór produktów do promocji. To wymaga czasu — nie ma szybkich pieniędzy.",
+        "Tak, możesz promować produkty przez media społecznościowe, YouTube, TikTok czy newsletter. Jednak własna strona internetowa daje większe możliwości monetyzacji i budowania autorytetu w długoterminowej perspektywie.",
     },
     {
-      question: "Jak założyć program partnerski dla swojej firmy?",
+      question:
+        "Jakie są najlepsze sieci afiliacyjne w Polsce dla początkujących?",
       answer:
-        "Opcje uruchomienia programu afiliacyjnego: 1) Sieć afiliacyjna — dołącz jako reklamodawca do WebePartners, TradeTracker. 2) Wtyczka WordPress — AffiliateWP, Easy Affiliate. 3) Platforma SaaS — Tapfiliate, Refersion. 4) Custom rozwiązanie. Elementy programu: stawka prowizji (zazwyczaj 5-20% dla e-commerce, 20-50% dla software), cookies tracking (7-90 dni), materiały dla partnerów.",
+        "TradeTracker, Conversant i WebePartners to czołowe sieci w Polsce. Oferują szeroki wybór produktów, przyzwoite prowizje i dobre wsparcie dla publisherów. Warto zacząć od kilku sieci, aby znaleźć produkty do promocji.",
     },
     {
-      question: "Czy marketing afiliacyjny jest legalny i bezpieczny?",
+      question:
+        "Jak wybrać właściwe produkty do promocji w marketingu afiliacyjnym?",
       answer:
-        "Tak — marketing afiliacyjny jest w pełni legalny. Wymogi prawne: partner musi ujawniać relację afiliacyjną (RODO i wytyczne UOKiK), linki afiliacyjne powinny być oznaczone rel='sponsored', wszystkie treści promocyjne muszą być uczciwe i nie wprowadzać w błąd. Ryzyko dla reklamodawcy: fraud (fałszywe kliknięcia), co minimalizują dobre sieci afiliacyjne.",
+        "Wybieraj produkty, które: są zgodne z niszy Twojej widowni, mają dobre opinie, oferują przyzwoitą prowizję (minimum 10%), mają wsparcie marketingowe od sieci. Testy produktów, które promitujesz, zwiększają wiarygodność.",
     },
   ];
 
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Marketing afiliacyjny — co to jest i jak zarabiać na afiliacji? | fotz.pl"
-        description="Marketing afiliacyjny co to jest — wyjaśniamy jak działa affiliate marketing, jak zarabiać na promocji produktów i jak założyć własny program partnerski. Poradnik 2025."
-        canonical="https://fotz.pl/blog/marketing-afiliacyjny-co-to"
+        title="Marketing afiliacyjny - Kompletny przewodnik 2025"
+        description="Dowiedz się, co to jest marketing afiliacyjny, jak zacząć jako publisher, model CPS/CPA/CPL i zarabiaj na prowizjach z najlepszych sieci afiliacyjnych w Polsce."
+        canonical="https://fotz.pl/blog/marketing-afiliacyjny"
+        ogImage="https://fotz.pl/og-marketing-afiliacyjny.jpg"
       />
+
+      <BreadcrumbSchema items={breadcrumbs} />
       <ArticleSchema
-        title="Marketing afiliacyjny — co to jest i jak zarabiać na afiliacji?"
-        description="Czym jest marketing afiliacyjny, jak działa model partnerski, jak zarabiać na afiliacji i jak założyć program partnerski."
-        datePublished="2025-02-18"
-        dateModified="2025-04-01"
-        url="https://fotz.pl/blog/marketing-afiliacyjny-co-to"
+        headline="Marketing afiliacyjny - Kompletny przewodnik"
+        description="Kompleksowy poradnik dotyczący marketingu afiliacyjnego, modeli wynagrodzeń, najlepszych sieci i strategii zarabiania."
+        author="Fotz Studio"
+        datePublished="2025-01-20"
+        dateModified="2025-06-25"
+        image="https://fotz.pl/og-marketing-afiliacyjny.jpg"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <FAQSchema items={faqs} />
 
-      <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
-
-        {/* Hero */}
-        <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
-          <div className="max-w-3xl mx-auto px-4 md:px-6">
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-              <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 7 min czytania</span>
-                <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Afiliacja i zarobki</span>
-              </div>
-              <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-                Marketing afiliacyjny — co to jest i jak zarabiać?
-              </h1>
-              <p className="text-xl text-slate-300 leading-relaxed">
-                Marketing afiliacyjny to model w którym polecasz produkty i zarabiasz prowizję za każdą sprzedaż.
-                Zarówno dla twórców treści jak i firm poszukujących partnerów sprzedażowych.
-              </p>
-            </motion.div>
+      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+        {/* Hero Section */}
+        <section className="px-6 py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+          <div className="max-w-3xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <DollarSign size={40} />
+              <span className="text-sm font-semibold bg-white/20 px-4 py-2 rounded-full">
+                Zarabiaj na prowizjach
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Marketing afiliacyjny - Kompletny przewodnik
+            </h1>
+            <p className="text-lg md:text-xl text-blue-100 mb-8">
+              Odkryj, jak zarabiać na provizjach reklamując produkty i usługi.
+              Przewodnik dla początkujących i zaawansowanych publisherów.
+            </p>
+            <div className="flex flex-wrap gap-4 text-sm">
+              <span className="bg-white/20 px-4 py-2 rounded-full">
+                Szacunkowy czas czytania: 15 min
+              </span>
+              <span className="bg-white/20 px-4 py-2 rounded-full">
+                Zaktualizowano: 25 czerwca 2025
+              </span>
+            </div>
           </div>
         </section>
 
-        {/* Content */}
-        <section className="py-12 md:py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4 md:px-6">
+        {/* Main Content */}
+        <article className="max-w-3xl mx-auto px-6 py-16">
+          {/* Table of Contents */}
+          <div className="bg-slate-100 rounded-lg p-8 mb-12">
+            <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+              <Link size={24} className="text-blue-600" />
+              Spis treści
+            </h2>
+            <ul className="space-y-3 text-slate-700">
+              <li>
+                <a href="#czym-jest" className="text-blue-600 hover:underline">
+                  Co to jest marketing afiliacyjny?
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#jak-dziala"
+                  className="text-blue-600 hover:underline"
+                >
+                  Jak działa marketing afiliacyjny?
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#modele-wynagrodzen"
+                  className="text-blue-600 hover:underline"
+                >
+                  Modele wynagrodzeń: CPS, CPA, CPL
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#jak-rozpoczac-publisher"
+                  className="text-blue-600 hover:underline"
+                >
+                  Jak zacząć jako publisher?
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#jak-rozpoczac-reklamodawca"
+                  className="text-blue-600 hover:underline"
+                >
+                  Jak zacząć jako reklamodawca?
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#sieci-afiliacyjne"
+                  className="text-blue-600 hover:underline"
+                >
+                  Najlepsze sieci afiliacyjne w Polsce
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#wybor-produktow"
+                  className="text-blue-600 hover:underline"
+                >
+                  Jak wybrać produkty do promocji?
+                </a>
+              </li>
+              <li>
+                <a href="#zarobki" className="text-blue-600 hover:underline">
+                  Zarobki z afiliacji
+                </a>
+              </li>
+              <li>
+                <a href="#przykłady" className="text-blue-600 hover:underline">
+                  Przykłady sukcesów
+                </a>
+              </li>
+            </ul>
+          </div>
 
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-4 mb-4">Jak działa marketing afiliacyjny?</h2>
-              <p className="text-slate-700 mb-4">
-                Model afiliacyjny opiera się na czterech uczestnikach. Każdy ma swoją rolę w ekosystemie:
-              </p>
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
-                {affiliateRoles.map((item, idx) => {
-                  const Icon = item.icon;
-                  return (
-                    <div key={idx} className="bg-slate-50 p-5 rounded-lg border border-slate-200">
-                      <Icon className="w-5 h-5 text-blue-600 mb-2" />
-                      <h3 className="font-bold text-slate-900 mb-1 text-sm">{item.title}</h3>
-                      <p className="text-slate-600 text-sm">{item.desc}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </FadeInView>
+          {/* Section 1 */}
+          <section className="mb-12">
+            <h2
+              id="czym-jest"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Co to jest marketing afiliacyjny?
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-4">
+              Marketing afiliacyjny to model biznesu, w którym reklamujesz
+              produkty lub usługi innych firm i zarabiasz prowizje za
+              konkretne akcje (sprzedaż, rejestracja, klik). Jesteś pośrednikiem
+              pomiędzy producentem/sprzedawcą a konsumentem, zarabiając na
+              provizji.
+            </p>
+            <p className="text-slate-700 text-lg leading-relaxed mb-4">
+              To jeden z najpopularniejszych sposobów monetyzacji internetu.
+              Czym się charakteryzuje?
+            </p>
+            <ul className="space-y-3 mb-6">
+              <li className="flex gap-3 text-slate-700">
+                <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
+                <span>
+                  <strong>Brak kosztów wstępnych</strong> - nie musisz kupować
+                  towary ani magazynować
+                </span>
+              </li>
+              <li className="flex gap-3 text-slate-700">
+                <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
+                <span>
+                  <strong>Zarabiaj w tle</strong> - dochody generują się
+                  automatycznie
+                </span>
+              </li>
+              <li className="flex gap-3 text-slate-700">
+                <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
+                <span>
+                  <strong>Skalowalność</strong> - nie masz limitów, ile możesz
+                  zarobić
+                </span>
+              </li>
+              <li className="flex gap-3 text-slate-700">
+                <CheckCircle className="text-green-600 flex-shrink-0" size={20} />
+                <span>
+                  <strong>Elastyczność</strong> - pracuj z domu, w dowolnym
+                  czasie
+                </span>
+              </li>
+            </ul>
+          </section>
 
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Modele rozliczeń w afiliacji</h2>
-              <div className="overflow-x-auto mb-6">
-                <table className="w-full text-sm border-collapse">
-                  <thead>
-                    <tr className="bg-slate-800 text-white">
-                      <th className="text-left p-3 border border-slate-700">Model</th>
-                      <th className="text-left p-3 border border-slate-700">Płatność za</th>
-                      <th className="text-left p-3 border border-slate-700">Branże</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      { model: "CPS (Cost Per Sale)", payment: "Sprzedaż — % od wartości zamówienia", industries: "E-commerce, software, produkty cyfrowe" },
-                      { model: "CPL (Cost Per Lead)", payment: "Formularz kontaktowy, rejestracja", industries: "Finanse, ubezpieczenia, B2B" },
-                      { model: "CPC (Cost Per Click)", payment: "Kliknięcie w link afiliacyjny", industries: "Rzadko, niski zarobek" },
-                      { model: "CPA (Cost Per Action)", payment: "Konkretna akcja (install, trial)", industries: "Aplikacje, SaaS, gry" },
-                    ].map((row, idx) => (
-                      <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-slate-50"}>
-                        <td className="p-3 border border-slate-200 font-bold text-blue-600">{row.model}</td>
-                        <td className="p-3 border border-slate-200 text-slate-700">{row.payment}</td>
-                        <td className="p-3 border border-slate-200 text-slate-500 text-xs">{row.industries}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </FadeInView>
+          {/* Section 2 */}
+          <section className="mb-12">
+            <h2
+              id="jak-dziala"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Jak działa marketing afiliacyjny?
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              Proces marketingu afiliacyjnego jest prosty i przejrzysty:
+            </p>
 
-            <FadeInView>
-              <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">Polskie sieci afiliacyjne</h2>
-              <div className="space-y-3 mb-6">
-                {polishNetworks.map((net, idx) => (
-                  <div key={idx} className="bg-slate-50 p-4 rounded-lg border border-slate-200">
-                    <p className="font-bold text-slate-900 text-sm mb-1">{net.name}</p>
-                    <p className="text-slate-600 text-sm">{net.desc}</p>
+            <div className="space-y-4 mb-6">
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+                <div className="flex gap-3">
+                  <div className="text-2xl font-bold text-blue-600">1</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-1">
+                      Rejestracja w sieci afiliacyjnej
+                    </h4>
+                    <p className="text-slate-700">
+                      Dołączasz do sieci afiliacyjnej (np. TradeTracker,
+                      Conversant) i wybierasz produkty do promocji.
+                    </p>
                   </div>
-                ))}
+                </div>
               </div>
-            </FadeInView>
 
-            <FadeInView>
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 mb-6">
-                <p className="text-blue-800 font-semibold mb-2">Chcesz uruchomić program partnerski?</p>
-                <p className="text-blue-700 text-sm mb-3">
-                  Pomożemy skonfigurować program afiliacyjny dla Twojego sklepu lub usługi.
-                </p>
-                <Link to="/kontakt" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
-                  Skontaktuj się z nami <ArrowRight className="w-4 h-4" />
-                </Link>
+              <div className="bg-green-50 border-l-4 border-green-600 p-4">
+                <div className="flex gap-3">
+                  <div className="text-2xl font-bold text-green-600">2</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-1">
+                      Uzyskanie linku afiliacyjnego
+                    </h4>
+                    <p className="text-slate-700">
+                      Otrzymujesz unikalny link (zawierający Twój kod
+                      afiliacyjny), którym promitujesz produkty.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </FadeInView>
-          </div>
-        </section>
 
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-12 md:py-16 bg-slate-50">
-            <div className="max-w-3xl mx-auto px-4 md:px-6">
-              <h2 className="text-2xl font-bold text-center mb-8">FAQ — Marketing afiliacyjny co to jest</h2>
-              <FAQSchema items={faqItems} />
-              <Accordion type="single" collapsible className="w-full bg-white rounded-lg border border-slate-200">
-                {faqItems.map((item, idx) => (
-                  <AccordionItem key={idx} value={`item-${idx}`}>
-                    <AccordionTrigger className="text-left px-6">
-                      <span className="font-semibold text-slate-900">{item.question}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-slate-700 px-6 leading-relaxed">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
+              <div className="bg-purple-50 border-l-4 border-purple-600 p-4">
+                <div className="flex gap-3">
+                  <div className="text-2xl font-bold text-purple-600">3</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-1">
+                      Promocja produktów
+                    </h4>
+                    <p className="text-slate-700">
+                      Umieszczasz linki na Twojej stronie, blogu, kanale YouTube
+                      lub mediach społecznościowych.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-orange-50 border-l-4 border-orange-600 p-4">
+                <div className="flex gap-3">
+                  <div className="text-2xl font-bold text-orange-600">4</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-1">
+                      Śledzenie konwersji
+                    </h4>
+                    <p className="text-slate-700">
+                      System automatycznie śledzi kliknięcia, rejestracje i
+                      sprzedaż pochodzące z Twojego linku.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-red-50 border-l-4 border-red-600 p-4">
+                <div className="flex gap-3">
+                  <div className="text-2xl font-bold text-red-600">5</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900 mb-1">
+                      Otrzymanie prowizji
+                    </h4>
+                    <p className="text-slate-700">
+                      Zarabiasz prowizję za każdą akcję (sprzedaż, rejestracja).
+                      Wypłata następuje zwykle raz w miesiącu.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
-        </FadeInView>
 
-        <ContactSection
-          heading="Rozwijaj sprzedaż przez partnerów"
-          subheading="Program afiliacyjny to skalowanie sprzedaży bez proporcjonalnego wzrostu kosztów."
-        />
-      </Layout>
-    </>
+          {/* Section 3 */}
+          <section className="mb-12">
+            <h2
+              id="modele-wynagrodzen"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Modele wynagrodzeń: CPS, CPA, CPL
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              W marketingu afiliacyjnym wyróżniamy trzy główne modele
+              wynagrodzeń:
+            </p>
+
+            <div className="space-y-6 mb-6">
+              <div className="bg-slate-50 rounded-lg p-6 border-2 border-blue-200">
+                <h4 className="text-xl font-bold text-slate-900 mb-3">
+                  CPS - Cost Per Sale
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  Najpopularniejszy model. Zarabiasz prowizję za każdą
+                  sprzedaż. Typowe prowizje to 5-20% wartości zamówienia.
+                </p>
+                <p className="text-sm text-slate-600">
+                  Przykład: Promitujesz produkt za 100 PLN z prowizją 10%.
+                  Za każdą sprzedaż zarabiasz 10 PLN.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6 border-2 border-green-200">
+                <h4 className="text-xl font-bold text-slate-900 mb-3">
+                  CPA - Cost Per Action
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  Zarabiasz za konkretną akcję (rejestracja, otwarcie konta,
+                  pobór aplikacji). Prowizje są stałe, np. 50-500 PLN.
+                </p>
+                <p className="text-sm text-slate-600">
+                  Przykład: Promitujesz konto bankowe. Za każdą rejestrację
+                  zarabiasz 200 PLN.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 rounded-lg p-6 border-2 border-purple-200">
+                <h4 className="text-xl font-bold text-slate-900 mb-3">
+                  CPL - Cost Per Lead
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  Zarabiasz za pozyskanego klienta potencjalnego (np.
+                  wypełniony formularz kontaktowy).
+                </p>
+                <p className="text-sm text-slate-600">
+                  Przykład: Promitujesz usługę pożyczki. Za każde wypełnione
+                  zapytanie zarabiasz 30 PLN.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-blue-100 border border-blue-300 rounded-lg p-6">
+              <p className="text-slate-900 font-semibold">
+                Wskazówka: CPA zwykle oferuje wyższe prowizje, ale CPS jest
+                najłatwiej osiągnąć dla początkujących. Wybierz model zależnie
+                od Twojej widowni.
+              </p>
+            </div>
+          </section>
+
+          {/* Section 4 */}
+          <section className="mb-12">
+            <h2
+              id="jak-rozpoczac-publisher"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Jak zacząć jako publisher (wydawca)?
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              Jeśli chcesz zarabiać promując produkty, wykonaj poniższe kroki:
+            </p>
+
+            <ol className="space-y-4 mb-6">
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  1
+                </span>
+                <div>
+                  <strong className="text-slate-900">
+                    Zdefiniuj swoją niszę
+                  </strong>
+                  <p className="text-slate-700 mt-1">
+                    Wybierz dziedzinę, w której masz wiedzę i pasję (np.
+                    fitness, finanse, technologia).
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  2
+                </span>
+                <div>
+                  <strong className="text-slate-900">Wybierz kanał promocji</strong>
+                  <p className="text-slate-700 mt-1">
+                    Blog, YouTube, podcast, TikTok, Instagram czy newsletter.
+                    Możesz używać kilka kanałów jednocześnie.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  3
+                </span>
+                <div>
+                  <strong className="text-slate-900">
+                    Zarejestruj się w sieci afiliacyjnej
+                  </strong>
+                  <p className="text-slate-700 mt-1">
+                    Przejdź na stronę sieci (np. tradetracker.com), kliknij
+                    zarejstruj się i wypełnij formularz.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  4
+                </span>
+                <div>
+                  <strong className="text-slate-900">
+                    Poczekaj na zatwierdzenie
+                  </strong>
+                  <p className="text-slate-700 mt-1">
+                    Sieci sprawdzają Twoją wiarygodność. Zwykle zajmuje to
+                    kilka dni.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  5
+                </span>
+                <div>
+                  <strong className="text-slate-900">Wybierz produkty</strong>
+                  <p className="text-slate-700 mt-1">
+                    Przeglądaj katalog dostępnych programów i wybierz te
+                    pasujące do Twojej widowni.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  6
+                </span>
+                <div>
+                  <strong className="text-slate-900">Uzyskaj linki i zarabiaj</strong>
+                  <p className="text-slate-700 mt-1">
+                    Skopiuj link afiliacyjny i umieść go na swoim kanale.
+                    Monitoruj statystyki w panelu wydawcy.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          {/* Section 5 */}
+          <section className="mb-12">
+            <h2
+              id="jak-rozpoczac-reklamodawca"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Jak zacząć jako reklamodawca (advertiser)?
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              Jeśli prowadzisz sklep online lub usługę i chcesz promować przez
+              partnerów:
+            </p>
+
+            <ol className="space-y-4 mb-6">
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                  1
+                </span>
+                <div>
+                  <strong className="text-slate-900">
+                    Zarejstruj się w sieci
+                  </strong>
+                  <p className="text-slate-700 mt-1">
+                    Przejdź na stronę sieci afiliacyjnej i zaloguj się jako
+                    reklamodawca.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                  2
+                </span>
+                <div>
+                  <strong className="text-slate-900">
+                    Stwórz kampanię afiliacyjną
+                  </strong>
+                  <p className="text-slate-700 mt-1">
+                    Określ nazwy, banery, prowizje i warunki promocji.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                  3
+                </span>
+                <div>
+                  <strong className="text-slate-900">
+                    Zwerbuj publisherów
+                  </strong>
+                  <p className="text-slate-700 mt-1">
+                    Aktywnie szukaj i zapraszaj wydawców, którzy pasują do
+                    Twojej branży.
+                  </p>
+                </div>
+              </li>
+              <li className="flex gap-4">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center font-bold">
+                  4
+                </span>
+                <div>
+                  <strong className="text-slate-900">
+                    Monitoruj wyniki i optymalizuj
+                  </strong>
+                  <p className="text-slate-700 mt-1">
+                    Śledzić ROI i zwiększaj prowizje dla najlepszych
+                    partnerów.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          {/* Section 6 */}
+          <section className="mb-12">
+            <h2
+              id="sieci-afiliacyjne"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Najlepsze sieci afiliacyjne w Polsce
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              Oto najlepsze platformy afiliacyjne dostępne dla polskich
+              publisherów:
+            </p>
+
+            <div className="space-y-6 mb-6">
+              <div className="border-2 border-slate-200 rounded-lg p-6 hover:border-blue-400 transition">
+                <div className="flex items-start gap-4">
+                  <Award className="text-blue-600 flex-shrink-0" size={28} />
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-slate-900 mb-2">
+                      TradeTracker
+                    </h4>
+                    <p className="text-slate-700 mb-3">
+                      Największa sieć afiliacyjna w Europie. Oferuje 1000+
+                      programów, wysokie prowizje i doskonałe wsparcie. Idealna
+                      dla początkujących.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      Strona: tradetracker.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-2 border-slate-200 rounded-lg p-6 hover:border-blue-400 transition">
+                <div className="flex items-start gap-4">
+                  <Award className="text-green-600 flex-shrink-0" size={28} />
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-slate-900 mb-2">
+                      Conversant
+                    </h4>
+                    <p className="text-slate-700 mb-3">
+                      Globalna sieć o polskim wsparciu. Specjalizuje się w
+                      producentach marek i dużych e-commerce. Prowizje CPA
+                      zdecydowanie wyższe.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      Strona: conversantpolska.pl
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-2 border-slate-200 rounded-lg p-6 hover:border-blue-400 transition">
+                <div className="flex items-start gap-4">
+                  <Award className="text-purple-600 flex-shrink-0" size={28} />
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-slate-900 mb-2">
+                      WebePartners
+                    </h4>
+                    <p className="text-slate-700 mb-3">
+                      Polska sieć z bogatym katalogiem produktów. Doskonała dla
+                      publisherów zainteresowanych polskimi produktami i
+                      usługami.
+                    </p>
+                    <p className="text-sm text-slate-600">
+                      Strona: webepartners.pl
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-yellow-50 border border-yellow-300 rounded-lg p-6">
+              <p className="text-slate-900 font-semibold">
+                Porada: Nie ograniczaj się do jednej sieci. Każda ma inne
+                produkty i prowizje. Rejestracja jest darmowa, więc dołącz do
+                kilku sieci i testuj, która działa najlepiej.
+              </p>
+            </div>
+          </section>
+
+          {/* Section 7 */}
+          <section className="mb-12">
+            <h2
+              id="wybor-produktow"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Jak wybrać właściwe produkty do promocji?
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              Wybór produktów jest kluczowy do sukcesu. Pamiętaj o tych
+              zasadach:
+            </p>
+
+            <div className="space-y-4 mb-6">
+              <div className="flex gap-4 p-4 bg-slate-50 rounded-lg">
+                <Target className="text-blue-600 flex-shrink-0" size={24} />
+                <div>
+                  <h4 className="font-bold text-slate-900 mb-1">
+                    Zgodność z niszy
+                  </h4>
+                  <p className="text-slate-700">
+                    Promuj tylko produkty, które są tematycznie związane z Twoją
+                    widowną. Kredyt dla bloga o fitness to kiepski pomysł.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 p-4 bg-slate-50 rounded-lg">
+                <Users className="text-blue-600 flex-shrink-0" size={24} />
+                <div>
+                  <h4 className="font-bold text-slate-900 mb-1">
+                    Zainteresowanie widowni
+                  </h4>
+                  <p className="text-slate-700">
+                    Wybieraj produkty, które rozwiązują problemy Twojej
+                    widowni. Słuchaj komentarzy i wiadomości od użytkowników.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 p-4 bg-slate-50 rounded-lg">
+                <TrendingUp className="text-blue-600 flex-shrink-0" size={24} />
+                <div>
+                  <h4 className="font-bold text-slate-900 mb-1">
+                    Wysokie prowizje
+                  </h4>
+                  <p className="text-slate-700">
+                    Szukaj programów z prowizjami minimum 10-15%. Im wyższa
+                    prowizja, tym więcej zarabiasz.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 p-4 bg-slate-50 rounded-lg">
+                <Share2 className="text-blue-600 flex-shrink-0" size={24} />
+                <div>
+                  <h4 className="font-bold text-slate-900 mb-1">
+                    Dobra reputacja
+                  </h4>
+                  <p className="text-slate-700">
+                    Promuj znane marki z dobrymi opiniami. Zł złe opinie produktu
+                    nie będą konwertować i nadszarpną Twoją wiarygodność.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 p-4 bg-slate-50 rounded-lg">
+                <Award className="text-blue-600 flex-shrink-0" size={24} />
+                <div>
+                  <h4 className="font-bold text-slate-900 mb-1">
+                    Wsparcie marketingowe
+                  </h4>
+                  <p className="text-slate-700">
+                    Wiele sieci oferuje banery, grafiki i materiały promocyjne.
+                    Szukaj programów z bogatym wsparciem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Section 8 */}
+          <section className="mb-12">
+            <h2
+              id="zarobki"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Zarobki z afiliacji - Realistyczne oszacowanie
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              Ile możesz zarobić z marketingu afiliacyjnego? To zależy od
+              wielu czynników:
+            </p>
+
+            <div className="mb-8">
+              <h4 className="font-bold text-slate-900 text-lg mb-4">
+                Poziom zarobków w funkcji doświadczenia:
+              </h4>
+              <div className="space-y-3">
+                <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg">
+                  <div className="text-2xl font-bold text-slate-400">0-3 msc</div>
+                  <div>
+                    <p className="font-bold text-slate-900">100-500 PLN/m</p>
+                    <p className="text-sm text-slate-600">
+                      Nauka, testowanie, budowanie ruchu
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg">
+                  <div className="text-2xl font-bold text-slate-400">3-6 msc</div>
+                  <div>
+                    <p className="font-bold text-slate-900">500-1500 PLN/m</p>
+                    <p className="text-sm text-slate-600">
+                      Rosnący ruch, pierwsze sukcesy
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg">
+                  <div className="text-2xl font-bold text-slate-400">6-12 msc</div>
+                  <div>
+                    <p className="font-bold text-slate-900">1500-5000 PLN/m</p>
+                    <p className="text-sm text-slate-600">
+                      Autoryttet, dobre konwersje
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg">
+                  <div className="text-2xl font-bold text-slate-400">
+                    12+ msc
+                  </div>
+                  <div>
+                    <p className="font-bold text-slate-900">5000+ PLN/m</p>
+                    <p className="text-sm text-slate-600">
+                      Pasywny dochód, mnożenie kanałów
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-blue-100 border border-blue-300 rounded-lg p-6 mb-6">
+              <p className="text-slate-900">
+                Najważniejsze czynniki wpływające na zarobki:
+              </p>
+              <ul className="mt-3 space-y-2 text-slate-900">
+                <li className="flex gap-2">
+                  <span className="font-bold">•</span>
+                  <span>
+                    Wielkość i jakość Twojej widowni (ruch na stronie)
+                  </span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="font-bold">•</span>
+                  <span>Współczynnik konwersji (jak dużo osób kupuje)</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="font-bold">•</span>
+                  <span>Wysokość prowizji promowanych produktów</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="font-bold">•</span>
+                  <span>Liczba kanałów promocji, które используеsz</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Section 9 */}
+          <section className="mb-12">
+            <h2
+              id="przykłady"
+              className="text-3xl font-bold text-slate-900 mb-6"
+            >
+              Przykłady sukcesów w marketingu afiliacyjnym
+            </h2>
+            <p className="text-slate-700 text-lg leading-relaxed mb-6">
+              Wiele osób zarabia solidne dochody z afiliacji. Oto realistyczne
+              przykłady:
+            </p>
+
+            <div className="space-y-6">
+              <div className="border-l-4 border-blue-600 pl-6 py-4">
+                <h4 className="font-bold text-slate-900 mb-2">
+                  Przypadek 1: Blog o fitnesie
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  Autorka prowadzi blog o utracie wagi. Promuje suplementy,
+                  urządzenia fitness i programy treningowe. Po roku ma 3000
+                  unikalnych gości miesięcznie i zarabia 2500 PLN/m na
+                  prowizjach.
+                </p>
+                <p className="text-sm text-slate-600">
+                  Sekret: Specjalizacja, testowanie produktów, szczera opinia.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-green-600 pl-6 py-4">
+                <h4 className="font-bold text-slate-900 mb-2">
+                  Przypadek 2: YouTube o technologii
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  YouTuber pisze recenzje gadżetów i elektroniki. Ma 50k
+                  subskrybentów. Promuje produkty w opisie wideo. Średnio
+                  zarabia 5000 PLN/m dzięki wysokim konwersjom (ludzie kupują
+                  elektronikę).
+                </p>
+                <p className="text-sm text-slate-600">
+                  Sekret: Autentyczne recenzje, wysoka jakość wideo, zaangażowana
+                  publiczność.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-purple-600 pl-6 py-4">
+                <h4 className="font-bold text-slate-900 mb-2">
+                  Przypadek 3: Newsletter o finansach
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  Finansista pisze cotygodniowy newsletter dla 2000 subskrybentów.
+                  Promuje aplikacje finansowe, kursy inwestycji. Zarabia 800
+                  PLN/m.
+                </p>
+                <p className="text-sm text-slate-600">
+                  Sekret: Lojalny zespół, rekomendacje oparte na doświadczeniu,
+                  transparentne ujawnianie afiliacji.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-orange-600 pl-6 py-4">
+                <h4 className="font-bold text-slate-900 mb-2">
+                  Przypadek 4: TikTok o szminkowaniu
+                </h4>
+                <p className="text-slate-700 mb-3">
+                  Makeup artist ma 100k obserwatorów na TikToku. Promuje
+                  kosmetyki, akcesoria, kursy online. Zarabia 3500 PLN/m ze
+                  zmieniającymi się provizjami.
+                </p>
+                <p className="text-sm text-slate-600">
+                  Sekret: Konten wiralowy, trend-aware, linki w bio i
+                  Instagramie.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section className="mt-16 pt-12 border-t border-slate-200">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">
+              Najczęściej zadawane pytania
+            </h2>
+
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <details
+                  key={index}
+                  className="group bg-slate-50 rounded-lg border border-slate-200 p-6 cursor-pointer hover:border-blue-400 transition"
+                >
+                  <summary className="font-bold text-slate-900 text-lg flex justify-between items-center">
+                    {faq.question}
+                    <span className="text-blue-600 group-open:rotate-180 transition">
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-4 text-slate-700 leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="mt-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg p-8 md:p-12">
+            <div className="max-w-2xl mx-auto text-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                Gotów do startu z marketingiem afiliacyjnym?
+              </h3>
+              <p className="text-lg text-blue-100 mb-8">
+                Zarabiaj prowizje na produktach, które polubiłeś. Darmowa
+                rejestracja, bez zobowiązań.
+              </p>
+              <button className="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition">
+                Przejdź do TradeTracker
+              </button>
+            </div>
+          </section>
+
+          {/* Author & Date */}
+          <div className="mt-16 pt-8 border-t border-slate-200 text-center text-slate-600">
+            <p>Opublikował: <strong>Fotz Studio</strong></p>
+            <p className="text-sm">
+              Opublikowano: 20 stycznia 2025 | Zaktualizowano: 25 czerwca 2025
+            </p>
+          </div>
+        </article>
+      </div>
+    </Layout>
   );
 }
