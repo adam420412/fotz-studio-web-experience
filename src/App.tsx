@@ -1311,6 +1311,10 @@ const PozycjonowanieZabrze = lazy(() => import("./pages/PozycjonowanieZabrze"));
 const BlogKosztBrandingu = lazy(() => import("./pages/BlogKosztBrandingu"));
 const BlogRebrandingPoradnik = lazy(() => import("./pages/BlogRebrandingPoradnik"));
 
+// Wave 228: additional pages
+const BlogCopywritingDlaSEO = lazy(() => import("./pages/BlogCopywritingDlaSEO"));
+const AgencjaMarketingowaSosnowiec = lazy(() => import("./pages/AgencjaMarketingowaSosnowiec"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2316,6 +2320,8 @@ const App = () => (
                 <Route path="/pozycjonowanie/zabrze" element={<PozycjonowanieZabrze />} />
                 <Route path="/blog/ile-kosztuje-branding" element={<BlogKosztBrandingu />} />
                 <Route path="/blog/rebranding-kiedy-i-jak" element={<BlogRebrandingPoradnik />} />
+                <Route path="/blog/copywriting-seo-poradnik" element={<BlogCopywritingDlaSEO />} />
+                <Route path="/agencja-marketingowa/sosnowiec" element={<AgencjaMarketingowaSosnowiec />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
