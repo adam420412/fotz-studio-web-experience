@@ -1401,6 +1401,12 @@ const BlogVideoMarketingDlaFirm = lazy(() => import("./pages/BlogVideoMarketingD
 // Wave 250 new city (Gdynia - not previously declared)
 const AgencjaMarketingowaGdynia = lazy(() => import("./pages/AgencjaMarketingowaGdynia"));
 
+// Wave 253 Google Ads city pages
+const GoogleAdsKrakow = lazy(() => import("./pages/GoogleAdsKrakow"));
+const GoogleAdsWroclaw = lazy(() => import("./pages/GoogleAdsWroclaw"));
+const GoogleAdsPoznan = lazy(() => import("./pages/GoogleAdsPoznan"));
+const GoogleAdsGdansk = lazy(() => import("./pages/GoogleAdsGdansk"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2570,6 +2576,10 @@ const App = () => (
                 {/* Performance marketing cluster */}
                 <Route path="/performance-marketing/google-ads" element={<GoogleAds />} />
                 <Route path="/performance-marketing/google-ads/warszawa" element={<GoogleAdsWarszawa />} />
+                <Route path="/performance-marketing/google-ads/krakow" element={<GoogleAdsKrakow />} />
+                <Route path="/performance-marketing/google-ads/wroclaw" element={<GoogleAdsWroclaw />} />
+                <Route path="/performance-marketing/google-ads/poznan" element={<GoogleAdsPoznan />} />
+                <Route path="/performance-marketing/google-ads/gdansk" element={<GoogleAdsGdansk />} />
                 <Route path="/performance-marketing/facebook-ads" element={<FacebookAds />} />
                 <Route path="/performance-marketing/instagram-ads" element={<InstagramAds />} />
                 <Route path="/performance-marketing/meta-ads" element={<FacebookInstagramAds />} />
