@@ -460,7 +460,7 @@ const BlogKosztGoogleAds = () => {
                 </ul>
 
                 <p className="text-muted-foreground mb-6">
-                  Agencja średniej wielkości zazwyczaj pracuje z budżetem minimum 2000 zł miesięcznie od Google Ads. Poniżej tego, opłata za obsługę zje całą rentowność kampanii. Sprawdź nasze <Link to="/uslugi/google-ads" className="text-primary hover:underline">usługi Google Ads</Link> dla pełnej informacji o naszych cenach i zakrese.
+                  Agencja średniej wielkości zazwyczaj pracuje z budżetem minimum 2000 zł miesięcznie od Google Ads. Poniżej tego, opłata za obsługę zje całą rentowność kampanii. Sprawdź nasze <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">usługi Google Ads</Link> dla pełnej informacji o naszych cenach i zakrese.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -583,7 +583,7 @@ const BlogKosztGoogleAds = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90">
-                    <Link to="/uslugi/google-ads">
+                    <Link to="/performance-marketing/google-ads">
                       Dowiedz się więcej o Google Ads
                       <ChevronRight className="ml-2 h-5 w-5" />
                     </Link>
@@ -605,7 +605,7 @@ const BlogKosztGoogleAds = () => {
               >
                 <h3 className="text-xl font-heading font-bold mb-4">Powiązane usługi</h3>
                 <div className="grid sm:grid-cols-3 gap-4">
-                  <Link to="/uslugi/google-ads" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/performance-marketing/google-ads" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Google Ads</h4>
                     <p className="text-sm text-muted-foreground">Kampanie Search, Display, Shopping &amp; Video</p>
                   </Link>
@@ -667,7 +667,7 @@ const BlogKosztGoogleAds = () => {
                 </p>
 
                 <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-                  <Link to="/uslugi/google-ads" className="text-primary hover:underline font-medium text-sm">→ Kampanie Google Ads</Link>
+                  <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Kampanie Google Ads</Link>
                   <Link to="/performance-marketing/remarketing" className="text-primary hover:underline font-medium text-sm">→ Remarketing kampanie</Link>
                   <Link to="/seo" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie SEO</Link>
                   <Link to="/kontakt" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>

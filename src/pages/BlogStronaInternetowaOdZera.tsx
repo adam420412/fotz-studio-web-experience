@@ -445,7 +445,7 @@ export default function BlogStronaInternetowaOdZera() {
 
             <FadeInView delay={0.1}>
               <Link
-                to="/blog/e-commerce-dla-malego-biznesu"
+                to="/blog"
                 className="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:border-primary transition group"
               >
                 <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition">

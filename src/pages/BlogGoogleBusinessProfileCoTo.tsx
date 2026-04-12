@@ -143,7 +143,7 @@ export default function BlogGoogleBusinessProfileCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Optymalizacja GBP, lokalne SEO i budowanie cytowań NAP — pojawiaj się w Local Pack dla Twojego miasta.
                 </p>
-                <Link to="/uslugi/pozycjonowanie-stron" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Lokalne SEO — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

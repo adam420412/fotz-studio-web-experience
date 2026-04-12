@@ -405,7 +405,7 @@ export default function BlogKosztVideoMarketingowego() {
                     Zamów konsultację
                   </Link>
                   <Link
-                    to="/portfolio"
+                    to="/agencja-marketingowa/poznan"
                     className="inline-block bg-white/20 text-white px-8 py-3 rounded-lg font-bold border border-white/50 hover:bg-white/30 transition-colors"
                   >
                     Zobacz portfolio

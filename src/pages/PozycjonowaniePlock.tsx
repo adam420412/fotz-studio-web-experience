@@ -162,7 +162,7 @@ const PozycjonowaniePlock = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="/pozycjonowanie">
+                <Link to="/seo/pozycjonowanie">
                   Pakiety i ceny SEO
                 </Link>
               </Button>
@@ -489,7 +489,7 @@ const PozycjonowaniePlock = () => {
                 asChild
                 className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <Link to="/pozycjonowanie">Wszystkie pakiety SEO</Link>
+                <Link to="/seo/pozycjonowanie">Wszystkie pakiety SEO</Link>
               </Button>
             </div>
           </FadeInView>

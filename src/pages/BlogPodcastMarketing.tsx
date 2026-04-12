@@ -378,7 +378,7 @@ const BlogPodcastMarketing = () => {
                         Nagrany podcast to nie tylko treści audio. To transkrypcje do bloga, grafiki do social media, segmenty do YouTube - pełny content marketing system.
                       </p>
                       <Link
-                        to="/studio-podcastowe"
+                        to="/uslugi/studio-podcastowe"
                         className="inline-block bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
                       >
                         Dowiedz się więcej o naszych usługach podcastowych

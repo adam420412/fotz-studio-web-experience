@@ -250,7 +250,7 @@ const StronyInternetoweWalbrzych = () => {
               </p>
 
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-                <Link to="/strony-internetowe" className="text-primary hover:underline font-medium text-sm">Strony internetowe oferta</Link>
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">Strony internetowe oferta</Link>
                 <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">Landing page</Link>
                 <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">Kampanie reklamowe</Link>
                 <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">Social media</Link>

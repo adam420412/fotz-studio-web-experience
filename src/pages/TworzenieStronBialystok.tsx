@@ -265,7 +265,7 @@ export default function TworzenieStronBialystok() {
               {[
                 { city: "Warszawa", href: "/uslugi/tworzenie-stron-internetowych/warszawa" },
                 { city: "Lublin", href: "/uslugi/tworzenie-stron-internetowych/lublin" },
-                { city: "Rzeszów", href: "/uslugi/tworzenie-stron-internetowych/rzeszow" },
+                { city: "Rzeszów", href: "/uslugi/strony-internetowe/rzeszow" },
               ].map((item, idx) => (
                 <FadeInView key={idx} delay={idx * 0.1}>
                   <Link

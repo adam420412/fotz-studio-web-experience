@@ -611,8 +611,8 @@ const StronyInternetowePoznan = () => {
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron SEO</Link>
-              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie Google Ads</Link>
-              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie Google Ads</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media marketing</Link>
             </div>
           </motion.div>
         </div>

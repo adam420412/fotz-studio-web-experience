@@ -193,7 +193,7 @@ export default function UslugiCluster() {
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
                 <Link to="/seo" className="text-primary hover:underline font-medium text-sm">→ Usługi SEO</Link>
                 <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-                <Link to="/uslugi/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+                <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
                 <Link to="/kontakt" className="text-primary hover:underline font-medium text-sm">→ Kontakt</Link>
               </div>
             </motion.div>

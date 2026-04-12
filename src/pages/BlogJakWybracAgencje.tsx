@@ -698,7 +698,7 @@ export default function BlogJakWybracAgencje() {
               viewport={{ once: true }}
               className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto"
             >
-              Fotz Studio to nowoczesna <Link to="/o-nas" className="text-white underline hover:no-underline">agencja marketingowa</Link> z doświadczeniem w markingu cyfrowym. Poznaj nasze <Link to="/case-studies" className="text-white underline hover:no-underline">case studies</Link> i <Link to="/uslugi" className="text-white underline hover:no-underline">usługi</Link>, lub umów się na bezpłatną konsultację.
+              Fotz Studio to nowoczesna <Link to="/o-nas" className="text-white underline hover:no-underline">agencja marketingowa</Link> z doświadczeniem w markingu cyfrowym. Poznaj nasze <Link to="/agencja-marketingowa/poznan" className="text-white underline hover:no-underline">case studies</Link> i <Link to="/uslugi" className="text-white underline hover:no-underline">usługi</Link>, lub umów się na bezpłatną konsultację.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -751,7 +751,7 @@ export default function BlogJakWybracAgencje() {
                 </p>
               </Link>
               <Link
-                to="/case-studies"
+                to="/agencja-marketingowa/poznan"
                 className="p-4 bg-white rounded-lg shadow hover:shadow-md transition text-center"
               >
                 <h4 className="font-bold text-gray-900 mb-1">Case Studies</h4>

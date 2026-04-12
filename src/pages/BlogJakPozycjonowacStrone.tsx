@@ -187,7 +187,7 @@ export default function BlogJakPozycjonowacStrone() {
                 <p className="text-blue-700 text-sm mb-3">
                   Prowadzimy kompleksowe pozycjonowanie od 499 zł/mies. — bezpłatny audyt SEO na start.
                 </p>
-                <Link to="/uslugi/pozycjonowanie-stron" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Oferta pozycjonowania <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

@@ -492,7 +492,7 @@ export default function FacebookAdsKrakow() {
                   </Link>
                   <span className="text-muted-foreground hidden sm:inline">•</span>
                   <Link
-                    to="/blog/facebook-ads-cennik"
+                    to="/blog/cennik-facebook-ads"
                     className="text-primary hover:underline font-semibold"
                   >
                     Cennik Facebook Ads

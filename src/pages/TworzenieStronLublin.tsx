@@ -334,7 +334,7 @@ export default function TworzenieStronLublin() {
                 <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="group p-8 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all">
                   <h3 className="text-xl font-semibold mb-4">Rzeszów</h3>
                   <p className="text-muted-foreground mb-6">Tworzenie stron internetowych dla firm w Rzeszowie</p>
-                  <Link to="/uslugi/tworzenie-stron-internetowych/rzeszow" className="text-primary hover:underline font-medium">Dowiedz się więcej →</Link>
+                  <Link to="/uslugi/strony-internetowe/rzeszow" className="text-primary hover:underline font-medium">Dowiedz się więcej →</Link>
                 </motion.div>
               </div>
             </div>

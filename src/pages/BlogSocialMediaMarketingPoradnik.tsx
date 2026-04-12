@@ -491,7 +491,7 @@ export default function BlogSocialMediaMarketingPoradnik() {
                 </p>
               </div>
 
-              <Link to="/uslugi/social-media-obsluga">
+              <Link to="/social-media/obsluga">
                 <button className="mt-6 px-8 py-3 bg-gradient-to-r from-pink-600 to-rose-600 text-white font-bold rounded-lg hover:from-pink-700 hover:to-rose-700 transition-all shadow-lg">
                   Dowiedz sie wiecej o naszcych uslugach SM
                 </button>
@@ -509,7 +509,7 @@ export default function BlogSocialMediaMarketingPoradnik() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/uslugi/social-media">
+                <Link to="/social-media/obsluga">
                   <button className="w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-pink-600 to-rose-600 text-white font-bold rounded-lg hover:from-pink-700 hover:to-rose-700 transition-all">
                     Poznaj naszych uslugach
                   </button>
@@ -566,7 +566,7 @@ export default function BlogSocialMediaMarketingPoradnik() {
                 </Link>
 
                 <Link
-                  to="/uslugi/social-media"
+                  to="/social-media/obsluga"
                   className="p-6 bg-slate-50 border border-slate-200 rounded-lg hover:border-pink-300 transition-colors hover:shadow-md"
                 >
                   <h4 className="font-bold text-slate-900 mb-2">Usluga Social Media Marketing</h4>

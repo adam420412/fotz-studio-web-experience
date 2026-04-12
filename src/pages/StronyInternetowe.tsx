@@ -334,7 +334,7 @@ const StronyInternetowe = () => {
         title="Strony Internetowe — Tworzenie i Projektowanie Stron WWW dla Firm | Fotz Studio"
         description="Strony internetowe dla firm od Fotz Studio — szybkie, nowoczesne, zoptymalizowane pod SEO. Tworzymy strony www, sklepy e-commerce i landing page. Wycena gratis."
         canonical="https://fotz.pl/uslugi/strony-internetowe"
-        keywords="strony internetowe, tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, nowoczesne strony internetowe, profesjonalne strony internetowe"
+        keywords="strony internetowe, tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, nowoczesne strony internetowe, profesjonalne strony internetowe, wykonanie strony internetowej, responsywna strona www, wordpress, agencja stron internetowych, strona internetowa dla firmy, landing page, sklep internetowy"
       />
       
       <ServiceSchema 
@@ -397,7 +397,7 @@ const StronyInternetowe = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                Projektujemy z myślą o ROI. <span className="text-foreground font-medium">Szybkie, responsywne, zoptymalizowane pod SEO.</span> Od wizytówki po rozbudowany e-commerce – budujemy narzędzia, które generują przychód.
+                Projektujemy z myślą o ROI. <span className="text-foreground font-medium">Szybkie, responsywne strony www, zoptymalizowane pod SEO.</span> Wykonanie strony internetowej w React, Next.js lub WordPress — od wizytówki i landing page po rozbudowany sklep internetowy. Budujemy profesjonalne strony internetowe dla firm, które generują przychód.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4 sm:px-0">

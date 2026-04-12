@@ -538,7 +538,7 @@ const BlogStrategiaContent = () => {
                     <Link to="/kontakt">Bezpłatna konsultacja</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <Link to="/uslugi/content-marketing">Nasze usługi</Link>
+                    <Link to="/content-marketing">Nasze usługi</Link>
                   </Button>
                 </div>
               </div>
@@ -551,11 +551,11 @@ const BlogStrategiaContent = () => {
                     <h4 className="font-semibold mb-2">Content marketing poradnik</h4>
                     <p className="text-sm text-muted-foreground">Fundamenty Content Marketingu</p>
                   </Link>
-                  <Link to="/uslugi/content-marketing" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/content-marketing" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Usługa content marketingu</h4>
                     <p className="text-sm text-muted-foreground">Tworzenie i dystrybucja treści</p>
                   </Link>
-                  <Link to="/cennik-content-marketing" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/cennik" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Cennik content marketingu</h4>
                     <p className="text-sm text-muted-foreground">Przejrzyste ceny i pakiety</p>
                   </Link>

@@ -167,7 +167,7 @@ const PozycjonowanieKalisz = () => {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base px-8">
-                <Link to="/pozycjonowanie">
+                <Link to="/seo/pozycjonowanie">
                   Pakiety i ceny SEO
                 </Link>
               </Button>
@@ -442,7 +442,7 @@ const PozycjonowanieKalisz = () => {
                 asChild
                 className="text-base px-8 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <Link to="/pozycjonowanie">Wszystkie pakiety SEO</Link>
+                <Link to="/seo/pozycjonowanie">Wszystkie pakiety SEO</Link>
               </Button>
             </div>
           </FadeInView>
@@ -504,7 +504,7 @@ const PozycjonowanieKalisz = () => {
           </div>
           <div className="mt-4">
             <Link
-              to="/pozycjonowanie"
+              to="/seo/pozycjonowanie"
               className="text-primary hover:underline text-sm font-medium inline-flex items-center gap-1"
             >
               <ArrowRight className="w-3 h-3" /> Wszystkie pakiety pozycjonowania

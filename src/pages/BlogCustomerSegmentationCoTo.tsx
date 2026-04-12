@@ -155,7 +155,7 @@ export default function BlogCustomerSegmentationCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Email marketing i kampanie reklamowe z segmentacją — docieramy do właściwych grup właściwym komunikatem.
                 </p>
-                <Link to="/uslugi/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/performance-marketing/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Kampanie z targetowaniem — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

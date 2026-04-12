@@ -385,7 +385,7 @@ const BlogContentMarketing = () => {
                     <Link to="/kontakt">Bezpłatna konsultacja</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <Link to="/uslugi/content-marketing">Usługa content marketingu</Link>
+                    <Link to="/content-marketing">Usługa content marketingu</Link>
                   </Button>
                 </div>
               </motion.div>

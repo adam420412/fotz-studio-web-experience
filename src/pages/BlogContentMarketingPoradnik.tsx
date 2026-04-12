@@ -418,7 +418,7 @@ const BlogContentMarketingPoradnik = () => {
                     <Link to="/kontakt">Umów bezpłatną konsultację</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400/10">
-                    <Link to="/uslugi/content-marketing">Poznaj usługę content marketingu</Link>
+                    <Link to="/content-marketing">Poznaj usługę content marketingu</Link>
                   </Button>
                 </div>
               </div>
@@ -431,11 +431,11 @@ const BlogContentMarketingPoradnik = () => {
                     <h4 className="font-semibold text-white mb-2">Copywriting SEO</h4>
                     <p className="text-sm text-gray-400">Pisanie treści optymalizowanych dla Google i użytkowników</p>
                   </Link>
-                  <Link to="/blog/seo-dla-firm" className="p-4 bg-gray-900 rounded-xl border border-gray-700 hover:border-yellow-400/50 transition-all">
+                  <Link to="/blog/pozycjonowanie-co-to" className="p-4 bg-gray-900 rounded-xl border border-gray-700 hover:border-yellow-400/50 transition-all">
                     <h4 className="font-semibold text-white mb-2">SEO dla firm</h4>
                     <p className="text-sm text-gray-400">Kompleksowa strategia pozycjonowania witryny</p>
                   </Link>
-                  <Link to="/uslugi/content-marketing" className="p-4 bg-gray-900 rounded-xl border border-gray-700 hover:border-yellow-400/50 transition-all">
+                  <Link to="/content-marketing" className="p-4 bg-gray-900 rounded-xl border border-gray-700 hover:border-yellow-400/50 transition-all">
                     <h4 className="font-semibold text-white mb-2">Usługa content marketingu</h4>
                     <p className="text-sm text-gray-400">Profesjonalna produkcja treści od strategii do publikacji</p>
                   </Link>

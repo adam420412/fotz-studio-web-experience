@@ -386,7 +386,7 @@ export default function BlogProwadzenieSocialMediaCennik() {
               </div>
             </div>
             <Link
-              to="/uslugi/social-media"
+              to="/social-media/obsluga"
               className="inline-block bg-purple-700 hover:bg-purple-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
             >
               Zobacz ofertę obsługi social media →
@@ -439,7 +439,7 @@ export default function BlogProwadzenieSocialMediaCennik() {
           <div className="text-sm text-gray-500 border-t border-gray-200 pt-8">
             <p>
               <strong>Powiązane artykuły:</strong>{" "}
-              <Link to="/uslugi/social-media" className="text-blue-600 hover:underline">Obsługa Social Media — oferta Fotz</Link>
+              <Link to="/social-media/obsluga" className="text-blue-600 hover:underline">Obsługa Social Media — oferta Fotz</Link>
               {" · "}
               <Link to="/blog/google-ads-cennik" className="text-blue-600 hover:underline">Google Ads cennik 2025</Link>
               {" · "}

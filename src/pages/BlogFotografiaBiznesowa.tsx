@@ -682,7 +682,7 @@ export default function BlogFotografiaBiznesowa() {
               </Link>
 
               <Link
-                to="/uslugi/sesje-fotograficzne"
+                to="/uslugi/fotografia"
                 className="border border-slate-300 rounded-lg p-6 hover:border-amber-500 hover:shadow-lg transition"
               >
                 <div className="text-amber-700 font-bold text-sm mb-2">

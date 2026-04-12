@@ -497,7 +497,7 @@ const LogoIBranding = () => {
 
           <FadeInView className="text-center mt-8">
             <Button variant="outline" asChild>
-              <Link to="/portfolio">
+              <Link to="/agencja-marketingowa/poznan">
                 Zobacz całe portfolio <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
@@ -731,13 +731,13 @@ const LogoIBranding = () => {
               → Strony internetowe
             </Link>
             <Link
-              to="/uslugi/kampanie-reklamowe"
+              to="/performance-marketing"
               className="text-primary hover:underline font-medium text-sm"
             >
               → Kampanie reklamowe
             </Link>
             <Link
-              to="/uslugi/social-media"
+              to="/social-media/obsluga"
               className="text-primary hover:underline font-medium text-sm"
             >
               → Social media marketing

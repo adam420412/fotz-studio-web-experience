@@ -170,7 +170,7 @@ export default function BlogPozycjonowanieCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Oferta od 499 zł/mies. — bezpłatny audyt SEO, plan działania i miesięczne raporty.
                 </p>
-                <Link to="/uslugi/pozycjonowanie-stron" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Sprawdź ofertę pozycjonowania <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

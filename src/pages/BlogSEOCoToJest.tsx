@@ -191,7 +191,7 @@ export default function BlogSEOCoToJest() {
                 <p className="text-blue-700 text-sm mb-3">
                   Prowadzimy pozycjonowanie stron od 499 zł/mies. Audyt bezpłatny.
                 </p>
-                <Link to="/uslugi/pozycjonowanie-stron" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Pozycjonowanie stron — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

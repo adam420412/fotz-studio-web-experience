@@ -122,7 +122,7 @@ export default function BlogPozycjonowanieStron() {
                 Czym jest pozycjonowanie stron?
               </h2>
               <p>
-                <strong>Pozycjonowanie stron internetowych</strong> (SEO, Search Engine Optimization) to proces poprawy widoczności Twojej strony w organicznych wynikach wyszukiwania Google, Bing i innych wyszukiwarek. Dobra pozycja w wynikach wyszukiwania to trafik bez płacenia za każdy klik — inaczej niż w <Link to="/reklama-google" className="text-primary hover:underline">reklamie Google Ads</Link>, gdzie każde kliknięcie kosztuje.
+                <strong>Pozycjonowanie stron internetowych</strong> (SEO, Search Engine Optimization) to proces poprawy widoczności Twojej strony w organicznych wynikach wyszukiwania Google, Bing i innych wyszukiwarek. Dobra pozycja w wynikach wyszukiwania to trafik bez płacenia za każdy klik — inaczej niż w <Link to="/performance-marketing/google-ads" className="text-primary hover:underline">reklamie Google Ads</Link>, gdzie każde kliknięcie kosztuje.
               </p>
               <p>
                 Dlaczego pozycjonowanie jest ważne? Aż 91% użytkowników internetu korzysta z wyszukiwarek do znalezienia produktów i usług. Jeśli Twoja strona nie pojawia się na pierwszej stronie wyników dla kluczowych słów, traciasz potencjalnych klientów. Pozycjonowanie SEO to inwestycja w długoterminowy wzrost biznesu — efekty utrzymują się przez lata.
@@ -198,7 +198,7 @@ export default function BlogPozycjonowanieStron() {
 
               <h3>4. Zawartość (Content)</h3>
               <p>
-                Najlepsze SEO to piszanie dla użytkownika, nie dla Google. Piękne słowa bez wartości nie dadzą pozycji. Dobra zawartość SEO to: odpowiednia długość (zazwyczaj 1500+ słów dla konkurencyjnych słów kluczowych), odpowiedzi na pytania użytkownika, zastosowanie <Link to="/content-marketing/strategie" className="text-primary hover:underline">content marketing</Link>, formaty (tekst, listy, przykłady, case studies).
+                Najlepsze SEO to piszanie dla użytkownika, nie dla Google. Piękne słowa bez wartości nie dadzą pozycji. Dobra zawartość SEO to: odpowiednia długość (zazwyczaj 1500+ słów dla konkurencyjnych słów kluczowych), odpowiedzi na pytania użytkownika, zastosowanie <Link to="/content-marketing/strategia" className="text-primary hover:underline">content marketing</Link>, formaty (tekst, listy, przykłady, case studies).
               </p>
               <p>
                 Wstaw słowo kluczowe naturalnie w: artykule (1-2%), nagłówkach, pierwszym akapicie, ostatnim akapicie. Unikaj "keyword stuffing" (wkuwanie słowa wszędzie) — Google każe za to karami.

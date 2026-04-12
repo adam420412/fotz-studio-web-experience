@@ -52,9 +52,10 @@ export const TikTokAdsGdansk = () => {
   return (
     <Layout>
       <SEOHead
-        title="TikTok Ads Gdańsk — agencja kampanii reklamowych TikTok | Fotz.pl"
-        description="Reklamy TikTok Ads Gdańsk — agencja Fotz.pl. Kampanie TikTok dla firm z Gdańska i Trójmiasta: In-Feed Ads, Spark Ads, kreacje wideo. Bezpłatna konsultacja!"
+        title="TikTok Ads Gdańsk — Agencja Reklam TikTok dla Firm z Trójmiasta | Fotz.pl"
+        description="Agencja TikTok Ads Gdańsk — kampanie TikTok for Business dla firm z Gdańska i Trójmiasta. In-Feed Ads, Spark Ads, TikTok Pixel, kreacje wideo. Fotz.pl — bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/tiktok-ads/gdansk"
+        keywords="tiktok ads gdańsk, agencja tiktok ads gdańsk, reklamy tiktok trójmiasto, tiktok for business gdańsk, tiktok pixel gdańsk, tiktok ads manager gdańsk, kampanie tiktok gdańsk, in-feed ads gdańsk"
       />
 
       <ServiceSchema
@@ -74,9 +75,7 @@ export const TikTokAdsGdansk = () => {
               TikTok Ads Gdańsk — Kampanie Reklamowe na TikToku dla Firm
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              Agencja Fotz.pl specjalizuje się w kampaniach TikTok Ads w Gdańsku i Trójmieście. Tworzymy kreatywne
-              materiały wideo, prowadzimy reklamy na TikToku z pełną optymalizacją konwersji i dosięgamy właściwej
-              grupy docelowej. Dołącz do firm, które zwiększyły sprzedaż dzięki reklamom na platformie TikTok.
+              Agencja TikTok Ads Gdańsk — Fotz.pl specjalizuje się w kampaniach TikTok for Business dla firm z Gdańska i Trójmiasta. Tworzymy kreatywne materiały wideo, konfigurujemy TikTok Pixel, zarządzamy TikTok Ads Manager i prowadzimy reklamy z pełną optymalizacją konwersji. Dołącz do firm, które zwiększyły sprzedaż dzięki reklamom na platformie TikTok.
             </p>
             <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
               Bezpłatna konsultacja
@@ -448,7 +447,7 @@ export const TikTokAdsGdansk = () => {
                 Instagram Ads — Kampanie na Instagramie
               </Link>
               <Link
-                to="/performance-marketing/social-media-marketing"
+                to="/social-media/obsluga"
                 className="text-blue-600 hover:text-blue-800 hover:underline font-semibold text-lg"
               >
                 Social Media Marketing — Strategie na social media

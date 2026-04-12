@@ -158,7 +158,7 @@ export default function BlogLeadNurturingCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Strony B2B i kampanie Google Ads — generujemy leady i doradzamy w strategii ich nurturowania.
                 </p>
-                <Link to="/uslugi/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/performance-marketing/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Lead generation B2B — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

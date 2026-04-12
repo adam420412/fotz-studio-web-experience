@@ -507,7 +507,7 @@ export default function AgencjaMarketingowaKoszalin() {
               </p>
 
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-                <Link to="/agencja-marketingowa" className="text-primary hover:underline font-medium text-sm">
+                <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">
                   Powrot do agencji marketingowej
                 </Link>
                 <Link to="/kontakt" className="text-primary hover:underline font-medium text-sm">

@@ -686,13 +686,13 @@ export default function UslugiLandingPage() {
                   → Pozycjonowanie SEO
                 </Link>
                 <Link
-                  to="/uslugi/kampanie-reklamowe"
+                  to="/performance-marketing"
                   className="text-primary hover:underline font-medium text-sm"
                 >
                   → Kampanie Google Ads
                 </Link>
                 <Link
-                  to="/uslugi/social-media"
+                  to="/social-media/obsluga"
                   className="text-primary hover:underline font-medium text-sm"
                 >
                   → Social media marketing

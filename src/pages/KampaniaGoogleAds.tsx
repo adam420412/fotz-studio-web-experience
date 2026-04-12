@@ -208,7 +208,7 @@ export default function KampaniaGoogleAds() {
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
                   Bezpłatna analiza słów kluczowych <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Link to="/uslugi/google-ads">
+                <Link to="/performance-marketing/google-ads">
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">
                     Więcej o Google Ads
                   </Button>
@@ -369,7 +369,7 @@ export default function KampaniaGoogleAds() {
             <div className="max-w-5xl mx-auto px-4 md:px-6">
               <h2 className="text-2xl font-bold text-center mb-8">Sprawdź też nasze inne usługi</h2>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link to="/uslugi/google-ads" className="bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
+                <Link to="/performance-marketing/google-ads" className="bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">
                   <span className="font-medium text-slate-800">Google Ads — pełna oferta</span>
                 </Link>
                 <Link to="/uslugi/audyt-seo" className="bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-400 transition-colors">

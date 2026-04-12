@@ -1616,7 +1616,7 @@ export default function BlogStronaDlaFirmy() {
                 </p>
               </Link>
               <Link
-                to="/blog/pozycjonowanie-stron-internetowych-poradnik"
+                to="/blog/pozycjonowanie-co-to"
                 className="border border-border rounded-lg p-6 hover:shadow-md hover:border-primary transition-all"
               >
                 <h3 className="font-bold text-primary mb-2">

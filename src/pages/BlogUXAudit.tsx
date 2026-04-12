@@ -415,7 +415,7 @@ export default function BlogUXAudit() {
                   Audyt sam z siebie nie zwiększa konwersji — akcja na jego podstawie tak. Dlatego oferujemy audyty UX
                   połączone z konkretnymi rekomendacjami i wsparciem przy wdrożeniu zmian.
                 </p>
-                <Link to="/uslugi/audyt-ux-strony" className="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-lg hover:bg-yellow-500 transition-colors">
+                <Link to="/uslugi/audyt-strony-internetowej" className="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 font-bold px-4 py-2 rounded-lg hover:bg-yellow-500 transition-colors">
                   Zamów audyt UX strony <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

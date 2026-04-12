@@ -172,7 +172,7 @@ export default function BlogQualityScoreCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Optymalizacja Google Ads — poprawiamy Quality Score i obniżamy CPL przy tym samym budżecie.
                 </p>
-                <Link to="/uslugi/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/performance-marketing/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Google Ads — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

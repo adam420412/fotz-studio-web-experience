@@ -95,7 +95,7 @@ export default function AgencjaSEOPoznan() {
         title="Agencja SEO Poznań — Pozycjonowanie Stron Internetowych | Fotz Studio"
         description="Agencja SEO Poznań — pozycjonowanie stron internetowych, audyt SEO, link building i optymalizacja techniczna. Zwiększ widoczność w Google. Fotz Studio."
         canonical="https://fotz.pl/agencja-seo-poznan"
-        keywords="agencja SEO Poznań, pozycjonowanie stron Poznań, SEO Poznań, optymalizacja SEO, link building Poznań, audyt SEO Poznań, lokalne SEO Poznań"
+        keywords="agencja SEO Poznań, pozycjonowanie stron Poznań, SEO Poznań, optymalizacja SEO, link building Poznań, audyt SEO Poznań, lokalne SEO Poznań, core web vitals poznań, pozycjonowanie lokalne poznań, agencja pozycjonowania poznań, frazy kluczowe poznań, SEO techniczne poznań"
       />
 
       <ServiceSchema
@@ -143,8 +143,10 @@ export default function AgencjaSEOPoznan() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Szukasz agencji SEO w Poznaniu, która realnie poprawia pozycje w Google?
-              Fotz Studio to doświadczony partner w pozycjonowaniu stron www i sklepów internetowych dla firm z Wielkopolski.
+              Szukasz agencji SEO w Poznaniu, która realnie poprawia pozycje w Google?{" "}
+              <strong className="text-foreground">Fotz Studio</strong> to doświadczona agencja pozycjonowania Poznań —
+              oferujemy audyt SEO Poznań, SEO techniczne (Core Web Vitals, dane strukturalne), pozycjonowanie lokalne Poznań
+              i strategiczny dobór fraz kluczowych dla firm z Wielkopolski.
             </motion.p>
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">

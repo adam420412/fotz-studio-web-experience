@@ -538,7 +538,7 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                     <h4 className="font-bold text-slate-900">Poznaj nasze uslugi:</h4>
                     <ul className="space-y-2">
                       <li>
-                        <Link to="/uslugi/tworzenie-stron" className="text-blue-600 hover:text-blue-700 underline">
+                        <Link to="/uslugi/tworzenie-stron-internetowych" className="text-blue-600 hover:text-blue-700 underline">
                           Tworzenie stron internetowych
                         </Link>
                       </li>
@@ -548,12 +548,12 @@ export default function BlogJakWybracAgencjeMarketingowa() {
                         </Link>
                       </li>
                       <li>
-                        <Link to="/uslugi/social-media" className="text-blue-600 hover:text-blue-700 underline">
+                        <Link to="/social-media/obsluga" className="text-blue-600 hover:text-blue-700 underline">
                           Prowadzenie social media
                         </Link>
                       </li>
                       <li>
-                        <Link to="/uslugi/zdjecia-wideo" className="text-blue-600 hover:text-blue-700 underline">
+                        <Link to="/uslugi/produkcja-video" className="text-blue-600 hover:text-blue-700 underline">
                           Fotografia i wideo
                         </Link>
                       </li>

@@ -552,7 +552,7 @@ const BlogWizualizacje3DEcommerce = () => {
                 Zwiększ sprzedaż swoich produktów dzięki zaawansowanym wizualizacjom 3D. Nasz zespół pomoże Ci wdrożyć najnowsze technologie w Twoim e-commerce.
               </p>
               <Link
-                to="/uslugi/wizualizacje-3d"
+                to="/uslugi/produkcja-filmow"
                 className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-8 py-3 font-bold text-white hover:bg-blue-700"
               >
                 Dowiedz się więcej o naszych usługach

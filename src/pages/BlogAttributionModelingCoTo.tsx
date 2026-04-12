@@ -166,7 +166,7 @@ export default function BlogAttributionModelingCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Analityka marketingowa i GA4 — konfigurujemy atrybucję i raportowanie dla wielokanałowego marketingu.
                 </p>
-                <Link to="/uslugi/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/performance-marketing/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Marketing analytics — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

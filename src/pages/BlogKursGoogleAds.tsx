@@ -174,7 +174,7 @@ export default function BlogKursGoogleAds() {
                 <p className="text-blue-700 text-sm mb-3">
                   Jeśli nie masz czasu na naukę — prowadzimy Google Ads od 499 zł/mies.
                 </p>
-                <Link to="/uslugi/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/performance-marketing/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Obsługa Google Ads — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

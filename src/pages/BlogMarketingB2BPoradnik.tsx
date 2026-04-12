@@ -676,7 +676,7 @@ const BlogMarketingB2BPoradnik = () => {
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <Link
-                    to="/social-media/linkedin"
+                    to="/performance-marketing/linkedin-ads"
                     className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
                   >
                     LinkedIn Marketing <ArrowRight className="w-4 h-4" />

@@ -483,7 +483,7 @@ const FotografiaProduktowa = () => {
 
           <FadeInView className="text-center mt-8">
             <Button variant="outline" asChild>
-              <Link to="/portfolio">
+              <Link to="/agencja-marketingowa/poznan">
                 Zobacz całe portfolio <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>

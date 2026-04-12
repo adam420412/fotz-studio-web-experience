@@ -40,8 +40,9 @@ const template = fs.readFileSync(INDEX_HTML, 'utf-8');
 function extractSEOHead(filePath) {
   const content = fs.readFileSync(filePath, 'utf-8');
   
-  // Match <SEOHead ... /> or <SEOHead ...> (multiline)
-  const seoMatch = content.match(/<SEOHead\s+([^]*?)\/>/);
+  // Match <SEOHead ... /> (self-closing) OR <SEOHead ...>...</SEOHead> (with children)
+  const seoMatch = content.match(/<SEOHead\s+([^]*?)\/>/) ||
+                   content.match(/<SEOHead\s+([^]*?)>/);
   if (!seoMatch) return null;
   
   const propsStr = seoMatch[1];
@@ -228,7 +229,7 @@ function injectMeta(html, meta) {
   }
 
   const seoSection = `<section id="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;pointer-events:none" aria-hidden="true">
-      <h1>${meta.title.replace(/ \| Fotz.*$/, '')}</h1>
+      <p class="page-title">${meta.title.replace(/ \| Fotz.*$/, '')}</p>
       <p>${meta.description}</p>
       <nav>${relatedLinks} · <a href="/">Fotz Studio — Agencja Marketingowa</a> · <a href="/kontakt">Kontakt</a></nav>
     </section>

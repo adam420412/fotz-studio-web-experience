@@ -610,7 +610,7 @@ const StronyInternetoweBydgoszcz = () => {
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
                 <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
                 <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
-                <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+                <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
                 <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
               </div>
             </div>
@@ -704,7 +704,7 @@ const StronyInternetoweBydgoszcz = () => {
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
               <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
-              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
             </div>
           </motion.div>
         </div>

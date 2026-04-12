@@ -142,7 +142,7 @@ const CaseStudyLocalSEO = () => {
           </div>
 
           <div className="container-wide relative z-10">
-            <Link to="/case-studies" className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-8">
+            <Link to="/agencja-marketingowa/poznan" className="inline-flex items-center gap-2 text-foreground/60 hover:text-primary transition-colors mb-8">
               <ArrowLeft className="w-4 h-4" />
               Powrót do case studies
             </Link>
@@ -750,7 +750,7 @@ const CaseStudyLocalSEO = () => {
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
                 <Link to="/kontakt" className="text-primary hover:underline font-medium text-sm">→ Skontaktuj się z nami</Link>
                 <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Usługi SEO</Link>
-                <Link to="/case-studies" className="text-primary hover:underline font-medium text-sm">→ Więcej case studies</Link>
+                <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">→ Więcej case studies</Link>
                 <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Darmowy audyt</Link>
               </div>
             </motion.div>

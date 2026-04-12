@@ -554,7 +554,7 @@ const BlogSEOWordPress = () => {
               <div className="mt-8 p-8 bg-muted/30 rounded-2xl">
                 <h3 className="text-xl font-heading font-bold mb-4">Powiązane artykuły i usługi</h3>
                 <div className="grid sm:grid-cols-3 gap-4">
-                  <Link to="/blog/seo-poradnik" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/blog/pozycjonowanie-co-to" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">SEO Poradnik 2025</h4>
                     <p className="text-sm text-muted-foreground">Kompletny przewodnik pozycjonowania</p>
                   </Link>

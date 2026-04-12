@@ -476,7 +476,7 @@ const BlogMarketingLokalny = () => {
                       <Link to="/kontakt">Bezpłatna konsultacja</Link>
                     </Button>
                     <Button asChild variant="outline" size="lg" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400/10">
-                      <Link to="/uslugi/marketing-lokalny">Sprawdź usługi</Link>
+                      <Link to="/uslugi/pozycjonowanie-lokalne">Sprawdź usługi</Link>
                     </Button>
                   </div>
                 </motion.div>

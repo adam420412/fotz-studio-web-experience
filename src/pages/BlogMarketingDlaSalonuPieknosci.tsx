@@ -612,7 +612,7 @@ const BlogMarketingDlaSalonuPieknosci = () => {
                       <Link to="/kontakt">Bezpłatna konsultacja</Link>
                     </Button>
                     <Button asChild variant="outline" size="lg" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400/10">
-                      <Link to="/uslugi/marketing">Sprawdź nasze usługi</Link>
+                      <Link to="/uslugi/marketing-internetowy">Sprawdź nasze usługi</Link>
                     </Button>
                   </div>
                 </div>
@@ -621,7 +621,7 @@ const BlogMarketingDlaSalonuPieknosci = () => {
                 <div className="mt-8 p-8 bg-gray-800/30 rounded-2xl border border-gray-700">
                   <h3 className="text-xl font-bold mb-4 text-white">Powiązane artykuły i usługi</h3>
                   <div className="grid sm:grid-cols-3 gap-4">
-                    <Link to="/blog/social-media-marketing" className="p-4 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-yellow-400/50 transition-all">
+                    <Link to="/blog" className="p-4 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-yellow-400/50 transition-all">
                       <h4 className="font-semibold text-white mb-2">Social Media Marketing</h4>
                       <p className="text-sm text-gray-400">Instagram i TikTok strategie</p>
                     </Link>

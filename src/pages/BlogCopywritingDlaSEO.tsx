@@ -478,7 +478,7 @@ const BlogCopywritingDlaSEO = () => {
                     <Link to="/kontakt">Zapytaj o copywriting SEO</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <Link to="/cennik-copywritingu">Sprawdź cennik</Link>
+                    <Link to="/cennik">Sprawdź cennik</Link>
                   </Button>
                 </div>
               </motion.div>
@@ -492,15 +492,15 @@ const BlogCopywritingDlaSEO = () => {
               >
                 <h3 className="text-xl font-heading font-bold mb-4">Powiązane artykuły i usługi</h3>
                 <div className="grid sm:grid-cols-3 gap-4">
-                  <Link to="/blog/content-marketing-strategie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-yellow-400/50 transition-all">
+                  <Link to="/blog" className="p-4 bg-card rounded-xl border border-border/50 hover:border-yellow-400/50 transition-all">
                     <h4 className="font-semibold mb-2">Content marketing strategie</h4>
                     <p className="text-sm text-muted-foreground">Jak budować strategię treści</p>
                   </Link>
-                  <Link to="/uslugi/copywriting" className="p-4 bg-card rounded-xl border border-border/50 hover:border-yellow-400/50 transition-all">
+                  <Link to="/content-marketing/copywriting-landing" className="p-4 bg-card rounded-xl border border-border/50 hover:border-yellow-400/50 transition-all">
                     <h4 className="font-semibold mb-2">Usługa copywritingu</h4>
                     <p className="text-sm text-muted-foreground">Profesjonalne teksty do Twojej witryny</p>
                   </Link>
-                  <Link to="/blog/seo-pozycjonowanie" className="p-4 bg-card rounded-xl border border-border/50 hover:border-yellow-400/50 transition-all">
+                  <Link to="/blog/pozycjonowanie-co-to" className="p-4 bg-card rounded-xl border border-border/50 hover:border-yellow-400/50 transition-all">
                     <h4 className="font-semibold mb-2">SEO pozycjonowanie</h4>
                     <p className="text-sm text-muted-foreground">Kompleksowa strategie SEO</p>
                   </Link>

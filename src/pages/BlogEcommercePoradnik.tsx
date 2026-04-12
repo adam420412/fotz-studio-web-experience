@@ -448,7 +448,7 @@ const BlogEcommercePoradnik = () => {
                       <Link to="/kontakt">Bezpłatna wycena e-commerce</Link>
                     </Button>
                     <Button asChild variant="outline" size="lg" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400/10">
-                      <Link to="/uslugi/e-commerce">Usługi e-commerce</Link>
+                      <Link to="/uslugi/sklepy-internetowe">Usługi e-commerce</Link>
                     </Button>
                   </div>
                 </div>

@@ -427,7 +427,7 @@ const BlogCoToJestSeo = () => {
               Rekomendujemy <strong className="text-foreground">strategię hybrydową</strong>:
               Google Ads do szybkiego generowania leadów w krótkim terminie + SEO jako
               inwestycja w organiczną widoczność na lata. Sprawdź naszą ofertę{" "}
-              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium">
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium">
                 kampanii reklamowych Google Ads
               </Link>{" "}
               i{" "}

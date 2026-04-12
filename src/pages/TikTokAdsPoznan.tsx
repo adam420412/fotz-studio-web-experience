@@ -448,7 +448,7 @@ export const TikTokAdsPoznan = () => {
                 Instagram Ads — Kampanie na Instagramie
               </Link>
               <Link
-                to="/performance-marketing/social-media-marketing"
+                to="/social-media/obsluga"
                 className="text-blue-600 hover:text-blue-800 hover:underline font-semibold text-lg"
               >
                 Social Media Marketing — Strategie na social media

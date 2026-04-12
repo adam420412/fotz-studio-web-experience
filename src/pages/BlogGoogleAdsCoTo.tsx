@@ -205,7 +205,7 @@ export default function BlogGoogleAdsCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Prowadzimy kampanie Google Ads od 499 zł/mies. — konfiguracja, optymalizacja, raporty.
                 </p>
-                <Link to="/uslugi/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/performance-marketing/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Google Ads — nasza oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

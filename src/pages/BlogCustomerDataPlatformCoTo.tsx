@@ -165,7 +165,7 @@ export default function BlogCustomerDataPlatformCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Integracja narzędzi martech i strategia danych — pomagamy budować ekosystem marketing technology.
                 </p>
-                <Link to="/uslugi/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/performance-marketing/google-ads" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   Marketing Analytics — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

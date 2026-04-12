@@ -327,7 +327,7 @@ export default function BlogGoogleAdsVsSeo() {
                   <li>✓ Remarketing i listy odbiorców</li>
                 </ul>
                 <Link
-                  to="/uslugi/google-ads"
+                  to="/performance-marketing/google-ads"
                   className="inline-block mt-4 text-blue-700 font-semibold text-sm hover:underline"
                 >
                   Dowiedz się więcej o kampaniach Google Ads →
@@ -402,7 +402,7 @@ export default function BlogGoogleAdsVsSeo() {
               {" · "}
               <Link to="/uslugi/pozycjonowanie" className="text-blue-600 hover:underline">Pozycjonowanie stron internetowych</Link>
               {" · "}
-              <Link to="/uslugi/google-ads" className="text-blue-600 hover:underline">Kampanie Google Ads — oferta</Link>
+              <Link to="/performance-marketing/google-ads" className="text-blue-600 hover:underline">Kampanie Google Ads — oferta</Link>
             </p>
           </div>
         </FadeInView>

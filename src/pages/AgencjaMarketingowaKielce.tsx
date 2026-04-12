@@ -323,7 +323,7 @@ const AgencjaMarketingowaKielce = () => {
                 Specjalizujemy się w usługach dla firm, które chcą rosnąć w Kielcach i regionie Świętokrzyskiego. Znamy konkurencję, wiemy, jakie są najczęściej szukane frazy, i rozumiemy lokalny biznes.
               </p>
               <div className="mt-8 pt-6 border-t border-gray-700 flex flex-wrap gap-x-6 gap-y-2">
-                <Link to="/agencja" className="text-yellow-400 hover:text-yellow-300 font-medium text-sm transition-colors">
+                <Link to="/agencja-marketingowa/poznan" className="text-yellow-400 hover:text-yellow-300 font-medium text-sm transition-colors">
                   → O agencji
                 </Link>
                 <Link to="/seo/pozycjonowanie" className="text-yellow-400 hover:text-yellow-300 font-medium text-sm transition-colors">
@@ -332,7 +332,7 @@ const AgencjaMarketingowaKielce = () => {
                 <Link to="/uslugi/strony-internetowe" className="text-yellow-400 hover:text-yellow-300 font-medium text-sm transition-colors">
                   → Strony internetowe
                 </Link>
-                <Link to="/portfolio" className="text-yellow-400 hover:text-yellow-300 font-medium text-sm transition-colors">
+                <Link to="/agencja-marketingowa/poznan" className="text-yellow-400 hover:text-yellow-300 font-medium text-sm transition-colors">
                   → Portfolio
                 </Link>
               </div>

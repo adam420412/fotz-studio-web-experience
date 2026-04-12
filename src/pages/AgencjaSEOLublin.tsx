@@ -109,7 +109,7 @@ export default function AgencjaSEOLublin() {
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
                   Bezpłatny audyt SEO <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Link to="/uslugi/pozycjonowanie-stron-internetowych">
+                <Link to="/seo/pozycjonowanie">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">
                     Oferta SEO ogólna
                   </Button>

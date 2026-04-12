@@ -753,7 +753,7 @@ const VideoMarketing = () => {
               </Link>
 
               <Link
-                to="/uslugi/social-media"
+                to="/social-media/obsluga"
                 className="group p-6 rounded-lg border border-border/60 hover:border-primary/40 transition-colors bg-card"
               >
                 <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
@@ -765,7 +765,7 @@ const VideoMarketing = () => {
               </Link>
 
               <Link
-                to="/uslugi/kampanie-reklamowe"
+                to="/performance-marketing"
                 className="group p-6 rounded-lg border border-border/60 hover:border-primary/40 transition-colors bg-card"
               >
                 <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">

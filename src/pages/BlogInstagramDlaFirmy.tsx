@@ -475,7 +475,7 @@ const BlogInstagramDlaFirmy = () => {
                     <h4 className="font-semibold mb-2">Social Media Marketing</h4>
                     <p className="text-sm text-muted-foreground">Zarządzanie mediami społecznościowymi</p>
                   </Link>
-                  <Link to="/uslugi/tworzenie-tresci" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/content-marketing/tresci-seo" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Content Marketing</h4>
                     <p className="text-sm text-muted-foreground">Tworzenie zawartości dla biznesu</p>
                   </Link>

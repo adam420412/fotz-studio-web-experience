@@ -149,7 +149,7 @@ export default function BlogDemandGenerationCoTo() {
                 <p className="text-blue-700 text-sm mb-3">
                   Tworzymy blogi i strony ktore generuja demand — ruch organiczny ktory buduje swiadomosc kategorii i prowadzi do sprzedazy.
                 </p>
-                <Link to="/uslugi/pozycjonowanie-stron" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
+                <Link to="/seo/pozycjonowanie" className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline text-sm">
                   SEO i pozycjonowanie — oferta <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
