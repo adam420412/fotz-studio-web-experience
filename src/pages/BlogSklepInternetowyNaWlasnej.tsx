@@ -144,7 +144,7 @@ const BlogSklepInternetowyNaWlasnej = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1556740754-a3fc993cdc53?q=80&w=2070"
+                    src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070"
                     alt="Wlasny sklep internetowy - WooCommerce, Shopify vs marketplace"
                     className="w-full h-full object-cover"
                   />

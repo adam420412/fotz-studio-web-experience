@@ -109,7 +109,7 @@ const BlogSEOWordPress = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1460925895917-aef4e93c3de8?q=80&w=2070"
+                    src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2070"
                     alt="SEO WordPress - optymalizacja strony"
                     className="w-full h-full object-cover"
                   />

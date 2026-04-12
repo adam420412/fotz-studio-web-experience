@@ -188,14 +188,49 @@ function injectMeta(html, meta) {
   );
 
   // Step 4: Inject a visually-hidden semantic section into <body> so crawlers that
-  // don't execute JavaScript still see an H1 and descriptive text (fixes "Thin Content"
-  // and "Missing H1" issues on all pages). The section is hidden via inline style so it
-  // doesn't affect the visual design — React replaces #root on load.
+  // don't execute JavaScript still see an H1, descriptive text, and internal links
+  // (fixes "Thin Content", "Missing H1", and "No outgoing links" issues on all pages).
+  // The section is hidden via inline style so it doesn't affect the visual design.
   // Strip any previously injected SEO section before re-injecting (idempotent).
   html = html.replace(/<section\s+id="seo-prerender"[^>]*>[\s\S]*?<\/section>\s*/g, '');
+
+  // Determine page-type-specific internal links based on canonical URL
+  const url = meta.canonical;
+  let relatedLinks = '';
+  if (url.includes('/performance-marketing/google-ads')) {
+    relatedLinks = `<a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing/facebook-ads">Facebook Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/facebook-ads')) {
+    relatedLinks = `<a href="/performance-marketing/facebook-ads">Facebook Ads</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/tiktok-ads')) {
+    relatedLinks = `<a href="/performance-marketing/tiktok-ads">TikTok Ads</a> · <a href="/performance-marketing/instagram-ads">Instagram Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/instagram-ads')) {
+    relatedLinks = `<a href="/performance-marketing/instagram-ads">Instagram Ads</a> · <a href="/performance-marketing/meta-ads">Meta Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/linkedin-ads')) {
+    relatedLinks = `<a href="/performance-marketing/linkedin-ads">LinkedIn Ads</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/youtube-ads')) {
+    relatedLinks = `<a href="/performance-marketing/youtube-ads">YouTube Ads</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing')) {
+    relatedLinks = `<a href="/performance-marketing">Performance Marketing</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing/facebook-ads">Facebook Ads</a>`;
+  } else if (url.includes('/seo/') || url.includes('/agencja-seo') || url.includes('/pozycjonowanie')) {
+    relatedLinks = `<a href="/seo/pozycjonowanie">Pozycjonowanie</a> · <a href="/seo/audyt">Audyt SEO</a> · <a href="/performance-marketing/google-ads">Google Ads</a>`;
+  } else if (url.includes('/social-media')) {
+    relatedLinks = `<a href="/social-media/obsluga">Obsługa Social Media</a> · <a href="/performance-marketing/facebook-ads">Facebook Ads</a> · <a href="/performance-marketing/tiktok-ads">TikTok Ads</a>`;
+  } else if (url.includes('/agencja-marketingowa')) {
+    relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/seo/pozycjonowanie">SEO</a>`;
+  } else if (url.includes('/uslugi/')) {
+    relatedLinks = `<a href="/uslugi">Usługi</a> · <a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/blog/')) {
+    relatedLinks = `<a href="/blog">Blog Marketingowy</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/seo/pozycjonowanie">SEO</a>`;
+  } else if (url.includes('/branze/')) {
+    relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/seo/pozycjonowanie">SEO</a>`;
+  } else {
+    relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/blog">Blog</a>`;
+  }
+
   const seoSection = `<section id="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;pointer-events:none" aria-hidden="true">
       <h1>${meta.title.replace(/ \| Fotz.*$/, '')}</h1>
       <p>${meta.description}</p>
+      <nav>${relatedLinks} · <a href="/">Fotz Studio — Agencja Marketingowa</a> · <a href="/kontakt">Kontakt</a></nav>
     </section>
     `;
   html = html.replace('<div id="root">', seoSection + '<div id="root">');

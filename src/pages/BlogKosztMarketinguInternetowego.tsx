@@ -146,7 +146,7 @@ export function BlogKosztMarketinguInternetowego() {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1460925895917-adf4e565e6c1?q=80&w=2015"
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2015"
                     alt="Koszt marketingu internetowego i cennik usług digital marketing"
                     className="w-full h-full object-cover"
                   />

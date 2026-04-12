@@ -213,7 +213,7 @@ const BlogMarketingDlaFirmy = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1460925895917-adf4e5d3e5c0?q=80&w=2015"
+                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2015"
                     alt="Marketing dla firmy - strategie i kanały"
                     className="w-full h-full object-cover"
                   />

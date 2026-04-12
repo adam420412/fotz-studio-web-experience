@@ -116,7 +116,7 @@ export default function BlogJakZaprojektowacLogo() {
           {/* Featured Image */}
           <div className="relative aspect-video rounded-3xl overflow-hidden mb-12">
             <img
-              src="https://images.unsplash.com/photo-1626462408905-73fbf8a1f0d7?q=80&w=2074"
+              src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=2074"
               alt="Projektowanie logo dla firmy"
               className="w-full h-full object-cover"
             />

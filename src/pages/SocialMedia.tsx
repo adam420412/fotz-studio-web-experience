@@ -273,7 +273,7 @@ const SocialMedia = () => {
       <SEOHead
         title="Obsługa i Prowadzenie Social Media Facebook Instagram - Cennik | Fotz Studio"
         description="Obsługa social media dla firm — prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie Facebook Ads. Cennik prowadzenia social media od…"
-        canonical="https://fotz.pl/social-media/obsluga"
+        canonical="https://fotz.pl/social-media"
         keywords="obsługa social media, prowadzenie social media, agencja social media, prowadzenie facebooka, prowadzenie instagrama, cennik social media, social media marketing"
       />
       

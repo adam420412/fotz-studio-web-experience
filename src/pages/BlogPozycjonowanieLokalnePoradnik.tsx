@@ -146,7 +146,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1516321318423-f06f70504504?q=80&w=2015"
+                    src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2015"
                     alt="Pozycjonowanie lokalne - Google Maps"
                     className="w-full h-full object-cover"
                   />

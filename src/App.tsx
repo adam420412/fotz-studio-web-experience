@@ -2669,7 +2669,7 @@ const App = () => (
                 <Route path="/content-marketing/video-content" element={<CMVideoContent />} />
 
                 {/* Legacy local SEO pages (unchanged paths) */}
-                <Route path="/agencja-marketingowa-poznan" element={<AgencjaMarketingowaPoznan />} />
+                <Route path="/agencja-marketingowa-poznan" element={<Redirect301 to="/agencja-marketingowa/poznan" />} />
                 <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
                 <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
                 <Route path="/agencja-seo-poznan" element={<AgencjaSEOPoznan />} />
@@ -2677,17 +2677,17 @@ const App = () => (
                 <Route path="/uslugi/sklepy-internetowe/poznan" element={<SklepyInternetowePoznan />} />
                 <Route path="/uslugi/sklepy-internetowe/warszawa" element={<SklepyInternetoweWarszawa />} />
                 <Route path="/uslugi/sklepy-internetowe/krakow" element={<SklepyInternetoweKrakow />} />
-                <Route path="/agencja-marketingowa-warszawa" element={<AgencjaMarketingowaWarszawa />} />
-                <Route path="/agencja-marketingowa-katowice" element={<AgencjaMarketingowaKatowice />} />
-                <Route path="/agencja-marketingowa-wroclaw" element={<AgencjaMarketingowaWroclaw />} />
-                <Route path="/agencja-marketingowa-lodz" element={<AgencjaMarketingowaLodz />} />
-                <Route path="/agencja-marketingowa-gdansk" element={<AgencjaMarketingowaGdansk />} />
-                <Route path="/agencja-marketingowa-krakow" element={<AgencjaMarketingowaKrakow />} />
-                <Route path="/agencja-marketingowa-lublin" element={<AgencjaMarketingowaLublin />} />
-                <Route path="/agencja-marketingowa-rzeszow" element={<AgencjaMarketingowaRzeszow />} />
-                <Route path="/agencja-marketingowa-bydgoszcz" element={<AgencjaMarketingowaBydgoszcz />} />
+                <Route path="/agencja-marketingowa-warszawa" element={<Redirect301 to="/agencja-marketingowa/warszawa" />} />
+                <Route path="/agencja-marketingowa-katowice" element={<Redirect301 to="/agencja-marketingowa/katowice" />} />
+                <Route path="/agencja-marketingowa-wroclaw" element={<Redirect301 to="/agencja-marketingowa/wroclaw" />} />
+                <Route path="/agencja-marketingowa-lodz" element={<Redirect301 to="/agencja-marketingowa/lodz" />} />
+                <Route path="/agencja-marketingowa-gdansk" element={<Redirect301 to="/agencja-marketingowa/gdansk" />} />
+                <Route path="/agencja-marketingowa-krakow" element={<Redirect301 to="/agencja-marketingowa/krakow" />} />
+                <Route path="/agencja-marketingowa-lublin" element={<Redirect301 to="/agencja-marketingowa/lublin" />} />
+                <Route path="/agencja-marketingowa-rzeszow" element={<Redirect301 to="/agencja-marketingowa/rzeszow" />} />
+                <Route path="/agencja-marketingowa-bydgoszcz" element={<Redirect301 to="/agencja-marketingowa/bydgoszcz" />} />
                 <Route path="/agencja-marketingowa-torun" element={<AgencjaMarketingowaTorun />} />
-                <Route path="/agencja-marketingowa-szczecin" element={<AgencjaMarketingowaSzczecin />} />
+                <Route path="/agencja-marketingowa-szczecin" element={<Redirect301 to="/agencja-marketingowa/szczecin" />} />
                 <Route path="/agencja-marketingowa-opole" element={<AgencjaMarketingowaOpole />} />
                 <Route path="/agencja-marketingowa-olsztyn" element={<AgencjaMarketingowaOlsztyn />} />
                 <Route path="/cennik-stron-internetowych" element={<CennikStronInternetowych />} />

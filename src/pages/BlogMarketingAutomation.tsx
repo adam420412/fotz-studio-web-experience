@@ -215,7 +215,7 @@ export default function BlogMarketingAutomation() {
       <SEOHead
         title="Automatyzacja marketingu narzedzia | HubSpot, ActiveCampaign, Marketo - Poradnik 2025"
         description="Odkryj najlepsze narzedzia do automatyzacji marketingu. Porownanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite, Klaviyo. Ceny, funkcje, kto dla kogo."
-        canonical="https://fotz.pl/blog/automatyzacja-marketingu-narzedzia"
+        canonical="https://fotz.pl/blog/marketing-automation"
       />
       <ArticleSchema
         title="Automatyzacja marketingu narzedzia - Porównanie HubSpot, Marketo, ActiveCampaign i innych"

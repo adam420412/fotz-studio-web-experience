@@ -177,7 +177,7 @@ export default function BlogFotografiaProduktowa() {
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
-                    src="https://images.unsplash.com/photo-1505228395891-9a51e7e86e81?q=80&w=2015"
+                    src="https://images.unsplash.com/photo-1502920514313-52581002a659?q=80&w=2015"
                     alt="Fotografia produktowa profesjonalna"
                     className="w-full h-full object-cover"
                   />
