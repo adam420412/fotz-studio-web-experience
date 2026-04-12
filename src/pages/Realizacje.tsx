@@ -415,7 +415,7 @@ const Realizacje = () => {
         title="Realizacje i Portfolio — Case Studies Projektów Marketingowych | Fotz Studio"
         description="Portfolio Fotz Studio — realizacje stron internetowych, kampanii SEO, social media i produkcji wideo. Case studies z wynikami dla klientów z różnych branż."
         canonical="https://fotz.pl/realizacje"
-        keywords="portfolio, realizacje, case studies, strony internetowe przykłady, projekty marketingowe, fotografia eventowa, wizualizacje 3D"
+        keywords="realizacje, portfolio agencji marketingowej, case study marketing, projekty marketingowe, realizacje digital marketing"
       />
       <BreadcrumbSchema 
         items={[

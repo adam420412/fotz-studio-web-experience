@@ -55,7 +55,7 @@ export const TikTokAdsPoznan = () => {
         title="TikTok Ads Poznań — agencja kampanii reklamowych TikTok | Fotz.pl"
         description="Reklamy TikTok Ads Poznań — agencja Fotz.pl. Kampanie TikTok dla firm z Poznania: In-Feed Ads, Spark Ads, kreacje wideo, optymalizacja konwersji. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/tiktok-ads/poznan"
-        keywords="tiktok ads poznań, agencja tiktok ads poznań, kampanie tiktok poznań, reklamy tiktok poznań, tiktok ads dla firm poznań, tiktok marketing poznań"
+        keywords="tiktok ads poznan, reklamy tiktok poznan, agencja tiktok ads poznan, kampanie tiktok poznan, tiktok advertising poznan, tiktok ads dla firm poznan, tiktok ads cennik poznan"
       />
 
       <ServiceSchema
@@ -75,9 +75,7 @@ export const TikTokAdsPoznan = () => {
               TikTok Ads Poznań — Kampanie Reklamowe na TikToku dla Firm
             </h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              Agencja Fotz.pl specjalizuje się w kampaniach TikTok Ads w Poznaniu. Tworzymy kreatywne materiały wideo,
-              prowadzimy reklamy na TikToku z pełną optymalizacją konwersji i dosięgamy właściwej grupy docelowej.
-              Dołącz do firm, które zwiększyły sprzedaż dzięki reklamom na platformie TikTok.
+              TikTok Ads Poznan — profesjonalne kampanie reklamowe TikTok dla firm z Poznana i Wielkopolski. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.
             </p>
             <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
               Bezpłatna konsultacja

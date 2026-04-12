@@ -48,7 +48,7 @@ const BlogSocialMediaDlaFirm = () => {
         description="Jak prowadzić social media dla firmy w 2025? Strategia, najlepsze platformy, budżety, błędy do unikania. Praktyczny przewodnik dla przedsiębiorców i zarządzających markami."
         ogType="article"
         canonical="https://fotz.pl/blog/social-media-dla-firm"
-        keywords="social media dla firm, strategie social media, marketing social media, reklamy facebook, obsługa social media"
+        keywords="social media dla firm, prowadzenie social media dla firm, facebook dla firmy, instagram dla firmy, jak prowadzić social media"
         schemaJson={[
           {
             "@context": "https://schema.org",

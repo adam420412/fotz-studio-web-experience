@@ -47,7 +47,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
         description="Jak działa pozycjonowanie lokalne? Wizytówka Google, lokalne SEO, Google Maps. Praktyczny przewodnik dla firm lokalnych w 2025 roku."
         ogType="article"
         canonical="https://fotz.pl/blog/pozycjonowanie-lokalne-dla-firm"
-        keywords="pozycjonowanie lokalne, lokalne SEO, Google Moja Firma, Google Maps SEO, Local Pack"
+        keywords="pozycjonowanie lokalne poradnik, seo lokalne jak zacząć, pozycjonowanie lokalne firma, google maps seo, seo dla lokalnych firm, pozycjonowanie lokalne google, wizytówka google seo, seo lokalne krok po kroku"
         schemaJson={[
           {
             "@context": "https://schema.org",

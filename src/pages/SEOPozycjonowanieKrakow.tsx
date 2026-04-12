@@ -29,7 +29,7 @@ const SEOPozycjonowanieKrakow = () => {
         title="Pozycjonowanie Kraków — Agencja SEO dla Firm z Krakowa | Fotz Studio"
         description="Pozycjonowanie stron internetowych Kraków — SEO lokalne i ogólnopolskie, audyt SEO, link building dla firm z Krakowa. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-krakow"
-        keywords="pozycjonowanie krakow, seo krakow, agencja seo krakow, pozycjonowanie lokalne krakow, google maps krakow, pozycjonowanie stron kraków, firma seo kraków, seo dla firm krakow, pozycjonowanie małopolska, audyt seo kraków, optymalizacja seo krakow, seo kraków cena, usługi seo krakow, pozycjonowanie kraków cena"
+        keywords="pozycjonowanie kraków, agencja seo kraków, seo kraków, pozycjonowanie małopolska, pozycjonowanie stron kraków, seo dla firm kraków, audyt seo kraków, pozycjonowanie lokalne kraków"
       />
       <ServiceSchema
         name="Pozycjonowanie Kraków"

@@ -89,7 +89,7 @@ const StronyInternetoweKoszalin = () => {
         title="Strony Internetowe Koszalin | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Koszalin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Koszalina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/koszalin"
-        keywords="strony internetowe koszalin, tworzenie stron www koszalin, projektowanie stron koszalin, sklepy internetowe koszalin"
+        keywords="strony internetowe koszalin, tworzenie stron koszalin, strony www koszalin, projektowanie stron koszalin"
       />
       
       <ServiceSchema name="Strony Internetowe Koszalin" description="Profesjonalne tworzenie stron internetowych dla firm z Koszalina." provider="FOTZ Studio" areaServed="Koszalin" />

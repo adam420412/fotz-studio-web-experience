@@ -87,7 +87,7 @@ const StronyInternetoweCzestochowa = () => {
         title="Strony Internetowe Częstochowa | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Częstochowa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Częstochowy…"
         canonical="https://fotz.pl/uslugi/strony-internetowe/czestochowa"
-        keywords="strony internetowe częstochowa, tworzenie stron www częstochowa, projektowanie stron częstochowa, sklepy internetowe częstochowa"
+        keywords="strony internetowe częstochowa, tworzenie stron częstochowa, strony www częstochowa, projektowanie stron częstochowa"
       />
       
       <ServiceSchema name="Strony Internetowe Częstochowa" description="Profesjonalne tworzenie stron internetowych dla firm z Częstochowy." provider="FOTZ Studio" areaServed="Częstochowa" />

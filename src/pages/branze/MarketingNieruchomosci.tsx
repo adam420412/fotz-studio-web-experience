@@ -99,6 +99,7 @@ const MarketingNieruchomosci = () => {
         title="Marketing dla Nieruchomości | Deweloperzy, Biura, Architekci | Fotz Studio"
         description="Marketing dla branży nieruchomości - wizualizacje 3D, spoty promocyjne, sesje zdjęciowe, kampanie lead generation. Sprzedawaj szybciej."
         canonical="https://fotz.pl/dla-kogo/nieruchomosci"
+        keywords="marketing nieruchomości, agencja marketingowa nieruchomości, marketing dewelopera, reklama nieruchomości, wizualizacje 3d nieruchomości, kampanie lead generation nieruchomości, marketing biura nieruchomości"
       />
 
       <OrganizationSchema />

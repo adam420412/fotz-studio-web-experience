@@ -23,7 +23,7 @@ export default function PozycjonowanieLokalne() {
         title="Pozycjonowanie lokalne | SEO dla firm lokalnych | fotz.pl"
         description="Pozycjonowanie lokalne dla firm — dominuj w Google Maps i lokalnych wynikach. Więcej klientów z Twojej okolicy. Sprawdź ofertę!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie-lokalne"
-        keywords="pozycjonowanie lokalne, seo lokalne, google maps pozycjonowanie, pozycjonowanie lokalne polska, agencja seo lokalne, pozycjonowanie wizytówki google, seo lokalne dla firm"
+        keywords="pozycjonowanie lokalne, seo lokalne, pozycjonowanie lokalne firmy, seo dla lokalnych firm, pozycjonowanie lokalne google maps, lokalne wyniki google, seo lokalne cennik, pozycjonowanie lokalne poradnik"
       />
       <ServiceSchema
         name="Pozycjonowanie lokalne"

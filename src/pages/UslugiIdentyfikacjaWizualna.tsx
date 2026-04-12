@@ -159,7 +159,7 @@ const UslugiIdentyfikacjaWizualna = () => {
         canonical="https://fotz.pl/uslugi/identyfikacja-wizualna"
         ogTitle="Identyfikacja Wizualna Firmy — Fotz Studio Agencja Brandingowa"
         ogDescription="Spójna identyfikacja wizualna buduje rozpoznawalność marki. Logo, brand book, materiały firmowe i digital. Fotz Studio — Poznań i cała Polska."
-        keywords="identyfikacja wizualna, usługi identyfikacja wizualna, projekt logo, brand identity, identyfikacja firmy, branding"
+        keywords="identyfikacja wizualna firmy, branding usługi, projekt logo, system identyfikacji wizualnej, ci corporate identity"
       />
       <ServiceSchema
         name="Identyfikacja wizualna firmy"

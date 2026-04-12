@@ -90,7 +90,7 @@ const StronyInternetowePlock = () => {
         title="Strony Internetowe Płock | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Płock — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Płocka. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/plock"
-        keywords="strony internetowe płock, tworzenie stron www płock, projektowanie stron płock, sklepy internetowe płock"
+        keywords="strony internetowe płock, tworzenie stron płock, strony www płock, projektowanie stron płock"
       />
       
       <ServiceSchema name="Strony Internetowe Płock" description="Profesjonalne tworzenie stron internetowych dla firm z Płocka." provider="FOTZ Studio" areaServed="Płock" />

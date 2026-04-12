@@ -111,7 +111,7 @@ const PozycjonowanieBydgoszcz = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/bydgoszcz"
         ogTitle="Pozycjonowanie Bydgoszcz — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Bydgoszczy. SEO dla firm IT, BPO, produkcji i e-commerce. Hub technologiczny czeka na Twoją markę."
-        keywords="pozycjonowanie bydgoszcz, seo bydgoszcz, agencja seo bydgoszcz, pozycjonowanie lokalne bydgoszcz, pozycjonowanie stron bydgoszcz, seo dla firm bydgoszcz, audyt seo bydgoszcz, usługi seo bydgoszcz"
+        keywords="pozycjonowanie bydgoszcz, agencja seo bydgoszcz, seo bydgoszcz, pozycjonowanie stron bydgoszcz, seo dla firm bydgoszcz, pozycjonowanie kujawsko-pomorskie, audyt seo bydgoszcz, seo kujawa"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Bydgoszcz"

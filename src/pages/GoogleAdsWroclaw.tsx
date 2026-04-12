@@ -49,7 +49,7 @@ export default function GoogleAdsWroclaw() {
           title="Agencja Google Ads Wrocław — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Wrocław — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/wroclaw"
-          keywords="google ads wrocław, agencja google ads wrocław, kampanie google ads wrocław, reklamy google wrocław, google ads dla firm wrocław, sem wrocław, google ads dolny śląsk"
+          keywords="google ads wroclaw, kampanie google ads wroclaw, agencja google ads wroclaw, reklamy google wroclaw, google adwords wroclaw, sem wroclaw, google ads dla firm wroclaw, prowadzenie google ads wroclaw, google ads cennik wroclaw, reklama w google wroclaw"
         />
 
         <ServiceSchema
@@ -92,8 +92,7 @@ export default function GoogleAdsWroclaw() {
                   Agencja Google Ads Wrocław
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Kampanie dla firm we Wrocławiu. Wyniki od 24-48h. Certyfikowani specjaliści.
-                </p>
+                  Google Ads Wroclaw — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Wroclawa i Dolnego Śląska. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}

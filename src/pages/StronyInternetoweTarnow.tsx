@@ -90,7 +90,7 @@ const StronyInternetoweTarnow = () => {
         title="Strony Internetowe Tarnów | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Tarnów — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Tarnowa. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/tarnow"
-        keywords="strony internetowe tarnów, tworzenie stron www tarnów, projektowanie stron tarnów, sklepy internetowe tarnów"
+        keywords="strony internetowe tarnów, tworzenie stron tarnów, strony www tarnów, projektowanie stron tarnów"
       />
       
       <ServiceSchema name="Strony Internetowe Tarnów" description="Profesjonalne tworzenie stron internetowych dla firm z Tarnowa." provider="FOTZ Studio" areaServed="Tarnów" />

@@ -65,7 +65,7 @@ export default function StronaInternetowaDlaPrawnika() {
         title="Strona internetowa dla prawnika — kancelaria, SEO, blog | fotz.pl"
         description="Strona internetowa dla prawnika i kancelarii — SEO lokalne, blog prawniczy, formularz kontaktowy, prezentacja specjalizacji. Profesjonalne strony od 2000 zł. Wycena!"
         canonical="https://fotz.pl/uslugi/strona-internetowa-dla-prawnika"
-        keywords="strona internetowa dla prawnika, strona kancelarii prawnej, tworzenie stron prawników, webdesign kancelaria, strona dla adwokata"
+        keywords="strona internetowa dla prawnika, strona www kancelarii, strona prawnika, strona kancelarii prawnej, landing page prawnika"
       />
       <ServiceSchema
         name="Strona internetowa dla prawnika"

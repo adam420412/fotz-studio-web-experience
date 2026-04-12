@@ -75,7 +75,7 @@ export default function AgencjaMarketingowaGliwice() {
           title="Agencja marketingowa Gliwice - fotz studio | Marketing dla firm"
           description="Agencja marketingowa Gliwice. Fotz Studio — strony WWW, SEO, kampanie Google/Meta, social media dla firm z Gliwic. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/agencja-marketingowa/gliwice"
-          keywords="agencja marketingowa Gliwice, marketing Gliwice, agencja SEO Gliwice, Google Ads Gliwice, social media, digital marketing, kampanie reklamowe"
+          keywords="agencja marketingowa gliwice, marketing internetowy gliwice, agencja reklamowa gliwice, seo gliwice, google ads gliwice, agencja marketingowa śląsk"
         />
 
         <ServiceSchema

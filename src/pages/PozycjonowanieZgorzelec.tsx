@@ -40,7 +40,7 @@ export default function PozycjonowanieZgorzelec() {
         description="Profesjonalne pozycjonowanie stron w Zgorzelcu. Specjalizujemy się w SEO dla turystyki, handlu i usług lokalnych. Pakiety od 1500 zł. Rezultaty w 3-6 miesięcy."
         canonical="https://fotz.pl/pozycjonowanie/zgorzelec"
         ogImage="https://fotz.pl/og-pozycjonowanie-zgorzelec.jpg"
-        keywords="pozycjonowanie zgorzelec, seo zgorzelec, agencja seo zgorzelec, pozycjonowanie lokalne zgorzelec, pozycjonowanie stron zgorzelec, seo dla firm zgorzelec"
+        keywords="pozycjonowanie zgorzelec, agencja seo zgorzelec, seo zgorzelec, pozycjonowanie stron zgorzelec, seo dla firm zgorzelec, seo dolny śląsk, pozycjonowanie lokalne zgorzelec"
       />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
       <ServiceSchema

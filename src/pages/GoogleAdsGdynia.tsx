@@ -161,7 +161,7 @@ export default function GoogleAdsGdynia() {
           title="Agencja Google Ads Gdynia — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Gdynia ✓ Kampanie dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/gdynia"
-        keywords="google ads gdynia, agencja google ads gdynia, kampanie google ads gdynia, reklamy google gdynia, google ads dla firm gdynia, sem gdynia, google ads trójmiasto"
+        keywords="google ads gdynia, kampanie google ads gdynia, agencja google ads gdynia, reklamy google gdynia, google adwords gdynia, sem gdynia, google ads dla firm gdynia, prowadzenie google ads gdynia, google ads cennik gdynia, reklama w google gdynia"
         />
 
         <ServiceSchema
@@ -208,9 +208,7 @@ export default function GoogleAdsGdynia() {
                   <span className="text-primary">dla firm z Gdyni i Trójmiasta</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                  Zwiększ widoczność Twojej firmy w wyszukiwarce Google. Nasze certyfikowane kampanie Search, Display i Shopping
-                  generują konkretne wyniki i zwrot z inwestycji dla firm z Gdyni, Sopotu i Gdańska.
-                </p>
+                  Google Ads Gdynia — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Gdyniaa i Trójmiasta. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="gap-2">
                     <Link to="/kontakt">

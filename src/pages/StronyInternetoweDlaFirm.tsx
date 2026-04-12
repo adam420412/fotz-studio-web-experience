@@ -22,7 +22,7 @@ export default function StronyInternetoweDlaFirm() {
         title="Strony internetowe dla firm | Profesjonalne strony WWW | fotz.pl"
         description="Profesjonalne strony internetowe dla firm każdej branży. Responsywne, szybkie, zoptymalizowane. Od 499 zł netto. Sprawdź ofertę fotz.pl!"
         canonical="https://fotz.pl/uslugi/strony-internetowe-dla-firm"
-        keywords="strony internetowe dla firm, tworzenie stron dla firm, strona firmowa, profesjonalna strona internetowa, strona www dla firmy"
+        keywords="strony internetowe dla firm, strona internetowa dla firmy, tworzenie stron dla firm, profesjonalna strona www firma, strona firmowa, strona internetowa dla małej firmy"
       />
       <ServiceSchema
         name="Strony internetowe dla firm"

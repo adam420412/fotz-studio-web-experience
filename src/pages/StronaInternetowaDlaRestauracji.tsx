@@ -65,7 +65,7 @@ export default function StronaInternetowaDlaRestauracji() {
         title="Strona internetowa dla restauracji — menu, rezerwacje, SEO | fotz.pl"
         description="Strona internetowa dla restauracji — menu online, system rezerwacji, SEO lokalne, zamówienia online. Profesjonalne strony dla gastronomii od 2000 zł. Wycena!"
         canonical="https://fotz.pl/uslugi/strona-internetowa-dla-restauracji"
-        keywords="strona internetowa dla restauracji, strona restauracji, tworzenie stron gastronomia, menu online, webdesign restauracja"
+        keywords="strona internetowa dla restauracji, strona www restauracji, strona restauracji, strona dla gastronomii, menu online restauracja"
       />
       <ServiceSchema
         name="Strona internetowa dla restauracji"

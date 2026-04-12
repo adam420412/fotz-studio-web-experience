@@ -141,7 +141,7 @@ const InstagramAds = () => {
         title="Instagram Ads — Reklama na Instagramie dla Firm | Fotz Studio"
         description="Instagram Ads — tworzenie i prowadzenie kampanii reklamowych na Instagramie. Reklamy wideo, stories, reels i karuzele. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/instagram-ads"
-        keywords="Instagram Ads, reklamy Instagram, kampanie Instagram, Stories Ads, Reels Ads, agencja Instagram Poznań"
+        keywords="instagram ads polska, reklamy instagram, kampanie instagram ads, instagram ads agencja, stories ads, reels ads, instagram ads dla firm, meta ads instagram, instagram ads cennik, instagram advertising polska"
       />
 
       <ServiceSchema 

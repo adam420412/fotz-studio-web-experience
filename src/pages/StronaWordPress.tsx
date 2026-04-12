@@ -124,7 +124,7 @@ export default function StronaWordPress() {
         title="Strona WordPress dla firmy | Tworzenie stron WordPress | fotz.pl"
         description="Tworzenie stron na WordPress — od wizytówki do zaawansowanego e-commerce. Responsywne, szybkie i SEO-friendly strony WordPress. Wycena od 1999 zł!"
         canonical="https://fotz.pl/uslugi/strona-wordpress"
-        keywords="strona wordpress, tworzenie stron wordpress, wordpress dla firm, strona www na wordpress, agencja wordpress, wdrożenie wordpress"
+        keywords="strona wordpress, strona internetowa wordpress, tworzenie stron wordpress, wordpress dla firm, strona www wordpress, wordpress agencja"
       />
       <ServiceSchema
         name="Strona WordPress"

@@ -118,7 +118,7 @@ export default function SpotyReklamowe() {
         title="Spoty Reklamowe — Produkcja Filmów Reklamowych i Video Marketingowych | Fotz Studio"
         description="Produkcja spotów reklamowych — filmy reklamowe dla firm, reklamy video online, spoty TV i YouTube. Profesjonalna produkcja wideo: scenariusz, nagranie…"
         canonical="https://fotz.pl/uslugi/produkcja-video"
-        keywords="spoty reklamowe, produkcja video, reklama video, spot telewizyjny, animacje reklamowe, film reklamowy"
+        keywords="spoty reklamowe, reklama wideo, spoty tv, produkcja reklam wideo, filmy reklamowe, spot reklamowy cena"
       />
       
       <OrganizationSchema />

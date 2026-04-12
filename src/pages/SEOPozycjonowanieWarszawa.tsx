@@ -29,7 +29,7 @@ const SEOPozycjonowanieWarszawa = () => {
         title="Pozycjonowanie Warszawa — Agencja SEO dla Firm z Warszawy | Fotz Studio"
         description="Pozycjonowanie stron internetowych Warszawa — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Warszawy. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-warszawa"
-        keywords="pozycjonowanie warszawa, seo warszawa, agencja seo warszawa, pozycjonowanie lokalne warszawa, google maps warszawa, pozycjonowanie stron warszawa, firma seo warszawa, seo dla firm warszawa, pozycjonowanie mazowsze, audyt seo warszawa, optymalizacja seo warszawa, seo warszawa cena, usługi seo warszawa, pozycjonowanie warszawa cena"
+        keywords="pozycjonowanie warszawa, agencja seo warszawa, seo warszawa, pozycjonowanie stron warszawa, seo dla firm warszawa, pozycjonowanie lokalne warszawa, audyt seo warszawa"
       />
       <ServiceSchema
         name="Pozycjonowanie Warszawa"

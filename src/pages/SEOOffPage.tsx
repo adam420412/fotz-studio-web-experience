@@ -38,7 +38,7 @@ const SEOOffPage = () => {
         title="SEO Off-Page — Link Building, Digital PR i Budowanie Autorytetu | Fotz Studio"
         description="SEO off-page — budowanie linków zewnętrznych, digital PR, guest posting i wzmacnianie autorytetu domeny. Skuteczne SEO poza stroną. Fotz Studio."
         canonical="https://fotz.pl/seo/off-page"
-        keywords="link building, seo off-page, budowanie linków, autorytet domeny, digital pr, pozyskiwanie linków"
+        keywords="seo off-page, link building, linki zewnętrzne seo, budowanie linków, seo off site, pozycjonowanie off-page, profil linków seo, backlinki, seo poza stroną, link building agencja"
       />
       <ServiceSchema
         name="SEO Off-Page i Link Building"

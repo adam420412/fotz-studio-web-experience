@@ -78,6 +78,7 @@ export default function BlogPozycjonowanieSklepu() {
         title="Pozycjonowanie sklepu internetowego — kompletny poradnik | fotz.pl"
         description="Pozycjonowanie sklepu internetowego — jak optymalizować produkty, kategorie i treści dla Google. SEO dla WooCommerce, Shopify i PrestaShop. Poradnik 2025."
         canonical="https://fotz.pl/blog/pozycjonowanie-sklepu-internetowego"
+        keywords="pozycjonowanie sklepu internetowego, seo e-commerce, pozycjonowanie sklepu online, pozycjonowanie produktów w google, seo dla sklepu, pozycjonowanie sklepu woocommerce, seo sklep internetowy"
       />
       <ArticleSchema
         title="Pozycjonowanie sklepu internetowego — kompletny poradnik SEO"
@@ -103,9 +104,7 @@ export default function BlogPozycjonowanieSklepu() {
                 Pozycjonowanie sklepu internetowego — kompletny poradnik SEO
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                SEO dla sklepu internetowego rządzi się innymi prawami niż dla strony firmowej.
-                Setki produktów, kategorii i wariantów — każdy wymaga indywidualnej optymalizacji.
-              </p>
+                Pozycjonowanie sklepu internetowego — jak skutecznie wypozycjonować e-commerce w Google? Poradnik SEO dla sklepów online. Optymalizacja produktów, kategorii i strony sklepu.</p>
             </motion.div>
           </div>
         </section>

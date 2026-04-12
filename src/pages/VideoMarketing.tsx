@@ -236,7 +236,7 @@ const VideoMarketing = () => {
         canonical="https://fotz.pl/uslugi/video-marketing"
         ogTitle="Video Marketing — Produkcja Filmów Reklamowych | Fotz Studio"
         ogDescription="Profesjonalna produkcja video marketing — filmy reklamowe, reels, animacje. Optymalizacja pod Instagram, TikTok, YouTube. Od 2000 zł."
-        keywords="video marketing, marketing wideo, produkcja video, reklama video, animacje marketingowe, film promocyjny"
+        keywords="video marketing, marketing wideo, reklamy wideo, video content marketing, filmy marketingowe, video marketing dla firm"
       />
       <ServiceSchema
         name="Video marketing — produkcja filmów reklamowych"

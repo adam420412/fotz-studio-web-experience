@@ -99,6 +99,7 @@ const MarketingProdukcja = () => {
         title="Marketing dla Produkcji i Przemysłu | B2B Industrial | Fotz Studio"
         description="Marketing dla firm produkcyjnych - strony B2B, fotografia przemysłowa, filmy korporacyjne. Pozyskuj klientów i dystrybutorów dla swojego zakładu."
         canonical="https://fotz.pl/dla-kogo/produkcja"
+        keywords="marketing przemysłowy, marketing b2b, agencja marketingowa produkcja, marketing dla firm produkcyjnych, marketing industrial, fotografia przemysłowa, filmy korporacyjne przemysł, marketing b2b agencja"
       />
 
       <OrganizationSchema />

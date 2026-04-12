@@ -163,7 +163,7 @@ export default function FacebookAdsGdynia() {
           title="Agencja Facebook Ads Gdynia — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Gdynia ✓ Kampanie Meta Ads dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/facebook-ads/gdynia"
-        keywords="facebook ads gdynia, agencja facebook ads gdynia, kampanie facebook gdynia, reklamy facebook gdynia, meta ads gdynia, facebook ads trójmiasto"
+        keywords="facebook ads gdynia, meta ads gdynia, reklamy facebook gdynia, agencja facebook ads gdynia, kampanie facebook gdynia, instagram ads gdynia, facebook ads dla firm gdynia, reklama na facebooku gdynia, meta ads agencja gdynia, facebook ads cennik gdynia"
         />
 
         <ServiceSchema
@@ -210,9 +210,7 @@ export default function FacebookAdsGdynia() {
                   <span className="text-primary">dla firm z Gdyni i Trójmiasta</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                  Dotarć do docelowych odbiorców na Facebooku i Instagramie. Kampanie Meta Ads generują leads,
-                  zwiększają sprzedaż i budują świadomość marki. Certyfikowani specjaliści, konkretne rezultaty.
-                </p>
+                  Facebook Ads Gdynia — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdynia i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="gap-2">
                     <Link to="/kontakt">

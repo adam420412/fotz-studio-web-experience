@@ -90,7 +90,7 @@ const StronyInternetoweRadom = () => {
         title="Strony Internetowe Radom | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Radom — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Radomia. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/radom"
-        keywords="strony internetowe radom, tworzenie stron www radom, projektowanie stron radom, sklepy internetowe radom"
+        keywords="strony internetowe radom, tworzenie stron radom, strony www radom, projektowanie stron radom"
       />
       
       <ServiceSchema name="Strony Internetowe Radom" description="Profesjonalne tworzenie stron internetowych dla firm z Radomia." provider="FOTZ Studio" areaServed="Radom" />

@@ -38,7 +38,7 @@ export default function BlogCopywritingLanding() {
         description="Copywriting landing page — jak pisać teksty sprzedażowe, które konwertują. Nagłówki, CTA, storytelling. Praktyczny poradnik copywritingu dla stron…"
         ogType="article"
         canonical="https://fotz.pl/content-marketing/copywriting-landing"
-        keywords="copywriting landing page, jak pisać landing page, teksty na stronę, headline, CTA, konwersja"
+        keywords="copywriting landing page, teksty na landing page, copywriter strona internetowa, copywriting sprzedażowy, teksty reklamowe"
       />
       <ArticleSchema
         title="Copywriting dla landing pages - jak pisać teksty, które konwertują"

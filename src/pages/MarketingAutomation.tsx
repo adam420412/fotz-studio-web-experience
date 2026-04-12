@@ -121,7 +121,7 @@ export default function MarketingAutomation() {
         title="Marketing Automation — wdrożenie i obsługa | fotz.pl"
         description="Marketing automation dla firm — wdrożenie automatyzacji emaili, lead scoringu, CRM i nurturingu. Pracuj mądrzej, nie więcej. Sprawdź ofertę i cennik!"
         canonical="https://fotz.pl/uslugi/marketing-automation"
-        keywords="marketing automation, automatyzacja marketingu, narzędzia marketing automation, crm marketing, email automation, hubspot, mailchimp"
+        keywords="marketing automation, automatyzacja marketingu, marketing automation dla firm, narzędzia marketing automation, marketing automation crm"
       />
       <ServiceSchema
         name="Marketing Automation"

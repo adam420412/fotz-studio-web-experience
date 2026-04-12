@@ -44,7 +44,7 @@ const CaseStudyMechanica = () => {
         title="Mechanica — Strona dla Producenta Żurawi i Suwnic | Case Study Fotz Studio"
         description="Case study Mechanica: strona internetowa dla producenta żurawi i suwnic przemysłowych. SEO branży technicznej. Fotz Studio."
         canonical="https://fotz.pl/realizacje/mechanica"
-        keywords="Mechanica, żurawie przemysłowe, suwnice, wciągniki, strona B2B, case study"
+        keywords="case study automotive, marketing motoryzacja realizacja"
       />
       <BreadcrumbSchema 
         items={[

@@ -99,6 +99,7 @@ const MarketingGastronomia = () => {
         title="Marketing dla Gastronomii | Restauracje, Kawiarnie, Catering | Fotz Studio"
         description="Marketing dla restauracji i gastronomii - fotografia kulinarna, social media, systemy rezerwacji online. Zwiększ liczbę gości w lokalu."
         canonical="https://fotz.pl/dla-kogo/gastronomia"
+        keywords="marketing restauracji, marketing gastronomia, agencja marketingowa restauracja, reklama restauracji, social media restauracja, fotografia kulinarna, marketing cateringu, kampanie facebook restauracja"
       />
 
       <OrganizationSchema />

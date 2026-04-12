@@ -38,7 +38,7 @@ const PMTargetowanie = () => {
         title="Targetowanie Reklam — Precyzyjne Dotarcie do Grupy Docelowej | Fotz Studio"
         description="Targetowanie reklam — budowanie grup odbiorców, Custom Audiences, Lookalike, retargeting i remarketing. Precyzyjne kampanie dla firm. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/targetowanie"
-        keywords="targetowanie reklam, grupy docelowe reklamy, lookalike audience, retargeting, targetowanie google ads, targetowanie facebook ads"
+        keywords="targetowanie reklam, grupy docelowe reklamy, lookalike audience, retargeting, targetowanie google ads, targetowanie facebook ads, custom audience, precyzyjne targetowanie, grupy odbiorców facebook, targetowanie behawioralne"
       />
       <ServiceSchema
         name="Targetowanie Reklam Google Ads i Meta Ads"
@@ -75,8 +75,7 @@ const PMTargetowanie = () => {
                 Precyzyjne Targetowanie Reklam
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-                Reklama wyświetlona właściwej osobie w właściwym momencie to nie szczęście — to targetowanie. Docieramy do Twoich idealnych klientów z chirurgiczną precyzją.
-              </p>
+                Targetowanie reklam — precyzyjne dotarcie do grupy docelowej. Profesjonalne targetowanie w Google Ads, Facebook Ads i TikTok Ads. Lookalike Audiences, remarketing i segmentacja odbiorców.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
                   <Link to="/konsultacja">Bezpłatna konsultacja</Link>

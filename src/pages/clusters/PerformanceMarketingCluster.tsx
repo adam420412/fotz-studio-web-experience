@@ -117,7 +117,7 @@ export default function PerformanceMarketingCluster() {
         title="Performance Marketing | Kampanie Ads | Fotz Studio"
         description="Google Ads, Facebook Ads, Instagram, LinkedIn, TikTok i YouTube Ads. Kampanie reklamowe z mierzalnym ROI. Agencja performance Poznań."
         canonical="https://fotz.pl/performance-marketing"
-        keywords="performance marketing, Google Ads, Facebook Ads, kampanie reklamowe, remarketing, LinkedIn Ads, TikTok Ads, ROAS"
+        keywords="performance marketing, marketing efektywnościowy, agencja performance marketing, kampanie reklamowe google ads, facebook ads, performance marketing co to, performance marketing polska, roas, kpi marketing, performance marketing cennik, google ads facebook ads"
       />
       <BreadcrumbSchema
         items={[

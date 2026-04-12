@@ -23,7 +23,7 @@ export default function ProjektStronyInternetowej() {
         title="Projekt strony internetowej | Profesjonalny design WWW | fotz.pl"
         description="Projekt strony internetowej od profesjonalnych designerów. Unikalne szablony, indywidualny design, mobile-first. Sprawdź portfolio i cennik fotz.pl!"
         canonical="https://fotz.pl/uslugi/projekt-strony-internetowej"
-        keywords="projekt strony internetowej, projektowanie stron, webdesign, ux design, ui design, projekt graficzny strony"
+        keywords="projekt strony internetowej, projektowanie strony www, projekt strony dla firmy, jak wygląda projekt strony, etapy tworzenia strony internetowej"
       />
       <ServiceSchema
         name="Projekt strony internetowej"

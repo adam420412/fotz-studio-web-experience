@@ -89,7 +89,7 @@ const StronyInternetoweGliwice = () => {
         title="Strony Internetowe Gliwice | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Gliwice — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gliwic. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gliwice"
-        keywords="strony internetowe gliwice, tworzenie stron www gliwice, projektowanie stron gliwice, sklepy internetowe gliwice"
+        keywords="strony internetowe gliwice, tworzenie stron gliwice, strony www gliwice, projektowanie stron gliwice"
       />
       
       <ServiceSchema name="Strony Internetowe Gliwice" description="Profesjonalne tworzenie stron internetowych dla firm z Gliwic." provider="FOTZ Studio" areaServed="Gliwice" />

@@ -42,7 +42,7 @@ export default function BlogPozycjonowanieStron() {
         description="Jak pozycjonować stronę w Google? Poznaj sprawdzone techniki SEO: optymalizacja on-page, link building, content marketing. Poradnik krok po kroku."
         ogType="article"
         canonical="https://fotz.pl/blog/pozycjonowanie-stron-internetowych-poradnik"
-        keywords="pozycjonowanie stron, SEO, pozycjonowanie stron internetowych, optymalizacja SEO, jak pozycjonować stronę, link building, SEO poradnik"
+        keywords="pozycjonowanie stron, pozycjonowanie stron internetowych, jak pozycjonować stronę, seo pozycjonowanie stron, pozycjonowanie www, seo strony internetowej, optymalizacja seo strony, pozycjonowanie stron poradnik"
       />
       <ArticleSchema
         title="Pozycjonowanie Stron Internetowych — Kompletny Poradnik SEO 2026"

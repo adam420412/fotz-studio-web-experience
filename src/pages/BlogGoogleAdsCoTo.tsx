@@ -69,6 +69,7 @@ export default function BlogGoogleAdsCoTo() {
         title="Google Ads — co to jest i jak działa? Kompletny poradnik | fotz.pl"
         description="Google Ads co to jest — wyjaśniamy jak działa, ile kosztuje i kiedy się opłaca. Rodzaje kampanii, modele rozliczeń, pierwsze kroki. Poradnik 2025."
         canonical="https://fotz.pl/blog/google-ads-co-to"
+        keywords="google ads co to jest, co to jest google ads, jak działa google ads, google ads poradnik, google ads dla początkujących, kampanie google ads, google ads reklama, adwords co to"
       />
       <ArticleSchema
         title="Google Ads — co to jest i jak działa? Kompletny poradnik"
@@ -94,9 +95,7 @@ export default function BlogGoogleAdsCoTo() {
                 Google Ads — co to jest i jak działa? Poradnik dla początkujących
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                Google Ads to najpotężniejsza platforma reklamowa na świecie — miliony firm codziennie docierają przez nią
-                do klientów w momencie, gdy aktywnie szukają produktu lub usługi. Dowiedz się jak to działa.
-              </p>
+                Google Ads co to jest? Kompleksowy poradnik o reklamach w Google — jak działają kampanie Google Ads, ile kosztują i jak zacząć reklamować firmę w wyszukiwarce Google.</p>
             </motion.div>
           </div>
         </section>

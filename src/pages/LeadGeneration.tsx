@@ -81,7 +81,7 @@ export default function LeadGeneration() {
         title="Lead Generation — pozyskiwanie klientów dla firm | fotz.pl"
         description="Lead generation dla firm — kompleksowe strategie pozyskiwania leadów: Google Ads, SEO, LinkedIn, landing pages, email marketing. Sprawdź ofertę i cennik!"
         canonical="https://fotz.pl/uslugi/lead-generation"
-        keywords="lead generation, generowanie leadów, pozyskiwanie klientów online, marketing leadów, kampanie lead gen, b2b lead generation"
+        keywords="lead generation, generowanie leadów, pozyskiwanie klientów online, leady sprzedażowe, lead generation b2b, generowanie leadów b2b"
       />
       <ServiceSchema
         name="Lead Generation"

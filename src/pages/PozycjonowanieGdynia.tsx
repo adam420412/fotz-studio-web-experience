@@ -140,7 +140,7 @@ export default function PozycjonowanieGdynia() {
         title="Pozycjonowanie Gdynia | SEO dla Firm z Gdyni | FOTZ"
         description="Pozycjonowanie Gdynia — skuteczne SEO dla firm z Gdyni i Trójmiasta. Ponad 200 projektów. Bezpłatny audyt SEO!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/gdynia"
-        keywords="pozycjonowanie gdynia, seo gdynia, agencja seo gdynia, pozycjonowanie trójmiasto, pozycjonowanie stron gdynia, firma seo gdynia, seo dla firm gdynia, audyt seo gdynia, pozycjonowanie lokalne gdynia, usługi seo gdynia"
+        keywords="pozycjonowanie gdynia, agencja seo gdynia, seo gdynia, pozycjonowanie stron gdynia, seo dla firm gdynia, seo trójmiasto, audyt seo gdynia"
       />
 
       <ServiceSchema

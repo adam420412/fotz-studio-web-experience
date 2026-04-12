@@ -92,7 +92,7 @@ const PozycjonowaniePlock = () => {
         canonical="https://fotz.pl/pozycjonowanie/plock"
         ogTitle="Pozycjonowanie Płock - Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Płocku. Audyt SEO, optymalizacja i link building dla firm płockich - handel, gastronomia, usługi, przemysł."
-        keywords="pozycjonowanie płock, seo płock, agencja seo płock, pozycjonowanie lokalne płock, pozycjonowanie stron płock, seo dla firm płock, audyt seo płock"
+        keywords="pozycjonowanie płock, agencja seo płock, seo płock, pozycjonowanie stron płock, seo dla firm płock, seo mazowsze, pozycjonowanie lokalne płock"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Płock"

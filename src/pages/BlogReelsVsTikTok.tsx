@@ -33,7 +33,7 @@ const BlogReelsVsTikTok = () => {
         description="Instagram Reels vs TikTok — porównanie platform, algorytmy, zasięgi i strategie. Gdzie warto publikować krótkie wideo dla Twojej firmy w 2025? Poradnik…"
         ogType="article"
         canonical="https://fotz.pl/social-media/reels-vs-tiktok"
-        keywords="Instagram Reels, TikTok, krótkie wideo, social media, porównanie platform, vertical video, content marketing"
+        keywords="instagram reels vs tiktok, reels czy tiktok, instagram reels tiktok różnice, co lepsze reels czy tiktok"
       />
       <ArticleSchema
         title="Instagram Reels vs TikTok - gdzie publikować wideo w 2025?"

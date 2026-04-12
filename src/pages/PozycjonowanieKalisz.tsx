@@ -101,7 +101,7 @@ const PozycjonowanieKalisz = () => {
         canonical="https://fotz.pl/pozycjonowanie/kalisz"
         ogTitle="Pozycjonowanie Kalisz - Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Kaliszu i Wielkopolsce. Szybkie efekty, niższa konkurencja SEO, profesjonalne strategie dla firm lokalnych."
-        keywords="pozycjonowanie kalisz, seo kalisz, agencja seo kalisz, pozycjonowanie lokalne kalisz, pozycjonowanie stron kalisz, seo dla firm kalisz, audyt seo kalisz"
+        keywords="pozycjonowanie kalisz, agencja seo kalisz, seo kalisz, pozycjonowanie stron kalisz, seo dla firm kalisz, pozycjonowanie lokalne kalisz, seo wielkopolska"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Kalisz"

@@ -159,7 +159,7 @@ export default function AgencjaMarketingowaKoszalin() {
           title="Agencja Marketingowa Koszalin - SEO, Google Ads, Social Media | Fotz Studio"
           description="Agencja marketingowa w Koszalinie. Profesjonalne uslugi SEO lokalne, Google Ads, Facebook Ads, zarzadzanie social media i tworzenie stron dla firm turystycznych i handlowych z Koszalina."
           canonical="https://fotz.pl/agencja-marketingowa/koszalin"
-        keywords="agencja marketingowa koszalin, marketing internetowy koszalin, usługi marketingowe koszalin, agencja reklamowa koszalin"
+        keywords="agencja marketingowa koszalin, marketing internetowy koszalin, agencja reklamowa koszalin, seo koszalin"
         />
 
         <ServiceSchema

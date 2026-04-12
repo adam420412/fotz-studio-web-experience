@@ -44,6 +44,7 @@ const CaseStudyCelsjusz = () => {
         title="Celsjusz OZE — Strona dla Firmy Fotowoltaika i Pompy Ciepła | Case Study Fotz Studio"
         description="Case study: strona internetowa dla Celsjusz OZE — fotowoltaika, pompy ciepła, lead generation i SEO branży OZE. Fotz Studio."
         canonical="https://fotz.pl/realizacje/celsjusz"
+        keywords="case study celsjusz, realizacja marketing"
       />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Celsjusz", url: "https://fotz.pl/realizacje/celsjusz" }]} />
       <ArticleSchema title="Celsjusz OZE - Strona dla firmy OZE" description="Case study: strona z lead generation dla firmy oferującej pompy ciepła i fotowoltaikę" url="https://fotz.pl/realizacje/celsjusz" datePublished="2024-06-15" dateModified="2026-01-09" />

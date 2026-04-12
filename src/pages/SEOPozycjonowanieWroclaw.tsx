@@ -29,7 +29,7 @@ const SEOPozycjonowanieWroclaw = () => {
         title="Pozycjonowanie Wrocław — Agencja SEO dla Firm z Wrocławia | Fotz Studio"
         description="Pozycjonowanie stron internetowych Wrocław — SEO lokalne i ogólnopolskie, audyt SEO, link building dla firm z Wrocławia. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-wroclaw"
-        keywords="pozycjonowanie wroclaw, seo wroclaw, agencja seo wroclaw, pozycjonowanie lokalne wroclaw, google maps wroclaw"
+        keywords="pozycjonowanie wrocław, agencja seo wrocław, seo wrocław, pozycjonowanie stron wrocław, seo dla firm wrocław, pozycjonowanie lokalne wrocław, audyt seo wrocław"
       />
       <ServiceSchema
         name="Pozycjonowanie Wrocław"

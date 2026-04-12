@@ -38,7 +38,7 @@ const SEOOnPage = () => {
         title="Optymalizacja On-Page SEO — Techniczne i Treściowe SEO Strony | Fotz Studio"
         description="Optymalizacja SEO on-page — poprawa struktury strony, meta tagów, nagłówków, treści i szybkości ładowania. Zwiększ widoczność w Google. Fotz Studio."
         canonical="https://fotz.pl/seo/on-page"
-        keywords="optymalizacja on-page, seo on-page, meta tagi seo, nagłówki seo, core web vitals, schema markup"
+        keywords="optymalizacja on-page, seo on-page, meta tagi seo, nagłówki seo, core web vitals, schema markup, tytuły stron seo, optymalizacja treści seo, seo techniczne on-page, content seo"
       />
       <ServiceSchema
         name="Optymalizacja On-Page SEO"

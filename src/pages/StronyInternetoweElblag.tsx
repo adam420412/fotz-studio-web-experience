@@ -80,7 +80,7 @@ const StronyInternetoweElblag = () => {
         title="Strony Internetowe Elbląg | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Elbląg — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Elbląga. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/elblag"
-        keywords="strony internetowe elbląg, tworzenie stron www elbląg, projektowanie stron elbląg, agencja webdesign elbląg, budowa strony elbląg, strona internetowa elbląg"
+        keywords="strony internetowe elbląg, tworzenie stron elbląg, strony www elbląg, projektowanie stron elbląg"
       />
       
       <ServiceSchema name="Strony Internetowe Elbląg" description="Tworzenie stron internetowych dla firm z Elbląga." provider="FOTZ Studio" areaServed="Elbląg" />

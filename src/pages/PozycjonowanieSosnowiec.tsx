@@ -100,7 +100,7 @@ const PozycjonowanieSosnowiec = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/sosnowiec"
         ogTitle="Pozycjonowanie Sosnowiec — fotz studio Agencja SEO"
         ogDescription="Pozycjonowanie dla Sosnowca — usługi lokalne, handel, transport. SEO dla rynku górniczego i transformującego się miasta. Audyt SEO, optymalizacja, link building."
-        keywords="pozycjonowanie sosnowiec, seo sosnowiec, agencja seo sosnowiec, pozycjonowanie lokalne sosnowiec, pozycjonowanie stron sosnowiec, seo dla firm sosnowiec, audyt seo sosnowiec"
+        keywords="pozycjonowanie sosnowiec, agencja seo sosnowiec, seo sosnowiec, pozycjonowanie stron sosnowiec, seo dla firm sosnowiec, seo śląsk, pozycjonowanie lokalne sosnowiec"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Sosnowiec"

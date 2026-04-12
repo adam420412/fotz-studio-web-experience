@@ -44,7 +44,7 @@ const CaseStudyApartamenty = () => {
         title="Apartamenty Chorwacja — Strona z Systemem Rezerwacji | Case Study Fotz Studio"
         description="Case study: strona internetowa dla apartamentów w Chorwacji z systemem rezerwacji online, SEO turystyczne i responsywny design. Fotz Studio."
         canonical="https://fotz.pl/realizacje/apartamenty-chorwacja"
-        keywords="apartamenty Chorwacja, system rezerwacji, turystyka, case study, strona internetowa"
+        keywords="case study apartamenty, marketing nieruchomości, reklama deweloper, google ads nieruchomości realizacja"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },

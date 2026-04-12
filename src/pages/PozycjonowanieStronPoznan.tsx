@@ -14,7 +14,7 @@ const PozycjonowanieStronPoznan = () => {
         title="Pozycjonowanie Stron Poznań — Agencja SEO dla Firm z Poznania | Fotz Studio"
         description="Pozycjonowanie stron internetowych Poznań — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Poznania. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-poznan"
-        keywords="pozycjonowanie stron Poznań, SEO Poznań, agencja SEO Poznań, pozycjonowanie stron www, optymalizacja SEO, pozycjonowanie lokalne Poznań, seo dla firm Poznań, audyt seo Poznań, pozycjonowanie stron internetowych Poznań, usługi seo Poznań"
+        keywords="pozycjonowanie stron poznań, agencja seo poznań, seo poznań, pozycjonowanie lokalne poznań, pozycjonowanie stron internetowych poznań, seo dla firm poznań"
       />
 
       {/* Hero Section */}

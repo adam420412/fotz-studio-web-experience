@@ -112,7 +112,7 @@ export default function ProdukcjaFilmowPoznan() {
         title="Produkcja Filmów Poznań — Filmy Reklamowe i Wideo dla Firm | Fotz Studio"
         description="Produkcja filmów Poznań — filmy reklamowe, wideo firmowe, sesje fotograficzne i filmy na social media dla firm z Poznania. Fotz Studio."
         canonical="https://fotz.pl/uslugi/produkcja-filmow"
-        keywords="produkcja filmów reklamowych poznań, studio filmowe poznań, spoty reklamowe, filmy promocyjne, video marketing, film korporacyjny, film produktowy"
+        keywords="produkcja filmów poznań, filmy reklamowe poznań, film korporacyjny poznań, produkcja video poznań, studio filmowe poznań"
       />
 
       <OrganizationSchema />

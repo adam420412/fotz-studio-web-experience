@@ -89,7 +89,7 @@ const StronyInternetoweRybnik = () => {
         title="Strony Internetowe Rybnik | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Rybnik — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Rybnika. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/rybnik"
-        keywords="strony internetowe rybnik, tworzenie stron www rybnik, projektowanie stron rybnik, sklepy internetowe rybnik"
+        keywords="strony internetowe rybnik, tworzenie stron rybnik, strony www rybnik, projektowanie stron rybnik"
       />
       
       <ServiceSchema name="Strony Internetowe Rybnik" description="Profesjonalne tworzenie stron internetowych dla firm z Rybnika." provider="FOTZ Studio" areaServed="Rybnik" />

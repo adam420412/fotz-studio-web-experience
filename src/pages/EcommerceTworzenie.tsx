@@ -162,7 +162,7 @@ export default function EcommerceTworzenie() {
         title="Tworzenie Sklepu Internetowego — E-commerce i Sprzedaż Online | Fotz Studio"
         description="Sklep internetowy szyty na miarę — tworzenie e-commerce od A do Z. WooCommerce, Shopify, integracje płatności, SEO dla sklepów online. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/ecommerce"
-        keywords="tworzenie e-commerce, sklep internetowy, agencja e-commerce, wdrożenie sklepu online, platforma e-commerce, sprzedaż online, budowa sklepu e-commerce"
+        keywords="tworzenie sklepów internetowych, e-commerce tworzenie, sklep internetowy na zamówienie, tworzenie sklepu woocommerce, tworzenie sklepu shopify, sklep internetowy cena"
       />
 
       <OrganizationSchema />

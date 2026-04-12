@@ -215,7 +215,7 @@ export default function FotografiaZDrona() {
         title="Fotografia z Drona Poznań — Zdjęcia Lotnicze 4K i Film Dronem | Fotz Studio"
         description="Fotografia z drona Poznań — profesjonalne zdjęcia z drona 4K, film dronem, ujęcia lotnicze dla firm, deweloperów i agencji nieruchomości. Fotz Studio."
         canonical="https://fotz.pl/uslugi/fotografia-z-drona"
-        keywords="fotografia z drona, zdjęcia dronem, filmowanie dronem, usługi dronem, fotografia lotnicza, aerial photography"
+        keywords="fotografia z drona, zdjęcia z drona, film z drona, filmowanie dronem, fotografia lotnicza, usługi dronem"
       />
 
       <ServiceSchema

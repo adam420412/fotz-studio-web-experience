@@ -54,6 +54,7 @@ export default function BlogPozycjonowanieDlaMalychFirm() {
         title="Pozycjonowanie dla malych firm — jak zaczac SEO z malym budzetem? | Fotz.pl"
         description="Praktyczny przewodnik po SEO dla małych firm. Dowiedz się, jak zacząć pozycjonowanie z ograniczonym budżetem, optymalizować stronę i zdobywać klientów online."
         canonical="https://fotz.pl/blog/pozycjonowanie-dla-malych-firm"
+        keywords="pozycjonowanie małych firm, seo dla małych firm, pozycjonowanie strony małej firmy, tanie pozycjonowanie, seo lokalne dla firm, pozycjonowanie lokalne małej firmy, seo dla małego biznesu"
       />
       <ArticleSchema
         title="Pozycjonowanie dla malych firm — jak zaczac SEO z malym budzetem?"
@@ -78,7 +79,7 @@ export default function BlogPozycjonowanieDlaMalychFirm() {
               Pozycjonowanie dla małych firm
             </h1>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-              Jak zacząć SEO z małym budżetem? Praktyczny przewodnik dla właścicieli małych biznesów, którzy chcą zdobywać klientów z wyszukiwarki Google.
+              Pozycjonowanie dla małych firm — jak skutecznie i tanio wypozycjonować stronę małej firmy? Praktyczne wskazówki SEO lokalne dla małych i średnich przedsiębiorstw.
             </p>
             
             {/* Stats */}

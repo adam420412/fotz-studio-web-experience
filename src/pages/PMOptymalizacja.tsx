@@ -38,7 +38,7 @@ const PMOptymalizacja = () => {
         title="Optymalizacja Kampanii Reklamowych — Poprawa ROAS i CPA | Fotz Studio"
         description="Optymalizacja kampanii reklamowych — poprawa ROAS, obniżenie CPA, testy A/B reklam, optymalizacja konwersji. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/optymalizacja"
-        keywords="optymalizacja kampanii reklamowych, optymalizacja google ads, roas, cpa, optymalizacja meta ads, a/b testing reklam"
+        keywords="optymalizacja kampanii reklamowych, optymalizacja google ads, poprawa roas, obniżenie cpa, optymalizacja meta ads, a/b testing reklam, optymalizacja reklam facebook, zmniejszenie kosztu konwersji, zwiększenie roas, audyt kampanii google ads"
       />
       <ServiceSchema
         name="Optymalizacja Kampanii Reklamowych"
@@ -75,8 +75,7 @@ const PMOptymalizacja = () => {
                 Optymalizacja Kampanii Reklamowych
               </h1>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
-                Reklamy chodzą, budżet się wydaje, ale ROAS nie satysfakcjonuje? Optymalizujemy kampanie na poziomie, który przekłada się na realne wyniki biznesowe.
-              </p>
+                Optymalizacja kampanii reklamowych — poprawa ROAS i obniżenie CPA. Profesjonalne zarządzanie i optymalizacja kampanii Google Ads, Meta Ads i TikTok Ads. Zwiększamy efektywność Twoich reklam.</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg">
                   <Link to="/konsultacja">Bezpłatna konsultacja</Link>

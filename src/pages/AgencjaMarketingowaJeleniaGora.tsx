@@ -106,7 +106,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
         ogDescription="Kompleksowe uslugi marketingowe dla firm w Jeleniej Gorze. Zwieksz widocznosc online dzis."
         ogImage="https://fotz.pl/og-image.jpg"
         ogUrl="https://fotz.pl/agencja-marketingowa/jelenia-gora"
-        keywords="agencja marketingowa jelenia góra, marketing internetowy jelenia góra, usługi marketingowe jelenia góra"
+        keywords="agencja marketingowa jelenia góra, marketing internetowy jelenia góra, agencja reklamowa jelenia góra, seo jelenia góra"
       />
       <ServiceSchema schema={serviceSchema} />
       <BreadcrumbSchema schema={breadcrumbSchema} />

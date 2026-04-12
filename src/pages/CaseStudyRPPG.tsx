@@ -38,6 +38,7 @@ const CaseStudyRPPG = () => {
         title="RPPG — Strona dla Organizacji Przedsiębiorców Globalnych | Case Study Fotz Studio"
         description="Case study RPPG Rada Polskich Przedsiębiorców Globalnych: strona internetowa dla organizacji biznesowej. Design i UX. Fotz Studio."
         canonical="https://fotz.pl/realizacje/rppg"
+        keywords="case study gry, marketing dla gier realizacja"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },

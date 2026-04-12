@@ -49,7 +49,7 @@ export default function GoogleAdsKrakow() {
           title="Agencja Google Ads Kraków — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Kraków — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/krakow"
-          keywords="google ads kraków, agencja google ads kraków, kampanie google ads kraków, reklamy google kraków, google ads dla firm kraków, sem kraków, google ads małopolska"
+          keywords="google ads krakow, kampanie google ads krakow, agencja google ads krakow, reklamy google krakow, google adwords krakow, sem krakow, google ads dla firm krakow, prowadzenie google ads krakow, google ads cennik krakow, reklama w google krakow"
         />
 
         <ServiceSchema
@@ -92,8 +92,7 @@ export default function GoogleAdsKrakow() {
                   Agencja Google Ads Kraków
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Kampanie dla firm w Krakowie. Wyniki od 24-48h. Certyfikowani specjaliści.
-                </p>
+                  Google Ads Krakow — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Krakowa i Małopolski. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}

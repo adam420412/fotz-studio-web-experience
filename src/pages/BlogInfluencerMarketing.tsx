@@ -51,7 +51,7 @@ export default function BlogInfluencerMarketing() {
         description="Influencer marketing w Polsce — jak wybierać influencerów, negocjować współpracę i mierzyć ROI. Mikro i makro influencerzy. Poradnik influencer marketing…"
         ogType="article"
         canonical="https://fotz.pl/social-media/influencer"
-        keywords="influencer marketing, współpraca z influencerami, kampanie influencerskie, mikro influencerzy, nano influencerzy, Instagram influencerzy, TikTok influencerzy"
+        keywords="influencer marketing, współpraca z influencerami, marketing influencerów, reklama u influencera, influencer co to"
       />
       <ArticleSchema
         title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami"

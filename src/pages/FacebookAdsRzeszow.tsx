@@ -13,7 +13,7 @@ export default function FacebookAdsRzeszow() {
         title="Agencja Facebook Ads Rzeszów — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Rzeszów ✓ Kampanie Meta Ads dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/facebook-ads/rzeszow"
-        keywords="facebook ads rzeszów, agencja facebook ads rzeszów, kampanie facebook rzeszów, reklamy facebook rzeszów, meta ads rzeszów"
+        keywords="facebook ads rzeszow, meta ads rzeszow, reklamy facebook rzeszow, agencja facebook ads rzeszow, kampanie facebook rzeszow, instagram ads rzeszow, facebook ads dla firm rzeszow, reklama na facebooku rzeszow, meta ads agencja rzeszow, facebook ads cennik rzeszow"
       />
       <BreadcrumbSchema
         items={[
@@ -53,8 +53,7 @@ export default function FacebookAdsRzeszow() {
                   Agencja Facebook Ads w Rzeszowie
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Profesjonalne kampanie Meta Ads dla firm z Rzeszowa i Podkarpacia.
-                  Zwiększamy sprzedaż, widzialność i ROI poprzez precyzyjnie skierowane reklamy.
+                  Facebook Ads Rzeszow — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Rzeszowa i Podkarpacia. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}

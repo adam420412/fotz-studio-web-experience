@@ -116,7 +116,7 @@ export default function AgencjaSEOWroclaw() {
           title="Agencja SEO Wrocław | Pozycjonowanie stron Wrocław | fotz.pl"
           description="Agencja SEO Wrocław — pozycjonujemy strony firm z Wrocławia. Top 10 Google. Sprawdź pakiety SEO dla firm wrocławskich!"
           canonical="https://fotz.pl/agencja-seo-wroclaw"
-          keywords="agencja SEO Wrocław, pozycjonowanie Wrocław, SEO Wrocław, marketing Wrocław, usługi SEO, pozycjonowanie stron Wrocław, seo dla firm wrocław, audyt seo wrocław, optymalizacja seo wrocław, pozycjonowanie lokalne Wrocław, link building wrocław, seo techniczne wrocław, agencja seo dolny śląsk"
+          keywords="agencja seo wrocław, pozycjonowanie wrocław, seo wrocław, agencja seo wrocław cena, pozycjonowanie stron wrocław, seo dla firm wrocław, audyt seo wrocław, optymalizacja seo wrocław, pozycjonowanie lokalne wrocław, link building wrocław"
         />
 
         <ServiceSchema

@@ -38,7 +38,7 @@ export default function BlogRemarketing() {
         description="Remarketing i retargeting — jak konfigurować kampanie remarketingowe Google Ads i Meta Ads, by odzyskiwać odwiedzających i zwiększać konwersję. Fotz Studio."
         ogType="article"
         canonical="https://fotz.pl/performance-marketing/remarketing"
-        keywords="remarketing, retargeting, remarketing google ads, remarketing facebook, porzucone koszyki, remarketing dynamiczny"
+        keywords="remarketing co to jest, co to jest remarketing, remarketing google ads, remarketing facebook ads, retargeting reklamy, remarketing dla firm, jak działa remarketing, remarketing cennik"
       />
       <ArticleSchema
         title="Remarketing - kompletny poradnik dla firm 2025"
@@ -73,8 +73,7 @@ export default function BlogRemarketing() {
               Remarketing - kompletny poradnik dla firm w 2025 roku
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Jak odzyskiwać klientów, którzy opuścili Twoją stronę? Poznaj strategie remarketingu w Google Ads, Facebook i dynamicznego remarketingu dla e-commerce.
-            </p>
+              Remarketing — co to jest i jak działa? Poradnik o retargetingu w Google Ads i Facebook Ads. Jak skutecznie docierać do osób, które odwiedziły Twoją stronę i zwiększać konwersje.</p>
             
             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">

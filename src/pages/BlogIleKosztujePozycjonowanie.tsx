@@ -52,7 +52,7 @@ const BlogIleKosztujePozycjonowanie = () => {
         description="Sprawdź aktualne ceny pozycjonowania stron internetowych w 2025 roku. Cennik SEO, pakiety, co wpływa na koszt i jak wybrać najlepszą ofertę dla Twojej firmy."
         ogType="article"
         canonical="https://fotz.pl/blog/ile-kosztuje-pozycjonowanie"
-        keywords="ile kosztuje pozycjonowanie, cena seo, cennik pozycjonowania, koszt seo, pakiety seo"
+        keywords="ile kosztuje pozycjonowanie, koszt pozycjonowania strony, pozycjonowanie cena miesięcznie, seo cennik agencja, pozycjonowanie stron internetowych cena, abonament seo cena, pozycjonowanie ile trwa, seo cennik 2025"
         schemaJson={[
           {
             "@context": "https://schema.org",

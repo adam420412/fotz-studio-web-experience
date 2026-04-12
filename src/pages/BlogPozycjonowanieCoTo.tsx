@@ -67,6 +67,7 @@ export default function BlogPozycjonowanieCoTo() {
         title="Pozycjonowanie — co to jest i jak działa? Poradnik SEO | fotz.pl"
         description="Pozycjonowanie co to jest — wyjaśniamy czym jest pozycjonowanie stron, jak działa, ile kosztuje i jak długo trwa. Rodzaje pozycjonowania i co wchodzi w cenę."
         canonical="https://fotz.pl/blog/pozycjonowanie-co-to"
+        keywords="pozycjonowanie co to jest, co to jest pozycjonowanie, pozycjonowanie stron internetowych co to, seo co to jest, pozycjonowanie definicja, jak działa pozycjonowanie, pozycjonowanie stron www, seo dla firm"
       />
       <ArticleSchema
         title="Pozycjonowanie — co to jest i jak działa?"
@@ -92,9 +93,7 @@ export default function BlogPozycjonowanieCoTo() {
                 Pozycjonowanie — co to jest i jak działa?
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                Pozycjonowanie stron to inwestycja która pracuje 24/7 — zamiast płacić za każde kliknięcie,
-                budujesz trwałą widoczność w Google. Sprawdź jak to działa i ile kosztuje.
-              </p>
+                Pozycjonowanie stron internetowych — co to jest i jak działa? Kompletny poradnik SEO dla właścicieli firm. Wyjaśniamy czym jest pozycjonowanie, jak przebiega i ile kosztuje.</p>
             </motion.div>
           </div>
         </section>

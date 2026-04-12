@@ -43,7 +43,7 @@ export default function BlogAudytStrony() {
         description="Audyt strony internetowej: co sprawdzić? Przewodnik po audycie SEO, technicznych problemach, Core Web Vitals i koszcie. Sprawdź swoją stronę już dziś."
         ogType="article"
         canonical="https://fotz.pl/blog/audyt-strony-internetowej"
-        keywords="audyt strony internetowej, audyt SEO, co sprawdzić, problemy SEO, audyt techniczny"
+        keywords="audyt strony internetowej, co to audyt strony, audyt ux strony, audyt seo strony, audyt techniczny strony, jak zbadać stronę internetową"
         schemaJson={[
           {
             "@context": "https://schema.org",

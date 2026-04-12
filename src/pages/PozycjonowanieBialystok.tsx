@@ -101,7 +101,7 @@ const PozycjonowanieBialystok = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/bialystok"
         ogTitle="Pozycjonowanie Białystok — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Białymstoku i na Podlasiu. Szybkie efekty, niższa konkurencja SEO niż w dużych miastach. Zamów audyt!"
-        keywords="pozycjonowanie białystok, seo białystok, agencja seo białystok, pozycjonowanie lokalne białystok, pozycjonowanie stron białystok, seo dla firm białystok, audyt seo białystok, usługi seo białystok"
+        keywords="pozycjonowanie białystok, agencja seo białystok, seo białystok, pozycjonowanie stron białystok, seo dla firm białystok, pozycjonowanie lokalne białystok, audyt seo białystok, seo podlaskie, agencja marketingowa białystok"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Białystok"

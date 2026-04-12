@@ -37,7 +37,7 @@ const BlogEmailMarketing = () => {
         description="Email marketing 2025 — jak budować listę mailingową, tworzyć skuteczne kampanie email i zwiększać konwersję. Automatyzacja, segmentacja i personalizacja…"
         ogType="article"
         canonical="https://fotz.pl/content-marketing/email-2025"
-        keywords="email marketing, lista mailingowa, newsletter, kampanie email, automatyzacja email, konwersja, lead magnet"
+        keywords="email marketing, skuteczny email marketing, newsletter jak pisać, email marketing dla firm, kampanie emailowe poradnik"
       />
       <ArticleSchema
         title="Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję"

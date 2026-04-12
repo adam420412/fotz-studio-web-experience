@@ -96,7 +96,7 @@ export default function ContentMarketingCluster() {
         title="Content Marketing | Strategia Treści | Fotz Studio"
         description="Strategia content marketing, copywriting, email marketing i treści SEO. Tworzenie wartościowych treści, które przyciągają klientów."
         canonical="https://fotz.pl/content-marketing"
-        keywords="content marketing, copywriting, email marketing, strategia treści, SEO content, blog firmowy, lead magnets"
+        keywords="content marketing, strategia content, marketing treści, tworzenie contentu, content dla firm, blog firmowy, seo content"
       />
       <BreadcrumbSchema
         items={[

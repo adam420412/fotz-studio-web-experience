@@ -38,7 +38,7 @@ const SocialMediaStrategia = () => {
         title="Strategia Social Media — Planowanie i Zarządzanie Social Media | Fotz Studio"
         description="Strategia social media dla firm — tworzenie strategii, calendar content, zarządzanie profilami i mierzenie efektów. Fotz Studio."
         canonical="https://fotz.pl/social-media/strategia"
-        keywords="strategia social media, plan contentowy, harmonogram publikacji social media, marketing w mediach społecznościowych, strategia facebook instagram"
+        keywords="strategia social media, social media strategia, plan social media, strategia marketingowa social media, jak zbudować strategię social media"
       />
       <ServiceSchema
         name="Strategia Social Media i Plan Contentowy"

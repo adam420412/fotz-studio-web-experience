@@ -206,7 +206,7 @@ export default function FacebookInstagramAds() {
         title="Kampania Facebook Ads - Reklama na Facebooku dla Firm | Cennik | Fotz Studio"
         description="Kampanie Facebook Ads dla firm — reklama na Facebooku i Instagramie. Formy reklamy, targetowanie odbiorców, cennik. Agencja Facebook Ads — bezpłatna wycena 24h."
         canonical="https://fotz.pl/performance-marketing/meta-ads"
-        keywords="kampania facebook ads, reklama facebook ads, kampanie facebook, reklama na facebooku, formy reklamy facebook, facebook ads cennik, instagram ads"
+        keywords="meta ads agencja, kampania facebook ads, reklama na facebooku, facebook instagram ads, meta business suite, kampanie meta ads, reklamy meta, facebook ads instagram ads, meta ads polska, agencja meta ads, meta ads cennik"
       />
       <ServiceSchema
         name="Meta Ads - Facebook & Instagram"

@@ -169,7 +169,7 @@ export default function TikTokAdsWroclaw() {
         title="TikTok Ads Wrocław — agencja kampanii reklamowych TikTok | Fotz.pl"
         description="Reklamy TikTok Ads Wrocław — agencja Fotz.pl. Kampanie TikTok dla firm z Wrocławia: In-Feed Ads, Spark Ads, kreacje wideo, optymalizacja. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/tiktok-ads/wroclaw"
-        keywords="tiktok ads wrocław, agencja tiktok ads wrocław, kampanie tiktok wrocław, reklamy tiktok wrocław, tiktok ads dla firm wrocław, tiktok marketing dolny śląsk"
+        keywords="tiktok ads wroclaw, reklamy tiktok wroclaw, agencja tiktok ads wroclaw, kampanie tiktok wroclaw, tiktok advertising wroclaw, tiktok ads dla firm wroclaw, tiktok ads cennik wroclaw"
       />
 
       <ServiceSchema
@@ -192,10 +192,7 @@ export default function TikTokAdsWroclaw() {
               Kampanie TikTok Ads Wrocław
             </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl">
-              Zwiększ sprzedaż i buduj markę dzięki kampaniom TikTok Ads kierowanym do użytkowników z Wrocławia.
-              Nasza agencja specjalizuje się w tworzeniu efektywnych reklam wideo, precyzyjnym targetowaniu
-              i optymalizacji budżetu dla maksymalnego zwrotu z inwestycji. TikTok to najszybciej rosnąca
-              platforma dla firm z Wrocławia chcących dotrzeć do młodszych odbiorców.
+              TikTok Ads Wroclaw — profesjonalne kampanie reklamowe TikTok dla firm z Wroclawa i Dolnego Śląska. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.
             </p>
           </section>
         </FadeInView>

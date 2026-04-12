@@ -23,7 +23,7 @@ export default function AgencjaSEOKrakow() {
         title="Agencja SEO Kraków | Pozycjonowanie stron Kraków | fotz.pl"
         description="Agencja SEO Kraków — pozycjonujemy strony firm krakowskich. Wyniki Top 10 Google. Sprawdź pakiety SEO i zacznij dominować lokalnie!"
         canonical="https://fotz.pl/agencja-seo-krakow"
-        keywords="agencja SEO Kraków, pozycjonowanie Kraków, SEO Kraków, agencja seo kraków cena, pozycjonowanie stron kraków, seo dla firm kraków, audyt seo kraków, optymalizacja seo kraków, pozycjonowanie lokalne kraków, link building kraków, seo techniczne kraków, agencja marketingowa kraków"
+        keywords="agencja seo kraków, pozycjonowanie kraków, seo kraków, agencja seo kraków cena, pozycjonowanie stron kraków, seo dla firm kraków, audyt seo kraków, optymalizacja seo kraków, pozycjonowanie lokalne kraków, link building kraków, seo techniczne kraków"
       />
       <ServiceSchema
         name="Agencja SEO Kraków"

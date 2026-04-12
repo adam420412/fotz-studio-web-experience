@@ -140,7 +140,7 @@ const AgencjaMarketingowaKielce = () => {
         title="Agencja marketingowa Kielce - fotz studio | Marketing internetowy"
         description="Agencja marketingowa w Kielcach. Tworzymy strony internetowe, pozycjonowanie SEO, kampanie Google Ads i branding dla firm z Kielc i Świętokrzyskiego."
         canonical="https://fotz.pl/agencja-marketingowa/kielce"
-        keywords="agencja marketingowa kielce, marketing internetowy, strony internetowe kielce, seo kielce, google ads kielce"
+        keywords="agencja marketingowa kielce, marketing internetowy kielce, agencja reklamowa kielce, seo kielce, google ads kielce"
       />
       <ServiceSchema
         name="Agencja marketingowa Kielce"

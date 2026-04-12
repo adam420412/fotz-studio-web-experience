@@ -212,7 +212,7 @@ export default function GoogleAdsBydgoszcz() {
         title="Agencja Google Ads Bydgoszcz — kampanie reklamowe dla firm | Fotz.pl"
         description="Google Ads Bydgoszcz ✓ Kampanie dla firm z Bydgoszczy i Kujaw. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/google-ads/bydgoszcz"
-        keywords="google ads bydgoszcz, agencja google ads bydgoszcz, kampanie google ads bydgoszcz, reklamy google bydgoszcz, google ads dla firm bydgoszcz, sem bydgoszcz"
+        keywords="google ads bydgoszcz, kampanie google ads bydgoszcz, agencja google ads bydgoszcz, reklamy google bydgoszcz, google adwords bydgoszcz, sem bydgoszcz, google ads dla firm bydgoszcz, prowadzenie google ads bydgoszcz, google ads cennik bydgoszcz, reklama w google bydgoszcz"
       />
 
       <BreadcrumbSchema items={[
@@ -256,8 +256,7 @@ export default function GoogleAdsBydgoszcz() {
               Google Ads dla Firm w Bydgoszczy
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Profesjonalne zarządzanie kampaniami Google Ads dla biznesu z Bydgoszczy i Kujaw.
-              Od 400 zł/miesiąc. Trafiaj do klientów, którzy szukają Twoich usług.
+              Google Ads Bydgoszcz — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Bydgoszcza i Kujaw. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">

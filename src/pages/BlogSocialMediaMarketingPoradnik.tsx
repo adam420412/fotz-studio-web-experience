@@ -54,6 +54,7 @@ export default function BlogSocialMediaMarketingPoradnik() {
         title="Social media marketing — kompletny poradnik dla firm 2025 | Fotz.pl"
         description="Kompleksowy poradnik social media marketing dla firm. Strategie, KPI, metryki, wybór platform i praktyczne porady jak efektywnie promować firmę w mediach społecznych."
         canonical="https://fotz.pl/blog/social-media-marketing-poradnik"
+        keywords="social media marketing poradnik, jak zacząć social media marketing, social media poradnik, marketing na facebooku poradnik"
         ogImage="https://fotz.pl/og-social-media-marketing.jpg"
       />
 

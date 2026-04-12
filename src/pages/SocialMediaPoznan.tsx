@@ -111,7 +111,7 @@ export default function SocialMediaPoznan() {
         title="Social Media Poznań — Obsługa i Prowadzenie Social Media | Fotz Studio"
         description="Obsługa social media Poznań — prowadzenie Facebooka, Instagrama, LinkedIn dla firm z Poznania. Content, kampanie reklamowe, analityka. Fotz Studio."
         canonical="https://fotz.pl/social-media/poznan"
-        keywords="agencja social media poznań, prowadzenie facebooka poznań, social media poznań, instagram poznań, meta ads poznań"
+        keywords="agencja social media poznań, obsługa social media poznań, prowadzenie fanpage poznań, social media marketing poznań, facebook ads poznań"
       />
       <ServiceSchema
         name="Agencja Social Media Poznań"

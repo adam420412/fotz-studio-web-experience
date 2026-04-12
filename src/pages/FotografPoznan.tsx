@@ -132,7 +132,7 @@ const FotografPoznan = () => {
         title="Fotograf Poznań — Fotografia Biznesowa i Firmowa | Fotz Studio"
         description="Fotograf Poznań — profesjonalna fotografia firmowa, korporacyjna, produktowa i eventowa dla firm z Poznania. Studio fotograficzne Fotz."
         canonical="https://fotz.pl/uslugi/fotografia"
-        keywords="fotograf Poznań, sesje fotograficzne, fotografia eventowa, zdjęcia biznesowe, fotograf rodzinny"
+        keywords="fotograf poznań, sesja zdjęciowa poznań, zdjęcia biznesowe poznań, fotografia firmowa poznań, fotograf biznesowy poznań"
       />
 
       {/* Hero Section */}

@@ -216,7 +216,7 @@ export default function FacebookAdsGdansk() {
         title="Agencja Facebook Ads Gdańsk — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Gdańsk ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Gdańska i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/facebook-ads/gdansk"
-        keywords="facebook ads gdańsk, agencja facebook ads gdańsk, kampanie facebook gdańsk, reklamy facebook gdańsk, meta ads gdańsk, instagram ads gdańsk, facebook ads trójmiasto"
+        keywords="facebook ads gdansk, meta ads gdansk, reklamy facebook gdansk, agencja facebook ads gdansk, kampanie facebook gdansk, instagram ads gdansk, facebook ads dla firm gdansk, reklama na facebooku gdansk, meta ads agencja gdansk, facebook ads cennik gdansk"
       />
       
       <BreadcrumbSchema items={breadcrumbItems} />
@@ -312,7 +312,7 @@ export default function FacebookAdsGdansk() {
                   Dlaczego Facebook Ads w Gdańsku?
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Gdańsk to nie tylko turystyka. To port, IT, edukacja – branże, które prosperują dzięki dobrym reklamom.
+                  Facebook Ads Gdańsk — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Gdańsk i Trójmiasta. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu. Bezpłatna konsultacja.
                 </p>
               </div>
             </FadeInView>

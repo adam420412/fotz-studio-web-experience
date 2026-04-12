@@ -88,6 +88,7 @@ export default function BlogPozycjonowanieStronCena() {
         title="Pozycjonowanie stron cena 2025 — ile kosztuje SEO? | fotz.pl"
         description="Pozycjonowanie stron cena — ile kosztuje SEO w Polsce w 2025 roku. Modele rozliczeń, co wpływa na cenę, ile zapłacisz za efekty. Realne stawki agencji SEO."
         canonical="https://fotz.pl/blog/pozycjonowanie-stron-cena"
+        keywords="pozycjonowanie stron cena, ile kosztuje pozycjonowanie, cena pozycjonowania stron, pozycjonowanie cennik 2025, seo cena miesięcznie, pozycjonowanie stron cennik agencja, koszt pozycjonowania"
       />
       <ArticleSchema
         title="Pozycjonowanie stron cena 2025 — ile kosztuje SEO?"
@@ -113,9 +114,7 @@ export default function BlogPozycjonowanieStronCena() {
                 Pozycjonowanie stron cena 2025 — ile kosztuje SEO w Polsce?
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                Ceny pozycjonowania w Polsce wahają się od 300 zł do dziesiątek tysięcy złotych miesięcznie.
-                Wyjaśniamy od czego zależy cena, modele rozliczeń i czego unikać.
-              </p>
+                Pozycjonowanie stron — cena i cennik 2025. Ile kosztuje pozycjonowanie strony internetowej? Porównanie cen agencji SEO, specjalistów i narzędzi do samodzielnego pozycjonowania.</p>
             </motion.div>
           </div>
         </section>

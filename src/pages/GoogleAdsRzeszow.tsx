@@ -14,7 +14,7 @@ export default function GoogleAdsRzeszow() {
           title="Agencja Google Ads Rzeszów — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Rzeszów ✓ Kampanie dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/rzeszow"
-        keywords="google ads rzeszów, agencja google ads rzeszów, kampanie google ads rzeszów, reklamy google rzeszów, google ads dla firm rzeszów, sem rzeszów"
+        keywords="google ads rzeszow, kampanie google ads rzeszow, agencja google ads rzeszow, reklamy google rzeszow, google adwords rzeszow, sem rzeszow, google ads dla firm rzeszow, prowadzenie google ads rzeszow, google ads cennik rzeszow, reklama w google rzeszow"
         />
 
       <ServiceSchema 
@@ -76,8 +76,7 @@ export default function GoogleAdsRzeszow() {
               Google Ads dla <span className="text-emerald-300">Rzeszowa</span>
             </h1>
             <p className="text-xl md:text-2xl text-emerald-100 mb-8 max-w-3xl mx-auto">
-              Kampanie Google Ads dla fastest-growing miasta Polski. Dotarcie do klientów w Rzeszowie i Podkarpaciu z ROI do 400%.
-            </p>
+              Google Ads Rzeszow — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Rzeszowa i Podkarpacia. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">

@@ -215,7 +215,7 @@ export default function AgencjaMarketingowaKrakow() {
         description="Agencja marketingowa Kraków ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Krakowa i Małopolski. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/krakow"
         ogImage="https://fotz.pl/og-krakow.jpg"
-        keywords="agencja marketingowa kraków, marketing internetowy kraków, usługi marketingowe kraków, agencja reklamowa kraków, marketing małopolska"
+        keywords="agencja marketingowa kraków, marketing internetowy kraków, agencja reklamowa kraków, kampanie reklamowe kraków, seo kraków, google ads kraków, agencja marketingowa małopolska"
       />
 
       <BreadcrumbSchema

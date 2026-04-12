@@ -13,7 +13,7 @@ export default function FacebookAdsLublin() {
         title="Agencja Facebook Ads Lublin — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Lublin ✓ Kampanie Meta Ads dla firm z Lublina i Lubelszczyzny. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/facebook-ads/lublin"
-        keywords="facebook ads lublin, agencja facebook ads lublin, kampanie facebook lublin, reklamy facebook lublin, meta ads lublin, instagram ads lublin"
+        keywords="facebook ads lublin, meta ads lublin, reklamy facebook lublin, agencja facebook ads lublin, kampanie facebook lublin, instagram ads lublin, facebook ads dla firm lublin, reklama na facebooku lublin, meta ads agencja lublin, facebook ads cennik lublin"
       />
       <BreadcrumbSchema
         items={[
@@ -53,8 +53,7 @@ export default function FacebookAdsLublin() {
                   Agencja Facebook Ads w Lublinie
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Profesjonalne kampanie Meta Ads dla firm z Lublina i Lubelszczyzny.
-                  Zwiększamy sprzedaż, widzialność i ROI poprzez precyzyjnie skierowane reklamy.
+                  Facebook Ads Lublin — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Lublina i Lubelszczyzny. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}

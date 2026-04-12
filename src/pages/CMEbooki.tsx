@@ -38,7 +38,7 @@ const CMEbooki = () => {
         title="E-booki i Lead Magnety — Content Marketing B2B i Generowanie Leadów | Fotz Studio"
         description="E-booki, lead magnety i content marketing B2B — tworzenie materiałów edukacyjnych, whitepaper, checklisty do pozyskiwania leadów. Fotz Studio."
         canonical="https://fotz.pl/content-marketing/ebooki"
-        keywords="ebooki marketing, lead magnet, whitepaper, content marketing b2b, tworzenie ebooka, lead generation content"
+        keywords="ebook marketing, tworzenie ebooka, ebook lead magnet, ebook dla firmy, content marketing ebook"
       />
       <ServiceSchema
         name="Ebooki i Lead Magnety dla Content Marketingu"

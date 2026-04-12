@@ -28,7 +28,7 @@ const SEOCopywriting = () => {
         title="SEO Copywriting — Pisanie Tekstów pod SEO i Pozycjonowanie | Fotz Studio"
         description="SEO copywriting — tworzenie treści zoptymalizowanych pod wyszukiwarki: artykuły SEO, opisy produktów, teksty na stronę. Pisanie tekstów dla Google i…"
         canonical="https://fotz.pl/seo/copywriting-seo"
-        keywords="copywriting seo, teksty seo, pisanie treści seo, treści pod google, artykuły seo, opisy seo"
+        keywords="seo copywriting, copywriting seo, pisanie tekstów seo, treści pod seo, optymalizacja tekstów, content marketing seo, artykuły seo, blogi seo, pisanie contentu seo, copywriter seo"
       />
       <ServiceSchema
         name="Copywriting SEO: Teksty, Które Rankują"

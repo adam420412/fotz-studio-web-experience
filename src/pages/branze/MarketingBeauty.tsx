@@ -99,6 +99,7 @@ const MarketingBeauty = () => {
         title="Marketing dla Beauty & Wellness | Salony, SPA, Fryzjerzy | Fotz Studio"
         description="Marketing dla salonów kosmetycznych, fryzjerskich i SPA - Instagram, systemy rezerwacji, sesje metamorfoz. Przyciągnij więcej klientek."
         canonical="https://fotz.pl/dla-kogo/beauty-wellness"
+        keywords="marketing salonu kosmetycznego, marketing beauty, agencja marketingowa beauty, reklama salonu urody, instagram beauty, marketing spa, marketing wellness, kampanie facebook beauty"
       />
 
       <OrganizationSchema />

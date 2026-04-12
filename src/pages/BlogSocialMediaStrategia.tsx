@@ -50,7 +50,7 @@ export default function BlogSocialMediaStrategia() {
         description="Kompleksowy poradnik strategii social media marketingu dla małych i średnich przedsiębiorstw. Dowiedz się, jak budować markę w mediach społecznościowych, planować content i mierzyć ROI."
         ogType="article"
         canonical="https://fotz.pl/blog/strategia-social-media-marketing"
-        keywords="strategia social media, social media marketing, marketing w mediach społecznościowych, zarządzanie mediami społecznościowymi, social media strategy"
+        keywords="strategia social media, jak stworzyć strategię social media, plan działań social media, social media content plan"
       />
       <ArticleSchema 
         title="Strategia Social Media Marketing 2026 - Kompleksowy Poradnik dla Biznesu"

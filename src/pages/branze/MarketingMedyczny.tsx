@@ -102,6 +102,7 @@ const MarketingMedyczny = () => {
         title="Marketing dla Branży Medycznej | Gabinety, Kliniki, Lekarze | Fotz Studio"
         description="Marketing dla branży medycznej - systemy rezerwacji online, strony WWW dla gabinetów, SEO medyczne. Kampanie zgodne z prawem. Zwiększ liczbę pacjentów."
         canonical="https://fotz.pl/dla-kogo/branza-medyczna"
+        keywords="marketing medyczny, agencja marketingowa medyczna, marketing kliniki, marketing gabinetu lekarskiego, seo medyczne, reklama lekarza, marketing stomatologiczny, kampanie google ads medycyna"
       />
 
       <OrganizationSchema />

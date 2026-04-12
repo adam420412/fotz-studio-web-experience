@@ -13,7 +13,7 @@ export default function FacebookAdsBydgoszcz() {
         title="Agencja Facebook Ads Bydgoszcz — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Bydgoszcz ✓ Kampanie Meta Ads dla firm z Bydgoszczy i Kujaw. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/facebook-ads/bydgoszcz"
-        keywords="facebook ads bydgoszcz, agencja facebook ads bydgoszcz, kampanie facebook bydgoszcz, reklamy facebook bydgoszcz, meta ads bydgoszcz, instagram ads bydgoszcz"
+        keywords="facebook ads bydgoszcz, meta ads bydgoszcz, reklamy facebook bydgoszcz, agencja facebook ads bydgoszcz, kampanie facebook bydgoszcz, instagram ads bydgoszcz, facebook ads dla firm bydgoszcz, reklama na facebooku bydgoszcz, meta ads agencja bydgoszcz, facebook ads cennik bydgoszcz"
       />
       <BreadcrumbSchema
         items={[
@@ -53,8 +53,7 @@ export default function FacebookAdsBydgoszcz() {
                   Agencja Facebook Ads w Bydgoszczy
                 </h1>
                 <p className="text-xl text-gray-700 mb-8">
-                  Profesjonalne kampanie Meta Ads dla firm z Bydgoszczy i Kujaw.
-                  Zwiększamy sprzedaż, widzialność i ROI poprzez precyzyjnie skierowane reklamy.
+                  Facebook Ads Bydgoszcz — profesjonalne kampanie Meta Ads i reklamy Facebook dla firm z Bydgoszcza i Kujaw. Zwiększamy sprzedaż, zasięg i ROI dzięki precyzyjnemu targetowaniu i kreatywnym reklamom. Bezpłatna konsultacja i wycena kampanii.
                 </p>
 
                 {/* STATS */}

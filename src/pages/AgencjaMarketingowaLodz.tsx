@@ -160,7 +160,7 @@ export default function AgencjaMarketingowaLodz() {
         description="Agencja marketingowa Łódź ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Łodzi i Mazowsza centralnego. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/lodz"
         ogImage="https://fotz.pl/og-lodz.jpg"
-        keywords="agencja marketingowa łódź, marketing internetowy łódź, usługi marketingowe łódź, agencja reklamowa łódź"
+        keywords="agencja marketingowa łódź, marketing internetowy łódź, agencja reklamowa łódź, kampanie reklamowe łódź, seo łódź, google ads łódź"
       />
       
       <BreadcrumbSchema items={breadcrumbs} />

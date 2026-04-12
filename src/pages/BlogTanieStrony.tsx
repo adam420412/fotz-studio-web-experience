@@ -47,7 +47,7 @@ export default function BlogTanieStrony() {
         description="Tanie strony internetowe — co warto wiedzieć przed zamówieniem? Sprawdź różnicę między tanią a tandetną stroną www, pułapki freelancerów i kiedy warto zapłacić więcej."
         ogType="article"
         canonical="https://fotz.pl/blog/tanie-strony-internetowe"
-        keywords="tanie strony internetowe, tania strona internetowa, tania strona www, tanie strony www, gdzie zamówić tanią stronę"
+        keywords="tanie strony internetowe, tania strona internetowa, strona internetowa cena, strona internetowa dla firmy cena, tanie tworzenie stron, strona www cena"
         schemaJson={[
           {
             "@context": "https://schema.org",

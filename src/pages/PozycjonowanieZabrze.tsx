@@ -216,7 +216,7 @@ export default function PozycjonowanieZabrze() {
           title="Pozycjonowanie Zabrze - lokalne SEO dla firm | fotz studio"
           description="Pozycjonowanie stron w Zabrzu. SEO lokalne dla firm, e-commerce i usługodawców. Zwiększymy Twoją widoczność w Google. Darmowa wycena."
           canonical="https://fotz.pl/pozycjonowanie/zabrze"
-        keywords="pozycjonowanie zabrze, seo zabrze, agencja seo zabrze, pozycjonowanie lokalne zabrze, pozycjonowanie stron zabrze, seo dla firm zabrze, pozycjonowanie śląsk"
+        keywords="pozycjonowanie zabrze, agencja seo zabrze, seo zabrze, pozycjonowanie stron zabrze, seo dla firm zabrze, seo śląsk, pozycjonowanie lokalne zabrze"
         />
 
         <ServiceSchema

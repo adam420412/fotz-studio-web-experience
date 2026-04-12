@@ -38,7 +38,7 @@ const SocialMediaContent = () => {
         title="Content Social Media — Tworzenie Treści na Social Media | Fotz Studio"
         description="Tworzenie contentu na social media — posty, grafiki, rolki, stories. Profesjonalna produkcja treści dla Facebooka, Instagrama i LinkedIn. Fotz Studio."
         canonical="https://fotz.pl/social-media/content"
-        keywords="tworzenie treści social media, content creator, grafiki social media, reelsy instagram, copywriting social media, posty facebook"
+        keywords="content social media, tworzenie treści social media, posty na social media, grafiki social media, materiały social media, content creator"
       />
       <ServiceSchema
         name="Tworzenie Treści na Social Media"

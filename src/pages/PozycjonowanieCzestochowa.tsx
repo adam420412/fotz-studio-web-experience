@@ -100,7 +100,7 @@ const PozycjonowanieCzestochowa = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/czestochowa"
         ogTitle="Pozycjonowanie Częstochowa — Fotz Studio Agencja SEO"
         ogDescription="Pozycjonowanie dla Częstochowy — turystyka religijna, Jasna Góra, 4-5M pielgrzymów. Niska konkurencja SEO, szybkie efekty. Audyt, optymalizacja, link building."
-        keywords="pozycjonowanie częstochowa, seo częstochowa, agencja seo częstochowa, pozycjonowanie lokalne częstochowa, pozycjonowanie stron częstochowa, seo dla firm częstochowa, audyt seo częstochowa"
+        keywords="pozycjonowanie częstochowa, agencja seo częstochowa, seo częstochowa, pozycjonowanie stron częstochowa, seo dla firm częstochowa, pozycjonowanie lokalne częstochowa"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Częstochowa"

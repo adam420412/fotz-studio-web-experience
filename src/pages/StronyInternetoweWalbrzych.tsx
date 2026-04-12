@@ -89,7 +89,7 @@ const StronyInternetoweWalbrzych = () => {
         title="Strony Internetowe Walbrzych | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Walbrzych — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wałbrzycha. Fotz Studio."
         canonical="https://fotz.pl/strony-internetowe/walbrzych"
-        keywords="strony internetowe walbrzych, tworzenie stron www walbrzych, projektowanie stron walbrzych, sklepy internetowe walbrzych"
+        keywords="strony internetowe wałbrzych, tworzenie stron internetowych wałbrzych, strony www wałbrzych, projektowanie stron wałbrzych"
       />
 
       <ServiceSchema name="Strony Internetowe Walbrzych" description="Profesjonalne tworzenie stron internetowych dla firm z Wałbrzycha." provider="FOTZ Studio" areaServed="Walbrzych" />

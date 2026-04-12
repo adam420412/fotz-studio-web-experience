@@ -65,7 +65,7 @@ export default function StronaInternetowaDlaFotografa() {
         title="Strona internetowa dla fotografa — portfolio, SEO, galerie | fotz.pl"
         description="Strona internetowa dla fotografa — profesjonalne portfolio z galerią, SEO lokalne, blog fotograficzny i formularz zapytań. Strony dla fotografów od 1500 zł. Wycena!"
         canonical="https://fotz.pl/uslugi/strona-internetowa-dla-fotografa"
-        keywords="strona internetowa dla fotografa, strona fotografa, portfolio fotograficzne, tworzenie stron fotografów, webdesign fotografia"
+        keywords="strona internetowa dla fotografa, portfolio fotografa, strona www fotograf, strona fotografa cennik, strona fotografa online"
       />
       <ServiceSchema
         name="Strona internetowa dla fotografa"

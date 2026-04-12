@@ -64,7 +64,7 @@ export default function AgencjaSEOLublin() {
         title="Agencja SEO Lublin — pozycjonowanie stron | fotz.pl"
         description="Agencja SEO Lublin — pozycjonowanie stron internetowych dla firm z Lublina i Lubelszczyzny. Lokalne i ogólnopolskie SEO, audyt, linkbuilding. Sprawdź ofertę!"
         canonical="https://fotz.pl/agencja-seo-lublin"
-        keywords="agencja SEO Lublin, pozycjonowanie Lublin, SEO Lublin, pozycjonowanie stron Lublin, seo dla firm lublin, audyt seo lublin, optymalizacja seo lublin, pozycjonowanie lokalne Lublin, link building Lublin, usługi SEO Lublin, agencja seo lubelszczyzna"
+        keywords="agencja seo lublin, pozycjonowanie lublin, seo lublin, agencja seo lublin cena, pozycjonowanie stron lublin, seo dla firm lublin, audyt seo lublin, optymalizacja seo lublin, pozycjonowanie lokalne lublin, link building lublin"
       />
       <ServiceSchema
         name="Agencja SEO Lublin"

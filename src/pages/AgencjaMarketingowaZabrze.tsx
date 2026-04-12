@@ -75,7 +75,7 @@ export default function AgencjaMarketingowaZabrze() {
           title="Agencja marketingowa Zabrze - fotz studio | Marketing dla firm"
           description="Agencja marketingowa Zabrze. Fotz Studio — strony WWW, SEO, kampanie Google/Meta, social media dla firm z Zabrza. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/agencja-marketingowa/zabrze"
-          keywords="agencja marketingowa Zabrze, marketing Zabrze, agencja SEO Zabrze, Google Ads Zabrze, social media, digital marketing, kampanie reklamowe"
+          keywords="agencja marketingowa zabrze, marketing internetowy zabrze, agencja reklamowa zabrze, seo zabrze"
         />
 
         <ServiceSchema

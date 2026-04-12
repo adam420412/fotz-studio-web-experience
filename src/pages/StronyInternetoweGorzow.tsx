@@ -142,7 +142,7 @@ const StronyInternetoweGorzow = () => {
         title="Strony Internetowe Gorzów | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Gorzów — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gorzowa. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gorzow"
-        keywords="strony internetowe gorzów wielkopolski, tworzenie stron www gorzów, projektowanie stron gorzów, sklepy internetowe gorzów wielkopolski, strona www gorzów, agencja marketingowa gorzów, strony lubuskie"
+        keywords="strony internetowe gorzów, tworzenie stron gorzów, strony www gorzów, projektowanie stron gorzów wielkopolski"
       />
 
       <ServiceSchema

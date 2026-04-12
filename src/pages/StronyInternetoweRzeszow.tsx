@@ -182,7 +182,7 @@ export default function StronyInternetoweRzeszow() {
         title="Strony Internetowe Rzeszów | Tworzenie Stron WWW"
         description="Strony internetowe Rzeszów — profesjonalne tworzenie stron www, projektowanie stron, sklepy e-commerce i SEO dla firm. Fotz Studio."
         canonical="https://fotz.pl/strony-internetowe/rzeszow"
-        keywords="strony internetowe rzeszów, tworzenie stron www rzeszów, projektowanie stron, sklepy internetowe"
+        keywords="strony internetowe rzeszów, tworzenie stron internetowych rzeszów, strony www rzeszów, projektowanie stron rzeszów, agencja webdesign rzeszów, sklep internetowy rzeszów"
       />
 
       <ServiceSchema

@@ -90,7 +90,7 @@ const StronyInternetoweOlsztyn = () => {
         title="Strony Internetowe Olsztyn | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Olsztyn — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Olsztyna. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/olsztyn"
-        keywords="strony internetowe olsztyn, tworzenie stron www olsztyn, projektowanie stron olsztyn, sklepy internetowe olsztyn"
+        keywords="strony internetowe olsztyn, tworzenie stron olsztyn, strony www olsztyn, projektowanie stron olsztyn"
       />
       
       <ServiceSchema name="Strony Internetowe Olsztyn" description="Profesjonalne tworzenie stron internetowych dla firm z Olsztyna." provider="FOTZ Studio" areaServed="Olsztyn" />

@@ -28,7 +28,7 @@ const SEOCoreWebVitals = () => {
         title="Core Web Vitals — Optymalizacja LCP, FID, CLS i Szybkości Strony | Fotz Studio"
         description="Core Web Vitals — optymalizacja wskaźników LCP, INP (FID), CLS. Popraw szybkość ładowania strony i User Experience dla lepszego SEO. Fotz Studio."
         canonical="https://fotz.pl/seo/core-web-vitals"
-        keywords="core web vitals, pagespeed, lcp optymalizacja, cls, inp, szybkość strony, page speed insights"
+        keywords="core web vitals, lcp seo, cls seo, fid seo, szybkość strony, page speed, optymalizacja core web vitals, web vitals google, core web vitals jak poprawić, page experience seo"
       />
       <ServiceSchema
         name="Core Web Vitals: Optymalizacja Szybkości Strony"

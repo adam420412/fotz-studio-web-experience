@@ -80,7 +80,7 @@ const StronyInternetoweLegnica = () => {
         title="Strony Internetowe Legnica | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Legnica — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Legnicy. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/legnica"
-        keywords="strony internetowe legnica, tworzenie stron www legnica, projektowanie stron legnica, agencja webdesign legnica, budowa strony legnica, strona internetowa legnica"
+        keywords="strony internetowe legnica, tworzenie stron legnica, strony www legnica, projektowanie stron legnica"
       />
       
       <ServiceSchema name="Strony Internetowe Legnica" description="Tworzenie stron internetowych dla firm z Legnicy." provider="FOTZ Studio" areaServed="Legnica" />

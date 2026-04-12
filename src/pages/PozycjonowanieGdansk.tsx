@@ -96,7 +96,7 @@ const PozycjonowanieGdansk = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/gdansk"
         ogTitle="Pozycjonowanie Gdańsk — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Gdańsku i Trójmieście. Audyt SEO, optymalizacja i link building dla firm z Gdańska i okolic."
-        keywords="pozycjonowanie gdańsk, seo gdańsk, agencja seo gdańsk, pozycjonowanie lokalne gdańsk, pozycjonowanie stron gdańsk, seo dla firm gdańsk, audyt seo gdańsk, pozycjonowanie trójmiasto"
+        keywords="pozycjonowanie gdańsk, agencja seo gdańsk, seo gdańsk, pozycjonowanie stron gdańsk, seo dla firm gdańsk, seo trójmiasto, audyt seo gdańsk, pozycjonowanie lokalne gdańsk"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Gdańsk"

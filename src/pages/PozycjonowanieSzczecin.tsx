@@ -101,7 +101,7 @@ const PozycjonowanieSzczecin = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/szczecin"
         ogTitle="Pozycjonowanie Szczecin — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Szczecinie i całym Zachodniopomorskim. SEO dla firm lokalnych i eksportujących na rynek niemiecki."
-        keywords="pozycjonowanie szczecin, seo szczecin, agencja seo szczecin, pozycjonowanie lokalne szczecin, pozycjonowanie stron szczecin, seo dla firm szczecin, audyt seo szczecin, usługi seo szczecin"
+        keywords="pozycjonowanie szczecin, agencja seo szczecin, seo szczecin, pozycjonowanie stron szczecin, seo dla firm szczecin, seo zachodniopomorskie, pozycjonowanie lokalne szczecin"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Szczecin"

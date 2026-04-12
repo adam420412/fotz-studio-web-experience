@@ -44,6 +44,7 @@ const CaseStudyVerthe = () => {
         title="Verthé — Sklep E-commerce z Kosmetykami Wegańskimi | Case Study Fotz Studio"
         description="Case study Verthé: sklep e-commerce greckich kosmetyków wegańskich. SEM, SEO, produkcja foto/video i optymalizacja konwersji. Fotz Studio."
         canonical="https://fotz.pl/realizacje/verthe"
+        keywords="case study branding identyfikacja wizualna, realizacja logo"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },

@@ -124,7 +124,7 @@ export default function OptymalizacjaStronyInternetowej() {
           title="Optymalizacja strony internetowej | Szybsza strona = więcej klientów | fotz.pl"
           description="Optymalizacja strony internetowej — przyspieszamy Twoją stronę, poprawiamy Core Web Vitals, zwiększamy konwersje. Sprawdź co możemy zrobić!"
           canonical="https://fotz.pl/uslugi/optymalizacja-strony-internetowej"
-          keywords="optymalizacja strony internetowej, page speed optimization, core web vitals, szybkość strony, PageSpeed Insights"
+          keywords="optymalizacja strony internetowej, optymalizacja seo strony, przyspieszenie strony, core web vitals, optymalizacja wydajności strony, optymalizacja strony www"
         />
 
         <ServiceSchema

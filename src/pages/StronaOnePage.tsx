@@ -102,7 +102,7 @@ export default function StronaOnePage() {
           title="Strona one page | Jednostronicowa strona internetowa | fotz.pl"
           description="Strona one page — elegancka jednostronicowa strona internetowa dla firm i freelancerów. Od 499 zł netto. Szybko, profesjonalnie, mobilna. Bezpłatna wycena!"
           canonical="https://fotz.pl/uslugi/strona-one-page"
-          keywords="strona one page, jednostronicowa strona, landing page, one page website, strona jednostronicowa"
+          keywords="strona one page, strona jednopodstronowa, one page website, landing page one page, strona internetowa jednostrona"
         />
 
         <ServiceSchema

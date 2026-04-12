@@ -37,7 +37,7 @@ const BlogGoogleVsFacebook = () => {
         description="Google Ads vs Facebook Ads — porównanie platform reklamowych. Kiedy wybrać Google Ads, a kiedy Meta Ads? Koszty, efektywność i strategie. Poradnik Fotz Studio."
         ogType="article"
         canonical="https://fotz.pl/performance-marketing/google-vs-facebook"
-        keywords="Google Ads, Facebook Ads, reklama online, porównanie platform reklamowych, PPC, kampanie reklamowe, ROI"
+        keywords="google ads vs facebook ads, google vs facebook reklama, google ads czy facebook ads, porównanie google facebook reklama, kiedy wybrać google ads, kiedy wybrać facebook ads"
       />
       <ArticleSchema
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu?"
@@ -93,8 +93,7 @@ const BlogGoogleVsFacebook = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl">
-                Obie platformy oferują ogromny potencjał reklamowy, ale działają na zupełnie innych zasadach. Poznaj kluczowe różnice i dowiedz się, którą wybrać.
-              </p>
+                Google Ads vs Facebook Ads — co wybrać dla swojej firmy? Porównanie platform reklamowych, kosztów, skuteczności i targetowania. Dowiedz się, która forma reklamy online przyniesie lepszy ROAS.</p>
             </motion.div>
           </div>
         </section>

@@ -90,7 +90,7 @@ const StronyInternetoweKonin = () => {
         title="Strony Internetowe Konin | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Konin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Konina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/konin"
-        keywords="strony internetowe konin, tworzenie stron www konin, projektowanie stron konin, sklepy internetowe konin"
+        keywords="strony internetowe konin, tworzenie stron konin, strony www konin, projektowanie stron konin"
       />
       
       <ServiceSchema name="Strony Internetowe Konin" description="Profesjonalne tworzenie stron internetowych dla firm z Konina." provider="FOTZ Studio" areaServed="Konin" />

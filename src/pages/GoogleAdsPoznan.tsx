@@ -49,7 +49,7 @@ export default function GoogleAdsPoznan() {
           title="Agencja Google Ads Poznań — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Poznań — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/poznan"
-          keywords="google ads poznań, agencja google ads poznań, kampanie google ads poznań, reklamy google poznań, google ads dla firm poznań, sem poznań, google ads wielkopolska"
+          keywords="google ads poznan, kampanie google ads poznan, agencja google ads poznan, reklamy google poznan, google adwords poznan, sem poznan, google ads dla firm poznan, prowadzenie google ads poznan, google ads cennik poznan, reklama w google poznan"
         />
 
         <ServiceSchema
@@ -92,8 +92,7 @@ export default function GoogleAdsPoznan() {
                   Agencja Google Ads Poznań
                 </h1>
                 <p className="text-xl md:text-2xl text-sky-100 mb-8">
-                  Kampanie dla firm w Poznaniu. Wyniki od 24-48h. Certyfikowani specjaliści.
-                </p>
+                  Google Ads Poznan — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Poznana i Wielkopolski. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.</p>
               </div>
 
               {/* Stats Grid */}

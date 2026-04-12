@@ -212,7 +212,7 @@ export default function GoogleAdsSzczecin() {
         title="Agencja Google Ads Szczecin — kampanie reklamowe dla firm | Fotz.pl"
         description="Google Ads Szczecin ✓ Kampanie dla firm z Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/google-ads/szczecin"
-        keywords="google ads szczecin, agencja google ads szczecin, kampanie google ads szczecin, reklamy google szczecin, google ads dla firm szczecin, sem szczecin"
+        keywords="google ads szczecin, kampanie google ads szczecin, agencja google ads szczecin, reklamy google szczecin, google adwords szczecin, sem szczecin, google ads dla firm szczecin, prowadzenie google ads szczecin, google ads cennik szczecin, reklama w google szczecin"
       />
 
       <BreadcrumbSchema items={[
@@ -256,8 +256,7 @@ export default function GoogleAdsSzczecin() {
               Google Ads dla Firm w Szczecinie
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Profesjonalne zarządzanie kampaniami Google Ads dla biznesu z Szczecina i Zachodniopomorskiego.
-              Od 400 zł/miesiąc. Trafiaj do klientów, którzy szukają Twoich usług.
+              Google Ads Szczecin — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Szczecina i Zachodniopomorskiego. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">

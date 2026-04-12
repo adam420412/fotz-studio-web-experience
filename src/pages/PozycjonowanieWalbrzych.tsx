@@ -96,7 +96,7 @@ const PozycjonowanieWalbrzych = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/walbrzych"
         ogTitle="Pozycjonowanie Wałbrzych — fotz studio Agencja SEO"
         ogDescription="Pozycjonowanie dla Wałbrzychu — turystyka górnicza, usługi lokalne. SEO dla miasta transformującego się z górnictwa na turystykę. Audyt SEO, optymalizacja, link building."
-        keywords="pozycjonowanie wałbrzych, seo wałbrzych, agencja seo wałbrzych, pozycjonowanie lokalne wałbrzych, pozycjonowanie stron wałbrzych, seo dla firm wałbrzych"
+        keywords="pozycjonowanie wałbrzych, agencja seo wałbrzych, seo wałbrzych, pozycjonowanie stron wałbrzych, seo dla firm wałbrzych, seo dolny śląsk, pozycjonowanie lokalne wałbrzych"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Wałbrzych"

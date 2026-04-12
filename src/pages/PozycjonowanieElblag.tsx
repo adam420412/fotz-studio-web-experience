@@ -97,7 +97,7 @@ const PozycjonowanieElblag = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/elblag"
         ogTitle="Pozycjonowanie Elbląg — fotz studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Elblągu. SEO dla firm turystycznych, hoteli, restauracji i logistyki portowej. Morskie miasto czeka na Twoją markę."
-        keywords="pozycjonowanie elbląg, seo elbląg, agencja seo elbląg, pozycjonowanie lokalne elbląg, pozycjonowanie stron elbląg, seo dla firm elbląg, audyt seo elbląg"
+        keywords="pozycjonowanie elbląg, agencja seo elbląg, seo elbląg, pozycjonowanie stron elbląg, seo dla firm elbląg, pozycjonowanie lokalne elbląg, seo warmia mazury"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Elbląg"

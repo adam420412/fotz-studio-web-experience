@@ -37,7 +37,7 @@ export default function StronyInternetoweKielce() {
         title="Strony Internetowe Kielce | Projektowanie Stron WWW"
         description="Nowoczesne strony internetowe dla firm w Kielcach. Projektowanie, programowanie i optymalizacja stron WWW. Sprawdzone rozwiązania dla biznesu."
         canonical="https://fotz.pl/strony-internetowe/kielce"
-        keywords="strony internetowe kielce, tworzenie stron kielce, projektowanie stron kielce, agencja webdesign kielce, budowa strony kielce"
+        keywords="strony internetowe kielce, tworzenie stron internetowych kielce, strony www kielce, projektowanie stron kielce, agencja webdesign kielce, sklep internetowy kielce"
       />
 
       <ServiceSchema

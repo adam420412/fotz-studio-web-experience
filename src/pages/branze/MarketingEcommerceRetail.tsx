@@ -102,6 +102,7 @@ const MarketingEcommerceRetail = () => {
         title="Marketing E-commerce | Sklepy Online | Fotz"
         description="Marketing dla e-commerce - sklepy, fotografia produktowa, konfiguratory 3D, performance. Zwiększ sprzedaż. Fotz."
         canonical="https://fotz.pl/dla-kogo/ecommerce-retail"
+        keywords="marketing ecommerce, agencja marketingowa ecommerce, marketing dla sklepów internetowych, kampanie performance ecommerce, google shopping, facebook ads ecommerce, pozycjonowanie sklepu internetowego"
       />
 
       <OrganizationSchema />

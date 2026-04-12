@@ -89,7 +89,7 @@ const StronyInternetoweTychy = () => {
         title="Strony Internetowe Tychy | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Tychy — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Tychów. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/tychy"
-        keywords="strony internetowe tychy, tworzenie stron www tychy, projektowanie stron tychy, sklepy internetowe tychy"
+        keywords="strony internetowe tychy, tworzenie stron tychy, strony www tychy, projektowanie stron tychy"
       />
       
       <ServiceSchema name="Strony Internetowe Tychy" description="Profesjonalne tworzenie stron internetowych dla firm z Tychów." provider="FOTZ Studio" areaServed="Tychy" />
