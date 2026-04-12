@@ -82,6 +82,7 @@ const BlogIdentyfikacjaWizualna = lazy(() => import("./pages/BlogIdentyfikacjaWi
 const BlogJakZaprojektowacLogo = lazy(() => import("./pages/BlogJakZaprojektowacLogo"));
 const BlogGoogleAdsCennik = lazy(() => import("./pages/BlogGoogleAdsCennik"));
 const BlogGoogleAdsVsSeo = lazy(() => import("./pages/BlogGoogleAdsVsSeo"));
+const BlogCennikFacebookAds = lazy(() => import("./pages/BlogCennikFacebookAds"));
 const BlogProwadzenieSocialMediaCennik = lazy(() => import("./pages/BlogProwadzenieSocialMediaCennik"));
 const BlogFotografiaProduktowa = lazy(() => import("./pages/BlogFotografiaProduktowa"));
 const BlogLandingPageVsStrona = lazy(() => import("./pages/BlogLandingPageVsStrona"));
@@ -1207,8 +1208,10 @@ const StronaInternetowaDlaPrawnika = lazy(() => import("./pages/StronaInternetow
 
 // Wave 20: Pozycjonowanie sklepu, branding, UI/UX, stomatolog, SEO e-commerce
 const BlogPozycjonowanieSklepu = lazy(() => import("./pages/BlogPozycjonowanieSklepu"));
+const BlogSEOEcommercePoradnik = lazy(() => import("./pages/BlogSEOEcommercePoradnik"));
 const BlogBrandingCoTo = lazy(() => import("./pages/BlogBrandingCoTo"));
 const BlogUIUXCoTo = lazy(() => import("./pages/BlogUIUXCoTo"));
+const BlogUXAudit = lazy(() => import("./pages/BlogUXAudit"));
 const StronaInternetowaDlaStomatologa = lazy(() => import("./pages/StronaInternetowaDlaStomatologa"));
 
 // Wave 19: Hosting, SSL, WordPress co to, domena, jak pozycjonować
@@ -1279,6 +1282,20 @@ const AgencjaGraficzna = lazy(() => import("./pages/AgencjaGraficzna"));
 const EcommerceTworzenie = lazy(() => import("./pages/EcommerceTworzenie"));
 const SklepyInternetowe = lazy(() => import("./pages/SklepyInternetowe"));
 const ContentMarketing = lazy(() => import("./pages/ContentMarketing"));
+
+// Wave 219-221: New blog + service + city pages
+const BlogKosztSEO = lazy(() => import("./pages/BlogKosztSEO"));
+const BlogMarketingDlaFirmy = lazy(() => import("./pages/BlogMarketingDlaFirmy"));
+const AgencjaMarketingowaKielce = lazy(() => import("./pages/AgencjaMarketingowaKielce"));
+const BlogEcommercePoradnik = lazy(() => import("./pages/BlogEcommercePoradnik"));
+const StronyInternetoweZabrze = lazy(() => import("./pages/StronyInternetoweZabrze"));
+const BlogContentMarketingPoradnik = lazy(() => import("./pages/BlogContentMarketingPoradnik"));
+const StronyInternetoweWalbrzych = lazy(() => import("./pages/StronyInternetoweWalbrzych"));
+const BlogSEOTechniczne = lazy(() => import("./pages/BlogSEOTechniczne"));
+const BlogAutomatyzacjaMarketingu = lazy(() => import("./pages/BlogAutomatyzacjaMarketingu"));
+const PozycjonowanieGliwice = lazy(() => import("./pages/PozycjonowanieGliwice"));
+const BlogWizerunekFirmy = lazy(() => import("./pages/BlogWizerunekFirmy"));
+const AgencjaMarketingowaCzestochowa = lazy(() => import("./pages/AgencjaMarketingowaCzestochowa"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -1393,6 +1410,7 @@ const App = () => (
                 <Route path="/blog/co-to-jest-identyfikacja-wizualna" element={<BlogIdentyfikacjaWizualna />} />
                 <Route path="/blog/jak-zaprojektowac-logo-dla-firmy" element={<BlogJakZaprojektowacLogo />} />
                 <Route path="/blog/google-ads-cennik" element={<BlogGoogleAdsCennik />} />
+                <Route path="/blog/cennik-facebook-ads" element={<BlogCennikFacebookAds />} />
                 <Route path="/blog/google-ads-vs-seo" element={<BlogGoogleAdsVsSeo />} />
                 <Route path="/blog/prowadzenie-social-media-cennik" element={<BlogProwadzenieSocialMediaCennik />} />
                 <Route path="/blog/fotografia-produktowa-poradnik" element={<BlogFotografiaProduktowa />} />
@@ -2253,8 +2271,23 @@ const App = () => (
                 <Route path="/uslugi/strona-internetowa-dla-prawnika" element={<StronaInternetowaDlaPrawnika />} />
                 {/* Wave 20 */}
                 <Route path="/blog/pozycjonowanie-sklepu-internetowego" element={<BlogPozycjonowanieSklepu />} />
+                <Route path="/blog/seo-ecommerce-poradnik" element={<BlogSEOEcommercePoradnik />} />
                 <Route path="/blog/branding-co-to" element={<BlogBrandingCoTo />} />
                 <Route path="/blog/ui-ux-co-to" element={<BlogUIUXCoTo />} />
+                <Route path="/blog/audyt-ux-strony" element={<BlogUXAudit />} />
+                {/* Wave 219-222 */}
+                <Route path="/blog/koszt-seo" element={<BlogKosztSEO />} />
+                <Route path="/blog/marketing-dla-firmy" element={<BlogMarketingDlaFirmy />} />
+                <Route path="/agencja-marketingowa/kielce" element={<AgencjaMarketingowaKielce />} />
+                <Route path="/blog/jak-zalozyc-sklep-internetowy" element={<BlogEcommercePoradnik />} />
+                <Route path="/uslugi/strony-internetowe/zabrze" element={<StronyInternetoweZabrze />} />
+                <Route path="/blog/content-marketing-poradnik" element={<BlogContentMarketingPoradnik />} />
+                <Route path="/strony-internetowe/walbrzych" element={<StronyInternetoweWalbrzych />} />
+                <Route path="/blog/seo-techniczne-poradnik" element={<BlogSEOTechniczne />} />
+                <Route path="/blog/automatyzacja-marketingu" element={<BlogAutomatyzacjaMarketingu />} />
+                <Route path="/pozycjonowanie/gliwice" element={<PozycjonowanieGliwice />} />
+                <Route path="/blog/wizerunek-firmy-w-internecie" element={<BlogWizerunekFirmy />} />
+                <Route path="/agencja-marketingowa/czestochowa" element={<AgencjaMarketingowaCzestochowa />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
