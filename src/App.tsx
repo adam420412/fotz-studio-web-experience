@@ -1371,6 +1371,11 @@ const BlogNarzedziaMarketingowe = lazy(() => import("./pages/BlogNarzedziaMarket
 // Wave 242 pages
 const BlogSEODlaSklepu = lazy(() => import("./pages/BlogSEODlaSklepu"));
 
+// Wave 243 pages
+const BlogBrandingDlaMalychFirm = lazy(() => import("./pages/BlogBrandingDlaMalychFirm"));
+const BlogStrategiaContent = lazy(() => import("./pages/BlogStrategiaContent"));
+const AgencjaMarketingowaPlock = lazy(() => import("./pages/AgencjaMarketingowaPlock"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2415,6 +2420,9 @@ const App = () => (
                 <Route path="/blog/optymalizacja-landing-page" element={<BlogOptymalizacjaLandingPage />} />
                 <Route path="/blog/narzedzia-marketingowe" element={<BlogNarzedziaMarketingowe />} />
                 <Route path="/blog/seo-dla-sklepu-internetowego" element={<BlogSEODlaSklepu />} />
+                <Route path="/blog/branding-dla-malej-firmy" element={<BlogBrandingDlaMalychFirm />} />
+                <Route path="/blog/strategia-content-marketingu" element={<BlogStrategiaContent />} />
+                <Route path="/agencja-marketingowa/plock" element={<AgencjaMarketingowaPlock />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
