@@ -1428,6 +1428,20 @@ const GoogleAdsGdynia = lazy(() => import("./pages/GoogleAdsGdynia"));
 const GoogleAdsTorun = lazy(() => import("./pages/GoogleAdsTorun"));
 const PozycjonowanieGdynia = lazy(() => import("./pages/PozycjonowanieGdynia"));
 
+// Wave 257 — TikTok Ads city pages
+const TikTokAdsWarszawa = lazy(() => import("./pages/TikTokAdsWarszawa"));
+const TikTokAdsKrakow = lazy(() => import("./pages/TikTokAdsKrakow"));
+const TikTokAdsWroclaw = lazy(() => import("./pages/TikTokAdsWroclaw"));
+const TikTokAdsPoznan = lazy(() => import("./pages/TikTokAdsPoznan"));
+const TikTokAdsGdansk = lazy(() => import("./pages/TikTokAdsGdansk"));
+const TikTokAdsLodz = lazy(() => import("./pages/TikTokAdsLodz"));
+const TikTokAdsKatowice = lazy(() => import("./pages/TikTokAdsKatowice"));
+
+// Wave 258 — FacebookAds Torun, GoogleAds Bialystok/Kielce
+const FacebookAdsTorun = lazy(() => import("./pages/FacebookAdsTorun"));
+const GoogleAdsBialystok = lazy(() => import("./pages/GoogleAdsBialystok"));
+const GoogleAdsKielce = lazy(() => import("./pages/GoogleAdsKielce"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2622,6 +2636,18 @@ const App = () => (
                 <Route path="/performance-marketing/google-ads/gdynia" element={<GoogleAdsGdynia />} />
                 <Route path="/performance-marketing/google-ads/torun" element={<GoogleAdsTorun />} />
                 <Route path="/uslugi/pozycjonowanie/gdynia" element={<PozycjonowanieGdynia />} />
+                {/* Wave 257 — TikTok Ads cities */}
+                <Route path="/performance-marketing/tiktok-ads/warszawa" element={<TikTokAdsWarszawa />} />
+                <Route path="/performance-marketing/tiktok-ads/krakow" element={<TikTokAdsKrakow />} />
+                <Route path="/performance-marketing/tiktok-ads/wroclaw" element={<TikTokAdsWroclaw />} />
+                <Route path="/performance-marketing/tiktok-ads/poznan" element={<TikTokAdsPoznan />} />
+                <Route path="/performance-marketing/tiktok-ads/gdansk" element={<TikTokAdsGdansk />} />
+                <Route path="/performance-marketing/tiktok-ads/lodz" element={<TikTokAdsLodz />} />
+                <Route path="/performance-marketing/tiktok-ads/katowice" element={<TikTokAdsKatowice />} />
+                {/* Wave 258 */}
+                <Route path="/performance-marketing/facebook-ads/torun" element={<FacebookAdsTorun />} />
+                <Route path="/performance-marketing/google-ads/bialystok" element={<GoogleAdsBialystok />} />
+                <Route path="/performance-marketing/google-ads/kielce" element={<GoogleAdsKielce />} />
                 <Route path="/performance-marketing/facebook-ads" element={<FacebookAds />} />
                 <Route path="/performance-marketing/instagram-ads" element={<InstagramAds />} />
                 <Route path="/performance-marketing/meta-ads" element={<FacebookInstagramAds />} />
