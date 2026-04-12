@@ -1,305 +1,469 @@
+import React from 'react';
 import { SEOHead } from "@/components/seo/SEOHead";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { 
-  Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
-} from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
-import { ContactSection } from "@/components/sections/ContactSection";
-import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
-import { CityPricingCards } from "@/components/sections/CityPricingCards";
-import { CityIntroSection } from "@/components/sections/CityIntroSection";
-import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
-import { CityLinksSection } from "@/components/sections/CityLinksSection";
+import { Monitor, Globe, Code, Smartphone, Zap, CheckCircle, Users, TrendingUp } from 'lucide-react';
 
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
-import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
+const breadcrumbs = [
+  { name: "Strona główna", url: "/" },
+  { name: "Strony internetowe", url: "/strony-internetowe" },
+  { name: "Toruń", url: "/strony-internetowe/torun" }
+];
 
-const StronyInternetoweTorun = () => {
-  const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www dla firm z Torunia i okolic." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na użytkownika." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z pełnymi integracjami." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
-    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
-  ];
+const faqItems = [
+  {
+    question: "Ile czasu trwa stworzenie strony internetowej w Toruniu?",
+    answer: "Czas realizacji strony internetowej zależy od jej złożoności. Typowa strona wizytówka zajmuje 2-4 tygodnie, sklep e-commerce 6-12 tygodni, a zaawansowane portale biznesowe do 16 tygodni. Oferujemy elastyczne terminy dostosowane do potrzeb Twojej firmy z Torunia."
+  },
+  {
+    question: "Czy strona internetowa będzie zoptymalizowana pod SEO?",
+    answer: "Tak, wszystkie nasze strony internetowe dla firm z Torunia są tworzane z uwzględnieniem najlepszych praktyk SEO. Implementujemy popularne słowa kluczowe, strukturę odpowiednią dla wyszukiwarek, meta tagi i schemat JSON, co wpływa pozytywnie na vidoczność w wynikach wyszukiwania."
+  },
+  {
+    question: "Czy moja strona internetowa będzie responsywna?",
+    answer: "Oczywiście. Wszystkie projekty stron internetowych w Toruniu, które tworzymy, są w pełni responsywne i dostosowują się do urządzeń mobilnych, tabletów i desktopów. Zapewniamy najlepsze doświadczenie użytkownika na każdym urządzeniu."
+  },
+  {
+    question: "Jakie typy stron internetowych oferujecie dla torunian firm?",
+    answer: "Tworzymy wszystkie typy stron: strony wizytówki dla małych firm, sklepy e-commerce, landing pages do kampanii marketingowych, portale biznesowe i serwisy informacyjne. Każdy projekt dostosowujemy do specyficznych potrzeb i branży Twojej firmy w Toruniu."
+  },
+  {
+    question: "Jak wygląda proces tworzenia strony internetowej?",
+    answer: "Nasz proces obejmuje fazy: analiza wymagań i konkurencji, wireframing, projektowanie, implementacja, testy i optymalizacja. Pracujemy blisko z naszymi klientami z Torunia, zapewniając regularne aktualizacje i feedback na każdym etapie projektu."
+  }
+];
 
-  const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
-  ];
-
-  const processSteps = [
-    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Toruniu." },
-    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
-    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
-    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
-  ];
-
-  const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
-    { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
-  ];
-
-  const faqItems = [
-    { question: "Ile kosztuje strona internetowa w Toruniu?", answer: "Koszt strony zależy od zakresu projektu. Prosta wizytówka od 2000 zł, strona firmowa od 5000 zł, sklep e-commerce od 8000 zł. Oferujemy bezpłatną wycenę." },
-    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to 2-3 tygodnie, rozbudowana strona firmowa 4-6 tygodni, sklep internetowy 6-10 tygodni." },
-    { question: "Czy oferujecie wsparcie po uruchomieniu strony?", answer: "Tak, zapewniamy wsparcie techniczne po uruchomieniu. Oferujemy pakiety serwisowe obejmujące aktualizacje, kopie zapasowe i pomoc techniczną." },
-    { question: "Czy strona będzie responsywna?", answer: "Wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Projektujemy w podejściu mobile-first." },
-    { question: "Czy pomagacie w pozycjonowaniu strony?", answer: "Tak, każda strona jest zoptymalizowana pod SEO. Oferujemy również kompleksowe usługi pozycjonowania dla firm z Torunia." },
-    { question: "Jakie systemy CMS wykorzystujecie?", answer: "Pracujemy z WordPress, Webflow, Shopify oraz tworzymy dedykowane rozwiązania. Dobieramy system do potrzeb klienta." },
-  ];
-
-  const stats = [
-    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
-    { value: "98%", label: "Zadowolonych klientów", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
-  ];
-
-  const benefits = [
-    "Znajomość toruńskiego rynku",
-    "Kompleksowa obsługa od projektu po wdrożenie",
-    "SEO w standardzie każdej strony",
-    "Responsywny design mobile-first",
-    "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
-  ];
-
-  const introContent = {
-    title: "Tworzenie stron www dla firm z Torunia",
-    paragraphs: [
-      "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Toruniu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
-      "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
-      "Toruń – miasto Kopernika i piernika – przyciąga turystów z całego świata. Lokalne firmy, hotele, restauracje i sklepy mają szansę dotrzeć do milionów odwiedzających przez profesjonalną stronę internetową."
-    ],
-    videoSrc: "/videos/fotz-reel.mp4"
-  };
-
+export default function StronyInternetoweTorun() {
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Strony Internetowe Toruń | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
-        description="Strony internetowe Toruń — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Torunia. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/torun"
-        keywords="strony internetowe toruń, tworzenie stron www toruń, projektowanie stron toruń, sklepy internetowe toruń"
+        title="Strony internetowe Toruń | Projektowanie stron internetowych"
+        description="Profesjonalne projektowanie stron internetowych w Toruniu. Nowoczesne strony wizytówki, sklepy e-commerce i landing pages dla firm. SEO-friendly, responsywne, szybkie."
+        canonical="https://fotz.pl/strony-internetowe/torun"
+        ogImage="https://fotz.pl/og-torun.jpg"
       />
       
-      <ServiceSchema name="Strony Internetowe Toruń" description="Profesjonalne tworzenie stron internetowych dla firm z Torunia." provider="FOTZ Studio" areaServed="Toruń" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Toruń", url: "https://fotz.pl/uslugi/strony-internetowe/torun" }]} />
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+      <BreadcrumbSchema items={breadcrumbs} />
+      <ServiceSchema
+        name="Projektowanie stron internetowych w Toruniu"
+        description="Nowoczesne projektowanie stron internetowych dla firm z Torunia. Tworzenie stron wizytówek, sklepów e-commerce i landing pages."
+        areaServed="Toruń"
+        priceRange="1500-15000"
+      />
+      <FAQSchema items={faqItems} />
 
-      <OrganizationSchema />
-
-
-      <Layout>
-        {/* Hero */}
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-            <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" />
-            <motion.div animate={{ scale: [1.2, 1, 1.2], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }} className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px]" />
-          </div>
-          
-          <motion.div animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute top-32 right-[15%] hidden lg:block">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center"><Globe className="w-10 h-10 text-primary" /></div>
-          </motion.div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center max-w-5xl mx-auto">
-              <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Toruń<Sparkles className="w-4 h-4" /></span>
-              </motion.div>
-              
-              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
-                Strony Internetowe{" "}<span className="text-gradient relative">Toruń<motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 0.8 }} className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full origin-left" /></span>
-              </motion.h1>
-              
-              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla toruńskich firm.
-              </motion.p>
-
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></Link></Button>
-                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>
-              </motion.div>
-
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }} className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
-                {stats.map((stat, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }} className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all">
-                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
-                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        <CityIntroSection content={introContent} cityName="Toruń" />
-        <CityBenefitsSection benefits={benefits} title="Dlaczego warto nam zaufać?" subtitle="Poznaj korzyści współpracy" cityName="Toruń" />
-        <CityServicesGrid services={services} title="Nasze usługi" subtitle="Kompleksowe usługi tworzenia stron www dla toruńskich firm" cityName="Toruń" />
-
-        {/* Process */}
-        <section className="py-24 bg-card/30">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Proces</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Jak tworzymy strony?</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {processSteps.map((item, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="group relative">
-                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full relative overflow-hidden">
-                    <div className="absolute top-0 right-0 text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">{item.step}</div>
-                    <div className="relative z-10">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><item.icon className="w-7 h-7 text-primary" /></div>
-                      <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl font-bold mb-6 leading-tight">
+                Strony internetowe Toruń
+              </h1>
+              <p className="text-xl mb-8 text-blue-100">
+                Profesjonalne projektowanie i tworzenie nowoczesnych stron internetowych dla firm z Torunia. Zwiększymy widoczność Twojej firmy w internecie.
+              </p>
+              <div className="flex gap-4">
+                <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                  Umów konsultację
+                </button>
+                <button className="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">
+                  Przejrzyj portfolio
+                </button>
+              </div>
+            </div>
+            <div className="hidden md:block">
+              <div className="bg-white bg-opacity-10 rounded-lg p-8 backdrop-blur">
+                <Monitor className="w-32 h-32 mx-auto text-blue-200 mb-6" />
+                <p className="text-center text-blue-100">
+                  Nowoczesne strony internetowe dla Twojej firmy
+                </p>
+              </div>
             </div>
           </div>
-        </section>
-
-        {/* Case Studies */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Realizacje</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Nasze projekty</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
-                    <div className="p-6">
-                      <span className="text-primary text-sm font-medium">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
-                      <p className="text-muted-foreground">{study.result}</p>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Toruń" />
-
-        <CityLinksSection currentCity="Toruń" />
-
-        {/* FAQ */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">FAQ</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Najczęstsze pytania</h2>
-            </motion.div>
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
-                    <AccordionItem value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-card/50">
-                      <AccordionTrigger className="text-left hover:no-underline py-6"><span className="font-medium">{item.question}</span></AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground pb-6">{item.answer}</AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </section>
-
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Strony internetowe Toruń — tworzenie stron www dla firm z regionu
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Toruń to miasto z historią i z ambicjami — UNESCO World Heritage Site,
-              dom Mikołaja Kopernika, Uniwersytet Mikołaja Kopernika z 20 000 studentów
-              i rosnący rynek usług dla firm z Kujaw i Pałuk. Lokalna gospodarka jest różnorodna:
-              produkcja (Apator, Toruńskie Zakłady Materiałów Opatrunkowych), handel,
-              usługi dla studentów i turystyczny potencjał Starówki.
-              Tworzenie stron www dla firm z Torunia rozumiemy w tym kontekście.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Wiele toruńskich firm obsługuje klientów z całego województwa
-              kujawsko-pomorskiego — Bydgoszczy, Włocławka, Grudziądza. Strony internetowe
-              projektujemy tak, by były widoczne nie tylko w Toruniu, ale w całym regionie.
-              Lokalne SEO obejmuje optymalizację pod frazy z różnymi lokalizacjami —
-              bez powielania treści i bez narażania się na kary Google.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Strony www dla firm handlowych, usługowych i akademickich
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Środowisko akademickie generuje specyficzny popyt: firmy obsługujące
-              studentów (akademiki, restauracje, drukarnie, sklepy), startupy założone
-              przez absolwentów UMK, usługi edukacyjne i coaching. Tworzymy strony
-              dla wszystkich tych segmentów — proste i szybkie dla małych firm,
-              rozbudowane i zaawansowane dla większych podmiotów.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Strony wizytówkowe (od 2000 zł), rozbudowane strony korporacyjne
-              (od 5000 zł) i sklepy e-commerce (od 4000 zł) — każdy format tworzymy
-              zgodnie z najlepszymi praktykami UX i SEO. Projekt w Figmie, wdrożenie
-              w React lub WordPress, optymalizacja i 30-dniowy support po wdrożeniu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              SEO i Google Maps dla toruńskich firm — pozyskuj klientów lokalnie
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Dla firm z obsługą lokalną — gabinetów, restauracji, salonów, warsztatów —
-              widoczność w Google Maps jest często ważniejsza niż organiczne pozycje.
-              Konfigurujemy i optymalizujemy profil Google Moja Firma, dbamy o recenzje
-              i spójność danych NAP, a stronę www integrujemy z mapami Google.
-              Efektem jest pełna widoczność dla klientów szukających usług w Toruniu.
-            </p>
-            <p className="text-muted-foreground">
-              Firma z Torunia, która chce być widoczna w Google — jesteś we właściwym miejscu.
-              Pracujemy zdalnie, wycenę przesyłamy w 24 godziny, projekt realizujemy
-              w 3–5 tygodni. Skontaktuj się z nami i opowiedz o swoim biznesie —
-              znajdziemy najlepsze rozwiązanie.
-            </p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
-              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
-              <Link to="/uslugi/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/uslugi/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-            </div>
-          </motion.div>
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+              <p className="text-gray-700">Projektów w Toruniu</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
+              <p className="text-gray-700">Lat doświadczenia</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
+              <p className="text-gray-700">Zadowolonych klientów</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+              <p className="text-gray-700">Wsparcie techniczne</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <ContactSection />
-      </Layout>
-    </>
+      {/* Services Section */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Typy stron internetowych dla firm z Torunia
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Strony wizytówki */}
+            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+              <Globe className="w-12 h-12 text-blue-600 mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Strony Wizytówki</h3>
+              <p className="text-gray-700 mb-6">
+                Profesjonalna strona internetowa dla Twojej firmy z Torunia. Prezentacja usług, team, kontakt i portfolio. Idealne dla każdego biznesu, który chce być widoczny online.
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Responsywny design</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>SEO optimized</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Szybkie ładowanie</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Sklepy e-commerce */}
+            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+              <Code className="w-12 h-12 text-blue-600 mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Sklepy E-commerce</h3>
+              <p className="text-gray-700 mb-6">
+                Zaawansowany sklep internetowy dla firm z Torunia. Systemy płatności, zarządzanie magazynem, integracja z logistyką i analityka sprzedaży dla Twojego biznesu.
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Integracja płatności</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Zarządzanie produktami</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Analityka e-commerce</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Landing Pages */}
+            <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+              <Zap className="w-12 h-12 text-blue-600 mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Landing Pages</h3>
+              <p className="text-gray-700 mb-6">
+                Strony docelowe dla kampanii marketingowych. Wysokie konwersje, CTA dostosowany do celów, testy A/B i optymalizacja dla firm z Torunia prowadzących kampanie online.
+              </p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Wysokie konwersje</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Testy A/B</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Integracja z CRM</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Czym się wyróżniamy w Toruniu
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="flex gap-6">
+              <Smartphone className="w-12 h-12 text-blue-600 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-bold mb-3">Responsive Design</h3>
+                <p className="text-gray-700">
+                  Wszystkie nasze strony internetowe dla firm z Torunia są w pełni responsywne i działają idealnie na telefonach, tabletach i komputerach. Zapewniamy najlepsze doświadczenie użytkownika na każdym urządzeniu.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <TrendingUp className="w-12 h-12 text-blue-600 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-bold mb-3">SEO Optimized</h3>
+                <p className="text-gray-700">
+                  Strony tworzymy z myślą o wyszukiwarkach. Optymalizacja dla frazy "strony internetowe Toruń" i innych kluczowych słów zapewnia widoczność Twojej firmy w Google i innych wyszukiwarkach.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <Zap className="w-12 h-12 text-blue-600 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-bold mb-3">Szybkie ładowanie</h3>
+                <p className="text-gray-700">
+                  Optymalizujemy każdą stronę internetową dla maksymalnej szybkości. Szybkie ładowanie to klucz do lepszego rankingu w Google i wyższej konwersji dla firm z Torunia.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-6">
+              <Users className="w-12 h-12 text-blue-600 flex-shrink-0" />
+              <div>
+                <h3 className="text-xl font-bold mb-3">Dedykowany support</h3>
+                <p className="text-gray-700">
+                  Po uruchomieniu strony internetowej dla Twojej firmy z Torunia oferujemy pełny support techniczny. Jesteśmy dostępni 24/7, aby rozwiązać wszelkie problemy i dokonywać aktualizacji.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Jak pracujemy przy projektowaniu stron w Toruniu
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                1
+              </div>
+              <h3 className="font-bold mb-2">Analiza</h3>
+              <p className="text-gray-700 text-sm">
+                Poznajemy Twoją firmę, branżę i konkurencję w Toruniu
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                2
+              </div>
+              <h3 className="font-bold mb-2">Projektowanie</h3>
+              <p className="text-gray-700 text-sm">
+                Tworzymy design strony z uwzględnieniem potrzeb użytkowników
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                3
+              </div>
+              <h3 className="font-bold mb-2">Implementacja</h3>
+              <p className="text-gray-700 text-sm">
+                Kodujemy stronę internetową dla Torunia z najnowszymi technologiami
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                4
+              </div>
+              <h3 className="font-bold mb-2">Testowanie</h3>
+              <p className="text-gray-700 text-sm">
+                Gruntownie testujemy stronę na wszystkich urządzeniach i przeglądarkach
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="bg-blue-600 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                5
+              </div>
+              <h3 className="font-bold mb-2">Wdrażanie</h3>
+              <p className="text-gray-700 text-sm">
+                Uruchamiamy stronę i zapewniamy ciągły support dla Twojej firmy
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Cennik stron internetowych w Toruniu
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-blue-600">
+              <h3 className="text-2xl font-bold mb-4">Strona Wizytówka</h3>
+              <p className="text-4xl font-bold text-blue-600 mb-6">
+                od 1500 zł
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Do 5 podstron</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Responsywny design</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>SEO optimized</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Forma kontaktowa</span>
+                </li>
+              </ul>
+              <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                Wybierz
+              </button>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-lg shadow-xl p-8 transform md:scale-105">
+              <div className="text-center mb-4">
+                <span className="bg-yellow-400 text-blue-600 px-4 py-1 rounded-full font-bold text-sm">
+                  Najpopularniejsza
+                </span>
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Sklep E-commerce</h3>
+              <p className="text-4xl font-bold mb-6">
+                od 5000 zł
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-300" />
+                  <span>Unlimited produktów</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-300" />
+                  <span>Integracja płatności</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-300" />
+                  <span>Panel administracyjny</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-300" />
+                  <span>Analityka sprzedaży</span>
+                </li>
+              </ul>
+              <button className="w-full bg-white text-blue-600 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                Wybierz
+              </button>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-indigo-600">
+              <h3 className="text-2xl font-bold mb-4">Portal Biznesowy</h3>
+              <p className="text-4xl font-bold text-blue-600 mb-6">
+                od 10000 zł
+              </p>
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Zaawansowana funkcjonalność</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>API integracje</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Zarządzanie użytkownikami</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Zaawansowana analityka</span>
+                </li>
+              </ul>
+              <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                Wybierz
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-center mb-16">
+            Najczęstsze pytania o tworzeniu stron w Toruniu
+          </h2>
+          
+          <div className="space-y-6">
+            {faqItems.map((item, index) => (
+              <details key={index} className="bg-white rounded-lg shadow-lg p-6 cursor-pointer group">
+                <summary className="flex items-center justify-between font-bold text-lg hover:text-blue-600 transition">
+                  <span>{item.question}</span>
+                  <span className="ml-4 text-2xl group-open:rotate-180 transition-transform">
+                    +
+                  </span>
+                </summary>
+                <p className="mt-4 text-gray-700 leading-relaxed">
+                  {item.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-6">
+            Gotowy do stworzenia nowoczesnej strony internetowej?
+          </h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Skontaktuj się z nami dzisiaj i otrzymaj bezpłatną konsultację na temat Twojego projektu. Jesteśmy specjalistami w tworzeniu stron internetowych dla firm z Torunia.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+              Umów darmową konsultację
+            </button>
+            <button className="border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition">
+              Zapoznaj się z naszym portfolio
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Info */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <h3 className="font-bold text-lg mb-2">Telefon</h3>
+              <p className="text-gray-700">+48 56 XXX XXXX</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-bold text-lg mb-2">Email</h3>
+              <p className="text-gray-700">hello@fotz.pl</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-bold text-lg mb-2">Biuro w Toruniu</h3>
+              <p className="text-gray-700">ul. Jakieś 123, Toruń</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
-};
-
-export default StronyInternetoweTorun;
+}

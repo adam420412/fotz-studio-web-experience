@@ -1359,6 +1359,10 @@ const BlogSEOWordPress = lazy(() => import("./pages/BlogSEOWordPress"));
 const BlogMarketingDlaRestauracji = lazy(() => import("./pages/BlogMarketingDlaRestauracji"));
 const PozycjonowanieZgorzelec = lazy(() => import("./pages/PozycjonowanieZgorzelec"));
 
+// Wave 240 pages
+const BlogMarketingDlaSalonuPieknosci = lazy(() => import("./pages/BlogMarketingDlaSalonuPieknosci"));
+const BlogMarketingBudowlany = lazy(() => import("./pages/BlogMarketingBudowlany"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2397,6 +2401,8 @@ const App = () => (
                 <Route path="/blog/seo-wordpress-poradnik" element={<BlogSEOWordPress />} />
                 <Route path="/blog/marketing-dla-restauracji" element={<BlogMarketingDlaRestauracji />} />
                 <Route path="/pozycjonowanie/zgorzelec" element={<PozycjonowanieZgorzelec />} />
+                <Route path="/blog/marketing-dla-salonu-pieknosci" element={<BlogMarketingDlaSalonuPieknosci />} />
+                <Route path="/blog/marketing-firma-budowlana" element={<BlogMarketingBudowlany />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
