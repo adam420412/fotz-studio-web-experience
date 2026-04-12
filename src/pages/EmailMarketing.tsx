@@ -124,7 +124,7 @@ export default function EmailMarketing() {
         title="Email marketing dla firm — automation i newslettery | fotz.pl"
         description="Email marketing — newslettery, automation, lead nurturing dla firm. Najwyższy ROI z wszystkich kanałów marketingowych. Obsługa email marketingu od 799 zł/mies.!"
         canonical="https://fotz.pl/uslugi/email-marketing"
-        keywords="email marketing, marketing emailowy, kampanie email, newsletter marketing, automatyzacja email, mailing dla firm"
+        keywords="email marketing, e-mail marketing, mailing, newsletter, marketing automation, kampanie email, newsletter marketing, automatyzacja email, agencja email marketing, skuteczny email marketing, mailing dla firm, obsługa email marketingu"
       />
       <ServiceSchema
         name="Email marketing"
@@ -148,8 +148,7 @@ export default function EmailMarketing() {
                 Email marketing — najwyższy ROI w marketingu
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Email marketing to kanał własny, niezależny od algorytmów. Budujemy listy, tworzymy sekwencje automatyczne
-                i prowadzimy newslettery które konwertują subskrybentów w klientów.
+                Email marketing — skuteczne kampanie emailowe, newslettery i marketing automation dla firm. E-mail marketing to kanał własny, niezależny od algorytmów. Tworzymy mailing i sekwencje automatyczne, które konwertują subskrybentów w klientów.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

@@ -274,7 +274,7 @@ const SocialMedia = () => {
         title="Obsługa i Prowadzenie Social Media Facebook Instagram - Cennik | Fotz Studio"
         description="Obsługa social media dla firm — prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie Facebook Ads. Cennik prowadzenia social media od…"
         canonical="https://fotz.pl/social-media"
-        keywords="obsługa social media, prowadzenie social media, agencja social media, prowadzenie facebooka, prowadzenie instagrama, community management, cennik social media, social media marketing, zarządzanie social media"
+        keywords="obsługa social media, prowadzenie social media, prowadzenie fanpage, obsługa mediów społecznościowych, agencja social media, zarządzanie social media, prowadzenie facebooka, prowadzenie instagrama, community management, cennik social media, social media marketing, agencja reklamowa social media"
       />
       
       <ServiceSchema 
@@ -332,7 +332,7 @@ const SocialMedia = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                Budujemy silne marki w mediach społecznościowych. <span className="text-foreground font-medium">Strategia, kreatywny content, kampanie reklamowe.</span> Docieramy do Twoich klientów tam, gdzie spędzają czas.
+                Obsługa social media — prowadzenie social media, prowadzenie fanpage i kampanie reklamowe dla firm. <span className="text-foreground font-medium">Agencja social media: strategia, kreatywny content, obsługa mediów społecznościowych.</span> Zarządzanie social media, które generuje realne wyniki.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4 sm:px-0">

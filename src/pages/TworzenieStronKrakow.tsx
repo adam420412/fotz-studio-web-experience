@@ -210,7 +210,7 @@ export default function TworzenieStronKrakow() {
         description="Tworzymy profesjonalne strony internetowe w Krakowie. Nowoczesne, responsywne strony dla firm. Od 499 zł. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/krakow"
         ogImage="https://fotz.pl/og-krakow.jpg"
-        keywords="tworzenie stron internetowych kraków, strony internetowe kraków, projektowanie stron kraków, agencja webdesign kraków"
+        keywords="tworzenie stron internetowych kraków, strony internetowe kraków, tworzenie stron www kraków, projektowanie stron internetowych kraków, strony www kraków, sklepy internetowe kraków, projektowanie stron www kraków, agencja webdesign kraków, tworzenie stron kraków, strona internetowa kraków"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Kraków"
@@ -238,8 +238,8 @@ export default function TworzenieStronKrakow() {
                 Tworzenie stron internetowych Kraków
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                800k mieszkańców, 12 mln turystów rocznie, 70k+ studentów. Kraków to jedna z najpowolniejszych miast w Polsce dla turystyki, edukacji, tech i startupu.
-                Obsługujemy krakowskie firmy: hotele, restauracje, szkoły, startup'y, sklepy.
+                Tworzenie stron internetowych Kraków — profesjonalne strony www i sklepy internetowe dla firm z Krakowa i Małopolski. Projektowanie stron internetowych Kraków z nowoczesnym designem, SEO i responsywnym kodem.
+                Strony www Kraków dla hoteli, restauracji, startupów i e-commerce. 800k mieszkańców, 12 mln turystów — tworzenie stron www Kraków od 499 zł.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

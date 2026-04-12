@@ -97,7 +97,7 @@ const StronyInternetoweLegnica = () => {
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-5xl mx-auto">
               <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Legnica<Sparkles className="w-4 h-4" /></span>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8">Strony Internetowe{" "}<span className="text-gradient">Legnica</span></h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"><strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu.</strong>{" "}Tworzymy strony www dla legnickich firm.</p>
+              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"><strong className="text-foreground">Strony internetowe Legnica — tworzenie stron www i sklepy internetowe.</strong>{" "}Projektowanie i tworzenie stron internetowych Legnica dla firm z Dolnego Śląska. Strony www Legnica od 499 zł — nowoczesne, responsywne i zoptymalizowane SEO.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Button asChild size="lg" className="px-8 py-6"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5" /></Link></Button>
                 <Button asChild variant="outline" size="lg" className="px-8 py-6"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>

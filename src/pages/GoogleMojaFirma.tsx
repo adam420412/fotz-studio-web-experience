@@ -61,7 +61,7 @@ export default function GoogleMojaFirma() {
         title="Google Moja Firma — jak założyć i zoptymalizować wizytówkę? | fotz.pl"
         description="Google Moja Firma (Google Business Profile) — kompletny poradnik. Jak założyć, zweryfikować i zoptymalizować wizytówkę Google. Bezpłatnie, krok po kroku."
         canonical="https://fotz.pl/blog/google-moja-firma"
-        keywords="google moja firma, wizytówka google, google my business, pozycjonowanie google maps, profil google moja firma, optymalizacja gmb"
+        keywords="google moja firma, wizytówka google, google my business, google business profile, pozycjonowanie google maps, profil google moja firma, optymalizacja gmb, wizytówka google moja firma, zakładanie google moja firma, jak założyć wizytówkę google, optymalizacja wizytówki google, pozycjonowanie lokalne"
       />
       <ArticleSchema
         title="Google Moja Firma — kompletny przewodnik po Google Business Profile"
@@ -87,8 +87,7 @@ export default function GoogleMojaFirma() {
                 Google Moja Firma — jak założyć i zoptymalizować wizytówkę Google?
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
-                Google Business Profile (dawniej Google Moja Firma) to bezpłatne narzędzie które może być Twoim
-                najlepszym kanałem pozyskiwania klientów lokalnych. Poradnik krok po kroku.
+                Google Moja Firma (Google Business Profile) — bezpłatna wizytówka Google dla firm. Optymalizacja wizytówki Google Maps i pozycjonowanie lokalne krok po kroku. Jak założyć wizytówkę Google Moja Firma i pozyskiwać klientów lokalnych.
               </p>
             </motion.div>
           </div>

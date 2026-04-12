@@ -34,7 +34,7 @@ export default function TworzenieStronBialystok() {
         title="Tworzenie stron internetowych Białystok | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Białystok — profesjonalne strony dla firm z Podlasia. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/bialystok"
-        keywords="tworzenie stron internetowych białystok, strony internetowe białystok, projektowanie stron białystok, agencja webdesign białystok, budowa strony białystok"
+        keywords="tworzenie stron internetowych białystok, strony internetowe białystok, tworzenie stron www białystok, projektowanie stron internetowych białystok, projektowanie stron www białystok, strony www białystok, tworzenie stron białystok, strona internetowa białystok, agencja webdesign białystok, sklep internetowy białystok"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Białystok"
@@ -57,7 +57,7 @@ export default function TworzenieStronBialystok() {
               Tworzenie stron internetowych Białystok — agencja z wynikami
             </h1>
             <p className="text-xl text-gray-700 mb-4">
-              Profesjonalne strony internetowe dla firm z Podlasia
+              Tworzenie stron internetowych Białystok — profesjonalne strony www i sklepy internetowe dla firm z Podlasia. Projektowanie stron www Białystok z nowoczesnym designem i SEO.
             </p>
             <p className="text-lg text-gray-600 mb-8">
               Od 499 zł netto za stronę. Kompleksowe wsparcie: design, SEO, hosting, wsparcie techniczne.

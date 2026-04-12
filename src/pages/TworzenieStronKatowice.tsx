@@ -136,7 +136,7 @@ export default function TworzenieStronKatowice() {
         title="Tworzenie stron internetowych Katowice | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Katowice i Śląsk — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/katowice"
-        keywords="tworzenie stron internetowych katowice, strony internetowe katowice, projektowanie stron katowice, agencja webdesign katowice, tworzenie stron śląsk"
+        keywords="tworzenie stron internetowych katowice, strony internetowe katowice, tworzenie stron www katowice, projektowanie stron internetowych katowice, strony www katowice, strony internetowe śląsk, tworzenie stron katowice, strona internetowa katowice, projektowanie stron katowice, sklep internetowy katowice"
       />
       <ServiceSchema name="Tworzenie stron internetowych Katowice" description="Profesjonalne tworzenie stron internetowych dla firm z Katowic, Śląska i metropolii GZM." areaServed={["PL"]} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
@@ -163,7 +163,7 @@ export default function TworzenieStronKatowice() {
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Nowoczesna strona internetowa to klucz do sukcesu na rynku śląskim.</strong> Tworzymy profesjonalne strony www dla firm z Katowic i całej metropolii GZM, które przyciągają klientów i generują biznes.
+                <strong className="text-foreground">Tworzenie stron internetowych Katowice — strony www dla firm z Katowic i całego Śląska.</strong> Tworzymy profesjonalne strony internetowe Katowice i sklepy online dla metropolii GZM, które przyciągają klientów i generują biznes. Projektowanie stron www Katowice od 499 zł.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

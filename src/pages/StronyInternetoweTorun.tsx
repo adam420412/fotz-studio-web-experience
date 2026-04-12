@@ -41,7 +41,7 @@ export default function StronyInternetoweTorun() {
         description="Profesjonalne projektowanie stron internetowych w Toruniu. Nowoczesne strony wizytówki, sklepy e-commerce i landing pages dla firm. SEO-friendly, responsywne, szybkie."
         canonical="https://fotz.pl/strony-internetowe/torun"
         ogImage="https://fotz.pl/og-torun.jpg"
-        keywords="strony internetowe toruń, tworzenie stron toruń, projektowanie stron toruń, agencja webdesign toruń"
+        keywords="strony internetowe toruń, tworzenie stron internetowych toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron www toruń, sklep internetowy toruń"
       />
       
       <BreadcrumbSchema items={breadcrumbs} />
@@ -62,7 +62,7 @@ export default function StronyInternetoweTorun() {
                 Strony internetowe Toruń
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Profesjonalne projektowanie i tworzenie nowoczesnych stron internetowych dla firm z Torunia. Zwiększymy widoczność Twojej firmy w internecie.
+                Tworzenie stron internetowych Toruń — profesjonalne strony www i sklepy internetowe dla firm z Torunia i Kujaw. Projektowanie stron www Toruń z nowoczesnym designem, SEO i responsywnym kodem. Strony internetowe Toruń od 499 zł.
               </p>
               <div className="flex gap-4">
                 <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">

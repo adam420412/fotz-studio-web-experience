@@ -136,7 +136,7 @@ export default function TworzenieStronBydgoszcz() {
         title="Tworzenie stron internetowych Bydgoszcz | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Bydgoszcz — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/bydgoszcz"
-        keywords="tworzenie stron internetowych bydgoszcz, strony internetowe bydgoszcz, projektowanie stron bydgoszcz, agencja webdesign bydgoszcz, budowa strony bydgoszcz"
+        keywords="tworzenie stron internetowych bydgoszcz, strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron internetowych bydgoszcz, strony www bydgoszcz, tworzenie stron bydgoszcz, strona internetowa bydgoszcz, agencja webdesign bydgoszcz, projektowanie stron www bydgoszcz, sklep internetowy bydgoszcz"
       />
       <ServiceSchema name="Tworzenie stron internetowych Bydgoszcz" description="Profesjonalne tworzenie stron internetowych dla firm z Bydgoszczy i Kujawsko-Pomorskiego." areaServed={["PL"]} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
@@ -163,7 +163,7 @@ export default function TworzenieStronBydgoszcz() {
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to inwestycja w rozwój Twojej firmy.</strong> Tworzymy nowoczesne strony www dla firm z Bydgoszczy i Kujawsko-Pomorskiego, które przyciągają klientów i budują wiarygodność.
+                <strong className="text-foreground">Tworzenie stron internetowych Bydgoszcz — profesjonalne strony www i sklepy internetowe.</strong> Tworzymy nowoczesne strony www Bydgoszcz dla firm z Kujawsko-Pomorskiego, które przyciągają klientów i generują biznes. Projektowanie stron internetowych Bydgoszcz od 499 zł.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

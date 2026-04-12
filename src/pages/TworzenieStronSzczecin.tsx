@@ -205,7 +205,7 @@ export default function TworzenieStronSzczecin() {
         description="Tworzenie stron internetowych Szczecin — profesjonalne strony WWW dla firm. Od 499 zł netto. Wersje PL+DE. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/szczecin"
         ogImage="https://fotz.pl/og-szczecin.jpg"
-        keywords="tworzenie stron internetowych szczecin, strony internetowe szczecin, projektowanie stron szczecin, agencja webdesign szczecin"
+        keywords="tworzenie stron internetowych szczecin, strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron internetowych szczecin, strony www szczecin, projektowanie i tworzenie stron internetowych szczecin, tworzenie stron szczecin, strona internetowa szczecin, agencja webdesign szczecin, sklep internetowy szczecin"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Szczecin"
@@ -234,7 +234,7 @@ export default function TworzenieStronSzczecin() {
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Szczecin — stolica Zachodniopomorskiego, przy granicy z Niemcami, z jednym z największych portów
-                na Bałtyku. Tworzymy profesjonalne strony dla firm ze Szczecina. Wersje PL, DE i EN.
+                Tworzenie stron internetowych Szczecin i projektowanie stron www dla firm z Zachodniopomorskiego. Strony www Szczecin z wersją PL, DE i EN — tworzenie stron dla branży morskiej, logistyki i usług.
                 Szybko, skutecznie, na czas.
               </p>
 

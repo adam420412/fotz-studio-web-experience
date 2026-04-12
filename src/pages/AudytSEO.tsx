@@ -119,7 +119,7 @@ export default function AudytSEO() {
         title="Audyt SEO | Profesjonalna analiza strony | fotz.pl"
         description="Audyt SEO — szczegółowa analiza Twojej strony internetowej. Identyfikujemy błędy, które blokują Twoje pozycje w Google. Zamów audyt SEO!"
         canonical="https://fotz.pl/uslugi/audyt-seo"
-        keywords="audyt seo, audyt strony internetowej, analiza seo, audyt techniczny seo, sprawdź seo strony, bezpłatny audyt seo, audyt pozycjonowania"
+        keywords="audyt seo, darmowy audyt seo, audyt seo online, audyt strony internetowej, analiza seo strony, audyt techniczny seo, bezpłatny audyt seo, audyt seo cena, sprawdź seo strony, audyt pozycjonowania, co to jest audyt seo, audyt seo co obejmuje"
       />
       <ServiceSchema
         name="Audyt SEO"
@@ -149,7 +149,7 @@ export default function AudytSEO() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                1400 firm miesięcznie szuka audytu SEO. Pierwszym krokiem do wyższych pozycji jest wiedza — co blokuje Twoją stronę?
+                Audyt SEO — darmowy audyt seo online i analiza seo strony internetowej. Audyt techniczny, on-page i off-page — dowiedz się, co blokuje Twoją stronę przed wysokimi pozycjami w Google. Bezpłatny audyt seo dla firm dostępny online.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">

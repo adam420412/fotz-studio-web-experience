@@ -215,7 +215,7 @@ const KampanieReklamowe = () => {
         title="Kampanie Reklamowe Google Ads i Meta Ads — Reklama Online dla Firm | Fotz Studio"
         description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Skuteczna reklama online dla firm — planowanie, prowadzenie i optymalizacja…"
         canonical="https://fotz.pl/kampanie-reklamowe"
-        keywords="kampanie reklamowe, reklamy internetowe, agencja reklamowa, google ads, facebook ads, performance marketing, kampanie ppc"
+        keywords="kampanie reklamowe, kampanie reklamowe online, kampania reklamowa, prowadzenie kampanii reklamowych, kampanie google ads, kampanie facebook ads, reklamy internetowe, agencja reklamowa, performance marketing, kampanie ppc, reklama w internecie, kampanie reklamowe dla firm"
       />
       <ServiceSchema 
         name="Kampanie Reklamowe Google Ads i Facebook Ads"
@@ -256,8 +256,7 @@ const KampanieReklamowe = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Google Ads, Facebook Ads, Instagram - docieramy do Twoich klientów tam, gdzie spędzają czas online. 
-              Mierzalne wyniki i pełna kontrola nad budżetem.
+              Kampanie reklamowe online — Google Ads, Facebook Ads, Instagram Ads i TikTok Ads dla firm. Prowadzenie kampanii reklamowych z mierzalnymi wynikami i pełną kontrolą nad budżetem. Performance marketing, który dociera do Twoich klientów.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">

@@ -239,7 +239,7 @@ const FotografiaProduktowa = () => {
         canonical="https://fotz.pl/uslugi/fotografia-produktowa"
         ogTitle="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów"
         ogDescription="Sesje fotograficzne produktów dla Allegro, Amazon, Shopify. Packshot, 360°, retusz — od 600 zł. Poznań i cała Polska."
-        keywords="fotografia produktowa, zdjęcia produktowe, sesja produktowa, fotografia e-commerce, zdjęcia do sklepu internetowego"
+        keywords="fotografia produktowa, zdjęcia produktowe, packshot, fotografia produktowa cennik, zdjęcia reklamowe produktów, fotograf produktowy, zdjęcia packshot, sesja produktowa, fotografia e-commerce, zdjęcia do sklepu internetowego, studio fotograficzne, ile kosztuje fotografia produktowa"
       />
       <ServiceSchema
         name="Fotografia produktowa"
@@ -293,9 +293,7 @@ const FotografiaProduktowa = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
             >
-              Sesje fotograficzne produktów, które zwiększają sprzedaż na Allegro,
-              Amazon i Shopify. Packshot na białym tle, fotografia lifestylowa, zdjęcia
-              360° — wszystko z retuszem w cenie. Od 600 zł.
+              Fotografia produktowa — profesjonalne zdjęcia produktowe i packshoty dla sklepów online. Sesje produktowe na Allegro, Amazon i Shopify: packshot na białym tle, fotografia lifestylowa, zdjęcia 360°. Fotografia produktowa cennik od 600 zł — retusz w cenie.
             </motion.p>
 
             <motion.div

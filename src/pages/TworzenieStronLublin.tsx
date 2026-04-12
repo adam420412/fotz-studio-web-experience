@@ -136,7 +136,7 @@ export default function TworzenieStronLublin() {
         title="Tworzenie stron internetowych Lublin | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Lublin — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/lublin"
-        keywords="tworzenie stron internetowych lublin, strony internetowe lublin, projektowanie stron lublin, agencja webdesign lublin, budowa strony lublin"
+        keywords="tworzenie stron internetowych lublin, strony internetowe lublin, tworzenie stron www lublin, projektowanie stron internetowych lublin, strony www lublin, tworzenie stron lublin, strona internetowa lublin, sklepy internetowe lublin, agencja webdesign lublin, projektowanie stron www lublin"
       />
       <ServiceSchema name="Tworzenie stron internetowych Lublin" description="Profesjonalne tworzenie stron internetowych dla firm z Lublina i wschodniej Polski." areaServed={["PL"]} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
@@ -163,7 +163,7 @@ export default function TworzenieStronLublin() {
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Strona internetowa to brama do nowych możliwości biznesowych.</strong> Tworzymy profesjonalne strony www dla firm z Lublina i wschodniej Polski, które otwierają drzwi do krajowych i międzynarodowych rynków.
+                <strong className="text-foreground">Tworzenie stron internetowych Lublin — strony www dla firm z Lublina i Lubelszczyzny.</strong> Tworzymy profesjonalne strony internetowe Lublin i sklepy online dla firm z wschodniej Polski. Projektowanie stron www Lublin — nowoczesne, szybkie i zoptymalizowane pod SEO.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

@@ -63,7 +63,7 @@ const PozycjonowanieGoogleMaps = () => {
         title="Pozycjonowanie Google Maps — Wizytówka Google Moja Firma | Fotz Studio"
         description="Pozycjonowanie Google Maps i optymalizacja wizytówki Google Moja Firma (GMB). Pojawiaj się wysoko w lokalnych wynikach wyszukiwania. Fotz Studio."
         canonical="https://fotz.pl/seo/google-maps"
-        keywords="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google"
+        keywords="pozycjonowanie google maps, pozycjonowanie wizytówki google, google moja firma, wizytówka google, seo google maps, optymalizacja wizytówki google, wizytówka google maps, pozycjonowanie lokalne google, seo lokalne, mapy google, google business profile, jak wypozycjonować wizytówkę"
       />
       <ServiceSchema
         name="Pozycjonowanie Google Maps"
@@ -92,7 +92,7 @@ const PozycjonowanieGoogleMaps = () => {
               {" "}dla firm
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Skuteczne pozycjonowanie wizytówki Google Maps to kluczowy element strategii marketingu internetowego dla każdej firmy, która chce dotrzeć do lokalnych klientów. Dzięki odpowiedniemu pozycjonowaniu wizytówki Google można znacznie zwiększyć widoczność firmy w wynikach wyszukiwania.
+              Pozycjonowanie Google Maps i optymalizacja wizytówki Google Moja Firma — skuteczne SEO lokalne dla firm z każdego regionu Polski. Pozycjonowanie wizytówki Google to klucz do pozyskiwania klientów lokalnych. Google Business Profile zoptymalizowany pod Twój rynek.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90 w-full sm:w-auto text-sm sm:text-base">

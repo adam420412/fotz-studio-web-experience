@@ -210,7 +210,7 @@ export default function TworzenieStronWarszawa() {
         description="Tworzymy profesjonalne strony internetowe w Warszawie. Agencja z doświadczeniem, realizacje na czas. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/warszawa"
         ogImage="https://fotz.pl/og-warszawa.jpg"
-        keywords="tworzenie stron internetowych warszawa, strony internetowe warszawa, projektowanie stron warszawa, agencja webdesign warszawa"
+        keywords="tworzenie stron internetowych warszawa, strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron internetowych warszawa, strony www warszawa, projektowanie stron www warszawa, tworzenie stron warszawa, strona internetowa warszawa, agencja webdesign warszawa, sklep internetowy warszawa"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Warszawa"
@@ -238,9 +238,8 @@ export default function TworzenieStronWarszawa() {
                 Tworzenie stron internetowych Warszawa — agencja z wynikami
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                1.8 mln mieszkańców, 50k+ zarejestrowanych firm, najwyższe wydatki na IT w Polsce.
-                Warszawa to biznesowe serce Polski. My obsługujemy warszawskie firmy, startup'y, korporacje.
-                Szybko, profesjonalnie, z wynikami.
+                Tworzenie stron internetowych Warszawa — profesjonalne strony www i sklepy internetowe dla firm z Warszawy. Projektowanie stron internetowych Warszawa z nowoczesnym designem, optymalizacją SEO i responsywnym kodem.
+                Strony www Warszawa dla start-upów, korporacji i firm usługowych. 1,8 mln mieszkańców — tworzenie stron www Warszawa od 499 zł netto.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

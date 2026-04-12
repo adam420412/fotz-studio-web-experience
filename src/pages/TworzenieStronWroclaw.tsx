@@ -210,7 +210,7 @@ export default function TworzenieStronWroclaw() {
         description="Tworzymy profesjonalne strony internetowe we Wrocławiu. Szybkie, responsywne strony dla firm z Dolnego Śląska. Od 499 zł. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/wroclaw"
         ogImage="https://fotz.pl/og-wroclaw.jpg"
-        keywords="tworzenie stron internetowych wrocław, strony internetowe wrocław, projektowanie stron wrocław, agencja webdesign wrocław"
+        keywords="tworzenie stron internetowych wrocław, strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron internetowych wrocław, strony www wrocław, sklepy internetowe wrocław, projektowanie stron www wrocław, agencja webdesign wrocław, tworzenie stron wrocław, strona internetowa wrocław"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Wrocław"
@@ -238,8 +238,8 @@ export default function TworzenieStronWroclaw() {
                 Tworzenie stron internetowych Wrocław
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                640k mieszkańców, Silicon Valley Polski, 130k+ studentów. Wrocław to tech hub - Siemens, Nokia, Volvo IT, Capgemini.
-                Obsługujemy wrocławskie startup'y, software house'y, firmy tech, edukacyjne, e-commerce. W tempie którym pędzą Wrocławianie.
+                Tworzenie stron internetowych Wrocław — profesjonalne strony www i sklepy internetowe dla firm z Wrocławia i Dolnego Śląska. Projektowanie stron internetowych Wrocław z nowoczesnym designem, optymalizacją SEO i full-stack wsparciem technicznym.
+                Strony www Wrocław — tworzenie stron www dla wrocławskich startup'ów, software house'ów, e-commerce i firm B2B. Od 499 zł netto, bezpłatna wycena.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

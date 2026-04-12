@@ -222,7 +222,7 @@ const TworzenieStronGdansk = () => {
         description="Tworzymy profesjonalne strony internetowe w Gdańsku i Trójmieście. Nowoczesne, szybkie strony dla firm. Od 499 zł netto. Bezpłatna wycena i konsultacja!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/gdansk"
         ogImage="https://fotz.pl/og-gdansk.jpg"
-        keywords="tworzenie stron internetowych gdańsk, strony internetowe gdańsk, projektowanie stron gdańsk, agencja webdesign gdańsk"
+        keywords="tworzenie stron internetowych gdańsk, strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron internetowych gdańsk, strony www gdańsk, strony internetowe trójmiasto, tworzenie stron gdańsk, strona internetowa gdańsk, strony internetowe gdynia, agencja webdesign gdańsk, projektowanie stron gdańsk, sklep internetowy gdańsk"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Gdańsk"
@@ -249,8 +249,11 @@ const TworzenieStronGdansk = () => {
                 Tworzenie stron internetowych Gdańsk i Trójmiasto
               </h1>
             </div>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-              Profesjonalne strony internetowe dla firm z Gdańska, Gdyni i Sopotu. Nowoczesny design, SEO, e-commerce i wsparcie 24/7.
+            <p className="text-xl text-gray-600 mb-4 max-w-2xl">
+              Tworzenie stron internetowych Gdańsk — profesjonalne strony www i sklepy internetowe dla firm z Gdańska, Gdyni i Sopotu. Projektowanie stron internetowych Gdańsk z nowoczesnym designem, optymalizacją SEO i wsparciem technicznym.
+            </p>
+            <p className="text-base text-gray-500 mb-8 max-w-2xl">
+              Strony internetowe Trójmiasto — szybkie, responsywne strony www dla firm z całego regionu. Tworzenie stron www Gdańsk od 499 zł netto. Bezpłatna wycena i konsultacja.
             </p>
           </motion.div>
 

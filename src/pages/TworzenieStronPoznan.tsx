@@ -136,7 +136,7 @@ export default function TworzenieStronPoznan() {
         title="Tworzenie stron internetowych Poznań | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Poznań — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/poznan"
-        keywords="tworzenie stron internetowych poznań, strony internetowe poznań, projektowanie stron poznań, agencja webdesign poznań, budowa strony poznań"
+        keywords="tworzenie stron internetowych poznań, strony internetowe poznań, tworzenie stron www poznań, projektowanie stron internetowych poznań, strony www poznań, tworzenie stron poznań, strona internetowa poznań, agencja webdesign poznań, projektowanie stron www poznań, sklep internetowy poznań"
       />
       <ServiceSchema name="Tworzenie stron internetowych Poznań" description="Profesjonalne tworzenie stron internetowych dla firm z Poznania i Wielkopolski. Jesteśmy stąd — znamy lokalny rynek." areaServed={["PL"]} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />
@@ -163,7 +163,7 @@ export default function TworzenieStronPoznan() {
               </motion.h1>
 
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Jesteśmy stąd — znamy rynek poznański od podszewki.</strong> Tworzymy profesjonalne strony www dla firm z Poznania i Wielkopolski, które generują biznes i budują marki.
+                <strong className="text-foreground">Tworzenie stron internetowych Poznań — strony www dla firm z Poznania i Wielkopolski.</strong> Tworzymy profesjonalne strony internetowe Poznań i sklepy online, które generują biznes. Projektowanie stron www Poznań — znamy ten rynek od podszewki.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

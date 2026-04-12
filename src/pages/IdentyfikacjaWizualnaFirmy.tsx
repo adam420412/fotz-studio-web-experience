@@ -122,7 +122,7 @@ export default function IdentyfikacjaWizualnaFirmy() {
         title="Identyfikacja wizualna firmy — logo, brandbook, system graficzny | fotz.pl"
         description="Identyfikacja wizualna firmy — logo, system kolorów, typografia, szablony, brandbook. Kompleksowy projekt graficzny który wyróżni Twoją markę. Wycena!"
         canonical="https://fotz.pl/uslugi/identyfikacja-wizualna-firmy"
-        keywords="identyfikacja wizualna firmy, identyfikacja wizualna, brand identity, logo i branding, projekt identyfikacji, corporate identity"
+        keywords="identyfikacja wizualna firmy, identyfikacja wizualna, branding, logo i identyfikacja wizualna, tworzenie identyfikacji wizualnej, spójna identyfikacja wizualna, brandbook, brand identity, projekt identyfikacji, corporate identity, co to jest identyfikacja wizualna, identyfikacja wizualna firmy co zawiera"
       />
       <ServiceSchema
         name="Identyfikacja wizualna firmy"
@@ -146,8 +146,7 @@ export default function IdentyfikacjaWizualnaFirmy() {
                 Identyfikacja wizualna firmy — wyróżnij się i buduj rozpoznawalną markę
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Spójny system wizualny to fundament profesjonalnego wizerunku. Projektujemy logo, identyfikacje wizualne
-                i brandbookowe które sprawią, że Twoja firma będzie rozpoznawalna i zapamiętana.
+                Identyfikacja wizualna firmy — logo, branding i brandbook, które budują spójny wizerunek marki. Tworzenie identyfikacji wizualnej: projekt logo, paleta kolorów, typografia, materiały firmowe. Spójna identyfikacja wizualna = rozpoznawalna marka.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

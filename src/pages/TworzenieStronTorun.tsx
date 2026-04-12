@@ -204,7 +204,7 @@ export default function TworzenieStronTorun() {
         description="Tworzenie stron internetowych Toruń — profesjonalne strony WWW dla lokalnych firm. Od 499 zł netto. Szybko, z wynikami. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/torun"
         ogImage="https://fotz.pl/og-torun.jpg"
-        keywords="tworzenie stron internetowych toruń, strony internetowe toruń, projektowanie stron toruń, agencja webdesign toruń"
+        keywords="tworzenie stron internetowych toruń, strony internetowe toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron toruń, sklep internetowy toruń"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Toruń"
@@ -233,7 +233,7 @@ export default function TworzenieStronTorun() {
               </h1>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
                 Toruń to miasto z bogatą historią i dynamicznie rozwijającym się sektorem MŚP.
-                Tworzymy profesjonalne strony internetowe dla firm z Torunia i całego regionu
+                Tworzenie stron internetowych Toruń — profesjonalne strony www i sklepy online dla firm z Torunia i Kujaw. Projektowanie stron www Toruń z nowoczesnym designem, SEO i responsywnym kodem.
                 kujawsko-pomorskiego. Szybko, skutecznie, na czas.
               </p>
 
