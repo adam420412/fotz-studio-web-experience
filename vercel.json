@@ -6,6 +6,8 @@
   "redirects": [
     { "source": "/strony-internetowe", "destination": "/uslugi/strony-internetowe", "permanent": true },
     { "source": "/strony-internetowe-:city", "destination": "/uslugi/strony-internetowe/:city", "permanent": true },
+    { "source": "/sklepy-internetowe-:city", "destination": "/uslugi/sklepy-internetowe/:city", "permanent": true },
+    { "source": "/tiktok-ads-gdansk", "destination": "/performance-marketing/tiktok-ads/gdansk", "permanent": true },
     { "source": "/ecommerce-tworzenie-sklepu", "destination": "/uslugi/strony-internetowe/ecommerce", "permanent": true },
     { "source": "/identyfikacja-wizualna", "destination": "/uslugi/branding", "permanent": true },
     { "source": "/spoty-reklamowe", "destination": "/uslugi/produkcja-video", "permanent": true },

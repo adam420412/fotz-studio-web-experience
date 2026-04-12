@@ -47,12 +47,28 @@ function extractSEOHead(filePath) {
   
   const propsStr = seoMatch[1];
   
-  const title = propsStr.match(/title="([^"]+)"/)?.[1] || '';
-  const description = propsStr.match(/description="([^"]+)"/)?.[1] || '';
-  const canonical = propsStr.match(/canonical="([^"]+)"/)?.[1] || '';
-  const ogImage = propsStr.match(/ogImage="([^"]+)"/)?.[1] || 'https://fotz.pl/og-image.jpg';
+  // Helper: resolve variable value if prop uses {varName} syntax
+  function resolveVar(propStr, propName) {
+    // Try string literal first: propName="value"
+    const literal = propStr.match(new RegExp(`${propName}="([^"]+)"`))?.[1];
+    if (literal) return literal;
+    // Try JSX variable: propName={varName}
+    const varMatch = propStr.match(new RegExp(`${propName}=\\{(\\w+)\\}`));
+    if (varMatch) {
+      const varName = varMatch[1];
+      // Look up: const varName = 'value'; or const varName = "value";
+      const valMatch = content.match(new RegExp(`const ${varName}\\s*=\\s*['"]([^'"]+)['"]`));
+      if (valMatch) return valMatch[1];
+    }
+    return '';
+  }
+
+  const title = resolveVar(propsStr, 'title');
+  const description = resolveVar(propsStr, 'description');
+  const canonical = resolveVar(propsStr, 'canonical');
+  const ogImage = resolveVar(propsStr, 'ogImage') || 'https://fotz.pl/og-image.jpg';
   const noIndex = propsStr.includes('noIndex={true}') || propsStr.includes('noIndex');
-  const keywords = propsStr.match(/keywords="([^"]+)"/)?.[1] || '';
+  const keywords = resolveVar(propsStr, 'keywords');
   
   if (!title || !canonical) return null;
   
