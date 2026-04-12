@@ -10,438 +10,291 @@ export default function TikTokAdsKrakow() {
   const faqItems = [
     {
       question: "Ile kosztuje TikTok Ads w Krakowie?",
-      answer: "TikTok Ads w Krakowie zaczyna się od 500 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 1 000 zł/miesiąc dla małych firm do 10 000+ zł/miesiąc dla e-commerce. Całkowity koszt zależy od branży, typu kampanii i konkurencji na platformie. Kraków ma mniejszą konkurencję niż Warszawa — CPC jest nawet 20-30% tańszy.",
+      answer: "Koszt kampanii TikTok Ads w Krakowie jest przystępniejszy niż w Warszawie — minimalny budżet reklamowy to 200 zł/miesiąc, a dla efektywnych kampanii rekomendujemy od 800 zł/miesiąc. CPM w Krakowie wynosi średnio 12-28 zł za 1000 wyświetleń, co jest niższe niż w stolicach dużych miast. Obsługa kampanii w agencji Fotz zaczyna się od 350 zł/miesiąc. TikTok Ads oferuje rozliczenie CPM (za 1000 wyświetleń) lub CPV (za wyświetlenie wideo).",
     },
     {
-      question: "Dla jakich branż sprawdza się TikTok Ads w Krakowie?",
-      answer: "TikTok Ads działają doskonale dla: e-commerce (odzież, gadżety, domowe), beauty i kosmetyka, szkoły online, fitness i wellness, moda, kawiarnie i restauracje skierowane na Gen Z, turystyka (hostele, atrakcje), edukacja. Kraków ma młodą populację (studenci, młodych profesjonalistów) — idealną dla TikTok Ads.",
+      question: "Ile TikTok płaci za 1000 wyświetleń?",
+      answer: "TikTok Creator Fund płaci twórcom od 0,02 do 0,04 USD za 1000 wyświetleń organicznych. Dla reklam TikTok Ads stawka CPM zależy od konkurencji na rynku lokalnym — w Krakowie wynosi 12-28 zł za 1000 wyświetleń, w zależności od branży, targetowania i grupy docelowej. Niższa konkurencja w Krakowie vs. Warszawa oznacza lepsze ceny dla reklamodawców prowadzących kampanie TikTok Ads.",
     },
     {
-      question: "Jak długo trwa uruchomienie kampanii TikTok Ads w Krakowie?",
-      answer: "Kampanię TikTok Ads można uruchomić w ciągu 48-72 godzin. Obejmuje to: rejestrację i weryfikację konta TikTok Business, tworzenie strategii kreatywnej, przygotowanie materiałów wideo, budżetowania i konfiguracji targetowania. Pierwsze wyniki są widoczne po 1-2 dniach, pełna optymalizacja trwa 2-3 tygodnie.",
+      question: "Jaka jest najlepsza agencja TikTok Ads w Krakowie?",
+      answer: "Dobra agencja TikTok Ads musi posiadać case studies z kampanii, doświadczenie w tworzeniu wideo na TikToka i znajomość TikTok Ads Manager. Agencja Fotz oferuje kompleksową obsługę kampanii TikTok Ads w Krakowie — od strategii i analiz konkurencji, przez produkcję materiałów wideo, optymalizację targetowania, po raportowanie wyników i optymalizację CPM.",
+    },
+    {
+      question: "Dla jakiej branży sprawdza się reklama na TikToku w Krakowie?",
+      answer: "Reklama na TikToku sprawdza się najlepiej w e-commerce, beauty, fashion, fitness, gastronomii, edukacji i rozrywce. W Krakowie szczególnie efektywne kampanie TikTok Ads prowadzą sklepy internetowe, restauracje i kawiarnie, studia kosmetyczne, szkoły języków i firmy usługowe kierujące ofertę do Gen Z i Millenialsów w wieku 18-34 lata. TikTok to platforma mobilna angażująca młodych użytkowników.",
+    },
+    {
+      question: "Jakie formaty reklamowe oferuje TikTok Ads?",
+      answer: "TikTok Ads oferuje unikalne formaty niedostępne na Facebooku czy Google Ads: In-Feed Ads (reklamy w feedzie ForYou), TopView Ads (pierwsze wideo po otwarciu), Spark Ads (promowanie organicznych postów), Hashtag Challenge (kampanie angażujące z hashtagiem), Brand Takeover (pełnoekranowa reklama) i Collection Ads. Najczęściej wybieranym formatem są In-Feed Ads — wyglądają jak natywny content i generują wysokie zaangażowanie użytkowników.",
+    },
+    {
+      question: "Jak długo trwa uruchomienie kampanii TikTok Ads?",
+      answer: "Kampanię TikTok Ads można uruchomić w ciągu 2-5 dni roboczych — konfiguracja konta TikTok Ads Manager, instalacja piksela, ustawienie targetowania grup docelowej, tworzenie kreacji wideo i weryfikacja przez platformę (24-48h). Pierwsze wyniki widoczne są po 3-7 dniach, pełna optymalizacja kampanii i znalezienie najlepszych grupy docelowej trwa 2-4 tygodnie.",
     },
     {
       question: "Czy TikTok Ads działa dla firm B2B?",
-      answer: "TikTok Ads to przede wszystkim kanał B2C dla firm skierowanych na Gen Z i Millenialsów. Dla firm B2B TikTok może działać w niszach — np. szkoły IT, kursy online, aplikacje dla młodych profesjonalistów. Dla tradycyjnych firm B2B, Google Ads lub LinkedIn są bardziej odpowiednie.",
+      answer: "TikTok Ads może działać dla B2B, ale wymaga innego podejścia. Platforma jest skuteczna dla B2B w branżach SaaS, edukacji zawodowej, marketingu, rekrutacji i usług — szczególnie gdy targetujemy menadżerów i przedsiębiorców z pokolenia Millenialsów. Dla klasycznego B2B skuteczniejszy bywa LinkedIn Ads. Doradzimy, jaka platforma i format reklamowy będzie najlepsza dla Twojej kampanii.",
     },
     {
-      question: "Jaki budżet minimalny na TikTok Ads w Krakowie?",
-      answer: "Minimalny budżet to 500-1 000 zł/miesiąc dla testów. Rekomendujemy jednak minimum 1 500-2 000 zł/miesiąc w Krakowie, aby kampania miała wystarczająco danych do optymalizacji algorytmu. TikTok wymaga danych — czym wyższy budżet, tym szybciej widać wyniki.",
-    },
-    {
-      question: "Jak wygląda targetowanie na TikToku w Krakowie?",
-      answer: "TikTok oferuje: wiek (13-65+), płeć, lokalizacja (Kraków, Nowa Huta, Podgórze, Tarnów), interesy (music, fashion, beauty, fitness, education), zachowania i zaangażowanie. Algorytm TikToka sam uczy się preferencji — im lepsza kreacja i optymalizacja, tym precyzyjniej algorytm pokazuje reklamy.",
-    },
-    {
-      question: "Czy agencja tworzy kreacje wideo do TikTok Ads?",
-      answer: "Tak — tworzymy profesjonalne kreatywne video dostosowane do algorytmu TikToka (format 9:16, zaangażujące, szybkie sceny). Możemy również pracować z Twoimi istniejącymi materiałami. Każda kampania zawiera A/B testy 3-5 wariantów video.",
-    },
-    {
-      question: "Jakie formaty reklamowe oferuje TikTok?",
-      answer: "TikTok oferuje: In-Feed Ads (reklamy w feed, najlepsze dla budżetu), Brand Takeover (przejęcie kanału startowego, premium), TopView (top of feed, premium), Hashtag Challenges (zaangażowanie społeczności), Creator Marketplace (kolaboracja z influencerami). Dla większości firm IN-FEED ADS z budżetem 1 500-3 000 zł/miesiąc są optymalne.",
+      question: "Dlaczego kampania TikTok Ads nie przynosi wyników?",
+      answer: "Najczęstsze przyczyny nieefektywnych kampanii to: zbyt mały budżet reklamowy, kreacje wideo zbyt reklamowe (brak TikTok feel), złe targetowanie grupy docelowej, brak piksela TikTok lub błędnie skonfigurowana strona docelowa, niska optymalizacja kampanii. Agencja Fotz przeprowadza bezpłatny audit kampanii, analizuje konkurencję i wskazuje przyczyny słabych wyników TikTok Ads.",
     },
   ];
 
+  const formats = [
+    { name: "In-Feed Ads", desc: "Reklamy wideo pojawiające się naturalnie w feedzie ForYou użytkowników TikToka. Najczęściej wybierany format — wygląda jak organiczny content, co angażuje użytkowników, zwiększa CTR i generuje konwersje." },
+    { name: "Spark Ads", desc: "Promowanie istniejących organicznych postów z profilu marki lub twórców. Idealne gdy masz content, który organicznie się sprawdza — Spark Ads wzmacnia zasięgi, wyświetlenia i zaangażowanie użytkowników." },
+    { name: "TopView Ads", desc: "Pierwsze wideo wyświetlane użytkownikowi po otwarciu aplikacji TikTok. Format gwarantujący maksymalną widoczność, świadomość marki i zasięgi — idealny na duże kampanie wizerunkowe i budowanie rozpoznawalności." },
+    { name: "Hashtag Challenge", desc: "Kampania angażująca użytkowników do tworzenia własnych filmów z brandowanym hashtagiem. Generuje ogromne zasięgi organiczne, buduje społeczność wokół marki i zwiększa kreatywne zaangażowanie." },
+    { name: "Brand Takeover", desc: "Pełnoekranowa reklama wideo lub graficzna przy uruchomieniu aplikacji. Format ekskluzywny — jeden reklamodawca dziennie na kategorię, wysoka świadomość marki i maksymalny impact." },
+    { name: "Collection Ads", desc: "Format łączący wideo z galerią produktów — otwiera mini-sklep w TikToku. Idealny dla e-commerce i sklepów internetowych, skracających ścieżkę zakupową i zwiększających konwersję sprzedaży." },
+  ];
+
+  const processSteps = [
+    { step: "01", title: "Analiza i strategia kampanii", desc: "Badamy grupę docelową w Krakowie, analizujemy konkurencję lokalną, definiujemy cele kampanii (zasięgi, ruch, konwersja) i budżet. Określamy, które formaty reklamowe i strategie marketingowe będą najskuteczniejsze dla Twojej branży w Krakowie." },
+    { step: "02", title: "Konfiguracja TikTok Ads Manager", desc: "Konfigurujemy konto reklamowe, instalujemy piksel TikTok, ustawiamy zdarzenia konwersji i tworzymy precyzyjne grupy odbiorców — targetowanie demograficzne, zainteresienia, remarketing i lookalike na bazie istniejących klientów." },
+    { step: "03", title: "Produkcja kreacji wideo", desc: "Tworzymy lub adaptujemy materiały wideo zgodne z formatem TikToka — krótkie, dynamiczne, z trendy muzyką i efektami. Kreacje muszą wyglądać jak natywny content i angażować użytkowników, nie jak tradycyjna reklama czy spot." },
+    { step: "04", title: "Uruchomienie kampanii i monitoring", desc: "Uruchamiamy reklamy i śledzimy wyniki w czasie rzeczywistym — CPM, CTR, koszt konwersji, zasięgi i wyświetlenia. Optymalizujemy stawki, grupy docelowe i kreacje wideo na podstawie danych z TikTok Ads Manager dla maksymalnego ROI." },
+    { step: "05", title: "Raportowanie wyników", desc: "Co miesiąc dostarczamy przejrzysty raport z wynikami kampanii — zasięgi, wyświetlenia, kliknięcia, konwersje, koszt pozyskania klienta i zwrot z inwestycji. Pełna transparentność rozliczenia to nasz standard pracy z każdym klientem." },
+  ];
+
   return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Reklamy TikTok Ads Kraków — agencja kampanii TikTok | Fotz.pl"
-          description="TikTok Ads Kraków — agencja Fotz.pl. Kampanie TikTok dla firm i e-commerce z Krakowa. Kreacje wideo, targetowanie Gen Z. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/tiktok-ads/krakow"
-          keywords="tiktok ads krakow, agencja tiktok, kampanie tiktok, reklamy na tiktoku krakow"
-        />
+    <Layout>
+      <SEOHead
+        title="TikTok Ads Kraków — agencja kampanii reklamowych TikTok | Fotz.pl"
+        description="Reklamy TikTok Ads Kraków — agencja Fotz.pl. Kampanie TikTok dla firm z Krakowa: In-Feed Ads, Spark Ads, kreacje wideo. Targetowanie Gen Z i Millenialsów. Bezpłatna konsultacja!"
+        canonical="https://fotz.pl/performance-marketing/tiktok-ads/krakow"
+        keywords="tiktok ads krakow, reklamy tiktok krakow, agencja tiktok ads krakow, kampanie tiktok krakow"
+      />
 
-        <ServiceSchema
-          name="Kampanie TikTok Ads Kraków"
-          description="Tworzenie i optymalizacja kampanii TikTok Ads dla firm z Krakowa. Agencja Fotz.pl — specjaliści TikTok Ads i kreatywne wideo."
-          provider="Fotz Studio"
-          areaServed="Krakow"
-        />
+      <ServiceSchema
+        name="Kampanie TikTok Ads Kraków"
+        description="Tworzenie i optymalizacja kampanii reklamowych TikTok Ads dla firm z Krakowa. Agencja Fotz — kreacje wideo, targetowanie, pełna obsługa kampanii reklamowych."
+        provider="Fotz Studio"
+        areaServed="Krakow"
+      />
 
-        <BreadcrumbSchema
-          items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
-            { name: "TikTok Ads Kraków", url: "https://fotz.pl/performance-marketing/tiktok-ads/krakow" },
-          ]}
-        />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
+          { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
+          { name: "TikTok Ads Kraków", url: "https://fotz.pl/performance-marketing/tiktok-ads/krakow" },
+        ]}
+      />
 
-        <FAQSchema items={faqItems} />
+      <FAQSchema items={faqItems} />
 
-        {/* Breadcrumbs */}
-        <PageBreadcrumbs
-          items={[
-            { label: "Strona główna", path: "/" },
-            { label: "Kampanie reklamowe", path: "/performance-marketing" },
-            { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
-            { label: "Kraków", path: "/performance-marketing/tiktok-ads/krakow" },
-          ]}
-        />
+      <PageBreadcrumbs
+        items={[
+          { label: "Strona główna", path: "/" },
+          { label: "Kampanie reklamowe", path: "/performance-marketing" },
+          { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
+          { label: "Kraków", path: "/performance-marketing/tiktok-ads/krakow" },
+        ]}
+      />
 
-        {/* Hero Section */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-slate-950 via-purple-950 to-pink-900 overflow-hidden">
-          <div className="absolute top-1/4 right-1/3 w-96 h-96 rounded-full bg-pink-500/10 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/4 w-64 h-64 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
-
-          <div className="container px-4 relative z-10">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                  Reklamy TikTok Ads Kraków
-                </h1>
-                <p className="text-xl md:text-2xl text-pink-100 mb-8">
-                  Kampanie TikTok dla firm e-commerce i usług. Reach Gen Z w Krakowie. Kreacje wideo, algorytm, wyniki.
-                </p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">500 zł</div>
-                  <div className="text-sm text-pink-100">Kampanie od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">0,5-1 zł</div>
-                  <div className="text-sm text-pink-100">Średni CPC</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Gen Z</div>
-                  <div className="text-sm text-pink-100">Docelowa grupa</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">3-8:1</div>
-                  <div className="text-sm text-pink-100">ROAS średni</div>
-                </div>
-              </div>
+      {/* Hero */}
+      <FadeInView>
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="inline-block bg-pink-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              Agencja TikTok Ads Kraków
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              TikTok Ads Kraków — kampanie reklamowe, które robią zasięgi i sprzedają
+            </h1>
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              Reklama na TikToku to jeden z najskuteczniejszych kanałów docierania do młodych użytkowników w Krakowie. Agencja Fotz tworzy kampanie TikTok Ads, które angażują, budują świadomość marki i generują realne konwersje — od In-Feed Ads po Spark Ads, Hashtag Challenge i TopView Ads.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/kontakt" className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+                Bezpłatna konsultacja
+              </Link>
+              <Link to="/performance-marketing/tiktok-ads" className="border border-gray-500 hover:border-white text-gray-300 hover:text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+                Poznaj TikTok Ads
+              </Link>
             </div>
           </div>
         </section>
+      </FadeInView>
 
-        {/* Why TikTok Ads in Krakow */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  TikTok Ads Kraków — dlaczego warto?
-                </h2>
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p>
-                    Kraków to 800 tysięcy mieszkańców z dużą populacją Gen Z (studenci, osoby 18-25 lat). Algorytm TikToka jest najinteligentniejszy — nie zależy od obserwujących, pokazuje dobre kreacje wszystkim niezależnie od wielkości konta.
-                  </p>
-                  <p>
-                    Konkurencja na TikToku w Krakowie jest MNIEJSZA niż w Warszawie — CPC wynosi 0,5-1,5 zł (vs 2-3 zł na Instagramie czy Facebooku). To oznacza, że za takie same 2 000 zł dostajesz 2-3x więcej zasięgu i zaangażowania.
-                  </p>
-                  <p>
-                    TikTok jest kanałem trendów — jeśli Twój produkt lub usługa jest dla Gen Z lub young Millenialsów, musisz być na TikToku. To nie opcja, to konieczność w 2026.
-                  </p>
-                  <p>
-                    Kraków to hub dla e-commerce, startupów, agencji kreatywnych i usług skierowanych na młodych ludzi. Jeśli prowadzisz biznes w Krakowie i chcesz rosnąć — TikTok Ads to najszybsza droga do pierwszych klientów.
-                  </p>
-                </div>
+      {/* Stats */}
+      <FadeInView>
+        <section className="bg-gray-900 text-white py-12 px-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              { val: "1,5 mld", label: "aktywnych użytkowników TikToka miesięcznie" },
+              { val: "18-34", label: "dominująca grupa wiekowa użytkowników TikToka" },
+              { val: "60%", label: "użytkowników TikToka w Polsce to kobiety" },
+              { val: "15-60s", label: "optymalna długość reklamy wideo" },
+            ].map((s) => (
+              <div key={s.label}>
+                <div className="text-3xl font-bold text-pink-400 mb-1">{s.val}</div>
+                <div className="text-sm text-gray-400">{s.label}</div>
               </div>
-            </div>
-          </section>
-        </FadeInView>
+            ))}
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Services for Krakow */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Co robimy dla firm z Krakowa?
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Planowanie strategii TikTok</h3>
-                  <p className="text-muted-foreground">
-                    Analizujemy konkurencję w Krakowie, definiujemy grupę docelową, wybieramy typ kampanii. Wszystko dostosowane do Twojego budżetu i celu biznesowego.
-                  </p>
+      {/* Formats */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Jakie są formaty reklam na TikToku?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              TikTok to platforma wideo oferująca reklamodawcom unikalne formaty reklamowe niedostępne na Facebooku czy Google Ads. Każdy format ma inne zastosowanie, cel kampanii i sposób angażowania użytkowników.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {formats.map((f) => (
+                <div key={f.name} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{f.name}</h3>
+                  <p className="text-gray-600 text-sm">{f.desc}</p>
                 </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Tworzenie kreatywnych wideo</h3>
-                  <p className="text-muted-foreground">
-                    Profesjonalne kreacje video w formacie TikTok (9:16, short-form). Hook, pacing, sound design — wszystko zoptymalizowane dla algorytmu. A/B testy 3-5 wariantów.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Setup konta TikTok Business</h3>
-                  <p className="text-muted-foreground">
-                    Zakładamy konto TikTok Business, weryfikujemy, konfigurujemy pixel TikTok do śledzenia konwersji. Pełna automatyzacja raportowania i trackingu.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Zarządzanie kampanią 24/7</h3>
-                  <p className="text-muted-foreground">
-                    Monitorujemy kampanię codziennie, optymalizujemy budżet, testujemy nowe kreatywne. Fokus na CTR, CPC, conversion rate, ROAS.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Kolaboracja z twórcami TikToka</h3>
-                  <p className="text-muted-foreground">
-                    Jeśli chcesz pracować z influencerami lub content creatorami, koordynujemy i zarządzamy wspólpracą. Authentic content, szybkie wyniki.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Raportowanie co tydzień</h3>
-                  <p className="text-muted-foreground">
-                    Raportowanie szczegółowe — wyświetlenia, kliki, konwersje, ROAS, budżet. Analiza co działa i jakie zmiany wprowadzić w kolejnym tygodniu.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Process */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Jak prowadzimy kampanie TikTok Ads w Krakowie?
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">1</div>
+      {/* Goals */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Jakie cele zrealizujesz z kampaniami TikTok Ads w Krakowie?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              Kampania reklamowa TikTok Ads nie służy tylko budowaniu zasięgów. Możesz ją dostosować do konkretnego celu marketingowego i biznesowego swojej firmy w Krakowie.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { title: "Zasięgi i świadomość marki", desc: "Dotrzyj do setek tysięcy użytkowników TikToka w Krakowie i całej Polsce. Kampanie zasięgowe budują rozpoznawalność marki wśród nowych odbiorców, którzy jeszcze Cię nie znają." },
+                { title: "Ruch na stronie i w sklepie internetowym", desc: "Kieruj użytkowników TikToka na landing page lub sklep online. Reklamy In-Feed Ads z call-to-action generują efektywny ruch prowadzący do realne konwersje." },
+                { title: "Konwersje i sprzedaż e-commerce", desc: "Kampanie z pikselem TikTok śledzą realne konwersje — zakupy, zapisy, kontakty i zamówienia. Optymalizujemy pod konkretny koszt konwersji (CPA) i zwrot z reklamy (ROAS)." },
+                { title: "Pozyskiwanie nowych klientów", desc: "Grupy Lookalike na TikToku pozwalają dotrzeć do nowych klientów podobnych do Twoich istniejących. Skuteczny sposób skalowania sprzedaży online i bazy klientów." },
+                { title: "Remarketing i odzyskiwanie koszyków", desc: "Docieraj ponownie do użytkowników, którzy odwiedzili stronę lub porzucili koszyk. Kampanie remarketingowe TikTok Ads skutecznie odzyskują porzucone zakupy i angażują." },
+                { title: "Zaangażowanie i społeczność", desc: "Spark Ads i Hashtag Challenge angażują użytkowników do interakcji z marką — komentarze, udostępnienia, duety. Buduj lojalną społeczność wokół profilu TikTok w Krakowie." },
+              ].map((g) => (
+                <div key={g.title} className="bg-white rounded-xl p-6 border border-gray-200">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{g.title}</h3>
+                  <p className="text-gray-600 text-sm">{g.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      {/* Process */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Jak wygląda proces realizacji kampanii TikTok Ads w Krakowie?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              Skuteczna kampania reklamowa wymaga przemyślanej strategii, kreatywnych materiałów wideo i ciągłej optymalizacji pod grupy docelowe. Oto jak prowadzimy kampanie TikTok Ads dla firm z Krakowa.
+            </p>
+            <div className="space-y-6">
+              {processSteps.map((p) => (
+                <div key={p.step} className="flex gap-6 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    {p.step}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Konsultacja bezpłatna</h3>
-                    <p className="text-muted-foreground">
-                      Poznajemy Twoją firmę, produkt, cel kampanii (awareness, traffic, conversions) i docelową grupę. Jakie są Twoje oczekiwania? Jaki budżet przeznaczyasz?
-                    </p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{p.title}</h3>
+                    <p className="text-gray-600 text-sm">{p.desc}</p>
                   </div>
                 </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">2</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Research konkurencji na TikToku</h3>
-                    <p className="text-muted-foreground">
-                      Badamy konkurencję w Krakowie — jakie kampanie się rozpowszechniają? Jakie kreatywne angażują Gen Z? Jakie są słabe punkty konkurentów?
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">3</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Tworzenie kreatywnych wideo</h3>
-                    <p className="text-muted-foreground">
-                      Tworzymy 3-5 wariantów kreatywnych dostosowanych do algorytmu TikToka. Hook, pacing, sound design — wszystko do maksymalizacji zaangażowania.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">4</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Setup i uruchomienie w 48-72h</h3>
-                    <p className="text-muted-foreground">
-                      Konfigurujemy konto, pixel, budżet, targeting. Kampania uruchamia się szybko. Pierwsza grupa obserwuje reklamy już po kilku godzinach.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">5</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Optymalizacja i raportowanie</h3>
-                    <p className="text-muted-foreground">
-                      Codziennie monitorujemy wyniki, optymalizujemy budżet, testujemy nowe kreatywne. Raporty co tydzień z analizą i rekomendacjami.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Industries */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie TikTok Ads dla jakich branż w Krakowie?
-              </h2>
-              <div className="max-w-3xl mx-auto">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">E-commerce i sklepy online</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Odzież, gadżety, elektronika, kosmetyki. TikTok Shop — ideal dla wdrażania produktów i sprzedaży online.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Beauty i pielęgnacja</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Kosmetyka, zabiegi, salony. Trendy beauty na TikToku — algorytm sam znajduje zainteresowanych.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Fitness i wellness</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Siłownie, treningi online, coaching. Gen Z trenuje na TikToku — idealna grupa docelowa.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Edukacja online</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Kursy, szkoły online, nauka. Millenialsowie i Gen Z uczą się online — kanał pozyskiwania studentów.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Moda i ubrania</h3>
-                    <p className="text-sm text-muted-foreground">
-                      OOTD, trendy, lookbooki. TikTok dyktuje trendy — idealne dla marek modowych.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Restauracje i kawiarnie</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Food content, reviews, specjały. Gen Z wybiera lokale na podstawie TikTok — perfect visibility.
-                    </p>
-                  </div>
+      {/* Why Fotz */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Dlaczego wybrać agencję Fotz do prowadzenia TikTok Ads w Krakowie?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              TikTok to platforma rządząca się własnymi zasadami i algorytmami. Skuteczna reklama wymaga znajomości formatu, trendów wideo i kreatywnego podejścia do social media marketingu.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { title: "Kreacje wideo w stylu TikToka", desc: "Tworzymy materiały wideo, które wyglądają jak natywny content — nie jak tradycyjna reklama czy spot komercyjny. To klucz do efektywnych kampanii TikTok Ads z wysokim CTR." },
+                { title: "Pełna obsługa TikTok Ads Manager", desc: "Konfiguracja konta, instalacja piksela, grupy odbiorców, uruchomienie kampanii — zajmujemy się całym procesem technicznym i strategicznym od A do Z." },
+                { title: "Optymalizacja oparta na danych", desc: "Śledzimy wyniki kampanii na bieżąco i optymalizujemy stawki, targetowanie i kreacje, by maksymalizować zwrot z budżetu reklamowego i osiągać cele biznesowe." },
+                { title: "Transparentne raportowanie", desc: "Co miesiąc raport z kampanii — zasięgi, wyświetlenia, kliknięcia, konwersje i koszt pozyskania klienta. Żadnych ukrytych kosztów, pełna przejrzystość rozliczenia." },
+                { title: "Doświadczenie w e-commerce", desc: "Prowadzimy efektywne kampanie TikTok Ads dla sklepów internetowych, restauracji, salonów beauty, studiów fitness i firm usługowych z Krakowa i całej Polski." },
+                { title: "Kompleksowe doradztwo marketingowe", desc: "Pomagamy wybrać właściwy mix kanałów — TikTok Ads, Meta Ads, Google Ads, Facebook — dopasowany do Twoich celów i budżetu. Oferujemy też SEO i social media marketing." },
+              ].map((w) => (
+                <div key={w.title} className="bg-white rounded-xl p-6 border border-gray-200">
+                  <h3 className="text-base font-semibold text-gray-900 mb-2">{w.title}</h3>
+                  <p className="text-gray-600 text-sm">{w.desc}</p>
                 </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Why Fotz Studio */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Dlaczego Fotz Studio jako agencja TikTok Ads w Krakowie?
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Rozumienie algorytmu TikToka</h3>
-                  <p className="text-muted-foreground">
-                    Wiemy jak algorytm TikToka działa — jak tworzyć kreatywne, które rozpowszechniają się organicznie. Authentic content, właściwy pacing, sound design.
-                  </p>
+      {/* FAQ */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+              Najczęstsze pytania o TikTok Ads Kraków
+            </h2>
+            <div className="space-y-6">
+              {faqItems.map((item) => (
+                <div key={item.question} className="border-b border-gray-200 pb-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.question}</h3>
+                  <p className="text-gray-600">{item.answer}</p>
                 </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Profesjonalne tworzenie wideo</h3>
-                  <p className="text-muted-foreground">
-                    Nasz team tworzy kreatywne video w formacie TikTok — hook, sceny, muzyka, tekst. Każde video testujemy przed uruchomieniem na żywo.
-                  </p>
-                </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Niskie CPCs, wysoki ROAS</h3>
-                  <p className="text-muted-foreground">
-                    W Krakowie CPC TikTok to 0,5-1,5 zł — najniższe na rynku. ROAS naszych kampanii to 3:1 do 8:1 — najwyższe w branży.
-                  </p>
-                </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Doświadczenie z krakowskim rynkiem</h3>
-                  <p className="text-muted-foreground">
-                    Znamy krakowski rynek, trendy, young audience w Krakowie. Wiemy co funkcjonuje dla firm z Krakowa — do e-commerce do startupów.
-                  </p>
-                </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Transparentne rozliczenia</h3>
-                  <p className="text-muted-foreground">
-                    Raporty co tydzień, pełna przejrzystość wydatków i wyników. Wiesz dokładnie czego wydajemy każdy złoty i jaki zwracamy ROAS.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Najczęstsze pytania o TikTok Ads Kraków
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-4">
-                {faqItems.map((item, index) => (
-                  <div key={index} className="bg-background rounded-lg border border-border p-6">
-                    <h3 className="text-lg font-bold mb-3">{item.question}</h3>
-                    <p className="text-muted-foreground">{item.answer}</p>
-                  </div>
-                ))}
-              </div>
+      {/* Internal links */}
+      <FadeInView>
+        <section className="py-12 px-6 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">
+              TikTok Ads w innych miastach Polski
+            </h2>
+            <div className="flex flex-wrap gap-3 justify-center">
+              {[
+                { city: "Warszawa", path: "/performance-marketing/tiktok-ads/warszawa" },
+                { city: "Wrocław", path: "/performance-marketing/tiktok-ads/wroclaw" },
+                { city: "Poznań", path: "/performance-marketing/tiktok-ads/poznan" },
+                { city: "Gdańsk", path: "/performance-marketing/tiktok-ads/gdansk" },
+                { city: "Łódź", path: "/performance-marketing/tiktok-ads/lodz" },
+                { city: "Katowice", path: "/performance-marketing/tiktok-ads/katowice" },
+              ].map((c) => (
+                <Link
+                  key={c.city}
+                  to={c.path}
+                  className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:border-pink-500 hover:text-pink-600 text-sm transition-colors"
+                >
+                  TikTok Ads {c.city}
+                </Link>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* CTA Section */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-slate-900">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  Uruchom kampanie TikTok Ads w Krakowie
-                </h2>
-                <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj naszą strategię TikTok dla Twojej branży. Wyniki w 1-2 tygodnie.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    to="/kontakt"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition"
-                  >
-                    Bezpłatna konsultacja
-                  </Link>
-                  <Link
-                    to="/performance-marketing/tiktok-ads"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-white/10 text-white rounded-lg font-semibold hover:bg-white/20 transition border border-white/20"
-                  >
-                    Poznaj TikTok Ads
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Bottom Links */}
-        <FadeInView>
-          <section className="py-12 bg-background border-t border-border">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="text-muted-foreground mb-6">Powiązane usługi:</p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    to="/performance-marketing/tiktok-ads"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    TikTok Ads — kompleksowo
-                  </Link>
-                  <span className="text-muted-foreground hidden sm:inline">•</span>
-                  <Link
-                    to="/performance-marketing/google-ads/krakow"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    Google Ads Kraków
-                  </Link>
-                  <span className="text-muted-foreground hidden sm:inline">•</span>
-                  <Link
-                    to="/performance-marketing/instagram-ads"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    Instagram Ads
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Contact Section */}
-        <ContactSection city="Kraków" />
-      </Layout>
-    </>
+      <ContactSection />
+    </Layout>
   );
 }

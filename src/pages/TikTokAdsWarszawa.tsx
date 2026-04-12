@@ -10,438 +10,291 @@ export default function TikTokAdsWarszawa() {
   const faqItems = [
     {
       question: "Ile kosztuje TikTok Ads w Warszawie?",
-      answer: "TikTok Ads w Warszawie zaczyna się od 500 zł/miesiąc za zarządzanie kampanią (pakiet START). Dodatkowy budżet reklamowy to osobna pozycja — od 1 000 zł/miesiąc dla małych firm do 15 000+ zł/miesiąc dla e-commerce. Całkowity koszt zależy od branży, celu kampanii (awareness, traffic, conversions) i konkurencji na platformie.",
+      answer: "Koszt kampanii TikTok Ads w Warszawie zależy od budżetu reklamowego i zakresu obsługi. Minimalny budżet reklamowy to 200 zł/miesiąc, jednak dla efektywnych kampanii rekomendujemy od 1000 zł/miesiąc. Opłata za zarządzanie kampanią w agencji Fotz zaczyna się od 400 zł/miesiąc. TikTok Ads oferuje rozliczenie CPM (za 1000 wyświetleń) lub CPV (za wyświetlenie wideo).",
     },
     {
-      question: "Dla jakich branż sprawdza się TikTok Ads w Warszawie?",
-      answer: "TikTok Ads działają doskonale dla: e-commerce (odzież, dodatki, gadżety), beauty i kosmetyka, fitness i zdrowy styl życia, technologia i gry, moda, edukacja online, produkty dla Gen Z i Millenialsów. TikTok to platforma dla młodych odbiorców (13-35 lat) — idealna dla branż, których docelowy klient to Gen Z lub young Millennials.",
+      question: "Ile TikTok płaci za 1000 wyświetleń?",
+      answer: "TikTok w programie Creator Fund płaci twórcom od 0,02 do 0,04 USD za 1000 wyświetleń organicznych. W przypadku reklam TikTok Ads stawka CPM (koszt za 1000 wyświetleń) wynosi od 10 do 50 zł, w zależności od targetowania, branży i grupy docelowej. Kampanie wideo In-Feed w Warszawie osiągają CPM na poziomie 15-35 zł.",
+    },
+    {
+      question: "Jaka jest najlepsza agencja TikTok Ads w Warszawie?",
+      answer: "Dobra agencja TikTok Ads powinna posiadać udokumentowane case studies, doświadczenie w tworzeniu kreacji wideo na TikToka oraz znajomość TikTok Ads Manager. Agencja Fotz oferuje kompleksową obsługę kampanii TikTok Ads w Warszawie — od strategii, przez produkcję materiałów wideo, po optymalizację i raportowanie wyników.",
+    },
+    {
+      question: "Dla jakiej branży sprawdza się reklama na TikToku w Warszawie?",
+      answer: "Reklama na TikToku sprawdza się najlepiej w branżach e-commerce, beauty, fashion, fitness, gastronomii, rozrywce i edukacji online. W Warszawie szczególnie efektywne kampanie TikTok Ads prowadzą sklepy internetowe, restauracje, studia kosmetyczne i firmy SaaS kierujące ofertę do młodych użytkowników w wieku 18-34 lata. TikTok to platforma angażująca użytkowników mobilnych.",
+    },
+    {
+      question: "Jakie formaty reklamowe oferuje TikTok Ads?",
+      answer: "TikTok Ads oferuje kilka formatów reklamowych: In-Feed Ads (reklamy wideo w feedzie), TopView Ads (pierwsze wideo po otwarciu aplikacji), Spark Ads (promowanie organicznych postów), Branded Hashtag Challenge (kampanie angażujące z hashtagiem) oraz Brand Takeover. Najczęściej wybieranym formatem przez reklamodawców są In-Feed Ads — wyglądają jak natywny content i generują wysokie zaangażowanie.",
     },
     {
       question: "Jak długo trwa uruchomienie kampanii TikTok Ads?",
-      answer: "Kampanię TikTok Ads można uruchomić w ciągu 48-72 godzin. Obejmuje to: rejestrację konta TikTok Business, veryfikację konta (1-2 dni), tworzenie strategi kreatywnej, przygotowanie materiałów wideo, budżetowania i konfiguracji targetowania. Pierwsze wyniki są widoczne po 1-2 dniach, pełna optymalizacja trwa 2-3 tygodnie.",
+      answer: "Kampanię TikTok Ads można uruchomić w ciągu 2-5 dni roboczych. Obejmuje to: konfigurację konta TikTok Ads Manager, ustawienie piksela, targetowanie grup odbiorców, tworzenie kreacji wideo i weryfikację przez TikTok (24-48h). Pierwsze wyniki widoczne są po 3-7 dniach, pełna optymalizacja kampanii trwa 2-4 tygodnie.",
     },
     {
       question: "Czy TikTok Ads działa dla firm B2B?",
-      answer: "TikTok Ads to przede wszystkim kanał B2C dla firm skierowanych na młodych konsumentów. Dla firm B2B TikTok może działać w niszach — np. szkoły IT, kursy online, usługi dla freelancerów, aplikacje dla młodych profesjonalistów. Dla większości tradycyjnych firm B2B, Google Ads lub LinkedIn Ads są bardziej efektywne.",
+      answer: "TikTok Ads może działać dla B2B, ale wymaga innego podejścia niż B2C. Platforma jest skuteczna dla B2B w branżach SaaS, edukacji zawodowej, marketingu i rekrutacji — szczególnie gdy targetujemy menadżerów i przedsiębiorców z pokolenia Millenialsów. Dla klasycznego B2B skuteczniejszy bywa LinkedIn Ads. Chętnie doradzimy, jaka platforma będzie najlepsza.",
     },
     {
-      question: "Jaki budżet minimalny na TikTok Ads?",
-      answer: "Minimalny budżet to 500-1 000 zł/miesiąc dla testów. Rekomendujemy jednak minimum 2 000-3 000 zł/miesiąc w Warszawie, aby kampania miała wystarczająco danych do optymalizacji algorytmu TikTok. TikTok wymaga więcej danych niż Google Ads — czym wyższy budżet, tym lepsze wyniki.",
-    },
-    {
-      question: "Jak wygląda targetowanie na TikToku w Warszawie?",
-      answer: "TikTok oferuje targetowanie wiek (13-65+), płeć, lokalizacja (Warszawa, wybranie dzielnic), interesy (music, fashion, beauty, gaming, etc.), zachowania (active content creation, shopping engagement), urządzenia. TikTok algorytm automatycznie uczy się preferencji użytkowników — im lepiej zoptymalizowana kampania, tym bardziej precyzyjne pokazanie.",
-    },
-    {
-      question: "Czy agencja tworzy kreacje wideo do TikTok Ads?",
-      answer: "Tak — tworzymy profesjonalne kreacje wideo dostosowane do formatu i algorytmu TikToka (9:16, zaangażujące, szybkie sceny). Możemy również pracować z Twoimi istniejącymi materiałami i adaptować je. Każda kampania zawiera A/B testy różnych wersji wideo — testujemy messaging, style, muzykę.",
-    },
-    {
-      question: "Jakie formaty reklamowe oferuje TikTok?",
-      answer: "TikTok oferuje: In-Feed Ads (reklamy w feed), Brand Takeover (przejęcie kanału startowego, premium), TopView (najwyżej w feed, premium), Hashtag Challenges (zaangażowanie użytkowników), Creator Marketplace (współpraca z influencerami TikTok). Dla większości firm START działają In-Feed Ads z budżetem 2 000-5 000 zł/miesiąc.",
+      question: "Dlaczego kampania TikTok Ads nie przynosi wyników?",
+      answer: "Najczęstsze przyczyny nieefektywnych kampanii TikTok Ads to: zbyt mały budżet reklamowy, kreacje wideo niespójne z formatem platformy (zbyt reklamowe, brak TikTok feel), złe targetowanie grup odbiorców, brak piksela TikTok na stronie lub nieskuteczna strona docelowa. Agencja Fotz przeprowadza bezpłatny audit i wskazuje przyczyny słabych wyników kampanii.",
     },
   ];
 
+  const formats = [
+    { name: "In-Feed Ads", desc: "Reklamy wideo pojawiające się naturalnie w feedzie ForYou użytkowników TikToka. Najczęściej wybierany format reklamowy — wygląda jak organiczny content, co angażuje użytkowników i zwiększa CTR." },
+    { name: "Spark Ads", desc: "Promowanie istniejących organicznych postów z profilu marki lub współpracujących twórców. Idealne gdy masz content, który organicznie się sprawdza — Spark Ads wzmacnia jego zasięgi i wyświetlenia." },
+    { name: "TopView Ads", desc: "Pierwsze wideo wyświetlane użytkownikowi po otwarciu aplikacji TikTok. Format gwarantujący maksymalną widoczność i świadomość marki — idealny na duże kampanie wizerunkowe." },
+    { name: "Hashtag Challenge", desc: "Kampania angażująca użytkowników do tworzenia własnych filmów z brandowanym hashtagiem. Generuje ogromne zasięgi organiczne i buduje społeczność wokół marki." },
+    { name: "Brand Takeover", desc: "Pełnoekranowa reklama wideo lub graficzna przy uruchomieniu aplikacji. Format ekskluzywny — jeden reklamodawca dziennie na kategorię, wysoka świadomość marki." },
+    { name: "Collection Ads", desc: "Format łączący wideo z galerią produktów — otwiera mini-sklep bezpośrednio w TikToku. Idealny dla e-commerce i sklepów internetowych skracających ścieżkę zakupową." },
+  ];
+
+  const processSteps = [
+    { step: "01", title: "Analiza i strategia kampanii", desc: "Badamy grupę docelową, analizujemy konkurencję, definiujemy cele kampanii (zasięg, ruch, konwersja) i budżet. Określamy, które formaty reklamowe i strategie marketingowe będą najskuteczniejsze dla Twojej branży w Warszawie." },
+    { step: "02", title: "Konfiguracja TikTok Ads Manager", desc: "Konfigurujemy konto reklamowe, instalujemy piksel TikTok, ustawiamy zdarzenia konwersji i tworzymy precyzyjne grupy odbiorców — remarketing, lookalike, targetowanie demograficzne i zainteresowania." },
+    { step: "03", title: "Produkcja kreacji wideo", desc: "Tworzymy lub adaptujemy materiały wideo zgodne z formatem TikToka — krótkie, dynamiczne, z muzyką. Kreacje muszą wyglądać jak natywny content, nie jak tradycyjna reklama." },
+    { step: "04", title: "Uruchomienie kampanii i monitoring", desc: "Uruchamiamy reklamy i śledzimy wyniki w czasie rzeczywistym — CPM, CTR, koszt konwersji, zasięgi. Optymalizujemy stawki, grupy docelowe i kreacje wideo na podstawie danych z TikTok Ads Manager." },
+    { step: "05", title: "Raportowanie wyników", desc: "Co miesiąc dostarczamy przejrzysty raport z wynikami kampanii — zasięgi, wyświetlenia, kliknięcia, konwersje i ROI. Pełna transparentność rozliczenia to nasz standard pracy z każdym klientem." },
+  ];
+
   return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Reklamy TikTok Ads Warszawa — agencja kampanii TikTok | Fotz.pl"
-          description="TikTok Ads Warszawa — agencja Fotz.pl. Kampanie TikTok dla firm z Warszawy, targetowanie Gen Z i Millenialsów, kreacje wideo, rozliczenie za wyniki. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/tiktok-ads/warszawa"
-          keywords="tiktok ads warszawa, agencja tiktok ads, kampanie tiktok, reklamy na tiktoku"
-        />
+    <Layout>
+      <SEOHead
+        title="TikTok Ads Warszawa — agencja kampanii reklamowych TikTok | Fotz.pl"
+        description="Reklamy TikTok Ads Warszawa — agencja Fotz.pl. Kampanie TikTok dla firm: In-Feed Ads, Spark Ads, TopView. Targetowanie Gen Z i Millenialsów, kreacje wideo, optymalizacja. Bezpłatna konsultacja!"
+        canonical="https://fotz.pl/performance-marketing/tiktok-ads/warszawa"
+        keywords="tiktok ads warszawa, reklamy tiktok warszawa, agencja tiktok ads, kampanie tiktok warszawa"
+      />
 
-        <ServiceSchema
-          name="Kampanie TikTok Ads Warszawa"
-          description="Tworzenie i optymalizacja kampanii TikTok Ads dla firm z Warszawy. Agencja Fotz.pl — specjaliści TikTok Ads i kreatywne wideo."
-          provider="Fotz Studio"
-          areaServed="Warszawa"
-        />
+      <ServiceSchema
+        name="Kampanie TikTok Ads Warszawa"
+        description="Tworzenie i optymalizacja kampanii reklamowych TikTok Ads dla firm z Warszawy. Agencja Fotz — kreacje wideo, targetowanie, pełna obsługa kampanii."
+        provider="Fotz Studio"
+        areaServed="Warszawa"
+      />
 
-        <BreadcrumbSchema
-          items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
-            { name: "TikTok Ads Warszawa", url: "https://fotz.pl/performance-marketing/tiktok-ads/warszawa" },
-          ]}
-        />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
+          { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
+          { name: "TikTok Ads Warszawa", url: "https://fotz.pl/performance-marketing/tiktok-ads/warszawa" },
+        ]}
+      />
 
-        <FAQSchema items={faqItems} />
+      <FAQSchema items={faqItems} />
 
-        {/* Breadcrumbs */}
-        <PageBreadcrumbs
-          items={[
-            { label: "Strona główna", path: "/" },
-            { label: "Kampanie reklamowe", path: "/performance-marketing" },
-            { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
-            { label: "Warszawa", path: "/performance-marketing/tiktok-ads/warszawa" },
-          ]}
-        />
+      <PageBreadcrumbs
+        items={[
+          { label: "Strona główna", path: "/" },
+          { label: "Kampanie reklamowe", path: "/performance-marketing" },
+          { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
+          { label: "Warszawa", path: "/performance-marketing/tiktok-ads/warszawa" },
+        ]}
+      />
 
-        {/* Hero Section */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-slate-950 via-purple-950 to-pink-900 overflow-hidden">
-          <div className="absolute top-1/4 right-1/3 w-96 h-96 rounded-full bg-pink-500/10 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/4 w-64 h-64 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
-
-          <div className="container px-4 relative z-10">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                  Reklamy TikTok Ads Warszawa
-                </h1>
-                <p className="text-xl md:text-2xl text-pink-100 mb-8">
-                  Kampanie TikTok dla Gen Z i Millenialsów. Kreacje wideo, targetowanie precyzyjne, wyniki w tygodniu.
-                </p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">500 zł</div>
-                  <div className="text-sm text-pink-100">Kampanie od</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">48-72h</div>
-                  <div className="text-sm text-pink-100">Uruchomienie</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Gen Z</div>
-                  <div className="text-sm text-pink-100">Docelowa grupa</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 p-6 text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-pink-300 mb-2">Video</div>
-                  <div className="text-sm text-pink-100">Kreatywne</div>
-                </div>
-              </div>
+      {/* Hero */}
+      <FadeInView>
+        <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="inline-block bg-pink-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              Agencja TikTok Ads Warszawa
+            </span>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              TikTok Ads Warszawa — kampanie reklamowe, które robią zasięgi i sprzedają
+            </h1>
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              Reklama na TikToku to dziś jeden z najskuteczniejszych kanałów docierania do młodych użytkowników w Warszawie. Agencja Fotz tworzy kampanie TikTok Ads, które angażują, budują świadomość marki i generują realne konwersje — od In-Feed Ads po Spark Ads i Hashtag Challenge.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/kontakt" className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+                Bezpłatna konsultacja
+              </Link>
+              <Link to="/performance-marketing/tiktok-ads" className="border border-gray-500 hover:border-white text-gray-300 hover:text-white font-semibold px-8 py-3 rounded-lg transition-colors">
+                Poznaj TikTok Ads
+              </Link>
             </div>
           </div>
         </section>
+      </FadeInView>
 
-        {/* Why TikTok Ads in Warsaw */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">
-                  TikTok Ads Warszawa — dlaczego warto?
-                </h2>
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p>
-                    Warszawa to 2 miliony mieszkańców, największe miasto w Polsce z największą populacją Gen Z i young Millenialsów. TikTok w Polsce ma 8+ milionów użytkowników aktywnych — dla firm skierowanych na młodych ludzi to MUSI być channel.
-                  </p>
-                  <p>
-                    Algorytm TikToka to geniusz — nie obchodzi go liczba obserwujących, Twoja poprzednia zawartość, ani historia konwersji. Algorytm uczy się NATYCHMIAST. Świetna kreacja może zostać pokazana milionom osób niezależnie od tego, czy masz 10 czy 100 000 followersów.
-                  </p>
-                  <p>
-                    Koszt zasięgu na TikToku jest ZNACZNIE niższy niż na Instagramie czy Facebooku. W Warszawie, gdzie konkurencja jest duża ale TikTok jeszcze rosnącym kanałem, CPC wynosi 0,3-1,5 zł — czyli 5-10x taniej niż Google Ads.
-                  </p>
-                  <p>
-                    TikTok to kanał dla e-commerce, Beauty, Mody, Tech, Edukacji online i każdej branży, gdzie Twoim klientem są osoby do 35 lat. Jeśli masz produkt lub usługę dla tego segmentu — TikTok Ads to obowiązkowy kanał w 2026.
-                  </p>
-                </div>
+      {/* Stats */}
+      <FadeInView>
+        <section className="bg-gray-900 text-white py-12 px-6">
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {[
+              { val: "1,5 mld", label: "aktywnych użytkowników TikToka miesięcznie" },
+              { val: "18-34", label: "dominująca grupa wiekowa użytkowników TikToka" },
+              { val: "60%", label: "użytkowników TikToka w Polsce to kobiety" },
+              { val: "15-60s", label: "optymalna długość reklamy wideo" },
+            ].map((s) => (
+              <div key={s.label}>
+                <div className="text-3xl font-bold text-pink-400 mb-1">{s.val}</div>
+                <div className="text-sm text-gray-400">{s.label}</div>
               </div>
-            </div>
-          </section>
-        </FadeInView>
+            ))}
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Services for Warsaw */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Co robimy dla firm z Warszawy?
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Strategia i planowanie kampanii</h3>
-                  <p className="text-muted-foreground">
-                    Analizujemy konkurencję na TikToku, definiujemy docelową grupę, wybieramy typ kampanii (awareness, traffic, conversions). Wszystko dostosowane do Twojego budżetu i celu.
-                  </p>
+      {/* Formats */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Jakie są formaty reklam na TikToku?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              TikTok to platforma wideo oferująca reklamodawcom unikalne formaty reklamowe niedostępne na Facebooku czy Google Ads. Każdy format ma inne zastosowanie i cel kampanii.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {formats.map((f) => (
+                <div key={f.name} className="border border-gray-200 rounded-xl p-6 hover:shadow-md transition-shadow">
+                  <h3 className="text-lg font-bold text-gray-900 mb-2">{f.name}</h3>
+                  <p className="text-gray-600 text-sm">{f.desc}</p>
                 </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Tworzenie kreatywnych wideo</h3>
-                  <p className="text-muted-foreground">
-                    Tworzymy profesjonalne kreacje video w formacie TikTok (9:16). Zaangażujące hook, szybkie sceny, call-to-action. Każda kampania zawiera 3-5 wariantów do A/B testów.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Setup i konfiguracja konta</h3>
-                  <p className="text-muted-foreground">
-                    Zakładamy konto TikTok Business, weryfikujemy, konfigurujemy pixel TikTok do trackingu konwersji. Wszystko do pełnej automatyzacji i raportowania.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Zarządzanie kampanią i optymalizacja</h3>
-                  <p className="text-muted-foreground">
-                    Co dzień monitorujemy kampanię, optymalizujemy budżet, testujesz nowe kreatywne. Skupiamy się na metrykach: CTR, CPC, conversion rate, ROAS.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Influencer collaboration</h3>
-                  <p className="text-muted-foreground">
-                    Jeśli chcesz pracować z twórcami TikToka (influencerami, content creatorami), koordynujemy i zarządzamy współpracą. Authentic content, szybkie wyniki.
-                  </p>
-                </div>
-                <div className="bg-background rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-3">Raportowanie i analityka</h3>
-                  <p className="text-muted-foreground">
-                    Raportowanie co tydzień lub co miesiąc. Wyświetlenia, kliki, konwersje, koszty. Analiza dokładnie co działa i co zmienić w następnym tygodniu.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Process */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Jak prowadzimy kampanie TikTok Ads w Warszawie?
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">1</div>
+      {/* Goals */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Jakie cele zrealizujesz z kampaniami TikTok Ads w Warszawie?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              Kampania reklamowa TikTok Ads nie służy tylko budowaniu zasięgów. Możesz ją dostosować do konkretnego celu marketingowego swojej firmy.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { title: "Zasięgi i świadomość marki", desc: "Dotrzyj do setek tysięcy użytkowników TikToka w Warszawie. Kampanie zasięgowe budują rozpoznawalność marki wśród nowych odbiorców, którzy jeszcze Cię nie znają." },
+                { title: "Ruch na stronie i w sklepie internetowym", desc: "Kieruj użytkowników TikToka na landing page lub sklep online. Reklamy In-Feed Ads z CTA generują efektywny ruch prowadzący do konwersji." },
+                { title: "Konwersje i sprzedaż e-commerce", desc: "Kampanie z pikselem TikTok śledzą realne konwersje — zakupy, zapisy, kontakty. Optymalizujemy pod konkretny koszt konwersji (CPA) i zwrot z reklamy (ROAS)." },
+                { title: "Pozyskiwanie nowych klientów", desc: "Grupy Lookalike na TikToku pozwalają dotrzeć do nowych klientów podobnych do Twoich obecnych. Skuteczny sposób skalowania sprzedaży online." },
+                { title: "Remarketing i odzyskiwanie koszyków", desc: "Docieraj ponownie do użytkowników, którzy odwiedzili stronę lub porzucili koszyk. Kampanie remarketingowe TikTok Ads skutecznie odzyskują porzucone zakupy." },
+                { title: "Zaangażowanie i społeczność", desc: "Spark Ads i Hashtag Challenge angażują użytkowników do interakcji z marką — komentarze, udostępnienia, duety. Buduj lojalną społeczność wokół profilu TikTok." },
+              ].map((g) => (
+                <div key={g.title} className="bg-white rounded-xl p-6 border border-gray-200">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{g.title}</h3>
+                  <p className="text-gray-600 text-sm">{g.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </FadeInView>
+
+      {/* Process */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Jak wygląda proces realizacji kampanii TikTok Ads w Warszawie?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              Skuteczna kampania reklamowa wymaga przemyślanej strategii, kreatywnych materiałów wideo i ciągłej optymalizacji. Oto jak prowadzimy kampanie TikTok Ads dla firm z Warszawy.
+            </p>
+            <div className="space-y-6">
+              {processSteps.map((p) => (
+                <div key={p.step} className="flex gap-6 items-start">
+                  <div className="flex-shrink-0 w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                    {p.step}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">Konsultacja i brief</h3>
-                    <p className="text-muted-foreground">
-                      Poznajemy Twoją firmę, produkt, cel kampanii i docelową grupę. Jakich wyników oczekujesz? Jaki budżet chcesz przeznaczyć? Czy masz już kreacje video?
-                    </p>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">{p.title}</h3>
+                    <p className="text-gray-600 text-sm">{p.desc}</p>
                   </div>
                 </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">2</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Strategia i research konkurencji</h3>
-                    <p className="text-muted-foreground">
-                      Badamy konkurencję na TikToku — jakie kampanie działają w Twojej branży? Jakie kreatywne formaty angażują Gen Z? Co działa w Warszawie?
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">3</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Tworzenie kreatywnych wideo</h3>
-                    <p className="text-muted-foreground">
-                      Tworzymy 3-5 wariantów kreatywnych dostosowanych do algorytmu TikToka. Każdy wariant testujemy — zaangażowanie, CTR, conversion rate.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">4</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Setup i uruchomienie</h3>
-                    <p className="text-muted-foreground">
-                      Konfigurujemy konto TikTok Business, pixel do trackingu, budżet i targeting. Kampania uruchamia się w ciągu 48-72 godzin.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-bold">5</div>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">Monitorowanie i optymalizacja</h3>
-                    <p className="text-muted-foreground">
-                      Co dzień sprawdzamy wyniki, optymalizujemy budżet, testujemy nowe kreatywne. Raporty co tydzień z analizą i rekomendacjami.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Industries */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Kampanie TikTok Ads dla jakich branż w Warszawie?
-              </h2>
-              <div className="max-w-3xl mx-auto">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">E-commerce i sklepy online</h3>
-                    <p className="text-sm text-muted-foreground">
-                      TikTok Shop, performance campaigns, video product showcases. Idealne dla odzieży, dodatków, gadżetów, kosmetyków.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Beauty i kosmetyka</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Makijaż, pielęgnacja, zabiegi. TikTok ma największą populację zainteresowaną beauty — algorytm sam je znajdzie.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Fitness i wellness</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Siłownie, coaching online, suplementy. Gen Z trenuje na TikToku — idealna grupa docelowa.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Edukacja online</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Kursy, szkoły online, nauka języków. Millenialsowie i Gen Z uczą się online — TikTok to kanał pozyskiwania studentów.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Moda i ubrania</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Trendy, lookbooki, OOTD. TikTok dyktuje trendy mody — musiałeś być tam, gdzie są Twoi klienci.
-                    </p>
-                  </div>
-                  <div className="bg-background rounded-lg p-4 border border-border">
-                    <h3 className="font-bold mb-2">Technologia i gry</h3>
-                    <p className="text-sm text-muted-foreground">
-                      App campaigns, game marketing, tech gadgets. Gen Z to gamery i tech enthusiaści — TikTok to ich główny kanał.
-                    </p>
-                  </div>
+      {/* Why Fotz */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+              Dlaczego wybrać agencję Fotz do prowadzenia TikTok Ads w Warszawie?
+            </h2>
+            <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              TikTok to platforma rządząca się własnymi zasadami. Skuteczna reklama wymaga znajomości formatu, trendów i kreatywnego podejścia do wideo marketingu społecznościowego.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { title: "Kreacje wideo w stylu TikToka", desc: "Tworzymy materiały wideo, które wyglądają jak natywny content — nie jak tradycyjna reklama. To klucz do efektywnych kampanii TikTok Ads z wysokim CTR." },
+                { title: "Pełna obsługa TikTok Ads Manager", desc: "Konfiguracja konta, piksel, grupy odbiorców, kampanie — zajmujemy się całym procesem technicznym i strategicznym od A do Z." },
+                { title: "Optymalizacja oparta na danych", desc: "Śledzimy wyniki kampanii na bieżąco i optymalizujemy stawki, targetowanie i kreacje, by maksymalizować zwrot z budżetu reklamowego." },
+                { title: "Transparentne raportowanie", desc: "Co miesiąc raport z kampanii — zasięgi, wyświetlenia, kliknięcia, konwersje i koszt pozyskania klienta. Żadnych ukrytych kosztów i opłat." },
+                { title: "Doświadczenie w e-commerce", desc: "Prowadzimy efektywne kampanie TikTok Ads dla sklepów internetowych, restauracji, salonów beauty i firm usługowych z Warszawy i całej Polski." },
+                { title: "Kompleksowe doradztwo", desc: "Pomagamy wybrać właściwy mix kanałów — TikTok Ads, Meta Ads, Google Ads — dopasowany do Twoich celów i budżetu. Oferujemy SEO i social media." },
+              ].map((w) => (
+                <div key={w.title} className="bg-white rounded-xl p-6 border border-gray-200">
+                  <h3 className="text-base font-semibold text-gray-900 mb-2">{w.title}</h3>
+                  <p className="text-gray-600 text-sm">{w.desc}</p>
                 </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* Why Fotz Studio */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-background">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Dlaczego Fotz Studio jako agencja TikTok Ads w Warszawie?
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-6">
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Doświadczenie z Gen Z i algorytmem TikToka</h3>
-                  <p className="text-muted-foreground">
-                    Rozumiemy kulturę, trendy i memy Gen Z. Wiemy jak tworzyć authentic content, który algorytm polubi i rozpropaguje.
-                  </p>
+      {/* FAQ */}
+      <FadeInView>
+        <section className="py-16 px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+              Najczęstsze pytania o TikTok Ads Warszawa
+            </h2>
+            <div className="space-y-6">
+              {faqItems.map((item) => (
+                <div key={item.question} className="border-b border-gray-200 pb-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.question}</h3>
+                  <p className="text-gray-600">{item.answer}</p>
                 </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Tworzenie profesjonalnych kreatywnych wideo</h3>
-                  <p className="text-muted-foreground">
-                    Nasz team tworzy kreatywne video w formacie TikTok — hook, pacing, sound design. Każde video jest testowane na rzeczywistych audytoriach.
-                  </p>
-                </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Niskie CPCs i wysoki ROAS</h3>
-                  <p className="text-muted-foreground">
-                    W Warszawie średni CPC TikTok to 0,5-1,5 zł. Dzięki dobrym kreatywnym i targetowaniu, ROAS naszych kampanii wynosi 3:1 do 8:1.
-                  </p>
-                </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Wsparcie dla startupów i małych firm</h3>
-                  <p className="text-muted-foreground">
-                    TikTok Ads to kanał do budowania marki z małym budżetem. Pomagamy startupom i małym firmom z Warszawy rosnąć.
-                  </p>
-                </div>
-                <div className="bg-secondary/30 rounded-lg border border-border p-6">
-                  <h3 className="text-xl font-bold mb-2">Raportowanie i transparentność</h3>
-                  <p className="text-muted-foreground">
-                    Raporty co tydzień, pełna transparentność wydatków, wyjaśnianie każdej metryki. Wiesz dokładnie, co się dzieje z Twoim budżetem.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* FAQ */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-secondary/30">
-            <div className="container px-4">
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Najczęstsze pytania o TikTok Ads Warszawa
-              </h2>
-              <div className="max-w-3xl mx-auto space-y-4">
-                {faqItems.map((item, index) => (
-                  <div key={index} className="bg-background rounded-lg border border-border p-6">
-                    <h3 className="text-lg font-bold mb-3">{item.question}</h3>
-                    <p className="text-muted-foreground">{item.answer}</p>
-                  </div>
-                ))}
-              </div>
+      {/* Internal links */}
+      <FadeInView>
+        <section className="py-12 px-6 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-xl font-bold text-gray-900 mb-6 text-center">
+              TikTok Ads w innych miastach Polski
+            </h2>
+            <div className="flex flex-wrap gap-3 justify-center">
+              {[
+                { city: "Kraków", path: "/performance-marketing/tiktok-ads/krakow" },
+                { city: "Wrocław", path: "/performance-marketing/tiktok-ads/wroclaw" },
+                { city: "Poznań", path: "/performance-marketing/tiktok-ads/poznan" },
+                { city: "Gdańsk", path: "/performance-marketing/tiktok-ads/gdansk" },
+                { city: "Łódź", path: "/performance-marketing/tiktok-ads/lodz" },
+                { city: "Katowice", path: "/performance-marketing/tiktok-ads/katowice" },
+              ].map((c) => (
+                <Link
+                  key={c.city}
+                  to={c.path}
+                  className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:border-pink-500 hover:text-pink-600 text-sm transition-colors"
+                >
+                  TikTok Ads {c.city}
+                </Link>
+              ))}
             </div>
-          </section>
-        </FadeInView>
+          </div>
+        </section>
+      </FadeInView>
 
-        {/* CTA Section */}
-        <FadeInView>
-          <section className="py-16 md:py-24 bg-slate-900">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-                  Uruchom kampanie TikTok Ads w Warszawie
-                </h2>
-                <p className="text-lg text-slate-300 mb-10">
-                  Bezpłatna konsultacja bez zobowiązań. Poznaj strategię TikTok dla Twojej branży. Wyniki w tygodniu.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    to="/kontakt"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90 transition"
-                  >
-                    Bezpłatna konsultacja
-                  </Link>
-                  <Link
-                    to="/performance-marketing/tiktok-ads"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-white/10 text-white rounded-lg font-semibold hover:bg-white/20 transition border border-white/20"
-                  >
-                    Poznaj TikTok Ads
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Bottom Links */}
-        <FadeInView>
-          <section className="py-12 bg-background border-t border-border">
-            <div className="container px-4">
-              <div className="max-w-3xl mx-auto text-center">
-                <p className="text-muted-foreground mb-6">Powiązane usługi:</p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    to="/performance-marketing/tiktok-ads"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    TikTok Ads — kompleksowo
-                  </Link>
-                  <span className="text-muted-foreground hidden sm:inline">•</span>
-                  <Link
-                    to="/performance-marketing/google-ads"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    Google Ads
-                  </Link>
-                  <span className="text-muted-foreground hidden sm:inline">•</span>
-                  <Link
-                    to="/performance-marketing/instagram-ads"
-                    className="text-primary hover:underline font-semibold"
-                  >
-                    Instagram Ads
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
-        </FadeInView>
-
-        {/* Contact Section */}
-        <ContactSection city="Warszawa" />
-      </Layout>
-    </>
+      <ContactSection />
+    </Layout>
   );
 }
