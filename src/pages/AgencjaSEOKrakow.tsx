@@ -23,6 +23,7 @@ export default function AgencjaSEOKrakow() {
         title="Agencja SEO Kraków | Pozycjonowanie stron Kraków | fotz.pl"
         description="Agencja SEO Kraków — pozycjonujemy strony firm krakowskich. Wyniki Top 10 Google. Sprawdź pakiety SEO i zacznij dominować lokalnie!"
         canonical="https://fotz.pl/agencja-seo-krakow"
+        keywords="agencja SEO Kraków, pozycjonowanie Kraków, SEO Kraków, agencja seo kraków cena, pozycjonowanie stron kraków, seo dla firm kraków, audyt seo kraków, optymalizacja seo kraków, pozycjonowanie lokalne kraków, link building kraków, seo techniczne kraków, agencja marketingowa kraków"
       />
       <ServiceSchema
         name="Agencja SEO Kraków"
@@ -45,10 +46,10 @@ export default function AgencjaSEOKrakow() {
               Agencja SEO Kraków — pozycjonowanie stron dla firm z Krakowa
             </h1>
             <p className="text-xl text-gray-700 mb-4">
-              Dominuj w wyszukiwarce Google dla słów kluczowych w Krakowie
+              Agencja SEO Kraków — pozycjonowanie stron w Google dla firm z Krakowa i Małopolski. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne w Krakowie.
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              Specjalizujemy się w SEO dla firm krakowskich. Nasze strategie oparte na danych gwarantują wyniki w Top 10 Google.
+              Specjalizujemy się w SEO dla firm krakowskich — od audytu SEO, przez SEO techniczne (Core Web Vitals), po strategię fraz kluczowych. Wyniki w Top 10 Google, przejrzyste raporty miesięczne.
             </p>
 
             {/* Kraków Stats */}

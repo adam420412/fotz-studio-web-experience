@@ -116,7 +116,7 @@ export default function AgencjaSEOWroclaw() {
           title="Agencja SEO Wrocław | Pozycjonowanie stron Wrocław | fotz.pl"
           description="Agencja SEO Wrocław — pozycjonujemy strony firm z Wrocławia. Top 10 Google. Sprawdź pakiety SEO dla firm wrocławskich!"
           canonical="https://fotz.pl/agencja-seo-wroclaw"
-          keywords="agencja SEO Wrocław, pozycjonowanie Wrocław, SEO Wrocław, marketing Wrocław, usługi SEO"
+          keywords="agencja SEO Wrocław, pozycjonowanie Wrocław, SEO Wrocław, marketing Wrocław, usługi SEO, pozycjonowanie stron Wrocław, seo dla firm wrocław, audyt seo wrocław, optymalizacja seo wrocław, pozycjonowanie lokalne Wrocław, link building wrocław, seo techniczne wrocław, agencja seo dolny śląsk"
         />
 
         <ServiceSchema
@@ -153,7 +153,7 @@ export default function AgencjaSEOWroclaw() {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-                Wrocław to dynamiczny rynek z silną sceną IT, startupów i biznesu. Firmy wrocławskie potrzebują agencji, która rozumie konkurencyjność lokального rynku i może wynieść je do top 10 Google.
+                Wrocław to dynamiczny rynek z silną sceną IT, startupów i biznesu. Agencja SEO Wrocław Fotz Studio — audyt SEO, pozycjonowanie stron Wrocław, SEO techniczne i link building. Firmy wrocławskie osiągają Top 10 Google dzięki naszym strategiom opartym na danych.
               </p>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-4xl mx-auto">

@@ -160,7 +160,7 @@ export default function AgencjaSEOWarszawa() {
         title="Agencja SEO Warszawa — pozycjonowanie stron dla firm | Fotz"
         description="Agencja SEO Warszawa. Fotz — pozycjonowanie stron w Google dla firm z Warszawy. SEO, technical audit, link building. Bezpłatna analiza strony!"
         canonical="https://fotz.pl/agencja-seo-warszawa"
-        keywords="agencja SEO Warszawa, pozycjonowanie Warszawa, SEO dla firm, Google ranking, optymalizacja SEO, link building"
+        keywords="agencja SEO Warszawa, pozycjonowanie Warszawa, SEO dla firm warszawa, Google ranking, optymalizacja SEO, link building warszawa, pozycjonowanie stron warszawa, audyt seo warszawa, seo techniczne warszawa, pozycjonowanie lokalne warszawa, usługi seo warszawa, agencja pozycjonowania warszawa, seo warszawa cena"
       />
 
       <ServiceSchema
@@ -189,7 +189,7 @@ export default function AgencjaSEOWarszawa() {
                 450 firm w Warszawie szuka <strong>"agencja seo warszawa"</strong> każdego miesiąca. Czy już się tam pojawisz?
               </p>
               <p className="text-lg text-blue-200 mb-8">
-                Warszawa to konkurencyjny rynek. CPL w Google Ads: 15–50 PLN. SEO to najlepszy ROI — jedna konwersja to 5–50k PLN. Potrzebujesz agencji, która rozumie warszawski rynek.
+                Warszawa to najbardziej konkurencyjny rynek SEO w Polsce. Agencja SEO Warszawa Fotz Studio — audyt SEO, pozycjonowanie lokalne, SEO techniczne (Core Web Vitals) i link building. CPL w Google Ads: 15–50 PLN. SEO to najlepszy ROI — jedna konwersja to 5–50k PLN.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
