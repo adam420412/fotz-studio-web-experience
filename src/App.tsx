@@ -1331,6 +1331,11 @@ const PozycjonowanieWalbrzych = lazy(() => import("./pages/PozycjonowanieWalbrzy
 const BlogKosztMarketinguInternetowego = lazy(() => import("./pages/BlogKosztMarketinguInternetowego"));
 const PozycjonowanieElblag = lazy(() => import("./pages/PozycjonowanieElblag"));
 
+// Wave 234 pages
+const BlogKosztLogo = lazy(() => import("./pages/BlogKosztLogo"));
+const AgencjaMarketingowaLegnica = lazy(() => import("./pages/AgencjaMarketingowaLegnica"));
+const BlogSklepInternetowyNaWlasnej = lazy(() => import("./pages/BlogSklepInternetowyNaWlasnej"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2353,6 +2358,9 @@ const App = () => (
                 <Route path="/pozycjonowanie/walbrzych" element={<PozycjonowanieWalbrzych />} />
                 <Route path="/blog/koszt-marketingu-internetowego" element={<BlogKosztMarketinguInternetowego />} />
                 <Route path="/pozycjonowanie/elblag" element={<PozycjonowanieElblag />} />
+                <Route path="/blog/ile-kosztuje-logo" element={<BlogKosztLogo />} />
+                <Route path="/agencja-marketingowa/legnica" element={<AgencjaMarketingowaLegnica />} />
+                <Route path="/blog/sklep-internetowy-na-wlasnej-domenie" element={<BlogSklepInternetowyNaWlasnej />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />

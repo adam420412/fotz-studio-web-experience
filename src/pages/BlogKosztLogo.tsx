@@ -390,7 +390,7 @@ export default function BlogKosztLogo() {
                   </p>
                 </div>
                 <div className="bg-card rounded-xl p-6 border border-border">
-                  <h4 className="font-bold mb-2">Czy mogę prosić o logo w innym stylu, jeśli obecne mi się nie podoba?</h3>
+                  <h4 className="font-bold mb-2">Czy mogę prosić o logo w innym stylu, jeśli obecne mi się nie podoba?</h4>
                   <p className="text-sm text-muted-foreground">
                     Zależy od umowy. Zazwyczaj masz 2-3 rundy poprawek w ramach pakietu. Jeśli chcesz całkowicie inny style po finalizacji - to dodatkowa opłata. Dobrze jest ustalić style reference na początku.
                   </p>
