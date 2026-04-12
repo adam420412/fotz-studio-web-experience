@@ -1390,10 +1390,13 @@ const AgencjaMarketingowaKoszalin = lazy(() => import("./pages/AgencjaMarketingo
 const BlogMarketingDlaDeweloperow = lazy(() => import("./pages/BlogMarketingDlaDeweloperow"));
 const BlogPozycjonowanieGoogleMaps = lazy(() => import("./pages/BlogPozycjonowanieGoogleMaps"));
 
-// Wave 251 blog pages
+// Wave 251-252 blog pages
 const BlogReklamaFacebookVsGoogle = lazy(() => import("./pages/BlogReklamaFacebookVsGoogle"));
 const BlogSEODlaMalychFirm = lazy(() => import("./pages/BlogSEODlaMalychFirm"));
 const BlogTrendyEcommerce2027 = lazy(() => import("./pages/BlogTrendyEcommerce2027"));
+const BlogMarketingB2BPoradnik = lazy(() => import("./pages/BlogMarketingB2BPoradnik"));
+const BlogWizualizacje3DEcommerce = lazy(() => import("./pages/BlogWizualizacje3DEcommerce"));
+const BlogVideoMarketingDlaFirm = lazy(() => import("./pages/BlogVideoMarketingDlaFirm"));
 
 // Wave 250 new city (Gdynia - not previously declared)
 const AgencjaMarketingowaGdynia = lazy(() => import("./pages/AgencjaMarketingowaGdynia"));
@@ -2466,10 +2469,13 @@ const App = () => (
                 <Route path="/agencja-marketingowa/lublin" element={<AgencjaMarketingowaLublin />} />
                 <Route path="/agencja-marketingowa/rzeszow" element={<AgencjaMarketingowaRzeszow />} />
                 <Route path="/agencja-marketingowa/gdynia" element={<AgencjaMarketingowaGdynia />} />
-                {/* Wave 251 blog pages */}
+                {/* Wave 251-252 blog pages */}
                 <Route path="/blog/reklama-facebook-vs-google" element={<BlogReklamaFacebookVsGoogle />} />
                 <Route path="/blog/seo-dla-malych-firm" element={<BlogSEODlaMalychFirm />} />
                 <Route path="/blog/trendy-ecommerce-2027" element={<BlogTrendyEcommerce2027 />} />
+                <Route path="/blog/marketing-b2b-poradnik" element={<BlogMarketingB2BPoradnik />} />
+                <Route path="/blog/wizualizacje-3d-ecommerce" element={<BlogWizualizacje3DEcommerce />} />
+                <Route path="/blog/video-marketing-dla-firm" element={<BlogVideoMarketingDlaFirm />} />
                 <Route path="/blog/pozycjonowanie-google-maps" element={<BlogPozycjonowanieGoogleMaps />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
