@@ -159,6 +159,7 @@ export default function AgencjaMarketingowaKalisz() {
           title="Agencja Marketingowa Kalisz — SEO, Google Ads, Social Media | Fotz Studio"
           description="Agencja marketingowa w Kaliszu. Profesjonalne usługi SEO lokalne, Google Ads, Facebook Ads, zarządzanie social media i tworzenie stron dla firm z Kalisza."
           canonical="https://fotz.pl/agencja-marketingowa/kalisz"
+        keywords="agencja marketingowa kalisz, marketing internetowy kalisz, usługi marketingowe kalisz, agencja reklamowa kalisz"
         />
 
         <ServiceSchema

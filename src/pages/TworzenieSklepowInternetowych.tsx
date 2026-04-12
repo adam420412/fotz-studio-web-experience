@@ -22,6 +22,7 @@ export default function TworzenieSklepowInternetowych() {
         title="Tworzenie sklepów internetowych | E-commerce | fotz.pl"
         description="Tworzymy profesjonalne sklepy internetowe. WooCommerce, Shopify, PrestaShop. Od 2999 zł netto. Pełna integracja płatności i logistyki. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-sklepow-internetowych"
+        keywords="tworzenie sklepów internetowych, sklep internetowy, budowa sklepu internetowego, agencja e-commerce, wdrożenie sklepu online, WooCommerce, PrestaShop, Shopify"
       />
       <ServiceSchema
         name="Tworzenie sklepów internetowych"

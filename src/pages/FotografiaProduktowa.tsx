@@ -239,6 +239,7 @@ const FotografiaProduktowa = () => {
         canonical="https://fotz.pl/uslugi/fotografia-produktowa"
         ogTitle="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów"
         ogDescription="Sesje fotograficzne produktów dla Allegro, Amazon, Shopify. Packshot, 360°, retusz — od 600 zł. Poznań i cała Polska."
+        keywords="fotografia produktowa, zdjęcia produktowe, sesja produktowa, fotografia e-commerce, zdjęcia do sklepu internetowego"
       />
       <ServiceSchema
         name="Fotografia produktowa"

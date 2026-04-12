@@ -163,6 +163,7 @@ export default function AudytStronyInternetowej() {
         title="Audyt strony internetowej | Analiza UX i wydajności | fotz.pl"
         description="Audyt strony internetowej — kompleksowa analiza UX, szybkości, bezpieczeństwa i konwersji. Znajdziemy co blokuje Twoich klientów. Zamów audyt!"
         canonical="https://fotz.pl/uslugi/audyt-strony-internetowej"
+        keywords="audyt strony internetowej, audyt seo, analiza strony www, audyt techniczny, sprawdź stronę internetową, optymalizacja strony"
       />
       <ServiceSchema
         name="Audyt strony internetowej"

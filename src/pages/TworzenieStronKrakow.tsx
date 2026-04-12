@@ -210,6 +210,7 @@ export default function TworzenieStronKrakow() {
         description="Tworzymy profesjonalne strony internetowe w Krakowie. Nowoczesne, responsywne strony dla firm. Od 499 zł. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/krakow"
         ogImage="https://fotz.pl/og-krakow.jpg"
+        keywords="tworzenie stron internetowych kraków, strony internetowe kraków, projektowanie stron kraków, agencja webdesign kraków"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Kraków"

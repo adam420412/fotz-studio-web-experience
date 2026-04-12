@@ -41,6 +41,7 @@ export default function StronyInternetoweTorun() {
         description="Profesjonalne projektowanie stron internetowych w Toruniu. Nowoczesne strony wizytówki, sklepy e-commerce i landing pages dla firm. SEO-friendly, responsywne, szybkie."
         canonical="https://fotz.pl/strony-internetowe/torun"
         ogImage="https://fotz.pl/og-torun.jpg"
+        keywords="strony internetowe toruń, tworzenie stron toruń, projektowanie stron toruń, agencja webdesign toruń"
       />
       
       <BreadcrumbSchema items={breadcrumbs} />

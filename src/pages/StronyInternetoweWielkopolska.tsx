@@ -122,6 +122,7 @@ export default function StronyInternetoweWielkopolska() {
           "priceRange": "$$",
           "serviceType": "Web Design & Development"
         }}
+        keywords="strony internetowe poznań, tworzenie stron poznań, strony internetowe wielkopolska, projektowanie stron wielkopolska"
       />
 
       {/* Hero Section */}

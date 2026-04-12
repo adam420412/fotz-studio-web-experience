@@ -246,6 +246,7 @@ const UslugiPozycjonowanie = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie"
         ogTitle="Pozycjonowanie Stron Internetowych — Fotz Studio"
         ogDescription="Agencja SEO Fotz Studio. Pozycjonowanie lokalne i ogólnopolskie. Audyt SEO, optymalizacja i link building. Pakiety od 800 zł/mies."
+        keywords="pozycjonowanie stron, usługi seo, agencja pozycjonowania, seo dla firm, pozycjonowanie www, optymalizacja seo, pozycjonowanie lokalne"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych"

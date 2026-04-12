@@ -164,6 +164,7 @@ const CennikStronInternetowych = () => {
         canonical="https://fotz.pl/cennik-stron-internetowych"
         ogTitle="Cennik Stron Internetowych — od 499 zł netto | Fotz Studio"
         ogDescription="Przejrzysty cennik stron internetowych. Od prostej wizytówki (499 zł) po zaawansowane sklepy e-commerce. Bez ukrytych opłat, pełna własność kodu."
+        keywords="cennik stron internetowych, ile kosztuje strona internetowa, cena strony internetowej, tworzenie stron internetowych cennik, strona internetowa cena 2025, ile kosztuje strona www"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych"

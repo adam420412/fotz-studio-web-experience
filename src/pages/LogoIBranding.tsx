@@ -252,6 +252,7 @@ const LogoIBranding = () => {
         canonical="https://fotz.pl/uslugi/logo-i-branding"
         ogTitle="Projektowanie Logo i Identyfikacja Wizualna — Fotz Studio"
         ogDescription="Unikalne logo i spójna identyfikacja wizualna dla Twojej firmy. Poznań i cała Polska. Od 900 zł, realizacja 5–7 dni."
+        keywords="projektowanie logo, logo i branding, projekt logo, identyfikacja wizualna, brand identity, tworzenie logo dla firmy"
       />
       <ServiceSchema
         name="Projektowanie logo i identyfikacja wizualna"

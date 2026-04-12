@@ -173,6 +173,7 @@ export default function ProjektowanieStronInternetowych() {
         description="Projektujemy profesjonalne strony internetowe. Unikalny design, intuicyjny UX i pełna responsywność. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/projektowanie-stron-internetowych"
         ogImage="https://fotz.pl/og-design.jpg"
+        keywords="projektowanie stron internetowych, tworzenie stron www, webdesign, ux/ui design, projekt strony firmowej"
       />
       <ServiceSchema
         name="Projektowanie stron internetowych"

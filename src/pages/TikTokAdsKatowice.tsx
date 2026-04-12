@@ -210,6 +210,7 @@ export default function TikTokAdsKatowice() {
           type: "website",
           url: canonical,
         }}
+        keywords="tiktok ads katowice, agencja tiktok ads katowice, kampanie tiktok katowice, reklamy tiktok katowice, tiktok ads dla firm katowice, tiktok marketing śląsk"
       />
 
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />

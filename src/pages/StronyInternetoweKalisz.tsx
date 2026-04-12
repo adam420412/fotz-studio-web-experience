@@ -80,7 +80,7 @@ const StronyInternetoweKalisz = () => {
         title="Strony Internetowe Kalisz | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
         description="Strony internetowe Kalisz — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Kalisza. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/kalisz"
-        keywords="strony internetowe kalisz, tworzenie stron www kalisz, projektowanie stron kalisz"
+        keywords="strony internetowe kalisz, tworzenie stron www kalisz, projektowanie stron kalisz, agencja webdesign kalisz, budowa strony kalisz, strona internetowa kalisz"
       />
       
       <ServiceSchema name="Strony Internetowe Kalisz" description="Tworzenie stron internetowych dla firm z Kalisza." provider="FOTZ Studio" areaServed="Kalisz" />

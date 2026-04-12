@@ -134,6 +134,7 @@ export default function StronyInternetowePodkarpacie() {
           "priceRange": "$$",
           "serviceType": "Web Design & Development"
         }}
+        keywords="strony internetowe rzeszów, tworzenie stron rzeszów, strony internetowe podkarpacie, projektowanie stron podkarpacie"
       />
 
       {/* Hero Section */}

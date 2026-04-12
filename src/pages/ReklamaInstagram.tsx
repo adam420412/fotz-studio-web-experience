@@ -80,6 +80,7 @@ export default function ReklamaInstagram() {
         title="Reklama Instagram — agencja Instagram Ads | fotz.pl"
         description="Reklama na Instagramie — kampanie Meta Ads dla firm. Reels Ads, Stories, Shopping. Obsługa Instagram Ads od 799 zł/mies. Bezpłatny audyt kampanii!"
         canonical="https://fotz.pl/uslugi/reklama-instagram"
+        keywords="reklama instagram, instagram ads polska, kampanie instagram, meta ads instagram, reklamy na instagramie, instagram dla firm"
       />
       <ServiceSchema
         name="Reklama Instagram (Instagram Ads)"

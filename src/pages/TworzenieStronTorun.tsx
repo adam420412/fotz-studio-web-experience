@@ -204,6 +204,7 @@ export default function TworzenieStronTorun() {
         description="Tworzenie stron internetowych Toruń — profesjonalne strony WWW dla lokalnych firm. Od 499 zł netto. Szybko, z wynikami. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/torun"
         ogImage="https://fotz.pl/og-torun.jpg"
+        keywords="tworzenie stron internetowych toruń, strony internetowe toruń, projektowanie stron toruń, agencja webdesign toruń"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Toruń"

@@ -218,6 +218,7 @@ export default function StronyInternetoweLubelskie() {
         description="Tworzenie stron internetowych w województwie lubelskim. Profesjonalne strony WWW dla firm z Lublina i regionu. Od 499 zł. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/strony-internetowe/lubelskie"
         ogImage="https://fotz.pl/og-lubelskie.jpg"
+        keywords="strony internetowe lublin, tworzenie stron lublin, strony internetowe lubelskie, projektowanie stron lubelskie"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Lubelskie"

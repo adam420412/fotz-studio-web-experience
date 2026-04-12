@@ -211,6 +211,7 @@ export default function TworzenieStronLodz() {
         description="Tworzymy profesjonalne strony internetowe w Łodzi. Nowoczesne strony dla firm z łódzkiego. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/lodz"
         ogImage="https://fotz.pl/og-lodz.jpg"
+        keywords="tworzenie stron internetowych łódź, strony internetowe łódź, projektowanie stron łódź, agencja webdesign łódź"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Łódź"

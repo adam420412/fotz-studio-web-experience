@@ -122,6 +122,7 @@ export default function IdentyfikacjaWizualnaFirmy() {
         title="Identyfikacja wizualna firmy — logo, brandbook, system graficzny | fotz.pl"
         description="Identyfikacja wizualna firmy — logo, system kolorów, typografia, szablony, brandbook. Kompleksowy projekt graficzny który wyróżni Twoją markę. Wycena!"
         canonical="https://fotz.pl/uslugi/identyfikacja-wizualna-firmy"
+        keywords="identyfikacja wizualna firmy, identyfikacja wizualna, brand identity, logo i branding, projekt identyfikacji, corporate identity"
       />
       <ServiceSchema
         name="Identyfikacja wizualna firmy"

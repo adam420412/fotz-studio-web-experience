@@ -153,6 +153,7 @@ export default function MarketingB2B() {
         title="Marketing B2B | Strategie lead generation dla firm | fotz.pl"
         description="Marketing B2B — strategie lead generation, LinkedIn Ads, content marketing, email nurturing dla firm sprzedających innym firmom. Sprawdź ofertę!"
         canonical="https://fotz.pl/uslugi/marketing-b2b"
+        keywords="marketing b2b, marketing dla firm, b2b lead generation, strategia marketingowa b2b, kampanie b2b, agencja marketingowa b2b"
       />
       <ServiceSchema
         name="Marketing B2B"

@@ -210,6 +210,7 @@ export default function TworzenieStronWarszawa() {
         description="Tworzymy profesjonalne strony internetowe w Warszawie. Agencja z doświadczeniem, realizacje na czas. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/warszawa"
         ogImage="https://fotz.pl/og-warszawa.jpg"
+        keywords="tworzenie stron internetowych warszawa, strony internetowe warszawa, projektowanie stron warszawa, agencja webdesign warszawa"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych Warszawa"

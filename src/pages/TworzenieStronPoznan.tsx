@@ -136,6 +136,7 @@ export default function TworzenieStronPoznan() {
         title="Tworzenie stron internetowych Poznań | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Poznań — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/poznan"
+        keywords="tworzenie stron internetowych poznań, strony internetowe poznań, projektowanie stron poznań, agencja webdesign poznań, budowa strony poznań"
       />
       <ServiceSchema name="Tworzenie stron internetowych Poznań" description="Profesjonalne tworzenie stron internetowych dla firm z Poznania i Wielkopolski. Jesteśmy stąd — znamy lokalny rynek." areaServed={["PL"]} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />

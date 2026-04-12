@@ -119,6 +119,7 @@ export default function AudytSEO() {
         title="Audyt SEO | Profesjonalna analiza strony | fotz.pl"
         description="Audyt SEO — szczegółowa analiza Twojej strony internetowej. Identyfikujemy błędy, które blokują Twoje pozycje w Google. Zamów audyt SEO!"
         canonical="https://fotz.pl/uslugi/audyt-seo"
+        keywords="audyt seo, audyt strony internetowej, analiza seo, audyt techniczny seo, sprawdź seo strony, bezpłatny audyt seo, audyt pozycjonowania"
       />
       <ServiceSchema
         name="Audyt SEO"

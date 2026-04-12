@@ -136,6 +136,7 @@ export default function TworzenieStronLublin() {
         title="Tworzenie stron internetowych Lublin | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Lublin — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/lublin"
+        keywords="tworzenie stron internetowych lublin, strony internetowe lublin, projektowanie stron lublin, agencja webdesign lublin, budowa strony lublin"
       />
       <ServiceSchema name="Tworzenie stron internetowych Lublin" description="Profesjonalne tworzenie stron internetowych dla firm z Lublina i wschodniej Polski." areaServed={["PL"]} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />

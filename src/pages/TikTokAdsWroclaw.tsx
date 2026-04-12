@@ -169,6 +169,7 @@ export default function TikTokAdsWroclaw() {
         title="TikTok Ads Wrocław — agencja kampanii reklamowych TikTok | Fotz.pl"
         description="Reklamy TikTok Ads Wrocław — agencja Fotz.pl. Kampanie TikTok dla firm z Wrocławia: In-Feed Ads, Spark Ads, kreacje wideo, optymalizacja. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/tiktok-ads/wroclaw"
+        keywords="tiktok ads wrocław, agencja tiktok ads wrocław, kampanie tiktok wrocław, reklamy tiktok wrocław, tiktok ads dla firm wrocław, tiktok marketing dolny śląsk"
       />
 
       <ServiceSchema

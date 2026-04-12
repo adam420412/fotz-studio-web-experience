@@ -238,6 +238,7 @@ export default function AgencjaMarketingowaGdynia() {
         title="Agencja Marketingowa Gdynia | FOTZ – Marketing Dla Firm w Gdyni"
         description="Agencja marketingowa Gdynia ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdyni i Trójmiasta. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/gdynia"
+        keywords="agencja marketingowa gdynia, marketing internetowy gdynia, usługi marketingowe gdynia, agencja reklamowa gdynia, marketing trójmiasto"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

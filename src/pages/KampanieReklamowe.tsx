@@ -215,6 +215,7 @@ const KampanieReklamowe = () => {
         title="Kampanie Reklamowe Google Ads i Meta Ads — Reklama Online dla Firm | Fotz Studio"
         description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Skuteczna reklama online dla firm — planowanie, prowadzenie i optymalizacja…"
         canonical="https://fotz.pl/kampanie-reklamowe"
+        keywords="kampanie reklamowe, reklamy internetowe, agencja reklamowa, google ads, facebook ads, performance marketing, kampanie ppc"
       />
       <ServiceSchema 
         name="Kampanie Reklamowe Google Ads i Facebook Ads"

@@ -52,6 +52,7 @@ export const AgencjaMarketingowaElblag = () => {
         ogTitle={seoTitle}
         ogDescription={seoDescription}
         ogImage="https://fotz.pl/og-elblag.jpg"
+        keywords="agencja marketingowa elbląg, marketing internetowy elbląg, usługi marketingowe elbląg, agencja reklamowa elbląg"
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />

@@ -103,6 +103,7 @@ export default function StronaInternetowaCena() {
         title="Strona internetowa cena 2025 — ile kosztuje? | fotz.pl"
         description="Strona internetowa cena — aktualny przewodnik 2025. Ile kosztuje strona wizytówka, firmowa, sklep internetowy. Ukryte koszty i co wpływa na cenę. Sprawdź!"
         canonical="https://fotz.pl/blog/strona-internetowa-cena"
+        keywords="strona internetowa cena, ile kosztuje strona internetowa, koszt strony internetowej, cena strony www, cennik stron internetowych"
       />
       <ArticleSchema
         title="Strona internetowa cena 2025 — ile kosztuje i od czego zależy?"

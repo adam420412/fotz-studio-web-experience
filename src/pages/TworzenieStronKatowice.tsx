@@ -136,6 +136,7 @@ export default function TworzenieStronKatowice() {
         title="Tworzenie stron internetowych Katowice | Profesjonalne strony WWW | fotz.pl"
         description="Tworzenie stron internetowych Katowice i Śląsk — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/katowice"
+        keywords="tworzenie stron internetowych katowice, strony internetowe katowice, projektowanie stron katowice, agencja webdesign katowice, tworzenie stron śląsk"
       />
       <ServiceSchema name="Tworzenie stron internetowych Katowice" description="Profesjonalne tworzenie stron internetowych dla firm z Katowic, Śląska i metropolii GZM." areaServed={["PL"]} />
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />

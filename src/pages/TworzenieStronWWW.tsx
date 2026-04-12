@@ -22,6 +22,7 @@ export default function TworzenieStronWWW() {
         title="Tworzenie stron WWW | Profesjonalne strony internetowe | fotz.pl"
         description="Tworzymy profesjonalne strony WWW dla firm w całej Polsce. Szybkie, responsywne, zoptymalizowane pod SEO. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-www"
+        keywords="tworzenie stron www, strony www, projektowanie stron www, agencja webdesign, tworzenie stron internetowych, budowa strony www, strona www dla firmy"
       />
       <ServiceSchema
         name="Tworzenie stron WWW"

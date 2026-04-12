@@ -95,6 +95,7 @@ export default function AgencjaMarketingowaWroclaw() {
         ogTitle="Agencja Marketingowa Wrocław | FOTZ"
         ogDescription="Profesjonalna agencja marketingowa we Wrocławiu. SEO, Google Ads, Social Media, tworzenie stron. 500+ zadowolonych klientów."
         ogImage="https://fotz.pl/og-wroclaw.jpg"
+        keywords="agencja marketingowa wrocław, marketing internetowy wrocław, usługi marketingowe wrocław, agencja reklamowa wrocław"
       />
 
       <BreadcrumbSchema

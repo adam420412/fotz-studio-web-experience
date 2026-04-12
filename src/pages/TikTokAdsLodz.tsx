@@ -63,6 +63,7 @@ export function TikTokAdsLodz() {
         title="TikTok Ads Łódź — agencja kampanii reklamowych TikTok | Fotz.pl"
         description="Reklamy TikTok Ads Łódź — agencja Fotz.pl. Kampanie TikTok dla firm z Łodzi: In-Feed Ads, Spark Ads, kreacje wideo. Targetowanie grupy docelowej. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/tiktok-ads/lodz"
+        keywords="tiktok ads łódź, agencja tiktok ads łódź, kampanie tiktok łódź, reklamy tiktok łódź, tiktok ads dla firm łódź, tiktok marketing łódź"
       />
 
       <ServiceSchema
