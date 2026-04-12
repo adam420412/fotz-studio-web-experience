@@ -1341,6 +1341,10 @@ const BlogKonwersjaStrony = lazy(() => import("./pages/BlogKonwersjaStrony"));
 const PozycjonowanieLegnica = lazy(() => import("./pages/PozycjonowanieLegnica"));
 const BlogTikTokDlaFirmy = lazy(() => import("./pages/BlogTikTokDlaFirmy"));
 
+// Wave 236 pages
+const AgencjaMarketingowaJeleniaGora = lazy(() => import("./pages/AgencjaMarketingowaJeleniaGora"));
+const BlogYouTubeDlaFirmy = lazy(() => import("./pages/BlogYouTubeDlaFirmy"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2369,6 +2373,8 @@ const App = () => (
                 <Route path="/blog/jak-zwiekszyc-konwersje-strony" element={<BlogKonwersjaStrony />} />
                 <Route path="/pozycjonowanie/legnica" element={<PozycjonowanieLegnica />} />
                 <Route path="/blog/tiktok-dla-firmy" element={<BlogTikTokDlaFirmy />} />
+                <Route path="/agencja-marketingowa/jelenia-gora" element={<AgencjaMarketingowaJeleniaGora />} />
+                <Route path="/blog/youtube-dla-firmy" element={<BlogYouTubeDlaFirmy />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
