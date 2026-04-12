@@ -111,6 +111,7 @@ const PozycjonowanieRadom = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/radom"
         ogTitle="Pozycjonowanie Radom — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Radomiu. Niska konkurencja SEO = szybkie pozycje. SEO dla lotnictwa, produkcji i e-commerce."
+        keywords="pozycjonowanie radom, seo radom, agencja seo radom, pozycjonowanie lokalne radom, pozycjonowanie stron radom, seo dla firm radom, audyt seo radom"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Radom"

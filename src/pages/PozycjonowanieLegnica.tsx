@@ -44,7 +44,7 @@ export default function PozycjonowanieLegnica() {
         title="Pozycjonowanie Legnica | Fotz Studio"
         description="Profesjonalne usługi pozycjonowania stron internetowych w Legnicy. Zwiększ widoczność Twojej firmy w Google. Pakiety SEO dostosowane do Twoich potrzeb. Konsultacja gratis!"
         canonical="https://fotz.pl/pozycjonowanie/legnica"
-        keywords="pozycjonowanie Legnica, SEO Legnica, pozycjonowanie stron Legnica, agencja SEO Legnica"
+        keywords="pozycjonowanie Legnica, SEO Legnica, pozycjonowanie stron Legnica, agencja SEO Legnica, pozycjonowanie lokalne Legnica, seo dla firm Legnica, audyt seo Legnica, optymalizacja seo Legnica"
       />
 
       <ServiceSchema

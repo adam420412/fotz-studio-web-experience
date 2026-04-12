@@ -29,7 +29,7 @@ const SEOPozycjonowanieKatowice = () => {
         title="Pozycjonowanie Katowice — Agencja SEO dla Firm z Katowic | Fotz Studio"
         description="Pozycjonowanie stron internetowych Katowice — SEO dla firm z Katowic i Śląska. Audyt SEO, optymalizacja, link building. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-katowice"
-        keywords="pozycjonowanie katowice, seo katowice, agencja seo katowice, pozycjonowanie lokalne katowice, google maps katowice"
+        keywords="pozycjonowanie katowice, seo katowice, agencja seo katowice, pozycjonowanie lokalne katowice, google maps katowice, pozycjonowanie stron katowice, firma seo katowice, seo dla firm katowice, pozycjonowanie śląsk, audyt seo katowice, optymalizacja seo katowice, seo katowice cena, usługi seo katowice"
       />
       <ServiceSchema
         name="Pozycjonowanie Katowice"
@@ -64,7 +64,7 @@ const SEOPozycjonowanieKatowice = () => {
                 Pozycjonowanie <span className="text-gradient">Katowice</span>: SEO dla Lokalnych Firm
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Katowic i całego Śląska w Google. Katowice to centrum aglomeracji śląskiej liczącej ponad 2 mln mieszkańców — olbrzymi rynek dla usług lokalnych. Skuteczne pozycjonowanie lokalne to dziś konieczność, nie luksus.
+                Zwiększamy widoczność firm z Katowic i całego Śląska w Google. Agencja SEO Katowice — pozycjonowanie stron i audyt SEO dla firm z aglomeracji śląskiej. Katowice to centrum aglomeracji śląskiej liczącej ponad 2 mln mieszkańców — olbrzymi rynek dla usług lokalnych. Usługi SEO Katowice — pozycjonowanie lokalne, GMB i link building.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">

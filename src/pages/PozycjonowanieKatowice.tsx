@@ -101,6 +101,7 @@ const PozycjonowanieKatowice = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/katowice"
         ogTitle="Pozycjonowanie Katowice — Fotz Studio Agencja SEO"
         ogDescription="Pozycjonowanie dla Katowic i GOM — trzecie co do wielkości skupisko w Polsce. IT, FinTech, BPO. Audyt SEO, optymalizacja, link building."
+        keywords="pozycjonowanie katowice, seo katowice, agencja seo katowice, pozycjonowanie lokalne katowice, pozycjonowanie stron katowice, seo dla firm katowice, audyt seo katowice, pozycjonowanie śląsk"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Katowice"

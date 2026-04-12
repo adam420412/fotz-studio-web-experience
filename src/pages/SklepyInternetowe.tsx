@@ -165,7 +165,7 @@ export default function SklepyInternetowe() {
         title="Tworzenie Sklepów Internetowych — Projektowanie i Budowa Sklepów Online | Fotz Studio"
         description="Tworzenie sklepów internetowych dla firm — e-commerce na WooCommerce, Shopify, PrestaShop. Budowa sklepów online z SEO, integracjami płatności i obsługą…"
         canonical="https://fotz.pl/uslugi/sklepy-internetowe"
-        keywords="tworzenie sklepów internetowych, sklep internetowy, budowa sklepu internetowego, projektowanie sklepu internetowego, e-commerce, własny sklep internetowy, założyć sklep internetowy, WooCommerce, Shopify, PrestaShop"
+        keywords="tworzenie sklepów internetowych, sklep internetowy, budowa sklepu internetowego, projektowanie sklepu internetowego, e-commerce, własny sklep internetowy, założyć sklep internetowy, WooCommerce, Shopify, PrestaShop, platforma e-commerce, wdrożenie sklepu internetowego, agencja e-commerce, sklep online, sprzedaż online, sklep internetowy dla firmy, oprogramowanie sklepu internetowego"
       />
 
       <ServiceSchema
@@ -211,11 +211,13 @@ export default function SklepyInternetowe() {
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-              Projektujemy i budujemy profesjonalne sklepy internetowe, które sprzedają.
-              Shopify, WooCommerce, PrestaShop i dedykowane rozwiązania e-commerce — dobieramy platformę do Twojego biznesu.
+              Projektujemy i budujemy profesjonalne <strong className="text-foreground">sklepy internetowe</strong>, które sprzedają.{" "}
+              <strong className="text-foreground">Tworzenie sklepów internetowych</strong> na Shopify, WooCommerce i PrestaShop —
+              dobieramy platformę e-commerce do Twojego modelu biznesowego i budżetu.
             </motion.p>
             <motion.p variants={fadeIn} className="text-base text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Od projektu UX/UI, przez integracje płatności i dostaw, po SEO i marketing — kompleksowa obsługa Twojego sklepu online.
+              Wdrożenie sklepu internetowego od projektu UX/UI, przez integracje płatności i dostaw, po SEO i marketing —
+              kompleksowe budowanie sklepu online dla firm B2C i B2B. Własny sklep internetowy bez prowizji dla marketplace'ów.
             </motion.p>
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">

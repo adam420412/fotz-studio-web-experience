@@ -29,7 +29,7 @@ const SEOPozycjonowanieKrakow = () => {
         title="Pozycjonowanie Kraków — Agencja SEO dla Firm z Krakowa | Fotz Studio"
         description="Pozycjonowanie stron internetowych Kraków — SEO lokalne i ogólnopolskie, audyt SEO, link building dla firm z Krakowa. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-krakow"
-        keywords="pozycjonowanie krakow, seo krakow, agencja seo krakow, pozycjonowanie lokalne krakow, google maps krakow"
+        keywords="pozycjonowanie krakow, seo krakow, agencja seo krakow, pozycjonowanie lokalne krakow, google maps krakow, pozycjonowanie stron kraków, firma seo kraków, seo dla firm krakow, pozycjonowanie małopolska, audyt seo kraków, optymalizacja seo krakow, seo kraków cena, usługi seo krakow, pozycjonowanie kraków cena"
       />
       <ServiceSchema
         name="Pozycjonowanie Kraków"
@@ -64,7 +64,7 @@ const SEOPozycjonowanieKrakow = () => {
                 Pozycjonowanie <span className="text-gradient">Kraków</span>: SEO dla Lokalnych Firm
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z Krakowa i Małopolski w Google. Kraków z 800 tys. mieszkańców to drugie największe miasto Polski i hub nowych technologii oraz turystyki. Skuteczne pozycjonowanie lokalne to dziś konieczność, nie luksus.
+                Zwiększamy widoczność firm z Krakowa i Małopolski w Google. Agencja SEO Kraków — pozycjonowanie stron i audyt SEO dla firm z Krakowa i Małopolski. Kraków z 800 tys. mieszkańców to drugie największe miasto Polski i hub nowych technologii oraz turystyki. Usługi SEO Kraków — pozycjonowanie lokalne, GMB i link building.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">

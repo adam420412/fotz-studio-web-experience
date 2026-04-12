@@ -101,6 +101,7 @@ const PozycjonowanieRzeszow = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/rzeszow"
         ogTitle="Pozycjonowanie Rzeszów — Fotz Studio Agencja SEO"
         ogDescription="Pozycjonowanie dla Rzeszowa — szybko rosnące miasto z dużym potencjałem. Aviation Valley, BPO, logistyka. Audyt SEO, optymalizacja, link building."
+        keywords="pozycjonowanie rzeszów, seo rzeszów, agencja seo rzeszów, pozycjonowanie lokalne rzeszów, pozycjonowanie stron rzeszów, seo dla firm rzeszów, audyt seo rzeszów"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Rzeszów"

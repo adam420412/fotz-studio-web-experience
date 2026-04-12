@@ -29,7 +29,7 @@ const SEOPozycjonowanieWarszawa = () => {
         title="Pozycjonowanie Warszawa — Agencja SEO dla Firm z Warszawy | Fotz Studio"
         description="Pozycjonowanie stron internetowych Warszawa — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Warszawy. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-warszawa"
-        keywords="pozycjonowanie warszawa, seo warszawa, agencja seo warszawa, pozycjonowanie lokalne warszawa, google maps warszawa"
+        keywords="pozycjonowanie warszawa, seo warszawa, agencja seo warszawa, pozycjonowanie lokalne warszawa, google maps warszawa, pozycjonowanie stron warszawa, firma seo warszawa, seo dla firm warszawa, pozycjonowanie mazowsze, audyt seo warszawa, optymalizacja seo warszawa, seo warszawa cena, usługi seo warszawa, pozycjonowanie warszawa cena"
       />
       <ServiceSchema
         name="Pozycjonowanie Warszawa"
@@ -64,7 +64,7 @@ const SEOPozycjonowanieWarszawa = () => {
                 Pozycjonowanie <span className="text-gradient">Warszawa</span>: SEO dla Lokalnych Firm
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Zwiększamy widoczność firm z stolicy Polski w Google. Z ponad 1,8 mln mieszkańców Warszawa to największy rynek w Polsce — i najbardziej konkurencyjny dla SEO. Skuteczne pozycjonowanie lokalne to dziś konieczność, nie luksus.
+                Zwiększamy widoczność firm z Warszawy w Google. Agencja SEO Warszawa — pozycjonowanie stron i audyt SEO dla firm ze stolicy. Z ponad 1,8 mln mieszkańców Warszawa to największy rynek w Polsce — i najbardziej konkurencyjny dla SEO. Usługi SEO Warszawa — pozycjonowanie lokalne, GMB i link building.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="group">

@@ -111,6 +111,7 @@ const PozycjonowanieKielce = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/kielce"
         ogTitle="Pozycjonowanie Kielce — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Kielcach. Targi Kielce, budownictwo, tech. Niższa konkurencja = szybkie pozycje w Google."
+        keywords="pozycjonowanie kielce, seo kielce, agencja seo kielce, pozycjonowanie lokalne kielce, pozycjonowanie stron kielce, seo dla firm kielce, audyt seo kielce"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Kielce"

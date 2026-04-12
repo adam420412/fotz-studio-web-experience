@@ -81,7 +81,7 @@ export default function PozycjonowanieOpole() {
           title="Pozycjonowanie stron Opole | Agencja SEO fotz.pl"
           description="Pozycjonowanie stron internetowych w Opolu. Skuteczne SEO dla firm z Opolszczyzny. Wyższe pozycje w Google. Bezpłatna wycena!"
           canonical="https://fotz.pl/uslugi/pozycjonowanie/opole"
-          keywords="pozycjonowanie Opole, SEO Opole, agencja SEO Opole, pozycjonowanie stron Opole, marketing internetowy Opole"
+          keywords="pozycjonowanie Opole, SEO Opole, agencja SEO Opole, pozycjonowanie stron Opole, marketing internetowy Opole, pozycjonowanie lokalne Opole, seo dla firm Opole, audyt seo Opole, usługi seo Opole"
         />
 
         <ServiceSchema

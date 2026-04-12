@@ -263,6 +263,7 @@ const CennikTworzenieStron = () => {
         canonical="https://fotz.pl/cennik-tworzenia-stron"
         ogTitle="Cennik tworzenia stron internetowych 2025"
         ogDescription="Szczegółowy cennik stron internetowych — od prostej wizytówki po zaawansowane sklepy e-commerce. Bez ukrytych opłat, pełna własność kodu."
+        keywords="tworzenie stron internetowych cennik, ile kosztuje strona internetowa, koszt strony internetowej, cena strony internetowej, cennik stron internetowych, projektowanie stron www cennik, strona internetowa cena 2025, strona wizytówkowa cena, sklep internetowy koszt, tworzenie strony www cena, budowa strony internetowej koszt, ile kosztuje stworzenie strony, cena strony firmowej, strona internetowa ile kosztuje, tworzenie stron www ceny"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych — cennik"
@@ -309,10 +310,19 @@ const CennikTworzenieStron = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
+            className="text-xl text-muted-foreground mb-4 max-w-2xl mx-auto"
           >
-            Jasne ceny, bez ukrytych kosztów. Pełna własność kodu po zapłacie.
-            Responsywny design, SEO i certyfikat SSL w każdym pakiecie.
+            Jasne ceny, bez ukrytych kosztów. <strong className="text-foreground">Ile kosztuje strona internetowa?</strong>{" "}
+            Koszt strony internetowej w naszym studiu zaczyna się od 499 zł netto — pełna własność kodu, responsywny design i SSL w cenie.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="text-base text-muted-foreground mb-10 max-w-2xl mx-auto"
+          >
+            Cennik tworzenia stron internetowych obejmuje strony wizytówkowe, strony firmowe z CMS i sklepy e-commerce.
+            Cena strony internetowej zależy od liczby podstron, funkcji i integracji — sprawdź pakiety lub zamów bezpłatną wycenę.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -101,6 +101,7 @@ const PozycjonowanieLublin = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/lublin"
         ogTitle="Pozycjonowanie Lublin — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Lublinie. Szybkie rezultaty dzięki niskiej konkurencji SEO. Audyt, optymalizacja i link building dla firm z Lublina."
+        keywords="pozycjonowanie lublin, seo lublin, agencja seo lublin, pozycjonowanie lokalne lublin, pozycjonowanie stron lublin, seo dla firm lublin, audyt seo lublin, usługi seo lublin"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Lublin"

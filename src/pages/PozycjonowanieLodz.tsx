@@ -95,6 +95,7 @@ const PozycjonowanieLodz = () => {
         canonical="https://fotz.pl/uslugi/pozycjonowanie/lodz"
         ogTitle="Pozycjonowanie Łódź — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Łodzi. Audyt SEO, optymalizacja i link building dla firm łódzkich — e-commerce, fashion, logistyka."
+        keywords="pozycjonowanie łódź, seo łódź, agencja seo łódź, pozycjonowanie lokalne łódź, pozycjonowanie stron łódź, seo dla firm łódź, audyt seo łódź, usługi seo łódź"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Łódź"

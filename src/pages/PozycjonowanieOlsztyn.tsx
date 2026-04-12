@@ -81,7 +81,7 @@ export default function PozycjonowanieOlsztyn() {
           title="Pozycjonowanie stron Olsztyn | Agencja SEO fotz.pl"
           description="Pozycjonowanie stron internetowych w Olsztynie. SEO dla firm z Warmii i Mazur. Wyższe pozycje w Google. Bezpłatna wycena!"
           canonical="https://fotz.pl/uslugi/pozycjonowanie/olsztyn"
-          keywords="pozycjonowanie Olsztyn, SEO Olsztyn, agencja SEO Olsztyn, pozycjonowanie stron Olsztyn, marketing turystyki Warmia Mazury"
+          keywords="pozycjonowanie Olsztyn, SEO Olsztyn, agencja SEO Olsztyn, pozycjonowanie stron Olsztyn, marketing turystyki Warmia Mazury, pozycjonowanie lokalne Olsztyn, seo dla firm Olsztyn, audyt seo Olsztyn, pozycjonowanie warmia mazury, usługi seo Olsztyn"
         />
 
         <ServiceSchema
