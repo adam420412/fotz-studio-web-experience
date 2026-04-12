@@ -1401,11 +1401,17 @@ const BlogVideoMarketingDlaFirm = lazy(() => import("./pages/BlogVideoMarketingD
 // Wave 250 new city (Gdynia - not previously declared)
 const AgencjaMarketingowaGdynia = lazy(() => import("./pages/AgencjaMarketingowaGdynia"));
 
-// Wave 253 Google Ads city pages
+// Wave 253-254 Google Ads + Facebook Ads city pages
 const GoogleAdsKrakow = lazy(() => import("./pages/GoogleAdsKrakow"));
 const GoogleAdsWroclaw = lazy(() => import("./pages/GoogleAdsWroclaw"));
 const GoogleAdsPoznan = lazy(() => import("./pages/GoogleAdsPoznan"));
 const GoogleAdsGdansk = lazy(() => import("./pages/GoogleAdsGdansk"));
+const GoogleAdsLodz = lazy(() => import("./pages/GoogleAdsLodz"));
+const GoogleAdsKatowice = lazy(() => import("./pages/GoogleAdsKatowice"));
+const FacebookAdsWarszawa = lazy(() => import("./pages/FacebookAdsWarszawa"));
+const FacebookAdsKrakow = lazy(() => import("./pages/FacebookAdsKrakow"));
+const FacebookAdsWroclaw = lazy(() => import("./pages/FacebookAdsWroclaw"));
+const PozycjonowanieGdynia = lazy(() => import("./pages/PozycjonowanieGdynia"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -2580,6 +2586,12 @@ const App = () => (
                 <Route path="/performance-marketing/google-ads/wroclaw" element={<GoogleAdsWroclaw />} />
                 <Route path="/performance-marketing/google-ads/poznan" element={<GoogleAdsPoznan />} />
                 <Route path="/performance-marketing/google-ads/gdansk" element={<GoogleAdsGdansk />} />
+                <Route path="/performance-marketing/google-ads/lodz" element={<GoogleAdsLodz />} />
+                <Route path="/performance-marketing/google-ads/katowice" element={<GoogleAdsKatowice />} />
+                <Route path="/performance-marketing/facebook-ads/warszawa" element={<FacebookAdsWarszawa />} />
+                <Route path="/performance-marketing/facebook-ads/krakow" element={<FacebookAdsKrakow />} />
+                <Route path="/performance-marketing/facebook-ads/wroclaw" element={<FacebookAdsWroclaw />} />
+                <Route path="/uslugi/pozycjonowanie/gdynia" element={<PozycjonowanieGdynia />} />
                 <Route path="/performance-marketing/facebook-ads" element={<FacebookAds />} />
                 <Route path="/performance-marketing/instagram-ads" element={<InstagramAds />} />
                 <Route path="/performance-marketing/meta-ads" element={<FacebookInstagramAds />} />
