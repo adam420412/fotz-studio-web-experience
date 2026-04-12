@@ -76,6 +76,7 @@ const BlogJakWybracAgencje = lazy(() => import("./pages/BlogJakWybracAgencje"));
 const BlogKonwersjeNaStronie = lazy(() => import("./pages/BlogKonwersjeNaStronie"));
 const BlogSocialMediaStrategia = lazy(() => import("./pages/BlogSocialMediaStrategia"));
 const BlogStronaDlaFirmy = lazy(() => import("./pages/BlogStronaDlaFirmy"));
+const BlogPodcastMarketing = lazy(() => import("./pages/BlogPodcastMarketing"));
 
 // New blog posts (Wave 5 - content gaps)
 const BlogIdentyfikacjaWizualna = lazy(() => import("./pages/BlogIdentyfikacjaWizualna"));
@@ -1296,6 +1297,9 @@ const BlogAutomatyzacjaMarketingu = lazy(() => import("./pages/BlogAutomatyzacja
 const PozycjonowanieGliwice = lazy(() => import("./pages/PozycjonowanieGliwice"));
 const BlogWizerunekFirmy = lazy(() => import("./pages/BlogWizerunekFirmy"));
 const AgencjaMarketingowaCzestochowa = lazy(() => import("./pages/AgencjaMarketingowaCzestochowa"));
+const BlogEmailMarketingAutomation = lazy(() => import("./pages/BlogEmailMarketingAutomation"));
+const BlogMarketingNieruchomosci = lazy(() => import("./pages/BlogMarketingNieruchomosci"));
+const AgencjaMarketingowaBialystok = lazy(() => import("./pages/AgencjaMarketingowaBialystok"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -1431,6 +1435,7 @@ const App = () => (
                 <Route path="/blog/content-marketing-dla-firm" element={<BlogContentMarketing />} />
                 <Route path="/blog/jak-stworzyc-strone-internetowa" element={<BlogJakStworzyc />} />
                 <Route path="/blog/strona-internetowa-dla-malej-firmy" element={<BlogStronaInternetowaOdZera />} />
+                <Route path="/blog/podcast-dla-firmy" element={<BlogPodcastMarketing />} />
                 <Route path="/cennik-tworzenia-stron" element={<CennikTworzenieStron />} />
 
                 {/* Case Studies */}
@@ -2288,6 +2293,9 @@ const App = () => (
                 <Route path="/pozycjonowanie/gliwice" element={<PozycjonowanieGliwice />} />
                 <Route path="/blog/wizerunek-firmy-w-internecie" element={<BlogWizerunekFirmy />} />
                 <Route path="/agencja-marketingowa/czestochowa" element={<AgencjaMarketingowaCzestochowa />} />
+                <Route path="/blog/email-marketing-automation" element={<BlogEmailMarketingAutomation />} />
+                <Route path="/blog/marketing-nieruchomosci" element={<BlogMarketingNieruchomosci />} />
+                <Route path="/agencja-marketingowa/bialystok" element={<AgencjaMarketingowaBialystok />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
