@@ -1,462 +1,591 @@
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock, User, Zap, Mail, BarChart2, Settings, CheckCircle, ArrowRight, Lightbulb, AlertCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { RelatedArticles } from "@/components/blog/RelatedArticles";
-import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
-import { SEOHead } from "@/components/seo/SEOHead";
-import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ArrowRight, Clock, Zap, BarChart3, Mail, Settings, Cpu, CheckCircle, AlertCircle } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FadeInView } from "@/components/FadeInView";
+import { ContactSection } from "@/components/sections/ContactSection";
+import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
-const faqItems = [
-  {
-    question: "Co to jest marketing automation?",
-    answer:
-      "Marketing automation to wykorzystanie oprogramowania do automatycznego wykonywania powtarzalnych zadań marketingowych — wysyłki e-maili, segmentacji kontaktów, scoringu leadów, publikowania postów w social media czy powiadomień push. System działa na podstawie zdefiniowanych reguł (triggerów) i przepływów pracy (workflows), reagując na zachowanie użytkowników.",
-  },
-  {
-    question: "Czy marketing automation jest dla małych firm?",
-    answer:
-      "Tak! Choć marketing automation kojarzył się kiedyś z dużymi korporacjami, dziś narzędzia takie jak Mailchimp, ActiveCampaign czy MailerLite są przystępne cenowo i łatwe w obsłudze nawet dla jednoosobowych firm. Już prosty autoresponder e-mail czy automatyczne powitanie nowego subskrybenta to marketing automation.",
-  },
-  {
-    question: "Jakie narzędzia marketing automation są popularne w Polsce?",
-    answer:
-      "Najczęściej używane w Polsce narzędzia to: GetResponse (polska firma, kompleksowa platforma), ActiveCampaign (zaawansowane workflows), HubSpot (CRM + marketing, wersja free dostępna), Mailchimp (prosty e-mail marketing), SALESmanago (dla e-commerce) oraz Klaviyo (dedykowany e-commerce). Wybór zależy od skali działalności i budżetu.",
-  },
-  {
-    question: "Ile kosztuje marketing automation?",
-    answer:
-      "Koszty zależą od narzędzia i liczby kontaktów w bazie. Mailchimp i GetResponse oferują darmowe plany do kilku tysięcy kontaktów. Płatne plany zaczynają się od ok. 50–150 zł/mies. dla małych baz, a enterprise'owe rozwiązania (HubSpot Marketing Hub, SALESmanago) kosztują kilka–kilkanaście tysięcy złotych miesięcznie.",
-  },
-  {
-    question: "Czym jest lead nurturing?",
-    answer:
-      "Lead nurturing to automatyczny proces budowania relacji z potencjalnym klientem, który jeszcze nie jest gotowy do zakupu. Polega na wysyłaniu serii wartościowych e-maili, edukowaniu leada o problemie i rozwiązaniu, stopniowym budowaniu zaufania i gotowości zakupowej. Dobrze zaprojektowany nurturing znacząco zwiększa konwersję leadów na klientów.",
-  },
-  {
-    question: "Jak marketing automation wpływa na ROI?",
-    answer:
-      "Firmy stosujące marketing automation generują średnio o 451% więcej kwalifikowanych leadów (wg Annuitas) i skracają cykl sprzedażowy o 25–30%. Automatyzacja redukuje też koszty pracy — to, co manualnie zajmowało kilka godzin tygodniowo, dzieje się automatycznie. ROI zależy od branży, ale zwykle firma odczuwa pozytywne efekty już po 3–6 miesiącach wdrożenia.",
-  },
-];
+export default function BlogMarketingAutomation() {
+  const breadcrumbs = [
+    { label: "Strona glowna", href: "/" },
+    { label: "Blog", href: "/blog" },
+    { label: "Automatyzacja marketingu narzedzia" },
+  ];
 
-const BlogMarketingAutomation = () => {
+  const platforms = [
+    {
+      name: "HubSpot",
+      priceRange: "0-3200+ zl/mies",
+      strength: "Najlepszy CRM + marketing automation",
+      features: ["Email marketing automation", "Lead scoring", "Forms i landing pages", "CRM zintegrowany", "SMS marketing", "Reporting"],
+      bestFor: "Firmy B2B i B2C szukajace kompletnego rozwiazania",
+      pros: ["Intuicyjny interfejs", "Doskonale scalony CRM", "Duza baza wiedzy", "Polskie wsparcie dostepne"],
+      cons: ["Drogi dla startupow", "Limit kontaktow w bezplatnym planie", "Konieczna nauka systemu"]
+    },
+    {
+      name: "Marketo",
+      priceRange: "1000-5000+ zl/mies",
+      strength: "Zaawansowana automatyzacja dla B2B",
+      features: ["Multi-touch attribution", "Zaawansowany lead scoring", "Personalizacja dynamiczna", "Integracja z Salesforce", "Mobile marketing", "Predictive analytics"],
+      bestFor: "Duze firmy B2B z zlozonym cyklem sprzedazy",
+      pros: ["Najpotezniejsza automatyzacja", "Najlepsze integracje enterprise", "Zaawansowana analityka", "Skalowanie bez granic"],
+      cons: ["Bardzo droga", "Stroma krzywa uczenia", "Wymaga dedykowanego zespolu"]
+    },
+    {
+      name: "ActiveCampaign",
+      priceRange: "25-229+ zl/mies",
+      strength: "Najlepszy stosunek ceny do funkcjonalnosci",
+      features: ["Email marketing", "Lead scoring", "Integracje (1000+)", "CRM lekki", "SMS i omnichannel", "Automation workflows"],
+      bestFor: "Malych i srednich firm szukajacych wartosci",
+      pros: ["Bardzo konkurencyjne ceny", "Mnogo integracji", "Latwiejszy setup niz Marketo", "Dobre wsparcie"],
+      cons: ["Mniej zaawansowany niz Marketo", "CRM nie tak mocny jak HubSpot", "UI czasem nieintuitywny"]
+    },
+    {
+      name: "GetResponse",
+      priceRange: "0-599+ zl/mies",
+      strength: "Email marketing z prostym automation",
+      features: ["Email marketing", "Landing pages", "Webinary", "Podstawowe automatyzacje", "SMS marketing", "E-commerce integracje"],
+      bestFor: "E-commerce i male biznesy szukajace prostych rozwiazan",
+      pros: ["Tania (zwlaszcza plan S)", "Uproszczony interfejs", "Dobry dla e-commerce", "Duzo szablonow"],
+      cons: ["Podstawowa automatyzacja", "Nie dla zaawansowanych uzytkownikow", "Limit funkcji na niskich planach"]
+    },
+    {
+      name: "MailerLite",
+      priceRange: "0-60 zl/mies",
+      strength: "Najtansza opcja z dobrymi funkcjami",
+      features: ["Email marketing", "Automation workflows", "Landing pages", "Podstawowy CRM", "SMS w premium", "Segmentacja"],
+      bestFor: "Startupow, blogerow, male biznesy z ograniczonym budzetem",
+      pros: ["Najnizsza cena na rynku", "Intuicyjny interfejs", "Dobre dla poczatkujacych", "Bez limitu liczby subskrybentow w planie free"],
+      cons: ["Ograniczone zaawansowane funkcje", "Nie dla duzych firm", "Wsparcie mniej responsywne"]
+    },
+    {
+      name: "Klaviyo",
+      priceRange: "20-500+ zl/mies",
+      strength: "Najlepsze dla e-commerce",
+      features: ["Email + SMS marketing", "Zaawansowana segmentacja", "Predictive analytics", "Abandoned cart automation", "Flow builder", "E-commerce natywne integracje"],
+      bestFor: "Sklepy online i e-commerce biznesy",
+      pros: ["Made for e-commerce", "Zaawansowana segmentacja", "Automatyzacja abandoned cart", "Predykcyjna analityka"],
+      cons: ["Droga dla startupow", "Ostrza krzywa uczenia", "E-commerce focused - mniej dla B2B"]
+    }
+  ];
+
+  const automationTypes = [
+    {
+      title: "Email nurturing sequences",
+      description: "Automatyczne serije emaili wysylanej do leadow na podstawie jego zachowania",
+      example: "Welcome series (Day 1), Problem email (Day 3), Solution (Day 5), Case study (Day 10), CTA (Day 15)",
+      tools: ["HubSpot", "ActiveCampaign", "GetResponse", "Klaviyo"]
+    },
+    {
+      title: "Lead scoring automation",
+      description: "Automatyczne przydzielanie punktow leadom na podstawie zachowania i danych demograficznych",
+      example: "Email open +5 pkt, Link click +10 pkt, Form fill +30 pkt, Website visit +7 pkt. Wysoki score = handoff do sprzedazy",
+      tools: ["HubSpot", "Marketo", "ActiveCampaign"]
+    },
+    {
+      title: "Abandoned cart recovery",
+      description: "Automatyczne powiadomienia gdy klient opusci koszyk bez kupna",
+      example: "1h po opuszczeniu koszyka: email z remind, 24h: second email z discount, 48h: final call",
+      tools: ["Klaviyo", "GetResponse", "Shopify natywnie"]
+    },
+    {
+      title: "Social media scheduling",
+      description: "Automatyczne publikowanie postow na social media z optymalnymi czasami",
+      example: "Plan posta, system publikuje on o optymalnym czasie dla twojej audience",
+      tools: ["Buffer", "Hootsuite", "Later"]
+    },
+    {
+      title: "SMS marketing automation",
+      description: "Automatyczne wysylanie SMS na podstawie triggerow",
+      example: "Order confirmation SMS, Shipping notification, Re-engagement SMS dla nieaktywnych",
+      tools: ["Klaviyo", "GetResponse", "ActiveCampaign"]
+    },
+    {
+      title: "CRM pipeline automation",
+      description: "Automatyczne przenoszenie dealow między etapami na podstawie akcji",
+      example: "Demo request = MQL, Demo ukonczone = SQL, Propozycja = Opportunity",
+      tools: ["HubSpot", "Marketo", "Pipedrive"]
+    }
+  ];
+
+  const implementationSteps = [
+    {
+      step: 1,
+      title: "Analiza potrzeb",
+      desc: "Zdefiniuj swoj funnel (TOFU-MOFU-BOFU), source leadow i KPI. Co chcesz zautomatyzowac najpierw?"
+    },
+    {
+      step: 2,
+      title: "Wybor platformy",
+      desc: "Porownaj narzedzia (HubSpot, ActiveCampaign, Marketo itd) wzgledem budzetu, funkcji i integracji. Zacznij z free planu."
+    },
+    {
+      step: 3,
+      title: "Konfiguracja bazy danych",
+      desc: "Importuj istniejace kontakty, oczysc baze (spam traps, duplicates), przygotuj segmentacje."
+    },
+    {
+      step: 4,
+      title: "Design email sequences",
+      desc: "Napisz 5-10 emaili w kazdej sekwencji z wartoscia edukacyjna. A/B testuj subject lines."
+    },
+    {
+      step: 5,
+      title: "Setup automation workflows",
+      desc: "Skonfiguruj triggery (form submit, email open, link click). Ustaw delay miedzy emailami (48h)."
+    },
+    {
+      step: 6,
+      title: "Lead scoring setup",
+      desc: "Przydziel punkty za behawior i dane. Ustaw threshold dla handoff do sprzedazy (np. 100 pkt)."
+    },
+    {
+      step: 7,
+      title: "Testing i optimization",
+      desc: "Testuj na malej gruupie, monitoruj open rate, click rate, conversion rate. Iteruj przez 3-6 miesiecy."
+    },
+    {
+      step: 8,
+      title: "Skalowanie",
+      desc: "Po potwierdzeniu ROI, skaluj baze, dodaj nowe sekwencje, zintegruj nowe kanaly (SMS, social)."
+    }
+  ];
+
+  const roiMetrics = [
+    {
+      metric: "Cost Per Lead (CPL)",
+      formula: "Calkowity koszt / liczba leadow",
+      example: "HubSpot $500/mies / 50 leadow = $10 CPL"
+    },
+    {
+      metric: "Conversion Rate",
+      formula: "Liczba konwersji / liczba leadow * 100%",
+      example: "10 klientow z 100 leadow = 10% conversion"
+    },
+    {
+      metric: "Cost Per Customer (CAC)",
+      formula: "Calkowity koszt / liczba pozyskanych klientow",
+      example: "HubSpot $500 + ads $500 / 20 klientow = $50 CAC"
+    },
+    {
+      metric: "Customer Lifetime Value (LTV)",
+      formula: "Srednia przychod na klienta * sredni zycia klienta",
+      example: "Przychod $1000 * 5 lat = $5000 LTV"
+    },
+    {
+      metric: "ROI",
+      formula: "(Przychod - Koszty) / Koszty * 100%",
+      example: "($100k przychod - $10k koszt) / $10k = 900% ROI"
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "Jaki jest najlepszy tool do automatyzacji dla poczatkujacych?",
+      answer: "Dla poczatkujacych: MailerLite (najnizsza cena, intuicyjny) lub GetResponse (email + automation + webinary). Obie platformy maja dobry free plan i nie wymagaja duzej wiedzy technicznej. Dla B2B: zacznij z ActiveCampaign lub HubSpot free planu."
+    },
+    {
+      question: "Czy mogę bez automatyzacji zrobić marketing online?",
+      answer: "Tak, ale bedzie to powolne i nieefektywne. Bez automatyzacji musisz recznie wysylac maile, czylic leady i przypominac o ofertach. Automatyzacja pozwala ci pracowac bardziej mądrze - system pracuje za ciebie 24/7. Zwlaszcza dla scaling biznesu, automatyzacja jest konieczna."
+    },
+    {
+      question: "Ile czasu zajmuje setup automatyzacji?",
+      answer: "Podstawowy setup: 2-4 tygodnie. Importowanie bazy (1 tydzien), design workflows (1 tydzien), testing (2 tygodnie). Pelna optymalizacja: 3-6 miesiecy. Zalezy od zlozosci - prosty welcome series to kilka dni, duzy funnel z multi-channel to 3+ miesiace."
+    },
+    {
+      question: "Czy automatyzacja zwieksza spam rate?",
+      answer: "Nie, jesli robisz to poprawnie. Klucz: 1) Segmentuj odbiorce - wysylaj relevantne maile, 2) Ustaw rozumne czestotliwosci emaili (nie wiecej niz 2-3 dziennie), 3) Zawsze daj unsubscribe button, 4) Monitoruj unsubscribe rate. Dobrze skonfigurowana automatyzacja ma nizszy spam rate niz manualne kampanie."
+    },
+    {
+      question: "Jak integrować platformę automatyzacji z CRM?",
+      answer: "Większość platform (HubSpot, ActiveCampaign) ma wbudowany CRM lub integruje się z Salesforce. Konfiguracja: 1) Zaloguj się do obu platform, 2) W sekcji integrations, autoryzuj dostęp, 3) Mapuj pola (np. email, imię, status lead), 4) Testuj sync. Alternatywa: Zapier do niestandardowych integracji. Po skonfigurowaniu data płynie automatycznie między systemami."
+    }
+  ];
+
   return (
-    <Layout>
+    <>
       <SEOHead
-        title="Marketing Automation — co to jest i jak wdrożyć? | Fotz Studio Blog"
-        description="Marketing automation — co to jest, jak działa i jak wdrożyć w małej i średniej firmie? Narzędzia, przykłady, koszty i gotowe scenariusze automatyzacji marketingu."
-        canonical="https://fotz.pl/blog/marketing-automation"
-        ogTitle="Marketing Automation — przewodnik po automatyzacji marketingu"
-        ogDescription="Czym jest marketing automation i jak go wdrożyć? Narzędzia, koszty, przykłady workflows dla e-maila, CRM i social media."
+        title="Automatyzacja marketingu narzedzia | HubSpot, ActiveCampaign, Marketo - Poradnik 2025"
+        description="Odkryj najlepsze narzedzia do automatyzacji marketingu. Porownanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite, Klaviyo. Ceny, funkcje, kto dla kogo."
+        canonical="https://fotz.pl/blog/automatyzacja-marketingu-narzedzia"
       />
       <ArticleSchema
-        title="Marketing Automation — co to jest i jak wdrożyć?"
-        description="Kompletny przewodnik po marketing automation. Narzędzia, scenariusze, koszty i najlepsze praktyki dla firm z każdej branży."
-        author="Fotz Studio"
-        datePublished="2026-03-20"
-        url="https://fotz.pl/blog/marketing-automation"
+        title="Automatyzacja marketingu narzedzia - Porównanie HubSpot, Marketo, ActiveCampaign i innych"
+        description="Pełny poradnik do narzędzi automatyzacji marketingu. Porównanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite. Ceny, funkcje, najlepsze dla B2B/B2C."
+        datePublished="2025-04-10"
+        dateModified="2025-08-01"
+        url="https://fotz.pl/blog/automatyzacja-marketingu-narzedzia"
       />
-      <BreadcrumbSchema
-        items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Marketing Automation", url: "https://fotz.pl/blog/marketing-automation" },
-        ]}
-      />
-      <FAQSchema items={faqItems} />
+      <BreadcrumbSchema breadcrumbs={[
+        { name: "Strona główna", url: "/" },
+        { name: "Blog", url: "/blog" },
+        { name: "Automatyzacja marketingu narzedzia", url: "/blog/automatyzacja-marketingu-narzedzia" }
+      ]} />
 
-      <article className="max-w-4xl mx-auto px-4 py-12 pt-28">
-        {/* Back */}
-        <div className="mb-8">
-          <Button variant="ghost" size="sm" asChild className="text-muted-foreground hover:text-foreground -ml-2">
-            <Link to="/blog">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Wróć do bloga
-            </Link>
-          </Button>
-        </div>
+      <Layout>
+        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
 
-        {/* Header */}
-        <header className="mb-10">
-          <div className="flex flex-wrap items-center gap-3 mb-5">
-            <span className="bg-primary/10 text-primary text-xs font-semibold px-3 py-1.5 rounded-full">
-              Marketing
-            </span>
-            <span className="bg-muted text-muted-foreground text-xs font-semibold px-3 py-1.5 rounded-full">
-              Automatyzacja
-            </span>
-          </div>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-            Marketing Automation — co to jest i jak wdrożyć automatyzację marketingu w firmie?
-          </h1>
-          <div className="flex flex-wrap items-center gap-5 text-sm text-muted-foreground border-b border-border/50 pb-6">
-            <span className="flex items-center gap-1.5">
-              <User className="w-4 h-4" /> Fotz Studio
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Calendar className="w-4 h-4" /> 20 marca 2026
-            </span>
-            <span className="flex items-center gap-1.5">
-              <Clock className="w-4 h-4" /> 10 min czytania
-            </span>
-          </div>
-          <p className="mt-6 text-xl text-muted-foreground leading-relaxed">
-            Marketing automation to nie science-fiction — to konkretne narzędzie, które
-            oszczędza czas, zwiększa konwersję i pozwala docierać do klientów z właściwym
-            komunikatem we właściwym momencie. Dowiedz się, jak to działa i jak zacząć.
-          </p>
-        </header>
-
-        {/* TOC */}
-        <div className="bg-muted/40 border border-border/50 rounded-xl p-6 mb-10">
-          <h2 className="font-semibold text-foreground mb-3">Spis treści</h2>
-          <ol className="space-y-2 text-sm text-muted-foreground list-decimal list-inside">
-            <li><a href="#co-to-jest" className="hover:text-primary transition-colors">Co to jest marketing automation?</a></li>
-            <li><a href="#jak-dziala" className="hover:text-primary transition-colors">Jak działa automatyzacja marketingu?</a></li>
-            <li><a href="#scenariusze" className="hover:text-primary transition-colors">Najpopularniejsze scenariusze (workflows)</a></li>
-            <li><a href="#narzedzia" className="hover:text-primary transition-colors">Narzędzia marketing automation</a></li>
-            <li><a href="#email-automation" className="hover:text-primary transition-colors">Automatyzacja e-mail marketingu</a></li>
-            <li><a href="#lead-nurturing" className="hover:text-primary transition-colors">Lead nurturing — jak budować relację?</a></li>
-            <li><a href="#koszty" className="hover:text-primary transition-colors">Koszty wdrożenia</a></li>
-            <li><a href="#jak-zaczac" className="hover:text-primary transition-colors">Jak zacząć — pierwsze kroki</a></li>
-            <li><a href="#faq" className="hover:text-primary transition-colors">FAQ</a></li>
-          </ol>
-        </div>
-
-        {/* Content */}
-        <div className="prose prose-slate max-w-none space-y-8 text-muted-foreground">
-
-          <section id="co-to-jest">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Co to jest marketing automation?</h2>
-            <p>
-              <strong className="text-foreground">Marketing automation</strong> (po polsku:
-              automatyzacja marketingu) to wykorzystanie oprogramowania do automatycznego
-              wykonywania powtarzalnych zadań marketingowych na podstawie zdefiniowanych
-              reguł i zachowania użytkowników.
-            </p>
-            <p>
-              Przykład: gdy potencjalny klient pobierze e-booka z Twojej strony, system
-              automatycznie wyśle mu e-mail z podziękowaniem, następnie po 2 dniach — wskazówki
-              dotyczące tematu e-booka, a po tygodniu — ofertę produktu powiązanego z jego
-              zainteresowaniami. Wszystko bez Twojej ręcznej interwencji.
-            </p>
-            <div className="bg-primary/5 border border-primary/20 rounded-xl p-5 my-6">
-              <div className="flex items-start gap-3">
-                <Lightbulb className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <div>
-                  <strong className="text-foreground block mb-1">Kluczowa zasada</strong>
-                  <p className="text-sm">
-                    Marketing automation nie zastępuje ludzkiego marketingu — on go wzmacnia.
-                    Twoje pomysły i strategia zostają; automatyzacja przejmuje wykonanie
-                    powtarzalnych czynności, które pochłaniają czas.
-                  </p>
-                </div>
+        {/* Hero */}
+        <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
+          <div className="max-w-3xl mx-auto px-4 md:px-6">
+            <div>
+              <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
+                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min czytania</span>
+                <span className="flex items-center gap-1"><Zap className="w-4 h-4" /> Marketing automation</span>
               </div>
+              <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
+                Automatyzacja marketingu narzedzia
+              </h1>
+              <p className="text-xl text-slate-300 leading-relaxed">
+                Porownanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite i Klaviyo. Ceny, funkcje, ktorego narzedzia wybrac dla swojego biznesu.
+              </p>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section id="jak-dziala">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Jak działa automatyzacja marketingu?</h2>
-            <p>
-              System marketing automation działa w oparciu o trzy elementy:
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 my-6">
-              {[
-                {
-                  icon: Zap,
-                  title: "Trigger (wyzwalacz)",
-                  desc: "Zdarzenie uruchamiające automatyzację — np. zapis na newsletter, kliknięcie w link, odwiedzenie podstrony, porzucenie koszyka.",
-                },
-                {
-                  icon: Settings,
-                  title: "Warunki",
-                  desc: "Reguły definiujące, kiedy co się dzieje — np. 'jeśli klient otworzył e-mail, ale nie kliknął, wyślij follow-up po 3 dniach'.",
-                },
-                {
-                  icon: Mail,
-                  title: "Akcja",
-                  desc: "To, co system robi automatycznie — wysyłka e-maila, SMS, powiadomienia push, aktualizacja tagu w CRM, przypisanie do segmentu.",
-                },
-              ].map((item, i) => (
-                <div key={i} className="bg-card border border-border/60 rounded-xl p-5">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center mb-3">
-                    <item.icon className="w-5 h-5 text-primary" />
+        {/* Intro */}
+        <section className="py-12 md:py-16 bg-gray-900 border-b border-gray-800">
+          <div className="max-w-3xl mx-auto px-4 md:px-6">
+            <FadeInView>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                Automatyzacja marketingu zmienia gre dla firm chcacych skalowac bez proporcjonalnego wzrostu kosztow. Zamiast ręcznego wysyłania emaili i trackowania leadów, system robi to za Ciebie - 24/7, bez bledow, z personalizacja.
+              </p>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                Ale jaki tool wybrać? Na rynku jest HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite, Klaviyo i wiele innych. Każdy obiecuje najlepsze rezultaty. W tym przewodniku porownujemy narzedzia - ceny, funkcje, pros/cons - abyśmy mógł wybrać najlepsze dla siebie.
+              </p>
+            </FadeInView>
+          </div>
+        </section>
+
+        {/* Porownanie narzedzi */}
+        <section className="py-12 md:py-16 bg-gray-900 border-b border-gray-800">
+          <div className="max-w-6xl mx-auto px-4 md:px-6">
+            <FadeInView>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Porownanie narzedzi do automatyzacji</h2>
+              <p className="text-slate-300 mb-12">
+                Oto glowne platformy - ceny, najsilniejsze strony i dla kogo najlepsze:
+              </p>
+            </FadeInView>
+
+            <div className="space-y-6">
+              {platforms.map((platform, idx) => (
+                <FadeInView key={idx} delay={idx * 0.1}>
+                  <div className="bg-gray-800 border border-gray-700 rounded-lg p-6 hover:border-yellow-400/50 transition">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <h3 className="text-xl font-bold text-yellow-400 mb-2">{platform.name}</h3>
+                        <p className="text-slate-400 text-sm mb-4">Cena: <span className="text-slate-200 font-semibold">{platform.priceRange}</span></p>
+                        <p className="text-slate-300 mb-4">{platform.strength}</p>
+
+                        <div className="mb-4">
+                          <p className="text-sm text-slate-400 font-semibold mb-2">Najlepszy dla:</p>
+                          <p className="text-slate-300 text-sm">{platform.bestFor}</p>
+                        </div>
+
+                        <div className="space-y-2">
+                          <p className="text-sm text-green-400 font-semibold">Zalety:</p>
+                          {platform.pros.map((pro, i) => (
+                            <div key={i} className="flex gap-2 text-sm text-slate-300">
+                              <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" />
+                              <span>{pro}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div>
+                        <p className="text-sm text-slate-400 font-semibold mb-3">Glowne funkcje:</p>
+                        <div className="bg-gray-900/50 rounded p-4 mb-4">
+                          <ul className="space-y-2">
+                            {platform.features.map((feature, i) => (
+                              <li key={i} className="text-sm text-slate-300 flex gap-2">
+                                <span className="text-yellow-400">•</span> {feature}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+
+                        <div className="space-y-2">
+                          <p className="text-sm text-red-400 font-semibold">Wady:</p>
+                          {platform.cons.map((con, i) => (
+                            <div key={i} className="flex gap-2 text-sm text-slate-300">
+                              <AlertCircle className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
+                              <span>{con}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm">{item.desc}</p>
-                </div>
+                </FadeInView>
               ))}
             </div>
-            <p>
-              Te trzy elementy łączone w{" "}
-              <strong className="text-foreground">przepływy pracy (workflows)</strong> tworzą
-              kompleksowe ścieżki komunikacji z klientem. Nowoczesne systemy potrafią zarządzać
-              setkami takich ścieżek jednocześnie, personalizując przekaz dla każdego kontaktu.
-            </p>
-          </section>
+          </div>
+        </section>
 
-          <section id="scenariusze">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Najpopularniejsze scenariusze marketing automation</h2>
+        {/* Rodzaje automatyzacji */}
+        <section className="py-12 md:py-16 bg-gray-900 border-b border-gray-800">
+          <div className="max-w-4xl mx-auto px-4 md:px-6">
+            <FadeInView>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Co mozesz zautomatyzowac?</h2>
+              <p className="text-slate-300 mb-12">
+                Oto glowne typy automatyzacji ktore zwiekszaja konwersje i zmniejszaja prace manualną:
+              </p>
+            </FadeInView>
 
-            <h3 className="text-xl font-semibold text-foreground mb-3">1. Powitanie nowego subskrybenta (Welcome sequence)</h3>
-            <p>
-              Gdy ktoś zapisuje się na newsletter — automatycznie dostaje serię 3–5 e-maili:
-              powitanie + wartościowy content → historia i misja firmy → najważniejsze zasoby/produkty
-              → oferta specjalna dla nowych → zaproszenie do dalszej interakcji.
-            </p>
-
-            <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">2. Porzucony koszyk (e-commerce)</h3>
-            <p>
-              Klient dodał produkt do koszyka, ale nie kupił. System automatycznie wysyła:
-              po 1 godzinie — przypomnienie o koszyku, po 24 godzinach — social proof (opinie),
-              po 48 godzinach — ograniczona czasowo zniżka. Skuteczność: 10–15% powrotu do zakupu.
-            </p>
-
-            <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">3. Lead scoring i przekazanie do sprzedaży</h3>
-            <p>
-              System przyznaje punkty za aktywność (otwarcie e-maila = 1 pkt, kliknięcie = 3 pkt,
-              odwiedzenie strony cennika = 10 pkt). Gdy lead osiągnie próg (np. 50 pkt), system
-              automatycznie powiadamia handlowca i tworzy zadanie w CRM.
-            </p>
-
-            <h3 className="text-xl font-semibold text-foreground mb-3 mt-6">4. Re-engagement nieaktywnych kontaktów</h3>
-            <p>
-              Kontakty, które nie otwierały e-maili przez 6 miesięcy, dostają specjalną sekwencję
-              re-engagement. Jeśli nie reagują — są automatycznie przenoszone do osobnej listy lub
-              usuwane z aktywnej bazy (co chroni wskaźniki dostarczalności).
-            </p>
-          </section>
-
-          <section id="narzedzia">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Narzędzia marketing automation — porównanie</h2>
-            <div className="overflow-x-auto my-6">
-              <table className="w-full text-sm border-collapse">
-                <thead>
-                  <tr className="bg-muted">
-                    <th className="text-left p-3 border border-border/40 font-semibold text-foreground">Narzędzie</th>
-                    <th className="text-left p-3 border border-border/40 font-semibold text-foreground">Cena (start)</th>
-                    <th className="text-left p-3 border border-border/40 font-semibold text-foreground">Dla kogo</th>
-                    <th className="text-left p-3 border border-border/40 font-semibold text-foreground">Mocna strona</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["GetResponse", "Darmowy / od 50 zł/mies.", "MŚP, e-commerce", "Polska firma, świetny e-mail"],
-                    ["ActiveCampaign", "od ~120 zł/mies.", "Zaawansowani", "Złożone workflows, CRM"],
-                    ["HubSpot", "Darmowy / od 500 zł/mies.", "B2B, startupy", "All-in-one CRM + marketing"],
-                    ["Mailchimp", "Darmowy / od 60 zł/mies.", "Mikrofirmy", "Prostota, e-mail"],
-                    ["SALESmanago", "od 2 000 zł/mies.", "Duży e-commerce", "AI, personalizacja"],
-                    ["Klaviyo", "Darmowy / od 150 zł/mies.", "E-commerce", "SMS + e-mail, segmentacja"],
-                  ].map(([tool, price, for_, strength]) => (
-                    <tr key={tool} className="even:bg-muted/30">
-                      <td className="p-3 border border-border/40 text-foreground font-medium">{tool}</td>
-                      <td className="p-3 border border-border/40">{price}</td>
-                      <td className="p-3 border border-border/40">{for_}</td>
-                      <td className="p-3 border border-border/40">{strength}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <section id="email-automation">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Automatyzacja e-mail marketingu</h2>
-            <p>
-              <strong className="text-foreground">E-mail automation</strong> to najpopularniejszy
-              rodzaj marketing automation — i jeden z najskuteczniejszych. Wskaźnik ROI dla
-              e-mail marketingu wynosi średnio 42:1 (Litmus, 2023), a automatyczne e-maile
-              osiągają 70,5% wyższy open rate niż masowe wysyłki.
-            </p>
-            <p>Kluczowe typy automatycznych e-maili:</p>
-            <ul className="space-y-2 my-5">
-              {[
-                "Welcome e-mail — natychmiast po zapisie na newsletter lub rejestracji",
-                "Confirmation e-mail — potwierdzenie zakupu, rezerwacji, wypełnienia formularza",
-                "Transakcyjne e-maile — paragon, faktura, status zamówienia",
-                "Behavioral triggers — e-mail wysyłany po konkretnym zachowaniu (np. odwiedzenie strony cennika)",
-                "Birthday/anniversary — automatyczne życzenia z ofertą specjalną",
-                "Winback campaign — próba odzyskania nieaktywnych klientów",
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm">
-                  <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          <section id="lead-nurturing">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Lead nurturing — jak budować relację z potencjalnym klientem?</h2>
-            <p>
-              <strong className="text-foreground">Lead nurturing</strong> to automatyczny
-              proces „dojrzewania" leada — prowadzenia go przez lejek sprzedażowy od momentu,
-              gdy jeszcze nie jest gotowy do zakupu, do momentu decyzji.
-            </p>
-            <p>
-              Badania pokazują, że{" "}
-              <strong className="text-foreground">79% leadów nigdy nie dokonuje zakupu</strong>{" "}
-              z powodu braku odpowiedniego nurturingu. Firmy, które inwestują w lead nurturing,
-              generują o 50% więcej gotowych do zakupu leadów przy 33% niższych kosztach.
-            </p>
-            <div className="bg-card border border-border/60 rounded-xl p-6 my-6">
-              <h3 className="font-bold text-foreground mb-4">Przykładowa sekwencja nurturingowa (B2B)</h3>
-              <div className="space-y-3">
-                {[
-                  { day: "Dzień 0", action: "Lead pobiera whitepaper → natychmiastowy e-mail z linkiem + potwierdzenie" },
-                  { day: "Dzień 2", action: "E-mail: case study firmy z podobnej branży (budowanie zaufania)" },
-                  { day: "Dzień 5", action: "E-mail: artykuł o typowych problemach w branży leada" },
-                  { day: "Dzień 10", action: "E-mail: porównanie rozwiązań (Twoje vs. konkurencja)" },
-                  { day: "Dzień 15", action: "E-mail: zaproszenie na webinar lub bezpłatną konsultację" },
-                  { day: "Dzień 21", action: "Jeśli lead nie otwierał → inny temat/podejście; jeśli aktywny → przekazanie do handlowca" },
-                ].map((step, i) => (
-                  <div key={i} className="flex gap-4 items-start">
-                    <span className="bg-primary/10 text-primary text-xs font-semibold px-2 py-1 rounded shrink-0 mt-0.5">
-                      {step.day}
-                    </span>
-                    <span className="text-sm">{step.action}</span>
+            <div className="grid md:grid-cols-2 gap-6">
+              {automationTypes.map((type, idx) => (
+                <FadeInView key={idx} delay={idx * 0.1}>
+                  <div className="bg-gray-800 border border-gray-700 rounded-lg p-6">
+                    <div className="flex items-start gap-3 mb-3">
+                      <Cpu className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
+                      <h3 className="text-lg font-bold text-white">{type.title}</h3>
+                    </div>
+                    <p className="text-slate-300 text-sm mb-3">{type.description}</p>
+                    <div className="bg-gray-900/50 rounded p-3 mb-3">
+                      <p className="text-xs text-slate-400 mb-1 font-semibold">Przyklad:</p>
+                      <p className="text-sm text-slate-300">{type.example}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {type.tools.map((tool, i) => (
+                        <span key={i} className="text-xs bg-yellow-400/10 text-yellow-300 px-2 py-1 rounded border border-yellow-400/20">
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          <section id="koszty">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Koszty wdrożenia marketing automation</h2>
-            <p>
-              Całkowity koszt marketing automation składa się z kilku elementów:
-            </p>
-            <ul className="space-y-3 my-5">
-              {[
-                {
-                  item: "Licencja na narzędzie",
-                  cost: "50–5 000 zł/mies. (zależy od skali i funkcji)",
-                },
-                {
-                  item: "Wdrożenie i konfiguracja",
-                  cost: "1 000–10 000 zł jednorazowo (jeśli korzystasz z agencji)",
-                },
-                {
-                  item: "Tworzenie treści (e-maile, landing pages)",
-                  cost: "500–3 000 zł miesięcznie lub własne zasoby",
-                },
-                {
-                  item: "Szkolenie zespołu",
-                  cost: "Wliczone w wdrożenie lub bezpłatne webinary producenta",
-                },
-                {
-                  item: "Utrzymanie i optymalizacja",
-                  cost: "Kilka godzin miesięcznie lub zewnętrzna agencja",
-                },
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <BarChart2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                  <span>
-                    <strong className="text-foreground">{item.item}:</strong>{" "}
-                    {item.cost}
-                  </span>
-                </li>
+                </FadeInView>
               ))}
-            </ul>
-            <p>
-              Dla małych firm zaczynających przygodę z automatyzacją, realistyczny budżet startowy
-              to <strong className="text-foreground">200–500 zł miesięcznie</strong> (narzędzie +
-              podstawowe treści). Przy większej skali i zaawansowanych scenariuszach budżet rośnie,
-              ale ROI rośnie proporcjonalnie szybciej.
-            </p>
-          </section>
+            </div>
+          </div>
+        </section>
 
-          <section id="jak-zaczac">
-            <h2 className="text-2xl font-bold text-foreground mb-4">Jak zacząć z marketing automation — pierwsze kroki</h2>
-            <div className="space-y-5 my-6">
-              {[
-                {
-                  step: "1",
-                  title: "Zdefiniuj cel",
-                  desc: "Co chcesz osiągnąć? Więcej leadów, wyższy open rate, krótszy cykl sprzedaży? Konkretny cel wyznacza zakres automatyzacji.",
-                },
-                {
-                  step: "2",
-                  title: "Wybierz jedno narzędzie",
-                  desc: "Zacznij od jednego — najlepiej pasującego do Twojego budżetu i potrzeb. Mailchimp lub GetResponse to bezpieczny wybór na start.",
-                },
-                {
-                  step: "3",
-                  title: "Zbuduj pierwszy workflow",
-                  desc: "Prosty welcome e-mail dla nowych subskrybentów to idealny punkt startowy. Jeden trigger, jedna akcja — nie przekombinuj.",
-                },
-                {
-                  step: "4",
-                  title: "Mierz i optymalizuj",
-                  desc: "Analizuj open rate, CTR, konwersję. A/B testuj tematy e-maili, timing wysyłki i treść CTA. Optymalizuj co miesiąc.",
-                },
-                {
-                  step: "5",
-                  title: "Rozszerzaj stopniowo",
-                  desc: "Gdy pierwszy workflow działa, dodaj kolejny (np. sekwencja porzuconego koszyka). Buduj kompleksowy system krok po kroku.",
-                },
-              ].map((step, i) => (
-                <div key={i} className="flex gap-5 items-start">
-                  <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shrink-0 text-primary-foreground font-bold">
-                    {step.step}
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">{step.title}</h3>
-                    <p className="text-sm">{step.desc}</p>
+        {/* Email automation */}
+        <section className="py-12 md:py-16 bg-gray-900 border-b border-gray-800">
+          <div className="max-w-4xl mx-auto px-4 md:px-6">
+            <FadeInView>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Email marketing automation - Praktyczne przyklady</h2>
+              <p className="text-slate-300 mb-8">
+                Email to najsilniejszy kanal automatyzacji. Oto przyklady sekwencji ktore pracuja:
+              </p>
+            </FadeInView>
+
+            <div className="space-y-6">
+              <FadeInView delay={0.1}>
+                <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-6">
+                  <h3 className="text-lg font-bold text-blue-300 mb-4 flex items-center gap-2">
+                    <Mail className="w-5 h-5" /> Welcome Series (dla nowych subskrybentow)
+                  </h3>
+                  <div className="space-y-3 text-sm text-slate-300">
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-blue-300 flex-shrink-0">Day 1:</span>
+                      <span>Witaj email - dzieki za rejestracje, co dostaniesz, co robie</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-blue-300 flex-shrink-0">Day 3:</span>
+                      <span>Problem email - identyfikuj biggest pain point, pokaż ze rozumiesz problem</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-blue-300 flex-shrink-0">Day 5:</span>
+                      <span>Solution email - jak rozwiazujesz ten problem, case study lub testimonial</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-blue-300 flex-shrink-0">Day 7:</span>
+                      <span>Social proof - testimonials od zadowolonych klientow, reviews</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-blue-300 flex-shrink-0">Day 10:</span>
+                      <span>Call to action - demo, trial, spotkanie. Bez presji, tylko zaproponowanie</span>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </section>
+              </FadeInView>
 
-          {/* FAQ */}
-          <section id="faq">
-            <h2 className="text-2xl font-bold text-foreground mb-6">FAQ — marketing automation</h2>
+              <FadeInView delay={0.2}>
+                <div className="bg-emerald-900/20 border border-emerald-700/50 rounded-lg p-6">
+                  <h3 className="text-lg font-bold text-emerald-300 mb-4 flex items-center gap-2">
+                    <BarChart3 className="w-5 h-5" /> Nurture Sequence (dla leadow w MOFU)
+                  </h3>
+                  <div className="space-y-3 text-sm text-slate-300">
+                    <p>Wysylana gdy lead pobierze whitepaper lub rejestruje sie na webinar:</p>
+                    <div className="flex gap-4 mt-3">
+                      <span className="font-semibold text-emerald-300 flex-shrink-0">48h:</span>
+                      <span>Email 1 - deep dive w topic z whitepaper, educational content</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-emerald-300 flex-shrink-0">96h:</span>
+                      <span>Email 2 - intermediate level, how-to guide, best practices</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-emerald-300 flex-shrink-0">1 week:</span>
+                      <span>Email 3 - advanced tactics, case study, ROI metrics</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-emerald-300 flex-shrink-0">2 weeks:</span>
+                      <span>Email 4 - CTA do demo, propozycja, exclusive offer</span>
+                    </div>
+                  </div>
+                </div>
+              </FadeInView>
+
+              <FadeInView delay={0.3}>
+                <div className="bg-orange-900/20 border border-orange-700/50 rounded-lg p-6">
+                  <h3 className="text-lg font-bold text-orange-300 mb-4 flex items-center gap-2">
+                    <Mail className="w-5 h-5" /> Abandoned Cart (dla e-commerce)
+                  </h3>
+                  <div className="space-y-3 text-sm text-slate-300">
+                    <p>Automatyczne powiadomienia gdy klient opusci koszyk:</p>
+                    <div className="flex gap-4 mt-3">
+                      <span className="font-semibold text-orange-300 flex-shrink-0">1 hour:</span>
+                      <span>Email 1 - Reminder o opuszczonym koszyku, link do koszyka</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-orange-300 flex-shrink-0">24h:</span>
+                      <span>Email 2 - Second reminder + 10% discount code</span>
+                    </div>
+                    <div className="flex gap-4">
+                      <span className="font-semibold text-orange-300 flex-shrink-0">72h:</span>
+                      <span>Email 3 - Final call + bigger discount, limited time offer</span>
+                    </div>
+                  </div>
+                </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* Metryki ROI */}
+        <section className="py-12 md:py-16 bg-gray-900 border-b border-gray-800">
+          <div className="max-w-4xl mx-auto px-4 md:px-6">
+            <FadeInView>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Jak mierzyć ROI automatyzacji?</h2>
+              <p className="text-slate-300 mb-8">
+                Nie mozesz poprawiac tego co nie mierzysz. Oto glowne metryki:
+              </p>
+            </FadeInView>
+
             <div className="space-y-4">
-              {faqItems.map((item, i) => (
-                <div key={i} className="bg-card border border-border/60 rounded-xl p-5">
-                  <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                  <p className="text-sm">{item.answer}</p>
-                </div>
+              {roiMetrics.map((item, idx) => (
+                <FadeInView key={idx} delay={idx * 0.1}>
+                  <div className="bg-gray-800 border border-gray-700 rounded-lg p-4">
+                    <h3 className="text-lg font-bold text-yellow-400 mb-2">{item.metric}</h3>
+                    <p className="text-sm text-slate-400 mb-2">
+                      <span className="font-semibold text-slate-300">Wzor:</span> {item.formula}
+                    </p>
+                    <p className="text-sm text-slate-300">
+                      <span className="font-semibold text-slate-300">Przyklad:</span> {item.example}
+                    </p>
+                  </div>
+                </FadeInView>
               ))}
             </div>
-          </section>
 
-          {/* CTA */}
-          <div className="bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center my-10">
-            <h2 className="text-2xl font-bold text-foreground mb-3">
-              Chcesz wdrożyć automatyzację marketingu w swojej firmie?
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              Pomożemy dobrać narzędzia, zaprojektować workflows i wdrożyć system
-              marketing automation dopasowany do Twoich potrzeb.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button asChild size="lg">
-                <Link to="/kontakt">
-                  Skonsultuj się bezpłatnie <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline">
-                <Link to="/uslugi/social-media">
-                  Nasze usługi marketingowe
-                </Link>
-              </Button>
+            <FadeInView delay={0.6} className="mt-6">
+              <div className="bg-gradient-to-r from-yellow-400/10 to-yellow-600/10 border border-yellow-400/30 rounded-lg p-6">
+                <p className="text-slate-300 text-sm mb-4">
+                  <span className="font-semibold text-yellow-300">Szybka zasada:</span> Jesli LTV (lifetime value klienta) jest wiecej niz 3x CAC (koszt pozyskania), automatyzacja jest rentowna.
+                </p>
+                <p className="text-slate-300 text-sm">
+                  Przyklad: LTV = 5000 zl, CAC = 1200 zl → 5000 / 1200 = 4.2x. To dobry zwrot.
+                </p>
+              </div>
+            </FadeInView>
+          </div>
+        </section>
+
+        {/* Implementacja */}
+        <section className="py-12 md:py-16 bg-gray-900 border-b border-gray-800">
+          <div className="max-w-4xl mx-auto px-4 md:px-6">
+            <FadeInView>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Jak zaczac - 8 krokow implementacji</h2>
+              <p className="text-slate-300 mb-8">
+                Praktyczne kroki aby wdrozyc automatyzacje bez bolu:
+              </p>
+            </FadeInView>
+
+            <div className="space-y-4">
+              {implementationSteps.map((item) => (
+                <FadeInView key={item.step} delay={item.step * 0.08}>
+                  <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 flex gap-4">
+                    <div className="bg-yellow-400/20 rounded-full w-10 h-10 flex items-center justify-center flex-shrink-0">
+                      <span className="text-yellow-400 font-bold text-sm">{item.step}</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold text-white mb-1">{item.title}</h3>
+                      <p className="text-slate-300 text-sm">{item.desc}</p>
+                    </div>
+                  </div>
+                </FadeInView>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Related */}
-        <div className="mt-16 border-t border-border/50 pt-10">
-          <RelatedServices services={servicesByCategory.ads} />
-        </div>
-        <div className="mt-10">
-          <RelatedArticles currentArticleId="marketing-automation" />
-        </div>
-      </article>
-    </Layout>
+        {/* FAQ */}
+        <section className="py-12 md:py-16 bg-gray-900 border-b border-gray-800">
+          <div className="max-w-3xl mx-auto px-4 md:px-6">
+            <FadeInView>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Czesto zadawane pytania</h2>
+              <p className="text-slate-300 mb-8">
+                Odpowiadamy na najczestsze pytania o narzedzia automatyzacji:
+              </p>
+            </FadeInView>
+
+            <Accordion type="single" collapsible className="space-y-3">
+              {faqItems.map((item, idx) => (
+                <FadeInView key={idx} delay={idx * 0.05}>
+                  <AccordionItem value={`faq-${idx}`} className="border border-gray-700 rounded-lg bg-gray-800 px-4">
+                    <AccordionTrigger className="text-base font-semibold text-white hover:text-yellow-400 py-4">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-slate-300 pb-4 pt-0">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </FadeInView>
+              ))}
+            </Accordion>
+          </div>
+
+          <FAQSchema
+            items={faqItems.map(item => ({
+              question: item.question,
+              answer: item.answer
+            }))}
+          />
+        </section>
+
+        {/* CTA */}
+        <section className="py-12 md:py-16 bg-gradient-to-r from-yellow-400/10 to-yellow-600/10 border-b border-gray-800">
+          <div className="max-w-3xl mx-auto px-4 md:px-6 text-center">
+            <FadeInView>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Gotowy do wybrania narzedzia?
+              </h2>
+              <p className="text-xl text-slate-300 mb-8">
+                Wdrożenie automatyzacji to inwestycja, która szybko się zwraca poprzez wyższą konwersję i niższe koszty pozyskania klienta.
+                Pomożemy Ci wybrać idealne narzędzie i wdrożyć strategie.
+              </p>
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition"
+              >
+                Konsultacja bezplatna <ArrowRight className="w-5 h-5" />
+              </Link>
+            </FadeInView>
+          </div>
+        </section>
+
+        <ContactSection />
+      </Layout>
+    </>
   );
-};
-
-export default BlogMarketingAutomation;
+}

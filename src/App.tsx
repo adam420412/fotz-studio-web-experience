@@ -1368,6 +1368,9 @@ const AgencjaMarketingowaZgorzelec = lazy(() => import("./pages/AgencjaMarketing
 const BlogOptymalizacjaLandingPage = lazy(() => import("./pages/BlogOptymalizacjaLandingPage"));
 const BlogNarzedziaMarketingowe = lazy(() => import("./pages/BlogNarzedziaMarketingowe"));
 
+// Wave 242 pages
+const BlogSEODlaSklepu = lazy(() => import("./pages/BlogSEODlaSklepu"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2411,6 +2414,7 @@ const App = () => (
                 <Route path="/agencja-marketingowa/zgorzelec" element={<AgencjaMarketingowaZgorzelec />} />
                 <Route path="/blog/optymalizacja-landing-page" element={<BlogOptymalizacjaLandingPage />} />
                 <Route path="/blog/narzedzia-marketingowe" element={<BlogNarzedziaMarketingowe />} />
+                <Route path="/blog/seo-dla-sklepu-internetowego" element={<BlogSEODlaSklepu />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
