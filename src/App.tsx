@@ -266,6 +266,7 @@ const AgencjaMarketingowaTorun = lazy(() => import("./pages/AgencjaMarketingowaT
 const AgencjaMarketingowaSzczecin = lazy(() => import("./pages/AgencjaMarketingowaSzczecin"));
 const CennikPozycjonowania = lazy(() => import("./pages/CennikPozycjonowania"));
 const BlogPozycjonowanieLokalnePoradnik = lazy(() => import("./pages/BlogPozycjonowanieLokalnePoradnik"));
+const BlogInstagramDlaFirmy = lazy(() => import("./pages/BlogInstagramDlaFirmy"));
 const BlogContentMarketing = lazy(() => import("./pages/BlogContentMarketing"));
 
 // Wave 9: Strony internetowe cluster + city pages
@@ -1314,6 +1315,10 @@ const BlogRebrandingPoradnik = lazy(() => import("./pages/BlogRebrandingPoradnik
 // Wave 228: additional pages
 const BlogCopywritingDlaSEO = lazy(() => import("./pages/BlogCopywritingDlaSEO"));
 const AgencjaMarketingowaSosnowiec = lazy(() => import("./pages/AgencjaMarketingowaSosnowiec"));
+const BlogVideoMarketingROI = lazy(() => import("./pages/BlogVideoMarketingROI"));
+const BlogKosztVideoMarketingowego = lazy(() => import("./pages/BlogKosztVideoMarketingowego"));
+const AgencjaMarketingowaZabrze = lazy(() => import("./pages/AgencjaMarketingowaZabrze"));
+const BlogMarketingB2B = lazy(() => import("./pages/BlogMarketingB2B"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -1447,6 +1452,7 @@ const App = () => (
                 <Route path="/blog/social-media-dla-firm" element={<BlogSocialMediaDlaFirm />} />
                 <Route path="/blog/jak-wybrac-agencje-seo" element={<BlogJakWybracAgencjeSEO />} />
                 <Route path="/blog/pozycjonowanie-lokalne-dla-firm" element={<BlogPozycjonowanieLokalnePoradnik />} />
+                <Route path="/blog/instagram-dla-firmy" element={<BlogInstagramDlaFirmy />} />
                 <Route path="/blog/content-marketing-dla-firm" element={<BlogContentMarketing />} />
                 <Route path="/blog/jak-stworzyc-strone-internetowa" element={<BlogJakStworzyc />} />
                 <Route path="/blog/strona-internetowa-dla-malej-firmy" element={<BlogStronaInternetowaOdZera />} />
@@ -2322,6 +2328,10 @@ const App = () => (
                 <Route path="/blog/rebranding-kiedy-i-jak" element={<BlogRebrandingPoradnik />} />
                 <Route path="/blog/copywriting-seo-poradnik" element={<BlogCopywritingDlaSEO />} />
                 <Route path="/agencja-marketingowa/sosnowiec" element={<AgencjaMarketingowaSosnowiec />} />
+                <Route path="/blog/video-marketing-roi" element={<BlogVideoMarketingROI />} />
+                <Route path="/blog/koszt-produkcji-wideo" element={<BlogKosztVideoMarketingowego />} />
+                <Route path="/agencja-marketingowa/zabrze" element={<AgencjaMarketingowaZabrze />} />
+                <Route path="/blog/marketing-b2b-strategia" element={<BlogMarketingB2B />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
