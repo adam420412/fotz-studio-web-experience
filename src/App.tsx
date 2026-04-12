@@ -84,6 +84,7 @@ const BlogJakZaprojektowacLogo = lazy(() => import("./pages/BlogJakZaprojektowac
 const BlogGoogleAdsCennik = lazy(() => import("./pages/BlogGoogleAdsCennik"));
 const BlogGoogleAdsVsSeo = lazy(() => import("./pages/BlogGoogleAdsVsSeo"));
 const BlogCennikFacebookAds = lazy(() => import("./pages/BlogCennikFacebookAds"));
+const BlogFacebookAdsPoradnik = lazy(() => import("./pages/BlogFacebookAdsPoradnik"));
 const BlogProwadzenieSocialMediaCennik = lazy(() => import("./pages/BlogProwadzenieSocialMediaCennik"));
 const BlogFotografiaProduktowa = lazy(() => import("./pages/BlogFotografiaProduktowa"));
 const BlogLandingPageVsStrona = lazy(() => import("./pages/BlogLandingPageVsStrona"));
@@ -1302,6 +1303,13 @@ const BlogMarketingNieruchomosci = lazy(() => import("./pages/BlogMarketingNieru
 const AgencjaMarketingowaBialystok = lazy(() => import("./pages/AgencjaMarketingowaBialystok"));
 const BlogOptymalizacjaGoogleAds = lazy(() => import("./pages/BlogOptymalizacjaGoogleAds"));
 const PozycjonowanieSosnowiec = lazy(() => import("./pages/PozycjonowanieSosnowiec"));
+const BlogFotografiaArchitektura = lazy(() => import("./pages/BlogFotografiaArchitektura"));
+const AgencjaMarketingowaGliwice = lazy(() => import("./pages/AgencjaMarketingowaGliwice"));
+const BlogSklepInternetowyVsMarketplace = lazy(() => import("./pages/BlogSklepInternetowyVsMarketplace"));
+const BlogStrategiaCenowa = lazy(() => import("./pages/BlogStrategiaCenowa"));
+const PozycjonowanieZabrze = lazy(() => import("./pages/PozycjonowanieZabrze"));
+const BlogKosztBrandingu = lazy(() => import("./pages/BlogKosztBrandingu"));
+const BlogRebrandingPoradnik = lazy(() => import("./pages/BlogRebrandingPoradnik"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -1417,6 +1425,7 @@ const App = () => (
                 <Route path="/blog/jak-zaprojektowac-logo-dla-firmy" element={<BlogJakZaprojektowacLogo />} />
                 <Route path="/blog/google-ads-cennik" element={<BlogGoogleAdsCennik />} />
                 <Route path="/blog/cennik-facebook-ads" element={<BlogCennikFacebookAds />} />
+                <Route path="/blog/facebook-ads-poradnik" element={<BlogFacebookAdsPoradnik />} />
                 <Route path="/blog/google-ads-vs-seo" element={<BlogGoogleAdsVsSeo />} />
                 <Route path="/blog/prowadzenie-social-media-cennik" element={<BlogProwadzenieSocialMediaCennik />} />
                 <Route path="/blog/fotografia-produktowa-poradnik" element={<BlogFotografiaProduktowa />} />
@@ -2300,6 +2309,13 @@ const App = () => (
                 <Route path="/agencja-marketingowa/bialystok" element={<AgencjaMarketingowaBialystok />} />
                 <Route path="/blog/optymalizacja-google-ads" element={<BlogOptymalizacjaGoogleAds />} />
                 <Route path="/pozycjonowanie/sosnowiec" element={<PozycjonowanieSosnowiec />} />
+                <Route path="/blog/fotografia-architektury-wnetrz" element={<BlogFotografiaArchitektura />} />
+                <Route path="/agencja-marketingowa/gliwice" element={<AgencjaMarketingowaGliwice />} />
+                <Route path="/blog/sklep-internetowy-vs-marketplace" element={<BlogSklepInternetowyVsMarketplace />} />
+                <Route path="/blog/strategia-cenowa" element={<BlogStrategiaCenowa />} />
+                <Route path="/pozycjonowanie/zabrze" element={<PozycjonowanieZabrze />} />
+                <Route path="/blog/ile-kosztuje-branding" element={<BlogKosztBrandingu />} />
+                <Route path="/blog/rebranding-kiedy-i-jak" element={<BlogRebrandingPoradnik />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
