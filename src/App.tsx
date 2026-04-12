@@ -46,6 +46,7 @@ const BlogKosztStrony = lazy(() => import("./pages/BlogKosztStrony"));
 const BlogTanieStrony = lazy(() => import("./pages/BlogTanieStrony"));
 const BlogWordPressVsCustom = lazy(() => import("./pages/BlogWordPressVsCustom"));
 const BlogAudytStrony = lazy(() => import("./pages/BlogAudytStrony"));
+const BlogAudytSEOKrok = lazy(() => import("./pages/BlogAudytSEOKrok"));
 const BlogKampaniaReklamowa = lazy(() => import("./pages/BlogKampaniaReklamowa"));
 const BlogAIMarketing = lazy(() => import("./pages/BlogAIMarketing"));
 const BlogGoogleVsFacebook = lazy(() => import("./pages/BlogGoogleVsFacebook"));
@@ -1326,6 +1327,7 @@ const AgencjaMarketingowaWalbrzych = lazy(() => import("./pages/AgencjaMarketing
 const BlogLinkedInDlaFirmy = lazy(() => import("./pages/BlogLinkedInDlaFirmy"));
 const BlogMarketingLokalny = lazy(() => import("./pages/BlogMarketingLokalny"));
 const AgencjaMarketingowaElblag = lazy(() => import("./pages/AgencjaMarketingowaElblag"));
+const PozycjonowanieWalbrzych = lazy(() => import("./pages/PozycjonowanieWalbrzych"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -1418,6 +1420,7 @@ const App = () => (
                 <Route path="/blog/tanie-strony-internetowe" element={<BlogTanieStrony />} />
                 <Route path="/blog/wordpress-vs-strona-na-zamowienie" element={<BlogWordPressVsCustom />} />
                 <Route path="/blog/audyt-strony-internetowej" element={<BlogAudytStrony />} />
+                <Route path="/blog/audyt-seo-krok-po-kroku" element={<BlogAudytSEOKrok />} />
                 <Route path="/blog/ai-w-marketingu-msp-2025" element={<BlogAIMarketing />} />
                 <Route path="/blog/jak-stworzyc-landing-page" element={<BlogLandingPage />} />
                 <Route path="/blog/branding-dla-startupow" element={<BlogBrandingStartupy />} />
@@ -2345,6 +2348,7 @@ const App = () => (
                 <Route path="/blog/linkedin-dla-firmy" element={<BlogLinkedInDlaFirmy />} />
                 <Route path="/blog/marketing-lokalny-dla-firm" element={<BlogMarketingLokalny />} />
                 <Route path="/agencja-marketingowa/elblag" element={<AgencjaMarketingowaElblag />} />
+                <Route path="/pozycjonowanie/walbrzych" element={<PozycjonowanieWalbrzych />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
