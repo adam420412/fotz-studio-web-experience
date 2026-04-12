@@ -1336,6 +1336,11 @@ const BlogKosztLogo = lazy(() => import("./pages/BlogKosztLogo"));
 const AgencjaMarketingowaLegnica = lazy(() => import("./pages/AgencjaMarketingowaLegnica"));
 const BlogSklepInternetowyNaWlasnej = lazy(() => import("./pages/BlogSklepInternetowyNaWlasnej"));
 
+// Wave 235 pages
+const BlogKonwersjaStrony = lazy(() => import("./pages/BlogKonwersjaStrony"));
+const PozycjonowanieLegnica = lazy(() => import("./pages/PozycjonowanieLegnica"));
+const BlogTikTokDlaFirmy = lazy(() => import("./pages/BlogTikTokDlaFirmy"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2361,6 +2366,9 @@ const App = () => (
                 <Route path="/blog/ile-kosztuje-logo" element={<BlogKosztLogo />} />
                 <Route path="/agencja-marketingowa/legnica" element={<AgencjaMarketingowaLegnica />} />
                 <Route path="/blog/sklep-internetowy-na-wlasnej-domenie" element={<BlogSklepInternetowyNaWlasnej />} />
+                <Route path="/blog/jak-zwiekszyc-konwersje-strony" element={<BlogKonwersjaStrony />} />
+                <Route path="/pozycjonowanie/legnica" element={<PozycjonowanieLegnica />} />
+                <Route path="/blog/tiktok-dla-firmy" element={<BlogTikTokDlaFirmy />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
