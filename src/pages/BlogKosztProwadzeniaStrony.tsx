@@ -1,6 +1,6 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
-import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/SchemaMarkup";
+import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";

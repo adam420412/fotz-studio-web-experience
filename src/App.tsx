@@ -1319,6 +1319,8 @@ const BlogVideoMarketingROI = lazy(() => import("./pages/BlogVideoMarketingROI")
 const BlogKosztVideoMarketingowego = lazy(() => import("./pages/BlogKosztVideoMarketingowego"));
 const AgencjaMarketingowaZabrze = lazy(() => import("./pages/AgencjaMarketingowaZabrze"));
 const BlogMarketingB2B = lazy(() => import("./pages/BlogMarketingB2B"));
+const BlogKosztProwadzeniaStrony = lazy(() => import("./pages/BlogKosztProwadzeniaStrony"));
+const AgencjaMarketingowaWalbrzych = lazy(() => import("./pages/AgencjaMarketingowaWalbrzych"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -2332,6 +2334,8 @@ const App = () => (
                 <Route path="/blog/koszt-produkcji-wideo" element={<BlogKosztVideoMarketingowego />} />
                 <Route path="/agencja-marketingowa/zabrze" element={<AgencjaMarketingowaZabrze />} />
                 <Route path="/blog/marketing-b2b-strategia" element={<BlogMarketingB2B />} />
+                <Route path="/blog/koszt-prowadzenia-strony-internetowej" element={<BlogKosztProwadzeniaStrony />} />
+                <Route path="/agencja-marketingowa/walbrzych" element={<AgencjaMarketingowaWalbrzych />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
