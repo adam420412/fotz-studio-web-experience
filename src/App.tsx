@@ -1300,6 +1300,8 @@ const AgencjaMarketingowaCzestochowa = lazy(() => import("./pages/AgencjaMarketi
 const BlogEmailMarketingAutomation = lazy(() => import("./pages/BlogEmailMarketingAutomation"));
 const BlogMarketingNieruchomosci = lazy(() => import("./pages/BlogMarketingNieruchomosci"));
 const AgencjaMarketingowaBialystok = lazy(() => import("./pages/AgencjaMarketingowaBialystok"));
+const BlogOptymalizacjaGoogleAds = lazy(() => import("./pages/BlogOptymalizacjaGoogleAds"));
+const PozycjonowanieSosnowiec = lazy(() => import("./pages/PozycjonowanieSosnowiec"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -2296,6 +2298,8 @@ const App = () => (
                 <Route path="/blog/email-marketing-automation" element={<BlogEmailMarketingAutomation />} />
                 <Route path="/blog/marketing-nieruchomosci" element={<BlogMarketingNieruchomosci />} />
                 <Route path="/agencja-marketingowa/bialystok" element={<AgencjaMarketingowaBialystok />} />
+                <Route path="/blog/optymalizacja-google-ads" element={<BlogOptymalizacjaGoogleAds />} />
+                <Route path="/pozycjonowanie/sosnowiec" element={<PozycjonowanieSosnowiec />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
