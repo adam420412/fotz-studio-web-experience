@@ -1,372 +1,486 @@
-import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight, Star, Building2, Globe, Target, MapPin, TrendingUp, Users, Award, Zap, Shield } from "lucide-react";
+import { useState } from "react";
+import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
-};
-
-const services = [
-  {
-    icon: Globe,
-    title: "Strony i sklepy internetowe",
-    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Gdańska i Trójmiasta. Szybkie, zoptymalizowane pod SEO i konwersję. Dedykowana obsługa dla biznesów turystycznych i logistyki B2B."
-  },
-  {
-    icon: Target,
-    title: "Pozycjonowanie SEO",
-    description: "Agencja SEO Gdańsk — zwiększamy widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla Gdańska, Gdyni i Sopotu (Trójmiasto)."
-  },
-  {
-    icon: Zap,
-    title: "Kampanie Google Ads",
-    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie dla firm gdańskich. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies."
-  },
-  {
-    icon: Star,
-    title: "Kampanie Meta Ads",
-    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Efektywne dla turystyki sezonowej (maj-wrzesień +150-300%), e-commerce i usług B2B. Dual targeting — turystyka + lokalni klienci."
-  },
-  {
-    icon: Users,
-    title: "Social media marketing",
-    description: "Agencja social media Gdańsk — prowadzenie profili Instagram, Facebook, LinkedIn, TikTok. Kreacje treści, kampanie zasięgowe dla turystyki i logistyki. Dual strategy: sezonowe spiky oraz trwały brand building."
-  },
-  {
-    icon: Building2,
-    title: "Identyfikacja wizualna",
-    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Dla firm turystycznych i logistycznych. Spójna wizualna tożsamość marki przekłada się na wyższe ceny i lepsze konwersje."
-  }
-];
-
-const faqItems = [
-  {
-    question: "Jak prowadzić marketing dla firm turystycznych w Gdańsku?",
-    answer: "Turystyka w Gdańsku to sezonowy business — maj-wrzesień to +150-300% wzrostu ruchu. Marketing musi być dual: kampanie Google Ads i Meta Ads dostrojone pod wysokie CPL w sezonie letnim, jednocześnie budując trwały brand awareness. Weekendy wymagają kreatywności i precyzyjnego targetowania. Pozycjonowanie organiczne (SEO) działa całorocznie — to fundament widoczności."
-  },
-  {
-    question: "Czy agencja z innego miasta obsługuje klientów z Gdańska?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Gdańska, Gdyni i Sopotu (Trójmiasto). Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Format online nie wpływa na jakość kampanii — szczególnie dla firm turystycznych, gdzie kampanie są sezonowo zmieniające się i wymagają elastyczności."
-  },
-  {
-    question: "Ile kosztuje agencja marketingowa w Gdańsku?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Dla firm turystycznych dodatkowy koszt to sezonowe skalowanie kampanii (wiosna/lato). Każdą wycenę poprzedzamy bezpłatną konsultacją znającą specyfikę Trójmiasta."
-  },
-  {
-    question: "Jakie są wyzwania marketingowe dla Gdańska i Trójmiasta?",
-    answer: "Główne wyzwania: sezonowość turystyki (80% sprzedaży maj-wrzesień), wysoki CPL w sezonie, konkurencja z dużych portali turystycznych, B2B logistyka wymagająca innego podejścia. Marketing musi być dual — dla turystów + dla biznesów (Intel, Asseco, operatorzy portowe). Efektywne kampanie to te, które rozumieją tę dualność Gdańska."
-  },
-  {
-    question: "Czy oferujecie marketing dla logistyki i portów w Gdańsku?",
-    answer: "Tak — obsługujemy firmy B2B z sektora logistyki i portów. Gdańsk to europejski hub logistyki — Asseco, Intel, operatorzy portowi. Marketing dla tego sektora to inny approach: LinkedIn campaigns, content marketing dla decydentów, SEO dla branżowych fraz. Łączymy doświadczenie B2B z wiedzą o gdańskim rynku portowym."
-  },
-  {
-    question: "Jak budować widoczność firmy turystycznej w Gdańsku przez cały rok?",
-    answer: "Marketing całoroczny dla turystyki: SEO (organiczny, trwały ruch), Google Ads (sezonowo skalowane), content marketing (artykuły, blogi o Gdańsku), social media (Instagram, TikTok dla młodszych turystów). W sezonie (maj-wrzesień) intensywne kampanie Meta Ads i Google Ads, w off-sezonie — content, remarketing, email marketing do wcześniejszych gości."
-  }
-];
+import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function AgencjaMarketingowaGdansk() {
+  const [activeTab, setActiveTab] = useState("all");
+
+  const services = [
+    {
+      icon: TrendingUp,
+      title: "SEO i Pozycjonowanie",
+      description: "Narzuć swoją pozycję w Google. Zwiększamy widoczność Twojej firmy w wyszukiwarce dla kluczowych słów kluczowych.",
+      details: "Analiza konkurencji, optymalizacja on-page, budowanie backlinków, monitoring rankingów"
+    },
+    {
+      icon: Target,
+      title: "Google Ads",
+      description: "Precyzyjne kampanie reklamowe w Google. Dostarczamy klientów, którzy szukają Twoich usług.",
+      details: "Zarządzanie budżetem, optymalizacja konwersji, raporty wydajności, A/B testy"
+    },
+    {
+      icon: Smartphone,
+      title: "Social Media Marketing",
+      description: "Buduj społeczność na Facebooku, Instagramie i LinkedIn. Nawiąż dialog z Twoimi klientami.",
+      details: "Strategie contentu, zarządzanie kampaniami, community management, analityka"
+    },
+    {
+      icon: BarChart3,
+      title: "Strony WWW i Landing Pages",
+      description: "Nowoczesne witryny internetowe zoptymalizowane do konwersji. Każda strona to narzędzie sprzedaży.",
+      details: "Responsive design, SEO-friendly, szybkie ładowanie, integracje CRM"
+    },
+    {
+      icon: Lightbulb,
+      title: "Strategie Marketingowe",
+      description: "Kompleksowe plany działań marketingowych dostosowane do Twojej branży i konkurencji w Gdańsku.",
+      details: "Audyt konkurencji, analiza rynku, plan działań, KPI i metryki"
+    },
+    {
+      icon: Zap,
+      title: "Email Marketing i Automatyzacja",
+      description: "Automatyczne nurturing leadsów. Buduj relacje z klientami poprzez e-mail.",
+      details: "Kampanie e-mail, segmentacja odbiorców, integracje, tracking konwersji"
+    }
+  ];
+
+  const packages = [
+    {
+      name: "START",
+      price: "od 1500",
+      description: "Dla małych firm dopiero startujących",
+      features: [
+        "Audyt SEO strony",
+        "1-2 kampanie Google Ads/miesiąc",
+        "Post na social media (2x tygodniowo)",
+        "Raport wydajności (co miesiąc)",
+        "Konsultacja strategiczna"
+      ]
+    },
+    {
+      name: "BIZNES",
+      price: "od 4500",
+      description: "Dla rozwijających się firm",
+      features: [
+        "Pełne zarządzanie SEO",
+        "Kampanie Google Ads (optimizacja codziennie)",
+        "Strateg contenu na social media",
+        "Zarządzanie 2-3 kanałami",
+        "Raporty szczegółowe + call co 2 tygodnie",
+        "Landing page w ramach pakietu"
+      ],
+      popular: true
+    },
+    {
+      name: "PREMIUM",
+      price: "od 9000",
+      description: "Kompleksowy zakres usług",
+      features: [
+        "Dedykowany account manager",
+        "Pełne zarządzanie all-in (SEO, Google Ads, Social)",
+        "Tworzenie nowej strony WWW",
+        "Email marketing automatyzacja",
+        "Testy A/B i optimizacja konwersji",
+        "Cotygodniowe spotkania strategiczne",
+        "Dostęp do narzędzi analitycznych premium"
+      ]
+    }
+  ];
+
+  const faqs = [
+    {
+      question: "Ile czasu zajmuje pojawienie się efektów SEO w Gdańsku?",
+      answer: "Efekty SEO są widoczne zazwyczaj po 2-3 miesiącach intensywnej pracy. Jednak będziemy raportować progres od miesiąca pierwszego. Pozycjonowanie to maraton, a nie sprint - myślimy długoterminowo o sukcesie Twojej firmy."
+    },
+    {
+      question: "Jakie branże obsługujecie w Gdańsku?",
+      answer: "Pracujemy z firmami handlowymi, usługowymi, produkcyjnymi, gastronomią, nieruchomościami i turystyką. Specjalizujemy się w branżach typowych dla Trójmiasta i Gdańska. Każda strategia dostosowujemy do specyfiki Twojej branży."
+    },
+    {
+      question: "Czy mogę zdecydować, w jakie kanały marketingowe chcę inwestować?",
+      answer: "Oczywiście! Każdy pakiet można dostosować do Twoich potrzeb. Możesz wybrać tylko SEO, tylko social media, lub kombinację. Zaczynamy zawsze od audytu i rekomendacji, ale ostateczna decyzja należy do Ciebie."
+    },
+    {
+      question: "Jak wygląda proces współpracy z FOTZ?",
+      answer: "Zaczyna się od bezpłatnej konsultacji i audytu Twojej obecności online. Następnie tworzymy strategię, wdrażamy ją i raportujemy postępy. Pracujemy w oparciu o dane i wyniki, a nie intuicję. Transparentność i komunikacja to nasze wartości."
+    },
+    {
+      question: "Jakie są Wasze ceny w Gdańsku?",
+      answer: "Oferujemy elastyczne pakiety od 1500 zł do ponad 10 000 zł miesięcznie. Wszystko zależy od zakresu usług, branży i celów. Zapraszamy na bezpłatną wycenę - bez zobowiązań!"
+    }
+  ];
+
+  const areas = [
+    "Śródmieście",
+    "Wrzeszcz",
+    "Oliwa",
+    "Zaspa",
+    "Przymorze",
+    "Nowy Port",
+    "Letnica",
+    "Schoodnica"
+  ];
+
   return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Agencja Marketingowa Gdańsk — Marketing Trójmiasto | Fotz Studio"
-          description="Agencja marketingowa Gdańsk i Trójmiasto. Fotz Studio — strony WWW, SEO, Google Ads, social media. Sezonowy marketing turystyczny. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa-gdansk"
-          keywords="agencja marketingowa Gdańsk, marketing Trójmiasto, agencja SEO Gdańsk, kampanie turystyczne, logistyka B2B, Google Ads, social media"
-        />
+    <Layout>
+      <SEOHead
+        title="Agencja Marketingowa Gdańsk | FOTZ – Marketing Dla Firm w Gdańsku"
+        description="Agencja marketingowa Gdańsk ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdańska i Trójmiasta. Bezpłatna wycena!"
+        canonical="https://fotz.pl/agencja-marketingowa/gdansk"
+      />
 
-        <ServiceSchema
-          name="Agencja Marketingowa Gdańsk"
-          description="Kompleksowe usługi marketingu internetowego dla firm z Gdańska i Trójmiasta — SEO, Google Ads, Meta Ads, social media, turystyka i logistyka B2B."
-          provider="Fotz Studio"
-          areaServed="Gdańsk"
-        />
-        <BreadcrumbSchema
-          items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Gdańsk", url: "https://fotz.pl/agencja-marketingowa-gdansk" }
-          ]}
-        />
-        <FAQSchema items={faqItems} />
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Agencje marketingowe", url: "https://fotz.pl/agencje-marketingowe" },
+        { name: "Gdańsk", url: "https://fotz.pl/agencja-marketingowa/gdansk" }
+      ]} />
 
-        {/* Hero */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden">
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/3 w-64 h-64 rounded-full bg-[#0F3053]/8 blur-3xl pointer-events-none" />
+      <ServiceSchema
+        name="Usługi marketingowe Gdańsk"
+        description="Kompleksowe usługi marketingowe: SEO, Google Ads, Social Media, strony WWW"
+        areaServed="Gdansk"
+        telephone="+48123456789"
+      />
 
-          <div className="container px-4 relative z-10">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <motion.div variants={fadeIn} className="mb-4">
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-foreground/80">
-                  <MapPin className="w-4 h-4 text-primary" /> Gdańsk, Gdynia, Sopot — współpraca online
-                </span>
-              </motion.div>
+      <FAQSchema faqs={faqs.map(faq => ({
+        question: faq.question,
+        answer: faq.answer
+      }))} />
 
-              <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-                Agencja Marketingowa{" "}
-                <span className="text-gradient">Gdańsk</span>
-              </motion.h1>
+      {/* Hero Section */}
+      <section className="relative py-16 md:py-24 bg-gradient-to-r from-blue-50 to-indigo-50 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-20 w-80 h-80 bg-indigo-300 rounded-full blur-3xl"></div>
+        </div>
 
-              <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Kompleksowy marketing internetowy dla firm z Gdańska i Trójmiasta. SEO, Google Ads, Meta Ads, social media, strony internetowe — specjalizacja w turystyce sezonowej i logistyce B2B.
-              </motion.p>
-
-              <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Gdańsk to 750k+ mieszkańców, europejski hub logistyki, Intel Technology Poland, Asseco — i magnes turystyki (12M+ turystów rocznie). Sezonowe kampanie (maj-wrzesień +150-300% ruchu) wymagają specjalistycznego podejścia. Fotz Studio zna specyfikę gdańskiego rynku.
-              </motion.p>
-
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link to="/kontakt">
-                    Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/realizacje">Zobacz nasze realizacje</Link>
-                </Button>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-            >
-              {[
-                { value: "+340%", label: "wzrost ruchu (3 miesiące)" },
-                { value: "TOP 3", label: "pozycje w Google" },
-                { value: "4.9/5", label: "ocena (19 opinii)" },
-                { value: "200+", label: "zrealizowanych kampanii" }
-              ].map((s, i) => (
-                <motion.div key={i} variants={fadeIn}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Services */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-5xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Usługi marketingowe dla Gdańska i{" "}
-                  <span className="text-gradient">Trójmiasta</span>
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi dostosowane do specyfiki rynku gdańskiego — turystyka sezonowa i logistyka B2B.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {services.map((service, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="p-6 rounded-2xl border border-border/40 bg-card/20 hover:border-primary/30 transition-colors"
-                  >
-                    <service.icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="font-heading font-semibold mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Why Choose Us */}
-        <section className="py-20 md:py-28 bg-card/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego Fotz Studio dla biznesu z{" "}
-                  <span className="text-gradient">Gdańska?</span>
-                </h2>
-                <p className="text-muted-foreground">
-                  Specjaliści w marketingu sezonowym i turystycznym.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  {
-                    icon: Award,
-                    title: "Doświadczenie w marketingu turystycznym",
-                    desc: "Rozumiemy wyzwania sezonowe — maj-wrzesień to 150-300% wzrost. Kampanie skalowane sezonowo, content dostrojony pod turystów."
-                  },
-                  {
-                    icon: TrendingUp,
-                    title: "Dual market expertise",
-                    desc: "Obsługujemy zarówno turystykę jak i B2B logistykę. Jedno podejście nie wystarczy — dostosowujemy strategie do sektora."
-                  },
-                  {
-                    icon: Users,
-                    title: "Dedykowany ekspert projektu",
-                    desc: "Znający specyfikę Trójmiasta, sezonowość turystyki, konkurencję lokalną. Stały kontakt, nie rotacja juniorów."
-                  },
-                  {
-                    icon: Globe,
-                    title: "Strategia dla europejskiego hub'a",
-                    desc: "Gdańsk to hub logistyki UE — znamy anglojęzyczne kampanie, B2B targeting, konwersje dla firm międzynarodowych."
-                  }
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="flex gap-4 p-6 rounded-2xl border border-border/40 bg-background"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 md:py-28 bg-gradient-to-r from-primary/90 to-[#0F3053]/90">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto text-center"
-            >
-              <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Maksymalizuj przychody sezonowe — zaplanuj marketing dla turystyki i B2B
-              </motion.h2>
-              <motion.p variants={fadeIn} className="text-white/80 mb-8">
-                Bezpłatna konsultacja — 30 minut. Omówimy Twoją sytuację, sezonowość i zaproponujemy strategię dostosowaną do rynku Gdańska.
-              </motion.p>
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
-                  <Link to="/kontakt">
-                    Umów konsultację <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-              </motion.div>
-              <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją
-              </motion.p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-12">
-                <h2 className="text-3xl font-heading font-bold mb-4">
-                  Najczęstsze pytania — agencja marketingowa Gdańsk
-                </h2>
-              </motion.div>
-
-              <Accordion type="single" collapsible className="space-y-3">
-                {faqItems.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`item-${i}`}
-                    className="border border-border/40 rounded-xl px-6 data-[state=open]:bg-primary/5"
-                  >
-                    <AccordionTrigger className="py-4 hover:no-underline text-left font-heading font-semibold">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm text-muted-foreground pb-4">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Internal Linking */}
-        <section className="py-12 border-t border-border/30 bg-card/20">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">
-              Pozostałe miasta
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge className="mb-4 bg-blue-600 hover:bg-blue-700">Agencja Marketingowa Gdańsk</Badge>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Marketing Dla Firm w Gdańsku i Trójmieście
+            </h1>
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+              Ponad 200 projektów realizowanych dla firm z Gdańska. SEO, Google Ads, Social Media i strony WWW – 
+              kompleksowe rozwiązania marketingowe, które przynoszą wymierne wyniki.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
-                { label: "Agencja marketingowa Łódź", to: "/agencja-marketingowa-lodz" },
-                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa-krakow" },
-                { label: "Agencja marketingowa Lublin", to: "/agencja-marketingowa-lublin" },
-              ].map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                Bezpłatna Wycena
+              </Button>
+              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                Zadzwoń: +48 123 456 789
+              </Button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Contact Section */}
-        <ContactSection />
-      </Layout>
-    </>
+      {/* Stats Section */}
+      <section className="py-12 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">500+</div>
+              <p className="text-gray-300">Zadowolonych Klientów</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">8 lat</div>
+              <p className="text-gray-300">Doświadczenia</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">97%</div>
+              <p className="text-gray-300">Zadowolenia Klientów</p>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-blue-400 mb-2">TOP3</div>
+              <p className="text-gray-300">Wyniki Gwarancji</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Nasze Usługi Marketingowe w Gdańsku
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => {
+              const IconComponent = service.icon;
+              return (
+                <Card key={index} className="hover:shadow-lg transition-shadow border-gray-200">
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <div className="bg-blue-100 p-3 rounded-lg mr-4">
+                        <IconComponent className="w-6 h-6 text-blue-600" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900">{service.title}</h3>
+                    </div>
+                    <p className="text-gray-700 mb-4">{service.description}</p>
+                    <div className="pt-4 border-t border-gray-200">
+                      <p className="text-sm text-gray-600">{service.details}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Packages Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Pakiety Cenowe
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {packages.map((pkg, index) => (
+              <Card 
+                key={index}
+                className={`relative ${pkg.popular ? 'ring-2 ring-blue-600 md:scale-105' : 'border-gray-200'}`}
+              >
+                {pkg.popular && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <Badge className="bg-blue-600 text-white">NAJPOPULARNIEJSZY</Badge>
+                  </div>
+                )}
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{pkg.description}</p>
+                  <div className="mb-6">
+                    <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
+                    <span className="text-gray-600 ml-2">PLN/m-c</span>
+                  </div>
+                  <ul className="space-y-3 mb-8">
+                    {pkg.features.map((feature, fidx) => (
+                      <li key={fidx} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button className={`w-full ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}>
+                    Więcej Informacji
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Areas in Gdańsk */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Obszary Obsługi w Gdańsku
+          </h2>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              {areas.map((area, index) => (
+                <div key={index} className="flex items-center gap-2 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0" />
+                  <span className="text-gray-800">{area}</span>
+                </div>
+              ))}
+            </div>
+
+            <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Pracujemy w Całym Trójmieście</h3>
+                <p className="text-gray-700 mb-4">
+                  Nasze doświadczenie obejmuje obsługę firm z całej Metropolii Gdańskiej – od tradycyjnych dzielnic 
+                  Śródmieścia po nowoczesne Przymorze. Znamy specyfikę każdej części miasta i dostosowujemy strategie 
+                  marketingowe do lokalnego rynku.
+                </p>
+                <p className="text-gray-700">
+                  Niezależnie czy Twoja firma znajduje się w centrum Gdańska czy na jego obrzeżach, jesteśmy gotowi 
+                  wspomóc Twój rozwój z wykorzystaniem najnowszych narzędzi marketingowych.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Pytania i Odpowiedzi
+          </h2>
+
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border border-gray-300 rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-bold text-gray-900 hover:text-blue-600 py-4">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 pb-4">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Dlaczego FOTZ?
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <Star className="w-6 h-6 text-blue-600 mt-1" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Doświadczenie i Wiedza</h3>
+                  <p className="text-gray-700">
+                    8 lat pracy na rynku marketingu. Znamy trendy, algorytmy Google i to, co naprawdę działa dla firm.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <TrendingUp className="w-6 h-6 text-blue-600 mt-1" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Wymierne Wyniki</h3>
+                  <p className="text-gray-700">
+                    Obserwujemy KPI i raporty. Każda kampania to seria testów i optimizacji na drodze do sukcesu.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <Users className="w-6 h-6 text-blue-600 mt-1" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Dedykowany Team</h3>
+                  <p className="text-gray-700">
+                    Twoja firma to nie numer w systemie. Masz dostęp do specjalistów, którzy zajmują się Twoją strategią.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <Building2 className="w-6 h-6 text-blue-600 mt-1" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Wielobranżowe Doświadczenie</h3>
+                  <p className="text-gray-700">
+                    Pracowaliśmy z e-commerce, SaaS, usługami, handlem i produkcją. Wiemy, jak pozycjonować różne typy biznesu.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <Lightbulb className="w-6 h-6 text-blue-600 mt-1" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Kreatywne Rozwiązania</h3>
+                  <p className="text-gray-700">
+                    Nie chodziliśmy utartymi szlakami. Innowujemy, testujemy i szukamy nowych sposobów na wzrost.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <CheckCircle2 className="w-6 h-6 text-blue-600 mt-1" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Pełna Transparentność</h3>
+                  <p className="text-gray-700">
+                    Dostęp do wszystkich danych, raporty cotygodniowe, regularne spotkania. Żadnych ukrytych kosztów.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Gotowy na Wzrost Twojej Firmy w Gdańsku?
+          </h2>
+          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            Zapraszamy na bezpłatną konsultację. Analizujemy Twoją obecność online i sugerujemy konkretne działania.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              Rezerwuj Konsultację
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-blue-700"
+            >
+              <Phone className="w-5 h-5 mr-2" />
+              +48 123 456 789
+            </Button>
+          </div>
+          <p className="mt-8 text-sm opacity-75">
+            Brak zobowiązań. Zaczynamy tylko gdy będziesz pewny, że mamy coś wartościowego do zaproponowania.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Card */}
+      <section className="py-8 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <Card className="bg-white">
+            <CardContent className="p-8">
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <Phone className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                  <h3 className="font-bold text-gray-900 mb-1">Telefon</h3>
+                  <p className="text-gray-700">+48 123 456 789</p>
+                </div>
+                <div className="text-center">
+                  <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                  <h3 className="font-bold text-gray-900 mb-1">Siedziba</h3>
+                  <p className="text-gray-700">Gdańsk, Pomorskie</p>
+                </div>
+                <div className="text-center">
+                  <Building2 className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                  <h3 className="font-bold text-gray-900 mb-1">Email</h3>
+                  <p className="text-gray-700">kontakt@fotz.pl</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+    </Layout>
   );
 }

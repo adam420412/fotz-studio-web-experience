@@ -1390,6 +1390,14 @@ const AgencjaMarketingowaKoszalin = lazy(() => import("./pages/AgencjaMarketingo
 const BlogMarketingDlaDeweloperow = lazy(() => import("./pages/BlogMarketingDlaDeweloperow"));
 const BlogPozycjonowanieGoogleMaps = lazy(() => import("./pages/BlogPozycjonowanieGoogleMaps"));
 
+// Wave 251 blog pages
+const BlogReklamaFacebookVsGoogle = lazy(() => import("./pages/BlogReklamaFacebookVsGoogle"));
+const BlogSEODlaMalychFirm = lazy(() => import("./pages/BlogSEODlaMalychFirm"));
+const BlogTrendyEcommerce2027 = lazy(() => import("./pages/BlogTrendyEcommerce2027"));
+
+// Wave 250 new city (Gdynia - not previously declared)
+const AgencjaMarketingowaGdynia = lazy(() => import("./pages/AgencjaMarketingowaGdynia"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2445,6 +2453,23 @@ const App = () => (
                 <Route path="/blog/retargeting-reklamy-poradnik" element={<BlogRetargetingPoradnik />} />
                 <Route path="/agencja-marketingowa/koszalin" element={<AgencjaMarketingowaKoszalin />} />
                 <Route path="/blog/marketing-dla-deweloperow" element={<BlogMarketingDlaDeweloperow />} />
+                {/* Wave 247-250 agencja marketingowa major cities */}
+                <Route path="/agencja-marketingowa/warszawa" element={<AgencjaMarketingowaWarszawa />} />
+                <Route path="/agencja-marketingowa/krakow" element={<AgencjaMarketingowaKrakow />} />
+                <Route path="/agencja-marketingowa/wroclaw" element={<AgencjaMarketingowaWroclaw />} />
+                <Route path="/agencja-marketingowa/gdansk" element={<AgencjaMarketingowaGdansk />} />
+                <Route path="/agencja-marketingowa/poznan" element={<AgencjaMarketingowaPoznan />} />
+                <Route path="/agencja-marketingowa/lodz" element={<AgencjaMarketingowaLodz />} />
+                <Route path="/agencja-marketingowa/katowice" element={<AgencjaMarketingowaKatowice />} />
+                <Route path="/agencja-marketingowa/szczecin" element={<AgencjaMarketingowaSzczecin />} />
+                <Route path="/agencja-marketingowa/bydgoszcz" element={<AgencjaMarketingowaBydgoszcz />} />
+                <Route path="/agencja-marketingowa/lublin" element={<AgencjaMarketingowaLublin />} />
+                <Route path="/agencja-marketingowa/rzeszow" element={<AgencjaMarketingowaRzeszow />} />
+                <Route path="/agencja-marketingowa/gdynia" element={<AgencjaMarketingowaGdynia />} />
+                {/* Wave 251 blog pages */}
+                <Route path="/blog/reklama-facebook-vs-google" element={<BlogReklamaFacebookVsGoogle />} />
+                <Route path="/blog/seo-dla-malych-firm" element={<BlogSEODlaMalychFirm />} />
+                <Route path="/blog/trendy-ecommerce-2027" element={<BlogTrendyEcommerce2027 />} />
                 <Route path="/blog/pozycjonowanie-google-maps" element={<BlogPozycjonowanieGoogleMaps />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}

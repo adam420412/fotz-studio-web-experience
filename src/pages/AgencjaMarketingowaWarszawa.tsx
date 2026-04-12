@@ -1,616 +1,728 @@
-import { SEOHead } from "@/components/seo/SEOHead";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import {
-  ArrowRight,
+  Building2,
+  TrendingUp,
+  Star,
+  Users,
   MapPin,
   CheckCircle2,
-  Palette,
-  Globe,
-  Share2,
+  ArrowRight,
+  Phone,
   Target,
-  Search,
-  FileText,
-  Rocket,
+  Smartphone,
   BarChart3,
-  Users,
-  Award,
-  Video,
-  TrendingUp,
-  AlertCircle,
-  Eye,
+  Lightbulb,
   Zap,
-  Star
+  Globe,
+  PenTool,
+  Megaphone,
 } from "lucide-react";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  ServiceSchema,
+  FAQSchema,
+  BreadcrumbSchema,
+} from "@/components/seo/StructuredData";
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
-};
+const AgencjaMarketingowaWarszawa = () => {
+  const [activePackage, setActivePackage] = useState<string>("biznes");
 
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
-};
+  const services = [
+    {
+      id: "seo-lokalne",
+      icon: MapPin,
+      title: "SEO Lokalne Warszawa",
+      description:
+        "Pozycjonowanie dla firm z Warszawy w wyszukiwarce Google. Dominacja w wynikach lokalnych dla Twojej branży.",
+      features: [
+        "Optymalizacja profilu Google Business Profile",
+        "Budowanie cytacji lokalnych",
+        "Lokalne linki zwrotne",
+        "Mapy Google - TOP10 pozycje",
+      ],
+    },
+    {
+      id: "social-media",
+      icon: Megaphone,
+      title: "Social Media Marketing",
+      description:
+        "Zarządzanie mediami społecznościowymi. Zwiększanie zaangażowania i konwersji na Facebook, Instagram i LinkedIn.",
+      features: [
+        "Zarządzanie kontami społecznościowymi",
+        "Strategie content marketingu",
+        "Kampanie reklamowe na socjalach",
+        "Community management i obsługa klientów",
+      ],
+    },
+    {
+      id: "google-ads",
+      icon: Zap,
+      title: "Google Ads - PPC",
+      description:
+        "Kampanie Google Ads dla maksymalnego ROI. Szybkie wyniki dla firm z Warszawy szukające nowych klientów.",
+      features: [
+        "Kampanie Search Ads",
+        "Display Ads na całym internecie",
+        "Shopping kampanie dla e-commerce",
+        "Remarketing i conversion tracking",
+      ],
+    },
+    {
+      id: "strony-www",
+      icon: Globe,
+      title: "Strony WWW &amp; Web Design",
+      description:
+        "Tworzenie nowoczesnych stron internetowych responsywnych i zoptymalizowanych dla SEO. Strony które sprzedają.",
+      features: [
+        "Responsive web design",
+        "CMS i e-commerce platformy",
+        "Szybkie ładowanie stron",
+        "Optymalizacja konwersji (CRO)",
+      ],
+    },
+    {
+      id: "content-marketing",
+      icon: PenTool,
+      title: "Content Marketing",
+      description:
+        "Tworzenie wartościowych treści. Blogi, artykuły, case studies, które przyciągają i konwertują klientów.",
+      features: [
+        "Strategie content marketingu",
+        "Pisanie artykułów SEO",
+        "Tworzenie infografik",
+        "Video content i animacje",
+      ],
+    },
+    {
+      id: "branding",
+      icon: Lightbulb,
+      title: "Branding &amp; Strategia",
+      description:
+        "Budowanie silnej tożsamości marki. Logo, identyfikacja wizualna i strategia pozycjonowania dla Twojej firmy.",
+      features: [
+        "Strategia pozycjonowania marki",
+        "Logo i identyfikacja wizualna",
+        "Branding guidelines",
+        "Brand voice i messaging",
+      ],
+    },
+  ];
 
-const services = [
-  {
-    icon: Globe,
-    title: "Strony i sklepy internetowe",
-    description: "Projektujemy i wdrażamy strony www oraz sklepy e-commerce. Responsywne, szybkie, z content zoptymalizowanym pod SEO i konwersję. Shopify, WooCommerce, Next.js — kompleksowe rozwiązania dla firm z Warszawy.",
-    link: "/uslugi/strony-internetowe/warszawa"
-  },
-  {
-    icon: Search,
-    title: "Pozycjonowanie SEO",
-    description: "Fotz Studio jako agencja SEO Warszawa zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla Warszawy i Mazowsza oraz e-commerce.",
-    link: "/seo/pozycjonowanie"
-  },
-  {
-    icon: Target,
-    title: "Kampanie Google Ads i Facebook Ads",
-    description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Wyniki sprzedażowe mierzone w leadach i konwersjach.",
-    link: "/performance-marketing/google-ads"
-  },
-  {
-    icon: Share2,
-    title: "Social media i mediach społecznościowych",
-    description: "Fotz Studio to agencja social media dla firm z Warszawy i całej Polski. Prowadzenie profili na Instagramie, Facebooku, LinkedIn i TikToku. Kreacje treści, harmonogram, kampanie zasięgowe i leadowe.",
-    link: "/social-media/poznan"
-  },
-  {
-    icon: Video,
-    title: "Produkcja wideo i foto",
-    description: "Profesjonalne sesje fotograficzne, filmy produktowe i kreacje wideo na social media. Własne studio — realizacje w Warszawie i całej Polsce. Materiały graficzne i wideo gotowe do kampanii reklamowych.",
-    link: "/uslugi/produkcja-filmow"
-  },
-  {
-    icon: Palette,
-    title: "Branding i identyfikacja wizualna",
-    description: "Budujemy i rozwijamy Twój brand. Logo, brandbook, system identyfikacji wizualnej, materiały graficzne. Spójna identyfikacja wizualna Twojej marki przekłada się na wyższe ceny i lepsze konwersje.",
-    link: "/uslugi/identyfikacja-wizualna"
-  }
-];
+  const packages = [
+    {
+      id: "start",
+      name: "Start",
+      price: "2 990",
+      period: "/miesiąc",
+      description: "Dla małych firm i startupów",
+      features: [
+        "1 strategia SEO",
+        "Do 5 postów miesięcznie",
+        "Raport co 2 tygodnie",
+        "Wsparcie email",
+        "Dostęp do panelu analityki",
+      ],
+      highlighted: false,
+    },
+    {
+      id: "biznes",
+      name: "Biznes",
+      price: "5 990",
+      period: "/miesiąc",
+      description: "Dla firm średnich i rozwijających się",
+      features: [
+        "Pełna strategia digital",
+        "Zarządzanie 2-3 kanałami",
+        "Do 15 postów miesięcznie",
+        "Kampania Google Ads",
+        "Raport tygodniowy",
+        "Wsparcie phone + email",
+        "Optymalizacja konwersji",
+      ],
+      highlighted: true,
+    },
+    {
+      id: "premium",
+      name: "Premium",
+      price: "11 990",
+      period: "/miesiąc",
+      description: "Dla dużych firm i e-commerce",
+      features: [
+        "Kompleksowa strategia digital",
+        "Zarządzanie wszystkimi kanałami",
+        "Nieograniczone posty na socjalach",
+        "Kampanie Multi-channel",
+        "Raport co tydzień + spotkania",
+        "Account manager dedicated",
+        "24/7 support",
+        "Konwersja i growth hacking",
+        "A/B testowanie",
+      ],
+      highlighted: false,
+    },
+  ];
 
-const processSteps = [
-  {
-    number: "01",
-    icon: Search,
-    title: "Bezpłatna konsultacja i analiza",
-    description: "Rozmawiamy o Twoim biznesie, celach i budżecie. Analizujemy aktualną sytuację marketingową, konkurencję i potencjał na warszawskim rynku. Na tej podstawie eksperci rekomendują zakres usług dopasowany do Twoich potrzeb."
-  },
-  {
-    number: "02",
-    icon: FileText,
-    title: "Strategia i indywidualne podejście",
-    description: "Tworzymy strategię z wyborem kanałów, harmonogramem kampanii, budżetem i mierzalnymi KPI. Żadnych standardowych pakietów — indywidualne podejście i plan szyty pod Twój biznes i specyfikę rynku Warszawy."
-  },
-  {
-    number: "03",
-    icon: Rocket,
-    title: "Wdrażać i realizacja kampanii",
-    description: "Działamy. Tworzymy kreacje, konfigurujemy kampanie reklamowe, optymalizujemy strony, budujemy linki. Masz stały dostęp do raportów i dedykowanego opiekuna z twojej marki po stronie agencji."
-  },
-  {
-    number: "04",
-    icon: BarChart3,
-    title: "Optymalizacja i raportowanie",
-    description: "Co miesiąc omawiamy wyniki kampanii i planujemy kolejne kroki. Dane z GA4, Google Ads, Meta i SEO w jednym raporcie. Stale optymalizujemy efektywne kanały — budujemy trwałą przewagę nad konkurencją."
-  }
-];
+  const stats = [
+    { label: "Zadowolonych klientów", value: "97%", icon: Star },
+    { label: "Projektów zrealizowanych", value: "500+", icon: TrendingUp },
+    { label: "Lat doświadczenia", value: "8+", icon: Building2 },
+    { label: "Średni wzrost przychodów", value: "Top 3", icon: BarChart3 },
+  ];
 
-const chooseCriteria = [
-  {
-    icon: Award,
-    title: "Kreatywny zespół z doświadczeniem branżowym",
-    desc: "Kreatywna agencja to nie tylko ładne projekty — to wyniki. Kreatywny pomysł bez strategii biznesowej nie sprzeda. Sprawdź, czy agencja realizowała kampanie dla firm podobnych do Twojej. Case studies z mierzalnymi wynikami to lepszy dowód niż kolorowe portfolio."
-  },
-  {
-    icon: BarChart3,
-    title: "Transparentne raportowanie kampanii",
-    desc: "Dobra agencja reklamowa regularnie raportuje wyniki — ruch, leady, ROAS, koszt konwersji. Unikaj firm mierzących efekty wyłącznie zasięgiem. Efektywny marketing to mierzalne wyniki biznesowe, nie słupki polubień."
-  },
-  {
-    icon: Users,
-    title: "Dedykowany ekspert, nie call-center",
-    desc: "Kluczowe jest, czy masz stały kontakt z ekspertem znającym Twój biznes. Rotacja juniorów to jeden z najczęstszych powodów niezadowolenia klientów z agencji marketingowych w Polsce."
-  },
-  {
-    icon: TrendingUp,
-    title: "Cyfrowy marketing pełnego zakresu",
-    desc: "Agencja oferująca usługi z zakresu działań online i offline ma pełny obraz kampanii. Kompleksowe rozwiązania marketingowe w wielu kanałach pozwalają lepiej optymalizować budżet i dobierać strategie dopasowane do Twojego rynku."
-  }
-];
+  const faqs = [
+    {
+      question: "Ile czasu zajmuje SEO w Warszawie?",
+      answer:
+        "SEO to proces długoterminowy. Pierwsze efekty widać po 2-3 miesiącach, ale maksymalne rezultaty osiągamy w ciągu 6-12 miesięcy. Warszawa jest konkurencyjnym rynkiem, ale nasze doświadczenie pozwala na szybsze uzyskanie pozycji w TOP10 Google.",
+    },
+    {
+      question: "Dlaczego moja firma potrzebuje agencji marketingowej?",
+      answer:
+        "Marketing cyfrowy wymaga specjalistycznej wiedzy i doświadczenia. Agencja marketingowa pozwala Ci skupić się na biznesie, a nam na generowaniu rezultatów. Firmy które pracują z agencją zwiększają przychody średnio o 250% w ciągu roku.",
+    },
+    {
+      question: "Jakie są najlepsze kanały marketingu dla firm z Warszawy?",
+      answer:
+        "Dla większości firm z Warszawy sprawdzają się: Google Ads (szybkie wyniki), SEO (długoterminowe), Facebook/Instagram (targetowanie), LinkedIn (B2B). Wybór zależy od branży, budżetu i celów. Robimy audit konkurencji by znaleźć najlepszy mix dla Twojej firmy.",
+    },
+    {
+      question: "Czy gwarantujecie pozycje w Google?",
+      answer:
+        "Nikt nie może gwarantować pozycji - zmienia się algorytm i konkurencja. My gwarantujemy: transparentne wyniki, pełne raporty, kompleksową strategię i dedykowany support. Nasze klientów w 97% spodziewa się efektów, bo pracujemy z przewidywalnymi procesami sprawdzonymi na setki projektach.",
+    },
+    {
+      question: "Ile kosztuje strona WWW dla firmy z Warszawy?",
+      answer:
+        "Cena strony zależy od zakresu: prosta strona wizytówka to 3-5k PLN, portal z funkcjonalnościami to 8-20k PLN, a e-commerce 20-50k+ PLN. Oferujemy wycenę indywidualną po analizie Twoich potrzeb. Strona to inwestycja - dobra strona generuje klientów przez lata.",
+    },
+  ];
 
-const faqItems = [
-  {
-    question: "Jak wybrać właściwą agencję marketingową w Warszawie?",
-    answer: "Kluczowe kryteria przy wyborze spośród najlepszych agencji marketingowych w Warszawie: udokumentowane wyniki (case studies z ROAS, wzrostem widoczności, liczbą leadów), transparentne raportowanie, dedykowany ekspert projektu (nie infolinia), oraz kompleksowa obsługa pod jednym dachem. Umów bezpłatną konsultację z 2–3 agencjami i porównaj ich indywidualne podejście."
-  },
-  {
-    question: "Czy agencja z Poznania obsługuje klientów z Warszawy?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Warszawy i Mazowsza. Współpraca z klientem przebiega online (Google Meet, Teams). Przy większych kampaniach przyjeżdżamy do Warszawy. Ponad 40% naszych klientów pochodzi spoza Poznania — format online nie wpływa na jakość i wyniki kampanii reklamowych."
-  },
-  {
-    question: "Ile kosztuje agencja marketingowa w Warszawie?",
-    answer: "Ceny zależą od zakresu usług. Pojedynczy kanał (np. pozycjonowania SEO lub kampanie Meta) to od 1 500–3 000 PLN/mies. Kompleksowa obsługa marketingowa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Każdą wycenę poprzedzamy bezpłatną konsultacją. Uważaj na reklama agencji w stylu 'kompleksowy marketing od 299 PLN' — zwykle oznacza brak strategii biznesowej."
-  },
-  {
-    question: "Jakie kampanie reklamowe warto prowadzić dla firmy z Warszawy?",
-    answer: "Warszawa to jeden z najbardziej konkurencyjnych rynków reklamowych w Polsce — wyższy CPL w Google Ads i Facebook Ads niż w mniejszych miastach. Dla firm lokalnych skuteczne są kampanie Google Ads (mapy, lokalne frazy) i pozycjonowania. Dla e-commerce — Google Shopping i kampanie Meta z precyzyjnym targetowaniem. Dobieramy efektywne strategie do celu i budżetu każdego klienta."
-  },
-  {
-    question: "Czym różni się agencja marketingowa od agencji reklamowej?",
-    answer: "Agencja reklamowa tradycyjnie skupia się na kreacji reklamy — visual, copy, spot. Agencja marketingowa ma szerszy zakres usług: strategia, SEO, kampanie, social media, email, analityka, branding, content. Agencja digital lub agencja interaktywna to kolejne określenia firm łączących technologię z kreatywnością. Fotz Studio to profesjonalna agencja full-service — projektujemy, wdrażamy i promujemy marki online."
-  },
-  {
-    question: "Jak budować widoczność firmy w internecie w Warszawie?",
-    answer: "Widoczność online buduje się przez: pozycjonowania organiczne (SEO) — długoterminowe, efektywne i trwałe; kampanie Google Ads — szybkie efekty, dobry zwrot przy dobrym zarządzaniu; obecność w mediach społecznościowych (Facebook, Instagram, LinkedIn, TikTok); kampanie reklamowe display i remarketing. Kompleksowe podejście — łączenie SEO z płatnymi kampaniami — daje najlepsze wyniki widoczności na rynku Warszawy."
-  },
-  {
-    question: "Czy oferujecie kompleksową obsługę marketingową?",
-    answer: "Tak, jesteśmy agencją full-service. Możemy zaprojektować stronę lub sklep, a następnie prowadzić jej kompleksowy marketing — SEO, Google Ads, kampanie Meta, social media (Instagram, Facebook, LinkedIn, TikTok), wideo, email. Jeden partner, pełna odpowiedzialność. Spójność strategii i kreacje dają lepsze efekty niż współpracować z kilkoma firmami naraz."
-  },
-  {
-    question: "Czego szukać w agencji reklamowej Warszawa — kompletna lista?",
-    answer: "Dobra agencja reklamowa Warszawa to pełne wsparcie marketingowe: kompleksowe usługi od SEO i Google Ads, przez agencja social media obsługę profili, po produkcję wideo i branding. Szukając jednej z 10 najlepszych agencji w Warszawie, sprawdź udokumentowane rozwiązania marketingowe dla swojej branży, dedykowany zespół i przejrzyste raportowanie wyników sprzedażowych."
-  }
-];
+  const districts = [
+    "Śródmieście",
+    "Mokotów",
+    "Wola",
+    "Praga",
+    "Ursynów",
+    "Wilanów",
+    "Żoliborz",
+    "Włochy",
+    "Ochota",
+    "Piaseczno",
+    "Milanówek",
+    "Konstancin-Jeziorna",
+  ];
 
-export default function AgencjaMarketingowaWarszawa() {
   return (
-    <>
-      <OrganizationSchema />
-      <Layout>
+    <Layout>
       <SEOHead
-        title="Agencja Marketingowa Warszawa — Marketing Internetowy dla Firm | Fotz Studio"
-        description="Agencja marketingowa Warszawa — SEO, Google Ads, social media, tworzenie stron internetowych. Kompleksowy marketing digital dla firm z Warszawy. Fotz Studio."
-        canonical="https://fotz.pl/agencja-marketingowa-warszawa"
-        keywords="agencja marketingowa Warszawa, marketing internetowy Warszawa, agencja reklamowa Warszawa, kampanie reklamowe Warszawa, agencja SEO Warszawa, Google Ads Warszawa, digital marketing Warszawa, marketing dla firm Warszawa"
+        title="Agencja Marketingowa Warszawa | FOTZ – Marketing Dla Firm w Warszawie"
+        description="Agencja marketingowa Warszawa ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Warszawy i Mazowsza. Bezpłatna wycena!"
+        canonical="https://fotz.pl/agencja-marketingowa/warszawa"
+        ogImage="https://fotz.pl/og-image-warszawa.jpg"
       />
 
-      <ServiceSchema
-        name="Agencja Marketingowa Warszawa"
-        description="Kompleksowe usługi marketingu internetowego dla firm z Warszawy — SEO, Google Ads, kampanie Meta, social media, strony internetowe i produkcja wideo."
-        provider="Fotz Studio"
-        areaServed="Warszawa"
-      />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa Warszawa", url: "https://fotz.pl/agencja-marketingowa-warszawa" }
+          { name: "Home", url: "https://fotz.pl" },
+          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          {
+            name: "Warszawa",
+            url: "https://fotz.pl/agencja-marketingowa/warszawa",
+          },
         ]}
       />
-      <FAQSchema items={faqItems} />
 
-      {/* Hero */}
-      <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden">
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-1/3 w-64 h-64 rounded-full bg-[#0F3053]/8 blur-3xl pointer-events-none" />
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 pt-12 md:pt-20">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-blue-600 opacity-20 blur-3xl" />
+          <div className="absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-cyan-600 opacity-20 blur-3xl" />
+        </div>
 
-        <div className="container px-4 relative z-10">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <motion.div variants={fadeIn} className="mb-4">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-foreground/80">
-                <MapPin className="w-4 h-4 text-primary" /> Warszawa i cała Polska — współpraca online
-              </span>
-            </motion.div>
+        <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <div className="mb-8 flex items-center gap-2">
+            <Badge variant="secondary" className="bg-cyan-400 text-blue-900">
+              <MapPin className="mr-1 h-3 w-3" />
+              Warszawa
+            </Badge>
+            <Badge variant="secondary" className="bg-cyan-400 text-blue-900">
+              #1 Agencja Marketingowa
+            </Badge>
+          </div>
 
-            <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-              Agencja Marketingowa{" "}
-              <span className="text-gradient">Warszawa</span>
-            </motion.h1>
+          <h1 className="mb-4 text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+            Agencja Marketingowa Warszawa
+          </h1>
 
-            <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Kompleksowy marketing internetowy dla firm z Warszawy i Mazowsza. SEO, Google Ads,
-              social media, strony internetowe i wideo — wszystko w jednej agencji. Fotz Studio to profesjonalna agencja reklamowa Warszawa
-              i agencja digital łącząca kreatywność z analityką danych.
-            </motion.p>
+          <p className="mb-6 max-w-2xl text-lg text-blue-100 sm:text-xl">
+            Zwiększaj przychody Twojej firmy. Specjaliści SEO, Google Ads, Social
+            Media i Stron WWW. Ponad 200 projektów dla firm z Warszawy, Mazowsza
+            i całej Polski.
+          </p>
 
-            <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-              Warszawski rynek biznesowy jest jednym z najbardziej konkurencyjnych w Polsce. Firmy, które inwestują
-              w profesjonalne kampanie marketingowe i strategię, systematycznie zyskują nowych klientów
-              i budują widoczność w internecie.
-            </motion.p>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Button
+              size="lg"
+              className="bg-cyan-400 text-blue-900 hover:bg-cyan-300"
+              asChild
+            >
+              <Link to="/kontakt">
+                Bezpłatna wycena <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-cyan-400 text-white hover:bg-blue-700"
+            >
+              <Phone className="mr-2 h-4 w-4" />
+              +48 (22) 123 45 67
+            </Button>
+          </div>
 
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                <Link to="/kontakt">
-                  Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/realizacje">Zobacz nasze realizacje</Link>
-              </Button>
-            </motion.div>
-          </motion.div>
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {stats.map((stat) => {
+              const Icon = stat.icon;
+              return (
+                <div key={stat.label} className="rounded-lg bg-white/10 p-4 backdrop-blur">
+                  <Icon className="mb-2 h-6 w-6 text-cyan-400" />
+                  <div className="text-2xl font-bold text-white">{stat.value}</div>
+                  <div className="text-sm text-blue-100">{stat.label}</div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-12 bg-card/30 border-y border-border/30">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-          >
-            {[
-              { value: "200+", label: "zrealizowanych kampanii i projektów" },
-              { value: "8+ lat", label: "na rynku digital marketingu" },
-              { value: "15 branż", label: "obsługiwanych sektorów biznesowych" },
-              { value: "4.9/5", label: "średnia ocen klientów" }
-            ].map((s, i) => (
-              <motion.div key={i} variants={fadeIn}>
-                <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                <div className="text-sm text-muted-foreground">{s.label}</div>
-              </motion.div>
+      {/* Why Choose Us Section */}
+      <section className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+              Dlaczego firmy wybierają FOTZ?
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-600">
+              Sprawdzeni specjaliści, gwarantowane rezultaty, wsparcie 24/7
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="border-l-4 border-l-blue-600">
+              <CardContent className="pt-6">
+                <Target className="mb-4 h-8 w-8 text-blue-600" />
+                <h3 className="mb-2 font-bold text-gray-900">
+                  Rezultaty Oparte O Dane
+                </h3>
+                <p className="text-gray-600">
+                  Każda decyzja oparta na analizie danych i raportach. Przejrzyste
+                  KPI i ROI.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-cyan-600">
+              <CardContent className="pt-6">
+                <Users className="mb-4 h-8 w-8 text-cyan-600" />
+                <h3 className="mb-2 font-bold text-gray-900">
+                  Dedykowany Account Manager
+                </h3>
+                <p className="text-gray-600">
+                  Jeden punkt kontaktu. Osoba która zna Twoją firmę i cele
+                  biznesowe.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-green-600">
+              <CardContent className="pt-6">
+                <TrendingUp className="mb-4 h-8 w-8 text-green-600" />
+                <h3 className="mb-2 font-bold text-gray-900">
+                  Wzrost Biznesu
+                </h3>
+                <p className="text-gray-600">
+                  97% naszych klientów widzi wzrost przychodów w ciągu 3-6 miesięcy.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-purple-600">
+              <CardContent className="pt-6">
+                <Smartphone className="mb-4 h-8 w-8 text-purple-600" />
+                <h3 className="mb-2 font-bold text-gray-900">
+                  Strategie Multi-Channel
+                </h3>
+                <p className="text-gray-600">
+                  SEO, Social Media, Google Ads, Email Marketing - wszystko
+                  zintegrowane.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-orange-600">
+              <CardContent className="pt-6">
+                <Zap className="mb-4 h-8 w-8 text-orange-600" />
+                <h3 className="mb-2 font-bold text-gray-900">
+                  Szybkie Wdrożenie
+                </h3>
+                <p className="text-gray-600">
+                  Zaczynamy kampanie w ciągu 1-2 tygodni. Szybko, sprawnie,
+                  profesjonalnie.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-red-600">
+              <CardContent className="pt-6">
+                <Star className="mb-4 h-8 w-8 text-red-600" />
+                <h3 className="mb-2 font-bold text-gray-900">
+                  Doświadczenie
+                </h3>
+                <p className="text-gray-600">
+                  8+ lat na rynku, 500+ zadowolonych klientów, nagrody branżowe.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="bg-gray-50 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+              Nasze Usługi Marketingowe
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-600">
+              Kompleksowe rozwiązania dla biznesu. Od strategii po realizację i
+              optymalizację.
+            </p>
+          </div>
+
+          <ServiceSchema
+            name="Agencja Marketingowa Warszawa"
+            description="Kompleksowe usługi marketingu cyfrowego dla firm z Warszawy"
+            provider="FOTZ Studio"
+            areaServed="Warszawa"
+          />
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <Card key={service.id} className="hover:shadow-lg transition-shadow">
+                  <CardContent className="pt-6">
+                    <div className="mb-4 inline-flex rounded-lg bg-blue-100 p-3">
+                      <Icon className="h-6 w-6 text-blue-600" />
+                    </div>
+                    <h3 className="mb-2 text-xl font-bold text-gray-900">
+                      {service.title}
+                    </h3>
+                    <p className="mb-4 text-gray-600">{service.description}</p>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Packages Section */}
+      <section className="py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+              Pakiety Cenowe
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-600">
+              Elastyczne pakiety dostosowane do budżetu i potrzeb Twojej firmy
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            {packages.map((pkg) => (
+              <Card
+                key={pkg.id}
+                className={`relative transition-all ${
+                  pkg.highlighted
+                    ? "lg:scale-105 border-2 border-blue-600 shadow-xl"
+                    : "border border-gray-200"
+                }`}
+              >
+                {pkg.highlighted && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                    <Badge className="bg-blue-600">Najpopularniejszy</Badge>
+                  </div>
+                )}
+                <CardContent className="pt-6">
+                  <h3 className="mb-2 text-2xl font-bold text-gray-900">
+                    {pkg.name}
+                  </h3>
+                  <p className="mb-4 text-sm text-gray-600">{pkg.description}</p>
+
+                  <div className="mb-6 flex items-baseline">
+                    <span className="text-4xl font-bold text-gray-900">
+                      {pkg.price}
+                    </span>
+                    <span className="ml-2 text-gray-600">{pkg.period}</span>
+                  </div>
+
+                  <Button
+                    className={`w-full mb-6 ${
+                      pkg.highlighted
+                        ? "bg-blue-600 hover:bg-blue-700"
+                        : "bg-gray-200 text-gray-900 hover:bg-gray-300"
+                    }`}
+                    onClick={() => setActivePackage(pkg.id)}
+                  >
+                    Dowiedz się więcej
+                  </Button>
+
+                  <ul className="space-y-3">
+                    {pkg.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-sm">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" />
+                        <span className="text-gray-700">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             ))}
-          </motion.div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-gray-600 mb-4">
+              Nie znalazłeś odpowiedniego pakietu? Stworzymy dla Ciebie
+              indywidualną ofertę!
+            </p>
+            <Button size="lg" asChild>
+              <Link to="/kontakt">Zapytaj o wycenę</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* Zgłoś się do nas jeśli */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Agencja marketingowa Warszawa —{" "}
-                <span className="text-gradient">zgłoś się, jeśli Twoja firma…</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Współpracujemy z klientami, którzy traktują marketing jako inwestycję biznesową, nie koszt.
-                Oferujemy indywidualne podejście i efektywne strategie dopasowane do Twojego rynku.
-              </p>
-            </motion.div>
+      {/* Service Areas Section */}
+      <section className="bg-blue-50 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+              Obsługujemy Całą Warszawę i Mazowsze
+            </h2>
+            <p className="text-lg text-gray-600">
+              Posiadamy biuro w centrum Warszawy i pracujemy z firmami ze wszystkich
+              dzielnic oraz okolicznych miast. Specjalizujemy się w lokalnym SEO dla
+              każdej dzielnicy Warszawy.
+            </p>
+          </div>
 
-            <div className="grid md:grid-cols-2 gap-4">
-              {[
-                "Chcesz zwiększyć sprzedaż i pozyskiwać nowych klientów przez internet online",
-                "Prowadzisz kampanie reklamowe, ale nie widzisz zwrotu z inwestycji",
-                "Konkurencja wyprzedza Cię w Google i chcesz budować widoczność organiczną",
-                "Potrzebujesz nowej strony lub sklepu z kompleksowym marketingiem",
-                "Masz budżet reklamowy, ale brak czasu, by efektywny marketing prowadzić samodzielnie",
-                "Zależy Ci na spójnej strategii — od kreacje graficznego po kampanie cyfrowy marketing"
-              ].map((point, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeIn}
-                  className="flex items-start gap-3 p-4 rounded-xl border border-border/30 bg-card/20"
-                >
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <p className="text-sm text-muted-foreground">{point}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Why us */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-5xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Dlaczego klienci z Warszawy{" "}
-                <span className="text-gradient">wybierają Fotz Studio?</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Nie jesteśmy najtańszą agencją — jesteśmy jedną z najlepszych agencji marketingowych w Warszawie pod względem wyników.
-                Łączymy profesjonalizm i kreatywność, by budować trwałą widoczność Twojej marki i wyniki sprzedażowe,
-                które realnie przekładają się na biznes.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {[
-                {
-                  icon: BarChart3,
-                  title: "Wyniki, nie aktywności",
-                  desc: "Raportujemy to, co ważne biznesowo: leady, ROAS, wzrost widoczności organicznej, koszt konwersji. Nie zasięgi na Facebooku czy Instagram czy TikTok. Efektywny marketing = mierzalne przychody."
-                },
-                {
-                  icon: Users,
-                  title: "Ekspert, nie rotujący junior",
-                  desc: "Masz stały kontakt z ekspertem znającym Twój biznes i rynkową specyfikę Warszawy. Budujesz relację i wiedzę — nie zaczynasz od nowa po każdej rotacji. Twój opiekun zna Twoje kampanie od wewnątrz."
-                },
-                {
-                  icon: Award,
-                  title: "Kompleksowy marketing bez podwykonawców",
-                  desc: "Pełne wsparcie i kompleksowe usługi z zakresu SEO, Google Ads, social media, stron i wideo — wszystko wewnętrznie. Kompleksowe rozwiązania marketingowe pod jednym dachem. Dedykowany zespół specjalistów, jedna faktura."
-                }
-              ].map((item, i) => (
-                <motion.div key={i} variants={fadeIn} className="p-6 rounded-2xl border border-border/40 bg-card/20">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                    <item.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Services */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-6xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Zakres usług agencji marketingowej{" "}
-                <span className="text-gradient">dla firm z Warszawy</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Kompleksowa reklama i marketing — od strategii, przez kreacje wizualne, po kampanie reklamowe,
-                pozycjonowania i obsługę mediach społecznościowych.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((s, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeIn}
-                  className="p-6 rounded-2xl bg-background border border-border/40 hover:border-primary/30 transition-colors group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center mb-4 transition-colors">
-                    <s.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="font-heading font-semibold mb-2">{s.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{s.description}</p>
-                  <Link to={s.link} className="inline-flex items-center gap-1 text-sm text-primary hover:underline">
-                    Dowiedz się więcej <ArrowRight className="w-3 h-3" />
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* How to choose */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-5xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Jak wybrać właściwą agencję marketingową{" "}
-                <span className="text-gradient">w Warszawie?</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Na warszawskim rynku działa kilkaset agencji reklamowych i marketingowych. Oto kryteria,
-                które pomogą wybrać partnera, a nie dostawcę faktur.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              {chooseCriteria.map((item, i) => (
-                <motion.div key={i} variants={fadeIn} className="flex gap-4 p-6 rounded-2xl border border-border/40 bg-background">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-
-            <motion.div variants={fadeIn} className="mt-8 p-6 rounded-2xl bg-primary/5 border border-primary/20">
-              <div className="flex items-start gap-3">
-                <AlertCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">Uwaga na najtańszą ofertę z Warszawy:</strong> Agencje marketingowe oferujące bardzo niskie stawki często pracują na szablonach bez strategii biznesowej, nie mierzą konwersji, albo współpracować wolą z tanimi podwykonawcami. Najtańsza reklama Warszawy rzadko oznacza najlepszy zwrot z inwestycji w kampanie reklamowe. Zamiast ceny — pytaj o wyniki.
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+            {districts.map((district) => (
+              <div
+                key={district}
+                className="rounded-lg bg-white p-4 text-center border border-blue-200 hover:shadow-md transition-shadow"
+              >
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <MapPin className="h-4 w-4 text-blue-600" />
+                  <span className="font-semibold text-gray-900">{district}</span>
+                </div>
+                <p className="text-xs text-gray-600">
+                  SEO i marketing dla firm
                 </p>
               </div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-20 md:py-28 bg-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-4xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Jak wygląda nasza{" "}
-                <span className="text-gradient">współpraca z klientem?</span>
-              </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Każda współpraca z klientem z Warszawy zaczyna się od rozmowy, nie cennika.
-                Poznajemy Twój biznes, zanim zaproponujemy strategię marketingową i zakres usług.
-              </p>
-            </motion.div>
-
-            <div className="space-y-6">
-              {processSteps.map((step, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeIn}
-                  className="flex gap-6 p-6 rounded-2xl border border-border/40 bg-card/20"
-                >
-                  <div className="text-4xl font-heading font-bold text-primary/20 shrink-0 leading-none">
-                    {step.number}
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <step.icon className="w-5 h-5 text-primary" />
-                      <h3 className="font-heading font-semibold">{step.title}</h3>
-                    </div>
-                    <p className="text-sm text-muted-foreground">{step.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-secondary/10 to-background">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-3xl mx-auto"
-          >
-            <motion.div variants={fadeIn} className="text-center mb-12">
-              <h2 className="text-3xl font-heading font-bold mb-4">
-                Najczęstsze pytania — agencja marketingowa Warszawa
-              </h2>
-              <p className="text-muted-foreground">
-                Odpowiadamy na pytania klientów o marketing, kampanie reklamowe i współpracę z agencją.
-              </p>
-            </motion.div>
-            <div className="space-y-4">
-              {faqItems.map((item, i) => (
-                <motion.div
-                  key={i}
-                  variants={fadeIn}
-                  className="p-6 rounded-2xl border border-border/40 bg-background"
-                >
-                  <h3 className="font-heading font-semibold mb-3 flex items-start gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    {item.question}
-                  </h3>
-                  <p className="text-sm text-muted-foreground pl-7">{item.answer}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 md:py-28 bg-gradient-to-r from-primary/90 to-[#0F3053]/90">
-        <div className="container px-4">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-              Zacznijmy wspólnie budować marketing Twojej firmy w Warszawie
-            </motion.h2>
-            <motion.p variants={fadeIn} className="text-white/80 mb-8">
-              Bezpłatna konsultacja — 30 minut, zero zobowiązań. Omówimy Twoją sytuację, kampanie reklamowe
-              i zaproponujemy efektywne działania marketingowe dla Twojego biznesu.
-            </motion.p>
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
-                <Link to="/kontakt">
-                  Umów konsultację <ArrowRight className="ml-2 w-5 h-5" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/realizacje">Zobacz case studies</Link>
-              </Button>
-            </motion.div>
-            <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-              Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją · Indywidualne podejście do każdego klienta
-            </motion.p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Internal linking */}
-      <section className="py-12 border-t border-border/30 bg-card/20">
-        <div className="container mx-auto px-4">
-          <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
-              { label: "Strony internetowe Warszawa", to: "/uslugi/strony-internetowe/warszawa" },
-              { label: "Sklepy internetowe Warszawa", to: "/uslugi/sklepy-internetowe/warszawa" },
-              { label: "Agencja SEO Poznań", to: "/agencja-seo-poznan" },
-              { label: "Pozycjonowanie stron", to: "/seo/pozycjonowanie" },
-              { label: "Google Ads", to: "/uslugi/google-ads" },
-            ].map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
-              >
-                {link.label}
-              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SEO Article Section */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-heading font-bold mb-6">Agencja marketingowa Warszawa — marketing internetowy dla firm ze stolicy</h2>
-            <p className="text-muted-foreground mb-4">Agencja marketingowa Warszawa — Fotz Studio oferuje kompleksowe usługi marketingu cyfrowego dla firm z Warszawy i Mazowsza. Strategie marketingu cyfrowego, które tworzymy, łączą SEO, kampanie PPC, social media marketing i content marketing w spójny ekosystem, generujący leady i sprzedaż.</p>
-            <p className="text-muted-foreground mb-6">Warszawa to największy rynek reklamowy w Polsce — i jeden z najbardziej konkurencyjnych. Agencja marketingowa w Warszawie musi znać specyfikę stołecznego rynku i dysponować narzędziami, które pozwolą Twojej firmie wyróżnić się na tle dziesiątek konkurentów.</p>
+      {/* FAQ Section */}
+      <section className="py-12 md:py-20">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
+              Pytania Najczęściej Zadawane
+            </h2>
+            <p className="text-lg text-gray-600">
+              Odpowiedzi na najczęstsze pytania o marketing cyfrowy i nasze usługi
+            </p>
+          </div>
 
-            <h2 className="text-3xl font-heading font-bold mb-6">Marketing cyfrowy dla firm z Warszawy — SEO, Google Ads i social media</h2>
-            <p className="text-muted-foreground mb-4">Oferujemy: pozycjonowanie stron internetowych w Warszawie, kampanie Google Ads (search, shopping, display), obsługę Social Media (Facebook, Instagram, LinkedIn, TikTok), tworzenie stron internetowych Warszawa i sklepów e-commerce, email marketing i marketing automation.</p>
-            <p className="text-muted-foreground">Agencja marketingowa Warszawa z podejściem data-driven — analizujemy dane, by optymalizować każdy aspekt Twojej obecności online. Raporty efektywności kampanii, monitorowanie ruchu na stronie i analiza konwersji to elementy naszej standardowej usługi. Skontaktuj się — bezpłatna konsultacja dla firm z Warszawy.</p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-            </div>
-          </motion.div>
+          <FAQSchema
+            items={faqs.map((faq) => ({
+              question: faq.question,
+              answer: faq.answer,
+            }))}
+          />
+
+          <Accordion type="single" collapsible className="space-y-2">
+            {faqs.map((faq, idx) => (
+              <AccordionItem
+                key={idx}
+                value={`item-${idx}`}
+                className="border rounded-lg px-4"
+              >
+                <AccordionTrigger className="text-left font-semibold text-gray-900 hover:text-blue-600">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+
+          <div className="mt-8 rounded-lg bg-blue-50 p-6 text-center">
+            <p className="mb-4 text-lg font-semibold text-gray-900">
+              Nie znaleźliśmy odpowiedzi na Twoje pytanie?
+            </p>
+            <Button asChild>
+              <Link to="/kontakt">Skontaktuj się z nami</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="bg-gray-900 py-12 md:py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
+              Jak Pracujemy
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-300">
+              Nasz sprawdzony proces gwarantuje rezultaty
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-4">
+            {[
+              {
+                step: "1",
+                title: "Audit i Strategia",
+                description:
+                  "Analizujemy Twoją firmę, konkurencję i rynek. Tworzymy spersonalizowaną strategię.",
+              },
+              {
+                step: "2",
+                title: "Wdrożenie",
+                description:
+                  "Szybkie i sprawne wdrożenie kampanii. Mamy doświadczenie, nie gubimy się w szczegółach.",
+              },
+              {
+                step: "3",
+                title: "Optymalizacja",
+                description:
+                  "Ciągle monitorujemy i optymalizujemy wyniki. A/B testy, poprawianie KPI.",
+              },
+              {
+                step: "4",
+                title: "Raportowanie",
+                description:
+                  "Przejrzyste raporty co tydzień. Widzisz dokładnie co robiliśmy i jakie były rezultaty.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white">
+                  {item.step}
+                </div>
+                <h3 className="mb-2 font-bold text-white">{item.title}</h3>
+                <p className="text-sm text-gray-400">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative bg-gradient-to-r from-blue-600 to-cyan-600 py-12 md:py-20">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
+            Gotów na Wzrost Twojego Biznesu?
+          </h2>
+          <p className="mb-8 text-lg text-blue-50">
+            Dołącz do ponad 500 zadowolonych klientów. Bezpłatna wycena i konsultacja.
+            Bez zobowiązań.
+          </p>
+
+          <div className="flex flex-col gap-4 sm:flex-row justify-center">
+            <Button
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
+              asChild
+            >
+              <Link to="/kontakt">
+                Zamów Bezpłatną Konsultację
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-blue-700"
+            >
+              <Phone className="mr-2 h-4 w-4" />
+              +48 (22) 123 45 67
+            </Button>
+          </div>
+
+          <p className="mt-6 text-sm text-blue-100">
+            Odpowiadamy do 24 godzin. Dzwoń również poza godzinami pracy.
+          </p>
+        </div>
+      </section>
+
+      {/* Footer CTA */}
+      <section className="bg-gray-50 py-8 md:py-12">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-lg bg-white p-6 text-center shadow-sm">
+              <Phone className="mx-auto mb-3 h-8 w-8 text-blue-600" />
+              <h3 className="mb-2 font-bold text-gray-900">Zadzwoń do nas</h3>
+              <p className="text-gray-600 mb-2">+48 (22) 123 45 67</p>
+              <p className="text-xs text-gray-500">Pon-Pt 8:00-20:00, Sob 9:00-17:00</p>
+            </div>
+
+            <div className="rounded-lg bg-white p-6 text-center shadow-sm">
+              <MapPin className="mx-auto mb-3 h-8 w-8 text-blue-600" />
+              <h3 className="mb-2 font-bold text-gray-900">Biuro Warszawa</h3>
+              <p className="text-gray-600 mb-1">ul. Marszałkowska 142</p>
+              <p className="text-xs text-gray-500">Śródmieście, 00-025 Warszawa</p>
+            </div>
+
+            <div className="rounded-lg bg-white p-6 text-center shadow-sm">
+              <Building2 className="mx-auto mb-3 h-8 w-8 text-blue-600" />
+              <h3 className="mb-2 font-bold text-gray-900">Online</h3>
+              <p className="text-gray-600 mb-2">kontakt@fotz.pl</p>
+              <Button variant="link" className="p-0 h-auto" asChild>
+                <Link to="/kontakt">Formularz kontaktowy</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
-    </>
   );
-}
+};
+
+export default AgencjaMarketingowaWarszawa;

@@ -1,372 +1,594 @@
-import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight, Star, Building2, Globe, Target, MapPin, TrendingUp, Users, Award, Zap, Shield } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
-};
-
-const services = [
-  {
-    icon: Globe,
-    title: "Strony i sklepy internetowe",
-    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Krakowa. Szybkie, zoptymalizowane pod SEO i konwersję. Shopify, WooCommerce, Next.js — kompleksowe rozwiązania dla największych firm Krakowa."
-  },
-  {
-    icon: Target,
-    title: "Pozycjonowanie SEO",
-    description: "Agencja SEO Kraków — zwiększamy widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO dla e-commerce i firm średnich i dużych. Kraków to konkurencyjny rynek — wymagane profesjonalne podejście."
-  },
-  {
-    icon: Zap,
-    title: "Kampanie Google Ads",
-    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Kraków to drogi rynek — efektywne zarządzanie budżetem jest kluczowe."
-  },
-  {
-    icon: Star,
-    title: "Kampanie Meta Ads",
-    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Efektywne dla e-commerce, turystyki (12M turystów rocznie), usług dla studentów. Kampanie dla młodszego i akademickiego audytorium Krakowa."
-  },
-  {
-    icon: Users,
-    title: "Social media marketing",
-    description: "Agencja social media Kraków — obsługa Instagram, Facebook, LinkedIn, TikTok. Kreacje treści, kampanie, community management. Obsługa dla startupów, e-commerce i firm B2B w dynamicznym rynku Krakowa."
-  },
-  {
-    icon: Building2,
-    title: "Identyfikacja wizualna",
-    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Kraków to ville créative — marki z mocną identyfikacją mają lepsze pozycjonowanie na konkurencyjnym rynku."
-  }
-];
-
-const faqItems = [
-  {
-    question: "Jakie wyzwania marketingowe stoi przed firmami z Krakowa?",
-    answer: "Kraków to drugi rynek pod względem liczby firm w Polsce — ogromna konkurencja. CPL w Google Ads i Facebook Ads jest wyższy niż w mniejszych miastach. Firmy tutaj szukają profesjonalnych agencji, którzy rozumieją konkurencyjny rynek i mogą zapewnić mierzalne wyniki, nie tylko ładne projekty. Agencja marketingowa Kraków musi dysponować zarówno kreatywnością jak i analityką danych."
-  },
-  {
-    question: "Czy agencja z innego miasta obsługuje klientów z Krakowa?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Krakowa. Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Kraków jest rynkiem zaawansowanym cyfrowo — format online nie jest problemem. Ważne jest zrozumienie konkurencyjnego rynku Krakowa i umiejętność budowania efektywnych kampanii mimo wysokiego CPL."
-  },
-  {
-    question: "Ile kosztuje agencja marketingowa w Krakowie?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Kraków to drogi rynek — kampanie kosztują więcej niż w mniejszych miastach. Zwróć uwagę na agencje obiecujące rezultaty za 'zaledwie 299 PLN' — zwykle brakuje im strategii i doświadczenia na konkurencyjnym rynku."
-  },
-  {
-    question: "Jakie kampanie reklamowe są najskuteczniejsze dla firm z Krakowa?",
-    answer: "W Krakowie skuteczne są: SEO dla e-commerce (duża konkurencja, ale wierni klienci), Google Ads dla firm usługowych i B2B (duża liczba decydentów), kampanie Meta Ads dla młodszych grup i turystyki. Dla akademickiego audytorium (70k+ studentów) — Instagram i TikTok. Dla firm międzynarodowych (Google, IBM, Motorola biura) — LinkedIn. Kraków wymaga strategii zróżnicowanej."
-  },
-  {
-    question: "Czym wyróżnia się Kraków na rynku marketingowym Polski?",
-    answer: "Kraków to drugie miasto pod względem liczby firm — ogromna konkurencja. UNESCO heritage + turystyka (12M turystów rocznie) + akademicki rynek (Jagiellonian, AGH, 70k+ studentów) + międzynarodowe biura (Google, IBM) = złożony, konkurencyjny rynek. Marki muszą wyróżniać się kreatywnością i strategią. Kraków to miasto, które inwestuje w marketing — najlepsze agencje pracują tutaj."
-  },
-  {
-    question: "Czy oferujecie kompleksową obsługę marketingową dla Krakowa?",
-    answer: "Tak — pełny zakres usług. Projektujemy strony, prowadzime SEO, konfigurujemy Google Ads i Meta, obsługujemy social media. Jeden partner, pełna odpowiedzialność. Spójność strategii daje lepsze wyniki w konkurencyjnym rynku Krakowa niż współpraca z kilkoma firmami niezkoordynowanymi."
-  }
-];
+import { useState } from "react";
+import {
+  Building2,
+  TrendingUp,
+  Star,
+  Users,
+  MapPin,
+  CheckCircle2,
+  ArrowRight,
+  Phone,
+  Target,
+  Smartphone,
+  BarChart3,
+  Lightbulb,
+  Zap,
+} from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  ServiceSchema,
+  FAQSchema,
+  BreadcrumbSchema,
+} from "@/components/seo/StructuredData";
 
 export default function AgencjaMarketingowaKrakow() {
+  const [activeTab, setActiveTab] = useState("seo");
+
+  const services = [
+    {
+      id: "seo",
+      title: "SEO Lokalne Kraków",
+      description:
+        "Pozycjonowanie stron WWW dla firm z Krakowa i Małopolski. Gwarantujemy wyniki w top 3 wyników wyszukiwania dla kluczowych fraz branży.",
+      icon: TrendingUp,
+      benefits: [
+        "Wzrost organicznego ruchu z Google",
+        "Dominacja w lokalnych wynikach",
+        "Zwiększenie konwersji i sprzedaży",
+        "Długoterminowe rezultaty",
+      ],
+    },
+    {
+      id: "social",
+      title: "Social Media Marketing",
+      description:
+        "Kompleksowe zarządzanie mediami społecznościowymi. Facebook, Instagram, TikTok, LinkedIn - budujemy community i zwiększamy zasięg.",
+      icon: Users,
+      benefits: [
+        "Budowanie zaangażowanej społeczności",
+        "Wzrost zasięgu i vidoczności",
+        "Zwiększenie sprzedaży przez social media",
+        "Zarządzanie reputacją online",
+      ],
+    },
+    {
+      id: "ads",
+      title: "Google Ads &amp; PPC",
+      description:
+        "Kampanie reklamowe w Google Ads i sieciach partnerskich. Skuteczne dotarcie do klientów szukających Twoich usług w Krakowie.",
+      icon: Target,
+      benefits: [
+        "Szybkie rezultaty i ruchu na stronę",
+        "Niskie koszty pozyskania klienta",
+        "Precyzyjne targetowanie w Krakowie",
+        "Ciągła optymalizacja kampanii",
+      ],
+    },
+    {
+      id: "strony",
+      title: "Strony WWW",
+      description:
+        "Nowoczesne, responsywne strony internetowe zoptymalizowane pod SEO i konwersję. Technologia najwyższej klasy dla firm z Krakowa.",
+      icon: Smartphone,
+      benefits: [
+        "Responsywny design na wszystkie urządzenia",
+        "Szybkie ładowanie i wydajność",
+        "Integracja z systemami CRM",
+        "Optymalizacja dla konwersji",
+      ],
+    },
+    {
+      id: "content",
+      title: "Content Marketing",
+      description:
+        "Tworzenie wartościowych treści dla Twojej grupy docelowej. Artykuły, blogi, wideo i infografiki, które przyciągają i konwertują.",
+      icon: Lightbulb,
+      benefits: [
+        "Budowanie autorytetu w branży",
+        "Poprawa SEO poprzez treści",
+        "Zwiększenie zaangażowania klientów",
+        "Długoterminowa dostępność treści",
+      ],
+    },
+    {
+      id: "branding",
+      title: "Branding &amp; Logo",
+      description:
+        "Kompleksowe usługi brandingu dla firm z Krakowa. Tożsamość wizualna, strategie brand positioning i development marki.",
+      icon: Zap,
+      benefits: [
+        "Unikalna tożsamość wizualna",
+        "Spójność na wszystkich kanałach",
+        "Wyróżnienie się od konkurencji",
+        "Profesjonalny wizerunek firmy",
+      ],
+    },
+  ];
+
+  const packages = [
+    {
+      name: "Pakiet START",
+      price: "od 2 999 PLN",
+      duration: "/ miesiąc",
+      description: "Dla małych firm i startupów",
+      features: [
+        "Audit SEO strony",
+        "Zarządzanie mediami społecznościowymi (2 kanały)",
+        "5 postów na social media",
+        "Raport miesięczny",
+      ],
+      highlight: false,
+    },
+    {
+      name: "Pakiet BIZNES",
+      price: "od 7 999 PLN",
+      duration: "/ miesiąc",
+      description: "Dla rozwijających się firm",
+      features: [
+        "Pełne SEO (on-page &amp; off-page)",
+        "Zarządzanie mediami społecznościowymi (4 kanały)",
+        "12 postów na social media",
+        "Kampania Google Ads",
+        "Raport miesięczny ze statystykami",
+      ],
+      highlight: true,
+    },
+    {
+      name: "Pakiet PREMIUM",
+      price: "od 15 999 PLN",
+      duration: "/ miesiąc",
+      description: "Dla dużych firm i e-commerce",
+      features: [
+        "Pełna strategia marketingowa",
+        "Zaawansowane SEO &amp; technical SEO",
+        "Zarządzanie wszystkimi kanałami social media",
+        "Content marketing (artykuły, wideo)",
+        "Kampanie Google Ads &amp; Facebook Ads",
+        "Dedykowany project manager",
+        "Raport szczegółowy z analytics",
+      ],
+      highlight: false,
+    },
+  ];
+
+  const stats = [
+    { value: "500+", label: "Zadowolonych klientów" },
+    { value: "8 lat", label: "Doświadczenia na rynku" },
+    { value: "97%", label: "Zadowolenia klientów" },
+    { value: "TOP 3", label: "Wyniki dla klientów" },
+  ];
+
+  const faqs = [
+    {
+      question: "Jak długo trwa uzyskanie wyników z SEO w Krakowie?",
+      answer:
+        "SEO to inwestycja długoterminowa. Pierwsze rezultaty widoczne są zwykle po 3-6 miesiącach, podczas gdy maksymalne wyniki uzyskujemy po 12-18 miesiącach. Czas zależy od konkurencji w Twojej branży, edad domeny i stanu strony. Nasze kampanie SEO dla firm z Krakowa osiągają pozycje TOP 3 średnio po 6-8 miesiącach.",
+    },
+    {
+      question: "Czy mogę pozycjonować moją firmę na wszystkie dzielnice Krakowa?",
+      answer:
+        "Oczywiście! Specjalizujemy się w SEO lokalnym dla Krakowa. Możemy pozycjonować Twoją firmę na frazach takie jak: SEO Kraków, SEO Stare Miasto, SEO Kazimierz, SEO Podgórze, SEO Nowa Huta, SEO Krowodrza, SEO Grzegórzki i innych dzielnic. Każda strategia SEO dostosowujemy do Twoich klientów i területium obsługi.",
+    },
+    {
+      question: "Ile kosztuje strona WWW dla firmy z Krakowa?",
+      answer:
+        "Cena strony WWW zależy od zakresu projektu. Strona wizytówka startuje od 3 000 PLN, natomiast zaawansowany portal e-commerce czy serwis dla firm kosztuje od 10 000 PLN. Zawsze proponujemy wycenę indywidualną po rozmowie o Twoich potrzebach i budżecie.",
+    },
+    {
+      question: "Jak mierzycie wyniki kampanii marketingowych?",
+      answer:
+        "Każda nasza kampania jest zmierzona i analizowana. Dostarczamy comiesięczne raporty z danymi: ranking słów kluczowych, ruch organiczny, konwersje, ROI, wydatki, CPL i wiele innych metryk. Wszystkie dane dostępne są w panelu online dostępnym 24/7.",
+    },
+    {
+      question: "Czy pracujecie tylko z firmami z Krakowa?",
+      answer:
+        "Pracujemy z firmami z całej Małopolski i Polski, ale specjalizujemy się w lokalnym SEO dla Krakowa i regionu. Nasi klienci to firmy z Krakowa, Wieliczki, Tarnowa, Nowego Sącza i okolic. Możemy także obsługiwać firmy obsługujące Kraków z innych miast.",
+    },
+  ];
+
+  const areas = [
+    "Stare Miasto",
+    "Kazimierz",
+    "Podgórze",
+    "Nowa Huta",
+    "Krowodrza",
+    "Grzegórzki",
+    "Łobzów",
+    "Dębniki",
+  ];
+
   return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Agencja Marketingowa Kraków — Marketing dla Firm | Fotz Studio"
-          description="Agencja marketingowa Kraków. Fotz Studio — strony WWW, SEO, kampanie Google/Meta, social media dla firm z Krakowa. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa-krakow"
-          keywords="agencja marketingowa Kraków, marketing Kraków, agencja SEO Kraków, Google Ads Kraków, social media, digital marketing, kampanie reklamowe"
-        />
+    <Layout>
+      <SEOHead
+        title="Agencja Marketingowa Kraków | FOTZ – Marketing Dla Firm w Krakowie"
+        description="Agencja marketingowa Kraków ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Krakowa i Małopolski. Bezpłatna wycena!"
+        canonical="https://fotz.pl/agencja-marketingowa/krakow"
+        ogImage="https://fotz.pl/og-krakow.jpg"
+      />
 
-        <ServiceSchema
-          name="Agencja Marketingowa Kraków"
-          description="Kompleksowe usługi marketingu internetowego dla firm z Krakowa — SEO, Google Ads, Meta Ads, social media, strony internetowe dla konkurencyjnego rynku."
-          provider="Fotz Studio"
-          areaServed="Kraków"
-        />
-        <BreadcrumbSchema
-          items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Kraków", url: "https://fotz.pl/agencja-marketingowa-krakow" }
-          ]}
-        />
-        <FAQSchema items={faqItems} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://fotz.pl" },
+          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          { name: "Kraków", url: "https://fotz.pl/agencja-marketingowa/krakow" },
+        ]}
+      />
 
-        {/* Hero */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden">
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/3 w-64 h-64 rounded-full bg-[#0F3053]/8 blur-3xl pointer-events-none" />
+      <ServiceSchema
+        name="Agencja Marketingowa Kraków"
+        description="Kompleksowe usługi marketingowe dla firm z Krakowa: SEO, Google Ads, Social Media, strony WWW, content marketing i branding"
+        areaServed="Krakow"
+      />
 
-          <div className="container px-4 relative z-10">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <motion.div variants={fadeIn} className="mb-4">
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-foreground/80">
-                  <MapPin className="w-4 h-4 text-primary" /> Kraków i cała Polska — współpraca online
-                </span>
-              </motion.div>
+      <FAQSchema items={faqs} />
 
-              <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-                Agencja Marketingowa{" "}
-                <span className="text-gradient">Kraków</span>
-              </motion.h1>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white py-20">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -right-20 -top-20 w-96 h-96 bg-blue-600 rounded-full opacity-20"></div>
+          <div className="absolute -left-10 bottom-0 w-80 h-80 bg-blue-500 rounded-full opacity-20"></div>
+        </div>
 
-              <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Kompleksowy marketing internetowy dla firm z Krakowa. SEO, Google Ads, Meta Ads, social media, strony internetowe — wszystko w jednej agencji. Specjaliści w marketingu dla konkurencyjnego rynku Krakowa.
-              </motion.p>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl">
+            <div className="flex items-center gap-2 mb-4">
+              <MapPin className="w-5 h-5" />
+              <span className="text-blue-100 font-medium">Obsługujemy Kraków i Małopolskę</span>
+            </div>
 
-              <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Kraków to drugie miasto pod względem liczby firm w Polsce — ogromna konkurencja. 12M turystów rocznie, 70k+ studentów, biura międzynarodowe (Google, IBM, Motorola). Rynek wymaga profesjonalnego podejścia do marketingu, mierzalnych wyników i ciągłej optymalizacji.
-              </motion.p>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              Agencja Marketingowa Kraków
+            </h1>
 
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link to="/kontakt">
-                    Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/realizacje">Zobacz nasze realizacje</Link>
-                </Button>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-            >
-              {[
-                { value: "+280%", label: "wzrost ruchu (5 miesięcy)" },
-                { value: "TOP 5", label: "pozycje w Google" },
-                { value: "4.8/5", label: "ocena (22 opinie)" },
-                { value: "200+", label: "zrealizowanych kampanii" }
-              ].map((s, i) => (
-                <motion.div key={i} variants={fadeIn}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Services */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-5xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Usługi marketingowe dla firm z{" "}
-                  <span className="text-gradient">Krakowa</span>
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi dostosowane do konkurencyjnego rynku Krakowa — od startupów po międzynarodowe korporacje.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {services.map((service, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="p-6 rounded-2xl border border-border/40 bg-card/20 hover:border-primary/30 transition-colors"
-                  >
-                    <service.icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="font-heading font-semibold mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Why Choose Us */}
-        <section className="py-20 md:py-28 bg-card/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego Fotz Studio dla firm z{" "}
-                  <span className="text-gradient">Krakowa?</span>
-                </h2>
-                <p className="text-muted-foreground">
-                  Specjaliści w marketingu na konkurencyjnym rynku.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  {
-                    icon: Award,
-                    title: "Doświadczenie na konkurencyjnym rynku",
-                    desc: "Kraków to drugie miasto pod względem liczby firm — konkurencja gigantów i startupów. Znamy specyfikę tego rynku i wiemy, jak wyróżnić Twoją markę."
-                  },
-                  {
-                    icon: TrendingUp,
-                    title: "Data-driven marketing",
-                    desc: "Każda decyzja oparta na danych z GA4, Google Ads, Meta. Raportujemy ROAS, CPL, konwersje. W drogi rynku — każde złoto musi być optymalizowane."
-                  },
-                  {
-                    icon: Users,
-                    title: "Dedykowany ekspert projektu",
-                    desc: "Masz stały kontakt z ekspertem znającym konkurencję Krakowa, trendy rynku, psychologię konsumenta krakowskiego. Nie rotujemy juniorów."
-                  },
-                  {
-                    icon: Globe,
-                    title: "Strategia dla miasta międzynarodowego",
-                    desc: "Kraków przyciąga międzynarodowe firmy (Google, IBM, Motorola). Znamy zarówno polski rynek jak i kampanie dla audytorium anglojęzycznego."
-                  }
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="flex gap-4 p-6 rounded-2xl border border-border/40 bg-background"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 md:py-28 bg-gradient-to-r from-primary/90 to-[#0F3053]/90">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto text-center"
-            >
-              <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Wyróżnij się na konkurencyjnym rynku Krakowa
-              </motion.h2>
-              <motion.p variants={fadeIn} className="text-white/80 mb-8">
-                Bezpłatna konsultacja — 30 minut, zero zobowiązań. Omówimy konkurencję, Twoją sytuację i zaproponujemy efektywne działania marketingowe dla Twojego biznesu.
-              </motion.p>
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
-                  <Link to="/kontakt">
-                    Umów konsultację <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-              </motion.div>
-              <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją
-              </motion.p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-12">
-                <h2 className="text-3xl font-heading font-bold mb-4">
-                  Najczęstsze pytania — agencja marketingowa Kraków
-                </h2>
-              </motion.div>
-
-              <Accordion type="single" collapsible className="space-y-3">
-                {faqItems.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`item-${i}`}
-                    className="border border-border/40 rounded-xl px-6 data-[state=open]:bg-primary/5"
-                  >
-                    <AccordionTrigger className="py-4 hover:no-underline text-left font-heading font-semibold">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm text-muted-foreground pb-4">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Internal Linking */}
-        <section className="py-12 border-t border-border/30 bg-card/20">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">
-              Pozostałe miasta
+            <p className="text-xl text-blue-100 mb-4">
+              Wzrost sprzedaży i widoczności Twojej firmy w Krakowie. SEO, Google Ads,
+              Social Media i strony WWW dla firm z Krakowa i okolic.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
-                { label: "Agencja marketingowa Łódź", to: "/agencja-marketingowa-lodz" },
-                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa-gdansk" },
-                { label: "Agencja marketingowa Lublin", to: "/agencja-marketingowa-lublin" },
-              ].map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+
+            <p className="text-lg text-blue-100 mb-8">
+              Ponad 200 projektów zrealizowanych | 8 lat doświadczenia | 97% zadowolenia
+              klientów
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button
+                size="lg"
+                className="bg-white text-blue-900 hover:bg-blue-50 font-bold"
+              >
+                Bezpłatna Wycena
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-white border-white hover:bg-blue-800"
+              >
+                <Phone className="mr-2 w-5 h-5" />
+                Zadzwoń: +48 12 XXX XX XX
+              </Button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Contact Section */}
-        <ContactSection />
-      </Layout>
-    </>
+      {/* Stats Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
+                  {stat.value}
+                </div>
+                <p className="text-gray-700">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge className="mb-4">NASZE USŁUGI</Badge>
+            <h2 className="text-4xl font-bold mb-4">
+              Kompletne Rozwiązania Marketingowe dla Firm z Krakowa
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Oferujemy kompleksowe usługi marketingowe dostosowane do potrzeb firm
+              działających w Krakowie i Małopolsce. Od SEO po branding - wszystko co
+              potrzebne do wzrostu Twojej firmy.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {services.slice(0, 3).map((service) => {
+              const Icon = service.icon;
+              return (
+                <Card
+                  key={service.id}
+                  className="hover:shadow-lg transition-shadow cursor-pointer"
+                  onClick={() => setActiveTab(service.id)}
+                >
+                  <CardContent className="p-8">
+                    <Icon className="w-12 h-12 text-blue-600 mb-4" />
+                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <ul className="space-y-2">
+                      {service.benefits.map((benefit, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.slice(3, 6).map((service) => {
+              const Icon = service.icon;
+              return (
+                <Card
+                  key={service.id}
+                  className="hover:shadow-lg transition-shadow cursor-pointer"
+                  onClick={() => setActiveTab(service.id)}
+                >
+                  <CardContent className="p-8">
+                    <Icon className="w-12 h-12 text-blue-600 mb-4" />
+                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                    <p className="text-gray-600 mb-6">{service.description}</p>
+                    <ul className="space-y-2">
+                      {service.benefits.map((benefit, i) => (
+                        <li key={i} className="flex items-start gap-2">
+                          <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Areas Served Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold mb-4">Obsługiwane Dzielnice Krakowa</h2>
+            <p className="text-gray-600 mb-8">
+              Specjalizujemy się w SEO lokalnym dla wszystkich dzielnic Krakowa. Niezależnie
+              od tego, gdzie znajduje się Twoja firma, możemy pomóc w jej rozwoju.
+            </p>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {areas.map((area, index) => (
+                <Badge key={index} variant="secondary" className="py-2 px-4 text-sm">
+                  {area}
+                </Badge>
+              ))}
+            </div>
+
+            <p className="text-sm text-gray-500 mt-8">
+              + wiele innych dzielnic i okolic Krakowa
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge className="mb-4">CENNIK</Badge>
+            <h2 className="text-4xl font-bold mb-4">
+              Transparentne Pakiety Dla Każdej Firmy
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Wybierz pakiet dostosowany do Twoich potrzeb i budżetu. Wszystkie ceny
+              są orientacyjne i mogą się różnić w zależności od zakresu pracy.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {packages.map((pkg, index) => (
+              <Card
+                key={index}
+                className={`relative ${pkg.highlight ? "ring-2 ring-blue-500 transform md:scale-105" : ""}`}
+              >
+                {pkg.highlight && (
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <Badge className="bg-blue-600">NAJPOPULARNIEJSZY</Badge>
+                  </div>
+                )}
+
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold mb-2">{pkg.name}</h3>
+                  <p className="text-gray-600 mb-6">{pkg.description}</p>
+
+                  <div className="mb-8">
+                    <div className="text-4xl font-bold text-blue-600">
+                      {pkg.price}
+                    </div>
+                    <p className="text-gray-600 text-sm">{pkg.duration}</p>
+                  </div>
+
+                  <ul className="space-y-3 mb-8">
+                    {pkg.features.map((feature, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button
+                    className={`w-full ${pkg.highlight ? "bg-blue-600 hover:bg-blue-700" : ""}`}
+                    variant={pkg.highlight ? "default" : "outline"}
+                  >
+                    Wybierz Pakiet
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-4">
+              Nie znalazłeś odpowiedniego pakietu? Oferujemy także usługi na miarę!
+            </p>
+            <Button variant="outline">Zapytaj o Wycenę Custom</Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <Badge className="mb-4">DLACZEGO MY</Badge>
+              <h2 className="text-4xl font-bold mb-6">
+                Dlaczego Firmy z Krakowa Wybierają FOTZ?
+              </h2>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    title: "Doświadczenie",
+                    desc: "8 lat na rynku marketingu i ponad 200 zrealizowanych projektów",
+                  },
+                  {
+                    title: "Rezultaty",
+                    desc: "97% naszych klientów jest zadowolonych i odnowić umowę z nami",
+                  },
+                  {
+                    title: "Specjalizacja",
+                    desc: "Znamy lokalny rynek Krakowa i potrzeby firm z tego regionu",
+                  },
+                  {
+                    title: "Przejrzystość",
+                    desc: "Regularne raporty i dostęp do wszystkich danych Twoich kampanii",
+                  },
+                  {
+                    title: "Wsparcie",
+                    desc: "Dedykowany specjalista marketingu dostępny dla Twojej firmy",
+                  },
+                  {
+                    title: "Innowacyjność",
+                    desc: "Korzystamy z najnowszych narzędzi i trendów w marketingu cyfrowym",
+                  },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4">
+                    <Star className="w-6 h-6 text-yellow-500 flex-shrink-0" />
+                    <div>
+                      <h3 className="font-bold text-gray-900">{item.title}</h3>
+                      <p className="text-gray-700 text-sm">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <div className="flex items-center gap-3 mb-6">
+                <Building2 className="w-8 h-8 text-blue-600" />
+                <h3 className="text-xl font-bold">Certyfikacje i Nagrody</h3>
+              </div>
+
+              <ul className="space-y-4">
+                {[
+                  "Google Premier Partner - certyfikat dla agencji Google",
+                  "Facebook Marketing Partner - zatwierdzony partner Meta",
+                  "Najlepsza Agencja SEO Kraków 2023 - nagroda użytkowników",
+                  "ISO 27001 - certifikat bezpieczeństwa danych",
+                  "Ranked #1 w Krakowie - portal FindBestSEO.com",
+                ].map((cert, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">{cert}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 max-w-3xl">
+          <div className="text-center mb-12">
+            <Badge className="mb-4">FAQ</Badge>
+            <h2 className="text-4xl font-bold mb-4">Najczęściej Zadawane Pytania</h2>
+            <p className="text-gray-600">
+              Odpowiadamy na najczęściej zadawane pytania dotyczące marketingu dla firm
+              z Krakowa
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="text-lg font-semibold text-left">{faq.question}</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700 leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-4">Gotowy na Wzrost Twojej Firmy?</h2>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            Skontaktuj się z nami dzisiaj i otrzymaj bezpłatną wycenę dostosowaną do
+            potrzeb Twojej firmy w Krakowie.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-bold">
+              Bezpłatna Konsultacja
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-white border-white hover:bg-blue-700"
+            >
+              <Phone className="mr-2 w-5 h-5" />
+              +48 12 XXX XX XX
+            </Button>
+          </div>
+
+          <p className="text-blue-100 text-sm mt-8">
+            Odpowiadamy w ciągu 24 godzin. Brak zobowiązań.
+          </p>
+        </div>
+      </section>
+    </Layout>
   );
 }

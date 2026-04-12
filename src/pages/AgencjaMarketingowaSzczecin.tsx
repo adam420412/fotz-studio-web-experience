@@ -1,376 +1,658 @@
-import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight, Star, Building2, Globe, Target, MapPin, TrendingUp, Users, Award, Zap, Shield } from "lucide-react";
+import { useState } from "react";
+import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
-};
-
-const services = [
-  {
-    icon: Globe,
-    title: "Strony i sklepy internetowe",
-    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Szczecina. Szybkie, zoptymalizowane pod SEO i konwersję. Dedykowana obsługa dla firm portowych i cross-border e-commerce."
-  },
-  {
-    icon: Target,
-    title: "Pozycjonowanie SEO",
-    description: "Agencja SEO Szczecin — zwiększamy widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym i cross-border (niemiecki, angielski rynek)."
-  },
-  {
-    icon: Zap,
-    title: "Kampanie Google Ads",
-    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie dla firm z Szczecina. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies."
-  },
-  {
-    icon: Star,
-    title: "Kampanie Meta Ads",
-    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Efektywne dla handlu, e-commerce, usług portowych. Dual targeting — lokalni klienci + niemiecki/międzynarodowy rynek (DACH)."
-  },
-  {
-    icon: Users,
-    title: "Social media marketing",
-    description: "Agencja social media Szczecin — prowadzenie profili Instagram, Facebook, LinkedIn, TikTok. Kreacje treści, kampanie zasięgowe dla firm portowych i e-commerce. LinkedIn dla B2B maritime."
-  },
-  {
-    icon: Building2,
-    title: "Identyfikacja wizualna",
-    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Dla firm portowych, e-commerce, tech startupów. Spójna wizualna tożsamość przekłada się na wyższe ceny i konwersje."
-  }
-];
-
-const faqItems = [
-  {
-    question: "Jak prowadzić marketing dla firm portowych w Szczecinie?",
-    answer: "Szczecin to 400k+ mieszkańców, major seaport (Baltic trade hub), US Army garrison/NATO. Marketing dla portowych firm: B2B targeting (LinkedIn campaigns dla shipping, logistics), Google Ads dla procurement, content marketing (white papers, case studies), SEO dla branżowych fraz. Międzynarodowe targeting — polski + niemiecki + angielski rynek."
-  },
-  {
-    question: "Czy agencja z innego miasta obsługuje klientów z Szczecina?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Szczecina i zachodniopomorskiego. Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Format online nie wpływa na jakość kampanii — szczególnie dla sektora portowego/maritime, gdzie specjalizacja branżowa liczy się bardziej niż lokalizacja."
-  },
-  {
-    question: "Ile kosztuje agencja marketingowa w Szczecinie?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Dla firm portowych dodatkowy koszt to międzynarodowe kampanie (niemiecki, angielski, B2B targeting). Każdą wycenę poprzedzamy bezpłatną konsultacją znającą specyfikę szczecińskiego rynku portowo-handlowego."
-  },
-  {
-    question: "Jakie są wyzwania marketingowe dla Szczecina?",
-    answer: "Główne wyzwania: sektor portowy wymaga specjalistycznej wiedzy (maritime terminology, international B2B), niemiecki border proximity wymaga multilingual campaigns, konkurencja przychodzi z warszawskich/gdańskich agencji. Ale — Szczecin to emerging market dla digital, DACH market access to unikalna szansa. Marketing musi być precyzyjny, branżowo-specjalistyczny, międzynarodowy."
-  },
-  {
-    question: "Czy oferujecie marketing dla cross-border e-commerce (Niemcy, DACH) z Szczecina?",
-    answer: "Tak — to nasz core market dla Szczecina. Cross-border e-commerce: Google Ads (niemiecki, angielski keywords), Meta Ads (targeting niemiecki rynek + lokalni klienci), SEO dla wielojęzycznych kampanii, content marketing (produkty dla DACH rynku), Shopify/WooCommerce optimization dla międzynarodowych konwersji. Znamy specyfikę DACH market (Germany, Austria, Switzerland)."
-  },
-  {
-    question: "Jak budować widoczność firmy portowej/maritime w Szczecinie przez cały rok?",
-    answer: "Marketing całoroczny dla sektora portowego: LinkedIn campaigns (thought leadership dla decision makers), Google Ads (procurement keywords), content marketing (artykuły branżowe, white papers), SEO (branżowe frazy, lokalne pozycjonowanie), industry events presence (targach, konferencjach). Dual strategy — polski + niemiecki/międzynarodowy rynek."
-  },
-  {
-    question: "Jakie są możliwości growth marketing dla startup'ów e-commerce w Szczecinie?",
-    answer: "Growth marketing dla e-commerce startupów: Google Ads (szybki traffic dla sprzedaży), SEO (long-tail keywords dla niszy), Meta Ads (low-cost traffic via Instagram), content marketing (product reviews, blogs), email marketing dla repeat customers, partnerships z innymi e-commerce biznesami. Budżety zazwyczaj mniejsze (1 000–3 000 PLN/mies), więc skupiamy się na high-ROI kanałach."
-  }
-];
+import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function AgencjaMarketingowaSzczecin() {
+  const [selectedPackage, setSelectedPackage] = useState<string>("standard");
+
   return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Agencja Marketingowa Szczecin | fotz.pl – Marketing dla firm"
-          description="Agencja marketingowa w Szczecinie. Marketing online dla firm z zachodniopomorskiego. SEO, reklamy, social media. Bezpłatna wycena!"
-          canonical="https://fotz.pl/agencja-marketingowa-szczecin"
-          keywords="agencja marketingowa Szczecin, marketing zachodniopomorskie, agencja SEO Szczecin, port, e-commerce, DACH, Google Ads, social media"
-        />
+    <Layout>
+      <SEOHead
+        title="Agencja Marketingowa Szczecin | FOTZ – Marketing Dla Firm w Szczecinie"
+        description="Agencja marketingowa Szczecin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Szczecina i Zachodniopomorskiego. Bezpłatna wycena!"
+        canonical="https://fotz.pl/agencja-marketingowa/szczecin"
+      />
 
-        <ServiceSchema
-          name="Agencja Marketingowa Szczecin"
-          description="Kompleksowe usługi marketingu internetowego dla firm z Szczecina — SEO, Google Ads, Meta Ads, social media, specjalizacja w sektorze portowym i cross-border e-commerce."
-          provider="Fotz Studio"
-          areaServed="Szczecin"
-        />
-        <BreadcrumbSchema
-          items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Szczecin", url: "https://fotz.pl/agencja-marketingowa-szczecin" }
-          ]}
-        />
-        <FAQSchema items={faqItems} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://fotz.pl" },
+          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          { name: "Szczecin", url: "https://fotz.pl/agencja-marketingowa/szczecin" },
+        ]}
+      />
 
-        {/* Hero */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden">
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/3 w-64 h-64 rounded-full bg-[#0F3053]/8 blur-3xl pointer-events-none" />
+      <ServiceSchema
+        name="Agencja Marketingowa Szczecin"
+        description="Kompleksowe usługi marketingowe dla firm w Szczecinie: SEO, Google Ads, Social Media, strony internetowe i copywriting."
+        areaServed="Szczecin"
+        telephone="+48531234567"
+        url="https://fotz.pl/agencja-marketingowa/szczecin"
+      />
 
-          <div className="container px-4 relative z-10">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <motion.div variants={fadeIn} className="mb-4">
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-foreground/80">
-                  <MapPin className="w-4 h-4 text-primary" /> Szczecin, Zachodniopomorskie — współpraca online
-                </span>
-              </motion.div>
+      <FAQSchema
+        faqs={[
+          {
+            question: "Ile kosztuje agencja marketingowa w Szczecinie?",
+            answer: "Ceny zaczynają się od 2500 zł/miesiąc za pakiet STARTER. Każde wyceny dostosowujemy indywidualnie do potrzeb firmy. Oferujemy bezpłatną konsultację.",
+          },
+          {
+            question: "Jak długo czekać na pierwsze wyniki z SEO?",
+            answer: "Pierwsze pozytywne wyniki obserwujemy zwykle po 2-3 miesiącach. Pełne efekty SEO osiągamy po 6-9 miesiącach regularnej pracy.",
+          },
+          {
+            question: "Czy pracujecie z firmami z Zachodniopomorskiego?",
+            answer: "Tak, pracujemy z firmami z całego Szczecina i regionu Zachodniopomorskiego. Oferujemy również obsługę firm chcących ekspandować na rynki niemieckie.",
+          },
+          {
+            question: "Co zawiera pakiet PREMIUM?",
+            answer: "Pakiet PREMIUM zawiera: SEO, kampanie Google Ads, zarządzanie social media, copywriting, analitykę i raporty miesięczne.",
+          },
+          {
+            question: "Czy oferujecie stronę internetową?",
+            answer: "Tak, projektujemy i kodujemy nowoczesne strony internetowe w React, Next.js i WordPress, zoptymalizowane pod SEO.",
+          },
+        ]}
+      />
 
-              <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-                Agencja Marketingowa{" "}
-                <span className="text-gradient">Szczecin</span>
-              </motion.h1>
-
-              <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Kompleksowy marketing internetowy dla firm z Szczecina i zachodniopomorskiego. SEO, Google Ads, Meta Ads, social media, strony internetowe — specjalizacja w sektorze portowym i cross-border e-commerce.
-              </motion.p>
-
-              <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Szczecin to 400k+ mieszkańców, major seaport (Baltic trade hub), German border proximity (DACH market access), US Army garrison/NATO presence. Cross-border e-commerce, maritime, shipbuilding transition to tech. Marketing wymaga specjalizacji międzynarodowej — my ją mamy.
-              </motion.p>
-
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link to="/kontakt">
-                    Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/realizacje">Zobacz nasze realizacje</Link>
-                </Button>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-            >
-              {[
-                { value: "+260%", label: "wzrost ruchu (3 miesiące)" },
-                { value: "TOP 5", label: "pozycje w Google" },
-                { value: "4.8/5", label: "ocena (12 opinii)" },
-                { value: "170+", label: "zrealizowanych kampanii" }
-              ].map((s, i) => (
-                <motion.div key={i} variants={fadeIn}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Services */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-5xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Usługi marketingowe dla Szczecina i{" "}
-                  <span className="text-gradient">DACH market</span>
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi dostosowane do specyfiki rynku szczecińskiego — port, e-commerce, maritime i cross-border.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {services.map((service, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="p-6 rounded-2xl border border-border/40 bg-card/20 hover:border-primary/30 transition-colors"
-                  >
-                    <service.icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="font-heading font-semibold mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Why Choose Us */}
-        <section className="py-20 md:py-28 bg-card/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego Fotz Studio dla biznesu z{" "}
-                  <span className="text-gradient">Szczecina?</span>
-                </h2>
-                <p className="text-muted-foreground">
-                  Specjaliści w marketingu portowym, maritime i cross-border.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  {
-                    icon: Award,
-                    title: "Doświadczenie w B2B maritime",
-                    desc: "Rozumiemy sektor portowy, maritime, logistics B2B. Wiemy, jak targetować decydentów, procurement specialists, shipping companies. Specjalistyczna wiedza branżowa."
-                  },
-                  {
-                    icon: TrendingUp,
-                    title: "Specjalizacja cross-border",
-                    desc: "Szczecin to German border proximity — znamy DACH marketing (niemiecki, austriacki, szwajcarski rynek). Multilingual campaigns, international SEO, DACH-focused ad strategies."
-                  },
-                  {
-                    icon: Users,
-                    title: "Dedykowany ekspert projektu",
-                    desc: "Znający specyfikę Szczecina, sektor portowy, międzynarodowy handlowy, DACH market. Stały kontakt, nie rotacja juniorów."
-                  },
-                  {
-                    icon: Globe,
-                    title: "Strategia dla międzynarodowego hub'a",
-                    desc: "Szczecin to Baltic trade hub z US Army/NATO — znamy international B2B targeting, multilingual content, cross-border e-commerce strategies, DACH market dynamics."
-                  }
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="flex gap-4 p-6 rounded-2xl border border-border/40 bg-background"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 md:py-28 bg-gradient-to-r from-primary/90 to-[#0F3053]/90">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto text-center"
-            >
-              <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Skaluj sprzedaż — port, maritime, cross-border e-commerce
-              </motion.h2>
-              <motion.p variants={fadeIn} className="text-white/80 mb-8">
-                Bezpłatna konsultacja — 30 minut. Omówimy Twoją sytuację, sektor i zaproponujemy strategię dostosowaną do rynku Szczecina i DACH market.
-              </motion.p>
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
-                  <Link to="/kontakt">
-                    Umów konsultację <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-              </motion.div>
-              <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją
-              </motion.p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-12">
-                <h2 className="text-3xl font-heading font-bold mb-4">
-                  Najczęstsze pytania — agencja marketingowa Szczecin
-                </h2>
-              </motion.div>
-
-              <Accordion type="single" collapsible className="space-y-3">
-                {faqItems.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`item-${i}`}
-                    className="border border-border/40 rounded-xl px-6 data-[state=open]:bg-primary/5"
-                  >
-                    <AccordionTrigger className="py-4 hover:no-underline text-left font-heading font-semibold">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm text-muted-foreground pb-4">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Internal Linking */}
-        <section className="py-12 border-t border-border/30 bg-card/20">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">
-              Pozostałe miasta
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-blue-50 to-indigo-50 py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <MapPin className="w-5 h-5 text-blue-600" />
+              <span className="text-sm font-semibold text-blue-600">Agencja Marketingowa w Szczecinie</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Agencja Marketingowa Szczecin
+            </h1>
+            <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
+              Profesjonalny marketing dla firm z Szczecina. Specjalizujemy się w SEO, Google Ads, Social Media i tworzeniu stron internetowych. Ponad 200 projektów na koncie.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa-gdansk" },
-                { label: "Agencja marketingowa Rzeszów", to: "/agencja-marketingowa-rzeszow" },
-                { label: "Agencja marketingowa Bydgoszcz", to: "/agencja-marketingowa-bydgoszcz" },
-                { label: "Agencja marketingowa Toruń", to: "/agencja-marketingowa-torun" },
-              ].map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                Bezpłatna Wycena
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+              <Button size="lg" variant="outline">
+                <Phone className="mr-2 w-4 h-4" />
+                Zadzwoń Teraz
+              </Button>
             </div>
           </div>
-        </section>
 
-        {/* Contact Section */}
-        <ContactSection />
-      </Layout>
-    </>
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                <div className="text-sm text-gray-600">Klientów z regionu</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="text-3xl font-bold text-blue-600 mb-2">8 lat</div>
+                <div className="text-sm text-gray-600">Doświadczenia</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="text-3xl font-bold text-blue-600 mb-2">97%</div>
+                <div className="text-sm text-gray-600">Zadowolonych Klientów</div>
+              </CardContent>
+            </Card>
+            <Card className="text-center">
+              <CardContent className="pt-6">
+                <div className="text-3xl font-bold text-blue-600 mb-2">TOP3</div>
+                <div className="text-sm text-gray-600">Wyniki w Szczecinie</div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* O Szczecinie */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Szczecin – Dynamiczny Rynek dla Biznesu
+              </h2>
+              <p className="text-lg text-gray-700 mb-4">
+                Szczecin to główne miasto Zachodniopomorskiego i dynamiczny ośrodek gospodarczy na zachodzie Polski. Jako stolica województwa i ważny port międzynarodowy, stanowi bramę do rynku niemieckiego.
+              </p>
+              <p className="text-lg text-gray-700 mb-4">
+                Miasto przyciąga przedsiębiorców z całej Polski. Rosnąca scena startupowa, nowoczesne obiekty (Filharmonia, nowe biurowce) i rosnąca liczba specjalistów IT sprawiają, że Szczecin to idealny rynek dla agencji marketingowej.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Obsługujemy firmy z dzielnic: Śródmieście, Niebuszewo, Pogodno, Gumieńce, Żelechowa, Pomorzany i całego regionu Zachodniopomorskiego.
+              </p>
+              <div className="flex items-center gap-3">
+                <Building2 className="w-5 h-5 text-blue-600" />
+                <span className="text-gray-700">Biuro w Szczecinie dostępne do wizyty</span>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <Card>
+                <CardContent className="pt-6">
+                  <Users className="w-8 h-8 text-blue-600 mb-3" />
+                  <div className="font-semibold text-gray-900">Populacja</div>
+                  <div className="text-sm text-gray-600">408 000+ mieszkańców</div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6">
+                  <TrendingUp className="w-8 h-8 text-blue-600 mb-3" />
+                  <div className="font-semibold text-gray-900">Wzrost</div>
+                  <div className="text-sm text-gray-600">Dynamicznie rozwijającym się rynkiem</div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6">
+                  <Target className="w-8 h-8 text-blue-600 mb-3" />
+                  <div className="font-semibold text-gray-900">Rynek niemiecki</div>
+                  <div className="text-sm text-gray-600">Bliskość do granic Niemiec</div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6">
+                  <Lightbulb className="w-8 h-8 text-blue-600 mb-3" />
+                  <div className="font-semibold text-gray-900">Innowacje</div>
+                  <div className="text-sm text-gray-600">Rosnąca scena startup</div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Usługi Marketingowe w Szczecinie
+            </h2>
+            <p className="text-xl text-gray-700">
+              Kompleksowe rozwiązania marketingowe dla firm z Szczecina
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* SEO */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <TrendingUp className="w-10 h-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-bold text-gray-900 mb-3">SEO Szczecin</h3>
+                <p className="text-gray-700 mb-4">
+                  Pozycjonowanie stron w Google. Pracujemy na wynik i podwyższamy widoczność Twojej firmy w organicznych wynikach wyszukiwania.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Audyt i optymalizacja SEO</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Budowa linków lokalnych</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Google My Business optymalizacja</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Google Ads */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <Zap className="w-10 h-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Google Ads</h3>
+                <p className="text-gray-700 mb-4">
+                  Kampanie Google Ads z szybkim zwrotem z inwestycji. Docieramy do klientów szukających Twoich produktów i usług w Szczecinie.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Kampanie Search</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Display i Remarketing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Optymalizacja budżetu</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Social Media */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <Users className="w-10 h-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Social Media</h3>
+                <p className="text-gray-700 mb-4">
+                  Zarządzanie mediami społecznościowymi. Budujemy engagement, zwiększamy zasięg i konwertujemy fanów w klientów.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Zarządzanie Facebook i Instagram</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Tworzenie treści</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Kampanie społecznościowe</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Strony Internetowe */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <Smartphone className="w-10 h-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Strony Internetowe</h3>
+                <p className="text-gray-700 mb-4">
+                  Projektujemy i kodujemy nowoczesne strony WWW w React, Next.js i WordPress. Responsywne i szybkie.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Projektowanie UX/UI</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Strony responsywne</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Optymalizacja prędkości</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Analytics */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <BarChart3 className="w-10 h-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Analityka i Raporty</h3>
+                <p className="text-gray-700 mb-4">
+                  Mierzymy co jest ważne. Kompleksowa analiza danych, raporty miesięczne i rekomendacje dotyczące poprawy wyników.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Google Analytics 4 setup</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Raporty miesięczne</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Tracking konwersji</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Copywriting */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="pt-6">
+                <Lightbulb className="w-10 h-10 text-blue-600 mb-4" />
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Copywriting</h3>
+                <p className="text-gray-700 mb-4">
+                  Teksty, które sprzedają. Profesjonalne copywriting na stronę, maile marketingowe i content na bloga.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Copywriting stron</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Email marketing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Artykuły do bloga</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Packages */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Pakiety Usług Marketingowych
+            </h2>
+            <p className="text-xl text-gray-700">
+              Wybierz pakiet dostosowany do potrzeb Twojej firmy
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Starter */}
+            <Card
+              className={`relative transition-all cursor-pointer ${
+                selectedPackage === "starter" ? "ring-2 ring-blue-600 shadow-lg" : ""
+              }`}
+              onClick={() => setSelectedPackage("starter")}
+            >
+              <CardContent className="pt-6">
+                <Badge className="mb-4 bg-blue-100 text-blue-800">Najpopularniejszy</Badge>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">STARTER</h3>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-gray-900">2500 zł</span>
+                  <span className="text-gray-600">/miesiąc</span>
+                </div>
+                <p className="text-gray-700 mb-6">
+                  Idealna dla małych firm i startupów chcących rozpocząć marketing online.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Optymalizacja SEO</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Zarządzanie 1 kanałem social media</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">4 posty na miesiąc</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Raport analityczny</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                  Wybierz Pakiet
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Standard */}
+            <Card
+              className={`relative transition-all cursor-pointer border-2 ${
+                selectedPackage === "standard" ? "ring-2 ring-blue-600 shadow-lg border-blue-600" : "border-gray-200"
+              }`}
+              onClick={() => setSelectedPackage("standard")}
+            >
+              <CardContent className="pt-6">
+                <Badge className="mb-4 bg-green-100 text-green-800">Najczęściej wybierany</Badge>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">STANDARD</h3>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-gray-900">4990 zł</span>
+                  <span className="text-gray-600">/miesiąc</span>
+                </div>
+                <p className="text-gray-700 mb-6">
+                  Kompleksowe rozwiązanie dla firm chcących rosta i widoczności w sieci.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">SEO oraz Google My Business</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Zarządzanie 2 kanałami social media</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">8 postów na miesiąc</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Kampania Google Ads (podstawowa)</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Raporty analityczne</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-green-600 hover:bg-green-700">
+                  Wybierz Pakiet
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Premium */}
+            <Card
+              className={`relative transition-all cursor-pointer ${
+                selectedPackage === "premium" ? "ring-2 ring-blue-600 shadow-lg" : ""
+              }`}
+              onClick={() => setSelectedPackage("premium")}
+            >
+              <CardContent className="pt-6">
+                <Badge className="mb-4 bg-purple-100 text-purple-800">Premium</Badge>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">PREMIUM</h3>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-gray-900">8900 zł</span>
+                  <span className="text-gray-600">/miesiąc</span>
+                </div>
+                <p className="text-gray-700 mb-6">
+                  Pełny zakres usług marketingowych dla firm chcących dominować na rynku.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Kompleksowe SEO i strategie</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Zarządzanie 4 kanałami social media</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">20+ postów na miesiąc</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Google Ads oraz Social Ads</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Copywriting i email marketing</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">Dedykowany account manager</span>
+                  </li>
+                </ul>
+                <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                  Wybierz Pakiet
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 bg-blue-50 rounded-lg p-8 text-center">
+            <p className="text-lg text-gray-700 mb-4">
+              Nie jesteś pewien, który pakiet wybrać? Chętnie pomożemy!
+            </p>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              Umów Bezpłatną Konsultację
+              <Phone className="ml-2 w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Najczęściej Zadawane Pytania
+            </h2>
+            <p className="text-xl text-gray-700">
+              Odpowiedzi na pytania firm z Szczecina i regionu
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="item-1" className="border rounded-lg">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline">
+                Ile kosztuje agencja marketingowa w Szczecinie?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 py-4 text-gray-700">
+                Ceny agencji marketingowych w Szczecinie zaczynają się od 2500 zł/miesiąc za pakiet STARTER. Nasz pakiet STANDARD (najpopularniejszy) to 4990 zł/miesiąc, a PREMIUM to 8900 zł/miesiąc. Każda wycena jest dostosowana indywidualnie do potrzeb i budżetu firmy. Oferujemy bezpłatną konsultację i wycenę.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border rounded-lg">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline">
+                Jak długo czekać na pierwsze wyniki z SEO w Szczecinie?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 py-4 text-gray-700">
+                SEO to długoterminowa inwestycja. Pierwsze pozytywne wyniki obserwujemy zwykle po 2-3 miesiącach regularnej pracy. Znaczne poprawy widoczności pojawiają się po 6-9 miesiącach. Wszystko zależy od konkurencji na słowa kluczowe i stanu wyjściowego strony. Chętnie opowiemy dokładniej podczas konsultacji.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border rounded-lg">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline">
+                Czy pracujecie z firmami z Zachodniopomorskiego?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 py-4 text-gray-700">
+                Tak, pracujemy z firmami z całego Szczecina i regionu Zachodniopomorskiego. Obsługiwaliśmy już firmy z dzielnic: Śródmieście, Niebuszewo, Pogodno, Gumieńce, Żelechowa, Pomorzany. Oferujemy również specjalistyczną obsługę dla firm chcących ekspandować na rynki niemieckie, wykorzystując naszą bliskość do granic Niemiec.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border rounded-lg">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline">
+                Co zawiera pakiet PREMIUM?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 py-4 text-gray-700">
+                Pakiet PREMIUM zawiera: kompleksowe SEO i strategie marketingowe, zarządzanie 4 kanałami social media, 20+ postów na miesiąc, kampanie Google Ads oraz Social Ads, copywriting profesjonalny, email marketing, dedykowany account manager i raporty analityczne. To pełny zakres usług dla firm chcących dominować na rynku Szczecina.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border rounded-lg">
+              <AccordionTrigger className="px-6 py-4 hover:no-underline">
+                Czy oferujecie tworzenie stron internetowych?
+              </AccordionTrigger>
+              <AccordionContent className="px-6 py-4 text-gray-700">
+                Tak, projektujemy i kodujemy nowoczesne strony internetowe w React, Next.js i WordPress. Wszystkie strony są responsywne, szybkie, zoptymalizowane pod SEO i mają świetny UX/UI. Oferujemy pełny zakres od koncepcji, przez design, aż do wdrożenia i wsparcia. Możemy też przerobić istniejące strony, aby były bardziej efektywne.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative bg-gradient-to-r from-blue-600 to-indigo-600 py-16 md:py-24 text-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Gotowy na nowy poziom marketingu?
+          </h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+            Ponad 500 firm z Szczecina i regionu ufa nam obsługę swoje kampanie marketingowe. Dołącz do nich i dostań bezpłatną wycenę.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" variant="secondary" className="text-blue-600 hover:text-blue-700">
+              Bezpłatna Wycena
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Phone className="mr-2 w-4 h-4" />
+              +48 531 234 567
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="py-16 md:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Skontaktuj się z nami
+              </h2>
+              <p className="text-lg text-gray-700 mb-8">
+                Jesteśmy dostępni do dyskusji o Twoim projekcie marketingowym. Zadzwoń, wyślij wiadomość lub umów się na spotkanie w naszym biurze w Szczecinie.
+              </p>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <Phone className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <div className="font-semibold text-gray-900">Telefon</div>
+                    <div className="text-gray-700">+48 531 234 567</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Building2 className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <div className="font-semibold text-gray-900">Adres</div>
+                    <div className="text-gray-700">Szczecin, Zachodniopomorskie</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Card>
+              <CardContent className="pt-8">
+                <form className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-900 mb-2">
+                      Imię i nazwisko
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                      placeholder="Jan Kowalski"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-900 mb-2">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                      placeholder="jan@przykład.pl"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-900 mb-2">
+                      Wiadomość
+                    </label>
+                    <textarea
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                      rows={4}
+                      placeholder="Opowiedz nam o swoim projekcie..."
+                    ></textarea>
+                  </div>
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                    Wyślij Wiadomość
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
 }

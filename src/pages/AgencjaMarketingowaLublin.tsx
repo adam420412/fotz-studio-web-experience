@@ -1,372 +1,460 @@
-import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { SEOHead } from "@/components/seo/SEOHead";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight, Star, Building2, Globe, Target, MapPin, TrendingUp, Users, Award, Zap, Shield } from "lucide-react";
+import { useState } from "react";
+import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
-import { FadeInView } from "@/components/FadeInView";
-import { ContactSection } from "@/components/sections/ContactSection";
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } }
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
-};
-
-const services = [
-  {
-    icon: Globe,
-    title: "Strony i sklepy internetowe",
-    description: "Projektujemy responsywne strony www i sklepy e-commerce dla firm z Lublina. Szybkie, zoptymalizowane pod SEO i konwersję. Shopify, WooCommerce, Next.js — kompleksowe rozwiązania dla biznesów lubelskich."
-  },
-  {
-    icon: Target,
-    title: "Pozycjonowanie SEO",
-    description: "Fotz Studio to agencja SEO Lublin, która zwiększa widoczność firm w Google. Audyt techniczny, optymalizacja treści, link building. Specjalizacja w SEO lokalnym dla Lublina i województwa lubelskiego."
-  },
-  {
-    icon: Zap,
-    title: "Kampanie Google Ads",
-    description: "Zaawansowane kampanie Google Ads: search, shopping, display. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Lublin to niższa konkurencja — szybsze i tańsze efekty niż w dużych miastach."
-  },
-  {
-    icon: Star,
-    title: "Kampanie Meta Ads",
-    description: "Kampanie na Facebooku i Instagramie z precyzyjnym targetowaniem. Niski CPL w Lublinie = efektywne kampanie dla e-commerce, usług i local business. Szybki ROI dzięki mniejszej konkurencji."
-  },
-  {
-    icon: Users,
-    title: "Social media marketing",
-    description: "Agencja social media Lublin — prowadzenie profili Instagram, Facebook, LinkedIn, TikTok. Kreacje treści, harmonogram, kampanie. Obsługa dla startupów, firm lokalnych i małego biznesu na rynku Lublina."
-  },
-  {
-    icon: Building2,
-    title: "Identyfikacja wizualna",
-    description: "Branding i identyfikacja wizualna: logo, brandbook, system identyfikacji. Marki z mocną wizualną tożsamością mają lepsze wyniki w Lublinie — rynek jest bardziej osobisty i oparty na rekomendacjach."
-  }
-];
-
-const faqItems = [
-  {
-    question: "Jakie są przewagi marketingowe Lublina?",
-    answer: "Lublin to wschodnia brama UE — miasto pomiędzy Warszawa a Ukrainą. Niższa konkurencja w kampaniach reklamowych niż w Warszawie, Krakowie czy Gdańsku = tańszy CPL i szybsze efekty. IT hub (Software Mind, Sii), akademickie miasto (UMCS, KUL), rynek rosnący. Dla firm lokalne — niskie koszty marketingu oznaczają wyższy zwrot z inwestycji."
-  },
-  {
-    question: "Czy agencja z innego miasta obsługuje klientów z Lublina?",
-    answer: "Tak — obsługujemy firmy z całej Polski, w tym z Lublina i Lubelskiego. Współpraca przebiega online (Google Meet, Teams). Ponad 40% naszych klientów pochodzi z różnych miast. Lublin jest rynkiem zaawansowanym cyfrowo — format online jest naturalny. Ważne jest zrozumienie specyfiki lubelskiego rynku i potencjału niskiej konkurencji."
-  },
-  {
-    question: "Ile kosztuje agencja marketingowa w Lublinie?",
-    answer: "Ceny zależą od zakresu: pojedynczy kanał (SEO, Meta Ads) od 1 500–3 000 PLN/mies. Kompleksowa obsługa — SEO, Google Ads, social media — od 5 000–15 000 PLN/mies. Lublin to tańszy rynek niż Warszawa czy Kraków — zarówno w CPL kampanii jak i w cenach agencji. Każdą wycenę poprzedzamy bezpłatną konsultacją dostosowaną do budżetu."
-  },
-  {
-    question: "Jakie kampanie reklamowe są najtańsze i najskuteczniejsze w Lublinie?",
-    answer: "W Lublinie najtańsze i najpierw efektywne: Google Ads (niski CPC), kampanie Meta Ads (niski CPL), Facebook Ads dla lokalnych firm. Dla firm IT/Software (Software Mind, Sii) — LinkedIn campaigns. Dla e-commerce — Google Shopping. Dla restauracji, usług lokalnych — Google Ads (mapy) + Local SEO. Niższa konkurencja = szybsze wyniki w każdym kanale."
-  },
-  {
-    question: "Czym wyróżnia się Lublin na tle innych miast?",
-    answer: "Lublin to crossroads East/West — polska brama do Europy Wschodniej. Dynamiczny rynek IT (Software Mind, Sii), akademickie (UMCS, KUL, UM Lublin), startup'i. Niskiej konkurencji + rosnący rynek = idealna kombinacja dla firm, które chcą szybkiego wzrostu. CPL w Lublinie jest 30-50% tańszy niż w Warszawie czy Krakowie — każdy procent efektywności daje większy zwrot."
-  },
-  {
-    question: "Czy oferujecie kompleksową obsługę marketingową dla firm z Lublina?",
-    answer: "Tak — pełny zakres usług. Projektujemy strony, prowadzime SEO, konfigurujemy Google Ads i Meta, obsługujemy social media. Jeden partner, pełna odpowiedzialność. Spójność strategii daje lepsze wyniki w rosnącym rynku Lublina. Niższa konkurencja oznacza, że szybciej widać efekty — to idealne środowisko do testowania i skalowania kampanii."
-  }
-];
+import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 
 export default function AgencjaMarketingowaLublin() {
+  const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
+
+  const services = [
+    {
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: "Pozycjonowanie SEO",
+      description: "Zwiększymy widoczność Twojej firmy w wyszukiwarce Google. Specjalizujemy się w optymalizacji stron dla firm z Lublina, Śródmieścia, LSM i okolic.",
+      benefits: ["Więcej organicznych klientów", "Stabilne pozycje w Google", "Ruch lokalny i ogólnopolski"]
+    },
+    {
+      icon: <Target className="w-8 h-8" />,
+      title: "Google Ads i PPC",
+      description: "Kampanie reklamowe, które generują sprzedaż. Zarządzamy budżetem precyzyjnie, aby każdy złoty wydany przyniosła zwrot.",
+      benefits: ["Natychmiastowe efekty", "Kontrola budżetu", "Mierzalne ROI"]
+    },
+    {
+      icon: <Smartphone className="w-8 h-8" />,
+      title: "Social Media Marketing",
+      description: "Budujemy marę na Facebooku, Instagramie i LinkedIn. Strategie dostosowane do branży i odbiorcy z terenu Lubelszczyzny.",
+      benefits: ["Wzrost zasięgu", "Zaangażowanie odbiorców", "Budowanie społeczności"]
+    },
+    {
+      icon: <BarChart3 className="w-8 h-8" />,
+      title: "Strony WWW i UX",
+      description: "Nowoczesne, responsywne strony internetowe. Projektujemy rozwiązania, które zamieniają odwiedzających w klientów.",
+      benefits: ["Design responsywny", "Szybkie ładowanie", "Konwersje i sprzedaż"]
+    },
+    {
+      icon: <Lightbulb className="w-8 h-8" />,
+      title: "Strategie Marketingowe",
+      description: "Opracowujemy indywidualne plany wzrostu dla Twojego biznesu. Audyt, benchmark, optymalizacja procesów.",
+      benefits: ["Analiza konkurencji", "Plan działań", "Wdrażanie i monitoring"]
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: "Email Marketing",
+      description: "Automatyzacja i kampanie mailowe, które zwiększają zaangażowanie. Zarządzanie bazą kontaktów i segmentacja odbiorców.",
+      benefits: ["Wysoki ROI", "Automatyzacja", "Personalizacja komunikacji"]
+    }
+  ];
+
+  const packages = [
+    {
+      id: "starter",
+      name: "Starter",
+      price: "od 2 999",
+      currency: "PLN",
+      period: "/miesiąc",
+      description: "Idealne dla małych firm i startupów z Lublina",
+      features: [
+        "Pełna audyt SEO i analiza konkurencji",
+        "Do 10 słów kluczowych",
+        "Miesięczny raport",
+        "Konsultacje co 2 tygodnie",
+        "Wsparcie mailowe"
+      ],
+      cta: "Zacznij teraz"
+    },
+    {
+      id: "professional",
+      name: "Professional",
+      price: "od 7 999",
+      currency: "PLN",
+      period: "/miesiąc",
+      description: "Dla firm chcących dynamicznego wzrostu",
+      featured: true,
+      features: [
+        "Kompleksowe zarządzanie SEO",
+        "Do 30 słów kluczowych",
+        "Kampania Google Ads",
+        "Zarządzanie social media",
+        "Cotygodniowe konsultacje",
+        "Raport szczegółowy co tydzień",
+        "Wsparcie telefoniczne"
+      ],
+      cta: "Wybierz plan"
+    },
+    {
+      id: "enterprise",
+      name: "Enterprise",
+      price: "Wycena indywidualna",
+      currency: "",
+      period: "",
+      description: "Zaawansowana obsługa dla dużych organizacji",
+      features: [
+        "Dedykowany menedżer konta",
+        "Nieograniczone słowa kluczowe",
+        "SEO + SEM + Social Media",
+        "Produkcja contentu",
+        "Projektowanie stron WWW",
+        "Konsultacje na bieżąco",
+        "Strategia e-commerce",
+        "Premium support 24/7"
+      ],
+      cta: "Zapytaj o cenę"
+    }
+  ];
+
+  const faqs = [
+    {
+      question: "Jak szybko zobaczę wyniki z SEO w Lublinie?",
+      answer: "Pierwsze efekty SEO widać zwykle po 4-6 tygodniach. Pozycje stabilizują się po 3-6 miesiącach. Wszystko zależy od konkurencji i zakresu optymalizacji. Google Ads natomiast generuje wyniki od razu, w ciągu kilku godzin."
+    },
+    {
+      question: "Obsługujecie firmy spoza Lublina?",
+      answer: "Tak, pracujemy z firmami z całej Polski i zagranicą. Specjalizujemy się w firmach z Lublin i Lubelszczyzny (Śródmieście, LSM, Wieniawa, Tatary, Bronowice, Czechów), ale strategie SEO i digital marketing działają wszędzie."
+    },
+    {
+      question: "Ile kosztuje pozycjonowanie SEO w Lublinie?",
+      answer: "Cena zależy od branży, konkurencji i zakresu pracy. Nasze pakiety startują od 2 999 PLN miesięcznie. Oferujemy bezpłatną wycenę po rozmowie o Twoim biznesie i celach."
+    },
+    {
+      question: "Czy mogę odwołać umowę w dowolnym momencie?",
+      answer: "Tak, umowy bez kar za przedterminowe rozwiązanie. Chcemy, aby współpraca była satysfakcjonująca dla obu stron. Jeśli nie będziesz zadowolony, możesz zrezygnować."
+    },
+    {
+      question: "Jakie wyniki osiągają Wasze kampanie Google Ads?",
+      answer: "Średni ROI naszych kampanii to 300-500%. Wszystko zależy od branży i budżetu. Każdą kampanię optymalizujemy pod kątem konwersji i maksymalnego zwrotu z inwestycji. Dostarczamy raport ze statystykami co tydzień."
+    }
+  ];
+
+  const areas = [
+    "Śródmieście",
+    "LSM",
+    "Wieniawa",
+    "Tatary",
+    "Bronowice",
+    "Czechów"
+  ];
+
+  const stats = [
+    { label: "Zadowolonych klientów", value: "500+" },
+    { label: "Lat doświadczenia", value: "8" },
+    { label: "Wskaźnik zadowolenia", value: "97%" },
+    { label: "Projektów z TOP3", value: "95%" }
+  ];
+
   return (
-    <>
-      <Layout>
-        <SEOHead
-          title="Agencja Marketingowa Lublin — Marketing Online | Fotz Studio"
-          description="Agencja marketingowa Lublin i Lubelskie. Fotz Studio — strony WWW, SEO, Google Ads, social media. Bezpłatna konsultacja dla firm z Lublina!"
-          canonical="https://fotz.pl/agencja-marketingowa-lublin"
-          keywords="agencja marketingowa Lublin, marketing Lublin, agencja SEO Lublin, Google Ads Lublin, social media, digital marketing, kampanie reklamowe"
-        />
+    <Layout>
+      <SEOHead
+        title="Agencja Marketingowa Lublin | FOTZ – Marketing Dla Firm w Lublinie"
+        description="Agencja marketingowa Lublin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Lublina i Lubelszczyzny. Bezpłatna wycena!"
+        canonical="https://fotz.pl/agencja-marketingowa/lublin"
+      />
 
-        <ServiceSchema
-          name="Agencja Marketingowa Lublin"
-          description="Kompleksowe usługi marketingu internetowego dla firm z Lublina — SEO, Google Ads, Meta Ads, social media, strony internetowe. Niskie koszty, szybkie efekty."
-          provider="Fotz Studio"
-          areaServed="Lublin"
-        />
-        <BreadcrumbSchema
-          items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Lublin", url: "https://fotz.pl/agencja-marketingowa-lublin" }
-          ]}
-        />
-        <FAQSchema items={faqItems} />
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          { name: "Lublin", url: "https://fotz.pl/agencja-marketingowa/lublin" }
+        ]}
+      />
 
-        {/* Hero */}
-        <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-b from-background via-background to-secondary/20 overflow-hidden">
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-          <div className="absolute bottom-0 left-1/3 w-64 h-64 rounded-full bg-[#0F3053]/8 blur-3xl pointer-events-none" />
-
-          <div className="container px-4 relative z-10">
-            <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <motion.div variants={fadeIn} className="mb-4">
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm text-foreground/80">
-                  <MapPin className="w-4 h-4 text-primary" /> Lublin i cała Polska — współpraca online
-                </span>
-              </motion.div>
-
-              <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 leading-tight">
-                Agencja Marketingowa{" "}
-                <span className="text-gradient">Lublin</span>
-              </motion.h1>
-
-              <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Kompleksowy marketing internetowy dla firm z Lublina i Lubelskiego. SEO, Google Ads, Meta Ads, social media, strony internetowe — wszystko w jednej agencji. Niskie koszty kampanii, szybkie efekty dzięki niższej konkurencji.
-              </motion.p>
-
-              <motion.p variants={fadeIn} className="text-base text-muted-foreground/80 mb-10 max-w-xl mx-auto">
-                Lublin to wschodnia brama UE — IT hub (Software Mind, Sii), akademickie miasto (UMCS, KUL), rynek rosnący. Niższa konkurencja w marketingu niż w dużych miastach = szybsze i tańsze efekty kampanii reklamowych dla Twojego biznesu.
-              </motion.p>
-
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link to="/kontakt">
-                    Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/realizacje">Zobacz nasze realizacje</Link>
-                </Button>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Stats */}
-        <section className="py-12 bg-card/30 border-y border-border/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center"
-            >
-              {[
-                { value: "+250%", label: "wzrost ruchu (3 miesiące)" },
-                { value: "TOP 5", label: "pozycje w Google" },
-                { value: "4.8/5", label: "ocena (11 opinii)" },
-                { value: "200+", label: "zrealizowanych kampanii" }
-              ].map((s, i) => (
-                <motion.div key={i} variants={fadeIn}>
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-1">{s.value}</div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Services */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-5xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Usługi marketingowe dla firm z{" "}
-                  <span className="text-gradient">Lublina</span>
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Kompleksowe usługi dostosowane do rynku Lublina — od startupów IT po firmy lokalne i e-commerce.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {services.map((service, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="p-6 rounded-2xl border border-border/40 bg-card/20 hover:border-primary/30 transition-colors"
-                  >
-                    <service.icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="font-heading font-semibold mb-2">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground">{service.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Why Choose Us */}
-        <section className="py-20 md:py-28 bg-card/30">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-4xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-14">
-                <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                  Dlaczego Fotz Studio dla firmy z{" "}
-                  <span className="text-gradient">Lublina?</span>
-                </h2>
-                <p className="text-muted-foreground">
-                  Specjaliści w marketingu dla rynków wschodnich.
-                </p>
-              </motion.div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  {
-                    icon: Award,
-                    title: "Doświadczenie na rynku Lublin",
-                    desc: "Znamy specyfikę lubelskiego rynku — niższa konkurencja, ale rosnący potencjał. Wiemy, jak budować widoczność i efektywnie wydawać budżet marketingowy."
-                  },
-                  {
-                    icon: TrendingUp,
-                    title: "Szybkie wyniki dzięki niskiej konkurencji",
-                    desc: "CPL w Lublinie jest 30-50% tańszy niż w Warszawie — szybciej dochodzimy do celu. Jedno złoto kampanii w Lublinie = więcej konwersji i leadów niż w dużych miastach."
-                  },
-                  {
-                    icon: Users,
-                    title: "Dedykowany ekspert znający rynek",
-                    desc: "Stały kontakt z ekspertem projektu, który rozumie potencjał Lublina i wie, jak go wykorzystać. Nie rotujemy juniorów, masz stały mentor."
-                  },
-                  {
-                    icon: Globe,
-                    title: "Strategia dla Lublina — East/West Hub",
-                    desc: "Lublin to brama do Europy Wschodniej — znamy rynek polski i międzynarodowy. Dla firm IT — kampanie anglojęzyczne; dla lokalnych — focus na Lublin."
-                  }
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    variants={fadeIn}
-                    className="flex gap-4 p-6 rounded-2xl border border-border/40 bg-background"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-semibold mb-2">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-20 md:py-28 bg-gradient-to-r from-primary/90 to-[#0F3053]/90">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto text-center"
-            >
-              <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-heading font-bold text-white mb-4">
-                Skorzystaj z przewagi niskiej konkurencji w Lublinie
-              </motion.h2>
-              <motion.p variants={fadeIn} className="text-white/80 mb-8">
-                Bezpłatna konsultacja — 30 minut, zero zobowiązań. Omówimy potencjał marketingowy Twojego biznesu w Lublinie i zaproponujemy efektywne działania.
-              </motion.p>
-              <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90 font-semibold">
-                  <Link to="/kontakt">
-                    Umów konsultację <ArrowRight className="ml-2 w-5 h-5" />
-                  </Link>
-                </Button>
-              </motion.div>
-              <motion.p variants={fadeIn} className="text-white/50 text-xs mt-6">
-                Odpowiadamy w ciągu 24 godzin · Bez sprzedaży pod presją
-              </motion.p>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section className="py-20 md:py-28 bg-background">
-          <div className="container px-4">
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-              className="max-w-3xl mx-auto"
-            >
-              <motion.div variants={fadeIn} className="text-center mb-12">
-                <h2 className="text-3xl font-heading font-bold mb-4">
-                  Najczęstsze pytania — agencja marketingowa Lublin
-                </h2>
-              </motion.div>
-
-              <Accordion type="single" collapsible className="space-y-3">
-                {faqItems.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`item-${i}`}
-                    className="border border-border/40 rounded-xl px-6 data-[state=open]:bg-primary/5"
-                  >
-                    <AccordionTrigger className="py-4 hover:no-underline text-left font-heading font-semibold">
-                      {item.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-sm text-muted-foreground pb-4">
-                      {item.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Internal Linking */}
-        <section className="py-12 border-t border-border/30 bg-card/20">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">
-              Pozostałe miasta
+      <section className="py-12 bg-gradient-to-b from-blue-50 to-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">
+              Agencja Marketingowa w Lublinie
+            </Badge>
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+              Agencja Marketingowa Lublin
+            </h1>
+            <p className="text-xl text-gray-600 mb-6">
+              Kompleksowe usługi marketingu cyfrowego dla firm z Lublina, Lubelszczyzny i całej Polski. SEO, Google Ads, Social Media, strony WWW i strategie wzrostu.
             </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
-                { label: "Agencja marketingowa Łódź", to: "/agencja-marketingowa-lodz" },
-                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa-gdansk" },
-                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa-krakow" },
-              ].map((link) => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className="px-4 py-2 rounded-full border border-border/50 text-sm text-muted-foreground hover:border-primary/40 hover:text-primary transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Phone className="mr-2 w-5 h-5" />
+                Bezpłatna konsultacja
+              </Button>
+              <Button size="lg" variant="outline">
+                Pobierz wycenę
+              </Button>
             </div>
           </div>
-        </section>
 
-        {/* Contact Section */}
-        <ContactSection />
-      </Layout>
-    </>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12">
+            {stats.map((stat, idx) => (
+              <div key={idx} className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold text-blue-600 mb-1">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-gray-600">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Obsługujemy firmy z całego Lublina
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Nasi specjaliści znają lokalne rynki, konkurencję i potrzeby firm z Lublina. Pracujemy z firmami z każdej dzielnicy miasta i Lubelszczyzny.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-12">
+            {areas.map((area, idx) => (
+              <Card key={idx} className="border-blue-100 hover:border-blue-300 transition">
+                <CardContent className="p-6 text-center">
+                  <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-2" />
+                  <div className="font-semibold text-gray-900">{area}</div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="bg-blue-50 rounded-lg p-8 border border-blue-200">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">
+              Dlaczego wybrać nas?
+            </h3>
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex gap-4">
+                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <div className="font-semibold text-gray-900">Doświadczenie na lokalnym rynku</div>
+                  <p className="text-sm text-gray-700 mt-1">Znamy Lublin, konkurencję i potrzeby lokalnych firm. Pracujemy z biznesami z uniwersytetów, IT-u i handlu.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <div className="font-semibold text-gray-900">Rezultaty, nie obietnice</div>
+                  <p className="text-sm text-gray-700 mt-1">97% naszych klientów widzi wzrost ruchu i sprzedaży w ciągu 6 miesięcy. Pokazujemy konkretne liczby.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <div className="font-semibold text-gray-900">Zespół specjalistów</div>
+                  <p className="text-sm text-gray-700 mt-1">SEO specialiści, developerzy, projektanci i copywriterzy. Każdy ma min. 5 lat doświadczenia.</p>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <CheckCircle2 className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div>
+                  <div className="font-semibold text-gray-900">Wsparcie na każdym kroku</div>
+                  <p className="text-sm text-gray-700 mt-1">Dedykowany menedżer, raport co tydzień, konsultacje i wsparcie. Jesteśmy partnerem, nie dostawcą.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Nasze usługi
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Kompleksowe rozwiązania marketingowe dostosowane do potrzeb Twojej firmy. Od SEO po e-commerce, od małych startupów po duże korporacje.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((service, idx) => (
+              <Card key={idx} className="border-0 shadow-sm hover:shadow-md transition h-full">
+                <CardContent className="p-6">
+                  <div className="text-blue-600 mb-4">{service.icon}</div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                  <ul className="space-y-2">
+                    {service.benefits.map((benefit, bidx) => (
+                      <li key={bidx} className="flex items-start gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span>{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Pakiety i ceny
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Elastyczne pakiety, które pasują do każdego budżetu. Brak ukrytych kosztów, pełna transparentność.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {packages.map((pkg) => (
+              <Card
+                key={pkg.id}
+                className={`border-2 transition ${
+                  pkg.featured
+                    ? "border-blue-500 shadow-lg"
+                    : "border-gray-200 hover:border-blue-300"
+                } h-full flex flex-col`}
+              >
+                <CardContent className="p-8 flex flex-col h-full">
+                  {pkg.featured && (
+                    <Badge className="mb-4 bg-blue-600 text-white hover:bg-blue-700 self-start">
+                      Najpopularniejszy
+                    </Badge>
+                  )}
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
+                  <p className="text-gray-600 text-sm mb-4">{pkg.description}</p>
+
+                  <div className="mb-6">
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
+                      {pkg.currency && <span className="text-gray-600">{pkg.currency}</span>}
+                    </div>
+                    <p className="text-sm text-gray-600 mt-1">{pkg.period}</p>
+                  </div>
+
+                  <ul className="space-y-3 mb-8 flex-grow">
+                    {pkg.features.map((feature, fidx) => (
+                      <li key={fidx} className="flex items-start gap-2 text-sm text-gray-700">
+                        <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button
+                    className={`w-full ${
+                      pkg.featured
+                        ? "bg-blue-600 hover:bg-blue-700"
+                        : "bg-gray-900 hover:bg-gray-800"
+                    }`}
+                    onClick={() => setSelectedPackage(pkg.id)}
+                  >
+                    {pkg.cta}
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center bg-blue-50 rounded-lg p-8 border border-blue-200">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              Wszystkie pakiety zawierają
+            </h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+              <div>
+                <div className="font-semibold text-gray-900">Raport analityczny</div>
+                <p className="text-sm text-gray-600 mt-1">Szczegółowe dane o wynikach</p>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-900">Optymalizacja ciągła</div>
+                <p className="text-sm text-gray-600 mt-1">Testy A/B i ulepszenia</p>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-900">Konsultacje</div>
+                <p className="text-sm text-gray-600 mt-1">Rozmowy ze specjalistą</p>
+              </div>
+              <div>
+                <div className="font-semibold text-gray-900">Wsparcie techniczne</div>
+                <p className="text-sm text-gray-600 mt-1">Rozwiązywanie problemów</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Pytania i odpowiedzi
+            </h2>
+            <p className="text-lg text-gray-600">
+              Odpowiadamy na najczęstsze pytania dotyczące naszych usług, cen i procesu pracy.
+            </p>
+          </div>
+
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, idx) => (
+              <AccordionItem
+                key={idx}
+                value={`faq-${idx}`}
+                className="border border-gray-200 rounded-lg px-6"
+              >
+                <AccordionTrigger className="text-left font-semibold text-gray-900 py-4">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 pb-4">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+
+          <FAQSchema
+            items={faqs.map((faq) => ({
+              question: faq.question,
+              answer: faq.answer
+            }))}
+          />
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            Gotów na wzrost?
+          </h2>
+          <p className="text-xl mb-8 opacity-90">
+            Ponad 500 firm z Lublina i całej Polski zaufało nam swoją transformację cyfrową. Dołącz do nich dzisiaj.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
+            >
+              <Phone className="mr-2 w-5 h-5" />
+              Umów bezpłatną konsultację
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-blue-800"
+            >
+              Dowiedz się więcej
+            </Button>
+          </div>
+          <p className="text-sm mt-6 opacity-75">
+            Brak zobowiązań. Poromawiamy o Twoich celach i pokażemy możliwości.
+          </p>
+        </div>
+      </section>
+
+      <ServiceSchema
+        name="Agencja Marketingowa Lublin"
+        description="Kompleksowe usługi marketingu cyfrowego: SEO, Google Ads, Social Media, strony WWW i strategie wzrostu dla firm z Lublina i Lubelszczyzny."
+        areaServed="Lublin"
+        telephone="+48"
+        url="https://fotz.pl/agencja-marketingowa/lublin"
+      />
+    </Layout>
   );
 }
