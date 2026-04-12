@@ -78,6 +78,7 @@ const BlogSocialMediaStrategia = lazy(() => import("./pages/BlogSocialMediaStrat
 const BlogStronaDlaFirmy = lazy(() => import("./pages/BlogStronaDlaFirmy"));
 const BlogPodcastMarketing = lazy(() => import("./pages/BlogPodcastMarketing"));
 
+const BlogProjektowanieStron = lazy(() => import("./pages/BlogProjektowanieStron"));
 // New blog posts (Wave 5 - content gaps)
 const BlogIdentyfikacjaWizualna = lazy(() => import("./pages/BlogIdentyfikacjaWizualna"));
 const BlogJakZaprojektowacLogo = lazy(() => import("./pages/BlogJakZaprojektowacLogo"));
@@ -1235,6 +1236,7 @@ const BlogKursGoogleAds = lazy(() => import("./pages/BlogKursGoogleAds"));
 const BlogShopifyPolska = lazy(() => import("./pages/BlogShopifyPolska"));
 const BlogTworzenieStronCennik = lazy(() => import("./pages/BlogTworzenieStronCennik"));
 const BlogWizytowkaGoogle = lazy(() => import("./pages/BlogWizytowkaGoogle"));
+const BlogGoogleMyBusiness = lazy(() => import("./pages/BlogGoogleMyBusiness"));
 const BlogSklepInternetowyCena = lazy(() => import("./pages/BlogSklepInternetowyCena"));
 
 // Wave 16: Google Moja Firma, marketing automation, lead gen, SEO Lublin, restauracja
@@ -1321,6 +1323,9 @@ const AgencjaMarketingowaZabrze = lazy(() => import("./pages/AgencjaMarketingowa
 const BlogMarketingB2B = lazy(() => import("./pages/BlogMarketingB2B"));
 const BlogKosztProwadzeniaStrony = lazy(() => import("./pages/BlogKosztProwadzeniaStrony"));
 const AgencjaMarketingowaWalbrzych = lazy(() => import("./pages/AgencjaMarketingowaWalbrzych"));
+const BlogLinkedInDlaFirmy = lazy(() => import("./pages/BlogLinkedInDlaFirmy"));
+const BlogMarketingLokalny = lazy(() => import("./pages/BlogMarketingLokalny"));
+const AgencjaMarketingowaElblag = lazy(() => import("./pages/AgencjaMarketingowaElblag"));
 
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
@@ -1459,6 +1464,7 @@ const App = () => (
                 <Route path="/blog/jak-stworzyc-strone-internetowa" element={<BlogJakStworzyc />} />
                 <Route path="/blog/strona-internetowa-dla-malej-firmy" element={<BlogStronaInternetowaOdZera />} />
                 <Route path="/blog/podcast-dla-firmy" element={<BlogPodcastMarketing />} />
+                <Route path="/blog/projektowanie-stron-internetowych-poradnik" element={<BlogProjektowanieStron />} />
                 <Route path="/cennik-tworzenia-stron" element={<CennikTworzenieStron />} />
 
                 {/* Case Studies */}
@@ -2336,6 +2342,9 @@ const App = () => (
                 <Route path="/blog/marketing-b2b-strategia" element={<BlogMarketingB2B />} />
                 <Route path="/blog/koszt-prowadzenia-strony-internetowej" element={<BlogKosztProwadzeniaStrony />} />
                 <Route path="/agencja-marketingowa/walbrzych" element={<AgencjaMarketingowaWalbrzych />} />
+                <Route path="/blog/linkedin-dla-firmy" element={<BlogLinkedInDlaFirmy />} />
+                <Route path="/blog/marketing-lokalny-dla-firm" element={<BlogMarketingLokalny />} />
+                <Route path="/agencja-marketingowa/elblag" element={<AgencjaMarketingowaElblag />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
@@ -2353,6 +2362,7 @@ const App = () => (
                 <Route path="/blog/shopify-polska" element={<BlogShopifyPolska />} />
                 <Route path="/blog/tworzenie-stron-internetowych-cennik" element={<BlogTworzenieStronCennik />} />
                 <Route path="/blog/wizytowka-google" element={<BlogWizytowkaGoogle />} />
+                <Route path="/blog/google-moja-firma-optymalizacja" element={<BlogGoogleMyBusiness />} />
                 <Route path="/blog/sklep-internetowy-cena" element={<BlogSklepInternetowyCena />} />
                 {/* Wave 16 */}
                 <Route path="/blog/google-moja-firma" element={<GoogleMojaFirma />} />
