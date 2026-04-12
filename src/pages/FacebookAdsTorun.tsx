@@ -83,6 +83,7 @@ function FacebookAdsTorun() {
         title="Reklamy Facebook Ads Toruń — agencja Meta Ads | Fotz.pl"
         description="Facebook Ads Toruń — agencja Fotz.pl. Kampanie Meta Ads dla firm z Torunia. Reklamy na Facebooku i Instagramie, targetowanie lokalne. Bezpłatna konsultacja!"
         canonical={canonicalUrl}
+        keywords="facebook ads toruń, agencja facebook ads toruń, kampanie facebook toruń, reklamy facebook toruń, meta ads toruń"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />

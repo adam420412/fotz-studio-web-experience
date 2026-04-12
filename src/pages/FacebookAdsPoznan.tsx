@@ -216,6 +216,7 @@ export default function FacebookAdsPoznan() {
         title="Agencja Facebook Ads Poznań — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Poznań ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Poznania i Wielkopolski. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/facebook-ads/poznan"
+        keywords="facebook ads poznań, agencja facebook ads poznań, kampanie facebook poznań, reklamy facebook poznań, meta ads poznań, instagram ads poznań"
       />
       
       <BreadcrumbSchema items={breadcrumbItems} />

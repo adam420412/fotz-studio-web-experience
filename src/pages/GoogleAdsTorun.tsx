@@ -163,6 +163,7 @@ export default function GoogleAdsTorun() {
           title="Agencja Google Ads Toruń — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Toruń ✓ Kampanie dla firm z Torunia i Kujaw. Od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/torun"
+        keywords="google ads toruń, agencja google ads toruń, kampanie google ads toruń, reklamy google toruń, google ads dla firm toruń, sem toruń"
         />
 
         <ServiceSchema

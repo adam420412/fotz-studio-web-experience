@@ -14,6 +14,7 @@ export default function GoogleAdsRzeszow() {
           title="Agencja Google Ads Rzeszów — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Rzeszów ✓ Kampanie dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/rzeszow"
+        keywords="google ads rzeszów, agencja google ads rzeszów, kampanie google ads rzeszów, reklamy google rzeszów, google ads dla firm rzeszów, sem rzeszów"
         />
 
       <ServiceSchema 

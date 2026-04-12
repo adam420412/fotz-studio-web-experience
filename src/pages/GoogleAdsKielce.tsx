@@ -83,6 +83,7 @@ function GoogleAdsKielce() {
         title="Google Ads Kielce — agencja kampanii reklamowych | Fotz.pl"
         description="Google Ads Kielce — agencja Fotz.pl. Kampanie Google Ads dla firm z Kielc. Reklamy w Google, targetowanie lokalne, optymalizacja CPC. Bezpłatna konsultacja!"
         canonical={canonicalUrl}
+        keywords="google ads kielce, agencja google ads kielce, kampanie google ads kielce, reklamy google kielce, google ads dla firm kielce, sem kielce"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />

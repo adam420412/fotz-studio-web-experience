@@ -13,6 +13,7 @@ export default function FacebookAdsRzeszow() {
         title="Agencja Facebook Ads Rzeszów — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Rzeszów ✓ Kampanie Meta Ads dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/facebook-ads/rzeszow"
+        keywords="facebook ads rzeszów, agencja facebook ads rzeszów, kampanie facebook rzeszów, reklamy facebook rzeszów, meta ads rzeszów"
       />
       <BreadcrumbSchema
         items={[

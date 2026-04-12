@@ -49,7 +49,7 @@ export default function GoogleAdsWroclaw() {
           title="Agencja Google Ads Wrocław — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Wrocław — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/wroclaw"
-          keywords="google ads wrocław, agencja google ads wrocław, kampanie google ads, reklamy w google wrocław"
+          keywords="google ads wrocław, agencja google ads wrocław, kampanie google ads wrocław, reklamy google wrocław, google ads dla firm wrocław, sem wrocław, google ads dolny śląsk"
         />
 
         <ServiceSchema

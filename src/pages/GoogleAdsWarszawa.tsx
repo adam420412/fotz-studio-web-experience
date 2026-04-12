@@ -49,7 +49,7 @@ export default function GoogleAdsWarszawa() {
           title="Agencja Google Ads Warszawa — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Warszawa — agencja certyfikowana Fotz.pl. Kampanie od 500 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/warszawa"
-          keywords="google ads warszawa, agencja google ads warszawa, kampanie google ads, reklamy w google"
+          keywords="google ads warszawa, agencja google ads warszawa, kampanie google ads warszawa, reklamy google warszawa, google ads dla firm warszawa, sem warszawa, adwords warszawa"
         />
 
         <ServiceSchema

@@ -13,6 +13,7 @@ export default function FacebookAdsSzczecin() {
         title="Agencja Facebook Ads Szczecin — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Szczecin ✓ Kampanie Meta Ads dla firm z Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/facebook-ads/szczecin"
+        keywords="facebook ads szczecin, agencja facebook ads szczecin, kampanie facebook szczecin, reklamy facebook szczecin, meta ads szczecin"
       />
       <BreadcrumbSchema
         items={[

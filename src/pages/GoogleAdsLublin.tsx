@@ -14,6 +14,7 @@ export default function GoogleAdsLublin() {
           title="Agencja Google Ads Lublin — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Lublin ✓ Kampanie dla firm z Lublina i Lubelszczyzny. Od 400 zł/mies. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/lublin"
+        keywords="google ads lublin, agencja google ads lublin, kampanie google ads lublin, reklamy google lublin, google ads dla firm lublin, sem lublin"
         />
 
       <ServiceSchema 

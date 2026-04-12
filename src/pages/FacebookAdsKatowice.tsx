@@ -49,7 +49,7 @@ export default function FacebookAdsKatowice() {
           title="Agencja Facebook Ads Katowice — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Katowice — agencja Fotz.pl. Kampanie Meta Ads dla firm z Katowic i Śląska. Od 400 zł/mies. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/facebook-ads/katowice"
-          keywords="facebook ads katowice, agencja facebook ads katowice, meta ads katowice, reklamy facebook katowice, instagram ads katowice"
+          keywords="facebook ads katowice, agencja facebook ads katowice, kampanie facebook katowice, reklamy facebook katowice, meta ads katowice, instagram ads katowice, facebook ads śląsk"
         />
 
         <ServiceSchema

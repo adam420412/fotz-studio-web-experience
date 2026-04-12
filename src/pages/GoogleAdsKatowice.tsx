@@ -49,7 +49,7 @@ export default function GoogleAdsKatowice() {
           title="Agencja Google Ads Katowice — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Katowice — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/google-ads/katowice"
-          keywords="google ads katowice, agencja google ads katowice, kampanie google ads górny śląsk, reklamy w google katowice"
+          keywords="google ads katowice, agencja google ads katowice, kampanie google ads katowice, reklamy google katowice, google ads dla firm katowice, sem katowice, google ads śląsk"
         />
 
         <ServiceSchema

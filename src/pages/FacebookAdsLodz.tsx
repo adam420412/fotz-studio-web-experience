@@ -49,7 +49,7 @@ export default function FacebookAdsLodz() {
           title="Agencja Facebook Ads Łódź — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Łódź — agencja Fotz.pl. Kampanie Meta Ads dla firm z Łodzi. Od 400 zł/mies. Bezpłatna konsultacja!"
           canonical="https://fotz.pl/performance-marketing/facebook-ads/lodz"
-          keywords="facebook ads łódź, agencja facebook ads łódź, meta ads łódź, reklamy facebook łódź, instagram ads łódź"
+          keywords="facebook ads łódź, agencja facebook ads łódź, kampanie facebook łódź, reklamy facebook łódź, meta ads łódź, instagram ads łódź"
         />
 
         <ServiceSchema

@@ -212,6 +212,7 @@ export default function GoogleAdsSzczecin() {
         title="Agencja Google Ads Szczecin — kampanie reklamowe dla firm | Fotz.pl"
         description="Google Ads Szczecin ✓ Kampanie dla firm z Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/google-ads/szczecin"
+        keywords="google ads szczecin, agencja google ads szczecin, kampanie google ads szczecin, reklamy google szczecin, google ads dla firm szczecin, sem szczecin"
       />
 
       <BreadcrumbSchema items={[
