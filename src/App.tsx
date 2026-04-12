@@ -1381,6 +1381,10 @@ const PozycjonowaniePlock = lazy(() => import("./pages/PozycjonowaniePlock"));
 const BlogSEOvsGoogleAds = lazy(() => import("./pages/BlogSEOvsGoogleAds"));
 const BlogMarketingDlaKancelarii = lazy(() => import("./pages/BlogMarketingDlaKancelarii"));
 
+// Wave 245 pages
+const BlogMarketingMedyczny = lazy(() => import("./pages/BlogMarketingMedyczny"));
+const BlogRetargetingPoradnik = lazy(() => import("./pages/BlogRetargetingPoradnik"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2431,6 +2435,9 @@ const App = () => (
                 <Route path="/pozycjonowanie/plock" element={<PozycjonowaniePlock />} />
                 <Route path="/blog/seo-vs-google-ads" element={<BlogSEOvsGoogleAds />} />
                 <Route path="/blog/marketing-dla-kancelarii" element={<BlogMarketingDlaKancelarii />} />
+                <Route path="/blog/marketing-medyczny" element={<BlogMarketingMedyczny />} />
+                <Route path="/strony-internetowe/kielce" element={<StronyInternetoweKielce />} />
+                <Route path="/blog/retargeting-reklamy-poradnik" element={<BlogRetargetingPoradnik />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
