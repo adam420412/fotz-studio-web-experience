@@ -1408,9 +1408,17 @@ const GoogleAdsPoznan = lazy(() => import("./pages/GoogleAdsPoznan"));
 const GoogleAdsGdansk = lazy(() => import("./pages/GoogleAdsGdansk"));
 const GoogleAdsLodz = lazy(() => import("./pages/GoogleAdsLodz"));
 const GoogleAdsKatowice = lazy(() => import("./pages/GoogleAdsKatowice"));
+const GoogleAdsSzczecin = lazy(() => import("./pages/GoogleAdsSzczecin"));
+const GoogleAdsBydgoszcz = lazy(() => import("./pages/GoogleAdsBydgoszcz"));
+const GoogleAdsLublin = lazy(() => import("./pages/GoogleAdsLublin"));
+const GoogleAdsRzeszow = lazy(() => import("./pages/GoogleAdsRzeszow"));
 const FacebookAdsWarszawa = lazy(() => import("./pages/FacebookAdsWarszawa"));
 const FacebookAdsKrakow = lazy(() => import("./pages/FacebookAdsKrakow"));
 const FacebookAdsWroclaw = lazy(() => import("./pages/FacebookAdsWroclaw"));
+const FacebookAdsGdansk = lazy(() => import("./pages/FacebookAdsGdansk"));
+const FacebookAdsPoznan = lazy(() => import("./pages/FacebookAdsPoznan"));
+const FacebookAdsLodz = lazy(() => import("./pages/FacebookAdsLodz"));
+const FacebookAdsKatowice = lazy(() => import("./pages/FacebookAdsKatowice"));
 const PozycjonowanieGdynia = lazy(() => import("./pages/PozycjonowanieGdynia"));
 
 // Legal & utility pages
@@ -2591,6 +2599,14 @@ const App = () => (
                 <Route path="/performance-marketing/facebook-ads/warszawa" element={<FacebookAdsWarszawa />} />
                 <Route path="/performance-marketing/facebook-ads/krakow" element={<FacebookAdsKrakow />} />
                 <Route path="/performance-marketing/facebook-ads/wroclaw" element={<FacebookAdsWroclaw />} />
+                <Route path="/performance-marketing/google-ads/szczecin" element={<GoogleAdsSzczecin />} />
+                <Route path="/performance-marketing/google-ads/bydgoszcz" element={<GoogleAdsBydgoszcz />} />
+                <Route path="/performance-marketing/google-ads/lublin" element={<GoogleAdsLublin />} />
+                <Route path="/performance-marketing/google-ads/rzeszow" element={<GoogleAdsRzeszow />} />
+                <Route path="/performance-marketing/facebook-ads/gdansk" element={<FacebookAdsGdansk />} />
+                <Route path="/performance-marketing/facebook-ads/poznan" element={<FacebookAdsPoznan />} />
+                <Route path="/performance-marketing/facebook-ads/lodz" element={<FacebookAdsLodz />} />
+                <Route path="/performance-marketing/facebook-ads/katowice" element={<FacebookAdsKatowice />} />
                 <Route path="/uslugi/pozycjonowanie/gdynia" element={<PozycjonowanieGdynia />} />
                 <Route path="/performance-marketing/facebook-ads" element={<FacebookAds />} />
                 <Route path="/performance-marketing/instagram-ads" element={<InstagramAds />} />
