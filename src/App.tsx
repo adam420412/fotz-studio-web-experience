@@ -1345,6 +1345,11 @@ const BlogTikTokDlaFirmy = lazy(() => import("./pages/BlogTikTokDlaFirmy"));
 const AgencjaMarketingowaJeleniaGora = lazy(() => import("./pages/AgencjaMarketingowaJeleniaGora"));
 const BlogYouTubeDlaFirmy = lazy(() => import("./pages/BlogYouTubeDlaFirmy"));
 
+// Wave 237 pages
+const BlogPinterestDlaFirmy = lazy(() => import("./pages/BlogPinterestDlaFirmy"));
+const PozycjonowanieKalisz = lazy(() => import("./pages/PozycjonowanieKalisz"));
+const BlogChatGPTWMarketingu = lazy(() => import("./pages/BlogChatGPTWMarketingu"));
+
 // Legal & utility pages
 const PolitykaPrywatnosci = lazy(() => import("./pages/PolitykaPrywatnosci"));
 const Regulamin = lazy(() => import("./pages/Regulamin"));
@@ -2375,6 +2380,9 @@ const App = () => (
                 <Route path="/blog/tiktok-dla-firmy" element={<BlogTikTokDlaFirmy />} />
                 <Route path="/agencja-marketingowa/jelenia-gora" element={<AgencjaMarketingowaJeleniaGora />} />
                 <Route path="/blog/youtube-dla-firmy" element={<BlogYouTubeDlaFirmy />} />
+                <Route path="/blog/pinterest-dla-firmy" element={<BlogPinterestDlaFirmy />} />
+                <Route path="/pozycjonowanie/kalisz" element={<PozycjonowanieKalisz />} />
+                <Route path="/blog/chatgpt-w-marketingu" element={<BlogChatGPTWMarketingu />} />
                 <Route path="/uslugi/strona-internetowa-dla-stomatologa" element={<StronaInternetowaDlaStomatologa />} />
                 {/* Wave 19 */}
                 <Route path="/blog/co-to-jest-hosting" element={<BlogCoToJestHosting />} />
