@@ -300,6 +300,7 @@ export default function KalkulatorCen() {
         title="Kalkulator Cen Usług Marketingowych — Ile Kosztuje Marketing? | Fotz Studio"
         description="Kalkulator cen usług marketingowych — oblicz orientacyjny koszt SEO, strony internetowej, kampanii Google Ads i social media dla Twojej firmy. Darmowe…"
         canonical="https://fotz.pl/kalkulator-cen"
+        keywords="kalkulator cen usług marketingowych, ile kosztuje marketing, koszt SEO, koszt strony internetowej, koszt kampanii Google Ads, budżet marketingowy kalkulator"
       />
       <BreadcrumbSchema 
         items={[

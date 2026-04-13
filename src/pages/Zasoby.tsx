@@ -131,6 +131,7 @@ const Zasoby = () => {
         title="Darmowe Zasoby Marketingowe — E-booki, Checklisty i Szablony | Fotz Studio"
         description="Darmowe zasoby marketingowe Fotz Studio — e-booki, checklisty SEO, szablony briefów i kalkulatory. Pobierz bezpłatne materiały dla firm i marketerów."
         canonical="https://fotz.pl/zasoby"
+        keywords="darmowe zasoby marketingowe, e-book marketing darmowy, checklisty SEO, szablony briefu marketingowego, darmowe materiały marketing, checklisty Google Ads"
       />
       <BreadcrumbSchema 
         items={[
