@@ -72,6 +72,8 @@ export default function BlogBounceRateCoTo() {
         title="Bounce Rate — co to jest i jak obniżyć wskaźnik odrzuceń? | fotz.pl"
         description="Bounce Rate co to jest — wyjaśniamy czym jest wskaźnik odrzuceń, jak go mierzyć w GA4, jaki jest dobry bounce rate i jak go obniżyć na stronie."
         canonical="https://fotz.pl/blog/bounce-rate-co-to"
+
+        keywords="Bounce Rate co to jest, Bounce Rate definicja, czym jest Bounce Rate, Bounce Rate przykłady, jak działa Bounce Rate, Bounce Rate znaczenie, Bounce Rate przewodnik"
       />
       <ArticleSchema
         title="Bounce Rate — co to jest i jak obniżyć wskaźnik odrzuceń?"

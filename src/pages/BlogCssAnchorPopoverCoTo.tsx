@@ -44,6 +44,8 @@ export default function BlogCssAnchorPopoverCoTo() {
         title="CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 | Fotz.pl"
         description="Nowe CSS API 2024: Anchor Positioning (tooltips bez JS), Popover API (natywne popupy), :has() parent selector, View Transitions (animacje) i Scroll-Driven Animations."
         canonicalUrl="https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
+
+        keywords="CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 co to jest, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 jak działa, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 tutorial, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 przykład, czym jest CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 dokumentacja, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 przewodnik"
       />
       <ArticleSchema
         title="CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024?"

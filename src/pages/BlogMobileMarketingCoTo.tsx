@@ -99,6 +99,8 @@ export default function BlogMobileMarketingCoTo() {
         title="Mobile Marketing — co to jest? Kanały i strategie marketingu mobilnego"
         description="Mobile marketing — definicja, 6 kanałów (SMS, push, in-app), metryki i zasady mobile-first. Kompletny przewodnik po marketingu mobilnym w 2024 roku."
         canonicalUrl="https://fotz.pl/blog/mobile-marketing-co-to"
+
+        keywords="Mobile Marketing co to jest, Mobile Marketing definicja, czym jest Mobile Marketing, Mobile Marketing w marketingu, Mobile Marketing przykłady, jak działa Mobile Marketing, Mobile Marketing strategia"
       />
       <ArticleSchema
         title="Mobile Marketing — co to jest i jak działa?"

@@ -121,6 +121,8 @@ export default function BlogProductAnalyticsCoTo() {
         title="Product Analytics — co to jest? Analityka produktowa i kluczowe metryki"
         description="Product analytics — definicja, 6 kategorii metryk (acquisition, activation, engagement, retention, revenue, referral), typy analiz i narzędzia. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/product-analytics-co-to"
+
+        keywords="Product Analytics co to jest, Product Analytics definicja, czym jest Product Analytics, Product Analytics przykłady, jak działa Product Analytics, Product Analytics znaczenie, Product Analytics przewodnik"
       />
       <ArticleSchema
         title="Product Analytics — co to jest i jak mierzyć zachowania użytkowników?"

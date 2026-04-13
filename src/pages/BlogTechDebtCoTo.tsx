@@ -57,6 +57,8 @@ export default function BlogTechDebtCoTo() {
         title="Dług techniczny (tech debt) — co to jest? Jak zarządzać i spłacać"
         description="Dług techniczny (technical debt) — definicja, 6 rodzajów, quadrant Fowlera, jak mierzyć i 5 strategii zarządzania. Kompletny przewodnik po tech debt dla developerów i managerów."
         canonicalUrl="https://fotz.pl/blog/dług-techniczny-co-to"
+
+        keywords="Dług techniczny (tech debt) co to jest, Dług techniczny (tech debt) definicja, czym jest Dług techniczny (tech debt), Dług techniczny (tech debt) przykłady, jak działa Dług techniczny (tech debt), Dług techniczny (tech debt) znaczenie, Dług techniczny (tech debt) przewodnik"
       />
       <ArticleSchema
         title="Dług techniczny (tech debt) — co to jest i jak zarządzać?"

@@ -68,6 +68,8 @@ export default function BlogCustomerJourneyCoTo() {
         title="Customer Journey — co to jest? Mapa podrozy klienta | fotz.pl"
         description="Customer Journey co to jest — wyjasnamy czym jest podrozz klienta, jak stworzyc Customer Journey Map, etapy, touchpointy i metryki."
         canonical="https://fotz.pl/blog/customer-journey-co-to"
+
+        keywords="Customer Journey co to jest, Customer Journey definicja, czym jest Customer Journey, Customer Journey przykłady, jak działa Customer Journey, Customer Journey znaczenie, Customer Journey przewodnik"
       />
       <ArticleSchema
         title="Customer Journey — co to jest? Mapa podrozy klienta"

@@ -110,6 +110,8 @@ export default function BlogIdentyfikacjaWizualnaCennik() {
         description="Kompleksowy przewodnik po cenach identyfikacji wizualnej i brandingu firm w Polsce. Poznaj pakiety od logotypu po pelne rebranding, czynniki wpływajace na cene i porady ekspertow."
         canonical="https://fotz.pl/blog/identyfikacja-wizualna-cennik"
         ogImage="https://fotz.pl/og-identyfikacja-wizualna.png"
+
+        keywords="Identyfikacja wizualna cennik 2025, Identyfikacja wizualna cennik 2025 poradnik, Identyfikacja wizualna cennik 2025 strategia, Identyfikacja wizualna cennik 2025 jak zrobić, Identyfikacja wizualna cennik 2025 marketing, Identyfikacja wizualna cennik 2025 przykłady, Identyfikacja wizualna cennik 2025 w Polsce"
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />

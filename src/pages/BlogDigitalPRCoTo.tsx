@@ -63,6 +63,8 @@ export default function BlogDigitalPRCoTo() {
         title="Digital PR — co to jest i jak zdobywać backlinki przez PR? | fotz.pl"
         description="Digital PR co to jest — wyjaśniamy czym jest Digital PR, jak zdobywać backlinki przez media, HARO, linkable assets i jak mierzyć efekty kampanii."
         canonical="https://fotz.pl/blog/digital-pr-co-to"
+
+        keywords="Digital PR co to jest, Digital PR definicja, czym jest Digital PR, Digital PR przykłady, jak działa Digital PR, Digital PR znaczenie, Digital PR przewodnik"
       />
       <ArticleSchema
         title="Digital PR — co to jest i jak zdobywać backlinki przez PR?"

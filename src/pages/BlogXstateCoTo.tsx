@@ -44,6 +44,8 @@ export default function BlogXstateCoTo() {
         title="XState — co to jest, maszyna stanów, statecharts, Actor Model w React | Fotz.pl"
         description="XState: maszyny stanów i statecharts w React — createMachine, useMachine, Actor Model, XState vs Zustand vs useReducer, kiedy używać FSM w 2024."
         canonicalUrl="https://fotz.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
+
+        keywords="XState co to jest, XState jak działa, XState tutorial, XState przykład, czym jest XState, XState dokumentacja, XState przewodnik"
       />
       <ArticleSchema
         title="XState — co to jest, maszyna stanów, statecharts, Actor Model w React?"

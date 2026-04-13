@@ -76,6 +76,8 @@ export default function BlogUIUXCoTo() {
         title="UI/UX — co to jest? Projektowanie interfejsu i doświadczeń | fotz.pl"
         description="UI UX co to jest — wyjaśniamy czym jest UI (interfejs użytkownika) i UX (doświadczenie użytkownika), jaka jest różnica i dlaczego wpływają na konwersje. Poradnik 2025."
         canonical="https://fotz.pl/blog/ui-ux-co-to"
+
+        keywords="UI/UX co to jest, UI/UX definicja, czym jest UI/UX, UI/UX przykłady, jak działa UI/UX, UI/UX znaczenie, UI/UX przewodnik"
       />
       <ArticleSchema
         title="UI/UX — co to jest? Projektowanie interfejsu i doświadczeń użytkownika"

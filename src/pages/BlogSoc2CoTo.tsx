@@ -76,6 +76,8 @@ export default function BlogSoc2CoTo() {
         title="SOC 2 — co to jest i jak uzyskać certyfikację? | Fotz.pl"
         description="SOC 2 compliance dla startupów SaaS: Trust Service Criteria, Type I vs Type II, proces certyfikacji, narzędzia (Vanta, Drata) i jak przygotować się do audytu."
         canonicalUrl="https://fotz.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup"
+
+        keywords="SOC 2 co to jest, SOC 2 definicja, czym jest SOC 2, SOC 2 przykłady, jak działa SOC 2, SOC 2 znaczenie, SOC 2 przewodnik"
       />
       <ArticleSchema
         title="SOC 2 — co to jest i jak uzyskać certyfikację?"

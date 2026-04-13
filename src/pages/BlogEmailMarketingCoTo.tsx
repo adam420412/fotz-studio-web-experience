@@ -102,6 +102,8 @@ export default function BlogEmailMarketingCoTo() {
         title="Email Marketing — co to jest i jak prowadzić skuteczne kampanie? | fotz.pl"
         description="Email marketing co to jest — wyjaśniamy czym jest marketing emailowy, typy emaili, narzędzia, metryki (open rate, CTR), jak budować listę i przestrzegać RODO."
         canonical="https://fotz.pl/blog/email-marketing-co-to"
+
+        keywords="Email Marketing co to jest, Email Marketing definicja, czym jest Email Marketing, Email Marketing w marketingu, Email Marketing przykłady, jak działa Email Marketing, Email Marketing strategia"
       />
       <ArticleSchema
         title="Email Marketing — co to jest i jak prowadzić skuteczne kampanie?"

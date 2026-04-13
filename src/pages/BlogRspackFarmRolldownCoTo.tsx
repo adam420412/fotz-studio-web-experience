@@ -44,6 +44,8 @@ export default function BlogRspackFarmRolldownCoTo() {
         title="Rspack, Farm.js, Rolldown i esbuild — bundlery Rust i narzędzia build 2024 | Fotz.pl"
         description="Bundlery Rust 2024: Rspack (webpack compat), Farm.js (najszybszy), Rolldown (przyszły Vite), esbuild/tsup (biblioteki), SWC (Babel replacement) — porównanie i kiedy wybrać."
         canonicalUrl="https://fotz.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024"
+
+        keywords="Rspack, Farm.js, Rolldown i esbuild co to jest, Rspack, Farm.js, Rolldown i esbuild definicja, czym jest Rspack, Farm.js, Rolldown i esbuild, Rspack, Farm.js, Rolldown i esbuild przykłady, jak działa Rspack, Farm.js, Rolldown i esbuild, Rspack, Farm.js, Rolldown i esbuild znaczenie, Rspack, Farm.js, Rolldown i esbuild przewodnik"
       />
       <ArticleSchema
         title="Rspack, Farm.js, Rolldown i esbuild — bundlery Rust i narzędzia build 2024?"

@@ -73,6 +73,8 @@ export default function BlogPitchDeck() {
         title="Pitch deck — co to jest i jak go przygotować? | fotz.pl"
         description="Pitch deck co to jest — wyjaśniamy czym jest prezentacja dla inwestorów, ile powinna mieć slajdów, jak napisać dobry pitch deck i jak wysłać do VC."
         canonical="https://fotz.pl/blog/pitch-deck-co-to"
+
+        keywords="Pitch deck co to jest, Pitch deck definicja, czym jest Pitch deck, Pitch deck przykłady, jak działa Pitch deck, Pitch deck znaczenie, Pitch deck przewodnik"
       />
       <ArticleSchema
         title="Pitch deck — co to jest i jak go przygotować?"

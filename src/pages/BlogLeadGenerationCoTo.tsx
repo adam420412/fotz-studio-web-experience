@@ -69,6 +69,8 @@ export default function BlogLeadGenerationCoTo() {
         title="Lead generation — co to jest? Pozyskiwanie klientow online | fotz.pl"
         description="Lead generation co to jest — wyjasnamy czym jest generowanie leadow, inbound vs outbound, lead magnet, koszty i jak mierzyc efektywnosc."
         canonical="https://fotz.pl/blog/lead-generation-co-to"
+
+        keywords="Lead generation co to jest, Lead generation definicja, czym jest Lead generation, Lead generation w marketingu, Lead generation przykłady, jak działa Lead generation, Lead generation strategia"
       />
       <ArticleSchema
         title="Lead generation — co to jest? Pozyskiwanie klientow online"

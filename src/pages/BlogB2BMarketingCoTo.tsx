@@ -69,6 +69,8 @@ export default function BlogB2BMarketingCoTo() {
         title="Marketing B2B — co to jest i jak dziala? | fotz.pl"
         description="Marketing B2B co to jest — wyjasnamy czym jest marketing B2B, roznica vs B2C, najskuteczniejsze strategie, generowanie leadow i narzedzia dla firm B2B."
         canonical="https://fotz.pl/blog/marketing-b2b-co-to"
+
+        keywords="Marketing B2B co to jest, Marketing B2B definicja, czym jest Marketing B2B, Marketing B2B w marketingu, Marketing B2B przykłady, jak działa Marketing B2B, Marketing B2B strategia"
       />
       <ArticleSchema
         title="Marketing B2B — co to jest i jak dziala?"

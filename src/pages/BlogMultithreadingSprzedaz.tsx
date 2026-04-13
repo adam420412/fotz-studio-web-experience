@@ -78,6 +78,8 @@ export default function BlogMultithreadingSprzedaz() {
         title="Multithreading w sprzedaży B2B — angażowanie buying committee | Fotz.pl"
         description="Multithreading w sprzedaży B2B — jak angażować buying committee, mapować stakeholderów i budować wielowątkowe deale w enterprise. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/multithreading-sprzedaz-b2b-buying-committee"
+
+        keywords="Multithreading w sprzedaży B2B, Multithreading w sprzedaży B2B co to jest, Multithreading w sprzedaży B2B jak działa, Multithreading w sprzedaży B2B definicja, Multithreading w sprzedaży B2B przykłady, Multithreading w sprzedaży B2B poradnik, Multithreading w sprzedaży B2B przewodnik"
       />
       <ArticleSchema
         title="Multithreading w sprzedaży B2B — angażowanie buying committee"

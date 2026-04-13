@@ -53,6 +53,8 @@ export default function BlogEbpfCoTo() {
         title="eBPF — co to jest i jak używać w Kubernetes i observability? | Fotz.pl"
         description="eBPF: co to jest, architektura (BPF Maps, XDP, kprobes), zastosowania (networking, observability, security), Cilium, Pixie, Falco i jak zacząć."
         canonicalUrl="https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
+
+        keywords="eBPF co to jest, eBPF jak działa, eBPF tutorial, eBPF przykład, czym jest eBPF, eBPF dokumentacja, eBPF przewodnik"
       />
       <ArticleSchema
         title="eBPF — co to jest i jak używać w Kubernetes i observability?"

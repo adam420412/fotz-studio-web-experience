@@ -68,6 +68,8 @@ export default function BlogColdEmailCoTo() {
         title="Cold Email — co to jest i jak pisac skuteczne wiadomosci? | fotz.pl"
         description="Cold email co to jest — wyjasnamy czym jest cold emailing, jak napisac skuteczny cold email B2B, open rate i reply rate benchmarki, narzedzia i legalnosc w Polsce."
         canonical="https://fotz.pl/blog/cold-email-co-to"
+
+        keywords="Cold Email co to jest, Cold Email definicja, czym jest Cold Email, Cold Email przykłady, jak działa Cold Email, Cold Email znaczenie, Cold Email przewodnik"
       />
       <ArticleSchema
         title="Cold Email — co to jest i jak pisac skuteczne wiadomosci?"

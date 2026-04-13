@@ -44,6 +44,8 @@ export default function BlogEslintBiomeCoTo() {
         title="ESLint, Biome, Prettier, Husky — linting i code quality w TypeScript 2024 | Fotz.pl"
         description="ESLint Flat Config, Biome (Rust linter+formatter), Prettier, Oxlint, Husky, Commitlint, Conventional Commits — code quality workflow TypeScript 2024."
         canonicalUrl="https://fotz.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024"
+
+        keywords="ESLint, Biome, Prettier, Husky co to jest, ESLint, Biome, Prettier, Husky jak działa, ESLint, Biome, Prettier, Husky tutorial, ESLint, Biome, Prettier, Husky przykład, czym jest ESLint, Biome, Prettier, Husky, ESLint, Biome, Prettier, Husky dokumentacja, ESLint, Biome, Prettier, Husky przewodnik"
       />
       <ArticleSchema
         title="ESLint, Biome, Prettier, Husky — linting i code quality w TypeScript 2024?"

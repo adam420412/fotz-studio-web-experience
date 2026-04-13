@@ -67,6 +67,8 @@ export default function BlogCrossSellingCoTo() {
         title="Cross-selling — co to jest i jak zwiększyć sprzedaż? | fotz.pl"
         description="Cross-selling co to jest — wyjaśniamy czym jest sprzedaż krzyżowa, różnica cross-sell vs upsell, jak wdrożyć w e-commerce i SaaS z przykładami."
         canonical="https://fotz.pl/blog/cross-selling-co-to"
+
+        keywords="Cross-selling co to jest, Cross-selling definicja, czym jest Cross-selling, Cross-selling w sprzedaży, Cross-selling strategia, Cross-selling przykłady, jak używać Cross-selling"
       />
       <ArticleSchema
         title="Cross-selling — co to jest i jak zwiększyć sprzedaż?"

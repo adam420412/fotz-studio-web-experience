@@ -94,6 +94,8 @@ export default function BlogGuerrillaMarketingCoTo() {
         title="Guerrilla Marketing — co to jest? Rodzaje i przykłady marketingu partyzanckiego"
         description="Guerrilla marketing — definicja, 6 rodzajów, przykłady kampanii partyzanckich i jak zaplanować skuteczną akcję. Kompletny przewodnik po marketingu niekonwencjonalnym."
         canonicalUrl="https://fotz.pl/blog/guerrilla-marketing-co-to"
+
+        keywords="Guerrilla Marketing co to jest, Guerrilla Marketing definicja, czym jest Guerrilla Marketing, Guerrilla Marketing w marketingu, Guerrilla Marketing przykłady, jak działa Guerrilla Marketing, Guerrilla Marketing strategia"
       />
       <ArticleSchema
         title="Guerrilla Marketing — co to jest i jak działa?"

@@ -75,6 +75,8 @@ export default function BlogTerritoryPlanningCoTo() {
         title="Territory Planning — jak planować terytoria sprzedażowe? | Fotz.pl"
         description="Territory planning: modele podziału (geograficzny, vertical, named accounts), równość terytoriów, named accounts management i wpływ na wyniki sprzedaży."
         canonicalUrl="https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
+
+        keywords="Territory Planning co to jest, Territory Planning definicja, czym jest Territory Planning, Territory Planning w sprzedaży, Territory Planning strategia, Territory Planning przykłady, jak używać Territory Planning"
       />
       <ArticleSchema
         title="Territory Planning — jak planować terytoria sprzedażowe?"

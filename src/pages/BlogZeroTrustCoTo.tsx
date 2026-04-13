@@ -53,6 +53,8 @@ export default function BlogZeroTrustCoTo() {
         title="Zero Trust Security — co to jest, jak wdrożyć, MFA, ZTNA i mikrosegmentacja? | Fotz.pl"
         description="Zero Trust Security: 6 filarów, mikrosegmentacja, ZTNA vs VPN, MFA, RBAC, OPA, DLP — jak budować bezpieczeństwo 'Never Trust, Always Verify' krok po kroku."
         canonicalUrl="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
+
+        keywords="Zero Trust Security co to jest, Zero Trust Security definicja, czym jest Zero Trust Security, Zero Trust Security przykłady, jak działa Zero Trust Security, Zero Trust Security znaczenie, Zero Trust Security przewodnik"
       />
       <ArticleSchema
         title="Zero Trust Security — co to jest, jak wdrożyć, MFA, ZTNA i mikrosegmentacja?"

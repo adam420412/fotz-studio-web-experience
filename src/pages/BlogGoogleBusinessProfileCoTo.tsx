@@ -63,6 +63,8 @@ export default function BlogGoogleBusinessProfileCoTo() {
         title="Google Business Profile — co to jest i jak skonfigurować? | fotz.pl"
         description="Google Business Profile co to jest — wyjaśniamy czym jest GBP (Google My Business), jak wpływa na lokalne SEO, jak założyć profil i zdobywać recenzje."
         canonical="https://fotz.pl/blog/google-business-profile-co-to"
+
+        keywords="Google Business Profile co to jest, Google Business Profile definicja, czym jest Google Business Profile, Google Business Profile przykłady, jak działa Google Business Profile, Google Business Profile znaczenie, Google Business Profile przewodnik"
       />
       <ArticleSchema
         title="Google Business Profile — co to jest i jak skonfigurować?"

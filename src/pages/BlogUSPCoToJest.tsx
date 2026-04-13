@@ -67,6 +67,8 @@ export default function BlogUSPCoToJest() {
         title="USP — co to jest? Unikalna propozycja sprzedazy | fotz.pl"
         description="USP co to jest — wyjasnamy czym jest Unique Selling Proposition, jak stworzyc USP, przyklady dobrego USP i roznica miedzy USP a Value Proposition."
         canonical="https://fotz.pl/blog/usp-co-to-jest"
+
+        keywords="USP co to jest, USP definicja, czym jest USP, USP w sprzedaży, USP strategia, USP przykłady, jak używać USP"
       />
       <ArticleSchema
         title="USP — co to jest? Unikalna propozycja sprzedazy"

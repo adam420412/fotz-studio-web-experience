@@ -100,6 +100,8 @@ export default function BlogGoogleMyBusiness() {
         title="Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025"
         description="Google Moja Firma optymalizacja - poradnik krok po kroku. Jak założyć, zweryfikować i zoptymalizować profil. Zbieranie opinii, zdjęcia, posty. +600 szukających."
         canonical="https://fotz.pl/blog/google-moja-firma-optymalizacja"
+
+        keywords="Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 co to jest, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 jak działa, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 definicja, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 przykłady, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 poradnik, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 przewodnik"
       />
       <ArticleSchema
         title="Google Moja Firma - kompletny poradnik optymalizacji 2025"

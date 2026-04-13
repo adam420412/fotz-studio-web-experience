@@ -66,6 +66,8 @@ export default function BlogSdrCoTo() {
         title="SDR — co to jest? Sales Development Representative w sprzedaży B2B"
         description="SDR (Sales Development Representative) — definicja, różnica vs AE i BDR, 6-krokowa sekwencja outreach, metryki i narzędzia. Przewodnik po roli SDR w B2B SaaS."
         canonicalUrl="https://fotz.pl/blog/sdr-co-to-jest"
+
+        keywords="SDR co to jest, SDR definicja, czym jest SDR, SDR w sprzedaży, SDR strategia, SDR przykłady, jak używać SDR"
       />
       <ArticleSchema
         title="SDR — co to jest i jak działa Sales Development Representative?"

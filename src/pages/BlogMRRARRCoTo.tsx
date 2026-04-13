@@ -68,6 +68,8 @@ export default function BlogMRRARRCoTo() {
         title="MRR i ARR — co to jest? Kluczowe metryki SaaS | fotz.pl"
         description="MRR co to jest — wyjaśniamy czym jest Monthly Recurring Revenue, ARR, jak obliczać MRR, dobry wzrost i jak metryki SaaS wpływają na wycenę firmy."
         canonical="https://fotz.pl/blog/mrr-arr-co-to"
+
+        keywords="MRR i ARR co to jest, MRR i ARR definicja, czym jest MRR i ARR, MRR i ARR startup, MRR i ARR jak liczyć, MRR i ARR wzór, MRR i ARR przykłady"
       />
       <ArticleSchema
         title="MRR i ARR — co to jest? Kluczowe metryki SaaS"

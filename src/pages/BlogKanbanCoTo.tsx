@@ -72,6 +72,8 @@ export default function BlogKanbanCoTo() {
         title="Kanban — co to jest? Metoda zarządzania pracą | fotz.pl"
         description="Kanban co to jest — wyjaśniamy czym jest metodologia Kanban, tablica Kanban, WIP limits, metryki (lead time, cycle time), różnica vs Scrum i jak wdrożyć Kanban."
         canonical="https://fotz.pl/blog/kanban-co-to"
+
+        keywords="Kanban co to jest, Kanban definicja, czym jest Kanban, Kanban przykłady, jak działa Kanban, Kanban znaczenie, Kanban przewodnik"
       />
       <ArticleSchema
         title="Kanban — co to jest? Metoda zarządzania pracą"

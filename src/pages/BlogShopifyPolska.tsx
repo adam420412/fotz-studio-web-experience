@@ -65,6 +65,8 @@ export default function BlogShopifyPolska() {
         title="Shopify w Polsce — czy warto? Ceny, wady, zalety 2025 | fotz.pl"
         description="Shopify Polska — czy warto wybrać Shopify do polskiego sklepu internetowego? Ceny, wady, zalety, porównanie z WooCommerce. Kompletny przewodnik 2025."
         canonical="https://fotz.pl/blog/shopify-polska"
+
+        keywords="Shopify w Polsce, Shopify w Polsce co to jest, Shopify w Polsce jak działa, Shopify w Polsce definicja, Shopify w Polsce przykłady, Shopify w Polsce poradnik, Shopify w Polsce przewodnik"
       />
       <ArticleSchema
         title="Shopify w Polsce — czy warto? Ceny, wady, zalety i porównanie"

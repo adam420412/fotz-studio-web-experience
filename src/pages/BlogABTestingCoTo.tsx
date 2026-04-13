@@ -69,6 +69,8 @@ export default function BlogABTestingCoTo() {
         title="A/B testing — co to jest? Testy A/B w marketingu | fotz.pl"
         description="A/B testing co to jest — wyjasnamy czym sa testy A/B, jak je przeprowadzic, narzedzia, czas trwania i co testowac pierwszo na stronie internetowej."
         canonical="https://fotz.pl/blog/ab-testing-co-to"
+
+        keywords="A/B testing co to jest, A/B testing definicja, czym jest A/B testing, A/B testing w marketingu, A/B testing przykłady, jak działa A/B testing, A/B testing strategia"
       />
       <ArticleSchema
         title="A/B testing — co to jest? Testy A/B w marketingu"

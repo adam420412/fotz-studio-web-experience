@@ -271,6 +271,8 @@ export default function BlogYouTubeDlaFirmy() {
         title="YouTube dla firmy — Poradnik SEO 2025 | fotz.pl"
         description="YouTube dla biznesu. Jak zalozyta kanal YouTube, tworzyc treści, optymalizować SEO YouTube, zarabiać na YouTube Ads. Poradnik dla firm i nowych kanalow."
         canonical="https://fotz.pl/blog/youtube-dla-firmy"
+
+        keywords="YouTube dla firmy, YouTube dla firmy poradnik, YouTube dla firmy strategia, YouTube dla firmy jak zrobić, YouTube dla firmy marketing, YouTube dla firmy przykłady, YouTube dla firmy w Polsce"
       />
       <ArticleSchema
         title="YouTube dla firmy — pełny poradnik SEO, zarabianie i strategie 2025"

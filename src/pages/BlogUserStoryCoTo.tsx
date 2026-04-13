@@ -83,6 +83,8 @@ export default function BlogUserStoryCoTo() {
         title="User Story — co to jest? Format, kryteria akceptacji i story points"
         description="User story — definicja, format 'Jako [rola]...', kryteria INVEST, acceptance criteria (Given/When/Then), story points i Definition of Done. Przewodnik Agile/Scrum."
         canonicalUrl="https://fotz.pl/blog/user-story-co-to"
+
+        keywords="User Story co to jest, User Story definicja, czym jest User Story, User Story przykłady, jak działa User Story, User Story znaczenie, User Story przewodnik"
       />
       <ArticleSchema
         title="User Story — co to jest i jak pisać historyjki użytkownika?"

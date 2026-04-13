@@ -113,6 +113,8 @@ export default function BlogPerformanceMaxCoTo() {
         title="Performance Max — co to jest? Kampanie PMax Google Ads | fotz.pl"
         description="Performance Max co to jest — wyjaśniamy czym są kampanie PMax w Google Ads, kiedy używać, jak skonfigurować asset group i jak PMax wypada vs Standard Search."
         canonical="https://fotz.pl/blog/performance-max-co-to"
+
+        keywords="Performance Max co to jest, Performance Max definicja, czym jest Performance Max, Performance Max w marketingu, Performance Max przykłady, jak działa Performance Max, Performance Max strategia"
       />
       <ArticleSchema
         title="Performance Max — co to jest? Kampanie PMax Google Ads"

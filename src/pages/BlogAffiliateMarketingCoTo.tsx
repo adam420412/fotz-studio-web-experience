@@ -67,6 +67,8 @@ export default function BlogAffiliateMarketingCoTo() {
         title="Affiliate Marketing — co to jest i jak zarabiać? | fotz.pl"
         description="Affiliate Marketing co to jest — wyjaśniamy czym jest marketing afiliacyjny, jak zarabiać, najlepsze programy afiliacyjne i ile można zarobić."
         canonical="https://fotz.pl/blog/affiliate-marketing-co-to"
+
+        keywords="Affiliate Marketing co to jest, Affiliate Marketing definicja, czym jest Affiliate Marketing, Affiliate Marketing w marketingu, Affiliate Marketing przykłady, jak działa Affiliate Marketing, Affiliate Marketing strategia"
       />
       <ArticleSchema
         title="Affiliate Marketing — co to jest i jak zarabiać?"

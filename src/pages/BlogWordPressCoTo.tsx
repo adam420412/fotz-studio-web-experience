@@ -76,6 +76,8 @@ export default function BlogWordPressCoTo() {
         title="WordPress — co to jest i jak działa? Poradnik 2025 | fotz.pl"
         description="WordPress co to jest — wyjaśniamy czym jest WordPress, jak działa CMS, do czego służy i kiedy warto go wybrać. Porównanie z Wix i Squarespace. Poradnik 2025."
         canonical="https://fotz.pl/blog/wordpress-co-to"
+
+        keywords="WordPress co to jest, WordPress definicja, czym jest WordPress, WordPress przykłady, jak działa WordPress, WordPress znaczenie, WordPress przewodnik"
       />
       <ArticleSchema
         title="WordPress — co to jest i jak działa?"

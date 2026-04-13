@@ -174,6 +174,8 @@ export default function BlogKosztProwadzeniaStrony() {
         title="Ile kosztuje utrzymanie strony internetowej? Cennik 2025"
         description="Koszt prowadzenia strony www w Polsce: 1500-15000 PLN rocznie. Tabela kosztów, porównanie własnej administracji vs agencji, FAQ. Fotz.pl"
         canonicalUrl="https://fotz.pl/blog/koszt-prowadzenia-strony-internetowej"
+
+        keywords="Ile kosztuje utrzymanie strony internetowej? Cennik 2025, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 co to jest, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 jak działa, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 definicja, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 przykłady, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 poradnik, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 przewodnik"
       />
       <ArticleSchema
         title="Ile kosztuje utrzymanie strony internetowej? Cennik 2025"

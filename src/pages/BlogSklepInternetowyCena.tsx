@@ -92,6 +92,8 @@ export default function SklepInternetowyCena() {
         title="Sklep internetowy cena 2025 — ile kosztuje e-commerce? | fotz.pl"
         description="Sklep internetowy cena — ile kosztuje WooCommerce, Shopify, custom e-commerce w Polsce w 2025 roku. Realne koszty, ukryte opłaty i co naprawdę wchodzi w cenę."
         canonical="https://fotz.pl/blog/sklep-internetowy-cena"
+
+        keywords="Sklep internetowy cena 2025, Sklep internetowy cena 2025 co to jest, Sklep internetowy cena 2025 jak działa, Sklep internetowy cena 2025 definicja, Sklep internetowy cena 2025 przykłady, Sklep internetowy cena 2025 poradnik, Sklep internetowy cena 2025 przewodnik"
       />
       <ArticleSchema
         title="Sklep internetowy cena 2025 — ile kosztuje e-commerce w Polsce?"

@@ -71,6 +71,8 @@ export default function BlogProductLedGrowthCoTo() {
         title="Product-Led Growth — co to jest? Strategia PLG | fotz.pl"
         description="Product-Led Growth co to jest — wyjaśniamy strategię PLG, różnicę PLG vs Sales-Led, freemium, viral loop i kluczowe metryki produktu SaaS."
         canonical="https://fotz.pl/blog/product-led-growth-co-to"
+
+        keywords="Product-Led Growth co to jest, Product-Led Growth definicja, czym jest Product-Led Growth, Product-Led Growth przykłady, jak działa Product-Led Growth, Product-Led Growth znaczenie, Product-Led Growth przewodnik"
       />
       <ArticleSchema
         title="Product-Led Growth — co to jest? Strategia PLG"

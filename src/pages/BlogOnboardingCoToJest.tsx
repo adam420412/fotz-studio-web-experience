@@ -74,6 +74,8 @@ export default function BlogOnboardingCoToJest() {
         title="Onboarding — co to jest i jak go zaprojektowac? | fotz.pl"
         description="Onboarding co to jest — wyjasnamy czym jest onboarding klienta i pracownika, jak zaprojektowac onboarding w SaaS, Time to Value i narzedzia do onboardingu."
         canonical="https://fotz.pl/blog/onboarding-co-to-jest"
+
+        keywords="Onboarding co to jest, Onboarding definicja, czym jest Onboarding, Onboarding przykłady, jak działa Onboarding, Onboarding znaczenie, Onboarding przewodnik"
       />
       <ArticleSchema
         title="Onboarding — co to jest i jak go zaprojektowac?"

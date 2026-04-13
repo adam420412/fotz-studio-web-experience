@@ -67,6 +67,8 @@ export default function BlogDueDiligence() {
         title="Due diligence — co to jest i jak przebiega? Poradnik | fotz.pl"
         description="Due diligence co to jest — wyjaśniamy czym jest due diligence w transakcjach M&A, rodzaje (finansowe, prawne, komercyjne), ile trwa i kosztuje."
         canonical="https://fotz.pl/blog/due-diligence-co-to"
+
+        keywords="Due diligence co to jest, Due diligence definicja, czym jest Due diligence, Due diligence przykłady, jak działa Due diligence, Due diligence znaczenie, Due diligence przewodnik"
       />
       <ArticleSchema
         title="Due diligence — co to jest i jak przebiega?"

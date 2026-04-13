@@ -86,6 +86,8 @@ export default function BlogQualityScoreCoTo() {
         title="Quality Score — co to jest? Google Ads Quality Score | fotz.pl"
         description="Quality Score co to jest — wyjaśniamy czym jest Wynik Jakości w Google Ads, jak wpływa na CPC, jak sprawdzić QS i jak go poprawić dla niższych kosztów reklam."
         canonical="https://fotz.pl/blog/quality-score-co-to"
+
+        keywords="Quality Score co to jest, Quality Score definicja, czym jest Quality Score, Quality Score przykłady, jak działa Quality Score, Quality Score znaczenie, Quality Score przewodnik"
       />
       <ArticleSchema
         title="Quality Score — co to jest? Google Ads Quality Score"

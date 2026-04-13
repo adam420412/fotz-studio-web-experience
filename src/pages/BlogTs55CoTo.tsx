@@ -44,6 +44,8 @@ export default function BlogTs55CoTo() {
         title="TypeScript 5.5, 5.6 — Inferred Predicates, using, Isolated Declarations 2024 | Fotz.pl"
         description="TypeScript 5.5 i 5.6: Inferred Type Predicates (auto type guards z filter), using declarations (Explicit Resource Management), Isolated Declarations, verbatimModuleSyntax i ts-reset."
         canonicalUrl="https://fotz.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
+
+        keywords="TypeScript 5.5, 5.6 co to jest, TypeScript 5.5, 5.6 jak działa, TypeScript 5.5, 5.6 tutorial, TypeScript 5.5, 5.6 przykład, czym jest TypeScript 5.5, 5.6, TypeScript 5.5, 5.6 dokumentacja, TypeScript 5.5, 5.6 przewodnik"
       />
       <ArticleSchema
         title="TypeScript 5.5, 5.6 — Inferred Predicates, using, Isolated Declarations 2024?"

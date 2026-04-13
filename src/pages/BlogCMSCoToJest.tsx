@@ -69,6 +69,8 @@ export default function BlogCMSCoToJest() {
         title="CMS - co to jest? System zarzadzania trescia - poradnik | fotz.pl"
         description="CMS co to jest - wyjasniamy czym jest Content Management System, porownanie WordPress vs Shopify vs Webflow, headless CMS i ile kosztuje strona na CMS."
         canonical="https://fotz.pl/blog/co-to-jest-cms"
+
+        keywords="CMS - co to jest, CMS - definicja, czym jest CMS -, CMS - przykłady, jak działa CMS -, CMS - znaczenie, CMS - przewodnik"
       />
       <ArticleSchema
         title="CMS - co to jest? System zarzadzania trescia"

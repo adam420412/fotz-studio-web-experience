@@ -63,6 +63,8 @@ export default function BlogInternalLinkingCoTo() {
         title="Internal Linking — co to jest i jak wpływa na SEO? | fotz.pl"
         description="Internal linking co to jest — wyjaśniamy czym jest linkowanie wewnętrzne, jak wpływa na SEO, pillar pages, silosy treści i jak audytować linki wewnętrzne."
         canonical="https://fotz.pl/blog/internal-linking-co-to"
+
+        keywords="Internal Linking co to jest, Internal Linking definicja, czym jest Internal Linking, Internal Linking w marketingu, Internal Linking przykłady, jak działa Internal Linking, Internal Linking strategia"
       />
       <ArticleSchema
         title="Internal Linking — co to jest i jak wpływa na SEO?"

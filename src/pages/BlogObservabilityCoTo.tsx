@@ -51,6 +51,8 @@ export default function BlogObservabilityCoTo() {
         title="Observability — co to jest, OpenTelemetry, Prometheus i Grafana? | Fotz.pl"
         description="Observability: 3 filary (metrics/traces/logs), OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Distributed Tracing, SLOs/SLIs i jak budować stack observability."
         canonicalUrl="https://fotz.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana"
+
+        keywords="Observability co to jest, Observability definicja, czym jest Observability, Observability przykłady, jak działa Observability, Observability znaczenie, Observability przewodnik"
       />
       <ArticleSchema
         title="Observability — co to jest, OpenTelemetry, Prometheus i Grafana?"

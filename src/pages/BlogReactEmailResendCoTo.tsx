@@ -44,6 +44,8 @@ export default function BlogReactEmailResendCoTo() {
         title="React Email, Resend, Nodemailer — szablony email w JSX TypeScript 2024 | Fotz.pl"
         description="Email w TypeScript 2024: React Email (JSX templates), Resend (email API), Nodemailer (SMTP), SPF/DKIM/DMARC (dostarczalność), dark mode email i testy renderowania."
         canonicalUrl="https://fotz.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024"
+
+        keywords="React Email, Resend, Nodemailer co to jest, React Email, Resend, Nodemailer jak działa, React Email, Resend, Nodemailer tutorial, React Email, Resend, Nodemailer przykład, czym jest React Email, Resend, Nodemailer, React Email, Resend, Nodemailer dokumentacja, React Email, Resend, Nodemailer przewodnik"
       />
       <ArticleSchema
         title="React Email, Resend, Nodemailer — szablony email w JSX TypeScript 2024?"

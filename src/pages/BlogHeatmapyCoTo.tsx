@@ -67,6 +67,8 @@ export default function BlogHeatmapyCoTo() {
         title="Heatmapy — co to jest i jak poprawić UX strony? | fotz.pl"
         description="Heatmapy co to jest — wyjaśniamy czym są mapy ciepła, typy heatmap, najlepsze narzędzia (Hotjar, Clarity) i jak używać heatmap do optymalizacji strony."
         canonical="https://fotz.pl/blog/heatmapy-co-to-jest"
+
+        keywords="Heatmapy co to jest, Heatmapy definicja, czym jest Heatmapy, Heatmapy przykłady, jak działa Heatmapy, Heatmapy znaczenie, Heatmapy przewodnik"
       />
       <ArticleSchema
         title="Heatmapy — co to jest i jak poprawić UX strony?"

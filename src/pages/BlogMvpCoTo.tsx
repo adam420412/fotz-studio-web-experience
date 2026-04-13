@@ -93,6 +93,8 @@ export default function BlogMvpCoTo() {
         title="MVP — co to jest? Minimum Viable Product w Lean Startup"
         description="MVP (Minimum Viable Product) — definicja, 4 typy (Landing Page, Concierge, Wizard of Oz, Piecemeal), proces 7 kroków i różnica vs prototyp. Przewodnik po MVP."
         canonicalUrl="https://fotz.pl/blog/mvp-co-to-jest"
+
+        keywords="MVP co to jest, MVP definicja, czym jest MVP, MVP startup, MVP jak liczyć, MVP wzór, MVP przykłady"
       />
       <ArticleSchema
         title="MVP (Minimum Viable Product) — co to jest i jak budować?"

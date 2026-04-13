@@ -178,6 +178,8 @@ export default function SklepInternetowyVsMarketplace() {
         title="Sklep internetowy vs Marketplace - ile zaoszczędzisz? | fotz.pl"
         description="Porównanie własnego sklepu internetowego vs Allegro, Amazon. Koszty, prowizje, zyski. Która strategia jest bardziej opłacalna w 2025?"
         canonical="https://fotz.pl/blog/sklep-internetowy-vs-marketplace"
+
+        keywords="Sklep internetowy vs Marketplace - ile zaoszczędzisz?, Sklep internetowy vs Marketplace - ile zaoszczędzisz? co to jest, Sklep internetowy vs Marketplace - ile zaoszczędzisz? jak działa, Sklep internetowy vs Marketplace - ile zaoszczędzisz? definicja, Sklep internetowy vs Marketplace - ile zaoszczędzisz? przykłady, Sklep internetowy vs Marketplace - ile zaoszczędzisz? poradnik, Sklep internetowy vs Marketplace - ile zaoszczędzisz? przewodnik"
       />
       <ArticleSchema
         title="Sklep internetowy vs Marketplace - który wybrać w 2025?"

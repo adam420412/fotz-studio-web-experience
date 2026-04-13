@@ -66,6 +66,8 @@ export default function BlogKRSCoToJest() {
         title="KRS — co to jest? Krajowy Rejestr Sadowy — jak sprawdzic | fotz.pl"
         description="KRS co to jest — wyjasnamy czym jest Krajowy Rejestr Sadowy, jak sprawdzic firme w KRS, kto musi byc wpisany i czym rozni sie KRS od CEIDG."
         canonical="https://fotz.pl/blog/krs-co-to-jest"
+
+        keywords="KRS co to jest, KRS definicja, czym jest KRS, KRS przykłady, jak działa KRS, KRS znaczenie, KRS przewodnik"
       />
       <ArticleSchema
         title="KRS — co to jest? Krajowy Rejestr Sadowy — jak sprawdzic"

@@ -41,6 +41,8 @@ export default function BlogMarketingMedyczny() {
         canonical="https://fotz.pl/blog/marketing-medyczny"
         ogImage="https://fotz.pl/images/marketing-medyczny-og.png"
         ogType="article"
+
+        keywords="Marketing medyczny i marketing dla lekarza, Marketing medyczny i marketing dla lekarza poradnik, Marketing medyczny i marketing dla lekarza strategia, Marketing medyczny i marketing dla lekarza jak zrobić, Marketing medyczny i marketing dla lekarza marketing, Marketing medyczny i marketing dla lekarza przykłady, Marketing medyczny i marketing dla lekarza w Polsce"
       />
       <BreadcrumbSchema items={breadcrumbs} />
       <ArticleSchema

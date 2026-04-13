@@ -104,6 +104,8 @@ export default function BlogCohortAnalysisCoTo() {
         title="Cohort Analysis — co to jest? Analiza kohort i retencja użytkowników"
         description="Cohort analysis — definicja, 3 typy kohort, wzorce krzywej retencji, kluczowe metryki i jak czytać tablicę retencji. Kompletny przewodnik po analizie kohort."
         canonicalUrl="https://fotz.pl/blog/cohort-analysis-co-to"
+
+        keywords="Cohort Analysis co to jest, Cohort Analysis definicja, czym jest Cohort Analysis, Cohort Analysis przykłady, jak działa Cohort Analysis, Cohort Analysis znaczenie, Cohort Analysis przewodnik"
       />
       <ArticleSchema
         title="Cohort Analysis — co to jest i jak analizować retencję użytkowników?"

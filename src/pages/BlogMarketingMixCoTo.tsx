@@ -111,6 +111,8 @@ export default function BlogMarketingMixCoTo() {
         title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"
         description="Marketing mix — definicja, 4P (Product, Price, Place, Promotion) i 7P dla usług, praktyczne zastosowanie i nowoczesne alternatywy. Kompletny przewodnik po modelu 4P."
         canonicalUrl="https://fotz.pl/blog/marketing-mix-co-to"
+
+        keywords="Marketing Mix co to jest, Marketing Mix definicja, czym jest Marketing Mix, Marketing Mix w marketingu, Marketing Mix przykłady, jak działa Marketing Mix, Marketing Mix strategia"
       />
       <ArticleSchema
         title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"

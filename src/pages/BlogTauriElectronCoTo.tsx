@@ -44,6 +44,8 @@ export default function BlogTauriElectronCoTo() {
         title="Tauri vs Electron vs Wails — desktop apps z React i TypeScript 2024 | Fotz.pl"
         description="Tauri (Rust + WebView), Electron (Chromium + Node.js), Wails (Go), Neutralino, PWA i Flutter Desktop — porównanie desktop framework dla web developerów 2024."
         canonicalUrl="https://fotz.pl/blog/tauri-electron-wails-desktop-apps-react-typescript-2024"
+
+        keywords="Tauri vs Electron vs Wails co to jest, Tauri vs Electron vs Wails jak działa, Tauri vs Electron vs Wails tutorial, Tauri vs Electron vs Wails przykład, czym jest Tauri vs Electron vs Wails, Tauri vs Electron vs Wails dokumentacja, Tauri vs Electron vs Wails przewodnik"
       />
       <ArticleSchema
         title="Tauri vs Electron vs Wails — desktop apps z React i TypeScript 2024?"

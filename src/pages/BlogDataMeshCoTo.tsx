@@ -75,6 +75,8 @@ export default function BlogDataMeshCoTo() {
         title="Data Mesh — co to jest i jak wdrożyć zdecentralizowaną architekturę danych? | Fotz.pl"
         description="Data Mesh: 4 zasady (domain ownership, data as a product, self-serve platform, federated governance), porównanie z Data Lake i jak wdrożyć Data Mesh w organizacji."
         canonicalUrl="https://fotz.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
+
+        keywords="Data Mesh co to jest, Data Mesh definicja, czym jest Data Mesh, Data Mesh przykłady, jak działa Data Mesh, Data Mesh znaczenie, Data Mesh przewodnik"
       />
       <ArticleSchema
         title="Data Mesh — co to jest i jak wdrożyć zdecentralizowaną architekturę danych?"

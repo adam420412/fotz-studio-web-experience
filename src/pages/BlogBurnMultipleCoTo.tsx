@@ -53,6 +53,8 @@ export default function BlogBurnMultipleCoTo() {
         title="Burn Multiple — co to jest i jak obliczać? | Fotz.pl"
         description="Burn Multiple w SaaS i startupach — formuła, benchmarki, różnica vs Runway i jak poprawić efektywność kapitałową. Kompletny przewodnik dla founderów i CFO."
         canonicalUrl="https://fotz.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas"
+
+        keywords="Burn Multiple co to jest, Burn Multiple definicja, czym jest Burn Multiple, Burn Multiple startup, Burn Multiple jak liczyć, Burn Multiple wzór, Burn Multiple przykłady"
       />
       <ArticleSchema
         title="Burn Multiple — co to jest i jak obliczać?"

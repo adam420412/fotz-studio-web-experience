@@ -68,6 +68,8 @@ export default function BlogUTMCoToJest() {
         title="UTM — co to jest i jak tagowac linki? | fotz.pl"
         description="UTM co to jest — wyjasnamy czym sa parametry UTM, jak tworzyc linki z UTM, jak odczytac dane w GA4 i najlepsze praktyki tagowania kampanii marketingowych."
         canonical="https://fotz.pl/blog/utm-co-to-jest"
+
+        keywords="UTM co to jest, UTM definicja, czym jest UTM, UTM przykłady, jak działa UTM, UTM znaczenie, UTM przewodnik"
       />
       <ArticleSchema
         title="UTM — co to jest i jak tagowac linki?"

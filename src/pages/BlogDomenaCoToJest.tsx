@@ -76,6 +76,8 @@ export default function BlogDomenaCoToJest() {
         title="Domena — co to jest i jak wybrać nazwę domeny? | fotz.pl"
         description="Domena co to jest — wyjaśniamy czym jest domena internetowa, jak wybierać nazwę domeny, ile kosztuje .pl i jak domena wpływa na SEO. Poradnik 2025."
         canonical="https://fotz.pl/blog/domena-co-to-jest"
+
+        keywords="Domena co to jest, Domena definicja, czym jest Domena, Domena przykłady, jak działa Domena, Domena znaczenie, Domena przewodnik"
       />
       <ArticleSchema
         title="Domena — co to jest i jak wybrać nazwę domeny?"

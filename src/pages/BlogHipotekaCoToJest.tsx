@@ -67,6 +67,8 @@ export default function BlogHipotekaCoToJest() {
         title="Hipoteka — co to jest? Kredyt hipoteczny — poradnik | fotz.pl"
         description="Hipoteka co to jest — wyjasnamy czym jest hipoteka, jak dziala kredyt hipoteczny, wklad wlasny, zdolnosc kredytowa i wpis hipoteki do ksiegi wieczystej."
         canonical="https://fotz.pl/blog/hipoteka-co-to-jest"
+
+        keywords="Hipoteka co to jest, Hipoteka definicja, czym jest Hipoteka, Hipoteka przykłady, jak działa Hipoteka, Hipoteka znaczenie, Hipoteka przewodnik"
       />
       <ArticleSchema
         title="Hipoteka — co to jest? Kredyt hipoteczny — poradnik"

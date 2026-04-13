@@ -69,6 +69,8 @@ export default function BlogPageSpeedCoTo() {
         title="Page Speed — co to jest i jak poprawić szybkość strony? | fotz.pl"
         description="Page Speed co to jest — wyjaśniamy czym jest szybkość strony, Core Web Vitals (LCP, CLS, INP), jak testować i jak poprawić szybkość dla SEO."
         canonical="https://fotz.pl/blog/page-speed-co-to"
+
+        keywords="Page Speed co to jest, Page Speed definicja, czym jest Page Speed, Page Speed przykłady, jak działa Page Speed, Page Speed znaczenie, Page Speed przewodnik"
       />
       <ArticleSchema
         title="Page Speed — co to jest i jak poprawić szybkość strony?"

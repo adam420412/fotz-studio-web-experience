@@ -94,6 +94,8 @@ export default function BlogRampingSprzedaz() {
         title="Ramp period w sprzedaży — onboarding handlowca B2B | Fotz.pl"
         description="Ramp period w sprzedaży B2B — ile trwa, ramped quota, onboarding plan i jak zarządzać AE w trakcie ramp. Kompletny przewodnik dla Sales Managerów."
         canonicalUrl="https://fotz.pl/blog/ramp-period-onboarding-handlowca-b2b"
+
+        keywords="Ramp period w sprzedaży, Ramp period w sprzedaży co to jest, Ramp period w sprzedaży jak działa, Ramp period w sprzedaży definicja, Ramp period w sprzedaży przykłady, Ramp period w sprzedaży poradnik, Ramp period w sprzedaży przewodnik"
       />
       <ArticleSchema
         title="Ramp period w sprzedaży — onboarding handlowca B2B"

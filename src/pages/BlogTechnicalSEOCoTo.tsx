@@ -69,6 +69,8 @@ export default function BlogTechnicalSEOCoTo() {
         title="Technical SEO — co to jest i jak przeprowadzić audyt? | fotz.pl"
         description="Technical SEO co to jest — wyjaśniamy czym jest techniczne SEO, Core Web Vitals, crawlability, jak audytować stronę i optymalizować szybkość strony."
         canonical="https://fotz.pl/blog/technical-seo-co-to"
+
+        keywords="Technical SEO co to jest, Technical SEO definicja, czym jest Technical SEO, Technical SEO w marketingu, Technical SEO przykłady, jak działa Technical SEO, Technical SEO strategia"
       />
       <ArticleSchema
         title="Technical SEO — co to jest i jak przeprowadzić audyt?"

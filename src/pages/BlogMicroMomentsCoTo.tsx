@@ -97,6 +97,8 @@ export default function BlogMicroMomentsCoTo() {
         title="Micro-Moments — co to jest? Chwile decyzyjne w marketingu mobilnym | fotz.pl"
         description="Micro-moments co to jest — wyjaśniamy czym są micro-moments Google, 4 typy (I-Want-to-Know/Go/Do/Buy), strategia mobilna i jak mierzyć micro-moments w analityce."
         canonical="https://fotz.pl/blog/micro-moments-co-to"
+
+        keywords="Micro-Moments co to jest, Micro-Moments definicja, czym jest Micro-Moments, Micro-Moments w marketingu, Micro-Moments przykłady, jak działa Micro-Moments, Micro-Moments strategia"
       />
       <ArticleSchema
         title="Micro-Moments — co to jest? Chwile decyzyjne w marketingu mobilnym"

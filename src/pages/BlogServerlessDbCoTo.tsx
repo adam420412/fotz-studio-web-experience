@@ -44,6 +44,8 @@ export default function BlogServerlessDbCoTo() {
         title="Serverless Bazy Danych — Neon, PlanetScale, Turso, D1, ElectricSQL 2024 | Fotz.pl"
         description="Neon (serverless Postgres, branching), PlanetScale (MySQL Vitess), Turso/libSQL (SQLite edge, embedded replicas), Cloudflare D1, ElectricSQL (local-first) i connection pooling."
         canonicalUrl="https://fotz.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024"
+
+        keywords="Serverless Bazy Danych co to jest, Serverless Bazy Danych jak działa, Serverless Bazy Danych tutorial, Serverless Bazy Danych przykład, czym jest Serverless Bazy Danych, Serverless Bazy Danych dokumentacja, Serverless Bazy Danych przewodnik"
       />
       <ArticleSchema
         title="Serverless Bazy Danych — Neon, PlanetScale, Turso, D1, ElectricSQL 2024?"

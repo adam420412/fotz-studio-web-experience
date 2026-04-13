@@ -44,6 +44,8 @@ export default function BlogValibotArktypeCoTo() {
         title="Valibot, ArkType, TypeBox i Zod v4 — schema validation TypeScript 2024 | Fotz.pl"
         description="Schema validation TypeScript 2024: Valibot (1KB tree-shakeable), ArkType (najszybszy), TypeBox (JSON Schema + Fastify), Zod v4 (nowy core), Yup i Superstruct — porównanie i kiedy."
         canonicalUrl="https://fotz.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024"
+
+        keywords="Valibot, ArkType, TypeBox i Zod v4 co to jest, Valibot, ArkType, TypeBox i Zod v4 jak działa, Valibot, ArkType, TypeBox i Zod v4 tutorial, Valibot, ArkType, TypeBox i Zod v4 przykład, czym jest Valibot, ArkType, TypeBox i Zod v4, Valibot, ArkType, TypeBox i Zod v4 dokumentacja, Valibot, ArkType, TypeBox i Zod v4 przewodnik"
       />
       <ArticleSchema
         title="Valibot, ArkType, TypeBox i Zod v4 — schema validation TypeScript 2024?"

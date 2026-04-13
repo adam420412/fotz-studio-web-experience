@@ -63,6 +63,8 @@ const BlogMarketingB2BPoradnik = () => {
           url: "https://fotz.pl/blog/marketing-b2b-poradnik",
           type: "article"
         }}
+
+        keywords="Marketing B2B – Kompletny Poradnik dla Firm [2026], Marketing B2B – Kompletny Poradnik dla Firm [2026] poradnik, Marketing B2B – Kompletny Poradnik dla Firm [2026] strategia, Marketing B2B – Kompletny Poradnik dla Firm [2026] jak zrobić, Marketing B2B – Kompletny Poradnik dla Firm [2026] marketing, Marketing B2B – Kompletny Poradnik dla Firm [2026] przykłady, Marketing B2B – Kompletny Poradnik dla Firm [2026] w Polsce"
       />
       
       <ArticleSchema data={schemaData.article} />

@@ -96,6 +96,8 @@ export default function BlogEEATCoTo() {
         title="E-E-A-T — co to jest? Expertise, Experience, Authority, Trust w SEO | fotz.pl"
         description="E-E-A-T co to jest — wyjaśniamy czym jest Experience, Expertise, Authoritativeness i Trust w SEO, jak poprawić E-E-A-T i dlaczego ważny dla YMYL."
         canonical="https://fotz.pl/blog/e-e-a-t-seo"
+
+        keywords="E-E-A-T co to jest, E-E-A-T definicja, czym jest E-E-A-T, E-E-A-T w marketingu, E-E-A-T przykłady, jak działa E-E-A-T, E-E-A-T strategia"
       />
       <ArticleSchema
         title="E-E-A-T — co to jest? Expertise, Experience, Authority, Trust w SEO"

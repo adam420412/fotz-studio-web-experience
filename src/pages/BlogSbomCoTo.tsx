@@ -55,6 +55,8 @@ export default function BlogSbomCoTo() {
         title="SBOM — co to jest Software Bill of Materials i jak wdrożyć? | Fotz.pl"
         description="SBOM: definicja, formaty (CycloneDX, SPDX), narzędzia (Syft, Trivy, Grype), Software Supply Chain Security, VEX i wdrożenie krok po kroku."
         canonicalUrl="https://fotz.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
+
+        keywords="SBOM co to jest, SBOM definicja, czym jest SBOM, SBOM przykłady, jak działa SBOM, SBOM znaczenie, SBOM przewodnik"
       />
       <ArticleSchema
         title="SBOM — co to jest Software Bill of Materials i jak wdrożyć?"

@@ -113,6 +113,8 @@ export default function BlogMeddicCoTo() {
         title="MEDDIC — co to jest? Framework kwalifikacji sprzedaży B2B"
         description="MEDDIC — definicja, 6 elementów (Metrics, Economic Buyer, Decision Criteria, Decision Process, Pain, Champion), porównanie z BANT i deal scoring. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/meddic-kwalifikacja-sprzedazy-b2b"
+
+        keywords="MEDDIC co to jest, MEDDIC definicja, czym jest MEDDIC, MEDDIC w sprzedaży, MEDDIC strategia, MEDDIC przykłady, jak używać MEDDIC"
       />
       <ArticleSchema
         title="MEDDIC — co to jest i jak kwalifikować szanse sprzedażowe B2B?"

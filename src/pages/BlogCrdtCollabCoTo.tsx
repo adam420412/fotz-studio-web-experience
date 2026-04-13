@@ -44,6 +44,8 @@ export default function BlogCrdtCollabCoTo() {
         title="CRDT, Y.js, Liveblocks i PartyKit — real-time collaborative editing React 2024 | Fotz.pl"
         description="CRDTs (Conflict-free Replicated Data Types), Y.js (Shared Types, providers), Liveblocks (managed platform), PartyKit (serverless WebSockets), Hocuspocus i Tiptap collaborative editor."
         canonicalUrl="https://fotz.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024"
+
+        keywords="CRDT, Y.js, Liveblocks i PartyKit co to jest, CRDT, Y.js, Liveblocks i PartyKit jak działa, CRDT, Y.js, Liveblocks i PartyKit tutorial, CRDT, Y.js, Liveblocks i PartyKit przykład, czym jest CRDT, Y.js, Liveblocks i PartyKit, CRDT, Y.js, Liveblocks i PartyKit dokumentacja, CRDT, Y.js, Liveblocks i PartyKit przewodnik"
       />
       <ArticleSchema
         title="CRDT, Y.js, Liveblocks i PartyKit — real-time collaborative editing React 2024?"

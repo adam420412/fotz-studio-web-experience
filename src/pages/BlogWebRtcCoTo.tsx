@@ -50,6 +50,8 @@ export default function BlogWebRtcCoTo() {
         title="WebRTC — co to jest i jak budować real-time komunikację? | Fotz.pl"
         description="WebRTC: definicja, ICE/STUN/TURN, SDP, topologie (Mesh/SFU/MCU), jak budować aplikację, LiveKit, mediasoup i WebRTC vs. WebSockets."
         canonicalUrl="https://fotz.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje"
+
+        keywords="WebRTC co to jest, WebRTC definicja, czym jest WebRTC, WebRTC przykłady, jak działa WebRTC, WebRTC znaczenie, WebRTC przewodnik"
       />
       <ArticleSchema
         title="WebRTC — co to jest i jak budować real-time komunikację?"

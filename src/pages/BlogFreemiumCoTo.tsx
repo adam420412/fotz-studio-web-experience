@@ -67,6 +67,8 @@ export default function BlogFreemiumCoTo() {
         title="Freemium — co to jest i kiedy ten model dziala? | fotz.pl"
         description="Freemium co to jest — wyjasnamy czym jest model freemium, roznica vs free trial, kiedy freemium dziala, konwersja free-to-paid i jak zaprojektowac paywall."
         canonical="https://fotz.pl/blog/freemium-co-to"
+
+        keywords="Freemium co to jest, Freemium definicja, czym jest Freemium, Freemium przykłady, jak działa Freemium, Freemium znaczenie, Freemium przewodnik"
       />
       <ArticleSchema
         title="Freemium — co to jest i kiedy ten model dziala?"

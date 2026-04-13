@@ -83,6 +83,8 @@ export default function BlogClosingTechniqueCoTo() {
         title="Techniki closingu — jak zamykać sprzedaż B2B? | Fotz.pl"
         description="Techniki closingu w sprzedaży B2B — assumptive close, summary close, sygnały zakupu, obiekcje i mutual close plan. Kompletny przewodnik dla handlowców."
         canonicalUrl="https://fotz.pl/blog/techniki-closingu-zamykanie-sprzedazy"
+
+        keywords="Techniki closingu co to jest, Techniki closingu definicja, czym jest Techniki closingu, Techniki closingu w sprzedaży, Techniki closingu strategia, Techniki closingu przykłady, jak używać Techniki closingu"
       />
       <ArticleSchema
         title="Techniki closingu — jak zamykać sprzedaż B2B?"

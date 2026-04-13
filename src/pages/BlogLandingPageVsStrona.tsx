@@ -100,6 +100,8 @@ export default function BlogLandingPageVsStrona() {
         canonical="https://fotz.pl/blog/landing-page-vs-strona-internetowa"
         ogType="article"
         ogImage="https://fotz.pl/og-landing-vs-strona.jpg"
+
+        keywords="Landing page vs strona internetowa, Landing page vs strona internetowa co to jest, Landing page vs strona internetowa jak działa, Landing page vs strona internetowa definicja, Landing page vs strona internetowa przykłady, Landing page vs strona internetowa poradnik, Landing page vs strona internetowa przewodnik"
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />

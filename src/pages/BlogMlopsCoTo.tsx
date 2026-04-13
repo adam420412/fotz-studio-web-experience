@@ -51,6 +51,8 @@ export default function BlogMlopsCoTo() {
         title="MLOps — co to jest i jak wdrożyć Machine Learning Operations? | Fotz.pl"
         description="MLOps: cykl życia modelu ML, tooling (MLflow, W&B, BentoML, Evidently), model drift, poziomy dojrzałości i jak zorganizować team MLOps w firmie."
         canonicalUrl="https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest"
+
+        keywords="MLOps co to jest, MLOps definicja, czym jest MLOps, MLOps przykłady, jak działa MLOps, MLOps znaczenie, MLOps przewodnik"
       />
       <ArticleSchema
         title="MLOps — co to jest i jak wdrożyć Machine Learning Operations?"

@@ -84,6 +84,8 @@ export default function BlogWireframeCoTo() {
         title="Wireframe — co to jest? Wireframing w projektowaniu UX"
         description="Wireframe — definicja, różnica między wireframe a mockupem a prototypem, typy (lo-fi, mid-fi, hi-fi), narzędzia (Figma, Balsamiq) i jak tworzyć szkielety UX. Przewodnik."
         canonicalUrl="https://fotz.pl/blog/wireframe-co-to"
+
+        keywords="Wireframe co to jest, Wireframe definicja, czym jest Wireframe, Wireframe przykłady, jak działa Wireframe, Wireframe znaczenie, Wireframe przewodnik"
       />
       <ArticleSchema
         title="Wireframe — co to jest i jak tworzyć szkielety UX?"

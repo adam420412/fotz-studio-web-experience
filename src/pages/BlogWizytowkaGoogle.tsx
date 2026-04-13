@@ -70,6 +70,8 @@ export default function BlogWizytowkaGoogle() {
         title="Wizytówka Google — jak założyć i zoptymalizować profil firmy | fotz.pl"
         description="Wizytówka Google (Google Business Profile) — poradnik krok po kroku. Jak założyć, zweryfikować i zoptymalizować wizytówkę Google. Pojaw się wyżej w Mapach!"
         canonical="https://fotz.pl/blog/wizytowka-google"
+
+        keywords="Wizytówka Google, Wizytówka Google co to jest, Wizytówka Google jak działa, Wizytówka Google definicja, Wizytówka Google przykłady, Wizytówka Google poradnik, Wizytówka Google przewodnik"
       />
       <ArticleSchema
         title="Wizytówka Google — kompletny poradnik Google Business Profile"

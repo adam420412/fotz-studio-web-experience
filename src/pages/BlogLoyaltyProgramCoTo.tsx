@@ -92,6 +92,8 @@ export default function BlogLoyaltyProgramCoTo() {
         title="Program Lojalnościowy — co to jest? Rodzaje i zasady projektowania"
         description="Program lojalnościowy — definicja, 5 rodzajów (punktowy, tierowy, cashback, paid membership), jak projektować skuteczny program i jakie metryki mierzyć."
         canonicalUrl="https://fotz.pl/blog/loyalty-program-co-to"
+
+        keywords="Program Lojalnościowy co to jest, Program Lojalnościowy definicja, czym jest Program Lojalnościowy, Program Lojalnościowy przykłady, jak działa Program Lojalnościowy, Program Lojalnościowy znaczenie, Program Lojalnościowy przewodnik"
       />
       <ArticleSchema
         title="Program Lojalnościowy — co to jest i jak działa?"

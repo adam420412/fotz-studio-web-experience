@@ -71,6 +71,8 @@ export default function BlogNpsCoToJest() {
         title="NPS (Net Promoter Score) — co to jest i jak mierzyć? | Fotz.pl"
         description="Net Promoter Score — jak obliczać NPS, interpretować wyniki, benchmarki branżowe i jak zwiększyć NPS. Kompletny przewodnik po metryce lojalności klientów."
         canonicalUrl="https://fotz.pl/blog/nps-net-promoter-score-co-to-jest"
+
+        keywords="NPS (Net Promoter Score) co to jest, NPS (Net Promoter Score) definicja, czym jest NPS (Net Promoter Score), NPS (Net Promoter Score) przykłady, jak działa NPS (Net Promoter Score), NPS (Net Promoter Score) znaczenie, NPS (Net Promoter Score) przewodnik"
       />
       <ArticleSchema
         title="NPS (Net Promoter Score) — co to jest i jak mierzyć?"

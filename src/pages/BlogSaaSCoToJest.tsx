@@ -69,6 +69,8 @@ export default function BlogSaaSCoToJest() {
         title="SaaS — co to jest? Software as a Service — poradnik | fotz.pl"
         description="SaaS co to jest — wyjaśniamy czym jest Software as a Service, jak działa model SaaS, przykłady, metryki (MRR, ARR, churn) i jak zbudować produkt SaaS."
         canonical="https://fotz.pl/blog/saas-co-to-jest"
+
+        keywords="SaaS co to jest, SaaS definicja, czym jest SaaS, SaaS startup, SaaS jak liczyć, SaaS wzór, SaaS przykłady"
       />
       <ArticleSchema
         title="SaaS — co to jest? Software as a Service — poradnik"

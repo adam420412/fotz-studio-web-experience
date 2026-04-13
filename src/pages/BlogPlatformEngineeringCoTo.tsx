@@ -53,6 +53,8 @@ export default function BlogPlatformEngineeringCoTo() {
         title="Platform Engineering — co to jest, IDP i Backstage? | Fotz.pl"
         description="Platform Engineering: definicja, Internal Developer Platform (IDP), Backstage wdrożenie, Golden Path, składniki platformy i jak mierzyć sukces."
         canonicalUrl="https://fotz.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
+
+        keywords="Platform Engineering co to jest, Platform Engineering definicja, czym jest Platform Engineering, Platform Engineering przykłady, jak działa Platform Engineering, Platform Engineering znaczenie, Platform Engineering przewodnik"
       />
       <ArticleSchema
         title="Platform Engineering — co to jest, IDP i Backstage?"

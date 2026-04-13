@@ -44,6 +44,8 @@ export default function BlogCssContainerLayerCoTo() {
         title="CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 | Fotz.pl"
         description="Nowoczesny CSS 2024: Container Queries (responsywne komponenty), @layer (cascade layers), CSS Nesting (bez Sass), @scope (scoped styles), View Transitions i Scroll-Driven Animations."
         canonicalUrl="https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
+
+        keywords="CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 co to jest, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 definicja, czym jest CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 przykłady, jak działa CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 znaczenie, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 przewodnik"
       />
       <ArticleSchema
         title="CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024?"

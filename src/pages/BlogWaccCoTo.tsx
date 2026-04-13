@@ -84,6 +84,8 @@ export default function BlogWaccCoTo() {
         title="WACC — co to jest? Średni Ważony Koszt Kapitału i jak go obliczyć"
         description="WACC (Weighted Average Cost of Capital) — definicja, formuła, CAPM, koszt długu, beta branżowe i wpływ na wycenę DCF. Kompletny przewodnik po WACC."
         canonicalUrl="https://fotz.pl/blog/wacc-sredni-wazony-koszt-kapitalu"
+
+        keywords="WACC co to jest, WACC jak działa, WACC tutorial, WACC przykład, czym jest WACC, WACC dokumentacja, WACC przewodnik"
       />
       <ArticleSchema
         title="WACC — co to jest i jak obliczyć Średni Ważony Koszt Kapitału?"

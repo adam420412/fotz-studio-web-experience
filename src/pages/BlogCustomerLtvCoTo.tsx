@@ -78,6 +78,8 @@ export default function BlogCustomerLtvCoTo() {
         title="Customer Lifetime Value — co to jest? CLV LTV obliczanie i wzory"
         description="Customer Lifetime Value (CLV/LTV) — definicja, 3 wzory obliczania, stosunek LTV:CAC, 6 driverów wzrostu i segmentacja klientów według CLV. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/customer-ltv-co-to"
+
+        keywords="Customer Lifetime Value co to jest, Customer Lifetime Value definicja, czym jest Customer Lifetime Value, Customer Lifetime Value startup, Customer Lifetime Value jak liczyć, Customer Lifetime Value wzór, Customer Lifetime Value przykłady"
       />
       <ArticleSchema
         title="Customer Lifetime Value — co to jest i jak obliczać CLV?"

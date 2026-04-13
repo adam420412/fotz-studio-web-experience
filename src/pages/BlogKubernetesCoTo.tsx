@@ -81,6 +81,8 @@ export default function BlogKubernetesCoTo() {
         title="Kubernetes — co to jest? K8s, Pod, Deployment i architektura klastra"
         description="Kubernetes (K8s) — definicja, architektura klastra (Control Plane, Worker Node), obiekty K8s (Pod, Deployment, Service, Ingress) i workflowy. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/kubernetes-co-to-jest"
+
+        keywords="Kubernetes co to jest, Kubernetes jak działa, Kubernetes tutorial, Kubernetes przykład, czym jest Kubernetes, Kubernetes dokumentacja, Kubernetes przewodnik"
       />
       <ArticleSchema
         title="Kubernetes — co to jest i jak działa? Kompletny przewodnik"

@@ -68,6 +68,8 @@ export default function BlogDemandGenerationCoTo() {
         title="Demand Generation — co to jest i jak budowac popyt? | fotz.pl"
         description="Demand Generation co to jest — wyjasnamy czym jest demand gen, roznica vs lead generation, dark funnel, strategie budowania popytu i metryki demand gen."
         canonical="https://fotz.pl/blog/demand-generation-co-to"
+
+        keywords="Demand Generation co to jest, Demand Generation definicja, czym jest Demand Generation, Demand Generation przykłady, jak działa Demand Generation, Demand Generation znaczenie, Demand Generation przewodnik"
       />
       <ArticleSchema
         title="Demand Generation — co to jest i jak budowac popyt?"

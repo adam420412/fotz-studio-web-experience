@@ -102,6 +102,8 @@ export default function BlogCoMarketingCoTo() {
         title="Co-marketing — co to jest? Marketing partnerski i partnerstwo marek"
         description="Co-marketing (marketing partnerski) — definicja, 6 rodzajów (content, event, bundle, cross-promo), 5-etapowy proces i jak znaleźć partnerów. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/co-marketing-co-to"
+
+        keywords="Co-marketing co to jest, Co-marketing definicja, czym jest Co-marketing, Co-marketing w marketingu, Co-marketing przykłady, jak działa Co-marketing, Co-marketing strategia"
       />
       <ArticleSchema
         title="Co-marketing — co to jest i jak działa?"

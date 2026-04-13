@@ -88,6 +88,8 @@ export default function BlogProspectingB2bCoTo() {
         title="Prospecting B2B — co to jest i jak generować leady? | Fotz.pl"
         description="Prospecting B2B — kanały (cold email, LinkedIn, cold calling), jak pisać cold emaile, budować pipeline i sekwencje outreach. Kompletny przewodnik dla Sales."
         canonicalUrl="https://fotz.pl/blog/prospecting-b2b-generowanie-leadow"
+
+        keywords="Prospecting B2B co to jest, Prospecting B2B definicja, czym jest Prospecting B2B, Prospecting B2B w marketingu, Prospecting B2B przykłady, jak działa Prospecting B2B, Prospecting B2B strategia"
       />
       <ArticleSchema
         title="Prospecting B2B — co to jest i jak generować leady?"

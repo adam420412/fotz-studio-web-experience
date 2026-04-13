@@ -87,6 +87,8 @@ export default function BlogZeroClickSearchCoTo() {
         title="Zero-Click Search — co to jest? Wyszukiwania bez kliknięć w SEO | fotz.pl"
         description="Zero-click search co to jest — wyjaśniamy czym są wyszukiwania bez kliknięć, featured snippets, AI Overviews i jak optymalizować SEO dla zero-click SERP."
         canonical="https://fotz.pl/blog/zero-click-search-co-to"
+
+        keywords="Zero-Click Search co to jest, Zero-Click Search definicja, czym jest Zero-Click Search, Zero-Click Search w marketingu, Zero-Click Search przykłady, jak działa Zero-Click Search, Zero-Click Search strategia"
       />
       <ArticleSchema
         title="Zero-Click Search — co to jest? Wyszukiwania bez kliknięć w SEO"

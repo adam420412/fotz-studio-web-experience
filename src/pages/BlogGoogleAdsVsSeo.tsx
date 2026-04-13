@@ -88,6 +88,8 @@ export default function BlogGoogleAdsVsSeo() {
         title="Google Ads vs SEO — co wybrać w 2025? Porównanie kosztów i efektów | Fotz.pl"
         description="Google Ads czy SEO? Porównanie kosztów, czasu działania, skuteczności i ROI. Kiedy wybrać płatne reklamy, a kiedy pozycjonowanie? Praktyczny przewodnik dla firm."
         canonicalUrl="https://fotz.pl/blog/google-ads-vs-seo"
+
+        keywords="Google Ads vs SEO, Google Ads vs SEO poradnik, Google Ads vs SEO strategia, Google Ads vs SEO jak zrobić, Google Ads vs SEO marketing, Google Ads vs SEO przykłady, Google Ads vs SEO w Polsce"
       />
       <ArticleSchema
         title="Google Ads vs SEO — co wybrać w 2025? Porównanie kosztów i efektów"

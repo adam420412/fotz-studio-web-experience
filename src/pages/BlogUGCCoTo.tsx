@@ -72,6 +72,8 @@ export default function BlogUGCCoTo() {
         title="UGC — co to jest? User Generated Content w marketingu | fotz.pl"
         description="UGC co to jest — wyjaśniamy czym jest User Generated Content, typy UGC, jak zbierać opinie i zdjęcia od klientów i jak mierzyć ROI z treści użytkowników."
         canonical="https://fotz.pl/blog/ugc-co-to"
+
+        keywords="UGC co to jest, UGC definicja, czym jest UGC, UGC w marketingu, UGC przykłady, jak działa UGC, UGC strategia"
       />
       <ArticleSchema
         title="UGC — co to jest? User Generated Content w marketingu"

@@ -69,6 +69,8 @@ export default function BlogEcommerceMarketingCoTo() {
         title="E-commerce Marketing — co to jest i jak sprzedawać online? | fotz.pl"
         description="E-commerce Marketing co to jest — wyjaśniamy jak promować sklep internetowy, kluczowe kanały (SEO, Google Shopping, Meta Ads), metryki i CRO dla e-commerce."
         canonical="https://fotz.pl/blog/ecommerce-marketing-co-to"
+
+        keywords="E-commerce Marketing co to jest, E-commerce Marketing definicja, czym jest E-commerce Marketing, E-commerce Marketing w marketingu, E-commerce Marketing przykłady, jak działa E-commerce Marketing, E-commerce Marketing strategia"
       />
       <ArticleSchema
         title="E-commerce Marketing — co to jest i jak sprzedawać online?"

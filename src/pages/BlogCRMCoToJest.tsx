@@ -69,6 +69,8 @@ export default function BlogCRMCoToJest() {
         title="CRM — co to jest? System CRM dla firmy — poradnik | fotz.pl"
         description="CRM co to jest — wyjasnamy czym jest system CRM, rodzaje, korzysci, jak wybrac CRM dla malej firmy, koszty wdrozenia i najlepsze systemy."
         canonical="https://fotz.pl/blog/crm-co-to-jest"
+
+        keywords="CRM co to jest, CRM definicja, czym jest CRM, CRM w sprzedaży, CRM strategia, CRM przykłady, jak używać CRM"
       />
       <ArticleSchema
         title="CRM — co to jest? System CRM dla firmy — poradnik"

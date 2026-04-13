@@ -44,6 +44,8 @@ export default function BlogPostgresOptCoTo() {
         title="PostgreSQL optymalizacja — EXPLAIN ANALYZE, indeksy, partitioning, PgBouncer, Patroni | Fotz.pl"
         description="PostgreSQL optimization: EXPLAIN ANALYZE, B-tree/GIN/GiST indeksy, RANGE partitioning, PgBouncer connection pooling, streaming replication i Patroni HA."
         canonicalUrl="https://fotz.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
+
+        keywords="PostgreSQL optymalizacja co to jest, PostgreSQL optymalizacja jak działa, PostgreSQL optymalizacja tutorial, PostgreSQL optymalizacja przykład, czym jest PostgreSQL optymalizacja, PostgreSQL optymalizacja dokumentacja, PostgreSQL optymalizacja przewodnik"
       />
       <ArticleSchema
         title="PostgreSQL optymalizacja — EXPLAIN ANALYZE, indeksy, partitioning, PgBouncer, Patroni?"

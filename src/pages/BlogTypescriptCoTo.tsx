@@ -128,6 +128,8 @@ export default function BlogTypescriptCoTo() {
         title="TypeScript — co to jest? Typy, interfejsy, generics i konfiguracja"
         description="TypeScript — definicja, system typów (prymitywne, union, generics), interface vs type, utility types i konfiguracja tsconfig. Kompletny przewodnik po TypeScript."
         canonicalUrl="https://fotz.pl/blog/typescript-co-to-jest"
+
+        keywords="TypeScript co to jest, TypeScript jak działa, TypeScript tutorial, TypeScript przykład, czym jest TypeScript, TypeScript dokumentacja, TypeScript przewodnik"
       />
       <ArticleSchema
         title="TypeScript — co to jest i jak działa? Kompletny przewodnik"

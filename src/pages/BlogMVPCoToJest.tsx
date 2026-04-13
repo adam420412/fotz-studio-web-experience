@@ -67,6 +67,8 @@ export default function BlogMVPCoToJest() {
         title="MVP — co to jest? Minimum Viable Product w praktyce | fotz.pl"
         description="MVP co to jest — wyjaśniamy czym jest Minimum Viable Product, jak zbudować MVP strony lub aplikacji, przykłady z Dropbox i Airbnb oraz koszty."
         canonical="https://fotz.pl/blog/mvp-co-to-jest"
+
+        keywords="MVP co to jest, MVP definicja, czym jest MVP, MVP przykłady, jak działa MVP, MVP znaczenie, MVP przewodnik"
       />
       <ArticleSchema
         title="MVP — co to jest? Minimum Viable Product w praktyce"

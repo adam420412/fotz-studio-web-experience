@@ -83,6 +83,8 @@ export default function BlogDarkSocialCoTo() {
         title="Dark Social — co to jest? Niewidoczny ruch i prywatne udostępnienia"
         description="Dark social — definicja, dlaczego 84% udostępnień jest niewidoczne, jak mierzyć dark social (UTM, short links, survey) i jak optymalizować marketing. Przewodnik."
         canonicalUrl="https://fotz.pl/blog/dark-social-co-to"
+
+        keywords="Dark Social co to jest, Dark Social definicja, czym jest Dark Social, Dark Social w marketingu, Dark Social przykłady, jak działa Dark Social, Dark Social strategia"
       />
       <ArticleSchema
         title="Dark Social — co to jest i jak go mierzyć?"

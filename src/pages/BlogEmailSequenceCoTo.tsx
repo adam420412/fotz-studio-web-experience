@@ -69,6 +69,8 @@ export default function BlogEmailSequenceCoTo() {
         title="Email Sequence — co to jest i jak budować sekwencje emaili? | fotz.pl"
         description="Email Sequence co to jest — wyjaśniamy czym są sekwencje emaili, typy (welcome, onboarding, nurture), narzędzia i jak pisać skuteczne subject lines."
         canonical="https://fotz.pl/blog/email-sequence-co-to"
+
+        keywords="Email Sequence co to jest, Email Sequence definicja, czym jest Email Sequence, Email Sequence przykłady, jak działa Email Sequence, Email Sequence znaczenie, Email Sequence przewodnik"
       />
       <ArticleSchema
         title="Email Sequence — co to jest i jak budować sekwencje emaili?"

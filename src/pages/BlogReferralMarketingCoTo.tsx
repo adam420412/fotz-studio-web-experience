@@ -71,6 +71,8 @@ export default function BlogReferralMarketingCoTo() {
         title="Referral Marketing — co to jest? Program poleceń | fotz.pl"
         description="Referral Marketing co to jest — wyjaśniamy czym jest marketing poleceń, jak działa program referral, jakie nagrody działają i jak mierzyć skuteczność."
         canonical="https://fotz.pl/blog/referral-marketing-co-to"
+
+        keywords="Referral Marketing co to jest, Referral Marketing definicja, czym jest Referral Marketing, Referral Marketing w marketingu, Referral Marketing przykłady, jak działa Referral Marketing, Referral Marketing strategia"
       />
       <ArticleSchema
         title="Referral Marketing — co to jest? Program poleceń"

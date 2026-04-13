@@ -92,6 +92,8 @@ export default function BlogPaidSocialCoTo() {
         title="Paid Social — co to jest? Reklama w Social Media Facebook LinkedIn TikTok"
         description="Paid social — definicja, porównanie platform (Meta, LinkedIn, TikTok, Pinterest), formaty reklam, metryki (ROAS, CPM, CPA) i jak targetować. Przewodnik po reklamie social media."
         canonicalUrl="https://fotz.pl/blog/paid-social-co-to"
+
+        keywords="Paid Social co to jest, Paid Social definicja, czym jest Paid Social, Paid Social w marketingu, Paid Social przykłady, jak działa Paid Social, Paid Social strategia"
       />
       <ArticleSchema
         title="Paid Social — co to jest i jak prowadzić reklamy w Social Media?"

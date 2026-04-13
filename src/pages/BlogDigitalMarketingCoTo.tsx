@@ -69,6 +69,8 @@ export default function BlogDigitalMarketingCoTo() {
         title="Digital marketing — co to jest i jakie kanały obejmuje? | fotz.pl"
         description="Digital marketing co to jest — wyjaśniamy czym jest marketing cyfrowy, jakie kanały obejmuje (SEO, Google Ads, social media) i od czego zacząć w firmie."
         canonical="https://fotz.pl/blog/digital-marketing-co-to"
+
+        keywords="Digital marketing co to jest, Digital marketing definicja, czym jest Digital marketing, Digital marketing w marketingu, Digital marketing przykłady, jak działa Digital marketing, Digital marketing strategia"
       />
       <ArticleSchema
         title="Digital marketing — co to jest i jakie kanały obejmuje?"

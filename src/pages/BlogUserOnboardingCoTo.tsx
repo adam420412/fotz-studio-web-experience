@@ -100,6 +100,8 @@ export default function BlogUserOnboardingCoTo() {
         title="User Onboarding — co to jest? Wdrożenie użytkownika w SaaS | fotz.pl"
         description="User onboarding co to jest — wyjaśniamy czym jest wdrożenie użytkownika, aha moment, wzorce onboardingu, metryki i różnice B2B vs B2C w produktach SaaS."
         canonical="https://fotz.pl/blog/user-onboarding-co-to"
+
+        keywords="User Onboarding co to jest, User Onboarding definicja, czym jest User Onboarding, User Onboarding startup, User Onboarding jak liczyć, User Onboarding wzór, User Onboarding przykłady"
       />
       <ArticleSchema
         title="User Onboarding — co to jest? Wdrożenie użytkownika w SaaS"

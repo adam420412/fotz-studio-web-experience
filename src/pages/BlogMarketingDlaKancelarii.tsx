@@ -149,7 +149,10 @@ export default function BlogMarketingDlaKancelarii() {
         canonical="https://fotz.pl/blog/marketing-dla-kancelarii"
         ogType="article"
         schemaJson={[
-          <BreadcrumbSchema items={breadcrumbSchema} />,
+          <BreadcrumbSchema items={breadcrumbSchema}
+
+        keywords="Marketing dla kancelarii prawnej - Poradnik 2025, Marketing dla kancelarii prawnej - Poradnik 2025 poradnik, Marketing dla kancelarii prawnej - Poradnik 2025 strategia, Marketing dla kancelarii prawnej - Poradnik 2025 jak zrobić, Marketing dla kancelarii prawnej - Poradnik 2025 marketing, Marketing dla kancelarii prawnej - Poradnik 2025 przykłady, Marketing dla kancelarii prawnej - Poradnik 2025 w Polsce"
+      />,
           <ArticleSchema
             title={articleSchema.title}
             description={articleSchema.description}

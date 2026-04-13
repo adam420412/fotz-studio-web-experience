@@ -67,6 +67,8 @@ export default function BlogUXDesignCoTo() {
         title="UX Design — co to jest i jak wpływa na konwersję? | fotz.pl"
         description="UX Design co to jest — wyjaśniamy czym jest User Experience Design, różnica UX vs UI, jak UX wpływa na konwersję strony i jak poprawić UX witryny."
         canonical="https://fotz.pl/blog/ux-design-co-to"
+
+        keywords="UX Design co to jest, UX Design definicja, czym jest UX Design, UX Design przykłady, jak działa UX Design, UX Design znaczenie, UX Design przewodnik"
       />
       <ArticleSchema
         title="UX Design — co to jest i jak wpływa na konwersję?"

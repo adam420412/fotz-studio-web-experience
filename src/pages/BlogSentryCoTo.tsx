@@ -44,6 +44,8 @@ export default function BlogSentryCoTo() {
         title="Sentry — co to jest, error tracking, Performance Monitoring, React, Python | Fotz.pl"
         description="Sentry: error tracking, SDK integracja React/Node/Python, Performance Monitoring, Session Replay, alerty, Sentry vs Datadog/Rollbar/Bugsnag i self-hosting."
         canonicalUrl="https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
+
+        keywords="Sentry co to jest, Sentry jak działa, Sentry tutorial, Sentry przykład, czym jest Sentry, Sentry dokumentacja, Sentry przewodnik"
       />
       <ArticleSchema
         title="Sentry — co to jest, error tracking, Performance Monitoring, React, Python?"

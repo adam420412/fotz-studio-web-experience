@@ -90,6 +90,8 @@ export default function BlogRevenueOperationsCoTo() {
         title="Revenue Operations (RevOps) — co to jest? | fotz.pl"
         description="Revenue Operations RevOps co to jest — wyjaśniamy czym jest RevOps, różnica vs Sales Ops, jak zbudować RevOps w firmie, KPI i kiedy zatrudnić RevOps Manager."
         canonical="https://fotz.pl/blog/revenue-operations-revops-co-to"
+
+        keywords="Revenue Operations (RevOps) co to jest, Revenue Operations (RevOps) definicja, czym jest Revenue Operations (RevOps), Revenue Operations (RevOps) przykłady, jak działa Revenue Operations (RevOps), Revenue Operations (RevOps) znaczenie, Revenue Operations (RevOps) przewodnik"
       />
       <ArticleSchema
         title="Revenue Operations (RevOps) — co to jest?"

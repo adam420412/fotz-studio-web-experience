@@ -101,6 +101,8 @@ export default function BlogSocialCommerceCoTo() {
         title="Social Commerce — co to jest? Sprzedaż w mediach społecznościowych"
         description="Social commerce — definicja, platformy (Instagram, TikTok, Facebook Shop), strategie i metryki. Dowiedz się jak sprzedawać bezpośrednio w social mediach."
         canonicalUrl="https://fotz.pl/blog/social-commerce-co-to"
+
+        keywords="Social Commerce co to jest, Social Commerce definicja, czym jest Social Commerce, Social Commerce w marketingu, Social Commerce przykłady, jak działa Social Commerce, Social Commerce strategia"
       />
       <ArticleSchema
         title="Social Commerce — co to jest i jak działa?"

@@ -73,6 +73,8 @@ export default function BlogScrumCoToJest() {
         title="Scrum — co to jest i jak działa metodologia pracy? | fotz.pl"
         description="Scrum co to jest — wyjaśniamy jak działa framework Scrum, role (Product Owner, Scrum Master), ceremonie i jak Scrum różni się od Agile. Poradnik dla firm."
         canonical="https://fotz.pl/blog/scrum-co-to-jest"
+
+        keywords="Scrum co to jest, Scrum definicja, czym jest Scrum, Scrum przykłady, jak działa Scrum, Scrum znaczenie, Scrum przewodnik"
       />
       <ArticleSchema
         title="Scrum — co to jest i jak działa metodologia?"

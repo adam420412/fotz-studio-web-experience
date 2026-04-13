@@ -67,6 +67,8 @@ export default function BlogSalesOpsCoTo() {
         title="Sales Operations — co to jest i co robi? | Fotz.pl"
         description="Sales Operations (Sales Ops) — obowiązki, narzędzia, kluczowe metryki i różnica vs RevOps. Kompletny przewodnik po Sales Operations dla liderów sprzedaży."
         canonicalUrl="https://fotz.pl/blog/sales-operations-co-to-jest"
+
+        keywords="Sales Operations co to jest, Sales Operations definicja, czym jest Sales Operations, Sales Operations w sprzedaży, Sales Operations strategia, Sales Operations przykłady, jak używać Sales Operations"
       />
       <ArticleSchema
         title="Sales Operations — co to jest i co robi?"

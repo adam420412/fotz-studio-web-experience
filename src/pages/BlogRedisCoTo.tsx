@@ -88,6 +88,8 @@ export default function BlogRedisCoTo() {
         title="Redis — co to jest? Cache, struktury danych i zastosowania"
         description="Redis — definicja, struktury danych (String, List, Set, ZSet, Hash, Stream), przypadki użycia (cache, sesje, kolejki, leaderboard) i Redis Cluster. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/redis-co-to-jest"
+
+        keywords="Redis co to jest, Redis jak działa, Redis tutorial, Redis przykład, czym jest Redis, Redis dokumentacja, Redis przewodnik"
       />
       <ArticleSchema
         title="Redis — co to jest i jak działa? Kompletny przewodnik"

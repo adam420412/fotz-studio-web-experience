@@ -50,6 +50,8 @@ export default function BlogPartnerEcosystemCoTo() {
         title="Partner Ecosystem — jak budować ekosystem partnerski? | Fotz.pl"
         description="Partner ecosystem: typy partnerów, jak budować program partnerski, tiers, metryki i najczęstsze błędy. Kompletny przewodnik dla firm SaaS i scaleupów."
         canonicalUrl="https://fotz.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
+
+        keywords="Partner Ecosystem co to jest, Partner Ecosystem definicja, czym jest Partner Ecosystem, Partner Ecosystem przykłady, jak działa Partner Ecosystem, Partner Ecosystem znaczenie, Partner Ecosystem przewodnik"
       />
       <ArticleSchema
         title="Partner Ecosystem — jak budować ekosystem partnerski?"

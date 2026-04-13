@@ -102,6 +102,8 @@ export default function BlogVoiceOfCustomerCoTo() {
         title="Voice of Customer (VoC) — co to jest? NPS, CSAT, CES i feedback klientów"
         description="Voice of Customer — definicja, 4 metody (NPS, CSAT, CES, wywiady), 6-krokowy program VoC i jak close the loop z feedbackiem klientów. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/voice-of-customer-co-to"
+
+        keywords="Voice of Customer (VoC) co to jest, Voice of Customer (VoC) definicja, czym jest Voice of Customer (VoC), Voice of Customer (VoC) przykłady, jak działa Voice of Customer (VoC), Voice of Customer (VoC) znaczenie, Voice of Customer (VoC) przewodnik"
       />
       <ArticleSchema
         title="Voice of Customer (VoC) — co to jest i jak budować program?"

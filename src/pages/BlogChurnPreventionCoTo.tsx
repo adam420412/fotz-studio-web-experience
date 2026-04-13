@@ -51,6 +51,8 @@ export default function BlogChurnPreventionCoTo() {
         title="Churn Prevention — jak zapobiegać odejściom klientów? | Fotz.pl"
         description="Churn Prevention w SaaS — przyczyny churnu, Early Warning System, retention playbook i kluczowe metryki (NRR, GRR). Kompletny przewodnik dla Customer Success."
         canonicalUrl="https://fotz.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
+
+        keywords="Churn Prevention co to jest, Churn Prevention definicja, czym jest Churn Prevention, Churn Prevention startup, Churn Prevention jak liczyć, Churn Prevention wzór, Churn Prevention przykłady"
       />
       <ArticleSchema
         title="Churn Prevention — jak zapobiegać odejściom klientów?"

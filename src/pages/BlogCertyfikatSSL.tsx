@@ -75,6 +75,8 @@ export default function BlogCertyfikatSSL() {
         title="Certyfikat SSL — co to jest i dlaczego potrzebujesz HTTPS? | fotz.pl"
         description="Certyfikat SSL co to jest — wyjaśniamy czym jest SSL, dlaczego HTTPS jest ważny dla SEO, ile kosztuje i jak zainstalować bezpłatny certyfikat SSL. Poradnik 2025."
         canonical="https://fotz.pl/blog/certyfikat-ssl-co-to"
+
+        keywords="Certyfikat SSL co to jest, Certyfikat SSL definicja, czym jest Certyfikat SSL, Certyfikat SSL przykłady, jak działa Certyfikat SSL, Certyfikat SSL znaczenie, Certyfikat SSL przewodnik"
       />
       <ArticleSchema
         title="Certyfikat SSL — co to jest i dlaczego potrzebujesz HTTPS?"

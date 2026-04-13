@@ -98,6 +98,8 @@ export default function BlogProposalSprzedazowy() {
         title="Proposal sprzedażowy — jak pisać skuteczną ofertę B2B? | Fotz.pl"
         description="Proposal sprzedażowy B2B — struktura oferty handlowej, jak prezentować pricing, ROI i następne kroki. Kompletny przewodnik dla handlowców enterprise."
         canonicalUrl="https://fotz.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b"
+
+        keywords="Proposal sprzedażowy, Proposal sprzedażowy co to jest, Proposal sprzedażowy jak działa, Proposal sprzedażowy definicja, Proposal sprzedażowy przykłady, Proposal sprzedażowy poradnik, Proposal sprzedażowy przewodnik"
       />
       <ArticleSchema
         title="Proposal sprzedażowy — jak pisać skuteczną ofertę B2B?"

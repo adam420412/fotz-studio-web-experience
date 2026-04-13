@@ -44,6 +44,8 @@ export default function BlogAlgoliaSearchCoTo() {
         title="Algolia, Typesense, Meilisearch — search engine dla aplikacji web 2024 | Fotz.pl"
         description="Algolia vs Typesense vs Meilisearch vs Elasticsearch — hosted i open-source search engines, InstantSearch, semantic search, vector search i RAG dla Next.js."
         canonicalUrl="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
+
+        keywords="Algolia, Typesense, Meilisearch co to jest, Algolia, Typesense, Meilisearch definicja, czym jest Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch przykłady, jak działa Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch znaczenie, Algolia, Typesense, Meilisearch przewodnik"
       />
       <ArticleSchema
         title="Algolia, Typesense, Meilisearch — search engine dla aplikacji web 2024?"

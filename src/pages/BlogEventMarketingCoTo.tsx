@@ -96,6 +96,8 @@ export default function BlogEventMarketingCoTo() {
         title="Event Marketing — co to jest i jak działa? Kompletny przewodnik"
         description="Event marketing — definicja, rodzaje eventów, jak mierzyć ROI i metryki sukcesu. Kompletny przewodnik po organizowaniu skutecznych wydarzeń marketingowych."
         canonicalUrl="https://fotz.pl/blog/event-marketing-co-to"
+
+        keywords="Event Marketing co to jest, Event Marketing definicja, czym jest Event Marketing, Event Marketing w marketingu, Event Marketing przykłady, jak działa Event Marketing, Event Marketing strategia"
       />
       <ArticleSchema
         title="Event Marketing — co to jest i jak działa?"

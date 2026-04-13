@@ -109,6 +109,8 @@ export default function BlogUsabilityTestingCoTo() {
         title="Usability Testing — co to jest? Testy użyteczności i badania UX"
         description="Usability testing — definicja, 4 metody (moderowane, niemoderowane, guerrilla, zdalne), reguła 5 użytkowników, SUS Score i projektowanie zadań testowych. Przewodnik."
         canonicalUrl="https://fotz.pl/blog/usability-testing-co-to"
+
+        keywords="Usability Testing co to jest, Usability Testing definicja, czym jest Usability Testing, Usability Testing przykłady, jak działa Usability Testing, Usability Testing znaczenie, Usability Testing przewodnik"
       />
       <ArticleSchema
         title="Usability Testing — co to jest i jak przeprowadzać testy użyteczności?"

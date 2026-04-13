@@ -64,6 +64,8 @@ export default function BlogCrawlBudgetCoTo() {
         title="Crawl Budget — co to jest i jak optymalizować dla SEO? | fotz.pl"
         description="Crawl Budget co to jest — wyjaśniamy czym jest budżet crawlowania Google, jak go sprawdzić, co marnuje crawl budget i jak optymalizować duże strony."
         canonical="https://fotz.pl/blog/crawl-budget-co-to"
+
+        keywords="Crawl Budget co to jest, Crawl Budget definicja, czym jest Crawl Budget, Crawl Budget w marketingu, Crawl Budget przykłady, jak działa Crawl Budget, Crawl Budget strategia"
       />
       <ArticleSchema
         title="Crawl Budget — co to jest i jak optymalizować dla SEO?"

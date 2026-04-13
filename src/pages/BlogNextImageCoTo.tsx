@@ -44,6 +44,8 @@ export default function BlogNextImageCoTo() {
         title="next/image, WebP/AVIF, Cloudinary i Image Optimization — React i Next.js 2024 | Fotz.pl"
         description="next/image (blur placeholder, priority, sizes, remotePatterns), WebP/AVIF konwersja przez sharp, Cloudinary CDN (f_auto, q_auto), SVG optymalizacja SVGR i lazy loading."
         canonicalUrl="https://fotz.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024"
+
+        keywords="next/image, WebP/AVIF, Cloudinary i Image Optimization co to jest, next/image, WebP/AVIF, Cloudinary i Image Optimization jak działa, next/image, WebP/AVIF, Cloudinary i Image Optimization tutorial, next/image, WebP/AVIF, Cloudinary i Image Optimization przykład, czym jest next/image, WebP/AVIF, Cloudinary i Image Optimization, next/image, WebP/AVIF, Cloudinary i Image Optimization dokumentacja, next/image, WebP/AVIF, Cloudinary i Image Optimization przewodnik"
       />
       <ArticleSchema
         title="next/image, WebP/AVIF, Cloudinary i Image Optimization — React i Next.js 2024?"

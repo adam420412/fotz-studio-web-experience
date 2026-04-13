@@ -172,6 +172,8 @@ export default function BlogAutomatyzacjaMarketingu() {
         title="Automatyzacja marketingu w lejku sprzedazowym | fotz.pl"
         description="Automatyzacja marketingu — jak zbudowac automatyzowany lejek sprzedazowy. Lead scoring, email nurturing, narzedzia HubSpot, ActiveCampaign, ROI automatyzacji."
         canonical="https://fotz.pl/blog/automatyzacja-marketingu"
+
+        keywords="Automatyzacja marketingu w lejku sprzedazowym, Automatyzacja marketingu w lejku sprzedazowym poradnik, Automatyzacja marketingu w lejku sprzedazowym strategia, Automatyzacja marketingu w lejku sprzedazowym jak zrobić, Automatyzacja marketingu w lejku sprzedazowym marketing, Automatyzacja marketingu w lejku sprzedazowym przykłady, Automatyzacja marketingu w lejku sprzedazowym w Polsce"
       />
       <ArticleSchema
         title="Automatyzacja marketingu w lejku sprzedazowym — pełny przewodnik 2025"

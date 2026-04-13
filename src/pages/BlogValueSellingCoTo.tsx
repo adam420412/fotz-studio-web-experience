@@ -69,6 +69,8 @@ export default function BlogValueSellingCoTo() {
         title="Value Selling — co to jest i jak sprzedawać przez wartość? | Fotz.pl"
         description="Value Selling — metodologia sprzedaży przez wartość i ROI: co to jest, jak zbudować business case, framework discovery i dla kogo sprawdza się najlepiej."
         canonicalUrl="https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc"
+
+        keywords="Value Selling co to jest, Value Selling definicja, czym jest Value Selling, Value Selling przykłady, jak działa Value Selling, Value Selling znaczenie, Value Selling przewodnik"
       />
       <ArticleSchema
         title="Value Selling — co to jest i jak sprzedawać przez wartość?"

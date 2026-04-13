@@ -76,6 +76,8 @@ export default function BlogB2BCoToJest() {
         title="B2B — co to jest? Biznes między firmami — poradnik | fotz.pl"
         description="B2B co to jest — wyjaśniamy czym jest model B2B, jak różni się od B2C, jak pozyskiwać klientów B2B i co to jest lead B2B. Kompletny poradnik."
         canonical="https://fotz.pl/blog/b2b-co-to-jest"
+
+        keywords="B2B co to jest, B2B definicja, czym jest B2B, B2B przykłady, jak działa B2B, B2B znaczenie, B2B przewodnik"
       />
       <ArticleSchema
         title="B2B — co to jest? Biznes między firmami"

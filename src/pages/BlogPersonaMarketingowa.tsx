@@ -78,6 +78,8 @@ export default function BlogPersonaMarketingowa() {
         title="Persona marketingowa — co to jest i jak ja stworzyc? | fotz.pl"
         description="Persona marketingowa co to jest — wyjasnamy czym jest buyer persona, jak stworzyc persone krok po kroku, roznica persona vs grupa docelowa i przyklady."
         canonical="https://fotz.pl/blog/persona-marketingowa"
+
+        keywords="Persona marketingowa co to jest, Persona marketingowa definicja, czym jest Persona marketingowa, Persona marketingowa w marketingu, Persona marketingowa przykłady, jak działa Persona marketingowa, Persona marketingowa strategia"
       />
       <ArticleSchema
         title="Persona marketingowa — co to jest i jak ja stworzyc?"

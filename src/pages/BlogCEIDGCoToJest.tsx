@@ -68,6 +68,8 @@ export default function BlogCEIDGCoToJest() {
         title="CEIDG — co to jest? Jak zarejestrowac firme online | fotz.pl"
         description="CEIDG co to jest — wyjasnamy czym jest Centralna Ewidencja Dzialalnosci Gospodarczej, jak zarejestrowac JDG, sprawdzic firme i roznica CEIDG vs KRS."
         canonical="https://fotz.pl/blog/ceidg-co-to-jest"
+
+        keywords="CEIDG co to jest, CEIDG definicja, czym jest CEIDG, CEIDG przykłady, jak działa CEIDG, CEIDG znaczenie, CEIDG przewodnik"
       />
       <ArticleSchema
         title="CEIDG — co to jest? Jak zarejestrowac firme online"

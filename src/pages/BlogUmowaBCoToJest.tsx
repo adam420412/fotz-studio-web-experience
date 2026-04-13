@@ -70,6 +70,8 @@ export default function BlogUmowaBCoToJest() {
         title="Umowa B2B — co to jest? Kontrakt B2B vs etat | fotz.pl"
         description="Umowa B2B co to jest — wyjasnamy czym jest kontrakt B2B, ile zarabia sie netto, B2B vs etat vs zlecenie i co powinna zawierac umowa B2B."
         canonical="https://fotz.pl/blog/umowa-b2b-co-to-jest"
+
+        keywords="Umowa B2B co to jest, Umowa B2B definicja, czym jest Umowa B2B, Umowa B2B przykłady, jak działa Umowa B2B, Umowa B2B znaczenie, Umowa B2B przewodnik"
       />
       <ArticleSchema
         title="Umowa B2B — co to jest? Kontrakt B2B vs etat"

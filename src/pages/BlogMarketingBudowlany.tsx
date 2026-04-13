@@ -68,6 +68,8 @@ export default function BlogMarketingBudowlany() {
         title="Marketing dla firmy budowlanej — SEO, Google Ads, LinkedIn | fotz.pl"
         description="Marketing dla firmy budowlanej — jak pozyskiwac klientow przez SEO lokalne, Google Ads, LinkedIn B2B, portfolio i opinie. Strategie dla firm budowlanych."
         canonical="https://fotz.pl/blog/marketing-firma-budowlana"
+
+        keywords="Marketing dla firmy budowlanej, Marketing dla firmy budowlanej poradnik, Marketing dla firmy budowlanej strategia, Marketing dla firmy budowlanej jak zrobić, Marketing dla firmy budowlanej marketing, Marketing dla firmy budowlanej przykłady, Marketing dla firmy budowlanej w Polsce"
       />
       <ArticleSchema
         title="Marketing dla firmy budowlanej — SEO, Google Ads, LinkedIn"

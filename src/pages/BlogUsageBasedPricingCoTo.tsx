@@ -79,6 +79,8 @@ export default function BlogUsageBasedPricingCoTo() {
         title="Usage-Based Pricing — co to jest i jak wdrożyć? | Fotz.pl"
         description="Usage-Based Pricing (UBP) — modele cenowe pay-as-you-go, wpływ na metryki SaaS, kiedy stosować i jak budować pricing page. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz"
+
+        keywords="Usage-Based Pricing co to jest, Usage-Based Pricing definicja, czym jest Usage-Based Pricing, Usage-Based Pricing przykłady, jak działa Usage-Based Pricing, Usage-Based Pricing znaczenie, Usage-Based Pricing przewodnik"
       />
       <ArticleSchema
         title="Usage-Based Pricing — co to jest i jak wdrożyć?"

@@ -87,6 +87,8 @@ export default function BlogSmartBiddingCoTo() {
         title="Smart Bidding — co to jest? Inteligentne stawki Google Ads | fotz.pl"
         description="Smart Bidding co to jest — wyjaśniamy czym są inteligentne stawki Google Ads, strategie (Target CPA, ROAS), kiedy używać i jak działa learning period."
         canonical="https://fotz.pl/blog/smart-bidding-co-to"
+
+        keywords="Smart Bidding co to jest, Smart Bidding definicja, czym jest Smart Bidding, Smart Bidding przykłady, jak działa Smart Bidding, Smart Bidding znaczenie, Smart Bidding przewodnik"
       />
       <ArticleSchema
         title="Smart Bidding — co to jest? Inteligentne stawki Google Ads"

@@ -44,6 +44,8 @@ export default function BlogZodAdvancedCoTo() {
         title="Zod zaawansowany — discriminated unions, branded types, transforms i recursive schemas TypeScript 2024 | Fotz.pl"
         description="Zod zaawansowany: discriminated unions, branded types (nominal typing), transforms, refine, superRefine, z.lazy (recursive), React Hook Form, tRPC i env validation."
         canonicalUrl="https://fotz.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
+
+        keywords="Zod zaawansowany co to jest, Zod zaawansowany definicja, czym jest Zod zaawansowany, Zod zaawansowany w marketingu, Zod zaawansowany przykłady, jak działa Zod zaawansowany, Zod zaawansowany strategia"
       />
       <ArticleSchema
         title="Zod zaawansowany — discriminated unions, branded types, transforms i recursive schemas TypeScript 2024?"

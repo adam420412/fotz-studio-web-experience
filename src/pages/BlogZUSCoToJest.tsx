@@ -76,6 +76,8 @@ export default function BlogZUSCoToJest() {
         title="ZUS — co to jest? Skladki spoleczne dla przedsiebiorcy | fotz.pl"
         description="ZUS co to jest — wyjasnamy czym jest ZUS, ile wynosi ZUS dla JDG w 2024, ulga na start, maly ZUS i jak skladki wplywaja na emeryture."
         canonical="https://fotz.pl/blog/zus-co-to-jest"
+
+        keywords="ZUS co to jest, ZUS definicja, czym jest ZUS, ZUS przykłady, jak działa ZUS, ZUS znaczenie, ZUS przewodnik"
       />
       <ArticleSchema
         title="ZUS — co to jest? Skladki spoleczne dla przedsiebiorcy"

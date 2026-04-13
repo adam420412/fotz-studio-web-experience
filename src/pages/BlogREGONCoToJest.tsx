@@ -69,6 +69,8 @@ export default function BlogREGONCoToJest() {
         title="REGON — co to jest? Numer identyfikacyjny firmy | fotz.pl"
         description="REGON co to jest — wyjasnamy czym jest numer REGON, jak sprawdzic REGON firmy, roznica REGON vs NIP i kiedy podawac REGON w dokumentach."
         canonical="https://fotz.pl/blog/regon-co-to-jest"
+
+        keywords="REGON co to jest, REGON definicja, czym jest REGON, REGON przykłady, jak działa REGON, REGON znaczenie, REGON przewodnik"
       />
       <ArticleSchema
         title="REGON — co to jest? Numer identyfikacyjny firmy"

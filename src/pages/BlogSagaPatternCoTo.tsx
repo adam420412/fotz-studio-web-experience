@@ -44,6 +44,8 @@ export default function BlogSagaPatternCoTo() {
         title="Saga Pattern — co to jest, Choreography vs Orchestration, Temporal.io, Kafka | Fotz.pl"
         description="Saga Pattern: distributed transactions w mikrousługach, Choreography vs Orchestration, Temporal.io durable workflows, implementacja z Kafka i Event Store."
         canonicalUrl="https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
+
+        keywords="Saga Pattern co to jest, Saga Pattern definicja, czym jest Saga Pattern, Saga Pattern przykłady, jak działa Saga Pattern, Saga Pattern znaczenie, Saga Pattern przewodnik"
       />
       <ArticleSchema
         title="Saga Pattern — co to jest, Choreography vs Orchestration, Temporal.io, Kafka?"

@@ -102,6 +102,8 @@ export default function BlogBrandPositioningCoTo() {
         title="Brand Positioning — co to jest? Pozycjonowanie marki | fotz.pl"
         description="Brand positioning co to jest — wyjaśniamy czym jest pozycjonowanie marki, strategie, perceptual map, jak zdefiniować positioning statement i kiedy zmienić pozycjonowanie."
         canonical="https://fotz.pl/blog/brand-positioning-co-to"
+
+        keywords="Brand Positioning co to jest, Brand Positioning definicja, czym jest Brand Positioning, Brand Positioning w marketingu, Brand Positioning przykłady, jak działa Brand Positioning, Brand Positioning strategia"
       />
       <ArticleSchema
         title="Brand Positioning — co to jest? Pozycjonowanie marki"

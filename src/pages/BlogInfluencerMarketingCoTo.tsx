@@ -67,6 +67,8 @@ export default function BlogInfluencerMarketingCoTo() {
         title="Influencer Marketing — co to jest i jak działa? | fotz.pl"
         description="Influencer Marketing co to jest — wyjaśniamy czym jest marketing influencerski, typy influencerów, koszty współpracy, jak wybrać influencera i mierzyć ROI."
         canonical="https://fotz.pl/blog/influencer-marketing-co-to"
+
+        keywords="Influencer Marketing co to jest, Influencer Marketing definicja, czym jest Influencer Marketing, Influencer Marketing w marketingu, Influencer Marketing przykłady, jak działa Influencer Marketing, Influencer Marketing strategia"
       />
       <ArticleSchema
         title="Influencer Marketing — co to jest i jak działa?"

@@ -44,6 +44,8 @@ export default function BlogFileUploadsCoTo() {
         title="File Uploads — UploadThing, Cloudinary, AWS S3, Mux, Next.js 2024 | Fotz.pl"
         description="File uploads w Next.js: UploadThing (App Router), Cloudinary, AWS S3 presigned URLs, Cloudflare R2, Mux video, Multer, next/image optymalizacja i sharp."
         canonicalUrl="https://fotz.pl/blog/file-uploads-uploadthing-cloudinary-s3-mux-nextjs-2024"
+
+        keywords="File Uploads co to jest, File Uploads jak działa, File Uploads tutorial, File Uploads przykład, czym jest File Uploads, File Uploads dokumentacja, File Uploads przewodnik"
       />
       <ArticleSchema
         title="File Uploads — UploadThing, Cloudinary, AWS S3, Mux, Next.js 2024?"

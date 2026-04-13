@@ -168,6 +168,8 @@ export default function BlogSEODlaSklepu() {
         title="SEO dla sklepu internetowego - praktyczny poradnik 2025 | fotz.pl"
         description="Praktyczne kroki SEO dla sklepów e-commerce. Optymalizacja produktów, kategorii, Core Web Vitals, schematy produktowe i unikanie błędów SEO w sklepach."
         canonical="https://fotz.pl/blog/seo-dla-sklepu-internetowego"
+
+        keywords="SEO dla sklepu internetowego - praktyczny poradnik 2025, SEO dla sklepu internetowego - praktyczny poradnik 2025 poradnik, SEO dla sklepu internetowego - praktyczny poradnik 2025 strategia, SEO dla sklepu internetowego - praktyczny poradnik 2025 jak zrobić, SEO dla sklepu internetowego - praktyczny poradnik 2025 marketing, SEO dla sklepu internetowego - praktyczny poradnik 2025 przykłady, SEO dla sklepu internetowego - praktyczny poradnik 2025 w Polsce"
       />
       <ArticleSchema
         title="SEO dla sklepu internetowego - praktyczne kroki pozycjonowania e-commerce"

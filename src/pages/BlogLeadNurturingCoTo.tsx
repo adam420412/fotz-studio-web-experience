@@ -83,6 +83,8 @@ export default function BlogLeadNurturingCoTo() {
         title="Lead Nurturing — co to jest? Pielęgnowanie leadów w B2B | fotz.pl"
         description="Lead nurturing co to jest — wyjaśniamy czym jest pielęgnowanie leadów w B2B, jak zbudować sekwencję nurturingową, lead scoring, metryki i różnica vs lead generation."
         canonical="https://fotz.pl/blog/lead-nurturing-co-to"
+
+        keywords="Lead Nurturing co to jest, Lead Nurturing definicja, czym jest Lead Nurturing, Lead Nurturing w marketingu, Lead Nurturing przykłady, jak działa Lead Nurturing, Lead Nurturing strategia"
       />
       <ArticleSchema
         title="Lead Nurturing — co to jest? Pielęgnowanie leadów w B2B"

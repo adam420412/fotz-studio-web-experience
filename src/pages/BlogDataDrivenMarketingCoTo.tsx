@@ -81,6 +81,8 @@ export default function BlogDataDrivenMarketingCoTo() {
         title="Data-Driven Marketing — co to jest? Marketing oparty na danych"
         description="Data-driven marketing — definicja, 5 filarów (zbieranie, analiza, personalizacja, testowanie, optymalizacja), narzędzia i wyzwania. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/data-driven-marketing-co-to"
+
+        keywords="Data-Driven Marketing co to jest, Data-Driven Marketing definicja, czym jest Data-Driven Marketing, Data-Driven Marketing w marketingu, Data-Driven Marketing przykłady, jak działa Data-Driven Marketing, Data-Driven Marketing strategia"
       />
       <ArticleSchema
         title="Data-Driven Marketing — co to jest i jak wdrożyć marketing oparty na danych?"

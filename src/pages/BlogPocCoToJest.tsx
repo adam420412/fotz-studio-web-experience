@@ -91,6 +91,8 @@ export default function BlogPocCoToJest() {
         title="POC (Proof of Concept) — co to jest w sprzedaży B2B? | Fotz.pl"
         description="POC w sprzedaży B2B — czym różni się od pilota i triala, jak zarządzać POC, success criteria i timeline. Kompletny przewodnik dla handlowców enterprise."
         canonicalUrl="https://fotz.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
+
+        keywords="POC (Proof of Concept) co to jest, POC (Proof of Concept) definicja, czym jest POC (Proof of Concept), POC (Proof of Concept) w sprzedaży, POC (Proof of Concept) strategia, POC (Proof of Concept) przykłady, jak używać POC (Proof of Concept)"
       />
       <ArticleSchema
         title="POC (Proof of Concept) — co to jest w sprzedaży B2B?"

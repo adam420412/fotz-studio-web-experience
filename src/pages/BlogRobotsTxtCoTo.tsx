@@ -91,6 +91,8 @@ export default function BlogRobotsTxtCoTo() {
         title="Robots.txt — co to jest i jak poprawnie skonfigurować? | fotz.pl"
         description="Robots.txt co to jest — wyjaśniamy czym jest plik robots.txt, jak go skonfigurować, co blokować, różnica vs noindex i wpływ na SEO."
         canonical="https://fotz.pl/blog/robots-txt-co-to"
+
+        keywords="Robots.txt co to jest, Robots.txt definicja, czym jest Robots.txt, Robots.txt przykłady, jak działa Robots.txt, Robots.txt znaczenie, Robots.txt przewodnik"
       />
       <ArticleSchema
         title="Robots.txt — co to jest i jak poprawnie skonfigurować?"

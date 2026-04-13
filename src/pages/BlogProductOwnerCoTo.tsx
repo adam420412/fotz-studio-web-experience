@@ -65,6 +65,8 @@ export default function BlogProductOwnerCoTo() {
         title="Product Owner — co to jest? Rola PO w Scrum i Agile"
         description="Product Owner — definicja, 6 obszarów odpowiedzialności, różnica vs. Product Manager, 4 frameworki priorytetyzacji backlogu i certyfikaty CSPO/PSPO. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/product-owner-co-to"
+
+        keywords="Product Owner co to jest, Product Owner definicja, czym jest Product Owner, Product Owner przykłady, jak działa Product Owner, Product Owner znaczenie, Product Owner przewodnik"
       />
       <ArticleSchema
         title="Product Owner — co to jest i czym zajmuje się PO w Scrum?"

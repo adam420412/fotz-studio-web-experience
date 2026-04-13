@@ -99,6 +99,8 @@ export default function BlogRuleOf40CoTo() {
         title="Rule of 40 — co to jest i jak liczyć? | Fotz.pl"
         description="Rule of 40 — zasada oceny zdrowia finansowego SaaS: formuła, przykłady, benchmarki wg etapu i jak interpretować wynik. Kompletny przewodnik dla founderów i inwestorów."
         canonicalUrl="https://fotz.pl/blog/rule-of-40-co-to-jest"
+
+        keywords="Rule of 40 co to jest, Rule of 40 definicja, czym jest Rule of 40, Rule of 40 przykłady, jak działa Rule of 40, Rule of 40 znaczenie, Rule of 40 przewodnik"
       />
       <ArticleSchema
         title="Rule of 40 — co to jest i jak liczyć?"

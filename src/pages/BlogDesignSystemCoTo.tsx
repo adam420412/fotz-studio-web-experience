@@ -83,6 +83,8 @@ export default function BlogDesignSystemCoTo() {
         title="Design System — co to jest? Czym jest system projektowania UI"
         description="Design system — definicja, 4 warstwy (foundations, components, patterns, guidelines), narzędzia (Figma, Storybook) i korzyści. Jak zbudować design system od zera. Przewodnik."
         canonicalUrl="https://fotz.pl/blog/design-system-co-to"
+
+        keywords="Design System co to jest, Design System definicja, czym jest Design System, Design System przykłady, jak działa Design System, Design System znaczenie, Design System przewodnik"
       />
       <ArticleSchema
         title="Design System — co to jest i jak go zbudować?"

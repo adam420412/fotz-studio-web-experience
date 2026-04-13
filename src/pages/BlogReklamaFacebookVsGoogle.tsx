@@ -75,6 +75,8 @@ export default function BlogReklamaFacebookVsGoogle() {
         ogDescription="Kompleksowe porównanie Google Ads i Facebook Ads. Poznaj różnice, koszty, targeting i wybierz właściwą platformę dla Twojej firmy."
         ogImage="https://fotz.pl/images/og/facebook-vs-google.jpg"
         ogType="article"
+
+        keywords="Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026], Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] poradnik, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] strategia, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] jak zrobić, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] marketing, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] przykłady, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] w Polsce"
       />
       <ArticleSchema
         headline="Reklama Facebook vs Google Ads – Porównanie 2026"

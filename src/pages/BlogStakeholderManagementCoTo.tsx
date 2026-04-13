@@ -96,6 +96,8 @@ export default function BlogStakeholderManagementCoTo() {
         title="Stakeholder Management — co to jest? Zarządzanie interesariuszami"
         description="Stakeholder management — definicja, macierz Power/Interest, 6 kroków mapowania, plan komunikacji i strategie dla trudnych interesariuszy. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/stakeholder-management-co-to"
+
+        keywords="Stakeholder Management co to jest, Stakeholder Management definicja, czym jest Stakeholder Management, Stakeholder Management przykłady, jak działa Stakeholder Management, Stakeholder Management znaczenie, Stakeholder Management przewodnik"
       />
       <ArticleSchema
         title="Stakeholder Management — co to jest i jak zarządzać interesariuszami?"

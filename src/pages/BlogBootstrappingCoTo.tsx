@@ -70,6 +70,8 @@ export default function BlogBootstrappingCoTo() {
         title="Bootstrapping — co to jest? Samodzielne finansowanie startupu | fotz.pl"
         description="Bootstrapping co to jest — wyjaśniamy czym jest samodzielne finansowanie firmy, bootstrapping vs VC, cashflow management, jak konkurować bez inwestorów i przykłady sukcesu."
         canonical="https://fotz.pl/blog/bootstrapping-co-to"
+
+        keywords="Bootstrapping co to jest, Bootstrapping definicja, czym jest Bootstrapping, Bootstrapping startup, Bootstrapping jak liczyć, Bootstrapping wzór, Bootstrapping przykłady"
       />
       <ArticleSchema
         title="Bootstrapping — co to jest? Samodzielne finansowanie startupu"

@@ -63,6 +63,8 @@ export default function BlogXMLSitemapCoTo() {
         title="XML Sitemap — co to jest i jak stworzyć mapę strony? | fotz.pl"
         description="XML Sitemap co to jest — wyjaśniamy czym jest mapa strony XML, jak ją stworzyć, zgłosić w Google Search Console i jak sitemap wpływa na indeksowanie."
         canonical="https://fotz.pl/blog/xml-sitemap-co-to"
+
+        keywords="XML Sitemap co to jest, XML Sitemap definicja, czym jest XML Sitemap, XML Sitemap przykłady, jak działa XML Sitemap, XML Sitemap znaczenie, XML Sitemap przewodnik"
       />
       <ArticleSchema
         title="XML Sitemap — co to jest i jak stworzyć mapę strony?"

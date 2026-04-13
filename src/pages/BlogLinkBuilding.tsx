@@ -69,6 +69,8 @@ export default function BlogLinkBuilding() {
         title="Link building — co to jest i jak zdobywać backlinki? | fotz.pl"
         description="Link building co to jest — wyjaśniamy jak działają backlinki w SEO, najlepsze metody zdobywania linków, czego unikać i jak sprawdzić profil linkowy strony."
         canonical="https://fotz.pl/blog/link-building-co-to"
+
+        keywords="Link building co to jest, Link building definicja, czym jest Link building, Link building przykłady, jak działa Link building, Link building znaczenie, Link building przewodnik"
       />
       <ArticleSchema
         title="Link building — co to jest i jak zdobywać backlinki?"

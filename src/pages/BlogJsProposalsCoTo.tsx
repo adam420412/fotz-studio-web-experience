@@ -44,6 +44,8 @@ export default function BlogJsProposalsCoTo() {
         title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024 | Fotz.pl"
         description="ES2024 (Object.groupBy, Array.toSorted), TC39 Stage 3 (Decorators, Iterator Helpers, Temporal API), Pattern Matching, Records/Tuples i nowoczesne JS metody."
         canonicalUrl="https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
+
+        keywords="Nowe funkcje JavaScript co to jest, Nowe funkcje JavaScript jak działa, Nowe funkcje JavaScript tutorial, Nowe funkcje JavaScript przykład, czym jest Nowe funkcje JavaScript, Nowe funkcje JavaScript dokumentacja, Nowe funkcje JavaScript przewodnik"
       />
       <ArticleSchema
         title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024?"

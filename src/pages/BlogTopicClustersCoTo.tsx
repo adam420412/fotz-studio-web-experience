@@ -91,6 +91,8 @@ export default function BlogTopicClustersCoTo() {
         title="Topic Clusters — co to jest? Klastry tematyczne i pillar pages w SEO"
         description="Topic clusters i pillar pages — definicja, struktura klastra (pillar + cluster content + linki wewnętrzne), 6-krokowy proces budowania i wpływ na SEO."
         canonicalUrl="https://fotz.pl/blog/topic-clusters-co-to"
+
+        keywords="Topic Clusters co to jest, Topic Clusters definicja, czym jest Topic Clusters, Topic Clusters w marketingu, Topic Clusters przykłady, jak działa Topic Clusters, Topic Clusters strategia"
       />
       <ArticleSchema
         title="Topic Clusters — co to jest i jak budować klastry tematyczne?"

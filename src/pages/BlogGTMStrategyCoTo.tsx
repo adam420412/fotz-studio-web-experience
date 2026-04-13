@@ -69,6 +69,8 @@ export default function BlogGTMStrategyCoTo() {
         title="GTM Strategy — co to jest strategia Go-to-Market? | fotz.pl"
         description="GTM Strategy co to jest — wyjasnamy czym jest Go-to-Market Strategy, elementy GTM, jak napisac strategię GTM i czym rozni sie od business planu."
         canonical="https://fotz.pl/blog/gtm-strategy-co-to"
+
+        keywords="GTM Strategy co to jest, GTM Strategy definicja, czym jest GTM Strategy, GTM Strategy przykłady, jak działa GTM Strategy, GTM Strategy znaczenie, GTM Strategy przewodnik"
       />
       <ArticleSchema
         title="GTM Strategy — co to jest strategia Go-to-Market?"

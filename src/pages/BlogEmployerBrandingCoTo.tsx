@@ -72,6 +72,8 @@ export default function BlogEmployerBrandingCoTo() {
         title="Employer Branding — co to jest? Marka pracodawcy | fotz.pl"
         description="Employer branding co to jest — wyjaśniamy czym jest marka pracodawcy, EVP, jak budować stronę kariery, mierzyć efektywność i employer branding dla małych firm."
         canonical="https://fotz.pl/blog/employer-branding-co-to"
+
+        keywords="Employer Branding co to jest, Employer Branding definicja, czym jest Employer Branding, Employer Branding w marketingu, Employer Branding przykłady, jak działa Employer Branding, Employer Branding strategia"
       />
       <ArticleSchema
         title="Employer Branding — co to jest? Marka pracodawcy"

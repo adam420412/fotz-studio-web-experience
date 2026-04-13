@@ -52,6 +52,8 @@ export default function BlogShardingCoTo() {
         title="Database Sharding — co to jest, strategie, Vitess, Cassandra, CockroachDB? | Fotz.pl"
         description="Database Sharding: strategie (hash, range, consistent hashing), cross-shard queries, Vitess, CockroachDB, Citus, Cassandra — kiedy i jak skalować bazy poziomo."
         canonicalUrl="https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
+
+        keywords="Database Sharding co to jest, Database Sharding jak działa, Database Sharding tutorial, Database Sharding przykład, czym jest Database Sharding, Database Sharding dokumentacja, Database Sharding przewodnik"
       />
       <ArticleSchema
         title="Database Sharding — co to jest, strategie, Vitess, Cassandra, CockroachDB?"

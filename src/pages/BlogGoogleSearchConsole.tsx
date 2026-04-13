@@ -67,6 +67,8 @@ export default function BlogGoogleSearchConsole() {
         title="Google Search Console — co to jest i jak używać? Poradnik | fotz.pl"
         description="Google Search Console co to jest — wyjaśniamy jak działa GSC, jak dodać stronę, korzystać z raportów skuteczności i indeksowania oraz jak poprawić SEO."
         canonical="https://fotz.pl/blog/google-search-console-co-to"
+
+        keywords="Google Search Console co to jest, Google Search Console definicja, czym jest Google Search Console, Google Search Console przykłady, jak działa Google Search Console, Google Search Console znaczenie, Google Search Console przewodnik"
       />
       <ArticleSchema
         title="Google Search Console — co to jest i jak używać?"

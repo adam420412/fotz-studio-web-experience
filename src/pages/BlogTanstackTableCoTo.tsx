@@ -44,6 +44,8 @@ export default function BlogTanstackTableCoTo() {
         title="TanStack Table, AG Grid i React Data Tables — sortowanie, filtrowanie, wirtualizacja 2024 | Fotz.pl"
         description="TanStack Table (react-table v8), AG Grid, MUI DataGrid — sorting, filtering, pagination, row selection, column pinning, wirtualizacja i server-side data w Next.js."
         canonicalUrl="https://fotz.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024"
+
+        keywords="TanStack Table, AG Grid i React Data Tables co to jest, TanStack Table, AG Grid i React Data Tables jak działa, TanStack Table, AG Grid i React Data Tables tutorial, TanStack Table, AG Grid i React Data Tables przykład, czym jest TanStack Table, AG Grid i React Data Tables, TanStack Table, AG Grid i React Data Tables dokumentacja, TanStack Table, AG Grid i React Data Tables przewodnik"
       />
       <ArticleSchema
         title="TanStack Table, AG Grid i React Data Tables — sortowanie, filtrowanie, wirtualizacja 2024?"

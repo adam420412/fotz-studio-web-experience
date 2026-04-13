@@ -44,6 +44,8 @@ export default function BlogRealtimeCommsCoTo() {
         title="WebSocket vs SSE vs Long Polling — real-time komunikacja w aplikacjach webowych | Fotz.pl"
         description="WebSocket vs SSE vs Long Polling: porównanie protokołów real-time, Socket.io, MQTT dla IoT, WebSocket w Kubernetes, skalowanie i load balancing."
         canonicalUrl="https://fotz.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt"
+
+        keywords="WebSocket vs SSE vs Long Polling co to jest, WebSocket vs SSE vs Long Polling definicja, czym jest WebSocket vs SSE vs Long Polling, WebSocket vs SSE vs Long Polling przykłady, jak działa WebSocket vs SSE vs Long Polling, WebSocket vs SSE vs Long Polling znaczenie, WebSocket vs SSE vs Long Polling przewodnik"
       />
       <ArticleSchema
         title="WebSocket vs SSE vs Long Polling — real-time komunikacja w aplikacjach webowych"

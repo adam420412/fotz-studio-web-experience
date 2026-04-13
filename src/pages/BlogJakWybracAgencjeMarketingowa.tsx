@@ -107,6 +107,8 @@ export default function BlogJakWybracAgencjeMarketingowa() {
         title="Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 | Fotz.pl"
         description="Kompletny przewodnik jak wybrać agencję marketingową. 10 kryteriów wyboru, 5 błędów do uniknięcia, pytania na rozmowę i lista red flag."
         canonical="https://fotz.pl/blog/jak-wybrac-agencje-marketingowa"
+
+        keywords="Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025, Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 poradnik, Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 strategia, Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 jak zrobić, Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 marketing, Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 przykłady, Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 w Polsce"
       />
       
       <ArticleSchema

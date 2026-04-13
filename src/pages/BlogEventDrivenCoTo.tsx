@@ -52,6 +52,8 @@ export default function BlogEventDrivenCoTo() {
         title="Event-Driven Architecture — co to jest, Kafka, RabbitMQ, Event Sourcing i CQRS? | Fotz.pl"
         description="Event-Driven Architecture: Kafka vs RabbitMQ, Event Sourcing, CQRS, Saga pattern, pub/sub, message queues — jak projektować i wdrożyć EDA w mikroserwisach."
         canonicalUrl="https://fotz.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing"
+
+        keywords="Event-Driven Architecture co to jest, Event-Driven Architecture definicja, czym jest Event-Driven Architecture, Event-Driven Architecture przykłady, jak działa Event-Driven Architecture, Event-Driven Architecture znaczenie, Event-Driven Architecture przewodnik"
       />
       <ArticleSchema
         title="Event-Driven Architecture — co to jest, Kafka, RabbitMQ, Event Sourcing i CQRS?"

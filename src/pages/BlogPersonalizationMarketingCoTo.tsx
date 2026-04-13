@@ -80,6 +80,8 @@ export default function BlogPersonalizationMarketingCoTo() {
         title="Personalizacja w marketingu — co to jest i jak ją wdrożyć?"
         description="Personalizacja marketingu — definicja, 4 poziomy personalizacji, kanały i narzędzia. Dowiedz się jak personalizować komunikację i zwiększyć CTR i konwersję."
         canonicalUrl="https://fotz.pl/blog/personalizacja-marketingu-co-to"
+
+        keywords="Personalizacja w marketingu co to jest, Personalizacja w marketingu definicja, czym jest Personalizacja w marketingu, Personalizacja w marketingu w marketingu, Personalizacja w marketingu przykłady, jak działa Personalizacja w marketingu, Personalizacja w marketingu strategia"
       />
       <ArticleSchema
         title="Personalizacja w marketingu — co to jest i jak ją wdrożyć?"

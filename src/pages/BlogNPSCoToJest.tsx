@@ -75,6 +75,8 @@ export default function BlogNPSCoToJest() {
         title="NPS — co to jest? Net Promoter Score — wzór i interpretacja | fotz.pl"
         description="NPS co to jest — wyjaśniamy czym jest Net Promoter Score, wzór na obliczenie NPS, jak interpretować wyniki i jak poprawić wskaźnik lojalności klientów."
         canonical="https://fotz.pl/blog/nps-co-to-jest"
+
+        keywords="NPS co to jest, NPS definicja, czym jest NPS, NPS przykłady, jak działa NPS, NPS znaczenie, NPS przewodnik"
       />
       <ArticleSchema
         title="NPS — co to jest? Net Promoter Score — wzór i interpretacja"

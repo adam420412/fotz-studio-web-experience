@@ -44,6 +44,8 @@ export default function BlogCloudflareWorkersCoTo() {
         title="Cloudflare Workers — KV, D1, R2, Durable Objects i Workers AI na edge 2024 | Fotz.pl"
         description="Cloudflare Workers: KV (key-value), D1 (SQLite na edge), R2 (S3 bez egress fee), Durable Objects (stateful WebSockets), Workers AI (Llama, SDXL, Whisper) i Pages Functions."
         canonicalUrl="https://fotz.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
+
+        keywords="Cloudflare Workers co to jest, Cloudflare Workers definicja, czym jest Cloudflare Workers, Cloudflare Workers przykłady, jak działa Cloudflare Workers, Cloudflare Workers znaczenie, Cloudflare Workers przewodnik"
       />
       <ArticleSchema
         title="Cloudflare Workers — KV, D1, R2, Durable Objects i Workers AI na edge 2024?"

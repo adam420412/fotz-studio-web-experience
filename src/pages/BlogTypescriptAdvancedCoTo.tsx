@@ -44,6 +44,8 @@ export default function BlogTypescriptAdvancedCoTo() {
         title="TypeScript zaawansowany — generics, conditional types, decorators, TypeScript 5.x | Fotz.pl"
         description="TypeScript advanced: generics z constraints, conditional types, mapped types, template literal types, decorators Stage 3, type guards i TypeScript 5.x nowości."
         canonicalUrl="https://fotz.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
+
+        keywords="TypeScript zaawansowany co to jest, TypeScript zaawansowany jak działa, TypeScript zaawansowany tutorial, TypeScript zaawansowany przykład, czym jest TypeScript zaawansowany, TypeScript zaawansowany dokumentacja, TypeScript zaawansowany przewodnik"
       />
       <ArticleSchema
         title="TypeScript zaawansowany — generics, conditional types, decorators, TypeScript 5.x?"

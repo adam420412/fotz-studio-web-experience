@@ -69,6 +69,8 @@ export default function BlogFaktoringCoToJest() {
         title="Faktoring — co to jest? Jak dziala i ile kosztuje | fotz.pl"
         description="Faktoring co to jest — wyjasnamy czym jest faktoring, jak dziala, rodzaje faktoringu, koszty i jak porownac z kredytem obrotowym dla MŚP."
         canonical="https://fotz.pl/blog/faktoring-co-to-jest"
+
+        keywords="Faktoring co to jest, Faktoring definicja, czym jest Faktoring, Faktoring przykłady, jak działa Faktoring, Faktoring znaczenie, Faktoring przewodnik"
       />
       <ArticleSchema
         title="Faktoring — co to jest? Jak dziala i ile kosztuje"

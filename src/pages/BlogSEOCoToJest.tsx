@@ -67,6 +67,8 @@ export default function BlogSEOCoToJest() {
         title="SEO co to jest — jak działa pozycjonowanie stron? Poradnik | fotz.pl"
         description="SEO co to jest — wyjaśniamy czym jest Search Engine Optimization, jak działa pozycjonowanie, ile kosztuje i kiedy przynosi efekty. Poradnik dla początkujących 2025."
         canonical="https://fotz.pl/blog/seo-co-to-jest"
+
+        keywords="SEO co to jest, SEO definicja, czym jest SEO, SEO w marketingu, SEO przykłady, jak działa SEO, SEO strategia"
       />
       <ArticleSchema
         title="SEO co to jest — kompletny poradnik o pozycjonowaniu stron"

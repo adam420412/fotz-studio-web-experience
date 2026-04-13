@@ -68,6 +68,8 @@ export default function BlogNIPCoToJest() {
         title="NIP - co to jest? Numer Identyfikacji Podatkowej - poradnik | fotz.pl"
         description="NIP co to jest - wyjasniamy czym jest Numer Identyfikacji Podatkowej, jak go uzyskac, jak sprawdzic NIP firmy i czym rozni sie od REGON i PESEL."
         canonical="https://fotz.pl/blog/nip-co-to-jest"
+
+        keywords="NIP - co to jest, NIP - definicja, czym jest NIP -, NIP - przykłady, jak działa NIP -, NIP - znaczenie, NIP - przewodnik"
       />
       <ArticleSchema
         title="NIP - co to jest? Numer Identyfikacji Podatkowej"

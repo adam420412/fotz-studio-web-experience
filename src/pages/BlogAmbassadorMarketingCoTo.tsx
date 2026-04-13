@@ -70,6 +70,8 @@ export default function BlogAmbassadorMarketingCoTo() {
         title="Ambassador Marketing — co to jest? Program ambasadorów marki | fotz.pl"
         description="Ambassador marketing co to jest — wyjaśniamy czym są programy ambasadorskie, różnica vs influencer marketing, typy ambasadorów, KPI i jak zbudować program ambasadorski."
         canonical="https://fotz.pl/blog/ambassador-marketing-co-to"
+
+        keywords="Ambassador Marketing co to jest, Ambassador Marketing definicja, czym jest Ambassador Marketing, Ambassador Marketing w marketingu, Ambassador Marketing przykłady, jak działa Ambassador Marketing, Ambassador Marketing strategia"
       />
       <ArticleSchema
         title="Ambassador Marketing — co to jest? Program ambasadorów marki"

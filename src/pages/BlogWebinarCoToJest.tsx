@@ -69,6 +69,8 @@ export default function BlogWebinarCoToJest() {
         title="Webinar — co to jest? Jak zorganizowac i zarabiac | fotz.pl"
         description="Webinar co to jest — wyjasnamy czym jest webinar, jak zorganizowac krok po kroku, platformy, monetyzacja i ile kosztuje organizacja webinaru."
         canonical="https://fotz.pl/blog/webinar-co-to-jest"
+
+        keywords="Webinar co to jest, Webinar definicja, czym jest Webinar, Webinar przykłady, jak działa Webinar, Webinar znaczenie, Webinar przewodnik"
       />
       <ArticleSchema
         title="Webinar — co to jest? Jak zorganizowac i zarabiac"

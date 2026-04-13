@@ -92,6 +92,8 @@ export default function BlogPricingPsychologyCoTo() {
         title="Psychologia cen — co to jest? Techniki pricing psychology w marketingu"
         description="Psychologia cen — charm pricing, anchoring, efekt decoy i ramowanie cen. Kompletny przewodnik po technikach pricing psychology zwiększających konwersję."
         canonicalUrl="https://fotz.pl/blog/psychologia-cen-co-to"
+
+        keywords="Psychologia cen co to jest, Psychologia cen definicja, czym jest Psychologia cen, Psychologia cen w marketingu, Psychologia cen przykłady, jak działa Psychologia cen, Psychologia cen strategia"
       />
       <ArticleSchema
         title="Psychologia cen — co to jest i jak stosować?"

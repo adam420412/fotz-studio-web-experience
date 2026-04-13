@@ -44,6 +44,8 @@ export default function BlogReactConcurrentCoTo() {
         title="React Concurrent — Suspense, useTransition, useDeferredValue i React 19 hooks 2024 | Fotz.pl"
         description="React Concurrent features: Suspense+lazy(), useTransition (startTransition, isPending), useDeferredValue (stale UI), automatic batching, use() hook i useOptimistic React 19."
         canonicalUrl="https://fotz.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024"
+
+        keywords="React Concurrent co to jest, React Concurrent jak działa, React Concurrent tutorial, React Concurrent przykład, czym jest React Concurrent, React Concurrent dokumentacja, React Concurrent przewodnik"
       />
       <ArticleSchema
         title="React Concurrent — Suspense, useTransition, useDeferredValue i React 19 hooks 2024?"

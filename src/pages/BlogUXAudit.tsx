@@ -163,6 +163,8 @@ export default function BlogUXAudit() {
         title="Audyt UX strony internetowej - co to jest i jak przeprowadzić? 2025"
         description="Audyt UX strony — co to jest, jak samodzielnie przeprowadzić, jakie narzędzia használować i co zrobić z wynikami. Poradnik pełny dla wskaźników konwersji."
         canonical="https://fotz.pl/blog/audyt-ux-strony"
+
+        keywords="Audyt UX strony internetowej - co to jest, Audyt UX strony internetowej - definicja, czym jest Audyt UX strony internetowej -, Audyt UX strony internetowej - przykłady, jak działa Audyt UX strony internetowej -, Audyt UX strony internetowej - znaczenie, Audyt UX strony internetowej - przewodnik"
       />
       <ArticleSchema
         title="Audyt UX strony internetowej - jak przeprowadzić audyt doświadczenia użytkownika"

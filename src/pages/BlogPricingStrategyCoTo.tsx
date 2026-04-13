@@ -99,6 +99,8 @@ export default function BlogPricingStrategyCoTo() {
         title="Pricing Strategy — co to jest? Strategie cenowe w biznesie | fotz.pl"
         description="Pricing strategy co to jest — wyjaśniamy czym jest strategia cenowa, modele cenowe (value-based, freemium, usage-based, SaaS), jak ustalić cenę i WTP badania."
         canonical="https://fotz.pl/blog/pricing-strategy-co-to"
+
+        keywords="Pricing Strategy co to jest, Pricing Strategy definicja, czym jest Pricing Strategy, Pricing Strategy przykłady, jak działa Pricing Strategy, Pricing Strategy znaczenie, Pricing Strategy przewodnik"
       />
       <ArticleSchema
         title="Pricing Strategy — co to jest? Strategie cenowe w biznesie"

@@ -69,6 +69,8 @@ export default function BlogContentCalendarCoTo() {
         title="Content Calendar — co to jest i jak go stworzyć? | fotz.pl"
         description="Content Calendar co to jest — wyjaśniamy czym jest kalendarz treści, jak go stworzyć, najlepsze narzędzia i jak planować treści SEO i social media."
         canonical="https://fotz.pl/blog/content-calendar-co-to"
+
+        keywords="Content Calendar co to jest, Content Calendar definicja, czym jest Content Calendar, Content Calendar przykłady, jak działa Content Calendar, Content Calendar znaczenie, Content Calendar przewodnik"
       />
       <ArticleSchema
         title="Content Calendar — co to jest i jak go stworzyć?"

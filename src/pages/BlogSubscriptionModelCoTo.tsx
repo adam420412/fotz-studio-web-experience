@@ -93,6 +93,8 @@ export default function BlogSubscriptionModelCoTo() {
         title="Model Subskrypcyjny — co to jest? Subscription model MRR i churn"
         description="Model subskrypcyjny — definicja, 5 typów (SaaS, content, product box), składniki MRR, churn benchmarks i strategie retencji. Kompletny przewodnik po subscription business."
         canonicalUrl="https://fotz.pl/blog/subscription-model-co-to"
+
+        keywords="Model Subskrypcyjny co to jest, Model Subskrypcyjny definicja, czym jest Model Subskrypcyjny, Model Subskrypcyjny startup, Model Subskrypcyjny jak liczyć, Model Subskrypcyjny wzór, Model Subskrypcyjny przykłady"
       />
       <ArticleSchema
         title="Model Subskrypcyjny — co to jest i jak go zbudować?"

@@ -44,6 +44,8 @@ export default function BlogResiliencePatternsCoTo() {
         title="Wzorce odporności — Circuit Breaker, Retry, Bulkhead, Backpressure, Resilience4j | Fotz.pl"
         description="Resilience Patterns: Circuit Breaker, Retry z Exponential Backoff, Bulkhead thread pool isolation, Backpressure w Reactor/RxJava, Resilience4j i Polly."
         canonicalUrl="https://fotz.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
+
+        keywords="Wzorce odporności co to jest, Wzorce odporności definicja, czym jest Wzorce odporności, Wzorce odporności przykłady, jak działa Wzorce odporności, Wzorce odporności znaczenie, Wzorce odporności przewodnik"
       />
       <ArticleSchema
         title="Wzorce odporności — Circuit Breaker, Retry, Bulkhead, Backpressure, Resilience4j?"

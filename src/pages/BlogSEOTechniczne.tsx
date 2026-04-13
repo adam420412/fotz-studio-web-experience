@@ -180,6 +180,8 @@ export default function BlogSEOTechniczne() {
         title="Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt"
         description="Kompletny poradnik technicznego SEO. Co to jest, dlaczego jest ważne, checklist działań, narzędzia. Dowiedź się jak zoptymalizować technical SEO swojej strony."
         canonical="https://fotz.pl/blog/seo-techniczne-poradnik"
+
+        keywords="Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt poradnik, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt strategia, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt jak zrobić, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt marketing, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt przykłady, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt w Polsce"
       />
       <ArticleSchema
         title="Techniczne SEO - co to jest i jak wdrożyć? Poradnik 2025"

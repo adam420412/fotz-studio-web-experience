@@ -69,6 +69,8 @@ export default function BlogSaaSPricingCoTo() {
         title="SaaS Pricing — modele cenowe i jak wycenić produkt? | fotz.pl"
         description="SaaS Pricing co to jest — wyjaśniamy modele cenowe SaaS (per seat, usage-based, tiered), jak wycenić produkt, ACV i jak przeprowadzić A/B test cen."
         canonical="https://fotz.pl/blog/saas-pricing-modele-cenowe"
+
+        keywords="SaaS Pricing co to jest, SaaS Pricing definicja, czym jest SaaS Pricing, SaaS Pricing startup, SaaS Pricing jak liczyć, SaaS Pricing wzór, SaaS Pricing przykłady"
       />
       <ArticleSchema
         title="SaaS Pricing — modele cenowe i jak wycenić produkt?"

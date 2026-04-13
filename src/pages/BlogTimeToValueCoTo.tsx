@@ -51,6 +51,8 @@ export default function BlogTimeToValueCoTo() {
         title="Time to Value — co to jest i jak skrócić TtV w SaaS? | Fotz.pl"
         description="Time to Value (TtV): definicja, pomiar, związek z Aha Moment, strategie skrócenia, benchmarki (PLG vs. SLG) i jak TtV wpływa na retencję i churn SaaS."
         canonicalUrl="https://fotz.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv"
+
+        keywords="Time to Value co to jest, Time to Value definicja, czym jest Time to Value, Time to Value startup, Time to Value jak liczyć, Time to Value wzór, Time to Value przykłady"
       />
       <ArticleSchema
         title="Time to Value — co to jest i jak skrócić TtV w SaaS?"

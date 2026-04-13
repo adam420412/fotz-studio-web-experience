@@ -46,6 +46,8 @@ export default function BlogCiCdBestPracticesCoTo() {
         title="CI/CD Best Practices — GitHub Actions, GitLab CI, Canary Deploy, SLSA, Sigstore? | Fotz.pl"
         description="CI/CD: najlepsze praktyki, GitHub Actions vs GitLab CI, testy w pipeline, Blue/Green vs Canary, supply chain security (SLSA, Sigstore, SBOM) i DORA metrics."
         canonicalUrl="https://fotz.pl/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa"
+
+        keywords="CI/CD Best Practices co to jest, CI/CD Best Practices definicja, czym jest CI/CD Best Practices, CI/CD Best Practices przykłady, jak działa CI/CD Best Practices, CI/CD Best Practices znaczenie, CI/CD Best Practices przewodnik"
       />
       <ArticleSchema
         title="CI/CD Best Practices — GitHub Actions, GitLab CI, Canary Deploy, SLSA, Sigstore?"

@@ -83,6 +83,8 @@ export default function BlogTermSheetCoTo() {
         title="Term sheet — co to jest i jak negocjować? | Fotz.pl"
         description="Term sheet w VC i M&A — kluczowe elementy, liquidation preference, anti-dilution, board composition i red flags. Kompletny przewodnik dla founderów."
         canonicalUrl="https://fotz.pl/blog/term-sheet-co-to-jest-vc-inwestycje"
+
+        keywords="Term sheet co to jest, Term sheet definicja, czym jest Term sheet, Term sheet przykłady, jak działa Term sheet, Term sheet znaczenie, Term sheet przewodnik"
       />
       <ArticleSchema
         title="Term sheet — co to jest i jak negocjować?"

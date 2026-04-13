@@ -87,6 +87,8 @@ const BlogJakWybracAgencjeSEO = () => {
         description="Kompleksowy poradnik jak wybrać najlepszą agencję SEO dla Twojej firmy. Poznaj 10 kluczowych pytań, czerwone flagi i jak weryfikować portfolio."
         canonical="https://fotz.pl/blog/jak-wybrac-agencje-seo"
         ogImage="https://fotz.pl/og-jak-wybrac-agencje-seo.jpg"
+
+        keywords="Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 poradnik, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 strategia, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 jak zrobić, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 marketing, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 przykłady, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 w Polsce"
       />
       <ArticleSchema data={articleSchema} />
       <BreadcrumbSchema data={breadcrumbSchema} />

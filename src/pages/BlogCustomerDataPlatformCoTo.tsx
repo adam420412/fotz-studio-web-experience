@@ -93,6 +93,8 @@ export default function BlogCustomerDataPlatformCoTo() {
         title="Customer Data Platform (CDP) — co to jest? | fotz.pl"
         description="Customer Data Platform CDP co to jest — wyjaśniamy czym jest CDP, różnica vs CRM i DMP, kiedy potrzebna, popularne platformy i jak pomaga po deprecacji cookies."
         canonical="https://fotz.pl/blog/customer-data-platform-cdp-co-to"
+
+        keywords="Customer Data Platform (CDP) co to jest, Customer Data Platform (CDP) definicja, czym jest Customer Data Platform (CDP), Customer Data Platform (CDP) przykłady, jak działa Customer Data Platform (CDP), Customer Data Platform (CDP) znaczenie, Customer Data Platform (CDP) przewodnik"
       />
       <ArticleSchema
         title="Customer Data Platform (CDP) — co to jest?"

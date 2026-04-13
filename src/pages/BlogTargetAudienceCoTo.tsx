@@ -76,6 +76,8 @@ export default function BlogTargetAudienceCoTo() {
         title="Target Audience — co to jest? Grupa docelowa i segmentacja odbiorców"
         description="Target audience (grupa docelowa) — definicja, 4 typy segmentacji (demo, geo, psycho, behawioralna), metody badań i różnica vs. buyer persona. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/target-audience-co-to"
+
+        keywords="Target Audience co to jest, Target Audience definicja, czym jest Target Audience, Target Audience przykłady, jak działa Target Audience, Target Audience znaczenie, Target Audience przewodnik"
       />
       <ArticleSchema
         title="Target Audience — co to jest i jak definiować grupę docelową?"

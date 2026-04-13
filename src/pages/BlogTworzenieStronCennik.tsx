@@ -74,6 +74,8 @@ export default function BlogTworzenieStronCennik() {
         title="Tworzenie stron internetowych cennik 2025 — aktualny przegląd cen | fotz.pl"
         description="Tworzenie stron internetowych cennik 2025 — ile kosztuje strona firmowa, sklep, landing page. Ceny agencji i freelancerów. Sprawdź co wchodzi w cenę!"
         canonical="https://fotz.pl/blog/tworzenie-stron-internetowych-cennik"
+
+        keywords="Tworzenie stron internetowych cennik 2025, Tworzenie stron internetowych cennik 2025 co to jest, Tworzenie stron internetowych cennik 2025 jak działa, Tworzenie stron internetowych cennik 2025 definicja, Tworzenie stron internetowych cennik 2025 przykłady, Tworzenie stron internetowych cennik 2025 poradnik, Tworzenie stron internetowych cennik 2025 przewodnik"
       />
       <ArticleSchema
         title="Tworzenie stron internetowych cennik 2025 — przegląd cen"

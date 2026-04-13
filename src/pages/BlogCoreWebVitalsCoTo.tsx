@@ -44,6 +44,8 @@ export default function BlogCoreWebVitalsCoTo() {
         title="Core Web Vitals — LCP, INP, CLS, optymalizacja wydajności web 2024 | Fotz.pl"
         description="Core Web Vitals: LCP, INP (następca FID), CLS — jak optymalizować, narzędzia pomiaru, Lighthouse CI, performance budgeting i wpływ na SEO Google."
         canonicalUrl="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
+
+        keywords="Core Web Vitals co to jest, Core Web Vitals definicja, czym jest Core Web Vitals, Core Web Vitals przykłady, jak działa Core Web Vitals, Core Web Vitals znaczenie, Core Web Vitals przewodnik"
       />
       <ArticleSchema
         title="Core Web Vitals — LCP, INP, CLS, optymalizacja wydajności web 2024?"

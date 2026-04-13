@@ -98,6 +98,8 @@ export default function BlogSalesFunnelCoTo() {
         title="Sales Funnel — co to jest? Lejek sprzedażowy B2B i B2C | fotz.pl"
         description="Sales funnel co to jest — wyjaśniamy czym jest lejek sprzedażowy, etapy TOFU MOFU BOFU, metryki pipeline, optymalizacja konwersji i błędy zarządzania lejkiem."
         canonical="https://fotz.pl/blog/sales-funnel-co-to"
+
+        keywords="Sales Funnel co to jest, Sales Funnel definicja, czym jest Sales Funnel, Sales Funnel w sprzedaży, Sales Funnel strategia, Sales Funnel przykłady, jak używać Sales Funnel"
       />
       <ArticleSchema
         title="Sales Funnel — co to jest? Lejek sprzedażowy B2B i B2C"

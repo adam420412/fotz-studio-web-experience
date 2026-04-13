@@ -75,6 +75,8 @@ export default function BlogVisualIdentityCoTo() {
         title="Identyfikacja wizualna — co to jest? Visual identity i brand guidelines"
         description="Identyfikacja wizualna — definicja, 4 kluczowe elementy (logo, kolory, typografia, fotografia), brand book i kiedy robić rebrand. Kompletny przewodnik po visual identity."
         canonicalUrl="https://fotz.pl/blog/identyfikacja-wizualna-co-to"
+
+        keywords="Identyfikacja wizualna co to jest, Identyfikacja wizualna definicja, czym jest Identyfikacja wizualna, Identyfikacja wizualna w marketingu, Identyfikacja wizualna przykłady, jak działa Identyfikacja wizualna, Identyfikacja wizualna strategia"
       />
       <ArticleSchema
         title="Identyfikacja wizualna — co to jest i jak ją budować?"

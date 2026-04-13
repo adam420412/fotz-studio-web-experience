@@ -55,6 +55,8 @@ export default function BlogContentMarketingCoTo() {
         title="Content marketing — co to jest i jak działa? | Blog fotz.pl"
         description="Content marketing co to — definicja, rodzaje, jak zacząć i ile kosztuje. Dlaczego content marketing to najlepsza strategia długoterminowa. Przykłady i wskazówki."
         canonical="https://fotz.pl/blog/content-marketing-co-to"
+
+        keywords="Content marketing co to jest, Content marketing definicja, czym jest Content marketing, Content marketing w marketingu, Content marketing przykłady, jak działa Content marketing, Content marketing strategia"
       />
       <ArticleSchema
         title="Content marketing — co to jest i dlaczego działa?"

@@ -41,6 +41,8 @@ export default function BlogSztukaPromocjiInstagram() {
         description="Kompletny poradnik reklamowania na Instagramie. Dowiedz się o rodzajach reklam, targetowaniu, budżetowaniu i mierzeniu wyników. Instagram Ads dla biznesu - najlepsze praktyki."
         canonical="https://fotz.pl/blog/reklama-na-instagramie"
         ogImage="https://fotz.pl/og-instagram-ads.jpg"
+
+        keywords="Reklama na Instagramie - Instagram Ads 2025, Reklama na Instagramie - Instagram Ads 2025 poradnik, Reklama na Instagramie - Instagram Ads 2025 strategia, Reklama na Instagramie - Instagram Ads 2025 jak zrobić, Reklama na Instagramie - Instagram Ads 2025 marketing, Reklama na Instagramie - Instagram Ads 2025 przykłady, Reklama na Instagramie - Instagram Ads 2025 w Polsce"
       />
       
       <BreadcrumbSchema breadcrumbs={breadcrumbs} />

@@ -44,6 +44,8 @@ export default function BlogLlmToolCallingCoTo() {
         title="LLM Tool Calling, AI Agenci i RAG — Vercel AI SDK, OpenAI Functions TypeScript 2024 | Fotz.pl"
         description="Tool Calling (Function Calling) — OpenAI, Anthropic, Vercel AI SDK (tool, generateObject, streamUI), AI agenci (agentic loop, ReAct), Structured Output (Zod) i RAG z pgvector."
         canonicalUrl="https://fotz.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024"
+
+        keywords="LLM Tool Calling, AI Agenci i RAG co to jest, LLM Tool Calling, AI Agenci i RAG jak działa, LLM Tool Calling, AI Agenci i RAG tutorial, LLM Tool Calling, AI Agenci i RAG przykład, czym jest LLM Tool Calling, AI Agenci i RAG, LLM Tool Calling, AI Agenci i RAG dokumentacja, LLM Tool Calling, AI Agenci i RAG przewodnik"
       />
       <ArticleSchema
         title="LLM Tool Calling, AI Agenci i RAG — Vercel AI SDK, OpenAI Functions TypeScript 2024?"

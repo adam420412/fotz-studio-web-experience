@@ -93,6 +93,8 @@ export default function BlogMarketResearchCoTo() {
         title="Market Research — co to jest? Badanie rynku w biznesie | fotz.pl"
         description="Market research co to jest — wyjaśniamy czym jest badanie rynku, metody (IDI, ankiety, desk research), ile kosztuje, narzędzia i zastosowania w strategii marketingowej."
         canonical="https://fotz.pl/blog/market-research-co-to"
+
+        keywords="Market Research co to jest, Market Research definicja, czym jest Market Research, Market Research przykłady, jak działa Market Research, Market Research znaczenie, Market Research przewodnik"
       />
       <ArticleSchema
         title="Market Research — co to jest? Badanie rynku w biznesie"

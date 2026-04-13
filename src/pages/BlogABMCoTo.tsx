@@ -66,6 +66,8 @@ export default function BlogABMCoTo() {
         title="ABM — co to jest Account-Based Marketing? | fotz.pl"
         description="ABM co to jest — wyjasnamy czym jest Account-Based Marketing, jak wdrozyc ABM, roznica vs tradycyjny marketing B2B, narzedzia i metryki ABM."
         canonical="https://fotz.pl/blog/abm-co-to-jest"
+
+        keywords="ABM co to jest, ABM definicja, czym jest ABM, ABM w marketingu, ABM przykłady, jak działa ABM, ABM strategia"
       />
       <ArticleSchema
         title="ABM — co to jest Account-Based Marketing?"

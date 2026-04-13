@@ -87,6 +87,8 @@ export default function BlogEsgCoToJest() {
         title="ESG — co to jest i jak wpływa na biznes? | Fotz.pl"
         description="ESG (Environmental, Social, Governance) — trzy filary, raportowanie, ratingi ESG i znaczenie dla firm. Kompletny przewodnik po strategii zrównoważonego rozwoju."
         canonicalUrl="https://fotz.pl/blog/esg-co-to-jest-environmental-social-governance"
+
+        keywords="ESG co to jest, ESG definicja, czym jest ESG, ESG przykłady, jak działa ESG, ESG znaczenie, ESG przewodnik"
       />
       <ArticleSchema
         title="ESG — co to jest i jak wpływa na biznes?"

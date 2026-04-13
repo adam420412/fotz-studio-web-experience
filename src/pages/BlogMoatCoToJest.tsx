@@ -86,6 +86,8 @@ export default function BlogMoatCoToJest() {
         title="Moat (przewaga konkurencyjna) — co to jest w biznesie? | Fotz.pl"
         description="Economic moat — rodzaje przewagi konkurencyjnej (network effects, switching costs, cost advantage), jak zidentyfikować moat i wpływ na wycenę firmy."
         canonicalUrl="https://fotz.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
+
+        keywords="Moat (przewaga konkurencyjna) co to jest, Moat (przewaga konkurencyjna) definicja, czym jest Moat (przewaga konkurencyjna), Moat (przewaga konkurencyjna) przykłady, jak działa Moat (przewaga konkurencyjna), Moat (przewaga konkurencyjna) znaczenie, Moat (przewaga konkurencyjna) przewodnik"
       />
       <ArticleSchema
         title="Moat (przewaga konkurencyjna) — co to jest w biznesie?"

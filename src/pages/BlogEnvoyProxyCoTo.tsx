@@ -44,6 +44,8 @@ export default function BlogEnvoyProxyCoTo() {
         title="Envoy Proxy — co to jest, xDS API, service mesh, rate limiting, circuit breaking | Fotz.pl"
         description="Envoy Proxy: xDS API, sidecar w service mesh (Istio/Consul), load balancing, circuit breaking, outlier detection, rate limiting, WASM filters i ext-proc."
         canonicalUrl="https://fotz.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
+
+        keywords="Envoy Proxy co to jest, Envoy Proxy jak działa, Envoy Proxy tutorial, Envoy Proxy przykład, czym jest Envoy Proxy, Envoy Proxy dokumentacja, Envoy Proxy przewodnik"
       />
       <ArticleSchema
         title="Envoy Proxy — co to jest, xDS API, service mesh, rate limiting, circuit breaking?"

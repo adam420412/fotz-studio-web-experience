@@ -68,6 +68,8 @@ export default function BlogVentureCapital() {
         title="Venture Capital — co to jest i jak działa? VC dla startupów | fotz.pl"
         description="Venture Capital co to jest — wyjaśniamy czym jest VC, jak działa fundusz venture capital, rundy inwestycyjne i jak pozyskać inwestora VC w Polsce."
         canonical="https://fotz.pl/blog/venture-capital-co-to"
+
+        keywords="Venture Capital co to jest, Venture Capital jak działa, Venture Capital tutorial, Venture Capital przykład, czym jest Venture Capital, Venture Capital dokumentacja, Venture Capital przewodnik"
       />
       <ArticleSchema
         title="Venture Capital — co to jest i jak działa?"

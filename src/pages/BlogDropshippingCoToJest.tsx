@@ -76,6 +76,8 @@ export default function BlogDropshippingCoToJest() {
         title="Dropshipping — co to jest i jak zacząć? Poradnik 2025 | fotz.pl"
         description="Dropshipping co to jest — wyjaśniamy jak działa dropshipping, ile można zarobić, jak zacząć w Polsce i czy to się opłaca. Porównanie Shopify vs WooCommerce."
         canonical="https://fotz.pl/blog/dropshipping-co-to-jest"
+
+        keywords="Dropshipping co to jest, Dropshipping definicja, czym jest Dropshipping, Dropshipping przykłady, jak działa Dropshipping, Dropshipping znaczenie, Dropshipping przewodnik"
       />
       <ArticleSchema
         title="Dropshipping — co to jest i jak zacząć?"

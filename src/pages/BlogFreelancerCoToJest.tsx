@@ -70,6 +70,8 @@ export default function BlogFreelancerCoToJest() {
         title="Freelancer - co to jest i jak zaczac? Poradnik 2025 | fotz.pl"
         description="Freelancer co to jest - wyjasniamy czym jest freelancer, jak zostac freelancerem, ile mozna zarobic, platformy do zlecen i czy zakladac dzialalnosc."
         canonical="https://fotz.pl/blog/freelancer-co-to-jest"
+
+        keywords="Freelancer - co to jest, Freelancer - definicja, czym jest Freelancer -, Freelancer - przykłady, jak działa Freelancer -, Freelancer - znaczenie, Freelancer - przewodnik"
       />
       <ArticleSchema
         title="Freelancer - co to jest i jak zaczac?"

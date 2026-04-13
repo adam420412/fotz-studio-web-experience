@@ -68,6 +68,8 @@ export default function BlogCPMCoTo() {
         title="CPM — co to jest? Koszt tysiąca wyświetleń reklam | fotz.pl"
         description="CPM co to jest — wyjaśniamy czym jest Cost Per Mille, jak obliczyć CPM, ile wynosi w Polsce i kiedy używać CPM vs CPC w kampaniach reklamowych."
         canonical="https://fotz.pl/blog/cpm-co-to"
+
+        keywords="CPM co to jest, CPM definicja, czym jest CPM, CPM w marketingu, CPM przykłady, jak działa CPM, CPM strategia"
       />
       <ArticleSchema
         title="CPM — co to jest? Koszt tysiąca wyświetleń reklam"

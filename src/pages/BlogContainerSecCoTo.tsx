@@ -51,6 +51,8 @@ export default function BlogContainerSecCoTo() {
         title="Container Security — bezpieczeństwo kontenerów, Trivy, Falco, Kubernetes RBAC? | Fotz.pl"
         description="Container Security: bezpieczne Docker images, skanowanie CVE (Trivy, Grype, Snyk), Kubernetes RBAC, Network Policies, Falco runtime security i compliance."
         canonicalUrl="https://fotz.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
+
+        keywords="Container Security co to jest, Container Security jak działa, Container Security tutorial, Container Security przykład, czym jest Container Security, Container Security dokumentacja, Container Security przewodnik"
       />
       <ArticleSchema
         title="Container Security — bezpieczeństwo kontenerów, Trivy, Falco, Kubernetes RBAC?"

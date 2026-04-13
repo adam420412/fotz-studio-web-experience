@@ -87,6 +87,8 @@ export default function BlogCommunicationStrategyCoTo() {
         title="Strategia komunikacji — co to jest? Jak budować komunikację marki?"
         description="Strategia komunikacji — definicja, 6-elementowy framework, hierarchia komunikatów (brand promise, key messages, proof points), ton marki i kanały. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/strategia-komunikacji-co-to"
+
+        keywords="Strategia komunikacji co to jest, Strategia komunikacji definicja, czym jest Strategia komunikacji, Strategia komunikacji przykłady, jak działa Strategia komunikacji, Strategia komunikacji znaczenie, Strategia komunikacji przewodnik"
       />
       <ArticleSchema
         title="Strategia komunikacji — co to jest i jak ją budować?"

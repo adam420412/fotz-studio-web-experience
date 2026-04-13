@@ -44,6 +44,8 @@ export default function BlogNextMiddlewareCoTo() {
         title="Next.js Middleware — auth, i18n, rate limiting, A/B testing i Edge security 2024 | Fotz.pl"
         description="Next.js Middleware (edge runtime), auth (Clerk/Auth.js v5), i18n (next-intl), rate limiting (Upstash), A/B testing, geolocation i security headers na edge."
         canonicalUrl="https://fotz.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024"
+
+        keywords="Next.js Middleware co to jest, Next.js Middleware jak działa, Next.js Middleware tutorial, Next.js Middleware przykład, czym jest Next.js Middleware, Next.js Middleware dokumentacja, Next.js Middleware przewodnik"
       />
       <ArticleSchema
         title="Next.js Middleware — auth, i18n, rate limiting, A/B testing i Edge security 2024?"

@@ -76,6 +76,8 @@ export default function BlogDockerCoTo() {
         title="Docker — co to jest? Kontenery, Dockerfile i Docker Compose"
         description="Docker — definicja, kontener vs VM, 7 kluczowych pojęć (Image, Container, Registry, Volume), przykład Dockerfile i best practices. Kompletny przewodnik po Dockerze."
         canonicalUrl="https://fotz.pl/blog/docker-co-to-jest"
+
+        keywords="Docker co to jest, Docker jak działa, Docker tutorial, Docker przykład, czym jest Docker, Docker dokumentacja, Docker przewodnik"
       />
       <ArticleSchema
         title="Docker — co to jest i jak działa konteneryzacja?"

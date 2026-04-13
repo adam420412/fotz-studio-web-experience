@@ -44,6 +44,8 @@ export default function BlogNativeWindTamaguiCoTo() {
         title="NativeWind, Tamagui, gluestack-ui i Unistyles — React Native styling 2024 | Fotz.pl"
         description="React Native styling 2024: NativeWind v4 (Tailwind w RN), Tamagui (cross-platform kompilator), gluestack-ui v2 (headless), Unistyles (JSI), Expo Router universal app i best practices."
         canonicalUrl="https://fotz.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024"
+
+        keywords="NativeWind, Tamagui, gluestack-ui i Unistyles co to jest, NativeWind, Tamagui, gluestack-ui i Unistyles jak działa, NativeWind, Tamagui, gluestack-ui i Unistyles tutorial, NativeWind, Tamagui, gluestack-ui i Unistyles przykład, czym jest NativeWind, Tamagui, gluestack-ui i Unistyles, NativeWind, Tamagui, gluestack-ui i Unistyles dokumentacja, NativeWind, Tamagui, gluestack-ui i Unistyles przewodnik"
       />
       <ArticleSchema
         title="NativeWind, Tamagui, gluestack-ui i Unistyles — React Native styling 2024?"

@@ -63,6 +63,8 @@ export default function BlogMetaTagiCoTo() {
         title="Meta tagi — co to jest i jak wpływają na SEO? | fotz.pl"
         description="Meta tagi co to jest — wyjaśniamy czym są meta title, meta description, canonical, Open Graph. Jak pisać meta tagi które poprawiają SEO i CTR."
         canonical="https://fotz.pl/blog/meta-tagi-co-to"
+
+        keywords="Meta tagi co to jest, Meta tagi definicja, czym jest Meta tagi, Meta tagi w marketingu, Meta tagi przykłady, jak działa Meta tagi, Meta tagi strategia"
       />
       <ArticleSchema
         title="Meta tagi — co to jest i jak wpływają na SEO?"

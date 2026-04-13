@@ -75,6 +75,8 @@ export default function BlogRagPatternCoTo() {
         title="RAG — co to jest Retrieval Augmented Generation? | Fotz.pl"
         description="RAG (Retrieval Augmented Generation): jak działa, pipeline, chunking, embedding, retrieval, re-ranking, RAG vs fine-tuning i narzędzia (LangChain, LlamaIndex)."
         canonicalUrl="https://fotz.pl/blog/rag-retrieval-augmented-generation-co-to-jest"
+
+        keywords="RAG co to jest, RAG definicja, czym jest RAG, RAG przykłady, jak działa RAG, RAG znaczenie, RAG przewodnik"
       />
       <ArticleSchema
         title="RAG — co to jest Retrieval Augmented Generation?"

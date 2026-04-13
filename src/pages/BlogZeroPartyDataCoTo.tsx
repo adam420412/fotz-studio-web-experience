@@ -108,6 +108,8 @@ export default function BlogZeroPartyDataCoTo() {
         title="Zero-Party Data — co to jest? Dane pierwszej ręki w erze bez cookies"
         description="Zero-party data — definicja, różnice vs. first/third-party data, 5 taktyk zbierania (quiz, preference center, ankiety) i jak używać do personalizacji po śmierci cookies."
         canonicalUrl="https://fotz.pl/blog/zero-party-data-co-to"
+
+        keywords="Zero-Party Data co to jest, Zero-Party Data definicja, czym jest Zero-Party Data, Zero-Party Data przykłady, jak działa Zero-Party Data, Zero-Party Data znaczenie, Zero-Party Data przewodnik"
       />
       <ArticleSchema
         title="Zero-Party Data — co to jest i jak zbierać?"

@@ -51,6 +51,8 @@ export default function BlogSprintPlanningCoTo() {
         title="Sprint Planning — co to jest i jak przeprowadzić? | Fotz.pl"
         description="Sprint planning: przebieg ceremonii Scrum, estymacja (story points, planning poker), velocity, Sprint Goal i najczęstsze błędy w planowaniu sprintów."
         canonicalUrl="https://fotz.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic"
+
+        keywords="Sprint Planning co to jest, Sprint Planning definicja, czym jest Sprint Planning, Sprint Planning przykłady, jak działa Sprint Planning, Sprint Planning znaczenie, Sprint Planning przewodnik"
       />
       <ArticleSchema
         title="Sprint Planning — co to jest i jak przeprowadzić?"

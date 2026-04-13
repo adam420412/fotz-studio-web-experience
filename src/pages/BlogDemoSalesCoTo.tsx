@@ -106,6 +106,8 @@ export default function BlogDemoSalesCoTo() {
         title="Demo sprzedażowe — jak prowadzić i przygotować? | Fotz.pl"
         description="Demo sprzedażowe B2B — jak przygotować i prowadzić skuteczną demo, typy demo, flow prezentacji i sygnały zakupu. Kompletny przewodnik dla handlowców."
         canonicalUrl="https://fotz.pl/blog/demo-sprzedazowe-jak-prowadzic"
+
+        keywords="Demo sprzedażowe co to jest, Demo sprzedażowe definicja, czym jest Demo sprzedażowe, Demo sprzedażowe w sprzedaży, Demo sprzedażowe strategia, Demo sprzedażowe przykłady, jak używać Demo sprzedażowe"
       />
       <ArticleSchema
         title="Demo sprzedażowe — jak prowadzić i przygotować?"

@@ -44,6 +44,8 @@ export default function BlogStripeCoTo() {
         title="Stripe, Paddle, Przelewy24 — integracja płatności Next.js TypeScript 2024 | Fotz.pl"
         description="Stripe Checkout, Payment Intents, Subscriptions, Webhooks, Connect, Paddle (MoR), Lemon Squeezy, Przelewy24 — płatności webowe w Next.js i Node.js 2024."
         canonicalUrl="https://fotz.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
+
+        keywords="Stripe, Paddle, Przelewy24 co to jest, Stripe, Paddle, Przelewy24 jak działa, Stripe, Paddle, Przelewy24 tutorial, Stripe, Paddle, Przelewy24 przykład, czym jest Stripe, Paddle, Przelewy24, Stripe, Paddle, Przelewy24 dokumentacja, Stripe, Paddle, Przelewy24 przewodnik"
       />
       <ArticleSchema
         title="Stripe, Paddle, Przelewy24 — integracja płatności Next.js TypeScript 2024?"

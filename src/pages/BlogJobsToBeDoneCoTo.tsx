@@ -68,6 +68,8 @@ export default function BlogJobsToBeDoneCoTo() {
         title="Jobs To Be Done (JTBD) — co to jest i jak stosować? | Fotz.pl"
         description="Jobs To Be Done (JTBD) — teoria innowacji Christensena, typy jobów, Switch Interview i zastosowanie w product development. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
+
+        keywords="Jobs To Be Done (JTBD) co to jest, Jobs To Be Done (JTBD) definicja, czym jest Jobs To Be Done (JTBD), Jobs To Be Done (JTBD) przykłady, jak działa Jobs To Be Done (JTBD), Jobs To Be Done (JTBD) znaczenie, Jobs To Be Done (JTBD) przewodnik"
       />
       <ArticleSchema
         title="Jobs To Be Done (JTBD) — co to jest i jak stosować?"

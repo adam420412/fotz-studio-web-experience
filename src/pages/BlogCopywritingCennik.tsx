@@ -67,6 +67,8 @@ export default function BlogCopywritingCennik() {
         title="Copywriting cennik 2025 — ile kosztują teksty? | fotz.pl"
         description="Copywriting cennik — aktualne stawki za artykuły, landing pages, opisy produktów, emaile. Ile zarabia copywriter i kiedy opłaca się zlecić teksty. Sprawdź!"
         canonical="https://fotz.pl/blog/copywriting-cennik"
+
+        keywords="Copywriting cennik 2025, Copywriting cennik 2025 co to jest, Copywriting cennik 2025 jak działa, Copywriting cennik 2025 definicja, Copywriting cennik 2025 przykłady, Copywriting cennik 2025 poradnik, Copywriting cennik 2025 przewodnik"
       />
       <ArticleSchema
         title="Copywriting cennik 2025 — ile kosztują teksty marketingowe?"

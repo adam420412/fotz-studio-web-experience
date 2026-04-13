@@ -75,6 +75,8 @@ export default function BlogJTBDCoTo() {
         title="Jobs to be Done — co to jest? Framework JTBD | fotz.pl"
         description="Jobs to be Done co to jest — wyjaśniamy framework JTBD, jak przeprowadzać wywiady, różnicę JTBD vs persona i jak stosować w marketingu i product management."
         canonical="https://fotz.pl/blog/jobs-to-be-done-jtbd"
+
+        keywords="Jobs to be Done co to jest, Jobs to be Done definicja, czym jest Jobs to be Done, Jobs to be Done przykłady, jak działa Jobs to be Done, Jobs to be Done znaczenie, Jobs to be Done przewodnik"
       />
       <ArticleSchema
         title="Jobs to be Done — co to jest? Framework JTBD"

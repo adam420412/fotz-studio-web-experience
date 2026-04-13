@@ -81,6 +81,8 @@ export default function BlogMultichannelMarketingCoTo() {
         title="Multichannel Marketing — co to jest? Marketing wielokanałowy vs. omnichannel"
         description="Multichannel marketing — definicja, różnice vs. omnichannel, 6 kanałów (sklep, www, email, social, ads, marketplace), 5-krokowy proces. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/multichannel-marketing-co-to"
+
+        keywords="Multichannel Marketing co to jest, Multichannel Marketing definicja, czym jest Multichannel Marketing, Multichannel Marketing w marketingu, Multichannel Marketing przykłady, jak działa Multichannel Marketing, Multichannel Marketing strategia"
       />
       <ArticleSchema
         title="Multichannel Marketing — co to jest i jak wdrożyć?"

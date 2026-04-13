@@ -175,6 +175,8 @@ export default function BlogSEOEcommercePoradnik() {
         title="SEO dla e-commerce — kompletny poradnik pozycjonowania sklepu | fotz.pl"
         description="Jak robić SEO dla sklepu internetowego? Optymalizacja produktów, kategorii, technical SEO dla WooCommerce i Shopify. Poradnik 2025 z checklist dla e-commerce."
         canonical="https://fotz.pl/blog/seo-ecommerce-poradnik"
+
+        keywords="SEO dla e-commerce, SEO dla e-commerce poradnik, SEO dla e-commerce strategia, SEO dla e-commerce jak zrobić, SEO dla e-commerce marketing, SEO dla e-commerce przykłady, SEO dla e-commerce w Polsce"
       />
       <ArticleSchema
         title="SEO dla e-commerce — kompletny poradnik pozycjonowania sklepu internetowego"

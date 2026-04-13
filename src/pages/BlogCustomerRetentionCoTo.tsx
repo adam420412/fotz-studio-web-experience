@@ -106,6 +106,8 @@ export default function BlogCustomerRetentionCoTo() {
         title="Customer Retention — co to jest? Retencja klientów — metryki i strategie"
         description="Customer retention — definicja, jak obliczać CRR, NRR i LTV, 6 strategii utrzymania klientów. Kompletny przewodnik po retencji klientów i redukcji churnu."
         canonicalUrl="https://fotz.pl/blog/customer-retention-co-to"
+
+        keywords="Customer Retention co to jest, Customer Retention definicja, czym jest Customer Retention, Customer Retention przykłady, jak działa Customer Retention, Customer Retention znaczenie, Customer Retention przewodnik"
       />
       <ArticleSchema
         title="Customer Retention — co to jest i jak ją mierzyć?"

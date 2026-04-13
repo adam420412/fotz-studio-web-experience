@@ -68,6 +68,8 @@ export default function BlogLejekSprzedazowy() {
         title="Lejek sprzedazowy — co to jest i jak go zbudowac? | fotz.pl"
         description="Lejek sprzedazowy co to jest — wyjasnamy etapy lejka (AIDA, TOFU/MOFU/BOFU), jak zbudowac lejek sprzedazowy B2B i B2C oraz jak mierzyc jego efektywnosc."
         canonical="https://fotz.pl/blog/lejek-sprzedazowy-co-to"
+
+        keywords="Lejek sprzedazowy co to jest, Lejek sprzedazowy definicja, czym jest Lejek sprzedazowy, Lejek sprzedazowy w sprzedaży, Lejek sprzedazowy strategia, Lejek sprzedazowy przykłady, jak używać Lejek sprzedazowy"
       />
       <ArticleSchema
         title="Lejek sprzedazowy — co to jest i jak go zbudowac?"

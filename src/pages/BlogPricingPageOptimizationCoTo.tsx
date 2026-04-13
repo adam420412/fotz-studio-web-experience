@@ -86,6 +86,8 @@ export default function BlogPricingPageOptimizationCoTo() {
         title="Optymalizacja Strony Cennikowej — co powinna zawierać pricing page"
         description="Strona cennikowa — co powinna zawierać, ile planów, anchoring, psychologia cen i optymalizacja konwersji. Jak zbudować skuteczną pricing page dla SaaS i e-commerce."
         canonicalUrl="https://fotz.pl/blog/optymalizacja-strony-cennikowej"
+
+        keywords="Optymalizacja Strony Cennikowej co to jest, Optymalizacja Strony Cennikowej definicja, czym jest Optymalizacja Strony Cennikowej, Optymalizacja Strony Cennikowej przykłady, jak działa Optymalizacja Strony Cennikowej, Optymalizacja Strony Cennikowej znaczenie, Optymalizacja Strony Cennikowej przewodnik"
       />
       <ArticleSchema
         title="Optymalizacja Strony Cennikowej — jak zbudować pricing page która konwertuje?"

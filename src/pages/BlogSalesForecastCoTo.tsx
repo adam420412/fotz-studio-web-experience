@@ -105,6 +105,8 @@ export default function BlogSalesForecastCoTo() {
         title="Sales Forecast — co to jest i jak prognozować sprzedaż? | Fotz.pl"
         description="Sales forecast (prognoza sprzedaży) — metody forecastingu, commit vs upside, narzędzia AI i ryzyka. Kompletny przewodnik dla Sales Managerów i VP Sales."
         canonicalUrl="https://fotz.pl/blog/sales-forecast-prognoza-sprzedazy"
+
+        keywords="Sales Forecast co to jest, Sales Forecast definicja, czym jest Sales Forecast, Sales Forecast w sprzedaży, Sales Forecast strategia, Sales Forecast przykłady, jak używać Sales Forecast"
       />
       <ArticleSchema
         title="Sales Forecast — co to jest i jak prognozować sprzedaż?"

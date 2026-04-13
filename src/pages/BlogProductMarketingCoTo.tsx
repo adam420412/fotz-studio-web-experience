@@ -68,6 +68,8 @@ export default function BlogProductMarketingCoTo() {
         title="Product Marketing — co to jest? Marketing produktu B2B SaaS | fotz.pl"
         description="Product marketing co to jest — wyjaśniamy czym jest marketing produktu, rola PMM vs PM, jak launchować produkt, positioning, messaging i metryki product marketingu."
         canonical="https://fotz.pl/blog/product-marketing-co-to"
+
+        keywords="Product Marketing co to jest, Product Marketing definicja, czym jest Product Marketing, Product Marketing w marketingu, Product Marketing przykłady, jak działa Product Marketing, Product Marketing strategia"
       />
       <ArticleSchema
         title="Product Marketing — co to jest? Marketing produktu B2B SaaS"

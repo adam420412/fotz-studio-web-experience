@@ -23,6 +23,8 @@ export default function BlogJakSprzedawacWInternecie() {
         title="Jak sprzedawać w internecie 2025 — kompleksowy poradnik dla firm"
         description="Jak sprzedawać w internecie? Poradnik krok po kroku: własny sklep, marketplace, dropshipping, media społecznościowe. Zacznij sprzedaż online!"
         canonical="https://fotz.pl/blog/jak-sprzedawac-w-internecie"
+
+        keywords="Jak sprzedawać w internecie 2025, Jak sprzedawać w internecie 2025 co to jest, Jak sprzedawać w internecie 2025 jak działa, Jak sprzedawać w internecie 2025 definicja, Jak sprzedawać w internecie 2025 przykłady, Jak sprzedawać w internecie 2025 poradnik, Jak sprzedawać w internecie 2025 przewodnik"
       />
       <ArticleSchema
         title="Jak sprzedawać w internecie 2025 — poradnik dla firm i freelancerów"

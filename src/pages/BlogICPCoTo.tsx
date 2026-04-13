@@ -68,6 +68,8 @@ export default function BlogICPCoTo() {
         title="ICP — co to jest? Ideal Customer Profile — poradnik | fotz.pl"
         description="ICP co to jest — wyjaśniamy czym jest Ideal Customer Profile, jak stworzyć ICP, różnica ICP vs Buyer Persona i jak ICP wpływa na marketing i sprzedaż B2B."
         canonical="https://fotz.pl/blog/icp-co-to-jest"
+
+        keywords="ICP co to jest, ICP definicja, czym jest ICP, ICP przykłady, jak działa ICP, ICP znaczenie, ICP przewodnik"
       />
       <ArticleSchema
         title="ICP — co to jest? Ideal Customer Profile — poradnik"

@@ -44,6 +44,8 @@ export default function BlogTailwindShadcnCoTo() {
         title="Tailwind CSS, shadcn/ui, Radix UI, Mantine — biblioteki UI React 2024 | Fotz.pl"
         description="Tailwind CSS v4, shadcn/ui, Radix UI, Mantine, MUI — porównanie bibliotek UI React, utility-first vs CSS-in-JS, headless components i kiedy co wybrać."
         canonicalUrl="https://fotz.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024"
+
+        keywords="Tailwind CSS, shadcn/ui, Radix UI, Mantine co to jest, Tailwind CSS, shadcn/ui, Radix UI, Mantine jak działa, Tailwind CSS, shadcn/ui, Radix UI, Mantine tutorial, Tailwind CSS, shadcn/ui, Radix UI, Mantine przykład, czym jest Tailwind CSS, shadcn/ui, Radix UI, Mantine, Tailwind CSS, shadcn/ui, Radix UI, Mantine dokumentacja, Tailwind CSS, shadcn/ui, Radix UI, Mantine przewodnik"
       />
       <ArticleSchema
         title="Tailwind CSS, shadcn/ui, Radix UI, Mantine — biblioteki UI React 2024?"

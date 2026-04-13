@@ -44,6 +44,8 @@ export default function BlogLocalFirstCoTo() {
         title="Local-First Software — Jazz.tools, PowerSync, ElectricSQL, Dexie i PGlite 2024 | Fotz.pl"
         description="Local-First Software 2024: Jazz.tools (Co-values CRDT), PowerSync (Postgres-SQLite sync), ElectricSQL, Dexie.js (IndexedDB), PGlite (Postgres WASM) i offline-first patterns."
         canonicalUrl="https://fotz.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
+
+        keywords="Local-First Software co to jest, Local-First Software jak działa, Local-First Software tutorial, Local-First Software przykład, czym jest Local-First Software, Local-First Software dokumentacja, Local-First Software przewodnik"
       />
       <ArticleSchema
         title="Local-First Software — Jazz.tools, PowerSync, ElectricSQL, Dexie i PGlite 2024?"

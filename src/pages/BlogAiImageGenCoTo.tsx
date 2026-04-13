@@ -44,6 +44,8 @@ export default function BlogAiImageGenCoTo() {
         title="AI generowanie obrazów — DALL-E 3, Replicate, FAL.ai, Flux i Stable Diffusion TypeScript 2024 | Fotz.pl"
         description="AI Image Generation: DALL-E 3 (OpenAI), Replicate (SDXL, Flux), FAL.ai (realtime), Stable Diffusion — prompt engineering, Next.js integracja, Vercel Blob i porównanie kosztów."
         canonicalUrl="https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
+
+        keywords="AI generowanie obrazów co to jest, AI generowanie obrazów jak działa, AI generowanie obrazów tutorial, AI generowanie obrazów przykład, czym jest AI generowanie obrazów, AI generowanie obrazów dokumentacja, AI generowanie obrazów przewodnik"
       />
       <ArticleSchema
         title="AI generowanie obrazów — DALL-E 3, Replicate, FAL.ai, Flux i Stable Diffusion TypeScript 2024?"

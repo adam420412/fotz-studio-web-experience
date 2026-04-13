@@ -75,6 +75,8 @@ export default function BlogSrePracticeCoTo() {
         title="SRE — co to jest Site Reliability Engineering? | Fotz.pl"
         description="SRE (Site Reliability Engineering): SLI, SLO, SLA, error budget, on-call, toil reduction i kluczowe praktyki. Przewodnik po podejściu Google do reliability."
         canonicalUrl="https://fotz.pl/blog/sre-site-reliability-engineering-co-to-jest"
+
+        keywords="SRE co to jest, SRE definicja, czym jest SRE, SRE przykłady, jak działa SRE, SRE znaczenie, SRE przewodnik"
       />
       <ArticleSchema
         title="SRE — co to jest Site Reliability Engineering?"

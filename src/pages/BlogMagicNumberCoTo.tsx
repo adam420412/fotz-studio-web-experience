@@ -52,6 +52,8 @@ export default function BlogMagicNumberCoTo() {
         title="Magic Number — efektywność sprzedaży w SaaS | Fotz.pl"
         description="Magic Number (Sales Efficiency Ratio) w SaaS — formuła, benchmarki, jak obliczać i co wpływa na efektywność S&M. Kompletny przewodnik dla founders i CFO."
         canonicalUrl="https://fotz.pl/blog/magic-number-efektywnosc-sprzedazy-saas"
+
+        keywords="Magic Number co to jest, Magic Number definicja, czym jest Magic Number, Magic Number startup, Magic Number jak liczyć, Magic Number wzór, Magic Number przykłady"
       />
       <ArticleSchema
         title="Magic Number — efektywność sprzedaży w SaaS"

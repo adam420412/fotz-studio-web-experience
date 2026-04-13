@@ -84,6 +84,8 @@ export default function BlogBuyerJourneyCoTo() {
         title="Buyer Journey — co to jest? Ścieżka zakupowa klienta | fotz.pl"
         description="Buyer journey co to jest — wyjaśniamy czym jest ścieżka zakupowa, etapy (Awareness, Consideration, Decision), mapowanie buyer journey, B2B vs B2C i dark funnel."
         canonical="https://fotz.pl/blog/buyer-journey-co-to"
+
+        keywords="Buyer Journey co to jest, Buyer Journey definicja, czym jest Buyer Journey, Buyer Journey w sprzedaży, Buyer Journey strategia, Buyer Journey przykłady, jak używać Buyer Journey"
       />
       <ArticleSchema
         title="Buyer Journey — co to jest? Ścieżka zakupowa klienta"

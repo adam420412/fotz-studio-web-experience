@@ -98,6 +98,8 @@ export default function BlogSeoCopywritingCoTo() {
         title="SEO Copywriting — co to jest? Pisanie pod Google i dla ludzi"
         description="SEO copywriting — definicja, struktura (URL, meta title, H1, intro), 5 formatów content, formuły AIDA/PAS i jak dobierać słowa kluczowe. Kompletny przewodnik po copywritingu SEO."
         canonicalUrl="https://fotz.pl/blog/seo-copywriting-co-to"
+
+        keywords="SEO Copywriting co to jest, SEO Copywriting definicja, czym jest SEO Copywriting, SEO Copywriting w marketingu, SEO Copywriting przykłady, jak działa SEO Copywriting, SEO Copywriting strategia"
       />
       <ArticleSchema
         title="SEO Copywriting — co to jest i jak pisać pod Google?"

@@ -51,6 +51,8 @@ export default function BlogDauMauCoTo() {
         title="DAU, MAU i Stickiness — metryki zaangażowania użytkowników | Fotz.pl"
         description="DAU (Daily Active Users), MAU (Monthly Active Users) i Stickiness ratio — co to są, benchmarki, jak mierzyć i jak poprawić. Kompletny przewodnik dla Product Managerów."
         canonicalUrl="https://fotz.pl/blog/dau-mau-stickiness-metryki-zaangazowania"
+
+        keywords="DAU, MAU i Stickiness co to jest, DAU, MAU i Stickiness definicja, czym jest DAU, MAU i Stickiness, DAU, MAU i Stickiness przykłady, jak działa DAU, MAU i Stickiness, DAU, MAU i Stickiness znaczenie, DAU, MAU i Stickiness przewodnik"
       />
       <ArticleSchema
         title="DAU, MAU i Stickiness — metryki zaangażowania użytkowników"

@@ -76,6 +76,8 @@ export default function BlogDataRoomCoTo() {
         title="Data Room — co to jest i jak przygotować? | Fotz.pl"
         description="Data room dla startupu: co powinno znaleźć się w VDR, jak go zorganizować, jakie platformy wybrać i kiedy przygotować przed rundą inwestycyjną."
         canonicalUrl="https://fotz.pl/blog/data-room-co-to-jest-jak-przygotowac-startup"
+
+        keywords="Data Room co to jest, Data Room definicja, czym jest Data Room, Data Room przykłady, jak działa Data Room, Data Room znaczenie, Data Room przewodnik"
       />
       <ArticleSchema
         title="Data Room — co to jest i jak przygotować?"

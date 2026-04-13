@@ -44,6 +44,8 @@ export default function BlogViteCoTo() {
         title="Vite, esbuild, Turbopack, Rollup, Webpack — bundlery JS 2024, co wybrać | Fotz.pl"
         description="Vite vs esbuild vs Turbopack vs Rollup vs Webpack — porównanie bundlerów JS, ESM native dev server, szybkość HMR, zastosowania i kiedy co wybrać w 2024."
         canonicalUrl="https://fotz.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac"
+
+        keywords="Vite, esbuild, Turbopack, Rollup, Webpack co to jest, Vite, esbuild, Turbopack, Rollup, Webpack definicja, czym jest Vite, esbuild, Turbopack, Rollup, Webpack, Vite, esbuild, Turbopack, Rollup, Webpack przykłady, jak działa Vite, esbuild, Turbopack, Rollup, Webpack, Vite, esbuild, Turbopack, Rollup, Webpack znaczenie, Vite, esbuild, Turbopack, Rollup, Webpack przewodnik"
       />
       <ArticleSchema
         title="Vite, esbuild, Turbopack, Rollup, Webpack — bundlery JS 2024, co wybrać?"

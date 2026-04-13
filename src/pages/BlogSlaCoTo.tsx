@@ -62,6 +62,8 @@ export default function BlogSlaCoTo() {
         title="SLA, SLO, SLI — co to jest? Service Level Agreement i Error Budget"
         description="SLA, SLO, SLI — definicje, różnice, tabela dostępności (99.9% vs 99.99%), Error Budget i priorytety incydentów (P0-P3). Kompletny przewodnik po zarządzaniu niezawodnością."
         canonicalUrl="https://fotz.pl/blog/sla-slo-sli-co-to"
+
+        keywords="SLA, SLO, SLI co to jest, SLA, SLO, SLI definicja, czym jest SLA, SLO, SLI, SLA, SLO, SLI przykłady, jak działa SLA, SLO, SLI, SLA, SLO, SLI znaczenie, SLA, SLO, SLI przewodnik"
       />
       <ArticleSchema
         title="SLA, SLO, SLI — co to jest i jak zarządzać poziomami usług?"

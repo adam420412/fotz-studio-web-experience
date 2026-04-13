@@ -157,6 +157,8 @@ export default function BlogStronaInternetowaOdZera() {
             "@id": "https://fotz.pl/blog/strona-internetowa-dla-malej-firmy"
           }
         }}
+
+        keywords="Strona internetowa dla małej firmy - poradnik 2025, Strona internetowa dla małej firmy - poradnik 2025 co to jest, Strona internetowa dla małej firmy - poradnik 2025 jak działa, Strona internetowa dla małej firmy - poradnik 2025 definicja, Strona internetowa dla małej firmy - poradnik 2025 przykłady, Strona internetowa dla małej firmy - poradnik 2025 poradnik, Strona internetowa dla małej firmy - poradnik 2025 przewodnik"
       />
 
       {/* Hero Section */}

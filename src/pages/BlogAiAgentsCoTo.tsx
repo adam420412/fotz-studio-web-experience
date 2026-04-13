@@ -77,6 +77,8 @@ export default function BlogAiAgentsCoTo() {
         title="AI Agents — co to jest i jak działają? | Fotz.pl"
         description="AI Agents: agentic loop, ReAct, multi-agent systems, narzędzia (tools), frameworki (LangChain, CrewAI, AutoGen, LangGraph) i wyzwania produkcyjne."
         canonicalUrl="https://fotz.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest"
+
+        keywords="AI Agents co to jest, AI Agents definicja, czym jest AI Agents, AI Agents przykłady, jak działa AI Agents, AI Agents znaczenie, AI Agents przewodnik"
       />
       <ArticleSchema
         title="AI Agents — co to jest i jak działają?"

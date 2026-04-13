@@ -93,6 +93,8 @@ export default function BlogCustomerSegmentationCoTo() {
         title="Customer Segmentation — co to jest? Segmentacja klientów | fotz.pl"
         description="Customer segmentation co to jest — wyjaśniamy czym jest segmentacja klientów, typy segmentacji, analiza RFM, różnica vs persona i zastosowania w marketingu."
         canonical="https://fotz.pl/blog/customer-segmentation-co-to"
+
+        keywords="Customer Segmentation co to jest, Customer Segmentation definicja, czym jest Customer Segmentation, Customer Segmentation przykłady, jak działa Customer Segmentation, Customer Segmentation znaczenie, Customer Segmentation przewodnik"
       />
       <ArticleSchema
         title="Customer Segmentation — co to jest? Segmentacja klientów"

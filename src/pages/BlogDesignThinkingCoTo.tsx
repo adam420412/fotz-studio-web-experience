@@ -95,6 +95,8 @@ export default function BlogDesignThinkingCoTo() {
         title="Design Thinking — co to jest? Metodologia projektowania | fotz.pl"
         description="Design Thinking co to jest — wyjaśniamy czym jest myślenie projektowe, 5 faz (Empathize, Define, Ideate, Prototype, Test), narzędzia i jak wdrożyć w firmie."
         canonical="https://fotz.pl/blog/design-thinking-co-to"
+
+        keywords="Design Thinking co to jest, Design Thinking definicja, czym jest Design Thinking, Design Thinking przykłady, jak działa Design Thinking, Design Thinking znaczenie, Design Thinking przewodnik"
       />
       <ArticleSchema
         title="Design Thinking — co to jest? Metodologia projektowania"

@@ -69,6 +69,8 @@ export default function BlogROICoToJest() {
         title="ROI — co to jest i jak obliczyć zwrot z inwestycji? | fotz.pl"
         description="ROI co to jest — wyjaśniamy czym jest Return on Investment, wzór na ROI, przykłady obliczeń i jak mierzyć ROI w marketingu i projektach IT."
         canonical="https://fotz.pl/blog/roi-co-to-jest"
+
+        keywords="ROI co to jest, ROI definicja, czym jest ROI, ROI przykłady, jak działa ROI, ROI znaczenie, ROI przewodnik"
       />
       <ArticleSchema
         title="ROI — co to jest i jak obliczyć zwrot z inwestycji?"

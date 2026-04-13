@@ -94,6 +94,8 @@ export default function BlogCommunityMarketingCoTo() {
         title="Community Marketing — co to jest? Marketing społecznościowy | fotz.pl"
         description="Community marketing co to jest — wyjaśniamy czym jest marketing społecznościowy, typy community, platformy, metryki ROI i jak budować społeczność wokół marki B2B."
         canonical="https://fotz.pl/blog/community-marketing-co-to"
+
+        keywords="Community Marketing co to jest, Community Marketing definicja, czym jest Community Marketing, Community Marketing w marketingu, Community Marketing przykłady, jak działa Community Marketing, Community Marketing strategia"
       />
       <ArticleSchema
         title="Community Marketing — co to jest? Marketing społecznościowy"

@@ -52,6 +52,8 @@ const BlogWizualizacje3DEcommerce = () => {
         ogDescription="Poznaj strategie wdrażania wizualizacji 3D w e-commerce i zwiększ sprzedaż o 40%"
         ogImage="https://fotz.pl/og-wizualizacje-3d.jpg"
         ogUrl="https://fotz.pl/blog/wizualizacje-3d-ecommerce"
+
+        keywords="Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik], Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] co to jest, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] jak działa, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] definicja, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] przykłady, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] poradnik, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] przewodnik"
       />
 
       <ArticleSchema

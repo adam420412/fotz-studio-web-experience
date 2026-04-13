@@ -69,6 +69,8 @@ export default function BlogLeadMagnetCoTo() {
         title="Lead magnet — co to jest i jak stworzyć skuteczny? | fotz.pl"
         description="Lead magnet co to jest — wyjaśniamy jak działa magnes na leady, rodzaje lead magnetów, jak je tworzyć i promować oraz jakie narzędzia używać."
         canonical="https://fotz.pl/blog/lead-magnet-co-to"
+
+        keywords="Lead magnet co to jest, Lead magnet definicja, czym jest Lead magnet, Lead magnet w marketingu, Lead magnet przykłady, jak działa Lead magnet, Lead magnet strategia"
       />
       <ArticleSchema
         title="Lead magnet — co to jest i jak tworzyć skuteczne materiały?"

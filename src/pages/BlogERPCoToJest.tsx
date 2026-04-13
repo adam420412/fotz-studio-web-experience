@@ -79,6 +79,8 @@ export default function BlogERPCoToJest() {
         title="ERP — co to jest i jak działa system ERP? | fotz.pl"
         description="ERP co to jest — wyjaśniamy czym jest system ERP, moduły ERP, kiedy wdrożyć, ile kosztuje i jakie systemy ERP są popularne w Polsce."
         canonical="https://fotz.pl/blog/erp-co-to-jest"
+
+        keywords="ERP co to jest, ERP definicja, czym jest ERP, ERP przykłady, jak działa ERP, ERP znaczenie, ERP przewodnik"
       />
       <ArticleSchema
         title="ERP — co to jest i jak działa system ERP?"

@@ -80,6 +80,8 @@ export default function BlogBrandEquityCoTo() {
         title="Brand Equity — co to jest? Kapitał marki — model Kellera i budowanie"
         description="Brand equity (kapitał marki) — definicja, model Kellera (4 poziomy), czynniki budowania i jak mierzyć wartość marki. Kompletny przewodnik po brand equity."
         canonicalUrl="https://fotz.pl/blog/brand-equity-co-to"
+
+        keywords="Brand Equity co to jest, Brand Equity definicja, czym jest Brand Equity, Brand Equity w marketingu, Brand Equity przykłady, jak działa Brand Equity, Brand Equity strategia"
       />
       <ArticleSchema
         title="Brand Equity — co to jest i jak budować kapitał marki?"

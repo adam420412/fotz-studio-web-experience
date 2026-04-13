@@ -71,6 +71,8 @@ export default function BlogKeywordResearchCoTo() {
         title="Keyword Research — co to jest? Badanie słów kluczowych | fotz.pl"
         description="Keyword research co to jest — wyjaśniamy jak przeprowadzić badanie słów kluczowych, search intent, keyword difficulty i jak znaleźć słowa kluczowe konkurencji."
         canonical="https://fotz.pl/blog/keyword-research-co-to"
+
+        keywords="Keyword Research co to jest, Keyword Research definicja, czym jest Keyword Research, Keyword Research przykłady, jak działa Keyword Research, Keyword Research znaczenie, Keyword Research przewodnik"
       />
       <ArticleSchema
         title="Keyword Research — co to jest? Badanie słów kluczowych"

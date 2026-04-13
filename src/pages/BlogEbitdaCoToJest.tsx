@@ -69,6 +69,8 @@ export default function BlogEbitdaCoToJest() {
         title="EBITDA — co to jest i jak obliczyć? Wskaźnik finansowy | fotz.pl"
         description="EBITDA co to jest — wyjaśniamy czym jest wskaźnik EBITDA, jak go obliczyć, do czego służy w wycenie firm i analizie finansowej. Wzór i przykłady."
         canonical="https://fotz.pl/blog/ebitda-co-to-jest"
+
+        keywords="EBITDA co to jest, EBITDA definicja, czym jest EBITDA, EBITDA przykłady, jak działa EBITDA, EBITDA znaczenie, EBITDA przewodnik"
       />
       <ArticleSchema
         title="EBITDA — co to jest i jak obliczyć?"

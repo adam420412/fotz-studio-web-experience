@@ -69,6 +69,8 @@ export default function BlogProductMarketFit() {
         title="Product-Market Fit — co to jest i jak osiagnac? | fotz.pl"
         description="Product-Market Fit co to jest — wyjasnamy czym jest PMF, jak mierzyc Product-Market Fit (Sean Ellis Test, NPS, retencja) i kiedy skalowac startup."
         canonical="https://fotz.pl/blog/product-market-fit-co-to"
+
+        keywords="Product-Market Fit co to jest, Product-Market Fit definicja, czym jest Product-Market Fit, Product-Market Fit przykłady, jak działa Product-Market Fit, Product-Market Fit znaczenie, Product-Market Fit przewodnik"
       />
       <ArticleSchema
         title="Product-Market Fit — co to jest i jak osiagnac?"

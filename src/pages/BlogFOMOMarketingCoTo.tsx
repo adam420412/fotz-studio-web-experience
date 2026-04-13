@@ -93,6 +93,8 @@ export default function BlogFOMOMarketingCoTo() {
         title="FOMO Marketing — co to jest? Techniki Fear of Missing Out w sprzedaży"
         description="FOMO marketing — definicja, 6 technik (countdown, scarcity, social proof live), psychologia niedoboru i jak stosować FOMO etycznie. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/fomo-marketing-co-to"
+
+        keywords="FOMO Marketing co to jest, FOMO Marketing definicja, czym jest FOMO Marketing, FOMO Marketing w marketingu, FOMO Marketing przykłady, jak działa FOMO Marketing, FOMO Marketing strategia"
       />
       <ArticleSchema
         title="FOMO Marketing — co to jest i jak działa?"

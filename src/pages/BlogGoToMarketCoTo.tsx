@@ -94,6 +94,8 @@ export default function BlogGoToMarketCoTo() {
         title="Go-to-Market Strategy — co to jest? Strategia wejścia na rynek | fotz.pl"
         description="Go-to-Market strategy co to jest — wyjaśniamy czym jest GTM strategy, GTM motions (SLG, MLG, PLG, CLG), ICP, jak napisać GTM plan i najczęstsze błędy."
         canonical="https://fotz.pl/blog/go-to-market-strategy-co-to"
+
+        keywords="Go-to-Market Strategy co to jest, Go-to-Market Strategy definicja, czym jest Go-to-Market Strategy, Go-to-Market Strategy przykłady, jak działa Go-to-Market Strategy, Go-to-Market Strategy znaczenie, Go-to-Market Strategy przewodnik"
       />
       <ArticleSchema
         title="Go-to-Market Strategy — co to jest? Strategia wejścia na rynek"

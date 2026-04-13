@@ -73,6 +73,8 @@ export default function BlogSafeNoteCoTo() {
         title="SAFE Note — co to jest i jak działa w startupie? | Fotz.pl"
         description="SAFE (Simple Agreement for Future Equity): jak działa konwersja, różnice vs convertible note, pułapki dla założycieli, typy SAFE i jak negocjować warunki."
         canonicalUrl="https://fotz.pl/blog/safe-note-co-to-jest-jak-dziala-startup"
+
+        keywords="SAFE Note co to jest, SAFE Note definicja, czym jest SAFE Note, SAFE Note startup, SAFE Note jak liczyć, SAFE Note wzór, SAFE Note przykłady"
       />
       <ArticleSchema
         title="SAFE Note — co to jest i jak działa w startupie?"

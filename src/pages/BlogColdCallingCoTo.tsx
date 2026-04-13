@@ -69,6 +69,8 @@ export default function BlogColdCallingCoTo() {
         title="Cold calling — co to jest i jak skutecznie dzwonić? | fotz.pl"
         description="Cold calling co to jest — wyjaśniamy czym są zimne telefony, jak skutecznie dzwonić do klientów, legalność cold callingu i różnica między cold calling a cold mailingiem."
         canonical="https://fotz.pl/blog/cold-calling-co-to"
+
+        keywords="Cold calling co to jest, Cold calling definicja, czym jest Cold calling, Cold calling przykłady, jak działa Cold calling, Cold calling znaczenie, Cold calling przewodnik"
       />
       <ArticleSchema
         title="Cold calling — co to jest i jak skutecznie dzwonić?"

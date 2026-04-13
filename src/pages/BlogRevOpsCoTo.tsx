@@ -67,6 +67,8 @@ export default function BlogRevOpsCoTo() {
         title="RevOps — co to jest? Revenue Operations w firmie SaaS | fotz.pl"
         description="RevOps co to jest — wyjaśniamy czym jest Revenue Operations, różnica RevOps vs Sales Ops, narzędzia RevOps, kiedy wdrożyć i kluczowe KPI."
         canonical="https://fotz.pl/blog/revops-co-to-jest"
+
+        keywords="RevOps co to jest, RevOps definicja, czym jest RevOps, RevOps startup, RevOps jak liczyć, RevOps wzór, RevOps przykłady"
       />
       <ArticleSchema
         title="RevOps — co to jest? Revenue Operations w firmie SaaS"

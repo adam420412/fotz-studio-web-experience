@@ -55,6 +55,8 @@ export default function BlogRebrandingCoTo() {
         title="Rebranding — co to jest, kiedy warto i jak to zrobić | Blog fotz.pl"
         description="Rebranding co to — kompleksowy przewodnik. Kiedy rebranding jest konieczny, jak go przeprowadzić krok po kroku i ile kosztuje. Przykłady i wskazówki."
         canonical="https://fotz.pl/blog/rebranding-co-to"
+
+        keywords="Rebranding co to jest, Rebranding definicja, czym jest Rebranding, Rebranding w marketingu, Rebranding przykłady, jak działa Rebranding, Rebranding strategia"
       />
       <ArticleSchema
         title="Rebranding — co to jest i kiedy warto go przeprowadzić?"

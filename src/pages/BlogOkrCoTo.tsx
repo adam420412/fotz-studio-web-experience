@@ -89,6 +89,8 @@ export default function BlogOkrCoTo() {
         title="OKR — co to jest? Objectives and Key Results — jak wdrożyć i pisać"
         description="OKR (Objectives and Key Results) — definicja, struktura, przykłady, różnica vs KPI i 5 najczęstszych błędów. Kompletny przewodnik po OKR dla firm i zespołów."
         canonicalUrl="https://fotz.pl/blog/okr-co-to-jest"
+
+        keywords="OKR co to jest, OKR definicja, czym jest OKR, OKR przykłady, jak działa OKR, OKR znaczenie, OKR przewodnik"
       />
       <ArticleSchema
         title="OKR — co to jest i jak pisać Objectives and Key Results?"

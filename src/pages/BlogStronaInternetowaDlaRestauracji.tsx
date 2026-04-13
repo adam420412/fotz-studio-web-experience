@@ -63,6 +63,8 @@ export default function BlogStronaInternetowaDlaRestauracji() {
         description="Kompletny przewodnik po stronach internetowych dla restauracji. Dowiedz sie, co powinna zawierac strona restauracji, ile kosztuje, i jak pozycjonowac sie w Google."
         canonical="https://fotz.pl/blog/strona-internetowa-dla-restauracji"
         ogImage="https://fotz.pl/og-restaurant.jpg"
+
+        keywords="Strona internetowa dla restauracji, Strona internetowa dla restauracji co to jest, Strona internetowa dla restauracji jak działa, Strona internetowa dla restauracji definicja, Strona internetowa dla restauracji przykłady, Strona internetowa dla restauracji poradnik, Strona internetowa dla restauracji przewodnik"
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />

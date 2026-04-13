@@ -82,6 +82,8 @@ export default function BlogSalesPlaybookCoTo() {
         title="Sales Playbook — co to jest i jak zbudować? | Fotz.pl"
         description="Sales Playbook w sprzedaży B2B — co zawiera, jak zbudować, sekcje, narzędzia i wpływ na win rate i ramp time. Kompletny przewodnik dla Sales Leaders."
         canonicalUrl="https://fotz.pl/blog/sales-playbook-co-to-jest-jak-budowac"
+
+        keywords="Sales Playbook co to jest, Sales Playbook definicja, czym jest Sales Playbook, Sales Playbook w sprzedaży, Sales Playbook strategia, Sales Playbook przykłady, jak używać Sales Playbook"
       />
       <ArticleSchema
         title="Sales Playbook — co to jest i jak zbudować?"

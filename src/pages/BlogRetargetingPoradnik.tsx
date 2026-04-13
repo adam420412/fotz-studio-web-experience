@@ -51,6 +51,8 @@ export default function BlogRetargetingPoradnik() {
         ogImage="https://fotz.pl/og-retargeting.jpg"
         ogTitle="Retargeting reklamy - Jak powiekszac konwersje"
         ogDescription="Kompletny poradnik retargetingu. Pixele, segmentacja, ROAS, privacy i GDPR."
+
+        keywords="Retargeting reklamy i remarketing Google - Kompletny poradnik 2025, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 poradnik, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 strategia, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 jak zrobić, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 marketing, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 przykłady, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 w Polsce"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

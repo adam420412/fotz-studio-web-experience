@@ -81,6 +81,8 @@ export default function BlogPublicRelationsCoTo() {
         title="Public Relations (PR) — co to jest? Relacje z mediami i zarządzanie wizerunkiem"
         description="Public relations — definicja, 6 rodzajów PR (media relations, crisis PR, corporate PR), 5-etapowy proces i jak mierzyć efektywność. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/public-relations-co-to"
+
+        keywords="Public Relations (PR) co to jest, Public Relations (PR) definicja, czym jest Public Relations (PR), Public Relations (PR) przykłady, jak działa Public Relations (PR), Public Relations (PR) znaczenie, Public Relations (PR) przewodnik"
       />
       <ArticleSchema
         title="Public Relations (PR) — co to jest i jak działa?"

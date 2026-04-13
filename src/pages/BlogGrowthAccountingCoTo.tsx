@@ -77,6 +77,8 @@ export default function BlogGrowthAccountingCoTo() {
         title="Growth Accounting — co to jest i jak analizować wzrost? | Fotz.pl"
         description="Growth Accounting: framework do analizy wzrostu na 4 składowe (New, Retained, Resurrected, Churned). Quick Ratio, leaky bucket i jak wdrożyć w SaaS."
         canonicalUrl="https://fotz.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
+
+        keywords="Growth Accounting co to jest, Growth Accounting definicja, czym jest Growth Accounting, Growth Accounting przykłady, jak działa Growth Accounting, Growth Accounting znaczenie, Growth Accounting przewodnik"
       />
       <ArticleSchema
         title="Growth Accounting — co to jest i jak analizować wzrost?"

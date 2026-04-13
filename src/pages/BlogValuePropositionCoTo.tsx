@@ -67,6 +67,8 @@ export default function BlogValuePropositionCoTo() {
         title="Value Proposition — co to jest i jak napisac? | fotz.pl"
         description="Value Proposition co to jest — wyjasnamy czym jest propozycja wartosci, jak napisac Value Proposition, roznica vs USP i przyklady dobrego VP dla B2B i B2C."
         canonical="https://fotz.pl/blog/value-proposition-co-to"
+
+        keywords="Value Proposition co to jest, Value Proposition jak działa, Value Proposition tutorial, Value Proposition przykład, czym jest Value Proposition, Value Proposition dokumentacja, Value Proposition przewodnik"
       />
       <ArticleSchema
         title="Value Proposition — co to jest i jak napisac?"

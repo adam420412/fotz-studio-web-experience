@@ -49,6 +49,8 @@ const BlogCoToJestSeo = () => {
         canonical="https://fotz.pl/blog/co-to-jest-seo"
         ogTitle="Co to jest SEO? Przewodnik po pozycjonowaniu stron"
         ogDescription="Kompleksowy przewodnik po SEO dla firm. Dowiedz się, jak działa pozycjonowanie, ile kosztuje i kiedy przynosi efekty."
+
+        keywords="co to jest, definicja, czym jest, w marketingu, przykłady, jak działa, strategia"
       />
       <ArticleSchema
         title="Co to jest SEO? Pozycjonowanie stron — przewodnik dla firm"

@@ -44,6 +44,8 @@ export default function BlogSupabaseDeepDiveCoTo() {
         title="Supabase — Auth, RLS, Storage, Realtime, Edge Functions i Vector 2024 | Fotz.pl"
         description="Supabase deep dive: Auth (OAuth, OTP, magic link), Row Level Security (RLS), Storage (transformacje obrazów), Realtime (subscriptions, Presence), Edge Functions i pgvector."
         canonicalUrl="https://fotz.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
+
+        keywords="Supabase co to jest, Supabase definicja, czym jest Supabase, Supabase przykłady, jak działa Supabase, Supabase znaczenie, Supabase przewodnik"
       />
       <ArticleSchema
         title="Supabase — Auth, RLS, Storage, Realtime, Edge Functions i Vector 2024?"

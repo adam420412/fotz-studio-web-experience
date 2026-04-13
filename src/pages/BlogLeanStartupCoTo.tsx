@@ -84,6 +84,8 @@ export default function BlogLeanStartupCoTo() {
         title="Lean Startup — co to jest? Metodologia budowania startupów | fotz.pl"
         description="Lean Startup co to jest — wyjaśniamy czym jest metodologia Lean Startup, Build-Measure-Learn, MVP, pivot, Innovation Accounting i zastosowanie w korporacjach."
         canonical="https://fotz.pl/blog/lean-startup-co-to"
+
+        keywords="Lean Startup co to jest, Lean Startup definicja, czym jest Lean Startup, Lean Startup startup, Lean Startup jak liczyć, Lean Startup wzór, Lean Startup przykłady"
       />
       <ArticleSchema
         title="Lean Startup — co to jest? Metodologia budowania startupów"

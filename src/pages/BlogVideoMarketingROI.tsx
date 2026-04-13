@@ -122,6 +122,8 @@ export default function BlogVideoMarketingROI() {
         title="ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 | Fotz.pl"
         description="Czy wideo marketing się opłaca? Tak! Statystyki pokazują 93% firm zarabia na video. Sprawdź ROI dla różnych formatów, platform i branż. Poradnik 2025."
         canonical="https://fotz.pl/blog/video-marketing-roi"
+
+        keywords="ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 poradnik, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 strategia, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 jak zrobić, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 marketing, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 przykłady, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 w Polsce"
       />
       <BreadcrumbSchema
         items={[

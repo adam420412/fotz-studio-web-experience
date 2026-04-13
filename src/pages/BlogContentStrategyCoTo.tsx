@@ -69,6 +69,8 @@ export default function BlogContentStrategyCoTo() {
         title="Content Strategy — co to jest i jak stworzyć? | fotz.pl"
         description="Content Strategy co to jest — wyjaśniamy czym jest strategia treści, jak ją stworzyć, pillar-cluster model, KPI content marketingu i koszty."
         canonical="https://fotz.pl/blog/content-strategy-co-to"
+
+        keywords="Content Strategy co to jest, Content Strategy definicja, czym jest Content Strategy, Content Strategy przykłady, jak działa Content Strategy, Content Strategy znaczenie, Content Strategy przewodnik"
       />
       <ArticleSchema
         title="Content Strategy — co to jest i jak stworzyć?"

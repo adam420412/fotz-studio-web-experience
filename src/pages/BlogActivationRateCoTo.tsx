@@ -51,6 +51,8 @@ export default function BlogActivationRateCoTo() {
         title="Activation Rate — co to jest i jak poprawić aktywację użytkowników? | Fotz.pl"
         description="Activation Rate: definicja, jak zdefiniować activation event, strategie poprawy, związek z DAU/MAU i retencją, benchmarki dla PLG i SaaS."
         canonicalUrl="https://fotz.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
+
+        keywords="Activation Rate co to jest, Activation Rate definicja, czym jest Activation Rate, Activation Rate przykłady, jak działa Activation Rate, Activation Rate znaczenie, Activation Rate przewodnik"
       />
       <ArticleSchema
         title="Activation Rate — co to jest i jak poprawić aktywację użytkowników?"

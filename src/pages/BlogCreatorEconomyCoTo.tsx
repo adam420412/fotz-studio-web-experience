@@ -92,6 +92,8 @@ export default function BlogCreatorEconomyCoTo() {
         title="Creator Economy — co to jest? Gospodarka twórców treści — przewodnik"
         description="Creator economy — definicja, modele zarobkowe, tiery twórców (nano/micro/macro), platformy i jak marki mogą współpracować z creator economy."
         canonicalUrl="https://fotz.pl/blog/creator-economy-co-to"
+
+        keywords="Creator Economy co to jest, Creator Economy definicja, czym jest Creator Economy, Creator Economy przykłady, jak działa Creator Economy, Creator Economy znaczenie, Creator Economy przewodnik"
       />
       <ArticleSchema
         title="Creator Economy — co to jest i jak działa?"

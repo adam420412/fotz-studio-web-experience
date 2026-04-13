@@ -53,6 +53,8 @@ export default function BlogKeyAccountManagement() {
         title="Key Account Management (KAM) — co to jest? | Fotz.pl"
         description="Key Account Management (KAM) — zarządzanie kluczowymi klientami, różnica AE vs KAM, Account Plan, metryki i jak wybrać Key Accounts. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/key-account-management-kam-co-to-jest"
+
+        keywords="Key Account Management (KAM) co to jest, Key Account Management (KAM) definicja, czym jest Key Account Management (KAM), Key Account Management (KAM) przykłady, jak działa Key Account Management (KAM), Key Account Management (KAM) znaczenie, Key Account Management (KAM) przewodnik"
       />
       <ArticleSchema
         title="Key Account Management (KAM) — co to jest?"

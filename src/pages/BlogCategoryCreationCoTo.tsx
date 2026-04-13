@@ -71,6 +71,8 @@ export default function BlogCategoryCreationCoTo() {
         title="Category Creation — tworzenie kategorii rynkowej | Fotz.pl"
         description="Category Creation (tworzenie kategorii) — strategia budowania nowej kategorii produktowej, etapy, różnica vs pozycjonowanie i przykłady (Salesforce, HubSpot, Gainsight)."
         canonicalUrl="https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
+
+        keywords="Category Creation co to jest, Category Creation definicja, czym jest Category Creation, Category Creation przykłady, jak działa Category Creation, Category Creation znaczenie, Category Creation przewodnik"
       />
       <ArticleSchema
         title="Category Creation — tworzenie kategorii rynkowej"

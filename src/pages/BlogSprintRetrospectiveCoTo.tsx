@@ -89,6 +89,8 @@ export default function BlogSprintRetrospectiveCoTo() {
         title="Sprint Retrospective — co to jest? Retrospektywa w Scrum i Agile"
         description="Sprint retrospective — definicja, 4 formaty (Start/Stop/Continue, Sailboat, 4Ls, Spotify Health Check), agenda 7 kroków i 5 błędów. Przewodnik po retrospektywie sprintu."
         canonicalUrl="https://fotz.pl/blog/sprint-retrospective-co-to"
+
+        keywords="Sprint Retrospective co to jest, Sprint Retrospective definicja, czym jest Sprint Retrospective, Sprint Retrospective przykłady, jak działa Sprint Retrospective, Sprint Retrospective znaczenie, Sprint Retrospective przewodnik"
       />
       <ArticleSchema
         title="Sprint Retrospective — co to jest i jak prowadzić retrospektywę?"
