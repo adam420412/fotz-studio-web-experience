@@ -99,8 +99,8 @@ export default function BlogJakPozycjonowacStrone() {
   return (
     <>
       <SEOHead
-        title="Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 | fotz.pl"
-        description="Jak pozycjonować stronę — krok po kroku poradnik SEO 2025. Badanie słów kluczowych, optymalizacja on-page, link building i monitoring efektów. Zacznij pozycjonowanie!"
+        title="Jak pozycjonować stronę w Google? Praktyczny poradnik 2025"
+        description="Jak pozycjonować stronę — krok po kroku poradnik SEO 2025. Badanie słów kluczowych, optymalizacja on-page, link building i monitoring efektów. Zacznij…"
         canonical="https://fotz.pl/blog/jak-pozycjonowac-strone"
 
         keywords="Jak pozycjonować stronę w Google? Praktyczny poradnik 2025, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 co to jest, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 jak działa, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 definicja, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 przykłady, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 poradnik, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 przewodnik"

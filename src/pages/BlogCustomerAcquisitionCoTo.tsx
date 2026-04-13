@@ -75,11 +75,13 @@ export default function BlogCustomerAcquisitionCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Customer Acquisition — co to jest? CAC i kanały pozyskiwania klientów"
-        description="Customer acquisition — definicja, jak obliczyć CAC, 8 kanałów pozyskiwania klientów i lejek akwizycji. Kompletny przewodnik po kosztach i strategiach pozyskiwania klientów."
+        title="Customer Acquisition | Fotz Studio"
+        description="Customer acquisition — definicja, jak obliczyć CAC, 8 kanałów pozyskiwania klientów i lejek akwizycji. Kompletny przewodnik po kosztach i strategiach…"
         canonicalUrl="https://fotz.pl/blog/customer-acquisition-co-to"
 
         keywords="Customer Acquisition co to jest, Customer Acquisition definicja, czym jest Customer Acquisition, Customer Acquisition startup, Customer Acquisition jak liczyć, Customer Acquisition wzór, Customer Acquisition przykłady"
+
+        canonical="https://fotz.pl/blog/customer-acquisition-co-to"
       />
       <ArticleSchema
         title="Customer Acquisition — co to jest i jak działa?"

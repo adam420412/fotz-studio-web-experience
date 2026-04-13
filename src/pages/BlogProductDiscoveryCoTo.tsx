@@ -80,10 +80,12 @@ export default function BlogProductDiscoveryCoTo() {
     <Layout>
       <SEOHead
         title="Product Discovery — co to jest i jak przeprowadzić? | Fotz.pl"
-        description="Product Discovery — techniki (Customer Interview, Prototype Testing, Smoke Test), Continuous Discovery i różnica vs Delivery. Kompletny przewodnik dla Product Managerów."
+        description="Product Discovery — techniki (Customer Interview, Prototype Testing, Smoke Test), Continuous Discovery i różnica vs Delivery. Kompletny przewodnik dla…"
         canonicalUrl="https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
 
         keywords="Product Discovery co to jest, Product Discovery definicja, czym jest Product Discovery, Product Discovery przykłady, jak działa Product Discovery, Product Discovery znaczenie, Product Discovery przewodnik"
+
+        canonical="https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
       />
       <ArticleSchema
         title="Product Discovery — co to jest i jak przeprowadzić?"

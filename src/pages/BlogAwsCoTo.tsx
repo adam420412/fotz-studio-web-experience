@@ -100,6 +100,8 @@ export default function BlogAwsCoTo() {
         canonicalUrl="https://fotz.pl/blog/aws-co-to-jest"
 
         keywords="AWS co to jest, AWS jak działa, AWS tutorial, AWS przykład, czym jest AWS, AWS dokumentacja, AWS przewodnik"
+
+        canonical="https://fotz.pl/blog/aws-co-to-jest"
       />
       <ArticleSchema
         title="AWS — co to jest i jak działa? Kompletny przewodnik po Amazon Web Services"

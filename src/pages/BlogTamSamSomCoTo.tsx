@@ -92,11 +92,13 @@ export default function BlogTamSamSomCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TAM, SAM, SOM — co to jest? Analiza rynku dla startupów i inwestorów"
-        description="TAM SAM SOM — definicje, jak obliczyć metodą top-down i bottom-up, typowe błędy i dlaczego inwestorzy pytają o te metryki. Kompletny przewodnik po analizie rynku."
+        title="TAM, SAM, SOM | Fotz Studio"
+        description="TAM SAM SOM — definicje, jak obliczyć metodą top-down i bottom-up, typowe błędy i dlaczego inwestorzy pytają o te metryki. Kompletny przewodnik po…"
         canonicalUrl="https://fotz.pl/blog/tam-sam-som-co-to"
 
         keywords="TAM, SAM, SOM co to jest, TAM, SAM, SOM definicja, czym jest TAM, SAM, SOM, TAM, SAM, SOM startup, TAM, SAM, SOM jak liczyć, TAM, SAM, SOM wzór, TAM, SAM, SOM przykłady"
+
+        canonical="https://fotz.pl/blog/tam-sam-som-co-to"
       />
       <ArticleSchema
         title="TAM, SAM, SOM — co to jest i jak obliczać wielkość rynku?"

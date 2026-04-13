@@ -82,6 +82,8 @@ export default function BlogPersonalizationMarketingCoTo() {
         canonicalUrl="https://fotz.pl/blog/personalizacja-marketingu-co-to"
 
         keywords="Personalizacja w marketingu co to jest, Personalizacja w marketingu definicja, czym jest Personalizacja w marketingu, Personalizacja w marketingu w marketingu, Personalizacja w marketingu przykłady, jak działa Personalizacja w marketingu, Personalizacja w marketingu strategia"
+
+        canonical="https://fotz.pl/blog/personalizacja-marketingu-co-to"
       />
       <ArticleSchema
         title="Personalizacja w marketingu — co to jest i jak ją wdrożyć?"

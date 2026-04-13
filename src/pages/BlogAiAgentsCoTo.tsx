@@ -79,6 +79,8 @@ export default function BlogAiAgentsCoTo() {
         canonicalUrl="https://fotz.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest"
 
         keywords="AI Agents co to jest, AI Agents definicja, czym jest AI Agents, AI Agents przykłady, jak działa AI Agents, AI Agents znaczenie, AI Agents przewodnik"
+
+        canonical="https://fotz.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest"
       />
       <ArticleSchema
         title="AI Agents — co to jest i jak działają?"

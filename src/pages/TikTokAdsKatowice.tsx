@@ -457,7 +457,7 @@ export default function TikTokAdsKatowice() {
 
         <ContactSection
           title="Bezpłatna Konsultacja TikTok Ads dla Katowic"
-          description="Zapraszamy przedsiębiorcy z Katowic i całego Śląska na rozmowę o kampaniach TikTok Ads. Pokażemy strategie, możliwości i jak możemy wspomóc wzrost Twojego biznesu na platformie TikTok."
+          description="Zapraszamy przedsiębiorcy z Katowic i całego Śląska na rozmowę o kampaniach TikTok Ads. Pokażemy strategie, możliwości i jak możemy wspomóc wzrost Twojego…"
         />
       </div>
     </Layout>

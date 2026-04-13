@@ -64,7 +64,7 @@ export default function BlogSocialSellingCoTo() {
   return (
     <>
       <SEOHead
-        title="Social Selling — co to jest i jak sprzedawac przez social media? | fotz.pl"
+        title="Social Selling — co to jest i jak sprzedawac przez social media?"
         description="Social Selling co to jest — wyjasnamy czym jest social selling na LinkedIn, jak zaczac, LinkedIn SSI, roznica vs cold outreach i metryki social selling."
         canonical="https://fotz.pl/blog/social-selling-co-to"
 

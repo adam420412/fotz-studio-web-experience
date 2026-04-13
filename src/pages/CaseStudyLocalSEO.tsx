@@ -107,8 +107,8 @@ const CaseStudyLocalSEO = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie lokalne Poznań — +520% ruch organiczny | Case Study SEO FOTZ Studio"
-        description="Case study: lokalne SEO dla kliniki dentystycznej w Poznaniu. Wzrost ruchu z 340 do 2,108 sesji/miesiąc, pozycja 12→2 w Google Maps. Narzędzia: GSC, Ahrefs, BrightLocal, Whitespark."
+        title="Pozycjonowanie lokalne Poznań | Fotz Studio"
+        description="Case study: lokalne SEO dla kliniki dentystycznej w Poznaniu. Wzrost ruchu z 340 do 2,108 sesji/miesiąc, pozycja 12→2 w Google Maps. Narzędzia: GSC…"
         canonical="https://fotz.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu"
         keywords="seo lokalne poznań, google maps poznań, pozycjonowanie lokalne, google business profile, local seo case study"
       />

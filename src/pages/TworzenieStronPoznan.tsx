@@ -133,7 +133,7 @@ export default function TworzenieStronPoznan() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Poznań | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych Poznań | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Poznań — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/poznan"
         keywords="tworzenie stron internetowych poznań, strony internetowe poznań, tworzenie stron www poznań, projektowanie stron internetowych poznań, strony www poznań, tworzenie stron poznań, strona internetowa poznań, agencja webdesign poznań, projektowanie stron www poznań, sklep internetowy poznań"

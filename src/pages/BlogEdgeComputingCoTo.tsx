@@ -49,11 +49,13 @@ export default function BlogEdgeComputingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Edge Computing — co to jest, Cloudflare Workers i Edge Functions? | Fotz.pl"
+        title="Edge Computing | Fotz Studio"
         description="Edge Computing: definicja, Cloudflare Workers, Edge Functions vs SSR vs SSG, IoT edge, platformy (Fastly, Vercel, Deno Deploy) i use cases."
         canonicalUrl="https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
 
         keywords="Edge Computing co to jest, Edge Computing definicja, czym jest Edge Computing, Edge Computing przykłady, jak działa Edge Computing, Edge Computing znaczenie, Edge Computing przewodnik"
+
+        canonical="https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
       />
       <ArticleSchema
         title="Edge Computing — co to jest, Cloudflare Workers i Edge Functions?"

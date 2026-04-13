@@ -41,11 +41,13 @@ export default function BlogTsUtilityTypesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TypeScript Utility Types — Partial, ReturnType, Conditional, Mapped i Branded 2024 | Fotz.pl"
-        description="TypeScript Utility Types: Partial/Required/Pick/Omit, ReturnType/Parameters, Conditional Types (infer), Mapped Types (remapping), Template Literal Types i Branded Types (nominal)."
+        title="TypeScript Utility Types | Fotz Studio"
+        description="TypeScript Utility Types: Partial/Required/Pick/Omit, ReturnType/Parameters, Conditional Types (infer), Mapped Types (remapping), Template Literal Types i…"
         canonicalUrl="https://fotz.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
 
         keywords="TypeScript Utility Types co to jest, TypeScript Utility Types definicja, czym jest TypeScript Utility Types, TypeScript Utility Types w marketingu, TypeScript Utility Types przykłady, jak działa TypeScript Utility Types, TypeScript Utility Types strategia"
+
+        canonical="https://fotz.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
       />
       <ArticleSchema
         title="TypeScript Utility Types — Partial, ReturnType, Conditional, Mapped i Branded 2024?"

@@ -152,7 +152,7 @@ export default function SklepyInternetoweKrakow() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Sklepy Internetowe Kraków — Tworzenie Sklepów E-commerce | Fotz Studio"
+        title="Sklepy Internetowe Kraków — Tworzenie Sklepów E-commerce"
         description="Tworzenie sklepów internetowych Kraków — sklep online WooCommerce, Shopify dla firm z Krakowa. E-commerce z SEO, integracjami płatności i obsługą. Fotz Studio."
         canonical="https://fotz.pl/uslugi/sklepy-internetowe/krakow"
         keywords="tworzenie sklepów internetowych Kraków, sklep internetowy Kraków, wdrożenie e-commerce Kraków, agencja e-commerce Kraków, Shopify Kraków, WooCommerce Kraków, sklep online Kraków, platforma e-commerce Kraków, PrestaShop Kraków, pozycjonowanie sklepu internetowego Kraków, sklep internetowy dla firmy Kraków"

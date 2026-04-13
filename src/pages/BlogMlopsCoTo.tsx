@@ -48,11 +48,13 @@ export default function BlogMlopsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="MLOps — co to jest i jak wdrożyć Machine Learning Operations? | Fotz.pl"
+        title="MLOps | Fotz Studio"
         description="MLOps: cykl życia modelu ML, tooling (MLflow, W&B, BentoML, Evidently), model drift, poziomy dojrzałości i jak zorganizować team MLOps w firmie."
         canonicalUrl="https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest"
 
         keywords="MLOps co to jest, MLOps definicja, czym jest MLOps, MLOps przykłady, jak działa MLOps, MLOps znaczenie, MLOps przewodnik"
+
+        canonical="https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest"
       />
       <ArticleSchema
         title="MLOps — co to jest i jak wdrożyć Machine Learning Operations?"

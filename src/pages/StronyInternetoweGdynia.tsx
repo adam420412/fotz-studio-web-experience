@@ -139,7 +139,7 @@ const StronyInternetoweGdynia = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Gdynia | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Gdynia | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Gdynia — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gdyni. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gdynia"
         keywords="strony internetowe gdynia, tworzenie stron www gdynia, projektowanie stron gdynia, sklepy internetowe gdynia, strona www gdynia, www gdynia, strony trójmiasto, wykonanie strony internetowej gdynia, responsywna strona www gdynia, wordpress gdynia, strony internetowe trójmiasto"

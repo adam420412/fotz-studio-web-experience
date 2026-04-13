@@ -48,11 +48,13 @@ export default function BlogFeatureAdoptionCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Feature Adoption — co to jest i jak zwiększyć adopcję funkcji? | Fotz.pl"
+        title="Feature Adoption | Fotz Studio"
         description="Feature Adoption: lejek adopcji, breadth vs. depth, strategie zwiększenia, wpływ na NRR i expansion revenue, pułapki w mierzeniu i benchmarki SaaS."
         canonicalUrl="https://fotz.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
 
         keywords="Feature Adoption co to jest, Feature Adoption definicja, czym jest Feature Adoption, Feature Adoption przykłady, jak działa Feature Adoption, Feature Adoption znaczenie, Feature Adoption przewodnik"
+
+        canonical="https://fotz.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
       />
       <ArticleSchema
         title="Feature Adoption — co to jest i jak zwiększyć adopcję funkcji?"

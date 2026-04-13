@@ -53,6 +53,8 @@ export default function BlogChurnPreventionCoTo() {
         canonicalUrl="https://fotz.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
 
         keywords="Churn Prevention co to jest, Churn Prevention definicja, czym jest Churn Prevention, Churn Prevention startup, Churn Prevention jak liczyć, Churn Prevention wzór, Churn Prevention przykłady"
+
+        canonical="https://fotz.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
       />
       <ArticleSchema
         title="Churn Prevention — jak zapobiegać odejściom klientów?"

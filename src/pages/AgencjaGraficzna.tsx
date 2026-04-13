@@ -148,7 +148,7 @@ const AgencjaGraficzna = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Agencja Graficzna Poznań — Projektowanie Graficzne i Identyfikacja Wizualna | Fotz Studio"
+        title="Agencja Graficzna Poznań | Fotz Studio"
         description="Agencja graficzna Poznań — projektowanie graficzne, identyfikacja wizualna firmy, logo, materiały reklamowe, grafika na social media. Fotz Studio."
         canonical="https://fotz.pl/agencja-graficzna"
         keywords="agencja graficzna, projektowanie graficzne, projekt graficzny, identyfikacja wizualna, logo design, agencja kreatywna, usługi graficzne"

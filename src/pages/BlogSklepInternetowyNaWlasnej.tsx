@@ -45,7 +45,7 @@ const BlogSklepInternetowyNaWlasnej = () => {
   return (
     <>
       <SEOHead
-        title="Wlasny sklep internetowy - WooCommerce czy Shopify? Porzadnik 2025"
+        title="Wlasny sklep internetowy - WooCommerce czy Shopify? Porzadnik…"
         description="Czy warto zakładać sklep na wlasnej domenie czy lepiej sprzedawać przez Allegro? Porównanie kosztów, SEO, kontroli, ryzyk. Przewodnik dla przedsiębiorców."
         ogType="article"
         canonical="https://fotz.pl/blog/sklep-internetowy-na-wlasnej-domenie"

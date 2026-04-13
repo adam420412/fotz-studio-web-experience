@@ -37,7 +37,7 @@ export default function AgencjaMarketingowaPlock() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Plock | SEO, Google Ads, Social Media"
-        description="Profesjonalna agencja marketingowa w Plocku. Uslugami SEO, Google Ads, social media marketing i tworzenie stron internetowych dla firm z Mazowsza. Darmowa konsultacja!"
+        description="Profesjonalna agencja marketingowa w Plocku. Uslugami SEO, Google Ads, social media marketing i tworzenie stron internetowych dla firm z Mazowsza. Darmowa…"
         canonical="https://fotz.pl/agencja-marketingowa/plock"
         ogImage="https://fotz.pl/og-plock.png"
         keywords="agencja marketingowa płock, marketing internetowy płock, agencja reklamowa płock, seo płock"

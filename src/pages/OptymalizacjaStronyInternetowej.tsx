@@ -121,7 +121,7 @@ export default function OptymalizacjaStronyInternetowej() {
     <>
       <Layout>
         <SEOHead
-          title="Optymalizacja strony internetowej | Szybsza strona = więcej klientów | fotz.pl"
+          title="Optymalizacja strony internetowej | Fotz Studio"
           description="Optymalizacja strony internetowej — przyspieszamy Twoją stronę, poprawiamy Core Web Vitals, zwiększamy konwersje. Sprawdź co możemy zrobić!"
           canonical="https://fotz.pl/uslugi/optymalizacja-strony-internetowej"
           keywords="optymalizacja strony internetowej, optymalizacja seo strony, przyspieszenie strony, core web vitals, optymalizacja wydajności strony, optymalizacja strony www"

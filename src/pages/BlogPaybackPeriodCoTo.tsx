@@ -87,6 +87,8 @@ export default function BlogPaybackPeriodCoTo() {
         canonicalUrl="https://fotz.pl/blog/cac-payback-period-co-to"
 
         keywords="CAC Payback Period co to jest, CAC Payback Period definicja, czym jest CAC Payback Period, CAC Payback Period startup, CAC Payback Period jak liczyć, CAC Payback Period wzór, CAC Payback Period przykłady"
+
+        canonical="https://fotz.pl/blog/cac-payback-period-co-to"
       />
       <ArticleSchema
         title="CAC Payback Period — co to jest i jak obliczyć?"

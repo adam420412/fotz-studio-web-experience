@@ -95,10 +95,12 @@ export default function BlogDataStorytellingCoTo() {
     <Layout>
       <SEOHead
         title="Data Storytelling — co to jest? Opowiadanie historii z danych"
-        description="Data storytelling — definicja, 3 elementy (dane, wizualizacja, narracja), typy wykresów i 6-krokowy proces. Jak skutecznie komunikować dane i analizy w prezentacjach."
+        description="Data storytelling — definicja, 3 elementy (dane, wizualizacja, narracja), typy wykresów i 6-krokowy proces. Jak skutecznie komunikować dane i analizy w…"
         canonicalUrl="https://fotz.pl/blog/data-storytelling-co-to"
 
         keywords="Data Storytelling co to jest, Data Storytelling definicja, czym jest Data Storytelling, Data Storytelling przykłady, jak działa Data Storytelling, Data Storytelling znaczenie, Data Storytelling przewodnik"
+
+        canonical="https://fotz.pl/blog/data-storytelling-co-to"
       />
       <ArticleSchema
         title="Data Storytelling — co to jest i jak stosować?"

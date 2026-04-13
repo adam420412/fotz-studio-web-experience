@@ -151,7 +151,7 @@ export default function AgencjaMarketingowaRzeszow() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Rzeszów | FOTZ – Marketing Dla Firm w Rzeszowie"
+        title="Agencja Marketingowa Rzeszów | Fotz Studio"
         description="Agencja marketingowa Rzeszów ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Rzeszowa i Podkarpacia. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/rzeszow"
         keywords="agencja marketingowa rzeszów, marketing internetowy rzeszów, agencja reklamowa rzeszów, kampanie reklamowe rzeszów, seo rzeszów, google ads rzeszów"

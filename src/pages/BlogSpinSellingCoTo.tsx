@@ -103,6 +103,8 @@ export default function BlogSpinSellingCoTo() {
         canonicalUrl="https://fotz.pl/blog/spin-selling-metodologia-sprzedazy"
 
         keywords="SPIN Selling co to jest, SPIN Selling definicja, czym jest SPIN Selling, SPIN Selling przykłady, jak działa SPIN Selling, SPIN Selling znaczenie, SPIN Selling przewodnik"
+
+        canonical="https://fotz.pl/blog/spin-selling-metodologia-sprzedazy"
       />
       <ArticleSchema
         title="SPIN Selling — co to jest i jak stosować?"

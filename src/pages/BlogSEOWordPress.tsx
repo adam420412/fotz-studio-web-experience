@@ -35,7 +35,7 @@ const BlogSEOWordPress = () => {
     <>
       <SEOHead
         title="SEO WordPress: Kompletny poradnik 2025 - Ranking w Google"
-        description="Jak pozycjonować WordPress w Google? Wtyczki SEO (Yoast, Rank Math), optymalizacja techniczna, szybkość, Core Web Vitals. Praktyczny przewodnik dla blogerów i firm."
+        description="Jak pozycjonować WordPress w Google? Wtyczki SEO (Yoast, Rank Math), optymalizacja techniczna, szybkość, Core Web Vitals. Praktyczny przewodnik dla…"
         ogType="article"
         canonical="https://fotz.pl/blog/seo-wordpress-poradnik"
         keywords="WordPress SEO, pozycjonowanie WordPress, Yoast SEO, Rank Math, WordPress szybkość, Core Web Vitals"

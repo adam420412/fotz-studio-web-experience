@@ -77,6 +77,8 @@ export default function BlogRagPatternCoTo() {
         canonicalUrl="https://fotz.pl/blog/rag-retrieval-augmented-generation-co-to-jest"
 
         keywords="RAG co to jest, RAG definicja, czym jest RAG, RAG przykłady, jak działa RAG, RAG znaczenie, RAG przewodnik"
+
+        canonical="https://fotz.pl/blog/rag-retrieval-augmented-generation-co-to-jest"
       />
       <ArticleSchema
         title="RAG — co to jest Retrieval Augmented Generation?"

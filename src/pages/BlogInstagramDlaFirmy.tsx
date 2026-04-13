@@ -56,7 +56,7 @@ const BlogInstagramDlaFirmy = () => {
     <>
       <SEOHead
         title="Instagram dla firmy - jak prowadzić profil firmowy? Poradnik 2025"
-        description="Jak efektywnie prowadzić Instagram dla biznesu? Strategie, algorytm, content formaty, płatne vs organiczne. Praktyczny poradnik marketingu na Instagramie dla firm."
+        description="Jak efektywnie prowadzić Instagram dla biznesu? Strategie, algorytm, content formaty, płatne vs organiczne. Praktyczny poradnik marketingu na Instagramie…"
         ogType="article"
         canonical="https://fotz.pl/blog/instagram-dla-firmy"
         keywords="Instagram dla firmy, prowadzenie Instagram, marketing na Instagramie, Instagram business, social media marketing"

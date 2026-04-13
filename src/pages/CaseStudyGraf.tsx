@@ -41,7 +41,7 @@ const CaseStudyGraf = () => {
   return (
     <Layout>
       <SEOHead
-        title="Graf Tapicerstwo — Strona dla Firmy Zabudowy Busów | Case Study Fotz Studio"
+        title="Graf Tapicerstwo | Fotz Studio"
         description="Case study Graf Tapicerstwo: strona internetowa dla firmy zabudowy i tapicerowania busów. SEO i galeria realizacji. Fotz Studio."
         canonical="https://fotz.pl/realizacje/graf-tapicerstwo"
         keywords="case study branding, realizacja identyfikacji wizualnej, branding case study"

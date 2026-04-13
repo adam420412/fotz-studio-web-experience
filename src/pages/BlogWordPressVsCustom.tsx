@@ -54,7 +54,7 @@ const BlogWordPressVsCustom = () => {
   return (
     <>
       <SEOHead
-        title="WordPress vs Strona na Zamówienie — Co Wybrać dla Firmy? | Fotz Studio"
+        title="WordPress vs Strona na Zamówienie — Co Wybrać dla Firmy?"
         description="WordPress czy strona na zamówienie? Porównanie kosztów, czasu, wydajności i SEO. Kiedy wybrać WordPress, a kiedy dedykowaną stronę — wycena i porady"
         ogType="article"
         canonical="https://fotz.pl/blog/wordpress-vs-strona-na-zamowienie"

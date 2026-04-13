@@ -201,7 +201,7 @@ export default function TworzenieStronSzczecin() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Szczecin | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych Szczecin | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Szczecin — profesjonalne strony WWW dla firm. Od 499 zł netto. Wersje PL+DE. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/szczecin"
         ogImage="https://fotz.pl/og-szczecin.jpg"

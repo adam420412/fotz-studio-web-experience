@@ -57,7 +57,7 @@ export default function BlogCopywritingCoTo() {
   return (
     <>
       <SEOHead
-        title="Copywriting — co to jest, rodzaje i ile zarabia copywriter | fotz.pl"
+        title="Copywriting — co to jest, rodzaje i ile zarabia copywriter"
         description="Copywriting co to — kompleksowy przewodnik. Definicja, rodzaje copywritingu, ile zarabia copywriter i jak napisać dobry tekst marketingowy. Przeczytaj!"
         canonical="https://fotz.pl/blog/copywriting-co-to"
 

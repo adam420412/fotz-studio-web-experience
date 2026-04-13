@@ -141,7 +141,7 @@ export default function Kontakt() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Kontakt z Fotz Studio — Agencja Marketingowa Poznań | Napisz lub Zadzwoń"
+        title="Kontakt z Fotz Studio | Fotz Studio"
         description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i…"
         canonical="https://fotz.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"

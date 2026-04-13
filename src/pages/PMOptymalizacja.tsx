@@ -35,7 +35,7 @@ const PMOptymalizacja = () => {
   return (
     <>
       <SEOHead
-        title="Optymalizacja Kampanii Reklamowych — Poprawa ROAS i CPA | Fotz Studio"
+        title="Optymalizacja Kampanii Reklamowych — Poprawa ROAS i CPA"
         description="Optymalizacja kampanii reklamowych — poprawa ROAS, obniżenie CPA, testy A/B reklam, optymalizacja konwersji. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/optymalizacja"
         keywords="optymalizacja kampanii reklamowych, optymalizacja google ads, poprawa roas, obniżenie cpa, optymalizacja meta ads, a/b testing reklam, optymalizacja reklam facebook, zmniejszenie kosztu konwersji, zwiększenie roas, audyt kampanii google ads"

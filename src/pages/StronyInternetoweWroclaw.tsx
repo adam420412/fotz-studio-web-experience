@@ -87,7 +87,7 @@ const StronyInternetoweWroclaw = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Wrocław | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Wrocław | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Wrocław — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wrocławia. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/wroclaw"
         keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław, wykonanie strony internetowej wrocław, responsywna strona www wrocław, wordpress wrocław, nowoczesne strony www wrocław, agencja stron internetowych wrocław"

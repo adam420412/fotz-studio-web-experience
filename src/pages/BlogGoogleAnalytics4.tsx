@@ -34,7 +34,7 @@ export default function BlogGoogleAnalytics4() {
   return (
     <Layout>
       <SEOHead
-        title="Google Analytics 4 — Kompletny Poradnik GA4 dla Firm 2025 | Fotz Studio"
+        title="Google Analytics 4 — Kompletny Poradnik GA4 dla Firm 2025"
         description="Google Analytics 4 poradnik 2025 — jak skonfigurować GA4, czytać raporty i mierzyć konwersje. Migracja z Universal Analytics do GA4. Fotz Studio."
         ogType="article"
         canonical="https://fotz.pl/blog/google-analytics-4-poradnik"

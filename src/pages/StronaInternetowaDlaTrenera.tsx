@@ -62,8 +62,8 @@ export default function StronaInternetowaDlaTrenera() {
   return (
     <>
       <SEOHead
-        title="Strona internetowa dla trenera personalnego — SEO, rezerwacje | fotz.pl"
-        description="Strona internetowa dla trenera personalnego — oferta treningowa, SEO lokalne, system rezerwacji i prezentacja transformacji klientów. Od 1500 zł. Bezpłatna wycena!"
+        title="Strona internetowa dla trenera personalnego — SEO, rezerwacje"
+        description="Strona internetowa dla trenera personalnego — oferta treningowa, SEO lokalne, system rezerwacji i prezentacja transformacji klientów. Od 1500 zł…"
         canonical="https://fotz.pl/uslugi/strona-internetowa-dla-trenera-personalnego"
         keywords="strona internetowa dla trenera, strona www trenera personalnego, strona trenera fitness, portfolio trenera online"
       />

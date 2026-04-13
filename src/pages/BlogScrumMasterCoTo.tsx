@@ -64,6 +64,8 @@ export default function BlogScrumMasterCoTo() {
         canonicalUrl="https://fotz.pl/blog/scrum-master-co-to"
 
         keywords="Scrum Master co to jest, Scrum Master definicja, czym jest Scrum Master, Scrum Master przykłady, jak działa Scrum Master, Scrum Master znaczenie, Scrum Master przewodnik"
+
+        canonical="https://fotz.pl/blog/scrum-master-co-to"
       />
       <ArticleSchema
         title="Scrum Master — co to jest i czym zajmuje się SM?"

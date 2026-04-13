@@ -41,11 +41,13 @@ export default function BlogModernCssCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Modern CSS — Container Queries, :has(), @layer, View Transitions i Scroll Animations 2024 | Fotz.pl"
-        description="Container Queries (@container), :has() parent selector, CSS @layer kaskada, CSS Nesting, View Transitions API (startViewTransition), Scroll-driven Animations (animation-timeline) i CSS Anchor Positioning."
+        title="Modern CSS | Fotz Studio"
+        description="Container Queries (@container), :has() parent selector, CSS @layer kaskada, CSS Nesting, View Transitions API (startViewTransition), Scroll-driven…"
         canonicalUrl="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
 
         keywords="Modern CSS co to jest, Modern CSS definicja, czym jest Modern CSS, Modern CSS przykłady, jak działa Modern CSS, Modern CSS znaczenie, Modern CSS przewodnik"
+
+        canonical="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
       />
       <ArticleSchema
         title="Modern CSS — Container Queries, :has(), @layer, View Transitions i Scroll Animations 2024?"

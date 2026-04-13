@@ -132,7 +132,7 @@ const FacebookAds = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Facebook Ads — Reklama na Facebooku dla Firm | Kampanie Meta Ads | Fotz Studio"
+        title="Facebook Ads — Reklama na Facebooku dla Firm | Kampanie Meta Ads"
         description="Facebook Ads — tworzenie i prowadzenie kampanii reklamowych na Facebooku. Targetowanie, kreacje, retargeting i optymalizacja ROAS. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/facebook-ads"
         keywords="facebook ads polska, agencja facebook ads, kampanie facebook ads, reklamy facebook, meta ads polska, instagram ads polska, facebook ads dla firm, reklama na facebooku, facebook ads cennik, prowadzenie facebook ads, facebook ads agencja"

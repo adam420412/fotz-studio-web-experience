@@ -44,7 +44,7 @@ const BlogEmailMarketingAutomation = () => {
   return (
     <>
       <SEOHead
-        title="Email marketing automation - jak wdrożyć sekwencje maili? 2025 | Fotz Studio"
+        title="Email marketing automation - jak wdrożyć sekwencje maili? 2025"
         description="Sekwencje automatyczne email marketing 2025 — welcome series, drip campaigns, cart abandonment, win-back. Jak wdrożyć automatyzację maili i zwiększyć ROI."
         ogType="article"
         canonical="https://fotz.pl/blog/email-marketing-automation"

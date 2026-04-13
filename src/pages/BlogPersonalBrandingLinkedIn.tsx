@@ -33,7 +33,7 @@ const BlogPersonalBrandingLinkedIn = () => {
   return (
     <>
       <SEOHead
-        title="Personal Branding na LinkedIn — Jak Budować Markę Osobistą? | Fotz Studio"
+        title="Personal Branding na LinkedIn — Jak Budować Markę Osobistą?"
         description="Personal branding LinkedIn — jak zbudować silną markę osobistą na LinkedIn, tworzyć treści i pozyskiwać klientów. Strategia personal brandingu 2025. Fotz…"
         ogType="article"
         canonical="https://fotz.pl/blog/personal-branding-linkedin"

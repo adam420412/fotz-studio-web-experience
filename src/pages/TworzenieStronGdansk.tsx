@@ -218,7 +218,7 @@ const TworzenieStronGdansk = () => {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Gdańsk | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych Gdańsk | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Gdańsku i Trójmieście. Nowoczesne, szybkie strony dla firm. Od 499 zł netto. Bezpłatna wycena i konsultacja!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/gdansk"
         ogImage="https://fotz.pl/og-gdansk.jpg"

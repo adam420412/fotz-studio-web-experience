@@ -64,11 +64,13 @@ export default function BlogNorthStarMetricCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="North Star Metric — co to jest? Metryka Gwiazdy Polarnej w produkcie"
+        title="North Star Metric | Fotz Studio"
         description="North Star Metric (NSM) — definicja, przykłady (Airbnb, Spotify, Slack), jak wybrać NSM, input metrics i 4 antyprzykłady vanity metrics. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/north-star-metric-co-to"
 
         keywords="North Star Metric co to jest, North Star Metric definicja, czym jest North Star Metric, North Star Metric przykłady, jak działa North Star Metric, North Star Metric znaczenie, North Star Metric przewodnik"
+
+        canonical="https://fotz.pl/blog/north-star-metric-co-to"
       />
       <ArticleSchema
         title="North Star Metric — co to jest i jak wybrać metrykę Gwiazdy Polarnej?"

@@ -51,6 +51,8 @@ export default function BlogCustomerHealthScoreCoTo() {
         canonicalUrl="https://fotz.pl/blog/customer-health-score-co-to-jest-jak-zbudowac"
 
         keywords="Customer Health Score co to jest, Customer Health Score definicja, czym jest Customer Health Score, Customer Health Score przykłady, jak działa Customer Health Score, Customer Health Score znaczenie, Customer Health Score przewodnik"
+
+        canonical="https://fotz.pl/blog/customer-health-score-co-to"
       />
       <ArticleSchema
         title="Customer Health Score — co to jest i jak zbudować?"

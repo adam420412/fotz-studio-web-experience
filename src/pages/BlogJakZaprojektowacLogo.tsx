@@ -47,7 +47,7 @@ export default function BlogJakZaprojektowacLogo() {
   return (
     <Layout>
       <SEOHead
-        title="Jak Zaprojektować Logo dla Firmy? Poradnik Krok po Kroku | Fotz Studio"
+        title="Jak Zaprojektować Logo dla Firmy? Poradnik Krok po Kroku"
         description="Jak zaprojektować logo dla firmy? Poznaj etapy projektowania logo — od briefu po gotowe pliki. Porównanie: DIY vs. agencja. Pobierz checklist!"
         ogType="article"
         canonical="https://fotz.pl/blog/jak-zaprojektowac-logo-dla-firmy"

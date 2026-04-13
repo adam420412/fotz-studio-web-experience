@@ -60,7 +60,7 @@ const PozycjonowanieGoogleMaps = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Pozycjonowanie Google Maps — Wizytówka Google Moja Firma | Fotz Studio"
+        title="Pozycjonowanie Google Maps — Wizytówka Google Moja Firma"
         description="Pozycjonowanie Google Maps i optymalizacja wizytówki Google Moja Firma (GMB). Pojawiaj się wysoko w lokalnych wynikach wyszukiwania. Fotz Studio."
         canonical="https://fotz.pl/seo/google-maps"
         keywords="pozycjonowanie google maps, wizytówka google, google moja firma, google business profile, pozycjonowanie lokalne, pozycjonowanie mapy google, seo lokalne google maps, optymalizacja wizytówki google"

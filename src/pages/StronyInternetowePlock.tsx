@@ -87,7 +87,7 @@ const StronyInternetowePlock = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Płock | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Płock | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Płock — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Płocka. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/plock"
         keywords="strony internetowe płock, tworzenie stron płock, strony www płock, projektowanie stron płock"

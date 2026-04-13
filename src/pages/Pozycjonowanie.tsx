@@ -277,7 +277,7 @@ const Pozycjonowanie = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie Stron Internetowych - Agencja SEO dla Firm | Fotz Studio"
+        title="Pozycjonowanie Stron Internetowych - Agencja SEO dla Firm"
         description="Pozycjonowanie stron internetowych w Google. Agencja SEO — audyt SEO, optymalizacja, link building. Skuteczne pozycjonowanie stron www i sklepów…"
         canonical="https://fotz.pl/seo/pozycjonowanie"
         keywords="pozycjonowanie stron internetowych, agencja seo, pozycjonowanie stron www, audyt seo, optymalizacja seo, pozycjonowanie w google, pozycjonowanie lokalne, core web vitals, frazy kluczowe, seo techniczne, link building"

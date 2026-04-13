@@ -331,7 +331,7 @@ const StronyInternetowe = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe — Tworzenie i Projektowanie Stron WWW dla Firm | Fotz Studio"
+        title="Strony Internetowe — Tworzenie i Projektowanie Stron WWW dla Firm"
         description="Strony internetowe dla firm od Fotz Studio — szybkie, nowoczesne, zoptymalizowane pod SEO. Tworzymy strony www, sklepy e-commerce i landing page. Wycena gratis."
         canonical="https://fotz.pl/uslugi/strony-internetowe"
         keywords="strony internetowe, tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, nowoczesne strony internetowe, profesjonalne strony internetowe, wykonanie strony internetowej, responsywna strona www, wordpress, agencja stron internetowych, strona internetowa dla firmy, landing page, sklep internetowy"

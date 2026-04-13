@@ -41,11 +41,13 @@ export default function BlogDockerNodeCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Docker dla Node.js i Next.js — Dockerfile, Docker Compose, GitHub Actions CI/CD 2024 | Fotz.pl"
-        description="Multi-stage Dockerfile (Node.js, Next.js standalone), Docker Compose (Postgres, Redis), GitHub Actions (build/push/deploy), security best practices i Kubernetes basics."
+        title="Docker dla Node.js i Next.js | Fotz Studio"
+        description="Multi-stage Dockerfile (Node.js, Next.js standalone), Docker Compose (Postgres, Redis), GitHub Actions (build/push/deploy), security best practices i…"
         canonicalUrl="https://fotz.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
 
         keywords="Docker dla Node.js i Next.js co to jest, Docker dla Node.js i Next.js jak działa, Docker dla Node.js i Next.js tutorial, Docker dla Node.js i Next.js przykład, czym jest Docker dla Node.js i Next.js, Docker dla Node.js i Next.js dokumentacja, Docker dla Node.js i Next.js przewodnik"
+
+        canonical="https://fotz.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
       />
       <ArticleSchema
         title="Docker dla Node.js i Next.js — Dockerfile, Docker Compose, GitHub Actions CI/CD 2024?"

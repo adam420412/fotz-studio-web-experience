@@ -91,10 +91,12 @@ export default function BlogSubscriptionModelCoTo() {
     <Layout>
       <SEOHead
         title="Model Subskrypcyjny — co to jest? Subscription model MRR i churn"
-        description="Model subskrypcyjny — definicja, 5 typów (SaaS, content, product box), składniki MRR, churn benchmarks i strategie retencji. Kompletny przewodnik po subscription business."
+        description="Model subskrypcyjny — definicja, 5 typów (SaaS, content, product box), składniki MRR, churn benchmarks i strategie retencji. Kompletny przewodnik po…"
         canonicalUrl="https://fotz.pl/blog/subscription-model-co-to"
 
         keywords="Model Subskrypcyjny co to jest, Model Subskrypcyjny definicja, czym jest Model Subskrypcyjny, Model Subskrypcyjny startup, Model Subskrypcyjny jak liczyć, Model Subskrypcyjny wzór, Model Subskrypcyjny przykłady"
+
+        canonical="https://fotz.pl/blog/subscription-model-co-to"
       />
       <ArticleSchema
         title="Model Subskrypcyjny — co to jest i jak go zbudować?"

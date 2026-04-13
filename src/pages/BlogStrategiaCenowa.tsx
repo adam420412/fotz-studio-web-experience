@@ -46,7 +46,7 @@ export default function BlogStrategiaCenowa() {
     <Layout>
       <SEOHead
         title="Strategia Cenowa - Jak Ustalić Ceny Produktów i Usług? 2025"
-        description="Strategia cenowa firmy - modele cenowe (cost-plus, value-based, competitive), analiza kosztów, marża, wpływ na przychód. Jak zbudować politykę cenową. Fotz Studio."
+        description="Strategia cenowa firmy - modele cenowe (cost-plus, value-based, competitive), analiza kosztów, marża, wpływ na przychód. Jak zbudować politykę cenową…"
         ogType="article"
         canonical="https://fotz.pl/blog/strategia-cenowa"
         keywords="strategia cenowa, polityka cenowa firmy, ustalanie cen, modele cenowe, pricing strategy, analiza kosztów"

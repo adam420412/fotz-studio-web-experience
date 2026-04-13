@@ -35,7 +35,7 @@ const SocialMediaContent = () => {
   return (
     <>
       <SEOHead
-        title="Content Social Media — Tworzenie Treści na Social Media | Fotz Studio"
+        title="Content Social Media — Tworzenie Treści na Social Media"
         description="Tworzenie contentu na social media — posty, grafiki, rolki, stories. Profesjonalna produkcja treści dla Facebooka, Instagrama i LinkedIn. Fotz Studio."
         canonical="https://fotz.pl/social-media/content"
         keywords="content social media, tworzenie treści social media, posty na social media, grafiki social media, materiały social media, content creator"

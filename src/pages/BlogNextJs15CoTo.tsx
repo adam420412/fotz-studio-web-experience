@@ -41,11 +41,13 @@ export default function BlogNextJs15CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Next.js 15 — Turbopack dev, async params, unstable_after, caching i migracja z v14 | Fotz.pl"
-        description="Next.js 15 nowości: stabilny Turbopack dev (76% szybszy), async params/searchParams, unstable_after(), zmiany cachingu (opt-out domyślnie), use cache i migracja z v14."
+        title="Next.js 15 | Fotz Studio"
+        description="Next.js 15 nowości: stabilny Turbopack dev (76% szybszy), async params/searchParams, unstable_after(), zmiany cachingu (opt-out domyślnie), use cache i…"
         canonicalUrl="https://fotz.pl/blog/nextjs-15-turbopack-async-params-after-caching-migracja-v14-2024"
 
         keywords="Next.js 15 co to jest, Next.js 15 jak działa, Next.js 15 tutorial, Next.js 15 przykład, czym jest Next.js 15, Next.js 15 dokumentacja, Next.js 15 przewodnik"
+
+        canonical="https://fotz.pl/blog/nextjs-15-turbopack-async-params-after-caching-migracja-v14-2024"
       />
       <ArticleSchema
         title="Next.js 15 — Turbopack dev, async params, unstable_after, caching i migracja z v14?"

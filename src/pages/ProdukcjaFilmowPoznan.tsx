@@ -109,7 +109,7 @@ export default function ProdukcjaFilmowPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Produkcja Filmów Poznań — Filmy Reklamowe i Wideo dla Firm | Fotz Studio"
+        title="Produkcja Filmów Poznań — Filmy Reklamowe i Wideo dla Firm"
         description="Produkcja filmów Poznań — filmy reklamowe, wideo firmowe, sesje fotograficzne i filmy na social media dla firm z Poznania. Fotz Studio."
         canonical="https://fotz.pl/uslugi/produkcja-filmow"
         keywords="produkcja filmów poznań, filmy reklamowe poznań, film korporacyjny poznań, produkcja video poznań, studio filmowe poznań"

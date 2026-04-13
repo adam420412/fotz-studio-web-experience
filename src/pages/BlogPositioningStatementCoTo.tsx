@@ -89,11 +89,13 @@ export default function BlogPositioningStatementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Positioning Statement — co to jest? Deklaracja pozycjonowania marki"
-        description="Positioning statement — definicja, 3 formuły (Moore, Value Proposition Canvas, JTBD), 4 elementy i różnica vs. tagline. Jak pisać deklarację pozycjonowania. Przewodnik."
+        title="Positioning Statement | Fotz Studio"
+        description="Positioning statement — definicja, 3 formuły (Moore, Value Proposition Canvas, JTBD), 4 elementy i różnica vs. tagline. Jak pisać deklarację…"
         canonicalUrl="https://fotz.pl/blog/positioning-statement-co-to"
 
         keywords="Positioning Statement co to jest, Positioning Statement definicja, czym jest Positioning Statement, Positioning Statement przykłady, jak działa Positioning Statement, Positioning Statement znaczenie, Positioning Statement przewodnik"
+
+        canonical="https://fotz.pl/blog/positioning-statement-co-to"
       />
       <ArticleSchema
         title="Positioning Statement — co to jest i jak go napisać?"

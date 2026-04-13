@@ -97,7 +97,7 @@ const PozycjonowanieBialystok = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Białystok — Agencja SEO Podlaskie | Fotz Studio"
-        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, białohat SEO. Bezpłatny audyt SEO dla firm z Białegostoku!"
+        description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, białohat SEO. Bezpłatny audyt SEO dla firm z…"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/bialystok"
         ogTitle="Pozycjonowanie Białystok — Fotz Studio Agencja SEO"
         ogDescription="Skuteczne pozycjonowanie stron w Białymstoku i na Podlasiu. Szybkie efekty, niższa konkurencja SEO niż w dużych miastach. Zamów audyt!"

@@ -183,7 +183,7 @@ const StronyInternetowePoznan = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Poznań | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Poznań | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Poznań — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Poznania. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/poznan"
         keywords="strony internetowe poznań, tworzenie stron poznań, strony www poznań, projektowanie stron poznań, sklep internetowy poznań"

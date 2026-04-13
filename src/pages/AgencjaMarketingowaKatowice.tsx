@@ -140,7 +140,7 @@ export default function AgencjaMarketingowaKatowice() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Marketingowa Katowice | FOTZ – Marketing Dla Firm w Katowicach"
+          title="Agencja Marketingowa Katowice | Fotz Studio"
           description="Agencja marketingowa Katowice ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Katowic i Śląska. Bezpłatna wycena!"
           canonical="https://fotz.pl/agencja-marketingowa/katowice"
         keywords="agencja marketingowa katowice, marketing internetowy katowice, agencja reklamowa katowice, kampanie reklamowe katowice, seo katowice, google ads katowice, agencja marketingowa śląsk"

@@ -86,7 +86,7 @@ const StronyInternetoweKoszalin = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Koszalin | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Koszalin | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Koszalin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Koszalina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/koszalin"
         keywords="strony internetowe koszalin, tworzenie stron koszalin, strony www koszalin, projektowanie stron koszalin"

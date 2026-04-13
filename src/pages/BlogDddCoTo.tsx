@@ -48,11 +48,13 @@ export default function BlogDddCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Domain-Driven Design (DDD) — co to jest, Bounded Context, Aggregate, Event Storming? | Fotz.pl"
+        title="Domain-Driven Design (DDD) | Fotz Studio"
         description="DDD: Ubiquitous Language, Bounded Context, Aggregate, Value Object, Event Storming, Context Map, DDD + mikroserwisy — strategiczny i taktyczny DDD w praktyce."
         canonicalUrl="https://fotz.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming"
 
         keywords="Domain-Driven Design (DDD) co to jest, Domain-Driven Design (DDD) definicja, czym jest Domain-Driven Design (DDD), Domain-Driven Design (DDD) przykłady, jak działa Domain-Driven Design (DDD), Domain-Driven Design (DDD) znaczenie, Domain-Driven Design (DDD) przewodnik"
+
+        canonical="https://fotz.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming"
       />
       <ArticleSchema
         title="Domain-Driven Design (DDD) — co to jest, Bounded Context, Aggregate, Event Storming?"

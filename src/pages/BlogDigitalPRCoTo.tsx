@@ -60,7 +60,7 @@ export default function BlogDigitalPRCoTo() {
   return (
     <>
       <SEOHead
-        title="Digital PR — co to jest i jak zdobywać backlinki przez PR? | fotz.pl"
+        title="Digital PR — co to jest i jak zdobywać backlinki przez PR?"
         description="Digital PR co to jest — wyjaśniamy czym jest Digital PR, jak zdobywać backlinki przez media, HARO, linkable assets i jak mierzyć efekty kampanii."
         canonical="https://fotz.pl/blog/digital-pr-co-to"
 

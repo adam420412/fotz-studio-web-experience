@@ -41,11 +41,13 @@ export default function BlogOpenApiCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="OpenAPI, Zod, tRPC vs REST, Orval i Scalar — dokumentacja API TypeScript 2024 | Fotz.pl"
+        title="OpenAPI, Zod, tRPC vs REST, Orval i Scalar | Fotz Studio"
         description="OpenAPI spec generation z Zod i Hono, tRPC vs OpenAPI, orval + openapi-typescript (generuj React Query hooks), Scalar UI i API versioning — TypeScript 2024."
         canonicalUrl="https://fotz.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024"
 
         keywords="OpenAPI, Zod, tRPC vs REST, Orval i Scalar co to jest, OpenAPI, Zod, tRPC vs REST, Orval i Scalar jak działa, OpenAPI, Zod, tRPC vs REST, Orval i Scalar tutorial, OpenAPI, Zod, tRPC vs REST, Orval i Scalar przykład, czym jest OpenAPI, Zod, tRPC vs REST, Orval i Scalar, OpenAPI, Zod, tRPC vs REST, Orval i Scalar dokumentacja, OpenAPI, Zod, tRPC vs REST, Orval i Scalar przewodnik"
+
+        canonical="https://fotz.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024"
       />
       <ArticleSchema
         title="OpenAPI, Zod, tRPC vs REST, Orval i Scalar — dokumentacja API TypeScript 2024?"

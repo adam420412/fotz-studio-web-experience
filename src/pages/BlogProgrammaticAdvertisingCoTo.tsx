@@ -86,11 +86,13 @@ export default function BlogProgrammaticAdvertisingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Programmatic Advertising — co to jest? Reklama programatyczna i RTB"
-        description="Programmatic advertising — definicja, jak działa RTB, ekosystem (DSP, SSP, DMP, Ad Exchange), 4 typy zakupu i metryki. Kompletny przewodnik po reklamie programatycznej."
+        title="Programmatic Advertising | Fotz Studio"
+        description="Programmatic advertising — definicja, jak działa RTB, ekosystem (DSP, SSP, DMP, Ad Exchange), 4 typy zakupu i metryki. Kompletny przewodnik po reklamie…"
         canonicalUrl="https://fotz.pl/blog/programmatic-advertising-co-to"
 
         keywords="Programmatic Advertising co to jest, Programmatic Advertising definicja, czym jest Programmatic Advertising, Programmatic Advertising w marketingu, Programmatic Advertising przykłady, jak działa Programmatic Advertising, Programmatic Advertising strategia"
+
+        canonical="https://fotz.pl/blog/reklama-programatyczna-co-to"
       />
       <ArticleSchema
         title="Programmatic Advertising — co to jest i jak działa reklama programatyczna?"

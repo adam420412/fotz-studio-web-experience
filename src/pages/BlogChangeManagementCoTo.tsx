@@ -57,10 +57,12 @@ export default function BlogChangeManagementCoTo() {
     <Layout>
       <SEOHead
         title="Change Management — co to jest? Zarządzanie zmianą organizacyjną"
-        description="Change management — definicja, model Kotter's 8-Step i ADKAR, dlaczego 70% zmian kończy się porażką i jak mierzyć skuteczność. Kompletny przewodnik po zarządzaniu zmianą."
+        description="Change management — definicja, model Kotter's 8-Step i ADKAR, dlaczego 70% zmian kończy się porażką i jak mierzyć skuteczność. Kompletny przewodnik po…"
         canonicalUrl="https://fotz.pl/blog/change-management-co-to"
 
         keywords="Change Management co to jest, Change Management definicja, czym jest Change Management, Change Management przykłady, jak działa Change Management, Change Management znaczenie, Change Management przewodnik"
+
+        canonical="https://fotz.pl/blog/change-management-co-to"
       />
       <ArticleSchema
         title="Change Management — co to jest i jak zarządzać zmianą organizacyjną?"

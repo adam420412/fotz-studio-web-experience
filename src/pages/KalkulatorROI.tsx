@@ -59,7 +59,7 @@ const KalkulatorROI = () => {
   return (
     <>
       <SEOHead
-        title="Kalkulator ROI Reklam — Oblicz Zwrot z Inwestycji w Marketing | Fotz Studio"
+        title="Kalkulator ROI Reklam — Oblicz Zwrot z Inwestycji w Marketing"
         description="Kalkulator ROI reklam online — oblicz zwrot z inwestycji w kampanie Google Ads, Meta Ads i SEO. Darmowe narzędzie do planowania budżetu marketingowego…"
         canonical="https://fotz.pl/kalkulator-roi"
         keywords="kalkulator ROI reklam, zwrot z inwestycji marketing, ROI Google Ads kalkulator, ROI Meta Ads, kalkulator efektywności reklam, ROAS kalkulator marketing"

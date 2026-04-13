@@ -45,7 +45,7 @@ const BlogSocialMediaDlaFirm = () => {
     <>
       <SEOHead
         title="Social media dla firm: Kompletny przewodnik 2025 | Fotz"
-        description="Jak prowadzić social media dla firmy w 2025? Strategia, najlepsze platformy, budżety, błędy do unikania. Praktyczny przewodnik dla przedsiębiorców i zarządzających markami."
+        description="Jak prowadzić social media dla firmy w 2025? Strategia, najlepsze platformy, budżety, błędy do unikania. Praktyczny przewodnik dla przedsiębiorców i…"
         ogType="article"
         canonical="https://fotz.pl/blog/social-media-dla-firm"
         keywords="social media dla firm, prowadzenie social media dla firm, facebook dla firmy, instagram dla firmy, jak prowadzić social media"

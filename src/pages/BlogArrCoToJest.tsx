@@ -83,10 +83,12 @@ export default function BlogArrCoToJest() {
     <Layout>
       <SEOHead
         title="ARR co to jest — Annual Recurring Revenue w SaaS | Fotz.pl"
-        description="ARR (Annual Recurring Revenue) — co to jest, jak obliczyć, komponenty ARR, benchmarki wzrostu i różnica między ARR a MRR. Kompletny przewodnik po kluczowej metryce SaaS."
+        description="ARR (Annual Recurring Revenue) — co to jest, jak obliczyć, komponenty ARR, benchmarki wzrostu i różnica między ARR a MRR. Kompletny przewodnik po…"
         canonicalUrl="https://fotz.pl/blog/arr-annual-recurring-revenue-co-to"
 
         keywords="ARR co to jest, ARR definicja, czym jest ARR, ARR startup, ARR jak liczyć, ARR wzór, ARR przykłady"
+
+        canonical="https://fotz.pl/blog/arr-annual-recurring-revenue-co-to"
       />
       <ArticleSchema
         title="ARR co to jest — Annual Recurring Revenue w SaaS"

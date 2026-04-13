@@ -78,6 +78,8 @@ export default function BlogSoc2CoTo() {
         canonicalUrl="https://fotz.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup"
 
         keywords="SOC 2 co to jest, SOC 2 definicja, czym jest SOC 2, SOC 2 przykłady, jak działa SOC 2, SOC 2 znaczenie, SOC 2 przewodnik"
+
+        canonical="https://fotz.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup"
       />
       <ArticleSchema
         title="SOC 2 — co to jest i jak uzyskać certyfikację?"

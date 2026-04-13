@@ -48,11 +48,13 @@ export default function BlogApiGatewayCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="API Gateway — co to jest, Kong, AWS API Gateway, Traefik i Kubernetes Ingress? | Fotz.pl"
+        title="API Gateway | Fotz Studio"
         description="API Gateway: co to jest, Kong vs AWS API Gateway vs Traefik, rate limiting, JWT auth, Kubernetes Ingress i Gateway API — jak wybrać i wdrożyć."
         canonicalUrl="https://fotz.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress"
 
         keywords="API Gateway co to jest, API Gateway jak działa, API Gateway tutorial, API Gateway przykład, czym jest API Gateway, API Gateway dokumentacja, API Gateway przewodnik"
+
+        canonical="https://fotz.pl/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee"
       />
       <ArticleSchema
         title="API Gateway — co to jest, Kong, AWS API Gateway, Traefik i Kubernetes Ingress?"

@@ -64,7 +64,7 @@ export default function BlogGoogleSearchConsole() {
   return (
     <>
       <SEOHead
-        title="Google Search Console — co to jest i jak używać? Poradnik | fotz.pl"
+        title="Google Search Console — co to jest i jak używać? Poradnik"
         description="Google Search Console co to jest — wyjaśniamy jak działa GSC, jak dodać stronę, korzystać z raportów skuteczności i indeksowania oraz jak poprawić SEO."
         canonical="https://fotz.pl/blog/google-search-console-co-to"
 

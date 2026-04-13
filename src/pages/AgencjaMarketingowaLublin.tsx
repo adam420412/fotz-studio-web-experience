@@ -150,7 +150,7 @@ export default function AgencjaMarketingowaLublin() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Lublin | FOTZ – Marketing Dla Firm w Lublinie"
+        title="Agencja Marketingowa Lublin | Fotz Studio"
         description="Agencja marketingowa Lublin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Lublina i Lubelszczyzny. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/lublin"
         keywords="agencja marketingowa lublin, marketing internetowy lublin, agencja reklamowa lublin, kampanie reklamowe lublin, seo lublin, google ads lublin"

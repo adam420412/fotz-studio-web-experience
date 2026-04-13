@@ -85,8 +85,8 @@ export default function BlogFotografiaArchitektura() {
   return (
     <>
       <SEOHead
-        title="Fotografia architektury i wnętrz - jak wykonać profesjonalne zdjęcia? 2025"
-        description="Kompletny poradnik fotografii architektonicznej i wnętrz: typy sesji, ceny, sprzęt, techniki, kiedy wynająć profesjonalistę. Dowiedz się, jak wybór fotografa wpływa na sprzedaż nieruchomości."
+        title="Fotografia architektury i wnętrz - jak wykonać profesjonalne…"
+        description="Kompletny poradnik fotografii architektonicznej i wnętrz: typy sesji, ceny, sprzęt, techniki, kiedy wynająć profesjonalistę. Dowiedz się, jak wybór…"
         ogType="article"
         canonical="https://fotz.pl/blog/fotografia-architektury-wnetrz"
         keywords="fotografia architektury, fotografia wnętrz, fotografia nieruchomości, wirtualny spacer 360, fotografia hotelowa, cena sesji architektonicznej"

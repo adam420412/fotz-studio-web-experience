@@ -192,7 +192,7 @@ export default function AgencjaMarketingowaCzestochowa() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Agencja marketingowa Częstochowa - fotz studio | Marketing internetowy"
+        title="Agencja marketingowa Częstochowa - fotz studio | Fotz Studio"
         description="Agencja marketingowa Częstochowa. Fotz Studio — strony internetowe, SEO, Google Ads dla firm z Częstochowy. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/czestochowa"
         keywords="agencja marketingowa Częstochowa, marketing internetowy Częstochowa, agencja reklamowa Częstochowa, kampanie reklamowe Częstochowa, agencja SEO Częstochowa, Google Ads Częstochowa, digital marketing Częstochowa, marketing dla firm Częstochowa"

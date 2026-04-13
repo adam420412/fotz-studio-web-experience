@@ -33,7 +33,7 @@ const BlogEmailMarketing = () => {
   return (
     <>
       <SEOHead
-        title="Email Marketing 2025 — Jak Budować Listę i Zwiększać Konwersję | Fotz Studio"
+        title="Email Marketing 2025 — Jak Budować Listę i Zwiększać Konwersję"
         description="Email marketing 2025 — jak budować listę mailingową, tworzyć skuteczne kampanie email i zwiększać konwersję. Automatyzacja, segmentacja i personalizacja…"
         ogType="article"
         canonical="https://fotz.pl/content-marketing/email-2025"

@@ -96,7 +96,7 @@ export default function BlogPricingStrategyCoTo() {
   return (
     <>
       <SEOHead
-        title="Pricing Strategy — co to jest? Strategie cenowe w biznesie | fotz.pl"
+        title="Pricing Strategy — co to jest? Strategie cenowe w biznesie"
         description="Pricing strategy co to jest — wyjaśniamy czym jest strategia cenowa, modele cenowe (value-based, freemium, usage-based, SaaS), jak ustalić cenę i WTP badania."
         canonical="https://fotz.pl/blog/pricing-strategy-co-to"
 

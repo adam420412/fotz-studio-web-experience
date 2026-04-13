@@ -89,6 +89,8 @@ export default function BlogAarrrPirateMetrics() {
         canonicalUrl="https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
 
         keywords="AARRR Pirate Metrics, AARRR Pirate Metrics co to jest, AARRR Pirate Metrics jak działa, AARRR Pirate Metrics definicja, AARRR Pirate Metrics przykłady, AARRR Pirate Metrics poradnik, AARRR Pirate Metrics przewodnik"
+
+        canonical="https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
       />
       <ArticleSchema
         title="AARRR Pirate Metrics — framework wzrostu startupu"

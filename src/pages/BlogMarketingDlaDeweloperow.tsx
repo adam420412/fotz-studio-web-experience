@@ -57,7 +57,7 @@ export default function BlogMarketingDlaDeweloperow() {
     <>
       <SEOHead
         title="Marketing dla deweloperów - strategie reklamy nieruchomości 2025"
-        description="Kompletny przewodnik marketingu dla deweloperów. Strategie sprzedaży mieszkań, Google Ads, SEO, wirtualne spacery, lead generation, email marketing. Jak zdobywać kupujących."
+        description="Kompletny przewodnik marketingu dla deweloperów. Strategie sprzedaży mieszkań, Google Ads, SEO, wirtualne spacery, lead generation, email marketing. Jak…"
         ogType="article"
         canonical="https://fotz.pl/blog/marketing-dla-deweloperow"
         keywords="marketing dla deweloperów, reklama dla deweloperów, marketing nieruchomości deweloperskie, strategie sprzedaży mieszkań"

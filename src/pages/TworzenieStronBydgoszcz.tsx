@@ -133,7 +133,7 @@ export default function TworzenieStronBydgoszcz() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Bydgoszcz | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych Bydgoszcz | Fotz Studio"
         description="Tworzenie stron internetowych Bydgoszcz — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/bydgoszcz"
         keywords="tworzenie stron internetowych bydgoszcz, strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron internetowych bydgoszcz, strony www bydgoszcz, tworzenie stron bydgoszcz, strona internetowa bydgoszcz, agencja webdesign bydgoszcz, projektowanie stron www bydgoszcz, sklep internetowy bydgoszcz"

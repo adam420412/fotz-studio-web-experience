@@ -41,11 +41,13 @@ export default function BlogReactPerfCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Performance — React Scan, Million.js, Bundle Analyzer i Code Splitting 2024 | Fotz.pl"
-        description="React Scan (re-render viz), React DevTools Profiler, Why Did You Render, Million.js (block VDOM), Rollup Visualizer, useMemo/useCallback best practices i Code Splitting."
+        title="React Performance | Fotz Studio"
+        description="React Scan (re-render viz), React DevTools Profiler, Why Did You Render, Million.js (block VDOM), Rollup Visualizer, useMemo/useCallback best practices i…"
         canonicalUrl="https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
 
         keywords="React Performance co to jest, React Performance jak działa, React Performance tutorial, React Performance przykład, czym jest React Performance, React Performance dokumentacja, React Performance przewodnik"
+
+        canonical="https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
       />
       <ArticleSchema
         title="React Performance — React Scan, Million.js, Bundle Analyzer i Code Splitting 2024?"

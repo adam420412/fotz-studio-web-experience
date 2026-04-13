@@ -206,7 +206,7 @@ export default function TworzenieStronWarszawa() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Warszawa | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych Warszawa | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Warszawie. Agencja z doświadczeniem, realizacje na czas. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/warszawa"
         ogImage="https://fotz.pl/og-warszawa.jpg"

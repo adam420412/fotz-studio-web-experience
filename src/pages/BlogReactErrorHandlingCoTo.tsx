@@ -41,11 +41,13 @@ export default function BlogReactErrorHandlingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Error handling w React — Error Boundary, Sentry, TanStack Query i Next.js error.tsx 2024 | Fotz.pl"
-        description="Error handling React: Error Boundary (react-error-boundary), typed errors, Result pattern, TanStack Query throwOnError, Sentry integracja i Next.js error.tsx/global-error.tsx."
+        title="Error handling w React | Fotz Studio"
+        description="Error handling React: Error Boundary (react-error-boundary), typed errors, Result pattern, TanStack Query throwOnError, Sentry integracja i Next.js…"
         canonicalUrl="https://fotz.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024"
 
         keywords="Error handling w React co to jest, Error handling w React jak działa, Error handling w React tutorial, Error handling w React przykład, czym jest Error handling w React, Error handling w React dokumentacja, Error handling w React przewodnik"
+
+        canonical="https://fotz.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024"
       />
       <ArticleSchema
         title="Error handling w React — Error Boundary, Sentry, TanStack Query i Next.js error.tsx 2024?"

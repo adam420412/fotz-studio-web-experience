@@ -98,6 +98,8 @@ export default function BlogStakeholderManagementCoTo() {
         canonicalUrl="https://fotz.pl/blog/stakeholder-management-co-to"
 
         keywords="Stakeholder Management co to jest, Stakeholder Management definicja, czym jest Stakeholder Management, Stakeholder Management przykłady, jak działa Stakeholder Management, Stakeholder Management znaczenie, Stakeholder Management przewodnik"
+
+        canonical="https://fotz.pl/blog/stakeholder-management-co-to"
       />
       <ArticleSchema
         title="Stakeholder Management — co to jest i jak zarządzać interesariuszami?"

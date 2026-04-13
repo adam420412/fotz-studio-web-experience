@@ -163,7 +163,7 @@ const TikTokAds = () => {
       <Layout>
       <SEOHead
         title="Agencja TikTok Ads — Reklamy na TikToku dla Firm | Fotz Studio"
-        description="Agencja TikTok Ads ✓ Tworzenie i prowadzenie kampanii na TikToku. In-Feed Ads, Spark Ads, TopView, TikTok for Business. Skuteczne reklamy TikTok. Bezpłatna konsultacja!"
+        description="Agencja TikTok Ads ✓ Tworzenie i prowadzenie kampanii na TikToku. In-Feed Ads, Spark Ads, TopView, TikTok for Business. Skuteczne reklamy TikTok…"
         canonical="https://fotz.pl/performance-marketing/tiktok-ads"
         keywords="agencja tiktok ads, tiktok ads, reklamy tiktok, kampanie tiktok, tiktok ads manager, tiktok for business, tiktok pixel, in-feed ads"
       />

@@ -221,6 +221,8 @@ export default function GoogleAdsLodz() {
         description="Google Ads Łódź — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h. Bezpłatna konsultacja!"
         canonicalUrl="https://fotz.pl/performance-marketing/google-ads/lodz"
         keywords="google ads łódź, agencja google ads łódź, kampanie google ads łódź, reklamy google łódź, google ads dla firm łódź, sem łódź"
+
+        canonical="https://fotz.pl/performance-marketing/google-ads/lodz"
       />
       <ServiceSchema
         name="Kampanie Google Ads Łódź"

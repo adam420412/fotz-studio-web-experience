@@ -114,10 +114,12 @@ export default function BlogRevenueModelCoTo() {
     <Layout>
       <SEOHead
         title="Model Przychodów — co to jest? Revenue Model rodzaje i przykłady"
-        description="Model przychodów (revenue model) — definicja, 8 typów (subskrypcja, freemium, marketplace, usage-based, reklamowy i inne), kluczowe metryki i jak wybrać odpowiedni model. Przewodnik."
+        description="Model przychodów (revenue model) — definicja, 8 typów (subskrypcja, freemium, marketplace, usage-based, reklamowy i inne), kluczowe metryki i jak wybrać…"
         canonicalUrl="https://fotz.pl/blog/revenue-model-co-to"
 
         keywords="Model Przychodów co to jest, Model Przychodów definicja, czym jest Model Przychodów, Model Przychodów przykłady, jak działa Model Przychodów, Model Przychodów znaczenie, Model Przychodów przewodnik"
+
+        canonical="https://fotz.pl/blog/revenue-model-co-to"
       />
       <ArticleSchema
         title="Model Przychodów — co to jest i jakie są rodzaje revenue model?"

@@ -80,6 +80,8 @@ export default function BlogRetentionCurveCoTo() {
         canonicalUrl="https://fotz.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
 
         keywords="Krzywa retencji co to jest, Krzywa retencji definicja, czym jest Krzywa retencji, Krzywa retencji przykłady, jak działa Krzywa retencji, Krzywa retencji znaczenie, Krzywa retencji przewodnik"
+
+        canonical="https://fotz.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
       />
       <ArticleSchema
         title="Krzywa retencji — co to jest i jak poprawić retencję?"

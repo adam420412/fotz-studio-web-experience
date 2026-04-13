@@ -53,6 +53,7 @@ const CaseStudyStronaWWW: React.FC = () => {
         canonical={canonicalUrl}
         ogType="article"
         ogImage="https://fotz.pl/og-case-study-produkcja.jpg"
+        keywords="case study strona internetowa firma produkcyjna, tworzenie stron B2B, SEO techniczne, Core Web Vitals, strona dla firmy produkcyjnej, wzrost ruchu organicznego"
       />
       
       <ArticleSchema

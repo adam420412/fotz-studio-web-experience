@@ -51,6 +51,8 @@ export default function BlogFinOpsCoTo() {
         canonicalUrl="https://fotz.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud"
 
         keywords="FinOps co to jest, FinOps definicja, czym jest FinOps, FinOps przykłady, jak działa FinOps, FinOps znaczenie, FinOps przewodnik"
+
+        canonical="https://fotz.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud"
       />
       <ArticleSchema
         title="FinOps — co to jest i jak optymalizować koszty cloud?"

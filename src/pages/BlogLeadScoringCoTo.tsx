@@ -105,11 +105,13 @@ export default function BlogLeadScoringCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Lead Scoring — co to jest? Ocena i kwalifikacja leadów w marketingu B2B"
+        title="Lead Scoring | Fotz Studio"
         description="Lead scoring — definicja, 4 wymiary scoringu (demograficzne, firmograficzne, behawioralne), MQL vs SQL, 6-krokowy proces i narzędzia. Kompletny przewodnik B2B."
         canonicalUrl="https://fotz.pl/blog/lead-scoring-co-to"
 
         keywords="Lead Scoring co to jest, Lead Scoring definicja, czym jest Lead Scoring, Lead Scoring w marketingu, Lead Scoring przykłady, jak działa Lead Scoring, Lead Scoring strategia"
+
+        canonical="https://fotz.pl/blog/lead-scoring-co-to"
       />
       <ArticleSchema
         title="Lead Scoring — co to jest i jak oceniać leady?"

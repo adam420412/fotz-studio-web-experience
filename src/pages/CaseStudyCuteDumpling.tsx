@@ -41,7 +41,7 @@ const CaseStudyCuteDumpling = () => {
   return (
     <Layout>
       <SEOHead
-        title="Cute as a Dumpling — Sklep E-commerce z Ozdobami Świątecznymi | Case Study Fotz Studio"
+        title="Cute as a Dumpling | Fotz Studio"
         description="Case study: sklep e-commerce dla Cute as a Dumpling — ręcznie robione ozdoby świąteczne. Design, UX i optymalizacja konwersji. Fotz Studio."
         canonical="https://fotz.pl/realizacje/cute-dumpling"
         keywords="case study restauracja, marketing gastronomia realizacja, facebook ads restauracja"

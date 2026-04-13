@@ -62,6 +62,8 @@ export default function BlogSentimentAnalysisCoTo() {
         canonicalUrl="https://fotz.pl/blog/analiza-sentymentu-co-to"
 
         keywords="Analiza Sentymentu co to jest, Analiza Sentymentu definicja, czym jest Analiza Sentymentu, Analiza Sentymentu w marketingu, Analiza Sentymentu przykłady, jak działa Analiza Sentymentu, Analiza Sentymentu strategia"
+
+        canonical="https://fotz.pl/blog/analiza-sentymentu-co-to"
       />
       <ArticleSchema
         title="Analiza Sentymentu — co to jest i jak działa sentiment analysis?"

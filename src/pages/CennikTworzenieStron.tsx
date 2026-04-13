@@ -258,7 +258,7 @@ const CennikTworzenieStron = () => {
   return (
     <Layout>
       <SEOHead
-        title="Cennik tworzenia stron internetowych 2025 | Transparentne ceny | fotz.pl"
+        title="Cennik tworzenia stron internetowych 2025 | Transparentne ceny"
         description="Sprawdź szczegółowy cennik tworzenia stron internetowych. Strony od 499 zł, sklepy od 2999 zł. Transparentne ceny, bez ukrytych kosztów. Bezpłatna wycena!"
         canonical="https://fotz.pl/cennik-tworzenia-stron"
         ogTitle="Cennik tworzenia stron internetowych 2025"

@@ -41,11 +41,13 @@ export default function BlogAiSdkCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="AI SDK, OpenAI, LangChain — integracja AI z Next.js i TypeScript 2024 | Fotz.pl"
+        title="AI SDK, OpenAI, LangChain | Fotz Studio"
         description="Vercel AI SDK, OpenAI API, LangChain.js, LlamaIndex — chatboty, streaming, RAG, image generation, Whisper transcription i generative UI w Next.js 2024."
         canonicalUrl="https://fotz.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
 
         keywords="AI SDK, OpenAI, LangChain co to jest, AI SDK, OpenAI, LangChain jak działa, AI SDK, OpenAI, LangChain tutorial, AI SDK, OpenAI, LangChain przykład, czym jest AI SDK, OpenAI, LangChain, AI SDK, OpenAI, LangChain dokumentacja, AI SDK, OpenAI, LangChain przewodnik"
+
+        canonical="https://fotz.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
       />
       <ArticleSchema
         title="AI SDK, OpenAI, LangChain — integracja AI z Next.js i TypeScript 2024?"

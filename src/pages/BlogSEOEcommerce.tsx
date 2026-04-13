@@ -33,7 +33,7 @@ const BlogSEOEcommerce = () => {
   return (
     <>
       <SEOHead
-        title="SEO dla Sklepów Internetowych — Jak Pozycjonować E-commerce? | Fotz Studio"
+        title="SEO dla Sklepów Internetowych — Jak Pozycjonować E-commerce?"
         description="SEO dla e-commerce — optymalizacja sklepów internetowych: SEO kart produktów, kategorii, link building i techniczne SEO. Jak pozycjonować sklep w Google?…"
         ogType="article"
         canonical="https://fotz.pl/seo/ecommerce"

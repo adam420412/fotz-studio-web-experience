@@ -89,6 +89,8 @@ export default function BlogEsgCoToJest() {
         canonicalUrl="https://fotz.pl/blog/esg-co-to-jest-environmental-social-governance"
 
         keywords="ESG co to jest, ESG definicja, czym jest ESG, ESG przykłady, jak działa ESG, ESG znaczenie, ESG przewodnik"
+
+        canonical="https://fotz.pl/blog/esg-co-to-jest-environmental-social-governance"
       />
       <ArticleSchema
         title="ESG — co to jest i jak wpływa na biznes?"

@@ -85,11 +85,13 @@ export default function BlogCustomerExperienceManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Customer Experience Management (CXM) — co to jest? Zarządzanie doświadczeniami"
-        description="Customer Experience Management — definicja, 6 etapów CX (discover, consider, purchase, use, retain, advocate), metryki NPS/CSAT/CES i narzędzia. Kompletny przewodnik."
+        title="Customer Experience Management (CXM) | Fotz Studio"
+        description="Customer Experience Management — definicja, 6 etapów CX (discover, consider, purchase, use, retain, advocate), metryki NPS/CSAT/CES i narzędzia. Kompletny…"
         canonicalUrl="https://fotz.pl/blog/customer-experience-management-co-to"
 
         keywords="Customer Experience Management (CXM) co to jest, Customer Experience Management (CXM) definicja, czym jest Customer Experience Management (CXM), Customer Experience Management (CXM) przykłady, jak działa Customer Experience Management (CXM), Customer Experience Management (CXM) znaczenie, Customer Experience Management (CXM) przewodnik"
+
+        canonical="https://fotz.pl/blog/customer-experience-management-co-to"
       />
       <ArticleSchema
         title="Customer Experience Management (CXM) — co to jest?"

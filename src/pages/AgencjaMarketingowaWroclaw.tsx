@@ -89,7 +89,7 @@ export default function AgencjaMarketingowaWroclaw() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Wrocław | FOTZ – Marketing Dla Firm we Wrocławiu"
+        title="Agencja Marketingowa Wrocław | Fotz Studio"
         description="Agencja marketingowa Wrocław ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Wrocławia i Dolnego Śląska. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/wroclaw"
         ogTitle="Agencja Marketingowa Wrocław | FOTZ"

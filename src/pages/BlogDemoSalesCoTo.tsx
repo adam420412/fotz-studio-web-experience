@@ -108,6 +108,8 @@ export default function BlogDemoSalesCoTo() {
         canonicalUrl="https://fotz.pl/blog/demo-sprzedazowe-jak-prowadzic"
 
         keywords="Demo sprzedażowe co to jest, Demo sprzedażowe definicja, czym jest Demo sprzedażowe, Demo sprzedażowe w sprzedaży, Demo sprzedażowe strategia, Demo sprzedażowe przykłady, jak używać Demo sprzedażowe"
+
+        canonical="https://fotz.pl/blog/demo-sprzedazowe-jak-prowadzic"
       />
       <ArticleSchema
         title="Demo sprzedażowe — jak prowadzić i przygotować?"

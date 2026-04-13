@@ -86,7 +86,7 @@ const StronyInternetoweKamionki = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Kamionki | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Kamionki | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Kamionki — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Kamionek. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/kamionki"
         keywords="strony internetowe kamionki, tworzenie stron kamionki, strony www kamionki"

@@ -103,7 +103,7 @@ export default function BlogTAMSAMSOMCoTo() {
     <>
       <SEOHead
         title="TAM SAM SOM — co to jest? Analiza rynku dla startupów | fotz.pl"
-        description="TAM SAM SOM co to jest — wyjaśniamy czym jest Total Addressable Market, Serviceable Market i Obtainable Market. Jak obliczyć, jak prezentować inwestorom i unikać błędów."
+        description="TAM SAM SOM co to jest — wyjaśniamy czym jest Total Addressable Market, Serviceable Market i Obtainable Market. Jak obliczyć, jak prezentować inwestorom i…"
         canonical="https://fotz.pl/blog/tam-sam-som-co-to"
 
         keywords="TAM SAM SOM co to jest, TAM SAM SOM definicja, czym jest TAM SAM SOM, TAM SAM SOM startup, TAM SAM SOM jak liczyć, TAM SAM SOM wzór, TAM SAM SOM przykłady"

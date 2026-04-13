@@ -58,7 +58,7 @@ export default function BlogReklamaWGoogle() {
   return (
     <>
       <SEOHead
-        title="Reklama w Google 2025 — jak zacząć i ile kosztuje? Poradnik | Fotz"
+        title="Reklama w Google 2025 | Fotz Studio"
         description="Reklama w Google 2025. Poradnik: Google Ads, Search, Display, Shopping, YouTube, ile kosztuje, CPC, budżet, samodzielnie czy agencja, błędy."
         canonical="https://fotz.pl/blog/reklama-w-google"
         keywords="reklama w Google, Google Ads, Search Ads, Display Ads, Shopping Ads, ile kosztuje, poradnik"

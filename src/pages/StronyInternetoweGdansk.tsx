@@ -87,7 +87,7 @@ const StronyInternetoweGdansk = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Gdańsk | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Gdańsk | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Gdańsk — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gdańska. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gdansk"
         keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk, wykonanie strony internetowej gdańsk, responsywna strona www gdańsk, wordpress gdańsk, strony internetowe trójmiasto, agencja stron internetowych gdańsk"

@@ -90,11 +90,13 @@ export default function BlogProductLaunchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Product Launch — co to jest? Strategia premiery produktu krok po kroku"
-        description="Product launch — definicja, 3 fazy (pre-launch, launch day, post-launch), kanały komunikacji i metryki. Jak przeprowadzić skuteczną premierę produktu lub usługi."
+        title="Product Launch | Fotz Studio"
+        description="Product launch — definicja, 3 fazy (pre-launch, launch day, post-launch), kanały komunikacji i metryki. Jak przeprowadzić skuteczną premierę produktu lub…"
         canonicalUrl="https://fotz.pl/blog/product-launch-co-to"
 
         keywords="Product Launch co to jest, Product Launch definicja, czym jest Product Launch, Product Launch przykłady, jak działa Product Launch, Product Launch znaczenie, Product Launch przewodnik"
+
+        canonical="https://fotz.pl/blog/product-launch-co-to"
       />
       <ArticleSchema
         title="Product Launch — co to jest i jak zaplanować premierę produktu?"

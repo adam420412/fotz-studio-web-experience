@@ -73,7 +73,7 @@ const AgencjaReklamowaPoznan = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Agencja Reklamowa Poznań — Reklama Online, Spoty, Kampanie | Fotz Studio"
+        title="Agencja Reklamowa Poznań — Reklama Online, Spoty, Kampanie"
         description="Agencja reklamowa Poznań — tworzenie reklam wideo, spoty reklamowe, kampanie Google Ads i Meta Ads, identyfikacja wizualna. Fotz Studio."
         canonical="https://fotz.pl/agencja-reklamowa-poznan"
         keywords="agencja reklamowa poznań, kampanie reklamowe poznań, reklama google ads, meta ads poznań, branding poznań, reklama atl btl, agencja kreatywna poznań"

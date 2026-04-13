@@ -70,6 +70,8 @@ export default function BlogJobsToBeDoneCoTo() {
         canonicalUrl="https://fotz.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
 
         keywords="Jobs To Be Done (JTBD) co to jest, Jobs To Be Done (JTBD) definicja, czym jest Jobs To Be Done (JTBD), Jobs To Be Done (JTBD) przykłady, jak działa Jobs To Be Done (JTBD), Jobs To Be Done (JTBD) znaczenie, Jobs To Be Done (JTBD) przewodnik"
+
+        canonical="https://fotz.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
       />
       <ArticleSchema
         title="Jobs To Be Done (JTBD) — co to jest i jak stosować?"

@@ -67,7 +67,7 @@ export default function BlogVoiceSearchCoTo() {
   return (
     <>
       <SEOHead
-        title="Voice Search — co to jest i jak optymalizować SEO pod głos? | fotz.pl"
+        title="Voice Search — co to jest i jak optymalizować SEO pod głos?"
         description="Voice search co to jest — wyjaśniamy czym jest wyszukiwanie głosowe, jak wpływa na SEO, jak optymalizować treść pod Siri i Google Assistant."
         canonical="https://fotz.pl/blog/voice-search-seo"
 

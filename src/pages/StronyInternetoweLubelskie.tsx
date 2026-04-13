@@ -214,7 +214,7 @@ export default function StronyInternetoweLubelskie() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Lubelskie | Strony WWW Lublin | fotz.pl"
+        title="Tworzenie stron internetowych Lubelskie | Strony WWW Lublin"
         description="Tworzenie stron internetowych w województwie lubelskim. Profesjonalne strony WWW dla firm z Lublina i regionu. Od 499 zł. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/strony-internetowe/lubelskie"
         ogImage="https://fotz.pl/og-lubelskie.jpg"

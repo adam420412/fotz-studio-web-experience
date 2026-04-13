@@ -83,6 +83,8 @@ export default function BlogQuotaSprzedazowa() {
         canonicalUrl="https://fotz.pl/blog/quota-sprzedazowa-co-to-jest"
 
         keywords="Quota sprzedażowa co to jest, Quota sprzedażowa definicja, czym jest Quota sprzedażowa, Quota sprzedażowa w sprzedaży, Quota sprzedażowa strategia, Quota sprzedażowa przykłady, jak używać Quota sprzedażowa"
+
+        canonical="https://fotz.pl/blog/quota-sprzedazowa-co-to-jest"
       />
       <ArticleSchema
         title="Quota sprzedażowa — co to jest i jak ustalić?"

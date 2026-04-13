@@ -29,7 +29,7 @@ const BlogReelsVsTikTok = () => {
   return (
     <>
       <SEOHead
-        title="Reelsy vs TikTok — Gdzie Publikować Wideo dla Większego Zasięgu? | Fotz Studio"
+        title="Reelsy vs TikTok — Gdzie Publikować Wideo dla Większego Zasięgu?"
         description="Instagram Reels vs TikTok — porównanie platform, algorytmy, zasięgi i strategie. Gdzie warto publikować krótkie wideo dla Twojej firmy w 2025? Poradnik…"
         ogType="article"
         canonical="https://fotz.pl/social-media/reels-vs-tiktok"

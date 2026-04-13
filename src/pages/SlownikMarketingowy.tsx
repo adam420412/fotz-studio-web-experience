@@ -151,7 +151,7 @@ const SlownikMarketingowy = () => {
   return (
     <>
       <SEOHead
-        title="Słownik Marketingowy — Pojęcia i Definicje z Marketingu Online | Fotz Studio"
+        title="Słownik Marketingowy — Pojęcia i Definicje z Marketingu Online"
         description="Słownik marketingowy Fotz Studio — definicje pojęć z SEO, Google Ads, social media, content marketingu i e-commerce. Poznaj kluczowe terminy marketingu…"
         canonical="https://fotz.pl/slownik-marketingowy"
         keywords="słownik marketingowy, pojęcia marketingowe, definicje SEO, terminy Google Ads, słownik social media, marketing słownik online, pojęcia z marketingu internetowego"

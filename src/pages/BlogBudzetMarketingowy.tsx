@@ -33,7 +33,7 @@ export default function BlogBudzetMarketingowy() {
   return (
     <Layout>
       <SEOHead
-        title="Budżet Marketingowy — Jak Zaplanować Wydatki na Marketing Firmy? | Fotz Studio"
+        title="Budżet Marketingowy — Jak Zaplanować Wydatki na Marketing Firmy?"
         description="Budżet marketingowy firmy — ile wydawać na marketing, jak podzielić budżet między kanały i mierzyć ROI. Praktyczny przewodnik planowania wydatków…"
         ogType="article"
         canonical="https://fotz.pl/blog/budzet-marketingowy-planowanie"

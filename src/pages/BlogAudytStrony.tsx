@@ -39,7 +39,7 @@ export default function BlogAudytStrony() {
   return (
     <>
       <SEOHead
-        title="Audyt Strony Internetowej — Co Sprawdzić i Jak Poprawić SEO? | Fotz Studio"
+        title="Audyt Strony Internetowej — Co Sprawdzić i Jak Poprawić SEO?"
         description="Audyt strony internetowej: co sprawdzić? Przewodnik po audycie SEO, technicznych problemach, Core Web Vitals i koszcie. Sprawdź swoją stronę już dziś."
         ogType="article"
         canonical="https://fotz.pl/blog/audyt-strony-internetowej"

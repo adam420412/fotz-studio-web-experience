@@ -87,7 +87,7 @@ const StronyInternetoweOlsztyn = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Olsztyn | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Olsztyn | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Olsztyn — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Olsztyna. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/olsztyn"
         keywords="strony internetowe olsztyn, tworzenie stron olsztyn, strony www olsztyn, projektowanie stron olsztyn"

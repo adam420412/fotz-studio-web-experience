@@ -33,7 +33,7 @@ const BlogVideoMarketing = () => {
   return (
     <>
       <SEOHead
-        title="Video Marketing — Jak Wideo Wspiera Sprzedaż i Buduje Markę? | Fotz Studio"
+        title="Video Marketing — Jak Wideo Wspiera Sprzedaż i Buduje Markę?"
         description="Video marketing dla firm — jak wideo zwiększa konwersję, buduje markę i wspiera SEO. Rodzaje wideo marketingowego, strategie i produkcja. Poradnik 2025…"
         ogType="article"
         canonical="https://fotz.pl/blog/video-marketing-trendy-2025"

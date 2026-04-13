@@ -76,10 +76,12 @@ export default function BlogFeatureFlagCoTo() {
     <Layout>
       <SEOHead
         title="Feature Flags — co to jest i jak stosować? | Fotz.pl"
-        description="Feature Flags (Feature Toggles) — typy flag, korzyści, platformy (LaunchDarkly, Flagsmith) i różnica vs A/B Testing. Kompletny przewodnik dla Product i Engineering."
+        description="Feature Flags (Feature Toggles) — typy flag, korzyści, platformy (LaunchDarkly, Flagsmith) i różnica vs A/B Testing. Kompletny przewodnik dla Product i…"
         canonicalUrl="https://fotz.pl/blog/feature-flags-co-to-jest-jak-stosowac"
 
         keywords="Feature Flags co to jest, Feature Flags definicja, czym jest Feature Flags, Feature Flags przykłady, jak działa Feature Flags, Feature Flags znaczenie, Feature Flags przewodnik"
+
+        canonical="https://fotz.pl/blog/feature-flags-co-to-jest-jak-stosowac"
       />
       <ArticleSchema
         title="Feature Flags — co to jest i jak stosować?"

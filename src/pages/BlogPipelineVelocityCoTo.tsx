@@ -74,11 +74,13 @@ export default function BlogPipelineVelocityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Pipeline Velocity — co to jest i jak poprawić prędkość pipeline'u? | Fotz.pl"
+        title="Pipeline Velocity | Fotz Studio"
         description="Pipeline Velocity: formuła, 4 dźwignie (okazje, ACV, win rate, sales cycle), zastosowanie w forecasting i kluczowe metryki pipeline dla zespołów SaaS."
         canonicalUrl="https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
 
         keywords="Pipeline Velocity co to jest, Pipeline Velocity definicja, czym jest Pipeline Velocity, Pipeline Velocity przykłady, jak działa Pipeline Velocity, Pipeline Velocity znaczenie, Pipeline Velocity przewodnik"
+
+        canonical="https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
       />
       <ArticleSchema
         title="Pipeline Velocity — co to jest i jak poprawić prędkość pipeline'u?"

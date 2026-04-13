@@ -206,7 +206,7 @@ export default function TworzenieStronKrakow() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Kraków | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych Kraków | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Krakowie. Nowoczesne, responsywne strony dla firm. Od 499 zł. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/krakow"
         ogImage="https://fotz.pl/og-krakow.jpg"

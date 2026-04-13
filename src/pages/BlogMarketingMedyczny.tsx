@@ -36,8 +36,8 @@ export default function BlogMarketingMedyczny() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing medyczny i marketing dla lekarza | Poradnik SEO dla gabinetów"
-        description="Kompleksowy poradnik marketingu medycznego w Polsce. Strategie SEO dla klinik, Google Moja Firma, reklamy Google Ads, content marketing dla lekarzy. Zbuduj zaufanie pacjentów online."
+        title="Marketing medyczny i marketing dla lekarza | Fotz Studio"
+        description="Kompleksowy poradnik marketingu medycznego w Polsce. Strategie SEO dla klinik, Google Moja Firma, reklamy Google Ads, content marketing dla lekarzy…"
         canonical="https://fotz.pl/blog/marketing-medyczny"
         ogImage="https://fotz.pl/images/marketing-medyczny-og.png"
         ogType="article"

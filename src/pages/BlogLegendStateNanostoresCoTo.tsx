@@ -41,11 +41,13 @@ export default function BlogLegendStateNanostoresCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Legend State, Nanostores, Valtio i Signals — state management React 2024 | Fotz.pl"
-        description="State management React 2024: Legend State (signals + persist), Nanostores (1KB multi-framework), Valtio (proxy mutable), Preact Signals, porównanie Zustand/Jotai/XState."
+        title="Legend State, Nanostores, Valtio i Signals | Fotz Studio"
+        description="State management React 2024: Legend State (signals + persist), Nanostores (1KB multi-framework), Valtio (proxy mutable), Preact Signals, porównanie…"
         canonicalUrl="https://fotz.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
 
         keywords="Legend State, Nanostores, Valtio i Signals co to jest, Legend State, Nanostores, Valtio i Signals jak działa, Legend State, Nanostores, Valtio i Signals tutorial, Legend State, Nanostores, Valtio i Signals przykład, czym jest Legend State, Nanostores, Valtio i Signals, Legend State, Nanostores, Valtio i Signals dokumentacja, Legend State, Nanostores, Valtio i Signals przewodnik"
+
+        canonical="https://fotz.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
       />
       <ArticleSchema
         title="Legend State, Nanostores, Valtio i Signals — state management React 2024?"

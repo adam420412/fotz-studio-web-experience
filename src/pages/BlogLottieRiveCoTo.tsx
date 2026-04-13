@@ -41,11 +41,13 @@ export default function BlogLottieRiveCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Lottie, Rive, Framer Motion i GSAP — animacje webowe w React 2024 | Fotz.pl"
+        title="Lottie, Rive, Framer Motion i GSAP | Fotz Studio"
         description="Lottie (After Effects JSON), Rive (state machines), dotLottie, @lottie-interactive — porównanie z Framer Motion, GSAP ScrollTrigger i CSS animacjami w React."
         canonicalUrl="https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
 
         keywords="Lottie, Rive, Framer Motion i GSAP co to jest, Lottie, Rive, Framer Motion i GSAP jak działa, Lottie, Rive, Framer Motion i GSAP tutorial, Lottie, Rive, Framer Motion i GSAP przykład, czym jest Lottie, Rive, Framer Motion i GSAP, Lottie, Rive, Framer Motion i GSAP dokumentacja, Lottie, Rive, Framer Motion i GSAP przewodnik"
+
+        canonical="https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
       />
       <ArticleSchema
         title="Lottie, Rive, Framer Motion i GSAP — animacje webowe w React 2024?"

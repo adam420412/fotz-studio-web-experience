@@ -41,11 +41,13 @@ export default function BlogTailwindV4CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Tailwind CSS v4 — @theme, Oxide engine, OKLCH kolory i migracja z v3 2025 | Fotz.pl"
+        title="Tailwind CSS v4 | Fotz Studio"
         description="Tailwind CSS v4: CSS-first config (@theme), Oxide engine (Rust, 5-10x szybszy), OKLCH kolory, automatyczne content detection, nowe utilities i migracja z v3."
         canonicalUrl="https://fotz.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025"
 
         keywords="Tailwind CSS v4 co to jest, Tailwind CSS v4 definicja, czym jest Tailwind CSS v4, Tailwind CSS v4 przykłady, jak działa Tailwind CSS v4, Tailwind CSS v4 znaczenie, Tailwind CSS v4 przewodnik"
+
+        canonical="https://fotz.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025"
       />
       <ArticleSchema
         title="Tailwind CSS v4 — @theme, Oxide engine, OKLCH kolory i migracja z v3 2025?"

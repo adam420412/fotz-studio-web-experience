@@ -159,8 +159,8 @@ export default function SocialMediaWarszawa() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Social Media Warszawa — prowadzenie Facebooka i Instagrama | Fotz.pl"
-        description="Profesjonalne prowadzenie social media dla firm z Warszawy. Agencja Fotz Studio z doswiadczeniem w obsludze Facebooka, Instagrama i LinkedIn. Pakiety od 800 zl/mies., efekty od 1 miesiaca."
+        title="Agencja Social Media Warszawa | Fotz Studio"
+        description="Profesjonalne prowadzenie social media dla firm z Warszawy. Agencja Fotz Studio z doswiadczeniem w obsludze Facebooka, Instagrama i LinkedIn. Pakiety od…"
         canonical="https://fotz.pl/social-media/warszawa"
         keywords="agencja social media warszawa, obsługa social media warszawa, prowadzenie fanpage warszawa, social media marketing warszawa"
       />

@@ -55,6 +55,8 @@ export default function BlogServiceMeshCoTo() {
         canonicalUrl="https://fotz.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
 
         keywords="Service Mesh co to jest, Service Mesh definicja, czym jest Service Mesh, Service Mesh przykłady, jak działa Service Mesh, Service Mesh znaczenie, Service Mesh przewodnik"
+
+        canonical="https://fotz.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
       />
       <ArticleSchema
         title="Service Mesh — co to jest, Istio, Linkerd i mTLS?"

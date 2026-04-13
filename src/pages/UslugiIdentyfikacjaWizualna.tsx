@@ -154,8 +154,8 @@ const UslugiIdentyfikacjaWizualna = () => {
   return (
     <Layout>
       <SEOHead
-        title="Identyfikacja Wizualna Firmy — Projekt, Logo, Brand Book | Fotz Studio"
-        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Ceny od 1 500 zł. Pełne prawa autorskie. Bezpłatna wycena!"
+        title="Identyfikacja Wizualna Firmy — Projekt, Logo, Brand Book"
+        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Ceny od 1 500 zł. Pełne prawa autorskie…"
         canonical="https://fotz.pl/uslugi/identyfikacja-wizualna"
         ogTitle="Identyfikacja Wizualna Firmy — Fotz Studio Agencja Brandingowa"
         ogDescription="Spójna identyfikacja wizualna buduje rozpoznawalność marki. Logo, brand book, materiały firmowe i digital. Fotz Studio — Poznań i cała Polska."

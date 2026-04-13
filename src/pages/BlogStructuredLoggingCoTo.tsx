@@ -41,11 +41,13 @@ export default function BlogStructuredLoggingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Structured Logging — co to jest, Loki, ELK Stack, Fluentd, Kibana, Grafana | Fotz.pl"
+        title="Structured Logging | Fotz Studio"
         description="Structured Logging: JSON logs, Loki vs ELK Stack, Promtail, Fluentd, Kibana, log levels, correlation ID, GDPR compliance i wyszukiwanie logów w Grafana."
         canonicalUrl="https://fotz.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana"
 
         keywords="Structured Logging co to jest, Structured Logging definicja, czym jest Structured Logging, Structured Logging przykłady, jak działa Structured Logging, Structured Logging znaczenie, Structured Logging przewodnik"
+
+        canonical="https://fotz.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana"
       />
       <ArticleSchema
         title="Structured Logging — co to jest, Loki, ELK Stack, Fluentd, Kibana, Grafana?"

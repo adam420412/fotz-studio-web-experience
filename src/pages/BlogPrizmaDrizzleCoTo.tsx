@@ -41,11 +41,13 @@ export default function BlogPrizmaDrizzleCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Prisma vs Drizzle ORM — TypeScript ORM, schema-first, migracje, edge | Fotz.pl"
+        title="Prisma vs Drizzle ORM | Fotz Studio"
         description="Prisma ORM i Drizzle — schema-first vs SQL-first, Prisma Migrate vs Drizzle Kit, connection pooling, Prisma Accelerate, Neon i kiedy co wybrać w 2024."
         canonicalUrl="https://fotz.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac"
 
         keywords="Prisma vs Drizzle ORM co to jest, Prisma vs Drizzle ORM jak działa, Prisma vs Drizzle ORM tutorial, Prisma vs Drizzle ORM przykład, czym jest Prisma vs Drizzle ORM, Prisma vs Drizzle ORM dokumentacja, Prisma vs Drizzle ORM przewodnik"
+
+        canonical="https://fotz.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac"
       />
       <ArticleSchema
         title="Prisma vs Drizzle ORM — TypeScript ORM, schema-first, migracje, edge?"

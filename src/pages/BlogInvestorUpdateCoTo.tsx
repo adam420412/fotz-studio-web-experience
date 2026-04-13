@@ -100,6 +100,8 @@ export default function BlogInvestorUpdateCoTo() {
         canonicalUrl="https://fotz.pl/blog/investor-update-aktualizacja-dla-inwestorow"
 
         keywords="Investor Update co to jest, Investor Update definicja, czym jest Investor Update, Investor Update startup, Investor Update jak liczyć, Investor Update wzór, Investor Update przykłady"
+
+        canonical="https://fotz.pl/blog/investor-update-aktualizacja-dla-inwestorow"
       />
       <ArticleSchema
         title="Investor Update — co to jest i jak pisać?"

@@ -52,11 +52,13 @@ export default function BlogFunnelAnalyticsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Funnel Analytics — co to jest? Analityka lejka konwersji w produkcie"
-        description="Funnel analytics — definicja, 4 rodzaje funneli (acquisition, onboarding, checkout, trial-to-paid), metryki (conversion rate, drop-off) i jak optymalizować. Przewodnik."
+        title="Funnel Analytics | Fotz Studio"
+        description="Funnel analytics — definicja, 4 rodzaje funneli (acquisition, onboarding, checkout, trial-to-paid), metryki (conversion rate, drop-off) i jak…"
         canonicalUrl="https://fotz.pl/blog/funnel-analytics-co-to"
 
         keywords="Funnel Analytics co to jest, Funnel Analytics definicja, czym jest Funnel Analytics, Funnel Analytics przykłady, jak działa Funnel Analytics, Funnel Analytics znaczenie, Funnel Analytics przewodnik"
+
+        canonical="https://fotz.pl/blog/funnel-analytics-co-to"
       />
       <ArticleSchema
         title="Funnel Analytics — co to jest i jak analizować lejki konwersji?"

@@ -41,11 +41,13 @@ export default function BlogIncidentManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Incident Management — co to jest, severity, PagerDuty, postmortem, on-call SLA | Fotz.pl"
+        title="Incident Management | Fotz Studio"
         description="Incident Management: severity levels, PagerDuty vs Opsgenie vs Incident.io, Runbook, Blameless Postmortem, on-call rotations, SLO/SLA/Error Budget."
         canonicalUrl="https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
 
         keywords="Incident Management co to jest, Incident Management definicja, czym jest Incident Management, Incident Management przykłady, jak działa Incident Management, Incident Management znaczenie, Incident Management przewodnik"
+
+        canonical="https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
       />
       <ArticleSchema
         title="Incident Management — co to jest, severity, PagerDuty, postmortem, on-call SLA?"

@@ -80,6 +80,8 @@ export default function BlogMrrCoToJest() {
         canonicalUrl="https://fotz.pl/blog/mrr-monthly-recurring-revenue-co-to"
 
         keywords="MRR co to jest, MRR definicja, czym jest MRR, MRR startup, MRR jak liczyć, MRR wzór, MRR przykłady"
+
+        canonical="https://fotz.pl/blog/mrr-monthly-recurring-revenue-co-to"
       />
       <ArticleSchema
         title="MRR co to jest — Monthly Recurring Revenue w SaaS"

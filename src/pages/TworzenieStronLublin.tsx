@@ -133,7 +133,7 @@ export default function TworzenieStronLublin() {
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych Lublin | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych Lublin | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Lublin — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/lublin"
         keywords="tworzenie stron internetowych lublin, strony internetowe lublin, tworzenie stron www lublin, projektowanie stron internetowych lublin, strony www lublin, tworzenie stron lublin, strona internetowa lublin, sklepy internetowe lublin, agencja webdesign lublin, projektowanie stron www lublin"

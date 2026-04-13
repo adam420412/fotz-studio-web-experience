@@ -110,7 +110,7 @@ export default function StronyInternetowePodkarpacie() {
     <>
       <SEOHead
         title="Strony internetowe Podkarpacie | Rzeszów | fotz.pl"
-        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Od 499 zł z SEO."
+        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Od…"
         canonical="https://fotz.pl/uslugi/strony-internetowe/podkarpacie"
         ogImage="https://fotz.pl/og-podkarpacie.jpg"
         structuredData={{

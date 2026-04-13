@@ -39,7 +39,7 @@ const BlogContentMarketing = () => {
   return (
     <>
       <SEOHead
-        title="Content marketing dla firm: Jak tworzyć treści, które sprzedają (2025)"
+        title="Content marketing dla firm: Jak tworzyć treści, które sprzedają…"
         description="Jak zbudować skuteczną strategię content marketingu? Blog, video, podcast, ebooki. Praktyczny przewodnik dla firm w 2025 roku."
         ogType="article"
         canonical="https://fotz.pl/blog/content-marketing-dla-firm"

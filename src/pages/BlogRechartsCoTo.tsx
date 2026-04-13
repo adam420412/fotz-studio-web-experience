@@ -41,11 +41,13 @@ export default function BlogRechartsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Recharts, Nivo, Chart.js — wykresy i data visualization w React 2024 | Fotz.pl"
+        title="Recharts, Nivo, Chart.js | Fotz Studio"
         description="Recharts, Nivo, Tremor, Chart.js (react-chartjs-2), Apache ECharts i @visx — line/bar/pie charts, mapy (react-leaflet, deck.gl) i real-time charts w React."
         canonicalUrl="https://fotz.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
 
         keywords="Recharts, Nivo, Chart.js co to jest, Recharts, Nivo, Chart.js jak działa, Recharts, Nivo, Chart.js tutorial, Recharts, Nivo, Chart.js przykład, czym jest Recharts, Nivo, Chart.js, Recharts, Nivo, Chart.js dokumentacja, Recharts, Nivo, Chart.js przewodnik"
+
+        canonical="https://fotz.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
       />
       <ArticleSchema
         title="Recharts, Nivo, Chart.js — wykresy i data visualization w React 2024?"

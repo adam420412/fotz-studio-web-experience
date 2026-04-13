@@ -92,7 +92,7 @@ export default function AgencjaSEOPoznan() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Agencja SEO Poznań — Pozycjonowanie Stron Internetowych | Fotz Studio"
+        title="Agencja SEO Poznań — Pozycjonowanie Stron Internetowych"
         description="Agencja SEO Poznań — pozycjonowanie stron internetowych, audyt SEO, link building i optymalizacja techniczna. Zwiększ widoczność w Google. Fotz Studio."
         canonical="https://fotz.pl/agencja-seo-poznan"
         keywords="agencja SEO Poznań, pozycjonowanie stron Poznań, SEO Poznań, optymalizacja SEO, link building Poznań, audyt SEO Poznań, lokalne SEO Poznań, core web vitals poznań, pozycjonowanie lokalne poznań, agencja pozycjonowania poznań, frazy kluczowe poznań, SEO techniczne poznań"

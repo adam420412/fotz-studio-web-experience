@@ -65,7 +65,7 @@ export default function BlogMarketingBudowlany() {
   return (
     <>
       <SEOHead
-        title="Marketing dla firmy budowlanej — SEO, Google Ads, LinkedIn | fotz.pl"
+        title="Marketing dla firmy budowlanej — SEO, Google Ads, LinkedIn"
         description="Marketing dla firmy budowlanej — jak pozyskiwac klientow przez SEO lokalne, Google Ads, LinkedIn B2B, portfolio i opinie. Strategie dla firm budowlanych."
         canonical="https://fotz.pl/blog/marketing-firma-budowlana"
 

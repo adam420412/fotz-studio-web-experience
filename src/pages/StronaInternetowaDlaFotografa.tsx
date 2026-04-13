@@ -62,8 +62,8 @@ export default function StronaInternetowaDlaFotografa() {
   return (
     <>
       <SEOHead
-        title="Strona internetowa dla fotografa — portfolio, SEO, galerie | fotz.pl"
-        description="Strona internetowa dla fotografa — profesjonalne portfolio z galerią, SEO lokalne, blog fotograficzny i formularz zapytań. Strony dla fotografów od 1500 zł. Wycena!"
+        title="Strona internetowa dla fotografa — portfolio, SEO, galerie"
+        description="Strona internetowa dla fotografa — profesjonalne portfolio z galerią, SEO lokalne, blog fotograficzny i formularz zapytań. Strony dla fotografów od 1500…"
         canonical="https://fotz.pl/uslugi/strona-internetowa-dla-fotografa"
         keywords="strona internetowa dla fotografa, portfolio fotografa, strona www fotograf, strona fotografa cennik, strona fotografa online"
       />

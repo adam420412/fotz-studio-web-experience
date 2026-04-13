@@ -49,10 +49,12 @@ export default function BlogDataGovernanceCoTo() {
     <Layout>
       <SEOHead
         title="Data Governance — co to jest i jak wdrożyć ład danych? | Fotz.pl"
-        description="Data Governance: role (CDO, Data Steward), Data Catalog, Business Glossary, Data Quality, Data Lineage, compliance z GDPR i narzędzia (DataHub, Collibra, Great Expectations)."
+        description="Data Governance: role (CDO, Data Steward), Data Catalog, Business Glossary, Data Quality, Data Lineage, compliance z GDPR i narzędzia (DataHub, Collibra…"
         canonicalUrl="https://fotz.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
 
         keywords="Data Governance co to jest, Data Governance definicja, czym jest Data Governance, Data Governance przykłady, jak działa Data Governance, Data Governance znaczenie, Data Governance przewodnik"
+
+        canonical="https://fotz.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
       />
       <ArticleSchema
         title="Data Governance — co to jest i jak wdrożyć ład danych?"

@@ -15,7 +15,7 @@ export default function AgencjaMarketingowaSzczecin() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Szczecin | FOTZ – Marketing Dla Firm w Szczecinie"
+        title="Agencja Marketingowa Szczecin | Fotz Studio"
         description="Agencja marketingowa Szczecin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Szczecina i Zachodniopomorskiego. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/szczecin"
         keywords="agencja marketingowa szczecin, marketing internetowy szczecin, agencja reklamowa szczecin, kampanie reklamowe szczecin, seo szczecin, google ads szczecin"

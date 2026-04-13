@@ -412,7 +412,7 @@ const Realizacje = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Realizacje i Portfolio — Case Studies Projektów Marketingowych | Fotz Studio"
+        title="Realizacje i Portfolio — Case Studies Projektów Marketingowych"
         description="Portfolio Fotz Studio — realizacje stron internetowych, kampanii SEO, social media i produkcji wideo. Case studies z wynikami dla klientów z różnych branż."
         canonical="https://fotz.pl/realizacje"
         keywords="realizacje, portfolio agencji marketingowej, case study marketing, projekty marketingowe, realizacje digital marketing"

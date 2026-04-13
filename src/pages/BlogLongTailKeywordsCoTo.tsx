@@ -70,7 +70,7 @@ export default function BlogLongTailKeywordsCoTo() {
   return (
     <>
       <SEOHead
-        title="Long Tail Keywords — co to jest? Słowa kluczowe długiego ogona | fotz.pl"
+        title="Long Tail Keywords — co to jest? Słowa kluczowe długiego ogona"
         description="Long tail keywords co to jest — wyjaśniamy czym są słowa kluczowe długiego ogona, jak je znaleźć, dlaczego są ważne dla SEO i jak optymalizować treści."
         canonical="https://fotz.pl/blog/long-tail-keywords-co-to"
 

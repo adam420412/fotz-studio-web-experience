@@ -79,7 +79,7 @@ export default function StudioPodcastowe() {
   return (
     <>
       <SEOHead
-        title="Studio Podcastowe Poznań — Nagrania Podcastów Audio i Wideo | Fotz Studio"
+        title="Studio Podcastowe Poznań — Nagrania Podcastów Audio i Wideo"
         description="Studio podcastowe Poznań — profesjonalne nagrania podcastów audio i wideo, montaż, postprodukcja, dystrybucja. Wynajmij studio nagrań w Poznaniu. Fotz Studio."
         canonical="https://fotz.pl/uslugi/studio-podcastowe"
         keywords="studio podcastowe, nagrywanie podcastów, studio podcast wynajem, podcast studio poznań, nagranie podcastu"

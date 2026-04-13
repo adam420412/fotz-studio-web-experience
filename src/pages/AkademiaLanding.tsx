@@ -52,7 +52,7 @@ export default function AkademiaLanding() {
   return (
     <Layout>
       <SEOHead
-        title="Akademia FOTZ — Kursy Marketingowe Online dla Firm i Marketerów | Fotz Studio"
+        title="Akademia FOTZ — Kursy Marketingowe Online dla Firm i Marketerów"
         description="Akademia FOTZ — kursy i e-booki marketingowe. Naucz się SEO, Google Ads, social media i content marketingu od praktyków. Dostęp online 24/7. Fotz Studio."
         canonical="https://fotz.pl/akademia"
         keywords="akademia marketingowa online, kursy marketingowe dla firm, szkolenia SEO online, kursy Google Ads, akademia fotz, marketing online kursy, e-booki marketingowe"

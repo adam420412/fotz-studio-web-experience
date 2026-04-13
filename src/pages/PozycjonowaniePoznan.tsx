@@ -93,7 +93,7 @@ const PozycjonowaniePoznan = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Poznań — Lokalna Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron internetowych Poznań. Fotz Studio — lokalna agencja SEO z Poznania. Audyt, optymalizacja i link building. Znamy rynek poznański od podszewki!"
+        description="Pozycjonowanie stron internetowych Poznań. Fotz Studio — lokalna agencja SEO z Poznania. Audyt, optymalizacja i link building. Znamy rynek poznański od…"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/poznan"
         ogTitle="Pozycjonowanie Poznań — Fotz Studio Agencja SEO z Poznania"
         ogDescription="Skuteczne pozycjonowanie stron w Poznaniu. Audyt SEO, optymalizacja i link building dla firm z Poznania od lokalnej agencji."

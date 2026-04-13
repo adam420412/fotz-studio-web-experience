@@ -129,7 +129,7 @@ export default function BlogKosztBrandingu() {
   return (
     <Layout>
       <SEOHead
-        title="Ile kosztuje branding? Ceny identyfikacji wizualnej 2025 | Fotz.pl"
+        title="Ile kosztuje branding? Ceny identyfikacji wizualnej 2025"
         description="Pełny poradnik cen brandingu. Porównanie kosztów brandingu dla freelancerów, małych agencji i dużych agencji. Co wchodzi w skład branding i najczęste pytania."
         canonical="https://fotz.pl/blog/ile-kosztuje-branding"
         ogImage="https://fotz.pl/og-branding-ceny.png"

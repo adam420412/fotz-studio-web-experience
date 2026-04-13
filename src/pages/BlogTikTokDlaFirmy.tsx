@@ -44,7 +44,7 @@ export default function BlogTikTokDlaFirmy() {
   return (
     <Layout>
       <SEOHead
-        title="TikTok dla firmy - Kompletny poradnik marketingu 2025 | Fotz Studio"
+        title="TikTok dla firmy - Kompletny poradnik marketingu 2025"
         description="Odkryj jak efektywnie wykorzystać TikTok dla Twojej firmy. Strategie, wskazówki i przykłady dla biznesu na TikTok. Poradnik dla małych i dużych firm."
         canonical="https://fotz.pl/blog/tiktok-dla-firmy"
         keywords="TikTok dla firmy, TikTok biznes, marketing na TikTok, TikTok dla małych firm, TikTok Ads, algorytm TikTok"

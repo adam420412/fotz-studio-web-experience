@@ -47,7 +47,7 @@ export default function BlogIdentyfikacjaWizualna() {
   return (
     <Layout>
       <SEOHead
-        title="Co to jest identyfikacja wizualna? Kompletny przewodnik | Fotz Studio"
+        title="Co to jest identyfikacja wizualna? Kompletny przewodnik"
         description="Identyfikacja wizualna firmy — co to jest, z czego się składa i dlaczego jest ważna. Kompletny przewodnik z przykładami. Poznaj elementy CI i CD."
         ogType="article"
         canonical="https://fotz.pl/blog/co-to-jest-identyfikacja-wizualna"

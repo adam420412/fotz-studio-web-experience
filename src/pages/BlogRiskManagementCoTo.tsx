@@ -67,11 +67,13 @@ export default function BlogRiskManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Risk Management — co to jest? Zarządzanie ryzykiem w projekcie i biznesie"
+        title="Risk Management | Fotz Studio"
         description="Risk management — definicja, 6 kategorii ryzyk, 4 strategie odpowiedzi (Avoid, Transfer, Mitigate, Accept), rejestr ryzyk i macierz P×W. Kompletny przewodnik."
         canonicalUrl="https://fotz.pl/blog/risk-management-co-to"
 
         keywords="Risk Management co to jest, Risk Management definicja, czym jest Risk Management, Risk Management przykłady, jak działa Risk Management, Risk Management znaczenie, Risk Management przewodnik"
+
+        canonical="https://fotz.pl/blog/risk-management-co-to"
       />
       <ArticleSchema
         title="Risk Management — co to jest i jak zarządzać ryzykiem?"

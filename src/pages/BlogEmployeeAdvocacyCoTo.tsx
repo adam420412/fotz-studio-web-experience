@@ -99,6 +99,8 @@ export default function BlogEmployeeAdvocacyCoTo() {
         canonicalUrl="https://fotz.pl/blog/employee-advocacy-co-to"
 
         keywords="Employee Advocacy co to jest, Employee Advocacy definicja, czym jest Employee Advocacy, Employee Advocacy startup, Employee Advocacy jak liczyć, Employee Advocacy wzór, Employee Advocacy przykłady"
+
+        canonical="https://fotz.pl/blog/employee-advocacy-co-to"
       />
       <ArticleSchema
         title="Employee Advocacy — co to jest i jak budować program?"

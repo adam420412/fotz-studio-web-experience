@@ -107,6 +107,8 @@ export default function BlogSalesDiscoveryCoTo() {
         canonicalUrl="https://fotz.pl/blog/sales-discovery-rozmowa-sprzedazowa"
 
         keywords="Sales Discovery co to jest, Sales Discovery definicja, czym jest Sales Discovery, Sales Discovery w sprzedaży, Sales Discovery strategia, Sales Discovery przykłady, jak używać Sales Discovery"
+
+        canonical="https://fotz.pl/blog/sales-discovery-rozmowa-sprzedazowa"
       />
       <ArticleSchema
         title="Sales Discovery — co to jest i jak prowadzić?"

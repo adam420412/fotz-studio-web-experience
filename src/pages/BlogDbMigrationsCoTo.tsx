@@ -41,11 +41,13 @@ export default function BlogDbMigrationsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Database Migrations — co to jest, Flyway, Liquibase, Alembic, zero-downtime, rollback | Fotz.pl"
-        description="Database migrations: Flyway vs Liquibase vs Alembic vs Prisma, zero-downtime schema changes, expand-contract pattern, rollback i schema evolution w mikrousługach."
+        title="Database Migrations | Fotz Studio"
+        description="Database migrations: Flyway vs Liquibase vs Alembic vs Prisma, zero-downtime schema changes, expand-contract pattern, rollback i schema evolution w…"
         canonicalUrl="https://fotz.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback"
 
         keywords="Database Migrations co to jest, Database Migrations jak działa, Database Migrations tutorial, Database Migrations przykład, czym jest Database Migrations, Database Migrations dokumentacja, Database Migrations przewodnik"
+
+        canonical="https://fotz.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback"
       />
       <ArticleSchema
         title="Database Migrations — co to jest, Flyway, Liquibase, Alembic, zero-downtime, rollback?"

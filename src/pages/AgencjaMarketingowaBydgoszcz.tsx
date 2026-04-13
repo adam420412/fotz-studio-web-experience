@@ -155,7 +155,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Bydgoszcz | FOTZ – Marketing Dla Firm w Bydgoszczy"
+        title="Agencja Marketingowa Bydgoszcz | Fotz Studio"
         description="Agencja marketingowa Bydgoszcz ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Bydgoszczy i Kujaw. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/bydgoszcz"
         keywords={[

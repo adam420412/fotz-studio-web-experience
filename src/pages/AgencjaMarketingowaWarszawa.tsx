@@ -226,7 +226,7 @@ const AgencjaMarketingowaWarszawa = () => {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Warszawa | FOTZ – Marketing Dla Firm w Warszawie"
+        title="Agencja Marketingowa Warszawa | Fotz Studio"
         description="Agencja marketingowa Warszawa ✓ SEO, Google Ads, Social Media, strony internetowe. Marketing internetowy Warszawa — 200+ projektów dla firm. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/warszawa"
         keywords="agencja marketingowa warszawa, marketing internetowy warszawa, agencja reklamowa warszawa, seo warszawa, google ads warszawa, firma marketingowa warszawa, reklama internetowa warszawa"

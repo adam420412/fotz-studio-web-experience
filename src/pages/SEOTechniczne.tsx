@@ -35,7 +35,7 @@ const SEOTechniczne = () => {
   return (
     <>
       <SEOHead
-        title="SEO Techniczne — Optymalizacja Techniczna Strony pod Google | Fotz Studio"
+        title="SEO Techniczne — Optymalizacja Techniczna Strony pod Google"
         description="SEO techniczne — optymalizacja szybkości ładowania, Core Web Vitals, indeksowanie, structured data i bezpieczeństwo strony. Fotz Studio."
         canonical="https://fotz.pl/seo/techniczne"
         keywords="seo techniczne, technical seo, core web vitals, szybkość strony seo, indeksowanie google, sitemap xml, robots txt, seo techniczne audyt, page speed seo, crawlowanie strony"

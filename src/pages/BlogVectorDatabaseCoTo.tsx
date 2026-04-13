@@ -53,6 +53,8 @@ export default function BlogVectorDatabaseCoTo() {
         canonicalUrl="https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac"
 
         keywords="Vector Database co to jest, Vector Database jak działa, Vector Database tutorial, Vector Database przykład, czym jest Vector Database, Vector Database dokumentacja, Vector Database przewodnik"
+
+        canonical="https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac"
       />
       <ArticleSchema
         title="Vector Database — co to jest i jak wybrać?"

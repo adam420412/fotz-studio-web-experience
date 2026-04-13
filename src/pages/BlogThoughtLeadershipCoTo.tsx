@@ -101,11 +101,13 @@ export default function BlogThoughtLeadershipCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Thought Leadership — co to jest? Przywództwo myślowe w marketingu B2B"
+        title="Thought Leadership | Fotz Studio"
         description="Thought leadership — definicja, 4 typy, 5 filarów budowania autorytetu i jak mierzyć efektywność. Kompletny przewodnik po przywództwie myślowym."
         canonicalUrl="https://fotz.pl/blog/thought-leadership-co-to"
 
         keywords="Thought Leadership co to jest, Thought Leadership definicja, czym jest Thought Leadership, Thought Leadership w marketingu, Thought Leadership przykłady, jak działa Thought Leadership, Thought Leadership strategia"
+
+        canonical="https://fotz.pl/blog/thought-leadership-co-to"
       />
       <ArticleSchema
         title="Thought Leadership — co to jest i jak budować autorytet?"

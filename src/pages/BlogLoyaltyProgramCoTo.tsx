@@ -89,11 +89,13 @@ export default function BlogLoyaltyProgramCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Program Lojalnościowy — co to jest? Rodzaje i zasady projektowania"
+        title="Program Lojalnościowy | Fotz Studio"
         description="Program lojalnościowy — definicja, 5 rodzajów (punktowy, tierowy, cashback, paid membership), jak projektować skuteczny program i jakie metryki mierzyć."
         canonicalUrl="https://fotz.pl/blog/loyalty-program-co-to"
 
         keywords="Program Lojalnościowy co to jest, Program Lojalnościowy definicja, czym jest Program Lojalnościowy, Program Lojalnościowy przykłady, jak działa Program Lojalnościowy, Program Lojalnościowy znaczenie, Program Lojalnościowy przewodnik"
+
+        canonical="https://fotz.pl/blog/loyalty-program-co-to"
       />
       <ArticleSchema
         title="Program Lojalnościowy — co to jest i jak działa?"

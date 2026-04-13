@@ -26,7 +26,7 @@ const SEOPozycjonowanieWarszawa = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie Warszawa — Agencja SEO dla Firm z Warszawy | Fotz Studio"
+        title="Pozycjonowanie Warszawa — Agencja SEO dla Firm z Warszawy"
         description="Pozycjonowanie stron internetowych Warszawa — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Warszawy. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-warszawa"
         keywords="pozycjonowanie warszawa, agencja seo warszawa, seo warszawa, pozycjonowanie stron warszawa, seo dla firm warszawa, pozycjonowanie lokalne warszawa, audyt seo warszawa"

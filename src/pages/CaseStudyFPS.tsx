@@ -33,7 +33,7 @@ const CaseStudyFPS = () => {
   return (
     <Layout>
       <SEOHead
-        title="FPS Fabryka Pojazdów Szynowych — Strona dla Producenta Przemysłowego | Case Study Fotz Studio"
+        title="FPS Fabryka Pojazdów Szynowych | Fotz Studio"
         description="Case study FPS Poznań (Cegielski): strona internetowa dla producenta pojazdów szynowych. Nowoczesny design, identyfikacja wizualna i UX. Fotz Studio."
         canonical="https://fotz.pl/realizacje/fps-cegielski"
         keywords="case study strony internetowe, realizacja strony www, portfolio strony internetowej"

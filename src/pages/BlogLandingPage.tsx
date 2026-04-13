@@ -33,7 +33,7 @@ const BlogLandingPage = () => {
   return (
     <>
       <SEOHead
-        title="Landing Page — Jak Stworzyć Skuteczną Stronę Lądowania? Poradnik | Fotz Studio"
+        title="Landing Page — Jak Stworzyć Skuteczną Stronę Lądowania? Poradnik"
         description="Jak stworzyć skuteczny landing page? Elementy konwertującej strony lądowania, przykłady i najlepsze praktyki. Poradnik tworzenia landing page 2025. Fotz Studio."
         ogType="article"
         canonical="https://fotz.pl/blog/jak-stworzyc-landing-page"

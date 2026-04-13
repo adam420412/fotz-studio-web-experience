@@ -177,7 +177,7 @@ export default function BlogSEOTechniczne() {
   return (
     <>
       <SEOHead
-        title="Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt"
+        title="Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap…"
         description="Kompletny poradnik technicznego SEO. Co to jest, dlaczego jest ważne, checklist działań, narzędzia. Dowiedź się jak zoptymalizować technical SEO swojej strony."
         canonical="https://fotz.pl/blog/seo-techniczne-poradnik"
 

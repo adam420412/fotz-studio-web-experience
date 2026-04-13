@@ -95,6 +95,8 @@ export default function BlogMvpCoTo() {
         canonicalUrl="https://fotz.pl/blog/mvp-co-to-jest"
 
         keywords="MVP co to jest, MVP definicja, czym jest MVP, MVP startup, MVP jak liczyć, MVP wzór, MVP przykłady"
+
+        canonical="https://fotz.pl/blog/mvp-co-to-jest"
       />
       <ArticleSchema
         title="MVP (Minimum Viable Product) — co to jest i jak budować?"

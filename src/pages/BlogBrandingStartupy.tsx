@@ -47,7 +47,7 @@ export default function BlogBrandingStartupy() {
   return (
     <Layout>
       <SEOHead
-        title="Branding dla Startupów — Jak Zbudować Silną Markę od Zera | Fotz Studio"
+        title="Branding dla Startupów — Jak Zbudować Silną Markę od Zera"
         description="Branding dla startupów — identyfikacja wizualna, naming, strategia marki i pozycjonowanie. Jak zbudować silny branding startup? Poradnik Fotz Studio."
         ogType="article"
         canonical="https://fotz.pl/blog/branding-dla-startupow"

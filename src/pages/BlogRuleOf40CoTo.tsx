@@ -97,10 +97,12 @@ export default function BlogRuleOf40CoTo() {
     <Layout>
       <SEOHead
         title="Rule of 40 — co to jest i jak liczyć? | Fotz.pl"
-        description="Rule of 40 — zasada oceny zdrowia finansowego SaaS: formuła, przykłady, benchmarki wg etapu i jak interpretować wynik. Kompletny przewodnik dla founderów i inwestorów."
+        description="Rule of 40 — zasada oceny zdrowia finansowego SaaS: formuła, przykłady, benchmarki wg etapu i jak interpretować wynik. Kompletny przewodnik dla founderów…"
         canonicalUrl="https://fotz.pl/blog/rule-of-40-co-to-jest"
 
         keywords="Rule of 40 co to jest, Rule of 40 definicja, czym jest Rule of 40, Rule of 40 przykłady, jak działa Rule of 40, Rule of 40 znaczenie, Rule of 40 przewodnik"
+
+        canonical="https://fotz.pl/blog/rule-of-40-co-to-jest"
       />
       <ArticleSchema
         title="Rule of 40 — co to jest i jak liczyć?"

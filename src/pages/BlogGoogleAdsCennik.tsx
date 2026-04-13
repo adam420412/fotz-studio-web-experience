@@ -47,10 +47,12 @@ export default function BlogGoogleAdsCennik() {
     <Layout>
       <SEOHead
         title="Google Ads cennik 2025 — ile kosztuje reklama w Google? | Fotz.pl"
-        description="Google Ads cennik 2025: ile kosztuje reklama w Google? CPC, budżet minimalny, obsługa agencji. Porównanie kampanii Search, PMax, Display i Shopping. Sprawdź koszty."
+        description="Google Ads cennik 2025: ile kosztuje reklama w Google? CPC, budżet minimalny, obsługa agencji. Porównanie kampanii Search, PMax, Display i Shopping…"
         canonicalUrl="https://fotz.pl/blog/google-ads-cennik"
 
         keywords="Google Ads cennik 2025, Google Ads cennik 2025 poradnik, Google Ads cennik 2025 strategia, Google Ads cennik 2025 jak zrobić, Google Ads cennik 2025 marketing, Google Ads cennik 2025 przykłady, Google Ads cennik 2025 w Polsce"
+
+        canonical="https://fotz.pl/blog/google-ads-cennik"
       />
       <ArticleSchema
         title="Google Ads cennik 2025 — ile kosztuje reklama w Google?"

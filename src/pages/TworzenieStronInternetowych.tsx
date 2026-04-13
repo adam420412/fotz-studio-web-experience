@@ -283,7 +283,7 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
   return (
     <>
       <SEOHead
-        title="Tworzenie stron internetowych | Profesjonalne strony WWW | fotz.pl"
+        title="Tworzenie stron internetowych | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe dla firm. Szybkie, responsywne, zoptymalizowane pod SEO. Od 499 zł. Bezpłatna wycena w 24h!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych"
         keywords="tworzenie stron internetowych, tworzenie stron www, projektowanie stron internetowych, strony internetowe dla firm, tworzenie stron cena"

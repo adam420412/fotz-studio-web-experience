@@ -120,7 +120,7 @@ const BlogMarketingDlaSalonuPieknosci = () => {
   return (
     <>
       <SEOHead
-        title="Marketing dla salonu piękności 2025 - jak pozyskiwać klientki? Poradnik"
+        title="Marketing dla salonu piękności 2025 - jak pozyskiwać klientki?…"
         description="Kompletny przewodnik marketingu dla salonu urody i piękności. Instagram, TikTok, Google Moja Firma, Booksy, email, kampanie Facebook. Strategie na 2025."
         ogType="article"
         canonical="https://fotz.pl/blog/marketing-dla-salonu-pieknosci"

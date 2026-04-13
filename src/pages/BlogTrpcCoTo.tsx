@@ -41,11 +41,13 @@ export default function BlogTrpcCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="tRPC — co to jest, end-to-end type safety, Next.js, TanStack Query, vs GraphQL | Fotz.pl"
+        title="tRPC | Fotz Studio"
         description="tRPC: end-to-end TypeScript type safety bez code generation, router i procedury, integracja z Next.js i TanStack Query, tRPC vs REST vs GraphQL vs Zodios."
         canonicalUrl="https://fotz.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
 
         keywords="tRPC co to jest, tRPC jak działa, tRPC tutorial, tRPC przykład, czym jest tRPC, tRPC dokumentacja, tRPC przewodnik"
+
+        canonical="https://fotz.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
       />
       <ArticleSchema
         title="tRPC — co to jest, end-to-end type safety, Next.js, TanStack Query, vs GraphQL?"

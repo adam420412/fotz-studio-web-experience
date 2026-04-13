@@ -97,6 +97,8 @@ export default function BlogBoardMeetingCoTo() {
         canonicalUrl="https://fotz.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac"
 
         keywords="Board Meeting co to jest, Board Meeting definicja, czym jest Board Meeting, Board Meeting przykłady, jak działa Board Meeting, Board Meeting znaczenie, Board Meeting przewodnik"
+
+        canonical="https://fotz.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac"
       />
       <ArticleSchema
         title="Board Meeting — jak przygotować spotkanie zarządu?"

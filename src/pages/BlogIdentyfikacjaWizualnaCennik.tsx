@@ -106,8 +106,8 @@ export default function BlogIdentyfikacjaWizualnaCennik() {
   return (
     <Layout>
       <SEOHead
-        title="Identyfikacja wizualna cennik 2025 — ile kosztuje branding firmy? | Fotz.pl"
-        description="Kompleksowy przewodnik po cenach identyfikacji wizualnej i brandingu firm w Polsce. Poznaj pakiety od logotypu po pelne rebranding, czynniki wpływajace na cene i porady ekspertow."
+        title="Identyfikacja wizualna cennik 2025 | Fotz Studio"
+        description="Kompleksowy przewodnik po cenach identyfikacji wizualnej i brandingu firm w Polsce. Poznaj pakiety od logotypu po pelne rebranding, czynniki wpływajace na…"
         canonical="https://fotz.pl/blog/identyfikacja-wizualna-cennik"
         ogImage="https://fotz.pl/og-identyfikacja-wizualna.png"
 

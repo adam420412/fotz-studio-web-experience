@@ -163,7 +163,7 @@ export default function AgencjaMarketingowaBialystok() {
       <OrganizationSchema />
       <Layout>
         <SEOHead
-          title="Agencja marketingowa Białystok - fotz studio | Marketing internetowy"
+          title="Agencja marketingowa Białystok - fotz studio | Fotz Studio"
           description="Agencja marketingowa Białystok. Fotz Studio — strony internetowe, SEO, Google Ads dla firm z Białegostoku. Bezpłatna wycena!"
           canonical="https://fotz.pl/agencja-marketingowa/bialystok"
           keywords="agencja marketingowa Białystok, marketing internetowy Białystok, agencja reklamowa Białystok, kampanie reklamowe Białystok, agencja SEO Białystok, Google Ads Białystok, digital marketing Białystok, marketing dla firm Białystok"

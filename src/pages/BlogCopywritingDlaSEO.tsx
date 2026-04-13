@@ -126,8 +126,8 @@ const BlogCopywritingDlaSEO = () => {
   return (
     <>
       <SEOHead
-        title="Copywriting SEO - jak pisać teksty zoptymalizowane pod Google? 2025"
-        description="Jak pisać SEO copywriting? Słowa kluczowe, struktura artykułu, meta title, H1-H6, internal linking. Kompletny poradnik tworzenia treści optymalizowanych pod Google."
+        title="Copywriting SEO - jak pisać teksty zoptymalizowane pod Google?…"
+        description="Jak pisać SEO copywriting? Słowa kluczowe, struktura artykułu, meta title, H1-H6, internal linking. Kompletny poradnik tworzenia treści optymalizowanych…"
         ogType="article"
         canonical="https://fotz.pl/blog/copywriting-seo-poradnik"
         keywords="copywriting SEO, SEO copywriting, jak pisać artykuły do SEO, optymalizacja tekstów, słowa kluczowe"

@@ -82,11 +82,13 @@ export default function BlogDesignSprintCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Design Sprint — co to jest? 5-dniowy sprint według Google Ventures"
-        description="Design Sprint — definicja, 5 dni sprintu (Map, Sketch, Decide, Prototype, Test), skład zespołu i kiedy używać. Przewodnik po metodzie Jake'a Knappe z Google Ventures."
+        title="Design Sprint | Fotz Studio"
+        description="Design Sprint — definicja, 5 dni sprintu (Map, Sketch, Decide, Prototype, Test), skład zespołu i kiedy używać. Przewodnik po metodzie Jake'a Knappe z…"
         canonicalUrl="https://fotz.pl/blog/design-sprint-co-to"
 
         keywords="Design Sprint co to jest, Design Sprint definicja, czym jest Design Sprint, Design Sprint startup, Design Sprint jak liczyć, Design Sprint wzór, Design Sprint przykłady"
+
+        canonical="https://fotz.pl/blog/design-sprint-co-to"
       />
       <ArticleSchema
         title="Design Sprint — co to jest i jak wygląda 5-dniowy sprint?"

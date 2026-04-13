@@ -124,6 +124,8 @@ export default function BlogRestApiCoTo() {
         canonicalUrl="https://fotz.pl/blog/rest-api-co-to"
 
         keywords="REST API co to jest, REST API jak działa, REST API tutorial, REST API przykład, czym jest REST API, REST API dokumentacja, REST API przewodnik"
+
+        canonical="https://fotz.pl/blog/rest-api-co-to"
       />
       <ArticleSchema
         title="REST API — co to jest i jak działa? Kompletny przewodnik"

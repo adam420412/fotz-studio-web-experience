@@ -85,10 +85,12 @@ export default function BlogHeatmapCoTo() {
     <Layout>
       <SEOHead
         title="Heatmapa Strony — co to jest? Click scroll i move heatmaps w UX"
-        description="Heatmapa (mapa ciepła) strony internetowej — definicja, 4 typy (click, scroll, move, rage clicks), narzędzia (Hotjar, Clarity) i jak interpretować wyniki. Przewodnik UX."
+        description="Heatmapa (mapa ciepła) strony internetowej — definicja, 4 typy (click, scroll, move, rage clicks), narzędzia (Hotjar, Clarity) i jak interpretować wyniki…"
         canonicalUrl="https://fotz.pl/blog/heatmapa-co-to"
 
         keywords="Heatmapa Strony co to jest, Heatmapa Strony definicja, czym jest Heatmapa Strony, Heatmapa Strony przykłady, jak działa Heatmapa Strony, Heatmapa Strony znaczenie, Heatmapa Strony przewodnik"
+
+        canonical="https://fotz.pl/blog/heatmapa-co-to"
       />
       <ArticleSchema
         title="Heatmapa Strony Internetowej — co to jest i jak używać?"

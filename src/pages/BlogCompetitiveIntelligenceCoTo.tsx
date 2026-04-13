@@ -103,11 +103,13 @@ export default function BlogCompetitiveIntelligenceCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Competitive Intelligence — co to jest? Wywiad konkurencyjny i analiza"
-        description="Competitive intelligence — definicja, 5 frameworków (SWOT, Porter, battlecard, win/loss), 6 źródeł danych i jak zbudować system monitorowania konkurencji. Przewodnik."
+        title="Competitive Intelligence | Fotz Studio"
+        description="Competitive intelligence — definicja, 5 frameworków (SWOT, Porter, battlecard, win/loss), 6 źródeł danych i jak zbudować system monitorowania konkurencji…"
         canonicalUrl="https://fotz.pl/blog/competitive-intelligence-co-to"
 
         keywords="Competitive Intelligence co to jest, Competitive Intelligence definicja, czym jest Competitive Intelligence, Competitive Intelligence przykłady, jak działa Competitive Intelligence, Competitive Intelligence znaczenie, Competitive Intelligence przewodnik"
+
+        canonical="https://fotz.pl/blog/competitive-intelligence-co-to"
       />
       <ArticleSchema
         title="Competitive Intelligence — co to jest i jak stosować?"

@@ -234,7 +234,7 @@ const FotografiaProduktowa = () => {
   return (
     <Layout>
       <SEOHead
-        title="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów | Fotz Studio"
+        title="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów"
         description="Profesjonalna fotografia produktowa dla e-commerce i marek. Fotz Studio — zdjęcia produktów, sesje packshot, fotografia białe tło. Zamów wycenę!"
         canonical="https://fotz.pl/uslugi/fotografia-produktowa"
         ogTitle="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów"

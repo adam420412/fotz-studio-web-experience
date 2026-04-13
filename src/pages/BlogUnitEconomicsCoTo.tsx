@@ -96,11 +96,13 @@ export default function BlogUnitEconomicsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Unit Economics — co to jest? LTV, CAC i LTV:CAC dla SaaS i startupów"
-        description="Unit economics — definicja, 6 kluczowych metryk (LTV, CAC, LTV:CAC, Payback, Gross Margin, Magic Number) i benchmarki. Kompletny przewodnik dla startupów i SaaS."
+        title="Unit Economics | Fotz Studio"
+        description="Unit economics — definicja, 6 kluczowych metryk (LTV, CAC, LTV:CAC, Payback, Gross Margin, Magic Number) i benchmarki. Kompletny przewodnik dla startupów…"
         canonicalUrl="https://fotz.pl/blog/unit-economics-co-to"
 
         keywords="Unit Economics co to jest, Unit Economics definicja, czym jest Unit Economics, Unit Economics startup, Unit Economics jak liczyć, Unit Economics wzór, Unit Economics przykłady"
+
+        canonical="https://fotz.pl/blog/unit-economics-co-to"
       />
       <ArticleSchema
         title="Unit Economics — co to jest i jak analizować LTV i CAC?"

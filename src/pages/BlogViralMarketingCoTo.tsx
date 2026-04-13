@@ -90,6 +90,8 @@ export default function BlogViralMarketingCoTo() {
         canonicalUrl="https://fotz.pl/blog/viral-marketing-co-to"
 
         keywords="Viral Marketing co to jest, Viral Marketing definicja, czym jest Viral Marketing, Viral Marketing w marketingu, Viral Marketing przykłady, jak działa Viral Marketing, Viral Marketing strategia"
+
+        canonical="https://fotz.pl/blog/viral-marketing-co-to"
       />
       <ArticleSchema
         title="Viral Marketing — co to jest i jak działa?"

@@ -68,10 +68,12 @@ export default function BlogUserPersonaCoTo() {
     <Layout>
       <SEOHead
         title="User Persona — co to jest? Buyer persona jak tworzyć"
-        description="User persona (buyer persona) — definicja, 7 komponentów, jak zbierać dane, ile person mieć i jak używać w marketingu i produkcie. Przewodnik po persona marketingowej."
+        description="User persona (buyer persona) — definicja, 7 komponentów, jak zbierać dane, ile person mieć i jak używać w marketingu i produkcie. Przewodnik po persona…"
         canonicalUrl="https://fotz.pl/blog/user-persona-co-to"
 
         keywords="User Persona co to jest, User Persona definicja, czym jest User Persona, User Persona w sprzedaży, User Persona strategia, User Persona przykłady, jak używać User Persona"
+
+        canonical="https://fotz.pl/blog/user-persona-co-to"
       />
       <ArticleSchema
         title="User Persona — co to jest i jak tworzyć buyer personas?"

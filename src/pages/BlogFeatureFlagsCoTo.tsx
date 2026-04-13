@@ -47,11 +47,13 @@ export default function BlogFeatureFlagsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Feature Flags — co to jest, LaunchDarkly, Unleash, OpenFeature i A/B testing? | Fotz.pl"
+        title="Feature Flags | Fotz Studio"
         description="Feature Flags: typy flag, targeting, LaunchDarkly vs Unleash vs Flagsmith, OpenFeature standard, A/B testing i najlepsze praktyki zarządzania flagami."
         canonicalUrl="https://fotz.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing"
 
         keywords="Feature Flags co to jest, Feature Flags definicja, czym jest Feature Flags, Feature Flags przykłady, jak działa Feature Flags, Feature Flags znaczenie, Feature Flags przewodnik"
+
+        canonical="https://fotz.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing"
       />
       <ArticleSchema
         title="Feature Flags — co to jest, LaunchDarkly, Unleash, OpenFeature i A/B testing?"

@@ -73,6 +73,8 @@ export default function BlogNpsCoToJest() {
         canonicalUrl="https://fotz.pl/blog/nps-net-promoter-score-co-to-jest"
 
         keywords="NPS (Net Promoter Score) co to jest, NPS (Net Promoter Score) definicja, czym jest NPS (Net Promoter Score), NPS (Net Promoter Score) przykłady, jak działa NPS (Net Promoter Score), NPS (Net Promoter Score) znaczenie, NPS (Net Promoter Score) przewodnik"
+
+        canonical="https://fotz.pl/blog/nps-net-promoter-score-co-to-jest"
       />
       <ArticleSchema
         title="NPS (Net Promoter Score) — co to jest i jak mierzyć?"

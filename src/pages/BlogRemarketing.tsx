@@ -34,7 +34,7 @@ export default function BlogRemarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Remarketing — Jak Odzyskać Klientów, którzy Odwiedzili Twoją Stronę? | Fotz Studio"
+        title="Remarketing | Fotz Studio"
         description="Remarketing i retargeting — jak konfigurować kampanie remarketingowe Google Ads i Meta Ads, by odzyskiwać odwiedzających i zwiększać konwersję. Fotz Studio."
         ogType="article"
         canonical="https://fotz.pl/performance-marketing/remarketing"

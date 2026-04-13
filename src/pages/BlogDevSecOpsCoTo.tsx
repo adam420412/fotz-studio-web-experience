@@ -55,6 +55,8 @@ export default function BlogDevSecOpsCoTo() {
         canonicalUrl="https://fotz.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd"
 
         keywords="DevSecOps co to jest, DevSecOps definicja, czym jest DevSecOps, DevSecOps przykłady, jak działa DevSecOps, DevSecOps znaczenie, DevSecOps przewodnik"
+
+        canonical="https://fotz.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd"
       />
       <ArticleSchema
         title="DevSecOps — co to jest i jak wbudować security w CI/CD?"

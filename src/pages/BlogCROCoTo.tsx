@@ -66,7 +66,7 @@ export default function BlogCROCoTo() {
   return (
     <>
       <SEOHead
-        title="CRO — co to jest? Conversion Rate Optimization — poradnik | fotz.pl"
+        title="CRO — co to jest? Conversion Rate Optimization — poradnik"
         description="CRO co to jest — wyjaśniamy czym jest Conversion Rate Optimization, jak obliczyć współczynnik konwersji, techniki CRO i jak poprawić konwersję strony."
         canonical="https://fotz.pl/blog/cro-co-to-jest"
 

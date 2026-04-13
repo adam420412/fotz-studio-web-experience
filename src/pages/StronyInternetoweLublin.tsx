@@ -139,7 +139,7 @@ const StronyInternetoweLublin = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Lublin | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Lublin | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Lublin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Lublina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/lublin"
         keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin, wykonanie strony internetowej lublin, responsywna strona www lublin, wordpress lublin, nowoczesne strony www lublin"

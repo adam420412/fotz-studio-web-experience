@@ -33,7 +33,7 @@ const CaseStudyFabrykaVirali = () => {
   return (
     <Layout>
       <SEOHead
-        title="Fabryka Virali — Strona dla Agencji Social Media | Case Study Fotz Studio"
+        title="Fabryka Virali | Fotz Studio"
         description="Case study Fabryka Virali: strona internetowa dla agencji social media. Przejrzysty cennik, portfolio i optymalizacja konwersji. Fotz Studio."
         canonical="https://fotz.pl/realizacje/fabryka-virali"
         keywords="case study social media, viral marketing realizacja, content marketing case study"

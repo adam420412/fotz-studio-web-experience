@@ -64,7 +64,7 @@ const BlogTrendyEcommerce2027 = () => {
     <>
       <SEOHead
         title="Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport]"
-        description="Jakie trendy e-commerce zdominują 2027 rok? AI w zakupach, social commerce, quick commerce, personalizacja i zrównoważony handel. Przygotuj swój sklep na przyszłość!"
+        description="Jakie trendy e-commerce zdominują 2027 rok? AI w zakupach, social commerce, quick commerce, personalizacja i zrównoważony handel. Przygotuj swój sklep na…"
         canonical="https://fotz.pl/blog/trendy-ecommerce-2027"
         ogType="article"
         ogImage="https://fotz.pl/og-trendy-ecommerce-2027.jpg"

@@ -75,7 +75,7 @@ export default function BlogFotografiaProduktowa() {
     <>
       <SEOHead
         title="Fotografia produktowa — kompletny poradnik 2025 | Fotz.pl"
-        description="Fotografia produktowa poradnik: ceny, typy sesji, przygotowanie produktów, wpływ na sprzedaż e-commerce. Dowiedz się, jak wybrać fotografa i zwiększyć konwersję."
+        description="Fotografia produktowa poradnik: ceny, typy sesji, przygotowanie produktów, wpływ na sprzedaż e-commerce. Dowiedz się, jak wybrać fotografa i zwiększyć…"
         ogType="article"
         canonical="https://fotz.pl/blog/fotografia-produktowa-poradnik"
         keywords="fotografia produktowa, fotografia produktów, packshot, lifestyle photography, e-commerce fotografia, cena sesji"

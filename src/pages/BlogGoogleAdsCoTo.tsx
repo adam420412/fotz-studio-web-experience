@@ -66,7 +66,7 @@ export default function BlogGoogleAdsCoTo() {
   return (
     <>
       <SEOHead
-        title="Google Ads — co to jest i jak działa? Kompletny poradnik | fotz.pl"
+        title="Google Ads — co to jest i jak działa? Kompletny poradnik"
         description="Google Ads co to jest — wyjaśniamy jak działa, ile kosztuje i kiedy się opłaca. Rodzaje kampanii, modele rozliczeń, pierwsze kroki. Poradnik 2025."
         canonical="https://fotz.pl/blog/google-ads-co-to"
         keywords="google ads co to jest, co to jest google ads, jak działa google ads, google ads poradnik, google ads dla początkujących, kampanie google ads, google ads reklama, adwords co to"

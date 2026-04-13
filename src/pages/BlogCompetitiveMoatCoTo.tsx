@@ -83,11 +83,13 @@ export default function BlogCompetitiveMoatCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Competitive Moat — co to jest fosa ekonomiczna? Przewaga konkurencyjna"
-        description="Economic moat (fosa ekonomiczna) — definicja, 5 typów (network effects, switching costs, cost advantage, intangibles, efficient scale), jak oceniać i przykłady. Przewodnik."
+        title="Competitive Moat | Fotz Studio"
+        description="Economic moat (fosa ekonomiczna) — definicja, 5 typów (network effects, switching costs, cost advantage, intangibles, efficient scale), jak oceniać i…"
         canonicalUrl="https://fotz.pl/blog/competitive-moat-co-to"
 
         keywords="Competitive Moat co to jest, Competitive Moat definicja, czym jest Competitive Moat, Competitive Moat przykłady, jak działa Competitive Moat, Competitive Moat znaczenie, Competitive Moat przewodnik"
+
+        canonical="https://fotz.pl/blog/competitive-moat-co-to"
       />
       <ArticleSchema
         title="Competitive Moat — co to jest i jak budować fosę ekonomiczną?"

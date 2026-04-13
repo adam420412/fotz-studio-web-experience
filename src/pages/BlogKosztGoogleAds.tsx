@@ -37,7 +37,7 @@ const BlogKosztGoogleAds = () => {
   return (
     <>
       <SEOHead
-        title="Ile Kosztuje Reklama w Google? Cennik Google Ads 2026 | Fotz Studio"
+        title="Ile Kosztuje Reklama w Google? Cennik Google Ads 2026"
         description="Ile kosztuje Google Ads? Poznaj realne koszty reklamy w Google: CPC w Polsce, budżety kampanii, ROI. Cennik usług Google Ads na 2026 rok."
         ogType="article"
         canonical="https://fotz.pl/blog/ile-kosztuje-reklama-w-google"

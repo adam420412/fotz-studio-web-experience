@@ -52,7 +52,7 @@ export default function BlogRebrandingCoTo() {
   return (
     <>
       <SEOHead
-        title="Rebranding — co to jest, kiedy warto i jak to zrobić | Blog fotz.pl"
+        title="Rebranding | Fotz Studio"
         description="Rebranding co to — kompleksowy przewodnik. Kiedy rebranding jest konieczny, jak go przeprowadzić krok po kroku i ile kosztuje. Przykłady i wskazówki."
         canonical="https://fotz.pl/blog/rebranding-co-to"
 

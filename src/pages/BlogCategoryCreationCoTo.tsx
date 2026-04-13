@@ -69,10 +69,12 @@ export default function BlogCategoryCreationCoTo() {
     <Layout>
       <SEOHead
         title="Category Creation — tworzenie kategorii rynkowej | Fotz.pl"
-        description="Category Creation (tworzenie kategorii) — strategia budowania nowej kategorii produktowej, etapy, różnica vs pozycjonowanie i przykłady (Salesforce, HubSpot, Gainsight)."
+        description="Category Creation (tworzenie kategorii) — strategia budowania nowej kategorii produktowej, etapy, różnica vs pozycjonowanie i przykłady (Salesforce…"
         canonicalUrl="https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
 
         keywords="Category Creation co to jest, Category Creation definicja, czym jest Category Creation, Category Creation przykłady, jak działa Category Creation, Category Creation znaczenie, Category Creation przewodnik"
+
+        canonical="https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
       />
       <ArticleSchema
         title="Category Creation — tworzenie kategorii rynkowej"

@@ -87,7 +87,7 @@ const StronyInternetoweSosnowiec = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Sosnowiec | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Sosnowiec | Fotz Studio"
         description="Strony internetowe Sosnowiec — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Sosnowca. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/sosnowiec"
         keywords="strony internetowe sosnowiec, tworzenie stron sosnowiec, strony www sosnowiec, projektowanie stron sosnowiec"

@@ -41,11 +41,13 @@ export default function BlogWebSecurityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Web Security — XSS, CSRF, CSP, SQL Injection, OWASP Top 10, Node.js | Fotz.pl"
-        description="Bezpieczeństwo webowe: OWASP Top 10, XSS, SQL Injection, CSRF, CSP headers, bcrypt/Argon2, MFA, npm audit, Dependabot, supply chain security w Node.js i Next.js."
+        title="Web Security | Fotz Studio"
+        description="Bezpieczeństwo webowe: OWASP Top 10, XSS, SQL Injection, CSRF, CSP headers, bcrypt/Argon2, MFA, npm audit, Dependabot, supply chain security w Node.js i…"
         canonicalUrl="https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
 
         keywords="Web Security co to jest, Web Security jak działa, Web Security tutorial, Web Security przykład, czym jest Web Security, Web Security dokumentacja, Web Security przewodnik"
+
+        canonical="https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
       />
       <ArticleSchema
         title="Web Security — XSS, CSRF, CSP, SQL Injection, OWASP Top 10, Node.js?"

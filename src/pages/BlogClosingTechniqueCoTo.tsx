@@ -85,6 +85,8 @@ export default function BlogClosingTechniqueCoTo() {
         canonicalUrl="https://fotz.pl/blog/techniki-closingu-zamykanie-sprzedazy"
 
         keywords="Techniki closingu co to jest, Techniki closingu definicja, czym jest Techniki closingu, Techniki closingu w sprzedaży, Techniki closingu strategia, Techniki closingu przykłady, jak używać Techniki closingu"
+
+        canonical="https://fotz.pl/blog/techniki-closingu-zamykanie-sprzedazy"
       />
       <ArticleSchema
         title="Techniki closingu — jak zamykać sprzedaż B2B?"

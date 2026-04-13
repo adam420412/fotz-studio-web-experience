@@ -102,10 +102,12 @@ export default function BlogMarketSegmentationCoTo() {
     <Layout>
       <SEOHead
         title="Segmentacja Rynku — co to jest? Rodzaje segmentacji i model STP"
-        description="Segmentacja rynku — definicja, 5 rodzajów (demograficzna, geograficzna, psychograficzna, behawioralna, firmograficzna), model STP i kryteria wyboru segmentu. Przewodnik."
+        description="Segmentacja rynku — definicja, 5 rodzajów (demograficzna, geograficzna, psychograficzna, behawioralna, firmograficzna), model STP i kryteria wyboru…"
         canonicalUrl="https://fotz.pl/blog/segmentacja-rynku-co-to"
 
         keywords="Segmentacja Rynku co to jest, Segmentacja Rynku definicja, czym jest Segmentacja Rynku, Segmentacja Rynku przykłady, jak działa Segmentacja Rynku, Segmentacja Rynku znaczenie, Segmentacja Rynku przewodnik"
+
+        canonical="https://fotz.pl/blog/segmentacja-rynku-co-to"
       />
       <ArticleSchema
         title="Segmentacja Rynku — co to jest i jak stosować model STP?"

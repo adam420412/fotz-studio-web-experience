@@ -52,6 +52,8 @@ export default function BlogSalesCompCoTo() {
         canonicalUrl="https://fotz.pl/blog/sales-compensation-plan-prowizyjny-co-to-jest"
 
         keywords="Sales Compensation co to jest, Sales Compensation definicja, czym jest Sales Compensation, Sales Compensation w sprzedaży, Sales Compensation strategia, Sales Compensation przykłady, jak używać Sales Compensation"
+
+        canonical="https://fotz.pl/blog/sales-compensation-plan-prowizyjny-co-to-jest"
       />
       <ArticleSchema
         title="Sales Compensation — jak projektować plan prowizyjny?"

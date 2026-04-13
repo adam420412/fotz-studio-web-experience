@@ -87,7 +87,7 @@ const StronyInternetoweOpole = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Opole | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Opole | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Opole — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Opola. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/opole"
         keywords="strony internetowe opole, tworzenie stron opole, strony www opole, projektowanie stron opole"

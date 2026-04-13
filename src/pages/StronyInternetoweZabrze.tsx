@@ -85,8 +85,8 @@ const StronyInternetoweZabrze = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Zabrze | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
-        description="Strony internetowe Zabrze — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zabrza. Fotz Studio specjalizuje się w stronach dla firm śląskich."
+        title="Strony Internetowe Zabrze | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Zabrze — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zabrza. Fotz Studio…"
         canonical="https://fotz.pl/uslugi/strony-internetowe/zabrze"
         keywords="strony internetowe zabrze, tworzenie stron zabrze, strony www zabrze, projektowanie stron zabrze"
       />

@@ -62,7 +62,7 @@ export default function BlogBlogFirmowy() {
   return (
     <Layout>
       <SEOHead
-        title="Blog firmowy — jak prowadzic i po co? Kompletny poradnik 2025 | Fotz.pl"
+        title="Blog firmowy | Fotz Studio"
         description="Dowiedz sie jak prowadzic blog firmowy aby generowal leady i podniosl SEO. Strategia, content ideas, FAQ i case studies. Poradnik 2025."
         canonical="https://fotz.pl/blog/blog-firmowy-poradnik"
         ogImage="https://fotz.pl/og-blog-firmowy.png"

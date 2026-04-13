@@ -203,7 +203,7 @@ export default function FacebookInstagramAds() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Kampania Facebook Ads - Reklama na Facebooku dla Firm | Cennik | Fotz Studio"
+        title="Kampania Facebook Ads - Reklama na Facebooku dla Firm | Cennik"
         description="Kampanie Facebook Ads dla firm — reklama na Facebooku i Instagramie. Formy reklamy, targetowanie odbiorców, cennik. Agencja Facebook Ads — bezpłatna wycena 24h."
         canonical="https://fotz.pl/performance-marketing/meta-ads"
         keywords="meta ads agencja, kampania facebook ads, reklama na facebooku, facebook instagram ads, meta business suite, kampanie meta ads, reklamy meta, facebook ads instagram ads, meta ads polska, agencja meta ads, meta ads cennik"

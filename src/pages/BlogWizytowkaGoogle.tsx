@@ -67,7 +67,7 @@ export default function BlogWizytowkaGoogle() {
   return (
     <>
       <SEOHead
-        title="Wizytówka Google — jak założyć i zoptymalizować profil firmy | fotz.pl"
+        title="Wizytówka Google — jak założyć i zoptymalizować profil firmy"
         description="Wizytówka Google (Google Business Profile) — poradnik krok po kroku. Jak założyć, zweryfikować i zoptymalizować wizytówkę Google. Pojaw się wyżej w Mapach!"
         canonical="https://fotz.pl/blog/wizytowka-google"
 

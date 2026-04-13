@@ -94,6 +94,8 @@ export default function BlogSalesForecastingCoTo() {
         canonicalUrl="https://fotz.pl/blog/sales-forecasting-prognozowanie-sprzedazy"
 
         keywords="Sales Forecasting co to jest, Sales Forecasting definicja, czym jest Sales Forecasting, Sales Forecasting w sprzedaży, Sales Forecasting strategia, Sales Forecasting przykłady, jak używać Sales Forecasting"
+
+        canonical="https://fotz.pl/blog/sales-forecasting-prognozowanie-sprzedazy"
       />
       <ArticleSchema
         title="Sales Forecasting — co to jest i jak prognozować sprzedaż?"

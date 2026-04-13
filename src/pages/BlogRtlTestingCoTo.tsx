@@ -41,11 +41,13 @@ export default function BlogRtlTestingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Testing Library — queries, user-event, mocking i async testing 2024 | Fotz.pl"
-        description="React Testing Library (getByRole, findBy, waitFor), @testing-library/user-event (type, click, keyboard), MSW mocking, Context providers, TanStack Query i best practices."
+        title="React Testing Library | Fotz Studio"
+        description="React Testing Library (getByRole, findBy, waitFor), @testing-library/user-event (type, click, keyboard), MSW mocking, Context providers, TanStack Query i…"
         canonicalUrl="https://fotz.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
 
         keywords="React Testing Library co to jest, React Testing Library jak działa, React Testing Library tutorial, React Testing Library przykład, czym jest React Testing Library, React Testing Library dokumentacja, React Testing Library przewodnik"
+
+        canonical="https://fotz.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
       />
       <ArticleSchema
         title="React Testing Library — queries, user-event, mocking i async testing 2024?"

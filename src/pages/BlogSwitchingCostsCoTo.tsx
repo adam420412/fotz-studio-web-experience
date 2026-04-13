@@ -54,10 +54,12 @@ export default function BlogSwitchingCostsCoTo() {
     <Layout>
       <SEOHead
         title="Switching Costs — co to są koszty zmiany dostawcy? Moat biznesowy"
-        description="Switching costs (koszty zmiany) — definicja, 6 rodzajów (finansowe, proceduralne, relacyjne, techniczne), jak budować i vendor lock-in. Kompletny przewodnik po moacie biznesowym."
+        description="Switching costs (koszty zmiany) — definicja, 6 rodzajów (finansowe, proceduralne, relacyjne, techniczne), jak budować i vendor lock-in. Kompletny…"
         canonicalUrl="https://fotz.pl/blog/switching-costs-co-to"
 
         keywords="Switching Costs co to jest, Switching Costs definicja, czym jest Switching Costs, Switching Costs przykłady, jak działa Switching Costs, Switching Costs znaczenie, Switching Costs przewodnik"
+
+        canonical="https://fotz.pl/blog/switching-costs-co-to"
       />
       <ArticleSchema
         title="Switching Costs — co to są koszty zmiany i jak budować moat?"

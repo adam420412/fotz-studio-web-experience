@@ -41,11 +41,13 @@ export default function BlogDateLibrariesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="date-fns, Day.js, Luxon, Temporal API — biblioteki dat JavaScript 2024 | Fotz.pl"
+        title="date-fns, Day.js, Luxon, Temporal API | Fotz Studio"
         description="date-fns vs Day.js vs Luxon vs Moment.js vs Temporal API — parsowanie dat, strefy czasowe, DST, ISO 8601, locale PL i walidacja Zod w TypeScript i Next.js."
         canonicalUrl="https://fotz.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024"
 
         keywords="date-fns, Day.js, Luxon, Temporal API co to jest, date-fns, Day.js, Luxon, Temporal API jak działa, date-fns, Day.js, Luxon, Temporal API tutorial, date-fns, Day.js, Luxon, Temporal API przykład, czym jest date-fns, Day.js, Luxon, Temporal API, date-fns, Day.js, Luxon, Temporal API dokumentacja, date-fns, Day.js, Luxon, Temporal API przewodnik"
+
+        canonical="https://fotz.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024"
       />
       <ArticleSchema
         title="date-fns, Day.js, Luxon, Temporal API — biblioteki dat JavaScript 2024?"

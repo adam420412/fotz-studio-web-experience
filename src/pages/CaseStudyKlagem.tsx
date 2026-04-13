@@ -44,7 +44,7 @@ const CaseStudyKlagem = () => {
   return (
     <Layout>
       <SEOHead
-        title="Klagem — Konfigurator 3D i Strona B2B dla Producenta Mebli | Case Study Fotz Studio"
+        title="Klagem | Fotz Studio"
         description="Case study Klagem: strona B2B z konfiguratorem produktów 3D dla producenta modułowych systemów meblowych. SEO i responsywny design. Fotz Studio."
         canonical="https://fotz.pl/realizacje/klagem"
         keywords="case study google ads, realizacja kampanii google, google ads case study"

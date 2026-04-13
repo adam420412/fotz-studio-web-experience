@@ -159,8 +159,8 @@ const CennikStronInternetowych = () => {
   return (
     <Layout>
       <SEOHead
-        title="Cennik Stron Internetowych 2025/2026 — od 499 zł netto | Fotz Studio"
-        description="Cennik stron internetowych Fotz Studio. Strony od 499 zł netto — pakiety Start, Business, Pro i sklepy e-commerce. Transparentne ceny, pełna własność kodu. Sprawdź!"
+        title="Cennik Stron Internetowych 2025/2026 — od 499 zł netto"
+        description="Cennik stron internetowych Fotz Studio. Strony od 499 zł netto — pakiety Start, Business, Pro i sklepy e-commerce. Transparentne ceny, pełna własność…"
         canonical="https://fotz.pl/cennik-stron-internetowych"
         ogTitle="Cennik Stron Internetowych — od 499 zł netto | Fotz Studio"
         ogDescription="Przejrzysty cennik stron internetowych. Od prostej wizytówki (499 zł) po zaawansowane sklepy e-commerce. Bez ukrytych opłat, pełna własność kodu."

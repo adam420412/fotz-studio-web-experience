@@ -89,6 +89,8 @@ export default function BlogNeuromarketingCoTo() {
         canonicalUrl="https://fotz.pl/blog/neuromarketing-co-to"
 
         keywords="Neuromarketing co to jest, Neuromarketing definicja, czym jest Neuromarketing, Neuromarketing w marketingu, Neuromarketing przykłady, jak działa Neuromarketing, Neuromarketing strategia"
+
+        canonical="https://fotz.pl/blog/neuromarketing-co-to"
       />
       <ArticleSchema
         title="Neuromarketing — co to jest i jak stosować?"

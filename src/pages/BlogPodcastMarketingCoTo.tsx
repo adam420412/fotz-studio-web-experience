@@ -64,7 +64,7 @@ export default function BlogPodcastMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Podcast Marketing — co to jest i jak prowadzic podcast biznesowy? | fotz.pl"
+        title="Podcast Marketing — co to jest i jak prowadzic podcast biznesowy?"
         description="Podcast Marketing co to jest — wyjasnamy czym jest podcast marketing, jak zaczac podcast biznesowy, monetyzacja, metryki i koszty produkcji podcastu."
         canonical="https://fotz.pl/blog/podcast-marketing-co-to"
 

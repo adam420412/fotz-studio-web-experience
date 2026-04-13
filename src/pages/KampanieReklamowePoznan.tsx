@@ -202,7 +202,7 @@ const KampanieReklamowePoznan = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Kampanie Reklamowe Poznań — Google Ads i Meta Ads dla Firm | Fotz Studio"
+        title="Kampanie Reklamowe Poznań — Google Ads i Meta Ads dla Firm"
         description="Kampanie reklamowe Poznań — Google Ads, Facebook Ads, Instagram Ads dla firm z Poznania. Prowadzenie i optymalizacja kampanii PPC. Fotz Studio."
         canonical="https://fotz.pl/kampanie-reklamowe-poznan"
         keywords="kampanie reklamowe poznań, reklamy internetowe poznań, agencja reklamowa poznań, google ads poznań, facebook ads poznań, marketing poznań"

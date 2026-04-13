@@ -35,7 +35,7 @@ const CMVideoContent = () => {
   return (
     <>
       <SEOHead
-        title="Video Content Marketing — Produkcja Wideo dla Firm, Reelsy, Filmy Reklamowe | Fotz Studio"
+        title="Video Content Marketing | Fotz Studio"
         description="Video content marketing — produkcja wideo dla firm: reelsy, explainer video, filmy wizerunkowe, YouTube Ads. Tworzenie wideo, które buduje markę i…"
         canonical="https://fotz.pl/content-marketing/video-content"
         keywords="video content, tworzenie video content, video content marketing, filmy dla firm, video marketing dla firm"

@@ -87,7 +87,7 @@ const StronyInternetoweKonin = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Konin | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Konin | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Konin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Konina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/konin"
         keywords="strony internetowe konin, tworzenie stron konin, strony www konin, projektowanie stron konin"

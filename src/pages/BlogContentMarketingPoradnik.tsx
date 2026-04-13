@@ -96,8 +96,8 @@ const BlogContentMarketingPoradnik = () => {
   return (
     <>
       <SEOHead
-        title="Content marketing - poradnik dla firm 2025 | Strategia i wdrożenie"
-        description="Kompletny poradnik content marketingu dla firm. Dowiedź się jak budować strategię, jakie formaty treści publikować i jak mierzyć efekty. Praktyczne wskazówki 2025."
+        title="Content marketing - poradnik dla firm 2025 | Fotz Studio"
+        description="Kompletny poradnik content marketingu dla firm. Dowiedź się jak budować strategię, jakie formaty treści publikować i jak mierzyć efekty. Praktyczne…"
         ogType="article"
         canonical="https://fotz.pl/blog/content-marketing-poradnik"
         keywords="content marketing poradnik, strategia content marketing, jak robić content marketing, content marketing dla firm, marketing treści strategia"

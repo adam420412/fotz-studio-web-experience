@@ -81,10 +81,12 @@ export default function BlogDesignSystemCoTo() {
     <Layout>
       <SEOHead
         title="Design System — co to jest? Czym jest system projektowania UI"
-        description="Design system — definicja, 4 warstwy (foundations, components, patterns, guidelines), narzędzia (Figma, Storybook) i korzyści. Jak zbudować design system od zera. Przewodnik."
+        description="Design system — definicja, 4 warstwy (foundations, components, patterns, guidelines), narzędzia (Figma, Storybook) i korzyści. Jak zbudować design system…"
         canonicalUrl="https://fotz.pl/blog/design-system-co-to"
 
         keywords="Design System co to jest, Design System definicja, czym jest Design System, Design System przykłady, jak działa Design System, Design System znaczenie, Design System przewodnik"
+
+        canonical="https://fotz.pl/blog/design-system-co-to"
       />
       <ArticleSchema
         title="Design System — co to jest i jak go zbudować?"

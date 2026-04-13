@@ -224,7 +224,7 @@ export default function CaseStudyEnea() {
   return (
     <Layout>
       <SEOHead
-        title="Enea Stadion Poznań — Kompleksowa Obsługa Marketingowa | Case Study Fotz Studio"
+        title="Enea Stadion Poznań | Fotz Studio"
         description="Case study Enea Stadion Poznań: +340% zaangażowania, 2M+ wyświetleń/mc. Strona www, social media, produkcja wideo. Fotz Studio."
         canonical="https://fotz.pl/realizacje/enea-stadion"
         keywords="case study enea, realizacja marketing b2b, digital marketing energetyka"

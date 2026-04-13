@@ -55,6 +55,8 @@ export default function BlogKeyAccountManagement() {
         canonicalUrl="https://fotz.pl/blog/key-account-management-kam-co-to-jest"
 
         keywords="Key Account Management (KAM) co to jest, Key Account Management (KAM) definicja, czym jest Key Account Management (KAM), Key Account Management (KAM) przykłady, jak działa Key Account Management (KAM), Key Account Management (KAM) znaczenie, Key Account Management (KAM) przewodnik"
+
+        canonical="https://fotz.pl/blog/key-account-management-kam-co-to-jest"
       />
       <ArticleSchema
         title="Key Account Management (KAM) — co to jest?"

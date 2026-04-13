@@ -90,6 +90,8 @@ export default function BlogOteCoToJest() {
         canonicalUrl="https://fotz.pl/blog/ote-on-target-earnings-sprzedaz-b2b"
 
         keywords="OTE (On-Target Earnings) co to jest, OTE (On-Target Earnings) definicja, czym jest OTE (On-Target Earnings), OTE (On-Target Earnings) w sprzedaży, OTE (On-Target Earnings) strategia, OTE (On-Target Earnings) przykłady, jak używać OTE (On-Target Earnings)"
+
+        canonical="https://fotz.pl/blog/ote-on-target-earnings-sprzedaz-b2b"
       />
       <ArticleSchema
         title="OTE (On-Target Earnings) — co to jest w sprzedaży?"

@@ -59,8 +59,8 @@ export default function BlogStronaInternetowaDlaRestauracji() {
   return (
     <>
       <SEOHead
-        title="Strona internetowa dla restauracji — co powinna zawierac i ile kosztuje? | Fotz.pl"
-        description="Kompletny przewodnik po stronach internetowych dla restauracji. Dowiedz sie, co powinna zawierac strona restauracji, ile kosztuje, i jak pozycjonowac sie w Google."
+        title="Strona internetowa dla restauracji | Fotz Studio"
+        description="Kompletny przewodnik po stronach internetowych dla restauracji. Dowiedz sie, co powinna zawierac strona restauracji, ile kosztuje, i jak pozycjonowac sie…"
         canonical="https://fotz.pl/blog/strona-internetowa-dla-restauracji"
         ogImage="https://fotz.pl/og-restaurant.jpg"
 

@@ -66,7 +66,7 @@ export default function BlogEmailSequenceCoTo() {
   return (
     <>
       <SEOHead
-        title="Email Sequence — co to jest i jak budować sekwencje emaili? | fotz.pl"
+        title="Email Sequence — co to jest i jak budować sekwencje emaili?"
         description="Email Sequence co to jest — wyjaśniamy czym są sekwencje emaili, typy (welcome, onboarding, nurture), narzędzia i jak pisać skuteczne subject lines."
         canonical="https://fotz.pl/blog/email-sequence-co-to"
 

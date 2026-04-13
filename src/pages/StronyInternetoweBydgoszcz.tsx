@@ -133,7 +133,7 @@ const StronyInternetoweBydgoszcz = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Bydgoszcz | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Bydgoszcz | Fotz Studio"
         description="Strony internetowe Bydgoszcz — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Bydgoszczy. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/bydgoszcz"
         keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz, wykonanie strony internetowej bydgoszcz, responsywna strona www bydgoszcz, wordpress bydgoszcz, nowoczesne strony www bydgoszcz"

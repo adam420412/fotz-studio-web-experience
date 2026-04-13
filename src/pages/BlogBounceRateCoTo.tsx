@@ -69,7 +69,7 @@ export default function BlogBounceRateCoTo() {
   return (
     <>
       <SEOHead
-        title="Bounce Rate — co to jest i jak obniżyć wskaźnik odrzuceń? | fotz.pl"
+        title="Bounce Rate — co to jest i jak obniżyć wskaźnik odrzuceń?"
         description="Bounce Rate co to jest — wyjaśniamy czym jest wskaźnik odrzuceń, jak go mierzyć w GA4, jaki jest dobry bounce rate i jak go obniżyć na stronie."
         canonical="https://fotz.pl/blog/bounce-rate-co-to"
 

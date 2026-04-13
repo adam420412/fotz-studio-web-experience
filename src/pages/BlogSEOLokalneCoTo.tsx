@@ -66,7 +66,7 @@ export default function BlogSEOLokalneCoTo() {
   return (
     <>
       <SEOHead
-        title="SEO Lokalne — co to jest i jak wypozycjonować firmę lokalnie? | fotz.pl"
+        title="SEO Lokalne — co to jest i jak wypozycjonować firmę lokalnie?"
         description="SEO Lokalne co to jest — wyjaśniamy czym jest Local SEO, jak zoptymalizować Google Moja Firma, zbierać recenzje, Local Pack i on-page SEO lokalnie."
         canonical="https://fotz.pl/blog/seo-lokalne-co-to"
 

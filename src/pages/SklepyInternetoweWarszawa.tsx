@@ -148,7 +148,7 @@ export default function SklepyInternetoweWarszawa() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Sklepy Internetowe Warszawa — Tworzenie Sklepu E-commerce | Fotz Studio"
+        title="Sklepy Internetowe Warszawa — Tworzenie Sklepu E-commerce"
         description="Tworzenie sklepów internetowych Warszawa — sklep e-commerce WooCommerce, Shopify dla firm z Warszawy. Projektowanie sklepów online z SEO i integracjami…"
         canonical="https://fotz.pl/uslugi/sklepy-internetowe/warszawa"
         keywords="tworzenie sklepów internetowych Warszawa, sklep internetowy Warszawa, wdrożenie e-commerce Warszawa, agencja e-commerce Warszawa, Shopify Warszawa, WooCommerce Warszawa, sklep online Warszawa, platforma e-commerce Warszawa, PrestaShop Warszawa, pozycjonowanie sklepu internetowego Warszawa, sklep internetowy dla firmy Warszawa"

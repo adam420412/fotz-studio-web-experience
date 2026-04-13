@@ -211,7 +211,7 @@ export default function AgencjaMarketingowaKrakow() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingowa Kraków | FOTZ – Marketing Dla Firm w Krakowie"
+        title="Agencja Marketingowa Kraków | Fotz Studio"
         description="Agencja marketingowa Kraków ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Krakowa i Małopolski. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/krakow"
         ogImage="https://fotz.pl/og-krakow.jpg"

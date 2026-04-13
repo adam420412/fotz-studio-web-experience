@@ -84,7 +84,7 @@ export default function BlogZeroClickSearchCoTo() {
   return (
     <>
       <SEOHead
-        title="Zero-Click Search — co to jest? Wyszukiwania bez kliknięć w SEO | fotz.pl"
+        title="Zero-Click Search — co to jest? Wyszukiwania bez kliknięć w SEO"
         description="Zero-click search co to jest — wyjaśniamy czym są wyszukiwania bez kliknięć, featured snippets, AI Overviews i jak optymalizować SEO dla zero-click SERP."
         canonical="https://fotz.pl/blog/zero-click-search-co-to"
 

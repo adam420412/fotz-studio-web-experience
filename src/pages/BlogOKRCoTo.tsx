@@ -90,7 +90,7 @@ export default function BlogOKRCoTo() {
     <>
       <SEOHead
         title="OKR — co to jest? Objectives and Key Results w praktyce | fotz.pl"
-        description="OKR co to jest — wyjaśniamy czym są Objectives and Key Results, jak pisać dobre OKR, wdrożenie w firmie, różnica vs KPI i MBO, przykłady dla marketingu i sprzedaży."
+        description="OKR co to jest — wyjaśniamy czym są Objectives and Key Results, jak pisać dobre OKR, wdrożenie w firmie, różnica vs KPI i MBO, przykłady dla marketingu i…"
         canonical="https://fotz.pl/blog/okr-co-to"
 
         keywords="OKR co to jest, OKR definicja, czym jest OKR, OKR przykłady, jak działa OKR, OKR znaczenie, OKR przewodnik"

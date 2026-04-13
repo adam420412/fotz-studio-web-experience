@@ -97,7 +97,7 @@ export default function BlogUserOnboardingCoTo() {
   return (
     <>
       <SEOHead
-        title="User Onboarding — co to jest? Wdrożenie użytkownika w SaaS | fotz.pl"
+        title="User Onboarding — co to jest? Wdrożenie użytkownika w SaaS"
         description="User onboarding co to jest — wyjaśniamy czym jest wdrożenie użytkownika, aha moment, wzorce onboardingu, metryki i różnice B2B vs B2C w produktach SaaS."
         canonical="https://fotz.pl/blog/user-onboarding-co-to"
 

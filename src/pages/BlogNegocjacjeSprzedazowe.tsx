@@ -71,10 +71,12 @@ export default function BlogNegocjacjeSprzedazowe() {
     <Layout>
       <SEOHead
         title="Negocjacje sprzedażowe — techniki i taktyki w B2B | Fotz.pl"
-        description="Negocjacje sprzedażowe B2B — techniki (anchoring, BATNA, multi-variable), jak reagować na żądanie obniżki ceny i kiedy odejść od negocjacji. Kompletny przewodnik."
+        description="Negocjacje sprzedażowe B2B — techniki (anchoring, BATNA, multi-variable), jak reagować na żądanie obniżki ceny i kiedy odejść od negocjacji. Kompletny…"
         canonicalUrl="https://fotz.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
 
         keywords="Negocjacje sprzedażowe, Negocjacje sprzedażowe co to jest, Negocjacje sprzedażowe jak działa, Negocjacje sprzedażowe definicja, Negocjacje sprzedażowe przykłady, Negocjacje sprzedażowe poradnik, Negocjacje sprzedażowe przewodnik"
+
+        canonical="https://fotz.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
       />
       <ArticleSchema
         title="Negocjacje sprzedażowe — techniki i taktyki w B2B"

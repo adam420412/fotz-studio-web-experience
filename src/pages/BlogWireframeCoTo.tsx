@@ -82,10 +82,12 @@ export default function BlogWireframeCoTo() {
     <Layout>
       <SEOHead
         title="Wireframe — co to jest? Wireframing w projektowaniu UX"
-        description="Wireframe — definicja, różnica między wireframe a mockupem a prototypem, typy (lo-fi, mid-fi, hi-fi), narzędzia (Figma, Balsamiq) i jak tworzyć szkielety UX. Przewodnik."
+        description="Wireframe — definicja, różnica między wireframe a mockupem a prototypem, typy (lo-fi, mid-fi, hi-fi), narzędzia (Figma, Balsamiq) i jak tworzyć szkielety…"
         canonicalUrl="https://fotz.pl/blog/wireframe-co-to"
 
         keywords="Wireframe co to jest, Wireframe definicja, czym jest Wireframe, Wireframe przykłady, jak działa Wireframe, Wireframe znaczenie, Wireframe przewodnik"
+
+        canonical="https://fotz.pl/blog/wireframe-co-to"
       />
       <ArticleSchema
         title="Wireframe — co to jest i jak tworzyć szkielety UX?"

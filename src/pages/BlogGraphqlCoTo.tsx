@@ -180,6 +180,8 @@ export default function BlogGraphqlCoTo() {
         canonicalUrl="https://fotz.pl/blog/graphql-co-to"
 
         keywords="GraphQL co to jest, GraphQL jak działa, GraphQL tutorial, GraphQL przykład, czym jest GraphQL, GraphQL dokumentacja, GraphQL przewodnik"
+
+        canonical="https://fotz.pl/blog/graphql-co-to"
       />
       <ArticleSchema
         title="GraphQL — co to jest i jak działa? Kompletny przewodnik"

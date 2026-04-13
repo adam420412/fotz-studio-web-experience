@@ -11,7 +11,7 @@ const PozycjonowanieStronPoznan = () => {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Pozycjonowanie Stron Poznań — Agencja SEO dla Firm z Poznania | Fotz Studio"
+        title="Pozycjonowanie Stron Poznań — Agencja SEO dla Firm z Poznania"
         description="Pozycjonowanie stron internetowych Poznań — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Poznania. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-poznan"
         keywords="pozycjonowanie stron poznań, agencja seo poznań, seo poznań, pozycjonowanie lokalne poznań, pozycjonowanie stron internetowych poznań, seo dla firm poznań"

@@ -41,7 +41,7 @@ const CaseStudyVictoryCars = () => {
   return (
     <Layout>
       <SEOHead
-        title="Victory Cars — Strona dla Dealera Samochodów Premium Poznań | Case Study Fotz Studio"
+        title="Victory Cars | Fotz Studio"
         description="Case study Victory Cars Poznań: strona internetowa dla dealera samochodów premium. Katalog pojazdów, SEO motoryzacyjne i produkcja foto/video. Fotz Studio."
         canonical="https://fotz.pl/realizacje/victory-cars"
         keywords="case study automotive dealership, marketing samochodowy realizacja"

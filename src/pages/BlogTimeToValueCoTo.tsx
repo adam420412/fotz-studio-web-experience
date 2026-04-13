@@ -53,6 +53,8 @@ export default function BlogTimeToValueCoTo() {
         canonicalUrl="https://fotz.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv"
 
         keywords="Time to Value co to jest, Time to Value definicja, czym jest Time to Value, Time to Value startup, Time to Value jak liczyć, Time to Value wzór, Time to Value przykłady"
+
+        canonical="https://fotz.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv"
       />
       <ArticleSchema
         title="Time to Value — co to jest i jak skrócić TtV w SaaS?"

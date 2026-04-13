@@ -104,7 +104,7 @@ export default function BlogJakWybracAgencjeMarketingowa() {
   return (
     <>
       <SEOHead
-        title="Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025 | Fotz.pl"
+        title="Jak wybrac agencje marketingowa? 10 kryteriow wyboru w 2025"
         description="Kompletny przewodnik jak wybrać agencję marketingową. 10 kryteriów wyboru, 5 błędów do uniknięcia, pytania na rozmowę i lista red flag."
         canonical="https://fotz.pl/blog/jak-wybrac-agencje-marketingowa"
 

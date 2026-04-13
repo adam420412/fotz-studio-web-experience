@@ -41,7 +41,7 @@ const CaseStudyCelsjusz = () => {
   return (
     <Layout>
       <SEOHead
-        title="Celsjusz OZE — Strona dla Firmy Fotowoltaika i Pompy Ciepła | Case Study Fotz Studio"
+        title="Celsjusz OZE | Fotz Studio"
         description="Case study: strona internetowa dla Celsjusz OZE — fotowoltaika, pompy ciepła, lead generation i SEO branży OZE. Fotz Studio."
         canonical="https://fotz.pl/realizacje/celsjusz"
         keywords="case study celsjusz, realizacja marketing"

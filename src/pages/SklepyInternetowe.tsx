@@ -162,7 +162,7 @@ export default function SklepyInternetowe() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Tworzenie Sklepów Internetowych — Projektowanie i Budowa Sklepów Online | Fotz Studio"
+        title="Tworzenie Sklepów Internetowych | Fotz Studio"
         description="Tworzenie sklepów internetowych dla firm — e-commerce na WooCommerce, Shopify, PrestaShop. Budowa sklepów online z SEO, integracjami płatności i obsługą…"
         canonical="https://fotz.pl/uslugi/sklepy-internetowe"
         keywords="tworzenie sklepów internetowych, sklep internetowy, budowa sklepu internetowego, projektowanie sklepu internetowego, e-commerce, własny sklep internetowy, założyć sklep internetowy, WooCommerce, Shopify, PrestaShop, platforma e-commerce, wdrożenie sklepu internetowego, agencja e-commerce, sklep online, sprzedaż online, sklep internetowy dla firmy, oprogramowanie sklepu internetowego"

@@ -85,10 +85,12 @@ export default function BlogJobsToBeDeoneCoTo() {
     <Layout>
       <SEOHead
         title="Jobs-to-be-Done — co to jest? Framework JTBD w product management"
-        description="Jobs-to-be-Done (JTBD) — definicja, 3 typy jobów (functional, emotional, social), switch interviews, przykłady (Slack, Notion, McDonald's). Przewodnik po teorii Christensena."
+        description="Jobs-to-be-Done (JTBD) — definicja, 3 typy jobów (functional, emotional, social), switch interviews, przykłady (Slack, Notion, McDonald's). Przewodnik po…"
         canonicalUrl="https://fotz.pl/blog/jobs-to-be-done-co-to"
 
         keywords="Jobs-to-be-Done co to jest, Jobs-to-be-Done definicja, czym jest Jobs-to-be-Done, Jobs-to-be-Done przykłady, jak działa Jobs-to-be-Done, Jobs-to-be-Done znaczenie, Jobs-to-be-Done przewodnik"
+
+        canonical="https://fotz.pl/blog/jobs-to-be-done-co-to"
       />
       <ArticleSchema
         title="Jobs-to-be-Done — co to jest i jak stosować framework JTBD?"

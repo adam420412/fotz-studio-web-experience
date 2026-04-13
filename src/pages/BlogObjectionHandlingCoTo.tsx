@@ -132,6 +132,8 @@ export default function BlogObjectionHandlingCoTo() {
         canonicalUrl="https://fotz.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
 
         keywords="Objection Handling co to jest, Objection Handling definicja, czym jest Objection Handling, Objection Handling w sprzedaży, Objection Handling strategia, Objection Handling przykłady, jak używać Objection Handling"
+
+        canonical="https://fotz.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
       />
       <ArticleSchema
         title="Objection Handling — co to jest i jak obsługiwać obiekcje w sprzedaży?"

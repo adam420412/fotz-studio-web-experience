@@ -25,7 +25,7 @@ const AISEO = () => {
   return (
     <>
       <SEOHead
-        title="AI SEO — Optymalizacja pod ChatGPT, Perplexity i Gemini | Fotz Studio"
+        title="AI SEO — Optymalizacja pod ChatGPT, Perplexity i Gemini"
         description="AI SEO — optymalizacja strony pod generatywne AI: ChatGPT, Perplexity, Google Gemini i Bing Copilot. GEO (Generative Engine Optimization). Fotz Studio."
         canonical="https://fotz.pl/ai-seo"
         keywords="ai seo, ai search, chatgpt seo, perplexity seo, optymalizacja ai, widoczność w ai, llm seo"

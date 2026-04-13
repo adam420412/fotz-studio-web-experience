@@ -75,10 +75,12 @@ export default function BlogChannelSalesCoTo() {
     <Layout>
       <SEOHead
         title="Channel Sales — sprzedaż przez kanały partnerskie | Fotz.pl"
-        description="Channel Sales (sprzedaż partnerska) — rodzaje partnerów, kiedy warto budować channel, program partnerski i metryki. Kompletny przewodnik dla VP Sales i founders."
+        description="Channel Sales (sprzedaż partnerska) — rodzaje partnerów, kiedy warto budować channel, program partnerski i metryki. Kompletny przewodnik dla VP Sales i…"
         canonicalUrl="https://fotz.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
 
         keywords="Channel Sales co to jest, Channel Sales definicja, czym jest Channel Sales, Channel Sales w sprzedaży, Channel Sales strategia, Channel Sales przykłady, jak używać Channel Sales"
+
+        canonical="https://fotz.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
       />
       <ArticleSchema
         title="Channel Sales — sprzedaż przez kanały partnerskie"

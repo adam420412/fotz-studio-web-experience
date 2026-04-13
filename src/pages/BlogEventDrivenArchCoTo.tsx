@@ -47,11 +47,13 @@ export default function BlogEventDrivenArchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Event-Driven Architecture — co to jest i jak wdrożyć EDA? | Fotz.pl"
-        description="Event-Driven Architecture: zdarzenia, message brokers (Kafka, RabbitMQ, SQS), Event Sourcing, Saga Pattern, Outbox Pattern i kiedy stosować EDA zamiast REST API."
+        title="Event-Driven Architecture | Fotz Studio"
+        description="Event-Driven Architecture: zdarzenia, message brokers (Kafka, RabbitMQ, SQS), Event Sourcing, Saga Pattern, Outbox Pattern i kiedy stosować EDA zamiast…"
         canonicalUrl="https://fotz.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
 
         keywords="Event-Driven Architecture co to jest, Event-Driven Architecture definicja, czym jest Event-Driven Architecture, Event-Driven Architecture przykłady, jak działa Event-Driven Architecture, Event-Driven Architecture znaczenie, Event-Driven Architecture przewodnik"
+
+        canonical="https://fotz.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
       />
       <ArticleSchema
         title="Event-Driven Architecture — co to jest i jak wdrożyć EDA?"

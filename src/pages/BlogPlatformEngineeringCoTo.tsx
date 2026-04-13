@@ -55,6 +55,8 @@ export default function BlogPlatformEngineeringCoTo() {
         canonicalUrl="https://fotz.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
 
         keywords="Platform Engineering co to jest, Platform Engineering definicja, czym jest Platform Engineering, Platform Engineering przykłady, jak działa Platform Engineering, Platform Engineering znaczenie, Platform Engineering przewodnik"
+
+        canonical="https://fotz.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
       />
       <ArticleSchema
         title="Platform Engineering — co to jest, IDP i Backstage?"

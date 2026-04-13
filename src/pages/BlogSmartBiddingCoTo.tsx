@@ -84,7 +84,7 @@ export default function BlogSmartBiddingCoTo() {
   return (
     <>
       <SEOHead
-        title="Smart Bidding — co to jest? Inteligentne stawki Google Ads | fotz.pl"
+        title="Smart Bidding — co to jest? Inteligentne stawki Google Ads"
         description="Smart Bidding co to jest — wyjaśniamy czym są inteligentne stawki Google Ads, strategie (Target CPA, ROAS), kiedy używać i jak działa learning period."
         canonical="https://fotz.pl/blog/smart-bidding-co-to"
 

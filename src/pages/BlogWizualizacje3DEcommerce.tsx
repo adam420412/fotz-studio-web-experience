@@ -45,7 +45,7 @@ const BlogWizualizacje3DEcommerce = () => {
   return (
     <Layout>
       <SEOHead
-        title="Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik]"
+        title="Wizualizacje 3D w E-commerce | Fotz Studio"
         description="Wizualizacje 3D w e-commerce zwiększają konwersję o 40%. Dowiedz się jak wdrożyć modele 3D, AR try-on i 360° product views w swoim sklepie internetowym ✓"
         canonical="https://fotz.pl/blog/wizualizacje-3d-ecommerce"
         ogTitle="Wizualizacje 3D w E-commerce – Kompletny Poradnik"

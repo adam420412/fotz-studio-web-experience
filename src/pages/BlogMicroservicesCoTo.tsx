@@ -56,10 +56,12 @@ export default function BlogMicroservicesCoTo() {
     <Layout>
       <SEOHead
         title="Mikroserwisy — co to jest? Architektura microservices vs monolit"
-        description="Mikroserwisy — definicja, porównanie z monolitem, 5 wzorców (Saga, CQRS, Circuit Breaker, BFF), API Gateway i Service Mesh. Kompletny przewodnik po microservices."
+        description="Mikroserwisy — definicja, porównanie z monolitem, 5 wzorców (Saga, CQRS, Circuit Breaker, BFF), API Gateway i Service Mesh. Kompletny przewodnik po…"
         canonicalUrl="https://fotz.pl/blog/mikroserwisy-co-to-jest"
 
         keywords="Mikroserwisy co to jest, Mikroserwisy definicja, czym jest Mikroserwisy, Mikroserwisy przykłady, jak działa Mikroserwisy, Mikroserwisy znaczenie, Mikroserwisy przewodnik"
+
+        canonical="https://fotz.pl/blog/mikroserwisy-co-to-jest"
       />
       <ArticleSchema
         title="Mikroserwisy — co to jest i kiedy używać architektury microservices?"

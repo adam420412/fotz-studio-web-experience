@@ -52,6 +52,8 @@ export default function BlogPartnerEcosystemCoTo() {
         canonicalUrl="https://fotz.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
 
         keywords="Partner Ecosystem co to jest, Partner Ecosystem definicja, czym jest Partner Ecosystem, Partner Ecosystem przykłady, jak działa Partner Ecosystem, Partner Ecosystem znaczenie, Partner Ecosystem przewodnik"
+
+        canonical="https://fotz.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
       />
       <ArticleSchema
         title="Partner Ecosystem — jak budować ekosystem partnerski?"

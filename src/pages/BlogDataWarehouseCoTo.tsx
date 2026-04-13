@@ -49,10 +49,12 @@ export default function BlogDataWarehouseCoTo() {
     <Layout>
       <SEOHead
         title="Data Warehouse — co to jest i jak wybrać? | Fotz.pl"
-        description="Data Warehouse (hurtownia danych): DW vs Data Lake vs Lakehouse, nowoczesny data stack, dbt, BigQuery, Snowflake i jak wybrać odpowiednie narzędzie dla startupu."
+        description="Data Warehouse (hurtownia danych): DW vs Data Lake vs Lakehouse, nowoczesny data stack, dbt, BigQuery, Snowflake i jak wybrać odpowiednie narzędzie dla…"
         canonicalUrl="https://fotz.pl/blog/data-warehouse-co-to-jest-jak-wybrac"
 
         keywords="Data Warehouse co to jest, Data Warehouse definicja, czym jest Data Warehouse, Data Warehouse przykłady, jak działa Data Warehouse, Data Warehouse znaczenie, Data Warehouse przewodnik"
+
+        canonical="https://fotz.pl/blog/data-warehouse-co-to-jest-jak-wybrac"
       />
       <ArticleSchema
         title="Data Warehouse — co to jest i jak wybrać?"

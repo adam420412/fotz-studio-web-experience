@@ -48,7 +48,7 @@ const BlogIleKosztujePozycjonowanie = () => {
   return (
     <>
       <SEOHead
-        title="Ile kosztuje pozycjonowanie stron w 2025? Kompletny cennik SEO | Fotz"
+        title="Ile kosztuje pozycjonowanie stron w 2025? Kompletny cennik SEO"
         description="Sprawdź aktualne ceny pozycjonowania stron internetowych w 2025 roku. Cennik SEO, pakiety, co wpływa na koszt i jak wybrać najlepszą ofertę dla Twojej firmy."
         ogType="article"
         canonical="https://fotz.pl/blog/ile-kosztuje-pozycjonowanie"

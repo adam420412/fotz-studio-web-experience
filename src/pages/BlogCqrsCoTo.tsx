@@ -62,11 +62,13 @@ export default function BlogCqrsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CQRS — co to jest Command Query Responsibility Segregation? | Fotz.pl"
+        title="CQRS | Fotz Studio"
         description="CQRS: rozdzielenie komend i zapytań, Command side, Query side, Read Models, połączenie z Event Sourcing i kiedy CQRS ma sens zamiast CRUD."
         canonicalUrl="https://fotz.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
 
         keywords="CQRS co to jest, CQRS definicja, czym jest CQRS, CQRS przykłady, jak działa CQRS, CQRS znaczenie, CQRS przewodnik"
+
+        canonical="https://fotz.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
       />
       <ArticleSchema
         title="CQRS — co to jest Command Query Responsibility Segregation?"

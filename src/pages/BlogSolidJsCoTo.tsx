@@ -41,11 +41,13 @@ export default function BlogSolidJsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="SolidJS — fine-grained reactivity, createSignal, createStore i SolidStart 2024 | Fotz.pl"
-        description="SolidJS: fine-grained reactivity (bez virtual DOM), createSignal/createMemo/createEffect, createStore, Suspense, SolidStart (SSR) i SolidJS vs React vs Vue porównanie."
+        title="SolidJS | Fotz Studio"
+        description="SolidJS: fine-grained reactivity (bez virtual DOM), createSignal/createMemo/createEffect, createStore, Suspense, SolidStart (SSR) i SolidJS vs React vs…"
         canonicalUrl="https://fotz.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
 
         keywords="SolidJS co to jest, SolidJS jak działa, SolidJS tutorial, SolidJS przykład, czym jest SolidJS, SolidJS dokumentacja, SolidJS przewodnik"
+
+        canonical="https://fotz.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
       />
       <ArticleSchema
         title="SolidJS — fine-grained reactivity, createSignal, createStore i SolidStart 2024?"

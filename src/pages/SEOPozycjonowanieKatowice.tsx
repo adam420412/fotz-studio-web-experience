@@ -26,7 +26,7 @@ const SEOPozycjonowanieKatowice = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie Katowice — Agencja SEO dla Firm z Katowic | Fotz Studio"
+        title="Pozycjonowanie Katowice — Agencja SEO dla Firm z Katowic"
         description="Pozycjonowanie stron internetowych Katowice — SEO dla firm z Katowic i Śląska. Audyt SEO, optymalizacja, link building. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-katowice"
         keywords="pozycjonowanie katowice, agencja seo katowice, seo katowice, pozycjonowanie śląsk, pozycjonowanie stron katowice, agencja seo śląsk, seo dla firm katowice, pozycjonowanie lokalne katowice"

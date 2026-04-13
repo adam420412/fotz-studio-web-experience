@@ -41,11 +41,13 @@ export default function BlogReactPatternsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React wzorce — Compound Components, Custom Hooks, HOC, Error Boundary | Fotz.pl"
+        title="React wzorce | Fotz Studio"
         description="React design patterns: Compound Components, Custom Hooks, Render Props, HOC, Provider Pattern, Error Boundary, Suspense, React.memo i performance patterns."
         canonicalUrl="https://fotz.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary"
 
         keywords="React wzorce co to jest, React wzorce jak działa, React wzorce tutorial, React wzorce przykład, czym jest React wzorce, React wzorce dokumentacja, React wzorce przewodnik"
+
+        canonical="https://fotz.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary"
       />
       <ArticleSchema
         title="React wzorce — Compound Components, Custom Hooks, HOC, Error Boundary?"

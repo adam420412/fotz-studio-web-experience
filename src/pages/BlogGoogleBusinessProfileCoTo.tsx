@@ -60,7 +60,7 @@ export default function BlogGoogleBusinessProfileCoTo() {
   return (
     <>
       <SEOHead
-        title="Google Business Profile — co to jest i jak skonfigurować? | fotz.pl"
+        title="Google Business Profile — co to jest i jak skonfigurować?"
         description="Google Business Profile co to jest — wyjaśniamy czym jest GBP (Google My Business), jak wpływa na lokalne SEO, jak założyć profil i zdobywać recenzje."
         canonical="https://fotz.pl/blog/google-business-profile-co-to"
 

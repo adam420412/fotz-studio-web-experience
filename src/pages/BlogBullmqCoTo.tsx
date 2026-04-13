@@ -41,11 +41,13 @@ export default function BlogBullmqCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="BullMQ, Inngest i job queues — background jobs w Node.js Next.js 2024 | Fotz.pl"
-        description="BullMQ (Redis queue, priority, flows, rate limiter), Inngest (serverless background jobs), Trigger.dev, Qstash i Temporal — asynchroniczne zadania w Node.js i Next.js."
+        title="BullMQ, Inngest i job queues | Fotz Studio"
+        description="BullMQ (Redis queue, priority, flows, rate limiter), Inngest (serverless background jobs), Trigger.dev, Qstash i Temporal — asynchroniczne zadania w…"
         canonicalUrl="https://fotz.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
 
         keywords="BullMQ, Inngest i job queues co to jest, BullMQ, Inngest i job queues jak działa, BullMQ, Inngest i job queues tutorial, BullMQ, Inngest i job queues przykład, czym jest BullMQ, Inngest i job queues, BullMQ, Inngest i job queues dokumentacja, BullMQ, Inngest i job queues przewodnik"
+
+        canonical="https://fotz.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
       />
       <ArticleSchema
         title="BullMQ, Inngest i job queues — background jobs w Node.js Next.js 2024?"

@@ -78,6 +78,8 @@ export default function BlogDealDeskCoTo() {
         canonicalUrl="https://fotz.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise"
 
         keywords="Deal Desk co to jest, Deal Desk definicja, czym jest Deal Desk, Deal Desk startup, Deal Desk jak liczyć, Deal Desk wzór, Deal Desk przykłady"
+
+        canonical="https://fotz.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise"
       />
       <ArticleSchema
         title="Deal Desk — co to jest i jak działa w sprzedaży SaaS?"

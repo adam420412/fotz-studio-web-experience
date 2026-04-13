@@ -41,11 +41,13 @@ export default function BlogBrowserApisCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Modern Browser APIs — IndexedDB Dexie, Web Share, Clipboard, File System, WebBluetooth 2024 | Fotz.pl"
-        description="IndexedDB z Dexie.js (offline baza), Web Share API (natywny share), Clipboard API, File System Access API (OPFS), Web Bluetooth, Web Serial, WebOTP i Push Notifications."
+        title="Modern Browser APIs | Fotz Studio"
+        description="IndexedDB z Dexie.js (offline baza), Web Share API (natywny share), Clipboard API, File System Access API (OPFS), Web Bluetooth, Web Serial, WebOTP i Push…"
         canonicalUrl="https://fotz.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024"
 
         keywords="Modern Browser APIs co to jest, Modern Browser APIs jak działa, Modern Browser APIs tutorial, Modern Browser APIs przykład, czym jest Modern Browser APIs, Modern Browser APIs dokumentacja, Modern Browser APIs przewodnik"
+
+        canonical="https://fotz.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024"
       />
       <ArticleSchema
         title="Modern Browser APIs — IndexedDB Dexie, Web Share, Clipboard, File System, WebBluetooth 2024?"

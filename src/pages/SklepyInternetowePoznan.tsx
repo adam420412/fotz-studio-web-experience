@@ -64,7 +64,7 @@ export default function SklepyInternetowePoznan() {
       <OrganizationSchema />
       <Layout>
       <SEOHead
-        title="Sklepy Internetowe Poznań — Tworzenie E-commerce i Sklepów Online | Fotz Studio"
+        title="Sklepy Internetowe Poznań — Tworzenie E-commerce i Sklepów Online"
         description="Tworzenie sklepów internetowych Poznań — e-commerce WooCommerce, Shopify, PrestaShop dla firm z Poznania. Projektowanie sklepów online z integracjami…"
         canonical="https://fotz.pl/uslugi/sklepy-internetowe/poznan"
         keywords="sklepy internetowe Poznań, tworzenie sklepu internetowego Poznań, e-commerce Poznań, sklep online Poznań, Shopify Poznań, WooCommerce Poznań, sklep www Poznań, platforma e-commerce Poznań, PrestaShop Poznań, pozycjonowanie sklepu internetowego Poznań, wdrożenie sklepu internetowego Poznań"

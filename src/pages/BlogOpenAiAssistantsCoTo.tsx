@@ -41,11 +41,13 @@ export default function BlogOpenAiAssistantsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="OpenAI Assistants API — Threads, File Search, Code Interpreter, Function Calling 2024 | Fotz.pl"
-        description="OpenAI Assistants API v2 (Threads, Messages, Runs), File Search (Vector Store, RAG), Code Interpreter (Python sandbox), Function Calling i streaming SSE w TypeScript."
+        title="OpenAI Assistants API | Fotz Studio"
+        description="OpenAI Assistants API v2 (Threads, Messages, Runs), File Search (Vector Store, RAG), Code Interpreter (Python sandbox), Function Calling i streaming SSE w…"
         canonicalUrl="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
 
         keywords="OpenAI Assistants API co to jest, OpenAI Assistants API jak działa, OpenAI Assistants API tutorial, OpenAI Assistants API przykład, czym jest OpenAI Assistants API, OpenAI Assistants API dokumentacja, OpenAI Assistants API przewodnik"
+
+        canonical="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
       />
       <ArticleSchema
         title="OpenAI Assistants API — Threads, File Search, Code Interpreter, Function Calling 2024?"

@@ -64,8 +64,8 @@ export default function BlogAPICoToJest() {
   return (
     <>
       <SEOHead
-        title="API — co to jest i jak działa? Interfejs programowania aplikacji | fotz.pl"
-        description="API co to jest — wyjaśniamy czym jest Application Programming Interface, jak działają REST API i GraphQL, po co firmom API i jak integrować strony z zewnętrznymi usługami."
+        title="API — co to jest i jak działa? Interfejs programowania aplikacji"
+        description="API co to jest — wyjaśniamy czym jest Application Programming Interface, jak działają REST API i GraphQL, po co firmom API i jak integrować strony z…"
         canonical="https://fotz.pl/blog/api-co-to-jest"
 
         keywords="API co to jest, API jak działa, API tutorial, API przykład, czym jest API, API dokumentacja, API przewodnik"

@@ -69,6 +69,8 @@ export default function BlogSalesOpsCoTo() {
         canonicalUrl="https://fotz.pl/blog/sales-operations-co-to-jest"
 
         keywords="Sales Operations co to jest, Sales Operations definicja, czym jest Sales Operations, Sales Operations w sprzedaży, Sales Operations strategia, Sales Operations przykłady, jak używać Sales Operations"
+
+        canonical="https://fotz.pl/blog/sales-operations-co-to-jest"
       />
       <ArticleSchema
         title="Sales Operations — co to jest i co robi?"

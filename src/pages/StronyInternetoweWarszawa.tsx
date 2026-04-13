@@ -174,7 +174,7 @@ const StronyInternetoweWarszawa = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Warszawa | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Warszawa | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Warszawa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Warszawy. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/warszawa"
         keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa, wykonanie strony internetowej warszawa, responsywna strona www warszawa, wordpress warszawa, nowoczesne strony www warszawa, agencja stron internetowych warszawa"

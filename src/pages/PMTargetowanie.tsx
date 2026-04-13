@@ -35,7 +35,7 @@ const PMTargetowanie = () => {
   return (
     <>
       <SEOHead
-        title="Targetowanie Reklam — Precyzyjne Dotarcie do Grupy Docelowej | Fotz Studio"
+        title="Targetowanie Reklam — Precyzyjne Dotarcie do Grupy Docelowej"
         description="Targetowanie reklam — budowanie grup odbiorców, Custom Audiences, Lookalike, retargeting i remarketing. Precyzyjne kampanie dla firm. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/targetowanie"
         keywords="targetowanie reklam, grupy docelowe reklamy, lookalike audience, retargeting, targetowanie google ads, targetowanie facebook ads, custom audience, precyzyjne targetowanie, grupy odbiorców facebook, targetowanie behawioralne"

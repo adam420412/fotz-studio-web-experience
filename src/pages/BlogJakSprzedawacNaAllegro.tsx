@@ -65,7 +65,7 @@ export default function BlogJakSprzedawacNaAllegro() {
   return (
     <>
       <SEOHead
-        title="Jak sprzedawać na Allegro — poradnik dla sprzedawców 2025 | fotz.pl"
+        title="Jak sprzedawać na Allegro — poradnik dla sprzedawców 2025"
         description="Jak sprzedawać na Allegro — krok po kroku od rejestracji konta, przez wystawianie ofert, po zwiększanie sprzedaży. Prowizje Allegro i Allegro Smart! wyjaśnione."
         canonical="https://fotz.pl/blog/jak-sprzedawac-na-allegro"
 

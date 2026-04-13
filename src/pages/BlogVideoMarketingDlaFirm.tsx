@@ -91,7 +91,7 @@ export default function BlogVideoMarketingDlaFirm() {
   return (
     <Layout>
       <SEOHead
-        title="Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026]"
+        title="Video Marketing dla Firm | Fotz Studio"
         description="Video marketing dla firm – rodzaje filmów reklamowych, YouTube Ads, TikTok, koszty i zwrot z inwestycji. Kompletny przewodnik po video marketingu ✓"
         canonical="https://fotz.pl/blog/video-marketing-dla-firm"
         ogImage="https://fotz.pl/images/video-marketing-dla-firm.jpg"

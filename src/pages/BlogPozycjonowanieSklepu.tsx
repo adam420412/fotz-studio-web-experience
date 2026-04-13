@@ -75,7 +75,7 @@ export default function BlogPozycjonowanieSklepu() {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie sklepu internetowego — kompletny poradnik | fotz.pl"
+        title="Pozycjonowanie sklepu internetowego — kompletny poradnik"
         description="Pozycjonowanie sklepu internetowego — jak optymalizować produkty, kategorie i treści dla Google. SEO dla WooCommerce, Shopify i PrestaShop. Poradnik 2025."
         canonical="https://fotz.pl/blog/pozycjonowanie-sklepu-internetowego"
         keywords="pozycjonowanie sklepu internetowego, seo e-commerce, pozycjonowanie sklepu online, pozycjonowanie produktów w google, seo dla sklepu, pozycjonowanie sklepu woocommerce, seo sklep internetowy"

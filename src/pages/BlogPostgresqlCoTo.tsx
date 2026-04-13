@@ -123,10 +123,12 @@ export default function BlogPostgresqlCoTo() {
     <Layout>
       <SEOHead
         title="PostgreSQL — co to jest? SQL, indeksy, JSONB i optymalizacja"
-        description="PostgreSQL — definicja, typy danych (JSONB, arrays, UUID), zaawansowane SQL (CTE, window functions), indeksy, partycjonowanie i rozszerzenia. Kompletny przewodnik."
+        description="PostgreSQL — definicja, typy danych (JSONB, arrays, UUID), zaawansowane SQL (CTE, window functions), indeksy, partycjonowanie i rozszerzenia. Kompletny…"
         canonicalUrl="https://fotz.pl/blog/postgresql-co-to-jest"
 
         keywords="PostgreSQL co to jest, PostgreSQL jak działa, PostgreSQL tutorial, PostgreSQL przykład, czym jest PostgreSQL, PostgreSQL dokumentacja, PostgreSQL przewodnik"
+
+        canonical="https://fotz.pl/blog/postgresql-co-to-jest"
       />
       <ArticleSchema
         title="PostgreSQL — co to jest i jak działa? Kompletny przewodnik"

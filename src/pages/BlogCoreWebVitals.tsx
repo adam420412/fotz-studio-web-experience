@@ -87,7 +87,7 @@ export default function BlogCoreWebVitals() {
   return (
     <>
       <SEOHead
-        title="Core Web Vitals — co to jest i jak poprawić LCP, INP, CLS? | fotz.pl"
+        title="Core Web Vitals — co to jest i jak poprawić LCP, INP, CLS?"
         description="Core Web Vitals co to jest — wyjaśniamy LCP, INP i CLS, jak je sprawdzić w PageSpeed Insights i Search Console oraz jak poprawić wyniki dla lepszego SEO."
         canonical="https://fotz.pl/blog/core-web-vitals-co-to"
 

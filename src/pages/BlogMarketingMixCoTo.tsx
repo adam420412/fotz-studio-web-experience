@@ -109,10 +109,12 @@ export default function BlogMarketingMixCoTo() {
     <Layout>
       <SEOHead
         title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"
-        description="Marketing mix — definicja, 4P (Product, Price, Place, Promotion) i 7P dla usług, praktyczne zastosowanie i nowoczesne alternatywy. Kompletny przewodnik po modelu 4P."
+        description="Marketing mix — definicja, 4P (Product, Price, Place, Promotion) i 7P dla usług, praktyczne zastosowanie i nowoczesne alternatywy. Kompletny przewodnik po…"
         canonicalUrl="https://fotz.pl/blog/marketing-mix-co-to"
 
         keywords="Marketing Mix co to jest, Marketing Mix definicja, czym jest Marketing Mix, Marketing Mix w marketingu, Marketing Mix przykłady, jak działa Marketing Mix, Marketing Mix strategia"
+
+        canonical="https://fotz.pl/blog/marketing-mix-co-to"
       />
       <ArticleSchema
         title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"

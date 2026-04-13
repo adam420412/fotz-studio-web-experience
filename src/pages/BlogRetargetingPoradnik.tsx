@@ -45,7 +45,7 @@ export default function BlogRetargetingPoradnik() {
   return (
     <Layout>
       <SEOHead
-        title="Retargeting reklamy i remarketing Google - Kompletny poradnik 2025"
+        title="Retargeting reklamy i remarketing Google - Kompletny poradnik…"
         description="Jak opanowac retargeting? Przewodnik po pixelach, segmentacji, kreatywach i budzetowaniu. Sredni ROAS 300-500% dla e-commerce."
         canonical="https://fotz.pl/blog/retargeting-reklamy-poradnik"
         ogImage="https://fotz.pl/og-retargeting.jpg"

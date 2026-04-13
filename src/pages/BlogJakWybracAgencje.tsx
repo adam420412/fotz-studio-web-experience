@@ -106,7 +106,7 @@ export default function BlogJakWybracAgencje() {
   return (
     <>
       <SEOHead
-        title="Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru | Fotz Studio"
+        title="Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru"
         description="Jak wybrać dobrą agencję marketingową? Poznaj 10 kluczowych kryteriów: portfolio, specjalizacja, transparentność, ROI. Praktyczny poradnik dla firm."
         canonical="https://fotz.pl/blog/jak-wybrac-agencje-marketingowa"
         ogType="article"

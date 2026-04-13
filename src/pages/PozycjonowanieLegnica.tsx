@@ -42,7 +42,7 @@ export default function PozycjonowanieLegnica() {
     <>
       <SEOHead
         title="Pozycjonowanie Legnica | Fotz Studio"
-        description="Profesjonalne usługi pozycjonowania stron internetowych w Legnicy. Zwiększ widoczność Twojej firmy w Google. Pakiety SEO dostosowane do Twoich potrzeb. Konsultacja gratis!"
+        description="Profesjonalne usługi pozycjonowania stron internetowych w Legnicy. Zwiększ widoczność Twojej firmy w Google. Pakiety SEO dostosowane do Twoich potrzeb…"
         canonical="https://fotz.pl/pozycjonowanie/legnica"
         keywords="pozycjonowanie legnica, agencja seo legnica, seo legnica, pozycjonowanie stron legnica, seo dla firm legnica, pozycjonowanie lokalne legnica, seo dolny śląsk"
       />

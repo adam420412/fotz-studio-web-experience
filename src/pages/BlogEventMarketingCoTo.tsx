@@ -98,6 +98,8 @@ export default function BlogEventMarketingCoTo() {
         canonicalUrl="https://fotz.pl/blog/event-marketing-co-to"
 
         keywords="Event Marketing co to jest, Event Marketing definicja, czym jest Event Marketing, Event Marketing w marketingu, Event Marketing przykłady, jak działa Event Marketing, Event Marketing strategia"
+
+        canonical="https://fotz.pl/blog/event-marketing-co-to"
       />
       <ArticleSchema
         title="Event Marketing — co to jest i jak działa?"

@@ -135,7 +135,7 @@ const StronyInternetoweKatowice = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Katowice | Tworzenie i Projektowanie Stron WWW | Fotz Studio"
+        title="Strony Internetowe Katowice | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Katowice — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Katowic. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/katowice"
         keywords="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice, wykonanie strony internetowej katowice, responsywna strona www katowice, wordpress katowice, strony internetowe śląsk"
