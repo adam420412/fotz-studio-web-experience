@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from '@/components/seo/StructuredData';
 import { FadeInView } from '@/components/FadeInView';

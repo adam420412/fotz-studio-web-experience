@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ArrowRight, Target, Heart, Zap, Users, MapPin, Camera, Video, Film, Clapperboard } from "lucide-react";

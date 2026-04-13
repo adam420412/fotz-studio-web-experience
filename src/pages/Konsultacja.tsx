@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { CheckCircle, Clock, Target, Zap, Loader2, Send, Phone, ArrowRight, Award, Users, TrendingUp } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";

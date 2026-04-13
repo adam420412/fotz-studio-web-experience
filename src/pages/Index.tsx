@@ -1,6 +1,7 @@
 // CLS FIX: Eager imports for homepage sections — eliminates layout shift from
 // Suspense placeholder→real-content replacements (was causing CLS=1.125).
 // All sections are needed on homepage anyway, so lazy-loading adds no benefit.
+import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from 'react-router-dom';
 import { Hero } from "@/components/sections/Hero";

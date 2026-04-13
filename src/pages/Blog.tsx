@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock, User, Search, X } from "lucide-react";
