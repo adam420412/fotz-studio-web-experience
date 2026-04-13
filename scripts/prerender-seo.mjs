@@ -192,23 +192,24 @@ function injectMeta(html, meta) {
   }
 
   // Step 2: Build the full set of page-specific meta tags
+  // Add data-rh="true" so react-helmet-async replaces these tags instead of duplicating
   const metaTags = [
-    `<title>${meta.title}</title>`,
-    `<meta name="description" content="${meta.description}" />`,
-    meta.keywords ? `<meta name="keywords" content="${meta.keywords}" />` : '',
-    `<link rel="canonical" href="${meta.canonical}" />`,
-    meta.noIndex ? '<meta name="robots" content="noindex, nofollow" />' : '',
-    `<meta property="og:title" content="${meta.title}" />`,
-    `<meta property="og:description" content="${meta.description}" />`,
-    `<meta property="og:url" content="${meta.canonical}" />`,
-    `<meta property="og:image" content="${meta.ogImage}" />`,
-    `<meta property="og:type" content="website" />`,
-    `<meta property="og:locale" content="pl_PL" />`,
-    `<meta property="og:site_name" content="Fotz Studio" />`,
-    `<meta name="twitter:card" content="summary_large_image" />`,
-    `<meta name="twitter:title" content="${meta.title}" />`,
-    `<meta name="twitter:description" content="${meta.description}" />`,
-    `<meta name="twitter:image" content="${meta.ogImage}" />`,
+    `<title data-rh="true">${meta.title}</title>`,
+    `<meta data-rh="true" name="description" content="${meta.description}" />`,
+    meta.keywords ? `<meta data-rh="true" name="keywords" content="${meta.keywords}" />` : '',
+    `<link data-rh="true" rel="canonical" href="${meta.canonical}" />`,
+    meta.noIndex ? '<meta data-rh="true" name="robots" content="noindex, nofollow" />' : '',
+    `<meta data-rh="true" property="og:title" content="${meta.title}" />`,
+    `<meta data-rh="true" property="og:description" content="${meta.description}" />`,
+    `<meta data-rh="true" property="og:url" content="${meta.canonical}" />`,
+    `<meta data-rh="true" property="og:image" content="${meta.ogImage}" />`,
+    `<meta data-rh="true" property="og:type" content="website" />`,
+    `<meta data-rh="true" property="og:locale" content="pl_PL" />`,
+    `<meta data-rh="true" property="og:site_name" content="Fotz Studio" />`,
+    `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
+    `<meta data-rh="true" name="twitter:title" content="${meta.title}" />`,
+    `<meta data-rh="true" name="twitter:description" content="${meta.description}" />`,
+    `<meta data-rh="true" name="twitter:image" content="${meta.ogImage}" />`,
   ].filter(Boolean).join('\n    ');
 
   // Step 3: Insert after <meta name="author" ...> line
@@ -257,8 +258,8 @@ function injectMeta(html, meta) {
     relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/blog">Blog</a>`;
   }
 
-  const seoSection = `<section id="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;pointer-events:none" aria-hidden="true">
-      <p class="page-title">${meta.title.replace(/ \| Fotz.*$/, '')}</p>
+  const seoSection = `<section id="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;pointer-events:none">
+      <h1>${meta.title.replace(/ \| Fotz.*$/, '')}</h1>
       <p>${meta.description}</p>
       <nav>${relatedLinks} · <a href="/">Fotz Studio — Agencja Marketingowa</a> · <a href="/kontakt">Kontakt</a></nav>
     </section>
