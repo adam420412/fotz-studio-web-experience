@@ -39,8 +39,7 @@ export default function StronyInternetoweTorun() {
       <SEOHead
         title="Strony internetowe Toruń | Projektowanie stron internetowych"
         description="Profesjonalne projektowanie stron internetowych w Toruniu. Nowoczesne strony wizytówki, sklepy e-commerce i landing pages dla firm. SEO-friendly…"
-        canonical="https://fotz.pl/strony-internetowe/torun"
-        ogImage="https://fotz.pl/og-torun.jpg"
+        canonical="https://fotz.pl/uslugi/strony-internetowe/torun"
         keywords="strony internetowe toruń, tworzenie stron internetowych toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron www toruń, sklep internetowy toruń"
       />
       

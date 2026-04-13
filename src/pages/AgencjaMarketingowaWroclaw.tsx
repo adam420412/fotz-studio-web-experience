@@ -94,7 +94,6 @@ export default function AgencjaMarketingowaWroclaw() {
         canonical="https://fotz.pl/agencja-marketingowa/wroclaw"
         ogTitle="Agencja Marketingowa Wrocław | FOTZ"
         ogDescription="Profesjonalna agencja marketingowa we Wrocławiu. SEO, Google Ads, Social Media, tworzenie stron. 500+ zadowolonych klientów."
-        ogImage="https://fotz.pl/og-wroclaw.jpg"
         keywords="agencja marketingowa wrocław, marketing internetowy wrocław, agencja reklamowa wrocław, kampanie reklamowe wrocław, seo wrocław, google ads wrocław, agencja marketingowa dolny śląsk"
       />
 

@@ -33,7 +33,6 @@ export default function BlogSEOvsGoogleAds() {
         title="SEO vs Google Ads - Porównanie pozycjonowania i reklamy | Fotz"
         description="Porównanie SEO i Google Ads: różnice, zalety, wady i kiedy wybrać każdą strategię. Przewodnik dla firm chcących zwiększyć widoczność online."
         canonical="https://fotz.pl/blog/seo-vs-google-ads"
-        ogImage="https://fotz.pl/og-seo-vs-ads.jpg"
 
         keywords="SEO vs Google Ads - Porównanie pozycjonowania i reklamy, SEO vs Google Ads - Porównanie pozycjonowania i reklamy poradnik, SEO vs Google Ads - Porównanie pozycjonowania i reklamy strategia, SEO vs Google Ads - Porównanie pozycjonowania i reklamy jak zrobić, SEO vs Google Ads - Porównanie pozycjonowania i reklamy marketing, SEO vs Google Ads - Porównanie pozycjonowania i reklamy przykłady, SEO vs Google Ads - Porównanie pozycjonowania i reklamy w Polsce"
       />

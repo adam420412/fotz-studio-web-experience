@@ -209,7 +209,6 @@ export default function TworzenieStronWroclaw() {
         title="Tworzenie stron internetowych Wrocław | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe we Wrocławiu. Szybkie, responsywne strony dla firm z Dolnego Śląska. Od 499 zł. Bezpłatna wycena!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/wroclaw"
-        ogImage="https://fotz.pl/og-wroclaw.jpg"
         keywords="tworzenie stron internetowych wrocław, strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron internetowych wrocław, strony www wrocław, sklepy internetowe wrocław, projektowanie stron www wrocław, agencja webdesign wrocław, tworzenie stron wrocław, strona internetowa wrocław"
       />
       <ServiceSchema

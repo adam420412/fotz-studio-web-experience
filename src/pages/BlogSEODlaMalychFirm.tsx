@@ -55,7 +55,6 @@ const BlogSEODlaMalychFirm = () => {
         keywords="SEO dla małych firm, pozycjonowanie lokalne, Google My Business, SEO 2026"
         canonical="https://fotz.pl/blog/seo-dla-malych-firm"
         ogType="article"
-        ogImage="https://fotz.pl/images/blog/seo-dla-malych-firm.jpg"
       />
 
       <ArticleSchema data={articleData} />

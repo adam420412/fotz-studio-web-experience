@@ -60,8 +60,7 @@ export default function BlogMarketingAfiliacyjny() {
       <SEOHead
         title="Marketing afiliacyjny - Kompletny przewodnik 2025"
         description="Dowiedz się, co to jest marketing afiliacyjny, jak zacząć jako publisher, model CPS/CPA/CPL i zarabiaj na prowizjach z najlepszych sieci afiliacyjnych w Polsce."
-        canonical="https://fotz.pl/blog/marketing-afiliacyjny"
-        ogImage="https://fotz.pl/og-marketing-afiliacyjny.jpg"
+        canonical="https://fotz.pl/blog/marketing-afiliacyjny-co-to"
 
         keywords="Marketing afiliacyjny - Kompletny przewodnik 2025, Marketing afiliacyjny - Kompletny przewodnik 2025 poradnik, Marketing afiliacyjny - Kompletny przewodnik 2025 strategia, Marketing afiliacyjny - Kompletny przewodnik 2025 jak zrobić, Marketing afiliacyjny - Kompletny przewodnik 2025 marketing, Marketing afiliacyjny - Kompletny przewodnik 2025 przykłady, Marketing afiliacyjny - Kompletny przewodnik 2025 w Polsce"
       />

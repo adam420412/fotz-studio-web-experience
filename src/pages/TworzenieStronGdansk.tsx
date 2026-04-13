@@ -221,7 +221,6 @@ const TworzenieStronGdansk = () => {
         title="Tworzenie stron internetowych Gdańsk | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Gdańsku i Trójmieście. Nowoczesne, szybkie strony dla firm. Od 499 zł netto. Bezpłatna wycena i konsultacja!"
         canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/gdansk"
-        ogImage="https://fotz.pl/og-gdansk.jpg"
         keywords="tworzenie stron internetowych gdańsk, strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron internetowych gdańsk, strony www gdańsk, strony internetowe trójmiasto, tworzenie stron gdańsk, strona internetowa gdańsk, strony internetowe gdynia, agencja webdesign gdańsk, projektowanie stron gdańsk, sklep internetowy gdańsk"
       />
       <ServiceSchema

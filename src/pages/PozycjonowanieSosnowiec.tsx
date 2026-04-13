@@ -97,7 +97,7 @@ const PozycjonowanieSosnowiec = () => {
       <SEOHead
         title="Pozycjonowanie Sosnowiec - SEO lokalne dla firm | fotz studio"
         description="Pozycjonowanie stron Sosnowiec. Agencja SEO fotz studio — audyt SEO, optymalizacja dla usług lokalnych, handlu, transportu. Rynek Sosnowca z bogatą…"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/sosnowiec"
+        canonical="https://fotz.pl/pozycjonowanie/sosnowiec"
         ogTitle="Pozycjonowanie Sosnowiec — fotz studio Agencja SEO"
         ogDescription="Pozycjonowanie dla Sosnowca — usługi lokalne, handel, transport. SEO dla rynku górniczego i transformującego się miasta. Audyt SEO, optymalizacja, link building."
         keywords="pozycjonowanie sosnowiec, agencja seo sosnowiec, seo sosnowiec, pozycjonowanie stron sosnowiec, seo dla firm sosnowiec, seo śląsk, pozycjonowanie lokalne sosnowiec"

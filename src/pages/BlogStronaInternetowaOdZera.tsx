@@ -131,7 +131,6 @@ export default function BlogStronaInternetowaOdZera() {
         title="Strona internetowa dla małej firmy - poradnik 2025 | fotz.pl"
         description="Pełny poradnik jak zrobić stronę dla małej firmy. Co musi mieć strona? Ile kosztuje? WordPress vs Wix. 5 najczęstszych błędów. Praktyczne porady."
         canonical="https://fotz.pl/blog/strona-internetowa-dla-malej-firmy"
-        ogImage="https://fotz.pl/og-blog-malafirma.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "BlogPosting",

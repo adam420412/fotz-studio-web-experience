@@ -230,7 +230,6 @@ const AgencjaMarketingowaWarszawa = () => {
         description="Agencja marketingowa Warszawa ✓ SEO, Google Ads, Social Media, strony internetowe. Marketing internetowy Warszawa — 200+ projektów dla firm. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/warszawa"
         keywords="agencja marketingowa warszawa, marketing internetowy warszawa, agencja reklamowa warszawa, seo warszawa, google ads warszawa, firma marketingowa warszawa, reklama internetowa warszawa"
-        ogImage="https://fotz.pl/og-image-warszawa.jpg"
       />
 
       <BreadcrumbSchema

@@ -94,7 +94,6 @@ export default function BlogVideoMarketingDlaFirm() {
         title="Video Marketing dla Firm | Fotz Studio"
         description="Video marketing dla firm – rodzaje filmów reklamowych, YouTube Ads, TikTok, koszty i zwrot z inwestycji. Kompletny przewodnik po video marketingu ✓"
         canonical="https://fotz.pl/blog/video-marketing-dla-firm"
-        ogImage="https://fotz.pl/images/video-marketing-dla-firm.jpg"
         schema={articleSchema}
 
         keywords="Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026], Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] poradnik, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] strategia, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] jak zrobić, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] marketing, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] przykłady, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] w Polsce"

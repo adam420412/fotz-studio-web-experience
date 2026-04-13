@@ -65,7 +65,6 @@ export default function BlogBlogFirmowy() {
         title="Blog firmowy | Fotz Studio"
         description="Dowiedz sie jak prowadzic blog firmowy aby generowal leady i podniosl SEO. Strategia, content ideas, FAQ i case studies. Poradnik 2025."
         canonical="https://fotz.pl/blog/blog-firmowy-poradnik"
-        ogImage="https://fotz.pl/og-blog-firmowy.png"
 
         keywords="Blog firmowy, Blog firmowy co to jest, Blog firmowy jak działa, Blog firmowy definicja, Blog firmowy przykłady, Blog firmowy poradnik, Blog firmowy przewodnik"
       />

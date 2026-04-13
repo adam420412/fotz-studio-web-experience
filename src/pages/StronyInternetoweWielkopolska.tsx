@@ -100,7 +100,6 @@ export default function StronyInternetoweWielkopolska() {
         title="Strony internetowe Wielkopolska | Poznań | fotz.pl"
         description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena od 499 zł."
         canonical="https://fotz.pl/uslugi/strony-internetowe/wielkopolska"
-        ogImage="https://fotz.pl/og-wielkopolska.jpg"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",

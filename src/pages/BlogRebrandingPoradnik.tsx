@@ -171,7 +171,6 @@ export default function BlogRebrandingPoradnik() {
         title="Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025"
         description="Kompleksowy poradnik rebranding firmy. Dowiedz się, kiedy zmienić branding, jakie są etapy procesu, koszty i jak uniknąć błędów. Sprawdź 8 sygnałów, że…"
         canonical="https://fotz.pl/blog/rebranding-kiedy-i-jak"
-        ogImage="https://fotz.pl/og-rebranding-poradnik.png"
 
         keywords="Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 poradnik, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 strategia, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 jak zrobić, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 marketing, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 przykłady, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 w Polsce"
       />

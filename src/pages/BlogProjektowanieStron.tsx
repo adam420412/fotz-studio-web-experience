@@ -201,7 +201,6 @@ export default function BlogProjektowanieStron() {
         title="Projektowanie stron internetowych - co musisz wiedzieć przed…"
         description="Pełny poradnik projektowania stron: etapy, koszty, jak wybrać agencję. Praktyczne porady dla każdego przedsiębiorcy szukającego profesjonalnej strony."
         canonical="https://fotz.pl/blog/projektowanie-stron-internetowych-poradnik"
-        ogImage="https://fotz.pl/og-blog-design.jpg"
 
         keywords="Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025, Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025 co to jest, Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025 jak działa, Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025 definicja, Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025 przykłady, Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025 poradnik, Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025 przewodnik"
       />

@@ -97,7 +97,7 @@ const PozycjonowanieGliwice = () => {
       <SEOHead
         title="Pozycjonowanie Gliwice — SEO lokalne | fotz studio"
         description="Pozycjonowanie stron Gliwice i GOM. Agencja SEO fotz studio — audyt SEO, link building dla IT, produkcji i logistyki. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/gliwice"
+        canonical="https://fotz.pl/pozycjonowanie/gliwice"
         ogTitle="Pozycjonowanie Gliwice — fotz studio Agencja SEO"
         ogDescription="Pozycjonowanie dla Gliwic i GOM — IT, automatyka, produkcja. Audyt SEO, optymalizacja, link building dla high-tech sektora."
         keywords="pozycjonowanie gliwice, agencja seo gliwice, seo gliwice, pozycjonowanie stron gliwice, seo dla firm gliwice, seo śląsk, pozycjonowanie lokalne gliwice"

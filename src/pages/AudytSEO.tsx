@@ -118,7 +118,7 @@ export default function AudytSEO() {
       <SEOHead
         title="Audyt SEO | Profesjonalna analiza strony | fotz.pl"
         description="Audyt SEO — szczegółowa analiza Twojej strony internetowej. Identyfikujemy błędy, które blokują Twoje pozycje w Google. Zamów audyt SEO!"
-        canonical="https://fotz.pl/uslugi/audyt-seo"
+        canonical="https://fotz.pl/seo/audyt"
         keywords="audyt seo, darmowy audyt seo, audyt seo online, audyt strony internetowej, analiza seo strony, audyt techniczny seo, bezpłatny audyt seo, audyt seo cena, sprawdź seo strony, audyt pozycjonowania, co to jest audyt seo, audyt seo co obejmuje"
       />
       <ServiceSchema

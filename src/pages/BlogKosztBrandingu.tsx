@@ -132,7 +132,6 @@ export default function BlogKosztBrandingu() {
         title="Ile kosztuje branding? Ceny identyfikacji wizualnej 2025"
         description="Pełny poradnik cen brandingu. Porównanie kosztów brandingu dla freelancerów, małych agencji i dużych agencji. Co wchodzi w skład branding i najczęste pytania."
         canonical="https://fotz.pl/blog/ile-kosztuje-branding"
-        ogImage="https://fotz.pl/og-branding-ceny.png"
 
         keywords="Ile kosztuje branding? Ceny identyfikacji wizualnej 2025, Ile kosztuje branding? Ceny identyfikacji wizualnej 2025 poradnik, Ile kosztuje branding? Ceny identyfikacji wizualnej 2025 strategia, Ile kosztuje branding? Ceny identyfikacji wizualnej 2025 jak zrobić, Ile kosztuje branding? Ceny identyfikacji wizualnej 2025 marketing, Ile kosztuje branding? Ceny identyfikacji wizualnej 2025 przykłady, Ile kosztuje branding? Ceny identyfikacji wizualnej 2025 w Polsce"
       />

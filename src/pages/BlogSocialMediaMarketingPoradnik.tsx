@@ -55,7 +55,6 @@ export default function BlogSocialMediaMarketingPoradnik() {
         description="Kompleksowy poradnik social media marketing dla firm. Strategie, KPI, metryki, wybór platform i praktyczne porady jak efektywnie promować firmę w mediach…"
         canonical="https://fotz.pl/blog/social-media-marketing-poradnik"
         keywords="social media marketing poradnik, jak zacząć social media marketing, social media poradnik, marketing na facebooku poradnik"
-        ogImage="https://fotz.pl/og-social-media-marketing.jpg"
       />
 
       <ArticleSchema

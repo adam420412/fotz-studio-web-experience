@@ -40,7 +40,6 @@ export default function BlogBrandingDlaMalychFirm() {
         description="Odkryj jak zbudować silne branding dla małej firmy. Przewodnik po identyfikacji wizualnej, tworzeniu logo, wyborze kolorów i konsystencji marki."
         keywords="branding dla małej firmy, identyfikacja wizualna, mała firma, logo, branding na budżecie, visual identity"
         canonical="https://fotz.pl/blog/branding-dla-malej-firmy"
-        ogImage="https://fotz.pl/og-branding-mala-firma.jpg"
         ogType="article"
       />
       

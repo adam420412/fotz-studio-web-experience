@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>https://fotz.pl/sitemap-main.xml</loc><lastmod>2026-04-12</lastmod></sitemap>
-  <sitemap><loc>https://fotz.pl/sitemap-services.xml</loc><lastmod>2026-04-12</lastmod></sitemap>
-  <sitemap><loc>https://fotz.pl/sitemap-blog.xml</loc><lastmod>2026-04-12</lastmod></sitemap>
-  <sitemap><loc>https://fotz.pl/sitemap-cities.xml</loc><lastmod>2026-04-12</lastmod></sitemap>
-  <sitemap><loc>https://fotz.pl/sitemap-industries.xml</loc><lastmod>2026-04-12</lastmod></sitemap>
-  <sitemap><loc>https://fotz.pl/sitemap-casestudies.xml</loc><lastmod>2026-04-12</lastmod></sitemap>
+  <sitemap>
+    <loc>https://fotz.pl/sitemap-main.xml</loc>
+    <lastmod>2026-04-13</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://fotz.pl/sitemap-services.xml</loc>
+    <lastmod>2026-04-13</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://fotz.pl/sitemap-cities.xml</loc>
+    <lastmod>2026-04-13</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://fotz.pl/sitemap-industries.xml</loc>
+    <lastmod>2026-04-13</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://fotz.pl/sitemap-casestudies.xml</loc>
+    <lastmod>2026-04-13</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://fotz.pl/sitemap-blog.xml</loc>
+    <lastmod>2026-04-13</lastmod>
+  </sitemap>
 </sitemapindex>

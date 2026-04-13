@@ -67,7 +67,6 @@ const BlogTrendyEcommerce2027 = () => {
         description="Jakie trendy e-commerce zdominują 2027 rok? AI w zakupach, social commerce, quick commerce, personalizacja i zrównoważony handel. Przygotuj swój sklep na…"
         canonical="https://fotz.pl/blog/trendy-ecommerce-2027"
         ogType="article"
-        ogImage="https://fotz.pl/og-trendy-ecommerce-2027.jpg"
 
         keywords="Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport], Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] co to jest, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] jak działa, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] definicja, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] przykłady, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] poradnik, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] przewodnik"
       />

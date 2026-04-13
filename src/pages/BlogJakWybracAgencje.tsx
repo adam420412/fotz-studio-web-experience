@@ -110,7 +110,6 @@ export default function BlogJakWybracAgencje() {
         description="Jak wybrać dobrą agencję marketingową? Poznaj 10 kluczowych kryteriów: portfolio, specjalizacja, transparentność, ROI. Praktyczny poradnik dla firm."
         canonical="https://fotz.pl/blog/jak-wybrac-agencje-marketingowa"
         ogType="article"
-        ogImage="https://fotz.pl/og-image-agencja.jpg"
 
         keywords="Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru poradnik, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru strategia, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru jak zrobić, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru marketing, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru przykłady, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru w Polsce"
       />
