@@ -5,6 +5,7 @@ import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { Image, Share2, TrendingUp, Heart, Zap, Users } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -472,6 +473,7 @@ export default function BlogPinterestDlaFirmy() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="pinterest-dla-firmy" />
       <ContactSection />
     </Layout>
   );

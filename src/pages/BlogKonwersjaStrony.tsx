@@ -5,6 +5,7 @@ import { SEOHead } from '@/components/seo/SEOHead';
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from '@/components/seo/StructuredData';
 import { Layout } from '@/components/layout/Layout';
 import { TrendingUp, Target, BarChart3, Users, Zap, CheckCircle } from 'lucide-react';
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogKonwersjaStrony() {
   const breadcrumbItems = [
@@ -486,7 +487,8 @@ export default function BlogKonwersjaStrony() {
             </div>
           </div>
         </article>
-      </Layout>
+        <RelatedArticles currentArticleId="jak-zwiekszyc-konwersje-strony" />
+    </Layout>
     </>
   );
 }

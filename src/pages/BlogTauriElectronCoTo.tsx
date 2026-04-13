@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -157,6 +158,7 @@ export default function BlogTauriElectronCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="tauri-electron-wails-desktop-apps-react-typescript-2024" />
       <ContactSection />
     </Layout>
   );

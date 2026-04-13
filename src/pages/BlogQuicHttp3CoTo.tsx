@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -189,6 +190,7 @@ export default function BlogQuicHttp3CoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="quic-http3-co-to-jest-jak-wplywa-na-web-performance" />
       <ContactSection />
     </Layout>
   );

@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -145,6 +146,7 @@ export default function BlogTypescriptAdvancedCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="typescript-zaawansowany-generics-conditional-types-decorators-typescript-5" />
       <ContactSection />
     </Layout>
   );

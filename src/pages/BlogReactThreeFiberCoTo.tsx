@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -155,6 +156,7 @@ export default function BlogReactThreeFiberCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024" />
       <ContactSection />
     </Layout>
   );

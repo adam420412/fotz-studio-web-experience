@@ -5,6 +5,7 @@ import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { Monitor, Target, Zap, BarChart3, CheckCircle } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -532,6 +533,7 @@ export default function BlogOptymalizacjaLandingPage() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="optymalizacja-landing-page" />
       <ContactSection />
     </Layout>
   );

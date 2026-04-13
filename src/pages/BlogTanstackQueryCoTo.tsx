@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -145,6 +146,7 @@ export default function BlogTanstackQueryCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="tanstack-query-react-query-co-to-jest-cache-usemutation-nextjs-ssr" />
       <ContactSection />
     </Layout>
   );

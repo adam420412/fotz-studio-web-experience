@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -159,6 +160,7 @@ export default function BlogNextAuthCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024" />
       <ContactSection />
     </Layout>
   );

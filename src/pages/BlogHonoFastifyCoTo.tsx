@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -159,6 +160,7 @@ export default function BlogHonoFastifyCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024" />
       <ContactSection />
     </Layout>
   );

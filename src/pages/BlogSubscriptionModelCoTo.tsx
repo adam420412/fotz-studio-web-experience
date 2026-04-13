@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -245,6 +246,7 @@ export default function BlogSubscriptionModelCoTo() {
         </section>
       </FadeInView>
 
+      <RelatedArticles currentArticleId="subscription-model-co-to" />
       <ContactSection />
     </Layout>
   );

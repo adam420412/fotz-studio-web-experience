@@ -2,6 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Palette, Pen, Image, Star, Award, Sparkles, TrendingUp, Target } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogBrandingDlaMalychFirm() {
   const breadcrumbs = [
@@ -284,7 +285,8 @@ export default function BlogBrandingDlaMalychFirm() {
             </a>
           </section>
         </article>
-      </Layout>
+        <RelatedArticles currentArticleId="branding-dla-malej-firmy" />
+    </Layout>
     </>
   );
 }

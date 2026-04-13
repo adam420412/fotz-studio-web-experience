@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -154,6 +155,7 @@ export default function BlogSagaPatternCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka" />
       <ContactSection />
     </Layout>
   );

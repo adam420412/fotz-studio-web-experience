@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -153,6 +154,7 @@ export default function BlogAstroDeepDiveCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="astro-4-content-collections-view-transitions-islands-astro-db-actions-2024" />
       <ContactSection />
     </Layout>
   );

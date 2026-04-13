@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -262,6 +263,7 @@ export default function BlogTerraformCoTo() {
         </section>
       </FadeInView>
 
+      <RelatedArticles currentArticleId="terraform-co-to-jest" />
       <ContactSection />
     </Layout>
   );

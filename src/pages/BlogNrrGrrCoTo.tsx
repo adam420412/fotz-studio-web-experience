@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -209,6 +210,7 @@ export default function BlogNrrGrrCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="nrr-grr-net-revenue-retention-co-to-jest" />
       <ContactSection />
     </Layout>
   );

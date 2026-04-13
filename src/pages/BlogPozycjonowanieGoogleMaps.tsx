@@ -5,6 +5,7 @@ import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { MapPin, Globe, Star, Search, TrendingUp, Map, CheckCircle, AlertCircle, Zap } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -639,6 +640,7 @@ export default function BlogPozycjonowanieGoogleMaps() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="pozycjonowanie-google-maps" />
       <ContactSection />
     </Layout>
   );

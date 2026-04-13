@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -179,6 +180,7 @@ export default function BlogPlatformEngineeringCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="platform-engineering-co-to-jest-internal-developer-platform" />
       <ContactSection />
     </Layout>
   );

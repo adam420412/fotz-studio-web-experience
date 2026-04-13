@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -152,6 +153,7 @@ export default function BlogTs55CoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024" />
       <ContactSection />
     </Layout>
   );

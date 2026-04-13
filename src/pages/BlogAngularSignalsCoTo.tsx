@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -147,6 +148,7 @@ export default function BlogAngularSignalsCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="angular-signals-standalone-components-defer-angular-17-nowosci-2024" />
       <ContactSection />
     </Layout>
   );

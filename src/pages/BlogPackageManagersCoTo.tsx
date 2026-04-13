@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -157,6 +158,7 @@ export default function BlogPackageManagersCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="npm-pnpm-yarn-bun-package-managers-nodejs-2024" />
       <ContactSection />
     </Layout>
   );

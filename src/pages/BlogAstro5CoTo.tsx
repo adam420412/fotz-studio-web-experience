@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -153,6 +154,7 @@ export default function BlogAstro5CoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="astro-5-content-layer-server-islands-actions-vs-nextjs-2024" />
       <ContactSection />
     </Layout>
   );

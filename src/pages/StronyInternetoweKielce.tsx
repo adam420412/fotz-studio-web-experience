@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { Link } from "react-router-dom";
 
 
 const faqs = [
@@ -265,6 +266,15 @@ export default function StronyInternetoweKielce() {
       </section>
 
       {/* Contact */}
+
+      {/* Link nawigacyjny */}
+      <section className="py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link to="/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
+            ← Strony internetowe — wszystkie miasta
+          </Link>
+        </div>
+      </section>
       <ContactSection />
     </Layout>
   );

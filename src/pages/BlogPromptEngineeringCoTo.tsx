@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -238,6 +239,7 @@ export default function BlogPromptEngineeringCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="prompt-engineering-co-to-jest-jak-pisac-prompty" />
       <ContactSection />
     </Layout>
   );

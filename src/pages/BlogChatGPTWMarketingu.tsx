@@ -2,6 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Cpu, Zap, MessageSquare, BrainCircuit, Sparkles } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogChatGPTWMarketingu() {
   const breadcrumbs = [
@@ -281,7 +282,8 @@ export default function BlogChatGPTWMarketingu() {
             </div>
           </div>
         </article>
-      </Layout>
+        <RelatedArticles currentArticleId="chatgpt-w-marketingu" />
+    </Layout>
     </>
   );
 }

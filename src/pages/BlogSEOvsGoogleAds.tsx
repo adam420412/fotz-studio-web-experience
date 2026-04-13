@@ -2,6 +2,7 @@ import { Search, Target, TrendingUp, BarChart3, DollarSign, Clock, Zap, Award } 
 import { SEOHead } from '@/components/seo/SEOHead';
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from '@/components/seo/StructuredData';
 import { Layout } from '@/components/layout/Layout';
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogSEOvsGoogleAds() {
   const faqData = [
@@ -496,7 +497,8 @@ export default function BlogSEOvsGoogleAds() {
             </button>
           </section>
         </article>
-      </Layout>
+        <RelatedArticles currentArticleId="seo-vs-google-ads" />
+    </Layout>
     </>
   );
 }

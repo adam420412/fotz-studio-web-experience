@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -189,6 +190,7 @@ export default function BlogWeb3CoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow" />
       <ContactSection />
     </Layout>
   );

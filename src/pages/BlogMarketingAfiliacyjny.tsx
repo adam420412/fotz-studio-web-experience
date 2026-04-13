@@ -15,6 +15,7 @@ import {
   Target,
   Users,
 } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogMarketingAfiliacyjny() {
   const breadcrumbs = [
@@ -928,6 +929,7 @@ export default function BlogMarketingAfiliacyjny() {
           </div>
         </article>
       </div>
+      <RelatedArticles currentArticleId="marketing-afiliacyjny-co-to" />
     </Layout>
   );
 }

@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -155,6 +156,7 @@ export default function BlogBullmqCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024" />
       <ContactSection />
     </Layout>
   );

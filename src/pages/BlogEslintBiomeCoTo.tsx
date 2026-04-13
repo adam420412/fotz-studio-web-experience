@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -159,6 +160,7 @@ export default function BlogEslintBiomeCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="eslint-biome-prettier-husky-linting-code-quality-typescript-2024" />
       <ContactSection />
     </Layout>
   );

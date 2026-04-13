@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -155,6 +156,7 @@ export default function BlogRspackFarmRolldownCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024" />
       <ContactSection />
     </Layout>
   );

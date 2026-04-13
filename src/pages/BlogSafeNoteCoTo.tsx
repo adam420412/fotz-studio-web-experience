@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -225,6 +226,7 @@ export default function BlogSafeNoteCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="safe-note-co-to-jest-jak-dziala-startup" />
       <ContactSection />
     </Layout>
   );

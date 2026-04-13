@@ -2,6 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Video, Play, TrendingUp, Users } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogTikTokDlaFirmy() {
   const faqs = [
@@ -421,6 +422,7 @@ export default function BlogTikTokDlaFirmy() {
           </div>
         </section>
       </main>
+      <RelatedArticles currentArticleId="tiktok-dla-firmy" />
     </Layout>
   );
 }

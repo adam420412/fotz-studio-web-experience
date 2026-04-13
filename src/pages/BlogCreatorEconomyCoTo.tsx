@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -232,6 +233,7 @@ export default function BlogCreatorEconomyCoTo() {
         </section>
       </FadeInView>
 
+      <RelatedArticles currentArticleId="creator-economy-co-to" />
       <ContactSection />
     </Layout>
   );

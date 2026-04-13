@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -215,6 +216,7 @@ export default function BlogTerritoryPlanningCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="territory-planning-planowanie-terytoriow-sprzedazowych" />
       <ContactSection />
     </Layout>
   );

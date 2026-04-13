@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -158,6 +159,7 @@ export default function BlogApiVersioningCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" />
       <ContactSection />
     </Layout>
   );

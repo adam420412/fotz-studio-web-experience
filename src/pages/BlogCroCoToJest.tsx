@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -198,6 +199,7 @@ export default function BlogCroCoToJest() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="cro-conversion-rate-optimization-co-to-jest" />
       <ContactSection />
     </Layout>
   );

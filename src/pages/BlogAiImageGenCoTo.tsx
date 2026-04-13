@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -155,6 +156,7 @@ export default function BlogAiImageGenCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" />
       <ContactSection />
     </Layout>
   );

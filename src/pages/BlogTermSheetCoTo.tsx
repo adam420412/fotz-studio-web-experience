@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -249,6 +250,7 @@ export default function BlogTermSheetCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="term-sheet-co-to-jest-vc-inwestycje" />
       <ContactSection />
     </Layout>
   );

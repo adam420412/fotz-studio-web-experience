@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -188,6 +189,7 @@ export default function BlogEventDrivenCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing" />
       <ContactSection />
     </Layout>
   );

@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -155,6 +156,7 @@ export default function BlogJsProposalsCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers" />
       <ContactSection />
     </Layout>
   );

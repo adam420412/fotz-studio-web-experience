@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -146,6 +147,7 @@ export default function BlogMonorepoCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud" />
       <ContactSection />
     </Layout>
   );

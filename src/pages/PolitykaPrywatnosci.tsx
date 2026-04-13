@@ -1,6 +1,7 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function PolitykaPrywatnosci() {
   return (
@@ -158,7 +159,16 @@ export default function PolitykaPrywatnosci() {
             </motion.div>
           </div>
         </section>
-      </Layout>
+  
+      {/* Link nawigacyjny */}
+      <section className="py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link to="/" className="text-blue-600 hover:text-blue-800 font-medium">
+            ← Strona główna
+          </Link>
+        </div>
+      </section>
+    </Layout>
     </>
   );
 }

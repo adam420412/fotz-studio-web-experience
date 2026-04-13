@@ -2,6 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Heart, Activity, Shield, Star, Users } from "lucide-react";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogMarketingMedyczny() {
   const breadcrumbs = [
@@ -374,6 +375,7 @@ export default function BlogMarketingMedyczny() {
           </div>
         </section>
       </div>
+      <RelatedArticles currentArticleId="marketing-medyczny" />
     </Layout>
   );
 }

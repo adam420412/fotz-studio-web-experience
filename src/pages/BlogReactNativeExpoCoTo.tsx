@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -159,6 +160,7 @@ export default function BlogReactNativeExpoCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="react-native-expo-co-to-jest-mobile-development-vs-flutter-2024" />
       <ContactSection />
     </Layout>
   );

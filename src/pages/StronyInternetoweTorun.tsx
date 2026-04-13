@@ -3,6 +3,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Monitor, Globe, Code, Smartphone, Zap, CheckCircle, Users, TrendingUp } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const breadcrumbs = [
   { name: "Strona główna", url: "/" },
@@ -462,6 +463,15 @@ export default function StronyInternetoweTorun() {
               <p className="text-gray-700">ul. Jakieś 123, Toruń</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Link nawigacyjny */}
+      <section className="py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link to="/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
+            ← Strony internetowe — wszystkie miasta
+          </Link>
         </div>
       </section>
     </Layout>

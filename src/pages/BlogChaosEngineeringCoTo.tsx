@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -195,6 +196,7 @@ export default function BlogChaosEngineeringCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="chaos-engineering-co-to-jest-jak-wdrozyz" />
       <ContactSection />
     </Layout>
   );

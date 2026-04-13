@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -159,6 +160,7 @@ export default function BlogSentryCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="sentry-co-to-jest-error-tracking-performance-monitoring-react-python" />
       <ContactSection />
     </Layout>
   );

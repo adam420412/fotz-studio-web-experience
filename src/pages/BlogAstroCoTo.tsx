@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -157,6 +158,7 @@ export default function BlogAstroCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac" />
       <ContactSection />
     </Layout>
   );

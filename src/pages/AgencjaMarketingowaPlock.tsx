@@ -2,6 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Building2, MapPin, TrendingUp, Star, Globe, CheckCircle2, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function AgencjaMarketingowaPlock() {
   const breadcrumbs = [
@@ -419,6 +420,15 @@ export default function AgencjaMarketingowaPlock() {
           <p className="text-sm">
             ul. Grodzka 10, 09-400 Plock | Tel: +48 24 262 0000 | Email: hello@fotz.pl
           </p>
+        </div>
+      </section>
+
+      {/* Link nawigacyjny */}
+      <section className="py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link to="/agencja-marketingowa" className="text-blue-600 hover:text-blue-800 font-medium">
+            ← Wszystkie lokalizacje agencji
+          </Link>
         </div>
       </section>
     </Layout>

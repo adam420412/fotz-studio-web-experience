@@ -3,6 +3,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Image, Play, Target, BarChart3, Zap, Users } from 'lucide-react';
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 export default function BlogSztukaPromocjiInstagram() {
   const breadcrumbs = [
@@ -515,6 +516,7 @@ export default function BlogSztukaPromocjiInstagram() {
           </div>
         </div>
       </article>
+      <RelatedArticles currentArticleId="reklama-na-instagramie" />
     </Layout>
   );
 }

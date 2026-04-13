@@ -2,6 +2,7 @@ import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { Search, TrendingUp, MapPin, Globe, Star, CheckCircle, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function PozycjonowanieZgorzelec() {
   const breadcrumbs = [
@@ -455,6 +456,15 @@ export default function PozycjonowanieZgorzelec() {
           </div>
         </section>
       </div>
+
+      {/* Link nawigacyjny */}
+      <section className="py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link to="/seo/pozycjonowanie" className="text-blue-600 hover:text-blue-800 font-medium">
+            ← Pozycjonowanie — wszystkie miasta
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 }

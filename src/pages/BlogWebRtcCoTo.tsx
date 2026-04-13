@@ -4,6 +4,7 @@ import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 
 const faqItems = [
   {
@@ -193,6 +194,7 @@ export default function BlogWebRtcCoTo() {
         </div>
       </section>
 
+      <RelatedArticles currentArticleId="webrtc-co-to-jest-jak-budowac-real-time-komunikacje" />
       <ContactSection />
     </Layout>
   );
