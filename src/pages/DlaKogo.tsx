@@ -169,7 +169,7 @@ export default function DlaKogo() {
                   index % 2 === 1 && "lg:order-1"
                 )}
               >
-                <img
+                <img loading="lazy"
                   src={audience.image}
                   alt={audience.title}
                   className="w-full h-full object-cover"

@@ -159,7 +159,7 @@ export default function Poradniki() {
                 }}
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

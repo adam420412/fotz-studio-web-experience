@@ -367,7 +367,7 @@ export default function CaseStudyEnea() {
               className="relative"
             >
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-                <img
+                <img loading="lazy"
                   src="https://images.unsplash.com/photo-1459865264687-595d652de67e?q=80&w=2070"
                   alt="Stadion przed transformacją"
                   className="w-full h-full object-cover"
@@ -453,7 +453,7 @@ export default function CaseStudyEnea() {
                   image.span
                 )}
               >
-                <img
+                <img loading="lazy"
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -782,7 +782,7 @@ export default function CaseStudyEnea() {
               >
                 <X className="w-8 h-8" />
               </button>
-              <img
+              <img loading="lazy"
                 src={galleryImages[selectedImageIndex].src}
                 alt={galleryImages[selectedImageIndex].alt}
                 className="w-full h-full object-contain rounded-xl"

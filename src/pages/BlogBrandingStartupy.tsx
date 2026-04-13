@@ -115,7 +115,7 @@ export default function BlogBrandingStartupy() {
 
           {/* Featured Image */}
           <div className="relative aspect-video rounded-3xl overflow-hidden mb-12">
-            <img
+            <img loading="lazy"
               src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070"
               alt="Branding dla startupów - budowanie marki"
               className="w-full h-full object-cover"

@@ -75,7 +75,7 @@ export default function BlogCoreWebVitals() {
     {
       question: "Czym jest CLS i jak go zmniejszyć?",
       answer:
-        "CLS (Cumulative Layout Shift) mierzy ile 'przeskoków' elementów strony dzieje się podczas ładowania — to frustrujące gdy czytasz tekst a strona nagle przesuwa wszystko w dół przez załadowanie reklamy. Jak zmniejszyć CLS: zawsze dodawaj atrybuty width i height do tagów <img>, rezerwuj miejsce dla reklam (min-height), nie wstrzykuj treści dynamicznie nad istniejącą zawartością, ustaw size dla fontów (font-display: swap).",
+        "CLS (Cumulative Layout Shift) mierzy ile 'przeskoków' elementów strony dzieje się podczas ładowania — to frustrujące gdy czytasz tekst a strona nagle przesuwa wszystko w dół przez załadowanie reklamy. Jak zmniejszyć CLS: zawsze dodawaj atrybuty width i height do tagów img, rezerwuj miejsce dla reklam (min-height), nie wstrzykuj treści dynamicznie nad istniejącą zawartością, ustaw size dla fontów (font-display: swap).",
     },
     {
       question: "Czy WordPress wpływa negatywnie na Core Web Vitals?",

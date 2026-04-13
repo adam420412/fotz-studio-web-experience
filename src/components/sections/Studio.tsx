@@ -222,7 +222,7 @@ export function Studio() {
               className="col-span-7 row-span-2 group"
             >
               <div className="relative h-full rounded-2xl overflow-hidden border border-border/30">
-                <img
+                <img loading="lazy"
                   src={officeLounge}
                   alt="Biuro Fotz Studio"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -279,7 +279,7 @@ export function Studio() {
               className="col-span-5 group"
             >
               <div className="aspect-square rounded-2xl overflow-hidden border border-border/30 relative">
-                <img
+                <img loading="lazy"
                   src={officeWorkspace}
                   alt="Workspace Fotz Studio"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -241,7 +241,7 @@ export function RelatedArticles({ currentArticleId, maxArticles = 3 }: RelatedAr
                 className="group block rounded-2xl overflow-hidden bg-card hover:bg-card/80 transition-all duration-300 h-full"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={article.image}
                     alt={article.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

@@ -478,7 +478,7 @@ const Realizacje = () => {
                 <div className="relative rounded-3xl overflow-hidden bg-card border border-border/30 hover:border-primary/30 transition-all duration-500">
                   <div className="grid lg:grid-cols-2">
                     <div className="relative aspect-video lg:aspect-auto lg:min-h-[450px] overflow-hidden">
-                      <img
+                      <img loading="lazy"
                         src={featuredProject.image}
                         alt={featuredProject.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -709,7 +709,7 @@ const Realizacje = () => {
                   className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
                   onClick={() => openLightbox(index)}
                 >
-                  <img
+                  <img loading="lazy"
                     src={image.src}
                     alt={image.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -903,7 +903,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => (
   <div className="relative rounded-2xl overflow-hidden bg-card border border-border/30 hover:border-primary/30 transition-all duration-500 group">
     <div className="relative aspect-[16/10] overflow-hidden">
-      <img
+      <img loading="lazy"
         src={project.image}
         alt={project.title}
         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

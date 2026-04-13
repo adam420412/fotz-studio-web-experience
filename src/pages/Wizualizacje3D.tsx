@@ -654,7 +654,7 @@ const Wizualizacje3D = () => {
                       className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer"
                       onClick={() => setSelectedImage(portfolioImages.indexOf(image))}
                     >
-                      <img
+                      <img loading="lazy"
                         src={image.src}
                         alt={image.title}
                         className="w-full h-full object-cover"
@@ -715,7 +715,7 @@ const Wizualizacje3D = () => {
                   className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group"
                   onClick={() => setSelectedImage(index)}
                 >
-                  <img
+                  <img loading="lazy"
                     src={image.src}
                     alt={image.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

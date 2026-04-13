@@ -43,7 +43,7 @@ export default function Akademia() {
         <SEOHead
           title="Akademia FOTZ — Kursy i Materiały Edukacyjne z Marketingu Online"
           description="Akademia FOTZ — kursy marketingowe, materiały edukacyjne, e-booki i webinary o SEO, Google Ads, social media i content marketingu. Nauka marketingu online…"
-          canonical="https://fotz.pl/akademia/panel"
+          canonical="https://fotz.pl/zasoby"
           noIndex={true}
         />
         <Layout>
@@ -127,7 +127,7 @@ export default function Akademia() {
         <SEOHead
           title="Akademia FOTZ | Uzyskaj Dostęp | Fotz Studio"
           description="Odblokuj pełny dostęp do Akademii FOTZ. E-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego."
-          canonical="https://fotz.pl/akademia/panel"
+          canonical="https://fotz.pl/zasoby"
           noIndex={true}
         />
         <Layout>
@@ -211,7 +211,7 @@ export default function Akademia() {
       <SEOHead
         title="Akademia FOTZ | Materiały Edukacyjne | Fotz Studio"
         description="Akademia FOTZ - e-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego. Ucz się od ekspertów i rozwijaj swoje umiejętności."
-        canonical="https://fotz.pl/akademia/panel"
+        canonical="https://fotz.pl/zasoby"
         noIndex={true}
       />
       <Layout>

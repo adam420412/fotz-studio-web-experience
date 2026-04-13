@@ -56,6 +56,8 @@ Disallow: /akademia/admin
 Disallow: /akademia/auth
 Disallow: /admin/
 Disallow: /login
+Disallow: /zainstaluj
+Disallow: /podziekowanie
 
 # Disallow API and internal paths
 Disallow: /api/

@@ -365,7 +365,7 @@ export default function FotografiaZDrona() {
                 className="aspect-video rounded-xl overflow-hidden group relative cursor-pointer"
                 onClick={() => openImageLightbox(index)}
               >
-                <img
+                <img loading="lazy"
                   src={item.src}
                   alt={item.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -145,7 +145,7 @@ export default function ONas() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden">
-                <img
+                <img loading="lazy"
                   src={officeStairs}
                   alt="Biuro Fotz Studio w Poznaniu"
                   className="w-full h-full object-cover"

@@ -344,7 +344,7 @@ export default function DlaKogoMarkiPremium() {
                 className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300"
               >
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={study.image}
                     alt={study.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

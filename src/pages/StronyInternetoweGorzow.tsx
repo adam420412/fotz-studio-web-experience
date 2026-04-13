@@ -489,7 +489,7 @@ const StronyInternetoweGorzow = () => {
                 <FadeInView key={index} delay={index * 0.1}>
                   <Link to={cs.link} className="group block rounded-xl overflow-hidden border border-border/40 bg-background hover:border-primary/30 transition-all">
                     <div className="aspect-video overflow-hidden">
-                      <img
+                      <img loading="lazy"
                         src={cs.image}
                         alt={cs.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

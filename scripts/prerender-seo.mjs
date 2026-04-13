@@ -59,6 +59,9 @@ function extractSEOHead(filePath) {
       // Look up: const varName = 'value'; or const varName = "value";
       const valMatch = content.match(new RegExp(`const ${varName}\\s*=\\s*['"]([^'"]+)['"]`));
       if (valMatch) return valMatch[1];
+      // Also try backtick template literal: const varName = `value`;
+      const btMatch = content.match(new RegExp(`const ${varName}\\s*=\\s*\`([^\`]+)\``));
+      if (btMatch) return btMatch[1];
     }
     return '';
   }
@@ -138,11 +141,12 @@ function findComponentFile(componentName) {
     `const ${componentName} = function`,
     `const ${componentName}: React`,
     `const ${componentName} = lazy`,
+    `export const ${componentName} = (`,
+    `export const ${componentName} = ()`,
   ];
 
   for (const dir of searchDirs) {
     if (!fs.existsSync(dir)) continue;
-    // Sort files so shorter/simpler names (e.g. Blog.tsx) match before longer ones
     const files = fs.readdirSync(dir).sort();
     for (const file of files) {
       if (!file.endsWith('.tsx')) continue;
@@ -152,6 +156,15 @@ function findComponentFile(componentName) {
       if (exactPatterns.some(p => content.includes(p))) {
         return filePath;
       }
+    }
+  }
+
+  // Fallback: try matching by filename (e.g., ComponentName.tsx)
+  for (const dir of searchDirs) {
+    if (!fs.existsSync(dir)) continue;
+    const exactFile = path.join(dir, `${componentName}.tsx`);
+    if (fs.existsSync(exactFile)) {
+      return exactFile;
     }
   }
 

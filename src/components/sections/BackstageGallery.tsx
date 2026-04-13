@@ -218,7 +218,7 @@ export const BackstageGallery = ({
               className="relative max-w-[90vw] max-h-[85vh]"
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <img loading="lazy"
                 src={imagesToShow[currentIndex].src}
                 alt={imagesToShow[currentIndex].title}
                 className="max-w-full max-h-[85vh] object-contain rounded-lg"

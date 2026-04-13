@@ -130,7 +130,7 @@ export default function StudioPodcastowe() {
             </div>
             <div className="relative">
               <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden">
-                <img
+                <img loading="lazy"
                   src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070"
                   alt="Studio podcastowe Fotz"
                   className="w-full h-full object-cover"
@@ -204,7 +204,7 @@ export default function StudioPodcastowe() {
                 key={index}
                 className="aspect-square rounded-lg sm:rounded-xl overflow-hidden"
               >
-                <img
+                <img loading="lazy"
                   src={image}
                   alt={`Studio ${index + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"

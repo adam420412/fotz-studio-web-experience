@@ -116,7 +116,7 @@ export function OptimizedImage({
           )}
           
           {/* Original format with responsive srcset */}
-          <img
+          <img loading="lazy"
             src={src}
             srcSet={srcSet}
             sizes={srcSet ? sizes : undefined}

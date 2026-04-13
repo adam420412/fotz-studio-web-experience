@@ -115,7 +115,7 @@ export default function BlogIdentyfikacjaWizualna() {
 
           {/* Featured Image */}
           <div className="relative aspect-video rounded-3xl overflow-hidden mb-12">
-            <img
+            <img loading="lazy"
               src="https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2074"
               alt="Identyfikacja wizualna - branding i corporate design"
               className="w-full h-full object-cover"
