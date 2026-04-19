@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <meta name="author" content="Fotz Studio" />
 
+    <!-- PWA kill-switch: runs BEFORE anything else. If a stale service worker
+         is registered (previous PWA build cached deleted JS hashes), we
+         unregister all workers, wipe every cache, then force-reload once
+         with a cache-bust query so the browser gets fresh HTML/JS. -->
+    <script>
+      (function () {
+        try {
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(function (regs) {
+              if (!regs || regs.length === 0) return;
+              var unregAll = Promise.all(regs.map(function (r) { return r.unregister(); }));
+              var clearAll = (window.caches && caches.keys)
+                ? caches.keys().then(function (keys) {
+                    return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+                  })
+                : Promise.resolve();
+              Promise.all([unregAll, clearAll]).then(function () {
+                if (!sessionStorage.getItem('__sw_killed__')) {
+                  sessionStorage.setItem('__sw_killed__', '1');
+                  var sep = location.search ? '&' : '?';
+                  location.replace(location.pathname + location.search + sep + '_swkill=' + Date.now() + location.hash);
+                }
+              });
+            }).catch(function () {});
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <!-- Critical CSS - inline for instant above-the-fold render -->
     <style>
       /* Reset & Base */
@@ -60,10 +89,12 @@
       .animation-delay-300{animation-delay:300ms}
       .animation-delay-500{animation-delay:500ms}
       
-      /* Loading state */
-      #root:empty{display:flex;align-items:center;justify-content:center;min-height:100vh}
+      /* Loading state — brief spinner that fades to nothing after 8s
+         so users never stare at an infinite loader if JS fails. */
+      #root:empty{display:flex;align-items:center;justify-content:center;min-height:100vh;animation:load-fade 8s forwards}
       #root:empty::after{content:'';width:2rem;height:2rem;border:2px solid rgba(117,20,63,0.3);border-top-color:hsl(336,71%,45%);border-radius:50%;animation:spin 1s linear infinite}
       @keyframes spin{to{transform:rotate(360deg)}}
+      @keyframes load-fade{0%,90%{opacity:1}100%{opacity:0;visibility:hidden}}
       
       /* Navbar placeholder */
       .nav-placeholder{position:fixed;top:0;left:0;right:0;height:5rem;background:rgba(13,13,13,0.8);backdrop-filter:blur(12px);z-index:50;border-bottom:1px solid rgba(255,255,255,0.05)}
@@ -75,7 +106,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Fotz Studio" />
     <link rel="apple-touch-icon" href="/logo-fotz.jpg" />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- manifest.webmanifest intentionally NOT linked — PWA disabled to
+         prevent stale service-worker caching of deleted JS hashes. -->
 
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 

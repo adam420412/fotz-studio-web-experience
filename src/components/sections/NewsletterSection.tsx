@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { Download, Mail, Loader2, CheckCircle, FileText } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { z } from "zod";
-import { cn } from "@/lib/utils";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 
 const emailSchema = z.string().trim().email("Nieprawidłowy adres email");
@@ -22,7 +18,6 @@ export function NewsletterSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
-  const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,9 +47,8 @@ export function NewsletterSection() {
       const data = await response.json();
       if (!data.success) throw new Error();
 
-      // Send to CRM webhook (fire and forget)
       sendLeadToCRM({
-        name: email.split("@")[0], // Use email prefix as name
+        name: email.split("@")[0],
         email: email,
         source: "fotz.pl/newsletter",
         notes: "Zapis do newslettera - pobranie checklisty kampanii",
@@ -69,134 +63,149 @@ export function NewsletterSection() {
   };
 
   return (
-    <section ref={ref} className="section-padding bg-card relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      </div>
-
-      <div className="container-wide relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left - Content */}
-          <div
-            className={cn(
-              "transition-all duration-700",
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            )}
-          >
-            <span className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              Darmowy materiał
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
-              Pobierz checklistę{" "}
-              <span className="text-gradient">skutecznej kampanii</span>
+    <section
+      className="relative overflow-hidden"
+      style={{ background: "var(--dv-bg-raised)" }}
+    >
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Left — content */}
+          <div>
+            <span className="dv-eyebrow mb-6 inline-block">Darmowy materiał</span>
+            <h2
+              className="font-geist mb-6"
+              style={{
+                fontSize: "clamp(36px, 4vw, 64px)",
+                letterSpacing: "-0.035em",
+                lineHeight: 1.05,
+                fontWeight: 400,
+              }}
+            >
+              Pobierz checklistę
+              <br />
+              <span className="dv-text-grad italic">skutecznej kampanii</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              10 kroków, które sprawdzą, czy Twój marketing działa na 100%. 
+            <p
+              className="mb-10"
+              style={{
+                color: "var(--dv-fg-muted)",
+                fontSize: "17px",
+                lineHeight: 1.55,
+                maxWidth: "50ch",
+              }}
+            >
+              10 kroków, które sprawdzą, czy Twój marketing działa na 100%.
               Sprawdzona lista kontrolna używana przez nasz zespół przy każdym projekcie.
             </p>
 
-            {/* Checklist preview */}
-            <div className="space-y-3 mb-8">
-              {checklistItems.map((item, index) => (
-                <div
-                  key={item}
-                  className={cn(
-                    "flex items-center gap-3 transition-all duration-500",
-                    isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
-                  )}
-                  style={{ transitionDelay: `${(index + 2) * 100}ms` }}
-                >
-                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-4 h-4 text-primary" />
+            <div className="space-y-3">
+              {checklistItems.map((item) => (
+                <div key={item} className="flex items-center gap-3">
+                  <div
+                    className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0"
+                    style={{ background: "rgba(230, 130, 170, 0.15)" }}
+                  >
+                    <CheckCircle className="w-3.5 h-3.5" style={{ color: "var(--dv-accent-pink)" }} />
                   </div>
-                  <span className="text-foreground">{item}</span>
+                  <span
+                    className="text-[15px]"
+                    style={{ color: "var(--dv-fg-muted)" }}
+                  >
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Right - Form */}
-          <div
-            className={cn(
-              "transition-all duration-700 delay-200",
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-            )}
-          >
-            <div className="bg-secondary rounded-2xl p-8 border border-border">
-              {isSubmitted ? (
-                <div className="text-center py-8">
-                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <CheckCircle className="w-10 h-10 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-heading font-bold mb-3">
-                    Dziękujemy za zapis!
-                  </h3>
-                  <p className="text-muted-foreground mb-6">
-                    Sprawdź swoją skrzynkę mailową - wysłaliśmy Ci checklistę w formacie PDF.
-                  </p>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-lg text-primary text-sm">
-                    <FileText className="w-4 h-4" />
-                    Checklista_Kampanii_Fotz.pdf
-                  </div>
+          {/* Right — form */}
+          <div className="dv-panel p-8 md:p-10">
+            {isSubmitted ? (
+              <div className="text-center py-8">
+                <div
+                  className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
+                  style={{ background: "rgba(230, 130, 170, 0.12)" }}
+                >
+                  <CheckCircle className="w-10 h-10" style={{ color: "var(--dv-accent-pink)" }} />
                 </div>
-              ) : (
-                <>
-                  <div className="text-center mb-6">
-                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                      <Download className="w-8 h-8 text-primary" />
+                <h3 className="dv-h-sm mb-3">Dziękujemy za zapis!</h3>
+                <p className="mb-6" style={{ color: "var(--dv-fg-muted)", fontSize: "15px" }}>
+                  Sprawdź swoją skrzynkę mailową — wysłaliśmy Ci checklistę w formacie PDF.
+                </p>
+                <span className="dv-pill">
+                  <FileText className="w-4 h-4" style={{ color: "var(--dv-accent-pink)" }} />
+                  Checklista_Kampanii_Fotz.pdf
+                </span>
+              </div>
+            ) : (
+              <>
+                <div className="text-center mb-8">
+                  <div
+                    className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4"
+                    style={{ background: "rgba(230, 130, 170, 0.12)" }}
+                  >
+                    <Download className="w-8 h-8" style={{ color: "var(--dv-accent-pink)" }} />
+                  </div>
+                  <h3 className="dv-h-sm mb-2">Pobierz bezpłatnie</h3>
+                  <p style={{ color: "var(--dv-fg-muted)", fontSize: "14px" }}>
+                    Wpisz email, a wyślemy Ci checklistę w formacie PDF
+                  </p>
+                </div>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <div className="relative">
+                      <Mail
+                        className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5"
+                        style={{ color: "var(--dv-fg-muted)" }}
+                      />
+                      <input
+                        type="email"
+                        placeholder="Twój adres email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="w-full h-12 pl-12 pr-4 rounded-xl text-[15px] text-foreground placeholder:text-[color:var(--dv-fg-muted)] outline-none focus:ring-2 focus:ring-[color:var(--dv-accent-pink)] transition-shadow"
+                        style={{
+                          background: "var(--dv-ink)",
+                          border: "1px solid var(--dv-hair)",
+                        }}
+                      />
                     </div>
-                    <h3 className="text-xl font-heading font-bold mb-2">
-                      Pobierz bezpłatnie
-                    </h3>
-                    <p className="text-muted-foreground text-sm">
-                      Wpisz email, a wyślemy Ci checklistę w formacie PDF
-                    </p>
+                    {error && (
+                      <p className="text-xs mt-1" style={{ color: "#ef4444" }}>
+                        {error}
+                      </p>
+                    )}
                   </div>
 
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <div className="relative">
-                        <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
-                        <Input
-                          type="email"
-                          placeholder="Twój adres email"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          className="pl-10 h-12 bg-background border-border"
-                        />
-                      </div>
-                      {error && <p className="text-xs text-destructive mt-1">{error}</p>}
-                    </div>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="dv-btn dv-btn-primary w-full justify-center"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Wysyłanie...
+                      </>
+                    ) : (
+                      <>
+                        <Download className="w-4 h-4" />
+                        Pobierz checklistę
+                      </>
+                    )}
+                  </button>
+                </form>
 
-                    <Button 
-                      type="submit" 
-                      variant="hero" 
-                      className="w-full h-12"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <Loader2 className="w-4 h-4 animate-spin" />
-                          Wysyłanie...
-                        </>
-                      ) : (
-                        <>
-                          <Download className="w-4 h-4" />
-                          Pobierz checklistę
-                        </>
-                      )}
-                    </Button>
-                  </form>
-
-                  <p className="text-xs text-muted-foreground text-center mt-4">
-                    Zapisując się, wyrażasz zgodę na otrzymywanie newslettera. 
-                    Możesz wypisać się w każdej chwili.
-                  </p>
-                </>
-              )}
-            </div>
+                <p
+                  className="text-center mt-5"
+                  style={{ color: "var(--dv-fg-muted)", fontSize: "12px" }}
+                >
+                  Zapisując się, wyrażasz zgodę na otrzymywanie newslettera.
+                  Możesz wypisać się w każdej chwili.
+                </p>
+              </>
+            )}
           </div>
         </div>
       </div>

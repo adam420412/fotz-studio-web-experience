@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import viteCompression from "vite-plugin-compression";
-import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -28,147 +27,8 @@ export default defineConfig(({ mode }) => ({
       ext: ".br",
       threshold: 1024,
     }),
-    // PWA with Service Worker
-    VitePWA({
-      registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "logo-fotz.jpg", "og-image.jpg"],
-      manifest: {
-        name: "Fotz Studio - Agencja Marketingowa Poznań",
-        short_name: "Fotz Studio",
-        description: "Agencja marketingowa i reklamowa z Poznania. Strony WWW, SEO, kampanie reklamowe, video, branding.",
-        theme_color: "#75143F",
-        background_color: "#0E0E0E",
-        display: "standalone",
-        orientation: "portrait",
-        scope: "/",
-        start_url: "/",
-        icons: [
-          {
-            src: "/favicon.ico",
-            sizes: "64x64 32x32 24x24 16x16",
-            type: "image/x-icon",
-          },
-          {
-            src: "/logo-fotz.jpg",
-            sizes: "192x192",
-            type: "image/jpeg",
-          },
-          {
-            src: "/og-image.jpg",
-            sizes: "512x512",
-            type: "image/jpeg",
-            purpose: "any maskable",
-          },
-        ],
-      },
-      workbox: {
-        // Increase max file size limit to 5MB to handle large images
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
-        // Exclude large image files from precaching - they'll be cached at runtime
-        globIgnores: [
-          "**/backstage-*.png",
-          "**/concert-*.{jpg,png}",
-          "**/portrait-*.{jpg,png}",
-          "**/viz-1[7-9].png",
-          "**/viz-2[0-2].png",
-          "**/session-final-*.png",
-          "**/event-*.jpg",
-          "**/team-*.jpg",
-          "**/gabinet-*.jpg",
-          "**/konsultacja-*.jpg",
-          "**/conference-*.jpg",
-        ],
-        // Cache strategies
-        runtimeCaching: [
-          {
-            // Cache images at runtime instead of precaching
-            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp|avif)$/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "fotz-images",
-              expiration: {
-                maxEntries: 100,
-                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
-              },
-            },
-          },
-          {
-            // Cache fonts
-            urlPattern: /\.(?:woff|woff2|ttf|eot)$/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "fotz-fonts",
-              expiration: {
-                maxEntries: 20,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
-              },
-            },
-          },
-          {
-            // Cache CSS/JS
-            urlPattern: /\.(?:js|css)$/i,
-            handler: "StaleWhileRevalidate",
-            options: {
-              cacheName: "fotz-static",
-              expiration: {
-                maxEntries: 50,
-                maxAgeSeconds: 60 * 60 * 24 * 7, // 7 days
-              },
-            },
-          },
-          {
-            // Cache videos
-            urlPattern: /\.(?:mp4|webm)$/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "fotz-videos",
-              expiration: {
-                maxEntries: 20,
-                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
-              },
-              rangeRequests: true,
-            },
-          },
-          {
-            // Cache API calls (short TTL)
-            urlPattern: /^https:\/\/.*supabase\.co\/.*/i,
-            handler: "NetworkFirst",
-            options: {
-              cacheName: "fotz-api",
-              expiration: {
-                maxEntries: 50,
-                maxAgeSeconds: 60 * 5, // 5 minutes
-              },
-              networkTimeoutSeconds: 10,
-            },
-          },
-          {
-            // Cache Google Fonts
-            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
-            handler: "StaleWhileRevalidate",
-            options: {
-              cacheName: "google-fonts-stylesheets",
-            },
-          },
-          {
-            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
-            handler: "CacheFirst",
-            options: {
-              cacheName: "google-fonts-webfonts",
-              expiration: {
-                maxEntries: 30,
-                maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
-              },
-            },
-          },
-        ],
-        // Precache only critical assets (smaller files)
-        globPatterns: ["**/*.{js,css,html,ico,svg,woff2}"],
-        // Skip waiting for faster updates
-        skipWaiting: true,
-        clientsClaim: true,
-      },
-    }),
+    // PWA disabled — was caching stale index.html that referenced removed JS hashes
+    // Resulted in infinite "preloading" for returning visitors after each deploy.
   ].filter(Boolean),
   resolve: {
     alias: {
