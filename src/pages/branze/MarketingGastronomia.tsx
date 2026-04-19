@@ -99,6 +99,7 @@ const MarketingGastronomia = () => {
         title="Marketing dla Gastronomii | Restauracje, Kawiarnie, Catering | Fotz Studio"
         description="Marketing dla restauracji i gastronomii - fotografia kulinarna, social media, systemy rezerwacji online. Zwiększ liczbę gości w lokalu."
         canonical="https://fotz.pl/dla-kogo/gastronomia"
+        keywords="marketing restauracji, marketing gastronomia, agencja marketingowa restauracja, reklama restauracji, social media restauracja, fotografia kulinarna, marketing cateringu, kampanie facebook restauracja"
       />
 
       <OrganizationSchema />
@@ -310,7 +311,7 @@ const MarketingGastronomia = () => {
             >
               <Link to="/realizacje/cute-dumpling" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={cuteDumplingImg} 
                     alt="Cute Dumpling - case study gastronomia"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

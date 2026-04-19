@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { VideoLightbox } from "@/components/VideoLightbox";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Portfolio images for each service
 import eneaStadion from "@/assets/portfolio/enea-stadion.png";
@@ -421,10 +421,12 @@ export default function Uslugi() {
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Usługi Marketingowe | Strony, Reklama, Social | Fotz"
-        description="Strony internetowe, social media, Google Ads, Facebook Ads, SEO i branding. Kompleksowe usługi marketingowe. Fotz Studio Poznań."
+        title="Usługi Marketingowe — SEO, Strony WWW, Reklamy i Social Media"
+        description="Usługi marketingowe Fotz Studio: SEO, strony internetowe, Google Ads, Meta Ads, social media, content marketing i produkcja wideo. Pełna oferta agencji…"
         canonical="https://fotz.pl/uslugi"
         keywords="usługi marketingowe, strony internetowe, social media marketing, kampanie reklamowe, Google Ads, Facebook Ads, SEO, branding, agencja marketingowa"
       />
@@ -657,6 +659,76 @@ export default function Uslugi() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Nasze usługi marketingowe — pełna oferta agencji Fotz Studio
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio oferuje kompleksowe usługi marketingowe dla firm z całej Polski.
+              Nasza oferta obejmuje tworzenie stron internetowych i sklepów e-commerce,
+              pozycjonowanie SEO i optymalizację techniczną, kampanie Google Ads (Search,
+              Shopping, Display, YouTube) i Meta Ads (Facebook, Instagram), obsługę
+              social media, content marketing, produkcję wideo i identyfikację wizualną.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Możesz zlecić nam pojedynczą usługę lub powierzyć kompleksową obsługę
+              marketingową — dostosowujemy zakres do Twoich potrzeb i budżetu.
+              Każdą usługę realizujemy z pełnym zaangażowaniem i zorientowaniem na mierzalne wyniki.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO, reklamy Google Ads i Meta Ads — usługi generujące ruch i sprzedaż
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Pozycjonowanie stron w Google (SEO) to długoterminowa inwestycja przynosząca
+              trwały ruch organiczny bez stałych kosztów reklamy. Kampanie Google Ads i Meta Ads
+              uzupełniają SEO o natychmiastowe wyniki i precyzyjne targetowanie grup docelowych.
+              Razem tworzą komplementarną strategię pozyskiwania klientów online.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Zarządzanie kampaniami reklamowymi w Fotz Studio obejmuje: strategię,
+              strukturę kampanii, tworzenie kreacji, monitoring wyników i ciągłą optymalizację
+              pod maksymalizację ROAS. Transparentne raportowanie — wiesz, za co płacisz
+              i jakie wyniki osiągamy.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Tworzenie stron i sklepów, social media i produkcja wideo — kompleksowa obsługa
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Strony internetowe i sklepy e-commerce tworzymy w nowoczesnych technologiach
+              (React, Next.js, WordPress, WooCommerce, Shopify) z naciskiem na szybkość,
+              UX i optymalizację SEO od pierwszego dnia. Social media marketing — Facebook,
+              Instagram, LinkedIn, TikTok — buduje społeczność wokół marki i generuje
+              sprzedaż bezpośrednią. Produkcja wideo (reelsy, spoty, filmy wizerunkowe)
+              domyka ekosystem content marketingu.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami, by omówić usługi marketingowe dla Twojej firmy.
+              Ofertę dostosowujemy do celów biznesowych, branży i budżetu. Bezpłatna
+              konsultacja — bez zobowiązań.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 }

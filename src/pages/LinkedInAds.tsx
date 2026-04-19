@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const LinkedInAds = () => {
   const benefits = [
@@ -37,7 +37,7 @@ const LinkedInAds = () => {
 
   const processSteps = [
     { step: "01", title: "Analiza i strategia", description: "Definiujemy ICP i mapujemy ścieżkę decyzyjną" },
-    { step: "02", title: "Konfiguracja kampanii", description: "Ustawiamy precyzyjne targetowanie B2B" },
+    { step: "02", title: "Konfiguracja kampanii", description: "Ustawiamy targetowanie B2B w LinkedIn Campaign Manager — stanowisko, branża, wielkość firmy" },
     { step: "03", title: "Kreacje profesjonalne", description: "Tworzymy content dopasowany do LinkedIn" },
     { step: "04", title: "Optymalizacja i lead nurturing", description: "Kwalifikujemy leady i optymalizujemy CPL" },
   ];
@@ -136,12 +136,14 @@ const LinkedInAds = () => {
   ];
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="LinkedIn Ads - Kampanie reklamowe B2B | Fotz Studio Poznań"
-        description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady. Agencja LinkedIn Ads Poznań."
+        title="LinkedIn Ads Polska — Reklamy LinkedIn dla Firm B2B | Fotz Studio"
+        description="LinkedIn Ads Polska ✓ Kampanie reklamowe B2B na LinkedIn. Sponsored Content, InMail, Lead Gen Forms, ABM. Specjaliści LinkedIn Campaign Manager. Bezpłatna…"
         canonical="https://fotz.pl/performance-marketing/linkedin-ads"
-        keywords="LinkedIn Ads, reklamy LinkedIn, kampanie B2B, marketing B2B, agencja LinkedIn Ads Poznań"
+        keywords="linkedin ads polska, reklamy linkedin, kampanie linkedin b2b, linkedin campaign manager, agencja linkedin ads, marketing b2b linkedin"
       />
       <ServiceSchema
         name="LinkedIn Ads - Kampanie B2B"
@@ -172,15 +174,15 @@ const LinkedInAds = () => {
               LinkedIn Ads
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
-              Docieraj do decydentów
+              LinkedIn Ads Polska —
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500">
-                w świecie B2B
+                reklama B2B dla decydentów
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              LinkedIn to najpotężniejsza platforma reklamowa B2B. 
-              Generujemy leady od osób, które podejmują decyzje zakupowe w firmach.
+              LinkedIn to najpotężniejsza platforma reklamowa B2B w Polsce.
+              Zarządzamy kampaniami w LinkedIn Campaign Manager i generujemy wartościowe leady od osób podejmujących decyzje zakupowe w firmach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -493,6 +495,27 @@ const LinkedInAds = () => {
       </section>
 
       {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">LinkedIn Ads Polska — skuteczna reklama B2B na LinkedIn</h2>
+            <p className="text-muted-foreground mb-4">LinkedIn Ads to platforma reklamowa idealna dla firm B2B w Polsce, rekrutacji i employer brandingu. Unikalną cechą LinkedIn jest możliwość targetowania po stanowisku, branży, wielkości firmy, umiejętnościach zawodowych i wykształceniu — co sprawia, że reklamy LinkedIn docierają do decydentów biznesowych znacznie precyzyjniej niż inne platformy. Całość zarządzana jest przez LinkedIn Campaign Manager, który daje pełną kontrolę nad budżetem, targetowaniem i wynikami kampanii.</p>
+            <p className="text-muted-foreground mb-6">Formaty LinkedIn Ads: Sponsored Content (posty w feedzie), Sponsored InMail / Message Ads (wiadomości do skrzynek odbiorczych), Lead Gen Forms (generowanie leadów bez opuszczania LinkedIn), Text Ads, Dynamic Ads i Conversation Ads. Reklama na LinkedIn jest droższa niż na Facebooku, ale jakość leadów B2B i wartość życiowa klienta (LTV) są znacząco wyższe. LinkedIn Insight Tag umożliwia śledzenie konwersji i retargeting odwiedzających stronę.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie LinkedIn dla firm — ABM, personal branding i employer branding</h2>
+            <p className="text-muted-foreground">Account Based Marketing (ABM) na LinkedIn pozwala targetować konkretne firmy z listy potencjalnych klientów — idealne dla sprzedaży enterprise i B2B SaaS. Personal branding na LinkedIn — budowanie marki osobistej CEO i ekspertów firmowych — to jeden z najefektywniejszych sposobów na organiczną widoczność na platformie. Połączenie organic LinkedIn z LinkedIn Ads Polska daje najlepsze efekty dla firm B2B. Zarządzanie kampaniami PPC w LinkedIn Campaign Manager wymaga innego podejścia niż Facebook — liczy się personalizacja, LinkedIn Marketing Solutions i jasna propozycja wartości (UVP). Skontaktuj się — doradzimy strategię LinkedIn Ads dla Twojej firmy w Polsce.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <RelatedServices 
         currentService="linkedin-ads"
         subtitle="Inne platformy reklamowe i usługi wspierające marketing B2B"
@@ -529,6 +552,7 @@ const LinkedInAds = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

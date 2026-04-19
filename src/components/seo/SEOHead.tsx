@@ -5,6 +5,7 @@ interface SEOHeadProps {
   description: string;
   canonical: string; // Required - must be full URL like https://fotz.pl/path
   ogImage?: string;
+  ogType?: "website" | "article";
   noIndex?: boolean;
   schemaJson?: object | object[];
   keywords?: string;
@@ -29,6 +30,7 @@ export function SEOHead({
   description,
   canonical,
   ogImage = "https://fotz.pl/og-image.jpg",
+  ogType = "website",
   noIndex = false,
   schemaJson,
   keywords,
@@ -63,7 +65,7 @@ export function SEOHead({
       <meta property="og:description" content={metaDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType} />
       <meta property="og:locale" content="pl_PL" />
       <meta property="og:site_name" content="Fotz Studio" />
       

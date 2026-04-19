@@ -26,6 +26,7 @@ import concert9 from "@/assets/fotograf/concert-9.jpg";
 import event1 from "@/assets/fotograf/event-1.jpg";
 import event2 from "@/assets/fotograf/event-2.jpg";
 import event3 from "@/assets/fotograf/event-3.jpg";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const galleryImages = [
   { src: portrait1, title: "Portret artystyczny", category: "Portret" },
@@ -124,12 +125,14 @@ const faqItems = [
 
 const FotografPoznan = () => {
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Fotograf Poznań | Sesje Zdjęciowe | Fotz"
-        description="Fotograf Poznań - sesje rodzinne, biznesowe, eventowe. Profesjonalne zdjęcia i obróbka. Fotz Studio."
+        title="Fotograf Poznań — Fotografia Biznesowa i Firmowa | Fotz Studio"
+        description="Fotograf Poznań — profesjonalna fotografia firmowa, korporacyjna, produktowa i eventowa dla firm z Poznania. Studio fotograficzne Fotz."
         canonical="https://fotz.pl/uslugi/fotografia"
-        keywords="fotograf Poznań, sesje fotograficzne, fotografia eventowa, zdjęcia biznesowe, fotograf rodzinny"
+        keywords="fotograf poznań, sesja zdjęciowa poznań, zdjęcia biznesowe poznań, fotografia firmowa poznań, fotograf biznesowy poznań"
       />
 
       {/* Hero Section */}
@@ -198,7 +201,7 @@ const FotografPoznan = () => {
                 transition={{ delay: index * 0.05 }}
                 className="group relative aspect-square overflow-hidden rounded-lg sm:rounded-xl"
               >
-                <img
+                <img loading="lazy"
                   src={image.src}
                   alt={image.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -309,8 +312,8 @@ const FotografPoznan = () => {
               viewport={{ once: true }}
               className="grid grid-cols-2 gap-4"
             >
-              <img src={portrait1} alt="Sesja portretowa" className="rounded-2xl aspect-[3/4] object-cover" />
-              <img src={portrait2} alt="Sesja lifestyle" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
+              <img loading="lazy" src={portrait1} alt="Sesja portretowa" className="rounded-2xl aspect-[3/4] object-cover" />
+              <img loading="lazy" src={portrait2} alt="Sesja lifestyle" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
             </motion.div>
           </div>
         </div>
@@ -326,8 +329,8 @@ const FotografPoznan = () => {
               viewport={{ once: true }}
               className="order-2 lg:order-1 grid grid-cols-2 gap-4"
             >
-              <img src={concert1} alt="Fotografia eventowa" className="rounded-2xl aspect-[3/4] object-cover" />
-              <img src={concert4} alt="Fotografia koncertowa" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
+              <img loading="lazy" src={concert1} alt="Fotografia eventowa" className="rounded-2xl aspect-[3/4] object-cover" />
+              <img loading="lazy" src={concert4} alt="Fotografia koncertowa" className="rounded-2xl aspect-[3/4] object-cover mt-8" />
             </motion.div>
 
             <motion.div
@@ -454,7 +457,7 @@ const FotografPoznan = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <img src={portrait3} alt="Sesja artystyczna" className="rounded-2xl aspect-square object-cover w-full" />
+              <img loading="lazy" src={portrait3} alt="Sesja artystyczna" className="rounded-2xl aspect-square object-cover w-full" />
             </motion.div>
           </div>
         </div>
@@ -591,7 +594,29 @@ const FotografPoznan = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Fotograf Poznań — profesjonalna fotografia dla firm z Poznania</h2>
+            <p className="text-muted-foreground mb-4">Fotograf Poznań — Fotz Studio to profesjonalna fotografia dla biznesu: fotografia firmowa, fotografia korporacyjna (portrety pracowników, zdjęcia zespołu), fotografia produktowa (e-commerce, katalogi), fotografia biznesowa (reportaże z eventów, konferencji, szkoleń) i fotografia z drona. Obsługujemy firmy z Poznania i Wielkopolski.</p>
+            <p className="text-muted-foreground mb-6">Studio fotograficzne Poznań — dysponujemy własnym studiem z profesjonalnym oświetleniem, tłami i wyposażeniem. Sesje fotograficzne realizujemy zarówno w studiu, jak i na plenerze lub w siedzibie klienta. Fotografia poznań to nasza pasja — każde zdjęcie opowiadamy starannie dobranymi kadrami i oświetleniem.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Fotografia produktowa i biznesowa Poznań — jak wyglądają sesje?</h2>
+            <p className="text-muted-foreground">Fotografia produktowa Poznań — profesjonalne zdjęcia produktów do sklepów internetowych, katalogów i materiałów marketingowych. Zdjęcia produktowe z białym tłem, lifestyle i detail shots. Fotografia korporacyjna — portrety dla stron www, LinkedIn i materiałów prasowych. Zdjęcia lotnicze nieruchomości i obiektów — z drona dla deweloperów, pośredników i firm budowlanych. Usługi foto i wideo dla firm z Poznania — zapytaj o ofertę.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 };
 

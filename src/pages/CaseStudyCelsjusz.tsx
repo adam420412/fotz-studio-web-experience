@@ -41,9 +41,10 @@ const CaseStudyCelsjusz = () => {
   return (
     <Layout>
       <SEOHead
-        title="Celsjusz OZE - Pompy Ciepła i Fotowoltaika | Case Study | Fotz Studio"
-        description="Realizacja strony internetowej dla Celsjusz OZE - firmy specjalizującej się w pompach ciepła i fotowoltaice. SEO, lead generation i responsywny design."
+        title="Celsjusz OZE | Fotz Studio"
+        description="Case study: strona internetowa dla Celsjusz OZE — fotowoltaika, pompy ciepła, lead generation i SEO branży OZE. Fotz Studio."
         canonical="https://fotz.pl/realizacje/celsjusz"
+        keywords="case study celsjusz, realizacja marketing"
       />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Celsjusz", url: "https://fotz.pl/realizacje/celsjusz" }]} />
       <ArticleSchema title="Celsjusz OZE - Strona dla firmy OZE" description="Case study: strona z lead generation dla firmy oferującej pompy ciepła i fotowoltaikę" url="https://fotz.pl/realizacje/celsjusz" datePublished="2024-06-15" dateModified="2026-01-09" />
@@ -100,7 +101,7 @@ const CaseStudyCelsjusz = () => {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden border border-border/30">
-                <img src={celsjuszImg} alt="Celsjusz OZE - strona internetowa" className="w-full" />
+                <img loading="lazy" src={celsjuszImg} alt="Celsjusz OZE - strona internetowa" className="w-full" />
               </div>
             </motion.div>
           </div>
@@ -342,6 +343,68 @@ const CaseStudyCelsjusz = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Case study Celsjusz OZE — Strona internetowa z lead generation dla OZE — fotowoltaika i pompy ciepła
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Projekt dla Celsjusz OZE to przykład, jak profesjonalne strona internetowa z lead generation przekłada się
+              na realne wyniki biznesowe. Nowa strona zoptymalizowana pod pozyskiwanie leadów z organicznego SEO i kampanii Google Ads. Fotz Studio realizuje podobne projekty
+              dla firm z branży oze — fotowoltaika i pompy ciepła i pokrewnych — każdorazowo z indywidualnym podejściem
+              do celów i specyfiki klienta.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Każde case study w naszym portfolio pokazuje nie tylko efekt wizualny, ale przede wszystkim
+              mierzalne wyniki: wzrost ruchu organicznego, więcej zapytań ofertowych, wyższy współczynnik
+              konwersji lub zwiększona sprzedaż online. Wierzymy, że marketing musi przynosić zwrot
+              z inwestycji — i to udowadniamy konkretnymi liczbami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak pracujemy — proces realizacji projektu od briefu do efektów
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każdy projekt w Fotz Studio przebiega według sprawdzonego procesu: konsultacja i brief,
+              analiza rynku i konkurencji, strategia i koncepcja, projektowanie i realizacja,
+              testy i wdrożenie, optymalizacja i wsparcie po-wdrożeniowe. Klient jest informowany
+              o postępach na każdym etapie — żadnych niespodzianek w trakcie i po realizacji.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Transparentność to nasz standard. Regularnie raportujemy wyniki, proaktywnie
+              informujemy o problemach i rekomendujemy kolejne kroki. Długoterminowe relacje
+              z klientami to nasz największy sukces — wiele firm współpracuje z nami od lat.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Potrzebujesz podobnego projektu? Sprawdź nasze usługi stron internetowych i SEO
+            </h2>
+            <p className="text-muted-foreground">
+              Jeśli szukasz partnera do realizacji projektu podobnego do Celsjusz OZE, zapraszamy
+              do kontaktu. Oferujemy bezpłatną konsultację i wycenę. Fotz Studio realizuje
+              projekty dla firm z całej Polski — pracujemy zdalnie z pełną efektywnością.
+              Skontaktuj się z nami, by omówić Twój projekt i sprawdzić, czy możemy osiągnąć
+              podobne wyniki dla Twojej firmy.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };

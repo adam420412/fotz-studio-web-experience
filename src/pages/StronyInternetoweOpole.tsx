@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweOpole = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Opolu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Opole, słynne z Krajowego Festiwalu Polskiej Piosenki, to jedno z najbardziej rozpoznawalnych miast w Polsce. Ta wyjątkowa marka regionu tworzy szanse dla lokalnego biznesu – szczególnie turystyki, gastronomii i kultury."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweOpole = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Opole | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Opole. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Opola."
+        title="Strony Internetowe Opole | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Opole — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Opola. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/opole"
-        keywords="strony internetowe opole, tworzenie stron www opole, projektowanie stron opole, sklepy internetowe opole"
+        keywords="strony internetowe opole, tworzenie stron opole, strony www opole, projektowanie stron opole"
       />
       
       <ServiceSchema name="Strony Internetowe Opole" description="Profesjonalne tworzenie stron internetowych dla firm z Opola." provider="FOTZ Studio" areaServed="Opole" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Opole", url: "https://fotz.pl/uslugi/strony-internetowe/opole" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -180,7 +184,7 @@ const StronyInternetoweOpole = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,56 @@ const StronyInternetoweOpole = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Opole — tworzenie stron www dla firm ze Śląska Opolskiego
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Opole to stolica Śląska Opolskiego i kulturalne centrum regionu — z Krajowym Festiwalem Polskiej Piosenki, silnym środowiskiem akademickim (Politechnika Opolska, Uni Opolski) i rosnącym sektorem usług. Region Opolski intensywnie korzysta ze środków KPO i funduszy UE — firmy inwestujące w cyfryzację i obecność online mogą liczyć na dofinansowanie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Opola i całego Śląska Opolskiego — Kędzierzyn-Koźle, Nysa, Brzeg. Projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla firm z Opola — akademickie, usługowe i przemysłowe
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Środowisko akademickie Opola generuje popyt na strony dla spin-offów, firm doradczych i usług dla studentów. Tworzymy strony dla tych specyficznych segmentów — od prostych portfolio po rozbudowane platformy edukacyjne.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Firmy przemysłowe z Kędzierzyna-Koźla i okolic (sektor chemiczny, ciepłowniczy) potrzebują solidnych stron B2B z dokumentacją techniczną i formularzami RFQ. Projektujemy strony, które generują zapytania od klientów instytucjonalnych.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO i widoczność online dla opolskich firm — Google i mapy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Lokalna optymalizacja SEO dla firm z Opola i regionu opolskiego. Frazy z geolokalizacją, Google Moja Firma i spójność NAP. Dla firm szukających klientów z całego Śląska Opolskiego rozszerzamy zasięg na kluczowe miasta województwa.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Tworzymy strony internetowe dla firm z Opola i całego Śląska Opolskiego.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

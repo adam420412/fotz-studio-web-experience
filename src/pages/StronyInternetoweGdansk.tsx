@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, Settings, TrendingUp, Handshake, Phone, Smartphone, Shield, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweGdansk = () => {
     paragraphs: [
       "W dzisiejszych czasach posiadanie profesjonalnej strony internetowej to podstawa sukcesu w biznesie. Nasza agencja specjalizuje się w tworzeniu stron WWW dla firm z Gdańska, Gdyni i Sopotu.",
       "Tworzymy strony, które nie tylko wyglądają estetycznie, ale przede wszystkim generują realne korzyści dla Twojej marki w Trójmieście.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Gdańsk, Gdynia i Sopot tworzą jeden z najbardziej dynamicznych obszarów biznesowych w Polsce. Silny sektor morski, turystyczny i technologiczny generuje ogromne zapotrzebowanie na profesjonalne strony internetowe."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweGdansk = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Gdańsk | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Gdańsk. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Trójmiasta."
+        title="Strony Internetowe Gdańsk | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Gdańsk — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gdańska. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gdansk"
-        keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk"
+        keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk, wykonanie strony internetowej gdańsk, responsywna strona www gdańsk, wordpress gdańsk, strony internetowe trójmiasto, agencja stron internetowych gdańsk"
       />
       
       <ServiceSchema name="Strony Internetowe Gdańsk" description="Profesjonalne tworzenie stron internetowych dla firm z Gdańska i Trójmiasta." provider="FOTZ Studio" areaServed="Gdańsk" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gdańsk", url: "https://fotz.pl/uslugi/strony-internetowe/gdansk" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -120,7 +124,7 @@ const StronyInternetoweGdansk = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla firm z Trójmiasta.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Gdańsk i Trójmiasto w React, Next.js i WordPress. Projektowanie stron Gdańsk dla firm gotowych na sukces w Google.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -180,7 +184,7 @@ const StronyInternetoweGdansk = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,58 @@ const StronyInternetoweGdansk = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Gdańsk — co warto wiedzieć o rynku Trójmiasta?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Gdańsk, Gdynia i Sopot tworzą jeden z najdynamiczniej rozwijających się obszarów metropolitalnych w Polsce. Port, sektor logistyczny, rosnąca branża technologiczna (Amazon, Intel, Lufthansa Systems) oraz turystyka wybrzeża — to branże, w których profesjonalna strona internetowa jest absolutnie kluczowa. Dla firm z Trójmiasta strona www to często pierwszy i najważniejszy kontakt z klientem — zarówno lokalnym, jak i zagranicznym.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Tworząc strony internetowe dla gdańskich i trójmiejskich firm, rozumiemy tę specyfikę. Nasze strony dla klientów z Gdańska są projektowane z myślą o szybkości, widoczności w Google lokalnym i konwersji — niezależnie od tego, czy firma obsługuje klientów z Długiego Targu, czy eksportuje usługi za granicę.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Projektowanie stron internetowych dla firm z Gdańska
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każdą stronę internetową dla gdańskiej firmy zaczynamy od briefu i analizy konkurencji — sprawdzamy, jakie strony wyświetlają się w Google dla Twoich słów kluczowych i jak wyróżnić Twoją ofertę. Projekt graficzny tworzymy w Figma: układy sekcji, typografia, kolorystyka i ścieżka konwersji są akceptowane przez Ciebie przed startem kodowania.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Strony internetowe dla firm z Gdańska realizujemy w pełni zdalnie — mamy sprawdzone procedury zdalnej współpracy, które pozwalają na efektywną komunikację bez konieczności spotkań stacjonarnych. Pełna realizacja strony firmowej zajmuje zazwyczaj 4–8 tygodni, a landing page — 1–2 tygodnie. Po wdrożeniu możesz samodzielnie edytować treści przez panel CMS.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla stron internetowych w Gdańsku — widoczność w lokalnym Google
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Strony internetowe tworzymy z wbudowanym SEO — meta tagi, schema LocalBusiness z adresem gdańskim, szybkość Core Web Vitals i poprawna struktura nagłówków to nasz standard, nie dodatek płatny. Dla firm z Gdańska i Trójmiasta to kluczowe, ponieważ lokalne wyniki Google są bardzo istotnym kanałem pozyskiwania klientów — szczególnie w usługach, restauracjach, prawie i medycynie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Więcej szczegółów o kompleksowym pakiecie{" "}
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> znajdziesz w naszej głównej ofercie. Jeśli planujesz kampanię reklamową skierowaną na rynek gdański, sprawdź też nasze{" "}
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline">landing page zoptymalizowane pod Google Ads i Meta Ads</Link>.
+            </p>
+
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie SEO</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweSosnowiec = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Sosnowcu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Sosnowiec leży w sercu Górnośląskiego Obszaru Metropolitalnego, otoczonego przez miliony potencjalnych klientów. Lokalne firmy handlowe i usługowe mogą znacznie powiększyć zasięg dzięki profesjonalnej obecności online."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweSosnowiec = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Sosnowiec | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Sosnowiec. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
+        title="Strony Internetowe Sosnowiec | Fotz Studio"
+        description="Strony internetowe Sosnowiec — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Sosnowca. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/sosnowiec"
-        keywords="strony internetowe sosnowiec, tworzenie stron www sosnowiec, projektowanie stron sosnowiec, sklepy internetowe sosnowiec"
+        keywords="strony internetowe sosnowiec, tworzenie stron sosnowiec, strony www sosnowiec, projektowanie stron sosnowiec"
       />
       
       <ServiceSchema name="Strony Internetowe Sosnowiec" description="Profesjonalne tworzenie stron internetowych dla firm z Sosnowca." provider="FOTZ Studio" areaServed="Sosnowiec" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Sosnowiec", url: "https://fotz.pl/uslugi/strony-internetowe/sosnowiec" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -180,7 +184,7 @@ const StronyInternetoweSosnowiec = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,56 @@ const StronyInternetoweSosnowiec = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Sosnowiec — tworzenie stron www dla firm z aglomeracji śląskiej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Sosnowiec to miasto w sercu Górnośląskiego Okręgu Przemysłowego — aglomeracji, która z ciężkiego przemysłu stopniowo przechodzi w kierunku usług, handlu i technologii. Firmy z Sosnowca coraz aktywniej budują obecność online, bo klienci — zarówno z Sosnowca, jak z całego GOP — szukają usługodawców w Google, zanim zdecydują się na kontakt.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Sosnowca i aglomeracji śląskiej — Będzin, Dąbrowa Górnicza, Czeladź. Zdalny model współpracy, projekt w Figmie, wdrożenie online. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla firm handlowych, usługowych i produkcyjnych
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Sosnowiec to centrum handlowe dla całego Zagłębia — firmy handlowe, sklepy i galerie handlowe potrzebują stron z katalogiem produktów, systemem zamówień i integracją z mediami społecznościowymi. Projektujemy strony e-commerce i wizytówkowe dostosowane do każdej branży.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla firm produkcyjnych i B2B z Sosnowca tworzymy profesjonalne strony korporacyjne z sekcją portfolio, certyfikatami i formularzami zapytań. Każda strona zoptymalizowana pod frazy branżowe i lokalne.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla firm z Sosnowca i Zagłębia Dąbrowskiego
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Lokalna optymalizacja SEO dla firm z Sosnowca — frazy z geolokalizacją, konfiguracja Google Moja Firma i widoczność w Google Maps. Dla firm działających w całej aglomeracji rozszerzamy zasięg SEO na Katowice, Będzin i Dąbrowę Górniczą.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena, projekt w 3–5 tygodni. Strony internetowe dla firm z Sosnowca i Zagłębia na najwyższym poziomie.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

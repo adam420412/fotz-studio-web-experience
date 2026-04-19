@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, WebPageSchema } from "@/components/seo/StructuredData";
@@ -133,9 +134,10 @@ export default function Kariera() {
   return (
     <Layout>
       <SEOHead
-        title="Kariera w Fotz Studio | Dołącz do zespołu"
-        description="Szukasz pracy w marketingu? Dołącz do Fotz Studio w Poznaniu. Aktualne oferty pracy: grafik, social media specialist, video editor i więcej."
+        title="Kariera w Fotz Studio | Fotz Studio"
+        description="Kariera w Fotz Studio Poznań — oferty pracy dla specjalistów SEO, social media managerów, grafików i web developerów. Dołącz do kreatywnego zespołu…"
         canonical="https://fotz.pl/kariera"
+        keywords="kariera agencja marketingowa poznań, praca SEO specjalista poznań, oferty pracy marketing poznań, praca social media manager, web developer praca poznań"
       />
       <BreadcrumbSchema 
         items={[
@@ -182,14 +184,14 @@ export default function Kariera() {
               className="grid grid-cols-2 gap-3 md:gap-4 order-1 lg:order-2"
             >
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img src={teamBrainstorm2} alt="Zespół przy pracy" className="w-full h-full object-cover" />
+                <img loading="lazy" src={teamBrainstorm2} alt="Zespół przy pracy" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col gap-3 md:gap-4">
                 <div className="aspect-square rounded-xl overflow-hidden">
-                  <img src={teamMeeting3} alt="Spotkanie zespołu" className="w-full h-full object-cover" />
+                  <img loading="lazy" src={teamMeeting3} alt="Spotkanie zespołu" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-square rounded-xl overflow-hidden">
-                  <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+                  <img loading="lazy" src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
                 </div>
               </div>
             </motion.div>
@@ -481,6 +483,72 @@ export default function Kariera() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Kariera w Fotz Studio — dołącz do kreatywnego zespołu agencji marketingowej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio to agencja marketingowa w Poznaniu, w której praca to
+              więcej niż rutyna. Szukamy utalentowanych specjalistów, którzy chcą
+              rozwijać karierę w dynamicznym środowisku, pracować z różnorodnymi
+              klientami i mieć realny wpływ na projekty. Oferujemy elastyczność,
+              możliwość pracy zdalnej i stały rozwój zawodowy.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              W Fotz Studio każda osoba ma możliwość wyrażenia swojej kreatywności
+              i wniesienia wartości do projektów. Cenimy inicjatywę, otwartość
+              na feedback i pasję do marketingu. Mniejszy zespół oznacza większą
+              odpowiedzialność i szybszy rozwój.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Oferty pracy w agencji marketingowej — specjalista SEO, social media, grafik, developer
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Regularnie poszukujemy: specjalistów SEO i content marketingu,
+              social media managerów, grafików i designerów UX, web developerów
+              (React, WordPress), copywriterów, specjalistów Google Ads i Meta Ads
+              oraz operatorów kamer i montażystów. Sprawdź aktualne oferty pracy
+              lub wyślij CV z listem motywacyjnym — zawsze jesteśmy otwarci
+              na wartościowych kandydatów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Praca w agencji marketingowej to szansa na rozwijanie umiejętności
+              w wielu obszarach jednocześnie, współpracę z różnorodnymi branżami
+              i szybkie budowanie portfolio projektów. Fotz Studio inwestuje
+              w szkolenia i certyfikacje dla wszystkich pracowników.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Praktyki i staże w Fotz Studio — start kariery w marketingu online
+            </h2>
+            <p className="text-muted-foreground">
+              Oferujemy płatne praktyki i staże dla studentów i absolwentów
+              kierunków marketingowych, informatycznych i projektowych.
+              Praktykant w Fotz Studio to pełnoprawny członek zespołu —
+              nie robi kawy, ale prawdziwe projekty marketingowe.
+              Wyślij CV na adres kontaktowy lub odwiedź nas w biurze w Poznaniu.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

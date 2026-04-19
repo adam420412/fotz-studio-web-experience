@@ -102,6 +102,7 @@ const MarketingEcommerceRetail = () => {
         title="Marketing E-commerce | Sklepy Online | Fotz"
         description="Marketing dla e-commerce - sklepy, fotografia produktowa, konfiguratory 3D, performance. Zwiększ sprzedaż. Fotz."
         canonical="https://fotz.pl/dla-kogo/ecommerce-retail"
+        keywords="marketing ecommerce, agencja marketingowa ecommerce, marketing dla sklepów internetowych, kampanie performance ecommerce, google shopping, facebook ads ecommerce, pozycjonowanie sklepu internetowego"
       />
 
       <OrganizationSchema />
@@ -372,7 +373,7 @@ const MarketingEcommerceRetail = () => {
             >
               <Link to="/realizacje/friendly-gas" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={friendlyGasImg} 
                     alt="Friendly Gas - case study e-commerce"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

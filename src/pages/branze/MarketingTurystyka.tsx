@@ -117,6 +117,7 @@ const MarketingTurystyka = () => {
         title="Marketing dla Turystyki | Hotele, Biura Podróży | Fotz Studio"
         description="Marketing dla turystyki - strony dla hoteli, systemy rezerwacji, wirtualne spacery 360°. Zwiększ rezerwacje bezpośrednie i buduj markę destynacji."
         canonical="https://fotz.pl/dla-kogo/turystyka"
+        keywords="marketing turystyczny, marketing hotelu, agencja marketingowa turystyka, reklama hotelu, marketing biura podróży, wirtualne spacery hotel, kampanie google ads hotel, marketing agroturystyki"
       />
 
       <OrganizationSchema />
@@ -328,7 +329,7 @@ const MarketingTurystyka = () => {
             >
               <Link to="/realizacje/apartamenty-chorwacja" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={apartamentyImg} 
                     alt="Apartamenty Chorwacja - case study turystyka"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

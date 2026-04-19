@@ -64,6 +64,20 @@ const services = [
     href: "/performance-marketing/remarketing",
     features: ["Remarketing dynamiczny", "Sekwencje reklamowe", "Cross-platform"],
   },
+  {
+    icon: Zap,
+    title: "Optymalizacja Kampanii",
+    description: "Zwiększamy ROAS, obniżamy CPA, testujemy kreacje i targetowanie. Systematyczna optymalizacja oparta na danych.",
+    href: "/performance-marketing/optymalizacja",
+    features: ["Audyt kampanii", "Testy A/B", "Optymalizacja ROAS/CPA"],
+  },
+  {
+    icon: Target,
+    title: "Precyzyjne Targetowanie",
+    description: "Grupy docelowe, lookalike audiences, retargeting, custom audiences z CRM. Każda złotówka do właściwej osoby.",
+    href: "/performance-marketing/targetowanie",
+    features: ["Lookalike audiences", "Retargeting", "Custom audiences"],
+  },
 ];
 
 const stats = [
@@ -103,7 +117,7 @@ export default function PerformanceMarketingCluster() {
         title="Performance Marketing | Kampanie Ads | Fotz Studio"
         description="Google Ads, Facebook Ads, Instagram, LinkedIn, TikTok i YouTube Ads. Kampanie reklamowe z mierzalnym ROI. Agencja performance Poznań."
         canonical="https://fotz.pl/performance-marketing"
-        keywords="performance marketing, Google Ads, Facebook Ads, kampanie reklamowe, remarketing, LinkedIn Ads, TikTok Ads, ROAS"
+        keywords="performance marketing, marketing efektywnościowy, agencja performance marketing, kampanie reklamowe google ads, facebook ads, performance marketing co to, performance marketing polska, roas, kpi marketing, performance marketing cennik, google ads facebook ads"
       />
       <BreadcrumbSchema
         items={[

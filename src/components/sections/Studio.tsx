@@ -222,7 +222,7 @@ export function Studio() {
               className="col-span-7 row-span-2 group"
             >
               <div className="relative h-full rounded-2xl overflow-hidden border border-border/30">
-                <img
+                <img loading="lazy"
                   src={officeLounge}
                   alt="Biuro Fotz Studio"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -279,7 +279,7 @@ export function Studio() {
               className="col-span-5 group"
             >
               <div className="aspect-square rounded-2xl overflow-hidden border border-border/30 relative">
-                <img
+                <img loading="lazy"
                   src={officeWorkspace}
                   alt="Workspace Fotz Studio"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -332,9 +332,9 @@ function FeatureCard({ feature, index }: { feature: typeof features[0]; index: n
           <feature.icon className="w-5 h-5 text-white" />
         </motion.div>
         
-        <h4 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
+        <h3 className="font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
           {feature.title}
-        </h4>
+        </h3>
         <p className="text-xs text-foreground/60">
           {feature.description}
         </p>

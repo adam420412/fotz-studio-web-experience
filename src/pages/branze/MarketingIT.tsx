@@ -99,6 +99,7 @@ const MarketingIT = () => {
         title="Marketing dla IT i SaaS | Software House, Startupy | Fotz Studio"
         description="Marketing dla firm IT i SaaS - strony dla software house, LinkedIn B2B, lead generation. Pozyskuj klientów enterprise i buduj markę technologiczną."
         canonical="https://fotz.pl/dla-kogo/it-saas"
+        keywords="marketing it, marketing saas, agencja marketingowa it, marketing software house, lead generation it, linkedin b2b it, marketing startup technologiczny, content marketing it"
       />
 
       <OrganizationSchema />
@@ -310,7 +311,7 @@ const MarketingIT = () => {
             >
               <Link to="/realizacje/rppg" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={rppgImg} 
                     alt="RPPG - case study IT"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

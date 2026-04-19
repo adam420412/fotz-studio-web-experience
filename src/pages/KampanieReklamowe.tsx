@@ -16,7 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const KampanieReklamowe = () => {
   const platforms = [
@@ -208,11 +208,14 @@ const KampanieReklamowe = () => {
   ];
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Kampanie Reklamowe | Google Ads, Meta Ads | Fotz"
-        description="Kampanie Google Ads, Facebook Ads, TikTok, LinkedIn. Precyzyjne targetowanie, optymalizacja ROAS. Agencja Poznań."
+        title="Kampanie Reklamowe Google Ads i Meta Ads | Fotz Studio"
+        description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Skuteczna reklama online dla firm — planowanie, prowadzenie i optymalizacja…"
         canonical="https://fotz.pl/kampanie-reklamowe"
+        keywords="kampanie reklamowe, kampanie reklamowe online, kampania reklamowa, prowadzenie kampanii reklamowych, kampanie google ads, kampanie facebook ads, reklamy internetowe, agencja reklamowa, performance marketing, kampanie ppc, reklama w internecie, kampanie reklamowe dla firm"
       />
       <ServiceSchema 
         name="Kampanie Reklamowe Google Ads i Facebook Ads"
@@ -253,8 +256,7 @@ const KampanieReklamowe = () => {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Google Ads, Facebook Ads, Instagram - docieramy do Twoich klientów tam, gdzie spędzają czas online. 
-              Mierzalne wyniki i pełna kontrola nad budżetem.
+              Kampanie reklamowe online — Google Ads, Facebook Ads, Instagram Ads i TikTok Ads dla firm. Prowadzenie kampanii reklamowych z mierzalnymi wynikami i pełną kontrolą nad budżetem. Performance marketing, który dociera do Twoich klientów.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8">
@@ -617,7 +619,34 @@ const KampanieReklamowe = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie reklamowe Google Ads i Meta Ads — reklamy online dla firm</h2>
+            <p className="text-muted-foreground mb-4">Kampanie reklamowe w Google Ads i Meta Ads (Facebook, Instagram) to najszybszy sposób na dotarcie do nowych klientów. Zarządzanie kampaniami PPC wymaga wiedzy, czasu i ciągłej optymalizacji — dlatego warto powierzyć je specjalistom. Reklamy online pozwalają precyzyjnie targetować odbiorców według demografii, zainteresowań, lokalizacji i zachowań zakupowych.</p>
+            <p className="text-muted-foreground mb-6">Planowanie kampanii reklamowych zaczyna się od analizy celów biznesowych i grupy docelowej. Definiujemy KPI, dobieramy kanały, tworzymy kreacje reklamowe i ustawiamy śledzenie konwersji. Raporty efektywności kampanii dostarczamy regularnie, by zawsze wiedzieć, jak Twoje budżety reklamowe pracują.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie PPC — Google Shopping, remarketing i reklama display</h2>
+            <p className="text-muted-foreground mb-4">Zarządzanie kampaniami PPC (Pay-Per-Click) obejmuje różne formaty reklamowe: kampanie w wyszukiwarce (search), Google Shopping dla sklepów e-commerce, kampanie display w sieci reklamowej Google oraz remarketing — reklamy kierowane do osób, które już odwiedziły Twoją stronę. Każdy format ma swoje zastosowanie w lejku sprzedażowym.</p>
+            <p className="text-muted-foreground mb-6">Efektywne kampanie reklamowe to nie tylko kliknięcia, ale przede wszystkim konwersje. Optymalizujemy kampanie pod CPA (koszt za pozyskanie), ROAS (zwrot z wydatków na reklamę) i inne kluczowe wskaźniki. Analiza konkurencji w internecie pozwala nam ustalać stawki i targetowanie, by Twoje kampanie były opłacalne.</p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">Prowadzenie kampanii reklamowych — co wchodzi w skład obsługi?</h3>
+            <p className="text-muted-foreground">Prowadzenie kampanii reklamowych przez agencję obejmuje: konfigurację konta, tworzenie struktury kampanii, kreację reklam tekstowych i graficznych, ustawienie grup odbiorców, monitorowanie wyników i miesięczną optymalizację. Monitorowanie ruchu na stronie i analiza konwersji są integralną częścią każdej prowadzonej kampanii. Sprawdź, jak nasze kampanie reklamowe mogą zwiększyć Twoje przychody.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 };
 

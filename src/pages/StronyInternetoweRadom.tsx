@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweRadom = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Radomiu? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Radom to jedno z większych miast Mazowsza z silnym sektorem przemysłowym i handlowym. Profesjonalna strona internetowa to dla radomskich firm klucz do nowych rynków i klientów."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweRadom = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Radom | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Radom. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Radomia."
+        title="Strony Internetowe Radom | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Radom — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Radomia. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/radom"
-        keywords="strony internetowe radom, tworzenie stron www radom, projektowanie stron radom, sklepy internetowe radom"
+        keywords="strony internetowe radom, tworzenie stron radom, strony www radom, projektowanie stron radom"
       />
       
       <ServiceSchema name="Strony Internetowe Radom" description="Profesjonalne tworzenie stron internetowych dla firm z Radomia." provider="FOTZ Studio" areaServed="Radom" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Radom", url: "https://fotz.pl/uslugi/strony-internetowe/radom" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -180,7 +184,7 @@ const StronyInternetoweRadom = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,56 @@ const StronyInternetoweRadom = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Radom — tworzenie stron www dla firm z Mazowsza
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Radom to drugie największe miasto Mazowsza po Warszawie — centrum przemysłowe z tradycjami zbrojeniowymi (PGZ, Łucznik), skórzanymi i lotniczymi (lotnisko Radom). Miasto dynamicznie przyciąga nowych inwestorów i rozbudowuje infrastrukturę — co oznacza rosnące zapotrzebowanie na profesjonalne strony www dla firm produkcyjnych, logistycznych i usługowych szukających klientów B2B i B2C.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Firmy z Radomia obsługujemy zdalnie — projekt w Figmie, wdrożenie w React lub WordPress, pełna optymalizacja SEO. Bliskość Warszawy (100 km) sprawia, że część klientów radomskich firm pochodzi ze stolicy — strony optymalizujemy pod oba rynki jednocześnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Tworzenie stron dla radomskich firm — B2B i B2C
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Sektor zbrojeniowy i obronny to specyfika Radomia — firmy z tej branży potrzebują stron z sekcją certyfikatów, przetargów publicznych i kontaktów dla partnerów instytucjonalnych. Tworzymy profesjonalne strony korporacyjne zgodne z wymogami zamówień publicznych i standardami branży obronnej.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla mniejszych firm usługowych — gabinetów, salonów, restauracji, firm budowlanych — projektujemy przystępne strony wizytówkowe z lokalną optymalizacją SEO. Czas realizacji: 3–5 tygodni. Cena: od 2000 zł. Pełna dokumentacja i transfer dostępów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla firm z Radomia — lokalna widoczność w Google
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Frazy lokalne — „usługa + Radom", „usługa + Mazowsze" — to najtańszy sposób na pozyskanie klientów. Konfigurujemy Google Moja Firma, optymalizujemy stronę pod frazy lokalne i budujemy widoczność w mapach Google. Efekt: klienci z Radomia i okolic trafiają do Ciebie, a nie do konkurencji.
+            </p>
+            <p className="text-muted-foreground">
+              Bezpłatna wycena w 24 godziny. Skontaktuj się z nami i porozmawiajmy o stronie internetowej dla Twojej firmy z Radomia.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -77,7 +77,8 @@ const StronyInternetoweKoszalin = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Koszalinie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Koszalin leży blisko Bałtyku i jest centrum Pomorza Środkowego. Firmy turystyczne, hotelarskie i lokalne usługi mają wyjątkową szansę dotarcia do turystów i lokalnych mieszkańców przez internet."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -85,15 +86,18 @@ const StronyInternetoweKoszalin = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Koszalin | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Koszalin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
+        title="Strony Internetowe Koszalin | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Koszalin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Koszalina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/koszalin"
-        keywords="strony internetowe koszalin, tworzenie stron www koszalin, projektowanie stron koszalin, sklepy internetowe koszalin"
+        keywords="strony internetowe koszalin, tworzenie stron koszalin, strony www koszalin, projektowanie stron koszalin"
       />
       
       <ServiceSchema name="Strony Internetowe Koszalin" description="Profesjonalne tworzenie stron internetowych dla firm z Koszalina." provider="FOTZ Studio" areaServed="Koszalin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Koszalin", url: "https://fotz.pl/uslugi/strony-internetowe/koszalin" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -174,7 +178,7 @@ const StronyInternetoweKoszalin = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -211,6 +215,56 @@ const StronyInternetoweKoszalin = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Koszalin — tworzenie stron www dla firm z Pomorza Środkowego
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Koszalin to największe miasto Pomorza Środkowego — centrum handlowe, usługowe i turystyczne dla całego regionu między Szczecinem a Gdańskiem. Bliskość morza, rozbudowana infrastruktura i rosnący sektor usług dla turystów tworzą różnorodny rynek dla profesjonalnych stron internetowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Koszalina, Słupska, Kołobrzegu i całego Pomorza Środkowego. Projekt w Figmie, wdrożenie online, pełna optymalizacja SEO. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla turystyki i lokalna przedsiębiorczości
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Region Koszalina to popularne letnisko — hotele, pensjonaty, campingi i restauracje potrzebują stron z systemem rezerwacji, galerią i wielojęzycznością. Sezon trwa od maja do września — strona musi działać bezbłędnie wtedy, gdy ruch jest najwyższy.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla lokalnych firm usługowych i handlowych projektujemy przystępne strony z lokalną optymalizacją SEO. Frazy z geolokalizacją — „usługa + Koszalin" — zapewniają stały napływ lokalnych klientów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalna widoczność w Google dla firm z Koszalina i regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Konfiguracja Google Moja Firma, optymalizacja pod frazy lokalne i budowanie widoczności w mapach Google — pełny pakiet lokalnego SEO. Dla firm działających sezonowo przygotowujemy strategie contentowe generujące ruch przez cały rok.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena, projekt w 3–5 tygodni. Tworzymy strony dla firm z Koszalina i całego Pomorza Środkowego.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

@@ -16,7 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -198,11 +198,14 @@ const KampanieReklamowePoznan = () => {
   ];
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Kampanie Reklamowe Poznań | Google & Meta Ads"
-        description="Kampanie Google Ads i Facebook Ads w Poznaniu. Lokalna agencja, spotkania w biurze. Średni ROAS 350%."
+        title="Kampanie Reklamowe Poznań — Google Ads i Meta Ads dla Firm"
+        description="Kampanie reklamowe Poznań — Google Ads, Facebook Ads, Instagram Ads dla firm z Poznania. Prowadzenie i optymalizacja kampanii PPC. Fotz Studio."
         canonical="https://fotz.pl/kampanie-reklamowe-poznan"
+        keywords="kampanie reklamowe poznań, reklamy internetowe poznań, agencja reklamowa poznań, google ads poznań, facebook ads poznań, marketing poznań"
       />
       <ServiceSchema 
         name="Kampanie Reklamowe Poznań - Google Ads i Facebook Ads"
@@ -646,7 +649,29 @@ const KampanieReklamowePoznan = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie reklamowe Poznań — Google Ads i Meta Ads dla firm z Poznania</h2>
+            <p className="text-muted-foreground mb-4">Kampanie reklamowe Poznań — Fotz Studio prowadzi kampanie Google Ads i Meta Ads (Facebook, Instagram) dla firm z Poznania i Wielkopolski. Reklama online dla firm z Poznania musi uwzględniać lokalną specyfikę — targetowanie na Poznań, Wielkopolskę i dostosowanie komunikacji do poznańskich odbiorców.</p>
+            <p className="text-muted-foreground mb-6">Zarządzanie kampaniami PPC w Poznaniu — konfiguracja kont reklamowych, tworzenie struktury kampanii, produkcja kreacji, optymalizacja stawek i targeting, miesięczne raportowanie wyników. Firmy z Poznania, które powierzają prowadzenie kampanii reklamowych Fotz Studio, osiągają lepszy ROAS i niższy CPA dzięki ciągłej optymalizacji.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Agencja reklamowa Poznań — kampanie PPC dla każdej branży</h2>
+            <p className="text-muted-foreground">Agencja reklamowa Poznań z doświadczeniem w prowadzeniu kampanii dla firm z branży: usługi, e-commerce, gastronomia, nieruchomości, medycyna, edukacja, budownictwo. Reklamy w Google Ads (search, shopping, display, YouTube) i Meta Ads (Facebook, Instagram) — kompleksowe zarządzanie budżetem reklamowym dla firm z Poznania. Sprawdź efekty i skontaktuj się po bezpłatną wycenę.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 };
 

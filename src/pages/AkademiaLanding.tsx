@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { Layout } from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
@@ -52,9 +53,10 @@ export default function AkademiaLanding() {
   return (
     <Layout>
       <SEOHead
-        title="Akademia FOTZ - Kursy i E-booki Marketingowe"
-        description="Gotowe materiały marketingowe: e-booki, kursy wideo i checklisty. Subskrypcja od 99 PLN/mies. Dołącz do Akademii FOTZ."
-        canonical="https://fotz.pl/akademia"
+        title="Akademia FOTZ — Kursy Marketingowe Online dla Firm i Marketerów"
+        description="Akademia FOTZ — kursy i e-booki marketingowe. Naucz się SEO, Google Ads, social media i content marketingu od praktyków. Dostęp online 24/7. Fotz Studio."
+        canonical="https://fotz.pl/zasoby"
+        keywords="akademia marketingowa online, kursy marketingowe dla firm, szkolenia SEO online, kursy Google Ads, akademia fotz, marketing online kursy, e-booki marketingowe"
       />
 
       {/* Top Banner */}
@@ -240,7 +242,7 @@ export default function AkademiaLanding() {
                 </div>
 
                 <div className="text-center mb-8 pt-4">
-                  <img src={logoFotz} alt="FOTZ" className="h-12 mx-auto mb-4" />
+                  <img loading="lazy" src={logoFotz} alt="FOTZ" className="h-12 mx-auto mb-4" />
                   <h3 className="text-2xl font-heading font-bold mb-2">Akademia FOTZ</h3>
                   <p className="text-muted-foreground">Pełny dostęp do wszystkich materiałów</p>
                 </div>
@@ -363,6 +365,59 @@ export default function AkademiaLanding() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Kursy marketingowe online — naucz się od praktyków z Fotz Studio
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Akademia FOTZ oferuje kursy marketingowe online tworzone przez praktyków
+              z wieloletnim doświadczeniem w prowadzeniu kampanii dla polskich firm.
+              Uczysz się tego, co naprawdę działa na polskim rynku — bez angielskojęzycznych
+              teorii oderwanych od rzeczywistości. Każdy kurs zawiera konkretne ćwiczenia,
+              szablony i case studies z prawdziwych projektów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kursy dostępne online 24/7 — uczysz się w swoim tempie, w dowolnym miejscu.
+              Materiały wideo, PDF-y do pobrania i quizy sprawdzające wiedzę. Certyfikat
+              ukończenia dla każdego kursu, który możesz dodać do profilu LinkedIn.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Dla kogo są kursy Akademii FOTZ? Właściciele firm, marketerzy, freelancerzy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Akademia FOTZ jest idealna dla: właścicieli firm chcących samodzielnie
+              prowadzić podstawowe działania marketingowe lub lepiej nadzorować agencję,
+              marketerów i specjalistów poszerzających kompetencje, freelancerów
+              budujących portfolio usług marketingowych oraz studentów chcących wejść
+              do branży marketingowej z praktyczną wiedzą.
+            </p>
+            <p className="text-muted-foreground">
+              Inwestycja w wiedzę marketingową to jedna z najlepszych decyzji biznesowych.
+              Nawet jeśli zlecasz marketing zewnętrznej agencji — wiedza pozwala Ci
+              oceniać jakość pracy, zadawać właściwe pytania i osiągać lepsze wyniki
+              ze współpracy. Zarejestruj się w Akademii FOTZ i zacznij się rozwijać już dziś.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

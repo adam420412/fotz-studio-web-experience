@@ -1,17 +1,21 @@
+import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Search, TrendingUp, BarChart3, Target, CheckCircle, Globe, Settings, FileText, Link2 } from "lucide-react";
+import { OrganizationSchema } from "@/components/seo/StructuredData";
 
 const PozycjonowanieStronPoznan = () => {
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Pozycjonowanie Stron Poznań | Agencja SEO | Fotz"
-        description="Pozycjonowanie stron www Poznań. Audyt SEO, optymalizacja, link building. Zwiększ widoczność w Google. Fotz Studio."
+        title="Pozycjonowanie Stron Poznań — Agencja SEO dla Firm z Poznania"
+        description="Pozycjonowanie stron internetowych Poznań — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Poznania. Fotz Studio."
         canonical="https://fotz.pl/seo/pozycjonowanie-poznan"
-        keywords="pozycjonowanie stron Poznań, SEO Poznań, agencja SEO Poznań, pozycjonowanie stron www, optymalizacja SEO"
+        keywords="pozycjonowanie stron poznań, agencja seo poznań, seo poznań, pozycjonowanie lokalne poznań, pozycjonowanie stron internetowych poznań, seo dla firm poznań"
       />
 
       {/* Hero Section */}
@@ -394,7 +398,29 @@ const PozycjonowanieStronPoznan = () => {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie stron Poznań — SEO dla firm z Poznania i Wielkopolski</h2>
+            <p className="text-muted-foreground mb-4">Pozycjonowanie stron internetowych Poznań to specjalizacja Fotz Studio — agencji SEO z wieloletnim doświadczeniem na rynku poznańskim. Pozycjonowanie stron Poznań obejmuje zarówno lokalne SEO (widoczność na frazy "Poznań"), jak i ogólnopolskie pozycjonowanie dla firm z Poznania chcących dotrzeć do klientów z całej Polski.</p>
+            <p className="text-muted-foreground mb-6">Pozycjonowanie Google Maps Poznań — optymalizacja wizytówki Google Moja Firma dla firm z Poznania, by pojawiały się w Local Pack na frazy lokalne. Studio fotograficzne Poznań, agencja reklamowa Poznań, restauracja Poznań — każda branża korzysta z pozycjonowania lokalnego.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">SEO Poznań — pozycjonowanie stron w Poznaniu od audytu do efektów</h2>
+            <p className="text-muted-foreground">Pozycjonowanie stron Poznań zaczyna się od audytu SEO — analizy obecnego stanu strony, identyfikacji błędów i możliwości. Następnie: optymalizacja techniczna, tworzenie treści SEO z frazami lokalnymi, link building z portali poznańskich i regionalnych (portale wielkopolskie, katalogi firm, media lokalne). Pozycjonowanie stron Poznań z Fotz Studio — transparentne raportowanie wyników co miesiąc.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/seo/audyt" className="text-primary hover:underline font-medium text-sm">→ Audyt SEO</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 };
 

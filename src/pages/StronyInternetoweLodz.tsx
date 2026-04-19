@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, Settings, TrendingUp, Handshake, Phone, Smartphone, Shield, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweLodz = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Łodzi? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Łódź to miasto w transformacji – od przemysłu włókienniczego do centrum biznesu, kreatywności i e-commerce. To unikalna szansa dla firm, które chcą zaistnieć w przestrzeni online na rosnącym rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweLodz = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Łódź | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Łódź. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Łodzi."
+        title="Strony Internetowe Łódź | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Łódź — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Łodzi. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/lodz"
-        keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź"
+        keywords="strony internetowe łódź, tworzenie stron www łódź, projektowanie stron łódź, sklepy internetowe łódź, wykonanie strony internetowej łódź, responsywna strona www łódź, wordpress łódź, nowoczesne strony www łódź, agencja stron internetowych łódź"
       />
       
       <ServiceSchema name="Strony Internetowe Łódź" description="Profesjonalne tworzenie stron internetowych dla firm z Łodzi." provider="FOTZ Studio" areaServed="Łódź" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Łódź", url: "https://fotz.pl/uslugi/strony-internetowe/lodz" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -120,7 +124,7 @@ const StronyInternetoweLodz = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla łódzkich firm.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Łódź w React, Next.js i WordPress. Projektowanie stron Łódź z pełną optymalizacją SEO.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -180,7 +184,7 @@ const StronyInternetoweLodz = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,95 @@ const StronyInternetoweLodz = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Łódź — tworzenie stron www dla firm z Łodzi
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Łódź przechodzi jedną z najbardziej spektakularnych transformacji w Polsce.
+              Pofabryczne lofty zamieniają się w przestrzenie biurowe i design studia, OFF Piotrkowska
+              przyciąga kreatywny biznes, a Łódź Design Festival rozsławia miasto na całą Europę.
+              Sektor mody, e-commerce i kreatywny przemysł rozwijają się tu błyskawicznie —
+              i każda z tych firm potrzebuje strony internetowej, która oddaje jej charakter.
+              Tworzenie stron www dla firm z Łodzi to zadanie, które podejmujemy z przyjemnością.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Łódź jest też jednym z największych w Polsce hubów e-commerce. Zalando, answear.com
+              i dziesiątki mniejszych sklepów internetowych mają tu swoje centra operacyjne.
+              To środowisko, w którym strony internetowe i sklepy online to codzienność —
+              a wysoka poprzeczka jakości sprawia, że przeciętne projekty nie robią wrażenia.
+              Dlatego każdą stronę www dla łódzkiej firmy projektujemy powyżej tej poprzeczki.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Łódź — miasto reinwencji i cyfrowej transformacji
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Łódzkie MSP, od rzemieślniczych pracowni po agencje kreatywne i producenci odzieży,
+              intensywnie przenoszą się do internetu. Firmy, które jeszcze kilka lat temu sprzedawały
+              wyłącznie stacjonarnie, dziś potrzebują profesjonalnych stron, katalogów produktów
+              i systemów rezerwacji online. Obserwujemy ten trend z bliska i odpowiadamy na niego
+              konkretnymi rozwiązaniami.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Szczególnie aktywny jest sektor filmowy — Łódź Film Commission i PWSFTviT to magnesy
+              dla produkcji filmowych z całego świata. Tworzymy strony internetowe dla producentów,
+              reżyserów i firm postprodukcyjnych, które muszą prezentować portfolio w sposób
+              wizualnie porywający — ze slow-motion galeriami, showreelami i case study projektów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak tworzymy strony internetowe dla firm z Łodzi?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Pracujemy w 100% zdalnie — konsultacje przez Google Meet, projekt w Figmie,
+              wdrożenie z bieżącym podglądem na staging. Dla klientów z Łodzi oznacza to zero
+              dojazdów, zero oczekiwania na spotkania i pełną transparentność procesu.
+              Standardowy termin realizacji to 3–5 tygodni od akceptacji briefu.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Technologie, z których korzystamy: React + Next.js dla wydajnych stron statycznych,
+              WordPress + Elementor Pro dla klientów, którzy chcą samodzielnie zarządzać treścią,
+              oraz WooCommerce i Shopify dla sklepów e-commerce. Wybór technologii zawsze
+              dopasowujemy do potrzeb — nie sprzedajemy jednego rozwiązania wszystkim.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalne SEO i widoczność w Google dla łódzkich firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizacja lokalna to jeden z naszych kluczowych atutów. Dla firm z Łodzi
+              obsługujących klientów w mieście optymalizujemy strony pod frazy z geolokalizacją
+              — „usługa + Łódź", „usługa + Bałuty/Polesie/Widzew" — i pomagamy w konfiguracji
+              profilu Google Moja Firma. Podwójna widoczność (organic + mapy) to więcej klientów
+              bez dodatkowych kosztów reklamy.
+            </p>
+            <p className="text-muted-foreground">
+              Łódź jest miastem, w którym jakość i design mają znaczenie — branże kreatywne,
+              modowe i filmowe wymagają stron na światowym poziomie. Dostarczamy je w cenie
+              dostosowanej do realiów polskiego rynku. Bezpłatna wycena w ciągu 24 godzin —
+              napisz do nas i zacznijmy rozmowę o Twojej stronie internetowej.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

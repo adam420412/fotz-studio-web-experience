@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -77,7 +77,8 @@ const StronyInternetoweKamionki = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Kamionkach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Kamionki to dynamicznie rozwijająca się miejscowość w okolicach Poznania, z rosnącym sektorem biznesowym i mieszkaniowym.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Nawet mniejsze miejscowości mają szansę na duże sukcesy w internecie. Pomagamy lokalnym firmom z Kamionek i okolic zbudować profesjonalną obecność online, która przyciąga klientów z całego regionu."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -85,15 +86,18 @@ const StronyInternetoweKamionki = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Kamionki | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Kamionki. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kamionek."
+        title="Strony Internetowe Kamionki | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Kamionki — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Kamionek. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/kamionki"
-        keywords="strony internetowe kamionki, tworzenie stron www kamionki, projektowanie stron kamionki, sklepy internetowe kamionki"
+        keywords="strony internetowe kamionki, tworzenie stron kamionki, strony www kamionki"
       />
       
       <ServiceSchema name="Strony Internetowe Kamionki" description="Profesjonalne tworzenie stron internetowych dla firm z Kamionek." provider="FOTZ Studio" areaServed="Kamionki" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kamionki", url: "https://fotz.pl/uslugi/strony-internetowe/kamionki" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -174,7 +178,7 @@ const StronyInternetoweKamionki = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -211,6 +215,56 @@ const StronyInternetoweKamionki = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Kamionki i okolice — tworzenie stron www dla firm z regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kamionki i okoliczne gminy to region, gdzie lokalne firmy, warsztaty i przedsiębiorcy coraz chętniej budują swoją obecność online. Lokalna społeczność biznesowa docenia wartość profesjonalnej strony internetowej, która przyciąga klientów z okolicy i szerszego regionu.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Tworzymy strony internetowe dla firm z mniejszych miejscowości i gmin — skupiamy się na prostocie, szybkości i skuteczności. Zdalny model współpracy sprawia, że obsługa firm z każdego zakątka Polski jest tak samo sprawna jak z dużego miasta.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla lokalnych firm — rzemiosło, usługi, handel
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Małe firmy i rzemieślnicy potrzebują stron, które po pierwsze ładują się szybko, po drugie są proste w obsłudze, po trzecie kosztują uczciwie. Projektujemy strony wizytówkowe już od 2000 zł — z formularzem kontaktowym, galerią i podstawową optymalizacją SEO.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Strona wizytówkowa to dziś minimum — klienci przed wizytą sprawdzają firmę online. Brak strony oznacza brak wiarygodności. Inwestycja 2000–5000 zł w profesjonalną stronę zwraca się przy pozyskaniu nawet jednego dodatkowego klienta miesięcznie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalne SEO i Google Moja Firma dla małych firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Konfiguracja Google Moja Firma to pierwsza i najtańsza inwestycja w lokalną widoczność. Pomagamy ją skonfigurować, zbieramy opinie i optymalizujemy pod frazy, które wpisują klienci szukający usług w okolicy.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena, projekt w 2–4 tygodnie. Strony internetowe dla firm z Kamionek i okolic — bez zbędnych komplikacji.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

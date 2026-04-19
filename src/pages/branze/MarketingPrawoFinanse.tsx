@@ -99,6 +99,7 @@ const MarketingPrawoFinanse = () => {
         title="Marketing dla Prawników i Finansów | Kancelarie, Doradcy | Fotz Studio"
         description="Marketing dla kancelarii prawnych i firm finansowych - strony WWW, LinkedIn, content marketing. Kampanie zgodne z regulacjami. Buduj autorytet eksperta."
         canonical="https://fotz.pl/dla-kogo/prawo-finanse"
+        keywords="marketing prawniczy, marketing kancelarii, agencja marketingowa kancelaria, marketing dla prawników, marketing finansowy, seo kancelaria prawna, linkedin dla prawników, content marketing prawo"
       />
 
       <OrganizationSchema />
@@ -310,7 +311,7 @@ const MarketingPrawoFinanse = () => {
             >
               <Link to="/realizacje/klagem" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={klagemlImg} 
                     alt="Klagem - case study meble premium"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

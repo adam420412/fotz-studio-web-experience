@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -45,7 +45,9 @@ export default function Podziekowanie() {
   }, []);
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
         title="Dziękujemy za zapytanie | Fotz Studio"
         description="Otrzymaliśmy Twoje zapytanie. Skontaktujemy się z Tobą w ciągu 24 godzin."
@@ -159,5 +161,6 @@ export default function Podziekowanie() {
         </div>
       </section>
     </Layout>
+    </>
   );
 }

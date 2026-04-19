@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Import local portfolio images
 import rppgImg from "@/assets/portfolio/rppg.png";
@@ -408,12 +408,14 @@ const Realizacje = () => {
   };
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Portfolio i Realizacje - Case Studies | Fotz Studio"
-        description="Ponad 600 zrealizowanych projektów: strony internetowe, e-commerce, kampanie marketingowe, fotografia i produkcja video. Zobacz nasze case studies."
+        title="Realizacje i Portfolio — Case Studies Projektów Marketingowych"
+        description="Portfolio Fotz Studio — realizacje stron internetowych, kampanii SEO, social media i produkcji wideo. Case studies z wynikami dla klientów z różnych branż."
         canonical="https://fotz.pl/realizacje"
-        keywords="portfolio, realizacje, case studies, strony internetowe przykłady, projekty marketingowe, fotografia eventowa, wizualizacje 3D"
+        keywords="realizacje, portfolio agencji marketingowej, case study marketing, projekty marketingowe, realizacje digital marketing"
       />
       <BreadcrumbSchema 
         items={[
@@ -476,7 +478,7 @@ const Realizacje = () => {
                 <div className="relative rounded-3xl overflow-hidden bg-card border border-border/30 hover:border-primary/30 transition-all duration-500">
                   <div className="grid lg:grid-cols-2">
                     <div className="relative aspect-video lg:aspect-auto lg:min-h-[450px] overflow-hidden">
-                      <img
+                      <img loading="lazy"
                         src={featuredProject.image}
                         alt={featuredProject.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -707,7 +709,7 @@ const Realizacje = () => {
                   className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group"
                   onClick={() => openLightbox(index)}
                 >
-                  <img
+                  <img loading="lazy"
                     src={image.src}
                     alt={image.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -820,7 +822,71 @@ const Realizacje = () => {
         onClose={() => setLightboxOpen(false)}
         onNavigate={setLightboxIndex}
       />
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Nasze realizacje — portfolio projektów marketingowych i SEO
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Portfolio Fotz Studio to zbiór zrealizowanych projektów marketingowych
+              dla firm z różnych branż i miast Polski. Tworzymy strony internetowe,
+              prowadzimy kampanie SEO i Google Ads, obsługujemy social media i produkujemy
+              wideo. Nasze realizacje pokazują nie tylko efekty wizualne, ale przede
+              wszystkim mierzalne wyniki biznesowe: wzrost ruchu, więcej zapytań
+              i wyższy przychód klientów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Wierzymy, że najlepszym dowodem jakości pracy jest efekt. Dlatego
+              w naszych case studies dzielimy się konkretnymi liczbami — wzrost
+              ruchu organicznego o X%, obniżenie kosztu kliknięcia o Y%,
+              wzrost sprzedaży z kanałów digitalowych o Z%.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Case studies SEO, stron internetowych i kampanii reklamowych
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nasze case studies obejmują projekty pozycjonowania stron w Google,
+              tworzenia nowych stron internetowych i sklepów e-commerce, kampanii
+              reklamowych Google Ads i Meta Ads, zarządzania profilami social media
+              oraz produkcji wideo wizerunkowych i reklamowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Pracujemy z firmami lokalnymi z Poznania i Wielkopolski, jak i z klientami
+              z całej Polski. Obsługujemy zarówno małe firmy, jak i duże przedsiębiorstwa
+              i instytucje. Każdy projekt traktujemy indywidualnie z pełnym zaangażowaniem.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Projekty stron internetowych, identyfikacji wizualnej i marketingu — sprawdź nasze prace
+            </h2>
+            <p className="text-muted-foreground">
+              Zapraszamy do zapoznania się z naszymi realizacjami. Jeśli masz pytania
+              dotyczące konkretnego projektu lub chcesz osiągnąć podobne efekty
+              dla swojej firmy — skontaktuj się z nami. Bezpłatna konsultacja
+              i analiza potrzeb bez zobowiązań.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 };
 
@@ -837,7 +903,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => (
   <div className="relative rounded-2xl overflow-hidden bg-card border border-border/30 hover:border-primary/30 transition-all duration-500 group">
     <div className="relative aspect-[16/10] overflow-hidden">
-      <img
+      <img loading="lazy"
         src={project.image}
         alt={project.title}
         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

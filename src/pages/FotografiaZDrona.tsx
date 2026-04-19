@@ -30,7 +30,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, FAQSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ImageLightbox } from "@/components/ImageLightbox";
 import { VideoLightbox } from "@/components/VideoLightbox";
 
@@ -208,11 +208,14 @@ export default function FotografiaZDrona() {
   };
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Zdjęcia z Drona | Fotografia Lotnicza 4K | Fotz"
-        description="Zdjęcia i filmy z drona 4K. Ujęcia z lotu ptaka dla nieruchomości, eventów, przemysłu. Panoramy 360°. Fotz Poznań."
+        title="Fotografia z Drona Poznań — Zdjęcia Lotnicze 4K i Film Dronem"
+        description="Fotografia z drona Poznań — profesjonalne zdjęcia z drona 4K, film dronem, ujęcia lotnicze dla firm, deweloperów i agencji nieruchomości. Fotz Studio."
         canonical="https://fotz.pl/uslugi/fotografia-z-drona"
+        keywords="fotografia z drona, zdjęcia z drona, film z drona, filmowanie dronem, fotografia lotnicza, usługi dronem"
       />
 
       <ServiceSchema
@@ -362,7 +365,7 @@ export default function FotografiaZDrona() {
                 className="aspect-video rounded-xl overflow-hidden group relative cursor-pointer"
                 onClick={() => openImageLightbox(index)}
               >
-                <img
+                <img loading="lazy"
                   src={item.src}
                   alt={item.alt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -626,6 +629,74 @@ export default function FotografiaZDrona() {
         videoSrc={currentVideoSrc}
         title={currentVideoTitle}
       />
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Fotografia z drona Poznań — profesjonalne zdjęcia lotnicze 4K dla firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotografia z drona to jeden z najbardziej spektakularnych i skutecznych
+              formatów content marketingu. Zdjęcia z drona 4K i film dronem wyróżniają
+              ofertę nieruchomości, prezentują obiekty przemysłowe z unikatowej perspektywy
+              i nadają prestiż każdej marce. Fotz Studio oferuje profesjonalne usługi
+              drona w Poznaniu i okolicznych województwach.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Nasze ujęcia lotnicze realizowane są certyfikowanym dronem z kamerą 4K,
+              z zachowaniem wszystkich przepisów lotniczych i ubezpieczeniem OC pilota.
+              Gwarantujemy najwyższą jakość materiałów i terminowość realizacji.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Zdjęcia z drona dla deweloperów, rolnictwa i firm — film dronem jako narzędzie marketingu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotografia lotnicza z drona ma zastosowanie w wielu branżach. Dla deweloperów
+              — prezentacja inwestycji z lotu ptaka, otoczenie i infrastruktura. Dla firm
+              przemysłowych — inspekcja obiektów, dokumentacja budów, monitoring terenu.
+              Dla branży rolniczej — monitoring upraw, mapowanie pól. Dla hotelarstwa
+              i turystyki — promocja obiektów i atrakcji z unikatowej perspektywy.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Film z drona do reklamy i materiałów marketingowych to inwestycja, która
+              zwraca się wielokrotnie. Profesjonalne ujęcia lotnicze można wykorzystać
+              w reklamach Meta Ads i Google Ads, na stronie internetowej i w mediach społecznościowych.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Dron 4K, inspekcje i fotografia nieruchomości — kompleksowa obsługa dronem
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Usługi dronowe Fotz Studio obejmują: sesje zdjęciowe nieruchomości
+              i budynków, produkcję filmów reklamowych z ujęciami z powietrza, inspekcje
+              techniczne dachów i obiektów przemysłowych, mapowanie terenów (ortofotomapy)
+              oraz dokumentację eventów i imprez masowych z góry.
+            </p>
+            <p className="text-muted-foreground">
+              Fotografia z drona w Poznaniu i całej Wielkopolsce — realizujemy zlecenia
+              w każdych warunkach pogodowych (z wyjątkiem silnego wiatru i opadów).
+              Skontaktuj się z nami, by wycenić sesję dronem dla Twojej firmy lub inwestycji.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 }

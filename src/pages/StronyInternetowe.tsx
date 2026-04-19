@@ -37,7 +37,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { TextReveal } from "@/components/TextReveal";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -166,6 +166,18 @@ const StronyInternetowe = () => {
       question: "Czy mogę zobaczyć projekt przed realizacją?",
       answer: "Tak! Przed kodowaniem przedstawiamy makiety UX/UI w Figma. Możesz zatwierdzić wygląd i nawigację zanim przejdziemy do programowania."
     },
+    {
+      question: "Ile kosztuje jedna strona internetowa?",
+      answer: "Koszt strony internetowej zależy od jej rodzaju i funkcjonalności. Strona wizytówkowa to wydatek od 2 000 do 5 000 zł, strona firmowa 5 000–15 000 zł, a sklep e-commerce od 12 000 zł wzwyż. Każdą wycenę przygotowujemy indywidualnie — skontaktuj się z nami, by otrzymać bezpłatną wycenę dopasowaną do Twojego projektu."
+    },
+    {
+      question: "Gdzie mogę założyć stronę internetową?",
+      answer: "Stronę internetową możesz założyć na platformach takich jak WordPress, Webflow, Wix czy Squarespace — każda ma swoje zalety. My polecamy WordPress lub Webflow dla firm, które potrzebują elastyczności i dobrego SEO. Jeśli zależy Ci na profesjonalnym efekcie i pozycjach w Google, warto powierzyć to specjalistom — stawiamy strony od podstaw lub migrujemy istniejące serwisy."
+    },
+    {
+      question: "Jakie są najpopularniejsze rodzaje stron internetowych?",
+      answer: "Najpopularniejsze rodzaje stron internetowych to: strony wizytówkowe (dla freelancerów i małych firm), strony firmowe (wielostronicowe serwisy dla przedsiębiorstw), sklepy internetowe (e-commerce), landing page (strony kampanijne), blogi oraz portale z treściami. Fotz Studio specjalizuje się w stronach firmowych, sklepach e-commerce i landing page zoptymalizowanych pod konwersję."
+    },
   ];
 
   // Główne realizacje - showcase
@@ -275,6 +287,7 @@ const StronyInternetowe = () => {
     { name: "Szczecin", href: "/uslugi/strony-internetowe/szczecin" },
     { name: "Bydgoszcz", href: "/uslugi/strony-internetowe/bydgoszcz" },
     { name: "Lublin", href: "/uslugi/strony-internetowe/lublin" },
+    { name: "Rzeszów", href: "/uslugi/strony-internetowe/rzeszow" },
   ];
 
   const includedFeatures = [
@@ -318,10 +331,10 @@ const StronyInternetowe = () => {
   return (
     <>
       <SEOHead
-        title="Tworzenie Stron Internetowych | Projektowanie WWW | Fotz"
-        description="Profesjonalne tworzenie stron internetowych. Strony firmowe, sklepy e-commerce, landing page. Responsywne, szybkie i zoptymalizowane pod SEO."
+        title="Strony Internetowe — Tworzenie i Projektowanie Stron WWW dla Firm"
+        description="Strony internetowe dla firm od Fotz Studio — szybkie, nowoczesne, zoptymalizowane pod SEO. Tworzymy strony www, sklepy e-commerce i landing page. Wycena gratis."
         canonical="https://fotz.pl/uslugi/strony-internetowe"
-        keywords="strony internetowe, tworzenie stron www, projektowanie stron, sklepy e-commerce, landing page, strony firmowe"
+        keywords="strony internetowe, tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, nowoczesne strony internetowe, profesjonalne strony internetowe, wykonanie strony internetowej, responsywna strona www, wordpress, agencja stron internetowych, strona internetowa dla firmy, landing page, sklep internetowy"
       />
       
       <ServiceSchema 
@@ -342,6 +355,9 @@ const StronyInternetowe = () => {
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
+
+      <OrganizationSchema />
+
 
       <Layout>
         <PageBreadcrumbs items={[
@@ -381,7 +397,7 @@ const StronyInternetowe = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-                Projektujemy z myślą o ROI. <span className="text-foreground font-medium">Szybkie, responsywne, zoptymalizowane pod SEO.</span> Od wizytówki po rozbudowany e-commerce – budujemy narzędzia, które generują przychód.
+                Projektujemy z myślą o ROI. <span className="text-foreground font-medium">Szybkie, responsywne strony www, zoptymalizowane pod SEO.</span> Wykonanie strony internetowej w React, Next.js lub WordPress — od wizytówki i landing page po rozbudowany sklep internetowy. Budujemy profesjonalne strony internetowe dla firm, które generują przychód.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
@@ -534,7 +550,7 @@ const StronyInternetowe = () => {
                   <Link to={study.link} className="group block h-full">
                     <div className="rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden h-full flex flex-col">
                       <div className="aspect-[16/10] overflow-hidden relative">
-                        <img 
+                        <img loading="lazy" 
                           src={study.image} 
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -567,7 +583,7 @@ const StronyInternetowe = () => {
                   <Link to={study.link} className="group block">
                     <div className="rounded-xl bg-card border border-border/50 hover:border-primary/30 transition-all overflow-hidden">
                       <div className="aspect-square overflow-hidden">
-                        <img 
+                        <img loading="lazy" 
                           src={study.image} 
                           alt={study.title}
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -670,7 +686,7 @@ const StronyInternetowe = () => {
                     <Link key={index} to={study.link} className="group">
                       <div className="rounded-xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all">
                         <div className="aspect-[3/4] overflow-hidden">
-                          <img 
+                          <img loading="lazy" 
                             src={study.image} 
                             alt={study.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -1080,7 +1096,190 @@ const StronyInternetowe = () => {
           </div>
         </section>
 
-        <RelatedServices 
+        {/* Co to jest strona internetowa — Informational Section */}
+        <section className="py-20 border-t border-border/30 bg-card/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-6">
+                  Co to jest strona internetowa?
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Strona internetowa to zbiór powiązanych ze sobą dokumentów i zasobów dostępnych w sieci pod unikalnym adresem URL (domeną). Składa się z kodu HTML, CSS i JavaScript, które przeglądarka interpretuje i wyświetla użytkownikowi jako tekst, zdjęcia, filmy i interaktywne elementy. Każda witryna internetowa działa na serwerze — fizycznym lub wirtualnym komputerze podłączonym do internetu, który przechowuje pliki strony i udostępnia je odwiedzającym 24 godziny na dobę.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Dla firmy strona www to przede wszystkim narzędzie sprzedaży i budowania wizerunku. Profesjonalna witryna internetowa działa jak całodobowy handlowiec — prezentuje ofertę, odpowiada na pytania klientów i generuje zapytania ofertowe nawet wtedy, gdy Ty śpisz. Według badań ponad 70% konsumentów sprawdza firmę w internecie przed podjęciem decyzji zakupowej, dlatego brak strony lub nieaktualna witryna oznaczają realną utratę klientów.
+                </p>
+
+                <h3 className="text-xl font-heading font-semibold mb-4">Jakie są rodzaje stron internetowych?</h3>
+                <ul className="list-none space-y-3 mb-6">
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Strona wizytówkowa</strong> — prosta, 1–5-stronicowa prezentacja firmy lub freelancera. Zawiera podstawowe informacje: ofertę, kontakt i lokalizację.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Strona firmowa</strong> — rozbudowana witryna z pełną ofertą, case studies, blogiem i formularzami. Fundament obecności online każdej firmy.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Sklep internetowy (e-commerce)</strong> — platforma sprzedaży online z koszykiem, płatnościami i zarządzaniem produktami.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Landing page</strong> — pojedyncza strona kampanijna zaprojektowana pod jeden cel: sprzedaż, zapis na listę lub rejestrację.</span></li>
+                  <li className="flex gap-3 text-muted-foreground"><span className="text-primary font-bold mt-0.5">→</span><span><strong className="text-foreground">Blog / portal</strong> — serwis oparty na treściach, budujący autorytet i ruch organiczny z Google.</span></li>
+                </ul>
+
+                <h3 className="text-xl font-heading font-semibold mb-4">Jak działa pozycjonowanie stron internetowych?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Pozycjonowanie stron internetowych (SEO) to działania mające na celu poprawę widoczności witryny w wynikach wyszukiwania Google. Algorytm Google ocenia strony pod kątem setek czynników: jakości treści, szybkości ładowania, linków przychodzących, struktury technicznej i dopasowania do zapytania użytkownika. Wysoka pozycja w wynikach wyszukiwania przekłada się na bezpłatny, regularny ruch na stronie — bez kosztów reklamowych.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Fotz Studio tworzy strony internetowe z myślą o SEO od pierwszego dnia — optymalizacja techniczna, szybkość Core Web Vitals, struktura nagłówków i schema markup są standardem, nie dodatkiem. Dzięki temu strony naszych klientów osiągają dobre pozycje w Google znacznie szybciej niż witryny zbudowane bez tej filozofii.
+                </p>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Article Section */}
+        <section className="py-20 border-t border-border/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
+              <FadeInView>
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Tworzymy strony WWW i witryny internetowe z myślą o wynikach Twojego biznesu
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Strona www to Twój najważniejszy kanał sprzedaży online — pracuje 24/7, pozyskuje klientów i buduje wiarygodność. Tworzymy strony internetowe widoczne w wynikach wyszukiwania, szybkie na urządzeniach mobilnych i zaprojektowane pod konwersję. Każda witryna internetowa przechodzi przez kompletny proces: analiza rynku, projekt graficzny, programowanie, testy i wdrożenie. Strony internetowe dla firm tworzymy na platformach WordPress, Webflow i React — dobieramy technologię do Twoich potrzeb biznesowych, nie na odwrót.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Projektowanie stron internetowych — projekt graficzny, wizualny styl i UX
+                </h2>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Elementy wizualne, projekt graficzny i treści strony internetowej
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Projektowanie stron internetowych zaczynamy od briefu — poznajemy Twoją markę, grupę docelową i cele biznesowe. Projekt graficzny witryny www tworzony jest w Figma: kolorystyka, typografia, elementy graficzne, układ sekcji i ścieżki konwersji. Wizualny styl strony firmowej musi być spójny z całą komunikacją marki — logotyp, kolory, czcionki i zdjęcia dobieramy z myślą o docelowym kliencie. Intuicyjny i przejrzysty układ sprawia, że użytkownik szybko znajduje to, czego szuka — co bezpośrednio przekłada się na konwersję. Elementy graficzne — ikony, ilustracje, bannery i zdjęcia — tworzymy lub dobieramy profesjonalnie z licencjonowanych banków zdjęć.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Treści strony www piszemy razem z Tobą lub dostarczamy copywriting SEO. Każda podstrona ma zoptymalizowany tytuł, opis i nagłówki H1–H3. Własna strona internetowa z dobrze napisanymi treściami to fundament widoczności w Google i wiarygodności w oczach klientów.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Stworzenie strony internetowej — hosting, domena i platforma
+                </h2>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Hosting, domena i platforma — co zawiera tworzenie strony www
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Stworzenie strony internetowej to nie tylko projekt i kod — to też wybór hostingu, domeny i platformy CMS. Hosting strony www powinien być szybki (SSD, CDN), bezpieczny (SSL, backupy) i zlokalizowany w Polsce lub Europie dla lepszych wyników Core Web Vitals. Domena to adres Twojej firmy w internecie — pomagamy wybrać i zarejestrować domenę .pl lub .com. Platforma CMS (WordPress, Webflow) decyduje o tym, jak łatwo będziesz mógł samodzielnie edytować treści swojej stronie internetowej bez wiedzy technicznej. Hosting dobieramy do skali projektu: strona wizytówkowa, sklep e-commerce i duży serwis mają różne wymagania.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Szablon strony www czy custom design — projektowanie i tworzenie stron internetowych
+                </h2>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Kreator stron www vs agencja — stronę internetową za darmo czy profesjonalnie?
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Kreator stron www (Wix, Squarespace, darmowy kreator Google) umożliwia tworzenie prostych witryn bez znajomości kodu. Kreator stron internetowych sprawdzi się dla małych stron o ograniczonym budżecie. Jednak gotowych szablonów stron www jest tysiące — WordPress.org, ThemeForest, Webflow Marketplace. Gotowych szablonów stron używają miliony firm, co oznacza, że Twoja witryna może wyglądać identycznie jak setki innych. Stworzenie własnej strony internetowej od podstaw daje unikalność i pełną kontrolę nad zawartością strony.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Jak sprawdzić skuteczność strony internetowej i widoczność w wyszukiwarce
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Zawartość strony internetowej, jej opis strony (meta description) i strukturę nagłówków tworzysz razem z nami. Sprawdzić widoczność strony w wyszukiwarce możesz przez Google Search Console — narzędzie pokazuje frazy, na które pojawia się Twoja strona www, oraz pozycje w wynikach wyszukiwania. Stron internetowych pozwala monitorować skuteczność wiele narzędzi: Google Analytics 4, Hotjar, Clarity. Konfigurujemy je wszystkie w ramach wdrożenia.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Tworzenie stron www i SEO — wyniki wyszukiwania od pierwszego dnia
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Tworzenie stron www bez SEO to tworzenie strony niewidocznej w Google. Każda strona internetowa, którą budujemy, ma wbudowane SEO techniczne: szybkość ładowania, responsywność strony, semantyczny język HTML, schema markup, optymalizację obrazów i poprawną strukturę URL. Widoczność twojej strony w wyszukiwarkach internetowych rośnie od pierwszego dnia po wdrożeniu. Wysoko w wynikach wyszukiwania Google pojawiają się strony szybkie, zoptymalizowane i bogate w wartościową zawartość.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Strony na WordPressie — responsywność strony i budujemy strony z SEO
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Strony na WordPressie to najpopularniejszy wybór dla małych stron firmowych i rozbudowanych serwisów. Responsywność strony internetowej to wymóg — Google indeksuje przede wszystkim wersję mobilną. Budujemy strony na WordPressie z pełną optymalizacją: strukturę strony, breadcrumbs, schema markup i całej strony kod HTML semantyczny. Wyszukiwarek internetowych algorytmy oceniają m.in. szybkość, dostępność i unikalność zawartości — o to dbamy kompleksowo. Sukces strony internetowej mierzymy w leadach, sprzedaży i widoczności organicznej.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">
+                  Projekt strony www i własna strona internetowa — korzyści dla Twojego biznesu
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Projekt strony internetowej to nie koszt — to inwestycja. Własna strona internetowa generuje leady organicznie przez SEO, buduje wiarygodność i sprzedaje 24/7. Projekt strony www stworzony przez agencję daje przewagę nad konkurencją i wyróżnienie w wynikach wyszukiwania. Twojej nowej strony pierwsze efekty SEO pojawiają się zwykle po 3–6 miesiącach od publikacji. Naszej strony klienci używają jako głównego kanału leadowego przez lata po wdrożeniu.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  Tworzenie stron internetowych — cennik i wycena budowy strony www
+                </h2>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  Budowy strony internetowej koszt zależy od złożoności: strona wizytówkowa 2 500–5 000 zł, strona firmowa z blogiem 6 000–15 000 zł, sklep e-commerce 12 000–50 000 zł. Każdą wycenę tworzenia strony www poprzedzamy bezpłatną konsultacją. Cena stworzenia strony internetowej zawiera: projekt graficzny, kodowanie, responsywność, SEO techniczne, integrację z Google Analytics i szkolenie z obsługi CMS. Wykonanie strony internetowej w Fotz Studio — poradnik krok po kroku: (1) brief i określenie celu strony, (2) projekt graficzny i elementy graficzne, (3) kodowanie lub konfiguracja CMS, (4) optymalizacja strony pod SEO, (5) testy responsywności i wydajności, (6) publikacja i szkolenie z obsługi.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">
+                  FAQ — projektowanie i tworzenie stron internetowych: poradnik dla firm
+                </h2>
+                <h3 className="text-xl font-heading font-semibold mb-3">Jak długo trwa tworzenie strony internetowej?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Strona wizytówkowa: 2–3 tygodnie. Strona firmowa z blogiem: 4–8 tygodni. Sklep e-commerce: 8–16 tygodni. Czas zależy od złożoności projektu, liczby podstron i szybkości dostarczenia materiałów przez klienta. Strony warto planować z wyprzedzeniem — im wcześniej zaczniemy, tym szybciej strona zacznie generować ruch i leady.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Poradnik: jaką platformę wybrać do tworzenia strony www?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  WordPress to najlepszy wybór dla większości firm — elastyczny, z tysiącami wtyczek i łatwy w obsłudze. Webflow sprawdza się dla designerskich projektów z zaawansowaną animacją. React i Next.js wybieramy przy zaawansowanych aplikacjach webowych i wysokich wymaganiach wydajnościowych. Język HTML i CSS to fundament każdej strony — czyste kodowanie daje maksymalną wydajność i kontrolę. Platformy CMS umożliwiają tworzenie stron i edycję treści bez znajomości kodu.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Czy strona www będzie miała intuicyjny panel do edycji treści?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Tak — każda strona ma intuicyjny panel administracyjny, który pozwala Ci samodzielnie zarządzać treściami, zdjęciami i produktami. Strony samodzielnie edytowane przez właściciela firmy to standard — szkolimy Cię z obsługi CMS. Prosta i intuicyjna nawigacja panelu sprawia, że edycja treści zajmuje minuty, nie godziny. Własnej strony www nie tworzysz raz i zostawiasz — to żywy projekt wymagający regularnego rozwoju, dlatego dostęp do CMS jest kluczowy.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Co zawiera cena tworzenia strony internetowej?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Cena zawiera: projekt graficzny (makiety UX/UI w Figma), kodowanie, responsywność mobile, SEO techniczne, integrację z Google Analytics 4, formularz kontaktowy, certyfikat SSL i szkolenie z obsługi CMS. Potrzebujesz strony z dodatkowymi funkcjami (sklep, rezerwacje, wielojęzyczność)? Wyceniamy indywidualnie — bezpłatna konsultacja w 24h. Twojej firmie zapewniamy pełne wsparcie na każdym etapie wdrożenia i po nim.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Sklepy internetowe i e-commerce — strony www sprzedające online</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Sklep internetowy to specjalny typ strony www, która umożliwia sprzedaż produktów lub usług bezpośrednio online. Strona www sklepu internetowego musi obsługiwać katalog produktów, koszyk zakupów, bezpieczne systemy płatności i zarządzanie zamówieniami. Każda strona www e-commerce wymaga integracji z bramkami płatności (PayPal, Stripe, Przelewy24, BLIK) oraz obsługi protokołu HTTPS w celu maksymalnego bezpieczeństwa danych klientów.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Jakie rozwiązania wybierać do sklepu internetowego?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  WooCommerce (wtyczka do WordPress) to najpopularniejsze rozwiązanie dla polskich przedsiębiorców — elastyczne, tanie i dobrze wspierane. PrestaShop to potęga dla średnich i dużych sklepów internetowych z zaawansowaną obsługą katalogów i kampanii marketingowych. Shopify oferuje gotowe szablony i skalowalne rozwiązania, idealne dla firm e-commerce bez doświadczenia technicznego. Niezależnie od wyboru platform, każda strona www sklepu internetowego powinna mieć szybkie ładowanie, intuicyjną nawigację i bezpieczne procesy checkout. Twoja strona www musi być responsywna na mobilnych urządzeniach — ponad 70% transakcji e-commerce odbywa się ze smartfonów.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Jak zadbać o konwersje w sklepie internetowym?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Strona www sklepu internetowego musi być zoptymalizowana pod kątem konwersji — każdy element wpływa na decyzję zakupu. Opisy produktów muszą być szczegółowe, bogatych wysokiej jakości zdjęcia produktów są obowiązkowe, a recenzje klientów budują zaufanie. Minimalizuj kroki w procesie zamówienia na stronie www — czym mniej kliknięć, tym wyższy odsetek dokonanych zakupów. System rekomendacji produktów na stronie www zwiększa wartość średniego zamówienia, a program lojalnościowy zachęca klientów do powrotów.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Darmowe strony www vs profesjonalne — czy warto oszczędzać?</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Na rynku dostępne są darmowe narzędzia do tworzenia stron www — darmowy kreator stron internetowych, darmowe szablony i gotowe rozwiązania. Wix, Tilda i Weebly oferują darmowe plany, aby użytkownicy mogli szybko stworzyć prostą stronę www bez kodowania. Jednak każda darmowa strona www wiąże się z istotnymi ograniczeniami: branding dostawcy, brak opcji dostosowania domen, ograniczone funkcjonalności i słaba wydajność SEO.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Dlaczego profesjonalna strona www jest lepszym inwestem?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Darmowa strona www może działać dla hobbystów czy portfoliów, ale dla firm to ryzyko. Darmowy kreator stron www nie zapewnia elastyczności — każda darmowa strona www ma sztywne szablony i ograniczone możliwości dostosowania. Profesjonalna strona www to inwestycja w wizerunek marki, kredybiloność i niezależność techniczną. Z profesjonalnym szablonem lub indywidualnym projektem, Twoja strona www będzie skalowalna, bezpieczna i w pełni własnością Twojej firmy.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Gotowe szablony czy projekt od zera?</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Gotowe szablony to kompromis między szybkością a personalizacją — każda strona www z szablonu ładuje się szybko i ma sprawdzone elementy UX. Szablon pozwala zaoszczędzić czas i koszty, zachowując profesjonalny wygląd. Projekt od zera to droższe rozwiązanie, ale gwarantuje unikalny design dostosowany dokładnie do potrzeb Twojej firmy. Niezależnie od wyboru, profesjonalna strona www zawsze wypadnie lepiej niż darmowy kreator stron www — w oczach klientów, algorytmów wyszukiwarek i metrykach biznesowych.
+                </p>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Strona www w 2026 — trendy i wymagania techniczne</h2>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Każda nowoczesna strona www musi spełniać wysoce zaawansowane wymagania techniczne. Responsywna strona www to standard — nie może być strony www, która dobrze wyglądałaby tylko na komputerze. Mobilna strona www to priorytet: ponad 60% użytkowników internetu przeglądają strony www wyłącznie ze smartfonów. Core Web Vitals — metryk wydajności ustalone przez Google — decydują o pozycjach w wyszukiwarce. Każda strona www musi być błyskawicznie szybka, stabilna wizualnie i responsywna na dotyk.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">AI i zaawansowane funkcje w nowoczesnej stronie www</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Współczesna strona www coraz częściej korzysta z sztucznej inteligencji — chatboty AI na stronie www obsługują klientów 24/7, rekomendacje produktów oparte na AI zwiększają sprzedaż, a personalizacja treści na stronie www dla każdego użytkownika jest teraz możliwa. Każda strona www powinna oferować wyszukiwanie zaawansowane, filtry produktów i rekomendacje na bazie zachowań użytkownika. Automatyczne tłumaczenie na stronie www, dostępność dla osób niepełnosprawnych (WCAG) i obsługa różnych urządzeń to już nie opcjonalne cechy — to wymagania.
+                </p>
+                <h3 className="text-xl font-heading font-semibold mb-3">Bezpieczeństwo, dostępność i SEO jako fundamenty strony www</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Każda strona www musi działać na protokole HTTPS — niebezpieczne strony www są wyraźnie oznaczane w przeglądarkach. Dostępność dla użytkowników z niepełnosprawnościami (WCAG 2.1 AA) jest legal wymogiem w wielu krajach. SEO na poziomie technicznych fundamentów — struktura nagłówków, szybkość ładowania, responsywność, schemat danych strukturalnych — to nie dodatki, to podstawa. Każda strona www musi być zoptymalizowana dla wyszukiwarek i użytkowników jednocześnie. Przyszłość to strony www inteligentne, adaptacyjne, szybkie i dostępne dla wszystkich — tylko takie strony www będą konkurencyjne w 2026 roku.
+                </p>
+
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
+              </FadeInView>
+            </div>
+          </div>
+        </section>
+
+        <RelatedServices
           currentService="strony-internetowe"
           subtitle="Usługi wspierające rozwój i promocję Twojej strony www"
         />

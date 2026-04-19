@@ -3,11 +3,11 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Globe, 
-  Search, 
-  ShoppingCart, 
-  Palette, 
+import {
+  Globe,
+  Search,
+  ShoppingCart,
+  Palette,
   MessageSquare,
   Settings,
   TrendingUp,
@@ -19,7 +19,11 @@ import {
   MapPin,
   ArrowRight,
   Server,
-  FileCode
+  FileCode,
+  Sparkles,
+  BarChart3,
+  Users,
+  Building2
 } from "lucide-react";
 import {
   Accordion,
@@ -27,7 +31,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityLinksSection } from "@/components/sections/CityLinksSection";
@@ -53,6 +57,7 @@ const StronyInternetoweLublin = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Kompleksowa obsługa stron internetowych po uruchomieniu." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Lublin to akademickie miasto na wschodzie Polski z prężnie rozwijającym się sektorem MŚP. Tworzymy strony skrojone pod potrzeby lokalnych firm i start-upów." },
   ];
 
   const pricing = [
@@ -134,10 +139,10 @@ const StronyInternetoweLublin = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Lublin | Tworzenie Stron WWW i Sklepów | FOTZ"
-        description="Strony internetowe Lublin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
+        title="Strony Internetowe Lublin | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Lublin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Lublina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/lublin"
-        keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin"
+        keywords="strony internetowe lublin, tworzenie stron www lublin, projektowanie stron lublin, sklepy internetowe lublin, strona www lublin, www lublin, wykonanie strony internetowej lublin, responsywna strona www lublin, wordpress lublin, nowoczesne strony www lublin"
       />
       
       <ServiceSchema 
@@ -158,6 +163,9 @@ const StronyInternetoweLublin = () => {
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero Section */}
@@ -184,10 +192,9 @@ const StronyInternetoweLublin = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-                <strong>Posiadanie profesjonalnej strony www to podstawa sukcesu każdego biznesu.</strong> Niezależnie od tego, 
-                czy prowadzisz małą firmę w Lublinie, czy dużą korporację, Twoja strona internetowa jest wizytówką Twojej działalności w sieci. 
-                Zajmujemy się <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzeniem stron www</Link>, które 
-                nie tylko wyglądają estetycznie, ale przede wszystkim są funkcjonalne i skuteczne w pozyskiwaniu klientów.
+                <strong>Posiadanie profesjonalnej strony www to podstawa sukcesu każdego biznesu.</strong> Niezależnie od tego,
+                czy prowadzisz małą firmę w Lublinie, czy dużą korporację, Twoja strona internetowa jest wizytówką Twojej działalności w sieci.
+                Zajmujemy się <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzeniem stron www Lublin</Link> — responsywne strony internetowe, nowoczesne strony www i wykonanie strony w WordPress lub React, które są funkcjonalne i skuteczne w pozyskiwaniu klientów.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -205,6 +212,35 @@ const StronyInternetoweLublin = () => {
                 </Button>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Lublin Stats Section */}
+        <section className="py-12 bg-card/40 border-y border-border/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-8">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Lublin w liczbach</span>
+                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Dlaczego warto inwestować w stronę www w Lublinie?</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
+                  Lublin to 5. pod względem liczby studentów miasto w Polsce — dynamiczny rynek z rosnącym popytem na usługi online.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                {[
+                  { icon: Users, value: "340 tys.", label: "mieszkańców Lublina" },
+                  { icon: Building2, value: "45 tys.", label: "aktywnych firm w regionie" },
+                  { icon: BarChart3, value: "Top 5", label: "miasto akademickie PL" },
+                  { icon: Globe, value: "82%", label: "firm szuka klientów online" },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
+                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </FadeInView>
           </div>
         </section>
 
@@ -426,7 +462,7 @@ const StronyInternetoweLublin = () => {
                   <Link to={study.link} className="group block">
                     <div className="rounded-xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all">
                       <div className="aspect-video overflow-hidden">
-                        <img 
+                        <img loading="lazy" 
                           src={study.image} 
                           alt={study.title}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -546,6 +582,58 @@ const StronyInternetoweLublin = () => {
         <CityLinksSection currentCity="Lublin" />
 
         {/* Contact Section */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Lublin — rynek lokalny i specyfika regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Lublin to największe miasto Polski Wschodniej i ważny ośrodek akademicki (UMCS, KUL, PL, UM) z ponad 90 000 studentów. Rosnący sektor technologiczny, BPO, medyczny i turystyczny (Stare Miasto, zamek) tworzą dynamiczny rynek online. Dla firm z Lublina profesjonalna strona internetowa to kluczowy element budowania wizerunku wśród wymagającej, wykształconej grupy docelowej.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Fotz Studio tworzy strony internetowe dla firm z Lublina w modelu w pełni zdalnym — bez kompromisów w jakości. Każdy projekt realizuje nasz własny zespół: projektant UX/UI, developer i specjalista SEO. Żadnych podwykonawców, żadnych szablonów kupowanych hurtowo. Efekt? Strony, które wyróżniają się na lokalnym rynku i konwertują odwiedzających w klientów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Projektowanie stron internetowych Lublin — nasz proces od A do Z
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tworzenie strony internetowej dla firmy z Lublina zaczynamy od bezpłatnej konsultacji — omawiamy cel strony, grupę docelową, budżet i harmonogram. Następnie przygotowujemy brief kreatywny i analizę konkurencji. Projekt graficzny powstaje w Figma i jest akceptowany przez Ciebie przed startem kodowania. Po uruchomieniu strony masz pełne dostępy i możesz samodzielnie edytować treści.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Czas realizacji strony wizytówkowej to 2–3 tygodnie, strony firmowej 4–8 tygodni. Nasze strony są objęte 30-dniową gwarancją po wdrożeniu — wszelkie błędy po uruchomieniu poprawiamy bezpłatnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla stron internetowych w Lublin — lokalna widoczność w Google
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każda strona internetowa, którą tworzymy dla lubelskich firm, zawiera podstawowe SEO w cenie: meta tagi title i description, schema LocalBusiness z danymi adresowymi Lublina i Lubelszczyzny, szybkość Core Web Vitals i poprawna architektura nagłówków H1–H3. Dzięki temu strona startuje z solidnym fundamentem i szybciej osiąga widoczność w Google.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kompleksowa oferta 
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> dostępna jest na naszej stronie głównej usługi. Jeśli potrzebujesz strony do kampanii reklamowej, sprawdź naszą ofertę 
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline">landing page dla Google Ads i Meta Ads</Link>.
+            </p>
+
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
         <ContactSection city="Lublinie" />
       </Layout>
     </>

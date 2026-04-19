@@ -47,10 +47,11 @@ export default function BlogInfluencerMarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami | FOTZ Studio"
-        description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii w Polsce."
+        title="Influencer Marketing w Polsce | Fotz Studio"
+        description="Influencer marketing w Polsce — jak wybierać influencerów, negocjować współpracę i mierzyć ROI. Mikro i makro influencerzy. Poradnik influencer marketing…"
+        ogType="article"
         canonical="https://fotz.pl/social-media/influencer"
-        keywords="influencer marketing, współpraca z influencerami, kampanie influencerskie, mikro influencerzy, nano influencerzy, Instagram influencerzy, TikTok influencerzy"
+        keywords="influencer marketing, współpraca z influencerami, marketing influencerów, reklama u influencera, influencer co to"
       />
       <ArticleSchema
         title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami"
@@ -114,7 +115,7 @@ export default function BlogInfluencerMarketing() {
 
           {/* Featured Image */}
           <div className="relative aspect-video rounded-3xl overflow-hidden mb-12">
-            <img
+            <img loading="lazy"
               src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074"
               alt="Influencer marketing - współpraca z twórcami"
               className="w-full h-full object-cover"
@@ -504,6 +505,25 @@ export default function BlogInfluencerMarketing() {
 
           {/* Related Services */}
           <RelatedServices services={servicesByCategory.socialMedia} />
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Influencer marketing — skuteczny kanał dotarcia do zaangażowanych odbiorców</h2>
+              <p className="text-muted-foreground mb-6">Influencer marketing w Polsce to dynamicznie rosnący kanał reklamowy. Współpraca z odpowiednio dobranymi twórcami treści pozwala dotrzeć do zaangażowanych społeczności z autentycznym przekazem. Kluczem jest dobór influencera o wartościach zgodnych z marką i rzeczywistym zaangażowaniu (engagement rate &gt; 3%), a nie samej liczbie followersów.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Mikro i makro influencerzy — dobór ambasadorów i realizacja kampanii w Fotz Studio</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio realizuje kampanie influencer marketingowe dla marek z różnych branż. Pomagamy w doborze influencerów (mikro: 10-100k, makro: 100k+), negocjacji warunków współpracy, briefowaniu twórców i pomiarze wyników (zasięg, wyświetlenia, kliknięcia, sprzedaż). Mamy bazę zweryfikowanych twórców z różnych nisz.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kampania z influencerami dla Twojej marki — skontaktuj się z Fotz Studio</h2>
+              <p className="text-muted-foreground">Chcesz uruchomić kampanię influencer marketingową? Fotz Studio przeprowadzi Cię przez cały proces — od strategii i doboru twórców po realizację i raportowanie. Bezpłatna konsultacja dostępna dla firm planujących pierwsze kampanie z influencerami.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
+            </div>
+
 
           {/* Related Articles */}
           <RelatedArticles currentArticleId="influencer-marketing-polska" />

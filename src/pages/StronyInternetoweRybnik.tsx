@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -77,7 +77,8 @@ const StronyInternetoweRybnik = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Rybniku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Rybnik to ważne centrum gospodarcze województwa śląskiego z dynamicznie rozwijającym się sektorem biznesowym.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Rybnik przechodzi transformację z miasta górniczego w nowoczesny ośrodek usługowy i handlowy. To doskonały moment, by wyróżnić swoją firmę w internecie i przyciągnąć nowych klientów w zmieniającym się rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -85,15 +86,18 @@ const StronyInternetoweRybnik = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Rybnik | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Rybnik. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Rybnika."
+        title="Strony Internetowe Rybnik | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Rybnik — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Rybnika. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/rybnik"
-        keywords="strony internetowe rybnik, tworzenie stron www rybnik, projektowanie stron rybnik, sklepy internetowe rybnik"
+        keywords="strony internetowe rybnik, tworzenie stron rybnik, strony www rybnik, projektowanie stron rybnik"
       />
       
       <ServiceSchema name="Strony Internetowe Rybnik" description="Profesjonalne tworzenie stron internetowych dla firm z Rybnika." provider="FOTZ Studio" areaServed="Rybnik" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Rybnik", url: "https://fotz.pl/uslugi/strony-internetowe/rybnik" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -174,7 +178,7 @@ const StronyInternetoweRybnik = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -211,6 +215,56 @@ const StronyInternetoweRybnik = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Rybnik — tworzenie stron www dla firm z Rybnika i Śląska
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Rybnik to serce subregionu zachodniego województwa śląskiego — miasto w transformacji energetycznej, które od węgla przechodzi ku nowym branżom: produkcji, logistyce i usługom dla firm. Rybnickie firmy coraz częściej szukają klientów poza lokalnym rynkiem — i potrzebują stron internetowych, które otwierają drzwi do nowych rynków.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Rybnika i subregionu zachodniego — Żory, Jastrzębie-Zdrój, Wodzisław Śląski, Racibórz. Zdalny model współpracy oznacza zero dojazdów — projekt w Figmie, wdrożenie online, pełna optymalizacja SEO w terminie 3–5 tygodni.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla firm produkcyjnych i usługowych z Rybnika
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Firmy produkcyjne i kooperacyjne z Rybnika potrzebują profesjonalnych stron B2B z katalogiem produktów, sekcją certyfikatów ISO i formularzem zapytania ofertowego. Projektujemy strony, które budują wiarygodność i generują leady od firm szukających poddostawców w Polsce i Europie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla mniejszych firm usługowych z Rybnika — gabinetów, salonów, firm budowlanych — tworzymy przystępne strony z lokalną optymalizacją SEO. Cena od 2000 zł, czas realizacji 3–4 tygodnie. Pełny transfer dostępów i dokumentacja.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalna widoczność w Rybniku i subregionie zachodnim
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizujemy strony pod frazy z geolokalizacją dla całego subregionu. Google Moja Firma, recenzje Google, spójność NAP — pełny pakiet lokalnego SEO. Efekt: klienci z Rybnika i okolic trafiają do Ciebie przy pierwszym wyszukiwaniu.
+            </p>
+            <p className="text-muted-foreground">
+              Bezpłatna wycena w 24 godziny. Skontaktuj się z nami i zacznijmy pracę nad stroną internetową dla Twojej firmy z Rybnika.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

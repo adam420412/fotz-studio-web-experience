@@ -1,5 +1,5 @@
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -194,9 +194,10 @@ const KompleksowaObsluga = () => {
   return (
     <>
       <SEOHead
-        title="Kompleksowy Marketing dla Firm | Obsługa 360° | Fotz"
-        description="Kompleksowa obsługa marketingowa: strategia, social media, SEO, kampanie reklamowe. Pakiety od 2499 zł/mies."
+        title="Kompleksowa Obsługa Marketingowa Firm | Fotz Studio"
+        description="Kompleksowa obsługa marketingowa firm — marketing 360°: SEO, social media, content, reklamy Google i Meta, produkcja wideo. Jeden partner dla całego…"
         canonical="https://fotz.pl/kompleksowa-obsluga-marketingowa"
+        keywords="kompleksowa obsługa marketingowa, pełna obsługa marketingu, agencja marketingowa kompleksowa, marketing 360, outsourcing marketingu"
       />
       <BreadcrumbSchema 
         items={[
@@ -211,6 +212,9 @@ const KompleksowaObsluga = () => {
         provider="Fotz Studio"
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+      
+      <OrganizationSchema />
+
       
       <Layout>
         {/* Hero Section */}
@@ -582,6 +586,76 @@ const KompleksowaObsluga = () => {
             </FadeInView>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Kompleksowa obsługa marketingowa — marketing 360° dla firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kompleksowa obsługa marketingowa firm to model współpracy, w którym Fotz Studio
+              staje się zewnętrznym działem marketingu Twojej firmy. Zarządzamy całością
+              działań: SEO i pozycjonowanie, kampanie reklamowe Google Ads i Meta Ads,
+              social media marketing, content marketing, produkcja wideo i grafika.
+              Marketing 360° to synergia wszystkich kanałów — efekty wielokrotnie wyższe
+              niż suma działań osobnych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Zamiast koordynować kilku dostawców — jedną agencję SEO, inną do social media,
+              inne studio wideo — zlecasz wszystko jednemu partnerowi. Oszczędzasz czas,
+              pieniądze i masz spójną komunikację marki we wszystkich kanałach.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Outsourcing marketingu — zewnętrzny dział marketingu dla Twojej firmy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Outsourcing marketingu to rozwiązanie idealne dla firm, które chcą
+              profesjonalnych działań marketingowych bez kosztów zatrudniania
+              in-house marketerów. Zewnętrzny dział marketingu Fotz Studio to doświadczony
+              zespół specjalistów SEO, social media managerów, copywriterów i grafików —
+              za ułamek kosztów budowania własnego działu.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Stała kompleksowa obsługa marketingowa obejmuje: miesięczną strategię
+              działań, cotygodniowe posty i treści, raportowanie wyników, optymalizację
+              kampanii i reakcję na zmiany rynkowe. Reagujemy elastycznie na potrzeby
+              Twojego biznesu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strategia marketingowa i realizacja — marketing dla małych i średnich firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kompleksowy marketing dla małych i średnich firm to nasza specjalność.
+              Wiemy, że budżety są ograniczone, dlatego priorytetyzujemy działania
+              z najwyższym ROI. Zaczynamy od audytu obecnej sytuacji, opracowujemy
+              realną strategię marketingową i wdrażamy ją krok po kroku.
+            </p>
+            <p className="text-muted-foreground">
+              Fotz Studio obsługuje firmy z branży usługowej, e-commerce, deweloperskiej,
+              medycznej i wielu innych. Skontaktuj się z nami po bezpłatną wycenę
+              kompleksowej obsługi marketingowej i dowiedz się, jak możemy przyspieszyć
+              wzrost Twojego biznesu.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

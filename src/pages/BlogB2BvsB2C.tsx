@@ -34,8 +34,9 @@ export default function BlogB2BvsB2C() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing B2B vs B2C - różnice, strategie i kanały 2025 | FOTZ Studio"
-        description="Marketing B2B vs B2C: kluczowe różnice w strategii, kanałach i komunikacji. Dowiedz się, jak dostosować marketing do swojego modelu biznesowego."
+        title="Marketing B2B vs B2C — Różnice, Strategie i Kanały Marketingowe"
+        description="Marketing B2B vs B2C — kluczowe różnice w strategii, kanałach i treściach. Jak prowadzić skuteczny marketing B2B i B2C? Poradnik Fotz Studio."
+        ogType="article"
         canonical="https://fotz.pl/blog/marketing-b2b-vs-b2c"
         keywords="marketing b2b, marketing b2c, b2b vs b2c, strategia b2b, sprzedaż b2b, lead generation b2b"
       />
@@ -97,7 +98,7 @@ export default function BlogB2BvsB2C() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070"
               alt="Marketing B2B vs B2C - różnice strategii"
               className="w-full rounded-2xl aspect-video object-cover"
@@ -397,6 +398,25 @@ export default function BlogB2BvsB2C() {
           </div>
         </div>
       </section>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Marketing B2B i B2C — różne podejście do klienta, różne strategie</h2>
+              <p className="text-muted-foreground mb-6">Marketing B2B (business-to-business) i B2C (business-to-consumer) różnią się fundamentalnie: inna długość cyklu decyzyjnego, inne kanały komunikacji, inny ton przekazu. B2B opiera się na edukacji, budowaniu autorytetu i długoterminowych relacjach. B2C stawia na emocje, impulsowość i szybkie konwersje. Skuteczna strategia marketingowa musi uwzględniać te różnice.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kanały marketingowe B2B — LinkedIn Ads, content marketing i email marketing</h2>
+              <p className="text-muted-foreground mb-6">W marketingu B2B kluczowe kanały to: LinkedIn (targetowanie decydentów), content marketing (e-booki, whitepapery, webinary), email marketing z automatyzacją i SEO na frazy z intencją informacyjną i zakupową. Fotz Studio prowadzi kampanie B2B dla firm technologicznych, usługowych i produkcyjnych — z mierzalnymi wynikami.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Strategia marketingowa B2B lub B2C dla Twojej firmy — Fotz Studio</h2>
+              <p className="text-muted-foreground">Niezależnie czy działasz B2B, B2C czy w modelu hybrydowym — Fotz Studio opracuje strategię marketingową dopasowaną do Twojego modelu biznesowego. Bezpłatna konsultacja i audyt marketingowy dostępny dla firm z całej Polski.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+            </div>
+
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="marketing-b2b-vs-b2c" />

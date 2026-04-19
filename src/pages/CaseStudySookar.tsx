@@ -41,10 +41,10 @@ const CaseStudySookar = () => {
   return (
     <Layout>
       <SEOHead
-        title="Sookar - Elite Car Market | Case Study | Fotz Studio"
-        description="Realizacja strony internetowej dla Sookar - elite car market. Katalog samochodów luksusowych, premium design i optymalizacja SEO."
+        title="Sookar Elite Car Market | Fotz Studio"
+        description="Case study Sookar Elite Car Market: strona internetowa dla platformy luksusowych samochodów. Premium design, katalog i SEO motoryzacyjne. Fotz Studio."
         canonical="https://fotz.pl/realizacje/sookar"
-        keywords="Sookar, samochody premium, luksusowe auta, case study, strona internetowa"
+        keywords="case study social media agencja, realizacja social media"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
@@ -113,7 +113,7 @@ const CaseStudySookar = () => {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden border border-border/30">
-                <img src={sookarImg} alt="Sookar - strona internetowa" className="w-full" />
+                <img loading="lazy" src={sookarImg} alt="Sookar - strona internetowa" className="w-full" />
               </div>
             </motion.div>
           </div>
@@ -354,6 +354,68 @@ const CaseStudySookar = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Case study Sookar Elite Car Market — Strona premium z katalogiem pojazdów dla motoryzacyjnej premium i komisów samochodowych
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Projekt dla Sookar Elite Car Market to przykład, jak profesjonalne strona premium z katalogiem pojazdów przekłada się
+              na realne wyniki biznesowe. Luksusowy design i intuicyjny katalog pojazdów przyciągają klientów szukających aut premium. Fotz Studio realizuje podobne projekty
+              dla firm z branży motoryzacyjnej premium i komisów samochodowych i pokrewnych — każdorazowo z indywidualnym podejściem
+              do celów i specyfiki klienta.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Każde case study w naszym portfolio pokazuje nie tylko efekt wizualny, ale przede wszystkim
+              mierzalne wyniki: wzrost ruchu organicznego, więcej zapytań ofertowych, wyższy współczynnik
+              konwersji lub zwiększona sprzedaż online. Wierzymy, że marketing musi przynosić zwrot
+              z inwestycji — i to udowadniamy konkretnymi liczbami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak pracujemy — proces realizacji projektu od briefu do efektów
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każdy projekt w Fotz Studio przebiega według sprawdzonego procesu: konsultacja i brief,
+              analiza rynku i konkurencji, strategia i koncepcja, projektowanie i realizacja,
+              testy i wdrożenie, optymalizacja i wsparcie po-wdrożeniowe. Klient jest informowany
+              o postępach na każdym etapie — żadnych niespodzianek w trakcie i po realizacji.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Transparentność to nasz standard. Regularnie raportujemy wyniki, proaktywnie
+              informujemy o problemach i rekomendujemy kolejne kroki. Długoterminowe relacje
+              z klientami to nasz największy sukces — wiele firm współpracuje z nami od lat.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Potrzebujesz podobnego projektu? Sprawdź nasze usługi stron dla dealerów i komisów samochodowych
+            </h2>
+            <p className="text-muted-foreground">
+              Jeśli szukasz partnera do realizacji projektu podobnego do Sookar Elite Car Market, zapraszamy
+              do kontaktu. Oferujemy bezpłatną konsultację i wycenę. Fotz Studio realizuje
+              projekty dla firm z całej Polski — pracujemy zdalnie z pełną efektywnością.
+              Skontaktuj się z nami, by omówić Twój projekt i sprawdzić, czy możemy osiągnąć
+              podobne wyniki dla Twojej firmy.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 };

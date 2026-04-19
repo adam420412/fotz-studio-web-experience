@@ -1,13 +1,14 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Regulamin() {
   return (
     <>
       <SEOHead
         title="Regulamin | Fotz Studio"
-        description="Regulamin świadczenia usług Fotz Studio. Warunki współpracy, prawa i obowiązki stron."
+        description="Regulamin świadczenia usług Fotz Studio. Zapoznaj się z warunkami współpracy, prawami i obowiązkami stron, zasadami płatności i polityką reklamacji."
         canonical="https://fotz.pl/regulamin"
       />
       
@@ -162,7 +163,16 @@ export default function Regulamin() {
             </motion.div>
           </div>
         </section>
-      </Layout>
+  
+      {/* Link nawigacyjny */}
+      <section className="py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link to="/" className="text-blue-600 hover:text-blue-800 font-medium">
+            ← Strona główna
+          </Link>
+        </div>
+      </section>
+    </Layout>
     </>
   );
 }

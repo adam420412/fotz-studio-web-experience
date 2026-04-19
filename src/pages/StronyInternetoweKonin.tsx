@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweKonin = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Koninie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Konin to ważny ośrodek przemysłowy i usługowy Wielkopolski Wschodniej. Lokalne firmy – od branży energetycznej po usługi dla mieszkańców – coraz bardziej potrzebują profesjonalnej obecności online."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweKonin = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Konin | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Konin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Konina."
+        title="Strony Internetowe Konin | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Konin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Konina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/konin"
-        keywords="strony internetowe konin, tworzenie stron www konin, projektowanie stron konin, sklepy internetowe konin"
+        keywords="strony internetowe konin, tworzenie stron konin, strony www konin, projektowanie stron konin"
       />
       
       <ServiceSchema name="Strony Internetowe Konin" description="Profesjonalne tworzenie stron internetowych dla firm z Konina." provider="FOTZ Studio" areaServed="Konin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Konin", url: "https://fotz.pl/uslugi/strony-internetowe/konin" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -180,7 +184,7 @@ const StronyInternetoweKonin = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,56 @@ const StronyInternetoweKonin = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Konin — tworzenie stron www dla firm z Wielkopolski Wschodniej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Konin to miasto w transformacji energetycznej — przez lata zależne od górnictwa węgla brunatnego i elektrowni, dziś aktywnie buduje nowe gałęzie gospodarki: logistykę, przetwórstwo metali i sektor MŚP. Firmy z Konina i regionu szukają nowych rynków — i potrzebują profesjonalnych stron internetowych, które pomagają im dotrzeć do nowych klientów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Konina, Turku i całej Wielkopolski Wschodniej. Zdalny model współpracy, projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin realizacji: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla firm przemysłowych i usługowych z Konina
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Firmy przemysłowe z Konina potrzebują solidnych stron B2B — z katalogiem usług, certyfikatami i formularzami kontaktowymi dla klientów instytucjonalnych. Tworzymy strony, które generują zapytania ofertowe od firm z całej Polski.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla lokalnych firm usługowych, gabinetów i restauracji projektujemy przystępne strony wizytówkowe. Każda strona jest zoptymalizowana pod frazy lokalne i konfigurowana w Google Moja Firma.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla firm z Konina — lokalna widoczność i nowe rynki
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizujemy strony pod frazy z Konina i Wielkopolski Wschodniej. Google Moja Firma, lokalne linki, spójność NAP — pełen pakiet. Dla firm szukających klientów poza regionem budujemy strukturę SEO celującą w ogólnopolskie frazy branżowe.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena, realizacja w 3–5 tygodni. Firmy z Konina mogą liczyć na strony, które naprawdę pracują.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

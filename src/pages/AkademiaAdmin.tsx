@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from 'react';
 import { Navigate, Link } from 'react-router-dom';
 import { SEOHead } from '@/components/seo/SEOHead';
@@ -419,7 +420,7 @@ const AkademiaAdmin = () => {
       <SEOHead
         title="Panel Administracyjny | Akademia FOTZ"
         description="Panel administracyjny Akademii FOTZ"
-        canonical="https://fotz.pl/akademia/admin"
+        canonical="https://fotz.pl/zasoby"
         noIndex={true}
       />
 

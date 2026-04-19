@@ -26,13 +26,13 @@ export function OrganizationSchema({
   address = {
     streetAddress: "Plac Wolności 16",
     addressLocality: "Poznań",
-    postalCode: "61-738",
+    postalCode: "61-739",
     addressCountry: "PL",
   },
   sameAs = [
-    "https://www.facebook.com/fotzstudio",
-    "https://www.instagram.com/fotzstudio",
-    "https://www.linkedin.com/company/fotzstudio",
+    "https://www.facebook.com/fotzpoznan/",
+    "https://www.instagram.com/fotz_studio/",
+    "https://www.linkedin.com/company/fotz-studio/",
   ],
 }: OrganizationSchemaProps) {
   const schema = {
@@ -40,7 +40,12 @@ export function OrganizationSchema({
     "@type": "Organization",
     name,
     url,
-    logo,
+    logo: {
+      "@type": "ImageObject",
+      url: logo,
+      width: 200,
+      height: 60,
+    },
     description,
     email,
     telephone: phone,
@@ -69,6 +74,30 @@ interface LocalBusinessSchemaProps {
   openingHours?: string[];
 }
 
+// Maps day abbreviations to Schema.org full day names
+const DAY_NAMES: Record<string, string> = {
+  Mo: "Monday", Tu: "Tuesday", We: "Wednesday",
+  Th: "Thursday", Fr: "Friday", Sa: "Saturday", Su: "Sunday",
+};
+const DAY_ORDER = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
+
+// Expands "Mo-Fr" into ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+function expandDayRange(dayStr: string): string[] {
+  const parts = dayStr.split(",").flatMap((part) => {
+    const trimmed = part.trim();
+    if (trimmed.includes("-")) {
+      const [start, end] = trimmed.split("-");
+      const startIdx = DAY_ORDER.indexOf(start.trim());
+      const endIdx = DAY_ORDER.indexOf(end.trim());
+      if (startIdx !== -1 && endIdx !== -1) {
+        return DAY_ORDER.slice(startIdx, endIdx + 1).map((d) => DAY_NAMES[d]);
+      }
+    }
+    return DAY_NAMES[trimmed] ? [DAY_NAMES[trimmed]] : [];
+  });
+  return parts;
+}
+
 export function LocalBusinessSchema({
   name = "Fotz Studio - Agencja Marketingowa Poznań",
   description = "Agencja marketingowa w Poznaniu. Strony internetowe, kampanie reklamowe, social media, produkcja filmowa i branding. Pomagamy firmom zdobywać klientów.",
@@ -88,8 +117,18 @@ export function LocalBusinessSchema({
     telephone,
     email,
     priceRange,
-    image: "https://fotz.pl/logo-fotz.jpg",
-    logo: "https://fotz.pl/logo-fotz.jpg",
+    image: {
+      "@type": "ImageObject",
+      url: "https://fotz.pl/logo-fotz.jpg",
+      width: 200,
+      height: 60,
+    },
+    logo: {
+      "@type": "ImageObject",
+      url: "https://fotz.pl/logo-fotz.jpg",
+      width: 200,
+      height: 60,
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: "Plac Wolności 16",
@@ -100,31 +139,35 @@ export function LocalBusinessSchema({
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "52.4084",
-      longitude: "16.9342",
+      latitude: 52.4084,
+      longitude: 16.9342,
     },
     openingHoursSpecification: openingHours.map((hours) => {
-      const [days, time] = hours.split(" ");
-      const [open, close] = time.split("-");
+      const spaceIdx = hours.lastIndexOf(" ");
+      const days = hours.substring(0, spaceIdx);
+      const time = hours.substring(spaceIdx + 1);
+      const dashIdx = time.lastIndexOf("-");
+      const open = time.substring(0, dashIdx);
+      const close = time.substring(dashIdx + 1);
       return {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: days.split("-").map((d) => d.trim()),
+        dayOfWeek: expandDayRange(days),
         opens: open,
         closes: close,
       };
     }),
     sameAs: [
-      "https://www.facebook.com/fotzstudio",
-      "https://www.instagram.com/fotzstudio",
-      "https://www.linkedin.com/company/fotzstudio",
-      "https://www.youtube.com/@fotzstudio",
+      "https://www.facebook.com/fotzpoznan/",
+      "https://www.instagram.com/fotz_studio/",
+      "https://www.linkedin.com/company/fotz-studio/",
+      "https://www.youtube.com/@Studio-Fotz",
     ],
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "47",
-      bestRating: "5",
-      worstRating: "1",
+      ratingValue: 5.0,
+      reviewCount: 47,
+      bestRating: 5,
+      worstRating: 1,
     },
   };
 
@@ -182,10 +225,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: {
-        "@type": "WebPage",
-        "@id": item.url,
-      },
+      item: item.url,
     })),
   };
 

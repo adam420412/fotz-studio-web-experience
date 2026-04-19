@@ -33,8 +33,9 @@ const BlogPersonalBrandingLinkedIn = () => {
   return (
     <>
       <SEOHead
-        title="Personal Branding na LinkedIn - jak budować markę osobistą | Fotz Studio"
-        description="Kompletny przewodnik po budowaniu marki osobistej na LinkedIn. Strategie, formaty postów i taktyki, które działają w 2025 roku."
+        title="Personal Branding na LinkedIn — Jak Budować Markę Osobistą?"
+        description="Personal branding LinkedIn — jak zbudować silną markę osobistą na LinkedIn, tworzyć treści i pozyskiwać klientów. Strategia personal brandingu 2025. Fotz…"
+        ogType="article"
         canonical="https://fotz.pl/blog/personal-branding-linkedin"
         keywords="personal branding, LinkedIn, marka osobista, networking, content LinkedIn, profil LinkedIn, thought leadership"
       />
@@ -278,6 +279,25 @@ const BlogPersonalBrandingLinkedIn = () => {
             </div>
           </div>
         </article>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Personal branding na LinkedIn — dlaczego marka osobista jest kluczowa w B2B?</h2>
+              <p className="text-muted-foreground mb-6">LinkedIn to platforma numer jeden dla personal brandingu w środowisku biznesowym. Silna marka osobista na LinkedIn buduje wiarygodność, otwiera drzwi do współpracy i generuje inbound leady B2B bez płatnych kampanii. Regularne publikowanie wartościowych treści i aktywność w komentarzach to fundament organicznego zasięgu.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Strategia personal brandingu i content na LinkedIn — wsparcie Fotz Studio</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio pomaga ekspertom, CEO i specjalistom budować markę osobistą na LinkedIn. Tworzymy strategię treści, piszemy posty, artykuły i newslettery LinkedIn, optymalizujemy profil i szkolimy w skutecznej komunikacji. LinkedIn jako kanał B2B pozwala docierać do decydentów z Twojej grupy docelowej.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Zbuduj markę osobistą na LinkedIn z pomocą Fotz Studio</h2>
+              <p className="text-muted-foreground">Chcesz regularnie pojawiać się na LinkedIn, ale brakuje Ci czasu lub pomysłów na treści? Fotz Studio obsługuje profile LinkedIn ekspertów — od strategii przez produkcję contentu po zarządzanie interakcjami. Skontaktuj się z nami po bezpłatną konsultację.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+            </div>
+            </div>
+
 
         <RelatedArticles currentArticleId="personal-branding-linkedin" />
       </Layout>

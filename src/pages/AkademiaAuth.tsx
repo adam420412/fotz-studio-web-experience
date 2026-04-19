@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Layout } from '@/components/layout/Layout';
@@ -105,7 +106,7 @@ export default function AkademiaAuth() {
         <SEOHead
           title="Logowanie - Akademia FOTZ | Fotz Studio"
           description="Zaloguj się lub zarejestruj do Akademii FOTZ. Dostęp do e-booków, kursów wideo i materiałów edukacyjnych z marketingu cyfrowego."
-          canonical="https://fotz.pl/akademia/auth"
+          canonical="https://fotz.pl/zasoby"
           noIndex={true}
         />
         <Layout>
@@ -122,7 +123,7 @@ export default function AkademiaAuth() {
       <SEOHead
         title="Logowanie - Akademia FOTZ | Fotz Studio"
         description="Zaloguj się lub zarejestruj do Akademii FOTZ. Dostęp do e-booków, kursów wideo i materiałów edukacyjnych z marketingu cyfrowego."
-        canonical="https://fotz.pl/akademia/auth"
+        canonical="https://fotz.pl/zasoby"
         noIndex={true}
       />
       <Layout>

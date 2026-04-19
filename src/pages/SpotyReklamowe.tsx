@@ -115,9 +115,10 @@ export default function SpotyReklamowe() {
   return (
     <Layout>
       <SEOHead
-        title="Spoty Reklamowe | Produkcja Filmów Video | Fotz"
-        description="Produkcja spotów reklamowych i filmów promocyjnych. Kreatywne reklamy wideo dla firm. Studio Fotz Poznań."
+        title="Spoty Reklamowe | Fotz Studio"
+        description="Produkcja spotów reklamowych — filmy reklamowe dla firm, reklamy video online, spoty TV i YouTube. Profesjonalna produkcja wideo: scenariusz, nagranie…"
         canonical="https://fotz.pl/uslugi/produkcja-video"
+        keywords="spoty reklamowe, reklama wideo, spoty tv, produkcja reklam wideo, filmy reklamowe, spot reklamowy cena"
       />
       
       <OrganizationSchema />
@@ -680,6 +681,78 @@ export default function SpotyReklamowe() {
       </section>
 
       {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Spoty reklamowe — produkcja filmów reklamowych dla firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Produkcja spotów reklamowych to jedna z flagowych usług Fotz Studio.
+              Tworzymy filmy reklamowe dla firm — od krótkich reelsów i spotów
+              internetowych po pełnowymiarowe reklamy wideo na YouTube i telewizję.
+              Każdy spot reklamowy produkujemy w oparciu o brief, strategię kreatywną
+              i cel marketingowy — bo piękne wideo bez skuteczności sprzedażowej
+              to tylko koszt.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Produkujemy spoty reklamowe w pełnym procesie: konsultacja i brief,
+              scenariusz i storyboard, casting i lokacja, nagranie, montaż,
+              korekcja kolorów, udźwiękowienie, napisy i finalizacja. Finalny
+              plik dostarczamy w formatach gotowych do emisji online i telewizyjnej.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Filmy reklamowe online — reklamy wideo Google Ads, YouTube Ads i Meta Ads
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Reklamy wideo online to najszybciej rosnący format reklamowy. YouTube Ads
+              (pre-roll, bumper 6s, in-feed) docierają do ponad 2 miliardów użytkowników.
+              Filmy na Facebooku i Instagramie (reelsy, stories) osiągają najwyższy
+              organiczny zasięg. Tworzymy materiały wideo zoptymalizowane pod konkretne
+              formaty i platformy reklamowe.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Spot reklamowy dla firmy to inwestycja, która pracuje latami. Jeden
+              profesjonalny film wizerunkowy może służyć na stronie głównej, w reklamach
+              płatnych i na profilach w mediach społecznościowych jednocześnie.
+              Zwrot z inwestycji w produkcję wideo jest mierzalny i wysoki.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Produkcja wideo Poznań — studio nagrań, montaż i post-produkcja
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nasze studio produkcji wideo w Poznaniu dysponuje profesjonalnym
+              sprzętem: kamery 4K, oświetlenie studyjne, teleprompter, green screen
+              i sprzęt dronowy. Realizujemy nagrania w studio, w plenerze i na
+              obiektach klienta. Post-produkcja obejmuje montaż, korekcję kolorów,
+              efekty specjalne, animacje, lektora i muzykę.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z Fotz Studio, by wycenić produkcję spotu reklamowego
+              dla Twojej firmy. Bezpłatna konsultacja, przejrzysta wycena i terminy
+              realizacji dopasowane do Twoich potrzeb. Tworzymy filmy, które naprawdę
+              sprzedają.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <RelatedServices 
         currentService="spoty-reklamowe"
         subtitle="Usługi wspierające dystrybucję i promocję Twoich materiałów wideo"

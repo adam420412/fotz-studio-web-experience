@@ -1,228 +1,281 @@
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
+import { Monitor, Code, Globe, Smartphone, Zap, Users, TrendingUp, Palette } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { 
-  Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
-} from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
-import { CityPricingCards } from "@/components/sections/CityPricingCards";
-import { CityIntroSection } from "@/components/sections/CityIntroSection";
-import { CityBenefitsSection } from "@/components/sections/CityBenefitsSection";
-import { CityLinksSection } from "@/components/sections/CityLinksSection";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { Link } from "react-router-dom";
 
-import apartamentyImg from "@/assets/portfolio/apartamenty-chorwacja.jpg";
-import victoryCarsImg from "@/assets/portfolio/victory-cars.png";
-import cuteDumplingImg from "@/assets/portfolio/cute-dumpling-new.png";
 
-const StronyInternetoweKielce = () => {
-  const services = [
-    { icon: Globe, title: "Strony internetowe", desc: "Profesjonalne strony www dla firm z Kielc i okolic." },
-    { icon: Search, title: "Pozycjonowanie SEO", desc: "Optymalizacja SEO zwiększająca widoczność w wyszukiwarce Google." },
-    { icon: Palette, title: "Projektowanie UI/UX", desc: "Nowoczesne strony internetowe z naciskiem na użytkownika." },
-    { icon: ShoppingCart, title: "Sklepy e-commerce", desc: "Tworzenie sklepów internetowych z pełnymi integracjami." },
-    { icon: MessageSquare, title: "Systemy CMS", desc: "WordPress, Webflow, Shopify i dedykowane rozwiązania." },
-    { icon: TrendingUp, title: "Optymalizacja konwersji", desc: "Strony, które zamieniają odwiedzających w klientów." },
-  ];
+const faqs = [
+  {
+    question: "Ile czasu zajmuje stworzenie strony internetowej w Kielcach?",
+    answer: "Czas realizacji strony internetowej zależy od złożoności projektu. Typowa strona wizytówka zajmuje 2-3 tygodnie, a bardziej zaawansowana strona e-commerce wymaga 6-8 tygodni. Oferujemy elastyczne harmonogramy dostosowane do potrzeb Klienta."
+  },
+  {
+    question: "Czy strona będzie responsywna na urządzeniach mobilnych?",
+    answer: "Tak, wszystkie strony internetowe tworzone przez naszą agencję są w pełni responsywne. Projektujemy mobile-first, co zapewnia doskonałe doświadczenie zarówno na smartfonach, tabletach jak i komputerach stacjonarnych."
+  },
+  {
+    question: "Jakie systemy CMS instalujecie do zarządzania stroną?",
+    answer: "Instalujemy popularne systemy CMS takie jak WordPress, umożliwiające łatwe zarządzanie treścią bez wiedzy technicznej. Możemy także zaproponować rozwiązania custom dostosowane do specificznych potrzeb biznesu."
+  },
+  {
+    question: "Jak wygląda proces realizacji strony internetowej?",
+    answer: "Proces obejmuje: konsultację i zbieranie wymagań, projektowanie makiet, programowanie frontend i backend, testowanie, optymalizację SEO, oraz szkolenie. Każdy etap jest uzgadniany z Klientem."
+  },
+  {
+    question: "Czy oferujecie wsparcie po uruchomieniu strony?",
+    answer: "Tak, oferujemy pakiety wsparcia obejmujące hosting, bezpieczeństwo, backup, aktualizacje i monitoring. Możemy także prowadzić bieżące modyfikacje i rozwijanie nowych funkcji."
+  }
+];
 
-  const pricing = [
-    { title: "Landing Page", desc: "Strona wizytówkowa prezentująca firmę", price: "od 2 000 zł", features: ["Do 5 podstron", "Responsywny design", "Podstawowe SEO", "Formularz kontaktowy", "Certyfikat SSL"] },
-    { title: "Strona Firmowa", desc: "Rozbudowana strona z dodatkowymi funkcjami", price: "od 5 000 zł", popular: true, features: ["Do 15 podstron", "Zaawansowane SEO", "Blog firmowy", "Integracja social media", "System CMS", "Wsparcie techniczne"] },
-    { title: "Sklep E-commerce", desc: "Platforma sprzedażowa z integracjami", price: "od 8 000 zł", features: ["Nieograniczona liczba produktów", "Panel administracyjny", "Integracje płatności", "Optymalizacja konwersji", "Narzędzia marketingowe"] },
-  ];
-
-  const processSteps = [
-    { icon: Target, step: "01", title: "Brief i analiza", desc: "Poznajemy cele biznesowe i specyfikę Twojej firmy w Kielcach." },
-    { icon: Palette, step: "02", title: "Projekt UX/UI", desc: "Zaprojektowanie strony z naciskiem na użyteczność i estetykę." },
-    { icon: Code2, step: "03", title: "Programowanie", desc: "Profesjonalne tworzenie stron www z dbałością o kod." },
-    { icon: Rocket, step: "04", title: "Testy i wdrożenie", desc: "Testujemy i uruchamiamy Twoją stronę internetową." },
-  ];
-
-  const caseStudies = [
-    { title: "Apartamenty Chorwacja", category: "Strona rezerwacyjna", result: "+180% rezerwacji online", link: "/realizacje/apartamenty-chorwacja", image: apartamentyImg },
-    { title: "Victory Cars", category: "Strona motoryzacyjna", result: "Nowoczesny design premium", link: "/realizacje/victory-cars", image: victoryCarsImg },
-    { title: "Cute Dumpling", category: "Strona gastronomiczna", result: "+250% ruchu organicznego", link: "/realizacje/cute-dumpling", image: cuteDumplingImg },
-  ];
-
-  const faqItems = [
-    { question: "Ile kosztuje strona internetowa w Kielcach?", answer: "Koszt strony zależy od zakresu projektu. Prosta wizytówka od 2000 zł, strona firmowa od 5000 zł, sklep e-commerce od 8000 zł. Oferujemy bezpłatną wycenę." },
-    { question: "Jak długo trwa tworzenie strony www?", answer: "Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to 2-3 tygodnie, rozbudowana strona firmowa 4-6 tygodni, sklep internetowy 6-10 tygodni." },
-    { question: "Czy oferujecie wsparcie po uruchomieniu strony?", answer: "Tak, zapewniamy wsparcie techniczne po uruchomieniu. Oferujemy pakiety serwisowe obejmujące aktualizacje, kopie zapasowe i pomoc techniczną." },
-    { question: "Czy strona będzie responsywna?", answer: "Wszystkie nasze strony są w pełni responsywne i dostosowane do urządzeń mobilnych. Projektujemy w podejściu mobile-first." },
-    { question: "Czy pomagacie w pozycjonowaniu strony?", answer: "Tak, każda strona jest zoptymalizowana pod SEO. Oferujemy również kompleksowe usługi pozycjonowania dla firm z Kielc." },
-    { question: "Jakie systemy CMS wykorzystujecie?", answer: "Pracujemy z WordPress, Webflow, Shopify oraz tworzymy dedykowane rozwiązania. Dobieramy system do potrzeb klienta." },
-  ];
-
-  const stats = [
-    { value: "200+", label: "Zrealizowanych projektów", icon: Layers },
-    { value: "98%", label: "Zadowolonych klientów", icon: Star },
-    { value: "5 lat", label: "Doświadczenia", icon: Clock },
-    { value: "24/7", label: "Wsparcie techniczne", icon: Headphones },
-  ];
-
-  const benefits = [
-    "Znajomość kieleckiego rynku",
-    "Kompleksowa obsługa od projektu po wdrożenie",
-    "SEO w standardzie każdej strony",
-    "Responsywny design mobile-first",
-    "Wsparcie techniczne po uruchomieniu",
-    "Konkurencyjne ceny bez ukrytych kosztów"
-  ];
-
-  const introContent = {
-    title: "Tworzenie stron www dla firm z Kielc",
-    paragraphs: [
-      "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Kielcach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
-      "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
-    ],
-    videoSrc: "/videos/fotz-reel.mp4"
-  };
-
+export default function StronyInternetoweKielce() {
   return (
-    <>
+    <Layout>
       <SEOHead
-        title="Strony Internetowe Kielce | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Kielce. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Kielc."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/kielce"
-        keywords="strony internetowe kielce, tworzenie stron www kielce, projektowanie stron kielce, sklepy internetowe kielce"
+        title="Strony Internetowe Kielce | Projektowanie Stron WWW"
+        description="Nowoczesne strony internetowe dla firm w Kielcach. Projektowanie, programowanie i optymalizacja stron WWW. Sprawdzone rozwiązania dla biznesu."
+        canonical="https://fotz.pl/strony-internetowe/kielce"
+        keywords="strony internetowe kielce, tworzenie stron internetowych kielce, strony www kielce, projektowanie stron kielce, agencja webdesign kielce, sklep internetowy kielce"
       />
-      
-      <ServiceSchema name="Strony Internetowe Kielce" description="Profesjonalne tworzenie stron internetowych dla firm z Kielc." provider="FOTZ Studio" areaServed="Kielce" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kielce", url: "https://fotz.pl/uslugi/strony-internetowe/kielce" }]} />
-      <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
-      <Layout>
-        {/* Hero */}
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background" />
-            <motion.div animate={{ scale: [1, 1.2, 1], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }} className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[150px]" />
-            <motion.div animate={{ scale: [1.2, 1, 1.2], opacity: [0.15, 0.25, 0.15] }} transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 4 }} className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[120px]" />
-          </div>
-          
-          <motion.div animate={{ y: [-20, 20, -20], rotate: [0, 5, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }} className="absolute top-32 right-[15%] hidden lg:block">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center"><Globe className="w-10 h-10 text-primary" /></div>
-          </motion.div>
-          
-          <div className="container mx-auto px-4 relative z-10">
-            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center max-w-5xl mx-auto">
-              <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
-                <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Kielce<Sparkles className="w-4 h-4" /></span>
-              </motion.div>
-              
-              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8 leading-tight">
-                Strony Internetowe{" "}<span className="text-gradient relative">Kielce<motion.span initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.8, delay: 0.8 }} className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/50 rounded-full origin-left" /></span>
-              </motion.h1>
-              
-              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla kieleckich firm.
-              </motion.p>
+      <ServiceSchema
+        name="Projektowanie Stron Internetowych w Kielcach"
+        description="Profesjonalne projektowanie i programowanie stron internetowych dla firm w Kielcach. Responsywne, szybkie i optymalizowane pod SEO rozwiązania webowe."
+        areaServed="Kielce"
+      />
 
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button asChild size="lg" className="group text-base px-8 py-6 shadow-lg shadow-primary/20"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" /></Link></Button>
-                <Button asChild variant="outline" size="lg" className="group text-base px-8 py-6 border-2"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>
-              </motion.div>
+      <BreadcrumbSchema
+        items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Strony internetowe", url: "https://fotz.pl/strony-internetowe" },
+          { name: "Kielce", url: "https://fotz.pl/strony-internetowe/kielce" }
+        ]}
+      />
 
-              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }} className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-4xl mx-auto">
-                {stats.map((stat, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: 0.8 + index * 0.1 }} className="group p-4 rounded-2xl bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all">
-                    <stat.icon className="w-6 h-6 text-primary mx-auto mb-2 transition-transform group-hover:scale-110" />
-                    <div className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</div>
-                    <div className="text-xs md:text-sm text-muted-foreground">{stat.label}</div>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
+      <FAQSchema items={faqs} />
 
-        <CityIntroSection content={introContent} cityName="Kielce" />
-        <CityBenefitsSection benefits={benefits} title="Dlaczego warto nam zaufać?" subtitle="Poznaj korzyści współpracy" cityName="Kielce" />
-        <CityServicesGrid services={services} title="Nasze usługi" subtitle="Kompleksowe usługi tworzenia stron www dla kieleckich firm" cityName="Kielce" />
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-blue-950 to-blue-900 text-white py-20 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Strony Internetowe Kielce
+          </h1>
+          <p className="text-xl text-blue-100 mb-8">
+                        Strony internetowe Kielce — tworzenie stron www i sklepy internetowe dla firm ze Świętokrzyskiego. Tworzenie stron internetowych Kielce z nowoczesnym designem, SEO i responsywnym kodem. Projektowanie stron www Kielce od 499 zł netto.
+          </p>
+          <Button size="lg" className="bg-blue-400 hover:bg-blue-500 text-blue-950">
+            Bezpłatna Konsultacja
+          </Button>
+        </div>
+      </section>
 
-        {/* Process */}
-        <section className="py-24 bg-card/30">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Proces</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Jak tworzymy strony?</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-              {processSteps.map((item, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} className="group relative">
-                  <div className="p-8 rounded-2xl bg-background border border-border/50 hover:border-primary/30 transition-all h-full relative overflow-hidden">
-                    <div className="absolute top-0 right-0 text-8xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">{item.step}</div>
-                    <div className="relative z-10">
-                      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform"><item.icon className="w-7 h-7 text-primary" /></div>
-                      <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
+      {/* Why Choose Us */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Dlaczego Warto Nas Wybrać</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow">
+              <Code className="w-12 h-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Nowoczesny Kod</h3>
+              <p className="text-gray-600">Używamy najnowszych technologii i frameworków. Każdy projekt to solidna, skalna baza dla przyszłego rozwoju.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <Smartphone className="w-12 h-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Responsywność</h3>
+              <p className="text-gray-600">Strony działają perfekcyjnie na wszystkich urządzeniach. Od smartfonów po duże monitory - zawsze optymalne wyświetlanie.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <TrendingUp className="w-12 h-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">SEO Optimization</h3>
+              <p className="text-gray-600">Optymalizujemy każdą stronę pod wyszukiwarki. Wysoka pozycja w Google to bezpośrednie korzyści biznesowe.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <Users className="w-12 h-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Wsparcie</h3>
+              <p className="text-gray-600">Zapewniamy stałe wsparcie techniczne, aktualizacje bezpieczeństwa i rozwój funkcjonalności.</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Case Studies */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">Realizacje</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Nasze projekty</h2>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
-                    <div className="p-6">
-                      <span className="text-primary text-sm font-medium">{study.category}</span>
-                      <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
-                      <p className="text-muted-foreground">{study.result}</p>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
+      {/* Services Grid */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Nasze Usługi</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <Monitor className="w-16 h-16 text-blue-400 mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Projektowanie UX/UI</h3>
+              <p className="text-gray-600">Piękne, funkcjonalne interfejsy zorientowane na użytkownika.</p>
+            </div>
+            <div className="text-center">
+              <Globe className="w-16 h-16 text-blue-400 mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">E-commerce</h3>
+              <p className="text-gray-600">Sklepy internetowe z integracją płatności i systemu logistycznego.</p>
+            </div>
+            <div className="text-center">
+              <Zap className="w-16 h-16 text-blue-400 mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Optymalizacja</h3>
+              <p className="text-gray-600">Szybkie ładowanie, SEO i konwersja to nasze priorytety.</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <CityPricingCards pricing={pricing} title="Cennik stron internetowych" subtitle="Transparentne ceny bez ukrytych kosztów" cityName="Kielce" />
-
-        <CityLinksSection currentCity="Kielce" />
-
-        {/* FAQ */}
-        <section className="py-24">
-          <div className="container mx-auto px-4">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
-              <span className="inline-block px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-6">FAQ</span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">Najczęstsze pytania</h2>
-            </motion.div>
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqItems.map((item, index) => (
-                  <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
-                    <AccordionItem value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-card/50">
-                      <AccordionTrigger className="text-left hover:no-underline py-6"><span className="font-medium">{item.question}</span></AccordionTrigger>
-                      <AccordionContent className="text-muted-foreground pb-6">{item.answer}</AccordionContent>
-                    </AccordionItem>
-                  </motion.div>
-                ))}
-              </Accordion>
+      {/* Process */}
+      <section className="py-16 px-4 bg-gray-900 text-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Proces Realizacji</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">1</div>
+              <h3 className="font-semibold mb-2">Konsultacja</h3>
+              <p className="text-gray-300 text-sm">Poznajemy Twój biznes i cele projektu.</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">2</div>
+              <h3 className="font-semibold mb-2">Projektowanie</h3>
+              <p className="text-gray-300 text-sm">Tworzymy makiety i szukamy optymalnego rozwiązania.</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">3</div>
+              <h3 className="font-semibold mb-2">Programowanie</h3>
+              <p className="text-gray-300 text-sm">Implementujemy wszystkie funkcje i optymalizacje.</p>
+            </div>
+            <div className="text-center">
+              <div className="bg-blue-400 text-blue-900 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold text-lg">4</div>
+              <h3 className="font-semibold mb-2">Wdrożenie</h3>
+              <p className="text-gray-300 text-sm">Uruchamiamy stronę i zapewniamy wsparcie.</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <ContactSection />
-      </Layout>
-    </>
+      {/* About Kielce */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8">Strony Internetowe dla Firm w Kielcach</h2>
+          <p className="text-gray-700 mb-6">
+            Kielce, będące dynamicznie rozwijającym się ośrodkiem gospodarczym, przyciąga przedsiębiorców z różnych branż. W dzisiejszych czasach posiadanie profesjonalnej strony internetowej to konieczność dla każdej firmy, niezależnie od jej wielkości. Nowoczesna strona to wizytówka Twojego biznesu w internecie, pierwszy punkt kontaktu z potencjalnymi klientami.
+          </p>
+          <p className="text-gray-700 mb-6">
+            Projektowanie stron internetowych wymaga nie tylko pięknego wyglądu, ale przede wszystkim funkcjonalności i opanowania zaawansowanych technologii. Strona musi być zoptymalizowana pod kątem wyszukiwarek, aby Twoja firma znalazła się na czołowych pozycjach w wynikach Google. To bezpośrednio przekłada się na nowych klientów i wzrost przychodów.
+          </p>
+          <p className="text-gray-700 mb-6">
+            Nasza agencja specjalizuje się w tworzeniu niestandardowych rozwiązań dostosowanych do specificznych potrzeb firm w Kielcach. Niezależnie od tego, czy prowadzisz małą pracownię, sieć sklepów, czy dużą fabrykę - mamy doświadczenie w każdej branży. Handlowcy, usługodawcy, producenci, edukatorzy - wszyscy mogą liczyć na nasze profesjonalne podejście.
+          </p>
+          <h3 className="text-2xl font-bold mb-4">Typy Stron Internetowych</h3>
+          <p className="text-gray-700 mb-4">
+            <strong>Strona wizytówka</strong> - najprostsza i najszybsza do wdrożenia, idealna dla małych firm i specjalistów. Zawiera podstawowe informacje o firmie, usługach, galerii oraz formularz kontaktowy.
+          </p>
+          <p className="text-gray-700 mb-4">
+            <strong>Portal informacyjny</strong> - rozbudowana strona z regularnie aktualizowaną zawartością, artykułami, newslorem i zaawansowanymi funkcjami wyszukiwania. Idealna dla mediów, agencji i firm chcących budować autorytet.
+          </p>
+          <p className="text-gray-700 mb-4">
+            <strong>Sklep elektroniczny</strong> - zaawansowana platforma e-commerce z katalogiem produktów, koszykiem, systemem płatności, logistyką i zarządzaniem zapasami. Pozwala na sprzedaż online i ekspansję biznesu na rynek globalny.
+          </p>
+          <p className="text-gray-700 mb-6">
+            <strong>Aplikacja webowa</strong> - złożone oprogramowanie działające w przeglądarce, umożliwiające zarządzanie procesami biznesowymi, CRM, ERP czy systemy do rezerwacji.
+          </p>
+          <h3 className="text-2xl font-bold mb-4">Responsywność i Mobile-First</h3>
+          <p className="text-gray-700 mb-6">
+            Statystyki pokazują, że ponad 70% użytkowników internetu korzysta z urządzeń mobilnych. Dlatego każda nowoczesna strona musi być w pełni responsywna - idealnie dopasowana do telefonów, tabletów i komputerów. Projektujemy metodą mobile-first, co oznacza, że zaczynamy od wersji na telefon, a następnie rozszerzamy do większych ekranów. Gwarantuje to doskonałe doświadczenie niezależnie od urządzenia.
+          </p>
+          <h3 className="text-2xl font-bold mb-4">Systemy CMS i Zarządzanie Treścią</h3>
+          <p className="text-gray-700 mb-6">
+            Większość projektów wyposażamy w systemy CMS (Content Management System) takie jak WordPress, które pozwalają na łatwe zarządzanie treścią bez potrzeby wiedzy technicznej. Możesz sam zmieniać teksty, dodawać artykuły, galerie, czy publikować promocje. Systemy te wyposażone są także w zaawansowane funkcje SEO i analityki.
+          </p>
+          <h3 className="text-2xl font-bold mb-4">Optymalizacja SEO</h3>
+          <p className="text-gray-700 mb-6">
+            Stworzenie strony to dopiero początek. Aby przyciągnąć użytkowników z wyszukiwarek, konieczna jest optymalizacja SEO. Optymalizujemy strukturę stron, metadane, treści, linkowanie wewnętrzne oraz szybkość ładowania. Prowadzimy także kampanie linkowe i marketingowe, aby zwiększyć widoczność Twojej firmy w sieci.
+          </p>
+          <h3 className="text-2xl font-bold mb-4">Cennik i Harmonogram</h3>
+          <p className="text-gray-700 mb-6">
+            Ceny projektów zaczynają się od kilku tysięcy złotych dla prostych stron wizytówek, aż do dziesiątek tysięcy dla zaawansowanych rozwiązań e-commerce czy aplikacji webowych. Harmonogram realizacji wynosi typowo od 2 do 8 tygodni, w zależności od skomplikowania projektu. Oferujemy elastyczne warunki płatności i możliwość pracy w etapach.
+          </p>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Pakiety Cenowe</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
+              <h3 className="text-2xl font-bold mb-2">Wizytówka</h3>
+              <p className="text-gray-600 mb-6">Idealna dla małych firm i specjalistów</p>
+              <div className="text-3xl font-bold text-blue-400 mb-6">3 000 zł</div>
+              <ul className="space-y-3 text-gray-700 mb-8">
+                <li>5-7 stron</li>
+                <li>Responsywny design</li>
+                <li>Formularz kontaktowy</li>
+                <li>Podstawowe SEO</li>
+                <li>Hosting na 1 rok</li>
+              </ul>
+              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400 transform scale-105">
+              <div className="bg-blue-400 text-blue-950 inline-block px-3 py-1 rounded-full text-sm font-semibold mb-4">Popularny</div>
+              <h3 className="text-2xl font-bold mb-2">Biznes</h3>
+              <p className="text-gray-600 mb-6">Dla rozwijających się firm</p>
+              <div className="text-3xl font-bold text-blue-400 mb-6">7 000 zł</div>
+              <ul className="space-y-3 text-gray-700 mb-8">
+                <li>10-15 stron</li>
+                <li>Zaawansowany design</li>
+                <li>Blog i artykuły</li>
+                <li>SEO optimization</li>
+                <li>Analytics setup</li>
+                <li>Hosting na 1 rok</li>
+              </ul>
+              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
+              <h3 className="text-2xl font-bold mb-2">E-commerce</h3>
+              <p className="text-gray-600 mb-6">Dla sklepów internetowych</p>
+              <div className="text-3xl font-bold text-blue-400 mb-6">15 000 zł</div>
+              <ul className="space-y-3 text-gray-700 mb-8">
+                <li>Nieograniczone produkty</li>
+                <li>System płatności</li>
+                <li>Zarządzanie zapasami</li>
+                <li>SEO+Marketing</li>
+                <li>Wsparcie tech.</li>
+                <li>Hosting na 1 rok</li>
+              </ul>
+              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Najczęstsze Pytania</h2>
+          <Accordion>
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`}>
+                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionContent>{faq.answer}</AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Contact */}
+
+      {/* Link nawigacyjny */}
+      <section className="py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <Link to="/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
+            ← Strony internetowe — wszystkie miasta
+          </Link>
+        </div>
+      </section>
+      <ContactSection />
+    </Layout>
   );
-};
-
-export default StronyInternetoweKielce;
+}

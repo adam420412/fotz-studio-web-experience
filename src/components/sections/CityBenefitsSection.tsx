@@ -116,7 +116,7 @@ export const CityBenefitsSection = ({
                 transition={{ duration: 0.3 }}
                 className="col-span-2 relative rounded-xl md:rounded-2xl overflow-hidden shadow-2xl shadow-primary/10"
               >
-                <img 
+                <img loading="lazy" 
                   src={victoryCarsImg} 
                   alt="Realizacja strony internetowej"
                   className="w-full h-48 md:h-64 object-cover"
@@ -135,7 +135,7 @@ export const CityBenefitsSection = ({
                 transition={{ duration: 0.3 }}
                 className="relative rounded-2xl overflow-hidden shadow-xl shadow-primary/10"
               >
-                <img 
+                <img loading="lazy" 
                   src={apartamentyImg} 
                   alt="Realizacja strony internetowej"
                   className="w-full h-40 object-cover"

@@ -21,7 +21,7 @@ export function Hero() {
           <source srcSet="/hero-poster.webp" type="image/webp" />
           <img
             src="/hero-poster.jpg"
-            alt=""
+            alt="Fotz Studio - agencja marketingowa Poznań"
             className="w-full h-full object-cover"
             loading="eager"
             fetchPriority="high"

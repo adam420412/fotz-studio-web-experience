@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, Settings, TrendingUp, Handshake, Phone, Smartphone, Shield, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweSzczecin = () => {
     paragraphs: [
       "W dzisiejszym cyfrowym świecie, posiadanie profesjonalnej strony internetowej to podstawa sukcesu każdej firmy.",
       "Specjalizujemy się w projektowaniu i tworzeniu stron www w Szczecinie, oferując kompleksowe rozwiązania dostosowane do indywidualnych potrzeb naszych klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Szczecin to brama na rynek niemiecki – doskonała lokalizacja dla firm obsługujących klientów po obu stronach granicy. Profesjonalna strona internetowa to podstawa ekspansji na zachodnioeuropejskie rynki."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweSzczecin = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Szczecin | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Szczecin. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
+        title="Strony Internetowe Szczecin | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Szczecin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Szczecina. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/szczecin"
-        keywords="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin"
+        keywords="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin, wykonanie strony internetowej szczecin, responsywna strona www szczecin, wordpress szczecin, nowoczesne strony www szczecin, agencja stron internetowych szczecin"
       />
       
       <ServiceSchema name="Strony Internetowe Szczecin" description="Profesjonalne tworzenie stron internetowych dla firm ze Szczecina." provider="FOTZ Studio" areaServed="Szczecin" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Szczecin", url: "https://fotz.pl/uslugi/strony-internetowe/szczecin" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -120,7 +124,7 @@ const StronyInternetoweSzczecin = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla szczecińskich firm.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Szczecin w React, Next.js i WordPress. Projektowanie stron Szczecin dla firm gotowych na sukces w Google.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -180,7 +184,7 @@ const StronyInternetoweSzczecin = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,100 @@ const StronyInternetoweSzczecin = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Szczecin — tworzenie stron www dla firm z regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Szczecin leży 150 km od Berlina i 130 km od Hamburga — to jedna z najlepszych
+              lokalizacji dla firm nastawionych na rynek niemiecki i skandynawski.
+              Wiele szczecińskich przedsiębiorstw obsługuje klientów z Niemiec, co oznacza
+              potrzebę dwujęzycznych stron www (PL + DE) z myślą o ekspansji zagranicznej.
+              Tworzenie stron internetowych w Szczecinie to dla nas temat, który rozumiemy
+              w tym specyficznym, transgranicznym kontekście.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Port morski, przemysł stoczniowy i logistyka to trzon szczecińskiej gospodarki —
+              ale miasto dynamicznie się dywersyfikuje. Sektor IT rośnie, startupowy ekosystem
+              dojrzewa (Technopark Pomerania, Startup Hub Szczecin), a handel i usługi
+              błyskawicznie digitalizują. Firmy, które jeszcze kilka lat temu nie potrzebowały
+              strony, dziś tracą klientów bez profesjonalnej obecności online.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla firm z Pomorza Zachodniego i rynku transgranicznego
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Firmy ze Szczecina działające na rynek Europy Zachodniej mają specyficzne
+              wymagania: strony muszą wyglądać profesjonalnie według standardów zachodnich
+              (minimalizm, szybkość, dostępność), obsługiwać płatności w euro i być zgodne
+              z wymogami RODO w interpretacji obu krajów. Projektujemy strony internetowe,
+              które spełniają te wymagania bez kompromisów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla firm logistycznych, spedycyjnych i morskich tworzymy rozbudowane strony
+              korporacyjne z sekcjami fleet, usług, certyfikatów i formularzy ofertowych.
+              Dla mniejszych przedsiębiorstw — od restauracji z Polic po salony kosmetyczne
+              ze Śródmieścia — projektujemy lekkie, szybkie strony z opcją rezerwacji online
+              i widocznością w lokalnym Google.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak wygląda współpraca przy tworzeniu strony internetowej?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Pracujemy wyłącznie zdalnie — konsultacje przez Google Meet lub telefon,
+              projekt graficzny w Figmie z możliwością komentowania na bieżąco,
+              wdrożenie z dostępem do staging server. Dla klientów ze Szczecina
+              oznacza to brak konieczności dojazdów i pełną elastyczność terminową.
+              Typowy projekt strony internetowej realizujemy w 3–5 tygodni.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Nasz stack technologiczny: React/Next.js dla stron wymagających wysokiej
+              wydajności, WordPress dla klientów zarządzających treścią samodzielnie,
+              a dla sklepów e-commerce — WooCommerce lub Shopify, w zależności od skali
+              i rynku docelowego. W przypadku stron dwujęzycznych stosujemy i18n
+              z oddzielnymi meta tagami i hreflang — kluczowe dla SEO w dwóch krajach.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO lokalne i widoczność w Szczecinie — zdobądź klientów z okolicy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Lokalna widoczność w Google to jeden z najpewniejszych sposobów na pozyskanie
+              klientów bez kosztów reklamy. Dla firm ze Szczecina optymalizujemy strony
+              pod frazy z geolokalizacją, konfigurujemy profil Google Moja Firma
+              i dbamy o spójność NAP (nazwa, adres, telefon) na wszystkich platformach.
+              Efektem jest widoczność zarówno w organicznych wynikach wyszukiwania,
+              jak i w Google Maps — dla klientów szukających usług w Szczecinie.
+            </p>
+            <p className="text-muted-foreground">
+              Jeśli prowadzisz firmę w Szczecinie lub Pomorzu Zachodnim i szukasz
+              agencji do stworzenia profesjonalnej strony internetowej — jesteś we właściwym
+              miejscu. Bezpłatna wycena w 24 godziny, projekt graficzny w Figmie,
+              wdrożenie z optymalizacją SEO. Napisz do nas i sprawdź, jak możemy pomóc
+              Twojemu biznesowi rosnąć online.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

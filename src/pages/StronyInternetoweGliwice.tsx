@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -77,7 +77,8 @@ const StronyInternetoweGliwice = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Gliwicach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Gliwice to jedno z najważniejszych miast aglomeracji śląskiej, będące centrum nauki i technologii. Profesjonalna strona internetowa jest niezbędna dla sukcesu na tym rynku.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Gliwice to centrum innowacji na Śląsku – siedziba Politechniki Śląskiej i licznych firm technologicznych. Dynamicznie rozwijający się sektor IT i automotive tworzy zapotrzebowanie na nowoczesne strony internetowe."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -85,15 +86,18 @@ const StronyInternetoweGliwice = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Gliwice | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Gliwice. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Gliwic."
+        title="Strony Internetowe Gliwice | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Gliwice — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gliwic. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/gliwice"
-        keywords="strony internetowe gliwice, tworzenie stron www gliwice, projektowanie stron gliwice, sklepy internetowe gliwice"
+        keywords="strony internetowe gliwice, tworzenie stron gliwice, strony www gliwice, projektowanie stron gliwice"
       />
       
       <ServiceSchema name="Strony Internetowe Gliwice" description="Profesjonalne tworzenie stron internetowych dla firm z Gliwic." provider="FOTZ Studio" areaServed="Gliwice" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gliwice", url: "https://fotz.pl/uslugi/strony-internetowe/gliwice" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -174,7 +178,7 @@ const StronyInternetoweGliwice = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -211,6 +215,56 @@ const StronyInternetoweGliwice = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Gliwice — tworzenie stron www dla firm z aglomeracji śląskiej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Gliwice to miasto-laboratorium przemysłu 4.0 na Śląsku. Politechnika Śląska, GM Manufacturing Poland (produkcja Opla), Centrum Edukacji i Biznesu "Nowe Gliwice" i rosnący klaster IT tworzą środowisko, w którym nowoczesność jest standardem. Firmy z Gliwic — zarówno technologiczne startupy jak i tradycyjne zakłady produkcyjne — potrzebują stron www na poziomie odpowiadającym ich ambicjom.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Gliwice są częścią GOP (Górnośląski Okręg Przemysłowy) — aglomeracji 2 milionów mieszkańców. Strony tworzone dla firm z Gliwic optymalizujemy pod frazy lokalne i aglomeracyjne, by docierać do klientów z całego Śląska: Katowic, Bytomia, Zabrza.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla technologii i automotive — Śląski Kontekst
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Sektor automotive jest mocno obecny w Gliwicach — dostawcy GM, firmy logistyczne i serwisowe potrzebują stron B2B z sekcją partnerstwa, certyfikatów i katalogu usług. Projektujemy strony korporacyjne z wysokimi standardami wizualnymi i technicznymi — Core Web Vitals na poziomie top 10% w Polsce.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla środowiska akademickiego i startupowego Gliwic tworzymy strony dla spin-offów Politechniki, firm doradczych i agencji technologicznych. Strony, które muszą jednocześnie rekrutować pracowników, pozyskiwać klientów i budować markę eksperta.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla firm z Gliwic i aglomeracji górnośląskiej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizujemy strony pod słowa kluczowe z Gliwic i całego GOP. Dla firm z zasięgiem ogólnopolskim budujemy strukturę treści, które rankują na frazy ogólne i lokalne jednocześnie. Google Moja Firma, lokalne linki, cytaty — pełen pakiet lokalnego SEO.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena w 24 godziny, projekt w 3–5 tygodni. Tworzymy strony dla firm z Gliwic, które wyróżniają się na tle śląskiej konkurencji.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

@@ -1,14 +1,12 @@
 # https://www.robotstxt.org/robotstxt.html
 # Robots.txt for fotz.pl
-# Last updated: 2026-01-14
+# Last updated: 2026-04-10
 
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 2
 
 User-agent: Twitterbot
 Allow: /
@@ -28,14 +26,45 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Disallow admin and auth pages
+# Allow AI crawlers (visibility in AI search results)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Disallow admin, auth, and login pages
 Disallow: /akademia/admin
 Disallow: /akademia/auth
 Disallow: /admin/
+Disallow: /login
+Disallow: /zainstaluj
+Disallow: /podziekowanie
 
 # Disallow API and internal paths
 Disallow: /api/
 Disallow: /_next/
+
+# Disallow Vite/React build assets (JS/CSS bundles) - these should never be indexed
+Disallow: /assets/
 
 # Disallow URL parameters (query strings)
 Disallow: /*?*
@@ -64,3 +93,9 @@ Disallow: /my-account/
 # Sitemap locations (index + individual sitemaps)
 Sitemap: https://fotz.pl/sitemap-index.xml
 Sitemap: https://fotz.pl/sitemap.xml
+Sitemap: https://fotz.pl/sitemap-main.xml
+Sitemap: https://fotz.pl/sitemap-services.xml
+Sitemap: https://fotz.pl/sitemap-cities.xml
+Sitemap: https://fotz.pl/sitemap-blog.xml
+Sitemap: https://fotz.pl/sitemap-casestudies.xml
+Sitemap: https://fotz.pl/sitemap-industries.xml

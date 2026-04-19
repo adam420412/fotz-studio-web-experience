@@ -3,11 +3,11 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  Globe, 
-  Search, 
-  ShoppingCart, 
-  Palette, 
+import {
+  Globe,
+  Search,
+  ShoppingCart,
+  Palette,
   MessageSquare,
   Settings,
   TrendingUp,
@@ -17,7 +17,11 @@ import {
   Shield,
   Headphones,
   MapPin,
-  ArrowRight
+  ArrowRight,
+  Sparkles,
+  BarChart3,
+  Users,
+  Building2
 } from "lucide-react";
 import {
   Accordion,
@@ -25,7 +29,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityLinksSection } from "@/components/sections/CityLinksSection";
@@ -51,6 +55,7 @@ const StronyInternetoweBydgoszcz = () => {
     { icon: Smartphone, title: "Responsywność", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczeństwo", desc: "Certyfikat SSL, kopie zapasowe i regularne aktualizacje." },
     { icon: Headphones, title: "Wsparcie techniczne", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Bydgoszcz to centrum przemysłowe i logistyczne kujawsko-pomorskiej. Tworzymy strony dla firm produkcyjnych, logistycznych i usługowych z tego regionu." },
   ];
 
   const pricing = [
@@ -128,10 +133,10 @@ const StronyInternetoweBydgoszcz = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Bydgoszcz | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Bydgoszcz. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
+        title="Strony Internetowe Bydgoszcz | Fotz Studio"
+        description="Strony internetowe Bydgoszcz — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Bydgoszczy. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/bydgoszcz"
-        keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz"
+        keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz, wykonanie strony internetowej bydgoszcz, responsywna strona www bydgoszcz, wordpress bydgoszcz, nowoczesne strony www bydgoszcz"
       />
       
       <ServiceSchema 
@@ -152,6 +157,9 @@ const StronyInternetoweBydgoszcz = () => {
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero Section */}
@@ -178,9 +186,8 @@ const StronyInternetoweBydgoszcz = () => {
               </h1>
               
               <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-                W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>. 
-                Oferujemy kompleksowe usługi <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron www</Link> w Bydgoszczy, 
-                dostosowane do indywidualnych potrzeb klienta.
+                W dzisiejszym cyfrowym świecie <strong>profesjonalna strona internetowa to podstawa sukcesu każdej firmy</strong>.
+                Oferujemy kompleksowe usługi <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron www Bydgoszcz</Link> — responsywne strony internetowe, nowoczesne strony www i wykonanie strony w WordPress lub React, dostosowane do indywidualnych potrzeb klienta.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
@@ -198,6 +205,65 @@ const StronyInternetoweBydgoszcz = () => {
                 </Button>
               </div>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Bydgoszcz Stats Section */}
+        <section className="py-12 bg-card/40 border-y border-border/30">
+          <div className="container mx-auto px-4">
+            <FadeInView>
+              <div className="text-center mb-8">
+                <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">Bydgoszcz w liczbach</span>
+                <h2 className="text-2xl sm:text-3xl font-heading font-bold mb-2">Bydgoszcz — serce kujawsko-pomorskiego</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto text-sm sm:text-base">
+                  8. miasto w Polsce z silnym sektorem przemysłowym, logistycznym i MŚP — rosnący rynek dla e-commerce i usług online.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                {[
+                  { icon: Users, value: "350 tys.", label: "mieszkańców Bydgoszczy" },
+                  { icon: Building2, value: "40 tys.", label: "zarejestrowanych firm" },
+                  { icon: BarChart3, value: "Top 8", label: "miasto w Polsce" },
+                  { icon: Globe, value: "76%", label: "MŚP poszukuje klientów online" },
+                ].map((stat, i) => (
+                  <div key={i} className="text-center p-4 rounded-xl bg-background border border-border/40">
+                    <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
+                    <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                    <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </FadeInView>
+          </div>
+        </section>
+
+        {/* Bydgoszcz local context */}
+        <section className="py-10 md:py-14">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <FadeInView>
+                <div className="prose prose-invert max-w-none prose-sm sm:prose-base">
+                  <h2>Strony www dla firm z Bydgoszczy — rozumiemy lokalny rynek</h2>
+                  <p>
+                    Bydgoszcz to centrum logistyczne i przemysłowe kujawsko-pomorskiego. Miasto znane jest z
+                    <strong> przemysłu chemicznego, elektrotechnicznego i telekomunikacyjnego</strong>, a rosnący
+                    sektor MŚP i startupów sprawia, że konkurencja online jest coraz silniejsza.
+                    Tworzymy strony internetowe, które wyróżniają firmy z Bydgoszczy w wyszukiwarce Google
+                    i konwertują odwiedzających w klientów.
+                  </p>
+                  <ul>
+                    <li><strong>Produkcja i przemysł</strong> — profesjonalne witryny B2B dla firm produkcyjnych</li>
+                    <li><strong>Logistyka i transport</strong> — strony dla operatorów logistycznych i spedytorów</li>
+                    <li><strong>Handel lokalny i e-commerce</strong> — sklepy online dla detalistów z Bydgoszczy</li>
+                    <li><strong>Usługi medyczne i wellness</strong> — strony dla klinik, gabinetów i centrów zdrowia</li>
+                  </ul>
+                  <p>
+                    Znamy Bydgoszcz i wiemy, jak dotrzeć do jej mieszkańców. Lokalne SEO, optymalizacja
+                    Google Moja Firma i treści pisane z myślą o bydgoskim rynku to nasza specjalność.
+                  </p>
+                </div>
+              </FadeInView>
+            </div>
           </div>
         </section>
 
@@ -380,7 +446,7 @@ const StronyInternetoweBydgoszcz = () => {
                     className="group block rounded-xl overflow-hidden bg-background border border-border/50 hover:border-primary/30 transition-all"
                   >
                     <div className="aspect-video overflow-hidden">
-                      <img 
+                      <img loading="lazy" 
                         src={study.image} 
                         alt={study.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -513,28 +579,40 @@ const StronyInternetoweBydgoszcz = () => {
             <div className="max-w-4xl mx-auto">
               <FadeInView>
                 <div className="prose prose-invert max-w-none">
-                  <h2>Profesjonalne strony internetowe Bydgoszcz — czym się wyróżniają?</h2>
+                  <h2>Strony internetowe Bydgoszcz — miasto dwóch rzek i dwóch rynków</h2>
                   <p>
-                    Profesjonalne <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">strony internetowe</Link> Bydgoszcz 
-                    to projektowanie witryn z myślą o optymalizacji, szybkiej responsywności i spójnym wizerunku w sieci. 
-                    Takie strony często zawierają dedykowaną domenę, integrację z systemami e-commerce oraz wsparcie techniczne po uruchomieniu.
+                    Bydgoszcz to wyjątkowe miasto z perspektywy biznesu online. Jako część Bydgosko-Toruńskiego Obszaru Metropolitalnego (ok. 700 000 mieszkańców), bydgoskie firmy mają dostęp do szerokiego rynku konsumentów — zarówno lokalnych, jak i z aglomeracji. <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">Profesjonalna strona internetowa</Link> to dla bydgoskich przedsiębiorców kluczowy element dotarcia do klientów w całym regionie Kujawsko-Pomorskim.
                   </p>
-                  
-                  <h2>Jak wybrać firmę tworzącą strony dla firm z Bydgoszczy?</h2>
                   <p>
-                    Wybierając agencję warto sprawdzić <Link to="/realizacje" className="text-primary hover:underline">portfolio zrealizowanych stron</Link>, 
-                    referencje oraz oferowane rozwiązania. Dobrze, gdy wykonawca proponuje kompleksowe usługi: projektowanie, 
-                    wybór domeny, optymalizację SEO oraz wsparcie techniczne.
+                    Bydgoszcz łączy silną tradycję przemysłową (PESA, Bombardier, Nitroerg) z rosnącym sektorem usługowym i technologicznym. Firmy z branży logistycznej korzystają z węzła komunikacyjnego — skrzyżowania tras między Warszawą, Gdańskiem i Berlinem. Strona www musi komunikować zarówno lokalną obecność, jak i gotowość do obsługi klientów B2B z całej Polski.
                   </p>
-                  
-                  <h2>Czy można zintegrować sklep WooCommerce z projektem strony?</h2>
+
+                  <h2>Branże, dla których tworzymy strony internetowe w Bydgoszczy</h2>
                   <p>
-                    Tak, integracja z systemami e-commerce takimi jak WooCommerce jest standardem przy tworzeniu sklepów internetowych. 
-                    Pozwala to na łatwe zarządzanie produktami, płatnościami i wysyłką, a także daje możliwości optymalizacji SEO 
-                    dla kart produktów w celu przyciągnięcia klientów.
+                    Bydgoski rynek ma swoje specyficzne sektory. Szczególnie aktywnie tworzymy strony dla firm z branży:
+                    <strong> produkcyjnej i przemysłowej</strong> (PESA, lokalni podwykonawcy automotive),
+                    <strong> medycznej i rehabilitacyjnej</strong> (prywatne kliniki, gabinety fizjoterapii),
+                    <strong> edukacyjnej</strong> (UTP, WSG, prywatne szkoły),
+                    <strong> gastronomicznej</strong> (restauracje przy Wyspie Młyńskiej, barki na Brdzie),
+                    <strong> nieruchomości</strong> (rosnący rynek deweloperski),
+                    oraz dla freelancerów i lokalnych sklepów online.
+                  </p>
+
+                  <h2>Strony www Bydgoszcz — co wyróżnia naszą ofertę?</h2>
+                  <p>
+                    Fotz Studio tworzy strony internetowe dla firm z Bydgoszczy w 100% zdalnie — bez pośredników i bez szablonów kupowanych hurtowo. Każdy projekt to indywidualny design w Figma, własna implementacja i pełna optymalizacja SEO pod frazy bydgoskie (np. &quot;strony internetowe Bydgoszcz&quot;, usługi branżowe + miasto). Dostarczamy kompletny pakiet: projekt, wdrożenie, szkolenie z CMS i 30-dniowe wsparcie po starcie.
+                  </p>
+                  <p>
+                    Chcesz zobaczyć nasze realizacje lub uzyskać bezpłatną wycenę? <Link to="/kontakt" className="text-primary hover:underline">Skontaktuj się z nami</Link> — odpowiemy w ciągu 24 godzin.
                   </p>
                 </div>
               </FadeInView>
+              <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+                <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
+                <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
+                <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+                <Link to="/uslugi/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
+              </div>
             </div>
           </div>
         </section>
@@ -580,6 +658,58 @@ const StronyInternetoweBydgoszcz = () => {
         </section>
 
         {/* Contact Section */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Bydgoszcz — rynek lokalny i specyfika regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Bydgoszcz to piąte co do wielkości miasto w Polsce i ważny węzeł komunikacyjny. Dynamicznie rozwijający się sektor MŚP, przemysł chemiczny, branża medialna i edukacja wyższa (UKW, UTP) sprawiają, że lokalny rynek online jest coraz bardziej konkurencyjny. Profesjonalna strona internetowa dla firmy z Bydgoszczy to inwestycja, która zwraca się szybko — szczególnie w usługach lokalnych, gdzie klienci szukają dostawców w Google Maps.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Fotz Studio tworzy strony internetowe dla firm z Bydgoszczy w modelu w pełni zdalnym — bez kompromisów w jakości. Każdy projekt realizuje nasz własny zespół: projektant UX/UI, developer i specjalista SEO. Żadnych podwykonawców, żadnych szablonów kupowanych hurtowo. Efekt? Strony, które wyróżniają się na lokalnym rynku i konwertują odwiedzających w klientów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Projektowanie stron internetowych Bydgoszcz — nasz proces od A do Z
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tworzenie strony internetowej dla firmy z Bydgoszczy zaczynamy od bezpłatnej konsultacji — omawiamy cel strony, grupę docelową, budżet i harmonogram. Następnie przygotowujemy brief kreatywny i analizę konkurencji. Projekt graficzny powstaje w Figma i jest akceptowany przez Ciebie przed startem kodowania. Po uruchomieniu strony masz pełne dostępy i możesz samodzielnie edytować treści.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Czas realizacji strony wizytówkowej to 2–3 tygodnie, strony firmowej 4–8 tygodni. Nasze strony są objęte 30-dniową gwarancją po wdrożeniu — wszelkie błędy po uruchomieniu poprawiamy bezpłatnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla stron internetowych w Bydgoszcz — lokalna widoczność w Google
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każda strona internetowa, którą tworzymy dla bydgoskich firm, zawiera podstawowe SEO w cenie: meta tagi title i description, schema LocalBusiness z danymi adresowymi Bydgoszczy i Kujawsko-Pomorskiego, szybkość Core Web Vitals i poprawna architektura nagłówków H1–H3. Dzięki temu strona startuje z solidnym fundamentem i szybciej osiąga widoczność w Google.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kompleksowa oferta 
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> dostępna jest na naszej stronie głównej usługi. Jeśli potrzebujesz strony do kampanii reklamowej, sprawdź naszą ofertę 
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline">landing page dla Google Ads i Meta Ads</Link>.
+            </p>
+
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
         <ContactSection city="Bydgoszczy" />
       </Layout>
     </>

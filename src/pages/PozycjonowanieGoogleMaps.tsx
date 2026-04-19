@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -9,7 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const faqItems = [
   {
@@ -56,12 +57,14 @@ const faqItems = [
 
 const PozycjonowanieGoogleMaps = () => {
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Pozycjonowanie Google Maps | Wizytówka GMB | Fotz"
-        description="Pozycjonowanie wizytówki Google Maps. Zwiększ widoczność firmy lokalnie. Optymalizacja Google Moja Firma. Fotz Studio."
+        title="Pozycjonowanie Google Maps — Wizytówka Google Moja Firma"
+        description="Pozycjonowanie Google Maps i optymalizacja wizytówki Google Moja Firma (GMB). Pojawiaj się wysoko w lokalnych wynikach wyszukiwania. Fotz Studio."
         canonical="https://fotz.pl/seo/google-maps"
-        keywords="pozycjonowanie Google Maps, wizytówka Google, Google Moja Firma, pozycjonowanie lokalne, SEO lokalne, mapy Google"
+        keywords="pozycjonowanie google maps, wizytówka google, google moja firma, google business profile, pozycjonowanie lokalne, pozycjonowanie mapy google, seo lokalne google maps, optymalizacja wizytówki google"
       />
       <ServiceSchema
         name="Pozycjonowanie Google Maps"
@@ -90,7 +93,7 @@ const PozycjonowanieGoogleMaps = () => {
               {" "}dla firm
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-6 sm:mb-8 max-w-3xl mx-auto px-2">
-              Skuteczne pozycjonowanie wizytówki Google Maps to kluczowy element strategii marketingu internetowego dla każdej firmy, która chce dotrzeć do lokalnych klientów. Dzięki odpowiedniemu pozycjonowaniu wizytówki Google można znacznie zwiększyć widoczność firmy w wynikach wyszukiwania.
+              Pozycjonowanie Google Maps i optymalizacja wizytówki Google Moja Firma — skuteczne SEO lokalne dla firm z każdego regionu Polski. Pozycjonowanie wizytówki Google to klucz do pozyskiwania klientów lokalnych. Google Business Profile zoptymalizowany pod Twój rynek.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#75143F] to-[#0F3053] hover:opacity-90 w-full sm:w-auto text-sm sm:text-base">
@@ -582,7 +585,34 @@ const PozycjonowanieGoogleMaps = () => {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Pozycjonowanie Google Maps — wizytówka Google i lokalne wyniki wyszukiwania</h2>
+            <p className="text-muted-foreground mb-4">Pozycjonowanie Google Maps to optymalizacja profilu Google Moja Firma (Google Business Profile), by Twoja firma pojawiała się wysoko w lokalnych wynikach wyszukiwania — w tzw. Local Pack (3 boxie na mapie). Wizytówka Google to często pierwszy kontakt potencjalnego klienta z Twoją firmą — musi być kompletna, aktualna i zoptymalizowana.</p>
+            <p className="text-muted-foreground mb-6">Lokalne SEO i pozycjonowanie Google Maps ważne jest szczególnie dla firm z fizyczną lokalizacją — restauracje, gabinety lekarskie, sklepy, salony fryzjerskie, usługi budowlane i inne biznesy lokalnie. Frazy lokalne (np. "hydraulik Poznań", "fryzjer Kraków blisko mnie") generują ruch o bardzo wysokiej intencji zakupowej.</p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">Optymalizacja wizytówki Google — co wpływa na pozycje w Google Maps?</h2>
+            <p className="text-muted-foreground mb-4">Czynniki wpływające na pozycje w Google Maps: kompletność i spójność danych NAP (Nazwa, Adres, Numer telefonu), kategoria firmy, opinie Google (liczba i średnia ocena), regularność publikacji postów w GMB, zdjęcia wysokiej jakości, odpowiedzi na pytania i opinie oraz linki lokalne. Kup opinie Google — nie, to nieeleganckie. Zdobywaj opinie organicznie poprzez doskonałą obsługę.</p>
+            <p className="text-muted-foreground mb-6">Wizytówka Google Moja Firma powinna zawierać: dokładny adres, godziny otwarcia (łącznie ze specjalnymi), wszystkie metody kontaktu, link do strony internetowej, opis firmy z kluczowymi słowami lokalnymi oraz regularne zdjęcia i posty.</p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">Pozycjonowanie lokalne — GMB a pozycjonowanie stron internetowych</h3>
+            <p className="text-muted-foreground">Pozycjonowanie Google Maps działa najlepiej w połączeniu z lokalnym SEO strony internetowej — podstron z lokalnymi frazami, budowy lokalnych linków (np. katalogi firm, portale lokalne) i optymalizacji on-page pod lokalne słowa kluczowe. To kompleksowe podejście do widoczności lokalnej sprawia, że Twoja firma dominuje zarówno w wynikach organicznych, jak i na mapach Google.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 };
 

@@ -109,10 +109,10 @@ export default function ProdukcjaFilmowPoznan() {
   return (
     <Layout>
       <SEOHead
-        title="Produkcja Filmów Reklamowych Poznań | Studio Filmowe Fotz"
-        description="Profesjonalna produkcja filmów reklamowych i promocyjnych w Poznaniu. Spoty reklamowe, filmy korporacyjne, video marketing."
+        title="Produkcja Filmów Poznań — Filmy Reklamowe i Wideo dla Firm"
+        description="Produkcja filmów Poznań — filmy reklamowe, wideo firmowe, sesje fotograficzne i filmy na social media dla firm z Poznania. Fotz Studio."
         canonical="https://fotz.pl/uslugi/produkcja-filmow"
-        keywords="produkcja filmów reklamowych poznań, studio filmowe poznań, spoty reklamowe, filmy promocyjne, video marketing, film korporacyjny, film produktowy"
+        keywords="produkcja filmów poznań, filmy reklamowe poznań, film korporacyjny poznań, produkcja video poznań, studio filmowe poznań"
       />
 
       <OrganizationSchema />
@@ -655,6 +655,27 @@ export default function ProdukcjaFilmowPoznan() {
             </FadeInView>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Produkcja filmów Poznań — filmy reklamowe i wideo dla firm</h2>
+            <p className="text-muted-foreground mb-4">Produkcja filmów Poznań — Fotz Studio realizuje filmy reklamowe, spoty telewizyjne i online, filmy firmowe, wideo produktowe, materiały na social media i content video dla firm z Poznania, Wielkopolski i całej Polski. Dysponujemy profesjonalnym sprzętem filmowym, studio i doświadczonym zespołem realizatorskim.</p>
+            <p className="text-muted-foreground mb-6">Filmy reklamowe Poznań — od scenariusza, przez preprodukcję (scouting lokacji, casting), produkcję (zdjęcia), po postprodukcję (montaż, korekcja barwna, dźwięk, motion graphics) — kompleksowy proces tworzenia filmów reklamowych pod jednym dachem. Fotografia i video z drona — realizujemy ujęcia lotnicze nieruchomości i eventów.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Wideo firmowe i sesje fotograficzne Poznań</h2>
+            <p className="text-muted-foreground">Sesje fotograficzne Poznań — fotografia firmowa, fotografia korporacyjna, fotografia produktowa, fotografia biznesowa i zdjęcia eventowe dla firm z Poznania. Studio fotograficzne Poznań z pełnym wyposażeniem (tła, oświetlenie, rekwizyty). Usługi foto i wideo — kompleksowa dokumentacja i kreacja materiałów marketingowych dla Twojej firmy z Poznania.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </main>

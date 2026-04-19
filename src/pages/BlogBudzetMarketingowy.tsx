@@ -33,8 +33,9 @@ export default function BlogBudzetMarketingowy() {
   return (
     <Layout>
       <SEOHead
-        title="Budżet marketingowy - jak zaplanować wydatki na marketing 2025 | FOTZ Studio"
-        description="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik planowania wydatków marketingowych dla MŚP."
+        title="Budżet Marketingowy — Jak Zaplanować Wydatki na Marketing Firmy?"
+        description="Budżet marketingowy firmy — ile wydawać na marketing, jak podzielić budżet między kanały i mierzyć ROI. Praktyczny przewodnik planowania wydatków…"
+        ogType="article"
         canonical="https://fotz.pl/blog/budzet-marketingowy-planowanie"
         keywords="budżet marketingowy, planowanie budżetu, wydatki na marketing, ROI marketing, koszty reklamy"
       />
@@ -96,7 +97,7 @@ export default function BlogBudzetMarketingowy() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072"
               alt="Planowanie budżetu marketingowego"
               className="w-full rounded-2xl aspect-video object-cover"
@@ -431,6 +432,25 @@ export default function BlogBudzetMarketingowy() {
           </div>
         </div>
       </section>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Planowanie budżetu marketingowego — ile powinna wydawać na marketing Twoja firma?</h2>
+              <p className="text-muted-foreground mb-6">Optymalny budżet marketingowy to 5-15% przychodów firmy, w zależności od branży, etapu rozwoju i celów. Startupy i firmy w fazie wzrostu powinny alokować więcej (10-20%), dojrzałe firmy z ugruntowaną pozycją — mniej (5-10%). Kluczowe jest nie tylko ile wydajesz, ale jak mierzysz ROI z każdego kanału.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Podział budżetu marketingowego — SEO vs. reklamy płatne vs. content marketing</h2>
+              <p className="text-muted-foreground mb-6">Typowy podział budżetu marketingowego dla małej firmy: SEO/content (30-40%), kampanie PPC Google/Meta (30-40%), social media i produkcja treści (15-20%), narzędzia i analityka (5-10%). Fotz Studio pomaga optymalizować alokację budżetu w oparciu o dane i realne ROI z każdego kanału.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kalkulator ROI marketingowego — sprawdź, ile możesz zarobić na marketingu online</h2>
+              <p className="text-muted-foreground">Użyj kalkulatora ROI Fotz Studio, by obliczyć potencjalny zwrot z inwestycji w kampanie Google Ads, SEO i social media. Bezpłatne narzędzie online — bez rejestracji. Skontaktuj się z nami po indywidualną wycenę działań marketingowych dla Twojej firmy.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+            </div>
+            </div>
+
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="budzet-marketingowy-planowanie" />

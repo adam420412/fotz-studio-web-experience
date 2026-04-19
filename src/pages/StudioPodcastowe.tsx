@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Mic, Video, Headphones, Sliders, ArrowRight, CheckCircle } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -5,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const features = [
   {
@@ -79,10 +80,10 @@ export default function StudioPodcastowe() {
   return (
     <>
       <SEOHead
-        title="Studio Podcastowe Poznań | Nagrania Audio/Video | Fotz"
-        description="Studio podcastowe w centrum Poznania. Mikrofony Shure, nagrania 4K, postprodukcja. Profesjonalne wynajem studia od 350 zł/h."
+        title="Studio Podcastowe Poznań — Nagrania Podcastów Audio i Wideo"
+        description="Studio podcastowe Poznań — profesjonalne nagrania podcastów audio i wideo, montaż, postprodukcja, dystrybucja. Wynajmij studio nagrań w Poznaniu. Fotz Studio."
         canonical="https://fotz.pl/uslugi/studio-podcastowe"
-        keywords="studio podcastowe, nagrywanie podcastów, podcast Poznań, studio nagrań, produkcja podcastów"
+        keywords="studio podcastowe, nagrywanie podcastów, studio podcast wynajem, podcast studio poznań, nagranie podcastu"
       />
       <ServiceSchema 
         name="Studio Podcastowe"
@@ -94,6 +95,8 @@ export default function StudioPodcastowe() {
           { name: "Studio Podcastowe", url: "https://fotz.pl/uslugi/studio-podcastowe" }
         ]}
       />
+      <OrganizationSchema />
+
       <Layout>
         {/* Hero */}
         <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 section-padding bg-background relative overflow-hidden">
@@ -128,7 +131,7 @@ export default function StudioPodcastowe() {
             </div>
             <div className="relative">
               <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden">
-                <img
+                <img loading="lazy"
                   src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070"
                   alt="Studio podcastowe Fotz"
                   className="w-full h-full object-cover"
@@ -202,7 +205,7 @@ export default function StudioPodcastowe() {
                 key={index}
                 className="aspect-square rounded-lg sm:rounded-xl overflow-hidden"
               >
-                <img
+                <img loading="lazy"
                   src={image}
                   alt={`Studio ${index + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -291,6 +294,75 @@ export default function StudioPodcastowe() {
           </Button>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Studio podcastowe Poznań — profesjonalne nagrania podcastów dla firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Studio podcastowe Fotz Studio w Poznaniu to profesjonalna przestrzeń
+              do nagrywania podcastów audio i wideo dla firm i twórców. Podcast
+              to jeden z najszybciej rosnących formatów content marketingu — buduje
+              autorytet, tworzy lojalną społeczność i generuje ruch na stronie.
+              W naszym studiu możesz nagrać podcast audio (Spotify, Apple Podcasts),
+              podcast wideo (YouTube) lub oba formaty jednocześnie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Studio nagrań w Poznaniu wyposażone jest w profesjonalne mikrofony
+              (Shure, Rode), akustykę, oświetlenie studyjne i systemy nagrywające.
+              Zajmujemy się całym procesem: nagranie, montaż audio i wideo,
+              mastering, okładkę odcinka i dystrybucję na platformy.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Podcast firmowy jako narzędzie content marketingu — nagrania w Fotz Studio
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Podcast firmowy to skuteczne narzędzie budowania marki eksperckiej.
+              Regularne odcinki z wartościową wiedzą branżową przyciągają lojalnych
+              słuchaczy, którzy stają się klientami. Podcast wideo na YouTube dodatkowo
+              buduje zasięg organiczny i pozycjonuje markę w wynikach wyszukiwania.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Pomagamy firmom z Poznania i całej Polski uruchomić podcast od A do Z:
+              koncepcja formatu, scenariusze odcinków, nagranie, postprodukcja,
+              projekt graficzny (cover art, banery), dystrybucja i promocja.
+              Obsługa abonamentowa — regularne odcinki bez stresu po Twojej stronie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Wynajem studia nagrań Poznań — sesje własne i produkcja na zlecenie
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Studio nagrań Fotz Studio w Poznaniu dostępne jest na wynajem na godziny
+              lub pakiety dniowe. Oferujemy dwa tryby: wynajem studia (przychodzisz
+              ze swoim materiałem, my zapewniamy sprzęt i reżysera) oraz produkcja
+              kompleksowa (my zajmujemy się wszystkim od nagrania po gotowy odcinek).
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami, by zarezerwować studio nagrań w Poznaniu lub
+              omówić produkcję regularnego podcastu dla Twojej firmy. Terminy dostępne
+              6 dni w tygodniu, nagrania możliwe również w weekendy.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

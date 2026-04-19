@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/accordion";
 import { Layout } from "@/components/layout/Layout";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const FacebookAds = () => {
   const benefits = [
@@ -128,11 +128,14 @@ const FacebookAds = () => {
   ];
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Facebook Ads Poznań | Kampanie Meta Ads | Fotz"
-        description="Kampanie Facebook Ads - leady, sprzedaż, remarketing. Precyzyjne targetowanie. Agencja Meta Ads Poznań od 1500 zł/mies."
+        title="Facebook Ads — Reklama na Facebooku dla Firm | Kampanie Meta Ads"
+        description="Facebook Ads — tworzenie i prowadzenie kampanii reklamowych na Facebooku. Targetowanie, kreacje, retargeting i optymalizacja ROAS. Fotz Studio."
         canonical="https://fotz.pl/performance-marketing/facebook-ads"
+        keywords="facebook ads polska, agencja facebook ads, kampanie facebook ads, reklamy facebook, meta ads polska, instagram ads polska, facebook ads dla firm, reklama na facebooku, facebook ads cennik, prowadzenie facebook ads, facebook ads agencja"
       />
 
       <ServiceSchema 
@@ -676,6 +679,28 @@ const FacebookAds = () => {
       </section>
 
       {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-heading font-bold mb-6">Facebook Ads — reklama na Facebooku i kampanie Meta Ads</h2>
+            <p className="text-muted-foreground mb-4">Facebook Ads to jeden z najpotężniejszych systemów reklamowych na świecie — umożliwia dotarcie do precyzyjnie określonych grup odbiorców według demografii, zainteresowań, zachowań i własnych list klientów (Custom Audiences). Kampanie Facebook Ads działają zarówno na Facebooku, jak i Instagramie, Messengerze i Audience Network.</p>
+            <p className="text-muted-foreground mb-6">Prowadzenie kampanii Facebook Ads wymaga wiedzy o strukturze kampanii (kampania → zestaw reklam → reklamy), testowaniu kreacji A/B, optymalizacji budżetu, remarketingu i analizie danych w Meta Business Suite. Reklama na Facebooku i możliwości targetowania są ogromne — kluczem jest właściwa strategia i ciągła optymalizacja.</p>
+            <h2 className="text-3xl font-heading font-bold mb-6">Kampanie Facebook Ads — formaty reklam i cele kampanii</h2>
+            <p className="text-muted-foreground mb-4">Formy reklamy na Facebooku: reklamy graficzne (single image), karuzele, reklamy wideo, kolekcje, reklamy lead (Lead Ads do zbierania kontaktów), reklamy dynamiczne dla e-commerce (DPA), Stories Ads i Reels Ads. Każdy format ma inne zastosowanie zależnie od celu kampanii.</p>
+            <p className="text-muted-foreground">Reklama na Facebooku dla firm lokalnych pozwala targetować odbiorców po lokalizacji — w promieniu kilometrów od Twojej siedziby. Formy reklamy na Facebooku można dostosować do każdego etapu lejka sprzedażowego: od budowania świadomości marki, przez generowanie leadów, po retargeting i zwiększenie sprzedaży. Sprawdź, jak kampanie Facebook Ads mogą rozwinąć Twój biznes.</p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <RelatedServices 
         currentService="facebook-ads"
         subtitle="Inne platformy reklamowe i usługi wspierające marketing w social media"
@@ -706,6 +731,7 @@ const FacebookAds = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

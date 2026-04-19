@@ -175,8 +175,8 @@ export default function AgencjaMarketinguInternetowego() {
   return (
     <Layout>
       <SEOHead
-        title="Agencja Marketingu Internetowego | SEO, SEM | Fotz"
-        description="Agencja marketingu internetowego - kampanie Google Ads, pozycjonowanie SEO, social media. Zwiększ widoczność online. Fotz Studio."
+        title="Agencja Marketingu Internetowego | Fotz Studio"
+        description="Agencja marketingu internetowego Fotz Studio — SEO, Google Ads, Social Media, content marketing dla firm. Skuteczne kampanie online, audyt i strategia…"
         canonical="https://fotz.pl/agencja-marketingu-internetowego"
         keywords="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing, performance marketing"
       />
@@ -684,6 +684,75 @@ export default function AgencjaMarketinguInternetowego() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Agencja marketingu internetowego — marketing online dla firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Agencja marketingu internetowego Fotz Studio to kompleksowe wsparcie obecności
+              online Twojej firmy. Oferujemy marketing internetowy w pełnym zakresie: SEO
+              i pozycjonowanie stron, kampanie Google Ads i Meta Ads, social media marketing,
+              content marketing i email marketing. Każda strategia marketingowa oparta jest
+              na danych i dostosowana do celów biznesowych klienta.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Marketing w internecie to dziś niezbędny element strategii każdej firmy.
+              Niezależnie czy prowadzisz sklep e-commerce, usługi lokalne czy firmę B2B —
+              agencja marketingu internetowego pomoże Ci dotrzeć do właściwej grupy
+              docelowej i zamienić ruch w klientów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO, SEM i marketing w mediach społecznościowych — skuteczny marketing online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Pozycjonowanie stron (SEO) to fundament długoterminowego sukcesu online.
+              Agencja marketingowa Fotz Studio buduje widoczność w Google poprzez audyt SEO,
+              optymalizację techniczną, tworzenie wartościowych treści i pozyskiwanie linków
+              (link building). SEM — kampanie płatne w wyszukiwarce — uzupełniają SEO
+              o natychmiastowe efekty i dokładne targetowanie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Marketing w mediach społecznościowych (Facebook, Instagram, LinkedIn, TikTok)
+              buduje społeczność wokół marki i generuje sprzedaż. Nasz zespół tworzy
+              strategię, produkuje treści i zarządza reklamami na wszystkich platformach.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strategia marketingowa i content marketing — marketing internetowy, który działa
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Skuteczny marketing internetowy zaczyna się od strategii. Fotz Studio opracowuje
+              kompleksowe strategie marketingowe uwzględniające: analizę konkurencji, persony
+              klientów, lejek sprzedażowy i dobór kanałów z najwyższym ROI. Content marketing
+              — artykuły, e-booki, wideo — buduje autorytet i organiczny ruch na stronie.
+            </p>
+            <p className="text-muted-foreground">
+              Jako agencja marketingu internetowego oferujemy pełne zarządzanie kampaniami
+              online z regularnym raportowaniem wyników. Transparentność i zorientowanie na
+              wyniki to nasze priorytety. Skontaktuj się z nami po bezpłatną konsultację
+              i audyt marketingowy Twojej firmy.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

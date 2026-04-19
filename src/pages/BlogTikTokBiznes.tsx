@@ -33,10 +33,11 @@ const BlogTikTokBiznes = () => {
   return (
     <>
       <SEOHead
-        title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku | Fotz Studio"
-        description="Kompletny poradnik TikTok dla firm. Dowiedz się jak tworzyć angażujące treści, budować społeczność i wykorzystać TikTok Ads do promocji biznesu."
+        title="TikTok dla Biznesu — Marketing i Reklamy na TikToku dla Firm"
+        description="TikTok dla biznesu — jak prowadzić marketing na TikToku, tworzyć treści i reklamować firmę. TikTok Ads i organiczny zasięg. Poradnik TikTok marketing dla…"
+        ogType="article"
         canonical="https://fotz.pl/social-media/tiktok-biznes"
-        keywords="TikTok dla biznesu, TikTok marketing, TikTok Ads, reklamy TikTok, social media marketing, wideo marketing"
+        keywords="tiktok dla biznesu, tiktok marketing, jak używać tiktoka w biznesie, tiktok reklama dla firm, tiktok ads biznes"
       />
       <ArticleSchema
         title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku"
@@ -369,6 +370,25 @@ const BlogTikTokBiznes = () => {
             </div>
           </div>
         </article>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">TikTok dla biznesu — dlaczego firmy nie mogą ignorować TikToka w 2025?</h2>
+              <p className="text-muted-foreground mb-6">TikTok to platforma z ponad 1 miliardem aktywnych użytkowników miesięcznie i najwyższym organicznym zasięgiem spośród wszystkich social media. Nawet nowe konta bez followersów mogą zdobyć miliony wyświetleń, jeśli treść jest angażująca. Dla firm celujących w grupę 18-35 lat TikTok to kanał obowiązkowy, ale coraz częściej wkraczają też starsze demografie.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">TikTok content i TikTok Ads dla firm — tworzenie treści i kampanie reklamowe</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio tworzy content na TikTok dla firm: krótkie wideo edukacyjne, behind-the-scenes, product demos, trendy i challenge nawiązujące do marki. Prowadzimy też kampanie TikTok Ads — In-Feed Ads, TopView, Branded Hashtag Challenge — z targetowaniem na właściwą grupę docelową.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">TikTok marketing dla Twojej firmy — skontaktuj się z Fotz Studio</h2>
+              <p className="text-muted-foreground">Czy Twoja firma jest gotowa na TikToka? Fotz Studio przeprowadzi audyt, zaproponuje strategię contentu i w razie potrzeby zajmie się produkcją wideo. Konsultacja TikTok marketing dostępna bezpłatnie. Skontaktuj się z nami, by nie pozostawać za konkurencją w tym dynamicznym kanale.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+            </div>
+            </div>
+
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="tiktok-dla-biznesu" maxArticles={3} />

@@ -1,553 +1,409 @@
-import { useState } from "react";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { motion, AnimatePresence } from "framer-motion";
-import { 
-  Search, 
-  Loader2, 
-  CheckCircle, 
-  XCircle, 
-  AlertTriangle,
-  Globe,
-  FileText,
-  Heading1,
-  Image,
-  Link2,
-  Share2,
-  ArrowRight,
-  RotateCcw,
-  Mail,
-  Download
-} from "lucide-react";
-import { z } from "zod";
 import { Link } from "react-router-dom";
-import { supabase } from "@/integrations/supabase/client";
-
-interface SEOResult {
-  url: string;
-  score: number;
-  categories: {
-    name: string;
-    score: number;
-    maxScore: number;
-    icon: React.ElementType;
-    items: {
-      label: string;
-      status: "good" | "warning" | "error";
-      value: string;
-      recommendation?: string;
-    }[];
-  }[];
-  recommendations: string[];
-}
-
-const urlSchema = z.string().url("Podaj prawidłowy adres URL (np. https://example.com)");
+import { motion } from "framer-motion";
+import { ArrowRight, CheckCircle2, TrendingUp, Zap, Globe, Search, BarChart3, Target, AlertTriangle, FileText } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FadeInView } from "@/components/FadeInView";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function AudytSEO() {
-  const [url, setUrl] = useState("");
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [result, setResult] = useState<SEOResult | null>(null);
-  const [error, setError] = useState("");
-  const [showEmailForm, setShowEmailForm] = useState(false);
-  const [email, setEmail] = useState("");
-  const [isSending, setIsSending] = useState(false);
-  const [emailSent, setEmailSent] = useState(false);
+  const breadcrumbs = [
+    { name: "Strona główna", url: "https://fotz.pl" },
+    { name: "Usługi", url: "https://fotz.pl/uslugi" },
+    { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
+    { name: "Audyt SEO", url: "https://fotz.pl/uslugi/audyt-seo" }
+  ];
 
-  const handleAnalyze = async () => {
-    setError("");
-    
-    // Validate URL
-    let formattedUrl = url.trim();
-    if (!formattedUrl.startsWith("http://") && !formattedUrl.startsWith("https://")) {
-      formattedUrl = "https://" + formattedUrl;
+  const auditAreas = [
+    { icon: Zap, title: "SEO techniczne", description: "Struktura URL, kody statusu, canonical, robots.txt, sitemap" },
+    { icon: FileText, title: "Treści i słowa kluczowe", description: "Analiza onpage, meta tagi, headingi, keyword density" },
+    { icon: Link, title: "Link building i autorytet", description: "Backlinki, referring domains, anchor text, profil linkowy" },
+    { icon: TrendingUp, title: "UX i Core Web Vitals", description: "Szybkość ładowania, responsywność, interaktywność" },
+    { icon: Target, title: "Konkurencja", description: "Analiza 10 konkurentów, ich strategie, słowa kluczowe" },
+    { icon: BarChart3, title: "Google Search Console", description: "Błędy crawlowania, coverage, performance, sitemap" },
+    { icon: Globe, title: "Google Analytics", description: "Ruch organiczny, bounce rate, sesje, konwersje" },
+    { icon: Search, title: "Lokalne SEO", description: "Google My Business, cytacje, opinie, pozycje lokalne" }
+  ];
+
+  const deliverables = [
+    { icon: FileText, title: "Raport PDF/Google Doc", description: "Szczegółowy, czytelny, z danymi i screenshotami" },
+    { icon: AlertTriangle, title: "Priorytetyzowana lista błędów", description: "Od najistotniejszych do najmniej ważnych dla SEO" },
+    { icon: Zap, title: "Rekomendacje krok po kroku", description: "Praktyczne porady, które możesz wdrożyć sam" },
+    { icon: CheckCircle2, title: "Konsultacja omówieniowa", description: "30 minut rozmowy ze specjalistą SEO online" }
+  ];
+
+  const packages = [
+    {
+      name: "Mini Audyt",
+      price: "299",
+      pages: "do 20 podstron",
+      features: [
+        "Analiza SEO na basic level",
+        "Raport PDF z 30-50 problemami",
+        "Brak konsultacji dodatkowej",
+        "Dostawa w 7 dni roboczych"
+      ],
+      highlight: false
+    },
+    {
+      name: "Standard Audyt",
+      price: "799",
+      pages: "do 100 podstron",
+      features: [
+        "Kompletna analiza wszystkich 8 obszarów",
+        "Raport PDF/Google Doc z 50-100 problemami",
+        "Lista priorytetów - od czego zacząć",
+        "Konsultacja omówieniowa 30 min",
+        "Dostawa w 48 godzin"
+      ],
+      highlight: true
+    },
+    {
+      name: "Full Audyt",
+      price: "1499",
+      pages: "pełna strona + konkurencja",
+      features: [
+        "Głębokie analizy wszystkich aspektów SEO",
+        "Raport rozszerzona analiza konkurencji",
+        "Kosztorys wdrożenia zmian",
+        "Konsultacja 1h - strategia wdrożenia",
+        "Dostawa w 72 godzin",
+        "Dostęp do dashboard ze wskaźnikami"
+      ],
+      highlight: false
     }
+  ];
 
-    const validation = urlSchema.safeParse(formattedUrl);
-    if (!validation.success) {
-      setError(validation.error.errors[0].message);
-      return;
+  const commonIssues = [
+    { icon: AlertTriangle, title: "Duplicate content", description: "Zduplikowana treść na wielu podstronach, canonical tags" },
+    { icon: Zap, title: "Wolne ładowanie", description: "Strona ładuje się powyżej 3 sekund, zła ocena Core Web Vitals" },
+    { icon: FileText, title: "Brakujące meta tagi", description: "Brak lub zbyt krótkie title, meta description, heading H1" },
+    { icon: Target, title: "Zerwane linki", description: "Wiele martwych linków wewnętrznych i zewnętrznych (404)" },
+    { icon: Globe, title: "Słaba responsywność", description: "Strona źle wyświetla się na mobilnych urządzeniach" },
+    { icon: BarChart3, title: "Cienka treść", description: "Krótkie artykuły, mało informacji, brak głębi na temat" }
+  ];
+
+  const faqItems = [
+    {
+      question: "Ile czasu trwa audyt SEO?",
+      answer: "Audyt Mini trwa 3-5 dni roboczych, Standard 2 dni, a Full Audyt 3 dni. Po tym czasie dostajesz raport i możesz wziąć udział w konsultacji omówieniowej. Cały proces obejmuje zarówno automatyczną analizę, jak i ręczne sprawdzenie elementy SEO."
+    },
+    {
+      question: "Co mam robić po audycie SEO?",
+      answer: "Wdrażasz rekomendacje z raportu. Zaczynasz od problemów oznaczonych jako priorytet (najistotniejszych dla pozycji). W pakiecie Standard i Full otrzymujesz konsultację, gdzie omawiamy strategię. Następnie możesz wdrażać zmiany sam lub zlecić nam pozycjonowanie."
+    },
+    {
+      question: "Czy mogę wdrożyć zmiany sam?",
+      answer: "Tak, audyt zawiera szczegółowe rekomendacje, które możesz wdrożyć sam (jeśli masz wiedzę technyczną). Jeśli chcesz profesjonalnego wsparcia, oferujemy usługę pozycjonowania SEO, gdzie my wdrażamy wszystkie zmiany i monitorujemy wyniki."
+    },
+    {
+      question: "Jaka jest różnica między audytem a pozycjonowaniem?",
+      answer: "Audyt SEO to jednorazowa analiza stanu Twojej strony - identyfikujemy problemy i dajemy wam raport. Pozycjonowanie (SEO) to długoterminowa usługa - my wdrażamy zmiany, monitorujemy wyniki w Google i ciągle optymalizujemy aż do osiągnięcia założonych pozycji."
+    },
+    {
+      question: "Jak często powinienem robić audyt SEO?",
+      answer: "Zalecamy audyt 1-2 razy w roku, lub jeśli wprowadzasz duże zmiany na stronie. Jeśli pracujesz z agencją SEO, robią regularny monitoring i raporty. Dla stron w dynamicznym branżach (e-commerce, news) warto robić audyt co 6 miesięcy."
+    },
+    {
+      question: "Co jeśli audyt nie wykaże błędów?",
+      answer: "Możliwe! Jeśli masz dobrze zoptymalizowaną stronę, raport to potwierdzi. Jednak zawsze są obszary do poprawy - np. budowanie linków, content marketing, czy optymalizacja do bardziej konkurencyjnych słów kluczowych. Konsultacja okaże kolejne kroki."
     }
-
-    setIsAnalyzing(true);
-
-    try {
-      const { data, error: fnError } = await supabase.functions.invoke("analyze-seo", {
-        body: { url: formattedUrl },
-      });
-
-      if (fnError) throw fnError;
-      
-      if (data) {
-        setResult(data);
-      }
-    } catch (err) {
-      console.error("SEO analysis error:", err);
-      setError("Nie udało się przeanalizować strony. Sprawdź czy adres jest poprawny i strona jest dostępna.");
-    } finally {
-      setIsAnalyzing(false);
-    }
-  };
-
-  const handleReset = () => {
-    setUrl("");
-    setResult(null);
-    setError("");
-    setShowEmailForm(false);
-    setEmailSent(false);
-  };
-
-  const handleSendReport = async () => {
-    if (!email || !result) return;
-    
-    setIsSending(true);
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: `Raport SEO - ${result.url}`,
-          from_name: "Fotz Studio - Audyt SEO",
-          email: email,
-          url: result.url,
-          score: result.score,
-          message: `Wynik audytu SEO dla ${result.url}: ${result.score}/100. Szczegółowy raport dostępny na fotz.pl/audyt-seo`,
-        }),
-      });
-      
-      const data = await response.json();
-      if (data.success) {
-        setEmailSent(true);
-      }
-    } catch {
-      setError("Błąd wysyłania raportu");
-    } finally {
-      setIsSending(false);
-    }
-  };
-
-  const getScoreColor = (score: number) => {
-    if (score >= 80) return "text-green-500";
-    if (score >= 50) return "text-yellow-500";
-    return "text-red-500";
-  };
-
-  const getScoreBg = (score: number) => {
-    if (score >= 80) return "bg-green-500";
-    if (score >= 50) return "bg-yellow-500";
-    return "bg-red-500";
-  };
-
-  const handleDownloadPDF = () => {
-    if (!result) return;
-    
-    const printContent = `
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <meta charset="UTF-8">
-        <title>Raport SEO - ${result.url}</title>
-        <style>
-          * { box-sizing: border-box; margin: 0; padding: 0; }
-          body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; color: #1a1a1a; line-height: 1.6; }
-          .header { text-align: center; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 2px solid #e5e5e5; }
-          .logo { font-size: 24px; font-weight: bold; color: #6366f1; margin-bottom: 8px; }
-          .header h1 { font-size: 28px; margin-bottom: 8px; }
-          .header p { color: #666; font-size: 14px; }
-          .score-section { text-align: center; margin: 40px 0; }
-          .score-circle { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 120px; border-radius: 50%; border: 8px solid ${result.score >= 80 ? '#22c55e' : result.score >= 50 ? '#eab308' : '#ef4444'}; font-size: 36px; font-weight: bold; color: ${result.score >= 80 ? '#22c55e' : result.score >= 50 ? '#eab308' : '#ef4444'}; }
-          .score-label { margin-top: 12px; font-size: 18px; color: #666; }
-          .category { margin-bottom: 30px; page-break-inside: avoid; }
-          .category-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #f5f5f5; border-radius: 8px; margin-bottom: 16px; }
-          .category-title { font-size: 16px; font-weight: 600; }
-          .category-score { font-weight: bold; color: #6366f1; }
-          .item { display: flex; align-items: flex-start; gap: 12px; padding: 8px 0; border-bottom: 1px solid #eee; }
-          .item:last-child { border-bottom: none; }
-          .status { width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0; margin-top: 2px; }
-          .status.good { background: #22c55e; }
-          .status.warning { background: #eab308; }
-          .status.error { background: #ef4444; }
-          .item-content { flex: 1; }
-          .item-label { font-weight: 500; font-size: 14px; }
-          .item-value { color: #666; font-size: 12px; margin-top: 2px; word-break: break-all; }
-          .item-recommendation { color: #ca8a04; font-size: 12px; margin-top: 4px; }
-          .recommendations { margin-top: 40px; padding: 20px; background: #fef3c7; border-radius: 8px; }
-          .recommendations h2 { font-size: 18px; margin-bottom: 16px; color: #92400e; }
-          .recommendations ol { padding-left: 20px; }
-          .recommendations li { margin-bottom: 8px; color: #78350f; }
-          .footer { margin-top: 40px; padding-top: 20px; border-top: 2px solid #e5e5e5; text-align: center; color: #666; font-size: 12px; }
-          .cta { background: #6366f1; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 30px; }
-          .cta h3 { margin-bottom: 8px; }
-          .cta p { opacity: 0.9; }
-          @media print { body { padding: 20px; } .category { page-break-inside: avoid; } }
-        </style>
-      </head>
-      <body>
-        <div class="header">
-          <div class="logo">FOTZ STUDIO</div>
-          <h1>Raport Audytu SEO</h1>
-          <p>Data: ${new Date().toLocaleDateString('pl-PL')} | URL: ${result.url}</p>
-        </div>
-        
-        <div class="score-section">
-          <div class="score-circle">${result.score}</div>
-          <div class="score-label">Wynik ogólny / 100</div>
-        </div>
-        
-        ${result.categories.map(cat => `
-          <div class="category">
-            <div class="category-header">
-              <span class="category-title">${cat.name}</span>
-              <span class="category-score">${cat.score}/${cat.maxScore}</span>
-            </div>
-            ${cat.items.map(item => `
-              <div class="item">
-                <div class="status ${item.status}"></div>
-                <div class="item-content">
-                  <div class="item-label">${item.label}</div>
-                  <div class="item-value">${item.value}</div>
-                  ${item.recommendation ? `<div class="item-recommendation">💡 ${item.recommendation}</div>` : ''}
-                </div>
-              </div>
-            `).join('')}
-          </div>
-        `).join('')}
-        
-        ${result.recommendations.length > 0 ? `
-          <div class="recommendations">
-            <h2>Główne rekomendacje</h2>
-            <ol>
-              ${result.recommendations.map(rec => `<li>${rec}</li>`).join('')}
-            </ol>
-          </div>
-        ` : ''}
-        
-        <div class="cta">
-          <h3>Chcesz poprawić te wyniki?</h3>
-          <p>Skontaktuj się z nami: fotz.pl/kontakt</p>
-        </div>
-        
-        <div class="footer">
-          <p>Raport wygenerowany przez Fotz Studio | fotz.pl | kontakt@fotz.pl</p>
-        </div>
-      </body>
-      </html>
-    `;
-    
-    const printWindow = window.open('', '_blank');
-    if (printWindow) {
-      printWindow.document.write(printContent);
-      printWindow.document.close();
-      setTimeout(() => {
-        printWindow.print();
-      }, 250);
-    }
-  };
-
-  const getStatusIcon = (status: "good" | "warning" | "error") => {
-    switch (status) {
-      case "good":
-        return <CheckCircle className="w-4 h-4 text-green-500" />;
-      case "warning":
-        return <AlertTriangle className="w-4 h-4 text-yellow-500" />;
-      case "error":
-        return <XCircle className="w-4 h-4 text-red-500" />;
-    }
-  };
+  ];
 
   return (
-    <Layout>
+    <>
       <SEOHead
-        title="Darmowy Audyt SEO Online | Sprawdź swoją stronę | Fotz Studio"
-        description="Sprawdź optymalizację SEO swojej strony za darmo. Automatyczny audyt analizuje title, meta description, nagłówki, Open Graph i więcej."
+        title="Audyt SEO | Profesjonalna analiza strony | fotz.pl"
+        description="Audyt SEO — szczegółowa analiza Twojej strony internetowej. Identyfikujemy błędy, które blokują Twoje pozycje w Google. Zamów audyt SEO!"
         canonical="https://fotz.pl/seo/audyt"
-        keywords="audyt seo, darmowy audyt seo, analiza seo, optymalizacja seo, sprawdź seo strony"
+        keywords="audyt seo, darmowy audyt seo, audyt seo online, audyt strony internetowej, analiza seo strony, audyt techniczny seo, bezpłatny audyt seo, audyt seo cena, sprawdź seo strony, audyt pozycjonowania, co to jest audyt seo, audyt seo co obejmuje"
       />
-
-      <section className="py-16 md:py-24 min-h-screen">
-        <div className="container-wide section-padding">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <span className="text-primary font-medium mb-2 block">Darmowe narzędzie</span>
-            <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Audyt SEO Online
-            </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Wpisz adres swojej strony, a nasz system automatycznie przeanalizuje kluczowe elementy SEO i wygeneruje raport z rekomendacjami.
-            </p>
+      <ServiceSchema
+        name="Audyt SEO"
+        description="Szczegółowa analiza strony internetowej pod kątem SEO. Identyfikujemy błędy techniczne, problemy z treścią i linkami."
+        areaServed={["PL"]}
+      />
+      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <Layout>
+        {/* Hero Section */}
+        <section className="relative min-h-[70vh] flex items-center justify-center bg-background overflow-hidden pt-24">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-background to-purple-600/10" />
+          <div className="container mx-auto px-4 relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center max-w-4xl mx-auto"
+            >
+              <span className="inline-block px-4 py-2 bg-blue-500/20 text-blue-400 rounded-full text-sm font-medium mb-6">
+                <Search className="inline-block w-4 h-4 mr-2" />
+                SEO Audits
+              </span>
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+                Audyt SEO — znajdź przyczyny{" "}
+                <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                  słabych wyników w Google
+                </span>
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Audyt SEO — darmowy audyt seo online i analiza seo strony internetowej. Audyt techniczny, on-page i off-page — dowiedz się, co blokuje Twoją stronę przed wysokimi pozycjami w Google. Bezpłatny audyt seo dla firm dostępny online.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  <Link to="/kontakt">
+                    Zamów audyt SEO
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <a href="#cennik">Zobacz cennik</a>
+                </Button>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-400 mb-2">87</div>
+                  <div className="text-sm text-muted-foreground">Średnio błędów SEO na stronę</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-purple-400 mb-2">78%</div>
+                  <div className="text-sm text-muted-foreground">Stron ma problemy techniczne</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-400 mb-2">48h</div>
+                  <div className="text-sm text-muted-foreground">Audyt gotowy w</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
+                  <div className="text-sm text-muted-foreground">Transparentny raport</div>
+                </div>
+              </div>
+            </motion.div>
           </div>
+        </section>
 
-          <AnimatePresence mode="wait">
-            {!result ? (
+        {/* What We Check Section */}
+        <FadeInView>
+          <section className="py-20 bg-muted/30">
+            <div className="container mx-auto px-4">
               <motion.div
-                key="form"
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="max-w-xl mx-auto"
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-12"
               >
-                {/* Input Form */}
-                <div className="bg-card rounded-2xl border border-border p-6 md:p-8">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Globe className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h2 className="font-heading font-semibold">Adres strony do analizy</h2>
-                      <p className="text-sm text-muted-foreground">Podaj URL strony, którą chcesz sprawdzić</p>
-                    </div>
-                  </div>
-
-                  <div className="space-y-4">
-                    <div>
-                      <Input
-                        type="url"
-                        value={url}
-                        onChange={(e) => {
-                          setUrl(e.target.value);
-                          setError("");
-                        }}
-                        placeholder="https://twoja-strona.pl"
-                        className={`h-12 text-base ${error ? "border-red-500" : ""}`}
-                        onKeyDown={(e) => e.key === "Enter" && handleAnalyze()}
-                      />
-                      {error && <p className="text-sm text-red-500 mt-2">{error}</p>}
-                    </div>
-
-                    <Button
-                      onClick={handleAnalyze}
-                      variant="hero"
-                      className="w-full h-12"
-                      disabled={!url.trim() || isAnalyzing}
-                    >
-                      {isAnalyzing ? (
-                        <>
-                          <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          Analizuję stronę...
-                        </>
-                      ) : (
-                        <>
-                          <Search className="w-5 h-5 mr-2" />
-                          Rozpocznij audyt
-                        </>
-                      )}
-                    </Button>
-                  </div>
-
-                  {/* Info */}
-                  <div className="mt-6 p-4 bg-secondary/50 rounded-lg">
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Co sprawdzamy:</strong> Title tag, Meta description, Nagłówki H1-H6, 
-                      Open Graph, Canonical URL, Alt teksty obrazów i więcej.
-                    </p>
-                  </div>
-                </div>
-
-                {/* Benefits */}
-                <div className="grid grid-cols-3 gap-4 mt-8">
-                  {[
-                    { icon: FileText, label: "Szczegółowy raport" },
-                    { icon: Search, label: "Rekomendacje SEO" },
-                    { icon: Mail, label: "Wyślij na email" },
-                  ].map((item) => (
-                    <div key={item.label} className="text-center p-4">
-                      <item.icon className="w-6 h-6 text-primary mx-auto mb-2" />
-                      <p className="text-sm text-muted-foreground">{item.label}</p>
-                    </div>
-                  ))}
-                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Co sprawdzamy w audycie?
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Kompleksowa analiza 8 kluczowych obszarów SEO na Twojej stronie
+                </p>
               </motion.div>
-            ) : (
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {auditAreas.map((area, index) => (
+                  <motion.div
+                    key={area.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="bg-card border border-border rounded-2xl p-6 hover:border-blue-500/50 transition-colors"
+                  >
+                    <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4">
+                      <area.icon className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">{area.title}</h3>
+                    <p className="text-muted-foreground text-sm">{area.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
+        {/* Deliverables Section */}
+        <FadeInView>
+          <section className="py-20 bg-background">
+            <div className="container mx-auto px-4">
               <motion.div
-                key="result"
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="max-w-4xl mx-auto"
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-12"
               >
-                {/* Score Header */}
-                <div className="bg-card rounded-2xl border border-border p-6 md:p-8 mb-8">
-                  <div className="flex flex-col md:flex-row items-center gap-6">
-                    {/* Score Circle */}
-                    <div className="relative w-32 h-32">
-                      <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="45"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="10"
-                          className="text-secondary"
-                        />
-                        <circle
-                          cx="50"
-                          cy="50"
-                          r="45"
-                          fill="none"
-                          strokeWidth="10"
-                          strokeLinecap="round"
-                          className={getScoreBg(result.score)}
-                          style={{
-                            strokeDasharray: `${result.score * 2.83} 283`,
-                          }}
-                        />
-                      </svg>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className={`text-3xl font-bold ${getScoreColor(result.score)}`}>
-                          {result.score}
-                        </span>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Co dostaniesz?
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Konkretne materiały, które będziesz mógł wdrożyć sam lub razem z nami
+                </p>
+              </motion.div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {deliverables.map((item, index) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="bg-card border border-border rounded-2xl p-6"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <item.icon className="w-6 h-6 text-blue-400" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
+                        <p className="text-muted-foreground text-sm">{item.description}</p>
                       </div>
                     </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </FadeInView>
 
-                    <div className="text-center md:text-left flex-1">
-                      <h2 className="text-2xl font-heading font-bold mb-2">Wynik audytu SEO</h2>
-                      <p className="text-muted-foreground mb-2 break-all">{result.url}</p>
-                      <p className={`font-medium ${getScoreColor(result.score)}`}>
-                        {result.score >= 80 && "Bardzo dobry wynik! "}
-                        {result.score >= 50 && result.score < 80 && "Wynik do poprawy. "}
-                        {result.score < 50 && "Wynik wymaga uwagi. "}
-                        Jest kilka elementów, które możesz poprawić.
-                      </p>
-                    </div>
+        {/* Pricing Section */}
+        <FadeInView>
+          <section className="py-20 bg-muted/30" id="cennik">
+            <div className="container mx-auto px-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Pakiety audytu SEO
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Wybierz pakiet dostosowany do rozmiaru Twojej strony i potrzeb
+                </p>
+              </motion.div>
 
-                    <div className="flex flex-col gap-2">
-                      <Button variant="outline" onClick={handleReset}>
-                        <RotateCcw className="w-4 h-4 mr-2" />
-                        Nowy audyt
-                      </Button>
-                      <Button variant="hero" onClick={handleDownloadPDF}>
-                        <Download className="w-4 h-4 mr-2" />
-                        Pobierz PDF
-                      </Button>
-                      <Button variant="ghost" onClick={() => setShowEmailForm(true)}>
-                        <Mail className="w-4 h-4 mr-2" />
-                        Wyślij raport
-                      </Button>
-                    </div>
-                  </div>
-
-                  {/* Email Form */}
-                  <AnimatePresence>
-                    {showEmailForm && !emailSent && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        className="mt-6 pt-6 border-t border-border overflow-hidden"
-                      >
-                        <div className="flex gap-2">
-                          <Input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Twój adres email"
-                            className="flex-1"
-                          />
-                          <Button onClick={handleSendReport} disabled={isSending || !email}>
-                            {isSending ? <Loader2 className="w-4 h-4 animate-spin" /> : "Wyślij"}
-                          </Button>
-                        </div>
-                      </motion.div>
+              <div className="grid md:grid-cols-3 gap-6">
+                {packages.map((pkg, index) => (
+                  <motion.div
+                    key={pkg.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className={`rounded-2xl p-8 relative ${
+                      pkg.highlight
+                        ? "bg-gradient-to-br from-blue-600/20 to-purple-600/20 border-2 border-blue-500/50"
+                        : "bg-card border border-border"
+                    }`}
+                  >
+                    {pkg.highlight && (
+                      <div className="absolute top-4 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        REKOMENDOWANY
+                      </div>
                     )}
-                    {emailSent && (
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        className="mt-6 pt-6 border-t border-border"
-                      >
-                        <div className="flex items-center gap-2 text-green-500">
-                          <CheckCircle className="w-5 h-5" />
-                          <span>Raport został wysłany na podany adres email</span>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-
-                {/* Categories */}
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
-                  {result.categories.map((category) => (
-                    <div key={category.name} className="bg-card rounded-xl border border-border p-5">
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                            <category.icon className="w-5 h-5 text-primary" />
-                          </div>
-                          <h3 className="font-heading font-semibold">{category.name}</h3>
-                        </div>
-                        <span className={`font-bold ${getScoreColor((category.score / category.maxScore) * 100)}`}>
-                          {category.score}/{category.maxScore}
-                        </span>
-                      </div>
-                      <div className="space-y-3">
-                        {category.items.map((item, idx) => (
-                          <div key={idx} className="flex items-start gap-2">
-                            {getStatusIcon(item.status)}
-                            <div className="flex-1 min-w-0">
-                              <p className="text-sm font-medium">{item.label}</p>
-                              <p className="text-xs text-muted-foreground truncate">{item.value}</p>
-                              {item.recommendation && (
-                                <p className="text-xs text-yellow-600 dark:text-yellow-400 mt-1">
-                                  💡 {item.recommendation}
-                                </p>
-                              )}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">{pkg.name}</h3>
+                    <p className="text-muted-foreground text-sm mb-4">{pkg.pages}</p>
+                    <div className="mb-6">
+                      <span className="text-4xl font-bold text-foreground">{pkg.price}</span>
+                      <span className="text-muted-foreground"> zł</span>
                     </div>
-                  ))}
-                </div>
-
-                {/* Recommendations */}
-                {result.recommendations.length > 0 && (
-                  <div className="bg-card rounded-xl border border-border p-6 mb-8">
-                    <h3 className="font-heading font-semibold text-lg mb-4">
-                      Główne rekomendacje
-                    </h3>
-                    <ul className="space-y-3">
-                      {result.recommendations.map((rec, idx) => (
-                        <li key={idx} className="flex items-start gap-3">
-                          <span className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-sm font-medium text-primary flex-shrink-0">
-                            {idx + 1}
-                          </span>
-                          <span className="text-muted-foreground">{rec}</span>
+                    <ul className="space-y-3 mb-8">
+                      {pkg.features.map((feature) => (
+                        <li key={feature} className="flex items-start gap-3 text-sm text-muted-foreground">
+                          <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
+                          {feature}
                         </li>
                       ))}
                     </ul>
-                  </div>
-                )}
+                    <Button asChild className="w-full" variant={pkg.highlight ? "default" : "outline"}>
+                      <Link to="/kontakt">Zarezerwuj audyt</Link>
+                    </Button>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </FadeInView>
 
-                {/* CTA */}
-                <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl border border-primary/20 p-6 md:p-8 text-center">
-                  <h3 className="text-xl font-heading font-bold mb-2">
-                    Chcesz poprawić te wyniki?
-                  </h3>
-                  <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                    Nasi specjaliści SEO mogą pomóc Ci zoptymalizować stronę i poprawić pozycje w Google. Umów bezpłatną konsultację.
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Link to="/kontakt">
-                      <Button variant="hero" size="lg">
-                        Umów konsultację
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
-                    </Link>
-                    <Link to="/seo/pozycjonowanie">
-                      <Button variant="outline" size="lg">
-                        Zobacz ofertę SEO
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
+        {/* Common Issues Section */}
+        <FadeInView>
+          <section className="py-20 bg-background">
+            <div className="container mx-auto px-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Najczęstsze błędy SEO
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Problemy, które prawie na pewno znaleźliśmy już na setce stron
+                </p>
               </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
-      </section>
-    </Layout>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {commonIssues.map((issue, index) => (
+                  <motion.div
+                    key={issue.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="bg-card border border-border rounded-2xl p-6"
+                  >
+                    <div className="w-10 h-10 bg-red-500/20 rounded-lg flex items-center justify-center mb-4">
+                      <issue.icon className="w-5 h-5 text-red-400" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground mb-2">{issue.title}</h3>
+                    <p className="text-muted-foreground text-sm">{issue.description}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
+        {/* FAQ Section */}
+        <FadeInView>
+          <section className="py-20 bg-muted/30">
+            <div className="container mx-auto px-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  Pytania i odpowiedzi
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Wszystko, co chciałbyś wiedzieć o audytach SEO
+                </p>
+              </motion.div>
+
+              <div className="max-w-3xl mx-auto">
+                <Accordion type="single" collapsible>
+                  {faqItems.map((item, index) => (
+                    <AccordionItem key={index} value={`item-${index}`}>
+                      <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">{item.answer}</AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
+          </section>
+        </FadeInView>
+
+        <FAQSchema items={faqItems} />
+        <ContactSection heading="Zamów audyt SEO" subheading="Raport gotowy w 48 godzin. Bezpłatna konsultacja omówieniowa w cenie." />
+      </Layout>
+    </>
   );
 }

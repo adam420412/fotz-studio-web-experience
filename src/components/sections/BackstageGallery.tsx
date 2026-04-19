@@ -186,6 +186,7 @@ export const BackstageGallery = ({
             {/* Close Button */}
             <button
               onClick={closeLightbox}
+              aria-label="Zamknij galerię"
               className="absolute top-4 right-4 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
             >
               <X className="w-6 h-6 text-white" />
@@ -194,12 +195,14 @@ export const BackstageGallery = ({
             {/* Navigation Arrows */}
             <button
               onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
+              aria-label="Poprzednie zdjęcie"
               className="absolute left-4 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
             >
               <ChevronLeft className="w-8 h-8 text-white" />
             </button>
             <button
               onClick={(e) => { e.stopPropagation(); goToNext(); }}
+              aria-label="Następne zdjęcie"
               className="absolute right-4 z-50 p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
             >
               <ChevronRight className="w-8 h-8 text-white" />
@@ -215,7 +218,7 @@ export const BackstageGallery = ({
               className="relative max-w-[90vw] max-h-[85vh]"
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <img loading="lazy"
                 src={imagesToShow[currentIndex].src}
                 alt={imagesToShow[currentIndex].title}
                 className="max-w-full max-h-[85vh] object-contain rounded-lg"

@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweTarnow = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Tarnowie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Tarnów to ważny ośrodek przemysłu chemicznego i centrum gospodarcze wschodniej Małopolski. Lokalne firmy z branży przemysłowej, handlowej i usługowej mogą znacznie zwiększyć zasięg dzięki profesjonalnej stronie internetowej."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweTarnow = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Tarnów | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Tarnów. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tarnowa."
+        title="Strony Internetowe Tarnów | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Tarnów — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Tarnowa. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/tarnow"
-        keywords="strony internetowe tarnów, tworzenie stron www tarnów, projektowanie stron tarnów, sklepy internetowe tarnów"
+        keywords="strony internetowe tarnów, tworzenie stron tarnów, strony www tarnów, projektowanie stron tarnów"
       />
       
       <ServiceSchema name="Strony Internetowe Tarnów" description="Profesjonalne tworzenie stron internetowych dla firm z Tarnowa." provider="FOTZ Studio" areaServed="Tarnów" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Tarnów", url: "https://fotz.pl/uslugi/strony-internetowe/tarnow" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -180,7 +184,7 @@ const StronyInternetoweTarnow = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,56 @@ const StronyInternetoweTarnow = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Tarnów — tworzenie stron www dla firm z Małopolski Wschodniej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tarnów to trzecie co do wielkości miasto Małopolski i ważny ośrodek przemysłowy — centrum chemii (Azoty Tarnów), przemysłu maszynowego i rosnącego sektora usług. Firmy z Tarnowa i Małopolski Wschodniej (Nowy Sącz, Nowy Targ, Rzeszów) coraz aktywniej szukają klientów w internecie — i potrzebują do tego profesjonalnych stron www.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Tarnowa i całej Małopolski Wschodniej. Zdalny model współpracy, projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla przemysłu i MSP z Tarnowa
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Firmy z sektora chemicznego i maszynowego potrzebują profesjonalnych stron B2B z katalogiem produktów, certyfikatami REACH/ISO i formularzami kontaktowymi dla klientów instytucjonalnych. Projektujemy strony, które budują wiarygodność w środowisku przemysłowym.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla lokalnych firm usługowych, gabinetów i restauracji z Tarnowa tworzymy przystępne strony wizytówkowe z lokalną optymalizacją SEO. Cena od 2000 zł, realizacja 3–4 tygodnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla firm z Tarnowa — lokalna widoczność w Małopolsce
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizacja pod frazy lokalne — „usługa + Tarnów", „usługa + Małopolska" — to najskuteczniejszy sposób na lokalnych klientów. Google Moja Firma, spójność NAP, lokalne linki. Dla firm działających w całej Małopolsce Wschodniej rozszerzamy zasięg o Kraków, Nowy Sącz i Rzeszów.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Firmy z Tarnowa i Małopolski Wschodniej mogą liczyć na strony, które sprzedają.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

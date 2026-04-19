@@ -1,7 +1,9 @@
 import { useState, useMemo } from "react";
+import { Link } from 'react-router-dom';
 import { Layout } from "@/components/layout/Layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";
+import { WebPageSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -49,6 +51,7 @@ import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -779,13 +782,34 @@ export default function Cennik() {
   };
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Cennik Usług Marketingowych | Konfigurator | Fotz Studio"
-        description="Skonfiguruj pakiet usług marketingowych: strony internetowe, social media, SEO, produkcja video. Interaktywny konfigurator cen online."
+        title="Cennik Usług Marketingowych | Fotz Studio"
+        description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo. Transparentne ceny…"
         canonical="https://fotz.pl/cennik"
         keywords="cennik marketing, cennik usług, konfigurator cen, strony internetowe cena, social media cena, SEO cena"
       />
+      <WebPageSchema
+        title="Cennik Usług Marketingowych — Fotz Studio"
+        description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo."
+        url="https://fotz.pl/cennik"
+      />
+      <BreadcrumbSchema items={[
+        { name: "Strona główna", url: "https://fotz.pl" },
+        { name: "Cennik", url: "https://fotz.pl/cennik" },
+      ]} />
+      <FAQSchema items={[
+        { question: "Ile kosztuje strona internetowa w Fotz Studio?", answer: "Strona wizytówkowa od 3000 zł, strona firmowa z CMS od 5000 zł, sklep internetowy od 8000 zł, rozbudowany portal od 15000 zł. Każda wycena jest indywidualna i bezpłatna — zależy od liczby podstron, funkcjonalności i projektu graficznego." },
+        { question: "Ile kosztuje pozycjonowanie SEO miesięcznie?", answer: "Pozycjonowanie lokalne zaczyna się od 800 zł/mies., SEO ogólnopolskie od 1500 zł/mies., a SEO dla sklepów e-commerce od 2000 zł/mies. Cena zależy od konkurencyjności branży, liczby fraz kluczowych i aktualnego stanu strony." },
+        { question: "Ile kosztują kampanie Google Ads?", answer: "Obsługa kampanii Google Ads od 500 zł miesięcznie plus budżet reklamowy (minimum 1000 zł/mies. zalecane). Budżet reklamowy ustalamy indywidualnie na podstawie branży, celów i konkurencji w Google." },
+        { question: "Czy mogę wybrać pakiet miesięczny bez długiej umowy?", answer: "Tak, w Fotz Studio nie wymagamy długoterminowych umów. Oferujemy elastyczne pakiety miesięczne z 30-dniowym okresem wypowiedzenia. Wierzymy, że klienci zostają z nami dzięki wynikom, nie umowom." },
+        { question: "Co zawiera cena obsługi social media?", answer: "Pakiet podstawowy (od 1200 zł/mies.) obejmuje 3 posty tygodniowo, grafikę, copywriting i harmonogram publikacji. Pakiet premium (od 2500 zł/mies.) dodaje Stories, Reels, moderację komentarzy i raportowanie. Pełne zarządzanie z reklamami od 3500 zł/mies." },
+        { question: "Czy wycena usług jest bezpłatna?", answer: "Tak, wycena i konsultacja wstępna są całkowicie bezpłatne i niezobowiązujące. Przygotowujemy ofertę w ciągu 48 godzin od wypełnienia briefu lub rozmowy telefonicznej." },
+        { question: "Jakie formy płatności akceptujecie?", answer: "Akceptujemy przelew bankowy, płatność kartą i płatności ratalne dla większych projektów. Dla usług abonamentowych wystawiamy faktury miesięczne z 14-dniowym terminem płatności." },
+        { question: "Czy mogę łączyć usługi w pakiet z rabatem?", answer: "Tak, oferujemy rabaty przy łączeniu usług. Np. SEO + Google Ads = 10% rabatu, kompleksowa obsługa (strona + SEO + social media) = do 20% rabatu. Im szerszy zakres współpracy, tym korzystniejsze warunki cenowe." },
+      ]} />
 
       {/* Hero */}
       <section className="relative pt-32 pb-8 bg-gradient-to-b from-background to-secondary/20 overflow-hidden">
@@ -1491,6 +1515,76 @@ export default function Cennik() {
           </Card>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Cennik usług marketingowych — transparentne ceny bez ukrytych opłat
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Cennik usług marketingowych Fotz Studio jest transparentny i elastyczny.
+              Rozumiemy, że każda firma ma inne potrzeby i budżet — dlatego oferujemy
+              zarówno pakiety stałe, jak i wyceny indywidualne. Ile kosztuje marketing
+              internetowy? To zależy od zakresu, intensywności działań i branży.
+              Poniżej znajdziesz orientacyjne ceny naszych usług.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Nasze ceny uwzględniają pełen zakres pracy — od strategii, przez
+              realizację, po raportowanie wyników. Nie doliczamy opłat za komunikację,
+              spotkania ani standardowe poprawki. Przejrzyste zasady współpracy
+              to nasz standard.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Ile kosztuje SEO, strona internetowa i kampanie Google Ads?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Koszt pozycjonowania SEO dla małej firmy lokalnej zaczyna się od ok. 800 zł
+              miesięcznie. Strony internetowe wyceniamy od 3000 zł za prostą stronę
+              wizytówkową do 20 000+ zł za rozbudowany portal z CMS. Kampanie Google Ads
+              — obsługa od 500 zł miesięcznie (minimalny budżet reklamowy ustalamy
+              osobno, zależy od branży i celów).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługa social media (Facebook, Instagram) — pakiety od 1200 zł miesięcznie
+              za 3 posty tygodniowo do 3500+ zł za pełne zarządzanie z reklamami.
+              Produkcja wideo — reelsy od 500 zł, profesjonalne spoty reklamowe
+              od 3000 zł. Każda wycena jest indywidualna i bezpłatna.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Pakiety marketingowe i ROI z inwestycji — marketing jako koszt czy inwestycja?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Marketing to inwestycja, nie koszt — pod warunkiem, że jest dobrze
+              zaplanowany i mierzony. Fotz Studio mierzy ROI wszystkich kampanii
+              i regularnie raportuje wyniki. Klient zawsze wie, ile zarabia na każdej
+              złotówce zainwestowanej w marketing.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami po bezpłatną wycenę usług marketingowych
+              dostosowaną do potrzeb Twojej firmy. Ofertę przygotowujemy w ciągu 48 godzin
+              od wypełnienia briefu. Bez zobowiązań, bez ukrytych kosztów.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 }

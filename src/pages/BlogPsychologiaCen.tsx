@@ -33,8 +33,9 @@ export default function BlogPsychologiaCen() {
   return (
     <Layout>
       <SEOHead
-        title="Psychologia cen - jak ustalać ceny, które sprzedają 2025 | FOTZ Studio"
-        description="Psychologia cen w praktyce: kotwiczenie, charm pricing, decoy effect. Poznaj techniki cenowe, które zwiększają konwersję i wartość koszyka."
+        title="Psychologia Cen — Strategie Cenowe, które Zwiększają Sprzedaż"
+        description="Psychologia cen w marketingu — strategie cenowe, efekt zakotwiczenia, ceny .99 i bundling. Jak psychologia cenowa zwiększa konwersję i sprzedaż. Fotz Studio."
+        ogType="article"
         canonical="https://fotz.pl/blog/psychologia-cen"
         keywords="psychologia cen, pricing psychology, ustalanie cen, kotwiczenie cen, charm pricing, strategia cenowa"
       />
@@ -96,7 +97,7 @@ export default function BlogPsychologiaCen() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2071"
               alt="Psychologia cen - strategie cenowe"
               className="w-full rounded-2xl aspect-video object-cover"
@@ -340,6 +341,25 @@ export default function BlogPsychologiaCen() {
           </div>
         </div>
       </section>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Psychologia cen i strategie cenowe — jak cena wpływa na decyzje zakupowe?</h2>
+              <p className="text-muted-foreground mb-6">Psychologia cen to fascynujące pole badań pokazujące, że cena to nie tylko liczba — to sygnał wartości, jakości i pozycjonowania marki. Ceny kończące się na .99 (charm pricing), efekt zakotwiczenia (wysoka cena referencyjna), bundling (pakietowanie usług) i social proof cenowy ("95% klientów wybiera pakiet Pro") to techniki, które realnie zwiększają konwersję.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Optymalizacja cennika i stron produktowych — jak poprawić konwersję cenową</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio projektuje strony cennikowe i strony produktowe z wykorzystaniem zasad psychologii cen. Testujemy różne układy cennika, sposoby prezentacji pakietów i CTA, by maksymalizować konwersję. Optymalizacja strony cenowej często daje szybkie wyniki bez zwiększania ruchu.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Optymalizacja konwersji Twojej strony z Fotz Studio</h2>
+              <p className="text-muted-foreground">Czy Twoja strona dobrze konwertuje ruch w klientów? Fotz Studio przeprowadza audyt konwersji (CRO) i wdraża rekomendacje — w tym optymalizację cennika, stron produktowych i ścieżki zakupowej. Skontaktuj się z nami po bezpłatny audyt konwersji.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+            </div>
+            </div>
+
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="psychologia-cen" />

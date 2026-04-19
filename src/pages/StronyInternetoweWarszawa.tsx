@@ -32,7 +32,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -61,6 +61,7 @@ const StronyInternetoweWarszawa = () => {
     { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
     { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Znamy specyfikę największego rynku biznesowego w Polsce. Tworzymy strony, które wyróżniają się wśród dziesiątek tysięcy warszawskich firm w wynikach Google." },
   ];
 
   const pricing = [
@@ -164,7 +165,8 @@ const StronyInternetoweWarszawa = () => {
     paragraphs: [
       "W dynamicznie rozwijającym się świecie cyfrowym, strona internetowa stała się kluczowym elementem każdej firmy. Dla biznesów z Warszawy, konkurencyjnego rynku pełnego innowacji, profesjonalna strona www to nie opcja, ale konieczność.",
       "Specjalizujemy się w tworzeniu nowoczesnych stron internetowych, które nie tylko wyglądają profesjonalnie, ale przede wszystkim skutecznie pozyskują klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Warszawa skupia największą koncentrację firm w Polsce – od globalnych korporacji po dynamiczne start-upy. Na tak wymagającym rynku strona internetowa musi działać bezbłędnie i konwertować już od pierwszego dnia."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -172,10 +174,10 @@ const StronyInternetoweWarszawa = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Warszawa | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Warszawa. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Warszawy."
+        title="Strony Internetowe Warszawa | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Warszawa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Warszawy. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/warszawa"
-        keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa"
+        keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa, wykonanie strony internetowej warszawa, responsywna strona www warszawa, wordpress warszawa, nowoczesne strony www warszawa, agencja stron internetowych warszawa"
       />
       
       <ServiceSchema 
@@ -196,6 +198,9 @@ const StronyInternetoweWarszawa = () => {
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero Section */}
@@ -278,7 +283,7 @@ const StronyInternetoweWarszawa = () => {
                 className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-4"
               >
                 <strong className="text-foreground">Na konkurencyjnym rynku warszawskim liczy się każdy detal.</strong>{" "}
-                Tworzymy strony www, które wyróżniają Twoją firmę i skutecznie pozyskują klientów.
+                Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Warszawa w technologiach React, Next.js i WordPress, które wyróżniają Twoją firmę i skutecznie pozyskują klientów.
               </motion.p>
 
               <motion.div 
@@ -384,7 +389,7 @@ const StronyInternetoweWarszawa = () => {
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
                     <div className="aspect-video overflow-hidden">
-                      <img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                      <img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                     </div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
@@ -429,6 +434,112 @@ const StronyInternetoweWarszawa = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Warszawa — tworzenie stron www dla warszawskich firm
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Warszawa to największy rynek biznesowy w Polsce — prawie 400 000 zarejestrowanych
+              przedsiębiorstw, siedziby PKO BP, PZU, Orlenu i dziesiątek międzynarodowych korporacji.
+              To też miasto, w którym wyrosły globalne startupy: OLX, Docplanner, Packhelp, Brainly.
+              W tak konkurencyjnym środowisku profesjonalna strona internetowa nie jest opcją —
+              jest koniecznością. Tworzenie stron www w Warszawie to nasza codzienna praca.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy zarówno duże firmy, jak i freelancerów czy małe biznesy z Woli, Mokotowa,
+              Ursynowa czy Pragi. Każdą stronę internetową projektujemy indywidualnie — bez gotowych
+              szablonów, bez powtarzających się układów. Strony dla firm z Warszawy budujemy
+              w technologiach React, Next.js i WordPress Warszawa, które zapewniają błyskawiczne ładowanie i doskonałą
+              optymalizację pod algorytmy Google. Nowoczesna strona www to fundament skutecznego marketingu online.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Dlaczego firmy z Warszawy potrzebują silnej strony www?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Warszawski rynek jest nasycony — w każdej branży działa kilkuset konkurentów walczących
+              o tę samą grupę klientów. Gdy potencjalny klient szuka usługi w Google, trafia do
+              pierwszych trzech wyników. Strona, która nie jest zoptymalizowana pod SEO, nie istnieje
+              dla większości klientów. Dlatego każdą stronę internetową dla firm z Warszawy budujemy
+              z myślą o pozycjonowaniu od pierwszego dnia projektu.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Pracujemy zdalnie — spotkania i konsultacje odbywają się przez Google Meet lub Zoom,
+              a wszystkie etapy projektu są dostępne online w czasie rzeczywistym. Mimo braku
+              fizycznego biura w Warszawie, nasi klienci mają pełen wgląd w postęp prac przez
+              całą dobę. Ten model sprawdza się doskonale w dynamicznym środowisku stolicy.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony internetowe dla różnych sektorów warszawskiego rynku
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Warszawa to mozaika sektorów. Tworzymy strony internetowe dla firm prawniczych
+              z centrum, agencji nieruchomości z Wilanowa, restauracji na Starym Mieście,
+              kancelarii podatkowych z Mokotowa i startupów technologicznych z Mordoru.
+              Każda branża ma inne potrzeby — od rozbudowanych systemów rezerwacji po proste
+              strony prezentacyjne z formularzem kontaktowym.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Szczególnym wyzwaniem dla warszawskich firm jest wielojęzyczność — część naszych
+              klientów ze stolicy potrzebuje stron w kilku wersjach językowych (PL/EN/DE/UK),
+              by obsługiwać klientów zagranicznych lub expat community. Projektujemy i kodujemy
+              wielojęzyczne strony www bez kompromisów w zakresie wydajności i pozycjonowania.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Proces tworzenia strony www — jak wygląda współpraca?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Zaczynamy od bezpłatnej konsultacji, podczas której poznajemy Twój biznes, grupę
+              docelową i cele strony. Następnie przygotowujemy projekt graficzny w Figmie —
+              widzisz dokładnie, jak będzie wyglądać strona, zanim powstanie jedna linia kodu.
+              Po akceptacji projektu przechodzimy do wdrożenia w wybranej technologii.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Standardowy projekt strony internetowej dla firmy z Warszawy trwa 3–6 tygodni.
+              W tym czasie dostarczamy: projekt UX/UI, responsywną stronę www, podstawową
+              optymalizację SEO (meta tagi, schema, sitemap, prędkość), szkolenie z obsługi CMS
+              i 30-dniowy support po wdrożeniu. Strony internetowe dla warszawskich firm
+              przekazujemy z pełną dokumentacją i dostępem administracyjnym.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalne SEO dla firm z Warszawy — znajdź się w Google Maps
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Dla firm z lokalną obsługą klientów — gabinetów, restauracji, salonów, kancelarii —
+              kluczowe jest pojawienie się w wynikach lokalnych Google. Optymalizujemy strony
+              pod frazy z geolokalizacją („usługa + Warszawa", „usługa + Mokotów") i integrujemy
+              je z profilem Google Moja Firma. To podwójna widoczność: w organicznych wynikach
+              i w mapach Google — bezpłatny ruch od klientów w Twojej okolicy.
+            </p>
+            <p className="text-muted-foreground">
+              Jeśli szukasz partnera do tworzenia strony internetowej dla firmy z Warszawy,
+              skontaktuj się z nami. Bezpłatna wycena w ciągu 24 godzin, projekt w 3–6 tygodni,
+              gwarancja satysfakcji na każdym etapie. Dziesiątki firm ze stolicy już nam zaufały —
+              dołącz do nich i zacznij pozyskiwać klientów przez internet.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Layout } from '@/components/layout/Layout';
@@ -41,15 +42,80 @@ export default function Akademia() {
     return (
       <>
         <SEOHead
-          title="Akademia FOTZ | Materiały Edukacyjne | Fotz Studio"
-          description="Akademia FOTZ - e-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego. Ucz się od ekspertów i rozwijaj swoje umiejętności."
-          canonical="https://fotz.pl/akademia/panel"
+          title="Akademia FOTZ — Kursy i Materiały Edukacyjne z Marketingu Online"
+          description="Akademia FOTZ — kursy marketingowe, materiały edukacyjne, e-booki i webinary o SEO, Google Ads, social media i content marketingu. Nauka marketingu online…"
+          canonical="https://fotz.pl/zasoby"
           noIndex={true}
         />
         <Layout>
           <div className="min-h-screen flex items-center justify-center">
             <Loader2 className="w-8 h-8 animate-spin text-primary" />
           </div>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Akademia FOTZ — edukacja marketingowa dla firm i marketerów
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Akademia FOTZ to platforma edukacyjna Fotz Studio, na której znajdziesz
+              kursy, materiały wideo, e-booki i checklisty z marketingu online.
+              Edukujemy właścicieli firm, marketerów i freelancerów, którzy chcą
+              lepiej rozumieć SEO, Google Ads, social media marketing i content marketing.
+              Wiedza praktyczna oparta na realnych projektach — bez zbędnej teorii.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Akademia marketingowa online to inwestycja w kompetencje, które zwracają
+              się wielokrotnie. Firmy, które rozumieją mechanizmy marketingu internetowego,
+              podejmują lepsze decyzje, efektywniej współpracują z agencjami i osiągają
+              wyższy ROI ze swoich działań marketingowych.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Kursy SEO, Google Ads i social media — materiały edukacyjne z Akademii FOTZ
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              W Akademii FOTZ znajdziesz materiały edukacyjne z zakresu: SEO
+              i pozycjonowania stron (od podstaw po zaawansowane techniki link buildingu),
+              kampanii Google Ads i Meta Ads (struktura, optymalizacja, remarketing),
+              content marketingu i copywritingu, social media marketingu i analityki webowej
+              (Google Analytics 4, Search Console). Wszystkie kursy prowadzone przez
+              praktyków z Fotz Studio.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              E-booki, checklisty i szablony z Akademii FOTZ to gotowe narzędzia
+              do wdrożenia w swojej firmie od razu po pobraniu. Praktyczne, konkretne,
+              oparte na najnowszych danych i trendach rynkowych.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Nauka marketingu online — samodzielnie czy z agencją?
+            </h2>
+            <p className="text-muted-foreground">
+              Akademia FOTZ wyposaza Cię w wiedzę, by lepiej rozumieć marketing — i podejmować
+              świadome decyzje: co robić samodzielnie, a co zlecać agencji. Jeśli chcesz
+              wdrożyć nowo zdobytą wiedzę z pomocą ekspertów, Fotz Studio oferuje
+              bezpłatną konsultację marketingową. Edukacja i usługi to dwie ścieżki
+              do tego samego celu — sukcesu online Twojej firmy.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
         </Layout>
       </>
     );
@@ -62,7 +128,7 @@ export default function Akademia() {
         <SEOHead
           title="Akademia FOTZ | Uzyskaj Dostęp | Fotz Studio"
           description="Odblokuj pełny dostęp do Akademii FOTZ. E-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego."
-          canonical="https://fotz.pl/akademia/panel"
+          canonical="https://fotz.pl/zasoby"
           noIndex={true}
         />
         <Layout>
@@ -82,9 +148,9 @@ export default function Akademia() {
                 <Lock className="w-10 h-10 text-foreground" />
               </div>
               
-              <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
                 Odblokuj dostęp do Akademii
-              </h1>
+              </h2>
               
               <p className="text-lg text-muted-foreground mb-8">
                 Zalogowano jako: <span className="text-foreground">{user?.email}</span>
@@ -146,7 +212,7 @@ export default function Akademia() {
       <SEOHead
         title="Akademia FOTZ | Materiały Edukacyjne | Fotz Studio"
         description="Akademia FOTZ - e-booki, kursy wideo i materiały edukacyjne z marketingu cyfrowego. Ucz się od ekspertów i rozwijaj swoje umiejętności."
-        canonical="https://fotz.pl/akademia/panel"
+        canonical="https://fotz.pl/zasoby"
         noIndex={true}
       />
       <Layout>
@@ -205,7 +271,7 @@ export default function Akademia() {
                       >
                         {ebook.thumbnail_url && (
                           <div className="aspect-[4/3] overflow-hidden">
-                            <img 
+                            <img loading="lazy" 
                               src={ebook.thumbnail_url} 
                               alt={ebook.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -257,7 +323,7 @@ export default function Akademia() {
                       >
                         <div className="aspect-video overflow-hidden relative">
                           {video.thumbnail_url ? (
-                            <img 
+                            <img loading="lazy" 
                               src={video.thumbnail_url} 
                               alt={video.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -305,7 +371,7 @@ export default function Akademia() {
                       >
                         {course.thumbnail_url && (
                           <div className="aspect-[21/9] overflow-hidden">
-                            <img 
+                            <img loading="lazy" 
                               src={course.thumbnail_url} 
                               alt={course.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock, User, Search, X } from "lucide-react";
@@ -7,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { useBlogArticles } from "@/hooks/useBlogArticles";
 
 const categories = [
@@ -41,7 +42,7 @@ const posts: BlogPost[] = [
       "Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Poznaj strategie, koszty i najlepsze praktyki.",
     category: "Reklamy",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "10 mar 2025",
     readTime: "18 min",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
     featured: true,
@@ -53,7 +54,7 @@ const posts: BlogPost[] = [
       "Jak skonfigurować GA4, zrozumieć nowy interfejs i mierzyć to, co ważne dla biznesu. Praktyczny przewodnik od podstaw.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "10 mar 2025",
     readTime: "22 min",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070",
     featured: false,
@@ -65,7 +66,7 @@ const posts: BlogPost[] = [
       "Ile wydać na marketing? Jak podzielić budżet między kanały? Benchmarki branżowe i praktyczne wskazówki.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "10 mar 2025",
     readTime: "16 min",
     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072",
     featured: false,
@@ -77,7 +78,7 @@ const posts: BlogPost[] = [
       "Sprzedajesz firmom czy konsumentom? Poznaj fundamentalne różnice w podejściu, kanałach i komunikacji między B2B a B2C.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "10 mar 2025",
     readTime: "15 min",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
     featured: false,
@@ -89,7 +90,7 @@ const posts: BlogPost[] = [
       "Kotwiczenie, charm pricing, decoy effect. Poznaj techniki psychologii cen zwiększające konwersję i wartość koszyka.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "10 mar 2025",
     readTime: "14 min",
     image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=2071",
     featured: false,
@@ -101,7 +102,7 @@ const posts: BlogPost[] = [
       "Headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów zwiększających konwersję.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "10 mar 2025",
     readTime: "16 min",
     image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2073",
     featured: false,
@@ -113,7 +114,7 @@ const posts: BlogPost[] = [
       "Kompletny poradnik SEO dla e-commerce. Poznaj strategie pozycjonowania sklepów internetowych, optymalizację kategorii i kart produktowych.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "14 lut 2025",
     readTime: "18 min",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070",
     featured: false,
@@ -125,7 +126,7 @@ const posts: BlogPost[] = [
       "Kompletny poradnik UX/UI dla sklepów internetowych. Dowiedz się jak projektować sklepy, które zwiększają konwersję.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "14 lut 2025",
     readTime: "20 min",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
     featured: false,
@@ -137,7 +138,7 @@ const posts: BlogPost[] = [
       "Kompletny poradnik budowania marki dla startupów. Strategia, identyfikacja wizualna, komunikacja i pozycjonowanie.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "14 lut 2025",
     readTime: "19 min",
     image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=2070",
     featured: false,
@@ -149,7 +150,7 @@ const posts: BlogPost[] = [
       "Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę i mierzyć efekty kampanii.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "14 lut 2025",
     readTime: "17 min",
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074",
     featured: false,
@@ -161,7 +162,7 @@ const posts: BlogPost[] = [
       "Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki? Analiza algorytmów, zasięgów i strategii.",
     category: "Social Media",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "14 lut 2025",
     readTime: "14 min",
     image: "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?q=80&w=2074",
     featured: false,
@@ -173,7 +174,7 @@ const posts: BlogPost[] = [
       "Kompletny poradnik tworzenia landing page. Struktura, copywriting, CTA i optymalizacja konwersji.",
     category: "Poradniki",
     author: "Zespół FOTZ",
-    date: "4 sty 2025",
+    date: "14 lut 2025",
     readTime: "16 min",
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069",
     featured: false,
@@ -426,10 +427,13 @@ export default function Blog() {
     : filteredPosts;
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Blog Marketingowy | Fotz Studio"
-        description="Poradniki marketingu, SEO i social media. Praktyczna wiedza dla firm od agencji Fotz Studio."
+        title="Blog Marketingowy — Artykuły o SEO, Google Ads i Social Media"
+        description="Blog marketingowy Fotz Studio — artykuły i poradniki o SEO, Google Ads, content marketingu, social media i tworzeniu stron. Praktyczna wiedza dla firm i…"
+        ogType="article"
         canonical="https://fotz.pl/blog"
         keywords="blog marketingowy, poradniki marketing, SEO, social media, Google Ads"
       />
@@ -618,6 +622,71 @@ export default function Blog() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Blog marketingowy Fotz Studio — wiedza praktyczna o SEO i marketingu online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Blog marketingowy Fotz Studio to źródło aktualnej wiedzy o marketingu
+              internetowym dla firm i marketerów. Piszemy o SEO, pozycjonowaniu stron,
+              kampaniach Google Ads i Meta Ads, content marketingu, social media
+              i tworzeniu stron internetowych. Każdy artykuł oparty jest na
+              praktycznym doświadczeniu z obsługi klientów i bieżącym śledzeniu
+              zmian algorytmów Google i platform reklamowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Marketing internetowy zmienia się szybko — aktualizacje Google,
+              nowe funkcje Meta Ads, zmiany w algorytmach social media. Na naszym
+              blogu znajdziesz bieżące informacje i interpretacje zmian
+              w kontekście polskiego rynku.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Artykuły o SEO, Google Ads, content marketingu i social media
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kategorie artykułów na naszym blogu marketingowym: SEO i pozycjonowanie
+              (techniczne SEO, link building, SEO lokalne, SEO e-commerce), kampanie
+              reklamowe (Google Ads, Meta Ads, YouTube Ads, LinkedIn Ads), content
+              marketing (copywriting, video content, e-booki), social media (Instagram,
+              TikTok, LinkedIn, Facebook) i strony internetowe (UX, konwersja, WordPress).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Nasz blog marketingowy jest czytany przez właścicieli firm, marketerów
+              i studentów marketingu z całej Polski. Regularnie piszemy case studies
+              z naszych projektów — z konkretnymi wynikami i wnioskami.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Subskrybuj blog i newsletter — bądź na bieżąco z marketingiem online
+            </h2>
+            <p className="text-muted-foreground">
+              Zapisz się do newslettera Fotz Studio, by otrzymywać najnowsze artykuły
+              i aktualizacje marketingowe. Co tydzień — jeden wartościowy email
+              z praktyczną wiedzą o marketingu online. Bez spamu, bez reklam,
+              tylko wartościowa treść przydatna w prowadzeniu biznesu online.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 }

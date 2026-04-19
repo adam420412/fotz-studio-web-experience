@@ -35,8 +35,9 @@ export default function BlogUXEcommerce() {
   return (
     <Layout>
       <SEOHead
-        title="UX/UI w e-commerce - jak projektować sklepy które sprzedają | FOTZ"
-        description="Kompletny poradnik UX/UI dla sklepów internetowych. Dowiedz się jak projektować sklepy e-commerce, które zwiększają konwersję i sprzedaż."
+        title="UX E-commerce — Jak Projektować Sklep Internetowy pod Konwersję?"
+        description="UX dla e-commerce — projektowanie sklepów internetowych pod konwersję: ścieżka zakupowa, checkout, filtry i wyszukiwarka. Jak UX design zwiększa sprzedaż…"
+        ogType="article"
         canonical="https://fotz.pl/blog/ux-ui-ecommerce"
         keywords="UX e-commerce, UI sklep internetowy, projektowanie sklepów, konwersja e-commerce, user experience"
       />
@@ -97,7 +98,7 @@ export default function BlogUXEcommerce() {
             </div>
 
             <div className="relative aspect-video rounded-2xl overflow-hidden mb-8">
-              <img 
+              <img loading="lazy" 
                 src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070"
                 alt="UX/UI w e-commerce"
                 className="w-full h-full object-cover"
@@ -742,6 +743,25 @@ export default function BlogUXEcommerce() {
       <div className="container-wide max-w-4xl">
         <RelatedServices services={servicesByCategory.ecommerce} />
       </div>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">UX e-commerce — doświadczenie użytkownika jako klucz do wyższej konwersji</h2>
+              <p className="text-muted-foreground mb-6">UX (User Experience) w e-commerce to wszystko, co wpływa na łatwość i przyjemność zakupów online. Czytelna nawigacja, szybkie wyszukiwanie produktów, intuicyjny checkout, zaufanie (opinie, certyfikaty bezpieczeństwa) i responsywność mobilna — te elementy decydują o tym, czy odwiedzający staje się kupującym. Poprawa UX to najszybsza droga do wzrostu konwersji bez zwiększania budżetu reklamowego.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Projektowanie sklepów e-commerce z wysoką konwersją — Fotz Studio</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio projektuje sklepy internetowe z naciskiem na UX i konwersję. Audyt UX istniejącego sklepu, optymalizacja ścieżki zakupowej, uproszczenie checkout, testy A/B kreacji i układów — to działania, które bezpośrednio przekładają się na wzrost współczynnika konwersji i przychodów sklepu.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Audyt UX i optymalizacja konwersji Twojego sklepu — Fotz Studio</h2>
+              <p className="text-muted-foreground">Twój sklep ma ruch, ale sprzedaż nie rośnie proporcjonalnie? Problem może leżeć w UX. Fotz Studio przeprowadzi audyt UX i zaproponuje konkretne zmiany zwiększające konwersję. Skontaktuj się z nami po bezpłatną wstępną ocenę UX swojego sklepu e-commerce.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+            </div>
+
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="ux-ui-ecommerce" />

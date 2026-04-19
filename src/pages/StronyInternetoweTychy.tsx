@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -77,7 +77,8 @@ const StronyInternetoweTychy = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Tychach? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Tychy to dynamicznie rozwijające się miasto aglomeracji śląskiej, znane z silnego sektora przemysłowego i motoryzacyjnego.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek.",
+      "Tychy to prężny ośrodek przemysłowy Śląska z silnym sektorem motoryzacyjnym. Lokalne firmy – od dostawców przemysłowych po usługi dla mieszkańców – potrzebują profesjonalnej obecności online do pozyskiwania klientów."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -85,15 +86,18 @@ const StronyInternetoweTychy = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Tychy | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Tychy. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Tychów."
+        title="Strony Internetowe Tychy | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Tychy — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Tychów. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/tychy"
-        keywords="strony internetowe tychy, tworzenie stron www tychy, projektowanie stron tychy, sklepy internetowe tychy"
+        keywords="strony internetowe tychy, tworzenie stron tychy, strony www tychy, projektowanie stron tychy"
       />
       
       <ServiceSchema name="Strony Internetowe Tychy" description="Profesjonalne tworzenie stron internetowych dla firm z Tychów." provider="FOTZ Studio" areaServed="Tychy" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Tychy", url: "https://fotz.pl/uslugi/strony-internetowe/tychy" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -174,7 +178,7 @@ const StronyInternetoweTychy = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -211,6 +215,56 @@ const StronyInternetoweTychy = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Tychy — tworzenie stron www dla firm z aglomeracji śląskiej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tychy to miasto automotive par excellence — fabryka Stellantis (dawniej Fiat) zatrudniająca tysiące pracowników kształtuje lokalny rynek od dziesięcioleci. Firmy z Tychów to głównie dostawcy automotive, logistyka, usługi przemysłowe i rosnący sektor handlowo-usługowy. Wszystkie potrzebują profesjonalnych stron www by wyróżnić się w sieci i pozyskiwać klientów online.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Tychy są częścią górnośląskiej aglomeracji — klienci szukają usług zarówno w Tychach, jak i w Katowicach, Bieruniu i Bielsku-Białej. Strony optymalizujemy pod frazy lokalne i aglomeracyjne, by maksymalizować zasięg bez powielania treści.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony B2B dla sektora automotive i przemysłowego
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Dostawcy i kooperanci Stellantis potrzebują stron z katalogiem komponentów, normami jakości, certyfikatami IATF i formularzami RFQ. Projektujemy profesjonalne strony B2B, które spełniają wymagania zakupowe korporacyjnych klientów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla lokalnych firm usługowych, gabinetów i restauracji z Tychów tworzymy lekkie strony wizytówkowe z lokalnym SEO i integracją z Google Maps. Cena od 2000 zł, realizacja 3–4 tygodnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalna widoczność w Tychach i aglomeracji śląskiej
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizacja lokalna dla firm z Tychów — frazy z geolokalizacją, Google Moja Firma, spójność NAP i budowanie recenzji Google. Dla firm działających na terenie całego GOP rozszerzamy zasięg SEO na kluczowe miasta regionu.
+            </p>
+            <p className="text-muted-foreground">
+              Bezpłatna wycena w 24 godziny. Skontaktuj się z nami i zacznijmy pracę nad Twoją stroną internetową.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

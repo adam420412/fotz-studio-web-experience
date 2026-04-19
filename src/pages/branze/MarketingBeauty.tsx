@@ -99,6 +99,7 @@ const MarketingBeauty = () => {
         title="Marketing dla Beauty & Wellness | Salony, SPA, Fryzjerzy | Fotz Studio"
         description="Marketing dla salonów kosmetycznych, fryzjerskich i SPA - Instagram, systemy rezerwacji, sesje metamorfoz. Przyciągnij więcej klientek."
         canonical="https://fotz.pl/dla-kogo/beauty-wellness"
+        keywords="marketing salonu kosmetycznego, marketing beauty, agencja marketingowa beauty, reklama salonu urody, instagram beauty, marketing spa, marketing wellness, kampanie facebook beauty"
       />
 
       <OrganizationSchema />
@@ -310,7 +311,7 @@ const MarketingBeauty = () => {
             >
               <Link to="/realizacje/verthe" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={vertheImg} 
                     alt="Verthé - case study beauty marketing"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

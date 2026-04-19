@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -75,7 +75,8 @@ const StronyInternetoweCzestochowa = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Częstochowie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Częstochowa to ważne centrum biznesowe i turystyczne. Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Częstochowa przyciąga miliony pielgrzymów rocznie z całego świata. Lokalne firmy – hotele, restauracje, sklepy z pamiątkami i usługi – mają wyjątkową szansę na dotarcie do tej ogromnej grupy klientów przez internet."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -83,15 +84,18 @@ const StronyInternetoweCzestochowa = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Częstochowa | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Częstochowa. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
+        title="Strony Internetowe Częstochowa | Fotz Studio"
+        description="Strony internetowe Częstochowa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Częstochowy…"
         canonical="https://fotz.pl/uslugi/strony-internetowe/czestochowa"
-        keywords="strony internetowe częstochowa, tworzenie stron www częstochowa, projektowanie stron częstochowa, sklepy internetowe częstochowa"
+        keywords="strony internetowe częstochowa, tworzenie stron częstochowa, strony www częstochowa, projektowanie stron częstochowa"
       />
       
       <ServiceSchema name="Strony Internetowe Częstochowa" description="Profesjonalne tworzenie stron internetowych dla firm z Częstochowy." provider="FOTZ Studio" areaServed="Częstochowa" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Częstochowa", url: "https://fotz.pl/uslugi/strony-internetowe/czestochowa" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -133,7 +137,7 @@ const StronyInternetoweCzestochowa = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16"><h2 className="text-3xl md:text-4xl font-heading font-bold">Nasze projekty</h2></div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {caseStudies.map((study, index) => (<Link key={index} to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30"><div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" /></div><div className="p-6"><span className="text-primary text-sm font-medium">{study.category}</span><h3 className="text-xl font-semibold mt-2 mb-2">{study.title}</h3><p className="text-muted-foreground">{study.result}</p></div></Link>))}
+              {caseStudies.map((study, index) => (<Link key={index} to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30"><div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" /></div><div className="p-6"><span className="text-primary text-sm font-medium">{study.category}</span><h3 className="text-xl font-semibold mt-2 mb-2">{study.title}</h3><p className="text-muted-foreground">{study.result}</p></div></Link>))}
             </div>
           </div>
         </section>
@@ -151,6 +155,56 @@ const StronyInternetoweCzestochowa = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Częstochowa — tworzenie stron www dla firm z regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Częstochowa to miasto, które kojarzy się przede wszystkim z Jasną Górą i pielgrzymkami — ale to też prężny ośrodek przemysłowy i usługowy. Sektor stalowy (ISD Częstochowa), metalurgiczny i rosnąca branża turystyczna tworzą różnorodny popyt na profesjonalne strony internetowe. Firmy związane z obsługą pielgrzymów, hotelarstwo i handel pamiątkami intensywnie digitalizują się — i potrzebują stron www na miarę swoich ambicji.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Tworzymy strony internetowe dla firm z Częstochowy i okolic — Zawiercie, Myszków, Blachownia. Zdalny model współpracy sprawia, że lokalizacja nie jest barierą. Projekt w Figmie, wdrożenie w React lub WordPress, optymalizacja SEO i 30-dniowy support po wdrożeniu. Termin: 3–5 tygodni.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla turystyki i pielgrzymkowego biznesu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Specyfika Częstochowy to sezonowy ruch pielgrzymkowy — setki tysięcy odwiedzających rocznie, z Polski i zagranicy. Hotele, pensjonaty, restauracje i sklepy z pamiątkami muszą być widoczne online, szczególnie w języku angielskim, włoskim i słowackim. Tworzymy wielojęzyczne strony turystyczne z systemem rezerwacji i integracją z mapami.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla firm produkcyjnych i B2B z Częstochowy projektujemy solidne strony korporacyjne z portfolio, danymi technicznymi i formularzami zapytań ofertowych. Eksport to kluczowy obszar dla lokalnego przemysłu — angielska wersja strony to konieczność dla firm nastawionych na rynki zachodnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO lokalne i regionalne — bądź widoczny w Częstochowie i na Śląsku
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizacja lokalna dla firm z Częstochowy obejmuje frazy z geolokalizacją, konfigurację Google Moja Firma i budowanie linków z lokalnych katalogów. Dla firm działających na Śląsku rozszerzamy zasięg na Katowice, Sosnowiec i Gliwice — bez powielania treści, z właściwą strukturą URL.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena w 24 godziny, projekt w 3–5 tygodni. Firmy z Częstochowy i regionu mogą liczyć na strony, które naprawdę sprzedają.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

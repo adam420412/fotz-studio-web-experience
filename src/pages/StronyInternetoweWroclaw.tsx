@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, Settings, TrendingUp, Handshake, Phone, Smartphone, Shield, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweWroclaw = () => {
     paragraphs: [
       "W dobie intensywnej rywalizacji na rynku cyfrowym, projektowanie i tworzenie stron odgrywa kluczową rolę w budowaniu wizerunku każdej firmy.",
       "Profesjonalna strona internetowa to nie tylko wizytówka przedsiębiorstwa, ale i efektywne narzędzie do pozyskiwania klientów we Wrocławiu.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Wrocław to centrum technologiczne Dolnego Śląska z setkami firm IT, start-upów i korporacji. Profesjonalna strona internetowa to Twój cyfrowy ambasador na tym wymagającym, nowoczesnym rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweWroclaw = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Wrocław | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Wrocław. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Wrocławia."
+        title="Strony Internetowe Wrocław | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Wrocław — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wrocławia. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/wroclaw"
-        keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław"
+        keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław, wykonanie strony internetowej wrocław, responsywna strona www wrocław, wordpress wrocław, nowoczesne strony www wrocław, agencja stron internetowych wrocław"
       />
       
       <ServiceSchema name="Strony Internetowe Wrocław" description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia." provider="FOTZ Studio" areaServed="Wrocław" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Wrocław", url: "https://fotz.pl/uslugi/strony-internetowe/wroclaw" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -120,7 +124,7 @@ const StronyInternetoweWroclaw = () => {
               </motion.h1>
               
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy strony www, które wyglądają świetnie i skutecznie pozyskują klientów dla wrocławskich firm.
+                <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Wrocław w React, Next.js i WordPress. Projektowanie stron Wrocław dla firm, które chcą wyróżnić się w Google.
               </motion.p>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.5 }} className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -180,7 +184,7 @@ const StronyInternetoweWroclaw = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,57 @@ const StronyInternetoweWroclaw = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Wrocław — rynek lokalny i specyfika regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Wrocław to czwarte co do wielkości miasto w Polsce i jeden z najszybciej rozwijających się rynków biznesowych w Europie Środkowej. Silny sektor IT (KPMG, IBM, Nokia, Google Campus), dynamiczna scena startupów, branża fintech i rosnąca turystyka (Rynek, Ostrów Tumski) sprawiają, że rynek online we Wrocławiu jest wymagający i bardzo konkurencyjny.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Fotz Studio tworzy strony internetowe dla firm z Wrocławia w modelu w pełni zdalnym — bez kompromisów w jakości. Każdy projekt realizuje nasz własny zespół: projektant UX/UI, developer i specjalista SEO. Żadnych podwykonawców, żadnych szablonów kupowanych hurtowo. Efekt? Strony, które wyróżniają się na lokalnym rynku i konwertują odwiedzających w klientów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Projektowanie stron internetowych Wrocław — nasz proces od A do Z
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tworzenie strony internetowej dla firmy z Wrocławia zaczynamy od bezpłatnej konsultacji — omawiamy cel strony, grupę docelową, budżet i harmonogram. Następnie przygotowujemy brief kreatywny i analizę konkurencji. Projekt graficzny powstaje w Figma i jest akceptowany przez Ciebie przed startem kodowania. Po uruchomieniu strony masz pełne dostępy i możesz samodzielnie edytować treści.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Czas realizacji strony wizytówkowej to 2–3 tygodnie, strony firmowej 4–8 tygodni. Nasze strony są objęte 30-dniową gwarancją po wdrożeniu — wszelkie błędy po uruchomieniu poprawiamy bezpłatnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla stron internetowych w Wrocław — lokalna widoczność w Google
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Każda strona internetowa, którą tworzymy dla wrocławskich firm, zawiera podstawowe SEO w cenie: meta tagi title i description, schema LocalBusiness z danymi adresowymi Wrocławia i Dolnego Śląska, szybkość Core Web Vitals i poprawna architektura nagłówków H1–H3. Dzięki temu strona startuje z solidnym fundamentem i szybciej osiąga widoczność w Google.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kompleksowa oferta 
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline">tworzenia stron internetowych</Link> dostępna jest na naszej stronie głównej usługi. Jeśli potrzebujesz strony do kampanii reklamowej, sprawdź naszą ofertę 
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline">landing page dla Google Ads i Meta Ads</Link>.
+            </p>
+
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">&rarr; Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">&rarr; Landing page</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">&rarr; Pozycjonowanie SEO</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">&rarr; Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
         <ContactSection />
       </Layout>

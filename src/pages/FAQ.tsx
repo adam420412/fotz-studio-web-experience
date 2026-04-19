@@ -6,7 +6,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { HelpCircle, MessageCircle, Phone, Mail, Globe, Palette, TrendingUp, Video, ShoppingCart, Users, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { FAQSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Office images
 import officeStairs from "@/assets/office/office-stairs.webp";
@@ -179,10 +179,12 @@ const allFaqs = faqCategories.flatMap((cat) =>
 
 export default function FAQ() {
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="FAQ - Najczęściej zadawane pytania | Fotz Studio"
-        description="Odpowiedzi na najczęściej zadawane pytania o usługi Fotz Studio: strony internetowe, social media, reklamy, branding, produkcja video i e-commerce."
+        title="FAQ — Najczęściej Zadawane Pytania o Marketing, SEO i Strony WWW"
+        description="FAQ Fotz Studio — odpowiedzi na najczęstsze pytania o SEO, marketing internetowy, tworzenie stron www, Google Ads i social media. Wszystko co chcesz…"
         canonical="https://fotz.pl/faq"
         keywords="faq fotz studio, pytania i odpowiedzi, pomoc, kontakt"
       />
@@ -225,10 +227,10 @@ export default function FAQ() {
               className="grid grid-cols-2 gap-4"
             >
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
+                <img loading="lazy" src={officeStairs} alt="Biuro Fotz Studio" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-[3/4] rounded-xl overflow-hidden">
-                <img src={officeSign} alt="Tabliczka Fotz Studio HOFA" className="w-full h-full object-cover" />
+                <img loading="lazy" src={officeSign} alt="Tabliczka Fotz Studio HOFA" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </div>
@@ -314,6 +316,78 @@ export default function FAQ() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Najczęściej zadawane pytania o marketing internetowy i SEO
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              W tej sekcji znajdziesz odpowiedzi na najczęstsze pytania, które
+              zadają nam klienci przed nawiązaniem współpracy. Pytania dotyczą
+              pozycjonowania SEO, tworzenia stron internetowych, kampanii Google Ads
+              i Meta Ads, obsługi social media i produkcji wideo. Jeśli nie znajdziesz
+              odpowiedzi na swoje pytanie — skontaktuj się z nami bezpośrednio.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Marketing internetowy to temat obszerny i stale ewoluujący.
+              Staramy się wyjaśniać zawiłości językiem zrozumiałym dla każdego —
+              bez żargonu, z praktycznymi przykładami. Nasz blog marketingowy
+              to dobre źródło wiedzy dla firm chcących lepiej rozumieć marketing online.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak długo trwa pozycjonowanie SEO? Ile kosztuje marketing online?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Pozycjonowanie SEO to proces długoterminowy — pierwsze efekty widoczne
+              są zwykle po 3-6 miesiącach, pełne efekty po 6-12 miesiącach systematycznej
+              pracy. Koszt SEO dla małej firmy to 800-2000 zł miesięcznie. To inwestycja,
+              która procentuje latami — w przeciwieństwie do reklam płatnych, ruch
+              organiczny jest bezpłatny i trwały.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Kampanie Google Ads mogą dać efekty niemal natychmiastowo — od uruchomienia
+              do pierwszych zapytań to kwestia dni. Koszt obsługi kampanii Google Ads
+              w Fotz Studio to od 500 zł miesięcznie, budżet reklamowy ustalamy
+              z klientem indywidualnie.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak wybrać agencję marketingową? Na co zwrócić uwagę?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Wybierając agencję marketingową, sprawdź: portfolio i case studies,
+              opinie klientów na Google, transparentność w komunikacji i raportowaniu,
+              znajomość Twojej branży oraz podejście do mierzenia wyników. Unikaj
+              agencji obiecujących pierwsze miejsce w Google w ciągu miesiąca —
+              to niemożliwe i może skończyć się karą od Google.
+            </p>
+            <p className="text-muted-foreground">
+              Fotz Studio oferuje bezpłatną konsultację przed nawiązaniem współpracy —
+              możesz zadać wszystkie pytania, zanim podejmiesz decyzję. Pracujemy
+              na umowach miesięcznych bez długich zobowiązań, bo jesteśmy pewni
+              jakości naszych usług.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 }

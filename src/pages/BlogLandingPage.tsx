@@ -3,15 +3,39 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Clock, User, Target, Zap, CheckCircle2, XCircle, MousePointer, BarChart3, Eye, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { ArticleSchema, BreadcrumbSchema, FAQSchema} from "@/components/seo/StructuredData";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+
+const faqItems = [
+  {
+    question: "Czym różni się landing page od zwykłej strony internetowej?",
+    answer: "Landing page ma jeden cel konwersji (zapis, zakup, kontakt) i nie zawiera rozbudowanego menu. Strona firmowa prezentuje całą ofertę. LP konwertuje 3-5x lepiej od ogólnych stron dla ruchu z reklam."
+  },
+  {
+    question: "Ile kosztuje stworzenie landing page?",
+    answer: "Landing page kosztuje od 1 500 do 6 000 PLN netto. Cena zależy od stopnia personalizacji, animacji, integracji z CRM i systemu A/B testów. Dobry LP zwraca się już przy kilku pozyskanych klientach."
+  },
+  {
+    question: "Jak mierzyć skuteczność landing page?",
+    answer: "Główna metryka to współczynnik konwersji (CR) — stosunek odwiedzin do wypełnionych formularzy/zakupów. Dobry LP osiąga CR 5-15%. Monitoruj też czas na stronie, scroll depth i heatmapy (np. Hotjar)."
+  },
+  {
+    question: "Co musi zawierać skuteczny landing page?",
+    answer: "Kluczowe elementy to: mocny nagłówek z USP, czytelne CTA, social proof (opinie, logo klientów), sekcja z korzyściami, formularz lub przycisk zakupowy. Ważna jest też szybkość ładowania — każda sekunda opóźnienia to -7% konwersji."
+  },
+  {
+    question: "Czy landing page pomaga w pozycjonowaniu?",
+    answer: "Tak, jeśli jest zoptymalizowany pod jedno słowo kluczowe z odpowiednią treścią i nagłówkami H1/H2. LP łączący reklamy Google Ads z SEO to najskuteczniejsza kombinacja do generowania leadów."
+  },
+];
 
 const BlogLandingPage = () => {
   return (
     <>
       <SEOHead
-        title="Jak stworzyć skuteczny landing page - poradnik z przykładami | Fotz Studio"
-        description="Kompletny poradnik tworzenia landing page. Struktura, copywriting, CTA i optymalizacja konwersji. Praktyczne przykłady i wskazówki."
+        title="Landing Page — Jak Stworzyć Skuteczną Stronę Lądowania? Poradnik"
+        description="Jak stworzyć skuteczny landing page? Elementy konwertującej strony lądowania, przykłady i najlepsze praktyki. Poradnik tworzenia landing page 2025. Fotz Studio."
+        ogType="article"
         canonical="https://fotz.pl/blog/jak-stworzyc-landing-page"
         keywords="landing page, strona lądowania, konwersja, CTA, UX, copywriting, lead generation, optymalizacja"
       />
@@ -30,6 +54,7 @@ const BlogLandingPage = () => {
           { name: "Jak stworzyć landing page", url: "https://fotz.pl/blog/jak-stworzyc-landing-page" },
         ]}
       />
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}
         <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
@@ -405,6 +430,25 @@ const BlogLandingPage = () => {
             </div>
           </div>
         </article>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Landing page a strona firmowa — kluczowe różnice i kiedy używać których?</h2>
+              <p className="text-muted-foreground mb-6">Landing page (strona lądowania) to strona zoptymalizowana pod jedną konkretną akcję (konwersję). W przeciwieństwie do strony firmowej, nie ma menu nawigacyjnego, oferuje jedno CTA i skupia się na jednym przekazie. Landing page sprawdza się idealnie dla kampanii reklamowych, promocji produktów i zbierania leadów.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Projektowanie landing page — Fotz Studio tworzy strony lądowania z wysokim CR</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio projektuje i buduje landing page zoptymalizowane pod konwersję. Nasze landing pages zawierają: wyraźny nagłówek z propozycją wartości (USP), social proof (opinie, liczby, certyfikaty), sekcję z korzyściami, silne CTA i ograniczenie dystraktorów. Testujemy A/B, by stale poprawiać CR.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Landing page dla Twojej kampanii reklamowej — projekt i wdrożenie</h2>
+              <p className="text-muted-foreground">Planujesz kampanię Google Ads lub Meta Ads? Potrzebujesz dedykowanego landing page dla każdej grupy docelowej i oferty. Fotz Studio tworzy landing pages w ciągu 5-10 dni roboczych. Skontaktuj się z nami, by wycenić projekt strony lądowania dla Twojej kampanii.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+            </div>
+            </div>
+
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="jak-stworzyc-landing-page" maxArticles={3} />

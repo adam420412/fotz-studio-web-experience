@@ -71,7 +71,7 @@ export const FileUploadField = ({
       {value ? (
         <div className="flex items-center gap-3 p-3 bg-background/50 border border-border/50 rounded-lg">
           {isImage ? (
-            <img src={value} alt="" className="w-12 h-12 object-cover rounded" />
+            <img loading="lazy" src={value} alt="" className="w-12 h-12 object-cover rounded" />
           ) : (
             <div className="w-12 h-12 bg-primary/10 rounded flex items-center justify-center">
               <FileText className="w-6 h-6 text-primary" />

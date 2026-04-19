@@ -38,7 +38,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -67,6 +67,7 @@ const StronyInternetoweKrakow = () => {
     { icon: Smartphone, title: "Mobile-first", desc: "Tworzymy responsywne strony internetowe działające na wszystkich urządzeniach." },
     { icon: Shield, title: "Bezpieczne strony", desc: "SSL, regularne aktualizacje, zabezpieczenia przed atakami." },
     { icon: Headphones, title: "Wsparcie po wdrożeniu", desc: "Nie zostawiamy Cię po uruchomieniu nowej strony internetowej." },
+    { icon: Sparkles, title: "Lokalna znajomość rynku", desc: "Rozumiemy krakowski rynek – połączenie turystyki, akademickości i rosnącego sektora IT. Tworzymy strony, które docierają do lokalnych i międzynarodowych klientów." },
   ];
 
   const pricing = [
@@ -174,10 +175,10 @@ const StronyInternetoweKrakow = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Kraków | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Kraków. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Krakowa."
+        title="Strony Internetowe Kraków | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Kraków — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Krakowa. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/krakow"
-        keywords="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków"
+        keywords="strony internetowe kraków, tworzenie stron www kraków, projektowanie stron kraków, sklepy internetowe kraków, strona internetowa kraków, www kraków, wykonanie strony internetowej kraków, responsywna strona www kraków, wordpress kraków, nowoczesne strony www kraków, agencja stron internetowych kraków"
       />
       
       <ServiceSchema 
@@ -198,6 +199,9 @@ const StronyInternetoweKrakow = () => {
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero Section - Enhanced */}
@@ -288,7 +292,7 @@ const StronyInternetoweKrakow = () => {
                 className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed"
               >
                 <strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu każdej firmy.</strong>{" "}
-                Tworzymy strony www, które wyglądają świetnie, działają błyskawicznie i skutecznie pozyskują klientów dla krakowskich firm.
+                Tworzymy responsywne strony www i nowoczesne strony internetowe — wykonanie strony internetowej Kraków w React, Next.js i WordPress. Projektowanie stron kraków dla firm, które chcą wyróżnić się w Google.
               </motion.p>
 
               <motion.div 
@@ -428,7 +432,7 @@ const StronyInternetoweKrakow = () => {
                              hover:shadow-2xl hover:shadow-primary/10"
                   >
                     <div className="aspect-video overflow-hidden relative">
-                      <img 
+                      <img loading="lazy" 
                         src={study.image} 
                         alt={study.title}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -655,6 +659,57 @@ const StronyInternetoweKrakow = () => {
         </section>
 
         {/* Contact Section */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg dark:prose-invert max-w-4xl mx-auto"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Kraków — specyfika krakowskiego rynku
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kraków to drugie co do wielkości miasto w Polsce i jedno z najważniejszych centrów akademickich, kulturalnych i technologicznych w Europie Środkowej. Ponad 200 000 studentów, rozwijający się sektor IT (krakowski hub firm takich jak Google, IBM, Motorola), prężna branża turystyczna i silna scena MŚP sprawiają, że rynek online w Krakowie jest zarówno wymagający, jak i pełen możliwości. Profesjonalna strona internetowa dla firmy z Krakowa musi odpowiadać na oczekiwania wymagającej, często anglojęzycznej, grupy docelowej.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Fotz Studio tworzy strony internetowe dla krakowskich firm zdalnie — pełen projekt od briefu po wdrożenie realizujemy online, z regularnym statusem przez Teams lub Slack. Jeśli preferujesz spotkanie stacjonarne, możemy się zorganizować — skontaktuj się z nami. Każda strona www jest projektowana przez nasz własny zespół: bez podwykonawców, bez tłumaczenia wizji przez pośredników. Wykonanie strony internetowej Kraków z gwarancją terminowości i jakości.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Projektowanie stron internetowych Kraków — co wyróżnia nasze podejście?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kraków jest miastem, w którym estetyka ma znaczenie — od architektury przez kulturę po design produktów cyfrowych. Strony internetowe, które projektujemy dla krakowskich firm, łączą nowoczesny, czysty design z funkcjonalnością zorientowaną na konwersję. Nie korzystamy z gotowych szablonów — każdy projekt graficzny tworzony jest od zera w Figma, z uwzględnieniem tożsamości marki, grupy docelowej i celów biznesowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Specyfika krakowskiego rynku wymaga też myślenia o wielojęzyczności — szczególnie w branżach turystycznej, edukacyjnej i IT. Dla klientów z Krakowa, którzy obsługują zagranicznych gości lub partnerów, regularnie budujemy strony dwu- i trzyjęzyczne (PL/EN/DE) z poprawną strukturą hreflang dla SEO.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO dla stron internetowych w Krakowie — lokalna widoczność w Google
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Tworzenie stron internetowych dla krakowskich firm realizujemy z wbudowaną optymalizacją SEO — meta tagi, Core Web Vitals, schema LocalBusiness z danymi krakowskiej firmy, mapa strony XML i linkowanie wewnętrzne. Dzięki temu strony naszych klientów szybciej osiągają widoczność w Google Maps i wynikach organicznych dla zapytań lokalnych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Jeśli chcesz kompleksowego wsparcia SEO, oferujemy również{" "}
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline">pozycjonowanie stron internetowych</Link> dla firm z Krakowa — od audytu i strategii słów kluczowych, przez optymalizację treści, po link building z lokalnych portali krakowskich.
+            </p>
+
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie SEO</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
         <ContactSection city="Krakowie" />
       </Layout>
     </>

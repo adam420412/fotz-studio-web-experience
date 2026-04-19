@@ -6,6 +6,7 @@ import { ArrowLeft, Calendar, Clock, User, ChevronRight, MapPin } from "lucide-r
 import { motion } from "framer-motion";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { RelatedServices, servicesByCategory } from "@/components/blog/RelatedServices";
+import { FAQSchema } from "@/components/seo/StructuredData";
 
 const cities = [
   { name: "Poznań", path: "/uslugi/strony-internetowe/poznan", active: true },
@@ -18,23 +19,47 @@ const cities = [
   { name: "Szczecin", path: "/uslugi/strony-internetowe/szczecin", active: true },
   { name: "Lublin", path: "/uslugi/strony-internetowe/lublin", active: true },
   { name: "Bydgoszcz", path: "/uslugi/strony-internetowe/bydgoszcz", active: true },
-  { name: "Białystok", path: "/uslugi/strony-internetowe/bialystok", active: false },
-  { name: "Rzeszów", path: "/uslugi/strony-internetowe/rzeszow", active: false },
+  { name: "Białystok", path: "/uslugi/strony-internetowe/bialystok", active: true },
+  { name: "Rzeszów", path: "/uslugi/strony-internetowe/rzeszow", active: true },
+];
+
+const faqItems = [
+  {
+    question: "Ile kosztuje prosta strona internetowa dla firmy?",
+    answer: "Prosta strona firmowa (5-10 podstron) kosztuje od 2 000 do 8 000 PLN netto. Cena zależy od liczby podstron, funkcji (formularz, blog, rezerwacje) i stopnia personalizacji projektu graficznego."
+  },
+  {
+    question: "Ile kosztuje sklep internetowy?",
+    answer: "Sklep internetowy na WooCommerce lub Shopify to wydatek od 5 000 do 25 000 PLN. Kluczowe czynniki cenotwórcze to liczba produktów, integracje płatności, automatyzacja zamówień i projekt UI/UX."
+  },
+  {
+    question: "Czy warto płacić za droższe tworzenie stron?",
+    answer: "Tak — tańsze strony często nie są zoptymalizowane pod SEO, mają wolne ładowanie i brak responsywności. Dobra strona to inwestycja, która zwraca się przez wiele lat poprzez pozyskiwanie klientów z Google."
+  },
+  {
+    question: "Ile kosztuje utrzymanie strony internetowej miesięcznie?",
+    answer: "Hosting i domena to koszt 50-200 PLN/miesiąc. Do tego dochodzi obsługa techniczna (aktualizacje, bezpieczeństwo) — 200-500 PLN/miesiąc. Całościowy koszt utrzymania to zwykle 300-800 PLN miesięcznie."
+  },
+  {
+    question: "Jak długo trwa tworzenie strony internetowej?",
+    answer: "Prosta strona firmowa: 3-6 tygodni. Rozbudowany serwis z funkcjami niestandardowymi: 2-4 miesiące. Sklep internetowy: 4-8 tygodni. Czas zależy od szybkości dostarczonego contentu."
+  },
 ];
 
 const BlogKosztStrony = () => {
   return (
     <>
       <SEOHead
-        title="Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty | FOTZ"
-        description="Sprawdź aktualny cennik stron internetowych w 2025 roku. Dowiedz się, ile kosztuje strona wizytówka, sklep internetowy i profesjonalna strona firmowa."
+        title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Aktualne Koszty"
+        description="Ile kosztuje strona internetowa w 2026? Cennik stron www: landing page od 2 000 zł, strona firmowa od 5 000 zł, sklep e-commerce od 10 000 zł. Aktualne…"
+        ogType="article"
         canonical="https://fotz.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
         schemaJson={[
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty",
+            "headline": "Ile kosztuje strona internetowa w 2026? Cennik i aktualne koszty",
             "description": "Kompleksowy przewodnik po kosztach tworzenia stron internetowych w 2025 roku",
             "author": {
               "@type": "Organization",
@@ -49,7 +74,7 @@ const BlogKosztStrony = () => {
               }
             },
             "datePublished": "2024-12-20",
-            "dateModified": "2026-01-09"
+            "dateModified": "2026-04-11"
           },
           {
             "@context": "https://schema.org",
@@ -93,6 +118,7 @@ const BlogKosztStrony = () => {
         ]}
       />
 
+      <FAQSchema items={faqItems} />
       <Layout>
         {/* Breadcrumb */}
         <section className="pt-32 pb-4 bg-background">
@@ -102,7 +128,7 @@ const BlogKosztStrony = () => {
               <ChevronRight className="h-4 w-4" />
               <Link to="/blog" className="hover:text-primary transition-colors">Blog</Link>
               <ChevronRight className="h-4 w-4" />
-              <span className="text-foreground">Ile kosztuje strona internetowa w 2025?</span>
+              <span className="text-foreground">Ile kosztuje strona internetowa w 2026?</span>
             </nav>
           </div>
         </section>
@@ -126,7 +152,7 @@ const BlogKosztStrony = () => {
                 </span>
                 
                 <h1 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-                  Ile kosztuje strona internetowa w 2025? Cennik i aktualne koszty
+                  Ile kosztuje strona internetowa w 2026? Cennik i aktualne koszty
                 </h1>
                 
                 <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground mb-8">
@@ -145,7 +171,7 @@ const BlogKosztStrony = () => {
                 </div>
 
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
-                  <img 
+                  <img loading="lazy" 
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015" 
                     alt="Ile kosztuje strona internetowa w 2025 - cennik" 
                     className="w-full h-full object-cover"
@@ -161,7 +187,7 @@ const BlogKosztStrony = () => {
                 className="prose prose-lg prose-invert max-w-none"
               >
                 <p className="lead text-xl text-muted-foreground mb-8">
-                  Zastanawiasz się, ile będzie kosztować strona internetowa w 2025 roku? Ten artykuł rozwieje Twoje wątpliwości, przedstawiając aktualny cennik i koszty związane z tworzeniem stron internetowych. Omówimy różne typy stron, czynniki wpływające na cenę, a także średni koszt wykonania strony internetowej w nadchodzącym roku.
+                  Zastanawiasz się, ile będzie kosztować strona internetowa w 2026 roku? Ten artykuł rozwieje Twoje wątpliwości, przedstawiając aktualny cennik i koszty związane z tworzeniem stron internetowych. Omówimy różne typy stron, czynniki wpływające na cenę, a także średni koszt wykonania strony internetowej w nadchodzącym roku.
                 </p>
 
                 <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
@@ -211,7 +237,7 @@ const BlogKosztStrony = () => {
                   Średni koszt wykonania strony internetowej w 2025
                 </h3>
                 <p className="text-muted-foreground mb-4">
-                  Ustalenie dokładnego średniego kosztu wykonania strony internetowej w 2025 roku jest trudne, ponieważ zależy on od wielu wspomnianych czynników.
+                  Ustalenie dokładnego średniego kosztu wykonania strony internetowej w 2026 roku jest trudne, ponieważ zależy on od wielu wspomnianych czynników.
                 </p>
 
                 <div className="overflow-x-auto mb-8">
@@ -295,6 +321,39 @@ const BlogKosztStrony = () => {
                       <tr className="border-b border-border/50">
                         <td className="py-4 px-4 text-muted-foreground">Sklep internetowy</td>
                         <td className="py-4 px-4 text-muted-foreground">300 - 2 000 zł</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h2 className="text-2xl md:text-3xl font-heading font-bold mt-12 mb-6">
+                  Ile kosztuje landing page?
+                </h2>
+
+                <p className="text-muted-foreground mb-4">
+                  <strong>Landing page</strong> to oddzielna kategoria stron internetowych — pojedyncza strona zaprojektowana pod jeden cel: sprzedaż, zbieranie leadów lub zapis na newsletter. Jest tańsza i szybsza w realizacji od pełnej strony firmowej, ale wymaga precyzyjnego projektu konwersji. Więcej o tym, <Link to="/uslugi/landing-page" className="text-primary hover:underline">czym jest landing page i ile kosztuje</Link>, znajdziesz na naszej stronie usługi.
+                </p>
+
+                <div className="overflow-x-auto mb-8">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="border-b border-border">
+                        <th className="text-left py-4 px-4 font-semibold">Typ landing page</th>
+                        <th className="text-left py-4 px-4 font-semibold">Orientacyjny koszt</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Landing page basic (do kampanii reklamowej)</td>
+                        <td className="py-4 px-4 text-muted-foreground">od 2 000 zł</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Landing page pro (animacje, integracje CRM)</td>
+                        <td className="py-4 px-4 text-muted-foreground">od 4 500 zł</td>
+                      </tr>
+                      <tr className="border-b border-border/50">
+                        <td className="py-4 px-4 text-muted-foreground">Landing page enterprise (funnel, A/B testing)</td>
+                        <td className="py-4 px-4 text-muted-foreground">od 9 000 zł</td>
                       </tr>
                     </tbody>
                   </table>
@@ -446,6 +505,25 @@ const BlogKosztStrony = () => {
             <RelatedServices services={servicesByCategory.websites} />
           </div>
         </div>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Koszty strony internetowej w 2025 roku — cennik i co wpływa na cenę?</h2>
+              <p className="text-muted-foreground mb-6">Koszt strony internetowej w Polsce waha się od 1500 zł za prostą stronę wizytówkową do 50 000+ zł za rozbudowany portal korporacyjny lub sklep e-commerce. Na cenę wpływa: zakres funkcjonalności, design (szablonowy vs. niestandardowy), platforma (WordPress, React, dedykowany CMS), liczba podstron i integracjami. Wycena zawsze powinna być indywidualna.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Tworzenie stron internetowych w Fotz Studio — transparentne ceny i jakość</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio tworzy strony internetowe dla firm z Polski: landing page od 2500 zł, strona firmowa od 4000 zł, sklep WooCommerce od 6000 zł, sklep Shopify od 4000 zł, portale korporacyjne wyceniane indywidualnie. Każda strona zoptymalizowana pod SEO i wydajność (Core Web Vitals).</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Bezpłatna wycena strony internetowej — co zawiera oferta Fotz Studio?</h2>
+              <p className="text-muted-foreground">Wycena strony internetowej w Fotz Studio jest bezpłatna i obejmuje: zakres projektu, proponowane technologie, timeline realizacji i warunki opieki po wdrożeniu. Skontaktuj się z nami przez formularz lub telefon — ofertę przygotowujemy w 48 godzin od wypełnienia briefu.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+            </div>
+            </div>
+
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="ile-kosztuje-strona-internetowa" />

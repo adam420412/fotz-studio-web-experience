@@ -33,8 +33,9 @@ const BlogSEOLokalnePoznan = () => {
   return (
     <>
       <SEOHead
-        title="SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025 | Fotz Studio"
-        description="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego: Google Moja Firma, cytaty NAP, recenzje i strategie na 2025 rok."
+        title="SEO Lokalne Poznań — Jak Wygrać Local Pack Google w Poznaniu?"
+        description="SEO lokalne Poznań — jak wygrać Local Pack Google, optymalizować Google Moja Firma i pozycjonować stronę na frazy lokalne. Poradnik lokalnego SEO dla firm…"
+        ogType="article"
         canonical="https://fotz.pl/seo/lokalne-poznan"
         keywords="SEO lokalne Poznań, pozycjonowanie lokalne, Google Moja Firma, Google Maps, NAP, lokalne wyszukiwanie, SEO dla firm lokalnych"
       />
@@ -436,6 +437,25 @@ const BlogSEOLokalnePoznan = () => {
             </div>
           </div>
         </article>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">SEO lokalne Poznań — jak zdobyć widoczność w wynikach map i lokalnych wyszukiwaniach?</h2>
+              <p className="text-muted-foreground mb-6">SEO lokalne w Poznaniu to obszar, gdzie lokalne firmy walczą o pozycje w Google Maps i Local Pack (3 wyniki mapowe na górze strony). Aż 46% wszystkich zapytań Google ma charakter lokalny — frazy "firma + Poznań" mają wysoką intencję zakupową i konwertują lepiej niż ogólne zapytania. Optymalizacja pod lokalne SEO to priorytet każdej firmy działającej w konkretnym mieście.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Lokalne SEO dla firm z Poznania — Google Moja Firma, cytaty i linki lokalne</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio pomaga firmom z Poznania i Wielkopolski wygrywać w lokalnych wynikach wyszukiwania. Optymalizujemy Google Moja Firma (Google Business Profile), budujemy cytaty NAP (Name, Address, Phone) w katalogach lokalnych, pozyskujemy linki z lokalnych serwisów i tworzymy treści geolokalizowane na stronie.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Lokalne SEO Poznań dla Twojej firmy — skontaktuj się z Fotz Studio</h2>
+              <p className="text-muted-foreground">Chcesz pojawić się w Google Maps na frazy związane z Twoją branżą i Poznaniem? Fotz Studio przeprowadzi audyt lokalnego SEO i wdroży strategię, która poprawi Twoją widoczność w lokalnych wynikach w ciągu 2-3 miesięcy. Bezpłatna konsultacja — skontaktuj się z nami.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+            </div>
+            </div>
+
 
         {/* Related Articles */}
         <RelatedArticles currentArticleId="seo-lokalne-poznan-poradnik" maxArticles={3} />

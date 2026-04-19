@@ -99,6 +99,7 @@ const MarketingAutomotive = () => {
         title="Marketing dla Branży Motoryzacyjnej | Salony, Dealerzy, Serwisy | Fotz Studio"
         description="Marketing dla branży motoryzacyjnej - strony dla dealerów, fotografia samochodów, spoty reklamowe, kampanie leadowe. Zwiększ sprzedaż w salonie."
         canonical="https://fotz.pl/dla-kogo/automotive"
+        keywords="marketing motoryzacyjny, marketing dla dealerów, agencja marketingowa motoryzacja, reklama salonu samochodowego, kampanie google ads motoryzacja, social media motoryzacja, fotografia motoryzacyjna, marketing serwisu samochodowego"
       />
 
       <OrganizationSchema />
@@ -310,7 +311,7 @@ const MarketingAutomotive = () => {
             >
               <Link to="/realizacje/victory-cars" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={victoryCarsImg} 
                     alt="Victory Cars - case study automotive"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

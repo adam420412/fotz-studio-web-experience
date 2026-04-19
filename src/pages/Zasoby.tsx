@@ -128,9 +128,10 @@ const Zasoby = () => {
   return (
     <>
       <SEOHead
-        title="Darmowe Zasoby Marketingowe - E-booki, Checklisty | Fotz Studio"
-        description="Pobierz darmowe materiały marketingowe: e-booki, checklisty, szablony. Praktyczna wiedza o kampaniach reklamowych, SEO, social media i content marketingu."
+        title="Darmowe Zasoby Marketingowe — E-booki, Checklisty i Szablony"
+        description="Darmowe zasoby marketingowe Fotz Studio — e-booki, checklisty SEO, szablony briefów i kalkulatory. Pobierz bezpłatne materiały dla firm i marketerów."
         canonical="https://fotz.pl/zasoby"
+        keywords="darmowe zasoby marketingowe, e-book marketing darmowy, checklisty SEO, szablony briefu marketingowego, darmowe materiały marketing, checklisty Google Ads"
       />
       <BreadcrumbSchema 
         items={[
@@ -217,7 +218,7 @@ const Zasoby = () => {
                   >
                     {/* Thumbnail */}
                     <div className="aspect-video relative overflow-hidden">
-                      <img 
+                      <img loading="lazy" 
                         src={resource.thumbnail}
                         alt={resource.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -359,6 +360,69 @@ const Zasoby = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Darmowe zasoby marketingowe — e-booki, checklisty i szablony do pobrania
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio udostępnia bezpłatne zasoby marketingowe dla firm i marketerów.
+              W naszej bibliotece znajdziesz praktyczne e-booki o SEO i content marketingu,
+              checklisty do audytu strony i kampanii reklamowych, szablony briefów
+              projektowych oraz kalkulatory ROI i kosztów. Materiały tworzymy
+              na podstawie wieloletniego doświadczenia w obsłudze klientów.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Darmowe zasoby marketingowe to nasza inwestycja w edukację polskiego rynku.
+              Wierzymy, że firmy znające podstawy marketingu są lepszymi partnerami
+              do współpracy — rozumieją nasze działania i bardziej doceniają ich wartość.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              E-booki o SEO, content marketingu i reklamach — praktyczna wiedza do pobrania
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nasze e-booki marketingowe omawiają najważniejsze tematy: jak pozycjonować
+              stronę w Google (SEO krok po kroku), jak tworzyć treści, które sprzedają
+              (copywriting i content marketing), jak prowadzić skuteczne kampanie
+              Google Ads i Meta Ads, jak budować markę w mediach społecznościowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Checklisty i szablony to praktyczne narzędzia do codziennej pracy
+              marketera i przedsiębiorcy. Checklista audytu SEO, szablon briefu
+              kampanii reklamowej, szablon strategii content marketingu —
+              gotowe do użycia po pobraniu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Bezpłatne narzędzia marketingowe — kalkulatory, generatory i szablony
+            </h2>
+            <p className="text-muted-foreground">
+              Kalkulator ROI kampanii reklamowych, generator briefu projektowego
+              i kalkulator cen usług marketingowych — bezpłatne narzędzia online
+              dla firm planujących działania marketingowe. Oblicz, ile może kosztować
+              marketing Twojej firmy i jaki zwrot z inwestycji możesz oczekiwać.
+              Pobierz nasze zasoby i zacznij działać z planem.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

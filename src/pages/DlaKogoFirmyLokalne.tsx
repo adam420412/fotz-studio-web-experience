@@ -110,10 +110,10 @@ export default function DlaKogoFirmyLokalne() {
   return (
     <Layout>
       <SEOHead
-        title="Marketing dla firm lokalnych Poznań | Fotz Studio"
-        description="Pomagamy lokalnym firmom z Poznania budować silną obecność online. SEO lokalne, Google Maps, kampanie geotargetowane. Znamy poznański rynek."
+        title="Marketing dla Firm Lokalnych — Lokalne SEO i Google Moja Firma"
+        description="Marketing dla firm lokalnych: lokalne SEO, Google Moja Firma, reklamy lokalne Google Ads i Facebook. Pozyskaj więcej klientów z okolicy. Fotz Studio Poznań."
         canonical="https://fotz.pl/dla-kogo/firmy-lokalne"
-        keywords="marketing lokalny, SEO lokalne Poznań, Google Maps, firmy lokalne"
+        keywords="marketing dla firm lokalnych, seo lokalne, google maps firma, reklama lokalna, local seo dla firm"
       />
       
       <OrganizationSchema />
@@ -327,7 +327,7 @@ export default function DlaKogoFirmyLokalne() {
                 className="group bg-background rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300"
               >
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={study.image}
                     alt={study.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -473,6 +473,74 @@ export default function DlaKogoFirmyLokalne() {
           </motion.div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Marketing dla firm lokalnych — pozyskaj klientów z okolicy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Marketing dla firm lokalnych to specyficzna dziedzina — celem jest
+              dotarcie do klientów w konkretnej lokalizacji, a nie w całej Polsce.
+              Fotz Studio specjalizuje się w marketingu lokalnym dla restauracji,
+              salonów urody, klinik, warsztatów, sklepów stacjonarnych i wszystkich
+              firm z lokalną grupą docelową.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Lokalne SEO i Google Moja Firma to fundamenty widoczności lokalnej.
+              Firma pojawiająca się w Local Pack Google (3 wyniki mapowe) zdobywa
+              znacznie więcej zapytań niż konkurenci poniżej. Optymalizujemy wizytówkę
+              Google i pozycjonujemy stronę na frazy lokalne z intencją zakupową.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalne SEO i Google Moja Firma — jak być widocznym w Google Maps
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizacja Google Moja Firma (Google Business Profile) obejmuje:
+              kompletność profilu, regularne posty, zbieranie i odpowiadanie na recenzje,
+              dodawanie zdjęć i usług. Lokalne SEO na stronie — strony lądowania
+              na frazy z nazwą miasta, lokalne linki zwrotne i cytaty (NAP).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Reklamy lokalne Google Ads (Local Search Ads) i Facebook Ads
+              z targetowaniem geograficznym pozwalają natychmiast dotrzeć do osób
+              w pobliżu. Kampanie „click-to-call" dla firm mobilnych, reklamy
+              zasięgowe dla budowania świadomości w okolicy.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Reklama dla małej firmy lokalnej — efektywny marketing w ograniczonym budżecie
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Mała firma lokalna nie potrzebuje ogromnego budżetu — potrzebuje
+              precyzyjnie ukierunkowanych działań. Google Moja Firma (bezpłatna),
+              lokalne SEO i targetowane kampanie Google/Facebook z budżetem 500-2000 zł
+              miesięcznie mogą przynieść znaczny wzrost liczby klientów.
+            </p>
+            <p className="text-muted-foreground">
+              Fotz Studio pomaga firmom lokalnym z Poznania i okolic wyróżnić się
+              w internecie i zdobywać klientów z lokalnego rynku. Bezpłatna konsultacja
+              i audyt lokalnego SEO — skontaktuj się z nami już dziś.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
   );
 }

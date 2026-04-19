@@ -99,6 +99,7 @@ const MarketingNieruchomosci = () => {
         title="Marketing dla Nieruchomości | Deweloperzy, Biura, Architekci | Fotz Studio"
         description="Marketing dla branży nieruchomości - wizualizacje 3D, spoty promocyjne, sesje zdjęciowe, kampanie lead generation. Sprzedawaj szybciej."
         canonical="https://fotz.pl/dla-kogo/nieruchomosci"
+        keywords="marketing nieruchomości, agencja marketingowa nieruchomości, marketing dewelopera, reklama nieruchomości, wizualizacje 3d nieruchomości, kampanie lead generation nieruchomości, marketing biura nieruchomości"
       />
 
       <OrganizationSchema />
@@ -310,7 +311,7 @@ const MarketingNieruchomosci = () => {
             >
               <Link to="/realizacje/apartamenty-chorwacja" className="block group">
                 <div className="aspect-square rounded-3xl overflow-hidden relative">
-                  <img 
+                  <img loading="lazy" 
                     src={apartamentyImg} 
                     alt="Apartamenty Chorwacja - case study nieruchomości"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

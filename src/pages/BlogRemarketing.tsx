@@ -34,10 +34,11 @@ export default function BlogRemarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Remarketing - kompletny poradnik dla firm 2025 | FOTZ Studio"
-        description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Poznaj strategie, koszty i najlepsze praktyki remarketingu dla e-commerce i usług."
+        title="Remarketing | Fotz Studio"
+        description="Remarketing i retargeting — jak konfigurować kampanie remarketingowe Google Ads i Meta Ads, by odzyskiwać odwiedzających i zwiększać konwersję. Fotz Studio."
+        ogType="article"
         canonical="https://fotz.pl/performance-marketing/remarketing"
-        keywords="remarketing, retargeting, remarketing google ads, remarketing facebook, porzucone koszyki, remarketing dynamiczny"
+        keywords="remarketing co to jest, co to jest remarketing, remarketing google ads, remarketing facebook ads, retargeting reklamy, remarketing dla firm, jak działa remarketing, remarketing cennik"
       />
       <ArticleSchema
         title="Remarketing - kompletny poradnik dla firm 2025"
@@ -72,8 +73,7 @@ export default function BlogRemarketing() {
               Remarketing - kompletny poradnik dla firm w 2025 roku
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Jak odzyskiwać klientów, którzy opuścili Twoją stronę? Poznaj strategie remarketingu w Google Ads, Facebook i dynamicznego remarketingu dla e-commerce.
-            </p>
+              Remarketing — co to jest i jak działa? Poradnik o retargetingu w Google Ads i Facebook Ads. Jak skutecznie docierać do osób, które odwiedziły Twoją stronę i zwiększać konwersje.</p>
             
             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
               <span className="flex items-center gap-2">
@@ -97,7 +97,7 @@ export default function BlogRemarketing() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015"
               alt="Remarketing - strategie odzyskiwania klientów"
               className="w-full rounded-2xl aspect-video object-cover"
@@ -384,6 +384,25 @@ export default function BlogRemarketing() {
           </div>
         </div>
       </section>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Remarketing i retargeting — dlaczego odwiedzający, którzy nie kupili, są najcenniejszą grupą?</h2>
+              <p className="text-muted-foreground mb-6">Remarketing (retargeting) to kampanie skierowane do osób, które już odwiedziły Twoją stronę lub sklep, ale nie dokonały konwersji. Te osoby znają Twoją markę i są statystycznie 70% bardziej skłonne do zakupu niż nowi odwiedzający. Remarketing to jeden z najwyższych wskaźników ROI spośród wszystkich form reklamy online.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Kampanie remarketingowe Google Ads i Meta Ads — konfiguracja i optymalizacja</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio konfiguruje i optymalizuje kampanie remarketingowe w Google Ads (RLSA, Display Remarketing, YouTube Remarketing) i Meta Ads (Facebook i Instagram Custom Audiences, Lookalike Audiences). Tworzymy spersonalizowane reklamy dla różnych segmentów odwiedzających — inaczej do porzucających koszyk, inaczej do czytających bloga.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Wdróż remarketing w swojej firmie — skontaktuj się z Fotz Studio</h2>
+              <p className="text-muted-foreground">Czy Twoje kampanie reklamowe obejmują remarketing? Fotz Studio skonfiguruje remarketing od zera lub zoptymalizuje istniejące kampanie. Bezpłatny audyt kampanii i konsultacja dostępne online. Skontaktuj się z nami, by przestać tracić potencjalnych klientów.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
+              <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
+            </div>
+
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="remarketing-poradnik" />

@@ -40,18 +40,38 @@ const template = fs.readFileSync(INDEX_HTML, 'utf-8');
 function extractSEOHead(filePath) {
   const content = fs.readFileSync(filePath, 'utf-8');
   
-  // Match <SEOHead ... /> or <SEOHead ...> (multiline)
-  const seoMatch = content.match(/<SEOHead\s+([^]*?)\/>/);
+  // Match <SEOHead ... /> (self-closing) OR <SEOHead ...>...</SEOHead> (with children)
+  const seoMatch = content.match(/<SEOHead\s+([^]*?)\/>/) ||
+                   content.match(/<SEOHead\s+([^]*?)>/);
   if (!seoMatch) return null;
   
   const propsStr = seoMatch[1];
   
-  const title = propsStr.match(/title="([^"]+)"/)?.[1] || '';
-  const description = propsStr.match(/description="([^"]+)"/)?.[1] || '';
-  const canonical = propsStr.match(/canonical="([^"]+)"/)?.[1] || '';
-  const ogImage = propsStr.match(/ogImage="([^"]+)"/)?.[1] || 'https://fotz.pl/og-image.jpg';
+  // Helper: resolve variable value if prop uses {varName} syntax
+  function resolveVar(propStr, propName) {
+    // Try string literal first: propName="value"
+    const literal = propStr.match(new RegExp(`${propName}="([^"]+)"`))?.[1];
+    if (literal) return literal;
+    // Try JSX variable: propName={varName}
+    const varMatch = propStr.match(new RegExp(`${propName}=\\{(\\w+)\\}`));
+    if (varMatch) {
+      const varName = varMatch[1];
+      // Look up: const varName = 'value'; or const varName = "value";
+      const valMatch = content.match(new RegExp(`const ${varName}\\s*=\\s*['"]([^'"]+)['"]`));
+      if (valMatch) return valMatch[1];
+      // Also try backtick template literal: const varName = `value`;
+      const btMatch = content.match(new RegExp(`const ${varName}\\s*=\\s*\`([^\`]+)\``));
+      if (btMatch) return btMatch[1];
+    }
+    return '';
+  }
+
+  const title = resolveVar(propsStr, 'title');
+  const description = resolveVar(propsStr, 'description');
+  const canonical = resolveVar(propsStr, 'canonical');
+  const ogImage = resolveVar(propsStr, 'ogImage') || 'https://fotz.pl/og-image.jpg';
   const noIndex = propsStr.includes('noIndex={true}') || propsStr.includes('noIndex');
-  const keywords = propsStr.match(/keywords="([^"]+)"/)?.[1] || '';
+  const keywords = resolveVar(propsStr, 'keywords');
   
   if (!title || !canonical) return null;
   
@@ -92,7 +112,9 @@ function extractRoutes() {
 }
 
 /**
- * Find the source file for a component name
+ * Find the source file for a component name.
+ * Uses EXACT matching (word boundary) to avoid false positives like
+ * "function Blog" matching "function BlogCopywritingLanding".
  */
 function findComponentFile(componentName) {
   // Search patterns - check pages/ and pages/clusters/ and pages/branze/
@@ -101,27 +123,51 @@ function findComponentFile(componentName) {
     path.join(SRC, 'pages', 'clusters'),
     path.join(SRC, 'pages', 'branze'),
   ];
-  
+
+  // Build exact-match patterns with word boundaries:
+  // - "function ComponentName(" or "function ComponentName "
+  // - "export default ComponentName" at end/newline
+  // - "const ComponentName =" (only this exact pattern, not longer names)
+  const exactPatterns = [
+    `export default function ${componentName}(`,
+    `export default function ${componentName} `,
+    `export default function ${componentName}\n`,
+    `export default ${componentName}\n`,
+    `export default ${componentName};`,
+    `export default ${componentName},`,
+    `function ${componentName}(`,
+    `function ${componentName} `,
+    `const ${componentName} = (`,
+    `const ${componentName} = function`,
+    `const ${componentName}: React`,
+    `const ${componentName} = lazy`,
+    `export const ${componentName} = (`,
+    `export const ${componentName} = ()`,
+  ];
+
   for (const dir of searchDirs) {
     if (!fs.existsSync(dir)) continue;
-    const files = fs.readdirSync(dir);
+    const files = fs.readdirSync(dir).sort();
     for (const file of files) {
       if (!file.endsWith('.tsx')) continue;
       const filePath = path.join(dir, file);
       const content = fs.readFileSync(filePath, 'utf-8');
-      
-      // Check if this file exports the component (default or named)
-      if (
-        content.includes(`export default function ${componentName}`) ||
-        content.includes(`export default ${componentName}`) ||
-        content.includes(`const ${componentName} =`) ||
-        content.includes(`function ${componentName}`)
-      ) {
+
+      if (exactPatterns.some(p => content.includes(p))) {
         return filePath;
       }
     }
   }
-  
+
+  // Fallback: try matching by filename (e.g., ComponentName.tsx)
+  for (const dir of searchDirs) {
+    if (!fs.existsSync(dir)) continue;
+    const exactFile = path.join(dir, `${componentName}.tsx`);
+    if (fs.existsSync(exactFile)) {
+      return exactFile;
+    }
+  }
+
   return null;
 }
 
@@ -129,30 +175,98 @@ function findComponentFile(componentName) {
  * Inject meta tags into the HTML template
  */
 function injectMeta(html, meta) {
+  // Step 1: Remove ALL existing tags that will be replaced with page-specific ones.
+  // Run replacements TWICE to handle the case where the template itself was
+  // already prerendered (e.g. dist/index.html modified by a previous run).
+  // This ensures idempotency no matter how many times the script is re-run.
+  for (let pass = 0; pass < 2; pass++) {
+    html = html.replace(/<title>[^<]*<\/title>/g, '');
+    html = html.replace(/<link\s+rel="canonical"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="description"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="keywords"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="robots"[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+property="og:[^>]*\/?>/gi, '');
+    html = html.replace(/<meta\s+name="twitter:[^>]*\/?>/gi, '');
+    // Also strip the prerendered comment block to avoid accumulation
+    html = html.replace(/\s*<!-- Prerendered SEO meta -->\s*/g, '\n    ');
+  }
+
+  // Step 2: Build the full set of page-specific meta tags
+  // Add data-rh="true" so react-helmet-async replaces these tags instead of duplicating
   const metaTags = [
-    `<title>${meta.title}</title>`,
-    `<meta name="description" content="${meta.description}" />`,
-    meta.keywords ? `<meta name="keywords" content="${meta.keywords}" />` : '',
-    `<link rel="canonical" href="${meta.canonical}" />`,
-    meta.noIndex ? '<meta name="robots" content="noindex, nofollow" />' : '',
-    `<meta property="og:title" content="${meta.title}" />`,
-    `<meta property="og:description" content="${meta.description}" />`,
-    `<meta property="og:url" content="${meta.canonical}" />`,
-    `<meta property="og:image" content="${meta.ogImage}" />`,
-    `<meta property="og:type" content="website" />`,
-    `<meta property="og:locale" content="pl_PL" />`,
-    `<meta property="og:site_name" content="Fotz Studio" />`,
-    `<meta name="twitter:card" content="summary_large_image" />`,
-    `<meta name="twitter:title" content="${meta.title}" />`,
-    `<meta name="twitter:description" content="${meta.description}" />`,
-    `<meta name="twitter:image" content="${meta.ogImage}" />`,
+    `<title data-rh="true">${meta.title}</title>`,
+    `<meta data-rh="true" name="description" content="${meta.description}" />`,
+    meta.keywords ? `<meta data-rh="true" name="keywords" content="${meta.keywords}" />` : '',
+    `<link data-rh="true" rel="canonical" href="${meta.canonical}" />`,
+    meta.noIndex ? '<meta data-rh="true" name="robots" content="noindex, nofollow" />' : '',
+    `<meta data-rh="true" property="og:title" content="${meta.title}" />`,
+    `<meta data-rh="true" property="og:description" content="${meta.description}" />`,
+    `<meta data-rh="true" property="og:url" content="${meta.canonical}" />`,
+    `<meta data-rh="true" property="og:image" content="${meta.ogImage}" />`,
+    `<meta data-rh="true" property="og:type" content="website" />`,
+    `<meta data-rh="true" property="og:locale" content="pl_PL" />`,
+    `<meta data-rh="true" property="og:site_name" content="Fotz Studio" />`,
+    `<meta data-rh="true" name="twitter:card" content="summary_large_image" />`,
+    `<meta data-rh="true" name="twitter:title" content="${meta.title}" />`,
+    `<meta data-rh="true" name="twitter:description" content="${meta.description}" />`,
+    `<meta data-rh="true" name="twitter:image" content="${meta.ogImage}" />`,
   ].filter(Boolean).join('\n    ');
-  
-  // Insert after <meta name="author" ...> line
-  return html.replace(
+
+  // Step 3: Insert after <meta name="author" ...> line
+  html = html.replace(
     '<meta name="author" content="Fotz Studio" />',
     `<meta name="author" content="Fotz Studio" />\n    <!-- Prerendered SEO meta -->\n    ${metaTags}`
   );
+
+  // Step 4: Inject a visually-hidden semantic section into <body> so crawlers that
+  // don't execute JavaScript still see an H1, descriptive text, and internal links
+  // (fixes "Thin Content", "Missing H1", and "No outgoing links" issues on all pages).
+  // The section is hidden via inline style so it doesn't affect the visual design.
+  // Strip any previously injected SEO section before re-injecting (idempotent).
+  html = html.replace(/<section\s+id="seo-prerender"[^>]*>[\s\S]*?<\/section>\s*/g, '');
+
+  // Determine page-type-specific internal links based on canonical URL
+  const url = meta.canonical;
+  let relatedLinks = '';
+  if (url.includes('/performance-marketing/google-ads')) {
+    relatedLinks = `<a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing/facebook-ads">Facebook Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/facebook-ads')) {
+    relatedLinks = `<a href="/performance-marketing/facebook-ads">Facebook Ads</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/tiktok-ads')) {
+    relatedLinks = `<a href="/performance-marketing/tiktok-ads">TikTok Ads</a> · <a href="/performance-marketing/instagram-ads">Instagram Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/instagram-ads')) {
+    relatedLinks = `<a href="/performance-marketing/instagram-ads">Instagram Ads</a> · <a href="/performance-marketing/meta-ads">Meta Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/linkedin-ads')) {
+    relatedLinks = `<a href="/performance-marketing/linkedin-ads">LinkedIn Ads</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing/youtube-ads')) {
+    relatedLinks = `<a href="/performance-marketing/youtube-ads">YouTube Ads</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/performance-marketing')) {
+    relatedLinks = `<a href="/performance-marketing">Performance Marketing</a> · <a href="/performance-marketing/google-ads">Google Ads</a> · <a href="/performance-marketing/facebook-ads">Facebook Ads</a>`;
+  } else if (url.includes('/seo/') || url.includes('/agencja-seo') || url.includes('/pozycjonowanie')) {
+    relatedLinks = `<a href="/seo/pozycjonowanie">Pozycjonowanie</a> · <a href="/seo/audyt">Audyt SEO</a> · <a href="/performance-marketing/google-ads">Google Ads</a>`;
+  } else if (url.includes('/social-media')) {
+    relatedLinks = `<a href="/social-media/obsluga">Obsługa Social Media</a> · <a href="/performance-marketing/facebook-ads">Facebook Ads</a> · <a href="/performance-marketing/tiktok-ads">TikTok Ads</a>`;
+  } else if (url.includes('/agencja-marketingowa')) {
+    relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/seo/pozycjonowanie">SEO</a>`;
+  } else if (url.includes('/uslugi/')) {
+    relatedLinks = `<a href="/uslugi">Usługi</a> · <a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a>`;
+  } else if (url.includes('/blog/')) {
+    relatedLinks = `<a href="/blog">Blog Marketingowy</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/seo/pozycjonowanie">SEO</a>`;
+  } else if (url.includes('/branze/')) {
+    relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/seo/pozycjonowanie">SEO</a>`;
+  } else {
+    relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/blog">Blog</a>`;
+  }
+
+  const seoSection = `<section id="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;pointer-events:none">
+      <h1>${meta.title.replace(/ \| Fotz.*$/, '')}</h1>
+      <p>${meta.description}</p>
+      <nav>${relatedLinks} · <a href="/">Fotz Studio — Agencja Marketingowa</a> · <a href="/kontakt">Kontakt</a></nav>
+    </section>
+    `;
+  html = html.replace('<div id="root">', seoSection + '<div id="root">');
+
+  return html;
 }
 
 // Main

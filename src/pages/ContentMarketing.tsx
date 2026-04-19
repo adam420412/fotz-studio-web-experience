@@ -151,10 +151,10 @@ export default function ContentMarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Content Marketing | Strategia Treści | Fotz"
-        description="Content marketing dla firm - artykuły SEO, blogi, case studies. Buduj autorytet i pozyskuj klientów treścią. Fotz Studio."
+        title="Co to jest Content Marketing? Definicja, Zalety i Kampania SEO"
+        description="Content marketing dla firm — artykuły SEO, blogi, video content, email marketing. Poznaj definicję, zalety i sprawdź jak działa content marketing. Fotz Studio."
         canonical="https://fotz.pl/content-marketing/strategia"
-        keywords="content marketing, marketing treści, strategia content marketing, seo content, blog firmowy"
+        keywords="content marketing, marketing treści, tworzenie treści, strategia content marketing, content marketing dla firm, blog firmowy, content seo"
       />
 
       <OrganizationSchema />
@@ -725,7 +725,7 @@ export default function ContentMarketing() {
                   className="group block bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-300"
                 >
                   <div className="aspect-video overflow-hidden">
-                    <img
+                    <img loading="lazy"
                       src={study.image}
                       alt={study.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -844,8 +844,111 @@ export default function ContentMarketing() {
       </section>
 
 
+      {/* SEO Article Section */}
+      <section className="section-padding bg-card">
+        <div className="container-wide">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Jak działa content marketing i dlaczego content marketing w firmie jest niezbędny?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Jak działa content marketing? W skrócie: polega on na systematycznym tworzeniu i dystrybuowaniu wartościowego
+              contentu, który odpowiada na pytania i potrzeby Twojej grupy docelowej. Dzięki content marketingowi firma buduje
+              autorytet w branży, zdobywa zaufanie odbiorców i — co najważniejsze — pojawia się wysoko w wynikach wyszukiwania
+              Google na frazy ważne dla jej klientów. To element inbound marketingu, w którym to klient przychodzi do Ciebie,
+              zamiast Ty gonić za klientem komunikatem reklamowym.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Content marketing w firmie przekształca stronę internetową z prostej wizytówki w centrum wiedzy branżowej.
+              Regularne tworzenie treści — artykułów, poradników, case studies, video content — sprawia, że marka staje się
+              pierwszym wyborem potencjalnych klientów szukających rozwiązania swojego problemu. Firmy, które inwestują
+              w content marketing, generują średnio trzy razy więcej leadów przy niższych kosztach niż te opierające się
+              wyłącznie na tradycyjnym podejściu reklamowym.
+            </p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">
+              Formy content marketingu i video content — różne formy marketingu treści
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              Formy content marketingu są bardzo zróżnicowane. Do najpopularniejszych należą: artykuły blogowe i poradniki SEO,
+              video content na YouTube i w social mediach, infografiki, e-booki, webinary, podcasty, newslettery
+              oraz interaktywny content w postaci kalkulatorów, quizów i ankiet. Wybór odpowiedniej formy zależy od preferencji
+              Twojej grupy docelowej oraz etapu marketing funnel, na którym się ona znajduje — inny content przyciągnie
+              nowych odbiorców (ToFu), a inny przekona ich do zakupu (BoFu).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Video content odgrywa coraz ważniejszą rolę w strategii content marketingowej. Krótkie rolki i reelsy zwiększają
+              zasięg organiczny w social media marketingu, podczas gdy dłuższe materiały edukacyjne budują wizerunek eksperta
+              i poprawiają czas spędzany na stronie — kluczowy sygnał rankingowy dla Google.
+            </p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">
+              Content marketing z SEO i inbound marketingu — kompleksowa strategia tworzenia treści
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              Content marketing z SEO to duet, który daje najlepsze rezultaty długoterminowe. Wartościowy content
+              zoptymalizowany pod odpowiednie frazy kluczowe przyciąga ruch organiczny przez miesiące i lata po publikacji.
+              W odróżnieniu od reklam, które przestają działać po wyłączeniu budżetu, treści SEO pracują na Ciebie non-stop.
+              Dlatego tworzenia treści nie warto traktować jako jednorazowego projektu, lecz jako ciągły proces tworzenia
+              strategii content i jej realizacji.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Email marketing stanowi ważne uzupełnienie całej strategii — pozwala na bezpośrednią komunikację
+              z subskrybentami, dystrybucję wartościowego contentu i prowadzenie odbiorców przez marketing funnel od
+              pierwszego kontaktu aż do konwersji. Połączenie SEO, social media marketingu i newslettera to fundament
+              skutecznego inbound marketingu dla firm każdej wielkości.
+            </p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">
+              Tworzenia strategii content — plan działań skutecznego content marketingu
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              Skuteczny content marketing zaczyna się od tworzenia strategii content, która obejmuje: analizę grupy docelowej
+              i jej potrzeb informacyjnych, badanie słów kluczowych, wybór form content marketingu, harmonogram publikacji
+              oraz mierzenie efektów. W Fotz Studio przeprowadzamy audyt obecnych treści, identyfikujemy luki content gap
+              i budujemy plan działań dopasowany do Twoich celów biznesowych.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dzięki content marketingowi realizowanemu zgodnie ze strategią, wyniki są mierzalne i przewidywalne.
+              Śledzimy wzrost ruchu organicznego, pozycje w Google, liczbę leadów z bloga, wskaźniki zaangażowania
+              w social mediach oraz konwersje z newslettera. Każde działanie jest analizowane, a strategia na bieżąco
+              optymalizowana, by maksymalizować zwrot z inwestycji.
+            </p>
+
+            <h3 className="text-2xl font-heading font-bold mb-4">
+              Dane osobowe w content marketingu i newslettery — RODO a email marketing
+            </h3>
+            <p className="text-muted-foreground mb-4">
+              Prowadząc content marketing oparty na email marketingu i newsletterach, firmy muszą przestrzegać przepisów
+              RODO dotyczących ochrony danych osobowych. Zbieranie zgód marketingowych, przechowywanie i przetwarzanie
+              danych osobowych subskrybentów musi odbywać się zgodnie z obowiązującymi regulacjami. W Fotz Studio
+              dbamy o to, by nasze kampanie były w pełni zgodne z RODO — od formularzy zapisu po polityki prywatności
+              i możliwość wypisania się z listy mailingowej.
+            </p>
+            <p className="text-muted-foreground">
+              Prawidłowe podejście do danych osobowych nie tylko chroni firmę przed sankcjami, ale też buduje zaufanie
+              odbiorców — co jest fundamentem skutecznego content marketingu. Transparentność w komunikacji
+              i szanowanie prywatności użytkowników to wartości, które wyróżniają marki stosujące najwyższe standardy
+              marketingu treści.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Related Services */}
-      <RelatedServices 
+      <RelatedServices
         currentService="content-marketing"
         subtitle="Usługi wspierające Twoją strategię content marketingową"
       />

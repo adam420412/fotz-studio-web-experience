@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, ServiceSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, ServiceSchema, WebPageSchema } from "@/components/seo/StructuredData";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -297,9 +297,10 @@ export default function KalkulatorCen() {
   return (
     <>
       <SEOHead
-        title="Kalkulator Cen Usług Marketingowych | Fotz Studio"
-        description="Oblicz wstępny koszt usług marketingowych. Interaktywny kalkulator cen stron WWW, social media, kampanii reklamowych i więcej."
+        title="Kalkulator Cen Usług Marketingowych — Ile Kosztuje Marketing?"
+        description="Kalkulator cen usług marketingowych — oblicz orientacyjny koszt SEO, strony internetowej, kampanii Google Ads i social media dla Twojej firmy. Darmowe…"
         canonical="https://fotz.pl/kalkulator-cen"
+        keywords="kalkulator cen usług marketingowych, ile kosztuje marketing, koszt SEO, koszt strony internetowej, koszt kampanii Google Ads, budżet marketingowy kalkulator"
       />
       <BreadcrumbSchema 
         items={[
@@ -308,10 +309,15 @@ export default function KalkulatorCen() {
           { name: "Kalkulator cen", url: "https://fotz.pl/kalkulator-cen" }
         ]}
       />
-      <ServiceSchema 
+      <ServiceSchema
         name="Kalkulator cen usług marketingowych"
         description="Interaktywny kalkulator wyceny usług marketingowych - strony WWW, social media, kampanie reklamowe."
         provider="Fotz Studio"
+      />
+      <WebPageSchema
+        title="Kalkulator Cen Usług Marketingowych — Fotz Studio"
+        description="Interaktywny kalkulator wyceny usług marketingowych — oblicz koszt SEO, strony internetowej, kampanii Google Ads i social media."
+        url="https://fotz.pl/kalkulator-cen"
       />
       <Layout>
         <TooltipProvider>
@@ -773,6 +779,73 @@ export default function KalkulatorCen() {
             )}
           </AnimatePresence>
         </TooltipProvider>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Kalkulator cen usług marketingowych — oblicz koszt marketingu online
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Kalkulator cen usług marketingowych Fotz Studio pozwala oszacować
+              orientacyjny koszt działań marketingowych dla Twojej firmy.
+              Wybierz usługi, które Cię interesują — SEO i pozycjonowanie,
+              tworzenie strony internetowej, kampanie Google Ads, obsługę social media,
+              produkcję wideo — i sprawdź szacunkowe ceny. Kalkulator daje punkt
+              wyjścia do rozmowy; finalna wycena zawsze przygotowywana jest
+              indywidualnie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Transparentność cenowa to nasz priorytet. Ceny usług marketingowych
+              zależą od zakresu, intensywności i specyfiki branży. Kalkulator
+              prezentuje typowe widełki cenowe dla polskiego rynku marketingowego.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Ile kosztuje pozycjonowanie SEO, strona www i kampanie Google Ads?
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Pozycjonowanie SEO: od 800 zł/mc (lokalna firma, mała witryna)
+              do 5000+ zł/mc (sklep e-commerce, duże serwisy). Strona internetowa:
+              od 2500 zł (landing page) do 20 000+ zł (rozbudowany portal).
+              Kampanie Google Ads: obsługa od 500 zł/mc + budżet reklamowy.
+              Obsługa social media: od 1200 zł/mc (podstawowy pakiet) do 4000+ zł/mc
+              (pełne zarządzanie z reklamami).
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Produkcja wideo: reel 500-1500 zł, spot reklamowy 3000-15 000 zł.
+              Identyfikacja wizualna (logo + brand book): 2000-8000 zł.
+              Sklep internetowy (WooCommerce/Shopify): 5000-25 000 zł.
+              Wszystkie ceny netto, wycena indywidualna bezpłatna.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak planować budżet marketingowy? Ile wydawać na marketing?
+            </h2>
+            <p className="text-muted-foreground">
+              Zalecany budżet marketingowy to 5-15% przychodów firmy, w zależności
+              od branży i etapu rozwoju. Startups inwestują więcej (15-20%), dojrzałe
+              firmy mniej (5-10%). Marketing to inwestycja z mierzalnym zwrotem —
+              kalkulator ROI pomoże Ci ocenić potencjalne efekty przed podjęciem decyzji.
+              Skontaktuj się z nami po indywidualną wycenę i plan działania.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       </Layout>
     </>
   );

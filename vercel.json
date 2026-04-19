@@ -6,6 +6,8 @@
   "redirects": [
     { "source": "/strony-internetowe", "destination": "/uslugi/strony-internetowe", "permanent": true },
     { "source": "/strony-internetowe-:city", "destination": "/uslugi/strony-internetowe/:city", "permanent": true },
+    { "source": "/sklepy-internetowe-:city", "destination": "/uslugi/sklepy-internetowe/:city", "permanent": true },
+    { "source": "/tiktok-ads-gdansk", "destination": "/performance-marketing/tiktok-ads/gdansk", "permanent": true },
     { "source": "/ecommerce-tworzenie-sklepu", "destination": "/uslugi/strony-internetowe/ecommerce", "permanent": true },
     { "source": "/identyfikacja-wizualna", "destination": "/uslugi/branding", "permanent": true },
     { "source": "/spoty-reklamowe", "destination": "/uslugi/produkcja-video", "permanent": true },
@@ -70,6 +72,7 @@
     { "source": "/blog/landing-page", "destination": "/blog/jak-stworzyc-landing-page", "permanent": true },
     { "source": "/blog/reels-vs-tiktok", "destination": "/social-media/reels-vs-tiktok", "permanent": true },
     { "source": "/blog/google-vs-facebook", "destination": "/performance-marketing/google-vs-facebook", "permanent": true },
+    { "source": "/blog/google-ads-poradnik", "destination": "/performance-marketing/google-ads", "permanent": true },
     { "source": "/blog/seo-lokalne-poznan", "destination": "/seo/lokalne-poznan", "permanent": true },
     { "source": "/blog/budzet-marketingowy", "destination": "/blog/budzet-marketingowy-planowanie", "permanent": true },
     { "source": "/blog/koszt-strony-internetowej", "destination": "/blog/ile-kosztuje-strona-internetowa", "permanent": true },
@@ -100,10 +103,13 @@
     { "source": "/case-study-lauvjah", "destination": "/realizacje/lauvjah", "permanent": true },
     { "source": "/realizacje/fps", "destination": "/realizacje/fps-cegielski", "permanent": true },
     { "source": "/realizacje/graf", "destination": "/realizacje/graf-tapicerstwo", "permanent": true },
-    { "source": "/login", "destination": "/akademia/auth", "permanent": true },
+    { "source": "/akademia", "destination": "/zasoby", "permanent": true },
+    { "source": "/akademia/:path*", "destination": "/zasoby", "permanent": true },
+    { "source": "/login", "destination": "/zasoby", "permanent": true },
     { "source": "/agencja-social-media-poznan", "destination": "/social-media/poznan", "permanent": true },
     { "source": "/landing-page", "destination": "/blog/jak-stworzyc-landing-page", "permanent": true },
-    { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true }
+    { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true },
+    { "source": "/content-marketing/tresci-seo", "destination": "/content-marketing/strategia", "permanent": true }
   ],
   "rewrites": [
     { "source": "/:path*", "destination": "/index.html" }
@@ -170,6 +176,12 @@
       "headers": [
         { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
         { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]
     },
     {

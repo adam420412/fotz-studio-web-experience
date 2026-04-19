@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader2, Calendar, Calculator, ArrowRight } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -12,7 +13,7 @@ import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { SEOHead } from "@/components/seo/SEOHead";
-import { BreadcrumbSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
+import { BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 const contactSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -137,10 +138,12 @@ export default function Kontakt() {
   };
 
   return (
-    <Layout>
+    <>
+      <OrganizationSchema />
+      <Layout>
       <SEOHead
-        title="Kontakt | Fotz Studio Poznań"
-        description="Skontaktuj się z Fotz Studio. Biuro: Plac Wolności 16, Poznań. Tel: +48 790 814 814. Umów bezpłatną konsultację."
+        title="Kontakt z Fotz Studio | Fotz Studio"
+        description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i…"
         canonical="https://fotz.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"
       />
@@ -451,6 +454,70 @@ export default function Kontakt() {
           </div>
         </div>
       </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Skontaktuj się z nami — agencja marketingowa Fotz Studio Poznań
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Fotz Studio to agencja marketingowa z Poznania. Jesteśmy dostępni przez
+              formularz kontaktowy, e-mail, telefon i osobiście w biurze. Każde zapytanie
+              traktujemy priorytetowo — odpowiadamy w ciągu 24 godzin roboczych.
+              Niezależnie od etapu Twojego projektu — czy dopiero planujesz, czy potrzebujesz
+              szybkiej pomocy — skontaktuj się z nami.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Bezpłatna konsultacja marketingowa dostępna dla nowych klientów. Podczas
+              konsultacji omawiamy aktualną sytuację online Twojej firmy, potencjał
+              SEO i reklam płatnych oraz możliwości współpracy. Bez zobowiązań,
+              bez ukrytych opłat.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Jak nawiązać współpracę z agencją marketingową? Proste kroki do startu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Nawiązanie współpracy z Fotz Studio jest proste: wyślij zapytanie przez formularz
+              lub e-mail → umówimy bezpłatną konsultację (online lub w biurze) → przygotujemy
+              ofertę dopasowaną do Twoich celów → podpiszemy umowę i zaczynamy działać.
+              Typowy czas od pierwszego kontaktu do startu projektu to 1-2 tygodnie.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Pracujemy z firmami z całej Polski zdalnie — spotkania przez Zoom lub Google Meet,
+              komunikacja przez e-mail i Slack, dostęp do raportów online 24/7.
+              Jeśli jesteś z Poznania lub Wielkopolski, zapraszamy też do biura.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Zapytaj o ofertę SEO, stronę internetową, kampanię reklamową lub social media
+            </h2>
+            <p className="text-muted-foreground">
+              Fotz Studio realizuje projekty w zakresie: tworzenia stron internetowych
+              i sklepów e-commerce, pozycjonowania SEO, kampanii Google Ads i Meta Ads,
+              obsługi social media, content marketingu, produkcji wideo i identyfikacji
+              wizualnej. Wypełnij formularz kontaktowy, opisując swoje potrzeby —
+              przygotujemy wstępną ofertę w ciągu 48 godzin.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/realizacje" className="text-primary hover:underline font-medium text-sm">→ Realizacje</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
     </Layout>
+    </>
   );
 }

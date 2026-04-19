@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -68,7 +68,8 @@ const StronyInternetoweZielonaGora = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej? Nasza agencja specjalizuje się w projektowaniu nowoczesnych stron www.",
       "Zielona Góra to dynamiczne centrum biznesowe Lubuskiego. Twoja strona będzie efektywna w pozyskiwaniu klientów.",
-      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO."
+      "Każda strona jest tworzona z myślą o użytkowniku i zoptymalizowana pod SEO.",
+      "Zielona Góra to stolica województwa lubuskiego z wyjątkową tożsamością – znana z tradycji winiarskich i rosnącego sektora technologicznego. Profesjonalna strona www pomaga lokalnym firmom wyróżnić się na dynamicznie rosnącym rynku."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -76,15 +77,18 @@ const StronyInternetoweZielonaGora = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Zielona Góra | Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Zielona Góra. Profesjonalne projektowanie stron www, sklepy e-commerce, pozycjonowanie SEO dla firm z Zielonej Góry."
+        title="Strony Internetowe Zielona Góra | Fotz Studio"
+        description="Strony internetowe Zielona Góra — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zielonej Góry…"
         canonical="https://fotz.pl/uslugi/strony-internetowe/zielona-gora"
-        keywords="strony internetowe zielona góra, tworzenie stron www zielona góra, projektowanie stron zielona góra"
+        keywords="strony internetowe zielona góra, tworzenie stron zielona góra, strony www zielona góra, projektowanie stron zielona góra"
       />
       
       <ServiceSchema name="Strony Internetowe Zielona Góra" description="Tworzenie stron internetowych dla firm z Zielonej Góry." provider="FOTZ Studio" areaServed="Zielona Góra" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Zielona Góra", url: "https://fotz.pl/uslugi/strony-internetowe/zielona-gora" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -93,7 +97,7 @@ const StronyInternetoweZielonaGora = () => {
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="text-center max-w-5xl mx-auto">
               <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary/10 border border-primary/20 rounded-full text-primary text-sm font-medium mb-8"><Sparkles className="w-4 h-4" />Strony WWW Zielona Góra<Sparkles className="w-4 h-4" /></span>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold mb-8">Strony Internetowe{" "}<span className="text-gradient">Zielona Góra</span></h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"><strong className="text-foreground">Profesjonalna strona internetowa to podstawa sukcesu.</strong>{" "}Tworzymy strony www dla zielonogórskich firm.</p>
+              <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto"><strong className="text-foreground">Strony internetowe Zielona Góra — tworzenie stron www i sklepy internetowe dla Lubuskiego.</strong>{" "}Projektowanie i tworzenie stron www Zielona Góra dla firm z regionu lubuskiego — strony internetowe od 499 zł, responsywne i zoptymalizowane SEO.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 <Button asChild size="lg" className="px-8 py-6"><Link to="/kontakt">Bezpłatna wycena<ArrowRight className="ml-2 h-5 w-5" /></Link></Button>
                 <Button asChild variant="outline" size="lg" className="px-8 py-6"><a href="tel:+48790814814"><Phone className="mr-2 h-5 w-5" />+48 790 814 814</a></Button>
@@ -115,7 +119,7 @@ const StronyInternetoweZielonaGora = () => {
 
         <section className="py-24">
           <div className="container mx-auto px-4"><div className="text-center mb-16"><h2 className="text-3xl md:text-4xl font-heading font-bold">Nasze projekty</h2></div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">{caseStudies.map((study, i) => (<Link key={i} to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30"><div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" /></div><div className="p-6"><span className="text-primary text-sm font-medium">{study.category}</span><h3 className="text-xl font-semibold mt-2 mb-2">{study.title}</h3><p className="text-muted-foreground">{study.result}</p></div></Link>))}</div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">{caseStudies.map((study, i) => (<Link key={i} to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30"><div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" /></div><div className="p-6"><span className="text-primary text-sm font-medium">{study.category}</span><h3 className="text-xl font-semibold mt-2 mb-2">{study.title}</h3><p className="text-muted-foreground">{study.result}</p></div></Link>))}</div>
           </div>
         </section>
 
@@ -127,6 +131,56 @@ const StronyInternetoweZielonaGora = () => {
             <div className="max-w-3xl mx-auto"><Accordion type="single" collapsible className="space-y-4">{faqItems.map((item, i) => (<AccordionItem key={i} value={`item-${i}`} className="border border-border/50 rounded-xl px-6 bg-card/50"><AccordionTrigger className="text-left py-6">{item.question}</AccordionTrigger><AccordionContent className="text-muted-foreground pb-6">{item.answer}</AccordionContent></AccordionItem>))}</Accordion></div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Zielona Góra — tworzenie stron www dla firm z Lubuskiego
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Zielona Góra to stolica województwa lubuskiego i centrum życia akademickiego i kulturalnego regionu. Miasto winnic (Winobranie!), Uniwersytet Zielonogórski i rosnący klaster IT tworzą nieoczekiwanie dynamiczny rynek dla profesjonalnych stron internetowych. Firmy z Zielonej Góry obsługują klientów zarówno lokalnych, jak i z pobliskich Niemiec — stąd potrzeba dwujęzycznych stron www.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Zielonej Góry i całego Lubuskiego — Gorzów Wielkopolski, Nowa Sól, Żagań. Projekt w Figmie, wdrożenie online, optymalizacja SEO. Termin: 3–5 tygodni. Bezpłatna wycena w 24 godziny.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Winiarstwo, IT i usługi — zielonogórski miks branżowy
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Winnice i producenci win z okolic Zielonej Góry potrzebują stron z eleganckim designem, systemem sprzedaży online i angielską wersją dla turystów winnych z całej Europy. Projektujemy strony dla winnic i agroturystyki, które zachwycają wizualnie i konwertują odwiedzających w kupujących.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Sektor IT i startupy z Zielonej Góry potrzebują nowoczesnych, szybkich stron w technologii React/Next.js — takich, które nie wstydzą się w środowisku technologicznym. Tworzymy strony na poziomie światowych standardów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO i dwujęzyczność — widoczność w Polsce i Niemczech
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Firmy z Zielonej Góry obsługujące klientów z Niemiec potrzebują stron PL/DE z hreflang i osobnymi meta tagami. Optymalizujemy strony na obydwa rynki jednocześnie — bez kompromisów w zakresie wydajności.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena, projekt w 3–5 tygodni. Strony internetowe dla firm z Zielonej Góry i Lubuskiego.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

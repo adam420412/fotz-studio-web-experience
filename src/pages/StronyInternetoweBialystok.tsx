@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -75,7 +75,8 @@ const StronyInternetoweBialystok = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Białymstoku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Białystok to dynamicznie rozwijające się centrum biznesowe Podlasia. Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Białystok, jako stolica Podlasia, łączy tradycję z nowoczesnością. Lokalne firmy z sektora handlu, usług i produkcji coraz chętniej inwestują w profesjonalne strony internetowe jako motor wzrostu."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -83,15 +84,18 @@ const StronyInternetoweBialystok = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Białystok | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Białystok. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO."
+        title="Strony Internetowe Białystok | Fotz Studio"
+        description="Strony internetowe Białystok — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Białegostoku. Fotz…"
         canonical="https://fotz.pl/uslugi/strony-internetowe/bialystok"
-        keywords="strony internetowe białystok, tworzenie stron www białystok, projektowanie stron białystok, sklepy internetowe białystok"
+        keywords="strony internetowe białystok, tworzenie stron białystok, strony www białystok, projektowanie stron białystok"
       />
       
       <ServiceSchema name="Strony Internetowe Białystok" description="Profesjonalne tworzenie stron internetowych dla firm z Białegostoku." provider="FOTZ Studio" areaServed="Białystok" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Białystok", url: "https://fotz.pl/uslugi/strony-internetowe/bialystok" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -165,7 +169,7 @@ const StronyInternetoweBialystok = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {caseStudies.map((study, index) => (
                 <Link key={index} to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all">
-                  <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                  <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                   <div className="p-6">
                     <span className="text-primary text-sm font-medium">{study.category}</span>
                     <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -199,6 +203,81 @@ const StronyInternetoweBialystok = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Białystok — tworzenie stron www dla firm z Podlasia
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Białystok to największe miasto wschodniej Polski i centrum gospodarcze
+              Podlasia. Lokalna gospodarka opiera się na przemyśle spożywczym
+              (Mlekpol, Bialski), medycznym (Uniwersytet Medyczny), akademickim
+              i rosnącym sektorze e-commerce. Firmy z regionu coraz aktywniej
+              rozwijają sprzedaż online — i potrzebują profesjonalnych stron www,
+              które im w tym pomagają.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Białystok jest też bramą do rynku wschodniej Europy i Litwy.
+              Część firm z regionu obsługuje klientów z Litwy, Białorusi (rynek UE)
+              i Ukrainy — co oznacza potrzebę stron wielojęzycznych.
+              Projektujemy strony internetowe z pełną obsługą i18n (PL/EN/LT/UK)
+              bez kompromisów w zakresie wydajności i pozycjonowania.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              E-commerce i handel online — Białystok i region Podlaski
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Rynek e-commerce w Białymstoku i regionie rośnie dynamicznie.
+              Lokalni producenci żywności, odzieży i wyrobów rzemieślniczych
+              coraz częściej sprzedają przez internet — zarówno na platformach
+              jak Allegro i Amazon, jak i przez własne sklepy online.
+              Tworzymy sklepy e-commerce w WooCommerce i Shopify, integrując je
+              z systemami magazynowymi i kurierskimi.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla małych i średnich firm handlowych z Białegostoku projektujemy
+              przystępne strony wizytówkowe i katalogowe — funkcjonalne, szybkie
+              i zoptymalizowane pod lokalny Google. Czas realizacji: 3–5 tygodni,
+              cena: od 2000 zł. Bez ukrytych kosztów, z pełnym transferem dostępów.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Lokalne SEO w Białymstoku — bądź widoczny w Google dla klientów z Podlasia
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Optymalizacja lokalna dla firm z Białegostoku oznacza widoczność pod frazami
+              „usługa + Białystok", „usługa + Podlasie" i w Google Maps.
+              Konfigurujemy profil Google Moja Firma, zbieramy opinie i dbamy o spójność
+              NAP (nazwa, adres, telefon) na wszystkich platformach.
+              Dla firm obsługujących klientów z okolic — Suwałki, Łomża, Augustów —
+              rozszerzamy zasięg o frazy regionalne.
+            </p>
+            <p className="text-muted-foreground">
+              Jeśli prowadzisz firmę w Białymstoku lub na Podlasiu i potrzebujesz
+              profesjonalnej strony internetowej — skontaktuj się z nami.
+              Bezpłatna wycena w 24 godziny, zdalny model współpracy,
+              pełna optymalizacja SEO. Zacznij pozyskiwać klientów przez internet.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

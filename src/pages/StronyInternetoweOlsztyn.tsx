@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetoweOlsztyn = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Olsztynie? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Olsztyn to centrum Warmii i Mazur – regionu słynącego z jezior i natury. Firmy turystyczne, hotelarskie i lokalne usługowe mają tu ogromne możliwości pozyskania klientów przez internet."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetoweOlsztyn = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Olsztyn | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Olsztyn. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Olsztyna."
+        title="Strony Internetowe Olsztyn | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Olsztyn — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Olsztyna. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/olsztyn"
-        keywords="strony internetowe olsztyn, tworzenie stron www olsztyn, projektowanie stron olsztyn, sklepy internetowe olsztyn"
+        keywords="strony internetowe olsztyn, tworzenie stron olsztyn, strony www olsztyn, projektowanie stron olsztyn"
       />
       
       <ServiceSchema name="Strony Internetowe Olsztyn" description="Profesjonalne tworzenie stron internetowych dla firm z Olsztyna." provider="FOTZ Studio" areaServed="Olsztyn" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Olsztyn", url: "https://fotz.pl/uslugi/strony-internetowe/olsztyn" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -180,7 +184,7 @@ const StronyInternetoweOlsztyn = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,77 @@ const StronyInternetoweOlsztyn = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Olsztyn — tworzenie stron www dla firm z Warmii i Mazur
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Olsztyn to stolica jednego z najbardziej atrakcyjnych turystycznie
+              regionów w Polsce — Warmii i Mazur. Jeziora, lasy, Wielkie Jeziora Mazurskie
+              i Kanał Elbląski przyciągają rocznie miliony turystów, co tworzy ogromny popyt
+              na profesjonalne strony internetowe: hotele, pensjonaty, agencje turystyczne,
+              wypożyczalnie jachtów i kajaków, restauracje i agroturystyki.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Olsztyn jest też centrum usług, akademickim (UWM — 14 wydziałów) i rosnącym
+              centrum logistycznym. Firmy spoza turystyki — producenci mebli, firmy budowlane,
+              biura rachunkowe, gabinety medyczne — coraz częściej inwestują w obecność
+              online, by dotrzeć do klientów z całego regionu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla turystyki i agroturystyki — region Warmii i Mazur
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Projektujemy strony dla obiektów turystycznych z naciskiem na piękne
+              galerie zdjęć, systemy rezerwacji online (BookingSync, Bookero),
+              integrację z Google Maps i wielojęzyczność (PL/EN/DE) dla gości z Niemiec,
+              Skandynawii i Ukrainy. Strona hotelu czy pensjonatu musi być wizualnie
+              zachwycająca — każde zdjęcie to argument za rezerwacją.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Tworzymy też strony dla firm usługowych z Olsztyna — gabinetów stomatologicznych,
+              fizjoterapeutycznych, kancelarii i firm budowlanych. Każda strona jest
+              zoptymalizowana pod lokalne frazy — „usługa + Olsztyn" — by klienci szukający
+              usług w mieście trafiali właśnie do Ciebie, a nie do konkurencji.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO sezonowe i całoroczna widoczność — wyzwanie turystycznego regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Firmy turystyczne z Warmii i Mazur mierzą się z wyzwaniem sezonowości —
+              szczyt ruchu latem, cisza zimą. Budujemy strategie SEO i contentu,
+              które generują ruch całorocznie: zimowe pakiety weekendowe, oferty
+              dla firm (team building na Mazurach), spływy kajakowe wiosną i jesienią.
+              Strona to inwestycja na cały rok, nie tylko na sezon.
+            </p>
+            <p className="text-muted-foreground">
+              Zdalny model współpracy sprawia, że obsługa firm z Olsztyna jest tak samo
+              sprawna jak z Warszawy czy Krakowa. Projekt w 3–5 tygodni, bezpłatna wycena
+              w 24 godziny. Skontaktuj się z nami i opowiedz o swoim biznesie —
+              stworzymy stronę, która będzie pracować dla Ciebie przez cały rok.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>

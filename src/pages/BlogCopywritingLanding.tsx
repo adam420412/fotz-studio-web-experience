@@ -34,10 +34,11 @@ export default function BlogCopywritingLanding() {
   return (
     <Layout>
       <SEOHead
-        title="Copywriting dla landing pages - jak pisać teksty, które konwertują | FOTZ Studio"
-        description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów, które zwiększają konwersję."
+        title="Copywriting dla Landing Page — Jak Pisać Teksty, które Konwertują"
+        description="Copywriting landing page — jak pisać teksty sprzedażowe, które konwertują. Nagłówki, CTA, storytelling. Praktyczny poradnik copywritingu dla stron…"
+        ogType="article"
         canonical="https://fotz.pl/content-marketing/copywriting-landing"
-        keywords="copywriting landing page, jak pisać landing page, teksty na stronę, headline, CTA, konwersja"
+        keywords="copywriting landing page, teksty na landing page, copywriter strona internetowa, copywriting sprzedażowy, teksty reklamowe"
       />
       <ArticleSchema
         title="Copywriting dla landing pages - jak pisać teksty, które konwertują"
@@ -97,7 +98,7 @@ export default function BlogCopywritingLanding() {
       <section className="section-padding pt-0 bg-background">
         <div className="container-wide">
           <div className="max-w-5xl mx-auto">
-            <img 
+            <img loading="lazy" 
               src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2073"
               alt="Copywriting dla landing pages"
               className="w-full rounded-2xl aspect-video object-cover"
@@ -349,6 +350,25 @@ export default function BlogCopywritingLanding() {
           </div>
         </div>
       </section>
+
+            {/* SEO Article Section */}
+            <div className="mt-12 pt-12 border-t border-border">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Copywriting na stronie lądowania — dlaczego tekst decyduje o konwersji?</h2>
+              <p className="text-muted-foreground mb-6">Copywriting to dusza każdej strony lądowania. Piękny design bez przekonującego tekstu nie konwertuje. Dobry copywriting strony lądowania prowadzi użytkownika przez lejek: zrozumienie problemu → prezentacja rozwiązania → budowanie zaufania → wezwanie do działania. Każde zdanie musi mieć cel.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">SEO copywriting i copy sprzedażowy — tworzenie tekstów dla firm w Fotz Studio</h2>
+              <p className="text-muted-foreground mb-6">Fotz Studio tworzy copy dla stron lądowania, stron usługowych, reklam Google Ads i Meta Ads oraz emaili sprzedażowych. Nasi copywriterzy łączą techniki copywritingu sprzedażowego z optymalizacją SEO — teksty, które zarówno wyróżniają się w wynikach wyszukiwania, jak i konwertują odwiedzających.</p>
+
+              <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Copywriting dla Twojej strony — zwiększ konwersję z profesjonalnym tekstem</h2>
+              <p className="text-muted-foreground">Chcesz poprawić konwersję swojej strony lub landing page? Fotz Studio audytuje istniejące teksty i pisze nowy copy zoptymalizowany pod konwersję. Skontaktuj się z nami — pierwsze konsultacje są bezpłatne.</p>
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
+            </div>
+            </div>
+
 
       {/* Related Articles */}
       <RelatedArticles currentArticleId="copywriting-landing-page" />

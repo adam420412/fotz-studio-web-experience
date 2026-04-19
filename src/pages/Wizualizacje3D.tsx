@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 import { RelatedServices } from "@/components/sections/RelatedServices";
-import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import { ServiceSchema, BreadcrumbSchema, FAQSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
 // Lazy load the 3D viewer for performance
 const ModelViewer3D = lazy(() => import("@/components/ModelViewer3D").then(module => ({ default: module.ModelViewer3D })));
@@ -406,8 +406,8 @@ const Wizualizacje3D = () => {
   return (
     <>
       <SEOHead
-        title="Wizualizacje 3D Poznań | Renderingi Wnętrz | Fotz"
-        description="Wizualizacje 3D wnętrz, architektoniczne i produktowe. Fotorealistyczne renderingi, animacje i panoramy 360°. Studio Fotz Poznań."
+        title="Wizualizacje 3D Poznań | Fotz Studio"
+        description="Wizualizacje 3D Poznań — profesjonalne renderingi architektoniczne, wizualizacje wnętrz i produktów. Animacje 3D, virtual tour, prezentacje inwestycji…"
         canonical="https://fotz.pl/wizualizacje-3d"
         keywords="wizualizacje 3D, wizualizacje architektoniczne, wizualizacje wnętrz, renderingi 3D, animacje 3D, Poznań"
       />
@@ -428,6 +428,9 @@ const Wizualizacje3D = () => {
       />
       
       <FAQSchema items={faqItems} />
+      
+      <OrganizationSchema />
+
       
       <Layout>
         {/* Hero Section */}
@@ -651,7 +654,7 @@ const Wizualizacje3D = () => {
                       className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer"
                       onClick={() => setSelectedImage(portfolioImages.indexOf(image))}
                     >
-                      <img
+                      <img loading="lazy"
                         src={image.src}
                         alt={image.title}
                         className="w-full h-full object-cover"
@@ -712,7 +715,7 @@ const Wizualizacje3D = () => {
                   className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group"
                   onClick={() => setSelectedImage(index)}
                 >
-                  <img
+                  <img loading="lazy"
                     src={image.src}
                     alt={image.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -909,6 +912,78 @@ const Wizualizacje3D = () => {
         </section>
 
         {/* Related Services */}
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Wizualizacje 3D Poznań — renderingi architektoniczne i wizualizacje wnętrz
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Wizualizacje 3D Fotz Studio w Poznaniu to profesjonalne renderingi dla
+              deweloperów, architektów, projektantów wnętrz i firm produkcyjnych.
+              Tworzymy fotorealistyczne wizualizacje architektoniczne budynków i osiedli,
+              wizualizacje wnętrz mieszkalnych i komercyjnych oraz wizualizacje produktów
+              na potrzeby e-commerce i katalogów. Renderingi 3D zastępują kosztowne
+              sesje fotograficzne i pozwalają prezentować produkty i nieruchomości
+              jeszcze przed ich realizacją.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Jakość naszych wizualizacji 3D jest na poziomie fotorealizmu — renderingi
+              są nie do odróżnienia od prawdziwych zdjęć. Używamy najnowszych technologii:
+              3ds Max, Corona Renderer, V-Ray, Blender — dopasowujemy workflow do specyfiki
+              projektu.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Renderingi 3D dla deweloperów i architektów — prezentacja inwestycji
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Dla branży deweloperskiej realizujemy kompleksowe wizualizacje inwestycji:
+              renderingi zewnętrzne budynków, wizualizacje zagospodarowania terenu,
+              animacje 3D przedstawiające finalizację budowy oraz wirtualne spacery
+              po mieszkaniach i lokalach usługowych. To podstawowe narzędzia sprzedaży
+              nieruchomości w fazie off-plan.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Architekci i biura projektowe korzystają z naszych usług wizualizacji 3D
+              do prezentacji projektów inwestorom i klientom. Renderingi 3D eliminują
+              niezrozumienie rysunków technicznych — każdy klient zobaczy dokładnie
+              jak będzie wyglądać realizacja.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Wizualizacje produktów 3D, animacje i virtual tour — nowoczesna prezentacja oferty
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Wizualizacje produktów 3D to alternatywa dla sesji fotograficznych —
+              szybsza, tańsza i dająca pełną kontrolę nad światłem, tłem i wariantami
+              kolorystycznymi. Sklepy e-commerce, katalogi i materiały reklamowe zyskują
+              na jakości przy niższych kosztach produkcji.
+            </p>
+            <p className="text-muted-foreground">
+              Animacje 3D i virtual tour to nowoczesne formaty prezentacji, które
+              zachwycają klientów i zwiększają konwersję. Skontaktuj się z Fotz Studio,
+              by wycenić wizualizacje 3D dla Twojego projektu — renderingi architektoniczne,
+              wnętrz lub produktów.
+            </p>
+          
+            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
+              <Link to="/uslugi/branding" className="text-primary hover:underline font-medium text-sm">→ Branding</Link>
+              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
+              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
         <RelatedServices 
           currentService="wizualizacje-3d"
           subtitle="Usługi uzupełniające wizualizacje i prezentację produktów"

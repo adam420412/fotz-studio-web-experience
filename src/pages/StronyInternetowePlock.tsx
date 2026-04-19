@@ -7,7 +7,7 @@ import {
   Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -78,7 +78,8 @@ const StronyInternetowePlock = () => {
     paragraphs: [
       "Szukasz profesjonalnego partnera do stworzenia strony internetowej dla Twojej firmy w Płocku? Nasza agencja specjalizuje się w projektowaniu i wdrażaniu nowoczesnych stron www.",
       "Twoja strona internetowa będzie nie tylko estetyczna, ale również efektywna w pozyskiwaniu klientów.",
-      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych."
+      "Każda strona www jest tworzona z myślą o użytkowniku końcowym i zoptymalizowana pod kątem wyszukiwarek internetowych.",
+      "Płock to centrum polskiego przemysłu petrochemicznego i siedziba PKN Orlen. Lokalne firmy – dostawcy, usługodawcy i handlowcy – potrzebują profesjonalnych stron internetowych, by wyróżnić się w tym specjalistycznym środowisku biznesowym."
     ],
     videoSrc: "/videos/fotz-reel.mp4"
   };
@@ -86,15 +87,18 @@ const StronyInternetowePlock = () => {
   return (
     <>
       <SEOHead
-        title="Strony Internetowe Płock | Projektowanie i Tworzenie Stron WWW | FOTZ"
-        description="Strony internetowe Płock. Profesjonalne projektowanie i tworzenie stron www, sklepy e-commerce, pozycjonowanie SEO. Tworzenie stron dla firm z Płocka."
+        title="Strony Internetowe Płock | Tworzenie i Projektowanie Stron WWW"
+        description="Strony internetowe Płock — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Płocka. Fotz Studio."
         canonical="https://fotz.pl/uslugi/strony-internetowe/plock"
-        keywords="strony internetowe płock, tworzenie stron www płock, projektowanie stron płock, sklepy internetowe płock"
+        keywords="strony internetowe płock, tworzenie stron płock, strony www płock, projektowanie stron płock"
       />
       
       <ServiceSchema name="Strony Internetowe Płock" description="Profesjonalne tworzenie stron internetowych dla firm z Płocka." provider="FOTZ Studio" areaServed="Płock" />
       <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Płock", url: "https://fotz.pl/uslugi/strony-internetowe/plock" }]} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
+
+      <OrganizationSchema />
+
 
       <Layout>
         {/* Hero */}
@@ -180,7 +184,7 @@ const StronyInternetowePlock = () => {
               {caseStudies.map((study, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Link to={study.link} className="group block rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/30 transition-all hover:shadow-2xl hover:shadow-primary/10">
-                    <div className="aspect-video overflow-hidden"><img src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
+                    <div className="aspect-video overflow-hidden"><img loading="lazy" src={study.image} alt={study.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /></div>
                     <div className="p-6">
                       <span className="text-primary text-sm font-medium">{study.category}</span>
                       <h3 className="text-xl font-semibold mt-2 mb-2 group-hover:text-primary transition-colors">{study.title}</h3>
@@ -218,6 +222,56 @@ const StronyInternetowePlock = () => {
             </div>
           </div>
         </section>
+
+      {/* SEO Article Section */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="prose prose-lg max-w-none"
+          >
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+              Strony internetowe Płock — tworzenie stron www dla firm z regionu
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Płock to miasto nafty i chemii — siedziba PKN Orlen, jednej z największych firm w Polsce, i centrum branży petrochemicznej w Polsce Centralnej. Rynek lokalny jest powiązany z sektorem energetycznym, ale też dynamicznie się dywersyfikuje. Usługi, handel i sektor MŚP rosną — i potrzebują profesjonalnych stron www by dotrzeć do klientów z Mazowsza i całej Polski.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Obsługujemy firmy z Płocka i regionu — Sierpc, Gostynin, Kutno. Projekt graficzny w Figmie, wdrożenie w React lub WordPress, optymalizacja SEO. Termin: 3–5 tygodni, wycena bezpłatna w 24 godziny.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              Strony www dla firm z sektora energetycznego i B2B
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Dostawcy i kooperanci PKN Orlen potrzebują solidnych stron korporacyjnych z sekcją portfolio, certyfikatów i kontaktów dla partnerów instytucjonalnych. Tworzymy strony B2B, które budują wiarygodność i ułatwiają pozyskiwanie kontraktów w sektorze energetycznym i przemysłowym.
+            </p>
+            <p className="text-muted-foreground mb-6">
+              Dla lokalnych firm usługowych projektujemy przystępne strony wizytówkowe z naciskiem na lokalne SEO. Każda strona jest zoptymalizowana pod frazy z geolokalizacją — „usługa + Płock" — i konfigurowana w Google Moja Firma.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold mb-6">
+              SEO lokalne dla firm z Płocka — Google Moja Firma i lokalna widoczność
+            </h2>
+            <p className="text-muted-foreground mb-4">
+              Lokalne frazy to najtańszy sposób na pozyskanie klientów z okolicy. Optymalizujemy strony pod frazy z Płocka i regionu, konfigurujemy profil Google Moja Firma i budujemy widoczność w mapach Google. Podwójna widoczność — organic i mapy — bez stałych kosztów reklamy.
+            </p>
+            <p className="text-muted-foreground">
+              Skontaktuj się z nami — bezpłatna wycena w 24 godziny. Strony internetowe dla firm z Płocka tworzymy z pasją i precyzją.
+            </p>
+          
+                        <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
+              <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe — oferta</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
+              <Link to="/social-media/obsluga" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
 
         <ContactSection />
       </Layout>
