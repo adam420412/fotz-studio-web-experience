@@ -59,8 +59,12 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Syne', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['Geist', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['Geist', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        geist: ['Geist', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'geist-mono': ['Geist Mono', 'ui-monospace', 'Menlo', 'monospace'],
+        syne: ['Syne', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -112,6 +116,8 @@ export default {
         'hero-gradient': 'linear-gradient(135deg, hsl(240 10% 4%) 0%, hsl(240 10% 8%) 50%, hsl(240 10% 4%) 100%)',
         'card-gradient': 'linear-gradient(180deg, hsl(240 10% 8%) 0%, hsl(240 10% 5%) 100%)',
         'accent-gradient': 'linear-gradient(135deg, hsl(18 100% 60%) 0%, hsl(30 100% 55%) 100%)',
+        'brand-grad': 'linear-gradient(135deg, rgb(120,20,60) 0%, rgb(80,20,70) 50%, rgb(20,40,80) 100%)',
+        'brand-grad-text': 'linear-gradient(135deg, rgb(230,130,170) 0%, rgb(120,170,230) 100%)',
       },
     },
   },
