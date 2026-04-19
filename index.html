@@ -223,6 +223,21 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      // Kill-switch: unregister any previously installed service worker
+      // and clear caches. A stale PWA was serving cached index.html that
+      // referenced deleted JS hashes, causing infinite preloader.
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          for (var i = 0; i < regs.length; i++) regs[i].unregister();
+        });
+        if (window.caches) {
+          caches.keys().then(function (keys) {
+            keys.forEach(function (k) { caches.delete(k); });
+          });
+        }
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
