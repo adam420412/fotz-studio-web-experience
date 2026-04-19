@@ -1,13 +1,9 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { FAQSchema } from "@/components/seo/StructuredData";
+import { ChevronDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export function HomeFAQ() {
   const { t } = useLanguage();
@@ -103,7 +99,6 @@ export function HomeFAQ() {
     },
   ];
 
-  // Prepare FAQ data for schema
   const faqSchemaItems = faqs.map((faq) => ({
     question: faq.question,
     answer: faq.answer,
@@ -112,78 +107,93 @@ export function HomeFAQ() {
   return (
     <>
       <FAQSchema items={faqSchemaItems} />
-      <section className="py-24 md:py-32 px-6 md:px-12 lg:px-24 bg-background relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full blur-[200px]"
-          style={{ background: "hsla(209, 69%, 19%, 0.1)" }}
-        />
-      </div>
-
-      <div className="container-wide relative z-10">
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7 }}
-          className="text-center mb-12"
-        >
-          <motion.span
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="inline-block text-sm font-medium text-primary uppercase tracking-wider mb-4"
-          >
-            FAQ
-          </motion.span>
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">
-            {t("Najczęściej zadawane", "Frequently asked")}{" "}
-            <span className="text-gradient-premium">{t("pytania", "questions")}</span>
-          </h2>
-        </motion.div>
-
-        {/* FAQ Accordion */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-4xl mx-auto"
-        >
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="bg-card border border-border/50 rounded-xl px-6 data-[state=open]:border-primary/30 transition-colors"
+      <section
+        className="relative overflow-hidden"
+        style={{ background: "var(--dv-ink)" }}
+      >
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
+            {/* Left — heading */}
+            <div>
+              <span className="dv-eyebrow mb-6 inline-block">FAQ</span>
+              <h2
+                className="font-geist"
+                style={{
+                  fontSize: "clamp(36px, 4vw, 64px)",
+                  letterSpacing: "-0.035em",
+                  lineHeight: 1.05,
+                  fontWeight: 400,
+                }}
               >
-                <AccordionTrigger className="text-left font-heading font-semibold py-5 hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-foreground/70 pb-5 leading-relaxed">
-                  {faq.answer}{" "}
-                  {faq.link && (
-                    <Link 
-                      to={faq.link.url} 
-                      className="text-primary hover:underline font-medium inline-flex items-center gap-1"
-                    >
-                      {faq.link.text} →
-                    </Link>
-                  )}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </motion.div>
-      </div>
+                {t("Najczęściej zadawane", "Frequently asked")}
+                <br />
+                <span className="dv-text-grad italic">{t("pytania", "questions")}</span>
+              </h2>
+            </div>
+
+            {/* Right — accordion */}
+            <div className="space-y-0">
+              {faqs.map((faq, index) => (
+                <FAQItem key={index} faq={faq} />
+              ))}
+            </div>
+          </div>
+        </div>
       </section>
     </>
+  );
+}
+
+function FAQItem({
+  faq,
+}: {
+  faq: { question: string; answer: string; link?: { text: string; url: string } };
+}) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div style={{ borderBottom: "1px solid var(--dv-hair)" }}>
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-4 py-5 text-left cursor-pointer"
+      >
+        <span
+          className="font-geist text-[15px] md:text-[17px] text-foreground"
+          style={{ letterSpacing: "-0.01em" }}
+        >
+          {faq.question}
+        </span>
+        <ChevronDown
+          className={cn(
+            "w-5 h-5 flex-shrink-0 transition-transform duration-300",
+            open && "rotate-180"
+          )}
+          style={{ color: "var(--dv-accent-pink)" }}
+        />
+      </button>
+      <div
+        className={cn(
+          "grid transition-[grid-template-rows] duration-300 ease-out",
+          open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+        )}
+      >
+        <div className="overflow-hidden">
+          <div className="pb-5" style={{ color: "var(--dv-fg-muted)" }}>
+            <p className="text-[15px] leading-relaxed max-w-[60ch]">
+              {faq.answer}
+            </p>
+            {faq.link && (
+              <Link
+                to={faq.link.url}
+                className="inline-flex items-center gap-1 mt-3 text-[13px] hover:underline"
+                style={{ color: "var(--dv-accent-pink)" }}
+              >
+                {faq.link.text} →
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

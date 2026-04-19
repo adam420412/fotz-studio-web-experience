@@ -1,17 +1,13 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { ArrowRight, MapPin, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
-// Office images - using lighter WebP images only
 import officeStairs from "@/assets/office/office-stairs.webp";
 import officeSign from "@/assets/office/office-sign.webp";
 import officeLounge from "@/assets/office/office-lounge.webp";
 import officeWorkspace from "@/assets/office/office-workspace.webp";
 import officeDining from "@/assets/office/office-dining.webp";
 
-// Use only lightweight office images - removed heavy 2MB team photos
 const officeImages = [
   { src: officeStairs, alt: "Wejście do biura Fotz Studio", category: "Biuro" },
   { src: officeLounge, alt: "Strefa relaksu Fotz Studio", category: "Biuro" },
@@ -26,42 +22,48 @@ interface OfficeGalleryProps {
   subtitle?: string;
 }
 
-export function OfficeGallery({ 
-  showCTA = true, 
-  title = "Nasze biuro i zespół",
-  subtitle = "Plac Wolności 16, Poznań"
+export function OfficeGallery({
+  showCTA = true,
 }: OfficeGalleryProps) {
   return (
-    <section className="section-padding bg-background">
-      <div className="container-wide">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
-            <MapPin className="w-4 h-4" />
-            {subtitle}
-          </span>
-          <h2 className="text-3xl md:text-5xl font-heading font-bold">
-            Nasze <span className="text-gradient">biuro i zespół</span>
+    <section
+      className="relative overflow-hidden"
+      style={{ background: "hsl(var(--background))" }}
+    >
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <span className="dv-eyebrow mb-6 inline-block">Plac Wolności 16, Poznań</span>
+          <h2
+            className="font-geist mb-4"
+            style={{
+              fontSize: "clamp(36px, 4vw, 64px)",
+              letterSpacing: "-0.035em",
+              lineHeight: 1.05,
+              fontWeight: 400,
+            }}
+          >
+            Nasze <span className="dv-text-grad italic">biuro i zespół</span>
           </h2>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <p
+            style={{
+              color: "var(--dv-fg-muted)",
+              fontSize: "17px",
+              maxWidth: "44ch",
+              margin: "0 auto",
+            }}
+          >
             Pracujemy w nowoczesnej przestrzeni w samym sercu Poznania
           </p>
-        </motion.div>
+        </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
           {officeImages.map((image, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            className="group relative aspect-[3/4] rounded-xl overflow-hidden"
+              className="group relative aspect-[3/4] overflow-hidden"
+              style={{ borderRadius: 16, border: "1px solid var(--dv-hair)" }}
             >
               <OptimizedImage
                 src={image.src}
@@ -69,35 +71,28 @@ export function OfficeGallery({
                 className="w-full h-full"
                 sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-4 left-4">
-                  <span className="text-xs font-medium px-2 py-1 bg-primary/20 text-primary rounded-full">
-                    {image.category}
-                  </span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-3 left-3">
+                  <span className="dv-pill text-[11px]">{image.category}</span>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {showCTA && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
-            <p className="text-muted-foreground mb-6">
+          <div className="text-center mt-12">
+            <p
+              className="mb-6"
+              style={{ color: "var(--dv-fg-muted)", fontSize: "15px" }}
+            >
               Zapraszamy na kawę i rozmowę o Twoim projekcie
             </p>
-            <Button variant="hero" size="lg" asChild>
-              <Link to="/o-nas" className="group">
-                <Users className="w-5 h-5 mr-2" />
-                Poznaj nas bliżej
-                <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </Button>
-          </motion.div>
+            <Link to="/o-nas" className="dv-btn dv-btn-secondary group">
+              Poznaj nas bliżej
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
         )}
       </div>
     </section>
