@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "next-themes";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 // Only load Index synchronously - it's the most common entry point
 import Index from "./pages/Index";
@@ -1488,9 +1489,10 @@ const Redirect301 = lazy(() => import("./components/seo/Redirect301").then(m => 
 
 const queryClient = new QueryClient();
 
-// Ultra minimal page loader - just a subtle fade
 const PageLoader = () => (
-  <div className="min-h-screen bg-background" />
+  <div className="min-h-screen bg-background flex items-center justify-center">
+    <div className="w-8 h-8 border-2 border-foreground/10 border-t-primary rounded-full animate-spin" />
+  </div>
 );
 
 const App = () => (
@@ -1502,6 +1504,7 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <ScrollToTop />
+            <ErrorBoundary>
             <Suspense fallback={<PageLoader />}>
               <Routes>
                 <Route path="/" element={<Index />} />
@@ -2737,7 +2740,16 @@ const App = () => (
                 <Route path="/zasoby" element={<Zasoby />} />
                 <Route path="/generator-briefu" element={<GeneratorBriefu />} />
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
-                
+
+                {/* Akademia */}
+                <Route path="/akademia" element={<AkademiaLanding />} />
+                <Route path="/akademia/auth" element={<AkademiaAuth />} />
+                <Route path="/akademia/panel" element={<Akademia />} />
+                <Route path="/akademia/admin" element={<AkademiaAdmin />} />
+
+                {/* Strony internetowe hub */}
+                <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />
+
                 {/* 301 Redirects - broken/legacy paths */}
                 <Route path="/login" element={<Redirect301 to="/zasoby" />} />
                 <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
@@ -2762,6 +2774,7 @@ const App = () => (
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
+            </ErrorBoundary>
             <Suspense fallback={null}>
               <SEODevPanel />
             </Suspense>
