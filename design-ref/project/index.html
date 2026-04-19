@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>fotz.pl — Studio marketingu kreatywnego</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="home.jsx"></script>
+  <script type="text/babel" src="pages.jsx"></script>
+  <script type="text/babel" src="contact.jsx"></script>
+
+  <script type="text/babel">
+    const { useState, useEffect, useMemo } = React;
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "homeVariant": "v3",
+      "theme": "dark",
+      "lang": "pl",
+      "accent": "burgundy"
+    }/*EDITMODE-END*/;
+
+    const ACCENTS = {
+      burgundy:{ bg: 'rgb(120,20,60)', on: 'rgb(255,255,255)', text: 'rgb(230,130,170)' },
+      navy:    { bg: 'rgb(20,40,80)',  on: 'rgb(255,255,255)', text: 'rgb(120,170,230)' },
+      gradient:{ bg: 'rgb(120,20,60)', on: 'rgb(255,255,255)', text: 'rgb(230,130,170)' },
+      cream:   { bg: 'rgb(247,245,242)', on: 'rgb(16,18,32)', text: 'rgb(247,245,242)' },
+    };
+
+    function App() {
+      // persist route so reloads don't reset
+      const [route, setRouteRaw] = useState(() => localStorage.getItem('fotz_route') || 'home');
+      const [homeVariant, setHomeVariant] = useState(() => localStorage.getItem('fotz_home') || TWEAK_DEFAULTS.homeVariant);
+      const [theme, setTheme] = useState(() => localStorage.getItem('fotz_theme') || TWEAK_DEFAULTS.theme);
+      const [lang, setLang] = useState(() => localStorage.getItem('fotz_lang') || TWEAK_DEFAULTS.lang);
+      const [accent, setAccent] = useState(() => {
+        const saved = localStorage.getItem('fotz_accent');
+        return (saved && ACCENTS[saved]) ? saved : TWEAK_DEFAULTS.accent;
+      });
+      const [caseWork, setCaseWork] = useState(null);
+      const [tweaksOpen, setTweaksOpen] = useState(false);
+      const [editMode, setEditMode] = useState(false);
+
+      const setRoute = (r) => { setRouteRaw(r); localStorage.setItem('fotz_route', r); window.scrollTo(0,0); };
+
+      useEffect(() => { localStorage.setItem('fotz_home', homeVariant); }, [homeVariant]);
+      useEffect(() => {
+        localStorage.setItem('fotz_theme', theme);
+        document.documentElement.setAttribute('data-theme', theme);
+      }, [theme]);
+      useEffect(() => { localStorage.setItem('fotz_lang', lang); }, [lang]);
+      useEffect(() => {
+        localStorage.setItem('fotz_accent', accent);
+        const a = ACCENTS[accent] || ACCENTS.burgundy;
+        document.documentElement.style.setProperty('--accent', a.bg);
+        document.documentElement.style.setProperty('--on-accent', a.on);
+      }, [accent]);
+
+      // tweak-mode protocol
+      useEffect(() => {
+        const handler = (e) => {
+          if (!e.data) return;
+          if (e.data.type === '__activate_edit_mode') setEditMode(true);
+          if (e.data.type === '__deactivate_edit_mode') setEditMode(false);
+        };
+        window.addEventListener('message', handler);
+        window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+        return () => window.removeEventListener('message', handler);
+      }, []);
+
+      const openWork = (w) => { setCaseWork(w); setRoute('case'); };
+
+      const value = { theme, setTheme, lang, setLang };
+
+      let page;
+      if (route === 'home') {
+        if (homeVariant==='v2') page = <HomeV2 setRoute={setRoute} openWork={openWork}/>;
+        else if (homeVariant==='v3') page = <HomeV3 setRoute={setRoute} openWork={openWork}/>;
+        else page = <HomeV1 setRoute={setRoute} openWork={openWork}/>;
+      }
+      else if (route === 'services') page = <ServicesPage setRoute={setRoute}/>;
+      else if (route === 'work') page = <WorkPage setRoute={setRoute} openWork={openWork}/>;
+      else if (route === 'case') page = <CaseStudyPage setRoute={setRoute} work={caseWork}/>;
+      else if (route === 'about') page = <AboutPage setRoute={setRoute}/>;
+      else if (route === 'contact') page = <ContactPage setRoute={setRoute}/>;
+      else if (route === 'booking') page = <BookingPage setRoute={setRoute}/>;
+      else page = <HomeV1 setRoute={setRoute} openWork={openWork}/>;
+
+      return (
+        <AppCtx.Provider value={value}>
+          <Nav route={route} setRoute={setRoute}/>
+          {page}
+          <Footer setRoute={setRoute}/>
+
+          {editMode && (
+            <TweaksPanel
+              homeVariant={homeVariant} setHomeVariant={(v)=>{setHomeVariant(v); window.parent.postMessage({type:'__edit_mode_set_keys', edits:{homeVariant:v}},'*');}}
+              theme={theme} setTheme={(v)=>{setTheme(v); window.parent.postMessage({type:'__edit_mode_set_keys', edits:{theme:v}},'*');}}
+              lang={lang} setLang={(v)=>{setLang(v); window.parent.postMessage({type:'__edit_mode_set_keys', edits:{lang:v}},'*');}}
+              accent={accent} setAccent={(v)=>{setAccent(v); window.parent.postMessage({type:'__edit_mode_set_keys', edits:{accent:v}},'*');}}
+              route={route} setRoute={setRoute}
+            />
+          )}
+        </AppCtx.Provider>
+      );
+    }
+
+    function TweaksPanel({ homeVariant, setHomeVariant, theme, setTheme, lang, setLang, accent, setAccent, route, setRoute }) {
+      return (
+        <div style={{
+          position:'fixed', bottom: 20, right: 20, zIndex: 100,
+          width: 320, padding: 20, borderRadius: 16,
+          background:'var(--bg-raised)', border:'1px solid var(--hair)',
+          boxShadow:'0 20px 40px rgba(0,0,0,0.4)', fontFamily:'Geist',
+        }}>
+          <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', marginBottom: 20}}>
+            <span className="mono" style={{fontSize:11, letterSpacing:'0.16em', textTransform:'uppercase', color:'var(--accent)'}}>Tweaks</span>
+            <span className="mono" style={{fontSize:10, letterSpacing:'0.12em', textTransform:'uppercase', color:'var(--fg-muted)'}}>fotz.pl</span>
+          </div>
+
+          <TGroup label="Home variant">
+            <TRow>
+              {['v1','v2','v3'].map(v => (
+                <TChip key={v} on={homeVariant===v} onClick={()=>{setHomeVariant(v); setRoute('home');}}>{v.toUpperCase()}</TChip>
+              ))}
+            </TRow>
+          </TGroup>
+
+          <TGroup label="Accent color">
+            <TRow>
+              {Object.entries({burgundy:'#78143C', navy:'#142850', gradient:'linear-gradient(135deg,#78143C,#142850)', cream:'#F7F5F2'}).map(([k,hex]) => (
+                <button key={k} onClick={()=>setAccent(k)} title={k}
+                  style={{
+                    width: 32, height: 32, borderRadius: 8, cursor:'pointer',
+                    background: hex, border: accent===k?'2px solid var(--fg)':'2px solid var(--hair)',
+                  }}/>
+              ))}
+            </TRow>
+          </TGroup>
+
+          <TGroup label="Theme">
+            <TRow>
+              <TChip on={theme==='dark'} onClick={()=>setTheme('dark')}>Dark</TChip>
+              <TChip on={theme==='light'} onClick={()=>setTheme('light')}>Light</TChip>
+            </TRow>
+          </TGroup>
+
+          <TGroup label="Language">
+            <TRow>
+              <TChip on={lang==='pl'} onClick={()=>setLang('pl')}>PL</TChip>
+              <TChip on={lang==='en'} onClick={()=>setLang('en')}>EN</TChip>
+            </TRow>
+          </TGroup>
+
+          <TGroup label="Jump to page">
+            <TRow wrap>
+              {[['home','Home'],['work','Work'],['case','Case'],['services','Services'],['about','About'],['contact','Contact'],['booking','Booking']].map(([k,l]) => (
+                <TChip key={k} on={route===k} onClick={()=>setRoute(k)}>{l}</TChip>
+              ))}
+            </TRow>
+          </TGroup>
+        </div>
+      );
+    }
+
+    function TGroup({ label, children }) {
+      return (
+        <div style={{marginBottom: 16}}>
+          <div className="mono" style={{fontSize:10, letterSpacing:'0.14em', textTransform:'uppercase', color:'var(--fg-muted)', marginBottom:8}}>{label}</div>
+          {children}
+        </div>
+      );
+    }
+    function TRow({ children, wrap }) {
+      return <div style={{display:'flex', gap:6, flexWrap: wrap?'wrap':'nowrap'}}>{children}</div>;
+    }
+    function TChip({ on, onClick, children }) {
+      return (
+        <button onClick={onClick} style={{
+          padding:'8px 12px', borderRadius: 99, cursor:'pointer',
+          fontFamily:'Geist Mono', fontSize: 11, letterSpacing:'0.14em', textTransform:'uppercase',
+          background: on?'var(--accent)':'var(--chip)',
+          color: on?'var(--on-accent)':'var(--fg)',
+          border: '1px solid var(--hair)',
+        }}>{children}</button>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+  </script>
+</body>
+</html>

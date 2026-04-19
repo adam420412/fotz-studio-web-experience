@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Layout } from "@/components/layout/Layout";
-import { Hero } from "@/components/sections/Hero";
+import { HeroV3 } from "@/components/sections/HeroV3";
+import { ClientMarqueeV3 } from "@/components/sections/ClientMarqueeV3";
+import { ProcessV3 } from "@/components/sections/ProcessV3";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/StructuredData";
 
@@ -8,7 +10,6 @@ import { LocalBusinessSchema, OrganizationSchema } from "@/components/seo/Struct
 const VideoShowcase = lazy(() => import("@/components/sections/VideoShowcase").then(m => ({ default: m.VideoShowcase })));
 const WhyUs = lazy(() => import("@/components/sections/WhyUs").then(m => ({ default: m.WhyUs })));
 const Services = lazy(() => import("@/components/sections/Services").then(m => ({ default: m.Services })));
-const Process = lazy(() => import("@/components/sections/Process").then(m => ({ default: m.Process })));
 const CaseStudies = lazy(() => import("@/components/sections/CaseStudies").then(m => ({ default: m.CaseStudies })));
 const Testimonials = lazy(() => import("@/components/sections/Testimonials").then(m => ({ default: m.Testimonials })));
 const Clients = lazy(() => import("@/components/sections/Clients").then(m => ({ default: m.Clients })));
@@ -38,7 +39,8 @@ const Index = () => {
       <LocalBusinessSchema />
       <OrganizationSchema />
       <Layout>
-        <Hero />
+        <HeroV3 />
+        <ClientMarqueeV3 />
         <Suspense fallback={<SectionLoader />}>
           <VideoShowcase />
         </Suspense>
@@ -48,9 +50,7 @@ const Index = () => {
         <Suspense fallback={<SectionLoader />}>
           <Services />
         </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <Process />
-        </Suspense>
+        <ProcessV3 />
         <Suspense fallback={<SectionLoader />}>
           <CaseStudies />
         </Suspense>
