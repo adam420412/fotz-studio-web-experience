@@ -59,10 +59,12 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Syne', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['Geist', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['Geist', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         geist: ['Geist', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         'geist-mono': ['Geist Mono', 'ui-monospace', 'Menlo', 'monospace'],
+        syne: ['Syne', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

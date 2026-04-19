@@ -1,9 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube, Building2, Send, Loader2, CheckCircle } from "lucide-react";
-import logoFotz from "@/assets/logo-fotz.png";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Instagram,
+  Facebook,
+  Linkedin,
+  Youtube,
+  Building2,
+  Send,
+  Loader2,
+  CheckCircle,
+} from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { z } from "zod";
 
 const emailSchema = z.string().trim().email("Nieprawidłowy email");
@@ -119,6 +129,11 @@ const socialLinks = [
   { icon: Youtube, href: "https://youtube.com/@fotzstudio", label: "YouTube" },
 ];
 
+const columnHeader =
+  "dv-mono uppercase text-[11px] tracking-[0.16em] text-white/50 mb-5 font-normal";
+const columnLink =
+  "block py-1.5 text-sm md:text-[15px] text-white/85 hover:text-[color:var(--dv-accent-pink)] transition-colors";
+
 export function Footer() {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -159,226 +174,282 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-background border-t border-border">
-      {/* Newsletter Banner */}
-      <div className="bg-card border-b border-border">
-        <div className="container-wide section-padding py-8 md:py-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-center md:text-left">
-              <h3 className="text-lg md:text-xl font-heading font-bold mb-1">
-                Zapisz się do newslettera
-              </h3>
-              <p className="text-muted-foreground text-sm">
-                Otrzymuj porady marketingowe i checklisty do pobrania
-              </p>
-            </div>
-            {isSubmitted ? (
-              <div className="flex items-center gap-2 text-primary">
-                <CheckCircle className="w-5 h-5" />
-                <span className="font-medium">Dziękujemy za zapis!</span>
-              </div>
-            ) : (
-              <form onSubmit={handleNewsletterSubmit} className="flex gap-2 w-full md:w-auto max-w-md">
-                <div className="flex-1">
-                  <Input
-                    type="email"
-                    placeholder="Twój email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="h-11 bg-secondary border-border"
-                  />
-                  {error && <p className="text-xs text-destructive mt-1">{error}</p>}
-                </div>
-                <Button type="submit" variant="hero" className="h-11" disabled={isSubmitting}>
-                  {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
-                </Button>
-              </form>
-            )}
-          </div>
-        </div>
-      </div>
+    <footer
+      className="relative overflow-hidden mt-24 text-white"
+      style={{ background: "var(--dv-ink)" }}
+    >
+      {/* Ambient radial glow from design */}
+      <div
+        aria-hidden
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at 20% 120%, rgba(120,20,60,0.35) 0%, transparent 50%), radial-gradient(ellipse at 80% 120%, rgba(20,40,80,0.45) 0%, transparent 50%)",
+        }}
+      />
 
-      {/* Main Footer */}
-      {/* Main Footer */}
-      <div className="section-padding py-10 md:py-16">
-        <div className="container-wide">
-          {/* Brand section - full width on mobile */}
-          <div className="mb-8 md:mb-10 pb-8 border-b border-border/30">
-            <div className="flex flex-col sm:flex-row sm:items-start gap-6">
-              <Link to="/" className="inline-block shrink-0">
-                <img 
-                  src={logoFotz} 
-                  alt="Fotz Studio" 
-                  className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto"
-                />
-              </Link>
+      <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 pt-24 pb-10">
+        {/* Newsletter banner */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-12 mb-12 border-b border-white/10">
+          <div>
+            <h3
+              className="font-geist mb-2"
+              style={{
+                fontSize: "clamp(24px, 2.4vw, 32px)",
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Zapisz się do newslettera
+            </h3>
+            <p className="dv-mono uppercase tracking-[0.14em] text-[11px] text-white/50">
+              Porady marketingowe · checklisty · nowości — raz w miesiącu
+            </p>
+          </div>
+          {isSubmitted ? (
+            <div className="flex items-center gap-2 text-[color:var(--dv-accent-pink)]">
+              <CheckCircle className="w-5 h-5" strokeWidth={1.5} />
+              <span className="font-medium">Dziękujemy za zapis!</span>
+            </div>
+          ) : (
+            <form
+              onSubmit={handleNewsletterSubmit}
+              className="flex gap-2 w-full md:w-auto max-w-md"
+            >
               <div className="flex-1">
-                <p className="text-muted-foreground text-sm md:text-base mb-4 max-w-sm">
-                  Studio marketingu wzrostu. Projektujemy marketing, 
-                  który realnie pozyskuje klientów.
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-4">
-                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
-                    <MapPin className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>Plac Wolności 16, 61-739 Poznań</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
-                    <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                    <a href="tel:+48790814814" className="hover:text-foreground transition-colors">+48 790 814 814</a>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
-                    <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                    <a href="mailto:adam@fotz.pl" className="hover:text-foreground transition-colors">adam@fotz.pl</a>
-                  </div>
-                  <div className="flex items-center gap-2 text-muted-foreground text-xs md:text-sm">
-                    <Building2 className="w-4 h-4 text-primary flex-shrink-0" />
-                    <span>NIP: 7851806089</span>
-                  </div>
-                </div>
+                <Input
+                  type="email"
+                  placeholder="Twój email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="h-12 bg-white/5 border-white/15 text-white placeholder:text-white/40 focus-visible:ring-[color:var(--dv-accent-pink)]"
+                />
+                {error && (
+                  <p className="text-xs text-destructive mt-1">{error}</p>
+                )}
+              </div>
+              <button
+                type="submit"
+                className="dv-btn dv-btn-primary h-12"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <Loader2 className="w-4 h-4 animate-spin" strokeWidth={1.5} />
+                ) : (
+                  <>
+                    <Send className="w-3.5 h-3.5" strokeWidth={1.5} />
+                    Zapisz
+                  </>
+                )}
+              </button>
+            </form>
+          )}
+        </div>
 
-                <div className="flex gap-2">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all"
-                      aria-label={social.label}
-                    >
-                      <social.icon className="w-4 h-4 md:w-5 md:h-5" />
-                    </a>
-                  ))}
-                </div>
+        {/* Giant brand title */}
+        <div
+          className="flex items-baseline gap-4 pb-10 mb-10 border-b border-white/10 overflow-hidden"
+          style={{
+            fontFamily: "'Geist', sans-serif",
+            fontSize: "clamp(80px, 16vw, 260px)",
+            letterSpacing: "-0.06em",
+            lineHeight: 0.82,
+            background:
+              "linear-gradient(135deg, rgb(240,230,235) 0%, rgb(230,130,170) 40%, rgb(120,170,230) 100%)",
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          <span>fotz</span>
+          <span style={{ color: "rgb(230,130,170)", WebkitTextFillColor: "rgb(230,130,170)" }}>.</span>
+          <span>pl</span>
+          <span
+            className="ml-auto self-end"
+            style={{
+              fontSize: "0.08em",
+              fontFamily: "'Geist Mono', monospace",
+              letterSpacing: "0.14em",
+              color: "rgba(255,255,255,0.4)",
+              textTransform: "uppercase",
+              paddingBottom: "30px",
+              WebkitTextFillColor: "rgba(255,255,255,0.4)",
+            }}
+          >
+            EST. MMXII · POZNAŃ
+          </span>
+        </div>
+
+        {/* Brand block + contact */}
+        <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr_1fr_1fr_1fr] gap-10 pb-12">
+          <div className="md:col-span-2">
+            <p className="text-white/70 leading-relaxed max-w-sm mb-6">
+              Studio marketingu wzrostu. Projektujemy marketing, który realnie
+              pozyskuje klientów.
+            </p>
+            <div className="space-y-3 text-sm text-white/80">
+              <div className="flex items-start gap-2">
+                <MapPin
+                  className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
+                  strokeWidth={1.5}
+                />
+                <span>Plac Wolności 16 · 61-739 Poznań</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <Phone
+                  className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
+                  strokeWidth={1.5}
+                />
+                <a
+                  href="tel:+48790814814"
+                  className="hover:text-[color:var(--dv-accent-pink)] transition-colors"
+                >
+                  +48 790 814 814
+                </a>
+              </div>
+              <div className="flex items-start gap-2">
+                <Mail
+                  className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
+                  strokeWidth={1.5}
+                />
+                <a
+                  href="mailto:adam@fotz.pl"
+                  className="hover:text-[color:var(--dv-accent-pink)] transition-colors"
+                >
+                  adam@fotz.pl
+                </a>
+              </div>
+              <div className="flex items-start gap-2">
+                <Building2
+                  className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
+                  strokeWidth={1.5}
+                />
+                <span>NIP: 7851806089</span>
               </div>
             </div>
-          </div>
 
-          {/* Links grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Usługi</h4>
-              <ul className="space-y-2">
-                {footerLinks.uslugi.map((link) => (
-                  <li key={link.name}>
-                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Kampanie</h4>
-              <ul className="space-y-2">
-                {footerLinks.kampanie.map((link) => (
-                  <li key={link.name}>
-                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Dla kogo</h4>
-              <ul className="space-y-2">
-                {footerLinks.dlaKogo.map((link) => (
-                  <li key={link.name}>
-                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Branże</h4>
-              <ul className="space-y-2">
-                {footerLinks.branze.map((link) => (
-                  <li key={link.name}>
-                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Firma</h4>
-              <ul className="space-y-2">
-                {footerLinks.firma.map((link) => (
-                  <li key={link.name}>
-                    {'external' in link && link.external ? (
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm flex items-center gap-1"
-                      >
-                        {link.name}
-                        <span className="text-xs text-primary">→</span>
-                      </a>
-                    ) : (
-                      <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
-                        {link.name}
-                      </Link>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Narzędzia</h4>
-              <ul className="space-y-2">
-                {footerLinks.narzedzia.map((link) => (
-                  <li key={link.name}>
-                    <Link to={link.href} className="text-muted-foreground hover:text-foreground transition-colors text-xs md:text-sm">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Miasta - full width */}
-          <div className="mt-8 pt-6 border-t border-border/30">
-            <h4 className="font-heading font-semibold text-foreground text-sm md:text-base mb-3 md:mb-4">Strony internetowe w Polsce</h4>
-            <div className="flex flex-wrap gap-2">
-              {footerLinks.miasta.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-xs px-2 py-1 bg-secondary/50 rounded"
+            <div className="flex gap-2 mt-6">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:bg-[color:var(--dv-burgundy)] hover:text-white hover:border-[color:var(--dv-burgundy)] transition-all"
+                  aria-label={social.label}
                 >
-                  {link.name}
-                </Link>
+                  <social.icon className="w-4 h-4" strokeWidth={1.5} />
+                </a>
               ))}
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-border py-4 md:py-6">
-        <div className="container-wide px-4 md:px-6 lg:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 text-xs md:text-sm text-muted-foreground">
-            <p className="text-center md:text-left">© {new Date().getFullYear()} Fotz Studio. Wszystkie prawa zastrzeżone.</p>
-            <div className="flex gap-4 md:gap-6">
-              <Link to="/polityka-prywatnosci" className="hover:text-foreground transition-colors">
-                Polityka prywatności
+          <div>
+            <h4 className={columnHeader}>Usługi</h4>
+            <ul>
+              {footerLinks.uslugi.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className={columnLink}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className={columnHeader}>Kampanie</h4>
+            <ul>
+              {footerLinks.kampanie.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className={columnLink}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className={columnHeader}>Branże</h4>
+            <ul>
+              {[...footerLinks.dlaKogo, ...footerLinks.branze].slice(0, 14).map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className={columnLink}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className={columnHeader}>Firma</h4>
+            <ul>
+              {footerLinks.firma.map((link) => (
+                <li key={link.name}>
+                  {"external" in link && link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={columnLink + " flex items-center gap-1"}
+                    >
+                      {link.name}
+                      <span className="text-[color:var(--dv-accent-pink)]">↗</span>
+                    </a>
+                  ) : (
+                    <Link to={link.href} className={columnLink}>
+                      {link.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            <h4 className={columnHeader + " mt-8"}>Narzędzia</h4>
+            <ul>
+              {footerLinks.narzedzia.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className={columnLink}>
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Miasta */}
+        <div className="pt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Strony internetowe w Polsce</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.miasta.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
               </Link>
-              <Link to="/regulamin" className="hover:text-foreground transition-colors">
-                Regulamin
-              </Link>
-            </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 mt-10 border-t border-white/10 dv-mono uppercase tracking-[0.12em] text-[11px] text-white/50">
+          <div>
+            © 2012–{new Date().getFullYear()} Fotz Studio · NIP 785-18-06-089
+          </div>
+          <div className="flex gap-5">
+            <Link
+              to="/polityka-prywatnosci"
+              className="hover:text-white transition-colors"
+            >
+              Polityka prywatności
+            </Link>
+            <Link to="/regulamin" className="hover:text-white transition-colors">
+              Regulamin
+            </Link>
           </div>
         </div>
       </div>
