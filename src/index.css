@@ -329,6 +329,16 @@
   .dv-marquee-track { animation: none; }
 }
 
+.seo-article h2 { font-family: 'Geist','Inter',sans-serif; font-size: clamp(22px,1.6vw,28px); letter-spacing:-0.025em; line-height:1.15; font-weight:400; margin-bottom:1rem; }
+.seo-article h3 { font-family: 'Geist','Inter',sans-serif; font-size: clamp(18px,1.2vw,22px); letter-spacing:-0.02em; line-height:1.2; font-weight:500; margin-bottom:0.75rem; }
+.seo-article p { color: var(--dv-fg-muted); line-height:1.7; margin-bottom:1.5rem; }
+.seo-article ul { list-style:none; padding:0; margin-bottom:1.5rem; display:flex; flex-direction:column; gap:0.75rem; }
+.seo-article ul li { display:flex; gap:0.75rem; color: var(--dv-fg-muted); font-size:0.95rem; }
+.seo-article ul li::before { content:"→"; color: var(--dv-accent-pink); font-weight:600; flex-shrink:0; }
+.seo-article strong { color: hsl(var(--foreground)); }
+.seo-article a { color: var(--dv-accent-pink); text-decoration:none; }
+.seo-article a:hover { text-decoration:underline; }
+
 @layer components {
   .text-gradient {
     @apply bg-clip-text text-transparent;
