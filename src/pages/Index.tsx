@@ -3,6 +3,7 @@
 // All sections are needed on homepage anyway, so lazy-loading adds no benefit.
 import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { HeroV3 } from "@/components/sections/HeroV3";
 import { ClientMarqueeV3 } from "@/components/sections/ClientMarqueeV3";
@@ -79,19 +80,6 @@ const Index = () => {
         <Suspense fallback={<SectionLoader />}>
           <FinalCTA />
         </Suspense>
-        <Hero />
-        <VideoShowcase />
-        <WhyUs />
-        <Services />
-        <Process />
-        <CaseStudies />
-        <Testimonials />
-        <Clients />
-        <OfficeGallery />
-        <Studio />
-        <HomeFAQ />
-        <NewsletterSection />
-        <FinalCTA />
 
       {/* SEO Article Section */}
       <section className="py-20 bg-card">
