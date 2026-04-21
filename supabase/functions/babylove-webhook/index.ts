@@ -11,12 +11,17 @@ interface BabyLovePayload {
   title: string;
   slug: string;
   metaDescription?: string;
+  excerpt?: string;
   content_html?: string;
   heroImageUrl?: string;
   content_markdown?: string;
   languageCode?: string;
   publicUrl?: string;
   createdAt?: string;
+  seedKeyword?: string;
+  keywords?: unknown;
+  jsonLd?: unknown;
+  faqJsonLd?: unknown;
 }
 
 Deno.serve(async (req) => {
@@ -86,13 +91,20 @@ Deno.serve(async (req) => {
           title: payload.title,
           slug: payload.slug,
           meta_description: payload.metaDescription || null,
+          excerpt: payload.excerpt || null,
           content_html: payload.content_html || null,
           content_markdown: payload.content_markdown || null,
           hero_image_url: payload.heroImageUrl || null,
           language_code: payload.languageCode || "pl",
           public_url: payload.publicUrl || null,
           external_created_at: payload.createdAt || null,
+          seed_keyword: payload.seedKeyword || null,
+          keywords: payload.keywords ?? null,
+          json_ld: payload.jsonLd ?? null,
+          faq_json_ld: payload.faqJsonLd ?? null,
           published_at: new Date().toISOString(),
+          last_synced_at: new Date().toISOString(),
+          sync_source: "webhook",
           is_published: true,
         },
         {

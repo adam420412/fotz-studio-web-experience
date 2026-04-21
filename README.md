@@ -62,6 +62,11 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+## Integracje
+
+- **BabyLoveGrowth (blog)** — webhook + REST API sync.
+  Szczegóły: [`docs/BABYLOVE-INTEGRATION.md`](docs/BABYLOVE-INTEGRATION.md).
+
 ## How can I deploy this project?
 
 Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.

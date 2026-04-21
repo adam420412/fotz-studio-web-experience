@@ -29,7 +29,9 @@ import {
   Globe,
   Smartphone,
   Monitor,
-  ExternalLink
+  ExternalLink,
+  FileText,
+  Database
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -155,7 +157,23 @@ export default function AdminDashboard() {
   const [pageSpeedResult, setPageSpeedResult] = useState<PageSpeedResult | null>(null);
   const [isTestingPageSpeed, setIsTestingPageSpeed] = useState(false);
   const [pageSpeedHistory, setPageSpeedHistory] = useState<PageSpeedResult[]>([]);
-  
+
+  // BabyLove blog sync state
+  const [isSyncing, setIsSyncing] = useState(false);
+  const [forceSync, setForceSync] = useState(false);
+  const [syncResult, setSyncResult] = useState<{
+    success?: boolean;
+    durationMs?: number;
+    pages?: number;
+    listed?: number;
+    upserted?: number;
+    skipped?: number;
+    failed?: number;
+    error?: string;
+  } | null>(null);
+  const [articleCount, setArticleCount] = useState<number | null>(null);
+  const [lastSyncedAt, setLastSyncedAt] = useState<string | null>(null);
+
   const { toast } = useToast();
 
   useEffect(() => {
@@ -314,6 +332,59 @@ export default function AdminDashboard() {
     }
   };
 
+  const loadBlogStats = useCallback(async () => {
+    try {
+      const { count } = await supabase
+        .from("blog_articles")
+        .select("id", { count: "exact", head: true });
+      setArticleCount(count ?? 0);
+
+      const { data: latest } = await supabase
+        .from("blog_articles")
+        .select("last_synced_at")
+        .order("last_synced_at", { ascending: false, nullsFirst: false })
+        .limit(1)
+        .maybeSingle();
+      setLastSyncedAt(latest?.last_synced_at ?? null);
+    } catch (error) {
+      console.error("Error loading blog stats:", error);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isAdmin) {
+      loadBlogStats();
+    }
+  }, [isAdmin, loadBlogStats]);
+
+  const runBabyLoveSync = async () => {
+    setIsSyncing(true);
+    setSyncResult(null);
+    try {
+      const { data, error } = await supabase.functions.invoke("babylove-sync", {
+        body: { force: forceSync },
+      });
+      if (error) throw error;
+      setSyncResult(data);
+      toast({
+        title: "Synchronizacja zakończona",
+        description: `Upserted: ${data?.upserted ?? 0}, Pominięte: ${data?.skipped ?? 0}, Błędy: ${data?.failed ?? 0}`,
+      });
+      await loadBlogStats();
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Nieznany błąd";
+      console.error("BabyLove sync error:", error);
+      setSyncResult({ success: false, error: message });
+      toast({
+        title: "Błąd synchronizacji",
+        description: message,
+        variant: "destructive",
+      });
+    } finally {
+      setIsSyncing(false);
+    }
+  };
+
   if (isAdmin === false) {
     return <Navigate to="/" replace />;
   }
@@ -357,7 +428,7 @@ export default function AdminDashboard() {
             </div>
           ) : (
             <Tabs defaultValue="pagespeed" className="space-y-6">
-              <TabsList className="grid w-full max-w-xl grid-cols-4">
+              <TabsList className="grid w-full max-w-2xl grid-cols-5">
                 <TabsTrigger value="pagespeed" className="gap-2">
                   <Globe className="w-4 h-4" />
                   PageSpeed
@@ -373,6 +444,10 @@ export default function AdminDashboard() {
                 <TabsTrigger value="stats" className="gap-2">
                   <BarChart3 className="w-4 h-4" />
                   Statystyki
+                </TabsTrigger>
+                <TabsTrigger value="blog" className="gap-2">
+                  <FileText className="w-4 h-4" />
+                  Blog
                 </TabsTrigger>
               </TabsList>
 
@@ -839,6 +914,123 @@ export default function AdminDashboard() {
                         </div>
                       </Link>
                     </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+
+              {/* Blog (BabyLoveGrowth) Tab */}
+              <TabsContent value="blog" className="space-y-6">
+                <Card className="border-border">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Database className="w-5 h-5 text-primary" />
+                      Synchronizacja BabyLoveGrowth
+                    </CardTitle>
+                    <CardDescription>
+                      Pobierz najnowsze artykuły z BabyLove API. Webhook obsługuje nowe publikacje automatycznie,
+                      a ten przycisk wykonuje pełen backfill (np. po pierwszym uruchomieniu lub przy braku webhooka).
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="p-4 rounded-lg bg-card border border-border">
+                        <p className="text-xs text-muted-foreground mb-1">Artykuły w bazie</p>
+                        <p className="text-2xl font-semibold">
+                          {articleCount === null ? "—" : articleCount}
+                        </p>
+                      </div>
+                      <div className="p-4 rounded-lg bg-card border border-border">
+                        <p className="text-xs text-muted-foreground mb-1">Ostatnia synchronizacja</p>
+                        <p className="text-sm font-medium">
+                          {lastSyncedAt
+                            ? new Date(lastSyncedAt).toLocaleString("pl-PL")
+                            : "Brak danych"}
+                        </p>
+                      </div>
+                      <div className="p-4 rounded-lg bg-card border border-border">
+                        <p className="text-xs text-muted-foreground mb-1">Cron (pg_cron)</p>
+                        <p className="text-sm font-medium">codziennie 03:17 UTC</p>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                      <Button onClick={runBabyLoveSync} disabled={isSyncing}>
+                        {isSyncing ? (
+                          <>
+                            <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                            Synchronizuję...
+                          </>
+                        ) : (
+                          <>
+                            <RefreshCw className="w-4 h-4 mr-2" />
+                            Synchronizuj teraz
+                          </>
+                        )}
+                      </Button>
+                      <label className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+                        <input
+                          type="checkbox"
+                          className="h-4 w-4 rounded border-border"
+                          checked={forceSync}
+                          onChange={(event) => setForceSync(event.target.checked)}
+                          disabled={isSyncing}
+                        />
+                        Wymuś pełną synchronizację (nadpisz istniejące)
+                      </label>
+                    </div>
+
+                    {syncResult && (
+                      <div className="rounded-lg border border-border bg-card p-4 space-y-2">
+                        <div className="flex items-center gap-2">
+                          <Badge variant={syncResult.success ? "default" : "destructive"}>
+                            {syncResult.success ? "Sukces" : "Błąd"}
+                          </Badge>
+                          {typeof syncResult.durationMs === "number" && (
+                            <span className="text-xs text-muted-foreground">
+                              {(syncResult.durationMs / 1000).toFixed(1)}s
+                            </span>
+                          )}
+                        </div>
+                        {syncResult.error ? (
+                          <p className="text-sm text-destructive">{syncResult.error}</p>
+                        ) : (
+                          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 text-sm">
+                            <div>
+                              <p className="text-xs text-muted-foreground">Strony</p>
+                              <p className="font-medium">{syncResult.pages ?? 0}</p>
+                            </div>
+                            <div>
+                              <p className="text-xs text-muted-foreground">Pobrane</p>
+                              <p className="font-medium">{syncResult.listed ?? 0}</p>
+                            </div>
+                            <div>
+                              <p className="text-xs text-muted-foreground">Upserted</p>
+                              <p className="font-medium">{syncResult.upserted ?? 0}</p>
+                            </div>
+                            <div>
+                              <p className="text-xs text-muted-foreground">Pominięte</p>
+                              <p className="font-medium">{syncResult.skipped ?? 0}</p>
+                            </div>
+                            <div>
+                              <p className="text-xs text-muted-foreground">Błędy</p>
+                              <p className="font-medium">{syncResult.failed ?? 0}</p>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    <p className="text-xs text-muted-foreground">
+                      Pełna dokumentacja:{" "}
+                      <a
+                        href="https://github.com/adam420412/fotz-studio-web-experience/blob/main/docs/BABYLOVE-INTEGRATION.md"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline"
+                      >
+                        docs/BABYLOVE-INTEGRATION.md
+                      </a>
+                    </p>
                   </CardContent>
                 </Card>
               </TabsContent>
