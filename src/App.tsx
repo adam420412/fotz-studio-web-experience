@@ -1552,7 +1552,6 @@ const App = () => (
                 <Route path="/blog/jak-napisac-brief-marketingowy" element={<BlogBriefMarketingowy />} />
                 <Route path="/blog/pozycjonowanie-stron-internetowych-poradnik" element={<BlogPozycjonowanieStron />} />
                 <Route path="/blog/ile-kosztuje-reklama-w-google" element={<BlogKosztGoogleAds />} />
-                <Route path="/blog/jak-wybrac-agencje-marketingowa" element={<BlogJakWybracAgencje />} />
                 <Route path="/blog/jak-zwiekszyc-konwersje-na-stronie" element={<BlogKonwersjeNaStronie />} />
                 <Route path="/blog/strategia-social-media-marketing" element={<BlogSocialMediaStrategia />} />
                 <Route path="/blog/strona-internetowa-dla-firmy" element={<BlogStronaDlaFirmy />} />
@@ -2741,19 +2740,12 @@ const App = () => (
                 <Route path="/generator-briefu" element={<GeneratorBriefu />} />
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
 
-                {/* Akademia */}
-                <Route path="/akademia" element={<AkademiaLanding />} />
-                <Route path="/akademia/auth" element={<AkademiaAuth />} />
-                <Route path="/akademia/panel" element={<Akademia />} />
-                <Route path="/akademia/admin" element={<AkademiaAdmin />} />
-
-                {/* Strony internetowe hub */}
-                <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />
+                {/* Akademia — redirected to /zasoby */}
+                <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
+                <Route path="/akademia/*" element={<Redirect301 to="/zasoby" />} />
 
                 {/* 301 Redirects - broken/legacy paths */}
                 <Route path="/login" element={<Redirect301 to="/zasoby" />} />
-                <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
-                <Route path="/akademia/*" element={<Redirect301 to="/zasoby" />} />
                 <Route path="/landing-page" element={<Redirect301 to="/blog/jak-stworzyc-landing-page" />} />
 
                 {/* 301 Redirects - stare URL-e /branze/* */}
