@@ -97,7 +97,7 @@ export default function BlogEmployeeAdvocacyCoTo() {
       <SEOHead
         title="Employee Advocacy — co to jest? Pracownicy jako ambasadorzy marki"
         description="Employee advocacy — definicja, dlaczego pracownicy są 8× skuteczniejsi niż posty korporacyjne, 6-etapowy program i jak mierzyć ROI. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/employee-advocacy-co-to"
+        canonical="https://fotz.pl/blog/employee-advocacy-co-to"
 
         keywords="Employee Advocacy co to jest, Employee Advocacy definicja, czym jest Employee Advocacy, Employee Advocacy startup, Employee Advocacy jak liczyć, Employee Advocacy wzór, Employee Advocacy przykłady"
 

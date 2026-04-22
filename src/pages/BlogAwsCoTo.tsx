@@ -98,7 +98,7 @@ export default function BlogAwsCoTo() {
       <SEOHead
         title="AWS — co to jest? Amazon Web Services, usługi i certyfikacje"
         description="AWS (Amazon Web Services) — definicja, kluczowe usługi (EC2, S3, Lambda, RDS, VPC), modele cenowe i certyfikacje. Kompletny przewodnik po Amazon Web Services."
-        canonicalUrl="https://fotz.pl/blog/aws-co-to-jest"
+        canonical="https://fotz.pl/blog/aws-co-to-jest"
 
         keywords="AWS co to jest, AWS jak działa, AWS tutorial, AWS przykład, czym jest AWS, AWS dokumentacja, AWS przewodnik"
 

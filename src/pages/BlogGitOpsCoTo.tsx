@@ -53,7 +53,7 @@ export default function BlogGitOpsCoTo() {
       <SEOHead
         title="GitOps — co to jest i jak wdrożyć Argo CD i Flux? | Fotz.pl"
         description="GitOps: definicja, zasady (deklaratywność, reconciliation), Argo CD vs Flux, GitOps vs DevOps, secrets management, wdrożenie krok po kroku i pułapki."
-        canonicalUrl="https://fotz.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
+        canonical="https://fotz.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
 
         keywords="GitOps co to jest, GitOps definicja, czym jest GitOps, GitOps przykłady, jak działa GitOps, GitOps znaczenie, GitOps przewodnik"
 

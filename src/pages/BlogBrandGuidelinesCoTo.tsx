@@ -87,7 +87,7 @@ export default function BlogBrandGuidelinesCoTo() {
       <SEOHead
         title="Brand Guidelines — co to jest? Wytyczne marki i brand book"
         description="Brand guidelines — definicja, 6 sekcji (logo, kolory, typografia, ikony, foto, głos), zasada 60-30-10 kolorów i najczęstsze błędy. Jak tworzyć brand book…"
-        canonicalUrl="https://fotz.pl/blog/brand-guidelines-co-to"
+        canonical="https://fotz.pl/blog/brand-guidelines-co-to"
 
         keywords="Brand Guidelines co to jest, Brand Guidelines definicja, czym jest Brand Guidelines, Brand Guidelines w marketingu, Brand Guidelines przykłady, jak działa Brand Guidelines, Brand Guidelines strategia"
 

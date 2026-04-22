@@ -44,7 +44,7 @@ export default function BlogTs55CoTo() {
       <SEOHead
         title="TypeScript 5.5, 5.6 | Fotz Studio"
         description="TypeScript 5.5 i 5.6: Inferred Type Predicates (auto type guards z filter), using declarations (Explicit Resource Management), Isolated Declarations…"
-        canonicalUrl="https://fotz.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
+        canonical="https://fotz.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
 
         keywords="TypeScript 5.5, 5.6 co to jest, TypeScript 5.5, 5.6 jak działa, TypeScript 5.5, 5.6 tutorial, TypeScript 5.5, 5.6 przykład, czym jest TypeScript 5.5, 5.6, TypeScript 5.5, 5.6 dokumentacja, TypeScript 5.5, 5.6 przewodnik"
 

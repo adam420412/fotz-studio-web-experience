@@ -89,7 +89,7 @@ export default function BlogOkrCoTo() {
       <SEOHead
         title="OKR | Fotz Studio"
         description="OKR (Objectives and Key Results) — definicja, struktura, przykłady, różnica vs KPI i 5 najczęstszych błędów. Kompletny przewodnik po OKR dla firm i zespołów."
-        canonicalUrl="https://fotz.pl/blog/okr-co-to-jest"
+        canonical="https://fotz.pl/blog/okr-co-to-jest"
 
         keywords="OKR co to jest, OKR definicja, czym jest OKR, OKR przykłady, jak działa OKR, OKR znaczenie, OKR przewodnik"
 

@@ -44,7 +44,7 @@ export default function BlogReactFlowCoTo() {
       <SEOHead
         title="React Flow (xyflow), Mermaid.js i Graph Visualization w React…"
         description="@xyflow/react (React Flow) — custom nodes/edges, dagre layout, workflow builders. Mermaid.js — diagramy z kodu. Cytoscape.js, Sigma.js i D3 Force — graph…"
-        canonicalUrl="https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
+        canonical="https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
 
         keywords="React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 co to jest, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 jak działa, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 tutorial, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 przykład, czym jest React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 dokumentacja, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 przewodnik"
 

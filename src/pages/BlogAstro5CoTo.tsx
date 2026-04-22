@@ -44,7 +44,7 @@ export default function BlogAstro5CoTo() {
       <SEOHead
         title="Astro 5 | Fotz Studio"
         description="Astro 5: Content Layer API (dowolne źródło treści), Server Islands (dynamiczne wyspy), Astro Actions (type-safe mutations), View Transitions, Astro DB i…"
-        canonicalUrl="https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
+        canonical="https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
 
         keywords="Astro 5 co to jest, Astro 5 jak działa, Astro 5 tutorial, Astro 5 przykład, czym jest Astro 5, Astro 5 dokumentacja, Astro 5 przewodnik"
 

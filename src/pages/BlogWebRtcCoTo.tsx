@@ -50,7 +50,7 @@ export default function BlogWebRtcCoTo() {
       <SEOHead
         title="WebRTC | Fotz Studio"
         description="WebRTC: definicja, ICE/STUN/TURN, SDP, topologie (Mesh/SFU/MCU), jak budować aplikację, LiveKit, mediasoup i WebRTC vs. WebSockets."
-        canonicalUrl="https://fotz.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje"
+        canonical="https://fotz.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje"
 
         keywords="WebRTC co to jest, WebRTC definicja, czym jest WebRTC, WebRTC przykłady, jak działa WebRTC, WebRTC znaczenie, WebRTC przewodnik"
 

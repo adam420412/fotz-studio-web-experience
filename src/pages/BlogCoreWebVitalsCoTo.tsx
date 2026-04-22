@@ -44,7 +44,7 @@ export default function BlogCoreWebVitalsCoTo() {
       <SEOHead
         title="Core Web Vitals | Fotz Studio"
         description="Core Web Vitals: LCP, INP (następca FID), CLS — jak optymalizować, narzędzia pomiaru, Lighthouse CI, performance budgeting i wpływ na SEO Google."
-        canonicalUrl="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
+        canonical="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
 
         keywords="Core Web Vitals co to jest, Core Web Vitals definicja, czym jest Core Web Vitals, Core Web Vitals przykłady, jak działa Core Web Vitals, Core Web Vitals znaczenie, Core Web Vitals przewodnik"
 

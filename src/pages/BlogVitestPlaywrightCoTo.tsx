@@ -44,7 +44,7 @@ export default function BlogVitestPlaywrightCoTo() {
       <SEOHead
         title="Vitest, Playwright, Cypress, Storybook | Fotz Studio"
         description="Vitest vs Jest, Playwright vs Cypress, MSW, Storybook, testing pyramid — jak testować React aplikacje w 2024, unit, integration i E2E testy."
-        canonicalUrl="https://fotz.pl/blog/vitest-playwright-cypress-storybook-testowanie-react-2024"
+        canonical="https://fotz.pl/blog/vitest-playwright-cypress-storybook-testowanie-react-2024"
 
         keywords="Vitest, Playwright, Cypress, Storybook co to jest, Vitest, Playwright, Cypress, Storybook jak działa, Vitest, Playwright, Cypress, Storybook tutorial, Vitest, Playwright, Cypress, Storybook przykład, czym jest Vitest, Playwright, Cypress, Storybook, Vitest, Playwright, Cypress, Storybook dokumentacja, Vitest, Playwright, Cypress, Storybook przewodnik"
 

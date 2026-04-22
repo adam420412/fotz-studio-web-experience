@@ -63,7 +63,7 @@ export default function BlogEventTrackingCoTo() {
       <SEOHead
         title="Event Tracking | Fotz Studio"
         description="Event tracking — definicja, 6 typów eventów, konwencje nazewnictwa, narzędzia (Mixpanel, Amplitude, GA4, Segment) i jak projektować event schema…"
-        canonicalUrl="https://fotz.pl/blog/event-tracking-co-to"
+        canonical="https://fotz.pl/blog/event-tracking-co-to"
 
         keywords="Event Tracking co to jest, Event Tracking definicja, czym jest Event Tracking, Event Tracking przykłady, jak działa Event Tracking, Event Tracking znaczenie, Event Tracking przewodnik"
 

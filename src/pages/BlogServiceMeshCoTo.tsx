@@ -53,7 +53,7 @@ export default function BlogServiceMeshCoTo() {
       <SEOHead
         title="Service Mesh — co to jest, Istio, Linkerd i mTLS? | Fotz.pl"
         description="Service Mesh: definicja, Istio architektura (Envoy, Istiod), mTLS, canary deployments, circuit breaking, Service Mesh vs. API Gateway i jak wdrożyć."
-        canonicalUrl="https://fotz.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
+        canonical="https://fotz.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
 
         keywords="Service Mesh co to jest, Service Mesh definicja, czym jest Service Mesh, Service Mesh przykłady, jak działa Service Mesh, Service Mesh znaczenie, Service Mesh przewodnik"
 

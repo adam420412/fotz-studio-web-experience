@@ -51,7 +51,7 @@ export default function BlogVectorDatabaseCoTo() {
       <SEOHead
         title="Vector Database — co to jest i jak wybrać? | Fotz.pl"
         description="Vector Database: embeddings, similarity search, hybrid search, Pinecone, Qdrant, Weaviate, pgvector, architektura RAG i zastosowania w aplikacjach AI."
-        canonicalUrl="https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac"
+        canonical="https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac"
 
         keywords="Vector Database co to jest, Vector Database jak działa, Vector Database tutorial, Vector Database przykład, czym jest Vector Database, Vector Database dokumentacja, Vector Database przewodnik"
 

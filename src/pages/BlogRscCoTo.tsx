@@ -44,7 +44,7 @@ export default function BlogRscCoTo() {
       <SEOHead
         title="React Server Components, Server Actions, PPR | Fotz Studio"
         description="React Server Components vs Client Components, Server Actions, Partial Prerendering, React 19, Next.js App Router vs Pages Router — architektura 2024."
-        canonicalUrl="https://fotz.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024"
+        canonical="https://fotz.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024"
 
         keywords="React Server Components, Server Actions, PPR co to jest, React Server Components, Server Actions, PPR jak działa, React Server Components, Server Actions, PPR tutorial, React Server Components, Server Actions, PPR przykład, czym jest React Server Components, Server Actions, PPR, React Server Components, Server Actions, PPR dokumentacja, React Server Components, Server Actions, PPR przewodnik"
 

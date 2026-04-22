@@ -101,7 +101,7 @@ export default function BlogOutboundMarketingCoTo() {
       <SEOHead
         title="Outbound Marketing | Fotz Studio"
         description="Outbound marketing — definicja, 6 kanałów (cold email, LinkedIn, PPC, direct mail), porównanie z inbound i jak skutecznie prowadzić kampanie wychodzące."
-        canonicalUrl="https://fotz.pl/blog/outbound-marketing-co-to"
+        canonical="https://fotz.pl/blog/outbound-marketing-co-to"
 
         keywords="Outbound Marketing co to jest, Outbound Marketing definicja, czym jest Outbound Marketing, Outbound Marketing w marketingu, Outbound Marketing przykłady, jak działa Outbound Marketing, Outbound Marketing strategia"
 

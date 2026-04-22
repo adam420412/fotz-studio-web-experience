@@ -44,7 +44,7 @@ export default function BlogNestJsCoTo() {
       <SEOHead
         title="NestJS | Fotz Studio"
         description="NestJS: TypeScript framework Node.js — moduły, kontrolery, guards, interceptors, pipes, mikrousługi, GraphQL, TypeORM i kiedy wybrać NestJS vs…"
-        canonicalUrl="https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
+        canonical="https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
 
         keywords="NestJS co to jest, NestJS definicja, czym jest NestJS, NestJS przykłady, jak działa NestJS, NestJS znaczenie, NestJS przewodnik"
 

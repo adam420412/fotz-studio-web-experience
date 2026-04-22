@@ -44,7 +44,7 @@ export default function BlogMswTestingCoTo() {
       <SEOHead
         title="MSW Mock Service Worker 2.0, Storybook mocking i Contract…"
         description="MSW 2.0 (http/HttpResponse, Browser+Node), integracja z Vitest+RTL+Storybook, contract testing z Pact — API mocking dla React i TypeScript 2024."
-        canonicalUrl="https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
+        canonical="https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
 
         keywords="MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact co to jest, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact definicja, czym jest MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact przykłady, jak działa MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact znaczenie, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact przewodnik"
 

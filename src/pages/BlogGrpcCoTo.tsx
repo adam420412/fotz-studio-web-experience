@@ -53,7 +53,7 @@ export default function BlogGrpcCoTo() {
       <SEOHead
         title="gRPC | Fotz Studio"
         description="gRPC: co to jest, Protocol Buffers, 4 typy komunikacji (Unary/Streaming), gRPC vs REST, narzędzia, load balancing i migracja w mikrousługach."
-        canonicalUrl="https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
+        canonical="https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
 
         keywords="gRPC co to jest, gRPC definicja, czym jest gRPC, gRPC przykłady, jak działa gRPC, gRPC znaczenie, gRPC przewodnik"
 

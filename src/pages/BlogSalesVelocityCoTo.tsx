@@ -80,7 +80,7 @@ export default function BlogSalesVelocityCoTo() {
       <SEOHead
         title="Sales Velocity | Fotz Studio"
         description="Sales velocity — definicja, formuła (N × V × W / L), 4 dźwignie wzrostu, benchmarki dla SaaS i etapy procesu sprzedaży. Jak mierzyć i zwiększać prędkość…"
-        canonicalUrl="https://fotz.pl/blog/sales-velocity-co-to"
+        canonical="https://fotz.pl/blog/sales-velocity-co-to"
 
         keywords="Sales Velocity co to jest, Sales Velocity definicja, czym jest Sales Velocity, Sales Velocity w sprzedaży, Sales Velocity strategia, Sales Velocity przykłady, jak używać Sales Velocity"
 

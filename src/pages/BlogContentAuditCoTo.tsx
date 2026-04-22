@@ -101,7 +101,7 @@ export default function BlogContentAuditCoTo() {
       <SEOHead
         title="Content Audit — co to jest? Audyt treści krok po kroku"
         description="Content audit — definicja, 5-etapowy proces (inventory, dane, ocena, action plan), decyzje Keep/Update/Remove i narzędzia. Kompletny przewodnik po audycie…"
-        canonicalUrl="https://fotz.pl/blog/content-audit-co-to"
+        canonical="https://fotz.pl/blog/content-audit-co-to"
 
         keywords="Content Audit co to jest, Content Audit definicja, czym jest Content Audit, Content Audit przykłady, jak działa Content Audit, Content Audit znaczenie, Content Audit przewodnik"
 

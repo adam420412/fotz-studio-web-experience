@@ -44,7 +44,7 @@ export default function BlogClickhouseCoTo() {
       <SEOHead
         title="ClickHouse | Fotz Studio"
         description="ClickHouse: kolumnowy OLAP database, MergeTree engines, Kafka streaming ingestion, sharding i replikacja, ClickHouse vs BigQuery vs Snowflake vs DuckDB."
-        canonicalUrl="https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
+        canonical="https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
 
         keywords="ClickHouse co to jest, ClickHouse definicja, czym jest ClickHouse, ClickHouse przykłady, jak działa ClickHouse, ClickHouse znaczenie, ClickHouse przewodnik"
 

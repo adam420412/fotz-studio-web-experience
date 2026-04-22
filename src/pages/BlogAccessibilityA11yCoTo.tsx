@@ -44,7 +44,7 @@ export default function BlogAccessibilityA11yCoTo() {
       <SEOHead
         title="Dostępność web (a11y), WCAG, ARIA, keyboard navigation"
         description="Web Accessibility (a11y): WCAG 2.2 AA, semantyczny HTML, ARIA, keyboard nav, kontrast kolorów, screen reader testing, axe-core i Lighthouse dostępność."
-        canonicalUrl="https://fotz.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie"
+        canonical="https://fotz.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie"
 
         keywords="Dostępność web (a11y), WCAG, ARIA, keyboard navigation co to jest, Dostępność web (a11y), WCAG, ARIA, keyboard navigation definicja, czym jest Dostępność web (a11y), WCAG, ARIA, keyboard navigation, Dostępność web (a11y), WCAG, ARIA, keyboard navigation przykłady, jak działa Dostępność web (a11y), WCAG, ARIA, keyboard navigation, Dostępność web (a11y), WCAG, ARIA, keyboard navigation znaczenie, Dostępność web (a11y), WCAG, ARIA, keyboard navigation przewodnik"
 

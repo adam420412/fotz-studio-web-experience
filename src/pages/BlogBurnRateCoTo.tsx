@@ -81,7 +81,7 @@ export default function BlogBurnRateCoTo() {
       <SEOHead
         title="Burn Rate i Runway | Fotz Studio"
         description="Burn rate i runway — definicja, wzory (gross burn, net burn, runway, burn multiple), benchmarki i jak zmniejszyć burn rate. Kompletny przewodnik dla startupów."
-        canonicalUrl="https://fotz.pl/blog/burn-rate-runway-co-to"
+        canonical="https://fotz.pl/blog/burn-rate-runway-co-to"
 
         keywords="Burn Rate i Runway co to jest, Burn Rate i Runway definicja, czym jest Burn Rate i Runway, Burn Rate i Runway startup, Burn Rate i Runway jak liczyć, Burn Rate i Runway wzór, Burn Rate i Runway przykłady"
 

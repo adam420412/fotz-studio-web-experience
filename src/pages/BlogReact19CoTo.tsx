@@ -44,7 +44,7 @@ export default function BlogReact19CoTo() {
       <SEOHead
         title="React 19 | Fotz Studio"
         description="React 19: use() hook, useActionState, useFormStatus, useOptimistic, React Compiler (auto-memoizing), ref jako prop, Server Actions i Next.js 15 Turbopack…"
-        canonicalUrl="https://fotz.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
+        canonical="https://fotz.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
 
         keywords="React 19 co to jest, React 19 jak działa, React 19 tutorial, React 19 przykład, czym jest React 19, React 19 dokumentacja, React 19 przewodnik"
 

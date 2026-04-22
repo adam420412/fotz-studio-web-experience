@@ -44,7 +44,7 @@ export default function BlogI18nCoTo() {
       <SEOHead
         title="i18n internacjonalizacja | Fotz Studio"
         description="Internationalization (i18n) w Next.js: next-intl, App Router locale routing, Intl API, hreflang SEO, pluralizacja ICU, CMS tłumaczeń Lokalise i Tolgee."
-        canonicalUrl="https://fotz.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
+        canonical="https://fotz.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
 
         keywords="i18n internacjonalizacja co to jest, i18n internacjonalizacja jak działa, i18n internacjonalizacja tutorial, i18n internacjonalizacja przykład, czym jest i18n internacjonalizacja, i18n internacjonalizacja dokumentacja, i18n internacjonalizacja przewodnik"
 

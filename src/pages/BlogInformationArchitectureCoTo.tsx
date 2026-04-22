@@ -103,7 +103,7 @@ export default function BlogInformationArchitectureCoTo() {
       <SEOHead
         title="Architektura Informacji | Fotz Studio"
         description="Architektura informacji (IA) — definicja, 4 komponenty (Organization, Labeling, Navigation, Search), metody badawcze (card sorting, tree testing) i…"
-        canonicalUrl="https://fotz.pl/blog/information-architecture-co-to"
+        canonical="https://fotz.pl/blog/information-architecture-co-to"
 
         keywords="Architektura Informacji co to jest, Architektura Informacji definicja, czym jest Architektura Informacji, Architektura Informacji przykłady, jak działa Architektura Informacji, Architektura Informacji znaczenie, Architektura Informacji przewodnik"
 

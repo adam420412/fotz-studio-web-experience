@@ -44,7 +44,7 @@ export default function BlogReactNativeExpoCoTo() {
       <SEOHead
         title="React Native, Expo | Fotz Studio"
         description="React Native + Expo: New Architecture (Fabric/JSI), Expo Router, EAS Build, navigation, state management — vs Flutter i natywne iOS/Android, kiedy co wybrać."
-        canonicalUrl="https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
+        canonical="https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
 
         keywords="React Native, Expo co to jest, React Native, Expo jak działa, React Native, Expo tutorial, React Native, Expo przykład, czym jest React Native, Expo, React Native, Expo dokumentacja, React Native, Expo przewodnik"
 

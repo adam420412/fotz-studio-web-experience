@@ -44,7 +44,7 @@ export default function BlogQwikCoTo() {
       <SEOHead
         title="Qwik framework | Fotz Studio"
         description="Qwik framework: Resumability (zerowa hydration), useSignal/useStore, Qwik City (routery, loaders, actions jak Remix), Qwik Insights, Cloudflare Workers i…"
-        canonicalUrl="https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
+        canonical="https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
 
         keywords="Qwik framework co to jest, Qwik framework jak działa, Qwik framework tutorial, Qwik framework przykład, czym jest Qwik framework, Qwik framework dokumentacja, Qwik framework przewodnik"
 

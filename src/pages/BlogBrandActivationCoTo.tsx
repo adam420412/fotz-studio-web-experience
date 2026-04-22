@@ -102,7 +102,7 @@ export default function BlogBrandActivationCoTo() {
       <SEOHead
         title="Brand Activation | Fotz Studio"
         description="Brand activation — definicja, rodzaje aktywacji marki, przykłady kampanii i jak mierzyć skuteczność. Kompletny przewodnik po experiential marketingu i…"
-        canonicalUrl="https://fotz.pl/blog/brand-activation-co-to"
+        canonical="https://fotz.pl/blog/brand-activation-co-to"
 
         keywords="Brand Activation co to jest, Brand Activation definicja, czym jest Brand Activation, Brand Activation w marketingu, Brand Activation przykłady, jak działa Brand Activation, Brand Activation strategia"
 

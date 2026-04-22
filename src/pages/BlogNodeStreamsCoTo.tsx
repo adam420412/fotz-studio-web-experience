@@ -44,7 +44,7 @@ export default function BlogNodeStreamsCoTo() {
       <SEOHead
         title="Node.js Streams | Fotz Studio"
         description="Node.js Streams (Readable, Writable, Transform, pipeline), backpressure, SSE, CSV streaming, S3 upload/download, Web Streams API (ReadableStream) i…"
-        canonicalUrl="https://fotz.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024"
+        canonical="https://fotz.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024"
 
         keywords="Node.js Streams co to jest, Node.js Streams jak działa, Node.js Streams tutorial, Node.js Streams przykład, czym jest Node.js Streams, Node.js Streams dokumentacja, Node.js Streams przewodnik"
 

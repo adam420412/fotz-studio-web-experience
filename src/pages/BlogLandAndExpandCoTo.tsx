@@ -180,7 +180,7 @@ export default function BlogLandAndExpandCoTo() {
       <SEOHead
         title="Land and Expand — strategia wzrostu SaaS B2B | Fotz.pl"
         description="Land and Expand — kompletny przewodnik po strategii wzrostu w SaaS B2B: fazy, motion ekspansji, NRR benchmarks i playbook dla CS i Sales teamów."
-        canonicalUrl="https://fotz.pl/blog/land-and-expand-strategia"
+        canonical="https://fotz.pl/blog/land-and-expand-strategia"
 
         keywords="Land and Expand co to jest, Land and Expand definicja, czym jest Land and Expand, Land and Expand startup, Land and Expand jak liczyć, Land and Expand wzór, Land and Expand przykłady"
 

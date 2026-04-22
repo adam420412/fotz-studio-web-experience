@@ -44,7 +44,7 @@ export default function BlogRateLimitingCoTo() {
       <SEOHead
         title="Rate Limiting | Fotz Studio"
         description="Rate Limiting: Token Bucket vs Leaky Bucket vs Sliding Window, implementacja z Redis, Kong, AWS API Gateway, Cloudflare i Exponential Backoff dla klientów API."
-        canonicalUrl="https://fotz.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
+        canonical="https://fotz.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
 
         keywords="Rate Limiting co to jest, Rate Limiting jak działa, Rate Limiting tutorial, Rate Limiting przykład, czym jest Rate Limiting, Rate Limiting dokumentacja, Rate Limiting przewodnik"
 

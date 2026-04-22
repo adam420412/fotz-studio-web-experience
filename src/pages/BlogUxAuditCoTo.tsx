@@ -88,7 +88,7 @@ export default function BlogUxAuditCoTo() {
       <SEOHead
         title="Audyt UX — co to jest? UX audit heurystyki i metodologia"
         description="Audyt UX — definicja, 4 frameworki (heurystyki Nielsena, cognitive walkthrough, WCAG, analytics-informed), 10 heurystyk Nielsena i skala severity. Jak…"
-        canonicalUrl="https://fotz.pl/blog/ux-audit-co-to"
+        canonical="https://fotz.pl/blog/ux-audit-co-to"
 
         keywords="Audyt UX co to jest, Audyt UX definicja, czym jest Audyt UX, Audyt UX przykłady, jak działa Audyt UX, Audyt UX znaczenie, Audyt UX przewodnik"
 

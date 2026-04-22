@@ -44,7 +44,7 @@ export default function BlogReactRouter7CoTo() {
       <SEOHead
         title="React Router 7 | Fotz Studio"
         description="React Router 7 (Remix v3): Framework Mode (file-based routing, loaders, actions, SSR), Library Mode, typegen, pending states, optimistic UI i porównanie z…"
-        canonicalUrl="https://fotz.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
+        canonical="https://fotz.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
 
         keywords="React Router 7 co to jest, React Router 7 jak działa, React Router 7 tutorial, React Router 7 przykład, czym jest React Router 7, React Router 7 dokumentacja, React Router 7 przewodnik"
 

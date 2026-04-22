@@ -44,7 +44,7 @@ export default function BlogIdempotencyCoTo() {
       <SEOHead
         title="Idempotencja API | Fotz Studio"
         description="Idempotencja API: Idempotency Keys, Redis implementacja, ochrona przed podwójną płatnością, idempotent consumers w Kafka, Inbox Pattern i HTTP metody."
-        canonicalUrl="https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
+        canonical="https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
 
         keywords="Idempotencja API co to jest, Idempotencja API jak działa, Idempotencja API tutorial, Idempotencja API przykład, czym jest Idempotencja API, Idempotencja API dokumentacja, Idempotencja API przewodnik"
 

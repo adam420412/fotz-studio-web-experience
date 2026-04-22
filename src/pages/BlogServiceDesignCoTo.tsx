@@ -103,7 +103,7 @@ export default function BlogServiceDesignCoTo() {
       <SEOHead
         title="Service Design | Fotz Studio"
         description="Service design — definicja, 5 zasad, 4-fazowy proces (discover, define, develop, deliver), service blueprint i narzędzia. Czym różni się od UX design…"
-        canonicalUrl="https://fotz.pl/blog/service-design-co-to"
+        canonical="https://fotz.pl/blog/service-design-co-to"
 
         keywords="Service Design co to jest, Service Design definicja, czym jest Service Design, Service Design przykłady, jak działa Service Design, Service Design znaczenie, Service Design przewodnik"
 

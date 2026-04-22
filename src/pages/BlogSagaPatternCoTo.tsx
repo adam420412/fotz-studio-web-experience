@@ -44,7 +44,7 @@ export default function BlogSagaPatternCoTo() {
       <SEOHead
         title="Saga Pattern | Fotz Studio"
         description="Saga Pattern: distributed transactions w mikrousługach, Choreography vs Orchestration, Temporal.io durable workflows, implementacja z Kafka i Event Store."
-        canonicalUrl="https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
+        canonical="https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
 
         keywords="Saga Pattern co to jest, Saga Pattern definicja, czym jest Saga Pattern, Saga Pattern przykłady, jak działa Saga Pattern, Saga Pattern znaczenie, Saga Pattern przewodnik"
 

@@ -44,7 +44,7 @@ export default function BlogZustandCoTo() {
       <SEOHead
         title="Zustand, Jotai, Redux Toolkit | Fotz Studio"
         description="Zarządzanie stanem React: Zustand vs Jotai vs Redux Toolkit vs Context API, atomic state, RTK Query, best practices i kiedy co wybrać w 2024."
-        canonicalUrl="https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
+        canonical="https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
 
         keywords="Zustand, Jotai, Redux Toolkit co to jest, Zustand, Jotai, Redux Toolkit jak działa, Zustand, Jotai, Redux Toolkit tutorial, Zustand, Jotai, Redux Toolkit przykład, czym jest Zustand, Jotai, Redux Toolkit, Zustand, Jotai, Redux Toolkit dokumentacja, Zustand, Jotai, Redux Toolkit przewodnik"
 

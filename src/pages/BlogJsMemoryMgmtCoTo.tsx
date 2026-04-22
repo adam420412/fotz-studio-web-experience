@@ -44,7 +44,7 @@ export default function BlogJsMemoryMgmtCoTo() {
       <SEOHead
         title="JavaScript Memory Management | Fotz Studio"
         description="JavaScript Memory Management: Garbage Collection (Mark and Sweep), WeakMap/WeakSet (słabe referencje), WeakRef, FinalizationRegistry, memory leaks w React…"
-        canonicalUrl="https://fotz.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
+        canonical="https://fotz.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
 
         keywords="JavaScript Memory Management co to jest, JavaScript Memory Management jak działa, JavaScript Memory Management tutorial, JavaScript Memory Management przykład, czym jest JavaScript Memory Management, JavaScript Memory Management dokumentacja, JavaScript Memory Management przewodnik"
 

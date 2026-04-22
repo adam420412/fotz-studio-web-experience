@@ -52,7 +52,7 @@ export default function BlogWinRateCoTo() {
       <SEOHead
         title="Win Rate | Fotz Studio"
         description="Win Rate: jak obliczać, analiza przyczyn przegranej (loss analysis), segmentacja po AE/source/competitor, strategie poprawy i benchmarki dla zespołów SaaS."
-        canonicalUrl="https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
+        canonical="https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
 
         keywords="Win Rate co to jest, Win Rate definicja, czym jest Win Rate, Win Rate przykłady, jak działa Win Rate, Win Rate znaczenie, Win Rate przewodnik"
 

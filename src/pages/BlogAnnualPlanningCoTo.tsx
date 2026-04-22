@@ -76,7 +76,7 @@ export default function BlogAnnualPlanningCoTo() {
       <SEOHead
         title="Annual Planning — jak planować roczne cele firmy? | Fotz.pl"
         description="Annual Planning (planowanie roczne) — proces, Revenue Target, OKRs, Headcount Plan i błędy do uniknięcia. Kompletny przewodnik dla CEO, CFO i VP Operations."
-        canonicalUrl="https://fotz.pl/blog/annual-planning-planowanie-roczne-firmy"
+        canonical="https://fotz.pl/blog/annual-planning-planowanie-roczne-firmy"
 
         keywords="Annual Planning co to jest, Annual Planning definicja, czym jest Annual Planning, Annual Planning przykłady, jak działa Annual Planning, Annual Planning znaczenie, Annual Planning przewodnik"
 

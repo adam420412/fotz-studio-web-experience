@@ -62,7 +62,7 @@ export default function BlogScrumMasterCoTo() {
       <SEOHead
         title="Scrum Master — co to jest? Rola SM w Scrum i Agile"
         description="Scrum Master — definicja, obowiązki (dla Teamu, PO i organizacji), różnica vs. Project Manager, 5 anty-wzorców i certyfikaty CSM/PSM. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/scrum-master-co-to"
+        canonical="https://fotz.pl/blog/scrum-master-co-to"
 
         keywords="Scrum Master co to jest, Scrum Master definicja, czym jest Scrum Master, Scrum Master przykłady, jak działa Scrum Master, Scrum Master znaczenie, Scrum Master przewodnik"
 

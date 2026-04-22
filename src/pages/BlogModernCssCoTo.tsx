@@ -44,7 +44,7 @@ export default function BlogModernCssCoTo() {
       <SEOHead
         title="Modern CSS | Fotz Studio"
         description="Container Queries (@container), :has() parent selector, CSS @layer kaskada, CSS Nesting, View Transitions API (startViewTransition), Scroll-driven…"
-        canonicalUrl="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
+        canonical="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
 
         keywords="Modern CSS co to jest, Modern CSS definicja, czym jest Modern CSS, Modern CSS przykłady, jak działa Modern CSS, Modern CSS znaczenie, Modern CSS przewodnik"
 

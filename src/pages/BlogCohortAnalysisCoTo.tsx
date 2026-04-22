@@ -104,7 +104,7 @@ export default function BlogCohortAnalysisCoTo() {
       <SEOHead
         title="Cohort Analysis | Fotz Studio"
         description="Cohort analysis — definicja, 3 typy kohort, wzorce krzywej retencji, kluczowe metryki i jak czytać tablicę retencji. Kompletny przewodnik po analizie kohort."
-        canonicalUrl="https://fotz.pl/blog/cohort-analysis-co-to"
+        canonical="https://fotz.pl/blog/cohort-analysis-co-to"
 
         keywords="Cohort Analysis co to jest, Cohort Analysis definicja, czym jest Cohort Analysis, Cohort Analysis przykłady, jak działa Cohort Analysis, Cohort Analysis znaczenie, Cohort Analysis przewodnik"
 

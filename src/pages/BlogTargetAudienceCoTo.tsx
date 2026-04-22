@@ -76,7 +76,7 @@ export default function BlogTargetAudienceCoTo() {
       <SEOHead
         title="Target Audience | Fotz Studio"
         description="Target audience (grupa docelowa) — definicja, 4 typy segmentacji (demo, geo, psycho, behawioralna), metody badań i różnica vs. buyer persona. Kompletny…"
-        canonicalUrl="https://fotz.pl/blog/target-audience-co-to"
+        canonical="https://fotz.pl/blog/target-audience-co-to"
 
         keywords="Target Audience co to jest, Target Audience definicja, czym jest Target Audience, Target Audience przykłady, jak działa Target Audience, Target Audience znaczenie, Target Audience przewodnik"
 

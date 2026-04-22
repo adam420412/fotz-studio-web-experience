@@ -44,7 +44,7 @@ export default function BlogCssInJsCoTo() {
       <SEOHead
         title="CSS-in-JS, vanilla-extract, StyleX, Linaria | Fotz Studio"
         description="Ewolucja CSS-in-JS: styled-components, Emotion (runtime) vs vanilla-extract, StyleX, Linaria, Panda CSS (zero-runtime) — porównanie, RSC kompatybilność i…"
-        canonicalUrl="https://fotz.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024"
+        canonical="https://fotz.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024"
 
         keywords="CSS-in-JS, vanilla-extract, StyleX, Linaria co to jest, CSS-in-JS, vanilla-extract, StyleX, Linaria definicja, czym jest CSS-in-JS, vanilla-extract, StyleX, Linaria, CSS-in-JS, vanilla-extract, StyleX, Linaria przykłady, jak działa CSS-in-JS, vanilla-extract, StyleX, Linaria, CSS-in-JS, vanilla-extract, StyleX, Linaria znaczenie, CSS-in-JS, vanilla-extract, StyleX, Linaria przewodnik"
 

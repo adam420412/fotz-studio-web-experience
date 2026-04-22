@@ -87,7 +87,7 @@ export default function BlogNeuromarketingCoTo() {
       <SEOHead
         title="Neuromarketing — co to jest i jak stosować w praktyce?"
         description="Neuromarketing — definicja, kluczowe odkrycia (anchoring, paradoks wyboru, loss aversion), psychologia kolorów i praktyczne zastosowania. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/neuromarketing-co-to"
+        canonical="https://fotz.pl/blog/neuromarketing-co-to"
 
         keywords="Neuromarketing co to jest, Neuromarketing definicja, czym jest Neuromarketing, Neuromarketing w marketingu, Neuromarketing przykłady, jak działa Neuromarketing, Neuromarketing strategia"
 

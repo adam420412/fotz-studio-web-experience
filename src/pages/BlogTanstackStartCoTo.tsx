@@ -43,7 +43,7 @@ export default function BlogTanstackStartCoTo() {
       <SEOHead
         title="TanStack Start | Fotz Studio"
         description="TanStack Start: full-stack React framework (beta 2024) z TanStack Router (type-safe), Server Functions (jak Server Actions), Vinxi bundler i TanStack…"
-        canonicalUrl="https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
+        canonical="https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
 
         keywords="TanStack Start co to jest, TanStack Start jak działa, TanStack Start tutorial, TanStack Start przykład, czym jest TanStack Start, TanStack Start dokumentacja, TanStack Start przewodnik"
 

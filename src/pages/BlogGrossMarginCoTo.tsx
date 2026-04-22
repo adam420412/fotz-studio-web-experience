@@ -58,7 +58,7 @@ export default function BlogGrossMarginCoTo() {
       <SEOHead
         title="Gross Margin — marża brutto co to jest w SaaS? | Fotz.pl"
         description="Gross Margin (marża brutto) w SaaS — definicja, formuła, co wchodzi do COGS, benchmarki branżowe i jak poprawić marżę brutto. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/gross-margin-marza-brutto-co-to"
+        canonical="https://fotz.pl/blog/gross-margin-marza-brutto-co-to"
 
         keywords="Gross Margin co to jest, Gross Margin definicja, czym jest Gross Margin, Gross Margin startup, Gross Margin jak liczyć, Gross Margin wzór, Gross Margin przykłady"
 

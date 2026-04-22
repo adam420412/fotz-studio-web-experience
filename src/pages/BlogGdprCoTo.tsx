@@ -58,7 +58,7 @@ export default function BlogGdprCoTo() {
       <SEOHead
         title="GDPR (RODO) | Fotz Studio"
         description="GDPR / RODO: podstawy prawne przetwarzania, prawa podmiotów danych, wdrożenie krok po kroku, DPA, SCCs, kary i checklist compliance dla firm SaaS."
-        canonicalUrl="https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
+        canonical="https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
 
         keywords="GDPR (RODO) co to jest, GDPR (RODO) definicja, czym jest GDPR (RODO), GDPR (RODO) przykłady, jak działa GDPR (RODO), GDPR (RODO) znaczenie, GDPR (RODO) przewodnik"
 

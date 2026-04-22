@@ -67,7 +67,7 @@ export default function BlogNorthStarMetricCoTo() {
       <SEOHead
         title="North Star Metric | Fotz Studio"
         description="North Star Metric (NSM) — definicja, przykłady (Airbnb, Spotify, Slack), jak wybrać NSM, input metrics i 4 antyprzykłady vanity metrics. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/north-star-metric-co-to"
+        canonical="https://fotz.pl/blog/north-star-metric-co-to"
 
         keywords="North Star Metric co to jest, North Star Metric definicja, czym jest North Star Metric, North Star Metric przykłady, jak działa North Star Metric, North Star Metric znaczenie, North Star Metric przewodnik"
 

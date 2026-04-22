@@ -44,7 +44,7 @@ export default function BlogKonvaCanvasCoTo() {
       <SEOHead
         title="Konva.js, Fabric.js, html2canvas | Fotz Studio"
         description="react-konva (scena, shapes, drag), Fabric.js (object model, free drawing), html2canvas (DOM screenshot), Satori OG images, QR Code (qrcode.react) i PDF…"
-        canonicalUrl="https://fotz.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
+        canonical="https://fotz.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
 
         keywords="Konva.js, Fabric.js, html2canvas co to jest, Konva.js, Fabric.js, html2canvas jak działa, Konva.js, Fabric.js, html2canvas tutorial, Konva.js, Fabric.js, html2canvas przykład, czym jest Konva.js, Fabric.js, html2canvas, Konva.js, Fabric.js, html2canvas dokumentacja, Konva.js, Fabric.js, html2canvas przewodnik"
 

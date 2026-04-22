@@ -44,7 +44,7 @@ export default function BlogTsconfigCoTo() {
       <SEOHead
         title="tsconfig.json | Fotz Studio"
         description="tsconfig.json: strict mode, noUncheckedIndexedAccess, path aliases (@/*), project references, verbatimModuleSyntax — konfiguracja TypeScript dla Next.js…"
-        canonicalUrl="https://fotz.pl/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references"
+        canonical="https://fotz.pl/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references"
 
         keywords="tsconfig.json co to jest, tsconfig.json jak działa, tsconfig.json tutorial, tsconfig.json przykład, czym jest tsconfig.json, tsconfig.json dokumentacja, tsconfig.json przewodnik"
 

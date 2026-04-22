@@ -105,7 +105,7 @@ export default function BlogSalesDiscoveryCoTo() {
       <SEOHead
         title="Sales Discovery — co to jest i jak prowadzić? | Fotz.pl"
         description="Sales Discovery — struktura rozmowy odkrywającej, pytania do kwalifikacji, agenda i najczęstsze błędy. Kompletny przewodnik dla handlowców B2B."
-        canonicalUrl="https://fotz.pl/blog/sales-discovery-rozmowa-sprzedazowa"
+        canonical="https://fotz.pl/blog/sales-discovery-rozmowa-sprzedazowa"
 
         keywords="Sales Discovery co to jest, Sales Discovery definicja, czym jest Sales Discovery, Sales Discovery w sprzedaży, Sales Discovery strategia, Sales Discovery przykłady, jak używać Sales Discovery"
 

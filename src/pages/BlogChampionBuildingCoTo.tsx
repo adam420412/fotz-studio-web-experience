@@ -89,7 +89,7 @@ export default function BlogChampionBuildingCoTo() {
       <SEOHead
         title="Champion Building | Fotz Studio"
         description="Champion Building w sprzedaży enterprise — jak identyfikować, testować i rozwijać Championa który sprzedaje Twój produkt wewnątrz organizacji klienta."
-        canonicalUrl="https://fotz.pl/blog/champion-building-sprzedaz-b2b-enterprise"
+        canonical="https://fotz.pl/blog/champion-building-sprzedaz-b2b-enterprise"
 
         keywords="Champion Building co to jest, Champion Building definicja, czym jest Champion Building, Champion Building w sprzedaży, Champion Building strategia, Champion Building przykłady, jak używać Champion Building"
 

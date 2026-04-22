@@ -98,7 +98,7 @@ export default function BlogInvestorUpdateCoTo() {
       <SEOHead
         title="Investor Update — co to jest i jak pisać? | Fotz.pl"
         description="Investor Update (aktualizacja dla inwestorów) — struktura, sekcje, co pisać w Highlights i Lowlights. Kompletny przewodnik dla founderów startupów."
-        canonicalUrl="https://fotz.pl/blog/investor-update-aktualizacja-dla-inwestorow"
+        canonical="https://fotz.pl/blog/investor-update-aktualizacja-dla-inwestorow"
 
         keywords="Investor Update co to jest, Investor Update definicja, czym jest Investor Update, Investor Update startup, Investor Update jak liczyć, Investor Update wzór, Investor Update przykłady"
 

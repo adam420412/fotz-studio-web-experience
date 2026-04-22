@@ -44,7 +44,7 @@ export default function BlogAiImageGenCoTo() {
       <SEOHead
         title="AI generowanie obrazów | Fotz Studio"
         description="AI Image Generation: DALL-E 3 (OpenAI), Replicate (SDXL, Flux), FAL.ai (realtime), Stable Diffusion — prompt engineering, Next.js integracja, Vercel Blob…"
-        canonicalUrl="https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
+        canonical="https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
 
         keywords="AI generowanie obrazów co to jest, AI generowanie obrazów jak działa, AI generowanie obrazów tutorial, AI generowanie obrazów przykład, czym jest AI generowanie obrazów, AI generowanie obrazów dokumentacja, AI generowanie obrazów przewodnik"
 

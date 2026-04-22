@@ -78,7 +78,7 @@ export default function BlogRetentionCurveCoTo() {
       <SEOHead
         title="Krzywa retencji — co to jest i jak poprawić retencję? | Fotz.pl"
         description="Retention curve — jak analizować krzywe retencji, typy krzywych, benchmarki dla SaaS i consumer apps, dźwignie poprawy retencji. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
+        canonical="https://fotz.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
 
         keywords="Krzywa retencji co to jest, Krzywa retencji definicja, czym jest Krzywa retencji, Krzywa retencji przykłady, jak działa Krzywa retencji, Krzywa retencji znaczenie, Krzywa retencji przewodnik"
 

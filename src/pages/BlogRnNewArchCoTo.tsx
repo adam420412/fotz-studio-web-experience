@@ -44,7 +44,7 @@ export default function BlogRnNewArchCoTo() {
       <SEOHead
         title="React Native New Architecture | Fotz Studio"
         description="React Native New Architecture: JSI (C++ layer), TurboModules (lazy-loaded), Fabric Renderer, Bridgeless Mode, Reanimated 3 worklets, Expo SDK 52 i…"
-        canonicalUrl="https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
+        canonical="https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
 
         keywords="React Native New Architecture co to jest, React Native New Architecture jak działa, React Native New Architecture tutorial, React Native New Architecture przykład, czym jest React Native New Architecture, React Native New Architecture dokumentacja, React Native New Architecture przewodnik"
 

@@ -116,7 +116,7 @@ export default function BlogBreakevenCoTo() {
       <SEOHead
         title="Break-even | Fotz Studio"
         description="Analiza break-even — definicja, formuły (BEP w szt. i PLN), marża pokrycia (CM), margin of safety i dźwignia operacyjna. Kompletny przewodnik z przykładami."
-        canonicalUrl="https://fotz.pl/blog/break-even-prog-rentownosci-co-to"
+        canonical="https://fotz.pl/blog/break-even-prog-rentownosci-co-to"
 
         keywords="Break-even co to jest, Break-even definicja, czym jest Break-even, Break-even przykłady, jak działa Break-even, Break-even znaczenie, Break-even przewodnik"
 

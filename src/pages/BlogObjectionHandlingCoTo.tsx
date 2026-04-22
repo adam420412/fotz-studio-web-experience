@@ -130,7 +130,7 @@ export default function BlogObjectionHandlingCoTo() {
       <SEOHead
         title="Objection Handling — co to jest? Obsługa obiekcji w sprzedaży B2B"
         description="Objection Handling — definicja, 5 najczęstszych obiekcji (cena, czas, konkurencja, status quo, autorytet), techniki LAER, Feel-Felt-Found i jak je stosować."
-        canonicalUrl="https://fotz.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
+        canonical="https://fotz.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
 
         keywords="Objection Handling co to jest, Objection Handling definicja, czym jest Objection Handling, Objection Handling w sprzedaży, Objection Handling strategia, Objection Handling przykłady, jak używać Objection Handling"
 
