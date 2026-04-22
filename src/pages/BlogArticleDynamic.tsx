@@ -1,4 +1,5 @@
 import { useParams, Navigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Layout } from "@/components/layout/Layout";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, ArticleSchema } from "@/components/seo/StructuredData";
@@ -7,8 +8,28 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { format } from "date-fns";
 import { pl } from "date-fns/locale";
+
+/**
+ * BabyLove may store keywords as `["a","b"]`, `{ keywords: ["a","b"] }`,
+ * or a comma-separated string. Normalise to a clean string[].
+ */
+function extractKeywords(raw: unknown): string[] {
+  if (!raw) return [];
+  if (Array.isArray(raw)) {
+    return raw.filter((v): v is string => typeof v === "string" && v.trim().length > 0);
+  }
+  if (typeof raw === "string") {
+    return raw.split(",").map((s) => s.trim()).filter(Boolean);
+  }
+  if (typeof raw === "object") {
+    const inner = (raw as Record<string, unknown>).keywords;
+    if (inner) return extractKeywords(inner);
+  }
+  return [];
+}
 
 export default function BlogArticleDynamic() {
   const { slug } = useParams<{ slug: string }>();
@@ -44,14 +65,24 @@ export default function BlogArticleDynamic() {
 
   const canonicalUrl = `https://fotz.pl/blog/${article.slug}`;
 
+  const keywordsList = extractKeywords(article.keywords);
+  const seoKeywords = keywordsList.length ? keywordsList.join(", ") : undefined;
+
+  // Prefer the BabyLove excerpt for the visible lead and the meta description,
+  // falling back to the existing meta_description / title chain.
+  const lead = article.excerpt || article.meta_description || "";
+
   // Build a description of at least 120 chars for SEO
-  const rawDesc = article.meta_description || article.title;
+  const rawDesc = article.excerpt || article.meta_description || article.title;
   const metaDescription = rawDesc.length >= 120
     ? rawDesc
     : `${rawDesc} — przeczytaj artykuł na blogu Fotz Studio i dowiedz się więcej o marketingu, SEO i tworzeniu stron internetowych.`;
 
   // Noindex test/draft articles with very short descriptions (likely test content)
   const isTestArticle = rawDesc.length < 80 && article.title.toLowerCase().includes("test");
+
+  const hasCmsArticleSchema = !!article.json_ld;
+  const hasCmsFaqSchema = !!article.faq_json_ld;
 
   return (
     <Layout>
@@ -61,6 +92,7 @@ export default function BlogArticleDynamic() {
         canonical={canonicalUrl}
         ogImage={article.hero_image_url || undefined}
         noIndex={isTestArticle}
+        keywords={seoKeywords}
       />
       <BreadcrumbSchema
         items={[
@@ -69,15 +101,32 @@ export default function BlogArticleDynamic() {
           { name: article.title, url: canonicalUrl },
         ]}
       />
-      <ArticleSchema
-        title={article.title}
-        description={metaDescription}
-        url={canonicalUrl}
-        image={article.hero_image_url || "https://fotz.pl/og-image.jpg"}
-        datePublished={article.published_at || article.created_at}
-        dateModified={article.published_at || article.created_at}
-        author="Zespół FOTZ"
-      />
+      {/* Prefer CMS-provided JSON-LD when available, otherwise emit our own. */}
+      {!hasCmsArticleSchema && (
+        <ArticleSchema
+          title={article.title}
+          description={metaDescription}
+          url={canonicalUrl}
+          image={article.hero_image_url || "https://fotz.pl/og-image.jpg"}
+          datePublished={article.published_at || article.created_at}
+          dateModified={article.published_at || article.created_at}
+          author="Zespół FOTZ"
+        />
+      )}
+      {(hasCmsArticleSchema || hasCmsFaqSchema) && (
+        <Helmet>
+          {hasCmsArticleSchema && (
+            <script type="application/ld+json">
+              {JSON.stringify(article.json_ld)}
+            </script>
+          )}
+          {hasCmsFaqSchema && (
+            <script type="application/ld+json">
+              {JSON.stringify(article.faq_json_ld)}
+            </script>
+          )}
+        </Helmet>
+      )}
 
       <article className="pt-40 pb-20 section-padding bg-background">
         <div className="container-wide max-w-4xl">
@@ -93,9 +142,9 @@ export default function BlogArticleDynamic() {
               {article.title}
             </h1>
 
-            {article.meta_description && (
+            {lead && (
               <p className="text-xl text-muted-foreground mb-6">
-                {article.meta_description}
+                {lead}
               </p>
             )}
 
@@ -111,6 +160,16 @@ export default function BlogArticleDynamic() {
                 ~5 min czytania
               </span>
             </div>
+
+            {keywordsList.length > 0 && (
+              <div className="mt-6 flex flex-wrap gap-2" aria-label="Słowa kluczowe">
+                {keywordsList.slice(0, 12).map((kw) => (
+                  <Badge key={kw} variant="secondary" className="text-xs font-medium">
+                    {kw}
+                  </Badge>
+                ))}
+              </div>
+            )}
           </header>
 
           {/* Hero image */}
