@@ -1084,6 +1084,118 @@ export default function AdminDashboard() {
                     </p>
                   </CardContent>
                 </Card>
+
+                <Card className="border-border">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Shield className="w-5 h-5 text-primary" />
+                      Test webhooka BabyLove
+                    </CardTitle>
+                    <CardDescription>
+                      Wysyła dwa testowe requesty do <code className="text-xs">/babylove-webhook</code>:
+                      jeden ze złym tokenem (oczekiwany 401) i jeden z prawidłowym sekretem (oczekiwany 200).
+                      Testowy artykuł jest automatycznie usuwany po sukcesie.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <Button onClick={runWebhookTest} disabled={isTestingWebhook}>
+                      {isTestingWebhook ? (
+                        <>
+                          <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                          Testuję webhook...
+                        </>
+                      ) : (
+                        <>
+                          <Zap className="w-4 h-4 mr-2" />
+                          Uruchom test webhooka
+                        </>
+                      )}
+                    </Button>
+
+                    {webhookTestResult && (
+                      <div className="rounded-lg border border-border bg-card p-4 space-y-3">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <Badge variant={webhookTestResult.success ? "default" : "destructive"}>
+                            {webhookTestResult.success ? "Wszystko OK" : "Wykryto problem"}
+                          </Badge>
+                          {webhookTestResult.summary && (
+                            <>
+                              <Badge
+                                variant={
+                                  webhookTestResult.summary.invalidTokenBlocked ? "default" : "destructive"
+                                }
+                              >
+                                Zły token →{" "}
+                                {webhookTestResult.summary.invalidTokenBlocked ? "401 ✓" : "FAIL"}
+                              </Badge>
+                              <Badge
+                                variant={
+                                  webhookTestResult.summary.validTokenAccepted ? "default" : "destructive"
+                                }
+                              >
+                                Prawidłowy token →{" "}
+                                {webhookTestResult.summary.validTokenAccepted ? "200 ✓" : "FAIL"}
+                              </Badge>
+                            </>
+                          )}
+                        </div>
+
+                        {webhookTestResult.webhookUrl && (
+                          <p className="text-xs text-muted-foreground break-all">
+                            URL: <code>{webhookTestResult.webhookUrl}</code>
+                          </p>
+                        )}
+
+                        {webhookTestResult.error && (
+                          <p className="text-sm text-destructive">{webhookTestResult.error}</p>
+                        )}
+
+                        {webhookTestResult.results?.map((r) => (
+                          <details
+                            key={r.scenario}
+                            className="rounded-md border border-border bg-background/50 p-3"
+                          >
+                            <summary className="cursor-pointer text-sm font-medium flex items-center gap-2">
+                              <span>
+                                {r.scenario === "valid_token" ? "✅ Prawidłowy token" : "🚫 Zły token"}
+                              </span>
+                              <Badge
+                                variant={
+                                  (r.scenario === "valid_token" && r.status === 200) ||
+                                  (r.scenario === "invalid_token" && r.status === 401)
+                                    ? "default"
+                                    : "destructive"
+                                }
+                              >
+                                HTTP {r.status || "ERR"}
+                              </Badge>
+                              <span className="text-xs text-muted-foreground">{r.durationMs}ms</span>
+                            </summary>
+                            {r.error && (
+                              <p className="mt-2 text-xs text-destructive">Network error: {r.error}</p>
+                            )}
+                            <pre className="mt-2 text-xs bg-muted/40 rounded p-2 overflow-x-auto">
+                              {JSON.stringify(r.body, null, 2)}
+                            </pre>
+                          </details>
+                        ))}
+
+                        {webhookTestResult.cleanup && (
+                          <p className="text-xs text-muted-foreground">
+                            Cleanup testowego artykułu:{" "}
+                            {webhookTestResult.cleanup.deleted
+                              ? "usunięty ✓"
+                              : `nieudany${
+                                  webhookTestResult.cleanup.error
+                                    ? ` (${webhookTestResult.cleanup.error})`
+                                    : ""
+                                }`}
+                          </p>
+                        )}
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
               </TabsContent>
             </Tabs>
           )}
