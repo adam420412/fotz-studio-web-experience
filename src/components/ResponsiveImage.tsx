@@ -101,7 +101,7 @@ export function ResponsiveImage({
           )}
 
           {/* Original format fallback */}
-          <img loading="lazy"
+          <img
             src={src}
             srcSet={!isImportedAsset ? generateSrcSet(src) : undefined}
             sizes={!isImportedAsset ? sizes : undefined}
