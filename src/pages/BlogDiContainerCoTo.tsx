@@ -47,8 +47,6 @@ export default function BlogDiContainerCoTo() {
         canonical="https://fotz.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
 
         keywords="Dependency Injection, SOLID, Design Patterns co to jest, Dependency Injection, SOLID, Design Patterns jak działa, Dependency Injection, SOLID, Design Patterns tutorial, Dependency Injection, SOLID, Design Patterns przykład, czym jest Dependency Injection, SOLID, Design Patterns, Dependency Injection, SOLID, Design Patterns dokumentacja, Dependency Injection, SOLID, Design Patterns przewodnik"
-
-        canonical="https://fotz.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
       />
       <ArticleSchema
         title="Dependency Injection, SOLID, Design Patterns — TypeScript Node.js?"

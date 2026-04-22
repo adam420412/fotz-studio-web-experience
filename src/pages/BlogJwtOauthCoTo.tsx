@@ -47,8 +47,6 @@ export default function BlogJwtOauthCoTo() {
         canonical="https://fotz.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys"
 
         keywords="JWT, OAuth 2.0, OIDC co to jest, JWT, OAuth 2.0, OIDC definicja, czym jest JWT, OAuth 2.0, OIDC, JWT, OAuth 2.0, OIDC przykłady, jak działa JWT, OAuth 2.0, OIDC, JWT, OAuth 2.0, OIDC znaczenie, JWT, OAuth 2.0, OIDC przewodnik"
-
-        canonical="https://fotz.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys"
       />
       <ArticleSchema
         title="JWT, OAuth 2.0, OIDC — autentykacja i autoryzacja w aplikacjach web?"

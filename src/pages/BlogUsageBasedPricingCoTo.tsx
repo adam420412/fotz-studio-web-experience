@@ -82,8 +82,6 @@ export default function BlogUsageBasedPricingCoTo() {
         canonical="https://fotz.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz"
 
         keywords="Usage-Based Pricing co to jest, Usage-Based Pricing definicja, czym jest Usage-Based Pricing, Usage-Based Pricing przykłady, jak działa Usage-Based Pricing, Usage-Based Pricing znaczenie, Usage-Based Pricing przewodnik"
-
-        canonical="https://fotz.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz"
       />
       <ArticleSchema
         title="Usage-Based Pricing — co to jest i jak wdrożyć?"

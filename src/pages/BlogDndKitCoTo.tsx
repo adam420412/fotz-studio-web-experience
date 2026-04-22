@@ -47,8 +47,6 @@ export default function BlogDndKitCoTo() {
         canonical="https://fotz.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
 
         keywords="dnd-kit co to jest, dnd-kit jak działa, dnd-kit tutorial, dnd-kit przykład, czym jest dnd-kit, dnd-kit dokumentacja, dnd-kit przewodnik"
-
-        canonical="https://fotz.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
       />
       <ArticleSchema
         title="dnd-kit — Drag and Drop React, Kanban Board, SortableContext i Pragmatic DnD 2024?"

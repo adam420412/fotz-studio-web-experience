@@ -63,8 +63,6 @@ export default function BlogPipelineManagementCoTo() {
         canonical="https://fotz.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b"
 
         keywords="Pipeline Management co to jest, Pipeline Management definicja, czym jest Pipeline Management, Pipeline Management w sprzedaży, Pipeline Management strategia, Pipeline Management przykłady, jak używać Pipeline Management"
-
-        canonical="https://fotz.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b"
       />
       <ArticleSchema
         title="Pipeline Management — zarządzanie pipeline sprzedaży B2B"

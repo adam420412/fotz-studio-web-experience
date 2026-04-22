@@ -79,8 +79,6 @@ export default function BlogDataRoomCoTo() {
         canonical="https://fotz.pl/blog/data-room-co-to-jest-jak-przygotowac-startup"
 
         keywords="Data Room co to jest, Data Room definicja, czym jest Data Room, Data Room przykłady, jak działa Data Room, Data Room znaczenie, Data Room przewodnik"
-
-        canonical="https://fotz.pl/blog/data-room-co-to-jest-jak-przygotowac-startup"
       />
       <ArticleSchema
         title="Data Room — co to jest i jak przygotować?"

@@ -96,8 +96,6 @@ export default function BlogFOMOMarketingCoTo() {
         canonical="https://fotz.pl/blog/fomo-marketing-co-to"
 
         keywords="FOMO Marketing co to jest, FOMO Marketing definicja, czym jest FOMO Marketing, FOMO Marketing w marketingu, FOMO Marketing przykłady, jak działa FOMO Marketing, FOMO Marketing strategia"
-
-        canonical="https://fotz.pl/blog/fomo-marketing-co-to"
       />
       <ArticleSchema
         title="FOMO Marketing — co to jest i jak działa?"

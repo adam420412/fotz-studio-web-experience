@@ -106,8 +106,6 @@ export default function BlogChurnAnalysisCoTo() {
         canonical="https://fotz.pl/blog/churn-analysis-co-to"
 
         keywords="Churn Analysis co to jest, Churn Analysis definicja, czym jest Churn Analysis, Churn Analysis startup, Churn Analysis jak liczyć, Churn Analysis wzór, Churn Analysis przykłady"
-
-        canonical="https://fotz.pl/blog/churn-analysis-co-to"
       />
       <ArticleSchema
         title="Churn Analysis — co to jest i jak redukować odpływ klientów?"

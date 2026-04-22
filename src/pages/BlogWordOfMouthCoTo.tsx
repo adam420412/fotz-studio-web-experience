@@ -79,8 +79,6 @@ export default function BlogWordOfMouthCoTo() {
         canonical="https://fotz.pl/blog/word-of-mouth-marketing-co-to"
 
         keywords="Word of Mouth Marketing co to jest, Word of Mouth Marketing definicja, czym jest Word of Mouth Marketing, Word of Mouth Marketing w marketingu, Word of Mouth Marketing przykłady, jak działa Word of Mouth Marketing, Word of Mouth Marketing strategia"
-
-        canonical="https://fotz.pl/blog/word-of-mouth-marketing-co-to"
       />
       <ArticleSchema
         title="Word of Mouth Marketing — co to jest i jak działa?"

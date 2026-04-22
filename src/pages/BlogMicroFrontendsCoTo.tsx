@@ -55,8 +55,6 @@ export default function BlogMicroFrontendsCoTo() {
         canonical="https://fotz.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation"
 
         keywords="Micro Frontends co to jest, Micro Frontends definicja, czym jest Micro Frontends, Micro Frontends przykłady, jak działa Micro Frontends, Micro Frontends znaczenie, Micro Frontends przewodnik"
-
-        canonical="https://fotz.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation"
       />
       <ArticleSchema
         title="Micro Frontends — co to jest i jak wdrożyć Module Federation?"

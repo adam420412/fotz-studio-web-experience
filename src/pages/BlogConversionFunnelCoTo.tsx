@@ -53,8 +53,6 @@ export default function BlogConversionFunnelCoTo() {
         canonical="https://fotz.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest"
 
         keywords="Lejek Konwersji co to jest, Lejek Konwersji definicja, czym jest Lejek Konwersji, Lejek Konwersji przykłady, jak działa Lejek Konwersji, Lejek Konwersji znaczenie, Lejek Konwersji przewodnik"
-
-        canonical="https://fotz.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest"
       />
       <ArticleSchema
         title="Lejek Konwersji — co to jest i jak optymalizować Conversion Funnel?"

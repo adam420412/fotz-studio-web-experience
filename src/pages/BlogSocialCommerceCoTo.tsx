@@ -104,8 +104,6 @@ export default function BlogSocialCommerceCoTo() {
         canonical="https://fotz.pl/blog/social-commerce-co-to"
 
         keywords="Social Commerce co to jest, Social Commerce definicja, czym jest Social Commerce, Social Commerce w marketingu, Social Commerce przykłady, jak działa Social Commerce, Social Commerce strategia"
-
-        canonical="https://fotz.pl/blog/social-commerce-co-to"
       />
       <ArticleSchema
         title="Social Commerce — co to jest i jak działa?"

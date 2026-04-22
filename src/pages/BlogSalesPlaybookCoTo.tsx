@@ -85,8 +85,6 @@ export default function BlogSalesPlaybookCoTo() {
         canonical="https://fotz.pl/blog/sales-playbook-co-to-jest-jak-budowac"
 
         keywords="Sales Playbook co to jest, Sales Playbook definicja, czym jest Sales Playbook, Sales Playbook w sprzedaży, Sales Playbook strategia, Sales Playbook przykłady, jak używać Sales Playbook"
-
-        canonical="https://fotz.pl/blog/sales-playbook-co-to-jest-jak-budowac"
       />
       <ArticleSchema
         title="Sales Playbook — co to jest i jak zbudować?"

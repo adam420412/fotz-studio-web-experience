@@ -47,8 +47,6 @@ export default function BlogEmailResendCoTo() {
         canonical="https://fotz.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024"
 
         keywords="Resend, SendGrid, Nodemailer co to jest, Resend, SendGrid, Nodemailer jak działa, Resend, SendGrid, Nodemailer tutorial, Resend, SendGrid, Nodemailer przykład, czym jest Resend, SendGrid, Nodemailer, Resend, SendGrid, Nodemailer dokumentacja, Resend, SendGrid, Nodemailer przewodnik"
-
-        canonical="https://fotz.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024"
       />
       <ArticleSchema
         title="Resend, SendGrid, Nodemailer — emaile transakcyjne w Next.js TypeScript?"

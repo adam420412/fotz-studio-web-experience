@@ -56,8 +56,6 @@ export default function BlogCroCoToJest() {
         canonical="https://fotz.pl/blog/cro-conversion-rate-optimization-co-to-jest"
 
         keywords="CRO co to jest, CRO definicja, czym jest CRO, CRO przykłady, jak działa CRO, CRO znaczenie, CRO przewodnik"
-
-        canonical="https://fotz.pl/blog/cro-conversion-rate-optimization-co-to-jest"
       />
       <ArticleSchema
         title="CRO — Conversion Rate Optimization co to jest?"

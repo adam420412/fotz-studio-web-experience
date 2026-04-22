@@ -102,8 +102,6 @@ export default function BlogUnitEconomicsCoTo() {
         canonical="https://fotz.pl/blog/unit-economics-co-to"
 
         keywords="Unit Economics co to jest, Unit Economics definicja, czym jest Unit Economics, Unit Economics startup, Unit Economics jak liczyć, Unit Economics wzór, Unit Economics przykłady"
-
-        canonical="https://fotz.pl/blog/unit-economics-co-to"
       />
       <ArticleSchema
         title="Unit Economics — co to jest i jak analizować LTV i CAC?"

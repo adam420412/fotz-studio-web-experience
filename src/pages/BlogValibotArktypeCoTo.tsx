@@ -47,8 +47,6 @@ export default function BlogValibotArktypeCoTo() {
         canonical="https://fotz.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024"
 
         keywords="Valibot, ArkType, TypeBox i Zod v4 co to jest, Valibot, ArkType, TypeBox i Zod v4 jak działa, Valibot, ArkType, TypeBox i Zod v4 tutorial, Valibot, ArkType, TypeBox i Zod v4 przykład, czym jest Valibot, ArkType, TypeBox i Zod v4, Valibot, ArkType, TypeBox i Zod v4 dokumentacja, Valibot, ArkType, TypeBox i Zod v4 przewodnik"
-
-        canonical="https://fotz.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024"
       />
       <ArticleSchema
         title="Valibot, ArkType, TypeBox i Zod v4 — schema validation TypeScript 2024?"

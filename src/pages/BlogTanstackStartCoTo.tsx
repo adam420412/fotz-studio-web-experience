@@ -46,8 +46,6 @@ export default function BlogTanstackStartCoTo() {
         canonical="https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
 
         keywords="TanStack Start co to jest, TanStack Start jak działa, TanStack Start tutorial, TanStack Start przykład, czym jest TanStack Start, TanStack Start dokumentacja, TanStack Start przewodnik"
-
-        canonical="https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
       />
       <ArticleSchema
         title="TanStack Start — full-stack React z TanStack Router, Server Functions i Vinxi 2024?"

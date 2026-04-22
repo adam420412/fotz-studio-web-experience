@@ -53,8 +53,6 @@ export default function BlogEventDrivenArchCoTo() {
         canonical="https://fotz.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
 
         keywords="Event-Driven Architecture co to jest, Event-Driven Architecture definicja, czym jest Event-Driven Architecture, Event-Driven Architecture przykłady, jak działa Event-Driven Architecture, Event-Driven Architecture znaczenie, Event-Driven Architecture przewodnik"
-
-        canonical="https://fotz.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
       />
       <ArticleSchema
         title="Event-Driven Architecture — co to jest i jak wdrożyć EDA?"

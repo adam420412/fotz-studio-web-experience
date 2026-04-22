@@ -95,8 +95,6 @@ export default function BlogCreatorEconomyCoTo() {
         canonical="https://fotz.pl/blog/creator-economy-co-to"
 
         keywords="Creator Economy co to jest, Creator Economy definicja, czym jest Creator Economy, Creator Economy przykłady, jak działa Creator Economy, Creator Economy znaczenie, Creator Economy przewodnik"
-
-        canonical="https://fotz.pl/blog/creator-economy-co-to"
       />
       <ArticleSchema
         title="Creator Economy — co to jest i jak działa?"

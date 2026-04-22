@@ -55,8 +55,6 @@ export default function BlogWeb3CoTo() {
         canonical="https://fotz.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow"
 
         keywords="Web3 i Blockchain dla firm co to jest, Web3 i Blockchain dla firm definicja, czym jest Web3 i Blockchain dla firm, Web3 i Blockchain dla firm przykłady, jak działa Web3 i Blockchain dla firm, Web3 i Blockchain dla firm znaczenie, Web3 i Blockchain dla firm przewodnik"
-
-        canonical="https://fotz.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow"
       />
       <ArticleSchema
         title="Web3 i Blockchain dla firm — smart contracts, DeFi, tokenizacja aktywów"

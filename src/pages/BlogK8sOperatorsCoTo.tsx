@@ -55,8 +55,6 @@ export default function BlogK8sOperatorsCoTo() {
         canonical="https://fotz.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi"
 
         keywords="Kubernetes Operators co to jest, Kubernetes Operators jak działa, Kubernetes Operators tutorial, Kubernetes Operators przykład, czym jest Kubernetes Operators, Kubernetes Operators dokumentacja, Kubernetes Operators przewodnik"
-
-        canonical="https://fotz.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi"
       />
       <ArticleSchema
         title="Kubernetes Operators — co to jest, Kubebuilder, CloudNativePG, Strimzi?"

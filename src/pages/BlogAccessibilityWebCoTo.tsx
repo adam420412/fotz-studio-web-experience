@@ -97,8 +97,6 @@ export default function BlogAccessibilityWebCoTo() {
         canonical="https://fotz.pl/blog/dostepnosc-stron-internetowych"
 
         keywords="Dostępność Stron Internetowych co to jest, Dostępność Stron Internetowych definicja, czym jest Dostępność Stron Internetowych, Dostępność Stron Internetowych przykłady, jak działa Dostępność Stron Internetowych, Dostępność Stron Internetowych znaczenie, Dostępność Stron Internetowych przewodnik"
-
-        canonical="https://fotz.pl/blog/dostepnosc-stron-internetowych"
       />
       <ArticleSchema
         title="Dostępność Stron Internetowych — co to jest i jak wdrożyć WCAG?"

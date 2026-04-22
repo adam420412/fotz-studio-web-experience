@@ -116,8 +116,6 @@ export default function BlogTerraformCoTo() {
         canonical="https://fotz.pl/blog/terraform-co-to-jest"
 
         keywords="Terraform co to jest, Terraform definicja, czym jest Terraform, Terraform przykłady, jak działa Terraform, Terraform znaczenie, Terraform przewodnik"
-
-        canonical="https://fotz.pl/blog/terraform-co-to-jest"
       />
       <ArticleSchema
         title="Terraform — co to jest i jak działa? Kompletny przewodnik po IaC"

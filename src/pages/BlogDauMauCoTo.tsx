@@ -54,8 +54,6 @@ export default function BlogDauMauCoTo() {
         canonical="https://fotz.pl/blog/dau-mau-stickiness-metryki-zaangazowania"
 
         keywords="DAU, MAU i Stickiness co to jest, DAU, MAU i Stickiness definicja, czym jest DAU, MAU i Stickiness, DAU, MAU i Stickiness przykłady, jak działa DAU, MAU i Stickiness, DAU, MAU i Stickiness znaczenie, DAU, MAU i Stickiness przewodnik"
-
-        canonical="https://fotz.pl/blog/dau-mau-stickiness-metryki-zaangazowania"
       />
       <ArticleSchema
         title="DAU, MAU i Stickiness — metryki zaangażowania użytkowników"

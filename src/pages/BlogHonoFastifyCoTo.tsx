@@ -47,8 +47,6 @@ export default function BlogHonoFastifyCoTo() {
         canonical="https://fotz.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
 
         keywords="Hono, Fastify, Express co to jest, Hono, Fastify, Express jak działa, Hono, Fastify, Express tutorial, Hono, Fastify, Express przykład, czym jest Hono, Fastify, Express, Hono, Fastify, Express dokumentacja, Hono, Fastify, Express przewodnik"
-
-        canonical="https://fotz.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
       />
       <ArticleSchema
         title="Hono, Fastify, Express — Node.js backend frameworks 2024, co wybrać?"

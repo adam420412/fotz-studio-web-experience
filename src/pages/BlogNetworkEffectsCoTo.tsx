@@ -81,8 +81,6 @@ export default function BlogNetworkEffectsCoTo() {
         canonical="https://fotz.pl/blog/efekty-sieciowe-network-effects"
 
         keywords="Efekty Sieciowe (Network Effects) co to jest, Efekty Sieciowe (Network Effects) definicja, czym jest Efekty Sieciowe (Network Effects), Efekty Sieciowe (Network Effects) przykłady, jak działa Efekty Sieciowe (Network Effects), Efekty Sieciowe (Network Effects) znaczenie, Efekty Sieciowe (Network Effects) przewodnik"
-
-        canonical="https://fotz.pl/blog/efekty-sieciowe-network-effects"
       />
       <ArticleSchema
         title="Efekty Sieciowe (Network Effects) — co to jest i jak budują przewagę?"

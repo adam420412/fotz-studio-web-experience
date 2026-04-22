@@ -89,8 +89,6 @@ export default function BlogCompetitiveMoatCoTo() {
         canonical="https://fotz.pl/blog/competitive-moat-co-to"
 
         keywords="Competitive Moat co to jest, Competitive Moat definicja, czym jest Competitive Moat, Competitive Moat przykłady, jak działa Competitive Moat, Competitive Moat znaczenie, Competitive Moat przewodnik"
-
-        canonical="https://fotz.pl/blog/competitive-moat-co-to"
       />
       <ArticleSchema
         title="Competitive Moat — co to jest i jak budować fosę ekonomiczną?"

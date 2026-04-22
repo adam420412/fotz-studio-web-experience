@@ -47,8 +47,6 @@ export default function BlogGithubActionsAdvCoTo() {
         canonical="https://fotz.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024"
 
         keywords="GitHub Actions zaawansowane co to jest, GitHub Actions zaawansowane definicja, czym jest GitHub Actions zaawansowane, GitHub Actions zaawansowane przykłady, jak działa GitHub Actions zaawansowane, GitHub Actions zaawansowane znaczenie, GitHub Actions zaawansowane przewodnik"
-
-        canonical="https://fotz.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024"
       />
       <ArticleSchema
         title="GitHub Actions zaawansowane — Changesets, semantic-release, OIDC i optymalizacja 2024?"

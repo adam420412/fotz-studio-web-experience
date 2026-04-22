@@ -47,8 +47,6 @@ export default function BlogEnvoyProxyCoTo() {
         canonical="https://fotz.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
 
         keywords="Envoy Proxy co to jest, Envoy Proxy jak działa, Envoy Proxy tutorial, Envoy Proxy przykład, czym jest Envoy Proxy, Envoy Proxy dokumentacja, Envoy Proxy przewodnik"
-
-        canonical="https://fotz.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
       />
       <ArticleSchema
         title="Envoy Proxy — co to jest, xDS API, service mesh, rate limiting, circuit breaking?"

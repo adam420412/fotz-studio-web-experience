@@ -47,8 +47,6 @@ export default function BlogBullmqCoTo() {
         canonical="https://fotz.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
 
         keywords="BullMQ, Inngest i job queues co to jest, BullMQ, Inngest i job queues jak działa, BullMQ, Inngest i job queues tutorial, BullMQ, Inngest i job queues przykład, czym jest BullMQ, Inngest i job queues, BullMQ, Inngest i job queues dokumentacja, BullMQ, Inngest i job queues przewodnik"
-
-        canonical="https://fotz.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
       />
       <ArticleSchema
         title="BullMQ, Inngest i job queues — background jobs w Node.js Next.js 2024?"

@@ -47,8 +47,6 @@ export default function BlogRemixDeepDiveCoTo() {
         canonical="https://fotz.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
 
         keywords="Remix.js co to jest, Remix.js definicja, czym jest Remix.js, Remix.js przykłady, jak działa Remix.js, Remix.js znaczenie, Remix.js przewodnik"
-
-        canonical="https://fotz.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
       />
       <ArticleSchema
         title="Remix.js — nested routes, loader, action, defer, useFetcher i optimistic UI 2024?"

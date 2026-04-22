@@ -81,8 +81,6 @@ export default function BlogInboundMarketingCoTo() {
         canonical="https://fotz.pl/blog/inbound-marketing-co-to"
 
         keywords="Inbound Marketing co to jest, Inbound Marketing definicja, czym jest Inbound Marketing, Inbound Marketing w marketingu, Inbound Marketing przykłady, jak działa Inbound Marketing, Inbound Marketing strategia"
-
-        canonical="https://fotz.pl/blog/inbound-marketing-co-to"
       />
       <ArticleSchema
         title="Inbound Marketing — co to jest i jak działa?"

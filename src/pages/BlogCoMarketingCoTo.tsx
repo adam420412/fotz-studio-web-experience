@@ -105,8 +105,6 @@ export default function BlogCoMarketingCoTo() {
         canonical="https://fotz.pl/blog/co-marketing-co-to"
 
         keywords="Co-marketing co to jest, Co-marketing definicja, czym jest Co-marketing, Co-marketing w marketingu, Co-marketing przykłady, jak działa Co-marketing, Co-marketing strategia"
-
-        canonical="https://fotz.pl/blog/co-marketing-co-to"
       />
       <ArticleSchema
         title="Co-marketing — co to jest i jak działa?"

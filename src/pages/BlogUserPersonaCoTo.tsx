@@ -73,8 +73,6 @@ export default function BlogUserPersonaCoTo() {
         canonical="https://fotz.pl/blog/user-persona-co-to"
 
         keywords="User Persona co to jest, User Persona definicja, czym jest User Persona, User Persona w sprzedaży, User Persona strategia, User Persona przykłady, jak używać User Persona"
-
-        canonical="https://fotz.pl/blog/user-persona-co-to"
       />
       <ArticleSchema
         title="User Persona — co to jest i jak tworzyć buyer personas?"

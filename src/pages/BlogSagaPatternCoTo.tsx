@@ -47,8 +47,6 @@ export default function BlogSagaPatternCoTo() {
         canonical="https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
 
         keywords="Saga Pattern co to jest, Saga Pattern definicja, czym jest Saga Pattern, Saga Pattern przykłady, jak działa Saga Pattern, Saga Pattern znaczenie, Saga Pattern przewodnik"
-
-        canonical="https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
       />
       <ArticleSchema
         title="Saga Pattern — co to jest, Choreography vs Orchestration, Temporal.io, Kafka?"

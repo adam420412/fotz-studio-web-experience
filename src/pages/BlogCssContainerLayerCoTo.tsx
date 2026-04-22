@@ -47,8 +47,6 @@ export default function BlogCssContainerLayerCoTo() {
         canonical="https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
 
         keywords="CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 co to jest, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 definicja, czym jest CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 przykłady, jak działa CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 znaczenie, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 przewodnik"
-
-        canonical="https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
       />
       <ArticleSchema
         title="CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024?"

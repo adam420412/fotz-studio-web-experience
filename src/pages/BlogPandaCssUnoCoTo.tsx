@@ -47,8 +47,6 @@ export default function BlogPandaCssUnoCoTo() {
         canonical="https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
 
         keywords="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX co to jest, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX definicja, czym jest Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX przykłady, jak działa Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX znaczenie, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX przewodnik"
-
-        canonical="https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
       />
       <ArticleSchema
         title="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX — atomic CSS 2024?"

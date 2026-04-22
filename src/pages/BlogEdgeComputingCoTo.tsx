@@ -55,8 +55,6 @@ export default function BlogEdgeComputingCoTo() {
         canonical="https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
 
         keywords="Edge Computing co to jest, Edge Computing definicja, czym jest Edge Computing, Edge Computing przykłady, jak działa Edge Computing, Edge Computing znaczenie, Edge Computing przewodnik"
-
-        canonical="https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
       />
       <ArticleSchema
         title="Edge Computing — co to jest, Cloudflare Workers i Edge Functions?"

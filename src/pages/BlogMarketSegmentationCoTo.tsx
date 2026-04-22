@@ -107,8 +107,6 @@ export default function BlogMarketSegmentationCoTo() {
         canonical="https://fotz.pl/blog/segmentacja-rynku-co-to"
 
         keywords="Segmentacja Rynku co to jest, Segmentacja Rynku definicja, czym jest Segmentacja Rynku, Segmentacja Rynku przykłady, jak działa Segmentacja Rynku, Segmentacja Rynku znaczenie, Segmentacja Rynku przewodnik"
-
-        canonical="https://fotz.pl/blog/segmentacja-rynku-co-to"
       />
       <ArticleSchema
         title="Segmentacja Rynku — co to jest i jak stosować model STP?"

@@ -73,8 +73,6 @@ export default function BlogRiskManagementCoTo() {
         canonical="https://fotz.pl/blog/risk-management-co-to"
 
         keywords="Risk Management co to jest, Risk Management definicja, czym jest Risk Management, Risk Management przykłady, jak działa Risk Management, Risk Management znaczenie, Risk Management przewodnik"
-
-        canonical="https://fotz.pl/blog/risk-management-co-to"
       />
       <ArticleSchema
         title="Risk Management — co to jest i jak zarządzać ryzykiem?"

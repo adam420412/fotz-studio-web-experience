@@ -88,8 +88,6 @@ export default function BlogDesignSprintCoTo() {
         canonical="https://fotz.pl/blog/design-sprint-co-to"
 
         keywords="Design Sprint co to jest, Design Sprint definicja, czym jest Design Sprint, Design Sprint startup, Design Sprint jak liczyć, Design Sprint wzór, Design Sprint przykłady"
-
-        canonical="https://fotz.pl/blog/design-sprint-co-to"
       />
       <ArticleSchema
         title="Design Sprint — co to jest i jak wygląda 5-dniowy sprint?"

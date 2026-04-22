@@ -68,8 +68,6 @@ export default function BlogProductOwnerCoTo() {
         canonical="https://fotz.pl/blog/product-owner-co-to"
 
         keywords="Product Owner co to jest, Product Owner definicja, czym jest Product Owner, Product Owner przykłady, jak działa Product Owner, Product Owner znaczenie, Product Owner przewodnik"
-
-        canonical="https://fotz.pl/blog/product-owner-co-to"
       />
       <ArticleSchema
         title="Product Owner — co to jest i czym zajmuje się PO w Scrum?"

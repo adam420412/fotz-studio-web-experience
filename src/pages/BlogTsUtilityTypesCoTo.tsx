@@ -47,8 +47,6 @@ export default function BlogTsUtilityTypesCoTo() {
         canonical="https://fotz.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
 
         keywords="TypeScript Utility Types co to jest, TypeScript Utility Types definicja, czym jest TypeScript Utility Types, TypeScript Utility Types w marketingu, TypeScript Utility Types przykłady, jak działa TypeScript Utility Types, TypeScript Utility Types strategia"
-
-        canonical="https://fotz.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
       />
       <ArticleSchema
         title="TypeScript Utility Types — Partial, ReturnType, Conditional, Mapped i Branded 2024?"

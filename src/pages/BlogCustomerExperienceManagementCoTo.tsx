@@ -91,8 +91,6 @@ export default function BlogCustomerExperienceManagementCoTo() {
         canonical="https://fotz.pl/blog/customer-experience-management-co-to"
 
         keywords="Customer Experience Management (CXM) co to jest, Customer Experience Management (CXM) definicja, czym jest Customer Experience Management (CXM), Customer Experience Management (CXM) przykłady, jak działa Customer Experience Management (CXM), Customer Experience Management (CXM) znaczenie, Customer Experience Management (CXM) przewodnik"
-
-        canonical="https://fotz.pl/blog/customer-experience-management-co-to"
       />
       <ArticleSchema
         title="Customer Experience Management (CXM) — co to jest?"

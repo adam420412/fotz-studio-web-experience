@@ -47,8 +47,6 @@ export default function BlogTauriElectronCoTo() {
         canonical="https://fotz.pl/blog/tauri-electron-wails-desktop-apps-react-typescript-2024"
 
         keywords="Tauri vs Electron vs Wails co to jest, Tauri vs Electron vs Wails jak działa, Tauri vs Electron vs Wails tutorial, Tauri vs Electron vs Wails przykład, czym jest Tauri vs Electron vs Wails, Tauri vs Electron vs Wails dokumentacja, Tauri vs Electron vs Wails przewodnik"
-
-        canonical="https://fotz.pl/blog/tauri-electron-wails-desktop-apps-react-typescript-2024"
       />
       <ArticleSchema
         title="Tauri vs Electron vs Wails — desktop apps z React i TypeScript 2024?"

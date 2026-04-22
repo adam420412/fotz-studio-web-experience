@@ -95,8 +95,6 @@ export default function BlogPaidSocialCoTo() {
         canonical="https://fotz.pl/blog/paid-social-co-to"
 
         keywords="Paid Social co to jest, Paid Social definicja, czym jest Paid Social, Paid Social w marketingu, Paid Social przykłady, jak działa Paid Social, Paid Social strategia"
-
-        canonical="https://fotz.pl/blog/paid-social-co-to"
       />
       <ArticleSchema
         title="Paid Social — co to jest i jak prowadzić reklamy w Social Media?"

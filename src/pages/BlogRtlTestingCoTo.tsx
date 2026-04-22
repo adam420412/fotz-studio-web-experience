@@ -47,8 +47,6 @@ export default function BlogRtlTestingCoTo() {
         canonical="https://fotz.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
 
         keywords="React Testing Library co to jest, React Testing Library jak działa, React Testing Library tutorial, React Testing Library przykład, czym jest React Testing Library, React Testing Library dokumentacja, React Testing Library przewodnik"
-
-        canonical="https://fotz.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
       />
       <ArticleSchema
         title="React Testing Library — queries, user-event, mocking i async testing 2024?"

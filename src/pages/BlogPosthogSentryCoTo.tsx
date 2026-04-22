@@ -47,8 +47,6 @@ export default function BlogPosthogSentryCoTo() {
         canonical="https://fotz.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024"
 
         keywords="PostHog, Sentry, Plausible i Feature Flags co to jest, PostHog, Sentry, Plausible i Feature Flags definicja, czym jest PostHog, Sentry, Plausible i Feature Flags, PostHog, Sentry, Plausible i Feature Flags przykłady, jak działa PostHog, Sentry, Plausible i Feature Flags, PostHog, Sentry, Plausible i Feature Flags znaczenie, PostHog, Sentry, Plausible i Feature Flags przewodnik"
-
-        canonical="https://fotz.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024"
       />
       <ArticleSchema
         title="PostHog, Sentry, Plausible i Feature Flags — analytics i monitoring 2024?"

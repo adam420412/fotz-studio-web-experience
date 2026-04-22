@@ -77,8 +77,6 @@ export default function BlogExpansionRevenueCoTo() {
         canonical="https://fotz.pl/blog/expansion-revenue-upsell-cross-sell-saas"
 
         keywords="Expansion Revenue co to jest, Expansion Revenue definicja, czym jest Expansion Revenue, Expansion Revenue startup, Expansion Revenue jak liczyć, Expansion Revenue wzór, Expansion Revenue przykłady"
-
-        canonical="https://fotz.pl/blog/expansion-revenue-upsell-cross-sell-saas"
       />
       <ArticleSchema
         title="Expansion Revenue — upsell i cross-sell w SaaS"

@@ -54,8 +54,6 @@ export default function BlogNrrGrrCoTo() {
         canonical="https://fotz.pl/blog/nrr-grr-net-revenue-retention-co-to-jest"
 
         keywords="NRR i GRR co to jest, NRR i GRR definicja, czym jest NRR i GRR, NRR i GRR przykłady, jak działa NRR i GRR, NRR i GRR znaczenie, NRR i GRR przewodnik"
-
-        canonical="https://fotz.pl/blog/nrr-grr-net-revenue-retention-co-to-jest"
       />
       <ArticleSchema
         title="NRR i GRR — co to jest Net Revenue Retention i jak poprawić?"

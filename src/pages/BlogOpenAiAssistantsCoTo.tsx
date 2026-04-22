@@ -47,8 +47,6 @@ export default function BlogOpenAiAssistantsCoTo() {
         canonical="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
 
         keywords="OpenAI Assistants API co to jest, OpenAI Assistants API jak działa, OpenAI Assistants API tutorial, OpenAI Assistants API przykład, czym jest OpenAI Assistants API, OpenAI Assistants API dokumentacja, OpenAI Assistants API przewodnik"
-
-        canonical="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
       />
       <ArticleSchema
         title="OpenAI Assistants API — Threads, File Search, Code Interpreter, Function Calling 2024?"

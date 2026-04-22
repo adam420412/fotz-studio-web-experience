@@ -88,8 +88,6 @@ export default function BlogArrCoToJest() {
         canonical="https://fotz.pl/blog/arr-annual-recurring-revenue-co-to"
 
         keywords="ARR co to jest, ARR definicja, czym jest ARR, ARR startup, ARR jak liczyć, ARR wzór, ARR przykłady"
-
-        canonical="https://fotz.pl/blog/arr-annual-recurring-revenue-co-to"
       />
       <ArticleSchema
         title="ARR co to jest — Annual Recurring Revenue w SaaS"

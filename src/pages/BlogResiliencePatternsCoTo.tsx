@@ -47,8 +47,6 @@ export default function BlogResiliencePatternsCoTo() {
         canonical="https://fotz.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
 
         keywords="Wzorce odporności co to jest, Wzorce odporności definicja, czym jest Wzorce odporności, Wzorce odporności przykłady, jak działa Wzorce odporności, Wzorce odporności znaczenie, Wzorce odporności przewodnik"
-
-        canonical="https://fotz.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
       />
       <ArticleSchema
         title="Wzorce odporności — Circuit Breaker, Retry, Bulkhead, Backpressure, Resilience4j?"

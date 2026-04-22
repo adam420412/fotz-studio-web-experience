@@ -61,8 +61,6 @@ export default function BlogGrossMarginCoTo() {
         canonical="https://fotz.pl/blog/gross-margin-marza-brutto-co-to"
 
         keywords="Gross Margin co to jest, Gross Margin definicja, czym jest Gross Margin, Gross Margin startup, Gross Margin jak liczyć, Gross Margin wzór, Gross Margin przykłady"
-
-        canonical="https://fotz.pl/blog/gross-margin-marza-brutto-co-to"
       />
       <ArticleSchema
         title="Gross Margin — marża brutto co to jest w SaaS?"

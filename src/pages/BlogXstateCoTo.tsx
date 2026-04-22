@@ -47,8 +47,6 @@ export default function BlogXstateCoTo() {
         canonical="https://fotz.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
 
         keywords="XState co to jest, XState jak działa, XState tutorial, XState przykład, czym jest XState, XState dokumentacja, XState przewodnik"
-
-        canonical="https://fotz.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
       />
       <ArticleSchema
         title="XState — co to jest, maszyna stanów, statecharts, Actor Model w React?"

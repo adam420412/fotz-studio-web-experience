@@ -77,8 +77,6 @@ export default function BlogCacCoToJest() {
         canonical="https://fotz.pl/blog/cac-customer-acquisition-cost-co-to"
 
         keywords="CAC co to jest, CAC definicja, czym jest CAC, CAC startup, CAC jak liczyć, CAC wzór, CAC przykłady"
-
-        canonical="https://fotz.pl/blog/cac-customer-acquisition-cost-co-to"
       />
       <ArticleSchema
         title="CAC co to jest — Customer Acquisition Cost w SaaS"

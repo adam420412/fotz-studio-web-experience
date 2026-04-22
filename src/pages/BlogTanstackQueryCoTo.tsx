@@ -47,8 +47,6 @@ export default function BlogTanstackQueryCoTo() {
         canonical="https://fotz.pl/blog/tanstack-query-react-query-co-to-jest-cache-usemutation-nextjs-ssr"
 
         keywords="TanStack Query (React Query) co to jest, TanStack Query (React Query) jak działa, TanStack Query (React Query) tutorial, TanStack Query (React Query) przykład, czym jest TanStack Query (React Query), TanStack Query (React Query) dokumentacja, TanStack Query (React Query) przewodnik"
-
-        canonical="https://fotz.pl/blog/tanstack-query-react-query-co-to-jest-cache-usemutation-nextjs-ssr"
       />
       <ArticleSchema
         title="TanStack Query (React Query) — co to jest, cache, useMutation, Next.js SSR?"

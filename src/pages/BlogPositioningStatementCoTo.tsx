@@ -95,8 +95,6 @@ export default function BlogPositioningStatementCoTo() {
         canonical="https://fotz.pl/blog/positioning-statement-co-to"
 
         keywords="Positioning Statement co to jest, Positioning Statement definicja, czym jest Positioning Statement, Positioning Statement przykłady, jak działa Positioning Statement, Positioning Statement znaczenie, Positioning Statement przewodnik"
-
-        canonical="https://fotz.pl/blog/positioning-statement-co-to"
       />
       <ArticleSchema
         title="Positioning Statement — co to jest i jak go napisać?"

@@ -66,8 +66,6 @@ export default function BlogEventTrackingCoTo() {
         canonical="https://fotz.pl/blog/event-tracking-co-to"
 
         keywords="Event Tracking co to jest, Event Tracking definicja, czym jest Event Tracking, Event Tracking przykłady, jak działa Event Tracking, Event Tracking znaczenie, Event Tracking przewodnik"
-
-        canonical="https://fotz.pl/blog/event-tracking-co-to"
       />
       <ArticleSchema
         title="Event Tracking — co to jest i jak śledzić zdarzenia użytkownika?"

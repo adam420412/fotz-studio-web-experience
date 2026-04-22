@@ -47,8 +47,6 @@ export default function BlogPackageManagersCoTo() {
         canonical="https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
 
         keywords="npm vs pnpm vs yarn vs Bun co to jest, npm vs pnpm vs yarn vs Bun jak działa, npm vs pnpm vs yarn vs Bun tutorial, npm vs pnpm vs yarn vs Bun przykład, czym jest npm vs pnpm vs yarn vs Bun, npm vs pnpm vs yarn vs Bun dokumentacja, npm vs pnpm vs yarn vs Bun przewodnik"
-
-        canonical="https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
       />
       <ArticleSchema
         title="npm vs pnpm vs yarn vs Bun — package managers Node.js 2024?"

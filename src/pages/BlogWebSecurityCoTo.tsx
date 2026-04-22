@@ -47,8 +47,6 @@ export default function BlogWebSecurityCoTo() {
         canonical="https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
 
         keywords="Web Security co to jest, Web Security jak działa, Web Security tutorial, Web Security przykład, czym jest Web Security, Web Security dokumentacja, Web Security przewodnik"
-
-        canonical="https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
       />
       <ArticleSchema
         title="Web Security — XSS, CSRF, CSP, SQL Injection, OWASP Top 10, Node.js?"

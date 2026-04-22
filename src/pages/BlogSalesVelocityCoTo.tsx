@@ -83,8 +83,6 @@ export default function BlogSalesVelocityCoTo() {
         canonical="https://fotz.pl/blog/sales-velocity-co-to"
 
         keywords="Sales Velocity co to jest, Sales Velocity definicja, czym jest Sales Velocity, Sales Velocity w sprzedaży, Sales Velocity strategia, Sales Velocity przykłady, jak używać Sales Velocity"
-
-        canonical="https://fotz.pl/blog/sales-velocity-co-to"
       />
       <ArticleSchema
         title="Sales Velocity — co to jest i jak zwiększyć prędkość sprzedaży?"

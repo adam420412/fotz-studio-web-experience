@@ -47,8 +47,6 @@ export default function BlogGitWorkflowCoTo() {
         canonical="https://fotz.pl/blog/git-flow-trunk-based-conventional-commits-strategie-git-2024"
 
         keywords="Git Flow, Trunk-Based, Conventional Commits co to jest, Git Flow, Trunk-Based, Conventional Commits definicja, czym jest Git Flow, Trunk-Based, Conventional Commits, Git Flow, Trunk-Based, Conventional Commits przykłady, jak działa Git Flow, Trunk-Based, Conventional Commits, Git Flow, Trunk-Based, Conventional Commits znaczenie, Git Flow, Trunk-Based, Conventional Commits przewodnik"
-
-        canonical="https://fotz.pl/blog/git-flow-trunk-based-conventional-commits-strategie-git-2024"
       />
       <ArticleSchema
         title="Git Flow, Trunk-Based, Conventional Commits — strategie Git 2024?"

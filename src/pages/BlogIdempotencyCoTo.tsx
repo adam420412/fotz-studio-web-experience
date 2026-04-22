@@ -47,8 +47,6 @@ export default function BlogIdempotencyCoTo() {
         canonical="https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
 
         keywords="Idempotencja API co to jest, Idempotencja API jak działa, Idempotencja API tutorial, Idempotencja API przykład, czym jest Idempotencja API, Idempotencja API dokumentacja, Idempotencja API przewodnik"
-
-        canonical="https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
       />
       <ArticleSchema
         title="Idempotencja API — co to jest, Idempotency Key, Redis, płatności, Kafka?"

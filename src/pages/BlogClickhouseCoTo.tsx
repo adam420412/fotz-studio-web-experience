@@ -47,8 +47,6 @@ export default function BlogClickhouseCoTo() {
         canonical="https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
 
         keywords="ClickHouse co to jest, ClickHouse definicja, czym jest ClickHouse, ClickHouse przykłady, jak działa ClickHouse, ClickHouse znaczenie, ClickHouse przewodnik"
-
-        canonical="https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
       />
       <ArticleSchema
         title="ClickHouse — co to jest, OLAP, MergeTree, Kafka ingestion, vs BigQuery i Snowflake?"

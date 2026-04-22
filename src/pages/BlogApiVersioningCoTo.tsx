@@ -47,8 +47,6 @@ export default function BlogApiVersioningCoTo() {
         canonical="https://fotz.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact"
 
         keywords="Wersjonowanie API co to jest, Wersjonowanie API jak działa, Wersjonowanie API tutorial, Wersjonowanie API przykład, czym jest Wersjonowanie API, Wersjonowanie API dokumentacja, Wersjonowanie API przewodnik"
-
-        canonical="https://fotz.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact"
       />
       <ArticleSchema
         title="Wersjonowanie API — co to jest, URL vs Header vs Date, Stripe, deprecation, Pact?"

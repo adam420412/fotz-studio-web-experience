@@ -86,8 +86,6 @@ export default function BlogDesignSystemCoTo() {
         canonical="https://fotz.pl/blog/design-system-co-to"
 
         keywords="Design System co to jest, Design System definicja, czym jest Design System, Design System przykłady, jak działa Design System, Design System znaczenie, Design System przewodnik"
-
-        canonical="https://fotz.pl/blog/design-system-co-to"
       />
       <ArticleSchema
         title="Design System — co to jest i jak go zbudować?"

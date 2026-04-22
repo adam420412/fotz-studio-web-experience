@@ -58,8 +58,6 @@ export default function BlogFunnelAnalyticsCoTo() {
         canonical="https://fotz.pl/blog/funnel-analytics-co-to"
 
         keywords="Funnel Analytics co to jest, Funnel Analytics definicja, czym jest Funnel Analytics, Funnel Analytics przykłady, jak działa Funnel Analytics, Funnel Analytics znaczenie, Funnel Analytics przewodnik"
-
-        canonical="https://fotz.pl/blog/funnel-analytics-co-to"
       />
       <ArticleSchema
         title="Funnel Analytics — co to jest i jak analizować lejki konwersji?"

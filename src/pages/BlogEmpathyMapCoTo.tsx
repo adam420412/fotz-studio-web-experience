@@ -121,8 +121,6 @@ export default function BlogEmpathyMapCoTo() {
         canonical="https://fotz.pl/blog/mapa-empatii-co-to"
 
         keywords="Mapa Empatii co to jest, Mapa Empatii definicja, czym jest Mapa Empatii, Mapa Empatii przykłady, jak działa Mapa Empatii, Mapa Empatii znaczenie, Mapa Empatii przewodnik"
-
-        canonical="https://fotz.pl/blog/mapa-empatii-co-to"
       />
       <ArticleSchema
         title="Mapa Empatii — co to jest i jak ją tworzyć?"

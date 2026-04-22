@@ -74,8 +74,6 @@ export default function BlogCennikFacebookAds() {
         canonical="https://fotz.pl/blog/cennik-facebook-ads"
 
         keywords="Cennik Facebook Ads 2025, Cennik Facebook Ads 2025 poradnik, Cennik Facebook Ads 2025 strategia, Cennik Facebook Ads 2025 jak zrobić, Cennik Facebook Ads 2025 marketing, Cennik Facebook Ads 2025 przykłady, Cennik Facebook Ads 2025 w Polsce"
-
-        canonical="https://fotz.pl/blog/cennik-facebook-ads"
       />
       <ArticleSchema
         title="Cennik Facebook Ads 2025 — ile kosztuje reklama na Facebooku?"

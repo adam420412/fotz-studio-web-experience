@@ -47,8 +47,6 @@ export default function BlogStripeCoTo() {
         canonical="https://fotz.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
 
         keywords="Stripe, Paddle, Przelewy24 co to jest, Stripe, Paddle, Przelewy24 jak działa, Stripe, Paddle, Przelewy24 tutorial, Stripe, Paddle, Przelewy24 przykład, czym jest Stripe, Paddle, Przelewy24, Stripe, Paddle, Przelewy24 dokumentacja, Stripe, Paddle, Przelewy24 przewodnik"
-
-        canonical="https://fotz.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
       />
       <ArticleSchema
         title="Stripe, Paddle, Przelewy24 — integracja płatności Next.js TypeScript 2024?"

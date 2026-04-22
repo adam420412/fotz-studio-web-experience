@@ -47,8 +47,6 @@ export default function BlogSvelteKitCoTo() {
         canonical="https://fotz.pl/blog/sveltekit-routing-load-functions-form-actions-adaptery-2024"
 
         keywords="SvelteKit co to jest, SvelteKit definicja, czym jest SvelteKit, SvelteKit przykłady, jak działa SvelteKit, SvelteKit znaczenie, SvelteKit przewodnik"
-
-        canonical="https://fotz.pl/blog/sveltekit-routing-load-functions-form-actions-adaptery-2024"
       />
       <ArticleSchema
         title="SvelteKit — routing, load functions, form actions i adaptery 2024?"

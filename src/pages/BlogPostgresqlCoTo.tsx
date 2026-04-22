@@ -128,8 +128,6 @@ export default function BlogPostgresqlCoTo() {
         canonical="https://fotz.pl/blog/postgresql-co-to-jest"
 
         keywords="PostgreSQL co to jest, PostgreSQL jak działa, PostgreSQL tutorial, PostgreSQL przykład, czym jest PostgreSQL, PostgreSQL dokumentacja, PostgreSQL przewodnik"
-
-        canonical="https://fotz.pl/blog/postgresql-co-to-jest"
       />
       <ArticleSchema
         title="PostgreSQL — co to jest i jak działa? Kompletny przewodnik"

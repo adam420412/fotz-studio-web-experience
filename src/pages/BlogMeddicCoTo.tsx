@@ -116,8 +116,6 @@ export default function BlogMeddicCoTo() {
         canonical="https://fotz.pl/blog/meddic-kwalifikacja-sprzedazy-b2b"
 
         keywords="MEDDIC co to jest, MEDDIC definicja, czym jest MEDDIC, MEDDIC w sprzedaży, MEDDIC strategia, MEDDIC przykłady, jak używać MEDDIC"
-
-        canonical="https://fotz.pl/blog/meddic-kwalifikacja-sprzedazy-b2b"
       />
       <ArticleSchema
         title="MEDDIC — co to jest i jak kwalifikować szanse sprzedażowe B2B?"

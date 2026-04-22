@@ -56,8 +56,6 @@ export default function BlogGitOpsCoTo() {
         canonical="https://fotz.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
 
         keywords="GitOps co to jest, GitOps definicja, czym jest GitOps, GitOps przykłady, jak działa GitOps, GitOps znaczenie, GitOps przewodnik"
-
-        canonical="https://fotz.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
       />
       <ArticleSchema
         title="GitOps — co to jest i jak wdrożyć Argo CD i Flux?"

@@ -47,8 +47,6 @@ export default function BlogLocalFirstCoTo() {
         canonical="https://fotz.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
 
         keywords="Local-First Software co to jest, Local-First Software jak działa, Local-First Software tutorial, Local-First Software przykład, czym jest Local-First Software, Local-First Software dokumentacja, Local-First Software przewodnik"
-
-        canonical="https://fotz.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
       />
       <ArticleSchema
         title="Local-First Software — Jazz.tools, PowerSync, ElectricSQL, Dexie i PGlite 2024?"

@@ -95,8 +95,6 @@ export default function BlogLoyaltyProgramCoTo() {
         canonical="https://fotz.pl/blog/loyalty-program-co-to"
 
         keywords="Program Lojalnościowy co to jest, Program Lojalnościowy definicja, czym jest Program Lojalnościowy, Program Lojalnościowy przykłady, jak działa Program Lojalnościowy, Program Lojalnościowy znaczenie, Program Lojalnościowy przewodnik"
-
-        canonical="https://fotz.pl/blog/loyalty-program-co-to"
       />
       <ArticleSchema
         title="Program Lojalnościowy — co to jest i jak działa?"

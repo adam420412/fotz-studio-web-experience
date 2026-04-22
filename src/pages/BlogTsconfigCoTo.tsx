@@ -47,8 +47,6 @@ export default function BlogTsconfigCoTo() {
         canonical="https://fotz.pl/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references"
 
         keywords="tsconfig.json co to jest, tsconfig.json jak działa, tsconfig.json tutorial, tsconfig.json przykład, czym jest tsconfig.json, tsconfig.json dokumentacja, tsconfig.json przewodnik"
-
-        canonical="https://fotz.pl/blog/tsconfig-json-konfiguracja-typescript-strict-paths-project-references"
       />
       <ArticleSchema
         title="tsconfig.json — konfiguracja TypeScript, strict mode, paths i project references?"

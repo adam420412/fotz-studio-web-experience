@@ -47,8 +47,6 @@ export default function BlogAiImageGenCoTo() {
         canonical="https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
 
         keywords="AI generowanie obrazów co to jest, AI generowanie obrazów jak działa, AI generowanie obrazów tutorial, AI generowanie obrazów przykład, czym jest AI generowanie obrazów, AI generowanie obrazów dokumentacja, AI generowanie obrazów przewodnik"
-
-        canonical="https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
       />
       <ArticleSchema
         title="AI generowanie obrazów — DALL-E 3, Replicate, FAL.ai, Flux i Stable Diffusion TypeScript 2024?"

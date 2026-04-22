@@ -131,8 +131,6 @@ export default function BlogTypescriptCoTo() {
         canonical="https://fotz.pl/blog/typescript-co-to-jest"
 
         keywords="TypeScript co to jest, TypeScript jak działa, TypeScript tutorial, TypeScript przykład, czym jest TypeScript, TypeScript dokumentacja, TypeScript przewodnik"
-
-        canonical="https://fotz.pl/blog/typescript-co-to-jest"
       />
       <ArticleSchema
         title="TypeScript — co to jest i jak działa? Kompletny przewodnik"

@@ -91,8 +91,6 @@ export default function BlogRedisCoTo() {
         canonical="https://fotz.pl/blog/redis-co-to-jest"
 
         keywords="Redis co to jest, Redis jak działa, Redis tutorial, Redis przykład, czym jest Redis, Redis dokumentacja, Redis przewodnik"
-
-        canonical="https://fotz.pl/blog/redis-co-to-jest"
       />
       <ArticleSchema
         title="Redis — co to jest i jak działa? Kompletny przewodnik"

@@ -47,8 +47,6 @@ export default function BlogAstro5CoTo() {
         canonical="https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
 
         keywords="Astro 5 co to jest, Astro 5 jak działa, Astro 5 tutorial, Astro 5 przykład, czym jest Astro 5, Astro 5 dokumentacja, Astro 5 przewodnik"
-
-        canonical="https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
       />
       <ArticleSchema
         title="Astro 5 — Content Layer, Server Islands, Actions i porównanie z Next.js 2024?"

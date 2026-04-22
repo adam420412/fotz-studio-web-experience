@@ -47,8 +47,6 @@ export default function BlogReactNativeExpoCoTo() {
         canonical="https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
 
         keywords="React Native, Expo co to jest, React Native, Expo jak działa, React Native, Expo tutorial, React Native, Expo przykład, czym jest React Native, Expo, React Native, Expo dokumentacja, React Native, Expo przewodnik"
-
-        canonical="https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
       />
       <ArticleSchema
         title="React Native, Expo — co to jest, mobile development, vs Flutter 2024?"

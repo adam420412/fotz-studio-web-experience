@@ -90,8 +90,6 @@ export default function BlogSocialListeningCoTo() {
         canonical="https://fotz.pl/blog/social-listening-co-to"
 
         keywords="Social Listening co to jest, Social Listening definicja, czym jest Social Listening, Social Listening w marketingu, Social Listening przykłady, jak działa Social Listening, Social Listening strategia"
-
-        canonical="https://fotz.pl/blog/social-listening-co-to"
       />
       <ArticleSchema
         title="Social Listening — co to jest i jak nasłuchiwać mediów społecznościowych?"

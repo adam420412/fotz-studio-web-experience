@@ -47,8 +47,6 @@ export default function BlogReactFlowCoTo() {
         canonical="https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
 
         keywords="React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 co to jest, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 jak działa, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 tutorial, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 przykład, czym jest React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 dokumentacja, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 przewodnik"
-
-        canonical="https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
       />
       <ArticleSchema
         title="React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024?"

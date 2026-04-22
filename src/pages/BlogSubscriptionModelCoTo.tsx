@@ -96,8 +96,6 @@ export default function BlogSubscriptionModelCoTo() {
         canonical="https://fotz.pl/blog/subscription-model-co-to"
 
         keywords="Model Subskrypcyjny co to jest, Model Subskrypcyjny definicja, czym jest Model Subskrypcyjny, Model Subskrypcyjny startup, Model Subskrypcyjny jak liczyć, Model Subskrypcyjny wzór, Model Subskrypcyjny przykłady"
-
-        canonical="https://fotz.pl/blog/subscription-model-co-to"
       />
       <ArticleSchema
         title="Model Subskrypcyjny — co to jest i jak go zbudować?"

@@ -86,8 +86,6 @@ export default function BlogGrowthHackingCoTo() {
         canonical="https://fotz.pl/blog/growth-hacking-co-to"
 
         keywords="Growth Hacking co to jest, Growth Hacking definicja, czym jest Growth Hacking, Growth Hacking startup, Growth Hacking jak liczyć, Growth Hacking wzór, Growth Hacking przykłady"
-
-        canonical="https://fotz.pl/blog/growth-hacking-co-to"
       />
       <ArticleSchema
         title="Growth Hacking — co to jest i jak znaleźć mechanizmy wzrostu?"

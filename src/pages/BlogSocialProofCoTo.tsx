@@ -61,8 +61,6 @@ export default function BlogSocialProofCoTo() {
         canonical="https://fotz.pl/blog/social-proof-co-to"
 
         keywords="Social Proof co to jest, Social Proof definicja, czym jest Social Proof, Social Proof w marketingu, Social Proof przykłady, jak działa Social Proof, Social Proof strategia"
-
-        canonical="https://fotz.pl/blog/social-proof-co-to"
       />
       <ArticleSchema
         title="Social Proof — co to jest i jak używać dowodu społecznego?"

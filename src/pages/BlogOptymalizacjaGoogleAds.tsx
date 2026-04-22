@@ -131,8 +131,6 @@ export default function BlogOptymalizacjaGoogleAds() {
         canonical="https://fotz.pl/blog/optymalizacja-google-ads"
 
         keywords="Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 poradnik, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 strategia, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 jak zrobić, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 marketing, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 przykłady, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 w Polsce"
-
-        canonical="https://fotz.pl/blog/optymalizacja-google-ads"
       />
       <ArticleSchema
         title="Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025"

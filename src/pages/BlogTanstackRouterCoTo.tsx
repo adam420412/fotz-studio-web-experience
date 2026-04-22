@@ -46,8 +46,6 @@ export default function BlogTanstackRouterCoTo() {
         canonical="https://fotz.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
 
         keywords="TanStack Router, React Router v7 i type-safe routing w React 2024 co to jest, TanStack Router, React Router v7 i type-safe routing w React 2024 jak działa, TanStack Router, React Router v7 i type-safe routing w React 2024 tutorial, TanStack Router, React Router v7 i type-safe routing w React 2024 przykład, czym jest TanStack Router, React Router v7 i type-safe routing w React 2024, TanStack Router, React Router v7 i type-safe routing w React 2024 dokumentacja, TanStack Router, React Router v7 i type-safe routing w React 2024 przewodnik"
-
-        canonical="https://fotz.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
       />
       <ArticleSchema
         title="TanStack Router, React Router v7 i type-safe routing w React 2024?"

@@ -129,8 +129,6 @@ export default function BlogElasticsearchCoTo() {
         canonical="https://fotz.pl/blog/elasticsearch-co-to-jest"
 
         keywords="Elasticsearch co to jest, Elasticsearch definicja, czym jest Elasticsearch, Elasticsearch przykłady, jak działa Elasticsearch, Elasticsearch znaczenie, Elasticsearch przewodnik"
-
-        canonical="https://fotz.pl/blog/elasticsearch-co-to-jest"
       />
       <ArticleSchema
         title="Elasticsearch — co to jest i jak działa? Kompletny przewodnik"

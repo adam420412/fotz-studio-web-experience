@@ -54,8 +54,6 @@ export default function BlogApiGatewayCoTo() {
         canonical="https://fotz.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress"
 
         keywords="API Gateway co to jest, API Gateway jak działa, API Gateway tutorial, API Gateway przykład, czym jest API Gateway, API Gateway dokumentacja, API Gateway przewodnik"
-
-        canonical="https://fotz.pl/blog/api-gateway-co-to-jest-jak-wybrac-kong-aws-apigee"
       />
       <ArticleSchema
         title="API Gateway — co to jest, Kong, AWS API Gateway, Traefik i Kubernetes Ingress?"

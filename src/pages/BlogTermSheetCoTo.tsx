@@ -86,8 +86,6 @@ export default function BlogTermSheetCoTo() {
         canonical="https://fotz.pl/blog/term-sheet-co-to-jest-vc-inwestycje"
 
         keywords="Term sheet co to jest, Term sheet definicja, czym jest Term sheet, Term sheet przykłady, jak działa Term sheet, Term sheet znaczenie, Term sheet przewodnik"
-
-        canonical="https://fotz.pl/blog/term-sheet-co-to-jest-vc-inwestycje"
       />
       <ArticleSchema
         title="Term sheet — co to jest i jak negocjować?"

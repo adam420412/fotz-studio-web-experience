@@ -65,8 +65,6 @@ export default function BlogSlaCoTo() {
         canonical="https://fotz.pl/blog/sla-slo-sli-co-to"
 
         keywords="SLA, SLO, SLI co to jest, SLA, SLO, SLI definicja, czym jest SLA, SLO, SLI, SLA, SLO, SLI przykłady, jak działa SLA, SLO, SLI, SLA, SLO, SLI znaczenie, SLA, SLO, SLI przewodnik"
-
-        canonical="https://fotz.pl/blog/sla-slo-sli-co-to"
       />
       <ArticleSchema
         title="SLA, SLO, SLI — co to jest i jak zarządzać poziomami usług?"

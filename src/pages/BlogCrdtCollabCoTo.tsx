@@ -47,8 +47,6 @@ export default function BlogCrdtCollabCoTo() {
         canonical="https://fotz.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024"
 
         keywords="CRDT, Y.js, Liveblocks i PartyKit co to jest, CRDT, Y.js, Liveblocks i PartyKit jak działa, CRDT, Y.js, Liveblocks i PartyKit tutorial, CRDT, Y.js, Liveblocks i PartyKit przykład, czym jest CRDT, Y.js, Liveblocks i PartyKit, CRDT, Y.js, Liveblocks i PartyKit dokumentacja, CRDT, Y.js, Liveblocks i PartyKit przewodnik"
-
-        canonical="https://fotz.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024"
       />
       <ArticleSchema
         title="CRDT, Y.js, Liveblocks i PartyKit — real-time collaborative editing React 2024?"

@@ -56,8 +56,6 @@ export default function BlogQuicHttp3CoTo() {
         canonical="https://fotz.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance"
 
         keywords="QUIC i HTTP/3 co to jest, QUIC i HTTP/3 definicja, czym jest QUIC i HTTP/3, QUIC i HTTP/3 przykłady, jak działa QUIC i HTTP/3, QUIC i HTTP/3 znaczenie, QUIC i HTTP/3 przewodnik"
-
-        canonical="https://fotz.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance"
       />
       <ArticleSchema
         title="QUIC i HTTP/3 — co to jest i jak wpływa na web performance?"

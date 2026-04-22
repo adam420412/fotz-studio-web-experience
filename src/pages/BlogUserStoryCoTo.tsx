@@ -86,8 +86,6 @@ export default function BlogUserStoryCoTo() {
         canonical="https://fotz.pl/blog/user-story-co-to"
 
         keywords="User Story co to jest, User Story definicja, czym jest User Story, User Story przykłady, jak działa User Story, User Story znaczenie, User Story przewodnik"
-
-        canonical="https://fotz.pl/blog/user-story-co-to"
       />
       <ArticleSchema
         title="User Story — co to jest i jak pisać historyjki użytkownika?"

@@ -47,8 +47,6 @@ export default function BlogLegendStateNanostoresCoTo() {
         canonical="https://fotz.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
 
         keywords="Legend State, Nanostores, Valtio i Signals co to jest, Legend State, Nanostores, Valtio i Signals jak działa, Legend State, Nanostores, Valtio i Signals tutorial, Legend State, Nanostores, Valtio i Signals przykład, czym jest Legend State, Nanostores, Valtio i Signals, Legend State, Nanostores, Valtio i Signals dokumentacja, Legend State, Nanostores, Valtio i Signals przewodnik"
-
-        canonical="https://fotz.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
       />
       <ArticleSchema
         title="Legend State, Nanostores, Valtio i Signals — state management React 2024?"

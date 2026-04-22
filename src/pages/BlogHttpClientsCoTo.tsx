@@ -47,8 +47,6 @@ export default function BlogHttpClientsCoTo() {
         canonical="https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
 
         keywords="HTTP clients TypeScript co to jest, HTTP clients TypeScript jak działa, HTTP clients TypeScript tutorial, HTTP clients TypeScript przykład, czym jest HTTP clients TypeScript, HTTP clients TypeScript dokumentacja, HTTP clients TypeScript przewodnik"
-
-        canonical="https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
       />
       <ArticleSchema
         title="HTTP clients TypeScript — Fetch, Axios, ky, ofetch i TanStack Query 2024?"

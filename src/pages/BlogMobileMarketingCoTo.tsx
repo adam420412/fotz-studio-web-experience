@@ -102,8 +102,6 @@ export default function BlogMobileMarketingCoTo() {
         canonical="https://fotz.pl/blog/mobile-marketing-co-to"
 
         keywords="Mobile Marketing co to jest, Mobile Marketing definicja, czym jest Mobile Marketing, Mobile Marketing w marketingu, Mobile Marketing przykłady, jak działa Mobile Marketing, Mobile Marketing strategia"
-
-        canonical="https://fotz.pl/blog/mobile-marketing-co-to"
       />
       <ArticleSchema
         title="Mobile Marketing — co to jest i jak działa?"

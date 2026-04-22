@@ -89,8 +89,6 @@ export default function BlogBuyerPersonaCoTo() {
         canonical="https://fotz.pl/blog/buyer-persona-co-to"
 
         keywords="Buyer Persona co to jest, Buyer Persona definicja, czym jest Buyer Persona, Buyer Persona w sprzedaży, Buyer Persona strategia, Buyer Persona przykłady, jak używać Buyer Persona"
-
-        canonical="https://fotz.pl/blog/buyer-persona-co-to"
       />
       <ArticleSchema
         title="Buyer Persona — co to jest i jak ją tworzyć?"

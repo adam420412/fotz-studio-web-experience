@@ -105,8 +105,6 @@ export default function BlogVoiceOfCustomerCoTo() {
         canonical="https://fotz.pl/blog/voice-of-customer-co-to"
 
         keywords="Voice of Customer (VoC) co to jest, Voice of Customer (VoC) definicja, czym jest Voice of Customer (VoC), Voice of Customer (VoC) przykłady, jak działa Voice of Customer (VoC), Voice of Customer (VoC) znaczenie, Voice of Customer (VoC) przewodnik"
-
-        canonical="https://fotz.pl/blog/voice-of-customer-co-to"
       />
       <ArticleSchema
         title="Voice of Customer (VoC) — co to jest i jak budować program?"

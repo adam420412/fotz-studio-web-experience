@@ -72,8 +72,6 @@ export default function BlogPozycjonowanieGoogleMaps() {
         canonical="https://fotz.pl/blog/pozycjonowanie-google-maps"
 
         keywords="Pozycjonowanie w Google Maps, Pozycjonowanie w Google Maps poradnik, Pozycjonowanie w Google Maps strategia, Pozycjonowanie w Google Maps jak zrobić, Pozycjonowanie w Google Maps marketing, Pozycjonowanie w Google Maps przykłady, Pozycjonowanie w Google Maps w Polsce"
-
-        canonical="https://fotz.pl/blog/pozycjonowanie-google-maps"
       />
       <ArticleSchema
         title="Pozycjonowanie w Google Maps — kompletny poradnik Local SEO i optymalizacji profilu"

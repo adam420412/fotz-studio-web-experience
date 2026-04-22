@@ -83,8 +83,6 @@ export default function BlogTwoSidedMarketplaceCoTo() {
         canonical="https://fotz.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
 
         keywords="Two-Sided Marketplace co to jest, Two-Sided Marketplace definicja, czym jest Two-Sided Marketplace, Two-Sided Marketplace przykłady, jak działa Two-Sided Marketplace, Two-Sided Marketplace znaczenie, Two-Sided Marketplace przewodnik"
-
-        canonical="https://fotz.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
       />
       <ArticleSchema
         title="Two-Sided Marketplace — co to jest i jak budować?"

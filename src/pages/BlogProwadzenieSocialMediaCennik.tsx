@@ -112,8 +112,6 @@ export default function BlogProwadzenieSocialMediaCennik() {
         canonical="https://fotz.pl/blog/prowadzenie-social-media-cennik"
 
         keywords="Prowadzenie social media, Prowadzenie social media poradnik, Prowadzenie social media strategia, Prowadzenie social media jak zrobić, Prowadzenie social media marketing, Prowadzenie social media przykłady, Prowadzenie social media w Polsce"
-
-        canonical="https://fotz.pl/blog/prowadzenie-social-media-cennik"
       />
       <ArticleSchema
         title="Prowadzenie social media — cennik 2025, pakiety i zakres usługi"

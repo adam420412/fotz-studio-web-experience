@@ -59,8 +59,6 @@ export default function BlogSwitchingCostsCoTo() {
         canonical="https://fotz.pl/blog/switching-costs-co-to"
 
         keywords="Switching Costs co to jest, Switching Costs definicja, czym jest Switching Costs, Switching Costs przykłady, jak działa Switching Costs, Switching Costs znaczenie, Switching Costs przewodnik"
-
-        canonical="https://fotz.pl/blog/switching-costs-co-to"
       />
       <ArticleSchema
         title="Switching Costs — co to są koszty zmiany i jak budować moat?"

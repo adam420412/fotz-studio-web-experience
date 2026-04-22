@@ -80,8 +80,6 @@ export default function BlogPipelineVelocityCoTo() {
         canonical="https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
 
         keywords="Pipeline Velocity co to jest, Pipeline Velocity definicja, czym jest Pipeline Velocity, Pipeline Velocity przykłady, jak działa Pipeline Velocity, Pipeline Velocity znaczenie, Pipeline Velocity przewodnik"
-
-        canonical="https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
       />
       <ArticleSchema
         title="Pipeline Velocity — co to jest i jak poprawić prędkość pipeline'u?"

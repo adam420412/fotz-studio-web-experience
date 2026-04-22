@@ -69,8 +69,6 @@ export default function BlogSdrCoTo() {
         canonical="https://fotz.pl/blog/sdr-co-to-jest"
 
         keywords="SDR co to jest, SDR definicja, czym jest SDR, SDR w sprzedaży, SDR strategia, SDR przykłady, jak używać SDR"
-
-        canonical="https://fotz.pl/blog/sdr-co-to-jest"
       />
       <ArticleSchema
         title="SDR — co to jest i jak działa Sales Development Representative?"

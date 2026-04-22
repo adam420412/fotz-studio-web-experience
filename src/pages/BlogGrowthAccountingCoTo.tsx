@@ -80,8 +80,6 @@ export default function BlogGrowthAccountingCoTo() {
         canonical="https://fotz.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
 
         keywords="Growth Accounting co to jest, Growth Accounting definicja, czym jest Growth Accounting, Growth Accounting przykłady, jak działa Growth Accounting, Growth Accounting znaczenie, Growth Accounting przewodnik"
-
-        canonical="https://fotz.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
       />
       <ArticleSchema
         title="Growth Accounting — co to jest i jak analizować wzrost?"

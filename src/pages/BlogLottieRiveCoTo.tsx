@@ -47,8 +47,6 @@ export default function BlogLottieRiveCoTo() {
         canonical="https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
 
         keywords="Lottie, Rive, Framer Motion i GSAP co to jest, Lottie, Rive, Framer Motion i GSAP jak działa, Lottie, Rive, Framer Motion i GSAP tutorial, Lottie, Rive, Framer Motion i GSAP przykład, czym jest Lottie, Rive, Framer Motion i GSAP, Lottie, Rive, Framer Motion i GSAP dokumentacja, Lottie, Rive, Framer Motion i GSAP przewodnik"
-
-        canonical="https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
       />
       <ArticleSchema
         title="Lottie, Rive, Framer Motion i GSAP — animacje webowe w React 2024?"

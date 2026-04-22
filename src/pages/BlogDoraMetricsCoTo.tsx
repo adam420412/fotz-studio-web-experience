@@ -86,8 +86,6 @@ export default function BlogDoraMetricsCoTo() {
         canonical="https://fotz.pl/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops"
 
         keywords="DORA Metrics co to jest, DORA Metrics definicja, czym jest DORA Metrics, DORA Metrics przykłady, jak działa DORA Metrics, DORA Metrics znaczenie, DORA Metrics przewodnik"
-
-        canonical="https://fotz.pl/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops"
       />
       <ArticleSchema
         title="DORA Metrics — co to jest i jak mierzyć wydajność DevOps?"

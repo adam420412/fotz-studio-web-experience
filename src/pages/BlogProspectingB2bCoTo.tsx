@@ -91,8 +91,6 @@ export default function BlogProspectingB2bCoTo() {
         canonical="https://fotz.pl/blog/prospecting-b2b-generowanie-leadow"
 
         keywords="Prospecting B2B co to jest, Prospecting B2B definicja, czym jest Prospecting B2B, Prospecting B2B w marketingu, Prospecting B2B przykłady, jak działa Prospecting B2B, Prospecting B2B strategia"
-
-        canonical="https://fotz.pl/blog/prospecting-b2b-generowanie-leadow"
       />
       <ArticleSchema
         title="Prospecting B2B — co to jest i jak generować leady?"

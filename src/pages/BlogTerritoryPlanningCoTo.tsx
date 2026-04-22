@@ -78,8 +78,6 @@ export default function BlogTerritoryPlanningCoTo() {
         canonical="https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
 
         keywords="Territory Planning co to jest, Territory Planning definicja, czym jest Territory Planning, Territory Planning w sprzedaży, Territory Planning strategia, Territory Planning przykłady, jak używać Territory Planning"
-
-        canonical="https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
       />
       <ArticleSchema
         title="Territory Planning — jak planować terytoria sprzedażowe?"

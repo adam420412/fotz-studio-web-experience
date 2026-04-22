@@ -47,8 +47,6 @@ export default function BlogFileUploadsCoTo() {
         canonical="https://fotz.pl/blog/file-uploads-uploadthing-cloudinary-s3-mux-nextjs-2024"
 
         keywords="File Uploads co to jest, File Uploads jak działa, File Uploads tutorial, File Uploads przykład, czym jest File Uploads, File Uploads dokumentacja, File Uploads przewodnik"
-
-        canonical="https://fotz.pl/blog/file-uploads-uploadthing-cloudinary-s3-mux-nextjs-2024"
       />
       <ArticleSchema
         title="File Uploads — UploadThing, Cloudinary, AWS S3, Mux, Next.js 2024?"

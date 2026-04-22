@@ -89,8 +89,6 @@ export default function BlogMoatCoToJest() {
         canonical="https://fotz.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
 
         keywords="Moat (przewaga konkurencyjna) co to jest, Moat (przewaga konkurencyjna) definicja, czym jest Moat (przewaga konkurencyjna), Moat (przewaga konkurencyjna) przykłady, jak działa Moat (przewaga konkurencyjna), Moat (przewaga konkurencyjna) znaczenie, Moat (przewaga konkurencyjna) przewodnik"
-
-        canonical="https://fotz.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
       />
       <ArticleSchema
         title="Moat (przewaga konkurencyjna) — co to jest w biznesie?"

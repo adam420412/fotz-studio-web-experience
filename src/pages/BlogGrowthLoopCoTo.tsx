@@ -90,8 +90,6 @@ export default function BlogGrowthLoopCoTo() {
         canonical="https://fotz.pl/blog/growth-loop-co-to"
 
         keywords="Growth Loop co to jest, Growth Loop definicja, czym jest Growth Loop, Growth Loop przykłady, jak działa Growth Loop, Growth Loop znaczenie, Growth Loop przewodnik"
-
-        canonical="https://fotz.pl/blog/growth-loop-co-to"
       />
       <ArticleSchema
         title="Growth Loop — co to jest i jak projektować pętle wzrostu?"

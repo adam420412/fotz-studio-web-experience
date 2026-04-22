@@ -84,8 +84,6 @@ export default function BlogPublicRelationsCoTo() {
         canonical="https://fotz.pl/blog/public-relations-co-to"
 
         keywords="Public Relations (PR) co to jest, Public Relations (PR) definicja, czym jest Public Relations (PR), Public Relations (PR) przykłady, jak działa Public Relations (PR), Public Relations (PR) znaczenie, Public Relations (PR) przewodnik"
-
-        canonical="https://fotz.pl/blog/public-relations-co-to"
       />
       <ArticleSchema
         title="Public Relations (PR) — co to jest i jak działa?"

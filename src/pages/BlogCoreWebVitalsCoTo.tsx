@@ -47,8 +47,6 @@ export default function BlogCoreWebVitalsCoTo() {
         canonical="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
 
         keywords="Core Web Vitals co to jest, Core Web Vitals definicja, czym jest Core Web Vitals, Core Web Vitals przykłady, jak działa Core Web Vitals, Core Web Vitals znaczenie, Core Web Vitals przewodnik"
-
-        canonical="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
       />
       <ArticleSchema
         title="Core Web Vitals — LCP, INP, CLS, optymalizacja wydajności web 2024?"

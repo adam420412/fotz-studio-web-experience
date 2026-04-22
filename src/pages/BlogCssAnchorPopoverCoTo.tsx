@@ -47,8 +47,6 @@ export default function BlogCssAnchorPopoverCoTo() {
         canonical="https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
 
         keywords="CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 co to jest, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 jak działa, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 tutorial, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 przykład, czym jest CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 dokumentacja, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 przewodnik"
-
-        canonical="https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
       />
       <ArticleSchema
         title="CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024?"

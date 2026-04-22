@@ -68,8 +68,6 @@ export default function BlogCiCdCoTo() {
         canonical="https://fotz.pl/blog/ci-cd-co-to-jest"
 
         keywords="CI/CD co to jest, CI/CD definicja, czym jest CI/CD, CI/CD przykłady, jak działa CI/CD, CI/CD znaczenie, CI/CD przewodnik"
-
-        canonical="https://fotz.pl/blog/ci-cd-co-to-jest"
       />
       <ArticleSchema
         title="CI/CD — co to jest i jak działa Continuous Integration i Delivery?"

@@ -78,8 +78,6 @@ export default function BlogDataMeshCoTo() {
         canonical="https://fotz.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
 
         keywords="Data Mesh co to jest, Data Mesh definicja, czym jest Data Mesh, Data Mesh przykłady, jak działa Data Mesh, Data Mesh znaczenie, Data Mesh przewodnik"
-
-        canonical="https://fotz.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
       />
       <ArticleSchema
         title="Data Mesh — co to jest i jak wdrożyć zdecentralizowaną architekturę danych?"

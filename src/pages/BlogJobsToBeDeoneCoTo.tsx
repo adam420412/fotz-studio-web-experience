@@ -90,8 +90,6 @@ export default function BlogJobsToBeDeoneCoTo() {
         canonical="https://fotz.pl/blog/jobs-to-be-done-co-to"
 
         keywords="Jobs-to-be-Done co to jest, Jobs-to-be-Done definicja, czym jest Jobs-to-be-Done, Jobs-to-be-Done przykłady, jak działa Jobs-to-be-Done, Jobs-to-be-Done znaczenie, Jobs-to-be-Done przewodnik"
-
-        canonical="https://fotz.pl/blog/jobs-to-be-done-co-to"
       />
       <ArticleSchema
         title="Jobs-to-be-Done — co to jest i jak stosować framework JTBD?"

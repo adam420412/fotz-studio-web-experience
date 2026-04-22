@@ -47,8 +47,6 @@ export default function BlogPostgresOptCoTo() {
         canonical="https://fotz.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
 
         keywords="PostgreSQL optymalizacja co to jest, PostgreSQL optymalizacja jak działa, PostgreSQL optymalizacja tutorial, PostgreSQL optymalizacja przykład, czym jest PostgreSQL optymalizacja, PostgreSQL optymalizacja dokumentacja, PostgreSQL optymalizacja przewodnik"
-
-        canonical="https://fotz.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
       />
       <ArticleSchema
         title="PostgreSQL optymalizacja — EXPLAIN ANALYZE, indeksy, partitioning, PgBouncer, Patroni?"

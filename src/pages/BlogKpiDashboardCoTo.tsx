@@ -87,8 +87,6 @@ export default function BlogKpiDashboardCoTo() {
         canonical="https://fotz.pl/blog/dashboard-kpi-co-to"
 
         keywords="Dashboard KPI co to jest, Dashboard KPI definicja, czym jest Dashboard KPI, Dashboard KPI przykłady, jak działa Dashboard KPI, Dashboard KPI znaczenie, Dashboard KPI przewodnik"
-
-        canonical="https://fotz.pl/blog/dashboard-kpi-co-to"
       />
       <ArticleSchema
         title="Dashboard KPI — co to jest i jak go zbudować?"

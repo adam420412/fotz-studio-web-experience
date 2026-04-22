@@ -99,8 +99,6 @@ export default function BlogSponsorshipMarketingCoTo() {
         canonical="https://fotz.pl/blog/sponsoring-marketing-co-to"
 
         keywords="Sponsoring w marketingu co to jest, Sponsoring w marketingu definicja, czym jest Sponsoring w marketingu, Sponsoring w marketingu w marketingu, Sponsoring w marketingu przykłady, jak działa Sponsoring w marketingu, Sponsoring w marketingu strategia"
-
-        canonical="https://fotz.pl/blog/sponsoring-marketing-co-to"
       />
       <ArticleSchema
         title="Sponsoring w marketingu — co to jest i jak go stosować?"

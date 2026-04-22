@@ -84,8 +84,6 @@ export default function BlogMultichannelMarketingCoTo() {
         canonical="https://fotz.pl/blog/multichannel-marketing-co-to"
 
         keywords="Multichannel Marketing co to jest, Multichannel Marketing definicja, czym jest Multichannel Marketing, Multichannel Marketing w marketingu, Multichannel Marketing przykłady, jak działa Multichannel Marketing, Multichannel Marketing strategia"
-
-        canonical="https://fotz.pl/blog/multichannel-marketing-co-to"
       />
       <ArticleSchema
         title="Multichannel Marketing — co to jest i jak wdrożyć?"

@@ -56,8 +56,6 @@ export default function BlogGrpcCoTo() {
         canonical="https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
 
         keywords="gRPC co to jest, gRPC definicja, czym jest gRPC, gRPC przykłady, jak działa gRPC, gRPC znaczenie, gRPC przewodnik"
-
-        canonical="https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
       />
       <ArticleSchema
         title="gRPC — co to jest i jak używać Protocol Buffers w mikroserwisach?"

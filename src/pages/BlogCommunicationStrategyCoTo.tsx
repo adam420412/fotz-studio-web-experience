@@ -90,8 +90,6 @@ export default function BlogCommunicationStrategyCoTo() {
         canonical="https://fotz.pl/blog/strategia-komunikacji-co-to"
 
         keywords="Strategia komunikacji co to jest, Strategia komunikacji definicja, czym jest Strategia komunikacji, Strategia komunikacji przykłady, jak działa Strategia komunikacji, Strategia komunikacji znaczenie, Strategia komunikacji przewodnik"
-
-        canonical="https://fotz.pl/blog/strategia-komunikacji-co-to"
       />
       <ArticleSchema
         title="Strategia komunikacji — co to jest i jak ją budować?"

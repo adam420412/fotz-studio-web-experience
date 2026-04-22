@@ -61,8 +61,6 @@ export default function BlogGdprCoTo() {
         canonical="https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
 
         keywords="GDPR (RODO) co to jest, GDPR (RODO) definicja, czym jest GDPR (RODO), GDPR (RODO) przykłady, jak działa GDPR (RODO), GDPR (RODO) znaczenie, GDPR (RODO) przewodnik"
-
-        canonical="https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
       />
       <ArticleSchema
         title="GDPR (RODO) — co to jest i jak wdrożyć w firmie technologicznej?"

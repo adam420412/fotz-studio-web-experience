@@ -90,8 +90,6 @@ export default function BlogGoogleAdsVsSeo() {
         canonical="https://fotz.pl/blog/google-ads-vs-seo"
 
         keywords="Google Ads vs SEO, Google Ads vs SEO poradnik, Google Ads vs SEO strategia, Google Ads vs SEO jak zrobić, Google Ads vs SEO marketing, Google Ads vs SEO przykłady, Google Ads vs SEO w Polsce"
-
-        canonical="https://fotz.pl/blog/google-ads-vs-seo"
       />
       <ArticleSchema
         title="Google Ads vs SEO — co wybrać w 2025? Porównanie kosztów i efektów"

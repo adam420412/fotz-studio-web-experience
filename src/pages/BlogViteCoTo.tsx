@@ -47,8 +47,6 @@ export default function BlogViteCoTo() {
         canonical="https://fotz.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac"
 
         keywords="Vite, esbuild, Turbopack, Rollup, Webpack co to jest, Vite, esbuild, Turbopack, Rollup, Webpack definicja, czym jest Vite, esbuild, Turbopack, Rollup, Webpack, Vite, esbuild, Turbopack, Rollup, Webpack przykłady, jak działa Vite, esbuild, Turbopack, Rollup, Webpack, Vite, esbuild, Turbopack, Rollup, Webpack znaczenie, Vite, esbuild, Turbopack, Rollup, Webpack przewodnik"
-
-        canonical="https://fotz.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac"
       />
       <ArticleSchema
         title="Vite, esbuild, Turbopack, Rollup, Webpack — bundlery JS 2024, co wybrać?"

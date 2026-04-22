@@ -83,8 +83,6 @@ export default function BlogPromptEngineeringCoTo() {
         canonical="https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
 
         keywords="Prompt Engineering co to jest, Prompt Engineering definicja, czym jest Prompt Engineering, Prompt Engineering przykłady, jak działa Prompt Engineering, Prompt Engineering znaczenie, Prompt Engineering przewodnik"
-
-        canonical="https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
       />
       <ArticleSchema
         title="Prompt Engineering — co to jest i jak pisać skuteczne prompty?"

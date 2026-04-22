@@ -94,8 +94,6 @@ export default function BlogPocCoToJest() {
         canonical="https://fotz.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
 
         keywords="POC (Proof of Concept) co to jest, POC (Proof of Concept) definicja, czym jest POC (Proof of Concept), POC (Proof of Concept) w sprzedaży, POC (Proof of Concept) strategia, POC (Proof of Concept) przykłady, jak używać POC (Proof of Concept)"
-
-        canonical="https://fotz.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
       />
       <ArticleSchema
         title="POC (Proof of Concept) — co to jest w sprzedaży B2B?"

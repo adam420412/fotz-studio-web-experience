@@ -76,8 +76,6 @@ export default function BlogSafeNoteCoTo() {
         canonical="https://fotz.pl/blog/safe-note-co-to-jest-jak-dziala-startup"
 
         keywords="SAFE Note co to jest, SAFE Note definicja, czym jest SAFE Note, SAFE Note startup, SAFE Note jak liczyć, SAFE Note wzór, SAFE Note przykłady"
-
-        canonical="https://fotz.pl/blog/safe-note-co-to-jest-jak-dziala-startup"
       />
       <ArticleSchema
         title="SAFE Note — co to jest i jak działa w startupie?"

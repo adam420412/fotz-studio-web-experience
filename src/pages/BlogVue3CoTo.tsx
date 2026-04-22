@@ -47,8 +47,6 @@ export default function BlogVue3CoTo() {
         canonical="https://fotz.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala"
 
         keywords="Vue 3 Composition API, Pinia, Nuxt 3 co to jest, Vue 3 Composition API, Pinia, Nuxt 3 jak działa, Vue 3 Composition API, Pinia, Nuxt 3 tutorial, Vue 3 Composition API, Pinia, Nuxt 3 przykład, czym jest Vue 3 Composition API, Pinia, Nuxt 3, Vue 3 Composition API, Pinia, Nuxt 3 dokumentacja, Vue 3 Composition API, Pinia, Nuxt 3 przewodnik"
-
-        canonical="https://fotz.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala"
       />
       <ArticleSchema
         title="Vue 3 Composition API, Pinia, Nuxt 3 — co to jest i jak działa?"

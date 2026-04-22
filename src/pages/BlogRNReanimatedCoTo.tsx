@@ -47,8 +47,6 @@ export default function BlogRNReanimatedCoTo() {
         canonical="https://fotz.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
 
         keywords="React Native Reanimated, Gesture Handler i Skia co to jest, React Native Reanimated, Gesture Handler i Skia jak działa, React Native Reanimated, Gesture Handler i Skia tutorial, React Native Reanimated, Gesture Handler i Skia przykład, czym jest React Native Reanimated, Gesture Handler i Skia, React Native Reanimated, Gesture Handler i Skia dokumentacja, React Native Reanimated, Gesture Handler i Skia przewodnik"
-
-        canonical="https://fotz.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
       />
       <ArticleSchema
         title="React Native Reanimated, Gesture Handler i Skia — animacje i gesty iOS Android 2024?"

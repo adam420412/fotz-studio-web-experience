@@ -47,8 +47,6 @@ export default function BlogIncidentManagementCoTo() {
         canonical="https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
 
         keywords="Incident Management co to jest, Incident Management definicja, czym jest Incident Management, Incident Management przykłady, jak działa Incident Management, Incident Management znaczenie, Incident Management przewodnik"
-
-        canonical="https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
       />
       <ArticleSchema
         title="Incident Management — co to jest, severity, PagerDuty, postmortem, on-call SLA?"

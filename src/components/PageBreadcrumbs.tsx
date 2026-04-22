@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import { ChevronRight, Home } from "lucide-react";
 
 interface BreadcrumbItem {
-  label: string;
+  label?: string;
   href?: string;
+  // Allow alternative shape used by some pages
+  name?: string;
+  url?: string;
 }
 
 interface PageBreadcrumbsProps {
@@ -27,15 +30,15 @@ export function PageBreadcrumbs({ items }: PageBreadcrumbsProps) {
         {items.map((item, index) => (
           <li key={index} className="flex items-center gap-2">
             <ChevronRight className="w-3.5 h-3.5" />
-            {item.href ? (
+            {(item.href ?? item.url) ? (
               <Link 
-                to={item.href} 
+                to={(item.href ?? item.url) as string}
                 className="hover:text-foreground transition-colors"
               >
-                {item.label}
+                {item.label ?? item.name}
               </Link>
             ) : (
-              <span className="text-foreground font-medium">{item.label}</span>
+              <span className="text-foreground font-medium">{item.label ?? item.name}</span>
             )}
           </li>
         ))}

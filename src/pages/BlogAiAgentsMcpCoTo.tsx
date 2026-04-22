@@ -47,8 +47,6 @@ export default function BlogAiAgentsMcpCoTo() {
         canonical="https://fotz.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024"
 
         keywords="AI Agents, MCP, Vercel AI SDK i LangGraph co to jest, AI Agents, MCP, Vercel AI SDK i LangGraph jak działa, AI Agents, MCP, Vercel AI SDK i LangGraph tutorial, AI Agents, MCP, Vercel AI SDK i LangGraph przykład, czym jest AI Agents, MCP, Vercel AI SDK i LangGraph, AI Agents, MCP, Vercel AI SDK i LangGraph dokumentacja, AI Agents, MCP, Vercel AI SDK i LangGraph przewodnik"
-
-        canonical="https://fotz.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024"
       />
       <ArticleSchema
         title="AI Agents, MCP, Vercel AI SDK i LangGraph — budowanie agentów AI 2024?"

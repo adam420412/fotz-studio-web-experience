@@ -70,8 +70,6 @@ export default function BlogNorthStarMetricCoTo() {
         canonical="https://fotz.pl/blog/north-star-metric-co-to"
 
         keywords="North Star Metric co to jest, North Star Metric definicja, czym jest North Star Metric, North Star Metric przykłady, jak działa North Star Metric, North Star Metric znaczenie, North Star Metric przewodnik"
-
-        canonical="https://fotz.pl/blog/north-star-metric-co-to"
       />
       <ArticleSchema
         title="North Star Metric — co to jest i jak wybrać metrykę Gwiazdy Polarnej?"

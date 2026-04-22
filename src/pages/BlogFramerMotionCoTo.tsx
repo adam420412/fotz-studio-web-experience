@@ -48,8 +48,6 @@ export default function BlogFramerMotionCoTo() {
         canonical="https://fotz.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024"
 
         keywords="Framer Motion, GSAP, CSS Animations co to jest, Framer Motion, GSAP, CSS Animations jak działa, Framer Motion, GSAP, CSS Animations tutorial, Framer Motion, GSAP, CSS Animations przykład, czym jest Framer Motion, GSAP, CSS Animations, Framer Motion, GSAP, CSS Animations dokumentacja, Framer Motion, GSAP, CSS Animations przewodnik"
-
-        canonical="https://fotz.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024"
       />
       <ArticleSchema
         title="Framer Motion, GSAP, CSS Animations — web animacje React 2024?"

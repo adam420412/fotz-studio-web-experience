@@ -65,8 +65,6 @@ export default function BlogDevOpsCoTo() {
         canonical="https://fotz.pl/blog/devops-co-to-jest"
 
         keywords="DevOps co to jest, DevOps definicja, czym jest DevOps, DevOps przykłady, jak działa DevOps, DevOps znaczenie, DevOps przewodnik"
-
-        canonical="https://fotz.pl/blog/devops-co-to-jest"
       />
       <ArticleSchema
         title="DevOps — co to jest i jak wdrożyć kulturę DevOps?"

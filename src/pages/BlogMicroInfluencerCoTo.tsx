@@ -77,8 +77,6 @@ export default function BlogMicroInfluencerCoTo() {
         canonical="https://fotz.pl/blog/micro-influencer-marketing-co-to"
 
         keywords="Micro Influencer co to jest, Micro Influencer definicja, czym jest Micro Influencer, Micro Influencer w marketingu, Micro Influencer przykłady, jak działa Micro Influencer, Micro Influencer strategia"
-
-        canonical="https://fotz.pl/blog/micro-influencer-marketing-co-to"
       />
       <ArticleSchema
         title="Micro Influencer — co to jest i jak z nimi współpracować?"

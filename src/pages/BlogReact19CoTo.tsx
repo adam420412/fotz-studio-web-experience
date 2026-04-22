@@ -47,8 +47,6 @@ export default function BlogReact19CoTo() {
         canonical="https://fotz.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
 
         keywords="React 19 co to jest, React 19 jak działa, React 19 tutorial, React 19 przykład, czym jest React 19, React 19 dokumentacja, React 19 przewodnik"
-
-        canonical="https://fotz.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
       />
       <ArticleSchema
         title="React 19 — use(), useActionState, React Compiler, Server Actions i Next.js 15?"

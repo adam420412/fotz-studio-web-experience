@@ -80,8 +80,6 @@ export default function BlogChannelSalesCoTo() {
         canonical="https://fotz.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
 
         keywords="Channel Sales co to jest, Channel Sales definicja, czym jest Channel Sales, Channel Sales w sprzedaży, Channel Sales strategia, Channel Sales przykłady, jak używać Channel Sales"
-
-        canonical="https://fotz.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
       />
       <ArticleSchema
         title="Channel Sales — sprzedaż przez kanały partnerskie"
