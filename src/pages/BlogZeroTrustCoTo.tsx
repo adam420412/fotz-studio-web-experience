@@ -56,8 +56,6 @@ export default function BlogZeroTrustCoTo() {
         canonical="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
 
         keywords="Zero Trust Security co to jest, Zero Trust Security definicja, czym jest Zero Trust Security, Zero Trust Security przykłady, jak działa Zero Trust Security, Zero Trust Security znaczenie, Zero Trust Security przewodnik"
-
-        canonical="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz"
       />
       <ArticleSchema
         title="Zero Trust Security — co to jest, jak wdrożyć, MFA, ZTNA i mikrosegmentacja?"

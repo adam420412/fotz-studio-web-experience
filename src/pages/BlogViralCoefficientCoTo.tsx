@@ -77,8 +77,6 @@ export default function BlogViralCoefficientCoTo() {
         canonical="https://fotz.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
 
         keywords="Viral Coefficient co to jest, Viral Coefficient definicja, czym jest Viral Coefficient, Viral Coefficient przykłady, jak działa Viral Coefficient, Viral Coefficient znaczenie, Viral Coefficient przewodnik"
-
-        canonical="https://fotz.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
       />
       <ArticleSchema
         title="Viral Coefficient — co to jest i jak mierzyć viralność?"

@@ -98,8 +98,6 @@ export default function BlogTamSamSomCoTo() {
         canonical="https://fotz.pl/blog/tam-sam-som-co-to"
 
         keywords="TAM, SAM, SOM co to jest, TAM, SAM, SOM definicja, czym jest TAM, SAM, SOM, TAM, SAM, SOM startup, TAM, SAM, SOM jak liczyć, TAM, SAM, SOM wzór, TAM, SAM, SOM przykłady"
-
-        canonical="https://fotz.pl/blog/tam-sam-som-co-to"
       />
       <ArticleSchema
         title="TAM, SAM, SOM — co to jest i jak obliczać wielkość rynku?"

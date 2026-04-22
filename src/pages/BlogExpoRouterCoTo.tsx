@@ -47,8 +47,6 @@ export default function BlogExpoRouterCoTo() {
         canonical="https://fotz.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024"
 
         keywords="Expo Router v3, React Navigation co to jest, Expo Router v3, React Navigation jak działa, Expo Router v3, React Navigation tutorial, Expo Router v3, React Navigation przykład, czym jest Expo Router v3, React Navigation, Expo Router v3, React Navigation dokumentacja, Expo Router v3, React Navigation przewodnik"
-
-        canonical="https://fotz.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024"
       />
       <ArticleSchema
         title="Expo Router v3, React Navigation — React Native nawigacja i universal apps 2024?"

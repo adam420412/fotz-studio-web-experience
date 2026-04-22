@@ -47,8 +47,6 @@ export default function BlogSentryCoTo() {
         canonical="https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
 
         keywords="Sentry co to jest, Sentry jak działa, Sentry tutorial, Sentry przykład, czym jest Sentry, Sentry dokumentacja, Sentry przewodnik"
-
-        canonical="https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
       />
       <ArticleSchema
         title="Sentry — co to jest, error tracking, Performance Monitoring, React, Python?"

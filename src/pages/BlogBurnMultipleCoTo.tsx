@@ -56,8 +56,6 @@ export default function BlogBurnMultipleCoTo() {
         canonical="https://fotz.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas"
 
         keywords="Burn Multiple co to jest, Burn Multiple definicja, czym jest Burn Multiple, Burn Multiple startup, Burn Multiple jak liczyć, Burn Multiple wzór, Burn Multiple przykłady"
-
-        canonical="https://fotz.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas"
       />
       <ArticleSchema
         title="Burn Multiple — co to jest i jak obliczać?"

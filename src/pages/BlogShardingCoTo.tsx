@@ -55,8 +55,6 @@ export default function BlogShardingCoTo() {
         canonical="https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
 
         keywords="Database Sharding co to jest, Database Sharding jak działa, Database Sharding tutorial, Database Sharding przykład, czym jest Database Sharding, Database Sharding dokumentacja, Database Sharding przewodnik"
-
-        canonical="https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
       />
       <ArticleSchema
         title="Database Sharding — co to jest, strategie, Vitess, Cassandra, CockroachDB?"

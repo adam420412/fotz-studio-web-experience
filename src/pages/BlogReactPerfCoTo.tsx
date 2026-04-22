@@ -47,8 +47,6 @@ export default function BlogReactPerfCoTo() {
         canonical="https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
 
         keywords="React Performance co to jest, React Performance jak działa, React Performance tutorial, React Performance przykład, czym jest React Performance, React Performance dokumentacja, React Performance przewodnik"
-
-        canonical="https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
       />
       <ArticleSchema
         title="React Performance — React Scan, Million.js, Bundle Analyzer i Code Splitting 2024?"

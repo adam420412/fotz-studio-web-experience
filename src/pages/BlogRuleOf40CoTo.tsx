@@ -102,8 +102,6 @@ export default function BlogRuleOf40CoTo() {
         canonical="https://fotz.pl/blog/rule-of-40-co-to-jest"
 
         keywords="Rule of 40 co to jest, Rule of 40 definicja, czym jest Rule of 40, Rule of 40 przykłady, jak działa Rule of 40, Rule of 40 znaczenie, Rule of 40 przewodnik"
-
-        canonical="https://fotz.pl/blog/rule-of-40-co-to-jest"
       />
       <ArticleSchema
         title="Rule of 40 — co to jest i jak liczyć?"

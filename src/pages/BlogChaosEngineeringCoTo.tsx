@@ -56,8 +56,6 @@ export default function BlogChaosEngineeringCoTo() {
         canonical="https://fotz.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz"
 
         keywords="Chaos Engineering co to jest, Chaos Engineering definicja, czym jest Chaos Engineering, Chaos Engineering startup, Chaos Engineering jak liczyć, Chaos Engineering wzór, Chaos Engineering przykłady"
-
-        canonical="https://fotz.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz"
       />
       <ArticleSchema
         title="Chaos Engineering — co to jest i jak wdrożyć w SaaS?"

@@ -47,8 +47,6 @@ export default function BlogFirebaseSupabaseCoTo() {
         canonical="https://fotz.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024"
 
         keywords="Firebase vs Supabase vs Convex co to jest, Firebase vs Supabase vs Convex definicja, czym jest Firebase vs Supabase vs Convex, Firebase vs Supabase vs Convex przykłady, jak działa Firebase vs Supabase vs Convex, Firebase vs Supabase vs Convex znaczenie, Firebase vs Supabase vs Convex przewodnik"
-
-        canonical="https://fotz.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024"
       />
       <ArticleSchema
         title="Firebase vs Supabase vs Convex — BaaS porównanie 2024, co wybrać?"

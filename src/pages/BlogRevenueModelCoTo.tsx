@@ -119,8 +119,6 @@ export default function BlogRevenueModelCoTo() {
         canonical="https://fotz.pl/blog/revenue-model-co-to"
 
         keywords="Model Przychodów co to jest, Model Przychodów definicja, czym jest Model Przychodów, Model Przychodów przykłady, jak działa Model Przychodów, Model Przychodów znaczenie, Model Przychodów przewodnik"
-
-        canonical="https://fotz.pl/blog/revenue-model-co-to"
       />
       <ArticleSchema
         title="Model Przychodów — co to jest i jakie są rodzaje revenue model?"

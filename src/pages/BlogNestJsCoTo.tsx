@@ -47,8 +47,6 @@ export default function BlogNestJsCoTo() {
         canonical="https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
 
         keywords="NestJS co to jest, NestJS definicja, czym jest NestJS, NestJS przykłady, jak działa NestJS, NestJS znaczenie, NestJS przewodnik"
-
-        canonical="https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
       />
       <ArticleSchema
         title="NestJS — co to jest, moduły, guardy, mikrousługi, vs Express i Fastify?"

@@ -97,8 +97,6 @@ export default function BlogRampingSprzedaz() {
         canonical="https://fotz.pl/blog/ramp-period-onboarding-handlowca-b2b"
 
         keywords="Ramp period w sprzedaży, Ramp period w sprzedaży co to jest, Ramp period w sprzedaży jak działa, Ramp period w sprzedaży definicja, Ramp period w sprzedaży przykłady, Ramp period w sprzedaży poradnik, Ramp period w sprzedaży przewodnik"
-
-        canonical="https://fotz.pl/blog/ramp-period-onboarding-handlowca-b2b"
       />
       <ArticleSchema
         title="Ramp period w sprzedaży — onboarding handlowca B2B"

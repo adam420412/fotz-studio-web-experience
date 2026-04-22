@@ -107,8 +107,6 @@ export default function BlogCohortAnalysisCoTo() {
         canonical="https://fotz.pl/blog/cohort-analysis-co-to"
 
         keywords="Cohort Analysis co to jest, Cohort Analysis definicja, czym jest Cohort Analysis, Cohort Analysis przykłady, jak działa Cohort Analysis, Cohort Analysis znaczenie, Cohort Analysis przewodnik"
-
-        canonical="https://fotz.pl/blog/cohort-analysis-co-to"
       />
       <ArticleSchema
         title="Cohort Analysis — co to jest i jak analizować retencję użytkowników?"

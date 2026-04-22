@@ -90,8 +90,6 @@ export default function BlogHeatmapCoTo() {
         canonical="https://fotz.pl/blog/heatmapa-co-to"
 
         keywords="Heatmapa Strony co to jest, Heatmapa Strony definicja, czym jest Heatmapa Strony, Heatmapa Strony przykłady, jak działa Heatmapa Strony, Heatmapa Strony znaczenie, Heatmapa Strony przewodnik"
-
-        canonical="https://fotz.pl/blog/heatmapa-co-to"
       />
       <ArticleSchema
         title="Heatmapa Strony Internetowej — co to jest i jak używać?"

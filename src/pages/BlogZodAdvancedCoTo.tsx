@@ -47,8 +47,6 @@ export default function BlogZodAdvancedCoTo() {
         canonical="https://fotz.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
 
         keywords="Zod zaawansowany co to jest, Zod zaawansowany definicja, czym jest Zod zaawansowany, Zod zaawansowany w marketingu, Zod zaawansowany przykłady, jak działa Zod zaawansowany, Zod zaawansowany strategia"
-
-        canonical="https://fotz.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
       />
       <ArticleSchema
         title="Zod zaawansowany — discriminated unions, branded types, transforms i recursive schemas TypeScript 2024?"

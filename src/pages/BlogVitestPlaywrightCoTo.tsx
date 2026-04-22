@@ -47,8 +47,6 @@ export default function BlogVitestPlaywrightCoTo() {
         canonical="https://fotz.pl/blog/vitest-playwright-cypress-storybook-testowanie-react-2024"
 
         keywords="Vitest, Playwright, Cypress, Storybook co to jest, Vitest, Playwright, Cypress, Storybook jak działa, Vitest, Playwright, Cypress, Storybook tutorial, Vitest, Playwright, Cypress, Storybook przykład, czym jest Vitest, Playwright, Cypress, Storybook, Vitest, Playwright, Cypress, Storybook dokumentacja, Vitest, Playwright, Cypress, Storybook przewodnik"
-
-        canonical="https://fotz.pl/blog/vitest-playwright-cypress-storybook-testowanie-react-2024"
       />
       <ArticleSchema
         title="Vitest, Playwright, Cypress, Storybook — testowanie aplikacji React 2024?"

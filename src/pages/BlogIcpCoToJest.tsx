@@ -84,8 +84,6 @@ export default function BlogIcpCoToJest() {
         canonical="https://fotz.pl/blog/icp-ideal-customer-profile-co-to"
 
         keywords="ICP co to jest, ICP definicja, czym jest ICP, ICP startup, ICP jak liczyć, ICP wzór, ICP przykłady"
-
-        canonical="https://fotz.pl/blog/icp-ideal-customer-profile-co-to"
       />
       <ArticleSchema
         title="ICP co to jest — Ideal Customer Profile w B2B SaaS"

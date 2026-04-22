@@ -47,8 +47,6 @@ export default function BlogEslintBiomeCoTo() {
         canonical="https://fotz.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024"
 
         keywords="ESLint, Biome, Prettier, Husky co to jest, ESLint, Biome, Prettier, Husky jak działa, ESLint, Biome, Prettier, Husky tutorial, ESLint, Biome, Prettier, Husky przykład, czym jest ESLint, Biome, Prettier, Husky, ESLint, Biome, Prettier, Husky dokumentacja, ESLint, Biome, Prettier, Husky przewodnik"
-
-        canonical="https://fotz.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024"
       />
       <ArticleSchema
         title="ESLint, Biome, Prettier, Husky — linting i code quality w TypeScript 2024?"

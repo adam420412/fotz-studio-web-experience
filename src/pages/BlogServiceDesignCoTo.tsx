@@ -106,8 +106,6 @@ export default function BlogServiceDesignCoTo() {
         canonical="https://fotz.pl/blog/service-design-co-to"
 
         keywords="Service Design co to jest, Service Design definicja, czym jest Service Design, Service Design przykłady, jak działa Service Design, Service Design znaczenie, Service Design przewodnik"
-
-        canonical="https://fotz.pl/blog/service-design-co-to"
       />
       <ArticleSchema
         title="Service Design — co to jest i jak projektować usługi?"

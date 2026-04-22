@@ -54,8 +54,6 @@ export default function BlogPwaCoTo() {
         canonical="https://fotz.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz"
 
         keywords="Progressive Web App (PWA) co to jest, Progressive Web App (PWA) definicja, czym jest Progressive Web App (PWA), Progressive Web App (PWA) przykłady, jak działa Progressive Web App (PWA), Progressive Web App (PWA) znaczenie, Progressive Web App (PWA) przewodnik"
-
-        canonical="https://fotz.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz"
       />
       <ArticleSchema
         title="Progressive Web App (PWA) — co to jest i jak wdrożyć?"

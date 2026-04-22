@@ -47,8 +47,6 @@ export default function BlogNextAuthCoTo() {
         canonical="https://fotz.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024"
 
         keywords="NextAuth.js, Lucia Auth, Clerk co to jest, NextAuth.js, Lucia Auth, Clerk jak działa, NextAuth.js, Lucia Auth, Clerk tutorial, NextAuth.js, Lucia Auth, Clerk przykład, czym jest NextAuth.js, Lucia Auth, Clerk, NextAuth.js, Lucia Auth, Clerk dokumentacja, NextAuth.js, Lucia Auth, Clerk przewodnik"
-
-        canonical="https://fotz.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024"
       />
       <ArticleSchema
         title="NextAuth.js, Lucia Auth, Clerk — biblioteki autentykacji dla Next.js 2024?"

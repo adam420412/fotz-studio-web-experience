@@ -56,8 +56,6 @@ export default function BlogEbpfCoTo() {
         canonical="https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
 
         keywords="eBPF co to jest, eBPF jak działa, eBPF tutorial, eBPF przykład, czym jest eBPF, eBPF dokumentacja, eBPF przewodnik"
-
-        canonical="https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
       />
       <ArticleSchema
         title="eBPF — co to jest i jak używać w Kubernetes i observability?"

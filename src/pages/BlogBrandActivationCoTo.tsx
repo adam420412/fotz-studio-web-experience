@@ -105,8 +105,6 @@ export default function BlogBrandActivationCoTo() {
         canonical="https://fotz.pl/blog/brand-activation-co-to"
 
         keywords="Brand Activation co to jest, Brand Activation definicja, czym jest Brand Activation, Brand Activation w marketingu, Brand Activation przykłady, jak działa Brand Activation, Brand Activation strategia"
-
-        canonical="https://fotz.pl/blog/brand-activation-co-to"
       />
       <ArticleSchema
         title="Brand Activation — co to jest i jak działa?"

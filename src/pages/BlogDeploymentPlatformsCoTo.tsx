@@ -47,8 +47,6 @@ export default function BlogDeploymentPlatformsCoTo() {
         canonical="https://fotz.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
 
         keywords="Vercel, Netlify, Cloudflare Pages, Railway co to jest, Vercel, Netlify, Cloudflare Pages, Railway jak działa, Vercel, Netlify, Cloudflare Pages, Railway tutorial, Vercel, Netlify, Cloudflare Pages, Railway przykład, czym jest Vercel, Netlify, Cloudflare Pages, Railway, Vercel, Netlify, Cloudflare Pages, Railway dokumentacja, Vercel, Netlify, Cloudflare Pages, Railway przewodnik"
-
-        canonical="https://fotz.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
       />
       <ArticleSchema
         title="Vercel, Netlify, Cloudflare Pages, Railway — deployment Next.js 2024?"

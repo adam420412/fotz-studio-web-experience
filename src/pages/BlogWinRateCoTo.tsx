@@ -55,8 +55,6 @@ export default function BlogWinRateCoTo() {
         canonical="https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
 
         keywords="Win Rate co to jest, Win Rate definicja, czym jest Win Rate, Win Rate przykłady, jak działa Win Rate, Win Rate znaczenie, Win Rate przewodnik"
-
-        canonical="https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
       />
       <ArticleSchema
         title="Win Rate — co to jest i jak poprawić wskaźnik wygranych?"

@@ -85,8 +85,6 @@ export default function BlogProductDiscoveryCoTo() {
         canonical="https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
 
         keywords="Product Discovery co to jest, Product Discovery definicja, czym jest Product Discovery, Product Discovery przykłady, jak działa Product Discovery, Product Discovery znaczenie, Product Discovery przewodnik"
-
-        canonical="https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
       />
       <ArticleSchema
         title="Product Discovery — co to jest i jak przeprowadzić?"

@@ -60,8 +60,6 @@ export default function BlogTechDebtCoTo() {
         canonical="https://fotz.pl/blog/dług-techniczny-co-to"
 
         keywords="Dług techniczny (tech debt) co to jest, Dług techniczny (tech debt) definicja, czym jest Dług techniczny (tech debt), Dług techniczny (tech debt) przykłady, jak działa Dług techniczny (tech debt), Dług techniczny (tech debt) znaczenie, Dług techniczny (tech debt) przewodnik"
-
-        canonical="https://fotz.pl/blog/dług-techniczny-co-to"
       />
       <ArticleSchema
         title="Dług techniczny (tech debt) — co to jest i jak zarządzać?"

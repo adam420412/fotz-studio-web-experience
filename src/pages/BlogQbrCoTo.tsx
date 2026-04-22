@@ -104,8 +104,6 @@ export default function BlogQbrCoTo() {
         canonical="https://fotz.pl/blog/qbr-co-to"
 
         keywords="QBR co to jest, QBR definicja, czym jest QBR, QBR przykłady, jak działa QBR, QBR znaczenie, QBR przewodnik"
-
-        canonical="https://fotz.pl/blog/qbr-co-to"
       />
       <ArticleSchema
         title="QBR — co to jest i jak przeprowadzić Quarterly Business Review?"

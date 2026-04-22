@@ -92,8 +92,6 @@ export default function BlogOkrCoTo() {
         canonical="https://fotz.pl/blog/okr-co-to-jest"
 
         keywords="OKR co to jest, OKR definicja, czym jest OKR, OKR przykłady, jak działa OKR, OKR znaczenie, OKR przewodnik"
-
-        canonical="https://fotz.pl/blog/okr-co-to-jest"
       />
       <ArticleSchema
         title="OKR — co to jest i jak pisać Objectives and Key Results?"

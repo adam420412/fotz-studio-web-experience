@@ -47,8 +47,6 @@ export default function BlogSolidJsCoTo() {
         canonical="https://fotz.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
 
         keywords="SolidJS co to jest, SolidJS jak działa, SolidJS tutorial, SolidJS przykład, czym jest SolidJS, SolidJS dokumentacja, SolidJS przewodnik"
-
-        canonical="https://fotz.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
       />
       <ArticleSchema
         title="SolidJS — fine-grained reactivity, createSignal, createStore i SolidStart 2024?"

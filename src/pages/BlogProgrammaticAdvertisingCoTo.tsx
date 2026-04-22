@@ -92,8 +92,6 @@ export default function BlogProgrammaticAdvertisingCoTo() {
         canonical="https://fotz.pl/blog/programmatic-advertising-co-to"
 
         keywords="Programmatic Advertising co to jest, Programmatic Advertising definicja, czym jest Programmatic Advertising, Programmatic Advertising w marketingu, Programmatic Advertising przykłady, jak działa Programmatic Advertising, Programmatic Advertising strategia"
-
-        canonical="https://fotz.pl/blog/reklama-programatyczna-co-to"
       />
       <ArticleSchema
         title="Programmatic Advertising — co to jest i jak działa reklama programatyczna?"

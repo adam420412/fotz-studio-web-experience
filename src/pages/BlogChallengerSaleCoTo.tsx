@@ -74,8 +74,6 @@ export default function BlogChallengerSaleCoTo() {
         canonical="https://fotz.pl/blog/challenger-sale-metodologia-sprzedazy"
 
         keywords="Challenger Sale co to jest, Challenger Sale definicja, czym jest Challenger Sale, Challenger Sale przykłady, jak działa Challenger Sale, Challenger Sale znaczenie, Challenger Sale przewodnik"
-
-        canonical="https://fotz.pl/blog/challenger-sale-metodologia-sprzedazy"
       />
       <ArticleSchema
         title="Challenger Sale — co to jest i jak stosować?"

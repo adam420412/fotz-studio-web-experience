@@ -47,8 +47,6 @@ export default function BlogAiSdkCoTo() {
         canonical="https://fotz.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
 
         keywords="AI SDK, OpenAI, LangChain co to jest, AI SDK, OpenAI, LangChain jak działa, AI SDK, OpenAI, LangChain tutorial, AI SDK, OpenAI, LangChain przykład, czym jest AI SDK, OpenAI, LangChain, AI SDK, OpenAI, LangChain dokumentacja, AI SDK, OpenAI, LangChain przewodnik"
-
-        canonical="https://fotz.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
       />
       <ArticleSchema
         title="AI SDK, OpenAI, LangChain — integracja AI z Next.js i TypeScript 2024?"

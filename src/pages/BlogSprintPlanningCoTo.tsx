@@ -54,8 +54,6 @@ export default function BlogSprintPlanningCoTo() {
         canonical="https://fotz.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic"
 
         keywords="Sprint Planning co to jest, Sprint Planning definicja, czym jest Sprint Planning, Sprint Planning przykłady, jak działa Sprint Planning, Sprint Planning znaczenie, Sprint Planning przewodnik"
-
-        canonical="https://fotz.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic"
       />
       <ArticleSchema
         title="Sprint Planning — co to jest i jak przeprowadzić?"

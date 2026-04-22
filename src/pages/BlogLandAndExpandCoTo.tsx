@@ -183,8 +183,6 @@ export default function BlogLandAndExpandCoTo() {
         canonical="https://fotz.pl/blog/land-and-expand-strategia"
 
         keywords="Land and Expand co to jest, Land and Expand definicja, czym jest Land and Expand, Land and Expand startup, Land and Expand jak liczyć, Land and Expand wzór, Land and Expand przykłady"
-
-        canonical="https://fotz.pl/blog/land-and-expand-strategia"
       />
       <ArticleSchema
         title="Land and Expand — strategia wzrostu SaaS B2B"

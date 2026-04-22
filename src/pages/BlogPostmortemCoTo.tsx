@@ -62,8 +62,6 @@ export default function BlogPostmortemCoTo() {
         canonical="https://fotz.pl/blog/postmortem-analiza-incydentu"
 
         keywords="Postmortem co to jest, Postmortem definicja, czym jest Postmortem, Postmortem przykłady, jak działa Postmortem, Postmortem znaczenie, Postmortem przewodnik"
-
-        canonical="https://fotz.pl/blog/postmortem-analiza-incydentu"
       />
       <ArticleSchema
         title="Postmortem — co to jest i jak przeprowadzać analizę po incydencie?"

@@ -105,8 +105,6 @@ export default function BlogLtvCoToJest() {
         canonical="https://fotz.pl/blog/ltv-customer-lifetime-value-co-to"
 
         keywords="LTV co to jest, LTV definicja, czym jest LTV, LTV startup, LTV jak liczyć, LTV wzór, LTV przykłady"
-
-        canonical="https://fotz.pl/blog/ltv-customer-lifetime-value-co-to"
       />
       <ArticleSchema
         title="LTV co to jest — Customer Lifetime Value w SaaS"

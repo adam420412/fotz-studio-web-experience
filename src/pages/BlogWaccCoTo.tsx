@@ -87,8 +87,6 @@ export default function BlogWaccCoTo() {
         canonical="https://fotz.pl/blog/wacc-sredni-wazony-koszt-kapitalu"
 
         keywords="WACC co to jest, WACC jak działa, WACC tutorial, WACC przykład, czym jest WACC, WACC dokumentacja, WACC przewodnik"
-
-        canonical="https://fotz.pl/blog/wacc-sredni-wazony-koszt-kapitalu"
       />
       <ArticleSchema
         title="WACC — co to jest i jak obliczyć Średni Ważony Koszt Kapitału?"

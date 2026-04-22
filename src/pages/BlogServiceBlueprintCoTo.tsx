@@ -110,8 +110,6 @@ export default function BlogServiceBlueprintCoTo() {
         canonical="https://fotz.pl/blog/service-blueprint-co-to"
 
         keywords="Service Blueprint co to jest, Service Blueprint definicja, czym jest Service Blueprint, Service Blueprint przykłady, jak działa Service Blueprint, Service Blueprint znaczenie, Service Blueprint przewodnik"
-
-        canonical="https://fotz.pl/blog/service-blueprint-co-to"
       />
       <ArticleSchema
         title="Service Blueprint — co to jest i jak tworzyć mapę usługi?"

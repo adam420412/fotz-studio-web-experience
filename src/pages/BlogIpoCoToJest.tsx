@@ -51,8 +51,6 @@ export default function BlogIpoCoToJest() {
         canonical="https://fotz.pl/blog/ipo-co-to-jest-debiut-gieldowy"
 
         keywords="IPO co to jest, IPO definicja, czym jest IPO, IPO przykłady, jak działa IPO, IPO znaczenie, IPO przewodnik"
-
-        canonical="https://fotz.pl/blog/ipo-co-to-jest-debiut-gieldowy"
       />
       <ArticleSchema
         title="IPO — co to jest i jak wygląda debiut giełdowy?"

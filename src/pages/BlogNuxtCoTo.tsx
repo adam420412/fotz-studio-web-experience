@@ -47,8 +47,6 @@ export default function BlogNuxtCoTo() {
         canonical="https://fotz.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024"
 
         keywords="Nuxt.js 3 co to jest, Nuxt.js 3 jak działa, Nuxt.js 3 tutorial, Nuxt.js 3 przykład, czym jest Nuxt.js 3, Nuxt.js 3 dokumentacja, Nuxt.js 3 przewodnik"
-
-        canonical="https://fotz.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024"
       />
       <ArticleSchema
         title="Nuxt.js 3 — useFetch, Nitro API routes, Pinia i deployment 2024?"

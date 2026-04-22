@@ -61,8 +61,6 @@ export default function BlogFeedbackLoopCoTo() {
         canonical="https://fotz.pl/blog/feedback-loop-co-to"
 
         keywords="Feedback Loop co to jest, Feedback Loop definicja, czym jest Feedback Loop, Feedback Loop przykłady, jak działa Feedback Loop, Feedback Loop znaczenie, Feedback Loop przewodnik"
-
-        canonical="https://fotz.pl/blog/feedback-loop-co-to"
       />
       <ArticleSchema
         title="Feedback Loop — co to jest i jak budować pętlę feedbacku?"

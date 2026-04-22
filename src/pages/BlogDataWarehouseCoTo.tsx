@@ -54,8 +54,6 @@ export default function BlogDataWarehouseCoTo() {
         canonical="https://fotz.pl/blog/data-warehouse-co-to-jest-jak-wybrac"
 
         keywords="Data Warehouse co to jest, Data Warehouse definicja, czym jest Data Warehouse, Data Warehouse przykłady, jak działa Data Warehouse, Data Warehouse znaczenie, Data Warehouse przewodnik"
-
-        canonical="https://fotz.pl/blog/data-warehouse-co-to-jest-jak-wybrac"
       />
       <ArticleSchema
         title="Data Warehouse — co to jest i jak wybrać?"

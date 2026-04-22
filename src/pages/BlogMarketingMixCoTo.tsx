@@ -114,8 +114,6 @@ export default function BlogMarketingMixCoTo() {
         canonical="https://fotz.pl/blog/marketing-mix-co-to"
 
         keywords="Marketing Mix co to jest, Marketing Mix definicja, czym jest Marketing Mix, Marketing Mix w marketingu, Marketing Mix przykłady, jak działa Marketing Mix, Marketing Mix strategia"
-
-        canonical="https://fotz.pl/blog/marketing-mix-co-to"
       />
       <ArticleSchema
         title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"

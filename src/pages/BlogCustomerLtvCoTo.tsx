@@ -81,8 +81,6 @@ export default function BlogCustomerLtvCoTo() {
         canonical="https://fotz.pl/blog/customer-ltv-co-to"
 
         keywords="Customer Lifetime Value co to jest, Customer Lifetime Value definicja, czym jest Customer Lifetime Value, Customer Lifetime Value startup, Customer Lifetime Value jak liczyć, Customer Lifetime Value wzór, Customer Lifetime Value przykłady"
-
-        canonical="https://fotz.pl/blog/customer-ltv-co-to"
       />
       <ArticleSchema
         title="Customer Lifetime Value — co to jest i jak obliczać CLV?"

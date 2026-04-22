@@ -85,8 +85,6 @@ export default function BlogBehavioralMarketingCoTo() {
         canonical="https://fotz.pl/blog/behavioral-marketing-co-to"
 
         keywords="Behavioral Marketing co to jest, Behavioral Marketing definicja, czym jest Behavioral Marketing, Behavioral Marketing w marketingu, Behavioral Marketing przykłady, jak działa Behavioral Marketing, Behavioral Marketing strategia"
-
-        canonical="https://fotz.pl/blog/behavioral-marketing-co-to"
       />
       <ArticleSchema
         title="Behavioral Marketing — co to jest i jak stosować?"

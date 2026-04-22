@@ -83,8 +83,6 @@ export default function BlogBrandEquityCoTo() {
         canonical="https://fotz.pl/blog/brand-equity-co-to"
 
         keywords="Brand Equity co to jest, Brand Equity definicja, czym jest Brand Equity, Brand Equity w marketingu, Brand Equity przykłady, jak działa Brand Equity, Brand Equity strategia"
-
-        canonical="https://fotz.pl/blog/brand-equity-co-to"
       />
       <ArticleSchema
         title="Brand Equity — co to jest i jak budować kapitał marki?"

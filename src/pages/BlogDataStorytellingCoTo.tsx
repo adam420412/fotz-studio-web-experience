@@ -100,8 +100,6 @@ export default function BlogDataStorytellingCoTo() {
         canonical="https://fotz.pl/blog/data-storytelling-co-to"
 
         keywords="Data Storytelling co to jest, Data Storytelling definicja, czym jest Data Storytelling, Data Storytelling przykłady, jak działa Data Storytelling, Data Storytelling znaczenie, Data Storytelling przewodnik"
-
-        canonical="https://fotz.pl/blog/data-storytelling-co-to"
       />
       <ArticleSchema
         title="Data Storytelling — co to jest i jak stosować?"

@@ -47,8 +47,6 @@ export default function BlogReactRouter7CoTo() {
         canonical="https://fotz.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
 
         keywords="React Router 7 co to jest, React Router 7 jak działa, React Router 7 tutorial, React Router 7 przykład, czym jest React Router 7, React Router 7 dokumentacja, React Router 7 przewodnik"
-
-        canonical="https://fotz.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
       />
       <ArticleSchema
         title="React Router 7 — Framework Mode, loaders, actions, typegen i vs Next.js 2024?"

@@ -104,8 +104,6 @@ export default function BlogOutboundMarketingCoTo() {
         canonical="https://fotz.pl/blog/outbound-marketing-co-to"
 
         keywords="Outbound Marketing co to jest, Outbound Marketing definicja, czym jest Outbound Marketing, Outbound Marketing w marketingu, Outbound Marketing przykłady, jak działa Outbound Marketing, Outbound Marketing strategia"
-
-        canonical="https://fotz.pl/blog/outbound-marketing-co-to"
       />
       <ArticleSchema
         title="Outbound Marketing — co to jest i jak działa?"

@@ -74,8 +74,6 @@ export default function BlogVestingScheduleCoTo() {
         canonical="https://fotz.pl/blog/vesting-schedule-co-to-jest-equity-startup"
 
         keywords="Vesting Schedule co to jest, Vesting Schedule definicja, czym jest Vesting Schedule, Vesting Schedule przykłady, jak działa Vesting Schedule, Vesting Schedule znaczenie, Vesting Schedule przewodnik"
-
-        canonical="https://fotz.pl/blog/vesting-schedule-co-to-jest-equity-startup"
       />
       <ArticleSchema
         title="Vesting Schedule — co to jest i jak działa equity vesting?"

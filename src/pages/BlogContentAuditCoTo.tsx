@@ -104,8 +104,6 @@ export default function BlogContentAuditCoTo() {
         canonical="https://fotz.pl/blog/content-audit-co-to"
 
         keywords="Content Audit co to jest, Content Audit definicja, czym jest Content Audit, Content Audit przykłady, jak działa Content Audit, Content Audit znaczenie, Content Audit przewodnik"
-
-        canonical="https://fotz.pl/blog/content-audit-co-to"
       />
       <ArticleSchema
         title="Content Audit — co to jest i jak go przeprowadzić?"

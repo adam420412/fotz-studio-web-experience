@@ -61,8 +61,6 @@ export default function BlogMicroservicesCoTo() {
         canonical="https://fotz.pl/blog/mikroserwisy-co-to-jest"
 
         keywords="Mikroserwisy co to jest, Mikroserwisy definicja, czym jest Mikroserwisy, Mikroserwisy przykłady, jak działa Mikroserwisy, Mikroserwisy znaczenie, Mikroserwisy przewodnik"
-
-        canonical="https://fotz.pl/blog/mikroserwisy-co-to-jest"
       />
       <ArticleSchema
         title="Mikroserwisy — co to jest i kiedy używać architektury microservices?"

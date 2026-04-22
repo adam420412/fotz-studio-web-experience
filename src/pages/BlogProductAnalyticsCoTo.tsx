@@ -124,8 +124,6 @@ export default function BlogProductAnalyticsCoTo() {
         canonical="https://fotz.pl/blog/product-analytics-co-to"
 
         keywords="Product Analytics co to jest, Product Analytics definicja, czym jest Product Analytics, Product Analytics przykłady, jak działa Product Analytics, Product Analytics znaczenie, Product Analytics przewodnik"
-
-        canonical="https://fotz.pl/blog/product-analytics-co-to"
       />
       <ArticleSchema
         title="Product Analytics — co to jest i jak mierzyć zachowania użytkowników?"

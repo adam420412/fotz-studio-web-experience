@@ -47,8 +47,6 @@ export default function BlogTypescriptAdvancedCoTo() {
         canonical="https://fotz.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
 
         keywords="TypeScript zaawansowany co to jest, TypeScript zaawansowany jak działa, TypeScript zaawansowany tutorial, TypeScript zaawansowany przykład, czym jest TypeScript zaawansowany, TypeScript zaawansowany dokumentacja, TypeScript zaawansowany przewodnik"
-
-        canonical="https://fotz.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
       />
       <ArticleSchema
         title="TypeScript zaawansowany — generics, conditional types, decorators, TypeScript 5.x?"

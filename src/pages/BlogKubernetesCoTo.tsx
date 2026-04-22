@@ -84,8 +84,6 @@ export default function BlogKubernetesCoTo() {
         canonical="https://fotz.pl/blog/kubernetes-co-to-jest"
 
         keywords="Kubernetes co to jest, Kubernetes jak działa, Kubernetes tutorial, Kubernetes przykład, czym jest Kubernetes, Kubernetes dokumentacja, Kubernetes przewodnik"
-
-        canonical="https://fotz.pl/blog/kubernetes-co-to-jest"
       />
       <ArticleSchema
         title="Kubernetes — co to jest i jak działa? Kompletny przewodnik"

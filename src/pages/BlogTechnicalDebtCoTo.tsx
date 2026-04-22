@@ -56,8 +56,6 @@ export default function BlogTechnicalDebtCoTo() {
         canonical="https://fotz.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac"
 
         keywords="Dług techniczny co to jest, Dług techniczny definicja, czym jest Dług techniczny, Dług techniczny przykłady, jak działa Dług techniczny, Dług techniczny znaczenie, Dług techniczny przewodnik"
-
-        canonical="https://fotz.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac"
       />
       <ArticleSchema
         title="Dług techniczny — co to jest, jak mierzyć, zarządzać i redukować?"

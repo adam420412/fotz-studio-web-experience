@@ -47,8 +47,6 @@ export default function BlogJsProposalsCoTo() {
         canonical="https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
 
         keywords="Nowe funkcje JavaScript co to jest, Nowe funkcje JavaScript jak działa, Nowe funkcje JavaScript tutorial, Nowe funkcje JavaScript przykład, czym jest Nowe funkcje JavaScript, Nowe funkcje JavaScript dokumentacja, Nowe funkcje JavaScript przewodnik"
-
-        canonical="https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
       />
       <ArticleSchema
         title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024?"

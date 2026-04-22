@@ -47,8 +47,6 @@ export default function BlogCapacitorIonicCoTo() {
         canonical="https://fotz.pl/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024"
 
         keywords="Capacitor, Ionic, PWA i Expo co to jest, Capacitor, Ionic, PWA i Expo definicja, czym jest Capacitor, Ionic, PWA i Expo, Capacitor, Ionic, PWA i Expo przykłady, jak działa Capacitor, Ionic, PWA i Expo, Capacitor, Ionic, PWA i Expo znaczenie, Capacitor, Ionic, PWA i Expo przewodnik"
-
-        canonical="https://fotz.pl/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024"
       />
       <ArticleSchema
         title="Capacitor, Ionic, PWA i Expo — cross-platform mobile z web technologii 2024?"

@@ -106,8 +106,6 @@ export default function BlogInformationArchitectureCoTo() {
         canonical="https://fotz.pl/blog/information-architecture-co-to"
 
         keywords="Architektura Informacji co to jest, Architektura Informacji definicja, czym jest Architektura Informacji, Architektura Informacji przykłady, jak działa Architektura Informacji, Architektura Informacji znaczenie, Architektura Informacji przewodnik"
-
-        canonical="https://fotz.pl/blog/information-architecture-co-to"
       />
       <ArticleSchema
         title="Architektura Informacji — co to jest i jak ją projektować?"

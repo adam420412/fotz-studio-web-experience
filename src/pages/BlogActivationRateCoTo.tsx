@@ -54,8 +54,6 @@ export default function BlogActivationRateCoTo() {
         canonical="https://fotz.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
 
         keywords="Activation Rate co to jest, Activation Rate definicja, czym jest Activation Rate, Activation Rate przykłady, jak działa Activation Rate, Activation Rate znaczenie, Activation Rate przewodnik"
-
-        canonical="https://fotz.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
       />
       <ArticleSchema
         title="Activation Rate — co to jest i jak poprawić aktywację użytkowników?"

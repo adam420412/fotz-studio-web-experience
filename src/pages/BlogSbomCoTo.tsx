@@ -58,8 +58,6 @@ export default function BlogSbomCoTo() {
         canonical="https://fotz.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
 
         keywords="SBOM co to jest, SBOM definicja, czym jest SBOM, SBOM przykłady, jak działa SBOM, SBOM znaczenie, SBOM przewodnik"
-
-        canonical="https://fotz.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
       />
       <ArticleSchema
         title="SBOM — co to jest Software Bill of Materials i jak wdrożyć?"

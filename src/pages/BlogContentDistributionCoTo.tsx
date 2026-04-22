@@ -86,8 +86,6 @@ export default function BlogContentDistributionCoTo() {
         canonical="https://fotz.pl/blog/content-distribution-co-to"
 
         keywords="Content Distribution co to jest, Content Distribution definicja, czym jest Content Distribution, Content Distribution przykłady, jak działa Content Distribution, Content Distribution znaczenie, Content Distribution przewodnik"
-
-        canonical="https://fotz.pl/blog/content-distribution-co-to"
       />
       <ArticleSchema
         title="Content Distribution — co to jest i jak dystrybuować treści?"

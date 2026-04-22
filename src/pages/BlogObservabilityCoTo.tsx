@@ -54,8 +54,6 @@ export default function BlogObservabilityCoTo() {
         canonical="https://fotz.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana"
 
         keywords="Observability co to jest, Observability definicja, czym jest Observability, Observability przykłady, jak działa Observability, Observability znaczenie, Observability przewodnik"
-
-        canonical="https://fotz.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana"
       />
       <ArticleSchema
         title="Observability — co to jest, OpenTelemetry, Prometheus i Grafana?"

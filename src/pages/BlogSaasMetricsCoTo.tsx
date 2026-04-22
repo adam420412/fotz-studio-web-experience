@@ -62,8 +62,6 @@ export default function BlogSaasMetricsCoTo() {
         canonical="https://fotz.pl/blog/saas-metrics-co-to"
 
         keywords="Metryki SaaS co to jest, Metryki SaaS definicja, czym jest Metryki SaaS, Metryki SaaS startup, Metryki SaaS jak liczyć, Metryki SaaS wzór, Metryki SaaS przykłady"
-
-        canonical="https://fotz.pl/blog/saas-metrics-co-to"
       />
       <ArticleSchema
         title="Metryki SaaS — co to jest i jak je mierzyć?"

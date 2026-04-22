@@ -91,8 +91,6 @@ export default function BlogUxAuditCoTo() {
         canonical="https://fotz.pl/blog/ux-audit-co-to"
 
         keywords="Audyt UX co to jest, Audyt UX definicja, czym jest Audyt UX, Audyt UX przykłady, jak działa Audyt UX, Audyt UX znaczenie, Audyt UX przewodnik"
-
-        canonical="https://fotz.pl/blog/ux-audit-co-to"
       />
       <ArticleSchema
         title="Audyt UX — co to jest i jak go przeprowadzić?"

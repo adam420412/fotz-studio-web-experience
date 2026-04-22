@@ -78,8 +78,6 @@ export default function BlogVisualIdentityCoTo() {
         canonical="https://fotz.pl/blog/identyfikacja-wizualna-co-to"
 
         keywords="Identyfikacja wizualna co to jest, Identyfikacja wizualna definicja, czym jest Identyfikacja wizualna, Identyfikacja wizualna w marketingu, Identyfikacja wizualna przykłady, jak działa Identyfikacja wizualna, Identyfikacja wizualna strategia"
-
-        canonical="https://fotz.pl/blog/identyfikacja-wizualna-co-to"
       />
       <ArticleSchema
         title="Identyfikacja wizualna — co to jest i jak ją budować?"

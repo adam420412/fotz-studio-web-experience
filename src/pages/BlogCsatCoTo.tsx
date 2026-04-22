@@ -70,8 +70,6 @@ export default function BlogCsatCoTo() {
         canonical="https://fotz.pl/blog/csat-customer-satisfaction-score-co-to"
 
         keywords="CSAT co to jest, CSAT definicja, czym jest CSAT, CSAT przykłady, jak działa CSAT, CSAT znaczenie, CSAT przewodnik"
-
-        canonical="https://fotz.pl/blog/csat-customer-satisfaction-score-co-to"
       />
       <ArticleSchema
         title="CSAT — co to jest i jak mierzyć satysfakcję klientów?"

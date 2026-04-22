@@ -54,8 +54,6 @@ export default function BlogContainerSecCoTo() {
         canonical="https://fotz.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
 
         keywords="Container Security co to jest, Container Security jak działa, Container Security tutorial, Container Security przykład, czym jest Container Security, Container Security dokumentacja, Container Security przewodnik"
-
-        canonical="https://fotz.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
       />
       <ArticleSchema
         title="Container Security — bezpieczeństwo kontenerów, Trivy, Falco, Kubernetes RBAC?"

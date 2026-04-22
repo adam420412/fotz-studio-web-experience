@@ -47,8 +47,6 @@ export default function BlogSupabaseDeepDiveCoTo() {
         canonical="https://fotz.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
 
         keywords="Supabase co to jest, Supabase definicja, czym jest Supabase, Supabase przykłady, jak działa Supabase, Supabase znaczenie, Supabase przewodnik"
-
-        canonical="https://fotz.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
       />
       <ArticleSchema
         title="Supabase — Auth, RLS, Storage, Realtime, Edge Functions i Vector 2024?"

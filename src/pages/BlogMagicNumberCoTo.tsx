@@ -55,8 +55,6 @@ export default function BlogMagicNumberCoTo() {
         canonical="https://fotz.pl/blog/magic-number-efektywnosc-sprzedazy-saas"
 
         keywords="Magic Number co to jest, Magic Number definicja, czym jest Magic Number, Magic Number startup, Magic Number jak liczyć, Magic Number wzór, Magic Number przykłady"
-
-        canonical="https://fotz.pl/blog/magic-number-efektywnosc-sprzedazy-saas"
       />
       <ArticleSchema
         title="Magic Number — efektywność sprzedaży w SaaS"

@@ -107,8 +107,6 @@ export default function BlogNetPromoterScoreCoTo() {
         canonical="https://fotz.pl/blog/net-promoter-score-co-to"
 
         keywords="Net Promoter Score (NPS) co to jest, Net Promoter Score (NPS) definicja, czym jest Net Promoter Score (NPS), Net Promoter Score (NPS) przykłady, jak działa Net Promoter Score (NPS), Net Promoter Score (NPS) znaczenie, Net Promoter Score (NPS) przewodnik"
-
-        canonical="https://fotz.pl/blog/net-promoter-score-co-to"
       />
       <ArticleSchema
         title="Net Promoter Score (NPS) — co to jest i jak mierzyć lojalność klientów?"

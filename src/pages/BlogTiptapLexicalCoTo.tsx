@@ -47,8 +47,6 @@ export default function BlogTiptapLexicalCoTo() {
         canonical="https://fotz.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024"
 
         keywords="Tiptap, Lexical, Slate.js co to jest, Tiptap, Lexical, Slate.js jak działa, Tiptap, Lexical, Slate.js tutorial, Tiptap, Lexical, Slate.js przykład, czym jest Tiptap, Lexical, Slate.js, Tiptap, Lexical, Slate.js dokumentacja, Tiptap, Lexical, Slate.js przewodnik"
-
-        canonical="https://fotz.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024"
       />
       <ArticleSchema
         title="Tiptap, Lexical, Slate.js — Rich Text Editors React i collaborative editing 2024?"

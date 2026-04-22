@@ -68,8 +68,6 @@ export default function BlogDcfCoTo() {
         canonical="https://fotz.pl/blog/dcf-discounted-cash-flow-co-to"
 
         keywords="DCF co to jest, DCF definicja, czym jest DCF, DCF przykłady, jak działa DCF, DCF znaczenie, DCF przewodnik"
-
-        canonical="https://fotz.pl/blog/dcf-discounted-cash-flow-co-to"
       />
       <ArticleSchema
         title="DCF (Discounted Cash Flow) — co to jest i jak obliczyć wycenę?"

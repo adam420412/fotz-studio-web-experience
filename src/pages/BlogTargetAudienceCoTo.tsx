@@ -79,8 +79,6 @@ export default function BlogTargetAudienceCoTo() {
         canonical="https://fotz.pl/blog/target-audience-co-to"
 
         keywords="Target Audience co to jest, Target Audience definicja, czym jest Target Audience, Target Audience przykłady, jak działa Target Audience, Target Audience znaczenie, Target Audience przewodnik"
-
-        canonical="https://fotz.pl/blog/target-audience-co-to"
       />
       <ArticleSchema
         title="Target Audience — co to jest i jak definiować grupę docelową?"

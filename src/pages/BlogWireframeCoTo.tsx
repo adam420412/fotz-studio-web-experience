@@ -87,8 +87,6 @@ export default function BlogWireframeCoTo() {
         canonical="https://fotz.pl/blog/wireframe-co-to"
 
         keywords="Wireframe co to jest, Wireframe definicja, czym jest Wireframe, Wireframe przykłady, jak działa Wireframe, Wireframe znaczenie, Wireframe przewodnik"
-
-        canonical="https://fotz.pl/blog/wireframe-co-to"
       />
       <ArticleSchema
         title="Wireframe — co to jest i jak tworzyć szkielety UX?"

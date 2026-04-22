@@ -74,8 +74,6 @@ export default function BlogCategoryCreationCoTo() {
         canonical="https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
 
         keywords="Category Creation co to jest, Category Creation definicja, czym jest Category Creation, Category Creation przykłady, jak działa Category Creation, Category Creation znaczenie, Category Creation przewodnik"
-
-        canonical="https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
       />
       <ArticleSchema
         title="Category Creation — tworzenie kategorii rynkowej"

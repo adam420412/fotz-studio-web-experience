@@ -76,8 +76,6 @@ export default function BlogNegocjacjeSprzedazowe() {
         canonical="https://fotz.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
 
         keywords="Negocjacje sprzedażowe, Negocjacje sprzedażowe co to jest, Negocjacje sprzedażowe jak działa, Negocjacje sprzedażowe definicja, Negocjacje sprzedażowe przykłady, Negocjacje sprzedażowe poradnik, Negocjacje sprzedażowe przewodnik"
-
-        canonical="https://fotz.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
       />
       <ArticleSchema
         title="Negocjacje sprzedażowe — techniki i taktyki w B2B"

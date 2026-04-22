@@ -47,8 +47,6 @@ export default function BlogElysiaJsCoTo() {
         canonical="https://fotz.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
 
         keywords="Elysia.js, Hono i Bun 1.x co to jest, Elysia.js, Hono i Bun 1.x jak działa, Elysia.js, Hono i Bun 1.x tutorial, Elysia.js, Hono i Bun 1.x przykład, czym jest Elysia.js, Hono i Bun 1.x, Elysia.js, Hono i Bun 1.x dokumentacja, Elysia.js, Hono i Bun 1.x przewodnik"
-
-        canonical="https://fotz.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
       />
       <ArticleSchema
         title="Elysia.js, Hono i Bun 1.x — ultra-szybkie frameworki backend TypeScript 2024?"

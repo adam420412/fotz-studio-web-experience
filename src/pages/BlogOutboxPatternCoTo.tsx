@@ -47,8 +47,6 @@ export default function BlogOutboxPatternCoTo() {
         canonical="https://fotz.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring"
 
         keywords="Transactional Outbox Pattern co to jest, Transactional Outbox Pattern definicja, czym jest Transactional Outbox Pattern, Transactional Outbox Pattern przykłady, jak działa Transactional Outbox Pattern, Transactional Outbox Pattern znaczenie, Transactional Outbox Pattern przewodnik"
-
-        canonical="https://fotz.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring"
       />
       <ArticleSchema
         title="Transactional Outbox Pattern — co to jest, Debezium CDC, Inbox Pattern, Spring?"

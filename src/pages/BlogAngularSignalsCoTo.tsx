@@ -47,8 +47,6 @@ export default function BlogAngularSignalsCoTo() {
         canonical="https://fotz.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024"
 
         keywords="Angular Signals, Standalone Components, Defer co to jest, Angular Signals, Standalone Components, Defer jak działa, Angular Signals, Standalone Components, Defer tutorial, Angular Signals, Standalone Components, Defer przykład, czym jest Angular Signals, Standalone Components, Defer, Angular Signals, Standalone Components, Defer dokumentacja, Angular Signals, Standalone Components, Defer przewodnik"
-
-        canonical="https://fotz.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024"
       />
       <ArticleSchema
         title="Angular Signals, Standalone Components, Defer — Angular 17+ nowości 2024?"

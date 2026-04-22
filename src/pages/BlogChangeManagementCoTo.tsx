@@ -62,8 +62,6 @@ export default function BlogChangeManagementCoTo() {
         canonical="https://fotz.pl/blog/change-management-co-to"
 
         keywords="Change Management co to jest, Change Management definicja, czym jest Change Management, Change Management przykłady, jak działa Change Management, Change Management znaczenie, Change Management przewodnik"
-
-        canonical="https://fotz.pl/blog/change-management-co-to"
       />
       <ArticleSchema
         title="Change Management — co to jest i jak zarządzać zmianą organizacyjną?"

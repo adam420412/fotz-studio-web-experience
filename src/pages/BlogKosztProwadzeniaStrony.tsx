@@ -177,8 +177,6 @@ export default function BlogKosztProwadzeniaStrony() {
         canonical="https://fotz.pl/blog/koszt-prowadzenia-strony-internetowej"
 
         keywords="Ile kosztuje utrzymanie strony internetowej? Cennik 2025, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 co to jest, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 jak działa, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 definicja, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 przykłady, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 poradnik, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 przewodnik"
-
-        canonical="https://fotz.pl/blog/koszt-prowadzenia-strony-internetowej"
       />
       <ArticleSchema
         title="Ile kosztuje utrzymanie strony internetowej? Cennik 2025"

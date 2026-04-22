@@ -47,8 +47,6 @@ export default function BlogTrpcCoTo() {
         canonical="https://fotz.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
 
         keywords="tRPC co to jest, tRPC jak działa, tRPC tutorial, tRPC przykład, czym jest tRPC, tRPC dokumentacja, tRPC przewodnik"
-
-        canonical="https://fotz.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
       />
       <ArticleSchema
         title="tRPC — co to jest, end-to-end type safety, Next.js, TanStack Query, vs GraphQL?"

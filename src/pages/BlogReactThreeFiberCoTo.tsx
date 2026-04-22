@@ -47,8 +47,6 @@ export default function BlogReactThreeFiberCoTo() {
         canonical="https://fotz.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024"
 
         keywords="React Three Fiber, Drei i 3D w React co to jest, React Three Fiber, Drei i 3D w React jak działa, React Three Fiber, Drei i 3D w React tutorial, React Three Fiber, Drei i 3D w React przykład, czym jest React Three Fiber, Drei i 3D w React, React Three Fiber, Drei i 3D w React dokumentacja, React Three Fiber, Drei i 3D w React przewodnik"
-
-        canonical="https://fotz.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024"
       />
       <ArticleSchema
         title="React Three Fiber, Drei i 3D w React — Three.js, fizyka i WebXR 2024?"

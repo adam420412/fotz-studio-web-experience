@@ -47,8 +47,6 @@ export default function BlogAiCodingToolsCoTo() {
         canonical="https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
 
         keywords="AI coding tools 2024 co to jest, AI coding tools 2024 definicja, czym jest AI coding tools 2024, AI coding tools 2024 przykłady, jak działa AI coding tools 2024, AI coding tools 2024 znaczenie, AI coding tools 2024 przewodnik"
-
-        canonical="https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
       />
       <ArticleSchema
         title="AI coding tools 2024 — GitHub Copilot, Cursor, Windsurf, Continue.dev i Aider?"

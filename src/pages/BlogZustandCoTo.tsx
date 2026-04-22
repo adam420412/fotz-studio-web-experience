@@ -47,8 +47,6 @@ export default function BlogZustandCoTo() {
         canonical="https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
 
         keywords="Zustand, Jotai, Redux Toolkit co to jest, Zustand, Jotai, Redux Toolkit jak działa, Zustand, Jotai, Redux Toolkit tutorial, Zustand, Jotai, Redux Toolkit przykład, czym jest Zustand, Jotai, Redux Toolkit, Zustand, Jotai, Redux Toolkit dokumentacja, Zustand, Jotai, Redux Toolkit przewodnik"
-
-        canonical="https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
       />
       <ArticleSchema
         title="Zustand, Jotai, Redux Toolkit — zarządzanie stanem w React 2024?"

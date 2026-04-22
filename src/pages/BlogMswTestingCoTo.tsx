@@ -47,8 +47,6 @@ export default function BlogMswTestingCoTo() {
         canonical="https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
 
         keywords="MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact co to jest, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact definicja, czym jest MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact przykłady, jak działa MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact znaczenie, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact przewodnik"
-
-        canonical="https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
       />
       <ArticleSchema
         title="MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact?"

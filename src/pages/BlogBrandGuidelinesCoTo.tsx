@@ -90,8 +90,6 @@ export default function BlogBrandGuidelinesCoTo() {
         canonical="https://fotz.pl/blog/brand-guidelines-co-to"
 
         keywords="Brand Guidelines co to jest, Brand Guidelines definicja, czym jest Brand Guidelines, Brand Guidelines w marketingu, Brand Guidelines przykłady, jak działa Brand Guidelines, Brand Guidelines strategia"
-
-        canonical="https://fotz.pl/blog/brand-guidelines-co-to"
       />
       <ArticleSchema
         title="Brand Guidelines — co to jest i jak tworzyć wytyczne marki?"

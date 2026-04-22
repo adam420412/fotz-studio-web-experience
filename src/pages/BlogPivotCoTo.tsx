@@ -90,8 +90,6 @@ export default function BlogPivotCoTo() {
         canonical="https://fotz.pl/blog/pivot-startup-co-to"
 
         keywords="Pivot w startupie co to jest, Pivot w startupie definicja, czym jest Pivot w startupie, Pivot w startupie startup, Pivot w startupie jak liczyć, Pivot w startupie wzór, Pivot w startupie przykłady"
-
-        canonical="https://fotz.pl/blog/pivot-startup-co-to"
       />
       <ArticleSchema
         title="Pivot — co to jest i kiedy pivotować w startupie?"

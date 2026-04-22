@@ -47,8 +47,6 @@ export default function BlogStorybook8CoTo() {
         canonical="https://fotz.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024"
 
         keywords="Storybook 8 co to jest, Storybook 8 definicja, czym jest Storybook 8, Storybook 8 przykłady, jak działa Storybook 8, Storybook 8 znaczenie, Storybook 8 przewodnik"
-
-        canonical="https://fotz.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024"
       />
       <ArticleSchema
         title="Storybook 8 — CSF 3, Vitest addon, autodocs i Component-Driven Development 2024?"

@@ -47,8 +47,6 @@ export default function BlogSvelte5RunesCoTo() {
         canonical="https://fotz.pl/blog/svelte-5-runes-angular-18-19-signals-sveltekit-2-frameworki-2024"
 
         keywords="Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 co to jest, Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 jak działa, Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 tutorial, Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 przykład, czym jest Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2, Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 dokumentacja, Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 przewodnik"
-
-        canonical="https://fotz.pl/blog/svelte-5-runes-angular-18-19-signals-sveltekit-2-frameworki-2024"
       />
       <ArticleSchema
         title="Svelte 5 Runes, Angular 18/19 Signals i SvelteKit 2 — frameworki 2024?"

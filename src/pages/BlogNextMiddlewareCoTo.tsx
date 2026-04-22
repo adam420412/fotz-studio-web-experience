@@ -47,8 +47,6 @@ export default function BlogNextMiddlewareCoTo() {
         canonical="https://fotz.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024"
 
         keywords="Next.js Middleware co to jest, Next.js Middleware jak działa, Next.js Middleware tutorial, Next.js Middleware przykład, czym jest Next.js Middleware, Next.js Middleware dokumentacja, Next.js Middleware przewodnik"
-
-        canonical="https://fotz.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024"
       />
       <ArticleSchema
         title="Next.js Middleware — auth, i18n, rate limiting, A/B testing i Edge security 2024?"

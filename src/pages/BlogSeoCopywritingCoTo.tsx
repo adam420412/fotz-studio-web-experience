@@ -101,8 +101,6 @@ export default function BlogSeoCopywritingCoTo() {
         canonical="https://fotz.pl/blog/seo-copywriting-co-to"
 
         keywords="SEO Copywriting co to jest, SEO Copywriting definicja, czym jest SEO Copywriting, SEO Copywriting w marketingu, SEO Copywriting przykłady, jak działa SEO Copywriting, SEO Copywriting strategia"
-
-        canonical="https://fotz.pl/blog/seo-copywriting-co-to"
       />
       <ArticleSchema
         title="SEO Copywriting — co to jest i jak pisać pod Google?"

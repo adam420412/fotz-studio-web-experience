@@ -47,8 +47,6 @@ export default function BlogCachingStrategiesCoTo() {
         canonical="https://fotz.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
 
         keywords="Strategie cache co to jest, Strategie cache jak działa, Strategie cache tutorial, Strategie cache przykład, czym jest Strategie cache, Strategie cache dokumentacja, Strategie cache przewodnik"
-
-        canonical="https://fotz.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
       />
       <ArticleSchema
         title="Strategie cache — Cache-Aside, Write-Through, Redis, CDN, cache invalidation?"

@@ -47,8 +47,6 @@ export default function BlogAlgoliaSearchCoTo() {
         canonical="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
 
         keywords="Algolia, Typesense, Meilisearch co to jest, Algolia, Typesense, Meilisearch definicja, czym jest Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch przykłady, jak działa Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch znaczenie, Algolia, Typesense, Meilisearch przewodnik"
-
-        canonical="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
       />
       <ArticleSchema
         title="Algolia, Typesense, Meilisearch — search engine dla aplikacji web 2024?"

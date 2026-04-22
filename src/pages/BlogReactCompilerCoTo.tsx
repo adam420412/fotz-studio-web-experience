@@ -47,8 +47,6 @@ export default function BlogReactCompilerCoTo() {
         canonical="https://fotz.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024"
 
         keywords="React Compiler co to jest, React Compiler jak działa, React Compiler tutorial, React Compiler przykład, czym jest React Compiler, React Compiler dokumentacja, React Compiler przewodnik"
-
-        canonical="https://fotz.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024"
       />
       <ArticleSchema
         title="React Compiler — automatyczna memoizacja, React 19 use hook, useActionState i Server Actions 2024?"

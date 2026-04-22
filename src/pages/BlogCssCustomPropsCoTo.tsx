@@ -47,8 +47,6 @@ export default function BlogCssCustomPropsCoTo() {
         canonical="https://fotz.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
 
         keywords="CSS Custom Properties co to jest, CSS Custom Properties definicja, czym jest CSS Custom Properties, CSS Custom Properties przykłady, jak działa CSS Custom Properties, CSS Custom Properties znaczenie, CSS Custom Properties przewodnik"
-
-        canonical="https://fotz.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
       />
       <ArticleSchema
         title="CSS Custom Properties — Design Tokens, @property, Theming i Dark Mode 2024?"

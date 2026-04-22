@@ -47,8 +47,6 @@ export default function BlogAstroCoTo() {
         canonical="https://fotz.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac"
 
         keywords="Astro, SvelteKit, Remix co to jest, Astro, SvelteKit, Remix jak działa, Astro, SvelteKit, Remix tutorial, Astro, SvelteKit, Remix przykład, czym jest Astro, SvelteKit, Remix, Astro, SvelteKit, Remix dokumentacja, Astro, SvelteKit, Remix przewodnik"
-
-        canonical="https://fotz.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac"
       />
       <ArticleSchema
         title="Astro, SvelteKit, Remix — Island Architecture, co to jest, kiedy wybrać?"

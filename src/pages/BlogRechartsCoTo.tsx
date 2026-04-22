@@ -47,8 +47,6 @@ export default function BlogRechartsCoTo() {
         canonical="https://fotz.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
 
         keywords="Recharts, Nivo, Chart.js co to jest, Recharts, Nivo, Chart.js jak działa, Recharts, Nivo, Chart.js tutorial, Recharts, Nivo, Chart.js przykład, czym jest Recharts, Nivo, Chart.js, Recharts, Nivo, Chart.js dokumentacja, Recharts, Nivo, Chart.js przewodnik"
-
-        canonical="https://fotz.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
       />
       <ArticleSchema
         title="Recharts, Nivo, Chart.js — wykresy i data visualization w React 2024?"

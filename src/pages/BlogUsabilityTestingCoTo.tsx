@@ -112,8 +112,6 @@ export default function BlogUsabilityTestingCoTo() {
         canonical="https://fotz.pl/blog/usability-testing-co-to"
 
         keywords="Usability Testing co to jest, Usability Testing definicja, czym jest Usability Testing, Usability Testing przykłady, jak działa Usability Testing, Usability Testing znaczenie, Usability Testing przewodnik"
-
-        canonical="https://fotz.pl/blog/usability-testing-co-to"
       />
       <ArticleSchema
         title="Usability Testing — co to jest i jak przeprowadzać testy użyteczności?"

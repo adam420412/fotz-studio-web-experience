@@ -56,8 +56,6 @@ export default function BlogLowCodeCoTo() {
         canonical="https://fotz.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
 
         keywords="Low-Code i No-Code co to jest, Low-Code i No-Code definicja, czym jest Low-Code i No-Code, Low-Code i No-Code przykłady, jak działa Low-Code i No-Code, Low-Code i No-Code znaczenie, Low-Code i No-Code przewodnik"
-
-        canonical="https://fotz.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
       />
       <ArticleSchema
         title="Low-Code i No-Code — co to jest, Retool, Bubble, n8n, Airtable?"

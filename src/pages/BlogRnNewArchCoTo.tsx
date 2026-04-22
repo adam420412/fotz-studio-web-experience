@@ -47,8 +47,6 @@ export default function BlogRnNewArchCoTo() {
         canonical="https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
 
         keywords="React Native New Architecture co to jest, React Native New Architecture jak działa, React Native New Architecture tutorial, React Native New Architecture przykład, czym jest React Native New Architecture, React Native New Architecture dokumentacja, React Native New Architecture przewodnik"
-
-        canonical="https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
       />
       <ArticleSchema
         title="React Native New Architecture — JSI, Fabric, TurboModules, Bridgeless i Expo SDK 52?"

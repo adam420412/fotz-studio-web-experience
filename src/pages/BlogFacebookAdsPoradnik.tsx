@@ -146,8 +146,6 @@ export default function BlogFacebookAdsPoradnik() {
         canonical="https://fotz.pl/blog/facebook-ads-poradnik"
 
         keywords="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 poradnik, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 strategia, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 jak zrobić, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 marketing, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 przykłady, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 w Polsce"
-
-        canonical="https://fotz.pl/blog/facebook-ads-poradnik"
       />
       <ArticleSchema
         title="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025"

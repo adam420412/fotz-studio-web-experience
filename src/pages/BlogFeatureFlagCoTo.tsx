@@ -81,8 +81,6 @@ export default function BlogFeatureFlagCoTo() {
         canonical="https://fotz.pl/blog/feature-flags-co-to-jest-jak-stosowac"
 
         keywords="Feature Flags co to jest, Feature Flags definicja, czym jest Feature Flags, Feature Flags przykłady, jak działa Feature Flags, Feature Flags znaczenie, Feature Flags przewodnik"
-
-        canonical="https://fotz.pl/blog/feature-flags-co-to-jest-jak-stosowac"
       />
       <ArticleSchema
         title="Feature Flags — co to jest i jak stosować?"

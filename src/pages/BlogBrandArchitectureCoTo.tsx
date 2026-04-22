@@ -89,8 +89,6 @@ export default function BlogBrandArchitectureCoTo() {
         canonical="https://fotz.pl/blog/architektura-marki-co-to"
 
         keywords="Architektura Marki co to jest, Architektura Marki definicja, czym jest Architektura Marki, Architektura Marki w marketingu, Architektura Marki przykłady, jak działa Architektura Marki, Architektura Marki strategia"
-
-        canonical="https://fotz.pl/blog/architektura-marki-co-to"
       />
       <ArticleSchema
         title="Architektura Marki — co to jest i jak zarządzać portfolio marek?"

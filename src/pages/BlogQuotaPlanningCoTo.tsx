@@ -77,8 +77,6 @@ export default function BlogQuotaPlanningCoTo() {
         canonical="https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
 
         keywords="Quota Planning co to jest, Quota Planning definicja, czym jest Quota Planning, Quota Planning startup, Quota Planning jak liczyć, Quota Planning wzór, Quota Planning przykłady"
-
-        canonical="https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
       />
       <ArticleSchema
         title="Quota Planning — jak ustalać targety sprzedażowe w SaaS?"

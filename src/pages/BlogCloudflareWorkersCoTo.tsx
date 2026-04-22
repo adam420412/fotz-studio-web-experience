@@ -47,8 +47,6 @@ export default function BlogCloudflareWorkersCoTo() {
         canonical="https://fotz.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
 
         keywords="Cloudflare Workers co to jest, Cloudflare Workers definicja, czym jest Cloudflare Workers, Cloudflare Workers przykłady, jak działa Cloudflare Workers, Cloudflare Workers znaczenie, Cloudflare Workers przewodnik"
-
-        canonical="https://fotz.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
       />
       <ArticleSchema
         title="Cloudflare Workers — KV, D1, R2, Durable Objects i Workers AI na edge 2024?"

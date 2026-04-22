@@ -54,8 +54,6 @@ export default function BlogMlopsCoTo() {
         canonical="https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest"
 
         keywords="MLOps co to jest, MLOps definicja, czym jest MLOps, MLOps przykłady, jak działa MLOps, MLOps znaczenie, MLOps przewodnik"
-
-        canonical="https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest"
       />
       <ArticleSchema
         title="MLOps — co to jest i jak wdrożyć Machine Learning Operations?"

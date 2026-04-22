@@ -78,8 +78,6 @@ export default function BlogSrePracticeCoTo() {
         canonical="https://fotz.pl/blog/sre-site-reliability-engineering-co-to-jest"
 
         keywords="SRE co to jest, SRE definicja, czym jest SRE, SRE przykłady, jak działa SRE, SRE znaczenie, SRE przewodnik"
-
-        canonical="https://fotz.pl/blog/sre-site-reliability-engineering-co-to-jest"
       />
       <ArticleSchema
         title="SRE — co to jest Site Reliability Engineering?"

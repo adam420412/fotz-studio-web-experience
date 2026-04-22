@@ -47,8 +47,6 @@ export default function BlogI18nCoTo() {
         canonical="https://fotz.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
 
         keywords="i18n internacjonalizacja co to jest, i18n internacjonalizacja jak działa, i18n internacjonalizacja tutorial, i18n internacjonalizacja przykład, czym jest i18n internacjonalizacja, i18n internacjonalizacja dokumentacja, i18n internacjonalizacja przewodnik"
-
-        canonical="https://fotz.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
       />
       <ArticleSchema
         title="i18n internacjonalizacja — next-intl, react-i18next, Paraglide Next.js 2024?"

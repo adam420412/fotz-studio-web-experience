@@ -84,8 +84,6 @@ export default function BlogDataDrivenMarketingCoTo() {
         canonical="https://fotz.pl/blog/data-driven-marketing-co-to"
 
         keywords="Data-Driven Marketing co to jest, Data-Driven Marketing definicja, czym jest Data-Driven Marketing, Data-Driven Marketing w marketingu, Data-Driven Marketing przykłady, jak działa Data-Driven Marketing, Data-Driven Marketing strategia"
-
-        canonical="https://fotz.pl/blog/data-driven-marketing-co-to"
       />
       <ArticleSchema
         title="Data-Driven Marketing — co to jest i jak wdrożyć marketing oparty na danych?"

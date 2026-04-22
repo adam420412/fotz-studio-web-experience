@@ -47,8 +47,6 @@ export default function BlogTanstackFormCoTo() {
         canonical="https://fotz.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024"
 
         keywords="TanStack Form vs React Hook Form co to jest, TanStack Form vs React Hook Form jak działa, TanStack Form vs React Hook Form tutorial, TanStack Form vs React Hook Form przykład, czym jest TanStack Form vs React Hook Form, TanStack Form vs React Hook Form dokumentacja, TanStack Form vs React Hook Form przewodnik"
-
-        canonical="https://fotz.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024"
       />
       <ArticleSchema
         title="TanStack Form vs React Hook Form — walidacja, Server Actions i Next.js 2024?"

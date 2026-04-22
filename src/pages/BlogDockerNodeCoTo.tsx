@@ -47,8 +47,6 @@ export default function BlogDockerNodeCoTo() {
         canonical="https://fotz.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
 
         keywords="Docker dla Node.js i Next.js co to jest, Docker dla Node.js i Next.js jak działa, Docker dla Node.js i Next.js tutorial, Docker dla Node.js i Next.js przykład, czym jest Docker dla Node.js i Next.js, Docker dla Node.js i Next.js dokumentacja, Docker dla Node.js i Next.js przewodnik"
-
-        canonical="https://fotz.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
       />
       <ArticleSchema
         title="Docker dla Node.js i Next.js — Dockerfile, Docker Compose, GitHub Actions CI/CD 2024?"

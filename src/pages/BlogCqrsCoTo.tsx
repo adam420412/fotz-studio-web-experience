@@ -68,8 +68,6 @@ export default function BlogCqrsCoTo() {
         canonical="https://fotz.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
 
         keywords="CQRS co to jest, CQRS definicja, czym jest CQRS, CQRS przykłady, jak działa CQRS, CQRS znaczenie, CQRS przewodnik"
-
-        canonical="https://fotz.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
       />
       <ArticleSchema
         title="CQRS — co to jest Command Query Responsibility Segregation?"

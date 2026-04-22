@@ -55,8 +55,6 @@ export default function BlogChurnPredictionCoTo() {
         canonical="https://fotz.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
 
         keywords="Churn Prediction co to jest, Churn Prediction definicja, czym jest Churn Prediction, Churn Prediction startup, Churn Prediction jak liczyć, Churn Prediction wzór, Churn Prediction przykłady"
-
-        canonical="https://fotz.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
       />
       <ArticleSchema
         title="Churn Prediction — jak przewidywać i zapobiegać churnu klientów SaaS?"

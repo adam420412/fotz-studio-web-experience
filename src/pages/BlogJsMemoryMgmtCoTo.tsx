@@ -47,8 +47,6 @@ export default function BlogJsMemoryMgmtCoTo() {
         canonical="https://fotz.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
 
         keywords="JavaScript Memory Management co to jest, JavaScript Memory Management jak działa, JavaScript Memory Management tutorial, JavaScript Memory Management przykład, czym jest JavaScript Memory Management, JavaScript Memory Management dokumentacja, JavaScript Memory Management przewodnik"
-
-        canonical="https://fotz.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
       />
       <ArticleSchema
         title="JavaScript Memory Management — WeakMap, WeakRef, GC i memory leaks w React 2024?"

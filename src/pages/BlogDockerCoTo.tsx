@@ -79,8 +79,6 @@ export default function BlogDockerCoTo() {
         canonical="https://fotz.pl/blog/docker-co-to-jest"
 
         keywords="Docker co to jest, Docker jak działa, Docker tutorial, Docker przykład, czym jest Docker, Docker dokumentacja, Docker przewodnik"
-
-        canonical="https://fotz.pl/blog/docker-co-to-jest"
       />
       <ArticleSchema
         title="Docker — co to jest i jak działa konteneryzacja?"

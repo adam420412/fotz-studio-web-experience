@@ -47,8 +47,6 @@ export default function BlogGraphQLApolloCoTo() {
         canonical="https://fotz.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024"
 
         keywords="GraphQL, Apollo Server, Apollo Client, URQL co to jest, GraphQL, Apollo Server, Apollo Client, URQL jak działa, GraphQL, Apollo Server, Apollo Client, URQL tutorial, GraphQL, Apollo Server, Apollo Client, URQL przykład, czym jest GraphQL, Apollo Server, Apollo Client, URQL, GraphQL, Apollo Server, Apollo Client, URQL dokumentacja, GraphQL, Apollo Server, Apollo Client, URQL przewodnik"
-
-        canonical="https://fotz.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024"
       />
       <ArticleSchema
         title="GraphQL, Apollo Server, Apollo Client, URQL — kompletny przewodnik 2024?"

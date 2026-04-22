@@ -109,8 +109,6 @@ export default function BlogCustomerRetentionCoTo() {
         canonical="https://fotz.pl/blog/customer-retention-co-to"
 
         keywords="Customer Retention co to jest, Customer Retention definicja, czym jest Customer Retention, Customer Retention przykłady, jak działa Customer Retention, Customer Retention znaczenie, Customer Retention przewodnik"
-
-        canonical="https://fotz.pl/blog/customer-retention-co-to"
       />
       <ArticleSchema
         title="Customer Retention — co to jest i jak ją mierzyć?"

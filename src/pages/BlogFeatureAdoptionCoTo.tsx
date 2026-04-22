@@ -54,8 +54,6 @@ export default function BlogFeatureAdoptionCoTo() {
         canonical="https://fotz.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
 
         keywords="Feature Adoption co to jest, Feature Adoption definicja, czym jest Feature Adoption, Feature Adoption przykłady, jak działa Feature Adoption, Feature Adoption znaczenie, Feature Adoption przewodnik"
-
-        canonical="https://fotz.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
       />
       <ArticleSchema
         title="Feature Adoption — co to jest i jak zwiększyć adopcję funkcji?"

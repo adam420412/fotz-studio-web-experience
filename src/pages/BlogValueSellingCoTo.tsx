@@ -72,8 +72,6 @@ export default function BlogValueSellingCoTo() {
         canonical="https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc"
 
         keywords="Value Selling co to jest, Value Selling definicja, czym jest Value Selling, Value Selling przykłady, jak działa Value Selling, Value Selling znaczenie, Value Selling przewodnik"
-
-        canonical="https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc"
       />
       <ArticleSchema
         title="Value Selling — co to jest i jak sprzedawać przez wartość?"

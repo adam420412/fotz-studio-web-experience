@@ -47,8 +47,6 @@ export default function BlogQwikCoTo() {
         canonical="https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
 
         keywords="Qwik framework co to jest, Qwik framework jak działa, Qwik framework tutorial, Qwik framework przykład, czym jest Qwik framework, Qwik framework dokumentacja, Qwik framework przewodnik"
-
-        canonical="https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
       />
       <ArticleSchema
         title="Qwik framework — Resumability, useSignal, Qwik City i zerowa hydration TypeScript 2024?"

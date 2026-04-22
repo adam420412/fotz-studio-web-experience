@@ -47,8 +47,6 @@ export default function BlogModernCssCoTo() {
         canonical="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
 
         keywords="Modern CSS co to jest, Modern CSS definicja, czym jest Modern CSS, Modern CSS przykłady, jak działa Modern CSS, Modern CSS znaczenie, Modern CSS przewodnik"
-
-        canonical="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
       />
       <ArticleSchema
         title="Modern CSS — Container Queries, :has(), @layer, View Transitions i Scroll Animations 2024?"

@@ -121,8 +121,6 @@ export default function BlogCommunityLedGrowthCoTo() {
         canonical="https://fotz.pl/blog/community-led-growth-co-to"
 
         keywords="Community-Led Growth co to jest, Community-Led Growth definicja, czym jest Community-Led Growth, Community-Led Growth przykłady, jak działa Community-Led Growth, Community-Led Growth znaczenie, Community-Led Growth przewodnik"
-
-        canonical="https://fotz.pl/blog/community-led-growth-co-to"
       />
       <ArticleSchema
         title="Community-Led Growth — co to jest i jak budować wzrost przez społeczność?"

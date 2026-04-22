@@ -87,8 +87,6 @@ export default function BlogAccountBasedMarketingCoTo() {
         canonical="https://fotz.pl/blog/account-based-marketing-co-to"
 
         keywords="Account-Based Marketing (ABM) co to jest, Account-Based Marketing (ABM) definicja, czym jest Account-Based Marketing (ABM), Account-Based Marketing (ABM) w marketingu, Account-Based Marketing (ABM) przykłady, jak działa Account-Based Marketing (ABM), Account-Based Marketing (ABM) strategia"
-
-        canonical="https://fotz.pl/blog/account-based-marketing-co-to"
       />
       <ArticleSchema
         title="Account-Based Marketing (ABM) — co to jest i jak wdrożyć?"

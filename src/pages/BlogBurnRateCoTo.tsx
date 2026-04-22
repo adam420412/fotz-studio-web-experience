@@ -84,8 +84,6 @@ export default function BlogBurnRateCoTo() {
         canonical="https://fotz.pl/blog/burn-rate-runway-co-to"
 
         keywords="Burn Rate i Runway co to jest, Burn Rate i Runway definicja, czym jest Burn Rate i Runway, Burn Rate i Runway startup, Burn Rate i Runway jak liczyć, Burn Rate i Runway wzór, Burn Rate i Runway przykłady"
-
-        canonical="https://fotz.pl/blog/burn-rate-runway-co-to"
       />
       <ArticleSchema
         title="Burn Rate i Runway — co to jest i jak obliczać?"

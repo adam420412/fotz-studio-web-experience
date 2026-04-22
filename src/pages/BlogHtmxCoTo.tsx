@@ -47,8 +47,6 @@ export default function BlogHtmxCoTo() {
         canonical="https://fotz.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
 
         keywords="HTMX co to jest, HTMX jak działa, HTMX tutorial, HTMX przykład, czym jest HTMX, HTMX dokumentacja, HTMX przewodnik"
-
-        canonical="https://fotz.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
       />
       <ArticleSchema
         title="HTMX — hypermedia, hx-get, hx-swap, OOB swaps i HTMX vs React 2024?"

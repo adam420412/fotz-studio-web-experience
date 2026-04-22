@@ -54,8 +54,6 @@ export default function BlogDataGovernanceCoTo() {
         canonical="https://fotz.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
 
         keywords="Data Governance co to jest, Data Governance definicja, czym jest Data Governance, Data Governance przykłady, jak działa Data Governance, Data Governance znaczenie, Data Governance przewodnik"
-
-        canonical="https://fotz.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
       />
       <ArticleSchema
         title="Data Governance — co to jest i jak wdrożyć ład danych?"

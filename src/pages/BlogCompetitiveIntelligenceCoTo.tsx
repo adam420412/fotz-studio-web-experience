@@ -109,8 +109,6 @@ export default function BlogCompetitiveIntelligenceCoTo() {
         canonical="https://fotz.pl/blog/competitive-intelligence-co-to"
 
         keywords="Competitive Intelligence co to jest, Competitive Intelligence definicja, czym jest Competitive Intelligence, Competitive Intelligence przykłady, jak działa Competitive Intelligence, Competitive Intelligence znaczenie, Competitive Intelligence przewodnik"
-
-        canonical="https://fotz.pl/blog/competitive-intelligence-co-to"
       />
       <ArticleSchema
         title="Competitive Intelligence — co to jest i jak stosować?"

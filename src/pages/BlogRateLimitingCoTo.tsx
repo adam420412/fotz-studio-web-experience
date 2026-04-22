@@ -47,8 +47,6 @@ export default function BlogRateLimitingCoTo() {
         canonical="https://fotz.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
 
         keywords="Rate Limiting co to jest, Rate Limiting jak działa, Rate Limiting tutorial, Rate Limiting przykład, czym jest Rate Limiting, Rate Limiting dokumentacja, Rate Limiting przewodnik"
-
-        canonical="https://fotz.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
       />
       <ArticleSchema
         title="Rate Limiting — co to jest, Token Bucket, Redis, Nginx, Kong, AWS API Gateway?"

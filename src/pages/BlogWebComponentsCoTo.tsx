@@ -47,8 +47,6 @@ export default function BlogWebComponentsCoTo() {
         canonical="https://fotz.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024"
 
         keywords="Web Components, Lit, Stencil i Micro-frontends co to jest, Web Components, Lit, Stencil i Micro-frontends definicja, czym jest Web Components, Lit, Stencil i Micro-frontends, Web Components, Lit, Stencil i Micro-frontends przykłady, jak działa Web Components, Lit, Stencil i Micro-frontends, Web Components, Lit, Stencil i Micro-frontends znaczenie, Web Components, Lit, Stencil i Micro-frontends przewodnik"
-
-        canonical="https://fotz.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024"
       />
       <ArticleSchema
         title="Web Components, Lit, Stencil i Micro-frontends — natywne komponenty przeglądarki 2024?"

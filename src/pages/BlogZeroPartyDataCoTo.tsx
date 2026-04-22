@@ -111,8 +111,6 @@ export default function BlogZeroPartyDataCoTo() {
         canonical="https://fotz.pl/blog/zero-party-data-co-to"
 
         keywords="Zero-Party Data co to jest, Zero-Party Data definicja, czym jest Zero-Party Data, Zero-Party Data przykłady, jak działa Zero-Party Data, Zero-Party Data znaczenie, Zero-Party Data przewodnik"
-
-        canonical="https://fotz.pl/blog/zero-party-data-co-to"
       />
       <ArticleSchema
         title="Zero-Party Data — co to jest i jak zbierać?"

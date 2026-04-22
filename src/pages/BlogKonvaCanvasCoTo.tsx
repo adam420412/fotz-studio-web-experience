@@ -47,8 +47,6 @@ export default function BlogKonvaCanvasCoTo() {
         canonical="https://fotz.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
 
         keywords="Konva.js, Fabric.js, html2canvas co to jest, Konva.js, Fabric.js, html2canvas jak działa, Konva.js, Fabric.js, html2canvas tutorial, Konva.js, Fabric.js, html2canvas przykład, czym jest Konva.js, Fabric.js, html2canvas, Konva.js, Fabric.js, html2canvas dokumentacja, Konva.js, Fabric.js, html2canvas przewodnik"
-
-        canonical="https://fotz.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
       />
       <ArticleSchema
         title="Konva.js, Fabric.js, html2canvas — Canvas i screenshot w React 2024?"

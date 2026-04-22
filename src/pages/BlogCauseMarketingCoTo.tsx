@@ -89,8 +89,6 @@ export default function BlogCauseMarketingCoTo() {
         canonical="https://fotz.pl/blog/cause-marketing-co-to"
 
         keywords="Cause Marketing co to jest, Cause Marketing definicja, czym jest Cause Marketing, Cause Marketing w marketingu, Cause Marketing przykłady, jak działa Cause Marketing, Cause Marketing strategia"
-
-        canonical="https://fotz.pl/blog/cause-marketing-co-to"
       />
       <ArticleSchema
         title="Cause Marketing — co to jest i jak działa?"

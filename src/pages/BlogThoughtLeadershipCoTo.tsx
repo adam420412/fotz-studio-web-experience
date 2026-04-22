@@ -107,8 +107,6 @@ export default function BlogThoughtLeadershipCoTo() {
         canonical="https://fotz.pl/blog/thought-leadership-co-to"
 
         keywords="Thought Leadership co to jest, Thought Leadership definicja, czym jest Thought Leadership, Thought Leadership w marketingu, Thought Leadership przykłady, jak działa Thought Leadership, Thought Leadership strategia"
-
-        canonical="https://fotz.pl/blog/thought-leadership-co-to"
       />
       <ArticleSchema
         title="Thought Leadership — co to jest i jak budować autorytet?"
