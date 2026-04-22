@@ -42,7 +42,7 @@ const CaseStudyFPS = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "FPS Poznań", url: "https://fotz.pl/realizacje/fps-poznan" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="FPS Fabryka Pojazdów Szynowych Poznań - Case Study"
         description="Realizacja strony internetowej dla FPS Poznań (Cegielski) - producenta pojazdów szynowych."

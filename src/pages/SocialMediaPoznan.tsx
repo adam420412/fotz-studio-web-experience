@@ -119,13 +119,11 @@ export default function SocialMediaPoznan() {
         provider="Fotz Studio"
         areaServed="Poznań"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Social Media", url: "https://fotz.pl/social-media/obsluga" },
           { name: "Social Media Poznań", url: "https://fotz.pl/social-media/poznan" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}

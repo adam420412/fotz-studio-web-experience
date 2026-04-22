@@ -86,10 +86,10 @@ export default function BlogDomenaCoToJest() {
         dateModified="2025-03-18"
         url="https://fotz.pl/blog/domena-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -206,8 +206,6 @@ export default function BlogDomenaCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zakładasz stronę internetową?"
-          subheading="Doradzimy w wyborze domeny i stworzymy stronę od A do Z."
         />
       </Layout>
     </>

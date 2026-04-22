@@ -47,13 +47,11 @@ export default function BlogPsychologiaCen() {
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Psychologia cen", url: "https://fotz.pl/blog/psychologia-cen" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

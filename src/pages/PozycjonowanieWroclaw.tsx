@@ -94,25 +94,20 @@ const PozycjonowanieWroclaw = () => {
         title="Pozycjonowanie Wrocław — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron internetowych Wrocław. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building dla firm z Wrocławia. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/wroclaw"
-        ogTitle="Pozycjonowanie Wrocław — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Wrocławiu. Audyt SEO, optymalizacja i link building dla firm z Wrocławia."
         keywords="pozycjonowanie wrocław, agencja seo wrocław, seo wrocław, pozycjonowanie stron wrocław, seo dla firm wrocław, seo dolny śląsk, audyt seo wrocław, pozycjonowanie lokalne wrocław"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Wrocław"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Wrocławia. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        url="https://fotz.pl/uslugi/pozycjonowanie/wroclaw"
         provider="Fotz Studio"
         areaServed="Wrocław"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Wrocław", url: "https://fotz.pl/uslugi/pozycjonowanie/wroclaw" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

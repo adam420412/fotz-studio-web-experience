@@ -49,8 +49,6 @@ export default function BlogRetargetingPoradnik() {
         title="Retargeting reklamy i remarketing Google - Kompletny poradnik…"
         description="Jak opanowac retargeting? Przewodnik po pixelach, segmentacji, kreatywach i budzetowaniu. Sredni ROAS 300-500% dla e-commerce."
         canonical="https://fotz.pl/blog/retargeting-reklamy-poradnik"
-        ogTitle="Retargeting reklamy - Jak powiekszac konwersje"
-        ogDescription="Kompletny poradnik retargetingu. Pixele, segmentacja, ROAS, privacy i GDPR."
 
         keywords="Retargeting reklamy i remarketing Google - Kompletny poradnik 2025, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 poradnik, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 strategia, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 jak zrobić, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 marketing, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 przykłady, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 w Polsce"
       />

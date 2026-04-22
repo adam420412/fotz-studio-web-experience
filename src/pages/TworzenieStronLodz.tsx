@@ -217,10 +217,10 @@ export default function TworzenieStronLodz() {
         description="Profesjonalne tworzenie stron internetowych dla firm z Łodzi"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -531,8 +531,6 @@ export default function TworzenieStronLodz() {
 
         {/* CTA */}
         <ContactSection
-          heading="Gotów na profesjonalną stronę dla Twojej firmy w Łodzi?"
-          subheading="Specjalista z doświadczeniem łódzkich projektów czeka na Twoją wiadomość. Konsultacja jest bezpłatna, bez zobowiązań."
         />
       </Layout>
     </>

@@ -50,7 +50,7 @@ const CaseStudyStagePlan = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Stage Plan", url: "https://fotz.pl/realizacje/stageplan" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Stage Plan - Technika Sceniczna - Case Study"
         description="Realizacja strony internetowej dla Stage Plan - profesjonalna technika sceniczna."

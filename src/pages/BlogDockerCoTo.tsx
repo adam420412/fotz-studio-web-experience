@@ -89,23 +89,19 @@ export default function BlogDockerCoTo() {
         datePublished="2024-01-24"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Docker", url: "https://fotz.pl/blog/docker-co-to-jest" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs
-            items={[
-              { name: "Blog", href: "/blog" },
-              { name: "Docker" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Blog", url: "/blog" },
+              { name: "Docker", url: "https://fotz.pl" },
+            ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Docker — co to jest i jak działa konteneryzacja?
           </h1>

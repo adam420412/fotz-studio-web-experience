@@ -57,23 +57,19 @@ export default function BlogStorybook8CoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Storybook 8 i CDD", url: "https://fotz.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-pink-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Storybook 8 i CDD", href: "/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Storybook 8 i CDD", url: "/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-rose-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               React / Storybook / Design Systems

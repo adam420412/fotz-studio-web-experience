@@ -43,7 +43,7 @@ export default function BlogChatGPTWMarketingu() {
 
         keywords="ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025, ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025 poradnik, ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025 strategia, ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025 jak zrobić, ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025 marketing, ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025 przykłady, ChatGPT w marketingu - Jak AI zmienia strategię marketingową 2025 w Polsce"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <ArticleSchema
         title="ChatGPT w marketingu - Jak AI zmienia strategię marketingową"
         description="Praktyczny przewodnik po wykorzystaniu ChatGPT i narzędzi AI w marketingu, copywritingu, social mediach i kampaniach reklamowych."
@@ -52,7 +52,7 @@ export default function BlogChatGPTWMarketingu() {
         dateModified="2025-07-10"
         image="https://fotz.pl/og-chatgpt-marketing.jpg"
       />
-      <FAQSchema faqs={faqs} />
+      <FAQSchema items={faqs} />
 
       <Layout>
         <article className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-12 md:py-20">

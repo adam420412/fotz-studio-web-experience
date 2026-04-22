@@ -284,13 +284,11 @@ const SocialMedia = () => {
         areaServed="Polska"
       />
       
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Social Media", url: "https://fotz.pl/social-media/obsluga" },
-        ]}
-      />
+        ]}/>
       
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}

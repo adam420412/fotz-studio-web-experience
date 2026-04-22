@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useState } from 'react';
 import { Navigate, Link } from 'react-router-dom';
 import { SEOHead } from '@/components/seo/SEOHead';
-import { motion } from 'framer-motion';
 import { useAdminAuth } from '@/hooks/useAdminAuth';
 import { useAdminMaterials, MaterialFormData, AcademyMaterial } from '@/hooks/useAdminMaterials';
 import { useAdminSubscriptions, Subscription } from '@/hooks/useAdminSubscriptions';

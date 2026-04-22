@@ -75,23 +75,19 @@ export default function BlogSlaCoTo() {
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "SLA, SLO, SLI", url: "https://fotz.pl/blog/sla-slo-sli-co-to" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs
-            items={[
-              { name: "Blog", href: "/blog" },
-              { name: "SLA, SLO, SLI" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Blog", url: "/blog" },
+              { name: "SLA, SLO, SLI", url: "https://fotz.pl" },
+            ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             SLA, SLO, SLI — co to jest i jak zarządzać niezawodnością?
           </h1>

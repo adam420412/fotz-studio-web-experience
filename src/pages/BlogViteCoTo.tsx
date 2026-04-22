@@ -57,23 +57,19 @@ export default function BlogViteCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Vite, esbuild, Turbopack", url: "https://fotz.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-orange-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Vite, esbuild, Turbopack", href: "/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Vite, esbuild, Turbopack", url: "/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-yellow-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Frontend / Build Tools

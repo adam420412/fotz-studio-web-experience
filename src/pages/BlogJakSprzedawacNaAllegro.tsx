@@ -78,10 +78,10 @@ export default function BlogJakSprzedawacNaAllegro() {
         dateModified="2025-04-09"
         url="https://fotz.pl/blog/jak-sprzedawac-na-allegro"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -181,8 +181,6 @@ export default function BlogJakSprzedawacNaAllegro() {
         </FadeInView>
 
         <ContactSection
-          heading="Rozwijaj sprzedaż online — Allegro i własny sklep"
-          subheading="Strategia multichannel, sklep e-commerce i marketing — kompleksowo."
         />
       </Layout>
     </>

@@ -66,23 +66,19 @@ export default function BlogQuicHttp3CoTo() {
         datePublished="2024-04-07"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "QUIC i HTTP/3", url: "https://fotz.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-blue-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "QUIC i HTTP/3", href: "/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "QUIC i HTTP/3", url: "/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-cyan-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Web Performance / Protokoły

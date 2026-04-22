@@ -100,10 +100,10 @@ export default function BlogRevenueOperationsCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/revenue-operations-revops-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -195,8 +195,6 @@ export default function BlogRevenueOperationsCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Wspieramy skalowanie procesów B2B sprzedaży i marketingu"
-          subheading="Strony, content i automatyzacje — budujemy narzędzia które wspierają Twój revenue engine."
         />
       </Layout>
     </>

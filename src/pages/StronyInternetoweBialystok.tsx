@@ -91,7 +91,7 @@ const StronyInternetoweBialystok = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Białystok" description="Profesjonalne tworzenie stron internetowych dla firm z Białegostoku." provider="FOTZ Studio" areaServed="Białystok" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Białystok", url: "https://fotz.pl/uslugi/strony-internetowe/bialystok" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Białystok", url: "https://fotz.pl/uslugi/strony-internetowe/bialystok" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

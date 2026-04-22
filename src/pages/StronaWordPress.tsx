@@ -131,10 +131,10 @@ export default function StronaWordPress() {
         description="Tworzenie profesjonalnych stron internetowych na WordPress — responsywne, szybkie, zoptymalizowane pod SEO"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
@@ -297,8 +297,6 @@ export default function StronaWordPress() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbudujmy Twoją stronę WordPress"
-          subheading="Bezpłatna wycena i konsultacja. Odpowiadamy w ciągu 24 godzin."
         />
       </Layout>
     </>

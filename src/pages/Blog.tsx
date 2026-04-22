@@ -437,12 +437,10 @@ export default function Blog() {
         canonical="https://fotz.pl/blog"
         keywords="blog marketingowy, poradniki marketing, SEO, social media, Google Ads"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" }
-        ]}
-      />
+        ]}/>
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background">
         <div className="container-wide">

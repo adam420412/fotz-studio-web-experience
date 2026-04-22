@@ -86,10 +86,10 @@ export default function BlogCoToJestHosting() {
         dateModified="2025-03-25"
         url="https://fotz.pl/blog/co-to-jest-hosting"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -231,8 +231,6 @@ export default function BlogCoToJestHosting() {
         </FadeInView>
 
         <ContactSection
-          heading="Masz pytania o hosting lub stronę?"
-          subheading="Doradzimy najlepsze rozwiązanie i wdrożymy stronę od A do Z."
         />
       </Layout>
     </>

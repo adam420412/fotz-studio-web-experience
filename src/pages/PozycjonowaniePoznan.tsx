@@ -95,25 +95,20 @@ const PozycjonowaniePoznan = () => {
         title="Pozycjonowanie Poznań — Lokalna Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron internetowych Poznań. Fotz Studio — lokalna agencja SEO z Poznania. Audyt, optymalizacja i link building. Znamy rynek poznański od…"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/poznan"
-        ogTitle="Pozycjonowanie Poznań — Fotz Studio Agencja SEO z Poznania"
-        ogDescription="Skuteczne pozycjonowanie stron w Poznaniu. Audyt SEO, optymalizacja i link building dla firm z Poznania od lokalnej agencji."
         keywords="pozycjonowanie poznań, agencja seo poznań, seo poznań, pozycjonowanie stron poznań, seo dla firm poznań, seo wielkopolska, audyt seo poznań, pozycjonowanie lokalne poznań"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Poznań"
         description="Lokalna agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Poznania. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        url="https://fotz.pl/uslugi/pozycjonowanie/poznan"
         provider="Fotz Studio"
         areaServed="Poznań"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Poznań", url: "https://fotz.pl/uslugi/pozycjonowanie/poznan" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

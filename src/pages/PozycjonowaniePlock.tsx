@@ -90,24 +90,19 @@ const PozycjonowaniePlock = () => {
         title="Pozycjonowanie Płock - Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Płock. Agencja SEO Fotz Studio - audyt SEO, optymalizacja i link building dla firm z Płocku. Bezpłatny audyt SEO!"
         canonical="https://fotz.pl/pozycjonowanie/plock"
-        ogTitle="Pozycjonowanie Płock - Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Płocku. Audyt SEO, optymalizacja i link building dla firm płockich - handel, gastronomia, usługi, przemysł."
         keywords="pozycjonowanie płock, agencja seo płock, seo płock, pozycjonowanie stron płock, seo dla firm płock, seo mazowsze, pozycjonowanie lokalne płock"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Płock"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Płocku. Audyt SEO, optymalizacja on-page, link building, pozycjonowanie lokalne dla handlu, gastronomii, usług i przemysłu."
-        url="https://fotz.pl/pozycjonowanie/plock"
         provider="Fotz Studio"
         areaServed="Płock"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
           { name: "Pozycjonowanie", url: "/pozycjonowanie" },
           { name: "Płock", url: "/pozycjonowanie/plock" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

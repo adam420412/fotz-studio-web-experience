@@ -75,25 +75,21 @@ export default function TikTokAdsKrakow() {
         areaServed="Krakow"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
           { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
           { name: "TikTok Ads Kraków", url: "https://fotz.pl/performance-marketing/tiktok-ads/krakow" },
-        ]}
-      />
+        ]}/>
 
       <FAQSchema items={faqItems} />
 
-      <PageBreadcrumbs
-        items={[
-          { label: "Strona główna", path: "/" },
-          { label: "Kampanie reklamowe", path: "/performance-marketing" },
-          { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
-          { label: "Kraków", path: "/performance-marketing/tiktok-ads/krakow" },
-        ]}
-      />
+      <PageBreadcrumbs items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Kampanie reklamowe", path: "/performance-marketing" },
+          { name: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
+          { name: "Kraków", path: "/performance-marketing/tiktok-ads/krakow" },
+        ]}/>
 
       {/* Hero */}
       <FadeInView>

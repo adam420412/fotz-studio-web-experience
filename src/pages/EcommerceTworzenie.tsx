@@ -170,13 +170,11 @@ export default function EcommerceTworzenie() {
         name="Tworzenie sklepów internetowych e-commerce"
         description="Kompleksowe tworzenie sklepów internetowych - wybór platformy, projekt UX/UI, integracje płatności i dostaw, automatyzacja AI."
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "E-commerce", url: "https://fotz.pl/uslugi/strony-internetowe/ecommerce" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

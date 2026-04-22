@@ -79,10 +79,10 @@ export default function BlogStorytellingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/storytelling-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -167,8 +167,6 @@ export default function BlogStorytellingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zaprojektujemy strone ktora opowiada Twoja historię"
-          subheading="Copywriting, design i UX oparty na storytellingu — zamieniamy odwiedzajacych w klientow przez sile narracji."
         />
       </Layout>
     </>

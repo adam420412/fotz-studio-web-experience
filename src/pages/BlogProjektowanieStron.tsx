@@ -212,10 +212,10 @@ export default function BlogProjektowanieStron() {
         dateModified="2025-04-12"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950">
@@ -532,8 +532,6 @@ export default function BlogProjektowanieStron() {
 
         {/* CTA */}
         <ContactSection
-          heading="Szukasz agencji do projektowania Twojej strony?"
-          subheading="Poznamy Twoje potrzeby i zaproponujemy strategie. Bez zobowiązań, bez ciśnienia sprzedażowego."
         />
       </Layout>
     </>

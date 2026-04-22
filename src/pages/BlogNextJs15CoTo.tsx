@@ -57,23 +57,19 @@ export default function BlogNextJs15CoTo() {
         datePublished="2024-10-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Next.js 15", url: "https://fotz.pl/blog/nextjs-15-turbopack-async-params-after-caching-migracja-v14-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-violet-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Next.js 15", href: "/blog/nextjs-15-turbopack-async-params-after-caching-migracja-v14-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Next.js 15", url: "/blog/nextjs-15-turbopack-async-params-after-caching-migracja-v14-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-indigo-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Next.js / React / 2024

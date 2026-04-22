@@ -66,23 +66,19 @@ export default function BlogGrpcCoTo() {
         datePublished="2024-03-29"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "gRPC", url: "https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-indigo-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "gRPC", href: "/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "gRPC", url: "/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-cyan-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Backend / Mikroserwisy

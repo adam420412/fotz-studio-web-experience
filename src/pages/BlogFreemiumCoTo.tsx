@@ -77,10 +77,10 @@ export default function BlogFreemiumCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/freemium-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -164,8 +164,6 @@ export default function BlogFreemiumCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj strone ktora konwertuje darmowych uzytkownikow na platacych"
-          subheading="Landing page i strona produktu zoptymalizowane pod rejestracje i upgrade — dla produktow freemium i SaaS."
         />
       </Layout>
     </>

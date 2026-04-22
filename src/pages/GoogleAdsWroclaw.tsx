@@ -59,26 +59,22 @@ export default function GoogleAdsWroclaw() {
           areaServed="Wroclaw"
         />
 
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
             { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
             { name: "Google Ads Wrocław", url: "https://fotz.pl/performance-marketing/google-ads/wroclaw" },
-          ]}
-        />
+          ]}/>
 
         <FAQSchema items={faqItems} />
 
         {/* Breadcrumbs */}
-        <PageBreadcrumbs
-          items={[
-            { label: "Strona główna", path: "/" },
-            { label: "Kampanie reklamowe", path: "/performance-marketing" },
-            { label: "Google Ads", path: "/performance-marketing/google-ads" },
-            { label: "Wrocław", path: "/performance-marketing/google-ads/wroclaw" },
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Strona główna", path: "/" },
+            { name: "Kampanie reklamowe", path: "/performance-marketing" },
+            { name: "Google Ads", path: "/performance-marketing/google-ads" },
+            { name: "Wrocław", path: "/performance-marketing/google-ads/wroclaw" },
+          ]}/>
 
         {/* Hero Section */}
         <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 overflow-hidden">

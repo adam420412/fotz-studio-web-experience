@@ -57,23 +57,19 @@ export default function BlogCapacitorIonicCoTo() {
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Cross-platform mobile 2024", url: "https://fotz.pl/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Cross-platform mobile 2024", href: "/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Cross-platform mobile 2024", url: "/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-teal-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Mobile / Capacitor / PWA / Cross-platform

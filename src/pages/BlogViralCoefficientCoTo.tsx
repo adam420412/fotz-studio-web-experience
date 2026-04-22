@@ -87,23 +87,19 @@ export default function BlogViralCoefficientCoTo() {
         datePublished="2024-02-06"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Viral Coefficient", url: "https://fotz.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Viral Coefficient", href: "/blog/viral-coefficient-wspolczynnik-viralnosci-produktu" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Viral Coefficient", url: "/blog/viral-coefficient-wspolczynnik-viralnosci-produktu" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-pink-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Growth Metrics

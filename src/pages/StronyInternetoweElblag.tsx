@@ -84,7 +84,7 @@ const StronyInternetoweElblag = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Elbląg" description="Tworzenie stron internetowych dla firm z Elbląga." provider="FOTZ Studio" areaServed="Elbląg" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Elbląg", url: "https://fotz.pl/uslugi/strony-internetowe/elblag" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Elbląg", url: "https://fotz.pl/uslugi/strony-internetowe/elblag" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

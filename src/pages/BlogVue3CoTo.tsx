@@ -57,23 +57,19 @@ export default function BlogVue3CoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Vue 3 i Nuxt 3", url: "https://fotz.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-emerald-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Vue 3 i Nuxt 3", href: "/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Vue 3 i Nuxt 3", url: "/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Vue / Frontend

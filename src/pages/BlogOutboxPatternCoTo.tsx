@@ -57,23 +57,19 @@ export default function BlogOutboxPatternCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Transactional Outbox", url: "https://fotz.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Transactional Outbox", href: "/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Transactional Outbox", url: "/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-orange-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Microservices / Data Consistency

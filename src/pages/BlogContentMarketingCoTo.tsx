@@ -65,10 +65,10 @@ export default function BlogContentMarketingCoTo() {
         dateModified="2025-02-15"
         url="https://fotz.pl/blog/content-marketing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -228,8 +228,6 @@ export default function BlogContentMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij content marketing dla swojej firmy"
-          subheading="Strategia, produkcja treści, SEO i dystrybucja. Zaczynamy od audytu i planu."
         />
       </Layout>
     </>

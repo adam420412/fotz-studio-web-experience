@@ -105,24 +105,20 @@ export default function BlogAbmCoToJest() {
         datePublished="2024-02-03"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "ABM co to jest", url: "https://fotz.pl/blog/abm-account-based-marketing-co-to" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "ABM co to jest", href: "/blog/abm-account-based-marketing-co-to" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "ABM co to jest", url: "/blog/abm-account-based-marketing-co-to" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-fuchsia-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               B2B Marketing

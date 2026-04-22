@@ -85,13 +85,11 @@ const CaseStudyGierki = () => {
         canonical="https://fotz.pl/realizacje/gierki"
         keywords="case study facebook ads, realizacja kampanii facebook, meta ads case study"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Realizacje", url: "https://fotz.pl/realizacje" },
           { name: "Gierki", url: "https://fotz.pl/realizacje/gierki" }
-        ]}
-      />
+        ]}/>
       <ArticleSchema 
         title="Gierki Activity Bar - Strona z systemem rezerwacji"
         description="Case study: strona internetowa z systemem rezerwacji online dla centrum rozrywki w Poznaniu"

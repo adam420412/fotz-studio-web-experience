@@ -57,23 +57,19 @@ export default function BlogReactPerfCoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "React Performance Optimization", url: "https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-orange-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "React Performance Optimization", href: "/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "React Performance Optimization", url: "/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-red-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               React / Performance

@@ -57,23 +57,19 @@ export default function BlogRnNewArchCoTo() {
         datePublished="2024-06-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "RN New Architecture", url: "https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "RN New Architecture", href: "/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "RN New Architecture", url: "/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-sky-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               React Native / Mobile / New Architecture

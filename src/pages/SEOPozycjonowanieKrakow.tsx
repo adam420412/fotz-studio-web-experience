@@ -41,7 +41,7 @@ const SEOPozycjonowanieKrakow = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "SEO", url: "https://fotz.pl/seo" },
         { name: "Pozycjonowanie Kraków", url: "https://fotz.pl/seo/pozycjonowanie-krakow" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

@@ -77,10 +77,10 @@ export default function BlogMVPCoToJest() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/mvp-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -193,8 +193,6 @@ export default function BlogMVPCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj MVP swojego produktu cyfrowego"
-          subheading="Strona, landing page lub aplikacja webowa — gotowa na walidację rynku."
         />
       </Layout>
     </>

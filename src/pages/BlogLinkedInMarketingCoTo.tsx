@@ -78,10 +78,10 @@ export default function BlogLinkedInMarketingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/linkedin-marketing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -188,8 +188,6 @@ export default function BlogLinkedInMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj silną markę B2B na LinkedIn"
-          subheading="Strategia treści, LinkedIn Ads i strona marketingowa — kompleksowe wsparcie B2B."
         />
       </Layout>
     </>

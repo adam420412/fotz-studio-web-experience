@@ -15,14 +15,12 @@ export default function FacebookAdsRzeszow() {
         canonical="https://fotz.pl/performance-marketing/facebook-ads/rzeszow"
         keywords="facebook ads rzeszow, meta ads rzeszow, reklamy facebook rzeszow, agencja facebook ads rzeszow, kampanie facebook rzeszow, instagram ads rzeszow, facebook ads dla firm rzeszow, reklama na facebooku rzeszow, meta ads agencja rzeszow, facebook ads cennik rzeszow"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Fotz.pl", url: "https://fotz.pl" },
           { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Rzeszów" }
-        ]}
-      />
+          { name: "Rzeszów", url: "https://fotz.pl" }
+        ]}/>
       <ServiceSchema
         name="Facebook Ads Rzeszów"
         description="Profesjonalne zarządzanie kampaniami reklamowymi Facebook Ads dla firm z Rzeszowa"
@@ -30,14 +28,12 @@ export default function FacebookAdsRzeszow() {
       />
 
       <Layout>
-        <PageBreadcrumbs
-          items={[
-            { label: "Home", path: "/" },
-            { label: "Performance Marketing", path: "/performance-marketing" },
-            { label: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { label: "Rzeszów" }
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Home", path: "/" },
+            { name: "Performance Marketing", path: "/performance-marketing" },
+            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Rzeszów", url: "https://fotz.pl" }
+          ]}/>
 
         {/* HERO SECTION */}
         <section className="relative bg-gradient-to-br from-blue-50 to-indigo-50 py-16 md:py-24 overflow-hidden">

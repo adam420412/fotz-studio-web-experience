@@ -302,13 +302,11 @@ export default function KalkulatorCen() {
         canonical="https://fotz.pl/kalkulator-cen"
         keywords="kalkulator cen usług marketingowych, ile kosztuje marketing, koszt SEO, koszt strony internetowej, koszt kampanii Google Ads, budżet marketingowy kalkulator"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Kalkulator cen", url: "https://fotz.pl/kalkulator-cen" }
-        ]}
-      />
+        ]}/>
       <ServiceSchema
         name="Kalkulator cen usług marketingowych"
         description="Interaktywny kalkulator wyceny usług marketingowych - strony WWW, social media, kampanie reklamowe."

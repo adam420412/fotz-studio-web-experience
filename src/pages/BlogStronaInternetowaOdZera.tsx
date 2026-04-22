@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { Calendar, User, Clock, Share2, CheckCircle2, ArrowRight } from 'lucide-react';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { ContactSection } from '@/components/sections/ContactSection';

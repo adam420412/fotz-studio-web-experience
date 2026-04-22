@@ -147,12 +147,10 @@ export default function Kontakt() {
         canonical="https://fotz.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kontakt", url: "https://fotz.pl/kontakt" }
-        ]}
-      />
+        ]}/>
       <LocalBusinessSchema />
       {/* Hero */}
       <section className="pt-24 sm:pt-32 md:pt-40 pb-12 sm:pb-16 md:pb-20 section-padding bg-background">

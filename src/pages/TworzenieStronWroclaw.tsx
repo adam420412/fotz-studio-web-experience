@@ -216,10 +216,10 @@ export default function TworzenieStronWroclaw() {
         description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -528,8 +528,6 @@ export default function TworzenieStronWroclaw() {
 
         {/* CTA */}
         <ContactSection
-          heading="Gotów na profesjonalną stronę?"
-          subheading="Specjalista z doświadczeniem wrocławskich tech projektów czeka na Twoją wiadomość. Zapraszamy na rozmowę - online lub w biurze."
         />
       </Layout>
     </>

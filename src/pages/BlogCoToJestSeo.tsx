@@ -47,8 +47,6 @@ const BlogCoToJestSeo = () => {
         title="Co to jest SEO? Pozycjonowanie stron — przewodnik dla firm"
         description="Co to jest SEO i jak działa pozycjonowanie? Kompletny przewodnik po SEO dla właścicieli firm — on-page, off-page, SEO techniczne, link building i efekty…"
         canonical="https://fotz.pl/blog/co-to-jest-seo"
-        ogTitle="Co to jest SEO? Przewodnik po pozycjonowaniu stron"
-        ogDescription="Kompleksowy przewodnik po SEO dla firm. Dowiedz się, jak działa pozycjonowanie, ile kosztuje i kiedy przynosi efekty."
 
         keywords="co to jest, definicja, czym jest, w marketingu, przykłady, jak działa, strategia"
       />
@@ -59,13 +57,11 @@ const BlogCoToJestSeo = () => {
         datePublished="2026-03-15"
         url="https://fotz.pl/blog/co-to-jest-seo"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Co to jest SEO?", url: "https://fotz.pl/blog/co-to-jest-seo" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       <article className="max-w-4xl mx-auto px-4 py-12 pt-28">

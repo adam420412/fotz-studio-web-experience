@@ -90,23 +90,19 @@ export default function BlogHeadcountPlanningCoTo() {
         datePublished="2024-02-14"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Headcount Planning", url: "https://fotz.pl/blog/headcount-planning-planowanie-zatrudnienia-startup" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Headcount Planning", href: "/blog/headcount-planning-planowanie-zatrudnienia-startup" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Headcount Planning", url: "/blog/headcount-planning-planowanie-zatrudnienia-startup" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-teal-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Finance &amp; Operations

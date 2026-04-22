@@ -188,10 +188,10 @@ export default function SklepInternetowyVsMarketplace() {
         dateModified="2025-04-12"
         url="https://fotz.pl/blog/sklep-internetowy-vs-marketplace"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-20 bg-gradient-to-br from-gray-900 via-yellow-900 to-gray-900">
@@ -579,8 +579,6 @@ export default function SklepInternetowyVsMarketplace() {
         </FadeInView>
 
         <ContactSection
-          heading="Który kanał wybrać do Twojego biznesu?"
-          subheading="Pomożemy Ci stworzyć optymalną strategię sprzedaży online. Bezpłatna analiza i rekomendacje."
         />
       </Layout>
     </>

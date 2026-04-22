@@ -21,14 +21,13 @@ export default function GoogleAdsLublin() {
         name="Agencja Google Ads Lublin"
         description="Profesjonalne kampanie Google Ads dla firm z Lublina i regionu Lubelszczyzny. Zwiększamy widoczność w wyszukiwarce i generujemy jakościowe leady."
         areaServed="Lublin"
-        priceRange="400-5000"
       />
       <BreadcrumbSchema items={[
         { name: 'Strona główna', url: 'https://fotz.pl' },
         { name: 'Google Ads', url: 'https://fotz.pl/performance-marketing/google-ads' },
         { name: 'Lublin', url: 'https://fotz.pl/performance-marketing/google-ads/lublin' }
-      ]} />
-      <FAQSchema faqs={[
+      ]}/>
+      <FAQSchema items={[
         {
           question: "Czy Google Ads sprawdzi się dla mojej firmy z Lublina?",
           answer: "Tak! Google Ads to uniwersalne narzędzie, które działa dla e-commerce, usług profesjonalnych, edukacji i handlu detalicznego. Firma z Lublina dzięki Google Ads osiąga klientów zarówno lokalnie, jak i z całej Polski."

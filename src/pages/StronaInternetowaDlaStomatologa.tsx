@@ -72,10 +72,10 @@ export default function StronaInternetowaDlaStomatologa() {
         description="Tworzenie stron internetowych dla gabinetów stomatologicznych — rezerwacje online, SEO lokalne, galeria, cennik, RODO"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-sky-950 to-slate-950">
@@ -187,8 +187,6 @@ export default function StronaInternetowaDlaStomatologa() {
         </FadeInView>
 
         <ContactSection
-          heading="Stwórzmy stronę dla Twojego gabinetu"
-          subheading="Bezpłatna wycena i konsultacja. Pokażemy co warto, a co zbędne."
         />
       </Layout>
     </>

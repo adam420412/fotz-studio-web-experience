@@ -237,24 +237,19 @@ const FotografiaProduktowa = () => {
         title="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów"
         description="Profesjonalna fotografia produktowa dla e-commerce i marek. Fotz Studio — zdjęcia produktów, sesje packshot, fotografia białe tło. Zamów wycenę!"
         canonical="https://fotz.pl/uslugi/fotografia-produktowa"
-        ogTitle="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów"
-        ogDescription="Sesje fotograficzne produktów dla Allegro, Amazon, Shopify. Packshot, 360°, retusz — od 600 zł. Poznań i cała Polska."
         keywords="fotografia produktowa, zdjęcia produktowe, packshot, fotografia produktowa cennik, zdjęcia reklamowe produktów, fotograf produktowy, zdjęcia packshot, sesja produktowa, fotografia e-commerce, zdjęcia do sklepu internetowego, studio fotograficzne, ile kosztuje fotografia produktowa"
       />
       <ServiceSchema
         name="Fotografia produktowa"
         description="Profesjonalne zdjęcia produktów dla e-commerce, katalogów i materiałów marketingowych. Fotz Studio oferuje sesje packshot, fotografię lifestylową, zdjęcia 360° i retusz."
-        url="https://fotz.pl/uslugi/fotografia-produktowa"
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Fotografia produktowa", url: "https://fotz.pl/uslugi/fotografia-produktowa" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

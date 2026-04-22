@@ -112,10 +112,10 @@ export default function BlogJakPozycjonowacStrone() {
         dateModified="2025-04-01"
         url="https://fotz.pl/blog/jak-pozycjonowac-strone"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -220,8 +220,6 @@ export default function BlogJakPozycjonowacStrone() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij pojawiać się w TOP Google"
-          subheading="Wdrożymy strategię SEO dopasowaną do Twojej branży i budżetu."
         />
       </Layout>
     </>

@@ -1,4 +1,5 @@
 import { SEOHead } from "@/components/seo/SEOHead";
+import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
@@ -192,24 +193,20 @@ export default function BlogLandAndExpandCoTo() {
         datePublished="2024-01-25"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Land and Expand", url: "https://fotz.pl/blog/land-and-expand-strategia" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Land and Expand", href: "/blog/land-and-expand-strategia" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Land and Expand", url: "/blog/land-and-expand-strategia" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-indigo-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Strategia SaaS

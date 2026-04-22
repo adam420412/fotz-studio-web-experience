@@ -58,13 +58,11 @@ const BlogEmailMarketingAutomation = () => {
         dateModified="2025-04-12"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Email marketing automation", url: "https://fotz.pl/blog/email-marketing-automation" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

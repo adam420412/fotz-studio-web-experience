@@ -30,9 +30,9 @@ export default function ProjektStronyInternetowej() {
         description="Profesjonalny projekt strony internetowej z indywidualnym designem, responsywnym layoutem i optymalizacją konwersji. Mobile-first approach."
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero Section */}
         <motion.section
@@ -316,8 +316,6 @@ export default function ProjektStronyInternetowej() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Zamów projekt strony"
-          subheading="Bezpłatna konsultacja z designerem. Pokażemy Ci możliwości i cennik."
         />
       </Layout>
     </>

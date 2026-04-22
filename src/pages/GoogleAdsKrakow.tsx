@@ -59,26 +59,22 @@ export default function GoogleAdsKrakow() {
           areaServed="Krakow"
         />
 
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
             { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
             { name: "Google Ads Kraków", url: "https://fotz.pl/performance-marketing/google-ads/krakow" },
-          ]}
-        />
+          ]}/>
 
         <FAQSchema items={faqItems} />
 
         {/* Breadcrumbs */}
-        <PageBreadcrumbs
-          items={[
-            { label: "Strona główna", path: "/" },
-            { label: "Kampanie reklamowe", path: "/performance-marketing" },
-            { label: "Google Ads", path: "/performance-marketing/google-ads" },
-            { label: "Kraków", path: "/performance-marketing/google-ads/krakow" },
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Strona główna", path: "/" },
+            { name: "Kampanie reklamowe", path: "/performance-marketing" },
+            { name: "Google Ads", path: "/performance-marketing/google-ads" },
+            { name: "Kraków", path: "/performance-marketing/google-ads/krakow" },
+          ]}/>
 
         {/* Hero Section */}
         <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 overflow-hidden">

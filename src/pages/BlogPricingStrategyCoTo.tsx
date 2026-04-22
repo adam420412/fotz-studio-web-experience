@@ -109,10 +109,10 @@ export default function BlogPricingStrategyCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/pricing-strategy-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -192,8 +192,6 @@ export default function BlogPricingStrategyCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Pomożemy zbudować strategię cenową i stronę która sprzedaje"
-          subheading="Pricing pages, landing pages i kampanie — prezentujemy wartość Twojego produktu w sposób który konwertuje."
         />
       </Layout>
     </>

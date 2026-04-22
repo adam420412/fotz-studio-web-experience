@@ -46,13 +46,11 @@ const CaseStudyLauvjah = () => {
         canonical="https://fotz.pl/realizacje/lauvjah"
         keywords="case study e-commerce, realizacja sklepu internetowego, seo e-commerce case study"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Realizacje", url: "https://fotz.pl/realizacje" },
           { name: "Lauvjah", url: "https://fotz.pl/realizacje/lauvjah" }
-        ]}
-      />
+        ]}/>
       <ArticleSchema 
         title="Lauvjah - Strona dla firmy transportowej"
         description="Case study: strona z prezentacją floty 343+ zestawów Euro6 dla firmy TSL"

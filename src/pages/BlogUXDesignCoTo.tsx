@@ -77,10 +77,10 @@ export default function BlogUXDesignCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/ux-design-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -191,8 +191,6 @@ export default function BlogUXDesignCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zaprojektujemy stronę z dobrym UX i wysoką konwersją"
-          subheading="Research, wireframes, design — wszystko skupione na celu użytkownika i Twoim wyniku biznesowym."
         />
       </Layout>
     </>

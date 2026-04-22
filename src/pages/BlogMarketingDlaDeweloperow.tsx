@@ -74,7 +74,7 @@ export default function BlogMarketingDlaDeweloperow() {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Blog", url: "https://fotz.pl/blog" },
         { name: "Marketing dla deweloperów", url: "https://fotz.pl/blog/marketing-dla-deweloperow" }
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <Layout>

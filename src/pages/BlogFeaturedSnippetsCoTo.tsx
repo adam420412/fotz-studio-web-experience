@@ -80,10 +80,10 @@ export default function BlogFeaturedSnippetsCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/featured-snippets-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -174,8 +174,6 @@ export default function BlogFeaturedSnippetsCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zdobądź pozycję 0 w Google dla swoich słów kluczowych"
-          subheading="Optymalizacja treści, struktury i Schema Markup pod Featured Snippets i top 3."
         />
       </Layout>
     </>

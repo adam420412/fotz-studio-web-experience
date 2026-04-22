@@ -112,24 +112,20 @@ export default function BlogRuleOf40CoTo() {
         datePublished="2024-01-31"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Rule of 40", url: "https://fotz.pl/blog/rule-of-40-co-to-jest" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Rule of 40", href: "/blog/rule-of-40-co-to-jest" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Rule of 40", url: "/blog/rule-of-40-co-to-jest" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Finanse SaaS

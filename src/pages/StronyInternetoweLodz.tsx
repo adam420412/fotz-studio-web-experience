@@ -94,7 +94,7 @@ const StronyInternetoweLodz = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Łódź" description="Profesjonalne tworzenie stron internetowych dla firm z Łodzi." provider="FOTZ Studio" areaServed="Łódź" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Łódź", url: "https://fotz.pl/uslugi/strony-internetowe/lodz" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Łódź", url: "https://fotz.pl/uslugi/strony-internetowe/lodz" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

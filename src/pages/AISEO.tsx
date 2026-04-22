@@ -39,7 +39,7 @@ const AISEO = () => {
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "AI SEO", url: "https://fotz.pl/ai-seo" }
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

@@ -66,23 +66,19 @@ export default function BlogKeyAccountManagement() {
         datePublished="2024-02-16"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Key Account Management", url: "https://fotz.pl/blog/key-account-management-kam-co-to-jest" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Key Account Management", href: "/blog/key-account-management-kam-co-to-jest" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Key Account Management", url: "/blog/key-account-management-kam-co-to-jest" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-amber-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Enterprise Sales

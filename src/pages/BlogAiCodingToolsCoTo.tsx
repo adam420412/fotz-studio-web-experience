@@ -57,23 +57,19 @@ export default function BlogAiCodingToolsCoTo() {
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "AI Coding Tools 2024", url: "https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-sky-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "AI Coding Tools 2024", href: "/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "AI Coding Tools 2024", url: "/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-cyan-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               AI / Developer Tools / Productivity

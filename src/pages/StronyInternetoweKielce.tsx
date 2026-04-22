@@ -47,13 +47,11 @@ export default function StronyInternetoweKielce() {
         areaServed="Kielce"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Strony internetowe", url: "https://fotz.pl/strony-internetowe" },
           { name: "Kielce", url: "https://fotz.pl/strony-internetowe/kielce" }
-        ]}
-      />
+        ]}/>
 
       <FAQSchema items={faqs} />
 

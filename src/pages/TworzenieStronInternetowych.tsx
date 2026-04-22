@@ -5,7 +5,6 @@ import { FadeInView } from '@/components/FadeInView';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { Layout } from '@/components/layout/Layout';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   Palette,
   Smartphone,
@@ -297,23 +296,19 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
         areaServed="Polska"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: 'Strona główna', url: 'https://fotz.pl' },
           { name: 'Usługi', url: 'https://fotz.pl/uslugi' },
           { name: 'Tworzenie stron internetowych', url: 'https://fotz.pl/uslugi/tworzenie-stron-internetowych' },
-        ]}
-      />
+        ]}/>
 
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
-        <PageBreadcrumbs
-          items={[
-            { label: 'Usługi', href: '/uslugi' },
-            { label: 'Tworzenie stron internetowych' },
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: 'Usługi', url: '/uslugi' },
+            { name: 'Tworzenie stron internetowych', url: "https://fotz.pl" },
+          ]}/>
 
         {/* Hero Section */}
         <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-40 pb-20">

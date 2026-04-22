@@ -32,9 +32,9 @@ export default function BlogJakSprzedawacWInternecie() {
         author="fotz.pl"
         datePublished="2025-04-11"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero Section */}
         <motion.section
@@ -464,8 +464,6 @@ export default function BlogJakSprzedawacWInternecie() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Potrzebujesz sklepu internetowego?"
-          subheading="Tworzymy sklepy gotowe do sprzedaży. Bezpłatna konsultacja e-commerce."
         />
       </Layout>
     </>

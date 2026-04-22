@@ -48,13 +48,11 @@ export default function BlogCopywritingLanding() {
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Copywriting Landing Page", url: "https://fotz.pl/content-marketing/copywriting-landing" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

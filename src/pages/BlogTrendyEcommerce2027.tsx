@@ -80,9 +80,9 @@ const BlogTrendyEcommerce2027 = () => {
         image="https://fotz.pl/og-trendy-ecommerce-2027.jpg"
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
-      <FAQSchema faqs={faqItems} />
+      <FAQSchema items={faqItems} />
 
       <Layout>
         <article className="max-w-4xl mx-auto py-12 px-4 md:px-6 lg:px-8">

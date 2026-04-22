@@ -98,12 +98,10 @@ export default function AgencjaKreaTywnaPoznan() {
         provider="Fotz Studio"
         areaServed="Poznań"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Agencja Kreatywna Poznań", url: "https://fotz.pl/agencja-kreatywna-poznan" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 
       {/* Hero */}

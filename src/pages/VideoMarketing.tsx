@@ -234,24 +234,19 @@ const VideoMarketing = () => {
         title="Video Marketing — Produkcja Filmów Reklamowych | Fotz Studio"
         description="Video marketing dla firm — produkcja filmów reklamowych, animacje, reels, video e-commerce. Fotz Studio Poznań i cała Polska. Zamów wycenę!"
         canonical="https://fotz.pl/uslugi/video-marketing"
-        ogTitle="Video Marketing — Produkcja Filmów Reklamowych | Fotz Studio"
-        ogDescription="Profesjonalna produkcja video marketing — filmy reklamowe, reels, animacje. Optymalizacja pod Instagram, TikTok, YouTube. Od 2000 zł."
         keywords="video marketing, marketing wideo, reklamy wideo, video content marketing, filmy marketingowe, video marketing dla firm"
       />
       <ServiceSchema
         name="Video marketing — produkcja filmów reklamowych"
         description="Profesjonalna produkcja video marketingu dla firm. Filmy reklamowe, reels, animacje, video e-commerce. Optymalizacja pod wszystkie platformy."
-        url="https://fotz.pl/uslugi/video-marketing"
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Video marketing", url: "https://fotz.pl/uslugi/video-marketing" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

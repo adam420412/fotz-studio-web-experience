@@ -77,10 +77,10 @@ export default function BlogInfluencerMarketingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/influencer-marketing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -169,8 +169,6 @@ export default function BlogInfluencerMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Stwórz landing page do kampanii influencer marketingowej"
-          subheading="Strony z UTM tracking i kodami rabatowymi — mierz dokładnie ROI każdej współpracy z influencerem."
         />
       </Layout>
     </>

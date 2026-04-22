@@ -72,10 +72,10 @@ export default function StronaInternetowaDlaPrawnika() {
         description="Tworzenie stron internetowych dla prawników, adwokatów i kancelarii — SEO lokalne, blog prawniczy, formularz, prezentacja specjalizacji"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -187,8 +187,6 @@ export default function StronaInternetowaDlaPrawnika() {
         </FadeInView>
 
         <ContactSection
-          heading="Stwórzmy stronę dla Twojej kancelarii"
-          subheading="Bezpłatna wycena i konsultacja — powiemy co warto zainwestować."
         />
       </Layout>
     </>

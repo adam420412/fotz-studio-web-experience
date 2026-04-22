@@ -108,10 +108,10 @@ export default function BlogSalesFunnelCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/sales-funnel-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -208,8 +208,6 @@ export default function BlogSalesFunnelCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbudujemy lejek sprzedażowy który konwertuje"
-          subheading="Strony, reklamy i content marketing — kompleksowa obsługa każdego etapu lejka sprzedażowego B2B i B2C."
         />
       </Layout>
     </>

@@ -164,14 +164,12 @@ export default function SklepyInternetoweKrakow() {
         provider="Fotz Studio"
         areaServed="Kraków"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Sklepy internetowe", url: "https://fotz.pl/uslugi/sklepy-internetowe" },
           { name: "Kraków", url: "https://fotz.pl/uslugi/sklepy-internetowe/krakow" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

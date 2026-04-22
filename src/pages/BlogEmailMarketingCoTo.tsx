@@ -112,10 +112,10 @@ export default function BlogEmailMarketingCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/email-marketing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -220,8 +220,6 @@ export default function BlogEmailMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Wdrożymy email marketing dla Twojego sklepu lub biznesu"
-          subheading="Automatyzacje, segmentacja i kampanie — email marketing który buduje relacje i generuje sprzedaż."
         />
       </Layout>
     </>

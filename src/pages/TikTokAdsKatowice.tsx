@@ -213,17 +213,17 @@ export default function TikTokAdsKatowice() {
         keywords="tiktok ads katowice, agencja tiktok ads katowice, kampanie tiktok katowice, reklamy tiktok katowice, tiktok ads dla firm katowice, tiktok marketing śląsk"
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <ServiceSchema
         name="TikTok Ads Katowice"
         description={description}
         areaServed="Katowice"
         provider="Fotz.pl"
       />
-      <FAQSchema faqItems={faqItems} />
+      <FAQSchema items={faqItems} />
 
       <div className="min-h-screen">
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero Section */}
         <FadeInView className="relative py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">

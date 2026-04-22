@@ -57,23 +57,19 @@ export default function BlogAccessibilityA11yCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Dostępność web a11y", url: "https://fotz.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-orange-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Dostępność web a11y", href: "/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Dostępność web a11y", url: "/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-amber-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Frontend / Accessibility

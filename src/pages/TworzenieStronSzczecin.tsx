@@ -211,10 +211,10 @@ export default function TworzenieStronSzczecin() {
         description="Profesjonalne tworzenie stron internetowych dla firm ze Szczecina i województwa zachodniopomorskiego"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -494,8 +494,6 @@ export default function TworzenieStronSzczecin() {
         </FadeInView>
 
         <ContactSection
-          heading="Zamów stronę internetową w Szczecinie"
-          subheading="Bezpłatna konsultacja. Wycena bez zobowiązań. Strona gotowa na czas."
         />
       </Layout>
     </>

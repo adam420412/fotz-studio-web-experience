@@ -230,13 +230,11 @@ export default function GoogleAdsLodz() {
         provider="Fotz Studio"
         areaServed="Lodz"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
           { name: "Google Ads Łódź", url: "https://fotz.pl/performance-marketing/google-ads/lodz" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}
@@ -247,13 +245,11 @@ export default function GoogleAdsLodz() {
         <div className="container px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-4">
-              <PageBreadcrumbs
-                items={[
-                  { label: "Home", href: "/" },
-                  { label: "Performance Marketing", href: "/performance-marketing" },
-                  { label: "Google Ads Łódź", href: "/performance-marketing/google-ads/lodz" }
-                ]}
-              />
+              <PageBreadcrumbs items={[
+                  { name: "Home", url: "/" },
+                  { name: "Performance Marketing", url: "/performance-marketing" },
+                  { name: "Google Ads Łódź", url: "/performance-marketing/google-ads/lodz" }
+                ]}/>
             </div>
 
             <div className="mt-8 mb-4">

@@ -71,10 +71,10 @@ export default function AgencjaSEOLublin() {
         description="Pozycjonowanie stron internetowych dla firm z Lublina — lokalne i ogólnopolskie SEO, audyt, optymalizacja, linkbuilding"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950">
@@ -191,8 +191,6 @@ export default function AgencjaSEOLublin() {
         </FadeInView>
 
         <ContactSection
-          heading="Pozycjonuj firmę w Lublinie"
-          subheading="Bezpłatny audyt SEO i plan działań dla Twojej firmy z Lublina."
         />
       </Layout>
     </>

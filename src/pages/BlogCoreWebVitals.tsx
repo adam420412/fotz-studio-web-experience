@@ -100,10 +100,10 @@ export default function BlogCoreWebVitals() {
         dateModified="2025-04-08"
         url="https://fotz.pl/blog/core-web-vitals-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -206,8 +206,6 @@ export default function BlogCoreWebVitals() {
         </FadeInView>
 
         <ContactSection
-          heading="Popraw Core Web Vitals i wspiął się w Google"
-          subheading="Audyt techniczny i optymalizacja szybkości strony — LCP, INP, CLS."
         />
       </Layout>
     </>

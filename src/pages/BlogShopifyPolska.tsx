@@ -75,10 +75,10 @@ export default function BlogShopifyPolska() {
         dateModified="2025-03-15"
         url="https://fotz.pl/blog/shopify-polska"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -232,8 +232,6 @@ export default function BlogShopifyPolska() {
         </FadeInView>
 
         <ContactSection
-          heading="Zakładasz sklep internetowy?"
-          subheading="Pomożemy wybrać właściwą platformę i uruchomić sklep który sprzedaje."
         />
       </Layout>
     </>

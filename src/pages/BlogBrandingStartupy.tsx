@@ -61,13 +61,11 @@ export default function BlogBrandingStartupy() {
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Branding dla startupów", url: "https://fotz.pl/blog/branding-dla-startupow" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       <article className="pt-32 pb-20 bg-background">

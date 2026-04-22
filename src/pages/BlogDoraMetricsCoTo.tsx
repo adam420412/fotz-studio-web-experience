@@ -96,23 +96,19 @@ export default function BlogDoraMetricsCoTo() {
         datePublished="2024-03-25"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "DORA Metrics", url: "https://fotz.pl/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "DORA Metrics", href: "/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "DORA Metrics", url: "/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               DevOps / Engineering

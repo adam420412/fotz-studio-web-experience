@@ -167,13 +167,11 @@ export default function ContentMarketing() {
         name="Content Marketing - Marketing Treści"
         description="Kompleksowe usługi content marketingu - strategia, tworzenie wartościowych treści, dystrybucja i analiza efektów kampanii SEO."
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Content Marketing", url: "https://fotz.pl/content-marketing/strategia" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

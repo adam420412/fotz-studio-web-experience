@@ -104,13 +104,11 @@ export default function AgencjaSEOPoznan() {
         provider="Fotz Studio"
         areaServed="Poznań"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "SEO", url: "https://fotz.pl/seo/pozycjonowanie" },
           { name: "Agencja SEO Poznań", url: "https://fotz.pl/agencja-seo-poznan" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 
       {/* Hero */}

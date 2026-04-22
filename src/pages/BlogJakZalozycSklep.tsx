@@ -381,8 +381,6 @@ export default function BlogJakZalozycSklep() {
 
         {/* CTA */}
         <ContactSection
-          heading="Chcesz profesjonalny sklep internetowy?"
-          subheading="Nasza agencja tworzy sklepy WooCommerce, Shopify i Shoper z pełną obsługą. Konsultacja bezpłatna."
         />
       </Layout>
     </>

@@ -57,23 +57,19 @@ export default function BlogClickhouseCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "ClickHouse", url: "https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-orange-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "ClickHouse", href: "/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "ClickHouse", url: "/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-yellow-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Analytics / Database

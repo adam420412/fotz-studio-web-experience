@@ -159,13 +159,11 @@ const AgencjaGraficzna = () => {
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Agencja Graficzna", url: "https://fotz.pl/agencja-graficzna" },
-        ]}
-      />
+        ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />

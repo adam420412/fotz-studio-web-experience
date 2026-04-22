@@ -185,10 +185,10 @@ export default function BlogSEOEcommercePoradnik() {
         dateModified="2025-04-12"
         url="https://fotz.pl/blog/seo-ecommerce-poradnik"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950">

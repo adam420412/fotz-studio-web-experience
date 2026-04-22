@@ -78,10 +78,10 @@ export default function BlogRetargetingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/retargeting-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -177,8 +177,6 @@ export default function BlogRetargetingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zoptymalizuj kampanie retargetingowe i zwiększ ROAS"
-          subheading="Strony z Meta Pixel, Google Tag i analytics — fundament skutecznego retargetingu."
         />
       </Layout>
     </>

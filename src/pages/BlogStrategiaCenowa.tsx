@@ -59,13 +59,11 @@ export default function BlogStrategiaCenowa() {
         dateModified="2026-01-15"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Strategia cenowa", url: "https://fotz.pl/blog/strategia-cenowa" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

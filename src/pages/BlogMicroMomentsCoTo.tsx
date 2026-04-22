@@ -107,10 +107,10 @@ export default function BlogMicroMomentsCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/micro-moments-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -206,8 +206,6 @@ export default function BlogMicroMomentsCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Budujemy strony które wygrywają w micro-moments"
-          subheading="SEO, mobile-first design i content — pomagamy firmom być obecnym gdy klienci szukają odpowiedzi."
         />
       </Layout>
     </>

@@ -93,7 +93,7 @@ const StronyInternetoweGliwice = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Gliwice" description="Profesjonalne tworzenie stron internetowych dla firm z Gliwic." provider="FOTZ Studio" areaServed="Gliwice" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gliwice", url: "https://fotz.pl/uslugi/strony-internetowe/gliwice" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gliwice", url: "https://fotz.pl/uslugi/strony-internetowe/gliwice" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

@@ -65,23 +65,19 @@ export default function BlogWinRateCoTo() {
         datePublished="2024-03-18"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Win Rate", url: "https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Win Rate", href: "/blog/win-rate-wskaznik-wygranych-jak-poprawic" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Win Rate", url: "/blog/win-rate-wskaznik-wygranych-jak-poprawic" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-rose-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Sales Analytics

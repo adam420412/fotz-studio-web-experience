@@ -63,23 +63,19 @@ export default function BlogWebRtcCoTo() {
         datePublished="2024-04-04"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "WebRTC", url: "https://fotz.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "WebRTC", href: "/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "WebRTC", url: "/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-sky-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Web / Real-Time

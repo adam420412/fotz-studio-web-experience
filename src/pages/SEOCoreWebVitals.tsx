@@ -40,7 +40,7 @@ const SEOCoreWebVitals = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "SEO", url: "https://fotz.pl/seo" },
         { name: "Core Web Vitals", url: "https://fotz.pl/seo/core-web-vitals" }
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

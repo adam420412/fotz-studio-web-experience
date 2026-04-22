@@ -96,25 +96,20 @@ const PozycjonowanieWarszawa = () => {
         title="Pozycjonowanie Warszawa — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron internetowych Warszawa. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Zwiększamy ruch organiczny firm warszawskich…"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/warszawa"
-        ogTitle="Pozycjonowanie Warszawa — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Warszawie. Audyt SEO, optymalizacja i link building dla firm z Warszawy."
         keywords="pozycjonowanie warszawa, agencja seo warszawa, seo warszawa, pozycjonowanie lokalne warszawa, pozycjonowanie stron warszawa, seo dla firm warszawa, audyt seo warszawa, seo mazowsze"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Warszawa"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Warszawy. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        url="https://fotz.pl/uslugi/pozycjonowanie/warszawa"
         provider="Fotz Studio"
         areaServed="Warszawa"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Warszawa", url: "https://fotz.pl/uslugi/pozycjonowanie/warszawa" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

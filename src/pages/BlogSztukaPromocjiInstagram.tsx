@@ -45,7 +45,7 @@ export default function BlogSztukaPromocjiInstagram() {
         keywords="Reklama na Instagramie - Instagram Ads 2025, Reklama na Instagramie - Instagram Ads 2025 poradnik, Reklama na Instagramie - Instagram Ads 2025 strategia, Reklama na Instagramie - Instagram Ads 2025 jak zrobić, Reklama na Instagramie - Instagram Ads 2025 marketing, Reklama na Instagramie - Instagram Ads 2025 przykłady, Reklama na Instagramie - Instagram Ads 2025 w Polsce"
       />
       
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <ArticleSchema
         title="Reklama na Instagramie - Kompletny Przewodnik Instagram Ads"
         description="Jak skutecznie reklamować się na Instagramie. Rodzaje reklam, targetowanie, budżet i optymalizacja kampanii."
@@ -54,7 +54,7 @@ export default function BlogSztukaPromocjiInstagram() {
         dateModified="2025-07-05"
         image="https://fotz.pl/og-instagram-ads.jpg"
       />
-      <FAQSchema faqs={faqs} />
+      <FAQSchema items={faqs} />
 
       <article className="min-h-screen bg-white">
         {/* Header */}

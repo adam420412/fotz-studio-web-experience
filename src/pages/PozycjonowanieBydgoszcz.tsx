@@ -109,25 +109,20 @@ const PozycjonowanieBydgoszcz = () => {
         title="Pozycjonowanie Bydgoszcz — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Bydgoszcz. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla IT, BPO i produkcji. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/bydgoszcz"
-        ogTitle="Pozycjonowanie Bydgoszcz — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Bydgoszczy. SEO dla firm IT, BPO, produkcji i e-commerce. Hub technologiczny czeka na Twoją markę."
         keywords="pozycjonowanie bydgoszcz, agencja seo bydgoszcz, seo bydgoszcz, pozycjonowanie stron bydgoszcz, seo dla firm bydgoszcz, pozycjonowanie kujawsko-pomorskie, audyt seo bydgoszcz, seo kujawa"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Bydgoszcz"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Bydgoszczy. Audyt SEO, optymalizacja on-page, link building dla IT, BPO, produkcji i e-commerce."
-        url="https://fotz.pl/uslugi/pozycjonowanie/bydgoszcz"
         provider="Fotz Studio"
         areaServed="Bydgoszcz, Kujawsko-Pomorskie"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Bydgoszcz", url: "https://fotz.pl/uslugi/pozycjonowanie/bydgoszcz" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

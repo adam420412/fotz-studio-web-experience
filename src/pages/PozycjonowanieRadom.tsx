@@ -109,25 +109,20 @@ const PozycjonowanieRadom = () => {
         title="Pozycjonowanie Radom — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Radom. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niska konkurencja = szybkie rezultaty. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/radom"
-        ogTitle="Pozycjonowanie Radom — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Radomiu. Niska konkurencja SEO = szybkie pozycje. SEO dla lotnictwa, produkcji i e-commerce."
         keywords="pozycjonowanie radom, agencja seo radom, seo radom, pozycjonowanie stron radom, seo dla firm radom, seo mazowsze, pozycjonowanie lokalne radom"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Radom"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Radomia. Audyt SEO, optymalizacja on-page, link building dla lotnictwa, produkcji i e-commerce."
-        url="https://fotz.pl/uslugi/pozycjonowanie/radom"
         provider="Fotz Studio"
         areaServed="Radom, Mazovia"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Radom", url: "https://fotz.pl/uslugi/pozycjonowanie/radom" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

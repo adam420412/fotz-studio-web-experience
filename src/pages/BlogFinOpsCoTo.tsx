@@ -62,23 +62,19 @@ export default function BlogFinOpsCoTo() {
         datePublished="2024-04-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "FinOps", url: "https://fotz.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "FinOps", href: "/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "FinOps", url: "/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Cloud / Finance

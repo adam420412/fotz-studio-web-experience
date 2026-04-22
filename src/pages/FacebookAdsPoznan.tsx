@@ -225,7 +225,6 @@ export default function FacebookAdsPoznan() {
         name="Facebook Ads Poznań"
         description="Profesjonalne kampanie Meta Ads (Facebook, Instagram) dla firm z Poznania"
         areaServed="Poznan"
-        priceRange="400-5000 PLN/miesiąc"
       />
       
       <FAQSchema questions={faqs} />

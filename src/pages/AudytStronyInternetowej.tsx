@@ -170,7 +170,7 @@ export default function AudytStronyInternetowej() {
         description="Kompleksowy audyt UX, wydajności, SEO i konwersji strony internetowej"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
         {/* Hero */}
@@ -351,8 +351,6 @@ export default function AudytStronyInternetowej() {
         </FadeInView>
 
         <ContactSection
-          heading="Zamów audyt strony internetowej"
-          subheading="Raport gotowy w 5 dni roboczych. Bezpłatna konsultacja wstępna."
         />
       </Layout>
     </>

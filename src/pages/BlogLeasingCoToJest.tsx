@@ -79,10 +79,10 @@ export default function BlogLeasingCoToJest() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/leasing-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -186,8 +186,6 @@ export default function BlogLeasingCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zainwestuj w strone, ktora przynosi klientow"
-          subheading="Tak jak leasing finansuje Twoj sprzet, my budujemy strone ktora pracuje na Twoje przychody."
         />
       </Layout>
     </>

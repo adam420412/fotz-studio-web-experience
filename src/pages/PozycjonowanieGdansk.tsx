@@ -94,25 +94,20 @@ const PozycjonowanieGdansk = () => {
         title="Pozycjonowanie Gdańsk — Agencja SEO Trójmiasto | Fotz Studio"
         description="Pozycjonowanie stron Gdańsk i Trójmiasto. Agencja SEO Fotz Studio — audyt, optymalizacja, link building dla firm z Gdańska. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/gdansk"
-        ogTitle="Pozycjonowanie Gdańsk — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Gdańsku i Trójmieście. Audyt SEO, optymalizacja i link building dla firm z Gdańska i okolic."
         keywords="pozycjonowanie gdańsk, agencja seo gdańsk, seo gdańsk, pozycjonowanie stron gdańsk, seo dla firm gdańsk, seo trójmiasto, audyt seo gdańsk, pozycjonowanie lokalne gdańsk"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Gdańsk"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Gdańska i Trójmiasta. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        url="https://fotz.pl/uslugi/pozycjonowanie/gdansk"
         provider="Fotz Studio"
         areaServed="Gdańsk, Trójmiasto"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Gdańsk", url: "https://fotz.pl/uslugi/pozycjonowanie/gdansk" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

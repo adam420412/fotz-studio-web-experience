@@ -65,23 +65,19 @@ export default function BlogMicroFrontendsCoTo() {
         datePublished="2024-04-06"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Micro Frontends", url: "https://fotz.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Micro Frontends", href: "/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Micro Frontends", url: "/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-pink-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Frontend Architecture

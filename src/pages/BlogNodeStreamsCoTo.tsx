@@ -57,23 +57,19 @@ export default function BlogNodeStreamsCoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Node.js Streams", url: "https://fotz.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Node.js Streams", href: "/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Node.js Streams", url: "/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-lime-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Node.js / Streams / Performance

@@ -84,12 +84,10 @@ export default function Poradniki() {
         canonical="https://fotz.pl/poradniki"
         keywords="poradniki marketingowe, tutoriale marketing, przewodnik SEO, poradnik Google Ads, marketing cyfrowy"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Poradniki", url: "https://fotz.pl/poradniki" }
-        ]}
-      />
+        ]}/>
       <Layout>
         {/* Hero */}
         <section className="pt-40 pb-20 section-padding bg-background">

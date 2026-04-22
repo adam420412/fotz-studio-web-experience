@@ -81,10 +81,10 @@ export default function SklepWooCommerce() {
         description="Tworzenie sklepów internetowych na WooCommerce — wdrożenie, konfiguracja płatności i wysyłki, SEO, integracje z kurierami i systemami ERP"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950">
@@ -216,8 +216,6 @@ export default function SklepWooCommerce() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij sprzedawać online"
-          subheading="Bezpłatna wycena sklepu WooCommerce w 24 godziny. Opowiemy co potrzebujesz."
         />
       </Layout>
     </>

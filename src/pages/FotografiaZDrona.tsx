@@ -222,13 +222,11 @@ export default function FotografiaZDrona() {
         name="Fotografia z Drona"
         description="Profesjonalne zdjęcia i filmy z drona. Ujęcia z lotu ptaka dla nieruchomości, przemysłu, turystyki i eventów."
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Fotografia z drona", url: "https://fotz.pl/uslugi/fotografia-z-drona" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero Section */}

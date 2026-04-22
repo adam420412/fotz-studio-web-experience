@@ -53,7 +53,7 @@ export default function BlogTikTokDlaFirmy() {
 
       <BreadcrumbSchema items={breadcrumbItems} />
       <ArticleSchema data={articleData} />
-      <FAQSchema faqs={faqs} />
+      <FAQSchema items={faqs} />
 
       <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Hero Section */}

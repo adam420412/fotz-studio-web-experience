@@ -209,13 +209,11 @@ export default function FacebookAdsWroclaw() {
         provider="Fotz Studio"
         areaServed="Wroclaw"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
           { name: "Facebook Ads Wrocław", url: "https://fotz.pl/performance-marketing/facebook-ads/wroclaw" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}
@@ -226,13 +224,11 @@ export default function FacebookAdsWroclaw() {
         <div className="container px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-4">
-              <PageBreadcrumbs
-                items={[
-                  { label: "Home", href: "/" },
-                  { label: "Performance Marketing", href: "/performance-marketing" },
-                  { label: "Facebook Ads Wrocław", href: "/performance-marketing/facebook-ads/wroclaw" }
-                ]}
-              />
+              <PageBreadcrumbs items={[
+                  { name: "Home", url: "/" },
+                  { name: "Performance Marketing", url: "/performance-marketing" },
+                  { name: "Facebook Ads Wrocław", url: "/performance-marketing/facebook-ads/wroclaw" }
+                ]}/>
             </div>
 
             <div className="mt-8 mb-4">

@@ -88,23 +88,19 @@ export default function BlogTerritoryPlanningCoTo() {
         datePublished="2024-02-21"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Territory Planning", url: "https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Territory Planning", href: "/blog/territory-planning-planowanie-terytoriow-sprzedazowych" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Territory Planning", url: "/blog/territory-planning-planowanie-terytoriow-sprzedazowych" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Sales Operations

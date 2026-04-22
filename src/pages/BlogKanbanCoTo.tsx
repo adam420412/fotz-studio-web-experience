@@ -82,10 +82,10 @@ export default function BlogKanbanCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/kanban-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -187,8 +187,6 @@ export default function BlogKanbanCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zarządzamy projektami efektywnie i transparentnie"
-          subheading="Strony internetowe i kampanie prowadzone z jasnym procesem — wiesz na jakim etapie jest Twój projekt."
         />
       </Layout>
     </>

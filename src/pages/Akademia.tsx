@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { useAuth } from '@/hooks/useAuth';
 import { useSubscription } from '@/hooks/useSubscription';
 import { useAcademyMaterials } from '@/hooks/useAcademyMaterials';
-import { motion } from 'framer-motion';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { 
   GraduationCap, 

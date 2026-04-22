@@ -51,13 +51,11 @@ const BlogStrategiaContent = () => {
         author="Fotz Studio"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
           { name: "Blog", url: "/blog" },
           { name: "Strategia content marketingu", url: "/blog/strategia-content-marketingu" }
-        ]}
-      />
+        ]}/>
 
       <FAQSchema items={faqItems} />
 

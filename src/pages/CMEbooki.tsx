@@ -50,7 +50,7 @@ const CMEbooki = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Content Marketing", url: "https://fotz.pl/content-marketing" },
         { name: "Ebooki i Lead Magnety", url: "https://fotz.pl/content-marketing/ebooki" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

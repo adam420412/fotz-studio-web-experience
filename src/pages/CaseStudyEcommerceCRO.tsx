@@ -56,13 +56,11 @@ const CaseStudyEcommerceCRO = () => {
         author="FOTZ Studio"
         datePublished="2026-04-10"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Case Studies", url: "https://fotz.pl/case-studies" },
           { name: "Optymalizacja Konwersji E-commerce", url: "https://fotz.pl/case-studies/optymalizacja-konwersji-ecommerce" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
       <OrganizationSchema />
 

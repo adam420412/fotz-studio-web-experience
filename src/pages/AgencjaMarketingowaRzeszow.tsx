@@ -167,7 +167,6 @@ export default function AgencjaMarketingowaRzeszow() {
         name="Agencja Marketingowa Rzeszów"
         description="Profesjonalne usługi marketingowe dla firm z Rzeszowa i Podkarpacia"
         areaServed="Rzeszow"
-        address="Rzeszów, Polska"
       />
 
       <FAQSchema items={faqs} />

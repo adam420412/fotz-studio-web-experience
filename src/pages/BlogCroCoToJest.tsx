@@ -66,23 +66,19 @@ export default function BlogCroCoToJest() {
         datePublished="2024-02-09"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "CRO", url: "https://fotz.pl/blog/cro-conversion-rate-optimization-co-to-jest" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "CRO", href: "/blog/cro-conversion-rate-optimization-co-to-jest" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "CRO", url: "/blog/cro-conversion-rate-optimization-co-to-jest" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-orange-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Conversion Optimization

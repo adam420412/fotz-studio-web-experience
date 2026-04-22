@@ -133,12 +133,10 @@ const Zasoby = () => {
         canonical="https://fotz.pl/zasoby"
         keywords="darmowe zasoby marketingowe, e-book marketing darmowy, checklisty SEO, szablony briefu marketingowego, darmowe materiały marketing, checklisty Google Ads"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Zasoby", url: "https://fotz.pl/zasoby" }
-        ]}
-      />
+        ]}/>
       <WebPageSchema 
         title="Darmowe zasoby marketingowe"
         description="E-booki, checklisty i szablony marketingowe do pobrania."

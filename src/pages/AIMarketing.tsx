@@ -39,7 +39,7 @@ const AIMarketing = () => {
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "AI Marketing", url: "https://fotz.pl/ai-marketing" }
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

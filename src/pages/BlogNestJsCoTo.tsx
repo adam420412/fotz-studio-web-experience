@@ -57,23 +57,19 @@ export default function BlogNestJsCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "NestJS", url: "https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-pink-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "NestJS", href: "/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "NestJS", url: "/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-red-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Node.js / Backend

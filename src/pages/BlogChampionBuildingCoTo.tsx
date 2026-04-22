@@ -102,23 +102,19 @@ export default function BlogChampionBuildingCoTo() {
         datePublished="2024-02-21"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Champion Building", url: "https://fotz.pl/blog/champion-building-sprzedaz-b2b-enterprise" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Champion Building", href: "/blog/champion-building-sprzedaz-b2b-enterprise" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Champion Building", url: "/blog/champion-building-sprzedaz-b2b-enterprise" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Enterprise Sales

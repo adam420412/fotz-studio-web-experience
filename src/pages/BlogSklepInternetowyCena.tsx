@@ -102,10 +102,10 @@ export default function SklepInternetowyCena() {
         dateModified="2025-04-01"
         url="https://fotz.pl/blog/sklep-internetowy-cena"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -227,8 +227,6 @@ export default function SklepInternetowyCena() {
         </FadeInView>
 
         <ContactSection
-          heading="Ile będzie kosztować Twój sklep?"
-          subheading="Bezpłatna wycena i rekomendacja platformy. Odpowiadamy w 24 godziny."
         />
       </Layout>
     </>

@@ -64,23 +64,19 @@ export default function BlogVectorDatabaseCoTo() {
         datePublished="2024-03-02"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Vector Database", url: "https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Vector Database", href: "/blog/vector-database-co-to-jest-jak-wybrac" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Vector Database", url: "/blog/vector-database-co-to-jest-jak-wybrac" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               AI / Data Engineering

@@ -95,23 +95,19 @@ export default function BlogProductDiscoveryCoTo() {
         datePublished="2024-02-10"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Product Discovery", url: "https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Product Discovery", href: "/blog/product-discovery-co-to-jest-jak-przeprowadzic" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Product Discovery", url: "/blog/product-discovery-co-to-jest-jak-przeprowadzic" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-pink-600 text-white text-sm font-semibond px-3 py-1 rounded-full mb-4">
               Product Management

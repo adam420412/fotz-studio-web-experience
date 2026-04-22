@@ -172,13 +172,11 @@ const TikTokAds = () => {
         description="Profesjonalne kampanie TikTok Ads. Docieraj do młodej grupy docelowej dzięki kreatywnym reklamom wideo."
         provider="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
           { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}

@@ -99,25 +99,20 @@ const PozycjonowanieSzczecin = () => {
         title="Pozycjonowanie Szczecin — Agencja SEO Zachodniopomorskie"
         description="Pozycjonowanie stron Szczecin i Zachodniopomorskie. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla rynku PL i DE. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/szczecin"
-        ogTitle="Pozycjonowanie Szczecin — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Szczecinie i całym Zachodniopomorskim. SEO dla firm lokalnych i eksportujących na rynek niemiecki."
         keywords="pozycjonowanie szczecin, agencja seo szczecin, seo szczecin, pozycjonowanie stron szczecin, seo dla firm szczecin, seo zachodniopomorskie, pozycjonowanie lokalne szczecin"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Szczecin"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm ze Szczecina i Zachodniopomorskiego. Audyt SEO, optymalizacja on-page, link building i SEO cross-border PL/DE."
-        url="https://fotz.pl/uslugi/pozycjonowanie/szczecin"
         provider="Fotz Studio"
         areaServed="Szczecin, Zachodniopomorskie"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Szczecin", url: "https://fotz.pl/uslugi/pozycjonowanie/szczecin" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

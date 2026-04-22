@@ -143,13 +143,11 @@ const BlogCopywritingDlaSEO = () => {
         author="Fotz Studio"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Copywriting SEO - jak pisać teksty zoptymalizowane pod Google?" }
-        ]}
-      />
+          { name: "Copywriting SEO - jak pisać teksty zoptymalizowane pod Google?", url: "https://fotz.pl" }
+        ]}/>
 
       <FAQSchema items={faqItems} />
 

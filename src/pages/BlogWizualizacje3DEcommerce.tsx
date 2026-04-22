@@ -48,9 +48,6 @@ const BlogWizualizacje3DEcommerce = () => {
         title="Wizualizacje 3D w E-commerce | Fotz Studio"
         description="Wizualizacje 3D w e-commerce zwiększają konwersję o 40%. Dowiedz się jak wdrożyć modele 3D, AR try-on i 360° product views w swoim sklepie internetowym ✓"
         canonical="https://fotz.pl/blog/wizualizacje-3d-ecommerce"
-        ogTitle="Wizualizacje 3D w E-commerce – Kompletny Poradnik"
-        ogDescription="Poznaj strategie wdrażania wizualizacji 3D w e-commerce i zwiększ sprzedaż o 40%"
-        ogUrl="https://fotz.pl/blog/wizualizacje-3d-ecommerce"
 
         keywords="Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik], Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] co to jest, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] jak działa, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] definicja, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] przykłady, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] poradnik, Wizualizacje 3D w E-commerce – Jak Zwiększyć Sprzedaż Online? [Poradnik] przewodnik"
       />

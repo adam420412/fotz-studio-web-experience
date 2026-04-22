@@ -81,10 +81,10 @@ export default function BlogSchemaMarkupCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/schema-markup-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -184,8 +184,6 @@ export default function BlogSchemaMarkupCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Wdróż Schema Markup i popraw CTR w Google"
-          subheading="Rich snippets z FAQ, Product i LocalBusiness schema — zwiększ klikalność bez poprawy pozycji."
         />
       </Layout>
     </>

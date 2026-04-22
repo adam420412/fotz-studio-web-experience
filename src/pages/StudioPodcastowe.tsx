@@ -89,12 +89,10 @@ export default function StudioPodcastowe() {
         name="Studio Podcastowe"
         description="Profesjonalne studio do nagrywania podcastów z pełnym wyposażeniem audio i video"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Studio Podcastowe", url: "https://fotz.pl/uslugi/studio-podcastowe" }
-        ]}
-      />
+        ]}/>
       <OrganizationSchema />
 
       <Layout>

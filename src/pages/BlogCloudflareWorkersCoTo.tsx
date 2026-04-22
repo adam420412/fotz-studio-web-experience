@@ -57,23 +57,19 @@ export default function BlogCloudflareWorkersCoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Cloudflare Workers", url: "https://fotz.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-orange-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Cloudflare Workers", href: "/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Cloudflare Workers", url: "/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-amber-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Cloudflare / Edge / Workers

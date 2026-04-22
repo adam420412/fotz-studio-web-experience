@@ -94,23 +94,19 @@ export default function BlogPublicRelationsCoTo() {
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Public Relations", url: "https://fotz.pl/blog/public-relations-co-to" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs
-            items={[
-              { name: "Blog", href: "/blog" },
-              { name: "Public Relations" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Blog", url: "/blog" },
+              { name: "Public Relations", url: "https://fotz.pl" },
+            ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Public Relations (PR) — co to jest i jak działa?
           </h1>

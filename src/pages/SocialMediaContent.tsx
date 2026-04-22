@@ -50,7 +50,7 @@ const SocialMediaContent = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Social Media", url: "https://fotz.pl/social-media" },
         { name: "Tworzenie Treści Social Media", url: "https://fotz.pl/social-media/content" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

@@ -82,10 +82,10 @@ export default function BlogEmployerBrandingCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/employer-branding-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -175,8 +175,6 @@ export default function BlogEmployerBrandingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Pomożemy zbudować markę pracodawcy która przyciąga talenty"
-          subheading="Strony kariery, content i kampanie rekrutacyjne — budujemy employer branding który wyróżnia Cię w rynku pracy."
         />
       </Layout>
     </>

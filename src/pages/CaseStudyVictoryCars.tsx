@@ -50,7 +50,7 @@ const CaseStudyVictoryCars = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Victory Cars", url: "https://fotz.pl/realizacje/victory-cars" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Victory Cars - Dealer Samochodów Premium Poznań - Case Study"
         description="Realizacja strony internetowej dla Victory Cars - dealera samochodów premium."

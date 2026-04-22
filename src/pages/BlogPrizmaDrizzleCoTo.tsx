@@ -57,23 +57,19 @@ export default function BlogPrizmaDrizzleCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Prisma vs Drizzle ORM", url: "https://fotz.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Prisma vs Drizzle ORM", href: "/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Prisma vs Drizzle ORM", url: "/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               TypeScript / Database

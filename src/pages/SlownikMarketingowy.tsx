@@ -156,12 +156,10 @@ const SlownikMarketingowy = () => {
         canonical="https://fotz.pl/slownik-marketingowy"
         keywords="słownik marketingowy, pojęcia marketingowe, definicje SEO, terminy Google Ads, słownik social media, marketing słownik online, pojęcia z marketingu internetowego"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Słownik marketingowy", url: "https://fotz.pl/slownik-marketingowy" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero */}

@@ -170,7 +170,7 @@ export default function AgencjaSEOWarszawa() {
         areaServed={["PL"]}
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
         {/* Hero Section */}
@@ -468,8 +468,6 @@ export default function AgencjaSEOWarszawa() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Zacznij pozycjonowanie w Warszawie"
-          subheading="Bezpłatna analiza SEO Twojej strony. Wysyłamy w 24h."
         />
       </Layout>
     </>

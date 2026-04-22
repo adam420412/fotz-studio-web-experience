@@ -79,23 +79,19 @@ export default function BlogSdrCoTo() {
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "SDR — Sales Development Representative", url: "https://fotz.pl/blog/sdr-co-to-jest" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs
-            items={[
-              { name: "Blog", href: "/blog" },
-              { name: "SDR — Sales Development Representative" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Blog", url: "/blog" },
+              { name: "SDR — Sales Development Representative", url: "https://fotz.pl" },
+            ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             SDR — co to jest i jak działa Sales Development Representative?
           </h1>

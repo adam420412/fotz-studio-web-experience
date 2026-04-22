@@ -76,10 +76,10 @@ export default function BlogKRSCoToJest() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/krs-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -185,8 +185,6 @@ export default function BlogKRSCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Profesjonalna strona dla Twojej nowej spolki"
-          subheading="Zarejestruj spolke i zbuduj silna obecnosc online — zajmujemy sie stronami dla firm z KRS."
         />
       </Layout>
     </>

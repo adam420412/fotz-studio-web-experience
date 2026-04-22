@@ -214,13 +214,11 @@ export default function FacebookInstagramAds() {
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
           { name: "Facebook & Instagram Ads", url: "https://fotz.pl/performance-marketing/meta-ads" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}

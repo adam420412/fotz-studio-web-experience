@@ -101,23 +101,19 @@ export default function BlogProspectingB2bCoTo() {
         datePublished="2024-02-09"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Prospecting B2B", url: "https://fotz.pl/blog/prospecting-b2b-generowanie-leadow" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Prospecting B2B", href: "/blog/prospecting-b2b-generowanie-leadow" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Prospecting B2B", url: "/blog/prospecting-b2b-generowanie-leadow" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-indigo-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Generowanie Leadów

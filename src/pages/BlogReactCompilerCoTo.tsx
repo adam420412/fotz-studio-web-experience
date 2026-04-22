@@ -57,23 +57,19 @@ export default function BlogReactCompilerCoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "React Compiler", url: "https://fotz.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "React Compiler", href: "/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "React Compiler", url: "/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-sky-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               React / Compiler / React 19

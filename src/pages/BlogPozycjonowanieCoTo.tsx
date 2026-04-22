@@ -76,10 +76,10 @@ export default function BlogPozycjonowanieCoTo() {
         dateModified="2025-03-20"
         url="https://fotz.pl/blog/pozycjonowanie-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -200,8 +200,6 @@ export default function BlogPozycjonowanieCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij pojawiać się wyżej w Google"
-          subheading="Pozycjonujemy strony firmowe, blogi i sklepy. Bezpłatna analiza i wycena."
         />
       </Layout>
     </>

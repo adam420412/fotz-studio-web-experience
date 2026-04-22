@@ -126,7 +126,7 @@ export default function AudytSEO() {
         description="Szczegółowa analiza strony internetowej pod kątem SEO. Identyfikujemy błędy techniczne, problemy z treścią i linkami."
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center justify-center bg-background overflow-hidden pt-24">
@@ -402,7 +402,7 @@ export default function AudytSEO() {
         </FadeInView>
 
         <FAQSchema items={faqItems} />
-        <ContactSection heading="Zamów audyt SEO" subheading="Raport gotowy w 48 godzin. Bezpłatna konsultacja omówieniowa w cenie." />
+        <ContactSection />
       </Layout>
     </>
   );

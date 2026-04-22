@@ -116,7 +116,7 @@ const CaseStudyLocalSEO = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Case Studies", url: "https://fotz.pl/case-studies" },
         { name: "SEO Lokalne Poznań", url: "https://fotz.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Pozycjonowanie lokalne w Poznaniu — wzrost ruchu organicznego o 520% | Case Study FOTZ Studio"
         description="Case study lokalnego SEO: analiza strategii, metryki miesiąc po miesiącu, 7 najważniejszych lekcji z pozycjonowania lokalnego."

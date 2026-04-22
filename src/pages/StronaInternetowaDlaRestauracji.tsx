@@ -72,10 +72,10 @@ export default function StronaInternetowaDlaRestauracji() {
         description="Tworzenie stron internetowych dla restauracji — menu online, rezerwacje, SEO lokalne, galeria, integracja z Google Maps"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-amber-950 to-slate-950">
@@ -187,8 +187,6 @@ export default function StronaInternetowaDlaRestauracji() {
         </FadeInView>
 
         <ContactSection
-          heading="Stwórzmy stronę dla Twojej restauracji"
-          subheading="Bezpłatna wycena i konsultacja. Powiemy Ci co warto, a co jest zbędne."
         />
       </Layout>
     </>

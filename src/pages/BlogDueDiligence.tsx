@@ -77,10 +77,10 @@ export default function BlogDueDiligence() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/due-diligence-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -183,8 +183,6 @@ export default function BlogDueDiligence() {
         </FadeInView>
 
         <ContactSection
-          heading="Zwiększ wartość firmy przed sprzedażą lub inwestycją"
-          subheading="Marketing cyfrowy i SEO to aktywa które kupujący widzi w due diligence."
         />
       </Layout>
     </>

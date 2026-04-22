@@ -61,13 +61,11 @@ export default function BlogJakZaprojektowacLogo() {
         dateModified="2026-04-11"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Jak Zaprojektować Logo", url: "https://fotz.pl/blog/jak-zaprojektowac-logo-dla-firmy" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       <article className="pt-32 pb-20 bg-background">

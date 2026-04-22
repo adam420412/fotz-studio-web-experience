@@ -130,13 +130,11 @@ export default function DlaKogoEcommerce() {
         name="Marketing dla e-commerce"
         description="Kompleksowe usługi marketingowe dla sklepów internetowych - performance marketing, CRO, remarketing i automatyzacja."
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
           { name: "E-commerce", url: "https://fotz.pl/dla-kogo/ecommerce" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

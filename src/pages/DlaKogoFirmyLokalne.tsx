@@ -121,13 +121,11 @@ export default function DlaKogoFirmyLokalne() {
         name="Marketing dla firm lokalnych"
         description="Kompleksowe usługi marketingowe dla firm lokalnych w Poznaniu - SEO lokalne, Google Maps, kampanie geotargetowane."
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
           { name: "Firmy lokalne", url: "https://fotz.pl/dla-kogo/firmy-lokalne" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

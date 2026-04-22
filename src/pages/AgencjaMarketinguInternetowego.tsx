@@ -188,13 +188,11 @@ export default function AgencjaMarketinguInternetowego() {
         description="Kompleksowe usługi marketingu internetowego: SEO, SEM, Google Ads, social media marketing i kampanie reklamowe dla firm."
         areaServed="Polska"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Agencja Marketingu Internetowego", url: "https://fotz.pl/agencja-marketingu-internetowego" }
-        ]}
-      />
+        ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />

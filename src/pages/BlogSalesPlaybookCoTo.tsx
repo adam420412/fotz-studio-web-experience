@@ -95,23 +95,19 @@ export default function BlogSalesPlaybookCoTo() {
         datePublished="2024-02-17"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Sales Playbook", url: "https://fotz.pl/blog/sales-playbook-co-to-jest-jak-budowac" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Sales Playbook", href: "/blog/sales-playbook-co-to-jest-jak-budowac" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Sales Playbook", url: "/blog/sales-playbook-co-to-jest-jak-budowac" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-cyan-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Sales Management

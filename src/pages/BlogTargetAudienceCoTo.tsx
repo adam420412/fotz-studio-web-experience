@@ -89,23 +89,19 @@ export default function BlogTargetAudienceCoTo() {
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Target Audience", url: "https://fotz.pl/blog/target-audience-co-to" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs
-            items={[
-              { name: "Blog", href: "/blog" },
-              { name: "Target Audience" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Blog", url: "/blog" },
+              { name: "Target Audience", url: "https://fotz.pl" },
+            ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Target Audience — co to jest i jak definiować grupę docelową?
           </h1>

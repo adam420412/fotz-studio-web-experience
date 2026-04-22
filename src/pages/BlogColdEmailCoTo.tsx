@@ -78,10 +78,10 @@ export default function BlogColdEmailCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/cold-email-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -183,8 +183,6 @@ export default function BlogColdEmailCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zwieksz skutecznosc cold emaila przez lepsza strone"
-          subheading="Landing page, strona produktu i UX — zamieniamy odwiedzajacych z outbound w klientow."
         />
       </Layout>
     </>

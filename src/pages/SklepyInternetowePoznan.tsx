@@ -76,13 +76,11 @@ export default function SklepyInternetowePoznan() {
         provider="Fotz Studio"
         areaServed="Poznań"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Strony internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
           { name: "Sklepy Internetowe Poznań", url: "https://fotz.pl/uslugi/sklepy-internetowe/poznan" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 
       {/* Hero */}

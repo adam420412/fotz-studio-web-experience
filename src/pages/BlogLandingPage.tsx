@@ -47,13 +47,11 @@ const BlogLandingPage = () => {
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Jak stworzyć landing page", url: "https://fotz.pl/blog/jak-stworzyc-landing-page" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

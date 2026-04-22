@@ -46,7 +46,7 @@ const CaseStudyPrzedszkole = () => {
         canonical="https://fotz.pl/realizacje/przedszkole"
         keywords="case study edukacja, marketing dla przedszkola realizacja"
       />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Przedszkole", url: "https://fotz.pl/realizacje/przedszkole" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Realizacje", url: "https://fotz.pl/realizacje" }, { name: "Przedszkole", url: "https://fotz.pl/realizacje/przedszkole" }]}/>
       <ArticleSchema title="Przedszkole Mali Przyjaciele - Strona dla placówki edukacyjnej" description="Case study: strona internetowa dla przedszkola z SEO lokalnym" url="https://fotz.pl/realizacje/przedszkole" datePublished="2024-05-10" dateModified="2026-01-09" />
 
       {/* Hero */}

@@ -50,7 +50,7 @@ const SEOTechniczne = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "SEO", url: "https://fotz.pl/seo" },
         { name: "Techniczne SEO", url: "https://fotz.pl/seo/techniczne" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

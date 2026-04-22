@@ -15,14 +15,12 @@ export default function FacebookAdsBydgoszcz() {
         canonical="https://fotz.pl/performance-marketing/facebook-ads/bydgoszcz"
         keywords="facebook ads bydgoszcz, meta ads bydgoszcz, reklamy facebook bydgoszcz, agencja facebook ads bydgoszcz, kampanie facebook bydgoszcz, instagram ads bydgoszcz, facebook ads dla firm bydgoszcz, reklama na facebooku bydgoszcz, meta ads agencja bydgoszcz, facebook ads cennik bydgoszcz"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Fotz.pl", url: "https://fotz.pl" },
           { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Bydgoszcz" }
-        ]}
-      />
+          { name: "Bydgoszcz", url: "https://fotz.pl" }
+        ]}/>
       <ServiceSchema
         name="Facebook Ads Bydgoszcz"
         description="Profesjonalne zarządzanie kampaniami reklamowymi Facebook Ads dla firm z Bydgoszczy"
@@ -30,14 +28,12 @@ export default function FacebookAdsBydgoszcz() {
       />
 
       <Layout>
-        <PageBreadcrumbs
-          items={[
-            { label: "Home", path: "/" },
-            { label: "Performance Marketing", path: "/performance-marketing" },
-            { label: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { label: "Bydgoszcz" }
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Home", path: "/" },
+            { name: "Performance Marketing", path: "/performance-marketing" },
+            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Bydgoszcz", url: "https://fotz.pl" }
+          ]}/>
 
         {/* HERO SECTION */}
         <section className="relative bg-gradient-to-br from-blue-50 to-indigo-50 py-16 md:py-24 overflow-hidden">

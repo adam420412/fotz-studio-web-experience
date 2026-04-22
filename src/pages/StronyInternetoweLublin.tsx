@@ -152,13 +152,11 @@ const StronyInternetoweLublin = () => {
         areaServed="Lublin"
       />
       
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
           { name: "Lublin", url: "https://fotz.pl/uslugi/strony-internetowe/lublin" },
-        ]}
-      />
+        ]}/>
       
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}

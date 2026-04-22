@@ -78,10 +78,10 @@ export default function BlogCPMCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/cpm-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -192,8 +192,6 @@ export default function BlogCPMCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zoptymalizuj kampanie reklamowe i obniż CPM"
-          subheading="Prowadzimy kampanie Google Ads i Meta Ads z mierzalnymi wynikami."
         />
       </Layout>
     </>

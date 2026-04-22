@@ -97,10 +97,10 @@ export default function BlogPozycjonowanieStronCena() {
         dateModified="2025-03-15"
         url="https://fotz.pl/blog/pozycjonowanie-stron-cena"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -241,8 +241,6 @@ export default function BlogPozycjonowanieStronCena() {
         </FadeInView>
 
         <ContactSection
-          heading="Ile kosztuje SEO dla Twojej firmy?"
-          subheading="Bezpłatny audyt i wycena pozycjonowania. Odpowiadamy w 24 godziny."
         />
       </Layout>
     </>

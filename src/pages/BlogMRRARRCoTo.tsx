@@ -78,10 +78,10 @@ export default function BlogMRRARRCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/mrr-arr-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -178,8 +178,6 @@ export default function BlogMRRARRCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zwiększ MRR przez lepszy marketing i stronę"
-          subheading="SEO, Google Ads i landing page — budujemy pipeline który przekłada się na subskrybentów."
         />
       </Layout>
     </>

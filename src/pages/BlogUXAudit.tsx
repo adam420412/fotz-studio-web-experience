@@ -173,10 +173,10 @@ export default function BlogUXAudit() {
         dateModified="2025-04-12"
         url="https://fotz.pl/blog/audyt-ux-strony"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs.map(b => ({ name: b.label, url: b.href || "https://fotz.pl" }))} />
+      <BreadcrumbSchema items={breadcrumbs.map(b => ({ name: b.label, url: b.href || "https://fotz.pl" }))} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 to-gray-800">
@@ -426,8 +426,6 @@ export default function BlogUXAudit() {
         </FadeInView>
 
         <ContactSection
-          heading="Chcesz zwiększyć conversion rate swojej strony?"
-          subheading="Audyt UX + implementacja zmian = średnio 2-3x więcej konwersji w ciągu 3 miesięcy."
         />
       </Layout>
     </>

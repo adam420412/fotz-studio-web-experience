@@ -65,23 +65,19 @@ export default function BlogShardingCoTo() {
         datePublished="2024-04-10"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Database Sharding", url: "https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Database Sharding", href: "/blog/database-sharding-co-to-jest-strategie-vitess-cassandra" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Database Sharding", url: "/blog/database-sharding-co-to-jest-strategie-vitess-cassandra" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-emerald-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Bazy danych / Skalowalność

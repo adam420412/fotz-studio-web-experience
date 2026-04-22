@@ -79,10 +79,10 @@ export default function BlogEcommerceMarketingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/ecommerce-marketing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -181,8 +181,6 @@ export default function BlogEcommerceMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj skuteczny sklep internetowy z marketingiem"
-          subheading="SEO, Google Shopping integration i email marketing — pomagamy sklepom online rosnąć organicznie i przez płatne kanały."
         />
       </Layout>
     </>

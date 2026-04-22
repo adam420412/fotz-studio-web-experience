@@ -171,7 +171,7 @@ export default function KampaniaGoogleAds() {
         description="Tworzenie i zarządzanie kampaniami Google Ads dla firm — Search, Display, Shopping, YouTube"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
         {/* Hero */}
@@ -385,8 +385,6 @@ export default function KampaniaGoogleAds() {
         </FadeInView>
 
         <ContactSection
-          heading="Uruchom kampanię Google Ads"
-          subheading="Bezpłatna analiza słów kluczowych i propozycja kampanii. Wyślemy w 24h."
         />
       </Layout>
     </>

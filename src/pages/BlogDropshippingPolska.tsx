@@ -69,7 +69,7 @@ export default function BlogDropshippingPolska() {
         image="https://fotz.pl/images/dropshipping.jpg"
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
         {/* Hero Section */}
@@ -427,8 +427,6 @@ export default function BlogDropshippingPolska() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Potrzebujesz sklepu dropshipping?"
-          subheading="Tworzymy sklepy internetowe zoptymalizowane pod sprzedaż i SEO."
         />
       </Layout>
     </>

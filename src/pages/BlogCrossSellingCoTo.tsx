@@ -77,10 +77,10 @@ export default function BlogCrossSellingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/cross-selling-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -189,8 +189,6 @@ export default function BlogCrossSellingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj sklep który sprzedaje więcej każdemu klientowi"
-          subheading="Cross-selling i upselling wbudowane w architekturę sklepu — nie jako afterthought."
         />
       </Layout>
     </>

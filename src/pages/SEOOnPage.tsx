@@ -50,7 +50,7 @@ const SEOOnPage = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "SEO", url: "https://fotz.pl/seo" },
         { name: "Optymalizacja On-Page", url: "https://fotz.pl/seo/on-page" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

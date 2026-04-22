@@ -139,12 +139,10 @@ export default function Kariera() {
         canonical="https://fotz.pl/kariera"
         keywords="kariera agencja marketingowa poznań, praca SEO specjalista poznań, oferty pracy marketing poznań, praca social media manager, web developer praca poznań"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kariera", url: "https://fotz.pl/kariera" }
-        ]}
-      />
+        ]}/>
       <WebPageSchema 
         title="Kariera w Fotz Studio"
         description="Aktualne oferty pracy w agencji marketingowej Fotz Studio w Poznaniu."

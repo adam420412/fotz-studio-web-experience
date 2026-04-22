@@ -139,11 +139,11 @@ export default function TworzenieStronLublin() {
         keywords="tworzenie stron internetowych lublin, strony internetowe lublin, tworzenie stron www lublin, projektowanie stron internetowych lublin, strony www lublin, tworzenie stron lublin, strona internetowa lublin, sklepy internetowe lublin, agencja webdesign lublin, projektowanie stron www lublin"
       />
       <ServiceSchema name="Tworzenie stron internetowych Lublin" description="Profesjonalne tworzenie stron internetowych dla firm z Lublina i wschodniej Polski." areaServed={["PL"]} />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -342,7 +342,7 @@ export default function TworzenieStronLublin() {
           </section>
         </FadeInView>
 
-        <ContactSection heading="Zamów stronę internetową w Lublinie" subheading="Bezpłatna konsultacja dla firm ze wschodniej Polski." />
+        <ContactSection />
       </Layout>
     </>
   );

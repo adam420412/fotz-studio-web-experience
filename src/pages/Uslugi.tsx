@@ -430,12 +430,10 @@ export default function Uslugi() {
         canonical="https://fotz.pl/uslugi"
         keywords="usługi marketingowe, strony internetowe, social media marketing, kampanie reklamowe, Google Ads, Facebook Ads, SEO, branding, agencja marketingowa"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" }
-        ]}
-      />
+        ]}/>
       <ServiceSchema 
         name="Usługi marketingowe Fotz Studio"
         description="Kompleksowe usługi marketingowe: strony internetowe, social media, kampanie reklamowe, SEO i branding"

@@ -50,7 +50,7 @@ const PMOptymalizacja = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
         { name: "Optymalizacja Kampanii", url: "https://fotz.pl/performance-marketing/optymalizacja" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

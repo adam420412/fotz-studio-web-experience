@@ -82,10 +82,10 @@ export default function BlogBrandingCoTo() {
         dateModified="2025-03-20"
         url="https://fotz.pl/blog/branding-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -203,8 +203,6 @@ export default function BlogBrandingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbudujmy silną markę Twojej firmy"
-          subheading="Strategia, identyfikacja wizualna i brand book — od A do Z."
         />
       </Layout>
     </>

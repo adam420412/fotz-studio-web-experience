@@ -50,7 +50,7 @@ const CaseStudyVerthe = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Verthé", url: "https://fotz.pl/realizacje/verthe" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Verthé - Sklep E-commerce z Kosmetykami Wegańskimi - Case Study"
         description="Realizacja sklepu e-commerce dla Verthé - greckich kosmetyków wegańskich."

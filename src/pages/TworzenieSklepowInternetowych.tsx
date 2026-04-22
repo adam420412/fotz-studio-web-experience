@@ -29,7 +29,7 @@ export default function TworzenieSklepowInternetowych() {
         description="Profesjonalne sklepy e-commerce — WooCommerce, Shopify, PrestaShop"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-orange-50 to-red-50">
@@ -439,8 +439,6 @@ export default function TworzenieSklepowInternetowych() {
         </FadeInView>
 
         <ContactSection
-          heading="Otwórzmy Twój sklep internetowy"
-          subheading="Bezpłatna konsultacja e-commerce. Dobierzemy platformę i strategię do Twoich potrzeb."
         />
       </Layout>
     </>

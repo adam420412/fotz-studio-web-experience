@@ -85,10 +85,10 @@ export default function BlogJTBDCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/jobs-to-be-done-jtbd"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -176,8 +176,6 @@ export default function BlogJTBDCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj produkt i marketing wokół prawdziwych potrzeb klientów"
-          subheading="Strona, messaging i UX skupione na JTBD — sprzedawaj zadania, nie funkcje."
         />
       </Layout>
     </>

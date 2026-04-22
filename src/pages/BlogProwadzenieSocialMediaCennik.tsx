@@ -122,23 +122,19 @@ export default function BlogProwadzenieSocialMediaCennik() {
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Prowadzenie social media cennik", url: "https://fotz.pl/blog/prowadzenie-social-media-cennik" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-pink-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Social media — cennik 2025", href: "/blog/prowadzenie-social-media-cennik" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Social media — cennik 2025", url: "/blog/prowadzenie-social-media-cennik" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-purple-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Social Media / Marketing

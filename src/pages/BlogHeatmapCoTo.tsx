@@ -100,17 +100,15 @@ export default function BlogHeatmapCoTo() {
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Heatmapa", url: "https://fotz.pl/blog/heatmapa-co-to" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "Heatmapa" }]} />
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Heatmapa", url: "https://fotz.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Heatmapa Strony — co to jest i jak używać?
           </h1>

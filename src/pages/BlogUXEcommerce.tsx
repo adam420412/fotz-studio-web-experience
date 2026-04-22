@@ -49,13 +49,11 @@ export default function BlogUXEcommerce() {
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "UX/UI e-commerce", url: "https://fotz.pl/blog/ux-ui-ecommerce" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero Section */}

@@ -73,13 +73,11 @@ export default function BlogKosztLogo() {
         dateModified="2026-04-12"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Ile kosztuje logo", url: "https://fotz.pl/blog/ile-kosztuje-logo" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       <article className="pt-32 pb-20 bg-background">

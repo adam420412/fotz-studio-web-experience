@@ -84,10 +84,10 @@ export default function BlogNewsletterCoTo() {
         dateModified="2025-03-25"
         url="https://fotz.pl/blog/newsletter-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -199,8 +199,6 @@ export default function BlogNewsletterCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij budować listę subskrybentów"
-          subheading="Pomożemy skonfigurować newsletter i stworzyć strategię email marketingu."
         />
       </Layout>
     </>

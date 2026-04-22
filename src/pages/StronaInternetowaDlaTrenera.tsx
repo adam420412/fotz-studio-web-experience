@@ -72,10 +72,10 @@ export default function StronaInternetowaDlaTrenera() {
         description="Tworzenie stron internetowych dla trenerów personalnych — oferta i cennik, SEO lokalne, galeria transformacji, system rezerwacji treningów"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -187,8 +187,6 @@ export default function StronaInternetowaDlaTrenera() {
         </FadeInView>
 
         <ContactSection
-          heading="Stwórzmy stronę która przyciąga klientów na treningi"
-          subheading="Bezpłatna wycena — powiedz nam o swojej specjalizacji i grupie docelowej."
         />
       </Layout>
     </>

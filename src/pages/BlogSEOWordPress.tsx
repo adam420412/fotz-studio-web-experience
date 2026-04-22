@@ -41,13 +41,11 @@ const BlogSEOWordPress = () => {
         keywords="WordPress SEO, pozycjonowanie WordPress, Yoast SEO, Rank Math, WordPress szybkość, Core Web Vitals"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
           { name: "Blog", url: "/blog" },
           { name: "SEO WordPress poradnik", url: "/blog/seo-wordpress-poradnik" }
-        ]}
-      />
+        ]}/>
 
       <ArticleSchema
         title="SEO WordPress: Kompletny poradnik 2025 - Ranking w Google"

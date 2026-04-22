@@ -183,10 +183,10 @@ export default function SocialMediaMarketing() {
         description="Kompleksowa obsługa social media — strategia, tworzenie treści, reklamy Meta Ads, TikTok Ads, LinkedIn Ads dla firm"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950">
@@ -383,8 +383,6 @@ export default function SocialMediaMarketing() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij budować markę w social mediach"
-          subheading="Bezpłatny audyt Twoich obecnych kanałów social media i rekomendacja strategii."
         />
       </Layout>
     </>

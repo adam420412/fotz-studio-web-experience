@@ -57,23 +57,19 @@ export default function BlogQwikCoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Qwik framework", url: "https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Qwik framework", href: "/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Qwik framework", url: "/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Qwik / Resumability / Framework

@@ -93,23 +93,19 @@ export default function BlogPromptEngineeringCoTo() {
         datePublished="2024-03-06"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Prompt Engineering", url: "https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Prompt Engineering", href: "/blog/prompt-engineering-co-to-jest-jak-pisac-prompty" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Prompt Engineering", url: "/blog/prompt-engineering-co-to-jest-jak-pisac-prompty" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               AI / LLM Engineering

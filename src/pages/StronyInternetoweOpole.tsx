@@ -94,7 +94,7 @@ const StronyInternetoweOpole = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Opole" description="Profesjonalne tworzenie stron internetowych dla firm z Opola." provider="FOTZ Studio" areaServed="Opole" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Opole", url: "https://fotz.pl/uslugi/strony-internetowe/opole" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Opole", url: "https://fotz.pl/uslugi/strony-internetowe/opole" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

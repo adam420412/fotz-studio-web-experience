@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import {
   MapPin,
   CheckCircle2,
@@ -229,13 +228,13 @@ const TworzenieStronGdansk = () => {
         description="Profesjonalne tworzenie stron internetowych w Gdańsku i Trójmieście dla firm i biznesu"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
 
       {/* Hero Section */}
       <section className="relative min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+          <PageBreadcrumbs items={breadcrumbs} />
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -500,8 +499,6 @@ const TworzenieStronGdansk = () => {
 
       {/* Contact Section */}
       <ContactSection
-        heading="Zamów stronę internetową w Gdańsku"
-        subheading="Bezpłatna konsultacja dla firm z Trójmiasta. Wycena bez zobowiązań."
       />
       </Layout>
     </>

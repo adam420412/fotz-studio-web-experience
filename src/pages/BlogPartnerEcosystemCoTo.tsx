@@ -63,23 +63,19 @@ export default function BlogPartnerEcosystemCoTo() {
         datePublished="2024-02-23"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Partner Ecosystem", url: "https://fotz.pl/blog/partner-ecosystem-ekosystem-partnerski-saas" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Partner Ecosystem", href: "/blog/partner-ecosystem-ekosystem-partnerski-saas" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Partner Ecosystem", url: "/blog/partner-ecosystem-ekosystem-partnerski-saas" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-lime-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Partnerships

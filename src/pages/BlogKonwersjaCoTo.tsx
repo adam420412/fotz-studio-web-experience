@@ -88,10 +88,10 @@ export default function BlogKonwersjaCoTo() {
         dateModified="2025-04-05"
         url="https://fotz.pl/blog/konwersja-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -217,8 +217,6 @@ export default function BlogKonwersjaCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zwiększ konwersje na swojej stronie"
-          subheading="Audyt UX, CRO i optymalizacja — zamieniamy ruch w klientów."
         />
       </Layout>
     </>

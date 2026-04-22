@@ -47,13 +47,11 @@ const BlogSEOEcommerce = () => {
         dateModified="2026-04-01"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "SEO e-commerce", url: "https://fotz.pl/seo/ecommerce" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       
       <Layout>

@@ -57,23 +57,19 @@ export default function BlogValibotArktypeCoTo() {
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Schema Validation TypeScript", url: "https://fotz.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Schema Validation 2024", href: "/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Schema Validation 2024", url: "/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-lime-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               TypeScript / Validation / Schema

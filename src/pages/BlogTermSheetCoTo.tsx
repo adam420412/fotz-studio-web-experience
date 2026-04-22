@@ -96,23 +96,19 @@ export default function BlogTermSheetCoTo() {
         datePublished="2024-02-20"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Term Sheet", url: "https://fotz.pl/blog/term-sheet-co-to-jest-vc-inwestycje" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Term Sheet", href: "/blog/term-sheet-co-to-jest-vc-inwestycje" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Term Sheet", url: "/blog/term-sheet-co-to-jest-vc-inwestycje" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Finanse i Inwestycje

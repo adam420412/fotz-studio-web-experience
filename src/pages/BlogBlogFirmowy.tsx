@@ -69,13 +69,11 @@ export default function BlogBlogFirmowy() {
         keywords="Blog firmowy, Blog firmowy co to jest, Blog firmowy jak działa, Blog firmowy definicja, Blog firmowy przykłady, Blog firmowy poradnik, Blog firmowy przewodnik"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Home", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Blog firmowy poradnik", url: "https://fotz.pl/blog/blog-firmowy-poradnik" }
-        ]}
-      />
+        ]}/>
 
       <ArticleSchema
         headline="Blog firmowy — jak prowadzic i po co? Kompletny poradnik 2025"

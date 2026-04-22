@@ -58,13 +58,11 @@ const BlogPodcastMarketing = () => {
         dateModified="2026-04-12"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Podcast dla firmy", url: "https://fotz.pl/blog/podcast-dla-firmy" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

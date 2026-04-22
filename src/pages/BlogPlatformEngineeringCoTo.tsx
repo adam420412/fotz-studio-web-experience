@@ -66,23 +66,19 @@ export default function BlogPlatformEngineeringCoTo() {
         datePublished="2024-03-30"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Platform Engineering", url: "https://fotz.pl/blog/platform-engineering-co-to-jest-internal-developer-platform" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Platform Engineering", href: "/blog/platform-engineering-co-to-jest-internal-developer-platform" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Platform Engineering", url: "/blog/platform-engineering-co-to-jest-internal-developer-platform" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-purple-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Platform Engineering

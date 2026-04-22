@@ -57,23 +57,19 @@ export default function BlogCssAnchorPopoverCoTo() {
         datePublished="2024-06-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Nowe CSS API 2024", url: "https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-emerald-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Nowe CSS API 2024", href: "/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Nowe CSS API 2024", url: "/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-teal-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               CSS / Browser APIs / 2024

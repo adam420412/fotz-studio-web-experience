@@ -160,7 +160,7 @@ export default function MarketingB2B() {
         description="Kompleksowe strategie marketingowe dla firm działających na rynku B2B — lead generation, LinkedIn Ads, content marketing"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
         {/* Hero */}
@@ -318,8 +318,6 @@ export default function MarketingB2B() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij generować leady B2B"
-          subheading="Bezpłatna analiza Twojego procesu sprzedaży B2B i rekomendacja kanałów."
         />
       </Layout>
     </>

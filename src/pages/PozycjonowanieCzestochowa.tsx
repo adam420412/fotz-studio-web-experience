@@ -98,25 +98,20 @@ const PozycjonowanieCzestochowa = () => {
         title="Pozycjonowanie Częstochowa — Agencja SEO Śląsk | Fotz Studio"
         description="Pozycjonowanie stron Częstochowa. Agencja SEO Fotz Studio — lokalne SEO dla firm z Częstochowy. Bezpłatny audyt SEO!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/czestochowa"
-        ogTitle="Pozycjonowanie Częstochowa — Fotz Studio Agencja SEO"
-        ogDescription="Pozycjonowanie dla Częstochowy — turystyka religijna, Jasna Góra, 4-5M pielgrzymów. Niska konkurencja SEO, szybkie efekty. Audyt, optymalizacja, link building."
         keywords="pozycjonowanie częstochowa, agencja seo częstochowa, seo częstochowa, pozycjonowanie stron częstochowa, seo dla firm częstochowa, pozycjonowanie lokalne częstochowa"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Częstochowa"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Częstochowy. Specjalizacja w turystyce religijnej, usługach dla pielgrzymów i przemyśle. Niska konkurencja SEO, szybkie rezultaty. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        url="https://fotz.pl/uslugi/pozycjonowanie/czestochowa"
         provider="Fotz Studio"
         areaServed="Częstochowa"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Częstochowa", url: "https://fotz.pl/uslugi/pozycjonowanie/czestochowa" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

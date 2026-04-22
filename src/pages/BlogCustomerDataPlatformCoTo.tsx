@@ -103,10 +103,10 @@ export default function BlogCustomerDataPlatformCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/customer-data-platform-cdp-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -198,8 +198,6 @@ export default function BlogCustomerDataPlatformCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Doradzimy w budowie ekosystemu martech i first-party data"
-          subheading="CDP, analityka i personalizacja — pomagamy firmom przejść na marketing oparty na własnych danych."
         />
       </Layout>
     </>

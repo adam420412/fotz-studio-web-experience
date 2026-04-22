@@ -79,10 +79,10 @@ export default function BlogMarketingBudowlany() {
         url="https://fotz.pl/blog/marketing-firma-budowlana"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -302,8 +302,6 @@ export default function BlogMarketingBudowlany() {
         </FadeInView>
 
         <ContactSection
-          heading="Pomozemy Ci zbudowac marketing online dla firmy budowlanej"
-          subheading="SEO, Google Ads, strona internetowa i LinkedIn — pomagamy firmom budowlanych pozyskiwac klientow przez internet."
         />
       </Layout>
     </>

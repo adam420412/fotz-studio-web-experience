@@ -47,13 +47,11 @@ const BlogTikTokBiznes = () => {
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "TikTok dla biznesu", url: "https://fotz.pl/social-media/tiktok-biznes" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

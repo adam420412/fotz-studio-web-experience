@@ -47,13 +47,11 @@ const BlogVideoMarketing = () => {
         dateModified="2025-01-04"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Video Marketing 2025", url: "https://fotz.pl/blog/video-marketing-2025" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

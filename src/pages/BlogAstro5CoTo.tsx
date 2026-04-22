@@ -57,23 +57,19 @@ export default function BlogAstro5CoTo() {
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Astro 5", url: "https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-yellow-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Astro 5", href: "/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Astro 5", url: "/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-amber-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Astro / SSG / Islands Architecture
