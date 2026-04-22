@@ -75,7 +75,7 @@ export function Navbar() {
               <img
                 src={logoFotz}
                 alt="Fotz Studio"
-                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto"
+                className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto"
               />
             </Link>
 
