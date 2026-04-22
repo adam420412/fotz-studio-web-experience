@@ -174,6 +174,24 @@ export default function AdminDashboard() {
   const [articleCount, setArticleCount] = useState<number | null>(null);
   const [lastSyncedAt, setLastSyncedAt] = useState<string | null>(null);
 
+  // Webhook test state
+  const [isTestingWebhook, setIsTestingWebhook] = useState(false);
+  const [webhookTestResult, setWebhookTestResult] = useState<{
+    success?: boolean;
+    webhookUrl?: string;
+    summary?: { invalidTokenBlocked: boolean; validTokenAccepted: boolean };
+    results?: Array<{
+      scenario: string;
+      status: number;
+      ok: boolean;
+      body: unknown;
+      durationMs: number;
+      error?: string;
+    }>;
+    cleanup?: { deleted: boolean; error?: string };
+    error?: string;
+  } | null>(null);
+
   const { toast } = useToast();
 
   useEffect(() => {
@@ -382,6 +400,39 @@ export default function AdminDashboard() {
       });
     } finally {
       setIsSyncing(false);
+    }
+  };
+
+  const runWebhookTest = async () => {
+    setIsTestingWebhook(true);
+    setWebhookTestResult(null);
+    try {
+      const { data, error } = await supabase.functions.invoke("babylove-webhook-test", {
+        body: {},
+      });
+      if (error) throw error;
+      const ok =
+        data?.summary?.invalidTokenBlocked === true &&
+        data?.summary?.validTokenAccepted === true;
+      setWebhookTestResult({ success: ok, ...data });
+      toast({
+        title: ok ? "Webhook działa poprawnie" : "Webhook – wykryto problem",
+        description: ok
+          ? "Zły token: 401, prawidłowy token: 200."
+          : "Sprawdź szczegóły poniżej oraz logi.",
+        variant: ok ? "default" : "destructive",
+      });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Nieznany błąd";
+      console.error("Webhook test error:", error);
+      setWebhookTestResult({ success: false, error: message });
+      toast({
+        title: "Błąd testu webhooka",
+        description: message,
+        variant: "destructive",
+      });
+    } finally {
+      setIsTestingWebhook(false);
     }
   };
 
