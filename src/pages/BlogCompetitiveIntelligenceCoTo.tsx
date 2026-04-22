@@ -106,7 +106,7 @@ export default function BlogCompetitiveIntelligenceCoTo() {
       <SEOHead
         title="Competitive Intelligence | Fotz Studio"
         description="Competitive intelligence — definicja, 5 frameworków (SWOT, Porter, battlecard, win/loss), 6 źródeł danych i jak zbudować system monitorowania konkurencji…"
-        canonicalUrl="https://fotz.pl/blog/competitive-intelligence-co-to"
+        canonical="https://fotz.pl/blog/competitive-intelligence-co-to"
 
         keywords="Competitive Intelligence co to jest, Competitive Intelligence definicja, czym jest Competitive Intelligence, Competitive Intelligence przykłady, jak działa Competitive Intelligence, Competitive Intelligence znaczenie, Competitive Intelligence przewodnik"
 

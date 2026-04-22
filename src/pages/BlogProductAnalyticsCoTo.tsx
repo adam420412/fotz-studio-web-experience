@@ -121,7 +121,7 @@ export default function BlogProductAnalyticsCoTo() {
       <SEOHead
         title="Product Analytics | Fotz Studio"
         description="Product analytics — definicja, 6 kategorii metryk (acquisition, activation, engagement, retention, revenue, referral), typy analiz i narzędzia. Kompletny…"
-        canonicalUrl="https://fotz.pl/blog/product-analytics-co-to"
+        canonical="https://fotz.pl/blog/product-analytics-co-to"
 
         keywords="Product Analytics co to jest, Product Analytics definicja, czym jest Product Analytics, Product Analytics przykłady, jak działa Product Analytics, Product Analytics znaczenie, Product Analytics przewodnik"
 

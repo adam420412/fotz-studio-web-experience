@@ -78,7 +78,7 @@ export default function BlogInboundMarketingCoTo() {
       <SEOHead
         title="Inbound Marketing — co to jest i jak działa? Kompletny przewodnik"
         description="Inbound marketing — definicja, 4 etapy (Attract, Convert, Close, Delight), narzędzia i typy contentu. Kompletny przewodnik po marketingu przychodzącym."
-        canonicalUrl="https://fotz.pl/blog/inbound-marketing-co-to"
+        canonical="https://fotz.pl/blog/inbound-marketing-co-to"
 
         keywords="Inbound Marketing co to jest, Inbound Marketing definicja, czym jest Inbound Marketing, Inbound Marketing w marketingu, Inbound Marketing przykłady, jak działa Inbound Marketing, Inbound Marketing strategia"
 

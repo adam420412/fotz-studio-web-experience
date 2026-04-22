@@ -71,7 +71,7 @@ export default function BlogCennikFacebookAds() {
       <SEOHead
         title="Cennik Facebook Ads 2025 — ile kosztuje reklama na Facebooku?"
         description="Cennik Facebook Ads 2025: CPC, CPM, CPA, budżet minimalny, obsługa agencji. Stawki wg branż, modele rozliczania, rekomendacje budżetów dla małych firm."
-        canonicalUrl="https://fotz.pl/blog/cennik-facebook-ads"
+        canonical="https://fotz.pl/blog/cennik-facebook-ads"
 
         keywords="Cennik Facebook Ads 2025, Cennik Facebook Ads 2025 poradnik, Cennik Facebook Ads 2025 strategia, Cennik Facebook Ads 2025 jak zrobić, Cennik Facebook Ads 2025 marketing, Cennik Facebook Ads 2025 przykłady, Cennik Facebook Ads 2025 w Polsce"
 

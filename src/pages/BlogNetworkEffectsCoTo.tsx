@@ -78,7 +78,7 @@ export default function BlogNetworkEffectsCoTo() {
       <SEOHead
         title="Efekty Sieciowe (Network Effects) | Fotz Studio"
         description="Efekty sieciowe (network effects) — definicja, 4 typy (bezpośrednie, pośrednie, danych, lokalne), cold start problem i winner-takes-all dynamics…"
-        canonicalUrl="https://fotz.pl/blog/efekty-sieciowe-network-effects"
+        canonical="https://fotz.pl/blog/efekty-sieciowe-network-effects"
 
         keywords="Efekty Sieciowe (Network Effects) co to jest, Efekty Sieciowe (Network Effects) definicja, czym jest Efekty Sieciowe (Network Effects), Efekty Sieciowe (Network Effects) przykłady, jak działa Efekty Sieciowe (Network Effects), Efekty Sieciowe (Network Effects) znaczenie, Efekty Sieciowe (Network Effects) przewodnik"
 

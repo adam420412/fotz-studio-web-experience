@@ -69,7 +69,7 @@ export default function BlogValueSellingCoTo() {
       <SEOHead
         title="Value Selling | Fotz Studio"
         description="Value Selling — metodologia sprzedaży przez wartość i ROI: co to jest, jak zbudować business case, framework discovery i dla kogo sprawdza się najlepiej."
-        canonicalUrl="https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc"
+        canonical="https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc"
 
         keywords="Value Selling co to jest, Value Selling definicja, czym jest Value Selling, Value Selling przykłady, jak działa Value Selling, Value Selling znaczenie, Value Selling przewodnik"
 

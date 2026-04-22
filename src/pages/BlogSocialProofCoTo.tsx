@@ -58,7 +58,7 @@ export default function BlogSocialProofCoTo() {
       <SEOHead
         title="Social Proof | Fotz Studio"
         description="Social proof — definicja, 6 typów (opinie, logo, case studies, liczby, nagrody, wideo), jak zbierać testimoniale i gdzie umieszczać dowód społeczny…"
-        canonicalUrl="https://fotz.pl/blog/social-proof-co-to"
+        canonical="https://fotz.pl/blog/social-proof-co-to"
 
         keywords="Social Proof co to jest, Social Proof definicja, czym jest Social Proof, Social Proof w marketingu, Social Proof przykłady, jak działa Social Proof, Social Proof strategia"
 

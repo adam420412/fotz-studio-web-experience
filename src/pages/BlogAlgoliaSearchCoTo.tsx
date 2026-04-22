@@ -44,7 +44,7 @@ export default function BlogAlgoliaSearchCoTo() {
       <SEOHead
         title="Algolia, Typesense, Meilisearch | Fotz Studio"
         description="Algolia vs Typesense vs Meilisearch vs Elasticsearch — hosted i open-source search engines, InstantSearch, semantic search, vector search i RAG dla Next.js."
-        canonicalUrl="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
+        canonical="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
 
         keywords="Algolia, Typesense, Meilisearch co to jest, Algolia, Typesense, Meilisearch definicja, czym jest Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch przykłady, jak działa Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch znaczenie, Algolia, Typesense, Meilisearch przewodnik"
 

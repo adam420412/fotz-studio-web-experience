@@ -53,7 +53,7 @@ export default function BlogEbpfCoTo() {
       <SEOHead
         title="eBPF | Fotz Studio"
         description="eBPF: co to jest, architektura (BPF Maps, XDP, kprobes), zastosowania (networking, observability, security), Cilium, Pixie, Falco i jak zacząć."
-        canonicalUrl="https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
+        canonical="https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
 
         keywords="eBPF co to jest, eBPF jak działa, eBPF tutorial, eBPF przykład, czym jest eBPF, eBPF dokumentacja, eBPF przewodnik"
 

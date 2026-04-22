@@ -74,7 +74,7 @@ export default function BlogQuotaPlanningCoTo() {
       <SEOHead
         title="Quota Planning | Fotz Studio"
         description="Quota Planning: metodologie (top-down, bottom-up, market-based), ramp schedule, quota attainment benchmarks, metryki i jak planować quoty na rok."
-        canonicalUrl="https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
+        canonical="https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
 
         keywords="Quota Planning co to jest, Quota Planning definicja, czym jest Quota Planning, Quota Planning startup, Quota Planning jak liczyć, Quota Planning wzór, Quota Planning przykłady"
 

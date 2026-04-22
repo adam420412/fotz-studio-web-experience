@@ -83,7 +83,7 @@ export default function BlogDarkSocialCoTo() {
       <SEOHead
         title="Dark Social | Fotz Studio"
         description="Dark social — definicja, dlaczego 84% udostępnień jest niewidoczne, jak mierzyć dark social (UTM, short links, survey) i jak optymalizować marketing…"
-        canonicalUrl="https://fotz.pl/blog/dark-social-co-to"
+        canonical="https://fotz.pl/blog/dark-social-co-to"
 
         keywords="Dark Social co to jest, Dark Social definicja, czym jest Dark Social, Dark Social w marketingu, Dark Social przykłady, jak działa Dark Social, Dark Social strategia"
 

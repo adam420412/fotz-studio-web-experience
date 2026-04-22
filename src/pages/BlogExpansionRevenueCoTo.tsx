@@ -74,7 +74,7 @@ export default function BlogExpansionRevenueCoTo() {
       <SEOHead
         title="Expansion Revenue — upsell i cross-sell w SaaS | Fotz.pl"
         description="Expansion Revenue w SaaS — upsell, cross-sell, NRR, rola Customer Success w generowaniu expansion i playbook. Kompletny przewodnik dla CS i sprzedaży."
-        canonicalUrl="https://fotz.pl/blog/expansion-revenue-upsell-cross-sell-saas"
+        canonical="https://fotz.pl/blog/expansion-revenue-upsell-cross-sell-saas"
 
         keywords="Expansion Revenue co to jest, Expansion Revenue definicja, czym jest Expansion Revenue, Expansion Revenue startup, Expansion Revenue jak liczyć, Expansion Revenue wzór, Expansion Revenue przykłady"
 

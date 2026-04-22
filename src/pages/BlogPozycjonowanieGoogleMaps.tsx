@@ -69,7 +69,7 @@ export default function BlogPozycjonowanieGoogleMaps() {
       <SEOHead
         title="Pozycjonowanie w Google Maps | Fotz Studio"
         description="Pozycjonowanie Google Maps: jak działa Local Pack, czynniki rankingowe (opinie, NAP, cytowania), optymalizacja profilu Google Moja Firma, zbieranie…"
-        canonicalUrl="https://fotz.pl/blog/pozycjonowanie-google-maps"
+        canonical="https://fotz.pl/blog/pozycjonowanie-google-maps"
 
         keywords="Pozycjonowanie w Google Maps, Pozycjonowanie w Google Maps poradnik, Pozycjonowanie w Google Maps strategia, Pozycjonowanie w Google Maps jak zrobić, Pozycjonowanie w Google Maps marketing, Pozycjonowanie w Google Maps przykłady, Pozycjonowanie w Google Maps w Polsce"
 

@@ -93,7 +93,7 @@ export default function BlogFOMOMarketingCoTo() {
       <SEOHead
         title="FOMO Marketing | Fotz Studio"
         description="FOMO marketing — definicja, 6 technik (countdown, scarcity, social proof live), psychologia niedoboru i jak stosować FOMO etycznie. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/fomo-marketing-co-to"
+        canonical="https://fotz.pl/blog/fomo-marketing-co-to"
 
         keywords="FOMO Marketing co to jest, FOMO Marketing definicja, czym jest FOMO Marketing, FOMO Marketing w marketingu, FOMO Marketing przykłady, jak działa FOMO Marketing, FOMO Marketing strategia"
 

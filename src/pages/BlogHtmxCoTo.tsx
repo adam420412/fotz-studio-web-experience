@@ -44,7 +44,7 @@ export default function BlogHtmxCoTo() {
       <SEOHead
         title="HTMX | Fotz Studio"
         description="HTMX: hypermedia approach, hx-get/hx-post/hx-swap/hx-trigger, Out-of-Band swaps, SSE real-time, Alpine.js combo, Node.js/Go/Python templates i HTMX vs SPA…"
-        canonicalUrl="https://fotz.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
+        canonical="https://fotz.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
 
         keywords="HTMX co to jest, HTMX jak działa, HTMX tutorial, HTMX przykład, czym jest HTMX, HTMX dokumentacja, HTMX przewodnik"
 

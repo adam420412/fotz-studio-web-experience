@@ -44,7 +44,7 @@ export default function BlogDeploymentPlatformsCoTo() {
       <SEOHead
         title="Vercel, Netlify, Cloudflare Pages, Railway | Fotz Studio"
         description="Vercel vs Netlify vs Cloudflare Pages vs Railway vs Fly.io vs VPS (Hetzner+Coolify) — hosting Next.js, CI/CD, preview deployments, Docker i infrastruktura 2024."
-        canonicalUrl="https://fotz.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
+        canonical="https://fotz.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
 
         keywords="Vercel, Netlify, Cloudflare Pages, Railway co to jest, Vercel, Netlify, Cloudflare Pages, Railway jak działa, Vercel, Netlify, Cloudflare Pages, Railway tutorial, Vercel, Netlify, Cloudflare Pages, Railway przykład, czym jest Vercel, Netlify, Cloudflare Pages, Railway, Vercel, Netlify, Cloudflare Pages, Railway dokumentacja, Vercel, Netlify, Cloudflare Pages, Railway przewodnik"
 

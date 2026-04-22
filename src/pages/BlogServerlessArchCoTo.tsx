@@ -52,7 +52,7 @@ export default function BlogServerlessArchCoTo() {
       <SEOHead
         title="Architektura Serverless | Fotz Studio"
         description="Serverless: AWS Lambda, Google Cloud Run, Azure Functions, Step Functions, cold starts, event-driven patterns i optymalizacja kosztów — kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions"
+        canonical="https://fotz.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions"
 
         keywords="Architektura Serverless co to jest, Architektura Serverless jak działa, Architektura Serverless tutorial, Architektura Serverless przykład, czym jest Architektura Serverless, Architektura Serverless dokumentacja, Architektura Serverless przewodnik"
 

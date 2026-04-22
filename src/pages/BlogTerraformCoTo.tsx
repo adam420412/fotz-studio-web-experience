@@ -113,7 +113,7 @@ export default function BlogTerraformCoTo() {
       <SEOHead
         title="Terraform — co to jest? IaC, HCL, resources i workflow"
         description="Terraform — definicja, Infrastructure as Code, pojęcia (Provider, Resource, Module, State), workflow i best practices. Kompletny przewodnik po Terraform."
-        canonicalUrl="https://fotz.pl/blog/terraform-co-to-jest"
+        canonical="https://fotz.pl/blog/terraform-co-to-jest"
 
         keywords="Terraform co to jest, Terraform definicja, czym jest Terraform, Terraform przykłady, jak działa Terraform, Terraform znaczenie, Terraform przewodnik"
 

@@ -86,7 +86,7 @@ export default function BlogCompetitiveMoatCoTo() {
       <SEOHead
         title="Competitive Moat | Fotz Studio"
         description="Economic moat (fosa ekonomiczna) — definicja, 5 typów (network effects, switching costs, cost advantage, intangibles, efficient scale), jak oceniać i…"
-        canonicalUrl="https://fotz.pl/blog/competitive-moat-co-to"
+        canonical="https://fotz.pl/blog/competitive-moat-co-to"
 
         keywords="Competitive Moat co to jest, Competitive Moat definicja, czym jest Competitive Moat, Competitive Moat przykłady, jak działa Competitive Moat, Competitive Moat znaczenie, Competitive Moat przewodnik"
 

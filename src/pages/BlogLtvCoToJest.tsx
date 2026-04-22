@@ -102,7 +102,7 @@ export default function BlogLtvCoToJest() {
       <SEOHead
         title="LTV co to jest — Customer Lifetime Value w SaaS | Fotz.pl"
         description="LTV (Customer Lifetime Value) — co to jest, jak obliczyć, wpływ churnu na LTV, formuły i strategie wzrostu wartości życiowej klienta. Kompletny przewodnik SaaS."
-        canonicalUrl="https://fotz.pl/blog/ltv-customer-lifetime-value-co-to"
+        canonical="https://fotz.pl/blog/ltv-customer-lifetime-value-co-to"
 
         keywords="LTV co to jest, LTV definicja, czym jest LTV, LTV startup, LTV jak liczyć, LTV wzór, LTV przykłady"
 

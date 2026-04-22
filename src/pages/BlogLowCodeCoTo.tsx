@@ -53,7 +53,7 @@ export default function BlogLowCodeCoTo() {
       <SEOHead
         title="Low-Code i No-Code | Fotz Studio"
         description="Low-Code i No-Code: Retool, Bubble, Webflow, Airtable, n8n — kiedy używać, porównanie platform, use cases i kiedy wybrać custom development."
-        canonicalUrl="https://fotz.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
+        canonical="https://fotz.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
 
         keywords="Low-Code i No-Code co to jest, Low-Code i No-Code definicja, czym jest Low-Code i No-Code, Low-Code i No-Code przykłady, jak działa Low-Code i No-Code, Low-Code i No-Code znaczenie, Low-Code i No-Code przewodnik"
 

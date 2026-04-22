@@ -44,7 +44,7 @@ export default function BlogHttpClientsCoTo() {
       <SEOHead
         title="HTTP clients TypeScript | Fotz Studio"
         description="HTTP clients TypeScript 2024: Fetch API (natywny), Axios (interceptory), ky (2KB, hooks), ofetch (Nuxt/universal), TanStack Query (caching) — error…"
-        canonicalUrl="https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
+        canonical="https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
 
         keywords="HTTP clients TypeScript co to jest, HTTP clients TypeScript jak działa, HTTP clients TypeScript tutorial, HTTP clients TypeScript przykład, czym jest HTTP clients TypeScript, HTTP clients TypeScript dokumentacja, HTTP clients TypeScript przewodnik"
 

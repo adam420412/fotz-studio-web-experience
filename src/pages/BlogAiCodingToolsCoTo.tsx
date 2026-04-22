@@ -44,7 +44,7 @@ export default function BlogAiCodingToolsCoTo() {
       <SEOHead
         title="AI coding tools 2024 | Fotz Studio"
         description="AI coding tools 2024: GitHub Copilot (GPT-4o/Claude), Cursor (codebase context), Windsurf (Cascade), Continue.dev (open-source), Aider (CLI) i jak wybrać…"
-        canonicalUrl="https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
+        canonical="https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
 
         keywords="AI coding tools 2024 co to jest, AI coding tools 2024 definicja, czym jest AI coding tools 2024, AI coding tools 2024 przykłady, jak działa AI coding tools 2024, AI coding tools 2024 znaczenie, AI coding tools 2024 przewodnik"
 

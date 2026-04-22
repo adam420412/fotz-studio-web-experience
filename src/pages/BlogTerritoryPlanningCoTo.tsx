@@ -75,7 +75,7 @@ export default function BlogTerritoryPlanningCoTo() {
       <SEOHead
         title="Territory Planning | Fotz Studio"
         description="Territory planning: modele podziału (geograficzny, vertical, named accounts), równość terytoriów, named accounts management i wpływ na wyniki sprzedaży."
-        canonicalUrl="https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
+        canonical="https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
 
         keywords="Territory Planning co to jest, Territory Planning definicja, czym jest Territory Planning, Territory Planning w sprzedaży, Territory Planning strategia, Territory Planning przykłady, jak używać Territory Planning"
 

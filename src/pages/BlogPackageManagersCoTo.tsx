@@ -44,7 +44,7 @@ export default function BlogPackageManagersCoTo() {
       <SEOHead
         title="npm vs pnpm vs yarn vs Bun | Fotz Studio"
         description="npm vs pnpm (content-addressable) vs yarn Berry (PnP) vs Bun — szybkość, disk usage, workspaces, package.json exports, nvm/fnm/Volta i Node.js versioning."
-        canonicalUrl="https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
+        canonical="https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
 
         keywords="npm vs pnpm vs yarn vs Bun co to jest, npm vs pnpm vs yarn vs Bun jak działa, npm vs pnpm vs yarn vs Bun tutorial, npm vs pnpm vs yarn vs Bun przykład, czym jest npm vs pnpm vs yarn vs Bun, npm vs pnpm vs yarn vs Bun dokumentacja, npm vs pnpm vs yarn vs Bun przewodnik"
 

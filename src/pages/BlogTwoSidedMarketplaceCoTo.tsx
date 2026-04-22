@@ -80,7 +80,7 @@ export default function BlogTwoSidedMarketplaceCoTo() {
       <SEOHead
         title="Two-Sided Marketplace — co to jest i jak budować? | Fotz.pl"
         description="Dwustronny rynek (two-sided marketplace): jak działa, cold start problem, modele monetyzacji, efekty sieciowe i kluczowe metryki. Przewodnik dla założycieli."
-        canonicalUrl="https://fotz.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
+        canonical="https://fotz.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
 
         keywords="Two-Sided Marketplace co to jest, Two-Sided Marketplace definicja, czym jest Two-Sided Marketplace, Two-Sided Marketplace przykłady, jak działa Two-Sided Marketplace, Two-Sided Marketplace znaczenie, Two-Sided Marketplace przewodnik"
 

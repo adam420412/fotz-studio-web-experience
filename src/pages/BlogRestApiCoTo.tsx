@@ -122,7 +122,7 @@ export default function BlogRestApiCoTo() {
       <SEOHead
         title="REST API — co to jest? Metody HTTP, zasady i projektowanie"
         description="REST API — definicja, 6 zasad REST, metody HTTP (GET/POST/PUT/PATCH/DELETE), kody statusu i best practices projektowania. Kompletny przewodnik po REST API."
-        canonicalUrl="https://fotz.pl/blog/rest-api-co-to"
+        canonical="https://fotz.pl/blog/rest-api-co-to"
 
         keywords="REST API co to jest, REST API jak działa, REST API tutorial, REST API przykład, czym jest REST API, REST API dokumentacja, REST API przewodnik"
 

@@ -55,7 +55,7 @@ export default function BlogFunnelAnalyticsCoTo() {
       <SEOHead
         title="Funnel Analytics | Fotz Studio"
         description="Funnel analytics — definicja, 4 rodzaje funneli (acquisition, onboarding, checkout, trial-to-paid), metryki (conversion rate, drop-off) i jak…"
-        canonicalUrl="https://fotz.pl/blog/funnel-analytics-co-to"
+        canonical="https://fotz.pl/blog/funnel-analytics-co-to"
 
         keywords="Funnel Analytics co to jest, Funnel Analytics definicja, czym jest Funnel Analytics, Funnel Analytics przykłady, jak działa Funnel Analytics, Funnel Analytics znaczenie, Funnel Analytics przewodnik"
 

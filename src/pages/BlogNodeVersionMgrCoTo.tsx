@@ -44,7 +44,7 @@ export default function BlogNodeVersionMgrCoTo() {
       <SEOHead
         title="Volta, fnm, mise, nvm i Corepack | Fotz Studio"
         description="Node.js version managers 2024: Volta (Rust, package.json pin), fnm (szybki), mise (polyglot), nvm (klasyk), nvm-windows i Corepack (package manager…"
-        canonicalUrl="https://fotz.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024"
+        canonical="https://fotz.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024"
 
         keywords="Volta, fnm, mise, nvm i Corepack co to jest, Volta, fnm, mise, nvm i Corepack jak działa, Volta, fnm, mise, nvm i Corepack tutorial, Volta, fnm, mise, nvm i Corepack przykład, czym jest Volta, fnm, mise, nvm i Corepack, Volta, fnm, mise, nvm i Corepack dokumentacja, Volta, fnm, mise, nvm i Corepack przewodnik"
 

@@ -107,7 +107,7 @@ export default function BlogServiceBlueprintCoTo() {
       <SEOHead
         title="Service Blueprint — co to jest? Mapa usługi w service design"
         description="Service blueprint (mapa usługi) — definicja, 5 warstw blueprintu, różnica vs customer journey map i jak tworzyć. Kompletny przewodnik po narzędziu service…"
-        canonicalUrl="https://fotz.pl/blog/service-blueprint-co-to"
+        canonical="https://fotz.pl/blog/service-blueprint-co-to"
 
         keywords="Service Blueprint co to jest, Service Blueprint definicja, czym jest Service Blueprint, Service Blueprint przykłady, jak działa Service Blueprint, Service Blueprint znaczenie, Service Blueprint przewodnik"
 

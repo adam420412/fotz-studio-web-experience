@@ -44,7 +44,7 @@ export default function BlogNextFontCoTo() {
       <SEOHead
         title="next/font, Variable Fonts, FOUT/FOIT i Font Optimization"
         description="next/font (Google Fonts self-hosting, CLS=0, size-adjust), variable fonts (wght oś), font-display: optional, FOUT/FOIT eliminacja i Fontsource …"
-        canonicalUrl="https://fotz.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024"
+        canonical="https://fotz.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024"
 
         keywords="next/font, Variable Fonts, FOUT/FOIT i Font Optimization co to jest, next/font, Variable Fonts, FOUT/FOIT i Font Optimization jak działa, next/font, Variable Fonts, FOUT/FOIT i Font Optimization tutorial, next/font, Variable Fonts, FOUT/FOIT i Font Optimization przykład, czym jest next/font, Variable Fonts, FOUT/FOIT i Font Optimization, next/font, Variable Fonts, FOUT/FOIT i Font Optimization dokumentacja, next/font, Variable Fonts, FOUT/FOIT i Font Optimization przewodnik"
 

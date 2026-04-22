@@ -65,7 +65,7 @@ export default function BlogCiCdCoTo() {
       <SEOHead
         title="CI/CD — co to jest? Continuous Integration i Continuous Delivery"
         description="CI/CD — definicja, 8 etapów pipeline, 4 strategie wdrożenia (Blue-Green, Canary, Rolling, Feature Flags) i DORA Metrics. Kompletny przewodnik po CI/CD."
-        canonicalUrl="https://fotz.pl/blog/ci-cd-co-to-jest"
+        canonical="https://fotz.pl/blog/ci-cd-co-to-jest"
 
         keywords="CI/CD co to jest, CI/CD definicja, czym jest CI/CD, CI/CD przykłady, jak działa CI/CD, CI/CD znaczenie, CI/CD przewodnik"
 

@@ -52,7 +52,7 @@ export default function BlogChurnPredictionCoTo() {
       <SEOHead
         title="Churn Prediction | Fotz Studio"
         description="Churn Prediction: budowanie modelu ML, sygnały churnu (usage drop, NPS Detractor, champion loss), playbooks interwencji i metryki skuteczności dla firm SaaS."
-        canonicalUrl="https://fotz.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
+        canonical="https://fotz.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
 
         keywords="Churn Prediction co to jest, Churn Prediction definicja, czym jest Churn Prediction, Churn Prediction startup, Churn Prediction jak liczyć, Churn Prediction wzór, Churn Prediction przykłady"
 

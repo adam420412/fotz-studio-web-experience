@@ -67,7 +67,7 @@ export default function BlogKafkaCoTo() {
       <SEOHead
         title="Apache Kafka | Fotz Studio"
         description="Apache Kafka — definicja, architektura (Topic, Partition, Broker, Consumer Group), przypadki użycia i porównanie z RabbitMQ. Kompletny przewodnik po Kafka."
-        canonicalUrl="https://fotz.pl/blog/kafka-co-to-jest"
+        canonical="https://fotz.pl/blog/kafka-co-to-jest"
 
         keywords="Apache Kafka co to jest, Apache Kafka definicja, czym jest Apache Kafka, Apache Kafka przykłady, jak działa Apache Kafka, Apache Kafka znaczenie, Apache Kafka przewodnik"
 

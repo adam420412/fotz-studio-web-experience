@@ -94,7 +94,7 @@ export default function BlogAccessibilityWebCoTo() {
       <SEOHead
         title="Dostępność Stron Internetowych | Fotz Studio"
         description="Dostępność stron internetowych — definicja, 4 zasady WCAG (POUR), poziomy A/AA/AAA, wymogi prawne w Polsce i checklist audytu dostępności cyfrowej."
-        canonicalUrl="https://fotz.pl/blog/dostepnosc-stron-internetowych"
+        canonical="https://fotz.pl/blog/dostepnosc-stron-internetowych"
 
         keywords="Dostępność Stron Internetowych co to jest, Dostępność Stron Internetowych definicja, czym jest Dostępność Stron Internetowych, Dostępność Stron Internetowych przykłady, jak działa Dostępność Stron Internetowych, Dostępność Stron Internetowych znaczenie, Dostępność Stron Internetowych przewodnik"
 

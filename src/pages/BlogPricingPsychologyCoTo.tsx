@@ -92,7 +92,7 @@ export default function BlogPricingPsychologyCoTo() {
       <SEOHead
         title="Psychologia cen | Fotz Studio"
         description="Psychologia cen — charm pricing, anchoring, efekt decoy i ramowanie cen. Kompletny przewodnik po technikach pricing psychology zwiększających konwersję."
-        canonicalUrl="https://fotz.pl/blog/psychologia-cen-co-to"
+        canonical="https://fotz.pl/blog/psychologia-cen-co-to"
 
         keywords="Psychologia cen co to jest, Psychologia cen definicja, czym jest Psychologia cen, Psychologia cen w marketingu, Psychologia cen przykłady, jak działa Psychologia cen, Psychologia cen strategia"
 

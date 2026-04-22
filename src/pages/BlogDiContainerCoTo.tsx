@@ -44,7 +44,7 @@ export default function BlogDiContainerCoTo() {
       <SEOHead
         title="Dependency Injection, SOLID, Design Patterns | Fotz Studio"
         description="Dependency Injection w TypeScript, Inversify, SOLID principles, GoF patterns (Singleton, Factory, Strategy, Observer), Clean Architecture i Hexagonal…"
-        canonicalUrl="https://fotz.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
+        canonical="https://fotz.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
 
         keywords="Dependency Injection, SOLID, Design Patterns co to jest, Dependency Injection, SOLID, Design Patterns jak działa, Dependency Injection, SOLID, Design Patterns tutorial, Dependency Injection, SOLID, Design Patterns przykład, czym jest Dependency Injection, SOLID, Design Patterns, Dependency Injection, SOLID, Design Patterns dokumentacja, Dependency Injection, SOLID, Design Patterns przewodnik"
 

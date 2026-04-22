@@ -81,7 +81,7 @@ export default function BlogMultichannelMarketingCoTo() {
       <SEOHead
         title="Multichannel Marketing | Fotz Studio"
         description="Multichannel marketing — definicja, różnice vs. omnichannel, 6 kanałów (sklep, www, email, social, ads, marketplace), 5-krokowy proces. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/multichannel-marketing-co-to"
+        canonical="https://fotz.pl/blog/multichannel-marketing-co-to"
 
         keywords="Multichannel Marketing co to jest, Multichannel Marketing definicja, czym jest Multichannel Marketing, Multichannel Marketing w marketingu, Multichannel Marketing przykłady, jak działa Multichannel Marketing, Multichannel Marketing strategia"
 

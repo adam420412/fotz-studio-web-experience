@@ -44,7 +44,7 @@ export default function BlogPasskeysWebAuthnCoTo() {
       <SEOHead
         title="Passkeys i WebAuthn | Fotz Studio"
         description="Passkeys i WebAuthn 2024: jak działają (FIDO2, kryptografia), implementacja w Next.js (SimpleWebAuthn, @simplewebauthn/server), conditional UI, YubiKey…"
-        canonicalUrl="https://fotz.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024"
+        canonical="https://fotz.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024"
 
         keywords="Passkeys i WebAuthn co to jest, Passkeys i WebAuthn jak działa, Passkeys i WebAuthn tutorial, Passkeys i WebAuthn przykład, czym jest Passkeys i WebAuthn, Passkeys i WebAuthn dokumentacja, Passkeys i WebAuthn przewodnik"
 

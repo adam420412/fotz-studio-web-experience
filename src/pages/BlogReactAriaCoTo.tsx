@@ -44,7 +44,7 @@ export default function BlogReactAriaCoTo() {
       <SEOHead
         title="React Aria, AriaKit i WCAG | Fotz Studio"
         description="React Aria (Adobe headless hooks), AriaKit (composable primitives), WAI-ARIA patterns, jest-axe (testowanie a11y), screen reader testing i WCAG 2.1…"
-        canonicalUrl="https://fotz.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024"
+        canonical="https://fotz.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024"
 
         keywords="React Aria, AriaKit i WCAG co to jest, React Aria, AriaKit i WCAG jak działa, React Aria, AriaKit i WCAG tutorial, React Aria, AriaKit i WCAG przykład, czym jest React Aria, AriaKit i WCAG, React Aria, AriaKit i WCAG dokumentacja, React Aria, AriaKit i WCAG przewodnik"
 

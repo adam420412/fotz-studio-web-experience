@@ -92,7 +92,7 @@ export default function BlogCreatorEconomyCoTo() {
       <SEOHead
         title="Creator Economy | Fotz Studio"
         description="Creator economy — definicja, modele zarobkowe, tiery twórców (nano/micro/macro), platformy i jak marki mogą współpracować z creator economy."
-        canonicalUrl="https://fotz.pl/blog/creator-economy-co-to"
+        canonical="https://fotz.pl/blog/creator-economy-co-to"
 
         keywords="Creator Economy co to jest, Creator Economy definicja, czym jest Creator Economy, Creator Economy przykłady, jak działa Creator Economy, Creator Economy znaczenie, Creator Economy przewodnik"
 

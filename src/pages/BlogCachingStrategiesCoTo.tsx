@@ -44,7 +44,7 @@ export default function BlogCachingStrategiesCoTo() {
       <SEOHead
         title="Strategie cache | Fotz Studio"
         description="Strategie cache: Cache-Aside vs Write-Through vs Write-Behind, cache invalidation, cache stampede, Redis eviction policies, multi-level cache…"
-        canonicalUrl="https://fotz.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
+        canonical="https://fotz.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
 
         keywords="Strategie cache co to jest, Strategie cache jak działa, Strategie cache tutorial, Strategie cache przykład, czym jest Strategie cache, Strategie cache dokumentacja, Strategie cache przewodnik"
 

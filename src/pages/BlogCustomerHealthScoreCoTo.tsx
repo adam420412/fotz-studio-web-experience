@@ -49,7 +49,7 @@ export default function BlogCustomerHealthScoreCoTo() {
       <SEOHead
         title="Customer Health Score — co to jest i jak zbudować? | Fotz.pl"
         description="Customer Health Score: jak zbudować model, sygnały (usage, NPS, support, engagement), progi RAG, playbooks CSM i narzędzia (Gainsight, ChurnZero, Planhat)."
-        canonicalUrl="https://fotz.pl/blog/customer-health-score-co-to-jest-jak-zbudowac"
+        canonical="https://fotz.pl/blog/customer-health-score-co-to-jest-jak-zbudowac"
 
         keywords="Customer Health Score co to jest, Customer Health Score definicja, czym jest Customer Health Score, Customer Health Score przykłady, jak działa Customer Health Score, Customer Health Score znaczenie, Customer Health Score przewodnik"
 

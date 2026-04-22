@@ -80,7 +80,7 @@ export default function BlogPromptEngineeringCoTo() {
       <SEOHead
         title="Prompt Engineering | Fotz Studio"
         description="Prompt Engineering: techniki (zero-shot, few-shot, Chain-of-Thought, Role Prompting), system prompt, ewaluacja promptów i anti-patterns dla aplikacji LLM."
-        canonicalUrl="https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
+        canonical="https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
 
         keywords="Prompt Engineering co to jest, Prompt Engineering definicja, czym jest Prompt Engineering, Prompt Engineering przykłady, jak działa Prompt Engineering, Prompt Engineering znaczenie, Prompt Engineering przewodnik"
 

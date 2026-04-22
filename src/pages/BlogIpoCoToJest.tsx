@@ -48,7 +48,7 @@ export default function BlogIpoCoToJest() {
       <SEOHead
         title="IPO — co to jest i jak wygląda debiut giełdowy? | Fotz.pl"
         description="IPO (Initial Public Offering) — proces debiutu giełdowego, fazy IPO, alternatywy (SPAC, direct listing) i ryzyka. Kompletny przewodnik dla founderów i…"
-        canonicalUrl="https://fotz.pl/blog/ipo-co-to-jest-debiut-gieldowy"
+        canonical="https://fotz.pl/blog/ipo-co-to-jest-debiut-gieldowy"
 
         keywords="IPO co to jest, IPO definicja, czym jest IPO, IPO przykłady, jak działa IPO, IPO znaczenie, IPO przewodnik"
 

@@ -44,7 +44,7 @@ export default function BlogOpenAiAssistantsCoTo() {
       <SEOHead
         title="OpenAI Assistants API | Fotz Studio"
         description="OpenAI Assistants API v2 (Threads, Messages, Runs), File Search (Vector Store, RAG), Code Interpreter (Python sandbox), Function Calling i streaming SSE w…"
-        canonicalUrl="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
+        canonical="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
 
         keywords="OpenAI Assistants API co to jest, OpenAI Assistants API jak działa, OpenAI Assistants API tutorial, OpenAI Assistants API przykład, czym jest OpenAI Assistants API, OpenAI Assistants API dokumentacja, OpenAI Assistants API przewodnik"
 

@@ -44,7 +44,7 @@ export default function BlogHonoFastifyCoTo() {
       <SEOHead
         title="Hono, Fastify, Express | Fotz Studio"
         description="Hono (edge), Fastify (schema), Express 5, NestJS, Elysia (Bun) — porównanie Node.js frameworks, REST API best practices, kiedy co wybrać w 2024."
-        canonicalUrl="https://fotz.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
+        canonical="https://fotz.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
 
         keywords="Hono, Fastify, Express co to jest, Hono, Fastify, Express jak działa, Hono, Fastify, Express tutorial, Hono, Fastify, Express przykład, czym jest Hono, Fastify, Express, Hono, Fastify, Express dokumentacja, Hono, Fastify, Express przewodnik"
 

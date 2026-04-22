@@ -44,7 +44,7 @@ export default function BlogRemixDeepDiveCoTo() {
       <SEOHead
         title="Remix.js | Fotz Studio"
         description="Remix.js: nested routes, loader/action (SSR data fetching), defer() streaming, useFetcher (optimistic UI), cookie sessions, progressive enhancement i…"
-        canonicalUrl="https://fotz.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
+        canonical="https://fotz.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
 
         keywords="Remix.js co to jest, Remix.js definicja, czym jest Remix.js, Remix.js przykłady, jak działa Remix.js, Remix.js znaczenie, Remix.js przewodnik"
 

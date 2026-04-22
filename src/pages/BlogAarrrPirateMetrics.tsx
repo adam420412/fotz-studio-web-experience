@@ -87,7 +87,7 @@ export default function BlogAarrrPirateMetrics() {
       <SEOHead
         title="AARRR Pirate Metrics — framework wzrostu startupu | Fotz.pl"
         description="AARRR Pirate Metrics — Acquisition, Activation, Retention, Revenue, Referral. Jak używać frameworku do identyfikacji bottlenecków wzrostu. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
+        canonical="https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
 
         keywords="AARRR Pirate Metrics, AARRR Pirate Metrics co to jest, AARRR Pirate Metrics jak działa, AARRR Pirate Metrics definicja, AARRR Pirate Metrics przykłady, AARRR Pirate Metrics poradnik, AARRR Pirate Metrics przewodnik"
 

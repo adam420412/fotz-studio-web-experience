@@ -118,7 +118,7 @@ export default function BlogCommunityLedGrowthCoTo() {
       <SEOHead
         title="Community-Led Growth — co to jest? Wzrost napędzany społecznością"
         description="Community-led growth — definicja, 6 etapów wzrostu (awareness → referral), 4 modele community, metryki CLG i kiedy warto inwestować. Kompletny przewodnik."
-        canonicalUrl="https://fotz.pl/blog/community-led-growth-co-to"
+        canonical="https://fotz.pl/blog/community-led-growth-co-to"
 
         keywords="Community-Led Growth co to jest, Community-Led Growth definicja, czym jest Community-Led Growth, Community-Led Growth przykłady, jak działa Community-Led Growth, Community-Led Growth znaczenie, Community-Led Growth przewodnik"
 

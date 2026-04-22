@@ -44,7 +44,7 @@ export default function BlogCssCustomPropsCoTo() {
       <SEOHead
         title="CSS Custom Properties | Fotz Studio"
         description="CSS Custom Properties: design tokens (primitive/semantic/component), @property animacje, dark mode theming, fluid tokens z clamp(), TypeScript i…"
-        canonicalUrl="https://fotz.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
+        canonical="https://fotz.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
 
         keywords="CSS Custom Properties co to jest, CSS Custom Properties definicja, czym jest CSS Custom Properties, CSS Custom Properties przykłady, jak działa CSS Custom Properties, CSS Custom Properties znaczenie, CSS Custom Properties przewodnik"
 

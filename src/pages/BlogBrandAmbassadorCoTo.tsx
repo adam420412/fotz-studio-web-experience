@@ -105,7 +105,7 @@ export default function BlogBrandAmbassadorCoTo() {
       <SEOHead
         title="Brand Ambassador | Fotz Studio"
         description="Brand ambassador — definicja, 5 typów ambasadorów (celebrity, influencer, ekspert, klient, pracownik), 6-etapowy program ambasadorski i koszty. Kompletny…"
-        canonicalUrl="https://fotz.pl/blog/brand-ambassador-co-to"
+        canonical="https://fotz.pl/blog/brand-ambassador-co-to"
 
         keywords="Brand Ambassador co to jest, Brand Ambassador definicja, czym jest Brand Ambassador, Brand Ambassador w marketingu, Brand Ambassador przykłady, jak działa Brand Ambassador, Brand Ambassador strategia"
 

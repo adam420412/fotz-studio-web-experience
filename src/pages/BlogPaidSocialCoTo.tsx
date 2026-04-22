@@ -92,7 +92,7 @@ export default function BlogPaidSocialCoTo() {
       <SEOHead
         title="Paid Social | Fotz Studio"
         description="Paid social — definicja, porównanie platform (Meta, LinkedIn, TikTok, Pinterest), formaty reklam, metryki (ROAS, CPM, CPA) i jak targetować. Przewodnik po…"
-        canonicalUrl="https://fotz.pl/blog/paid-social-co-to"
+        canonical="https://fotz.pl/blog/paid-social-co-to"
 
         keywords="Paid Social co to jest, Paid Social definicja, czym jest Paid Social, Paid Social w marketingu, Paid Social przykłady, jak działa Paid Social, Paid Social strategia"
 

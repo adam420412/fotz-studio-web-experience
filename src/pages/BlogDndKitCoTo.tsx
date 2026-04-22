@@ -44,7 +44,7 @@ export default function BlogDndKitCoTo() {
       <SEOHead
         title="dnd-kit | Fotz Studio"
         description="dnd-kit (useSortable, DndContext, SortableContext), kanban drag między kolumnami, Pragmatic Drag and Drop (Atlassian) — porównanie bibliotek DnD dla React…"
-        canonicalUrl="https://fotz.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
+        canonical="https://fotz.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
 
         keywords="dnd-kit co to jest, dnd-kit jak działa, dnd-kit tutorial, dnd-kit przykład, czym jest dnd-kit, dnd-kit dokumentacja, dnd-kit przewodnik"
 

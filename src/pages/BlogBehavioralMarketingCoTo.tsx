@@ -82,7 +82,7 @@ export default function BlogBehavioralMarketingCoTo() {
       <SEOHead
         title="Behavioral Marketing | Fotz Studio"
         description="Behavioral marketing (marketing behawioralny) — definicja, 5 segmentów behawioralnych, 6 triggerów (abandoned cart, browse abandonment) i RODO. Kompletny…"
-        canonicalUrl="https://fotz.pl/blog/behavioral-marketing-co-to"
+        canonical="https://fotz.pl/blog/behavioral-marketing-co-to"
 
         keywords="Behavioral Marketing co to jest, Behavioral Marketing definicja, czym jest Behavioral Marketing, Behavioral Marketing w marketingu, Behavioral Marketing przykłady, jak działa Behavioral Marketing, Behavioral Marketing strategia"
 
