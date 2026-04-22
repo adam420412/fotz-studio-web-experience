@@ -84,12 +84,10 @@ export default function AgencjaMarketingowaZabrze() {
           provider="Fotz Studio"
           areaServed="Zabrze"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja Marketingowa Zabrze", url: "https://fotz.pl/agencja-marketingowa/zabrze" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

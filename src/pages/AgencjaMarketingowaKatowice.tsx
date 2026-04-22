@@ -152,13 +152,11 @@ export default function AgencjaMarketingowaKatowice() {
           areaServed="Katowice"
         />
 
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
             { name: "Katowice", url: "https://fotz.pl/agencja-marketingowa/katowice" }
-          ]}
-        />
+          ]}/>
 
         <FAQSchema items={faqItems} />
 

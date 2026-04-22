@@ -100,12 +100,10 @@ export default function AgencjaMarketingowaOlsztyn() {
           provider="fotz.pl"
           areaServed="Olsztyn"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja Marketingowa Olsztyn", url: "https://fotz.pl/agencja-marketingowa-olsztyn" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

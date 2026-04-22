@@ -84,12 +84,10 @@ export default function AgencjaMarketingowaGliwice() {
           provider="Fotz Studio"
           areaServed="Gliwice"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja Marketingowa Gliwice", url: "https://fotz.pl/agencja-marketingowa/gliwice" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

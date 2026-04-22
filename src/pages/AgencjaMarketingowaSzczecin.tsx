@@ -21,24 +21,20 @@ export default function AgencjaMarketingowaSzczecin() {
         keywords="agencja marketingowa szczecin, marketing internetowy szczecin, agencja reklamowa szczecin, kampanie reklamowe szczecin, seo szczecin, google ads szczecin"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Home", url: "https://fotz.pl" },
           { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
           { name: "Szczecin", url: "https://fotz.pl/agencja-marketingowa/szczecin" },
-        ]}
-      />
+        ]}/>
 
       <ServiceSchema
         name="Agencja Marketingowa Szczecin"
         description="Kompleksowe usługi marketingowe dla firm w Szczecinie: SEO, Google Ads, Social Media, strony internetowe i copywriting."
         areaServed="Szczecin"
-        telephone="+48531234567"
-        url="https://fotz.pl/agencja-marketingowa/szczecin"
       />
 
       <FAQSchema
-        faqs={[
+        items={[
           {
             question: "Ile kosztuje agencja marketingowa w Szczecinie?",
             answer: "Ceny zaczynają się od 2500 zł/miesiąc za pakiet STARTER. Każde wyceny dostosowujemy indywidualnie do potrzeb firmy. Oferujemy bezpłatną konsultację.",

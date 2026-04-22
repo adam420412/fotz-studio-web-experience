@@ -175,12 +175,10 @@ export default function AgencjaMarketingowaBialystok() {
           provider="Fotz Studio"
           areaServed="Bialystok"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja Marketingowa Białystok", url: "https://fotz.pl/agencja-marketingowa/bialystok" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

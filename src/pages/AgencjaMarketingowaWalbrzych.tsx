@@ -117,12 +117,10 @@ export default function AgencjaMarketingowaWalbrzych() {
           provider="Fotz Studio"
           areaServed="Wałbrzych"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja marketingowa Wałbrzych", url: "https://fotz.pl/agencja-marketingowa/walbrzych" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

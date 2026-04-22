@@ -100,12 +100,10 @@ export default function AgencjaMarketingowaTorun() {
           provider="Fotz Studio"
           areaServed="Toruń"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja Marketingowa Toruń", url: "https://fotz.pl/agencja-marketingowa-torun" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

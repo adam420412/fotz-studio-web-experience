@@ -148,13 +148,11 @@ const AgencjaMarketingowaKielce = () => {
         provider="fotz studio"
         areaServed="Kielce"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Agencja marketingowa", url: "https://fotz.pl/agencja" },
           { name: "Kielce", url: "https://fotz.pl/agencja-marketingowa/kielce" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map((item) => ({ question: item.question, answer: item.answer }))} />
       <OrganizationSchema />
 

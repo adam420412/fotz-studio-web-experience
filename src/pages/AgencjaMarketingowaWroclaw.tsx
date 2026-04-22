@@ -92,20 +92,16 @@ export default function AgencjaMarketingowaWroclaw() {
         title="Agencja Marketingowa Wrocław | Fotz Studio"
         description="Agencja marketingowa Wrocław ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Wrocławia i Dolnego Śląska. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/wroclaw"
-        ogTitle="Agencja Marketingowa Wrocław | FOTZ"
-        ogDescription="Profesjonalna agencja marketingowa we Wrocławiu. SEO, Google Ads, Social Media, tworzenie stron. 500+ zadowolonych klientów."
         keywords="agencja marketingowa wrocław, marketing internetowy wrocław, agencja reklamowa wrocław, kampanie reklamowe wrocław, seo wrocław, google ads wrocław, agencja marketingowa dolny śląsk"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Home", url: "https://fotz.pl" },
           { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
           { name: "Wrocław", url: "https://fotz.pl/agencja-marketingowa/wroclaw" }
-        ]}
-      />
+        ]}/>
 
-      <FAQSchema faqs={faqData} />
+      <FAQSchema items={faqData} />
 
       <ServiceSchema
         name="FOTZ - Agencja Marketingowa Wrocław"

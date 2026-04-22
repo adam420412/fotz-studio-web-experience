@@ -228,12 +228,10 @@ export default function AgencjaMarketingowaLegnica() {
         provider="Fotz Studio"
         areaServed="Legnica"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Agencja Marketingowa Legnica", url: "https://fotz.pl/agencja-marketingowa/legnica" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

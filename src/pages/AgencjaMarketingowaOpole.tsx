@@ -100,12 +100,10 @@ export default function AgencjaMarketingowaOpole() {
           provider="fotz.pl"
           areaServed="Opole"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja Marketingowa Opole", url: "https://fotz.pl/agencja-marketingowa-opole" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}
