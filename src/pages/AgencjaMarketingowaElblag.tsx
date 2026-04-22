@@ -49,8 +49,6 @@ export const AgencjaMarketingowaElblag = () => {
         title={seoTitle}
         description={seoDescription}
         canonical="/agencja-marketingowa/elblag"
-        ogTitle={seoTitle}
-        ogDescription={seoDescription}
         keywords="agencja marketingowa elbląg, marketing internetowy elbląg, usługi marketingowe elbląg, agencja reklamowa elbląg"
       />
 

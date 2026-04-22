@@ -156,13 +156,11 @@ export default function AgencjaMarketingowaLublin() {
         keywords="agencja marketingowa lublin, marketing internetowy lublin, agencja reklamowa lublin, kampanie reklamowe lublin, seo lublin, google ads lublin"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
           { name: "Lublin", url: "https://fotz.pl/agencja-marketingowa/lublin" }
-        ]}
-      />
+        ]}/>
 
       <section className="py-12 bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -453,8 +451,6 @@ export default function AgencjaMarketingowaLublin() {
         name="Agencja Marketingowa Lublin"
         description="Kompleksowe usługi marketingu cyfrowego: SEO, Google Ads, Social Media, strony WWW i strategie wzrostu dla firm z Lublina i Lubelszczyzny."
         areaServed="Lublin"
-        telephone="+48"
-        url="https://fotz.pl/agencja-marketingowa/lublin"
       />
     </Layout>
   );

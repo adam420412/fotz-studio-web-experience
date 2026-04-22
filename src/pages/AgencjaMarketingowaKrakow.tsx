@@ -217,13 +217,11 @@ export default function AgencjaMarketingowaKrakow() {
         keywords="agencja marketingowa kraków, marketing internetowy kraków, agencja reklamowa kraków, kampanie reklamowe kraków, seo kraków, google ads kraków, agencja marketingowa małopolska"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Home", url: "https://fotz.pl" },
           { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
           { name: "Kraków", url: "https://fotz.pl/agencja-marketingowa/krakow" },
-        ]}
-      />
+        ]}/>
 
       <ServiceSchema
         name="Agencja Marketingowa Kraków"

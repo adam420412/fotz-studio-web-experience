@@ -166,19 +166,16 @@ export default function AgencjaMarketingowaPoznan() {
         keywords="agencja marketingowa poznań, marketing internetowy poznań, agencja reklamowa poznań, seo poznań, google ads poznań, firma marketingowa poznań, reklama internetowa poznań, marketing dla firm poznań"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "FOTZ", url: "https://fotz.pl" },
           { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Poznań" },
-        ]}
-      />
+          { name: "Poznań", url: "https://fotz.pl" },
+        ]}/>
 
       <ServiceSchema
         name="Usługi Marketingowe Poznań"
         description="Pełna gama usług marketingowych dla firm z Poznania"
         areaServed="Poznan"
-        priceRange="1299-5999 PLN"
       />
 
       <FAQSchema items={faqs.map((faq) => ({ question: faq.question, answer: faq.answer }))} />

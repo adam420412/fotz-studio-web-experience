@@ -158,17 +158,10 @@ export default function AgencjaMarketingowaBydgoszcz() {
         title="Agencja Marketingowa Bydgoszcz | Fotz Studio"
         description="Agencja marketingowa Bydgoszcz ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Bydgoszczy i Kujaw. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/bydgoszcz"
-        keywords={[
-          "agencja marketingowa Bydgoszcz",
-          "SEO Bydgoszcz",
-          "Google Ads Bydgoszcz",
-          "media społecznościowe",
-          "strony WWW",
-          "marketing Kujaw",
-        ]}
+        keywords="agencja marketingowa Bydgoszcz, SEO Bydgoszcz, Google Ads Bydgoszcz, media społecznościowe, strony WWW, marketing Kujaw"
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Hero Section */}
@@ -434,17 +427,9 @@ export default function AgencjaMarketingowaBydgoszcz() {
         name="FOTZ - Agencja Marketingowa Bydgoszcz"
         description="Profesjonalna agencja marketingowa w Bydgoszczy specjalizująca się w SEO, Google Ads, social media i tworzeniu stron internetowych."
         areaServed="Bydgoszcz"
-        services={[
-          "Pozycjonowanie SEO",
-          "Google Ads",
-          "Media społecznościowe",
-          "Tworzenie stron WWW",
-          "Marketing content",
-          "Analityka",
-        ]}
       />
 
-      <FAQSchema faqs={faqs} />
+      <FAQSchema items={faqs} />
     </Layout>
   );
 }

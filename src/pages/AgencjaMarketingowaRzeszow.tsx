@@ -157,19 +157,16 @@ export default function AgencjaMarketingowaRzeszow() {
         keywords="agencja marketingowa rzeszów, marketing internetowy rzeszów, agencja reklamowa rzeszów, kampanie reklamowe rzeszów, seo rzeszów, google ads rzeszów"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Home", url: "https://fotz.pl" },
           { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
           { name: "Rzeszów", url: "https://fotz.pl/agencja-marketingowa/rzeszow" }
-        ]}
-      />
+        ]}/>
 
       <ServiceSchema
         name="Agencja Marketingowa Rzeszów"
         description="Profesjonalne usługi marketingowe dla firm z Rzeszowa i Podkarpacia"
         areaServed="Rzeszow"
-        telephone="+48721234567"
         address="Rzeszów, Polska"
       />
 

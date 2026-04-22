@@ -167,13 +167,11 @@ export default function AgencjaMarketingowaKalisz() {
           description="Profesjonalne usługi marketingowe dla firm w Kaliszu: SEO lokalne, kampanie reklamowe, social media marketing, tworzenie stron internetowych."
           areaServed="Kalisz"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
             { name: "Kalisz", url: "https://fotz.pl/agencja-marketingowa/kalisz" },
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero Section */}

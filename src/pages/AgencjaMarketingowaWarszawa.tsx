@@ -232,16 +232,14 @@ const AgencjaMarketingowaWarszawa = () => {
         keywords="agencja marketingowa warszawa, marketing internetowy warszawa, agencja reklamowa warszawa, seo warszawa, google ads warszawa, firma marketingowa warszawa, reklama internetowa warszawa"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Home", url: "https://fotz.pl" },
           { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
           {
             name: "Warszawa",
             url: "https://fotz.pl/agencja-marketingowa/warszawa",
           },
-        ]}
-      />
+        ]}/>
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 pt-12 md:pt-20">

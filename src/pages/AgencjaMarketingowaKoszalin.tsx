@@ -167,13 +167,11 @@ export default function AgencjaMarketingowaKoszalin() {
           description="Profesjonalne uslugi marketingowe dla firm w Koszalinie: SEO lokalne, kampanie reklamowe, social media marketing, tworzenie stron internetowych. Specjalizacja w turystyce nadmorskiej."
           areaServed="Koszalin"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
             { name: "Koszalin", url: "https://fotz.pl/agencja-marketingowa/koszalin" },
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero Section */}

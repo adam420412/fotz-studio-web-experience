@@ -141,16 +141,15 @@ export default function AgencjaMarketingowaGdansk() {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Agencje marketingowe", url: "https://fotz.pl/agencje-marketingowe" },
         { name: "Gdańsk", url: "https://fotz.pl/agencja-marketingowa/gdansk" }
-      ]} />
+      ]}/>
 
       <ServiceSchema
         name="Usługi marketingowe Gdańsk"
         description="Kompleksowe usługi marketingowe: SEO, Google Ads, Social Media, strony WWW"
         areaServed="Gdansk"
-        telephone="+48123456789"
       />
 
-      <FAQSchema faqs={faqs.map(faq => ({
+      <FAQSchema items={faqs.map(faq => ({
         question: faq.question,
         answer: faq.answer
       }))} />

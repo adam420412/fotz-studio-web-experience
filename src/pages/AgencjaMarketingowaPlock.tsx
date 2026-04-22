@@ -43,13 +43,13 @@ export default function AgencjaMarketingowaPlock() {
         keywords="agencja marketingowa płock, marketing internetowy płock, agencja reklamowa płock, seo płock"
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <ServiceSchema
         name="Agencja Marketingowa Plock"
         description="Kompleksowe uslugami marketingowe dla firm w Plocku"
         areaServed="Plock"
       />
-      <FAQSchema faqItems={faqItems} />
+      <FAQSchema items={faqItems} />
 
       {/* Hero Section */}
       <section className="relative py-16 bg-gradient-to-b from-blue-600 to-blue-800 text-white">

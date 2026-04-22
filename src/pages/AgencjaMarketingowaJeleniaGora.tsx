@@ -102,15 +102,12 @@ export default function AgencjaMarketingowaJeleniaGora() {
         title="Agencja Marketingowa Jelenia Gora | Fotz Studio"
         description="Profesjonalna agencja marketingowa w Jeleniej Gorze. SEO, SEM, social media, strony internetowe i kampanie Google Ads dla firm lokalnych."
         canonical="https://fotz.pl/agencja-marketingowa/jelenia-gora"
-        ogTitle="Agencja Marketingowa Jelenia Gora | Fotz Studio"
-        ogDescription="Kompleksowe uslugi marketingowe dla firm w Jeleniej Gorze. Zwieksz widocznosc online dzis."
         ogImage="https://fotz.pl/og-image.jpg"
-        ogUrl="https://fotz.pl/agencja-marketingowa/jelenia-gora"
         keywords="agencja marketingowa jelenia góra, marketing internetowy jelenia góra, agencja reklamowa jelenia góra, seo jelenia góra"
       />
-      <ServiceSchema schema={serviceSchema} />
-      <BreadcrumbSchema schema={breadcrumbSchema} />
-      <FAQSchema schema={faqSchema} />
+      
+      
+      
 
       <main className="min-h-screen bg-white">
         {/* Hero Section */}

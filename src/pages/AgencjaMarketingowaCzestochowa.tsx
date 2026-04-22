@@ -204,12 +204,10 @@ export default function AgencjaMarketingowaCzestochowa() {
         provider="Fotz Studio"
         areaServed="Czestochowa"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Agencja Marketingowa Częstochowa", url: "https://fotz.pl/agencja-marketingowa/czestochowa" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}
