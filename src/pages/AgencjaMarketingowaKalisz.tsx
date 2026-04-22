@@ -224,8 +224,6 @@ export default function AgencjaMarketingowaKalisz() {
                 <div
                   key={stat.label}
                  
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                  
                 >
                   <StatCounter {...stat} />
@@ -240,8 +238,6 @@ export default function AgencjaMarketingowaKalisz() {
           <div className="container-wide">
             <div
              
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
@@ -257,8 +253,6 @@ export default function AgencjaMarketingowaKalisz() {
                 <div
                   key={service.title}
                  
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                  
                 >
                   <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all hover:shadow-lg group">
@@ -285,8 +279,6 @@ export default function AgencjaMarketingowaKalisz() {
           <div className="container-wide">
             <div
              
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
@@ -323,8 +315,6 @@ export default function AgencjaMarketingowaKalisz() {
                 <div
                   key={item.title}
                  
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                  
                 >
                   <Card className="bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all">
@@ -349,8 +339,6 @@ export default function AgencjaMarketingowaKalisz() {
           <div className="container-wide">
             <div
              
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
@@ -366,8 +354,6 @@ export default function AgencjaMarketingowaKalisz() {
                 <div
                   key={pkg.name}
                  
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                  
                 >
                   <Card className={`h-full relative ${pkg.popular ? "border-primary shadow-lg shadow-primary/10" : "border-border"}`}>
@@ -419,8 +405,6 @@ export default function AgencjaMarketingowaKalisz() {
           <div className="container-wide">
             <div
              
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               className="text-center mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
@@ -437,8 +421,6 @@ export default function AgencjaMarketingowaKalisz() {
                   <div
                     key={index}
                    
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
                    
                   >
                     <AccordionItem
@@ -464,8 +446,6 @@ export default function AgencjaMarketingowaKalisz() {
           <div className="container-wide">
             <div
              
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               className="bg-gradient-to-br from-primary/10 via-primary/5 to-background border border-primary/20 rounded-2xl p-8 md:p-12 text-center"
             >
               <Building2 className="w-12 h-12 text-primary mx-auto mb-6" />
@@ -499,8 +479,6 @@ export default function AgencjaMarketingowaKalisz() {
           <div className="container mx-auto px-4">
             <div
              
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               className="prose prose-lg max-w-none"
             >
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
