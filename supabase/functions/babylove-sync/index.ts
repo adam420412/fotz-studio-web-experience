@@ -11,16 +11,24 @@
 //   - SUPABASE_URL                (auto-injected in Supabase Edge Functions)
 //   - SUPABASE_SERVICE_ROLE_KEY   (auto-injected)
 // Optional:
-//   - BABYLOVE_SYNC_TOKEN         If set, the function additionally requires
-//                                 `Authorization: Bearer <token>` — useful for
-//                                 protecting the endpoint from random callers.
+//   - BABYLOVE_SYNC_TOKEN         Shared secret. If set, the function REQUIRES
+//                                 it on every call (fail-closed). Accepted via:
+//                                   • `Authorization: Bearer <token>`
+//                                   • `x-sync-token: <token>` header
+//                                   • `?token=<token>` query string
+//                                 Service-role JWT is also accepted (so the
+//                                 internal cron via pg_net keeps working).
+//   - BABYLOVE_REQUIRE_AUTH       If "true" and the function is called WITHOUT
+//                                 BABYLOVE_SYNC_TOKEN being configured, the
+//                                 request is rejected. Use this to make sure
+//                                 the endpoint is never accidentally public.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type",
+    "authorization, x-client-info, apikey, content-type, x-sync-token",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
@@ -193,17 +201,53 @@ Deno.serve(async (req) => {
     });
   }
 
-  // Optional shared-secret guard. Cron jobs / admin UI must send the matching token.
+  // ─── Auth guard ──────────────────────────────────────────────────────────
+  // Accepts ANY of the following:
+  //   1. Shared secret BABYLOVE_SYNC_TOKEN via:
+  //        - `Authorization: Bearer <token>`
+  //        - `x-sync-token: <token>` header
+  //        - `?token=<token>` query string
+  //   2. The Supabase service-role key in `Authorization: Bearer ...`
+  //      (used by the internal pg_cron job hitting this endpoint via pg_net).
+  //
+  // Behaviour:
+  //   • If BABYLOVE_SYNC_TOKEN is set → token (or service role) is REQUIRED.
+  //   • If BABYLOVE_SYNC_TOKEN is NOT set AND BABYLOVE_REQUIRE_AUTH="true"
+  //     → fail-closed (403). Prevents accidentally exposing a public sync.
+  //   • Otherwise → public (legacy behaviour, kept for first-time setup only).
   const expectedToken = Deno.env.get("BABYLOVE_SYNC_TOKEN");
-  if (expectedToken) {
-    const authHeader = req.headers.get("Authorization") ?? "";
-    const provided = authHeader.replace(/^Bearer\s+/i, "");
-    if (provided !== expectedToken) {
-      return new Response(JSON.stringify({ error: "Unauthorized" }), {
-        status: 401,
+  const requireAuth = (Deno.env.get("BABYLOVE_REQUIRE_AUTH") ?? "").toLowerCase() === "true";
+  const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+
+  const authHeader = req.headers.get("Authorization") ?? "";
+  const bearer = authHeader.replace(/^Bearer\s+/i, "").trim();
+  const headerToken = (req.headers.get("x-sync-token") ?? "").trim();
+  const queryToken = (new URL(req.url).searchParams.get("token") ?? "").trim();
+  const providedToken = bearer || headerToken || queryToken;
+
+  const tokenMatches =
+    !!expectedToken && !!providedToken && providedToken === expectedToken;
+  const serviceRoleMatches =
+    !!serviceRoleKey && !!bearer && bearer === serviceRoleKey;
+  const isAuthorized = tokenMatches || serviceRoleMatches;
+
+  if (expectedToken && !isAuthorized) {
+    return new Response(JSON.stringify({ error: "Unauthorized" }), {
+      status: 401,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+  if (!expectedToken && requireAuth && !serviceRoleMatches) {
+    return new Response(
+      JSON.stringify({
+        error:
+          "Endpoint locked: BABYLOVE_SYNC_TOKEN is not configured but BABYLOVE_REQUIRE_AUTH=true. Configure the token to enable sync.",
+      }),
+      {
+        status: 403,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
+      },
+    );
   }
 
   const apiKey = Deno.env.get("BABYLOVE_API_KEY");
