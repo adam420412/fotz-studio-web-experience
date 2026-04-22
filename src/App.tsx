@@ -970,7 +970,7 @@ const BlogLeanStartupCoTo = lazy(() => import("./pages/BlogLeanStartupCoTo"));
 const BlogKanbanCoTo = lazy(() => import("./pages/BlogKanbanCoTo"));
 
 // Wave 69: OKR, Product Marketing, Employer Branding
-const BlogOKRCoTo = lazy(() => import("./pages/BlogOKRCoTo"));
+const BlogOKRCoTo = lazy(() => import("./pages/BlogOkrCoTo"));
 const BlogProductMarketingCoTo = lazy(() => import("./pages/BlogProductMarketingCoTo"));
 const BlogEmployerBrandingCoTo = lazy(() => import("./pages/BlogEmployerBrandingCoTo"));
 
@@ -991,7 +991,7 @@ const BlogCommunityMarketingCoTo = lazy(() => import("./pages/BlogCommunityMarke
 
 // Wave 65: Brand Positioning, TAM SAM SOM, User Onboarding
 const BlogBrandPositioningCoTo = lazy(() => import("./pages/BlogBrandPositioningCoTo"));
-const BlogTAMSAMSOMCoTo = lazy(() => import("./pages/BlogTAMSAMSOMCoTo"));
+const BlogTAMSAMSOMCoTo = lazy(() => import("./pages/BlogTamSamSomCoTo"));
 const BlogUserOnboardingCoTo = lazy(() => import("./pages/BlogUserOnboardingCoTo"));
 
 // Wave 64: Customer Data Platform, Lead Nurturing, Account Management
@@ -1129,7 +1129,7 @@ const BlogInfluencerMarketingCoTo = lazy(() => import("./pages/BlogInfluencerMar
 // Wave 35: Webinar, Persona, A/B Testing
 const BlogWebinarCoToJest = lazy(() => import("./pages/BlogWebinarCoToJest"));
 const BlogPersonaMarketingowa = lazy(() => import("./pages/BlogPersonaMarketingowa"));
-const BlogABTestingCoTo = lazy(() => import("./pages/BlogABTestingCoTo"));
+const BlogABTestingCoTo = lazy(() => import("./pages/BlogAbTestingCoTo"));
 
 // Wave 34: Growth Hacking, Retargeting, Lead Generation
 const BlogGrowthHackingCoTo = lazy(() => import("./pages/BlogGrowthHackingCoTo"));
@@ -1158,7 +1158,7 @@ const BlogFreelancerCoToJest = lazy(() => import("./pages/BlogFreelancerCoToJest
 const BlogNIPCoToJest = lazy(() => import("./pages/BlogNIPCoToJest"));
 
 // Wave 29: NPS, Startup, SaaS, UX Design, MRR/ARR
-const BlogNPSCoToJest = lazy(() => import("./pages/BlogNPSCoToJest"));
+const BlogNPSCoToJest = lazy(() => import("./pages/BlogNpsCoToJest"));
 const BlogStartupCoToJest = lazy(() => import("./pages/BlogStartupCoToJest"));
 const BlogSaaSCoToJest = lazy(() => import("./pages/BlogSaaSCoToJest"));
 const BlogUXDesignCoTo = lazy(() => import("./pages/BlogUXDesignCoTo"));
@@ -1329,7 +1329,9 @@ const BlogLinkedInDlaFirmy = lazy(() => import("./pages/BlogLinkedInDlaFirmy"));
 const BlogMarketingLokalny = lazy(() => import("./pages/BlogMarketingLokalny"));
 const AgencjaMarketingowaElblag = lazy(() => import("./pages/AgencjaMarketingowaElblag"));
 const PozycjonowanieWalbrzych = lazy(() => import("./pages/PozycjonowanieWalbrzych"));
-const BlogKosztMarketinguInternetowego = lazy(() => import("./pages/BlogKosztMarketinguInternetowego"));
+const BlogKosztMarketinguInternetowego = lazy(() =>
+  import("./pages/BlogKosztMarketinguInternetowego").then((m) => ({ default: m.BlogKosztMarketinguInternetowego }))
+);
 const PozycjonowanieElblag = lazy(() => import("./pages/PozycjonowanieElblag"));
 
 // Wave 234 pages
@@ -1433,9 +1435,15 @@ const PozycjonowanieGdynia = lazy(() => import("./pages/PozycjonowanieGdynia"));
 const TikTokAdsWarszawa = lazy(() => import("./pages/TikTokAdsWarszawa"));
 const TikTokAdsKrakow = lazy(() => import("./pages/TikTokAdsKrakow"));
 const TikTokAdsWroclaw = lazy(() => import("./pages/TikTokAdsWroclaw"));
-const TikTokAdsPoznan = lazy(() => import("./pages/TikTokAdsPoznan"));
-const TikTokAdsGdansk = lazy(() => import("./pages/TikTokAdsGdansk"));
-const TikTokAdsLodz = lazy(() => import("./pages/TikTokAdsLodz"));
+const TikTokAdsPoznan = lazy(() =>
+  import("./pages/TikTokAdsPoznan").then((m) => ({ default: m.TikTokAdsPoznan }))
+);
+const TikTokAdsGdansk = lazy(() =>
+  import("./pages/TikTokAdsGdansk").then((m) => ({ default: m.TikTokAdsGdansk }))
+);
+const TikTokAdsLodz = lazy(() =>
+  import("./pages/TikTokAdsLodz").then((m) => ({ default: m.TikTokAdsLodz }))
+);
 const TikTokAdsKatowice = lazy(() => import("./pages/TikTokAdsKatowice"));
 
 // Wave 258 — FacebookAds Torun, GoogleAds Bialystok/Kielce
