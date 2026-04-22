@@ -360,7 +360,7 @@ export default function Blog() {
     return dbArticles.map((article) => ({
       id: article.slug,
       title: article.title,
-      excerpt: article.meta_description || "",
+      excerpt: article.excerpt || article.meta_description || "",
       category: "Poradniki",
       author: "Zespół FOTZ",
       date: article.published_at 
