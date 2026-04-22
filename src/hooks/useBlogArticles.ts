@@ -7,6 +7,7 @@ export interface BlogArticle {
   title: string;
   slug: string;
   meta_description: string | null;
+  excerpt: string | null;
   content_html: string | null;
   content_markdown: string | null;
   hero_image_url: string | null;
@@ -14,8 +15,15 @@ export interface BlogArticle {
   public_url: string | null;
   external_created_at: string | null;
   created_at: string;
+  updated_at: string;
   published_at: string | null;
   is_published: boolean;
+  seed_keyword: string | null;
+  keywords: string[] | Record<string, unknown> | null;
+  json_ld: Record<string, unknown> | null;
+  faq_json_ld: Record<string, unknown> | null;
+  last_synced_at: string | null;
+  sync_source: string | null;
 }
 
 export function useBlogArticles() {

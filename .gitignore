@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# Deno (Supabase Edge Functions local typecheck)
+deno.lock
+.deno/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

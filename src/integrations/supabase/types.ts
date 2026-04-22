@@ -61,49 +61,73 @@ export type Database = {
           content_html: string | null
           content_markdown: string | null
           created_at: string
+          excerpt: string | null
           external_created_at: string | null
           external_id: number
+          faq_json_ld: Json | null
           hero_image_url: string | null
           id: string
           is_published: boolean
+          json_ld: Json | null
+          keywords: Json | null
           language_code: string | null
+          last_synced_at: string | null
           meta_description: string | null
           public_url: string | null
           published_at: string | null
+          seed_keyword: string | null
           slug: string
+          sync_source: string | null
           title: string
+          updated_at: string
         }
         Insert: {
           content_html?: string | null
           content_markdown?: string | null
           created_at?: string
+          excerpt?: string | null
           external_created_at?: string | null
           external_id: number
+          faq_json_ld?: Json | null
           hero_image_url?: string | null
           id?: string
           is_published?: boolean
+          json_ld?: Json | null
+          keywords?: Json | null
           language_code?: string | null
+          last_synced_at?: string | null
           meta_description?: string | null
           public_url?: string | null
           published_at?: string | null
+          seed_keyword?: string | null
           slug: string
+          sync_source?: string | null
           title: string
+          updated_at?: string
         }
         Update: {
           content_html?: string | null
           content_markdown?: string | null
           created_at?: string
+          excerpt?: string | null
           external_created_at?: string | null
           external_id?: number
+          faq_json_ld?: Json | null
           hero_image_url?: string | null
           id?: string
           is_published?: boolean
+          json_ld?: Json | null
+          keywords?: Json | null
           language_code?: string | null
+          last_synced_at?: string | null
           meta_description?: string | null
           public_url?: string | null
           published_at?: string | null
+          seed_keyword?: string | null
           slug?: string
+          sync_source?: string | null
           title?: string
+          updated_at?: string
         }
         Relationships: []
       }
