@@ -11,16 +11,24 @@
 //   - SUPABASE_URL                (auto-injected in Supabase Edge Functions)
 //   - SUPABASE_SERVICE_ROLE_KEY   (auto-injected)
 // Optional:
-//   - BABYLOVE_SYNC_TOKEN         If set, the function additionally requires
-//                                 `Authorization: Bearer <token>` — useful for
-//                                 protecting the endpoint from random callers.
+//   - BABYLOVE_SYNC_TOKEN         Shared secret. If set, the function REQUIRES
+//                                 it on every call (fail-closed). Accepted via:
+//                                   • `Authorization: Bearer <token>`
+//                                   • `x-sync-token: <token>` header
+//                                   • `?token=<token>` query string
+//                                 Service-role JWT is also accepted (so the
+//                                 internal cron via pg_net keeps working).
+//   - BABYLOVE_REQUIRE_AUTH       If "true" and the function is called WITHOUT
+//                                 BABYLOVE_SYNC_TOKEN being configured, the
+//                                 request is rejected. Use this to make sure
+//                                 the endpoint is never accidentally public.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type",
+    "authorization, x-client-info, apikey, content-type, x-sync-token",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
