@@ -201,17 +201,53 @@ Deno.serve(async (req) => {
     });
   }
 
-  // Optional shared-secret guard. Cron jobs / admin UI must send the matching token.
+  // ─── Auth guard ──────────────────────────────────────────────────────────
+  // Accepts ANY of the following:
+  //   1. Shared secret BABYLOVE_SYNC_TOKEN via:
+  //        - `Authorization: Bearer <token>`
+  //        - `x-sync-token: <token>` header
+  //        - `?token=<token>` query string
+  //   2. The Supabase service-role key in `Authorization: Bearer ...`
+  //      (used by the internal pg_cron job hitting this endpoint via pg_net).
+  //
+  // Behaviour:
+  //   • If BABYLOVE_SYNC_TOKEN is set → token (or service role) is REQUIRED.
+  //   • If BABYLOVE_SYNC_TOKEN is NOT set AND BABYLOVE_REQUIRE_AUTH="true"
+  //     → fail-closed (403). Prevents accidentally exposing a public sync.
+  //   • Otherwise → public (legacy behaviour, kept for first-time setup only).
   const expectedToken = Deno.env.get("BABYLOVE_SYNC_TOKEN");
-  if (expectedToken) {
-    const authHeader = req.headers.get("Authorization") ?? "";
-    const provided = authHeader.replace(/^Bearer\s+/i, "");
-    if (provided !== expectedToken) {
-      return new Response(JSON.stringify({ error: "Unauthorized" }), {
-        status: 401,
+  const requireAuth = (Deno.env.get("BABYLOVE_REQUIRE_AUTH") ?? "").toLowerCase() === "true";
+  const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+
+  const authHeader = req.headers.get("Authorization") ?? "";
+  const bearer = authHeader.replace(/^Bearer\s+/i, "").trim();
+  const headerToken = (req.headers.get("x-sync-token") ?? "").trim();
+  const queryToken = (new URL(req.url).searchParams.get("token") ?? "").trim();
+  const providedToken = bearer || headerToken || queryToken;
+
+  const tokenMatches =
+    !!expectedToken && !!providedToken && providedToken === expectedToken;
+  const serviceRoleMatches =
+    !!serviceRoleKey && !!bearer && bearer === serviceRoleKey;
+  const isAuthorized = tokenMatches || serviceRoleMatches;
+
+  if (expectedToken && !isAuthorized) {
+    return new Response(JSON.stringify({ error: "Unauthorized" }), {
+      status: 401,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+  if (!expectedToken && requireAuth && !serviceRoleMatches) {
+    return new Response(
+      JSON.stringify({
+        error:
+          "Endpoint locked: BABYLOVE_SYNC_TOKEN is not configured but BABYLOVE_REQUIRE_AUTH=true. Configure the token to enable sync.",
+      }),
+      {
+        status: 403,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
-      });
-    }
+      },
+    );
   }
 
   const apiKey = Deno.env.get("BABYLOVE_API_KEY");
