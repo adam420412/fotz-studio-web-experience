@@ -20,3 +20,6 @@ verify_jwt = false
 
 [functions.pagespeed-test]
 verify_jwt = false
+
+[functions.babylove-webhook-test]
+verify_jwt = true
