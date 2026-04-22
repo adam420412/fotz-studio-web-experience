@@ -7,10 +7,15 @@ const emailSchema = z.string().trim().email("Nieprawidłowy adres email");
 
 const checklistItems = [
   "Jak wybrać odpowiedni kanał reklamowy",
+  "Definicja grupy docelowej i buyer persony",
   "Optymalizacja budżetu kampanii",
-  "Tworzenie skutecznych kreacji",
-  "Analiza i mierzenie wyników",
+  "Tworzenie skutecznych kreacji i copy",
+  "Konfiguracja pixela i konwersji",
+  "Strategia testów A/B",
+  "Analiza i mierzenie wyników (KPI)",
   "Remarketing i retencja klientów",
+  "Atrybucja i raportowanie ROI",
+  "Skalowanie zwycięskich kampanii",
 ];
 
 export function NewsletterSection() {
