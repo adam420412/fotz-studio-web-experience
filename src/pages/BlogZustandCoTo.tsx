@@ -57,23 +57,19 @@ export default function BlogZustandCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Zarządzanie stanem React", url: "https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-amber-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Zarządzanie stanem React", href: "/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Zarządzanie stanem React", url: "/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-orange-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               React / Frontend

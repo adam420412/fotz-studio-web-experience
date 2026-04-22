@@ -150,13 +150,11 @@ const InstagramAds = () => {
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Instagram Ads", url: "https://fotz.pl/performance-marketing/instagram-ads" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero Section */}

@@ -77,10 +77,10 @@ export default function BlogRevOpsCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/revops-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -186,8 +186,6 @@ export default function BlogRevOpsCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zoptymalizuj lejek przychodowy swojej firmy"
-          subheading="Marketing, strona i SEO jako fundament skutecznego RevOps — budujemy pipeline który konwertuje."
         />
       </Layout>
     </>

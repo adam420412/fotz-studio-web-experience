@@ -90,14 +90,12 @@ export default function PozycjonowanieOlsztyn() {
           provider="fotz.pl"
           areaServed="Olsztyn"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Usługi", url: "https://fotz.pl/uslugi" },
             { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
             { name: "Pozycjonowanie Olsztyn", url: "https://fotz.pl/uslugi/pozycjonowanie/olsztyn" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

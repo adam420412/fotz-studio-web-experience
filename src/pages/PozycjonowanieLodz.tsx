@@ -93,25 +93,20 @@ const PozycjonowanieLodz = () => {
         title="Pozycjonowanie Łódź — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Łódź. Agencja SEO Fotz Studio — audyt SEO, optymalizacja i link building dla firm z Łodzi. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/lodz"
-        ogTitle="Pozycjonowanie Łódź — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Łodzi. Audyt SEO, optymalizacja i link building dla firm łódzkich — e-commerce, fashion, logistyka."
         keywords="pozycjonowanie łódź, agencja seo łódź, seo łódź, pozycjonowanie stron łódź, seo dla firm łódź, seo łódzkie, pozycjonowanie lokalne łódź"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Łódź"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Łodzi. Audyt SEO, optymalizacja on-page, link building, pozycjonowanie lokalne dla e-commerce i branż kreatywnych."
-        url="https://fotz.pl/uslugi/pozycjonowanie/lodz"
         provider="Fotz Studio"
         areaServed="Łódź"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Łódź", url: "https://fotz.pl/uslugi/pozycjonowanie/lodz" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

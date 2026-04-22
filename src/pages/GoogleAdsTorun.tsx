@@ -172,26 +172,22 @@ export default function GoogleAdsTorun() {
           areaServed="Torun"
         />
 
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
             { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
             { name: "Toruń", url: "https://fotz.pl/performance-marketing/google-ads/torun" },
-          ]}
-        />
+          ]}/>
 
         <FAQSchema items={faqItems} />
 
         {/* Breadcrumbs */}
-        <PageBreadcrumbs
-          items={[
-            { label: "Strona główna", href: "/" },
-            { label: "Performance Marketing", href: "/performance-marketing" },
-            { label: "Google Ads", href: "/performance-marketing/google-ads" },
-            { label: "Toruń" },
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Strona główna", url: "/" },
+            { name: "Performance Marketing", url: "/performance-marketing" },
+            { name: "Google Ads", url: "/performance-marketing/google-ads" },
+            { name: "Toruń", url: "https://fotz.pl" },
+          ]}/>
 
         {/* Hero Section */}
         <FadeInView>

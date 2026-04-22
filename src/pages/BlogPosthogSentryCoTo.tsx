@@ -57,23 +57,19 @@ export default function BlogPosthogSentryCoTo() {
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Analytics i Monitoring 2024", url: "https://fotz.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-purple-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Analytics i Monitoring 2024", href: "/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Analytics i Monitoring 2024", url: "/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-indigo-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Analytics / Monitoring / Feature Flags

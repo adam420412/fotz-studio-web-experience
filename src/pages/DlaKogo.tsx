@@ -88,12 +88,10 @@ export default function DlaKogo() {
         canonical="https://fotz.pl/dla-kogo"
         keywords="dla kogo usługi marketingowe, marketing dla branż, agencja marketingowa dla firm, digital marketing branże, marketing b2b b2c"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" }
-        ]}
-      />
+        ]}/>
       <ServiceSchema 
         name="Usługi marketingowe dla branż"
         description="Marketing dopasowany do specyfiki branży: firmy lokalne, e-commerce, marki premium, instytucje"

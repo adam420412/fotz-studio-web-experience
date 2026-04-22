@@ -30,9 +30,9 @@ export default function AgencjaSEOKrakow() {
         description="Profesjonalna agencja SEO specjalizująca się w pozycjonowaniu stron dla firm z Krakowa i Małopolski. Gwarantujemy wyniki w Google."
         areaServed={["PL", "Kraków"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero Section */}
         <motion.section
@@ -302,8 +302,6 @@ export default function AgencjaSEOKrakow() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Zacznij pozycjonowanie w Krakowie"
-          subheading="Bezpłatny audyt SEO. Sprawdzimy jak Twoja firma wypada w Google."
         />
       </Layout>
     </>

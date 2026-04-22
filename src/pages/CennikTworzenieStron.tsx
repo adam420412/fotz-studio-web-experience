@@ -261,24 +261,19 @@ const CennikTworzenieStron = () => {
         title="Cennik tworzenia stron internetowych 2025 | Transparentne ceny"
         description="Sprawdź szczegółowy cennik tworzenia stron internetowych. Strony od 499 zł, sklepy od 2999 zł. Transparentne ceny, bez ukrytych kosztów. Bezpłatna wycena!"
         canonical="https://fotz.pl/cennik-tworzenia-stron"
-        ogTitle="Cennik tworzenia stron internetowych 2025"
-        ogDescription="Szczegółowy cennik stron internetowych — od prostej wizytówki po zaawansowane sklepy e-commerce. Bez ukrytych opłat, pełna własność kodu."
         keywords="tworzenie stron internetowych cennik, ile kosztuje strona internetowa, koszt strony internetowej, cena strony internetowej, cennik stron internetowych, projektowanie stron www cennik, strona internetowa cena 2025, strona wizytówkowa cena, sklep internetowy koszt, tworzenie strony www cena, budowa strony internetowej koszt, ile kosztuje stworzenie strony, cena strony firmowej, strona internetowa ile kosztuje, tworzenie stron www ceny"
       />
       <ServiceSchema
         name="Tworzenie stron internetowych — cennik"
         description="Fotz Studio tworzy profesjonalne strony internetowe w pakietach od 499 zł netto. Responsywny design, SEO, CMS i pełna własność kodu. Przejrzysty cennik dla firm z całej Polski."
-        url="https://fotz.pl/cennik-tworzenia-stron"
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Cennik", url: "https://fotz.pl/cennik" },
           { name: "Tworzenie stron", url: "https://fotz.pl/cennik-tworzenia-stron" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={[...faqItems, ...faqItemsAdditional]} />
 
       {/* Hero */}

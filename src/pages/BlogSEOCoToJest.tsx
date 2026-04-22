@@ -77,10 +77,10 @@ export default function BlogSEOCoToJest() {
         dateModified="2025-03-30"
         url="https://fotz.pl/blog/seo-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -224,8 +224,6 @@ export default function BlogSEOCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij budować widoczność w Google"
-          subheading="Bezpłatny audyt SEO i konkretna wycena pozycjonowania Twojej strony."
         />
       </Layout>
     </>

@@ -419,13 +419,11 @@ const Wizualizacje3D = () => {
         areaServed="Polska"
       />
       
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Wizualizacje 3D", url: "https://fotz.pl/wizualizacje-3d" },
-        ]}
-      />
+        ]}/>
       
       <FAQSchema items={faqItems} />
       

@@ -123,10 +123,10 @@ export default function BlogPerformanceMaxCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/performance-max-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -248,8 +248,6 @@ export default function BlogPerformanceMaxCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Wdrożymy Performance Max i zoptymalizujemy Twoje Google Ads"
-          subheading="PMax dla e-commerce i lead gen — asset groups, Smart Bidding i monitoring wyników we wszystkich kanałach Google."
         />
       </Layout>
     </>

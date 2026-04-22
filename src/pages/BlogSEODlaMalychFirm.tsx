@@ -58,7 +58,7 @@ const BlogSEODlaMalychFirm = () => {
       />
 
       <ArticleSchema data={articleData} />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems} />
 
       <article className="min-h-screen bg-white">

@@ -29,7 +29,7 @@ export default function TworzenieStronWWW() {
         description="Profesjonalne strony internetowe dla firm"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
@@ -437,8 +437,6 @@ export default function TworzenieStronWWW() {
         </FadeInView>
 
         <ContactSection
-          heading="Zamów stronę WWW"
-          subheading="Bezpłatna wycena w 24 godziny. Realizujemy projekty w całej Polsce."
         />
       </Layout>
     </>

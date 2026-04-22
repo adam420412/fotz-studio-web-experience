@@ -1,4 +1,5 @@
 import { SEOHead } from "@/components/seo/SEOHead";
+import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { FAQSchema, ArticleSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
@@ -57,23 +58,19 @@ export default function BlogNextImageCoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Image Optimization Next.js", url: "https://fotz.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Image Optimization Next.js", href: "/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Image Optimization Next.js", url: "/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-lime-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Performance / Images

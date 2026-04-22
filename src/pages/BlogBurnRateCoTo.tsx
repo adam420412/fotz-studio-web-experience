@@ -94,17 +94,15 @@ export default function BlogBurnRateCoTo() {
         datePublished="2024-01-27"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Burn Rate i Runway", url: "https://fotz.pl/blog/burn-rate-runway-co-to" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "Burn Rate i Runway" }]} />
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Burn Rate i Runway", url: "https://fotz.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Burn Rate i Runway — co to jest i jak obliczać?
           </h1>

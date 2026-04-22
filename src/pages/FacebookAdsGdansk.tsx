@@ -225,7 +225,6 @@ export default function FacebookAdsGdansk() {
         name="Facebook Ads Gdańsk"
         description="Profesjonalne kampanie Meta Ads (Facebook, Instagram) dla firm z Gdańska"
         areaServed="Gdansk"
-        priceRange="400-5000 PLN/miesiąc"
       />
       
       <FAQSchema questions={faqs} />

@@ -799,7 +799,7 @@ export default function Cennik() {
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Cennik", url: "https://fotz.pl/cennik" },
-      ]} />
+      ]}/>
       <FAQSchema items={[
         { question: "Ile kosztuje strona internetowa w Fotz Studio?", answer: "Strona wizytówkowa od 3000 zł, strona firmowa z CMS od 5000 zł, sklep internetowy od 8000 zł, rozbudowany portal od 15000 zł. Każda wycena jest indywidualna i bezpłatna — zależy od liczby podstron, funkcjonalności i projektu graficznego." },
         { question: "Ile kosztuje pozycjonowanie SEO miesięcznie?", answer: "Pozycjonowanie lokalne zaczyna się od 800 zł/mies., SEO ogólnopolskie od 1500 zł/mies., a SEO dla sklepów e-commerce od 2000 zł/mies. Cena zależy od konkurencyjności branży, liczby fraz kluczowych i aktualnego stanu strony." },

@@ -131,10 +131,10 @@ export default function EmailMarketing() {
         description="Kompleksowa obsługa email marketingu — newslettery, marketing automation, lead nurturing, segmentacja bazy"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-950">
@@ -285,8 +285,6 @@ export default function EmailMarketing() {
         </FadeInView>
 
         <ContactSection
-          heading="Uruchom email marketing dla swojej firmy"
-          subheading="Bezpłatna audyt aktualnych działań emailowych i plan na wzrost open rate i konwersji."
         />
       </Layout>
     </>

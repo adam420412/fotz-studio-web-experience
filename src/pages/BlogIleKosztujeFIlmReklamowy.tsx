@@ -104,16 +104,14 @@ export default function BlogIleKosztujeFIlmReklamowy() {
 
         keywords="Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji, Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji poradnik, Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji strategia, Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji jak zrobić, Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji marketing, Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji przykłady, Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji w Polsce"
       />
-      <BreadcrumbSchema
-        items={[
-          { label: "Strona glowna", url: "https://fotz.pl" },
-          { label: "Blog", url: "https://fotz.pl/blog" },
+      <BreadcrumbSchema items={[
+          { name: "Strona glowna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
           {
-            label: "Ile kosztuje film reklamowy",
+            name: "Ile kosztuje film reklamowy",
             url: "https://fotz.pl/blog/ile-kosztuje-film-reklamowy",
           },
-        ]}
-      />
+        ]}/>
       <ArticleSchema
         headline="Ile kosztuje film reklamowy w 2025? Cennik i rodzaje produkcji"
         description="Kompletny poradnik i cennik filmów reklamowych w Polsce. Spotami reklamowe, filmy korporacyjne, animacje i wiele więcej."

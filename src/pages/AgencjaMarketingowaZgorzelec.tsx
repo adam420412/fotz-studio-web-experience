@@ -60,7 +60,7 @@ export default function AgencjaMarketingowaZgorzelec() {
         keywords="agencja marketingowa zgorzelec, marketing internetowy zgorzelec, agencja reklamowa zgorzelec, seo zgorzelec"
       />
       
-      <ServiceSchema service={serviceSchema} />
+      
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqData} />
 

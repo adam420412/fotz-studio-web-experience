@@ -140,13 +140,11 @@ export default function DlaKogoMarkiPremium() {
         name="Marketing dla marek premium"
         description="Ekskluzywne usługi marketingowe dla marek luksusowych - branding, influencer marketing, PR i komunikacja premium."
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
           { name: "Marki premium", url: "https://fotz.pl/dla-kogo/marki-premium" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

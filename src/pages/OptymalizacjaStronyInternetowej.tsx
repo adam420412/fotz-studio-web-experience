@@ -138,7 +138,7 @@ export default function OptymalizacjaStronyInternetowej() {
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Optymalizacja strony internetowej", url: "https://fotz.pl/uslugi/optymalizacja-strony-internetowej" }
-        ]} />
+        ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
@@ -343,8 +343,6 @@ export default function OptymalizacjaStronyInternetowej() {
         </section>
 
         <ContactSection
-          heading="Przyspiesz swoją stronę"
-          subheading="Bezpłatna analiza szybkości PageSpeed. Sprawdzimy co spowalnia Twoją stronę."
         />
       </Layout>
     </>

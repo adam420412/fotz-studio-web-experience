@@ -64,13 +64,11 @@ const KalkulatorROI = () => {
         canonical="https://fotz.pl/kalkulator-roi"
         keywords="kalkulator ROI reklam, zwrot z inwestycji marketing, ROI Google Ads kalkulator, ROI Meta Ads, kalkulator efektywności reklam, ROAS kalkulator marketing"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Kalkulator ROI", url: "https://fotz.pl/kalkulator-roi" }
-        ]}
-      />
+        ]}/>
       <ServiceSchema
         name="Kalkulator ROI kampanii reklamowych"
         description="Interaktywny kalkulator zwrotu z inwestycji dla kampanii Google Ads i Facebook Ads."

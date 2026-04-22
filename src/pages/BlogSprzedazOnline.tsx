@@ -51,13 +51,11 @@ const BlogSprzedazOnline = () => {
         dateModified="2026-03-15"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Jak zwiększyć sprzedaż przez internet", url: "https://fotz.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero */}

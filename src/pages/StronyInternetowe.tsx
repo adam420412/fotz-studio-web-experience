@@ -344,13 +344,11 @@ const StronyInternetowe = () => {
         areaServed="Polska"
       />
       
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-        ]}
-      />
+        ]}/>
       
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
@@ -361,9 +359,9 @@ const StronyInternetowe = () => {
 
       <Layout>
         <PageBreadcrumbs items={[
-          { label: "Usługi", href: "/uslugi" },
-          { label: "Strony Internetowe" },
-        ]} />
+          { name: "Usługi", url: "/uslugi" },
+          { name: "Strony Internetowe", url: "https://fotz.pl" },
+        ]}/>
         
         {/* Hero Section */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-40 pb-20">

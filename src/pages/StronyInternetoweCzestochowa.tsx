@@ -91,7 +91,7 @@ const StronyInternetoweCzestochowa = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Częstochowa" description="Profesjonalne tworzenie stron internetowych dla firm z Częstochowy." provider="FOTZ Studio" areaServed="Częstochowa" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Częstochowa", url: "https://fotz.pl/uslugi/strony-internetowe/czestochowa" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Częstochowa", url: "https://fotz.pl/uslugi/strony-internetowe/czestochowa" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

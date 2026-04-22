@@ -43,13 +43,11 @@ const BlogKampaniaReklamowa = () => {
         dateModified="2026-04-01"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Kampania Reklamowa i Marketingowa", url: "https://fotz.pl/content-marketing/kampanie" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

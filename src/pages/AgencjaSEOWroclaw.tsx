@@ -130,7 +130,7 @@ export default function AgencjaSEOWroclaw() {
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Agencja SEO", url: "https://fotz.pl/agencja-seo" },
           { name: "Wrocław", url: "https://fotz.pl/agencja-seo-wroclaw" }
-        ]} />
+        ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
@@ -321,8 +321,6 @@ export default function AgencjaSEOWroclaw() {
         </section>
 
         <ContactSection
-          heading="Zacznij pozycjonowanie we Wrocławiu"
-          subheading="Bezpłatny audyt SEO dla wrocławskich firm. Wyślemy raport w 48h."
         />
       </Layout>
     </>

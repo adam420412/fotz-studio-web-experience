@@ -112,10 +112,10 @@ export default function StronaInternetowaCena() {
         dateModified="2025-03-01"
         url="https://fotz.pl/blog/strona-internetowa-cena"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -263,8 +263,6 @@ export default function StronaInternetowaCena() {
         </FadeInView>
 
         <ContactSection
-          heading="Ile kosztuje Twoja strona?"
-          subheading="Bezpłatna wycena w 24 godziny. Opowiedz nam o projekcie!"
         />
       </Layout>
     </>

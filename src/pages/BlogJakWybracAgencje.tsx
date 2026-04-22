@@ -113,8 +113,8 @@ export default function BlogJakWybracAgencje() {
 
         keywords="Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru poradnik, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru strategia, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru jak zrobić, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru marketing, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru przykłady, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru w Polsce"
       />
-      <FAQSchema schema={schemaData} />
-      <FAQSchema schema={breadcrumbSchema} />
+      
+      
       <Layout>
         {/* Breadcrumb */}
         <motion.div

@@ -79,10 +79,10 @@ export default function BlogCustomerSuccessCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/customer-success-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -187,8 +187,6 @@ export default function BlogCustomerSuccessCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zmniejsz churn i zwieksz NRR przez lepszy UX"
-          subheading="Intuicyjna strona i szybki onboarding to fundament Customer Success — pomagamy to zbudowac."
         />
       </Layout>
     </>

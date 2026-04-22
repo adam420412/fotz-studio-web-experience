@@ -156,23 +156,19 @@ export default function BlogFacebookAdsPoradnik() {
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Facebook Ads poradnik", url: "https://fotz.pl/blog/facebook-ads-poradnik" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-gray-900 via-yellow-900 to-amber-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Facebook Ads poradnik", href: "/blog/facebook-ads-poradnik" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Facebook Ads poradnik", url: "/blog/facebook-ads-poradnik" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-yellow-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Poradnik / Facebook Ads / Reklama online

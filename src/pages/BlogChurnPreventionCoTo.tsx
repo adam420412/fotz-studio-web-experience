@@ -64,23 +64,19 @@ export default function BlogChurnPreventionCoTo() {
         datePublished="2024-02-19"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Churn Prevention", url: "https://fotz.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Churn Prevention", href: "/blog/churn-prevention-zapobieganie-odejsciom-klientow" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Churn Prevention", url: "/blog/churn-prevention-zapobieganie-odejsciom-klientow" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-red-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Customer Success

@@ -216,10 +216,10 @@ export default function TworzenieStronWarszawa() {
         description="Profesjonalne tworzenie stron internetowych dla firm z Warszawy"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -530,8 +530,6 @@ export default function TworzenieStronWarszawa() {
 
         {/* CTA */}
         <ContactSection
-          heading="Gotów na profesjonalną stronę?"
-          subheading="Specjalista z doświadczeniem warszawskich projektów czeka na Twoją wiadomość. Konsultacja jest bezpłatna, bez zobowiązań."
         />
       </Layout>
     </>

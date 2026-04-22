@@ -57,23 +57,19 @@ export default function BlogAiImageGenCoTo() {
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "AI Image Generation", url: "https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "AI Image Generation", href: "/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "AI Image Generation", url: "/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               AI / Image Gen / TypeScript

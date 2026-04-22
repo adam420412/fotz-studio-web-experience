@@ -160,14 +160,12 @@ export default function SklepyInternetoweWarszawa() {
         provider="Fotz Studio"
         areaServed="Warszawa"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Sklepy internetowe", url: "https://fotz.pl/uslugi/sklepy-internetowe" },
           { name: "Warszawa", url: "https://fotz.pl/uslugi/sklepy-internetowe/warszawa" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

@@ -150,13 +150,11 @@ const YouTubeAds = () => {
         description="Profesjonalne kampanie YouTube Ads. Docieraj do 2 miliardów użytkowników dzięki reklamom wideo."
         provider="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
           { name: "YouTube Ads", url: "https://fotz.pl/performance-marketing/youtube-ads" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero Section */}

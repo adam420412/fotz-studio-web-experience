@@ -210,10 +210,10 @@ export default function TworzenieStronTorun() {
         description="Profesjonalne tworzenie stron internetowych dla firm z Torunia i regionu kujawsko-pomorskiego"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -492,8 +492,6 @@ export default function TworzenieStronTorun() {
         </FadeInView>
 
         <ContactSection
-          heading="Zamów stronę internetową w Toruniu"
-          subheading="Bezpłatna konsultacja. Wycena bez zobowiązań. Strona gotowa na czas."
         />
       </Layout>
     </>

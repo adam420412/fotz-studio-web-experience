@@ -88,10 +88,10 @@ export default function LeadGeneration() {
         description="Kompleksowe strategie generacji leadów — Google Ads, SEO, LinkedIn, landing pages, email outreach, marketing automation"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-teal-950 to-slate-950">
@@ -205,8 +205,6 @@ export default function LeadGeneration() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij generować leady regularnie"
-          subheading="Bezpłatna analiza obecnych działań i plan pozyskiwania klientów dla Twojej branży."
         />
       </Layout>
     </>

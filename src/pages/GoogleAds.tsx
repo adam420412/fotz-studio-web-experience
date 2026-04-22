@@ -144,13 +144,11 @@ const GoogleAds = () => {
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
 
       {/* Hero Section */}

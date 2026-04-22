@@ -54,12 +54,10 @@ export default function Podziekowanie() {
         canonical="https://fotz.pl/podziekowanie"
         noIndex={true}
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Dziękujemy", url: "https://fotz.pl/podziekowanie" }
-        ]}
-      />
+        ]}/>
 
       <section className="min-h-[80vh] flex items-center justify-center pt-32 pb-20 bg-gradient-to-b from-background to-secondary/20">
         <div className="container-wide">

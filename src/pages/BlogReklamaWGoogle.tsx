@@ -74,7 +74,7 @@ export default function BlogReklamaWGoogle() {
         image="https://fotz.pl/images/google-ads.jpg"
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
         {/* Hero Section */}
@@ -531,8 +531,6 @@ export default function BlogReklamaWGoogle() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Chcesz reklamować się w Google?"
-          subheading="Bezpłatna analiza Twojego konta Google Ads lub stworzenie nowej kampanii."
         />
       </Layout>
     </>

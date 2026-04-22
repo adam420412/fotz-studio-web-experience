@@ -77,10 +77,10 @@ export default function BlogChurnRateCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/churn-rate-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -172,8 +172,6 @@ export default function BlogChurnRateCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zmniejsz churn dzięki lepszej stronie i UX"
-          subheading="Projektujemy doswiadczenia ktore klienci lubia — wyzszy NPS, nizszy churn, wiekszy LTV."
         />
       </Layout>
     </>

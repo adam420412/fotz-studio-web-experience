@@ -78,10 +78,10 @@ export default function BlogICPCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/icp-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -188,8 +188,6 @@ export default function BlogICPCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj stronę dopasowaną do Twojego ICP"
-          subheading="Messaging, UX i SEO skrojone pod idealnego klienta — pomagamy B2B firmom trafić do właściwych odbiorców."
         />
       </Layout>
     </>

@@ -150,13 +150,11 @@ const LinkedInAds = () => {
         description="Profesjonalne kampanie LinkedIn Ads dla firm B2B. Docieraj do decydentów i generuj wartościowe leady."
         provider="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
           { name: "LinkedIn Ads", url: "https://fotz.pl/performance-marketing/linkedin-ads" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero Section */}

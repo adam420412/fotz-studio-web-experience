@@ -62,23 +62,19 @@ export default function BlogCustomerHealthScoreCoTo() {
         datePublished="2024-03-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Customer Health Score", url: "https://fotz.pl/blog/customer-health-score-co-to-jest-jak-zbudowac" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Customer Health Score", href: "/blog/customer-health-score-co-to-jest-jak-zbudowac" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Customer Health Score", url: "/blog/customer-health-score-co-to-jest-jak-zbudowac" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Customer Success

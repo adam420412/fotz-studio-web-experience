@@ -93,7 +93,7 @@ const StronyInternetoweWalbrzych = () => {
       />
 
       <ServiceSchema name="Strony Internetowe Walbrzych" description="Profesjonalne tworzenie stron internetowych dla firm z Wałbrzycha." provider="FOTZ Studio" areaServed="Walbrzych" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Walbrzych", url: "https://fotz.pl/strony-internetowe/walbrzych" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Walbrzych", url: "https://fotz.pl/strony-internetowe/walbrzych" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

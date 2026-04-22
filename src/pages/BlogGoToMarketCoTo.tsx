@@ -104,10 +104,10 @@ export default function BlogGoToMarketCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/go-to-market-strategy-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -200,8 +200,6 @@ export default function BlogGoToMarketCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Pomożemy zbudować GTM strategy i materiały do launchu"
-          subheading="Strony produktowe, landing pages i kampanie — wspieramy firmy w skutecznym wejściu na rynek."
         />
       </Layout>
     </>

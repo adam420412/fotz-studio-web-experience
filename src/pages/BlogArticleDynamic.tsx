@@ -94,13 +94,11 @@ export default function BlogArticleDynamic() {
         noIndex={isTestArticle}
         keywords={seoKeywords}
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: article.title, url: canonicalUrl },
-        ]}
-      />
+        ]}/>
       {/* Prefer CMS-provided JSON-LD when available, otherwise emit our own. */}
       {!hasCmsArticleSchema && (
         <ArticleSchema

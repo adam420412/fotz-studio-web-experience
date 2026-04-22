@@ -66,23 +66,19 @@ export default function BlogTechnicalDebtCoTo() {
         datePublished="2024-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Dług techniczny", url: "https://fotz.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-stone-900 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Dług techniczny", href: "/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Dług techniczny", url: "/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-stone-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Engineering Management

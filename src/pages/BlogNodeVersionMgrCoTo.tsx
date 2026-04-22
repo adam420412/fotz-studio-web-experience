@@ -57,23 +57,19 @@ export default function BlogNodeVersionMgrCoTo() {
         datePublished="2024-07-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Node.js Version Managers", url: "https://fotz.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-lime-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Node.js Version Managers", href: "/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Node.js Version Managers", url: "/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Node.js / Tooling / DevOps

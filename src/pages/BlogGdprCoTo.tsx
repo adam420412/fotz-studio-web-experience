@@ -71,23 +71,19 @@ export default function BlogGdprCoTo() {
         datePublished="2024-03-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "GDPR / RODO", url: "https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "GDPR / RODO", href: "/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "GDPR / RODO", url: "/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Legal / Compliance

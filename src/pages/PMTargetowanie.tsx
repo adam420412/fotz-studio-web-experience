@@ -50,7 +50,7 @@ const PMTargetowanie = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
         { name: "Targetowanie Reklam", url: "https://fotz.pl/performance-marketing/targetowanie" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

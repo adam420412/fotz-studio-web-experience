@@ -150,14 +150,12 @@ export default function PozycjonowanieGdynia() {
         areaServed="Gdynia"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Gdynia", url: "https://fotz.pl/uslugi/pozycjonowanie/gdynia" },
-        ]}
-      />
+        ]}/>
 
       <FAQSchema items={faqItems} />
 

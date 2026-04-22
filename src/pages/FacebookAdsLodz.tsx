@@ -59,26 +59,22 @@ export default function FacebookAdsLodz() {
           areaServed="Lodz"
         />
 
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
             { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
             { name: "Facebook Ads Łódź", url: "https://fotz.pl/performance-marketing/facebook-ads/lodz" },
-          ]}
-        />
+          ]}/>
 
         <FAQSchema items={faqItems} />
 
         {/* Breadcrumbs */}
-        <PageBreadcrumbs
-          items={[
-            { label: "Strona główna", path: "/" },
-            { label: "Kampanie reklamowe", path: "/performance-marketing" },
-            { label: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { label: "Łódź", path: "/performance-marketing/facebook-ads/lodz" },
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Strona główna", path: "/" },
+            { name: "Kampanie reklamowe", path: "/performance-marketing" },
+            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Łódź", path: "/performance-marketing/facebook-ads/lodz" },
+          ]}/>
 
         {/* Hero Section */}
         <section className="relative pt-32 sm:pt-36 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 overflow-hidden">

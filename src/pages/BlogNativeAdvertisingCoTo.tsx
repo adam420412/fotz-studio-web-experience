@@ -106,10 +106,10 @@ export default function BlogNativeAdvertisingCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/native-advertising-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -212,8 +212,6 @@ export default function BlogNativeAdvertisingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Uruchomimy native advertising dla Twojej marki"
-          subheading="Kampanie in-feed, Discovery i sponsored content — reklama natywna która buduje świadomość i generuje ruch."
         />
       </Layout>
     </>

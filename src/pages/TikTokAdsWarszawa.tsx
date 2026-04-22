@@ -75,25 +75,21 @@ export default function TikTokAdsWarszawa() {
         areaServed="Warszawa"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
           { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
           { name: "TikTok Ads Warszawa", url: "https://fotz.pl/performance-marketing/tiktok-ads/warszawa" },
-        ]}
-      />
+        ]}/>
 
       <FAQSchema items={faqItems} />
 
-      <PageBreadcrumbs
-        items={[
-          { label: "Strona główna", path: "/" },
-          { label: "Kampanie reklamowe", path: "/performance-marketing" },
-          { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
-          { label: "Warszawa", path: "/performance-marketing/tiktok-ads/warszawa" },
-        ]}
-      />
+      <PageBreadcrumbs items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Kampanie reklamowe", path: "/performance-marketing" },
+          { name: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
+          { name: "Warszawa", path: "/performance-marketing/tiktok-ads/warszawa" },
+        ]}/>
 
       {/* Hero */}
       <FadeInView>

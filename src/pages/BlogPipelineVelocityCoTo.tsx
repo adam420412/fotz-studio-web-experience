@@ -90,23 +90,19 @@ export default function BlogPipelineVelocityCoTo() {
         datePublished="2024-03-17"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Pipeline Velocity", url: "https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Pipeline Velocity", href: "/blog/pipeline-velocity-co-to-jest-jak-poprawic" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Pipeline Velocity", url: "/blog/pipeline-velocity-co-to-jest-jak-poprawic" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-purple-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Sales Operations

@@ -139,11 +139,11 @@ export default function TworzenieStronPoznan() {
         keywords="tworzenie stron internetowych poznań, strony internetowe poznań, tworzenie stron www poznań, projektowanie stron internetowych poznań, strony www poznań, tworzenie stron poznań, strona internetowa poznań, agencja webdesign poznań, projektowanie stron www poznań, sklep internetowy poznań"
       />
       <ServiceSchema name="Tworzenie stron internetowych Poznań" description="Profesjonalne tworzenie stron internetowych dla firm z Poznania i Wielkopolski. Jesteśmy stąd — znamy lokalny rynek." areaServed={["PL"]} />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -342,7 +342,7 @@ export default function TworzenieStronPoznan() {
           </section>
         </FadeInView>
 
-        <ContactSection heading="Zamów stronę internetową w Poznaniu" subheading="Jesteśmy stąd — znamy rynek poznański od podszewki." />
+        <ContactSection />
       </Layout>
     </>
   );

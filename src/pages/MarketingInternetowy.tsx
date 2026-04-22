@@ -185,7 +185,7 @@ export default function MarketingInternetowy() {
         areaServed={["PL"]}
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
         {/* Hero Section */}
@@ -507,8 +507,6 @@ export default function MarketingInternetowy() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Zacznij z marketingiem internetowym"
-          subheading="Bezpłatna strategia marketingowa dla Twojej firmy. Bez zobowiązań."
         />
       </Layout>
     </>

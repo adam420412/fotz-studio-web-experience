@@ -47,13 +47,11 @@ const BlogGoogleVsFacebook = () => {
         dateModified="2026-04-01"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Google Ads vs Facebook Ads", url: "https://fotz.pl/performance-marketing/google-vs-facebook" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

@@ -50,7 +50,7 @@ const SocialMediaStrategia = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Social Media", url: "https://fotz.pl/social-media" },
         { name: "Strategia Social Media", url: "https://fotz.pl/social-media/strategia" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

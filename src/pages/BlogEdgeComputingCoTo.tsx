@@ -65,23 +65,19 @@ export default function BlogEdgeComputingCoTo() {
         datePublished="2024-04-05"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Edge Computing", url: "https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Edge Computing", href: "/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Edge Computing", url: "/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-orange-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Cloud / Web Performance

@@ -129,10 +129,10 @@ export default function IdentyfikacjaWizualnaFirmy() {
         description="Kompleksowy projekt identyfikacji wizualnej — logo, paleta kolorów, typografia, szablony dokumentów i brandbook"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-violet-950 to-slate-950">
@@ -267,8 +267,6 @@ export default function IdentyfikacjaWizualnaFirmy() {
         </FadeInView>
 
         <ContactSection
-          heading="Stwórzmy Twoją identyfikację wizualną"
-          subheading="Bezpłatna konsultacja i wycena projektu. Opowiedz nam o swojej marce!"
         />
       </Layout>
     </>

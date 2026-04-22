@@ -44,7 +44,7 @@ const CaseStudyRPPG = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "RPPG", url: "https://fotz.pl/realizacje/rppg" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="RPPG - Rada Polskich Przedsiębiorców Globalnych - Case Study"
         description="Realizacja strony internetowej dla RPPG z interaktywnym globusem 3D."

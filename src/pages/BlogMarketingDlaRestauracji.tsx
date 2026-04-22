@@ -162,14 +162,14 @@ export default function BlogMarketingDlaRestauracji() {
         url="https://fotz.pl/blog/marketing-dla-restauracji"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema breadcrumbs={[
+      <BreadcrumbSchema items={[
         { name: "Strona główna", url: "/" },
         { name: "Blog", url: "/blog" },
         { name: "Marketing dla restauracji", url: "/blog/marketing-dla-restauracji" }
-      ]} />
+      ]}/>
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">

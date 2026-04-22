@@ -139,11 +139,11 @@ export default function TworzenieStronBydgoszcz() {
         keywords="tworzenie stron internetowych bydgoszcz, strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron internetowych bydgoszcz, strony www bydgoszcz, tworzenie stron bydgoszcz, strona internetowa bydgoszcz, agencja webdesign bydgoszcz, projektowanie stron www bydgoszcz, sklep internetowy bydgoszcz"
       />
       <ServiceSchema name="Tworzenie stron internetowych Bydgoszcz" description="Profesjonalne tworzenie stron internetowych dla firm z Bydgoszczy i Kujawsko-Pomorskiego." areaServed={["PL"]} />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -342,7 +342,7 @@ export default function TworzenieStronBydgoszcz() {
           </section>
         </FadeInView>
 
-        <ContactSection heading="Zamów stronę internetową w Bydgoszczy" subheading="Bezpłatna konsultacja. Wycena bez zobowiązań." />
+        <ContactSection />
       </Layout>
     </>
   );

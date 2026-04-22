@@ -66,23 +66,19 @@ export default function BlogEbpfCoTo() {
         datePublished="2024-03-31"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "eBPF", url: "https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "eBPF", href: "/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "eBPF", url: "/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-amber-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Linux / Cloud Native

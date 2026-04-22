@@ -70,10 +70,10 @@ export default function BlogCopywritingCoTo() {
         dateModified="2025-02-01"
         url="https://fotz.pl/blog/copywriting-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -237,8 +237,6 @@ export default function BlogCopywritingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zamów copywriting dla swojej firmy"
-          subheading="Piszemy teksty które sprzedają — strony, reklamy, emaile, social media."
         />
       </Layout>
     </>

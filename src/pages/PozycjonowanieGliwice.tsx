@@ -98,8 +98,6 @@ const PozycjonowanieGliwice = () => {
         title="Pozycjonowanie Gliwice — SEO lokalne | fotz studio"
         description="Pozycjonowanie stron Gliwice i GOM. Agencja SEO fotz studio — audyt SEO, link building dla IT, produkcji i logistyki. Bezpłatny audyt!"
         canonical="https://fotz.pl/pozycjonowanie/gliwice"
-        ogTitle="Pozycjonowanie Gliwice — fotz studio Agencja SEO"
-        ogDescription="Pozycjonowanie dla Gliwic i GOM — IT, automatyka, produkcja. Audyt SEO, optymalizacja, link building dla high-tech sektora."
         keywords="pozycjonowanie gliwice, agencja seo gliwice, seo gliwice, pozycjonowanie stron gliwice, seo dla firm gliwice, seo śląsk, pozycjonowanie lokalne gliwice"
       />
       <ServiceSchema
@@ -108,14 +106,12 @@ const PozycjonowanieGliwice = () => {
         provider="Fotz Studio"
         areaServed="Gliwice"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Gliwice", url: "https://fotz.pl/uslugi/pozycjonowanie/gliwice" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

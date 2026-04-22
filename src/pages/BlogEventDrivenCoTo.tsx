@@ -65,23 +65,19 @@ export default function BlogEventDrivenCoTo() {
         datePublished="2024-04-09"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Event-Driven Architecture", url: "https://fotz.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Event-Driven Architecture", href: "/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Event-Driven Architecture", url: "/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-teal-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Architektura / Mikroserwisy

@@ -95,25 +95,20 @@ const PozycjonowanieElblag = () => {
         title="Pozycjonowanie Elbląg - lokalne SEO dla firm | fotz studio"
         description="Pozycjonowanie stron Elbląg. Agencja SEO fotz studio - audyt SEO, optymalizacja, link building. SEO dla turystyki, hoteli i portów. Bezpłatny audyt!"
         canonical="https://fotz.pl/pozycjonowanie/elblag"
-        ogTitle="Pozycjonowanie Elbląg — fotz studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Elblągu. SEO dla firm turystycznych, hoteli, restauracji i logistyki portowej. Morskie miasto czeka na Twoją markę."
         keywords="pozycjonowanie elbląg, agencja seo elbląg, seo elbląg, pozycjonowanie stron elbląg, seo dla firm elbląg, pozycjonowanie lokalne elbląg, seo warmia mazury"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Elbląg"
         description="Agencja SEO fotz studio oferuje profesjonalne pozycjonowanie stron dla firm z Elbląga. Audyt SEO, optymalizacja on-page, link building dla turystyki, hoteli, gastronomii i logistyki."
-        url="https://fotz.pl/uslugi/pozycjonowanie/elblag"
         provider="fotz studio"
         areaServed="Elblag"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Elbląg", url: "https://fotz.pl/uslugi/pozycjonowanie/elblag" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

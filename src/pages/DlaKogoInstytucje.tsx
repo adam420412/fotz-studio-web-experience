@@ -132,13 +132,11 @@ export default function DlaKogoInstytucje() {
         name="Marketing dla instytucji i wydarzeń"
         description="Kompleksowe usługi marketingowe dla instytucji kultury i organizatorów wydarzeń - promocja eventów, dokumentacja, social media."
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
           { name: "Instytucje i eventy", url: "https://fotz.pl/dla-kogo/instytucje" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

@@ -91,24 +91,20 @@ export default function BlogMrrCoToJest() {
         datePublished="2024-01-29"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "MRR co to jest", url: "https://fotz.pl/blog/mrr-monthly-recurring-revenue-co-to" },
-        ]}
-      />
+        ]}/>
 
       {/* Hero */}
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "MRR co to jest", href: "/blog/mrr-monthly-recurring-revenue-co-to" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "MRR co to jest", url: "/blog/mrr-monthly-recurring-revenue-co-to" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-cyan-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Metryki SaaS

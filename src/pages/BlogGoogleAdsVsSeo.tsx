@@ -100,23 +100,19 @@ export default function BlogGoogleAdsVsSeo() {
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Google Ads vs SEO", url: "https://fotz.pl/blog/google-ads-vs-seo" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Google Ads vs SEO", href: "/blog/google-ads-vs-seo" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Google Ads vs SEO", url: "/blog/google-ads-vs-seo" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Google Ads / SEO / Marketing

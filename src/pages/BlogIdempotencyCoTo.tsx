@@ -57,23 +57,19 @@ export default function BlogIdempotencyCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Idempotencja API", url: "https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Idempotencja API", href: "/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Idempotencja API", url: "/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-sky-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               API Design / Reliability

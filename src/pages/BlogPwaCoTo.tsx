@@ -64,23 +64,19 @@ export default function BlogPwaCoTo() {
         datePublished="2024-04-08"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "PWA", url: "https://fotz.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "PWA", href: "/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "PWA", url: "/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Web / Mobile

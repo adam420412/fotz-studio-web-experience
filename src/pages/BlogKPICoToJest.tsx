@@ -93,10 +93,10 @@ export default function BlogKPICoToJest() {
         dateModified="2025-04-05"
         url="https://fotz.pl/blog/kpi-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -225,8 +225,6 @@ export default function BlogKPICoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Mierz wyniki które naprawdę mają znaczenie"
-          subheading="Pomożemy skonfigurować analitykę i wyznaczyć KPI dla Twojego biznesu."
         />
       </Layout>
     </>

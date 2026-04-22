@@ -199,13 +199,11 @@ const KompleksowaObsluga = () => {
         canonical="https://fotz.pl/kompleksowa-obsluga-marketingowa"
         keywords="kompleksowa obsługa marketingowa, pełna obsługa marketingu, agencja marketingowa kompleksowa, marketing 360, outsourcing marketingu"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Kompleksowa obsługa", url: "https://fotz.pl/kompleksowa-obsluga" }
-        ]}
-      />
+        ]}/>
       <ServiceSchema 
         name="Kompleksowa obsługa marketingowa"
         description="Pełna obsługa marketingowa dla małych firm - strategia, social media, SEO, kampanie, content marketing."

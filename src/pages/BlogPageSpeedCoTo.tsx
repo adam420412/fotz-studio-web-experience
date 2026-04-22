@@ -79,10 +79,10 @@ export default function BlogPageSpeedCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/page-speed-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -181,8 +181,6 @@ export default function BlogPageSpeedCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Przyspieszymy Twoją stronę i poprawimy Core Web Vitals"
-          subheading="Optymalizacja techniczna, hosting i szybkość strony — SEO i konwersja w jednym pakiecie."
         />
       </Layout>
     </>

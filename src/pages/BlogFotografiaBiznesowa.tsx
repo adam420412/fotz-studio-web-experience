@@ -136,7 +136,7 @@ export default function BlogFotografiaBiznesowa() {
 
       <BreadcrumbSchema items={breadcrumbItems} />
 
-      <FAQSchema faqItems={faqItems} />
+      <FAQSchema items={faqItems} />
 
       <PageBreadcrumbs items={breadcrumbItems} />
 

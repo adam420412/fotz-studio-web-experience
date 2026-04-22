@@ -64,7 +64,7 @@ export default function BlogSocialMediaStrategia() {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Blog", url: "https://fotz.pl/blog" },
         { name: "Strategia Social Media Marketing", url: "https://fotz.pl/blog/strategia-social-media-marketing" }
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero Section */}

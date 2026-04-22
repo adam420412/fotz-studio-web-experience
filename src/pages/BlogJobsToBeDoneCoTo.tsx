@@ -81,23 +81,19 @@ export default function BlogJobsToBeDoneCoTo() {
         datePublished="2024-02-25"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Jobs To Be Done", url: "https://fotz.pl/blog/jobs-to-be-done-jtbd-co-to-jest" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Jobs To Be Done", href: "/blog/jobs-to-be-done-jtbd-co-to-jest" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Jobs To Be Done", url: "/blog/jobs-to-be-done-jtbd-co-to-jest" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-sky-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Product Strategy

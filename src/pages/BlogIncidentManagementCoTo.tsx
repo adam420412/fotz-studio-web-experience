@@ -57,23 +57,19 @@ export default function BlogIncidentManagementCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Incident Management", url: "https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-rose-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Incident Management", href: "/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Incident Management", url: "/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-red-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               SRE / DevOps

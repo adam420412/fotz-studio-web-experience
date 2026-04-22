@@ -46,13 +46,11 @@ export default function BlogNarzedziaMarketingowe() {
         dateModified="2025-07-08"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
           { name: "Blog", url: "/blog" },
           { name: "Narzędzia marketingowe", url: "/blog/narzedzia-marketingowe" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero Section */}

@@ -93,7 +93,7 @@ const StronyInternetoweRybnik = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Rybnik" description="Profesjonalne tworzenie stron internetowych dla firm z Rybnika." provider="FOTZ Studio" areaServed="Rybnik" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Rybnik", url: "https://fotz.pl/uslugi/strony-internetowe/rybnik" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Rybnik", url: "https://fotz.pl/uslugi/strony-internetowe/rybnik" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

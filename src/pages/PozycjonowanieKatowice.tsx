@@ -99,25 +99,20 @@ const PozycjonowanieKatowice = () => {
         title="Pozycjonowanie Katowice — Agencja SEO Śląsk GOM | Fotz Studio"
         description="Pozycjonowanie stron Katowice i aglomeracja GOM 2.2 mln. Agencja SEO Fotz Studio — audyt SEO, link building. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/katowice"
-        ogTitle="Pozycjonowanie Katowice — Fotz Studio Agencja SEO"
-        ogDescription="Pozycjonowanie dla Katowic i GOM — trzecie co do wielkości skupisko w Polsce. IT, FinTech, BPO. Audyt SEO, optymalizacja, link building."
         keywords="pozycjonowanie katowice, agencja seo katowice, seo katowice, pozycjonowanie stron katowice, seo dla firm katowice, seo śląsk, audyt seo katowice, pozycjonowanie lokalne katowice"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Katowice"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Katowic i aglomeracji GOM (2.2M ludzi). IT, FinTech, nieruchomości, logistyka. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        url="https://fotz.pl/uslugi/pozycjonowanie/katowice"
         provider="Fotz Studio"
         areaServed="Katowice, Śląsk, GOM"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Katowice", url: "https://fotz.pl/uslugi/pozycjonowanie/katowice" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

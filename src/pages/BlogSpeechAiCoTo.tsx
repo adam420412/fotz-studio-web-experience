@@ -57,23 +57,19 @@ export default function BlogSpeechAiCoTo() {
         datePublished="2024-05-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Speech AI TypeScript", url: "https://fotz.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Speech AI TypeScript", href: "/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Speech AI TypeScript", url: "/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               AI / Speech / TypeScript

@@ -59,23 +59,19 @@ export default function BlogCiCdBestPracticesCoTo() {
         datePublished="2024-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "CI/CD Best Practices", url: "https://fotz.pl/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-emerald-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "CI/CD Best Practices", href: "/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "CI/CD Best Practices", url: "/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-green-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               DevOps / CI/CD

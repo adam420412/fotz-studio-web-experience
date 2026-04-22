@@ -86,10 +86,10 @@ export default function BlogDropshippingCoToJest() {
         dateModified="2025-04-09"
         url="https://fotz.pl/blog/dropshipping-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -199,8 +199,6 @@ export default function BlogDropshippingCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbudujemy sklep gotowy do dropshippingu"
-          subheading="WooCommerce, Shopify, integracje z hurtowniami — od koncepcji do startu."
         />
       </Layout>
     </>

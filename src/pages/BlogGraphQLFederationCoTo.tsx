@@ -66,23 +66,19 @@ export default function BlogGraphQLFederationCoTo() {
         datePublished="2024-04-09"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "GraphQL Federation", url: "https://fotz.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-rose-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "GraphQL Federation", href: "/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "GraphQL Federation", url: "/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-pink-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               API / Mikroserwisy

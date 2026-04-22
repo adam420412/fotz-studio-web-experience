@@ -129,10 +129,10 @@ export default function ReklamaFacebook() {
         description="Profesjonalna obsługa reklam na Facebooku i Instagramie — kampanie Meta Ads, remarketing, Lookalike Audiences"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-blue-950 to-slate-950">
@@ -296,8 +296,6 @@ export default function ReklamaFacebook() {
         </FadeInView>
 
         <ContactSection
-          heading="Uruchom kampanie Facebook Ads"
-          subheading="Bezpłatny audyt obecnych kampanii lub wycena nowych. Odpowiadamy szybko!"
         />
       </Layout>
     </>

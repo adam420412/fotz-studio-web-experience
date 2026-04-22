@@ -92,16 +92,14 @@ export default function BlogStronaDlaFirmy() {
         dateModified="2026-04-10"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Fotz", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           {
             name: "Strona Internetowa Dla Firmy",
             url: "https://fotz.pl/blog/strona-internetowa-dla-firmy",
           },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       <div className="bg-background">

@@ -417,12 +417,10 @@ const Realizacje = () => {
         canonical="https://fotz.pl/realizacje"
         keywords="realizacje, portfolio agencji marketingowej, case study marketing, projekty marketingowe, realizacje digital marketing"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Realizacje", url: "https://fotz.pl/realizacje" }
-        ]}
-      />
+        ]}/>
       {/* Hero Section */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

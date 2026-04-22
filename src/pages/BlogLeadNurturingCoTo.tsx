@@ -93,10 +93,10 @@ export default function BlogLeadNurturingCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/lead-nurturing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -191,8 +191,6 @@ export default function BlogLeadNurturingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbudujemy lejek lead nurturing dla Twojego biznesu B2B"
-          subheading="Landing pages, content marketing i automatyzacje emailowe — prowadzimy leady od zainteresowania do zakupu."
         />
       </Layout>
     </>

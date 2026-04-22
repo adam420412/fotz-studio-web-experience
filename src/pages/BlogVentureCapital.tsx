@@ -78,10 +78,10 @@ export default function BlogVentureCapital() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/venture-capital-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -190,8 +190,6 @@ export default function BlogVentureCapital() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj startup gotowy na inwestycję"
-          subheading="Strona, marketing i analytics — fundament traction widoczny dla inwestorów."
         />
       </Layout>
     </>

@@ -57,23 +57,19 @@ export default function BlogHttpClientsCoTo() {
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "HTTP Clients TypeScript", url: "https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "HTTP Clients TypeScript", href: "/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "HTTP Clients TypeScript", url: "/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               TypeScript / HTTP / API

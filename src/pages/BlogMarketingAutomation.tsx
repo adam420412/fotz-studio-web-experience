@@ -226,14 +226,14 @@ export default function BlogMarketingAutomation() {
         dateModified="2025-08-01"
         url="https://fotz.pl/blog/automatyzacja-marketingu-narzedzia"
       />
-      <BreadcrumbSchema breadcrumbs={[
+      <BreadcrumbSchema items={[
         { name: "Strona główna", url: "/" },
         { name: "Blog", url: "/blog" },
         { name: "Automatyzacja marketingu narzedzia", url: "/blog/automatyzacja-marketingu-narzedzia" }
-      ]} />
+      ]}/>
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">

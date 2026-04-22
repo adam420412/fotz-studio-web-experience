@@ -93,17 +93,15 @@ export default function BlogSalesVelocityCoTo() {
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Sales Velocity", url: "https://fotz.pl/blog/sales-velocity-co-to" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", href: "/blog" }, { name: "Sales Velocity" }]} />
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Sales Velocity", url: "https://fotz.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Sales Velocity — co to jest i jak ją zwiększyć?
           </h1>

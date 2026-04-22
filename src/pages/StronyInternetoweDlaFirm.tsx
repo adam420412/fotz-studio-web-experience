@@ -29,7 +29,7 @@ export default function StronyInternetoweDlaFirm() {
         description="Profesjonalne strony internetowe dla firm każdej branży"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-green-50 to-emerald-50">
@@ -366,8 +366,6 @@ export default function StronyInternetoweDlaFirm() {
         </FadeInView>
 
         <ContactSection
-          heading="Zamów stronę dla swojej firmy"
-          subheading="Bezpłatna konsultacja. Wycena indywidualna dostosowana do Twoich potrzeb."
         />
       </Layout>
     </>

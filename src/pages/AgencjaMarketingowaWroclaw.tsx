@@ -106,7 +106,7 @@ export default function AgencjaMarketingowaWroclaw() {
       <ServiceSchema
         name="FOTZ - Agencja Marketingowa Wrocław"
         areaServed="Wroclaw"
-      />
+       description="Profesjonalne usługi marketingowe Fotz Studio."/>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-purple-700 text-white py-20">

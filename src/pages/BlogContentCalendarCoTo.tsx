@@ -79,10 +79,10 @@ export default function BlogContentCalendarCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/content-calendar-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -181,8 +181,6 @@ export default function BlogContentCalendarCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj skuteczną strategię content marketingową"
-          subheading="Blog, SEO i social media — pomagamy planować i realizować treści które przyciągają klientów."
         />
       </Layout>
     </>

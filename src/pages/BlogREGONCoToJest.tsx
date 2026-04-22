@@ -79,10 +79,10 @@ export default function BlogREGONCoToJest() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/regon-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -187,8 +187,6 @@ export default function BlogREGONCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij dzialalnosc z profesjonalna strona internetowa"
-          subheading="Pierwsze klienci online zaczynaja sie od dobrej strony — zaprojektujemy ja dla Ciebie."
         />
       </Layout>
     </>

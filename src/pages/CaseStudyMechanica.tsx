@@ -46,13 +46,11 @@ const CaseStudyMechanica = () => {
         canonical="https://fotz.pl/realizacje/mechanica"
         keywords="case study automotive, marketing motoryzacja realizacja"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Realizacje", url: "https://fotz.pl/realizacje" },
           { name: "Mechanica", url: "https://fotz.pl/realizacje/mechanica" }
-        ]}
-      />
+        ]}/>
       <ArticleSchema 
         title="Mechanica - Strona dla producenta żurawi"
         description="Case study: strona B2B z katalogiem produktów dla producenta żurawi i suwnic przemysłowych"

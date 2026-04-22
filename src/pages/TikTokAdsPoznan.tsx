@@ -64,9 +64,9 @@ export const TikTokAdsPoznan = () => {
         description="Agencja Fotz prowadzi kampanie TikTok Ads dla firm w Poznaniu. Specjalizujemy się w kreacjach wideo, In-Feed Ads, Spark Ads i optymalizacji konwersji na platformie TikTok."
       />
 
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
-      <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+      <PageBreadcrumbs items={breadcrumbs} />
 
       <FadeInView>
         <section className="hero-section py-16 px-4">

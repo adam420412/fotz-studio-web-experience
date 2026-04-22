@@ -50,7 +50,7 @@ const CaseStudyCuteDumpling = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Cute as a Dumpling", url: "https://fotz.pl/realizacje/cute-dumpling" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Cute as a Dumpling - Sklep z Ozdobami Świątecznymi - Case Study"
         description="Realizacja sklepu e-commerce dla Cute as a Dumpling."

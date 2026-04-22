@@ -100,23 +100,19 @@ export default function BlogAarrrPirateMetrics() {
         datePublished="2024-02-23"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "AARRR Pirate Metrics", url: "https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "AARRR Pirate Metrics", href: "/blog/aarrr-pirate-metrics-framework-wzrostu" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "AARRR Pirate Metrics", url: "/blog/aarrr-pirate-metrics-framework-wzrostu" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-red-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Growth i Metryki

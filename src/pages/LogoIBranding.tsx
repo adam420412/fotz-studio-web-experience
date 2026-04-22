@@ -250,24 +250,19 @@ const LogoIBranding = () => {
         title="Projektowanie Logo i Identyfikacja Wizualna — Fotz Studio Poznań"
         description="Projektujemy profesjonalne logo i identyfikację wizualną dla firm z całej Polski. Tworzenie logo od 900 zł — pełne prawa autorskie, formaty web i print…"
         canonical="https://fotz.pl/uslugi/logo-i-branding"
-        ogTitle="Projektowanie Logo i Identyfikacja Wizualna — Fotz Studio"
-        ogDescription="Unikalne logo i spójna identyfikacja wizualna dla Twojej firmy. Poznań i cała Polska. Od 900 zł, realizacja 5–7 dni."
         keywords="logo i branding, projekt logo, tworzenie logo, logo dla firmy, branding firmy, identyfikacja wizualna, logo cena"
       />
       <ServiceSchema
         name="Projektowanie logo i identyfikacja wizualna"
         description="Profesjonalne projektowanie logo oraz tworzenie identyfikacji wizualnej dla firm. Fotz Studio oferuje unikalne projekty logo z pełnymi prawami autorskimi, w formatach web i print."
-        url="https://fotz.pl/uslugi/logo-i-branding"
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Logo i branding", url: "https://fotz.pl/uslugi/logo-i-branding" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

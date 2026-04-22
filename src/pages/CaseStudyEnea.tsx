@@ -229,13 +229,11 @@ export default function CaseStudyEnea() {
         canonical="https://fotz.pl/realizacje/enea-stadion"
         keywords="case study enea, realizacja marketing b2b, digital marketing energetyka"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Realizacje", url: "https://fotz.pl/realizacje" },
           { name: "Enea Stadion", url: "https://fotz.pl/realizacje/enea-stadion" }
-        ]}
-      />
+        ]}/>
       <ArticleSchema 
         title="Enea Stadion Poznań - Kompleksowa obsługa marketingowa"
         description="Case study: jak zwiększyliśmy zaangażowanie o 340% dla największego kompleksu sportowego w Polsce"

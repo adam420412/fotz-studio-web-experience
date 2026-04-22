@@ -108,23 +108,19 @@ export default function BlogBoardMeetingCoTo() {
         datePublished="2024-02-15"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Board Meeting", url: "https://fotz.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-slate-800 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Board Meeting", href: "/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Board Meeting", url: "/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-slate-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Governance i Leadership

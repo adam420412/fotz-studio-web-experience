@@ -79,10 +79,10 @@ export default function BlogAccountManagementCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/account-management-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -184,8 +184,6 @@ export default function BlogAccountManagementCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj procesy retencji i ekspansji klientów B2B"
-          subheading="Materiały sprzedażowe, case studies i strony B2B — content który wspiera account managerów w budowaniu relacji."
         />
       </Layout>
     </>

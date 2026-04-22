@@ -290,13 +290,11 @@ const Pozycjonowanie = () => {
         areaServed="Polska"
       />
       
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
-        ]}
-      />
+        ]}/>
       
       <FAQSchema 
         items={faqSchemaItems}

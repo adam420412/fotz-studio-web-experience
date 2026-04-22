@@ -42,14 +42,13 @@ export default function PozycjonowanieZgorzelec() {
         canonical="https://fotz.pl/pozycjonowanie/zgorzelec"
         keywords="pozycjonowanie zgorzelec, agencja seo zgorzelec, seo zgorzelec, pozycjonowanie stron zgorzelec, seo dla firm zgorzelec, seo dolny śląsk, pozycjonowanie lokalne zgorzelec"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <ServiceSchema
         serviceName="Pozycjonowanie Zgorzelec"
         description="Profesjonalne SEO i pozycjonowanie stron internetowych dla firm w Zgorzelcu"
         areaServed="Zgorzelec"
-        priceRange="1500-5000"
       />
-      <FAQSchema faqs={faqs} />
+      <FAQSchema items={faqs} />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Hero Section */}

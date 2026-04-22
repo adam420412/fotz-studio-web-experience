@@ -220,27 +220,26 @@ export default function GoogleAdsSzczecin() {
         { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
         { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
         { name: "Szczecin", url: "https://fotz.pl/performance-marketing/google-ads/szczecin" }
-      ]} />
+      ]}/>
 
       <ServiceSchema
         name="Google Ads Szczecin"
         description="Profesjonalne zarządzanie kampaniami Google Ads dla firm z Szczecina i Zachodniopomorskiego"
         areaServed="Szczecin"
-        telephone="+48123456789"
       />
 
-      <FAQSchema faqs={faqs.map(faq => ({
+      <FAQSchema items={faqs.map(faq => ({
         question: faq.question,
         answer: faq.answer
       }))} />
 
       {/* Breadcrumbs */}
       <PageBreadcrumbs items={[
-        { label: "Strona główna", url: "/" },
-        { label: "Performance Marketing", url: "/performance-marketing" },
-        { label: "Google Ads", url: "/performance-marketing/google-ads" },
-        { label: "Szczecin" }
-      ]} />
+        { name: "Strona główna", url: "/" },
+        { name: "Performance Marketing", url: "/performance-marketing" },
+        { name: "Google Ads", url: "/performance-marketing/google-ads" },
+        { name: "Szczecin", url: "https://fotz.pl" }
+      ]}/>
 
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 bg-gradient-to-r from-blue-50 to-indigo-50 overflow-hidden">

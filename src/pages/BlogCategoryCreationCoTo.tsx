@@ -84,23 +84,19 @@ export default function BlogCategoryCreationCoTo() {
         datePublished="2024-02-20"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Category Creation", url: "https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Category Creation", href: "/blog/category-creation-tworzenie-kategorii-rynkowej" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Category Creation", url: "/blog/category-creation-tworzenie-kategorii-rynkowej" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-rose-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Strategia Marketingowa

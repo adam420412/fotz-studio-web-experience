@@ -79,10 +79,10 @@ export default function BlogEbitdaCoToJest() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/ebitda-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -207,8 +207,6 @@ export default function BlogEbitdaCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zwiększ przychody firmy — popraw EBITDA i wycenę"
-          subheading="SEO, Google Ads i skuteczna strona internetowa to inwestycja w wartość Twojego biznesu."
         />
       </Layout>
     </>

@@ -89,10 +89,10 @@ export default function BlogERPCoToJest() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/erp-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -185,8 +185,6 @@ export default function BlogERPCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zintegruj sklep lub stronę z systemem ERP"
-          subheading="Automatyzacja procesów między kanałem online a back-office firmy."
         />
       </Layout>
     </>

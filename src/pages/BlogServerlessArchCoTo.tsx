@@ -65,23 +65,19 @@ export default function BlogServerlessArchCoTo() {
         datePublished="2024-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Serverless", url: "https://fotz.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-amber-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Serverless", href: "/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Serverless", url: "/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-orange-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Cloud / Architektura

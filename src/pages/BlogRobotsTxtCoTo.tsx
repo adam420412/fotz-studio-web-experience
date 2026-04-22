@@ -101,10 +101,10 @@ export default function BlogRobotsTxtCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/robots-txt-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -204,8 +204,6 @@ export default function BlogRobotsTxtCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Skonfigurujemy robots.txt i naprawimy indeksowanie Twojej strony"
-          subheading="Techniczne SEO — robots.txt, sitemap, crawl budget i pełny audyt indeksowania dla Twojej witryny."
         />
       </Layout>
     </>

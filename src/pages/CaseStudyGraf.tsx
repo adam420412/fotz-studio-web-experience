@@ -50,7 +50,7 @@ const CaseStudyGraf = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Graf Tapicerstwo", url: "https://fotz.pl/realizacje/graf-tapicerstwo" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Graf Tapicerstwo - Zabudowa Busów - Case Study"
         description="Realizacja strony internetowej dla Graf Tapicerstwo - zabudowa busów."

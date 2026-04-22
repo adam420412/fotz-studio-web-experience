@@ -42,7 +42,7 @@ const CaseStudyFabrykaVirali = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Fabryka Virali", url: "https://fotz.pl/realizacje/fabryka-virali" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Fabryka Virali - Agencja Marketingowa - Case Study"
         description="Realizacja strony internetowej dla Fabryki Virali - agencji social media."

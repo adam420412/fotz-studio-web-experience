@@ -77,10 +77,10 @@ export default function BlogValuePropositionCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/value-proposition-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -184,8 +184,6 @@ export default function BlogValuePropositionCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zaprojektujemy strone ktora pokazuje Twoja wartosc"
-          subheading="Copywriting, design i A/B testy — pomagamy komunikowac VP ktore konwertuje odwiedzajacych w klientow."
         />
       </Layout>
     </>

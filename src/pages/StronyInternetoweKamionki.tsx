@@ -93,7 +93,7 @@ const StronyInternetoweKamionki = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Kamionki" description="Profesjonalne tworzenie stron internetowych dla firm z Kamionek." provider="FOTZ Studio" areaServed="Kamionki" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kamionki", url: "https://fotz.pl/uslugi/strony-internetowe/kamionki" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kamionki", url: "https://fotz.pl/uslugi/strony-internetowe/kamionki" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

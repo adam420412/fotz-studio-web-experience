@@ -79,10 +79,10 @@ export default function BlogCROCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/cro-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -177,8 +177,6 @@ export default function BlogCROCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zwiększ konwersję swojej strony z CRO"
-          subheading="Audyt UX, testy A/B i optymalizacja — pomagamy zamienić ruch w klientów."
         />
       </Layout>
     </>

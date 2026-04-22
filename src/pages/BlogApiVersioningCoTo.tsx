@@ -57,23 +57,19 @@ export default function BlogApiVersioningCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Wersjonowanie API", url: "https://fotz.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Wersjonowanie API", href: "/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Wersjonowanie API", url: "/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               API Design / Backend

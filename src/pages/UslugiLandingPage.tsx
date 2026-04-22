@@ -229,13 +229,11 @@ export default function UslugiLandingPage() {
         areaServed="Polska"
       />
 
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Landing Page", url: "https://fotz.pl/uslugi/landing-page" },
-        ]}
-      />
+        ]}/>
 
       <FAQSchema
         items={faqItems.map((item) => ({

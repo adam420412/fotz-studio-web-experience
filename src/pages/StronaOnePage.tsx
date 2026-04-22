@@ -116,7 +116,7 @@ export default function StronaOnePage() {
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Strona one page", url: "https://fotz.pl/uslugi/strona-one-page" }
-        ]} />
+        ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
@@ -337,8 +337,6 @@ export default function StronaOnePage() {
         </section>
 
         <ContactSection
-          heading="Zamów stronę one page"
-          subheading="Prosta strona gotowa w 2 tygodnie. Bezpłatna wycena w 24h."
         />
       </Layout>
     </>

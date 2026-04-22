@@ -224,8 +224,7 @@ export default function PozycjonowanieZabrze() {
           description="Profesjonalne SEO lokalne i pozycjonowanie stron internetowych dla firm w Zabrzu. Zwiększamy widoczność w Google i przychody."
           areaServed="Zabrze"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             {
               name: "Usługi",
@@ -235,8 +234,7 @@ export default function PozycjonowanieZabrze() {
               name: "Pozycjonowanie Zabrze",
               url: "https://fotz.pl/pozycjonowanie/zabrze",
             },
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero Section */}

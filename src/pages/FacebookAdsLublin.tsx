@@ -15,14 +15,12 @@ export default function FacebookAdsLublin() {
         canonical="https://fotz.pl/performance-marketing/facebook-ads/lublin"
         keywords="facebook ads lublin, meta ads lublin, reklamy facebook lublin, agencja facebook ads lublin, kampanie facebook lublin, instagram ads lublin, facebook ads dla firm lublin, reklama na facebooku lublin, meta ads agencja lublin, facebook ads cennik lublin"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Fotz.pl", url: "https://fotz.pl" },
           { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Lublin" }
-        ]}
-      />
+          { name: "Lublin", url: "https://fotz.pl" }
+        ]}/>
       <ServiceSchema
         name="Facebook Ads Lublin"
         description="Profesjonalne zarządzanie kampaniami reklamowymi Facebook Ads dla firm z Lublina"
@@ -30,14 +28,12 @@ export default function FacebookAdsLublin() {
       />
 
       <Layout>
-        <PageBreadcrumbs
-          items={[
-            { label: "Home", path: "/" },
-            { label: "Performance Marketing", path: "/performance-marketing" },
-            { label: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { label: "Lublin" }
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Home", path: "/" },
+            { name: "Performance Marketing", path: "/performance-marketing" },
+            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Lublin", url: "https://fotz.pl" }
+          ]}/>
 
         {/* HERO SECTION */}
         <section className="relative bg-gradient-to-br from-blue-50 to-indigo-50 py-16 md:py-24 overflow-hidden">

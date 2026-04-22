@@ -57,23 +57,19 @@ export default function BlogReactEmailResendCoTo() {
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "React Email i Resend 2024", url: "https://fotz.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-sky-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "React Email i Resend 2024", href: "/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "React Email i Resend 2024", url: "/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-blue-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Email / React / TypeScript / 2024

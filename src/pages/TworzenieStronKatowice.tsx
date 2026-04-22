@@ -139,11 +139,11 @@ export default function TworzenieStronKatowice() {
         keywords="tworzenie stron internetowych katowice, strony internetowe katowice, tworzenie stron www katowice, projektowanie stron internetowych katowice, strony www katowice, strony internetowe śląsk, tworzenie stron katowice, strona internetowa katowice, projektowanie stron katowice, sklep internetowy katowice"
       />
       <ServiceSchema name="Tworzenie stron internetowych Katowice" description="Profesjonalne tworzenie stron internetowych dla firm z Katowic, Śląska i metropolii GZM." areaServed={["PL"]} />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -342,7 +342,7 @@ export default function TworzenieStronKatowice() {
           </section>
         </FadeInView>
 
-        <ContactSection heading="Zamów stronę internetową na Śląsku" subheading="Obsługujemy firmy z całej metropolii GZM. Bezpłatna wycena." />
+        <ContactSection />
       </Layout>
     </>
   );

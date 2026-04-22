@@ -92,7 +92,7 @@ const StronyInternetoweZabrze = () => {
       />
 
       <ServiceSchema name="Strony Internetowe Zabrze" description="Profesjonalne tworzenie stron internetowych dla firm z Zabrza i Górnego Śląska." provider="FOTZ Studio" areaServed="Zabrze" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Zabrze", url: "https://fotz.pl/uslugi/strony-internetowe/zabrze" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Zabrze", url: "https://fotz.pl/uslugi/strony-internetowe/zabrze" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

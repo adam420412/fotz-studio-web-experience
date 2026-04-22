@@ -109,25 +109,20 @@ const PozycjonowanieKielce = () => {
         title="Pozycjonowanie Kielce — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Kielce. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niski SEO competition = szybkie wyniki. Bezpłatny audyt!"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/kielce"
-        ogTitle="Pozycjonowanie Kielce — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Kielcach. Targi Kielce, budownictwo, tech. Niższa konkurencja = szybkie pozycje w Google."
         keywords="pozycjonowanie kielce, agencja seo kielce, seo kielce, pozycjonowanie stron kielce, seo dla firm kielce, seo świętokrzyskie, pozycjonowanie lokalne kielce"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Kielce"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Kielc. Audyt SEO, optymalizacja on-page, link building dla targów, budownictwa i e-commerce."
-        url="https://fotz.pl/uslugi/pozycjonowanie/kielce"
         provider="Fotz Studio"
         areaServed="Kielce, Świętokrzyskie"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Kielce", url: "https://fotz.pl/uslugi/pozycjonowanie/kielce" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

@@ -41,7 +41,7 @@ export default function BlogSEOvsGoogleAds() {
         { name: 'Strona główna', url: '/' },
         { name: 'Blog', url: '/blog' },
         { name: 'SEO vs Google Ads', url: '/blog/seo-vs-google-ads' }
-      ]} />
+      ]}/>
       <ArticleSchema
         headline="SEO vs Google Ads - Kompleksowe porównanie pozycjonowania i reklamy"
         description="Poznaj różnice między SEO a Google Ads, zalety każdej strategii i dowiedz się, kiedy wybrać każdą z nich."

@@ -163,7 +163,7 @@ export default function AgencjaMarketingowaLodz() {
       />
       
       <BreadcrumbSchema items={breadcrumbs} />
-      <ServiceSchema areaServed="Lodz" />
+      <ServiceSchema areaServed="Lodz"  name="Usługi marketingowe" description="Profesjonalne usługi marketingowe Fotz Studio."/>
       <FAQSchema items={faqItems} />
 
       {/* Hero Section */}

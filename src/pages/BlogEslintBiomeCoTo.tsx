@@ -57,23 +57,19 @@ export default function BlogEslintBiomeCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "ESLint i Biome", url: "https://fotz.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-violet-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "ESLint i Biome", href: "/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "ESLint i Biome", url: "/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-purple-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               TypeScript / DevTools

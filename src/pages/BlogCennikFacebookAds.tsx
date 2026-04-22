@@ -84,23 +84,19 @@ export default function BlogCennikFacebookAds() {
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Cennik Facebook Ads", url: "https://fotz.pl/blog/cennik-facebook-ads" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Cennik Facebook Ads", href: "/blog/cennik-facebook-ads" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Cennik Facebook Ads", url: "/blog/cennik-facebook-ads" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-indigo-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Facebook Ads / Social Media / Reklama online

@@ -63,23 +63,19 @@ export default function BlogFeatureFlagsCoTo() {
         datePublished="2024-04-11"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Feature Flags", url: "https://fotz.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-purple-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Feature Flags", href: "/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Feature Flags", url: "/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-fuchsia-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Product / Engineering

@@ -141,23 +141,19 @@ export default function BlogOptymalizacjaGoogleAds() {
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Optymalizacja Google Ads", url: "https://fotz.pl/blog/optymalizacja-google-ads" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Optymalizacja Google Ads", href: "/blog/optymalizacja-google-ads" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Optymalizacja Google Ads", url: "/blog/optymalizacja-google-ads" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-yellow-400 text-slate-900 text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Google Ads / SEM / Strategia

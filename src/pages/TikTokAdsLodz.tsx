@@ -74,7 +74,7 @@ export function TikTokAdsLodz() {
       />
 
       <BreadcrumbSchema items={breadcrumbs} />
-      <FAQSchema faqItems={faqItems} />
+      <FAQSchema items={faqItems} />
 
       <PageBreadcrumbs items={breadcrumbs} />
 

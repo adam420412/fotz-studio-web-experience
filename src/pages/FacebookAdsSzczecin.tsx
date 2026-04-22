@@ -15,14 +15,12 @@ export default function FacebookAdsSzczecin() {
         canonical="https://fotz.pl/performance-marketing/facebook-ads/szczecin"
         keywords="facebook ads szczecin, meta ads szczecin, reklamy facebook szczecin, agencja facebook ads szczecin, kampanie facebook szczecin, instagram ads szczecin, facebook ads dla firm szczecin, reklama na facebooku szczecin, meta ads agencja szczecin, facebook ads cennik szczecin"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Fotz.pl", url: "https://fotz.pl" },
           { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
           { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Szczecin" }
-        ]}
-      />
+          { name: "Szczecin", url: "https://fotz.pl" }
+        ]}/>
       <ServiceSchema
         name="Facebook Ads Szczecin"
         description="Profesjonalne zarządzanie kampaniami reklamowymi Facebook Ads dla firm z Szczecina"
@@ -30,14 +28,12 @@ export default function FacebookAdsSzczecin() {
       />
 
       <Layout>
-        <PageBreadcrumbs
-          items={[
-            { label: "Home", path: "/" },
-            { label: "Performance Marketing", path: "/performance-marketing" },
-            { label: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { label: "Szczecin" }
-          ]}
-        />
+        <PageBreadcrumbs items={[
+            { name: "Home", path: "/" },
+            { name: "Performance Marketing", path: "/performance-marketing" },
+            { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
+            { name: "Szczecin", url: "https://fotz.pl" }
+          ]}/>
 
         {/* HERO SECTION */}
         <section className="relative bg-gradient-to-br from-blue-50 to-indigo-50 py-16 md:py-24 overflow-hidden">

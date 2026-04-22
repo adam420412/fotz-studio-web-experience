@@ -187,30 +187,26 @@ export default function BlogKosztProwadzeniaStrony() {
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           {
             name: "Koszt prowadzenia strony internetowej",
             url: "https://fotz.pl/blog/koszt-prowadzenia-strony-internetowej",
           },
-        ]}
-      />
+        ]}/>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
               {
-                label: "Koszt prowadzenia strony",
-                href: "/blog/koszt-prowadzenia-strony-internetowej",
+                name: "Koszt prowadzenia strony",
+                url: "/blog/koszt-prowadzenia-strony-internetowej",
               },
-            ]}
-          />
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-yellow-400 text-gray-900 text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Marketing / Strategia

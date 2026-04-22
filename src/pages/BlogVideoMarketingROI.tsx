@@ -125,16 +125,14 @@ export default function BlogVideoMarketingROI() {
 
         keywords="ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 poradnik, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 strategia, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 jak zrobić, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 marketing, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 przykłady, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 w Polsce"
       />
-      <BreadcrumbSchema
-        items={[
-          { label: "Strona główna", url: "https://fotz.pl" },
-          { label: "Blog", url: "https://fotz.pl/blog" },
+      <BreadcrumbSchema items={[
+          { name: "Strona główna", url: "https://fotz.pl" },
+          { name: "Blog", url: "https://fotz.pl/blog" },
           {
-            label: "ROI video marketingu",
+            name: "ROI video marketingu",
             url: "https://fotz.pl/blog/video-marketing-roi",
           },
-        ]}
-      />
+        ]}/>
       <ArticleSchema
         headline="ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025"
         description="Kompleksny poradnik ROI video marketingu w Polsce. Statystyki efektywności, porównanie formatów, przykłady biznesowe i strategie maksymalizowania zwrotu z wideo."

@@ -79,10 +79,10 @@ export default function BlogDigitalMarketingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/digital-marketing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -182,8 +182,6 @@ export default function BlogDigitalMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbudujemy strategię digital marketingu dla Twojej firmy"
-          subheading="SEO, Google Ads, social media — kompleksowe działania z mierzalnymi wynikami."
         />
       </Layout>
     </>

@@ -57,23 +57,19 @@ export default function BlogCssContainerLayerCoTo() {
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Nowoczesny CSS 2024", url: "https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Nowoczesny CSS 2024", href: "/blog/css-container-queries-layer-nesting-scope-view-transitions-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Nowoczesny CSS 2024", url: "/blog/css-container-queries-layer-nesting-scope-view-transitions-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-emerald-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               CSS / Modern / 2024

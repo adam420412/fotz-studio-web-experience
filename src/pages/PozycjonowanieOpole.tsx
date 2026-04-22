@@ -90,14 +90,12 @@ export default function PozycjonowanieOpole() {
           provider="fotz.pl"
           areaServed="Opole"
         />
-        <BreadcrumbSchema
-          items={[
+        <BreadcrumbSchema items={[
             { name: "Strona główna", url: "https://fotz.pl" },
             { name: "Usługi", url: "https://fotz.pl/uslugi" },
             { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
             { name: "Pozycjonowanie Opole", url: "https://fotz.pl/uslugi/pozycjonowanie/opole" }
-          ]}
-        />
+          ]}/>
         <FAQSchema items={faqItems} />
 
         {/* Hero */}

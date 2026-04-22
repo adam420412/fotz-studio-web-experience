@@ -163,13 +163,11 @@ const IdentyfikacjaWizualna = () => {
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Identyfikacja Wizualna", url: "https://fotz.pl/uslugi/branding" },
-        ]}
-      />
+        ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
       />

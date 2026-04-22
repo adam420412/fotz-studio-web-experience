@@ -52,13 +52,11 @@ export default function BlogPozycjonowanieStron() {
         dateModified="2026-04-10"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Pozycjonowanie Stron Internetowych", url: "https://fotz.pl/blog/pozycjonowanie-stron-internetowych-poradnik" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

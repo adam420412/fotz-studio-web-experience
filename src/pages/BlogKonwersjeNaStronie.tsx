@@ -64,7 +64,7 @@ export default function BlogKonwersjeNaStronie() {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Blog", url: "https://fotz.pl/blog" },
         { name: "Jak Zwiększyć Konwersję na Stronie", url: "https://fotz.pl/blog/jak-zwiekszyc-konwersje-na-stronie" }
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <div className="bg-background min-h-screen">

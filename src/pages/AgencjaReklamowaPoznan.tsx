@@ -84,12 +84,10 @@ const AgencjaReklamowaPoznan = () => {
         provider="Fotz Studio"
         areaServed="Poznań"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Agencja Reklamowa Poznań", url: "https://fotz.pl/agencja-reklamowa-poznan" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}

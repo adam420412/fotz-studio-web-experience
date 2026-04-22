@@ -110,10 +110,10 @@ export default function BlogGoogleMyBusiness() {
         dateModified="2025-04-12"
         url="https://fotz.pl/blog/google-moja-firma-optymalizacja"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
@@ -372,8 +372,6 @@ export default function BlogGoogleMyBusiness() {
         </section>
 
         <ContactSection
-          heading="Potrzebujesz pomocy z Google Moja Firma?"
-          subheading="Optymalizujemy wizytówki Google Business Profile dla firm lokalnych. Zdobywaamy opinie, tworzymy strategie content, obsługujemy Q&A."
         />
       </Layout>
     </>

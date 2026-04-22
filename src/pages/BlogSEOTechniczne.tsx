@@ -193,7 +193,7 @@ export default function BlogSEOTechniczne() {
       <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs.map(b => ({
+        <PageBreadcrumbs items={breadcrumbs.map(b => ({
           label: b.name,
           href: b.url
         }))} />

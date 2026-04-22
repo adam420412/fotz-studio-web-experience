@@ -87,10 +87,10 @@ export default function BlogPozycjonowanieSklepu() {
         dateModified="2025-04-01"
         url="https://fotz.pl/blog/pozycjonowanie-sklepu-internetowego"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -200,8 +200,6 @@ export default function BlogPozycjonowanieSklepu() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij sprzedawać więcej dzięki SEO"
-          subheading="Pozycjonujemy sklepy WooCommerce — audyt bezpłatny, efekty mierzalne."
         />
       </Layout>
     </>

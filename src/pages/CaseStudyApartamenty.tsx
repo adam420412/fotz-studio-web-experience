@@ -50,7 +50,7 @@ const CaseStudyApartamenty = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Apartamenty Chorwacja", url: "https://fotz.pl/realizacje/apartamenty-chorwacja" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Apartamenty Chorwacja - System Rezerwacji - Case Study"
         description="Realizacja strony internetowej dla apartamentów w Chorwacji z systemem rezerwacji."

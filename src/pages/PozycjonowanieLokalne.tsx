@@ -30,7 +30,7 @@ export default function PozycjonowanieLokalne() {
         description="SEO dla firm lokalnych — pozycjonowanie w Google Maps i lokalnych wynikach"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
@@ -456,8 +456,6 @@ export default function PozycjonowanieLokalne() {
         </FadeInView>
 
         <ContactSection
-          heading="Zacznij dominować lokalnie"
-          subheading="Bezpłatny audyt lokalnego SEO Twojej firmy. Wyślemy raport w 48h."
         />
       </Layout>
     </>

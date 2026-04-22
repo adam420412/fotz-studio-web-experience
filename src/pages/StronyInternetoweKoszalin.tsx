@@ -93,7 +93,7 @@ const StronyInternetoweKoszalin = () => {
       />
       
       <ServiceSchema name="Strony Internetowe Koszalin" description="Profesjonalne tworzenie stron internetowych dla firm z Koszalina." provider="FOTZ Studio" areaServed="Koszalin" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Koszalin", url: "https://fotz.pl/uslugi/strony-internetowe/koszalin" }]} />
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Koszalin", url: "https://fotz.pl/uslugi/strony-internetowe/koszalin" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

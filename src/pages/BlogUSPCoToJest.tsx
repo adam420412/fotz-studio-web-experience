@@ -77,10 +77,10 @@ export default function BlogUSPCoToJest() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/usp-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -176,8 +176,6 @@ export default function BlogUSPCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zakomunikujemy Twoje USP na stronie ktora sprzedaje"
-          subheading="Copywriting, design i UX — pomagamy wyroznic sie i konwertowac leady w klientow."
         />
       </Layout>
     </>

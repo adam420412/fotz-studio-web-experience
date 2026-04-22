@@ -111,23 +111,19 @@ export default function BlogProposalSprzedazowy() {
         datePublished="2024-02-19"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Proposal sprzedażowy", url: "https://fotz.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Proposal sprzedażowy", href: "/blog/proposal-sprzedazowy-oferta-handlowa-b2b" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Proposal sprzedażowy", url: "/blog/proposal-sprzedazowy-oferta-handlowa-b2b" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-purple-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Proces Sprzedaży

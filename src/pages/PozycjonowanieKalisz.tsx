@@ -99,24 +99,19 @@ const PozycjonowanieKalisz = () => {
         title="Pozycjonowanie Kalisz - Agencja SEO Wielkopolska | Fotz Studio"
         description="Pozycjonowanie stron Kalisz i Wielkopolska. Agencja SEO Fotz Studio - szybkie efekty, niższa konkurencja, białohat SEO dla firm z Kalisza. Bezpłatny audyt!"
         canonical="https://fotz.pl/pozycjonowanie/kalisz"
-        ogTitle="Pozycjonowanie Kalisz - Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Kaliszu i Wielkopolsce. Szybkie efekty, niższa konkurencja SEO, profesjonalne strategie dla firm lokalnych."
         keywords="pozycjonowanie kalisz, agencja seo kalisz, seo kalisz, pozycjonowanie stron kalisz, seo dla firm kalisz, pozycjonowanie lokalne kalisz, seo wielkopolska"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Kalisz"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Kalisza i Wielkopolski. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne dla biznesu w Kaliszu."
-        url="https://fotz.pl/pozycjonowanie/kalisz"
         provider="Fotz Studio"
         areaServed="Kalisz"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
           { name: "Pozycjonowanie", url: "/pozycjonowanie" },
           { name: "Kalisz", url: "/pozycjonowanie/kalisz" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

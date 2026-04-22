@@ -61,13 +61,11 @@ export default function BlogIdentyfikacjaWizualna() {
         dateModified="2026-04-11"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Identyfikacja Wizualna", url: "https://fotz.pl/blog/co-to-jest-identyfikacja-wizualna" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       <article className="pt-32 pb-20 bg-background">

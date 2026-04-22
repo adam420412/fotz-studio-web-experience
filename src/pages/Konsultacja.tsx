@@ -186,12 +186,10 @@ export default function Konsultacja() {
         canonical="https://fotz.pl/konsultacja"
         keywords="konsultacja marketingowa, darmowa konsultacja, marketing Poznań, strategia marketingowa"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Konsultacja", url: "https://fotz.pl/konsultacja" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqs} />
       <LocalBusinessSchema />
 

@@ -73,10 +73,10 @@ export default function BlogInternalLinkingCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/internal-linking-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -176,8 +176,6 @@ export default function BlogInternalLinkingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zoptymalizujemy linki wewnętrzne i strukturę SEO Twojej strony"
-          subheading="Audyt internal linking, silosy treści i pillar pages — budujemy autorytet tematyczny."
         />
       </Layout>
     </>

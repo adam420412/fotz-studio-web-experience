@@ -205,7 +205,7 @@ export default function BlogAudytSEOKrok() {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Blog", url: "https://fotz.pl/blog" },
         { name: "Audyt SEO krok po kroku", url: "https://fotz.pl/blog/audyt-seo-krok-po-kroku" }
-      ]} />
+      ]}/>
 
       <Layout>
         {/* Breadcrumb */}

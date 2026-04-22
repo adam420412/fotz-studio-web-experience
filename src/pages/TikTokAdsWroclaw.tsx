@@ -176,7 +176,6 @@ export default function TikTokAdsWroclaw() {
         name="Kampanie TikTok Ads Wrocław"
         description="Profesjonalne kampanie TikTok Ads dla firm z Wrocławia. Kreacje wideo, targetowanie grupy docelowej, In-Feed Ads, Spark Ads, TopView i Brand Takeover. Wsparcie od konsultacji do optymalizacji."
         areaServed="Wroclaw"
-        url="https://fotz.pl/performance-marketing/tiktok-ads/wroclaw"
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />

@@ -79,10 +79,10 @@ export default function BlogB2BMarketingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/marketing-b2b-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -193,8 +193,6 @@ export default function BlogB2BMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbudujemy strone ktora generuje leady B2B"
-          subheading="SEO, landing page i content — pomagamy firmom B2B pozyskiwac klientow przez internet."
         />
       </Layout>
     </>

@@ -64,23 +64,19 @@ export default function BlogSprintPlanningCoTo() {
         datePublished="2024-02-22"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Sprint Planning", url: "https://fotz.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Sprint Planning", href: "/blog/sprint-planning-co-to-jest-jak-przeprowadzic" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Sprint Planning", url: "/blog/sprint-planning-co-to-jest-jak-przeprowadzic" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-purple-600 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Agile / Scrum

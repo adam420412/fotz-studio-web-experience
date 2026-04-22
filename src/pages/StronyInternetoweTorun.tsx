@@ -49,7 +49,6 @@ export default function StronyInternetoweTorun() {
         name="Projektowanie stron internetowych w Toruniu"
         description="Nowoczesne projektowanie stron internetowych dla firm z Torunia. Tworzenie stron wizytówek, sklepów e-commerce i landing pages."
         areaServed="Toruń"
-        priceRange="1500-15000"
       />
       <FAQSchema items={faqItems} />
 

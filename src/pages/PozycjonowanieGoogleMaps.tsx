@@ -72,13 +72,11 @@ const PozycjonowanieGoogleMaps = () => {
         provider="Fotz Studio"
         areaServed="Polska"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
           { name: "Google Maps", url: "https://fotz.pl/seo/google-maps" }
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       {/* Hero Section */}

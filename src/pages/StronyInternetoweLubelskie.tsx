@@ -224,10 +224,10 @@ export default function StronyInternetoweLubelskie() {
         description="Profesjonalne tworzenie stron internetowych dla firm z województwa lubelskiego"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -536,8 +536,6 @@ export default function StronyInternetoweLubelskie() {
 
         {/* CTA */}
         <ContactSection
-          heading="Gotów na profesjonalną stronę?"
-          subheading="Specjalista z Lubelszczyzny czeka na Twoją wiadomość. Konsultacja je bezpłatna, bez zobowiązań."
         />
       </Layout>
     </>

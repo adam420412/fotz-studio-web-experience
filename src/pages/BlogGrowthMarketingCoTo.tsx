@@ -78,10 +78,10 @@ export default function BlogGrowthMarketingCoTo() {
         dateModified="2025-04-10"
         url="https://fotz.pl/blog/growth-marketing-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -177,8 +177,6 @@ export default function BlogGrowthMarketingCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Przyspiesz wzrost swojego biznesu z Growth Marketing"
-          subheading="Strona, SEO i analytics jako fundament — budujemy podstawy systematycznego wzrostu."
         />
       </Layout>
     </>

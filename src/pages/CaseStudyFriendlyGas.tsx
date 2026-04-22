@@ -43,7 +43,7 @@ const CaseStudyFriendlyGas = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Friendly Gas", url: "https://fotz.pl/realizacje/friendly-gas" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Friendly Gas - Sprzedaż Gazu Online - Case Study"
         description="Realizacja strony internetowej dla Friendly Gas z systemem zamówień online."

@@ -128,10 +128,10 @@ export default function MarketingAutomation() {
         description="Wdrożenie i obsługa systemów marketing automation — email sequences, lead scoring, CRM integration, nurturing workflows"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-orange-950 to-slate-950">
@@ -281,8 +281,6 @@ export default function MarketingAutomation() {
         </FadeInView>
 
         <ContactSection
-          heading="Wdrożymy marketing automation dla Twojej firmy"
-          subheading="Bezpłatna analiza procesów i rekomendacja narzędzi. Zacznijmy od rozmowy!"
         />
       </Layout>
     </>

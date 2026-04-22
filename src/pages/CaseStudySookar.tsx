@@ -50,7 +50,7 @@ const CaseStudySookar = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
         { name: "Sookar", url: "https://fotz.pl/realizacje/sookar" }
-      ]} />
+      ]}/>
       <ArticleSchema
         title="Sookar - Elite Car Market - Case Study"
         description="Realizacja strony internetowej dla Sookar - elite car market."

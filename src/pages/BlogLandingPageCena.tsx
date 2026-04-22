@@ -61,7 +61,7 @@ export default function BlogLandingPageCena() {
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Landing page cena", url: "https://fotz.pl/blog/landing-page-cena" }
-        ]} />
+        ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
@@ -351,8 +351,6 @@ export default function BlogLandingPageCena() {
         </section>
 
         <ContactSection
-          heading="Zamów landing page"
-          subheading="Bezpłatna wycena landing page w 24 godziny."
         />
       </Layout>
     </>

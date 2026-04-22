@@ -57,23 +57,19 @@ export default function BlogSentryCoTo() {
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Sentry", url: "https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Sentry", href: "/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Sentry", url: "/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-violet-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Observability / Error Tracking

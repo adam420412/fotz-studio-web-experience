@@ -57,23 +57,19 @@ export default function BlogNativeWindTamaguiCoTo() {
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "React Native Styling 2024", url: "https://fotz.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-purple-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "RN Styling 2024", href: "/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "RN Styling 2024", url: "/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-fuchsia-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               React Native / Styling / Universal Apps

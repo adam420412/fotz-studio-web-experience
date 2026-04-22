@@ -105,12 +105,10 @@ export default function ONas() {
         canonical="https://fotz.pl/o-nas"
         keywords="zespół marketingowy, agencja marketingowa Poznań, Fotz Studio, o nas, marketing team"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "O nas", url: "https://fotz.pl/o-nas" }
-        ]}
-      />
+        ]}/>
       <OrganizationSchema />
       <WebPageSchema 
         title="O nas - Fotz Studio"

@@ -72,10 +72,10 @@ export default function StronaInternetowaDlaFotografa() {
         description="Tworzenie stron internetowych dla fotografów — portfolio z galerią, SEO lokalne, blog fotograficzny, formularz zapytań ofertowych"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -187,8 +187,6 @@ export default function StronaInternetowaDlaFotografa() {
         </FadeInView>
 
         <ContactSection
-          heading="Stwórzmy portfolio które przyciąga klientów"
-          subheading="Bezpłatna wycena strony dla fotografa — powiedz nam o swoich specjalizacjach."
         />
       </Layout>
     </>

@@ -97,10 +97,10 @@ export default function BlogZeroClickSearchCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/zero-click-search-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -180,8 +180,6 @@ export default function BlogZeroClickSearchCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Optymalizujemy widoczność w SERP i featured snippets"
-          subheading="SEO w erze zero-click — featured snippets, schema markup i AI Overviews dla większej widoczności marki."
         />
       </Layout>
     </>

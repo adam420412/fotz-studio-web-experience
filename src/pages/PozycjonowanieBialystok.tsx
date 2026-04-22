@@ -99,25 +99,20 @@ const PozycjonowanieBialystok = () => {
         title="Pozycjonowanie Białystok — Agencja SEO Podlaskie | Fotz Studio"
         description="Pozycjonowanie stron Białystok i Podlaskie. Agencja SEO Fotz Studio — szybkie efekty, niższa konkurencja, białohat SEO. Bezpłatny audyt SEO dla firm z…"
         canonical="https://fotz.pl/uslugi/pozycjonowanie/bialystok"
-        ogTitle="Pozycjonowanie Białystok — Fotz Studio Agencja SEO"
-        ogDescription="Skuteczne pozycjonowanie stron w Białymstoku i na Podlasiu. Szybkie efekty, niższa konkurencja SEO niż w dużych miastach. Zamów audyt!"
         keywords="pozycjonowanie białystok, agencja seo białystok, seo białystok, pozycjonowanie stron białystok, seo dla firm białystok, pozycjonowanie lokalne białystok, audyt seo białystok, seo podlaskie, agencja marketingowa białystok"
       />
       <ServiceSchema
         name="Pozycjonowanie stron internetowych Białystok"
         description="Agencja SEO Fotz Studio oferuje profesjonalne pozycjonowanie stron dla firm z Białegostoku i województwa podlaskiego. Audyt SEO, optymalizacja on-page, link building i pozycjonowanie lokalne."
-        url="https://fotz.pl/uslugi/pozycjonowanie/bialystok"
         provider="Fotz Studio"
         areaServed="Białystok, Podlaskie"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
           { name: "Białystok", url: "https://fotz.pl/uslugi/pozycjonowanie/bialystok" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

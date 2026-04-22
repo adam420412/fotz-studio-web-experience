@@ -41,9 +41,9 @@ export default function TworzenieStronBialystok() {
         description="Profesjonalne tworzenie stron internetowych dla firm z Białystoku i Podlasia. Projekty, wdrażanie, SEO, wsparcie."
         areaServed={["PL", "Białystok", "Podlasie"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero Section */}
         <motion.section
@@ -325,8 +325,6 @@ export default function TworzenieStronBialystok() {
 
         {/* Contact Section */}
         <ContactSection
-          heading="Zamów stronę internetową w Białymstoku"
-          subheading="Bezpłatna konsultacja dla firm z Podlasia i wschodniej Polski."
         />
       </Layout>
     </>

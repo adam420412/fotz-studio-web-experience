@@ -50,7 +50,7 @@ const SEOOffPage = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "SEO", url: "https://fotz.pl/seo" },
         { name: "SEO Off-Page i Link Building", url: "https://fotz.pl/seo/off-page" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

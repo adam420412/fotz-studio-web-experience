@@ -74,10 +74,10 @@ export default function BlogCrawlBudgetCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/crawl-budget-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -158,8 +158,6 @@ export default function BlogCrawlBudgetCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zoptymalizujemy indeksowanie i crawlowanie Twojej strony"
-          subheading="Techniczne SEO dla dużych stron — crawl budget, sitemap i canonical dla e-commerce i portali."
         />
       </Layout>
     </>

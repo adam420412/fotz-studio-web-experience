@@ -179,14 +179,14 @@ export default function BlogSEODlaSklepu() {
         dateModified="2025-07-22"
         url="https://fotz.pl/blog/seo-dla-sklepu-internetowego"
       />
-      <BreadcrumbSchema breadcrumbs={[
+      <BreadcrumbSchema items={[
         { name: "Strona główna", url: "/" },
         { name: "Blog", url: "/blog" },
         { name: "SEO dla sklepu internetowego", url: "/blog/seo-dla-sklepu-internetowego" }
-      ]} />
+      ]}/>
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950">

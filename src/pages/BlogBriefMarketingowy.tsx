@@ -47,13 +47,11 @@ const BlogBriefMarketingowy = () => {
         dateModified="2026-03-15"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Jak napisać brief marketingowy", url: "https://fotz.pl/blog/jak-napisac-brief-marketingowy" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
         {/* Hero */}

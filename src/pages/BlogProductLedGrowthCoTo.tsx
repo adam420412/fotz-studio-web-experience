@@ -81,10 +81,10 @@ export default function BlogProductLedGrowthCoTo() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/product-led-growth-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -201,8 +201,6 @@ export default function BlogProductLedGrowthCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zbuduj stronę dla produktu SaaS z modelem PLG"
-          subheading="Landing page, strona produktu i onboarding flow — zaprojektowane pod trial i viralność."
         />
       </Layout>
     </>

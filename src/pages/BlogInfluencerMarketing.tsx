@@ -61,13 +61,11 @@ export default function BlogInfluencerMarketing() {
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Influencer Marketing", url: "https://fotz.pl/social-media/influencer" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       <article className="pt-32 pb-20 bg-background">

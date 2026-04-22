@@ -60,13 +60,11 @@ export default function BlogMarketingB2B() {
         dateModified="2026-04-12"
         author="Fotz Studio"
       />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Marketing B2B - strategia marketingowa", url: "https://fotz.pl/blog/marketing-b2b-strategia" },
-        ]}
-      />
+        ]}/>
       <FAQSchema items={faqItems} />
 
       {/* Hero */}

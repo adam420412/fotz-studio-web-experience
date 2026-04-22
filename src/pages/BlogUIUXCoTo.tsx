@@ -86,10 +86,10 @@ export default function BlogUIUXCoTo() {
         dateModified="2025-03-30"
         url="https://fotz.pl/blog/ui-ux-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -229,8 +229,6 @@ export default function BlogUIUXCoTo() {
         </FadeInView>
 
         <ContactSection
-          heading="Zaprojektujemy stronę która konwertuje"
-          subheading="Estetyczny design + przemyślany UX = więcej klientów z tej samej strony."
         />
       </Layout>
     </>

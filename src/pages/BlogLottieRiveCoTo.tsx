@@ -57,23 +57,19 @@ export default function BlogLottieRiveCoTo() {
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
-      <BreadcrumbSchema
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Blog", url: "https://fotz.pl/blog" },
           { name: "Lottie i Rive animacje", url: "https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024" },
-        ]}
-      />
+        ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-amber-950 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <PageBreadcrumbs
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Lottie i Rive animacje", href: "/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024" },
-            ]}
-          />
+          <PageBreadcrumbs items={[
+              { name: "Home", url: "/" },
+              { name: "Blog", url: "/blog" },
+              { name: "Lottie i Rive animacje", url: "/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024" },
+            ]}/>
           <div className="mt-8">
             <span className="inline-block bg-yellow-700 text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
               Animations / Motion

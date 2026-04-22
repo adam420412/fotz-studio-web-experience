@@ -21,14 +21,13 @@ export default function GoogleAdsRzeszow() {
         name="Agencja Google Ads Rzeszów"
         description="Profesjonalne kampanie Google Ads dla firm z Rzeszowa i regionu Podkarpacia. Zwiększamy widoczność w wyszukiwarce i generujemy jakościowe leady dla branży IT, produkcji i usług."
         areaServed="Rzeszow"
-        priceRange="400-5000"
       />
       <BreadcrumbSchema items={[
         { name: 'Strona główna', url: 'https://fotz.pl' },
         { name: 'Google Ads', url: 'https://fotz.pl/performance-marketing/google-ads' },
         { name: 'Rzeszów', url: 'https://fotz.pl/performance-marketing/google-ads/rzeszow' }
-      ]} />
-      <FAQSchema faqs={[
+      ]}/>
+      <FAQSchema items={[
         {
           question: "Czy Google Ads sprawdzi się dla firmy technologicznej z Rzeszowa?",
           answer: "Absolutnie! Rzeszów to hub IT i Aviation Valley — ideal dla firm tech. Google Ads doskonale działa dla SaaS, software house'ów, startup'ów i firm B2B szukających IT talent'u i klientów."

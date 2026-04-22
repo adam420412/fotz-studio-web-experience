@@ -44,7 +44,7 @@ export default function BlogBrandingDlaMalychFirm() {
         ogType="article"
       />
       
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
       <ArticleSchema
         headline="Branding dla małej firmy - Kompletny przewodnik tworzenia identyfikacji wizualnej"
         description="Pełny poradnik jak zbudować profesjonalne branding dla małej firmy na ograniczonym budżecie. Praktyczne wskazówki, narzędzia i strategie."
@@ -53,7 +53,7 @@ export default function BlogBrandingDlaMalychFirm() {
         dateModified="2025-08-05"
         author="Fotz Studio"
       />
-      <FAQSchema faqs={faqs} />
+      <FAQSchema items={faqs} />
 
       <Layout>
         <article className="max-w-4xl mx-auto px-4 py-12">

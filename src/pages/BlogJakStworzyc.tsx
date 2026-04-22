@@ -270,10 +270,10 @@ export default function BlogJakStworzyc() {
         dateModified="2025-04-11"
         author="fotz.pl"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -802,8 +802,6 @@ export default function BlogJakStworzyc() {
 
         {/* Final CTA */}
         <ContactSection
-          heading="Gotów zacząć?"
-          subheading="Masz pytania o stworzenie strony? Napisz do nas - odpowiemy w ciągu 2 godzin."
         />
       </Layout>
     </>

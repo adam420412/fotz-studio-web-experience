@@ -86,10 +86,10 @@ export default function BlogCertyfikatSSL() {
         dateModified="2025-03-28"
         url="https://fotz.pl/blog/certyfikat-ssl-co-to"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
@@ -221,8 +221,6 @@ export default function BlogCertyfikatSSL() {
         </FadeInView>
 
         <ContactSection
-          heading="Twoja strona nie ma SSL?"
-          subheading="Pomożemy zainstalować SSL i naprawić wszystkie błędy bezpieczeństwa."
         />
       </Layout>
     </>

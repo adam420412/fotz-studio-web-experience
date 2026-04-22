@@ -79,10 +79,10 @@ export default function BlogFaktoringCoToJest() {
         dateModified="2025-04-11"
         url="https://fotz.pl/blog/faktoring-co-to-jest"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         <section className="py-12 md:py-16 bg-gradient-to-br from-slate-950 to-slate-900">
           <div className="max-w-3xl mx-auto px-4 md:px-6">
@@ -178,8 +178,6 @@ export default function BlogFaktoringCoToJest() {
         </FadeInView>
 
         <ContactSection
-          heading="Zwieksz przychody i popraw plynnosc przez lepszy marketing"
-          subheading="Wiecej klientow z internetu = szybszy cashflow. Tworzymy strony ktore przynoszaja leady."
         />
       </Layout>
     </>

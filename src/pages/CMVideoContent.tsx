@@ -50,7 +50,7 @@ const CMVideoContent = () => {
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Content Marketing", url: "https://fotz.pl/content-marketing" },
         { name: "Video Content Marketing", url: "https://fotz.pl/content-marketing/video-content" },
-      ]} />
+      ]}/>
       <FAQSchema items={faqItems} />
 
       <OrganizationSchema />

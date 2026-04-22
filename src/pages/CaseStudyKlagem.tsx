@@ -49,13 +49,11 @@ const CaseStudyKlagem = () => {
         canonical="https://fotz.pl/realizacje/klagem"
         keywords="case study google ads, realizacja kampanii google, google ads case study"
       />
-      <BreadcrumbSchema 
-        items={[
+      <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Realizacje", url: "https://fotz.pl/realizacje" },
           { name: "Klagem", url: "https://fotz.pl/realizacje/klagem" }
-        ]}
-      />
+        ]}/>
       <ArticleSchema 
         title="Klagem - Konfigurator 3D i strona B2B"
         description="Case study: strona internetowa z konfiguratorem produktów 3D dla producenta mebli modułowych"

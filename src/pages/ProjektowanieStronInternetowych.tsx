@@ -179,10 +179,10 @@ export default function ProjektowanieStronInternetowych() {
         description="Profesjonalne projektowanie stron internetowych z uwzględnieniem UX, UI i SEO"
         areaServed={["PL"]}
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
+      <BreadcrumbSchema items={breadcrumbs} />
 
       <Layout>
-        <PageBreadcrumbs breadcrumbs={breadcrumbs} />
+        <PageBreadcrumbs items={breadcrumbs} />
 
         {/* Hero */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
@@ -535,8 +535,6 @@ export default function ProjektowanieStronInternetowych() {
 
         {/* CTA */}
         <ContactSection
-          heading="Gotów do transformacji?"
-          subheading="Zacznij z bezpłatnej wyceny. Poznamy Twoje potrzeby i zaproponujemy najlepsze rozwiązanie."
         />
       </Layout>
     </>
