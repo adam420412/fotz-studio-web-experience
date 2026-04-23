@@ -474,6 +474,13 @@ export default function AgencjaMarketingowaPoznan() {
           </div>
         </div>
       </section>
+
+      <LocalSEOBoost
+        city="Poznań"
+        cityLocative="Poznaniu"
+        voivodeshipLocative="wielkopolskim"
+        variant="agency"
+      />
     </Layout>
   );
 }
