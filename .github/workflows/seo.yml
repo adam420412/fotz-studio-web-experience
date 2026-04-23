@@ -25,6 +25,20 @@ jobs:
             exit 1
           fi
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Build project
+        run: npm run build
+
+      - name: Validate sitemap-main.xml (indexable + no duplicates)
+        run: node scripts/validate-sitemap-indexable.mjs
+
   # Live check - tylko ręcznie (workflow_dispatch)
   seo_live:
     if: github.event_name == 'workflow_dispatch'
