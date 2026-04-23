@@ -1180,10 +1180,50 @@ export default function AdminDashboard() {
                       ) : (
                         <>
                           <Zap className="w-4 h-4 mr-2" />
-                          Uruchom test webhooka
+                          Uruchom test webhooka (max 3 próby)
                         </>
                       )}
                     </Button>
+
+                    {webhookAttempts.length > 0 && (
+                      <div className="rounded-lg border border-border bg-card p-3 space-y-2">
+                        <p className="text-xs font-medium text-muted-foreground">
+                          Próby (timeout 5s każda):
+                        </p>
+                        <div className="flex flex-col gap-1.5">
+                          {webhookAttempts.map((a) => (
+                            <div
+                              key={a.attempt}
+                              className="flex items-center gap-2 text-sm"
+                            >
+                              <Badge
+                                variant={
+                                  a.status === "success"
+                                    ? "default"
+                                    : a.status === "pending"
+                                      ? "secondary"
+                                      : "destructive"
+                                }
+                                className="min-w-[90px] justify-center"
+                              >
+                                Próba {a.attempt}
+                              </Badge>
+                              <span className="text-xs">
+                                {a.status === "pending" && "⏳ w toku..."}
+                                {a.status === "success" && `✅ sukces (${a.durationMs}ms)`}
+                                {a.status === "timeout" && `⏱️ timeout (${a.durationMs}ms)`}
+                                {a.status === "failed" && `❌ błąd (${a.durationMs}ms)`}
+                              </span>
+                              {a.error && (
+                                <span className="text-xs text-destructive truncate">
+                                  – {a.error}
+                                </span>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
 
                     {webhookTestResult && (
                       <div className="rounded-lg border border-border bg-card p-4 space-y-3">
