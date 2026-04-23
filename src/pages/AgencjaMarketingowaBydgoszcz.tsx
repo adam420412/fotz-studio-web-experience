@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
 
 export default function AgencjaMarketingowaBydgoszcz() {
   const [selectedPackage, setSelectedPackage] = useState<string | null>(null);
@@ -430,6 +431,13 @@ export default function AgencjaMarketingowaBydgoszcz() {
       />
 
       <FAQSchema items={faqs} />
+
+      <LocalSEOBoost
+        city="Bydgoszcz"
+        cityLocative="Bydgoszczy"
+        voivodeshipLocative="kujawsko-pomorskim"
+        variant="agency"
+      />
     </Layout>
   );
 }
