@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Play } from "lucide-react";
 
 type LiveStatProps = {
   label: string;
@@ -38,24 +38,95 @@ function LiveStat({ label, value, sub, accent }: LiveStatProps) {
   );
 }
 
-export function HeroV3() {
+type VideoStatProps = {
+  label: string;
+  caption: string;
+  sub: string;
+  src: string;
+  poster?: string;
+};
+
+function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
   return (
-    <section
-      className="relative overflow-hidden grid grid-cols-1 lg:grid-cols-[1.3fr_1fr]"
-      style={{
-        minHeight: "calc(100vh - 80px)",
-        background: "hsl(var(--background))",
-      }}
+    <div
+      className="flex-1 relative overflow-hidden border-b border-[color:var(--dv-hair)] min-h-[260px] md:min-h-[300px]"
+      style={{ color: "#fff" }}
     >
-      {/* Brand-gradient ambient glow */}
+      {/* Autoplay video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        src={src}
+        poster={poster}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-hidden="true"
+      />
+
+      {/* Readability gradient */}
       <div
         aria-hidden
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 50% 60% at 10% 90%, rgba(120,20,60,0.22) 0%, transparent 60%), radial-gradient(ellipse 50% 60% at 90% 10%, rgba(20,40,80,0.28) 0%, transparent 60%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0.55) 100%)",
         }}
       />
+
+      {/* Copy */}
+      <div className="relative h-full flex flex-col justify-between px-8 py-12 md:px-12 md:py-14">
+        <div className="flex items-center gap-2">
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/15 backdrop-blur-sm">
+            <Play className="w-3 h-3" strokeWidth={2} fill="currentColor" />
+          </span>
+          <span className="dv-mono uppercase tracking-[0.14em] text-[11px] opacity-85">
+            {label}
+          </span>
+        </div>
+        <div className="mt-8">
+          <div
+            className="font-geist leading-[0.95] mb-3"
+            style={{
+              fontSize: "clamp(32px, 3.2vw, 52px)",
+              letterSpacing: "-0.03em",
+            }}
+          >
+            {caption}
+          </div>
+          <div className="dv-mono uppercase tracking-[0.1em] text-xs opacity-75">
+            {sub}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function HeroV3() {
+  return (
+    <section
+      className="relative grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] isolate"
+      style={{
+        minHeight: "calc(100vh - 80px)",
+        background: "hsl(var(--background))",
+      }}
+    >
+      {/* Brand-gradient ambient glow — own clipping container so it doesn't
+          force the section to clip and cut off text/tiles */}
+      <div
+        aria-hidden
+        className="absolute inset-0 overflow-hidden pointer-events-none -z-10"
+      >
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 50% 60% at 10% 90%, rgba(120,20,60,0.22) 0%, transparent 60%), radial-gradient(ellipse 50% 60% at 90% 10%, rgba(20,40,80,0.28) 0%, transparent 60%)",
+          }}
+        />
+      </div>
 
       {/* LEFT — editorial copy */}
       <div className="relative flex flex-col justify-between px-6 py-14 md:px-12 md:py-16 lg:border-r border-[color:var(--dv-hair)]">
@@ -70,14 +141,15 @@ export function HeroV3() {
             style={{
               fontSize: "clamp(60px, 10vw, 180px)",
               letterSpacing: "-0.06em",
-              lineHeight: 0.88,
+              lineHeight: 0.95,
               fontWeight: 400,
+              paddingBottom: "0.08em",
             }}
           >
             Marketing{" "}
             <span
               className="dv-text-grad italic"
-              style={{ display: "inline-block" }}
+              style={{ display: "inline-block", paddingRight: "0.08em" }}
             >
               z&nbsp;dowodami.
             </span>
@@ -142,10 +214,12 @@ export function HeroV3() {
           value="12+"
           sub="Studio marketingu wzrostu"
         />
-        <LiveStat
-          label="Główna realizacja"
-          value="Enea Stadion"
-          sub="+340% zaangażowanie · 2M+ wyśw."
+        <VideoStat
+          label="Showreel · auto"
+          caption="Fotz Reel"
+          sub="Kulisy produkcji · 2024"
+          src="/videos/fotz-reel.mp4"
+          poster="/videos/fotz-reel-poster.jpg"
         />
       </div>
     </section>

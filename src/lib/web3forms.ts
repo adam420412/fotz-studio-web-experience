@@ -51,12 +51,22 @@ export async function submitWeb3Form(
   try {
     data = (await response.json()) as Web3FormsResponse;
   } catch {
-    throw new Error(
+    const err = new Error(
       `Nieprawidłowa odpowiedź Web3Forms (status ${response.status})`
     );
+    console.error("[web3forms] invalid JSON response", {
+      status: response.status,
+      keyPreview: `${WEB3FORMS_KEY.slice(0, 6)}…${WEB3FORMS_KEY.slice(-4)}`,
+    });
+    throw err;
   }
 
   if (!response.ok || !data?.success) {
+    console.error("[web3forms] submit failed", {
+      status: response.status,
+      keyPreview: `${WEB3FORMS_KEY.slice(0, 6)}…${WEB3FORMS_KEY.slice(-4)}`,
+      response: data,
+    });
     throw new Error(data?.message || "Błąd podczas wysyłania wiadomości");
   }
 
