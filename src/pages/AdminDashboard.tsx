@@ -414,34 +414,99 @@ export default function AdminDashboard() {
   const runWebhookTest = async () => {
     setIsTestingWebhook(true);
     setWebhookTestResult(null);
-    try {
-      const { data, error } = await supabase.functions.invoke("babylove-webhook-test", {
-        body: {},
-      });
-      if (error) throw error;
-      const ok =
-        data?.summary?.invalidTokenBlocked === true &&
-        data?.summary?.validTokenAccepted === true;
-      setWebhookTestResult({ success: ok, ...data });
-      toast({
-        title: ok ? "Webhook działa poprawnie" : "Webhook – wykryto problem",
-        description: ok
-          ? "Zły token: 401, prawidłowy token: 200."
-          : "Sprawdź szczegóły poniżej oraz logi.",
-        variant: ok ? "default" : "destructive",
-      });
-    } catch (error) {
-      const message = error instanceof Error ? error.message : "Nieznany błąd";
-      console.error("Webhook test error:", error);
-      setWebhookTestResult({ success: false, error: message });
-      toast({
-        title: "Błąd testu webhooka",
-        description: message,
-        variant: "destructive",
-      });
-    } finally {
-      setIsTestingWebhook(false);
+    setWebhookAttempts([]);
+
+    const MAX_ATTEMPTS = 3;
+    const TIMEOUT_MS = 5000;
+    let lastError: string | null = null;
+
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+      setWebhookAttempts((prev) => [
+        ...prev,
+        { attempt, status: "pending" },
+      ]);
+      const startedAt = performance.now();
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+
+      try {
+        const invokePromise = supabase.functions.invoke("babylove-webhook-test", {
+          body: {},
+        });
+        const timeoutPromise = new Promise<never>((_, reject) => {
+          controller.signal.addEventListener("abort", () =>
+            reject(new Error(`Timeout po ${TIMEOUT_MS}ms`)),
+          );
+        });
+        const { data, error } = (await Promise.race([
+          invokePromise,
+          timeoutPromise,
+        ])) as Awaited<typeof invokePromise>;
+        clearTimeout(timer);
+        if (error) throw error;
+
+        const durationMs = Math.round(performance.now() - startedAt);
+        const ok =
+          data?.summary?.invalidTokenBlocked === true &&
+          data?.summary?.validTokenAccepted === true;
+
+        setWebhookAttempts((prev) =>
+          prev.map((a) =>
+            a.attempt === attempt
+              ? { attempt, status: ok ? "success" : "failed", durationMs }
+              : a,
+          ),
+        );
+        setWebhookTestResult({ success: ok, ...data });
+        toast({
+          title: ok
+            ? `Webhook działa (próba ${attempt}/${MAX_ATTEMPTS})`
+            : "Webhook – wykryto problem",
+          description: ok
+            ? "Zły token: 401, prawidłowy token: 200."
+            : "Sprawdź szczegóły poniżej oraz logi.",
+          variant: ok ? "default" : "destructive",
+        });
+        if (ok) {
+          setIsTestingWebhook(false);
+          return;
+        }
+        // Treat as failed; retry
+        lastError = "Webhook zwrócił nieprawidłową odpowiedź";
+      } catch (error) {
+        clearTimeout(timer);
+        const isTimeout =
+          error instanceof Error && error.message.startsWith("Timeout");
+        const message =
+          error instanceof Error ? error.message : "Nieznany błąd";
+        const durationMs = Math.round(performance.now() - startedAt);
+        lastError = message;
+        setWebhookAttempts((prev) =>
+          prev.map((a) =>
+            a.attempt === attempt
+              ? {
+                  attempt,
+                  status: isTimeout ? "timeout" : "failed",
+                  durationMs,
+                  error: message,
+                }
+              : a,
+          ),
+        );
+      }
     }
+
+    // All attempts exhausted
+    setWebhookTestResult({
+      success: false,
+      error: `Wszystkie ${MAX_ATTEMPTS} próby nie powiodły się. Ostatni błąd: ${lastError ?? "nieznany"}`,
+    });
+    toast({
+      title: "Test webhooka nieudany",
+      description: `Wyczerpano ${MAX_ATTEMPTS} próby (timeout ${TIMEOUT_MS}ms).`,
+      variant: "destructive",
+    });
+    setIsTestingWebhook(false);
   };
 
   if (isAdmin === false) {
