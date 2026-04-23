@@ -169,6 +169,11 @@ function validateFile(path) {
       if (def.itemShape && names.has("items")) {
         const body = extractItemsArrayLiteral(propsBlock);
         if (body) {
+          // Only report missing required keys if the literal contains *some*
+          // object entries — otherwise the array is empty and we have nothing
+          // to inspect. Likewise, skip when the items prop is a variable
+          // reference (handled by `body === null` above).
+          const hasObjectEntries = /\{[\s\S]*?:[\s\S]*?\}/.test(body);
           for (const f of def.itemShape.forbidden) {
             const re = new RegExp(`\\b${f}\\s*:`);
             if (re.test(body)) {
@@ -180,15 +185,17 @@ function validateFile(path) {
               });
             }
           }
-          for (const r of def.itemShape.required) {
-            const re = new RegExp(`\\b${r}\\s*:`);
-            if (!re.test(body)) {
-              issues.push({
-                line,
-                component,
-                kind: "items-missing-key",
-                detail: r,
-              });
+          if (hasObjectEntries) {
+            for (const r of def.itemShape.required) {
+              const re = new RegExp(`\\b${r}\\s*:`);
+              if (!re.test(body)) {
+                issues.push({
+                  line,
+                  component,
+                  kind: "items-missing-key",
+                  detail: r,
+                });
+              }
             }
           }
         }
