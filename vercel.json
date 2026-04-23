@@ -111,8 +111,10 @@
     { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true },
     { "source": "/content-marketing/tresci-seo", "destination": "/content-marketing/strategia", "permanent": true }
   ],
+  "functions": {
+    "api/send-contact.js": { "maxDuration": 10 }
+  },
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/:path*" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "headers": [

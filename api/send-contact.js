@@ -10,35 +10,14 @@
  *   - CONTACT_INBOX        (opcjonalne, domyślnie "a.mazziarz@gmail.com")
  *   - CONTACT_FROM         (opcjonalne, domyślnie "Fotz Studio <onboarding@resend.dev>")
  *
- * Endpoint akceptuje dowolny JSON — wszystkie klucze zostają ładnie
- * sformatowane w treści e-maila, nie trzeba więc aktualizować backendu
- * kiedy na frontendzie dochodzi nowe pole.
+ * Plik celowo w JS (nie TS), żeby Vercel nie musiał kompilować typów
+ * i żeby wdrożenie działało bez żadnych dodatkowych zależności.
  */
-
-// Minimalne typy Vercel req/res, żeby nie wymagać paczki @vercel/node
-type VercelRequest = {
-  method?: string;
-  body?: unknown;
-  headers: Record<string, string | string[] | undefined>;
-};
-type VercelResponse = {
-  status: (code: number) => VercelResponse;
-  json: (body: unknown) => VercelResponse;
-  setHeader: (name: string, value: string) => void;
-  end: (body?: string) => void;
-};
-
-type Payload = {
-  subject?: string;
-  from_name?: string;
-  email?: string;
-  [key: string]: unknown;
-};
 
 const DEFAULT_INBOX = "a.mazziarz@gmail.com";
 const DEFAULT_FROM = "Fotz Studio <onboarding@resend.dev>";
 
-const FIELD_LABELS: Record<string, string> = {
+const FIELD_LABELS = {
   name: "Imię i nazwisko",
   from_name: "Od",
   email: "E-mail",
@@ -65,14 +44,12 @@ const FIELD_LABELS: Record<string, string> = {
   description: "Opis",
 };
 
-function labelFor(key: string): string {
+function labelFor(key) {
   if (FIELD_LABELS[key]) return FIELD_LABELS[key];
-  return key
-    .replace(/[_-]+/g, " ")
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+  return key.replace(/[_-]+/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-function escapeHtml(value: unknown): string {
+function escapeHtml(value) {
   const str = value == null ? "" : String(value);
   return str
     .replace(/&/g, "&amp;")
@@ -82,7 +59,7 @@ function escapeHtml(value: unknown): string {
     .replace(/'/g, "&#39;");
 }
 
-function formatValue(value: unknown): string {
+function formatValue(value) {
   if (value == null) return '<em style="color:#888">(brak)</em>';
   if (typeof value === "string") {
     return escapeHtml(value).replace(/\n/g, "<br>");
@@ -99,7 +76,7 @@ function formatValue(value: unknown): string {
   }
 }
 
-function buildHtml(payload: Payload): string {
+function buildHtml(payload) {
   const priority = [
     "from_name",
     "name",
@@ -110,10 +87,10 @@ function buildHtml(payload: Payload): string {
     "subject",
     "message",
   ];
-  const seen = new Set<string>();
-  const rows: string[] = [];
+  const seen = new Set();
+  const rows = [];
 
-  const push = (key: string) => {
+  const push = (key) => {
     if (seen.has(key)) return;
     if (!(key in payload)) return;
     const raw = payload[key];
@@ -150,15 +127,8 @@ function buildHtml(payload: Payload): string {
   `;
 }
 
-async function sendEmail(
-  apiKey: string,
-  from: string,
-  to: string[],
-  subject: string,
-  html: string,
-  replyTo?: string
-) {
-  const body: Record<string, unknown> = { from, to, subject, html };
+async function sendEmail(apiKey, from, to, subject, html, replyTo) {
+  const body = { from, to, subject, html };
   if (replyTo) body.reply_to = replyTo;
 
   const res = await fetch("https://api.resend.com/emails", {
@@ -171,7 +141,7 @@ async function sendEmail(
   });
 
   const rawText = await res.text();
-  let parsed: unknown = null;
+  let parsed = null;
   try {
     parsed = rawText ? JSON.parse(rawText) : null;
   } catch {
@@ -180,23 +150,20 @@ async function sendEmail(
 
   if (!res.ok) {
     const msg =
-      (parsed && typeof parsed === "object" && parsed !== null && "message" in parsed
-        ? String((parsed as { message: unknown }).message)
+      (parsed && typeof parsed === "object" && parsed && parsed.message
+        ? String(parsed.message)
         : rawText) || res.statusText;
     throw new Error(`Resend ${res.status}: ${msg}`);
   }
 
-  return parsed as { id?: string } | null;
+  return parsed;
 }
 
-function isValidEmail(value: unknown): value is string {
+function isValidEmail(value) {
   return typeof value === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-export default async function handler(
-  req: VercelRequest,
-  res: VercelResponse
-): Promise<void> {
+export default async function handler(req, res) {
   // CORS
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -224,12 +191,12 @@ export default async function handler(
   }
 
   // Vercel parsuje body automatycznie jeśli Content-Type === application/json
-  let payload: Payload | null = null;
+  let payload = null;
   if (req.body && typeof req.body === "object") {
-    payload = req.body as Payload;
+    payload = req.body;
   } else if (typeof req.body === "string") {
     try {
-      payload = JSON.parse(req.body) as Payload;
+      payload = JSON.parse(req.body);
     } catch {
       res.status(400).json({ success: false, message: "Nieprawidłowy JSON" });
       return;
@@ -261,8 +228,7 @@ export default async function handler(
       html,
       replyTo
     );
-
-    res.status(200).json({ success: true, id: result?.id });
+    res.status(200).json({ success: true, id: result && result.id });
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown error";
     console.error("[send-contact] send failed:", msg);
