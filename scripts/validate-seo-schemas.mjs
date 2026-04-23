@@ -13,7 +13,8 @@
  * Usage:  node scripts/validate-seo-schemas.mjs
  */
 import { readFileSync, readdirSync } from "node:fs";
-import { join } from "node:path";
+import { writeFileSync } from "node:fs";
+import { join, extname } from "node:path";
 
 const PAGES_DIR = "src/pages";
 const FILE_GLOB = /^AgencjaMarketingowa.*\.tsx$/;
@@ -213,6 +214,7 @@ function main() {
 
   let total = 0;
   const report = [];
+  const records = [];
   for (const f of files) {
     const issues = validateFile(f);
     if (issues.length === 0) continue;
@@ -220,7 +222,34 @@ function main() {
     report.push(`\n  ${f}`);
     for (const i of issues) {
       report.push(`    L${i.line}  ${i.component}  [${i.kind}]  ${i.detail}`);
+      records.push({ file: f, line: i.line, component: i.component, kind: i.kind, detail: i.detail });
     }
+  }
+
+  // Optional --report=<path> export (.json or .csv inferred from extension).
+  const reportArg = process.argv.find((a) => a.startsWith("--report="));
+  if (reportArg) {
+    const outPath = reportArg.slice("--report=".length);
+    const ext = extname(outPath).toLowerCase();
+    if (ext === ".csv") {
+      const esc = (v) => {
+        const s = String(v ?? "");
+        return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+      };
+      const lines = ["file,line,component,kind,detail"];
+      for (const r of records) lines.push([r.file, r.line, r.component, r.kind, r.detail].map(esc).join(","));
+      writeFileSync(outPath, lines.join("\n") + "\n");
+    } else {
+      writeFileSync(
+        outPath,
+        JSON.stringify(
+          { scannedFiles: files.length, totalIssues: total, generatedAt: new Date().toISOString(), issues: records },
+          null,
+          2,
+        ) + "\n",
+      );
+    }
+    console.log(`  → report written to ${outPath}`);
   }
 
   const header = `\nSEO schema validator — ${files.length} files scanned`;
