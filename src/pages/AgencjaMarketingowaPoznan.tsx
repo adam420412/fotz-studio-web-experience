@@ -31,6 +31,7 @@ import {
   FAQSchema,
   BreadcrumbSchema,
 } from "@/components/seo/StructuredData";
+import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
 
 export default function AgencjaMarketingowaPoznan() {
   const [selectedPackage, setSelectedPackage] = useState<
