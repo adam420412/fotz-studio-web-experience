@@ -1,11 +1,9 @@
 /**
- * Vercel serverless (Edge) endpoint używany przez wszystkie formularze
- * na stronie (Kontakt, Cennik, Konsultacja, Newsletter, Kalkulator,
- * Generator Briefu, Chatbot, Footer itd.).
+ * Vercel Serverless Function (Node runtime) używany przez wszystkie
+ * formularze na stronie (Kontakt, Cennik, Konsultacja, Newsletter,
+ * Kalkulator, Generator Briefu, Chatbot, Footer itd.).
  *
- * Wysyła dwie wiadomości przez Resend:
- *   1. Notyfikacja do Fotz Studio (a.mazziarz@gmail.com)
- *   2. (opcjonalnie) Potwierdzenie do osoby wysyłającej formularz
+ * Wysyła notyfikację przez Resend do Fotz Studio.
  *
  * Konfiguracja (Vercel → Project → Settings → Environment Variables):
  *   - RESEND_API_KEY       (wymagane)
@@ -17,8 +15,17 @@
  * kiedy na frontendzie dochodzi nowe pole.
  */
 
-export const config = {
-  runtime: "edge",
+// Minimalne typy Vercel req/res, żeby nie wymagać paczki @vercel/node
+type VercelRequest = {
+  method?: string;
+  body?: unknown;
+  headers: Record<string, string | string[] | undefined>;
+};
+type VercelResponse = {
+  status: (code: number) => VercelResponse;
+  json: (body: unknown) => VercelResponse;
+  setHeader: (name: string, value: string) => void;
+  end: (body?: string) => void;
 };
 
 type Payload = {
@@ -76,7 +83,7 @@ function escapeHtml(value: unknown): string {
 }
 
 function formatValue(value: unknown): string {
-  if (value == null) return "<em style=\"color:#888\">(brak)</em>";
+  if (value == null) return '<em style="color:#888">(brak)</em>';
   if (typeof value === "string") {
     return escapeHtml(value).replace(/\n/g, "<br>");
   }
@@ -93,7 +100,6 @@ function formatValue(value: unknown): string {
 }
 
 function buildHtml(payload: Payload): string {
-  // Kolejność: najważniejsze pola na górze, potem reszta.
   const priority = [
     "from_name",
     "name",
@@ -164,78 +170,75 @@ async function sendEmail(
     body: JSON.stringify(body),
   });
 
-  if (!res.ok) {
-    const errorText = await res.text().catch(() => "");
-    throw new Error(
-      `Resend API error ${res.status}: ${errorText || res.statusText}`
-    );
+  const rawText = await res.text();
+  let parsed: unknown = null;
+  try {
+    parsed = rawText ? JSON.parse(rawText) : null;
+  } catch {
+    /* not JSON */
   }
 
-  return res.json();
+  if (!res.ok) {
+    const msg =
+      (parsed && typeof parsed === "object" && parsed !== null && "message" in parsed
+        ? String((parsed as { message: unknown }).message)
+        : rawText) || res.statusText;
+    throw new Error(`Resend ${res.status}: ${msg}`);
+  }
+
+  return parsed as { id?: string } | null;
 }
 
 function isValidEmail(value: unknown): value is string {
   return typeof value === "string" && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-export default async function handler(req: Request): Promise<Response> {
-  const corsHeaders = {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods": "POST, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
-  };
+export default async function handler(
+  req: VercelRequest,
+  res: VercelResponse
+): Promise<void> {
+  // CORS
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 
   if (req.method === "OPTIONS") {
-    return new Response(null, { status: 204, headers: corsHeaders });
+    res.status(204).end();
+    return;
   }
 
   if (req.method !== "POST") {
-    return new Response(
-      JSON.stringify({ success: false, message: "Method not allowed" }),
-      {
-        status: 405,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
+    res.status(405).json({ success: false, message: "Method not allowed" });
+    return;
   }
 
   const apiKey = (process.env.RESEND_API_KEY || "").trim();
   if (!apiKey) {
     console.error("[send-contact] RESEND_API_KEY is not configured");
-    return new Response(
-      JSON.stringify({
-        success: false,
-        message:
-          "Serwis e-mail nie został skonfigurowany. Spróbuj ponownie za chwilę lub napisz na kontakt@fotz.pl.",
-      }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
+    res.status(500).json({
+      success: false,
+      message:
+        "Serwis e-mail nie został skonfigurowany (brak RESEND_API_KEY w Vercel).",
+    });
+    return;
   }
 
-  let payload: Payload;
-  try {
-    payload = (await req.json()) as Payload;
-  } catch {
-    return new Response(
-      JSON.stringify({ success: false, message: "Nieprawidłowy JSON" }),
-      {
-        status: 400,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
+  // Vercel parsuje body automatycznie jeśli Content-Type === application/json
+  let payload: Payload | null = null;
+  if (req.body && typeof req.body === "object") {
+    payload = req.body as Payload;
+  } else if (typeof req.body === "string") {
+    try {
+      payload = JSON.parse(req.body) as Payload;
+    } catch {
+      res.status(400).json({ success: false, message: "Nieprawidłowy JSON" });
+      return;
+    }
   }
 
   if (!payload || typeof payload !== "object") {
-    return new Response(
-      JSON.stringify({ success: false, message: "Brak danych formularza" }),
-      {
-        status: 400,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
+    res.status(400).json({ success: false, message: "Brak danych formularza" });
+    return;
   }
 
   const inbox = (process.env.CONTACT_INBOX || DEFAULT_INBOX).trim();
@@ -259,25 +262,13 @@ export default async function handler(req: Request): Promise<Response> {
       replyTo
     );
 
-    return new Response(
-      JSON.stringify({ success: true, id: (result as { id?: string })?.id }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
+    res.status(200).json({ success: true, id: result?.id });
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown error";
     console.error("[send-contact] send failed:", msg);
-    return new Response(
-      JSON.stringify({
-        success: false,
-        message: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
-      }),
-      {
-        status: 502,
-        headers: { "Content-Type": "application/json", ...corsHeaders },
-      }
-    );
+    res.status(502).json({
+      success: false,
+      message: "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    });
   }
 }

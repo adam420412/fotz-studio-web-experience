@@ -107,9 +107,9 @@ function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
 export function HeroV3() {
   return (
     <section
-      className="relative grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] isolate"
+      className="relative grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] isolate pt-24 sm:pt-28 md:pt-32 lg:pt-36 xl:pt-40"
       style={{
-        minHeight: "calc(100vh - 80px)",
+        minHeight: "100vh",
         background: "hsl(var(--background))",
       }}
     >
