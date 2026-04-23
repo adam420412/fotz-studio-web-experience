@@ -1,23 +1,25 @@
 /**
- * Wspólna konfiguracja dla formularzy opartych o Web3Forms.
+ * Wspólny helper do wysyłki formularzy na stronie.
  *
- * Klucz pobieramy w pierwszej kolejności z zmiennej środowiskowej
- * `VITE_WEB3FORMS_KEY` (ustawianej np. w Vercel / .env). Jeżeli zmienna
- * nie jest dostępna w runtime (typowe w przypadku starych deploymentów,
- * w których zmienna nie została dodana), używamy wartości awaryjnej,
- * dzięki czemu formularze wciąż działają.
+ * UWAGA: plik historycznie nazywał się "web3forms" — obecnie wszystkie
+ * formularze przechodzą przez własny endpoint `/api/send-contact`
+ * (Vercel Edge Function) korzystający z Resend. Nazwę pliku i funkcji
+ * zostawiamy dla zgodności wstecznej, żeby nie musieć aktualizować
+ * każdego miejsca, które ten helper wywołuje.
  *
- * Dzięki temu pojedynczy błąd konfiguracji nie wyłącza całej strony,
- * a wszystkie komponenty korzystają z jednego, centralnego źródła prawdy.
+ * Konfiguracja (Vercel → Project → Settings → Environment Variables):
+ *   - RESEND_API_KEY   (wymagane)
+ *   - CONTACT_INBOX    (opcjonalne; domyślnie a.mazziarz@gmail.com)
+ *   - CONTACT_FROM     (opcjonalne; domyślnie onboarding@resend.dev)
+ *
+ * Lokalny development (vite):
+ *   - użyj `vercel dev` aby endpoint `/api/send-contact` działał
+ *     lub ustaw `VITE_CONTACT_ENDPOINT` np. na deploy preview.
  */
 
-const FALLBACK_WEB3FORMS_KEY = "2c9e6e82-97a0-4fb2-88d9-f6f4b23d5e2c";
-
-export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
-
-export const WEB3FORMS_KEY: string =
-  (import.meta.env.VITE_WEB3FORMS_KEY as string | undefined) ||
-  FALLBACK_WEB3FORMS_KEY;
+export const CONTACT_ENDPOINT: string =
+  (import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined) ||
+  "/api/send-contact";
 
 export interface Web3FormsPayload {
   subject?: string;
@@ -28,43 +30,43 @@ export interface Web3FormsPayload {
 export interface Web3FormsResponse {
   success: boolean;
   message?: string;
+  id?: string;
   [key: string]: unknown;
 }
 
 /**
- * Wysyła payload do Web3Forms i zwraca sparsowaną odpowiedź.
- * Rzuca błędem, jeżeli odpowiedź nie zawiera `success: true`.
+ * Wysyła payload do naszego endpointu kontaktowego i zwraca sparsowaną
+ * odpowiedź. Rzuca błędem, jeżeli odpowiedź nie zawiera `success: true`.
+ *
+ * Nazwę `submitWeb3Form` zachowujemy dla zgodności wstecznej — pod spodem
+ * uderza do `/api/send-contact` (Resend), nie do Web3Forms.
  */
 export async function submitWeb3Form(
   payload: Web3FormsPayload
 ): Promise<Web3FormsResponse> {
-  const response = await fetch(WEB3FORMS_ENDPOINT, {
+  const response = await fetch(CONTACT_ENDPOINT, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      access_key: WEB3FORMS_KEY,
-      ...payload,
-    }),
+    body: JSON.stringify(payload),
   });
 
   let data: Web3FormsResponse;
   try {
     data = (await response.json()) as Web3FormsResponse;
   } catch {
-    const err = new Error(
-      `Nieprawidłowa odpowiedź Web3Forms (status ${response.status})`
-    );
-    console.error("[web3forms] invalid JSON response", {
+    console.error("[contact] invalid JSON response", {
       status: response.status,
-      keyPreview: `${WEB3FORMS_KEY.slice(0, 6)}…${WEB3FORMS_KEY.slice(-4)}`,
+      endpoint: CONTACT_ENDPOINT,
     });
-    throw err;
+    throw new Error(
+      `Nieprawidłowa odpowiedź serwera (status ${response.status})`
+    );
   }
 
   if (!response.ok || !data?.success) {
-    console.error("[web3forms] submit failed", {
+    console.error("[contact] submit failed", {
       status: response.status,
-      keyPreview: `${WEB3FORMS_KEY.slice(0, 6)}…${WEB3FORMS_KEY.slice(-4)}`,
+      endpoint: CONTACT_ENDPOINT,
       response: data,
     });
     throw new Error(data?.message || "Błąd podczas wysyłania wiadomości");
@@ -72,3 +74,8 @@ export async function submitWeb3Form(
 
   return data;
 }
+
+// Alias z czytelniejszą nazwą — dla nowego kodu preferuj ten export.
+export const submitContactForm = submitWeb3Form;
+export type ContactFormPayload = Web3FormsPayload;
+export type ContactFormResponse = Web3FormsResponse;
