@@ -33,8 +33,8 @@ const corsHeaders = {
 };
 
 const BABYLOVE_BASE_URL = "https://api.babylovegrowth.ai/api/integrations";
-const DEFAULT_PAGE_SIZE = 100; // BabyLove allows up to 500
-const MAX_PAGES = 200;          // Safety stop (≈ 20 000 articles at 100/req)
+const DEFAULT_PAGE_SIZE = 50; // BabyLove API caps `limit` at 50
+const MAX_PAGES = 400;        // Safety stop (≈ 20 000 articles at 50/req)
 const FETCH_RETRIES = 4;
 const FETCH_BASE_DELAY_MS = 500;
 
@@ -277,7 +277,7 @@ Deno.serve(async (req) => {
     // ignore — empty/invalid body just means defaults
   }
 
-  const limit = Math.min(Math.max(opts.limit ?? DEFAULT_PAGE_SIZE, 1), 500);
+  const limit = Math.min(Math.max(opts.limit ?? DEFAULT_PAGE_SIZE, 1), 50);
   const startOffset = Math.max(opts.offset ?? 0, 0);
   const hardCap = opts.maxArticles && opts.maxArticles > 0 ? opts.maxArticles : Infinity;
   const force = Boolean(opts.force);
