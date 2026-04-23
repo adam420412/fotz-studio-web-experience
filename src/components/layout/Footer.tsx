@@ -457,6 +457,54 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Agencja marketingowa - miasta */}
+        <div className="pt-8 mt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Agencja marketingowa - miasta</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.agencjaMiasta.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* SEO - miasta */}
+        <div className="pt-8 mt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Pozycjonowanie SEO w miastach</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.seoMiasta.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Social Media - kanaly */}
+        <div className="pt-8 mt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Social Media - kanały</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.socialMedia.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 mt-10 border-t border-white/10 dv-mono uppercase tracking-[0.12em] text-[11px] text-white/50">
           <div>
