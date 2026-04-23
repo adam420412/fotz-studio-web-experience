@@ -8,7 +8,7 @@ interface SEOHeadProps {
   ogType?: "website" | "article";
   noIndex?: boolean;
   schemaJson?: object | object[];
-  keywords?: string;
+  keywords?: string | string[];
   children?: React.ReactNode;
 }
 
@@ -55,7 +55,12 @@ export function SEOHead({
     <Helmet>
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
-      {keywords && <meta name="keywords" content={keywords} />}
+      {keywords && (
+        <meta
+          name="keywords"
+          content={Array.isArray(keywords) ? keywords.join(", ") : keywords}
+        />
+      )}
       <link rel="canonical" href={canonicalUrl} />
       
       {noIndex && <meta name="robots" content="noindex, nofollow" />}

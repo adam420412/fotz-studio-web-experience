@@ -214,7 +214,7 @@ export function ServiceSchema({
 }
 
 interface BreadcrumbSchemaProps {
-  items: { name: string; url: string }[];
+  items: Array<{ name?: string; url?: string; label?: string; href?: string }>;
 }
 
 export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
@@ -224,8 +224,8 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
     itemListElement: items.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      name: item.name,
-      item: item.url,
+      name: item.name ?? item.label ?? "",
+      item: item.url ?? item.href ?? "",
     })),
   };
 
@@ -292,24 +292,30 @@ export function WebPageSchema({ title, description, url }: WebPageSchemaProps) {
 }
 
 interface ArticleSchemaProps {
-  title: string;
+  title?: string;
+  headline?: string;
   description: string;
-  url: string;
+  url?: string;
   image?: string;
   datePublished: string;
   dateModified?: string;
   author?: string;
+  authorName?: string;
 }
 
 export function ArticleSchema({
   title,
+  headline,
   description,
-  url,
+  url = "https://fotz.pl",
   image = "https://fotz.pl/og-image.jpg",
   datePublished,
   dateModified,
   author = "Fotz Studio",
+  authorName,
 }: ArticleSchemaProps) {
+  const finalTitle = title ?? headline ?? "";
+  const finalAuthor = authorName ?? author;
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -318,7 +324,7 @@ export function ArticleSchema({
       "@type": "WebPage",
       "@id": url,
     },
-    headline: title.length > 110 ? title.substring(0, 107) + "..." : title,
+    headline: finalTitle.length > 110 ? finalTitle.substring(0, 107) + "..." : finalTitle,
     description,
     url,
     image: {
@@ -329,7 +335,7 @@ export function ArticleSchema({
     dateModified: dateModified || datePublished,
     author: {
       "@type": "Organization",
-      name: author,
+      name: finalAuthor,
       url: "https://fotz.pl",
     },
     publisher: {
