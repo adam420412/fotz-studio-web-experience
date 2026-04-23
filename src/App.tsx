@@ -150,6 +150,7 @@ const SEOPozycjonowanieLodz = lazy(() => import("./pages/SEOPozycjonowanieLodz")
 const AgencjaMarketingowaPoznan = lazy(() => import("./pages/AgencjaMarketingowaPoznan"));
 const AgencjaMarketinguInternetowego = lazy(() => import("./pages/AgencjaMarketinguInternetowego"));
 const AgencjaReklamowaPoznan = lazy(() => import("./pages/AgencjaReklamowaPoznan"));
+const AgencjaMarketingowaHub = lazy(() => import("./pages/AgencjaMarketingowaHub"));
 
 // City pages - all lazy loaded
 const StronyInternetowePoznan = lazy(() => import("./pages/StronyInternetowePoznan"));
@@ -2772,6 +2773,7 @@ const App = () => (
                 <Route path="/branze/marketing-turystyka" element={<Redirect301 to="/dla-kogo/turystyka" />} />
 
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="/agencja-marketingowa" element={<AgencjaMarketingowaHub />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

@@ -77,6 +77,7 @@ const footerLinks = {
     { name: "Kariera", href: "/kariera" },
     { name: "FAQ", href: "/faq" },
     { name: "Kontakt", href: "/kontakt" },
+    { name: "Zainstaluj aplikację", href: "/zainstaluj" },
     { name: "Panel klienta", href: "https://panel.fotz.pl/login", external: true },
   ],
   narzedzia: [
@@ -87,6 +88,34 @@ const footerLinks = {
     { name: "Audyt SEO", href: "/seo/audyt" },
     { name: "Słownik marketingowy", href: "/slownik-marketingowy" },
     { name: "Darmowe zasoby", href: "/zasoby" },
+  ],
+  socialMedia: [
+    { name: "Facebook dla firm", href: "/social-media/facebook" },
+    { name: "Instagram dla firm", href: "/social-media/instagram" },
+    { name: "TikTok dla firm", href: "/social-media/tiktok" },
+    { name: "LinkedIn dla firm", href: "/social-media/linkedin" },
+    { name: "YouTube dla firm", href: "/social-media/youtube" },
+    { name: "Pinterest dla firm", href: "/social-media/pinterest" },
+    { name: "Meta (FB + IG)", href: "/social-media/meta" },
+    { name: "Strategia social media", href: "/social-media/strategia" },
+  ],
+  seoMiasta: [
+    { name: "SEO Poznań", href: "/seo/pozycjonowanie-poznan" },
+    { name: "SEO Warszawa", href: "/seo/pozycjonowanie-warszawa" },
+    { name: "SEO Kraków", href: "/seo/pozycjonowanie-krakow" },
+    { name: "SEO Wrocław", href: "/seo/pozycjonowanie-wroclaw" },
+    { name: "SEO Gdańsk", href: "/seo/pozycjonowanie-gdansk" },
+    { name: "SEO Łódź", href: "/seo/pozycjonowanie-lodz" },
+    { name: "SEO Katowice", href: "/seo/pozycjonowanie-katowice" },
+  ],
+  agencjaMiasta: [
+    { name: "Agencja Poznań", href: "/agencja-marketingowa/poznan" },
+    { name: "Agencja Warszawa", href: "/agencja-marketingowa/warszawa" },
+    { name: "Agencja Kraków", href: "/agencja-marketingowa/krakow" },
+    { name: "Agencja Wrocław", href: "/agencja-marketingowa/wroclaw" },
+    { name: "Agencja Gdańsk", href: "/agencja-marketingowa/gdansk" },
+    { name: "Agencja Łódź", href: "/agencja-marketingowa/lodz" },
+    { name: "Wszystkie miasta", href: "/agencja-marketingowa" },
   ],
   miasta: [
     { name: "Poznań", href: "/uslugi/strony-internetowe/poznan" },
@@ -418,6 +447,54 @@ export function Footer() {
           <h4 className={columnHeader}>Strony internetowe w Polsce</h4>
           <div className="flex flex-wrap gap-2">
             {footerLinks.miasta.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Agencja marketingowa - miasta */}
+        <div className="pt-8 mt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Agencja marketingowa - miasta</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.agencjaMiasta.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* SEO - miasta */}
+        <div className="pt-8 mt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Pozycjonowanie SEO w miastach</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.seoMiasta.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Social Media - kanaly */}
+        <div className="pt-8 mt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Social Media - kanały</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.socialMedia.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
