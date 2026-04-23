@@ -130,11 +130,14 @@ Deno.serve(async (req) => {
     let mode: "inserted" | "updated";
 
     if (existing) {
-      // UPDATE — zachowujemy dotychczasowe is_published i published_at,
-      // żeby ewentualna ręczna publikacja nie została cofnięta.
+      // UPDATE — auto-publikujemy każdą zaktualizowaną wersję.
       const { data: updated, error: updateError } = await supabase
         .from("blog_articles")
-        .update(common)
+        .update({
+          ...common,
+          is_published: true,
+          published_at: new Date().toISOString(),
+        })
         .eq("external_id", payload.id)
         .select("id, slug")
         .single();
@@ -154,14 +157,13 @@ Deno.serve(async (req) => {
       data = updated;
       mode = "updated";
     } else {
-      // INSERT nowego artykułu — zawsze jako DRAFT. Admin ręcznie
-      // wybiera czy i kiedy go opublikować.
+      // INSERT nowego artykułu — auto-publikacja od razu.
       const { data: inserted, error: insertError } = await supabase
         .from("blog_articles")
         .insert({
           ...common,
-          is_published: false,
-          published_at: null,
+          is_published: true,
+          published_at: new Date().toISOString(),
         })
         .select("id, slug")
         .single();
