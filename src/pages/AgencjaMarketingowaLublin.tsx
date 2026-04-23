@@ -448,6 +448,13 @@ export default function AgencjaMarketingowaLublin() {
         </div>
       </section>
 
+      <LocalSEOBoost
+        city="Lublin"
+        cityLocative="Lublinie"
+        voivodeshipLocative="lubelskim"
+        variant="agency"
+      />
+
       <ServiceSchema
         name="Agencja Marketingowa Lublin"
         description="Kompleksowe usługi marketingu cyfrowego: SEO, Google Ads, Social Media, strony WWW i strategie wzrostu dla firm z Lublina i Lubelszczyzny."
