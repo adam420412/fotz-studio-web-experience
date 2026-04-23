@@ -77,6 +77,7 @@ const footerLinks = {
     { name: "Kariera", href: "/kariera" },
     { name: "FAQ", href: "/faq" },
     { name: "Kontakt", href: "/kontakt" },
+    { name: "Zainstaluj aplikację", href: "/zainstaluj" },
     { name: "Panel klienta", href: "https://panel.fotz.pl/login", external: true },
   ],
   narzedzia: [
