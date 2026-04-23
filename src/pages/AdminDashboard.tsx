@@ -191,6 +191,14 @@ export default function AdminDashboard() {
     cleanup?: { deleted: boolean; error?: string };
     error?: string;
   } | null>(null);
+  const [webhookAttempts, setWebhookAttempts] = useState<
+    Array<{
+      attempt: number;
+      status: "pending" | "success" | "failed" | "timeout";
+      durationMs?: number;
+      error?: string;
+    }>
+  >([]);
 
   const { toast } = useToast();
 
