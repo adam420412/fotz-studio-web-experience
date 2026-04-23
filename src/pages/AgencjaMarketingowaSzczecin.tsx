@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Building2, TrendingUp, Star, Users, MapPin, CheckCircle2, ArrowRight, Phone, Target, Smartphone, BarChart3, Lightbulb, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ServiceSchema, FAQSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
+import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
 
 export default function AgencjaMarketingowaSzczecin() {
   const [selectedPackage, setSelectedPackage] = useState<string>("standard");
@@ -650,6 +651,13 @@ export default function AgencjaMarketingowaSzczecin() {
           </div>
         </div>
       </section>
+
+      <LocalSEOBoost
+        city="Szczecin"
+        cityLocative="Szczecinie"
+        voivodeshipLocative="zachodniopomorskim"
+        variant="agency"
+      />
     </Layout>
   );
 }

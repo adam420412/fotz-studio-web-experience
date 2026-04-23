@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Globe, Search, ShoppingCart, Palette, MessageSquare, TrendingUp, Phone, Headphones, ArrowRight, Sparkles, Target, Code2, Layers, Rocket, Star, Clock } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema, OrganizationSchema} from "@/components/seo/StructuredData";
+import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { CityServicesGrid } from "@/components/sections/CityServicesGrid";
 import { CityPricingCards } from "@/components/sections/CityPricingCards";
@@ -183,6 +184,12 @@ const StronyInternetoweZielonaGora = () => {
 
 
         <ContactSection />
+        <LocalSEOBoost
+          city="Zielona Góra"
+          cityLocative="Zielonej Górze"
+          voivodeshipLocative="lubuskim"
+          variant="websites"
+        />
       </Layout>
     </>
   );
