@@ -4,6 +4,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.fotz.pl" }], "destination": "https://fotz.pl/:path*", "permanent": true },
     { "source": "/strony-internetowe", "destination": "/uslugi/strony-internetowe", "permanent": true },
     { "source": "/strony-internetowe-:city", "destination": "/uslugi/strony-internetowe/:city", "permanent": true },
     { "source": "/sklepy-internetowe-:city", "destination": "/uslugi/sklepy-internetowe/:city", "permanent": true },
@@ -115,7 +116,7 @@
     "api/send-contact.js": { "maxDuration": 10 }
   },
   "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
   ],
   "headers": [
     {

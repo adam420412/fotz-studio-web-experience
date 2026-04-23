@@ -2773,6 +2773,7 @@ const App = () => (
                 <Route path="/branze/marketing-turystyka" element={<Redirect301 to="/dla-kogo/turystyka" />} />
 
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="/agencja-marketingowa" element={<AgencjaMarketingowaHub />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
