@@ -1,6 +1,7 @@
 import React from 'react';
 import { SEOHead } from "@/components/seo/SEOHead";
 import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/StructuredData";
+import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
 import { Layout } from "@/components/layout/Layout";
 import { Monitor, Globe, Code, Smartphone, Zap, CheckCircle, Users, TrendingUp } from 'lucide-react';
 import { Link } from "react-router-dom";
@@ -473,6 +474,13 @@ export default function StronyInternetoweTorun() {
           </Link>
         </div>
       </section>
+
+      <LocalSEOBoost
+        city="Toruń"
+        cityLocative="Toruniu"
+        voivodeshipLocative="kujawsko-pomorskim"
+        variant="websites"
+      />
     </Layout>
   );
 }
