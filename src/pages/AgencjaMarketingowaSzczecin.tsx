@@ -651,6 +651,13 @@ export default function AgencjaMarketingowaSzczecin() {
           </div>
         </div>
       </section>
+
+      <LocalSEOBoost
+        city="Szczecin"
+        cityLocative="Szczecinie"
+        voivodeshipLocative="zachodniopomorskim"
+        variant="agency"
+      />
     </Layout>
   );
 }
