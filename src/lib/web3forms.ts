@@ -17,9 +17,23 @@
  *     lub ustaw `VITE_CONTACT_ENDPOINT` np. na deploy preview.
  */
 
+/**
+ * Domena `fotz.pl` stoi za własnym reverse-proxy (Caddy na Hetznerze),
+ * które serwuje SPA z Vercela, ale NIE przekazuje dalej ścieżek `/api/*`
+ * do Vercela — dlatego `fotz.pl/api/send-contact` zwraca 404.
+ *
+ * Rozwiązanie: formularze wysyłamy BEZPOŚREDNIO na domenę Vercel
+ * (`fotz-studio-web-experience.vercel.app/api/send-contact`) — CORS w
+ * funkcji pozwala na dowolne Origin (`Access-Control-Allow-Origin: *`),
+ * więc to działa z każdej strony.
+ *
+ * Jeżeli w przyszłości Caddy zostanie skonfigurowany do przekazywania
+ * `/api/*` do Vercela, wystarczy zmienić domyślną wartość poniżej z
+ * absolutnego URL na `/api/send-contact`.
+ */
 export const CONTACT_ENDPOINT: string =
   (import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined) ||
-  "/api/send-contact";
+  "https://fotz-studio-web-experience.vercel.app/api/send-contact";
 
 export interface Web3FormsPayload {
   subject?: string;
