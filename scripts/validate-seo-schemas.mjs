@@ -22,9 +22,9 @@ const FILE_GLOB = /^AgencjaMarketingowa.*\.tsx$/;
 // `string[]` means "this prop must be a string array literal".
 const SCHEMAS = {
   SEOHead: {
-    required: ["title", "description"],
-    optional: ["canonical", "image", "type", "keywords", "noindex", "author", "publishedTime", "modifiedTime"],
-    stringProps: ["title", "description", "canonical", "image", "type", "author"],
+    required: ["title", "description", "canonical"],
+    optional: ["ogImage", "ogType", "noIndex", "schemaJson", "keywords", "children"],
+    stringProps: ["title", "description", "canonical", "ogImage", "ogType", "keywords"],
   },
   OrganizationSchema: {
     required: [],
@@ -233,4 +233,9 @@ function main() {
   process.exit(1);
 }
 
-main();
+import { fileURLToPath } from "node:url";
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main();
+}
+
+export { SCHEMAS };
