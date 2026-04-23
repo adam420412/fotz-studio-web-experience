@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 import { z } from "zod";
 import { Link } from "react-router-dom";
+import { submitWeb3Form } from "@/lib/web3forms";
 
 // Types
 interface FormData {
@@ -219,42 +220,34 @@ export default function GeneratorBriefu() {
     setIsSubmitting(true);
     try {
       const briefContent = generateBriefHTML();
-      
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: `Nowy brief projektowy - ${formData.companyName}`,
-          from_name: `${formData.fullName} - Generator Briefu`,
-          email: formData.email,
-          phone: formData.phone || "Nie podano",
-          company: formData.companyName,
-          project_type: projectTypes.find(p => p.value === formData.projectType)?.label || formData.projectType,
-          industry: formData.industry,
-          budget: budgets.find(b => b.value === formData.budget)?.label || formData.budget,
-          deadline: deadlines.find(d => d.value === formData.deadline)?.label || formData.deadline,
-          goals: formData.goals.join(", "),
-          description: formData.description,
-          message: briefContent,
-        }),
+
+      await submitWeb3Form({
+        subject: `Nowy brief projektowy - ${formData.companyName}`,
+        from_name: `${formData.fullName} - Generator Briefu`,
+        email: formData.email,
+        phone: formData.phone || "Nie podano",
+        company: formData.companyName,
+        project_type: projectTypes.find(p => p.value === formData.projectType)?.label || formData.projectType,
+        industry: formData.industry,
+        budget: budgets.find(b => b.value === formData.budget)?.label || formData.budget,
+        deadline: deadlines.find(d => d.value === formData.deadline)?.label || formData.deadline,
+        goals: formData.goals.join(", "),
+        description: formData.description,
+        message: briefContent,
       });
 
-      const data = await response.json();
-      if (data.success) {
-        // Send to CRM webhook (fire and forget)
-        const { sendLeadToCRM } = await import("@/hooks/useCRMWebhook");
-        sendLeadToCRM({
-          name: formData.fullName,
-          email: formData.email,
-          phone: formData.phone || undefined,
-          company: formData.companyName,
-          source: "fotz.pl/generator-briefu",
-          notes: `Typ projektu: ${projectTypes.find(p => p.value === formData.projectType)?.label}\nBranża: ${formData.industry}\nBudżet: ${budgets.find(b => b.value === formData.budget)?.label}\nTermin: ${deadlines.find(d => d.value === formData.deadline)?.label}\nCele: ${formData.goals.join(", ")}\n\nOpis: ${formData.description}`,
-        });
-        
-        setIsSubmitted(true);
-      }
+      // Send to CRM webhook (fire and forget)
+      const { sendLeadToCRM } = await import("@/hooks/useCRMWebhook");
+      sendLeadToCRM({
+        name: formData.fullName,
+        email: formData.email,
+        phone: formData.phone || undefined,
+        company: formData.companyName,
+        source: "fotz.pl/generator-briefu",
+        notes: `Typ projektu: ${projectTypes.find(p => p.value === formData.projectType)?.label}\nBranża: ${formData.industry}\nBudżet: ${budgets.find(b => b.value === formData.budget)?.label}\nTermin: ${deadlines.find(d => d.value === formData.deadline)?.label}\nCele: ${formData.goals.join(", ")}\n\nOpis: ${formData.description}`,
+      });
+
+      setIsSubmitted(true);
     } catch (error) {
       console.error("Error submitting brief:", error);
     } finally {

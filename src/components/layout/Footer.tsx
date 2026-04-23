@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { z } from "zod";
+import { submitWeb3Form } from "@/lib/web3forms";
 
 const emailSchema = z.string().trim().email("Nieprawidłowy email");
 
@@ -152,19 +153,12 @@ export function Footer() {
 
     setIsSubmitting(true);
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: "Newsletter signup - Footer",
-          from_name: "Fotz Studio - Newsletter",
-          email: email,
-          message: "Zapis do newslettera z footera",
-        }),
+      await submitWeb3Form({
+        subject: "Newsletter signup - Footer",
+        from_name: "Fotz Studio - Newsletter",
+        email: email,
+        message: "Zapis do newslettera z footera",
       });
-      const data = await response.json();
-      if (!data.success) throw new Error();
       setIsSubmitted(true);
     } catch {
       setError("Błąd. Spróbuj ponownie.");

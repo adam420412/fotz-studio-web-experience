@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Download, Mail, Loader2, CheckCircle, FileText } from "lucide-react";
 import { z } from "zod";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { submitWeb3Form } from "@/lib/web3forms";
 
 const emailSchema = z.string().trim().email("Nieprawidłowy adres email");
 
@@ -37,20 +38,12 @@ export function NewsletterSection() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: "Nowy zapis do newslettera - Checklista kampanii",
-          from_name: "Fotz Studio - Newsletter",
-          email: email,
-          message: "Użytkownik zapisał się do newslettera i pobrał checklistę skutecznej kampanii.",
-        }),
+      await submitWeb3Form({
+        subject: "Nowy zapis do newslettera - Checklista kampanii",
+        from_name: "Fotz Studio - Newsletter",
+        email: email,
+        message: "Użytkownik zapisał się do newslettera i pobrał checklistę skutecznej kampanii.",
       });
-
-      const data = await response.json();
-      if (!data.success) throw new Error();
 
       sendLeadToCRM({
         name: email.split("@")[0],

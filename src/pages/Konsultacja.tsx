@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -123,28 +124,15 @@ export default function Konsultacja() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: `Nowe zapytanie o konsultację - od ${formData.name}`,
-          from_name: "Fotz Studio - Konsultacja",
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || "Nie podano",
-          company: formData.company || "Nie podano",
-          message: formData.message || "Brak dodatkowych informacji",
-        }),
+      await submitWeb3Form({
+        subject: `Nowe zapytanie o konsultację - od ${formData.name}`,
+        from_name: "Fotz Studio - Konsultacja",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || "Nie podano",
+        company: formData.company || "Nie podano",
+        message: formData.message || "Brak dodatkowych informacji",
       });
-
-      const data = await response.json();
-
-      if (!data.success) {
-        throw new Error("Błąd podczas wysyłania zapytania");
-      }
 
       sendLeadToCRM({
         name: formData.name,

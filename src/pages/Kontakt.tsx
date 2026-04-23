@@ -12,6 +12,7 @@ import { z } from "zod";
 import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
 
@@ -86,29 +87,16 @@ export default function Kontakt() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: `Nowe zapytanie: ${formData.subject} - od ${formData.name}`,
-          from_name: "Fotz Studio - Kontakt",
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || "Nie podano",
-          company: formData.company || "Nie podano",
-          topic: formData.subject,
-          message: formData.message,
-        }),
+      await submitWeb3Form({
+        subject: `Nowe zapytanie: ${formData.subject} - od ${formData.name}`,
+        from_name: "Fotz Studio - Kontakt",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || "Nie podano",
+        company: formData.company || "Nie podano",
+        topic: formData.subject,
+        message: formData.message,
       });
-
-      const data = await response.json();
-
-      if (!data.success) {
-        throw new Error("Błąd podczas wysyłania wiadomości");
-      }
 
       // Send to CRM webhook (fire and forget)
       sendLeadToCRM({

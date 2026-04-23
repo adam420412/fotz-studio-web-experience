@@ -14,6 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
+import { submitWeb3Form } from "@/lib/web3forms";
 import { BookingCalendar } from "@/components/BookingCalendar";
 import {
   Globe,
@@ -246,36 +247,27 @@ export default function KalkulatorCen() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: "Nowe zapytanie z Kalkulatora Cen - Fotz Studio",
-          from_name: contactData.name,
-          email: contactData.email,
-          phone: contactData.phone || "Nie podano",
-          message: contactData.message || "Brak dodatkowych informacji",
-          selected_services: calculation.selectedItems.map(s => `${s.name}: ${formatPrice(s.price)} PLN (${s.type})`).join("\n"),
-          complexity: getComplexityLabel(),
-          urgency: urgencyOptions.find(o => o.id === urgency)?.label,
-          contract_months: contractMonths,
-          estimated_one_time: `${formatPrice(calculation.oneTimeTotal)} PLN`,
-          estimated_monthly: `${formatPrice(calculation.discountedMonthly)} PLN`,
-          total_contract_value: `${formatPrice(calculation.totalContractValue)} PLN`
-        })
+      await submitWeb3Form({
+        subject: "Nowe zapytanie z Kalkulatora Cen - Fotz Studio",
+        from_name: contactData.name,
+        email: contactData.email,
+        phone: contactData.phone || "Nie podano",
+        message: contactData.message || "Brak dodatkowych informacji",
+        selected_services: calculation.selectedItems.map(s => `${s.name}: ${formatPrice(s.price)} PLN (${s.type})`).join("\n"),
+        complexity: getComplexityLabel(),
+        urgency: urgencyOptions.find(o => o.id === urgency)?.label,
+        contract_months: contractMonths,
+        estimated_one_time: `${formatPrice(calculation.oneTimeTotal)} PLN`,
+        estimated_monthly: `${formatPrice(calculation.discountedMonthly)} PLN`,
+        total_contract_value: `${formatPrice(calculation.totalContractValue)} PLN`
       });
 
-      if (response.ok) {
-        toast({
-          title: "Wycena wysłana!",
-          description: "Skontaktujemy się z Tobą w ciągu 24h.",
-        });
-        setShowContactForm(false);
-        setFormSubmitted(true);
-      } else {
-        throw new Error("Failed to submit");
-      }
+      toast({
+        title: "Wycena wysłana!",
+        description: "Skontaktujemy się z Tobą w ciągu 24h.",
+      });
+      setShowContactForm(false);
+      setFormSubmitted(true);
     } catch {
       toast({
         title: "Błąd",

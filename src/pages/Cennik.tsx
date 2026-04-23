@@ -51,6 +51,7 @@ import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { submitWeb3Form } from "@/lib/web3forms";
 
 
 const contactSchema = z.object({
@@ -729,29 +730,16 @@ export default function Cennik() {
       ].filter(Boolean).join("\n");
 
       // Wysyłka przez Web3Forms
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: `Nowe zapytanie z cennika od ${formData.name}`,
-          from_name: "Fotz Studio - Konfigurator",
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || "Nie podano",
-          message: formData.message,
-          selected_services: servicesSummary,
-          price_estimate: priceSummary,
-        }),
+      await submitWeb3Form({
+        subject: `Nowe zapytanie z cennika od ${formData.name}`,
+        from_name: "Fotz Studio - Konfigurator",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || "Nie podano",
+        message: formData.message,
+        selected_services: servicesSummary,
+        price_estimate: priceSummary,
       });
-
-      const data = await response.json();
-
-      if (!data.success) {
-        throw new Error("Błąd podczas wysyłania zapytania");
-      }
 
       // Send to CRM webhook (fire and forget)
       sendLeadToCRM({

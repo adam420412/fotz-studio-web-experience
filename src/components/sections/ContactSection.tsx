@@ -19,6 +19,7 @@ import { FadeInView } from "@/components/FadeInView";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
+import { submitWeb3Form } from "@/lib/web3forms";
 // Validation schema
 const contactSchema = z.object({
   name: z.string()
@@ -112,27 +113,14 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
     
     try {
       // Send to Web3Forms
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
-          subject: `Nowe zapytanie od ${formData.name}${city ? ` (${city})` : ''}`,
-          from_name: "Fotz Studio - Kontakt",
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || "Nie podano",
-          message: formData.message,
-        }),
+      await submitWeb3Form({
+        subject: `Nowe zapytanie od ${formData.name}${city ? ` (${city})` : ''}`,
+        from_name: "Fotz Studio - Kontakt",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || "Nie podano",
+        message: formData.message,
       });
-
-      const data = await response.json();
-
-      if (!data.success) {
-        throw new Error("Błąd podczas wysyłania wiadomości");
-      }
 
       // Send to CRM webhook (fire-and-forget)
       sendLeadToCRM({

@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { submitWeb3Form } from "@/lib/web3forms";
 
 interface Message {
   id: number;
@@ -364,39 +365,30 @@ export function ChatbotFAQ() {
       .join('\n');
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "2c9e6e82-97a0-4fb2-88d9-f6f4b23d5e2c",
-          subject: "🔴 Eskalacja z chatbota - prośba o kontakt",
-          from_name: escalationData.name,
-          email: escalationData.email,
-          phone: escalationData.phone || "Nie podano",
-          message: `Użytkownik poprosił o kontakt z konsultantem.\n\nHistoria rozmowy:\n${conversationHistory}`,
-          source: "Chatbot - Eskalacja"
-        })
+      await submitWeb3Form({
+        subject: "🔴 Eskalacja z chatbota - prośba o kontakt",
+        from_name: escalationData.name,
+        email: escalationData.email,
+        phone: escalationData.phone || "Nie podano",
+        message: `Użytkownik poprosił o kontakt z konsultantem.\n\nHistoria rozmowy:\n${conversationHistory}`,
+        source: "Chatbot - Eskalacja"
       });
 
-      if (response.ok) {
-        setShowEscalationForm(false);
-        setEscalationData({ name: "", email: "", phone: "" });
-        
-        const escalationMessage: Message = {
-          id: Date.now(),
-          text: "✅ Dziękujemy! Nasz konsultant skontaktuje się z Tobą w ciągu 24 godzin roboczych. Jeśli sprawa jest pilna, zadzwoń: +48 123 456 789",
-          isBot: true,
-          isEscalation: true
-        };
-        setMessages(prev => [...prev, escalationMessage]);
+      setShowEscalationForm(false);
+      setEscalationData({ name: "", email: "", phone: "" });
 
-        toast({
-          title: "Zgłoszenie wysłane!",
-          description: "Skontaktujemy się wkrótce."
-        });
-      } else {
-        throw new Error("Failed to submit");
-      }
+      const escalationMessage: Message = {
+        id: Date.now(),
+        text: "✅ Dziękujemy! Nasz konsultant skontaktuje się z Tobą w ciągu 24 godzin roboczych. Jeśli sprawa jest pilna, zadzwoń: +48 123 456 789",
+        isBot: true,
+        isEscalation: true
+      };
+      setMessages(prev => [...prev, escalationMessage]);
+
+      toast({
+        title: "Zgłoszenie wysłane!",
+        description: "Skontaktujemy się wkrótce."
+      });
     } catch (error) {
       console.error("Escalation error:", error);
       toast({
