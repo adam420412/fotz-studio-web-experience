@@ -233,4 +233,9 @@ function main() {
   process.exit(1);
 }
 
-main();
+import { fileURLToPath } from "node:url";
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main();
+}
+
+export { SCHEMAS };
