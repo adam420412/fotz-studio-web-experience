@@ -327,22 +327,25 @@ Deno.serve(async (req) => {
         const common = toCommonFields(full, "api-sync");
 
         if (existing) {
-          // UPDATE istniejącego wiersza — NIE dotykamy `is_published`
-          // ani `published_at`, żeby ręczna publikacja z panelu admina
-          // przetrwała kolejny sync.
+          // UPDATE istniejącego wiersza — auto-publikujemy (przywrócone
+          // zachowanie sprzed draft-first). Każdy sync gwarantuje, że
+          // artykuł jest widoczny na stronie bez ręcznego klikania.
           const { error } = await supabase
             .from("blog_articles")
-            .update(common)
+            .update({
+              ...common,
+              is_published: true,
+              published_at: new Date().toISOString(),
+            })
             .eq("external_id", item.id);
           if (error) throw new Error(error.message);
           summary.updated += 1;
         } else {
-          // INSERT nowego artykułu — zawsze jako DRAFT (is_published=false,
-          // published_at=null). Admin ręcznie odkliknie publikację.
+          // INSERT nowego artykułu — auto-publikacja od razu.
           const { error } = await supabase.from("blog_articles").insert({
             ...common,
-            is_published: false,
-            published_at: null,
+            is_published: true,
+            published_at: new Date().toISOString(),
           });
           if (error) throw new Error(error.message);
           summary.inserted += 1;
