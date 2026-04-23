@@ -82,42 +82,43 @@ Deno.serve(async (req) => {
     const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-    // Upsert article (update if external_id exists, insert otherwise)
-    const { data, error } = await supabase
-      .from("blog_articles")
-      .upsert(
-        {
-          external_id: payload.id,
-          title: payload.title,
-          slug: payload.slug,
-          meta_description: payload.metaDescription || null,
-          excerpt: payload.excerpt || null,
-          content_html: payload.content_html || null,
-          content_markdown: payload.content_markdown || null,
-          hero_image_url: payload.heroImageUrl || null,
-          language_code: payload.languageCode || "pl",
-          public_url: payload.publicUrl || null,
-          external_created_at: payload.createdAt || null,
-          seed_keyword: payload.seedKeyword || null,
-          keywords: payload.keywords ?? null,
-          json_ld: payload.jsonLd ?? null,
-          faq_json_ld: payload.faqJsonLd ?? null,
-          published_at: new Date().toISOString(),
-          last_synced_at: new Date().toISOString(),
-          sync_source: "webhook",
-          is_published: true,
-        },
-        {
-          onConflict: "external_id",
-        }
-      )
-      .select()
-      .single();
+    // Pola wspólne dla INSERT i UPDATE (bez is_published / published_at —
+    // te ustawiamy tylko przy INSERCIE, żeby nowy artykuł wchodził jako
+    // draft, a ręczna publikacja z panelu admina nie była nadpisywana).
+    const common = {
+      external_id: payload.id,
+      title: payload.title,
+      slug: payload.slug,
+      meta_description: payload.metaDescription || null,
+      excerpt: payload.excerpt || null,
+      content_html: payload.content_html || null,
+      content_markdown: payload.content_markdown || null,
+      hero_image_url: payload.heroImageUrl || null,
+      language_code: payload.languageCode || "pl",
+      public_url: payload.publicUrl || null,
+      external_created_at: payload.createdAt || null,
+      seed_keyword: payload.seedKeyword || null,
+      keywords: payload.keywords ?? null,
+      json_ld: payload.jsonLd ?? null,
+      faq_json_ld: payload.faqJsonLd ?? null,
+      last_synced_at: new Date().toISOString(),
+      sync_source: "webhook",
+    };
 
-    if (error) {
-      console.error("Database error:", error);
+    // Sprawdź czy wiersz z tym external_id już istnieje.
+    const { data: existing, error: selectError } = await supabase
+      .from("blog_articles")
+      .select("id, is_published")
+      .eq("external_id", payload.id)
+      .maybeSingle();
+
+    if (selectError) {
+      console.error("Database select error:", selectError);
       return new Response(
-        JSON.stringify({ error: "Failed to save article", details: error.message }),
+        JSON.stringify({
+          error: "Failed to look up article",
+          details: selectError.message,
+        }),
         {
           status: 500,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
@@ -125,14 +126,71 @@ Deno.serve(async (req) => {
       );
     }
 
-    console.log("Article saved successfully:", data.id);
+    let data: { id: string; slug: string };
+    let mode: "inserted" | "updated";
+
+    if (existing) {
+      // UPDATE — zachowujemy dotychczasowe is_published i published_at,
+      // żeby ewentualna ręczna publikacja nie została cofnięta.
+      const { data: updated, error: updateError } = await supabase
+        .from("blog_articles")
+        .update(common)
+        .eq("external_id", payload.id)
+        .select("id, slug")
+        .single();
+      if (updateError || !updated) {
+        console.error("Database update error:", updateError);
+        return new Response(
+          JSON.stringify({
+            error: "Failed to update article",
+            details: updateError?.message,
+          }),
+          {
+            status: 500,
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          }
+        );
+      }
+      data = updated;
+      mode = "updated";
+    } else {
+      // INSERT nowego artykułu — zawsze jako DRAFT. Admin ręcznie
+      // wybiera czy i kiedy go opublikować.
+      const { data: inserted, error: insertError } = await supabase
+        .from("blog_articles")
+        .insert({
+          ...common,
+          is_published: false,
+          published_at: null,
+        })
+        .select("id, slug")
+        .single();
+      if (insertError || !inserted) {
+        console.error("Database insert error:", insertError);
+        return new Response(
+          JSON.stringify({
+            error: "Failed to insert article",
+            details: insertError?.message,
+          }),
+          {
+            status: 500,
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          }
+        );
+      }
+      data = inserted;
+      mode = "inserted";
+    }
+
+    console.log(`Article ${mode} successfully:`, data.id);
 
     return new Response(
       JSON.stringify({
         success: true,
-        message: "Article received and saved",
+        message: `Article ${mode} (as draft if new)`,
         articleId: data.id,
         slug: data.slug,
+        mode,
       }),
       {
         status: 200,

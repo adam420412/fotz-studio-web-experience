@@ -160,7 +160,14 @@ async function fetchArticle(
   return data as BabyLoveArticle;
 }
 
-function toRow(article: BabyLoveArticle, source: string) {
+/**
+ * Zwraca pola wspólne dla INSERTu i UPDATE-u — BEZ `is_published` i
+ * `published_at`. Te dwa pola ustawiamy tylko przy pierwszym INSERCIE
+ * (artykuł wpada do bazy jako DRAFT); przy update'ach zachowujemy
+ * dotychczasową wartość, żeby ręczna publikacja z panelu admina nie
+ * była nadpisywana przy kolejnym syncu.
+ */
+function toCommonFields(article: BabyLoveArticle, source: string) {
   const heroImage = pickFirst(article.hero_image_url, article.heroImageUrl);
   const metaDesc = pickFirst(article.meta_description, article.metaDescription);
   const publicUrl = pickFirst(article.public_url, article.publicUrl);
@@ -182,8 +189,6 @@ function toRow(article: BabyLoveArticle, source: string) {
     keywords: article.keywords ?? null,
     json_ld: article.jsonLd ?? null,
     faq_json_ld: article.faqJsonLd ?? null,
-    is_published: true,
-    published_at: new Date().toISOString(),
     last_synced_at: new Date().toISOString(),
     sync_source: source,
   };
@@ -286,7 +291,8 @@ Deno.serve(async (req) => {
   const summary = {
     pages: 0,
     listed: 0,
-    upserted: 0,
+    inserted: 0,
+    updated: 0,
     skipped: 0,
     failed: [] as Array<{ id: number; reason: string }>,
   };
@@ -300,36 +306,54 @@ Deno.serve(async (req) => {
     if (items.length === 0) break;
 
     for (const item of items) {
-      if (summary.upserted >= hardCap) break;
+      if (summary.inserted + summary.updated >= hardCap) break;
 
-      // Skip already-fresh rows when not forcing.
-      if (!force) {
-        const { data: existing } = await supabase
-          .from("blog_articles")
-          .select("external_id, last_synced_at")
-          .eq("external_id", item.id)
-          .maybeSingle();
-        if (existing?.last_synced_at) {
-          summary.skipped += 1;
-          continue;
-        }
+      // Sprawdź czy artykuł już istnieje (niezależnie od `force`), żebyśmy
+      // wiedzieli czy to INSERT (nowy → draft) czy UPDATE (zachowaj
+      // dotychczasową wartość `is_published`).
+      const { data: existing } = await supabase
+        .from("blog_articles")
+        .select("external_id, last_synced_at")
+        .eq("external_id", item.id)
+        .maybeSingle();
+
+      if (existing && existing.last_synced_at && !force) {
+        summary.skipped += 1;
+        continue;
       }
 
       try {
         const full = await fetchArticle(apiKey, item.id);
-        const row = toRow(full, "api-sync");
-        const { error } = await supabase
-          .from("blog_articles")
-          .upsert(row, { onConflict: "external_id" });
-        if (error) throw new Error(error.message);
-        summary.upserted += 1;
+        const common = toCommonFields(full, "api-sync");
+
+        if (existing) {
+          // UPDATE istniejącego wiersza — NIE dotykamy `is_published`
+          // ani `published_at`, żeby ręczna publikacja z panelu admina
+          // przetrwała kolejny sync.
+          const { error } = await supabase
+            .from("blog_articles")
+            .update(common)
+            .eq("external_id", item.id);
+          if (error) throw new Error(error.message);
+          summary.updated += 1;
+        } else {
+          // INSERT nowego artykułu — zawsze jako DRAFT (is_published=false,
+          // published_at=null). Admin ręcznie odkliknie publikację.
+          const { error } = await supabase.from("blog_articles").insert({
+            ...common,
+            is_published: false,
+            published_at: null,
+          });
+          if (error) throw new Error(error.message);
+          summary.inserted += 1;
+        }
       } catch (err) {
         console.error(`Failed to sync article ${item.id}:`, err);
         summary.failed.push({ id: item.id, reason: String(err) });
       }
     }
 
-    if (summary.upserted >= hardCap) break;
+    if (summary.inserted + summary.updated >= hardCap) break;
     if (items.length < limit) break; // last page
     offset += limit;
   }
