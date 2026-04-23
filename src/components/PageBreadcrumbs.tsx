@@ -10,10 +10,10 @@ interface BreadcrumbItem {
 }
 
 interface PageBreadcrumbsProps {
-  items: BreadcrumbItem[];
+  items?: BreadcrumbItem[];
 }
 
-export function PageBreadcrumbs({ items }: PageBreadcrumbsProps) {
+export function PageBreadcrumbs({ items = [] }: PageBreadcrumbsProps) {
   return (
     <nav aria-label="Breadcrumb" className="container-wide px-6 md:px-12 pt-32 pb-4">
       <ol className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
