@@ -17,8 +17,8 @@ import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 
 const SOURCES = [
-  { file: "src/components/seo/StructuredData.tsx", interfaces: /interface\s+(\w+SchemaProps)\s*\{([^}]*)\}/g },
-  { file: "src/components/seo/SEOHead.tsx", interfaces: /interface\s+(SEOHeadProps)\s*\{([^}]*)\}/g },
+  { file: "src/components/seo/StructuredData.tsx", names: /interface\s+(\w+SchemaProps)\s*\{/g },
+  { file: "src/components/seo/SEOHead.tsx", names: /interface\s+(SEOHeadProps)\s*\{/g },
 ];
 
 // Map interface name -> validator key in SCHEMAS
@@ -33,33 +33,64 @@ const INTERFACE_TO_SCHEMA = {
   ArticleSchemaProps: "ArticleSchema",
 };
 
+/** Extracts interface body, balancing nested braces (for inline object types). */
+function extractInterfaceBody(src, openBraceIdx) {
+  let depth = 0;
+  for (let i = openBraceIdx; i < src.length; i++) {
+    if (src[i] === "{") depth++;
+    else if (src[i] === "}") {
+      depth--;
+      if (depth === 0) return src.slice(openBraceIdx + 1, i);
+    }
+  }
+  return "";
+}
+
+/** Parses top-level prop declarations, ignoring nested object types and strings. */
 function parseInterfaceBody(body) {
-  // Split on `;` or newlines, ignore comments.
   const required = [];
   const optional = [];
-  body
-    .split(/[;\n]/)
-    .map((l) => l.replace(/\/\/.*$/, "").trim())
-    .filter(Boolean)
-    .forEach((line) => {
-      const m = line.match(/^(\w+)(\?)?\s*:/);
-      if (!m) return;
-      (m[2] ? optional : required).push(m[1]);
-    });
+  let buf = "";
+  let depth = 0;
+  let inStr = null;
+  const flush = () => {
+    const line = buf.replace(/\/\/.*$/, "").replace(/\/\*[\s\S]*?\*\//g, "").trim();
+    buf = "";
+    if (!line) return;
+    const m = line.match(/^(\w+)(\?)?\s*:/);
+    if (!m) return;
+    (m[2] ? optional : required).push(m[1]);
+  };
+  for (let i = 0; i < body.length; i++) {
+    const c = body[i];
+    if (inStr) {
+      if (c === inStr && body[i - 1] !== "\\") inStr = null;
+      buf += c;
+      continue;
+    }
+    if (c === '"' || c === "'" || c === "`") { inStr = c; buf += c; continue; }
+    if (c === "{") { depth++; buf += c; continue; }
+    if (c === "}") { depth--; buf += c; continue; }
+    if (depth === 0 && (c === ";" || c === "\n")) { flush(); continue; }
+    buf += c;
+  }
+  flush();
   return { required: required.sort(), optional: optional.sort() };
 }
 
 function extractDeclared() {
   const declared = {};
-  for (const { file, interfaces } of SOURCES) {
+  for (const { file, names } of SOURCES) {
     if (!existsSync(file)) continue;
     const src = readFileSync(file, "utf8");
     let m;
-    interfaces.lastIndex = 0;
-    while ((m = interfaces.exec(src)) !== null) {
+    names.lastIndex = 0;
+    while ((m = names.exec(src)) !== null) {
       const key = INTERFACE_TO_SCHEMA[m[1]];
       if (!key) continue;
-      declared[key] = parseInterfaceBody(m[2]);
+      const openIdx = src.indexOf("{", m.index);
+      const body = extractInterfaceBody(src, openIdx);
+      declared[key] = parseInterfaceBody(body);
     }
   }
   return declared;
