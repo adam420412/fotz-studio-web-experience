@@ -271,7 +271,10 @@ export function FAQSchema({ items = [], data, questions }: FAQSchemaProps) {
         question: item.name ?? "",
         answer: item.acceptedAnswer?.text ?? "",
       }))
-    : questions ?? items;
+    : (questions ?? items ?? []).map((item: any) => ({
+        question: item.question ?? item.name ?? "",
+        answer: item.answer ?? item.acceptedAnswer?.text ?? "",
+      }));
 
   const schema = {
     "@context": "https://schema.org",

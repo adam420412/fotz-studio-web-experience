@@ -4,17 +4,21 @@ import { ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
+type AccordionProps =
+  | ({ type?: "single"; collapsible?: boolean } & React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>)
+  | ({ type: "multiple" } & React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>);
+
 const Accordion = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>
->(({ type = "single", collapsible = true, ...props }, ref) => (
-  <AccordionPrimitive.Root
-    ref={ref}
-    type={type as "single" | "multiple"}
-    {...(type === "single" ? { collapsible } : {})}
-    {...props}
-  />
-));
+  AccordionProps
+>(({ type = "single", ...props }, ref) => {
+  if (type === "multiple") {
+    return <AccordionPrimitive.Root ref={ref} type="multiple" {...props} />;
+  }
+
+  const { collapsible = true, ...singleProps } = props as Extract<AccordionProps, { type?: "single" }>;
+  return <AccordionPrimitive.Root ref={ref} type="single" collapsible={collapsible} {...singleProps} />;
+});
 Accordion.displayName = "Accordion";
 
 const AccordionItem = React.forwardRef<
