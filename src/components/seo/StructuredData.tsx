@@ -222,13 +222,21 @@ export function ServiceSchema({
 
 interface BreadcrumbSchemaProps {
   items: Array<{ name?: string; url?: string; label?: string; href?: string }>;
+  data?: {
+    itemListElement?: Array<{ position?: number; name?: string; item?: string }>;
+  };
+  keywords?: string;
 }
 
-export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
+export function BreadcrumbSchema({ items = [], data }: BreadcrumbSchemaProps) {
+  const normalizedItems = data?.itemListElement
+    ? data.itemListElement.map((item) => ({ name: item.name, url: item.item }))
+    : items;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
+    itemListElement: normalizedItems.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.name ?? item.label ?? "",
@@ -245,13 +253,27 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
 
 interface FAQSchemaProps {
   items: { question: string; answer: string }[];
+  data?: {
+    mainEntity?: Array<{
+      name?: string;
+      acceptedAnswer?: { text?: string };
+    }>;
+  };
+  questions?: { question: string; answer: string }[];
 }
 
-export function FAQSchema({ items }: FAQSchemaProps) {
+export function FAQSchema({ items = [], data, questions }: FAQSchemaProps) {
+  const normalizedItems = data?.mainEntity
+    ? data.mainEntity.map((item) => ({
+        question: item.name ?? "",
+        answer: item.acceptedAnswer?.text ?? "",
+      }))
+    : questions ?? items;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: items.map((item) => ({
+    mainEntity: normalizedItems.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {
@@ -308,6 +330,16 @@ interface ArticleSchemaProps {
   dateModified?: string;
   author?: string;
   authorName?: string;
+  publishDate?: string;
+  data?: {
+    headline?: string;
+    description?: string;
+    image?: string;
+    datePublished?: string;
+    dateModified?: string;
+    author?: string | { name?: string; url?: string };
+    url?: string;
+  };
 }
 
 export function ArticleSchema({
@@ -320,26 +352,34 @@ export function ArticleSchema({
   dateModified,
   author = "Fotz Studio",
   authorName,
+  publishDate,
+  data,
 }: ArticleSchemaProps) {
-  const finalTitle = title ?? headline ?? "";
-  const finalAuthor = authorName ?? author;
+  const finalTitle = title ?? headline ?? data?.headline ?? "";
+  const finalDescription = data?.description ?? description;
+  const finalUrl = data?.url ?? url;
+  const finalImage = data?.image ?? image;
+  const finalDatePublished = data?.datePublished ?? publishDate ?? datePublished;
+  const finalDateModified = data?.dateModified ?? dateModified ?? finalDatePublished;
+  const derivedAuthor = typeof data?.author === "string" ? data.author : data?.author?.name;
+  const finalAuthor = authorName ?? derivedAuthor ?? author;
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "@id": url,
+    "@id": finalUrl,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": url,
+      "@id": finalUrl,
     },
     headline: finalTitle.length > 110 ? finalTitle.substring(0, 107) + "..." : finalTitle,
-    description,
-    url,
+    description: finalDescription,
+    url: finalUrl,
     image: {
       "@type": "ImageObject",
-      url: image,
+      url: finalImage,
     },
-    datePublished,
-    dateModified: dateModified || datePublished,
+    datePublished: finalDatePublished,
+    dateModified: finalDateModified,
     author: {
       "@type": "Organization",
       name: finalAuthor,

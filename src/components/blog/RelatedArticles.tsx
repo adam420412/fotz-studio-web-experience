@@ -199,16 +199,19 @@ const allArticles: Article[] = [
 interface RelatedArticlesProps {
   currentArticleId?: string;
   currentSlug?: string;
+  currentId?: string;
   tags?: string[];
+  category?: string;
   maxArticles?: number;
 }
 
 export function RelatedArticles({
   currentArticleId,
   currentSlug,
+  currentId,
   maxArticles = 3,
 }: RelatedArticlesProps) {
-  const activeArticleId = currentArticleId ?? currentSlug ?? "";
+  const activeArticleId = currentArticleId ?? currentSlug ?? currentId ?? "";
 
   // Filter out current article and get related ones
   const relatedArticles = allArticles

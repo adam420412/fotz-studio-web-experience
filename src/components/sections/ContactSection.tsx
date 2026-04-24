@@ -46,9 +46,11 @@ type FormErrors = Partial<Record<keyof ContactFormData, string>>;
 interface ContactSectionProps {
   city?: string;
   variant?: "full" | "compact";
+  title?: string;
+  description?: string;
 }
 
-export function ContactSection({ city, variant = "full" }: ContactSectionProps) {
+export function ContactSection({ city, variant = "full", title, description }: ContactSectionProps) {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -198,12 +200,12 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
               </motion.div>
               
               <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-                Porozmawiajmy o Twoim projekcie
+                {title ?? "Porozmawiajmy o Twoim projekcie"}
                 {city && <span className="text-gradient"> w {city}</span>}
               </h2>
               
               <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Skontaktuj się z nami i otrzymaj bezpłatną wycenę. Odpowiadamy w ciągu 24 godzin.
+                {description ?? "Skontaktuj się z nami i otrzymaj bezpłatną wycenę. Odpowiadamy w ciągu 24 godzin."}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -250,12 +252,12 @@ export function ContactSection({ city, variant = "full" }: ContactSectionProps) 
             </motion.span>
             
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-3 sm:mb-4">
-              Skontaktuj się z nami
+              {title ?? "Skontaktuj się z nami"}
               {city && <span className="text-gradient"> — {city}</span>}
             </h2>
             
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Porozmawiajmy o Twoim projekcie. Bezpłatna wycena w ciągu 24 godzin.
+              {description ?? "Porozmawiajmy o Twoim projekcie. Bezpłatna wycena w ciągu 24 godzin."}
             </p>
           </div>
         </FadeInView>

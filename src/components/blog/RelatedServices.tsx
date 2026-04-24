@@ -10,11 +10,15 @@ interface Service {
 }
 
 interface RelatedServicesProps {
-  services: Service[];
+  services?: Service[];
+  category?: string;
 }
 
-export function RelatedServices({ services }: RelatedServicesProps) {
-  if (services.length === 0) return null;
+export function RelatedServices({ services, category }: RelatedServicesProps) {
+  const normalizedCategory = category === "e-commerce" ? "ecommerce" : category;
+  const resolvedServices = services ?? (normalizedCategory ? servicesByCategory[normalizedCategory as keyof typeof servicesByCategory] : []);
+
+  if (!resolvedServices || resolvedServices.length === 0) return null;
 
   return (
     <section className="py-12 md:py-16 border-t border-border mt-12">
@@ -35,7 +39,7 @@ export function RelatedServices({ services }: RelatedServicesProps) {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {services.map((service, index) => (
+          {resolvedServices.map((service, index) => (
             <motion.div
               key={service.path}
               initial={{ opacity: 0, y: 20 }}
