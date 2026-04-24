@@ -100,7 +100,7 @@ export default function BlogVideoMarketingDlaFirm() {
       />
 
       <BreadcrumbSchema items={breadcrumbSchema.itemListElement} />
-      <FAQSchema items={faqSchema.mainEntity} />
+      <FAQSchema data={faqSchema} />
 
       <article className="py-12 lg:py-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">

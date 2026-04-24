@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, TrendingUp, Zap, Globe, Search, BarChart3, Target, AlertTriangle, FileText } from "lucide-react";
+import { ArrowRight, CheckCircle2, TrendingUp, Zap, Globe, Search, BarChart3, Target, AlertTriangle, FileText, Link2 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { FAQSchema, ServiceSchema, BreadcrumbSchema } from "@/components/seo/StructuredData";
 import { FadeInView } from "@/components/FadeInView";
@@ -20,7 +20,7 @@ export default function AudytSEO() {
   const auditAreas = [
     { icon: Zap, title: "SEO techniczne", description: "Struktura URL, kody statusu, canonical, robots.txt, sitemap" },
     { icon: FileText, title: "Treści i słowa kluczowe", description: "Analiza onpage, meta tagi, headingi, keyword density" },
-    { icon: Link, title: "Link building i autorytet", description: "Backlinki, referring domains, anchor text, profil linkowy" },
+    { icon: Link2, title: "Link building i autorytet", description: "Backlinki, referring domains, anchor text, profil linkowy" },
     { icon: TrendingUp, title: "UX i Core Web Vitals", description: "Szybkość ładowania, responsywność, interaktywność" },
     { icon: Target, title: "Konkurencja", description: "Analiza 10 konkurentów, ich strategie, słowa kluczowe" },
     { icon: BarChart3, title: "Google Search Console", description: "Błędy crawlowania, coverage, performance, sitemap" },

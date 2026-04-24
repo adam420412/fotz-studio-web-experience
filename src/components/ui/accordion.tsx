@@ -4,7 +4,52 @@ import { ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
-const Accordion = AccordionPrimitive.Root;
+type AccordionProps = {
+  type?: "single" | "multiple";
+  collapsible?: boolean;
+  value?: string | string[];
+  defaultValue?: string | string[];
+  onValueChange?: (value: string | string[]) => void;
+  className?: string;
+  children?: React.ReactNode;
+};
+
+const Accordion = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Root>,
+  AccordionProps
+>(({ type = "single", ...props }, ref) => {
+  if (type === "multiple") {
+    const multipleProps = props as Omit<AccordionProps, "type" | "collapsible">;
+    return (
+      <AccordionPrimitive.Root
+        ref={ref}
+        type="multiple"
+        value={Array.isArray(multipleProps.value) ? multipleProps.value : undefined}
+        defaultValue={Array.isArray(multipleProps.defaultValue) ? multipleProps.defaultValue : undefined}
+        onValueChange={multipleProps.onValueChange as ((value: string[]) => void) | undefined}
+        className={multipleProps.className}
+      >
+        {multipleProps.children}
+      </AccordionPrimitive.Root>
+    );
+  }
+
+  const { collapsible = true, value, defaultValue, onValueChange, className, children } = props;
+  return (
+    <AccordionPrimitive.Root
+      ref={ref}
+      type="single"
+      collapsible={collapsible}
+      value={typeof value === "string" ? value : undefined}
+      defaultValue={typeof defaultValue === "string" ? defaultValue : undefined}
+      onValueChange={onValueChange as ((value: string) => void) | undefined}
+      className={className}
+    >
+      {children}
+    </AccordionPrimitive.Root>
+  );
+});
+Accordion.displayName = "Accordion";
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,

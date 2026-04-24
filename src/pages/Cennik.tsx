@@ -1,5 +1,4 @@
 import { useState, useMemo } from "react";
-import { Link } from 'react-router-dom';
 import { Layout } from "@/components/layout/Layout";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEOHead } from "@/components/seo/SEOHead";

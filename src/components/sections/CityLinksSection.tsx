@@ -8,7 +8,7 @@ interface CityLink {
 }
 
 interface CityLinksSectionProps {
-  currentCity: string;
+  currentCity?: string;
   title?: string;
   subtitle?: string;
 }
@@ -48,7 +48,7 @@ const cityLinks: CityLink[] = [
 ];
 
 export const CityLinksSection = ({ 
-  currentCity,
+  currentCity = "",
   title = "Tworzymy strony w całej Polsce",
   subtitle = "Działamy zdalnie, ale znamy specyfikę lokalnych rynków. Sprawdź ofertę w Twoim mieście."
 }: CityLinksSectionProps) => {
