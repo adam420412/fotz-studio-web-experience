@@ -270,8 +270,14 @@ function injectMeta(html, meta) {
     relatedLinks = `<a href="/agencja-marketingowa">Agencja Marketingowa</a> · <a href="/performance-marketing">Performance Marketing</a> · <a href="/blog">Blog</a>`;
   }
 
+  // NOTE: previously this block contained <h1>${meta.title}</h1> as a
+  // non-JS fallback, but that caused every page to report "multiple H1"
+  // in Ahrefs because each page component also renders its own visible H1
+  // (Hero/Cluster/Template). We demote the hidden heading to a span with
+  // aria-level=2 so a11y semantics stay reasonable for screen readers
+  // without creating a duplicate H1 on the page.
   const seoSection = `<section id="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;pointer-events:none">
-      <h1>${meta.title.replace(/ \| Fotz.*$/, '')}</h1>
+      <span role="heading" aria-level="2">${meta.title.replace(/ \| Fotz.*$/, '')}</span>
       <p>${meta.description}</p>
       <nav>${relatedLinks} · <a href="/">Fotz Studio — Agencja Marketingowa</a> · <a href="/kontakt">Kontakt</a></nav>
     </section>
