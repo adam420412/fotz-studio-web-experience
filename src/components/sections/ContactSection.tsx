@@ -48,6 +48,7 @@ interface ContactSectionProps {
   variant?: "full" | "compact";
   title?: string;
   description?: string;
+  buttonText?: string;
 }
 
 export function ContactSection({ city, variant = "full", title, description }: ContactSectionProps) {

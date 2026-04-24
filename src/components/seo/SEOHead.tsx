@@ -102,7 +102,7 @@ export function SEOHead({
       {/* JSON-LD Structured Data */}
       {finalSchemaJson && (
         Array.isArray(finalSchemaJson) 
-          ? schemaJson.map((schema, index) => (
+          ? finalSchemaJson.map((schema, index) => (
               <script key={index} type="application/ld+json">
                 {JSON.stringify(schema)}
               </script>

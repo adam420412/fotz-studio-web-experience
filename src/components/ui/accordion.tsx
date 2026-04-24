@@ -4,7 +4,18 @@ import { ChevronDown } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
-const Accordion = AccordionPrimitive.Root;
+const Accordion = React.forwardRef<
+  React.ElementRef<typeof AccordionPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Root>
+>(({ type = "single", collapsible = true, ...props }, ref) => (
+  <AccordionPrimitive.Root
+    ref={ref}
+    type={type as "single" | "multiple"}
+    {...(type === "single" ? { collapsible } : {})}
+    {...props}
+  />
+));
+Accordion.displayName = "Accordion";
 
 const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,

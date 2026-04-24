@@ -179,7 +179,8 @@ export function LocalBusinessSchema({
 }
 
 interface ServiceSchemaProps {
-  name: string;
+  name?: string;
+  serviceName?: string;
   description: string;
   provider?: string;
   areaServed?: string | string[];
@@ -187,10 +188,12 @@ interface ServiceSchemaProps {
 
 export function ServiceSchema({
   name,
+  serviceName,
   description,
   provider = "Fotz Studio",
   areaServed = "Poznań",
 }: ServiceSchemaProps) {
+  const finalName = name ?? serviceName ?? "Fotz Studio";
   const areaServedValue = Array.isArray(areaServed)
     ? areaServed.map((area) => ({
         "@type": "Place",
@@ -204,7 +207,7 @@ export function ServiceSchema({
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name,
+    name: finalName,
     description,
     provider: {
       "@type": "Organization",
@@ -221,7 +224,7 @@ export function ServiceSchema({
 }
 
 interface BreadcrumbSchemaProps {
-  items: Array<{ name?: string; url?: string; label?: string; href?: string }>;
+  items?: Array<{ name?: string; url?: string; label?: string; href?: string }>;
   data?: {
     itemListElement?: Array<{ position?: number; name?: string; item?: string }>;
   };
@@ -252,7 +255,7 @@ export function BreadcrumbSchema({ items = [], data }: BreadcrumbSchemaProps) {
 }
 
 interface FAQSchemaProps {
-  items: { question: string; answer: string }[];
+  items?: { question: string; answer: string }[];
   data?: {
     mainEntity?: Array<{
       name?: string;
@@ -323,10 +326,10 @@ export function WebPageSchema({ title, description, url }: WebPageSchemaProps) {
 interface ArticleSchemaProps {
   title?: string;
   headline?: string;
-  description: string;
+  description?: string;
   url?: string;
   image?: string;
-  datePublished: string;
+  datePublished?: string;
   dateModified?: string;
   author?: string;
   authorName?: string;
@@ -356,10 +359,10 @@ export function ArticleSchema({
   data,
 }: ArticleSchemaProps) {
   const finalTitle = title ?? headline ?? data?.headline ?? "";
-  const finalDescription = data?.description ?? description;
+  const finalDescription = data?.description ?? description ?? "";
   const finalUrl = data?.url ?? url;
   const finalImage = data?.image ?? image;
-  const finalDatePublished = data?.datePublished ?? publishDate ?? datePublished;
+  const finalDatePublished = data?.datePublished ?? publishDate ?? datePublished ?? new Date().toISOString().slice(0, 10);
   const finalDateModified = data?.dateModified ?? dateModified ?? finalDatePublished;
   const derivedAuthor = typeof data?.author === "string" ? data.author : data?.author?.name;
   const finalAuthor = authorName ?? derivedAuthor ?? author;
