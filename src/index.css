@@ -313,6 +313,12 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* Naprawa przycinania: italic + background-clip:text obcina prawy skos
+       liter i ogony (ą, ę, ż, g, j). Inline-block + padding ratuje,
+       a ujemny margines kompensuje padding, żeby layout się nie ruszył. */
+    display: inline-block;
+    padding: 0.04em 0.14em 0.16em 0.02em;
+    margin-bottom: -0.16em;
   }
   .dv-marquee { overflow: hidden; white-space: nowrap; display: flex; }
   .dv-marquee-track {
