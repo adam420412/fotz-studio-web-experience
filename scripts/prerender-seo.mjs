@@ -291,6 +291,12 @@ let skipped = 0;
 let errors = 0;
 
 for (const route of routes) {
+  if (EXCLUDE_ROUTES.has(route.path)) {
+    console.log(`   ⏭️  Excluded from prerender (static file): ${route.path}`);
+    skipped++;
+    continue;
+  }
+
   const file = findComponentFile(route.component);
   if (!file) {
     skipped++;
