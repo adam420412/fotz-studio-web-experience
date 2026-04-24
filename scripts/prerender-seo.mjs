@@ -35,6 +35,18 @@ if (!fs.existsSync(INDEX_HTML)) {
 const template = fs.readFileSync(INDEX_HTML, 'utf-8');
 
 /**
+ * Routes that must NOT be prerendered, because they are served by static
+ * files (public/*.html via vercel.json rewrites) rather than React routes.
+ * Prerendering them would create stale snapshots in the Lovable render cache
+ * (x-lovablehtml-render-cache) that override the real static content and
+ * cause 404s on production.
+ */
+const EXCLUDE_ROUTES = new Set([
+  '/mapa-strony',
+  '/agencja-marketingowa',
+]);
+
+/**
  * Extract SEOHead props from a .tsx file using regex
  */
 function extractSEOHead(filePath) {
@@ -279,6 +291,12 @@ let skipped = 0;
 let errors = 0;
 
 for (const route of routes) {
+  if (EXCLUDE_ROUTES.has(route.path)) {
+    console.log(`   ⏭️  Excluded from prerender (static file): ${route.path}`);
+    skipped++;
+    continue;
+  }
+
   const file = findComponentFile(route.component);
   if (!file) {
     skipped++;
