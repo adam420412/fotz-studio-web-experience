@@ -210,7 +210,7 @@ export default function BlogKonwersjaStrony() {
             {/* Section 4: A/B Testing */}
             <section className="mb-12">
               <h2 className="mb-6 text-3xl font-bold text-slate-900">
-                Testy A/B - Naukowy podход do optymalizacji
+                Testy A/B - Naukowy podejście do optymalizacji
               </h2>
               <p className="mb-4 text-lg text-slate-700">
                 Nie zgaduj - testuj. Testy A/B pokazują, które warianty strony konwertują lepiej. Oto

@@ -533,7 +533,7 @@ const BlogMarketingB2BPoradnik = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-lg mb-2">SQL (Sales Qualified Lead)</h3>
                   <p className="text-gray-700 text-sm">
-                    Lead, którym zainteresowany jest sales team i który przeszedł ocenę sprzedaży (budżet, autorytет, potrzeba, timeline – BANT).
+                    Lead, którym zainteresowany jest sales team i który przeszedł ocenę sprzedaży (budżet, autorytet, potrzeba, timeline – BANT).
                   </p>
                 </CardContent>
               </Card>

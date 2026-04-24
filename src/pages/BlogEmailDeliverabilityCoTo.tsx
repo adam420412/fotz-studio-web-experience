@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: "Co to jest warm-up IP/domain i ile trwa?",
     answer:
-      "Warm-up to proces stopniowego budowania reputacji nowego IP lub domeny przez wysyłanie malejących wolumenów do najbardziej zaangażowanych odbiorców. Nowy IP zaczyna od 50-100 emaili dziennie, podwajając wolumen co 1-2 tygodnie. Pełny warm-up trwa 4-8 tygodni dla typowego senderа, 3-6 miesięcy dla dużego enterprise. Zbyt szybkie wysyłanie z nowego IP = natychmiastowa blokada przez filtry antyspamowe.",
+      "Warm-up to proces stopniowego budowania reputacji nowego IP lub domeny przez wysyłanie malejących wolumenów do najbardziej zaangażowanych odbiorców. Nowy IP zaczyna od 50-100 emaili dziennie, podwajając wolumen co 1-2 tygodnie. Pełny warm-up trwa 4-8 tygodni dla typowego sendera, 3-6 miesięcy dla dużego enterprise. Zbyt szybkie wysyłanie z nowego IP = natychmiastowa blokada przez filtry antyspamowe.",
   },
 ];
 

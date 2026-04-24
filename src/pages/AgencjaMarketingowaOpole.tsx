@@ -59,7 +59,7 @@ const faqItems = [
   },
   {
     question: "Czy warto inwestować w marketing dla branży chemicznej w Opolu?",
-    answer: "Zdecydowanie. Zakłady Chemiczne Opole to sektor B2B, dostawcy, logistyka — wysoki CLV. Firma szukająca dostawcy chemikaliów wpisze 'Opole producent' — to wysokie szanse na transakcję. Marketing B2B (SEO, content, LinkedIn) działa długoterminowo — buduje widoczność, autorytет i zaufanie dostawcy."
+    answer: "Zdecydowanie. Zakłady Chemiczne Opole to sektor B2B, dostawcy, logistyka — wysoki CLV. Firma szukająca dostawcy chemikaliów wpisze 'Opole producent' — to wysokie szanse na transakcję. Marketing B2B (SEO, content, LinkedIn) działa długoterminowo — buduje widoczność, autorytet i zaufanie dostawcy."
   },
   {
     question: "Jak marketować KFPP (Krajowy Festiwal Piosenki Polskiej)?",

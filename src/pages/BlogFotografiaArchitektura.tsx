@@ -26,7 +26,7 @@ const faqItems = [
   },
   {
     question: "Jak długo trwa przetworzenie zdjęć architektonicznego?",
-    answer: "Sesja fotograficzna na miejscu zwykle trwa 3-8 godzin w zależności od zakresu (jedna elewacja czy cały budynek). Przetworzenie zdjęć zajmuje 7-14 dni roboczych — retusz, korekta perspektywy, korekcja kolorów, montaż panoram. Срочne dostarczenie jest możliwe (2-3 dni), ale wiąże się z dodatkową opłatą."
+    answer: "Sesja fotograficzna na miejscu zwykle trwa 3-8 godzin w zależności od zakresu (jedna elewacja czy cały budynek). Przetworzenie zdjęć zajmuje 7-14 dni roboczych — retusz, korekta perspektywy, korekcja kolorów, montaż panoram. Pilne dostarczenie jest możliwe (2-3 dni), ale wiąże się z dodatkową opłatą."
   },
   {
     question: "Czy mogę używać profesjonalne zdjęcia architektury do marketingu?",

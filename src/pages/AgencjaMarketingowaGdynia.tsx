@@ -554,7 +554,7 @@ export default function AgencjaMarketingowaGdynia() {
               <div>
                 <Users className="w-8 h-8 text-blue-600 mx-auto mb-4" />
                 <h4 className="font-bold text-slate-900 mb-2">
-                  Indywidualny Podход
+                  Indywidualny Podejście
                 </h4>
                 <p className="text-sm text-slate-600">
                   Każda strategia dopasowana do Twojej branży

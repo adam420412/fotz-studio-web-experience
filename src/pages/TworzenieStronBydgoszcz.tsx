@@ -126,7 +126,7 @@ export default function TworzenieStronBydgoszcz() {
     },
     {
       question: "Czy jesteście znacie specyfią firm z Bydgoszczy?",
-      answer: "Tak, pracujemy z wieloma firmami z branż przemysłu, transportu, logistyki i handlu detalicznego. Znamy локalny rynek bydgoski i potrzeby firm z Kujawsko-Pomorskiego."
+      answer: "Tak, pracujemy z wieloma firmami z branż przemysłu, transportu, logistyki i handlu detalicznego. Znamy lokalny rynek bydgoski i potrzeby firm z Kujawsko-Pomorskiego."
     }
   ];
 

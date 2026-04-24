@@ -163,7 +163,7 @@ const BlogSocialMediaDlaFirm = () => {
                 </p>
 
                 <p className="text-muted-foreground mb-4">
-                  Social media dla firmy dają wiele korzyści: <strong>bezpośrednia komunikacja z klientami</strong> (nie czekasz na wiadomość e-mail, możesz reagować w ciągu minut), <strong>zbudowanie społeczności i lojalności</strong> (klienci stają się амбасadorami marki), <strong>zwiększenie widoczności i reach</strong> (jeden dobry post może trafić do tysięcy osób), <strong>generowanie leadów i sprzedaży</strong> (direct sale czy przynajmniej pozyskanie kontaktu), <strong>lepsze SEO</strong> (choć pośrednio — social media wpływają na domenę poprzez mencje i link building).
+                  Social media dla firmy dają wiele korzyści: <strong>bezpośrednia komunikacja z klientami</strong> (nie czekasz na wiadomość e-mail, możesz reagować w ciągu minut), <strong>zbudowanie społeczności i lojalności</strong> (klienci stają się ambasadorami marki), <strong>zwiększenie widoczności i reach</strong> (jeden dobry post może trafić do tysięcy osób), <strong>generowanie leadów i sprzedaży</strong> (direct sale czy przynajmniej pozyskanie kontaktu), <strong>lepsze SEO</strong> (choć pośrednio — social media wpływają na domenę poprzez mencje i link building).
                 </p>
 
                 <p className="text-muted-foreground mb-6">
@@ -416,7 +416,7 @@ const BlogSocialMediaDlaFirm = () => {
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  Social media dla firm nie są już opcjonalne — są konieczne. Ale nie musisz być wszędzie. Zamiast tego: 1) Определи swoje cele i publiczność, 2) Wybierz 2-3 platformy, gdzie jest Twoja publiczność, 3) Stwórz content calendar, 4) Publikuj regularnie (co najmniej 2x tygodniowo), 5) Zaangażuj się z publiczność (odpowiadaj na komentarze), 6) Mierz wyniki i optymalizuj.
+                  Social media dla firm nie są już opcjonalne — są konieczne. Ale nie musisz być wszędzie. Zamiast tego: 1) Określ swoje cele i publiczność, 2) Wybierz 2-3 platformy, gdzie jest Twoja publiczność, 3) Stwórz content calendar, 4) Publikuj regularnie (co najmniej 2x tygodniowo), 5) Zaangażuj się z publiczność (odpowiadaj na komentarze), 6) Mierz wyniki i optymalizuj.
                 </p>
 
                 <p className="text-muted-foreground mb-6">

@@ -168,7 +168,7 @@ export default function SklepInternetowyVsMarketplace() {
     {
       question: "Jaki przychód jest uzasadniony własnym sklepem?",
       answer:
-        "Minimalnie 5-10 000 zł przychodu miesięcznie, aby zwrócić się koszty (inwestycja 8-15 tys zł powinна się zwrócić w 1-2 lata). Przy 5000 zł sprzedaży marketplace kosztuje 250-750 zł (5-15%), własny sklep kosztuje 500-1000 zł. Przy 20 000+ zł przychodu własny sklep jest dużo bardziej opłacalny.",
+        "Minimalnie 5-10 000 zł przychodu miesięcznie, aby zwrócić się koszty (inwestycja 8-15 tys zł powinna się zwrócić w 1-2 lata). Przy 5000 zł sprzedaży marketplace kosztuje 250-750 zł (5-15%), własny sklep kosztuje 500-1000 zł. Przy 20 000+ zł przychodu własny sklep jest dużo bardziej opłacalny.",
     },
   ];
 

@@ -327,7 +327,7 @@ export default function PozycjonowanieGdynia() {
               { num: "2", title: "Strategia", desc: "Wybieramy słowa kluczowe, tworzymy plan działań, definiujemy KPI." },
               { num: "3", title: "Implementacja", desc: "Optymalizujemy on-page, tworzymy content, budujemy linki." },
               { num: "4", title: "Monitoring", desc: "Śledzimy zmiany rankingów, ruch organiczny, konwersje." },
-              { num: "5", title: "Raportowanie", desc: "Raporty co 2 tygodnie z анализом wyników i rekomendacjami." },
+              { num: "5", title: "Raportowanie", desc: "Raporty co 2 tygodnie z analizą wyników i rekomendacjami." },
             ].map((step) => (
               <div key={step.num} className="flex gap-6">
                 <div className="flex-shrink-0">

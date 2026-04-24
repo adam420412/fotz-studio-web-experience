@@ -18,7 +18,7 @@ export default function TikTokAdsWroclaw() {
     {
       question: "Ile kosztują reklamy TikTok Ads we Wrocławiu?",
       answer:
-        "Koszt reklam TikTok we Wrocławiu zależy od formatu i targetowania. CPM (koszt za tysiąc wyświetleń) wahает się od 8-22 PLN, w zależności od zainteresowań grupy docelowej i konkurencji na rynku. Minimalny budżet to 50 PLN dziennie, ale rekomendujemy 500-1000 PLN dziennie dla optymalnych rezultatów.",
+        "Koszt reklam TikTok we Wrocławiu zależy od formatu i targetowania. CPM (koszt za tysiąc wyświetleń) waha się od 8-22 PLN, w zależności od zainteresowań grupy docelowej i konkurencji na rynku. Minimalny budżet to 50 PLN dziennie, ale rekomendujemy 500-1000 PLN dziennie dla optymalnych rezultatów.",
     },
     {
       question: "Jaki format reklamy wybrać na TikToku?",

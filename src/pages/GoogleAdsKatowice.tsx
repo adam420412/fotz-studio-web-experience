@@ -133,7 +133,7 @@ export default function GoogleAdsKatowice() {
                     Średni CPC (koszt za kliknięcie) w Katowicach wynosi 2-6 zł — jest to świetny punkt do testowania strategii kampanii. W Katowicach możesz szybko sprawdzić, co działa, a potem skalować na sąsiednie miasta czy całą aglomerację. Google Ads działają szybciej niż SEO — wyniki widoczne w ciągu 24-48 godzin.
                   </p>
                   <p>
-                    Katowice to także ważny hub для MICE — konferencji, seminarów i eventów. Jeśli prowadzisz hotel, restaurację, centrum konferencyjne, lub usługi biznesowe, Google Ads to najprostsza droga do przyciągnięcia konkretnych, zainteresowanych klientów. Płacisz tylko za kliknięcia, nie za wyświetlenia.
+                    Katowice to także ważny hub dla MICE — konferencji, seminarów i eventów. Jeśli prowadzisz hotel, restaurację, centrum konferencyjne, lub usługi biznesowe, Google Ads to najprostsza droga do przyciągnięcia konkretnych, zainteresowanych klientów. Płacisz tylko za kliknięcia, nie za wyświetlenia.
                   </p>
                 </div>
               </div>

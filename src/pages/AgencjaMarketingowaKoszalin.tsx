@@ -127,7 +127,7 @@ const faqItems = [
   },
   {
     question: "Jakie są wyzwania marketingowe dla Koszalina i turystyki nad morzem?",
-    answer: "Glowne wyzwania to sezonowość turystyki (szczyt w lipocu-sierpniu), wysoki CPL w sezonie letnim, konkurencja z duzych portali turystycznych, необходимość budowania wizerunku poza sezonem. Marketing musi byc dual - dla turystow latem i dla mieszkancow przez caly rok. Fotz Studio zna specyfike Koszalina i Pomorza Srodkowego - rynek uslug nadmorskich, handel i turystyka to nasze specjalnosci.",
+    answer: "Glowne wyzwania to sezonowość turystyki (szczyt w lipocu-sierpniu), wysoki CPL w sezonie letnim, konkurencja z duzych portali turystycznych, konieczneość budowania wizerunku poza sezonem. Marketing musi byc dual - dla turystow latem i dla mieszkancow przez caly rok. Fotz Studio zna specyfike Koszalina i Pomorza Srodkowego - rynek uslug nadmorskich, handel i turystyka to nasze specjalnosci.",
   },
   {
     question: "Czy mogę anulowac wspolprace z agencja marketingowa?",
@@ -197,7 +197,7 @@ export default function AgencjaMarketingowaKoszalin() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="gap-2">
                   <Link to="/kontakt">
-                    Zamow darmowa konsultacjе
+                    Zamow darmowa konsultację
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </Button>
@@ -504,15 +504,15 @@ export default function AgencjaMarketingowaKoszalin() {
                 Fotz Studio pracuje z firmami z Koszalina, ale takze z Slupska, Bytowa, Mysliborza i całego Pomorza Srodkowego. Dobrze znamy lokalny rynek turystyki nadmorskiej, konkurencje i potrzeby biznesu w kazdym z tych miast. To pozwala nam na tworzenie strategii dedykowanych i skutecznych dla branzy turystycznej i handlu.
               </p>
               <p className="text-muted-foreground mb-6">
-                Jezeli Twoja firma szuka profesjonalnej agencji marketingowej w Koszalinie, zapraszamy do kontaktu. Chętnie przeprowadzimy bezpłatną konsultacje i opowiemy o tym, jak mozemy pomoc Twojemu biznesowi wzrosnaс w sezonie i poza nim.
+                Jezeli Twoja firma szuka profesjonalnej agencji marketingowej w Koszalinie, zapraszamy do kontaktu. Chętnie przeprowadzimy bezpłatną konsultacje i opowiemy o tym, jak mozemy pomoc Twojemu biznesowi wzrosnąć w sezonie i poza nim.
               </p>
 
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
                 <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">
-                  Powrot do agencji marketingowej
+                  Powrót do agencji marketingowej
                 </Link>
                 <Link to="/kontakt" className="text-primary hover:underline font-medium text-sm">
-                  Kontakt z agencja
+                  Kontakt z agencją
                 </Link>
               </div>
             </div>

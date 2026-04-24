@@ -552,7 +552,7 @@ const BlogTrendyEcommerce2027 = () => {
                   </h3>
                   <p className="text-slate-700 text-sm">
                     Opakowania z kuratorowanymi produktami wysyłane co miesiąc
-                    (beauty, косметика, książki, gadżety).
+                    (beauty, kosmetyki, książki, gadżety).
                   </p>
                 </CardContent>
               </Card>

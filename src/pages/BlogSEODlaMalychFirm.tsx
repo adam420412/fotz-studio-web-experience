@@ -43,7 +43,7 @@ const BlogSEODlaMalychFirm = () => {
     },
     {
       question: "Jak czasochłonne jest zarządzanie SEO dla małej firmy?",
-      answer: "Jeśli robisz to sam, liczy się 5-10 godzin tygodniowo na optymalizację, tworzenie treści i monitoring. Агенtentura SEO może wziąć to całkowicie na siebie, ale to dodatkowy koszt.",
+      answer: "Jeśli robisz to sam, liczy się 5-10 godzin tygodniowo na optymalizację, tworzenie treści i monitoring. Agententura SEO może wziąć to całkowicie na siebie, ale to dodatkowy koszt.",
     },
   ];
 

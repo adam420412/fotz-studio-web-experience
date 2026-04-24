@@ -55,7 +55,7 @@ const viElements = [
   },
   {
     element: "Fotografía / Styl Wizualny",
-    opis: "Wytyczne dotyczące stylу fotografii, ilustracji, ikon: kolorystyka, kadrowanie, nastrój, tematyka, styl ludzi.",
+    opis: "Wytyczne dotyczące styly fotografii, ilustracji, ikon: kolorystyka, kadrowanie, nastrój, tematyka, styl ludzi.",
     zasady: ["Zdefiniuj mood board z przykładami", "Określ czy preferujesz lifestyle vs. studio", "Spójny kolor skin tones i filtry", "Unikaj stock photos bez modyfikacji"],
     przykład: "Dove: naturalne, nieretuszowane zdjęcia kobiet w różnym wieku i typie urody",
   },

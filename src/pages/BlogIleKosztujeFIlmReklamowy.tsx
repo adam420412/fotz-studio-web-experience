@@ -20,7 +20,7 @@ const faqItems = [
   {
     question: "Co wchodzi w sklad ceny produkcji wideo?",
     answer:
-      "Cena obejmuje: scenariusz, plan zdjęciowy, wynajem sprzętu, honoraria aktorów/lektorów, montaż, koloryzację, efekty graficzne i minutę bezpłatnych poprawek. W некоторых pakietach dochodzi muzyka i prawa do użytku.",
+      "Cena obejmuje: scenariusz, plan zdjęciowy, wynajem sprzętu, honoraria aktorów/lektorów, montaż, koloryzację, efekty graficzne i minutę bezpłatnych poprawek. W niektórych pakietach dochodzi muzyka i prawa do użytku.",
   },
   {
     question: "Czy mozna zamowic film reklamowy bez scenariusza?",

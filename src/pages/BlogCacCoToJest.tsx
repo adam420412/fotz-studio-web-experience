@@ -21,7 +21,7 @@ const faqItems = [
   },
   {
     question: "Jaki jest dobry wskaźnik LTV/CAC?",
-    answer: "LTV/CAC (stosunek wartości życiowej klienta do kosztu jego pozyskania) powinien wynosić co najmniej 3:1 dla zdrowego biznesu SaaS. LTV/CAC poniżej 1 = model biznesowy nie działa. 1–2 = model едва viable. 3–5 = zdrowy, skalowalny biznes. Powyżej 5 = prawdopodobnie za mało inwestujesz w growth — możesz agresywniej wydawać na pozyskiwanie. Wiele VC wymaga LTV/CAC powyżej 3x przed Series A.",
+    answer: "LTV/CAC (stosunek wartości życiowej klienta do kosztu jego pozyskania) powinien wynosić co najmniej 3:1 dla zdrowego biznesu SaaS. LTV/CAC poniżej 1 = model biznesowy nie działa. 1–2 = model ledwo viable. 3–5 = zdrowy, skalowalny biznes. Powyżej 5 = prawdopodobnie za mało inwestujesz w growth — możesz agresywniej wydawać na pozyskiwanie. Wiele VC wymaga LTV/CAC powyżej 3x przed Series A.",
   },
   {
     question: "Jak obniżyć CAC?",

@@ -32,7 +32,7 @@ export default function TworzenieStronWarszawa() {
   const warsawCities = [
     "Warszawa",
     "Piaseczno",
-    "Констancin-Jeziorna",
+    "Konstancin-Jeziorna",
     "Milanówek",
     "Piastów",
     "Pruszków",

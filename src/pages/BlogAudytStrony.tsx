@@ -325,7 +325,7 @@ export default function BlogAudytStrony() {
                   <li><strong>Krok 1: Audyt techniczny</strong> — uruchom PageSpeed Insights dla najpopularniejszych 5-10 stron, sprawdź Core Web Vitals, zbadaj błędy w Google Search Console</li>
                   <li><strong>Krok 2: Crawluj stronę</strong> — użyj Screaming Frog, aby znaleźć stany 4xx/5xx, duplicate title tagi, missing meta descriptions, broken linki</li>
                   <li><strong>Krok 3: Analiza SEO on-page</strong> — przeanalizuj title tagi, meta opisy, hierarchię H1-H6 dla każdej podstrony. Sprawdź, czy contentu odpowiada intencji wyszukiwania</li>
-                  <li><strong>Krok 4: Badanie backlinków</strong> — użyj Ahrefs lub SEMrush free trial, aby zobaczyć Twój Domain Rating, backlinki, якość linków</li>
+                  <li><strong>Krok 4: Badanie backlinków</strong> — użyj Ahrefs lub SEMrush free trial, aby zobaczyć Twój Domain Rating, backlinki, jakość linków</li>
                   <li><strong>Krok 5: UX i konwersje</strong> — sprawdź Google Analytics dla bounce rate, średnią sesję, top exit pages. Przeanalizuj flow użytkownika i CTA</li>
                   <li><strong>Krok 6: Raport i plan działań</strong> — stwórz dokumenty z rankingiem problemów (krytyczne, wysokie, średnie, niskie), zaproponuj rozwiązania, priorytyzuj wg wpływu na ranking</li>
                 </ol>

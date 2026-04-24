@@ -446,14 +446,14 @@ const BlogKosztGoogleAds = () => {
                   Co Zawiera Obsługa Agencji Google Ads?
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Dobra agencja powinна zapewnić:
+                  Dobra agencja powinna zapewnić:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground mb-6 space-y-2">
                   <li>Strategię kampanii i dobór słów kluczowych</li>
                   <li>Tworzenie ogłoszeń i copy</li>
                   <li>Ustawienie tracking konwersji i Google Analytics</li>
                   <li>Codzienną optymalizację Quality Score</li>
-                  <li>A/B testy различных wariantów ogłoszeń</li>
+                  <li>A/B testy różnych wariantów ogłoszeń</li>
                   <li>Raporty i analizę ROI</li>
                   <li>Dostrajanie bid strategy i budżetu</li>
                   <li>Obsługę remarketing kampanii</li>

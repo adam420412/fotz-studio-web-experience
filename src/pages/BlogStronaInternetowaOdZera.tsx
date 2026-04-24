@@ -212,7 +212,7 @@ export default function BlogStronaInternetowaOdZera() {
               <section className="mb-12">
                 <h2 className="text-3xl font-bold mb-6">Dlaczego małej firmie potrzebna jest strona internetowa?</h2>
                 <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                  Możemy to powiedzieć sto razy, ale to prawda: w 2025 roku firmy bez stron internetowych tracą klientów. Ludzie szukają Ciebie na Google'u zanim zadzwonią. Jeśli Cię tam nie ma, звоня do konkurencji.
+                  Możemy to powiedzieć sto razy, ale to prawda: w 2025 roku firmy bez stron internetowych tracą klientów. Ludzie szukają Ciebie na Google'u zanim zadzwonią. Jeśli Cię tam nie ma, dzwonią do konkurencji.
                 </p>
                 <p className="text-lg text-slate-600 leading-relaxed mb-6">
                   Strona nie musi być skomplikowana czy droga. Musi być profesjonalna, czytelna, mobilna i wygodna. To wszystko.

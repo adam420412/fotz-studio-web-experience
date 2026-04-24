@@ -795,7 +795,7 @@ export default function BlogMarketingAfiliacyjny() {
                 </li>
                 <li className="flex gap-2">
                   <span className="font-bold">•</span>
-                  <span>Liczba kanałów promocji, które используеsz</span>
+                  <span>Liczba kanałów promocji, które używasz</span>
                 </li>
               </ul>
             </div>

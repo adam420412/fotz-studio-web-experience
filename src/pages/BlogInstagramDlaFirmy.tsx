@@ -390,7 +390,7 @@ const BlogInstagramDlaFirmy = () => {
                 </h2>
 
                 <p className="text-muted-foreground mb-6">
-                  DM na Instagramie to nie just: pytania klientów. To канал sprzedaży. Firmy B2B/B2C mogą dostawać 10-100 kwalifikowalnych leadów dziennie poprzez DM jeśli:
+                  DM na Instagramie to nie just: pytania klientów. To kanał sprzedaży. Firmy B2B/B2C mogą dostawać 10-100 kwalifikowalnych leadów dziennie poprzez DM jeśli:
                 </p>
 
                 <ul className="space-y-2 mb-6 text-muted-foreground">

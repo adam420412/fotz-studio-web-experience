@@ -311,7 +311,7 @@ const AgencjaMarketingowaKielce = () => {
                 Agencja marketingowa fotz studio obsługuje firmy z Kielc niezależnie od wielkości — startupów, małych firm usługowych, sklepów internetowych i dużych przedsiębiorstw. Każda firma ma inne potrzeby, dlatego każdy plan to indywidualna strategia dostosowana do Twoich celów i budżetu.
               </p>
               <p className="text-gray-300 mb-4">
-                Czy szukasz strony internetowej, która będzie konwertować odwiedzających na klientów? Chcesz pojawić się wysoko w Google na frazy, na które szukają Twoi klienci w Kielcach? Potrzebujesz kampanii Google Ads, która będzie rentowna? Czy może chcesz budować markę na социальnych mediach?
+                Czy szukasz strony internetowej, która będzie konwertować odwiedzających na klientów? Chcesz pojawić się wysoko w Google na frazy, na które szukają Twoi klienci w Kielcach? Potrzebujesz kampanii Google Ads, która będzie rentowna? Czy może chcesz budować markę na społecznonych mediach?
               </p>
               <p className="text-gray-300 mb-4">
                 Oferujemy wszystko — od strategii po wdrożenie, od bieżącego wsparcia po raportowanie wyników. Pracujemy w oparciu o dane, transparentność i partnerstwo z naszymi klientami.

@@ -76,7 +76,7 @@ export default function BlogMarketingDlaRestauracji() {
     {
       step: 6,
       title: "Zbieraj emails dla newsletter'a",
-      desc: "Newsletter codzienny/tygodniowy z promocjami, nowymi daniami, событиями. Używaj Braze lub MailerLite."
+      desc: "Newsletter codzienny/tygodniowy z promocjami, nowymi daniami, wydarzeniami. Używaj Braze lub MailerLite."
     },
     {
       step: 7,

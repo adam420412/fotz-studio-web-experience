@@ -128,7 +128,7 @@ export default function BlogUXAudit() {
       answer: "Audyt UX to systematyczna analiza doświadczenia użytkownika na stronie internetowej. Sprawdzamy każdy element: czy strona jest szybka, czy intuicyjna, czy dostępna, czy konwertuje. Celem jest znalezienie bottlenecków i możliwości optymalizacji."
     },
     {
-      question: "Jak често powinienem robić audyt UX?",
+      question: "Jak często powinienem robić audyt UX?",
       answer: "Po dużych zmianach na stronie (redesign, nowe sekcje) — zrób audyt. Dla stron e-commerce — co najmniej raz na 6 miesięcy. Dla stron z niskim conversion rate — audyt natychmiast. Dla dobrze działających stron — raz do roku wystarczy."
     },
     {

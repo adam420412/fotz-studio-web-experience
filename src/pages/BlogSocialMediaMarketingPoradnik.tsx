@@ -24,7 +24,7 @@ export default function BlogSocialMediaMarketingPoradnik() {
     },
     {
       question: "Jak często publikować posty na Facebooku?",
-      answer: "Zalecenia wskazują na 1-2 posty dziennie, ale ważniejsza jest konsystencja i jakość niż ilość. Obserwuj metryki zaangażowania i dostosuj częstotliwość do preferencji swojej publiczności. Некоторые branże mogą czerpać korzyści z publikacji 3-5 razy dziennie, innym wystarczy kilka razy w tygodniu.",
+      answer: "Zalecenia wskazują na 1-2 posty dziennie, ale ważniejsza jest konsystencja i jakość niż ilość. Obserwuj metryki zaangażowania i dostosuj częstotliwość do preferencji swojej publiczności. Niektóre branże mogą czerpać korzyści z publikacji 3-5 razy dziennie, innym wystarczy kilka razy w tygodniu.",
     },
     {
       question: "Czy warto płacić za reklamy w social media?",

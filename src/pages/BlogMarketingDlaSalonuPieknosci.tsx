@@ -326,7 +326,7 @@ const BlogMarketingDlaSalonuPieknosci = () => {
                         <li>• Instagram Reels (15-30 sekund transformacji, tipy, trendy) - 3-5x/tygodniu</li>
                         <li>• Stories (daily updates, behind-the-scenes, Q&A) - story stickers dla interakcji</li>
                         <li>• DM konwersje - odpowiadaj szybko (poniżej 1 godziny) na pytania o usługi</li>
-                        <li>• Hashtagi strategiczne (#salonpiękności, #косметолог [lokalne], #beforeafter)</li>
+                        <li>• Hashtagi strategiczne (#salonpiękności, #kosmetolog [lokalne], #beforeafter)</li>
                         <li>• Taguj produkty i partnery w postach - zwiększa discovery</li>
                       </ul>
                     </div>

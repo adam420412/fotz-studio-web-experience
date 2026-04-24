@@ -647,7 +647,7 @@ export default function BlogVideoMarketingDlaFirm() {
                   Każde dobre wideo zaczyna się od dobrego scenariusza. Napisz dialog, opisy ujęć i plan produkcji.
                 </p>
                 <p className="text-gray-700">
-                  Scenariusz nie musi być долгим – nawet krótkie wideo (30 sekund) powinno mieć strukturę.
+                  Scenariusz nie musi być długi – nawet krótkie wideo (30 sekund) powinno mieć strukturę.
                 </p>
               </div>
 
@@ -669,7 +669,7 @@ export default function BlogVideoMarketingDlaFirm() {
                   Montaż, korekta kolorów, dodanie efektów, tekstu i muzyki. To ten etap gdzie wideo ożywa.
                 </p>
                 <p className="text-gray-700">
-                  Dobrze zmontowane wideo może nawet słabsze nagrania превратить w coś wartościowego.
+                  Dobrze zmontowane wideo może nawet słabsze nagrania przekształcić w coś wartościowego.
                 </p>
               </div>
 

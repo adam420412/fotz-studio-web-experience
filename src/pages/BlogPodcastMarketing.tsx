@@ -36,7 +36,7 @@ const faqItems = [
   },
   {
     question: "Czy może być podcast dla sklepu e-commerce?",
-    answer: "Oczywiście. Podcast może opowiadać o produktach, trendach branżowych, przypadkach klientów, poradach. Buduje autorytет, zaufanie i community wokół marki e-commerce."
+    answer: "Oczywiście. Podcast może opowiadać o produktach, trendach branżowych, przypadkach klientów, poradach. Buduje autorytet, zaufanie i community wokół marki e-commerce."
   }
 ];
 

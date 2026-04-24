@@ -53,7 +53,7 @@ const rebrandingSteps = [
   {
     step: 3,
     title: "Kreatywna koncepcja",
-    description: "Tworzenie koncepcji wizualnych nowego brandingu - propozycje nazwy (jeśli dotyczy), logo, палет kolorów, typografia. Przetestowanie kilku kierunków kreacyjnych i wybór najlepszego."
+    description: "Tworzenie koncepcji wizualnych nowego brandingu - propozycje nazwy (jeśli dotyczy), logo, paletę kolorów, typografia. Przetestowanie kilku kierunków kreacyjnych i wybór najlepszego."
   },
   {
     step: 4,
@@ -154,7 +154,7 @@ const faqItems = [
   },
   {
     question: "Jakie są najczęstsze błędy podczas rebranding?",
-    answer: "1) Brak strategii - projektowanie bez jasnej wizji biznesowej. 2) Przesadna zmiana - logo zupełnie niepodobne do oryginału budzi podejrzliwość. 3) Słaba komunikacja - klienci dowiadują się o zmianach przypadkowo. 4) Niecomplетne wdrożenie - niektóre kanały pozostają w starym brandingu. 5) Brak monitorowania - nie mierzy się odboru i wpływu na sprzedaż."
+    answer: "1) Brak strategii - projektowanie bez jasnej wizji biznesowej. 2) Przesadna zmiana - logo zupełnie niepodobne do oryginału budzi podejrzliwość. 3) Słaba komunikacja - klienci dowiadują się o zmianach przypadkowo. 4) Niekompletne wdrożenie - niektóre kanały pozostają w starym brandingu. 5) Brak monitorowania - nie mierzy się odboru i wpływu na sprzedaż."
   }
 ];
 
@@ -390,7 +390,7 @@ export default function BlogRebrandingPoradnik() {
                 </div>
 
                 <div className="bg-red-50 border-l-4 border-red-400 rounded-lg p-6">
-                  <h3 className="font-bold text-red-900 mb-2">4. Niekomplетne wdrożenie</h3>
+                  <h3 className="font-bold text-red-900 mb-2">4. Niekompletne wdrożenie</h3>
                   <p className="text-gray-700">Jeśli niektóre kanały pozostają w starym brandingu, sygnał jest zmysłowy. Wdróż nowy branding kompleksowo.</p>
                 </div>
 

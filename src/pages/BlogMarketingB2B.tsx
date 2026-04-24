@@ -288,7 +288,7 @@ export default function BlogMarketingB2B() {
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white flex items-center gap-3">
                   <Users className="w-7 h-7 text-yellow-400" />
-                  Account-Based Marketing (ABM) — Когда to ma sens
+                  Account-Based Marketing (ABM) — Kiedy to ma sens
                 </h2>
                 <p className="text-lg leading-relaxed text-gray-300 mb-4">
                   ABM to strategia skupiona na konkretnych firmach (named accounts) zamiast na ogólnych grupach docelowych. Zamiast generować 1000 leadów i filtrować, wybierasz z góry 50-500 firm i personalizujesz komunikację dla każdego konta.

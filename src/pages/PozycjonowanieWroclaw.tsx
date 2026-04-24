@@ -219,7 +219,7 @@ const PozycjonowanieWroclaw = () => {
               <div className="space-y-6 text-muted-foreground">
                 <p>
                   Wrocław to <strong className="text-foreground">czwarte co do wielkości miasto w Polsce</strong> z
-                  populacją <strong className="text-foreground">670 tysięcy mieszkańców</strong>. To czwarta столica
+                  populacją <strong className="text-foreground">670 tysięcy mieszkańców</strong>. To czwarta stolica
                   przedsiębiorczości, innowacji i wzrostu — szczególnie w sektorach IT, technologii i
                   startupów.
                 </p>

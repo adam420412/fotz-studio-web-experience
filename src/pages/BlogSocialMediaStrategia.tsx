@@ -200,7 +200,7 @@ export default function BlogSocialMediaStrategia() {
             <div className="border-l-4 border-primary pl-6">
               <h3 className="text-xl font-bold text-primary mb-3">Krok 2: Poznaj Swoją Grupę Docelową</h3>
               <p className="text-muted-foreground mb-4">
-                Musisz rozumieć demografię, psychografię i bólы swojego idealnego klienta:
+                Musisz rozumieć demografię, psychografię i bóle swojego idealnego klienta:
               </p>
               <ul className="text-muted-foreground space-y-2 ml-4">
                 <li className="list-disc">Wiek, płeć, lokalizacja, dochód</li>
@@ -808,7 +808,7 @@ export default function BlogSocialMediaStrategia() {
                 <p className="text-sm text-muted-foreground mt-2">Porównanie dwóch najpopularniejszych platform video.</p>
               </Link>
               <Link to="/blog/tiktok-dla-biznesu" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">
-                <p className="font-semibold text-primary">TikTok dla Biznesu: Jak Zbudować Присутność</p>
+                <p className="font-semibold text-primary">TikTok dla Biznesu: Jak Zbudować Obecność</p>
                 <p className="text-sm text-muted-foreground mt-2">Praktyczne wskazówki do TikTok marketingu dla firm.</p>
               </Link>
               <Link to="/blog/influencer-marketing-polska" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">

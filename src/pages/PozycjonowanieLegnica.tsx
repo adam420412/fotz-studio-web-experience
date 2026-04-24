@@ -150,7 +150,7 @@ export default function PozycjonowanieLegnica() {
                 <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Restauracje i Kawiarnie</h3>
                   <p className="text-gray-700">
-                    Pozycjonowanie lokalne dla gastronomii w Legnicy to привлечение głodnych klientów. Pojawiaj się na
+                    Pozycjonowanie lokalne dla gastronomii w Legnicy to przyciąganie głodnych klientów. Pojawiaj się na
                     mapach Google i w wynikach lokalnych wyszukiwań.
                   </p>
                 </div>

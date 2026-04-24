@@ -243,7 +243,7 @@ export default function BlogMarketingBudowlany() {
                 <strong>Internet</strong> — Google Moja Firma, SEO lokalne, Google Ads, Facebook/Instagram — to gdzie sa klienci. Targeting jest precyzyjny (ludzie szukaja konkretnie "remont poznan"), conversion wyzszy (2-5%), budżet bardziej efektywny.
               </p>
               <p className="text-slate-700 mb-4">
-                <strong>Best practice</strong> — zapomnij o tradycyjnych ulotках. Skoncentruj sie na: Google Moja Firma + SEO lokalne (darmowo/tanio), Google Ads (platne, szybkie), LinkedIn B2B (dla duzych projektów), portfolio na stronie + Instagram.
+                <strong>Best practice</strong> — zapomnij o tradycyjnych ulotkach. Skoncentruj sie na: Google Moja Firma + SEO lokalne (darmowo/tanio), Google Ads (platne, szybkie), LinkedIn B2B (dla duzych projektów), portfolio na stronie + Instagram.
               </p>
             </FadeInView>
 

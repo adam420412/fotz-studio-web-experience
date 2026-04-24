@@ -194,7 +194,7 @@ const BlogJakWybracAgencjeSEO = () => {
                       {
                         num: 6,
                         title: 'Jak będą wyglądać raporty i jak często je dostanę?',
-                        desc: 'Standard to raporty co miesiąc. Raporty powinny zawierać: pozycje kluczowych słów, ruch organiczny, konwersje, backlinkи, i plan działania na następny miesiąc. Poproś o przykładowy raport. Raport powinien być czyttelny, a nie tylko przechowywany w narzędziach.',
+                        desc: 'Standard to raporty co miesiąc. Raporty powinny zawierać: pozycje kluczowych słów, ruch organiczny, konwersje, backlinki, i plan działania na następny miesiąc. Poproś o przykładowy raport. Raport powinien być czyttelny, a nie tylko przechowywany w narzędziach.',
                       },
                       {
                         num: 7,
