@@ -117,7 +117,6 @@
   },
   "rewrites": [
     { "source": "/mapa-strony", "destination": "/mapa-strony-v2.html" },
-    { "source": "/mapa-strony-v2", "destination": "/mapa-strony-v2.html" },
     { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
   ],
   "headers": [
@@ -186,14 +185,6 @@
     },
     {
       "source": "/mapa-strony",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=0, must-revalidate" },
-        { "key": "CDN-Cache-Control", "value": "no-store" },
-        { "key": "Vercel-CDN-Cache-Control", "value": "no-store" }
-      ]
-    },
-    {
-      "source": "/mapa-strony-v2",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=0, must-revalidate" },
         { "key": "CDN-Cache-Control", "value": "no-store" },
