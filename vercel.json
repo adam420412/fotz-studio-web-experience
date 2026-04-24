@@ -116,6 +116,7 @@
     "api/send-contact.js": { "maxDuration": 10 }
   },
   "rewrites": [
+    { "source": "/mapa-strony", "destination": "/mapa-strony.html" },
     { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
   ],
   "headers": [

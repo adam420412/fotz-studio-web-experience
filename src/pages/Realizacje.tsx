@@ -30,12 +30,12 @@ import eneaStadionImg from "@/assets/portfolio/enea-stadion.png";
 import lauvjahImg from "@/assets/portfolio/lauvjah.png";
 
 // Wizualizacje 3D
-import viz17 from "@/assets/wizualizacje/viz-17.png";
-import viz18 from "@/assets/wizualizacje/viz-18.png";
-import viz19 from "@/assets/wizualizacje/viz-19.png";
-import viz20 from "@/assets/wizualizacje/viz-20.png";
-import viz21 from "@/assets/wizualizacje/viz-21.png";
-import viz22 from "@/assets/wizualizacje/viz-22.png";
+import viz17 from "@/assets/wizualizacje/viz-17.webp";
+import viz18 from "@/assets/wizualizacje/viz-18.webp";
+import viz19 from "@/assets/wizualizacje/viz-19.webp";
+import viz20 from "@/assets/wizualizacje/viz-20.webp";
+import viz21 from "@/assets/wizualizacje/viz-21.webp";
+import viz22 from "@/assets/wizualizacje/viz-22.webp";
 
 // Fotografia koncertowa
 import concert1 from "@/assets/fotograf/concert-1.jpg";
