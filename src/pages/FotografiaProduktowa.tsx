@@ -32,10 +32,10 @@ import { ServiceSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/Str
 import { FadeInView } from "@/components/FadeInView";
 import { ContactSection } from "@/components/sections/ContactSection";
 
-import viz17 from "@/assets/wizualizacje/viz-17.png";
-import viz18 from "@/assets/wizualizacje/viz-18.png";
-import viz19 from "@/assets/wizualizacje/viz-19.png";
-import viz20 from "@/assets/wizualizacje/viz-20.png";
+import viz17 from "@/assets/wizualizacje/viz-17.webp";
+import viz18 from "@/assets/wizualizacje/viz-18.webp";
+import viz19 from "@/assets/wizualizacje/viz-19.webp";
+import viz20 from "@/assets/wizualizacje/viz-20.webp";
 
 const faqItems = [
   {
