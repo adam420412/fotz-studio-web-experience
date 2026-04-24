@@ -8,6 +8,7 @@ import { useState } from "react";
 import {
   Building2,
   TrendingUp,
+  Award,
   Star,
   Users,
   MapPin,
@@ -17,6 +18,7 @@ import {
   Target,
   Smartphone,
   BarChart3,
+  Globe,
   Lightbulb,
   Zap,
 } from "lucide-react";
