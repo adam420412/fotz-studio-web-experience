@@ -198,13 +198,21 @@ const allArticles: Article[] = [
 
 interface RelatedArticlesProps {
   currentArticleId?: string;
+  currentSlug?: string;
+  tags?: string[];
   maxArticles?: number;
 }
 
-export function RelatedArticles({ currentArticleId = "", maxArticles = 3 }: RelatedArticlesProps) {
+export function RelatedArticles({
+  currentArticleId,
+  currentSlug,
+  maxArticles = 3,
+}: RelatedArticlesProps) {
+  const activeArticleId = currentArticleId ?? currentSlug ?? "";
+
   // Filter out current article and get related ones
   const relatedArticles = allArticles
-    .filter(article => article.id !== currentArticleId)
+    .filter(article => article.id !== activeArticleId)
     .slice(0, maxArticles);
 
   if (relatedArticles.length === 0) return null;

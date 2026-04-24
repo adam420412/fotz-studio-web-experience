@@ -182,7 +182,7 @@ interface ServiceSchemaProps {
   name: string;
   description: string;
   provider?: string;
-  areaServed?: string;
+  areaServed?: string | string[];
 }
 
 export function ServiceSchema({
@@ -191,6 +191,16 @@ export function ServiceSchema({
   provider = "Fotz Studio",
   areaServed = "Poznań",
 }: ServiceSchemaProps) {
+  const areaServedValue = Array.isArray(areaServed)
+    ? areaServed.map((area) => ({
+        "@type": "Place",
+        name: area,
+      }))
+    : {
+        "@type": "City",
+        name: areaServed,
+      };
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -200,10 +210,7 @@ export function ServiceSchema({
       "@type": "Organization",
       name: provider,
     },
-    areaServed: {
-      "@type": "City",
-      name: areaServed,
-    },
+    areaServed: areaServedValue,
   };
 
   return (
