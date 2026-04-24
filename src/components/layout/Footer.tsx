@@ -415,7 +415,7 @@ export function Footer() {
                     <a
                       href={link.href}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       className={columnLink + " flex items-center gap-1"}
                     >
                       {link.name}
