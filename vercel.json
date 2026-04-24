@@ -110,7 +110,14 @@
     { "source": "/agencja-social-media-poznan", "destination": "/social-media/poznan", "permanent": true },
     { "source": "/landing-page", "destination": "/blog/jak-stworzyc-landing-page", "permanent": true },
     { "source": "/sitemap", "destination": "/sitemap-index.xml", "permanent": true },
-    { "source": "/content-marketing/tresci-seo", "destination": "/content-marketing/strategia", "permanent": true }
+    { "source": "/content-marketing/tresci-seo", "destination": "/content-marketing/strategia", "permanent": true },
+    { "source": "/social-media/facebook", "destination": "/blog/facebook-ads-poradnik", "permanent": true },
+    { "source": "/social-media/instagram", "destination": "/blog/instagram-dla-firmy", "permanent": true },
+    { "source": "/social-media/tiktok", "destination": "/blog/tiktok-dla-firmy", "permanent": true },
+    { "source": "/social-media/linkedin", "destination": "/blog/linkedin-dla-firmy", "permanent": true },
+    { "source": "/social-media/youtube", "destination": "/blog/youtube-dla-firmy", "permanent": true },
+    { "source": "/social-media/pinterest", "destination": "/blog/pinterest-dla-firmy", "permanent": true },
+    { "source": "/social-media/meta", "destination": "/performance-marketing/meta-ads", "permanent": true }
   ],
   "functions": {
     "api/send-contact.js": { "maxDuration": 10 }
