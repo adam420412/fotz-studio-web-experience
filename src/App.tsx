@@ -992,7 +992,6 @@ const BlogCommunityMarketingCoTo = lazy(() => import("./pages/BlogCommunityMarke
 
 // Wave 65: Brand Positioning, TAM SAM SOM, User Onboarding
 const BlogBrandPositioningCoTo = lazy(() => import("./pages/BlogBrandPositioningCoTo"));
-const BlogTAMSAMSOMCoTo = lazy(() => import("./pages/BlogTamSamSomCoTo"));
 const BlogUserOnboardingCoTo = lazy(() => import("./pages/BlogUserOnboardingCoTo"));
 
 // Wave 64: Customer Data Platform, Lead Nurturing, Account Management
@@ -1130,7 +1129,6 @@ const BlogInfluencerMarketingCoTo = lazy(() => import("./pages/BlogInfluencerMar
 // Wave 35: Webinar, Persona, A/B Testing
 const BlogWebinarCoToJest = lazy(() => import("./pages/BlogWebinarCoToJest"));
 const BlogPersonaMarketingowa = lazy(() => import("./pages/BlogPersonaMarketingowa"));
-const BlogABTestingCoTo = lazy(() => import("./pages/BlogAbTestingCoTo"));
 
 // Wave 34: Growth Hacking, Retargeting, Lead Generation
 const BlogGrowthHackingCoTo = lazy(() => import("./pages/BlogGrowthHackingCoTo"));
@@ -1176,7 +1174,6 @@ const BlogERPCoToJest = lazy(() => import("./pages/BlogERPCoToJest"));
 const BlogAgileCoTo = lazy(() => import("./pages/BlogAgileCoTo"));
 const BlogEbitdaCoToJest = lazy(() => import("./pages/BlogEbitdaCoToJest"));
 const BlogROICoToJest = lazy(() => import("./pages/BlogROICoToJest"));
-const BlogMVPCoToJest = lazy(() => import("./pages/BlogMVPCoToJest"));
 const BlogDueDiligence = lazy(() => import("./pages/BlogDueDiligence"));
 
 // Wave 26: CPM, Scrum, Digital marketing
@@ -1295,7 +1292,6 @@ const ContentMarketing = lazy(() => import("./pages/ContentMarketing"));
 const BlogKosztSEO = lazy(() => import("./pages/BlogKosztSEO"));
 const BlogMarketingDlaFirmy = lazy(() => import("./pages/BlogMarketingDlaFirmy"));
 const AgencjaMarketingowaKielce = lazy(() => import("./pages/AgencjaMarketingowaKielce"));
-const BlogEcommercePoradnik = lazy(() => import("./pages/BlogEcommercePoradnik"));
 const StronyInternetoweZabrze = lazy(() => import("./pages/StronyInternetoweZabrze"));
 const BlogContentMarketingPoradnik = lazy(() => import("./pages/BlogContentMarketingPoradnik"));
 const StronyInternetoweWalbrzych = lazy(() => import("./pages/StronyInternetoweWalbrzych"));
@@ -2254,7 +2250,6 @@ const App = () => (
                 <Route path="/blog/community-marketing-co-to" element={<BlogCommunityMarketingCoTo />} />
                 {/* Wave 65 */}
                 <Route path="/blog/brand-positioning-co-to" element={<BlogBrandPositioningCoTo />} />
-                <Route path="/blog/tam-sam-som-co-to" element={<BlogTAMSAMSOMCoTo />} />
                 <Route path="/blog/user-onboarding-co-to" element={<BlogUserOnboardingCoTo />} />
                 {/* Wave 64 */}
                 <Route path="/blog/customer-data-platform-cdp-co-to" element={<BlogCustomerDataPlatformCoTo />} />
@@ -2362,7 +2357,6 @@ const App = () => (
                 {/* Wave 35 */}
                 <Route path="/blog/webinar-co-to-jest" element={<BlogWebinarCoToJest />} />
                 <Route path="/blog/persona-marketingowa" element={<BlogPersonaMarketingowa />} />
-                <Route path="/blog/ab-testing-co-to" element={<BlogABTestingCoTo />} />
                 {/* Wave 34 */}
                 <Route path="/blog/growth-hacking-co-to" element={<BlogGrowthHackingCoTo />} />
                 <Route path="/blog/retargeting-co-to" element={<BlogRetargetingCoTo />} />
@@ -2400,7 +2394,6 @@ const App = () => (
                 <Route path="/blog/agile-co-to" element={<BlogAgileCoTo />} />
                 <Route path="/blog/ebitda-co-to-jest" element={<BlogEbitdaCoToJest />} />
                 <Route path="/blog/roi-co-to-jest" element={<BlogROICoToJest />} />
-                <Route path="/blog/mvp-co-to-jest" element={<BlogMVPCoToJest />} />
                 <Route path="/blog/due-diligence-co-to" element={<BlogDueDiligence />} />
                 {/* Wave 26 */}
                 <Route path="/blog/cpm-co-to" element={<BlogCPMCoTo />} />
@@ -2440,7 +2433,6 @@ const App = () => (
                 <Route path="/blog/koszt-seo" element={<BlogKosztSEO />} />
                 <Route path="/blog/marketing-dla-firmy" element={<BlogMarketingDlaFirmy />} />
                 <Route path="/agencja-marketingowa/kielce" element={<AgencjaMarketingowaKielce />} />
-                <Route path="/blog/jak-zalozyc-sklep-internetowy" element={<BlogEcommercePoradnik />} />
                 <Route path="/uslugi/strony-internetowe/zabrze" element={<StronyInternetoweZabrze />} />
                 <Route path="/blog/content-marketing-poradnik" element={<BlogContentMarketingPoradnik />} />
                 <Route path="/strony-internetowe/walbrzych" element={<StronyInternetoweWalbrzych />} />
