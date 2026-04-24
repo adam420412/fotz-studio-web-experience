@@ -80,7 +80,10 @@ export function SEOHead({
           content={Array.isArray(keywords) ? keywords.join(", ") : keywords}
         />
       )}
-      <link rel="canonical" href={canonicalUrl} />
+      {/* Canonical omitted for noIndex pages to avoid polluting the
+          canonical graph (e.g. /404 pointing to itself creates phantom
+          broken-page references in crawlers). */}
+      {!noIndex && <link rel="canonical" href={canonicalUrl} />}
       
       {noIndex && <meta name="robots" content="noindex, nofollow" />}
       

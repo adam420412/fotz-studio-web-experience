@@ -29,7 +29,7 @@ const NotFound = () => {
       <SEOHead
         title="404 - Strona nie istnieje | Fotz Studio"
         description="Przepraszamy, strona której szukasz nie została znaleziona. Sprawdź adres URL lub wróć na stronę główną Fotz Studio."
-        canonical="https://fotz.pl/404"
+        canonical="https://fotz.pl/"
         noIndex={true}
       />
       <Layout>
