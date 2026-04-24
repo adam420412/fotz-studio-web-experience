@@ -90,12 +90,7 @@ Disallow: /cart/
 Disallow: /checkout/
 Disallow: /my-account/
 
-# Sitemap locations (index + individual sitemaps)
+# Sitemap — index file only (Google discovers sub-sitemaps via index).
+# Declaring sub-sitemaps alongside index caused Ahrefs to report
+# "Page in multiple sitemaps" for hub URLs (/realizacje, /dla-kogo).
 Sitemap: https://fotz.pl/sitemap-index.xml
-Sitemap: https://fotz.pl/sitemap.xml
-Sitemap: https://fotz.pl/sitemap-main.xml
-Sitemap: https://fotz.pl/sitemap-services.xml
-Sitemap: https://fotz.pl/sitemap-cities.xml
-Sitemap: https://fotz.pl/sitemap-blog.xml
-Sitemap: https://fotz.pl/sitemap-casestudies.xml
-Sitemap: https://fotz.pl/sitemap-industries.xml
