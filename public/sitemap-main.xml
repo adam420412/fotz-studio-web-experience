@@ -52,6 +52,8 @@
 <url><loc>https://fotz.pl/slownik-marketingowy</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://fotz.pl/zasoby</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 <url><loc>https://fotz.pl/zainstaluj</loc><lastmod>2026-04-04</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+<!-- Mapa strony (HTML sitemap dla crawlerów - rozwiązuje orphan pages) -->
+<url><loc>https://fotz.pl/mapa-strony</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url>
 <!-- Prawne -->
 <url><loc>https://fotz.pl/polityka-prywatnosci</loc><lastmod>2026-04-04</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 <url><loc>https://fotz.pl/regulamin</loc><lastmod>2026-04-04</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>

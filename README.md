@@ -78,3 +78,5 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+<!-- deploy: 2026-04-24 cache flush for /mapa-strony -->
