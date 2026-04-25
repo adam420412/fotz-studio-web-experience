@@ -31,7 +31,9 @@ const NotFound = () => {
         description="Przepraszamy, strona której szukasz nie została znaleziona. Sprawdź adres URL lub wróć na stronę główną Fotz Studio."
         canonical="https://fotz.pl/"
         noIndex={true}
-      />
+      >
+        <meta name="prerender-status-code" content="404" />
+      </SEOHead>
       <Layout>
       <section className="min-h-[80vh] flex items-center justify-center section-padding">
         <div className="text-center">
