@@ -489,7 +489,7 @@ export default function SklepyInternetoweWarszawa() {
               { label: "Strony internetowe Warszawa", to: "/uslugi/strony-internetowe/warszawa" },
               { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
               { label: "Pozycjonowanie SEO", to: "/seo/pozycjonowanie" },
-              { label: "Google Ads", to: "/uslugi/google-ads" },
+              { label: "Google Ads", to: "/performance-marketing/google-ads" },
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe" },
             ].map((link) => (
               <Link

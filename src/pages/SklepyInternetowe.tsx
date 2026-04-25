@@ -676,7 +676,7 @@ export default function SklepyInternetowe() {
             {[
               { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
               { label: "SEO — pozycjonowanie sklepu", to: "/seo/pozycjonowanie" },
-              { label: "Google Ads — Google Shopping", to: "/uslugi/google-ads" },
+              { label: "Google Ads — Google Shopping", to: "/performance-marketing/google-ads" },
               { label: "Meta Ads dla e-commerce", to: "/uslugi/meta-ads" },
               { label: "E-commerce — case studies", to: "/uslugi/strony-internetowe/ecommerce" },
               { label: "Agencja marketingowa", to: "/agencja-marketingowa" },

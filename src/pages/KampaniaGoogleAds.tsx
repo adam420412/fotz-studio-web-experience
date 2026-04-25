@@ -29,7 +29,7 @@ export default function KampaniaGoogleAds() {
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
     { label: "Usługi", href: "/uslugi" },
-    { label: "Google Ads", href: "/uslugi/google-ads" },
+    { label: "Google Ads", href: "/performance-marketing/google-ads" },
     { label: "Kampania Google Ads" },
   ];
 
