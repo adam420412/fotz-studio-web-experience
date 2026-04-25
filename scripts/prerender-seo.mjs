@@ -346,3 +346,45 @@ console.log(`   ${generated} pages generated`);
 console.log(`   ${skipped} skipped (no SEOHead or component not found)`);
 if (errors > 0) console.log(`   ${errors} errors`);
 console.log(`\n📁 Output: ${DIST}`);
+
+// ===========================================================================
+// Generate dist/404.html with proper NotFound markup (served by middleware
+// with HTTP 404 status for unknown routes — fixes Ahrefs soft-404 errors).
+// ===========================================================================
+const notFoundMeta = {
+  title: '404 — Strona nie istnieje | Fotz Studio',
+  description: 'Przepraszamy, strona której szukasz nie została znaleziona. Wróć na stronę główną Fotz Studio lub skorzystaj z menu.',
+  canonical: 'https://fotz.pl/',
+  ogImage: 'https://fotz.pl/og-image.jpg',
+  noIndex: true,
+};
+const notFoundHtml = injectMeta(template, notFoundMeta);
+fs.writeFileSync(path.join(DIST, '404.html'), notFoundHtml, 'utf-8');
+console.log(`   + dist/404.html generated (served with HTTP 404 by middleware)`);
+
+// ===========================================================================
+// Generate dist/known-routes.json — manifest of every static route + every
+// prerendered directory. Edge middleware uses this to decide 200 vs 404 for
+// unknown paths (catch-all rewrite previously caused soft-404 = 200 + SPA).
+// ===========================================================================
+const knownStaticRoutes = routes
+  .map((r) => r.path)
+  .filter((p) => !p.includes(':') && !p.includes('*'));
+
+// Dynamic patterns (currently only /blog/:slug) — middleware regex-matches these.
+const dynamicPatterns = routes
+  .map((r) => r.path)
+  .filter((p) => p.includes(':') || p.includes('*'))
+  .map((p) => p.replace(/:([a-zA-Z_]+)/g, '[^/]+').replace(/\*/g, '.*'));
+
+const manifest = {
+  generatedAt: new Date().toISOString(),
+  staticRoutes: knownStaticRoutes,
+  dynamicPatterns,
+};
+fs.writeFileSync(
+  path.join(DIST, 'known-routes.json'),
+  JSON.stringify(manifest),
+  'utf-8'
+);
+console.log(`   + dist/known-routes.json generated (${knownStaticRoutes.length} static + ${dynamicPatterns.length} dynamic)`);
