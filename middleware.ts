@@ -50,7 +50,6 @@ const ALLOW_FILES = new Set([
   '/mapa-strony',
   '/mapa-strony-v2.html',
   '/mapa-strony-v3.html',
-  '/agencja-marketingowa',
 ]);
 
 // File-extension heuristic: anything ending with .ext is an asset request.
