@@ -18,6 +18,7 @@ interface SEOHeadProps {
   structuredData?: object | object[];
   schema?: object | object[];
   keywords?: string | string[];
+  disableTitleTruncation?: boolean;
   children?: React.ReactNode;
 }
 
@@ -46,6 +47,7 @@ export function SEOHead({
   structuredData,
   schema,
   keywords,
+  disableTitleTruncation = false,
   children,
 }: SEOHeadProps) {
   // Ensure canonical has no trailing slash (except for homepage)
@@ -59,7 +61,7 @@ export function SEOHead({
     : description;
 
   // Truncate title to 60 chars (Google shows ~50-60)
-  const metaTitle = title.length > 60 
+  const metaTitle = !disableTitleTruncation && title.length > 60 
     ? title.substring(0, 57) + "..." 
     : title;
 

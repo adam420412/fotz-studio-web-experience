@@ -45,6 +45,12 @@ const EXCLUDE_ROUTES = new Set([
   '/mapa-strony',
 ]);
 
+const LEGACY_REDIRECT_ROUTES = new Set([
+  '/branding',
+  '/produkcja-video',
+  '/social-media-marketing',
+]);
+
 /**
  * Extract SEOHead props from a .tsx file using regex
  */
@@ -373,7 +379,7 @@ const appSource = fs.readFileSync(path.join(SRC, 'App.tsx'), 'utf-8');
 const allRouteMatches = [...appSource.matchAll(/<Route\s+path="([^"]+)"/g)].map((m) => m[1]);
 const uniqueRoutes = [...new Set(allRouteMatches)];
 
-const knownStaticRoutes = uniqueRoutes.filter((p) => !p.includes(':') && !p.includes('*'));
+const knownStaticRoutes = uniqueRoutes.filter((p) => !p.includes(':') && !p.includes('*') && !LEGACY_REDIRECT_ROUTES.has(p));
 
 // Dynamic patterns (e.g. /blog/:slug, /akademia/*). Exclude the React Router
 // catch-all "*" alone — it would match every path and defeat soft-404.
