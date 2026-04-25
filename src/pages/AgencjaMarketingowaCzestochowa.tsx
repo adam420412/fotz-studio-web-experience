@@ -521,7 +521,7 @@ export default function AgencjaMarketingowaCzestochowa() {
               { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
               { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
               { label: "Pozycjonowanie SEO", to: "/seo/pozycjonowanie" },
-              { label: "Google Ads", to: "/uslugi/google-ads" },
+              { label: "Google Ads", to: "/performance-marketing/google-ads" },
               { label: "Social media marketing", to: "/social-media" },
             ].map((link) => (
               <Link

@@ -13,7 +13,7 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 export default function AgencjaSEOKrakow() {
   const breadcrumbs = [
     { label: "Strona główna", href: "/" },
-    { label: "Agencja SEO", href: "/uslugi/seo" },
+    { label: "Agencja SEO", href: "/seo/pozycjonowanie" },
     { label: "Kraków", href: "/agencja-seo-krakow" },
   ];
 

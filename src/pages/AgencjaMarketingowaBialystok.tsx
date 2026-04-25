@@ -40,7 +40,7 @@ const services = [
     icon: Target,
     title: "Kampanie Google Ads i Meta Ads",
     description: "Zaawansowane kampanie marketingowe w Google Ads i Meta Ads. Konfiguracja, optymalizacja i skalowanie. Raportowanie ROAS i CPL. Budżety od 2 000 do 100 000 PLN/mies. Wyniki sprzedażowe mierzone w leadach i konwersjach.",
-    link: "/uslugi/google-ads"
+    link: "/performance-marketing/google-ads"
   },
   {
     icon: Share2,
@@ -480,7 +480,7 @@ export default function AgencjaMarketingowaBialystok() {
                 { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa-krakow" },
                 { label: "Pozycjonowanie Białystok", to: "/uslugi/pozycjonowanie/bialystok" },
                 { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
-                { label: "Google Ads", to: "/uslugi/google-ads" },
+                { label: "Google Ads", to: "/performance-marketing/google-ads" },
                 { label: "Social media marketing", to: "/social-media" },
               ].map((link) => (
                 <Link

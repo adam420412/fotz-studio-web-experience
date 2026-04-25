@@ -590,7 +590,7 @@ const UslugiIdentyfikacjaWizualna = () => {
               { label: "Projektowanie logo", href: "/uslugi/logo-i-branding" },
               { label: "Agencja graficzna", href: "/agencja-graficzna" },
               { label: "Strony internetowe", href: "/uslugi/strony-internetowe" },
-              { label: "Social media", href: "/uslugi/social-media" },
+              { label: "Social media", href: "/uslugi/social-media-marketing" },
               { label: "Kampanie reklamowe", href: "/uslugi/kampanie-reklamowe" },
             ].map((item) => (
               <Link
