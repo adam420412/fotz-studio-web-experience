@@ -388,3 +388,11 @@ fs.writeFileSync(
   'utf-8'
 );
 console.log(`   + dist/known-routes.json generated (${knownStaticRoutes.length} static + ${dynamicPatterns.length} dynamic)`);
+
+// Also write to repo root so Edge middleware (bundled at deploy time) can
+// statically import it. Edge runtime cannot read the filesystem at request time.
+fs.writeFileSync(
+  path.join(ROOT, 'known-routes.json'),
+  JSON.stringify(manifest),
+  'utf-8'
+);
