@@ -179,6 +179,7 @@ export default function AgencjaMarketingowa() {
           url: "https://fotz.pl/agencja-marketingowa",
           type: "website",
         }}
+        disableTitleTruncation
         structuredData={faqSchema}
       >
         <meta name="robots" content="index, follow" />
