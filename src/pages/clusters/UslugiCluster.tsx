@@ -47,7 +47,7 @@ const services = [
     icon: BarChart3,
     title: "Google Ads & Meta Ads",
     description: "Kampanie reklamowe w Google i na Facebooku z pełną optymalizacją ROI i raportowaniem wyników.",
-    href: "/uslugi/google-ads",
+    href: "/performance-marketing/google-ads",
     color: "from-yellow-500 to-orange-500",
   },
   {
