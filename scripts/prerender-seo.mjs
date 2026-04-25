@@ -43,7 +43,6 @@ const template = fs.readFileSync(INDEX_HTML, 'utf-8');
  */
 const EXCLUDE_ROUTES = new Set([
   '/mapa-strony',
-  '/agencja-marketingowa',
 ]);
 
 /**
