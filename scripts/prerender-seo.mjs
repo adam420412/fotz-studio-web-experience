@@ -367,17 +367,19 @@ console.log(`   + dist/404.html generated (served with HTTP 404 by middleware)`)
 // prerendered directory. Edge middleware uses this to decide 200 vs 404 for
 // unknown paths (catch-all rewrite previously caused soft-404 = 200 + SPA).
 // ===========================================================================
-const knownStaticRoutes = routes
-  .map((r) => r.path)
-  .filter((p) => !p.includes(':') && !p.includes('*'));
+// Re-parse App.tsx directly — extractRoutes() above filters out admin/akademia
+// and dynamic patterns (it's optimized for prerendering, not route discovery).
+// For middleware we need the COMPLETE set of legitimate route shapes.
+const appSource = fs.readFileSync(path.join(SRC, 'App.tsx'), 'utf-8');
+const allRouteMatches = [...appSource.matchAll(/<Route\s+path="([^"]+)"/g)].map((m) => m[1]);
+const uniqueRoutes = [...new Set(allRouteMatches)];
 
-// Dynamic patterns (currently only /blog/:slug) — middleware regex-matches these.
-const dynamicPatterns = routes
-  .map((r) => r.path)
-  .filter((p) => p.includes(':') || p.includes('*'))
-  // Exclude the React Router catch-all "*" (NotFound) — it would match every
-  // path and defeat the purpose of soft-404 detection in middleware.
-  .filter((p) => p !== '*')
+const knownStaticRoutes = uniqueRoutes.filter((p) => !p.includes(':') && !p.includes('*'));
+
+// Dynamic patterns (e.g. /blog/:slug, /akademia/*). Exclude the React Router
+// catch-all "*" alone — it would match every path and defeat soft-404.
+const dynamicPatterns = uniqueRoutes
+  .filter((p) => (p.includes(':') || p.includes('*')) && p !== '*')
   .map((p) => p.replace(/:([a-zA-Z_]+)/g, '[^/]+').replace(/\*/g, '.*'));
 
 const manifest = {
