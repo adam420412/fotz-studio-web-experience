@@ -150,6 +150,7 @@ const SEOPozycjonowanieLodz = lazy(() => import("./pages/SEOPozycjonowanieLodz")
 const AgencjaMarketingowaPoznan = lazy(() => import("./pages/AgencjaMarketingowaPoznan"));
 const AgencjaMarketinguInternetowego = lazy(() => import("./pages/AgencjaMarketinguInternetowego"));
 const AgencjaReklamowaPoznan = lazy(() => import("./pages/AgencjaReklamowaPoznan"));
+const AgencjaMarketingowa = lazy(() => import("./pages/AgencjaMarketingowa"));
 const AgencjaMarketingowaHub = lazy(() => import("./pages/AgencjaMarketingowaHub"));
 
 // City pages - all lazy loaded
@@ -2673,7 +2674,7 @@ const App = () => (
 
                 {/* Legacy local SEO pages (unchanged paths) */}
                 <Route path="/agencja-marketingowa-poznan" element={<Redirect301 to="/agencja-marketingowa/poznan" />} />
-                <Route path="/agencja-marketingowa" element={<AgencjaMarketingowaHub />} />
+                <Route path="/agencja-marketingowa" element={<AgencjaMarketingowa />} />
                 <Route path="/agencja-marketingu-internetowego" element={<AgencjaMarketinguInternetowego />} />
                 <Route path="/agencja-reklamowa-poznan" element={<AgencjaReklamowaPoznan />} />
                 <Route path="/agencja-seo-poznan" element={<AgencjaSEOPoznan />} />
