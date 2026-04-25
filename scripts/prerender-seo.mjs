@@ -375,6 +375,9 @@ const knownStaticRoutes = routes
 const dynamicPatterns = routes
   .map((r) => r.path)
   .filter((p) => p.includes(':') || p.includes('*'))
+  // Exclude the React Router catch-all "*" (NotFound) — it would match every
+  // path and defeat the purpose of soft-404 detection in middleware.
+  .filter((p) => p !== '*')
   .map((p) => p.replace(/:([a-zA-Z_]+)/g, '[^/]+').replace(/\*/g, '.*'));
 
 const manifest = {
