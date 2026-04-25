@@ -151,7 +151,6 @@ const AgencjaMarketingowaPoznan = lazy(() => import("./pages/AgencjaMarketingowa
 const AgencjaMarketinguInternetowego = lazy(() => import("./pages/AgencjaMarketinguInternetowego"));
 const AgencjaReklamowaPoznan = lazy(() => import("./pages/AgencjaReklamowaPoznan"));
 const AgencjaMarketingowa = lazy(() => import("./pages/AgencjaMarketingowa"));
-const AgencjaMarketingowaHub = lazy(() => import("./pages/AgencjaMarketingowaHub"));
 
 // City pages - all lazy loaded
 const StronyInternetowePoznan = lazy(() => import("./pages/StronyInternetowePoznan"));
