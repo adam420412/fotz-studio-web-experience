@@ -1495,8 +1495,12 @@ const Redirect301 = lazy(() => import("./components/seo/Redirect301").then(m => 
 const queryClient = new QueryClient();
 
 const PageLoader = () => (
-  <div className="min-h-screen bg-background flex items-center justify-center">
-    <div className="w-8 h-8 border-2 border-foreground/10 border-t-primary rounded-full animate-spin" />
+  <div className="min-h-screen bg-background flex flex-col items-center justify-center gap-6">
+    <div className="text-2xl font-heading font-bold tracking-tight bg-gradient-to-r from-[#75143F] to-[#0F3053] bg-clip-text text-transparent">
+      FOTZ STUDIO
+    </div>
+    <div className="w-10 h-10 border-2 border-foreground/10 border-t-primary rounded-full animate-spin" />
+    <div className="text-xs text-muted-foreground tracking-widest uppercase">Ładowanie</div>
   </div>
 );
 
