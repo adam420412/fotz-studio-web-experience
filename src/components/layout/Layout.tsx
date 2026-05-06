@@ -6,7 +6,6 @@ import { Footer } from "./Footer";
 const FloatingCTA = lazy(() => import("../FloatingCTA").then(m => ({ default: m.FloatingCTA })));
 const WhatsAppWidget = lazy(() => import("../WhatsAppWidget").then(m => ({ default: m.WhatsAppWidget })));
 const ChatbotFAQ = lazy(() => import("../ChatbotFAQ").then(m => ({ default: m.ChatbotFAQ })));
-const ExitIntentPopup = lazy(() => import("../ExitIntentPopup").then(m => ({ default: m.ExitIntentPopup })));
 
 interface LayoutProps {
   children: ReactNode;
@@ -32,7 +31,6 @@ export function Layout({ children }: LayoutProps) {
           <FloatingCTA />
           <WhatsAppWidget />
           <ChatbotFAQ />
-          <ExitIntentPopup />
         </Suspense>
       )}
     </div>
