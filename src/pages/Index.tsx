@@ -32,7 +32,7 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Agencja Marketingowa Poznań — SEO, Strony WWW i Reklamy Online"
+        title="Agencja Marketingowa Poznań — SEO, WWW i Reklamy"
         description="Fotz Studio — agencja marketingowa z Poznania. Strony internetowe, SEO, Google Ads, social media, produkcja wideo. Kompleksowa obsługa marki premium."
         keywords="agencja marketingowa, marketing Poznań, strony internetowe Poznań, social media, kampanie reklamowe, lead generation, marketing premium"
         canonical="https://fotz.pl"
