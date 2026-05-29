@@ -23,3 +23,6 @@ verify_jwt = false
 
 [functions.babylove-webhook-test]
 verify_jwt = true
+
+[functions.send-contact]
+verify_jwt = false
