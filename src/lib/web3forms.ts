@@ -1,39 +1,13 @@
 /**
  * Wspólny helper do wysyłki formularzy na stronie.
+ * Wszystkie formularze idą przez Supabase Edge Function `send-contact`
+ * (Lovable Cloud), która używa Resend. RESEND_API_KEY przechowywany jest
+ * jako sekret w Lovable Cloud.
  *
- * UWAGA: plik historycznie nazywał się "web3forms" — obecnie wszystkie
- * formularze przechodzą przez własny endpoint `/api/send-contact`
- * (Vercel Edge Function) korzystający z Resend. Nazwę pliku i funkcji
- * zostawiamy dla zgodności wstecznej, żeby nie musieć aktualizować
- * każdego miejsca, które ten helper wywołuje.
- *
- * Konfiguracja (Vercel → Project → Settings → Environment Variables):
- *   - RESEND_API_KEY   (wymagane)
- *   - CONTACT_INBOX    (opcjonalne; domyślnie a.mazziarz@gmail.com)
- *   - CONTACT_FROM     (opcjonalne; domyślnie onboarding@resend.dev)
- *
- * Lokalny development (vite):
- *   - użyj `vercel dev` aby endpoint `/api/send-contact` działał
- *     lub ustaw `VITE_CONTACT_ENDPOINT` np. na deploy preview.
+ * Nazwy `submitWeb3Form` / `Web3FormsPayload` zachowane dla wstecznej
+ * kompatybilności — pod spodem to wywołanie `supabase.functions.invoke`.
  */
-
-/**
- * Domena `fotz.pl` stoi za własnym reverse-proxy (Caddy na Hetznerze),
- * które serwuje SPA z Vercela, ale NIE przekazuje dalej ścieżek `/api/*`
- * do Vercela — dlatego `fotz.pl/api/send-contact` zwraca 404.
- *
- * Rozwiązanie: formularze wysyłamy BEZPOŚREDNIO na domenę Vercel
- * (`fotz-studio-web-experience.vercel.app/api/send-contact`) — CORS w
- * funkcji pozwala na dowolne Origin (`Access-Control-Allow-Origin: *`),
- * więc to działa z każdej strony.
- *
- * Jeżeli w przyszłości Caddy zostanie skonfigurowany do przekazywania
- * `/api/*` do Vercela, wystarczy zmienić domyślną wartość poniżej z
- * absolutnego URL na `/api/send-contact`.
- */
-export const CONTACT_ENDPOINT: string =
-  (import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined) ||
-  "https://fotz-studio-web-experience.vercel.app/api/send-contact";
+import { supabase } from "@/integrations/supabase/client";
 
 export interface Web3FormsPayload {
   subject?: string;
@@ -58,34 +32,19 @@ export interface Web3FormsResponse {
 export async function submitWeb3Form(
   payload: Web3FormsPayload
 ): Promise<Web3FormsResponse> {
-  const response = await fetch(CONTACT_ENDPOINT, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  });
+  const { data, error } = await supabase.functions.invoke<Web3FormsResponse>(
+    "send-contact",
+    { body: payload }
+  );
 
-  let data: Web3FormsResponse;
-  try {
-    data = (await response.json()) as Web3FormsResponse;
-  } catch {
-    console.error("[contact] invalid JSON response", {
-      status: response.status,
-      endpoint: CONTACT_ENDPOINT,
-    });
-    throw new Error(
-      `Nieprawidłowa odpowiedź serwera (status ${response.status})`
-    );
+  if (error) {
+    console.error("[contact] invoke error", error);
+    throw new Error(error.message || "Błąd podczas wysyłania wiadomości");
   }
-
-  if (!response.ok || !data?.success) {
-    console.error("[contact] submit failed", {
-      status: response.status,
-      endpoint: CONTACT_ENDPOINT,
-      response: data,
-    });
+  if (!data?.success) {
+    console.error("[contact] submit failed", data);
     throw new Error(data?.message || "Błąd podczas wysyłania wiadomości");
   }
-
   return data;
 }
 
