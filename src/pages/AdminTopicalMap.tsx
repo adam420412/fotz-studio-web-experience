@@ -218,7 +218,7 @@ export default function AdminTopicalMap() {
         title="Topical Map — Admin"
         description="Panel generowania artykułów z briefów topical map."
         canonical="/admin/topical-map"
-        noindex
+        noIndex
       />
 
       <div className="min-h-screen bg-background pt-40 pb-20">
