@@ -2756,7 +2756,10 @@ const App = () => (
                 <Route path="/generator-briefu" element={<GeneratorBriefu />} />
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
 
-                {/* Akademia — redirected to /zasoby */}
+                {/* Akademia — public pages redirected to /zasoby,
+                    ale auth/admin muszą działać (panel administratora). */}
+                <Route path="/akademia/auth" element={<AkademiaAuth />} />
+                <Route path="/akademia/admin" element={<AkademiaAdmin />} />
                 <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
                 <Route path="/akademia/*" element={<Redirect301 to="/zasoby" />} />
 
