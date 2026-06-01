@@ -22,6 +22,10 @@ const Blog = lazy(() => import("./pages/Blog"));
 const Poradniki = lazy(() => import("./pages/Poradniki"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+// Topical map: agencja social media pillar + cluster hubs
+const AgencjaSocialMedia = lazy(() => import("./pages/AgencjaSocialMedia"));
+const SocialMediaClusterHub = lazy(() => import("./pages/SocialMediaClusterHub"));
+
 // Case Studies - grouped
 const CaseStudyEnea = lazy(() => import("./pages/CaseStudyEnea"));
 const CaseStudyRPPG = lazy(() => import("./pages/CaseStudyRPPG"));
@@ -1619,6 +1623,10 @@ const App = () => (
                 <Route path="/social-media" element={<SocialMediaCluster />} />
                 <Route path="/performance-marketing" element={<PerformanceMarketingCluster />} />
                 <Route path="/content-marketing" element={<ContentMarketingCluster />} />
+
+                {/* Topical Map: Agencja social media pillar + 20 cluster hubs */}
+                <Route path="/agencja-social-media" element={<AgencjaSocialMedia />} />
+                <Route path="/agencja-social-media/:clusterSlug" element={<SocialMediaClusterHub />} />
 
                 <Route path="/poradniki" element={<Poradniki />} />
                 {/* Uslugi cluster */}
