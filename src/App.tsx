@@ -1624,6 +1624,10 @@ const App = () => (
                 <Route path="/performance-marketing" element={<PerformanceMarketingCluster />} />
                 <Route path="/content-marketing" element={<ContentMarketingCluster />} />
 
+                {/* Topical Map: Agencja social media pillar + 20 cluster hubs */}
+                <Route path="/agencja-social-media" element={<AgencjaSocialMedia />} />
+                <Route path="/agencja-social-media/:clusterSlug" element={<SocialMediaClusterHub />} />
+
                 <Route path="/poradniki" element={<Poradniki />} />
                 {/* Uslugi cluster */}
                 <Route path="/uslugi/strony-internetowe" element={<StronyInternetowe />} />
