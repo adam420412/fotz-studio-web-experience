@@ -118,6 +118,16 @@ const footerLinks = {
     { name: "Agencja Łódź", href: "/agencja-marketingowa/lodz" },
     { name: "Wszystkie miasta", href: "/agencja-marketingowa" },
   ],
+  agencjaSocialMediaMiasta: [
+    { name: "Agencja SM Poznań", href: "/agencja-social-media/poznan" },
+    { name: "Agencja SM Warszawa", href: "/agencja-social-media/warszawa" },
+    { name: "Agencja SM Kraków", href: "/agencja-social-media/krakow" },
+    { name: "Agencja SM Wrocław", href: "/agencja-social-media/wroclaw" },
+    { name: "Agencja SM Katowice", href: "/agencja-social-media/katowice" },
+    { name: "Agencja SM Lublin", href: "/agencja-social-media/lublin" },
+    { name: "Agencja SM Szczecin", href: "/agencja-social-media/szczecin" },
+    { name: "Pillar Agencja SM", href: "/agencja-social-media" },
+  ],
   miasta: [
     { name: "Poznań", href: "/uslugi/strony-internetowe/poznan" },
     { name: "Warszawa", href: "/uslugi/strony-internetowe/warszawa" },
