@@ -58,6 +58,7 @@ export type Database = {
       }
       blog_articles: {
         Row: {
+          cluster_slug: string | null
           content_html: string | null
           content_markdown: string | null
           created_at: string
@@ -73,39 +74,18 @@ export type Database = {
           language_code: string | null
           last_synced_at: string | null
           meta_description: string | null
+          parent_pillar_slug: string | null
           public_url: string | null
           published_at: string | null
           seed_keyword: string | null
           slug: string
           sync_source: string | null
+          target_keyword: string | null
           title: string
           updated_at: string
         }
         Insert: {
-          content_html?: string | null
-          content_markdown?: string | null
-          created_at?: string
-          excerpt?: string | null
-          external_created_at?: string | null
-          external_id: number
-          faq_json_ld?: Json | null
-          hero_image_url?: string | null
-          id?: string
-          is_published?: boolean
-          json_ld?: Json | null
-          keywords?: Json | null
-          language_code?: string | null
-          last_synced_at?: string | null
-          meta_description?: string | null
-          public_url?: string | null
-          published_at?: string | null
-          seed_keyword?: string | null
-          slug: string
-          sync_source?: string | null
-          title: string
-          updated_at?: string
-        }
-        Update: {
+          cluster_slug?: string | null
           content_html?: string | null
           content_markdown?: string | null
           created_at?: string
@@ -121,11 +101,40 @@ export type Database = {
           language_code?: string | null
           last_synced_at?: string | null
           meta_description?: string | null
+          parent_pillar_slug?: string | null
+          public_url?: string | null
+          published_at?: string | null
+          seed_keyword?: string | null
+          slug: string
+          sync_source?: string | null
+          target_keyword?: string | null
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          cluster_slug?: string | null
+          content_html?: string | null
+          content_markdown?: string | null
+          created_at?: string
+          excerpt?: string | null
+          external_created_at?: string | null
+          external_id?: number
+          faq_json_ld?: Json | null
+          hero_image_url?: string | null
+          id?: string
+          is_published?: boolean
+          json_ld?: Json | null
+          keywords?: Json | null
+          language_code?: string | null
+          last_synced_at?: string | null
+          meta_description?: string | null
+          parent_pillar_slug?: string | null
           public_url?: string | null
           published_at?: string | null
           seed_keyword?: string | null
           slug?: string
           sync_source?: string | null
+          target_keyword?: string | null
           title?: string
           updated_at?: string
         }
@@ -244,6 +253,68 @@ export type Database = {
           user_id?: string
         }
         Relationships: []
+      }
+      topical_brief_jobs: {
+        Row: {
+          attempts: number
+          brief_filename: string
+          brief_markdown: string
+          cluster_slug: string
+          created_at: string
+          generated_article_id: string | null
+          id: string
+          last_error: string | null
+          pillar_slug: string
+          search_intent: string | null
+          status: string
+          target_keyword: string
+          target_slug: string
+          updated_at: string
+          word_count_target: number | null
+        }
+        Insert: {
+          attempts?: number
+          brief_filename: string
+          brief_markdown: string
+          cluster_slug: string
+          created_at?: string
+          generated_article_id?: string | null
+          id?: string
+          last_error?: string | null
+          pillar_slug: string
+          search_intent?: string | null
+          status?: string
+          target_keyword: string
+          target_slug: string
+          updated_at?: string
+          word_count_target?: number | null
+        }
+        Update: {
+          attempts?: number
+          brief_filename?: string
+          brief_markdown?: string
+          cluster_slug?: string
+          created_at?: string
+          generated_article_id?: string | null
+          id?: string
+          last_error?: string | null
+          pillar_slug?: string
+          search_intent?: string | null
+          status?: string
+          target_keyword?: string
+          target_slug?: string
+          updated_at?: string
+          word_count_target?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "topical_brief_jobs_generated_article_id_fkey"
+            columns: ["generated_article_id"]
+            isOneToOne: false
+            referencedRelation: "blog_articles"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       user_roles: {
         Row: {
