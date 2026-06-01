@@ -25,6 +25,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 // Topical map: agencja social media pillar + cluster hubs
 const AgencjaSocialMedia = lazy(() => import("./pages/AgencjaSocialMedia"));
 const SocialMediaClusterHub = lazy(() => import("./pages/SocialMediaClusterHub"));
+const AgencjaSocialMediaCennik = lazy(() => import("./pages/AgencjaSocialMediaCennik"));
 
 // Case Studies - grouped
 const CaseStudyEnea = lazy(() => import("./pages/CaseStudyEnea"));
@@ -1627,6 +1628,7 @@ const App = () => (
 
                 {/* Topical Map: Agencja social media pillar + 20 cluster hubs */}
                 <Route path="/agencja-social-media" element={<AgencjaSocialMedia />} />
+                <Route path="/agencja-social-media/cennik" element={<AgencjaSocialMediaCennik />} />
                 <Route path="/agencja-social-media/:clusterSlug" element={<SocialMediaClusterHub />} />
 
                 <Route path="/poradniki" element={<Poradniki />} />
@@ -2756,7 +2758,10 @@ const App = () => (
                 <Route path="/generator-briefu" element={<GeneratorBriefu />} />
                 <Route path="/kalkulator-cen" element={<KalkulatorCen />} />
 
-                {/* Akademia — redirected to /zasoby */}
+                {/* Akademia — public pages redirected to /zasoby,
+                    ale auth/admin muszą działać (panel administratora). */}
+                <Route path="/akademia/auth" element={<AkademiaAuth />} />
+                <Route path="/akademia/admin" element={<AkademiaAdmin />} />
                 <Route path="/akademia" element={<Redirect301 to="/zasoby" />} />
                 <Route path="/akademia/*" element={<Redirect301 to="/zasoby" />} />
 

@@ -118,6 +118,16 @@ const footerLinks = {
     { name: "Agencja Łódź", href: "/agencja-marketingowa/lodz" },
     { name: "Wszystkie miasta", href: "/agencja-marketingowa" },
   ],
+  agencjaSocialMediaMiasta: [
+    { name: "Agencja SM Poznań", href: "/agencja-social-media/poznan" },
+    { name: "Agencja SM Warszawa", href: "/agencja-social-media/warszawa" },
+    { name: "Agencja SM Kraków", href: "/agencja-social-media/krakow" },
+    { name: "Agencja SM Wrocław", href: "/agencja-social-media/wroclaw" },
+    { name: "Agencja SM Katowice", href: "/agencja-social-media/katowice" },
+    { name: "Agencja SM Lublin", href: "/agencja-social-media/lublin" },
+    { name: "Agencja SM Szczecin", href: "/agencja-social-media/szczecin" },
+    { name: "Pillar Agencja SM", href: "/agencja-social-media" },
+  ],
   miasta: [
     { name: "Poznań", href: "/uslugi/strony-internetowe/poznan" },
     { name: "Warszawa", href: "/uslugi/strony-internetowe/warszawa" },
@@ -464,6 +474,22 @@ export function Footer() {
           <h4 className={columnHeader}>Agencja marketingowa - miasta</h4>
           <div className="flex flex-wrap gap-2">
             {footerLinks.agencjaMiasta.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Agencja Social Media - miasta */}
+        <div className="pt-8 mt-8 border-t border-white/10">
+          <h4 className={columnHeader}>Agencja Social Media w miastach</h4>
+          <div className="flex flex-wrap gap-2">
+            {footerLinks.agencjaSocialMediaMiasta.map((link) => (
               <Link
                 key={link.name}
                 to={link.href}
