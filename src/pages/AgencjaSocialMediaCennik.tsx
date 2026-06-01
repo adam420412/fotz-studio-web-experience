@@ -129,8 +129,7 @@ export default function AgencjaSocialMediaCennik() {
       />
       <ServiceSchema
         name="Obsługa agencji social media — pakiety"
-        description="Trzy pakiety abonamentowe obsługi social media: Start, Business, Premium."
-        url={CANONICAL}
+        description="Trzy pakiety abonamentowe obsługi social media: Start (2900 zł), Business (5900 zł), Premium (12900 zł) netto miesięcznie."
       />
       <script
         type="application/ld+json"
