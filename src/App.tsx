@@ -25,6 +25,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 // Topical map: agencja social media pillar + cluster hubs
 const AgencjaSocialMedia = lazy(() => import("./pages/AgencjaSocialMedia"));
 const SocialMediaClusterHub = lazy(() => import("./pages/SocialMediaClusterHub"));
+const AgencjaSocialMediaCennik = lazy(() => import("./pages/AgencjaSocialMediaCennik"));
 
 // Case Studies - grouped
 const CaseStudyEnea = lazy(() => import("./pages/CaseStudyEnea"));
@@ -1627,6 +1628,7 @@ const App = () => (
 
                 {/* Topical Map: Agencja social media pillar + 20 cluster hubs */}
                 <Route path="/agencja-social-media" element={<AgencjaSocialMedia />} />
+                <Route path="/agencja-social-media/cennik" element={<AgencjaSocialMediaCennik />} />
                 <Route path="/agencja-social-media/:clusterSlug" element={<SocialMediaClusterHub />} />
 
                 <Route path="/poradniki" element={<Poradniki />} />
