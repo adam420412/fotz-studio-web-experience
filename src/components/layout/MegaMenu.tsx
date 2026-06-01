@@ -82,6 +82,7 @@ const menuCategories: MenuCategory[] = [
     color: "#75143F",
     items: [
       { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers, tooltip: "Pełna obsługa marketingowa od A do Z" },
+      { name: "Agencja Social Media", href: "/agencja-social-media", badge: "Pillar", icon: Share2, tooltip: "Kompletna agencja SM — pricing, cases, FAQ, 20 klastrów" },
       { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Strategia digital i promocja online" },
       { name: "Content Marketing", href: "/content-marketing/strategia", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
       { name: "Social Media", href: "/social-media/obsluga", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
