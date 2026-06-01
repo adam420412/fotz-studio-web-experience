@@ -1,111 +1,68 @@
-## Cel
+## Co zostało w SEO
 
-Wykorzystać paczkę Topical Map AI (1 pillar + 20 klastrów / 1120 briefów dla frazy „agencja social media") do skokowego rozwoju SEO Fotz.pl oraz przy okazji domknąć kilka długów technicznych z `.lovable/plan.md` i memory. Cały content i nowe sekcje wpinamy w istniejącą architekturę (Supabase `blog_articles`, klastry usług, miasta, RelatedServices), bez przepisywania designu.
+Z aktywnego skanera (panel SEO):
+
+1. **`gsc` — Google Search Console nie domknięte**
+   - Weryfikacja DNS dla `fotz-studio.pl` ✅ (TXT propaguje na 8.8.8.8 i 1.1.1.1)
+   - Brakuje: kliknąć „Zweryfikuj" w SC + dodać property dla `fotz.pl` (canonical domena) + zgłosić sitemapy
+   - Connector GSC w Lovable nie jest spięty — po spięciu mogę automatycznie zgłosić sitemap i podpiąć dane do panelu admina
+
+2. **`lighthouse_performance` — LCP wolne na opublikowanej wersji**
+   - Hero homepage długo się renderuje
+   - W repo mamy już WebP poster + memory `hero-and-scrolling-optimization`, więc trzeba zweryfikować czy bieżący `HeroV3` realnie ma `fetchpriority="high"`, brak `loading="lazy"` i `preload` w `index.html`
+
+Plus długi SEO z `.lovable/plan.md` (nie pokazują się w skanerze, ale są w planie):
+
+3. **Canonical mismatch** na 8 stronach (lista do zidentyfikowania w trakcie audytu)
+4. **Brakujące redirecty 301**: `/login → /akademia/auth` (mamy `/landing-page` już zrobione)
+5. **Unikalne title/meta na 12 stronach `/dla-kogo/*`** — weryfikacja czy nie ma duplikatów
+6. **`lastmod` w `sitemap-industries.xml`** — stara data
+7. **Rozszerzenie `sitemap-main.xml`** o nowy klaster SM (już zrobione dla pillara/20 hubów, ale po publikacji artykułów trzeba domknąć w `sitemap-index.xml`)
 
 ---
 
-## Etap 1 — Pillar `/agencja-social-media` (priorytet 1)
+## Plan działań (3 etapy)
 
-Nowa, statyczna strona hub (komponent React, nie blog), Awwwards-grade, w obecnym dark/premium stylu:
+### Etap 1 — Domknięcie Google Search Console (priorytet 1, blokuje wszystko inne)
 
-- Route: `/agencja-social-media` (canonical non-www, bez trailing slash).
-- Sekcje: hero z showreelem, „Czym jest agencja SM", „Co robimy", 20 kafelków = 20 klastrów (każdy → osobny URL), case studies SM (Cegielski, klienci z portfolio), cennik 3 tiery (Start/Business/Premium z memory), FAQ (z briefu pillar), CTA → Web3Forms.
-- `SEOHead` + `OrganizationSchema` + `Service` JSON-LD + `FAQPage` JSON-LD.
-- Dodać do `sitemap-main.xml`, MegaMenu (sekcja Social Media), wewnętrzne linki z `/social-media/obsluga`, `/kompleksowa-obsluga-marketingowa`, `/dla-kogo/*`.
+1. **Spiąć connector** `google_search_console` przez `standard_connectors--connect` — daje nam programowy dostęp do API SC z agenta.
+2. **Dodać property `fotz.pl`** (canonical, non-www) — DNS już zweryfikowany dla `fotz-studio.pl`, ale `fotz.pl` to osobna domena property. Tutaj będzie trzeba dorzucić drugi TXT u rejestratora `fotz.pl` — wygeneruję token i podam Ci wartość.
+3. **Zgłosić 4 sitemapy** programowo przez API:
+   - `https://fotz.pl/sitemap-index.xml`
+   - `https://fotz.pl/sitemap-main.xml`
+   - `https://fotz.pl/sitemap-industries.xml`
+   - `https://fotz.pl/sitemap-casestudies.xml`
+4. **Zaznaczyć finding `gsc:gsc` jako fixed**.
 
-## Etap 2 — Architektura 20 klastrów
+### Etap 2 — Performance (LCP fix)
 
-Każdy klaster = własny URL hub + N artykułów blogowych pod nim.
+1. Przeczytać `src/components/sections/HeroV3.tsx` (lub aktualny hero na home) i `index.html`.
+2. Upewnić się, że hero image ma `fetchpriority="high"`, brak `loading="lazy"`, jawne `width`/`height`.
+3. Dodać `<link rel="preload" as="image" href="/<hero>.webp" fetchpriority="high">` do `index.html` jeśli go nie ma.
+4. Sprawdzić `@font-face` — wszystkie z `font-display: swap`.
+5. Po edycji: poprosić Cię o republish (Vercel) — bez tego finding nie zniknie, bo skaner sprawdza prod.
+6. Zaznaczyć finding `lighthouse:lighthouse_performance` jako fixed.
 
-```text
-/agencja-social-media                       (pillar)
-├── /agencja-social-media/co-to-jest        (cluster 01 hub)
-├── /agencja-social-media/co-robi           (cluster 02 hub)
-├── /agencja-social-media/vs-samodzielny    (cluster 03)
-├── /agencja-social-media/rodzaje-uslug     (cluster 04)
-├── /agencja-social-media/platformy-2026    (cluster 05)
-├── /agencja-social-media/zasada-5-5-5      (cluster 06)
-├── /agencja-social-media/poznan            (cluster 10 — priorytet, lokalny)
-├── /agencja-social-media/warszawa          (cluster 07)
-├── /agencja-social-media/krakow            (08)
-├── /agencja-social-media/wroclaw           (09)
-├── /agencja-social-media/katowice (11) /lublin (12) /szczecin (13)
-├── /agencja-social-media/najlepsza-w-polsce (14)
-├── /agencja-social-media/cennik            (15) — kalkulator z memory
-├── /agencja-social-media/modele-rozliczen  (16)
-├── /agencja-social-media/pakiety           (17)
-├── /agencja-social-media/czy-warto         (18)
-├── /agencja-social-media/jak-negocjowac    (19)
-└── /agencja-social-media/roi               (20)
-```
+### Etap 3 — SEO debts sprzątnięcie
 
-Klaster-hub używa istniejącego `cluster-hub-design-template` z memory: hero, opis, lista artykułów dynamicznie z `blog_articles` (filtr po tagu/slug-prefiksie), RelatedServices, CTA. Miasta dziedziczą szablon `cluster-10-pozna`/Warszawa z lokalnymi danymi (mapa, telefon, oferta).
-
-## Etap 3 — Pipeline generowania 1120 artykułów
-
-Nie piszemy ręcznie. Wykorzystujemy istniejące `babylove-webhook` + `blog_articles` (z memory):
-
-1. Skrypt nodowy `scripts/import-topical-briefs.mjs` parsuje `/tmp/topical/content-briefs/**/*.md` → emituje JSON job-listę (cluster, slug docelowy, target keyword, intent, word count).
-2. Dla każdego briefu wywołanie Lovable AI Gateway (`google/gemini-2.5-pro` dla pillar i miast, `gemini-2.5-flash` dla long-tail) z promptem zbudowanym z briefu + brand voice Fotz (premium, lead-gen, polskie daty, RelatedServices).
-3. Wyniki idą do `blog_articles` przez edge function (insert: title, slug, content_html, meta_description, json_ld, faq_json_ld, hero_image_url, sync_source='topical-map', is_published=false).
-4. Panel admina (już istnieje) — przegląd i bulk publish; po publikacji artykuł automatycznie wpada do `sitemap-index.xml`.
-5. Rate limit / batche po 20, retry, log do tabeli `blog_articles.sync_source`.
-
-Priorytet publikacji (kolejność batchy):
-- Batch A: cluster 10 (Poznań, 56 briefów) — quick win lokalny.
-- Batch B: cluster 15 + 16 + 17 (cennik/pakiety/modele) — wysoka intencja zakupowa.
-- Batch C: clustery 07-13 (pozostałe miasta).
-- Batch D: 01-06 + 14 + 18-20 (informacyjne, autorytet tematyczny).
-
-## Etap 4 — Naprawa długów z `.lovable/plan.md` (przy okazji)
-
-- Usunąć stary `public/sitemap.xml`, w `robots.txt` zostawić tylko `sitemap-index.xml`.
-- Naprawić canonical mismatch (8 stron wymienionych w planie).
-- Zredirectować `/login` → `/akademia/auth`, `/landing-page` → `/uslugi/strony-internetowe`.
-- Zweryfikować unikalne title/meta na 12 stronach `/dla-kogo/*`.
-- Zaktualizować `lastmod` w `sitemap-industries.xml`.
-- Po doklejeniu nowych klastrów: rozszerzyć `sitemap-main.xml` + skrypt `validate-sitemap-indexable.mjs`.
-
-## Etap 5 — UX / konwersja
-
-- Rozbudować MegaMenu: nowa kolumna „Agencja Social Media" z 20 klastrami (z limitem widoczności + „zobacz wszystko").
-- Footer: dodać sekcję „Agencja SM w miastach" (7 linków).
-- W `RelatedServices` na każdej stronie social/blog dodać link do nowego pillara.
-- Floating CTA i ExitIntent zostają bez zmian (zgodnie z poprzednim usunięciem popupa wyjścia).
-- Pillar i 15 (cennik) → kalkulator wyceny SM (rozszerzenie istniejącego `interactive-price-calculator`).
-
-## Etap 6 — Mierzenie
-
-- Dashboard admina: nowa karta „Topical Map Progress" — % opublikowanych z 1120, traffic per cluster (z `analytics--read_project_analytics`), top 10 pozycji (Semrush connector).
-- Co tydzień skrypt `seo-internal-linking-map.mjs` raportuje sieroty.
-- 90-dniowy KPI: +50 zaindeksowanych URLi/mies., top-10 dla „agencja social media poznań" w 6 mies.
+1. Audit canonical: uruchomić `scripts/seo-canonical-check.mjs` (mamy już taki) → wylistować 8 mismatchy → poprawić.
+2. Dodać redirect 301 `/login → /akademia/auth` w `vercel.json` + `Redirect301` component.
+3. Audit title/meta na `/dla-kogo/*` — przejść po 12 stronach, sprawdzić uniqueness, pozmieniać duplikaty.
+4. Update `<lastmod>` w `sitemap-industries.xml` na dzisiejszą datę.
+5. Republish.
 
 ---
 
 ## Szczegóły techniczne
 
-- Brak nowych zależności runtime; tylko skrypty build-time (`scripts/import-topical-briefs.mjs`, generator promptów).
-- Migracja Supabase: dodać kolumny `blog_articles.cluster_slug TEXT`, `parent_pillar_slug TEXT`, `target_keyword TEXT`, indeksy. RLS bez zmian (public SELECT published).
-- Edge function `generate-from-brief` (verify_jwt=false dla wewnętrznego runnera + secret guard `IMPORT_TOKEN`).
-- Nowy katalog `src/pages/social-media-cluster/` z generycznym `ClusterHub.tsx` + 20 cienkimi stronami eksportującymi dane.
-- Prerendering: dopisać 20+1 URLi pillara/klastrów do skryptu `prerendering-static-metadata-implementation`.
-- Wszystkie nowe `<title>` ≤60 znaków, `<meta description>` ≤160, polskie daty (memory `polish-date-localization-standards`).
+**GSC API (Etap 1)**: użyję connector gateway `https://connector-gateway.lovable.dev/google_search_console/webmasters/v3/sites` — endpointy `PUT /sites/{url}` (dodanie property), `PUT /sites/{url}/sitemaps/{feedpath}` (zgłoszenie sitemapy). Bez connectora trzeba ręcznie w UI Search Console.
 
-## Kolejność wykonania (sprint)
+**LCP**: dane z `lighthouse_performance` mówią tylko „hero loads slowly" — bez confirmed source musimy zrobić quick audit aktualnego komponentu hero. Most likely fix to preload + fetchpriority — to typowe wins na 1-2s LCP.
 
-1. Pillar `/agencja-social-media` + nawigacja + sitemap + JSON-LD.
-2. Migracja `blog_articles` + edge function `generate-from-brief` + skrypt importu briefów.
-3. Klaster 10 (Poznań) — hub + batch 56 artykułów (test pipeline).
-4. Klastry 15/16/17 (cennik/pakiety/modele) + kalkulator.
-5. Pozostałe miasta (07-09, 11-13) + cluster 14.
-6. Klastry informacyjne 01-06, 18-20.
-7. Sprzątanie długów SEO z `.lovable/plan.md`.
-8. Dashboard postępu + raporty.
+**Republish**: po Etapie 2 i 3 musisz kliknąć „Publish" w Lovable lub poczekać na auto-deploy Vercela. Findingi `lighthouse` i `gsc` sprawdzają production URL, nie preview.
 
 ---
 
-## Pytania przed startem
+## Pytanie przed startem
 
-1. Czy publikujemy artykuły z auto-publish, czy każdy batch ma przejść QA w panelu admina (rekomenduję QA dla pierwszych 3 batchy, potem auto)?
-2. Czy chcesz strony miast pod `/agencja-social-media/<miasto>` (nowy klaster), czy konsolidujemy z istniejącymi stronami `/social-media/<miasto>` i `/kampanie-reklamowe-poznan`?
-3. Kalkulator wyceny SM na pillarze i `/cennik` — bazujemy na obecnych tierach Start/Business/Premium z memory, czy chcesz nowe widełki specyficzne dla SM?
+Idziemy całością (Etap 1+2+3 w jednym lotem), czy najpierw tylko domknięcie GSC (Etap 1), żeby mieć dane z indeksacji zanim ruszymy z performance i sprzątaniem? Rekomenduję **całość** — Etap 1 wymaga Twojej akcji w DNS (drugi TXT dla `fotz.pl`), ja w międzyczasie lecę z Etapem 2+3.
