@@ -1464,6 +1464,7 @@ const Zainstaluj = lazy(() => import("./pages/Zainstaluj"));
 // Admin pages
 const AdminRezerwacje = lazy(() => import("./pages/AdminRezerwacje"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
+const AdminTopicalMap = lazy(() => import("./pages/AdminTopicalMap"));
 
 // Tools pages
 const Quiz = lazy(() => import("./pages/Quiz"));
@@ -2747,6 +2748,7 @@ const App = () => (
                 <Route path="/zainstaluj" element={<Zainstaluj />} />
                 <Route path="/admin/rezerwacje" element={<AdminRezerwacje />} />
                 <Route path="/admin/dashboard" element={<AdminDashboard />} />
+                <Route path="/admin/topical-map" element={<AdminTopicalMap />} />
                 <Route path="/quiz" element={<Quiz />} />
                 <Route path="/kalkulator-roi" element={<KalkulatorROI />} />
                 <Route path="/slownik-marketingowy" element={<SlownikMarketingowy />} />
