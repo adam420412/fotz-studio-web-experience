@@ -1037,6 +1037,13 @@ export default function AdminDashboard() {
                           <p className="text-xs text-muted-foreground">Zarządzaj materiałami</p>
                         </div>
                       </Link>
+                      <Link to="/admin/topical-map" className="flex items-center gap-3 p-4 rounded-lg bg-card border border-border hover:border-primary/30 transition-colors">
+                        <FileText className="w-6 h-6 text-primary" />
+                        <div>
+                          <p className="font-medium">Topical Map (Agencja SM)</p>
+                          <p className="text-xs text-muted-foreground">Generuj 976 artykułów z briefów, publikuj drafty</p>
+                        </div>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
