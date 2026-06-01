@@ -16,6 +16,7 @@ const navLinksData = [
 
 const mobileServicesData = [
   { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa" },
+  { name: "Agencja Social Media", href: "/agencja-social-media" },
   { name: "Social Media", href: "/social-media/obsluga" },
   { name: "Facebook Ads", href: "/performance-marketing/facebook-ads" },
   { name: "Google Ads", href: "/performance-marketing/google-ads" },
