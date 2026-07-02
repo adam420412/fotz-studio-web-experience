@@ -14,7 +14,7 @@
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 
-const SITEMAP_PATH = resolve(process.cwd(), 'public/sitemap.xml');
+const SITEMAP_PATH = resolve(process.cwd(), 'public/sitemap-main.xml');
 
 function extractUrlsFromSitemap(xmlContent) {
   const urls = [];
