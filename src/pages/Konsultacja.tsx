@@ -199,6 +199,31 @@ export default function Konsultacja() {
         </div>
       </section>
 
+      {/* Calendly Inline Widget */}
+      <section id="calendly" className="section-padding bg-card">
+        <div className="container-wide">
+          <FadeInView className="text-center mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">
+              Umów <span className="text-gradient">15 minut rozmowy</span>
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
+              Wybierz dogodny termin — potwierdzenie trafi na Twój email natychmiast.
+            </p>
+          </FadeInView>
+          <div
+            className="calendly-inline-widget rounded-xl sm:rounded-2xl overflow-hidden border border-border bg-background"
+            data-url="https://calendly.com/fotz/konsultacja?hide_gdpr_banner=1"
+            style={{ minWidth: "320px", height: "720px" }}
+          />
+          <script
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+            // @ts-expect-error - script attribute passthrough
+            type="text/javascript"
+          />
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="section-padding bg-card">
         <div className="container-wide">
