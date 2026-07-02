@@ -180,6 +180,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "czy-warto-zatrudnic-agencje-social-media",
+    title: "Czy warto zatrudnić agencję social media, jeśli macie marketing in-house?",
+    excerpt:
+      "In-house, freelancer czy agencja? Szczere porównanie kosztów i efektów plus czwarty model: partner produkcyjny dla Twojego zespołu marketingu.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "2 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
