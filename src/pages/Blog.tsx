@@ -204,6 +204,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "wideo-produktowe-czy-zdjecia",
+    title: "Wideo produktowe czy zdjęcia produktowe? Co naprawdę sprzedaje w B2B",
+    excerpt:
+      "Kiedy wystarczą zdjęcia produktowe, a kiedy wideo zwraca się wielokrotnie. Z perspektywy handlowców B2B i marketingu producenta.",
+    category: "Video",
+    author: "Zespół FOTZ",
+    date: "2 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2074",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
