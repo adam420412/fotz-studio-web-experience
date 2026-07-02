@@ -96,6 +96,7 @@ const BlogFacebookAdsPoradnik = lazy(() => import("./pages/BlogFacebookAdsPoradn
 const BlogProwadzenieSocialMediaCennik = lazy(() => import("./pages/BlogProwadzenieSocialMediaCennik"));
 const BlogAgencjaSocialMediaCennik = lazy(() => import("./pages/BlogAgencjaSocialMediaCennik"));
 const BlogCzyWartoZatrudnicAgencjeSocialMedia = lazy(() => import("./pages/BlogCzyWartoZatrudnicAgencjeSocialMedia"));
+const BlogAgencjaSocialMediaPoznan = lazy(() => import("./pages/BlogAgencjaSocialMediaPoznan"));
 const BlogFotografiaProduktowa = lazy(() => import("./pages/BlogFotografiaProduktowa"));
 const BlogLandingPageVsStrona = lazy(() => import("./pages/BlogLandingPageVsStrona"));
 const BlogSocialMediaMarketingPoradnik = lazy(() => import("./pages/BlogSocialMediaMarketingPoradnik"));
@@ -1581,6 +1582,7 @@ const App = () => (
                 <Route path="/blog/prowadzenie-social-media-cennik" element={<BlogProwadzenieSocialMediaCennik />} />
                 <Route path="/blog/agencja-social-media-cennik" element={<BlogAgencjaSocialMediaCennik />} />
                 <Route path="/blog/czy-warto-zatrudnic-agencje-social-media" element={<BlogCzyWartoZatrudnicAgencjeSocialMedia />} />
+                <Route path="/blog/agencja-social-media-poznan" element={<BlogAgencjaSocialMediaPoznan />} />
                 <Route path="/blog/fotografia-produktowa-poradnik" element={<BlogFotografiaProduktowa />} />
                 <Route path="/blog/landing-page-vs-strona-internetowa" element={<BlogLandingPageVsStrona />} />
                 <Route path="/blog/social-media-marketing-poradnik" element={<BlogSocialMediaMarketingPoradnik />} />
