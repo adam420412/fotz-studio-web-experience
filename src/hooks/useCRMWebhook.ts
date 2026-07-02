@@ -1,4 +1,5 @@
 const CRM_WEBHOOK_URL = "https://uqkmdfpiwquooauvkgwb.supabase.co/functions/v1/crm-webhook";
+import { getUTMs } from "@/lib/utm";
 
 interface LeadData {
   name: string;
@@ -21,6 +22,7 @@ interface BookingData {
 
 export async function sendLeadToCRM(data: LeadData): Promise<{ success: boolean; lead_id?: string; error?: string }> {
   try {
+    const utms = getUTMs();
     const response = await fetch(CRM_WEBHOOK_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -31,8 +33,13 @@ export async function sendLeadToCRM(data: LeadData): Promise<{ success: boolean;
           email: data.email,
           phone: data.phone || null,
           company: data.company || null,
-          source: data.source || "fotz.pl",
+          source: data.source || "website",
           notes: data.notes || null,
+          utm_source: utms.utm_source || null,
+          utm_campaign: utms.utm_campaign || null,
+          utm_medium: utms.utm_medium || null,
+          utm_content: utms.utm_content || null,
+          utm_term: utms.utm_term || null,
         },
       }),
     });
