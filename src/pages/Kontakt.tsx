@@ -5,6 +5,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useToast } from "@/hooks/use-toast";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { cn } from "@/lib/utils";
@@ -23,6 +24,14 @@ const contactSchema = z.object({
   company: z.string().trim().optional(),
   subject: z.string().min(1, "Wybierz temat zapytania"),
   message: z.string().trim().min(10, "Wiadomość musi mieć minimum 10 znaków").max(2000, "Wiadomość max 2000 znaków"),
+});
+
+const reelSchema = z.object({
+  name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100),
+  email: z.string().trim().email("Nieprawidłowy adres email").max(255),
+  phone: z.string().trim().optional(),
+  company: z.string().trim().optional(),
+  business_type: z.string().min(1, "Wybierz co robicie"),
 });
 
 const contactInfo = [
@@ -55,6 +64,7 @@ const contactInfo = [
 export default function Kontakt() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [networkError, setNetworkError] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,12 +74,24 @@ export default function Kontakt() {
     message: "",
   });
   const [formErrors, setFormErrors] = useState<Record<string, string>>({});
+  const [reelData, setReelData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    business_type: "",
+  });
+  const [reelErrors, setReelErrors] = useState<Record<string, string>>({});
+  const [reelSubmitting, setReelSubmitting] = useState(false);
+  const [reelSubmitted, setReelSubmitted] = useState(false);
+  const [reelNetworkError, setReelNetworkError] = useState(false);
   const { toast } = useToast();
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormErrors({});
+    setNetworkError(false);
 
     // Walidacja
     const result = contactSchema.safeParse(formData);
@@ -104,8 +126,8 @@ export default function Kontakt() {
         email: formData.email,
         phone: formData.phone || undefined,
         company: formData.company || undefined,
-        source: "fotz.pl/kontakt",
-        notes: `Temat: ${formData.subject}\n\n${formData.message}`,
+        source: "website",
+        notes: `Formularz: Kontakt (fotz.pl/kontakt)\nTemat: ${formData.subject}\n\n${formData.message}`,
       });
 
       setIsSubmitted(true);
@@ -115,6 +137,7 @@ export default function Kontakt() {
       });
     } catch (error) {
       console.error("Error sending message:", error);
+      setNetworkError(true);
       toast({
         title: "Błąd wysyłania",
         description: "Nie udało się wysłać wiadomości. Spróbuj ponownie lub zadzwoń do nas.",
@@ -122,6 +145,58 @@ export default function Kontakt() {
       });
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  const handleReelSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setReelErrors({});
+    setReelNetworkError(false);
+
+    const result = reelSchema.safeParse(reelData);
+    if (!result.success) {
+      const errors: Record<string, string> = {};
+      result.error.errors.forEach((err) => {
+        if (err.path[0]) errors[err.path[0] as string] = err.message;
+      });
+      setReelErrors(errors);
+      return;
+    }
+
+    setReelSubmitting(true);
+    try {
+      await submitWeb3Form({
+        subject: `Darmowa rolka - od ${reelData.name}`,
+        from_name: "Fotz Studio - Darmowa rolka",
+        name: reelData.name,
+        email: reelData.email,
+        phone: reelData.phone || "Nie podano",
+        company: reelData.company || "Nie podano",
+        message: `Zapytanie o darmową rolkę.\nBranża: ${reelData.business_type}`,
+      });
+      sendLeadToCRM({
+        name: reelData.name,
+        email: reelData.email,
+        phone: reelData.phone || undefined,
+        company: reelData.company || undefined,
+        source: "website",
+        notes: `Formularz: Darmowa rolka (fotz.pl/kontakt)\nBranża: ${reelData.business_type}`,
+      });
+      setReelSubmitted(true);
+      toast({
+        title: "Zgłoszenie wysłane!",
+        description: "Odezwiemy się w ciągu 24 godzin z propozycją rolki.",
+      });
+    } catch (err) {
+      console.error("Reel form error:", err);
+      setReelNetworkError(true);
+      toast({
+        title: "Błąd wysyłania",
+        description: "Nie udało się wysłać zgłoszenia. Napisz na adam@fotz.pl.",
+        variant: "destructive",
+      });
+    } finally {
+      setReelSubmitting(false);
     }
   };
 
@@ -170,21 +245,30 @@ export default function Kontakt() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               )}
             >
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold mb-4 sm:mb-6">
-                Wyślij wiadomość
-              </h2>
+              <Tabs defaultValue="kontakt" className="w-full">
+                <TabsList className="mb-4 sm:mb-6">
+                  <TabsTrigger value="kontakt">Wyślij wiadomość</TabsTrigger>
+                  <TabsTrigger value="rolka">Darmowa rolka</TabsTrigger>
+                </TabsList>
 
-              {isSubmitted ? (
-                <div className="p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-primary/10 border border-primary/20 text-center">
-                  <CheckCircle className="w-12 h-12 sm:w-16 sm:h-16 text-primary mx-auto mb-3 sm:mb-4" />
-                  <h3 className="text-lg sm:text-xl font-heading font-bold mb-2">
-                    Dziękujemy za wiadomość!
-                  </h3>
-                  <p className="text-sm sm:text-base text-muted-foreground">
-                    Skontaktujemy się z Tobą w ciągu 24 godzin.
-                  </p>
-                </div>
-              ) : (
+                <TabsContent value="kontakt">
+                  {isSubmitted ? (
+                    <div className="p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-primary/10 border border-primary/20 text-center">
+                      <CheckCircle className="w-12 h-12 sm:w-16 sm:h-16 text-primary mx-auto mb-3 sm:mb-4" />
+                      <h3 className="text-lg sm:text-xl font-heading font-bold mb-2">
+                        Dziękujemy za wiadomość!
+                      </h3>
+                      <p className="text-sm sm:text-base text-muted-foreground mb-6">
+                        Odezwiemy się w mniej niż 24 h.
+                      </p>
+                      <Button variant="hero" asChild className="h-10 sm:h-11 text-sm sm:text-base">
+                        <Link to="/konsultacja">
+                          Albo od razu wybierz termin rozmowy
+                          <ArrowRight className="w-4 h-4 ml-1" />
+                        </Link>
+                      </Button>
+                    </div>
+                  ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                     <div>
@@ -307,8 +391,130 @@ export default function Kontakt() {
                       </>
                     )}
                   </Button>
+                  {networkError && (
+                    <p className="text-xs sm:text-sm text-red-500 mt-2">
+                      Problem z połączeniem. Napisz bezpośrednio na{" "}
+                      <a href="mailto:adam@fotz.pl" className="underline font-medium">
+                        adam@fotz.pl
+                      </a>
+                      .
+                    </p>
+                  )}
                 </form>
-              )}
+                  )}
+                </TabsContent>
+
+                <TabsContent value="rolka">
+                  {reelSubmitted ? (
+                    <div className="p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-primary/10 border border-primary/20 text-center">
+                      <CheckCircle className="w-12 h-12 sm:w-16 sm:h-16 text-primary mx-auto mb-3 sm:mb-4" />
+                      <h3 className="text-lg sm:text-xl font-heading font-bold mb-2">
+                        Dziękujemy!
+                      </h3>
+                      <p className="text-sm sm:text-base text-muted-foreground mb-6">
+                        Odezwiemy się w mniej niż 24 h.
+                      </p>
+                      <Button variant="hero" asChild className="h-10 sm:h-11 text-sm sm:text-base">
+                        <Link to="/konsultacja">
+                          Albo od razu wybierz termin rozmowy
+                          <ArrowRight className="w-4 h-4 ml-1" />
+                        </Link>
+                      </Button>
+                    </div>
+                  ) : (
+                    <form onSubmit={handleReelSubmit} className="space-y-4 sm:space-y-6">
+                      <p className="text-sm text-muted-foreground">
+                        Zostaw dane, a przygotujemy dla Ciebie darmową rolkę — próbkę tego, jak Twoja marka może wyglądać w video.
+                      </p>
+                      <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                        <div>
+                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                            Imię i nazwisko *
+                          </label>
+                          <Input
+                            value={reelData.name}
+                            onChange={(e) => setReelData((p) => ({ ...p, name: e.target.value }))}
+                            placeholder="Jan Kowalski"
+                            className={cn("bg-secondary border-border h-9 sm:h-10 text-sm", reelErrors.name && "border-red-500")}
+                          />
+                          {reelErrors.name && <p className="text-xs text-red-500 mt-1">{reelErrors.name}</p>}
+                        </div>
+                        <div>
+                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Email *</label>
+                          <Input
+                            type="email"
+                            value={reelData.email}
+                            onChange={(e) => setReelData((p) => ({ ...p, email: e.target.value }))}
+                            placeholder="jan@firma.pl"
+                            className={cn("bg-secondary border-border h-9 sm:h-10 text-sm", reelErrors.email && "border-red-500")}
+                          />
+                          {reelErrors.email && <p className="text-xs text-red-500 mt-1">{reelErrors.email}</p>}
+                        </div>
+                      </div>
+                      <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
+                        <div>
+                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Telefon</label>
+                          <Input
+                            type="tel"
+                            value={reelData.phone}
+                            onChange={(e) => setReelData((p) => ({ ...p, phone: e.target.value }))}
+                            placeholder="+48 123 456 789"
+                            className="bg-secondary border-border h-9 sm:h-10 text-sm"
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Firma</label>
+                          <Input
+                            value={reelData.company}
+                            onChange={(e) => setReelData((p) => ({ ...p, company: e.target.value }))}
+                            placeholder="Nazwa firmy"
+                            className="bg-secondary border-border h-9 sm:h-10 text-sm"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Co robicie? *</label>
+                        <select
+                          value={reelData.business_type}
+                          onChange={(e) => setReelData((p) => ({ ...p, business_type: e.target.value }))}
+                          className={cn(
+                            "w-full h-9 sm:h-10 px-3 rounded-lg bg-secondary border border-border text-foreground text-sm",
+                            reelErrors.business_type && "border-red-500"
+                          )}
+                        >
+                          <option value="">Wybierz branżę</option>
+                          <option value="retail">Retail</option>
+                          <option value="produkcja">Produkcja</option>
+                          <option value="uslugi">Usługi</option>
+                          <option value="gastro">Gastro</option>
+                          <option value="inne">Inne</option>
+                        </select>
+                        {reelErrors.business_type && <p className="text-xs text-red-500 mt-1">{reelErrors.business_type}</p>}
+                      </div>
+                      <Button type="submit" variant="hero" size="lg" className="w-full h-10 sm:h-12 text-sm sm:text-base" disabled={reelSubmitting}>
+                        {reelSubmitting ? (
+                          <>
+                            <Loader2 className="w-4 h-4 animate-spin" /> Wysyłanie...
+                          </>
+                        ) : (
+                          <>
+                            Wyślij zgłoszenie <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+                          </>
+                        )}
+                      </Button>
+                      {reelNetworkError && (
+                        <p className="text-xs sm:text-sm text-red-500 mt-2">
+                          Problem z połączeniem. Napisz bezpośrednio na{" "}
+                          <a href="mailto:adam@fotz.pl" className="underline font-medium">
+                            adam@fotz.pl
+                          </a>
+                          .
+                        </p>
+                      )}
+                    </form>
+                  )}
+                </TabsContent>
+              </Tabs>
             </div>
 
             {/* Contact Info & Map */}
