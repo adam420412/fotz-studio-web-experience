@@ -168,6 +168,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "agencja-social-media-cennik",
+    title: "Ile kosztuje agencja social media? Cennik 2026 bez owijania",
+    excerpt:
+      "Konkretne widełki cen obsługi social media w Polsce w 2026: freelancer, mała i duża agencja. Nasz cennik podajemy wprost.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "2 lip 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
