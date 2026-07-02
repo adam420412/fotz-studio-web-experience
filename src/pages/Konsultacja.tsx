@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CheckCircle, Clock, Target, Zap, Loader2, Send, Phone, ArrowRight, Award, Users, TrendingUp } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -94,6 +94,16 @@ const trustSignals = [
 export default function Konsultacja() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    const src = "https://assets.calendly.com/assets/external/widget.js";
+    if (document.querySelector(`script[src="${src}"]`)) return;
+    const s = document.createElement("script");
+    s.src = src;
+    s.async = true;
+    document.body.appendChild(s);
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -196,6 +206,25 @@ export default function Konsultacja() {
               bez zobowiązań. 30 minut rozmowy, które mogą zmienić Twój biznes.
             </p>
           </FadeInView>
+        </div>
+      </section>
+
+      {/* Calendly Inline Widget */}
+      <section id="calendly" className="section-padding bg-card">
+        <div className="container-wide">
+          <FadeInView className="text-center mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">
+              Umów <span className="text-gradient">15 minut rozmowy</span>
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
+              Wybierz dogodny termin — potwierdzenie trafi na Twój email natychmiast.
+            </p>
+          </FadeInView>
+          <div
+            className="calendly-inline-widget rounded-xl sm:rounded-2xl overflow-hidden border border-border bg-background"
+            data-url="https://calendly.com/fotz/konsultacja?hide_gdpr_banner=1"
+            style={{ minWidth: "320px", height: "720px" }}
+          />
         </div>
       </section>
 

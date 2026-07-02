@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { z } from "zod";
 import { submitWeb3Form } from "@/lib/web3forms";
+import { Calendar } from "lucide-react";
 
 const emailSchema = z.string().trim().email("Nieprawidłowy email");
 
@@ -223,6 +224,25 @@ export function Footer() {
       />
 
       <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 pt-24 pb-10">
+        {/* CTA Booking */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-10 mb-10 border-b border-white/10">
+          <div>
+            <h3 className="font-geist text-white text-xl md:text-2xl mb-1" style={{ letterSpacing: "-0.02em" }}>
+              Wolisz krótki call? Umów 15 minut.
+            </h3>
+            <p className="dv-mono uppercase tracking-[0.14em] text-[11px] text-white/50">
+              Bez zobowiązań · pierwszy wolny termin online
+            </p>
+          </div>
+          <Link
+            to="/konsultacja"
+            className="dv-btn dv-btn-primary h-12 inline-flex items-center gap-2 whitespace-nowrap"
+          >
+            <Calendar className="w-4 h-4" strokeWidth={1.5} />
+            Umów konsultację 15 min
+          </Link>
+        </div>
+
         {/* Newsletter banner */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-12 mb-12 border-b border-white/10">
           <div>
