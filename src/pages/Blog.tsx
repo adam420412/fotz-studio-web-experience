@@ -192,6 +192,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "agencja-social-media-poznan",
+    title: "Agencja social media Poznań: jak wybrać i na co uważać (poradnik 2026)",
+    excerpt:
+      "Szukasz agencji social media w Poznaniu? Sprawdź, o co pytać, ile to kosztuje i dlaczego warto wybrać ekipę z własnym studiem produkcji video.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "2 lip 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
