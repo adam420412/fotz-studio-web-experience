@@ -37,8 +37,6 @@ const Index = () => {
         keywords="agencja marketingowa, marketing Poznań, strony internetowe Poznań, social media, kampanie reklamowe, lead generation, marketing premium"
         canonical="https://fotz.pl"
       >
-        {/* Preload critical LCP image */}
-        <link rel="preload" href="/hero-poster.jpg" as="image" fetchPriority="high" />
       </SEOHead>
       <LocalBusinessSchema />
       <OrganizationSchema />
