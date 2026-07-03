@@ -228,6 +228,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "modele-rozliczen-agencja-social-media",
+    title: "Modele rozliczeń z agencją social media: abonament, projekt czy success fee?",
+    excerpt:
+      "Porównujemy modele rozliczeń z agencją social media, z cenami od 2 500 zł netto/mc. Zobacz, co się opłaca.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "3 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2074",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
