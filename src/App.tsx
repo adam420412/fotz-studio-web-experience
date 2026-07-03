@@ -1588,6 +1588,7 @@ const App = () => (
                 <Route path="/blog/agencja-social-media-poznan" element={<BlogAgencjaSocialMediaPoznan />} />
                 <Route path="/blog/wideo-produktowe-czy-zdjecia" element={<BlogWideoProduktoweCzyZdjecia />} />
                 <Route path="/blog/ile-kosztuje-rolka-dla-firmy" element={<BlogIleKosztujeRolkaDlaFirmy />} />
+                <Route path="/blog/modele-rozliczen-agencja-social-media" element={<BlogModeleRozliczenAgencjaSocialMedia />} />
                 <Route path="/blog/fotografia-produktowa-poradnik" element={<BlogFotografiaProduktowa />} />
                 <Route path="/blog/landing-page-vs-strona-internetowa" element={<BlogLandingPageVsStrona />} />
                 <Route path="/blog/social-media-marketing-poradnik" element={<BlogSocialMediaMarketingPoradnik />} />
