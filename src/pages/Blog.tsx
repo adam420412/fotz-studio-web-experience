@@ -216,6 +216,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "ile-kosztuje-rolka-dla-firmy",
+    title: "Ile kosztuje produkcja rolki dla firmy? Cennik video 2026",
+    excerpt:
+      "Pojedyncza rolka od 1 900 zł netto, seria 10 rolek za 12 000 zł netto. Zobacz cennik produkcji video 2026 i co wpływa na cenę.",
+    category: "Video",
+    author: "Zespół FOTZ",
+    date: "3 lip 2026",
+    readTime: "6 min",
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
