@@ -98,6 +98,7 @@ const BlogAgencjaSocialMediaCennik = lazy(() => import("./pages/BlogAgencjaSocia
 const BlogCzyWartoZatrudnicAgencjeSocialMedia = lazy(() => import("./pages/BlogCzyWartoZatrudnicAgencjeSocialMedia"));
 const BlogAgencjaSocialMediaPoznan = lazy(() => import("./pages/BlogAgencjaSocialMediaPoznan"));
 const BlogWideoProduktoweCzyZdjecia = lazy(() => import("./pages/BlogWideoProduktoweCzyZdjecia"));
+const BlogIleKosztujeRolkaDlaFirmy = lazy(() => import("./pages/BlogIleKosztujeRolkaDlaFirmy"));
 const BlogFotografiaProduktowa = lazy(() => import("./pages/BlogFotografiaProduktowa"));
 const BlogLandingPageVsStrona = lazy(() => import("./pages/BlogLandingPageVsStrona"));
 const BlogSocialMediaMarketingPoradnik = lazy(() => import("./pages/BlogSocialMediaMarketingPoradnik"));
