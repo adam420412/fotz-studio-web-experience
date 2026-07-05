@@ -300,6 +300,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "platformy-social-media-2026",
+    title: "Najgorętsze platformy social media 2026 dla firm B2B i B2C",
+    excerpt:
+      "Instagram, TikTok, LinkedIn, Facebook czy YouTube? Sprawdź, która platforma social media w 2026 roku da Twojej firmie realny zasięg.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "5 lip 2026",
+    readTime: "9 min",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2074",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
