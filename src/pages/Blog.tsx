@@ -252,6 +252,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "pakiety-uslug-agencji-social-media",
+    title: "Pakiety usług agencji social media: co naprawdę jest w środku",
+    excerpt:
+      "Rozbieramy pakiety START, WZROST i PARTNER: ceny netto, zakresy i pytania, które warto zadać agencji przed umową.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "5 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
