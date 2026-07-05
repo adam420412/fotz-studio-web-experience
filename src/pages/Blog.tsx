@@ -288,6 +288,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "zdjecia-korporacyjne-vs-reklamowe",
+    title: "Zdjęcia korporacyjne vs reklamowe: czym się różnią i co wybrać",
+    excerpt:
+      "Zdjęcia korporacyjne czy reklamowe? Sprawdź kluczowe różnice i dowiedz się, które zdjęcia wybrać dla swojej firmy.",
+    category: "Fotografia",
+    author: "Zespół FOTZ",
+    date: "5 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
