@@ -76,7 +76,7 @@ export default function BlogModeleRozliczenAgencjaSocialMedia() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             Zanim podpiszesz umowę z agencją, ustal jedno: jak będziecie się rozliczać. Model rozliczenia decyduje o tym, za co płacisz, co dostajesz i kto ponosi ryzyko. Oto trzy najczęstsze modele i nasza szczera opinia o każdym.

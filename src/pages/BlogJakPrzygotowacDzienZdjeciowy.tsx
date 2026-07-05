@@ -77,7 +77,7 @@ export default function BlogJakPrzygotowacDzienZdjeciowy() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             Sesja zdjęciowa u klienta to nie tylko ustawienie kamery i światła. To dzień, w którym trzeba pogodzić normalną pracę firmy z nagraniami, tak żeby nikt nikomu nie wchodził w drogę. Dobre przygotowanie decyduje o tym, czy w jeden dzień zdjęciowy powstanie komplet 10 gotowych rolek, czy połowa czasu zejdzie na szukanie gniazdka i pytanie kto akurat ma chwilę na kamerę. Ten wpis to checklist, który wysyłamy klientom przed każdą sesją, żeby dzień zdjęciowy przebiegł sprawnie, bez chaosu i bez stresu.

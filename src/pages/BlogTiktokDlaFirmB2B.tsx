@@ -77,7 +77,7 @@ export default function BlogTiktokDlaFirmB2B() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             TikTok wciąż bywa traktowany jak platforma dla nastolatków. W praktyce to dziś jedna z najtańszych dróg do zasięgów organicznych, także w B2B. Problem w tym, że większość firm zaczyna od publikowania przypadkowych filmików i po trzech miesiącach ogłasza, że "TikTok u nas nie działa". Pokazujemy, jak zacząć z głową i czego unikać.

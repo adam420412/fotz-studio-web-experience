@@ -77,7 +77,7 @@ export default function BlogPakietyUslugAgencjiSocialMedia() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             "Pakiet od X zł" mówi niewiele, dopóki nie wiesz, co jest w środku. Dwie oferty w tej samej cenie potrafią różnić się wszystkim: liczbą materiałów, jakością produkcji i tym, kto faktycznie pracuje przy twojej marce. Rozbieramy nasze pakiety na części pierwsze, żebyś wiedział, za co płacisz. U nas i wszędzie indziej.

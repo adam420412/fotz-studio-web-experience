@@ -69,7 +69,7 @@ export default function BlogAgencjaSocialMediaPoznan() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             W Poznaniu działa kilkadziesiąt agencji marketingowych. Ten poradnik pomoże Ci odsiać te, które robią ładne prezentacje, od tych, które dowożą wyniki. Piszemy go z perspektywy studia, które na co dzień prowadzi social media największych marek w mieście.
