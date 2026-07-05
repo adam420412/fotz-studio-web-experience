@@ -73,7 +73,7 @@ export default function BlogAgencjaSocialMediaCennik() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             Większość agencji każe dzwonić po wycenę. My uważamy, że cennik to pierwsza rzecz, jaką powinieneś zobaczyć, dlatego w tym wpisie znajdziesz realne widełki rynkowe i nasze stawki podane wprost.

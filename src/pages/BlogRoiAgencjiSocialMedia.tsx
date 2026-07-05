@@ -77,7 +77,7 @@ export default function BlogRoiAgencjiSocialMedia() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             Widzisz fakturę za agencję social media i zadajesz sobie jedno pytanie: czy to się w ogóle zwróci. Dobra wiadomość: to policzalne, nie trzeba wierzyć na słowo w zasięgi i polubienia. W tym wpisie pokazujemy prosty wzór na ROI i liczymy go na konkretnym przykładzie, żebyś mógł zrobić to samo z własnymi liczbami.

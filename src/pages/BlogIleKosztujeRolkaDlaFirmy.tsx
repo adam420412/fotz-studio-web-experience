@@ -76,7 +76,7 @@ export default function BlogIleKosztujeRolkaDlaFirmy() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 py-16 prose prose-lg prose-slate max-w-none">
+      <article className="max-w-3xl mx-auto px-4 py-16 prose prose-lg">
         <FadeInView>
           <p className="lead text-lg text-gray-700">
             Krótka odpowiedź: pojedyncza rolka kosztuje od 1 900 zł netto, a seria 10 rolek z jednego dnia zdjęciowego 12 000 zł netto. Dłuższa odpowiedź zależy od tego, co kręcimy, gdzie i ile materiałów potrzebujesz. Poniżej cały cennik, bez gwiazdek i ukrytych kosztów.
