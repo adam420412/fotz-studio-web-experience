@@ -240,6 +240,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "tiktok-dla-firm-b2b",
+    title: "TikTok dla firmy B2B: od czego zacząć, żeby nie spalić budżetu",
+    excerpt:
+      "TikTok dla firmy B2B to nie tańce, tylko system: strategia, serie i dni zdjęciowe. Sprawdź, od czego zacząć i ile to kosztuje.",
+    category: "Video",
+    author: "Zespół FOTZ",
+    date: "5 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
