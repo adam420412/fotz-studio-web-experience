@@ -264,6 +264,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "jak-przygotowac-dzien-zdjeciowy",
+    title: "Jak przygotować firmę do dnia zdjęciowego: checklist",
+    excerpt:
+      "Sesja u Ciebie w firmie? Sprawdź checklist na dzień zdjęciowy i nagraj 10 rolek w jeden dzień bez chaosu i przestojów w pracy.",
+    category: "Video",
+    author: "Zespół FOTZ",
+    date: "5 lip 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2074",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
