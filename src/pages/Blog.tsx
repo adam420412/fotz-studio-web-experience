@@ -276,6 +276,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "roi-agencji-social-media",
+    title: "Kiedy agencja social media się opłaca: policzmy ROI",
+    excerpt:
+      "Zastanawiasz się, czy agencja social media się zwróci? Sprawdź prosty wzór na ROI i policz przykład na pakiecie WZROST.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "5 lip 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
