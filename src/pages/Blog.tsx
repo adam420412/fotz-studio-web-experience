@@ -312,6 +312,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "dron-w-marketingu-firmy",
+    title: "Dron w marketingu firmy: zastosowania, przepisy, koszty",
+    excerpt:
+      "Dron w marketingu firmy: gdzie robi różnicę, jak wyglądają przepisy i ile to kosztuje. Sprawdź, jak wykorzystać ujęcia z drona w video i rolkach.",
+    category: "Video",
+    author: "Zespół FOTZ",
+    date: "5 lip 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
