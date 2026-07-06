@@ -324,6 +324,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "jak-negocjowac-cennik-agencji",
+    title: "Jak negocjować cennik z agencją social media",
+    excerpt:
+      "Jak negocjować cennik z agencją social media bez psucia jakości pracy. Co wpływa na cenę, jakie są modele rozliczeń i na co uważać.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "6 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
