@@ -91,9 +91,9 @@ export default function BlogDronWMarketinguFirmy() {
             Dron nie jest dodatkiem dla efektu, tylko narzędziem, które zmienia sposób opowiadania o firmie. Największą wartość daje w trzech sytuacjach:
           </p>
           <ul>
-            <li><strong>Skala</strong> — hala produkcyjna, kompleks biurowy czy teren inwestycji wyglądają zupełnie inaczej z góry niż z poziomu chodnika.</li>
-            <li><strong>Kontekst</strong> — ujęcie z lotu pokazuje, gdzie firma się znajduje, jak wygląda okolica, jakie ma połączenia i sąsiedztwo.</li>
-            <li><strong>Efekt wow w pierwszych sekundach rolki</strong> — czyli moment, który decyduje, czy widz zostanie, czy przewinie dalej.</li>
+            <li><strong>Skala</strong>: hala produkcyjna, kompleks biurowy czy teren inwestycji wyglądają zupełnie inaczej z góry niż z poziomu chodnika.</li>
+            <li><strong>Kontekst</strong>: ujęcie z lotu pokazuje, gdzie firma się znajduje, jak wygląda okolica, jakie ma połączenia i sąsiedztwo.</li>
+            <li><strong>Efekt wow w pierwszych sekundach rolki</strong>, czyli moment, który decyduje, czy widz zostanie, czy przewinie dalej.</li>
           </ul>
           <p>
             W social media liczy się <strong>pierwsze 2-3 sekundy</strong>, a dynamiczne ujęcie z drona jest jednym z niewielu sposobów, żeby przyciągnąć uwagę bez sztuczek montażowych.
@@ -104,11 +104,11 @@ export default function BlogDronWMarketinguFirmy() {
             Dron sprawdza się różnie w zależności od branży, ale kilka scenariuszy powtarza się najczęściej:
           </p>
           <ul>
-            <li><strong>Deweloperzy i nieruchomości</strong> — pokazanie postępu budowy w czasie oraz okolicy inwestycji: dojazdów, zieleni, sąsiedztwa. To argument sprzedażowy, który trudno zastąpić zdjęciami z telefonu.</li>
-            <li><strong>Hotele i eventy</strong> — ujęcia pokazujące skalę obiektu (teren, baseny, parkingi), a przy eventach plenerowych relacje z dużych wydarzeń, których inaczej trudno ogarnąć jednym kadrem.</li>
-            <li><strong>Zakłady produkcyjne i magazyny</strong> — pokazanie skali operacji: wielkości hal, liczby doków załadunkowych, organizacji terenu. Buduje wiarygodność w oczach partnerów biznesowych.</li>
-            <li><strong>Retail</strong> — lokalizacja i otoczenie sklepu lub punktu usługowego, widoczność szyldu, dostępność parkingu.</li>
-            <li><strong>Rolki w social media</strong> — krótkie, dynamiczne ujęcia z drona jako element większej rolki: otwarcie, przejście między scenami albo zakończenie.</li>
+            <li><strong>Deweloperzy i nieruchomości</strong>: pokazanie postępu budowy w czasie oraz okolicy inwestycji: dojazdów, zieleni, sąsiedztwa. To argument sprzedażowy, który trudno zastąpić zdjęciami z telefonu.</li>
+            <li><strong>Hotele i eventy</strong>: ujęcia pokazujące skalę obiektu (teren, baseny, parkingi), a przy eventach plenerowych relacje z dużych wydarzeń, których inaczej trudno ogarnąć jednym kadrem.</li>
+            <li><strong>Zakłady produkcyjne i magazyny</strong>: pokazanie skali operacji: wielkości hal, liczby doków załadunkowych, organizacji terenu. Buduje wiarygodność w oczach partnerów biznesowych.</li>
+            <li><strong>Retail</strong>: lokalizacja i otoczenie sklepu lub punktu usługowego, widoczność szyldu, dostępność parkingu.</li>
+            <li><strong>Rolki w social media</strong>: krótkie, dynamiczne ujęcia z drona jako element większej rolki: otwarcie, przejście między scenami albo zakończenie.</li>
           </ul>
 
           <h2>Przepisy po ludzku, czyli co warto wiedzieć</h2>
@@ -132,7 +132,7 @@ export default function BlogDronWMarketinguFirmy() {
           </p>
           <ul>
             <li>Ujęcia z drona są <strong>wpisane w scenariusz</strong> razem z pozostałymi kadrami, więc wiadomo z góry, które sceny mają być z lotu, a które z ziemi.</li>
-            <li>Ekipa planuje moment nalotu tak, żeby <strong>nie kolidował z pracą firmy</strong> — na przykład wcześnie rano albo w innym spokojniejszym momencie dnia.</li>
+            <li>Ekipa planuje moment nalotu tak, żeby <strong>nie kolidował z pracą firmy</strong>, na przykład wcześnie rano albo w innym spokojniejszym momencie dnia.</li>
             <li>Zawsze bierzemy pod uwagę pogodę i mamy <strong>plan B</strong>, bo silny wiatr, deszcz czy słaba widoczność mogą uniemożliwić bezpieczny lot, a wtedy przekładamy tę część na inny termin bez wpływu na resztę produkcji.</li>
           </ul>
           <p>
@@ -165,9 +165,9 @@ export default function BlogDronWMarketinguFirmy() {
             Widzimy kilka powtarzających się błędów, które sprawiają, że dron nie daje efektu, jakiego firma oczekiwała:
           </p>
           <ul>
-            <li><strong>Dron dla samego drona</strong> — nalot bez pomysłu na to, co konkretnie ma pokazać i w którym miejscu materiału ma się pojawić. Efektowne ujęcie bez kontekstu szybko robi się nudne.</li>
-            <li><strong>Nagrywanie bez sprawdzenia stref i zgód</strong> — co może skończyć się przerwanym lotem albo problemem prawnym, którego łatwo uniknąć, planując to wcześniej.</li>
-            <li><strong>Materiał w 4K, który nigdy nie trafia do montażu</strong> — bo został nakręcony na wszelki wypadek, bez wcześniejszego ustalenia, jak ma wyglądać finalna rolka czy film. Efekt to zmarnowany czas ekipy i brak realnego zwrotu z lotu.</li>
+            <li><strong>Dron dla samego drona</strong>: nalot bez pomysłu na to, co konkretnie ma pokazać i w którym miejscu materiału ma się pojawić. Efektowne ujęcie bez kontekstu szybko robi się nudne.</li>
+            <li><strong>Nagrywanie bez sprawdzenia stref i zgód</strong>, co może skończyć się przerwanym lotem albo problemem prawnym, którego łatwo uniknąć, planując to wcześniej.</li>
+            <li><strong>Materiał w 4K, który nigdy nie trafia do montażu</strong>, bo został nakręcony na wszelki wypadek, bez wcześniejszego ustalenia, jak ma wyglądać finalna rolka czy film. Efekt to zmarnowany czas ekipy i brak realnego zwrotu z lotu.</li>
           </ul>
           <p>
             Najlepiej działa dron <strong>wpisany od początku w scenariusz</strong>, z jasnym celem: co ma pokazać i gdzie trafi w gotowym materiale.
