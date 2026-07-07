@@ -108,6 +108,7 @@ const BlogZdjeciaKorporacyjneVsReklamowe = lazy(() => import("./pages/BlogZdjeci
 const BlogPlatformySocialMedia2026 = lazy(() => import("./pages/BlogPlatformySocialMedia2026"));
 const BlogDronWMarketinguFirmy = lazy(() => import("./pages/BlogDronWMarketinguFirmy"));
 const BlogJakNegocjowacCennikAgencji = lazy(() => import("./pages/BlogJakNegocjowacCennikAgencji"));
+const BlogFilmRekrutacyjnyEmployerBranding = lazy(() => import("./pages/BlogFilmRekrutacyjnyEmployerBranding"));
 const BlogFotografiaProduktowa = lazy(() => import("./pages/BlogFotografiaProduktowa"));
 const BlogLandingPageVsStrona = lazy(() => import("./pages/BlogLandingPageVsStrona"));
 const BlogSocialMediaMarketingPoradnik = lazy(() => import("./pages/BlogSocialMediaMarketingPoradnik"));
@@ -1605,6 +1606,7 @@ const App = () => (
                 <Route path="/blog/platformy-social-media-2026" element={<BlogPlatformySocialMedia2026 />} />
                 <Route path="/blog/dron-w-marketingu-firmy" element={<BlogDronWMarketinguFirmy />} />
                 <Route path="/blog/jak-negocjowac-cennik-agencji" element={<BlogJakNegocjowacCennikAgencji />} />
+                <Route path="/blog/film-rekrutacyjny-employer-branding" element={<BlogFilmRekrutacyjnyEmployerBranding />} />
                 <Route path="/blog/fotografia-produktowa-poradnik" element={<BlogFotografiaProduktowa />} />
                 <Route path="/blog/landing-page-vs-strona-internetowa" element={<BlogLandingPageVsStrona />} />
                 <Route path="/blog/social-media-marketing-poradnik" element={<BlogSocialMediaMarketingPoradnik />} />
