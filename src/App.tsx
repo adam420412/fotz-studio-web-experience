@@ -108,6 +108,7 @@ const BlogZdjeciaKorporacyjneVsReklamowe = lazy(() => import("./pages/BlogZdjeci
 const BlogPlatformySocialMedia2026 = lazy(() => import("./pages/BlogPlatformySocialMedia2026"));
 const BlogDronWMarketinguFirmy = lazy(() => import("./pages/BlogDronWMarketinguFirmy"));
 const BlogJakNegocjowacCennikAgencji = lazy(() => import("./pages/BlogJakNegocjowacCennikAgencji"));
+const BlogFilmRekrutacyjnyEmployerBranding = lazy(() => import("./pages/BlogFilmRekrutacyjnyEmployerBranding"));
 const BlogFotografiaProduktowa = lazy(() => import("./pages/BlogFotografiaProduktowa"));
 const BlogLandingPageVsStrona = lazy(() => import("./pages/BlogLandingPageVsStrona"));
 const BlogSocialMediaMarketingPoradnik = lazy(() => import("./pages/BlogSocialMediaMarketingPoradnik"));
