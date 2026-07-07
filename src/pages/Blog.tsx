@@ -348,6 +348,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "zasada-5-5-5-social-media",
+    title: "Zasada 5-5-5 w social media: co to jest i czy naprawdę działa",
+    excerpt:
+      "Zasada 5-5-5 w social media: sprawdzamy trzy interpretacje tej heurystyki, kiedy działa, a kiedy szkodzi. Bez marketingowego lukru, za to z konkretami.",
+    category: "Social Media",
+    author: "Zespół FOTZ",
+    date: "7 lip 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
