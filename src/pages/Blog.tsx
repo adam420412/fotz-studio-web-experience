@@ -336,6 +336,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "film-rekrutacyjny-employer-branding",
+    title: "Film rekrutacyjny: jak przyciągnąć kandydatów, którzy sami się zgłoszą",
+    excerpt:
+      "Tekstowe ogłoszenie już nie przyciąga dobrych kandydatów. Pokazujemy, jak film rekrutacyjny wspiera employer branding i ile kosztuje taka produkcja wideo.",
+    category: "Produkcja video",
+    author: "Zespół FOTZ",
+    date: "7 lip 2026",
+    readTime: "8 min",
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
