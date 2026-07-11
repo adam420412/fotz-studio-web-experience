@@ -360,6 +360,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "ile-kosztuje-film-reklamowy",
+    title: "Ile kosztuje film reklamowy dla firmy",
+    excerpt:
+      "Ile kosztuje film reklamowy dla firmy w 2026? Pojedynczy film od 1 900 zł, dzień zdjęciowy z serią 10 rolek 12 000 zł. Sprawdź, co wpływa na cenę i jak nie przepłacić.",
+    category: "Wideo",
+    author: "Zespół FOTZ",
+    date: "11 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2070",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
