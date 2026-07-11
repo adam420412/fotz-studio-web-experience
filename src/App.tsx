@@ -116,6 +116,7 @@ const BlogSocialMediaMarketingPoradnik = lazy(() => import("./pages/BlogSocialMe
 const BlogStronaInternetowaDlaRestauracji = lazy(() => import("./pages/BlogStronaInternetowaDlaRestauracji"));
 const BlogBlogFirmowy = lazy(() => import("./pages/BlogBlogFirmowy"));
 const BlogIleKosztujeFIlmReklamowy = lazy(() => import("./pages/BlogIleKosztujeFIlmReklamowy"));
+const BlogIleKosztujeReklamaWideoFacebook = lazy(() => import("./pages/BlogIleKosztujeReklamaWideoFacebook"));
 const BlogPozycjonowanieDlaMalychFirm = lazy(() => import("./pages/BlogPozycjonowanieDlaMalychFirm"));
 
 // Case Studies
@@ -1615,6 +1616,7 @@ const App = () => (
                 <Route path="/blog/strona-internetowa-dla-restauracji" element={<BlogStronaInternetowaDlaRestauracji />} />
                 <Route path="/blog/blog-firmowy-poradnik" element={<BlogBlogFirmowy />} />
                 <Route path="/blog/ile-kosztuje-film-reklamowy" element={<BlogIleKosztujeFIlmReklamowy />} />
+                <Route path="/blog/ile-kosztuje-reklama-wideo-facebook" element={<BlogIleKosztujeReklamaWideoFacebook />} />
                 <Route path="/blog/pozycjonowanie-dla-malych-firm" element={<BlogPozycjonowanieDlaMalychFirm />} />
                 <Route path="/blog/fotografia-biznesowa" element={<BlogFotografiaBiznesowa />} />
                 <Route path="/blog/identyfikacja-wizualna-cennik" element={<BlogIdentyfikacjaWizualnaCennik />} />

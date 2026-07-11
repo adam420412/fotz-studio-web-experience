@@ -372,6 +372,18 @@ const posts: BlogPost[] = [
     featured: false,
   },
   {
+    id: "ile-kosztuje-reklama-wideo-facebook",
+    title: "Ile kosztuje reklama wideo na Facebooku i Instagramie",
+    excerpt:
+      "Ile kosztuje reklama wideo na Facebooku i Instagramie? Rozkładamy dwa koszty: produkcję filmu (od 1 900 zł) i budżet mediowy Meta. Sprawdź, ile realnie potrzebujesz.",
+    category: "Wideo",
+    author: "Zespół FOTZ",
+    date: "11 lip 2026",
+    readTime: "7 min",
+    image: "https://images.unsplash.com/photo-1611162618071-7d7a39e9b1d7?q=80&w=2074",
+    featured: false,
+  },
+  {
     id: "jak-stworzyc-landing-page",
     title: "Jak stworzyć skuteczny landing page - poradnik z przykładami",
     excerpt:
