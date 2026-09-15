@@ -261,6 +261,60 @@
 
   <!-- Ahrefs Web Analytics -->
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="ptWXoPCkVqYrtvjKiHovfQ" async></script>
+
+    <!-- Meta Pixel - zbior danych 1292173626418476 (CLAUDE FOTZ), ten sam co na fotz.pl.
+         Dodane, zeby ruch z kampanii na fotz-studio.pl budowal grupy remarketingowe
+         w koncie reklamowym 648264803478773. Nowego piksela NIE tworzymy, bo
+         rozbilby dane na dwa niezalezne zbiory. -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init','1292173626418476');
+      fbq('track','PageView');
+
+      (function () {
+        // React Router nie przeladowuje strony, wiec PageView trzeba wyslac recznie
+        // przy kazdej zmianie trasy. Bez tego liczy sie tylko pierwsze wejscie.
+        var last = location.pathname + location.search;
+        function routeChanged() {
+          var now = location.pathname + location.search;
+          if (now === last) return;
+          last = now;
+          if (window.fbq) window.fbq('track', 'PageView');
+        }
+        ['pushState', 'replaceState'].forEach(function (m) {
+          var orig = history[m];
+          if (typeof orig !== 'function') return;
+          history[m] = function () {
+            var r = orig.apply(this, arguments);
+            try { routeChanged(); } catch (e) {}
+            return r;
+          };
+        });
+        window.addEventListener('popstate', routeChanged);
+
+        // Klikniecie w telefon albo mail to realna konwersja FOTZ - klienci dzwonia,
+        // nie wypelniaja formularzy. Nasluch na poziomie dokumentu dziala tez po
+        // zmianie trasy, wiec nie trzeba go wpinac w komponenty Reacta.
+        document.addEventListener('click', function (e) {
+          try {
+            var t = e.target;
+            if (!t || !t.closest) return;
+            var a = t.closest('a[href^="tel:"], a[href^="mailto:"]');
+            if (!a || !window.fbq) return;
+            var href = a.getAttribute('href') || '';
+            window.fbq('track', 'Contact', {
+              content_name: href.indexOf('tel:') === 0 ? 'telefon' : 'mail'
+            });
+          } catch (err) {}
+        }, true);
+      })();
+    </script>
+    <noscript><img height="1" width="1" style="display:none" alt=""
+      src="https://www.facebook.com/tr?id=1292173626418476&ev=PageView&noscript=1" /></noscript>
 </head>
 
   <body>
