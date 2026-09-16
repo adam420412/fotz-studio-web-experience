@@ -15,7 +15,7 @@ W projekcie strony (vhzmfebggxeovtkznlby):
 | CONTACT_INBOX / CONTACT_FROM | Sprawdzić odbiorcę oraz nadawcę dozwolonego w Resend. Bez konfiguracji obowiązują istniejące domyślne wartości funkcji. |
 | META_DATASET_ID | 1292173626418476 |
 | META_CAPI_ACCESS_TOKEN | Wymagany dla wysyłki serwerowej. Nie umieszczać w repozytorium. |
-| META_GRAPH_API_VERSION | Obsługiwana wersja wybrana w aktualnym panelu Meta. |
+| META_GRAPH_API_VERSION | `v26.0` — zapisano 16.09, potwierdzono w [oficjalnym SDK Meta](https://raw.githubusercontent.com/facebook/facebook-python-business-sdk/main/facebook_business/apiconfig.py). |
 | META_TEST_EVENT_CODE | Tylko na czas odbioru w Test Events; usunąć przed ruchem produkcyjnym. |
 
 W Hub (uqkmdfpiwquooauvkgwb): CRM_WEBHOOK_SECRET. CRM_ALLOW_LEGACY_PUBLIC powinno pozostać wyłączone. Zewnętrzne powiadomienia Slack/Discord są domyślnie wyłączone; nie włączać ich jako części testu.
@@ -45,7 +45,11 @@ Test przeglądarkowy zapisu używał izolowanego endpointu lokalnego; nie stanow
 
 ## Stan odczytany w usługach — 16.09.2026
 
-W stronie nie ma jeszcze tabel `crm_delivery_outbox` i `public_intake_rate_limits`; istnieje tabela rezerwacji z RLS. W Hub brakuje tabel Growth OS (`growth_campaigns`, `integration_sources`, `integration_events`, `lead_touchpoints`); pola `next_step` i `next_step_date` w `leads` już istnieją. To odczyt schematu, bez pobierania danych klientów. Migracje i funkcje nie zostały wdrożone. Lovable wyświetlił potwierdzenie operacji SQL; anulowano je, a zgoda użytkownika na konkretny etap przygotowania pozostaje otwarta.
+Po zgodzie użytkownika wdrożono etap przygotowania strony: `crm_delivery_outbox`, `public_intake_rate_limits` oraz kolumny powiadomień. Najpierw wykonano próbę zakończoną `DRY_RUN_OK_ROLLED_BACK`, następnie zapis `FOUNDATION_COMMITTED`. Odczyt po zapisie: obie tabele z RLS, limiter dostępny wyłącznie dla service_role, kolejka pusta, cztery dotychczasowe polityki rezerwacji zachowane. Nie wykonano booking cutover ani wdrożenia funkcji.
+
+W Hub brakuje tabel Growth OS (`growth_campaigns`, `integration_sources`, `integration_events`, `lead_touchpoints`); pola `next_step` i `next_step_date` w `leads` już istnieją. Odczyt agregatów: 62 leady, 9 deali, 0 rezerwacji; role admin 1, manager 1, employee 1, client 2. Migracja Growth OS zawęzi CRM do admin/manager i uzupełni źródła oraz znormalizuje adresy e-mail/telefony. Ten kolejny etap czeka na osobną zgodę na ostrzeżenie SQL. Zmiany auth/storage pozostają do skoordynowania z frontendem. Nie pobierano rekordów klientów.
+
+Potwierdzono obecność `CRM_WEBHOOK_SECRET`, `FOTZ_CONNECT_HUB_WEBHOOK_SECRET` i `FOTZ_RATE_LIMIT_SALT`, bez odczytu wartości. Zgodność sekretów wymaga testu integracji. Token CAPI pozostaje do ręcznego zapisu. Lista backupów: strona 16.09 00:36:12 UTC, Hub 16.09 03:07:35 UTC; nie testowano przywracania.
 
 Meta: konto `648264803478773`, dataset `1292173626418476`, zakres 19.08–15.09.2026. Widoczne są 1329 PageView, 9 Lead (etykieta „Kontakt”, ostatni 13 dni wcześniej) i 1 FormView. Są to zdarzenia przeglądarkowe; CAPI ma stan „Oczekiwanie na połączenie”. Poprzednią tezę o zerowej liczbie Lead należy uznać za nieaktualną. Historyczne zdarzenia nie potwierdzają poprawności nowego formularza, zapisu w CRM ani wyników konkretnej kampanii.
 
