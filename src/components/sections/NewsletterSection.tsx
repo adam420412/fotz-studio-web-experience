@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Download, Mail, Loader2, CheckCircle, FileText } from "lucide-react";
 import { z } from "zod";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 
 const emailSchema = z.string().trim().email("Nieprawidłowy adres email");
@@ -43,13 +42,6 @@ export function NewsletterSection() {
         from_name: "Fotz Studio - Newsletter",
         email: email,
         message: "Użytkownik zapisał się do newslettera i pobrał checklistę skutecznej kampanii.",
-      });
-
-      sendLeadToCRM({
-        name: email.split("@")[0],
-        email: email,
-        source: "fotz.pl/newsletter",
-        notes: "Zapis do newslettera - pobranie checklisty kampanii",
       });
 
       setIsSubmitted(true);

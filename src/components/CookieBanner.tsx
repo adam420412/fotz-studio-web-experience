@@ -2,12 +2,19 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Cookie, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { getMarketingConsent, setMarketingConsent } from "@/lib/consent";
 
 export function CookieBanner() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem("cookie-consent");
+    const open = () => setIsVisible(true);
+    window.addEventListener("fotz:cookie-settings", open);
+    return () => window.removeEventListener("fotz:cookie-settings", open);
+  }, []);
+
+  useEffect(() => {
+    const consent = getMarketingConsent();
     if (!consent) {
       const timer = setTimeout(() => setIsVisible(true), 1500);
       return () => clearTimeout(timer);
@@ -15,12 +22,12 @@ export function CookieBanner() {
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem("cookie-consent", "accepted");
+    setMarketingConsent("accepted");
     setIsVisible(false);
   };
 
   const handleReject = () => {
-    localStorage.setItem("cookie-consent", "rejected");
+    setMarketingConsent("rejected");
     setIsVisible(false);
   };
 
@@ -52,12 +59,12 @@ export function CookieBanner() {
                   Szanujemy Twoją prywatność
                 </h3>
                 <p className="text-xs sm:text-sm text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
-                  Używamy plików cookies, aby zapewnić najlepsze doświadczenia na naszej stronie. 
-                  Klikając "Akceptuję", zgadzasz się na ich użycie.
+                  Niezbędne mechanizmy utrzymują działanie strony. Za Twoją zgodą włączymy
+                  również analitykę i pomiar kampanii marketingowych.
                 </p>
                 <div className="flex gap-2">
                   <Button onClick={handleAccept} size="sm" className="flex-1 text-xs sm:text-sm h-8 sm:h-9">
-                    Akceptuję
+                    Akceptuję wszystkie
                   </Button>
                   <Button onClick={handleReject} variant="outline" size="sm" className="flex-1 text-xs sm:text-sm h-8 sm:h-9">
                     Niezbędne

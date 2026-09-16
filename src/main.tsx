@@ -3,8 +3,10 @@ import { HelmetProvider } from "react-helmet-async";
 import App from "./App.tsx";
 import "./index.css";
 import { captureUTMs } from "./lib/utm";
+import { initializeMarketingTracking } from "./lib/marketingTracking";
 
 captureUTMs();
+initializeMarketingTracking();
 
 createRoot(document.getElementById("root")!).render(
   <HelmetProvider>

@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { format, addDays, startOfWeek, isSameDay, isWeekend, isBefore, startOfDay } from "date-fns";
+import { format, addDays, startOfWeek, isSameDay, isWeekend, isBefore, isAfter, startOfDay } from "date-fns";
 import { pl } from "date-fns/locale";
 import { ChevronLeft, ChevronRight, Clock, Calendar, CheckCircle, Loader2, User, Mail, Phone, Building, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,12 +9,17 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
-import { sendBookingToCRM } from "@/hooks/useCRMWebhook";
+import { getAttributionContext } from "@/lib/utm";
+import { trackGrowthEvent } from "@/lib/growthTracking";
+import { hasMarketingConsent } from "@/lib/consent";
 
 const bookingSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki"),
   email: z.string().trim().email("Nieprawidłowy adres email"),
-  phone: z.string().trim().min(9, "Podaj prawidłowy numer telefonu"),
+  phone: z.string().trim().refine(
+    (value) => value.replace(/\D/g, "").length >= 9,
+    "Podaj prawidłowy numer telefonu",
+  ),
   company: z.string().trim().optional(),
   message: z.string().trim().optional(),
 });
@@ -33,6 +38,7 @@ interface BookingCalendarProps {
 }
 
 export function BookingCalendar({ onClose }: BookingCalendarProps) {
+  const [submissionId] = useState(() => globalThis.crypto?.randomUUID?.() || `booking-${Date.now()}-${Math.random().toString(36).slice(2, 12)}`);
   const [currentWeekStart, setCurrentWeekStart] = useState(startOfWeek(new Date(), { weekStartsOn: 1 }));
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
@@ -40,6 +46,8 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [bookedSlots, setBookedSlots] = useState<BookedSlot[]>([]);
   const [isLoadingSlots, setIsLoadingSlots] = useState(false);
+  const [availabilityError, setAvailabilityError] = useState("");
+  const [confirmationEmailSent, setConfirmationEmailSent] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -52,25 +60,35 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
 
   const weekDays = Array.from({ length: 7 }, (_, i) => addDays(currentWeekStart, i));
   const today = startOfDay(new Date());
+  const currentWeek = startOfWeek(today, { weekStartsOn: 1 });
+  const maxBookingDate = addDays(today, 180);
+  const maxBookingWeek = startOfWeek(maxBookingDate, { weekStartsOn: 1 });
 
   // Fetch booked slots for the current week
   const fetchBookedSlots = useCallback(async () => {
     setIsLoadingSlots(true);
+    setAvailabilityError("");
     const startDate = format(currentWeekStart, "yyyy-MM-dd");
     const endDate = format(addDays(currentWeekStart, 6), "yyyy-MM-dd");
 
-    const { data, error } = await supabase
-      .from('bookings')
-      .select('booking_date, booking_time')
-      .gte('booking_date', startDate)
-      .lte('booking_date', endDate)
-      .in('status', ['pending', 'confirmed']);
+    const { data, error } = await supabase.functions.invoke<{
+      success: boolean;
+      slots?: BookedSlot[];
+    }>('booking-availability', {
+      body: { start_date: startDate, end_date: endDate },
+    });
 
-    if (!error && data) {
-      setBookedSlots(data.map(b => ({ 
-        date: b.booking_date, 
-        time: b.booking_time.substring(0, 5) // Ensure format "HH:MM"
-      })));
+    if (!error && data?.success && data.slots) {
+      setBookedSlots(data.slots);
+      setFormErrors(prev => {
+        const next = { ...prev };
+        delete next.general;
+        return next;
+      });
+    } else {
+      setBookedSlots([]);
+      setSelectedTime(null);
+      setAvailabilityError("Nie udało się sprawdzić dostępności. Spróbuj ponownie.");
     }
     setIsLoadingSlots(false);
   }, [currentWeekStart]);
@@ -93,7 +111,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   };
 
   const handleDateSelect = (date: Date) => {
-    if (isWeekend(date) || isBefore(date, today)) return;
+    if (isWeekend(date) || isBefore(date, today) || isAfter(date, maxBookingDate)) return;
     setSelectedDate(date);
     setSelectedTime(null);
   };
@@ -125,53 +143,65 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     setIsSubmitting(true);
 
     try {
-      // Save to Supabase database (for CRM sync)
-      const { error: dbError } = await supabase
-        .from('bookings')
-        .insert({
-          client_name: formData.name,
-          client_email: formData.email,
-          client_phone: formData.phone || null,
+      const context = getAttributionContext();
+      const activeTouch = { ...context.first_touch, ...context.last_touch };
+      const { data: bookingResult, error: bookingError } = await supabase.functions.invoke<{
+        success: boolean;
+        error?: string;
+        booking_id?: string;
+        client_confirmation_sent?: boolean;
+      }>('book-consultation', {
+        body: {
+          submission_id: submissionId,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company || null,
+          message: formData.message || null,
           booking_date: selectedDate ? format(selectedDate, "yyyy-MM-dd") : null,
           booking_time: selectedTime,
           service_type: 'konsultacja',
-          notes: formData.company ? `Firma: ${formData.company}. ${formData.message || ''}` : formData.message || null,
-          source: 'website',
-          status: 'pending',
-        });
-
-      if (dbError) {
-        console.error("Database error:", dbError);
-      }
-
-      // Send email notification via edge function
-      try {
-        await supabase.functions.invoke('notify-booking', {
-          body: {
-            client_name: formData.name,
-            client_email: formData.email,
-            client_phone: formData.phone || null,
-            booking_date: selectedDate ? format(selectedDate, "dd.MM.yyyy", { locale: pl }) : "",
-            booking_time: selectedTime,
-            notes: formData.company ? `Firma: ${formData.company}. ${formData.message || ''}` : formData.message || null,
+          source_detail: `website:${globalThis.location?.pathname || "/rezerwacja"}`,
+          attribution: {
+            ...activeTouch,
+            landing_page: context.first_touch.landing_page || context.last_touch.landing_page,
+            page_url: context.current_page,
+            first_touch: context.first_touch,
+            last_touch: context.last_touch,
           },
-        });
-      } catch (emailError) {
-        console.error("Email notification error:", emailError);
+          consent: {
+            marketing: hasMarketingConsent(),
+            source: "website:cookie-banner",
+            at: hasMarketingConsent() ? new Date().toISOString() : null,
+          },
+        },
+      });
+
+      if (bookingError || !bookingResult?.success) {
+        let errorCode = bookingResult?.error;
+        const context = bookingError && "context" in bookingError ? bookingError.context : null;
+        if (!errorCode && context instanceof Response) {
+          const errorBody = await context.clone().json().catch(() => null) as { error?: string } | null;
+          errorCode = errorBody?.error;
+        }
+        if (errorCode === "SLOT_TAKEN") {
+          setStep("date");
+          setSelectedTime(null);
+          await fetchBookedSlots();
+          setAvailabilityError("Ten termin został właśnie zajęty. Wybierz inną godzinę.");
+          return;
+        }
+        throw new Error(errorCode || bookingError?.message || "BOOKING_SAVE_FAILED");
       }
 
-      // Send to CRM webhook (fire and forget)
-      if (selectedDate && selectedTime) {
-        sendBookingToCRM({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || undefined,
-          booking_date: format(selectedDate, "yyyy-MM-dd"),
-          booking_time: selectedTime,
-          service_type: "konsultacja",
-          source: "fotz.pl/kontakt",
-        });
-      }
+      setConfirmationEmailSent(Boolean(bookingResult.client_confirmation_sent));
+
+      trackGrowthEvent("schedule", {
+        submission_id: submissionId,
+        service: "konsultacja",
+        booking_date: selectedDate ? format(selectedDate, "yyyy-MM-dd") : null,
+        booking_time: selectedTime,
+      });
 
       setStep("success");
     } catch {
@@ -196,7 +226,9 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           </span>
         </p>
         <p className="text-muted-foreground mb-6">
-          Wysłaliśmy potwierdzenie na adres {formData.email}
+          {confirmationEmailSent
+            ? `Wysłaliśmy potwierdzenie na adres ${formData.email}`
+            : `Termin jest zapisany. Potwierdzimy go pod adresem ${formData.email}.`}
         </p>
         <Button variant="hero" onClick={() => { onClose?.(); if (!onClose) navigate("/"); }}>
           Zamknij
@@ -319,28 +351,49 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     <div className="space-y-6">
       {/* Week navigation */}
       <div className="flex items-center justify-between">
-        <Button variant="outline" size="icon" onClick={handlePrevWeek}>
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={handlePrevWeek}
+          disabled={!isAfter(currentWeekStart, currentWeek)}
+          aria-label="Poprzedni tydzień"
+        >
           <ChevronLeft className="w-4 h-4" />
         </Button>
         <span className="font-medium">
           {format(currentWeekStart, "MMMM yyyy", { locale: pl })}
         </span>
-        <Button variant="outline" size="icon" onClick={handleNextWeek}>
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={handleNextWeek}
+          disabled={!isBefore(currentWeekStart, maxBookingWeek)}
+          aria-label="Następny tydzień"
+        >
           <ChevronRight className="w-4 h-4" />
         </Button>
       </div>
 
       {/* Days grid */}
+      {availabilityError && (
+        <div className="rounded-lg border border-destructive/30 bg-destructive/5 p-3 text-center text-sm text-destructive">
+          <p>{availabilityError}</p>
+          <Button type="button" variant="outline" size="sm" className="mt-2" onClick={fetchBookedSlots} disabled={isLoadingSlots}>
+            {isLoadingSlots ? <Loader2 className="mr-2 h-3 w-3 animate-spin" /> : null}
+            Sprawdź ponownie
+          </Button>
+        </div>
+      )}
       <div className="grid grid-cols-7 gap-2">
         {weekDays.map((day) => {
-          const isDisabled = isWeekend(day) || isBefore(day, today);
+          const isDisabled = isWeekend(day) || isBefore(day, today) || isAfter(day, maxBookingDate);
           const isSelected = selectedDate && isSameDay(day, selectedDate);
           
           return (
             <button
               key={day.toISOString()}
               onClick={() => handleDateSelect(day)}
-              disabled={isDisabled}
+              disabled={isDisabled || isLoadingSlots || Boolean(availabilityError)}
               className={cn(
                 "flex flex-col items-center p-2 sm:p-3 rounded-lg transition-all",
                 isDisabled && "opacity-40 cursor-not-allowed",
@@ -374,7 +427,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
                 <button
                   key={time}
                   onClick={() => !isBooked && handleTimeSelect(time)}
-                  disabled={isBooked}
+                  disabled={isBooked || isLoadingSlots || Boolean(availabilityError)}
                   className={cn(
                     "py-2 px-3 rounded-lg text-sm font-medium transition-all relative",
                     isBooked && "opacity-40 cursor-not-allowed bg-muted line-through",
@@ -401,7 +454,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
       <Button
         variant="hero"
         className="w-full"
-        disabled={!selectedDate || !selectedTime}
+        disabled={!selectedDate || !selectedTime || isLoadingSlots || Boolean(availabilityError)}
         onClick={handleContinue}
       >
         Dalej

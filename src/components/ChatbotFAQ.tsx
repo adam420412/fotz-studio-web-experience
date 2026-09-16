@@ -22,6 +22,20 @@ interface FAQ {
   category?: string;
 }
 
+const PUBLIC_CONTACT = {
+  email: "adam@fotz.pl",
+  phone: "+48 790 814 814",
+  address: "Poznań · online, 61-739 Poznań",
+} as const;
+
+// The deployed AI function can still return legacy contact placeholders.
+// Normalize them before any answer is shown to a visitor.
+const normalizePublicContactDetails = (answer: string): string =>
+  answer
+    .replace(/kontakt@fotz\.pl/gi, PUBLIC_CONTACT.email)
+    .replace(/\+48\s*123\s*456\s*789/g, PUBLIC_CONTACT.phone)
+    .replace(/(?:Poznań,\s*)?ul\.\s*Przykładowa\s*10/gi, PUBLIC_CONTACT.address);
+
 const faqData: FAQ[] = [
   // === OGÓLNE ===
   {
@@ -31,12 +45,12 @@ const faqData: FAQ[] = [
   },
   {
     keywords: ["kontakt", "telefon", "email", "zadzwonić", "napisać", "mail"],
-    answer: "Możesz się z nami skontaktować: 📧 kontakt@fotz.pl, 📱 +48 123 456 789. Biuro czynne pon-pt 9:00-17:00. Możesz też umówić bezpłatną konsultację przez kalendarz na stronie /kontakt.",
+    answer: `Możesz się z nami skontaktować: 📧 ${PUBLIC_CONTACT.email}, 📱 ${PUBLIC_CONTACT.phone}. Biuro czynne pon-pt 9:00-17:00. Możesz też umówić bezpłatną konsultację przez kalendarz na stronie /kontakt.`,
     category: "ogólne"
   },
   {
     keywords: ["konsultacja", "spotkanie", "rozmowa", "bezpłatna", "darmowa"],
-    answer: "Oferujemy bezpłatną 30-minutową konsultację! Omówimy Twoje potrzeby i zaproponujemy rozwiązania. Umów się przez kalendarz na stronie /kontakt lub zadzwoń: +48 123 456 789.",
+    answer: `Oferujemy bezpłatną 30-minutową konsultację! Omówimy Twoje potrzeby i zaproponujemy rozwiązania. Umów się przez kalendarz na stronie /kontakt lub zadzwoń: ${PUBLIC_CONTACT.phone}.`,
     category: "ogólne"
   },
   {
@@ -46,7 +60,7 @@ const faqData: FAQ[] = [
   },
   {
     keywords: ["poznań", "wielkopolska", "lokalizacja", "gdzie", "adres", "biuro"],
-    answer: "Siedziba: Poznań, ul. Przykładowa 10. Obsługujemy klientów z całej Polski - pracujemy również zdalnie. Dla klientów z Poznania oferujemy spotkania w naszym biurze lub u Ciebie.",
+    answer: `Pracujemy online z firmami z całej Polski. Nagrania i ewentualne spotkania na miejscu umawiamy indywidualnie.`,
     category: "ogólne"
   },
   {
@@ -98,7 +112,7 @@ const faqData: FAQ[] = [
   },
   {
     keywords: ["wideo", "film", "spot", "produkcja", "nagranie", "filmów"],
-    answer: "Produkujemy spoty reklamowe, filmy korporacyjne, content wideo na social media. Mamy własne studio i sprzęt. Realizacja od 2 tygodni. Ceny od 3000 zł. Więcej: /produkcja-filmow-poznan",
+    answer: "Produkujemy spoty reklamowe, filmy korporacyjne, content wideo na social media. Nagrywamy u klienta lub w uzgodnionej lokalizacji. Realizacja od 2 tygodni. Ceny od 3000 zł. Więcej: /produkcja-filmow-poznan",
     category: "usługi"
   },
   {
@@ -118,7 +132,7 @@ const faqData: FAQ[] = [
   },
   {
     keywords: ["podcast", "studio", "nagranie audio", "podcastowe"],
-    answer: "Mamy profesjonalne studio podcastowe w Poznaniu. Oferujemy nagranie, montaż i dystrybucję. Wynajem studia od 150 zł/h. Więcej: /studio-podcastowe",
+    answer: "Oferujemy produkcję i montaż podcastów. Lokalizację nagrania, sprzęt i budżet ustalamy indywidualnie. Więcej: /studio-podcastowe",
     category: "usługi"
   },
 
@@ -287,10 +301,11 @@ export function ChatbotFAQ() {
         throw error;
       }
 
-      return data?.answer || "Przepraszam, nie mogę teraz odpowiedzieć. Skontaktuj się z nami: kontakt@fotz.pl";
+      const answer = data?.answer || `Przepraszam, nie mogę teraz odpowiedzieć. Skontaktuj się z nami: ${PUBLIC_CONTACT.email}`;
+      return normalizePublicContactDetails(answer);
     } catch (error) {
       console.error('AI response error:', error);
-      return "Przepraszam, wystąpił problem techniczny. Skontaktuj się z nami bezpośrednio: kontakt@fotz.pl lub +48 123 456 789.";
+      return `Przepraszam, wystąpił problem techniczny. Skontaktuj się z nami bezpośrednio: ${PUBLIC_CONTACT.email} lub ${PUBLIC_CONTACT.phone}.`;
     }
   };
 
@@ -379,7 +394,7 @@ export function ChatbotFAQ() {
 
       const escalationMessage: Message = {
         id: Date.now(),
-        text: "✅ Dziękujemy! Nasz konsultant skontaktuje się z Tobą w ciągu 24 godzin roboczych. Jeśli sprawa jest pilna, zadzwoń: +48 123 456 789",
+        text: `✅ Dziękujemy! Nasz konsultant skontaktuje się z Tobą w ciągu 24 godzin roboczych. Jeśli sprawa jest pilna, zadzwoń: ${PUBLIC_CONTACT.phone}`,
         isBot: true,
         isEscalation: true
       };
@@ -393,7 +408,7 @@ export function ChatbotFAQ() {
       console.error("Escalation error:", error);
       toast({
         title: "Błąd wysyłania",
-        description: "Spróbuj ponownie lub zadzwoń: +48 123 456 789",
+        description: `Spróbuj ponownie lub zadzwoń: ${PUBLIC_CONTACT.phone}`,
         variant: "destructive"
       });
     } finally {

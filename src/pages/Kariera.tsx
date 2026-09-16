@@ -85,7 +85,7 @@ const jobOffers = [
 ];
 
 const benefits = [
-  { icon: Coffee, title: "Biuro w centrum Poznania", description: "Plac Wolności 16 - najlepsza lokalizacja" },
+  { icon: Coffee, title: "Współpraca online", description: "Miejsce spotkań ustalamy indywidualnie" },
   { icon: Rocket, title: "Rozwój i szkolenia", description: "Budżet na kursy i konferencje" },
   { icon: Heart, title: "Work-life balance", description: "Elastyczne godziny i praca hybrydowa" },
   { icon: Users, title: "Młody zespół", description: "Średnia wieku 28 lat, zero corporate" },

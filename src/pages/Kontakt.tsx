@@ -12,7 +12,6 @@ import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
 import { BookingCalendar } from "@/components/BookingCalendar";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, LocalBusinessSchema, OrganizationSchema} from "@/components/seo/StructuredData";
@@ -37,9 +36,9 @@ const reelSchema = z.object({
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Adres",
-    content: "Plac Wolności 16",
-    subtitle: "61-739 Poznań",
+    title: "Współpraca",
+    content: "Poznań i online",
+    subtitle: "Spotkania po umówieniu",
   },
   {
     icon: Phone,
@@ -112,22 +111,13 @@ export default function Kontakt() {
       await submitWeb3Form({
         subject: `Nowe zapytanie: ${formData.subject} - od ${formData.name}`,
         from_name: "Fotz Studio - Kontakt",
+        form_id: "kontakt",
         name: formData.name,
         email: formData.email,
         phone: formData.phone || "Nie podano",
         company: formData.company || "Nie podano",
         topic: formData.subject,
         message: formData.message,
-      });
-
-      // Send to CRM webhook (fire and forget)
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        company: formData.company || undefined,
-        source: "website",
-        notes: `Formularz: Kontakt (fotz.pl/kontakt)\nTemat: ${formData.subject}\n\n${formData.message}`,
       });
 
       setIsSubmitted(true);
@@ -166,26 +156,20 @@ export default function Kontakt() {
     setReelSubmitting(true);
     try {
       await submitWeb3Form({
-        subject: `Darmowa rolka - od ${reelData.name}`,
-        from_name: "Fotz Studio - Darmowa rolka",
+        subject: `Pomysły na rolki - od ${reelData.name}`,
+        from_name: "Fotz Studio - Pomysły na rolki",
+        form_id: "pomysly_rolki",
+        conversion_event: "lead_magnet_request",
         name: reelData.name,
         email: reelData.email,
         phone: reelData.phone || "Nie podano",
         company: reelData.company || "Nie podano",
-        message: `Zapytanie o darmową rolkę.\nBranża: ${reelData.business_type}`,
-      });
-      sendLeadToCRM({
-        name: reelData.name,
-        email: reelData.email,
-        phone: reelData.phone || undefined,
-        company: reelData.company || undefined,
-        source: "website",
-        notes: `Formularz: Darmowa rolka (fotz.pl/kontakt)\nBranża: ${reelData.business_type}`,
+        message: `Zapytanie o 3 pomysły na rolki.\nBranża: ${reelData.business_type}`,
       });
       setReelSubmitted(true);
       toast({
         title: "Zgłoszenie wysłane!",
-        description: "Odezwiemy się w ciągu 24 godzin z propozycją rolki.",
+        description: "Odezwiemy się w ciągu 24 godzin z propozycjami tematów.",
       });
     } catch (err) {
       console.error("Reel form error:", err);
@@ -227,8 +211,8 @@ export default function Kontakt() {
               <span className="text-gradient">Twoim projekcie</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground">
-              Jesteśmy gotowi na nowe wyzwania. Napisz do nas lub odwiedź 
-              nasze biuro w centrum Poznania.
+              Napisz do nas lub umów rozmowę online. Nagrania realizujemy u klienta
+              albo w ustalonej wspólnie lokalizacji.
             </p>
           </div>
         </div>
@@ -248,7 +232,7 @@ export default function Kontakt() {
               <Tabs defaultValue="kontakt" className="w-full">
                 <TabsList className="mb-4 sm:mb-6">
                   <TabsTrigger value="kontakt">Wyślij wiadomość</TabsTrigger>
-                  <TabsTrigger value="rolka">Darmowa rolka</TabsTrigger>
+                  <TabsTrigger value="rolka">Pomysły na rolki</TabsTrigger>
                 </TabsList>
 
                 <TabsContent value="kontakt">
@@ -424,7 +408,7 @@ export default function Kontakt() {
                   ) : (
                     <form onSubmit={handleReelSubmit} className="space-y-4 sm:space-y-6">
                       <p className="text-sm text-muted-foreground">
-                        Zostaw dane, a przygotujemy dla Ciebie darmową rolkę — próbkę tego, jak Twoja marka może wyglądać w video.
+                        Zostaw dane, a przygotujemy dla Ciebie 3 pomysły na rolki — próbkę tego, jak Twoja marka może wyglądać w video.
                       </p>
                       <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                         <div>
@@ -543,22 +527,6 @@ export default function Kontakt() {
                 ))}
               </div>
 
-              {/* Map - lazy loaded for LCP optimization */}
-              <div className="aspect-video rounded-xl sm:rounded-2xl overflow-hidden bg-secondary">
-                {isVisible && (
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.0!2d16.9194!3d52.4082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDI0JzI5LjUiTiAxNsKwNTUnMTAuMCJF!5e0!3m2!1spl!2spl!4v1234567890"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Lokalizacja Fotz Studio"
-                  />
-                )}
-              </div>
-
               {/* CTA */}
               <div className="p-4 sm:p-6 rounded-lg sm:rounded-xl bg-primary/10 border border-primary/20">
                 <h3 className="font-heading font-bold text-base sm:text-lg mb-1.5 sm:mb-2">
@@ -661,7 +629,7 @@ export default function Kontakt() {
             </h2>
             <p className="text-muted-foreground mb-4">
               Fotz Studio to agencja marketingowa z Poznania. Jesteśmy dostępni przez
-              formularz kontaktowy, e-mail, telefon i osobiście w biurze. Każde zapytanie
+              formularz kontaktowy, e-mail, telefon i umówioną rozmowę online. Każde zapytanie
               traktujemy priorytetowo — odpowiadamy w ciągu 24 godzin roboczych.
               Niezależnie od etapu Twojego projektu — czy dopiero planujesz, czy potrzebujesz
               szybkiej pomocy — skontaktuj się z nami.
@@ -678,14 +646,14 @@ export default function Kontakt() {
             </h2>
             <p className="text-muted-foreground mb-4">
               Nawiązanie współpracy z Fotz Studio jest proste: wyślij zapytanie przez formularz
-              lub e-mail → umówimy bezpłatną konsultację (online lub w biurze) → przygotujemy
+              lub e-mail → umówimy bezpłatną konsultację (online lub u Ciebie po uzgodnieniu) → przygotujemy
               ofertę dopasowaną do Twoich celów → podpiszemy umowę i zaczynamy działać.
               Typowy czas od pierwszego kontaktu do startu projektu to 1-2 tygodnie.
             </p>
             <p className="text-muted-foreground mb-6">
               Pracujemy z firmami z całej Polski zdalnie — spotkania przez Zoom lub Google Meet,
               komunikacja przez e-mail i Slack, dostęp do raportów online 24/7.
-              Jeśli jesteś z Poznania lub Wielkopolski, zapraszamy też do biura.
+              Miejsce i termin ewentualnego spotkania ustalamy indywidualnie.
             </p>
 
             <h2 className="text-3xl font-heading font-bold mb-6">

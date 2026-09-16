@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import { fileURLToPath } from "node:url";
 import { componentTagger } from "lovable-tagger";
 import viteCompression from "vite-plugin-compression";
 
@@ -32,24 +32,26 @@ export default defineConfig(({ mode }) => ({
   ].filter(Boolean),
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          router: ["react-router-dom"],
-          motion: ["framer-motion"],
-          supabase: ["@supabase/supabase-js"],
-          charts: ["recharts"],
+        manualChunks(id) {
+          if (!id.includes("/node_modules/")) return undefined;
+          if (/\/node_modules\/(react|react-dom)\//.test(id)) return "vendor";
+          if (id.includes("/node_modules/react-router")) return "router";
+          if (id.includes("/node_modules/framer-motion/")) return "motion";
+          if (id.includes("/node_modules/@supabase/")) return "supabase";
+          if (id.includes("/node_modules/recharts/")) return "charts";
+          return undefined;
         },
         // Suppress asset size warnings in console
         assetFileNames: "assets/[name]-[hash][extname]",
       },
     },
-    minify: "esbuild",
+    minify: "oxc",
     // Increase chunk warning limit to 3MB to avoid build interruptions
     chunkSizeWarningLimit: 3000,
     assetsInlineLimit: 4096,

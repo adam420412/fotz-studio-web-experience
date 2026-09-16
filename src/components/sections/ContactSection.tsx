@@ -18,7 +18,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { FadeInView } from "@/components/FadeInView";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 // Validation schema
 const contactSchema = z.object({
@@ -125,15 +124,6 @@ export function ContactSection({ city, variant = "full", title, description }: C
         message: formData.message,
       });
 
-      // Send to CRM webhook (fire-and-forget)
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        source: city ? `fotz.pl - ${city}` : "fotz.pl/kontakt-sekcja",
-        notes: formData.message,
-      });
-
       toast({
         title: "Wiadomość wysłana!",
         description: "Odezwiemy się w ciągu 24 godzin.",
@@ -171,10 +161,10 @@ export function ContactSection({ city, variant = "full", title, description }: C
     },
     {
       icon: MapPin,
-      label: "Adres",
-      value: "Plac Wolności 16",
-      href: "https://maps.google.com/?q=Plac+Wolności+16+Poznań",
-      desc: "61-739 Poznań"
+      label: "Współpraca",
+      value: "Poznań · online",
+      href: "/kontakt",
+      desc: "Spotkania po umówieniu"
     },
   ];
 

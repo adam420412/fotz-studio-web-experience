@@ -363,7 +363,7 @@ export default function BlogProwadzenieSocialMediaCennik() {
               Social media w Fotz Studio — co oferujemy
             </h2>
             <p className="text-lg text-gray-700 mb-4">
-              Fotz Studio to agencja z Poznania — obsługujemy firmy z całej Polski w zakresie pełnej obsługi social media. Łączymy doświadczenie z fotografii i video (własne studio) z wiedzą marketingową — nasze treści wyglądają profesjonalnie, bo sami je tworzymy od A do Z.
+              Fotz Studio to agencja z Poznania — obsługujemy firmy z całej Polski w zakresie pełnej obsługi social media. Łączymy doświadczenie z fotografii i video (produkcja u klienta) z wiedzą marketingową — nasze treści wyglądają profesjonalnie, bo sami je tworzymy od A do Z.
             </p>
             <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl p-6 text-white mb-6">
               <h3 className="text-xl font-bold mb-3">Co wyróżnia naszą obsługę social media:</h3>

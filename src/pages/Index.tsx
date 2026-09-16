@@ -17,7 +17,6 @@ const Services = lazy(() => import("@/components/sections/Services").then(m => (
 const CaseStudies = lazy(() => import("@/components/sections/CaseStudies").then(m => ({ default: m.CaseStudies })));
 const Testimonials = lazy(() => import("@/components/sections/Testimonials").then(m => ({ default: m.Testimonials })));
 const Clients = lazy(() => import("@/components/sections/Clients").then(m => ({ default: m.Clients })));
-const OfficeGallery = lazy(() => import("@/components/sections/OfficeGallery").then(m => ({ default: m.OfficeGallery })));
 const Studio = lazy(() => import("@/components/sections/Studio").then(m => ({ default: m.Studio })));
 const HomeFAQ = lazy(() => import("@/components/sections/HomeFAQ").then(m => ({ default: m.HomeFAQ })));
 const NewsletterSection = lazy(() => import("@/components/sections/NewsletterSection").then(m => ({ default: m.NewsletterSection })));
@@ -58,9 +57,6 @@ const Index = () => {
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <Clients />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <OfficeGallery />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <Studio />
@@ -112,7 +108,7 @@ const Index = () => {
             <h2>Dlaczego firmy wybierają Fotz Studio jako agencję marketingową w Poznaniu?</h2>
             <p>
               Wyróżnia nas kilka cech: zorientowanie na wyniki i ROI, transparentne raportowanie,
-              kompleksowość (wszystko pod jednym dachem), elastyczność (bez długich umów),
+              kompleksowość (w jednym procesie współpracy), elastyczność (na uzgodnionych warunkach),
               doświadczenie w dziesiątkach branż i pasja do marketingu. Nasz zespół specjalistów
               SEO, web developerów, grafików, copywriterów i social media managerów pracuje
               codziennie nad wzrostem Twojego biznesu online.

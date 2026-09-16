@@ -1,5 +1,5 @@
-const CRM_WEBHOOK_URL = "https://uqkmdfpiwquooauvkgwb.supabase.co/functions/v1/crm-webhook";
-import { getUTMs } from "@/lib/utm";
+import { supabase } from "@/integrations/supabase/client";
+import { getAttributionContext } from "@/lib/utm";
 
 interface LeadData {
   name: string;
@@ -14,81 +14,98 @@ interface BookingData {
   name: string;
   email: string;
   phone?: string;
-  booking_date: string; // format: YYYY-MM-DD
-  booking_time: string; // format: HH:MM
+  company?: string;
+  booking_date: string;
+  booking_time: string;
   service_type?: string;
   source?: string;
+  notes?: string;
 }
 
-export async function sendLeadToCRM(data: LeadData): Promise<{ success: boolean; lead_id?: string; error?: string }> {
-  try {
-    const utms = getUTMs();
-    const response = await fetch(CRM_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        type: "lead",
-        data: {
-          name: data.name,
-          email: data.email,
-          phone: data.phone || null,
-          company: data.company || null,
-          source: data.source || "website",
-          notes: data.notes || null,
-          utm_source: utms.utm_source || null,
-          utm_campaign: utms.utm_campaign || null,
-          utm_medium: utms.utm_medium || null,
-          utm_content: utms.utm_content || null,
-          utm_term: utms.utm_term || null,
-        },
-      }),
-    });
+type CRMResult = {
+  success: boolean;
+  queued?: boolean;
+  delivered?: boolean;
+  lead_id?: string;
+  booking_id?: string;
+  error?: string;
+};
 
-    const result = await response.json();
-    
-    if (!response.ok) {
-      console.error("CRM webhook error:", result);
-      return { success: false, error: result.error };
-    }
+const createSubmissionId = () =>
+  globalThis.crypto?.randomUUID?.()
+  || `fotz-${Date.now()}-${Math.random().toString(36).slice(2, 12)}`;
 
-    console.log("Lead sent to CRM:", result);
-    return { success: true, lead_id: result.lead_id };
-  } catch (error) {
-    console.error("CRM webhook failed:", error);
-    return { success: false, error: "Network error" };
+const currentAttribution = () => {
+  const context = getAttributionContext();
+  const active = { ...context.first_touch, ...context.last_touch };
+  return {
+    ...active,
+    landing_page: context.first_touch.landing_page || context.last_touch.landing_page,
+    page_url: context.current_page,
+    first_touch: context.first_touch,
+    last_touch: context.last_touch,
+  };
+};
+
+const invokeCRMProxy = async (payload: Record<string, unknown>): Promise<CRMResult> => {
+  const { data, error } = await supabase.functions.invoke<CRMResult>("crm-sync", { body: payload });
+  if (error || !data?.success) {
+    const message = error?.message || data?.error || "CRM sync failed";
+    console.error("[crm-sync] request failed", message);
+    return { success: false, error: message };
   }
+  return data;
+};
+
+export async function sendLeadToCRM(data: LeadData): Promise<CRMResult> {
+  const submissionId = createSubmissionId();
+  return invokeCRMProxy({
+    version: "2026-09-01",
+    event_type: "lead.captured",
+    submission_id: submissionId,
+    occurred_at: new Date().toISOString(),
+    source: {
+      provider: "website_lovable",
+      channel: "website",
+      detail: data.source || `website:${window.location.pathname}`,
+      external_event_id: submissionId,
+    },
+    contact: {
+      name: data.name,
+      email: data.email,
+      phone: data.phone || null,
+      company: data.company || null,
+    },
+    attribution: currentAttribution(),
+    message: data.notes || null,
+  });
 }
 
-export async function sendBookingToCRM(data: BookingData): Promise<{ success: boolean; lead_id?: string; error?: string }> {
-  try {
-    const response = await fetch(CRM_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        type: "booking",
-        data: {
-          name: data.name,
-          email: data.email,
-          phone: data.phone || null,
-          booking_date: data.booking_date,
-          booking_time: data.booking_time,
-          service_type: data.service_type || "konsultacja",
-          source: data.source || "fotz.pl",
-        },
-      }),
-    });
-
-    const result = await response.json();
-    
-    if (!response.ok) {
-      console.error("CRM webhook error:", result);
-      return { success: false, error: result.error };
-    }
-
-    console.log("Booking sent to CRM:", result);
-    return { success: true, lead_id: result.lead_id };
-  } catch (error) {
-    console.error("CRM webhook failed:", error);
-    return { success: false, error: "Network error" };
-  }
+export async function sendBookingToCRM(data: BookingData): Promise<CRMResult> {
+  const submissionId = createSubmissionId();
+  return invokeCRMProxy({
+    version: "2026-09-01",
+    event_type: "booking.created",
+    submission_id: submissionId,
+    occurred_at: new Date().toISOString(),
+    source: {
+      provider: "website_lovable",
+      channel: "website",
+      detail: data.source || `website:${window.location.pathname}`,
+      external_event_id: submissionId,
+    },
+    contact: {
+      name: data.name,
+      email: data.email,
+      phone: data.phone || null,
+      company: data.company || null,
+    },
+    attribution: currentAttribution(),
+    booking: {
+      date: data.booking_date,
+      time: data.booking_time,
+      service_type: data.service_type || "konsultacja",
+    },
+    message: data.notes || null,
+  });
 }

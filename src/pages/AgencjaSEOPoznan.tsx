@@ -125,7 +125,7 @@ export default function AgencjaSEOPoznan() {
           >
             <motion.div variants={fadeIn} className="mb-4">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#75143F]/20 border border-[#75143F]/30 text-sm text-foreground/80">
-                <MapPin className="w-4 h-4" /> Plac Wolności 16, Poznań
+                <MapPin className="w-4 h-4" /> Poznań · współpraca online
               </span>
             </motion.div>
 

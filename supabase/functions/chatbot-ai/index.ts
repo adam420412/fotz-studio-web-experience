@@ -1,122 +1,82 @@
-import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { checkPublicRateLimit, isAllowedOrigin, publicCorsHeaders } from "../_shared/public-intake.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
+const respond = (req: Request, body: Record<string, unknown>, status = 200) => new Response(
+  JSON.stringify(body),
+  { status, headers: { ...publicCorsHeaders(req), "Content-Type": "application/json" } },
+);
 
-serve(async (req) => {
+const fallback = "Napisz na adam@fotz.pl lub zadzwoń pod +48 790 814 814.";
+
+Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, { headers: corsHeaders });
+    if (!isAllowedOrigin(req)) return new Response(null, { status: 403 });
+    return new Response(null, { headers: publicCorsHeaders(req) });
+  }
+  if (req.method !== "POST") return respond(req, { error: "METHOD_NOT_ALLOWED" }, 405);
+  if (!isAllowedOrigin(req)) return respond(req, { error: "ORIGIN_NOT_ALLOWED" }, 403);
+
+  const rateLimit = await checkPublicRateLimit(req, "chatbot-ai", 12, 600);
+  if (!rateLimit.configured) return respond(req, { error: "RATE_LIMIT_NOT_CONFIGURED", answer: fallback }, 503);
+  if (!rateLimit.allowed) {
+    return respond(req, {
+      error: "rate_limit",
+      answer: `Mam teraz dużo pytań. Spróbuj ponownie za kilka minut albo ${fallback}`,
+    }, 429);
   }
 
+  let message = "";
   try {
-    const { message } = await req.json();
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
-    
-    if (!LOVABLE_API_KEY) {
-      throw new Error("LOVABLE_API_KEY is not configured");
-    }
+    const rawBody = await req.text();
+    if (rawBody.length > 8_000) return respond(req, { error: "PAYLOAD_TOO_LARGE", answer: fallback }, 413);
+    const body = JSON.parse(rawBody) as { message?: unknown };
+    message = typeof body.message === "string" ? body.message.trim().slice(0, 1_000) : "";
+  } catch {
+    return respond(req, { error: "INVALID_JSON", answer: fallback }, 400);
+  }
+  if (!message) return respond(req, { error: "MESSAGE_REQUIRED", answer: fallback }, 400);
 
-    const systemPrompt = `Jesteś pomocnym asystentem agencji marketingowej FOTZ Studio z Poznania. Odpowiadasz krótko, konkretnie i profesjonalnie po polsku.
+  const lovableApiKey = Deno.env.get("LOVABLE_API_KEY")?.trim();
+  if (!lovableApiKey) {
+    console.error("[chatbot-ai] LOVABLE_API_KEY is not configured");
+    return respond(req, { error: "AI_NOT_CONFIGURED", answer: fallback }, 503);
+  }
 
-O firmie FOTZ Studio:
-- Agencja marketingowa i reklamowa z Poznania
-- Specjalizacja: strony internetowe, identyfikacja wizualna, social media, kampanie reklamowe, SEO, produkcja wideo
-- Kontakt: kontakt@fotz.pl, +48 123 456 789
-- Adres: Poznań, ul. Przykładowa 10
-- Godziny pracy: pon-pt 9:00-17:00
+  const systemPrompt = `Jesteś asystentem FOTZ Studio z Poznania. Odpowiadasz po polsku, krótko i konkretnie, maksymalnie w trzech zdaniach.
 
-Usługi i ceny orientacyjne:
-- Strony internetowe: od 3000 zł (2-6 tygodni)
-- Logo i identyfikacja wizualna: od 1500 zł (2-4 tygodnie)
-- Social media: od 2000 zł/msc
-- Kampanie reklamowe: od 2000 zł/msc + budżet reklamowy min. 1500 zł
-- SEO: od 1500 zł/msc (efekty po 3-6 miesiącach)
-- Produkcja wideo: od 3000 zł
+FOTZ Studio pomaga firmom w produkcji wideo i zdjęć, stałym contencie, social media, stronach internetowych, SEO, kampaniach oraz kreacji. Główny rozwijany zakres stałej współpracy to pakiety około 3–5 tys. zł netto, ale dokładna wycena zależy od celu, liczby materiałów i produkcji.
 
-Branże obsługiwane:
-- E-commerce i retail
-- Gastronomia i HoReCa
-- Nieruchomości i deweloperzy
-- Medycyna i zdrowie
-- Beauty i wellness
-- IT i technologie
-- Automotive
-- Turystyka
-- Edukacja
-- NGO i instytucje
-- Prawo i finanse
-- Produkcja przemysłowa
+Kontakt: adam@fotz.pl, +48 790 814 814, Plac Wolności 16, 61-739 Poznań. Bezpłatna konsultacja trwa 30 minut i można ją umówić na /konsultacja.
 
-Proces współpracy:
-1. Bezpłatna konsultacja (30 min)
-2. Brief i wycena
-3. Umowa i zaliczka 50%
-4. Realizacja z feedbackiem klienta
-5. Akceptacja i rozliczenie
+Nie wymyślaj realizacji, terminów, rabatów, gwarantowanych wyników ani cen, których tu nie podano. Gdy brakuje danych, poproś o kontakt lub rezerwację konsultacji.`;
 
-Zasady odpowiedzi:
-- Odpowiadaj krótko (max 2-3 zdania)
-- Bądź pomocny i profesjonalny
-- Zachęcaj do kontaktu lub konsultacji
-- Podawaj konkretne informacje
-- Nie wymyślaj faktów, których nie znasz`;
-
+  try {
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${LOVABLE_API_KEY}`,
+        "Authorization": `Bearer ${lovableApiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         model: "google/gemini-2.5-flash",
         messages: [
           { role: "system", content: systemPrompt },
-          { role: "user", content: message }
+          { role: "user", content: message },
         ],
         max_tokens: 300,
       }),
     });
 
     if (!response.ok) {
-      if (response.status === 429) {
-        return new Response(JSON.stringify({ 
-          error: "rate_limit",
-          answer: "Przepraszam, mam chwilowo dużo pytań. Spróbuj ponownie za chwilę lub skontaktuj się bezpośrednio: kontakt@fotz.pl" 
-        }), {
-          status: 200,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        });
-      }
-      if (response.status === 402) {
-        return new Response(JSON.stringify({ 
-          error: "payment_required",
-          answer: "Przepraszam, wystąpił problem techniczny. Skontaktuj się z nami bezpośrednio: kontakt@fotz.pl lub +48 123 456 789." 
-        }), {
-          status: 200,
-          headers: { ...corsHeaders, "Content-Type": "application/json" },
-        });
-      }
-      const errorText = await response.text();
-      console.error("AI gateway error:", response.status, errorText);
-      throw new Error("AI gateway error");
+      console.error("[chatbot-ai] gateway request failed", { status: response.status });
+      const error = response.status === 429 ? "rate_limit" : response.status === 402 ? "payment_required" : "AI_GATEWAY_ERROR";
+      return respond(req, { error, answer: fallback }, response.status === 429 ? 429 : 502);
     }
 
-    const data = await response.json();
-    const answer = data.choices?.[0]?.message?.content || "Przepraszam, nie mogę teraz odpowiedzieć. Skontaktuj się z nami: kontakt@fotz.pl";
-
-    return new Response(JSON.stringify({ answer }), {
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
-    });
+    const data = await response.json() as { choices?: Array<{ message?: { content?: string } }> };
+    const answer = data.choices?.[0]?.message?.content?.trim() || fallback;
+    return respond(req, { answer: answer.slice(0, 2_000) });
   } catch (error) {
-    console.error("Chatbot error:", error);
-    return new Response(JSON.stringify({ 
-      error: error instanceof Error ? error.message : "Unknown error",
-      answer: "Przepraszam, wystąpił błąd. Skontaktuj się z nami bezpośrednio: kontakt@fotz.pl lub +48 123 456 789."
-    }), {
-      status: 200,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
-    });
+    console.error("[chatbot-ai] network request failed", error instanceof Error ? error.message : "unknown");
+    return respond(req, { error: "AI_NETWORK_ERROR", answer: fallback }, 502);
   }
 });

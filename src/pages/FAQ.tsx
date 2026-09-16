@@ -74,7 +74,7 @@ const faqCategories = [
       },
       {
         question: "Czy tworzysz również treści video (Reelsy, TikToki)?",
-        answer: "Tak, mamy własne studio podcastowe i zespół video. Tworzymy Reelsy, TikToki, YouTube Shorts i dłuższe formaty video. Zajmujemy się całym procesem - od koncepcji przez nagranie po montaż i publikację.",
+        answer: "Tak, zajmujemy się produkcją podcastów i video. Tworzymy Reelsy, TikToki, YouTube Shorts i dłuższe formaty video. Zajmujemy się całym procesem - od koncepcji przez nagranie po montaż i publikację.",
       },
       {
         question: "Jak mierzycie efekty działań w social media?",
@@ -140,7 +140,7 @@ const faqCategories = [
       },
       {
         question: "Czy macie własne studio nagraniowe?",
-        answer: "Tak, posiadamy w pełni wyposażone studio podcastowe w centrum Poznania. Studio pozwala na nagrywanie podcastów, wywiadów, materiałów edukacyjnych i krótkich form video. Oferujemy również wynajem studia.",
+        answer: "Realizujemy produkcję podcastów i wideo. Nagrywamy u klienta lub w osobno uzgodnionej lokalizacji. Nie oferujemy obecnie wynajmu własnego studia.",
       },
       {
         question: "Realizujecie nagrania poza studiem?",
@@ -215,7 +215,7 @@ export default function FAQ() {
               </p>
               <div className="flex items-center gap-2 mt-6 text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Plac Wolności 16, Poznań</span>
+                <span>Poznań · współpraca online</span>
               </div>
             </motion.div>
 

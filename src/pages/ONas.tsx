@@ -159,42 +159,6 @@ export default function ONas() {
         </div>
       </section>
 
-      {/* Office Gallery */}
-      <section className="section-padding bg-card">
-        <div className="container-wide">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              <MapPin className="w-4 h-4" />
-              Plac Wolności 16, Poznań
-            </span>
-            <h2 className="text-3xl md:text-5xl font-heading font-bold">
-              Nasze <span className="text-gradient">biuro</span>
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-            {officeImages.map((image, index) => (
-              <div
-                key={index}
-                className={cn(
-                  "group relative aspect-[3/4] rounded-xl overflow-hidden transition-all duration-700",
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                )}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Values */}
       <section ref={ref} className="section-padding bg-card">
         <div className="container-wide">

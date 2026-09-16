@@ -8,7 +8,7 @@ interface OrganizationSchemaProps {
   email?: string;
   phone?: string;
   address?: {
-    streetAddress: string;
+    streetAddress?: string;
     addressLocality: string;
     postalCode: string;
     addressCountry: string;
@@ -24,7 +24,6 @@ export function OrganizationSchema({
   email = "adam@fotz.pl",
   phone = "+48790814814",
   address = {
-    streetAddress: "Plac Wolności 16",
     addressLocality: "Poznań",
     postalCode: "61-739",
     addressCountry: "PL",
@@ -131,7 +130,6 @@ export function LocalBusinessSchema({
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Plac Wolności 16",
       addressLocality: "Poznań",
       postalCode: "61-739",
       addressRegion: "Wielkopolskie",

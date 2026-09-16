@@ -191,7 +191,7 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
             Robiliśmy sesje foto i produkcje wideo dla marek takich jak <strong>Żabka, WSB Merito, Zakłady Cegielskiego czy FPS</strong>, więc różne branże i różne potrzeby, od czysto wizerunkowych po w pełni kampanijne, przewinęły się przez nasze studio.
           </p>
           <p>
-            Mamy własne studio i zespół na miejscu w Poznaniu, ale dojeżdżamy z ekipą po całej Polsce, więc lokalizacja klienta nie jest ograniczeniem. Jeśli chcesz zobaczyć, jak podchodzimy do fotografii biznesowej całościowo, od zdjęć korporacyjnych po reklamowe, zajrzyj na naszą stronę{" "}
+            Realizujemy nagrania u klienta lub w ustalonej lokalizacji. Dojazd i logistykę ustalamy w zakresie projektu. Jeśli chcesz zobaczyć, jak podchodzimy do fotografii biznesowej całościowo, od zdjęć korporacyjnych po reklamowe, zajrzyj na naszą stronę{" "}
             <Link to="/fotografia-biznesowa" className="text-[#75143F] underline">
               fotografia biznesowa
             </Link>
@@ -213,7 +213,7 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
               Zaplanujmy jeden dzień sesyjny dla Twojej firmy
             </h3>
             <p className="text-white/85 mb-6 max-w-xl mx-auto">
-              Zamów darmową rolkę próbną albo umów 15 minut rozmowy, żeby dopasować zakres sesji pod Twoje cele.
+              Zamów darmową rolkę próbną albo umów 30 minut rozmowy, żeby dopasować zakres sesji pod Twoje cele.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
@@ -226,7 +226,7 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
                 to="/konsultacja"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-white/40 text-white font-semibold hover:bg-white/10 transition-colors"
               >
-                Umów konsultację 15 min
+                Umów konsultację 30 min
               </Link>
             </div>
           </div>

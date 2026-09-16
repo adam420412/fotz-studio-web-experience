@@ -51,13 +51,6 @@ const instagramPosts: InstagramPost[] = [
     client: "Fotz Studio",
   },
   // Office tour
-  {
-    url: "https://www.instagram.com/fotz_studio/reel/DNIqV0nqtj2/",
-    embedUrl: "https://www.instagram.com/reel/DNIqV0nqtj2/embed",
-    type: "reel",
-    title: "Nasze biuro",
-    client: "Fotz Studio Office",
-  },
   // Enea Stadion
   {
     url: "https://www.instagram.com/eneastadion/reel/DQCNKAajM-q/",

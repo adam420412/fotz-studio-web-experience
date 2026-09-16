@@ -590,7 +590,7 @@ export default function AgencjaMarketingowaSzczecin() {
                 Skontaktuj się z nami
               </h2>
               <p className="text-lg text-gray-700 mb-8">
-                Jesteśmy dostępni do dyskusji o Twoim projekcie marketingowym. Zadzwoń, wyślij wiadomość lub umów się na spotkanie w naszym biurze w Szczecinie.
+                Jesteśmy dostępni do dyskusji o Twoim projekcie marketingowym. Zadzwoń, wyślij wiadomość lub umów się na rozmowę online.
               </p>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
