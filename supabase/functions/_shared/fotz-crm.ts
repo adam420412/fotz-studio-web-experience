@@ -149,7 +149,7 @@ const deliverOutboxRow = async (row: OutboxRow): Promise<CRMDeliveryResult> => {
 
 export const queueCRMDelivery = async (rawPayload: CRMJson): Promise<CRMDeliveryResult> => {
   const submissionId = submissionIdFor(rawPayload);
-  const payload = { ...rawPayload, submission_id: submissionId };
+  const payload: CRMJson = { ...rawPayload, submission_id: submissionId };
   const outbox = getOutboxClient();
 
   if (!outbox) {
@@ -204,6 +204,7 @@ export const queueCRMDelivery = async (rawPayload: CRMJson): Promise<CRMDelivery
         event_type: eventTypeFor(payload),
         payload,
         status: "pending",
+        notification_status: payload._notification_requested === true ? "pending" : "not_required",
       })
       .select("id, submission_id, payload, status, attempt_count, connect_hub_event_id, connect_hub_lead_id")
       .single();
@@ -232,7 +233,7 @@ export const retryDueCRMDeliveries = async (limit = 20) => {
   const retentionCutoff = new Date(Date.now() - 30 * 24 * 60 * 60_000).toISOString();
   const rateLimitCutoff = new Date(Date.now() - 7 * 24 * 60 * 60_000).toISOString();
   const [{ error: purgeOutboxError }, { error: purgeLimitsError }] = await Promise.all([
-    outbox.from("crm_delivery_outbox").delete().eq("status", "delivered").lt("delivered_at", retentionCutoff),
+    outbox.from("crm_delivery_outbox").delete().eq("status", "delivered").in("notification_status", ["not_required", "sent"]).lt("delivered_at", retentionCutoff),
     outbox.from("public_intake_rate_limits").delete().lt("updated_at", rateLimitCutoff),
   ]);
   if (purgeOutboxError || purgeLimitsError) {

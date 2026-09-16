@@ -40,8 +40,10 @@ export function NewsletterSection() {
       await submitWeb3Form({
         subject: "Nowy zapis do newslettera - Checklista kampanii",
         from_name: "Fotz Studio - Newsletter",
+        form_id: "newsletter_checklista",
+        marketing_opt_in: true,
         email: email,
-        message: "Użytkownik zapisał się do newslettera i pobrał checklistę skutecznej kampanii.",
+        message: "Użytkownik poprosił o checklistę i zapisał się do newslettera.",
       });
 
       setIsSubmitted(true);

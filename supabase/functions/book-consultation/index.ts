@@ -165,7 +165,8 @@ Deno.serve(async (req) => {
     contact: { name, email, phone, company: company || null },
     attribution,
     consent: {
-      marketing: consent.marketing === true,
+      marketing: false,
+      analytics: consent.analytics === true,
       source: text(consent.source, 240) || null,
       at: text(consent.at, 80) || null,
     },
@@ -184,7 +185,7 @@ Deno.serve(async (req) => {
   }
 
   const metaResult = await sendMetaConversion(req, {
-    consentGranted: consent.marketing === true,
+    consentGranted: consent.analytics === true,
     eventName: "Schedule",
     eventId: submissionId,
     eventSourceUrl: text(attribution.page_url ?? attribution.landing_page, 1500) || null,

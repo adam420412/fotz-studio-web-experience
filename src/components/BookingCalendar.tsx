@@ -170,8 +170,9 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
             last_touch: context.last_touch,
           },
           consent: {
-            marketing: hasMarketingConsent(),
-            source: "website:cookie-banner",
+            marketing: false,
+            analytics: hasMarketingConsent(),
+            source: "website:booking-request",
             at: hasMarketingConsent() ? new Date().toISOString() : null,
           },
         },

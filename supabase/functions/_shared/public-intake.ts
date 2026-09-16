@@ -2,6 +2,7 @@ import { createClient } from "npm:@supabase/supabase-js@2";
 
 const DEFAULT_ORIGINS = new Set([
   "https://fotz-studio-web-experience.lovable.app",
+  "https://preview--fotz-studio-web-experience.lovable.app",
   "https://fotz.pl",
   "https://fotz-studio.pl",
   "https://www.fotz-studio.pl",

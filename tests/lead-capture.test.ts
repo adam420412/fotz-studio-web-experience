@@ -31,3 +31,9 @@ describe('form capture contract',()=>{
     expect(JSON.stringify(mocks.track.mock.calls)).not.toContain(payload.email);
   });
 });
+
+it('preserves a separate explicit newsletter opt-in without cookie acceptance',async()=>{
+  mocks.invoke.mockResolvedValue({data:{success:true}});
+  await submitContactForm({...payload,form_id:'newsletter_checklista',marketing_opt_in:true});
+  expect(mocks.invoke.mock.calls[0][1].body.consent).toMatchObject({analytics:false,marketing:true});
+});
