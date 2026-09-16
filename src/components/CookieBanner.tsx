@@ -41,7 +41,7 @@ export function CookieBanner() {
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
           className="fixed bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 md:left-auto md:right-6 md:bottom-6 md:max-w-md z-50"
         >
-          <div className="bg-card/95 backdrop-blur-xl border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl">
+          <div className="bg-card/95 backdrop-blur-xl border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl max-h-[calc(100dvh-2rem)] overflow-y-auto">
             <button
               onClick={handleReject}
               className="absolute top-3 right-3 sm:top-4 sm:right-4 text-muted-foreground hover:text-foreground transition-colors"
@@ -62,11 +62,11 @@ export function CookieBanner() {
                   Niezbędne mechanizmy utrzymują działanie strony. Za Twoją zgodą włączymy
                   również analitykę i pomiar kampanii marketingowych.
                 </p>
-                <div className="flex gap-2">
-                  <Button onClick={handleAccept} size="sm" className="flex-1 text-xs sm:text-sm h-8 sm:h-9">
+                <div className="flex flex-wrap gap-2">
+                  <Button onClick={handleAccept} size="sm" className="flex-1 basis-36 text-xs sm:text-sm h-auto min-h-9 whitespace-normal py-2">
                     Akceptuję wszystkie
                   </Button>
-                  <Button onClick={handleReject} variant="outline" size="sm" className="flex-1 text-xs sm:text-sm h-8 sm:h-9">
+                  <Button onClick={handleReject} variant="outline" size="sm" className="flex-1 basis-36 text-xs sm:text-sm h-auto min-h-9 whitespace-normal py-2">
                     Niezbędne
                   </Button>
                 </div>
