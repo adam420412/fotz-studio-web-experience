@@ -100,6 +100,20 @@ export async function sendMetaConversion(
       console.error("[meta-capi] request failed", { event_name: input.eventName, status: response.status });
       return { configured: true, sent: false, error: `META_HTTP_${response.status}` };
     }
+    const receipt = await response.json();
+    if (typeof receipt?.events_received !== "number" || receipt.events_received < 1) {
+      console.error("[meta-capi] event not accepted", { event_name: input.eventName, status: response.status });
+      return { configured: true, sent: false, error: "META_EVENT_NOT_ACCEPTED" };
+    }
+    // Record the receipt without credentials or contact/user_data fields.
+    console.info("[meta-capi] accepted", {
+      event_name: input.eventName,
+      event_id: input.eventId,
+      dataset_id: datasetId,
+      test_mode: Boolean(testEventCode),
+      events_received: receipt.events_received,
+      trace_id: typeof receipt.fbtrace_id === "string" ? receipt.fbtrace_id : undefined,
+    });
     return { configured: true, sent: true };
   } catch (error) {
     console.error("[meta-capi] network failed", {
