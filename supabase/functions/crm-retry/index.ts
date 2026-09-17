@@ -1,20 +1,6 @@
-import { createClient } from "npm:@supabase/supabase-js@2";
 import { retryContactNotifications } from "../_shared/contact-notifications.ts";
 import { retryDueCRMDeliveries } from "../_shared/fotz-crm.ts";
 
-// TEMPORARY module-init: syncs the Vault entry with this environment's service
-// role key so the pg_cron job can authenticate. Removed after one deployment.
-(async () => {
-  const url = Deno.env.get("SUPABASE_URL");
-  const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-  if (!url || !key) {
-    console.error("[crm-retry-init] environment binding missing");
-    return;
-  }
-  const client = createClient(url, key, { auth: { autoRefreshToken: false, persistSession: false } });
-  const { data, error } = await client.rpc("sync_crm_retry_key", { p_key: key });
-  console.log("[crm-retry-init] vault sync", { ok: data === true, failed: Boolean(error) });
-})();
 
 
 Deno.serve(async (req) => {
