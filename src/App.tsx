@@ -1,3 +1,4 @@
+import MarketingPageView from "@/components/MarketingPageView";
 import { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -15,6 +16,7 @@ import Index from "./pages/Index";
 // Lazy load all other pages for code splitting
 const Uslugi = lazy(() => import("./pages/Uslugi"));
 const Realizacje = lazy(() => import("./pages/Realizacje"));
+const StronaDlaFirmy = lazy(() => import("./pages/StronaDlaFirmy"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
 const Konsultacja = lazy(() => import("./pages/Konsultacja"));
 const ONas = lazy(() => import("./pages/ONas"));
@@ -1536,6 +1538,7 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <ScrollToTop />
+      <MarketingPageView />
             <ErrorBoundary>
             <Suspense fallback={<PageLoader />}>
               <Routes>
@@ -1560,7 +1563,8 @@ const App = () => (
                 <Route path="/realizacje/cute-dumpling" element={<CaseStudyCuteDumpling />} />
                 <Route path="/realizacje/apartamenty-chorwacja" element={<CaseStudyApartamenty />} />
                 <Route path="/realizacje/lauvjah" element={<CaseStudyLauvjah />} />
-                <Route path="/kontakt" element={<Kontakt />} />
+                <Route path="/strona-dla-firmy" element={<StronaDlaFirmy />} />
+          <Route path="/kontakt" element={<Kontakt />} />
                 <Route path="/konsultacja" element={<Konsultacja />} />
                 <Route path="/o-nas" element={<ONas />} />
                 <Route path="/blog" element={<Blog />} />

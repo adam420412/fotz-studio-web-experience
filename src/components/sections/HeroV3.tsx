@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 type LiveStatProps = {
   label: string;
@@ -46,64 +46,6 @@ type VideoStatProps = {
   poster?: string;
 };
 
-function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
-  return (
-    <div
-      className="flex-1 relative overflow-hidden border-b border-[color:var(--dv-hair)] min-h-[260px] md:min-h-[300px]"
-      style={{ color: "#fff" }}
-    >
-      {/* Autoplay video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        src={src}
-        poster={poster}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        aria-hidden="true"
-      />
-
-      {/* Readability gradient */}
-      <div
-        aria-hidden
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0.55) 100%)",
-        }}
-      />
-
-      {/* Copy */}
-      <div className="relative h-full flex flex-col justify-between px-8 py-12 md:px-12 md:py-14">
-        <div className="flex items-center gap-2">
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/15 backdrop-blur-sm">
-            <Play className="w-3 h-3" strokeWidth={2} fill="currentColor" />
-          </span>
-          <span className="dv-mono uppercase tracking-[0.14em] text-[11px] opacity-85">
-            {label}
-          </span>
-        </div>
-        <div className="mt-8">
-          <div
-            className="font-geist leading-[0.95] mb-3"
-            style={{
-              fontSize: "clamp(32px, 3.2vw, 52px)",
-              letterSpacing: "-0.03em",
-            }}
-          >
-            {caption}
-          </div>
-          <div className="dv-mono uppercase tracking-[0.1em] text-xs opacity-75">
-            {sub}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function HeroV3() {
   return (
     <section
@@ -131,8 +73,8 @@ export function HeroV3() {
       {/* LEFT — editorial copy */}
       <div className="relative flex flex-col justify-between px-6 py-14 md:px-12 md:py-16 lg:border-r border-[color:var(--dv-hair)]">
         <div className="flex flex-wrap items-center justify-between gap-3 dv-mono uppercase tracking-[0.14em] text-[11px] md:text-xs text-[color:var(--dv-fg-muted)]">
-          <span>Fotz Studio · Plac Wolności 16 · Poznań</span>
-          <span>52.4082° N · 16.9335° E</span>
+          <span>Fotz Studio · Poznań · cała Polska</span>
+          <span>WWW / Social / Wideo</span>
         </div>
 
         <div className="py-20 md:py-24">
@@ -163,8 +105,8 @@ export function HeroV3() {
               maxWidth: 560,
             }}
           >
-            Od strategii do zasięgu — własne studio, zespół na miejscu, zero
-            outsourcingu. Ostatnie 12 miesięcy:
+            Strony internetowe, treści i kampanie dla firm. Współpracujemy online,
+            a nagrania realizujemy u Ciebie lub w uzgodnionej lokalizacji.
           </p>
 
           <div className="flex flex-wrap gap-3 mt-8 md:mt-10">
@@ -179,8 +121,8 @@ export function HeroV3() {
 
           <div className="flex flex-wrap items-center gap-6 mt-10 dv-mono uppercase tracking-[0.14em] text-[11px] text-[color:var(--dv-fg-muted)]">
             <span className="inline-flex items-center gap-2">
-              <span style={{ color: "rgb(230,130,170)" }}>★★★★★</span>
-              5.0 · 160+ Google
+              <span style={{ color: "rgb(230,130,170)" }}>↗</span>
+              Porozmawiajmy o Twojej firmie
             </span>
             <span className="hidden md:inline-block w-px h-3.5 bg-[color:var(--dv-hair)]" />
             <a href="tel:+48790814814" className="hover:text-foreground transition-colors">
@@ -191,36 +133,17 @@ export function HeroV3() {
 
         <div className="flex flex-wrap gap-10 dv-mono uppercase tracking-[0.14em] text-[11px] text-[color:var(--dv-fg-muted)]">
           <span>(↓) Scroll</span>
-          <span>Plac Wolności 16</span>
-          <span>EST. 2012</span>
+          <span>Współpraca online</span>
+          <span>FOTZ STUDIO</span>
         </div>
       </div>
 
       {/* RIGHT — live stats panel */}
       <div className="relative flex flex-col">
-        <LiveStat
-          label="Wyświetlenia treści / mies."
-          value="1M+"
-          sub="Zasięg portfolio klientów"
-        />
-        <LiveStat
-          label="Opinii Google"
-          value="5.0 / 160+"
-          sub="Od 2014 · stale aktualizowane"
-          accent
-        />
-        <LiveStat
-          label="Lat doświadczenia"
-          value="12+"
-          sub="Studio marketingu wzrostu"
-        />
-        <VideoStat
-          label="Showreel · auto"
-          caption="Fotz Reel"
-          sub="Kulisy produkcji · 2024"
-          src="/videos/fotz-reel.mp4"
-          poster="/videos/fotz-reel-poster.jpg"
-        />
+        <LiveStat label="Strony internetowe" value="WWW" sub="Oferta, realizacje i wygodny kontakt" />
+        <LiveStat label="Prowadzenie profili" value="Social" sub="Pomysł, produkcja i publikacja" accent />
+        <LiveStat label="Produkcja treści" value="Wideo" sub="Nagrania w Twojej firmie" />
+
       </div>
     </section>
   );

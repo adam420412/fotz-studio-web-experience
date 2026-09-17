@@ -131,7 +131,7 @@ const YouTubeAds = () => {
     },
     {
       question: "Czy tworzycie materiały wideo do reklam YouTube?",
-      answer: "Tak, mamy własne studio produkcyjne i tworzymy profesjonalne spoty reklamowe zoptymalizowane pod YouTube. Produkujemy różne wersje (6s, 15s, 30s) do testów A/B. Zobacz nasze realizacje wideo i spoty reklamowe."
+      answer: "Tak, tworzymy profesjonalne spoty reklamowe zoptymalizowane pod YouTube. Produkujemy różne wersje (6s, 15s, 30s) do testów A/B. Zobacz nasze realizacje wideo i spoty reklamowe."
     },
   ];
 

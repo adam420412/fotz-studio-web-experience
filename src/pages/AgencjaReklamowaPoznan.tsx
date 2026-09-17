@@ -590,7 +590,7 @@ const AgencjaReklamowaPoznan = () => {
                 <Mail className="h-5 w-5" /> adam@fotz.pl
               </a>
               <span className="flex items-center gap-2">
-                <MapPin className="h-5 w-5" /> Plac Wolności 16, Poznań
+                <MapPin className="h-5 w-5" /> Poznań · współpraca online
               </span>
             </motion.div>
           </motion.div>

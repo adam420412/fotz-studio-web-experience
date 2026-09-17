@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     question: "Czy tworzycie treści video (Reels/TikTok)?",
-    answer: "Tak! Posiadamy własne studio w Poznaniu. Tworzymy Reels, TikToki, Stories i dłuższe materiały video. Współpracujemy z klientami przy nagraniach lub tworzymy content samodzielnie."
+    answer: "Tak! Nagrywamy u klienta lub w uzgodnionej lokalizacji. Tworzymy Reels, TikToki, Stories i dłuższe materiały video. Współpracujemy z klientami przy nagraniach lub tworzymy content samodzielnie."
   },
   {
     question: "Na jakich platformach pracujecie?",

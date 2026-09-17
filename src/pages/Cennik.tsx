@@ -49,7 +49,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 
 
@@ -738,15 +737,6 @@ export default function Cennik() {
         message: formData.message,
         selected_services: servicesSummary,
         price_estimate: priceSummary,
-      });
-
-      // Send to CRM webhook (fire and forget)
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        source: "fotz.pl/cennik",
-        notes: `${formData.message}\n\n--- Wybrane usługi ---\n${servicesSummary}\n\n${priceSummary}`,
       });
 
       toast({

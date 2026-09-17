@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { CheckCircle, Clock, Target, Zap, Loader2, Send, Phone, ArrowRight, Award, Users, TrendingUp } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -11,11 +11,11 @@ import { FadeInView, StaggerContainer, StaggerItem } from "@/components/FadeInVi
 import { cn } from "@/lib/utils";
 import { z } from "zod";
 import { Link } from "react-router-dom";
-import { sendLeadToCRM } from "@/hooks/useCRMWebhook";
 import { submitWeb3Form } from "@/lib/web3forms";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { BreadcrumbSchema, FAQSchema, LocalBusinessSchema } from "@/components/seo/StructuredData";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { BookingCalendar } from "@/components/BookingCalendar";
 
 const consultationSchema = z.object({
   name: z.string().trim().min(2, "Imię musi mieć minimum 2 znaki").max(100, "Imię max 100 znaków"),
@@ -95,15 +95,6 @@ export default function Konsultacja() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  useEffect(() => {
-    const src = "https://assets.calendly.com/assets/external/widget.js";
-    if (document.querySelector(`script[src="${src}"]`)) return;
-    const s = document.createElement("script");
-    s.src = src;
-    s.async = true;
-    document.body.appendChild(s);
-  }, []);
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -135,7 +126,7 @@ export default function Konsultacja() {
 
     try {
       await submitWeb3Form({
-        subject: `Nowe zapytanie o konsultację - od ${formData.name}`,
+        subject: `Prośba o kontakt przed konsultacją - od ${formData.name}`,
         from_name: "Fotz Studio - Konsultacja",
         name: formData.name,
         email: formData.email,
@@ -144,19 +135,10 @@ export default function Konsultacja() {
         message: formData.message || "Brak dodatkowych informacji",
       });
 
-      sendLeadToCRM({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone || undefined,
-        company: formData.company || undefined,
-        source: "fotz.pl/konsultacja",
-        notes: `Zapytanie o darmową konsultację.\n\n${formData.message || "Brak dodatkowych informacji"}`,
-      });
-
       setIsSubmitted(true);
       toast({
         title: "Zapytanie wysłane!",
-        description: "Skontaktujemy się z Tobą w ciągu 24 godzin, aby umówić konsultację.",
+        description: "Odpowiemy w ciągu 24 godzin i wspólnie wybierzemy termin.",
       });
 
       // Reset form after 3 seconds
@@ -209,22 +191,20 @@ export default function Konsultacja() {
         </div>
       </section>
 
-      {/* Calendly Inline Widget */}
-      <section id="calendly" className="section-padding bg-card">
+      {/* Własny kalendarz połączony z Connect Hub */}
+      <section id="rezerwacja" className="section-padding bg-card">
         <div className="container-wide">
           <FadeInView className="text-center mb-8 sm:mb-10">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold mb-3">
-              Umów <span className="text-gradient">15 minut rozmowy</span>
+              Umów <span className="text-gradient">30 minut rozmowy</span>
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
               Wybierz dogodny termin — potwierdzenie trafi na Twój email natychmiast.
             </p>
           </FadeInView>
-          <div
-            className="calendly-inline-widget rounded-xl sm:rounded-2xl overflow-hidden border border-border bg-background"
-            data-url="https://calendly.com/fotz/konsultacja?hide_gdpr_banner=1"
-            style={{ minWidth: "320px", height: "720px" }}
-          />
+          <div className="mx-auto max-w-3xl rounded-xl border border-border bg-background p-5 sm:rounded-2xl sm:p-8">
+            <BookingCalendar />
+          </div>
         </div>
       </section>
 
@@ -309,8 +289,11 @@ export default function Konsultacja() {
               )}
             >
               <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold mb-4 sm:mb-6">
-                Umów konsultację
+                Nie widzisz dobrego terminu?
               </h2>
+              <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
+                Zostaw kontakt — odpowiemy i dobierzemy inny termin rozmowy.
+              </p>
 
               {isSubmitted ? (
                 <div className="p-6 sm:p-8 rounded-xl sm:rounded-2xl bg-primary/10 border border-primary/20 text-center">
@@ -319,7 +302,7 @@ export default function Konsultacja() {
                     Dziękujemy!
                   </h3>
                   <p className="text-sm sm:text-base text-muted-foreground">
-                    Skontaktujemy się z Tobą w ciągu 24 godzin, aby umówić konsultację.
+                    Odpowiemy w ciągu 24 godzin i wspólnie wybierzemy termin.
                   </p>
                 </div>
               ) : (
@@ -411,7 +394,7 @@ export default function Konsultacja() {
                       </>
                     ) : (
                       <>
-                        Umów konsultację
+                        Poproś o kontakt
                         <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                       </>
                     )}

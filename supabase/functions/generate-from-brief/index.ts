@@ -4,17 +4,13 @@
 // draft into blog_articles (is_published=false) -> mark job done.
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.0";
+import { isAllowedOrigin, publicCorsHeaders } from "../_shared/public-intake.ts";
+import { isAdminRequest } from "../_shared/require-admin.ts";
 
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers":
-    "authorization, x-client-info, apikey, content-type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-};
-
-const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
-const SERVICE_ROLE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY")!;
+const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? "";
+const SERVICE_ROLE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY") ?? "";
+const MAX_BODY_BYTES = 8_192;
 
 const SYSTEM_PROMPT = `Jesteś senior content writerem agencji Fotz Studio (Poznań) — premium creative studio specjalizujące się w marketingu, social media, video, web i SEO.
 
@@ -74,8 +70,8 @@ async function callLLM(prompt: string): Promise<string> {
   });
 
   if (!res.ok) {
-    const txt = await res.text();
-    throw new Error(`AI gateway ${res.status}: ${txt.slice(0, 500)}`);
+    await res.body?.cancel();
+    throw new Error(`AI gateway returned ${res.status}`);
   }
   const data = await res.json();
   return data.choices?.[0]?.message?.content ?? "";
@@ -93,14 +89,59 @@ function extractJson(raw: string): Record<string, unknown> {
 }
 
 Deno.serve(async (req) => {
+  const headers = publicCorsHeaders(req);
   if (req.method === "OPTIONS") {
-    return new Response("ok", { headers: corsHeaders });
+    return new Response(isAllowedOrigin(req) ? "ok" : "Forbidden", {
+      status: isAllowedOrigin(req) ? 200 : 403,
+      headers,
+    });
+  }
+  if (req.method !== "POST") {
+    return new Response(JSON.stringify({ ok: false, error: "METHOD_NOT_ALLOWED" }), {
+      status: 405,
+      headers: { ...headers, "Content-Type": "application/json" },
+    });
+  }
+  if (!isAllowedOrigin(req)) {
+    return new Response(JSON.stringify({ ok: false, error: "ORIGIN_NOT_ALLOWED" }), {
+      status: 403,
+      headers: { ...headers, "Content-Type": "application/json" },
+    });
+  }
+  if (!(await isAdminRequest(req))) {
+    return new Response(JSON.stringify({ ok: false, error: "UNAUTHORIZED" }), {
+      status: 401,
+      headers: { ...headers, "Content-Type": "application/json" },
+    });
+  }
+  if (!SUPABASE_URL || !SERVICE_ROLE || !LOVABLE_API_KEY) {
+    console.error("[generate-from-brief] required server configuration is missing");
+    return new Response(JSON.stringify({ ok: false, error: "SERVICE_NOT_CONFIGURED" }), {
+      status: 503,
+      headers: { ...headers, "Content-Type": "application/json" },
+    });
   }
 
+  let activeJobId: string | undefined;
   try {
     const supabase = createClient(SUPABASE_URL, SERVICE_ROLE);
-    const body = await req.json().catch(() => ({}));
-    const jobId: string | undefined = body.job_id;
+    const rawBody = await req.text();
+    if (new TextEncoder().encode(rawBody).byteLength > MAX_BODY_BYTES) {
+      return new Response(JSON.stringify({ ok: false, error: "PAYLOAD_TOO_LARGE" }), {
+        status: 413,
+        headers: { ...headers, "Content-Type": "application/json" },
+      });
+    }
+    const body = rawBody ? JSON.parse(rawBody) as Record<string, unknown> : {};
+    const jobId = typeof body.job_id === "string" && body.job_id.length <= 128
+      ? body.job_id
+      : undefined;
+    if (body.job_id !== undefined && !jobId) {
+      return new Response(JSON.stringify({ ok: false, error: "INVALID_JOB_ID" }), {
+        status: 400,
+        headers: { ...headers, "Content-Type": "application/json" },
+      });
+    }
 
     // Pick job: explicit id or oldest pending
     let query = supabase.from("topical_brief_jobs").select("*").limit(1);
@@ -113,14 +154,16 @@ Deno.serve(async (req) => {
     if (!job) {
       return new Response(
         JSON.stringify({ ok: true, message: "no pending jobs" }),
-        { headers: { ...corsHeaders, "Content-Type": "application/json" } }
+        { headers: { ...headers, "Content-Type": "application/json" } }
       );
     }
+    activeJobId = job.id;
 
-    await supabase
+    const { error: runningError } = await supabase
       .from("topical_brief_jobs")
       .update({ status: "running", attempts: job.attempts + 1 })
       .eq("id", job.id);
+    if (runningError) throw runningError;
 
     const prompt = buildUserPrompt(job);
     const raw = await callLLM(prompt);
@@ -164,7 +207,7 @@ Deno.serve(async (req) => {
       .single();
     if (insErr) throw insErr;
 
-    await supabase
+    const { error: doneError } = await supabase
       .from("topical_brief_jobs")
       .update({
         status: "done",
@@ -172,10 +215,11 @@ Deno.serve(async (req) => {
         last_error: null,
       })
       .eq("id", job.id);
+    if (doneError) throw doneError;
 
     return new Response(
       JSON.stringify({ ok: true, article_id: inserted.id, slug: job.target_slug }),
-      { headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      { headers: { ...headers, "Content-Type": "application/json" } }
     );
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
@@ -183,19 +227,18 @@ Deno.serve(async (req) => {
     // Best effort: mark job failed
     try {
       const supabase = createClient(SUPABASE_URL, SERVICE_ROLE);
-      const body = await req.clone().json().catch(() => ({}));
-      if (body.job_id) {
+      if (activeJobId) {
         await supabase
           .from("topical_brief_jobs")
           .update({ status: "failed", last_error: message.slice(0, 1000) })
-          .eq("id", body.job_id);
+          .eq("id", activeJobId);
       }
-    } catch (_) {
+    } catch {
       // ignore
     }
-    return new Response(JSON.stringify({ ok: false, error: message }), {
+    return new Response(JSON.stringify({ ok: false, error: "PROCESSING_FAILED" }), {
       status: 500,
-      headers: { ...corsHeaders, "Content-Type": "application/json" },
+      headers: { ...headers, "Content-Type": "application/json" },
     });
   }
 });

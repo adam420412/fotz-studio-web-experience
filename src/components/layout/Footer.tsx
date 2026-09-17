@@ -80,7 +80,7 @@ const footerLinks = {
     { name: "Kontakt", href: "/kontakt" },
     { name: "Mapa strony", href: "/mapa-strony" },
     { name: "Zainstaluj aplikację", href: "/zainstaluj" },
-    { name: "Panel klienta", href: "https://panel.fotz.pl/login", external: true },
+    { name: "Panel klienta", href: "https://fotz-connect-hub.lovable.app", external: true },
   ],
   narzedzia: [
     { name: "Quiz rekomendacyjny", href: "/quiz" },
@@ -228,7 +228,7 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-10 mb-10 border-b border-white/10">
           <div>
             <h3 className="font-geist text-white text-xl md:text-2xl mb-1" style={{ letterSpacing: "-0.02em" }}>
-              Wolisz krótki call? Umów 15 minut.
+              Wolisz krótki call? Umów 30 minut.
             </h3>
             <p className="dv-mono uppercase tracking-[0.14em] text-[11px] text-white/50">
               Bez zobowiązań · pierwszy wolny termin online
@@ -239,7 +239,7 @@ export function Footer() {
             className="dv-btn dv-btn-primary h-12 inline-flex items-center gap-2 whitespace-nowrap"
           >
             <Calendar className="w-4 h-4" strokeWidth={1.5} />
-            Umów konsultację 15 min
+            Umów konsultację 30 min
           </Link>
         </div>
 
@@ -346,7 +346,7 @@ export function Footer() {
                   className="w-4 h-4 text-[color:var(--dv-accent-pink)] shrink-0 mt-0.5"
                   strokeWidth={1.5}
                 />
-                <span>Plac Wolności 16 · 61-739 Poznań</span>
+                <span>Poznań · online · 61-739 Poznań</span>
               </div>
               <div className="flex items-start gap-2">
                 <Phone

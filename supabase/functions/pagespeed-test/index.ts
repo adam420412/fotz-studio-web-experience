@@ -1,9 +1,8 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { isAllowedOrigin, publicCorsHeaders } from "../_shared/public-intake.ts";
+import { isAdminRequest } from "../_shared/require-admin.ts";
 
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-};
+const responseHeaders = (req: Request) => ({ ...publicCorsHeaders(req), 'Content-Type': 'application/json' });
 
 interface PageSpeedResult {
   score: number;
@@ -28,8 +27,12 @@ interface PageSpeedResult {
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
-    return new Response(null, { headers: corsHeaders });
+    if (!isAllowedOrigin(req)) return new Response(null, { status: 403 });
+    return new Response(null, { headers: responseHeaders(req) });
   }
+  if (req.method !== 'POST') return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405, headers: responseHeaders(req) });
+  if (!isAllowedOrigin(req)) return new Response(JSON.stringify({ error: 'Origin not allowed' }), { status: 403, headers: responseHeaders(req) });
+  if (!(await isAdminRequest(req))) return new Response(JSON.stringify({ error: 'Admin access required' }), { status: 403, headers: responseHeaders(req) });
 
   try {
     const { url, strategy = 'mobile' } = await req.json();
@@ -37,7 +40,7 @@ serve(async (req) => {
     if (!url) {
       return new Response(
         JSON.stringify({ error: 'URL is required' }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        { status: 400, headers: responseHeaders(req) }
       );
     }
 
@@ -63,7 +66,7 @@ serve(async (req) => {
       console.error('PageSpeed API error:', errorText);
       return new Response(
         JSON.stringify({ error: 'Failed to fetch PageSpeed data', details: errorText }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        { status: 500, headers: responseHeaders(req) }
       );
     }
 
@@ -73,7 +76,7 @@ serve(async (req) => {
     if (!lighthouse) {
       return new Response(
         JSON.stringify({ error: 'No Lighthouse results returned' }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        { status: 500, headers: responseHeaders(req) }
       );
     }
 
@@ -138,7 +141,7 @@ serve(async (req) => {
 
     return new Response(
       JSON.stringify(result),
-      { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      { headers: responseHeaders(req) }
     );
 
   } catch (error) {
@@ -146,7 +149,7 @@ serve(async (req) => {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return new Response(
       JSON.stringify({ error: 'Internal server error', details: errorMessage }),
-      { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      { status: 500, headers: responseHeaders(req) }
     );
   }
 });

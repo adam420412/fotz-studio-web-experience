@@ -38,7 +38,7 @@ const variantCopy = {
       },
       {
         q: `Czy musimy spotykać się stacjonarnie w ${cityLoc}?`,
-        a: `Nie wymagamy spotkań stacjonarnych — całą współpracę prowadzimy zdalnie (Google Meet, Slack, Asana). Jeśli jednak preferujesz osobisty kontakt, organizujemy kwartalne spotkania strategiczne w ${cityLoc} lub zapraszamy do naszego biura w Poznaniu.`,
+        a: `Nie wymagamy spotkań stacjonarnych — całą współpracę prowadzimy zdalnie (Google Meet, Slack, Asana). Jeśli jednak preferujesz osobisty kontakt, organizujemy kwartalne spotkania strategiczne w ${cityLoc} lub w innej uzgodnionej lokalizacji.`,
       },
       {
         q: `Jak długo trwa, zanim zobaczę pierwsze efekty marketingu w ${city}?`,
@@ -50,7 +50,7 @@ const variantCopy = {
       },
       {
         q: `Co odróżnia FOTZ od innych agencji w ${cityLoc}?`,
-        a: `Łączymy performance marketing z produkcją kreatywną in-house — własne studio video, fotografia, branding, a nie tylko obsługa kampanii. Dzięki temu nasi klienci nie muszą koordynować trzech różnych dostawców, a kreacje reklamowe powstają z pełnym zrozumieniem strategii mediowej.`,
+        a: `Łączymy performance marketing z produkcją kreatywną in-house — nagrania wideo u klienta, fotografia, branding, a nie tylko obsługa kampanii. Dzięki temu nasi klienci nie muszą koordynować trzech różnych dostawców, a kreacje reklamowe powstają z pełnym zrozumieniem strategii mediowej.`,
       },
     ],
   },
@@ -110,7 +110,7 @@ const variantCopy = {
       },
       {
         q: `Jak długo trwa uruchomienie sklepu?`,
-        a: `Sklep startowy uruchamiamy w 4-6 tygodni, średni z integracjami w 8-12 tygodni, a rozbudowany B2B w 12-20 tygodni. Kluczowy etap to przygotowanie zdjęć produktowych i opisów — możemy zrobić sesję w naszym studio w Poznaniu lub u klienta w ${cityLoc}.`,
+        a: `Sklep startowy uruchamiamy w 4-6 tygodni, średni z integracjami w 8-12 tygodni, a rozbudowany B2B w 12-20 tygodni. Kluczowy etap to przygotowanie zdjęć produktowych i opisów — możemy zrobić sesję w uzgodnionej lokalizacji lub u klienta w ${cityLoc}.`,
       },
       {
         q: `Czy zajmujecie się też reklamą sklepu po uruchomieniu?`,

@@ -82,7 +82,7 @@ export default function AgencjaMarketingowaWroclaw() {
     },
     {
       question: "Czy mogę się spotkać z agencją FOTZ osobiście w Wrocławiu?",
-      answer: "Tak, możliwe są spotkania w naszym biurze w Starym Mieście we Wrocławiu. Oferujemy też konsultacje online. Zapraszamy do kontaktu, aby umówić się na spotkanie lub rozmowę wideo."
+      answer: "Współpracujemy online. Miejsce ewentualnego spotkania stacjonarnego ustalamy indywidualnie. Zapraszamy do kontaktu, aby umówić się na spotkanie lub rozmowę wideo."
     }
   ];
 

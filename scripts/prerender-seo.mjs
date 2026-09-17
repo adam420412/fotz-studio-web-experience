@@ -341,6 +341,7 @@ for (const route of routes) {
     fs.writeFileSync(outputFile, html, 'utf-8');
     generated++;
   } catch (err) {
+    process.exitCode = 1;
     console.error(`   ❌ Error writing ${outputFile}: ${err.message}`);
     errors++;
   }
