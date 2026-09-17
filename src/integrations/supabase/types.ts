@@ -501,7 +501,6 @@ export type Database = {
         }
         Returns: boolean
       }
-      sync_crm_retry_key: { Args: { p_key: string }; Returns: boolean }
     }
     Enums: {
       app_role: "admin" | "user"
