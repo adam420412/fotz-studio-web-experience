@@ -142,46 +142,79 @@ export type Database = {
       }
       bookings: {
         Row: {
+          agency_notification_sent_at: string | null
           booking_date: string
           booking_time: string
+          client_confirmation_sent_at: string | null
           client_email: string
           client_name: string
           client_phone: string | null
           created_at: string
+          fbclid: string | null
+          gclid: string | null
           id: string
+          landing_page: string | null
+          metadata: Json
           notes: string | null
           service_type: string
           source: string | null
           status: string
+          submission_id: string | null
           updated_at: string
+          utm_campaign: string | null
+          utm_content: string | null
+          utm_medium: string | null
+          utm_source: string | null
         }
         Insert: {
+          agency_notification_sent_at?: string | null
           booking_date: string
           booking_time: string
+          client_confirmation_sent_at?: string | null
           client_email: string
           client_name: string
           client_phone?: string | null
           created_at?: string
+          fbclid?: string | null
+          gclid?: string | null
           id?: string
+          landing_page?: string | null
+          metadata?: Json
           notes?: string | null
           service_type?: string
           source?: string | null
           status?: string
+          submission_id?: string | null
           updated_at?: string
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
         }
         Update: {
+          agency_notification_sent_at?: string | null
           booking_date?: string
           booking_time?: string
+          client_confirmation_sent_at?: string | null
           client_email?: string
           client_name?: string
           client_phone?: string | null
           created_at?: string
+          fbclid?: string | null
+          gclid?: string | null
           id?: string
+          landing_page?: string | null
+          metadata?: Json
           notes?: string | null
           service_type?: string
           source?: string | null
           status?: string
+          submission_id?: string | null
           updated_at?: string
+          utm_campaign?: string | null
+          utm_content?: string | null
+          utm_medium?: string | null
+          utm_source?: string | null
         }
         Relationships: []
       }
@@ -437,6 +470,28 @@ export type Database = {
           p_window_seconds: number
         }
         Returns: boolean
+      }
+      create_website_booking: {
+        Args: {
+          p_booking_date: string
+          p_booking_time: string
+          p_client_email: string
+          p_client_name: string
+          p_client_phone: string
+          p_fbclid: string
+          p_gclid: string
+          p_landing_page: string
+          p_metadata: Json
+          p_notes: string
+          p_service_type: string
+          p_source: string
+          p_submission_id: string
+          p_utm_campaign: string
+          p_utm_content: string
+          p_utm_medium: string
+          p_utm_source: string
+        }
+        Returns: string
       }
       has_active_subscription: { Args: { _user_id: string }; Returns: boolean }
       has_role: {
