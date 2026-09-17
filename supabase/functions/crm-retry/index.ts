@@ -1,6 +1,7 @@
 import { retryContactNotifications } from "../_shared/contact-notifications.ts";
 import { retryDueCRMDeliveries } from "../_shared/fotz-crm.ts";
 
+
 Deno.serve(async (req) => {
   const role = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
   if (!role || req.headers.get("authorization") !== `Bearer ${role}`) {
