@@ -100,3 +100,6 @@ form.addEventListener('submit', async event => {
     form.removeAttribute('aria-busy'); result.hidden = false; result.focus();
   }
 });
+
+// Enable submission only after the complete handler is attached.
+form.querySelector('[type="submit"]').disabled = false;
