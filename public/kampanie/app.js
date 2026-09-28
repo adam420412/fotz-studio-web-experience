@@ -44,7 +44,7 @@ const offers = {
     workIntro:'Miejsce, produkt, wydarzenie.<br>Forma dopasowana do tego, co chcesz pokazać.',
     projects:[
       {name:'Enea Stadion',type:'Wideo / wydarzenia',image:'enea-film.jpg',film:'enea-stadion-header.mp4',alt:'Kadr z materiału filmowego Enea Stadion'},
-      {name:'FPS Poznań',type:'Wideo / przemysł',image:'fps-film.jpg',film:'fps-poznan.mp4',alt:'Kadr z filmu dla FPS Poznań'},
+      {name:'FPS Poznań',type:'Animacja / prezentacja strony',image:'fps-film.jpg',film:'fps-poznan.mp4',alt:'Kadr z animowanej prezentacji strony FPS Poznań'},
       {name:'Auto Spa',type:'Wideo / automotive',image:'autospa-film.jpg',film:'autospa.mp4',alt:'Kadr z filmu Auto Spa'}
     ],
     approachHeading:'Nie musisz mówić<br><span>do kamery.</span>',
