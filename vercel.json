@@ -137,7 +137,7 @@
   },
   "rewrites": [
     { "source": "/mapa-strony", "destination": "/mapa-strony-v3.html" },
-    { "source": "/((?!api/|assets/).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|assets/|kampanie/).*)", "destination": "/index.html" }
   ],
   "headers": [
     {

@@ -1,0 +1,1 @@
+export default {"endpoint": "https://vhzmfebggxeovtkznlby.supabase.co/functions/v1/send-contact", "publicKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZoem1mZWJnZ3hlb3Z0a3pubGJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjY3MDI5OTUsImV4cCI6MjA4MjI3ODk5NX0.cY2taT4oLvvCoS55CN95ZHGf5RRGEutqa76mfLkUhk8", "pixelId": "1292173626418476"};
