@@ -70,7 +70,7 @@ export default function CaseStudyDawidEdu() {
             <figure className="max-w-xl w-full mx-auto">
               <img src="/case-studies/dawid-edu/ed-a.webp" width="1254" height="1254"
                 alt="Reklama Dawid EDU: Nie musi nadążać za klasą. Może iść dalej."
-                className="w-full rounded-2xl border border-border/30" fetchPriority="high" />
+                className="w-full rounded-2xl border border-border/30" loading="eager" />
               <figcaption className="text-xs text-foreground/50 mt-3">Kreacja edukacji domowej — wariant z 28.09.2026.</figcaption>
             </figure>
           </div>
