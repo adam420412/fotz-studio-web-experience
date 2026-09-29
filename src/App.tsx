@@ -35,6 +35,7 @@ const CaseStudyFriendlyGas = lazy(() => import("./pages/CaseStudyFriendlyGas"));
 const CaseStudyFPS = lazy(() => import("./pages/CaseStudyFPS"));
 const CaseStudyGierki = lazy(() => import("./pages/CaseStudyGierki"));
 const CaseStudyPrzedszkole = lazy(() => import("./pages/CaseStudyPrzedszkole"));
+const CaseStudyDawidEdu = lazy(() => import("./pages/CaseStudyDawidEdu"));
 const CaseStudyVerthe = lazy(() => import("./pages/CaseStudyVerthe"));
 const CaseStudyVictoryCars = lazy(() => import("./pages/CaseStudyVictoryCars"));
 const CaseStudyKlagem = lazy(() => import("./pages/CaseStudyKlagem"));
@@ -1549,6 +1550,7 @@ const App = () => (
                 <Route path="/realizacje/fps-cegielski" element={<CaseStudyFPS />} />
                 <Route path="/realizacje/gierki" element={<CaseStudyGierki />} />
                 <Route path="/realizacje/przedszkole" element={<CaseStudyPrzedszkole />} />
+                <Route path="/realizacje/dawid-edu" element={<CaseStudyDawidEdu />} />
                 <Route path="/realizacje/verthe" element={<CaseStudyVerthe />} />
                 <Route path="/realizacje/victory-cars" element={<CaseStudyVictoryCars />} />
                 <Route path="/realizacje/klagem" element={<CaseStudyKlagem />} />

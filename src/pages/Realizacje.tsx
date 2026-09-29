@@ -106,11 +106,21 @@ import sessionFinal2 from "@/assets/backstage/session-final-2.png";
 const projectCategories = [
   "Wszystkie",
   "Strony www",
+  "Kampanie reklamowe",
   "E-commerce",
   "Wizualizacje 3D",
 ];
 
 const projects = [
+  {
+    id: "dawid-edu",
+    title: "Dawid EDU",
+    category: "Kampanie reklamowe",
+    description: "Kampania rekrutacyjna Meta Ads, kreacje i poprawki ścieżki kontaktu. 1 216 wyświetleń strony w okresie 18.08–28.09.2026.",
+    image: "/case-studies/dawid-edu/ed-a.webp",
+    featured: false,
+    hasCase: true,
+  },
   {
     id: "rppg",
     title: "RPPG Group",
