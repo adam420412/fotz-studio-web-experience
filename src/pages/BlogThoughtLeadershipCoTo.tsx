@@ -102,7 +102,7 @@ export default function BlogThoughtLeadershipCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Thought Leadership | Fotz Studio"
+        title="Thought Leadership — co to jest i jak budować autorytet?"
         description="Thought leadership — definicja, 4 typy, 5 filarów budowania autorytetu i jak mierzyć efektywność. Kompletny przewodnik po przywództwie myślowym."
         canonical="https://fotz.pl/blog/thought-leadership-co-to"
 

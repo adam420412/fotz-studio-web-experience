@@ -79,7 +79,7 @@ export default function BlogPublicRelationsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Public Relations (PR) | Fotz Studio"
+        title="Public Relations (PR) — co to jest i jak działa?"
         description="Public relations — definicja, 6 rodzajów PR (media relations, crisis PR, corporate PR), 5-etapowy proces i jak mierzyć efektywność. Kompletny przewodnik."
         canonical="https://fotz.pl/blog/public-relations-co-to"
 

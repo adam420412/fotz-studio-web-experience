@@ -172,8 +172,10 @@ export default function AgencjaMarketingowaGdansk() {
               kompleksowe rozwiązania marketingowe, które przynoszą wymierne wyniki.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna Wycena
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna Wycena
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
                 <a href="tel:+48790814814">
@@ -439,8 +441,10 @@ export default function AgencjaMarketingowaGdansk() {
             Zapraszamy na bezpłatną konsultację. Analizujemy Twoją obecność online i sugerujemy konkretne działania.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              Rezerwuj Konsultację
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Link to="/kontakt">
+                Rezerwuj Konsultację
+              </Link>
             </Button>
             <Button asChild 
               size="lg" 

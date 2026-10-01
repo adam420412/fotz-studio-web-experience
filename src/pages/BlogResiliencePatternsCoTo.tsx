@@ -42,7 +42,7 @@ export default function BlogResiliencePatternsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Wzorce odporności | Fotz Studio"
+        title="Wzorce odporności — Circuit Breaker, Retry, Bulkhead, Backpressure, Resilience4j?"
         description="Resilience Patterns: Circuit Breaker, Retry z Exponential Backoff, Bulkhead thread pool isolation, Backpressure w Reactor/RxJava, Resilience4j i Polly."
         canonical="https://fotz.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
 

@@ -90,7 +90,7 @@ export default function BlogLoyaltyProgramCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Program Lojalnościowy | Fotz Studio"
+        title="Program Lojalnościowy — co to jest i jak działa?"
         description="Program lojalnościowy — definicja, 5 rodzajów (punktowy, tierowy, cashback, paid membership), jak projektować skuteczny program i jakie metryki mierzyć."
         canonical="https://fotz.pl/blog/loyalty-program-co-to"
 

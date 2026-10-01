@@ -51,7 +51,7 @@ export default function BlogOpenTelemetryCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="OpenTelemetry | Fotz Studio"
+        title="OpenTelemetry — co to jest, traces, metrics, logs, Collector i Jaeger?"
         description="OpenTelemetry: traces, metrics, logs, OTel Collector, auto-instrumentation, Jaeger, Tempo, Prometheus — jak instrumentować aplikacje i analizować telemetrię."
         canonical="https://fotz.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger"
 

@@ -42,7 +42,7 @@ export default function BlogSvelteKitCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="SvelteKit | Fotz Studio"
+        title="SvelteKit — routing, load functions, form actions i adaptery 2024?"
         description="SvelteKit routing (plikowy), load functions (SSR/CSR), Form Actions (bez JS), hooks, Svelte stores, runes (Svelte 5) i deployment (Vercel, Cloudflare, Node.js)."
         canonical="https://fotz.pl/blog/sveltekit-routing-load-functions-form-actions-adaptery-2024"
 

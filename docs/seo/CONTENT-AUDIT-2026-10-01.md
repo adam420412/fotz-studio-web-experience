@@ -137,3 +137,54 @@ Zostawione celowo: `placeholder="+48 123 456 789"` w polach formularzy (Kontakt,
 Nie przepisywano żadnych testów (repo nie ma testów jednostkowych; skrypty: `lint`, `build`).
 
 Sugestia dla GSC: po wdrożeniu porównać raport „Strony” → „Nie znaleziono (404)” i „Strona z przekierowaniem” z listą z sekcji 3.2–3.3 oraz „Duplikat, Google wybrał inną stronę kanoniczną” z aliasami z sekcji 4.6.
+
+---
+
+# Etap 2 (ten sam dzień, osobny commit) — urwane opisy meta, uszkodzone tytuły, martwe CTA
+
+Zakres jak wyżej: tylko `src/pages/**` + ten raport. Bez zmian domeny, adresów, cen, wyników i bez nowych obietnic. Zmienione pliki: **521** w `src/pages/**`.
+
+## 7. Opisy meta (327 urwanych „…” → pełne zdania)
+
+Zasada: opis ma być pełnym zdaniem opisującym właściwą stronę, bez ucinania do 155 znaków (ucinanie w źródle zostawiało urwane frazy typu „Kompletny przewodnik po…”). Źródło treści dla każdego opisu:
+
+| Źródło nowego opisu | Liczba stron | Jak |
+|---|---|---|
+| Pełny opis z `ArticleSchema description` tej samej strony (kompletne zdanie, ≥ 80 znaków, zgodne z H1) | **239** | przeniesiony 1:1 do `SEOHead description` |
+| Napisany ręcznie na podstawie H1, pierwszego akapitu i FAQ strony | **88** | lista plików: AIMarketing, AgencjaKreaTywnaPoznan, AgencjaMarketingowa{Koszalin, Plock, Poznan, Sosnowiec, Zgorzelec}, AgencjaMarketinguInternetowego, Akademia, Blog, BlogContentMarketingPoradnik, BlogFotografiaArchitektura, BlogFotografiaProduktowa, BlogInstagramDlaFirmy, BlogKosztStrony, BlogLandingPageVsStrona, BlogMarketingNieruchomosci, BlogPersonalBrandingLinkedIn, BlogReelsVsTikTok, BlogSEOLokalnePoznan, BlogSocialMediaDlaFirm, BlogSprzedazOnline, BlogStronaInternetowaDlaRestauracji, BlogTanieStrony, BlogTikTokBiznes, CMVideoContent, CaseStudyFriendlyGas, Cennik, CennikStronInternetowych, DlaKogo, DlaKogo{Ecommerce, Instytucje, MarkiPremium}, FAQ, FacebookAdsWarszawa, GeneratorBriefu, GoogleAds, IdentyfikacjaWizualna, KalkulatorCen, KalkulatorROI, KampanieReklamowe, Kariera, KompleksowaObsluga, Konsultacja, Kontakt, LinkedInAds, LogoIBranding, MarketingInternetowy, ONas, Poradniki, Pozycjonowanie, Pozycjonowanie{Bialystok, Legnica, Poznan, Sosnowiec, Torun, Walbrzych, Warszawa}, SEOCopywriting, SEOLinkBuilding, SklepyInternetowe, SklepyInternetowe{Poznan, Warszawa}, SlownikMarketingowy, SocialMedia, SocialMediaWarszawa, SpotyReklamowe, StronaInternetowaDla{Fotografa, Prawnika, Stomatologa, Trenera}, StronyInternetowe{Bialystok, Czestochowa, Podkarpacie, Torun, Zabrze, ZielonaGora}, TikTokAds, TikTokAds{Gdansk, Krakow, Lodz, Poznan, Warszawa}, Uslugi, UslugiIdentyfikacjaWizualna, UslugiLandingPage, Wizualizacje3D, YouTubeAds |
+
+W opisach ręcznych użyto wyłącznie faktów już obecnych na danej stronie (np. „od 499 zł netto” na cennikach, „od 400 zł/mies.” na stronach Ads, „wzrost konwersji o 140%” w case study Friendly Gas). Nie dodano nowych liczb, gwarancji ani referencji. Przy okazji poprawiono polskie znaki w opisach, które ich nie miały (Koszalin, Płock, Zgorzelec, Toruń, Warszawa social media, cold email, fotografia biznesowa), literówki „Dowiedź się”, „białohat SEO” → „white hat SEO”, „Kompleksny” → „Kompleksowy”, „firm z Szczecina” → „firm ze Szczecina”.
+
+## 8. Tytuły SEO
+
+- **240 tytułów** „zredukowanych do hasła” (np. „Incident Management | Fotz Studio”, „Klagem | Fotz Studio”, „Astro 5 | Fotz Studio”) przywrócono do pełnej formy z `ArticleSchema title` tej samej strony (tożsamej z H1 / tematem artykułu), np. „Incident Management — co to jest, severity, PagerDuty, postmortem, on-call SLA?”. Gdy pełny tytuł ma ≤ 46 znaków, dodano sufiks „| Fotz Studio”; dłuższych nie ucinano (zgodnie z ustaleniem, że generator obsługuje pełne tytuły).
+- **11 tytułów/opisów bez polskich znaków** przepisano poprawnie: BlogB2BMarketingCoTo, BlogBrandingCoTo, BlogCertyfikatSSL, BlogCustomerSuccessCoTo, BlogFaktoringCoToJest, BlogFreemiumCoTo, BlogMarketingAutomation, BlogOmnichannelCoTo, BlogProgrammaticCoTo, BlogStorytellingCoTo, BlogVATCoToJest.
+- 52 krótkie tytuły stron usługowych/miejskich bez `ArticleSchema` (np. „Agencja Marketingowa Poznań | Fotz Studio”, „Dropshipping w Polsce 2025 | Fotz Studio”) uznano za poprawne i zostawiono.
+
+## 9. Etykiety i literówki w treści
+
+| Plik | Było | Jest |
+|---|---|---|
+| AgencjaMarketingowaLegnica, …Czestochowa | „Social media i mediach społecznościowych” | „Social media i marketing w mediach społecznościowych” |
+| AgencjaMarketingowaLegnica, …Czestochowa | „Wdrażać i realizacja kampanii” | „Wdrożenie i realizacja kampanii” |
+| AgencjaMarketingowaRzeszow | CTA „Zabook Bezpłatną Konsultację” | „Zarezerwuj Bezpłatną Konsultację” |
+| EmailMarketing | CTA „Zaczęajmy od konsultacji” | „Zacznijmy od konsultacji” |
+| BlogMarketingDlaFirmy | CTA „Pobrań poradnik (bezpłatnie)” | „Pobierz poradnik (bezpłatnie)” |
+| AgencjaMarketingowaKoszalin | „Specjalisci Pomorza Srodkowego” | „Specjaliści Pomorza Środkowego” |
+| AgencjaMarketingowaKrakow (5×), …Warszawa (2×) | `&amp;` w literałach JS (renderowało się dosłownie „&amp;”) | „&” |
+| BlogPandaCssUnoCoTo, BlogJsProposalsCoTo | `\d`, `\.` w stringu z przykładem kodu (renderowało „d” / „.”, błąd ESLint `no-useless-escape`) | `\\d`, `\\.` |
+
+## 10. Martwe CTA (przycisk bez `href`/`onClick`/`asChild`) — 78 przycisków w 51 plikach
+
+Wykryte skryptem: `<Button>` z tekstem typu Wycena / Konsultacja / Zadzwoń / Zamów / Skontaktuj, nieopakowany w `<Link>`/`<a>`, poza formularzem i bez handlera. Poprawka: `<Button asChild …><Link to="/kontakt">…</Link></Button>` (73 przyciski), `…<Link to="/poradniki">` dla „Pobierz poradnik” (1), `…<a href="tel:+48790814814">` dla „Zadzwoń…” (5, w tym dwa z kolejnymi placeholderami telefonu: Kraków „+48 12 XXX XX XX”, Rzeszów „+48 721 234 567”; dodatkowo tekst „+48 56 XXX XXXX” w StronyInternetoweTorun). W dwóch plikach (FacebookAdsGdansk, FacebookAdsPoznan) dodano import `Link` z react-router-dom. Pozostawiono celowo przyciski formularzy (`type="submit"`) i przyciski z `onClick`.
+
+## 11. Walidacja etapu 2
+
+| Krok | Wynik |
+|---|---|
+| `npx tsc --noEmit -p tsconfig.app.json` | OK (exit 0) |
+| `npx eslint <521 zmienionych plików>` | OK, 0 błędów (pozostało 1 ostrzeżenie `react-hooks/exhaustive-deps` w KalkulatorCen — istniało przed zmianami, nie dotyczy treści) |
+| `npm run build` (`vite build` + prerender) | OK (exit 0, 1002 stron wyrenderowanych, 1m53s) |
+| Skrypt audytu po zmianach | opisy zakończone „…”: 0; tytuły zakończone „…”: 0; martwe CTA: 0; linki do nieistniejących tras: 0 (bez zmian wobec etapu 1) |
+
+Uwaga: po przywróceniu pełnych tytułów rośnie liczba tytułów > 60 znaków (470) i opisów > 155 znaków (300). To zamierzone — pełne zdania zamiast urwanych; ewentualne skracanie na wyjściu to decyzja po stronie `SEOHead` (komponent Codexa).

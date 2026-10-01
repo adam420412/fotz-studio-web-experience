@@ -40,7 +40,7 @@ export default function BlogBunDenoCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Bun vs Deno vs Node.js | Fotz Studio"
+        title="Bun vs Deno vs Node.js — co to jest, porównanie JavaScript runtimes 2024?"
         description="Bun, Deno i Node.js 22 — porównanie JavaScript runtimes: TypeScript native, package manager, wydajność, bezpieczeństwo i kiedy co wybrać w 2024."
         canonical="https://fotz.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac"
 

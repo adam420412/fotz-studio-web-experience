@@ -42,7 +42,7 @@ export default function BlogSentryCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Sentry | Fotz Studio"
+        title="Sentry — co to jest, error tracking, Performance Monitoring, React, Python?"
         description="Sentry: error tracking, SDK integracja React/Node/Python, Performance Monitoring, Session Replay, alerty, Sentry vs Datadog/Rollbar/Bugsnag i self-hosting."
         canonical="https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
 

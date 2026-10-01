@@ -407,7 +407,7 @@ const Wizualizacje3D = () => {
     <>
       <SEOHead
         title="Wizualizacje 3D Poznań | Fotz Studio"
-        description="Wizualizacje 3D Poznań — profesjonalne renderingi architektoniczne, wizualizacje wnętrz i produktów. Animacje 3D, virtual tour, prezentacje inwestycji…"
+        description="Wizualizacje 3D Poznań — profesjonalne renderingi architektoniczne, wizualizacje wnętrz i produktów. Animacje 3D, wirtualne spacery i prezentacje inwestycji w Fotz Studio."
         canonical="https://fotz.pl/wizualizacje-3d"
         keywords="wizualizacje 3D, wizualizacje architektoniczne, wizualizacje wnętrz, renderingi 3D, animacje 3D, Poznań"
       />

@@ -87,7 +87,7 @@ export default function BlogChampionBuildingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Champion Building | Fotz Studio"
+        title="Champion Building — jak budować Championa w sprzedaży B2B?"
         description="Champion Building w sprzedaży enterprise — jak identyfikować, testować i rozwijać Championa który sprzedaje Twój produkt wewnątrz organizacji klienta."
         canonical="https://fotz.pl/blog/champion-building-sprzedaz-b2b-enterprise"
 

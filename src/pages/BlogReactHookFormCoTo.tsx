@@ -42,8 +42,8 @@ export default function BlogReactHookFormCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Hook Form + Zod | Fotz Studio"
-        description="React Hook Form (RHF), Zod schema validation, zodResolver, useFieldArray, Server Actions, Valibot, TypeBox — kompletny przewodnik walidacji formularzy w…"
+        title="React Hook Form + Zod — walidacja formularzy TypeScript 2024?"
+        description="6 bibliotek formularzy (RHF/Formik/TanStack Form/Zod/Valibot/TypeBox) — zodResolver, useFieldArray, Server Actions validation, type inference i performance."
         canonical="https://fotz.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024"
 
         keywords="React Hook Form + Zod co to jest, React Hook Form + Zod jak działa, React Hook Form + Zod tutorial, React Hook Form + Zod przykład, czym jest React Hook Form + Zod, React Hook Form + Zod dokumentacja, React Hook Form + Zod przewodnik"

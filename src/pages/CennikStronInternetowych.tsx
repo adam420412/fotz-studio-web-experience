@@ -160,7 +160,7 @@ const CennikStronInternetowych = () => {
     <Layout>
       <SEOHead
         title="Cennik Stron Internetowych 2025/2026 — od 499 zł netto"
-        description="Cennik stron internetowych Fotz Studio. Strony od 499 zł netto — pakiety Start, Business, Pro i sklepy e-commerce. Transparentne ceny, pełna własność…"
+        description="Cennik stron internetowych Fotz Studio. Strony od 499 zł netto — pakiety Start, Business, Pro i sklepy e-commerce. Transparentne ceny, pełna własność kodu, responsywność i SSL w każdym pakiecie."
         canonical="https://fotz.pl/cennik-stron-internetowych"
         keywords="cennik stron internetowych, ile kosztuje strona internetowa, cena strony internetowej, tworzenie stron internetowych cennik, strona internetowa cena 2025, ile kosztuje strona www"
       />

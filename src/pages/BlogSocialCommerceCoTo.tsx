@@ -99,7 +99,7 @@ export default function BlogSocialCommerceCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Social Commerce | Fotz Studio"
+        title="Social Commerce — co to jest i jak działa? | Fotz Studio"
         description="Social commerce — definicja, platformy (Instagram, TikTok, Facebook Shop), strategie i metryki. Dowiedz się jak sprzedawać bezpośrednio w social mediach."
         canonical="https://fotz.pl/blog/social-commerce-co-to"
 

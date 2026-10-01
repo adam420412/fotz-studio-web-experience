@@ -41,7 +41,7 @@ const CaseStudyMechanica = () => {
   return (
     <Layout>
       <SEOHead
-        title="Mechanica | Fotz Studio"
+        title="Mechanica - Strona dla producenta żurawi | Fotz Studio"
         description="Case study Mechanica: strona internetowa dla producenta żurawi i suwnic przemysłowych. SEO branży technicznej. Fotz Studio."
         canonical="https://fotz.pl/realizacje/mechanica"
         keywords="case study automotive, marketing motoryzacja realizacja"

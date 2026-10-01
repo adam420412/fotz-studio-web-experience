@@ -108,7 +108,7 @@ export default function BlogUsabilityTestingCoTo() {
     <Layout>
       <SEOHead
         title="Usability Testing — co to jest? Testy użyteczności i badania UX"
-        description="Usability testing — definicja, 4 metody (moderowane, niemoderowane, guerrilla, zdalne), reguła 5 użytkowników, SUS Score i projektowanie zadań testowych…"
+        description="Kompletny przewodnik po usability testing: 4 metody, reguła 5 użytkowników Nielsena, SUS Score, think-aloud i jak projektować dobre zadania testowe."
         canonical="https://fotz.pl/blog/usability-testing-co-to"
 
         keywords="Usability Testing co to jest, Usability Testing definicja, czym jest Usability Testing, Usability Testing przykłady, jak działa Usability Testing, Usability Testing znaczenie, Usability Testing przewodnik"

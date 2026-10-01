@@ -43,7 +43,7 @@ export default function BlogRNReanimatedCoTo() {
     <Layout>
       <SEOHead
         title="React Native Reanimated, Gesture Handler i Skia | Fotz Studio"
-        description="React Native Reanimated 3 (worklets, UI thread, withSpring), Gesture Handler (Pan, Pinch, Swipe), @shopify/react-native-skia (2D graphics), FlashList i…"
+        description="6 bibliotek React Native (Reanimated/GestureHandler/Skia/Screens/FlashList/SharedElement) — worklets, UI thread animations, natywne gesty i 2D graphics."
         canonical="https://fotz.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
 
         keywords="React Native Reanimated, Gesture Handler i Skia co to jest, React Native Reanimated, Gesture Handler i Skia jak działa, React Native Reanimated, Gesture Handler i Skia tutorial, React Native Reanimated, Gesture Handler i Skia przykład, czym jest React Native Reanimated, Gesture Handler i Skia, React Native Reanimated, Gesture Handler i Skia dokumentacja, React Native Reanimated, Gesture Handler i Skia przewodnik"

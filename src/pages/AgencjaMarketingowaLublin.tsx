@@ -176,12 +176,16 @@ export default function AgencjaMarketingowaLublin() {
               Kompleksowe usługi marketingu cyfrowego dla firm z Lublina, Lubelszczyzny i całej Polski. SEO, Google Ads, Social Media, strony WWW i strategie wzrostu.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Phone className="mr-2 w-5 h-5" />
-                Bezpłatna konsultacja
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Link to="/kontakt">
+                  <Phone className="mr-2 w-5 h-5" />
+                  Bezpłatna konsultacja
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                Pobierz wycenę
+              <Button asChild size="lg" variant="outline">
+                <Link to="/kontakt">
+                  Pobierz wycenę
+                </Link>
               </Button>
             </div>
           </div>
@@ -427,12 +431,13 @@ export default function AgencjaMarketingowaLublin() {
             Ponad 500 firm z Lublina i całej Polski zaufało nam swoją transformację cyfrową. Dołącz do nich dzisiaj.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+            <Button asChild
               size="lg"
-              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold"
-            >
-              <Phone className="mr-2 w-5 h-5" />
-              Umów bezpłatną konsultację
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
+              <Link to="/kontakt">
+                <Phone className="mr-2 w-5 h-5" />
+                Umów bezpłatną konsultację
+              </Link>
             </Button>
             <Button
               size="lg"

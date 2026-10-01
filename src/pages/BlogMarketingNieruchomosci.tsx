@@ -56,7 +56,7 @@ const BlogMarketingNieruchomosci = () => {
     <>
       <SEOHead
         title="Marketing nieruchomości - jak skutecznie reklamować oferty? 2025"
-        description="Kompletny przewodnik marketingu nieruchomości. Strategie dla biur, fotografia, video, SEO, social media, Google Ads. Jak zdobywać kupujących i zwiększać…"
+        description="Kompletny przewodnik marketingu nieruchomości. Strategie dla biur nieruchomości, fotografia, video, SEO, social media i Google Ads. Jak zdobywać kupujących i zwiększać liczbę zapytań o oferty."
         ogType="article"
         canonical="https://fotz.pl/blog/marketing-nieruchomosci"
         keywords="marketing nieruchomości, reklama nieruchomości, promocja oferty, biuro nieruchomości marketing, SEO nieruchomości"

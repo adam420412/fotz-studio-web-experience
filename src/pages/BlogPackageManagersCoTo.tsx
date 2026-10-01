@@ -42,7 +42,7 @@ export default function BlogPackageManagersCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="npm vs pnpm vs yarn vs Bun | Fotz Studio"
+        title="npm vs pnpm vs yarn vs Bun — package managers Node.js 2024?"
         description="npm vs pnpm (content-addressable) vs yarn Berry (PnP) vs Bun — szybkość, disk usage, workspaces, package.json exports, nvm/fnm/Volta i Node.js versioning."
         canonical="https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
 

@@ -49,7 +49,7 @@ export default function BlogActivationRateCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Activation Rate | Fotz Studio"
+        title="Activation Rate — co to jest i jak poprawić aktywację użytkowników?"
         description="Activation Rate: definicja, jak zdefiniować activation event, strategie poprawy, związek z DAU/MAU i retencją, benchmarki dla PLG i SaaS."
         canonical="https://fotz.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
 

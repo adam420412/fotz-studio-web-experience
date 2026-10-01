@@ -69,7 +69,7 @@ export default function BlogVestingScheduleCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Vesting Schedule | Fotz Studio"
+        title="Vesting Schedule — co to jest i jak działa equity vesting?"
         description="Vesting schedule: cliff, founder vesting, opcje ESOP, acceleration (single/double trigger). Jak działa harmonogram nabywania uprawnień do equity w startupie."
         canonical="https://fotz.pl/blog/vesting-schedule-co-to-jest-equity-startup"
 

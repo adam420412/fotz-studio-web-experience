@@ -42,7 +42,7 @@ export default function Akademia() {
       <>
         <SEOHead
           title="Akademia FOTZ — Kursy i Materiały Edukacyjne z Marketingu Online"
-          description="Akademia FOTZ — kursy marketingowe, materiały edukacyjne, e-booki i webinary o SEO, Google Ads, social media i content marketingu. Nauka marketingu online…"
+          description="Akademia FOTZ — kursy marketingowe, materiały wideo, e-booki, checklisty i webinary o SEO, Google Ads, social media i content marketingu. Praktyczna nauka marketingu online dla właścicieli firm, marketerów i freelancerów."
           canonical="https://fotz.pl/zasoby"
           noIndex={true}
         />

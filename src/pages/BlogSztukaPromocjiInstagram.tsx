@@ -39,7 +39,7 @@ export default function BlogSztukaPromocjiInstagram() {
     <Layout>
       <SEOHead
         title="Reklama na Instagramie - Instagram Ads 2025 | Fotz Studio"
-        description="Kompletny poradnik reklamowania na Instagramie. Dowiedz się o rodzajach reklam, targetowaniu, budżetowaniu i mierzeniu wyników. Instagram Ads dla biznesu…"
+        description="Jak skutecznie reklamować się na Instagramie. Rodzaje reklam, targetowanie, budżet i optymalizacja kampanii."
         canonical="https://fotz.pl/blog/reklama-na-instagramie"
 
         keywords="Reklama na Instagramie - Instagram Ads 2025, Reklama na Instagramie - Instagram Ads 2025 poradnik, Reklama na Instagramie - Instagram Ads 2025 strategia, Reklama na Instagramie - Instagram Ads 2025 jak zrobić, Reklama na Instagramie - Instagram Ads 2025 marketing, Reklama na Instagramie - Instagram Ads 2025 przykłady, Reklama na Instagramie - Instagram Ads 2025 w Polsce"

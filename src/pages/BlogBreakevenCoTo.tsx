@@ -114,7 +114,7 @@ export default function BlogBreakevenCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Break-even | Fotz Studio"
+        title="Break-even — co to jest i jak obliczyć próg rentowności?"
         description="Analiza break-even — definicja, formuły (BEP w szt. i PLN), marża pokrycia (CM), margin of safety i dźwignia operacyjna. Kompletny przewodnik z przykładami."
         canonical="https://fotz.pl/blog/break-even-prog-rentownosci-co-to"
 

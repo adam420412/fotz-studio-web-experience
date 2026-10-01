@@ -162,7 +162,7 @@ export default function AgencjaMarketingowaPoznan() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Poznań | Fotz Studio"
-        description="Agencja marketingowa Poznań ✓ SEO, Google Ads, Social Media, strony WWW. Marketing internetowy i reklama internetowa dla firm z Poznania i Wielkopolski…"
+        description="Agencja marketingowa Poznań ✓ SEO, Google Ads, Social Media, strony WWW. Marketing internetowy i reklama internetowa dla firm z Poznania i Wielkopolski. Kompleksowa oferta Fotz Studio w jednym miejscu."
         canonical="https://fotz.pl/agencja-marketingowa/poznan"
         keywords="agencja marketingowa poznań, marketing internetowy poznań, agencja reklamowa poznań, seo poznań, google ads poznań, firma marketingowa poznań, reklama internetowa poznań, marketing dla firm poznań"
       />

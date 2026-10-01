@@ -44,7 +44,7 @@ export default function BlogCiCdBestPracticesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CI/CD Best Practices | Fotz Studio"
+        title="CI/CD Best Practices — GitHub Actions, GitLab CI, Canary Deploy, SLSA, Sigstore?"
         description="CI/CD: najlepsze praktyki, GitHub Actions vs GitLab CI, testy w pipeline, Blue/Green vs Canary, supply chain security (SLSA, Sigstore, SBOM) i DORA metrics."
         canonical="https://fotz.pl/blog/cicd-best-practices-github-actions-gitlab-canary-deploy-slsa"
 

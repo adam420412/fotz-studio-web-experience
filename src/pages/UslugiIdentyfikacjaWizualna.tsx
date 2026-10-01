@@ -155,7 +155,7 @@ const UslugiIdentyfikacjaWizualna = () => {
     <Layout>
       <SEOHead
         title="Identyfikacja Wizualna Firmy — Projekt, Logo, Brand Book"
-        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Ceny od 1 500 zł. Pełne prawa autorskie…"
+        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Ceny od 1 500 zł, pełne prawa autorskie i spójny system wizualny na każdym nośniku."
         canonical="https://fotz.pl/uslugi/identyfikacja-wizualna"
         keywords="identyfikacja wizualna firmy, branding usługi, projekt logo, system identyfikacji wizualnej, ci corporate identity"
       />

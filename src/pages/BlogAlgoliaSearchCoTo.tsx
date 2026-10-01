@@ -42,7 +42,7 @@ export default function BlogAlgoliaSearchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Algolia, Typesense, Meilisearch | Fotz Studio"
+        title="Algolia, Typesense, Meilisearch — search engine dla aplikacji web 2024?"
         description="Algolia vs Typesense vs Meilisearch vs Elasticsearch — hosted i open-source search engines, InstantSearch, semantic search, vector search i RAG dla Next.js."
         canonical="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
 

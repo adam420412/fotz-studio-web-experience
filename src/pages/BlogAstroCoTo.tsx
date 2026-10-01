@@ -42,7 +42,7 @@ export default function BlogAstroCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Astro, SvelteKit, Remix | Fotz Studio"
+        title="Astro, SvelteKit, Remix — Island Architecture, co to jest, kiedy wybrać?"
         description="Astro Island Architecture, SvelteKit nested routing i actions, Remix progressive enhancement — porównanie z Next.js i Qwik, kiedy wybrać w 2024."
         canonical="https://fotz.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac"
 

@@ -102,7 +102,7 @@ export default function BlogCohortAnalysisCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Cohort Analysis | Fotz Studio"
+        title="Cohort Analysis — co to jest i jak analizować retencję użytkowników?"
         description="Cohort analysis — definicja, 3 typy kohort, wzorce krzywej retencji, kluczowe metryki i jak czytać tablicę retencji. Kompletny przewodnik po analizie kohort."
         canonical="https://fotz.pl/blog/cohort-analysis-co-to"
 

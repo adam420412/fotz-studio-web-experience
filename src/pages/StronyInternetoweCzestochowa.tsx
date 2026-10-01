@@ -85,7 +85,7 @@ const StronyInternetoweCzestochowa = () => {
     <>
       <SEOHead
         title="Strony Internetowe Częstochowa | Fotz Studio"
-        description="Strony internetowe Częstochowa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Częstochowy…"
+        description="Strony internetowe Częstochowa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Częstochowy. Bezpłatna wycena projektu."
         canonical="https://fotz.pl/uslugi/strony-internetowe/czestochowa"
         keywords="strony internetowe częstochowa, tworzenie stron częstochowa, strony www częstochowa, projektowanie stron częstochowa"
       />

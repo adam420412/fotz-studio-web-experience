@@ -42,7 +42,7 @@ export default function BlogNextAuthCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="NextAuth.js, Lucia Auth, Clerk | Fotz Studio"
+        title="NextAuth.js, Lucia Auth, Clerk — biblioteki autentykacji dla Next.js 2024?"
         description="Auth.js (NextAuth v5), Lucia Auth, Clerk, Supabase Auth — porównanie bibliotek autentykacji, RBAC, App Router integracja i kiedy co wybrać w 2024."
         canonical="https://fotz.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024"
 

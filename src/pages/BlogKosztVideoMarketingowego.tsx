@@ -93,7 +93,7 @@ export default function BlogKosztVideoMarketingowego() {
     <>
       <SEOHead
         title="Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025"
-        description="Ile kosztuje produkcja wideo do marketingu? Kompletny cennik: spot reklamowy, film produktowy, animacja. Dowiedz się kiedy wideo się opłaca i jak…"
+        description="Kompleksowy poradnik kosztów produkcji wideo w Polsce. Ceny spotów reklamowych, filmów produktowych, animacji, webinarów i szkoleń video."
         canonical="https://fotz.pl/blog/koszt-produkcji-wideo"
 
         keywords="Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 co to jest, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 jak działa, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 definicja, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 przykłady, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 poradnik, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 przewodnik"
@@ -108,7 +108,7 @@ export default function BlogKosztVideoMarketingowego() {
         ]}/>
       <ArticleSchema
         headline="Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025"
-        description="Kompleksny poradnik kosztów produkcji wideo w Polsce. Ceny spotów reklamowych, filmów produktowych, animacji, webinarów i szkoleń video."
+        description="Kompleksowy poradnik kosztów produkcji wideo w Polsce. Ceny spotów reklamowych, filmów produktowych, animacji, webinarów i szkoleń video."
         image="https://fotz.pl/og-image.jpg"
         datePublished="2025-04-12"
         author="Fotz Studio"

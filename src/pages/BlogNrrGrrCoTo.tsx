@@ -49,7 +49,7 @@ export default function BlogNrrGrrCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="NRR i GRR | Fotz Studio"
+        title="NRR i GRR — co to jest Net Revenue Retention i jak poprawić?"
         description="NRR (Net Revenue Retention) i GRR (Gross Revenue Retention): formuły, benchmarki, segmentacja, strategie poprawy i wpływ na wycenę firmy SaaS."
         canonical="https://fotz.pl/blog/nrr-grr-net-revenue-retention-co-to-jest"
 

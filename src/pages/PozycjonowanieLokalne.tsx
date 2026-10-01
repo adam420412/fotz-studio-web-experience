@@ -47,9 +47,11 @@ export default function PozycjonowanieLokalne() {
               <p className="text-2xl text-purple-700 mb-8 font-semibold max-w-3xl mx-auto">
                 46% zapytań Google ma lokalny charakter. Ktoś w Twoim mieście szuka Twojej usługi. Jesteś w Top 3?
               </p>
-              <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg">
-                Bezpłatny audyt SEO
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg">
+                <Link to="/kontakt">
+                  Bezpłatny audyt SEO
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -329,14 +331,15 @@ export default function PozycjonowanieLokalne() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.featured
                           ? "bg-purple-600 hover:bg-purple-700 text-white"
                           : "bg-gray-200 hover:bg-gray-300 text-gray-900"
-                      }`}
-                    >
-                      Zamów audyt
+                      }`}>
+                      <Link to="/kontakt">
+                        Zamów audyt
+                      </Link>
                     </Button>
                   </motion.div>
                 ))}

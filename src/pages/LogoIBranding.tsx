@@ -248,7 +248,7 @@ const LogoIBranding = () => {
     <Layout>
       <SEOHead
         title="Projektowanie Logo i Identyfikacja Wizualna — Fotz Studio Poznań"
-        description="Projektujemy profesjonalne logo i identyfikację wizualną dla firm z całej Polski. Tworzenie logo od 900 zł — pełne prawa autorskie, formaty web i print…"
+        description="Projektujemy profesjonalne logo i identyfikację wizualną dla firm z całej Polski. Tworzenie logo od 900 zł — pełne prawa autorskie, formaty web i print, księga znaku i szablony materiałów."
         canonical="https://fotz.pl/uslugi/logo-i-branding"
         keywords="logo i branding, projekt logo, tworzenie logo, logo dla firmy, branding firmy, identyfikacja wizualna, logo cena"
       />

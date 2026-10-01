@@ -159,7 +159,7 @@ export default function AgencjaMarketingowaKoszalin() {
       <Layout>
         <SEOHead
           title="Agencja Marketingowa Koszalin - SEO, Google Ads, Social Media"
-          description="Agencja marketingowa w Koszalinie. Profesjonalne uslugi SEO lokalne, Google Ads, Facebook Ads, zarzadzanie social media i tworzenie stron dla firm…"
+          description="Agencja marketingowa w Koszalinie. Profesjonalne usługi SEO lokalne, Google Ads, Facebook Ads, zarządzanie social media i tworzenie stron dla firm turystycznych, handlowych i usługowych z Pomorza Środkowego."
           canonical="https://fotz.pl/agencja-marketingowa/koszalin"
         keywords="agencja marketingowa koszalin, marketing internetowy koszalin, agencja reklamowa koszalin, seo koszalin"
         />
@@ -280,7 +280,7 @@ export default function AgencjaMarketingowaKoszalin() {
                 },
                 {
                   icon: Award,
-                  title: "Specjalisci Pomorza Srodkowego",
+                  title: "Specjaliści Pomorza Środkowego",
                   desc: "Znamy specyfike regionu - turystyka nadmorska, handel, uslugi gastronomiczne. Dostosowujemy strategie do branzy i rynku lokalnego.",
                 },
                 {

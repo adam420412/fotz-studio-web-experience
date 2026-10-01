@@ -41,7 +41,7 @@ const CaseStudyLauvjah = () => {
   return (
     <Layout>
       <SEOHead
-        title="Lauvjah | Fotz Studio"
+        title="Lauvjah - Strona dla firmy transportowej | Fotz Studio"
         description="Case study Lauvjah: strona internetowa dla firmy transportowej i spedycyjnej. SEO, design i lead generation. Fotz Studio."
         canonical="https://fotz.pl/realizacje/lauvjah"
         keywords="case study e-commerce, realizacja sklepu internetowego, seo e-commerce case study"

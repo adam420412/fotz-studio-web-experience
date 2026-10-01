@@ -180,9 +180,11 @@ export default function AgencjaMarketingowaLodz() {
               Zwiększamy sprzedaż firm łódzkich poprzez profesjonalny marketing online. SEO, Google Ads, social media i strony WWW na najwyższym poziomie.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                Bezpłatna Konsultacja
-                <ArrowRight className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
               <Button size="lg" variant="outline">
                 <Phone className="mr-2 w-4 h-4" />
@@ -404,13 +406,17 @@ export default function AgencjaMarketingowaLodz() {
               Zarezerwuj bezpłatną konsultację z naszymi ekspertami. Omówimy Twoje cele i pokażemy jak możemy pomóc Twojej firmie z Łodzi.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
-                Bezpłatna Konsultacja
-                <ArrowRight className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
-                Skontaktuj się teraz
-                <Phone className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
+                <Link to="/kontakt">
+                  Skontaktuj się teraz
+                  <Phone className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
             </div>
           </div>

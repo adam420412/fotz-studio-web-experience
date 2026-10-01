@@ -42,7 +42,7 @@ export default function BlogCoreWebVitalsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Core Web Vitals | Fotz Studio"
+        title="Core Web Vitals — LCP, INP, CLS, optymalizacja wydajności web 2024?"
         description="Core Web Vitals: LCP, INP (następca FID), CLS — jak optymalizować, narzędzia pomiaru, Lighthouse CI, performance budgeting i wpływ na SEO Google."
         canonical="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
 

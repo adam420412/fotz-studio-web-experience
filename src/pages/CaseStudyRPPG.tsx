@@ -35,7 +35,7 @@ const CaseStudyRPPG = () => {
   return (
     <Layout>
       <SEOHead
-        title="RPPG | Fotz Studio"
+        title="RPPG - Rada Polskich Przedsiębiorców Globalnych - Case Study"
         description="Case study RPPG Rada Polskich Przedsiębiorców Globalnych: strona internetowa dla organizacji biznesowej. Design i UX. Fotz Studio."
         canonical="https://fotz.pl/realizacje/rppg"
         keywords="case study gry, marketing dla gier realizacja"

@@ -69,7 +69,7 @@ export default function BlogSchemaMarkupCoTo() {
     <>
       <SEOHead
         title="Schema Markup — co to jest i jak wdrożyć? | fotz.pl"
-        description="Schema Markup co to jest — wyjaśniamy czym są dane strukturyzowane, typy schema (FAQ, Product, LocalBusiness), jak wdrożyć JSON-LD i jakie generuje rich…"
+        description="Czym jest Schema Markup (dane strukturyzowane), typy schema, jak wdrożyć JSON-LD, które schema generują rich snippets, testowanie i wpływ na SEO."
         canonical="https://fotz.pl/blog/schema-markup-co-to"
 
         keywords="Schema Markup co to jest, Schema Markup definicja, czym jest Schema Markup, Schema Markup przykłady, jak działa Schema Markup, Schema Markup znaczenie, Schema Markup przewodnik"

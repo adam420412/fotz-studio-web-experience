@@ -46,9 +46,11 @@ export default function TworzenieStronWWW() {
               <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
                 Strona internetowa to nie luksus, to inwestycja. Zbudujemy dla Ciebie stronę, która przyciąga klientów, buduje zaufanie i generuje przychody.
               </p>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg">
-                Bezpłatna wycena
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg">
+                <Link to="/kontakt">
+                  Bezpłatna wycena
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
 

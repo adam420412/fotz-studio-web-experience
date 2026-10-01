@@ -42,8 +42,8 @@ export default function BlogSupabaseDeepDiveCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Supabase | Fotz Studio"
-        description="Supabase deep dive: Auth (OAuth, OTP, magic link), Row Level Security (RLS), Storage (transformacje obrazów), Realtime (subscriptions, Presence), Edge…"
+        title="Supabase — Auth, RLS, Storage, Realtime, Edge Functions i Vector 2024?"
+        description="6 funkcji Supabase (Auth/Database/Storage/Realtime/Edge Functions/Vector) — RLS policies, OAuth providers, signed URLs, Presence, pgvector semantic search i Next.js SSR."
         canonical="https://fotz.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
 
         keywords="Supabase co to jest, Supabase definicja, czym jest Supabase, Supabase przykłady, jak działa Supabase, Supabase znaczenie, Supabase przewodnik"

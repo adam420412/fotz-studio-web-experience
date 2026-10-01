@@ -37,7 +37,7 @@ export default function PozycjonowanieTorun() {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Torun - Agencja SEO dla firm w Toruniu | FOTZ"
-        description="Profesjonalne pozycjonowanie i SEO dla firm w Toruniu. Zwieksz widocznosc w Google. Skuteczne strategie dla hoteli, restauracji, szkol i uslug. Bezplatna…"
+        description="Profesjonalne pozycjonowanie i SEO dla firm w Toruniu. Zwiększ widoczność w Google. Skuteczne strategie dla hoteli, restauracji, szkół i usług. Bezpłatna wycena pozycjonowania lokalnego."
         canonical="https://fotz.pl/uslugi/pozycjonowanie/torun"
         keywords="pozycjonowanie toruń, agencja seo toruń, seo toruń, pozycjonowanie stron toruń, seo dla firm toruń, seo kujawsko-pomorskie, pozycjonowanie lokalne toruń"
       />

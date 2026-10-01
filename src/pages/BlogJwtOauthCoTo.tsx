@@ -42,7 +42,7 @@ export default function BlogJwtOauthCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="JWT, OAuth 2.0, OIDC | Fotz Studio"
+        title="JWT, OAuth 2.0, OIDC — autentykacja i autoryzacja w aplikacjach web?"
         description="JWT vs session, OAuth 2.0 grant types, PKCE, OpenID Connect, SAML, Passkeys — bezpieczeństwo autentykacji, CSRF, XSS i best practices 2024."
         canonical="https://fotz.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys"
 

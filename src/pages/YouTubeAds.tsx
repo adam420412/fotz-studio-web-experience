@@ -141,7 +141,7 @@ const YouTubeAds = () => {
       <Layout>
       <SEOHead
         title="YouTube Ads Warszawa — Reklama Wideo na YouTube dla Firm"
-        description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads — skuteczna reklama wideo od 2000 zł/mies…"
+        description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads — skuteczna reklama wideo od 2000 zł/mies. dla firm z Warszawy i całej Polski."
         canonical="https://fotz.pl/performance-marketing/youtube-ads"
         keywords="youtube ads warszawa, reklama na youtube, kampanie youtube, youtube advertising, agencja youtube ads, reklamy wideo warszawa, video marketing"
       />

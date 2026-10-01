@@ -42,8 +42,8 @@ export default function BlogReactCompilerCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Compiler | Fotz Studio"
-        description="React Compiler (React Forget): automatyczna memoizacja bez useMemo/useCallback, eslint-plugin, React 19 (use hook, useActionState, Server Actions, ref…"
+        title="React Compiler — automatyczna memoizacja, React 19 use hook, useActionState i Server Actions 2024?"
+        description="6 funkcji React Compiler/19 (memoizacja/eslint/use/useActionState/Server Actions/ref prop) — Rules of React, migracja, Next.js 15 wsparcie i production readiness."
         canonical="https://fotz.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024"
 
         keywords="React Compiler co to jest, React Compiler jak działa, React Compiler tutorial, React Compiler przykład, czym jest React Compiler, React Compiler dokumentacja, React Compiler przewodnik"

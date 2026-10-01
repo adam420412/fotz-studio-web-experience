@@ -97,7 +97,7 @@ export default function BlogMobileMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Mobile Marketing | Fotz Studio"
+        title="Mobile Marketing — co to jest i jak działa? | Fotz Studio"
         description="Mobile marketing — definicja, 6 kanałów (SMS, push, in-app), metryki i zasady mobile-first. Kompletny przewodnik po marketingu mobilnym w 2024 roku."
         canonical="https://fotz.pl/blog/mobile-marketing-co-to"
 

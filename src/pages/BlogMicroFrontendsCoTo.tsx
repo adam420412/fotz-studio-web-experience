@@ -50,7 +50,7 @@ export default function BlogMicroFrontendsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Micro Frontends | Fotz Studio"
+        title="Micro Frontends — co to jest i jak wdrożyć Module Federation?"
         description="Micro Frontends: definicja, 5 technik (Module Federation, Single-SPA, Web Components), shared state, design system, performance i wyzwania SEO."
         canonical="https://fotz.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation"
 

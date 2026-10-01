@@ -74,7 +74,7 @@ export default function BlogWordOfMouthCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Word of Mouth Marketing | Fotz Studio"
+        title="Word of Mouth Marketing — co to jest i jak działa?"
         description="Word of mouth marketing — definicja, rodzaje WOM, jak stymulować polecenia, NPS i programy referencyjne. Kompletny przewodnik po marketingu szeptanym."
         canonical="https://fotz.pl/blog/word-of-mouth-marketing-co-to"
 

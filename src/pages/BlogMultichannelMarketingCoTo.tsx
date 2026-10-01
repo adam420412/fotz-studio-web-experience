@@ -79,7 +79,7 @@ export default function BlogMultichannelMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Multichannel Marketing | Fotz Studio"
+        title="Multichannel Marketing — co to jest i jak wdrożyć?"
         description="Multichannel marketing — definicja, różnice vs. omnichannel, 6 kanałów (sklep, www, email, social, ads, marketplace), 5-krokowy proces. Kompletny przewodnik."
         canonical="https://fotz.pl/blog/multichannel-marketing-co-to"
 

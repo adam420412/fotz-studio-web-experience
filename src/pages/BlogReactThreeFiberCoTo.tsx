@@ -43,7 +43,7 @@ export default function BlogReactThreeFiberCoTo() {
     <Layout>
       <SEOHead
         title="React Three Fiber, Drei i 3D w React | Fotz Studio"
-        description="@react-three/fiber (JSX dla Three.js), @react-three/drei (OrbitControls, GLTF, Text), Rapier fizyka, postprocessing (Bloom, DOF), VR/AR z @react-three/xr…"
+        description="6 narzędzi 3D (R3F/Drei/Rapier/postprocessing/XR/Babylon.js) — JSX dla Three.js, OrbitControls, GLTF loading, Rapier fizyka, Bloom/DOF effects i VR/AR."
         canonical="https://fotz.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024"
 
         keywords="React Three Fiber, Drei i 3D w React co to jest, React Three Fiber, Drei i 3D w React jak działa, React Three Fiber, Drei i 3D w React tutorial, React Three Fiber, Drei i 3D w React przykład, czym jest React Three Fiber, Drei i 3D w React, React Three Fiber, Drei i 3D w React dokumentacja, React Three Fiber, Drei i 3D w React przewodnik"

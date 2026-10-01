@@ -93,8 +93,8 @@ export default function BlogEmailDeliverabilityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Email Deliverability | Fotz Studio"
-        description="Email deliverability — definicja, 6 czynników reputacji, konfiguracja SPF/DKIM/DMARC, metryki (bounce rate, spam rate) i jak poprawić dostarczalność…"
+        title="Email Deliverability — co to jest i jak poprawić dostarczalność emaili?"
+        description="Kompletny przewodnik po email deliverability: SPF, DKIM, DMARC, 6 czynników reputacji, metryki i strategie poprawy dostarczalności."
         canonical="https://fotz.pl/blog/email-deliverability-co-to"
 
         keywords="Email Deliverability co to jest, Email Deliverability definicja, czym jest Email Deliverability, Email Deliverability przykłady, jak działa Email Deliverability, Email Deliverability znaczenie, Email Deliverability przewodnik"

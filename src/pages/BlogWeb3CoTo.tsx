@@ -50,7 +50,7 @@ export default function BlogWeb3CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Web3 i Blockchain dla firm | Fotz Studio"
+        title="Web3 i Blockchain dla firm — smart contracts, DeFi, tokenizacja aktywów"
         description="Web3 i blockchain w biznesie: smart contracts, NFT tokenizacja aktywów, DeFi, DAO, supply chain, trade finance — jak wdrożyć w przedsiębiorstwie."
         canonical="https://fotz.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow"
 

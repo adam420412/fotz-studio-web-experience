@@ -42,8 +42,8 @@ export default function BlogEffectTsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Effect.ts, fp-ts i neverthrow | Fotz Studio"
-        description="Effect.ts (Effect Monad, Services, Layers, DI), fp-ts (Option, Either, TaskEither), neverthrow (Result type), ts-results i functional programming wzorce…"
+        title="Effect.ts, fp-ts i neverthrow — functional programming w TypeScript 2024?"
+        description="6 bibliotek FP (Effect.ts/fp-ts/neverthrow/ts-results/remeda/vanilla patterns) — type-safe error handling, monads, dependency injection i functional TypeScript."
         canonical="https://fotz.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024"
 
         keywords="Effect.ts, fp-ts i neverthrow co to jest, Effect.ts, fp-ts i neverthrow jak działa, Effect.ts, fp-ts i neverthrow tutorial, Effect.ts, fp-ts i neverthrow przykład, czym jest Effect.ts, fp-ts i neverthrow, Effect.ts, fp-ts i neverthrow dokumentacja, Effect.ts, fp-ts i neverthrow przewodnik"

@@ -46,9 +46,11 @@ export default function TworzenieSklepowInternetowych() {
               <p className="text-2xl text-orange-700 mb-8 font-semibold max-w-3xl mx-auto">
                 E-commerce w Polsce rośnie 15% rocznie. Ponad 30 tys. nowych sklepów online otwiera się każdy rok. Czy Twój sklep jest już online?
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg text-lg">
-                Bezpłatna konsultacja e-commerce
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg text-lg">
+                <Link to="/kontakt">
+                  Bezpłatna konsultacja e-commerce
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -278,14 +280,15 @@ export default function TworzenieSklepowInternetowych() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.featured
                           ? "bg-orange-600 hover:bg-orange-700 text-white"
                           : "bg-gray-200 hover:bg-gray-300 text-gray-900"
-                      }`}
-                    >
-                      Zamów sklep
+                      }`}>
+                      <Link to="/kontakt">
+                        Zamów sklep
+                      </Link>
                     </Button>
                   </motion.div>
                 ))}

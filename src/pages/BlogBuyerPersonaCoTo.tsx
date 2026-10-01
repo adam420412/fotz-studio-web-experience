@@ -85,7 +85,7 @@ export default function BlogBuyerPersonaCoTo() {
     <Layout>
       <SEOHead
         title="Buyer Persona — co to jest? Jak tworzyć persony zakupowe B2B"
-        description="Buyer persona — definicja, 6 elementów profilu, 4 role B2B (Economic Buyer, Champion, User, Influencer), różnica vs ICP i jak tworzyć oparte na danych…"
+        description="Kompletny przewodnik po buyer persona: 6 elementów profilu, 4 role w B2B, różnica vs ICP i metody badawcze."
         canonical="https://fotz.pl/blog/buyer-persona-co-to"
 
         keywords="Buyer Persona co to jest, Buyer Persona definicja, czym jest Buyer Persona, Buyer Persona w sprzedaży, Buyer Persona strategia, Buyer Persona przykłady, jak używać Buyer Persona"

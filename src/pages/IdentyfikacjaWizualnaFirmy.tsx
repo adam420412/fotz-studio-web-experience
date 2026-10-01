@@ -164,8 +164,10 @@ export default function IdentyfikacjaWizualnaFirmy() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-violet-600 hover:bg-violet-700 text-white">
-                  Zamów wycenę identyfikacji <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-violet-600 hover:bg-violet-700 text-white">
+                  <Link to="/kontakt">
+                    Zamów wycenę identyfikacji <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

@@ -42,7 +42,7 @@ export default function BlogTanstackRouterCoTo() {
     <Layout>
       <SEOHead
         title="TanStack Router, React Router v7 i type-safe routing w React 2024"
-        description="TanStack Router (100% type-safe, file-based), React Router v7 (Remix merger, loaders, actions), Wouter (1.5KB), Next.js App Router i type-safe navigation…"
+        description="6 routerów React (TanStack Router/React Router v7/v6/Next.js/Wouter/Expo Router) — type-safe params, search params, loaders i file-based routing."
         canonical="https://fotz.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
 
         keywords="TanStack Router, React Router v7 i type-safe routing w React 2024 co to jest, TanStack Router, React Router v7 i type-safe routing w React 2024 jak działa, TanStack Router, React Router v7 i type-safe routing w React 2024 tutorial, TanStack Router, React Router v7 i type-safe routing w React 2024 przykład, czym jest TanStack Router, React Router v7 i type-safe routing w React 2024, TanStack Router, React Router v7 i type-safe routing w React 2024 dokumentacja, TanStack Router, React Router v7 i type-safe routing w React 2024 przewodnik"

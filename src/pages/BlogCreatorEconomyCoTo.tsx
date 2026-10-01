@@ -90,7 +90,7 @@ export default function BlogCreatorEconomyCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Creator Economy | Fotz Studio"
+        title="Creator Economy — co to jest i jak działa? | Fotz Studio"
         description="Creator economy — definicja, modele zarobkowe, tiery twórców (nano/micro/macro), platformy i jak marki mogą współpracować z creator economy."
         canonical="https://fotz.pl/blog/creator-economy-co-to"
 

@@ -17,7 +17,7 @@ export default function AgencjaMarketingowaSzczecin() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Szczecin | Fotz Studio"
-        description="Agencja marketingowa Szczecin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Szczecina i Zachodniopomorskiego. Bezpłatna wycena!"
+        description="Agencja marketingowa Szczecin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm ze Szczecina i Zachodniopomorskiego. Bezpłatna wycena!"
         canonical="https://fotz.pl/agencja-marketingowa/szczecin"
         keywords="agencja marketingowa szczecin, marketing internetowy szczecin, agencja reklamowa szczecin, kampanie reklamowe szczecin, seo szczecin, google ads szczecin"
       />
@@ -71,16 +71,20 @@ export default function AgencjaMarketingowaSzczecin() {
               Agencja Marketingowa Szczecin
             </h1>
             <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Profesjonalny marketing dla firm z Szczecina. Specjalizujemy się w SEO, Google Ads, Social Media i tworzeniu stron internetowych. Ponad 200 projektów na koncie.
+              Profesjonalny marketing dla firm ze Szczecina. Specjalizujemy się w SEO, Google Ads, Social Media i tworzeniu stron internetowych. Ponad 200 projektów na koncie.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                Bezpłatna Wycena
-                <ArrowRight className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Link to="/kontakt">
+                  Bezpłatna Wycena
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                <Phone className="mr-2 w-4 h-4" />
-                Zadzwoń Teraz
+              <Button asChild size="lg" variant="outline">
+                <a href="tel:+48790814814">
+                  <Phone className="mr-2 w-4 h-4" />
+                  Zadzwoń Teraz
+                </a>
               </Button>
             </div>
           </div>
@@ -179,7 +183,7 @@ export default function AgencjaMarketingowaSzczecin() {
               Usługi Marketingowe w Szczecinie
             </h2>
             <p className="text-xl text-gray-700">
-              Kompleksowe rozwiązania marketingowe dla firm z Szczecina
+              Kompleksowe rozwiązania marketingowe dla firm ze Szczecina
             </p>
           </div>
 
@@ -490,9 +494,11 @@ export default function AgencjaMarketingowaSzczecin() {
             <p className="text-lg text-gray-700 mb-4">
               Nie jesteś pewien, który pakiet wybrać? Chętnie pomożemy!
             </p>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-              Umów Bezpłatną Konsultację
-              <Phone className="ml-2 w-4 h-4" />
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Link to="/kontakt">
+                Umów Bezpłatną Konsultację
+                <Phone className="ml-2 w-4 h-4" />
+              </Link>
             </Button>
           </div>
         </div>
@@ -569,9 +575,11 @@ export default function AgencjaMarketingowaSzczecin() {
             Ponad 500 firm z Szczecina i regionu ufa nam obsługę swoje kampanie marketingowe. Dołącz do nich i dostań bezpłatną wycenę.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-blue-600 hover:text-blue-700">
-              Bezpłatna Wycena
-              <ArrowRight className="ml-2 w-4 h-4" />
+            <Button asChild size="lg" variant="secondary" className="text-blue-600 hover:text-blue-700">
+              <Link to="/kontakt">
+                Bezpłatna Wycena
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
               <Phone className="mr-2 w-4 h-4" />

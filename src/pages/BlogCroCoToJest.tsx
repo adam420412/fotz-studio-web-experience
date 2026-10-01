@@ -52,7 +52,7 @@ export default function BlogCroCoToJest() {
     <Layout>
       <SEOHead
         title="CRO — Conversion Rate Optimization co to jest? | Fotz.pl"
-        description="CRO (Conversion Rate Optimization) — co to jest, jak przeprowadzić audyt, testy A/B i które elementy strony optymalizować. Kompletny przewodnik po…"
+        description="Kompletny przewodnik po CRO: audyt, A/B testing, kluczowe metryki i elementy strony o najwyższym wpływie na konwersję."
         canonical="https://fotz.pl/blog/cro-conversion-rate-optimization-co-to-jest"
 
         keywords="CRO co to jest, CRO definicja, czym jest CRO, CRO przykłady, jak działa CRO, CRO znaczenie, CRO przewodnik"

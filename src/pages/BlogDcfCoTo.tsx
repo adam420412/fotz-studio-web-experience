@@ -64,7 +64,7 @@ export default function BlogDcfCoTo() {
     <Layout>
       <SEOHead
         title="DCF — co to jest? Discounted Cash Flow, NPV i wycena spółek"
-        description="DCF (Discounted Cash Flow) — definicja, formuła krok po kroku, NPV, stopa dyskontowa (WACC), analiza sensytywności i typowe błędy. Kompletny przewodnik po…"
+        description="Kompletny przewodnik po DCF: formuła, NPV, WACC, Terminal Value i analiza sensytywności."
         canonical="https://fotz.pl/blog/dcf-discounted-cash-flow-co-to"
 
         keywords="DCF co to jest, DCF definicja, czym jest DCF, DCF przykłady, jak działa DCF, DCF znaczenie, DCF przewodnik"

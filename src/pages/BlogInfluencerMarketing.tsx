@@ -47,8 +47,8 @@ export default function BlogInfluencerMarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Influencer Marketing w Polsce | Fotz Studio"
-        description="Influencer marketing w Polsce — jak wybierać influencerów, negocjować współpracę i mierzyć ROI. Mikro i makro influencerzy. Poradnik influencer marketing…"
+        title="Influencer Marketing w Polsce - Jak Współpracować z Influencerami"
+        description="Kompletny poradnik influencer marketingu. Jak znaleźć influencerów, negocjować współpracę, tworzyć briefy i mierzyć efekty kampanii."
         ogType="article"
         canonical="https://fotz.pl/social-media/influencer"
         keywords="influencer marketing, współpraca z influencerami, marketing influencerów, reklama u influencera, influencer co to"

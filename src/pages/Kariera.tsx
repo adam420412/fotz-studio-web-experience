@@ -135,7 +135,7 @@ export default function Kariera() {
     <Layout>
       <SEOHead
         title="Kariera w Fotz Studio | Fotz Studio"
-        description="Kariera w Fotz Studio Poznań — oferty pracy dla specjalistów SEO, social media managerów, grafików i web developerów. Dołącz do kreatywnego zespołu…"
+        description="Kariera w Fotz Studio Poznań — oferty pracy dla specjalistów SEO, social media managerów, grafików i web developerów. Dołącz do kreatywnego zespołu, który tworzy projekty dla topowych marek."
         canonical="https://fotz.pl/kariera"
         keywords="kariera agencja marketingowa poznań, praca SEO specjalista poznań, oferty pracy marketing poznań, praca social media manager, web developer praca poznań"
       />

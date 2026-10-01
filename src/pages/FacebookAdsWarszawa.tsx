@@ -47,7 +47,7 @@ export default function FacebookAdsWarszawa() {
       <Layout>
         <SEOHead
           title="Agencja Facebook Ads Warszawa — reklamy Meta dla firm | Fotz.pl"
-          description="Facebook Ads Warszawa ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści Meta, skuteczne reklamy na Facebooku. Bezpłatna…"
+          description="Facebook Ads Warszawa ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści Meta i skuteczne reklamy na Facebooku dla firm z Warszawy. Bezpłatna konsultacja na start."
           canonical="https://fotz.pl/performance-marketing/facebook-ads/warszawa"
           keywords="facebook ads warszawa, meta ads warszawa, instagram ads warszawa, reklamy facebook, reklamy na facebooku, kampanie meta, agencja facebook ads warszawa"
         />

@@ -72,7 +72,7 @@ export default function BlogNewsletterCoTo() {
     <>
       <SEOHead
         title="Newsletter — co to jest i jak go stworzyć? Poradnik | fotz.pl"
-        description="Newsletter co to jest — wyjaśniamy czym jest newsletter, jak założyć mailing, ile kosztuje i jak zbudować listę subskrybentów. Narzędzia: Mailchimp…"
+        description="Czym jest newsletter, jak uruchomić mailing, jakie narzędzia wybrać i jak budować listę subskrybentów zgodnie z RODO."
         canonical="https://fotz.pl/blog/newsletter-co-to"
 
         keywords="Newsletter co to jest, Newsletter definicja, czym jest Newsletter, Newsletter przykłady, jak działa Newsletter, Newsletter znaczenie, Newsletter przewodnik"

@@ -43,7 +43,7 @@ export default function BlogPosthogSentryCoTo() {
     <Layout>
       <SEOHead
         title="PostHog, Sentry, Plausible i Feature Flags | Fotz Studio"
-        description="Analytics i monitoring 2024: PostHog (all-in-one analytics+flags+replay), Sentry (errors+performance), Plausible (privacy-first), LaunchDarkly (feature…"
+        description="6 narzędzi analytics i monitoring (PostHog/Sentry/Plausible/LogRocket/LaunchDarkly/Amplitude) — feature flags, session replay, Web Vitals INP i Real User Monitoring."
         canonical="https://fotz.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024"
 
         keywords="PostHog, Sentry, Plausible i Feature Flags co to jest, PostHog, Sentry, Plausible i Feature Flags definicja, czym jest PostHog, Sentry, Plausible i Feature Flags, PostHog, Sentry, Plausible i Feature Flags przykłady, jak działa PostHog, Sentry, Plausible i Feature Flags, PostHog, Sentry, Plausible i Feature Flags znaczenie, PostHog, Sentry, Plausible i Feature Flags przewodnik"

@@ -101,8 +101,8 @@ export default function BlogChurnAnalysisCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Churn Analysis | Fotz Studio"
-        description="Churn analysis — definicja, 4 typy churnu, kluczowe metryki (NRR, GRR, LTV), przewidywanie churnu i playbook retencji. Jak redukować churn rate. Kompletny…"
+        title="Churn Analysis — co to jest i jak redukować odpływ klientów?"
+        description="Kompletny przewodnik po churn analysis: 4 typy churnu, metryki (NRR, GRR, churn rate), predykcja churnu i 4-etapowy retention playbook."
         canonical="https://fotz.pl/blog/churn-analysis-co-to"
 
         keywords="Churn Analysis co to jest, Churn Analysis definicja, czym jest Churn Analysis, Churn Analysis startup, Churn Analysis jak liczyć, Churn Analysis wzór, Churn Analysis przykłady"

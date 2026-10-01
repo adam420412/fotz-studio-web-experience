@@ -42,7 +42,7 @@ export default function BlogFileUploadsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="File Uploads | Fotz Studio"
+        title="File Uploads — UploadThing, Cloudinary, AWS S3, Mux, Next.js 2024?"
         description="File uploads w Next.js: UploadThing (App Router), Cloudinary, AWS S3 presigned URLs, Cloudflare R2, Mux video, Multer, next/image optymalizacja i sharp."
         canonical="https://fotz.pl/blog/file-uploads-uploadthing-cloudinary-s3-mux-nextjs-2024"
 

@@ -45,7 +45,7 @@ const BlogCoToJestSeo = () => {
     <Layout>
       <SEOHead
         title="Co to jest SEO? Pozycjonowanie stron — przewodnik dla firm"
-        description="Co to jest SEO i jak działa pozycjonowanie? Kompletny przewodnik po SEO dla właścicieli firm — on-page, off-page, SEO techniczne, link building i efekty…"
+        description="Kompletny przewodnik po SEO dla właścicieli firm. On-page, off-page, SEO techniczne, link building i praktyczne wskazówki na start."
         canonical="https://fotz.pl/blog/co-to-jest-seo"
 
         keywords="co to jest, definicja, czym jest, w marketingu, przykłady, jak działa, strategia"

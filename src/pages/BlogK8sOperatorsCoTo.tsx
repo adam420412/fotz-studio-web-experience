@@ -50,7 +50,7 @@ export default function BlogK8sOperatorsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Kubernetes Operators | Fotz Studio"
+        title="Kubernetes Operators — co to jest, Kubebuilder, CloudNativePG, Strimzi?"
         description="Kubernetes Operators: Operator SDK, Kubebuilder, CloudNativePG PostgreSQL, Strimzi Kafka, Prometheus Operator, OLM — jak budować i używać Operatorów w K8s."
         canonical="https://fotz.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi"
 

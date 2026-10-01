@@ -100,7 +100,7 @@ export default function BlogQbrCoTo() {
     <Layout>
       <SEOHead
         title="QBR — co to jest? Quarterly Business Review w Customer Success"
-        description="QBR (Quarterly Business Review) — definicja, agenda 7 sekcji, kluczowe metryki, 5 błędów i różnica vs. status call. Przewodnik po kwartalnym przeglądzie…"
+        description="Kompletny przewodnik po QBR: agenda 7 sekcji, metryki do pokazania, 5 błędów i jak odróżnić QBR od status calla."
         canonical="https://fotz.pl/blog/qbr-co-to"
 
         keywords="QBR co to jest, QBR definicja, czym jest QBR, QBR przykłady, jak działa QBR, QBR znaczenie, QBR przewodnik"

@@ -33,7 +33,7 @@ export default function BlogNarzedziaMarketingowe() {
     <>
       <SEOHead
         title="Narzędzia Marketingowe - Przewodnik po Najlepszych Toolach 2025"
-        description="Kompletny przewodnik po najlepszych narzędziach marketingowych dla MŚP. SEO, analityka, social media, email marketing, automatyzacja. Sprawdź które…"
+        description="Kompletny przewodnik po narzędziach marketingowych dla małych i średnich firm. Kategorie SEO, analityka, social media, email, automatyzacja i projektowanie."
         ogType="article"
         canonical="https://fotz.pl/blog/narzedzia-marketingowe"
         keywords="narzędzia marketingowe, najlepsze narzędzia do marketingu, marketing tools, SEMrush, Ahrefs, Google Analytics, HubSpot, Buffer, narzędzia do social media"

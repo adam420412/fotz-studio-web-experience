@@ -258,8 +258,10 @@ export default function GoogleAdsBydgoszcz() {
               Google Ads Bydgoszcz — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Bydgoszcza i Kujaw. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna Konsultacja
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
                 <a href="tel:+48790814814">
@@ -634,8 +636,10 @@ export default function GoogleAdsBydgoszcz() {
             Zapraszamy na bezpłatną konsultację. Analizujemy Twoją branżę, konkurencję i potencjał dla Google Ads.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              Rezerwuj Konsultację
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Link to="/kontakt">
+                Rezerwuj Konsultację
+              </Link>
             </Button>
             <Button asChild
               size="lg"

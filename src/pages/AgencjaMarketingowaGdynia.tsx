@@ -264,13 +264,17 @@ export default function AgencjaMarketingowaGdynia() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Phone className="w-5 h-5 mr-2" />
-                Bezpłatna konsultacja
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Link to="/kontakt">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Bezpłatna konsultacja
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                Pobierz ofertę
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button asChild size="lg" variant="outline">
+                <Link to="/kontakt">
+                  Pobierz ofertę
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
               </Button>
             </div>
 
@@ -504,20 +508,22 @@ export default function AgencjaMarketingowaGdynia() {
               zobowiązań, brak kosztów!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              <Button asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-slate-100"
-              >
-                Bezpłatna Konsultacja
-                <ArrowRight className="w-5 h-5 ml-2" />
+                className="bg-white text-blue-600 hover:bg-slate-100">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
               </Button>
-              <Button
+              <Button asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Zadzwoń do nas
+                className="border-white text-white hover:bg-white hover:text-blue-600">
+                <a href="tel:+48790814814">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Zadzwoń do nas
+                </a>
               </Button>
             </div>
             <p className="text-sm text-blue-100 mt-8">

@@ -78,7 +78,7 @@ export default function BlogBrandEquityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Brand Equity | Fotz Studio"
+        title="Brand Equity — co to jest i jak budować kapitał marki?"
         description="Brand equity (kapitał marki) — definicja, model Kellera (4 poziomy), czynniki budowania i jak mierzyć wartość marki. Kompletny przewodnik po brand equity."
         canonical="https://fotz.pl/blog/brand-equity-co-to"
 

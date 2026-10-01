@@ -42,7 +42,7 @@ export default function BlogReactNativeExpoCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Native, Expo | Fotz Studio"
+        title="React Native, Expo — co to jest, mobile development, vs Flutter 2024?"
         description="React Native + Expo: New Architecture (Fabric/JSI), Expo Router, EAS Build, navigation, state management — vs Flutter i natywne iOS/Android, kiedy co wybrać."
         canonical="https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
 

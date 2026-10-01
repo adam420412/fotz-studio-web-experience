@@ -166,8 +166,10 @@ export default function EmailMarketing() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
-                  Zaczęajmy od konsultacji <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                  <Link to="/kontakt">
+                    Zacznijmy od konsultacji <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi/marketing-internetowy">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

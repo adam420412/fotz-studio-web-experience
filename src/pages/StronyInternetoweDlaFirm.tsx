@@ -46,9 +46,11 @@ export default function StronyInternetoweDlaFirm() {
               <p className="text-2xl text-green-700 mb-8 font-semibold max-w-3xl mx-auto">
                 Twoja firma bez strony internetowej to jak sklep bez szyldu. 93% decyzji zakupowych zaczyna się online.
               </p>
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg">
-                Bezpłatna konsultacja
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg">
+                <Link to="/kontakt">
+                  Bezpłatna konsultacja
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>

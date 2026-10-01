@@ -219,8 +219,10 @@ export default function SocialMediaMarketing() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
-                  Bezpłatna analiza social media <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
+                  <Link to="/kontakt">
+                    Bezpłatna analiza social media <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

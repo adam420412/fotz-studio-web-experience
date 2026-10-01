@@ -43,7 +43,7 @@ export default function BlogWebComponentsCoTo() {
     <Layout>
       <SEOHead
         title="Web Components, Lit, Stencil i Micro-frontends | Fotz Studio"
-        description="Web Components (Custom Elements, Shadow DOM, Templates), Lit od Google, Stencil.js, Shoelace UI Kit, Declarative Shadow DOM SSR i micro-frontends z Module…"
+        description="6 narzędzi Web Components (Lit/Stencil/Shoelace/Astro+WC/Module Federation/Single SPA) — Custom Elements, Shadow DOM, SSR, micro-frontends i framework interop."
         canonical="https://fotz.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024"
 
         keywords="Web Components, Lit, Stencil i Micro-frontends co to jest, Web Components, Lit, Stencil i Micro-frontends definicja, czym jest Web Components, Lit, Stencil i Micro-frontends, Web Components, Lit, Stencil i Micro-frontends przykłady, jak działa Web Components, Lit, Stencil i Micro-frontends, Web Components, Lit, Stencil i Micro-frontends znaczenie, Web Components, Lit, Stencil i Micro-frontends przewodnik"

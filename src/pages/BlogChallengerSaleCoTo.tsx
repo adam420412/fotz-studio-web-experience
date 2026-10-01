@@ -70,7 +70,7 @@ export default function BlogChallengerSaleCoTo() {
     <Layout>
       <SEOHead
         title="Challenger Sale — co to jest i jak stosować? | Fotz.pl"
-        description="Challenger Sale — metodologia sprzedaży CEB: 5 profili handlowca, sekwencja Teach-Tailor-Take Control, porównanie z SPIN Selling i zastosowanie w B2B…"
+        description="Kompletny przewodnik po Challenger Sale: 5 profili, teaching sekwencja i zastosowanie w sprzedaży B2B."
         canonical="https://fotz.pl/blog/challenger-sale-metodologia-sprzedazy"
 
         keywords="Challenger Sale co to jest, Challenger Sale definicja, czym jest Challenger Sale, Challenger Sale przykłady, jak działa Challenger Sale, Challenger Sale znaczenie, Challenger Sale przewodnik"

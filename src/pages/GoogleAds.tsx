@@ -133,7 +133,7 @@ const GoogleAds = () => {
       <Layout>
       <SEOHead
         title="Kampanie Google Ads - Skuteczna Reklama w Google dla Firm"
-        description="Kampanie Google Ads dla firm — reklamy w wyszukiwarce Google, YouTube, Shopping. Prowadzenie i optymalizacja kampanii Google Ads. Agencja Google Partners…"
+        description="Kampanie Google Ads dla firm — reklamy w wyszukiwarce Google, YouTube i Google Shopping. Prowadzenie i optymalizacja kampanii Google Ads przez agencję Google Partners, które generują sprzedaż i zwrot z inwestycji."
         canonical="https://fotz.pl/performance-marketing/google-ads"
         keywords="kampanie google ads, reklamy w google ads, prowadzenie kampanii google ads, agencja google ads, google adwords, reklama w google, google partners, google ads dla firm, google ads cennik, optymalizacja google ads, sem google ads"
       />

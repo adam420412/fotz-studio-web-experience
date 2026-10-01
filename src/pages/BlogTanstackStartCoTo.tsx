@@ -41,8 +41,8 @@ export default function BlogTanstackStartCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TanStack Start | Fotz Studio"
-        description="TanStack Start: full-stack React framework (beta 2024) z TanStack Router (type-safe), Server Functions (jak Server Actions), Vinxi bundler i TanStack…"
+        title="TanStack Start — full-stack React z TanStack Router, Server Functions i Vinxi 2024?"
+        description="6 frameworków full-stack React (TanStack Start/Next.js/Remix/Astro/SvelteKit/Waku) — TanStack Router type-safe, Server Functions, TanStack Query SSR i kiedy wybrać."
         canonical="https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
 
         keywords="TanStack Start co to jest, TanStack Start jak działa, TanStack Start tutorial, TanStack Start przykład, czym jest TanStack Start, TanStack Start dokumentacja, TanStack Start przewodnik"

@@ -116,7 +116,7 @@ export default function SpotyReklamowe() {
     <Layout>
       <SEOHead
         title="Spoty Reklamowe | Fotz Studio"
-        description="Produkcja spotów reklamowych — filmy reklamowe dla firm, reklamy video online, spoty TV i YouTube. Profesjonalna produkcja wideo: scenariusz, nagranie…"
+        description="Produkcja spotów reklamowych — filmy reklamowe dla firm, reklamy video online, spoty TV i YouTube. Profesjonalna produkcja wideo: scenariusz, nagranie, montaż i postprodukcja w Fotz Studio."
         canonical="https://fotz.pl/uslugi/produkcja-video"
         keywords="spoty reklamowe, reklama wideo, spoty tv, produkcja reklam wideo, filmy reklamowe, spot reklamowy cena"
       />

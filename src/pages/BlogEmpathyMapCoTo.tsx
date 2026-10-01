@@ -117,7 +117,7 @@ export default function BlogEmpathyMapCoTo() {
     <Layout>
       <SEOHead
         title="Mapa Empatii — co to jest? Empathy Map w UX i Design Thinking"
-        description="Mapa empatii (empathy map) — definicja, 6 kwadrantów (mówi, myśli, robi, czuje, słyszy, widzi), różnica vs persona i jak przeprowadzić warsztat…"
+        description="Kompletny przewodnik po mapie empatii: 6 kwadrantów, różnica vs persona, warsztat krok po kroku i przykłady zastosowania."
         canonical="https://fotz.pl/blog/mapa-empatii-co-to"
 
         keywords="Mapa Empatii co to jest, Mapa Empatii definicja, czym jest Mapa Empatii, Mapa Empatii przykłady, jak działa Mapa Empatii, Mapa Empatii znaczenie, Mapa Empatii przewodnik"
