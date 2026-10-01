@@ -6,7 +6,7 @@ import { Search, TrendingUp, MapPin, Users, Clock, Award } from "lucide-react";
 export default function PozycjonowanieLegnica() {
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
-    { name: "Pozycjonowanie", url: "/pozycjonowanie" },
+    { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
     { name: "Legnica", url: "/pozycjonowanie/legnica" },
   ];
 

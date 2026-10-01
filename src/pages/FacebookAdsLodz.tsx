@@ -398,7 +398,7 @@ export default function FacebookAdsLodz() {
               {[
                 { label: "Facebook Ads Warszawa", to: "/performance-marketing/facebook-ads/warszawa" },
                 { label: "Google Ads Łódź", to: "/performance-marketing/google-ads/lodz" },
-                { label: "Pozycjonowanie Łódź", to: "/uslugi/seo/lodz" },
+                { label: "Pozycjonowanie Łódź", to: "/uslugi/pozycjonowanie/lodz" },
                 { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
                 { label: "Social media marketing", to: "/social-media" },
               ].map((link) => (

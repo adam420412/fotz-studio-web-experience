@@ -121,7 +121,7 @@ const BlogMarketingLokalny = () => {
   return (
     <>
       <SEOHead
-        title="Marketing lokalny dla firm - jak pozyskiwać klientów w swoim…"
+        title="Marketing lokalny - jak pozyskiwać klientów w swoim mieście"
         description="Kompletny przewodnik marketingu lokalnego dla firm. Google Business Profile, SEO lokalne, opinie, budżet. Strategie do pozyskania klientów w swoim mieście."
         ogType="article"
         canonical="https://fotz.pl/blog/marketing-lokalny-dla-firm"

@@ -48,7 +48,7 @@ export default function BlogBrandingDlaMalychFirm() {
       <ArticleSchema
         headline="Branding dla małej firmy - Kompletny przewodnik tworzenia identyfikacji wizualnej"
         description="Pełny poradnik jak zbudować profesjonalne branding dla małej firmy na ograniczonym budżecie. Praktyczne wskazówki, narzędzia i strategie."
-        image="https://fotz.pl/og-branding-mala-firma.jpg"
+        image="https://fotz.pl/og-image.jpg"
         datePublished="2025-04-15"
         dateModified="2025-08-05"
         author="Fotz Studio"

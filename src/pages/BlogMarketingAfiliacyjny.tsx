@@ -73,7 +73,7 @@ export default function BlogMarketingAfiliacyjny() {
         author="Fotz Studio"
         datePublished="2025-01-20"
         dateModified="2025-06-25"
-        image="https://fotz.pl/og-marketing-afiliacyjny.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
       <FAQSchema items={faqs} />
 

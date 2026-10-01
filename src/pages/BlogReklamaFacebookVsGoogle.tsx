@@ -80,7 +80,7 @@ export default function BlogReklamaFacebookVsGoogle() {
         description="Kompleksowe porównanie platform reklamowych: Google Ads vs Facebook Ads. Analiza kosztów, targetowania, ROI i zastosowań dla różnych branż."
         author="Zespół FOTZ"
         publishDate="2026-04-01"
-        image="https://fotz.pl/images/og/facebook-vs-google.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema

@@ -58,7 +58,7 @@ const CaseStudyEcommerceCRO = () => {
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Case Studies", url: "https://fotz.pl/case-studies" },
+          { name: "Case Studies", url: "https://fotz.pl/realizacje" },
           { name: "Optymalizacja Konwersji E-commerce", url: "https://fotz.pl/case-studies/optymalizacja-konwersji-ecommerce" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

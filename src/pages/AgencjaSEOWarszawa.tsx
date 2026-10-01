@@ -21,7 +21,7 @@ const staggerContainer = {
 
 const breadcrumbs = [
   { label: "Strona główna", url: "/" },
-  { label: "Agencja SEO", url: "/agencja-seo" },
+  { label: "Agencja SEO", url: "/seo/pozycjonowanie" },
   { label: "Warszawa", url: "/agencja-seo-warszawa" }
 ];
 

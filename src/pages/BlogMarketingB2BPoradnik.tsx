@@ -35,7 +35,7 @@ const BlogMarketingB2BPoradnik = () => {
     article: {
       headline: "Marketing B2B – Kompletny Poradnik dla Firm [2026]",
       description: "Marketing B2B – jak skutecznie dotrzeć do klientów biznesowych? Strategie, kanały, narzędzia i case studies. Kompletny przewodnik po marketingu B2B.",
-      image: "https://fotz.pl/images/b2b-marketing-poradnik.jpg",
+      image: "https://fotz.pl/og-image.jpg",
       datePublished: "2026-03-20",
       dateModified: "2026-03-20",
       author: {
@@ -59,7 +59,7 @@ const BlogMarketingB2BPoradnik = () => {
         og={{
           title: "Marketing B2B – Kompletny Poradnik dla Firm [2026]",
           description: "Dowiedz się, jak skutecznie prowadzić marketing dla firm B2B. Kompleksowy przewodnik z technikami, kanałami icase studies.",
-          image: "https://fotz.pl/images/b2b-marketing-poradnik.jpg",
+          image: "https://fotz.pl/og-image.jpg",
           url: "https://fotz.pl/blog/marketing-b2b-poradnik",
           type: "article"
         }}

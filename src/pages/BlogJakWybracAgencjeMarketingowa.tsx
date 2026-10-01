@@ -117,7 +117,7 @@ export default function BlogJakWybracAgencjeMarketingowa() {
         datePublished="2025-04-12"
         dateModified="2025-04-12"
         author="Fotz Studio"
-        image="https://fotz.pl/og-jak-wybrac-agencje.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />

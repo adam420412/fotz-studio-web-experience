@@ -29,8 +29,8 @@ import { ContactSection } from "@/components/sections/ContactSection";
 export default function StronyInternetoweRzeszow() {
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
-    { name: "Strony internetowe", url: "/strony-internetowe" },
-    { name: "Rzeszów", url: "/strony-internetowe/rzeszow" },
+    { name: "Strony internetowe", url: "/uslugi/strony-internetowe" },
+    { name: "Rzeszów", url: "/uslugi/strony-internetowe/rzeszow" },
   ];
 
   const serviceTypes = [

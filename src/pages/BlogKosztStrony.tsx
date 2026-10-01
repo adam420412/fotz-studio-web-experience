@@ -519,7 +519,7 @@ const BlogKosztStrony = () => {
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
               <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
             </div>
             </div>

@@ -37,7 +37,7 @@ export default function AgencjaMarketingowaGdynia() {
 
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
-    { name: "Agencje Marketingowe", url: "/agencje-marketingowe" },
+    { name: "Agencje Marketingowe", url: "/agencja-marketingowa" },
     { name: "Gdynia", url: "/agencja-marketingowa/gdynia" },
   ];
 

@@ -179,9 +179,9 @@ export default function BlogBrandAmbassadorCoTo() {
             <div className="space-y-4">
               {ambassadorTypes.map((t, i) => (
                 <div key={i} className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                  <div className="flex items-start justify-between mb-2">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                     <h3 className="font-bold text-slate-900 text-lg">{t.typ}</h3>
-                    <span className="text-sm bg-pink-50 text-pink-700 px-3 py-1 rounded-full flex-shrink-0 ml-4">{t.kosztZakres}</span>
+                    <span className="text-sm bg-pink-50 text-pink-700 px-3 py-1 rounded-full self-start sm:ml-4 sm:max-w-[50%]">{t.kosztZakres}</span>
                   </div>
                   <p className="text-slate-600 mb-3">{t.opis}</p>
                   <div className="grid md:grid-cols-2 gap-3 text-sm">

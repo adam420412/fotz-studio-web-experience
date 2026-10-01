@@ -77,7 +77,7 @@ export default function BlogCMSCoToJest() {
         description="Czym jest CMS (Content Management System), popularne platformy (WordPress, Shopify, Webflow), co to jest headless CMS i ile kosztuje strona na CMS."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/cms-co-to-jest"
+        url="https://fotz.pl/blog/co-to-jest-cms"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

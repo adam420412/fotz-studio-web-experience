@@ -591,7 +591,7 @@ const UslugiIdentyfikacjaWizualna = () => {
               { label: "Agencja graficzna", href: "/agencja-graficzna" },
               { label: "Strony internetowe", href: "/uslugi/strony-internetowe" },
               { label: "Social media", href: "/uslugi/social-media-marketing" },
-              { label: "Kampanie reklamowe", href: "/uslugi/kampanie-reklamowe" },
+              { label: "Kampanie reklamowe", href: "/kampanie-reklamowe" },
             ].map((item) => (
               <Link
                 key={item.label}

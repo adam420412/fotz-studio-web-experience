@@ -58,7 +58,7 @@ export default function BlogKonwersjaStrony() {
         author="Fotz Studio"
         datePublished="2025-01-15"
         dateModified="2025-06-01"
-        image="https://fotz.pl/og-konwersja-strony.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
       <FAQSchema items={faqItems} />
 

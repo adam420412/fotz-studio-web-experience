@@ -114,7 +114,7 @@ const CaseStudyLocalSEO = () => {
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Case Studies", url: "https://fotz.pl/case-studies" },
+        { name: "Case Studies", url: "https://fotz.pl/realizacje" },
         { name: "SEO Lokalne Poznań", url: "https://fotz.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu" }
       ]}/>
       <ArticleSchema

@@ -66,7 +66,7 @@ export default function BlogDropshippingPolska() {
         author="Fotz"
         datePublished={publicationDate}
         dateModified={modifiedDate}
-        image="https://fotz.pl/images/dropshipping.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

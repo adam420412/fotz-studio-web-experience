@@ -349,10 +349,10 @@ export default function AgencjaMarketingowaTorun() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa-gdansk" },
-                { label: "Agencja marketingowa Rzeszów", to: "/agencja-marketingowa-rzeszow" },
-                { label: "Agencja marketingowa Bydgoszcz", to: "/agencja-marketingowa-bydgoszcz" },
-                { label: "Agencja marketingowa Szczecin", to: "/agencja-marketingowa-szczecin" },
+                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa/gdansk" },
+                { label: "Agencja marketingowa Rzeszów", to: "/agencja-marketingowa/rzeszow" },
+                { label: "Agencja marketingowa Bydgoszcz", to: "/agencja-marketingowa/bydgoszcz" },
+                { label: "Agencja marketingowa Szczecin", to: "/agencja-marketingowa/szczecin" },
               ].map((link) => (
                 <Link
                   key={link.to}

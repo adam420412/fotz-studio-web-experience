@@ -48,7 +48,7 @@ export const AgencjaMarketingowaElblag = () => {
       <SEOHead
         title={seoTitle}
         description={seoDescription}
-        canonical="/agencja-marketingowa/elblag"
+        canonical="https://fotz.pl/agencja-marketingowa/elblag"
         keywords="agencja marketingowa elbląg, marketing internetowy elbląg, usługi marketingowe elbląg, agencja reklamowa elbląg"
       />
 
@@ -414,7 +414,7 @@ export const AgencjaMarketingowaElblag = () => {
               fotz studio - agencja marketingowa
             </p>
             <p className="text-gray-800">
-              Elbląg, Polska | phone: +48 123 456 789 | email: hello@fotz.pl
+              Elbląg, Polska | phone: +48 790 814 814 | email: hello@fotz.pl
             </p>
           </div>
         </div>

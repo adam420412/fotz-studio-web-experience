@@ -693,7 +693,7 @@ const FacebookAds = () => {
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
             </div>
           </motion.div>
         </div>

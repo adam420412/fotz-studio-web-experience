@@ -12,7 +12,7 @@ export default function BlogJakWybracAgencje() {
     "@type": "Article",
     "headline": "Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru",
     "description": "Jak wybrać dobrą agencję marketingową? Poznaj 10 kluczowych kryteriów: portfolio, specjalizacja, transparentność, ROI. Praktyczny poradnik dla firm.",
-    "image": "https://fotz.pl/og-image-agencja.jpg",
+    "image": "https://fotz.pl/og-image.jpg",
     "datePublished": "2026-04-10",
     "author": {
       "@type": "Organization",
@@ -23,7 +23,7 @@ export default function BlogJakWybracAgencje() {
       "name": "Fotz Studio",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://fotz.pl/logo.png"
+        "url": "https://fotz.pl/logo-fotz.jpg"
       }
     }
   };

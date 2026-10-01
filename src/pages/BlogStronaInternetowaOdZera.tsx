@@ -136,7 +136,7 @@ export default function BlogStronaInternetowaOdZera() {
           "@type": "BlogPosting",
           "headline": "Strona internetowa dla małej firmy - poradnik 2025",
           "description": "Pełny poradnik jak zrobić stronę dla małej firmy. Co musi mieć strona? Ile kosztuje? WordPress vs Wix. 5 najczęstszych błędów.",
-          "image": "https://fotz.pl/og-blog-malafirma.jpg",
+          "image": "https://fotz.pl/og-image.jpg",
           "datePublished": "2025-02-15T09:00:00Z",
           "dateModified": "2025-04-01T14:30:00Z",
           "author": {
@@ -148,7 +148,7 @@ export default function BlogStronaInternetowaOdZera() {
             "name": "fotz.pl",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://fotz.pl/logo.png"
+              "url": "https://fotz.pl/logo-fotz.jpg"
             }
           },
           "mainEntityOfPage": {

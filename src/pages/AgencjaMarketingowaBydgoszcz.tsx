@@ -404,12 +404,13 @@ export default function AgencjaMarketingowaBydgoszcz() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              <Button asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-slate-100 font-semibold"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                +48 123 456 789
+                className="bg-white text-blue-600 hover:bg-slate-100 font-semibold">
+                <a href="tel:+48790814814">
+                  <Phone className="w-5 h-5 mr-2" />
+                  +48 790 814 814
+                </a>
               </Button>
               <Button
                 size="lg"

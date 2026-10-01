@@ -27,7 +27,7 @@ const caseStudies = [
     description: "Strona internetowa i pozycjonowanie lokalne dla firmy specjalizującej się w tapicerowaniu autobusów.",
     image: grafImage,
     results: ["TOP 3 w Google Maps", "+150% ruchu organicznego", "Stały napływ zleceń"],
-    href: "/realizacje/graf",
+    href: "/realizacje/graf-tapicerstwo",
   },
   {
     title: "Mechanica",

@@ -75,7 +75,7 @@ export default function BlogLandingPageVsStrona() {
     headline: "Landing page vs strona internetowa — co wybrać dla swojej firmy?",
     description:
       "Kompleksowy przewodnik: landing page vs strona internetowa. Dowiedz się jaką wybrać dla kampanii reklamowej, e-commerce, portfolia. Porownianie cen, czasów realizacji i konwersji.",
-    image: "https://fotz.pl/og-landing-vs-strona.jpg",
+    image: "https://fotz.pl/og-image.jpg",
     author: {
       "@type": "Organization",
       name: "Fotz.pl",
@@ -85,7 +85,7 @@ export default function BlogLandingPageVsStrona() {
       name: "Fotz.pl",
       logo: {
         "@type": "ImageObject",
-        url: "https://fotz.pl/logo.png",
+        url: "https://fotz.pl/logo-fotz.jpg",
       },
     },
     datePublished: "2026-04-12",

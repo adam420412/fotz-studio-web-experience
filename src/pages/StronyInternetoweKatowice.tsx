@@ -285,7 +285,7 @@ const StronyInternetoweKatowice = () => {
                   
                   <h3>Korzyści z lokalnego podejścia</h3>
                   <p>
-                    Wybierając <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencję</Link> z 
+                    Wybierając <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">agencję</Link> z 
                     doświadczeniem do tworzenia stron www, zyskujesz partnera, który doskonale rozumie specyfikę lokalnego rynku. 
                     Specjalista potrafi zaprojektować stronę dopasowaną do potrzeb lokalnych klientów z Katowic i całego Śląska.
                   </p>

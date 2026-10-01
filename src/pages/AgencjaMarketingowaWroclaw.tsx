@@ -40,10 +40,10 @@ export default function AgencjaMarketingowaWroclaw() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "FOTZ - Agencja Marketingowa Wrocław",
-      "image": "https://fotz.pl/logo.png",
+      "image": "https://fotz.pl/logo-fotz.jpg",
       "description": "Agencja marketingowa w Wrocławiu specjalizująca się w SEO, Google Ads, Social Media oraz tworzeniu stron internetowych.",
       "url": "https://fotz.pl/agencja-marketingowa/wroclaw",
-      "telephone": "+48-12-345-6789",
+      "telephone": "+48 790 814 814",
       "email": "kontakt@fotz.pl",
       "address": {
         "@type": "PostalAddress",
@@ -648,9 +648,11 @@ export default function AgencjaMarketingowaWroclaw() {
               <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
                 Bezpłatna Konsultacja
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
-                <Phone className="w-4 h-4 mr-2" />
-                +48 12 345 6789
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
+                <a href="tel:+48790814814">
+                  <Phone className="w-4 h-4 mr-2" />
+                  +48 790 814 814
+                </a>
               </Button>
             </div>
 

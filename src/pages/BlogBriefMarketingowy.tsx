@@ -393,7 +393,7 @@ const BlogBriefMarketingowy = () => {
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
-                    to="/agencja-marketingowa-poznan"
+                    to="/agencja-marketingowa/poznan"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-border rounded-xl font-semibold hover:bg-card/50 transition-colors"
                   >
                     Poznaj naszą agencję

@@ -11,7 +11,7 @@ const BlogSEODlaMalychFirm = () => {
   const articleData = {
     headline: "SEO dla Małych Firm – Kompletny Poradnik 2026",
     description: "SEO dla małych firm od podstaw. Dowiedz się jak pozycjonować lokalny biznes, zoptymalizować Google My Business i zdobyć klientów online. Praktyczne wskazówki.",
-    image: "https://fotz.pl/images/blog/seo-dla-malych-firm.jpg",
+    image: "https://fotz.pl/og-image.jpg",
     datePublished: "2026-03-15",
     dateModified: "2026-03-15",
     author: "Zespół FOTZ",

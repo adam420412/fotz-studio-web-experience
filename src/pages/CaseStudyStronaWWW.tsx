@@ -73,7 +73,7 @@ const CaseStudyStronaWWW: React.FC = () => {
             <div className="breadcrumb text-sm text-slate-300 mb-6">
               <a href="/" className="hover:text-white transition">Strona główna</a>
               {' > '}
-              <a href="/case-studies" className="hover:text-white transition">Case Studies</a>
+              <a href="/realizacje" className="hover:text-white transition">Case Studies</a>
               {' > Strona dla firmy produkcyjnej'}
             </div>
             

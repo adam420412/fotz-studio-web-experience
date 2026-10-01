@@ -100,9 +100,7 @@ const benefits = [
 const cityLinks = [
   { label: "Sklepy internetowe Kraków", to: "/uslugi/sklepy-internetowe/krakow" },
   { label: "Sklepy internetowe Poznań", to: "/uslugi/sklepy-internetowe/poznan" },
-  { label: "Sklepy internetowe Warszawa", to: "/uslugi/sklepy-internetowe/warszawa" },
-  { label: "Sklepy internetowe Wrocław", to: "/uslugi/sklepy-internetowe/wroclaw" },
-  { label: "Sklepy internetowe Gdańsk", to: "/uslugi/sklepy-internetowe/gdansk" }
+  { label: "Sklepy internetowe Warszawa", to: "/uslugi/sklepy-internetowe/warszawa" }
 ];
 
 const faqItems = [
@@ -677,7 +675,7 @@ export default function SklepyInternetowe() {
               { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
               { label: "SEO — pozycjonowanie sklepu", to: "/seo/pozycjonowanie" },
               { label: "Google Ads — Google Shopping", to: "/performance-marketing/google-ads" },
-              { label: "Meta Ads dla e-commerce", to: "/uslugi/meta-ads" },
+              { label: "Meta Ads dla e-commerce", to: "/performance-marketing/meta-ads" },
               { label: "E-commerce — case studies", to: "/uslugi/strony-internetowe/ecommerce" },
               { label: "Agencja marketingowa", to: "/agencja-marketingowa" },
             ].map((link) => (

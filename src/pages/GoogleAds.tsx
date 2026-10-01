@@ -769,7 +769,7 @@ const GoogleAds = () => {
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
               <Link to="/case-studies/optymalizacja-konwersji-ecommerce" className="text-primary hover:underline font-medium text-sm">→ Case Study: Optymalizacja konwersji</Link>
             </div>

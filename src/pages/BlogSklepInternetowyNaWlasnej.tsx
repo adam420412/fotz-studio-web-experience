@@ -45,7 +45,7 @@ const BlogSklepInternetowyNaWlasnej = () => {
   return (
     <>
       <SEOHead
-        title="Wlasny sklep internetowy - WooCommerce czy Shopify? Porzadnik…"
+        title="Własny sklep internetowy - WooCommerce czy Shopify? Poradnik"
         description="Czy warto zakładać sklep na wlasnej domenie czy lepiej sprzedawać przez Allegro? Porównanie kosztów, SEO, kontroli, ryzyk. Przewodnik dla przedsiębiorców."
         ogType="article"
         canonical="https://fotz.pl/blog/sklep-internetowy-na-wlasnej-domenie"
@@ -54,7 +54,7 @@ const BlogSklepInternetowyNaWlasnej = () => {
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "Wlasny sklep internetowy - WooCommerce czy Shopify? Porównanie 2025",
+            "headline": "Własny sklep internetowy - WooCommerce czy Shopify? Porównanie 2025",
             "description": "Czy zakladać sklep na wlasnej domenie czy sprzedawać przez marketplace? Wszystko co musisz wiedzieć.",
             "author": {
               "@type": "Organization",
@@ -145,7 +145,7 @@ const BlogSklepInternetowyNaWlasnej = () => {
                 <div className="aspect-video rounded-2xl overflow-hidden mb-8">
                   <img loading="lazy"
                     src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070"
-                    alt="Wlasny sklep internetowy - WooCommerce, Shopify vs marketplace"
+                    alt="Własny sklep internetowy - WooCommerce, Shopify vs marketplace"
                     className="w-full h-full object-cover"
                   />
                 </div>

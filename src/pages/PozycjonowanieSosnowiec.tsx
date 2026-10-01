@@ -110,7 +110,7 @@ const PozycjonowanieSosnowiec = () => {
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Sosnowiec", url: "https://fotz.pl/uslugi/pozycjonowanie/sosnowiec" },
+          { name: "Sosnowiec", url: "https://fotz.pl/pozycjonowanie/sosnowiec" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -486,8 +486,8 @@ const PozycjonowanieSosnowiec = () => {
               { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
               { label: "Pozycjonowanie Poznań", url: "/uslugi/pozycjonowanie/poznan" },
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
-              { label: "Pozycjonowanie Gliwice", url: "/uslugi/pozycjonowanie/gliwice" },
-              { label: "Pozycjonowanie Zabrze", url: "/uslugi/pozycjonowanie/zabrze" },
+              { label: "Pozycjonowanie Gliwice", url: "/pozycjonowanie/gliwice" },
+              { label: "Pozycjonowanie Zabrze", url: "/pozycjonowanie/zabrze" },
               { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
             ].map((link) => (
               <Link

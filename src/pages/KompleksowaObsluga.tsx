@@ -202,7 +202,7 @@ const KompleksowaObsluga = () => {
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Kompleksowa obsługa", url: "https://fotz.pl/kompleksowa-obsluga" }
+          { name: "Kompleksowa obsługa", url: "https://fotz.pl/kompleksowa-obsluga-marketingowa" }
         ]}/>
       <ServiceSchema 
         name="Kompleksowa obsługa marketingowa"

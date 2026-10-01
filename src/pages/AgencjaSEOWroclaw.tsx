@@ -128,7 +128,7 @@ export default function AgencjaSEOWroclaw() {
 
         <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja SEO", url: "https://fotz.pl/agencja-seo" },
+          { name: "Agencja SEO", url: "https://fotz.pl/seo/pozycjonowanie" },
           { name: "Wrocław", url: "https://fotz.pl/agencja-seo-wroclaw" }
         ]}/>
 

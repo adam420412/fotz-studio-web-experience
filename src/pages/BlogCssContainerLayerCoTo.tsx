@@ -42,7 +42,7 @@ export default function BlogCssContainerLayerCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CSS Container Queries, @layer, Nesting, @scope i View…"
+        title="CSS Container Queries, @layer, Nesting i @scope | Fotz"
         description="Nowoczesny CSS 2024: Container Queries (responsywne komponenty), @layer (cascade layers), CSS Nesting (bez Sass), @scope (scoped styles), View Transitions…"
         canonical="https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
 

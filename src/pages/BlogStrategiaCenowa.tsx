@@ -436,7 +436,7 @@ export default function BlogStrategiaCenowa() {
               <p className="text-muted-foreground">Polityka cenowa to nie jednorazowa decyzja - wymaga regulacyjnych testów, monitorowania konkurencji i analizy elastyczności popytu. Kluczowe KPI to przychód, marża zysku, wolumen sprzedaży i Customer Lifetime Value. Fotz Studio pomaga firmom w opracowaniu i optymalizacji strategii cenowej, aby maksymalizować rentowność i wzrost.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
             </div>

@@ -27,7 +27,7 @@ const caseStudies = [
     description: "Dokumentacja i promocja wydarzeń dla historycznej instytucji przemysłowej.",
     image: fpsImage,
     results: ["Profesjonalna dokumentacja", "Promocja wydarzeń", "Archiwum cyfrowe"],
-    href: "/realizacje/fps",
+    href: "/realizacje/fps-cegielski",
   },
   {
     title: "Fabryka Virali",

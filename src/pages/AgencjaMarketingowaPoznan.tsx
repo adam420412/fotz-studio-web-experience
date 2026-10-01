@@ -192,19 +192,20 @@ export default function AgencjaMarketingowaPoznan() {
               <p className="text-xl mb-8 text-blue-100">
                 Agencja reklamowa Poznań z kompleksową ofertą: SEO, Google Ads, Social Media i strony WWW. Marketing internetowy Poznań — ponad 200 projektów dla firm z Poznania i Wielkopolski, 8 lat doświadczenia, 97% zadowolonych klientów.
               </p>
-              <div className="flex gap-4">
-                <Link to="/kontakt">
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/kontakt" className="w-full sm:w-auto">
+                  <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 w-full sm:w-auto">
                     Bezpłatna Wycena
                   </Button>
                 </Link>
-                <Button
+                <Button asChild
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-blue-700"
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  +48 61 123 45 67
+                  className="border-white text-white hover:bg-blue-700 w-full sm:w-auto">
+                  <a href="tel:+48790814814">
+                    <Phone className="w-5 h-5 mr-2" />
+                    +48 790 814 814
+                  </a>
                 </Button>
               </div>
             </div>
@@ -463,13 +464,14 @@ export default function AgencjaMarketingowaPoznan() {
                 Zaplanuj Konsultację
               </Button>
             </Link>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-blue-700 w-full sm:w-auto"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              +48 61 123 45 67
+              className="border-white text-white hover:bg-blue-700 w-full sm:w-auto">
+              <a href="tel:+48790814814">
+                <Phone className="w-5 h-5 mr-2" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
         </div>

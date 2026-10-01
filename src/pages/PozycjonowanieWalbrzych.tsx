@@ -106,7 +106,7 @@ const PozycjonowanieWalbrzych = () => {
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Wałbrzych", url: "https://fotz.pl/uslugi/pozycjonowanie/walbrzych" },
+          { name: "Wałbrzych", url: "https://fotz.pl/pozycjonowanie/walbrzych" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -481,8 +481,8 @@ const PozycjonowanieWalbrzych = () => {
               { label: "Pozycjonowanie Poznań", url: "/uslugi/pozycjonowanie/poznan" },
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
               { label: "Pozycjonowanie Katowice", url: "/uslugi/pozycjonowanie/katowice" },
-              { label: "Pozycjonowanie Gliwice", url: "/uslugi/pozycjonowanie/gliwice" },
-              { label: "Pozycjonowanie Zabrze", url: "/uslugi/pozycjonowanie/zabrze" },
+              { label: "Pozycjonowanie Gliwice", url: "/pozycjonowanie/gliwice" },
+              { label: "Pozycjonowanie Zabrze", url: "/pozycjonowanie/zabrze" },
               { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
             ].map((link) => (
               <Link

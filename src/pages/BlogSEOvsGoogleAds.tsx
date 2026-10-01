@@ -45,7 +45,7 @@ export default function BlogSEOvsGoogleAds() {
       <ArticleSchema
         headline="SEO vs Google Ads - Kompleksowe porównanie pozycjonowania i reklamy"
         description="Poznaj różnice między SEO a Google Ads, zalety każdej strategii i dowiedz się, kiedy wybrać każdą z nich."
-        image="https://fotz.pl/og-seo-vs-ads.jpg"
+        image="https://fotz.pl/og-image.jpg"
         author="Fotz Studio"
         datePublished="2025-02-15"
         dateModified="2025-07-10"

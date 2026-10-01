@@ -278,13 +278,14 @@ const AgencjaMarketingowaWarszawa = () => {
                 Bezpłatna wycena <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
-              className="border-cyan-400 text-white hover:bg-blue-700"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              +48 (22) 123 45 67
+              className="border-cyan-400 text-white hover:bg-blue-700">
+              <a href="tel:+48790814814">
+                <Phone className="mr-2 h-4 w-4" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
 
@@ -672,13 +673,14 @@ const AgencjaMarketingowaWarszawa = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-blue-700"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              +48 (22) 123 45 67
+              className="border-white text-white hover:bg-blue-700">
+              <a href="tel:+48790814814">
+                <Phone className="mr-2 h-4 w-4" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
 
@@ -695,7 +697,7 @@ const AgencjaMarketingowaWarszawa = () => {
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
               <Phone className="mx-auto mb-3 h-8 w-8 text-blue-600" />
               <h3 className="mb-2 font-bold text-gray-900">Zadzwoń do nas</h3>
-              <p className="text-gray-600 mb-2">+48 (22) 123 45 67</p>
+              <p className="text-gray-600 mb-2">+48 790 814 814</p>
               <p className="text-xs text-gray-500">Pon-Pt 8:00-20:00, Sob 9:00-17:00</p>
             </div>
 

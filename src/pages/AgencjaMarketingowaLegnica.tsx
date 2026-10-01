@@ -60,7 +60,7 @@ const services = [
     icon: Share2,
     title: "Social media i mediach społecznościowych",
     description: "Fotz Studio to agencja social media dla firm z Legnicy i całej Polski. Prowadzenie profili na Instagramie, Facebooku, LinkedIn i TikToku. Kreacje treści, harmonogram, kampanie zasięgowe i leadowe.",
-    link: "/social-media/legnica"
+    link: "/social-media"
   },
   {
     icon: Video,

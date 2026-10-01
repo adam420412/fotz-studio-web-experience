@@ -749,7 +749,7 @@ export default function BlogKonwersjeNaStronie() {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/blog/copywriting-landing-page" className="text-blue-600 hover:underline">
+                      <Link to="/content-marketing/copywriting-landing" className="text-blue-600 hover:underline">
                         Copywriting Landing Page – Jak Pisać Treści Sprzedające
                       </Link>
                     </li>

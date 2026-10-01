@@ -58,7 +58,7 @@ const CaseStudyKlagem = () => {
         title="Klagem - Konfigurator 3D i strona B2B"
         description="Case study: strona internetowa z konfiguratorem produktów 3D dla producenta mebli modułowych"
         url="https://fotz.pl/realizacje/klagem"
-        image="https://fotz.pl/portfolio/klagem.png"
+        image={`https://fotz.pl${klagemImg}`}
         datePublished="2024-03-15"
         dateModified="2026-01-09"
       />

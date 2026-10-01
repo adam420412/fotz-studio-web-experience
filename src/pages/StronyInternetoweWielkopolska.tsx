@@ -104,7 +104,7 @@ export default function StronyInternetoweWielkopolska() {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "fotz.pl - Strony Internetowe Wielkopolska",
-          "image": "https://fotz.pl/logo.png",
+          "image": "https://fotz.pl/logo-fotz.jpg",
           "description": "Tworzenie stron internetowych dla firm z Wielkopolski i Poznania. Zespół w Poznaniu, SEO, hosting, wsparcie.",
           "address": {
             "@type": "PostalAddress",
@@ -117,7 +117,7 @@ export default function StronyInternetoweWielkopolska() {
             {"@type": "State", "name": "Wielkopolskie"}
           ],
           "url": "https://fotz.pl/uslugi/strony-internetowe/wielkopolska",
-          "telephone": "+48123456789",
+          "telephone": "+48790814814",
           "priceRange": "$$",
           "serviceType": "Web Design & Development"
         }}
@@ -374,7 +374,7 @@ export default function StronyInternetoweWielkopolska() {
               Zaplanuj konsultację
             </button>
             <a
-              href="tel:+48123456789"
+              href="tel:+48790814814"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />

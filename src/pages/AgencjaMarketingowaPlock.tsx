@@ -8,7 +8,7 @@ export default function AgencjaMarketingowaPlock() {
   const breadcrumbs = [
     { name: "Strona glowna", url: "/" },
     { name: "Agencja marketingowa", url: "/agencja-marketingowa" },
-    { name: "Plock", url: "/agencja-marketingowa/plock" }
+    { name: "Płock", url: "/agencja-marketingowa/plock" }
   ];
 
   const faqItems = [
@@ -418,7 +418,7 @@ export default function AgencjaMarketingowaPlock() {
             Agencja Marketingowa Plock - Specjalista w Marketingu dla Firm z Mazowsza
           </p>
           <p className="text-sm">
-            ul. Grodzka 10, 09-400 Plock | Tel: +48 24 262 0000 | Email: hello@fotz.pl
+            ul. Grodzka 10, 09-400 Plock | Tel: +48 790 814 814 | Email: hello@fotz.pl
           </p>
         </div>
       </section>

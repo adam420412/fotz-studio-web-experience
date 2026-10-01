@@ -85,7 +85,7 @@ export default function BlogFotografiaArchitektura() {
   return (
     <>
       <SEOHead
-        title="Fotografia architektury i wnętrz - jak wykonać profesjonalne…"
+        title="Fotografia architektury i wnętrz - jak wykonać ją dobrze?"
         description="Kompletny poradnik fotografii architektonicznej i wnętrz: typy sesji, ceny, sprzęt, techniki, kiedy wynająć profesjonalistę. Dowiedz się, jak wybór…"
         ogType="article"
         canonical="https://fotz.pl/blog/fotografia-architektury-wnetrz"

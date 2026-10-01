@@ -198,7 +198,7 @@ export default function BlogProjektowanieStron() {
   return (
     <>
       <SEOHead
-        title="Projektowanie stron internetowych - co musisz wiedzieć przed…"
+        title="Projektowanie stron internetowych - co musisz wiedzieć"
         description="Pełny poradnik projektowania stron: etapy, koszty, jak wybrać agencję. Praktyczne porady dla każdego przedsiębiorcy szukającego profesjonalnej strony."
         canonical="https://fotz.pl/blog/projektowanie-stron-internetowych-poradnik"
 
@@ -207,7 +207,7 @@ export default function BlogProjektowanieStron() {
       <ArticleSchema
         headline="Projektowanie stron internetowych - co musisz wiedzieć przed zamówieniem? 2025"
         description="Pełny poradnik: etapy projektowania, czynniki wpływające na koszt, typy stron i jak wybrać agencję"
-        image="https://fotz.pl/og-blog-design.jpg"
+        image="https://fotz.pl/og-image.jpg"
         datePublished="2025-04-12"
         dateModified="2025-04-12"
         author="Fotz Studio"

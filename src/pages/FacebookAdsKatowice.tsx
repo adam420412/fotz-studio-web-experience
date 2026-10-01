@@ -398,7 +398,7 @@ export default function FacebookAdsKatowice() {
               {[
                 { label: "Facebook Ads Łódź", to: "/performance-marketing/facebook-ads/lodz" },
                 { label: "Google Ads Katowice", to: "/performance-marketing/google-ads/katowice" },
-                { label: "Pozycjonowanie Katowice", to: "/uslugi/seo/katowice" },
+                { label: "Pozycjonowanie Katowice", to: "/uslugi/pozycjonowanie/katowice" },
                 { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
                 { label: "Social media marketing", to: "/social-media" },
               ].map((link) => (

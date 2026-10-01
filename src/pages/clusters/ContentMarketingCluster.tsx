@@ -40,7 +40,7 @@ const services = [
     icon: Search,
     title: "Treści SEO",
     description: "Artykuły i treści zoptymalizowane pod wyszukiwarki. Pillar pages, cluster content i long-tail, które budują widoczność organiczną.",
-    href: "/content-marketing/tresci-seo",
+    href: "/content-marketing/strategia",
     features: ["Pillar pages", "Cluster content", "Optymalizacja on-page"],
   },
   {

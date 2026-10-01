@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export default function PozycjonowanieZgorzelec() {
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
-    { name: "Pozycjonowanie", url: "/pozycjonowanie" },
+    { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
     { name: "Zgorzelec", url: "/pozycjonowanie/zgorzelec" }
   ];
 
