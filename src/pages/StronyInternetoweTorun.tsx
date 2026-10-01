@@ -65,12 +65,12 @@ export default function StronyInternetoweTorun() {
                 Tworzenie stron internetowych Toruń — profesjonalne strony www i sklepy internetowe dla firm z Torunia i Kujaw. Projektowanie stron www Toruń z nowoczesnym designem, SEO i responsywnym kodem. Strony internetowe Toruń od 499 zł.
               </p>
               <div className="flex gap-4">
-                <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
                   Umów konsultację
-                </button>
-                <button className="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">
+                </a>
+                <a href="/realizacje" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-600 transition">
                   Przejrzyj portfolio
-                </button>
+                </a>
               </div>
             </div>
             <div className="hidden md:block">
@@ -332,9 +332,9 @@ export default function StronyInternetoweTorun() {
                   <span>Forma kontaktowa</span>
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
                 Wybierz
-              </button>
+              </a>
             </div>
 
             <div className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white rounded-lg shadow-xl p-8 transform md:scale-105">
@@ -365,9 +365,9 @@ export default function StronyInternetoweTorun() {
                   <span>Analityka sprzedaży</span>
                 </li>
               </ul>
-              <button className="w-full bg-white text-blue-600 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-white text-blue-600 py-3 rounded-lg font-bold hover:bg-gray-100 transition">
                 Wybierz
-              </button>
+              </a>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-8 border-t-4 border-indigo-600">
@@ -393,9 +393,9 @@ export default function StronyInternetoweTorun() {
                   <span>Zaawansowana analityka</span>
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
                 Wybierz
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -436,12 +436,12 @@ export default function StronyInternetoweTorun() {
             Skontaktuj się z nami dzisiaj i otrzymaj bezpłatną konsultację na temat Twojego projektu. Jesteśmy specjalistami w tworzeniu stron internetowych dla firm z Torunia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
               Umów darmową konsultację
-            </button>
-            <button className="border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition">
+            </a>
+            <a href="/realizacje" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-blue-600 transition">
               Zapoznaj się z naszym portfolio
-            </button>
+            </a>
           </div>
         </div>
       </section>

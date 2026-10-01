@@ -439,13 +439,13 @@ export default function AgencjaMarketingowaLublin() {
                 Umów bezpłatną konsultację
               </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-blue-800"
-            >
-              Dowiedz się więcej
-            </Button>
+            ><a href="/kontakt">
+              Zapytaj o szczegóły
+            </a></Button>
           </div>
           <p className="text-sm mt-6 opacity-75">
             Brak zobowiązań. Poromawiamy o Twoich celach i pokażemy możliwości.

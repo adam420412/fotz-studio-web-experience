@@ -252,15 +252,15 @@ const BlogLandingPage = () => {
                 <div className="p-6 bg-card rounded-xl border border-border">
                   <h4 className="font-semibold mb-4">Przykłady skutecznych CTA</h4>
                   <div className="flex flex-wrap gap-3">
-                    <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium">
+                    <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium">
                       Rozpocznij darmowy trial
-                    </button>
-                    <button className="px-6 py-3 bg-accent text-accent-foreground rounded-full font-medium">
+                    </a>
+                    <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center px-6 py-3 bg-accent text-accent-foreground rounded-full font-medium">
                       Pobierz za darmo
-                    </button>
-                    <button className="px-6 py-3 bg-secondary text-secondary-foreground rounded-full font-medium">
+                    </a>
+                    <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center px-6 py-3 bg-secondary text-secondary-foreground rounded-full font-medium">
                       Umów bezpłatną konsultację
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

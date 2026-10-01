@@ -223,12 +223,12 @@ export default function AgencjaSEOKrakow() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       variant={pkg.highlight ? "default" : "outline"}
                       className="w-full mt-8"
-                    >
+                    ><a href="/kontakt">
                       Wybierz pakiet
-                    </Button>
+                    </a></Button>
                   </div>
                 </FadeInView>
               ))}

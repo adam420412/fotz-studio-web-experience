@@ -368,15 +368,15 @@ export default function AgencjaMarketingowaGdynia() {
                       </div>
                       <div className="text-sm text-slate-600">{pkg.period}</div>
                     </div>
-                    <Button
+                    <Button asChild
                       className={`w-full mb-6 ${
                         pkg.popular
                           ? "bg-blue-600 hover:bg-blue-700"
                           : "bg-slate-200 text-slate-900 hover:bg-slate-300"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta}
-                    </Button>
+                    </a></Button>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, fidx) => (
                         <li
@@ -401,9 +401,9 @@ export default function AgencjaMarketingowaGdynia() {
                 Umówimy się na bezpłatną konsultację, gdzie omówimy Twoje
                 potrzeby i zaproponujemy najlepszy pakiet.
               </p>
-              <Button className="bg-blue-600 hover:bg-blue-700">
+              <Button asChild className="bg-blue-600 hover:bg-blue-700"><a href="/kontakt">
                 Zaplanuj rozmowę
-              </Button>
+              </a></Button>
             </div>
           </div>
         </section>

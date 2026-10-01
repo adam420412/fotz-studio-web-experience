@@ -216,13 +216,13 @@ export default function MarketingInternetowy() {
                     Bezpłatna strategia
                   </Link>
                 </Button>
-                <Button
+                <Button asChild
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-blue-700"
-                >
+                ><a href="/kontakt">
                   Pogadajmy
-                </Button>
+                </a></Button>
               </div>
             </motion.div>
           </div>

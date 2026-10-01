@@ -492,9 +492,9 @@ export default function BlogSEOvsGoogleAds() {
             <p className="text-gray-700 mb-6 text-lg">
               Fotz Studio specjalizuje się w SEO, Google Ads i złożonych strategiach marketingowych. Pomożemy Ci wybrać najlepsze rozwiązanie dla Twojego biznesu.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
               Skontaktuj się z nami
-            </button>
+            </a>
           </section>
         </article>
         <RelatedArticles currentArticleId="seo-vs-google-ads" />

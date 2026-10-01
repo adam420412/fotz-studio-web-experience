@@ -215,7 +215,7 @@ export default function StronyInternetoweKielce() {
                 <li>Podstawowe SEO</li>
                 <li>Hosting na 1 rok</li>
               </ul>
-              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400 transform scale-105">
               <div className="bg-blue-400 text-blue-950 inline-block px-3 py-1 rounded-full text-sm font-semibold mb-4">Popularny</div>
@@ -230,7 +230,7 @@ export default function StronyInternetoweKielce() {
                 <li>Analytics setup</li>
                 <li>Hosting na 1 rok</li>
               </ul>
-              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
               <h3 className="text-2xl font-bold mb-2">E-commerce</h3>
@@ -244,7 +244,7 @@ export default function StronyInternetoweKielce() {
                 <li>Wsparcie tech.</li>
                 <li>Hosting na 1 rok</li>
               </ul>
-              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
           </div>
         </div>

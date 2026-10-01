@@ -68,14 +68,14 @@ const services = [
     icon: Video,
     title: "Produkcja Wideo",
     description: "Filmy reklamowe, korporacyjne, relacje z wydarzeń, animacje i montaż profesjonalnego wideo.",
-    href: "/uslugi/wideo",
+    href: "/uslugi/produkcja-filmow",
     color: "from-indigo-500 to-violet-500",
   },
   {
     icon: ShoppingCart,
     title: "E-commerce",
     description: "Sklepy internetowe na WooCommerce, Shopify i dedykowanych platformach. Integracje z systemami płatności.",
-    href: "/uslugi/ecommerce",
+    href: "/uslugi/strony-internetowe/ecommerce",
     color: "from-teal-500 to-green-500",
   },
   {

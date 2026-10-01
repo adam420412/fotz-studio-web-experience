@@ -39,7 +39,7 @@ export default function BlogJakNegocjowacCennikAgencji() {
   return (
     <Layout>
       <SEOHead
-        title="Jak negocjować cennik z agencją social media"
+        title="Jak negocjować cenę obsługi social media? Poradnik"
         description="Jak negocjować cennik z agencją social media bez psucia jakości pracy. Co wpływa na cenę, jakie są modele rozliczeń i na co uważać."
         canonical={CANONICAL}
         keywords="negocjacja cennik agencja social media, cennik agencji social media, jak negocjować z agencją, modele rozliczeń agencja"

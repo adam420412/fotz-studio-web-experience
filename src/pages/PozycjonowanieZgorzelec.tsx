@@ -195,9 +195,9 @@ export default function PozycjonowanieZgorzelec() {
                   <span className="text-slate-700">Raport co miesiąc</span>
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
                 Zamów
-              </button>
+              </a>
             </div>
 
             {/* Standard */}
@@ -230,9 +230,9 @@ export default function PozycjonowanieZgorzelec() {
                   <span className="text-slate-700">Wsparcie 1x na tydzień</span>
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
                 Zamów
-              </button>
+              </a>
             </div>
 
             {/* Premium */}
@@ -262,9 +262,9 @@ export default function PozycjonowanieZgorzelec() {
                   <span className="text-slate-700">Wsparcie bieżące</span>
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
                 Zamów
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -449,9 +449,9 @@ export default function PozycjonowanieZgorzelec() {
             <p className="text-xl text-blue-100 mb-8">
               Skontaktuj się z nami i dowiedz się, jak SEO może zmienić Twoją firmę w Zgorzelcu.
             </p>
-            <button className="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition-colors text-lg">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition-colors text-lg">
               Zarezerwuj Konsultację
-            </button>
+            </a>
           </div>
         </section>
       </div>

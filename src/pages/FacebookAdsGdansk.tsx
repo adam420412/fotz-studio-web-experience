@@ -459,11 +459,11 @@ export default function FacebookAdsGdansk() {
                           </li>
                         ))}
                       </ul>
-                      <Button
+                      <Button asChild
                         className={`w-full mt-8 ${tier.popular ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-gray-100 hover:bg-gray-200 text-gray-900'}`}
-                      >
+                      ><a href="/kontakt">
                         Wybierz plan
-                      </Button>
+                      </a></Button>
                     </CardContent>
                   </Card>
                 </FadeInView>

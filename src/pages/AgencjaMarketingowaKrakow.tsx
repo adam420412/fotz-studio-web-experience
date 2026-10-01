@@ -440,12 +440,12 @@ export default function AgencjaMarketingowaKrakow() {
                     ))}
                   </ul>
 
-                  <Button
+                  <Button asChild
                     className={`w-full ${pkg.highlight ? "bg-blue-600 hover:bg-blue-700" : ""}`}
                     variant={pkg.highlight ? "default" : "outline"}
-                  >
+                  ><a href="/kontakt">
                     Wybierz Pakiet
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}
@@ -576,14 +576,14 @@ export default function AgencjaMarketingowaKrakow() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
               className="text-white border-white hover:bg-blue-700"
-            >
+            ><a href="tel:+48790814814">
               <Phone className="mr-2 w-5 h-5" />
               +48 790 814 814
-            </Button>
+            </a></Button>
           </div>
 
           <p className="text-blue-100 text-sm mt-8">

@@ -489,10 +489,10 @@ export default function BlogStronaInternetowaOdZera() {
             Zapraszamy na bezpłatną konsultację. Opowiemy Ci, jak możemy pomóc Twojemu biznesowi.
           </p>
           
-          <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition inline-flex items-center gap-2">
+          <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition inline-flex items-center gap-2">
             Zaplanuj konsultację
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
         </div>
       </section>
 

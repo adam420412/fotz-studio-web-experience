@@ -1,4 +1,5 @@
 import { ReactNode, lazy, Suspense, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 
@@ -12,6 +13,8 @@ interface LayoutProps {
 }
 
 export function Layout({ children }: LayoutProps) {
+  const { pathname } = useLocation();
+  const showWidgets = !["/kontakt", "/konsultacja", "/podziekowanie"].includes(pathname);
   // Defer loading of widgets until after initial render - increased delay for mobile
   const [loadWidgets, setLoadWidgets] = useState(false);
 
@@ -23,10 +26,11 @@ export function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <a href="#main-content" className="skip-link">Przejdź do treści</a>
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main id="main-content" tabIndex={-1} className="flex-1 min-w-0">{children}</main>
       <Footer />
-      {loadWidgets && (
+      {loadWidgets && showWidgets && (
         <Suspense fallback={null}>
           <FloatingCTA />
           <WhatsAppWidget />

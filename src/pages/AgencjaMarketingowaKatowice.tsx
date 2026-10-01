@@ -184,9 +184,9 @@ export default function AgencjaMarketingowaKatowice() {
                     Bezpłatna Konsultacja
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base">
-                  Dowiedz Się Więcej <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
+                <Button asChild size="lg" variant="outline" className="text-base"><a href="/kontakt">
+                  Zapytaj o szczegóły <ArrowRight className="w-5 h-5 ml-2" />
+                </a></Button>
               </div>
             </div>
           </div>
@@ -268,9 +268,9 @@ export default function AgencjaMarketingowaKatowice() {
                         </li>
                       ))}
                     </ul>
-                    <Button variant={pkg.popular ? "default" : "outline"} className="w-full mt-auto">
+                    <Button asChild variant={pkg.popular ? "default" : "outline"} className="w-full mt-auto"><a href="/kontakt">
                       {pkg.cta}
-                    </Button>
+                    </a></Button>
                   </CardContent>
                 </Card>
               ))}
@@ -442,10 +442,10 @@ export default function AgencjaMarketingowaKatowice() {
               Skontaktuj się z nami na bezpłatną konsultację. Omówimy Twoją branżę, cele i opracujemy plan działania.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-base">
+              <Button asChild size="lg" className="text-base"><a href="tel:+48790814814">
                 <Phone className="w-5 h-5 mr-2" />
                 +48 790 814 814
-              </Button>
+              </a></Button>
               <Button asChild size="lg" variant="outline" className="text-base">
                 <Link to="/kontakt">
                   Napisz Wiadomość <ArrowRight className="w-5 h-5 ml-2" />

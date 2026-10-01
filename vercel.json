@@ -4,6 +4,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
+    { "source": "/blog/customer-health-score-co-to-jest-jak-zbudowac", "destination": "/blog/customer-health-score-co-to", "permanent": true },
     { "source": "/:path*", "has": [{ "type": "host", "value": "www.fotz.pl" }], "destination": "https://fotz.pl/:path*", "permanent": true },
     { "source": "/strony-internetowe", "destination": "/uslugi/strony-internetowe", "permanent": true },
     { "source": "/strony-internetowe-:city", "destination": "/uslugi/strony-internetowe/:city", "permanent": true },

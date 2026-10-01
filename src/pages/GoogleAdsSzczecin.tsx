@@ -442,9 +442,9 @@ export default function GoogleAdsSzczecin() {
                         </li>
                       ))}
                     </ul>
-                    <Button className={`w-full text-sm ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}>
-                      Dowiedz Się Więcej
-                    </Button>
+                    <Button asChild className={`w-full text-sm ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}><a href="/kontakt">
+                      Zapytaj o szczegóły
+                    </a></Button>
                   </CardContent>
                 </Card>
               </FadeInView>

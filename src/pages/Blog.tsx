@@ -828,12 +828,7 @@ export default function Blog() {
             ))}
           </div>
 
-          {/* Load More */}
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
-              Załaduj więcej artykułów
-            </Button>
-          </div>
+
         </div>
       </section>
 

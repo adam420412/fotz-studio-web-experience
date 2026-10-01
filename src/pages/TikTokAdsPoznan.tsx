@@ -77,9 +77,9 @@ export const TikTokAdsPoznan = () => {
             <p className="text-lg md:text-xl text-gray-700 mb-8">
               TikTok Ads Poznan — profesjonalne kampanie reklamowe TikTok dla firm z Poznana i Wielkopolski. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.
             </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
               Bezpłatna konsultacja
-            </button>
+            </a>
           </div>
         </section>
       </FadeInView>

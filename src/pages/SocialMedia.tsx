@@ -222,14 +222,14 @@ const SocialMedia = () => {
   const cityLinks = [
     { name: "Poznań", href: "/social-media/poznan" },
     { name: "Warszawa", href: "/social-media/warszawa" },
-    { name: "Kraków", href: "/social-media-krakow" },
-    { name: "Wrocław", href: "/social-media-wroclaw" },
-    { name: "Gdańsk", href: "/social-media-gdansk" },
-    { name: "Łódź", href: "/social-media-lodz" },
-    { name: "Katowice", href: "/social-media-katowice" },
-    { name: "Szczecin", href: "/social-media-szczecin" },
-    { name: "Bydgoszcz", href: "/social-media-bydgoszcz" },
-    { name: "Lublin", href: "/social-media-lublin" },
+    { name: "Kraków", href: "/agencja-social-media/krakow" },
+    { name: "Wrocław", href: "/agencja-social-media/wroclaw" },
+    { name: "Gdańsk", href: "/agencja-marketingowa/gdansk" },
+    { name: "Łódź", href: "/agencja-marketingowa/lodz" },
+    { name: "Katowice", href: "/agencja-social-media/katowice" },
+    { name: "Szczecin", href: "/agencja-social-media/szczecin" },
+    { name: "Bydgoszcz", href: "/agencja-marketingowa/bydgoszcz" },
+    { name: "Lublin", href: "/agencja-social-media/lublin" },
   ];
 
   const includedFeatures = [

@@ -24,7 +24,7 @@ interface SEOHeadProps {
 
 /**
  * SEO Head component using react-helmet-async that automatically adds:
- * - Title and meta description (truncated to 155 chars)
+ * - Complete page title and meta description
  * - Canonical URL (must be provided as full URL)
  * - Open Graph tags
  * - Twitter Card tags
@@ -47,23 +47,14 @@ export function SEOHead({
   structuredData,
   schema,
   keywords,
-  disableTitleTruncation = false,
   children,
 }: SEOHeadProps) {
-  // Ensure canonical has no trailing slash (except for homepage)
-  const canonicalUrl = canonical === "https://fotz.pl/" 
-    ? "https://fotz.pl" 
-    : canonical.replace(/\/+$/, "");
+  const canonicalUrl = new URL(canonical, "https://fotz.pl").href.replace(/\/+$/, "");
   
-  // Truncate description to 155 chars for meta (Google shows ~155-160)
-  const metaDescription = description.length > 155 
-    ? description.substring(0, 152) + "..." 
-    : description;
-
-  // Truncate title to 60 chars (Google shows ~50-60)
-  const metaTitle = !disableTitleTruncation && title.length > 60 
-    ? title.substring(0, 57) + "..." 
-    : title;
+  // Preserve complete, authored metadata. Search engines decide how much
+  // to display; cutting strings here can remove the city or service name.
+  const metaDescription = description.trim();
+  const metaTitle = title.trim();
 
   const finalOgTitle = og?.title ?? metaTitle;
   const finalOgDescription = og?.description ?? metaDescription;
@@ -87,7 +78,7 @@ export function SEOHead({
           broken-page references in crawlers). */}
       {!noIndex && <link rel="canonical" href={canonicalUrl} />}
       
-      {noIndex && <meta name="robots" content="noindex, nofollow" />}
+      <meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow"} />
       
       {/* Open Graph */}
       <meta property="og:title" content={finalOgTitle} />

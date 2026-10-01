@@ -201,13 +201,13 @@ export default function AgencjaSEOWarszawa() {
                     Bezpłatna analiza SEO
                   </Link>
                 </Button>
-                <Button
+                <Button asChild
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-blue-700"
-                >
+                ><a href="/kontakt">
                   Pogadajmy o rankingach
-                </Button>
+                </a></Button>
               </div>
             </motion.div>
           </div>

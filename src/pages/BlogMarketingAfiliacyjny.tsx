@@ -914,9 +914,9 @@ export default function BlogMarketingAfiliacyjny() {
                 Zarabiaj prowizje na produktach, które polubiłeś. Darmowa
                 rejestracja, bez zobowiązań.
               </p>
-              <button className="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transition">
                 Przejdź do TradeTracker
-              </button>
+              </a>
             </div>
           </section>
 

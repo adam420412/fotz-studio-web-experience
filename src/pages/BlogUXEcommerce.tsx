@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -728,9 +729,7 @@ export default function BlogUXEcommerce() {
             >
               <span className="text-muted-foreground">Udostępnij artykuł:</span>
               <div className="flex gap-3">
-                <Button variant="outline" size="icon">
-                  <Share2 className="w-4 h-4" />
-                </Button>
+                <CopyArticleLinkButton />
               </div>
             </motion.div>
           </div>

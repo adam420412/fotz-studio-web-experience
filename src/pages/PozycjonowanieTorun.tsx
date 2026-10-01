@@ -61,12 +61,12 @@ export default function PozycjonowanieTorun() {
               Pojaw sie wysoko w wynikach Google i przyciagnij wiecej klientow.
             </p>
             <div className="flex gap-4 flex-wrap">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                 Bezplatna konsultacja
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
-                Poznaj nase pakiety
-              </button>
+              </a>
+              <a href="/cennik" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                Poznaj nasze pakiety
+              </a>
             </div>
           </div>
         </section>
@@ -209,9 +209,9 @@ export default function PozycjonowanieTorun() {
                     Raport miesieczy
                   </li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
                   Wybierz
-                </button>
+                </a>
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow hover:shadow-xl transition border-2 border-blue-600">
@@ -239,9 +239,9 @@ export default function PozycjonowanieTorun() {
                     Wsparcie 2x w tygodniu
                   </li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
                   Wybierz
-                </button>
+                </a>
               </div>
 
               <div className="bg-white p-8 rounded-lg shadow hover:shadow-xl transition border border-gray-200">
@@ -270,9 +270,9 @@ export default function PozycjonowanieTorun() {
                     Doradztwo strategiczne
                   </li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
                   Wybierz
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -403,9 +403,9 @@ export default function PozycjonowanieTorun() {
             <p className="text-xl mb-8 opacity-90">
               Zacznij pozycjonowanie dzisiaj i zobaczy efekty w ciagu kilku miesiecy.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-lg">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition text-lg">
               Zamow bezplatna konsultacje
-            </button>
+            </a>
           </div>
         </section>
       </div>

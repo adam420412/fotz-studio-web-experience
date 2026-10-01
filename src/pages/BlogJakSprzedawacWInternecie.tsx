@@ -54,10 +54,10 @@ export default function BlogJakSprzedawacWInternecie() {
               W tym poradniku poznasz wszystkie ścieżki do sprzedaży online: własny sklep, marketplace'i, social commerce i dropshipping.
             </p>
 
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
+            <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white"><a href="/kontakt">
               Przejdź do artykułu
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            </a></Button>
           </div>
         </motion.section>
 

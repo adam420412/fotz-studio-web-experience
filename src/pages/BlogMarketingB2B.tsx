@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
@@ -467,12 +468,8 @@ export default function BlogMarketingB2B() {
               <div className="flex items-center justify-between py-8 border-t border-gray-700 mt-8">
                 <div className="flex items-center gap-4">
                   <span className="text-gray-400">Udostępnij artykuł:</span>
-                  <Button variant="outline" size="icon" className="border-gray-600 hover:bg-gray-800">
-                    <Share2 className="w-4 h-4" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="border-gray-600 hover:bg-gray-800">
-                    <Bookmark className="w-4 h-4" />
-                  </Button>
+                  <CopyArticleLinkButton />
+
                 </div>
               </div>
             </article>

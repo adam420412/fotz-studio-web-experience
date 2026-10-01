@@ -248,9 +248,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Raporty miesięczne</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -282,9 +282,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Analityka i KPI</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -316,9 +316,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Optymalizacja ROI</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -350,9 +350,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Wsparcie 24/7</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -384,9 +384,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Infografiki i e-booki</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -418,9 +418,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Messaging &amp; Positioning</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
           </div>
@@ -465,9 +465,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span>Raport co miesiąc</span>
                   </li>
                 </ul>
-                <Button className="w-full" variant="outline">
+                <Button asChild className="w-full" variant="outline"><a href="/kontakt">
                   Wybierz pakiet
-                </Button>
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -501,9 +501,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span>Dedykowany account manager</span>
                   </li>
                 </ul>
-                <Button className="w-full">
+                <Button asChild className="w-full"><a href="/kontakt">
                   Wybierz pakiet
-                </Button>
+                </a></Button>
               </CardContent>
             </Card>
 

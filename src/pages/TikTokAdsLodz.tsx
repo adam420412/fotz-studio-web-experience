@@ -86,9 +86,9 @@ export function TikTokAdsLodz() {
             </h1>
             <p className="text-xl sm:text-2xl text-blue-100 mb-8">
               TikTok Ads Lodz — profesjonalne kampanie reklamowe TikTok dla firm z Lodza i Centralnej Polski. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.</p>
-            <button className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
               Uzyskaj bezpłatną konsultację
-            </button>
+            </a>
           </div>
         </section>
       </FadeInView>

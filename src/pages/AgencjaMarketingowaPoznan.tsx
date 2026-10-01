@@ -361,16 +361,16 @@ export default function AgencjaMarketingowaPoznan() {
                     ))}
                   </ul>
 
-                  <Button
+                  <Button asChild
                     className={`w-full ${
                       pkg.highlighted
                         ? "bg-blue-600 hover:bg-blue-700 text-white"
                         : "border border-gray-300 text-gray-700 hover:bg-gray-50"
                     }`}
-                  >
+                  ><a href="/kontakt">
                     {pkg.cta}
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}

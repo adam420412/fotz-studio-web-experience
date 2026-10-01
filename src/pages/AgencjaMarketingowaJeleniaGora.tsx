@@ -121,12 +121,12 @@ export default function AgencjaMarketingowaJeleniaGora() {
               sprzedaz dzeki efektywnym strategiom cyfrowym.
             </p>
             <div className="flex gap-4">
-              <button className="bg-white text-blue-700 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-700 px-6 py-3 rounded-lg font-bold hover:bg-blue-50 transition">
                 Bezplatna konsultacja
-              </button>
-              <button className="border-2 border-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+              </a>
+              <a href="/uslugi" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">
                 Nasze uslugi
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -440,9 +440,9 @@ export default function AgencjaMarketingowaJeleniaGora() {
               Skontaktuj sie z nami dzisiaj na bezplatna konsultacje. Pokazymy
               Ci, jak mozemy wzrost Twojej sprzedazy w Jeleniej Gorze.
             </p>
-            <button className="bg-white text-blue-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 transition">
               Zaczynamy dzisiaj
-            </button>
+            </a>
           </div>
         </section>
 

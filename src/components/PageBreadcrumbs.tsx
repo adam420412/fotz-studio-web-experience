@@ -16,7 +16,7 @@ interface PageBreadcrumbsProps {
 }
 
 export function PageBreadcrumbs({ items = [], path }: PageBreadcrumbsProps) {
-  const normalizedItems = items.length > 0
+  const normalizedItems: BreadcrumbItem[] = items.length > 0
     ? items
     : path
       ? path
@@ -28,8 +28,10 @@ export function PageBreadcrumbs({ items = [], path }: PageBreadcrumbsProps) {
           }))
       : [];
 
+  const trail = normalizedItems.filter(item => !["/", "https://fotz.pl", "https://fotz.pl/"].includes(item.href ?? item.url ?? item.path ?? ""));
+
   return (
-    <nav aria-label="Breadcrumb" className="container-wide px-6 md:px-12 pt-32 pb-4">
+    <nav aria-label="Ścieżka nawigacji" className="container-wide px-6 md:px-12 pt-28 pb-4">
       <ol className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
         <li>
           <Link 
@@ -41,9 +43,9 @@ export function PageBreadcrumbs({ items = [], path }: PageBreadcrumbsProps) {
           </Link>
         </li>
         
-        {normalizedItems.map((item, index) => (
-          <li key={index} className="flex items-center gap-2">
-            <ChevronRight className="w-3.5 h-3.5" />
+        {trail.map((item, index) => (
+          <li key={index} className="flex min-w-0 items-center gap-2">
+            <ChevronRight aria-hidden="true" className="w-3.5 h-3.5 shrink-0" />
             {(item.href ?? item.url ?? item.path) ? (
               <Link 
                 to={(item.href ?? item.url ?? item.path) as string}
@@ -52,7 +54,7 @@ export function PageBreadcrumbs({ items = [], path }: PageBreadcrumbsProps) {
                 {item.label ?? item.name}
               </Link>
             ) : (
-              <span className="text-foreground font-medium">{item.label ?? item.name}</span>
+              <span aria-current="page" className="text-foreground font-medium break-words">{item.label ?? item.name}</span>
             )}
           </li>
         ))}

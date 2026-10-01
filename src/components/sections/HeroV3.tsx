@@ -11,7 +11,7 @@ type LiveStatProps = {
 function LiveStat({ label, value, sub, accent }: LiveStatProps) {
   return (
     <div
-      className="flex-1 flex flex-col justify-between relative overflow-hidden px-8 py-12 md:px-12 md:py-14 border-b border-[color:var(--dv-hair)]"
+      className="flex-1 flex flex-col justify-between relative overflow-hidden px-6 py-7 md:px-8 md:py-8 border-b border-[color:var(--dv-hair)]"
       style={{
         background: accent ? "var(--dv-brand-grad)" : "transparent",
         color: accent ? "#fff" : "hsl(var(--foreground))",
@@ -20,11 +20,11 @@ function LiveStat({ label, value, sub, accent }: LiveStatProps) {
       <span className="dv-mono uppercase tracking-[0.14em] text-[11px] opacity-60">
         {label}
       </span>
-      <div className="mt-8">
+      <div className="mt-5">
         <div
           className="font-geist leading-none mb-3"
           style={{
-            fontSize: "clamp(56px, 6vw, 96px)",
+            fontSize: "clamp(36px, 3.8vw, 60px)",
             letterSpacing: "-0.05em",
           }}
         >
@@ -49,7 +49,7 @@ type VideoStatProps = {
 function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
   return (
     <div
-      className="flex-1 relative overflow-hidden border-b border-[color:var(--dv-hair)] min-h-[260px] md:min-h-[300px]"
+      className="flex-1 relative overflow-hidden border-b border-[color:var(--dv-hair)] min-h-[240px] sm:col-span-2 lg:col-span-1 lg:min-h-[210px]"
       style={{ color: "#fff" }}
     >
       {/* Autoplay video */}
@@ -76,7 +76,7 @@ function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
       />
 
       {/* Copy */}
-      <div className="relative h-full flex flex-col justify-between px-8 py-12 md:px-12 md:py-14">
+      <div className="relative h-full flex flex-col justify-between px-6 py-7 md:px-8 md:py-8">
         <div className="flex items-center gap-2">
           <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/15 backdrop-blur-sm">
             <Play className="w-3 h-3" strokeWidth={2} fill="currentColor" />
@@ -85,7 +85,7 @@ function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
             {label}
           </span>
         </div>
-        <div className="mt-8">
+        <div className="mt-5">
           <div
             className="font-geist leading-[0.95] mb-3"
             style={{
@@ -107,9 +107,9 @@ function VideoStat({ label, caption, sub, src, poster }: VideoStatProps) {
 export function HeroV3() {
   return (
     <section
-      className="relative grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] isolate pt-24 sm:pt-28 md:pt-32 lg:pt-36 xl:pt-40"
+      className="relative grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] isolate pt-20"
       style={{
-        minHeight: "100vh",
+        minHeight: "min(900px, 100svh)",
         background: "hsl(var(--background))",
       }}
     >
@@ -129,17 +129,17 @@ export function HeroV3() {
       </div>
 
       {/* LEFT — editorial copy */}
-      <div className="relative flex flex-col justify-between px-6 py-14 md:px-12 md:py-16 lg:border-r border-[color:var(--dv-hair)]">
+      <div className="relative flex flex-col justify-between min-w-0 px-6 py-10 md:px-12 md:py-12 lg:border-r border-[color:var(--dv-hair)]">
         <div className="flex flex-wrap items-center justify-between gap-3 dv-mono uppercase tracking-[0.14em] text-[11px] md:text-xs text-[color:var(--dv-fg-muted)]">
           <span>Fotz Studio · Plac Wolności 16 · Poznań</span>
           <span>52.4082° N · 16.9335° E</span>
         </div>
 
-        <div className="py-20 md:py-24">
+        <div className="py-10 md:py-14">
           <h1
             className="font-geist"
             style={{
-              fontSize: "clamp(60px, 10vw, 180px)",
+              fontSize: "clamp(46px, 7.2vw, 116px)",
               letterSpacing: "-0.06em",
               lineHeight: 0.95,
               fontWeight: 400,
@@ -156,7 +156,7 @@ export function HeroV3() {
           </h1>
 
           <p
-            className="mt-10 md:mt-12 text-[color:var(--dv-fg-muted)]"
+            className="mt-7 md:mt-8 text-[color:var(--dv-fg-muted)]"
             style={{
               fontSize: "clamp(18px, 1.6vw, 22px)",
               lineHeight: 1.4,
@@ -197,7 +197,7 @@ export function HeroV3() {
       </div>
 
       {/* RIGHT — live stats panel */}
-      <div className="relative flex flex-col">
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-col">
         <LiveStat
           label="Wyświetlenia treści / mies."
           value="1M+"

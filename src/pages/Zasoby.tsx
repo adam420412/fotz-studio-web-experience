@@ -118,8 +118,8 @@ const Zasoby = () => {
       return;
     }
 
-    // Simulate unlocking
-    toast.success("Sprawdź swoją skrzynkę email! Link do pobrania został wysłany.");
+    // A local unlock does not send an email.
+    toast.success("Materiał odblokowany. Możesz go teraz pobrać.");
     setUnlockedResources(prev => [...prev, resourceId]);
     setUnlockingResource(null);
     setEmail("");
@@ -128,8 +128,8 @@ const Zasoby = () => {
   return (
     <>
       <SEOHead
-        title="Darmowe Zasoby Marketingowe — E-booki, Checklisty i Szablony"
-        description="Darmowe zasoby marketingowe Fotz Studio — e-booki, checklisty SEO, szablony briefów i kalkulatory. Pobierz bezpłatne materiały dla firm i marketerów."
+        title="Zasoby Marketingowe — Poradniki i Narzędzia | Fotz Studio"
+        description="Zasoby marketingowe Fotz Studio: poradniki, generator briefu i kalkulatory online. Sprawdź narzędzia i zapytaj o dostępność e-booków oraz checklist."
         canonical="https://fotz.pl/zasoby"
         keywords="darmowe zasoby marketingowe, e-book marketing darmowy, checklisty SEO, szablony briefu marketingowego, darmowe materiały marketing, checklisty Google Ads"
       />
@@ -139,7 +139,7 @@ const Zasoby = () => {
         ]}/>
       <WebPageSchema 
         title="Darmowe zasoby marketingowe"
-        description="E-booki, checklisty i szablony marketingowe do pobrania."
+        description="Poradniki i narzędzia marketingowe online oraz informacje o materiałach do pobrania."
         url="https://fotz.pl/zasoby"
       />
       <Layout>
@@ -160,8 +160,7 @@ const Zasoby = () => {
                 <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent"> Marketingowe</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Pobierz darmowe e-booki, checklisty i szablony stworzone przez naszych ekspertów. 
-                Praktyczna wiedza, która pomoże Ci rozwinąć biznes.
+                Skorzystaj z poradników i narzędzi online. O dostępność e-booków, checklist i szablonów zapytaj nas — aktualny stan znajdziesz przy każdym materiale.
               </p>
             </motion.div>
           </div>
@@ -243,7 +242,12 @@ const Zasoby = () => {
                       </p>
 
                       {/* Gated Content Form */}
-                      {resource.gated && !isUnlocked ? (
+                      {!resource.downloadUrl || resource.downloadUrl === "#" ? (
+                        <div className="space-y-3">
+                          <p className="text-sm text-muted-foreground">Materiał nie jest obecnie dostępny do pobrania.</p>
+                          <Button asChild className="w-full"><Link to="/kontakt">Zapytaj o materiał</Link></Button>
+                        </div>
+                      ) : resource.gated && !isUnlocked ? (
                         isUnlocking ? (
                           <div className="space-y-3">
                             <div className="relative">
@@ -287,10 +291,10 @@ const Zasoby = () => {
                           </Button>
                         )
                       ) : (
-                        <Button className="w-full gap-2">
+                        <Button asChild className="w-full gap-2"><a href={resource.downloadUrl} download>
                           <Download className="w-4 h-4" />
                           Pobierz teraz
-                        </Button>
+                        </a></Button>
                       )}
                     </div>
                   </motion.div>
@@ -303,7 +307,7 @@ const Zasoby = () => {
         {/* Benefits Section */}
         <section className="py-20 px-4 bg-muted/30">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-bold mb-12">Dlaczego warto pobrać nasze materiały?</h2>
+            <h2 className="text-3xl font-bold mb-12">Jak korzystać z zasobów marketingowych?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -311,25 +315,25 @@ const Zasoby = () => {
                 </div>
                 <h3 className="font-bold mb-2">Praktyczne porady</h3>
                 <p className="text-sm text-muted-foreground">
-                  Żadnej teorii - tylko sprawdzone metody, które stosujemy w codziennej pracy.
+                  Wybierz temat związany z planowaną stroną, treściami lub kampanią.
                 </p>
               </div>
               <div className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold mb-2">Aktualna wiedza</h3>
+                <h3 className="font-bold mb-2">Narzędzia online</h3>
                 <p className="text-sm text-muted-foreground">
-                  Materiały regularnie aktualizowane zgodnie z najnowszymi trendami marketingu.
+                  Przygotuj brief lub sprawdź założenia kampanii w kalkulatorze.
                 </p>
               </div>
               <div className="p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-bold mb-2">Od ekspertów</h3>
+                <h3 className="font-bold mb-2">Pomoc w doborze</h3>
                 <p className="text-sm text-muted-foreground">
-                  Tworzone przez specjalistów z 600+ zrealizowanych projektów.
+                  Napisz do nas, jeśli potrzebujesz pomocy w wyborze materiału.
                 </p>
               </div>
             </div>
@@ -359,65 +363,16 @@ const Zasoby = () => {
           </div>
         </section>
 
-      {/* SEO Article Section */}
       <section className="py-20 bg-card">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="prose prose-lg max-w-none"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Darmowe zasoby marketingowe — e-booki, checklisty i szablony do pobrania
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Fotz Studio udostępnia bezpłatne zasoby marketingowe dla firm i marketerów.
-              W naszej bibliotece znajdziesz praktyczne e-booki o SEO i content marketingu,
-              checklisty do audytu strony i kampanii reklamowych, szablony briefów
-              projektowych oraz kalkulatory ROI i kosztów. Materiały tworzymy
-              na podstawie wieloletniego doświadczenia w obsłudze klientów.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Darmowe zasoby marketingowe to nasza inwestycja w edukację polskiego rynku.
-              Wierzymy, że firmy znające podstawy marketingu są lepszymi partnerami
-              do współpracy — rozumieją nasze działania i bardziej doceniają ich wartość.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              E-booki o SEO, content marketingu i reklamach — praktyczna wiedza do pobrania
-            </h2>
-            <p className="text-muted-foreground mb-4">
-              Nasze e-booki marketingowe omawiają najważniejsze tematy: jak pozycjonować
-              stronę w Google (SEO krok po kroku), jak tworzyć treści, które sprzedają
-              (copywriting i content marketing), jak prowadzić skuteczne kampanie
-              Google Ads i Meta Ads, jak budować markę w mediach społecznościowych.
-            </p>
-            <p className="text-muted-foreground mb-6">
-              Checklisty i szablony to praktyczne narzędzia do codziennej pracy
-              marketera i przedsiębiorcy. Checklista audytu SEO, szablon briefu
-              kampanii reklamowej, szablon strategii content marketingu —
-              gotowe do użycia po pobraniu.
-            </p>
-
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Bezpłatne narzędzia marketingowe — kalkulatory, generatory i szablony
-            </h2>
-            <p className="text-muted-foreground">
-              Kalkulator ROI kampanii reklamowych, generator briefu projektowego
-              i kalkulator cen usług marketingowych — bezpłatne narzędzia online
-              dla firm planujących działania marketingowe. Oblicz, ile może kosztować
-              marketing Twojej firmy i jaki zwrot z inwestycji możesz oczekiwać.
-              Pobierz nasze zasoby i zacznij działać z planem.
-            </p>
-          
-            <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
-              <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-            </div>
-          </motion.div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-3xl font-heading font-bold mb-6">Poradniki i narzędzia marketingowe online</h2>
+          <p className="text-muted-foreground mb-6">Przeczytaj poradniki o SEO, reklamach i social media. Generator briefu pomaga uporządkować wymagania projektu, a kalkulatory pozwalają przeanalizować założenia kosztów i zwrotu z inwestycji. Wyniki kalkulatorów są szacunkowe.</p>
+          <nav aria-label="Narzędzia i poradniki" className="flex flex-wrap gap-4">
+            <Link to="/poradniki" className="text-primary underline">Poradniki marketingowe</Link>
+            <Link to="/generator-briefu" className="text-primary underline">Generator briefu</Link>
+            <Link to="/kalkulator-roi" className="text-primary underline">Kalkulator ROI</Link>
+            <Link to="/kalkulator-cen" className="text-primary underline">Kalkulator cen</Link>
+          </nav>
         </div>
       </section>
 

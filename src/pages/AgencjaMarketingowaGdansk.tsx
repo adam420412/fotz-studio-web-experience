@@ -275,9 +275,9 @@ export default function AgencjaMarketingowaGdansk() {
                       </li>
                     ))}
                   </ul>
-                  <Button className={`w-full ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}>
+                  <Button asChild className={`w-full ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}><a href="/kontakt">
                     Więcej Informacji
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}

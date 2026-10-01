@@ -304,15 +304,15 @@ export default function TworzenieStronWWW() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.featured
                           ? "bg-blue-600 hover:bg-blue-700 text-white"
                           : "bg-gray-200 hover:bg-gray-300 text-gray-900"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       Wybierz pakiet
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

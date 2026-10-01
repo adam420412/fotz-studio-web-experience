@@ -32,7 +32,7 @@ export function CookieBanner() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
-          className="fixed bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 md:left-auto md:right-6 md:bottom-6 md:max-w-md z-50"
+          className="fixed bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 md:left-auto md:right-6 md:bottom-6 md:max-w-md z-[70] max-h-[calc(100dvh-1rem)] overflow-y-auto"
         >
           <div className="bg-card/95 backdrop-blur-xl border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-2xl">
             <button
@@ -56,10 +56,10 @@ export function CookieBanner() {
                   Klikając "Akceptuję", zgadzasz się na ich użycie.
                 </p>
                 <div className="flex gap-2">
-                  <Button onClick={handleAccept} size="sm" className="flex-1 text-xs sm:text-sm h-8 sm:h-9">
+                  <Button onClick={handleAccept} size="sm" className="flex-1 text-xs sm:text-sm min-h-11 h-auto py-2">
                     Akceptuję
                   </Button>
-                  <Button onClick={handleReject} variant="outline" size="sm" className="flex-1 text-xs sm:text-sm h-8 sm:h-9">
+                  <Button onClick={handleReject} variant="outline" size="sm" className="flex-1 text-xs sm:text-sm min-h-11 h-auto py-2">
                     Niezbędne
                   </Button>
                 </div>

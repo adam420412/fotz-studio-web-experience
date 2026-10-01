@@ -389,9 +389,9 @@ export default function AgencjaMarketingowaSzczecin() {
                     <span className="text-gray-700">Raport analityczny</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button asChild className="w-full bg-blue-600 hover:bg-blue-700"><a href="/kontakt">
                   Wybierz Pakiet
-                </Button>
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -434,9 +434,9 @@ export default function AgencjaMarketingowaSzczecin() {
                     <span className="text-gray-700">Raporty analityczne</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-green-600 hover:bg-green-700">
+                <Button asChild className="w-full bg-green-600 hover:bg-green-700"><a href="/kontakt">
                   Wybierz Pakiet
-                </Button>
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -483,9 +483,9 @@ export default function AgencjaMarketingowaSzczecin() {
                     <span className="text-gray-700">Dedykowany account manager</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                <Button asChild className="w-full bg-purple-600 hover:bg-purple-700"><a href="/kontakt">
                   Wybierz Pakiet
-                </Button>
+                </a></Button>
               </CardContent>
             </Card>
           </div>
@@ -581,10 +581,10 @@ export default function AgencjaMarketingowaSzczecin() {
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10"><a href="tel:+48790814814">
               <Phone className="mr-2 w-4 h-4" />
-              +48 531 234 567
-            </Button>
+              +48 790 814 814
+            </a></Button>
           </div>
         </div>
       </section>

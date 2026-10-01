@@ -447,9 +447,9 @@ export default function BlogFotografiaArchitektura() {
                     Umów sesję fotograficzną
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-gray-600 text-gray-200 hover:bg-gray-700">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild size="lg" variant="outline" className="border-gray-600 text-gray-200 hover:bg-gray-700"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </div>
             </div>
           </div>

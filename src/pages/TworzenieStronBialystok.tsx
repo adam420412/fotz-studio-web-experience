@@ -201,12 +201,12 @@ export default function TworzenieStronBialystok() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       variant={pkg.highlight ? "default" : "outline"}
                       className="w-full mt-8"
-                    >
-                      Dowiedz się więcej
-                    </Button>
+                    ><a href="/kontakt">
+                      Zapytaj o szczegóły
+                    </a></Button>
                   </div>
                 </FadeInView>
               ))}

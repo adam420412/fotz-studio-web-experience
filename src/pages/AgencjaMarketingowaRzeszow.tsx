@@ -190,10 +190,10 @@ export default function AgencjaMarketingowaRzeszow() {
                     Bezpłatna Konsultacja
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button asChild size="lg" variant="outline"><a href="/realizacje">
                   <ArrowRight className="w-4 h-4 mr-2" />
-                  Sprawdź NaszeCase Studies
-                </Button>
+                  Sprawdź nasze realizacje
+                </a></Button>
               </div>
             </div>
           </div>
@@ -274,15 +274,15 @@ export default function AgencjaMarketingowaRzeszow() {
                       <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
                       <span className="text-gray-600 ml-2">PLN</span>
                     </div>
-                    <Button
+                    <Button asChild
                       className={`w-full mb-6 ${
                         pkg.highlight
                           ? "bg-blue-600 hover:bg-blue-700"
                           : "bg-gray-200 hover:bg-gray-300 text-gray-900"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       Wybierz Plan
-                    </Button>
+                    </a></Button>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start text-sm text-gray-700">

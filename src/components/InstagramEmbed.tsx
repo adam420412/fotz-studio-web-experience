@@ -48,12 +48,12 @@ export function InstagramEmbed({ url, className = "" }: InstagramEmbedProps) {
         data-instgrm-permalink={url}
         data-instgrm-version="14"
         style={{
-          background: "#0E0E0E",
+          background: "hsl(var(--card))",
           border: "1px solid hsl(var(--border))",
           borderRadius: "12px",
           margin: "0 auto",
           maxWidth: "540px",
-          minWidth: "326px",
+          minWidth: "0",
           width: "100%",
         }}
       >
@@ -62,9 +62,9 @@ export function InstagramEmbed({ url, className = "" }: InstagramEmbedProps) {
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center h-64 text-muted-foreground hover:text-primary transition-colors"
+            className="flex items-center justify-center min-h-40 text-center text-foreground underline underline-offset-4 hover:text-primary transition-colors"
           >
-            Ładowanie...
+            Zobacz materiał na Instagramie ↗
           </a>
         </div>
       </blockquote>

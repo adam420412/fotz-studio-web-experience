@@ -82,7 +82,7 @@ const menuCategories: MenuCategory[] = [
     color: "#75143F",
     items: [
       { name: "Kompleksowa obsługa", href: "/kompleksowa-obsluga-marketingowa", icon: Layers, tooltip: "Pełna obsługa marketingowa od A do Z" },
-      { name: "Agencja Social Media", href: "/agencja-social-media", badge: "Pillar", icon: Share2, tooltip: "Kompletna agencja SM — pricing, cases, FAQ, 20 klastrów" },
+      { name: "Agencja Social Media", href: "/agencja-social-media", icon: Share2, tooltip: "Strategia, treści, reklamy i obsługa profili firmowych" },
       { name: "Marketing Internetowy", href: "/agencja-marketingu-internetowego", icon: Megaphone, tooltip: "Strategia digital i promocja online" },
       { name: "Content Marketing", href: "/content-marketing/strategia", icon: FileText, tooltip: "Tworzenie wartościowych treści" },
       { name: "Social Media", href: "/social-media/obsluga", icon: Share2, tooltip: "Prowadzenie profili społecznościowych" },
@@ -107,8 +107,8 @@ const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    title: "Social Media",
-    description: "Zwiększ zasięg i zaangażowanie na mediach społecznościowych",
+    title: "Foto, wideo i 3D",
+    description: "Materiały wizualne dla Twojej marki",
     image: videoImg,
     color: "#422249",
     items: [
@@ -120,8 +120,8 @@ const menuCategories: MenuCategory[] = [
     ],
   },
   {
-    title: "Content Marketing",
-    description: "Wartościowe treści, które przyciągają i konwertują",
+    title: "Branding i grafika",
+    description: "Spójny wizerunek i materiały graficzne",
     image: brandingImg,
     color: "#75143F",
     items: [
@@ -191,7 +191,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
               <IconComponent className="w-3.5 h-3.5 opacity-50 group-hover:opacity-100 transition-opacity flex-shrink-0" />
               <span>{item.name}</span>
               {item.badge && (
-                <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[#75143F] rounded animate-pulse">
+                <span className="text-[10px] font-medium px-1.5 py-0.5 bg-[#75143F]/20 text-[color:var(--dv-accent-pink)] rounded">
                   {item.badge}
                 </span>
               )}
@@ -228,7 +228,8 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
               duration: 0.3, 
               ease: [0.4, 0, 0.2, 1]
             }}
-            className="fixed top-20 left-0 right-0 z-50 px-4 md:px-12"
+            id="services-menu"
+            className="fixed top-20 left-0 right-0 z-[55] px-4 md:px-12 max-h-[calc(100dvh-6rem)] overflow-y-auto"
           >
             <div className="container mx-auto">
               <div className="bg-background border border-border rounded-2xl shadow-2xl overflow-hidden">
@@ -334,7 +335,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                 ? "text-foreground translate-x-1" 
                                 : "text-muted-foreground"
                             )}
-                            style={{ color: hoveredCategory === categoryIndex ? category.color : undefined }}
+                            style={{ color: hoveredCategory === categoryIndex ? "var(--dv-accent-pink)" : undefined }}
                           >
                             <motion.span
                               className="w-1.5 h-1.5 rounded-full"
@@ -376,7 +377,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                   ? "text-foreground translate-x-1" 
                                   : "text-muted-foreground"
                               )}
-                              style={{ color: hoveredCategory === categoryIndex ? category.color : undefined }}
+                              style={{ color: hoveredCategory === categoryIndex ? "var(--dv-accent-pink)" : undefined }}
                             >
                               <motion.span
                                 className="w-1.5 h-1.5 rounded-full"
@@ -419,7 +420,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                   ? "text-foreground translate-x-1" 
                                   : "text-muted-foreground"
                               )}
-                              style={{ color: hoveredCategory === categoryIndex ? category.color : undefined }}
+                              style={{ color: hoveredCategory === categoryIndex ? "var(--dv-accent-pink)" : undefined }}
                             >
                               <motion.span
                                 className="w-1.5 h-1.5 rounded-full"
@@ -517,7 +518,7 @@ export function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         <Link
                           to="/kontakt"
                           onClick={onClose}
-                          className="text-sm font-medium text-[#75143F] hover:text-[#75143F]/80 transition-colors group flex items-center gap-1"
+                          className="text-sm font-medium text-[color:var(--dv-accent-pink)] hover:opacity-80 transition-colors group flex items-center gap-1"
                         >
                           Umów bezpłatną konsultację 
                           <motion.span

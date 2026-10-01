@@ -105,13 +105,13 @@ export default function BlogReklamaWGoogle() {
                     Chcesz reklamować się w Google?
                   </Link>
                 </Button>
-                <Button
+                <Button asChild
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-blue-700"
-                >
+                ><a href="#tresc-artykulu">
                   Czytaj dalej
-                </Button>
+                </a></Button>
               </div>
             </motion.div>
           </div>
@@ -123,7 +123,7 @@ export default function BlogReklamaWGoogle() {
             <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Co to jest reklama w Google? */}
               <article className="prose prose-lg max-w-none mb-16">
-                <h2 className="text-3xl font-bold mb-6 text-gray-900">Co to jest reklama w Google?</h2>
+                <h2 id="tresc-artykulu" className="text-3xl font-bold mb-6 text-gray-900">Co to jest reklama w Google?</h2>
 
                 <div className="bg-blue-50 p-8 rounded-lg mb-8 border-l-4 border-blue-600">
                   <p className="text-gray-800 font-semibold">

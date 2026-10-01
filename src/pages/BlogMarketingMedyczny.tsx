@@ -369,9 +369,9 @@ export default function BlogMarketingMedyczny() {
             <p className="text-lg mb-8 opacity-90">
               Nasze zespoły w Fotz Studio specjalizuja sie w marketingu dla branży medycznej. Pomogą Ci zbudować profesjonalna online presence.
             </p>
-            <button className="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">
               Skontaktuj sie z nami
-            </button>
+            </a>
           </div>
         </section>
       </div>

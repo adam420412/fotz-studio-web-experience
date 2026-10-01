@@ -77,9 +77,9 @@ export const AgencjaMarketingowaElblag = () => {
                   Bezpłatna konsultacja
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900">
+              <Button asChild size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900"><a href="/uslugi">
                 Poznaj nasze usługi
-              </Button>
+              </a></Button>
             </div>
           </div>
         </div>
@@ -283,9 +283,9 @@ export const AgencjaMarketingowaElblag = () => {
                   <span className="text-yellow-400">+</span> Email support
                 </li>
               </ul>
-              <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full">
+              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
                 Wybierz pakiet
-              </Button>
+              </a></Button>
             </div>
 
             <div className="bg-gray-800 p-8 rounded-lg border-2 border-yellow-400 flex flex-col transform md:scale-105">
@@ -315,9 +315,9 @@ export const AgencjaMarketingowaElblag = () => {
                   <span className="text-yellow-400">+</span> Wsparcie priorytetowe
                 </li>
               </ul>
-              <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full">
+              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
                 Wybierz pakiet
-              </Button>
+              </a></Button>
             </div>
 
             <div className="bg-gray-800 p-8 rounded-lg border border-gray-700 flex flex-col">
@@ -347,9 +347,9 @@ export const AgencjaMarketingowaElblag = () => {
                   <span className="text-yellow-400">+</span> Wsparcie VIP 24/7
                 </li>
               </ul>
-              <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full">
+              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
                 Wybierz pakiet
-              </Button>
+              </a></Button>
             </div>
           </div>
           <p className="text-center text-gray-400 mt-12">
@@ -401,13 +401,13 @@ export const AgencjaMarketingowaElblag = () => {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
               className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-yellow-400"
-            >
+            ><a href="/kontakt">
               Wyślij wiadomość
-            </Button>
+            </a></Button>
           </div>
           <div className="mt-12 pt-12 border-t border-gray-700">
             <p className="text-gray-800 mb-4">

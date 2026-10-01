@@ -188,14 +188,14 @@ export default function AgencjaMarketingowaBydgoszcz() {
                   Bezpłatna wycena
                 </Link>
               </Button>
-              <Button
+              <Button asChild
                 size="lg"
                 variant="outline"
                 className="border-2 border-slate-300"
-              >
+              ><a href="/kontakt">
                 <ArrowRight className="w-5 h-5 mr-2" />
-                Dowiedz się więcej
-              </Button>
+                Zapytaj o szczegóły
+              </a></Button>
             </div>
           </div>
 
@@ -414,14 +414,14 @@ export default function AgencjaMarketingowaBydgoszcz() {
                   +48 790 814 814
                 </a>
               </Button>
-              <Button
+              <Button asChild
                 size="lg"
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-blue-600"
-              >
+              ><a href="/kontakt">
                 <Zap className="w-5 h-5 mr-2" />
-                Wysłij formularz
-              </Button>
+                Przejdź do formularza
+              </a></Button>
             </div>
           </div>
         </section>

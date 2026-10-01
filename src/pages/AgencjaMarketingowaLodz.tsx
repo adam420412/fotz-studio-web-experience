@@ -186,10 +186,10 @@ export default function AgencjaMarketingowaLodz() {
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline">
+              <Button asChild size="lg" variant="outline"><a href="tel:+48790814814">
                 <Phone className="mr-2 w-4 h-4" />
-                +48 42 *** ****
-              </Button>
+                +48 790 814 814
+              </a></Button>
             </div>
           </div>
         </div>
@@ -315,12 +315,12 @@ export default function AgencjaMarketingowaLodz() {
                       </li>
                     ))}
                   </ul>
-                  <Button 
+                  <Button asChild
                     className={`w-full ${pkg.highlight ? "bg-blue-600 hover:bg-blue-700" : "bg-gray-800 hover:bg-gray-900"}`}
-                  >
+                  ><a href="/kontakt">
                     Wybierz Pakiet
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}
@@ -474,10 +474,10 @@ export default function AgencjaMarketingowaLodz() {
             <p className="mb-6 opacity-90">
               Skontaktuj się z nami dzisiaj, aby dowiedzieć się więcej o naszych usługach marketingowych dla firm z Łodzi.
             </p>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white"><a href="/kontakt">
               Zarabiaj więcej z FOTZ
               <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            </a></Button>
           </div>
         </div>
       </section>

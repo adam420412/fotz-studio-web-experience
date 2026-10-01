@@ -25,19 +25,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/content-marketing/strategia</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fotz.pl/content-marketing/video-content</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/performance-marketing/facebook-ads</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -116,12 +104,6 @@
   </url>
   <url>
     <loc>https://fotz.pl/performance-marketing/facebook-ads/wroclaw</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/performance-marketing/google-ads</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -223,24 +205,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/performance-marketing/instagram-ads</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/performance-marketing/linkedin-ads</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/performance-marketing/meta-ads</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fotz.pl/performance-marketing/optymalizacja</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -254,12 +218,6 @@
   </url>
   <url>
     <loc>https://fotz.pl/performance-marketing/targetowanie</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/performance-marketing/tiktok-ads</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -307,18 +265,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/performance-marketing/youtube-ads</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/seo/audyt</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fotz.pl/seo/copywriting-seo</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -361,33 +307,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/seo/pozycjonowanie</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fotz.pl/seo/techniczne</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/uslugi</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fotz.pl/uslugi/audyt-strony-internetowej</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/uslugi/branding</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -406,12 +332,6 @@
   </url>
   <url>
     <loc>https://fotz.pl/uslugi/fotografia-produktowa</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/uslugi/fotografia-z-drona</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -603,18 +523,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fotz.pl/uslugi/produkcja-filmow</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/uslugi/produkcja-video</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://fotz.pl/uslugi/projekt-strony-internetowej</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -694,12 +602,6 @@
   </url>
   <url>
     <loc>https://fotz.pl/uslugi/strona-wordpress</loc>
-    <lastmod>2026-04-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fotz.pl/uslugi/strony-internetowe</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -816,4 +718,28 @@
     <loc>https://fotz.pl/social-media/obsluga</loc>
     <lastmod>2025-04-13</lastmod>
   </url>
+  <url><loc>https://fotz.pl/agencja-kreatywna-poznan</loc></url>
+  <url><loc>https://fotz.pl/agencja-marketingowa-olsztyn</loc></url>
+  <url><loc>https://fotz.pl/agencja-marketingowa-opole</loc></url>
+  <url><loc>https://fotz.pl/agencja-marketingowa-torun</loc></url>
+  <url><loc>https://fotz.pl/agencja-seo-krakow</loc></url>
+  <url><loc>https://fotz.pl/agencja-seo-lublin</loc></url>
+  <url><loc>https://fotz.pl/agencja-seo-poznan</loc></url>
+  <url><loc>https://fotz.pl/agencja-seo-warszawa</loc></url>
+  <url><loc>https://fotz.pl/agencja-seo-wroclaw</loc></url>
+  <url><loc>https://fotz.pl/ai-marketing</loc></url>
+  <url><loc>https://fotz.pl/ai-seo</loc></url>
+  <url><loc>https://fotz.pl/cennik-pozycjonowania</loc></url>
+  <url><loc>https://fotz.pl/cennik-stron-internetowych</loc></url>
+  <url><loc>https://fotz.pl/cennik-tworzenia-stron</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/elblag</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/gliwice</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/kalisz</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/legnica</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/plock</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/sosnowiec</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/walbrzych</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/zabrze</loc></url>
+  <url><loc>https://fotz.pl/pozycjonowanie/zgorzelec</loc></url>
+  <url><loc>https://fotz.pl/strony-internetowe/walbrzych</loc></url>
 </urlset>

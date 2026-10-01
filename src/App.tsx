@@ -2102,6 +2102,7 @@ const App = () => (
                 <Route path="/blog/ltv-customer-lifetime-value-co-to" element={<BlogLtvCoToJest />} />
                 {/* Wave 115 */}
                 <Route path="/blog/csat-customer-satisfaction-score-co-to" element={<BlogCsatCoTo />} />
+                <Route path="/blog/customer-health-score-co-to-jest-jak-zbudowac" element={<Redirect301 to="/blog/customer-health-score-co-to" />} />
                 <Route path="/blog/customer-health-score-co-to" element={<BlogCustomerHealthScoreCoTo />} />
                 <Route path="/blog/land-and-expand-strategia" element={<BlogLandAndExpandCoTo />} />
                 {/* Wave 114 */}

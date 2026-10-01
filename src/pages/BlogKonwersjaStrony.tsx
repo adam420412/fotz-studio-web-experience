@@ -460,9 +460,9 @@ export default function BlogKonwersjaStrony() {
                 Zwiększenie konwersji nie wymaga ogromnego budżetu, ale wymaga systematycznego podejścia.
                 Zacznij od mierzenia, testuj, i monitoruj wyniki.
               </p>
-              <button className="inline-block rounded-lg bg-blue-600 px-8 py-3 font-semibold text-white transition hover:bg-blue-700">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center inline-block rounded-lg bg-blue-600 px-8 py-3 font-semibold text-white transition hover:bg-blue-700">
                 Skontaktuj się z nami - Optymalizujemy konwersję
-              </button>
+              </a>
             </div>
           </div>
 

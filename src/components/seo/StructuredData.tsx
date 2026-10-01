@@ -243,7 +243,7 @@ export function BreadcrumbSchema({ items = [], data }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name ?? item.label ?? "",
-      item: item.url ?? item.href ?? "",
+      ...((item.url ?? item.href) ? { item: new URL((item.url ?? item.href)!, "https://fotz.pl").href.replace(/\/$/, "") } : {}),
     })),
   };
 
@@ -271,7 +271,7 @@ export function FAQSchema({ items = [], data, questions }: FAQSchemaProps) {
         question: item.name ?? "",
         answer: item.acceptedAnswer?.text ?? "",
       }))
-    : (questions ?? items ?? []).map((item: any) => ({
+    : (questions ?? items ?? []).map((item: { question?: string; answer?: string; name?: string; acceptedAnswer?: { text?: string } }) => ({
         question: item.question ?? item.name ?? "",
         answer: item.answer ?? item.acceptedAnswer?.text ?? "",
       }));
