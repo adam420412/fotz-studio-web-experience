@@ -217,7 +217,7 @@ export default function UslugiLandingPage() {
     <>
       <SEOHead
         title="Landing Page — Tworzenie Stron Lądowania dla Kampanii"
-        description="Landing page dla firm — projektujemy skuteczne strony lądowania do kampanii Google Ads, Meta Ads i e-mail marketingu. Wysoka konwersja, szybkie wdrożenie…"
+        description="Landing page dla firm — projektujemy skuteczne strony lądowania do kampanii Google Ads, Meta Ads i e-mail marketingu. Wysoka konwersja, szybkie wdrożenie i jeden jasny cel na stronie."
         canonical="https://fotz.pl/uslugi/landing-page"
         keywords="landing page, strona lądowania, landing page tworzenie, landing page dla firmy, landing page cena, konwersja landing page"
       />

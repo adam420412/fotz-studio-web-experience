@@ -44,7 +44,7 @@ export default function BlogTanieStrony() {
     <>
       <SEOHead
         title="Tanie Strony Internetowe — Czy Warto? Poradnik i Pułapki"
-        description="Tanie strony internetowe — co warto wiedzieć przed zamówieniem? Sprawdź różnicę między tanią a tandetną stroną www, pułapki freelancerów i kiedy warto…"
+        description="Tanie strony internetowe — co warto wiedzieć przed zamówieniem? Sprawdź różnicę między tanią a tandetną stroną www, pułapki freelancerów i to, kiedy tania strona to dobry wybór."
         ogType="article"
         canonical="https://fotz.pl/blog/tanie-strony-internetowe"
         keywords="tanie strony internetowe, tania strona internetowa, strona internetowa cena, strona internetowa dla firmy cena, tanie tworzenie stron, strona www cena"

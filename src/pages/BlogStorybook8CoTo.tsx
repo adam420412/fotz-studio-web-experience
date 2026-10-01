@@ -42,8 +42,8 @@ export default function BlogStorybook8CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Storybook 8 | Fotz Studio"
-        description="Storybook 8 (CSF 3, Vitest integration, Vite), addon-a11y, addon-interactions (play functions), Chromatic (visual regression), autodocs i Component-Driven…"
+        title="Storybook 8 — CSF 3, Vitest addon, autodocs i Component-Driven Development 2024?"
+        description="6 addonów Storybook (essentials/a11y/interactions/test-runner/Chromatic/themes) — CSF 3, play functions, visual regression testing i Component-Driven Development workflow."
         canonical="https://fotz.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024"
 
         keywords="Storybook 8 co to jest, Storybook 8 definicja, czym jest Storybook 8, Storybook 8 przykłady, jak działa Storybook 8, Storybook 8 znaczenie, Storybook 8 przewodnik"

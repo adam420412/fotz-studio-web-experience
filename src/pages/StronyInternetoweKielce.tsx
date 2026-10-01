@@ -64,8 +64,10 @@ export default function StronyInternetoweKielce() {
           <p className="text-xl text-blue-100 mb-8">
                         Strony internetowe Kielce — tworzenie stron www i sklepy internetowe dla firm ze Świętokrzyskiego. Tworzenie stron internetowych Kielce z nowoczesnym designem, SEO i responsywnym kodem. Projektowanie stron www Kielce od 499 zł netto.
           </p>
-          <Button size="lg" className="bg-blue-400 hover:bg-blue-500 text-blue-950">
-            Bezpłatna Konsultacja
+          <Button asChild size="lg" className="bg-blue-400 hover:bg-blue-500 text-blue-950">
+            <Link to="/kontakt">
+              Bezpłatna Konsultacja
+            </Link>
           </Button>
         </div>
       </section>

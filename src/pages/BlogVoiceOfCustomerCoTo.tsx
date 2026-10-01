@@ -100,7 +100,7 @@ export default function BlogVoiceOfCustomerCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Voice of Customer (VoC) | Fotz Studio"
+        title="Voice of Customer (VoC) — co to jest i jak budować program?"
         description="Voice of Customer — definicja, 4 metody (NPS, CSAT, CES, wywiady), 6-krokowy program VoC i jak close the loop z feedbackiem klientów. Kompletny przewodnik."
         canonical="https://fotz.pl/blog/voice-of-customer-co-to"
 

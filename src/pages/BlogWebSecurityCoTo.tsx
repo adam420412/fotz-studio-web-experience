@@ -42,8 +42,8 @@ export default function BlogWebSecurityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Web Security | Fotz Studio"
-        description="Bezpieczeństwo webowe: OWASP Top 10, XSS, SQL Injection, CSRF, CSP headers, bcrypt/Argon2, MFA, npm audit, Dependabot, supply chain security w Node.js i…"
+        title="Web Security — XSS, CSRF, CSP, SQL Injection, OWASP Top 10, Node.js?"
+        description="6 obszarów bezpieczeństwa web (XSS/SQL Injection/Auth/Headers/Supply Chain/CSRF) — OWASP Top 10, CSP nonce, bcrypt, Argon2, MFA, HTTPS, CORS i npm audit."
         canonical="https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
 
         keywords="Web Security co to jest, Web Security jak działa, Web Security tutorial, Web Security przykład, czym jest Web Security, Web Security dokumentacja, Web Security przewodnik"

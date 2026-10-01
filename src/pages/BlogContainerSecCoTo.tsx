@@ -49,7 +49,7 @@ export default function BlogContainerSecCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Container Security | Fotz Studio"
+        title="Container Security — bezpieczeństwo kontenerów, Trivy, Falco, Kubernetes RBAC?"
         description="Container Security: bezpieczne Docker images, skanowanie CVE (Trivy, Grype, Snyk), Kubernetes RBAC, Network Policies, Falco runtime security i compliance."
         canonical="https://fotz.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
 

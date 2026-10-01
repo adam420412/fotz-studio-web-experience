@@ -511,11 +511,12 @@ const BlogMarketingDlaFirmy = () => {
                     >
                       <Link to="/kontakt">Zaplanuj konsultację</Link>
                     </Button>
-                    <Button
+                    <Button asChild
                       variant="outline"
-                      className="border-gray-900 text-gray-900 hover:bg-gray-800/20 font-bold px-8 py-6 text-base"
-                    >
-                      Pobrań poradnik (bezpłatnie)
+                      className="border-gray-900 text-gray-900 hover:bg-gray-800/20 font-bold px-8 py-6 text-base">
+                      <Link to="/poradniki">
+                        Pobierz poradnik (bezpłatnie)
+                      </Link>
                     </Button>
                   </div>
                 </div>

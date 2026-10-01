@@ -50,7 +50,7 @@ export default function BlogWinRateCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Win Rate | Fotz Studio"
+        title="Win Rate — co to jest i jak poprawić wskaźnik wygranych?"
         description="Win Rate: jak obliczać, analiza przyczyn przegranej (loss analysis), segmentacja po AE/source/competitor, strategie poprawy i benchmarki dla zespołów SaaS."
         canonical="https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
 

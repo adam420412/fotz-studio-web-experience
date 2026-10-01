@@ -42,8 +42,8 @@ export default function BlogReactPerfCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Performance | Fotz Studio"
-        description="React Scan (re-render viz), React DevTools Profiler, Why Did You Render, Million.js (block VDOM), Rollup Visualizer, useMemo/useCallback best practices i…"
+        title="React Performance — React Scan, Million.js, Bundle Analyzer i Code Splitting 2024?"
+        description="6 narzędzi performance (React Scan/DevTools Profiler/WDYR/Million.js/Rollup Visualizer/React Compiler) — re-render debugging, bundle analysis i code splitting."
         canonical="https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
 
         keywords="React Performance co to jest, React Performance jak działa, React Performance tutorial, React Performance przykład, czym jest React Performance, React Performance dokumentacja, React Performance przewodnik"

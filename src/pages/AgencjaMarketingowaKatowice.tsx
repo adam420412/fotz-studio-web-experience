@@ -178,9 +178,11 @@ export default function AgencjaMarketingowaKatowice() {
                 Ponad 8 lat doświadczenia w marketingu cyfrowym. Specjalizujemy się w SEO, Google Ads, social media i tworzeniu stron www dla firm z Katowic i całego Śląska. 500+ zadowolonych klientów.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="text-base">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Bezpłatna Konsultacja
+                <Button asChild size="lg" className="text-base">
+                  <Link to="/kontakt">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Bezpłatna Konsultacja
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline" className="text-base">
                   Dowiedz Się Więcej <ArrowRight className="w-5 h-5 ml-2" />
@@ -444,8 +446,10 @@ export default function AgencjaMarketingowaKatowice() {
                 <Phone className="w-5 h-5 mr-2" />
                 +48 790 814 814
               </Button>
-              <Button size="lg" variant="outline" className="text-base">
-                Napisz Wiadomość <ArrowRight className="w-5 h-5 ml-2" />
+              <Button asChild size="lg" variant="outline" className="text-base">
+                <Link to="/kontakt">
+                  Napisz Wiadomość <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
               </Button>
             </div>
           </div>

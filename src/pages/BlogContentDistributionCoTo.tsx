@@ -81,8 +81,8 @@ export default function BlogContentDistributionCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Content Distribution | Fotz Studio"
-        description="Content distribution — definicja, model Owned/Earned/Paid media, kanały dystrybucji, content repurposing i metryki zasięgu. Jak dystrybuować content…"
+        title="Content Distribution — co to jest i jak dystrybuować treści?"
+        description="Kompletny przewodnik po dystrybucji treści: model Owned/Earned/Paid, kanały dystrybucji, content repurposing i metryki zasięgu."
         canonical="https://fotz.pl/blog/content-distribution-co-to"
 
         keywords="Content Distribution co to jest, Content Distribution definicja, czym jest Content Distribution, Content Distribution przykłady, jak działa Content Distribution, Content Distribution znaczenie, Content Distribution przewodnik"

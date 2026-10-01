@@ -206,8 +206,10 @@ export default function KampaniaGoogleAds() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  Bezpłatna analiza słów kluczowych <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link to="/kontakt">
+                    Bezpłatna analiza słów kluczowych <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/performance-marketing/google-ads">
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">

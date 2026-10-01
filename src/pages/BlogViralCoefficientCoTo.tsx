@@ -73,7 +73,7 @@ export default function BlogViralCoefficientCoTo() {
     <Layout>
       <SEOHead
         title="Viral Coefficient — co to jest i jak mierzyć viralność? | Fotz.pl"
-        description="Viral Coefficient (K-Factor) — formuła, mechanizmy viralności (inherent, incentivized, social), viral loop i jak budować viralność produktu. Kompletny…"
+        description="Kompletny przewodnik po Viral Coefficient: formuła, mechanizmy viralności, viral funnel i jak budować viral loop."
         canonical="https://fotz.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
 
         keywords="Viral Coefficient co to jest, Viral Coefficient definicja, czym jest Viral Coefficient, Viral Coefficient przykłady, jak działa Viral Coefficient, Viral Coefficient znaczenie, Viral Coefficient przewodnik"

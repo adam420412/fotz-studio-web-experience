@@ -41,7 +41,7 @@ const CaseStudyStagePlan = () => {
   return (
     <Layout>
       <SEOHead
-        title="Stage Plan | Fotz Studio"
+        title="Stage Plan - Technika Sceniczna - Case Study | Fotz Studio"
         description="Case study Stage Plan: strona internetowa dla firmy techniki scenicznej. Katalog sprzętu, SEO i design branżowy. Fotz Studio."
         canonical="https://fotz.pl/realizacje/stageplan"
         keywords="case study strona internetowa, realizacja strony www b2b"

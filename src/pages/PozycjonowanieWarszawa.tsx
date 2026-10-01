@@ -94,7 +94,7 @@ const PozycjonowanieWarszawa = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Warszawa — Agencja SEO | Fotz Studio"
-        description="Pozycjonowanie stron internetowych Warszawa. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Zwiększamy ruch organiczny firm warszawskich…"
+        description="Pozycjonowanie stron internetowych Warszawa. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Zwiększamy ruch organiczny firm warszawskich na najbardziej konkurencyjnym rynku w Polsce."
         canonical="https://fotz.pl/uslugi/pozycjonowanie/warszawa"
         keywords="pozycjonowanie warszawa, agencja seo warszawa, seo warszawa, pozycjonowanie lokalne warszawa, pozycjonowanie stron warszawa, seo dla firm warszawa, audyt seo warszawa, seo mazowsze"
       />

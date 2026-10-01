@@ -43,7 +43,7 @@ export default function BlogKyselyMikroOrmCoTo() {
     <Layout>
       <SEOHead
         title="Kysely, MikroORM, Drizzle, Prisma i TypeORM | Fotz Studio"
-        description="ORM i query buildery TypeScript 2024: Kysely (type-safe SQL), MikroORM (Data Mapper), Drizzle (SQL-like schema), Prisma (schema-first), TypeORM …"
+        description="6 bibliotek ORM i query builderów TypeScript (Prisma/Drizzle/Kysely/MikroORM/TypeORM/Sequelize) — podejście, bundle size, edge-compatibility i kiedy wybrać."
         canonical="https://fotz.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024"
 
         keywords="Kysely, MikroORM, Drizzle, Prisma i TypeORM co to jest, Kysely, MikroORM, Drizzle, Prisma i TypeORM jak działa, Kysely, MikroORM, Drizzle, Prisma i TypeORM tutorial, Kysely, MikroORM, Drizzle, Prisma i TypeORM przykład, czym jest Kysely, MikroORM, Drizzle, Prisma i TypeORM, Kysely, MikroORM, Drizzle, Prisma i TypeORM dokumentacja, Kysely, MikroORM, Drizzle, Prisma i TypeORM przewodnik"

@@ -42,7 +42,7 @@ export default function BlogZustandCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Zustand, Jotai, Redux Toolkit | Fotz Studio"
+        title="Zustand, Jotai, Redux Toolkit — zarządzanie stanem w React 2024?"
         description="Zarządzanie stanem React: Zustand vs Jotai vs Redux Toolkit vs Context API, atomic state, RTK Query, best practices i kiedy co wybrać w 2024."
         canonical="https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
 

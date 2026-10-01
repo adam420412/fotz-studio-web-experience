@@ -42,8 +42,8 @@ export default function BlogCapacitorIonicCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Capacitor, Ionic, PWA i Expo | Fotz Studio"
-        description="Cross-platform mobile 2024: Capacitor (native API dla web apps), Ionic (UI components), PWA capabilities (File System, Push, Bluetooth), Expo SDK 52 i…"
+        title="Capacitor, Ionic, PWA i Expo — cross-platform mobile z web technologii 2024?"
+        description="6 opcji cross-platform mobile (Capacitor+Ionic/React Native/Flutter/Tauri/PWA/KMP) — webview vs native, PWA capabilities 2024 i Expo SDK 52 nowości."
         canonical="https://fotz.pl/blog/capacitor-ionic-pwa-expo-cross-platform-mobile-web-2024"
 
         keywords="Capacitor, Ionic, PWA i Expo co to jest, Capacitor, Ionic, PWA i Expo definicja, czym jest Capacitor, Ionic, PWA i Expo, Capacitor, Ionic, PWA i Expo przykłady, jak działa Capacitor, Ionic, PWA i Expo, Capacitor, Ionic, PWA i Expo znaczenie, Capacitor, Ionic, PWA i Expo przewodnik"

@@ -124,7 +124,7 @@ export default function BlogElasticsearchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Elasticsearch | Fotz Studio"
+        title="Elasticsearch — co to jest i jak działa? Kompletny przewodnik"
         description="Elasticsearch — definicja, inverted index, pojęcia (index, shard, mapping, analyzer), Query DSL, agregacje i ELK Stack. Kompletny przewodnik po Elasticsearch."
         canonical="https://fotz.pl/blog/elasticsearch-co-to-jest"
 

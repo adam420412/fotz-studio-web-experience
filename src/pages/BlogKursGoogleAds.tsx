@@ -67,7 +67,7 @@ export default function BlogKursGoogleAds() {
     <>
       <SEOHead
         title="Kurs Google Ads — jak nauczyć się reklam Google? Poradnik"
-        description="Kurs Google Ads — jak nauczyć się Google Ads od zera? Ścieżka nauki, bezpłatne zasoby, certyfikat Google. Praktyczny poradnik dla początkujących i…"
+        description="Ścieżka nauki Google Ads od podstaw do eksperta — bezpłatne kursy, certyfikaty, czas nauki i praktyczne wskazówki."
         canonical="https://fotz.pl/blog/kurs-google-ads"
 
         keywords="Kurs Google Ads, Kurs Google Ads poradnik, Kurs Google Ads strategia, Kurs Google Ads jak zrobić, Kurs Google Ads marketing, Kurs Google Ads przykłady, Kurs Google Ads w Polsce"

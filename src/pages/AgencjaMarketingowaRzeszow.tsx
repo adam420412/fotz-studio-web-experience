@@ -184,9 +184,11 @@ export default function AgencjaMarketingowaRzeszow() {
                 Ponad 500 klientów zaufało nam w Rzeszowie i całym Podkarpaciu. Tworzymy strategie marketingowe, które rzeczywiście przynoszą wyniki. SEO, Google Ads, strony WWW i zarządzanie mediami społecznościowymi - wszystko w jednym miejscu.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Phone className="w-4 h-4 mr-2" />
-                  Bezpłatna Konsultacja
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  <Link to="/kontakt">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Bezpłatna Konsultacja
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline">
                   <ArrowRight className="w-4 h-4 mr-2" />
@@ -400,12 +402,16 @@ export default function AgencjaMarketingowaRzeszow() {
               Zaproś nas na bezpłatną konsultację. Poznamy Twój biznes, analizujemy konkurencję i zaproponujemy konkretne działania marketingowe.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                Zabook Bezpłatną Konsultację
+              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                <Link to="/kontakt">
+                  Zarezerwuj Bezpłatną Konsultację
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
-                <Phone className="w-4 h-4 mr-2" />
-                Zadzwoń: +48 721 234 567
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
+                <a href="tel:+48790814814">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Zadzwoń: +48 790 814 814
+                </a>
               </Button>
             </div>
           </div>

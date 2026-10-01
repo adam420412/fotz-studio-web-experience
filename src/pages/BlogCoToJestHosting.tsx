@@ -74,7 +74,7 @@ export default function BlogCoToJestHosting() {
     <>
       <SEOHead
         title="Co to jest hosting? Poradnik dla początkujących 2025 | fotz.pl"
-        description="Co to jest hosting — wyjaśniamy czym jest hosting, jakie są rodzaje (shared, VPS, cloud), ile kosztuje i jak wybrać dobry hosting dla swojej strony…"
+        description="Czym jest hosting, rodzaje hostingów, ile kosztują i jak wybrać właściwy dla strony internetowej lub sklepu."
         canonical="https://fotz.pl/blog/co-to-jest-hosting"
 
         keywords="co to jest, definicja, czym jest, przykłady, jak działa, znaczenie, przewodnik"

@@ -46,7 +46,7 @@ export default function BlogPinterestDlaFirmy() {
     <Layout>
       <SEOHead
         title="Pinterest dla firmy - SEO, Pin Academy i strategie"
-        description="Kompleksowy przewodnik Pinterest dla biznesu: jak optymalizować profil, strategia pinów, Pinterest SEO, Pinterest Ads, analityka. Nauka od eksperta dla…"
+        description="Kompleksowy poradnik Pinterest dla firmy: optymalizacja profilu, typy pinów, Pinterest SEO, Pinterest Ads, analityka. Jak marki zarabiają na Pintereście."
         canonical="https://fotz.pl/blog/pinterest-dla-firmy"
         keywords="Pinterest dla firmy, Pinterest business, Pinterest marketing, Pinterest SEO, Pinterest Ads, strategie Pinteresta, Pinterest e-commerce"
         ogType="article"

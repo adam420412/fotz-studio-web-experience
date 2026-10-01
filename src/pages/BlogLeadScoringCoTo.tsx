@@ -106,7 +106,7 @@ export default function BlogLeadScoringCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Lead Scoring | Fotz Studio"
+        title="Lead Scoring — co to jest i jak oceniać leady? | Fotz Studio"
         description="Lead scoring — definicja, 4 wymiary scoringu (demograficzne, firmograficzne, behawioralne), MQL vs SQL, 6-krokowy proces i narzędzia. Kompletny przewodnik B2B."
         canonical="https://fotz.pl/blog/lead-scoring-co-to"
 

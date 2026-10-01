@@ -58,7 +58,7 @@ export default function BlogPipelineManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Pipeline Management | Fotz Studio"
+        title="Pipeline Management — zarządzanie pipeline sprzedaży B2B"
         description="Pipeline management w sprzedaży B2B — etapy pipeline, coverage ratio, metryki zdrowia i jak adresować problemy. Kompletny przewodnik dla liderów sprzedaży."
         canonical="https://fotz.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b"
 

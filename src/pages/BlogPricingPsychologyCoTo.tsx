@@ -90,7 +90,7 @@ export default function BlogPricingPsychologyCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Psychologia cen | Fotz Studio"
+        title="Psychologia cen — co to jest i jak stosować? | Fotz Studio"
         description="Psychologia cen — charm pricing, anchoring, efekt decoy i ramowanie cen. Kompletny przewodnik po technikach pricing psychology zwiększających konwersję."
         canonical="https://fotz.pl/blog/psychologia-cen-co-to"
 

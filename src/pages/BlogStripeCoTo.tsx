@@ -42,7 +42,7 @@ export default function BlogStripeCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Stripe, Paddle, Przelewy24 | Fotz Studio"
+        title="Stripe, Paddle, Przelewy24 — integracja płatności Next.js TypeScript 2024?"
         description="Stripe Checkout, Payment Intents, Subscriptions, Webhooks, Connect, Paddle (MoR), Lemon Squeezy, Przelewy24 — płatności webowe w Next.js i Node.js 2024."
         canonical="https://fotz.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
 

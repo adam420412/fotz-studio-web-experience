@@ -85,8 +85,8 @@ export default function BlogSocialListeningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Social Listening | Fotz Studio"
-        description="Social listening — definicja, różnica vs social monitoring, 6 przypadków użycia, narzędzia (Brand24, Brandwatch) i kluczowe metryki. Kompletny przewodnik…"
+        title="Social Listening — co to jest i jak nasłuchiwać mediów społecznościowych?"
+        description="Kompletny przewodnik po social listening: 6 use cases, 5 narzędzi, kluczowe metryki i różnica vs social monitoring."
         canonical="https://fotz.pl/blog/social-listening-co-to"
 
         keywords="Social Listening co to jest, Social Listening definicja, czym jest Social Listening, Social Listening w marketingu, Social Listening przykłady, jak działa Social Listening, Social Listening strategia"

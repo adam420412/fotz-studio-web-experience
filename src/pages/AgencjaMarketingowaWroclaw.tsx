@@ -130,12 +130,16 @@ export default function AgencjaMarketingowaWroclaw() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" variant="secondary" className="bg-white text-blue-700 hover:bg-gray-100">
-                Bezpłatna Wycena
+              <Button asChild size="lg" variant="secondary" className="bg-white text-blue-700 hover:bg-gray-100">
+                <Link to="/kontakt">
+                  Bezpłatna Wycena
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
-                <Phone className="w-4 h-4 mr-2" />
-                Zadzwoń
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
+                <a href="tel:+48790814814">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Zadzwoń
+                </a>
               </Button>
             </div>
 
@@ -530,8 +534,10 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span>Wsparcie i konsultacje nieograniczone</span>
                   </li>
                 </ul>
-                <Button className="w-full" variant="outline">
-                  Zapytaj o ofertę
+                <Button asChild className="w-full" variant="outline">
+                  <Link to="/kontakt">
+                    Zapytaj o ofertę
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -645,8 +651,10 @@ export default function AgencjaMarketingowaWroclaw() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                Bezpłatna Konsultacja
+              <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
                 <a href="tel:+48790814814">

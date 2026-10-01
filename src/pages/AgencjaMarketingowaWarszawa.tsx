@@ -81,7 +81,7 @@ const AgencjaMarketingowaWarszawa = () => {
     {
       id: "strony-www",
       icon: Globe,
-      title: "Strony WWW &amp; Web Design",
+      title: "Strony WWW & Web Design",
       description:
         "Tworzenie nowoczesnych stron internetowych responsywnych i zoptymalizowanych dla SEO. Strony które sprzedają.",
       features: [
@@ -107,7 +107,7 @@ const AgencjaMarketingowaWarszawa = () => {
     {
       id: "branding",
       icon: Lightbulb,
-      title: "Branding &amp; Strategia",
+      title: "Branding & Strategia",
       description:
         "Budowanie silnej tożsamości marki. Logo, identyfikacja wizualna i strategia pozycjonowania dla Twojej firmy.",
       features: [

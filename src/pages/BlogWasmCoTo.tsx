@@ -50,7 +50,7 @@ export default function BlogWasmCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="WebAssembly (Wasm) | Fotz Studio"
+        title="WebAssembly (Wasm) — co to jest, Rust, C++ i Emscripten w przeglądarce?"
         description="WebAssembly: jak działa, Rust+wasm-pack, C++/Emscripten, WASI poza przeglądarką, edge computing i praktyczne use cases (FFmpeg, Figma, gry)."
         canonical="https://fotz.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten"
 

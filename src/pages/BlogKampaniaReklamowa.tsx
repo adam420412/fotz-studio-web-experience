@@ -30,7 +30,7 @@ const BlogKampaniaReklamowa = () => {
     <>
       <SEOHead
         title="Kampania Reklamowa i Marketingowa | Fotz Studio"
-        description="Co to jest kampania reklamowa i marketingowa? Definicja, rodzaje, przykłady kampanii Google Ads, Meta Ads i content marketingu. Jak stworzyć skuteczną…"
+        description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok."
         ogType="article"
         canonical="https://fotz.pl/content-marketing/kampanie"
         keywords="kampania reklamowa, jak stworzyć kampanię reklamową, kampania marketingowa, planowanie kampanii reklamowej, kampania google facebook"

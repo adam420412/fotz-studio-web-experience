@@ -42,7 +42,7 @@ export default function BlogIncidentManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Incident Management | Fotz Studio"
+        title="Incident Management — co to jest, severity, PagerDuty, postmortem, on-call SLA?"
         description="Incident Management: severity levels, PagerDuty vs Opsgenie vs Incident.io, Runbook, Blameless Postmortem, on-call rotations, SLO/SLA/Error Budget."
         canonical="https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
 

@@ -81,8 +81,8 @@ export default function BlogUserStoryCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="User Story | Fotz Studio"
-        description="User story — definicja, format 'Jako [rola]...', kryteria INVEST, acceptance criteria (Given/When/Then), story points i Definition of Done. Przewodnik…"
+        title="User Story — co to jest i jak pisać historyjki użytkownika?"
+        description="Kompletny przewodnik po user story: format, kryteria INVEST, acceptance criteria, story points i DoD w metodologii Agile/Scrum."
         canonical="https://fotz.pl/blog/user-story-co-to"
 
         keywords="User Story co to jest, User Story definicja, czym jest User Story, User Story przykłady, jak działa User Story, User Story znaczenie, User Story przewodnik"

@@ -64,7 +64,7 @@ export default function BlogSdrCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="SDR | Fotz Studio"
+        title="SDR — co to jest i jak działa Sales Development Representative?"
         description="SDR (Sales Development Representative) — definicja, różnica vs AE i BDR, 6-krokowa sekwencja outreach, metryki i narzędzia. Przewodnik po roli SDR w B2B SaaS."
         canonical="https://fotz.pl/blog/sdr-co-to-jest"
 

@@ -101,8 +101,8 @@ export default function BlogServiceDesignCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Service Design | Fotz Studio"
-        description="Service design — definicja, 5 zasad, 4-fazowy proces (discover, define, develop, deliver), service blueprint i narzędzia. Czym różni się od UX design…"
+        title="Service Design — co to jest i jak projektować usługi?"
+        description="Kompletny przewodnik po service design: 5 zasad, 4-fazowy Double Diamond process, service blueprint, customer journey map i narzędzia."
         canonical="https://fotz.pl/blog/service-design-co-to"
 
         keywords="Service Design co to jest, Service Design definicja, czym jest Service Design, Service Design przykłady, jak działa Service Design, Service Design znaczenie, Service Design przewodnik"

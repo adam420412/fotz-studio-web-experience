@@ -42,7 +42,7 @@ export default function BlogXstateCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="XState | Fotz Studio"
+        title="XState — co to jest, maszyna stanów, statecharts, Actor Model w React?"
         description="XState: maszyny stanów i statecharts w React — createMachine, useMachine, Actor Model, XState vs Zustand vs useReducer, kiedy używać FSM w 2024."
         canonical="https://fotz.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
 

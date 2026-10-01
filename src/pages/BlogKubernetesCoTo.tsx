@@ -79,8 +79,8 @@ export default function BlogKubernetesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Kubernetes | Fotz Studio"
-        description="Kubernetes (K8s) — definicja, architektura klastra (Control Plane, Worker Node), obiekty K8s (Pod, Deployment, Service, Ingress) i workflowy. Kompletny…"
+        title="Kubernetes — co to jest i jak działa? Kompletny przewodnik"
+        description="Kompletny przewodnik po Kubernetes: architektura klastra, kluczowe obiekty K8s i workflow wdrożeń."
         canonical="https://fotz.pl/blog/kubernetes-co-to-jest"
 
         keywords="Kubernetes co to jest, Kubernetes jak działa, Kubernetes tutorial, Kubernetes przykład, czym jest Kubernetes, Kubernetes dokumentacja, Kubernetes przewodnik"

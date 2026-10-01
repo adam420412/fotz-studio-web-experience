@@ -426,7 +426,7 @@ export default function Uslugi() {
       <Layout>
       <SEOHead
         title="Usługi Marketingowe — SEO, Strony WWW, Reklamy i Social Media"
-        description="Usługi marketingowe Fotz Studio: SEO, strony internetowe, Google Ads, Meta Ads, social media, content marketing i produkcja wideo. Pełna oferta agencji…"
+        description="Usługi marketingowe Fotz Studio: SEO, strony internetowe, Google Ads, Meta Ads, social media, content marketing i produkcja wideo. Pełna oferta agencji i bezpłatna konsultacja na start."
         canonical="https://fotz.pl/uslugi"
         keywords="usługi marketingowe, strony internetowe, social media marketing, kampanie reklamowe, Google Ads, Facebook Ads, SEO, branding, agencja marketingowa"
       />

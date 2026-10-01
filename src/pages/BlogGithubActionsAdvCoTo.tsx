@@ -42,8 +42,8 @@ export default function BlogGithubActionsAdvCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="GitHub Actions zaawansowane | Fotz Studio"
-        description="GitHub Actions zaawansowane 2024: reusable workflows, composite actions, Changesets (monorepo versioning), semantic-release, release-please, OIDC (keyless…"
+        title="GitHub Actions zaawansowane — Changesets, semantic-release, OIDC i optymalizacja 2024?"
+        description="6 zaawansowanych technik CI/CD (reusable workflows/composite actions/Changesets/semantic-release/OIDC/optymalizacja) — automatyczne wersjonowanie i security best practices."
         canonical="https://fotz.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024"
 
         keywords="GitHub Actions zaawansowane co to jest, GitHub Actions zaawansowane definicja, czym jest GitHub Actions zaawansowane, GitHub Actions zaawansowane przykłady, jak działa GitHub Actions zaawansowane, GitHub Actions zaawansowane znaczenie, GitHub Actions zaawansowane przewodnik"

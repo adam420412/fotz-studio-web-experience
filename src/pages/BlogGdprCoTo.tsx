@@ -56,7 +56,7 @@ export default function BlogGdprCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="GDPR (RODO) | Fotz Studio"
+        title="GDPR (RODO) — co to jest i jak wdrożyć w firmie technologicznej?"
         description="GDPR / RODO: podstawy prawne przetwarzania, prawa podmiotów danych, wdrożenie krok po kroku, DPA, SCCs, kary i checklist compliance dla firm SaaS."
         canonical="https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
 

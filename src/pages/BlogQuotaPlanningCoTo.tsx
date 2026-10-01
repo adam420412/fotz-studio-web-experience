@@ -72,7 +72,7 @@ export default function BlogQuotaPlanningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Quota Planning | Fotz Studio"
+        title="Quota Planning — jak ustalać targety sprzedażowe w SaaS?"
         description="Quota Planning: metodologie (top-down, bottom-up, market-based), ramp schedule, quota attainment benchmarks, metryki i jak planować quoty na rok."
         canonical="https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
 

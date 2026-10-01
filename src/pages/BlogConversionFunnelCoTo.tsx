@@ -48,7 +48,7 @@ export default function BlogConversionFunnelCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Lejek Konwersji | Fotz Studio"
+        title="Lejek Konwersji — co to jest i jak optymalizować Conversion Funnel?"
         description="Conversion Funnel: etapy (TOFU/MOFU/BOFU), metryki konwersji, benchmarki B2B SaaS, optymalizacja każdego etapu i narzędzia (HubSpot, Salesforce, Mixpanel)."
         canonical="https://fotz.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest"
 

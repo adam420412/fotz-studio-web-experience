@@ -33,7 +33,7 @@ const BlogAIMarketing = () => {
   return (
     <>
       <SEOHead
-        title="AI w Marketingu | Fotz Studio"
+        title="AI w marketingu - praktyczne zastosowania dla MŚP w 2025"
         description="AI w marketingu — jak wykorzystać sztuczną inteligencję w content marketingu, reklamach i SEO. Praktyczne zastosowania AI marketing dla MŚP. Fotz Studio."
         ogType="article"
         canonical="https://fotz.pl/blog/ai-w-marketingu-msp-2025"

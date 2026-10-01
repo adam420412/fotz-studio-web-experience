@@ -53,7 +53,7 @@ export default function BlogSbomCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="SBOM | Fotz Studio"
+        title="SBOM — co to jest Software Bill of Materials i jak wdrożyć?"
         description="SBOM: definicja, formaty (CycloneDX, SPDX), narzędzia (Syft, Trivy, Grype), Software Supply Chain Security, VEX i wdrożenie krok po kroku."
         canonical="https://fotz.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
 

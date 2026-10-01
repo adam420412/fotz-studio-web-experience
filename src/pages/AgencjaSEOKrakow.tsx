@@ -80,9 +80,11 @@ export default function AgencjaSEOKrakow() {
               </FadeInView>
             </div>
 
-            <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
-              Bezpłatny audyt SEO
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
+              <Link to="/kontakt">
+                Bezpłatny audyt SEO
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
           </div>
         </motion.section>

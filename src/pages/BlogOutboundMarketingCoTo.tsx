@@ -99,7 +99,7 @@ export default function BlogOutboundMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Outbound Marketing | Fotz Studio"
+        title="Outbound Marketing — co to jest i jak działa? | Fotz Studio"
         description="Outbound marketing — definicja, 6 kanałów (cold email, LinkedIn, PPC, direct mail), porównanie z inbound i jak skutecznie prowadzić kampanie wychodzące."
         canonical="https://fotz.pl/blog/outbound-marketing-co-to"
 

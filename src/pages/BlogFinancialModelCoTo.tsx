@@ -73,7 +73,7 @@ export default function BlogFinancialModelCoTo() {
     <Layout>
       <SEOHead
         title="Financial Model — co to jest i jak zbudować? | Fotz.pl"
-        description="Financial Model (model finansowy) dla SaaS startup — Revenue Waterfall, Sales Capacity, Cash Bridge, scenarios i jak oceniają go inwestorzy. Kompletny…"
+        description="Kompletny przewodnik po Financial Model: komponenty SaaS modelu, kluczowe assumptions, scenariusze i red flags dla VC."
         canonical="https://fotz.pl/blog/financial-model-co-to-jest-saas-startup"
 
         keywords="Financial Model co to jest, Financial Model definicja, czym jest Financial Model, Financial Model przykłady, jak działa Financial Model, Financial Model znaczenie, Financial Model przewodnik"

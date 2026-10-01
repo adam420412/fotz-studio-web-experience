@@ -126,8 +126,8 @@ export default function BlogTypescriptCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TypeScript | Fotz Studio"
-        description="TypeScript — definicja, system typów (prymitywne, union, generics), interface vs type, utility types i konfiguracja tsconfig. Kompletny przewodnik po…"
+        title="TypeScript — co to jest i jak działa? Kompletny przewodnik"
+        description="Kompletny przewodnik po TypeScript: typy, interfejsy, generics, utility types i konfiguracja projektu."
         canonical="https://fotz.pl/blog/typescript-co-to-jest"
 
         keywords="TypeScript co to jest, TypeScript jak działa, TypeScript tutorial, TypeScript przykład, czym jest TypeScript, TypeScript dokumentacja, TypeScript przewodnik"

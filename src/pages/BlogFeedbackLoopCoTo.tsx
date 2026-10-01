@@ -57,7 +57,7 @@ export default function BlogFeedbackLoopCoTo() {
     <Layout>
       <SEOHead
         title="Feedback Loop — co to jest? Pętla feedbacku w produkcie i firmie"
-        description="Feedback loop (pętla feedbacku) — definicja, 6 kanałów zbierania feedbacku, jak priorytetyzować, zamknąć pętlę i Product Feedback Triangle. Kompletny…"
+        description="Kompletny przewodnik po feedback loop: 6 kanałów (interviews, NPS, analytics, support, session recordings), 6-krokowy proces i jak zamknąć pętlę."
         canonical="https://fotz.pl/blog/feedback-loop-co-to"
 
         keywords="Feedback Loop co to jest, Feedback Loop definicja, czym jest Feedback Loop, Feedback Loop przykłady, jak działa Feedback Loop, Feedback Loop znaczenie, Feedback Loop przewodnik"

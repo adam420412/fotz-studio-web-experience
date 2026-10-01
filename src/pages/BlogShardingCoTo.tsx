@@ -50,7 +50,7 @@ export default function BlogShardingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Database Sharding | Fotz Studio"
+        title="Database Sharding — co to jest, strategie, Vitess, Cassandra, CockroachDB?"
         description="Database Sharding: strategie (hash, range, consistent hashing), cross-shard queries, Vitess, CockroachDB, Citus, Cassandra — kiedy i jak skalować bazy poziomo."
         canonical="https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
 

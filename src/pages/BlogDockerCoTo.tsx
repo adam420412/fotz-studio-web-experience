@@ -75,7 +75,7 @@ export default function BlogDockerCoTo() {
     <Layout>
       <SEOHead
         title="Docker — co to jest? Kontenery, Dockerfile i Docker Compose"
-        description="Docker — definicja, kontener vs VM, 7 kluczowych pojęć (Image, Container, Registry, Volume), przykład Dockerfile i best practices. Kompletny przewodnik po…"
+        description="Kompletny przewodnik po Docker: definicja, kontener vs VM, kluczowe pojęcia, przykład Dockerfile i best practices."
         canonical="https://fotz.pl/blog/docker-co-to-jest"
 
         keywords="Docker co to jest, Docker jak działa, Docker tutorial, Docker przykład, czym jest Docker, Docker dokumentacja, Docker przewodnik"

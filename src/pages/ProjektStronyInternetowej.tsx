@@ -80,9 +80,11 @@ export default function ProjektStronyInternetowej() {
               </FadeInView>
             </div>
 
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              Zamów bezpłatną konsultację
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Link to="/kontakt">
+                Zamów bezpłatną konsultację
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
           </div>
         </motion.section>

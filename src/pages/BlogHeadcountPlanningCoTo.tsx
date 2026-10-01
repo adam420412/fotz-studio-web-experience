@@ -75,7 +75,7 @@ export default function BlogHeadcountPlanningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Headcount Planning | Fotz Studio"
+        title="Headcount Planning — jak planować zatrudnienie w startupie?"
         description="Headcount planning: jak planować zatrudnienie, obliczać koszty, unikać błędów i łączyć plan HC z revenue targets. Przewodnik dla startupów i scaleupów SaaS."
         canonical="https://fotz.pl/blog/headcount-planning-planowanie-zatrudnienia-startup"
 

@@ -95,7 +95,7 @@ export default function BlogSponsorshipMarketingCoTo() {
     <Layout>
       <SEOHead
         title="Sponsoring w marketingu — co to jest? Sponsorship marketing i ROI"
-        description="Sponsorship marketing — definicja, 5 rodzajów sponsoringu (sport, kultura, event, cause, digital), jak mierzyć ROI i typy aktywacji sponsorskich…"
+        description="Kompletny przewodnik po sponsorship marketingu: typy sponsoringu, jak wybrać właściwy obiekt, ROI i typy aktywacji."
         canonical="https://fotz.pl/blog/sponsoring-marketing-co-to"
 
         keywords="Sponsoring w marketingu co to jest, Sponsoring w marketingu definicja, czym jest Sponsoring w marketingu, Sponsoring w marketingu w marketingu, Sponsoring w marketingu przykłady, jak działa Sponsoring w marketingu, Sponsoring w marketingu strategia"

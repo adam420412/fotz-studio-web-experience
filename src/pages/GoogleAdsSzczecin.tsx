@@ -210,7 +210,7 @@ export default function GoogleAdsSzczecin() {
     <Layout>
       <SEOHead
         title="Agencja Google Ads Szczecin | Fotz Studio"
-        description="Google Ads Szczecin ✓ Kampanie dla firm z Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
+        description="Google Ads Szczecin ✓ Kampanie dla firm ze Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
         canonical="https://fotz.pl/performance-marketing/google-ads/szczecin"
         keywords="google ads szczecin, kampanie google ads szczecin, agencja google ads szczecin, reklamy google szczecin, google adwords szczecin, sem szczecin, google ads dla firm szczecin, prowadzenie google ads szczecin, google ads cennik szczecin, reklama w google szczecin"
       />
@@ -224,7 +224,7 @@ export default function GoogleAdsSzczecin() {
 
       <ServiceSchema
         name="Google Ads Szczecin"
-        description="Profesjonalne zarządzanie kampaniami Google Ads dla firm z Szczecina i Zachodniopomorskiego"
+        description="Profesjonalne zarządzanie kampaniami Google Ads dla firm ze Szczecina i Zachodniopomorskiego"
         areaServed="Szczecin"
       />
 
@@ -255,11 +255,13 @@ export default function GoogleAdsSzczecin() {
               Google Ads dla Firm w Szczecinie
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Google Ads Szczecin — profesjonalne kampanie Google Ads i reklamy w Google dla firm z Szczecina i Zachodniopomorskiego. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.
+              Google Ads Szczecin — profesjonalne kampanie Google Ads i reklamy w Google dla firm ze Szczecina i Zachodniopomorskiego. Zwiększamy ruch, konwersje i ROI dzięki skutecznym kampaniom SEM. Bezpłatna konsultacja.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna Konsultacja
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
                 <a href="tel:+48790814814">
@@ -634,8 +636,10 @@ export default function GoogleAdsSzczecin() {
             Zapraszamy na bezpłatną konsultację. Analizujemy Twoją branżę, konkurencję i potencjał dla Google Ads.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              Rezerwuj Konsultację
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Link to="/kontakt">
+                Rezerwuj Konsultację
+              </Link>
             </Button>
             <Button asChild
               size="lg"

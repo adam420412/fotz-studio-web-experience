@@ -110,7 +110,7 @@ export default function StronyInternetowePodkarpacie() {
     <>
       <SEOHead
         title="Strony internetowe Podkarpacie | Rzeszów | fotz.pl"
-        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Od…"
+        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Strony od 499 zł, responsywne i zoptymalizowane pod SEO."
         canonical="https://fotz.pl/uslugi/strony-internetowe/podkarpacie"
         structuredData={{
           "@context": "https://schema.org",
@@ -130,7 +130,7 @@ export default function StronyInternetowePodkarpacie() {
           ],
           "url": "https://fotz.pl/uslugi/strony-internetowe/podkarpacie",
           "telephone": "+48790814814",
-          "priceRange": "$$",
+          "priceRange": "$",
           "serviceType": "Web Design & Development"
         }}
         keywords="strony internetowe podkarpacie, tworzenie stron rzeszów, strony www podkarpacie, projektowanie stron podkarpacie"

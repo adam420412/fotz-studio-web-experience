@@ -107,8 +107,10 @@ export default function StronaInternetowaDlaRestauracji() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
-                Bezpłatna wycena strony <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna wycena strony <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>

@@ -81,7 +81,7 @@ export default function BlogDoraMetricsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="DORA Metrics | Fotz Studio"
+        title="DORA Metrics — co to jest i jak mierzyć wydajność DevOps?"
         description="DORA Metrics: Deployment Frequency, Change Lead Time, Change Failure Rate, MTTR. Benchmarki Elite/High/Medium/Low, jak mierzyć i poprawić metryki DevOps."
         canonical="https://fotz.pl/blog/dora-metrics-co-to-jest-jak-mierzyc-wydajnosc-devops"
 

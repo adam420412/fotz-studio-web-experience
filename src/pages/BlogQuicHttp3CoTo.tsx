@@ -51,7 +51,7 @@ export default function BlogQuicHttp3CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="QUIC i HTTP/3 | Fotz Studio"
+        title="QUIC i HTTP/3 — co to jest i jak wpływa na web performance?"
         description="QUIC i HTTP/3: definicja, QUIC vs TCP, 0-RTT, connection migration, HoL Blocking, adopcja, konfiguracja serwera (Nginx, Caddy) i WebTransport."
         canonical="https://fotz.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance"
 

@@ -102,7 +102,7 @@ export default function BlogNetPromoterScoreCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Net Promoter Score (NPS) | Fotz Studio"
+        title="Net Promoter Score (NPS) — co to jest i jak mierzyć lojalność klientów?"
         description="Net Promoter Score (NPS) — definicja, wzór obliczania, Promotorzy vs Krytycy, benchmarki branżowe i różnica vs CSAT i CES. Kompletny przewodnik po NPS."
         canonical="https://fotz.pl/blog/net-promoter-score-co-to"
 

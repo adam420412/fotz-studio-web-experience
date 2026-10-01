@@ -42,7 +42,7 @@ export default function BlogOutboxPatternCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Transactional Outbox Pattern | Fotz Studio"
+        title="Transactional Outbox Pattern — co to jest, Debezium CDC, Inbox Pattern, Spring?"
         description="Transactional Outbox Pattern: dual write problem, Debezium CDC, Inbox Pattern dla exactly-once, implementacja w Spring Boot i Axon, alternatywy Event Sourcing."
         canonical="https://fotz.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring"
 

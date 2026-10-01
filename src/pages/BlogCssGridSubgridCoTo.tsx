@@ -42,8 +42,8 @@ export default function BlogCssGridSubgridCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CSS Grid zaawansowany | Fotz Studio"
-        description="CSS Grid zaawansowany: Subgrid (wyrównanie kart), CSS Masonry (natywne i JS alternatywy), grid-template-areas, auto-fit/auto-fill, minmax i nowoczesne…"
+        title="CSS Grid zaawansowany — Subgrid, Masonry, named areas i responsive bez media queries 2024?"
+        description="6 wzorców CSS Grid (auto-fit+minmax/grid-template-areas/subgrid/dense/masonry/minmax0) — card layouts, Holy Grail, Container Queries i a11y best practices."
         canonical="https://fotz.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024"
 
         keywords="CSS Grid zaawansowany co to jest, CSS Grid zaawansowany definicja, czym jest CSS Grid zaawansowany, CSS Grid zaawansowany przykłady, jak działa CSS Grid zaawansowany, CSS Grid zaawansowany znaczenie, CSS Grid zaawansowany przewodnik"

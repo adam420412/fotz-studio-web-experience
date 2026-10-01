@@ -148,8 +148,8 @@ export default function BlogMarketingDlaRestauracji() {
   return (
     <>
       <SEOHead
-        title="Marketing dla restauracji | Fotz Studio"
-        description="Kompleksowy poradnik marketing dla restauracji. Google Moja Firma, Instagram, TikTok, fotografia kulinarna, rezerwacje online, Google Ads lokalne, opinie…"
+        title="Marketing dla restauracji — kompletny poradnik 2025"
+        description="Marketing dla restauracji: strategie social media, Google Moja Firma, rezerwacje online, fotografia kulinarna, Google Ads lokalne, email marketing, opinie online, programy lojalnościowe."
         canonical="https://fotz.pl/blog/marketing-dla-restauracji"
 
         keywords="Marketing dla restauracji, Marketing dla restauracji poradnik, Marketing dla restauracji strategia, Marketing dla restauracji jak zrobić, Marketing dla restauracji marketing, Marketing dla restauracji przykłady, Marketing dla restauracji w Polsce"

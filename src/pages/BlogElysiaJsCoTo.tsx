@@ -42,8 +42,8 @@ export default function BlogElysiaJsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Elysia.js, Hono i Bun 1.x | Fotz Studio"
-        description="Elysia.js (Bun, 370k req/s, end-to-end types, Eden Treaty), Hono (multi-runtime, edge), Bun 1.x (runtime + bundler + SQLite) i porównanie z Fastify…"
+        title="Elysia.js, Hono i Bun 1.x — ultra-szybkie frameworki backend TypeScript 2024?"
+        description="6 frameworków backend TypeScript (Elysia/Hono/Fastify/NestJS/Express/H3) — wydajność, runtime, end-to-end types i kiedy wybrać w 2024."
         canonical="https://fotz.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
 
         keywords="Elysia.js, Hono i Bun 1.x co to jest, Elysia.js, Hono i Bun 1.x jak działa, Elysia.js, Hono i Bun 1.x tutorial, Elysia.js, Hono i Bun 1.x przykład, czym jest Elysia.js, Hono i Bun 1.x, Elysia.js, Hono i Bun 1.x dokumentacja, Elysia.js, Hono i Bun 1.x przewodnik"

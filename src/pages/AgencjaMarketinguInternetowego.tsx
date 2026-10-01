@@ -176,7 +176,7 @@ export default function AgencjaMarketinguInternetowego() {
     <Layout>
       <SEOHead
         title="Agencja Marketingu Internetowego | Fotz Studio"
-        description="Agencja marketingu internetowego Fotz Studio — SEO, Google Ads, Social Media, content marketing dla firm. Skuteczne kampanie online, audyt i strategia…"
+        description="Agencja marketingu internetowego Fotz Studio — SEO, Google Ads, Social Media i content marketing dla firm. Skuteczne kampanie online, audyt i strategia, dzięki którym skupisz się na swojej podstawowej działalności."
         canonical="https://fotz.pl/agencja-marketingu-internetowego"
         keywords="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing, performance marketing"
       />

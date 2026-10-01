@@ -41,7 +41,7 @@ const CaseStudySookar = () => {
   return (
     <Layout>
       <SEOHead
-        title="Sookar Elite Car Market | Fotz Studio"
+        title="Sookar - Elite Car Market - Case Study | Fotz Studio"
         description="Case study Sookar Elite Car Market: strona internetowa dla platformy luksusowych samochodów. Premium design, katalog i SEO motoryzacyjne. Fotz Studio."
         canonical="https://fotz.pl/realizacje/sookar"
         keywords="case study social media agencja, realizacja social media"

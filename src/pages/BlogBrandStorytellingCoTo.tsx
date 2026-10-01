@@ -80,7 +80,7 @@ export default function BlogBrandStorytellingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Brand Storytelling | Fotz Studio"
+        title="Brand Storytelling — co to jest i jak stosować?"
         description="Brand storytelling — definicja, 5 frameworków narracyjnych (Hero's Journey, Before/After/Bridge), kanały i jak zbudować skuteczną historię marki."
         canonical="https://fotz.pl/blog/brand-storytelling-co-to"
 

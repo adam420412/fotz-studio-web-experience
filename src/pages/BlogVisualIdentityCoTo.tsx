@@ -73,8 +73,8 @@ export default function BlogVisualIdentityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Identyfikacja wizualna | Fotz Studio"
-        description="Identyfikacja wizualna — definicja, 4 kluczowe elementy (logo, kolory, typografia, fotografia), brand book i kiedy robić rebrand. Kompletny przewodnik po…"
+        title="Identyfikacja wizualna — co to jest i jak ją budować?"
+        description="Kompletny przewodnik po identyfikacji wizualnej: 4 elementy visual identity, zasady brand guidelines i przykłady rebrandingów."
         canonical="https://fotz.pl/blog/identyfikacja-wizualna-co-to"
 
         keywords="Identyfikacja wizualna co to jest, Identyfikacja wizualna definicja, czym jest Identyfikacja wizualna, Identyfikacja wizualna w marketingu, Identyfikacja wizualna przykłady, jak działa Identyfikacja wizualna, Identyfikacja wizualna strategia"

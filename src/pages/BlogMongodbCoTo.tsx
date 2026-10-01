@@ -119,8 +119,8 @@ export default function BlogMongodbCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="MongoDB | Fotz Studio"
-        description="MongoDB — definicja, dokumenty vs tabele, BSON, zapytania (find, aggregate), typy indeksów i skalowanie (Replica Set, Sharding). Kompletny przewodnik po…"
+        title="MongoDB — co to jest i jak działa? Kompletny przewodnik"
+        description="Kompletny przewodnik po MongoDB: dokumenty, kolekcje, zapytania, aggregation pipeline i skalowanie."
         canonical="https://fotz.pl/blog/mongodb-co-to-jest"
 
         keywords="MongoDB co to jest, MongoDB jak działa, MongoDB tutorial, MongoDB przykład, czym jest MongoDB, MongoDB dokumentacja, MongoDB przewodnik"

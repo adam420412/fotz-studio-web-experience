@@ -72,7 +72,7 @@ export default function BlogCapTableCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Cap Table | Fotz Studio"
+        title="Cap Table — co to jest i jak zarządzać strukturą udziałów?"
         description="Cap table (tabela kapitalizacji): struktura udziałów, typy instrumentów, dilucja, liquidation preference, narzędzia (Carta, Capdesk) i przykłady exit scenarios."
         canonical="https://fotz.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest"
 

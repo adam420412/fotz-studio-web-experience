@@ -82,7 +82,7 @@ export default function BlogGrowthHackingCoTo() {
     <Layout>
       <SEOHead
         title="Growth Hacking — co to jest? Strategie wzrostu i AARRR framework"
-        description="Growth hacking — definicja, AARRR lejek, viral coefficient, 4 growth loops i framework eksperymentowania. Przykłady Dropbox, Airbnb, Hotmail. Kompletny…"
+        description="Kompletny przewodnik po growth hackingu: AARRR framework, viral coefficient, 4 growth loops i jak budować kulturę eksperymentowania."
         canonical="https://fotz.pl/blog/growth-hacking-co-to"
 
         keywords="Growth Hacking co to jest, Growth Hacking definicja, czym jest Growth Hacking, Growth Hacking startup, Growth Hacking jak liczyć, Growth Hacking wzór, Growth Hacking przykłady"

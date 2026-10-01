@@ -104,7 +104,7 @@ export default function BlogCustomerRetentionCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Customer Retention | Fotz Studio"
+        title="Customer Retention — co to jest i jak ją mierzyć?"
         description="Customer retention — definicja, jak obliczać CRR, NRR i LTV, 6 strategii utrzymania klientów. Kompletny przewodnik po retencji klientów i redukcji churnu."
         canonical="https://fotz.pl/blog/customer-retention-co-to"
 

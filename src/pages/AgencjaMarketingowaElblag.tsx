@@ -72,8 +72,10 @@ export const AgencjaMarketingowaElblag = () => {
               Profesjonalne strategie marketingowe dla firm z Elbląga. Zwiększamy widoczność, budujemy marki i generujemy sprzedaż.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">
-                Bezpłatna konsultacja
+              <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">
+                <Link to="/kontakt">
+                  Bezpłatna konsultacja
+                </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900">
                 Poznaj nasze usługi
@@ -391,12 +393,13 @@ export const AgencjaMarketingowaElblag = () => {
             Skontaktuj się z nami na bezpłatną konsultację. Omówimy Twoje cele i pokażemy, jak możemy Ci pomóc w Elblągu.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+            <Button asChild
               size="lg"
-              className="bg-gray-900 text-yellow-400 hover:bg-gray-800"
-            >
-              Zarezerwuj konsultację
-              <ArrowRight className="ml-2 w-5 h-5" />
+              className="bg-gray-900 text-yellow-400 hover:bg-gray-800">
+              <Link to="/kontakt">
+                Zarezerwuj konsultację
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
             <Button
               size="lg"

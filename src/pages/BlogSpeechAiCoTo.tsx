@@ -42,8 +42,8 @@ export default function BlogSpeechAiCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Speech AI w TypeScript | Fotz Studio"
-        description="Speech AI TypeScript: OpenAI Whisper (STT, word timestamps), ElevenLabs (TTS premium, klonowanie głosu), Deepgram real-time WebSocket, Web Speech API i…"
+        title="Speech AI w TypeScript — Whisper, ElevenLabs, Deepgram i Web Speech API 2024?"
+        description="6 narzędzi Speech AI (Whisper/whisper.cpp/ElevenLabs/OpenAI TTS/Deepgram/Web Speech API) — STT/TTS TypeScript, real-time streaming, voice chat pipeline i React hooks."
         canonical="https://fotz.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024"
 
         keywords="Speech AI w TypeScript co to jest, Speech AI w TypeScript jak działa, Speech AI w TypeScript tutorial, Speech AI w TypeScript przykład, czym jest Speech AI w TypeScript, Speech AI w TypeScript dokumentacja, Speech AI w TypeScript przewodnik"

@@ -91,9 +91,11 @@ export default function TworzenieStronBialystok() {
               </FadeInView>
             </div>
 
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-              Bezpłatna wycena
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+              <Link to="/kontakt">
+                Bezpłatna wycena
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
           </div>
         </motion.section>

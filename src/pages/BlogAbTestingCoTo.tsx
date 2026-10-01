@@ -94,7 +94,7 @@ export default function BlogAbTestingCoTo() {
     <Layout>
       <SEOHead
         title="A/B Testing — co to jest? Testy A/B w marketingu i CRO"
-        description="A/B testing — definicja, 6-krokowy proces, istotność statystyczna, błędy do unikania i narzędzia. Jak prowadzić testy A/B dla stron i emaili. Kompletny…"
+        description="Kompletny przewodnik po A/B testach: 6-krokowy proces, istotność statystyczna, MVP sample size, błędy i narzędzia do testowania."
         canonical="https://fotz.pl/blog/ab-testing-co-to"
 
         keywords="A/B Testing co to jest, A/B Testing definicja, czym jest A/B Testing, A/B Testing w marketingu, A/B Testing przykłady, jak działa A/B Testing, A/B Testing strategia"

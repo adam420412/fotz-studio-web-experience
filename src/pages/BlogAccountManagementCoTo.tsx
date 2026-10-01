@@ -67,7 +67,7 @@ export default function BlogAccountManagementCoTo() {
     <>
       <SEOHead
         title="Account Management — co to jest? Zarządzanie klientami B2B"
-        description="Account management co to jest — wyjaśniamy czym jest zarządzanie klientami B2B, zadania AM, KPI (NRR, churn), różnica vs Customer Success i jak mierzyć…"
+        description="Czym jest account management, zadania AM, KPI (NRR, GRR, churn), różnica vs Customer Success, jak wygląda QBR i customer health score."
         canonical="https://fotz.pl/blog/account-management-co-to"
 
         keywords="Account Management co to jest, Account Management definicja, czym jest Account Management, Account Management przykłady, jak działa Account Management, Account Management znaczenie, Account Management przewodnik"

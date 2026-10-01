@@ -92,7 +92,7 @@ const PozycjonowanieWalbrzych = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Wałbrzych - SEO lokalne dla firm | fotz studio"
-        description="Pozycjonowanie stron Wałbrzych. Agencja SEO fotz studio — audyt SEO, optymalizacja dla turystyki górniczej, usług lokalnych. Rynek Wałbrzychu z bogatą…"
+        description="Pozycjonowanie stron Wałbrzych. Agencja SEO Fotz Studio — audyt SEO, optymalizacja dla turystyki, usług lokalnych i handlu. Pomagamy firmom z Wałbrzycha zdobyć pierwszą stronę Google."
         canonical="https://fotz.pl/pozycjonowanie/walbrzych"
         keywords="pozycjonowanie wałbrzych, agencja seo wałbrzych, seo wałbrzych, pozycjonowanie stron wałbrzych, seo dla firm wałbrzych, seo dolny śląsk, pozycjonowanie lokalne wałbrzych"
       />

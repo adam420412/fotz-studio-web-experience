@@ -260,11 +260,12 @@ export default function FacebookAdsGdansk() {
                       95% retencja klientów
                     </Badge>
                   </div>
-                  <Button
+                  <Button asChild
                     size="lg"
-                    className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
-                  >
-                    Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
+                    className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+                    <Link to="/kontakt">
+                      Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
                   </Button>
                 </div>
               </FadeInView>
@@ -627,11 +628,12 @@ export default function FacebookAdsGdansk() {
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 Facebook Ads to nie magia – to nauka. Wiemy, jak ją robić. Zaczynamy od audytu, kończymy na skalowaniu.
               </p>
-              <Button
+              <Button asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
-              >
-                Zarezerwuj bezpłatną konsultację <ArrowRight className="ml-2 w-5 h-5" />
+                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+                <Link to="/kontakt">
+                  Zarezerwuj bezpłatną konsultację <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </FadeInView>
           </div>

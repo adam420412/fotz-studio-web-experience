@@ -66,8 +66,8 @@ export default function BlogCustomerSuccessCoTo() {
   return (
     <>
       <SEOHead
-        title="Customer Success — co to jest i jak wdrozyc? | fotz.pl"
-        description="Customer Success co to jest — wyjasnamy czym jest CS, roznica vs Customer Support, zadania CSM, jak zbudowac program CS i metryki sukcesu klienta."
+        title="Customer Success — co to jest i jak wdrożyć? | fotz.pl"
+        description="Customer Success co to jest — wyjaśniamy, czym jest CS, różnica vs Customer Support, zadania CSM, jak zbudować program CS i metryki sukcesu klienta."
         canonical="https://fotz.pl/blog/customer-success-co-to"
 
         keywords="Customer Success co to jest, Customer Success definicja, czym jest Customer Success, Customer Success przykłady, jak działa Customer Success, Customer Success znaczenie, Customer Success przewodnik"

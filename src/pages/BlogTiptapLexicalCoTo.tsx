@@ -42,7 +42,7 @@ export default function BlogTiptapLexicalCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Tiptap, Lexical, Slate.js | Fotz Studio"
+        title="Tiptap, Lexical, Slate.js — Rich Text Editors React i collaborative editing 2024?"
         description="Tiptap (ProseMirror, headless), Lexical (Meta/Facebook), Quill, Slate.js, TinyMCE — WYSIWYG editory React, Y.js collaborative editing, Hocuspocus i Liveblocks."
         canonical="https://fotz.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024"
 

@@ -466,8 +466,10 @@ export function BlogKosztMarketinguInternetowego() {
                 <p className="text-muted-foreground mb-6">
                   Nasz zespół przeanalizuje Twoją sytuację i zaproponuje efektywny budżet dla Twojego biznesu. Bezpłatna konsultacja - bez zobowiązań.
                 </p>
-                <Button size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">
-                  Zarezerwuj konsultację
+                <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">
+                  <Link to="/kontakt">
+                    Zarezerwuj konsultację
+                  </Link>
                 </Button>
               </div>
             </div>
