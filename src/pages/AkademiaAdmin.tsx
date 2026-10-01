@@ -411,7 +411,7 @@ const AkademiaAdmin = () => {
   }
 
   if (!isAdmin) {
-    return <Navigate to="/akademia" replace />;
+    return <Navigate to="/zasoby" replace />;
   }
 
   return (

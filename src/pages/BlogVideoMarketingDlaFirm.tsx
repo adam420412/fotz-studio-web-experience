@@ -13,7 +13,7 @@ export default function BlogVideoMarketingDlaFirm() {
     "@type": "BlogPosting",
     headline: "Video Marketing dla Firm – Kompletny Przewodnik 2026",
     description: "Video marketing dla firm – rodzaje filmów reklamowych, YouTube Ads, TikTok, koszty i zwrot z inwestycji. Kompletny przewodnik po video marketingu",
-    image: "https://fotz.pl/images/video-marketing-dla-firm.jpg",
+    image: "https://fotz.pl/og-image.jpg",
     datePublished: "2026-03-10",
     dateModified: "2026-03-10",
     author: {

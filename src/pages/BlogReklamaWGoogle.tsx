@@ -71,7 +71,7 @@ export default function BlogReklamaWGoogle() {
         author="Fotz"
         datePublished={publicationDate}
         dateModified={modifiedDate}
-        image="https://fotz.pl/images/google-ads.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

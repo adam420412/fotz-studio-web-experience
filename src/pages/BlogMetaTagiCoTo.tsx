@@ -132,7 +132,7 @@ export default function BlogMetaTagiCoTo() {
                   <div className="border-t border-slate-700 pt-2 mt-2">
                     <p className="text-slate-400">{"<!-- Open Graph -->"}</p>
                     <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">property</span>=<span className="text-green-400">"og:title"</span> <span className="text-yellow-400">content</span>=<span className="text-green-400">"Meta tagi SEO — poradnik"</span> <span className="text-blue-400">/{">"}</span></p>
-                    <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">property</span>=<span className="text-green-400">"og:image"</span> <span className="text-yellow-400">content</span>=<span className="text-green-400">"https://fotz.pl/og-meta-tagi.jpg"</span> <span className="text-blue-400">/{">"}</span></p>
+                    <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">property</span>=<span className="text-green-400">"og:image"</span> <span className="text-yellow-400">content</span>=<span className="text-green-400">"https://fotz.pl/og-image.jpg"</span> <span className="text-blue-400">/{">"}</span></p>
                   </div>
                 </div>
               </div>

@@ -407,7 +407,7 @@ export default function AgencjaSEOPoznan() {
           <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
+              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Pozycjonowanie stron WWW", to: "/seo/pozycjonowanie" },
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
               { label: "Agencja reklamowa Poznań", to: "/agencja-reklamowa-poznan" },

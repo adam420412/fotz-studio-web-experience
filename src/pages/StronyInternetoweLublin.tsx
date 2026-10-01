@@ -489,7 +489,7 @@ const StronyInternetoweLublin = () => {
                   Witryny internetowe dla biznesu
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  FOTZ to <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">firma tworząca strony internetowe</Link>, 
+                  FOTZ to <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">firma tworząca strony internetowe</Link>, 
                   oferująca kompleksowe usługi w zakresie projektowania, wdrażania i optymalizacji witryn.
                 </p>
               </div>

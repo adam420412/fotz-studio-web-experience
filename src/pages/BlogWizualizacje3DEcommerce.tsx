@@ -57,7 +57,7 @@ const BlogWizualizacje3DEcommerce = () => {
         description="Kompletny przewodnik po wizualizacjach 3D w e-commerce, zawierający strategie wdrażania, narzędzia i case study."
         author="Zespół FOTZ"
         datePublished="2026-02-28"
-        image="https://fotz.pl/og-wizualizacje-3d.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

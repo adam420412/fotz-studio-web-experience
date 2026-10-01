@@ -54,7 +54,7 @@ export default function BlogLandingPageCena() {
           description="Kompletny przegląd cen landing page: budujemy, freelancerami agencjami. Jakie czynniki wpływają na cenę? Kiedy co wybrać?"
           author="Fotz Studio"
           datePublished={publicationDate}
-          image="https://fotz.pl/blog/landing-page-og.jpg"
+          image="https://fotz.pl/og-image.jpg"
         />
 
         <BreadcrumbSchema items={[

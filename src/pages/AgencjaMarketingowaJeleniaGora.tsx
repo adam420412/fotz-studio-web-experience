@@ -14,7 +14,7 @@ export default function AgencjaMarketingowaJeleniaGora() {
     description:
       "Profesjonalna agencja marketingowa w Jeleniej Górze. Oferujemy SEO, SEM, social media, tworzenie stron internetowych i kampanie Google Ads.",
     url: "https://fotz.pl/agencja-marketingowa/jelenia-gora",
-    telephone: "+48",
+    telephone: "+48 790 814 814",
     areaServed: "Jelenia Góra",
     priceRange: "PLN",
     image: "https://fotz.pl/og-image.jpg",

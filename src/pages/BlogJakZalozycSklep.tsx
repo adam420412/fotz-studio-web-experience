@@ -80,7 +80,7 @@ export default function BlogJakZalozycSklep() {
             },
             "datePublished": "2025-02-01",
             "dateModified": "2025-04-01",
-            "image": "https://fotz.pl/og-sklep.jpg"
+            "image": "https://fotz.pl/og-image.jpg"
           }
         ]}
       />

@@ -48,7 +48,7 @@ const services = [
     icon: Share2,
     title: "Social media i mediach społecznościowych",
     description: "Fotz Studio to agencja social media dla firm z Częstochowy i całej Polski. Prowadzenie profili na Instagramie, Facebooku, LinkedIn i TikToku. Kreacje treści, harmonogram, kampanie zasięgowe i leadowe.",
-    link: "/social-media/czestochowa"
+    link: "/social-media"
   },
   {
     icon: Video,
@@ -517,8 +517,8 @@ export default function AgencjaMarketingowaCzestochowa() {
           <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa-wroclaw" },
-              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
+              { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa/wroclaw" },
+              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
               { label: "Pozycjonowanie SEO", to: "/seo/pozycjonowanie" },
               { label: "Google Ads", to: "/performance-marketing/google-ads" },

@@ -276,7 +276,7 @@ const StronyInternetoweBydgoszcz = () => {
                 <div className="prose prose-invert max-w-none prose-sm sm:prose-base">
                   <p>
                     <strong>Projektowanie stron internetowych to kluczowy element w procesie tworzenia efektywnej wizytówki Twojej firmy w sieci</strong>. 
-                    W Bydgoszczy nasza <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencja</Link> specjalizuje się 
+                    W Bydgoszczy nasza <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">agencja</Link> specjalizuje się 
                     w projektowaniu stron www, które są nie tylko estetyczne, ale przede wszystkim funkcjonalne i responsywne.
                   </p>
                   

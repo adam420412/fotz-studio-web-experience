@@ -50,7 +50,7 @@ export default function BlogChatGPTWMarketingu() {
         author="Fotz Studio"
         datePublished="2025-04-01"
         dateModified="2025-07-10"
-        image="https://fotz.pl/og-chatgpt-marketing.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
       <FAQSchema items={faqs} />
 

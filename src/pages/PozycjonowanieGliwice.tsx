@@ -110,7 +110,7 @@ const PozycjonowanieGliwice = () => {
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Gliwice", url: "https://fotz.pl/uslugi/pozycjonowanie/gliwice" },
+          { name: "Gliwice", url: "https://fotz.pl/pozycjonowanie/gliwice" },
         ]}/>
       <FAQSchema items={faqItems} />
 

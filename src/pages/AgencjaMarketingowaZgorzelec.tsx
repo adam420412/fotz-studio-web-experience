@@ -41,7 +41,7 @@ export default function AgencjaMarketingowaZgorzelec() {
     areaServed: "Zgorzelec",
     image: "https://fotz.pl/og-image.jpg",
     url: "https://fotz.pl/agencja-marketingowa/zgorzelec",
-    telephone: "+48 (kontakt)",
+    telephone: "+48 790 814 814",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Zgorzelec",

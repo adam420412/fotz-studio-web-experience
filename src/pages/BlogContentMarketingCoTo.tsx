@@ -213,7 +213,7 @@ export default function BlogContentMarketingCoTo() {
               <div className="grid md:grid-cols-2 gap-3">
                 {[
                   { title: "Copywriting — co to jest?", href: "/blog/copywriting-co-to" },
-                  { title: "SEO — pozycjonowanie stron internetowych", href: "/uslugi/pozycjonowanie-stron-internetowych" },
+                  { title: "SEO — pozycjonowanie stron internetowych", href: "/uslugi/pozycjonowanie" },
                   { title: "Marketing internetowy dla firm", href: "/uslugi/marketing-internetowy" },
                   { title: "Reklama w Google — jak działa?", href: "/blog/reklama-w-google" },
                 ].map((post, idx) => (

@@ -52,7 +52,7 @@ export default function BlogSztukaPromocjiInstagram() {
         author="Fotz Studio"
         datePublished="2025-02-20"
         dateModified="2025-07-05"
-        image="https://fotz.pl/og-instagram-ads.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
       <FAQSchema items={faqs} />
 

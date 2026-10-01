@@ -224,12 +224,12 @@ export default function BlogMarketingAutomation() {
         description="Pełny poradnik do narzędzi automatyzacji marketingu. Porównanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite. Ceny, funkcje, najlepsze dla B2B/B2C."
         datePublished="2025-04-10"
         dateModified="2025-08-01"
-        url="https://fotz.pl/blog/automatyzacja-marketingu-narzedzia"
+        url="https://fotz.pl/blog/marketing-automation"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "/" },
         { name: "Blog", url: "/blog" },
-        { name: "Automatyzacja marketingu narzedzia", url: "/blog/automatyzacja-marketingu-narzedzia" }
+        { name: "Marketing automation", url: "/blog/marketing-automation" }
       ]}/>
 
       <Layout>

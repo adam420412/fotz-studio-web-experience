@@ -107,7 +107,7 @@ const PozycjonowanieElblag = () => {
           { name: "Strona główna", url: "https://fotz.pl/" },
           { name: "Usługi", url: "https://fotz.pl/uslugi" },
           { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Elbląg", url: "https://fotz.pl/uslugi/pozycjonowanie/elblag" },
+          { name: "Elbląg", url: "https://fotz.pl/pozycjonowanie/elblag" },
         ]}/>
       <FAQSchema items={faqItems} />
 

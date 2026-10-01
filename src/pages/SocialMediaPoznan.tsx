@@ -567,7 +567,7 @@ export default function SocialMediaPoznan() {
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
-              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+              <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
             </div>
           </motion.div>
         </div>

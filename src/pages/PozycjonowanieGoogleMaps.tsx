@@ -603,7 +603,7 @@ const PozycjonowanieGoogleMaps = () => {
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+              <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
             </div>
           </motion.div>
         </div>

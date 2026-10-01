@@ -42,7 +42,7 @@ export default function BlogCssAnchorPopoverCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CSS Anchor Positioning, Popover API, :has(), View Transitions…"
+        title="CSS Anchor Positioning, Popover API i :has() | Fotz Studio"
         description="Nowe CSS API 2024: Anchor Positioning (tooltips bez JS), Popover API (natywne popupy), :has() parent selector, View Transitions (animacje) i Scroll-Driven…"
         canonical="https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
 

@@ -41,7 +41,7 @@ const CaseStudyFPS = () => {
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "https://fotz.pl" },
         { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "FPS Poznań", url: "https://fotz.pl/realizacje/fps-poznan" }
+        { name: "FPS Poznań", url: "https://fotz.pl/realizacje/fps-cegielski" }
       ]}/>
       <ArticleSchema
         title="FPS Fabryka Pojazdów Szynowych Poznań - Case Study"
@@ -50,7 +50,7 @@ const CaseStudyFPS = () => {
         datePublished="2024-06-15"
         dateModified="2026-01-09"
         image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/fps-poznan"
+        url="https://fotz.pl/realizacje/fps-cegielski"
       />
 
       {/* Hero */}

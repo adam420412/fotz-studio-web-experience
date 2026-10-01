@@ -160,7 +160,7 @@ export default function BlogUXAudit() {
   return (
     <>
       <SEOHead
-        title="Audyt UX strony internetowej - co to jest i jak przeprowadzić?…"
+        title="Audyt UX strony internetowej - co to jest i jak go zrobić?"
         description="Audyt UX strony — co to jest, jak samodzielnie przeprowadzić, jakie narzędzia használować i co zrobić z wynikami. Poradnik pełny dla wskaźników konwersji."
         canonical="https://fotz.pl/blog/audyt-ux-strony"
 

@@ -97,7 +97,7 @@ export default function BlogGoogleMyBusiness() {
   return (
     <>
       <SEOHead
-        title="Google Moja Firma - jak zoptymalizować wizytówkę Google?…"
+        title="Google Moja Firma - jak zoptymalizować wizytówkę Google?"
         description="Google Moja Firma optymalizacja - poradnik krok po kroku. Jak założyć, zweryfikować i zoptymalizować profil. Zbieranie opinii, zdjęcia, posty. +600 szukających."
         canonical="https://fotz.pl/blog/google-moja-firma-optymalizacja"
 

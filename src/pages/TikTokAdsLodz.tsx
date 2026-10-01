@@ -11,7 +11,7 @@ export function TikTokAdsLodz() {
     { label: "Strona glowna", path: "/" },
     { label: "Performance Marketing", path: "/performance-marketing" },
     { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
-    { label: "Lodz", path: "/performance-marketing/tiktok-ads/lodz" },
+    { label: "Łódź", path: "/performance-marketing/tiktok-ads/lodz" },
   ];
 
   const faqItems = [
@@ -69,7 +69,7 @@ export function TikTokAdsLodz() {
       <ServiceSchema
         name="TikTok Ads Łódź"
         description="Agencja kampanii reklamowych TikTok Ads w Łodzi. Specjalizujemy się w tworzeniu kampanii, In-Feed Ads, Spark Ads i kreatywnych materiałów wideo."
-        areaServed="Lodz"
+        areaServed="Łódź"
         provider="Fotz"
       />
 

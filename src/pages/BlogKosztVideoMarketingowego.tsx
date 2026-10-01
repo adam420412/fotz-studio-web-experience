@@ -109,7 +109,7 @@ export default function BlogKosztVideoMarketingowego() {
       <ArticleSchema
         headline="Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025"
         description="Kompleksny poradnik kosztów produkcji wideo w Polsce. Ceny spotów reklamowych, filmów produktowych, animacji, webinarów i szkoleń video."
-        image="https://fotz.pl/img/blog-koszt-produkcji-wideo.jpg"
+        image="https://fotz.pl/og-image.jpg"
         datePublished="2025-04-12"
         author="Fotz Studio"
       />

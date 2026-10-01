@@ -467,10 +467,10 @@ export default function AgencjaMarketingowaWalbrzych() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
-                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa-krakow" },
-                { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa-wroclaw" },
-                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa-gdansk" },
+                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
+                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa/krakow" },
+                { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa/wroclaw" },
+                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa/gdansk" },
               ].map((link) => (
                 <Link
                   key={link.to}

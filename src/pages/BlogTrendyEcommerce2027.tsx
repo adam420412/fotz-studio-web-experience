@@ -77,7 +77,7 @@ const BlogTrendyEcommerce2027 = () => {
         author="Zespół FOTZ"
         datePublished="2026-04-05"
         dateModified="2026-04-05"
-        image="https://fotz.pl/og-trendy-ecommerce-2027.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

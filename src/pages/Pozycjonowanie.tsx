@@ -227,15 +227,15 @@ const Pozycjonowanie = () => {
 
   const cityLinks = [
     { name: "Poznań", href: "/seo/pozycjonowanie-poznan" },
-    { name: "Warszawa", href: "/pozycjonowanie-warszawa" },
-    { name: "Kraków", href: "/pozycjonowanie-krakow" },
-    { name: "Wrocław", href: "/pozycjonowanie-wroclaw" },
-    { name: "Gdańsk", href: "/pozycjonowanie-gdansk" },
-    { name: "Łódź", href: "/pozycjonowanie-lodz" },
-    { name: "Katowice", href: "/pozycjonowanie-katowice" },
-    { name: "Szczecin", href: "/pozycjonowanie-szczecin" },
-    { name: "Bydgoszcz", href: "/pozycjonowanie-bydgoszcz" },
-    { name: "Lublin", href: "/pozycjonowanie-lublin" },
+    { name: "Warszawa", href: "/seo/pozycjonowanie-warszawa" },
+    { name: "Kraków", href: "/seo/pozycjonowanie-krakow" },
+    { name: "Wrocław", href: "/seo/pozycjonowanie-wroclaw" },
+    { name: "Gdańsk", href: "/seo/pozycjonowanie-gdansk" },
+    { name: "Łódź", href: "/seo/pozycjonowanie-lodz" },
+    { name: "Katowice", href: "/seo/pozycjonowanie-katowice" },
+    { name: "Szczecin", href: "/uslugi/pozycjonowanie/szczecin" },
+    { name: "Bydgoszcz", href: "/uslugi/pozycjonowanie/bydgoszcz" },
+    { name: "Lublin", href: "/uslugi/pozycjonowanie/lublin" },
   ];
 
   const includedFeatures = [
@@ -754,7 +754,7 @@ const Pozycjonowanie = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 {cityLinks.map((city, index) => (
                   <FadeInView key={index} delay={index * 0.05}>
-                    {city.href === "/seo/pozycjonowanie-poznan" ? (
+                    {city.href ? (
                       <Link 
                         to={city.href}
                         className="flex items-center justify-center gap-2 px-4 py-4 bg-primary/10 border border-primary/30 rounded-xl text-sm font-medium hover:bg-primary/20 transition-all group"

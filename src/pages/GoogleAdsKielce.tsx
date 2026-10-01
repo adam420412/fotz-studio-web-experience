@@ -61,7 +61,7 @@ function GoogleAdsKielce() {
     name: "Kampanie Google Ads Kielce",
     areaServed: "Kielce",
     url: canonicalUrl,
-    telephone: "+48 123 456 789",
+    telephone: "+48 790 814 814",
   };
 
   const faqSchema = {

@@ -131,7 +131,7 @@ export default function BlogFotografiaBiznesowa() {
         description="Kompletny przewodnik po fotografii biznesowej. Dowiedz sie wszystkiego o fotografii korporacyjnej, cenach, rodzajach sesji i przygotowaniu."
         author="Fotz.pl"
         datePublished="2025-04-12"
-        image="https://fotz.pl/images/fotografia-biznesowa-hero.jpg"
+        image="https://fotz.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />

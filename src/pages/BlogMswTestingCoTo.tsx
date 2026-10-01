@@ -42,7 +42,7 @@ export default function BlogMswTestingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="MSW Mock Service Worker 2.0, Storybook mocking i Contract…"
+        title="MSW 2.0, Storybook mocking i Contract Testing | Fotz Studio"
         description="MSW 2.0 (http/HttpResponse, Browser+Node), integracja z Vitest+RTL+Storybook, contract testing z Pact — API mocking dla React i TypeScript 2024."
         canonical="https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
 

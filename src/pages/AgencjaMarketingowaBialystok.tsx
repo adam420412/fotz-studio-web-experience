@@ -476,8 +476,8 @@ export default function AgencjaMarketingowaBialystok() {
             <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
-                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa-krakow" },
+                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
+                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa/krakow" },
                 { label: "Pozycjonowanie Białystok", to: "/uslugi/pozycjonowanie/bialystok" },
                 { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
                 { label: "Google Ads", to: "/performance-marketing/google-ads" },

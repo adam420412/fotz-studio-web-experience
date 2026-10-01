@@ -609,7 +609,7 @@ const KampanieReklamowe = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <a href="tel:+48123456789">
+                <a href="tel:+48790814814">
                   Zadzwoń teraz
                 </a>
               </Button>

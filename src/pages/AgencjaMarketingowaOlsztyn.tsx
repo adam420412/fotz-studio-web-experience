@@ -408,7 +408,7 @@ export default function AgencjaMarketingowaOlsztyn() {
                 { label: "Pozycjonowanie Olsztyn", to: "/uslugi/pozycjonowanie/olsztyn" },
                 { label: "Agencja marketingowa Opole", to: "/agencja-marketingowa-opole" },
                 { label: "Pozycjonowanie Opole", to: "/uslugi/pozycjonowanie/opole" },
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
+                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
               ].map((link) => (
                 <Link
                   key={link.to}

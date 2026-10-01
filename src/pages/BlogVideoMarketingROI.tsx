@@ -119,7 +119,7 @@ export default function BlogVideoMarketingROI() {
   return (
     <>
       <SEOHead
-        title="ROI video marketingu - czy wideo się opłaca? Dane i przykłady…"
+        title="ROI video marketingu - czy wideo się opłaca? Dane, przykłady"
         description="Czy wideo marketing się opłaca? Tak! Statystyki pokazują 93% firm zarabia na video. Sprawdź ROI dla różnych formatów, platform i branż. Poradnik 2025."
         canonical="https://fotz.pl/blog/video-marketing-roi"
 
@@ -136,7 +136,7 @@ export default function BlogVideoMarketingROI() {
       <ArticleSchema
         headline="ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025"
         description="Kompleksny poradnik ROI video marketingu w Polsce. Statystyki efektywności, porównanie formatów, przykłady biznesowe i strategie maksymalizowania zwrotu z wideo."
-        image="https://fotz.pl/img/blog-roi-video-marketing.jpg"
+        image="https://fotz.pl/og-image.jpg"
         datePublished="2025-04-12"
         author="Fotz Studio"
       />

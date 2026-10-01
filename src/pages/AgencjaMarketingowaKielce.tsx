@@ -150,7 +150,7 @@ const AgencjaMarketingowaKielce = () => {
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja" },
+          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
           { name: "Kielce", url: "https://fotz.pl/agencja-marketingowa/kielce" },
         ]}/>
       <FAQSchema items={faqItems.map((item) => ({ question: item.question, answer: item.answer }))} />

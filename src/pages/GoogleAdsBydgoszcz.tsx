@@ -261,8 +261,10 @@ export default function GoogleAdsBydgoszcz() {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
                 Bezpłatna Konsultacja
               </Button>
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                Zadzwoń: +48 123 456 789
+              <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                <a href="tel:+48790814814">
+                  Zadzwoń: +48 790 814 814
+                </a>
               </Button>
             </div>
           </div>
@@ -635,13 +637,14 @@ export default function GoogleAdsBydgoszcz() {
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
               Rezerwuj Konsultację
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-blue-700"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              +48 123 456 789
+              className="border-white text-white hover:bg-blue-700">
+              <a href="tel:+48790814814">
+                <Phone className="w-5 h-5 mr-2" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
           <p className="mt-8 text-sm opacity-75">

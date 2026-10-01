@@ -42,7 +42,7 @@ export default function BlogReactFlowCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Flow (xyflow), Mermaid.js i Graph Visualization w React…"
+        title="React Flow (xyflow), Mermaid.js i grafy w React | Fotz"
         description="@xyflow/react (React Flow) — custom nodes/edges, dagre layout, workflow builders. Mermaid.js — diagramy z kodu. Cytoscape.js, Sigma.js i D3 Force — graph…"
         canonical="https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
 

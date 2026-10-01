@@ -49,7 +49,7 @@ export default function StronyInternetoweKielce() {
 
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony internetowe", url: "https://fotz.pl/strony-internetowe" },
+          { name: "Strony internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
           { name: "Kielce", url: "https://fotz.pl/strony-internetowe/kielce" }
         ]}/>
 
@@ -268,7 +268,7 @@ export default function StronyInternetoweKielce() {
       {/* Link nawigacyjny */}
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Link to="/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
+          <Link to="/uslugi/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
             ← Strony internetowe — wszystkie miasta
           </Link>
         </div>

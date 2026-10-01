@@ -81,7 +81,7 @@ export default function BlogBlogFirmowy() {
         datePublished="2025-01-15"
         dateModified="2025-04-12"
         authorName="Fotz.pl"
-        image="https://fotz.pl/og-blog-firmowy.png"
+        image="https://fotz.pl/og-image.jpg"
       />
 
       <FAQSchema items={faqItems} />

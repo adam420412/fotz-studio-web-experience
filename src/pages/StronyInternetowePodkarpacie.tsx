@@ -116,7 +116,7 @@ export default function StronyInternetowePodkarpacie() {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "fotz.pl - Strony Internetowe Podkarpacie",
-          "image": "https://fotz.pl/logo.png",
+          "image": "https://fotz.pl/logo-fotz.jpg",
           "description": "Tworzenie stron internetowych dla firm z Podkarpacia i Rzeszowa. Aviation Valley, startups, logistyka, produkcja.",
           "address": {
             "@type": "PostalAddress",
@@ -129,7 +129,7 @@ export default function StronyInternetowePodkarpacie() {
             {"@type": "State", "name": "Podkarpackie"}
           ],
           "url": "https://fotz.pl/uslugi/strony-internetowe/podkarpacie",
-          "telephone": "+48123456789",
+          "telephone": "+48790814814",
           "priceRange": "$$",
           "serviceType": "Web Design & Development"
         }}

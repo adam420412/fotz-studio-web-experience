@@ -50,7 +50,7 @@ export default function BlogEventDrivenCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Event-Driven Architecture | Fotz Studio"
+        title="Event-Driven Architecture — Kafka, RabbitMQ, CQRS | Fotz"
         description="Event-Driven Architecture: Kafka vs RabbitMQ, Event Sourcing, CQRS, Saga pattern, pub/sub, message queues — jak projektować i wdrożyć EDA w mikroserwisach."
         canonical="https://fotz.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing"
 

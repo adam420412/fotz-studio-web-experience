@@ -59,7 +59,7 @@ export default function BlogPozycjonowanieDlaMalychFirm() {
       <ArticleSchema
         title="Pozycjonowanie dla malych firm — jak zaczac SEO z malym budzetem?"
         description="Praktyczny przewodnik po SEO dla małych firm. Dowiedz się, jak zacząć pozycjonowanie z ograniczonym budżetem, optymalizować stronę i zdobywać klientów online."
-        image="https://fotz.pl/og-seo-small-business.jpg"
+        image="https://fotz.pl/og-image.jpg"
         author="Fotz Studio"
         publishDate="2026-04-12"
       />

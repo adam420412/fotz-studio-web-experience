@@ -386,7 +386,7 @@ const CennikPozycjonowania = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="tel:+48123456789">Zadzwoń do nas</a>
+                <a href="tel:+48790814814">Zadzwoń do nas</a>
               </Button>
             </div>
           </div>

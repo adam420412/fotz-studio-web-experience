@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 const breadcrumbs = [
   { name: "Strona główna", url: "/" },
-  { name: "Strony internetowe", url: "/strony-internetowe" },
-  { name: "Toruń", url: "/strony-internetowe/torun" }
+  { name: "Strony internetowe", url: "/uslugi/strony-internetowe" },
+  { name: "Toruń", url: "/uslugi/strony-internetowe/torun" }
 ];
 
 const faqItems = [
@@ -469,7 +469,7 @@ export default function StronyInternetoweTorun() {
       {/* Link nawigacyjny */}
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Link to="/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
+          <Link to="/uslugi/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
             ← Strony internetowe — wszystkie miasta
           </Link>
         </div>
