@@ -79,6 +79,15 @@ h2 span{color:#8e8994}
 .work-item:nth-child(3) .work-meta p{margin-top:12px;max-width:190px;line-height:1.8}
 .all-projects{display:flex;justify-content:space-between;padding:24px 0;border-bottom:1px solid var(--line);font-size:12px;color:#ccc7d1;margin-top:24px}
 .all-projects span{font-size:23px}
+.education-case{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:40px;padding:30px;border:1px solid var(--line);border-left:2px solid var(--accent);border-radius:3px;background:#1c191e}
+.education-case>div{max-width:560px}
+.education-case .eyebrow{margin-bottom:12px}
+.education-case h3{font-size:clamp(24px,2.4vw,34px);line-height:1.15;font-weight:400;letter-spacing:-.035em;margin:0 0 14px}
+.education-case p:not(.eyebrow){font-size:14px;color:#b3afb7;line-height:1.7;margin:0}
+.education-case .button{flex-shrink:0}
+.field-help{display:block;font-size:12px;font-weight:400;line-height:1.5;color:#aaa5af;margin-top:8px}
+@media(max-width:900px){.education-case{align-items:flex-start;flex-direction:column}}
+@media(max-width:480px){.education-case{padding:22px 18px}.education-case .button{width:100%;gap:12px;padding-left:14px;font-size:12px}}
 .approach{background:var(--paper);color:#212025;padding:83px 0 0}
 .approach .eyebrow{color:#665d68}
 .approach-top{display:grid;grid-template-columns:1fr 1fr;gap:24px 50px}

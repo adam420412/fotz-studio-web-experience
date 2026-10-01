@@ -7,13 +7,17 @@ export function attributionFrom(url) {
 export function buildPayload(fields, context) {
   const touch = attributionFrom(context.url);
   const service = context.service === 'video' ? 'video' : 'www';
+  const budget = service === 'video' && typeof fields.budget === 'string' ? fields.budget.trim().slice(0,100) : '';
+  const message = fields.message.trim();
   const page = new URL(context.url);
   const pageUrl = page.origin + page.pathname;
   return {
     ...fields,
     subject: service === 'video' ? 'FOTZ — zapytanie o wideo' : 'FOTZ — zapytanie o stronę WWW',
     name: fields.name.trim(), company: fields.company.trim(), email: fields.email.trim(),
-    message: fields.message.trim(),
+    // Keep the answer in the existing message field so email and CRM receivers
+    // retain it even when they do not map optional form fields yet.
+    message: budget ? `${message}\n\nBudżet na produkcję (bez emisji reklam): ${budget}` : message,
     service, service_type: service === 'video' ? 'Produkcja wideo' : 'Strony internetowe',
     project_type: fields.need, timeline: fields.timing,
     contact_request: true, marketing_opt_in: false,

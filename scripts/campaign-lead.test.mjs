@@ -15,6 +15,13 @@ test('CAPI browser identifiers are attached only after explicit measurement cons
  const p=buildPayload(fields,{...context,consent:true,service:'video'});
  assert.equal(p.attribution.fbp,'id');assert.equal(p.consent.analytics,true);assert.equal(p.consent.marketing,false);assert.equal(p.form_name,'campaign_video');
 });
+test('optional video budget reaches existing email/CRM message and is not required',()=>{
+ const p=buildPayload({...fields,budget:' 2500–5000 zł netto '},{...context,service:'video'});
+ assert.equal(p.message,'Test projektu\n\nBudżet na produkcję (bez emisji reklam): 2500–5000 zł netto');
+ assert.equal(buildPayload(fields,{...context,service:'video'}).message,'Test projektu');
+ assert.equal(buildPayload({...fields,budget:''},{...context,service:'video'}).message,'Test projektu');
+ assert.equal(buildPayload({...fields,budget:'2500–5000 zł netto'},context).message,'Test projektu');
+});
 test('UTM values are bounded and unknown query fields are excluded',()=>{
  const a=attributionFrom('https://example.com/?utm_campaign='+'x'.repeat(500)+'&email=private');
  assert.equal(a.utm_campaign.length,240);assert.equal(a.email,undefined);
