@@ -12,7 +12,7 @@ export default function BlogJakWybracAgencje() {
     "@type": "Article",
     "headline": "Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru",
     "description": "Jak wybrać dobrą agencję marketingową? Poznaj 10 kluczowych kryteriów: portfolio, specjalizacja, transparentność, ROI. Praktyczny poradnik dla firm.",
-    "image": "https://fotz.pl/og-image-agencja.jpg",
+    "image": "https://www.fotz-studio.pl/og-image.jpg",
     "datePublished": "2026-04-10",
     "author": {
       "@type": "Organization",
@@ -23,7 +23,7 @@ export default function BlogJakWybracAgencje() {
       "name": "Fotz Studio",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://fotz.pl/logo.png"
+        "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
       }
     }
   };
@@ -36,19 +36,19 @@ export default function BlogJakWybracAgencje() {
         "@type": "ListItem",
         "position": 1,
         "name": "Strona główna",
-        "item": "https://fotz.pl"
+        "item": "https://www.fotz-studio.pl"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://fotz.pl/blog"
+        "item": "https://www.fotz-studio.pl/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Jak Wybrać Agencję Marketingową",
-        "item": "https://fotz.pl/blog/jak-wybrac-agencje-marketingowa"
+        "item": "https://www.fotz-studio.pl/blog/jak-wybrac-agencje-marketingowa"
       }
     ]
   };
@@ -108,7 +108,7 @@ export default function BlogJakWybracAgencje() {
       <SEOHead
         title="Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru"
         description="Jak wybrać dobrą agencję marketingową? Poznaj 10 kluczowych kryteriów: portfolio, specjalizacja, transparentność, ROI. Praktyczny poradnik dla firm."
-        canonical="https://fotz.pl/blog/jak-wybrac-agencje-marketingowa"
+        canonical="https://www.fotz-studio.pl/blog/jak-wybrac-agencje-marketingowa"
         ogType="article"
 
         keywords="Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru poradnik, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru strategia, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru jak zrobić, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru marketing, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru przykłady, Jak Wybrać Agencję Marketingową? 10 Kryteriów Wyboru w Polsce"

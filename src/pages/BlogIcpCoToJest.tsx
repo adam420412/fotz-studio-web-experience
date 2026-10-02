@@ -81,21 +81,21 @@ export default function BlogIcpCoToJest() {
       <SEOHead
         title="ICP co to jest — Ideal Customer Profile w B2B SaaS | Fotz.pl"
         description="ICP (Ideal Customer Profile) — co to jest, jak zbudować, atrybuty ICP, różnica z Buyer Persona i jak ICP wpływa na sprzedaż i marketing. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/icp-ideal-customer-profile-co-to"
+        canonical="https://www.fotz-studio.pl/blog/icp-ideal-customer-profile-co-to"
 
         keywords="ICP co to jest, ICP definicja, czym jest ICP, ICP startup, ICP jak liczyć, ICP wzór, ICP przykłady"
       />
       <ArticleSchema
         title="ICP co to jest — Ideal Customer Profile w B2B SaaS"
         description="Kompletny przewodnik po ICP: definicja, atrybuty, budowanie od podstaw i wpływ na GTM."
-        url="https://fotz.pl/blog/icp-ideal-customer-profile-co-to"
+        url="https://www.fotz-studio.pl/blog/icp-ideal-customer-profile-co-to"
         datePublished="2024-02-02"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "ICP co to jest", url: "https://fotz.pl/blog/icp-ideal-customer-profile-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "ICP co to jest", url: "https://www.fotz-studio.pl/blog/icp-ideal-customer-profile-co-to" },
         ]}/>
 
       {/* Hero */}

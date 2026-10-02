@@ -42,23 +42,23 @@ export default function BlogReactEmailResendCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Email, Resend, Nodemailer | Fotz Studio"
-        description="Email w TypeScript 2024: React Email (JSX templates), Resend (email API), Nodemailer (SMTP), SPF/DKIM/DMARC (dostarczalność), dark mode email i testy…"
-        canonical="https://fotz.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024"
+        title="React Email, Resend, Nodemailer — szablony email w JSX TypeScript 2024?"
+        description="6 bibliotek do emaili w TypeScript (React Email/Resend/Nodemailer/Postmark/SendGrid/SES) — szablony JSX, API, dostarczalność SPF/DKIM/DMARC i testy emaili."
+        canonical="https://www.fotz-studio.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024"
 
         keywords="React Email, Resend, Nodemailer co to jest, React Email, Resend, Nodemailer jak działa, React Email, Resend, Nodemailer tutorial, React Email, Resend, Nodemailer przykład, czym jest React Email, Resend, Nodemailer, React Email, Resend, Nodemailer dokumentacja, React Email, Resend, Nodemailer przewodnik"
       />
       <ArticleSchema
         title="React Email, Resend, Nodemailer — szablony email w JSX TypeScript 2024?"
         description="6 bibliotek do emaili w TypeScript (React Email/Resend/Nodemailer/Postmark/SendGrid/SES) — szablony JSX, API, dostarczalność SPF/DKIM/DMARC i testy emaili."
-        url="https://fotz.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Email i Resend 2024", url: "https://fotz.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Email i Resend 2024", url: "https://www.fotz-studio.pl/blog/react-email-resend-nodemailer-szablony-email-jsx-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-sky-950 text-white py-20 px-4">

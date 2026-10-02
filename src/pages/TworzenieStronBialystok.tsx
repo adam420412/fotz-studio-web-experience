@@ -33,7 +33,7 @@ export default function TworzenieStronBialystok() {
       <SEOHead
         title="Tworzenie stron internetowych Białystok | Fotz Studio"
         description="Tworzenie stron internetowych Białystok — profesjonalne strony dla firm z Podlasia. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/bialystok"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/bialystok"
         keywords="tworzenie stron internetowych białystok, strony internetowe białystok, tworzenie stron www białystok, projektowanie stron internetowych białystok, projektowanie stron www białystok, strony www białystok, tworzenie stron białystok, strona internetowa białystok, agencja webdesign białystok, sklep internetowy białystok"
       />
       <ServiceSchema
@@ -91,9 +91,11 @@ export default function TworzenieStronBialystok() {
               </FadeInView>
             </div>
 
-            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white">
-              Bezpłatna wycena
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700 text-white">
+              <Link to="/kontakt">
+                Bezpłatna wycena
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
           </div>
         </motion.section>
@@ -199,12 +201,12 @@ export default function TworzenieStronBialystok() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       variant={pkg.highlight ? "default" : "outline"}
                       className="w-full mt-8"
-                    >
-                      Dowiedz się więcej
-                    </Button>
+                    ><a href="/kontakt">
+                      Zapytaj o szczegóły
+                    </a></Button>
                   </div>
                 </FadeInView>
               ))}

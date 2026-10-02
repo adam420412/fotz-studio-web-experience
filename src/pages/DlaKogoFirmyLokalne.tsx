@@ -27,7 +27,7 @@ const caseStudies = [
     description: "Strona internetowa i pozycjonowanie lokalne dla firmy specjalizującej się w tapicerowaniu autobusów.",
     image: grafImage,
     results: ["TOP 3 w Google Maps", "+150% ruchu organicznego", "Stały napływ zleceń"],
-    href: "/realizacje/graf",
+    href: "/realizacje/graf-tapicerstwo",
   },
   {
     title: "Mechanica",
@@ -112,7 +112,7 @@ export default function DlaKogoFirmyLokalne() {
       <SEOHead
         title="Marketing dla Firm Lokalnych — Lokalne SEO i Google Moja Firma"
         description="Marketing dla firm lokalnych: lokalne SEO, Google Moja Firma, reklamy lokalne Google Ads i Facebook. Pozyskaj więcej klientów z okolicy. Fotz Studio Poznań."
-        canonical="https://fotz.pl/dla-kogo/firmy-lokalne"
+        canonical="https://www.fotz-studio.pl/dla-kogo/firmy-lokalne"
         keywords="marketing dla firm lokalnych, seo lokalne, google maps firma, reklama lokalna, local seo dla firm"
       />
       
@@ -122,9 +122,9 @@ export default function DlaKogoFirmyLokalne() {
         description="Kompleksowe usługi marketingowe dla firm lokalnych w Poznaniu - SEO lokalne, Google Maps, kampanie geotargetowane."
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Firmy lokalne", url: "https://fotz.pl/dla-kogo/firmy-lokalne" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Firmy lokalne", url: "https://www.fotz-studio.pl/dla-kogo/firmy-lokalne" },
         ]}/>
       <FAQSchema items={faqItems} />
 

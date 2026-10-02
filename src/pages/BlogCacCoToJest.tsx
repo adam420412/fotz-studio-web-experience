@@ -74,21 +74,21 @@ export default function BlogCacCoToJest() {
       <SEOHead
         title="CAC co to jest — Customer Acquisition Cost w SaaS | Fotz.pl"
         description="CAC (Customer Acquisition Cost) — co to jest, jak obliczyć, CAC Payback Period, LTV/CAC ratio i jak obniżyć koszt pozyskania klienta. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/cac-customer-acquisition-cost-co-to"
+        canonical="https://www.fotz-studio.pl/blog/cac-customer-acquisition-cost-co-to"
 
         keywords="CAC co to jest, CAC definicja, czym jest CAC, CAC startup, CAC jak liczyć, CAC wzór, CAC przykłady"
       />
       <ArticleSchema
         title="CAC co to jest — Customer Acquisition Cost w SaaS"
         description="Kompletny przewodnik po CAC: definicja, formuła, benchmarki i strategie redukcji kosztu pozyskania klienta."
-        url="https://fotz.pl/blog/cac-customer-acquisition-cost-co-to"
+        url="https://www.fotz-studio.pl/blog/cac-customer-acquisition-cost-co-to"
         datePublished="2024-01-27"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CAC co to jest", url: "https://fotz.pl/blog/cac-customer-acquisition-cost-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CAC co to jest", url: "https://www.fotz-studio.pl/blog/cac-customer-acquisition-cost-co-to" },
         ]}/>
 
       {/* Hero */}

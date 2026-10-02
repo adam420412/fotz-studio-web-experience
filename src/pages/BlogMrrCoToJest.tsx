@@ -78,21 +78,21 @@ export default function BlogMrrCoToJest() {
       <SEOHead
         title="MRR co to jest — Monthly Recurring Revenue w SaaS | Fotz.pl"
         description="MRR (Monthly Recurring Revenue) — co to jest, jak obliczyć, składowe MRR, różnica z ARR, benchmarki wzrostu. Kompletny przewodnik po kluczowej metryce SaaS."
-        canonical="https://fotz.pl/blog/mrr-monthly-recurring-revenue-co-to"
+        canonical="https://www.fotz-studio.pl/blog/mrr-monthly-recurring-revenue-co-to"
 
         keywords="MRR co to jest, MRR definicja, czym jest MRR, MRR startup, MRR jak liczyć, MRR wzór, MRR przykłady"
       />
       <ArticleSchema
         title="MRR co to jest — Monthly Recurring Revenue w SaaS"
         description="Kompletny przewodnik po MRR: definicja, składowe, różnica z ARR i benchmarki wzrostu."
-        url="https://fotz.pl/blog/mrr-monthly-recurring-revenue-co-to"
+        url="https://www.fotz-studio.pl/blog/mrr-monthly-recurring-revenue-co-to"
         datePublished="2024-01-29"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "MRR co to jest", url: "https://fotz.pl/blog/mrr-monthly-recurring-revenue-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "MRR co to jest", url: "https://www.fotz-studio.pl/blog/mrr-monthly-recurring-revenue-co-to" },
         ]}/>
 
       {/* Hero */}

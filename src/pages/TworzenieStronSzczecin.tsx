@@ -203,7 +203,7 @@ export default function TworzenieStronSzczecin() {
       <SEOHead
         title="Tworzenie stron internetowych Szczecin | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Szczecin — profesjonalne strony WWW dla firm. Od 499 zł netto. Wersje PL+DE. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/szczecin"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/szczecin"
         keywords="tworzenie stron internetowych szczecin, strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron internetowych szczecin, strony www szczecin, projektowanie i tworzenie stron internetowych szczecin, tworzenie stron szczecin, strona internetowa szczecin, agencja webdesign szczecin, sklep internetowy szczecin"
       />
       <ServiceSchema
@@ -247,8 +247,10 @@ export default function TworzenieStronSzczecin() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link to="/kontakt">
+                    Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi/tworzenie-stron-internetowych">
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">
@@ -382,15 +384,15 @@ export default function TworzenieStronSzczecin() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.highlight
                           ? "bg-white text-blue-600 hover:bg-slate-100"
                           : "bg-blue-600 text-white hover:bg-blue-700"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

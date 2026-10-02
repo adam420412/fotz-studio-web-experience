@@ -43,22 +43,22 @@ export default function BlogAiAgentsMcpCoTo() {
     <Layout>
       <SEOHead
         title="AI Agents, MCP, Vercel AI SDK i LangGraph | Fotz Studio"
-        description="AI Agents 2024: Model Context Protocol (MCP) Anthropic, Vercel AI SDK (streaming, tool calling), LangGraph (multi-agent), RAG z pgvector i LangSmith…"
-        canonical="https://fotz.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024"
+        description="6 narzędzi do budowania agentów AI (MCP/AI SDK/LangGraph/RAG/Assistants API/observability) — ReAct pattern, tool calling, multi-agent i RAG z vector databases."
+        canonical="https://www.fotz-studio.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024"
 
         keywords="AI Agents, MCP, Vercel AI SDK i LangGraph co to jest, AI Agents, MCP, Vercel AI SDK i LangGraph jak działa, AI Agents, MCP, Vercel AI SDK i LangGraph tutorial, AI Agents, MCP, Vercel AI SDK i LangGraph przykład, czym jest AI Agents, MCP, Vercel AI SDK i LangGraph, AI Agents, MCP, Vercel AI SDK i LangGraph dokumentacja, AI Agents, MCP, Vercel AI SDK i LangGraph przewodnik"
       />
       <ArticleSchema
         title="AI Agents, MCP, Vercel AI SDK i LangGraph — budowanie agentów AI 2024?"
         description="6 narzędzi do budowania agentów AI (MCP/AI SDK/LangGraph/RAG/Assistants API/observability) — ReAct pattern, tool calling, multi-agent i RAG z vector databases."
-        url="https://fotz.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024"
+        url="https://www.fotz-studio.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AI Agents i MCP 2024", url: "https://fotz.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AI Agents i MCP 2024", url: "https://www.fotz-studio.pl/blog/ai-agents-mcp-vercel-ai-sdk-langgraph-rag-budowanie-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-indigo-950 text-white py-20 px-4">

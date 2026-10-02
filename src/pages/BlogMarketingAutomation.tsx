@@ -213,9 +213,9 @@ export default function BlogMarketingAutomation() {
   return (
     <>
       <SEOHead
-        title="Automatyzacja marketingu narzedzia | Fotz Studio"
-        description="Odkryj najlepsze narzedzia do automatyzacji marketingu. Porownanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite, Klaviyo. Ceny, funkcje, kto…"
-        canonical="https://fotz.pl/blog/marketing-automation"
+        title="Automatyzacja marketingu — narzędzia | Fotz Studio"
+        description="Odkryj najlepsze narzędzia do automatyzacji marketingu. Porównanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite i Klaviyo: ceny, funkcje i dla kogo jest każde z nich."
+        canonical="https://www.fotz-studio.pl/blog/marketing-automation"
 
         keywords="Automatyzacja marketingu narzedzia, Automatyzacja marketingu narzedzia poradnik, Automatyzacja marketingu narzedzia strategia, Automatyzacja marketingu narzedzia jak zrobić, Automatyzacja marketingu narzedzia marketing, Automatyzacja marketingu narzedzia przykłady, Automatyzacja marketingu narzedzia w Polsce"
       />
@@ -224,12 +224,12 @@ export default function BlogMarketingAutomation() {
         description="Pełny poradnik do narzędzi automatyzacji marketingu. Porównanie HubSpot, Marketo, ActiveCampaign, GetResponse, MailerLite. Ceny, funkcje, najlepsze dla B2B/B2C."
         datePublished="2025-04-10"
         dateModified="2025-08-01"
-        url="https://fotz.pl/blog/automatyzacja-marketingu-narzedzia"
+        url="https://www.fotz-studio.pl/blog/marketing-automation"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "/" },
         { name: "Blog", url: "/blog" },
-        { name: "Automatyzacja marketingu narzedzia", url: "/blog/automatyzacja-marketingu-narzedzia" }
+        { name: "Marketing automation", url: "/blog/marketing-automation" }
       ]}/>
 
       <Layout>

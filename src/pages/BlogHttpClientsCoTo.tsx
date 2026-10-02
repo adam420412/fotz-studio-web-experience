@@ -42,23 +42,23 @@ export default function BlogHttpClientsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="HTTP clients TypeScript | Fotz Studio"
-        description="HTTP clients TypeScript 2024: Fetch API (natywny), Axios (interceptory), ky (2KB, hooks), ofetch (Nuxt/universal), TanStack Query (caching) — error…"
-        canonical="https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
+        title="HTTP clients TypeScript — Fetch, Axios, ky, ofetch i TanStack Query 2024?"
+        description="6 HTTP clients (Fetch/Axios/ky/ofetch/TanStack Query/SWR) — bundle size, TypeScript generics, interceptory, retry, Zod validation i best practices."
+        canonical="https://www.fotz-studio.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
 
         keywords="HTTP clients TypeScript co to jest, HTTP clients TypeScript jak działa, HTTP clients TypeScript tutorial, HTTP clients TypeScript przykład, czym jest HTTP clients TypeScript, HTTP clients TypeScript dokumentacja, HTTP clients TypeScript przewodnik"
       />
       <ArticleSchema
         title="HTTP clients TypeScript — Fetch, Axios, ky, ofetch i TanStack Query 2024?"
         description="6 HTTP clients (Fetch/Axios/ky/ofetch/TanStack Query/SWR) — bundle size, TypeScript generics, interceptory, retry, Zod validation i best practices."
-        url="https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
+        url="https://www.fotz-studio.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024"
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "HTTP Clients TypeScript", url: "https://fotz.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "HTTP Clients TypeScript", url: "https://www.fotz-studio.pl/blog/http-clients-typescript-fetch-axios-ky-ofetch-tanstack-query-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 text-white py-20 px-4">

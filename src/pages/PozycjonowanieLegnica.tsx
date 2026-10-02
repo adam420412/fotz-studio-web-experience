@@ -6,7 +6,7 @@ import { Search, TrendingUp, MapPin, Users, Clock, Award } from "lucide-react";
 export default function PozycjonowanieLegnica() {
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
-    { name: "Pozycjonowanie", url: "/pozycjonowanie" },
+    { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
     { name: "Legnica", url: "/pozycjonowanie/legnica" },
   ];
 
@@ -42,8 +42,8 @@ export default function PozycjonowanieLegnica() {
     <>
       <SEOHead
         title="Pozycjonowanie Legnica | Fotz Studio"
-        description="Profesjonalne usługi pozycjonowania stron internetowych w Legnicy. Zwiększ widoczność Twojej firmy w Google. Pakiety SEO dostosowane do Twoich potrzeb…"
-        canonical="https://fotz.pl/pozycjonowanie/legnica"
+        description="Profesjonalne usługi pozycjonowania stron internetowych w Legnicy. Zwiększ widoczność Twojej firmy w Google. Pakiety SEO dostosowane do Twoich potrzeb i lokalnego rynku."
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/legnica"
         keywords="pozycjonowanie legnica, agencja seo legnica, seo legnica, pozycjonowanie stron legnica, seo dla firm legnica, pozycjonowanie lokalne legnica, seo dolny śląsk"
       />
 
@@ -71,9 +71,9 @@ export default function PozycjonowanieLegnica() {
                   Profesjonalne usługi SEO dla firm z Legnicy. Zwiększ widoczność w Google, przyciągnij więcej
                   klientów i rozwijaj swoją biznes na lokalnym rynku.
                 </p>
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                   Bezpłatna Konsultacja
-                </button>
+                </a>
               </div>
             </div>
           </section>
@@ -257,9 +257,9 @@ export default function PozycjonowanieLegnica() {
                       <span className="text-blue-600">✓</span> Raport miesięczny
                     </li>
                   </ul>
-                  <button className="w-full bg-blue-100 text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-200 transition-colors">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-100 text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-200 transition-colors">
                     Wybierz Plan
-                  </button>
+                  </a>
                 </div>
 
                 <div className="bg-white p-8 rounded-lg shadow-xl border-2 border-blue-600 relative">
@@ -286,9 +286,9 @@ export default function PozycjonowanieLegnica() {
                       <span className="text-blue-600">✓</span> Konsultacje 2x miesięcznie
                     </li>
                   </ul>
-                  <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
                     Wybierz Plan
-                  </button>
+                  </a>
                 </div>
 
                 <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
@@ -312,9 +312,9 @@ export default function PozycjonowanieLegnica() {
                       <span className="text-blue-600">✓</span> Dedykowany account manager
                     </li>
                   </ul>
-                  <button className="w-full bg-blue-100 text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-200 transition-colors">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-100 text-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-200 transition-colors">
                     Wybierz Plan
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -384,9 +384,9 @@ export default function PozycjonowanieLegnica() {
               <p className="text-xl mb-8 text-blue-100">
                 Skontaktuj się z nami dzisiaj, aby uzyskać bezpłatną konsultację SEO dla Twojej firmy w Legnicy.
               </p>
-              <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-lg">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-lg">
                 Zapytaj o Bezpłatną Konsultację
-              </button>
+              </a>
             </div>
           </section>
         </div>

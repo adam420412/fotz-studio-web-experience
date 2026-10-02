@@ -173,8 +173,8 @@ export default function MarketingInternetowy() {
     <>
       <SEOHead
         title="Marketing internetowy | Fotz Studio"
-        description="Marketing internetowy dla firm w Polsce. SEO, Google Ads, Facebook/Instagram, social media, content marketing. Bezpłatna strategia marketingowa …"
-        canonical="https://fotz.pl/uslugi/marketing-internetowy"
+        description="Marketing internetowy dla firm w Polsce. SEO, Google Ads, Facebook i Instagram, social media, content marketing. Kompleksowe usługi online dla Twojej firmy i bezpłatna strategia marketingowa na start."
+        canonical="https://www.fotz-studio.pl/uslugi/marketing-internetowy"
         keywords="marketing internetowy, marketing online, marketing cyfrowy, usługi marketingowe online, agencja marketingu internetowego, digital marketing"
       />
 
@@ -216,13 +216,13 @@ export default function MarketingInternetowy() {
                     Bezpłatna strategia
                   </Link>
                 </Button>
-                <Button
+                <Button asChild
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-blue-700"
-                >
+                ><a href="/kontakt">
                   Pogadajmy
-                </Button>
+                </a></Button>
               </div>
             </motion.div>
           </div>

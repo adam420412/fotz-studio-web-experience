@@ -71,6 +71,8 @@ export function FloatingCTA() {
 
           {/* Main toggle button */}
           <motion.button
+            aria-label={isExpanded ? "Zamknij opcje kontaktu" : "Otwórz opcje kontaktu"}
+            aria-expanded={isExpanded}
             onClick={() => setIsExpanded(!isExpanded)}
             className="w-14 h-14 rounded-full bg-gradient-brand shadow-lg shadow-primary/30 flex items-center justify-center hover:shadow-xl hover:shadow-primary/40 transition-all duration-300 hover:-translate-y-1"
             whileTap={{ scale: 0.95 }}

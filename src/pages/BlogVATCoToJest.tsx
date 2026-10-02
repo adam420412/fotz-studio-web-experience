@@ -65,9 +65,9 @@ export default function BlogVATCoToJest() {
   return (
     <>
       <SEOHead
-        title="VAT - co to jest i jak dziala? Podatek od towarow i uslug"
-        description="VAT co to jest - wyjasniamy czym jest podatek VAT, stawki VAT w Polsce (23%, 8%, 5%), kiedy rejestrowac sie do VAT, jak obliczac i kto jest zwolniony."
-        canonical="https://fotz.pl/blog/vat-co-to-jest"
+        title="VAT - co to jest i jak działa? Podatek od towarów i usług"
+        description="VAT co to jest - wyjaśniamy, czym jest podatek VAT, stawki VAT w Polsce (23%, 8%, 5%), kiedy rejestrować się do VAT, jak obliczać i kto jest zwolniony."
+        canonical="https://www.fotz-studio.pl/blog/vat-co-to-jest"
 
         keywords="VAT - co to jest, VAT - definicja, czym jest VAT -, VAT - przykłady, jak działa VAT -, VAT - znaczenie, VAT - przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogVATCoToJest() {
         description="Czym jest VAT (podatek od towarow i uslug), stawki VAT w Polsce, kiedy rejestracja VAT, obliczanie VAT, faktura VAT i kto jest zwolniony."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/vat-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/vat-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

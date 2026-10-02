@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -36,21 +37,21 @@ export default function BlogPsychologiaCen() {
         title="Psychologia Cen — Strategie Cenowe, które Zwiększają Sprzedaż"
         description="Psychologia cen w marketingu — strategie cenowe, efekt zakotwiczenia, ceny .99 i bundling. Jak psychologia cenowa zwiększa konwersję i sprzedaż. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/psychologia-cen"
+        canonical="https://www.fotz-studio.pl/blog/psychologia-cen"
         keywords="psychologia cen, pricing psychology, ustalanie cen, kotwiczenie cen, charm pricing, strategia cenowa"
       />
       <ArticleSchema
         title="Psychologia cen - jak ustalać ceny, które sprzedają"
         description="Psychologia cen w praktyce: kotwiczenie, charm pricing, decoy effect. Techniki cenowe zwiększające konwersję."
-        url="https://fotz.pl/blog/psychologia-cen"
+        url="https://www.fotz-studio.pl/blog/psychologia-cen"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Psychologia cen", url: "https://fotz.pl/blog/psychologia-cen" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Psychologia cen", url: "https://www.fotz-studio.pl/blog/psychologia-cen" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -328,12 +329,8 @@ export default function BlogPsychologiaCen() {
             <div className="flex items-center justify-between py-8 border-t border-border mt-12">
               <div className="flex items-center gap-4">
                 <span className="text-muted-foreground">Udostępnij:</span>
-                <Button variant="outline" size="icon">
-                  <Share2 className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Bookmark className="w-4 h-4" />
-                </Button>
+                <CopyArticleLinkButton />
+
               </div>
             </div>
           </div>
@@ -352,7 +349,7 @@ export default function BlogPsychologiaCen() {
               <p className="text-muted-foreground">Czy Twoja strona dobrze konwertuje ruch w klientów? Fotz Studio przeprowadza audyt konwersji (CRO) i wdraża rekomendacje — w tym optymalizację cennika, stron produktowych i ścieżki zakupowej. Skontaktuj się z nami po bezpłatny audyt konwersji.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
             </div>

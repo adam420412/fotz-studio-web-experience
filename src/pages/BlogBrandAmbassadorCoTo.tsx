@@ -103,23 +103,23 @@ export default function BlogBrandAmbassadorCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Brand Ambassador | Fotz Studio"
-        description="Brand ambassador — definicja, 5 typów ambasadorów (celebrity, influencer, ekspert, klient, pracownik), 6-etapowy program ambasadorski i koszty. Kompletny…"
-        canonical="https://fotz.pl/blog/brand-ambassador-co-to"
+        title="Brand Ambassador — co to jest i jak budować program ambasadorski?"
+        description="Kompletny przewodnik po brand ambassador: 5 typów ambasadorów, 6-etapowy program, koszty i jak wybrać właściwą osobę."
+        canonical="https://www.fotz-studio.pl/blog/brand-ambassador-co-to"
 
         keywords="Brand Ambassador co to jest, Brand Ambassador definicja, czym jest Brand Ambassador, Brand Ambassador w marketingu, Brand Ambassador przykłady, jak działa Brand Ambassador, Brand Ambassador strategia"
       />
       <ArticleSchema
         title="Brand Ambassador — co to jest i jak budować program ambasadorski?"
         description="Kompletny przewodnik po brand ambassador: 5 typów ambasadorów, 6-etapowy program, koszty i jak wybrać właściwą osobę."
-        url="https://fotz.pl/blog/brand-ambassador-co-to"
+        url="https://www.fotz-studio.pl/blog/brand-ambassador-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Brand Ambassador", url: "https://fotz.pl/blog/brand-ambassador-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Brand Ambassador", url: "https://www.fotz-studio.pl/blog/brand-ambassador-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -127,7 +127,7 @@ export default function BlogBrandAmbassadorCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Ambassador", url: "https://fotz.pl" },
+              { name: "Brand Ambassador", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Ambassador — co to jest i jak budować program ambasadorski?
@@ -179,9 +179,9 @@ export default function BlogBrandAmbassadorCoTo() {
             <div className="space-y-4">
               {ambassadorTypes.map((t, i) => (
                 <div key={i} className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
-                  <div className="flex items-start justify-between mb-2">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-2">
                     <h3 className="font-bold text-slate-900 text-lg">{t.typ}</h3>
-                    <span className="text-sm bg-pink-50 text-pink-700 px-3 py-1 rounded-full flex-shrink-0 ml-4">{t.kosztZakres}</span>
+                    <span className="text-sm bg-pink-50 text-pink-700 px-3 py-1 rounded-full self-start sm:ml-4 sm:max-w-[50%]">{t.kosztZakres}</span>
                   </div>
                   <p className="text-slate-600 mb-3">{t.opis}</p>
                   <div className="grid md:grid-cols-2 gap-3 text-sm">

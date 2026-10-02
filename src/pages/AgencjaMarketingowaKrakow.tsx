@@ -64,7 +64,7 @@ export default function AgencjaMarketingowaKrakow() {
     },
     {
       id: "ads",
-      title: "Google Ads &amp; PPC",
+      title: "Google Ads & PPC",
       description:
         "Kampanie reklamowe w Google Ads i sieciach partnerskich. Skuteczne dotarcie do klientów szukających Twoich usług w Krakowie.",
       icon: Target,
@@ -103,7 +103,7 @@ export default function AgencjaMarketingowaKrakow() {
     },
     {
       id: "branding",
-      title: "Branding &amp; Logo",
+      title: "Branding & Logo",
       description:
         "Kompleksowe usługi brandingu dla firm z Krakowa. Tożsamość wizualna, strategie brand positioning i development marki.",
       icon: Zap,
@@ -136,7 +136,7 @@ export default function AgencjaMarketingowaKrakow() {
       duration: "/ miesiąc",
       description: "Dla rozwijających się firm",
       features: [
-        "Pełne SEO (on-page &amp; off-page)",
+        "Pełne SEO (on-page & off-page)",
         "Zarządzanie mediami społecznościowymi (4 kanały)",
         "12 postów na social media",
         "Kampania Google Ads",
@@ -151,10 +151,10 @@ export default function AgencjaMarketingowaKrakow() {
       description: "Dla dużych firm i e-commerce",
       features: [
         "Pełna strategia marketingowa",
-        "Zaawansowane SEO &amp; technical SEO",
+        "Zaawansowane SEO & technical SEO",
         "Zarządzanie wszystkimi kanałami social media",
         "Content marketing (artykuły, wideo)",
-        "Kampanie Google Ads &amp; Facebook Ads",
+        "Kampanie Google Ads & Facebook Ads",
         "Dedykowany project manager",
         "Raport szczegółowy z analytics",
       ],
@@ -213,14 +213,14 @@ export default function AgencjaMarketingowaKrakow() {
       <SEOHead
         title="Agencja Marketingowa Kraków | Fotz Studio"
         description="Agencja marketingowa Kraków ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Krakowa i Małopolski. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/krakow"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/krakow"
         keywords="agencja marketingowa kraków, marketing internetowy kraków, agencja reklamowa kraków, kampanie reklamowe kraków, seo kraków, google ads kraków, agencja marketingowa małopolska"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Kraków", url: "https://fotz.pl/agencja-marketingowa/krakow" },
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Kraków", url: "https://www.fotz-studio.pl/agencja-marketingowa/krakow" },
         ]}/>
 
       <ServiceSchema
@@ -260,20 +260,22 @@ export default function AgencjaMarketingowaKrakow() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
+              <Button asChild
                 size="lg"
-                className="bg-white text-blue-900 hover:bg-blue-50 font-bold"
-              >
-                Bezpłatna Wycena
-                <ArrowRight className="ml-2 w-5 h-5" />
+                className="bg-white text-blue-900 hover:bg-blue-50 font-bold">
+                <Link to="/kontakt">
+                  Bezpłatna Wycena
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
-              <Button
+              <Button asChild
                 size="lg"
                 variant="outline"
-                className="text-white border-white hover:bg-blue-800"
-              >
-                <Phone className="mr-2 w-5 h-5" />
-                Zadzwoń: +48 12 XXX XX XX
+                className="text-white border-white hover:bg-blue-800">
+                <a href="tel:+48790814814">
+                  <Phone className="mr-2 w-5 h-5" />
+                  Zadzwoń: +48 790 814 814
+                </a>
               </Button>
             </div>
           </div>
@@ -438,12 +440,12 @@ export default function AgencjaMarketingowaKrakow() {
                     ))}
                   </ul>
 
-                  <Button
+                  <Button asChild
                     className={`w-full ${pkg.highlight ? "bg-blue-600 hover:bg-blue-700" : ""}`}
                     variant={pkg.highlight ? "default" : "outline"}
-                  >
+                  ><a href="/kontakt">
                     Wybierz Pakiet
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}
@@ -453,7 +455,7 @@ export default function AgencjaMarketingowaKrakow() {
             <p className="text-gray-600 mb-4">
               Nie znalazłeś odpowiedniego pakietu? Oferujemy także usługi na miarę!
             </p>
-            <Button variant="outline">Zapytaj o Wycenę Custom</Button>
+            <Button asChild variant="outline"><Link to="/kontakt">Zapytaj o Wycenę Custom</Link></Button>
           </div>
         </div>
       </section>
@@ -568,18 +570,20 @@ export default function AgencjaMarketingowaKrakow() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-bold">
-              Bezpłatna Konsultacja
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50 font-bold">
+              <Link to="/kontakt">
+                Bezpłatna Konsultacja
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
               className="text-white border-white hover:bg-blue-700"
-            >
+            ><a href="tel:+48790814814">
               <Phone className="mr-2 w-5 h-5" />
-              +48 12 XXX XX XX
-            </Button>
+              +48 790 814 814
+            </a></Button>
           </div>
 
           <p className="text-blue-100 text-sm mt-8">

@@ -64,9 +64,9 @@ export default function BlogMVPCoToJest() {
   return (
     <>
       <SEOHead
-        title="MVP — co to jest? Minimum Viable Product w praktyce | fotz.pl"
+        title="MVP — co to jest? Minimum Viable Product w praktyce | FOTZ Studio"
         description="MVP co to jest — wyjaśniamy czym jest Minimum Viable Product, jak zbudować MVP strony lub aplikacji, przykłady z Dropbox i Airbnb oraz koszty."
-        canonical="https://fotz.pl/blog/mvp-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/mvp-co-to-jest"
 
         keywords="MVP co to jest, MVP definicja, czym jest MVP, MVP przykłady, jak działa MVP, MVP znaczenie, MVP przewodnik"
       />
@@ -75,7 +75,7 @@ export default function BlogMVPCoToJest() {
         description="Czym jest MVP (Minimum Viable Product), jak je zbudować, słynne przykłady (Dropbox, Airbnb, Uber) i koszty MVP strony internetowej lub aplikacji."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/mvp-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/mvp-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

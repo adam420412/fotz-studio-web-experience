@@ -42,23 +42,23 @@ export default function BlogApiVersioningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Wersjonowanie API | Fotz Studio"
-        description="API versioning: URL vs Header vs Date-based, strategia Stripe, Sunset header, deprecation, Pact contract testing i OpenAPI diff — jak wersjonować API bez…"
-        canonical="https://fotz.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact"
+        title="Wersjonowanie API — co to jest, URL vs Header vs Date, Stripe, deprecation, Pact?"
+        description="API versioning: 6 strategii (URL/Header/Query/Date/Content negotiation/GraphQL), deprecation, Sunset header, contract testing Pact, openapi-diff."
+        canonical="https://www.fotz-studio.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact"
 
         keywords="Wersjonowanie API co to jest, Wersjonowanie API jak działa, Wersjonowanie API tutorial, Wersjonowanie API przykład, czym jest Wersjonowanie API, Wersjonowanie API dokumentacja, Wersjonowanie API przewodnik"
       />
       <ArticleSchema
         title="Wersjonowanie API — co to jest, URL vs Header vs Date, Stripe, deprecation, Pact?"
         description="API versioning: 6 strategii (URL/Header/Query/Date/Content negotiation/GraphQL), deprecation, Sunset header, contract testing Pact, openapi-diff."
-        url="https://fotz.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact"
+        url="https://www.fotz-studio.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Wersjonowanie API", url: "https://fotz.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Wersjonowanie API", url: "https://www.fotz-studio.pl/blog/wersjonowanie-api-co-to-jest-url-header-date-strategia-stripe-pact" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

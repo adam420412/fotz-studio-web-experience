@@ -290,14 +290,14 @@ export default function KalkulatorCen() {
     <>
       <SEOHead
         title="Kalkulator Cen Usług Marketingowych — Ile Kosztuje Marketing?"
-        description="Kalkulator cen usług marketingowych — oblicz orientacyjny koszt SEO, strony internetowej, kampanii Google Ads i social media dla Twojej firmy. Darmowe…"
-        canonical="https://fotz.pl/kalkulator-cen"
+        description="Kalkulator cen usług marketingowych — oblicz orientacyjny koszt SEO, strony internetowej, kampanii Google Ads i social media dla Twojej firmy. Darmowe narzędzie do wstępnej wyceny projektu."
+        canonical="https://www.fotz-studio.pl/kalkulator-cen"
         keywords="kalkulator cen usług marketingowych, ile kosztuje marketing, koszt SEO, koszt strony internetowej, koszt kampanii Google Ads, budżet marketingowy kalkulator"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Kalkulator cen", url: "https://fotz.pl/kalkulator-cen" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Kalkulator cen", url: "https://www.fotz-studio.pl/kalkulator-cen" }
         ]}/>
       <ServiceSchema
         name="Kalkulator cen usług marketingowych"
@@ -307,7 +307,7 @@ export default function KalkulatorCen() {
       <WebPageSchema
         title="Kalkulator Cen Usług Marketingowych — Fotz Studio"
         description="Interaktywny kalkulator wyceny usług marketingowych — oblicz koszt SEO, strony internetowej, kampanii Google Ads i social media."
-        url="https://fotz.pl/kalkulator-cen"
+        url="https://www.fotz-studio.pl/kalkulator-cen"
       />
       <Layout>
         <TooltipProvider>

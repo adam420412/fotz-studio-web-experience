@@ -140,7 +140,7 @@ const InstagramAds = () => {
       <SEOHead
         title="Instagram Ads — Reklama na Instagramie dla Firm | Fotz Studio"
         description="Instagram Ads — tworzenie i prowadzenie kampanii reklamowych na Instagramie. Reklamy wideo, stories, reels i karuzele. Fotz Studio."
-        canonical="https://fotz.pl/performance-marketing/instagram-ads"
+        canonical="https://www.fotz-studio.pl/performance-marketing/instagram-ads"
         keywords="instagram ads polska, reklamy instagram, kampanie instagram ads, instagram ads agencja, stories ads, reels ads, instagram ads dla firm, meta ads instagram, instagram ads cennik, instagram advertising polska"
       />
 
@@ -151,9 +151,9 @@ const InstagramAds = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Instagram Ads", url: "https://fotz.pl/performance-marketing/instagram-ads" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Instagram Ads", url: "https://www.fotz-studio.pl/performance-marketing/instagram-ads" }
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -516,7 +516,7 @@ const InstagramAds = () => {
               <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
             </div>
           </motion.div>
         </div>

@@ -66,9 +66,9 @@ export default function BlogDigitalMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Digital marketing — co to jest i jakie kanały obejmuje? | fotz.pl"
+        title="Digital marketing — co to jest i jakie kanały obejmuje? | FOTZ Studio"
         description="Digital marketing co to jest — wyjaśniamy czym jest marketing cyfrowy, jakie kanały obejmuje (SEO, Google Ads, social media) i od czego zacząć w firmie."
-        canonical="https://fotz.pl/blog/digital-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/digital-marketing-co-to"
 
         keywords="Digital marketing co to jest, Digital marketing definicja, czym jest Digital marketing, Digital marketing w marketingu, Digital marketing przykłady, jak działa Digital marketing, Digital marketing strategia"
       />
@@ -77,7 +77,7 @@ export default function BlogDigitalMarketingCoTo() {
         description="Czym jest digital marketing, kanały (SEO, SEM, social media, email), ile kosztuje i jak mierzyć skuteczność działań marketingu cyfrowego."
         datePublished="2025-04-09"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/digital-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/digital-marketing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

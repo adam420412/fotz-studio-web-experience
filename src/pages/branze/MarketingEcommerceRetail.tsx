@@ -101,7 +101,7 @@ const MarketingEcommerceRetail = () => {
       <SEOHead
         title="Marketing E-commerce | Sklepy Online | Fotz"
         description="Marketing dla e-commerce - sklepy, fotografia produktowa, konfiguratory 3D, performance. Zwiększ sprzedaż. Fotz."
-        canonical="https://fotz.pl/dla-kogo/ecommerce-retail"
+        canonical="https://www.fotz-studio.pl/dla-kogo/ecommerce-retail"
         keywords="marketing ecommerce, agencja marketingowa ecommerce, marketing dla sklepów internetowych, kampanie performance ecommerce, google shopping, facebook ads ecommerce, pozycjonowanie sklepu internetowego"
       />
 
@@ -112,9 +112,9 @@ const MarketingEcommerceRetail = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "E-commerce & Retail", url: "https://fotz.pl/dla-kogo/ecommerce-retail" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "E-commerce & Retail", url: "https://www.fotz-studio.pl/dla-kogo/ecommerce-retail" },
         ]}
       />
       <FAQSchema items={faqItems} />

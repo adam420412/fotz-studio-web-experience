@@ -68,9 +68,9 @@ export default function BlogKeywordResearchCoTo() {
   return (
     <>
       <SEOHead
-        title="Keyword Research — co to jest? Badanie słów kluczowych | fotz.pl"
+        title="Keyword Research — co to jest? Badanie słów kluczowych | FOTZ Studio"
         description="Keyword research co to jest — wyjaśniamy jak przeprowadzić badanie słów kluczowych, search intent, keyword difficulty i jak znaleźć słowa kluczowe konkurencji."
-        canonical="https://fotz.pl/blog/keyword-research-co-to"
+        canonical="https://www.fotz-studio.pl/blog/keyword-research-co-to"
 
         keywords="Keyword Research co to jest, Keyword Research definicja, czym jest Keyword Research, Keyword Research przykłady, jak działa Keyword Research, Keyword Research znaczenie, Keyword Research przewodnik"
       />
@@ -79,7 +79,7 @@ export default function BlogKeywordResearchCoTo() {
         description="Czym jest keyword research, typy słów kluczowych (head, mid, long-tail), search intent, keyword difficulty i narzędzia do badania słów kluczowych SEO."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/keyword-research-co-to"
+        url="https://www.fotz-studio.pl/blog/keyword-research-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -79,21 +79,21 @@ export default function BlogFineTuningCoTo() {
       <SEOHead
         title="Fine-Tuning LLM — co to jest i jak dostroić model AI? | Fotz.pl"
         description="Fine-Tuning LLM: techniki (LoRA, QLoRA, RLHF), przygotowanie datasetu, porównanie z RAG, platformy (OpenAI, Hugging Face) i kiedy fine-tuning się opłaca."
-        canonical="https://fotz.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai"
+        canonical="https://www.fotz-studio.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai"
 
         keywords="Fine-Tuning LLM co to jest, Fine-Tuning LLM definicja, czym jest Fine-Tuning LLM, Fine-Tuning LLM przykłady, jak działa Fine-Tuning LLM, Fine-Tuning LLM znaczenie, Fine-Tuning LLM przewodnik"
       />
       <ArticleSchema
         title="Fine-Tuning LLM — co to jest i jak dostroić model AI?"
         description="Fine-tuning LLM: Full FT, LoRA, QLoRA, DPO, przygotowanie datasetu, porównanie z RAG i prompt engineering, platformy i narzędzia dla startupów i enterprise."
-        url="https://fotz.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai"
+        url="https://www.fotz-studio.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai"
         datePublished="2024-03-07"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Fine-Tuning LLM", url: "https://fotz.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Fine-Tuning LLM", url: "https://www.fotz-studio.pl/blog/fine-tuning-llm-co-to-jest-jak-dostroic-model-ai" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-slate-900 text-white py-20 px-4">

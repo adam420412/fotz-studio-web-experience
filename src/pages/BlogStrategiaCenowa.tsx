@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -46,23 +47,23 @@ export default function BlogStrategiaCenowa() {
     <Layout>
       <SEOHead
         title="Strategia Cenowa - Jak Ustalić Ceny Produktów i Usług? 2025"
-        description="Strategia cenowa firmy - modele cenowe (cost-plus, value-based, competitive), analiza kosztów, marża, wpływ na przychód. Jak zbudować politykę cenową…"
+        description="Kompletny przewodnik po strategii cenowej: modele cenowe, analiza, wpływ na rentowność, najczęstsze błędy."
         ogType="article"
-        canonical="https://fotz.pl/blog/strategia-cenowa"
+        canonical="https://www.fotz-studio.pl/blog/strategia-cenowa"
         keywords="strategia cenowa, polityka cenowa firmy, ustalanie cen, modele cenowe, pricing strategy, analiza kosztów"
       />
       <ArticleSchema
         title="Strategia cenowa - jak ustalić ceny produktów i usług"
         description="Kompletny przewodnik po strategii cenowej: modele cenowe, analiza, wpływ na rentowność, najczęstsze błędy."
-        url="https://fotz.pl/blog/strategia-cenowa"
+        url="https://www.fotz-studio.pl/blog/strategia-cenowa"
         datePublished="2025-01-15"
         dateModified="2026-01-15"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Strategia cenowa", url: "https://fotz.pl/blog/strategia-cenowa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Strategia cenowa", url: "https://www.fotz-studio.pl/blog/strategia-cenowa" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -409,12 +410,8 @@ export default function BlogStrategiaCenowa() {
             <div className="flex items-center justify-between py-8 border-t border-border mt-12">
               <div className="flex items-center gap-4">
                 <span className="text-muted-foreground">Udostępnij:</span>
-                <Button variant="outline" size="icon">
-                  <Share2 className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Bookmark className="w-4 h-4" />
-                </Button>
+                <CopyArticleLinkButton />
+
               </div>
             </div>
           </div>
@@ -436,7 +433,7 @@ export default function BlogStrategiaCenowa() {
               <p className="text-muted-foreground">Polityka cenowa to nie jednorazowa decyzja - wymaga regulacyjnych testów, monitorowania konkurencji i analizy elastyczności popytu. Kluczowe KPI to przychód, marża zysku, wolumen sprzedaży i Customer Lifetime Value. Fotz Studio pomaga firmom w opracowaniu i optymalizacji strategii cenowej, aby maksymalizować rentowność i wzrost.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
             </div>

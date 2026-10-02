@@ -44,21 +44,21 @@ export default function BlogRealtimeCommsCoTo() {
       <SEOHead
         title="WebSocket vs SSE vs Long Polling | Fotz Studio"
         description="WebSocket vs SSE vs Long Polling: porównanie protokołów real-time, Socket.io, MQTT dla IoT, WebSocket w Kubernetes, skalowanie i load balancing."
-        canonical="https://fotz.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt"
+        canonical="https://www.fotz-studio.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt"
 
         keywords="WebSocket vs SSE vs Long Polling co to jest, WebSocket vs SSE vs Long Polling definicja, czym jest WebSocket vs SSE vs Long Polling, WebSocket vs SSE vs Long Polling przykłady, jak działa WebSocket vs SSE vs Long Polling, WebSocket vs SSE vs Long Polling znaczenie, WebSocket vs SSE vs Long Polling przewodnik"
       />
       <ArticleSchema
         title="WebSocket vs SSE vs Long Polling — real-time komunikacja w aplikacjach webowych"
         description="Porównanie 6 protokołów real-time (WebSocket/SSE/Long Polling/MQTT/WebTransport/gRPC), Socket.io, WebSocket w K8s, MQTT dla IoT."
-        url="https://fotz.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt"
+        url="https://www.fotz-studio.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Real-time komunikacja", url: "https://fotz.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Real-time komunikacja", url: "https://www.fotz-studio.pl/blog/websocket-sse-long-polling-real-time-komunikacja-socket-io-mqtt" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">

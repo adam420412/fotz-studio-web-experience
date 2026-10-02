@@ -77,21 +77,21 @@ export default function BlogGrowthAccountingCoTo() {
       <SEOHead
         title="Growth Accounting — co to jest i jak analizować wzrost? | Fotz.pl"
         description="Growth Accounting: framework do analizy wzrostu na 4 składowe (New, Retained, Resurrected, Churned). Quick Ratio, leaky bucket i jak wdrożyć w SaaS."
-        canonical="https://fotz.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
+        canonical="https://www.fotz-studio.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
 
         keywords="Growth Accounting co to jest, Growth Accounting definicja, czym jest Growth Accounting, Growth Accounting przykłady, jak działa Growth Accounting, Growth Accounting znaczenie, Growth Accounting przewodnik"
       />
       <ArticleSchema
         title="Growth Accounting — co to jest i jak analizować wzrost?"
         description="Growth Accounting: rozkład wzrostu na New, Retained, Resurrected i Churned. Quick Ratio, interpretacja, wdrożenie i różnice vs Cohort Analysis."
-        url="https://fotz.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
+        url="https://www.fotz-studio.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow"
         datePublished="2024-02-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Growth Accounting", url: "https://fotz.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Growth Accounting", url: "https://www.fotz-studio.pl/blog/growth-accounting-analiza-wzrostu-uzytkownikow" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 text-white py-20 px-4">

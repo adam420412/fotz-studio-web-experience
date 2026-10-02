@@ -70,9 +70,9 @@ export default function BlogScrumCoToJest() {
   return (
     <>
       <SEOHead
-        title="Scrum — co to jest i jak działa metodologia pracy? | fotz.pl"
+        title="Scrum — co to jest i jak działa metodologia pracy? | FOTZ Studio"
         description="Scrum co to jest — wyjaśniamy jak działa framework Scrum, role (Product Owner, Scrum Master), ceremonie i jak Scrum różni się od Agile. Poradnik dla firm."
-        canonical="https://fotz.pl/blog/scrum-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/scrum-co-to-jest"
 
         keywords="Scrum co to jest, Scrum definicja, czym jest Scrum, Scrum przykłady, jak działa Scrum, Scrum znaczenie, Scrum przewodnik"
       />
@@ -81,7 +81,7 @@ export default function BlogScrumCoToJest() {
         description="Czym jest Scrum, role w Scrum (Product Owner, Scrum Master, Zespół), ceremonie (sprint, standup, retro) i różnica między Scrum a Agile."
         datePublished="2025-04-09"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/scrum-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/scrum-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

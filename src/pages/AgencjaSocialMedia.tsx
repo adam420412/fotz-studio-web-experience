@@ -54,14 +54,14 @@ export default function AgencjaSocialMedia() {
       <SEOHead
         title="Agencja social media — strategia, content, reklamy | Fotz"
         description="Premium agencja social media z Poznania. Strategia, produkcja reels, kampanie Meta i TikTok Ads, raporty miesięczne. Pakiety Start, Business, Premium."
-        canonical={`https://fotz.pl${SM_PILLAR_PATH}`}
+        canonical={`https://www.fotz-studio.pl${SM_PILLAR_PATH}`}
         keywords="agencja social media, prowadzenie social media, agencja SM Poznań, Meta Ads, TikTok Ads"
         schema={faqJsonLd}
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja social media", url: `https://fotz.pl${SM_PILLAR_PATH}` },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja social media", url: `https://www.fotz-studio.pl${SM_PILLAR_PATH}` },
         ]}
       />
       <ServiceSchema

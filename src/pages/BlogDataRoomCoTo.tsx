@@ -76,21 +76,21 @@ export default function BlogDataRoomCoTo() {
       <SEOHead
         title="Data Room — co to jest i jak przygotować? | Fotz.pl"
         description="Data room dla startupu: co powinno znaleźć się w VDR, jak go zorganizować, jakie platformy wybrać i kiedy przygotować przed rundą inwestycyjną."
-        canonical="https://fotz.pl/blog/data-room-co-to-jest-jak-przygotowac-startup"
+        canonical="https://www.fotz-studio.pl/blog/data-room-co-to-jest-jak-przygotowac-startup"
 
         keywords="Data Room co to jest, Data Room definicja, czym jest Data Room, Data Room przykłady, jak działa Data Room, Data Room znaczenie, Data Room przewodnik"
       />
       <ArticleSchema
         title="Data Room — co to jest i jak przygotować?"
         description="Data room (VDR) dla rundy inwestycyjnej: struktura folderów, zawartość, platformy (DocSend, Carta, Datasite), błędy i najlepsze praktyki dla startupów."
-        url="https://fotz.pl/blog/data-room-co-to-jest-jak-przygotowac-startup"
+        url="https://www.fotz-studio.pl/blog/data-room-co-to-jest-jak-przygotowac-startup"
         datePublished="2024-02-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Data Room", url: "https://fotz.pl/blog/data-room-co-to-jest-jak-przygotowac-startup" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Data Room", url: "https://www.fotz-studio.pl/blog/data-room-co-to-jest-jak-przygotowac-startup" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-slate-900 text-white py-20 px-4">

@@ -42,7 +42,7 @@ export default function BlogAudytStrony() {
         title="Audyt Strony Internetowej — Co Sprawdzić i Jak Poprawić SEO?"
         description="Audyt strony internetowej: co sprawdzić? Przewodnik po audycie SEO, technicznych problemach, Core Web Vitals i koszcie. Sprawdź swoją stronę już dziś."
         ogType="article"
-        canonical="https://fotz.pl/blog/audyt-strony-internetowej"
+        canonical="https://www.fotz-studio.pl/blog/audyt-strony-internetowej"
         keywords="audyt strony internetowej, co to audyt strony, audyt ux strony, audyt seo strony, audyt techniczny strony, jak zbadać stronę internetową"
         schemaJson={[
           {
@@ -59,7 +59,7 @@ export default function BlogAudytStrony() {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2026-04-11",
@@ -69,8 +69,8 @@ export default function BlogAudytStrony() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Audyt strony internetowej" }
             ]
           },

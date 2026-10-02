@@ -116,13 +116,13 @@ export default function PerformanceMarketingCluster() {
       <SEOHead
         title="Performance Marketing | Kampanie Ads | Fotz Studio"
         description="Google Ads, Facebook Ads, Instagram, LinkedIn, TikTok i YouTube Ads. Kampanie reklamowe z mierzalnym ROI. Agencja performance Poznań."
-        canonical="https://fotz.pl/performance-marketing"
+        canonical="https://www.fotz-studio.pl/performance-marketing"
         keywords="performance marketing, marketing efektywnościowy, agencja performance marketing, kampanie reklamowe google ads, facebook ads, performance marketing co to, performance marketing polska, roas, kpi marketing, performance marketing cennik, google ads facebook ads"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
         ]}
       />
       <ServiceSchema

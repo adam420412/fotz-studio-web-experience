@@ -64,9 +64,9 @@ export default function BlogChurnRateCoTo() {
   return (
     <>
       <SEOHead
-        title="Churn Rate — co to jest i jak go zmniejszyc? | fotz.pl"
+        title="Churn Rate — co to jest i jak go zmniejszyc? | FOTZ Studio"
         description="Churn Rate co to jest — wyjasniamy czym jest wskaznik rezygnacji, jak obliczyc churn rate, jaki wynik jest dobry i jak zmniejszyc odplyw klientow w SaaS."
-        canonical="https://fotz.pl/blog/churn-rate-co-to"
+        canonical="https://www.fotz-studio.pl/blog/churn-rate-co-to"
 
         keywords="Churn Rate co to jest, Churn Rate definicja, czym jest Churn Rate, Churn Rate startup, Churn Rate jak liczyć, Churn Rate wzór, Churn Rate przykłady"
       />
@@ -75,7 +75,7 @@ export default function BlogChurnRateCoTo() {
         description="Czym jest Churn Rate, jak obliczyc customer churn i revenue churn, benchmarki SaaS, przyczyny wysokiego churnu i strategie jego redukcji."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/churn-rate-co-to"
+        url="https://www.fotz-studio.pl/blog/churn-rate-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

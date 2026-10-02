@@ -142,7 +142,7 @@ export default function AgencjaMarketingowaKatowice() {
         <SEOHead
           title="Agencja Marketingowa Katowice | Fotz Studio"
           description="Agencja marketingowa Katowice ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Katowic i Śląska. Bezpłatna wycena!"
-          canonical="https://fotz.pl/agencja-marketingowa/katowice"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/katowice"
         keywords="agencja marketingowa katowice, marketing internetowy katowice, agencja reklamowa katowice, kampanie reklamowe katowice, seo katowice, google ads katowice, agencja marketingowa śląsk"
         />
 
@@ -153,9 +153,9 @@ export default function AgencjaMarketingowaKatowice() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-            { name: "Katowice", url: "https://fotz.pl/agencja-marketingowa/katowice" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+            { name: "Katowice", url: "https://www.fotz-studio.pl/agencja-marketingowa/katowice" }
           ]}/>
 
         <FAQSchema items={faqItems} />
@@ -178,13 +178,15 @@ export default function AgencjaMarketingowaKatowice() {
                 Ponad 8 lat doświadczenia w marketingu cyfrowym. Specjalizujemy się w SEO, Google Ads, social media i tworzeniu stron www dla firm z Katowic i całego Śląska. 500+ zadowolonych klientów.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="text-base">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Bezpłatna Konsultacja
+                <Button asChild size="lg" className="text-base">
+                  <Link to="/kontakt">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Bezpłatna Konsultacja
+                  </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base">
-                  Dowiedz Się Więcej <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
+                <Button asChild size="lg" variant="outline" className="text-base"><a href="/kontakt">
+                  Zapytaj o szczegóły <ArrowRight className="w-5 h-5 ml-2" />
+                </a></Button>
               </div>
             </div>
           </div>
@@ -266,9 +268,9 @@ export default function AgencjaMarketingowaKatowice() {
                         </li>
                       ))}
                     </ul>
-                    <Button variant={pkg.popular ? "default" : "outline"} className="w-full mt-auto">
+                    <Button asChild variant={pkg.popular ? "default" : "outline"} className="w-full mt-auto"><a href="/kontakt">
                       {pkg.cta}
-                    </Button>
+                    </a></Button>
                   </CardContent>
                 </Card>
               ))}
@@ -440,12 +442,14 @@ export default function AgencjaMarketingowaKatowice() {
               Skontaktuj się z nami na bezpłatną konsultację. Omówimy Twoją branżę, cele i opracujemy plan działania.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-base">
+              <Button asChild size="lg" className="text-base"><a href="tel:+48790814814">
                 <Phone className="w-5 h-5 mr-2" />
                 +48 790 814 814
-              </Button>
-              <Button size="lg" variant="outline" className="text-base">
-                Napisz Wiadomość <ArrowRight className="w-5 h-5 ml-2" />
+              </a></Button>
+              <Button asChild size="lg" variant="outline" className="text-base">
+                <Link to="/kontakt">
+                  Napisz Wiadomość <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
               </Button>
             </div>
           </div>

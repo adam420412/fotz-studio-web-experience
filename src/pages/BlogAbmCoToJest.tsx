@@ -92,21 +92,21 @@ export default function BlogAbmCoToJest() {
       <SEOHead
         title="ABM co to jest — Account-Based Marketing w B2B | Fotz.pl"
         description="ABM (Account-Based Marketing) — co to jest, rodzaje ABM, jak wdrożyć, tech stack i playbook. Kompletny przewodnik po strategii marketingu opartego na kontach."
-        canonical="https://fotz.pl/blog/abm-account-based-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/abm-account-based-marketing-co-to"
 
         keywords="ABM co to jest, ABM definicja, czym jest ABM, ABM w marketingu, ABM przykłady, jak działa ABM, ABM strategia"
       />
       <ArticleSchema
         title="ABM co to jest — Account-Based Marketing w B2B"
         description="Kompletny przewodnik po ABM: definicja, rodzaje, tech stack i playbook wdrożenia."
-        url="https://fotz.pl/blog/abm-account-based-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/abm-account-based-marketing-co-to"
         datePublished="2024-02-03"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "ABM co to jest", url: "https://fotz.pl/blog/abm-account-based-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "ABM co to jest", url: "https://www.fotz-studio.pl/blog/abm-account-based-marketing-co-to" },
         ]}/>
 
       {/* Hero */}

@@ -221,15 +221,15 @@ const SocialMedia = () => {
 
   const cityLinks = [
     { name: "Poznań", href: "/social-media/poznan" },
-    { name: "Warszawa", href: "/social-media-warszawa" },
-    { name: "Kraków", href: "/social-media-krakow" },
-    { name: "Wrocław", href: "/social-media-wroclaw" },
-    { name: "Gdańsk", href: "/social-media-gdansk" },
-    { name: "Łódź", href: "/social-media-lodz" },
-    { name: "Katowice", href: "/social-media-katowice" },
-    { name: "Szczecin", href: "/social-media-szczecin" },
-    { name: "Bydgoszcz", href: "/social-media-bydgoszcz" },
-    { name: "Lublin", href: "/social-media-lublin" },
+    { name: "Warszawa", href: "/social-media/warszawa" },
+    { name: "Kraków", href: "/agencja-social-media/krakow" },
+    { name: "Wrocław", href: "/agencja-social-media/wroclaw" },
+    { name: "Gdańsk", href: "/agencja-marketingowa/gdansk" },
+    { name: "Łódź", href: "/agencja-marketingowa/lodz" },
+    { name: "Katowice", href: "/agencja-social-media/katowice" },
+    { name: "Szczecin", href: "/agencja-social-media/szczecin" },
+    { name: "Bydgoszcz", href: "/agencja-marketingowa/bydgoszcz" },
+    { name: "Lublin", href: "/agencja-social-media/lublin" },
   ];
 
   const includedFeatures = [
@@ -272,8 +272,8 @@ const SocialMedia = () => {
     <>
       <SEOHead
         title="Obsługa i Prowadzenie Social Media Facebook Instagram - Cennik"
-        description="Obsługa social media dla firm — prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie Facebook Ads. Cennik prowadzenia social media od…"
-        canonical="https://fotz.pl/social-media/obsluga"
+        description="Obsługa social media dla firm — prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie Facebook Ads. Cennik prowadzenia social media i zakres usług agencji w jednym miejscu."
+        canonical="https://www.fotz-studio.pl/social-media/obsluga"
         keywords="obsługa social media, prowadzenie social media, prowadzenie fanpage, obsługa mediów społecznościowych, agencja social media, zarządzanie social media, prowadzenie facebooka, prowadzenie instagrama, community management, cennik social media, social media marketing, agencja reklamowa social media"
       />
       
@@ -285,9 +285,9 @@ const SocialMedia = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Social Media", url: "https://fotz.pl/social-media/obsluga" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Social Media", url: "https://www.fotz-studio.pl/social-media/obsluga" },
         ]}/>
       
       <FAQSchema 
@@ -801,7 +801,7 @@ const SocialMedia = () => {
             <FadeInView delay={0.2}>
               <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
                 {cityLinks.map((city, index) => (
-                  city.href === "/social-media/poznan" ? (
+                  ["/social-media/poznan", "/social-media/warszawa"].includes(city.href) ? (
                     <Link
                       key={index}
                       to={city.href}

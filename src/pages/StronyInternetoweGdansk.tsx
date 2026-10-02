@@ -89,12 +89,12 @@ const StronyInternetoweGdansk = () => {
       <SEOHead
         title="Strony Internetowe Gdańsk | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Gdańsk — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gdańska. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/gdansk"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/gdansk"
         keywords="strony internetowe gdańsk, tworzenie stron www gdańsk, projektowanie stron gdańsk, sklepy internetowe gdańsk, wykonanie strony internetowej gdańsk, responsywna strona www gdańsk, wordpress gdańsk, strony internetowe trójmiasto, agencja stron internetowych gdańsk"
       />
       
       <ServiceSchema name="Strony Internetowe Gdańsk" description="Profesjonalne tworzenie stron internetowych dla firm z Gdańska i Trójmiasta." provider="FOTZ Studio" areaServed="Gdańsk" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gdańsk", url: "https://fotz.pl/uslugi/strony-internetowe/gdansk" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Gdańsk", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/gdansk" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

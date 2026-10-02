@@ -60,9 +60,9 @@ export default function BlogXMLSitemapCoTo() {
   return (
     <>
       <SEOHead
-        title="XML Sitemap — co to jest i jak stworzyć mapę strony? | fotz.pl"
+        title="XML Sitemap — co to jest i jak stworzyć mapę strony? | FOTZ Studio"
         description="XML Sitemap co to jest — wyjaśniamy czym jest mapa strony XML, jak ją stworzyć, zgłosić w Google Search Console i jak sitemap wpływa na indeksowanie."
-        canonical="https://fotz.pl/blog/xml-sitemap-co-to"
+        canonical="https://www.fotz-studio.pl/blog/xml-sitemap-co-to"
 
         keywords="XML Sitemap co to jest, XML Sitemap definicja, czym jest XML Sitemap, XML Sitemap przykłady, jak działa XML Sitemap, XML Sitemap znaczenie, XML Sitemap przewodnik"
       />
@@ -71,7 +71,7 @@ export default function BlogXMLSitemapCoTo() {
         description="Czym jest XML Sitemap, jak go stworzyć dla WordPress/Shopify, jak zgłosić w GSC i jak weryfikować poprawność mapy strony."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/xml-sitemap-co-to"
+        url="https://www.fotz-studio.pl/blog/xml-sitemap-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

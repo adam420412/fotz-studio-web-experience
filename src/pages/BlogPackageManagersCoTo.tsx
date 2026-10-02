@@ -42,23 +42,23 @@ export default function BlogPackageManagersCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="npm vs pnpm vs yarn vs Bun | Fotz Studio"
+        title="npm vs pnpm vs yarn vs Bun — package managers Node.js 2024?"
         description="npm vs pnpm (content-addressable) vs yarn Berry (PnP) vs Bun — szybkość, disk usage, workspaces, package.json exports, nvm/fnm/Volta i Node.js versioning."
-        canonical="https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
+        canonical="https://www.fotz-studio.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
 
         keywords="npm vs pnpm vs yarn vs Bun co to jest, npm vs pnpm vs yarn vs Bun jak działa, npm vs pnpm vs yarn vs Bun tutorial, npm vs pnpm vs yarn vs Bun przykład, czym jest npm vs pnpm vs yarn vs Bun, npm vs pnpm vs yarn vs Bun dokumentacja, npm vs pnpm vs yarn vs Bun przewodnik"
       />
       <ArticleSchema
         title="npm vs pnpm vs yarn vs Bun — package managers Node.js 2024?"
         description="6 package managers (npm/pnpm/yarn v1/yarn Berry/Bun/Deno) — install speed, store, workspaces, package.json exports, nvm, fnm, Volta i Node.js versioning."
-        url="https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
+        url="https://www.fotz-studio.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Package Managers Node.js", url: "https://fotz.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Package Managers Node.js", url: "https://www.fotz-studio.pl/blog/npm-pnpm-yarn-bun-package-managers-nodejs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-rose-950 text-white py-20 px-4">

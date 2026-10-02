@@ -122,21 +122,21 @@ export default function BlogRestApiCoTo() {
       <SEOHead
         title="REST API — co to jest? Metody HTTP, zasady i projektowanie"
         description="REST API — definicja, 6 zasad REST, metody HTTP (GET/POST/PUT/PATCH/DELETE), kody statusu i best practices projektowania. Kompletny przewodnik po REST API."
-        canonical="https://fotz.pl/blog/rest-api-co-to"
+        canonical="https://www.fotz-studio.pl/blog/rest-api-co-to"
 
         keywords="REST API co to jest, REST API jak działa, REST API tutorial, REST API przykład, czym jest REST API, REST API dokumentacja, REST API przewodnik"
       />
       <ArticleSchema
         title="REST API — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po REST API: zasady, metody HTTP, kody statusu i najlepsze praktyki projektowania."
-        url="https://fotz.pl/blog/rest-api-co-to"
+        url="https://www.fotz-studio.pl/blog/rest-api-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "REST API", url: "https://fotz.pl/blog/rest-api-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "REST API", url: "https://www.fotz-studio.pl/blog/rest-api-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -144,7 +144,7 @@ export default function BlogRestApiCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "REST API", url: "https://fotz.pl" },
+              { name: "REST API", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             REST API — co to jest i jak działa?

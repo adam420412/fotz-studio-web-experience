@@ -224,21 +224,21 @@ export default function CaseStudyEnea() {
   return (
     <Layout>
       <SEOHead
-        title="Enea Stadion Poznań | Fotz Studio"
+        title="Enea Stadion Poznań - Kompleksowa obsługa marketingowa"
         description="Case study Enea Stadion Poznań: +340% zaangażowania, 2M+ wyświetleń/mc. Strona www, social media, produkcja wideo. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/enea-stadion"
+        canonical="https://www.fotz-studio.pl/realizacje/enea-stadion"
         keywords="case study enea, realizacja marketing b2b, digital marketing energetyka"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-          { name: "Enea Stadion", url: "https://fotz.pl/realizacje/enea-stadion" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+          { name: "Enea Stadion", url: "https://www.fotz-studio.pl/realizacje/enea-stadion" }
         ]}/>
       <ArticleSchema 
         title="Enea Stadion Poznań - Kompleksowa obsługa marketingowa"
         description="Case study: jak zwiększyliśmy zaangażowanie o 340% dla największego kompleksu sportowego w Polsce"
-        url="https://fotz.pl/realizacje/enea-stadion"
-        image="https://fotz.pl/videos/enea-stadion-poster.jpg"
+        url="https://www.fotz-studio.pl/realizacje/enea-stadion"
+        image="https://www.fotz-studio.pl/videos/enea-stadion-poster.jpg"
         datePublished="2023-06-01"
         dateModified="2026-01-09"
       />
@@ -806,10 +806,10 @@ export default function CaseStudyEnea() {
             className="prose prose-lg max-w-none"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Case study Enea Stadion Poznań — Kompleksowa obsługa marketingowa dla sportowej i rozrywkowej
+              Case study Enea Stadion Poznań — Kompleksowa obsługa marketingowa obiektu sportowego
             </h2>
             <p className="text-muted-foreground mb-4">
-              Projekt dla Enea Stadion Poznań to przykład, jak profesjonalne kompleksowa obsługa marketingowa przekłada się
+              Projekt dla Enea Stadion Poznań to przykład, jak kompleksowa obsługa marketingowa przekłada się
               na realne wyniki biznesowe. Wzrost zaangażowania o 340% i ponad 2 miliony wyświetleń miesięcznie dzięki spójnej strategii content marketingu. Fotz Studio realizuje podobne projekty
               dla firm z branży sportowej i rozrywkowej i pokrewnych — każdorazowo z indywidualnym podejściem
               do celów i specyfiki klienta.

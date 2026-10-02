@@ -18,8 +18,8 @@ interface OrganizationSchemaProps {
 
 export function OrganizationSchema({
   name = "Fotz Studio",
-  url = "https://fotz.pl",
-  logo = "https://fotz.pl/logo-fotz.jpg",
+  url = "https://www.fotz-studio.pl",
+  logo = "https://www.fotz-studio.pl/logo-fotz.jpg",
   description = "Agencja marketingowa i reklamowa - Twój partner marketingowy. Kompleksowe strategie marketingowe, kampanie dla firm, content i skuteczny marketing.",
   email = "adam@fotz.pl",
   phone = "+48790814814",
@@ -101,7 +101,7 @@ function expandDayRange(dayStr: string): string[] {
 export function LocalBusinessSchema({
   name = "Fotz Studio - Agencja Marketingowa Poznań",
   description = "Agencja marketingowa w Poznaniu. Strony internetowe, kampanie reklamowe, social media, produkcja filmowa i branding. Pomagamy firmom zdobywać klientów.",
-  url = "https://fotz.pl",
+  url = "https://www.fotz-studio.pl",
   telephone = "+48790814814",
   email = "adam@fotz.pl",
   priceRange = "$$",
@@ -110,7 +110,7 @@ export function LocalBusinessSchema({
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://fotz.pl/#business",
+    "@id": "https://www.fotz-studio.pl/#business",
     name,
     description,
     url,
@@ -119,13 +119,13 @@ export function LocalBusinessSchema({
     priceRange,
     image: {
       "@type": "ImageObject",
-      url: "https://fotz.pl/logo-fotz.jpg",
+      url: "https://www.fotz-studio.pl/logo-fotz.jpg",
       width: 200,
       height: 60,
     },
     logo: {
       "@type": "ImageObject",
-      url: "https://fotz.pl/logo-fotz.jpg",
+      url: "https://www.fotz-studio.pl/logo-fotz.jpg",
       width: 200,
       height: 60,
     },
@@ -243,7 +243,7 @@ export function BreadcrumbSchema({ items = [], data }: BreadcrumbSchemaProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name ?? item.label ?? "",
-      item: item.url ?? item.href ?? "",
+      ...((item.url ?? item.href) ? { item: new URL((item.url ?? item.href)!, "https://www.fotz-studio.pl").href.replace(/\/$/, "") } : {}),
     })),
   };
 
@@ -271,7 +271,7 @@ export function FAQSchema({ items = [], data, questions }: FAQSchemaProps) {
         question: item.name ?? "",
         answer: item.acceptedAnswer?.text ?? "",
       }))
-    : (questions ?? items ?? []).map((item: any) => ({
+    : (questions ?? items ?? []).map((item: { question?: string; answer?: string; name?: string; acceptedAnswer?: { text?: string } }) => ({
         question: item.question ?? item.name ?? "",
         answer: item.answer ?? item.acceptedAnswer?.text ?? "",
       }));
@@ -314,7 +314,7 @@ export function WebPageSchema({ title, description, url }: WebPageSchemaProps) {
       name: "Fotz Studio",
       logo: {
         "@type": "ImageObject",
-        url: "https://fotz.pl/logo-fotz.jpg",
+        url: "https://www.fotz-studio.pl/logo-fotz.jpg",
       },
     },
   };
@@ -352,8 +352,8 @@ export function ArticleSchema({
   title,
   headline,
   description,
-  url = "https://fotz.pl",
-  image = "https://fotz.pl/og-image.jpg",
+  url = "https://www.fotz-studio.pl",
+  image = "https://www.fotz-studio.pl/og-image.jpg",
   datePublished,
   dateModified,
   author = "Fotz Studio",
@@ -389,15 +389,15 @@ export function ArticleSchema({
     author: {
       "@type": "Organization",
       name: finalAuthor,
-      url: "https://fotz.pl",
+      url: "https://www.fotz-studio.pl",
     },
     publisher: {
       "@type": "Organization",
       name: "Fotz Studio",
-      url: "https://fotz.pl",
+      url: "https://www.fotz-studio.pl",
       logo: {
         "@type": "ImageObject",
-        url: "https://fotz.pl/logo-fotz.jpg",
+        url: "https://www.fotz-studio.pl/logo-fotz.jpg",
         width: 200,
         height: 60,
       },

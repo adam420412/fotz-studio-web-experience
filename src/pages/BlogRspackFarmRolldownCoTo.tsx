@@ -43,22 +43,22 @@ export default function BlogRspackFarmRolldownCoTo() {
     <Layout>
       <SEOHead
         title="Rspack, Farm.js, Rolldown i esbuild | Fotz Studio"
-        description="Bundlery Rust 2024: Rspack (webpack compat), Farm.js (najszybszy), Rolldown (przyszły Vite), esbuild/tsup (biblioteki), SWC (Babel replacement) …"
-        canonical="https://fotz.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024"
+        description="6 bundlerów i narzędzi build 2024 (Rspack/Farm/Rolldown/esbuild/SWC/Vite 6) — Rust speed, webpack migracja, Rolldown w Vite, Oxlint i jak wybrać."
+        canonical="https://www.fotz-studio.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024"
 
         keywords="Rspack, Farm.js, Rolldown i esbuild co to jest, Rspack, Farm.js, Rolldown i esbuild definicja, czym jest Rspack, Farm.js, Rolldown i esbuild, Rspack, Farm.js, Rolldown i esbuild przykłady, jak działa Rspack, Farm.js, Rolldown i esbuild, Rspack, Farm.js, Rolldown i esbuild znaczenie, Rspack, Farm.js, Rolldown i esbuild przewodnik"
       />
       <ArticleSchema
         title="Rspack, Farm.js, Rolldown i esbuild — bundlery Rust i narzędzia build 2024?"
         description="6 bundlerów i narzędzi build 2024 (Rspack/Farm/Rolldown/esbuild/SWC/Vite 6) — Rust speed, webpack migracja, Rolldown w Vite, Oxlint i jak wybrać."
-        url="https://fotz.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024"
+        url="https://www.fotz-studio.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Bundlery Rust 2024", url: "https://fotz.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Bundlery Rust 2024", url: "https://www.fotz-studio.pl/blog/rspack-farm-rolldown-esbuild-swc-bundlery-rust-narzedzia-build-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-orange-950 text-white py-20 px-4">

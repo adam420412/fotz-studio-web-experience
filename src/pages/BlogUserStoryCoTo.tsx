@@ -81,23 +81,23 @@ export default function BlogUserStoryCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="User Story | Fotz Studio"
-        description="User story — definicja, format 'Jako [rola]...', kryteria INVEST, acceptance criteria (Given/When/Then), story points i Definition of Done. Przewodnik…"
-        canonical="https://fotz.pl/blog/user-story-co-to"
+        title="User Story — co to jest i jak pisać historyjki użytkownika?"
+        description="Kompletny przewodnik po user story: format, kryteria INVEST, acceptance criteria, story points i DoD w metodologii Agile/Scrum."
+        canonical="https://www.fotz-studio.pl/blog/user-story-co-to"
 
         keywords="User Story co to jest, User Story definicja, czym jest User Story, User Story przykłady, jak działa User Story, User Story znaczenie, User Story przewodnik"
       />
       <ArticleSchema
         title="User Story — co to jest i jak pisać historyjki użytkownika?"
         description="Kompletny przewodnik po user story: format, kryteria INVEST, acceptance criteria, story points i DoD w metodologii Agile/Scrum."
-        url="https://fotz.pl/blog/user-story-co-to"
+        url="https://www.fotz-studio.pl/blog/user-story-co-to"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "User Story", url: "https://fotz.pl/blog/user-story-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "User Story", url: "https://www.fotz-studio.pl/blog/user-story-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -105,7 +105,7 @@ export default function BlogUserStoryCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "User Story", url: "https://fotz.pl" },
+              { name: "User Story", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             User Story — co to jest i jak pisać historyjki użytkownika?

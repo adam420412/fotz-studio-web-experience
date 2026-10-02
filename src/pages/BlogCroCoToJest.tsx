@@ -52,22 +52,22 @@ export default function BlogCroCoToJest() {
     <Layout>
       <SEOHead
         title="CRO — Conversion Rate Optimization co to jest? | Fotz.pl"
-        description="CRO (Conversion Rate Optimization) — co to jest, jak przeprowadzić audyt, testy A/B i które elementy strony optymalizować. Kompletny przewodnik po…"
-        canonical="https://fotz.pl/blog/cro-conversion-rate-optimization-co-to-jest"
+        description="Kompletny przewodnik po CRO: audyt, A/B testing, kluczowe metryki i elementy strony o najwyższym wpływie na konwersję."
+        canonical="https://www.fotz-studio.pl/blog/cro-conversion-rate-optimization-co-to-jest"
 
         keywords="CRO co to jest, CRO definicja, czym jest CRO, CRO przykłady, jak działa CRO, CRO znaczenie, CRO przewodnik"
       />
       <ArticleSchema
         title="CRO — Conversion Rate Optimization co to jest?"
         description="Kompletny przewodnik po CRO: audyt, A/B testing, kluczowe metryki i elementy strony o najwyższym wpływie na konwersję."
-        url="https://fotz.pl/blog/cro-conversion-rate-optimization-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/cro-conversion-rate-optimization-co-to-jest"
         datePublished="2024-02-09"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CRO", url: "https://fotz.pl/blog/cro-conversion-rate-optimization-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CRO", url: "https://www.fotz-studio.pl/blog/cro-conversion-rate-optimization-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-slate-900 text-white py-20 px-4">

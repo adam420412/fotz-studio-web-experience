@@ -107,7 +107,7 @@ export default function AgencjaMarketingowaWalbrzych() {
         <SEOHead
           title="Agencja marketingowa Wałbrzych - fotz studio | Marketing dla firm"
           description="Agencja marketingowa Wałbrzych. Fotz Studio — strony WWW, SEO, Google Ads, social media. Marketing dla produkcji i firm B2B. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa/walbrzych"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/walbrzych"
           keywords="agencja marketingowa wałbrzych, marketing internetowy wałbrzych, agencja reklamowa wałbrzych, seo wałbrzych"
         />
 
@@ -118,8 +118,8 @@ export default function AgencjaMarketingowaWalbrzych() {
           areaServed="Wałbrzych"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja marketingowa Wałbrzych", url: "https://fotz.pl/agencja-marketingowa/walbrzych" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja marketingowa Wałbrzych", url: "https://www.fotz-studio.pl/agencja-marketingowa/walbrzych" }
           ]}/>
         <FAQSchema items={faqItems} />
 
@@ -467,10 +467,10 @@ export default function AgencjaMarketingowaWalbrzych() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
-                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa-krakow" },
-                { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa-wroclaw" },
-                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa-gdansk" },
+                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
+                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa/krakow" },
+                { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa/wroclaw" },
+                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa/gdansk" },
               ].map((link) => (
                 <Link
                   key={link.to}

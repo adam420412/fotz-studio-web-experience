@@ -47,22 +47,22 @@ export default function BlogGoogleAdsCennik() {
     <Layout>
       <SEOHead
         title="Google Ads cennik 2025 — ile kosztuje reklama w Google? | Fotz.pl"
-        description="Google Ads cennik 2025: ile kosztuje reklama w Google? CPC, budżet minimalny, obsługa agencji. Porównanie kampanii Search, PMax, Display i Shopping…"
-        canonical="https://fotz.pl/blog/google-ads-cennik"
+        description="Kompleksowy przewodnik po kosztach Google Ads: CPC w poszczególnych branżach, budżety reklamowe, koszt obsługi agencji, porównanie typów kampanii."
+        canonical="https://www.fotz-studio.pl/blog/google-ads-cennik"
 
         keywords="Google Ads cennik 2025, Google Ads cennik 2025 poradnik, Google Ads cennik 2025 strategia, Google Ads cennik 2025 jak zrobić, Google Ads cennik 2025 marketing, Google Ads cennik 2025 przykłady, Google Ads cennik 2025 w Polsce"
       />
       <ArticleSchema
         title="Google Ads cennik 2025 — ile kosztuje reklama w Google?"
         description="Kompleksowy przewodnik po kosztach Google Ads: CPC w poszczególnych branżach, budżety reklamowe, koszt obsługi agencji, porównanie typów kampanii."
-        url="https://fotz.pl/blog/google-ads-cennik"
+        url="https://www.fotz-studio.pl/blog/google-ads-cennik"
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Google Ads cennik 2025", url: "https://fotz.pl/blog/google-ads-cennik" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Google Ads cennik 2025", url: "https://www.fotz-studio.pl/blog/google-ads-cennik" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 text-white py-20 px-4">

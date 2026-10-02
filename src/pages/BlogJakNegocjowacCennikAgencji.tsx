@@ -33,13 +33,13 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/jak-negocjowac-cennik-agencji";
+const CANONICAL = "https://www.fotz-studio.pl/blog/jak-negocjowac-cennik-agencji";
 
 export default function BlogJakNegocjowacCennikAgencji() {
   return (
     <Layout>
       <SEOHead
-        title="Jak negocjować cennik z agencją social media"
+        title="Jak negocjować cenę obsługi social media? Poradnik"
         description="Jak negocjować cennik z agencją social media bez psucia jakości pracy. Co wpływa na cenę, jakie są modele rozliczeń i na co uważać."
         canonical={CANONICAL}
         keywords="negocjacja cennik agencja social media, cennik agencji social media, jak negocjować z agencją, modele rozliczeń agencja"
@@ -53,8 +53,8 @@ export default function BlogJakNegocjowacCennikAgencji() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Jak negocjować cennik z agencją social media", url: CANONICAL },
         ]}
       />

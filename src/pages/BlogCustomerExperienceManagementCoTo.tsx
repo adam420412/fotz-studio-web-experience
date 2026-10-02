@@ -87,22 +87,22 @@ export default function BlogCustomerExperienceManagementCoTo() {
     <Layout>
       <SEOHead
         title="Customer Experience Management (CXM) | Fotz Studio"
-        description="Customer Experience Management — definicja, 6 etapów CX (discover, consider, purchase, use, retain, advocate), metryki NPS/CSAT/CES i narzędzia. Kompletny…"
-        canonical="https://fotz.pl/blog/customer-experience-management-co-to"
+        description="Kompletny przewodnik po CXM: 6 filarów CX journey, kluczowe metryki, narzędzia i jak budować kulturę CX."
+        canonical="https://www.fotz-studio.pl/blog/customer-experience-management-co-to"
 
         keywords="Customer Experience Management (CXM) co to jest, Customer Experience Management (CXM) definicja, czym jest Customer Experience Management (CXM), Customer Experience Management (CXM) przykłady, jak działa Customer Experience Management (CXM), Customer Experience Management (CXM) znaczenie, Customer Experience Management (CXM) przewodnik"
       />
       <ArticleSchema
         title="Customer Experience Management (CXM) — co to jest?"
         description="Kompletny przewodnik po CXM: 6 filarów CX journey, kluczowe metryki, narzędzia i jak budować kulturę CX."
-        url="https://fotz.pl/blog/customer-experience-management-co-to"
+        url="https://www.fotz-studio.pl/blog/customer-experience-management-co-to"
         datePublished="2024-01-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Customer Experience Management", url: "https://fotz.pl/blog/customer-experience-management-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Customer Experience Management", url: "https://www.fotz-studio.pl/blog/customer-experience-management-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -110,7 +110,7 @@ export default function BlogCustomerExperienceManagementCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Customer Experience Management", url: "https://fotz.pl" },
+              { name: "Customer Experience Management", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Customer Experience Management (CXM) — co to jest?

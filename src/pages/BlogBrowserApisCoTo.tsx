@@ -13,7 +13,7 @@ const faqItems = [
   },
   {
     question: "Web Share API i Clipboard API — natywne udostępnianie i schowek?",
-    answer: "Web Share API: natywny share dialog systemu operacyjnego. navigator.share({title: 'React Tips', text: 'Sprawdź ten artykuł', url: 'https://fotz.pl'}). Otwiera natywny share sheet iOS/Android. Udostępnianie do: Instagram, WhatsApp, SMS, email, AirDrop. navigator.canShare({files: [file]}) — sprawdź czy plik można udostępnić. Udostępnianie plików: const file = new File([blob], 'screenshot.png', {type: 'image/png'}). navigator.share({files: [file], title: 'Screenshot'}). Wymogi: HTTPS. User gesture (click event). Wsparcie: Chrome Android, Safari iOS i macOS, Edge. Brak Firefox desktop. Fallback: jeśli !navigator.share — własne przyciski social. React hook: function useShare() { return {canShare: !!navigator.share, share: navigator.share.bind(navigator)} }. Clipboard API: nowoczesny dostęp do schowka. await navigator.clipboard.writeText('tekst'). const text = await navigator.clipboard.readText(). Wymaga: user gesture do write. Permissions do read (prompt). Kopiowanie obrazów: const blob = await (await fetch(imageUrl)).blob(). await navigator.clipboard.write([new ClipboardItem({'image/png': blob})]). Stary API (synchroniczny): document.execCommand('copy') — deprecated. Nadal działający jako fallback. React: const copyToClipboard = async (text) => { await navigator.clipboard.writeText(text). setCopied(true). setTimeout(() => setCopied(false), 2000) }. useClipboard hook (react-use): prosty hook z state.",
+    answer: "Web Share API: natywny share dialog systemu operacyjnego. navigator.share({title: 'React Tips', text: 'Sprawdź ten artykuł', url: 'https://www.fotz-studio.pl'}). Otwiera natywny share sheet iOS/Android. Udostępnianie do: Instagram, WhatsApp, SMS, email, AirDrop. navigator.canShare({files: [file]}) — sprawdź czy plik można udostępnić. Udostępnianie plików: const file = new File([blob], 'screenshot.png', {type: 'image/png'}). navigator.share({files: [file], title: 'Screenshot'}). Wymogi: HTTPS. User gesture (click event). Wsparcie: Chrome Android, Safari iOS i macOS, Edge. Brak Firefox desktop. Fallback: jeśli !navigator.share — własne przyciski social. React hook: function useShare() { return {canShare: !!navigator.share, share: navigator.share.bind(navigator)} }. Clipboard API: nowoczesny dostęp do schowka. await navigator.clipboard.writeText('tekst'). const text = await navigator.clipboard.readText(). Wymaga: user gesture do write. Permissions do read (prompt). Kopiowanie obrazów: const blob = await (await fetch(imageUrl)).blob(). await navigator.clipboard.write([new ClipboardItem({'image/png': blob})]). Stary API (synchroniczny): document.execCommand('copy') — deprecated. Nadal działający jako fallback. React: const copyToClipboard = async (text) => { await navigator.clipboard.writeText(text). setCopied(true). setTimeout(() => setCopied(false), 2000) }. useClipboard hook (react-use): prosty hook z state.",
   },
   {
     question: "File System Access API — dostęp do plików na dysku z przeglądarki?",
@@ -42,23 +42,23 @@ export default function BlogBrowserApisCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Modern Browser APIs | Fotz Studio"
-        description="IndexedDB z Dexie.js (offline baza), Web Share API (natywny share), Clipboard API, File System Access API (OPFS), Web Bluetooth, Web Serial, WebOTP i Push…"
-        canonical="https://fotz.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024"
+        title="Modern Browser APIs — IndexedDB Dexie, Web Share, Clipboard, File System, WebBluetooth 2024?"
+        description="6 nowoczesnych Browser APIs (IndexedDB/Dexie/Web Share/Clipboard/FSAPI/Web Bluetooth) — offline storage, natywny share, dostęp do plików i sprzętu z przeglądarki."
+        canonical="https://www.fotz-studio.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024"
 
         keywords="Modern Browser APIs co to jest, Modern Browser APIs jak działa, Modern Browser APIs tutorial, Modern Browser APIs przykład, czym jest Modern Browser APIs, Modern Browser APIs dokumentacja, Modern Browser APIs przewodnik"
       />
       <ArticleSchema
         title="Modern Browser APIs — IndexedDB Dexie, Web Share, Clipboard, File System, WebBluetooth 2024?"
         description="6 nowoczesnych Browser APIs (IndexedDB/Dexie/Web Share/Clipboard/FSAPI/Web Bluetooth) — offline storage, natywny share, dostęp do plików i sprzętu z przeglądarki."
-        url="https://fotz.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024"
+        url="https://www.fotz-studio.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Modern Browser APIs", url: "https://fotz.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Modern Browser APIs", url: "https://www.fotz-studio.pl/blog/modern-browser-apis-indexeddb-dexie-web-share-clipboard-file-system-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-emerald-950 text-white py-20 px-4">

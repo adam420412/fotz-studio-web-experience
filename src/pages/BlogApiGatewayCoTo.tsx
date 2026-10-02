@@ -49,23 +49,23 @@ export default function BlogApiGatewayCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="API Gateway | Fotz Studio"
+        title="API Gateway — co to jest, Kong, AWS API Gateway, Traefik i Kubernetes Ingress?"
         description="API Gateway: co to jest, Kong vs AWS API Gateway vs Traefik, rate limiting, JWT auth, Kubernetes Ingress i Gateway API — jak wybrać i wdrożyć."
-        canonical="https://fotz.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress"
+        canonical="https://www.fotz-studio.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress"
 
         keywords="API Gateway co to jest, API Gateway jak działa, API Gateway tutorial, API Gateway przykład, czym jest API Gateway, API Gateway dokumentacja, API Gateway przewodnik"
       />
       <ArticleSchema
         title="API Gateway — co to jest, Kong, AWS API Gateway, Traefik i Kubernetes Ingress?"
         description="API Gateway: 6 kluczowych funkcji, 4 narzędzia (Kong/AWS/Traefik/Apigee), rate limiting algorytmy, JWT/OAuth2 auth i Kubernetes Gateway API."
-        url="https://fotz.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress"
+        url="https://www.fotz-studio.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress"
         datePublished="2024-04-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "API Gateway", url: "https://fotz.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "API Gateway", url: "https://www.fotz-studio.pl/blog/api-gateway-co-to-jest-kong-aws-traefik-kubernetes-ingress" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

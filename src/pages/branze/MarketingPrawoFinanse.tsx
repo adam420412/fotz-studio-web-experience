@@ -98,7 +98,7 @@ const MarketingPrawoFinanse = () => {
       <SEOHead
         title="Marketing dla Prawników i Finansów | Kancelarie, Doradcy | Fotz Studio"
         description="Marketing dla kancelarii prawnych i firm finansowych - strony WWW, LinkedIn, content marketing. Kampanie zgodne z regulacjami. Buduj autorytet eksperta."
-        canonical="https://fotz.pl/dla-kogo/prawo-finanse"
+        canonical="https://www.fotz-studio.pl/dla-kogo/prawo-finanse"
         keywords="marketing prawniczy, marketing kancelarii, agencja marketingowa kancelaria, marketing dla prawników, marketing finansowy, seo kancelaria prawna, linkedin dla prawników, content marketing prawo"
       />
 
@@ -109,9 +109,9 @@ const MarketingPrawoFinanse = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Prawo i Finanse", url: "https://fotz.pl/dla-kogo/prawo-finanse" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Prawo i Finanse", url: "https://www.fotz-studio.pl/dla-kogo/prawo-finanse" },
         ]}
       />
       <FAQSchema items={faqItems} />

@@ -69,9 +69,9 @@ export default function BlogKanbanCoTo() {
   return (
     <>
       <SEOHead
-        title="Kanban — co to jest? Metoda zarządzania pracą | fotz.pl"
+        title="Kanban — co to jest? Metoda zarządzania pracą | FOTZ Studio"
         description="Kanban co to jest — wyjaśniamy czym jest metodologia Kanban, tablica Kanban, WIP limits, metryki (lead time, cycle time), różnica vs Scrum i jak wdrożyć Kanban."
-        canonical="https://fotz.pl/blog/kanban-co-to"
+        canonical="https://www.fotz-studio.pl/blog/kanban-co-to"
 
         keywords="Kanban co to jest, Kanban definicja, czym jest Kanban, Kanban przykłady, jak działa Kanban, Kanban znaczenie, Kanban przewodnik"
       />
@@ -80,7 +80,7 @@ export default function BlogKanbanCoTo() {
         description="Czym jest Kanban, zasady (WIP limits, wizualizacja), tablica Kanban, metryki (lead time, cycle time), porównanie ze Scrum i wdrożenie."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/kanban-co-to"
+        url="https://www.fotz-studio.pl/blog/kanban-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

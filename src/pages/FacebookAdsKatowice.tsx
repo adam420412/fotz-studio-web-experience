@@ -48,7 +48,7 @@ export default function FacebookAdsKatowice() {
         <SEOHead
           title="Agencja Facebook Ads Katowice — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Katowice — agencja Fotz.pl. Kampanie Meta Ads dla firm z Katowic i Śląska. Od 400 zł/mies. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/facebook-ads/katowice"
+          canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/katowice"
           keywords="facebook ads katowice, meta ads katowice, reklamy facebook katowice, agencja facebook ads katowice, kampanie facebook katowice, instagram ads katowice, facebook ads dla firm katowice, reklama na facebooku katowice, meta ads agencja katowice, facebook ads cennik katowice"
         />
 
@@ -60,10 +60,10 @@ export default function FacebookAdsKatowice() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-            { name: "Facebook Ads Katowice", url: "https://fotz.pl/performance-marketing/facebook-ads/katowice" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads Katowice", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/katowice" },
           ]}/>
 
         <FAQSchema items={faqItems} />
@@ -398,7 +398,7 @@ export default function FacebookAdsKatowice() {
               {[
                 { label: "Facebook Ads Łódź", to: "/performance-marketing/facebook-ads/lodz" },
                 { label: "Google Ads Katowice", to: "/performance-marketing/google-ads/katowice" },
-                { label: "Pozycjonowanie Katowice", to: "/uslugi/seo/katowice" },
+                { label: "Pozycjonowanie Katowice", to: "/uslugi/pozycjonowanie/katowice" },
                 { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
                 { label: "Social media marketing", to: "/social-media" },
               ].map((link) => (

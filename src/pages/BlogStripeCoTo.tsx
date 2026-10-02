@@ -42,23 +42,23 @@ export default function BlogStripeCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Stripe, Paddle, Przelewy24 | Fotz Studio"
+        title="Stripe, Paddle, Przelewy24 — integracja płatności Next.js TypeScript 2024?"
         description="Stripe Checkout, Payment Intents, Subscriptions, Webhooks, Connect, Paddle (MoR), Lemon Squeezy, Przelewy24 — płatności webowe w Next.js i Node.js 2024."
-        canonical="https://fotz.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
 
         keywords="Stripe, Paddle, Przelewy24 co to jest, Stripe, Paddle, Przelewy24 jak działa, Stripe, Paddle, Przelewy24 tutorial, Stripe, Paddle, Przelewy24 przykład, czym jest Stripe, Paddle, Przelewy24, Stripe, Paddle, Przelewy24 dokumentacja, Stripe, Paddle, Przelewy24 przewodnik"
       />
       <ArticleSchema
         title="Stripe, Paddle, Przelewy24 — integracja płatności Next.js TypeScript 2024?"
         description="6 rozwiązań płatności (Stripe/Paddle/Lemon Squeezy/P24/Tpay/PayU) — Checkout, Payment Intents, Subscriptions, Webhooks i Stripe Connect dla marketplace."
-        url="https://fotz.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Stripe i Płatności", url: "https://fotz.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Stripe i Płatności", url: "https://www.fotz-studio.pl/blog/stripe-paddle-przelewy24-platnosci-nextjs-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

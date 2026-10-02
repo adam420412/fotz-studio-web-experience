@@ -40,23 +40,23 @@ export default function BlogBunDenoCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Bun vs Deno vs Node.js | Fotz Studio"
+        title="Bun vs Deno vs Node.js — co to jest, porównanie JavaScript runtimes 2024?"
         description="Bun, Deno i Node.js 22 — porównanie JavaScript runtimes: TypeScript native, package manager, wydajność, bezpieczeństwo i kiedy co wybrać w 2024."
-        canonical="https://fotz.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac"
+        canonical="https://www.fotz-studio.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac"
 
         keywords="Bun vs Deno vs Node.js co to jest, Bun vs Deno vs Node.js jak działa, Bun vs Deno vs Node.js tutorial, Bun vs Deno vs Node.js przykład, czym jest Bun vs Deno vs Node.js, Bun vs Deno vs Node.js dokumentacja, Bun vs Deno vs Node.js przewodnik"
       />
       <ArticleSchema
         title="Bun vs Deno vs Node.js — co to jest, porównanie JavaScript runtimes 2024?"
         description="4 JavaScript runtimes (Bun/Deno/Node.js/CF Workers) — Zig/Rust/C++, TypeScript native, package manager, testy wbudowane, szybkość i kiedy co wybrać."
-        url="https://fotz.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac"
+        url="https://www.fotz-studio.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Bun vs Deno vs Node.js", url: "https://fotz.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Bun vs Deno vs Node.js", url: "https://www.fotz-studio.pl/blog/bun-deno-nodejs-porownanie-javascript-runtime-co-wybrac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-emerald-950 text-white py-20 px-4">

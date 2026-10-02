@@ -75,7 +75,7 @@ export default function BlogLandingPageVsStrona() {
     headline: "Landing page vs strona internetowa — co wybrać dla swojej firmy?",
     description:
       "Kompleksowy przewodnik: landing page vs strona internetowa. Dowiedz się jaką wybrać dla kampanii reklamowej, e-commerce, portfolia. Porownianie cen, czasów realizacji i konwersji.",
-    image: "https://fotz.pl/og-landing-vs-strona.jpg",
+    image: "https://www.fotz-studio.pl/og-image.jpg",
     author: {
       "@type": "Organization",
       name: "Fotz.pl",
@@ -85,7 +85,7 @@ export default function BlogLandingPageVsStrona() {
       name: "Fotz.pl",
       logo: {
         "@type": "ImageObject",
-        url: "https://fotz.pl/logo.png",
+        url: "https://www.fotz-studio.pl/logo-fotz.jpg",
       },
     },
     datePublished: "2026-04-12",
@@ -96,8 +96,8 @@ export default function BlogLandingPageVsStrona() {
     <Layout>
       <SEOHead
         title="Landing page vs strona internetowa | Fotz Studio"
-        description="Kompleksowy przewodnik: landing page vs strona internetowa. Dowiedz się jaką wybrać dla kampanii reklamowej, e-commerce, portfolia. Porownianie cen…"
-        canonical="https://fotz.pl/blog/landing-page-vs-strona-internetowa"
+        description="Kompleksowy przewodnik: landing page vs strona internetowa. Dowiedz się, co wybrać dla kampanii reklamowej, e-commerce lub portfolio. Porównanie funkcjonalności, kosztów, czasu realizacji i potencjału konwersji."
+        canonical="https://www.fotz-studio.pl/blog/landing-page-vs-strona-internetowa"
         ogType="article"
 
         keywords="Landing page vs strona internetowa, Landing page vs strona internetowa co to jest, Landing page vs strona internetowa jak działa, Landing page vs strona internetowa definicja, Landing page vs strona internetowa przykłady, Landing page vs strona internetowa poradnik, Landing page vs strona internetowa przewodnik"

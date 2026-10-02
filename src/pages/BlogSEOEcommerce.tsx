@@ -34,23 +34,23 @@ const BlogSEOEcommerce = () => {
     <>
       <SEOHead
         title="SEO dla Sklepów Internetowych — Jak Pozycjonować E-commerce?"
-        description="SEO dla e-commerce — optymalizacja sklepów internetowych: SEO kart produktów, kategorii, link building i techniczne SEO. Jak pozycjonować sklep w Google?…"
+        description="Kompletny poradnik SEO dla e-commerce. Strategie pozycjonowania sklepów internetowych."
         ogType="article"
-        canonical="https://fotz.pl/seo/ecommerce"
+        canonical="https://www.fotz-studio.pl/seo/ecommerce"
         keywords="seo e-commerce, pozycjonowanie sklepu internetowego, seo dla sklepów, optymalizacja e-commerce, seo produktów"
       />
       <ArticleSchema
         title="SEO dla sklepów internetowych - jak pozycjonować e-commerce"
         description="Kompletny poradnik SEO dla e-commerce. Strategie pozycjonowania sklepów internetowych."
-        url="https://fotz.pl/seo/ecommerce"
+        url="https://www.fotz-studio.pl/seo/ecommerce"
         datePublished="2025-01-04"
         dateModified="2026-04-01"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SEO e-commerce", url: "https://fotz.pl/seo/ecommerce" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SEO e-commerce", url: "https://www.fotz-studio.pl/seo/ecommerce" },
         ]}/>
       <FAQSchema items={faqItems} />
       

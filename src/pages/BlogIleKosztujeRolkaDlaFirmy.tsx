@@ -27,7 +27,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/ile-kosztuje-rolka-dla-firmy";
+const CANONICAL = "https://www.fotz-studio.pl/blog/ile-kosztuje-rolka-dla-firmy";
 
 export default function BlogIleKosztujeRolkaDlaFirmy() {
   return (
@@ -47,8 +47,8 @@ export default function BlogIleKosztujeRolkaDlaFirmy() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Ile kosztuje rolka dla firmy", url: CANONICAL },
         ]}
       />

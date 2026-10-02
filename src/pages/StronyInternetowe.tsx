@@ -333,7 +333,7 @@ const StronyInternetowe = () => {
       <SEOHead
         title="Strony Internetowe — Tworzenie i Projektowanie Stron WWW dla Firm"
         description="Strony internetowe dla firm od Fotz Studio — szybkie, nowoczesne, zoptymalizowane pod SEO. Tworzymy strony www, sklepy e-commerce i landing page. Wycena gratis."
-        canonical="https://fotz.pl/uslugi/strony-internetowe"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe"
         keywords="strony internetowe, tworzenie stron internetowych, projektowanie stron www, strony internetowe dla firm, nowoczesne strony internetowe, profesjonalne strony internetowe, wykonanie strony internetowej, responsywna strona www, wordpress, agencja stron internetowych, strona internetowa dla firmy, landing page, sklep internetowy"
       />
       
@@ -345,9 +345,9 @@ const StronyInternetowe = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
         ]}/>
       
       <FAQSchema 
@@ -360,7 +360,7 @@ const StronyInternetowe = () => {
       <Layout>
         <PageBreadcrumbs items={[
           { name: "Usługi", url: "/uslugi" },
-          { name: "Strony Internetowe", url: "https://fotz.pl" },
+          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl" },
         ]}/>
         
         {/* Hero Section */}
@@ -1270,7 +1270,7 @@ const StronyInternetowe = () => {
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
             </div>
               </FadeInView>
             </div>

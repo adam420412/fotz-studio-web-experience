@@ -33,7 +33,7 @@ export default function BlogSEOvsGoogleAds() {
       <SEOHead
         title="SEO vs Google Ads - Porównanie pozycjonowania i reklamy | Fotz"
         description="Porównanie SEO i Google Ads: różnice, zalety, wady i kiedy wybrać każdą strategię. Przewodnik dla firm chcących zwiększyć widoczność online."
-        canonical="https://fotz.pl/blog/seo-vs-google-ads"
+        canonical="https://www.fotz-studio.pl/blog/seo-vs-google-ads"
 
         keywords="SEO vs Google Ads - Porównanie pozycjonowania i reklamy, SEO vs Google Ads - Porównanie pozycjonowania i reklamy poradnik, SEO vs Google Ads - Porównanie pozycjonowania i reklamy strategia, SEO vs Google Ads - Porównanie pozycjonowania i reklamy jak zrobić, SEO vs Google Ads - Porównanie pozycjonowania i reklamy marketing, SEO vs Google Ads - Porównanie pozycjonowania i reklamy przykłady, SEO vs Google Ads - Porównanie pozycjonowania i reklamy w Polsce"
       />
@@ -45,7 +45,7 @@ export default function BlogSEOvsGoogleAds() {
       <ArticleSchema
         headline="SEO vs Google Ads - Kompleksowe porównanie pozycjonowania i reklamy"
         description="Poznaj różnice między SEO a Google Ads, zalety każdej strategii i dowiedz się, kiedy wybrać każdą z nich."
-        image="https://fotz.pl/og-seo-vs-ads.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         author="Fotz Studio"
         datePublished="2025-02-15"
         dateModified="2025-07-10"
@@ -492,9 +492,9 @@ export default function BlogSEOvsGoogleAds() {
             <p className="text-gray-700 mb-6 text-lg">
               Fotz Studio specjalizuje się w SEO, Google Ads i złożonych strategiach marketingowych. Pomożemy Ci wybrać najlepsze rozwiązanie dla Twojego biznesu.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
               Skontaktuj się z nami
-            </button>
+            </a>
           </section>
         </article>
         <RelatedArticles currentArticleId="seo-vs-google-ads" />

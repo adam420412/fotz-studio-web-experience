@@ -214,7 +214,7 @@ export default function FotografiaZDrona() {
       <SEOHead
         title="Fotografia z Drona Poznań — Zdjęcia Lotnicze 4K i Film Dronem"
         description="Fotografia z drona Poznań — profesjonalne zdjęcia z drona 4K, film dronem, ujęcia lotnicze dla firm, deweloperów i agencji nieruchomości. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/fotografia-z-drona"
+        canonical="https://www.fotz-studio.pl/uslugi/fotografia-z-drona"
         keywords="fotografia z drona, zdjęcia z drona, film z drona, filmowanie dronem, fotografia lotnicza, usługi dronem"
       />
 
@@ -223,9 +223,9 @@ export default function FotografiaZDrona() {
         description="Profesjonalne zdjęcia i filmy z drona. Ujęcia z lotu ptaka dla nieruchomości, przemysłu, turystyki i eventów."
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Fotografia z drona", url: "https://fotz.pl/uslugi/fotografia-z-drona" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Fotografia z drona", url: "https://www.fotz-studio.pl/uslugi/fotografia-z-drona" }
         ]}/>
       <FAQSchema items={faqItems} />
 

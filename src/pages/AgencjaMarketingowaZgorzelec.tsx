@@ -39,9 +39,9 @@ export default function AgencjaMarketingowaZgorzelec() {
     name: "Agencja Marketingowa Zgorzelec - FOTZ",
     description: "Profesjonalna agencja marketingowa w Zgorzelcu specjalizujaca sie w SEO, tworzeniu stron internetowych i marketingu cyfrowym dla firm lokalnych",
     areaServed: "Zgorzelec",
-    image: "https://fotz.pl/og-image.jpg",
-    url: "https://fotz.pl/agencja-marketingowa/zgorzelec",
-    telephone: "+48 (kontakt)",
+    image: "https://www.fotz-studio.pl/og-image.jpg",
+    url: "https://www.fotz-studio.pl/agencja-marketingowa/zgorzelec",
+    telephone: "+48 790 814 814",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Zgorzelec",
@@ -55,8 +55,8 @@ export default function AgencjaMarketingowaZgorzelec() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Zgorzelec - SEO, Strony WWW | FOTZ"
-        description="Agencja marketingowa w Zgorzelcu oferuje profesjonalne usluge SEO, tworzenie stron internetowych, Google Ads i marketing cyfrowy dla firm lokalnych…"
-        canonical="https://fotz.pl/agencja-marketingowa/zgorzelec"
+        description="Agencja marketingowa w Zgorzelcu oferuje usługi SEO, tworzenie stron internetowych, Google Ads i marketing cyfrowy dla firm lokalnych i działających w regionie przygranicznym."
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/zgorzelec"
         keywords="agencja marketingowa zgorzelec, marketing internetowy zgorzelec, agencja reklamowa zgorzelec, seo zgorzelec"
       />
       
@@ -79,12 +79,12 @@ export default function AgencjaMarketingowaZgorzelec() {
               Kompleksowe usluge marketingu cyfrowego dla firm z Zgorzelca i regionu przygranicznego
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
                 Umawiaj Konsultacje
-              </button>
-              <button className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                Poznam Oferte
-              </button>
+              </a>
+              <a href="/uslugi" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                Poznaj ofertę
+              </a>
             </div>
           </div>
         </section>
@@ -275,9 +275,9 @@ export default function AgencjaMarketingowaZgorzelec() {
                     Raport miesięczny
                   </li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                   Wybierz Plan
-                </button>
+                </a>
               </div>
 
               {/* Professional Package */}
@@ -313,9 +313,9 @@ export default function AgencjaMarketingowaZgorzelec() {
                     Raport szczegółowy
                   </li>
                 </ul>
-                <button className="w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-white text-blue-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
                   Wybierz Plan
-                </button>
+                </a>
               </div>
 
               {/* Enterprise Package */}
@@ -348,9 +348,9 @@ export default function AgencjaMarketingowaZgorzelec() {
                     Wsparcie 24/7
                   </li>
                 </ul>
-                <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                   Umawiaj Spotkanie
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -434,12 +434,12 @@ export default function AgencjaMarketingowaZgorzelec() {
               Skontaktuj sie z naszą agencją marketingową w Zgorzelcu. Oferujemy bezpłatną konsultacje i diagnose Twojej obecnej strategii marketingowej.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
                 Bezplatna Konsultacja
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+              </a>
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
                 Skontaktuj Sie
-              </button>
+              </a>
             </div>
           </div>
         </section>

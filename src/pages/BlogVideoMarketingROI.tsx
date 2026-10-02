@@ -119,24 +119,24 @@ export default function BlogVideoMarketingROI() {
   return (
     <>
       <SEOHead
-        title="ROI video marketingu - czy wideo się opłaca? Dane i przykłady…"
+        title="ROI video marketingu - czy wideo się opłaca? Dane, przykłady"
         description="Czy wideo marketing się opłaca? Tak! Statystyki pokazują 93% firm zarabia na video. Sprawdź ROI dla różnych formatów, platform i branż. Poradnik 2025."
-        canonical="https://fotz.pl/blog/video-marketing-roi"
+        canonical="https://www.fotz-studio.pl/blog/video-marketing-roi"
 
         keywords="ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 poradnik, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 strategia, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 jak zrobić, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 marketing, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 przykłady, ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025 w Polsce"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           {
             name: "ROI video marketingu",
-            url: "https://fotz.pl/blog/video-marketing-roi",
+            url: "https://www.fotz-studio.pl/blog/video-marketing-roi",
           },
         ]}/>
       <ArticleSchema
         headline="ROI video marketingu - czy wideo się opłaca? Dane i przykłady 2025"
         description="Kompleksny poradnik ROI video marketingu w Polsce. Statystyki efektywności, porównanie formatów, przykłady biznesowe i strategie maksymalizowania zwrotu z wideo."
-        image="https://fotz.pl/img/blog-roi-video-marketing.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         datePublished="2025-04-12"
         author="Fotz Studio"
       />

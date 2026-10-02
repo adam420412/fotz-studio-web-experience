@@ -51,15 +51,15 @@ export default function BlogPozycjonowanieDlaMalychFirm() {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie dla malych firm | Fotz Studio"
+        title="Pozycjonowanie dla malych firm — jak zaczac SEO z malym budzetem?"
         description="Praktyczny przewodnik po SEO dla małych firm. Dowiedz się, jak zacząć pozycjonowanie z ograniczonym budżetem, optymalizować stronę i zdobywać klientów online."
-        canonical="https://fotz.pl/blog/pozycjonowanie-dla-malych-firm"
+        canonical="https://www.fotz-studio.pl/blog/pozycjonowanie-dla-malych-firm"
         keywords="pozycjonowanie małych firm, seo dla małych firm, pozycjonowanie strony małej firmy, tanie pozycjonowanie, seo lokalne dla firm, pozycjonowanie lokalne małej firmy, seo dla małego biznesu"
       />
       <ArticleSchema
         title="Pozycjonowanie dla malych firm — jak zaczac SEO z malym budzetem?"
         description="Praktyczny przewodnik po SEO dla małych firm. Dowiedz się, jak zacząć pozycjonowanie z ograniczonym budżetem, optymalizować stronę i zdobywać klientów online."
-        image="https://fotz.pl/og-seo-small-business.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         author="Fotz Studio"
         publishDate="2026-04-12"
       />

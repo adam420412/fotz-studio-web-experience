@@ -56,9 +56,9 @@ const BlogInstagramDlaFirmy = () => {
     <>
       <SEOHead
         title="Instagram dla firmy - jak prowadzić profil firmowy? Poradnik 2025"
-        description="Jak efektywnie prowadzić Instagram dla biznesu? Strategie, algorytm, content formaty, płatne vs organiczne. Praktyczny poradnik marketingu na Instagramie…"
+        description="Jak efektywnie prowadzić Instagram dla biznesu? Strategie, algorytm, formaty contentu, działania płatne i organiczne. Praktyczny poradnik marketingu na Instagramie dla firm na 2025 rok."
         ogType="article"
-        canonical="https://fotz.pl/blog/instagram-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/instagram-dla-firmy"
         keywords="Instagram dla firmy, prowadzenie Instagram, marketing na Instagramie, Instagram business, social media marketing"
         schemaJson={[
           {
@@ -76,7 +76,7 @@ const BlogInstagramDlaFirmy = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -86,8 +86,8 @@ const BlogInstagramDlaFirmy = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Instagram dla firmy" }
             ]
           },
@@ -475,7 +475,7 @@ const BlogInstagramDlaFirmy = () => {
                     <h4 className="font-semibold mb-2">Social Media Marketing</h4>
                     <p className="text-sm text-muted-foreground">Zarządzanie mediami społecznościowymi</p>
                   </Link>
-                  <Link to="/content-marketing/tresci-seo" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
+                  <Link to="/content-marketing/strategia" className="p-4 bg-card rounded-xl border border-border/50 hover:border-primary/50 transition-all">
                     <h4 className="font-semibold mb-2">Content Marketing</h4>
                     <p className="text-sm text-muted-foreground">Tworzenie zawartości dla biznesu</p>
                   </Link>

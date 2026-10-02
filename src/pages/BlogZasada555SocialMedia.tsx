@@ -33,7 +33,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/zasada-5-5-5-social-media";
+const CANONICAL = "https://www.fotz-studio.pl/blog/zasada-5-5-5-social-media";
 
 export default function BlogZasada555SocialMedia() {
   return (
@@ -53,8 +53,8 @@ export default function BlogZasada555SocialMedia() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Zasada 5-5-5 w social media: co to jest i czy naprawdę działa", url: CANONICAL },
         ]}
       />

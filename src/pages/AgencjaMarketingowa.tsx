@@ -171,12 +171,12 @@ export default function AgencjaMarketingowa() {
       <SEOHead
         title="Agencja marketingowa Poznań — Fotz Studio | Strony, SEO, Reklamy"
         description="Agencja marketingowa Poznań: strategia, strony WWW, SEO, Google Ads, social media, branding i video. Fotz Studio pomaga firmom rosnąć."
-        canonical="https://fotz.pl/agencja-marketingowa"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa"
         keywords="agencja marketingowa Poznań, Fotz Studio, strony internetowe, SEO, reklamy Google Ads, branding, social media marketing, produkcja video"
         og={{
           title: "Agencja marketingowa Poznań — Fotz Studio",
           description: "Kompleksowy marketing dla firm: strategia, strony, SEO, reklamy, branding, social media i produkcja video.",
-          url: "https://fotz.pl/agencja-marketingowa",
+          url: "https://www.fotz-studio.pl/agencja-marketingowa",
           type: "website",
         }}
         disableTitleTruncation
@@ -194,8 +194,8 @@ export default function AgencjaMarketingowa() {
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
         ]}
       />
 

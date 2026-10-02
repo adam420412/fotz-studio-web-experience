@@ -85,28 +85,28 @@ export default function BlogSocialListeningCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Social Listening | Fotz Studio"
-        description="Social listening — definicja, różnica vs social monitoring, 6 przypadków użycia, narzędzia (Brand24, Brandwatch) i kluczowe metryki. Kompletny przewodnik…"
-        canonical="https://fotz.pl/blog/social-listening-co-to"
+        title="Social Listening — co to jest i jak nasłuchiwać mediów społecznościowych?"
+        description="Kompletny przewodnik po social listening: 6 use cases, 5 narzędzi, kluczowe metryki i różnica vs social monitoring."
+        canonical="https://www.fotz-studio.pl/blog/social-listening-co-to"
 
         keywords="Social Listening co to jest, Social Listening definicja, czym jest Social Listening, Social Listening w marketingu, Social Listening przykłady, jak działa Social Listening, Social Listening strategia"
       />
       <ArticleSchema
         title="Social Listening — co to jest i jak nasłuchiwać mediów społecznościowych?"
         description="Kompletny przewodnik po social listening: 6 use cases, 5 narzędzi, kluczowe metryki i różnica vs social monitoring."
-        url="https://fotz.pl/blog/social-listening-co-to"
+        url="https://www.fotz-studio.pl/blog/social-listening-co-to"
         datePublished="2024-02-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Social Listening", url: "https://fotz.pl/blog/social-listening-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Social Listening", url: "https://www.fotz-studio.pl/blog/social-listening-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Social Listening", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Social Listening", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Social Listening — co to jest i jak nasłuchiwać internetu?
           </h1>

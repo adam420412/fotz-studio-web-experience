@@ -160,9 +160,9 @@ export default function BlogUXAudit() {
   return (
     <>
       <SEOHead
-        title="Audyt UX strony internetowej - co to jest i jak przeprowadzić?…"
+        title="Audyt UX strony internetowej - co to jest i jak go zrobić?"
         description="Audyt UX strony — co to jest, jak samodzielnie przeprowadzić, jakie narzędzia használować i co zrobić z wynikami. Poradnik pełny dla wskaźników konwersji."
-        canonical="https://fotz.pl/blog/audyt-ux-strony"
+        canonical="https://www.fotz-studio.pl/blog/audyt-ux-strony"
 
         keywords="Audyt UX strony internetowej - co to jest, Audyt UX strony internetowej - definicja, czym jest Audyt UX strony internetowej -, Audyt UX strony internetowej - przykłady, jak działa Audyt UX strony internetowej -, Audyt UX strony internetowej - znaczenie, Audyt UX strony internetowej - przewodnik"
       />
@@ -171,9 +171,9 @@ export default function BlogUXAudit() {
         description="Co to jest audyt UX, jakie elementy sprawdzać, jakie narzędzia wykorzystać i jak interpretować wyniki w celu optymalizacji konwersji."
         datePublished="2025-03-15"
         dateModified="2025-04-12"
-        url="https://fotz.pl/blog/audyt-ux-strony"
+        url="https://www.fotz-studio.pl/blog/audyt-ux-strony"
       />
-      <BreadcrumbSchema items={breadcrumbs.map(b => ({ name: b.label, url: b.href || "https://fotz.pl" }))} />
+      <BreadcrumbSchema items={breadcrumbs.map(b => ({ name: b.label, url: b.href || "https://www.fotz-studio.pl" }))} />
 
       <Layout>
         <PageBreadcrumbs items={breadcrumbs} />

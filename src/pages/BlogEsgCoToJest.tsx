@@ -87,21 +87,21 @@ export default function BlogEsgCoToJest() {
       <SEOHead
         title="ESG — co to jest i jak wpływa na biznes? | Fotz.pl"
         description="ESG (Environmental, Social, Governance) — trzy filary, raportowanie, ratingi ESG i znaczenie dla firm. Kompletny przewodnik po strategii zrównoważonego rozwoju."
-        canonical="https://fotz.pl/blog/esg-co-to-jest-environmental-social-governance"
+        canonical="https://www.fotz-studio.pl/blog/esg-co-to-jest-environmental-social-governance"
 
         keywords="ESG co to jest, ESG definicja, czym jest ESG, ESG przykłady, jak działa ESG, ESG znaczenie, ESG przewodnik"
       />
       <ArticleSchema
         title="ESG — co to jest i jak wpływa na biznes?"
         description="Kompletny przewodnik po ESG: trzy filary, raportowanie, ratingi i znaczenie dla firm i inwestorów."
-        url="https://fotz.pl/blog/esg-co-to-jest-environmental-social-governance"
+        url="https://www.fotz-studio.pl/blog/esg-co-to-jest-environmental-social-governance"
         datePublished="2024-02-26"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "ESG", url: "https://fotz.pl/blog/esg-co-to-jest-environmental-social-governance" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "ESG", url: "https://www.fotz-studio.pl/blog/esg-co-to-jest-environmental-social-governance" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 text-white py-20 px-4">

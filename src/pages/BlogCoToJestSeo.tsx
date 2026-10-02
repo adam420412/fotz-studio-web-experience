@@ -45,8 +45,8 @@ const BlogCoToJestSeo = () => {
     <Layout>
       <SEOHead
         title="Co to jest SEO? Pozycjonowanie stron — przewodnik dla firm"
-        description="Co to jest SEO i jak działa pozycjonowanie? Kompletny przewodnik po SEO dla właścicieli firm — on-page, off-page, SEO techniczne, link building i efekty…"
-        canonical="https://fotz.pl/blog/co-to-jest-seo"
+        description="Kompletny przewodnik po SEO dla właścicieli firm. On-page, off-page, SEO techniczne, link building i praktyczne wskazówki na start."
+        canonical="https://www.fotz-studio.pl/blog/co-to-jest-seo"
 
         keywords="co to jest, definicja, czym jest, w marketingu, przykłady, jak działa, strategia"
       />
@@ -55,12 +55,12 @@ const BlogCoToJestSeo = () => {
         description="Kompletny przewodnik po SEO dla właścicieli firm. On-page, off-page, SEO techniczne, link building i praktyczne wskazówki na start."
         author="Fotz Studio"
         datePublished="2026-03-15"
-        url="https://fotz.pl/blog/co-to-jest-seo"
+        url="https://www.fotz-studio.pl/blog/co-to-jest-seo"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Co to jest SEO?", url: "https://fotz.pl/blog/co-to-jest-seo" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Co to jest SEO?", url: "https://www.fotz-studio.pl/blog/co-to-jest-seo" },
         ]}/>
       <FAQSchema items={faqItems} />
 

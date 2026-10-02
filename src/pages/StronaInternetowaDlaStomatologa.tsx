@@ -63,8 +63,8 @@ export default function StronaInternetowaDlaStomatologa() {
     <>
       <SEOHead
         title="Strona internetowa dla stomatologa — rezerwacje, SEO, RODO"
-        description="Strona internetowa dla stomatologa — rezerwacje wizyt online, SEO lokalne, galeria, cennik usług. Profesjonalne strony dla gabinetów stomatologicznych od…"
-        canonical="https://fotz.pl/uslugi/strona-internetowa-dla-stomatologa"
+        description="Strona internetowa dla stomatologa — rezerwacje wizyt online, SEO lokalne, galeria, cennik usług i zgodność z RODO. Profesjonalne strony dla gabinetów stomatologicznych od 2000 zł."
+        canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-stomatologa"
         keywords="strona internetowa dla stomatologa, strona www gabinetu dentystycznego, strona stomatologa, strona dentysty online"
       />
       <ServiceSchema
@@ -107,8 +107,10 @@ export default function StronaInternetowaDlaStomatologa() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-sky-600 hover:bg-sky-700 text-white">
-                Bezpłatna wycena strony <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna wycena strony <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>

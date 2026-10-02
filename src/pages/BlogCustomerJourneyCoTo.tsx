@@ -65,9 +65,9 @@ export default function BlogCustomerJourneyCoTo() {
   return (
     <>
       <SEOHead
-        title="Customer Journey — co to jest? Mapa podrozy klienta | fotz.pl"
+        title="Customer Journey — co to jest? Mapa podrozy klienta | FOTZ Studio"
         description="Customer Journey co to jest — wyjasnamy czym jest podrozz klienta, jak stworzyc Customer Journey Map, etapy, touchpointy i metryki."
-        canonical="https://fotz.pl/blog/customer-journey-co-to"
+        canonical="https://www.fotz-studio.pl/blog/customer-journey-co-to"
 
         keywords="Customer Journey co to jest, Customer Journey definicja, czym jest Customer Journey, Customer Journey przykłady, jak działa Customer Journey, Customer Journey znaczenie, Customer Journey przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogCustomerJourneyCoTo() {
         description="Czym jest Customer Journey (podrozz klienta), jak stworzyc Customer Journey Map, etapy (Awareness-Advocacy), touchpointy i metryki."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/customer-journey-co-to"
+        url="https://www.fotz-studio.pl/blog/customer-journey-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

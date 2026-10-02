@@ -86,7 +86,7 @@ export default function BlogSmartBiddingCoTo() {
       <SEOHead
         title="Smart Bidding — co to jest? Inteligentne stawki Google Ads"
         description="Smart Bidding co to jest — wyjaśniamy czym są inteligentne stawki Google Ads, strategie (Target CPA, ROAS), kiedy używać i jak działa learning period."
-        canonical="https://fotz.pl/blog/smart-bidding-co-to"
+        canonical="https://www.fotz-studio.pl/blog/smart-bidding-co-to"
 
         keywords="Smart Bidding co to jest, Smart Bidding definicja, czym jest Smart Bidding, Smart Bidding przykłady, jak działa Smart Bidding, Smart Bidding znaczenie, Smart Bidding przewodnik"
       />
@@ -95,7 +95,7 @@ export default function BlogSmartBiddingCoTo() {
         description="Czym jest Smart Bidding, strategie (Target CPA, ROAS, Maximize), kiedy używać, learning period i różnica vs manual CPC i Performance Max."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/smart-bidding-co-to"
+        url="https://www.fotz-studio.pl/blog/smart-bidding-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

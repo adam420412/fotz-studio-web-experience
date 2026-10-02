@@ -47,22 +47,22 @@ export default function BlogIpoCoToJest() {
     <Layout>
       <SEOHead
         title="IPO — co to jest i jak wygląda debiut giełdowy? | Fotz.pl"
-        description="IPO (Initial Public Offering) — proces debiutu giełdowego, fazy IPO, alternatywy (SPAC, direct listing) i ryzyka. Kompletny przewodnik dla founderów i…"
-        canonical="https://fotz.pl/blog/ipo-co-to-jest-debiut-gieldowy"
+        description="Kompletny przewodnik po IPO: fazy procesu, alternatywy (SPAC, direct listing), metryki i ryzyka."
+        canonical="https://www.fotz-studio.pl/blog/ipo-co-to-jest-debiut-gieldowy"
 
         keywords="IPO co to jest, IPO definicja, czym jest IPO, IPO przykłady, jak działa IPO, IPO znaczenie, IPO przewodnik"
       />
       <ArticleSchema
         title="IPO — co to jest i jak wygląda debiut giełdowy?"
         description="Kompletny przewodnik po IPO: fazy procesu, alternatywy (SPAC, direct listing), metryki i ryzyka."
-        url="https://fotz.pl/blog/ipo-co-to-jest-debiut-gieldowy"
+        url="https://www.fotz-studio.pl/blog/ipo-co-to-jest-debiut-gieldowy"
         datePublished="2024-02-27"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "IPO", url: "https://fotz.pl/blog/ipo-co-to-jest-debiut-gieldowy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "IPO", url: "https://www.fotz-studio.pl/blog/ipo-co-to-jest-debiut-gieldowy" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-slate-900 text-white py-20 px-4">

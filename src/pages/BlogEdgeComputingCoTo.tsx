@@ -50,23 +50,23 @@ export default function BlogEdgeComputingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Edge Computing | Fotz Studio"
+        title="Edge Computing — co to jest, Cloudflare Workers i Edge Functions?"
         description="Edge Computing: definicja, Cloudflare Workers, Edge Functions vs SSR vs SSG, IoT edge, platformy (Fastly, Vercel, Deno Deploy) i use cases."
-        canonical="https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
+        canonical="https://www.fotz-studio.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
 
         keywords="Edge Computing co to jest, Edge Computing definicja, czym jest Edge Computing, Edge Computing przykłady, jak działa Edge Computing, Edge Computing znaczenie, Edge Computing przewodnik"
       />
       <ArticleSchema
         title="Edge Computing — co to jest, Cloudflare Workers i Edge Functions?"
         description="Edge Computing: architektura, 5 platform (Cloudflare/AWS/Fastly/Vercel/Deno), 6 use cases, Edge SSR, IoT edge i optymalizacja wydajności."
-        url="https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
+        url="https://www.fotz-studio.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions"
         datePublished="2024-04-05"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Edge Computing", url: "https://fotz.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Edge Computing", url: "https://www.fotz-studio.pl/blog/edge-computing-co-to-jest-cloudflare-workers-edge-functions" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">

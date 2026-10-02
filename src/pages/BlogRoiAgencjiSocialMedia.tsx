@@ -28,7 +28,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/roi-agencji-social-media";
+const CANONICAL = "https://www.fotz-studio.pl/blog/roi-agencji-social-media";
 
 export default function BlogRoiAgencjiSocialMedia() {
   return (
@@ -48,8 +48,8 @@ export default function BlogRoiAgencjiSocialMedia() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "ROI agencji social media", url: CANONICAL },
         ]}
       />

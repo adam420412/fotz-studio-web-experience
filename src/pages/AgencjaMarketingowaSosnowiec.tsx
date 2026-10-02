@@ -171,8 +171,8 @@ const AgencjaMarketingowaSosnowiec = () => {
     <>
       <SEOHead
         title="Agencja marketingowa Sosnowiec - fotz studio | Marketing dla firm"
-        description="Agencja marketingowa Sosnowiec - kompleksowe usługi digital marketingu, kampanie Google Ads, social media, content marketing. Pomagamy firmom z Sosnowca…"
-        canonical="https://fotz.pl/agencja-marketingowa/sosnowiec"
+        description="Agencja marketingowa Sosnowiec - kompleksowe usługi digital marketingu, kampanie Google Ads, social media, content marketing i produkcja filmowa. Pomagamy firmom z Sosnowca i Górnośląskiego Obszaru Metropolitalnego zdobywać klientów online."
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/sosnowiec"
         keywords="agencja marketingowa sosnowiec, marketing internetowy sosnowiec, agencja reklamowa sosnowiec, seo sosnowiec"
       />
 
@@ -183,9 +183,9 @@ const AgencjaMarketingowaSosnowiec = () => {
         areaServed="Sosnowiec"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Sosnowiec", url: "https://fotz.pl/agencja-marketingowa/sosnowiec" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Sosnowiec", url: "https://www.fotz-studio.pl/agencja-marketingowa/sosnowiec" },
         ]}/>
       <FAQSchema items={faqItems.map((item) => ({ question: item.question, answer: item.answer }))} />
 

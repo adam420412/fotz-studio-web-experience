@@ -9,7 +9,7 @@ export default function PolitykaPrywatnosci() {
       <SEOHead
         title="Polityka Prywatności | Fotz Studio"
         description="Polityka prywatności Fotz Studio. Informacje o przetwarzaniu danych osobowych, cookies i prawach użytkowników zgodnie z RODO."
-        canonical="https://fotz.pl/polityka-prywatnosci"
+        canonical="https://www.fotz-studio.pl/polityka-prywatnosci"
       />
       
       <Layout>

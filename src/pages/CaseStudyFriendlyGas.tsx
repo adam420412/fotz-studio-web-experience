@@ -34,15 +34,15 @@ const CaseStudyFriendlyGas = () => {
   return (
     <Layout>
       <SEOHead
-        title="Friendly Gas | Fotz Studio"
-        description="Case study Friendly Gas: strona internetowa z intuicyjnym systemem zamówień gazu online, płatnościami i automatyką. Wzrost konwersji o 140%. Realizacja…"
-        canonical="https://fotz.pl/realizacje/friendly-gas"
+        title="Friendly Gas - Sprzedaż Gazu Online - Case Study"
+        description="Case study Friendly Gas: strona internetowa z intuicyjnym systemem zamówień gazu online, płatnościami i automatyzacją. Wzrost konwersji o 140%. Realizacja Fotz Studio obejmowała także SEO i identyfikację wizualną."
+        canonical="https://www.fotz-studio.pl/realizacje/friendly-gas"
         keywords="case study seo, realizacja pozycjonowania, seo case study"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Friendly Gas", url: "https://fotz.pl/realizacje/friendly-gas" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Friendly Gas", url: "https://www.fotz-studio.pl/realizacje/friendly-gas" }
       ]}/>
       <ArticleSchema
         title="Friendly Gas - Sprzedaż Gazu Online - Case Study"
@@ -50,8 +50,8 @@ const CaseStudyFriendlyGas = () => {
         author="Fotz Studio"
         datePublished="2024-03-25"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/friendly-gas"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/friendly-gas"
       />
 
       {/* Hero */}

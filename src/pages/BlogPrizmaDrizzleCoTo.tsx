@@ -42,23 +42,23 @@ export default function BlogPrizmaDrizzleCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Prisma vs Drizzle ORM | Fotz Studio"
+        title="Prisma vs Drizzle ORM — TypeScript ORM, schema-first, migracje, edge?"
         description="Prisma ORM i Drizzle — schema-first vs SQL-first, Prisma Migrate vs Drizzle Kit, connection pooling, Prisma Accelerate, Neon i kiedy co wybrać w 2024."
-        canonical="https://fotz.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac"
+        canonical="https://www.fotz-studio.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac"
 
         keywords="Prisma vs Drizzle ORM co to jest, Prisma vs Drizzle ORM jak działa, Prisma vs Drizzle ORM tutorial, Prisma vs Drizzle ORM przykład, czym jest Prisma vs Drizzle ORM, Prisma vs Drizzle ORM dokumentacja, Prisma vs Drizzle ORM przewodnik"
       />
       <ArticleSchema
         title="Prisma vs Drizzle ORM — TypeScript ORM, schema-first, migracje, edge?"
         description="6 ORM (Prisma/Drizzle/TypeORM/MikroORM/Sequelize/Kysely) — schema-first vs SQL-first, bundle size, edge support, connection pooling i kiedy co wybrać."
-        url="https://fotz.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac"
+        url="https://www.fotz-studio.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Prisma vs Drizzle ORM", url: "https://fotz.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Prisma vs Drizzle ORM", url: "https://www.fotz-studio.pl/blog/prisma-drizzle-orm-typescript-schema-first-migracje-edge-co-wybrac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

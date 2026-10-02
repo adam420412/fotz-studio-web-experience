@@ -76,21 +76,21 @@ export default function BlogDealDeskCoTo() {
       <SEOHead
         title="Deal Desk — co to jest i jak działa w sprzedaży SaaS? | Fotz.pl"
         description="Deal Desk: funkcje, proces zatwierdzania ofert, kiedy wdrożyć, jak zorganizować i kluczowe metryki. Kompletny przewodnik dla firm SaaS i enterprise."
-        canonical="https://fotz.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise"
+        canonical="https://www.fotz-studio.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise"
 
         keywords="Deal Desk co to jest, Deal Desk definicja, czym jest Deal Desk, Deal Desk startup, Deal Desk jak liczyć, Deal Desk wzór, Deal Desk przykłady"
       />
       <ArticleSchema
         title="Deal Desk — co to jest i jak działa w sprzedaży SaaS?"
         description="Deal Desk: czym jest, kiedy go potrzebujesz, jak zorganizować, proces zatwierdzania dealów i metryki efektywności w firmach SaaS i enterprise."
-        url="https://fotz.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise"
+        url="https://www.fotz-studio.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise"
         datePublished="2024-02-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Deal Desk", url: "https://fotz.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Deal Desk", url: "https://www.fotz-studio.pl/blog/deal-desk-co-to-jest-sprzedaz-saas-enterprise" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900 text-white py-20 px-4">

@@ -158,7 +158,7 @@ export default function AgencjaMarketingowaBydgoszcz() {
       <SEOHead
         title="Agencja Marketingowa Bydgoszcz | Fotz Studio"
         description="Agencja marketingowa Bydgoszcz ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Bydgoszczy i Kujaw. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/bydgoszcz"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/bydgoszcz"
         keywords="agencja marketingowa Bydgoszcz, SEO Bydgoszcz, Google Ads Bydgoszcz, media społecznościowe, strony WWW, marketing Kujaw"
       />
 
@@ -182,18 +182,20 @@ export default function AgencjaMarketingowaBydgoszcz() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                <Phone className="w-5 h-5 mr-2" />
-                Bezpłatna wycena
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Bezpłatna wycena
+                </Link>
               </Button>
-              <Button
+              <Button asChild
                 size="lg"
                 variant="outline"
                 className="border-2 border-slate-300"
-              >
+              ><a href="/kontakt">
                 <ArrowRight className="w-5 h-5 mr-2" />
-                Dowiedz się więcej
-              </Button>
+                Zapytaj o szczegóły
+              </a></Button>
             </div>
           </div>
 
@@ -404,21 +406,22 @@ export default function AgencjaMarketingowaBydgoszcz() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              <Button asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-slate-100 font-semibold"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                +48 123 456 789
+                className="bg-white text-blue-600 hover:bg-slate-100 font-semibold">
+                <a href="tel:+48790814814">
+                  <Phone className="w-5 h-5 mr-2" />
+                  +48 790 814 814
+                </a>
               </Button>
-              <Button
+              <Button asChild
                 size="lg"
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-blue-600"
-              >
+              ><a href="/kontakt">
                 <Zap className="w-5 h-5 mr-2" />
-                Wysłij formularz
-              </Button>
+                Przejdź do formularza
+              </a></Button>
             </div>
           </div>
         </section>

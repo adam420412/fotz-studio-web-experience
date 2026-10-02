@@ -160,9 +160,9 @@ export default function AudytStronyInternetowej() {
   return (
     <>
       <SEOHead
-        title="Audyt strony internetowej | Analiza UX i wydajności | fotz.pl"
+        title="Audyt strony internetowej | Analiza UX i wydajności | FOTZ Studio"
         description="Audyt strony internetowej — kompleksowa analiza UX, szybkości, bezpieczeństwa i konwersji. Znajdziemy co blokuje Twoich klientów. Zamów audyt!"
-        canonical="https://fotz.pl/uslugi/audyt-strony-internetowej"
+        canonical="https://www.fotz-studio.pl/uslugi/audyt-strony-internetowej"
         keywords="audyt strony internetowej, audyt seo strony, audyt techniczny strony, badanie strony internetowej, analiza strony www, audyt ux, audyt wydajności strony"
       />
       <ServiceSchema
@@ -200,8 +200,10 @@ export default function AudytStronyInternetowej() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  Zamów audyt strony <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link to="/kontakt">
+                    Zamów audyt strony <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi/audyt-seo">
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">

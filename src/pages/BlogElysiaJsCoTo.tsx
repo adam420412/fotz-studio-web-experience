@@ -42,23 +42,23 @@ export default function BlogElysiaJsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Elysia.js, Hono i Bun 1.x | Fotz Studio"
-        description="Elysia.js (Bun, 370k req/s, end-to-end types, Eden Treaty), Hono (multi-runtime, edge), Bun 1.x (runtime + bundler + SQLite) i porównanie z Fastify…"
-        canonical="https://fotz.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
+        title="Elysia.js, Hono i Bun 1.x — ultra-szybkie frameworki backend TypeScript 2024?"
+        description="6 frameworków backend TypeScript (Elysia/Hono/Fastify/NestJS/Express/H3) — wydajność, runtime, end-to-end types i kiedy wybrać w 2024."
+        canonical="https://www.fotz-studio.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
 
         keywords="Elysia.js, Hono i Bun 1.x co to jest, Elysia.js, Hono i Bun 1.x jak działa, Elysia.js, Hono i Bun 1.x tutorial, Elysia.js, Hono i Bun 1.x przykład, czym jest Elysia.js, Hono i Bun 1.x, Elysia.js, Hono i Bun 1.x dokumentacja, Elysia.js, Hono i Bun 1.x przewodnik"
       />
       <ArticleSchema
         title="Elysia.js, Hono i Bun 1.x — ultra-szybkie frameworki backend TypeScript 2024?"
         description="6 frameworków backend TypeScript (Elysia/Hono/Fastify/NestJS/Express/H3) — wydajność, runtime, end-to-end types i kiedy wybrać w 2024."
-        url="https://fotz.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
+        url="https://www.fotz-studio.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Elysia.js i Bun 2024", url: "https://fotz.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Elysia.js i Bun 2024", url: "https://www.fotz-studio.pl/blog/elysia-js-hono-bun-backend-typescript-frameworki-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-pink-950 text-white py-20 px-4">

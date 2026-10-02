@@ -99,23 +99,23 @@ export default function BlogSocialCommerceCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Social Commerce | Fotz Studio"
+        title="Social Commerce — co to jest i jak działa? | Fotz Studio"
         description="Social commerce — definicja, platformy (Instagram, TikTok, Facebook Shop), strategie i metryki. Dowiedz się jak sprzedawać bezpośrednio w social mediach."
-        canonical="https://fotz.pl/blog/social-commerce-co-to"
+        canonical="https://www.fotz-studio.pl/blog/social-commerce-co-to"
 
         keywords="Social Commerce co to jest, Social Commerce definicja, czym jest Social Commerce, Social Commerce w marketingu, Social Commerce przykłady, jak działa Social Commerce, Social Commerce strategia"
       />
       <ArticleSchema
         title="Social Commerce — co to jest i jak działa?"
         description="Kompletny przewodnik po social commerce: platformy, strategie i metryki skutecznej sprzedaży w mediach społecznościowych."
-        url="https://fotz.pl/blog/social-commerce-co-to"
+        url="https://www.fotz-studio.pl/blog/social-commerce-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Social Commerce", url: "https://fotz.pl/blog/social-commerce-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Social Commerce", url: "https://www.fotz-studio.pl/blog/social-commerce-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -123,7 +123,7 @@ export default function BlogSocialCommerceCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Social Commerce", url: "https://fotz.pl" },
+              { name: "Social Commerce", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Social Commerce — co to jest i jak działa?

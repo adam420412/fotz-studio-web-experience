@@ -63,23 +63,23 @@ export default function BlogCqrsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CQRS | Fotz Studio"
+        title="CQRS — co to jest Command Query Responsibility Segregation?"
         description="CQRS: rozdzielenie komend i zapytań, Command side, Query side, Read Models, połączenie z Event Sourcing i kiedy CQRS ma sens zamiast CRUD."
-        canonical="https://fotz.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
 
         keywords="CQRS co to jest, CQRS definicja, czym jest CQRS, CQRS przykłady, jak działa CQRS, CQRS znaczenie, CQRS przewodnik"
       />
       <ArticleSchema
         title="CQRS — co to jest Command Query Responsibility Segregation?"
         description="CQRS: architektura, Command side, Query side, Read Models (projekcje), połączenie z Event Sourcing, porównanie z CRUD i kiedy wdrożyć w aplikacjach SaaS."
-        url="https://fotz.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest"
         datePublished="2024-03-09"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CQRS", url: "https://fotz.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CQRS", url: "https://www.fotz-studio.pl/blog/cqrs-command-query-responsibility-segregation-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white py-20 px-4">

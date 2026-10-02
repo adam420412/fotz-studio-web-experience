@@ -19,9 +19,9 @@ export default function TworzenieSklepowInternetowych() {
   return (
     <>
       <SEOHead
-        title="Tworzenie sklepów internetowych | E-commerce | fotz.pl"
+        title="Tworzenie sklepów internetowych | E-commerce | FOTZ Studio"
         description="Tworzymy profesjonalne sklepy internetowe. WooCommerce, Shopify, PrestaShop. Od 2999 zł netto. Pełna integracja płatności i logistyki. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-sklepow-internetowych"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-sklepow-internetowych"
         keywords="tworzenie sklepów internetowych, sklep internetowy, budowa sklepu internetowego, agencja e-commerce, wdrożenie sklepu online, WooCommerce, PrestaShop, Shopify"
       />
       <ServiceSchema
@@ -32,7 +32,7 @@ export default function TworzenieSklepowInternetowych() {
       <BreadcrumbSchema items={breadcrumbs} />
       <Layout>
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-orange-50 to-red-50">
+        <section className="pt-32 pb-20 bg-gradient-to-br from-orange-50 to-red-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -40,15 +40,17 @@ export default function TworzenieSklepowInternetowych() {
               transition={{ duration: 0.6 }}
               className="text-center mb-12"
             >
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
                 Tworzenie sklepów internetowych — Twój sklep online gotowy do sprzedaży
               </h1>
               <p className="text-2xl text-orange-700 mb-8 font-semibold max-w-3xl mx-auto">
-                E-commerce w Polsce rośnie 15% rocznie. Ponad 30 tys. nowych sklepów online otwiera się każdy rok. Czy Twój sklep jest już online?
+                E-commerce w Polsce rośnie 15% rocznie. Ponad 30 tys. nowych sklepów online otwiera się każdego roku. Czy Twój sklep jest już online?
               </p>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg text-lg">
-                Bezpłatna konsultacja e-commerce
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3 rounded-lg text-lg">
+                <Link to="/kontakt">
+                  Bezpłatna konsultacja e-commerce
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -91,13 +93,13 @@ export default function TworzenieSklepowInternetowych() {
                   },
                   {
                     name: "Shoper",
-                    pros: "Polska platforma, dedykowana wsparcie, integracje lokalne",
+                    pros: "Polska platforma, dedykowane wsparcie, integracje lokalne",
                     cons: "Mniejsze możliwości niż zagraniczni gracze",
                     when: "Dla małych polskich sklepów, prostych rozwiązań",
                   },
                   {
                     name: "Custom (React/Node)",
-                    pros: "Pełna autonomia, idealna dostosowanie, nowoczesne",
+                    pros: "Pełna autonomia, pełne dopasowanie, nowoczesne",
                     cons: "Najdroższe, wymaga zespołu, długi czas wdrożenia",
                     when: "Dla gigantów, MVP startupów, specjalnych wymagań",
                   },
@@ -143,7 +145,7 @@ export default function TworzenieSklepowInternetowych() {
                   "Mobile-first — ponad 80% zakupów online to telefony",
                   "Bezpieczeństwo SSL — certyfikat, HTTPS, ochrona danych",
                   "Wiadomości email — powiadomienia o zamówieniu, przypomnienia",
-                  "Koszyk na wypadki — upomnienie gdy ktoś porzucił przedmioty",
+                  "Przypomnienia o porzuconym koszyku",
                   "Rabaty i promocje — kody, zniżki procentowe, darmowa wysyłka",
                 ].map((feature, i) => (
                   <motion.div
@@ -278,14 +280,15 @@ export default function TworzenieSklepowInternetowych() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.featured
                           ? "bg-orange-600 hover:bg-orange-700 text-white"
                           : "bg-gray-200 hover:bg-gray-300 text-gray-900"
-                      }`}
-                    >
-                      Zamów sklep
+                      }`}>
+                      <Link to="/kontakt">
+                        Zamów sklep
+                      </Link>
                     </Button>
                   </motion.div>
                 ))}
@@ -300,7 +303,7 @@ export default function TworzenieSklepowInternetowych() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">Proces budowy sklepu</h2>
               <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
-                Od pierwszej konsultacji do wyłączenia "zamów teraz".
+                Od pierwszej konsultacji do uruchomienia sklepu.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-5 gap-8">

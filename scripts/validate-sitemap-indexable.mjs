@@ -5,8 +5,8 @@
  * Verifies that public/sitemap-main.xml:
  *  1) Contains only indexable URLs (no known noindex / canonicalized-away routes)
  *  2) Contains no duplicate <loc> entries
- *  3) Uses canonical URL policy: https, non-www, no trailing slash, no query/fragment
- *  4) Stays on the production host (fotz.pl)
+ *  3) Uses canonical URL policy: https, www, no trailing slash, no query/fragment
+ *  4) Stays on the production host (www.fotz-studio.pl)
  *
  * Exit code: 0 on success, 1 on any failure. Designed to run in CI after build.
  *
@@ -21,7 +21,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const SITEMAP_PATH = join(__dirname, '../public/sitemap-main.xml');
-const BASE_URL = 'https://fotz.pl';
+const BASE_URL = 'https://www.fotz-studio.pl';
 
 // Routes that MUST NOT appear in sitemap (noindex, canonicalized away, redirects, internal)
 const NON_INDEXABLE_PATHS = new Set([

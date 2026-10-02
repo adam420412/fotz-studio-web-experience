@@ -28,7 +28,7 @@ const SEOPozycjonowanieLodz = () => {
       <SEOHead
         title="Pozycjonowanie Łódź — Agencja SEO dla Firm z Łodzi | Fotz Studio"
         description="Pozycjonowanie stron internetowych Łódź — SEO lokalne i ogólnopolskie dla firm z Łodzi. Audyt SEO, link building, content SEO. Fotz Studio."
-        canonical="https://fotz.pl/seo/pozycjonowanie-lodz"
+        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-lodz"
         keywords="pozycjonowanie łódź, agencja seo łódź, seo łódź, pozycjonowanie stron łódź, seo dla firm łódź, pozycjonowanie lokalne łódź, audyt seo łódź"
       />
       <ServiceSchema
@@ -38,9 +38,9 @@ const SEOPozycjonowanieLodz = () => {
         areaServed="Łódź"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Pozycjonowanie Łódź", url: "https://fotz.pl/seo/pozycjonowanie-lodz" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Pozycjonowanie Łódź", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-lodz" },
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

@@ -70,22 +70,22 @@ export default function BlogChallengerSaleCoTo() {
     <Layout>
       <SEOHead
         title="Challenger Sale — co to jest i jak stosować? | Fotz.pl"
-        description="Challenger Sale — metodologia sprzedaży CEB: 5 profili handlowca, sekwencja Teach-Tailor-Take Control, porównanie z SPIN Selling i zastosowanie w B2B…"
-        canonical="https://fotz.pl/blog/challenger-sale-metodologia-sprzedazy"
+        description="Kompletny przewodnik po Challenger Sale: 5 profili, teaching sekwencja i zastosowanie w sprzedaży B2B."
+        canonical="https://www.fotz-studio.pl/blog/challenger-sale-metodologia-sprzedazy"
 
         keywords="Challenger Sale co to jest, Challenger Sale definicja, czym jest Challenger Sale, Challenger Sale przykłady, jak działa Challenger Sale, Challenger Sale znaczenie, Challenger Sale przewodnik"
       />
       <ArticleSchema
         title="Challenger Sale — co to jest i jak stosować?"
         description="Kompletny przewodnik po Challenger Sale: 5 profili, teaching sekwencja i zastosowanie w sprzedaży B2B."
-        url="https://fotz.pl/blog/challenger-sale-metodologia-sprzedazy"
+        url="https://www.fotz-studio.pl/blog/challenger-sale-metodologia-sprzedazy"
         datePublished="2024-02-07"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Challenger Sale", url: "https://fotz.pl/blog/challenger-sale-metodologia-sprzedazy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Challenger Sale", url: "https://www.fotz-studio.pl/blog/challenger-sale-metodologia-sprzedazy" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">

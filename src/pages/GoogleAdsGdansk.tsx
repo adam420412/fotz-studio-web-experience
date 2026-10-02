@@ -48,7 +48,7 @@ export default function GoogleAdsGdansk() {
         <SEOHead
           title="Agencja Google Ads Gdańsk — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Gdańsk — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/gdansk"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/gdansk"
           keywords="google ads gdansk, kampanie google ads gdansk, agencja google ads gdansk, reklamy google gdansk, google adwords gdansk, sem gdansk, google ads dla firm gdansk, prowadzenie google ads gdansk, google ads cennik gdansk, reklama w google gdansk"
         />
 
@@ -60,10 +60,10 @@ export default function GoogleAdsGdansk() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-            { name: "Google Ads Gdańsk", url: "https://fotz.pl/performance-marketing/google-ads/gdansk" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+            { name: "Google Ads Gdańsk", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/gdansk" },
           ]}/>
 
         <FAQSchema items={faqItems} />

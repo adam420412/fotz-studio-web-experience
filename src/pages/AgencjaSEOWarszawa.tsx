@@ -21,7 +21,7 @@ const staggerContainer = {
 
 const breadcrumbs = [
   { label: "Strona główna", url: "/" },
-  { label: "Agencja SEO", url: "/agencja-seo" },
+  { label: "Agencja SEO", url: "/seo/pozycjonowanie" },
   { label: "Warszawa", url: "/agencja-seo-warszawa" }
 ];
 
@@ -159,7 +159,7 @@ export default function AgencjaSEOWarszawa() {
       <SEOHead
         title="Agencja SEO Warszawa — pozycjonowanie stron dla firm | Fotz"
         description="Agencja SEO Warszawa. Fotz — pozycjonowanie stron w Google dla firm z Warszawy. SEO, technical audit, link building. Bezpłatna analiza strony!"
-        canonical="https://fotz.pl/agencja-seo-warszawa"
+        canonical="https://www.fotz-studio.pl/agencja-seo-warszawa"
         keywords="agencja seo warszawa, pozycjonowanie warszawa, seo warszawa, agencja seo warszawa cena, pozycjonowanie stron warszawa, seo dla firm warszawa, audyt seo warszawa, optymalizacja seo warszawa, pozycjonowanie lokalne warszawa, link building warszawa"
       />
 
@@ -201,13 +201,13 @@ export default function AgencjaSEOWarszawa() {
                     Bezpłatna analiza SEO
                   </Link>
                 </Button>
-                <Button
+                <Button asChild
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-blue-700"
-                >
+                ><a href="/kontakt">
                   Pogadajmy o rankingach
-                </Button>
+                </a></Button>
               </div>
             </motion.div>
           </div>

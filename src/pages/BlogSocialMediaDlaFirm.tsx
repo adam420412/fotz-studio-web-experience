@@ -45,9 +45,9 @@ const BlogSocialMediaDlaFirm = () => {
     <>
       <SEOHead
         title="Social media dla firm: Kompletny przewodnik 2025 | Fotz"
-        description="Jak prowadzić social media dla firmy w 2025? Strategia, najlepsze platformy, budżety, błędy do unikania. Praktyczny przewodnik dla przedsiębiorców i…"
+        description="Jak prowadzić social media dla firmy w 2025? Strategia, najlepsze platformy, budżety i błędy, których warto unikać. Praktyczny przewodnik dla przedsiębiorców i marketerów."
         ogType="article"
-        canonical="https://fotz.pl/blog/social-media-dla-firm"
+        canonical="https://www.fotz-studio.pl/blog/social-media-dla-firm"
         keywords="social media dla firm, prowadzenie social media dla firm, facebook dla firmy, instagram dla firmy, jak prowadzić social media"
         schemaJson={[
           {
@@ -64,7 +64,7 @@ const BlogSocialMediaDlaFirm = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-02-10",
@@ -74,8 +74,8 @@ const BlogSocialMediaDlaFirm = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Social media dla firm" }
             ]
           }

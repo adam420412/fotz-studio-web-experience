@@ -37,7 +37,7 @@ export default function BlogRetargetingPoradnik() {
   const articleSchema = {
     headline: "Retargeting reklamy i remarketing Google - Kompletny poradnik 2025",
     description: "Jak opanowac retargeting? Przewodnik po pixelach, segmentacji, kreatywach i budzetowaniu. Sredni ROAS 300-500% dla e-commerce.",
-    image: "https://fotz.pl/og-retargeting.jpg",
+    image: "https://www.fotz-studio.pl/og-image.jpg",
     datePublished: "2025-03-18",
     dateModified: "2025-07-26",
     author: "Fotz Studio"
@@ -46,9 +46,9 @@ export default function BlogRetargetingPoradnik() {
   return (
     <Layout>
       <SEOHead
-        title="Retargeting reklamy i remarketing Google - Kompletny poradnik…"
+        title="Retargeting i remarketing Google - kompletny poradnik"
         description="Jak opanowac retargeting? Przewodnik po pixelach, segmentacji, kreatywach i budzetowaniu. Sredni ROAS 300-500% dla e-commerce."
-        canonical="https://fotz.pl/blog/retargeting-reklamy-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/retargeting-reklamy-poradnik"
 
         keywords="Retargeting reklamy i remarketing Google - Kompletny poradnik 2025, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 poradnik, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 strategia, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 jak zrobić, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 marketing, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 przykłady, Retargeting reklamy i remarketing Google - Kompletny poradnik 2025 w Polsce"
       />
@@ -436,9 +436,9 @@ export default function BlogRetargetingPoradnik() {
               <p className="mb-6">
                 Zespol Fotz Studio specjalizuje sie w tworzeniu kampanii retargetingu dla e-commerce i SaaS. Sredni ROAS naszych kampanii to 400-600%.
               </p>
-              <button className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors">
                 Zarezerwuj konsultacje
-              </button>
+              </a>
             </section>
           </div>
 
@@ -465,13 +465,12 @@ export default function BlogRetargetingPoradnik() {
           {/* Related Articles */}
           <section className="mt-16 pt-12 border-t">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Powiazane artykuly
+              Powiązane artykuły
             </h3>
             <ul className="space-y-3">
-              <li><a href="/blog/facebook-ads-poradnik" className="text-blue-600 hover:underline">Facebook Ads dla poczatkujacych - kompletny poradnik 2025</a></li>
-              <li><a href="/blog/google-ads-performance-max" className="text-blue-600 hover:underline">Google Ads Performance Max - jak prawidlowo ustawic kampanie</a></li>
-              <li><a href="/blog/pixel-facebook-konfiguracja" className="text-blue-600 hover:underline">Pixel Facebook - jak zainstalowac i konfigurowac poprawnie</a></li>
-              <li><a href="/blog/konwersje-e-commerce-optymalizacja" className="text-blue-600 hover:underline">Optimalizacja konwersji e-commerce - praktyczne porady</a></li>
+              <li><a href="/blog/performance-max-co-to" className="text-blue-600 hover:underline">Google Ads Performance Max — jak działa kampania</a></li>
+              <li><a href="/blog/facebook-ads-poradnik" className="text-blue-600 hover:underline">Facebook Ads — konfiguracja i prowadzenie kampanii</a></li>
+              <li><a href="/blog/cro-co-to-jest" className="text-blue-600 hover:underline">Optymalizacja konwersji (CRO) — praktyczne porady</a></li>
             </ul>
           </section>
         </div>

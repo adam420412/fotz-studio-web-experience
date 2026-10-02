@@ -62,9 +62,9 @@ export default function BlogShopifyPolska() {
   return (
     <>
       <SEOHead
-        title="Shopify w Polsce — czy warto? Ceny, wady, zalety 2025 | fotz.pl"
+        title="Shopify w Polsce — czy warto? Ceny, wady, zalety 2025 | FOTZ Studio"
         description="Shopify Polska — czy warto wybrać Shopify do polskiego sklepu internetowego? Ceny, wady, zalety, porównanie z WooCommerce. Kompletny przewodnik 2025."
-        canonical="https://fotz.pl/blog/shopify-polska"
+        canonical="https://www.fotz-studio.pl/blog/shopify-polska"
 
         keywords="Shopify w Polsce, Shopify w Polsce co to jest, Shopify w Polsce jak działa, Shopify w Polsce definicja, Shopify w Polsce przykłady, Shopify w Polsce poradnik, Shopify w Polsce przewodnik"
       />
@@ -73,7 +73,7 @@ export default function BlogShopifyPolska() {
         description="Kompletny przewodnik po Shopify dla polskich sklepów. Ceny, integracje płatności, porównanie z WooCommerce."
         datePublished="2025-02-01"
         dateModified="2025-03-15"
-        url="https://fotz.pl/blog/shopify-polska"
+        url="https://www.fotz-studio.pl/blog/shopify-polska"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

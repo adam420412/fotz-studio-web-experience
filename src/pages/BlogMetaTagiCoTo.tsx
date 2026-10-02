@@ -37,7 +37,7 @@ export default function BlogMetaTagiCoTo() {
     },
     {
       question: "Jak napisać dobry meta title?",
-      answer: "Zasady dobrego meta title: długość 50-60 znaków (Google obcina dłuższe), musi zawierać główne słowo kluczowe (najlepiej na początku), powinien być unikalny dla każdej podstrony, opisywać zawartość strony i zachęcać do kliknięcia. Wzorzec: Słowo kluczowe — Opis | Nazwa marki. Przykład: 'Meta tagi SEO — przewodnik | fotz.pl'. Unikaj: upychania słów kluczowych (keyword stuffing), duplikowania titleów na wielu podstronach, tytułów poniżej 30 znaków (zbyt krótkie). Sprawdź w SERP Preview Tool jak wygląda przed wdrożeniem.",
+      answer: "Zasady dobrego meta title: długość 50-60 znaków (Google obcina dłuższe), musi zawierać główne słowo kluczowe (najlepiej na początku), powinien być unikalny dla każdej podstrony, opisywać zawartość strony i zachęcać do kliknięcia. Wzorzec: Słowo kluczowe — Opis | Nazwa marki. Przykład: 'Meta tagi SEO — przewodnik | FOTZ Studio'. Unikaj: upychania słów kluczowych (keyword stuffing), duplikowania titleów na wielu podstronach, tytułów poniżej 30 znaków (zbyt krótkie). Sprawdź w SERP Preview Tool jak wygląda przed wdrożeniem.",
     },
     {
       question: "Czy meta description wpływa na pozycje w Google?",
@@ -60,9 +60,9 @@ export default function BlogMetaTagiCoTo() {
   return (
     <>
       <SEOHead
-        title="Meta tagi — co to jest i jak wpływają na SEO? | fotz.pl"
+        title="Meta tagi — co to jest i jak wpływają na SEO? | FOTZ Studio"
         description="Meta tagi co to jest — wyjaśniamy czym są meta title, meta description, canonical, Open Graph. Jak pisać meta tagi które poprawiają SEO i CTR."
-        canonical="https://fotz.pl/blog/meta-tagi-co-to"
+        canonical="https://www.fotz-studio.pl/blog/meta-tagi-co-to"
 
         keywords="Meta tagi co to jest, Meta tagi definicja, czym jest Meta tagi, Meta tagi w marketingu, Meta tagi przykłady, jak działa Meta tagi, Meta tagi strategia"
       />
@@ -71,7 +71,7 @@ export default function BlogMetaTagiCoTo() {
         description="Czym są meta tagi, rodzaje (title, description, robots, canonical, Open Graph), jak pisać dobre meta tagi SEO i jak je sprawdzać."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/meta-tagi-co-to"
+        url="https://www.fotz-studio.pl/blog/meta-tagi-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 
@@ -124,15 +124,15 @@ export default function BlogMetaTagiCoTo() {
               <div className="bg-slate-900 rounded-lg p-4 mb-6 font-mono text-xs overflow-x-auto">
                 <p className="text-slate-400 mb-2">{"<!-- Podstawowe meta tagi SEO -->"}</p>
                 <div className="space-y-1 text-slate-300">
-                  <p><span className="text-blue-400">{"<title>"}</span><span className="text-green-400">Meta tagi SEO — poradnik | fotz.pl</span><span className="text-blue-400">{"</title>"}</span></p>
+                  <p><span className="text-blue-400">{"<title>"}</span><span className="text-green-400">Meta tagi SEO — poradnik | FOTZ Studio</span><span className="text-blue-400">{"</title>"}</span></p>
                   <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">name</span>=<span className="text-green-400">"description"</span></p>
                   <p className="pl-6"><span className="text-yellow-400">content</span>=<span className="text-green-400">"Czym są meta tagi i jak wpływają na SEO. Poznaj title, description, canonical i Open Graph."</span> <span className="text-blue-400">/{">"}</span></p>
                   <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">name</span>=<span className="text-green-400">"robots"</span> <span className="text-yellow-400">content</span>=<span className="text-green-400">"index, follow"</span> <span className="text-blue-400">/{">"}</span></p>
-                  <p><span className="text-blue-400">{"<link"}</span> <span className="text-yellow-400">rel</span>=<span className="text-green-400">"canonical"</span> <span className="text-yellow-400">href</span>=<span className="text-green-400">"https://fotz.pl/blog/meta-tagi-co-to"</span> <span className="text-blue-400">/{">"}</span></p>
+                  <p><span className="text-blue-400">{"<link"}</span> <span className="text-yellow-400">rel</span>=<span className="text-green-400">"canonical"</span> <span className="text-yellow-400">href</span>=<span className="text-green-400">"https://www.fotz-studio.pl/blog/meta-tagi-co-to"</span> <span className="text-blue-400">/{">"}</span></p>
                   <div className="border-t border-slate-700 pt-2 mt-2">
                     <p className="text-slate-400">{"<!-- Open Graph -->"}</p>
                     <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">property</span>=<span className="text-green-400">"og:title"</span> <span className="text-yellow-400">content</span>=<span className="text-green-400">"Meta tagi SEO — poradnik"</span> <span className="text-blue-400">/{">"}</span></p>
-                    <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">property</span>=<span className="text-green-400">"og:image"</span> <span className="text-yellow-400">content</span>=<span className="text-green-400">"https://fotz.pl/og-meta-tagi.jpg"</span> <span className="text-blue-400">/{">"}</span></p>
+                    <p><span className="text-blue-400">{"<meta"}</span> <span className="text-yellow-400">property</span>=<span className="text-green-400">"og:image"</span> <span className="text-yellow-400">content</span>=<span className="text-green-400">"https://www.fotz-studio.pl/og-image.jpg"</span> <span className="text-blue-400">/{">"}</span></p>
                   </div>
                 </div>
               </div>

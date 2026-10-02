@@ -24,7 +24,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/agencja-social-media-cennik";
+const CANONICAL = "https://www.fotz-studio.pl/blog/agencja-social-media-cennik";
 
 export default function BlogAgencjaSocialMediaCennik() {
   return (
@@ -44,8 +44,8 @@ export default function BlogAgencjaSocialMediaCennik() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Cennik agencji social media 2026", url: CANONICAL },
         ]}
       />

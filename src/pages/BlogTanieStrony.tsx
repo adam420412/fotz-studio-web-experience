@@ -44,9 +44,9 @@ export default function BlogTanieStrony() {
     <>
       <SEOHead
         title="Tanie Strony Internetowe — Czy Warto? Poradnik i Pułapki"
-        description="Tanie strony internetowe — co warto wiedzieć przed zamówieniem? Sprawdź różnicę między tanią a tandetną stroną www, pułapki freelancerów i kiedy warto…"
+        description="Tanie strony internetowe — co warto wiedzieć przed zamówieniem? Sprawdź różnicę między tanią a tandetną stroną www, pułapki freelancerów i to, kiedy tania strona to dobry wybór."
         ogType="article"
-        canonical="https://fotz.pl/blog/tanie-strony-internetowe"
+        canonical="https://www.fotz-studio.pl/blog/tanie-strony-internetowe"
         keywords="tanie strony internetowe, tania strona internetowa, strona internetowa cena, strona internetowa dla firmy cena, tanie tworzenie stron, strona www cena"
         schemaJson={[
           {
@@ -63,7 +63,7 @@ export default function BlogTanieStrony() {
               "name": "FOTZ Studio",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg",
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg",
               },
             },
             "datePublished": "2026-04-11",
@@ -77,13 +77,13 @@ export default function BlogTanieStrony() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Strona główna",
-                "item": "https://fotz.pl",
+                "item": "https://www.fotz-studio.pl",
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Blog",
-                "item": "https://fotz.pl/blog",
+                "item": "https://www.fotz-studio.pl/blog",
               },
               {
                 "@type": "ListItem",

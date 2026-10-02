@@ -37,7 +37,7 @@ const SEOOnPage = () => {
       <SEOHead
         title="Optymalizacja On-Page SEO — Techniczne i Treściowe SEO Strony"
         description="Optymalizacja SEO on-page — poprawa struktury strony, meta tagów, nagłówków, treści i szybkości ładowania. Zwiększ widoczność w Google. Fotz Studio."
-        canonical="https://fotz.pl/seo/on-page"
+        canonical="https://www.fotz-studio.pl/seo/on-page"
         keywords="optymalizacja on-page, seo on-page, meta tagi seo, nagłówki seo, core web vitals, schema markup, tytuły stron seo, optymalizacja treści seo, seo techniczne on-page, content seo"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const SEOOnPage = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Optymalizacja On-Page", url: "https://fotz.pl/seo/on-page" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Optymalizacja On-Page", url: "https://www.fotz-studio.pl/seo/on-page" },
       ]}/>
       <FAQSchema items={faqItems} />
 

@@ -15,9 +15,9 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 export default function BlogSEOTechniczne() {
   const breadcrumbs = [
-    { name: "Strona główna", url: "https://fotz.pl/" },
-    { name: "Blog", url: "https://fotz.pl/blog" },
-    { name: "Techniczne SEO", url: "https://fotz.pl/blog/seo-techniczne-poradnik" },
+    { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+    { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+    { name: "Techniczne SEO", url: "https://www.fotz-studio.pl/blog/seo-techniczne-poradnik" },
   ];
 
   const technicalElements = [
@@ -177,9 +177,9 @@ export default function BlogSEOTechniczne() {
   return (
     <>
       <SEOHead
-        title="Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap…"
+        title="Techniczne SEO - poradnik 2025: Core Web Vitals, sitemap"
         description="Kompletny poradnik technicznego SEO. Co to jest, dlaczego jest ważne, checklist działań, narzędzia. Dowiedź się jak zoptymalizować technical SEO swojej strony."
-        canonical="https://fotz.pl/blog/seo-techniczne-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/seo-techniczne-poradnik"
 
         keywords="Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt poradnik, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt strategia, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt jak zrobić, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt marketing, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt przykłady, Techniczne SEO - poradnik 2025. Core Web Vitals, Sitemap, Robots.txt w Polsce"
       />
@@ -188,7 +188,7 @@ export default function BlogSEOTechniczne() {
         description="Wszystko co musisz wiedzieć o technicznym SEO: Core Web Vitals, XML sitemap, robots.txt, canonical tags, structured data, HTTPS, mobile-first. Praktyczne checklist i narzędzia."
         datePublished="2025-04-12"
         dateModified="2025-04-12"
-        url="https://fotz.pl/blog/seo-techniczne-poradnik"
+        url="https://www.fotz-studio.pl/blog/seo-techniczne-poradnik"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

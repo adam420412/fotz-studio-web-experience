@@ -102,23 +102,23 @@ export default function BlogThoughtLeadershipCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Thought Leadership | Fotz Studio"
+        title="Thought Leadership — co to jest i jak budować autorytet?"
         description="Thought leadership — definicja, 4 typy, 5 filarów budowania autorytetu i jak mierzyć efektywność. Kompletny przewodnik po przywództwie myślowym."
-        canonical="https://fotz.pl/blog/thought-leadership-co-to"
+        canonical="https://www.fotz-studio.pl/blog/thought-leadership-co-to"
 
         keywords="Thought Leadership co to jest, Thought Leadership definicja, czym jest Thought Leadership, Thought Leadership w marketingu, Thought Leadership przykłady, jak działa Thought Leadership, Thought Leadership strategia"
       />
       <ArticleSchema
         title="Thought Leadership — co to jest i jak budować autorytet?"
         description="Kompletny przewodnik po thought leadership: typy, filary budowania autorytetu eksperta i metryki efektywności."
-        url="https://fotz.pl/blog/thought-leadership-co-to"
+        url="https://www.fotz-studio.pl/blog/thought-leadership-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Thought Leadership", url: "https://fotz.pl/blog/thought-leadership-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Thought Leadership", url: "https://www.fotz-studio.pl/blog/thought-leadership-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -126,7 +126,7 @@ export default function BlogThoughtLeadershipCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Thought Leadership", url: "https://fotz.pl" },
+              { name: "Thought Leadership", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Thought Leadership — co to jest i jak budować autorytet?

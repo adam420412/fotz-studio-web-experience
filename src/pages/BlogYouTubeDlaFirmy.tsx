@@ -268,9 +268,9 @@ export default function BlogYouTubeDlaFirmy() {
   return (
     <>
       <SEOHead
-        title="YouTube dla firmy — Poradnik SEO 2025 | fotz.pl"
+        title="YouTube dla firmy — Poradnik SEO 2025 | FOTZ Studio"
         description="YouTube dla biznesu. Jak zalozyta kanal YouTube, tworzyc treści, optymalizować SEO YouTube, zarabiać na YouTube Ads. Poradnik dla firm i nowych kanalow."
-        canonical="https://fotz.pl/blog/youtube-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/youtube-dla-firmy"
 
         keywords="YouTube dla firmy, YouTube dla firmy poradnik, YouTube dla firmy strategia, YouTube dla firmy jak zrobić, YouTube dla firmy marketing, YouTube dla firmy przykłady, YouTube dla firmy w Polsce"
       />
@@ -279,7 +279,7 @@ export default function BlogYouTubeDlaFirmy() {
         description="YouTube marketing dla firm. Zalozenie kanalau YouTube, rodzaje tresci, optymalizacja SEO YouTube (tytuły, tagi, opisy), YouTube Ads, analityka, przykłady polskich marek."
         datePublished="2025-03-01"
         dateModified="2025-06-20"
-        url="https://fotz.pl/blog/youtube-dla-firmy"
+        url="https://www.fotz-studio.pl/blog/youtube-dla-firmy"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "/" },

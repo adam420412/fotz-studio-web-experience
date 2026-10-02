@@ -68,9 +68,9 @@ export default function BlogSchemaMarkupCoTo() {
   return (
     <>
       <SEOHead
-        title="Schema Markup — co to jest i jak wdrożyć? | fotz.pl"
-        description="Schema Markup co to jest — wyjaśniamy czym są dane strukturyzowane, typy schema (FAQ, Product, LocalBusiness), jak wdrożyć JSON-LD i jakie generuje rich…"
-        canonical="https://fotz.pl/blog/schema-markup-co-to"
+        title="Schema Markup — co to jest i jak wdrożyć? | FOTZ Studio"
+        description="Czym jest Schema Markup (dane strukturyzowane), typy schema, jak wdrożyć JSON-LD, które schema generują rich snippets, testowanie i wpływ na SEO."
+        canonical="https://www.fotz-studio.pl/blog/schema-markup-co-to"
 
         keywords="Schema Markup co to jest, Schema Markup definicja, czym jest Schema Markup, Schema Markup przykłady, jak działa Schema Markup, Schema Markup znaczenie, Schema Markup przewodnik"
       />
@@ -79,7 +79,7 @@ export default function BlogSchemaMarkupCoTo() {
         description="Czym jest Schema Markup (dane strukturyzowane), typy schema, jak wdrożyć JSON-LD, które schema generują rich snippets, testowanie i wpływ na SEO."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/schema-markup-co-to"
+        url="https://www.fotz-studio.pl/blog/schema-markup-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

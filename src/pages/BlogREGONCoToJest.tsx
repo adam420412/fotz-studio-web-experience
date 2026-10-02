@@ -66,9 +66,9 @@ export default function BlogREGONCoToJest() {
   return (
     <>
       <SEOHead
-        title="REGON — co to jest? Numer identyfikacyjny firmy | fotz.pl"
+        title="REGON — co to jest? Numer identyfikacyjny firmy | FOTZ Studio"
         description="REGON co to jest — wyjasnamy czym jest numer REGON, jak sprawdzic REGON firmy, roznica REGON vs NIP i kiedy podawac REGON w dokumentach."
-        canonical="https://fotz.pl/blog/regon-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/regon-co-to-jest"
 
         keywords="REGON co to jest, REGON definicja, czym jest REGON, REGON przykłady, jak działa REGON, REGON znaczenie, REGON przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogREGONCoToJest() {
         description="Czym jest REGON, jak sprawdzic numer REGON firmy, roznica REGON vs NIP, kiedy podawac REGON i jak uzyskac numer REGON."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/regon-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/regon-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

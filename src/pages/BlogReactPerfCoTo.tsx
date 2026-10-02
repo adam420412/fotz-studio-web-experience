@@ -42,23 +42,23 @@ export default function BlogReactPerfCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Performance | Fotz Studio"
-        description="React Scan (re-render viz), React DevTools Profiler, Why Did You Render, Million.js (block VDOM), Rollup Visualizer, useMemo/useCallback best practices i…"
-        canonical="https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
+        title="React Performance — React Scan, Million.js, Bundle Analyzer i Code Splitting 2024?"
+        description="6 narzędzi performance (React Scan/DevTools Profiler/WDYR/Million.js/Rollup Visualizer/React Compiler) — re-render debugging, bundle analysis i code splitting."
+        canonical="https://www.fotz-studio.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
 
         keywords="React Performance co to jest, React Performance jak działa, React Performance tutorial, React Performance przykład, czym jest React Performance, React Performance dokumentacja, React Performance przewodnik"
       />
       <ArticleSchema
         title="React Performance — React Scan, Million.js, Bundle Analyzer i Code Splitting 2024?"
         description="6 narzędzi performance (React Scan/DevTools Profiler/WDYR/Million.js/Rollup Visualizer/React Compiler) — re-render debugging, bundle analysis i code splitting."
-        url="https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
+        url="https://www.fotz-studio.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Performance Optimization", url: "https://fotz.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Performance Optimization", url: "https://www.fotz-studio.pl/blog/react-performance-scan-million-bundle-analyzer-code-splitting-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-orange-950 text-white py-20 px-4">

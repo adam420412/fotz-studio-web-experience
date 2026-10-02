@@ -159,8 +159,8 @@ export default function AgencjaMarketingowaKoszalin() {
       <Layout>
         <SEOHead
           title="Agencja Marketingowa Koszalin - SEO, Google Ads, Social Media"
-          description="Agencja marketingowa w Koszalinie. Profesjonalne uslugi SEO lokalne, Google Ads, Facebook Ads, zarzadzanie social media i tworzenie stron dla firm…"
-          canonical="https://fotz.pl/agencja-marketingowa/koszalin"
+          description="Agencja marketingowa w Koszalinie. Profesjonalne usługi SEO lokalne, Google Ads, Facebook Ads, zarządzanie social media i tworzenie stron dla firm turystycznych, handlowych i usługowych z Pomorza Środkowego."
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/koszalin"
         keywords="agencja marketingowa koszalin, marketing internetowy koszalin, agencja reklamowa koszalin, seo koszalin"
         />
 
@@ -170,9 +170,9 @@ export default function AgencjaMarketingowaKoszalin() {
           areaServed="Koszalin"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-            { name: "Koszalin", url: "https://fotz.pl/agencja-marketingowa/koszalin" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+            { name: "Koszalin", url: "https://www.fotz-studio.pl/agencja-marketingowa/koszalin" },
           ]}/>
         <FAQSchema items={faqItems} />
 
@@ -280,7 +280,7 @@ export default function AgencjaMarketingowaKoszalin() {
                 },
                 {
                   icon: Award,
-                  title: "Specjalisci Pomorza Srodkowego",
+                  title: "Specjaliści Pomorza Środkowego",
                   desc: "Znamy specyfike regionu - turystyka nadmorska, handel, uslugi gastronomiczne. Dostosowujemy strategie do branzy i rynku lokalnego.",
                 },
                 {

@@ -74,21 +74,21 @@ export default function BlogExpansionRevenueCoTo() {
       <SEOHead
         title="Expansion Revenue — upsell i cross-sell w SaaS | Fotz.pl"
         description="Expansion Revenue w SaaS — upsell, cross-sell, NRR, rola Customer Success w generowaniu expansion i playbook. Kompletny przewodnik dla CS i sprzedaży."
-        canonical="https://fotz.pl/blog/expansion-revenue-upsell-cross-sell-saas"
+        canonical="https://www.fotz-studio.pl/blog/expansion-revenue-upsell-cross-sell-saas"
 
         keywords="Expansion Revenue co to jest, Expansion Revenue definicja, czym jest Expansion Revenue, Expansion Revenue startup, Expansion Revenue jak liczyć, Expansion Revenue wzór, Expansion Revenue przykłady"
       />
       <ArticleSchema
         title="Expansion Revenue — upsell i cross-sell w SaaS"
         description="Kompletny przewodnik po Expansion Revenue: upsell, cross-sell, NRR, timing i playbook dla Customer Success."
-        url="https://fotz.pl/blog/expansion-revenue-upsell-cross-sell-saas"
+        url="https://www.fotz-studio.pl/blog/expansion-revenue-upsell-cross-sell-saas"
         datePublished="2024-02-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Expansion Revenue", url: "https://fotz.pl/blog/expansion-revenue-upsell-cross-sell-saas" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Expansion Revenue", url: "https://www.fotz-studio.pl/blog/expansion-revenue-upsell-cross-sell-saas" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-slate-900 text-white py-20 px-4">

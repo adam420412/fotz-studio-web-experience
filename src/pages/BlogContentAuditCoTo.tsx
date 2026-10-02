@@ -100,22 +100,22 @@ export default function BlogContentAuditCoTo() {
     <Layout>
       <SEOHead
         title="Content Audit — co to jest? Audyt treści krok po kroku"
-        description="Content audit — definicja, 5-etapowy proces (inventory, dane, ocena, action plan), decyzje Keep/Update/Remove i narzędzia. Kompletny przewodnik po audycie…"
-        canonical="https://fotz.pl/blog/content-audit-co-to"
+        description="Kompletny przewodnik po content audit: 5-etapowy proces, matryca decyzji Keep/Update/Consolidate/Remove i narzędzia."
+        canonical="https://www.fotz-studio.pl/blog/content-audit-co-to"
 
         keywords="Content Audit co to jest, Content Audit definicja, czym jest Content Audit, Content Audit przykłady, jak działa Content Audit, Content Audit znaczenie, Content Audit przewodnik"
       />
       <ArticleSchema
         title="Content Audit — co to jest i jak go przeprowadzić?"
         description="Kompletny przewodnik po content audit: 5-etapowy proces, matryca decyzji Keep/Update/Consolidate/Remove i narzędzia."
-        url="https://fotz.pl/blog/content-audit-co-to"
+        url="https://www.fotz-studio.pl/blog/content-audit-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Content Audit", url: "https://fotz.pl/blog/content-audit-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Content Audit", url: "https://www.fotz-studio.pl/blog/content-audit-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -123,7 +123,7 @@ export default function BlogContentAuditCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Content Audit", url: "https://fotz.pl" },
+              { name: "Content Audit", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Content Audit — co to jest i jak go przeprowadzić?

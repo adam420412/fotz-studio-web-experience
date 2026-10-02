@@ -100,23 +100,23 @@ export default function BlogVoiceOfCustomerCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Voice of Customer (VoC) | Fotz Studio"
+        title="Voice of Customer (VoC) — co to jest i jak budować program?"
         description="Voice of Customer — definicja, 4 metody (NPS, CSAT, CES, wywiady), 6-krokowy program VoC i jak close the loop z feedbackiem klientów. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/voice-of-customer-co-to"
+        canonical="https://www.fotz-studio.pl/blog/voice-of-customer-co-to"
 
         keywords="Voice of Customer (VoC) co to jest, Voice of Customer (VoC) definicja, czym jest Voice of Customer (VoC), Voice of Customer (VoC) przykłady, jak działa Voice of Customer (VoC), Voice of Customer (VoC) znaczenie, Voice of Customer (VoC) przewodnik"
       />
       <ArticleSchema
         title="Voice of Customer (VoC) — co to jest i jak budować program?"
         description="Kompletny przewodnik po Voice of Customer: metody (NPS, CSAT, CES), 6-krokowy program i close the loop."
-        url="https://fotz.pl/blog/voice-of-customer-co-to"
+        url="https://www.fotz-studio.pl/blog/voice-of-customer-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Voice of Customer", url: "https://fotz.pl/blog/voice-of-customer-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Voice of Customer", url: "https://www.fotz-studio.pl/blog/voice-of-customer-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -124,7 +124,7 @@ export default function BlogVoiceOfCustomerCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Voice of Customer", url: "https://fotz.pl" },
+              { name: "Voice of Customer", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Voice of Customer (VoC) — co to jest i jak budować program?

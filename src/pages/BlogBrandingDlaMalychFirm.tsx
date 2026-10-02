@@ -40,7 +40,7 @@ export default function BlogBrandingDlaMalychFirm() {
         title="Branding dla małej firmy - Kompletny przewodnik | Fotz Studio"
         description="Odkryj jak zbudować silne branding dla małej firmy. Przewodnik po identyfikacji wizualnej, tworzeniu logo, wyborze kolorów i konsystencji marki."
         keywords="branding dla małej firmy, identyfikacja wizualna, mała firma, logo, branding na budżecie, visual identity"
-        canonical="https://fotz.pl/blog/branding-dla-malej-firmy"
+        canonical="https://www.fotz-studio.pl/blog/branding-dla-malej-firmy"
         ogType="article"
       />
       
@@ -48,7 +48,7 @@ export default function BlogBrandingDlaMalychFirm() {
       <ArticleSchema
         headline="Branding dla małej firmy - Kompletny przewodnik tworzenia identyfikacji wizualnej"
         description="Pełny poradnik jak zbudować profesjonalne branding dla małej firmy na ograniczonym budżecie. Praktyczne wskazówki, narzędzia i strategie."
-        image="https://fotz.pl/og-branding-mala-firma.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         datePublished="2025-04-15"
         dateModified="2025-08-05"
         author="Fotz Studio"

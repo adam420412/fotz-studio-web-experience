@@ -41,20 +41,20 @@ const CaseStudyMechanica = () => {
   return (
     <Layout>
       <SEOHead
-        title="Mechanica | Fotz Studio"
+        title="Mechanica - Strona dla producenta żurawi | Fotz Studio"
         description="Case study Mechanica: strona internetowa dla producenta żurawi i suwnic przemysłowych. SEO branży technicznej. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/mechanica"
+        canonical="https://www.fotz-studio.pl/realizacje/mechanica"
         keywords="case study automotive, marketing motoryzacja realizacja"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-          { name: "Mechanica", url: "https://fotz.pl/realizacje/mechanica" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+          { name: "Mechanica", url: "https://www.fotz-studio.pl/realizacje/mechanica" }
         ]}/>
       <ArticleSchema 
         title="Mechanica - Strona dla producenta żurawi"
         description="Case study: strona B2B z katalogiem produktów dla producenta żurawi i suwnic przemysłowych"
-        url="https://fotz.pl/realizacje/mechanica"
+        url="https://www.fotz-studio.pl/realizacje/mechanica"
         datePublished="2024-02-20"
         dateModified="2026-01-09"
       />

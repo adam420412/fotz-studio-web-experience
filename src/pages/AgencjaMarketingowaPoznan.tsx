@@ -162,15 +162,15 @@ export default function AgencjaMarketingowaPoznan() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Poznań | Fotz Studio"
-        description="Agencja marketingowa Poznań ✓ SEO, Google Ads, Social Media, strony WWW. Marketing internetowy i reklama internetowa dla firm z Poznania i Wielkopolski…"
-        canonical="https://fotz.pl/agencja-marketingowa/poznan"
+        description="Agencja marketingowa Poznań ✓ SEO, Google Ads, Social Media, strony WWW. Marketing internetowy i reklama internetowa dla firm z Poznania i Wielkopolski. Kompleksowa oferta Fotz Studio w jednym miejscu."
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/poznan"
         keywords="agencja marketingowa poznań, marketing internetowy poznań, agencja reklamowa poznań, seo poznań, google ads poznań, firma marketingowa poznań, reklama internetowa poznań, marketing dla firm poznań"
       />
 
       <BreadcrumbSchema items={[
-          { name: "FOTZ", url: "https://fotz.pl" },
-          { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Poznań", url: "https://fotz.pl" },
+          { name: "FOTZ", url: "https://www.fotz-studio.pl" },
+          { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Poznań", url: "https://www.fotz-studio.pl" },
         ]}/>
 
       <ServiceSchema
@@ -192,19 +192,20 @@ export default function AgencjaMarketingowaPoznan() {
               <p className="text-xl mb-8 text-blue-100">
                 Agencja reklamowa Poznań z kompleksową ofertą: SEO, Google Ads, Social Media i strony WWW. Marketing internetowy Poznań — ponad 200 projektów dla firm z Poznania i Wielkopolski, 8 lat doświadczenia, 97% zadowolonych klientów.
               </p>
-              <div className="flex gap-4">
-                <Link to="/kontakt">
-                  <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link to="/kontakt" className="w-full sm:w-auto">
+                  <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 w-full sm:w-auto">
                     Bezpłatna Wycena
                   </Button>
                 </Link>
-                <Button
+                <Button asChild
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-blue-700"
-                >
-                  <Phone className="w-5 h-5 mr-2" />
-                  +48 61 123 45 67
+                  className="border-white text-white hover:bg-blue-700 w-full sm:w-auto">
+                  <a href="tel:+48790814814">
+                    <Phone className="w-5 h-5 mr-2" />
+                    +48 790 814 814
+                  </a>
                 </Button>
               </div>
             </div>
@@ -360,16 +361,16 @@ export default function AgencjaMarketingowaPoznan() {
                     ))}
                   </ul>
 
-                  <Button
+                  <Button asChild
                     className={`w-full ${
                       pkg.highlighted
                         ? "bg-blue-600 hover:bg-blue-700 text-white"
                         : "border border-gray-300 text-gray-700 hover:bg-gray-50"
                     }`}
-                  >
+                  ><a href="/kontakt">
                     {pkg.cta}
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}
@@ -463,13 +464,14 @@ export default function AgencjaMarketingowaPoznan() {
                 Zaplanuj Konsultację
               </Button>
             </Link>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-blue-700 w-full sm:w-auto"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              +48 61 123 45 67
+              className="border-white text-white hover:bg-blue-700 w-full sm:w-auto">
+              <a href="tel:+48790814814">
+                <Phone className="w-5 h-5 mr-2" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
         </div>

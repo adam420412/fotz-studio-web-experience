@@ -192,7 +192,7 @@ export default function BlogWizerunekFirmy() {
       <SEOHead
         title="Wizerunek firmy w internecie - jak budować i chronić? 2025"
         description="Kompleksowy poradnik budowania wizerunku firmy online. Filary reputacji, zarządzanie kryzysem, opinie, monitoring marki, SEO. Praktyczne narzędzia i strategie."
-        canonical="https://fotz.pl/blog/wizerunek-firmy-w-internecie"
+        canonical="https://www.fotz-studio.pl/blog/wizerunek-firmy-w-internecie"
 
         keywords="Wizerunek firmy w internecie - jak budować i chronić? 2025, Wizerunek firmy w internecie - jak budować i chronić? 2025 co to jest, Wizerunek firmy w internecie - jak budować i chronić? 2025 jak działa, Wizerunek firmy w internecie - jak budować i chronić? 2025 definicja, Wizerunek firmy w internecie - jak budować i chronić? 2025 przykłady, Wizerunek firmy w internecie - jak budować i chronić? 2025 poradnik, Wizerunek firmy w internecie - jak budować i chronić? 2025 przewodnik"
       />
@@ -201,7 +201,7 @@ export default function BlogWizerunekFirmy() {
         description="Kompleksowy poradnik budowania wizerunku firmy online. Filary reputacji (strona www, GBP, social media, opinie, content marketing), zarządzanie kryzysem wizerunkowym, monitoring marki, narzędzia i strategie 2025."
         datePublished="2025-04-12"
         dateModified="2025-04-12"
-        url="https://fotz.pl/blog/wizerunek-firmy-w-internecie"
+        url="https://www.fotz-studio.pl/blog/wizerunek-firmy-w-internecie"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

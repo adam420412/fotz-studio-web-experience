@@ -42,23 +42,23 @@ export default function BlogReactCompilerCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Compiler | Fotz Studio"
-        description="React Compiler (React Forget): automatyczna memoizacja bez useMemo/useCallback, eslint-plugin, React 19 (use hook, useActionState, Server Actions, ref…"
-        canonical="https://fotz.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024"
+        title="React Compiler — automatyczna memoizacja, React 19 use hook, useActionState i Server Actions 2024?"
+        description="6 funkcji React Compiler/19 (memoizacja/eslint/use/useActionState/Server Actions/ref prop) — Rules of React, migracja, Next.js 15 wsparcie i production readiness."
+        canonical="https://www.fotz-studio.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024"
 
         keywords="React Compiler co to jest, React Compiler jak działa, React Compiler tutorial, React Compiler przykład, czym jest React Compiler, React Compiler dokumentacja, React Compiler przewodnik"
       />
       <ArticleSchema
         title="React Compiler — automatyczna memoizacja, React 19 use hook, useActionState i Server Actions 2024?"
         description="6 funkcji React Compiler/19 (memoizacja/eslint/use/useActionState/Server Actions/ref prop) — Rules of React, migracja, Next.js 15 wsparcie i production readiness."
-        url="https://fotz.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024"
+        url="https://www.fotz-studio.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Compiler", url: "https://fotz.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Compiler", url: "https://www.fotz-studio.pl/blog/react-compiler-automatyczna-memoizacja-react-19-use-hook-server-actions-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">

@@ -53,21 +53,21 @@ export default function BlogPlatformEngineeringCoTo() {
       <SEOHead
         title="Platform Engineering — co to jest, IDP i Backstage? | Fotz.pl"
         description="Platform Engineering: definicja, Internal Developer Platform (IDP), Backstage wdrożenie, Golden Path, składniki platformy i jak mierzyć sukces."
-        canonical="https://fotz.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
+        canonical="https://www.fotz-studio.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
 
         keywords="Platform Engineering co to jest, Platform Engineering definicja, czym jest Platform Engineering, Platform Engineering przykłady, jak działa Platform Engineering, Platform Engineering znaczenie, Platform Engineering przewodnik"
       />
       <ArticleSchema
         title="Platform Engineering — co to jest, IDP i Backstage?"
         description="Platform Engineering: IDP, Backstage, Golden Path, 6 komponentów platformy, narzędzia i metryki sukcesu (DevEx, DORA, adoption)."
-        url="https://fotz.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
+        url="https://www.fotz-studio.pl/blog/platform-engineering-co-to-jest-internal-developer-platform"
         datePublished="2024-03-30"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Platform Engineering", url: "https://fotz.pl/blog/platform-engineering-co-to-jest-internal-developer-platform" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Platform Engineering", url: "https://www.fotz-studio.pl/blog/platform-engineering-co-to-jest-internal-developer-platform" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">

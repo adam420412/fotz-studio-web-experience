@@ -101,23 +101,23 @@ export default function BlogChurnAnalysisCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Churn Analysis | Fotz Studio"
-        description="Churn analysis — definicja, 4 typy churnu, kluczowe metryki (NRR, GRR, LTV), przewidywanie churnu i playbook retencji. Jak redukować churn rate. Kompletny…"
-        canonical="https://fotz.pl/blog/churn-analysis-co-to"
+        title="Churn Analysis — co to jest i jak redukować odpływ klientów?"
+        description="Kompletny przewodnik po churn analysis: 4 typy churnu, metryki (NRR, GRR, churn rate), predykcja churnu i 4-etapowy retention playbook."
+        canonical="https://www.fotz-studio.pl/blog/churn-analysis-co-to"
 
         keywords="Churn Analysis co to jest, Churn Analysis definicja, czym jest Churn Analysis, Churn Analysis startup, Churn Analysis jak liczyć, Churn Analysis wzór, Churn Analysis przykłady"
       />
       <ArticleSchema
         title="Churn Analysis — co to jest i jak redukować odpływ klientów?"
         description="Kompletny przewodnik po churn analysis: 4 typy churnu, metryki (NRR, GRR, churn rate), predykcja churnu i 4-etapowy retention playbook."
-        url="https://fotz.pl/blog/churn-analysis-co-to"
+        url="https://www.fotz-studio.pl/blog/churn-analysis-co-to"
         datePublished="2024-01-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Churn Analysis", url: "https://fotz.pl/blog/churn-analysis-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Churn Analysis", url: "https://www.fotz-studio.pl/blog/churn-analysis-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -125,7 +125,7 @@ export default function BlogChurnAnalysisCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Churn Analysis", url: "https://fotz.pl" },
+              { name: "Churn Analysis", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Churn Analysis — co to jest i jak redukować odpływ klientów?

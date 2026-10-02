@@ -106,23 +106,23 @@ export default function BlogZeroPartyDataCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Zero-Party Data | Fotz Studio"
-        description="Zero-party data — definicja, różnice vs. first/third-party data, 5 taktyk zbierania (quiz, preference center, ankiety) i jak używać do personalizacji po…"
-        canonical="https://fotz.pl/blog/zero-party-data-co-to"
+        title="Zero-Party Data — co to jest i jak zbierać? | Fotz Studio"
+        description="Kompletny przewodnik po zero-party data: porównanie typów danych, 5 taktyk zbierania i personalizacja w cookieless future."
+        canonical="https://www.fotz-studio.pl/blog/zero-party-data-co-to"
 
         keywords="Zero-Party Data co to jest, Zero-Party Data definicja, czym jest Zero-Party Data, Zero-Party Data przykłady, jak działa Zero-Party Data, Zero-Party Data znaczenie, Zero-Party Data przewodnik"
       />
       <ArticleSchema
         title="Zero-Party Data — co to jest i jak zbierać?"
         description="Kompletny przewodnik po zero-party data: porównanie typów danych, 5 taktyk zbierania i personalizacja w cookieless future."
-        url="https://fotz.pl/blog/zero-party-data-co-to"
+        url="https://www.fotz-studio.pl/blog/zero-party-data-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Zero-Party Data", url: "https://fotz.pl/blog/zero-party-data-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Zero-Party Data", url: "https://www.fotz-studio.pl/blog/zero-party-data-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -130,7 +130,7 @@ export default function BlogZeroPartyDataCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Zero-Party Data", url: "https://fotz.pl" },
+              { name: "Zero-Party Data", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Zero-Party Data — co to jest i dlaczego zastępuje cookies?

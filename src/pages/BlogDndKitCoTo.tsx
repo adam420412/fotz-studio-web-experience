@@ -42,23 +42,23 @@ export default function BlogDndKitCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="dnd-kit | Fotz Studio"
-        description="dnd-kit (useSortable, DndContext, SortableContext), kanban drag między kolumnami, Pragmatic Drag and Drop (Atlassian) — porównanie bibliotek DnD dla React…"
-        canonical="https://fotz.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
+        title="dnd-kit — Drag and Drop React, Kanban Board, SortableContext i Pragmatic DnD 2024?"
+        description="6 bibliotek DnD (dnd-kit/Pragmatic DnD/react-beautiful-dnd/react-dnd/Framer Motion Reorder/@use-gesture) — sortable listy, kanban między kolumnami, Next.js hydration."
+        canonical="https://www.fotz-studio.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
 
         keywords="dnd-kit co to jest, dnd-kit jak działa, dnd-kit tutorial, dnd-kit przykład, czym jest dnd-kit, dnd-kit dokumentacja, dnd-kit przewodnik"
       />
       <ArticleSchema
         title="dnd-kit — Drag and Drop React, Kanban Board, SortableContext i Pragmatic DnD 2024?"
         description="6 bibliotek DnD (dnd-kit/Pragmatic DnD/react-beautiful-dnd/react-dnd/Framer Motion Reorder/@use-gesture) — sortable listy, kanban między kolumnami, Next.js hydration."
-        url="https://fotz.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
+        url="https://www.fotz-studio.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "dnd-kit Drag and Drop", url: "https://fotz.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "dnd-kit Drag and Drop", url: "https://www.fotz-studio.pl/blog/dnd-kit-drag-drop-react-sortable-kanban-pragmatic-dnd-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-purple-950 text-white py-20 px-4">

@@ -85,13 +85,13 @@ const StronyInternetoweCzestochowa = () => {
     <>
       <SEOHead
         title="Strony Internetowe Częstochowa | Fotz Studio"
-        description="Strony internetowe Częstochowa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Częstochowy…"
-        canonical="https://fotz.pl/uslugi/strony-internetowe/czestochowa"
+        description="Strony internetowe Częstochowa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Częstochowy. Bezpłatna wycena projektu."
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/czestochowa"
         keywords="strony internetowe częstochowa, tworzenie stron częstochowa, strony www częstochowa, projektowanie stron częstochowa"
       />
       
       <ServiceSchema name="Strony Internetowe Częstochowa" description="Profesjonalne tworzenie stron internetowych dla firm z Częstochowy." provider="FOTZ Studio" areaServed="Częstochowa" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Częstochowa", url: "https://fotz.pl/uslugi/strony-internetowe/czestochowa" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Częstochowa", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/czestochowa" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

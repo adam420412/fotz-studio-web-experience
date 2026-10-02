@@ -47,21 +47,21 @@ const BlogEmailMarketingAutomation = () => {
         title="Email marketing automation - jak wdrożyć sekwencje maili? 2025"
         description="Sekwencje automatyczne email marketing 2025 — welcome series, drip campaigns, cart abandonment, win-back. Jak wdrożyć automatyzację maili i zwiększyć ROI."
         ogType="article"
-        canonical="https://fotz.pl/blog/email-marketing-automation"
+        canonical="https://www.fotz-studio.pl/blog/email-marketing-automation"
         keywords="email marketing automation, sekwencje maili, drip campaign, welcome sequence, automatyzacja email, marketing automation"
       />
       <ArticleSchema
         title="Email marketing automation - jak wdrożyć sekwencje maili? 2025"
         description="Kompletny poradnik automatyzacji email marketing. Sekwencje powitalnej, drip campaigns, porzucone koszyki, win-back. Narzędzia i strategie."
-        url="https://fotz.pl/blog/email-marketing-automation"
+        url="https://www.fotz-studio.pl/blog/email-marketing-automation"
         datePublished="2025-04-12"
         dateModified="2025-04-12"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Email marketing automation", url: "https://fotz.pl/blog/email-marketing-automation" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Email marketing automation", url: "https://www.fotz-studio.pl/blog/email-marketing-automation" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

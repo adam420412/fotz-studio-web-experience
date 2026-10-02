@@ -165,7 +165,7 @@ export default function AgencjaMarketingowaBialystok() {
         <SEOHead
           title="Agencja marketingowa Białystok - fotz studio | Fotz Studio"
           description="Agencja marketingowa Białystok. Fotz Studio — strony internetowe, SEO, Google Ads dla firm z Białegostoku. Bezpłatna wycena!"
-          canonical="https://fotz.pl/agencja-marketingowa/bialystok"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/bialystok"
           keywords="agencja marketingowa Białystok, marketing internetowy Białystok, agencja reklamowa Białystok, kampanie reklamowe Białystok, agencja SEO Białystok, Google Ads Białystok, digital marketing Białystok, marketing dla firm Białystok"
         />
 
@@ -176,8 +176,8 @@ export default function AgencjaMarketingowaBialystok() {
           areaServed="Bialystok"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Białystok", url: "https://fotz.pl/agencja-marketingowa/bialystok" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja Marketingowa Białystok", url: "https://www.fotz-studio.pl/agencja-marketingowa/bialystok" }
           ]}/>
         <FAQSchema items={faqItems} />
 
@@ -476,8 +476,8 @@ export default function AgencjaMarketingowaBialystok() {
             <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
-                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa-krakow" },
+                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
+                { label: "Agencja marketingowa Kraków", to: "/agencja-marketingowa/krakow" },
                 { label: "Pozycjonowanie Białystok", to: "/uslugi/pozycjonowanie/bialystok" },
                 { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
                 { label: "Google Ads", to: "/performance-marketing/google-ads" },

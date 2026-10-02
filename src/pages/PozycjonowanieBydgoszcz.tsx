@@ -108,7 +108,7 @@ const PozycjonowanieBydgoszcz = () => {
       <SEOHead
         title="Pozycjonowanie Bydgoszcz — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Bydgoszcz. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla IT, BPO i produkcji. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/bydgoszcz"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/bydgoszcz"
         keywords="pozycjonowanie bydgoszcz, agencja seo bydgoszcz, seo bydgoszcz, pozycjonowanie stron bydgoszcz, seo dla firm bydgoszcz, pozycjonowanie kujawsko-pomorskie, audyt seo bydgoszcz, seo kujawa"
       />
       <ServiceSchema
@@ -118,10 +118,10 @@ const PozycjonowanieBydgoszcz = () => {
         areaServed="Bydgoszcz, Kujawsko-Pomorskie"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Bydgoszcz", url: "https://fotz.pl/uslugi/pozycjonowanie/bydgoszcz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Bydgoszcz", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/bydgoszcz" },
         ]}/>
       <FAQSchema items={faqItems} />
 

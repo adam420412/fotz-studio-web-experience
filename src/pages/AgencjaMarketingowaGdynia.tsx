@@ -37,7 +37,7 @@ export default function AgencjaMarketingowaGdynia() {
 
   const breadcrumbs = [
     { name: "Strona główna", url: "/" },
-    { name: "Agencje Marketingowe", url: "/agencje-marketingowe" },
+    { name: "Agencje Marketingowe", url: "/agencja-marketingowa" },
     { name: "Gdynia", url: "/agencja-marketingowa/gdynia" },
   ];
 
@@ -237,7 +237,7 @@ export default function AgencjaMarketingowaGdynia() {
       <SEOHead
         title="Agencja Marketingowa Gdynia | FOTZ – Marketing Dla Firm w Gdyni"
         description="Agencja marketingowa Gdynia ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdyni i Trójmiasta. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/gdynia"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/gdynia"
         keywords="agencja marketingowa gdynia, marketing internetowy gdynia, agencja reklamowa gdynia, kampanie reklamowe gdynia, seo gdynia, agencja marketingowa trójmiasto"
       />
 
@@ -264,13 +264,17 @@ export default function AgencjaMarketingowaGdynia() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <Phone className="w-5 h-5 mr-2" />
-                Bezpłatna konsultacja
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Link to="/kontakt">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Bezpłatna konsultacja
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                Pobierz ofertę
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button asChild size="lg" variant="outline">
+                <Link to="/kontakt">
+                  Pobierz ofertę
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
               </Button>
             </div>
 
@@ -364,15 +368,15 @@ export default function AgencjaMarketingowaGdynia() {
                       </div>
                       <div className="text-sm text-slate-600">{pkg.period}</div>
                     </div>
-                    <Button
+                    <Button asChild
                       className={`w-full mb-6 ${
                         pkg.popular
                           ? "bg-blue-600 hover:bg-blue-700"
                           : "bg-slate-200 text-slate-900 hover:bg-slate-300"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta}
-                    </Button>
+                    </a></Button>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, fidx) => (
                         <li
@@ -397,9 +401,9 @@ export default function AgencjaMarketingowaGdynia() {
                 Umówimy się na bezpłatną konsultację, gdzie omówimy Twoje
                 potrzeby i zaproponujemy najlepszy pakiet.
               </p>
-              <Button className="bg-blue-600 hover:bg-blue-700">
+              <Button asChild className="bg-blue-600 hover:bg-blue-700"><a href="/kontakt">
                 Zaplanuj rozmowę
-              </Button>
+              </a></Button>
             </div>
           </div>
         </section>
@@ -504,20 +508,22 @@ export default function AgencjaMarketingowaGdynia() {
               zobowiązań, brak kosztów!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              <Button asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-slate-100"
-              >
-                Bezpłatna Konsultacja
-                <ArrowRight className="w-5 h-5 ml-2" />
+                className="bg-white text-blue-600 hover:bg-slate-100">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
               </Button>
-              <Button
+              <Button asChild
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600"
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                Zadzwoń do nas
+                className="border-white text-white hover:bg-white hover:text-blue-600">
+                <a href="tel:+48790814814">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Zadzwoń do nas
+                </a>
               </Button>
             </div>
             <p className="text-sm text-blue-100 mt-8">

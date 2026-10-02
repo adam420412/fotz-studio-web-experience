@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -34,24 +35,24 @@ export default function BlogRemarketing() {
   return (
     <Layout>
       <SEOHead
-        title="Remarketing | Fotz Studio"
+        title="Remarketing - kompletny poradnik dla firm 2025 | Fotz Studio"
         description="Remarketing i retargeting — jak konfigurować kampanie remarketingowe Google Ads i Meta Ads, by odzyskiwać odwiedzających i zwiększać konwersję. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/performance-marketing/remarketing"
+        canonical="https://www.fotz-studio.pl/performance-marketing/remarketing"
         keywords="remarketing co to jest, co to jest remarketing, remarketing google ads, remarketing facebook ads, retargeting reklamy, remarketing dla firm, jak działa remarketing, remarketing cennik"
       />
       <ArticleSchema
         title="Remarketing - kompletny poradnik dla firm 2025"
         description="Remarketing krok po kroku: Google Ads, Facebook, dynamiczny remarketing. Strategie, koszty i najlepsze praktyki."
-        url="https://fotz.pl/performance-marketing/remarketing"
+        url="https://www.fotz-studio.pl/performance-marketing/remarketing"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Remarketing", url: "https://fotz.pl/performance-marketing/remarketing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Remarketing", url: "https://www.fotz-studio.pl/performance-marketing/remarketing" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -362,12 +363,8 @@ export default function BlogRemarketing() {
             <div className="flex items-center justify-between py-8 border-t border-border mt-12">
               <div className="flex items-center gap-4">
                 <span className="text-muted-foreground">Udostępnij:</span>
-                <Button variant="outline" size="icon">
-                  <Share2 className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Bookmark className="w-4 h-4" />
-                </Button>
+                <CopyArticleLinkButton />
+
               </div>
             </div>
           </div>
@@ -397,7 +394,7 @@ export default function BlogRemarketing() {
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
             </div>
             </div>
 

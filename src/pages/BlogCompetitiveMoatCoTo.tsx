@@ -84,28 +84,28 @@ export default function BlogCompetitiveMoatCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Competitive Moat | Fotz Studio"
-        description="Economic moat (fosa ekonomiczna) — definicja, 5 typów (network effects, switching costs, cost advantage, intangibles, efficient scale), jak oceniać i…"
-        canonical="https://fotz.pl/blog/competitive-moat-co-to"
+        title="Competitive Moat — co to jest i jak budować fosę ekonomiczną?"
+        description="Kompletny przewodnik po economic moat: 5 typów moatu (Morningstar framework), wskaźniki oceny szerokości i przykłady (Coca-Cola, Salesforce, Amazon)."
+        canonical="https://www.fotz-studio.pl/blog/competitive-moat-co-to"
 
         keywords="Competitive Moat co to jest, Competitive Moat definicja, czym jest Competitive Moat, Competitive Moat przykłady, jak działa Competitive Moat, Competitive Moat znaczenie, Competitive Moat przewodnik"
       />
       <ArticleSchema
         title="Competitive Moat — co to jest i jak budować fosę ekonomiczną?"
         description="Kompletny przewodnik po economic moat: 5 typów moatu (Morningstar framework), wskaźniki oceny szerokości i przykłady (Coca-Cola, Salesforce, Amazon)."
-        url="https://fotz.pl/blog/competitive-moat-co-to"
+        url="https://www.fotz-studio.pl/blog/competitive-moat-co-to"
         datePublished="2024-02-07"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Competitive Moat", url: "https://fotz.pl/blog/competitive-moat-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Competitive Moat", url: "https://www.fotz-studio.pl/blog/competitive-moat-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Competitive Moat", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Competitive Moat", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Competitive Moat — co to jest i jak budować fosę ekonomiczną?
           </h1>

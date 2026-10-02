@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowUpRight, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -37,6 +37,26 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
   const location = useLocation();
+  const menuButton = useRef<HTMLButtonElement>(null);
+  const servicesButton = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen && !isMegaMenuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsMobileMenuOpen(false);
+        setIsMegaMenuOpen(false);
+        (isMobileMenuOpen ? menuButton : servicesButton).current?.focus();
+      }
+    };
+    const previousOverflow = document.body.style.overflow;
+    if (isMobileMenuOpen) document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isMobileMenuOpen, isMegaMenuOpen]);
 
   const navLinks = navLinksData;
 
@@ -62,27 +82,28 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-[60] h-20 transition-colors duration-300",
           "backdrop-blur-xl border-b",
           isScrolled
-            ? "bg-background/80 border-[color:var(--dv-hair)] py-3"
-            : "bg-background/50 border-transparent py-4"
+            ? "bg-background/95 border-[color:var(--dv-hair)]"
+            : "bg-background/95 border-transparent"
         )}
       >
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12">
-          <nav className="flex items-center justify-between gap-4">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 h-full">
+          <nav aria-label="Nawigacja główna" className="flex h-full items-center justify-between gap-4">
             {/* Logo */}
             <Link to="/" className="flex items-center shrink-0">
-              <img
-                src={logoFotz}
-                alt="Fotz Studio"
-                className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 w-auto"
-              />
+              <svg className="site-logo h-10 w-[168px]" viewBox="450 550 1010 230" role="img" aria-label="Fotz Studio">
+                <image href={logoFotz} width="1920" height="1356" />
+              </svg>
             </Link>
 
             {/* Desktop Navigation - pill style */}
-            <div className="hidden lg:flex items-center gap-1">
+            <div className="hidden xl:flex items-center gap-1">
               <button
+                ref={servicesButton}
+                aria-expanded={isMegaMenuOpen}
+                aria-controls="services-menu"
                 onClick={() => setIsMegaMenuOpen(!isMegaMenuOpen)}
                 className={cn(
                   pillBase,
@@ -117,7 +138,7 @@ export function Navbar() {
             </div>
 
             {/* CTA + Theme */}
-            <div className="hidden lg:flex items-center gap-2">
+            <div className="hidden xl:flex items-center gap-2">
               <ThemeToggle />
               <Link to="/kontakt" className="dv-btn dv-btn-primary group">
                 Bezpłatna konsultacja
@@ -129,12 +150,15 @@ export function Navbar() {
             </div>
 
             {/* Mobile menu button */}
-            <div className="lg:hidden flex items-center gap-2">
+            <div className="xl:hidden flex items-center gap-2">
               <ThemeToggle />
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className="p-2 text-foreground z-[60]"
-                aria-label="Toggle menu"
+                ref={menuButton}
+                aria-label={isMobileMenuOpen ? "Zamknij menu" : "Otwórz menu"}
+                aria-expanded={isMobileMenuOpen}
+                aria-controls="mobile-menu"
               >
                 {isMobileMenuOpen ? (
                   <X className="w-6 h-6" strokeWidth={1.5} />
@@ -150,8 +174,8 @@ export function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div
-          className="lg:hidden fixed inset-0 z-40 bg-background"
-          style={{ paddingTop: isScrolled ? "72px" : "90px" }}
+          id="mobile-menu"
+          className="xl:hidden fixed inset-x-0 top-20 bottom-0 z-[55] bg-background"
         >
           <div className="h-full overflow-y-auto overscroll-contain">
             <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-6 flex flex-col gap-3">
@@ -170,7 +194,7 @@ export function Navbar() {
                       to={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={cn(
-                        "text-sm font-medium py-1.5 transition-colors truncate",
+                        "text-sm font-medium py-2 transition-colors break-words leading-relaxed",
                         location.pathname === link.href
                           ? "text-[color:var(--dv-accent-pink)]"
                           : "text-foreground/70 hover:text-foreground"

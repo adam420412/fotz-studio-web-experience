@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -35,23 +36,23 @@ export default function BlogCopywritingLanding() {
     <Layout>
       <SEOHead
         title="Copywriting dla Landing Page — Jak Pisać Teksty, które Konwertują"
-        description="Copywriting landing page — jak pisać teksty sprzedażowe, które konwertują. Nagłówki, CTA, storytelling. Praktyczny poradnik copywritingu dla stron…"
+        description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."
         ogType="article"
-        canonical="https://fotz.pl/content-marketing/copywriting-landing"
+        canonical="https://www.fotz-studio.pl/content-marketing/copywriting-landing"
         keywords="copywriting landing page, teksty na landing page, copywriter strona internetowa, copywriting sprzedażowy, teksty reklamowe"
       />
       <ArticleSchema
         title="Copywriting dla landing pages - jak pisać teksty, które konwertują"
         description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."
-        url="https://fotz.pl/content-marketing/copywriting-landing"
+        url="https://www.fotz-studio.pl/content-marketing/copywriting-landing"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Copywriting Landing Page", url: "https://fotz.pl/content-marketing/copywriting-landing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Copywriting Landing Page", url: "https://www.fotz-studio.pl/content-marketing/copywriting-landing" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -328,12 +329,8 @@ export default function BlogCopywritingLanding() {
             <div className="flex items-center justify-between py-8 border-t border-border mt-12">
               <div className="flex items-center gap-4">
                 <span className="text-muted-foreground">Udostępnij:</span>
-                <Button variant="outline" size="icon">
-                  <Share2 className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Bookmark className="w-4 h-4" />
-                </Button>
+                <CopyArticleLinkButton />
+
               </div>
             </div>
           </div>
@@ -360,7 +357,7 @@ export default function BlogCopywritingLanding() {
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Copywriting dla Twojej strony — zwiększ konwersję z profesjonalnym tekstem</h2>
               <p className="text-muted-foreground">Chcesz poprawić konwersję swojej strony lub landing page? Fotz Studio audytuje istniejące teksty i pisze nowy copy zoptymalizowany pod konwersję. Skontaktuj się z nami — pierwsze konsultacje są bezpłatne.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>

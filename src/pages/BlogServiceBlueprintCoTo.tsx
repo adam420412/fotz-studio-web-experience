@@ -106,22 +106,22 @@ export default function BlogServiceBlueprintCoTo() {
     <Layout>
       <SEOHead
         title="Service Blueprint — co to jest? Mapa usługi w service design"
-        description="Service blueprint (mapa usługi) — definicja, 5 warstw blueprintu, różnica vs customer journey map i jak tworzyć. Kompletny przewodnik po narzędziu service…"
-        canonical="https://fotz.pl/blog/service-blueprint-co-to"
+        description="Kompletny przewodnik po service blueprint: 5 warstw (physical evidence, customer actions, frontstage, backstage, support), różnica vs journey map."
+        canonical="https://www.fotz-studio.pl/blog/service-blueprint-co-to"
 
         keywords="Service Blueprint co to jest, Service Blueprint definicja, czym jest Service Blueprint, Service Blueprint przykłady, jak działa Service Blueprint, Service Blueprint znaczenie, Service Blueprint przewodnik"
       />
       <ArticleSchema
         title="Service Blueprint — co to jest i jak tworzyć mapę usługi?"
         description="Kompletny przewodnik po service blueprint: 5 warstw (physical evidence, customer actions, frontstage, backstage, support), różnica vs journey map."
-        url="https://fotz.pl/blog/service-blueprint-co-to"
+        url="https://www.fotz-studio.pl/blog/service-blueprint-co-to"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Service Blueprint", url: "https://fotz.pl/blog/service-blueprint-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Service Blueprint", url: "https://www.fotz-studio.pl/blog/service-blueprint-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -129,7 +129,7 @@ export default function BlogServiceBlueprintCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Service Blueprint", url: "https://fotz.pl" },
+              { name: "Service Blueprint", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Service Blueprint — co to jest i jak tworzyć mapę usługi?

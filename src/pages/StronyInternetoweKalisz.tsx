@@ -79,12 +79,12 @@ const StronyInternetoweKalisz = () => {
       <SEOHead
         title="Strony Internetowe Kalisz | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Kalisz — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Kalisza. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/kalisz"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/kalisz"
         keywords="strony internetowe kalisz, tworzenie stron kalisz, strony www kalisz, projektowanie stron kalisz"
       />
       
       <ServiceSchema name="Strony Internetowe Kalisz" description="Tworzenie stron internetowych dla firm z Kalisza." provider="FOTZ Studio" areaServed="Kalisz" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kalisz", url: "https://fotz.pl/uslugi/strony-internetowe/kalisz" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Kalisz", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/kalisz" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

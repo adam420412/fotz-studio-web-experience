@@ -141,8 +141,8 @@ const YouTubeAds = () => {
       <Layout>
       <SEOHead
         title="YouTube Ads Warszawa — Reklama Wideo na YouTube dla Firm"
-        description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads — skuteczna reklama wideo od 2000 zł/mies…"
-        canonical="https://fotz.pl/performance-marketing/youtube-ads"
+        description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads — skuteczna reklama wideo od 2000 zł/mies. dla firm z Warszawy i całej Polski."
+        canonical="https://www.fotz-studio.pl/performance-marketing/youtube-ads"
         keywords="youtube ads warszawa, reklama na youtube, kampanie youtube, youtube advertising, agencja youtube ads, reklamy wideo warszawa, video marketing"
       />
       <ServiceSchema
@@ -151,9 +151,9 @@ const YouTubeAds = () => {
         provider="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "YouTube Ads", url: "https://fotz.pl/performance-marketing/youtube-ads" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
+          { name: "YouTube Ads", url: "https://www.fotz-studio.pl/performance-marketing/youtube-ads" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -507,7 +507,7 @@ const YouTubeAds = () => {
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
             </div>
           </motion.div>
         </div>

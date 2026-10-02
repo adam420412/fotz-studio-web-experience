@@ -42,23 +42,23 @@ export default function BlogAstro5CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Astro 5 | Fotz Studio"
-        description="Astro 5: Content Layer API (dowolne źródło treści), Server Islands (dynamiczne wyspy), Astro Actions (type-safe mutations), View Transitions, Astro DB i…"
-        canonical="https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
+        title="Astro 5 — Content Layer, Server Islands, Actions i porównanie z Next.js 2024?"
+        description="Astro 5 nowości: Content Layer API, Server Islands, Astro Actions, Astro DB, View Transitions — kiedy Astro zamiast Next.js i jak działają wyspy serwerowe."
+        canonical="https://www.fotz-studio.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
 
         keywords="Astro 5 co to jest, Astro 5 jak działa, Astro 5 tutorial, Astro 5 przykład, czym jest Astro 5, Astro 5 dokumentacja, Astro 5 przewodnik"
       />
       <ArticleSchema
         title="Astro 5 — Content Layer, Server Islands, Actions i porównanie z Next.js 2024?"
         description="Astro 5 nowości: Content Layer API, Server Islands, Astro Actions, Astro DB, View Transitions — kiedy Astro zamiast Next.js i jak działają wyspy serwerowe."
-        url="https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Astro 5", url: "https://fotz.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Astro 5", url: "https://www.fotz-studio.pl/blog/astro-5-content-layer-server-islands-actions-vs-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-yellow-950 text-white py-20 px-4">

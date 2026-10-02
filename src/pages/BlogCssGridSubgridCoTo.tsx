@@ -42,23 +42,23 @@ export default function BlogCssGridSubgridCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CSS Grid zaawansowany | Fotz Studio"
-        description="CSS Grid zaawansowany: Subgrid (wyrównanie kart), CSS Masonry (natywne i JS alternatywy), grid-template-areas, auto-fit/auto-fill, minmax i nowoczesne…"
-        canonical="https://fotz.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024"
+        title="CSS Grid zaawansowany — Subgrid, Masonry, named areas i responsive bez media queries 2024?"
+        description="6 wzorców CSS Grid (auto-fit+minmax/grid-template-areas/subgrid/dense/masonry/minmax0) — card layouts, Holy Grail, Container Queries i a11y best practices."
+        canonical="https://www.fotz-studio.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024"
 
         keywords="CSS Grid zaawansowany co to jest, CSS Grid zaawansowany definicja, czym jest CSS Grid zaawansowany, CSS Grid zaawansowany przykłady, jak działa CSS Grid zaawansowany, CSS Grid zaawansowany znaczenie, CSS Grid zaawansowany przewodnik"
       />
       <ArticleSchema
         title="CSS Grid zaawansowany — Subgrid, Masonry, named areas i responsive bez media queries 2024?"
         description="6 wzorców CSS Grid (auto-fit+minmax/grid-template-areas/subgrid/dense/masonry/minmax0) — card layouts, Holy Grail, Container Queries i a11y best practices."
-        url="https://fotz.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024"
+        url="https://www.fotz-studio.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CSS Grid zaawansowany", url: "https://fotz.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CSS Grid zaawansowany", url: "https://www.fotz-studio.pl/blog/css-grid-subgrid-masonry-named-areas-responsive-layout-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">

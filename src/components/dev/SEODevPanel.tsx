@@ -169,7 +169,7 @@ function runSEOChecks(): SEOCheck[] {
 
   // Canonical
   const canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-  const hasTrailingSlash = canonical?.href?.endsWith('/') && canonical?.href !== 'https://fotz.pl/';
+  const hasTrailingSlash = canonical?.href?.endsWith('/') && canonical?.href !== 'https://www.fotz-studio.pl/';
   checks.push({
     name: 'Canonical URL',
     status: !canonical?.href ? 'fail' : hasTrailingSlash ? 'warn' : 'pass',

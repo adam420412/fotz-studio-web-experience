@@ -89,23 +89,23 @@ export default function BlogTopicClustersCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Topic Clusters | Fotz Studio"
+        title="Topic Clusters — co to jest i jak budować klastry tematyczne?"
         description="Topic clusters i pillar pages — definicja, struktura klastra (pillar + cluster content + linki wewnętrzne), 6-krokowy proces budowania i wpływ na SEO."
-        canonical="https://fotz.pl/blog/topic-clusters-co-to"
+        canonical="https://www.fotz-studio.pl/blog/topic-clusters-co-to"
 
         keywords="Topic Clusters co to jest, Topic Clusters definicja, czym jest Topic Clusters, Topic Clusters w marketingu, Topic Clusters przykłady, jak działa Topic Clusters, Topic Clusters strategia"
       />
       <ArticleSchema
         title="Topic Clusters — co to jest i jak budować klastry tematyczne?"
         description="Kompletny przewodnik po topic clusters: struktura pillar page + cluster content, 6-krokowy proces budowania i jak wpływa na SEO."
-        url="https://fotz.pl/blog/topic-clusters-co-to"
+        url="https://www.fotz-studio.pl/blog/topic-clusters-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Topic Clusters", url: "https://fotz.pl/blog/topic-clusters-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Topic Clusters", url: "https://www.fotz-studio.pl/blog/topic-clusters-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -113,7 +113,7 @@ export default function BlogTopicClustersCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Topic Clusters", url: "https://fotz.pl" },
+              { name: "Topic Clusters", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Topic Clusters — co to jest i jak budować klastry tematyczne?

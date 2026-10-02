@@ -80,23 +80,23 @@ export default function BlogBehavioralMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Behavioral Marketing | Fotz Studio"
-        description="Behavioral marketing (marketing behawioralny) — definicja, 5 segmentów behawioralnych, 6 triggerów (abandoned cart, browse abandonment) i RODO. Kompletny…"
-        canonical="https://fotz.pl/blog/behavioral-marketing-co-to"
+        title="Behavioral Marketing — co to jest i jak stosować?"
+        description="Kompletny przewodnik po behavioral marketingu: segmenty behawioralne, triggery email automation i compliance z RODO."
+        canonical="https://www.fotz-studio.pl/blog/behavioral-marketing-co-to"
 
         keywords="Behavioral Marketing co to jest, Behavioral Marketing definicja, czym jest Behavioral Marketing, Behavioral Marketing w marketingu, Behavioral Marketing przykłady, jak działa Behavioral Marketing, Behavioral Marketing strategia"
       />
       <ArticleSchema
         title="Behavioral Marketing — co to jest i jak stosować?"
         description="Kompletny przewodnik po behavioral marketingu: segmenty behawioralne, triggery email automation i compliance z RODO."
-        url="https://fotz.pl/blog/behavioral-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/behavioral-marketing-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Behavioral Marketing", url: "https://fotz.pl/blog/behavioral-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Behavioral Marketing", url: "https://www.fotz-studio.pl/blog/behavioral-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -104,7 +104,7 @@ export default function BlogBehavioralMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Behavioral Marketing", url: "https://fotz.pl" },
+              { name: "Behavioral Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Behavioral Marketing — co to jest i jak działa?

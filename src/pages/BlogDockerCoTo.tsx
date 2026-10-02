@@ -75,22 +75,22 @@ export default function BlogDockerCoTo() {
     <Layout>
       <SEOHead
         title="Docker — co to jest? Kontenery, Dockerfile i Docker Compose"
-        description="Docker — definicja, kontener vs VM, 7 kluczowych pojęć (Image, Container, Registry, Volume), przykład Dockerfile i best practices. Kompletny przewodnik po…"
-        canonical="https://fotz.pl/blog/docker-co-to-jest"
+        description="Kompletny przewodnik po Docker: definicja, kontener vs VM, kluczowe pojęcia, przykład Dockerfile i best practices."
+        canonical="https://www.fotz-studio.pl/blog/docker-co-to-jest"
 
         keywords="Docker co to jest, Docker jak działa, Docker tutorial, Docker przykład, czym jest Docker, Docker dokumentacja, Docker przewodnik"
       />
       <ArticleSchema
         title="Docker — co to jest i jak działa konteneryzacja?"
         description="Kompletny przewodnik po Docker: definicja, kontener vs VM, kluczowe pojęcia, przykład Dockerfile i best practices."
-        url="https://fotz.pl/blog/docker-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/docker-co-to-jest"
         datePublished="2024-01-24"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Docker", url: "https://fotz.pl/blog/docker-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Docker", url: "https://www.fotz-studio.pl/blog/docker-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -98,7 +98,7 @@ export default function BlogDockerCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Docker", url: "https://fotz.pl" },
+              { name: "Docker", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Docker — co to jest i jak działa konteneryzacja?

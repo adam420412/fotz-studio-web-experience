@@ -42,23 +42,23 @@ export default function BlogTsUtilityTypesCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TypeScript Utility Types | Fotz Studio"
-        description="TypeScript Utility Types: Partial/Required/Pick/Omit, ReturnType/Parameters, Conditional Types (infer), Mapped Types (remapping), Template Literal Types i…"
-        canonical="https://fotz.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
+        title="TypeScript Utility Types — Partial, ReturnType, Conditional, Mapped i Branded 2024?"
+        description="6 kategorii TypeScript Utility Types (Partial/Pick/ReturnType/Conditional/Mapped/Branded) — infer, template literal types, deep variants i branded types dla bezpiecznych ID."
+        canonical="https://www.fotz-studio.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
 
         keywords="TypeScript Utility Types co to jest, TypeScript Utility Types definicja, czym jest TypeScript Utility Types, TypeScript Utility Types w marketingu, TypeScript Utility Types przykłady, jak działa TypeScript Utility Types, TypeScript Utility Types strategia"
       />
       <ArticleSchema
         title="TypeScript Utility Types — Partial, ReturnType, Conditional, Mapped i Branded 2024?"
         description="6 kategorii TypeScript Utility Types (Partial/Pick/ReturnType/Conditional/Mapped/Branded) — infer, template literal types, deep variants i branded types dla bezpiecznych ID."
-        url="https://fotz.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
+        url="https://www.fotz-studio.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024"
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TypeScript Utility Types", url: "https://fotz.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TypeScript Utility Types", url: "https://www.fotz-studio.pl/blog/typescript-utility-types-partial-returntype-conditional-mapped-branded-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-950 text-white py-20 px-4">

@@ -124,23 +124,23 @@ export default function BlogElasticsearchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Elasticsearch | Fotz Studio"
+        title="Elasticsearch — co to jest i jak działa? Kompletny przewodnik"
         description="Elasticsearch — definicja, inverted index, pojęcia (index, shard, mapping, analyzer), Query DSL, agregacje i ELK Stack. Kompletny przewodnik po Elasticsearch."
-        canonical="https://fotz.pl/blog/elasticsearch-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/elasticsearch-co-to-jest"
 
         keywords="Elasticsearch co to jest, Elasticsearch definicja, czym jest Elasticsearch, Elasticsearch przykłady, jak działa Elasticsearch, Elasticsearch znaczenie, Elasticsearch przewodnik"
       />
       <ArticleSchema
         title="Elasticsearch — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po Elasticsearch: inverted index, Query DSL, agregacje i ELK Stack."
-        url="https://fotz.pl/blog/elasticsearch-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/elasticsearch-co-to-jest"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Elasticsearch", url: "https://fotz.pl/blog/elasticsearch-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Elasticsearch", url: "https://www.fotz-studio.pl/blog/elasticsearch-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -148,7 +148,7 @@ export default function BlogElasticsearchCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Elasticsearch", url: "https://fotz.pl" },
+              { name: "Elasticsearch", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Elasticsearch — co to jest i jak działa?

@@ -11,7 +11,7 @@ export function TikTokAdsLodz() {
     { label: "Strona glowna", path: "/" },
     { label: "Performance Marketing", path: "/performance-marketing" },
     { label: "TikTok Ads", path: "/performance-marketing/tiktok-ads" },
-    { label: "Lodz", path: "/performance-marketing/tiktok-ads/lodz" },
+    { label: "Łódź", path: "/performance-marketing/tiktok-ads/lodz" },
   ];
 
   const faqItems = [
@@ -61,15 +61,15 @@ export function TikTokAdsLodz() {
     <Layout>
       <SEOHead
         title="TikTok Ads Łódź — agencja kampanii reklamowych TikTok | Fotz.pl"
-        description="Reklamy TikTok Ads Łódź — agencja Fotz.pl. Kampanie TikTok dla firm z Łodzi: In-Feed Ads, Spark Ads, kreacje wideo. Targetowanie grupy docelowej…"
-        canonical="https://fotz.pl/performance-marketing/tiktok-ads/lodz"
+        description="Reklamy TikTok Ads Łódź — agencja Fotz.pl. Kampanie TikTok dla firm z Łodzi i centralnej Polski: In-Feed Ads, Spark Ads, kreacje wideo. Precyzyjne targetowanie grupy docelowej. Bezpłatna konsultacja."
+        canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads/lodz"
         keywords="tiktok ads lodz, reklamy tiktok lodz, agencja tiktok ads lodz, kampanie tiktok lodz, tiktok advertising lodz, tiktok ads dla firm lodz, tiktok ads cennik lodz"
       />
 
       <ServiceSchema
         name="TikTok Ads Łódź"
         description="Agencja kampanii reklamowych TikTok Ads w Łodzi. Specjalizujemy się w tworzeniu kampanii, In-Feed Ads, Spark Ads i kreatywnych materiałów wideo."
-        areaServed="Lodz"
+        areaServed="Łódź"
         provider="Fotz"
       />
 
@@ -86,9 +86,9 @@ export function TikTokAdsLodz() {
             </h1>
             <p className="text-xl sm:text-2xl text-blue-100 mb-8">
               TikTok Ads Lodz — profesjonalne kampanie reklamowe TikTok dla firm z Lodza i Centralnej Polski. Dotrzemy do młodych odbiorców i zwiększamy sprzedaż. Bezpłatna konsultacja.</p>
-            <button className="bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
               Uzyskaj bezpłatną konsultację
-            </button>
+            </a>
           </div>
         </section>
       </FadeInView>

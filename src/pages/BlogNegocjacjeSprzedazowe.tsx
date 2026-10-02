@@ -72,22 +72,22 @@ export default function BlogNegocjacjeSprzedazowe() {
     <Layout>
       <SEOHead
         title="Negocjacje sprzedażowe — techniki i taktyki w B2B | Fotz.pl"
-        description="Negocjacje sprzedażowe B2B — techniki (anchoring, BATNA, multi-variable), jak reagować na żądanie obniżki ceny i kiedy odejść od negocjacji. Kompletny…"
-        canonical="https://fotz.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
+        description="Kompletny przewodnik po negocjacjach sprzedażowych B2B: techniki, BATNA, obniżki ceny i zasady ustępstw."
+        canonical="https://www.fotz-studio.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
 
         keywords="Negocjacje sprzedażowe, Negocjacje sprzedażowe co to jest, Negocjacje sprzedażowe jak działa, Negocjacje sprzedażowe definicja, Negocjacje sprzedażowe przykłady, Negocjacje sprzedażowe poradnik, Negocjacje sprzedażowe przewodnik"
       />
       <ArticleSchema
         title="Negocjacje sprzedażowe — techniki i taktyki w B2B"
         description="Kompletny przewodnik po negocjacjach sprzedażowych B2B: techniki, BATNA, obniżki ceny i zasady ustępstw."
-        url="https://fotz.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
+        url="https://www.fotz-studio.pl/blog/negocjacje-sprzedazowe-techniki-b2b"
         datePublished="2024-02-08"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Negocjacje sprzedażowe", url: "https://fotz.pl/blog/negocjacje-sprzedazowe-techniki-b2b" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Negocjacje sprzedażowe", url: "https://www.fotz-studio.pl/blog/negocjacje-sprzedazowe-techniki-b2b" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-slate-800 to-gray-900 text-white py-20 px-4">

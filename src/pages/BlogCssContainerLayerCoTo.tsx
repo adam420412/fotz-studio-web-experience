@@ -42,23 +42,23 @@ export default function BlogCssContainerLayerCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="CSS Container Queries, @layer, Nesting, @scope i View…"
-        description="Nowoczesny CSS 2024: Container Queries (responsywne komponenty), @layer (cascade layers), CSS Nesting (bez Sass), @scope (scoped styles), View Transitions…"
-        canonical="https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
+        title="CSS Container Queries, @layer, Nesting i @scope | Fotz"
+        description="6 nowoczesnych funkcji CSS (Container Queries/@layer/Nesting/@scope/View Transitions/Scroll-Driven) — wsparcie przeglądarek, przykłady i kiedy używać."
+        canonical="https://www.fotz-studio.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
 
         keywords="CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 co to jest, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 definicja, czym jest CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 przykłady, jak działa CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 znaczenie, CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024 przewodnik"
       />
       <ArticleSchema
         title="CSS Container Queries, @layer, Nesting, @scope i View Transitions 2024?"
         description="6 nowoczesnych funkcji CSS (Container Queries/@layer/Nesting/@scope/View Transitions/Scroll-Driven) — wsparcie przeglądarek, przykłady i kiedy używać."
-        url="https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
+        url="https://www.fotz-studio.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Nowoczesny CSS 2024", url: "https://fotz.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Nowoczesny CSS 2024", url: "https://www.fotz-studio.pl/blog/css-container-queries-layer-nesting-scope-view-transitions-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">

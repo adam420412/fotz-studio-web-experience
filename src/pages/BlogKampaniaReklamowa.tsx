@@ -30,23 +30,23 @@ const BlogKampaniaReklamowa = () => {
     <>
       <SEOHead
         title="Kampania Reklamowa i Marketingowa | Fotz Studio"
-        description="Co to jest kampania reklamowa i marketingowa? Definicja, rodzaje, przykłady kampanii Google Ads, Meta Ads i content marketingu. Jak stworzyć skuteczną…"
+        description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok."
         ogType="article"
-        canonical="https://fotz.pl/content-marketing/kampanie"
+        canonical="https://www.fotz-studio.pl/content-marketing/kampanie"
         keywords="kampania reklamowa, jak stworzyć kampanię reklamową, kampania marketingowa, planowanie kampanii reklamowej, kampania google facebook"
       />
       <ArticleSchema
         title="Kampania Reklamowa i Marketingowa: Przykłady i Definicja"
         description="Poznaj różnice między kampanią reklamową a marketingową. Przykłady najlepszych kampanii 2024, trendy na 2025 rok."
-        url="https://fotz.pl/content-marketing/kampanie"
+        url="https://www.fotz-studio.pl/content-marketing/kampanie"
         datePublished="2025-01-15"
         dateModified="2026-04-01"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Kampania Reklamowa i Marketingowa", url: "https://fotz.pl/content-marketing/kampanie" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Kampania Reklamowa i Marketingowa", url: "https://www.fotz-studio.pl/content-marketing/kampanie" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

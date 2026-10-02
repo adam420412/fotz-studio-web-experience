@@ -30,23 +30,23 @@ const BlogReelsVsTikTok = () => {
     <>
       <SEOHead
         title="Reelsy vs TikTok — Gdzie Publikować Wideo dla Większego Zasięgu?"
-        description="Instagram Reels vs TikTok — porównanie platform, algorytmy, zasięgi i strategie. Gdzie warto publikować krótkie wideo dla Twojej firmy w 2025? Poradnik…"
+        description="Instagram Reels vs TikTok — porównanie platform, algorytmów, zasięgów i strategii. Gdzie warto publikować krótkie wideo dla Twojej firmy w 2025? Poradnik, który pomoże wybrać właściwy kanał."
         ogType="article"
-        canonical="https://fotz.pl/social-media/reels-vs-tiktok"
+        canonical="https://www.fotz-studio.pl/social-media/reels-vs-tiktok"
         keywords="instagram reels vs tiktok, reels czy tiktok, instagram reels tiktok różnice, co lepsze reels czy tiktok"
       />
       <ArticleSchema
         title="Instagram Reels vs TikTok - gdzie publikować wideo w 2025?"
         description="Porównanie Instagram Reels i TikTok. Która platforma lepsza dla Twojej marki?"
-        url="https://fotz.pl/social-media/reels-vs-tiktok"
+        url="https://www.fotz-studio.pl/social-media/reels-vs-tiktok"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Reels vs TikTok", url: "https://fotz.pl/social-media/reels-vs-tiktok" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Reels vs TikTok", url: "https://www.fotz-studio.pl/social-media/reels-vs-tiktok" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

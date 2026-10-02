@@ -68,9 +68,9 @@ export default function BlogReferralMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Referral Marketing — co to jest? Program poleceń | fotz.pl"
+        title="Referral Marketing — co to jest? Program poleceń | FOTZ Studio"
         description="Referral Marketing co to jest — wyjaśniamy czym jest marketing poleceń, jak działa program referral, jakie nagrody działają i jak mierzyć skuteczność."
-        canonical="https://fotz.pl/blog/referral-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/referral-marketing-co-to"
 
         keywords="Referral Marketing co to jest, Referral Marketing definicja, czym jest Referral Marketing, Referral Marketing w marketingu, Referral Marketing przykłady, jak działa Referral Marketing, Referral Marketing strategia"
       />
@@ -79,7 +79,7 @@ export default function BlogReferralMarketingCoTo() {
         description="Czym jest Referral Marketing (marketing poleceń), jak działa program referral, najlepsze nagrody, różnica vs affiliate marketing i jak mierzyć ROI."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/referral-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/referral-marketing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

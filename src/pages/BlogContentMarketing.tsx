@@ -39,10 +39,10 @@ const BlogContentMarketing = () => {
   return (
     <>
       <SEOHead
-        title="Content marketing dla firm: Jak tworzyć treści, które sprzedają…"
+        title="Content marketing dla firm: treści, które sprzedają"
         description="Jak zbudować skuteczną strategię content marketingu? Blog, video, podcast, ebooki. Praktyczny przewodnik dla firm w 2025 roku."
         ogType="article"
-        canonical="https://fotz.pl/blog/content-marketing-dla-firm"
+        canonical="https://www.fotz-studio.pl/blog/content-marketing-dla-firm"
         keywords="content marketing, marketing treści, blog dla firm, strategia contentowa, jak pisać blog"
         schemaJson={[
           {
@@ -59,7 +59,7 @@ const BlogContentMarketing = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-03-10",
@@ -69,8 +69,8 @@ const BlogContentMarketing = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Content marketing dla firm" }
             ]
           },

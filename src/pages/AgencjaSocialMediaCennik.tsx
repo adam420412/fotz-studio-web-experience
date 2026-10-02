@@ -11,7 +11,7 @@ import { useClusterArticles } from "@/hooks/useClusterArticles";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const CANONICAL = "https://fotz.pl/agencja-social-media/cennik";
+const CANONICAL = "https://www.fotz-studio.pl/agencja-social-media/cennik";
 
 interface Tier {
   name: string;
@@ -122,8 +122,8 @@ export default function AgencjaSocialMediaCennik() {
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja social media", url: `https://fotz.pl${SM_PILLAR_PATH}` },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja social media", url: `https://www.fotz-studio.pl${SM_PILLAR_PATH}` },
           { name: "Cennik", url: CANONICAL },
         ]}
       />

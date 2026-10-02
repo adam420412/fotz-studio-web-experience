@@ -44,21 +44,21 @@ export default function BlogOpenApiCoTo() {
       <SEOHead
         title="OpenAPI, Zod, tRPC vs REST, Orval i Scalar | Fotz Studio"
         description="OpenAPI spec generation z Zod i Hono, tRPC vs OpenAPI, orval + openapi-typescript (generuj React Query hooks), Scalar UI i API versioning — TypeScript 2024."
-        canonical="https://fotz.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024"
 
         keywords="OpenAPI, Zod, tRPC vs REST, Orval i Scalar co to jest, OpenAPI, Zod, tRPC vs REST, Orval i Scalar jak działa, OpenAPI, Zod, tRPC vs REST, Orval i Scalar tutorial, OpenAPI, Zod, tRPC vs REST, Orval i Scalar przykład, czym jest OpenAPI, Zod, tRPC vs REST, Orval i Scalar, OpenAPI, Zod, tRPC vs REST, Orval i Scalar dokumentacja, OpenAPI, Zod, tRPC vs REST, Orval i Scalar przewodnik"
       />
       <ArticleSchema
         title="OpenAPI, Zod, tRPC vs REST, Orval i Scalar — dokumentacja API TypeScript 2024?"
         description="6 narzędzi API (Hono Zod OpenAPI/openapi-typescript/Orval/tRPC-OpenAPI/Scalar/zod-to-openapi) — code-first, spec-first, generowanie klientów i dokumentacja."
-        url="https://fotz.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "OpenAPI TypeScript", url: "https://fotz.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "OpenAPI TypeScript", url: "https://www.fotz-studio.pl/blog/openapi-zod-trpc-orval-scalar-dokumentacja-api-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

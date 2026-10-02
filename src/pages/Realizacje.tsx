@@ -424,12 +424,12 @@ const Realizacje = () => {
       <SEOHead
         title="Realizacje i Portfolio — Case Studies Projektów Marketingowych"
         description="Portfolio Fotz Studio — realizacje stron internetowych, kampanii SEO, social media i produkcji wideo. Case studies z wynikami dla klientów z różnych branż."
-        canonical="https://fotz.pl/realizacje"
+        canonical="https://www.fotz-studio.pl/realizacje"
         keywords="realizacje, portfolio agencji marketingowej, case study marketing, projekty marketingowe, realizacje digital marketing"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Realizacje", url: "https://fotz.pl/realizacje" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" }
         ]}/>
       {/* Hero Section */}
       <section className="pt-40 pb-16 section-padding bg-background relative overflow-hidden">

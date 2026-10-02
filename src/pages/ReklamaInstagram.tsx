@@ -77,9 +77,9 @@ export default function ReklamaInstagram() {
   return (
     <>
       <SEOHead
-        title="Reklama Instagram — agencja Instagram Ads | fotz.pl"
+        title="Reklama Instagram — agencja Instagram Ads | FOTZ Studio"
         description="Reklama na Instagramie — kampanie Meta Ads dla firm. Reels Ads, Stories, Shopping. Obsługa Instagram Ads od 799 zł/mies. Bezpłatny audyt kampanii!"
-        canonical="https://fotz.pl/uslugi/reklama-instagram"
+        canonical="https://www.fotz-studio.pl/uslugi/reklama-instagram"
         keywords="reklama instagram, reklamy na instagramie, instagram ads, kampanie instagram, reklama instagram cena, instagram dla firm"
       />
       <ServiceSchema
@@ -123,8 +123,10 @@ export default function ReklamaInstagram() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-pink-600 hover:bg-pink-700 text-white">
-                  Bezpłatny audyt kampanii IG <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-pink-600 hover:bg-pink-700 text-white">
+                  <Link to="/kontakt">
+                    Bezpłatny audyt kampanii IG <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi/social-media-marketing">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

@@ -73,21 +73,21 @@ export default function BlogSafeNoteCoTo() {
       <SEOHead
         title="SAFE Note — co to jest i jak działa w startupie? | Fotz.pl"
         description="SAFE (Simple Agreement for Future Equity): jak działa konwersja, różnice vs convertible note, pułapki dla założycieli, typy SAFE i jak negocjować warunki."
-        canonical="https://fotz.pl/blog/safe-note-co-to-jest-jak-dziala-startup"
+        canonical="https://www.fotz-studio.pl/blog/safe-note-co-to-jest-jak-dziala-startup"
 
         keywords="SAFE Note co to jest, SAFE Note definicja, czym jest SAFE Note, SAFE Note startup, SAFE Note jak liczyć, SAFE Note wzór, SAFE Note przykłady"
       />
       <ArticleSchema
         title="SAFE Note — co to jest i jak działa w startupie?"
         description="SAFE Note: instrument inwestycyjny YC, typy SAFE (post-money, pre-money), konwersja na udziały, pułapki i jak negocjować warunki dla założycieli startupów."
-        url="https://fotz.pl/blog/safe-note-co-to-jest-jak-dziala-startup"
+        url="https://www.fotz-studio.pl/blog/safe-note-co-to-jest-jak-dziala-startup"
         datePublished="2024-02-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SAFE Note", url: "https://fotz.pl/blog/safe-note-co-to-jest-jak-dziala-startup" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SAFE Note", url: "https://www.fotz-studio.pl/blog/safe-note-co-to-jest-jak-dziala-startup" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">

@@ -76,21 +76,21 @@ export default function BlogAnnualPlanningCoTo() {
       <SEOHead
         title="Annual Planning — jak planować roczne cele firmy? | Fotz.pl"
         description="Annual Planning (planowanie roczne) — proces, Revenue Target, OKRs, Headcount Plan i błędy do uniknięcia. Kompletny przewodnik dla CEO, CFO i VP Operations."
-        canonical="https://fotz.pl/blog/annual-planning-planowanie-roczne-firmy"
+        canonical="https://www.fotz-studio.pl/blog/annual-planning-planowanie-roczne-firmy"
 
         keywords="Annual Planning co to jest, Annual Planning definicja, czym jest Annual Planning, Annual Planning przykłady, jak działa Annual Planning, Annual Planning znaczenie, Annual Planning przewodnik"
       />
       <ArticleSchema
         title="Annual Planning — jak planować roczne cele firmy?"
         description="Kompletny przewodnik po Annual Planning: proces, Revenue Target Setting, OKRs, budżet i typowe błędy."
-        url="https://fotz.pl/blog/annual-planning-planowanie-roczne-firmy"
+        url="https://www.fotz-studio.pl/blog/annual-planning-planowanie-roczne-firmy"
         datePublished="2024-02-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Annual Planning", url: "https://fotz.pl/blog/annual-planning-planowanie-roczne-firmy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Annual Planning", url: "https://www.fotz-studio.pl/blog/annual-planning-planowanie-roczne-firmy" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 px-4">

@@ -50,23 +50,23 @@ export default function BlogShardingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Database Sharding | Fotz Studio"
+        title="Database Sharding — co to jest, strategie, Vitess, Cassandra, CockroachDB?"
         description="Database Sharding: strategie (hash, range, consistent hashing), cross-shard queries, Vitess, CockroachDB, Citus, Cassandra — kiedy i jak skalować bazy poziomo."
-        canonical="https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
+        canonical="https://www.fotz-studio.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
 
         keywords="Database Sharding co to jest, Database Sharding jak działa, Database Sharding tutorial, Database Sharding przykład, czym jest Database Sharding, Database Sharding dokumentacja, Database Sharding przewodnik"
       />
       <ArticleSchema
         title="Database Sharding — co to jest, strategie, Vitess, Cassandra, CockroachDB?"
         description="Sharding: 6 strategii, 5 narzędzi (Vitess/CockroachDB/Citus/PlanetScale/Cassandra), cross-shard queries, consistent hashing i NoSQL sharding."
-        url="https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
+        url="https://www.fotz-studio.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra"
         datePublished="2024-04-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Database Sharding", url: "https://fotz.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Database Sharding", url: "https://www.fotz-studio.pl/blog/database-sharding-co-to-jest-strategie-vitess-cassandra" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">

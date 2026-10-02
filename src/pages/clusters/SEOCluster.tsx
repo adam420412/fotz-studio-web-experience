@@ -135,13 +135,13 @@ export default function SEOCluster() {
       <SEOHead
         title="SEO i Pozycjonowanie Stron | Fotz Studio Poznań"
         description="Kompleksowe usługi SEO: audyt, pozycjonowanie, SEO lokalne, Google Maps. Zwiększ widoczność w Google i pozyskuj klientów organicznie."
-        canonical="https://fotz.pl/seo"
+        canonical="https://www.fotz-studio.pl/seo"
         keywords="SEO, pozycjonowanie stron, audyt SEO, SEO lokalne, pozycjonowanie Poznań, Google Maps, optymalizacja"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "SEO i Pozycjonowanie", url: "https://fotz.pl/seo" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "SEO i Pozycjonowanie", url: "https://www.fotz-studio.pl/seo" },
         ]}
       />
       <ServiceSchema

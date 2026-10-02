@@ -120,18 +120,18 @@ export default function BlogFotografiaBiznesowa() {
   return (
     <Layout>
       <SEOHead
-        title="Fotografia biznesowa i firmowa | Fotz Studio"
-        description="Przewodnik po fotografii biznesowej. Dowiedz sie, co to jest fotografia korporacyjna, ile kosztuje sesja biznesowa i jak sie do niej przygotowac. Ceny…"
-        canonical="https://fotz.pl/blog/fotografia-biznesowa"
+        title="Fotografia biznesowa i firmowa — co to jest, ile kosztuje, jak przygotowac sesje?"
+        description="Kompletny przewodnik po fotografii biznesowej. Dowiedz się wszystkiego o fotografii korporacyjnej, cenach, rodzajach sesji i przygotowaniu do zdjęć."
+        canonical="https://www.fotz-studio.pl/blog/fotografia-biznesowa"
         keywords="fotografia biznesowa, fotografia firmowa, fotografia korporacyjna, headshoty, sesja biznesowa"
       />
 
       <ArticleSchema
         title="Fotografia biznesowa i firmowa — co to jest, ile kosztuje, jak przygotowac sesje?"
-        description="Kompletny przewodnik po fotografii biznesowej. Dowiedz sie wszystkiego o fotografii korporacyjnej, cenach, rodzajach sesji i przygotowaniu."
+        description="Kompletny przewodnik po fotografii biznesowej. Dowiedz się wszystkiego o fotografii korporacyjnej, cenach, rodzajach sesji i przygotowaniu do zdjęć."
         author="Fotz.pl"
         datePublished="2025-04-12"
-        image="https://fotz.pl/images/fotografia-biznesowa-hero.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbItems} />

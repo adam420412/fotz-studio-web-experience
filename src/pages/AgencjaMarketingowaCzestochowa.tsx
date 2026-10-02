@@ -46,9 +46,9 @@ const services = [
   },
   {
     icon: Share2,
-    title: "Social media i mediach społecznościowych",
+    title: "Social media i marketing w mediach społecznościowych",
     description: "Fotz Studio to agencja social media dla firm z Częstochowy i całej Polski. Prowadzenie profili na Instagramie, Facebooku, LinkedIn i TikToku. Kreacje treści, harmonogram, kampanie zasięgowe i leadowe.",
-    link: "/social-media/czestochowa"
+    link: "/social-media"
   },
   {
     icon: Video,
@@ -80,7 +80,7 @@ const processSteps = [
   {
     number: "03",
     icon: Rocket,
-    title: "Wdrażać i realizacja kampanii",
+    title: "Wdrożenie i realizacja kampanii",
     description: "Działamy. Tworzymy kreacje, konfigurujemy kampanie reklamowe, optymalizujemy strony, budujemy linki. Masz stały dostęp do raportów i dedykowanego opiekuna z twojej marki po stronie agencji."
   },
   {
@@ -194,7 +194,7 @@ export default function AgencjaMarketingowaCzestochowa() {
       <SEOHead
         title="Agencja marketingowa Częstochowa - fotz studio | Fotz Studio"
         description="Agencja marketingowa Częstochowa. Fotz Studio — strony internetowe, SEO, Google Ads dla firm z Częstochowy. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/czestochowa"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/czestochowa"
         keywords="agencja marketingowa Częstochowa, marketing internetowy Częstochowa, agencja reklamowa Częstochowa, kampanie reklamowe Częstochowa, agencja SEO Częstochowa, Google Ads Częstochowa, digital marketing Częstochowa, marketing dla firm Częstochowa"
       />
 
@@ -205,8 +205,8 @@ export default function AgencjaMarketingowaCzestochowa() {
         areaServed="Czestochowa"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa Częstochowa", url: "https://fotz.pl/agencja-marketingowa/czestochowa" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa Częstochowa", url: "https://www.fotz-studio.pl/agencja-marketingowa/czestochowa" }
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -517,8 +517,8 @@ export default function AgencjaMarketingowaCzestochowa() {
           <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa-wroclaw" },
-              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
+              { label: "Agencja marketingowa Wrocław", to: "/agencja-marketingowa/wroclaw" },
+              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
               { label: "Pozycjonowanie SEO", to: "/seo/pozycjonowanie" },
               { label: "Google Ads", to: "/performance-marketing/google-ads" },

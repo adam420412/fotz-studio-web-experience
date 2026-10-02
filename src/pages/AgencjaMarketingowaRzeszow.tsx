@@ -153,14 +153,14 @@ export default function AgencjaMarketingowaRzeszow() {
       <SEOHead
         title="Agencja Marketingowa Rzeszów | Fotz Studio"
         description="Agencja marketingowa Rzeszów ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Rzeszowa i Podkarpacia. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/rzeszow"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/rzeszow"
         keywords="agencja marketingowa rzeszów, marketing internetowy rzeszów, agencja reklamowa rzeszów, kampanie reklamowe rzeszów, seo rzeszów, google ads rzeszów"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Rzeszów", url: "https://fotz.pl/agencja-marketingowa/rzeszow" }
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Rzeszów", url: "https://www.fotz-studio.pl/agencja-marketingowa/rzeszow" }
         ]}/>
 
       <ServiceSchema
@@ -184,14 +184,16 @@ export default function AgencjaMarketingowaRzeszow() {
                 Ponad 500 klientów zaufało nam w Rzeszowie i całym Podkarpaciu. Tworzymy strategie marketingowe, które rzeczywiście przynoszą wyniki. SEO, Google Ads, strony WWW i zarządzanie mediami społecznościowymi - wszystko w jednym miejscu.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Phone className="w-4 h-4 mr-2" />
-                  Bezpłatna Konsultacja
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  <Link to="/kontakt">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Bezpłatna Konsultacja
+                  </Link>
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button asChild size="lg" variant="outline"><a href="/realizacje">
                   <ArrowRight className="w-4 h-4 mr-2" />
-                  Sprawdź NaszeCase Studies
-                </Button>
+                  Sprawdź nasze realizacje
+                </a></Button>
               </div>
             </div>
           </div>
@@ -272,15 +274,15 @@ export default function AgencjaMarketingowaRzeszow() {
                       <span className="text-4xl font-bold text-gray-900">{pkg.price}</span>
                       <span className="text-gray-600 ml-2">PLN</span>
                     </div>
-                    <Button
+                    <Button asChild
                       className={`w-full mb-6 ${
                         pkg.highlight
                           ? "bg-blue-600 hover:bg-blue-700"
                           : "bg-gray-200 hover:bg-gray-300 text-gray-900"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       Wybierz Plan
-                    </Button>
+                    </a></Button>
                     <ul className="space-y-3">
                       {pkg.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start text-sm text-gray-700">
@@ -400,12 +402,16 @@ export default function AgencjaMarketingowaRzeszow() {
               Zaproś nas na bezpłatną konsultację. Poznamy Twój biznes, analizujemy konkurencję i zaproponujemy konkretne działania marketingowe.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-                Zabook Bezpłatną Konsultację
+              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+                <Link to="/kontakt">
+                  Zarezerwuj Bezpłatną Konsultację
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
-                <Phone className="w-4 h-4 mr-2" />
-                Zadzwoń: +48 721 234 567
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
+                <a href="tel:+48790814814">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Zadzwoń: +48 790 814 814
+                </a>
               </Button>
             </div>
           </div>

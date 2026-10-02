@@ -162,7 +162,7 @@ export default function GoogleAdsTorun() {
         <SEOHead
           title="Agencja Google Ads Toruń — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Toruń ✓ Kampanie dla firm z Torunia i Kujaw. Od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/torun"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/torun"
         keywords="google ads torun, kampanie google ads torun, agencja google ads torun, reklamy google torun, google adwords torun, sem torun, google ads dla firm torun, prowadzenie google ads torun, google ads cennik torun, reklama w google torun"
         />
 
@@ -173,10 +173,10 @@ export default function GoogleAdsTorun() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-            { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-            { name: "Toruń", url: "https://fotz.pl/performance-marketing/google-ads/torun" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+            { name: "Toruń", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/torun" },
           ]}/>
 
         <FAQSchema items={faqItems} />
@@ -186,7 +186,7 @@ export default function GoogleAdsTorun() {
             { name: "Strona główna", url: "/" },
             { name: "Performance Marketing", url: "/performance-marketing" },
             { name: "Google Ads", url: "/performance-marketing/google-ads" },
-            { name: "Toruń", url: "https://fotz.pl" },
+            { name: "Toruń", url: "https://www.fotz-studio.pl" },
           ]}/>
 
         {/* Hero Section */}

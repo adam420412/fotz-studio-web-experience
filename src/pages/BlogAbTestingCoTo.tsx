@@ -94,27 +94,27 @@ export default function BlogAbTestingCoTo() {
     <Layout>
       <SEOHead
         title="A/B Testing — co to jest? Testy A/B w marketingu i CRO"
-        description="A/B testing — definicja, 6-krokowy proces, istotność statystyczna, błędy do unikania i narzędzia. Jak prowadzić testy A/B dla stron i emaili. Kompletny…"
-        canonical="https://fotz.pl/blog/ab-testing-co-to"
+        description="Kompletny przewodnik po A/B testach: 6-krokowy proces, istotność statystyczna, MVP sample size, błędy i narzędzia do testowania."
+        canonical="https://www.fotz-studio.pl/blog/ab-testing-co-to"
 
         keywords="A/B Testing co to jest, A/B Testing definicja, czym jest A/B Testing, A/B Testing w marketingu, A/B Testing przykłady, jak działa A/B Testing, A/B Testing strategia"
       />
       <ArticleSchema
         title="A/B Testing — co to jest i jak prowadzić testy A/B?"
         description="Kompletny przewodnik po A/B testach: 6-krokowy proces, istotność statystyczna, MVP sample size, błędy i narzędzia do testowania."
-        url="https://fotz.pl/blog/ab-testing-co-to"
+        url="https://www.fotz-studio.pl/blog/ab-testing-co-to"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "A/B Testing", url: "https://fotz.pl/blog/ab-testing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "A/B Testing", url: "https://www.fotz-studio.pl/blog/ab-testing-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "A/B Testing", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "A/B Testing", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             A/B Testing — co to jest i jak prowadzić testy A/B?
           </h1>

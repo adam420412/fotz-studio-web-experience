@@ -66,9 +66,9 @@ export default function BlogOutsourcingCoToJest() {
   return (
     <>
       <SEOHead
-        title="Outsourcing — co to jest? Rodzaje, zalety i ryzyka | fotz.pl"
+        title="Outsourcing — co to jest? Rodzaje, zalety i ryzyka | FOTZ Studio"
         description="Outsourcing co to jest — wyjasnamy czym jest outsourcing, rodzaje (IT, ksiegowy, marketing), zalety i ryzyka oraz jak wybrac dobrego dostawce."
-        canonical="https://fotz.pl/blog/outsourcing-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/outsourcing-co-to-jest"
 
         keywords="Outsourcing co to jest, Outsourcing definicja, czym jest Outsourcing, Outsourcing przykłady, jak działa Outsourcing, Outsourcing znaczenie, Outsourcing przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogOutsourcingCoToJest() {
         description="Czym jest outsourcing, rodzaje outsourcingu (IT, ksiegowy, marketing, HR), zalety i ryzyka, outsourcing vs insourcing i jak wybrac dostawce."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/outsourcing-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/outsourcing-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

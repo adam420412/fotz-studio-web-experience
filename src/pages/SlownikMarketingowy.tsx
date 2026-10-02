@@ -152,13 +152,13 @@ const SlownikMarketingowy = () => {
     <>
       <SEOHead
         title="Słownik Marketingowy — Pojęcia i Definicje z Marketingu Online"
-        description="Słownik marketingowy Fotz Studio — definicje pojęć z SEO, Google Ads, social media, content marketingu i e-commerce. Poznaj kluczowe terminy marketingu…"
-        canonical="https://fotz.pl/slownik-marketingowy"
+        description="Słownik marketingowy Fotz Studio — definicje pojęć z SEO, Google Ads, social media, content marketingu i e-commerce. Poznaj kluczowe terminy marketingu cyfrowego w jednym miejscu."
+        canonical="https://www.fotz-studio.pl/slownik-marketingowy"
         keywords="słownik marketingowy, pojęcia marketingowe, definicje SEO, terminy Google Ads, słownik social media, marketing słownik online, pojęcia z marketingu internetowego"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Słownik marketingowy", url: "https://fotz.pl/slownik-marketingowy" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Słownik marketingowy", url: "https://www.fotz-studio.pl/slownik-marketingowy" }
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

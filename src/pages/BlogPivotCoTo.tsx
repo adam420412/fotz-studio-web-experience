@@ -86,22 +86,22 @@ export default function BlogPivotCoTo() {
     <Layout>
       <SEOHead
         title="Pivot w startupie — co to jest? Rodzaje pivotów i kiedy pivotować"
-        description="Pivot — definicja, 6 typów pivotów (Zoom-In, Customer Segment, Platform i in.), sygnały że czas na zmianę i jak zakomunikować inwestorom. Przewodnik dla…"
-        canonical="https://fotz.pl/blog/pivot-startup-co-to"
+        description="Kompletny przewodnik po pivot: 6 typów pivotów, 5 sygnałów że czas na zmianę, przykłady (Slack, YouTube, Amazon) i jak odróżnić pivot od porażki."
+        canonical="https://www.fotz-studio.pl/blog/pivot-startup-co-to"
 
         keywords="Pivot w startupie co to jest, Pivot w startupie definicja, czym jest Pivot w startupie, Pivot w startupie startup, Pivot w startupie jak liczyć, Pivot w startupie wzór, Pivot w startupie przykłady"
       />
       <ArticleSchema
         title="Pivot — co to jest i kiedy pivotować w startupie?"
         description="Kompletny przewodnik po pivot: 6 typów pivotów, 5 sygnałów że czas na zmianę, przykłady (Slack, YouTube, Amazon) i jak odróżnić pivot od porażki."
-        url="https://fotz.pl/blog/pivot-startup-co-to"
+        url="https://www.fotz-studio.pl/blog/pivot-startup-co-to"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Pivot w startupie", url: "https://fotz.pl/blog/pivot-startup-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Pivot w startupie", url: "https://www.fotz-studio.pl/blog/pivot-startup-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -109,7 +109,7 @@ export default function BlogPivotCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Pivot w startupie", url: "https://fotz.pl" },
+              { name: "Pivot w startupie", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Pivot — co to jest i kiedy pivotować w startupie?

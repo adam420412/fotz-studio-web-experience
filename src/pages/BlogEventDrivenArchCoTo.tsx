@@ -48,23 +48,23 @@ export default function BlogEventDrivenArchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Event-Driven Architecture | Fotz Studio"
-        description="Event-Driven Architecture: zdarzenia, message brokers (Kafka, RabbitMQ, SQS), Event Sourcing, Saga Pattern, Outbox Pattern i kiedy stosować EDA zamiast…"
-        canonical="https://fotz.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
+        title="Event-Driven Architecture — jak wdrożyć EDA? | Fotz Studio"
+        description="EDA: architektura sterowana zdarzeniami, message brokers (Kafka, RabbitMQ, SQS), Event Sourcing, Saga, Outbox Pattern i porównanie z REST API dla mikroserwisów."
+        canonical="https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
 
         keywords="Event-Driven Architecture co to jest, Event-Driven Architecture definicja, czym jest Event-Driven Architecture, Event-Driven Architecture przykłady, jak działa Event-Driven Architecture, Event-Driven Architecture znaczenie, Event-Driven Architecture przewodnik"
       />
       <ArticleSchema
         title="Event-Driven Architecture — co to jest i jak wdrożyć EDA?"
         description="EDA: architektura sterowana zdarzeniami, message brokers (Kafka, RabbitMQ, SQS), Event Sourcing, Saga, Outbox Pattern i porównanie z REST API dla mikroserwisów."
-        url="https://fotz.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
+        url="https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz"
         datePublished="2024-03-08"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Event-Driven Architecture", url: "https://fotz.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Event-Driven Architecture", url: "https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-jak-wdrozyz" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">

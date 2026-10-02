@@ -216,7 +216,7 @@ export default function StronyInternetoweLubelskie() {
       <SEOHead
         title="Tworzenie stron internetowych Lubelskie | Strony WWW Lublin"
         description="Tworzenie stron internetowych w województwie lubelskim. Profesjonalne strony WWW dla firm z Lublina i regionu. Od 499 zł. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/strony-internetowe/lubelskie"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/lubelskie"
         keywords="strony internetowe lubelskie, tworzenie stron lubelskie, strony www lubelskie, projektowanie stron lublin"
       />
       <ServiceSchema
@@ -258,8 +258,10 @@ export default function StronyInternetoweLubelskie() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -441,15 +443,15 @@ export default function StronyInternetoweLubelskie() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.highlight
                           ? "bg-white text-blue-600 hover:bg-slate-100"
                           : "bg-blue-600 text-white hover:bg-blue-700"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

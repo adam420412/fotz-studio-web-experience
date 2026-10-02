@@ -213,8 +213,8 @@ const KampanieReklamowe = () => {
       <Layout>
       <SEOHead
         title="Kampanie Reklamowe Google Ads i Meta Ads | Fotz Studio"
-        description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Skuteczna reklama online dla firm — planowanie, prowadzenie i optymalizacja…"
-        canonical="https://fotz.pl/kampanie-reklamowe"
+        description="Kampanie reklamowe Google Ads, Facebook Ads, Instagram Ads i TikTok Ads. Skuteczna reklama online dla firm — planowanie, prowadzenie i optymalizacja kampanii z mierzalnymi wynikami i pełną kontrolą nad budżetem."
+        canonical="https://www.fotz-studio.pl/kampanie-reklamowe"
         keywords="kampanie reklamowe, kampanie reklamowe online, kampania reklamowa, prowadzenie kampanii reklamowych, kampanie google ads, kampanie facebook ads, reklamy internetowe, agencja reklamowa, performance marketing, kampanie ppc, reklama w internecie, kampanie reklamowe dla firm"
       />
       <ServiceSchema 
@@ -224,9 +224,9 @@ const KampanieReklamowe = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Kampanie Reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Kampanie Reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
         ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}
@@ -609,7 +609,7 @@ const KampanieReklamowe = () => {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="text-lg px-8">
-                <a href="tel:+48123456789">
+                <a href="tel:+48790814814">
                   Zadzwoń teraz
                 </a>
               </Button>

@@ -137,7 +137,7 @@ const StronyInternetoweKatowice = () => {
       <SEOHead
         title="Strony Internetowe Katowice | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Katowice — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Katowic. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/katowice"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/katowice"
         keywords="strony internetowe katowice, tworzenie stron www katowice, projektowanie stron katowice, sklepy internetowe katowice, strona www katowice, www katowice, wykonanie strony internetowej katowice, responsywna strona www katowice, wordpress katowice, strony internetowe śląsk"
       />
       
@@ -149,9 +149,9 @@ const StronyInternetoweKatowice = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Katowice", url: "https://fotz.pl/uslugi/strony-internetowe/katowice" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Katowice", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/katowice" },
         ]}/>
       
       <FAQSchema 
@@ -285,7 +285,7 @@ const StronyInternetoweKatowice = () => {
                   
                   <h3>Korzyści z lokalnego podejścia</h3>
                   <p>
-                    Wybierając <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencję</Link> z 
+                    Wybierając <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">agencję</Link> z 
                     doświadczeniem do tworzenia stron www, zyskujesz partnera, który doskonale rozumie specyfikę lokalnego rynku. 
                     Specjalista potrafi zaprojektować stronę dopasowaną do potrzeb lokalnych klientów z Katowic i całego Śląska.
                   </p>

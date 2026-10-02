@@ -82,21 +82,21 @@ export default function BlogSalesPlaybookCoTo() {
       <SEOHead
         title="Sales Playbook — co to jest i jak zbudować? | Fotz.pl"
         description="Sales Playbook w sprzedaży B2B — co zawiera, jak zbudować, sekcje, narzędzia i wpływ na win rate i ramp time. Kompletny przewodnik dla Sales Leaders."
-        canonical="https://fotz.pl/blog/sales-playbook-co-to-jest-jak-budowac"
+        canonical="https://www.fotz-studio.pl/blog/sales-playbook-co-to-jest-jak-budowac"
 
         keywords="Sales Playbook co to jest, Sales Playbook definicja, czym jest Sales Playbook, Sales Playbook w sprzedaży, Sales Playbook strategia, Sales Playbook przykłady, jak używać Sales Playbook"
       />
       <ArticleSchema
         title="Sales Playbook — co to jest i jak zbudować?"
         description="Kompletny przewodnik po Sales Playbook: sekcje, budowanie, maintenance i wpływ na wyniki sprzedaży."
-        url="https://fotz.pl/blog/sales-playbook-co-to-jest-jak-budowac"
+        url="https://www.fotz-studio.pl/blog/sales-playbook-co-to-jest-jak-budowac"
         datePublished="2024-02-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Sales Playbook", url: "https://fotz.pl/blog/sales-playbook-co-to-jest-jak-budowac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Sales Playbook", url: "https://www.fotz-studio.pl/blog/sales-playbook-co-to-jest-jak-budowac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">

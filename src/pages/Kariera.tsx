@@ -135,18 +135,18 @@ export default function Kariera() {
     <Layout>
       <SEOHead
         title="Kariera w Fotz Studio | Fotz Studio"
-        description="Kariera w Fotz Studio Poznań — oferty pracy dla specjalistów SEO, social media managerów, grafików i web developerów. Dołącz do kreatywnego zespołu…"
-        canonical="https://fotz.pl/kariera"
+        description="Kariera w Fotz Studio Poznań — oferty pracy dla specjalistów SEO, social media managerów, grafików i web developerów. Dołącz do kreatywnego zespołu, który tworzy projekty dla topowych marek."
+        canonical="https://www.fotz-studio.pl/kariera"
         keywords="kariera agencja marketingowa poznań, praca SEO specjalista poznań, oferty pracy marketing poznań, praca social media manager, web developer praca poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kariera", url: "https://fotz.pl/kariera" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kariera", url: "https://www.fotz-studio.pl/kariera" }
         ]}/>
       <WebPageSchema 
         title="Kariera w Fotz Studio"
         description="Aktualne oferty pracy w agencji marketingowej Fotz Studio w Poznaniu."
-        url="https://fotz.pl/kariera"
+        url="https://www.fotz-studio.pl/kariera"
       />
 
       {/* Hero Section */}

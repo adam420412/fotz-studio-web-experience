@@ -198,7 +198,7 @@ export default function FacebookAdsWroclaw() {
       <SEOHead
         title="Agencja Facebook Ads Wrocław — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Wrocław ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/facebook-ads/wroclaw"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/wroclaw"
         keywords="facebook ads wrocław, agencja facebook ads wrocław, kampanie facebook wrocław, reklamy facebook wrocław, meta ads wrocław, instagram ads wrocław"
       />
       <ServiceSchema
@@ -208,9 +208,9 @@ export default function FacebookAdsWroclaw() {
         areaServed="Wroclaw"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-          { name: "Facebook Ads Wrocław", url: "https://fotz.pl/performance-marketing/facebook-ads/wroclaw" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "Facebook Ads Wrocław", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/wroclaw" }
         ]}/>
       <FAQSchema items={faqItems} />
 

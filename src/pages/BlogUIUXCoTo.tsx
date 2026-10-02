@@ -74,8 +74,8 @@ export default function BlogUIUXCoTo() {
     <>
       <SEOHead
         title="UI/UX — co to jest? Projektowanie interfejsu i doświadczeń"
-        description="UI UX co to jest — wyjaśniamy czym jest UI (interfejs użytkownika) i UX (doświadczenie użytkownika), jaka jest różnica i dlaczego wpływają na konwersje…"
-        canonical="https://fotz.pl/blog/ui-ux-co-to"
+        description="Czym jest UI (User Interface) i UX (User Experience), jaka jest różnica między nimi i dlaczego mają kluczowy wpływ na konwersje."
+        canonical="https://www.fotz-studio.pl/blog/ui-ux-co-to"
 
         keywords="UI/UX co to jest, UI/UX definicja, czym jest UI/UX, UI/UX przykłady, jak działa UI/UX, UI/UX znaczenie, UI/UX przewodnik"
       />
@@ -84,7 +84,7 @@ export default function BlogUIUXCoTo() {
         description="Czym jest UI (User Interface) i UX (User Experience), jaka jest różnica między nimi i dlaczego mają kluczowy wpływ na konwersje."
         datePublished="2025-02-12"
         dateModified="2025-03-30"
-        url="https://fotz.pl/blog/ui-ux-co-to"
+        url="https://www.fotz-studio.pl/blog/ui-ux-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

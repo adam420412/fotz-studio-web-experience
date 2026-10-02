@@ -58,7 +58,7 @@ export default function BlogJakZalozycSklep() {
         title="Jak założyć sklep internetowy? Kompletny poradnik 2025 | Fotz.pl"
         description="Jak założyć sklep internetowy krok po kroku? Wybór platformy, koszty, wymagania prawne i marketing. Praktyczny przewodnik dla przedsiębiorców 2025."
         ogType="article"
-        canonical="https://fotz.pl/blog/jak-zalozyc-sklep-internetowy"
+        canonical="https://www.fotz-studio.pl/blog/jak-zalozyc-sklep-internetowy"
         keywords="jak założyć sklep internetowy, tworzenie sklepu online, platforma e-commerce, WooCommerce, Shoper, poradnik 2025"
         schemaJson={[
           {
@@ -75,12 +75,12 @@ export default function BlogJakZalozycSklep() {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-02-01",
             "dateModified": "2025-04-01",
-            "image": "https://fotz.pl/og-sklep.jpg"
+            "image": "https://www.fotz-studio.pl/og-image.jpg"
           }
         ]}
       />

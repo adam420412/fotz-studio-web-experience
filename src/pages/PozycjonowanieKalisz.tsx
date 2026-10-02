@@ -98,7 +98,7 @@ const PozycjonowanieKalisz = () => {
       <SEOHead
         title="Pozycjonowanie Kalisz - Agencja SEO Wielkopolska | Fotz Studio"
         description="Pozycjonowanie stron Kalisz i Wielkopolska. Agencja SEO Fotz Studio - szybkie efekty, niższa konkurencja, białohat SEO dla firm z Kalisza. Bezpłatny audyt!"
-        canonical="https://fotz.pl/pozycjonowanie/kalisz"
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/kalisz"
         keywords="pozycjonowanie kalisz, agencja seo kalisz, seo kalisz, pozycjonowanie stron kalisz, seo dla firm kalisz, pozycjonowanie lokalne kalisz, seo wielkopolska"
       />
       <ServiceSchema
@@ -109,7 +109,7 @@ const PozycjonowanieKalisz = () => {
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
-          { name: "Pozycjonowanie", url: "/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
           { name: "Kalisz", url: "/pozycjonowanie/kalisz" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -481,13 +481,13 @@ const PozycjonowanieKalisz = () => {
           </h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { city: "Warszawa", href: "/pozycjonowanie/warszawa" },
-              { city: "Kraków", href: "/pozycjonowanie/krakow" },
-              { city: "Poznań", href: "/pozycjonowanie/poznan" },
-              { city: "Wrocław", href: "/pozycjonowanie/wroclaw" },
-              { city: "Gdańsk", href: "/pozycjonowanie/gdansk" },
-              { city: "Łódź", href: "/pozycjonowanie/lodz" },
-              { city: "Szczecin", href: "/pozycjonowanie/szczecin" },
+              { city: "Warszawa", href: "/uslugi/pozycjonowanie/warszawa" },
+              { city: "Kraków", href: "/uslugi/pozycjonowanie/krakow" },
+              { city: "Poznań", href: "/uslugi/pozycjonowanie/poznan" },
+              { city: "Wrocław", href: "/uslugi/pozycjonowanie/wroclaw" },
+              { city: "Gdańsk", href: "/uslugi/pozycjonowanie/gdansk" },
+              { city: "Łódź", href: "/uslugi/pozycjonowanie/lodz" },
+              { city: "Szczecin", href: "/uslugi/pozycjonowanie/szczecin" },
             ].map((item) => (
               <Link
                 key={item.city}

@@ -37,7 +37,7 @@ export default function StronyInternetoweKielce() {
       <SEOHead
         title="Strony Internetowe Kielce | Projektowanie Stron WWW"
         description="Nowoczesne strony internetowe dla firm w Kielcach. Projektowanie, programowanie i optymalizacja stron WWW. Sprawdzone rozwiązania dla biznesu."
-        canonical="https://fotz.pl/strony-internetowe/kielce"
+        canonical="https://www.fotz-studio.pl/strony-internetowe/kielce"
         keywords="strony internetowe kielce, tworzenie stron internetowych kielce, strony www kielce, projektowanie stron kielce, agencja webdesign kielce, sklep internetowy kielce"
       />
 
@@ -48,9 +48,9 @@ export default function StronyInternetoweKielce() {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony internetowe", url: "https://fotz.pl/strony-internetowe" },
-          { name: "Kielce", url: "https://fotz.pl/strony-internetowe/kielce" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Kielce", url: "https://www.fotz-studio.pl/strony-internetowe/kielce" }
         ]}/>
 
       <FAQSchema items={faqs} />
@@ -64,8 +64,10 @@ export default function StronyInternetoweKielce() {
           <p className="text-xl text-blue-100 mb-8">
                         Strony internetowe Kielce — tworzenie stron www i sklepy internetowe dla firm ze Świętokrzyskiego. Tworzenie stron internetowych Kielce z nowoczesnym designem, SEO i responsywnym kodem. Projektowanie stron www Kielce od 499 zł netto.
           </p>
-          <Button size="lg" className="bg-blue-400 hover:bg-blue-500 text-blue-950">
-            Bezpłatna Konsultacja
+          <Button asChild size="lg" className="bg-blue-400 hover:bg-blue-500 text-blue-950">
+            <Link to="/kontakt">
+              Bezpłatna Konsultacja
+            </Link>
           </Button>
         </div>
       </section>
@@ -213,7 +215,7 @@ export default function StronyInternetoweKielce() {
                 <li>Podstawowe SEO</li>
                 <li>Hosting na 1 rok</li>
               </ul>
-              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400 transform scale-105">
               <div className="bg-blue-400 text-blue-950 inline-block px-3 py-1 rounded-full text-sm font-semibold mb-4">Popularny</div>
@@ -228,7 +230,7 @@ export default function StronyInternetoweKielce() {
                 <li>Analytics setup</li>
                 <li>Hosting na 1 rok</li>
               </ul>
-              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
             <div className="bg-white p-8 rounded-lg shadow border-t-4 border-blue-400">
               <h3 className="text-2xl font-bold mb-2">E-commerce</h3>
@@ -242,7 +244,7 @@ export default function StronyInternetoweKielce() {
                 <li>Wsparcie tech.</li>
                 <li>Hosting na 1 rok</li>
               </ul>
-              <Button className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950">Wybrać</Button>
+              <Button asChild className="w-full bg-blue-400 hover:bg-blue-500 text-blue-950"><a href="/kontakt">Wybrać</a></Button>
             </div>
           </div>
         </div>
@@ -268,7 +270,7 @@ export default function StronyInternetoweKielce() {
       {/* Link nawigacyjny */}
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Link to="/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
+          <Link to="/uslugi/strony-internetowe" className="text-blue-600 hover:text-blue-800 font-medium">
             ← Strony internetowe — wszystkie miasta
           </Link>
         </div>

@@ -227,15 +227,15 @@ const Pozycjonowanie = () => {
 
   const cityLinks = [
     { name: "Poznań", href: "/seo/pozycjonowanie-poznan" },
-    { name: "Warszawa", href: "/pozycjonowanie-warszawa" },
-    { name: "Kraków", href: "/pozycjonowanie-krakow" },
-    { name: "Wrocław", href: "/pozycjonowanie-wroclaw" },
-    { name: "Gdańsk", href: "/pozycjonowanie-gdansk" },
-    { name: "Łódź", href: "/pozycjonowanie-lodz" },
-    { name: "Katowice", href: "/pozycjonowanie-katowice" },
-    { name: "Szczecin", href: "/pozycjonowanie-szczecin" },
-    { name: "Bydgoszcz", href: "/pozycjonowanie-bydgoszcz" },
-    { name: "Lublin", href: "/pozycjonowanie-lublin" },
+    { name: "Warszawa", href: "/seo/pozycjonowanie-warszawa" },
+    { name: "Kraków", href: "/seo/pozycjonowanie-krakow" },
+    { name: "Wrocław", href: "/seo/pozycjonowanie-wroclaw" },
+    { name: "Gdańsk", href: "/seo/pozycjonowanie-gdansk" },
+    { name: "Łódź", href: "/seo/pozycjonowanie-lodz" },
+    { name: "Katowice", href: "/seo/pozycjonowanie-katowice" },
+    { name: "Szczecin", href: "/uslugi/pozycjonowanie/szczecin" },
+    { name: "Bydgoszcz", href: "/uslugi/pozycjonowanie/bydgoszcz" },
+    { name: "Lublin", href: "/uslugi/pozycjonowanie/lublin" },
   ];
 
   const includedFeatures = [
@@ -278,8 +278,8 @@ const Pozycjonowanie = () => {
     <>
       <SEOHead
         title="Pozycjonowanie Stron Internetowych - Agencja SEO dla Firm"
-        description="Pozycjonowanie stron internetowych w Google. Agencja SEO — audyt SEO, optymalizacja, link building. Skuteczne pozycjonowanie stron www i sklepów…"
-        canonical="https://fotz.pl/seo/pozycjonowanie"
+        description="Pozycjonowanie stron internetowych w Google. Agencja SEO — audyt SEO, optymalizacja, link building. Skuteczne pozycjonowanie stron www i sklepów, które przekłada się na ruch, leady i sprzedaż."
+        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie"
         keywords="pozycjonowanie stron internetowych, agencja seo, pozycjonowanie stron www, audyt seo, optymalizacja seo, pozycjonowanie w google, pozycjonowanie lokalne, core web vitals, frazy kluczowe, seo techniczne, link building"
       />
       
@@ -291,9 +291,9 @@ const Pozycjonowanie = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
         ]}/>
       
       <FAQSchema 
@@ -754,7 +754,7 @@ const Pozycjonowanie = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 {cityLinks.map((city, index) => (
                   <FadeInView key={index} delay={index * 0.05}>
-                    {city.href === "/seo/pozycjonowanie-poznan" ? (
+                    {city.href ? (
                       <Link 
                         to={city.href}
                         className="flex items-center justify-center gap-2 px-4 py-4 bg-primary/10 border border-primary/30 rounded-xl text-sm font-medium hover:bg-primary/20 transition-all group"

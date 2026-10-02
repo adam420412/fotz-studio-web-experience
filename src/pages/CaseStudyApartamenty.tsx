@@ -41,15 +41,15 @@ const CaseStudyApartamenty = () => {
   return (
     <Layout>
       <SEOHead
-        title="Apartamenty Chorwacja | Fotz Studio"
+        title="Apartamenty Chorwacja - System Rezerwacji - Case Study"
         description="Case study: strona internetowa dla apartamentów w Chorwacji z systemem rezerwacji online, SEO turystyczne i responsywny design. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/apartamenty-chorwacja"
+        canonical="https://www.fotz-studio.pl/realizacje/apartamenty-chorwacja"
         keywords="case study apartamenty, marketing nieruchomości, reklama deweloper, google ads nieruchomości realizacja"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Apartamenty Chorwacja", url: "https://fotz.pl/realizacje/apartamenty-chorwacja" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Apartamenty Chorwacja", url: "https://www.fotz-studio.pl/realizacje/apartamenty-chorwacja" }
       ]}/>
       <ArticleSchema
         title="Apartamenty Chorwacja - System Rezerwacji - Case Study"
@@ -57,8 +57,8 @@ const CaseStudyApartamenty = () => {
         author="Fotz Studio"
         datePublished="2023-11-10"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/apartamenty-chorwacja"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/apartamenty-chorwacja"
       />
 
       {/* Hero */}

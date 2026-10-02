@@ -95,21 +95,21 @@ export default function BlogBoardMeetingCoTo() {
       <SEOHead
         title="Board Meeting — jak przygotować spotkanie zarządu? | Fotz.pl"
         description="Board Meeting (spotkanie zarządu) — agenda, Board Deck, jak CEO powinien prowadzić spotkanie i najczęstsze błędy. Kompletny przewodnik dla founderów i CEO."
-        canonical="https://fotz.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac"
+        canonical="https://www.fotz-studio.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac"
 
         keywords="Board Meeting co to jest, Board Meeting definicja, czym jest Board Meeting, Board Meeting przykłady, jak działa Board Meeting, Board Meeting znaczenie, Board Meeting przewodnik"
       />
       <ArticleSchema
         title="Board Meeting — jak przygotować spotkanie zarządu?"
         description="Kompletny przewodnik po Board Meeting: agenda, Board Deck, prowadzenie spotkania i błędy do uniknięcia."
-        url="https://fotz.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac"
+        url="https://www.fotz-studio.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac"
         datePublished="2024-02-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Board Meeting", url: "https://fotz.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Board Meeting", url: "https://www.fotz-studio.pl/blog/board-meeting-spotkanie-zarzadu-jak-przygotowac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-slate-800 to-slate-900 text-white py-20 px-4">

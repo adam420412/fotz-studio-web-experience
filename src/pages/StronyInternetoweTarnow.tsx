@@ -89,12 +89,12 @@ const StronyInternetoweTarnow = () => {
       <SEOHead
         title="Strony Internetowe Tarnów | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Tarnów — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Tarnowa. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/tarnow"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/tarnow"
         keywords="strony internetowe tarnów, tworzenie stron tarnów, strony www tarnów, projektowanie stron tarnów"
       />
       
       <ServiceSchema name="Strony Internetowe Tarnów" description="Profesjonalne tworzenie stron internetowych dla firm z Tarnowa." provider="FOTZ Studio" areaServed="Tarnów" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Tarnów", url: "https://fotz.pl/uslugi/strony-internetowe/tarnow" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Tarnów", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/tarnow" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

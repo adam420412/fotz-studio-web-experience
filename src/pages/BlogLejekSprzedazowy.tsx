@@ -65,9 +65,9 @@ export default function BlogLejekSprzedazowy() {
   return (
     <>
       <SEOHead
-        title="Lejek sprzedazowy — co to jest i jak go zbudowac? | fotz.pl"
+        title="Lejek sprzedazowy — co to jest i jak go zbudowac? | FOTZ Studio"
         description="Lejek sprzedazowy co to jest — wyjasnamy etapy lejka (AIDA, TOFU/MOFU/BOFU), jak zbudowac lejek sprzedazowy B2B i B2C oraz jak mierzyc jego efektywnosc."
-        canonical="https://fotz.pl/blog/lejek-sprzedazowy-co-to"
+        canonical="https://www.fotz-studio.pl/blog/lejek-sprzedazowy-co-to"
 
         keywords="Lejek sprzedazowy co to jest, Lejek sprzedazowy definicja, czym jest Lejek sprzedazowy, Lejek sprzedazowy w sprzedaży, Lejek sprzedazowy strategia, Lejek sprzedazowy przykłady, jak używać Lejek sprzedazowy"
       />
@@ -76,7 +76,7 @@ export default function BlogLejekSprzedazowy() {
         description="Czym jest lejek sprzedazowy, etapy AIDA i TOFU/MOFU/BOFU, jak budowac lejek B2B vs B2C, metryki i narzedzia do optymalizacji konwersji."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/lejek-sprzedazowy-co-to"
+        url="https://www.fotz-studio.pl/blog/lejek-sprzedazowy-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

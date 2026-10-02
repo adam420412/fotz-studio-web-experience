@@ -87,21 +87,21 @@ export default function BlogAarrrPirateMetrics() {
       <SEOHead
         title="AARRR Pirate Metrics — framework wzrostu startupu | Fotz.pl"
         description="AARRR Pirate Metrics — Acquisition, Activation, Retention, Revenue, Referral. Jak używać frameworku do identyfikacji bottlenecków wzrostu. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
+        canonical="https://www.fotz-studio.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
 
         keywords="AARRR Pirate Metrics, AARRR Pirate Metrics co to jest, AARRR Pirate Metrics jak działa, AARRR Pirate Metrics definicja, AARRR Pirate Metrics przykłady, AARRR Pirate Metrics poradnik, AARRR Pirate Metrics przewodnik"
       />
       <ArticleSchema
         title="AARRR Pirate Metrics — framework wzrostu startupu"
         description="Kompletny przewodnik po Pirate Metrics AARRR: 5 etapów, metryki, benchmarki i optymalizacja funnel wzrostu."
-        url="https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
+        url="https://www.fotz-studio.pl/blog/aarrr-pirate-metrics-framework-wzrostu"
         datePublished="2024-02-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AARRR Pirate Metrics", url: "https://fotz.pl/blog/aarrr-pirate-metrics-framework-wzrostu" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AARRR Pirate Metrics", url: "https://www.fotz-studio.pl/blog/aarrr-pirate-metrics-framework-wzrostu" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">

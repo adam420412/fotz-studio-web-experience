@@ -51,23 +51,23 @@ export default function BlogLowCodeCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Low-Code i No-Code | Fotz Studio"
+        title="Low-Code i No-Code — co to jest, Retool, Bubble, n8n, Airtable?"
         description="Low-Code i No-Code: Retool, Bubble, Webflow, Airtable, n8n — kiedy używać, porównanie platform, use cases i kiedy wybrać custom development."
-        canonical="https://fotz.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
+        canonical="https://www.fotz-studio.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
 
         keywords="Low-Code i No-Code co to jest, Low-Code i No-Code definicja, czym jest Low-Code i No-Code, Low-Code i No-Code przykłady, jak działa Low-Code i No-Code, Low-Code i No-Code znaczenie, Low-Code i No-Code przewodnik"
       />
       <ArticleSchema
         title="Low-Code i No-Code — co to jest, Retool, Bubble, n8n, Airtable?"
         description="Low-Code vs No-Code: 6 platform, 6 use cases z czasem realizacji, Retool/Bubble/Webflow/Airtable/n8n — kiedy Low-Code a kiedy custom dev."
-        url="https://fotz.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
+        url="https://www.fotz-studio.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n"
         datePublished="2024-04-08"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Low-Code / No-Code", url: "https://fotz.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Low-Code / No-Code", url: "https://www.fotz-studio.pl/blog/low-code-no-code-co-to-jest-retool-bubble-airtable-n8n" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-slate-900 text-white py-20 px-4">

@@ -133,8 +133,8 @@ const GoogleAds = () => {
       <Layout>
       <SEOHead
         title="Kampanie Google Ads - Skuteczna Reklama w Google dla Firm"
-        description="Kampanie Google Ads dla firm — reklamy w wyszukiwarce Google, YouTube, Shopping. Prowadzenie i optymalizacja kampanii Google Ads. Agencja Google Partners…"
-        canonical="https://fotz.pl/performance-marketing/google-ads"
+        description="Kampanie Google Ads dla firm — reklamy w wyszukiwarce Google, YouTube i Google Shopping. Prowadzenie i optymalizacja kampanii Google Ads przez agencję Google Partners, które generują sprzedaż i zwrot z inwestycji."
+        canonical="https://www.fotz-studio.pl/performance-marketing/google-ads"
         keywords="kampanie google ads, reklamy w google ads, prowadzenie kampanii google ads, agencja google ads, google adwords, reklama w google, google partners, google ads dla firm, google ads cennik, optymalizacja google ads, sem google ads"
       />
 
@@ -145,9 +145,9 @@ const GoogleAds = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
 
@@ -769,7 +769,7 @@ const GoogleAds = () => {
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/performance-marketing/facebook-ads" className="text-primary hover:underline font-medium text-sm">→ Facebook Ads</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">→ Kampanie reklamowe</Link>
               <Link to="/case-studies/optymalizacja-konwersji-ecommerce" className="text-primary hover:underline font-medium text-sm">→ Case Study: Optymalizacja konwersji</Link>
             </div>

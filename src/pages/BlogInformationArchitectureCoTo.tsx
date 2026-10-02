@@ -101,23 +101,23 @@ export default function BlogInformationArchitectureCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Architektura Informacji | Fotz Studio"
-        description="Architektura informacji (IA) — definicja, 4 komponenty (Organization, Labeling, Navigation, Search), metody badawcze (card sorting, tree testing) i…"
-        canonical="https://fotz.pl/blog/information-architecture-co-to"
+        title="Architektura Informacji — co to jest i jak ją projektować?"
+        description="Kompletny przewodnik po Information Architecture: 4 komponenty, 6 schematów organizacji, metody badawcze (card sorting, tree testing) i deliverables."
+        canonical="https://www.fotz-studio.pl/blog/information-architecture-co-to"
 
         keywords="Architektura Informacji co to jest, Architektura Informacji definicja, czym jest Architektura Informacji, Architektura Informacji przykłady, jak działa Architektura Informacji, Architektura Informacji znaczenie, Architektura Informacji przewodnik"
       />
       <ArticleSchema
         title="Architektura Informacji — co to jest i jak ją projektować?"
         description="Kompletny przewodnik po Information Architecture: 4 komponenty, 6 schematów organizacji, metody badawcze (card sorting, tree testing) i deliverables."
-        url="https://fotz.pl/blog/information-architecture-co-to"
+        url="https://www.fotz-studio.pl/blog/information-architecture-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Architektura Informacji", url: "https://fotz.pl/blog/information-architecture-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Architektura Informacji", url: "https://www.fotz-studio.pl/blog/information-architecture-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -125,7 +125,7 @@ export default function BlogInformationArchitectureCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Architektura Informacji", url: "https://fotz.pl" },
+              { name: "Architektura Informacji", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Architektura Informacji — co to jest i jak ją projektować?

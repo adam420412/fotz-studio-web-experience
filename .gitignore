@@ -27,3 +27,7 @@ deno.lock
 *.sln
 *.sw?
 .vercel
+
+# Local browser QA evidence (regenerate with the SEO audit scripts).
+/docs/seo/qa-2026-10-01/
+/scripts/__pycache__/

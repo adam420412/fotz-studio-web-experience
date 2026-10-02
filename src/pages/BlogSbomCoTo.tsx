@@ -53,23 +53,23 @@ export default function BlogSbomCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="SBOM | Fotz Studio"
+        title="SBOM — co to jest Software Bill of Materials i jak wdrożyć?"
         description="SBOM: definicja, formaty (CycloneDX, SPDX), narzędzia (Syft, Trivy, Grype), Software Supply Chain Security, VEX i wdrożenie krok po kroku."
-        canonical="https://fotz.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
+        canonical="https://www.fotz-studio.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
 
         keywords="SBOM co to jest, SBOM definicja, czym jest SBOM, SBOM przykłady, jak działa SBOM, SBOM znaczenie, SBOM przewodnik"
       />
       <ArticleSchema
         title="SBOM — co to jest Software Bill of Materials i jak wdrożyć?"
         description="SBOM: elementy, formaty (CycloneDX/SPDX), Supply Chain Security (SLSA, Sigstore), vulnerability management, VEX i 6 narzędzi."
-        url="https://fotz.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
+        url="https://www.fotz-studio.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz"
         datePublished="2024-04-03"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SBOM", url: "https://fotz.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SBOM", url: "https://www.fotz-studio.pl/blog/sbom-software-bill-of-materials-co-to-jest-jak-wdrozyz" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-slate-800 to-slate-900 text-white py-20 px-4">

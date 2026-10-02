@@ -150,9 +150,9 @@ export default function MarketingB2B() {
   return (
     <>
       <SEOHead
-        title="Marketing B2B | Strategie lead generation dla firm | fotz.pl"
+        title="Marketing B2B | Strategie lead generation dla firm | FOTZ Studio"
         description="Marketing B2B — strategie lead generation, LinkedIn Ads, content marketing, email nurturing dla firm sprzedających innym firmom. Sprawdź ofertę!"
-        canonical="https://fotz.pl/uslugi/marketing-b2b"
+        canonical="https://www.fotz-studio.pl/uslugi/marketing-b2b"
         keywords="marketing b2b, marketing dla firm b2b, strategie marketingowe b2b, lead generation b2b, digital marketing b2b"
       />
       <ServiceSchema
@@ -193,8 +193,10 @@ export default function MarketingB2B() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna analiza B2B <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna analiza B2B <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>

@@ -85,22 +85,22 @@ export default function BlogBuyerPersonaCoTo() {
     <Layout>
       <SEOHead
         title="Buyer Persona — co to jest? Jak tworzyć persony zakupowe B2B"
-        description="Buyer persona — definicja, 6 elementów profilu, 4 role B2B (Economic Buyer, Champion, User, Influencer), różnica vs ICP i jak tworzyć oparte na danych…"
-        canonical="https://fotz.pl/blog/buyer-persona-co-to"
+        description="Kompletny przewodnik po buyer persona: 6 elementów profilu, 4 role w B2B, różnica vs ICP i metody badawcze."
+        canonical="https://www.fotz-studio.pl/blog/buyer-persona-co-to"
 
         keywords="Buyer Persona co to jest, Buyer Persona definicja, czym jest Buyer Persona, Buyer Persona w sprzedaży, Buyer Persona strategia, Buyer Persona przykłady, jak używać Buyer Persona"
       />
       <ArticleSchema
         title="Buyer Persona — co to jest i jak ją tworzyć?"
         description="Kompletny przewodnik po buyer persona: 6 elementów profilu, 4 role w B2B, różnica vs ICP i metody badawcze."
-        url="https://fotz.pl/blog/buyer-persona-co-to"
+        url="https://www.fotz-studio.pl/blog/buyer-persona-co-to"
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Buyer Persona", url: "https://fotz.pl/blog/buyer-persona-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Buyer Persona", url: "https://www.fotz-studio.pl/blog/buyer-persona-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -108,7 +108,7 @@ export default function BlogBuyerPersonaCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Buyer Persona", url: "https://fotz.pl" },
+              { name: "Buyer Persona", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Buyer Persona — co to jest i jak ją tworzyć?

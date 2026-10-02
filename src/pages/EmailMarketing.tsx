@@ -121,9 +121,9 @@ export default function EmailMarketing() {
   return (
     <>
       <SEOHead
-        title="Email marketing dla firm — automation i newslettery | fotz.pl"
+        title="Email marketing dla firm — automation i newslettery | FOTZ Studio"
         description="Email marketing — newslettery, automation, lead nurturing dla firm. Najwyższy ROI z wszystkich kanałów marketingowych. Obsługa email marketingu od 799 zł/mies.!"
-        canonical="https://fotz.pl/uslugi/email-marketing"
+        canonical="https://www.fotz-studio.pl/uslugi/email-marketing"
         keywords="email marketing, e-mail marketing, mailing, newsletter, marketing automation, kampanie email, newsletter marketing, automatyzacja email, agencja email marketing, skuteczny email marketing, mailing dla firm, obsługa email marketingu"
       />
       <ServiceSchema
@@ -166,8 +166,10 @@ export default function EmailMarketing() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
-                  Zaczęajmy od konsultacji <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                  <Link to="/kontakt">
+                    Zacznijmy od konsultacji <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi/marketing-internetowy">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

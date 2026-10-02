@@ -42,23 +42,23 @@ export default function BlogSupabaseDeepDiveCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Supabase | Fotz Studio"
-        description="Supabase deep dive: Auth (OAuth, OTP, magic link), Row Level Security (RLS), Storage (transformacje obrazów), Realtime (subscriptions, Presence), Edge…"
-        canonical="https://fotz.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
+        title="Supabase — Auth, RLS, Storage, Realtime, Edge Functions i Vector 2024?"
+        description="6 funkcji Supabase (Auth/Database/Storage/Realtime/Edge Functions/Vector) — RLS policies, OAuth providers, signed URLs, Presence, pgvector semantic search i Next.js SSR."
+        canonical="https://www.fotz-studio.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
 
         keywords="Supabase co to jest, Supabase definicja, czym jest Supabase, Supabase przykłady, jak działa Supabase, Supabase znaczenie, Supabase przewodnik"
       />
       <ArticleSchema
         title="Supabase — Auth, RLS, Storage, Realtime, Edge Functions i Vector 2024?"
         description="6 funkcji Supabase (Auth/Database/Storage/Realtime/Edge Functions/Vector) — RLS policies, OAuth providers, signed URLs, Presence, pgvector semantic search i Next.js SSR."
-        url="https://fotz.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
+        url="https://www.fotz-studio.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Supabase", url: "https://fotz.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Supabase", url: "https://www.fotz-studio.pl/blog/supabase-auth-rls-storage-realtime-edge-functions-vector-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">

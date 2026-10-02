@@ -88,12 +88,12 @@ const StronyInternetoweWalbrzych = () => {
       <SEOHead
         title="Strony Internetowe Walbrzych | Fotz Studio"
         description="Strony internetowe Walbrzych — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wałbrzycha. Fotz Studio."
-        canonical="https://fotz.pl/strony-internetowe/walbrzych"
+        canonical="https://www.fotz-studio.pl/strony-internetowe/walbrzych"
         keywords="strony internetowe wałbrzych, tworzenie stron internetowych wałbrzych, strony www wałbrzych, projektowanie stron wałbrzych"
       />
 
       <ServiceSchema name="Strony Internetowe Walbrzych" description="Profesjonalne tworzenie stron internetowych dla firm z Wałbrzycha." provider="FOTZ Studio" areaServed="Walbrzych" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/strony-internetowe" }, { name: "Walbrzych", url: "https://fotz.pl/strony-internetowe/walbrzych" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Wałbrzych", url: "https://www.fotz-studio.pl/strony-internetowe/walbrzych" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />
@@ -251,7 +251,7 @@ const StronyInternetoweWalbrzych = () => {
 
               <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
                 <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">Strony internetowe oferta</Link>
-                <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">Landing page</Link>
+                <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">Landing page</Link>
                 <Link to="/kampanie-reklamowe" className="text-primary hover:underline font-medium text-sm">Kampanie reklamowe</Link>
                 <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">Social media</Link>
               </div>

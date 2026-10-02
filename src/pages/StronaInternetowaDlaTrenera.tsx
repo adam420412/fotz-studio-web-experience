@@ -63,8 +63,8 @@ export default function StronaInternetowaDlaTrenera() {
     <>
       <SEOHead
         title="Strona internetowa dla trenera personalnego — SEO, rezerwacje"
-        description="Strona internetowa dla trenera personalnego — oferta treningowa, SEO lokalne, system rezerwacji i prezentacja transformacji klientów. Od 1500 zł…"
-        canonical="https://fotz.pl/uslugi/strona-internetowa-dla-trenera-personalnego"
+        description="Strona internetowa dla trenera personalnego — oferta treningowa, SEO lokalne, system rezerwacji i prezentacja transformacji klientów. Profesjonalne strony od 1500 zł."
+        canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-trenera-personalnego"
         keywords="strona internetowa dla trenera, strona www trenera personalnego, strona trenera fitness, portfolio trenera online"
       />
       <ServiceSchema
@@ -107,8 +107,10 @@ export default function StronaInternetowaDlaTrenera() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
-                Bezpłatna wycena strony <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
+                <Link to="/kontakt">
+                  Bezpłatna wycena strony <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>

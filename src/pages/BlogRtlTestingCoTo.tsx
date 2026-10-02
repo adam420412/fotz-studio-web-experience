@@ -42,23 +42,23 @@ export default function BlogRtlTestingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Testing Library | Fotz Studio"
-        description="React Testing Library (getByRole, findBy, waitFor), @testing-library/user-event (type, click, keyboard), MSW mocking, Context providers, TanStack Query i…"
-        canonical="https://fotz.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
+        title="React Testing Library — queries, user-event, mocking i async testing 2024?"
+        description="6 queries RTL (getByRole/getByLabelText/getByText/findBy/queryBy/getByTestId) — user-event v14, MSW mocking, async testing, hooks testing i RTL best practices."
+        canonical="https://www.fotz-studio.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
 
         keywords="React Testing Library co to jest, React Testing Library jak działa, React Testing Library tutorial, React Testing Library przykład, czym jest React Testing Library, React Testing Library dokumentacja, React Testing Library przewodnik"
       />
       <ArticleSchema
         title="React Testing Library — queries, user-event, mocking i async testing 2024?"
         description="6 queries RTL (getByRole/getByLabelText/getByText/findBy/queryBy/getByTestId) — user-event v14, MSW mocking, async testing, hooks testing i RTL best practices."
-        url="https://fotz.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
+        url="https://www.fotz-studio.pl/blog/react-testing-library-queries-user-event-mocking-async-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Testing Library", url: "https://fotz.pl/blog/react-testing-library-queries-user-event-mocking-async-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Testing Library", url: "https://www.fotz-studio.pl/blog/react-testing-library-queries-user-event-mocking-async-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

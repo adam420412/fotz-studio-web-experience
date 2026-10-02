@@ -155,8 +155,8 @@ const UslugiIdentyfikacjaWizualna = () => {
     <Layout>
       <SEOHead
         title="Identyfikacja Wizualna Firmy — Projekt, Logo, Brand Book"
-        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Ceny od 1 500 zł. Pełne prawa autorskie…"
-        canonical="https://fotz.pl/uslugi/identyfikacja-wizualna"
+        description="Profesjonalna identyfikacja wizualna dla firm. Logo, paleta barw, księga znaku, materiały firmowe i digital. Ceny od 1 500 zł, pełne prawa autorskie i spójny system wizualny na każdym nośniku."
+        canonical="https://www.fotz-studio.pl/uslugi/identyfikacja-wizualna"
         keywords="identyfikacja wizualna firmy, branding usługi, projekt logo, system identyfikacji wizualnej, ci corporate identity"
       />
       <ServiceSchema
@@ -166,9 +166,9 @@ const UslugiIdentyfikacjaWizualna = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Identyfikacja wizualna", url: "https://fotz.pl/uslugi/identyfikacja-wizualna" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Identyfikacja wizualna", url: "https://www.fotz-studio.pl/uslugi/identyfikacja-wizualna" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -591,7 +591,7 @@ const UslugiIdentyfikacjaWizualna = () => {
               { label: "Agencja graficzna", href: "/agencja-graficzna" },
               { label: "Strony internetowe", href: "/uslugi/strony-internetowe" },
               { label: "Social media", href: "/uslugi/social-media-marketing" },
-              { label: "Kampanie reklamowe", href: "/uslugi/kampanie-reklamowe" },
+              { label: "Kampanie reklamowe", href: "/kampanie-reklamowe" },
             ].map((item) => (
               <Link
                 key={item.label}

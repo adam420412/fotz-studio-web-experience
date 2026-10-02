@@ -80,23 +80,23 @@ export default function BlogBrandStorytellingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Brand Storytelling | Fotz Studio"
+        title="Brand Storytelling — co to jest i jak stosować?"
         description="Brand storytelling — definicja, 5 frameworków narracyjnych (Hero's Journey, Before/After/Bridge), kanały i jak zbudować skuteczną historię marki."
-        canonical="https://fotz.pl/blog/brand-storytelling-co-to"
+        canonical="https://www.fotz-studio.pl/blog/brand-storytelling-co-to"
 
         keywords="Brand Storytelling co to jest, Brand Storytelling definicja, czym jest Brand Storytelling, Brand Storytelling w marketingu, Brand Storytelling przykłady, jak działa Brand Storytelling, Brand Storytelling strategia"
       />
       <ArticleSchema
         title="Brand Storytelling — co to jest i jak stosować?"
         description="Kompletny przewodnik po brand storytellingu: frameworki narracyjne, kanały i jak tworzyć poruszające historie marki."
-        url="https://fotz.pl/blog/brand-storytelling-co-to"
+        url="https://www.fotz-studio.pl/blog/brand-storytelling-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Brand Storytelling", url: "https://fotz.pl/blog/brand-storytelling-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Brand Storytelling", url: "https://www.fotz-studio.pl/blog/brand-storytelling-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -104,7 +104,7 @@ export default function BlogBrandStorytellingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Storytelling", url: "https://fotz.pl" },
+              { name: "Brand Storytelling", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Storytelling — co to jest i jak stosować?

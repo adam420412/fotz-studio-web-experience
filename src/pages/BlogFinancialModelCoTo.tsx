@@ -73,22 +73,22 @@ export default function BlogFinancialModelCoTo() {
     <Layout>
       <SEOHead
         title="Financial Model — co to jest i jak zbudować? | Fotz.pl"
-        description="Financial Model (model finansowy) dla SaaS startup — Revenue Waterfall, Sales Capacity, Cash Bridge, scenarios i jak oceniają go inwestorzy. Kompletny…"
-        canonical="https://fotz.pl/blog/financial-model-co-to-jest-saas-startup"
+        description="Kompletny przewodnik po Financial Model: komponenty SaaS modelu, kluczowe assumptions, scenariusze i red flags dla VC."
+        canonical="https://www.fotz-studio.pl/blog/financial-model-co-to-jest-saas-startup"
 
         keywords="Financial Model co to jest, Financial Model definicja, czym jest Financial Model, Financial Model przykłady, jak działa Financial Model, Financial Model znaczenie, Financial Model przewodnik"
       />
       <ArticleSchema
         title="Financial Model — co to jest i jak zbudować?"
         description="Kompletny przewodnik po Financial Model: komponenty SaaS modelu, kluczowe assumptions, scenariusze i red flags dla VC."
-        url="https://fotz.pl/blog/financial-model-co-to-jest-saas-startup"
+        url="https://www.fotz-studio.pl/blog/financial-model-co-to-jest-saas-startup"
         datePublished="2024-02-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Financial Model", url: "https://fotz.pl/blog/financial-model-co-to-jest-saas-startup" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Financial Model", url: "https://www.fotz-studio.pl/blog/financial-model-co-to-jest-saas-startup" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">

@@ -206,13 +206,13 @@ export default function Kontakt() {
       <Layout>
       <SEOHead
         title="Kontakt z Fotz Studio | Fotz Studio"
-        description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i…"
-        canonical="https://fotz.pl/kontakt"
+        description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i kampanii reklamowych."
+        canonical="https://www.fotz-studio.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kontakt", url: "https://fotz.pl/kontakt" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kontakt", url: "https://www.fotz-studio.pl/kontakt" }
         ]}/>
       <LocalBusinessSchema />
       {/* Hero */}
@@ -272,10 +272,12 @@ export default function Kontakt() {
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                     <div>
-                      <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                      <label htmlFor="contact-name" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                         Imię i nazwisko *
                       </label>
                       <Input
+                        id="contact-name" name="name"
+                        autoComplete="name"
                         value={formData.name}
                         onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                         placeholder="Jan Kowalski"
@@ -287,11 +289,13 @@ export default function Kontakt() {
                       {formErrors.name && <p className="text-xs text-red-500 mt-1">{formErrors.name}</p>}
                     </div>
                     <div>
-                      <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                      <label htmlFor="contact-email" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                         Email *
                       </label>
                       <Input
                         type="email"
+                        id="contact-email" name="email"
+                        autoComplete="email"
                         value={formData.email}
                         onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                         placeholder="jan@firma.pl"
@@ -306,11 +310,13 @@ export default function Kontakt() {
 
                   <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                     <div>
-                      <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                      <label htmlFor="contact-phone" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                         Telefon
                       </label>
                       <Input
                         type="tel"
+                        id="contact-phone" name="phone"
+                        autoComplete="tel"
                         value={formData.phone}
                         onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                         placeholder="+48 123 456 789"
@@ -318,10 +324,12 @@ export default function Kontakt() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                      <label htmlFor="contact-company" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                         Firma
                       </label>
                       <Input
+                        id="contact-company" name="company"
+                        autoComplete="organization"
                         value={formData.company}
                         onChange={(e) => setFormData(prev => ({ ...prev, company: e.target.value }))}
                         placeholder="Nazwa firmy"
@@ -331,11 +339,12 @@ export default function Kontakt() {
                   </div>
 
                   <div>
-                    <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                    <label htmlFor="contact-subject" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                       Czego dotyczy zapytanie? *
                     </label>
                     <select
-                      value={formData.subject}
+                      id="contact-subject" name="subject"
+                        value={formData.subject}
                       onChange={(e) => setFormData(prev => ({ ...prev, subject: e.target.value }))}
                       className={cn(
                         "w-full h-9 sm:h-10 px-3 rounded-lg bg-secondary border border-border text-foreground text-sm",
@@ -356,11 +365,12 @@ export default function Kontakt() {
                   </div>
 
                   <div>
-                    <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                    <label htmlFor="contact-message" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                       Wiadomość *
                     </label>
                     <Textarea
-                      value={formData.message}
+                      id="contact-message" name="message"
+                        value={formData.message}
                       onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
                       rows={4}
                       placeholder="Opisz swój projekt lub pytanie..."
@@ -428,11 +438,13 @@ export default function Kontakt() {
                       </p>
                       <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                         <div>
-                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
+                          <label htmlFor="reel-name" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">
                             Imię i nazwisko *
                           </label>
                           <Input
-                            value={reelData.name}
+                            id="reel-name" name="name"
+                        autoComplete="name"
+                        value={reelData.name}
                             onChange={(e) => setReelData((p) => ({ ...p, name: e.target.value }))}
                             placeholder="Jan Kowalski"
                             className={cn("bg-secondary border-border h-9 sm:h-10 text-sm", reelErrors.name && "border-red-500")}
@@ -440,10 +452,12 @@ export default function Kontakt() {
                           {reelErrors.name && <p className="text-xs text-red-500 mt-1">{reelErrors.name}</p>}
                         </div>
                         <div>
-                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Email *</label>
+                          <label htmlFor="reel-email" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Email *</label>
                           <Input
                             type="email"
-                            value={reelData.email}
+                            id="reel-email" name="email"
+                        autoComplete="email"
+                        value={reelData.email}
                             onChange={(e) => setReelData((p) => ({ ...p, email: e.target.value }))}
                             placeholder="jan@firma.pl"
                             className={cn("bg-secondary border-border h-9 sm:h-10 text-sm", reelErrors.email && "border-red-500")}
@@ -453,19 +467,23 @@ export default function Kontakt() {
                       </div>
                       <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
                         <div>
-                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Telefon</label>
+                          <label htmlFor="reel-phone" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Telefon</label>
                           <Input
                             type="tel"
-                            value={reelData.phone}
+                            id="reel-phone" name="phone"
+                        autoComplete="tel"
+                        value={reelData.phone}
                             onChange={(e) => setReelData((p) => ({ ...p, phone: e.target.value }))}
                             placeholder="+48 123 456 789"
                             className="bg-secondary border-border h-9 sm:h-10 text-sm"
                           />
                         </div>
                         <div>
-                          <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Firma</label>
+                          <label htmlFor="reel-company" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Firma</label>
                           <Input
-                            value={reelData.company}
+                            id="reel-company" name="company"
+                        autoComplete="organization"
+                        value={reelData.company}
                             onChange={(e) => setReelData((p) => ({ ...p, company: e.target.value }))}
                             placeholder="Nazwa firmy"
                             className="bg-secondary border-border h-9 sm:h-10 text-sm"
@@ -473,9 +491,10 @@ export default function Kontakt() {
                         </div>
                       </div>
                       <div>
-                        <label className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Co robicie? *</label>
+                        <label htmlFor="reel-business_type" className="block text-xs sm:text-sm font-medium mb-1.5 sm:mb-2">Co robicie? *</label>
                         <select
-                          value={reelData.business_type}
+                          id="reel-business_type" name="business_type"
+                        value={reelData.business_type}
                           onChange={(e) => setReelData((p) => ({ ...p, business_type: e.target.value }))}
                           className={cn(
                             "w-full h-9 sm:h-10 px-3 rounded-lg bg-secondary border border-border text-foreground text-sm",

@@ -36,21 +36,21 @@ const BlogLandingPage = () => {
         title="Landing Page — Jak Stworzyć Skuteczną Stronę Lądowania? Poradnik"
         description="Jak stworzyć skuteczny landing page? Elementy konwertującej strony lądowania, przykłady i najlepsze praktyki. Poradnik tworzenia landing page 2025. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/jak-stworzyc-landing-page"
+        canonical="https://www.fotz-studio.pl/blog/jak-stworzyc-landing-page"
         keywords="landing page, strona lądowania, konwersja, CTA, UX, copywriting, lead generation, optymalizacja"
       />
       <ArticleSchema
         title="Jak stworzyć skuteczny landing page - poradnik z przykładami"
         description="Kompletny poradnik tworzenia landing page z wysoką konwersją."
-        url="https://fotz.pl/blog/jak-stworzyc-landing-page"
+        url="https://www.fotz-studio.pl/blog/jak-stworzyc-landing-page"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Jak stworzyć landing page", url: "https://fotz.pl/blog/jak-stworzyc-landing-page" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Jak stworzyć landing page", url: "https://www.fotz-studio.pl/blog/jak-stworzyc-landing-page" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
@@ -252,15 +252,15 @@ const BlogLandingPage = () => {
                 <div className="p-6 bg-card rounded-xl border border-border">
                   <h4 className="font-semibold mb-4">Przykłady skutecznych CTA</h4>
                   <div className="flex flex-wrap gap-3">
-                    <button className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium">
+                    <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium">
                       Rozpocznij darmowy trial
-                    </button>
-                    <button className="px-6 py-3 bg-accent text-accent-foreground rounded-full font-medium">
+                    </a>
+                    <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center px-6 py-3 bg-accent text-accent-foreground rounded-full font-medium">
                       Pobierz za darmo
-                    </button>
-                    <button className="px-6 py-3 bg-secondary text-secondary-foreground rounded-full font-medium">
+                    </a>
+                    <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center px-6 py-3 bg-secondary text-secondary-foreground rounded-full font-medium">
                       Umów bezpłatną konsultację
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -440,7 +440,7 @@ const BlogLandingPage = () => {
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Landing page dla Twojej kampanii reklamowej — projekt i wdrożenie</h2>
               <p className="text-muted-foreground">Planujesz kampanię Google Ads lub Meta Ads? Potrzebujesz dedykowanego landing page dla każdej grupy docelowej i oferty. Fotz Studio tworzy landing pages w ciągu 5-10 dni roboczych. Skontaktuj się z nami, by wycenić projekt strony lądowania dla Twojej kampanii.</p>
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>

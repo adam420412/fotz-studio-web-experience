@@ -84,21 +84,21 @@ export default function BlogWaccCoTo() {
       <SEOHead
         title="WACC — co to jest? Średni Ważony Koszt Kapitału i jak go obliczyć"
         description="WACC (Weighted Average Cost of Capital) — definicja, formuła, CAPM, koszt długu, beta branżowe i wpływ na wycenę DCF. Kompletny przewodnik po WACC."
-        canonical="https://fotz.pl/blog/wacc-sredni-wazony-koszt-kapitalu"
+        canonical="https://www.fotz-studio.pl/blog/wacc-sredni-wazony-koszt-kapitalu"
 
         keywords="WACC co to jest, WACC jak działa, WACC tutorial, WACC przykład, czym jest WACC, WACC dokumentacja, WACC przewodnik"
       />
       <ArticleSchema
         title="WACC — co to jest i jak obliczyć Średni Ważony Koszt Kapitału?"
         description="Kompletny przewodnik po WACC: formuła, komponenty (Ke, Kd), CAPM, beta i wpływ struktury kapitałowej."
-        url="https://fotz.pl/blog/wacc-sredni-wazony-koszt-kapitalu"
+        url="https://www.fotz-studio.pl/blog/wacc-sredni-wazony-koszt-kapitalu"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "WACC", url: "https://fotz.pl/blog/wacc-sredni-wazony-koszt-kapitalu" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "WACC", url: "https://www.fotz-studio.pl/blog/wacc-sredni-wazony-koszt-kapitalu" },
         ]}/>
 
       {/* Hero */}
@@ -106,7 +106,7 @@ export default function BlogWaccCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "WACC", url: "https://fotz.pl" },
+              { name: "WACC", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             WACC — co to jest i jak obliczyć?

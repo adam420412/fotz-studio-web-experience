@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -37,21 +38,21 @@ export default function BlogGoogleAnalytics4() {
         title="Google Analytics 4 — Kompletny Poradnik GA4 dla Firm 2025"
         description="Google Analytics 4 poradnik 2025 — jak skonfigurować GA4, czytać raporty i mierzyć konwersje. Migracja z Universal Analytics do GA4. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/google-analytics-4-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/google-analytics-4-poradnik"
         keywords="google analytics 4, ga4, analytics, śledzenie konwersji, google analytics poradnik, ga4 konfiguracja"
       />
       <ArticleSchema
         title="Google Analytics 4 - kompletny poradnik GA4 dla firm 2025"
         description="Google Analytics 4 krok po kroku: instalacja, konfiguracja, raporty i konwersje."
-        url="https://fotz.pl/blog/google-analytics-4-poradnik"
+        url="https://www.fotz-studio.pl/blog/google-analytics-4-poradnik"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Google Analytics 4", url: "https://fotz.pl/blog/google-analytics-4-poradnik" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Google Analytics 4", url: "https://www.fotz-studio.pl/blog/google-analytics-4-poradnik" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -396,12 +397,8 @@ export default function BlogGoogleAnalytics4() {
             <div className="flex items-center justify-between py-8 border-t border-border mt-12">
               <div className="flex items-center gap-4">
                 <span className="text-muted-foreground">Udostępnij:</span>
-                <Button variant="outline" size="icon">
-                  <Share2 className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Bookmark className="w-4 h-4" />
-                </Button>
+                <CopyArticleLinkButton />
+
               </div>
             </div>
           </div>

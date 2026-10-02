@@ -70,7 +70,7 @@ export default function BlogReklamaFacebookVsGoogle() {
       <SEOHead
         title="Reklama Facebook vs Google Ads | Fotz Studio"
         description="Reklama Facebook czy Google Ads? Porównujemy koszty, targeting, ROI i przypadki użycia. Dowiedz się, gdzie zainwestować budżet reklamowy ✓ Przykłady i liczby"
-        canonical="https://fotz.pl/blog/reklama-facebook-vs-google"
+        canonical="https://www.fotz-studio.pl/blog/reklama-facebook-vs-google"
         ogType="article"
 
         keywords="Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026], Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] poradnik, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] strategia, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] jak zrobić, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] marketing, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] przykłady, Reklama Facebook vs Google Ads – Która Lepsza dla Twojej Firmy? [2026] w Polsce"
@@ -80,7 +80,7 @@ export default function BlogReklamaFacebookVsGoogle() {
         description="Kompleksowe porównanie platform reklamowych: Google Ads vs Facebook Ads. Analiza kosztów, targetowania, ROI i zastosowań dla różnych branż."
         author="Zespół FOTZ"
         publishDate="2026-04-01"
-        image="https://fotz.pl/images/og/facebook-vs-google.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
       />
       <BreadcrumbSchema items={breadcrumbs} />
       <FAQSchema

@@ -97,28 +97,28 @@ export default function BlogUnitEconomicsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Unit Economics | Fotz Studio"
-        description="Unit economics — definicja, 6 kluczowych metryk (LTV, CAC, LTV:CAC, Payback, Gross Margin, Magic Number) i benchmarki. Kompletny przewodnik dla startupów…"
-        canonical="https://fotz.pl/blog/unit-economics-co-to"
+        title="Unit Economics — co to jest i jak analizować LTV i CAC?"
+        description="Kompletny przewodnik po unit economics: 6 metryk, LTV:CAC benchmarki, CAC payback period i jak obliczyć LTV dla SaaS."
+        canonical="https://www.fotz-studio.pl/blog/unit-economics-co-to"
 
         keywords="Unit Economics co to jest, Unit Economics definicja, czym jest Unit Economics, Unit Economics startup, Unit Economics jak liczyć, Unit Economics wzór, Unit Economics przykłady"
       />
       <ArticleSchema
         title="Unit Economics — co to jest i jak analizować LTV i CAC?"
         description="Kompletny przewodnik po unit economics: 6 metryk, LTV:CAC benchmarki, CAC payback period i jak obliczyć LTV dla SaaS."
-        url="https://fotz.pl/blog/unit-economics-co-to"
+        url="https://www.fotz-studio.pl/blog/unit-economics-co-to"
         datePublished="2024-01-28"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Unit Economics", url: "https://fotz.pl/blog/unit-economics-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Unit Economics", url: "https://www.fotz-studio.pl/blog/unit-economics-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Unit Economics", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Unit Economics", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Unit Economics — co to jest? LTV, CAC i LTV:CAC
           </h1>

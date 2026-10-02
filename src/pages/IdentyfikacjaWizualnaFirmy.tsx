@@ -121,7 +121,7 @@ export default function IdentyfikacjaWizualnaFirmy() {
       <SEOHead
         title="Identyfikacja wizualna firmy — logo, brandbook, system graficzny"
         description="Identyfikacja wizualna firmy — logo, system kolorów, typografia, szablony, brandbook. Kompleksowy projekt graficzny który wyróżni Twoją markę. Wycena!"
-        canonical="https://fotz.pl/uslugi/identyfikacja-wizualna-firmy"
+        canonical="https://www.fotz-studio.pl/uslugi/identyfikacja-wizualna-firmy"
         keywords="identyfikacja wizualna firmy, identyfikacja wizualna, branding, logo i identyfikacja wizualna, tworzenie identyfikacji wizualnej, spójna identyfikacja wizualna, brandbook, brand identity, projekt identyfikacji, corporate identity, co to jest identyfikacja wizualna, identyfikacja wizualna firmy co zawiera"
       />
       <ServiceSchema
@@ -164,8 +164,10 @@ export default function IdentyfikacjaWizualnaFirmy() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-violet-600 hover:bg-violet-700 text-white">
-                  Zamów wycenę identyfikacji <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-violet-600 hover:bg-violet-700 text-white">
+                  <Link to="/kontakt">
+                    Zamów wycenę identyfikacji <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

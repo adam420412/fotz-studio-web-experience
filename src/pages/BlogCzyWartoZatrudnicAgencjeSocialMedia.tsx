@@ -20,7 +20,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/czy-warto-zatrudnic-agencje-social-media";
+const CANONICAL = "https://www.fotz-studio.pl/blog/czy-warto-zatrudnic-agencje-social-media";
 
 export default function BlogCzyWartoZatrudnicAgencjeSocialMedia() {
   return (
@@ -40,8 +40,8 @@ export default function BlogCzyWartoZatrudnicAgencjeSocialMedia() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Czy warto zatrudnić agencję social media", url: CANONICAL },
         ]}
       />

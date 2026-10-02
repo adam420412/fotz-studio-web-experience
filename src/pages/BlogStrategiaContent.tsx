@@ -38,14 +38,14 @@ const BlogStrategiaContent = () => {
         title="Strategia content marketingu: Plan i implementacja 2025"
         description="Jak stworzyć strategię content marketingu? Przewodnik krok po kroku: cele SMART, persona, kanały, typ treści, mierzenie efektów. Przykłady polskich marek."
         ogType="article"
-        canonical="https://fotz.pl/blog/strategia-content-marketingu"
+        canonical="https://www.fotz-studio.pl/blog/strategia-content-marketingu"
         keywords="strategia content marketingu, plan content marketing, content marketing poradnik, strategia treści"
       />
 
       <ArticleSchema
         title="Strategia content marketingu: Plan i implementacja 2025"
         description="Jak stworzyć strategię content marketingu? Przewodnik krok po kroku: cele SMART, persona, kanały, typ treści, mierzenie efektów."
-        url="https://fotz.pl/blog/strategia-content-marketingu"
+        url="https://www.fotz-studio.pl/blog/strategia-content-marketingu"
         datePublished="2025-03-25"
         dateModified="2025-07-28"
         author="Fotz Studio"

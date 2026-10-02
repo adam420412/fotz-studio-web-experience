@@ -41,15 +41,15 @@ const CaseStudyStagePlan = () => {
   return (
     <Layout>
       <SEOHead
-        title="Stage Plan | Fotz Studio"
+        title="Stage Plan - Technika Sceniczna - Case Study | Fotz Studio"
         description="Case study Stage Plan: strona internetowa dla firmy techniki scenicznej. Katalog sprzętu, SEO i design branżowy. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/stageplan"
+        canonical="https://www.fotz-studio.pl/realizacje/stageplan"
         keywords="case study strona internetowa, realizacja strony www b2b"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Stage Plan", url: "https://fotz.pl/realizacje/stageplan" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Stage Plan", url: "https://www.fotz-studio.pl/realizacje/stageplan" }
       ]}/>
       <ArticleSchema
         title="Stage Plan - Technika Sceniczna - Case Study"
@@ -57,8 +57,8 @@ const CaseStudyStagePlan = () => {
         author="Fotz Studio"
         datePublished="2024-01-30"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/stageplan"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/stageplan"
       />
 
       {/* Hero */}

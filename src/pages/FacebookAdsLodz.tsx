@@ -48,7 +48,7 @@ export default function FacebookAdsLodz() {
         <SEOHead
           title="Agencja Facebook Ads Łódź — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Łódź — agencja Fotz.pl. Kampanie Meta Ads dla firm z Łodzi. Od 400 zł/mies. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/facebook-ads/lodz"
+          canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/lodz"
           keywords="facebook ads lodz, meta ads lodz, reklamy facebook lodz, agencja facebook ads lodz, kampanie facebook lodz, instagram ads lodz, facebook ads dla firm lodz, reklama na facebooku lodz, meta ads agencja lodz, facebook ads cennik lodz"
         />
 
@@ -60,10 +60,10 @@ export default function FacebookAdsLodz() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-            { name: "Facebook Ads Łódź", url: "https://fotz.pl/performance-marketing/facebook-ads/lodz" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads Łódź", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/lodz" },
           ]}/>
 
         <FAQSchema items={faqItems} />
@@ -398,7 +398,7 @@ export default function FacebookAdsLodz() {
               {[
                 { label: "Facebook Ads Warszawa", to: "/performance-marketing/facebook-ads/warszawa" },
                 { label: "Google Ads Łódź", to: "/performance-marketing/google-ads/lodz" },
-                { label: "Pozycjonowanie Łódź", to: "/uslugi/seo/lodz" },
+                { label: "Pozycjonowanie Łódź", to: "/uslugi/pozycjonowanie/lodz" },
                 { label: "Strony internetowe", to: "/uslugi/strony-internetowe" },
                 { label: "Social media marketing", to: "/social-media" },
               ].map((link) => (

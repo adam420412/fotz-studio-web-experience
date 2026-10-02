@@ -81,7 +81,7 @@ const AgencjaMarketingowaWarszawa = () => {
     {
       id: "strony-www",
       icon: Globe,
-      title: "Strony WWW &amp; Web Design",
+      title: "Strony WWW & Web Design",
       description:
         "Tworzenie nowoczesnych stron internetowych responsywnych i zoptymalizowanych dla SEO. Strony które sprzedają.",
       features: [
@@ -107,7 +107,7 @@ const AgencjaMarketingowaWarszawa = () => {
     {
       id: "branding",
       icon: Lightbulb,
-      title: "Branding &amp; Strategia",
+      title: "Branding & Strategia",
       description:
         "Budowanie silnej tożsamości marki. Logo, identyfikacja wizualna i strategia pozycjonowania dla Twojej firmy.",
       features: [
@@ -228,16 +228,16 @@ const AgencjaMarketingowaWarszawa = () => {
       <SEOHead
         title="Agencja Marketingowa Warszawa | Fotz Studio"
         description="Agencja marketingowa Warszawa ✓ SEO, Google Ads, Social Media, strony internetowe. Marketing internetowy Warszawa — 200+ projektów dla firm. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/warszawa"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/warszawa"
         keywords="agencja marketingowa warszawa, marketing internetowy warszawa, agencja reklamowa warszawa, seo warszawa, google ads warszawa, firma marketingowa warszawa, reklama internetowa warszawa"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
           {
             name: "Warszawa",
-            url: "https://fotz.pl/agencja-marketingowa/warszawa",
+            url: "https://www.fotz-studio.pl/agencja-marketingowa/warszawa",
           },
         ]}/>
 
@@ -278,13 +278,14 @@ const AgencjaMarketingowaWarszawa = () => {
                 Bezpłatna wycena <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
-              className="border-cyan-400 text-white hover:bg-blue-700"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              +48 (22) 123 45 67
+              className="border-cyan-400 text-white hover:bg-blue-700">
+              <a href="tel:+48790814814">
+                <Phone className="mr-2 h-4 w-4" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
 
@@ -672,13 +673,14 @@ const AgencjaMarketingowaWarszawa = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-blue-700"
-            >
-              <Phone className="mr-2 h-4 w-4" />
-              +48 (22) 123 45 67
+              className="border-white text-white hover:bg-blue-700">
+              <a href="tel:+48790814814">
+                <Phone className="mr-2 h-4 w-4" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
 
@@ -695,7 +697,7 @@ const AgencjaMarketingowaWarszawa = () => {
             <div className="rounded-lg bg-white p-6 text-center shadow-sm">
               <Phone className="mx-auto mb-3 h-8 w-8 text-blue-600" />
               <h3 className="mb-2 font-bold text-gray-900">Zadzwoń do nas</h3>
-              <p className="text-gray-600 mb-2">+48 (22) 123 45 67</p>
+              <p className="text-gray-600 mb-2">+48 790 814 814</p>
               <p className="text-xs text-gray-500">Pon-Pt 8:00-20:00, Sob 9:00-17:00</p>
             </div>
 

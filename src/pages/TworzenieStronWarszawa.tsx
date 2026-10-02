@@ -208,7 +208,7 @@ export default function TworzenieStronWarszawa() {
       <SEOHead
         title="Tworzenie stron internetowych Warszawa | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Warszawie. Agencja z doświadczeniem, realizacje na czas. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/warszawa"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/warszawa"
         keywords="tworzenie stron internetowych warszawa, strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron internetowych warszawa, strony www warszawa, projektowanie stron www warszawa, tworzenie stron warszawa, strona internetowa warszawa, agencja webdesign warszawa, sklep internetowy warszawa"
       />
       <ServiceSchema
@@ -250,8 +250,10 @@ export default function TworzenieStronWarszawa() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -435,15 +437,15 @@ export default function TworzenieStronWarszawa() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.highlight
                           ? "bg-white text-blue-600 hover:bg-slate-100"
                           : "bg-blue-600 text-white hover:bg-blue-700"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

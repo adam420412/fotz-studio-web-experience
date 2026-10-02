@@ -75,21 +75,21 @@ export default function BlogRagPatternCoTo() {
       <SEOHead
         title="RAG — co to jest Retrieval Augmented Generation? | Fotz.pl"
         description="RAG (Retrieval Augmented Generation): jak działa, pipeline, chunking, embedding, retrieval, re-ranking, RAG vs fine-tuning i narzędzia (LangChain, LlamaIndex)."
-        canonical="https://fotz.pl/blog/rag-retrieval-augmented-generation-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/rag-retrieval-augmented-generation-co-to-jest"
 
         keywords="RAG co to jest, RAG definicja, czym jest RAG, RAG przykłady, jak działa RAG, RAG znaczenie, RAG przewodnik"
       />
       <ArticleSchema
         title="RAG — co to jest Retrieval Augmented Generation?"
         description="RAG: architektura, chunking strategies, embedding models, retrieval (dense/sparse/hybrid), re-ranking, prompt engineering, metryki ewaluacji i porównanie z fine-tuningiem."
-        url="https://fotz.pl/blog/rag-retrieval-augmented-generation-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/rag-retrieval-augmented-generation-co-to-jest"
         datePublished="2024-03-03"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "RAG Pattern", url: "https://fotz.pl/blog/rag-retrieval-augmented-generation-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "RAG Pattern", url: "https://www.fotz-studio.pl/blog/rag-retrieval-augmented-generation-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 text-white py-20 px-4">

@@ -42,23 +42,23 @@ export default function BlogReactHookFormCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Hook Form + Zod | Fotz Studio"
-        description="React Hook Form (RHF), Zod schema validation, zodResolver, useFieldArray, Server Actions, Valibot, TypeBox — kompletny przewodnik walidacji formularzy w…"
-        canonical="https://fotz.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024"
+        title="React Hook Form + Zod — walidacja formularzy TypeScript 2024?"
+        description="6 bibliotek formularzy (RHF/Formik/TanStack Form/Zod/Valibot/TypeBox) — zodResolver, useFieldArray, Server Actions validation, type inference i performance."
+        canonical="https://www.fotz-studio.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024"
 
         keywords="React Hook Form + Zod co to jest, React Hook Form + Zod jak działa, React Hook Form + Zod tutorial, React Hook Form + Zod przykład, czym jest React Hook Form + Zod, React Hook Form + Zod dokumentacja, React Hook Form + Zod przewodnik"
       />
       <ArticleSchema
         title="React Hook Form + Zod — walidacja formularzy TypeScript 2024?"
         description="6 bibliotek formularzy (RHF/Formik/TanStack Form/Zod/Valibot/TypeBox) — zodResolver, useFieldArray, Server Actions validation, type inference i performance."
-        url="https://fotz.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Hook Form + Zod", url: "https://fotz.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Hook Form + Zod", url: "https://www.fotz-studio.pl/blog/react-hook-form-zod-walidacja-formularzy-typescript-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

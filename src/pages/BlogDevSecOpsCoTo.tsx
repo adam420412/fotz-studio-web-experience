@@ -53,21 +53,21 @@ export default function BlogDevSecOpsCoTo() {
       <SEOHead
         title="DevSecOps — co to jest i jak wbudować security w CI/CD? | Fotz.pl"
         description="DevSecOps: Shift Left Security, SAST/DAST/SCA narzędzia, secrets management, security w CI/CD pipeline, OWASP Top 10 i Security Champion program."
-        canonical="https://fotz.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd"
+        canonical="https://www.fotz-studio.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd"
 
         keywords="DevSecOps co to jest, DevSecOps definicja, czym jest DevSecOps, DevSecOps przykłady, jak działa DevSecOps, DevSecOps znaczenie, DevSecOps przewodnik"
       />
       <ArticleSchema
         title="DevSecOps — co to jest i jak wbudować security w CI/CD?"
         description="DevSecOps: SAST/DAST/SCA, pipeline security (6 etapów), secrets management, OWASP Top 10, Security Champions i jak budować kulturę bezpieczeństwa."
-        url="https://fotz.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd"
+        url="https://www.fotz-studio.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd"
         datePublished="2024-04-02"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "DevSecOps", url: "https://fotz.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "DevSecOps", url: "https://www.fotz-studio.pl/blog/devsecops-co-to-jest-jak-wbudowac-security-w-cicd" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-slate-900 text-white py-20 px-4">

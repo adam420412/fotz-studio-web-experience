@@ -75,23 +75,23 @@ export default function BlogPipelineVelocityCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Pipeline Velocity | Fotz Studio"
+        title="Pipeline Velocity — co to jest i jak poprawić prędkość pipeline'u?"
         description="Pipeline Velocity: formuła, 4 dźwignie (okazje, ACV, win rate, sales cycle), zastosowanie w forecasting i kluczowe metryki pipeline dla zespołów SaaS."
-        canonical="https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
+        canonical="https://www.fotz-studio.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
 
         keywords="Pipeline Velocity co to jest, Pipeline Velocity definicja, czym jest Pipeline Velocity, Pipeline Velocity przykłady, jak działa Pipeline Velocity, Pipeline Velocity znaczenie, Pipeline Velocity przewodnik"
       />
       <ArticleSchema
         title="Pipeline Velocity — co to jest i jak poprawić prędkość pipeline'u?"
         description="Pipeline Velocity: formuła, obliczenia krok po kroku, 4 dźwignie poprawy, zastosowanie w forecasting, pipeline coverage i inne metryki dla RevOps i Sales."
-        url="https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
+        url="https://www.fotz-studio.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic"
         datePublished="2024-03-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Pipeline Velocity", url: "https://fotz.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Pipeline Velocity", url: "https://www.fotz-studio.pl/blog/pipeline-velocity-co-to-jest-jak-poprawic" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">

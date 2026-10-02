@@ -48,7 +48,7 @@ export default function GoogleAdsPoznan() {
         <SEOHead
           title="Agencja Google Ads Poznań — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Poznań — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/poznan"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/poznan"
           keywords="google ads poznan, kampanie google ads poznan, agencja google ads poznan, reklamy google poznan, google adwords poznan, sem poznan, google ads dla firm poznan, prowadzenie google ads poznan, google ads cennik poznan, reklama w google poznan"
         />
 
@@ -60,10 +60,10 @@ export default function GoogleAdsPoznan() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-            { name: "Google Ads Poznań", url: "https://fotz.pl/performance-marketing/google-ads/poznan" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+            { name: "Google Ads Poznań", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/poznan" },
           ]}/>
 
         <FAQSchema items={faqItems} />

@@ -81,26 +81,26 @@ export default function BlogDataDrivenMarketingCoTo() {
       <SEOHead
         title="Data-Driven Marketing — co to jest? Marketing oparty na danych"
         description="Data-driven marketing — definicja, 5 filarów (zbieranie, analiza, personalizacja, testowanie, optymalizacja), narzędzia i wyzwania. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/data-driven-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/data-driven-marketing-co-to"
 
         keywords="Data-Driven Marketing co to jest, Data-Driven Marketing definicja, czym jest Data-Driven Marketing, Data-Driven Marketing w marketingu, Data-Driven Marketing przykłady, jak działa Data-Driven Marketing, Data-Driven Marketing strategia"
       />
       <ArticleSchema
         title="Data-Driven Marketing — co to jest i jak wdrożyć marketing oparty na danych?"
         description="Kompletny przewodnik po data-driven marketingu: 5 filarów, kluczowe metryki, narzędzia (CDP, Marketing Automation) i główne wyzwania."
-        url="https://fotz.pl/blog/data-driven-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/data-driven-marketing-co-to"
         datePublished="2024-02-04"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Data-Driven Marketing", url: "https://fotz.pl/blog/data-driven-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Data-Driven Marketing", url: "https://www.fotz-studio.pl/blog/data-driven-marketing-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Data-Driven Marketing", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Data-Driven Marketing", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Data-Driven Marketing — co to jest i jak wdrożyć?
           </h1>

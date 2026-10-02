@@ -145,7 +145,7 @@ export default function BlogAudytSEOKrok() {
         title="Jak Przeprowadzić Audyt SEO - Krok po Kroku | Fotz Studio"
         description="Kompletny przewodnik jak przeprowadzić audyt SEO: 10 kroków, narzędzia darmowe i płatne, praktyczne porady. Audyt strony krok po kroku."
         ogType="article"
-        canonical="https://fotz.pl/blog/audyt-seo-krok-po-kroku"
+        canonical="https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku"
         keywords="jak przeprowadzić audyt SEO, audyt SEO krok po kroku, audyt strony, narzędzia audytu SEO, techniczny audyt"
         schemaJson={[
           {
@@ -163,7 +163,7 @@ export default function BlogAudytSEOKrok() {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2026-04-12",
@@ -173,8 +173,8 @@ export default function BlogAudytSEOKrok() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Audyt SEO krok po kroku" }
             ]
           },
@@ -202,9 +202,9 @@ export default function BlogAudytSEOKrok() {
         dateModified="2026-04-12"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Blog", url: "https://fotz.pl/blog" },
-        { name: "Audyt SEO krok po kroku", url: "https://fotz.pl/blog/audyt-seo-krok-po-kroku" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+        { name: "Audyt SEO krok po kroku", url: "https://www.fotz-studio.pl/blog/audyt-seo-krok-po-kroku" }
       ]}/>
 
       <Layout>

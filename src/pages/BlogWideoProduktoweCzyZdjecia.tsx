@@ -24,7 +24,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/wideo-produktowe-czy-zdjecia";
+const CANONICAL = "https://www.fotz-studio.pl/blog/wideo-produktowe-czy-zdjecia";
 
 export default function BlogWideoProduktoweCzyZdjecia() {
   return (
@@ -44,8 +44,8 @@ export default function BlogWideoProduktoweCzyZdjecia() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Wideo produktowe czy zdjęcia", url: CANONICAL },
         ]}
       />

@@ -42,23 +42,23 @@ export default function BlogSolidJsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="SolidJS | Fotz Studio"
-        description="SolidJS: fine-grained reactivity (bez virtual DOM), createSignal/createMemo/createEffect, createStore, Suspense, SolidStart (SSR) i SolidJS vs React vs…"
-        canonical="https://fotz.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
+        title="SolidJS — fine-grained reactivity, createSignal, createStore i SolidStart 2024?"
+        description="6 konceptów SolidJS vs React (Signal/Memo/Effect/Lifecycle/Context/Resource) — bez virtual DOM, Suspense, SolidStart, reactive primitives i kiedy wybrać SolidJS."
+        canonical="https://www.fotz-studio.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
 
         keywords="SolidJS co to jest, SolidJS jak działa, SolidJS tutorial, SolidJS przykład, czym jest SolidJS, SolidJS dokumentacja, SolidJS przewodnik"
       />
       <ArticleSchema
         title="SolidJS — fine-grained reactivity, createSignal, createStore i SolidStart 2024?"
         description="6 konceptów SolidJS vs React (Signal/Memo/Effect/Lifecycle/Context/Resource) — bez virtual DOM, Suspense, SolidStart, reactive primitives i kiedy wybrać SolidJS."
-        url="https://fotz.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
+        url="https://www.fotz-studio.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SolidJS", url: "https://fotz.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SolidJS", url: "https://www.fotz-studio.pl/blog/solidjs-fine-grained-reactivity-createsignal-solidstart-vs-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-blue-950 text-white py-20 px-4">

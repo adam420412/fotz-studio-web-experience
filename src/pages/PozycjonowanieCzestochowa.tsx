@@ -97,7 +97,7 @@ const PozycjonowanieCzestochowa = () => {
       <SEOHead
         title="Pozycjonowanie Częstochowa — Agencja SEO Śląsk | Fotz Studio"
         description="Pozycjonowanie stron Częstochowa. Agencja SEO Fotz Studio — lokalne SEO dla firm z Częstochowy. Bezpłatny audyt SEO!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/czestochowa"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/czestochowa"
         keywords="pozycjonowanie częstochowa, agencja seo częstochowa, seo częstochowa, pozycjonowanie stron częstochowa, seo dla firm częstochowa, pozycjonowanie lokalne częstochowa"
       />
       <ServiceSchema
@@ -107,10 +107,10 @@ const PozycjonowanieCzestochowa = () => {
         areaServed="Częstochowa"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Częstochowa", url: "https://fotz.pl/uslugi/pozycjonowanie/czestochowa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Częstochowa", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/czestochowa" },
         ]}/>
       <FAQSchema items={faqItems} />
 

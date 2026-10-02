@@ -7,7 +7,7 @@
  *
  * Solution: middleware runs AFTER vercel.json `redirects` (308 still work)
  * and BEFORE `rewrites`. For any request that:
- *   - is NOT an asset (/_next/, /assets/, files with extensions)
+ *   - is NOT an asset (/_next/, /assets/, existing public files)
  *   - is NOT in the known-routes manifest (built from <Route path> entries)
  *   - does NOT match a dynamic pattern (e.g. /blog/:slug)
  * we serve the prerendered /404.html with HTTP 404.
@@ -18,6 +18,7 @@
 import manifest from './known-routes.json';
 
 const STATIC_ROUTES: Set<string> = new Set(manifest.staticRoutes);
+const STATIC_FILES: Set<string> = new Set(manifest.staticFiles ?? []);
 const DYNAMIC_PATTERNS: RegExp[] = manifest.dynamicPatterns.map(
   (p: string) => new RegExp(`^${p}$`)
 );
@@ -76,10 +77,11 @@ export default async function middleware(request: Request): Promise<Response> {
     if (pathname.startsWith(prefix)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
   }
   if (ALLOW_FILES.has(pathname)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
-  if (ASSET_EXT_RE.test(pathname)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
+  if (STATIC_FILES.has(pathname)) return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
 
   // 2) Known route → continue to SPA rewrite (returns 200 + index.html).
-  if (isKnownRoute(pathname)) {
+  // A file-like URL copied from an article must not match /blog/:slug.
+  if (!ASSET_EXT_RE.test(pathname) && isKnownRoute(pathname)) {
     return new Response(null, { status: 200, headers: { 'x-middleware-next': '1' } });
   }
 

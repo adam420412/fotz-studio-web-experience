@@ -46,7 +46,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
         title="Pozycjonowanie lokalne dla firm: Kompletny poradnik 2025"
         description="Jak działa pozycjonowanie lokalne? Wizytówka Google, lokalne SEO, Google Maps. Praktyczny przewodnik dla firm lokalnych w 2025 roku."
         ogType="article"
-        canonical="https://fotz.pl/blog/pozycjonowanie-lokalne-dla-firm"
+        canonical="https://www.fotz-studio.pl/blog/pozycjonowanie-lokalne-dla-firm"
         keywords="pozycjonowanie lokalne poradnik, seo lokalne jak zacząć, pozycjonowanie lokalne firma, google maps seo, seo dla lokalnych firm, pozycjonowanie lokalne google, wizytówka google seo, seo lokalne krok po kroku"
         schemaJson={[
           {
@@ -63,7 +63,7 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-02-20",
@@ -73,8 +73,8 @@ const BlogPozycjonowanieLokalnePoradnik = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Pozycjonowanie lokalne dla firm" }
             ]
           },

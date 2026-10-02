@@ -27,7 +27,7 @@ const SEOCoreWebVitals = () => {
       <SEOHead
         title="Core Web Vitals — Optymalizacja LCP, FID, CLS i Szybkości Strony"
         description="Core Web Vitals — optymalizacja wskaźników LCP, INP (FID), CLS. Popraw szybkość ładowania strony i User Experience dla lepszego SEO. Fotz Studio."
-        canonical="https://fotz.pl/seo/core-web-vitals"
+        canonical="https://www.fotz-studio.pl/seo/core-web-vitals"
         keywords="core web vitals, lcp seo, cls seo, fid seo, szybkość strony, page speed, optymalizacja core web vitals, web vitals google, core web vitals jak poprawić, page experience seo"
       />
       <ServiceSchema
@@ -37,9 +37,9 @@ const SEOCoreWebVitals = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Core Web Vitals", url: "https://fotz.pl/seo/core-web-vitals" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Core Web Vitals", url: "https://www.fotz-studio.pl/seo/core-web-vitals" }
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

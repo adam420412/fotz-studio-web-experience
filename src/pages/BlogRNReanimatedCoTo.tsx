@@ -43,22 +43,22 @@ export default function BlogRNReanimatedCoTo() {
     <Layout>
       <SEOHead
         title="React Native Reanimated, Gesture Handler i Skia | Fotz Studio"
-        description="React Native Reanimated 3 (worklets, UI thread, withSpring), Gesture Handler (Pan, Pinch, Swipe), @shopify/react-native-skia (2D graphics), FlashList i…"
-        canonical="https://fotz.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
+        description="6 bibliotek React Native (Reanimated/GestureHandler/Skia/Screens/FlashList/SharedElement) — worklets, UI thread animations, natywne gesty i 2D graphics."
+        canonical="https://www.fotz-studio.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
 
         keywords="React Native Reanimated, Gesture Handler i Skia co to jest, React Native Reanimated, Gesture Handler i Skia jak działa, React Native Reanimated, Gesture Handler i Skia tutorial, React Native Reanimated, Gesture Handler i Skia przykład, czym jest React Native Reanimated, Gesture Handler i Skia, React Native Reanimated, Gesture Handler i Skia dokumentacja, React Native Reanimated, Gesture Handler i Skia przewodnik"
       />
       <ArticleSchema
         title="React Native Reanimated, Gesture Handler i Skia — animacje i gesty iOS Android 2024?"
         description="6 bibliotek React Native (Reanimated/GestureHandler/Skia/Screens/FlashList/SharedElement) — worklets, UI thread animations, natywne gesty i 2D graphics."
-        url="https://fotz.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
+        url="https://www.fotz-studio.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Native Reanimated i Gesty", url: "https://fotz.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Native Reanimated i Gesty", url: "https://www.fotz-studio.pl/blog/react-native-reanimated-gesture-handler-skia-animacje-gesty-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-rose-950 text-white py-20 px-4">

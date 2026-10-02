@@ -109,14 +109,14 @@ export default function StronyInternetowePodkarpacie() {
   return (
     <>
       <SEOHead
-        title="Strony internetowe Podkarpacie | Rzeszów | fotz.pl"
-        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Od…"
-        canonical="https://fotz.pl/uslugi/strony-internetowe/podkarpacie"
+        title="Strony internetowe Podkarpacie | Rzeszów | FOTZ Studio"
+        description="Profesjonalne strony internetowe dla firm z Podkarpacia i Rzeszowa. Specjalizujemy się w firmach z Aviation Valley, startupach i sektorze logistyki. Strony od 499 zł, responsywne i zoptymalizowane pod SEO."
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/podkarpacie"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "fotz.pl - Strony Internetowe Podkarpacie",
-          "image": "https://fotz.pl/logo.png",
+          "image": "https://www.fotz-studio.pl/logo-fotz.jpg",
           "description": "Tworzenie stron internetowych dla firm z Podkarpacia i Rzeszowa. Aviation Valley, startups, logistyka, produkcja.",
           "address": {
             "@type": "PostalAddress",
@@ -128,8 +128,8 @@ export default function StronyInternetowePodkarpacie() {
             {"@type": "City", "name": "Przemyśl"},
             {"@type": "State", "name": "Podkarpackie"}
           ],
-          "url": "https://fotz.pl/uslugi/strony-internetowe/podkarpacie",
-          "telephone": "+48123456789",
+          "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/podkarpacie",
+          "telephone": "+48790814814",
           "priceRange": "$$",
           "serviceType": "Web Design & Development"
         }}
@@ -164,10 +164,10 @@ export default function StronyInternetowePodkarpacie() {
             </p>
 
             <div className="flex gap-4 flex-wrap">
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition flex items-center gap-2">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition flex items-center gap-2">
                 Zacznij projekt
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </a>
               <Link
                 to="/cennik-tworzenia-stron"
                 className="bg-white/10 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition border border-white/20"
@@ -300,10 +300,10 @@ export default function StronyInternetowePodkarpacie() {
               <p className="text-slate-700 mb-6">
                 Obsługujemy projekty z każdej branży. Jeśli prowadzisz biznes w Podkarpaciu i chcesz go cyfryzować, możemy Ci pomóc. Zapraszamy na bezpłatną konsultację.
               </p>
-              <button className="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center text-primary font-semibold flex items-center gap-2 hover:gap-3 transition">
                 Skonsultuj się z nami
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </FadeInView>
         </div>
@@ -387,9 +387,9 @@ export default function StronyInternetowePodkarpacie() {
               <p className="text-slate-600 mb-6 text-lg">
                 Każdy projekt jest inny. Powyższe ceny to orientacyjne pakiety. Możemy dostosować zakres i budżet do Twoich potrzeb.
               </p>
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition">
                 Zaplanuj konsultację
-              </button>
+              </a>
             </div>
           </FadeInView>
         </div>
@@ -421,10 +421,10 @@ export default function StronyInternetowePodkarpacie() {
             Podkarpacie rośnie. Twoja firma powinna rosnąć razem z regionem. Zacznij od nowoczesnej strony internetowej.
           </p>
           
-          <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition inline-flex items-center gap-2">
+          <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition inline-flex items-center gap-2">
             Zaplanuj projekt
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
         </div>
       </section>
 

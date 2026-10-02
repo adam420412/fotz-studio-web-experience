@@ -141,8 +141,8 @@ const LinkedInAds = () => {
       <Layout>
       <SEOHead
         title="LinkedIn Ads Polska — Reklamy LinkedIn dla Firm B2B | Fotz Studio"
-        description="LinkedIn Ads Polska ✓ Kampanie reklamowe B2B na LinkedIn. Sponsored Content, InMail, Lead Gen Forms, ABM. Specjaliści LinkedIn Campaign Manager. Bezpłatna…"
-        canonical="https://fotz.pl/performance-marketing/linkedin-ads"
+        description="LinkedIn Ads Polska ✓ Kampanie reklamowe B2B na LinkedIn. Sponsored Content, InMail, Lead Gen Forms, ABM. Specjaliści LinkedIn Campaign Manager. Bezpłatna konsultacja dla firm B2B."
+        canonical="https://www.fotz-studio.pl/performance-marketing/linkedin-ads"
         keywords="linkedin ads polska, reklamy linkedin, kampanie linkedin b2b, linkedin campaign manager, agencja linkedin ads, marketing b2b linkedin"
       />
       <ServiceSchema
@@ -151,9 +151,9 @@ const LinkedInAds = () => {
         provider="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "LinkedIn Ads", url: "https://fotz.pl/performance-marketing/linkedin-ads" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
+          { name: "LinkedIn Ads", url: "https://www.fotz-studio.pl/performance-marketing/linkedin-ads" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -508,7 +508,7 @@ const LinkedInAds = () => {
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
             </div>
           </motion.div>
         </div>

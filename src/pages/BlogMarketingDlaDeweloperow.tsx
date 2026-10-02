@@ -57,23 +57,23 @@ export default function BlogMarketingDlaDeweloperow() {
     <>
       <SEOHead
         title="Marketing dla deweloperów - strategie reklamy nieruchomości 2025"
-        description="Kompletny przewodnik marketingu dla deweloperów. Strategie sprzedaży mieszkań, Google Ads, SEO, wirtualne spacery, lead generation, email marketing. Jak…"
+        description="Kompleksowy poradnik marketingu dla deweloperów nieruchomości. Jak efektywnie reklamować inwestycje i zdobywać kupujących."
         ogType="article"
-        canonical="https://fotz.pl/blog/marketing-dla-deweloperow"
+        canonical="https://www.fotz-studio.pl/blog/marketing-dla-deweloperow"
         keywords="marketing dla deweloperów, reklama dla deweloperów, marketing nieruchomości deweloperskie, strategie sprzedaży mieszkań"
       />
       <ArticleSchema
         title="Marketing dla deweloperów - strategie reklamy i sprzedaży 2025"
         description="Kompleksowy poradnik marketingu dla deweloperów nieruchomości. Jak efektywnie reklamować inwestycje i zdobywać kupujących."
-        url="https://fotz.pl/blog/marketing-dla-deweloperow"
+        url="https://www.fotz-studio.pl/blog/marketing-dla-deweloperow"
         datePublished="2025-04-25"
         dateModified="2025-08-12"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Blog", url: "https://fotz.pl/blog" },
-        { name: "Marketing dla deweloperów", url: "https://fotz.pl/blog/marketing-dla-deweloperow" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+        { name: "Marketing dla deweloperów", url: "https://www.fotz-studio.pl/blog/marketing-dla-deweloperow" }
       ]}/>
       <FAQSchema items={faqItems} />
 

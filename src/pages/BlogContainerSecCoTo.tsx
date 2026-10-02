@@ -49,23 +49,23 @@ export default function BlogContainerSecCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Container Security | Fotz Studio"
+        title="Container Security — bezpieczeństwo kontenerów, Trivy, Falco, Kubernetes RBAC?"
         description="Container Security: bezpieczne Docker images, skanowanie CVE (Trivy, Grype, Snyk), Kubernetes RBAC, Network Policies, Falco runtime security i compliance."
-        canonical="https://fotz.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
+        canonical="https://www.fotz-studio.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
 
         keywords="Container Security co to jest, Container Security jak działa, Container Security tutorial, Container Security przykład, czym jest Container Security, Container Security dokumentacja, Container Security przewodnik"
       />
       <ArticleSchema
         title="Container Security — bezpieczeństwo kontenerów, Trivy, Falco, Kubernetes RBAC?"
         description="Container Security: 6 warstw, 4 skanery (Trivy/Grype/Snyk/Scout), Kubernetes RBAC, Network Policies, Falco runtime, Seccomp/AppArmor i CIS benchmark."
-        url="https://fotz.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
+        url="https://www.fotz-studio.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Container Security", url: "https://fotz.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Container Security", url: "https://www.fotz-studio.pl/blog/container-security-bezpieczenstwo-kontenerow-trivy-falco-kubernetes-rbac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-red-950 text-white py-20 px-4">

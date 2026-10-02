@@ -97,14 +97,14 @@ export default function StronyInternetoweWielkopolska() {
   return (
     <>
       <SEOHead
-        title="Strony internetowe Wielkopolska | Poznań | fotz.pl"
+        title="Strony internetowe Wielkopolska | Poznań | FOTZ Studio"
         description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena od 499 zł."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/wielkopolska"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/wielkopolska"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "fotz.pl - Strony Internetowe Wielkopolska",
-          "image": "https://fotz.pl/logo.png",
+          "image": "https://www.fotz-studio.pl/logo-fotz.jpg",
           "description": "Tworzenie stron internetowych dla firm z Wielkopolski i Poznania. Zespół w Poznaniu, SEO, hosting, wsparcie.",
           "address": {
             "@type": "PostalAddress",
@@ -116,8 +116,8 @@ export default function StronyInternetoweWielkopolska() {
             {"@type": "City", "name": "Poznań"},
             {"@type": "State", "name": "Wielkopolskie"}
           ],
-          "url": "https://fotz.pl/uslugi/strony-internetowe/wielkopolska",
-          "telephone": "+48123456789",
+          "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/wielkopolska",
+          "telephone": "+48790814814",
           "priceRange": "$$",
           "serviceType": "Web Design & Development"
         }}
@@ -152,10 +152,10 @@ export default function StronyInternetoweWielkopolska() {
             </p>
 
             <div className="flex gap-4 flex-wrap">
-              <button className="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition flex items-center gap-2">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition flex items-center gap-2">
                 Zacznij projekt
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </a>
               <Link
                 to="/cennik-tworzenia-stron"
                 className="bg-white/10 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition border border-white/20"
@@ -236,10 +236,10 @@ export default function StronyInternetoweWielkopolska() {
               <p className="text-slate-600 mb-6">
                 Obsługujemy projekty z każdej branży. Jeśli prowadzisz biznes w Wielkopolsce, niezależnie od sektora, możemy Ci pomóc zbudować stronę, która będzie przynosić nowych klientów.
               </p>
-              <button className="text-primary font-semibold flex items-center gap-2 hover:gap-3 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center text-primary font-semibold flex items-center gap-2 hover:gap-3 transition">
                 Skonsultuj się z nami
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </FadeInView>
         </div>
@@ -370,11 +370,11 @@ export default function StronyInternetoweWielkopolska() {
           </p>
           
           <div className="flex gap-4 justify-center flex-wrap">
-            <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition">
               Zaplanuj konsultację
-            </button>
+            </a>
             <a
-              href="tel:+48123456789"
+              href="tel:+48790814814"
               className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />

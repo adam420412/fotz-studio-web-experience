@@ -152,7 +152,7 @@ export default function AdminDashboard() {
   const [isCollecting, setIsCollecting] = useState(false);
   
   // PageSpeed Insights state
-  const [pageSpeedUrl, setPageSpeedUrl] = useState('https://fotz.pl');
+  const [pageSpeedUrl, setPageSpeedUrl] = useState('https://www.fotz-studio.pl');
   const [pageSpeedStrategy, setPageSpeedStrategy] = useState<'mobile' | 'desktop'>('mobile');
   const [pageSpeedResult, setPageSpeedResult] = useState<PageSpeedResult | null>(null);
   const [isTestingPageSpeed, setIsTestingPageSpeed] = useState(false);
@@ -520,7 +520,7 @@ export default function AdminDashboard() {
       <SEOHead
         title="Dashboard Wydajności | Panel Admina | Fotz Studio"
         description="Panel administracyjny do monitorowania Core Web Vitals i wydajności strony w czasie rzeczywistym."
-        canonical="https://fotz.pl/admin/dashboard"
+        canonical="https://www.fotz-studio.pl/admin/dashboard"
         noIndex={true}
       />
       <Layout>
@@ -593,7 +593,7 @@ export default function AdminDashboard() {
                       <div className="flex-1">
                         <Input
                           type="url"
-                          placeholder="https://fotz.pl"
+                          placeholder="https://www.fotz-studio.pl"
                           value={pageSpeedUrl}
                           onChange={(e) => setPageSpeedUrl(e.target.value)}
                           className="w-full"

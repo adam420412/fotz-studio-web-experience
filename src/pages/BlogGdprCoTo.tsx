@@ -56,23 +56,23 @@ export default function BlogGdprCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="GDPR (RODO) | Fotz Studio"
+        title="GDPR (RODO) — co to jest i jak wdrożyć w firmie technologicznej?"
         description="GDPR / RODO: podstawy prawne przetwarzania, prawa podmiotów danych, wdrożenie krok po kroku, DPA, SCCs, kary i checklist compliance dla firm SaaS."
-        canonical="https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
+        canonical="https://www.fotz-studio.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
 
         keywords="GDPR (RODO) co to jest, GDPR (RODO) definicja, czym jest GDPR (RODO), GDPR (RODO) przykłady, jak działa GDPR (RODO), GDPR (RODO) znaczenie, GDPR (RODO) przewodnik"
       />
       <ArticleSchema
         title="GDPR (RODO) — co to jest i jak wdrożyć w firmie technologicznej?"
         description="GDPR: 7 zasad, 6 podstaw prawnych, prawa podmiotów, wdrożenie krok po kroku, Data Processing Agreement, SCCs, kary i compliance checklist dla SaaS i tech firms."
-        url="https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
+        url="https://www.fotz-studio.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne"
         datePublished="2024-03-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "GDPR / RODO", url: "https://fotz.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "GDPR / RODO", url: "https://www.fotz-studio.pl/blog/gdpr-rodo-co-to-jest-jak-wdrozyz-firmy-technologiczne" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">

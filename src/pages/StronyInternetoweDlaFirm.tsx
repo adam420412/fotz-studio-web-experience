@@ -19,9 +19,9 @@ export default function StronyInternetoweDlaFirm() {
   return (
     <>
       <SEOHead
-        title="Strony internetowe dla firm | Profesjonalne strony WWW | fotz.pl"
+        title="Strony internetowe dla firm | Profesjonalne strony WWW | FOTZ Studio"
         description="Profesjonalne strony internetowe dla firm każdej branży. Responsywne, szybkie, zoptymalizowane. Od 499 zł netto. Sprawdź ofertę fotz.pl!"
-        canonical="https://fotz.pl/uslugi/strony-internetowe-dla-firm"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe-dla-firm"
         keywords="strony internetowe dla firm, strona internetowa dla firmy, tworzenie stron dla firm, profesjonalna strona www firma, strona firmowa, strona internetowa dla małej firmy"
       />
       <ServiceSchema
@@ -46,9 +46,11 @@ export default function StronyInternetoweDlaFirm() {
               <p className="text-2xl text-green-700 mb-8 font-semibold max-w-3xl mx-auto">
                 Twoja firma bez strony internetowej to jak sklep bez szyldu. 93% decyzji zakupowych zaczyna się online.
               </p>
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg">
-                Bezpłatna konsultacja
-                <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg">
+                <Link to="/kontakt">
+                  Bezpłatna konsultacja
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -283,15 +285,15 @@ export default function StronyInternetoweDlaFirm() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.featured
                           ? "bg-green-600 hover:bg-green-700 text-white"
                           : "bg-gray-200 hover:bg-gray-300 text-gray-900"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       Wybierz pakiet
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

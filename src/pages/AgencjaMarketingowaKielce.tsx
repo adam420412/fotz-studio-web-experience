@@ -139,7 +139,7 @@ const AgencjaMarketingowaKielce = () => {
       <SEOHead
         title="Agencja marketingowa Kielce - fotz studio | Marketing internetowy"
         description="Agencja marketingowa w Kielcach. Tworzymy strony internetowe, pozycjonowanie SEO, kampanie Google Ads i branding dla firm z Kielc i Świętokrzyskiego."
-        canonical="https://fotz.pl/agencja-marketingowa/kielce"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/kielce"
         keywords="agencja marketingowa kielce, marketing internetowy kielce, agencja reklamowa kielce, seo kielce, google ads kielce"
       />
       <ServiceSchema
@@ -149,9 +149,9 @@ const AgencjaMarketingowaKielce = () => {
         areaServed="Kielce"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja" },
-          { name: "Kielce", url: "https://fotz.pl/agencja-marketingowa/kielce" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Kielce", url: "https://www.fotz-studio.pl/agencja-marketingowa/kielce" },
         ]}/>
       <FAQSchema items={faqItems.map((item) => ({ question: item.question, answer: item.answer }))} />
       <OrganizationSchema />

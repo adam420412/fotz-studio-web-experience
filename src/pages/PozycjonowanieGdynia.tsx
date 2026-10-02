@@ -139,7 +139,7 @@ export default function PozycjonowanieGdynia() {
       <SEOHead
         title="Pozycjonowanie Gdynia | SEO dla Firm z Gdyni | FOTZ"
         description="Pozycjonowanie Gdynia — skuteczne SEO dla firm z Gdyni i Trójmiasta. Ponad 200 projektów. Bezpłatny audyt SEO!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/gdynia"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdynia"
         keywords="pozycjonowanie gdynia, agencja seo gdynia, seo gdynia, pozycjonowanie stron gdynia, seo dla firm gdynia, seo trójmiasto, audyt seo gdynia"
       />
 
@@ -151,10 +151,10 @@ export default function PozycjonowanieGdynia() {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Gdynia", url: "https://fotz.pl/uslugi/pozycjonowanie/gdynia" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Gdynia", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdynia" },
         ]}/>
 
       <FAQSchema items={faqItems} />

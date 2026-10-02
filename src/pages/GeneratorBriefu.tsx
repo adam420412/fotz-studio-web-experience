@@ -349,7 +349,7 @@ DANE KONTAKTOWE:
         </div>
         
         <div class="footer">
-          <p>Brief wygenerowany przez Fotz Studio | fotz.pl</p>
+          <p>Brief wygenerowany przez Fotz Studio | FOTZ Studio</p>
         </div>
       </body>
       </html>
@@ -785,8 +785,8 @@ DANE KONTAKTOWE:
     <Layout>
       <SEOHead
         title="Generator Briefu Projektowego — Stwórz Brief Marketingowy Online"
-        description="Generator briefu projektowego — stwórz profesjonalny brief marketingowy, brief strony internetowej lub kampanii reklamowej online. Darmowe narzędzie Fotz…"
-        canonical="https://fotz.pl/generator-briefu"
+        description="Generator briefu projektowego — stwórz profesjonalny brief marketingowy, brief strony internetowej lub kampanii reklamowej online. Darmowe narzędzie Fotz Studio, które pomoże Ci uporządkować wymagania projektu."
+        canonical="https://www.fotz-studio.pl/generator-briefu"
         keywords="generator briefu, brief projektowy, brief marketingowy, brief online"
       />
 

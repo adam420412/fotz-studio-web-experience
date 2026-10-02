@@ -89,12 +89,12 @@ const StronyInternetoweKonin = () => {
       <SEOHead
         title="Strony Internetowe Konin | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Konin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Konina. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/konin"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/konin"
         keywords="strony internetowe konin, tworzenie stron konin, strony www konin, projektowanie stron konin"
       />
       
       <ServiceSchema name="Strony Internetowe Konin" description="Profesjonalne tworzenie stron internetowych dla firm z Konina." provider="FOTZ Studio" areaServed="Konin" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Konin", url: "https://fotz.pl/uslugi/strony-internetowe/konin" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Konin", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/konin" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

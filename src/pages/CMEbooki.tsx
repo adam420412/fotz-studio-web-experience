@@ -37,7 +37,7 @@ const CMEbooki = () => {
       <SEOHead
         title="E-booki i Lead Magnety | Fotz Studio"
         description="E-booki, lead magnety i content marketing B2B — tworzenie materiałów edukacyjnych, whitepaper, checklisty do pozyskiwania leadów. Fotz Studio."
-        canonical="https://fotz.pl/content-marketing/ebooki"
+        canonical="https://www.fotz-studio.pl/content-marketing/ebooki"
         keywords="ebook marketing, tworzenie ebooka, ebook lead magnet, ebook dla firmy, content marketing ebook"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const CMEbooki = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Content Marketing", url: "https://fotz.pl/content-marketing" },
-        { name: "Ebooki i Lead Magnety", url: "https://fotz.pl/content-marketing/ebooki" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Content Marketing", url: "https://www.fotz-studio.pl/content-marketing" },
+        { name: "Ebooki i Lead Magnety", url: "https://www.fotz-studio.pl/content-marketing/ebooki" },
       ]}/>
       <FAQSchema items={faqItems} />
 
@@ -228,7 +228,7 @@ const CMEbooki = () => {
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
             </div>
           </motion.div>

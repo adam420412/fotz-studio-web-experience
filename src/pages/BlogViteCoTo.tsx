@@ -44,21 +44,21 @@ export default function BlogViteCoTo() {
       <SEOHead
         title="Vite, esbuild, Turbopack, Rollup, Webpack | Fotz Studio"
         description="Vite vs esbuild vs Turbopack vs Rollup vs Webpack — porównanie bundlerów JS, ESM native dev server, szybkość HMR, zastosowania i kiedy co wybrać w 2024."
-        canonical="https://fotz.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac"
+        canonical="https://www.fotz-studio.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac"
 
         keywords="Vite, esbuild, Turbopack, Rollup, Webpack co to jest, Vite, esbuild, Turbopack, Rollup, Webpack definicja, czym jest Vite, esbuild, Turbopack, Rollup, Webpack, Vite, esbuild, Turbopack, Rollup, Webpack przykłady, jak działa Vite, esbuild, Turbopack, Rollup, Webpack, Vite, esbuild, Turbopack, Rollup, Webpack znaczenie, Vite, esbuild, Turbopack, Rollup, Webpack przewodnik"
       />
       <ArticleSchema
         title="Vite, esbuild, Turbopack, Rollup, Webpack — bundlery JS 2024, co wybrać?"
         description="6 bundlerów JS (Vite/esbuild/Turbopack/Rollup/Webpack/Rspack) — ESM native, HMR, Go/Rust/JS, produkcja vs dev, Module Federation, kiedy co wybrać."
-        url="https://fotz.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac"
+        url="https://www.fotz-studio.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Vite, esbuild, Turbopack", url: "https://fotz.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Vite, esbuild, Turbopack", url: "https://www.fotz-studio.pl/blog/vite-esbuild-turbopack-rollup-webpack-bundlery-js-co-wybrac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-orange-950 text-white py-20 px-4">

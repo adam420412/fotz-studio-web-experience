@@ -75,7 +75,7 @@ const AgencjaReklamowaPoznan = () => {
       <SEOHead
         title="Agencja Reklamowa Poznań — Reklama Online, Spoty, Kampanie"
         description="Agencja reklamowa Poznań — tworzenie reklam wideo, spoty reklamowe, kampanie Google Ads i Meta Ads, identyfikacja wizualna. Fotz Studio."
-        canonical="https://fotz.pl/agencja-reklamowa-poznan"
+        canonical="https://www.fotz-studio.pl/agencja-reklamowa-poznan"
         keywords="agencja reklamowa poznań, kampanie reklamowe poznań, reklama google ads, meta ads poznań, branding poznań, reklama atl btl, agencja kreatywna poznań"
       />
       <ServiceSchema
@@ -85,8 +85,8 @@ const AgencjaReklamowaPoznan = () => {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja Reklamowa Poznań", url: "https://fotz.pl/agencja-reklamowa-poznan" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Reklamowa Poznań", url: "https://www.fotz-studio.pl/agencja-reklamowa-poznan" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

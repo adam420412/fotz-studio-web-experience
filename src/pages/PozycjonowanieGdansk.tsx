@@ -93,7 +93,7 @@ const PozycjonowanieGdansk = () => {
       <SEOHead
         title="Pozycjonowanie Gdańsk — Agencja SEO Trójmiasto | Fotz Studio"
         description="Pozycjonowanie stron Gdańsk i Trójmiasto. Agencja SEO Fotz Studio — audyt, optymalizacja, link building dla firm z Gdańska. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/gdansk"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdansk"
         keywords="pozycjonowanie gdańsk, agencja seo gdańsk, seo gdańsk, pozycjonowanie stron gdańsk, seo dla firm gdańsk, seo trójmiasto, audyt seo gdańsk, pozycjonowanie lokalne gdańsk"
       />
       <ServiceSchema
@@ -103,10 +103,10 @@ const PozycjonowanieGdansk = () => {
         areaServed="Gdańsk, Trójmiasto"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Gdańsk", url: "https://fotz.pl/uslugi/pozycjonowanie/gdansk" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Gdańsk", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/gdansk" },
         ]}/>
       <FAQSchema items={faqItems} />
 

@@ -95,9 +95,9 @@ export default function BlogSalesFunnelCoTo() {
   return (
     <>
       <SEOHead
-        title="Sales Funnel — co to jest? Lejek sprzedażowy B2B i B2C | fotz.pl"
+        title="Sales Funnel — co to jest? Lejek sprzedażowy B2B i B2C | FOTZ Studio"
         description="Sales funnel co to jest — wyjaśniamy czym jest lejek sprzedażowy, etapy TOFU MOFU BOFU, metryki pipeline, optymalizacja konwersji i błędy zarządzania lejkiem."
-        canonical="https://fotz.pl/blog/sales-funnel-co-to"
+        canonical="https://www.fotz-studio.pl/blog/sales-funnel-co-to"
 
         keywords="Sales Funnel co to jest, Sales Funnel definicja, czym jest Sales Funnel, Sales Funnel w sprzedaży, Sales Funnel strategia, Sales Funnel przykłady, jak używać Sales Funnel"
       />
@@ -106,7 +106,7 @@ export default function BlogSalesFunnelCoTo() {
         description="Czym jest sales funnel, etapy TOFU/MOFU/BOFU, metryki pipeline (win rate, CAC, MQL-SQL), optymalizacja i błędy w zarządzaniu lejkiem."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/sales-funnel-co-to"
+        url="https://www.fotz-studio.pl/blog/sales-funnel-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

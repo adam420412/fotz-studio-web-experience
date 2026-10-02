@@ -51,23 +51,23 @@ export default function BlogOpenTelemetryCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="OpenTelemetry | Fotz Studio"
+        title="OpenTelemetry — co to jest, traces, metrics, logs, Collector i Jaeger?"
         description="OpenTelemetry: traces, metrics, logs, OTel Collector, auto-instrumentation, Jaeger, Tempo, Prometheus — jak instrumentować aplikacje i analizować telemetrię."
-        canonical="https://fotz.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger"
+        canonical="https://www.fotz-studio.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger"
 
         keywords="OpenTelemetry co to jest, OpenTelemetry definicja, czym jest OpenTelemetry, OpenTelemetry przykłady, jak działa OpenTelemetry, OpenTelemetry znaczenie, OpenTelemetry przewodnik"
       />
       <ArticleSchema
         title="OpenTelemetry — co to jest, traces, metrics, logs, Collector i Jaeger?"
         description="OTel: 6 komponentów, 6 backendów, distributed tracing, Collector pipeline, Prometheus/Grafana/Tempo stack i praktyczne wdrożenie z sampling strategią."
-        url="https://fotz.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger"
+        url="https://www.fotz-studio.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger"
         datePublished="2024-04-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "OpenTelemetry", url: "https://fotz.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "OpenTelemetry", url: "https://www.fotz-studio.pl/blog/opentelemetry-co-to-jest-traces-metrics-logs-collector-jaeger" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

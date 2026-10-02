@@ -135,7 +135,7 @@ const StronyInternetoweBydgoszcz = () => {
       <SEOHead
         title="Strony Internetowe Bydgoszcz | Fotz Studio"
         description="Strony internetowe Bydgoszcz — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Bydgoszczy. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/bydgoszcz"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/bydgoszcz"
         keywords="strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron bydgoszcz, sklepy internetowe bydgoszcz, strona www bydgoszcz, www bydgoszcz, wykonanie strony internetowej bydgoszcz, responsywna strona www bydgoszcz, wordpress bydgoszcz, nowoczesne strony www bydgoszcz"
       />
       
@@ -147,9 +147,9 @@ const StronyInternetoweBydgoszcz = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Bydgoszcz", url: "https://fotz.pl/uslugi/strony-internetowe/bydgoszcz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Bydgoszcz", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/bydgoszcz" },
         ]}/>
       
       <FAQSchema 
@@ -276,7 +276,7 @@ const StronyInternetoweBydgoszcz = () => {
                 <div className="prose prose-invert max-w-none prose-sm sm:prose-base">
                   <p>
                     <strong>Projektowanie stron internetowych to kluczowy element w procesie tworzenia efektywnej wizytówki Twojej firmy w sieci</strong>. 
-                    W Bydgoszczy nasza <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline">agencja</Link> specjalizuje się 
+                    W Bydgoszczy nasza <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline">agencja</Link> specjalizuje się 
                     w projektowaniu stron www, które są nie tylko estetyczne, ale przede wszystkim funkcjonalne i responsywne.
                   </p>
                   

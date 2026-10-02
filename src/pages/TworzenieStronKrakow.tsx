@@ -208,7 +208,7 @@ export default function TworzenieStronKrakow() {
       <SEOHead
         title="Tworzenie stron internetowych Kraków | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Krakowie. Nowoczesne, responsywne strony dla firm. Od 499 zł. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/krakow"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/krakow"
         keywords="tworzenie stron internetowych kraków, strony internetowe kraków, tworzenie stron www kraków, projektowanie stron internetowych kraków, strony www kraków, sklepy internetowe kraków, projektowanie stron www kraków, agencja webdesign kraków, tworzenie stron kraków, strona internetowa kraków"
       />
       <ServiceSchema
@@ -250,8 +250,10 @@ export default function TworzenieStronKrakow() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -433,15 +435,15 @@ export default function TworzenieStronKrakow() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.highlight
                           ? "bg-white text-blue-600 hover:bg-slate-100"
                           : "bg-blue-600 text-white hover:bg-blue-700"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

@@ -208,7 +208,7 @@ export default function TworzenieStronWroclaw() {
       <SEOHead
         title="Tworzenie stron internetowych Wrocław | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe we Wrocławiu. Szybkie, responsywne strony dla firm z Dolnego Śląska. Od 499 zł. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/wroclaw"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/wroclaw"
         keywords="tworzenie stron internetowych wrocław, strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron internetowych wrocław, strony www wrocław, sklepy internetowe wrocław, projektowanie stron www wrocław, agencja webdesign wrocław, tworzenie stron wrocław, strona internetowa wrocław"
       />
       <ServiceSchema
@@ -250,8 +250,10 @@ export default function TworzenieStronWroclaw() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -433,15 +435,15 @@ export default function TworzenieStronWroclaw() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.highlight
                           ? "bg-white text-blue-600 hover:bg-slate-100"
                           : "bg-blue-600 text-white hover:bg-blue-700"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

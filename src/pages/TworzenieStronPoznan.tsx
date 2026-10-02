@@ -12,10 +12,10 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 export default function TworzenieStronPoznan() {
   const breadcrumbs = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Usługi", url: "https://fotz.pl/uslugi" },
-    { name: "Tworzenie stron internetowych", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych" },
-    { name: "Poznań", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych/poznan" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+    { name: "Tworzenie stron internetowych", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych" },
+    { name: "Poznań", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan" }
   ];
 
   const stats = [
@@ -135,7 +135,7 @@ export default function TworzenieStronPoznan() {
       <SEOHead
         title="Tworzenie stron internetowych Poznań | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Poznań — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/poznan"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/poznan"
         keywords="tworzenie stron internetowych poznań, strony internetowe poznań, tworzenie stron www poznań, projektowanie stron internetowych poznań, strony www poznań, tworzenie stron poznań, strona internetowa poznań, agencja webdesign poznań, projektowanie stron www poznań, sklep internetowy poznań"
       />
       <ServiceSchema name="Tworzenie stron internetowych Poznań" description="Profesjonalne tworzenie stron internetowych dla firm z Poznania i Wielkopolski. Jesteśmy stąd — znamy lokalny rynek." areaServed={["PL"]} />

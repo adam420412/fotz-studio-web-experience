@@ -26,8 +26,8 @@ const AIMarketing = () => {
     <>
       <SEOHead
         title="AI Marketing — Sztuczna Inteligencja w Marketingu | Fotz Studio"
-        description="AI Marketing — wykorzystanie sztucznej inteligencji w strategii marketingowej: automatyzacja, personalizacja treści, AI copywriting i analityka…"
-        canonical="https://fotz.pl/ai-marketing"
+        description="AI Marketing — wykorzystanie sztucznej inteligencji w strategii marketingowej: automatyzacja, personalizacja treści, AI copywriting i analityka. Wdrażamy narzędzia AI, które wspierają sprzedaż i ograniczają koszty operacyjne."
+        canonical="https://www.fotz-studio.pl/ai-marketing"
         keywords="ai marketing, sztuczna inteligencja marketing, marketing automation ai, narzędzia ai marketing, chatgpt marketing"
       />
       <ServiceSchema
@@ -37,8 +37,8 @@ const AIMarketing = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "AI Marketing", url: "https://fotz.pl/ai-marketing" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "AI Marketing", url: "https://www.fotz-studio.pl/ai-marketing" }
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

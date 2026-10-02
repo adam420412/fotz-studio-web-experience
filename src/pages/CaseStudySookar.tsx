@@ -41,15 +41,15 @@ const CaseStudySookar = () => {
   return (
     <Layout>
       <SEOHead
-        title="Sookar Elite Car Market | Fotz Studio"
+        title="Sookar - Elite Car Market - Case Study | Fotz Studio"
         description="Case study Sookar Elite Car Market: strona internetowa dla platformy luksusowych samochodów. Premium design, katalog i SEO motoryzacyjne. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/sookar"
+        canonical="https://www.fotz-studio.pl/realizacje/sookar"
         keywords="case study social media agencja, realizacja social media"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Sookar", url: "https://fotz.pl/realizacje/sookar" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Sookar", url: "https://www.fotz-studio.pl/realizacje/sookar" }
       ]}/>
       <ArticleSchema
         title="Sookar - Elite Car Market - Case Study"
@@ -57,8 +57,8 @@ const CaseStudySookar = () => {
         author="Fotz Studio"
         datePublished="2023-10-05"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/sookar"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/sookar"
       />
 
       {/* Hero */}

@@ -87,7 +87,7 @@ function validateCurrentPage(): SEOIssue[] {
   const canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
   if (!canonical || !canonical.href) {
     issues.push({ type: 'error', category: 'Canonical', message: 'Missing canonical URL' });
-  } else if (canonical.href.endsWith('/') && canonical.href !== 'https://fotz.pl/') {
+  } else if (canonical.href.endsWith('/') && canonical.href !== 'https://www.fotz-studio.pl/') {
     issues.push({ type: 'warning', category: 'Canonical', message: 'Canonical URL has trailing slash' });
   }
 
@@ -157,7 +157,7 @@ function validateCurrentPage(): SEOIssue[] {
   }
 
   // 8. Internal links validation
-  const links = document.querySelectorAll('a[href^="/"], a[href^="https://fotz.pl"]');
+  const links = document.querySelectorAll('a[href^="/"], a[href^="https://www.fotz-studio.pl"]');
   let brokenLinks = 0;
   links.forEach(link => {
     const href = link.getAttribute('href');

@@ -114,23 +114,23 @@ export default function BlogBreakevenCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Break-even | Fotz Studio"
+        title="Break-even — co to jest i jak obliczyć próg rentowności?"
         description="Analiza break-even — definicja, formuły (BEP w szt. i PLN), marża pokrycia (CM), margin of safety i dźwignia operacyjna. Kompletny przewodnik z przykładami."
-        canonical="https://fotz.pl/blog/break-even-prog-rentownosci-co-to"
+        canonical="https://www.fotz-studio.pl/blog/break-even-prog-rentownosci-co-to"
 
         keywords="Break-even co to jest, Break-even definicja, czym jest Break-even, Break-even przykłady, jak działa Break-even, Break-even znaczenie, Break-even przewodnik"
       />
       <ArticleSchema
         title="Break-even — co to jest i jak obliczyć próg rentowności?"
         description="Kompletny przewodnik po break-even: formuły BEP, marża pokrycia, margin of safety i dźwignia operacyjna."
-        url="https://fotz.pl/blog/break-even-prog-rentownosci-co-to"
+        url="https://www.fotz-studio.pl/blog/break-even-prog-rentownosci-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Break-even — Próg rentowności", url: "https://fotz.pl/blog/break-even-prog-rentownosci-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Break-even — Próg rentowności", url: "https://www.fotz-studio.pl/blog/break-even-prog-rentownosci-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -138,7 +138,7 @@ export default function BlogBreakevenCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Break-even — Próg rentowności", url: "https://fotz.pl" },
+              { name: "Break-even — Próg rentowności", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Break-even — co to jest i jak obliczyć próg rentowności?

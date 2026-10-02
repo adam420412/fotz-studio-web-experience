@@ -88,9 +88,9 @@ export default function AgencjaMarketingowaTorun() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Marketingowa Toruń | fotz.pl – Marketing dla firm"
+          title="Agencja Marketingowa Toruń | FOTZ Studio – Marketing dla firm"
           description="Agencja marketingowa w Toruniu. Marketing internetowy, SEO i reklamy dla firm z Torunia. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa-torun"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa-torun"
           keywords="agencja marketingowa Toruń, marketing Toruń, agencja SEO Toruń, turystyka, hotele, restauracje, Google Ads, social media"
         />
 
@@ -101,8 +101,8 @@ export default function AgencjaMarketingowaTorun() {
           areaServed="Toruń"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Toruń", url: "https://fotz.pl/agencja-marketingowa-torun" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja Marketingowa Toruń", url: "https://www.fotz-studio.pl/agencja-marketingowa-torun" }
           ]}/>
         <FAQSchema items={faqItems} />
 
@@ -349,10 +349,10 @@ export default function AgencjaMarketingowaTorun() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa-gdansk" },
-                { label: "Agencja marketingowa Rzeszów", to: "/agencja-marketingowa-rzeszow" },
-                { label: "Agencja marketingowa Bydgoszcz", to: "/agencja-marketingowa-bydgoszcz" },
-                { label: "Agencja marketingowa Szczecin", to: "/agencja-marketingowa-szczecin" },
+                { label: "Agencja marketingowa Gdańsk", to: "/agencja-marketingowa/gdansk" },
+                { label: "Agencja marketingowa Rzeszów", to: "/agencja-marketingowa/rzeszow" },
+                { label: "Agencja marketingowa Bydgoszcz", to: "/agencja-marketingowa/bydgoszcz" },
+                { label: "Agencja marketingowa Szczecin", to: "/agencja-marketingowa/szczecin" },
               ].map((link) => (
                 <Link
                   key={link.to}

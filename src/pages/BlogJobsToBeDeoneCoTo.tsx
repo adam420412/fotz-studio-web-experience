@@ -86,22 +86,22 @@ export default function BlogJobsToBeDeoneCoTo() {
     <Layout>
       <SEOHead
         title="Jobs-to-be-Done — co to jest? Framework JTBD w product management"
-        description="Jobs-to-be-Done (JTBD) — definicja, 3 typy jobów (functional, emotional, social), switch interviews, przykłady (Slack, Notion, McDonald's). Przewodnik po…"
-        canonical="https://fotz.pl/blog/jobs-to-be-done-co-to"
+        description="Kompletny przewodnik po JTBD: teoria Claytona Christensena, 3 typy jobów, switch interviews i przykłady zastosowania w product management."
+        canonical="https://www.fotz-studio.pl/blog/jobs-to-be-done-co-to"
 
         keywords="Jobs-to-be-Done co to jest, Jobs-to-be-Done definicja, czym jest Jobs-to-be-Done, Jobs-to-be-Done przykłady, jak działa Jobs-to-be-Done, Jobs-to-be-Done znaczenie, Jobs-to-be-Done przewodnik"
       />
       <ArticleSchema
         title="Jobs-to-be-Done — co to jest i jak stosować framework JTBD?"
         description="Kompletny przewodnik po JTBD: teoria Claytona Christensena, 3 typy jobów, switch interviews i przykłady zastosowania w product management."
-        url="https://fotz.pl/blog/jobs-to-be-done-co-to"
+        url="https://www.fotz-studio.pl/blog/jobs-to-be-done-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Jobs-to-be-Done (JTBD)", url: "https://fotz.pl/blog/jobs-to-be-done-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Jobs-to-be-Done (JTBD)", url: "https://www.fotz-studio.pl/blog/jobs-to-be-done-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -109,7 +109,7 @@ export default function BlogJobsToBeDeoneCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Jobs-to-be-Done (JTBD)", url: "https://fotz.pl" },
+              { name: "Jobs-to-be-Done (JTBD)", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Jobs-to-be-Done — co to jest i jak stosować JTBD?

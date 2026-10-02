@@ -34,23 +34,23 @@ const BlogEmailMarketing = () => {
     <>
       <SEOHead
         title="Email Marketing 2025 — Jak Budować Listę i Zwiększać Konwersję"
-        description="Email marketing 2025 — jak budować listę mailingową, tworzyć skuteczne kampanie email i zwiększać konwersję. Automatyzacja, segmentacja i personalizacja…"
+        description="Kompletny poradnik email marketingu. Strategie budowania listy i zwiększania konwersji."
         ogType="article"
-        canonical="https://fotz.pl/content-marketing/email-2025"
+        canonical="https://www.fotz-studio.pl/content-marketing/email-2025"
         keywords="email marketing, skuteczny email marketing, newsletter jak pisać, email marketing dla firm, kampanie emailowe poradnik"
       />
       <ArticleSchema
         title="Email marketing w 2025 - jak budować listę mailingową i zwiększać konwersję"
         description="Kompletny poradnik email marketingu. Strategie budowania listy i zwiększania konwersji."
-        url="https://fotz.pl/content-marketing/email-2025"
+        url="https://www.fotz-studio.pl/content-marketing/email-2025"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Email marketing 2025", url: "https://fotz.pl/content-marketing/email-2025" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Email marketing 2025", url: "https://www.fotz-studio.pl/content-marketing/email-2025" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

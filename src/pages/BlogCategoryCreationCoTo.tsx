@@ -70,22 +70,22 @@ export default function BlogCategoryCreationCoTo() {
     <Layout>
       <SEOHead
         title="Category Creation — tworzenie kategorii rynkowej | Fotz.pl"
-        description="Category Creation (tworzenie kategorii) — strategia budowania nowej kategorii produktowej, etapy, różnica vs pozycjonowanie i przykłady (Salesforce…"
-        canonical="https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
+        description="Kompletny przewodnik po Category Creation: etapy, język, community, różnica vs pozycjonowanie i przykłady."
+        canonical="https://www.fotz-studio.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
 
         keywords="Category Creation co to jest, Category Creation definicja, czym jest Category Creation, Category Creation przykłady, jak działa Category Creation, Category Creation znaczenie, Category Creation przewodnik"
       />
       <ArticleSchema
         title="Category Creation — tworzenie kategorii rynkowej"
         description="Kompletny przewodnik po Category Creation: etapy, język, community, różnica vs pozycjonowanie i przykłady."
-        url="https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
+        url="https://www.fotz-studio.pl/blog/category-creation-tworzenie-kategorii-rynkowej"
         datePublished="2024-02-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Category Creation", url: "https://fotz.pl/blog/category-creation-tworzenie-kategorii-rynkowej" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Category Creation", url: "https://www.fotz-studio.pl/blog/category-creation-tworzenie-kategorii-rynkowej" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-slate-900 text-white py-20 px-4">

@@ -47,23 +47,23 @@ export default function BlogSocialMediaStrategia() {
     <Layout>
       <SEOHead 
         title="Strategia Social Media Marketing 2026 - Poradnik dla Biznesu"
-        description="Kompleksowy poradnik strategii social media marketingu dla małych i średnich przedsiębiorstw. Dowiedz się, jak budować markę w mediach społecznościowych…"
+        description="Jak stworzyć skuteczną strategię social media marketingu, planować content, mierzyć rezultaty i unikać błędów."
         ogType="article"
-        canonical="https://fotz.pl/blog/strategia-social-media-marketing"
+        canonical="https://www.fotz-studio.pl/blog/strategia-social-media-marketing"
         keywords="strategia social media, jak stworzyć strategię social media, plan działań social media, social media content plan"
       />
       <ArticleSchema 
         title="Strategia Social Media Marketing 2026 - Kompleksowy Poradnik dla Biznesu"
         description="Jak stworzyć skuteczną strategię social media marketingu, planować content, mierzyć rezultaty i unikać błędów."
-        url="https://fotz.pl/blog/strategia-social-media-marketing"
+        url="https://www.fotz-studio.pl/blog/strategia-social-media-marketing"
         datePublished="2026-04-10"
         dateModified="2026-04-10"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Blog", url: "https://fotz.pl/blog" },
-        { name: "Strategia Social Media Marketing", url: "https://fotz.pl/blog/strategia-social-media-marketing" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+        { name: "Strategia Social Media Marketing", url: "https://www.fotz-studio.pl/blog/strategia-social-media-marketing" }
       ]}/>
       <FAQSchema items={faqItems} />
 
@@ -803,15 +803,15 @@ export default function BlogSocialMediaStrategia() {
           <div className="mb-12">
             <h3 className="text-2xl font-bold text-primary mb-6">Powiązane Artykuły z Naszego Bloga</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/blog/instagram-reels-vs-tiktok" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">
+              <Link to="/social-media/reels-vs-tiktok" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">
                 <p className="font-semibold text-primary">Instagram Reels vs TikTok: Które Wybrać w 2026?</p>
                 <p className="text-sm text-muted-foreground mt-2">Porównanie dwóch najpopularniejszych platform video.</p>
               </Link>
-              <Link to="/blog/tiktok-dla-biznesu" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">
+              <Link to="/social-media/tiktok-biznes" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">
                 <p className="font-semibold text-primary">TikTok dla Biznesu: Jak Zbudować Obecność</p>
                 <p className="text-sm text-muted-foreground mt-2">Praktyczne wskazówki do TikTok marketingu dla firm.</p>
               </Link>
-              <Link to="/blog/influencer-marketing-polska" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">
+              <Link to="/social-media/influencer" className="p-4 border border-primary/20 rounded-lg hover:bg-primary/5 transition">
                 <p className="font-semibold text-primary">Influencer Marketing w Polsce: ROI i Strategie</p>
                 <p className="text-sm text-muted-foreground mt-2">Jak wybrać influencerów i zmierzyć skuteczność kampanii.</p>
               </Link>

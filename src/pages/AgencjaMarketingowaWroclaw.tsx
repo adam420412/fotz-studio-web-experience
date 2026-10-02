@@ -40,10 +40,10 @@ export default function AgencjaMarketingowaWroclaw() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "FOTZ - Agencja Marketingowa Wrocław",
-      "image": "https://fotz.pl/logo.png",
+      "image": "https://www.fotz-studio.pl/logo-fotz.jpg",
       "description": "Agencja marketingowa w Wrocławiu specjalizująca się w SEO, Google Ads, Social Media oraz tworzeniu stron internetowych.",
-      "url": "https://fotz.pl/agencja-marketingowa/wroclaw",
-      "telephone": "+48-12-345-6789",
+      "url": "https://www.fotz-studio.pl/agencja-marketingowa/wroclaw",
+      "telephone": "+48 790 814 814",
       "email": "kontakt@fotz.pl",
       "address": {
         "@type": "PostalAddress",
@@ -91,14 +91,14 @@ export default function AgencjaMarketingowaWroclaw() {
       <SEOHead
         title="Agencja Marketingowa Wrocław | Fotz Studio"
         description="Agencja marketingowa Wrocław ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Wrocławia i Dolnego Śląska. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/wroclaw"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/wroclaw"
         keywords="agencja marketingowa wrocław, marketing internetowy wrocław, agencja reklamowa wrocław, kampanie reklamowe wrocław, seo wrocław, google ads wrocław, agencja marketingowa dolny śląsk"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Wrocław", url: "https://fotz.pl/agencja-marketingowa/wroclaw" }
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Wrocław", url: "https://www.fotz-studio.pl/agencja-marketingowa/wroclaw" }
         ]}/>
 
       <FAQSchema items={faqData} />
@@ -130,12 +130,16 @@ export default function AgencjaMarketingowaWroclaw() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" variant="secondary" className="bg-white text-blue-700 hover:bg-gray-100">
-                Bezpłatna Wycena
+              <Button asChild size="lg" variant="secondary" className="bg-white text-blue-700 hover:bg-gray-100">
+                <Link to="/kontakt">
+                  Bezpłatna Wycena
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
-                <Phone className="w-4 h-4 mr-2" />
-                Zadzwoń
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
+                <a href="tel:+48790814814">
+                  <Phone className="w-4 h-4 mr-2" />
+                  Zadzwoń
+                </a>
               </Button>
             </div>
 
@@ -244,9 +248,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Raporty miesięczne</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -278,9 +282,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Analityka i KPI</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -312,9 +316,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Optymalizacja ROI</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -346,9 +350,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Wsparcie 24/7</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -380,9 +384,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Infografiki i e-booki</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -414,9 +418,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span className="text-sm">Messaging &amp; Positioning</span>
                   </li>
                 </ul>
-                <Button variant="outline" size="sm" className="w-full">
-                  Dowiedz się więcej
-                </Button>
+                <Button asChild variant="outline" size="sm" className="w-full"><a href="/kontakt">
+                  Zapytaj o szczegóły
+                </a></Button>
               </CardContent>
             </Card>
           </div>
@@ -461,9 +465,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span>Raport co miesiąc</span>
                   </li>
                 </ul>
-                <Button className="w-full" variant="outline">
+                <Button asChild className="w-full" variant="outline"><a href="/kontakt">
                   Wybierz pakiet
-                </Button>
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -497,9 +501,9 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span>Dedykowany account manager</span>
                   </li>
                 </ul>
-                <Button className="w-full">
+                <Button asChild className="w-full"><a href="/kontakt">
                   Wybierz pakiet
-                </Button>
+                </a></Button>
               </CardContent>
             </Card>
 
@@ -530,8 +534,10 @@ export default function AgencjaMarketingowaWroclaw() {
                     <span>Wsparcie i konsultacje nieograniczone</span>
                   </li>
                 </ul>
-                <Button className="w-full" variant="outline">
-                  Zapytaj o ofertę
+                <Button asChild className="w-full" variant="outline">
+                  <Link to="/kontakt">
+                    Zapytaj o ofertę
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -645,12 +651,16 @@ export default function AgencjaMarketingowaWroclaw() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
-                Bezpłatna Konsultacja
+              <Button asChild size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
-                <Phone className="w-4 h-4 mr-2" />
-                +48 12 345 6789
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/20">
+                <a href="tel:+48790814814">
+                  <Phone className="w-4 h-4 mr-2" />
+                  +48 790 814 814
+                </a>
               </Button>
             </div>
 

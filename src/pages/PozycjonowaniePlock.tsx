@@ -89,7 +89,7 @@ const PozycjonowaniePlock = () => {
       <SEOHead
         title="Pozycjonowanie Płock - Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Płock. Agencja SEO Fotz Studio - audyt SEO, optymalizacja i link building dla firm z Płocku. Bezpłatny audyt SEO!"
-        canonical="https://fotz.pl/pozycjonowanie/plock"
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/plock"
         keywords="pozycjonowanie płock, agencja seo płock, seo płock, pozycjonowanie stron płock, seo dla firm płock, seo mazowsze, pozycjonowanie lokalne płock"
       />
       <ServiceSchema
@@ -100,7 +100,7 @@ const PozycjonowaniePlock = () => {
       />
       <BreadcrumbSchema items={[
           { name: "Strona główna", url: "/" },
-          { name: "Pozycjonowanie", url: "/pozycjonowanie" },
+          { name: "Pozycjonowanie", url: "/uslugi/pozycjonowanie" },
           { name: "Płock", url: "/pozycjonowanie/plock" },
         ]}/>
       <FAQSchema items={faqItems} />
@@ -528,11 +528,11 @@ const PozycjonowaniePlock = () => {
           </h3>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {[
-              { label: "Pozycjonowanie Warszawa", url: "/pozycjonowanie/warszawa" },
-              { label: "Pozycjonowanie Kraków", url: "/pozycjonowanie/krakow" },
-              { label: "Pozycjonowanie Wrocław", url: "/pozycjonowanie/wroclaw" },
-              { label: "Pozycjonowanie Łódź", url: "/pozycjonowanie/lodz" },
-              { label: "Wszystkie usługi SEO", url: "/pozycjonowanie" },
+              { label: "Pozycjonowanie Warszawa", url: "/uslugi/pozycjonowanie/warszawa" },
+              { label: "Pozycjonowanie Kraków", url: "/uslugi/pozycjonowanie/krakow" },
+              { label: "Pozycjonowanie Wrocław", url: "/uslugi/pozycjonowanie/wroclaw" },
+              { label: "Pozycjonowanie Łódź", url: "/uslugi/pozycjonowanie/lodz" },
+              { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
             ].map((link) => (
               <Link
                 key={link.url}

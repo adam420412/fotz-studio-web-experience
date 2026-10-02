@@ -105,21 +105,21 @@ export default function BlogSalesForecastCoTo() {
       <SEOHead
         title="Sales Forecast — co to jest i jak prognozować sprzedaż? | Fotz.pl"
         description="Sales forecast (prognoza sprzedaży) — metody forecastingu, commit vs upside, narzędzia AI i ryzyka. Kompletny przewodnik dla Sales Managerów i VP Sales."
-        canonical="https://fotz.pl/blog/sales-forecast-prognoza-sprzedazy"
+        canonical="https://www.fotz-studio.pl/blog/sales-forecast-prognoza-sprzedazy"
 
         keywords="Sales Forecast co to jest, Sales Forecast definicja, czym jest Sales Forecast, Sales Forecast w sprzedaży, Sales Forecast strategia, Sales Forecast przykłady, jak używać Sales Forecast"
       />
       <ArticleSchema
         title="Sales Forecast — co to jest i jak prognozować sprzedaż?"
         description="Kompletny przewodnik po sales forecastingu: metody, kategorie, narzędzia AI i zarządzanie ryzykami."
-        url="https://fotz.pl/blog/sales-forecast-prognoza-sprzedazy"
+        url="https://www.fotz-studio.pl/blog/sales-forecast-prognoza-sprzedazy"
         datePublished="2024-02-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Sales Forecast", url: "https://fotz.pl/blog/sales-forecast-prognoza-sprzedazy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Sales Forecast", url: "https://www.fotz-studio.pl/blog/sales-forecast-prognoza-sprzedazy" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">

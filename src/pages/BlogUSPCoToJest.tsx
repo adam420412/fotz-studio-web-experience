@@ -64,9 +64,9 @@ export default function BlogUSPCoToJest() {
   return (
     <>
       <SEOHead
-        title="USP — co to jest? Unikalna propozycja sprzedazy | fotz.pl"
+        title="USP — co to jest? Unikalna propozycja sprzedazy | FOTZ Studio"
         description="USP co to jest — wyjasnamy czym jest Unique Selling Proposition, jak stworzyc USP, przyklady dobrego USP i roznica miedzy USP a Value Proposition."
-        canonical="https://fotz.pl/blog/usp-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/usp-co-to-jest"
 
         keywords="USP co to jest, USP definicja, czym jest USP, USP w sprzedaży, USP strategia, USP przykłady, jak używać USP"
       />
@@ -75,7 +75,7 @@ export default function BlogUSPCoToJest() {
         description="Czym jest USP (Unique Selling Proposition), jak stworzyc unikalna propozycje sprzedazy, przyklady z rynku i roznica USP vs Value Proposition."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/usp-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/usp-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

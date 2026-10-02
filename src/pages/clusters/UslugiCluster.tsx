@@ -68,14 +68,14 @@ const services = [
     icon: Video,
     title: "Produkcja Wideo",
     description: "Filmy reklamowe, korporacyjne, relacje z wydarzeń, animacje i montaż profesjonalnego wideo.",
-    href: "/uslugi/wideo",
+    href: "/uslugi/produkcja-filmow",
     color: "from-indigo-500 to-violet-500",
   },
   {
     icon: ShoppingCart,
     title: "E-commerce",
     description: "Sklepy internetowe na WooCommerce, Shopify i dedykowanych platformach. Integracje z systemami płatności.",
-    href: "/uslugi/ecommerce",
+    href: "/uslugi/strony-internetowe/ecommerce",
     color: "from-teal-500 to-green-500",
   },
   {
@@ -102,12 +102,12 @@ export default function UslugiCluster() {
         <SEOHead
           title="Usługi Marketingowe | Strony, SEO, Ads, Branding — FOTZ Studio"
           description="Pełny zakres usług marketingowych: strony internetowe, SEO, Google Ads, branding, fotografia, wideo, e-commerce i social media. Poznań i cała Polska."
-          canonical="https://fotz.pl/uslugi"
+          canonical="https://www.fotz-studio.pl/uslugi"
         />
         <BreadcrumbSchema
           items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Usługi", url: "https://fotz.pl/uslugi" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
           ]}
         />
         <FAQSchema items={faqItems} />

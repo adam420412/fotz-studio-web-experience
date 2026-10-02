@@ -65,8 +65,8 @@ export default function SklepyInternetowePoznan() {
       <Layout>
       <SEOHead
         title="Sklepy Internetowe Poznań — Tworzenie E-commerce i Sklepów Online"
-        description="Tworzenie sklepów internetowych Poznań — e-commerce WooCommerce, Shopify, PrestaShop dla firm z Poznania. Projektowanie sklepów online z integracjami…"
-        canonical="https://fotz.pl/uslugi/sklepy-internetowe/poznan"
+        description="Tworzenie sklepów internetowych Poznań — e-commerce WooCommerce, Shopify, PrestaShop dla firm z Poznania. Projektowanie sklepów online z integracjami, SEO i doradztwem w wyborze platformy."
+        canonical="https://www.fotz-studio.pl/uslugi/sklepy-internetowe/poznan"
         keywords="sklepy internetowe Poznań, tworzenie sklepu internetowego Poznań, e-commerce Poznań, sklep online Poznań, Shopify Poznań, WooCommerce Poznań, sklep www Poznań, platforma e-commerce Poznań, PrestaShop Poznań, pozycjonowanie sklepu internetowego Poznań, wdrożenie sklepu internetowego Poznań"
       />
 
@@ -77,9 +77,9 @@ export default function SklepyInternetowePoznan() {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Sklepy Internetowe Poznań", url: "https://fotz.pl/uslugi/sklepy-internetowe/poznan" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Sklepy Internetowe Poznań", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/poznan" }
         ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 
@@ -316,9 +316,9 @@ export default function SklepyInternetowePoznan() {
             {[
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
               { label: "Agencja SEO Poznań", to: "/agencja-seo-poznan" },
-              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
+              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Google Ads", to: "/performance-marketing/google-ads" },
-              { label: "E-commerce — tworzenie sklepów", to: "/uslugi/ecommerce" },
+              { label: "E-commerce — tworzenie sklepów", to: "/uslugi/sklepy-internetowe" },
               { label: "Pozycjonowanie stron WWW", to: "/seo/pozycjonowanie" },
             ].map((link) => (
               <Link

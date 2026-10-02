@@ -34,23 +34,23 @@ const BlogPersonalBrandingLinkedIn = () => {
     <>
       <SEOHead
         title="Personal Branding na LinkedIn — Jak Budować Markę Osobistą?"
-        description="Personal branding LinkedIn — jak zbudować silną markę osobistą na LinkedIn, tworzyć treści i pozyskiwać klientów. Strategia personal brandingu 2025. Fotz…"
+        description="Personal branding LinkedIn — jak zbudować silną markę osobistą na LinkedIn, tworzyć treści i pozyskiwać klientów. Strategia personal brandingu na 2025 rok od Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/personal-branding-linkedin"
+        canonical="https://www.fotz-studio.pl/blog/personal-branding-linkedin"
         keywords="personal branding, LinkedIn, marka osobista, networking, content LinkedIn, profil LinkedIn, thought leadership"
       />
       <ArticleSchema
         title="Personal Branding na LinkedIn - jak budować markę osobistą"
         description="Kompletny przewodnik po budowaniu marki osobistej na LinkedIn."
-        url="https://fotz.pl/blog/personal-branding-linkedin"
+        url="https://www.fotz-studio.pl/blog/personal-branding-linkedin"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Personal Branding LinkedIn", url: "https://fotz.pl/blog/personal-branding-linkedin" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Personal Branding LinkedIn", url: "https://www.fotz-studio.pl/blog/personal-branding-linkedin" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

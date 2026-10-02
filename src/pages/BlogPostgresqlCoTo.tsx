@@ -124,22 +124,22 @@ export default function BlogPostgresqlCoTo() {
     <Layout>
       <SEOHead
         title="PostgreSQL — co to jest? SQL, indeksy, JSONB i optymalizacja"
-        description="PostgreSQL — definicja, typy danych (JSONB, arrays, UUID), zaawansowane SQL (CTE, window functions), indeksy, partycjonowanie i rozszerzenia. Kompletny…"
-        canonical="https://fotz.pl/blog/postgresql-co-to-jest"
+        description="Kompletny przewodnik po PostgreSQL: typy danych, zaawansowane SQL, indeksy, MVCC i rozszerzenia."
+        canonical="https://www.fotz-studio.pl/blog/postgresql-co-to-jest"
 
         keywords="PostgreSQL co to jest, PostgreSQL jak działa, PostgreSQL tutorial, PostgreSQL przykład, czym jest PostgreSQL, PostgreSQL dokumentacja, PostgreSQL przewodnik"
       />
       <ArticleSchema
         title="PostgreSQL — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po PostgreSQL: typy danych, zaawansowane SQL, indeksy, MVCC i rozszerzenia."
-        url="https://fotz.pl/blog/postgresql-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/postgresql-co-to-jest"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "PostgreSQL", url: "https://fotz.pl/blog/postgresql-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "PostgreSQL", url: "https://www.fotz-studio.pl/blog/postgresql-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -147,7 +147,7 @@ export default function BlogPostgresqlCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "PostgreSQL", url: "https://fotz.pl" },
+              { name: "PostgreSQL", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             PostgreSQL — co to jest i jak działa?

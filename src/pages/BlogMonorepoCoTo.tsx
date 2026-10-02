@@ -42,23 +42,23 @@ export default function BlogMonorepoCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Monorepo | Fotz Studio"
+        title="Monorepo — co to jest, Nx, Turborepo, pnpm workspaces i Nx Cloud?"
         description="Monorepo: zalety vs polyrepo, Nx vs Turborepo, pnpm workspaces, affected analysis, Remote Cache, DTE i jak skalować monorepo w dużej organizacji."
-        canonical="https://fotz.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud"
+        canonical="https://www.fotz-studio.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud"
 
         keywords="Monorepo co to jest, Monorepo definicja, czym jest Monorepo, Monorepo przykłady, jak działa Monorepo, Monorepo znaczenie, Monorepo przewodnik"
       />
       <ArticleSchema
         title="Monorepo — co to jest, Nx, Turborepo, pnpm workspaces i Nx Cloud?"
         description="Monorepo: 6 narzędzi (Nx/Turborepo/Bazel/pnpm/Lerna/Changesets), affected analysis, remote cache, DTE — jak skalować CI/CD w monorepo."
-        url="https://fotz.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud"
+        url="https://www.fotz-studio.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Monorepo", url: "https://fotz.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Monorepo", url: "https://www.fotz-studio.pl/blog/monorepo-co-to-jest-nx-turborepo-pnpm-workspaces-nx-cloud" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-teal-950 text-white py-20 px-4">

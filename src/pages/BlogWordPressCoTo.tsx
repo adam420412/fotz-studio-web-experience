@@ -73,9 +73,9 @@ export default function BlogWordPressCoTo() {
   return (
     <>
       <SEOHead
-        title="WordPress — co to jest i jak działa? Poradnik 2025 | fotz.pl"
+        title="WordPress — co to jest i jak działa? Poradnik 2025 | FOTZ Studio"
         description="WordPress co to jest — wyjaśniamy czym jest WordPress, jak działa CMS, do czego służy i kiedy warto go wybrać. Porównanie z Wix i Squarespace. Poradnik 2025."
-        canonical="https://fotz.pl/blog/wordpress-co-to"
+        canonical="https://www.fotz-studio.pl/blog/wordpress-co-to"
 
         keywords="WordPress co to jest, WordPress definicja, czym jest WordPress, WordPress przykłady, jak działa WordPress, WordPress znaczenie, WordPress przewodnik"
       />
@@ -84,7 +84,7 @@ export default function BlogWordPressCoTo() {
         description="Czym jest WordPress, jak działa system CMS, do czego służy i kiedy wybrać WordPress zamiast Wix czy Squarespace."
         datePublished="2025-01-12"
         dateModified="2025-03-22"
-        url="https://fotz.pl/blog/wordpress-co-to"
+        url="https://www.fotz-studio.pl/blog/wordpress-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -42,23 +42,23 @@ export default function BlogNextAuthCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="NextAuth.js, Lucia Auth, Clerk | Fotz Studio"
+        title="NextAuth.js, Lucia Auth, Clerk — biblioteki autentykacji dla Next.js 2024?"
         description="Auth.js (NextAuth v5), Lucia Auth, Clerk, Supabase Auth — porównanie bibliotek autentykacji, RBAC, App Router integracja i kiedy co wybrać w 2024."
-        canonical="https://fotz.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024"
+        canonical="https://www.fotz-studio.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024"
 
         keywords="NextAuth.js, Lucia Auth, Clerk co to jest, NextAuth.js, Lucia Auth, Clerk jak działa, NextAuth.js, Lucia Auth, Clerk tutorial, NextAuth.js, Lucia Auth, Clerk przykład, czym jest NextAuth.js, Lucia Auth, Clerk, NextAuth.js, Lucia Auth, Clerk dokumentacja, NextAuth.js, Lucia Auth, Clerk przewodnik"
       />
       <ArticleSchema
         title="NextAuth.js, Lucia Auth, Clerk — biblioteki autentykacji dla Next.js 2024?"
         description="6 bibliotek auth (Auth.js/Lucia/Clerk/Supabase/Auth0/Better-Auth) — session vs JWT, RBAC/ABAC, Next.js App Router integracja i kiedy co wybrać."
-        url="https://fotz.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "NextAuth, Lucia, Clerk", url: "https://fotz.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "NextAuth, Lucia, Clerk", url: "https://www.fotz-studio.pl/blog/nextauth-lucia-auth-clerk-supabase-biblioteki-autentykacji-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">

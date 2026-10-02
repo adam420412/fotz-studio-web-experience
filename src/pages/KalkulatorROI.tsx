@@ -60,14 +60,14 @@ const KalkulatorROI = () => {
     <>
       <SEOHead
         title="Kalkulator ROI Reklam — Oblicz Zwrot z Inwestycji w Marketing"
-        description="Kalkulator ROI reklam online — oblicz zwrot z inwestycji w kampanie Google Ads, Meta Ads i SEO. Darmowe narzędzie do planowania budżetu marketingowego…"
-        canonical="https://fotz.pl/kalkulator-roi"
+        description="Kalkulator ROI reklam online — oblicz zwrot z inwestycji w kampanie Google Ads, Meta Ads i SEO. Darmowe narzędzie do planowania budżetu marketingowego z uwzględnieniem budżetu i branży."
+        canonical="https://www.fotz-studio.pl/kalkulator-roi"
         keywords="kalkulator ROI reklam, zwrot z inwestycji marketing, ROI Google Ads kalkulator, ROI Meta Ads, kalkulator efektywności reklam, ROAS kalkulator marketing"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Kalkulator ROI", url: "https://fotz.pl/kalkulator-roi" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Kalkulator ROI", url: "https://www.fotz-studio.pl/kalkulator-roi" }
         ]}/>
       <ServiceSchema
         name="Kalkulator ROI kampanii reklamowych"
@@ -77,7 +77,7 @@ const KalkulatorROI = () => {
       <WebPageSchema
         title="Kalkulator ROI Kampanii Reklamowych — Fotz Studio"
         description="Kalkulator ROI reklam online — oblicz zwrot z inwestycji w kampanie Google Ads, Meta Ads i SEO."
-        url="https://fotz.pl/kalkulator-roi"
+        url="https://www.fotz-studio.pl/kalkulator-roi"
       />
       <Layout>
         {/* Hero */}

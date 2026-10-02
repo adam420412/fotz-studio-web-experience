@@ -176,7 +176,7 @@ const StronyInternetoweWarszawa = () => {
       <SEOHead
         title="Strony Internetowe Warszawa | Tworzenie Stron WWW"
         description="Strony internetowe Warszawa — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Warszawy. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/warszawa"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/warszawa"
         keywords="strony internetowe warszawa, tworzenie stron www warszawa, projektowanie stron warszawa, sklepy internetowe warszawa, strona internetowa warszawa, wykonanie strony internetowej warszawa, responsywna strona www warszawa, wordpress warszawa, nowoczesne strony www warszawa, agencja stron internetowych warszawa"
       />
       
@@ -188,9 +188,9 @@ const StronyInternetoweWarszawa = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Warszawa", url: "https://fotz.pl/uslugi/strony-internetowe/warszawa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Warszawa", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/warszawa" },
         ]}/>
       
       <FAQSchema 

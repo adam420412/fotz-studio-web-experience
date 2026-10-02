@@ -94,7 +94,7 @@ export default function AgencjaSEOPoznan() {
       <SEOHead
         title="Agencja SEO Poznań — Pozycjonowanie Stron Internetowych"
         description="Agencja SEO Poznań — pozycjonowanie stron internetowych, audyt SEO, link building i optymalizacja techniczna. Zwiększ widoczność w Google. Fotz Studio."
-        canonical="https://fotz.pl/agencja-seo-poznan"
+        canonical="https://www.fotz-studio.pl/agencja-seo-poznan"
         keywords="agencja SEO Poznań, pozycjonowanie stron Poznań, SEO Poznań, optymalizacja SEO, link building Poznań, audyt SEO Poznań, lokalne SEO Poznań, core web vitals poznań, pozycjonowanie lokalne poznań, agencja pozycjonowania poznań, frazy kluczowe poznań, SEO techniczne poznań"
       />
 
@@ -105,9 +105,9 @@ export default function AgencjaSEOPoznan() {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "SEO", url: "https://fotz.pl/seo/pozycjonowanie" },
-          { name: "Agencja SEO Poznań", url: "https://fotz.pl/agencja-seo-poznan" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "SEO", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
+          { name: "Agencja SEO Poznań", url: "https://www.fotz-studio.pl/agencja-seo-poznan" }
         ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 
@@ -407,7 +407,7 @@ export default function AgencjaSEOPoznan() {
           <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-wider">Powiązane usługi</p>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
+              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Pozycjonowanie stron WWW", to: "/seo/pozycjonowanie" },
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
               { label: "Agencja reklamowa Poznań", to: "/agencja-reklamowa-poznan" },

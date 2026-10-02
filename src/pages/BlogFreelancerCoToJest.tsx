@@ -67,9 +67,9 @@ export default function BlogFreelancerCoToJest() {
   return (
     <>
       <SEOHead
-        title="Freelancer - co to jest i jak zaczac? Poradnik 2025 | fotz.pl"
+        title="Freelancer - co to jest i jak zaczac? Poradnik 2025 | FOTZ Studio"
         description="Freelancer co to jest - wyjasniamy czym jest freelancer, jak zostac freelancerem, ile mozna zarobic, platformy do zlecen i czy zakladac dzialalnosc."
-        canonical="https://fotz.pl/blog/freelancer-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/freelancer-co-to-jest"
 
         keywords="Freelancer - co to jest, Freelancer - definicja, czym jest Freelancer -, Freelancer - przykłady, jak działa Freelancer -, Freelancer - znaczenie, Freelancer - przewodnik"
       />
@@ -78,7 +78,7 @@ export default function BlogFreelancerCoToJest() {
         description="Czym jest freelancer, jak zostac freelancerem, ile zarabia, freelancer vs etat, platformy freelancerskie i czy zakladac dzialalnosc gospodarcza."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/freelancer-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/freelancer-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

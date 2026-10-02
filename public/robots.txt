@@ -1,96 +1,18 @@
-# https://www.robotstxt.org/robotstxt.html
-# Robots.txt for fotz.pl
-# Last updated: 2026-04-10
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
+# Common crawl rules for search engines and other crawlers.
 User-agent: *
 Allow: /
 
-# Allow AI crawlers (visibility in AI search results)
-User-agent: GPTBot
-Allow: /
+# Application resources are required to render the site.
+Allow: /assets/
 
-User-agent: Google-Extended
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Bytespider
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-# Disallow admin, auth, and login pages
+Disallow: /admin/
 Disallow: /akademia/admin
 Disallow: /akademia/auth
-Disallow: /admin/
-Disallow: /login
-Disallow: /zainstaluj
-Disallow: /podziekowanie
-
-# Disallow API and internal paths
 Disallow: /api/
-Disallow: /_next/
-
-# Disallow Vite/React build assets (JS/CSS bundles) - these should never be indexed
-Disallow: /assets/
-
-# Disallow URL parameters (query strings)
-Disallow: /*?*
-Disallow: /*?utm_*
-Disallow: /*?lang=*
-Disallow: /*?v=*
-Disallow: /*?filter=*
-Disallow: /*?page=*
-Disallow: /*?sort=*
-Disallow: /*?ref=*
-Disallow: /*?fbclid=*
-Disallow: /*?gclid=*
-
-# Disallow pagination and archive-like patterns
-Disallow: /page/
-Disallow: /tag/
-Disallow: /author/
+Disallow: /login
 Disallow: /search/
 Disallow: /filter/
+Disallow: /*?filter=
+Disallow: /*?sort=
 
-# Disallow cart/checkout if added in future
-Disallow: /cart/
-Disallow: /checkout/
-Disallow: /my-account/
-
-# Sitemap — index file only (Google discovers sub-sitemaps via index).
-# Declaring sub-sitemaps alongside index caused Ahrefs to report
-# "Page in multiple sitemaps" for hub URLs (/realizacje, /dla-kogo).
-Sitemap: https://fotz.pl/sitemap-index.xml
+Sitemap: https://www.fotz-studio.pl/sitemap-index.xml

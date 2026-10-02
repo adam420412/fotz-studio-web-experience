@@ -209,7 +209,7 @@ export default function TworzenieStronLodz() {
       <SEOHead
         title="Tworzenie stron internetowych Łódź | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Łodzi. Nowoczesne strony dla firm z łódzkiego. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/lodz"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/lodz"
         keywords="tworzenie stron internetowych łódź, strony internetowe łódź, tworzenie stron www łódź, strony www łódź, projektowanie stron internetowych łódź, tworzenie stron łódź, strona internetowa łódź, projektowanie stron łódź, agencja webdesign łódź, sklep internetowy łódź"
       />
       <ServiceSchema
@@ -251,8 +251,10 @@ export default function TworzenieStronLodz() {
                 ))}
               </div>
 
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -436,15 +438,15 @@ export default function TworzenieStronLodz() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.highlight
                           ? "bg-white text-blue-600 hover:bg-slate-100"
                           : "bg-blue-600 text-white hover:bg-blue-700"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

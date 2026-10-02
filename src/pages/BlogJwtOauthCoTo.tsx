@@ -42,23 +42,23 @@ export default function BlogJwtOauthCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="JWT, OAuth 2.0, OIDC | Fotz Studio"
+        title="JWT, OAuth 2.0, OIDC — autentykacja i autoryzacja w aplikacjach web?"
         description="JWT vs session, OAuth 2.0 grant types, PKCE, OpenID Connect, SAML, Passkeys — bezpieczeństwo autentykacji, CSRF, XSS i best practices 2024."
-        canonical="https://fotz.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys"
+        canonical="https://www.fotz-studio.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys"
 
         keywords="JWT, OAuth 2.0, OIDC co to jest, JWT, OAuth 2.0, OIDC definicja, czym jest JWT, OAuth 2.0, OIDC, JWT, OAuth 2.0, OIDC przykłady, jak działa JWT, OAuth 2.0, OIDC, JWT, OAuth 2.0, OIDC znaczenie, JWT, OAuth 2.0, OIDC przewodnik"
       />
       <ArticleSchema
         title="JWT, OAuth 2.0, OIDC — autentykacja i autoryzacja w aplikacjach web?"
         description="6 metod autentykacji (Session/JWT/OAuth2/OIDC/SAML/Passkeys) — PKCE, token rotation, XSS/CSRF ochrona, HttpOnly cookie i kiedy co wybrać."
-        url="https://fotz.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys"
+        url="https://www.fotz-studio.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "JWT, OAuth 2.0, OIDC", url: "https://fotz.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "JWT, OAuth 2.0, OIDC", url: "https://www.fotz-studio.pl/blog/jwt-oauth2-oidc-autentykacja-autoryzacja-web-session-passkeys" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-950 text-white py-20 px-4">

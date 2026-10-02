@@ -43,22 +43,22 @@ export default function BlogPosthogSentryCoTo() {
     <Layout>
       <SEOHead
         title="PostHog, Sentry, Plausible i Feature Flags | Fotz Studio"
-        description="Analytics i monitoring 2024: PostHog (all-in-one analytics+flags+replay), Sentry (errors+performance), Plausible (privacy-first), LaunchDarkly (feature…"
-        canonical="https://fotz.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024"
+        description="6 narzędzi analytics i monitoring (PostHog/Sentry/Plausible/LogRocket/LaunchDarkly/Amplitude) — feature flags, session replay, Web Vitals INP i Real User Monitoring."
+        canonical="https://www.fotz-studio.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024"
 
         keywords="PostHog, Sentry, Plausible i Feature Flags co to jest, PostHog, Sentry, Plausible i Feature Flags definicja, czym jest PostHog, Sentry, Plausible i Feature Flags, PostHog, Sentry, Plausible i Feature Flags przykłady, jak działa PostHog, Sentry, Plausible i Feature Flags, PostHog, Sentry, Plausible i Feature Flags znaczenie, PostHog, Sentry, Plausible i Feature Flags przewodnik"
       />
       <ArticleSchema
         title="PostHog, Sentry, Plausible i Feature Flags — analytics i monitoring 2024?"
         description="6 narzędzi analytics i monitoring (PostHog/Sentry/Plausible/LogRocket/LaunchDarkly/Amplitude) — feature flags, session replay, Web Vitals INP i Real User Monitoring."
-        url="https://fotz.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024"
+        url="https://www.fotz-studio.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Analytics i Monitoring 2024", url: "https://fotz.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Analytics i Monitoring 2024", url: "https://www.fotz-studio.pl/blog/posthog-sentry-plausible-feature-flags-analytics-monitoring-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-purple-950 text-white py-20 px-4">

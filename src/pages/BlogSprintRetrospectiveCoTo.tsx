@@ -88,22 +88,22 @@ export default function BlogSprintRetrospectiveCoTo() {
     <Layout>
       <SEOHead
         title="Sprint Retrospective — co to jest? Retrospektywa w Scrum i Agile"
-        description="Sprint retrospective — definicja, 4 formaty (Start/Stop/Continue, Sailboat, 4Ls, Spotify Health Check), agenda 7 kroków i 5 błędów. Przewodnik po…"
-        canonical="https://fotz.pl/blog/sprint-retrospective-co-to"
+        description="Kompletny przewodnik po sprint retrospective: 4 popularne formaty, agenda 7 kroków, błędy i różnica vs. sprint review."
+        canonical="https://www.fotz-studio.pl/blog/sprint-retrospective-co-to"
 
         keywords="Sprint Retrospective co to jest, Sprint Retrospective definicja, czym jest Sprint Retrospective, Sprint Retrospective przykłady, jak działa Sprint Retrospective, Sprint Retrospective znaczenie, Sprint Retrospective przewodnik"
       />
       <ArticleSchema
         title="Sprint Retrospective — co to jest i jak prowadzić retrospektywę?"
         description="Kompletny przewodnik po sprint retrospective: 4 popularne formaty, agenda 7 kroków, błędy i różnica vs. sprint review."
-        url="https://fotz.pl/blog/sprint-retrospective-co-to"
+        url="https://www.fotz-studio.pl/blog/sprint-retrospective-co-to"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Sprint Retrospective", url: "https://fotz.pl/blog/sprint-retrospective-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Sprint Retrospective", url: "https://www.fotz-studio.pl/blog/sprint-retrospective-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -111,7 +111,7 @@ export default function BlogSprintRetrospectiveCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Sprint Retrospective", url: "https://fotz.pl" },
+              { name: "Sprint Retrospective", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Sprint Retrospective — co to jest i jak prowadzić retro?

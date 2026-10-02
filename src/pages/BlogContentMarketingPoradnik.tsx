@@ -97,9 +97,9 @@ const BlogContentMarketingPoradnik = () => {
     <>
       <SEOHead
         title="Content marketing - poradnik dla firm 2025 | Fotz Studio"
-        description="Kompletny poradnik content marketingu dla firm. Dowiedź się jak budować strategię, jakie formaty treści publikować i jak mierzyć efekty. Praktyczne…"
+        description="Kompletny poradnik content marketingu dla firm. Dowiedz się, jak budować strategię, jakie formaty treści publikować i jak mierzyć efekty. Praktyczne wskazówki krok po kroku na 2025 rok."
         ogType="article"
-        canonical="https://fotz.pl/blog/content-marketing-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/content-marketing-poradnik"
         keywords="content marketing poradnik, strategia content marketing, jak robić content marketing, content marketing dla firm, marketing treści strategia"
         schemaJson={[
           {
@@ -117,7 +117,7 @@ const BlogContentMarketingPoradnik = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -127,9 +127,9 @@ const BlogContentMarketingPoradnik = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona glowna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Content marketing poradnik", "item": "https://fotz.pl/blog/content-marketing-poradnik" }
+              { "@type": "ListItem", "position": 1, "name": "Strona glowna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Content marketing poradnik", "item": "https://www.fotz-studio.pl/blog/content-marketing-poradnik" }
             ]
           },
           {

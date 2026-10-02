@@ -7,7 +7,7 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { Link } from "react-router-dom";
 
 function GoogleAdsKielce() {
-  const canonicalUrl = "https://fotz.pl/performance-marketing/google-ads/kielce";
+  const canonicalUrl = "https://www.fotz-studio.pl/performance-marketing/google-ads/kielce";
 
   const faqs = [
     {
@@ -48,9 +48,9 @@ function GoogleAdsKielce() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://fotz.pl" },
-      { "@type": "ListItem", position: 2, name: "Kampanie reklamowe", item: "https://fotz.pl/performance-marketing" },
-      { "@type": "ListItem", position: 3, name: "Google Ads", item: "https://fotz.pl/performance-marketing/google-ads" },
+      { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://www.fotz-studio.pl" },
+      { "@type": "ListItem", position: 2, name: "Kampanie reklamowe", item: "https://www.fotz-studio.pl/performance-marketing" },
+      { "@type": "ListItem", position: 3, name: "Google Ads", item: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
       { "@type": "ListItem", position: 4, name: "Google Ads Kielce", item: canonicalUrl },
     ],
   };
@@ -61,7 +61,7 @@ function GoogleAdsKielce() {
     name: "Kampanie Google Ads Kielce",
     areaServed: "Kielce",
     url: canonicalUrl,
-    telephone: "+48 123 456 789",
+    telephone: "+48 790 814 814",
   };
 
   const faqSchema = {

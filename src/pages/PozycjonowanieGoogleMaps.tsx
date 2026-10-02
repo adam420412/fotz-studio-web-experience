@@ -63,7 +63,7 @@ const PozycjonowanieGoogleMaps = () => {
       <SEOHead
         title="Pozycjonowanie Google Maps — Wizytówka Google Moja Firma"
         description="Pozycjonowanie Google Maps i optymalizacja wizytówki Google Moja Firma (GMB). Pojawiaj się wysoko w lokalnych wynikach wyszukiwania. Fotz Studio."
-        canonical="https://fotz.pl/seo/google-maps"
+        canonical="https://www.fotz-studio.pl/seo/google-maps"
         keywords="pozycjonowanie google maps, wizytówka google, google moja firma, google business profile, pozycjonowanie lokalne, pozycjonowanie mapy google, seo lokalne google maps, optymalizacja wizytówki google"
       />
       <ServiceSchema
@@ -73,9 +73,9 @@ const PozycjonowanieGoogleMaps = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
-          { name: "Google Maps", url: "https://fotz.pl/seo/google-maps" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
+          { name: "Google Maps", url: "https://www.fotz-studio.pl/seo/google-maps" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
@@ -603,7 +603,7 @@ const PozycjonowanieGoogleMaps = () => {
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/performance-marketing/google-ads" className="text-primary hover:underline font-medium text-sm">→ Google Ads</Link>
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
-              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+              <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
             </div>
           </motion.div>
         </div>

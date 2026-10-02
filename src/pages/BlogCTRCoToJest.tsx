@@ -77,7 +77,7 @@ export default function BlogCTRCoToJest() {
       <SEOHead
         title="CTR — co to jest i jak zwiększyć współczynnik klikalności?"
         description="CTR co to jest — wyjaśniamy czym jest Click-Through Rate, ile powinien wynosić CTR w Google, Google Ads i email marketingu oraz jak go poprawić."
-        canonical="https://fotz.pl/blog/ctr-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/ctr-co-to-jest"
 
         keywords="CTR co to jest, CTR definicja, czym jest CTR, CTR przykłady, jak działa CTR, CTR znaczenie, CTR przewodnik"
       />
@@ -86,7 +86,7 @@ export default function BlogCTRCoToJest() {
         description="Czym jest CTR (Click-Through Rate), benchmarki CTR dla Google, Google Ads i emaila oraz metody zwiększania klikalności w wynikach wyszukiwania."
         datePublished="2025-03-25"
         dateModified="2025-04-07"
-        url="https://fotz.pl/blog/ctr-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/ctr-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

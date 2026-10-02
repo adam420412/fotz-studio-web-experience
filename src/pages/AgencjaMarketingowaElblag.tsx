@@ -48,7 +48,7 @@ export const AgencjaMarketingowaElblag = () => {
       <SEOHead
         title={seoTitle}
         description={seoDescription}
-        canonical="/agencja-marketingowa/elblag"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/elblag"
         keywords="agencja marketingowa elbląg, marketing internetowy elbląg, usługi marketingowe elbląg, agencja reklamowa elbląg"
       />
 
@@ -72,12 +72,14 @@ export const AgencjaMarketingowaElblag = () => {
               Profesjonalne strategie marketingowe dla firm z Elbląga. Zwiększamy widoczność, budujemy marki i generujemy sprzedaż.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">
-                Bezpłatna konsultacja
+              <Button asChild size="lg" className="bg-yellow-400 text-gray-900 hover:bg-yellow-500">
+                <Link to="/kontakt">
+                  Bezpłatna konsultacja
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900">
+              <Button asChild size="lg" variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900"><a href="/uslugi">
                 Poznaj nasze usługi
-              </Button>
+              </a></Button>
             </div>
           </div>
         </div>
@@ -281,9 +283,9 @@ export const AgencjaMarketingowaElblag = () => {
                   <span className="text-yellow-400">+</span> Email support
                 </li>
               </ul>
-              <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full">
+              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
                 Wybierz pakiet
-              </Button>
+              </a></Button>
             </div>
 
             <div className="bg-gray-800 p-8 rounded-lg border-2 border-yellow-400 flex flex-col transform md:scale-105">
@@ -313,9 +315,9 @@ export const AgencjaMarketingowaElblag = () => {
                   <span className="text-yellow-400">+</span> Wsparcie priorytetowe
                 </li>
               </ul>
-              <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full">
+              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
                 Wybierz pakiet
-              </Button>
+              </a></Button>
             </div>
 
             <div className="bg-gray-800 p-8 rounded-lg border border-gray-700 flex flex-col">
@@ -345,9 +347,9 @@ export const AgencjaMarketingowaElblag = () => {
                   <span className="text-yellow-400">+</span> Wsparcie VIP 24/7
                 </li>
               </ul>
-              <Button className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full">
+              <Button asChild className="bg-yellow-400 text-gray-900 hover:bg-yellow-500 w-full"><a href="/kontakt">
                 Wybierz pakiet
-              </Button>
+              </a></Button>
             </div>
           </div>
           <p className="text-center text-gray-400 mt-12">
@@ -391,20 +393,21 @@ export const AgencjaMarketingowaElblag = () => {
             Skontaktuj się z nami na bezpłatną konsultację. Omówimy Twoje cele i pokażemy, jak możemy Ci pomóc w Elblągu.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
+            <Button asChild
               size="lg"
-              className="bg-gray-900 text-yellow-400 hover:bg-gray-800"
-            >
-              Zarezerwuj konsultację
-              <ArrowRight className="ml-2 w-5 h-5" />
+              className="bg-gray-900 text-yellow-400 hover:bg-gray-800">
+              <Link to="/kontakt">
+                Zarezerwuj konsultację
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
-            <Button
+            <Button asChild
               size="lg"
               variant="outline"
               className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-yellow-400"
-            >
+            ><a href="/kontakt">
               Wyślij wiadomość
-            </Button>
+            </a></Button>
           </div>
           <div className="mt-12 pt-12 border-t border-gray-700">
             <p className="text-gray-800 mb-4">
@@ -414,7 +417,7 @@ export const AgencjaMarketingowaElblag = () => {
               fotz studio - agencja marketingowa
             </p>
             <p className="text-gray-800">
-              Elbląg, Polska | phone: +48 123 456 789 | email: hello@fotz.pl
+              Elbląg, Polska | phone: +48 790 814 814 | email: hello@fotz.pl
             </p>
           </div>
         </div>

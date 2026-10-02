@@ -98,21 +98,21 @@ export default function BlogInvestorUpdateCoTo() {
       <SEOHead
         title="Investor Update — co to jest i jak pisać? | Fotz.pl"
         description="Investor Update (aktualizacja dla inwestorów) — struktura, sekcje, co pisać w Highlights i Lowlights. Kompletny przewodnik dla founderów startupów."
-        canonical="https://fotz.pl/blog/investor-update-aktualizacja-dla-inwestorow"
+        canonical="https://www.fotz-studio.pl/blog/investor-update-aktualizacja-dla-inwestorow"
 
         keywords="Investor Update co to jest, Investor Update definicja, czym jest Investor Update, Investor Update startup, Investor Update jak liczyć, Investor Update wzór, Investor Update przykłady"
       />
       <ArticleSchema
         title="Investor Update — co to jest i jak pisać?"
         description="Kompletny przewodnik po Investor Update: struktura, sekcje, Highlights, Lowlights i Asks dla founderów."
-        url="https://fotz.pl/blog/investor-update-aktualizacja-dla-inwestorow"
+        url="https://www.fotz-studio.pl/blog/investor-update-aktualizacja-dla-inwestorow"
         datePublished="2024-02-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Investor Update", url: "https://fotz.pl/blog/investor-update-aktualizacja-dla-inwestorow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Investor Update", url: "https://www.fotz-studio.pl/blog/investor-update-aktualizacja-dla-inwestorow" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white py-20 px-4">

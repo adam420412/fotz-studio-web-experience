@@ -53,21 +53,21 @@ export default function BlogGitOpsCoTo() {
       <SEOHead
         title="GitOps — co to jest i jak wdrożyć Argo CD i Flux? | Fotz.pl"
         description="GitOps: definicja, zasady (deklaratywność, reconciliation), Argo CD vs Flux, GitOps vs DevOps, secrets management, wdrożenie krok po kroku i pułapki."
-        canonical="https://fotz.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
+        canonical="https://www.fotz-studio.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
 
         keywords="GitOps co to jest, GitOps definicja, czym jest GitOps, GitOps przykłady, jak działa GitOps, GitOps znaczenie, GitOps przewodnik"
       />
       <ArticleSchema
         title="GitOps — co to jest i jak wdrożyć Argo CD i Flux?"
         description="GitOps: zasady, Argo CD vs Flux, GitOps vs DevOps i IaC, secrets management, wdrożenie krok po kroku, 6 kluczowych narzędzi i pułapki."
-        url="https://fotz.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
+        url="https://www.fotz-studio.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux"
         datePublished="2024-03-24"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "GitOps", url: "https://fotz.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "GitOps", url: "https://www.fotz-studio.pl/blog/gitops-co-to-jest-jak-wdrozyz-argo-cd-flux" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-slate-900 text-white py-20 px-4">

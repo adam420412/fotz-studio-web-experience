@@ -46,8 +46,8 @@ const CaseStudyEcommerceCRO = () => {
     <>
       <SEOHead
         title="Case Study: +340% Konwersji E-commerce w 6 Miesięcy | Fotz Studio"
-        description="Case study FOTZ Studio: jak zwiększyliśmy konwersję sklepu e-commerce o 340% (0.8% → 3.52%) w 6 miesięcy. Metodologia CRO, A/B testy, optimizacja…"
-        canonical="https://fotz.pl/case-studies/optymalizacja-konwersji-ecommerce"
+        description="Kompleksowa optymalizacja konwersji (CRO) sklepu e-commerce: analiza UX, A/B testy, personalizacja, optymalizacja checkoutu. Wyniki: +340% CR, +287% przychodu, +41% AOV, +836% mobile conversions."
+        canonical="https://www.fotz-studio.pl/case-studies/optymalizacja-konwersji-ecommerce"
         keywords="case study CRO, optymalizacja konwersji e-commerce, A/B testing, wzrost konwersji, ecommerce optimization, konwersja sklepu online"
       />
       <ArticleSchema
@@ -57,9 +57,9 @@ const CaseStudyEcommerceCRO = () => {
         datePublished="2026-04-10"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Case Studies", url: "https://fotz.pl/case-studies" },
-          { name: "Optymalizacja Konwersji E-commerce", url: "https://fotz.pl/case-studies/optymalizacja-konwersji-ecommerce" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Case Studies", url: "https://www.fotz-studio.pl/realizacje" },
+          { name: "Optymalizacja Konwersji E-commerce", url: "https://www.fotz-studio.pl/case-studies/optymalizacja-konwersji-ecommerce" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
       <OrganizationSchema />

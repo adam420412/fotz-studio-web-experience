@@ -61,9 +61,9 @@ export default function AgencjaSEOLublin() {
   return (
     <>
       <SEOHead
-        title="Agencja SEO Lublin — pozycjonowanie stron | fotz.pl"
+        title="Agencja SEO Lublin — pozycjonowanie stron | FOTZ Studio"
         description="Agencja SEO Lublin — pozycjonowanie stron internetowych dla firm z Lublina i Lubelszczyzny. Lokalne i ogólnopolskie SEO, audyt, linkbuilding. Sprawdź ofertę!"
-        canonical="https://fotz.pl/agencja-seo-lublin"
+        canonical="https://www.fotz-studio.pl/agencja-seo-lublin"
         keywords="agencja seo lublin, pozycjonowanie lublin, seo lublin, agencja seo lublin cena, pozycjonowanie stron lublin, seo dla firm lublin, audyt seo lublin, optymalizacja seo lublin, pozycjonowanie lokalne lublin, link building lublin"
       />
       <ServiceSchema
@@ -106,8 +106,10 @@ export default function AgencjaSEOLublin() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  Bezpłatny audyt SEO <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link to="/kontakt">
+                    Bezpłatny audyt SEO <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/seo/pozycjonowanie">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

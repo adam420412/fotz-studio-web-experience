@@ -73,9 +73,9 @@ export default function BlogGoogleTagManager() {
   return (
     <>
       <SEOHead
-        title="Google Tag Manager — co to jest i jak działa? Poradnik | fotz.pl"
+        title="Google Tag Manager — co to jest i jak działa? Poradnik | FOTZ Studio"
         description="Google Tag Manager co to jest — wyjaśniamy jak działa GTM, jak dodawać tagi bez programisty, różnica między GTM a GA4 i jak skonfigurować na WordPress."
-        canonical="https://fotz.pl/blog/google-tag-manager-co-to"
+        canonical="https://www.fotz-studio.pl/blog/google-tag-manager-co-to"
 
         keywords="Google Tag Manager co to jest, Google Tag Manager definicja, czym jest Google Tag Manager, Google Tag Manager przykłady, jak działa Google Tag Manager, Google Tag Manager znaczenie, Google Tag Manager przewodnik"
       />
@@ -84,7 +84,7 @@ export default function BlogGoogleTagManager() {
         description="Czym jest Google Tag Manager, jak zarządzać tagami bez programisty, konfiguracja GTM na WordPress i różnica między GTM a Google Analytics 4."
         datePublished="2025-03-28"
         dateModified="2025-04-07"
-        url="https://fotz.pl/blog/google-tag-manager-co-to"
+        url="https://www.fotz-studio.pl/blog/google-tag-manager-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

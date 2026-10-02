@@ -56,28 +56,28 @@ export default function BlogSocialProofCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Social Proof | Fotz Studio"
-        description="Social proof — definicja, 6 typów (opinie, logo, case studies, liczby, nagrody, wideo), jak zbierać testimoniale i gdzie umieszczać dowód społeczny…"
-        canonical="https://fotz.pl/blog/social-proof-co-to"
+        title="Social Proof — co to jest i jak używać dowodu społecznego?"
+        description="Kompletny przewodnik po social proof: 6 typów, skuteczność każdego, jak zbierać i gdzie umieszczać na stronie dla maksymalnej konwersji."
+        canonical="https://www.fotz-studio.pl/blog/social-proof-co-to"
 
         keywords="Social Proof co to jest, Social Proof definicja, czym jest Social Proof, Social Proof w marketingu, Social Proof przykłady, jak działa Social Proof, Social Proof strategia"
       />
       <ArticleSchema
         title="Social Proof — co to jest i jak używać dowodu społecznego?"
         description="Kompletny przewodnik po social proof: 6 typów, skuteczność każdego, jak zbierać i gdzie umieszczać na stronie dla maksymalnej konwersji."
-        url="https://fotz.pl/blog/social-proof-co-to"
+        url="https://www.fotz-studio.pl/blog/social-proof-co-to"
         datePublished="2024-01-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Social Proof", url: "https://fotz.pl/blog/social-proof-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Social Proof", url: "https://www.fotz-studio.pl/blog/social-proof-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Social Proof", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Social Proof", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Social Proof — co to jest i jak używać dowodu społecznego?
           </h1>

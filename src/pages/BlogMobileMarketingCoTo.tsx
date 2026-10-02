@@ -97,23 +97,23 @@ export default function BlogMobileMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Mobile Marketing | Fotz Studio"
+        title="Mobile Marketing — co to jest i jak działa? | Fotz Studio"
         description="Mobile marketing — definicja, 6 kanałów (SMS, push, in-app), metryki i zasady mobile-first. Kompletny przewodnik po marketingu mobilnym w 2024 roku."
-        canonical="https://fotz.pl/blog/mobile-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/mobile-marketing-co-to"
 
         keywords="Mobile Marketing co to jest, Mobile Marketing definicja, czym jest Mobile Marketing, Mobile Marketing w marketingu, Mobile Marketing przykłady, jak działa Mobile Marketing, Mobile Marketing strategia"
       />
       <ArticleSchema
         title="Mobile Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po mobile marketingu: 6 kanałów, metryki i zasady projektowania mobile-first."
-        url="https://fotz.pl/blog/mobile-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/mobile-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Mobile Marketing", url: "https://fotz.pl/blog/mobile-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Mobile Marketing", url: "https://www.fotz-studio.pl/blog/mobile-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -121,7 +121,7 @@ export default function BlogMobileMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Mobile Marketing", url: "https://fotz.pl" },
+              { name: "Mobile Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Mobile Marketing — co to jest i jak działa?

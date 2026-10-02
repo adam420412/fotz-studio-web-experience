@@ -94,21 +94,21 @@ export default function BlogRampingSprzedaz() {
       <SEOHead
         title="Ramp period w sprzedaży — onboarding handlowca B2B | Fotz.pl"
         description="Ramp period w sprzedaży B2B — ile trwa, ramped quota, onboarding plan i jak zarządzać AE w trakcie ramp. Kompletny przewodnik dla Sales Managerów."
-        canonical="https://fotz.pl/blog/ramp-period-onboarding-handlowca-b2b"
+        canonical="https://www.fotz-studio.pl/blog/ramp-period-onboarding-handlowca-b2b"
 
         keywords="Ramp period w sprzedaży, Ramp period w sprzedaży co to jest, Ramp period w sprzedaży jak działa, Ramp period w sprzedaży definicja, Ramp period w sprzedaży przykłady, Ramp period w sprzedaży poradnik, Ramp period w sprzedaży przewodnik"
       />
       <ArticleSchema
         title="Ramp period w sprzedaży — onboarding handlowca B2B"
         description="Kompletny przewodnik po ramp period: czasy ramp dla różnych ról, ramped quota, onboarding plan i zarządzanie."
-        url="https://fotz.pl/blog/ramp-period-onboarding-handlowca-b2b"
+        url="https://www.fotz-studio.pl/blog/ramp-period-onboarding-handlowca-b2b"
         datePublished="2024-02-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Ramp period", url: "https://fotz.pl/blog/ramp-period-onboarding-handlowca-b2b" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Ramp period", url: "https://www.fotz-studio.pl/blog/ramp-period-onboarding-handlowca-b2b" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">

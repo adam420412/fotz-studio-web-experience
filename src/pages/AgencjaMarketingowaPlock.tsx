@@ -8,7 +8,7 @@ export default function AgencjaMarketingowaPlock() {
   const breadcrumbs = [
     { name: "Strona glowna", url: "/" },
     { name: "Agencja marketingowa", url: "/agencja-marketingowa" },
-    { name: "Plock", url: "/agencja-marketingowa/plock" }
+    { name: "Płock", url: "/agencja-marketingowa/plock" }
   ];
 
   const faqItems = [
@@ -38,8 +38,8 @@ export default function AgencjaMarketingowaPlock() {
     <Layout>
       <SEOHead
         title="Agencja Marketingowa Plock | SEO, Google Ads, Social Media"
-        description="Profesjonalna agencja marketingowa w Plocku. Uslugami SEO, Google Ads, social media marketing i tworzenie stron internetowych dla firm z Mazowsza. Darmowa…"
-        canonical="https://fotz.pl/agencja-marketingowa/plock"
+        description="Profesjonalna agencja marketingowa w Płocku. Usługi SEO, Google Ads, social media marketing i tworzenie stron internetowych dla firm z Płocka i Mazowsza. Darmowa konsultacja na start."
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/plock"
         keywords="agencja marketingowa płock, marketing internetowy płock, agencja reklamowa płock, seo płock"
       />
 
@@ -61,9 +61,9 @@ export default function AgencjaMarketingowaPlock() {
             <p className="text-xl text-blue-100 mb-6">
               Profesjonalne uslugami marketingowe dla firm z Plocka. SEO, Google Ads, social media i tworzenie stron internetowych.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">
               Darmowa Konsultacja
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -293,9 +293,9 @@ export default function AgencjaMarketingowaPlock() {
                   1 profil social media
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                 Wybierz
-              </button>
+              </a>
             </div>
 
             {/* Professional */}
@@ -328,9 +328,9 @@ export default function AgencjaMarketingowaPlock() {
                   Raporty miesieczne
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                 Wybierz
-              </button>
+              </a>
             </div>
 
             {/* Enterprise */}
@@ -360,9 +360,9 @@ export default function AgencjaMarketingowaPlock() {
                   Wsparcie 24/7
                 </li>
               </ul>
-              <button className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+              <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                 Konsultacja
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -399,14 +399,14 @@ export default function AgencjaMarketingowaPlock() {
             Zarezerwuj bezplatta konsultacje z naszym specjalistą. Omowimy Twoje cele biznesowe i opracujemy plan marketingowy dla Twojej firmy.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition flex items-center justify-center gap-2">
+            <a href="tel:+48790814814" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition flex items-center justify-center gap-2">
               <Phone size={20} />
               Zadzwon Teraz
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center gap-2">
+            </a>
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition flex items-center justify-center gap-2">
               <Mail size={20} />
               Wyslij Wiadomosc
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -418,7 +418,7 @@ export default function AgencjaMarketingowaPlock() {
             Agencja Marketingowa Plock - Specjalista w Marketingu dla Firm z Mazowsza
           </p>
           <p className="text-sm">
-            ul. Grodzka 10, 09-400 Plock | Tel: +48 24 262 0000 | Email: hello@fotz.pl
+            ul. Grodzka 10, 09-400 Plock | Tel: +48 790 814 814 | Email: hello@fotz.pl
           </p>
         </div>
       </section>

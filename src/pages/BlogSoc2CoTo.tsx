@@ -76,21 +76,21 @@ export default function BlogSoc2CoTo() {
       <SEOHead
         title="SOC 2 — co to jest i jak uzyskać certyfikację? | Fotz.pl"
         description="SOC 2 compliance dla startupów SaaS: Trust Service Criteria, Type I vs Type II, proces certyfikacji, narzędzia (Vanta, Drata) i jak przygotować się do audytu."
-        canonical="https://fotz.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup"
+        canonical="https://www.fotz-studio.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup"
 
         keywords="SOC 2 co to jest, SOC 2 definicja, czym jest SOC 2, SOC 2 przykłady, jak działa SOC 2, SOC 2 znaczenie, SOC 2 przewodnik"
       />
       <ArticleSchema
         title="SOC 2 — co to jest i jak uzyskać certyfikację?"
         description="SOC 2 compliance: Trust Service Criteria, Type I vs Type II, timeline 12-18 miesięcy, kluczowe kontrole i narzędzia do automatyzacji compliance dla SaaS startupów."
-        url="https://fotz.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup"
+        url="https://www.fotz-studio.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup"
         datePublished="2024-02-25"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SOC 2 Compliance", url: "https://fotz.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SOC 2 Compliance", url: "https://www.fotz-studio.pl/blog/soc2-compliance-co-to-jest-jak-uzyskac-startup" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-slate-800 to-slate-900 text-white py-20 px-4">

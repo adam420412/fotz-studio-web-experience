@@ -28,7 +28,7 @@ const SEOPozycjonowanieGdansk = () => {
       <SEOHead
         title="Pozycjonowanie Gdańsk — Agencja SEO dla Firm z Trójmiasta"
         description="Pozycjonowanie stron internetowych Gdańsk — SEO dla firm z Trójmiasta (Gdańsk, Gdynia, Sopot). Audyt SEO, link building. Fotz Studio."
-        canonical="https://fotz.pl/seo/pozycjonowanie-gdansk"
+        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-gdansk"
         keywords="pozycjonowanie gdańsk, agencja seo gdańsk, seo gdańsk, seo trójmiasto, pozycjonowanie stron gdańsk, agencja seo trójmiasto, seo dla firm gdańsk, pozycjonowanie lokalne gdańsk, audyt seo gdańsk"
       />
       <ServiceSchema
@@ -38,9 +38,9 @@ const SEOPozycjonowanieGdansk = () => {
         areaServed="Gdańsk"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Pozycjonowanie Gdańsk", url: "https://fotz.pl/seo/pozycjonowanie-gdansk" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Pozycjonowanie Gdańsk", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-gdansk" },
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

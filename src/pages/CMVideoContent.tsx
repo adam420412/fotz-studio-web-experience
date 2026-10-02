@@ -36,8 +36,8 @@ const CMVideoContent = () => {
     <>
       <SEOHead
         title="Video Content Marketing | Fotz Studio"
-        description="Video content marketing — produkcja wideo dla firm: reelsy, explainer video, filmy wizerunkowe, YouTube Ads. Tworzenie wideo, które buduje markę i…"
-        canonical="https://fotz.pl/content-marketing/video-content"
+        description="Video content marketing — produkcja wideo dla firm: reelsy, explainer video, filmy wizerunkowe i YouTube Ads. Tworzymy wideo, które buduje markę, relacje z odbiorcami i sprzedaż."
+        canonical="https://www.fotz-studio.pl/content-marketing/video-content"
         keywords="video content, tworzenie video content, video content marketing, filmy dla firm, video marketing dla firm"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const CMVideoContent = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Content Marketing", url: "https://fotz.pl/content-marketing" },
-        { name: "Video Content Marketing", url: "https://fotz.pl/content-marketing/video-content" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Content Marketing", url: "https://www.fotz-studio.pl/content-marketing" },
+        { name: "Video Content Marketing", url: "https://www.fotz-studio.pl/content-marketing/video-content" },
       ]}/>
       <FAQSchema items={faqItems} />
 

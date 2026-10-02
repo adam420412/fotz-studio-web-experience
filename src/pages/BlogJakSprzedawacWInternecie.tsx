@@ -22,7 +22,7 @@ export default function BlogJakSprzedawacWInternecie() {
       <SEOHead
         title="Jak sprzedawać w internecie 2025 — kompleksowy poradnik dla firm"
         description="Jak sprzedawać w internecie? Poradnik krok po kroku: własny sklep, marketplace, dropshipping, media społecznościowe. Zacznij sprzedaż online!"
-        canonical="https://fotz.pl/blog/jak-sprzedawac-w-internecie"
+        canonical="https://www.fotz-studio.pl/blog/jak-sprzedawac-w-internecie"
 
         keywords="Jak sprzedawać w internecie 2025, Jak sprzedawać w internecie 2025 co to jest, Jak sprzedawać w internecie 2025 jak działa, Jak sprzedawać w internecie 2025 definicja, Jak sprzedawać w internecie 2025 przykłady, Jak sprzedawać w internecie 2025 poradnik, Jak sprzedawać w internecie 2025 przewodnik"
       />
@@ -54,10 +54,10 @@ export default function BlogJakSprzedawacWInternecie() {
               W tym poradniku poznasz wszystkie ścieżki do sprzedaży online: własny sklep, marketplace'i, social commerce i dropshipping.
             </p>
 
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
+            <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white"><a href="/kontakt">
               Przejdź do artykułu
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            </a></Button>
           </div>
         </motion.section>
 

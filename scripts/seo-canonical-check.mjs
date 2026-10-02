@@ -43,7 +43,7 @@ async function checkUrl(url) {
     const canonical = canonicalMatch?.[1]?.trim() || null;
     
     // Sprawdź trailing slash
-    const hasTrailingSlash = url.endsWith('/') && url !== 'https://fotz.pl/';
+    const hasTrailingSlash = url.endsWith('/') && url !== 'https://www.fotz-studio.pl/';
     
     // Canonical powinien być równy URL
     const canonicalMatches = canonical === url;
@@ -117,7 +117,7 @@ async function runCheck() {
   }
   
   // Sprawdź trailing slash w sitemap
-  const trailingSlashUrls = urls.filter(u => u.endsWith('/') && u !== 'https://fotz.pl/');
+  const trailingSlashUrls = urls.filter(u => u.endsWith('/') && u !== 'https://www.fotz-studio.pl/');
   if (trailingSlashUrls.length > 0) {
     console.log('⚠️  SITEMAP TRAILING SLASH ISSUES:');
     trailingSlashUrls.slice(0, 10).forEach(u => console.log(`   - ${u}`));

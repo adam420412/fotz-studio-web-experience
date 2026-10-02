@@ -47,21 +47,21 @@ const BlogPodcastMarketing = () => {
         title="Podcast dla firmy - jak zacząć i czy to się opłaca? 2025"
         description="Podcast dla firmy - jak uruchomić podcastu firmowy, koszty produkcji, platformy, strategie marketingu podcastowego. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/podcast-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/podcast-dla-firmy"
         keywords="podcast dla firmy, podcast marketing, podcasty Polski, audioblog, marketing podcastowy, content marketing, Spotify"
       />
       <ArticleSchema
         title="Podcast dla firmy - jak zacząć i czy to się opłaca? 2025"
         description="Kompleksowy przewodnik po podcastach firmowych - platformy, koszty, strategie marketingu podcastowego i praktyczne porady."
-        url="https://fotz.pl/blog/podcast-dla-firmy"
+        url="https://www.fotz-studio.pl/blog/podcast-dla-firmy"
         datePublished="2025-02-15"
         dateModified="2026-04-12"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Podcast dla firmy", url: "https://fotz.pl/blog/podcast-dla-firmy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Podcast dla firmy", url: "https://www.fotz-studio.pl/blog/podcast-dla-firmy" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

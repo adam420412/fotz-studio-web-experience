@@ -66,9 +66,9 @@ export default function BlogCMSCoToJest() {
   return (
     <>
       <SEOHead
-        title="CMS - co to jest? System zarzadzania trescia - poradnik | fotz.pl"
+        title="CMS - co to jest? System zarzadzania trescia - poradnik | FOTZ Studio"
         description="CMS co to jest - wyjasniamy czym jest Content Management System, porownanie WordPress vs Shopify vs Webflow, headless CMS i ile kosztuje strona na CMS."
-        canonical="https://fotz.pl/blog/co-to-jest-cms"
+        canonical="https://www.fotz-studio.pl/blog/co-to-jest-cms"
 
         keywords="CMS - co to jest, CMS - definicja, czym jest CMS -, CMS - przykłady, jak działa CMS -, CMS - znaczenie, CMS - przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogCMSCoToJest() {
         description="Czym jest CMS (Content Management System), popularne platformy (WordPress, Shopify, Webflow), co to jest headless CMS i ile kosztuje strona na CMS."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/cms-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/co-to-jest-cms"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

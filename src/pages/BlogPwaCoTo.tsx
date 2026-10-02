@@ -51,21 +51,21 @@ export default function BlogPwaCoTo() {
       <SEOHead
         title="Progressive Web App (PWA) — co to jest i jak wdrożyć? | Fotz.pl"
         description="PWA: Service Worker, Web App Manifest, offline support, push notifications, PWA vs natywna aplikacja, Workbox i jak mierzyć performance."
-        canonical="https://fotz.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz"
+        canonical="https://www.fotz-studio.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz"
 
         keywords="Progressive Web App (PWA) co to jest, Progressive Web App (PWA) definicja, czym jest Progressive Web App (PWA), Progressive Web App (PWA) przykłady, jak działa Progressive Web App (PWA), Progressive Web App (PWA) znaczenie, Progressive Web App (PWA) przewodnik"
       />
       <ArticleSchema
         title="Progressive Web App (PWA) — co to jest i jak wdrożyć?"
         description="PWA: 3 filary (Service Worker/Manifest/HTTPS), 6 kluczowych features, offline strategie, PWA vs. Native, Workbox i Core Web Vitals dla PWA."
-        url="https://fotz.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz"
+        url="https://www.fotz-studio.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz"
         datePublished="2024-04-08"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "PWA", url: "https://fotz.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "PWA", url: "https://www.fotz-studio.pl/blog/progressive-web-app-pwa-co-to-jest-jak-wdrozyz" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

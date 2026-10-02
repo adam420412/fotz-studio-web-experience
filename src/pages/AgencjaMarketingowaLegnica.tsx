@@ -58,9 +58,9 @@ const services = [
   },
   {
     icon: Share2,
-    title: "Social media i mediach społecznościowych",
+    title: "Social media i marketing w mediach społecznościowych",
     description: "Fotz Studio to agencja social media dla firm z Legnicy i całej Polski. Prowadzenie profili na Instagramie, Facebooku, LinkedIn i TikToku. Kreacje treści, harmonogram, kampanie zasięgowe i leadowe.",
-    link: "/social-media/legnica"
+    link: "/social-media"
   },
   {
     icon: Video,
@@ -92,7 +92,7 @@ const processSteps = [
   {
     number: "03",
     icon: Rocket,
-    title: "Wdrażać i realizacja kampanii",
+    title: "Wdrożenie i realizacja kampanii",
     description: "Działamy. Tworzymy kreacje, konfigurujemy kampanie reklamowe, optymalizujemy strony, budujemy linki. Masz stały dostęp do raportów i dedykowanego opiekuna z twojej marki po stronie agencji."
   },
   {
@@ -218,7 +218,7 @@ export default function AgencjaMarketingowaLegnica() {
       <SEOHead
         title="Agencja marketingowa Legnica — fotz studio | Marketing dla firm"
         description="Agencja marketingowa Legnica. Fotz Studio — strony internetowe, SEO, Google Ads dla firm z Legnicy. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/legnica"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/legnica"
         keywords="agencja marketingowa Legnica, marketing internetowy Legnica, agencja reklamowa Legnica, kampanie reklamowe Legnica, agencja SEO Legnica, Google Ads Legnica, digital marketing Legnica, marketing dla firm Legnica, marketing produkcja Legnica"
       />
 
@@ -229,8 +229,8 @@ export default function AgencjaMarketingowaLegnica() {
         areaServed="Legnica"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa Legnica", url: "https://fotz.pl/agencja-marketingowa/legnica" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa Legnica", url: "https://www.fotz-studio.pl/agencja-marketingowa/legnica" }
         ]}/>
       <FAQSchema items={faqItems} />
 

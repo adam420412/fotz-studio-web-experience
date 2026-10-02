@@ -119,23 +119,23 @@ export default function BlogProductAnalyticsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Product Analytics | Fotz Studio"
-        description="Product analytics — definicja, 6 kategorii metryk (acquisition, activation, engagement, retention, revenue, referral), typy analiz i narzędzia. Kompletny…"
-        canonical="https://fotz.pl/blog/product-analytics-co-to"
+        title="Product Analytics — co to jest i jak mierzyć zachowania użytkowników?"
+        description="Kompletny przewodnik po product analytics: 6 kategorii metryk, 5 typów analiz (funnel, cohort, path, segmentation, feature adoption) i narzędzia."
+        canonical="https://www.fotz-studio.pl/blog/product-analytics-co-to"
 
         keywords="Product Analytics co to jest, Product Analytics definicja, czym jest Product Analytics, Product Analytics przykłady, jak działa Product Analytics, Product Analytics znaczenie, Product Analytics przewodnik"
       />
       <ArticleSchema
         title="Product Analytics — co to jest i jak mierzyć zachowania użytkowników?"
         description="Kompletny przewodnik po product analytics: 6 kategorii metryk, 5 typów analiz (funnel, cohort, path, segmentation, feature adoption) i narzędzia."
-        url="https://fotz.pl/blog/product-analytics-co-to"
+        url="https://www.fotz-studio.pl/blog/product-analytics-co-to"
         datePublished="2024-01-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Product Analytics", url: "https://fotz.pl/blog/product-analytics-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Product Analytics", url: "https://www.fotz-studio.pl/blog/product-analytics-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -143,7 +143,7 @@ export default function BlogProductAnalyticsCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Product Analytics", url: "https://fotz.pl" },
+              { name: "Product Analytics", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Product Analytics — co to jest i jak mierzyć zachowania użytkowników?

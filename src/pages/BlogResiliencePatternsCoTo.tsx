@@ -42,23 +42,23 @@ export default function BlogResiliencePatternsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Wzorce odporności | Fotz Studio"
+        title="Wzorce odporności — Circuit Breaker, Retry, Bulkhead, Backpressure, Resilience4j?"
         description="Resilience Patterns: Circuit Breaker, Retry z Exponential Backoff, Bulkhead thread pool isolation, Backpressure w Reactor/RxJava, Resilience4j i Polly."
-        canonical="https://fotz.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
+        canonical="https://www.fotz-studio.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
 
         keywords="Wzorce odporności co to jest, Wzorce odporności definicja, czym jest Wzorce odporności, Wzorce odporności przykłady, jak działa Wzorce odporności, Wzorce odporności znaczenie, Wzorce odporności przewodnik"
       />
       <ArticleSchema
         title="Wzorce odporności — Circuit Breaker, Retry, Bulkhead, Backpressure, Resilience4j?"
         description="Resilience Patterns: 6 wzorców (Circuit Breaker/Retry/Timeout/Bulkhead/Fallback/Backpressure), Resilience4j konfiguracja, cascade failure prevention."
-        url="https://fotz.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
+        url="https://www.fotz-studio.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Wzorce odporności", url: "https://fotz.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Wzorce odporności", url: "https://www.fotz-studio.pl/blog/wzorce-odpornosci-circuit-breaker-retry-bulkhead-backpressure-resilience4j" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-green-950 text-white py-20 px-4">

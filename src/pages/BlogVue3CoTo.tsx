@@ -44,21 +44,21 @@ export default function BlogVue3CoTo() {
       <SEOHead
         title="Vue 3 Composition API, Pinia, Nuxt 3 | Fotz Studio"
         description="Vue 3 Composition API, script setup, composables, Pinia (state management), Vue Router 4, VueUse i Nuxt 3 — ekosystem Vue w 2024."
-        canonical="https://fotz.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala"
+        canonical="https://www.fotz-studio.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala"
 
         keywords="Vue 3 Composition API, Pinia, Nuxt 3 co to jest, Vue 3 Composition API, Pinia, Nuxt 3 jak działa, Vue 3 Composition API, Pinia, Nuxt 3 tutorial, Vue 3 Composition API, Pinia, Nuxt 3 przykład, czym jest Vue 3 Composition API, Pinia, Nuxt 3, Vue 3 Composition API, Pinia, Nuxt 3 dokumentacja, Vue 3 Composition API, Pinia, Nuxt 3 przewodnik"
       />
       <ArticleSchema
         title="Vue 3 Composition API, Pinia, Nuxt 3 — co to jest i jak działa?"
         description="6 elementów ekosystemu Vue 3 (Composition API/Pinia/Vue Router/VueUse/Nuxt 3/Nuxt UI) — ref, reactive, composables, defineStore, auto-imports i SSR."
-        url="https://fotz.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala"
+        url="https://www.fotz-studio.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Vue 3 i Nuxt 3", url: "https://fotz.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Vue 3 i Nuxt 3", url: "https://www.fotz-studio.pl/blog/vue3-composition-api-pinia-nuxt3-co-to-jest-jak-dziala" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-emerald-950 text-white py-20 px-4">

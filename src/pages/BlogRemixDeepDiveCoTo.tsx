@@ -42,23 +42,23 @@ export default function BlogRemixDeepDiveCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Remix.js | Fotz Studio"
-        description="Remix.js: nested routes, loader/action (SSR data fetching), defer() streaming, useFetcher (optimistic UI), cookie sessions, progressive enhancement i…"
-        canonical="https://fotz.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
+        title="Remix.js — nested routes, loader, action, defer, useFetcher i optimistic UI 2024?"
+        description="6 konceptów Remix (Nested Routes/Loader/Action/defer/useFetcher/ErrorBoundary) — progressive enhancement, cookie sessions, Clerk auth, streaming i deployment Cloudflare/Vercel."
+        canonical="https://www.fotz-studio.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
 
         keywords="Remix.js co to jest, Remix.js definicja, czym jest Remix.js, Remix.js przykłady, jak działa Remix.js, Remix.js znaczenie, Remix.js przewodnik"
       />
       <ArticleSchema
         title="Remix.js — nested routes, loader, action, defer, useFetcher i optimistic UI 2024?"
         description="6 konceptów Remix (Nested Routes/Loader/Action/defer/useFetcher/ErrorBoundary) — progressive enhancement, cookie sessions, Clerk auth, streaming i deployment Cloudflare/Vercel."
-        url="https://fotz.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
+        url="https://www.fotz-studio.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Remix.js", url: "https://fotz.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Remix.js", url: "https://www.fotz-studio.pl/blog/remix-nested-routes-loader-action-defer-usefetcher-optimistic-ui-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-rose-950 text-white py-20 px-4">

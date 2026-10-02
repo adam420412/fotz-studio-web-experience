@@ -215,7 +215,7 @@ export default function FacebookAdsPoznan() {
       <SEOHead
         title="Agencja Facebook Ads Poznań — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Poznań ✓ Kampanie Meta Ads (Facebook, Instagram) dla firm z Poznania i Wielkopolski. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/facebook-ads/poznan"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/poznan"
         keywords="facebook ads poznan, meta ads poznan, reklamy facebook poznan, agencja facebook ads poznan, kampanie facebook poznan, instagram ads poznan, facebook ads dla firm poznan, reklama na facebooku poznan, meta ads agencja poznan, facebook ads cennik poznan"
       />
       
@@ -260,11 +260,12 @@ export default function FacebookAdsPoznan() {
                       95% retencja klientów
                     </Badge>
                   </div>
-                  <Button
+                  <Button asChild
                     size="lg"
-                    className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
-                  >
-                    Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
+                    className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+                    <Link to="/kontakt">
+                      Bezpłatna konsultacja <ArrowRight className="ml-2 w-5 h-5" />
+                    </Link>
                   </Button>
                 </div>
               </FadeInView>
@@ -458,11 +459,11 @@ export default function FacebookAdsPoznan() {
                           </li>
                         ))}
                       </ul>
-                      <Button
+                      <Button asChild
                         className={`w-full mt-8 ${tier.popular ? 'bg-blue-600 hover:bg-blue-700 text-white' : 'bg-gray-100 hover:bg-gray-200 text-gray-900'}`}
-                      >
+                      ><a href="/kontakt">
                         Wybierz plan
-                      </Button>
+                      </a></Button>
                     </CardContent>
                   </Card>
                 </FadeInView>
@@ -627,11 +628,12 @@ export default function FacebookAdsPoznan() {
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
                 Facebook Ads to nie magia – to nauka. Wiemy, jak ją robić. Zaczynamy od audytu, kończymy na skalowaniu.
               </p>
-              <Button
+              <Button asChild
                 size="lg"
-                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8"
-              >
-                Zarezerwuj bezpłatną konsultację <ArrowRight className="ml-2 w-5 h-5" />
+                className="bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8">
+                <Link to="/kontakt">
+                  Zarezerwuj bezpłatną konsultację <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
             </FadeInView>
           </div>

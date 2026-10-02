@@ -80,9 +80,9 @@ export default function BlogLeadNurturingCoTo() {
   return (
     <>
       <SEOHead
-        title="Lead Nurturing — co to jest? Pielęgnowanie leadów w B2B | fotz.pl"
-        description="Lead nurturing co to jest — wyjaśniamy czym jest pielęgnowanie leadów w B2B, jak zbudować sekwencję nurturingową, lead scoring, metryki i różnica vs lead…"
-        canonical="https://fotz.pl/blog/lead-nurturing-co-to"
+        title="Lead Nurturing — co to jest? Pielęgnowanie leadów w B2B | FOTZ Studio"
+        description="Czym jest lead nurturing, etapy lejka (TOFU/MOFU/BOFU), sekwencje emailowe, lead scoring, metryki i różnica vs lead generation."
+        canonical="https://www.fotz-studio.pl/blog/lead-nurturing-co-to"
 
         keywords="Lead Nurturing co to jest, Lead Nurturing definicja, czym jest Lead Nurturing, Lead Nurturing w marketingu, Lead Nurturing przykłady, jak działa Lead Nurturing, Lead Nurturing strategia"
       />
@@ -91,7 +91,7 @@ export default function BlogLeadNurturingCoTo() {
         description="Czym jest lead nurturing, etapy lejka (TOFU/MOFU/BOFU), sekwencje emailowe, lead scoring, metryki i różnica vs lead generation."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/lead-nurturing-co-to"
+        url="https://www.fotz-studio.pl/blog/lead-nurturing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

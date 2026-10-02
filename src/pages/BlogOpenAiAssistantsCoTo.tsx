@@ -42,23 +42,23 @@ export default function BlogOpenAiAssistantsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="OpenAI Assistants API | Fotz Studio"
-        description="OpenAI Assistants API v2 (Threads, Messages, Runs), File Search (Vector Store, RAG), Code Interpreter (Python sandbox), Function Calling i streaming SSE w…"
-        canonical="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
+        title="OpenAI Assistants API — Threads, File Search, Code Interpreter, Function Calling 2024?"
+        description="6 narzędzi Assistants API (File Search/Code Interpreter/Function Calling/Streaming/Vector Store/Thread) — RAG bez infrastruktury, Python sandbox, streaming i produkcyjne wzorce."
+        canonical="https://www.fotz-studio.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
 
         keywords="OpenAI Assistants API co to jest, OpenAI Assistants API jak działa, OpenAI Assistants API tutorial, OpenAI Assistants API przykład, czym jest OpenAI Assistants API, OpenAI Assistants API dokumentacja, OpenAI Assistants API przewodnik"
       />
       <ArticleSchema
         title="OpenAI Assistants API — Threads, File Search, Code Interpreter, Function Calling 2024?"
         description="6 narzędzi Assistants API (File Search/Code Interpreter/Function Calling/Streaming/Vector Store/Thread) — RAG bez infrastruktury, Python sandbox, streaming i produkcyjne wzorce."
-        url="https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
+        url="https://www.fotz-studio.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "OpenAI Assistants API", url: "https://fotz.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "OpenAI Assistants API", url: "https://www.fotz-studio.pl/blog/openai-assistants-api-threads-file-search-code-interpreter-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">

@@ -38,8 +38,8 @@ export default function BlogMarketingMedyczny() {
     <Layout>
       <SEOHead
         title="Marketing medyczny i marketing dla lekarza | Fotz Studio"
-        description="Kompleksowy poradnik marketingu medycznego w Polsce. Strategie SEO dla klinik, Google Moja Firma, reklamy Google Ads, content marketing dla lekarzy…"
-        canonical="https://fotz.pl/blog/marketing-medyczny"
+        description="Strategie marketingu medycznego, SEO dla klinik, Google Moja Firma, content marketing i budowanie zaufania pacjentów."
+        canonical="https://www.fotz-studio.pl/blog/marketing-medyczny"
         ogType="article"
 
         keywords="Marketing medyczny i marketing dla lekarza, Marketing medyczny i marketing dla lekarza poradnik, Marketing medyczny i marketing dla lekarza strategia, Marketing medyczny i marketing dla lekarza jak zrobić, Marketing medyczny i marketing dla lekarza marketing, Marketing medyczny i marketing dla lekarza przykłady, Marketing medyczny i marketing dla lekarza w Polsce"
@@ -48,7 +48,7 @@ export default function BlogMarketingMedyczny() {
       <ArticleSchema
         headline="Marketing medyczny: Kompletny poradnik dla lekarzy i gabinetów"
         description="Strategie marketingu medycznego, SEO dla klinik, Google Moja Firma, content marketing i budowanie zaufania pacjentów."
-        image="https://fotz.pl/images/marketing-medyczny.png"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         author="Fotz Studio"
         datePublished="2025-04-22"
         dateModified="2025-08-10"
@@ -369,9 +369,9 @@ export default function BlogMarketingMedyczny() {
             <p className="text-lg mb-8 opacity-90">
               Nasze zespoły w Fotz Studio specjalizuja sie w marketingu dla branży medycznej. Pomogą Ci zbudować profesjonalna online presence.
             </p>
-            <button className="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">
               Skontaktuj sie z nami
-            </button>
+            </a>
           </div>
         </section>
       </div>

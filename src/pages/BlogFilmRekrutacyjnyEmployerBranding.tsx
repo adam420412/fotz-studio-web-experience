@@ -38,7 +38,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/film-rekrutacyjny-employer-branding";
+const CANONICAL = "https://www.fotz-studio.pl/blog/film-rekrutacyjny-employer-branding";
 
 export default function BlogFilmRekrutacyjnyEmployerBranding() {
   return (
@@ -58,8 +58,8 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Film rekrutacyjny: jak przyciągnąć kandydatów, którzy sami się zgłoszą", url: CANONICAL },
         ]}
       />
@@ -179,7 +179,7 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
           </p>
           <p>
             Jeśli szukasz partnera do stałej produkcji video, nie tylko jednego filmu, zobacz też, jak wygląda{" "}
-            <Link to="/produkcja-video-poznan" className="text-[#75143F] underline">
+            <Link to="/uslugi/produkcja-filmow" className="text-[#75143F] underline">
               produkcja video w Poznaniu
             </Link>
             {" "}w naszym wykonaniu. Robiliśmy produkcje wideo między innymi dla Żabki, WSB Merito, Zakładów Cegielskiego i FPS, więc wiemy, jak pracować zarówno z dużą korporacją, jak i z mniejszym zespołem HR. Mamy też ponad <strong>160 opinii Google na 5.0</strong>, co samo w sobie sporo mówi o tym, jak traktujemy klientów.

@@ -101,23 +101,23 @@ export default function BlogServiceDesignCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Service Design | Fotz Studio"
-        description="Service design — definicja, 5 zasad, 4-fazowy proces (discover, define, develop, deliver), service blueprint i narzędzia. Czym różni się od UX design…"
-        canonical="https://fotz.pl/blog/service-design-co-to"
+        title="Service Design — co to jest i jak projektować usługi?"
+        description="Kompletny przewodnik po service design: 5 zasad, 4-fazowy Double Diamond process, service blueprint, customer journey map i narzędzia."
+        canonical="https://www.fotz-studio.pl/blog/service-design-co-to"
 
         keywords="Service Design co to jest, Service Design definicja, czym jest Service Design, Service Design przykłady, jak działa Service Design, Service Design znaczenie, Service Design przewodnik"
       />
       <ArticleSchema
         title="Service Design — co to jest i jak projektować usługi?"
         description="Kompletny przewodnik po service design: 5 zasad, 4-fazowy Double Diamond process, service blueprint, customer journey map i narzędzia."
-        url="https://fotz.pl/blog/service-design-co-to"
+        url="https://www.fotz-studio.pl/blog/service-design-co-to"
         datePublished="2024-01-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Service Design", url: "https://fotz.pl/blog/service-design-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Service Design", url: "https://www.fotz-studio.pl/blog/service-design-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -125,7 +125,7 @@ export default function BlogServiceDesignCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Service Design", url: "https://fotz.pl" },
+              { name: "Service Design", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Service Design — co to jest i jak projektować usługi?

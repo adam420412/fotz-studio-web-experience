@@ -74,23 +74,23 @@ export default function BlogWordOfMouthCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Word of Mouth Marketing | Fotz Studio"
+        title="Word of Mouth Marketing — co to jest i jak działa?"
         description="Word of mouth marketing — definicja, rodzaje WOM, jak stymulować polecenia, NPS i programy referencyjne. Kompletny przewodnik po marketingu szeptanym."
-        canonical="https://fotz.pl/blog/word-of-mouth-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/word-of-mouth-marketing-co-to"
 
         keywords="Word of Mouth Marketing co to jest, Word of Mouth Marketing definicja, czym jest Word of Mouth Marketing, Word of Mouth Marketing w marketingu, Word of Mouth Marketing przykłady, jak działa Word of Mouth Marketing, Word of Mouth Marketing strategia"
       />
       <ArticleSchema
         title="Word of Mouth Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po word of mouth marketingu: rodzaje WOM, kluczowe czynniki poleceń, NPS i programy referencyjne."
-        url="https://fotz.pl/blog/word-of-mouth-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/word-of-mouth-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Word of Mouth Marketing", url: "https://fotz.pl/blog/word-of-mouth-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Word of Mouth Marketing", url: "https://www.fotz-studio.pl/blog/word-of-mouth-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -98,7 +98,7 @@ export default function BlogWordOfMouthCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Word of Mouth Marketing", url: "https://fotz.pl" },
+              { name: "Word of Mouth Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Word of Mouth Marketing — co to jest i jak działa?

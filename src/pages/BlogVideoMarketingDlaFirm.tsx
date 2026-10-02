@@ -13,7 +13,7 @@ export default function BlogVideoMarketingDlaFirm() {
     "@type": "BlogPosting",
     headline: "Video Marketing dla Firm – Kompletny Przewodnik 2026",
     description: "Video marketing dla firm – rodzaje filmów reklamowych, YouTube Ads, TikTok, koszty i zwrot z inwestycji. Kompletny przewodnik po video marketingu",
-    image: "https://fotz.pl/images/video-marketing-dla-firm.jpg",
+    image: "https://www.fotz-studio.pl/og-image.jpg",
     datePublished: "2026-03-10",
     dateModified: "2026-03-10",
     author: {
@@ -30,13 +30,13 @@ export default function BlogVideoMarketingDlaFirm() {
         "@type": "ListItem",
         position: 1,
         name: "Blog",
-        item: "https://fotz.pl/blog",
+        item: "https://www.fotz-studio.pl/blog",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Video Marketing dla Firm",
-        item: "https://fotz.pl/blog/video-marketing-dla-firm",
+        item: "https://www.fotz-studio.pl/blog/video-marketing-dla-firm",
       },
     ],
   };
@@ -93,7 +93,7 @@ export default function BlogVideoMarketingDlaFirm() {
       <SEOHead
         title="Video Marketing dla Firm | Fotz Studio"
         description="Video marketing dla firm – rodzaje filmów reklamowych, YouTube Ads, TikTok, koszty i zwrot z inwestycji. Kompletny przewodnik po video marketingu ✓"
-        canonical="https://fotz.pl/blog/video-marketing-dla-firm"
+        canonical="https://www.fotz-studio.pl/blog/video-marketing-dla-firm"
         schema={articleSchema}
 
         keywords="Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026], Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] poradnik, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] strategia, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] jak zrobić, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] marketing, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] przykłady, Video Marketing dla Firm – Jak Skutecznie Promować Firmę Wideo? [2026] w Polsce"

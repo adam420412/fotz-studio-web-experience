@@ -87,8 +87,8 @@ export default function AgencjaKreaTywnaPoznan() {
       <Layout>
       <SEOHead
         title="Agencja Kreatywna Poznań — Branding, Design, Kampanie Kreatywne"
-        description="Agencja kreatywna Poznań — branding, identyfikacja wizualna, kampanie kreatywne, produkcja wideo i content. Kompleksowe wsparcie kreatywne dla firm. Fotz…"
-        canonical="https://fotz.pl/agencja-kreatywna-poznan"
+        description="Agencja kreatywna Poznań — branding, identyfikacja wizualna, kampanie kreatywne, produkcja wideo i content. Fotz Studio obsługuje wszystkie aspekty kreatywne Twojej marki: od koncepcji po gotowe materiały."
+        canonical="https://www.fotz-studio.pl/agencja-kreatywna-poznan"
         keywords="agencja kreatywna poznań, studio kreatywne poznań, branding poznań, identyfikacja wizualna poznań, web design poznań, produkcja wideo poznań, grafika reklamowa poznań"
       />
 
@@ -99,8 +99,8 @@ export default function AgencjaKreaTywnaPoznan() {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja Kreatywna Poznań", url: "https://fotz.pl/agencja-kreatywna-poznan" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Kreatywna Poznań", url: "https://www.fotz-studio.pl/agencja-kreatywna-poznan" }
         ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 
@@ -383,7 +383,7 @@ export default function AgencjaKreaTywnaPoznan() {
                 <Link to="/kontakt">Omów projekt <ArrowRight className="ml-2 w-5 h-5" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/agencja-marketingowa-poznan">Sprawdź marketing</Link>
+                <Link to="/agencja-marketingowa/poznan">Sprawdź marketing</Link>
               </Button>
             </motion.div>
           </motion.div>
@@ -397,10 +397,10 @@ export default function AgencjaKreaTywnaPoznan() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               { label: "Agencja reklamowa Poznań", to: "/agencja-reklamowa-poznan" },
-              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa-poznan" },
+              { label: "Agencja marketingowa Poznań", to: "/agencja-marketingowa/poznan" },
               { label: "Identyfikacja wizualna", to: "/uslugi/identyfikacja-wizualna" },
-              { label: "Social media Poznań", to: "/uslugi/social-media/poznan" },
-              { label: "Produkcja filmów Poznań", to: "/uslugi/produkcja-filmow/poznan" },
+              { label: "Social media Poznań", to: "/social-media/poznan" },
+              { label: "Produkcja filmów Poznań", to: "/uslugi/produkcja-filmow" },
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe/poznan" },
             ].map((link) => (
               <Link

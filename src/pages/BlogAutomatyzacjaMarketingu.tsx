@@ -169,9 +169,9 @@ export default function BlogAutomatyzacjaMarketingu() {
   return (
     <>
       <SEOHead
-        title="Automatyzacja marketingu w lejku sprzedazowym | fotz.pl"
+        title="Automatyzacja marketingu w lejku sprzedazowym | FOTZ Studio"
         description="Automatyzacja marketingu — jak zbudowac automatyzowany lejek sprzedazowy. Lead scoring, email nurturing, narzedzia HubSpot, ActiveCampaign, ROI automatyzacji."
-        canonical="https://fotz.pl/blog/automatyzacja-marketingu"
+        canonical="https://www.fotz-studio.pl/blog/automatyzacja-marketingu"
 
         keywords="Automatyzacja marketingu w lejku sprzedazowym, Automatyzacja marketingu w lejku sprzedazowym poradnik, Automatyzacja marketingu w lejku sprzedazowym strategia, Automatyzacja marketingu w lejku sprzedazowym jak zrobić, Automatyzacja marketingu w lejku sprzedazowym marketing, Automatyzacja marketingu w lejku sprzedazowym przykłady, Automatyzacja marketingu w lejku sprzedazowym w Polsce"
       />
@@ -180,7 +180,7 @@ export default function BlogAutomatyzacjaMarketingu() {
         description="Automatyzacja lejka sprzedazowego, email nurturing, lead scoring, narzędzia (HubSpot, ActiveCampaign), strategie B2B vs B2C i ROI automatyzacji."
         datePublished="2025-04-12"
         dateModified="2025-04-12"
-        url="https://fotz.pl/blog/automatyzacja-marketingu"
+        url="https://www.fotz-studio.pl/blog/automatyzacja-marketingu"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

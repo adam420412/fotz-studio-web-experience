@@ -46,9 +46,9 @@ const faqItems = [
 
 export function BlogKosztSEO() {
   const breadcrumbItems = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Blog", url: "https://fotz.pl/blog" },
-    { name: "Ile kosztuje SEO", url: "https://fotz.pl/blog/koszt-seo" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+    { name: "Ile kosztuje SEO", url: "https://www.fotz-studio.pl/blog/koszt-seo" }
   ];
 
   return (
@@ -56,7 +56,7 @@ export function BlogKosztSEO() {
       <SEOHead
         title="Ile kosztuje SEO? Cennik pozycjonowania 2025 [Poradnik]"
         description="Odkryj realną cenę SEO w Polsce. Ceny pakietów, modele rozliczania, co wpływa na koszt pozycjonowania i czy tanie SEO za 300 zł jest skuteczne."
-        canonical="https://fotz.pl/blog/koszt-seo"
+        canonical="https://www.fotz-studio.pl/blog/koszt-seo"
         ogType="article"
         keywords="koszt SEO, ile kosztuje SEO, cena SEO, cennik pozycjonowania"
         schemaJson={[
@@ -74,7 +74,7 @@ export function BlogKosztSEO() {
               "name": "Fotz Studio",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -86,7 +86,7 @@ export function BlogKosztSEO() {
       <ArticleSchema
         title="Ile kosztuje SEO? Cennik pozycjonowania 2025 [Poradnik]"
         description="Pełny poradnik do cen SEO - modele rozliczania, ceny pakietów, czynniki wpływające na koszt i jak budżetować SEO dla firmy."
-        url="https://fotz.pl/blog/koszt-seo"
+        url="https://www.fotz-studio.pl/blog/koszt-seo"
         datePublished="2025-04-12"
         dateModified="2025-04-12"
       />

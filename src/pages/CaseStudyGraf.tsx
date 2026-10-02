@@ -41,15 +41,15 @@ const CaseStudyGraf = () => {
   return (
     <Layout>
       <SEOHead
-        title="Graf Tapicerstwo | Fotz Studio"
+        title="Graf Tapicerstwo - Zabudowa Busów - Case Study | Fotz Studio"
         description="Case study Graf Tapicerstwo: strona internetowa dla firmy zabudowy i tapicerowania busów. SEO i galeria realizacji. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/graf-tapicerstwo"
+        canonical="https://www.fotz-studio.pl/realizacje/graf-tapicerstwo"
         keywords="case study branding, realizacja identyfikacji wizualnej, branding case study"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Graf Tapicerstwo", url: "https://fotz.pl/realizacje/graf-tapicerstwo" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Graf Tapicerstwo", url: "https://www.fotz-studio.pl/realizacje/graf-tapicerstwo" }
       ]}/>
       <ArticleSchema
         title="Graf Tapicerstwo - Zabudowa Busów - Case Study"
@@ -57,8 +57,8 @@ const CaseStudyGraf = () => {
         author="Fotz Studio"
         datePublished="2023-09-15"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/graf-tapicerstwo"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/graf-tapicerstwo"
       />
 
       {/* Hero */}

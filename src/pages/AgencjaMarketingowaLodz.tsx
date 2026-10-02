@@ -158,7 +158,7 @@ export default function AgencjaMarketingowaLodz() {
       <SEOHead 
         title="Agencja Marketingowa Łódź | FOTZ – Marketing Dla Firm w Łodzi"
         description="Agencja marketingowa Łódź ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Łodzi i Mazowsza centralnego. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/lodz"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/lodz"
         keywords="agencja marketingowa łódź, marketing internetowy łódź, agencja reklamowa łódź, kampanie reklamowe łódź, seo łódź, google ads łódź"
       />
       
@@ -180,14 +180,16 @@ export default function AgencjaMarketingowaLodz() {
               Zwiększamy sprzedaż firm łódzkich poprzez profesjonalny marketing online. SEO, Google Ads, social media i strony WWW na najwyższym poziomie.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                Bezpłatna Konsultacja
-                <ArrowRight className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
+              <Button asChild size="lg" variant="outline"><a href="tel:+48790814814">
                 <Phone className="mr-2 w-4 h-4" />
-                +48 42 *** ****
-              </Button>
+                +48 790 814 814
+              </a></Button>
             </div>
           </div>
         </div>
@@ -313,12 +315,12 @@ export default function AgencjaMarketingowaLodz() {
                       </li>
                     ))}
                   </ul>
-                  <Button 
+                  <Button asChild
                     className={`w-full ${pkg.highlight ? "bg-blue-600 hover:bg-blue-700" : "bg-gray-800 hover:bg-gray-900"}`}
-                  >
+                  ><a href="/kontakt">
                     Wybierz Pakiet
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}
@@ -404,13 +406,17 @@ export default function AgencjaMarketingowaLodz() {
               Zarezerwuj bezpłatną konsultację z naszymi ekspertami. Omówimy Twoje cele i pokażemy jak możemy pomóc Twojej firmie z Łodzi.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
-                Bezpłatna Konsultacja
-                <ArrowRight className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100 font-semibold">
+                <Link to="/kontakt">
+                  Bezpłatna Konsultacja
+                  <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
-                Skontaktuj się teraz
-                <Phone className="ml-2 w-4 h-4" />
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
+                <Link to="/kontakt">
+                  Skontaktuj się teraz
+                  <Phone className="ml-2 w-4 h-4" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -468,10 +474,10 @@ export default function AgencjaMarketingowaLodz() {
             <p className="mb-6 opacity-90">
               Skontaktuj się z nami dzisiaj, aby dowiedzieć się więcej o naszych usługach marketingowych dla firm z Łodzi.
             </p>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white"><a href="/kontakt">
               Zarabiaj więcej z FOTZ
               <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            </a></Button>
           </div>
         </div>
       </section>

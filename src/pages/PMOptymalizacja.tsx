@@ -37,7 +37,7 @@ const PMOptymalizacja = () => {
       <SEOHead
         title="Optymalizacja Kampanii Reklamowych — Poprawa ROAS i CPA"
         description="Optymalizacja kampanii reklamowych — poprawa ROAS, obniżenie CPA, testy A/B reklam, optymalizacja konwersji. Fotz Studio."
-        canonical="https://fotz.pl/performance-marketing/optymalizacja"
+        canonical="https://www.fotz-studio.pl/performance-marketing/optymalizacja"
         keywords="optymalizacja kampanii reklamowych, optymalizacja google ads, poprawa roas, obniżenie cpa, optymalizacja meta ads, a/b testing reklam, optymalizacja reklam facebook, zmniejszenie kosztu konwersji, zwiększenie roas, audyt kampanii google ads"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const PMOptymalizacja = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-        { name: "Optymalizacja Kampanii", url: "https://fotz.pl/performance-marketing/optymalizacja" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+        { name: "Optymalizacja Kampanii", url: "https://www.fotz-studio.pl/performance-marketing/optymalizacja" },
       ]}/>
       <FAQSchema items={faqItems} />
 

@@ -41,20 +41,20 @@ const CaseStudyLauvjah = () => {
   return (
     <Layout>
       <SEOHead
-        title="Lauvjah | Fotz Studio"
+        title="Lauvjah - Strona dla firmy transportowej | Fotz Studio"
         description="Case study Lauvjah: strona internetowa dla firmy transportowej i spedycyjnej. SEO, design i lead generation. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/lauvjah"
+        canonical="https://www.fotz-studio.pl/realizacje/lauvjah"
         keywords="case study e-commerce, realizacja sklepu internetowego, seo e-commerce case study"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-          { name: "Lauvjah", url: "https://fotz.pl/realizacje/lauvjah" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+          { name: "Lauvjah", url: "https://www.fotz-studio.pl/realizacje/lauvjah" }
         ]}/>
       <ArticleSchema 
         title="Lauvjah - Strona dla firmy transportowej"
         description="Case study: strona z prezentacją floty 343+ zestawów Euro6 dla firmy TSL"
-        url="https://fotz.pl/realizacje/lauvjah"
+        url="https://www.fotz-studio.pl/realizacje/lauvjah"
         datePublished="2024-04-05"
         dateModified="2026-01-09"
       />

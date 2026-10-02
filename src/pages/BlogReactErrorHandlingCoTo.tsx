@@ -42,23 +42,23 @@ export default function BlogReactErrorHandlingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Error handling w React | Fotz Studio"
-        description="Error handling React: Error Boundary (react-error-boundary), typed errors, Result pattern, TanStack Query throwOnError, Sentry integracja i Next.js…"
-        canonical="https://fotz.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024"
+        title="Error handling w React — Error Boundary, Sentry, TanStack Query i Next.js error.tsx 2024?"
+        description="6 wzorców error handling (Error Boundary/react-error-boundary/try-catch/Result pattern/TanStack Query/Sentry) — async errors, typed errors, Next.js App Router i monitoring."
+        canonical="https://www.fotz-studio.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024"
 
         keywords="Error handling w React co to jest, Error handling w React jak działa, Error handling w React tutorial, Error handling w React przykład, czym jest Error handling w React, Error handling w React dokumentacja, Error handling w React przewodnik"
       />
       <ArticleSchema
         title="Error handling w React — Error Boundary, Sentry, TanStack Query i Next.js error.tsx 2024?"
         description="6 wzorców error handling (Error Boundary/react-error-boundary/try-catch/Result pattern/TanStack Query/Sentry) — async errors, typed errors, Next.js App Router i monitoring."
-        url="https://fotz.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Error Handling", url: "https://fotz.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Error Handling", url: "https://www.fotz-studio.pl/blog/react-error-handling-error-boundary-sentry-tanstack-query-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-orange-950 text-white py-20 px-4">

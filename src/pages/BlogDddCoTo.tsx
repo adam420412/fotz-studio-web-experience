@@ -49,23 +49,23 @@ export default function BlogDddCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Domain-Driven Design (DDD) | Fotz Studio"
+        title="Domain-Driven Design (DDD) — co to jest, Bounded Context, Aggregate, Event Storming?"
         description="DDD: Ubiquitous Language, Bounded Context, Aggregate, Value Object, Event Storming, Context Map, DDD + mikroserwisy — strategiczny i taktyczny DDD w praktyce."
-        canonical="https://fotz.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming"
+        canonical="https://www.fotz-studio.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming"
 
         keywords="Domain-Driven Design (DDD) co to jest, Domain-Driven Design (DDD) definicja, czym jest Domain-Driven Design (DDD), Domain-Driven Design (DDD) przykłady, jak działa Domain-Driven Design (DDD), Domain-Driven Design (DDD) znaczenie, Domain-Driven Design (DDD) przewodnik"
       />
       <ArticleSchema
         title="Domain-Driven Design (DDD) — co to jest, Bounded Context, Aggregate, Event Storming?"
         description="DDD: 6 konceptów (Ubiquitous Language/Bounded Context/Aggregate/Entity/VO/Domain Event), 4 wzorce Context Map, Event Storming i DDD + mikroserwisy."
-        url="https://fotz.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming"
+        url="https://www.fotz-studio.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Domain-Driven Design", url: "https://fotz.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Domain-Driven Design", url: "https://www.fotz-studio.pl/blog/domain-driven-design-ddd-co-to-jest-bounded-context-aggregate-event-storming" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-violet-950 text-white py-20 px-4">

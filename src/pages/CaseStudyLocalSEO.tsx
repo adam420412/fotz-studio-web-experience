@@ -107,15 +107,15 @@ const CaseStudyLocalSEO = () => {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie lokalne Poznań | Fotz Studio"
-        description="Case study: lokalne SEO dla kliniki dentystycznej w Poznaniu. Wzrost ruchu z 340 do 2,108 sesji/miesiąc, pozycja 12→2 w Google Maps. Narzędzia: GSC…"
-        canonical="https://fotz.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu"
+        title="Pozycjonowanie lokalne w Poznaniu — wzrost ruchu organicznego o 520% | Case Study FOTZ Studio"
+        description="Case study lokalnego SEO: analiza strategii, metryki miesiąc po miesiącu, 7 najważniejszych lekcji z pozycjonowania lokalnego."
+        canonical="https://www.fotz-studio.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu"
         keywords="seo lokalne poznań, google maps poznań, pozycjonowanie lokalne, google business profile, local seo case study"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Case Studies", url: "https://fotz.pl/case-studies" },
-        { name: "SEO Lokalne Poznań", url: "https://fotz.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Case Studies", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "SEO Lokalne Poznań", url: "https://www.fotz-studio.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu" }
       ]}/>
       <ArticleSchema
         title="Pozycjonowanie lokalne w Poznaniu — wzrost ruchu organicznego o 520% | Case Study FOTZ Studio"
@@ -123,8 +123,8 @@ const CaseStudyLocalSEO = () => {
         author="FOTZ Studio"
         datePublished="2026-01-15"
         dateModified="2026-04-10"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/case-studies/seo-lokalne-poznan-wzrost-ruchu"
       />
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

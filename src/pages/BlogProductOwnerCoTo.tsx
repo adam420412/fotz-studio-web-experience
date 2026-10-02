@@ -64,22 +64,22 @@ export default function BlogProductOwnerCoTo() {
     <Layout>
       <SEOHead
         title="Product Owner — co to jest? Rola PO w Scrum i Agile"
-        description="Product Owner — definicja, 6 obszarów odpowiedzialności, różnica vs. Product Manager, 4 frameworki priorytetyzacji backlogu i certyfikaty CSPO/PSPO…"
-        canonical="https://fotz.pl/blog/product-owner-co-to"
+        description="Kompletny przewodnik po roli Product Owner: 6 obszarów odpowiedzialności, różnica vs. Product Manager, frameworki priorytetyzacji i certyfikaty."
+        canonical="https://www.fotz-studio.pl/blog/product-owner-co-to"
 
         keywords="Product Owner co to jest, Product Owner definicja, czym jest Product Owner, Product Owner przykłady, jak działa Product Owner, Product Owner znaczenie, Product Owner przewodnik"
       />
       <ArticleSchema
         title="Product Owner — co to jest i czym zajmuje się PO w Scrum?"
         description="Kompletny przewodnik po roli Product Owner: 6 obszarów odpowiedzialności, różnica vs. Product Manager, frameworki priorytetyzacji i certyfikaty."
-        url="https://fotz.pl/blog/product-owner-co-to"
+        url="https://www.fotz-studio.pl/blog/product-owner-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Product Owner", url: "https://fotz.pl/blog/product-owner-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Product Owner", url: "https://www.fotz-studio.pl/blog/product-owner-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -87,7 +87,7 @@ export default function BlogProductOwnerCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Product Owner", url: "https://fotz.pl" },
+              { name: "Product Owner", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Product Owner — co to jest i czym się zajmuje?

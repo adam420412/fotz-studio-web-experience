@@ -42,23 +42,23 @@ export default function BlogAiImageGenCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="AI generowanie obrazów | Fotz Studio"
-        description="AI Image Generation: DALL-E 3 (OpenAI), Replicate (SDXL, Flux), FAL.ai (realtime), Stable Diffusion — prompt engineering, Next.js integracja, Vercel Blob…"
-        canonical="https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
+        title="AI generowanie obrazów — DALL-E 3, Replicate, FAL.ai, Flux i Stable Diffusion TypeScript 2024?"
+        description="6 API do generowania obrazów AI (DALL-E 3/SDXL/Flux/Replicate/Midjourney/Ideogram) — prompt engineering, Next.js integration, storage (Vercel Blob/R2) i koszty."
+        canonical="https://www.fotz-studio.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
 
         keywords="AI generowanie obrazów co to jest, AI generowanie obrazów jak działa, AI generowanie obrazów tutorial, AI generowanie obrazów przykład, czym jest AI generowanie obrazów, AI generowanie obrazów dokumentacja, AI generowanie obrazów przewodnik"
       />
       <ArticleSchema
         title="AI generowanie obrazów — DALL-E 3, Replicate, FAL.ai, Flux i Stable Diffusion TypeScript 2024?"
         description="6 API do generowania obrazów AI (DALL-E 3/SDXL/Flux/Replicate/Midjourney/Ideogram) — prompt engineering, Next.js integration, storage (Vercel Blob/R2) i koszty."
-        url="https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AI Image Generation", url: "https://fotz.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AI Image Generation", url: "https://www.fotz-studio.pl/blog/ai-generowanie-obrazow-dalle-replicate-fal-flux-stable-diffusion-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

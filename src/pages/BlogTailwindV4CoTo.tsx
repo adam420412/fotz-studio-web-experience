@@ -42,23 +42,23 @@ export default function BlogTailwindV4CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Tailwind CSS v4 | Fotz Studio"
+        title="Tailwind CSS v4 — @theme, Oxide engine, OKLCH kolory i migracja z v3 2025?"
         description="Tailwind CSS v4: CSS-first config (@theme), Oxide engine (Rust, 5-10x szybszy), OKLCH kolory, automatyczne content detection, nowe utilities i migracja z v3."
-        canonical="https://fotz.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025"
+        canonical="https://www.fotz-studio.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025"
 
         keywords="Tailwind CSS v4 co to jest, Tailwind CSS v4 definicja, czym jest Tailwind CSS v4, Tailwind CSS v4 przykłady, jak działa Tailwind CSS v4, Tailwind CSS v4 znaczenie, Tailwind CSS v4 przewodnik"
       />
       <ArticleSchema
         title="Tailwind CSS v4 — @theme, Oxide engine, OKLCH kolory i migracja z v3 2025?"
         description="6 zmian Tailwind v4 vs v3 (konfiguracja/@theme/Oxide/OKLCH/auto-detection/container queries) — CSS-first config, migracja, Next.js setup, shadcn/ui i nowe utility classes."
-        url="https://fotz.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025"
+        url="https://www.fotz-studio.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025"
         datePublished="2025-01-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Tailwind CSS v4", url: "https://fotz.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Tailwind CSS v4", url: "https://www.fotz-studio.pl/blog/tailwind-css-v4-theme-oxide-engine-oklch-migracja-v3-2025" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-teal-950 text-white py-20 px-4">

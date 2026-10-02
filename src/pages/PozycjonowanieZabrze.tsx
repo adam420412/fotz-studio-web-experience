@@ -215,7 +215,7 @@ export default function PozycjonowanieZabrze() {
         <SEOHead
           title="Pozycjonowanie Zabrze - lokalne SEO dla firm | fotz studio"
           description="Pozycjonowanie stron w Zabrzu. SEO lokalne dla firm, e-commerce i usługodawców. Zwiększymy Twoją widoczność w Google. Darmowa wycena."
-          canonical="https://fotz.pl/pozycjonowanie/zabrze"
+          canonical="https://www.fotz-studio.pl/pozycjonowanie/zabrze"
         keywords="pozycjonowanie zabrze, agencja seo zabrze, seo zabrze, pozycjonowanie stron zabrze, seo dla firm zabrze, seo śląsk, pozycjonowanie lokalne zabrze"
         />
 
@@ -225,14 +225,14 @@ export default function PozycjonowanieZabrze() {
           areaServed="Zabrze"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
             {
               name: "Usługi",
-              url: "https://fotz.pl/uslugi",
+              url: "https://www.fotz-studio.pl/uslugi",
             },
             {
               name: "Pozycjonowanie Zabrze",
-              url: "https://fotz.pl/pozycjonowanie/zabrze",
+              url: "https://www.fotz-studio.pl/pozycjonowanie/zabrze",
             },
           ]}/>
         <FAQSchema items={faqItems} />

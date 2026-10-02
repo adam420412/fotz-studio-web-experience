@@ -99,9 +99,9 @@ export default function StronaOnePage() {
     <>
       <Layout>
         <SEOHead
-          title="Strona one page | Jednostronicowa strona internetowa | fotz.pl"
+          title="Strona one page | Jednostronicowa strona internetowa | FOTZ Studio"
           description="Strona one page — elegancka jednostronicowa strona internetowa dla firm i freelancerów. Od 499 zł netto. Szybko, profesjonalnie, mobilna. Bezpłatna wycena!"
-          canonical="https://fotz.pl/uslugi/strona-one-page"
+          canonical="https://www.fotz-studio.pl/uslugi/strona-one-page"
           keywords="strona one page, strona jednopodstronowa, one page website, landing page one page, strona internetowa jednostrona"
         />
 
@@ -113,9 +113,9 @@ export default function StronaOnePage() {
         />
 
         <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Strona one page", url: "https://fotz.pl/uslugi/strona-one-page" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Strona one page", url: "https://www.fotz-studio.pl/uslugi/strona-one-page" }
         ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

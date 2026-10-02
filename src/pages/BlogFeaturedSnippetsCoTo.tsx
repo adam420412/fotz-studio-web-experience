@@ -67,9 +67,9 @@ export default function BlogFeaturedSnippetsCoTo() {
   return (
     <>
       <SEOHead
-        title="Featured Snippets — co to jest i jak je zdobyć? | fotz.pl"
+        title="Featured Snippets — co to jest i jak je zdobyć? | FOTZ Studio"
         description="Featured Snippets co to jest — wyjaśniamy czym jest pozycja 0 w Google, typy snippetów, jak je zdobyć i jak zwiększyć widoczność w SERP."
-        canonical="https://fotz.pl/blog/featured-snippets-co-to"
+        canonical="https://www.fotz-studio.pl/blog/featured-snippets-co-to"
 
         keywords="Featured Snippets co to jest, Featured Snippets definicja, czym jest Featured Snippets, Featured Snippets przykłady, jak działa Featured Snippets, Featured Snippets znaczenie, Featured Snippets przewodnik"
       />
@@ -78,7 +78,7 @@ export default function BlogFeaturedSnippetsCoTo() {
         description="Czym są Featured Snippets (pozycja 0), typy snippetów (paragraph, list, table, video), jak je zdobyć i jak wpływają na CTR."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/featured-snippets-co-to"
+        url="https://www.fotz-studio.pl/blog/featured-snippets-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

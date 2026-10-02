@@ -150,7 +150,7 @@ const AgencjaGraficzna = () => {
       <SEOHead
         title="Agencja Graficzna Poznań | Fotz Studio"
         description="Agencja graficzna Poznań — projektowanie graficzne, identyfikacja wizualna firmy, logo, materiały reklamowe, grafika na social media. Fotz Studio."
-        canonical="https://fotz.pl/agencja-graficzna"
+        canonical="https://www.fotz-studio.pl/agencja-graficzna"
         keywords="agencja graficzna, projektowanie graficzne, projekt graficzny, identyfikacja wizualna, logo design, agencja kreatywna, usługi graficzne"
       />
       <ServiceSchema 
@@ -160,9 +160,9 @@ const AgencjaGraficzna = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Agencja Graficzna", url: "https://fotz.pl/agencja-graficzna" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Agencja Graficzna", url: "https://www.fotz-studio.pl/agencja-graficzna" },
         ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}

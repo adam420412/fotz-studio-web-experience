@@ -28,7 +28,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/dron-w-marketingu-firmy";
+const CANONICAL = "https://www.fotz-studio.pl/blog/dron-w-marketingu-firmy";
 
 export default function BlogDronWMarketinguFirmy() {
   return (
@@ -48,8 +48,8 @@ export default function BlogDronWMarketinguFirmy() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Dron w marketingu firmy", url: CANONICAL },
         ]}
       />
@@ -137,7 +137,7 @@ export default function BlogDronWMarketinguFirmy() {
           </ul>
           <p>
             Dzięki takiemu podejściu dron nie wydłuża realizacji, tylko naturalnie się w nią wpisuje. Więcej o tym, jak wygląda pełen proces produkcji video, znajdziesz na stronie{" "}
-            <Link to="/produkcja-video-poznan" className="text-[#75143F] underline">
+            <Link to="/uslugi/produkcja-filmow" className="text-[#75143F] underline">
               produkcja video Poznań
             </Link>
             .

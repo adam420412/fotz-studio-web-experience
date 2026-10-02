@@ -128,15 +128,15 @@ export default function BlogStronaInternetowaOdZera() {
   return (
     <>
       <SEOHead
-        title="Strona internetowa dla małej firmy - poradnik 2025 | fotz.pl"
+        title="Strona internetowa dla małej firmy - poradnik 2025 | FOTZ Studio"
         description="Pełny poradnik jak zrobić stronę dla małej firmy. Co musi mieć strona? Ile kosztuje? WordPress vs Wix. 5 najczęstszych błędów. Praktyczne porady."
-        canonical="https://fotz.pl/blog/strona-internetowa-dla-malej-firmy"
+        canonical="https://www.fotz-studio.pl/blog/strona-internetowa-dla-malej-firmy"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "headline": "Strona internetowa dla małej firmy - poradnik 2025",
           "description": "Pełny poradnik jak zrobić stronę dla małej firmy. Co musi mieć strona? Ile kosztuje? WordPress vs Wix. 5 najczęstszych błędów.",
-          "image": "https://fotz.pl/og-blog-malafirma.jpg",
+          "image": "https://www.fotz-studio.pl/og-image.jpg",
           "datePublished": "2025-02-15T09:00:00Z",
           "dateModified": "2025-04-01T14:30:00Z",
           "author": {
@@ -148,12 +148,12 @@ export default function BlogStronaInternetowaOdZera() {
             "name": "fotz.pl",
             "logo": {
               "@type": "ImageObject",
-              "url": "https://fotz.pl/logo.png"
+              "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
             }
           },
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https://fotz.pl/blog/strona-internetowa-dla-malej-firmy"
+            "@id": "https://www.fotz-studio.pl/blog/strona-internetowa-dla-malej-firmy"
           }
         }}
 
@@ -489,10 +489,10 @@ export default function BlogStronaInternetowaOdZera() {
             Zapraszamy na bezpłatną konsultację. Opowiemy Ci, jak możemy pomóc Twojemu biznesowi.
           </p>
           
-          <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition inline-flex items-center gap-2">
+          <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-slate-100 transition inline-flex items-center gap-2">
             Zaplanuj konsultację
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
         </div>
       </section>
 

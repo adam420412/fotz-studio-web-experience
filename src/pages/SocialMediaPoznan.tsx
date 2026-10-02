@@ -110,7 +110,7 @@ export default function SocialMediaPoznan() {
       <SEOHead
         title="Social Media Poznań — Obsługa i Prowadzenie Social Media"
         description="Obsługa social media Poznań — prowadzenie Facebooka, Instagrama, LinkedIn dla firm z Poznania. Content, kampanie reklamowe, analityka. Fotz Studio."
-        canonical="https://fotz.pl/social-media/poznan"
+        canonical="https://www.fotz-studio.pl/social-media/poznan"
         keywords="agencja social media poznań, obsługa social media poznań, prowadzenie fanpage poznań, social media marketing poznań, facebook ads poznań"
       />
       <ServiceSchema
@@ -120,9 +120,9 @@ export default function SocialMediaPoznan() {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Social Media", url: "https://fotz.pl/social-media/obsluga" },
-          { name: "Social Media Poznań", url: "https://fotz.pl/social-media/poznan" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Social Media", url: "https://www.fotz-studio.pl/social-media/obsluga" },
+          { name: "Social Media Poznań", url: "https://www.fotz-studio.pl/social-media/poznan" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
@@ -567,7 +567,7 @@ export default function SocialMediaPoznan() {
               <Link to="/social-media" className="text-primary hover:underline font-medium text-sm">→ Social media</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
               <Link to="/performance-marketing" className="text-primary hover:underline font-medium text-sm">→ Performance marketing</Link>
-              <Link to="/agencja-marketingowa-poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
+              <Link to="/agencja-marketingowa/poznan" className="text-primary hover:underline font-medium text-sm">→ Agencja marketingowa Poznań</Link>
             </div>
           </motion.div>
         </div>

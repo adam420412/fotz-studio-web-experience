@@ -91,21 +91,21 @@ export default function BlogPocCoToJest() {
       <SEOHead
         title="POC (Proof of Concept) — co to jest w sprzedaży B2B? | Fotz.pl"
         description="POC w sprzedaży B2B — czym różni się od pilota i triala, jak zarządzać POC, success criteria i timeline. Kompletny przewodnik dla handlowców enterprise."
-        canonical="https://fotz.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
+        canonical="https://www.fotz-studio.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
 
         keywords="POC (Proof of Concept) co to jest, POC (Proof of Concept) definicja, czym jest POC (Proof of Concept), POC (Proof of Concept) w sprzedaży, POC (Proof of Concept) strategia, POC (Proof of Concept) przykłady, jak używać POC (Proof of Concept)"
       />
       <ArticleSchema
         title="POC (Proof of Concept) — co to jest w sprzedaży B2B?"
         description="Kompletny przewodnik po POC w sprzedaży B2B: typy, success criteria, timeline i zarządzanie."
-        url="https://fotz.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
+        url="https://www.fotz-studio.pl/blog/poc-proof-of-concept-sprzedaz-b2b"
         datePublished="2024-02-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "POC — Proof of Concept", url: "https://fotz.pl/blog/poc-proof-of-concept-sprzedaz-b2b" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "POC — Proof of Concept", url: "https://www.fotz-studio.pl/blog/poc-proof-of-concept-sprzedaz-b2b" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 px-4">

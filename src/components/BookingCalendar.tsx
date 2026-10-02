@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { format, addDays, startOfWeek, isSameDay, isWeekend, isBefore, startOfDay } from "date-fns";
 import { pl } from "date-fns/locale";
 import { ChevronLeft, ChevronRight, Clock, Calendar, CheckCircle, Loader2, User, Mail, Phone, Building, MessageSquare } from "lucide-react";
@@ -39,7 +39,9 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   const [step, setStep] = useState<"date" | "form" | "success">("date");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [bookedSlots, setBookedSlots] = useState<BookedSlot[]>([]);
-  const [isLoadingSlots, setIsLoadingSlots] = useState(false);
+  const [isLoadingSlots, setIsLoadingSlots] = useState(true);
+  const [slotsError, setSlotsError] = useState(false);
+  const slotsRequest = useRef(0);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -55,24 +57,35 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
 
   // Fetch booked slots for the current week
   const fetchBookedSlots = useCallback(async () => {
+    const request = ++slotsRequest.current;
     setIsLoadingSlots(true);
+    setSlotsError(false);
     const startDate = format(currentWeekStart, "yyyy-MM-dd");
     const endDate = format(addDays(currentWeekStart, 6), "yyyy-MM-dd");
 
-    const { data, error } = await supabase
+    try {
+      const { data, error } = await supabase
       .from('bookings')
       .select('booking_date, booking_time')
       .gte('booking_date', startDate)
       .lte('booking_date', endDate)
       .in('status', ['pending', 'confirmed']);
 
-    if (!error && data) {
+    if (request !== slotsRequest.current) return;
+    if (error || !data) throw error ?? new Error("No availability data");
       setBookedSlots(data.map(b => ({ 
         date: b.booking_date, 
         time: b.booking_time.substring(0, 5) // Ensure format "HH:MM"
       })));
+    } catch {
+      if (request === slotsRequest.current) {
+        setBookedSlots([]);
+        setSlotsError(true);
+        setSelectedTime(null);
+      }
+    } finally {
+      if (request === slotsRequest.current) setIsLoadingSlots(false);
     }
-    setIsLoadingSlots(false);
   }, [currentWeekStart]);
 
   useEffect(() => {
@@ -84,11 +97,22 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     return bookedSlots.some(slot => slot.date === dateStr && slot.time === time);
   };
 
+  const isSlotPast = (date: Date, time: string) => {
+    const [hours, minutes] = time.split(":").map(Number);
+    const slot = new Date(date);
+    slot.setHours(hours, minutes, 0, 0);
+    return slot <= new Date();
+  };
+
   const handlePrevWeek = () => {
+    setSelectedDate(null);
+    setSelectedTime(null);
     setCurrentWeekStart(addDays(currentWeekStart, -7));
   };
 
   const handleNextWeek = () => {
+    setSelectedDate(null);
+    setSelectedTime(null);
     setCurrentWeekStart(addDays(currentWeekStart, 7));
   };
 
@@ -103,7 +127,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   };
 
   const handleContinue = () => {
-    if (selectedDate && selectedTime) {
+    if (selectedDate && selectedTime && !isLoadingSlots && !slotsError && !isSlotPast(selectedDate, selectedTime)) {
       setStep("form");
     }
   };
@@ -111,6 +135,11 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormErrors({});
+
+    if (!selectedDate || !selectedTime || slotsError || isLoadingSlots || isSlotPast(selectedDate, selectedTime)) {
+      setFormErrors({ general: "Wybierz ponownie dostępny termin konsultacji." });
+      return;
+    }
 
     const result = bookingSchema.safeParse(formData);
     if (!result.success) {
@@ -141,7 +170,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
         });
 
       if (dbError) {
-        console.error("Database error:", dbError);
+        throw dbError;
       }
 
       // Send email notification via edge function
@@ -188,7 +217,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           <CheckCircle className="w-10 h-10 text-primary" />
         </div>
         <h3 className="text-2xl font-heading font-bold mb-3">
-          Konsultacja zarezerwowana!
+          Zgłoszenie konsultacji zapisane
         </h3>
         <p className="text-muted-foreground mb-2">
           Termin: <span className="font-semibold text-foreground">
@@ -196,7 +225,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           </span>
         </p>
         <p className="text-muted-foreground mb-6">
-          Wysłaliśmy potwierdzenie na adres {formData.email}
+          Termin wymaga potwierdzenia. Skontaktujemy się z Tobą na adres {formData.email}.
         </p>
         <Button variant="hero" onClick={() => { onClose?.(); if (!onClose) navigate("/"); }}>
           Zamknij
@@ -220,11 +249,13 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium mb-2">Imię i nazwisko *</label>
+              <label htmlFor="booking-name" className="block text-sm font-medium mb-2">Imię i nazwisko *</label>
               <div className="relative">
                 <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <Input
-                  value={formData.name}
+                  id="booking-name" name="name"
+                        autoComplete="name"
+                        value={formData.name}
                   onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                   placeholder="Jan Kowalski"
                   className={cn("pl-10 bg-secondary", formErrors.name && "border-destructive")}
@@ -233,12 +264,14 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
               {formErrors.name && <p className="text-xs text-destructive mt-1">{formErrors.name}</p>}
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2">Email *</label>
+              <label htmlFor="booking-email" className="block text-sm font-medium mb-2">Email *</label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <Input
                   type="email"
-                  value={formData.email}
+                  id="booking-email" name="email"
+                        autoComplete="email"
+                        value={formData.email}
                   onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                   placeholder="jan@firma.pl"
                   className={cn("pl-10 bg-secondary", formErrors.email && "border-destructive")}
@@ -250,12 +283,14 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
 
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-sm font-medium mb-2">Telefon *</label>
+              <label htmlFor="booking-phone" className="block text-sm font-medium mb-2">Telefon *</label>
               <div className="relative">
                 <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <Input
                   type="tel"
-                  value={formData.phone}
+                  id="booking-phone" name="phone"
+                        autoComplete="tel"
+                        value={formData.phone}
                   onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                   placeholder="+48 123 456 789"
                   className={cn("pl-10 bg-secondary", formErrors.phone && "border-destructive")}
@@ -264,11 +299,13 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
               {formErrors.phone && <p className="text-xs text-destructive mt-1">{formErrors.phone}</p>}
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2">Firma</label>
+              <label htmlFor="booking-company" className="block text-sm font-medium mb-2">Firma</label>
               <div className="relative">
                 <Building className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <Input
-                  value={formData.company}
+                  id="booking-company" name="company"
+                        autoComplete="organization"
+                        value={formData.company}
                   onChange={(e) => setFormData(prev => ({ ...prev, company: e.target.value }))}
                   placeholder="Nazwa firmy"
                   className="pl-10 bg-secondary"
@@ -278,11 +315,12 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-2">O czym chcesz porozmawiać?</label>
+            <label htmlFor="booking-message" className="block text-sm font-medium mb-2">O czym chcesz porozmawiać?</label>
             <div className="relative">
               <MessageSquare className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
               <Textarea
-                value={formData.message}
+                id="booking-message" name="message"
+                        value={formData.message}
                 onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
                 placeholder="Opisz krótko, czego dotyczy Twoje zapytanie..."
                 className="pl-10 bg-secondary min-h-[100px] resize-none"
@@ -319,19 +357,19 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
     <div className="space-y-6">
       {/* Week navigation */}
       <div className="flex items-center justify-between">
-        <Button variant="outline" size="icon" onClick={handlePrevWeek}>
+        <Button variant="outline" size="icon" onClick={handlePrevWeek} aria-label="Poprzedni tydzień">
           <ChevronLeft className="w-4 h-4" />
         </Button>
-        <span className="font-medium">
-          {format(currentWeekStart, "MMMM yyyy", { locale: pl })}
+        <span className="font-medium text-sm text-center px-2" aria-live="polite">
+          {format(currentWeekStart, "d MMM", { locale: pl })} – {format(addDays(currentWeekStart, 6), "d MMM yyyy", { locale: pl })}
         </span>
-        <Button variant="outline" size="icon" onClick={handleNextWeek}>
+        <Button variant="outline" size="icon" onClick={handleNextWeek} aria-label="Następny tydzień">
           <ChevronRight className="w-4 h-4" />
         </Button>
       </div>
 
       {/* Days grid */}
-      <div className="grid grid-cols-7 gap-2">
+      <div className="grid grid-cols-4 min-[400px]:grid-cols-7 gap-2">
         {weekDays.map((day) => {
           const isDisabled = isWeekend(day) || isBefore(day, today);
           const isSelected = selectedDate && isSameDay(day, selectedDate);
@@ -339,6 +377,8 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
           return (
             <button
               key={day.toISOString()}
+              aria-label={format(day, "EEEE, d MMMM yyyy", { locale: pl })}
+              aria-pressed={Boolean(isSelected)}
               onClick={() => handleDateSelect(day)}
               disabled={isDisabled}
               className={cn(
@@ -360,6 +400,11 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
       </div>
 
       {/* Time slots */}
+      {slotsError && (
+        <p role="alert" className="text-sm text-destructive">
+          Nie udało się sprawdzić dostępnych terminów. <button type="button" className="underline font-medium" onClick={fetchBookedSlots}>Spróbuj ponownie</button> lub <a href="tel:+48790814814" className="underline">zadzwoń do nas</a>.
+        </p>
+      )}
       {selectedDate && (
         <div className="space-y-3">
           <h4 className="font-medium flex items-center gap-2">
@@ -367,19 +412,21 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
             Wybierz godzinę
             {isLoadingSlots && <Loader2 className="w-3 h-3 animate-spin text-muted-foreground" />}
           </h4>
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
             {timeSlots.map((time) => {
               const isBooked = isSlotBooked(selectedDate, time);
+              const isUnavailable = isBooked || isSlotPast(selectedDate, time) || isLoadingSlots || slotsError;
               return (
                 <button
                   key={time}
-                  onClick={() => !isBooked && handleTimeSelect(time)}
-                  disabled={isBooked}
+                  onClick={() => !isUnavailable && handleTimeSelect(time)}
+                  disabled={isUnavailable}
+                  aria-pressed={selectedTime === time}
                   className={cn(
                     "py-2 px-3 rounded-lg text-sm font-medium transition-all relative",
-                    isBooked && "opacity-40 cursor-not-allowed bg-muted line-through",
-                    !isBooked && selectedTime === time && "bg-primary text-primary-foreground",
-                    !isBooked && selectedTime !== time && "bg-secondary hover:bg-secondary/80"
+                    isUnavailable && "opacity-40 cursor-not-allowed bg-muted line-through",
+                    !isUnavailable && selectedTime === time && "bg-primary text-primary-foreground",
+                    !isUnavailable && selectedTime !== time && "bg-secondary hover:bg-secondary/80"
                   )}
                 >
                   {time}
@@ -401,7 +448,7 @@ export function BookingCalendar({ onClose }: BookingCalendarProps) {
       <Button
         variant="hero"
         className="w-full"
-        disabled={!selectedDate || !selectedTime}
+        disabled={!selectedDate || !selectedTime || isLoadingSlots || slotsError}
         onClick={handleContinue}
       >
         Dalej

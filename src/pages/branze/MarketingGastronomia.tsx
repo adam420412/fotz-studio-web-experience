@@ -98,7 +98,7 @@ const MarketingGastronomia = () => {
       <SEOHead
         title="Marketing dla Gastronomii | Restauracje, Kawiarnie, Catering | Fotz Studio"
         description="Marketing dla restauracji i gastronomii - fotografia kulinarna, social media, systemy rezerwacji online. Zwiększ liczbę gości w lokalu."
-        canonical="https://fotz.pl/dla-kogo/gastronomia"
+        canonical="https://www.fotz-studio.pl/dla-kogo/gastronomia"
         keywords="marketing restauracji, marketing gastronomia, agencja marketingowa restauracja, reklama restauracji, social media restauracja, fotografia kulinarna, marketing cateringu, kampanie facebook restauracja"
       />
 
@@ -109,9 +109,9 @@ const MarketingGastronomia = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Gastronomia", url: "https://fotz.pl/dla-kogo/gastronomia" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Gastronomia", url: "https://www.fotz-studio.pl/dla-kogo/gastronomia" },
         ]}
       />
       <FAQSchema items={faqItems} />

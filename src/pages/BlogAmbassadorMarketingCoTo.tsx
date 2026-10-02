@@ -68,8 +68,8 @@ export default function BlogAmbassadorMarketingCoTo() {
     <>
       <SEOHead
         title="Ambassador Marketing — co to jest? Program ambasadorów marki"
-        description="Ambassador marketing co to jest — wyjaśniamy czym są programy ambasadorskie, różnica vs influencer marketing, typy ambasadorów, KPI i jak zbudować program…"
-        canonical="https://fotz.pl/blog/ambassador-marketing-co-to"
+        description="Czym jest ambassador marketing, typy ambasadorów (customer, employee, partner), różnica vs influencer marketing, KPI i budowanie programu ambasadorskiego."
+        canonical="https://www.fotz-studio.pl/blog/ambassador-marketing-co-to"
 
         keywords="Ambassador Marketing co to jest, Ambassador Marketing definicja, czym jest Ambassador Marketing, Ambassador Marketing w marketingu, Ambassador Marketing przykłady, jak działa Ambassador Marketing, Ambassador Marketing strategia"
       />
@@ -78,7 +78,7 @@ export default function BlogAmbassadorMarketingCoTo() {
         description="Czym jest ambassador marketing, typy ambasadorów (customer, employee, partner), różnica vs influencer marketing, KPI i budowanie programu ambasadorskiego."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/ambassador-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/ambassador-marketing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

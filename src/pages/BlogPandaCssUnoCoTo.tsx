@@ -13,7 +13,7 @@ const faqItems = [
   },
   {
     question: "UnoCSS — atomic CSS engine i porównanie z Tailwind?",
-    answer: "UnoCSS: atomic CSS engine (nie framework). Anthony Fu (Vite). Ekstremalnie szybki (on-demand). Konfigurowalny. Presets = frameworki CSS. Instalacja Vite: npm install -D unocss. vite.config.ts: import UnoCSS from 'unocss/vite'. plugins: [UnoCSS()]. main.ts: import 'virtual:uno.css'. Presets: @unocss/preset-uno — Tailwind/Windi kompatybilny. @unocss/preset-attributify — px-4 jako atrybut. @unocss/preset-icons — ikony przez Iconify. @unocss/preset-typography — prose klasy. @unocss/preset-wind — Tailwind v3 kompatybilny. @unocss/preset-mini — minimalne. Attributify mode: div text-center p-4 m-2 — atrybuty zamiast class. Brak class= za każdym razem. Tagify mode: text-xl + div — tagi jako style. Custom rules: rules: [['m-1', {margin: '0.25rem'}], [/^m-(\d+)$/, ([, d]) => ({margin: d + 'px'})]]. Custom shortcuts: shortcuts: {'btn': 'px-4 py-2 rounded cursor-pointer', 'btn-primary': 'btn bg-blue-500 text-white'}. Icons: i-mdi-home. i-logos-vue. Iconify — 100k+ ikon. Zero JS runtime dla ikon (CSS). Pure CSS ikony. Transformer: @unocss/transformer-directives — @apply działa. @unocss/transformer-variant-group — group:hover:(text-red bg-blue). CDN usage: script src='https://cdn.jsdelivr.net/npm/@unocss/runtime'. Zero build. Rychly prototyp. VS Tailwind: UnoCSS jest szybszy (Vite plugin). Bardziej konfigurowalny. Tailwind — większy ekosystem, IntelliSense lepszy.",
+    answer: "UnoCSS: atomic CSS engine (nie framework). Anthony Fu (Vite). Ekstremalnie szybki (on-demand). Konfigurowalny. Presets = frameworki CSS. Instalacja Vite: npm install -D unocss. vite.config.ts: import UnoCSS from 'unocss/vite'. plugins: [UnoCSS()]. main.ts: import 'virtual:uno.css'. Presets: @unocss/preset-uno — Tailwind/Windi kompatybilny. @unocss/preset-attributify — px-4 jako atrybut. @unocss/preset-icons — ikony przez Iconify. @unocss/preset-typography — prose klasy. @unocss/preset-wind — Tailwind v3 kompatybilny. @unocss/preset-mini — minimalne. Attributify mode: div text-center p-4 m-2 — atrybuty zamiast class. Brak class= za każdym razem. Tagify mode: text-xl + div — tagi jako style. Custom rules: rules: [['m-1', {margin: '0.25rem'}], [/^m-(\\d+)$/, ([, d]) => ({margin: d + 'px'})]]. Custom shortcuts: shortcuts: {'btn': 'px-4 py-2 rounded cursor-pointer', 'btn-primary': 'btn bg-blue-500 text-white'}. Icons: i-mdi-home. i-logos-vue. Iconify — 100k+ ikon. Zero JS runtime dla ikon (CSS). Pure CSS ikony. Transformer: @unocss/transformer-directives — @apply działa. @unocss/transformer-variant-group — group:hover:(text-red bg-blue). CDN usage: script src='https://cdn.jsdelivr.net/npm/@unocss/runtime'. Zero build. Rychly prototyp. VS Tailwind: UnoCSS jest szybszy (Vite plugin). Bardziej konfigurowalny. Tailwind — większy ekosystem, IntelliSense lepszy.",
   },
   {
     question: "Open Props — CSS Variables design system gotowy do użycia?",
@@ -43,22 +43,22 @@ export default function BlogPandaCssUnoCoTo() {
     <Layout>
       <SEOHead
         title="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX"
-        description="Atomic CSS 2024: Panda CSS (zero-runtime TypeScript), UnoCSS (engine + presety), Open Props (gotowe tokeny), Vanilla Extract (CSS Modules TS) i StyleX…"
-        canonical="https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
+        description="6 CSS frameworków (Tailwind/UnoCSS/Panda CSS/Vanilla Extract/StyleX/Open Props) — zero-runtime, atomic CSS, TypeScript DX, design tokens i kiedy wybrać w 2024."
+        canonical="https://www.fotz-studio.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
 
         keywords="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX co to jest, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX definicja, czym jest Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX przykłady, jak działa Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX znaczenie, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX przewodnik"
       />
       <ArticleSchema
         title="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX — atomic CSS 2024?"
         description="6 CSS frameworków (Tailwind/UnoCSS/Panda CSS/Vanilla Extract/StyleX/Open Props) — zero-runtime, atomic CSS, TypeScript DX, design tokens i kiedy wybrać w 2024."
-        url="https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
+        url="https://www.fotz-studio.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
         datePublished="2024-07-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Atomic CSS 2024", url: "https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Atomic CSS 2024", url: "https://www.fotz-studio.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-rose-950 text-white py-20 px-4">

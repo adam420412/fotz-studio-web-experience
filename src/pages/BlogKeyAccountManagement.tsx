@@ -53,21 +53,21 @@ export default function BlogKeyAccountManagement() {
       <SEOHead
         title="Key Account Management (KAM) — co to jest? | Fotz.pl"
         description="Key Account Management (KAM) — zarządzanie kluczowymi klientami, różnica AE vs KAM, Account Plan, metryki i jak wybrać Key Accounts. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/key-account-management-kam-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/key-account-management-kam-co-to-jest"
 
         keywords="Key Account Management (KAM) co to jest, Key Account Management (KAM) definicja, czym jest Key Account Management (KAM), Key Account Management (KAM) przykłady, jak działa Key Account Management (KAM), Key Account Management (KAM) znaczenie, Key Account Management (KAM) przewodnik"
       />
       <ArticleSchema
         title="Key Account Management (KAM) — co to jest?"
         description="Kompletny przewodnik po KAM: selekcja Key Accounts, Account Plan, AE vs KAM i metryki sukcesu."
-        url="https://fotz.pl/blog/key-account-management-kam-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/key-account-management-kam-co-to-jest"
         datePublished="2024-02-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Key Account Management", url: "https://fotz.pl/blog/key-account-management-kam-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Key Account Management", url: "https://www.fotz-studio.pl/blog/key-account-management-kam-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">

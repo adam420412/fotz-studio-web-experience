@@ -162,7 +162,7 @@ export default function FacebookAdsGdynia() {
         <SEOHead
           title="Agencja Facebook Ads Gdynia — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Gdynia ✓ Kampanie Meta Ads dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/facebook-ads/gdynia"
+          canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/gdynia"
         keywords="facebook ads gdynia, meta ads gdynia, reklamy facebook gdynia, agencja facebook ads gdynia, kampanie facebook gdynia, instagram ads gdynia, facebook ads dla firm gdynia, reklama na facebooku gdynia, meta ads agencja gdynia, facebook ads cennik gdynia"
         />
 
@@ -173,10 +173,10 @@ export default function FacebookAdsGdynia() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-            { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-            { name: "Gdynia", url: "https://fotz.pl/performance-marketing/facebook-ads/gdynia" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+            { name: "Gdynia", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/gdynia" },
           ]}/>
 
         <FAQSchema items={faqItems} />
@@ -186,7 +186,7 @@ export default function FacebookAdsGdynia() {
             { name: "Strona główna", url: "/" },
             { name: "Performance Marketing", url: "/performance-marketing" },
             { name: "Facebook Ads", url: "/performance-marketing/facebook-ads" },
-            { name: "Gdynia", url: "https://fotz.pl" },
+            { name: "Gdynia", url: "https://www.fotz-studio.pl" },
           ]}/>
 
         {/* Hero Section */}

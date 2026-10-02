@@ -96,22 +96,22 @@ export default function BlogDataStorytellingCoTo() {
     <Layout>
       <SEOHead
         title="Data Storytelling — co to jest? Opowiadanie historii z danych"
-        description="Data storytelling — definicja, 3 elementy (dane, wizualizacja, narracja), typy wykresów i 6-krokowy proces. Jak skutecznie komunikować dane i analizy w…"
-        canonical="https://fotz.pl/blog/data-storytelling-co-to"
+        description="Kompletny przewodnik po data storytelling: trifecta danych-wizualizacji-narracji, dobór wykresów i 6-krokowy proces."
+        canonical="https://www.fotz-studio.pl/blog/data-storytelling-co-to"
 
         keywords="Data Storytelling co to jest, Data Storytelling definicja, czym jest Data Storytelling, Data Storytelling przykłady, jak działa Data Storytelling, Data Storytelling znaczenie, Data Storytelling przewodnik"
       />
       <ArticleSchema
         title="Data Storytelling — co to jest i jak stosować?"
         description="Kompletny przewodnik po data storytelling: trifecta danych-wizualizacji-narracji, dobór wykresów i 6-krokowy proces."
-        url="https://fotz.pl/blog/data-storytelling-co-to"
+        url="https://www.fotz-studio.pl/blog/data-storytelling-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Data Storytelling", url: "https://fotz.pl/blog/data-storytelling-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Data Storytelling", url: "https://www.fotz-studio.pl/blog/data-storytelling-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -119,7 +119,7 @@ export default function BlogDataStorytellingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Data Storytelling", url: "https://fotz.pl" },
+              { name: "Data Storytelling", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Data Storytelling — co to jest i jak stosować?

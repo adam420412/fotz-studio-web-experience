@@ -44,21 +44,21 @@ export default function BlogTailwindShadcnCoTo() {
       <SEOHead
         title="Tailwind CSS, shadcn/ui, Radix UI, Mantine | Fotz Studio"
         description="Tailwind CSS v4, shadcn/ui, Radix UI, Mantine, MUI — porównanie bibliotek UI React, utility-first vs CSS-in-JS, headless components i kiedy co wybrać."
-        canonical="https://fotz.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024"
 
         keywords="Tailwind CSS, shadcn/ui, Radix UI, Mantine co to jest, Tailwind CSS, shadcn/ui, Radix UI, Mantine jak działa, Tailwind CSS, shadcn/ui, Radix UI, Mantine tutorial, Tailwind CSS, shadcn/ui, Radix UI, Mantine przykład, czym jest Tailwind CSS, shadcn/ui, Radix UI, Mantine, Tailwind CSS, shadcn/ui, Radix UI, Mantine dokumentacja, Tailwind CSS, shadcn/ui, Radix UI, Mantine przewodnik"
       />
       <ArticleSchema
         title="Tailwind CSS, shadcn/ui, Radix UI, Mantine — biblioteki UI React 2024?"
         description="6 UI libraries (Tailwind/shadcn/Mantine/MUI/Chakra/Ant Design) — utility-first, headless components, ARIA dostępność, CSS-in-JS vs zero-runtime, kiedy co wybrać."
-        url="https://fotz.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024"
+        url="https://www.fotz-studio.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Tailwind CSS i shadcn/ui", url: "https://fotz.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Tailwind CSS i shadcn/ui", url: "https://www.fotz-studio.pl/blog/tailwind-css-shadcn-ui-radix-mantine-biblioteki-ui-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">

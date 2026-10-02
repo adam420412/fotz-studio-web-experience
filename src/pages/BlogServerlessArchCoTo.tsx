@@ -50,23 +50,23 @@ export default function BlogServerlessArchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Architektura Serverless | Fotz Studio"
+        title="Architektura Serverless — co to jest, AWS Lambda, Cloud Run, Step Functions?"
         description="Serverless: AWS Lambda, Google Cloud Run, Azure Functions, Step Functions, cold starts, event-driven patterns i optymalizacja kosztów — kompletny przewodnik."
-        canonical="https://fotz.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions"
+        canonical="https://www.fotz-studio.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions"
 
         keywords="Architektura Serverless co to jest, Architektura Serverless jak działa, Architektura Serverless tutorial, Architektura Serverless przykład, czym jest Architektura Serverless, Architektura Serverless dokumentacja, Architektura Serverless przewodnik"
       />
       <ArticleSchema
         title="Architektura Serverless — co to jest, AWS Lambda, Cloud Run, Step Functions?"
         description="Serverless: 5 platform, 6 wzorców, AWS Lambda triggers, Cloud Run containers, cold start optymalizacja i event-driven workflows ze Step Functions."
-        url="https://fotz.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions"
+        url="https://www.fotz-studio.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions"
         datePublished="2024-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Serverless", url: "https://fotz.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Serverless", url: "https://www.fotz-studio.pl/blog/architektura-serverless-co-to-jest-aws-lambda-cloud-run-step-functions" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-amber-950 text-white py-20 px-4">

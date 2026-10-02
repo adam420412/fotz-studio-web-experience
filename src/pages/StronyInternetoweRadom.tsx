@@ -89,12 +89,12 @@ const StronyInternetoweRadom = () => {
       <SEOHead
         title="Strony Internetowe Radom | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Radom — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Radomia. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/radom"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/radom"
         keywords="strony internetowe radom, tworzenie stron radom, strony www radom, projektowanie stron radom"
       />
       
       <ServiceSchema name="Strony Internetowe Radom" description="Profesjonalne tworzenie stron internetowych dla firm z Radomia." provider="FOTZ Studio" areaServed="Radom" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Radom", url: "https://fotz.pl/uslugi/strony-internetowe/radom" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Radom", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/radom" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

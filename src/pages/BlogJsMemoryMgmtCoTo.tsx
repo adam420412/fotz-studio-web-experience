@@ -42,23 +42,23 @@ export default function BlogJsMemoryMgmtCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="JavaScript Memory Management | Fotz Studio"
-        description="JavaScript Memory Management: Garbage Collection (Mark and Sweep), WeakMap/WeakSet (słabe referencje), WeakRef, FinalizationRegistry, memory leaks w React…"
-        canonical="https://fotz.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
+        title="JavaScript Memory Management — WeakMap, WeakRef, GC i memory leaks w React 2024?"
+        description="6 konceptów JavaScript memory (Mark-Sweep GC/WeakMap/WeakSet/WeakRef/FinalizationRegistry/Hidden Classes) — memory leaks w React, V8 optymalizacje i narzędzia."
+        canonical="https://www.fotz-studio.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
 
         keywords="JavaScript Memory Management co to jest, JavaScript Memory Management jak działa, JavaScript Memory Management tutorial, JavaScript Memory Management przykład, czym jest JavaScript Memory Management, JavaScript Memory Management dokumentacja, JavaScript Memory Management przewodnik"
       />
       <ArticleSchema
         title="JavaScript Memory Management — WeakMap, WeakRef, GC i memory leaks w React 2024?"
         description="6 konceptów JavaScript memory (Mark-Sweep GC/WeakMap/WeakSet/WeakRef/FinalizationRegistry/Hidden Classes) — memory leaks w React, V8 optymalizacje i narzędzia."
-        url="https://fotz.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
+        url="https://www.fotz-studio.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "JS Memory Management", url: "https://fotz.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "JS Memory Management", url: "https://www.fotz-studio.pl/blog/javascript-memory-management-weakmap-weakref-gc-memory-leaks-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">

@@ -88,9 +88,9 @@ export default function AgencjaMarketingowaOlsztyn() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Marketingowa Olsztyn | fotz.pl – Marketing dla firm"
+          title="Agencja Marketingowa Olsztyn | FOTZ Studio – Marketing dla firm"
           description="Agencja marketingowa w Olsztynie. Marketing online dla firm z Warmii i Mazur. Sezonowy marketing turystyczny. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa-olsztyn"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa-olsztyn"
           keywords="agencja marketingowa Olsztyn, marketing Olsztyn, agencja SEO Olsztyn, turystyka Mazury, hotel marketing"
         />
 
@@ -101,8 +101,8 @@ export default function AgencjaMarketingowaOlsztyn() {
           areaServed="Olsztyn"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Olsztyn", url: "https://fotz.pl/agencja-marketingowa-olsztyn" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja Marketingowa Olsztyn", url: "https://www.fotz-studio.pl/agencja-marketingowa-olsztyn" }
           ]}/>
         <FAQSchema items={faqItems} />
 
@@ -408,7 +408,7 @@ export default function AgencjaMarketingowaOlsztyn() {
                 { label: "Pozycjonowanie Olsztyn", to: "/uslugi/pozycjonowanie/olsztyn" },
                 { label: "Agencja marketingowa Opole", to: "/agencja-marketingowa-opole" },
                 { label: "Pozycjonowanie Opole", to: "/uslugi/pozycjonowanie/opole" },
-                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
+                { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
               ].map((link) => (
                 <Link
                   key={link.to}

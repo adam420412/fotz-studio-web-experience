@@ -43,22 +43,22 @@ export default function BlogReactThreeFiberCoTo() {
     <Layout>
       <SEOHead
         title="React Three Fiber, Drei i 3D w React | Fotz Studio"
-        description="@react-three/fiber (JSX dla Three.js), @react-three/drei (OrbitControls, GLTF, Text), Rapier fizyka, postprocessing (Bloom, DOF), VR/AR z @react-three/xr…"
-        canonical="https://fotz.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024"
+        description="6 narzędzi 3D (R3F/Drei/Rapier/postprocessing/XR/Babylon.js) — JSX dla Three.js, OrbitControls, GLTF loading, Rapier fizyka, Bloom/DOF effects i VR/AR."
+        canonical="https://www.fotz-studio.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024"
 
         keywords="React Three Fiber, Drei i 3D w React co to jest, React Three Fiber, Drei i 3D w React jak działa, React Three Fiber, Drei i 3D w React tutorial, React Three Fiber, Drei i 3D w React przykład, czym jest React Three Fiber, Drei i 3D w React, React Three Fiber, Drei i 3D w React dokumentacja, React Three Fiber, Drei i 3D w React przewodnik"
       />
       <ArticleSchema
         title="React Three Fiber, Drei i 3D w React — Three.js, fizyka i WebXR 2024?"
         description="6 narzędzi 3D (R3F/Drei/Rapier/postprocessing/XR/Babylon.js) — JSX dla Three.js, OrbitControls, GLTF loading, Rapier fizyka, Bloom/DOF effects i VR/AR."
-        url="https://fotz.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024"
+        url="https://www.fotz-studio.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Three Fiber 3D", url: "https://fotz.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Three Fiber 3D", url: "https://www.fotz-studio.pl/blog/react-three-fiber-drei-3d-threejs-fizyka-webxr-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-indigo-950 text-white py-20 px-4">

@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -34,23 +35,23 @@ export default function BlogBudzetMarketingowy() {
     <Layout>
       <SEOHead
         title="Budżet Marketingowy — Jak Zaplanować Wydatki na Marketing Firmy?"
-        description="Budżet marketingowy firmy — ile wydawać na marketing, jak podzielić budżet między kanały i mierzyć ROI. Praktyczny przewodnik planowania wydatków…"
+        description="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik dla MŚP."
         ogType="article"
-        canonical="https://fotz.pl/blog/budzet-marketingowy-planowanie"
+        canonical="https://www.fotz-studio.pl/blog/budzet-marketingowy-planowanie"
         keywords="budżet marketingowy, planowanie budżetu, wydatki na marketing, ROI marketing, koszty reklamy"
       />
       <ArticleSchema
         title="Budżet marketingowy - jak zaplanować wydatki na marketing 2025"
         description="Jak zaplanować budżet marketingowy? Podział na kanały, ROI, benchmarki branżowe. Praktyczny poradnik dla MŚP."
-        url="https://fotz.pl/blog/budzet-marketingowy-planowanie"
+        url="https://www.fotz-studio.pl/blog/budzet-marketingowy-planowanie"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Budżet marketingowy", url: "https://fotz.pl/blog/budzet-marketingowy-planowanie" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Budżet marketingowy", url: "https://www.fotz-studio.pl/blog/budzet-marketingowy-planowanie" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -419,12 +420,8 @@ export default function BlogBudzetMarketingowy() {
             <div className="flex items-center justify-between py-8 border-t border-border mt-12">
               <div className="flex items-center gap-4">
                 <span className="text-muted-foreground">Udostępnij:</span>
-                <Button variant="outline" size="icon">
-                  <Share2 className="w-4 h-4" />
-                </Button>
-                <Button variant="outline" size="icon">
-                  <Bookmark className="w-4 h-4" />
-                </Button>
+                <CopyArticleLinkButton />
+
               </div>
             </div>
           </div>

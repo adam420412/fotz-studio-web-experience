@@ -26,8 +26,8 @@ const SEOCopywriting = () => {
     <>
       <SEOHead
         title="SEO Copywriting — Pisanie Tekstów pod SEO i Pozycjonowanie"
-        description="SEO copywriting — tworzenie treści zoptymalizowanych pod wyszukiwarki: artykuły SEO, opisy produktów, teksty na stronę. Pisanie tekstów dla Google i…"
-        canonical="https://fotz.pl/seo/copywriting-seo"
+        description="SEO copywriting — tworzenie treści zoptymalizowanych pod wyszukiwarki: artykuły SEO, opisy produktów, teksty na stronę. Pisanie tekstów dla Google i użytkowników, które odpowiadają na intencje wyszukiwania."
+        canonical="https://www.fotz-studio.pl/seo/copywriting-seo"
         keywords="seo copywriting, copywriting seo, pisanie tekstów seo, treści pod seo, optymalizacja tekstów, content marketing seo, artykuły seo, blogi seo, pisanie contentu seo, copywriter seo"
       />
       <ServiceSchema
@@ -37,9 +37,9 @@ const SEOCopywriting = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Copywriting SEO", url: "https://fotz.pl/seo/copywriting-seo" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Copywriting SEO", url: "https://www.fotz-studio.pl/seo/copywriting-seo" }
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
@@ -127,7 +127,7 @@ const SEOCopywriting = () => {
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/seo/pozycjonowanie" className="text-primary hover:underline font-medium text-sm">→ Pozycjonowanie stron</Link>
               <Link to="/content-marketing" className="text-primary hover:underline font-medium text-sm">→ Content marketing</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
             </div>
           </motion.div>

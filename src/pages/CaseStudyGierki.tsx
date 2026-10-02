@@ -80,20 +80,20 @@ const CaseStudyGierki = () => {
   return (
     <Layout>
       <SEOHead
-        title="Gierki Activity Bar Poznań | Fotz Studio"
+        title="Gierki Activity Bar - Strona z systemem rezerwacji"
         description="Case study Gierki Poznań: strona z systemem rezerwacji online, SEO, +180% rezerwacji. Fotz Studio — obecność cyfrowa lokalnego biznesu rozrywkowego."
-        canonical="https://fotz.pl/realizacje/gierki"
+        canonical="https://www.fotz-studio.pl/realizacje/gierki"
         keywords="case study facebook ads, realizacja kampanii facebook, meta ads case study"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-          { name: "Gierki", url: "https://fotz.pl/realizacje/gierki" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+          { name: "Gierki", url: "https://www.fotz-studio.pl/realizacje/gierki" }
         ]}/>
       <ArticleSchema 
         title="Gierki Activity Bar - Strona z systemem rezerwacji"
         description="Case study: strona internetowa z systemem rezerwacji online dla centrum rozrywki w Poznaniu"
-        url="https://fotz.pl/realizacje/gierki"
+        url="https://www.fotz-studio.pl/realizacje/gierki"
         datePublished="2024-01-10"
         dateModified="2026-01-09"
       />

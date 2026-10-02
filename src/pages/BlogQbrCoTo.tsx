@@ -100,22 +100,22 @@ export default function BlogQbrCoTo() {
     <Layout>
       <SEOHead
         title="QBR — co to jest? Quarterly Business Review w Customer Success"
-        description="QBR (Quarterly Business Review) — definicja, agenda 7 sekcji, kluczowe metryki, 5 błędów i różnica vs. status call. Przewodnik po kwartalnym przeglądzie…"
-        canonical="https://fotz.pl/blog/qbr-co-to"
+        description="Kompletny przewodnik po QBR: agenda 7 sekcji, metryki do pokazania, 5 błędów i jak odróżnić QBR od status calla."
+        canonical="https://www.fotz-studio.pl/blog/qbr-co-to"
 
         keywords="QBR co to jest, QBR definicja, czym jest QBR, QBR przykłady, jak działa QBR, QBR znaczenie, QBR przewodnik"
       />
       <ArticleSchema
         title="QBR — co to jest i jak przeprowadzić Quarterly Business Review?"
         description="Kompletny przewodnik po QBR: agenda 7 sekcji, metryki do pokazania, 5 błędów i jak odróżnić QBR od status calla."
-        url="https://fotz.pl/blog/qbr-co-to"
+        url="https://www.fotz-studio.pl/blog/qbr-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "QBR — Quarterly Business Review", url: "https://fotz.pl/blog/qbr-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "QBR — Quarterly Business Review", url: "https://www.fotz-studio.pl/blog/qbr-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -123,7 +123,7 @@ export default function BlogQbrCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "QBR — Quarterly Business Review", url: "https://fotz.pl" },
+              { name: "QBR — Quarterly Business Review", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             QBR — co to jest i jak przeprowadzić Quarterly Business Review?

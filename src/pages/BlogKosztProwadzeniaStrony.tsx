@@ -174,23 +174,23 @@ export default function BlogKosztProwadzeniaStrony() {
       <SEOHead
         title="Ile kosztuje utrzymanie strony internetowej? Cennik 2025"
         description="Koszt prowadzenia strony www w Polsce: 1500-15000 PLN rocznie. Tabela kosztów, porównanie własnej administracji vs agencji, FAQ. Fotz.pl"
-        canonical="https://fotz.pl/blog/koszt-prowadzenia-strony-internetowej"
+        canonical="https://www.fotz-studio.pl/blog/koszt-prowadzenia-strony-internetowej"
 
         keywords="Ile kosztuje utrzymanie strony internetowej? Cennik 2025, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 co to jest, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 jak działa, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 definicja, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 przykłady, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 poradnik, Ile kosztuje utrzymanie strony internetowej? Cennik 2025 przewodnik"
       />
       <ArticleSchema
         title="Ile kosztuje utrzymanie strony internetowej? Cennik 2025"
         description="Szczegółowy przewodnik po kosztach utrzymania strony: hosting, domena, backup, wsparcie. Porównanie własnej administracji z usługami agencji."
-        url="https://fotz.pl/blog/koszt-prowadzenia-strony-internetowej"
+        url="https://www.fotz-studio.pl/blog/koszt-prowadzenia-strony-internetowej"
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           {
             name: "Koszt prowadzenia strony internetowej",
-            url: "https://fotz.pl/blog/koszt-prowadzenia-strony-internetowej",
+            url: "https://www.fotz-studio.pl/blog/koszt-prowadzenia-strony-internetowej",
           },
         ]}/>
 

@@ -85,13 +85,13 @@ const StronyInternetoweBialystok = () => {
     <>
       <SEOHead
         title="Strony Internetowe Białystok | Fotz Studio"
-        description="Strony internetowe Białystok — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Białegostoku. Fotz…"
-        canonical="https://fotz.pl/uslugi/strony-internetowe/bialystok"
+        description="Strony internetowe Białystok — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Białegostoku. Fotz Studio tworzy strony, które pozyskują klientów."
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/bialystok"
         keywords="strony internetowe białystok, tworzenie stron białystok, strony www białystok, projektowanie stron białystok"
       />
       
       <ServiceSchema name="Strony Internetowe Białystok" description="Profesjonalne tworzenie stron internetowych dla firm z Białegostoku." provider="FOTZ Studio" areaServed="Białystok" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Białystok", url: "https://fotz.pl/uslugi/strony-internetowe/bialystok" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Białystok", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/bialystok" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

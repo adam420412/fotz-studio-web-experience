@@ -42,23 +42,23 @@ export default function BlogReact19CoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React 19 | Fotz Studio"
-        description="React 19: use() hook, useActionState, useFormStatus, useOptimistic, React Compiler (auto-memoizing), ref jako prop, Server Actions i Next.js 15 Turbopack…"
-        canonical="https://fotz.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
+        title="React 19 — use(), useActionState, React Compiler, Server Actions i Next.js 15?"
+        description="6 kluczowych nowości React 19 (use/useActionState/useFormStatus/useOptimistic/React Compiler/ref-prop) i Next.js 15 (Turbopack, PPR, async cookies/headers)."
+        canonical="https://www.fotz-studio.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
 
         keywords="React 19 co to jest, React 19 jak działa, React 19 tutorial, React 19 przykład, czym jest React 19, React 19 dokumentacja, React 19 przewodnik"
       />
       <ArticleSchema
         title="React 19 — use(), useActionState, React Compiler, Server Actions i Next.js 15?"
         description="6 kluczowych nowości React 19 (use/useActionState/useFormStatus/useOptimistic/React Compiler/ref-prop) i Next.js 15 (Turbopack, PPR, async cookies/headers)."
-        url="https://fotz.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
+        url="https://www.fotz-studio.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React 19 nowości", url: "https://fotz.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React 19 nowości", url: "https://www.fotz-studio.pl/blog/react-19-use-hook-useactionstate-compiler-server-actions-nextjs-15-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-950 text-white py-20 px-4">

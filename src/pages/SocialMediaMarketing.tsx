@@ -173,9 +173,9 @@ export default function SocialMediaMarketing() {
   return (
     <>
       <SEOHead
-        title="Social Media Marketing | Agencja Social Media | fotz.pl"
+        title="Social Media Marketing | Agencja Social Media | FOTZ Studio"
         description="Social media marketing dla firm — kompleksowa obsługa Facebook, Instagram, LinkedIn, TikTok. Strategia, content, reklamy Meta Ads. Sprawdź ofertę agencji!"
-        canonical="https://fotz.pl/uslugi/social-media-marketing"
+        canonical="https://www.fotz-studio.pl/uslugi/social-media-marketing"
         keywords="social media marketing, marketing w mediach społecznościowych, agencja social media, strategia social media, content social media, social media dla firm"
       />
       <ServiceSchema
@@ -219,8 +219,10 @@ export default function SocialMediaMarketing() {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
-                  Bezpłatna analiza social media <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
+                  <Link to="/kontakt">
+                    Bezpłatna analiza social media <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi">
                   <Button size="lg" variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800">

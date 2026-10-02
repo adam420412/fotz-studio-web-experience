@@ -98,7 +98,7 @@ const PozycjonowanieRzeszow = () => {
       <SEOHead
         title="Pozycjonowanie Rzeszów — Agencja SEO Podkarpacie | Fotz Studio"
         description="Pozycjonowanie stron Rzeszów i Podkarpacie. Agencja SEO Fotz Studio — szybkie efekty, niskie KD. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/rzeszow"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/rzeszow"
         keywords="pozycjonowanie rzeszów, agencja seo rzeszów, seo rzeszów, pozycjonowanie stron rzeszów, seo dla firm rzeszów, seo podkarpacie, pozycjonowanie lokalne rzeszów"
       />
       <ServiceSchema
@@ -108,10 +108,10 @@ const PozycjonowanieRzeszow = () => {
         areaServed="Rzeszów, Podkarpacie"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Rzeszów", url: "https://fotz.pl/uslugi/pozycjonowanie/rzeszow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Rzeszów", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/rzeszow" },
         ]}/>
       <FAQSchema items={faqItems} />
 

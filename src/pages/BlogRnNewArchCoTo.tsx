@@ -42,23 +42,23 @@ export default function BlogRnNewArchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Native New Architecture | Fotz Studio"
-        description="React Native New Architecture: JSI (C++ layer), TurboModules (lazy-loaded), Fabric Renderer, Bridgeless Mode, Reanimated 3 worklets, Expo SDK 52 i…"
-        canonical="https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
+        title="React Native New Architecture — JSI, Fabric, TurboModules, Bridgeless i Expo SDK 52?"
+        description="6 komponentów New Architecture (JSI/TurboModules/Fabric/Bridgeless/Worklets/SharedValues) — Reanimated 3, React Native Skia, MMKV, Expo SDK 52 i debugowanie."
+        canonical="https://www.fotz-studio.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
 
         keywords="React Native New Architecture co to jest, React Native New Architecture jak działa, React Native New Architecture tutorial, React Native New Architecture przykład, czym jest React Native New Architecture, React Native New Architecture dokumentacja, React Native New Architecture przewodnik"
       />
       <ArticleSchema
         title="React Native New Architecture — JSI, Fabric, TurboModules, Bridgeless i Expo SDK 52?"
         description="6 komponentów New Architecture (JSI/TurboModules/Fabric/Bridgeless/Worklets/SharedValues) — Reanimated 3, React Native Skia, MMKV, Expo SDK 52 i debugowanie."
-        url="https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
+        url="https://www.fotz-studio.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024"
         datePublished="2024-06-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "RN New Architecture", url: "https://fotz.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "RN New Architecture", url: "https://www.fotz-studio.pl/blog/react-native-new-architecture-jsi-fabric-turbomodules-bridgeless-expo-sdk-52-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">

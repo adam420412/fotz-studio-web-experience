@@ -28,7 +28,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/tiktok-dla-firm-b2b";
+const CANONICAL = "https://www.fotz-studio.pl/blog/tiktok-dla-firm-b2b";
 
 export default function BlogTiktokDlaFirmB2B() {
   return (
@@ -48,8 +48,8 @@ export default function BlogTiktokDlaFirmB2B() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "TikTok dla firmy B2B", url: CANONICAL },
         ]}
       />

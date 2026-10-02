@@ -60,26 +60,26 @@ export default function BlogSentimentAnalysisCoTo() {
       <SEOHead
         title="Analiza Sentymentu — co to jest? Sentiment Analysis w marketingu"
         description="Analiza sentymentu (sentiment analysis) — definicja, jak działa NLP, aspect-based sentiment, zastosowania w marketingu i ograniczenia. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/analiza-sentymentu-co-to"
+        canonical="https://www.fotz-studio.pl/blog/analiza-sentymentu-co-to"
 
         keywords="Analiza Sentymentu co to jest, Analiza Sentymentu definicja, czym jest Analiza Sentymentu, Analiza Sentymentu w marketingu, Analiza Sentymentu przykłady, jak działa Analiza Sentymentu, Analiza Sentymentu strategia"
       />
       <ArticleSchema
         title="Analiza Sentymentu — co to jest i jak działa sentiment analysis?"
         description="Kompletny przewodnik po analizie sentymentu: jak działa NLP, aspect-based sentiment analysis, 5 zastosowań marketingowych i ograniczenia."
-        url="https://fotz.pl/blog/analiza-sentymentu-co-to"
+        url="https://www.fotz-studio.pl/blog/analiza-sentymentu-co-to"
         datePublished="2024-02-02"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Analiza Sentymentu", url: "https://fotz.pl/blog/analiza-sentymentu-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Analiza Sentymentu", url: "https://www.fotz-studio.pl/blog/analiza-sentymentu-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Analiza Sentymentu", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Analiza Sentymentu", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Analiza Sentymentu — co to jest i jak działa?
           </h1>

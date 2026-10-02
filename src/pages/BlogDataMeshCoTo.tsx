@@ -73,23 +73,23 @@ export default function BlogDataMeshCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Data Mesh | Fotz Studio"
-        description="Data Mesh: 4 zasady (domain ownership, data as a product, self-serve platform, federated governance), porównanie z Data Lake i jak wdrożyć Data Mesh w…"
-        canonical="https://fotz.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
+        title="Data Mesh — co to jest i jak wdrożyć zdecentralizowaną architekturę danych?"
+        description="Data Mesh: 4 zasady Zhamak Dehghani, domain ownership, data as a product, self-serve platform, federated governance i porównanie z Data Lake/Warehouse."
+        canonical="https://www.fotz-studio.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
 
         keywords="Data Mesh co to jest, Data Mesh definicja, czym jest Data Mesh, Data Mesh przykłady, jak działa Data Mesh, Data Mesh znaczenie, Data Mesh przewodnik"
       />
       <ArticleSchema
         title="Data Mesh — co to jest i jak wdrożyć zdecentralizowaną architekturę danych?"
         description="Data Mesh: 4 zasady Zhamak Dehghani, domain ownership, data as a product, self-serve platform, federated governance i porównanie z Data Lake/Warehouse."
-        url="https://fotz.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
+        url="https://www.fotz-studio.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych"
         datePublished="2024-03-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Data Mesh", url: "https://fotz.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Data Mesh", url: "https://www.fotz-studio.pl/blog/data-mesh-co-to-jest-jak-wdrozyz-architekture-danych" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-slate-900 text-white py-20 px-4">

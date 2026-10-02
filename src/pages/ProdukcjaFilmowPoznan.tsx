@@ -100,9 +100,9 @@ const faqItems = [
 ];
 
 const breadcrumbItems = [
-  { name: "Strona główna", url: "https://fotz.pl" },
-  { name: "Usługi", url: "https://fotz.pl/uslugi" },
-  { name: "Produkcja filmów reklamowych Poznań", url: "https://fotz.pl/uslugi/produkcja-filmow" }
+  { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+  { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+  { name: "Produkcja filmów reklamowych Poznań", url: "https://www.fotz-studio.pl/uslugi/produkcja-filmow" }
 ];
 
 export default function ProdukcjaFilmowPoznan() {
@@ -111,7 +111,7 @@ export default function ProdukcjaFilmowPoznan() {
       <SEOHead
         title="Produkcja Filmów Poznań — Filmy Reklamowe i Wideo dla Firm"
         description="Produkcja filmów Poznań — filmy reklamowe, wideo firmowe, sesje fotograficzne i filmy na social media dla firm z Poznania. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/produkcja-filmow"
+        canonical="https://www.fotz-studio.pl/uslugi/produkcja-filmow"
         keywords="produkcja filmów poznań, filmy reklamowe poznań, film korporacyjny poznań, produkcja video poznań, studio filmowe poznań"
       />
 

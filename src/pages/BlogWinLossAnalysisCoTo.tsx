@@ -91,7 +91,7 @@ export default function BlogWinLossAnalysisCoTo() {
       <SEOHead
         title="Win/Loss Analysis — co to jest? Analiza wygranych i przegranych"
         description="Win/loss analysis co to jest — wyjaśniamy czym jest analiza wygranych i przegranych w B2B, jak przeprowadzić wywiady, analizować dane CRM i wdrażać wnioski."
-        canonical="https://fotz.pl/blog/win-loss-analysis-co-to"
+        canonical="https://www.fotz-studio.pl/blog/win-loss-analysis-co-to"
 
         keywords="Win/Loss Analysis co to jest, Win/Loss Analysis definicja, czym jest Win/Loss Analysis, Win/Loss Analysis przykłady, jak działa Win/Loss Analysis, Win/Loss Analysis znaczenie, Win/Loss Analysis przewodnik"
       />
@@ -100,7 +100,7 @@ export default function BlogWinLossAnalysisCoTo() {
         description="Czym jest win/loss analysis, proces przeprowadzania wywiadów, analiza CRM, pytania do kupujących i jak wdrażać wnioski w sprzedaży i marketingu."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/win-loss-analysis-co-to"
+        url="https://www.fotz-studio.pl/blog/win-loss-analysis-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

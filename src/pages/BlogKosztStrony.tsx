@@ -51,9 +51,9 @@ const BlogKosztStrony = () => {
     <>
       <SEOHead
         title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Aktualne Koszty"
-        description="Ile kosztuje strona internetowa w 2026? Cennik stron www: landing page od 2 000 zł, strona firmowa od 5 000 zł, sklep e-commerce od 10 000 zł. Aktualne…"
+        description="Ile kosztuje strona internetowa w 2026? Cennik stron www: landing page od 2 000 zł, strona firmowa od 5 000 zł, sklep e-commerce od 10 000 zł. Aktualne koszty, typy stron i czynniki wpływające na cenę."
         ogType="article"
-        canonical="https://fotz.pl/blog/ile-kosztuje-strona-internetowa"
+        canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
         schemaJson={[
           {
@@ -70,7 +70,7 @@ const BlogKosztStrony = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2024-12-20",
@@ -80,8 +80,8 @@ const BlogKosztStrony = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Ile kosztuje strona internetowa w 2025?" }
             ]
           },
@@ -519,7 +519,7 @@ const BlogKosztStrony = () => {
             <div className="mt-8 pt-6 border-t border-border/40 flex flex-wrap gap-x-6 gap-y-2">
               <Link to="/uslugi/strony-internetowe" className="text-primary hover:underline font-medium text-sm">→ Strony internetowe</Link>
               <Link to="/uslugi/sklepy-internetowe" className="text-primary hover:underline font-medium text-sm">→ Sklepy internetowe</Link>
-              <Link to="/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
+              <Link to="/uslugi/landing-page" className="text-primary hover:underline font-medium text-sm">→ Landing page</Link>
               <Link to="/konsultacja" className="text-primary hover:underline font-medium text-sm">→ Bezpłatna konsultacja</Link>
             </div>
             </div>

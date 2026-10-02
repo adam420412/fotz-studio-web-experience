@@ -20,9 +20,9 @@ export default function AgencjaSEOKrakow() {
   return (
     <>
       <SEOHead
-        title="Agencja SEO Kraków | Pozycjonowanie stron Kraków | fotz.pl"
+        title="Agencja SEO Kraków | Pozycjonowanie stron Kraków | FOTZ Studio"
         description="Agencja SEO Kraków — pozycjonujemy strony firm krakowskich. Wyniki Top 10 Google. Sprawdź pakiety SEO i zacznij dominować lokalnie!"
-        canonical="https://fotz.pl/agencja-seo-krakow"
+        canonical="https://www.fotz-studio.pl/agencja-seo-krakow"
         keywords="agencja seo kraków, pozycjonowanie kraków, seo kraków, agencja seo kraków cena, pozycjonowanie stron kraków, seo dla firm kraków, audyt seo kraków, optymalizacja seo kraków, pozycjonowanie lokalne kraków, link building kraków, seo techniczne kraków"
       />
       <ServiceSchema
@@ -80,9 +80,11 @@ export default function AgencjaSEOKrakow() {
               </FadeInView>
             </div>
 
-            <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
-              Bezpłatny audyt SEO
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700 text-white">
+              <Link to="/kontakt">
+                Bezpłatny audyt SEO
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
           </div>
         </motion.section>
@@ -221,12 +223,12 @@ export default function AgencjaSEOKrakow() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       variant={pkg.highlight ? "default" : "outline"}
                       className="w-full mt-8"
-                    >
+                    ><a href="/kontakt">
                       Wybierz pakiet
-                    </Button>
+                    </a></Button>
                   </div>
                 </FadeInView>
               ))}

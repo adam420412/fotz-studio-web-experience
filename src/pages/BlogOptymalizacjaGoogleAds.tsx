@@ -128,21 +128,21 @@ export default function BlogOptymalizacjaGoogleAds() {
       <SEOHead
         title="Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025"
         description="Optymalizacja Google Ads: 10 błędów przepalających budżet, Quality Score, struktury konta, metryki i benchmarki. Wyniki +40% do 3 miesięcy."
-        canonical="https://fotz.pl/blog/optymalizacja-google-ads"
+        canonical="https://www.fotz-studio.pl/blog/optymalizacja-google-ads"
 
         keywords="Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 poradnik, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 strategia, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 jak zrobić, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 marketing, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 przykłady, Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025 w Polsce"
       />
       <ArticleSchema
         title="Optymalizacja Google Ads - jak poprawić wyniki kampanii? 2025"
         description="Kompletny przewodnik optymalizacji kampanii Google Ads: metryki, Quality Score, błędy, struktura konta. Praktyczne porady które działają."
-        url="https://fotz.pl/blog/optymalizacja-google-ads"
+        url="https://www.fotz-studio.pl/blog/optymalizacja-google-ads"
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Optymalizacja Google Ads", url: "https://fotz.pl/blog/optymalizacja-google-ads" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Optymalizacja Google Ads", url: "https://www.fotz-studio.pl/blog/optymalizacja-google-ads" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-sky-900 text-white py-20 px-4">

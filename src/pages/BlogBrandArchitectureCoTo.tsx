@@ -84,28 +84,28 @@ export default function BlogBrandArchitectureCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Architektura Marki | Fotz Studio"
-        description="Architektura marki — definicja, 4 modele (Branded House, House of Brands, Endorsed Brand, Sub-brand), brand extension i jak zarządzać portfolio marek…"
-        canonical="https://fotz.pl/blog/architektura-marki-co-to"
+        title="Architektura Marki — co to jest i jak zarządzać portfolio marek?"
+        description="Kompletny przewodnik po architekturze marki: 4 modele (Branded House vs House of Brands vs Endorsed vs Sub-brand), brand extension i przykłady firm."
+        canonical="https://www.fotz-studio.pl/blog/architektura-marki-co-to"
 
         keywords="Architektura Marki co to jest, Architektura Marki definicja, czym jest Architektura Marki, Architektura Marki w marketingu, Architektura Marki przykłady, jak działa Architektura Marki, Architektura Marki strategia"
       />
       <ArticleSchema
         title="Architektura Marki — co to jest i jak zarządzać portfolio marek?"
         description="Kompletny przewodnik po architekturze marki: 4 modele (Branded House vs House of Brands vs Endorsed vs Sub-brand), brand extension i przykłady firm."
-        url="https://fotz.pl/blog/architektura-marki-co-to"
+        url="https://www.fotz-studio.pl/blog/architektura-marki-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Architektura Marki", url: "https://fotz.pl/blog/architektura-marki-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Architektura Marki", url: "https://www.fotz-studio.pl/blog/architektura-marki-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Architektura Marki", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Architektura Marki", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Architektura Marki — co to jest i jak zarządzać portfolio marek?
           </h1>

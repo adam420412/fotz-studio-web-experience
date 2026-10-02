@@ -48,23 +48,23 @@ export default function BlogFeatureFlagsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Feature Flags | Fotz Studio"
+        title="Feature Flags — co to jest, LaunchDarkly, Unleash, OpenFeature i A/B testing?"
         description="Feature Flags: typy flag, targeting, LaunchDarkly vs Unleash vs Flagsmith, OpenFeature standard, A/B testing i najlepsze praktyki zarządzania flagami."
-        canonical="https://fotz.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing"
+        canonical="https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing"
 
         keywords="Feature Flags co to jest, Feature Flags definicja, czym jest Feature Flags, Feature Flags przykłady, jak działa Feature Flags, Feature Flags znaczenie, Feature Flags przewodnik"
       />
       <ArticleSchema
         title="Feature Flags — co to jest, LaunchDarkly, Unleash, OpenFeature i A/B testing?"
         description="Feature Flags: 4 typy flag, 5 narzędzi (LaunchDarkly/Unleash/Flagsmith/GrowthBook/PostHog), targeting, A/B testing statystyki i anty-patterny."
-        url="https://fotz.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing"
+        url="https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing"
         datePublished="2024-04-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Feature Flags", url: "https://fotz.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Feature Flags", url: "https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-launchdarkly-unleash-ab-testing" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-purple-950 text-white py-20 px-4">

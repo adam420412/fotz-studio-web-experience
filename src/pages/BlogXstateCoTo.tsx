@@ -42,23 +42,23 @@ export default function BlogXstateCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="XState | Fotz Studio"
+        title="XState — co to jest, maszyna stanów, statecharts, Actor Model w React?"
         description="XState: maszyny stanów i statecharts w React — createMachine, useMachine, Actor Model, XState vs Zustand vs useReducer, kiedy używać FSM w 2024."
-        canonical="https://fotz.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
+        canonical="https://www.fotz-studio.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
 
         keywords="XState co to jest, XState jak działa, XState tutorial, XState przykład, czym jest XState, XState dokumentacja, XState przewodnik"
       />
       <ArticleSchema
         title="XState — co to jest, maszyna stanów, statecharts, Actor Model w React?"
         description="XState v5: statecharts, Actor Model, useMachine, Stately Editor, 6 narzędzi state management (XState/Robot/Zag/useReducer/Zustand/RTK), kiedy FSM wybrać."
-        url="https://fotz.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
+        url="https://www.fotz-studio.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "XState — maszyna stanów", url: "https://fotz.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "XState — maszyna stanów", url: "https://www.fotz-studio.pl/blog/xstate-co-to-jest-maszyna-stanow-statecharts-actor-model-react" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-pink-950 text-white py-20 px-4">

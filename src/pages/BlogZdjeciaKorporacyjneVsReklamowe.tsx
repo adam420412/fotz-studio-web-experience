@@ -28,7 +28,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/zdjecia-korporacyjne-vs-reklamowe";
+const CANONICAL = "https://www.fotz-studio.pl/blog/zdjecia-korporacyjne-vs-reklamowe";
 
 export default function BlogZdjeciaKorporacyjneVsReklamowe() {
   return (
@@ -48,8 +48,8 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Zdjęcia korporacyjne vs reklamowe", url: CANONICAL },
         ]}
       />
@@ -192,7 +192,7 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
           </p>
           <p>
             Mamy własne studio i zespół na miejscu w Poznaniu, ale dojeżdżamy z ekipą po całej Polsce, więc lokalizacja klienta nie jest ograniczeniem. Jeśli chcesz zobaczyć, jak podchodzimy do fotografii biznesowej całościowo, od zdjęć korporacyjnych po reklamowe, zajrzyj na naszą stronę{" "}
-            <Link to="/fotografia-biznesowa" className="text-[#75143F] underline">
+            <Link to="/uslugi/fotografia" className="text-[#75143F] underline">
               fotografia biznesowa
             </Link>
             , gdzie znajdziesz pełen zakres tego, co robimy.

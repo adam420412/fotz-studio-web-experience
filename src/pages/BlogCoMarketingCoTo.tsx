@@ -100,23 +100,23 @@ export default function BlogCoMarketingCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Co-marketing | Fotz Studio"
-        description="Co-marketing (marketing partnerski) — definicja, 6 rodzajów (content, event, bundle, cross-promo), 5-etapowy proces i jak znaleźć partnerów. Kompletny…"
-        canonical="https://fotz.pl/blog/co-marketing-co-to"
+        title="Co-marketing — co to jest i jak działa? | Fotz Studio"
+        description="Kompletny przewodnik po co-marketingu: 6 typów partnerstwa, 5-etapowy proces, jak znaleźć partnerów i mierzyć ROI."
+        canonical="https://www.fotz-studio.pl/blog/co-marketing-co-to"
 
         keywords="Co-marketing co to jest, Co-marketing definicja, czym jest Co-marketing, Co-marketing w marketingu, Co-marketing przykłady, jak działa Co-marketing, Co-marketing strategia"
       />
       <ArticleSchema
         title="Co-marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po co-marketingu: 6 typów partnerstwa, 5-etapowy proces, jak znaleźć partnerów i mierzyć ROI."
-        url="https://fotz.pl/blog/co-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/co-marketing-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Co-marketing", url: "https://fotz.pl/blog/co-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Co-marketing", url: "https://www.fotz-studio.pl/blog/co-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -124,7 +124,7 @@ export default function BlogCoMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Co-marketing", url: "https://fotz.pl" },
+              { name: "Co-marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Co-marketing — co to jest i jak działa?

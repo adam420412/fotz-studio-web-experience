@@ -143,21 +143,21 @@ export default function BlogFacebookAdsPoradnik() {
       <SEOHead
         title="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025"
         description="Praktyczny poradnik Facebook Ads: struktura kampanii, targetowanie, typy reklam, typowe błędy, FAQ. Dowiedz się jak tworzyć skuteczne kampanie reklamowe."
-        canonical="https://fotz.pl/blog/facebook-ads-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/facebook-ads-poradnik"
 
         keywords="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 poradnik, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 strategia, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 jak zrobić, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 marketing, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 przykłady, Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025 w Polsce"
       />
       <ArticleSchema
         title="Facebook Ads poradnik - jak tworzyć skuteczne reklamy? 2025"
         description="Krok po kroku przewodnik tworzenia kampanii Facebook Ads: od struktury kampanii, przez targetowanie, do unikania typowych błędów. Zawiera FAQ i praktyczne przykłady."
-        url="https://fotz.pl/blog/facebook-ads-poradnik"
+        url="https://www.fotz-studio.pl/blog/facebook-ads-poradnik"
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Facebook Ads poradnik", url: "https://fotz.pl/blog/facebook-ads-poradnik" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Facebook Ads poradnik", url: "https://www.fotz-studio.pl/blog/facebook-ads-poradnik" },
         ]}/>
 
       <section className="bg-gradient-to-br from-gray-900 via-yellow-900 to-amber-900 text-white py-20 px-4">

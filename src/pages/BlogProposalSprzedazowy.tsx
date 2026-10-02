@@ -98,21 +98,21 @@ export default function BlogProposalSprzedazowy() {
       <SEOHead
         title="Proposal sprzedażowy — jak pisać skuteczną ofertę B2B? | Fotz.pl"
         description="Proposal sprzedażowy B2B — struktura oferty handlowej, jak prezentować pricing, ROI i następne kroki. Kompletny przewodnik dla handlowców enterprise."
-        canonical="https://fotz.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b"
+        canonical="https://www.fotz-studio.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b"
 
         keywords="Proposal sprzedażowy, Proposal sprzedażowy co to jest, Proposal sprzedażowy jak działa, Proposal sprzedażowy definicja, Proposal sprzedażowy przykłady, Proposal sprzedażowy poradnik, Proposal sprzedażowy przewodnik"
       />
       <ArticleSchema
         title="Proposal sprzedażowy — jak pisać skuteczną ofertę B2B?"
         description="Kompletny przewodnik po propozycji handlowej B2B: struktura, pricing, ROI i jak prezentować ofertę."
-        url="https://fotz.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b"
+        url="https://www.fotz-studio.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b"
         datePublished="2024-02-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Proposal sprzedażowy", url: "https://fotz.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Proposal sprzedażowy", url: "https://www.fotz-studio.pl/blog/proposal-sprzedazowy-oferta-handlowa-b2b" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">

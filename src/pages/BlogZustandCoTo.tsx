@@ -42,23 +42,23 @@ export default function BlogZustandCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Zustand, Jotai, Redux Toolkit | Fotz Studio"
+        title="Zustand, Jotai, Redux Toolkit — zarządzanie stanem w React 2024?"
         description="Zarządzanie stanem React: Zustand vs Jotai vs Redux Toolkit vs Context API, atomic state, RTK Query, best practices i kiedy co wybrać w 2024."
-        canonical="https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
 
         keywords="Zustand, Jotai, Redux Toolkit co to jest, Zustand, Jotai, Redux Toolkit jak działa, Zustand, Jotai, Redux Toolkit tutorial, Zustand, Jotai, Redux Toolkit przykład, czym jest Zustand, Jotai, Redux Toolkit, Zustand, Jotai, Redux Toolkit dokumentacja, Zustand, Jotai, Redux Toolkit przewodnik"
       />
       <ArticleSchema
         title="Zustand, Jotai, Redux Toolkit — zarządzanie stanem w React 2024?"
         description="State management React: 6 bibliotek (Zustand/Jotai/Redux Toolkit/Valtio/Context/Recoil), atomic model, RTK Query, decision tree i best practices."
-        url="https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
+        url="https://www.fotz-studio.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Zarządzanie stanem React", url: "https://fotz.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Zarządzanie stanem React", url: "https://www.fotz-studio.pl/blog/zustand-jotai-redux-toolkit-zarzadzanie-stanem-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-amber-950 text-white py-20 px-4">

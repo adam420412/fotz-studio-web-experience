@@ -92,8 +92,8 @@ const PozycjonowanieWalbrzych = () => {
     <Layout>
       <SEOHead
         title="Pozycjonowanie Wałbrzych - SEO lokalne dla firm | fotz studio"
-        description="Pozycjonowanie stron Wałbrzych. Agencja SEO fotz studio — audyt SEO, optymalizacja dla turystyki górniczej, usług lokalnych. Rynek Wałbrzychu z bogatą…"
-        canonical="https://fotz.pl/pozycjonowanie/walbrzych"
+        description="Pozycjonowanie stron Wałbrzych. Agencja SEO Fotz Studio — audyt SEO, optymalizacja dla turystyki, usług lokalnych i handlu. Pomagamy firmom z Wałbrzycha zdobyć pierwszą stronę Google."
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/walbrzych"
         keywords="pozycjonowanie wałbrzych, agencja seo wałbrzych, seo wałbrzych, pozycjonowanie stron wałbrzych, seo dla firm wałbrzych, seo dolny śląsk, pozycjonowanie lokalne wałbrzych"
       />
       <ServiceSchema
@@ -103,10 +103,10 @@ const PozycjonowanieWalbrzych = () => {
         areaServed="Wałbrzych"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Wałbrzych", url: "https://fotz.pl/uslugi/pozycjonowanie/walbrzych" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Wałbrzych", url: "https://www.fotz-studio.pl/pozycjonowanie/walbrzych" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -481,8 +481,8 @@ const PozycjonowanieWalbrzych = () => {
               { label: "Pozycjonowanie Poznań", url: "/uslugi/pozycjonowanie/poznan" },
               { label: "Pozycjonowanie Gdańsk", url: "/uslugi/pozycjonowanie/gdansk" },
               { label: "Pozycjonowanie Katowice", url: "/uslugi/pozycjonowanie/katowice" },
-              { label: "Pozycjonowanie Gliwice", url: "/uslugi/pozycjonowanie/gliwice" },
-              { label: "Pozycjonowanie Zabrze", url: "/uslugi/pozycjonowanie/zabrze" },
+              { label: "Pozycjonowanie Gliwice", url: "/pozycjonowanie/gliwice" },
+              { label: "Pozycjonowanie Zabrze", url: "/pozycjonowanie/zabrze" },
               { label: "Wszystkie usługi SEO", url: "/uslugi/pozycjonowanie" },
             ].map((link) => (
               <Link

@@ -74,23 +74,23 @@ export default function BlogTargetAudienceCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Target Audience | Fotz Studio"
-        description="Target audience (grupa docelowa) — definicja, 4 typy segmentacji (demo, geo, psycho, behawioralna), metody badań i różnica vs. buyer persona. Kompletny…"
-        canonical="https://fotz.pl/blog/target-audience-co-to"
+        title="Target Audience — co to jest i jak definiować grupę docelową?"
+        description="Kompletny przewodnik po target audience: 4 segmentacje, 6 metod badań i różnice vs. buyer persona."
+        canonical="https://www.fotz-studio.pl/blog/target-audience-co-to"
 
         keywords="Target Audience co to jest, Target Audience definicja, czym jest Target Audience, Target Audience przykłady, jak działa Target Audience, Target Audience znaczenie, Target Audience przewodnik"
       />
       <ArticleSchema
         title="Target Audience — co to jest i jak definiować grupę docelową?"
         description="Kompletny przewodnik po target audience: 4 segmentacje, 6 metod badań i różnice vs. buyer persona."
-        url="https://fotz.pl/blog/target-audience-co-to"
+        url="https://www.fotz-studio.pl/blog/target-audience-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Target Audience", url: "https://fotz.pl/blog/target-audience-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Target Audience", url: "https://www.fotz-studio.pl/blog/target-audience-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -98,7 +98,7 @@ export default function BlogTargetAudienceCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Target Audience", url: "https://fotz.pl" },
+              { name: "Target Audience", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Target Audience — co to jest i jak definiować grupę docelową?

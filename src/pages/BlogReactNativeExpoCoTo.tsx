@@ -42,23 +42,23 @@ export default function BlogReactNativeExpoCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="React Native, Expo | Fotz Studio"
+        title="React Native, Expo — co to jest, mobile development, vs Flutter 2024?"
         description="React Native + Expo: New Architecture (Fabric/JSI), Expo Router, EAS Build, navigation, state management — vs Flutter i natywne iOS/Android, kiedy co wybrać."
-        canonical="https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
+        canonical="https://www.fotz-studio.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
 
         keywords="React Native, Expo co to jest, React Native, Expo jak działa, React Native, Expo tutorial, React Native, Expo przykład, czym jest React Native, Expo, React Native, Expo dokumentacja, React Native, Expo przewodnik"
       />
       <ArticleSchema
         title="React Native, Expo — co to jest, mobile development, vs Flutter 2024?"
         description="6 technologii mobilnych (RN/Expo/Flutter/Swift/Kotlin/Capacitor) — New Architecture, Expo Router, EAS, navigation, state management i kiedy co wybrać."
-        url="https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
+        url="https://www.fotz-studio.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Native i Expo", url: "https://fotz.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Native i Expo", url: "https://www.fotz-studio.pl/blog/react-native-expo-co-to-jest-mobile-development-vs-flutter-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-950 text-white py-20 px-4">

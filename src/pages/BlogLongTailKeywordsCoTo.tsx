@@ -72,7 +72,7 @@ export default function BlogLongTailKeywordsCoTo() {
       <SEOHead
         title="Long Tail Keywords — co to jest? Słowa kluczowe długiego ogona"
         description="Long tail keywords co to jest — wyjaśniamy czym są słowa kluczowe długiego ogona, jak je znaleźć, dlaczego są ważne dla SEO i jak optymalizować treści."
-        canonical="https://fotz.pl/blog/long-tail-keywords-co-to"
+        canonical="https://www.fotz-studio.pl/blog/long-tail-keywords-co-to"
 
         keywords="Long Tail Keywords co to jest, Long Tail Keywords definicja, czym jest Long Tail Keywords, Long Tail Keywords przykłady, jak działa Long Tail Keywords, Long Tail Keywords znaczenie, Long Tail Keywords przewodnik"
       />
@@ -81,7 +81,7 @@ export default function BlogLongTailKeywordsCoTo() {
         description="Czym są long tail keywords (słowa kluczowe długiego ogona), jak je znaleźć, różnica short vs long tail, konwersja i jak optymalizować pod longtaile."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/long-tail-keywords-co-to"
+        url="https://www.fotz-studio.pl/blog/long-tail-keywords-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

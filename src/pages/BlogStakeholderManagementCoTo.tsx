@@ -96,21 +96,21 @@ export default function BlogStakeholderManagementCoTo() {
       <SEOHead
         title="Stakeholder Management — co to jest? Zarządzanie interesariuszami"
         description="Stakeholder management — definicja, macierz Power/Interest, 6 kroków mapowania, plan komunikacji i strategie dla trudnych interesariuszy. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/stakeholder-management-co-to"
+        canonical="https://www.fotz-studio.pl/blog/stakeholder-management-co-to"
 
         keywords="Stakeholder Management co to jest, Stakeholder Management definicja, czym jest Stakeholder Management, Stakeholder Management przykłady, jak działa Stakeholder Management, Stakeholder Management znaczenie, Stakeholder Management przewodnik"
       />
       <ArticleSchema
         title="Stakeholder Management — co to jest i jak zarządzać interesariuszami?"
         description="Kompletny przewodnik po stakeholder management: macierz Power/Interest, 6 kroków mapowania, plan komunikacji i strategie angażowania."
-        url="https://fotz.pl/blog/stakeholder-management-co-to"
+        url="https://www.fotz-studio.pl/blog/stakeholder-management-co-to"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Stakeholder Management", url: "https://fotz.pl/blog/stakeholder-management-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Stakeholder Management", url: "https://www.fotz-studio.pl/blog/stakeholder-management-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -118,7 +118,7 @@ export default function BlogStakeholderManagementCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Stakeholder Management", url: "https://fotz.pl" },
+              { name: "Stakeholder Management", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Stakeholder Management — co to jest i jak zarządzać interesariuszami?

@@ -233,7 +233,7 @@ const VideoMarketing = () => {
       <SEOHead
         title="Video Marketing — Produkcja Filmów Reklamowych | Fotz Studio"
         description="Video marketing dla firm — produkcja filmów reklamowych, animacje, reels, video e-commerce. Fotz Studio Poznań i cała Polska. Zamów wycenę!"
-        canonical="https://fotz.pl/uslugi/video-marketing"
+        canonical="https://www.fotz-studio.pl/uslugi/video-marketing"
         keywords="video marketing, marketing wideo, reklamy wideo, video content marketing, filmy marketingowe, video marketing dla firm"
       />
       <ServiceSchema
@@ -243,9 +243,9 @@ const VideoMarketing = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Video marketing", url: "https://fotz.pl/uslugi/video-marketing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Video marketing", url: "https://www.fotz-studio.pl/uslugi/video-marketing" },
         ]}/>
       <FAQSchema items={faqItems} />
 

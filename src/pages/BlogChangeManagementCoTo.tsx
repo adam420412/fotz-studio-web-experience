@@ -58,22 +58,22 @@ export default function BlogChangeManagementCoTo() {
     <Layout>
       <SEOHead
         title="Change Management — co to jest? Zarządzanie zmianą organizacyjną"
-        description="Change management — definicja, model Kotter's 8-Step i ADKAR, dlaczego 70% zmian kończy się porażką i jak mierzyć skuteczność. Kompletny przewodnik po…"
-        canonical="https://fotz.pl/blog/change-management-co-to"
+        description="Kompletny przewodnik po change management: model Kotter 8-Step, ADKAR, różnica vs. project management i metryki adopcji."
+        canonical="https://www.fotz-studio.pl/blog/change-management-co-to"
 
         keywords="Change Management co to jest, Change Management definicja, czym jest Change Management, Change Management przykłady, jak działa Change Management, Change Management znaczenie, Change Management przewodnik"
       />
       <ArticleSchema
         title="Change Management — co to jest i jak zarządzać zmianą organizacyjną?"
         description="Kompletny przewodnik po change management: model Kotter 8-Step, ADKAR, różnica vs. project management i metryki adopcji."
-        url="https://fotz.pl/blog/change-management-co-to"
+        url="https://www.fotz-studio.pl/blog/change-management-co-to"
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Change Management", url: "https://fotz.pl/blog/change-management-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Change Management", url: "https://www.fotz-studio.pl/blog/change-management-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -81,7 +81,7 @@ export default function BlogChangeManagementCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Change Management", url: "https://fotz.pl" },
+              { name: "Change Management", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Change Management — co to jest i jak zarządzać zmianą?

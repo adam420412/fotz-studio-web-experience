@@ -65,9 +65,9 @@ export default function BlogMRRARRCoTo() {
   return (
     <>
       <SEOHead
-        title="MRR i ARR — co to jest? Kluczowe metryki SaaS | fotz.pl"
+        title="MRR i ARR — co to jest? Kluczowe metryki SaaS | FOTZ Studio"
         description="MRR co to jest — wyjaśniamy czym jest Monthly Recurring Revenue, ARR, jak obliczać MRR, dobry wzrost i jak metryki SaaS wpływają na wycenę firmy."
-        canonical="https://fotz.pl/blog/mrr-arr-co-to"
+        canonical="https://www.fotz-studio.pl/blog/mrr-arr-co-to"
 
         keywords="MRR i ARR co to jest, MRR i ARR definicja, czym jest MRR i ARR, MRR i ARR startup, MRR i ARR jak liczyć, MRR i ARR wzór, MRR i ARR przykłady"
       />
@@ -76,7 +76,7 @@ export default function BlogMRRARRCoTo() {
         description="Czym jest MRR (Monthly Recurring Revenue) i ARR (Annual Recurring Revenue), jak obliczać, typy MRR, Churn Rate i wpływ na wycenę firmy SaaS."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/mrr-arr-co-to"
+        url="https://www.fotz-studio.pl/blog/mrr-arr-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

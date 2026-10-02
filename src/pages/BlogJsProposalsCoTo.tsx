@@ -17,7 +17,7 @@ const faqItems = [
   },
   {
     question: "Array.groupBy, structuredClone i inne nowoczesne JS metody?",
-    answer: "Metody dostępne już w modernych przeglądarkach: structuredClone(obj): głęboka kopia. Nie JSON.parse(JSON.stringify()) — obsługuje Date, Map, Set, ArrayBuffer. structuredClone({date: new Date(), map: new Map()}). Nie kopiuje: functions, DOM nodes, WeakMap. Object.hasOwn(obj, 'key'): bezpieczne hasOwnProperty. Zastępuje obj.hasOwnProperty('key') lub Object.prototype.hasOwnProperty.call(obj, key). at() method: arr.at(-1) — ostatni element. str.at(-1) — ostatni znak. Zastępuje arr[arr.length - 1]. Array.from({length: n}, (_, i) => i): generuj tablice. findLast() i findLastIndex(): od końca. arr.findLast(x => x > 5). Bez arr.slice().reverse().find(). Error.cause: new Error('outer', {cause: err}). err.cause — oryginalny błąd. Stacktrace chain. String trimStart/trimEnd: str.trimStart(), str.trimEnd(). Szybsze niż regex. replaceAll: 'a.b.c'.replaceAll('.', '/'). Nie /\./g. Object.entries/fromEntries: round-trip. Object.fromEntries(Object.entries(obj).filter(...)). Transformacja obiektów. queueMicrotask: queueMicrotask(() => {...}). Microtask queue. Przed macrotask (setTimeout). Lepsze niż Promise.resolve().then(). AbortController i AbortSignal: cancel fetch i async. const controller = new AbortController(). fetch(url, {signal: controller.signal}). controller.abort(). Używany przez React useEffect cleanup. WeakRef i FinalizationRegistry: słabe referencje. Cache bez wycieków. Registry callback przy GC. Zaawansowane — używaj rzadko.",
+    answer: "Metody dostępne już w modernych przeglądarkach: structuredClone(obj): głęboka kopia. Nie JSON.parse(JSON.stringify()) — obsługuje Date, Map, Set, ArrayBuffer. structuredClone({date: new Date(), map: new Map()}). Nie kopiuje: functions, DOM nodes, WeakMap. Object.hasOwn(obj, 'key'): bezpieczne hasOwnProperty. Zastępuje obj.hasOwnProperty('key') lub Object.prototype.hasOwnProperty.call(obj, key). at() method: arr.at(-1) — ostatni element. str.at(-1) — ostatni znak. Zastępuje arr[arr.length - 1]. Array.from({length: n}, (_, i) => i): generuj tablice. findLast() i findLastIndex(): od końca. arr.findLast(x => x > 5). Bez arr.slice().reverse().find(). Error.cause: new Error('outer', {cause: err}). err.cause — oryginalny błąd. Stacktrace chain. String trimStart/trimEnd: str.trimStart(), str.trimEnd(). Szybsze niż regex. replaceAll: 'a.b.c'.replaceAll('.', '/'). Nie /\\./g. Object.entries/fromEntries: round-trip. Object.fromEntries(Object.entries(obj).filter(...)). Transformacja obiektów. queueMicrotask: queueMicrotask(() => {...}). Microtask queue. Przed macrotask (setTimeout). Lepsze niż Promise.resolve().then(). AbortController i AbortSignal: cancel fetch i async. const controller = new AbortController(). fetch(url, {signal: controller.signal}). controller.abort(). Używany przez React useEffect cleanup. WeakRef i FinalizationRegistry: słabe referencje. Cache bez wycieków. Registry callback przy GC. Zaawansowane — używaj rzadko.",
   },
   {
     question: "Nullish coalescing, optional chaining i inne ES2020-2022 features?",
@@ -42,23 +42,23 @@ export default function BlogJsProposalsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Nowe funkcje JavaScript | Fotz Studio"
+        title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024?"
         description="ES2024 (Object.groupBy, Array.toSorted), TC39 Stage 3 (Decorators, Iterator Helpers, Temporal API), Pattern Matching, Records/Tuples i nowoczesne JS metody."
-        canonical="https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
+        canonical="https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
 
         keywords="Nowe funkcje JavaScript co to jest, Nowe funkcje JavaScript jak działa, Nowe funkcje JavaScript tutorial, Nowe funkcje JavaScript przykład, czym jest Nowe funkcje JavaScript, Nowe funkcje JavaScript dokumentacja, Nowe funkcje JavaScript przewodnik"
       />
       <ArticleSchema
         title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024?"
         description="6 propozycji JS (Object.groupBy/Array.toSorted/Decorators/Pattern Matching/Iterator Helpers/Temporal) — ES2024, Stage 3 proposals i przyszłość JavaScript."
-        url="https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
+        url="https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Nowe funkcje JavaScript ES2024", url: "https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Nowe funkcje JavaScript ES2024", url: "https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-amber-950 text-white py-20 px-4">

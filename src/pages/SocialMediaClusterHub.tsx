@@ -15,7 +15,7 @@ export default function SocialMediaClusterHub() {
   if (!cluster) return <Navigate to={SM_PILLAR_PATH} replace />;
 
   const { data: articles = [], isLoading } = useClusterArticles(clusterSlug);
-  const canonical = `https://fotz.pl${cluster.path}`;
+  const canonical = `https://www.fotz-studio.pl${cluster.path}`;
 
   return (
     <>
@@ -27,8 +27,8 @@ export default function SocialMediaClusterHub() {
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja social media", url: `https://fotz.pl${SM_PILLAR_PATH}` },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja social media", url: `https://www.fotz-studio.pl${SM_PILLAR_PATH}` },
           { name: cluster.shortLabel, url: canonical },
         ]}
       />

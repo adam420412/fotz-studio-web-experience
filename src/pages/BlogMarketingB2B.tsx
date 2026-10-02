@@ -1,3 +1,4 @@
+import { CopyArticleLinkButton } from "@/components/CopyArticleLinkButton";
 import { SEOHead } from "@/components/seo/SEOHead";
 import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
@@ -49,21 +50,21 @@ export default function BlogMarketingB2B() {
         title="Marketing B2B - skuteczna strategia dla firm 2025 | Poradnik"
         description="Pełny poradnik strategii marketingowej B2B dla firm. Kanały, lejek sprzedażowy, ABM, KPI i case studies. Jak generować leady i sprzedawać firmom w 2025."
         ogType="article"
-        canonical="https://fotz.pl/blog/marketing-b2b-strategia"
+        canonical="https://www.fotz-studio.pl/blog/marketing-b2b-strategia"
         keywords="marketing B2B, strategia marketingowa B2B, lead generation B2B, kanały B2B, ABM, lejek sprzedażowy, B2B KPI"
       />
       <ArticleSchema
         title="Marketing B2B - skuteczna strategia dla firm 2025"
         description="Kompletny poradnik strategii marketingowej B2B: kanały, lejek sprzedażowy, Account-Based Marketing, KPI i taktyki lead generation dla firm."
-        url="https://fotz.pl/blog/marketing-b2b-strategia"
+        url="https://www.fotz-studio.pl/blog/marketing-b2b-strategia"
         datePublished="2025-04-12"
         dateModified="2026-04-12"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Marketing B2B - strategia marketingowa", url: "https://fotz.pl/blog/marketing-b2b-strategia" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Marketing B2B - strategia marketingowa", url: "https://www.fotz-studio.pl/blog/marketing-b2b-strategia" },
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -467,12 +468,8 @@ export default function BlogMarketingB2B() {
               <div className="flex items-center justify-between py-8 border-t border-gray-700 mt-8">
                 <div className="flex items-center gap-4">
                   <span className="text-gray-400">Udostępnij artykuł:</span>
-                  <Button variant="outline" size="icon" className="border-gray-600 hover:bg-gray-800">
-                    <Share2 className="w-4 h-4" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="border-gray-600 hover:bg-gray-800">
-                    <Bookmark className="w-4 h-4" />
-                  </Button>
+                  <CopyArticleLinkButton />
+
                 </div>
               </div>
             </article>

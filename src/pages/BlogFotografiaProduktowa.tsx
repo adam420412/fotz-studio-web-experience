@@ -75,9 +75,9 @@ export default function BlogFotografiaProduktowa() {
     <>
       <SEOHead
         title="Fotografia produktowa — kompletny poradnik 2025 | Fotz.pl"
-        description="Fotografia produktowa poradnik: ceny, typy sesji, przygotowanie produktów, wpływ na sprzedaż e-commerce. Dowiedz się, jak wybrać fotografa i zwiększyć…"
+        description="Fotografia produktowa poradnik: ceny, typy sesji, przygotowanie produktów i wpływ zdjęć na sprzedaż w e-commerce. Dowiedz się, jak wybrać fotografa i zwiększyć konwersję w sklepie internetowym."
         ogType="article"
-        canonical="https://fotz.pl/blog/fotografia-produktowa-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/fotografia-produktowa-poradnik"
         keywords="fotografia produktowa, fotografia produktów, packshot, lifestyle photography, e-commerce fotografia, cena sesji"
         schemaJson={[
           {
@@ -94,7 +94,7 @@ export default function BlogFotografiaProduktowa() {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2026-04-12",
@@ -104,8 +104,8 @@ export default function BlogFotografiaProduktowa() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Fotografia produktowa — poradnik" }
             ]
           },

@@ -93,23 +93,23 @@ export default function BlogTamSamSomCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="TAM, SAM, SOM | Fotz Studio"
-        description="TAM SAM SOM — definicje, jak obliczyć metodą top-down i bottom-up, typowe błędy i dlaczego inwestorzy pytają o te metryki. Kompletny przewodnik po…"
-        canonical="https://fotz.pl/blog/tam-sam-som-co-to"
+        title="TAM, SAM, SOM — co to jest i jak obliczać wielkość rynku?"
+        description="Kompletny przewodnik po TAM, SAM i SOM: definicje, metody obliczania, błędy i dlaczego te metryki są kluczowe dla inwestorów."
+        canonical="https://www.fotz-studio.pl/blog/tam-sam-som-co-to"
 
         keywords="TAM, SAM, SOM co to jest, TAM, SAM, SOM definicja, czym jest TAM, SAM, SOM, TAM, SAM, SOM startup, TAM, SAM, SOM jak liczyć, TAM, SAM, SOM wzór, TAM, SAM, SOM przykłady"
       />
       <ArticleSchema
         title="TAM, SAM, SOM — co to jest i jak obliczać wielkość rynku?"
         description="Kompletny przewodnik po TAM, SAM i SOM: definicje, metody obliczania, błędy i dlaczego te metryki są kluczowe dla inwestorów."
-        url="https://fotz.pl/blog/tam-sam-som-co-to"
+        url="https://www.fotz-studio.pl/blog/tam-sam-som-co-to"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TAM SAM SOM", url: "https://fotz.pl/blog/tam-sam-som-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TAM SAM SOM", url: "https://www.fotz-studio.pl/blog/tam-sam-som-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -117,7 +117,7 @@ export default function BlogTamSamSomCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "TAM SAM SOM", url: "https://fotz.pl" },
+              { name: "TAM SAM SOM", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             TAM, SAM, SOM — co to jest i jak obliczać rynek?

@@ -161,7 +161,7 @@ export default function EcommerceTworzenie() {
       <SEOHead
         title="Tworzenie Sklepu Internetowego — E-commerce i Sprzedaż Online"
         description="Sklep internetowy szyty na miarę — tworzenie e-commerce od A do Z. WooCommerce, Shopify, integracje płatności, SEO dla sklepów online. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/ecommerce"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/ecommerce"
         keywords="tworzenie sklepów internetowych, e-commerce tworzenie, sklep internetowy na zamówienie, tworzenie sklepu woocommerce, tworzenie sklepu shopify, sklep internetowy cena"
       />
 
@@ -171,9 +171,9 @@ export default function EcommerceTworzenie() {
         description="Kompleksowe tworzenie sklepów internetowych - wybór platformy, projekt UX/UI, integracje płatności i dostaw, automatyzacja AI."
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "E-commerce", url: "https://fotz.pl/uslugi/strony-internetowe/ecommerce" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "E-commerce", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/ecommerce" },
         ]}/>
       <FAQSchema items={faqItems} />
 

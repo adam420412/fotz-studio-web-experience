@@ -42,23 +42,23 @@ export default function BlogServerlessDbCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Serverless Bazy Danych | Fotz Studio"
-        description="Neon (serverless Postgres, branching), PlanetScale (MySQL Vitess), Turso/libSQL (SQLite edge, embedded replicas), Cloudflare D1, ElectricSQL (local-first)…"
-        canonical="https://fotz.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024"
+        title="Serverless Bazy Danych — Neon, PlanetScale, Turso, D1, ElectricSQL 2024?"
+        description="6 serverless baz danych (Neon/PlanetScale/Turso/D1/ElectricSQL/CockroachDB) — branching, edge replicas, local-first i connection pooling dla serverless functions."
+        canonical="https://www.fotz-studio.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024"
 
         keywords="Serverless Bazy Danych co to jest, Serverless Bazy Danych jak działa, Serverless Bazy Danych tutorial, Serverless Bazy Danych przykład, czym jest Serverless Bazy Danych, Serverless Bazy Danych dokumentacja, Serverless Bazy Danych przewodnik"
       />
       <ArticleSchema
         title="Serverless Bazy Danych — Neon, PlanetScale, Turso, D1, ElectricSQL 2024?"
         description="6 serverless baz danych (Neon/PlanetScale/Turso/D1/ElectricSQL/CockroachDB) — branching, edge replicas, local-first i connection pooling dla serverless functions."
-        url="https://fotz.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024"
+        url="https://www.fotz-studio.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Serverless Databases 2024", url: "https://fotz.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Serverless Databases 2024", url: "https://www.fotz-studio.pl/blog/serverless-database-neon-planetscale-turso-d1-electric-sql-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">

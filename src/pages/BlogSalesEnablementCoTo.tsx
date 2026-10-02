@@ -79,9 +79,9 @@ export default function BlogSalesEnablementCoTo() {
   return (
     <>
       <SEOHead
-        title="Sales Enablement — co to jest? Wsparcie sprzedaży w B2B | fotz.pl"
-        description="Sales enablement co to jest — wyjaśniamy czym jest wsparcie sprzedaży, filary (content, szkolenia, narzędzia), jak mierzyć efektywność i jak zbudować…"
-        canonical="https://fotz.pl/blog/sales-enablement-co-to"
+        title="Sales Enablement — co to jest? Wsparcie sprzedaży w B2B | FOTZ Studio"
+        description="Czym jest sales enablement, filary programu, narzędzia, KPI, różnica vs sales training i jak zbudować sales playbook dla zespołu sprzedaży."
+        canonical="https://www.fotz-studio.pl/blog/sales-enablement-co-to"
 
         keywords="Sales Enablement co to jest, Sales Enablement definicja, czym jest Sales Enablement, Sales Enablement w sprzedaży, Sales Enablement strategia, Sales Enablement przykłady, jak używać Sales Enablement"
       />
@@ -90,7 +90,7 @@ export default function BlogSalesEnablementCoTo() {
         description="Czym jest sales enablement, filary programu, narzędzia, KPI, różnica vs sales training i jak zbudować sales playbook dla zespołu sprzedaży."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/sales-enablement-co-to"
+        url="https://www.fotz-studio.pl/blog/sales-enablement-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

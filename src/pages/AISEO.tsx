@@ -27,7 +27,7 @@ const AISEO = () => {
       <SEOHead
         title="AI SEO — Optymalizacja pod ChatGPT, Perplexity i Gemini"
         description="AI SEO — optymalizacja strony pod generatywne AI: ChatGPT, Perplexity, Google Gemini i Bing Copilot. GEO (Generative Engine Optimization). Fotz Studio."
-        canonical="https://fotz.pl/ai-seo"
+        canonical="https://www.fotz-studio.pl/ai-seo"
         keywords="ai seo, ai search, chatgpt seo, perplexity seo, optymalizacja ai, widoczność w ai, llm seo"
       />
       <ServiceSchema
@@ -37,8 +37,8 @@ const AISEO = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "AI SEO", url: "https://fotz.pl/ai-seo" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "AI SEO", url: "https://www.fotz-studio.pl/ai-seo" }
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

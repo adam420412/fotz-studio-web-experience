@@ -49,23 +49,23 @@ export default function BlogMlopsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="MLOps | Fotz Studio"
+        title="MLOps — co to jest i jak wdrożyć Machine Learning Operations?"
         description="MLOps: cykl życia modelu ML, tooling (MLflow, W&B, BentoML, Evidently), model drift, poziomy dojrzałości i jak zorganizować team MLOps w firmie."
-        canonical="https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/mlops-machine-learning-operations-co-to-jest"
 
         keywords="MLOps co to jest, MLOps definicja, czym jest MLOps, MLOps przykłady, jak działa MLOps, MLOps znaczenie, MLOps przewodnik"
       />
       <ArticleSchema
         title="MLOps — co to jest i jak wdrożyć Machine Learning Operations?"
         description="MLOps: ML lifecycle, tooling (MLflow, W&B, BentoML, Evidently AI), model drift detection, poziomy dojrzałości (0-2) i organizacja team MLOps w firmach SaaS."
-        url="https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/mlops-machine-learning-operations-co-to-jest"
         datePublished="2024-03-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "MLOps", url: "https://fotz.pl/blog/mlops-machine-learning-operations-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "MLOps", url: "https://www.fotz-studio.pl/blog/mlops-machine-learning-operations-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-slate-900 text-white py-20 px-4">

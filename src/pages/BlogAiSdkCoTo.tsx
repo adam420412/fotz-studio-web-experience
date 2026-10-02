@@ -42,23 +42,23 @@ export default function BlogAiSdkCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="AI SDK, OpenAI, LangChain | Fotz Studio"
+        title="AI SDK, OpenAI, LangChain — integracja AI z Next.js i TypeScript 2024?"
         description="Vercel AI SDK, OpenAI API, LangChain.js, LlamaIndex — chatboty, streaming, RAG, image generation, Whisper transcription i generative UI w Next.js 2024."
-        canonical="https://fotz.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
 
         keywords="AI SDK, OpenAI, LangChain co to jest, AI SDK, OpenAI, LangChain jak działa, AI SDK, OpenAI, LangChain tutorial, AI SDK, OpenAI, LangChain przykład, czym jest AI SDK, OpenAI, LangChain, AI SDK, OpenAI, LangChain dokumentacja, AI SDK, OpenAI, LangChain przewodnik"
       />
       <ArticleSchema
         title="AI SDK, OpenAI, LangChain — integracja AI z Next.js i TypeScript 2024?"
         description="6 SDK AI (Vercel AI SDK/OpenAI/LangChain/LlamaIndex/Mastra/Anthropic) — streaming chat, useChat, streamText, RAG, embeddings, DALL-E i Whisper transcription."
-        url="https://fotz.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AI SDK i OpenAI", url: "https://fotz.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AI SDK i OpenAI", url: "https://www.fotz-studio.pl/blog/ai-sdk-openai-langchain-integracja-nextjs-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-violet-950 text-white py-20 px-4">

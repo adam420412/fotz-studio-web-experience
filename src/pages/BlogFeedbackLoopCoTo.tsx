@@ -57,27 +57,27 @@ export default function BlogFeedbackLoopCoTo() {
     <Layout>
       <SEOHead
         title="Feedback Loop — co to jest? Pętla feedbacku w produkcie i firmie"
-        description="Feedback loop (pętla feedbacku) — definicja, 6 kanałów zbierania feedbacku, jak priorytetyzować, zamknąć pętlę i Product Feedback Triangle. Kompletny…"
-        canonical="https://fotz.pl/blog/feedback-loop-co-to"
+        description="Kompletny przewodnik po feedback loop: 6 kanałów (interviews, NPS, analytics, support, session recordings), 6-krokowy proces i jak zamknąć pętlę."
+        canonical="https://www.fotz-studio.pl/blog/feedback-loop-co-to"
 
         keywords="Feedback Loop co to jest, Feedback Loop definicja, czym jest Feedback Loop, Feedback Loop przykłady, jak działa Feedback Loop, Feedback Loop znaczenie, Feedback Loop przewodnik"
       />
       <ArticleSchema
         title="Feedback Loop — co to jest i jak budować pętlę feedbacku?"
         description="Kompletny przewodnik po feedback loop: 6 kanałów (interviews, NPS, analytics, support, session recordings), 6-krokowy proces i jak zamknąć pętlę."
-        url="https://fotz.pl/blog/feedback-loop-co-to"
+        url="https://www.fotz-studio.pl/blog/feedback-loop-co-to"
         datePublished="2024-02-08"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Feedback Loop", url: "https://fotz.pl/blog/feedback-loop-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Feedback Loop", url: "https://www.fotz-studio.pl/blog/feedback-loop-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Feedback Loop", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Feedback Loop", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Feedback Loop — co to jest i jak budować pętlę feedbacku?
           </h1>

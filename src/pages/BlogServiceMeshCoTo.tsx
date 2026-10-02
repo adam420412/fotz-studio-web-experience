@@ -53,21 +53,21 @@ export default function BlogServiceMeshCoTo() {
       <SEOHead
         title="Service Mesh — co to jest, Istio, Linkerd i mTLS? | Fotz.pl"
         description="Service Mesh: definicja, Istio architektura (Envoy, Istiod), mTLS, canary deployments, circuit breaking, Service Mesh vs. API Gateway i jak wdrożyć."
-        canonical="https://fotz.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
+        canonical="https://www.fotz-studio.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
 
         keywords="Service Mesh co to jest, Service Mesh definicja, czym jest Service Mesh, Service Mesh przykłady, jak działa Service Mesh, Service Mesh znaczenie, Service Mesh przewodnik"
       />
       <ArticleSchema
         title="Service Mesh — co to jest, Istio, Linkerd i mTLS?"
         description="Service Mesh: architektura, Istio vs. Linkerd, mTLS i Zero Trust, 6 kluczowych funkcji, porównanie narzędzi i wdrożenie krok po kroku."
-        url="https://fotz.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
+        url="https://www.fotz-studio.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls"
         datePublished="2024-03-28"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Service Mesh", url: "https://fotz.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Service Mesh", url: "https://www.fotz-studio.pl/blog/service-mesh-co-to-jest-istio-linkerd-mtls" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white py-20 px-4">

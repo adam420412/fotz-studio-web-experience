@@ -43,22 +43,22 @@ export default function BlogTanstackFormCoTo() {
     <Layout>
       <SEOHead
         title="TanStack Form vs React Hook Form | Fotz Studio"
-        description="TanStack Form (type-safe, framework-agnostic), React Hook Form v7 (useFieldArray, zodResolver), Server Actions + useActionState, progressive enhancement i…"
-        canonical="https://fotz.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024"
+        description="6 bibliotek formularzy (TanStack Form/RHF/Server Actions/Zod/Formik/useOptimistic) — type-safe walidacja, array fields, Next.js Server Actions i progressive enhancement."
+        canonical="https://www.fotz-studio.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024"
 
         keywords="TanStack Form vs React Hook Form co to jest, TanStack Form vs React Hook Form jak działa, TanStack Form vs React Hook Form tutorial, TanStack Form vs React Hook Form przykład, czym jest TanStack Form vs React Hook Form, TanStack Form vs React Hook Form dokumentacja, TanStack Form vs React Hook Form przewodnik"
       />
       <ArticleSchema
         title="TanStack Form vs React Hook Form — walidacja, Server Actions i Next.js 2024?"
         description="6 bibliotek formularzy (TanStack Form/RHF/Server Actions/Zod/Formik/useOptimistic) — type-safe walidacja, array fields, Next.js Server Actions i progressive enhancement."
-        url="https://fotz.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024"
         datePublished="2024-06-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TanStack Form", url: "https://fotz.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TanStack Form", url: "https://www.fotz-studio.pl/blog/tanstack-form-react-hook-form-server-actions-formularze-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-amber-950 text-white py-20 px-4">

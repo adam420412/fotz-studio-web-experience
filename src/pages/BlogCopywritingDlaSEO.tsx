@@ -126,17 +126,17 @@ const BlogCopywritingDlaSEO = () => {
   return (
     <>
       <SEOHead
-        title="Copywriting SEO - jak pisać teksty zoptymalizowane pod Google?…"
-        description="Jak pisać SEO copywriting? Słowa kluczowe, struktura artykułu, meta title, H1-H6, internal linking. Kompletny poradnik tworzenia treści optymalizowanych…"
+        title="Copywriting SEO - jak pisać teksty pod Google? Poradnik 2025"
+        description="Kompletny poradnik do SEO copywriting - wszystko co musisz wiedzieć o pisaniu tekstów optymalizowanych pod wyszukiwarki"
         ogType="article"
-        canonical="https://fotz.pl/blog/copywriting-seo-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/copywriting-seo-poradnik"
         keywords="copywriting SEO, SEO copywriting, jak pisać artykuły do SEO, optymalizacja tekstów, słowa kluczowe"
       />
 
       <ArticleSchema
         title="Copywriting SEO - jak pisać teksty zoptymalizowane pod Google? 2025"
         description="Kompletny poradnik do SEO copywriting - wszystko co musisz wiedzieć o pisaniu tekstów optymalizowanych pod wyszukiwarki"
-        url="https://fotz.pl/blog/copywriting-seo-poradnik"
+        url="https://www.fotz-studio.pl/blog/copywriting-seo-poradnik"
         image="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2015"
         datePublished="2025-04-12"
         dateModified="2025-04-12"
@@ -144,9 +144,9 @@ const BlogCopywritingDlaSEO = () => {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Copywriting SEO - jak pisać teksty zoptymalizowane pod Google?", url: "https://fotz.pl" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Copywriting SEO - jak pisać teksty zoptymalizowane pod Google?", url: "https://www.fotz-studio.pl" }
         ]}/>
 
       <FAQSchema items={faqItems} />

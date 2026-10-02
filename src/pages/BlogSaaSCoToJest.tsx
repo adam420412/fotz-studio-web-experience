@@ -66,9 +66,9 @@ export default function BlogSaaSCoToJest() {
   return (
     <>
       <SEOHead
-        title="SaaS — co to jest? Software as a Service — poradnik | fotz.pl"
+        title="SaaS — co to jest? Software as a Service — poradnik | FOTZ Studio"
         description="SaaS co to jest — wyjaśniamy czym jest Software as a Service, jak działa model SaaS, przykłady, metryki (MRR, ARR, churn) i jak zbudować produkt SaaS."
-        canonical="https://fotz.pl/blog/saas-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/saas-co-to-jest"
 
         keywords="SaaS co to jest, SaaS definicja, czym jest SaaS, SaaS startup, SaaS jak liczyć, SaaS wzór, SaaS przykłady"
       />
@@ -77,7 +77,7 @@ export default function BlogSaaSCoToJest() {
         description="Czym jest SaaS (Software as a Service), jak działa model subskrypcyjny, kluczowe metryki (MRR, ARR, churn), przykłady SaaS i jak zbudować produkt SaaS."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/saas-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/saas-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

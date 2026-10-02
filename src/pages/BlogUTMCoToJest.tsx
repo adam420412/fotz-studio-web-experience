@@ -33,7 +33,7 @@ export default function BlogUTMCoToJest() {
     {
       question: "Co to sa parametry UTM?",
       answer:
-        "UTM (Urchin Tracking Module) to tagi dodawane do adresow URL ktore pozwalaja sledzic zrodla ruchu na stronie w narzedzia analitycznych jak Google Analytics 4. Nazwa pochodzi od firmy Urchin Software ktora wymyslila ten system, a Google kupilo ja w 2005 roku. Parametry UTM sa dodawane po znaku '?' w URLu. Przyklad: https://fotz.pl/strona?utm_source=linkedin&utm_medium=social&utm_campaign=oferta-seo. Bez UTM Google Analytics czesto nie wie skad pochodzi ruch — przypisuje go do 'direct' lub 'referral'. Z UTM masz pelen obraz skutecznosci kazdej kampanii, emaila, linku w social media lub bannera.",
+        "UTM (Urchin Tracking Module) to tagi dodawane do adresow URL ktore pozwalaja sledzic zrodla ruchu na stronie w narzedzia analitycznych jak Google Analytics 4. Nazwa pochodzi od firmy Urchin Software ktora wymyslila ten system, a Google kupilo ja w 2005 roku. Parametry UTM sa dodawane po znaku '?' w URLu. Przyklad: https://www.fotz-studio.pl/strona?utm_source=linkedin&utm_medium=social&utm_campaign=oferta-seo. Bez UTM Google Analytics czesto nie wie skad pochodzi ruch — przypisuje go do 'direct' lub 'referral'. Z UTM masz pelen obraz skutecznosci kazdej kampanii, emaila, linku w social media lub bannera.",
     },
     {
       question: "Jak stworzyc link z UTM?",
@@ -65,9 +65,9 @@ export default function BlogUTMCoToJest() {
   return (
     <>
       <SEOHead
-        title="UTM — co to jest i jak tagowac linki? | fotz.pl"
+        title="UTM — co to jest i jak tagowac linki? | FOTZ Studio"
         description="UTM co to jest — wyjasnamy czym sa parametry UTM, jak tworzyc linki z UTM, jak odczytac dane w GA4 i najlepsze praktyki tagowania kampanii marketingowych."
-        canonical="https://fotz.pl/blog/utm-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/utm-co-to-jest"
 
         keywords="UTM co to jest, UTM definicja, czym jest UTM, UTM przykłady, jak działa UTM, UTM znaczenie, UTM przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogUTMCoToJest() {
         description="Czym sa parametry UTM, jak tworzyc linki UTM, odczytywanie w GA4, best practices i wplyw na SEO."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/utm-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/utm-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

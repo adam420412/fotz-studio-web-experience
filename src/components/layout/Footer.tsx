@@ -127,7 +127,7 @@ const footerLinks = {
     { name: "Agencja SM Katowice", href: "/agencja-social-media/katowice" },
     { name: "Agencja SM Lublin", href: "/agencja-social-media/lublin" },
     { name: "Agencja SM Szczecin", href: "/agencja-social-media/szczecin" },
-    { name: "Pillar Agencja SM", href: "/agencja-social-media" },
+    { name: "Agencja social media", href: "/agencja-social-media" },
   ],
   miasta: [
     { name: "Poznań", href: "/uslugi/strony-internetowe/poznan" },
@@ -210,8 +210,8 @@ export function Footer() {
 
   return (
     <footer
-      className="relative overflow-hidden mt-24 text-white"
-      style={{ background: "var(--dv-ink)" }}
+      className="site-footer relative overflow-hidden mt-16 text-white"
+      style={{ background: "#0d0d13" }}
     >
       {/* Ambient radial glow from design */}
       <div
@@ -223,7 +223,7 @@ export function Footer() {
         }}
       />
 
-      <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 pt-24 pb-10">
+      <div className="relative max-w-[1440px] mx-auto px-6 md:px-12 pt-14 md:pt-20 pb-10">
         {/* CTA Booking */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-10 mb-10 border-b border-white/10">
           <div>
@@ -271,6 +271,7 @@ export function Footer() {
             >
               <div className="flex-1">
                 <Input
+                  aria-label="Adres e-mail do newslettera"
                   type="email"
                   placeholder="Twój email"
                   value={email}
@@ -334,8 +335,8 @@ export function Footer() {
         </div>
 
         {/* Brand block + contact */}
-        <div className="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr_1fr_1fr_1fr] gap-10 pb-12">
-          <div className="md:col-span-2">
+        <div className="grid grid-cols-2 md:grid-cols-[1.3fr_1fr_1fr_1fr_1fr_1fr] gap-8 pb-12">
+          <div className="col-span-2">
             <p className="text-white/70 leading-relaxed max-w-sm mb-6">
               Studio marketingu wzrostu. Projektujemy marketing, który realnie
               pozyskuje klientów.
@@ -473,85 +474,26 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Miasta */}
-        <div className="pt-8 border-t border-white/10">
-          <h4 className={columnHeader}>Strony internetowe w Polsce</h4>
-          <div className="flex flex-wrap gap-2">
-            {footerLinks.miasta.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Agencja marketingowa - miasta */}
-        <div className="pt-8 mt-8 border-t border-white/10">
-          <h4 className={columnHeader}>Agencja marketingowa - miasta</h4>
-          <div className="flex flex-wrap gap-2">
-            {footerLinks.agencjaMiasta.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Agencja Social Media - miasta */}
-        <div className="pt-8 mt-8 border-t border-white/10">
-          <h4 className={columnHeader}>Agencja Social Media w miastach</h4>
-          <div className="flex flex-wrap gap-2">
-            {footerLinks.agencjaSocialMediaMiasta.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* SEO - miasta */}
-        <div className="pt-8 mt-8 border-t border-white/10">
-          <h4 className={columnHeader}>Pozycjonowanie SEO w miastach</h4>
-          <div className="flex flex-wrap gap-2">
-            {footerLinks.seoMiasta.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Social Media - kanaly */}
-        <div className="pt-8 mt-8 border-t border-white/10">
-          <h4 className={columnHeader}>Social Media - kanały</h4>
-          <div className="flex flex-wrap gap-2">
-            {footerLinks.socialMedia.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="text-xs font-geist-mono tracking-[0.1em] uppercase text-white/60 hover:text-white px-3 py-1.5 rounded-full bg-white/[0.04] border border-white/10 hover:bg-white/[0.08] hover:border-[color:var(--dv-accent-pink)] transition-all"
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
-        </div>
+        <nav aria-label="Pozostałe usługi i miasta" className="border-t border-white/10">
+          {[
+            { title: "Strony internetowe w Polsce", links: footerLinks.miasta },
+            { title: "Agencja marketingowa — miasta", links: footerLinks.agencjaMiasta },
+            { title: "Agencja social media w miastach", links: footerLinks.agencjaSocialMediaMiasta },
+            { title: "Pozycjonowanie SEO w miastach", links: footerLinks.seoMiasta },
+            { title: "Social media — kanały", links: footerLinks.socialMedia },
+          ].map(group => (
+            <details key={group.title} className="border-b border-white/10 py-4">
+              <summary className="cursor-pointer text-sm text-white/80 py-2 hover:text-white">{group.title}</summary>
+              <div className="flex flex-wrap gap-2 pt-4 pb-2">
+                {group.links.map(link => (
+                  <Link key={link.href} to={link.href} className="text-xs font-geist-mono tracking-[0.06em] uppercase text-white/75 hover:text-white px-3 py-2 rounded-full bg-white/[0.04] border border-white/10 hover:border-[color:var(--dv-accent-pink)] transition-colors">
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </details>
+          ))}
+        </nav>
 
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 mt-10 border-t border-white/10 dv-mono uppercase tracking-[0.12em] text-[11px] text-white/50">

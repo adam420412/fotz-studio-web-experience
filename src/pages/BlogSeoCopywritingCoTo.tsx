@@ -97,27 +97,27 @@ export default function BlogSeoCopywritingCoTo() {
     <Layout>
       <SEOHead
         title="SEO Copywriting — co to jest? Pisanie pod Google i dla ludzi"
-        description="SEO copywriting — definicja, struktura (URL, meta title, H1, intro), 5 formatów content, formuły AIDA/PAS i jak dobierać słowa kluczowe. Kompletny…"
-        canonical="https://fotz.pl/blog/seo-copywriting-co-to"
+        description="Kompletny przewodnik po SEO copywritingu: struktura artykułu, dobór słów kluczowych, formuły (AIDA, PAS), formaty contentu i meta tagi."
+        canonical="https://www.fotz-studio.pl/blog/seo-copywriting-co-to"
 
         keywords="SEO Copywriting co to jest, SEO Copywriting definicja, czym jest SEO Copywriting, SEO Copywriting w marketingu, SEO Copywriting przykłady, jak działa SEO Copywriting, SEO Copywriting strategia"
       />
       <ArticleSchema
         title="SEO Copywriting — co to jest i jak pisać pod Google?"
         description="Kompletny przewodnik po SEO copywritingu: struktura artykułu, dobór słów kluczowych, formuły (AIDA, PAS), formaty contentu i meta tagi."
-        url="https://fotz.pl/blog/seo-copywriting-co-to"
+        url="https://www.fotz-studio.pl/blog/seo-copywriting-co-to"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SEO Copywriting", url: "https://fotz.pl/blog/seo-copywriting-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SEO Copywriting", url: "https://www.fotz-studio.pl/blog/seo-copywriting-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "SEO Copywriting", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "SEO Copywriting", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             SEO Copywriting — co to jest i jak pisać pod Google?
           </h1>

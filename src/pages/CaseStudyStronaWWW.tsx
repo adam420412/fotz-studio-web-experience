@@ -37,11 +37,11 @@ const faqItems: FAQItem[] = [
 const CaseStudyStronaWWW: React.FC = () => {
   const pageTitle = 'Strona internetowa dla firmy produkcyjnej — od 0 do 4,500 odwiedzin miesięcznie | Case Study';
   const pageDescription = 'Case study: jak zamieniliśmy starą, niezniszczoną stronę firmy produkcyjnej w nowoczesny portal B2B generujący 4,500 organic visits i 34 leads miesięcznie. React, SEO techniczne, Core Web Vitals.';
-  const canonicalUrl = 'https://fotz.pl/case-studies/strona-internetowa-dla-firmy-produkcyjnej';
+  const canonicalUrl = 'https://www.fotz-studio.pl/case-studies/strona-internetowa-dla-firmy-produkcyjnej';
 
   const breadcrumbs = [
-    { name: 'Strona główna', url: 'https://fotz.pl' },
-    { name: 'Case Studies', url: 'https://fotz.pl/case-studies' },
+    { name: 'Strona główna', url: 'https://www.fotz-studio.pl' },
+    { name: 'Case Studies', url: 'https://www.fotz-studio.pl/case-studies' },
     { name: 'Strona dla firmy produkcyjnej', url: canonicalUrl }
   ];
 
@@ -73,7 +73,7 @@ const CaseStudyStronaWWW: React.FC = () => {
             <div className="breadcrumb text-sm text-slate-300 mb-6">
               <a href="/" className="hover:text-white transition">Strona główna</a>
               {' > '}
-              <a href="/case-studies" className="hover:text-white transition">Case Studies</a>
+              <a href="/realizacje" className="hover:text-white transition">Case Studies</a>
               {' > Strona dla firmy produkcyjnej'}
             </div>
             

@@ -33,24 +33,24 @@ const BlogGoogleVsFacebook = () => {
   return (
     <>
       <SEOHead
-        title="Google Ads vs Facebook Ads | Fotz Studio"
+        title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu?"
         description="Google Ads vs Facebook Ads — porównanie platform reklamowych. Kiedy wybrać Google Ads, a kiedy Meta Ads? Koszty, efektywność i strategie. Poradnik Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/performance-marketing/google-vs-facebook"
+        canonical="https://www.fotz-studio.pl/performance-marketing/google-vs-facebook"
         keywords="google ads vs facebook ads, google vs facebook reklama, google ads czy facebook ads, porównanie google facebook reklama, kiedy wybrać google ads, kiedy wybrać facebook ads"
       />
       <ArticleSchema
         title="Google Ads vs Facebook Ads - która platforma lepsza dla Twojego biznesu?"
         description="Porównanie Google Ads i Facebook Ads. Analiza kosztów, targetowania i ROI."
-        url="https://fotz.pl/performance-marketing/google-vs-facebook"
+        url="https://www.fotz-studio.pl/performance-marketing/google-vs-facebook"
         datePublished="2025-01-04"
         dateModified="2026-04-01"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Google Ads vs Facebook Ads", url: "https://fotz.pl/performance-marketing/google-vs-facebook" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Google Ads vs Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-vs-facebook" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

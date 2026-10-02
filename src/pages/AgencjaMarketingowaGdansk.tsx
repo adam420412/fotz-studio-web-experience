@@ -133,14 +133,14 @@ export default function AgencjaMarketingowaGdansk() {
       <SEOHead
         title="Agencja Marketingowa Gdańsk | FOTZ – Marketing Dla Firm w Gdańsku"
         description="Agencja marketingowa Gdańsk ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdańska i Trójmiasta. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/gdansk"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/gdansk"
         keywords="agencja marketingowa gdańsk, marketing internetowy gdańsk, agencja reklamowa gdańsk, kampanie reklamowe gdańsk, seo gdańsk, google ads gdańsk, agencja marketingowa trójmiasto"
       />
 
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Agencje marketingowe", url: "https://fotz.pl/agencje-marketingowe" },
-        { name: "Gdańsk", url: "https://fotz.pl/agencja-marketingowa/gdansk" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Agencje marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+        { name: "Gdańsk", url: "https://www.fotz-studio.pl/agencja-marketingowa/gdansk" }
       ]}/>
 
       <ServiceSchema
@@ -172,11 +172,15 @@ export default function AgencjaMarketingowaGdansk() {
               kompleksowe rozwiązania marketingowe, które przynoszą wymierne wyniki.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                Bezpłatna Wycena
+              <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                <Link to="/kontakt">
+                  Bezpłatna Wycena
+                </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                Zadzwoń: +48 123 456 789
+              <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                <a href="tel:+48790814814">
+                  Zadzwoń: +48 790 814 814
+                </a>
               </Button>
             </div>
           </div>
@@ -271,9 +275,9 @@ export default function AgencjaMarketingowaGdansk() {
                       </li>
                     ))}
                   </ul>
-                  <Button className={`w-full ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}>
+                  <Button asChild className={`w-full ${pkg.popular ? 'bg-blue-600 hover:bg-blue-700' : 'border-blue-600 text-blue-600 hover:bg-blue-50'}`}><a href="/kontakt">
                     Więcej Informacji
-                  </Button>
+                  </a></Button>
                 </CardContent>
               </Card>
             ))}
@@ -437,16 +441,19 @@ export default function AgencjaMarketingowaGdansk() {
             Zapraszamy na bezpłatną konsultację. Analizujemy Twoją obecność online i sugerujemy konkretne działania.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              Rezerwuj Konsultację
+            <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+              <Link to="/kontakt">
+                Rezerwuj Konsultację
+              </Link>
             </Button>
-            <Button 
+            <Button asChild 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-blue-700"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              +48 123 456 789
+              className="border-white text-white hover:bg-blue-700">
+              <a href="tel:+48790814814">
+                <Phone className="w-5 h-5 mr-2" />
+                +48 790 814 814
+              </a>
             </Button>
           </div>
           <p className="mt-8 text-sm opacity-75">
@@ -464,7 +471,7 @@ export default function AgencjaMarketingowaGdansk() {
                 <div className="text-center">
                   <Phone className="w-8 h-8 text-blue-600 mx-auto mb-2" />
                   <h3 className="font-bold text-gray-900 mb-1">Telefon</h3>
-                  <p className="text-gray-700">+48 123 456 789</p>
+                  <p className="text-gray-700">+48 790 814 814</p>
                 </div>
                 <div className="text-center">
                   <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-2" />

@@ -141,7 +141,7 @@ const StronyInternetoweGorzow = () => {
       <SEOHead
         title="Strony Internetowe Gorzów | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Gorzów — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gorzowa. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/gorzow"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/gorzow"
         keywords="strony internetowe gorzów, tworzenie stron gorzów, strony www gorzów, projektowanie stron gorzów wielkopolski"
       />
 
@@ -153,9 +153,9 @@ const StronyInternetoweGorzow = () => {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Gorzów Wielkopolski", url: "https://fotz.pl/uslugi/strony-internetowe/gorzow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Gorzów Wielkopolski", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/gorzow" },
         ]}/>
 
       <FAQSchema

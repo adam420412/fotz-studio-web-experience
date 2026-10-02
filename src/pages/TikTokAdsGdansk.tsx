@@ -53,8 +53,8 @@ export const TikTokAdsGdansk = () => {
     <Layout>
       <SEOHead
         title="TikTok Ads Gdańsk | Fotz Studio"
-        description="Agencja TikTok Ads Gdańsk — kampanie TikTok for Business dla firm z Gdańska i Trójmiasta. In-Feed Ads, Spark Ads, TikTok Pixel, kreacje wideo. Fotz.pl …"
-        canonical="https://fotz.pl/performance-marketing/tiktok-ads/gdansk"
+        description="Agencja TikTok Ads Gdańsk — kampanie TikTok for Business dla firm z Gdańska i Trójmiasta. In-Feed Ads, Spark Ads, TikTok Pixel, kreacje wideo i optymalizacja konwersji w Fotz.pl."
+        canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads/gdansk"
         keywords="tiktok ads gdańsk, agencja tiktok ads gdańsk, reklamy tiktok trójmiasto, tiktok for business gdańsk, tiktok pixel gdańsk, tiktok ads manager gdańsk, kampanie tiktok gdańsk, in-feed ads gdańsk"
       />
 
@@ -77,9 +77,9 @@ export const TikTokAdsGdansk = () => {
             <p className="text-lg md:text-xl text-gray-700 mb-8">
               Agencja TikTok Ads Gdańsk — Fotz.pl specjalizuje się w kampaniach TikTok for Business dla firm z Gdańska i Trójmiasta. Tworzymy kreatywne materiały wideo, konfigurujemy TikTok Pixel, zarządzamy TikTok Ads Manager i prowadzimy reklamy z pełną optymalizacją konwersji. Dołącz do firm, które zwiększyły sprzedaż dzięki reklamom na platformie TikTok.
             </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+            <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
               Bezpłatna konsultacja
-            </button>
+            </a>
           </div>
         </section>
       </FadeInView>

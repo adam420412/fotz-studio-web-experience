@@ -101,21 +101,21 @@ export default function BlogSpinSellingCoTo() {
       <SEOHead
         title="SPIN Selling — co to jest i jak stosować? | Fotz.pl"
         description="SPIN Selling — metodologia sprzedaży Neila Rackhama: cztery typy pytań (Situation, Problem, Implication, Need-Payoff), przykłady i jak wdrożyć w zespole B2B."
-        canonical="https://fotz.pl/blog/spin-selling-metodologia-sprzedazy"
+        canonical="https://www.fotz-studio.pl/blog/spin-selling-metodologia-sprzedazy"
 
         keywords="SPIN Selling co to jest, SPIN Selling definicja, czym jest SPIN Selling, SPIN Selling przykłady, jak działa SPIN Selling, SPIN Selling znaczenie, SPIN Selling przewodnik"
       />
       <ArticleSchema
         title="SPIN Selling — co to jest i jak stosować?"
         description="Kompletny przewodnik po SPIN Selling: cztery typy pytań, przykłady i porównanie z innymi metodologiami."
-        url="https://fotz.pl/blog/spin-selling-metodologia-sprzedazy"
+        url="https://www.fotz-studio.pl/blog/spin-selling-metodologia-sprzedazy"
         datePublished="2024-02-05"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SPIN Selling", url: "https://fotz.pl/blog/spin-selling-metodologia-sprzedazy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SPIN Selling", url: "https://www.fotz-studio.pl/blog/spin-selling-metodologia-sprzedazy" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-slate-900 text-white py-20 px-4">

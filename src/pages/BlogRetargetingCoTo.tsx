@@ -65,9 +65,9 @@ export default function BlogRetargetingCoTo() {
   return (
     <>
       <SEOHead
-        title="Retargeting — co to jest i jak działa? | fotz.pl"
+        title="Retargeting — co to jest i jak działa? | FOTZ Studio"
         description="Retargeting co to jest — wyjaśniamy czym jest retargeting, jak działa Meta Pixel i Google remarketing, jak tworzyć kampanie i jaki ROAS osiągnąć."
-        canonical="https://fotz.pl/blog/retargeting-co-to"
+        canonical="https://www.fotz-studio.pl/blog/retargeting-co-to"
 
         keywords="Retargeting co to jest, Retargeting definicja, czym jest Retargeting, Retargeting przykłady, jak działa Retargeting, Retargeting znaczenie, Retargeting przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogRetargetingCoTo() {
         description="Czym jest retargeting (remarketing), typy (pixel, list, RLSA, dynamic), Meta Pixel, Google remarketing, jak tworzyć skuteczne kampanie retargetingowe i benchmarki ROAS."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/retargeting-co-to"
+        url="https://www.fotz-studio.pl/blog/retargeting-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

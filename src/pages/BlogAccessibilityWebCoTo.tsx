@@ -92,28 +92,28 @@ export default function BlogAccessibilityWebCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Dostępność Stron Internetowych | Fotz Studio"
+        title="Dostępność Stron Internetowych — co to jest i jak wdrożyć WCAG?"
         description="Dostępność stron internetowych — definicja, 4 zasady WCAG (POUR), poziomy A/AA/AAA, wymogi prawne w Polsce i checklist audytu dostępności cyfrowej."
-        canonical="https://fotz.pl/blog/dostepnosc-stron-internetowych"
+        canonical="https://www.fotz-studio.pl/blog/dostepnosc-stron-internetowych"
 
         keywords="Dostępność Stron Internetowych co to jest, Dostępność Stron Internetowych definicja, czym jest Dostępność Stron Internetowych, Dostępność Stron Internetowych przykłady, jak działa Dostępność Stron Internetowych, Dostępność Stron Internetowych znaczenie, Dostępność Stron Internetowych przewodnik"
       />
       <ArticleSchema
         title="Dostępność Stron Internetowych — co to jest i jak wdrożyć WCAG?"
         description="Kompletny przewodnik po web accessibility: 4 zasady WCAG (POUR), checklist audytu, narzędzia testowania i wymogi prawne w Polsce."
-        url="https://fotz.pl/blog/dostepnosc-stron-internetowych"
+        url="https://www.fotz-studio.pl/blog/dostepnosc-stron-internetowych"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Dostępność Cyfrowa", url: "https://fotz.pl/blog/dostepnosc-stron-internetowych" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Dostępność Cyfrowa", url: "https://www.fotz-studio.pl/blog/dostepnosc-stron-internetowych" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Dostępność Cyfrowa", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Dostępność Cyfrowa", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Dostępność Stron Internetowych — co to jest i jak wdrożyć WCAG?
           </h1>

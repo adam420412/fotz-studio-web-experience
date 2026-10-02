@@ -68,23 +68,23 @@ export default function BlogRiskManagementCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Risk Management | Fotz Studio"
+        title="Risk Management — co to jest i jak zarządzać ryzykiem?"
         description="Risk management — definicja, 6 kategorii ryzyk, 4 strategie odpowiedzi (Avoid, Transfer, Mitigate, Accept), rejestr ryzyk i macierz P×W. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/risk-management-co-to"
+        canonical="https://www.fotz-studio.pl/blog/risk-management-co-to"
 
         keywords="Risk Management co to jest, Risk Management definicja, czym jest Risk Management, Risk Management przykłady, jak działa Risk Management, Risk Management znaczenie, Risk Management przewodnik"
       />
       <ArticleSchema
         title="Risk Management — co to jest i jak zarządzać ryzykiem?"
         description="Kompletny przewodnik po risk management: 6 kategorii ryzyk, 4 strategie odpowiedzi, rejestr ryzyk i macierz prawdopodobieństwo × wpływ."
-        url="https://fotz.pl/blog/risk-management-co-to"
+        url="https://www.fotz-studio.pl/blog/risk-management-co-to"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Risk Management", url: "https://fotz.pl/blog/risk-management-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Risk Management", url: "https://www.fotz-studio.pl/blog/risk-management-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -92,7 +92,7 @@ export default function BlogRiskManagementCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Risk Management", url: "https://fotz.pl" },
+              { name: "Risk Management", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Risk Management — co to jest i jak zarządzać ryzykiem?

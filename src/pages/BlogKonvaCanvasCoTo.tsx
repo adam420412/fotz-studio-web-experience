@@ -21,7 +21,7 @@ const faqItems = [
   },
   {
     question: "QR Code i Barcode w React — generowanie i skanowanie?",
-    answer: "QR Code generowanie: qrcode.react: popularny. QRCodeSVG lub QRCodeCanvas. import {QRCodeSVG} from 'qrcode.react'. QRCodeSVG value='https://fotz.pl' size={256} bgColor='#ffffff' fgColor='#000000'. Poziom korekcji błędów: level: 'L' | 'M' | 'Q' | 'H'. Wyższy = bardziej odporny na uszkodzenia. Mniejszy moduły ale więcej danych. Logo w QR: imageSettings prop. src, height, width, x, y, excavate. react-qr-code: alternatywa, SVG-only. QR stylizowany: qr-code-styling — custom shapes, kolory, logo. qrbtf — piękne dekorowane QR. Barcode generowanie: react-barcode: EAN-13, Code128, QR, i inne. import Barcode from 'react-barcode'. Barcode value='123456789012'. jsbarcode — base library. Typy: Code128, EAN-13, EAN-8, UPC, Code39, ITF, MSI, Pharmacode, Codabar. QR Code skanowanie: @zxing/library: ZXing port do JS. Kamera -> dekoduj QR/barcode. html5-qrcode: uproszczony wrapper. react-qr-reader: React wrapper dla skanera. Używa getUserMedia API. Kamera. Dostęp: HTTPS wymagany. Zezwolenie użytkownika. ZXing w React Native: @zxing/browser dla web. Expo: expo-barcode-scanner. expo-camera z onBarCodeScanned. Use cases: checkout systems. Ticketing. Product catalogs. Menu restauracji. Login z QR (WhatsApp Web). Linki do aplikacji. vCard QR. WiFi QR. PDF417 i DataMatrix: Inne 2D barcodes. pdf417.js, @bwip-js/browser. Logistyka, boarding passes.",
+    answer: "QR Code generowanie: qrcode.react: popularny. QRCodeSVG lub QRCodeCanvas. import {QRCodeSVG} from 'qrcode.react'. QRCodeSVG value='https://www.fotz-studio.pl' size={256} bgColor='#ffffff' fgColor='#000000'. Poziom korekcji błędów: level: 'L' | 'M' | 'Q' | 'H'. Wyższy = bardziej odporny na uszkodzenia. Mniejszy moduły ale więcej danych. Logo w QR: imageSettings prop. src, height, width, x, y, excavate. react-qr-code: alternatywa, SVG-only. QR stylizowany: qr-code-styling — custom shapes, kolory, logo. qrbtf — piękne dekorowane QR. Barcode generowanie: react-barcode: EAN-13, Code128, QR, i inne. import Barcode from 'react-barcode'. Barcode value='123456789012'. jsbarcode — base library. Typy: Code128, EAN-13, EAN-8, UPC, Code39, ITF, MSI, Pharmacode, Codabar. QR Code skanowanie: @zxing/library: ZXing port do JS. Kamera -> dekoduj QR/barcode. html5-qrcode: uproszczony wrapper. react-qr-reader: React wrapper dla skanera. Używa getUserMedia API. Kamera. Dostęp: HTTPS wymagany. Zezwolenie użytkownika. ZXing w React Native: @zxing/browser dla web. Expo: expo-barcode-scanner. expo-camera z onBarCodeScanned. Use cases: checkout systems. Ticketing. Product catalogs. Menu restauracji. Login z QR (WhatsApp Web). Linki do aplikacji. vCard QR. WiFi QR. PDF417 i DataMatrix: Inne 2D barcodes. pdf417.js, @bwip-js/browser. Logistyka, boarding passes.",
   },
   {
     question: "PDF Viewer i generowanie PDF w React — react-pdf i pdfmake?",
@@ -43,22 +43,22 @@ export default function BlogKonvaCanvasCoTo() {
     <Layout>
       <SEOHead
         title="Konva.js, Fabric.js, html2canvas | Fotz Studio"
-        description="react-konva (scena, shapes, drag), Fabric.js (object model, free drawing), html2canvas (DOM screenshot), Satori OG images, QR Code (qrcode.react) i PDF…"
-        canonical="https://fotz.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
+        description="6 bibliotek canvas (react-konva/Fabric.js/html2canvas/Satori/Three.js/PixiJS) — 2D/3D graphics, DOM screenshots, QR Code skanowanie i PDF generowanie."
+        canonical="https://www.fotz-studio.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
 
         keywords="Konva.js, Fabric.js, html2canvas co to jest, Konva.js, Fabric.js, html2canvas jak działa, Konva.js, Fabric.js, html2canvas tutorial, Konva.js, Fabric.js, html2canvas przykład, czym jest Konva.js, Fabric.js, html2canvas, Konva.js, Fabric.js, html2canvas dokumentacja, Konva.js, Fabric.js, html2canvas przewodnik"
       />
       <ArticleSchema
         title="Konva.js, Fabric.js, html2canvas — Canvas i screenshot w React 2024?"
         description="6 bibliotek canvas (react-konva/Fabric.js/html2canvas/Satori/Three.js/PixiJS) — 2D/3D graphics, DOM screenshots, QR Code skanowanie i PDF generowanie."
-        url="https://fotz.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
+        url="https://www.fotz-studio.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Canvas i Graphics React", url: "https://fotz.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Canvas i Graphics React", url: "https://www.fotz-studio.pl/blog/konva-fabricjs-html2canvas-canvas-screenshot-qr-pdf-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">

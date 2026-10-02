@@ -42,23 +42,23 @@ export default function BlogDbMigrationsCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Database Migrations | Fotz Studio"
-        description="Database migrations: Flyway vs Liquibase vs Alembic vs Prisma, zero-downtime schema changes, expand-contract pattern, rollback i schema evolution w…"
-        canonical="https://fotz.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback"
+        title="Database Migrations — co to jest, Flyway, Liquibase, Alembic, zero-downtime, rollback?"
+        description="Database Migrations: 6 narzędzi (Flyway/Liquibase/Alembic/Django/Prisma/Goose), zero-downtime schema changes, expand-contract, rollback i mikrousługi."
+        canonical="https://www.fotz-studio.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback"
 
         keywords="Database Migrations co to jest, Database Migrations jak działa, Database Migrations tutorial, Database Migrations przykład, czym jest Database Migrations, Database Migrations dokumentacja, Database Migrations przewodnik"
       />
       <ArticleSchema
         title="Database Migrations — co to jest, Flyway, Liquibase, Alembic, zero-downtime, rollback?"
         description="Database Migrations: 6 narzędzi (Flyway/Liquibase/Alembic/Django/Prisma/Goose), zero-downtime schema changes, expand-contract, rollback i mikrousługi."
-        url="https://fotz.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback"
+        url="https://www.fotz-studio.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Database Migrations", url: "https://fotz.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Database Migrations", url: "https://www.fotz-studio.pl/blog/database-migrations-co-to-jest-flyway-liquibase-alembic-zero-downtime-rollback" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-950 text-white py-20 px-4">

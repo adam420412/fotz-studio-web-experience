@@ -31,12 +31,12 @@ const faqData: FAQ[] = [
   },
   {
     keywords: ["kontakt", "telefon", "email", "zadzwonić", "napisać", "mail"],
-    answer: "Możesz się z nami skontaktować: 📧 kontakt@fotz.pl, 📱 +48 123 456 789. Biuro czynne pon-pt 9:00-17:00. Możesz też umówić bezpłatną konsultację przez kalendarz na stronie /kontakt.",
+    answer: "Możesz się z nami skontaktować: 📧 kontakt@fotz.pl, 📱 +48 790 814 814. Biuro czynne pon-pt 9:00-17:00. Możesz też umówić bezpłatną konsultację przez kalendarz na stronie /kontakt.",
     category: "ogólne"
   },
   {
     keywords: ["konsultacja", "spotkanie", "rozmowa", "bezpłatna", "darmowa"],
-    answer: "Oferujemy bezpłatną 30-minutową konsultację! Omówimy Twoje potrzeby i zaproponujemy rozwiązania. Umów się przez kalendarz na stronie /kontakt lub zadzwoń: +48 123 456 789.",
+    answer: "Oferujemy bezpłatną 30-minutową konsultację! Omówimy Twoje potrzeby i zaproponujemy rozwiązania. Umów się przez kalendarz na stronie /kontakt lub zadzwoń: +48 790 814 814.",
     category: "ogólne"
   },
   {
@@ -290,7 +290,7 @@ export function ChatbotFAQ() {
       return data?.answer || "Przepraszam, nie mogę teraz odpowiedzieć. Skontaktuj się z nami: kontakt@fotz.pl";
     } catch (error) {
       console.error('AI response error:', error);
-      return "Przepraszam, wystąpił problem techniczny. Skontaktuj się z nami bezpośrednio: kontakt@fotz.pl lub +48 123 456 789.";
+      return "Przepraszam, wystąpił problem techniczny. Skontaktuj się z nami bezpośrednio: kontakt@fotz.pl lub +48 790 814 814.";
     }
   };
 
@@ -379,7 +379,7 @@ export function ChatbotFAQ() {
 
       const escalationMessage: Message = {
         id: Date.now(),
-        text: "✅ Dziękujemy! Nasz konsultant skontaktuje się z Tobą w ciągu 24 godzin roboczych. Jeśli sprawa jest pilna, zadzwoń: +48 123 456 789",
+        text: "✅ Dziękujemy! Nasz konsultant skontaktuje się z Tobą w ciągu 24 godzin roboczych. Jeśli sprawa jest pilna, zadzwoń: +48 790 814 814",
         isBot: true,
         isEscalation: true
       };
@@ -393,7 +393,7 @@ export function ChatbotFAQ() {
       console.error("Escalation error:", error);
       toast({
         title: "Błąd wysyłania",
-        description: "Spróbuj ponownie lub zadzwoń: +48 123 456 789",
+        description: "Spróbuj ponownie lub zadzwoń: +48 790 814 814",
         variant: "destructive"
       });
     } finally {
@@ -405,6 +405,8 @@ export function ChatbotFAQ() {
     <>
       {/* Chat Button */}
       <motion.button
+        aria-label="Otwórz asystenta FOTZ"
+        aria-expanded={isOpen}
         onClick={() => setIsOpen(true)}
         className={`fixed bottom-24 right-6 z-40 w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center hover:scale-110 transition-transform ${isOpen ? 'hidden' : ''}`}
         whileHover={{ scale: 1.1 }}
@@ -424,7 +426,7 @@ export function ChatbotFAQ() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-background border border-border rounded-2xl shadow-2xl overflow-hidden"
+            className="fixed bottom-24 right-6 z-50 w-[380px] max-w-[calc(100vw-3rem)] bg-background border border-border rounded-2xl shadow-2xl max-h-[calc(100dvh-7rem)] overflow-y-auto"
           >
             {/* Header */}
             <div className="bg-primary text-primary-foreground p-4 flex items-center justify-between">
@@ -441,6 +443,7 @@ export function ChatbotFAQ() {
                 </div>
               </div>
               <button
+                aria-label="Zamknij asystenta FOTZ"
                 onClick={() => setIsOpen(false)}
                 className="w-8 h-8 rounded-full hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"
               >

@@ -12,14 +12,14 @@ export default function FacebookAdsLublin() {
       <SEOHead
         title="Agencja Facebook Ads Lublin — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Lublin ✓ Kampanie Meta Ads dla firm z Lublina i Lubelszczyzny. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/facebook-ads/lublin"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/lublin"
         keywords="facebook ads lublin, meta ads lublin, reklamy facebook lublin, agencja facebook ads lublin, kampanie facebook lublin, instagram ads lublin, facebook ads dla firm lublin, reklama na facebooku lublin, meta ads agencja lublin, facebook ads cennik lublin"
       />
       <BreadcrumbSchema items={[
-          { name: "Fotz.pl", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-          { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Lublin", url: "https://fotz.pl" }
+          { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+          { name: "Lublin", url: "https://www.fotz-studio.pl" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Lublin"
@@ -32,7 +32,7 @@ export default function FacebookAdsLublin() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { name: "Lublin", url: "https://fotz.pl" }
+            { name: "Lublin", url: "https://www.fotz-studio.pl" }
           ]}/>
 
         {/* HERO SECTION */}
@@ -69,12 +69,12 @@ export default function FacebookAdsLublin() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition">
                     Bezpłatna konsultacja
-                  </button>
-                  <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-lg transition">
-                    Dowiedz się więcej
-                  </button>
+                  </a>
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-bold py-3 px-8 rounded-lg transition">
+                    Zapytaj o szczegóły
+                  </a>
                 </div>
 
                 <p className="text-sm text-gray-600 mt-6">
@@ -294,9 +294,9 @@ export default function FacebookAdsLublin() {
                     <li>✓ Raport co 2 tygodnie</li>
                     <li>✓ Email support</li>
                   </ul>
-                  <button className="w-full border-2 border-blue-600 text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-blue-50 transition">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-blue-600 text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-blue-50 transition">
                     Wybierz
-                  </button>
+                  </a>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-green-600">
@@ -309,9 +309,9 @@ export default function FacebookAdsLublin() {
                     <li>✓ Raport tygodniowy</li>
                     <li>✓ Telefon i email</li>
                   </ul>
-                  <button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition">
                     Wybierz
-                  </button>
+                  </a>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-purple-600">
@@ -324,9 +324,9 @@ export default function FacebookAdsLublin() {
                     <li>✓ Raport co 3 dni</li>
                     <li>✓ Dedykowany manager</li>
                   </ul>
-                  <button className="w-full border-2 border-purple-600 text-purple-600 font-bold py-2 px-4 rounded-lg hover:bg-purple-50 transition">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-purple-600 text-purple-600 font-bold py-2 px-4 rounded-lg hover:bg-purple-50 transition">
                     Wybierz
-                  </button>
+                  </a>
                 </div>
 
                 <div className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition border-t-4 border-red-600">
@@ -339,9 +339,9 @@ export default function FacebookAdsLublin() {
                     <li>✓ Raport codziennie</li>
                     <li>✓ Account manager + analityk</li>
                   </ul>
-                  <button className="w-full border-2 border-red-600 text-red-600 font-bold py-2 px-4 rounded-lg hover:bg-red-50 transition">
+                  <a href="/kontakt" className="inline-flex min-h-11 items-center justify-center text-center w-full border-2 border-red-600 text-red-600 font-bold py-2 px-4 rounded-lg hover:bg-red-50 transition">
                     Zapytaj ofertę
-                  </button>
+                  </a>
                 </div>
               </div>
             </FadeInView>

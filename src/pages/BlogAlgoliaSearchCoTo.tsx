@@ -42,23 +42,23 @@ export default function BlogAlgoliaSearchCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Algolia, Typesense, Meilisearch | Fotz Studio"
+        title="Algolia, Typesense, Meilisearch — search engine dla aplikacji web 2024?"
         description="Algolia vs Typesense vs Meilisearch vs Elasticsearch — hosted i open-source search engines, InstantSearch, semantic search, vector search i RAG dla Next.js."
-        canonical="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
+        canonical="https://www.fotz-studio.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
 
         keywords="Algolia, Typesense, Meilisearch co to jest, Algolia, Typesense, Meilisearch definicja, czym jest Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch przykłady, jak działa Algolia, Typesense, Meilisearch, Algolia, Typesense, Meilisearch znaczenie, Algolia, Typesense, Meilisearch przewodnik"
       />
       <ArticleSchema
         title="Algolia, Typesense, Meilisearch — search engine dla aplikacji web 2024?"
         description="6 rozwiązań search (Algolia/Typesense/Meilisearch/Elasticsearch/pgvector/Pinecone) — full-text search, faceting, typo-tolerance, semantic search i RAG."
-        url="https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
+        url="https://www.fotz-studio.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Search Engines Web", url: "https://fotz.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Search Engines Web", url: "https://www.fotz-studio.pl/blog/algolia-typesense-meilisearch-elasticsearch-search-engine-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-950 text-white py-20 px-4">

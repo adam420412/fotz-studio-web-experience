@@ -117,22 +117,22 @@ export default function BlogEmpathyMapCoTo() {
     <Layout>
       <SEOHead
         title="Mapa Empatii — co to jest? Empathy Map w UX i Design Thinking"
-        description="Mapa empatii (empathy map) — definicja, 6 kwadrantów (mówi, myśli, robi, czuje, słyszy, widzi), różnica vs persona i jak przeprowadzić warsztat…"
-        canonical="https://fotz.pl/blog/mapa-empatii-co-to"
+        description="Kompletny przewodnik po mapie empatii: 6 kwadrantów, różnica vs persona, warsztat krok po kroku i przykłady zastosowania."
+        canonical="https://www.fotz-studio.pl/blog/mapa-empatii-co-to"
 
         keywords="Mapa Empatii co to jest, Mapa Empatii definicja, czym jest Mapa Empatii, Mapa Empatii przykłady, jak działa Mapa Empatii, Mapa Empatii znaczenie, Mapa Empatii przewodnik"
       />
       <ArticleSchema
         title="Mapa Empatii — co to jest i jak ją tworzyć?"
         description="Kompletny przewodnik po mapie empatii: 6 kwadrantów, różnica vs persona, warsztat krok po kroku i przykłady zastosowania."
-        url="https://fotz.pl/blog/mapa-empatii-co-to"
+        url="https://www.fotz-studio.pl/blog/mapa-empatii-co-to"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Mapa Empatii", url: "https://fotz.pl/blog/mapa-empatii-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Mapa Empatii", url: "https://www.fotz-studio.pl/blog/mapa-empatii-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -140,7 +140,7 @@ export default function BlogEmpathyMapCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Mapa Empatii", url: "https://fotz.pl" },
+              { name: "Mapa Empatii", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Mapa Empatii — co to jest i jak ją tworzyć?

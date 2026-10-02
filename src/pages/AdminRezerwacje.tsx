@@ -123,7 +123,7 @@ export default function AdminRezerwacje() {
       <SEOHead
         title="Zarządzanie Rezerwacjami | Panel Admina | Fotz Studio"
         description="Panel administracyjny do zarządzania rezerwacjami konsultacji i spotkań."
-        canonical="https://fotz.pl/admin/rezerwacje"
+        canonical="https://www.fotz-studio.pl/admin/rezerwacje"
         noIndex={true}
       />
       <Layout>

@@ -42,23 +42,23 @@ export default function BlogNuxtCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Nuxt.js 3 | Fotz Studio"
-        description="Nuxt.js 3: useFetch/useAsyncData (SSR data), Nitro server routes (API), auto-imports, composables, Pinia, runtimeConfig, Nuxt Content i deployment…"
-        canonical="https://fotz.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024"
+        title="Nuxt.js 3 — useFetch, Nitro API routes, Pinia i deployment 2024?"
+        description="6 aspektów Nuxt vs Next.js (Vue/React, auto-imports, useFetch, Nitro, Pinia, deployment) — server routes, composables, Nuxt Content, DevTools i Nuxt vs Next.js porównanie."
+        canonical="https://www.fotz-studio.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024"
 
         keywords="Nuxt.js 3 co to jest, Nuxt.js 3 jak działa, Nuxt.js 3 tutorial, Nuxt.js 3 przykład, czym jest Nuxt.js 3, Nuxt.js 3 dokumentacja, Nuxt.js 3 przewodnik"
       />
       <ArticleSchema
         title="Nuxt.js 3 — useFetch, Nitro API routes, Pinia i deployment 2024?"
         description="6 aspektów Nuxt vs Next.js (Vue/React, auto-imports, useFetch, Nitro, Pinia, deployment) — server routes, composables, Nuxt Content, DevTools i Nuxt vs Next.js porównanie."
-        url="https://fotz.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024"
+        url="https://www.fotz-studio.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Nuxt.js 3", url: "https://fotz.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Nuxt.js 3", url: "https://www.fotz-studio.pl/blog/nuxtjs-3-usefetch-nitro-pinia-auto-imports-deployment-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-emerald-950 text-white py-20 px-4">

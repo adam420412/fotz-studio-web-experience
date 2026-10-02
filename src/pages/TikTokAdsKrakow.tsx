@@ -63,8 +63,8 @@ export default function TikTokAdsKrakow() {
     <Layout>
       <SEOHead
         title="TikTok Ads Kraków — agencja kampanii reklamowych TikTok | Fotz.pl"
-        description="Reklamy TikTok Ads Kraków — agencja Fotz.pl. Kampanie TikTok dla firm z Krakowa: In-Feed Ads, Spark Ads, kreacje wideo. Targetowanie Gen Z i Millenialsów…"
-        canonical="https://fotz.pl/performance-marketing/tiktok-ads/krakow"
+        description="Reklamy TikTok Ads Kraków — agencja Fotz.pl. Kampanie TikTok dla firm z Krakowa i Małopolski: In-Feed Ads, Spark Ads, kreacje wideo. Targetowanie Gen Z i Millenialsów. Bezpłatna konsultacja."
+        canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads/krakow"
         keywords="tiktok ads krakow, reklamy tiktok krakow, agencja tiktok ads krakow, kampanie tiktok krakow, tiktok advertising krakow, tiktok ads dla firm krakow, tiktok ads cennik krakow"
       />
 
@@ -76,10 +76,10 @@ export default function TikTokAdsKrakow() {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-          { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
-          { name: "TikTok Ads Kraków", url: "https://fotz.pl/performance-marketing/tiktok-ads/krakow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "TikTok Ads", url: "https://www.fotz-studio.pl/performance-marketing/tiktok-ads" },
+          { name: "TikTok Ads Kraków", url: "https://www.fotz-studio.pl/performance-marketing/tiktok-ads/krakow" },
         ]}/>
 
       <FAQSchema items={faqItems} />

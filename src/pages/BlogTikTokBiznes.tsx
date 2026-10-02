@@ -34,23 +34,23 @@ const BlogTikTokBiznes = () => {
     <>
       <SEOHead
         title="TikTok dla Biznesu — Marketing i Reklamy na TikToku dla Firm"
-        description="TikTok dla biznesu — jak prowadzić marketing na TikToku, tworzyć treści i reklamować firmę. TikTok Ads i organiczny zasięg. Poradnik TikTok marketing dla…"
+        description="TikTok dla biznesu — jak prowadzić marketing na TikToku, tworzyć treści i reklamować firmę. TikTok Ads i organiczny zasięg. Poradnik TikTok marketingu dla firm, także B2B."
         ogType="article"
-        canonical="https://fotz.pl/social-media/tiktok-biznes"
+        canonical="https://www.fotz-studio.pl/social-media/tiktok-biznes"
         keywords="tiktok dla biznesu, tiktok marketing, jak używać tiktoka w biznesie, tiktok reklama dla firm, tiktok ads biznes"
       />
       <ArticleSchema
         title="TikTok dla biznesu - jak skutecznie promować firmę na TikToku"
         description="Kompletny poradnik TikTok dla firm. Strategie, formaty i TikTok Ads."
-        url="https://fotz.pl/social-media/tiktok-biznes"
+        url="https://www.fotz-studio.pl/social-media/tiktok-biznes"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TikTok dla biznesu", url: "https://fotz.pl/social-media/tiktok-biznes" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TikTok dla biznesu", url: "https://www.fotz-studio.pl/social-media/tiktok-biznes" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

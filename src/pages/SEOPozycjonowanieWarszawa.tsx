@@ -28,7 +28,7 @@ const SEOPozycjonowanieWarszawa = () => {
       <SEOHead
         title="Pozycjonowanie Warszawa — Agencja SEO dla Firm z Warszawy"
         description="Pozycjonowanie stron internetowych Warszawa — lokalne i ogólnopolskie SEO, audyt SEO, link building dla firm z Warszawy. Fotz Studio."
-        canonical="https://fotz.pl/seo/pozycjonowanie-warszawa"
+        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-warszawa"
         keywords="pozycjonowanie warszawa, agencja seo warszawa, seo warszawa, pozycjonowanie stron warszawa, seo dla firm warszawa, pozycjonowanie lokalne warszawa, audyt seo warszawa"
       />
       <ServiceSchema
@@ -38,9 +38,9 @@ const SEOPozycjonowanieWarszawa = () => {
         areaServed="Warszawa"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Pozycjonowanie Warszawa", url: "https://fotz.pl/seo/pozycjonowanie-warszawa" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Pozycjonowanie Warszawa", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-warszawa" },
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

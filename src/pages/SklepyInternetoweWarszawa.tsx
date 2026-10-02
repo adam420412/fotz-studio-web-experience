@@ -149,8 +149,8 @@ export default function SklepyInternetoweWarszawa() {
       <Layout>
       <SEOHead
         title="Sklepy Internetowe Warszawa — Tworzenie Sklepu E-commerce"
-        description="Tworzenie sklepów internetowych Warszawa — sklep e-commerce WooCommerce, Shopify dla firm z Warszawy. Projektowanie sklepów online z SEO i integracjami…"
-        canonical="https://fotz.pl/uslugi/sklepy-internetowe/warszawa"
+        description="Tworzenie sklepów internetowych Warszawa — sklep e-commerce WooCommerce, Shopify dla firm z Warszawy. Projektowanie sklepów online z SEO i integracjami dopasowanymi do asortymentu, skali i budżetu."
+        canonical="https://www.fotz-studio.pl/uslugi/sklepy-internetowe/warszawa"
         keywords="tworzenie sklepów internetowych Warszawa, sklep internetowy Warszawa, wdrożenie e-commerce Warszawa, agencja e-commerce Warszawa, Shopify Warszawa, WooCommerce Warszawa, sklep online Warszawa, platforma e-commerce Warszawa, PrestaShop Warszawa, pozycjonowanie sklepu internetowego Warszawa, sklep internetowy dla firmy Warszawa"
       />
 
@@ -161,10 +161,10 @@ export default function SklepyInternetoweWarszawa() {
         areaServed="Warszawa"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Sklepy internetowe", url: "https://fotz.pl/uslugi/sklepy-internetowe" },
-          { name: "Warszawa", url: "https://fotz.pl/uslugi/sklepy-internetowe/warszawa" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Sklepy internetowe", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe" },
+          { name: "Warszawa", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/warszawa" }
         ]}/>
       <FAQSchema items={faqItems} />
 
@@ -487,7 +487,7 @@ export default function SklepyInternetoweWarszawa() {
             {[
               { label: "Sklepy internetowe Kraków", to: "/uslugi/sklepy-internetowe/krakow" },
               { label: "Strony internetowe Warszawa", to: "/uslugi/strony-internetowe/warszawa" },
-              { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa-warszawa" },
+              { label: "Agencja marketingowa Warszawa", to: "/agencja-marketingowa/warszawa" },
               { label: "Pozycjonowanie SEO", to: "/seo/pozycjonowanie" },
               { label: "Google Ads", to: "/performance-marketing/google-ads" },
               { label: "Strony internetowe Poznań", to: "/uslugi/strony-internetowe" },

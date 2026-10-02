@@ -64,9 +64,9 @@ export default function BlogCopywritingCennik() {
   return (
     <>
       <SEOHead
-        title="Copywriting cennik 2025 — ile kosztują teksty? | fotz.pl"
+        title="Copywriting cennik 2025 — ile kosztują teksty? | FOTZ Studio"
         description="Copywriting cennik — aktualne stawki za artykuły, landing pages, opisy produktów, emaile. Ile zarabia copywriter i kiedy opłaca się zlecić teksty. Sprawdź!"
-        canonical="https://fotz.pl/blog/copywriting-cennik"
+        canonical="https://www.fotz-studio.pl/blog/copywriting-cennik"
 
         keywords="Copywriting cennik 2025, Copywriting cennik 2025 co to jest, Copywriting cennik 2025 jak działa, Copywriting cennik 2025 definicja, Copywriting cennik 2025 przykłady, Copywriting cennik 2025 poradnik, Copywriting cennik 2025 przewodnik"
       />
@@ -75,7 +75,7 @@ export default function BlogCopywritingCennik() {
         description="Aktualne stawki copywriterskie — artykuły, landing pages, emaile, opisy produktów. Ile kosztuje copywriting w agencji vs freelancer."
         datePublished="2025-01-01"
         dateModified="2025-03-01"
-        url="https://fotz.pl/blog/copywriting-cennik"
+        url="https://www.fotz-studio.pl/blog/copywriting-cennik"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 
@@ -88,7 +88,7 @@ export default function BlogCopywritingCennik() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 5 min czytania</span>
-                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół fotz.pl</span>
+                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół FOTZ Studio</span>
                 <span className="flex items-center gap-1"><DollarSign className="w-4 h-4" /> Cennik</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">

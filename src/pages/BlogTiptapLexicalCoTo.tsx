@@ -42,23 +42,23 @@ export default function BlogTiptapLexicalCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Tiptap, Lexical, Slate.js | Fotz Studio"
+        title="Tiptap, Lexical, Slate.js — Rich Text Editors React i collaborative editing 2024?"
         description="Tiptap (ProseMirror, headless), Lexical (Meta/Facebook), Quill, Slate.js, TinyMCE — WYSIWYG editory React, Y.js collaborative editing, Hocuspocus i Liveblocks."
-        canonical="https://fotz.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024"
+        canonical="https://www.fotz-studio.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024"
 
         keywords="Tiptap, Lexical, Slate.js co to jest, Tiptap, Lexical, Slate.js jak działa, Tiptap, Lexical, Slate.js tutorial, Tiptap, Lexical, Slate.js przykład, czym jest Tiptap, Lexical, Slate.js, Tiptap, Lexical, Slate.js dokumentacja, Tiptap, Lexical, Slate.js przewodnik"
       />
       <ArticleSchema
         title="Tiptap, Lexical, Slate.js — Rich Text Editors React i collaborative editing 2024?"
         description="6 edytorów rich text (Tiptap/Lexical/Slate.js/TinyMCE/CKEditor 5/CodeMirror) — headless, Y.js collaborative editing, Hocuspocus, Liveblocks i Markdown editory."
-        url="https://fotz.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024"
+        url="https://www.fotz-studio.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Tiptap i Rich Text Editors", url: "https://fotz.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Tiptap i Rich Text Editors", url: "https://www.fotz-studio.pl/blog/tiptap-lexical-slate-rich-text-editor-react-collaborative-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">

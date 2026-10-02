@@ -202,7 +202,7 @@ export default function TworzenieStronTorun() {
       <SEOHead
         title="Tworzenie stron internetowych Toruń | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Toruń — profesjonalne strony WWW dla lokalnych firm. Od 499 zł netto. Szybko, z wynikami. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/torun"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/torun"
         keywords="tworzenie stron internetowych toruń, strony internetowe toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron toruń, sklep internetowy toruń"
       />
       <ServiceSchema
@@ -246,8 +246,10 @@ export default function TworzenieStronTorun() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                  Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link to="/kontakt">
+                    Bezpłatna wycena <ArrowRight className="ml-2 w-5 h-5" />
+                  </Link>
                 </Button>
                 <Link to="/uslugi/tworzenie-stron-internetowych">
                   <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">
@@ -380,15 +382,15 @@ export default function TworzenieStronTorun() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       className={`w-full ${
                         pkg.highlight
                           ? "bg-white text-blue-600 hover:bg-slate-100"
                           : "bg-blue-600 text-white hover:bg-blue-700"
                       }`}
-                    >
+                    ><a href="/kontakt">
                       {pkg.cta} <ArrowRight className="ml-2 w-4 h-4" />
-                    </Button>
+                    </a></Button>
                   </motion.div>
                 ))}
               </div>

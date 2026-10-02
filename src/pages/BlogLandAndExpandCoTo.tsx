@@ -180,21 +180,21 @@ export default function BlogLandAndExpandCoTo() {
       <SEOHead
         title="Land and Expand — strategia wzrostu SaaS B2B | Fotz.pl"
         description="Land and Expand — kompletny przewodnik po strategii wzrostu w SaaS B2B: fazy, motion ekspansji, NRR benchmarks i playbook dla CS i Sales teamów."
-        canonical="https://fotz.pl/blog/land-and-expand-strategia"
+        canonical="https://www.fotz-studio.pl/blog/land-and-expand-strategia"
 
         keywords="Land and Expand co to jest, Land and Expand definicja, czym jest Land and Expand, Land and Expand startup, Land and Expand jak liczyć, Land and Expand wzór, Land and Expand przykłady"
       />
       <ArticleSchema
         title="Land and Expand — strategia wzrostu SaaS B2B"
         description="Kompletny przewodnik po strategii Land and Expand: fazy, expansion motions i NRR benchmarks."
-        url="https://fotz.pl/blog/land-and-expand-strategia"
+        url="https://www.fotz-studio.pl/blog/land-and-expand-strategia"
         datePublished="2024-01-25"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Land and Expand", url: "https://fotz.pl/blog/land-and-expand-strategia" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Land and Expand", url: "https://www.fotz-studio.pl/blog/land-and-expand-strategia" },
         ]}/>
 
       {/* Hero */}

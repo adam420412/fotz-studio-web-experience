@@ -20,9 +20,9 @@ export default function ProjektStronyInternetowej() {
   return (
     <>
       <SEOHead
-        title="Projekt strony internetowej | Profesjonalny design WWW | fotz.pl"
+        title="Projekt strony internetowej | Profesjonalny design WWW | FOTZ Studio"
         description="Projekt strony internetowej od profesjonalnych designerów. Unikalne szablony, indywidualny design, mobile-first. Sprawdź portfolio i cennik fotz.pl!"
-        canonical="https://fotz.pl/uslugi/projekt-strony-internetowej"
+        canonical="https://www.fotz-studio.pl/uslugi/projekt-strony-internetowej"
         keywords="projekt strony internetowej, projektowanie strony www, projekt strony dla firmy, jak wygląda projekt strony, etapy tworzenia strony internetowej"
       />
       <ServiceSchema
@@ -80,9 +80,11 @@ export default function ProjektStronyInternetowej() {
               </FadeInView>
             </div>
 
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-              Zamów bezpłatną konsultację
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+              <Link to="/kontakt">
+                Zamów bezpłatną konsultację
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </Button>
           </div>
         </motion.section>
@@ -259,12 +261,12 @@ export default function ProjektStronyInternetowej() {
                         </li>
                       ))}
                     </ul>
-                    <Button
+                    <Button asChild
                       variant={pkg.highlight ? "default" : "outline"}
                       className="w-full mt-8"
-                    >
-                      Dowiedz się więcej
-                    </Button>
+                    ><a href="/kontakt">
+                      Zapytaj o szczegóły
+                    </a></Button>
                   </div>
                 </FadeInView>
               ))}

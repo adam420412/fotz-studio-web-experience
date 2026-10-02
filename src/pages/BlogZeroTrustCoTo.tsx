@@ -51,23 +51,23 @@ export default function BlogZeroTrustCoTo() {
   return (
     <Layout>
       <SEOHead
-        title="Zero Trust Security | Fotz Studio"
+        title="Zero Trust Security — co to jest, jak wdrożyć, MFA, ZTNA i mikrosegmentacja?"
         description="Zero Trust Security: 6 filarów, mikrosegmentacja, ZTNA vs VPN, MFA, RBAC, OPA, DLP — jak budować bezpieczeństwo 'Never Trust, Always Verify' krok po kroku."
-        canonical="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
+        canonical="https://www.fotz-studio.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
 
         keywords="Zero Trust Security co to jest, Zero Trust Security definicja, czym jest Zero Trust Security, Zero Trust Security przykłady, jak działa Zero Trust Security, Zero Trust Security znaczenie, Zero Trust Security przewodnik"
       />
       <ArticleSchema
         title="Zero Trust Security — co to jest, jak wdrożyć, MFA, ZTNA i mikrosegmentacja?"
         description="Zero Trust: 6 filarów (Identity/Device/Network/App/Data/Visibility), ZTNA vs VPN, mikrosegmentacja, OPA polityki, DLP i roadmapa wdrożenia."
-        url="https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
+        url="https://www.fotz-studio.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa"
         datePublished="2024-04-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Zero Trust Security", url: "https://fotz.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Zero Trust Security", url: "https://www.fotz-studio.pl/blog/zero-trust-security-co-to-jest-jak-wdrozyz-ztna-mfa" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-orange-950 text-white py-20 px-4">

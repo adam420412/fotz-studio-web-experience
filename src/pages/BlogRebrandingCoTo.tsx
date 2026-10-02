@@ -52,9 +52,9 @@ export default function BlogRebrandingCoTo() {
   return (
     <>
       <SEOHead
-        title="Rebranding | Fotz Studio"
+        title="Rebranding — co to jest i kiedy warto go przeprowadzić?"
         description="Rebranding co to — kompleksowy przewodnik. Kiedy rebranding jest konieczny, jak go przeprowadzić krok po kroku i ile kosztuje. Przykłady i wskazówki."
-        canonical="https://fotz.pl/blog/rebranding-co-to"
+        canonical="https://www.fotz-studio.pl/blog/rebranding-co-to"
 
         keywords="Rebranding co to jest, Rebranding definicja, czym jest Rebranding, Rebranding w marketingu, Rebranding przykłady, jak działa Rebranding, Rebranding strategia"
       />
@@ -63,7 +63,7 @@ export default function BlogRebrandingCoTo() {
         description="Kompletny przewodnik po rebrandingu — definicja, kiedy jest potrzebny, jak przebiega proces i ile kosztuje."
         datePublished="2024-10-01"
         dateModified="2025-01-15"
-        url="https://fotz.pl/blog/rebranding-co-to"
+        url="https://www.fotz-studio.pl/blog/rebranding-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 
@@ -76,7 +76,7 @@ export default function BlogRebrandingCoTo() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 8 min czytania</span>
-                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół fotz.pl</span>
+                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół FOTZ Studio</span>
                 <span className="flex items-center gap-1"><BookOpen className="w-4 h-4" /> Branding</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">

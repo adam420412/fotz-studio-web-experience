@@ -118,21 +118,21 @@ export default function BlogCommunityLedGrowthCoTo() {
       <SEOHead
         title="Community-Led Growth — co to jest? Wzrost napędzany społecznością"
         description="Community-led growth — definicja, 6 etapów wzrostu (awareness → referral), 4 modele community, metryki CLG i kiedy warto inwestować. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/community-led-growth-co-to"
+        canonical="https://www.fotz-studio.pl/blog/community-led-growth-co-to"
 
         keywords="Community-Led Growth co to jest, Community-Led Growth definicja, czym jest Community-Led Growth, Community-Led Growth przykłady, jak działa Community-Led Growth, Community-Led Growth znaczenie, Community-Led Growth przewodnik"
       />
       <ArticleSchema
         title="Community-Led Growth — co to jest i jak budować wzrost przez społeczność?"
         description="Kompletny przewodnik po community-led growth: 6 etapów CLG, 4 modele community, kluczowe metryki i przykłady firm."
-        url="https://fotz.pl/blog/community-led-growth-co-to"
+        url="https://www.fotz-studio.pl/blog/community-led-growth-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Community-Led Growth", url: "https://fotz.pl/blog/community-led-growth-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Community-Led Growth", url: "https://www.fotz-studio.pl/blog/community-led-growth-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -140,7 +140,7 @@ export default function BlogCommunityLedGrowthCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Community-Led Growth", url: "https://fotz.pl" },
+              { name: "Community-Led Growth", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Community-Led Growth — co to jest i jak działa?

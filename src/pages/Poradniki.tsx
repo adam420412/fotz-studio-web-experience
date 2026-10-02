@@ -80,13 +80,13 @@ export default function Poradniki() {
     <>
       <SEOHead
         title="Poradniki Marketingowe | Fotz Studio"
-        description="Poradniki marketingowe Fotz Studio — praktyczne przewodniki po SEO, Google Ads, social media marketing, content marketingu i tworzeniu stron internetowych…"
-        canonical="https://fotz.pl/poradniki"
+        description="Poradniki marketingowe Fotz Studio — praktyczne przewodniki po SEO, Google Ads, social media marketingu, content marketingu i tworzeniu stron internetowych. Od podstaw po zaawansowane strategie."
+        canonical="https://www.fotz-studio.pl/poradniki"
         keywords="poradniki marketingowe, tutoriale marketing, przewodnik SEO, poradnik Google Ads, marketing cyfrowy"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Poradniki", url: "https://fotz.pl/poradniki" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Poradniki", url: "https://www.fotz-studio.pl/poradniki" }
         ]}/>
       <Layout>
         {/* Hero */}
