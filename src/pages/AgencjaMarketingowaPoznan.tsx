@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import {
   Building2,
   TrendingUp,
@@ -34,28 +33,27 @@ import {
 import LocalSEOBoost from "@/components/seo/LocalSEOBoost";
 
 export default function AgencjaMarketingowaPoznan() {
-  const [selectedPackage, setSelectedPackage] = useState<
-    "start" | "biznes" | "premium"
-  >("biznes");
-
   const services = [
     {
       icon: TrendingUp,
       title: "SEO i Pozycjonowanie",
+      href: "/seo/pozycjonowanie-poznan",
       description:
-        "Dochodzimy do pierwszej strony Google dla kluczowych słów kluczowych Twojej branży w Poznaniu.",
+        "Rozwijamy widoczność strony dzięki analizie zapytań, treści i optymalizacji technicznej.",
       features: ["Analiza konkurencji", "Optymalizacja on-page", "Link building"],
     },
     {
       icon: Target,
       title: "Google Ads i PPC",
+      href: "/performance-marketing/google-ads",
       description:
-        "Kampanie Google Ads z wysokim ROI dla firm z Poznania i Wielkopolski.",
+        "Kampanie Google Ads z planem budżetu, testów i pomiaru konwersji.",
       features: ["Zarządzanie budżetem", "Optymalizacja konwersji", "A/B testing"],
     },
     {
       icon: Smartphone,
       title: "Media Społecznościowe",
+      href: "/social-media/poznan",
       description:
         "Strategia i zarządzanie kampaniami na Facebook, Instagram i LinkedIn.",
       features: ["Tworzenie contentu", "Community management", "Analityka"],
@@ -63,6 +61,7 @@ export default function AgencjaMarketingowaPoznan() {
     {
       icon: BarChart3,
       title: "Strony Internetowe",
+      href: "/uslugi/strony-internetowe/poznan",
       description:
         "Nowoczesne, responsywne strony WWW zaprojektowane do konwersji.",
       features: ["RWD design", "Szybkie ładowanie", "SEO-friendly"],
@@ -70,6 +69,7 @@ export default function AgencjaMarketingowaPoznan() {
     {
       icon: Lightbulb,
       title: "Strategie Marketingowe",
+      href: "/content-marketing/strategia",
       description:
         "Kompleksowe audyty i strategie oparte na danych dla Twojego biznesu.",
       features: ["Audyt konkurencji", "Plan działań", "Raportowanie"],
@@ -77,6 +77,7 @@ export default function AgencjaMarketingowaPoznan() {
     {
       icon: Zap,
       title: "Email Marketing",
+      href: "/uslugi/email-marketing",
       description:
         "Automatyczne kampanie e-mailowe generujące sprzedaż i zaangażowanie.",
       features: ["Segmentacja", "Automation", "Personalizacja"],
@@ -107,10 +108,10 @@ export default function AgencjaMarketingowaPoznan() {
         "2 kampanie Google Ads",
         "SEO i media społecznościowe",
         "Optymalizacja strony",
-        "Wsparcie phone + email",
-        "Raport detaljny",
+        "Wsparcie telefoniczne i e-mail",
+        "Szczegółowy raport",
       ],
-      cta: "Wybrz Pakiet",
+      cta: "Wybierz pakiet",
       highlighted: true,
     },
     {
@@ -149,7 +150,7 @@ export default function AgencjaMarketingowaPoznan() {
     {
       question: "Czy współpracujecie z małymi firmami?",
       answer:
-        "Tak! Pracujemy z firmami wszystkich rozmiarów, od startupów po dużych korporacji. Mamy dedykowany pakiet START dla małych przedsiębiorstw.",
+        "Tak! Pracujemy z firmami wszystkich rozmiarów, od startupów po duże korporacje. Mamy dedykowany pakiet START dla małych przedsiębiorstw.",
     },
     {
       question: "Gdzie działacie? Czy obejmujecie cały Poznań?",
@@ -170,13 +171,13 @@ export default function AgencjaMarketingowaPoznan() {
       <BreadcrumbSchema items={[
           { name: "FOTZ", url: "https://www.fotz-studio.pl" },
           { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
-          { name: "Poznań", url: "https://www.fotz-studio.pl" },
+          { name: "Poznań", url: "https://www.fotz-studio.pl/agencja-marketingowa/poznan" },
         ]}/>
 
       <ServiceSchema
         name="Usługi Marketingowe Poznań"
         description="Pełna gama usług marketingowych dla firm z Poznania"
-        areaServed="Poznan"
+        areaServed="Poznań"
       />
 
       <FAQSchema items={faqs.map((faq) => ({ question: faq.question, answer: faq.answer }))} />
@@ -190,7 +191,7 @@ export default function AgencjaMarketingowaPoznan() {
                 Agencja Marketingowa Poznań — marketing internetowy dla firm
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Agencja reklamowa Poznań z kompleksową ofertą: SEO, Google Ads, Social Media i strony WWW. Marketing internetowy Poznań — ponad 200 projektów dla firm z Poznania i Wielkopolski, 8 lat doświadczenia, 97% zadowolonych klientów.
+                Łączymy SEO, Google Ads, social media i strony internetowe. Dobieramy zakres działań do celu Twojej firmy: widoczności, zapytań lub sprzedaży. Poznaj usługi i porozmawiajmy o planie dla Twojego biznesu.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/kontakt" className="w-full sm:w-auto">
@@ -210,24 +211,13 @@ export default function AgencjaMarketingowaPoznan() {
               </div>
             </div>
             <div className="bg-white bg-opacity-10 rounded-lg p-8 backdrop-blur">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">500+</div>
-                  <p className="text-blue-100">Klientów</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">8 lat</div>
-                  <p className="text-blue-100">Doświadczenia</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">97%</div>
-                  <p className="text-blue-100">Zadowolonych</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold mb-2">TOP3</div>
-                  <p className="text-blue-100">Wyniki</p>
-                </div>
-              </div>
+              <h2 className="text-2xl font-semibold mb-6">Od czego zaczynamy?</h2>
+              <ol className="space-y-5 text-blue-50 list-decimal pl-5">
+                <li>Ustalamy cel i sprawdzamy obecne działania.</li>
+                <li>Dobieramy kanały, materiały i sposób pomiaru.</li>
+                <li>Przygotowujemy zakres prac oraz wycenę.</li>
+              </ol>
+              <Link to="/realizacje" className="inline-flex items-center gap-2 underline underline-offset-4 mt-6">Zobacz nasze realizacje <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
             </div>
           </div>
         </div>
@@ -312,6 +302,7 @@ export default function AgencjaMarketingowaPoznan() {
                         </li>
                       ))}
                     </ul>
+                    <Link to={service.href} className="inline-flex items-center gap-2 mt-5 underline underline-offset-4" aria-label={`Sprawdź usługę: ${service.title}`}>Sprawdź usługę <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
                   </CardContent>
                 </Card>
               );
@@ -395,15 +386,15 @@ export default function AgencjaMarketingowaPoznan() {
               },
               {
                 icon: TrendingUp,
-                title: "Gwarantowane wyniki",
+                title: "Pomiar i analiza",
                 description:
-                  "Raportujemy co miesiąc. Widzisz dokładnie ile zarabiasz na naszych kampaniach.",
+                  "Ustalamy wskaźniki i źródła danych, aby oceniać postępy oraz podejmować kolejne decyzje.",
               },
               {
                 icon: Star,
-                title: "Wielokrotnie nagradzani",
+                title: "Realizacje do sprawdzenia",
                 description:
-                  "Uznani w branży za innowacyjne podejście i rezultaty biznesowe.",
+                  "Portfolio pozwala poznać nasze projekty i porozmawiać o zakresie potrzebnym Twojej firmie.",
               },
               {
                 icon: Building2,
