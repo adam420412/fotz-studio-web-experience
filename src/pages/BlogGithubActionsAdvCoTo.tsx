@@ -44,21 +44,21 @@ export default function BlogGithubActionsAdvCoTo() {
       <SEOHead
         title="GitHub Actions zaawansowane — Changesets, semantic-release, OIDC i optymalizacja 2024?"
         description="6 zaawansowanych technik CI/CD (reusable workflows/composite actions/Changesets/semantic-release/OIDC/optymalizacja) — automatyczne wersjonowanie i security best practices."
-        canonical="https://fotz.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024"
+        canonical="https://www.fotz-studio.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024"
 
         keywords="GitHub Actions zaawansowane co to jest, GitHub Actions zaawansowane definicja, czym jest GitHub Actions zaawansowane, GitHub Actions zaawansowane przykłady, jak działa GitHub Actions zaawansowane, GitHub Actions zaawansowane znaczenie, GitHub Actions zaawansowane przewodnik"
       />
       <ArticleSchema
         title="GitHub Actions zaawansowane — Changesets, semantic-release, OIDC i optymalizacja 2024?"
         description="6 zaawansowanych technik CI/CD (reusable workflows/composite actions/Changesets/semantic-release/OIDC/optymalizacja) — automatyczne wersjonowanie i security best practices."
-        url="https://fotz.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024"
+        url="https://www.fotz-studio.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "GitHub Actions zaawansowane 2024", url: "https://fotz.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "GitHub Actions zaawansowane 2024", url: "https://www.fotz-studio.pl/blog/github-actions-changesets-semantic-release-oidc-optymalizacja-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-gray-900 to-zinc-950 text-white py-20 px-4">

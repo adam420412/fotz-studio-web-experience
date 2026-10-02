@@ -95,13 +95,13 @@ export default function ContentMarketingCluster() {
       <SEOHead
         title="Content Marketing | Strategia Treści | Fotz Studio"
         description="Strategia content marketing, copywriting, email marketing i treści SEO. Tworzenie wartościowych treści, które przyciągają klientów."
-        canonical="https://fotz.pl/content-marketing"
+        canonical="https://www.fotz-studio.pl/content-marketing"
         keywords="content marketing, strategia content, marketing treści, tworzenie contentu, content dla firm, blog firmowy, seo content"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Content Marketing", url: "https://fotz.pl/content-marketing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Content Marketing", url: "https://www.fotz-studio.pl/content-marketing" },
         ]}
       />
       <ServiceSchema

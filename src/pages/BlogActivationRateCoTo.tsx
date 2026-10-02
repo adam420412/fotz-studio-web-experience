@@ -51,21 +51,21 @@ export default function BlogActivationRateCoTo() {
       <SEOHead
         title="Activation Rate — co to jest i jak poprawić aktywację użytkowników?"
         description="Activation Rate: definicja, jak zdefiniować activation event, strategie poprawy, związek z DAU/MAU i retencją, benchmarki dla PLG i SaaS."
-        canonical="https://fotz.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
+        canonical="https://www.fotz-studio.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
 
         keywords="Activation Rate co to jest, Activation Rate definicja, czym jest Activation Rate, Activation Rate przykłady, jak działa Activation Rate, Activation Rate znaczenie, Activation Rate przewodnik"
       />
       <ArticleSchema
         title="Activation Rate — co to jest i jak poprawić aktywację użytkowników?"
         description="Activation Rate: definicja i obliczanie, jak znaleźć activation event, 6 strategii poprawy, związek z retencją i DAU/MAU, benchmarki SaaS."
-        url="https://fotz.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
+        url="https://www.fotz-studio.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje"
         datePublished="2024-03-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Activation Rate", url: "https://fotz.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Activation Rate", url: "https://www.fotz-studio.pl/blog/activation-rate-co-to-jest-jak-poprawic-aktywacje" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 text-white py-20 px-4">

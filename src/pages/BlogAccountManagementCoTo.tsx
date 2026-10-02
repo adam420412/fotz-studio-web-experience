@@ -68,7 +68,7 @@ export default function BlogAccountManagementCoTo() {
       <SEOHead
         title="Account Management — co to jest? Zarządzanie klientami B2B"
         description="Czym jest account management, zadania AM, KPI (NRR, GRR, churn), różnica vs Customer Success, jak wygląda QBR i customer health score."
-        canonical="https://fotz.pl/blog/account-management-co-to"
+        canonical="https://www.fotz-studio.pl/blog/account-management-co-to"
 
         keywords="Account Management co to jest, Account Management definicja, czym jest Account Management, Account Management przykłady, jak działa Account Management, Account Management znaczenie, Account Management przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogAccountManagementCoTo() {
         description="Czym jest account management, zadania AM, KPI (NRR, GRR, churn), różnica vs Customer Success, jak wygląda QBR i customer health score."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/account-management-co-to"
+        url="https://www.fotz-studio.pl/blog/account-management-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

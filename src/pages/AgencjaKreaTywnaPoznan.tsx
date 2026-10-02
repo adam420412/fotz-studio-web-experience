@@ -88,7 +88,7 @@ export default function AgencjaKreaTywnaPoznan() {
       <SEOHead
         title="Agencja Kreatywna Poznań — Branding, Design, Kampanie Kreatywne"
         description="Agencja kreatywna Poznań — branding, identyfikacja wizualna, kampanie kreatywne, produkcja wideo i content. Fotz Studio obsługuje wszystkie aspekty kreatywne Twojej marki: od koncepcji po gotowe materiały."
-        canonical="https://fotz.pl/agencja-kreatywna-poznan"
+        canonical="https://www.fotz-studio.pl/agencja-kreatywna-poznan"
         keywords="agencja kreatywna poznań, studio kreatywne poznań, branding poznań, identyfikacja wizualna poznań, web design poznań, produkcja wideo poznań, grafika reklamowa poznań"
       />
 
@@ -99,8 +99,8 @@ export default function AgencjaKreaTywnaPoznan() {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja Kreatywna Poznań", url: "https://fotz.pl/agencja-kreatywna-poznan" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Kreatywna Poznań", url: "https://www.fotz-studio.pl/agencja-kreatywna-poznan" }
         ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 

@@ -86,21 +86,21 @@ export default function BlogCauseMarketingCoTo() {
       <SEOHead
         title="Cause Marketing — co to jest? Marketing zaangażowany społecznie"
         description="Kompletny przewodnik po cause marketingu: modele, jak wybrać sprawę i jak prowadzić autentyczne kampanie społeczne."
-        canonical="https://fotz.pl/blog/cause-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/cause-marketing-co-to"
 
         keywords="Cause Marketing co to jest, Cause Marketing definicja, czym jest Cause Marketing, Cause Marketing w marketingu, Cause Marketing przykłady, jak działa Cause Marketing, Cause Marketing strategia"
       />
       <ArticleSchema
         title="Cause Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po cause marketingu: modele, jak wybrać sprawę i jak prowadzić autentyczne kampanie społeczne."
-        url="https://fotz.pl/blog/cause-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/cause-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Cause Marketing", url: "https://fotz.pl/blog/cause-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Cause Marketing", url: "https://www.fotz-studio.pl/blog/cause-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -108,7 +108,7 @@ export default function BlogCauseMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Cause Marketing", url: "https://fotz.pl" },
+              { name: "Cause Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Cause Marketing — co to jest i jak działa?

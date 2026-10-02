@@ -209,7 +209,7 @@ export default function TworzenieStronLodz() {
       <SEOHead
         title="Tworzenie stron internetowych Łódź | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe w Łodzi. Nowoczesne strony dla firm z łódzkiego. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/lodz"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/lodz"
         keywords="tworzenie stron internetowych łódź, strony internetowe łódź, tworzenie stron www łódź, strony www łódź, projektowanie stron internetowych łódź, tworzenie stron łódź, strona internetowa łódź, projektowanie stron łódź, agencja webdesign łódź, sklep internetowy łódź"
       />
       <ServiceSchema

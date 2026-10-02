@@ -63,13 +63,13 @@ const Zainstaluj = () => {
   const benefits = [
     {
       icon: Zap,
-      title: "Błyskawiczne ładowanie",
-      description: "Aplikacja ładuje się natychmiast, nawet przy wolnym połączeniu"
+      title: "Wygodne przeglądanie",
+      description: "Przeglądaj usługi i realizacje na ekranie telefonu"
     },
     {
       icon: Wifi,
-      title: "Działa offline",
-      description: "Przeglądaj nasze usługi i portfolio bez internetu"
+      title: "Dostęp przez internet",
+      description: "Aktualne treści są dostępne po połączeniu z internetem"
     },
     {
       icon: Bell,
@@ -81,9 +81,10 @@ const Zainstaluj = () => {
   return (
     <>
       <SEOHead
-        title="Zainstaluj aplikację Fotz Studio | PWA"
-        description="Zainstaluj aplikację Fotz Studio na swoim telefonie. Szybki dostęp do usług marketingowych, offline i bez konieczności pobierania ze sklepu."
-        canonical="https://fotz.pl/zainstaluj"
+        title="Dodaj skrót FOTZ Studio do telefonu"
+        description="Sprawdź, jak dodać skrót strony FOTZ Studio do ekranu głównego telefonu. Korzystanie ze strony wymaga połączenia z internetem."
+        canonical="https://www.fotz-studio.pl/zainstaluj"
+        noIndex
       />
       
       <Layout>
@@ -109,10 +110,10 @@ const Zainstaluj = () => {
               </div>
               
               <h1 className="text-3xl md:text-5xl font-heading font-bold mb-4">
-                Zainstaluj <span className="text-gradient-premium">Fotz Studio</span>
+                Dodaj skrót <span className="text-gradient-premium">FOTZ Studio</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Dodaj naszą aplikację do ekranu głównego telefonu. Szybki dostęp do wszystkich usług bez pobierania ze sklepu.
+                Dodaj skrót strony do ekranu głównego telefonu. Dostępność tej opcji zależy od przeglądarki. Do przeglądania treści potrzebujesz internetu.
               </p>
             </motion.div>
 

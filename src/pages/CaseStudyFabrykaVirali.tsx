@@ -35,13 +35,13 @@ const CaseStudyFabrykaVirali = () => {
       <SEOHead
         title="Fabryka Virali - Agencja Marketingowa - Case Study"
         description="Case study Fabryka Virali: strona internetowa dla agencji social media. Przejrzysty cennik, portfolio i optymalizacja konwersji. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/fabryka-virali"
+        canonical="https://www.fotz-studio.pl/realizacje/fabryka-virali"
         keywords="case study social media, viral marketing realizacja, content marketing case study"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Fabryka Virali", url: "https://fotz.pl/realizacje/fabryka-virali" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Fabryka Virali", url: "https://www.fotz-studio.pl/realizacje/fabryka-virali" }
       ]}/>
       <ArticleSchema
         title="Fabryka Virali - Agencja Marketingowa - Case Study"
@@ -49,8 +49,8 @@ const CaseStudyFabrykaVirali = () => {
         author="Fotz Studio"
         datePublished="2024-04-10"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/fabryka-virali"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/fabryka-virali"
       />
 
       {/* Hero */}

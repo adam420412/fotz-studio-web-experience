@@ -53,21 +53,21 @@ export default function BlogGrpcCoTo() {
       <SEOHead
         title="gRPC — co to jest i jak używać Protocol Buffers w mikroserwisach?"
         description="gRPC: co to jest, Protocol Buffers, 4 typy komunikacji (Unary/Streaming), gRPC vs REST, narzędzia, load balancing i migracja w mikrousługach."
-        canonical="https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
+        canonical="https://www.fotz-studio.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
 
         keywords="gRPC co to jest, gRPC definicja, czym jest gRPC, gRPC przykłady, jak działa gRPC, gRPC znaczenie, gRPC przewodnik"
       />
       <ArticleSchema
         title="gRPC — co to jest i jak używać Protocol Buffers w mikroserwisach?"
         description="gRPC: Protocol Buffers, 4 typy komunikacji, gRPC vs REST porównanie, ecosystem (grpc-gateway, gRPC-Web), load balancing i kiedy migrować z REST."
-        url="https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
+        url="https://www.fotz-studio.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy"
         datePublished="2024-03-29"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "gRPC", url: "https://fotz.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "gRPC", url: "https://www.fotz-studio.pl/blog/grpc-co-to-jest-protocol-buffers-mikroserwisy" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-indigo-950 text-white py-20 px-4">

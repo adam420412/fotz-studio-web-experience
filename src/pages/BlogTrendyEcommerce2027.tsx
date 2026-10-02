@@ -65,7 +65,7 @@ const BlogTrendyEcommerce2027 = () => {
       <SEOHead
         title="Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport]"
         description="Odkryj najważniejsze trendy e-commerce na 2027 rok. AI, social commerce, quick commerce, sustainability i wiele więcej. Kompletny raport dla Twojego biznesu."
-        canonical="https://fotz.pl/blog/trendy-ecommerce-2027"
+        canonical="https://www.fotz-studio.pl/blog/trendy-ecommerce-2027"
         ogType="article"
 
         keywords="Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport], Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] co to jest, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] jak działa, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] definicja, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] przykłady, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] poradnik, Trendy E-commerce 2027 – Co Zmieni Handel Internetowy? [Raport] przewodnik"
@@ -77,7 +77,7 @@ const BlogTrendyEcommerce2027 = () => {
         author="Zespół FOTZ"
         datePublished="2026-04-05"
         dateModified="2026-04-05"
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

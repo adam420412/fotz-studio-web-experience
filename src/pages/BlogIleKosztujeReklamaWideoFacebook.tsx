@@ -33,7 +33,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/ile-kosztuje-reklama-wideo-facebook";
+const CANONICAL = "https://www.fotz-studio.pl/blog/ile-kosztuje-reklama-wideo-facebook";
 
 export default function BlogIleKosztujeReklamaWideoFacebook() {
   return (
@@ -53,8 +53,8 @@ export default function BlogIleKosztujeReklamaWideoFacebook() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Ile kosztuje reklama wideo na Facebooku i Instagramie", url: CANONICAL },
         ]}
       />

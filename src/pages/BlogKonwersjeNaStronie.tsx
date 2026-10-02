@@ -45,25 +45,25 @@ const faqItems = [
 export default function BlogKonwersjeNaStronie() {
   return (
     <Layout>
-      <SEOHead 
-        title="Jak Zwiększyć Konwersję na Stronie - Kompletny Przewodnik po CRO" 
+      <SEOHead
+        title="Jak Zwiększyć Konwersję na Stronie - Kompletny Przewodnik po CRO"
         description="Praktyczny przewodnik po optymalizacji konwersji. Odkryj jak zwiększyć konwersję strony, strategie CRO, testy A/B i narzędzia do wzrostu sprzedaży online."
-        ogType="article" 
-        canonical="https://fotz.pl/blog/jak-zwiekszyc-konwersje-na-stronie" 
+        ogType="article"
+        canonical="https://www.fotz-studio.pl/blog/jak-zwiekszyc-konwersje-na-stronie"
         keywords="jak zwiększyć konwersję na stronie, optymalizacja konwersji, CRO, conversion rate optimization, wzrost konwersji"
       />
-      <ArticleSchema 
-        title="Jak Zwiększyć Konwersję na Stronie - Kompletny Przewodnik po CRO" 
-        description="Praktyczny przewodnik po optymalizacji konwersji i strategiach CRO dla polskich biznesów" 
-        url="https://fotz.pl/blog/jak-zwiekszyc-konwersje-na-stronie" 
-        datePublished="2026-04-10" 
-        dateModified="2026-04-10" 
-        author="Fotz Studio" 
+      <ArticleSchema
+        title="Jak Zwiększyć Konwersję na Stronie - Kompletny Przewodnik po CRO"
+        description="Praktyczny przewodnik po optymalizacji konwersji i strategiach CRO dla polskich biznesów"
+        url="https://www.fotz-studio.pl/blog/jak-zwiekszyc-konwersje-na-stronie"
+        datePublished="2026-04-10"
+        dateModified="2026-04-10"
+        author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Blog", url: "https://fotz.pl/blog" },
-        { name: "Jak Zwiększyć Konwersję na Stronie", url: "https://fotz.pl/blog/jak-zwiekszyc-konwersje-na-stronie" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+        { name: "Jak Zwiększyć Konwersję na Stronie", url: "https://www.fotz-studio.pl/blog/jak-zwiekszyc-konwersje-na-stronie" }
       ]}/>
       <FAQSchema items={faqItems} />
 
@@ -83,11 +83,11 @@ export default function BlogKonwersjeNaStronie() {
               Marketing
             </span>
           </div>
-          
+
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">
             Jak Zwiększyć Konwersję na Stronie – Kompletny Przewodnik po CRO
           </h1>
-          
+
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Stopa konwersji to jeden z najważniejszych wskaźników sukcesu strony internetowej. Niezależnie od tego, czy prowadzisz e-commerce, zbierasz leady czy sprzedajesz usługi, <strong>zwiększenie konwersji o zaledwie 1% może oznaczać wzrost przychodu o 10-15%</strong>. W tym kompletnym przewodniku pokażemy Ci, jak optymalizować każdy element strony, aby przekonwertować więcej odwiedzających w płacących klientów.
           </p>
@@ -111,11 +111,11 @@ export default function BlogKonwersjeNaStronie() {
         {/* Main Content */}
         <div className="max-w-4xl mx-auto px-4 pb-16">
           <div className="prose prose-lg max-w-none">
-            
+
             {/* Sekcja 1: Co to jest konwersja i CRO */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Czym jest konwersja i CRO?</h2>
-              
+
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Zanim przejdziemy do konkretnych strategii, wyjaśnijmy podstawowe pojęcia. <strong>Konwersja</strong> to każde pożądane działanie użytkownika na Twojej stronie – zakup produktu, wypełnienie formularza, pobranie e-booka, rejestracja na newsletter czy zarezerwowanie konsultacji.
               </p>
@@ -137,7 +137,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 2: Dlaczego konwersje tak ważne */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Dlaczego optymalizacja konwersji powinna być Twoim priorytetem?</h2>
-              
+
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 Wyobraź sobie tę sytuację: Twoja strona ma 10 000 odwiedzających miesięcznie. Koszt pozyskania każdego odwiedzającego przez Google Ads wynosi 2 zł. Miesięczny budżet reklam to 20 000 zł. Jeśli Twoja stopa konwersji wynosi 1%, to 100 klientów. Przychód na klienta to 200 zł, czyli całkowity przychód 20 000 zł.
               </p>
@@ -168,7 +168,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 3: Metryki */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Kluczowe metryki do śledzenia</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Aby efektywnie optymalizować konwersję, musisz śledzić odpowiednie metryki. Oto najważniejsze z nich:
               </p>
@@ -225,7 +225,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 4: Testy A/B */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Jak prowadzić testy A/B (Conversion Testing)</h2>
-              
+
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 <strong>Test A/B</strong> to porównanie dwóch wersji strony (lub elementu) aby zobaczyć, która konwertuje lepiej. To fundament wszelkiego CRO – bez testów, optymalizujesz na ślepo.
               </p>
@@ -285,7 +285,7 @@ export default function BlogKonwersjeNaStronie() {
               </ol>
 
               <h3 className="text-xl font-bold text-primary mb-4">Co testować w pierwszej kolejności?</h3>
-              
+
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-green-50 p-4 rounded border border-green-200">
                   <h4 className="font-bold text-green-700 mb-2">Wysokie Potencjały (testuj najpierw)</h4>
@@ -314,7 +314,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 5: Optymalizacja UX */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Optymalizacja Doświadczenia Użytkownika (UX)</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Dobra konwersja zaczyna się od dobrego UX. Użytkownik powinien intuicyjnie zrozumieć co robić i dlaczego ma to robić. Oto najważniejsze elementy:
               </p>
@@ -359,13 +359,13 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 6: Optymalizacja Call-to-Action */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Optymalizacja Call-to-Action (CTA)</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 CTA to przycisk/link, na który kliknie użytkownik aby wykonać pożądaną akcję. To najważniejszy element dla konwersji. Drobne zmiany mogą zmienić wyniki znacząco.
               </p>
 
               <h3 className="text-xl font-bold text-primary mb-4">Tekst CTA – Action-Oriented Copy</h3>
-              
+
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-red-50 border border-red-200 p-4 rounded">
                   <p className="text-sm text-red-700 font-semibold mb-2">❌ Słabe CTA:</p>
@@ -425,7 +425,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 7: Optymalizacja E-commerce */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Optymalizacja Konwersji dla E-commerce</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 E-commerce ma swoje specyficzne wyzwania. Oto jak zwiększyć konwersję w sklepie internetowym:
               </p>
@@ -479,7 +479,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 8: Social Proof i Trust */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Social Proof i Budowanie Zaufania</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Ludzie nie ufają słowom sprzedawcy. Ufają innym ludziom. Social proof to jeden z najpotężniejszych lewarów konwersji.
               </p>
@@ -532,7 +532,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 9: Psychologia ceny */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Psychologia Ceny – Taktyki Pricing</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Cena to nie tylko liczba. To psychologia. Drobne zmiany sposobu pokazywania ceny mogą zwiększyć konwersję.
               </p>
@@ -566,7 +566,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 10: Narzędzia */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Narzędzia do CRO – Jakie Wybrać?</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Aby efektywnie optymalizować konwersję, potrzebujesz odpowiednich narzędzi. Oto najpopularniejsze:
               </p>
@@ -621,7 +621,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 11: Praktyczne przykłady */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Praktyczne Przykłady – Case Studies</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Teoria to jedno, ale jak to wygląda w praktyce? Oto rzeczywiste przykłady zmian, które zwiększyły konwersję:
               </p>
@@ -660,7 +660,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Sekcja 12: Podsumowanie - Checklist */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Podsumowanie – Checklist do Przejęcia</h2>
-              
+
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Optymalizacja konwersji to ciągły proces, ale możesz zacząć dzisiaj. Oto checklist rzeczy do zrobienia:
               </p>
@@ -708,7 +708,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* FAQ Section */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-8">Najczęstsze Pytania o CRO</h2>
-              
+
               <div className="space-y-4">
                 {faqItems.map((item, index) => (
                   <div key={index} className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
@@ -738,7 +738,7 @@ export default function BlogKonwersjeNaStronie() {
             {/* Internal Links Section */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-primary mb-6">Powiązane Artykuły i Usługi</h2>
-              
+
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:border-primary transition-colors">
                   <h3 className="font-bold text-primary mb-2">Powiązane Artykuły</h3>

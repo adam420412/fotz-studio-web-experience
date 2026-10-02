@@ -128,21 +128,21 @@ export default function BlogTypescriptCoTo() {
       <SEOHead
         title="TypeScript — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po TypeScript: typy, interfejsy, generics, utility types i konfiguracja projektu."
-        canonical="https://fotz.pl/blog/typescript-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/typescript-co-to-jest"
 
         keywords="TypeScript co to jest, TypeScript jak działa, TypeScript tutorial, TypeScript przykład, czym jest TypeScript, TypeScript dokumentacja, TypeScript przewodnik"
       />
       <ArticleSchema
         title="TypeScript — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po TypeScript: typy, interfejsy, generics, utility types i konfiguracja projektu."
-        url="https://fotz.pl/blog/typescript-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/typescript-co-to-jest"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TypeScript", url: "https://fotz.pl/blog/typescript-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TypeScript", url: "https://www.fotz-studio.pl/blog/typescript-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -150,7 +150,7 @@ export default function BlogTypescriptCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "TypeScript", url: "https://fotz.pl" },
+              { name: "TypeScript", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             TypeScript — co to jest i jak działa?

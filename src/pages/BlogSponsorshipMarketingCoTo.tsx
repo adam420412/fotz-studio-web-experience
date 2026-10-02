@@ -96,21 +96,21 @@ export default function BlogSponsorshipMarketingCoTo() {
       <SEOHead
         title="Sponsoring w marketingu — co to jest? Sponsorship marketing i ROI"
         description="Kompletny przewodnik po sponsorship marketingu: typy sponsoringu, jak wybrać właściwy obiekt, ROI i typy aktywacji."
-        canonical="https://fotz.pl/blog/sponsoring-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/sponsoring-marketing-co-to"
 
         keywords="Sponsoring w marketingu co to jest, Sponsoring w marketingu definicja, czym jest Sponsoring w marketingu, Sponsoring w marketingu w marketingu, Sponsoring w marketingu przykłady, jak działa Sponsoring w marketingu, Sponsoring w marketingu strategia"
       />
       <ArticleSchema
         title="Sponsoring w marketingu — co to jest i jak go stosować?"
         description="Kompletny przewodnik po sponsorship marketingu: typy sponsoringu, jak wybrać właściwy obiekt, ROI i typy aktywacji."
-        url="https://fotz.pl/blog/sponsoring-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/sponsoring-marketing-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Sponsoring Marketing", url: "https://fotz.pl/blog/sponsoring-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Sponsoring Marketing", url: "https://www.fotz-studio.pl/blog/sponsoring-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -118,7 +118,7 @@ export default function BlogSponsorshipMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Sponsoring Marketing", url: "https://fotz.pl" },
+              { name: "Sponsoring Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Sponsoring w marketingu — co to jest i jak działa?

@@ -44,21 +44,21 @@ export default function BlogTanstackTableCoTo() {
       <SEOHead
         title="TanStack Table, AG Grid i React Data Tables | Fotz Studio"
         description="6 bibliotek tabel (TanStack Table/AG Grid Community/AG Grid Enterprise/MUI DataGrid/Glide/React Virtuoso) — headless vs full-featured, wirtualizacja i Next.js integration."
-        canonical="https://fotz.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024"
+        canonical="https://www.fotz-studio.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024"
 
         keywords="TanStack Table, AG Grid i React Data Tables co to jest, TanStack Table, AG Grid i React Data Tables jak działa, TanStack Table, AG Grid i React Data Tables tutorial, TanStack Table, AG Grid i React Data Tables przykład, czym jest TanStack Table, AG Grid i React Data Tables, TanStack Table, AG Grid i React Data Tables dokumentacja, TanStack Table, AG Grid i React Data Tables przewodnik"
       />
       <ArticleSchema
         title="TanStack Table, AG Grid i React Data Tables — sortowanie, filtrowanie, wirtualizacja 2024?"
         description="6 bibliotek tabel (TanStack Table/AG Grid Community/AG Grid Enterprise/MUI DataGrid/Glide/React Virtuoso) — headless vs full-featured, wirtualizacja i Next.js integration."
-        url="https://fotz.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024"
+        url="https://www.fotz-studio.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TanStack Table i Data Grids", url: "https://fotz.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TanStack Table i Data Grids", url: "https://www.fotz-studio.pl/blog/tanstack-table-ag-grid-react-data-tables-sortowanie-filtrowanie-wirtualizacja-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-orange-950 text-white py-20 px-4">

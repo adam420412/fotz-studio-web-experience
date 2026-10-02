@@ -108,7 +108,7 @@ const PozycjonowanieRadom = () => {
       <SEOHead
         title="Pozycjonowanie Radom — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Radom. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. Niska konkurencja = szybkie rezultaty. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/radom"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/radom"
         keywords="pozycjonowanie radom, agencja seo radom, seo radom, pozycjonowanie stron radom, seo dla firm radom, seo mazowsze, pozycjonowanie lokalne radom"
       />
       <ServiceSchema
@@ -118,10 +118,10 @@ const PozycjonowanieRadom = () => {
         areaServed="Radom, Mazovia"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Radom", url: "https://fotz.pl/uslugi/pozycjonowanie/radom" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Radom", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/radom" },
         ]}/>
       <FAQSchema items={faqItems} />
 

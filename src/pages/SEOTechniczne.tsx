@@ -37,7 +37,7 @@ const SEOTechniczne = () => {
       <SEOHead
         title="SEO Techniczne — Optymalizacja Techniczna Strony pod Google"
         description="SEO techniczne — optymalizacja szybkości ładowania, Core Web Vitals, indeksowanie, structured data i bezpieczeństwo strony. Fotz Studio."
-        canonical="https://fotz.pl/seo/techniczne"
+        canonical="https://www.fotz-studio.pl/seo/techniczne"
         keywords="seo techniczne, technical seo, core web vitals, szybkość strony seo, indeksowanie google, sitemap xml, robots txt, seo techniczne audyt, page speed seo, crawlowanie strony"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const SEOTechniczne = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Techniczne SEO", url: "https://fotz.pl/seo/techniczne" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Techniczne SEO", url: "https://www.fotz-studio.pl/seo/techniczne" },
       ]}/>
       <FAQSchema items={faqItems} />
 

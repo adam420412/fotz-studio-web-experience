@@ -117,7 +117,7 @@ const BlogMarketingDlaFirmy = () => {
         title="Marketing dla firmy - od czego zacząć? Poradnik 2025"
         description="Kompleksowy przewodnik marketingu internetowego dla małej firmy. Strategie, kanały, budżet. Dowiedz się, jak efektywnie promować firmę w 2025."
         ogType="article"
-        canonical="https://fotz.pl/blog/marketing-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/marketing-dla-firmy"
         keywords="marketing dla firmy, marketing internetowy dla małej firmy, strategie marketingu, budżet marketingowy, kanały marketingu"
         schemaJson={[
           {
@@ -134,7 +134,7 @@ const BlogMarketingDlaFirmy = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -144,8 +144,8 @@ const BlogMarketingDlaFirmy = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Marketing dla firmy" }
             ]
           },

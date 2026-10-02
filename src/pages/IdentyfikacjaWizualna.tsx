@@ -154,7 +154,7 @@ const IdentyfikacjaWizualna = () => {
       <SEOHead
         title="Identyfikacja Wizualna Firmy | Fotz Studio"
         description="Identyfikacja wizualna firmy — projektowanie logo, branding, księga znaku, materiały firmowe. Profesjonalne projektowanie graficzne tożsamości marki w Fotz Studio, które wyróżnia firmę i buduje spójny wizerunek."
-        canonical="https://fotz.pl/uslugi/branding"
+        canonical="https://www.fotz-studio.pl/uslugi/branding"
         keywords="identyfikacja wizualna, projekt identyfikacji wizualnej, branding firma, logo firma, identyfikacja wizualna cena, ci dla firm, księga znaku"
       />
       <ServiceSchema 
@@ -164,9 +164,9 @@ const IdentyfikacjaWizualna = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Identyfikacja Wizualna", url: "https://fotz.pl/uslugi/branding" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Identyfikacja Wizualna", url: "https://www.fotz-studio.pl/uslugi/branding" },
         ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}

@@ -100,9 +100,9 @@ export default function StronaInternetowaCena() {
   return (
     <>
       <SEOHead
-        title="Strona internetowa cena 2025 — ile kosztuje? | fotz.pl"
+        title="Strona internetowa cena 2025 — ile kosztuje? | FOTZ Studio"
         description="Strona internetowa cena — aktualny przewodnik 2025. Ile kosztuje strona wizytówka, firmowa, sklep internetowy. Ukryte koszty i co wpływa na cenę. Sprawdź!"
-        canonical="https://fotz.pl/blog/strona-internetowa-cena"
+        canonical="https://www.fotz-studio.pl/blog/strona-internetowa-cena"
         keywords="strona internetowa cena, ile kosztuje strona internetowa, koszt strony internetowej, cena strony www, cennik stron internetowych"
       />
       <ArticleSchema
@@ -110,7 +110,7 @@ export default function StronaInternetowaCena() {
         description="Kompleksowy przegląd cen stron internetowych — od wizytówki do sklepu e-commerce. Ukryte koszty i co naprawdę wchodzi w cenę."
         datePublished="2025-01-15"
         dateModified="2025-03-01"
-        url="https://fotz.pl/blog/strona-internetowa-cena"
+        url="https://www.fotz-studio.pl/blog/strona-internetowa-cena"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

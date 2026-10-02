@@ -108,7 +108,7 @@ export default function BlogIdentyfikacjaWizualnaCennik() {
       <SEOHead
         title="Identyfikacja wizualna cennik 2025 | Fotz Studio"
         description="Kompleksowy przewodnik po cenach identyfikacji wizualnej i brandingu firm w Polsce."
-        canonical="https://fotz.pl/blog/identyfikacja-wizualna-cennik"
+        canonical="https://www.fotz-studio.pl/blog/identyfikacja-wizualna-cennik"
 
         keywords="Identyfikacja wizualna cennik 2025, Identyfikacja wizualna cennik 2025 poradnik, Identyfikacja wizualna cennik 2025 strategia, Identyfikacja wizualna cennik 2025 jak zrobić, Identyfikacja wizualna cennik 2025 marketing, Identyfikacja wizualna cennik 2025 przykłady, Identyfikacja wizualna cennik 2025 w Polsce"
       />

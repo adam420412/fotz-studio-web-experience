@@ -44,21 +44,21 @@ export default function BlogLottieRiveCoTo() {
       <SEOHead
         title="Lottie, Rive, Framer Motion i GSAP | Fotz Studio"
         description="Lottie (After Effects JSON), Rive (state machines), dotLottie, @lottie-interactive — porównanie z Framer Motion, GSAP ScrollTrigger i CSS animacjami w React."
-        canonical="https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
 
         keywords="Lottie, Rive, Framer Motion i GSAP co to jest, Lottie, Rive, Framer Motion i GSAP jak działa, Lottie, Rive, Framer Motion i GSAP tutorial, Lottie, Rive, Framer Motion i GSAP przykład, czym jest Lottie, Rive, Framer Motion i GSAP, Lottie, Rive, Framer Motion i GSAP dokumentacja, Lottie, Rive, Framer Motion i GSAP przewodnik"
       />
       <ArticleSchema
         title="Lottie, Rive, Framer Motion i GSAP — animacje webowe w React 2024?"
         description="6 narzędzi animacji (Lottie/Rive/Framer Motion/GSAP/CSS/WAAPI) — After Effects import, interaktywne state machines, scroll animacje i optymalizacja performance."
-        url="https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
+        url="https://www.fotz-studio.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Lottie i Rive animacje", url: "https://fotz.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Lottie i Rive animacje", url: "https://www.fotz-studio.pl/blog/lottie-rive-framer-motion-gsap-animacje-webowe-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-amber-950 text-white py-20 px-4">

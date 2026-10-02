@@ -18,14 +18,14 @@ export default function AgencjaMarketingowaSzczecin() {
       <SEOHead
         title="Agencja Marketingowa Szczecin | Fotz Studio"
         description="Agencja marketingowa Szczecin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm ze Szczecina i Zachodniopomorskiego. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/szczecin"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/szczecin"
         keywords="agencja marketingowa szczecin, marketing internetowy szczecin, agencja reklamowa szczecin, kampanie reklamowe szczecin, seo szczecin, google ads szczecin"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Szczecin", url: "https://fotz.pl/agencja-marketingowa/szczecin" },
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Szczecin", url: "https://www.fotz-studio.pl/agencja-marketingowa/szczecin" },
         ]}/>
 
       <ServiceSchema

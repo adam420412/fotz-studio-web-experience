@@ -48,7 +48,7 @@ export default function GoogleAdsKatowice() {
         <SEOHead
           title="Agencja Google Ads Katowice | Fotz Studio"
           description="Google Ads Katowice — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/katowice"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/katowice"
           keywords="google ads katowice, kampanie google ads katowice, agencja google ads katowice, reklamy google katowice, google adwords katowice, sem katowice, google ads dla firm katowice, prowadzenie google ads katowice, google ads cennik katowice, reklama w google katowice"
         />
 
@@ -60,10 +60,10 @@ export default function GoogleAdsKatowice() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-            { name: "Google Ads Katowice", url: "https://fotz.pl/performance-marketing/google-ads/katowice" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+            { name: "Google Ads Katowice", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/katowice" },
           ]}/>
 
         <FAQSchema items={faqItems} />

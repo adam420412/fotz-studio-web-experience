@@ -99,21 +99,21 @@ export default function BlogRuleOf40CoTo() {
       <SEOHead
         title="Rule of 40 — co to jest i jak liczyć? | Fotz.pl"
         description="Kompletny przewodnik po Rule of 40: formuła, przykłady, benchmarki i jak poprawić wynik."
-        canonical="https://fotz.pl/blog/rule-of-40-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/rule-of-40-co-to-jest"
 
         keywords="Rule of 40 co to jest, Rule of 40 definicja, czym jest Rule of 40, Rule of 40 przykłady, jak działa Rule of 40, Rule of 40 znaczenie, Rule of 40 przewodnik"
       />
       <ArticleSchema
         title="Rule of 40 — co to jest i jak liczyć?"
         description="Kompletny przewodnik po Rule of 40: formuła, przykłady, benchmarki i jak poprawić wynik."
-        url="https://fotz.pl/blog/rule-of-40-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/rule-of-40-co-to-jest"
         datePublished="2024-01-31"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Rule of 40", url: "https://fotz.pl/blog/rule-of-40-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Rule of 40", url: "https://www.fotz-studio.pl/blog/rule-of-40-co-to-jest" },
         ]}/>
 
       {/* Hero */}

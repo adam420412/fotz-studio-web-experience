@@ -98,7 +98,7 @@ const MarketingIT = () => {
       <SEOHead
         title="Marketing dla IT i SaaS | Software House, Startupy | Fotz Studio"
         description="Marketing dla firm IT i SaaS - strony dla software house, LinkedIn B2B, lead generation. Pozyskuj klientów enterprise i buduj markę technologiczną."
-        canonical="https://fotz.pl/dla-kogo/it-saas"
+        canonical="https://www.fotz-studio.pl/dla-kogo/it-saas"
         keywords="marketing it, marketing saas, agencja marketingowa it, marketing software house, lead generation it, linkedin b2b it, marketing startup technologiczny, content marketing it"
       />
 
@@ -109,9 +109,9 @@ const MarketingIT = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "IT & SaaS", url: "https://fotz.pl/dla-kogo/it-saas" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "IT & SaaS", url: "https://www.fotz-studio.pl/dla-kogo/it-saas" },
         ]}
       />
       <FAQSchema items={faqItems} />

@@ -28,7 +28,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/zdjecia-korporacyjne-vs-reklamowe";
+const CANONICAL = "https://www.fotz-studio.pl/blog/zdjecia-korporacyjne-vs-reklamowe";
 
 export default function BlogZdjeciaKorporacyjneVsReklamowe() {
   return (
@@ -48,8 +48,8 @@ export default function BlogZdjeciaKorporacyjneVsReklamowe() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Zdjęcia korporacyjne vs reklamowe", url: CANONICAL },
         ]}
       />

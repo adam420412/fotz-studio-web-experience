@@ -44,21 +44,21 @@ export default function BlogGraphQLApolloCoTo() {
       <SEOHead
         title="GraphQL, Apollo Server, Apollo Client, URQL | Fotz Studio"
         description="6 GraphQL clients (Apollo/URQL/TanStack/graphql-request/Relay/SWR) — schema design, resolvers, DataLoader, Subscriptions, pagination i autoryzacja."
-        canonical="https://fotz.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024"
 
         keywords="GraphQL, Apollo Server, Apollo Client, URQL co to jest, GraphQL, Apollo Server, Apollo Client, URQL jak działa, GraphQL, Apollo Server, Apollo Client, URQL tutorial, GraphQL, Apollo Server, Apollo Client, URQL przykład, czym jest GraphQL, Apollo Server, Apollo Client, URQL, GraphQL, Apollo Server, Apollo Client, URQL dokumentacja, GraphQL, Apollo Server, Apollo Client, URQL przewodnik"
       />
       <ArticleSchema
         title="GraphQL, Apollo Server, Apollo Client, URQL — kompletny przewodnik 2024?"
         description="6 GraphQL clients (Apollo/URQL/TanStack/graphql-request/Relay/SWR) — schema design, resolvers, DataLoader, Subscriptions, pagination i autoryzacja."
-        url="https://fotz.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "GraphQL Apollo", url: "https://fotz.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "GraphQL Apollo", url: "https://www.fotz-studio.pl/blog/graphql-apollo-server-client-urql-subscriptions-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-rose-950 text-white py-20 px-4">

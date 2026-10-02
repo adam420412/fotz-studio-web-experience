@@ -44,21 +44,21 @@ export default function BlogEnvoyProxyCoTo() {
       <SEOHead
         title="Envoy Proxy — co to jest, xDS API, service mesh, rate limiting, circuit breaking?"
         description="Envoy Proxy: xDS API, sidecar w service mesh (Istio/Consul), load balancing, circuit breaking, outlier detection, rate limiting, WASM filters i ext-proc."
-        canonical="https://fotz.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
+        canonical="https://www.fotz-studio.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
 
         keywords="Envoy Proxy co to jest, Envoy Proxy jak działa, Envoy Proxy tutorial, Envoy Proxy przykład, czym jest Envoy Proxy, Envoy Proxy dokumentacja, Envoy Proxy przewodnik"
       />
       <ArticleSchema
         title="Envoy Proxy — co to jest, xDS API, service mesh, rate limiting, circuit breaking?"
         description="Envoy Proxy: 6 kluczowych funkcji (dynamic config/load balancing/circuit breaking/mTLS/tracing/rate limiting), xDS, Istio, WASM filters, ext-proc."
-        url="https://fotz.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
+        url="https://www.fotz-studio.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Envoy Proxy", url: "https://fotz.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Envoy Proxy", url: "https://www.fotz-studio.pl/blog/envoy-proxy-co-to-jest-xds-api-service-mesh-rate-limiting-circuit-breaking" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-amber-950 text-white py-20 px-4">

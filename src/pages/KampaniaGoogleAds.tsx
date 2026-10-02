@@ -161,9 +161,9 @@ export default function KampaniaGoogleAds() {
   return (
     <>
       <SEOHead
-        title="Kampania Google Ads | Reklama Google dla firm | fotz.pl"
+        title="Kampania Google Ads | Reklama Google dla firm | FOTZ Studio"
         description="Kampanie Google Ads — skuteczna reklama w wyszukiwarce Google. ROI 3-8x. Certyfikowani specjaliści. Bezpłatna wycena kampanii!"
-        canonical="https://fotz.pl/uslugi/kampania-google-ads"
+        canonical="https://www.fotz-studio.pl/uslugi/kampania-google-ads"
         keywords="kampania google ads, prowadzenie kampanii google ads, kampania reklamowa google, obsługa google ads, google ads agencja, google ads dla firm"
       />
       <ServiceSchema

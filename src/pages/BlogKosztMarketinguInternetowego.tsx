@@ -46,9 +46,9 @@ const faqItems = [
 
 export function BlogKosztMarketinguInternetowego() {
   const breadcrumbItems = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Blog", url: "https://fotz.pl/blog" },
-    { name: "Koszt marketingu internetowego", url: "https://fotz.pl/blog/koszt-marketingu-internetowego" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+    { name: "Koszt marketingu internetowego", url: "https://www.fotz-studio.pl/blog/koszt-marketingu-internetowego" }
   ];
 
   return (
@@ -56,7 +56,7 @@ export function BlogKosztMarketinguInternetowego() {
       <SEOHead
         title="Ile kosztuje marketing internetowy? Kompleksowy cennik 2025"
         description="Odkryj realny koszt marketingu online w Polsce. Ceny poszczególnych kanałów, budżety dla firm, modele rozliczenia i jak oszczędzać na marketingu internetowym."
-        canonical="https://fotz.pl/blog/koszt-marketingu-internetowego"
+        canonical="https://www.fotz-studio.pl/blog/koszt-marketingu-internetowego"
         ogType="article"
         keywords="koszt marketingu internetowego, ile kosztuje marketing online, cena marketing digital, budżet na marketing"
         schemaJson={[
@@ -74,7 +74,7 @@ export function BlogKosztMarketinguInternetowego() {
               "name": "Fotz Studio",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -86,7 +86,7 @@ export function BlogKosztMarketinguInternetowego() {
       <ArticleSchema
         title="Ile kosztuje marketing internetowy? Kompleksowy cennik 2025"
         description="Pełny poradnik do kosztów marketingu online - ceny kanałów, budżety wg wielkości firmy, strategie oszczędzania i ROI różnych narzędzi."
-        url="https://fotz.pl/blog/koszt-marketingu-internetowego"
+        url="https://www.fotz-studio.pl/blog/koszt-marketingu-internetowego"
         datePublished="2025-04-12"
         dateModified="2025-04-12"
       />

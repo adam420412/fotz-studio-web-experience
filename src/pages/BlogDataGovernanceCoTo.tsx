@@ -51,21 +51,21 @@ export default function BlogDataGovernanceCoTo() {
       <SEOHead
         title="Data Governance — co to jest i jak wdrożyć ład danych? | Fotz.pl"
         description="Data Governance: komponenty (Data Catalog, Lineage, Quality, Access Control), role (CDO, Data Steward), poziomy dojrzałości i związek z GDPR compliance."
-        canonical="https://fotz.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
+        canonical="https://www.fotz-studio.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
 
         keywords="Data Governance co to jest, Data Governance definicja, czym jest Data Governance, Data Governance przykłady, jak działa Data Governance, Data Governance znaczenie, Data Governance przewodnik"
       />
       <ArticleSchema
         title="Data Governance — co to jest i jak wdrożyć ład danych?"
         description="Data Governance: komponenty (Data Catalog, Lineage, Quality, Access Control), role (CDO, Data Steward), poziomy dojrzałości i związek z GDPR compliance."
-        url="https://fotz.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
+        url="https://www.fotz-studio.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych"
         datePublished="2024-03-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Data Governance", url: "https://fotz.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Data Governance", url: "https://www.fotz-studio.pl/blog/data-governance-co-to-jest-jak-wdrozyz-lad-danych" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 px-4">

@@ -37,7 +37,7 @@ const BlogSEOWordPress = () => {
         title="SEO WordPress: Kompletny poradnik 2025 - Ranking w Google"
         description="Jak pozycjonować WordPress w Google? Wtyczki SEO, optymalizacja techniczna, szybkość, Core Web Vitals."
         ogType="article"
-        canonical="https://fotz.pl/blog/seo-wordpress-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/seo-wordpress-poradnik"
         keywords="WordPress SEO, pozycjonowanie WordPress, Yoast SEO, Rank Math, WordPress szybkość, Core Web Vitals"
       />
 
@@ -50,7 +50,7 @@ const BlogSEOWordPress = () => {
       <ArticleSchema
         title="SEO WordPress: Kompletny poradnik 2025 - Ranking w Google"
         description="Jak pozycjonować WordPress w Google? Wtyczki SEO, optymalizacja techniczna, szybkość, Core Web Vitals."
-        url="https://fotz.pl/blog/seo-wordpress-poradnik"
+        url="https://www.fotz-studio.pl/blog/seo-wordpress-poradnik"
         datePublished="2025-02-05"
         dateModified="2025-07-15"
         author="Fotz Studio"

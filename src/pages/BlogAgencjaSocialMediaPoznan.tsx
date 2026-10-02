@@ -20,7 +20,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/agencja-social-media-poznan";
+const CANONICAL = "https://www.fotz-studio.pl/blog/agencja-social-media-poznan";
 
 export default function BlogAgencjaSocialMediaPoznan() {
   return (
@@ -40,8 +40,8 @@ export default function BlogAgencjaSocialMediaPoznan() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Agencja social media Poznań", url: CANONICAL },
         ]}
       />

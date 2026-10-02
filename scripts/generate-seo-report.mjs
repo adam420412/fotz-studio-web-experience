@@ -340,7 +340,7 @@ function generateReport() {
     }
 
     report.pages.push({
-      url: `https://fotz.pl${page.url}`,
+      url: `https://www.fotz-studio.pl${page.url}`,
       name: page.name,
       type: page.type,
       hasSchema,

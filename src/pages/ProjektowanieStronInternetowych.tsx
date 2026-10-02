@@ -169,9 +169,9 @@ export default function ProjektowanieStronInternetowych() {
   return (
     <>
       <SEOHead
-        title="Projektowanie stron internetowych | Design i UX | fotz.pl"
+        title="Projektowanie stron internetowych | Design i UX | FOTZ Studio"
         description="Projektujemy profesjonalne strony internetowe. Unikalny design, intuicyjny UX i pełna responsywność. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/projektowanie-stron-internetowych"
+        canonical="https://www.fotz-studio.pl/uslugi/projektowanie-stron-internetowych"
         keywords="projektowanie stron internetowych, web design, ui/ux design, projektowanie stron www, projekt strony internetowej, webdesign agencja"
       />
       <ServiceSchema

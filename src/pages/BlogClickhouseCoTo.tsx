@@ -44,21 +44,21 @@ export default function BlogClickhouseCoTo() {
       <SEOHead
         title="ClickHouse — co to jest, OLAP, MergeTree, Kafka ingestion, vs BigQuery i Snowflake?"
         description="ClickHouse: kolumnowy OLAP database, MergeTree engines, Kafka streaming ingestion, sharding i replikacja, ClickHouse vs BigQuery vs Snowflake vs DuckDB."
-        canonical="https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
+        canonical="https://www.fotz-studio.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
 
         keywords="ClickHouse co to jest, ClickHouse definicja, czym jest ClickHouse, ClickHouse przykłady, jak działa ClickHouse, ClickHouse znaczenie, ClickHouse przewodnik"
       />
       <ArticleSchema
         title="ClickHouse — co to jest, OLAP, MergeTree, Kafka ingestion, vs BigQuery i Snowflake?"
         description="ClickHouse: 6 baz analitycznych (ClickHouse/BigQuery/Snowflake/DuckDB/Druid/Redshift), MergeTree engines, Kafka ingestion, sharding i produkcja."
-        url="https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
+        url="https://www.fotz-studio.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "ClickHouse", url: "https://fotz.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "ClickHouse", url: "https://www.fotz-studio.pl/blog/clickhouse-co-to-jest-olap-mergetree-kafka-ingestion-vs-bigquery-snowflake" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-orange-950 text-white py-20 px-4">

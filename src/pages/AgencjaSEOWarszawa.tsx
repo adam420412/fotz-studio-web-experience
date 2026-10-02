@@ -159,7 +159,7 @@ export default function AgencjaSEOWarszawa() {
       <SEOHead
         title="Agencja SEO Warszawa — pozycjonowanie stron dla firm | Fotz"
         description="Agencja SEO Warszawa. Fotz — pozycjonowanie stron w Google dla firm z Warszawy. SEO, technical audit, link building. Bezpłatna analiza strony!"
-        canonical="https://fotz.pl/agencja-seo-warszawa"
+        canonical="https://www.fotz-studio.pl/agencja-seo-warszawa"
         keywords="agencja seo warszawa, pozycjonowanie warszawa, seo warszawa, agencja seo warszawa cena, pozycjonowanie stron warszawa, seo dla firm warszawa, audyt seo warszawa, optymalizacja seo warszawa, pozycjonowanie lokalne warszawa, link building warszawa"
       />
 

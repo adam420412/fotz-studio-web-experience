@@ -62,21 +62,21 @@ export default function BlogSlaCoTo() {
       <SEOHead
         title="SLA, SLO, SLI — co to jest i jak zarządzać poziomami usług?"
         description="Kompletny przewodnik po SLA, SLO i SLI: definicje, tabela uptime, Error Budget, priorytety incydentów i narzędzia do monitorowania."
-        canonical="https://fotz.pl/blog/sla-slo-sli-co-to"
+        canonical="https://www.fotz-studio.pl/blog/sla-slo-sli-co-to"
 
         keywords="SLA, SLO, SLI co to jest, SLA, SLO, SLI definicja, czym jest SLA, SLO, SLI, SLA, SLO, SLI przykłady, jak działa SLA, SLO, SLI, SLA, SLO, SLI znaczenie, SLA, SLO, SLI przewodnik"
       />
       <ArticleSchema
         title="SLA, SLO, SLI — co to jest i jak zarządzać poziomami usług?"
         description="Kompletny przewodnik po SLA, SLO i SLI: definicje, tabela uptime, Error Budget, priorytety incydentów i narzędzia do monitorowania."
-        url="https://fotz.pl/blog/sla-slo-sli-co-to"
+        url="https://www.fotz-studio.pl/blog/sla-slo-sli-co-to"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SLA, SLO, SLI", url: "https://fotz.pl/blog/sla-slo-sli-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SLA, SLO, SLI", url: "https://www.fotz-studio.pl/blog/sla-slo-sli-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -84,7 +84,7 @@ export default function BlogSlaCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "SLA, SLO, SLI", url: "https://fotz.pl" },
+              { name: "SLA, SLO, SLI", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             SLA, SLO, SLI — co to jest i jak zarządzać niezawodnością?

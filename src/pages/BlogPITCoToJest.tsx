@@ -77,7 +77,7 @@ export default function BlogPITCoToJest() {
       <SEOHead
         title="PIT — co to jest? Podatek dochodowy — stawki i rozliczenie"
         description="PIT co to jest — wyjasnamy czym jest podatek dochodowy od osob fizycznych, stawki PIT, formularze, ulgi podatkowe i jak rozliczyc PIT krok po kroku."
-        canonical="https://fotz.pl/blog/pit-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/pit-co-to-jest"
 
         keywords="PIT co to jest, PIT definicja, czym jest PIT, PIT przykłady, jak działa PIT, PIT znaczenie, PIT przewodnik"
       />
@@ -86,7 +86,7 @@ export default function BlogPITCoToJest() {
         description="Czym jest PIT (podatek dochodowy), stawki 12% i 32%, formularze PIT-37/36/28, ulgi podatkowe i jak rozliczyc PIT dla pracownika i przedsiebiorcy."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/pit-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/pit-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

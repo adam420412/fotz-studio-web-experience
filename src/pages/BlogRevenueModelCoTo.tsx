@@ -116,21 +116,21 @@ export default function BlogRevenueModelCoTo() {
       <SEOHead
         title="Model Przychodów — co to jest? Revenue Model rodzaje i przykłady"
         description="Kompletny przewodnik po modelach przychodów: 8 typów z przykładami, kluczowe metryki i jak wybrać model dla startupu lub biznesu."
-        canonical="https://fotz.pl/blog/revenue-model-co-to"
+        canonical="https://www.fotz-studio.pl/blog/revenue-model-co-to"
 
         keywords="Model Przychodów co to jest, Model Przychodów definicja, czym jest Model Przychodów, Model Przychodów przykłady, jak działa Model Przychodów, Model Przychodów znaczenie, Model Przychodów przewodnik"
       />
       <ArticleSchema
         title="Model Przychodów — co to jest i jakie są rodzaje revenue model?"
         description="Kompletny przewodnik po modelach przychodów: 8 typów z przykładami, kluczowe metryki i jak wybrać model dla startupu lub biznesu."
-        url="https://fotz.pl/blog/revenue-model-co-to"
+        url="https://www.fotz-studio.pl/blog/revenue-model-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Model Przychodów", url: "https://fotz.pl/blog/revenue-model-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Model Przychodów", url: "https://www.fotz-studio.pl/blog/revenue-model-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -138,7 +138,7 @@ export default function BlogRevenueModelCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Model Przychodów", url: "https://fotz.pl" },
+              { name: "Model Przychodów", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Model Przychodów — co to jest i jakie są rodzaje?

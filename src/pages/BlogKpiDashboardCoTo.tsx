@@ -84,21 +84,21 @@ export default function BlogKpiDashboardCoTo() {
       <SEOHead
         title="Dashboard KPI — co to jest? Jak budować dashboardy wskaźników"
         description="Dashboard KPI — definicja, 3 typy (operacyjny, taktyczny, strategiczny), zasady projektowania, narzędzia i przykłady KPI dla 5 funkcji. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/dashboard-kpi-co-to"
+        canonical="https://www.fotz-studio.pl/blog/dashboard-kpi-co-to"
 
         keywords="Dashboard KPI co to jest, Dashboard KPI definicja, czym jest Dashboard KPI, Dashboard KPI przykłady, jak działa Dashboard KPI, Dashboard KPI znaczenie, Dashboard KPI przewodnik"
       />
       <ArticleSchema
         title="Dashboard KPI — co to jest i jak go zbudować?"
         description="Kompletny przewodnik po dashboardach KPI: 3 typy dashboardów, 6 zasad projektowania, narzędzia i przykłady KPI dla marketingu, sprzedaży, CS i produktu."
-        url="https://fotz.pl/blog/dashboard-kpi-co-to"
+        url="https://www.fotz-studio.pl/blog/dashboard-kpi-co-to"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Dashboard KPI", url: "https://fotz.pl/blog/dashboard-kpi-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Dashboard KPI", url: "https://www.fotz-studio.pl/blog/dashboard-kpi-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -106,7 +106,7 @@ export default function BlogKpiDashboardCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Dashboard KPI", url: "https://fotz.pl" },
+              { name: "Dashboard KPI", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Dashboard KPI — co to jest i jak go zbudować?

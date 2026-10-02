@@ -66,21 +66,21 @@ export default function BlogSdrCoTo() {
       <SEOHead
         title="SDR — co to jest i jak działa Sales Development Representative?"
         description="SDR (Sales Development Representative) — definicja, różnica vs AE i BDR, 6-krokowa sekwencja outreach, metryki i narzędzia. Przewodnik po roli SDR w B2B SaaS."
-        canonical="https://fotz.pl/blog/sdr-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/sdr-co-to-jest"
 
         keywords="SDR co to jest, SDR definicja, czym jest SDR, SDR w sprzedaży, SDR strategia, SDR przykłady, jak używać SDR"
       />
       <ArticleSchema
         title="SDR — co to jest i jak działa Sales Development Representative?"
         description="Kompletny przewodnik po roli SDR: różnica vs AE i BDR, sekwencja outreach, metryki i narzędzia SDR w B2B sprzedaży."
-        url="https://fotz.pl/blog/sdr-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/sdr-co-to-jest"
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SDR — Sales Development Representative", url: "https://fotz.pl/blog/sdr-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SDR — Sales Development Representative", url: "https://www.fotz-studio.pl/blog/sdr-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -88,7 +88,7 @@ export default function BlogSdrCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "SDR — Sales Development Representative", url: "https://fotz.pl" },
+              { name: "SDR — Sales Development Representative", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             SDR — co to jest i jak działa Sales Development Representative?

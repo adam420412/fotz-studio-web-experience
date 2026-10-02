@@ -78,9 +78,9 @@ export default function LeadGeneration() {
   return (
     <>
       <SEOHead
-        title="Lead Generation — pozyskiwanie klientów dla firm | fotz.pl"
+        title="Lead Generation — pozyskiwanie klientów dla firm | FOTZ Studio"
         description="Lead generation dla firm — kompleksowe strategie pozyskiwania leadów: Google Ads, SEO, LinkedIn, landing pages, email marketing. Sprawdź ofertę i cennik!"
-        canonical="https://fotz.pl/uslugi/lead-generation"
+        canonical="https://www.fotz-studio.pl/uslugi/lead-generation"
         keywords="lead generation, generowanie leadów, pozyskiwanie klientów online, leady sprzedażowe, lead generation b2b, generowanie leadów b2b"
       />
       <ServiceSchema

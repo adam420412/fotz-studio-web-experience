@@ -80,21 +80,21 @@ export default function BlogPersonalizationMarketingCoTo() {
       <SEOHead
         title="Personalizacja w marketingu — co to jest i jak ją wdrożyć?"
         description="Personalizacja marketingu — definicja, 4 poziomy personalizacji, kanały i narzędzia. Dowiedz się jak personalizować komunikację i zwiększyć CTR i konwersję."
-        canonical="https://fotz.pl/blog/personalizacja-marketingu-co-to"
+        canonical="https://www.fotz-studio.pl/blog/personalizacja-marketingu-co-to"
 
         keywords="Personalizacja w marketingu co to jest, Personalizacja w marketingu definicja, czym jest Personalizacja w marketingu, Personalizacja w marketingu w marketingu, Personalizacja w marketingu przykłady, jak działa Personalizacja w marketingu, Personalizacja w marketingu strategia"
       />
       <ArticleSchema
         title="Personalizacja w marketingu — co to jest i jak ją wdrożyć?"
         description="Kompletny przewodnik po personalizacji w marketingu: 4 poziomy, kanały, narzędzia i jak zacząć przy ograniczonych zasobach."
-        url="https://fotz.pl/blog/personalizacja-marketingu-co-to"
+        url="https://www.fotz-studio.pl/blog/personalizacja-marketingu-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Personalizacja w marketingu", url: "https://fotz.pl/blog/personalizacja-marketingu-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Personalizacja w marketingu", url: "https://www.fotz-studio.pl/blog/personalizacja-marketingu-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -102,7 +102,7 @@ export default function BlogPersonalizationMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Personalizacja w marketingu", url: "https://fotz.pl" },
+              { name: "Personalizacja w marketingu", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Personalizacja w marketingu — co to jest i jak wdrożyć?

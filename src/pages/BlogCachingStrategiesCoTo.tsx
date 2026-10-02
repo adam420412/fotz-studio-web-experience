@@ -44,21 +44,21 @@ export default function BlogCachingStrategiesCoTo() {
       <SEOHead
         title="Strategie cache — Cache-Aside, Write-Through, Redis, CDN, cache invalidation?"
         description="Strategie cache: 6 wzorców (Cache-Aside/Write-Through/Read-Through/Write-Behind/Write-Around/Refresh-Ahead), Redis best practices, multi-level caching i hit rate."
-        canonical="https://fotz.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
+        canonical="https://www.fotz-studio.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
 
         keywords="Strategie cache co to jest, Strategie cache jak działa, Strategie cache tutorial, Strategie cache przykład, czym jest Strategie cache, Strategie cache dokumentacja, Strategie cache przewodnik"
       />
       <ArticleSchema
         title="Strategie cache — Cache-Aside, Write-Through, Redis, CDN, cache invalidation?"
         description="Strategie cache: 6 wzorców (Cache-Aside/Write-Through/Read-Through/Write-Behind/Write-Around/Refresh-Ahead), Redis best practices, multi-level caching i hit rate."
-        url="https://fotz.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
+        url="https://www.fotz-studio.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Strategie cache", url: "https://fotz.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Strategie cache", url: "https://www.fotz-studio.pl/blog/strategie-cache-co-to-jest-cache-aside-write-through-redis-cdn-invalidation" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">

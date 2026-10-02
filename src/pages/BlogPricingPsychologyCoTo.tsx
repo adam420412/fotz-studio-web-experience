@@ -92,21 +92,21 @@ export default function BlogPricingPsychologyCoTo() {
       <SEOHead
         title="Psychologia cen — co to jest i jak stosować? | Fotz Studio"
         description="Psychologia cen — charm pricing, anchoring, efekt decoy i ramowanie cen. Kompletny przewodnik po technikach pricing psychology zwiększających konwersję."
-        canonical="https://fotz.pl/blog/psychologia-cen-co-to"
+        canonical="https://www.fotz-studio.pl/blog/psychologia-cen-co-to"
 
         keywords="Psychologia cen co to jest, Psychologia cen definicja, czym jest Psychologia cen, Psychologia cen w marketingu, Psychologia cen przykłady, jak działa Psychologia cen, Psychologia cen strategia"
       />
       <ArticleSchema
         title="Psychologia cen — co to jest i jak stosować?"
         description="Kompletny przewodnik po psychologii cen: 6 technik pricing, jak prezentować ceny i jakie błędy unikać."
-        url="https://fotz.pl/blog/psychologia-cen-co-to"
+        url="https://www.fotz-studio.pl/blog/psychologia-cen-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Psychologia cen", url: "https://fotz.pl/blog/psychologia-cen-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Psychologia cen", url: "https://www.fotz-studio.pl/blog/psychologia-cen-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -114,7 +114,7 @@ export default function BlogPricingPsychologyCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Psychologia cen", url: "https://fotz.pl" },
+              { name: "Psychologia cen", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Psychologia cen — co to jest i jak stosować?

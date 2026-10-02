@@ -44,21 +44,21 @@ export default function BlogSentryCoTo() {
       <SEOHead
         title="Sentry — co to jest, error tracking, Performance Monitoring, React, Python?"
         description="Sentry: error tracking, SDK integracja React/Node/Python, Performance Monitoring, Session Replay, alerty, Sentry vs Datadog/Rollbar/Bugsnag i self-hosting."
-        canonical="https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
+        canonical="https://www.fotz-studio.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
 
         keywords="Sentry co to jest, Sentry jak działa, Sentry tutorial, Sentry przykład, czym jest Sentry, Sentry dokumentacja, Sentry przewodnik"
       />
       <ArticleSchema
         title="Sentry — co to jest, error tracking, Performance Monitoring, React, Python?"
         description="Sentry: 6 narzędzi error tracking (Sentry/Datadog/New Relic/Rollbar/Bugsnag/GlitchTip), SDK integracja, alerty, self-hosting i Performance Monitoring."
-        url="https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
+        url="https://www.fotz-studio.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Sentry", url: "https://fotz.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Sentry", url: "https://www.fotz-studio.pl/blog/sentry-co-to-jest-error-tracking-performance-monitoring-react-python" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

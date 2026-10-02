@@ -53,13 +53,13 @@ export default function AgencjaMarketingowaHub() {
       <SEOHead
         title="Agencja marketingowa - FOTZ Studio | Marketing dla firm"
         description="Agencja marketingowa FOTZ Studio - kompleksowy marketing dla Twojej firmy w 28 miastach Polski. Strategia, reklamy, SEO, social media, video, branding."
-        canonical="https://fotz.pl/agencja-marketingowa"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa"
         keywords="agencja marketingowa, marketing dla firm, agencja reklamowa, kampanie reklamowe, agencja marketingowa Polska"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
         ]}
       />
       <ServiceSchema

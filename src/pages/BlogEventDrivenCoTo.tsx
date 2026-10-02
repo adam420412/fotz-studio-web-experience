@@ -52,21 +52,21 @@ export default function BlogEventDrivenCoTo() {
       <SEOHead
         title="Event-Driven Architecture — Kafka, RabbitMQ, CQRS | Fotz"
         description="Event-Driven Architecture: Kafka vs RabbitMQ, Event Sourcing, CQRS, Saga pattern, pub/sub, message queues — jak projektować i wdrożyć EDA w mikroserwisach."
-        canonical="https://fotz.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing"
+        canonical="https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing"
 
         keywords="Event-Driven Architecture co to jest, Event-Driven Architecture definicja, czym jest Event-Driven Architecture, Event-Driven Architecture przykłady, jak działa Event-Driven Architecture, Event-Driven Architecture znaczenie, Event-Driven Architecture przewodnik"
       />
       <ArticleSchema
         title="Event-Driven Architecture — co to jest, Kafka, RabbitMQ, Event Sourcing i CQRS?"
         description="EDA: 6 wzorców (Pub/Sub/Saga/CQRS/EventSourcing), 5 brokerów, Kafka vs RabbitMQ, Outbox Pattern, idempotentność i monitoring w produkcji."
-        url="https://fotz.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing"
+        url="https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing"
         datePublished="2024-04-09"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Event-Driven Architecture", url: "https://fotz.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Event-Driven Architecture", url: "https://www.fotz-studio.pl/blog/event-driven-architecture-co-to-jest-kafka-rabbitmq-event-sourcing" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">

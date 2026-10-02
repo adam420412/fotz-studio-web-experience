@@ -98,7 +98,7 @@ const MarketingProdukcja = () => {
       <SEOHead
         title="Marketing dla Produkcji i Przemysłu | B2B Industrial | Fotz Studio"
         description="Marketing dla firm produkcyjnych - strony B2B, fotografia przemysłowa, filmy korporacyjne. Pozyskuj klientów i dystrybutorów dla swojego zakładu."
-        canonical="https://fotz.pl/dla-kogo/produkcja"
+        canonical="https://www.fotz-studio.pl/dla-kogo/produkcja"
         keywords="marketing przemysłowy, marketing b2b, agencja marketingowa produkcja, marketing dla firm produkcyjnych, marketing industrial, fotografia przemysłowa, filmy korporacyjne przemysł, marketing b2b agencja"
       />
 
@@ -109,9 +109,9 @@ const MarketingProdukcja = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Produkcja", url: "https://fotz.pl/dla-kogo/produkcja" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Produkcja", url: "https://www.fotz-studio.pl/dla-kogo/produkcja" },
         ]}
       />
       <FAQSchema items={faqItems} />

@@ -62,21 +62,21 @@ export default function BlogDevOpsCoTo() {
       <SEOHead
         title="DevOps — co to jest? Kultura i praktyki DevOps w organizacji IT"
         description="DevOps — definicja, CALMS framework, 8 etapów lifecycle, toolchain (CI/CD, IaC, Kubernetes, monitoring) i Platform Engineering. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/devops-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/devops-co-to-jest"
 
         keywords="DevOps co to jest, DevOps definicja, czym jest DevOps, DevOps przykłady, jak działa DevOps, DevOps znaczenie, DevOps przewodnik"
       />
       <ArticleSchema
         title="DevOps — co to jest i jak wdrożyć kulturę DevOps?"
         description="Kompletny przewodnik po DevOps: CALMS framework, 8 etapów lifecycle, toolchain i Platform Engineering."
-        url="https://fotz.pl/blog/devops-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/devops-co-to-jest"
         datePublished="2024-01-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "DevOps", url: "https://fotz.pl/blog/devops-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "DevOps", url: "https://www.fotz-studio.pl/blog/devops-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -84,7 +84,7 @@ export default function BlogDevOpsCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "DevOps", url: "https://fotz.pl" },
+              { name: "DevOps", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             DevOps — co to jest i jak wdrożyć tę kulturę?

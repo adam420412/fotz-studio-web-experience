@@ -82,7 +82,7 @@ export default function StudioPodcastowe() {
       <SEOHead
         title="Studio Podcastowe Poznań — Nagrania Podcastów Audio i Wideo"
         description="Studio podcastowe Poznań — profesjonalne nagrania podcastów audio i wideo, montaż, postprodukcja, dystrybucja. Wynajmij studio nagrań w Poznaniu. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/studio-podcastowe"
+        canonical="https://www.fotz-studio.pl/uslugi/studio-podcastowe"
         keywords="studio podcastowe, nagrywanie podcastów, studio podcast wynajem, podcast studio poznań, nagranie podcastu"
       />
       <ServiceSchema 
@@ -90,8 +90,8 @@ export default function StudioPodcastowe() {
         description="Profesjonalne studio do nagrywania podcastów z pełnym wyposażeniem audio i video"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Studio Podcastowe", url: "https://fotz.pl/uslugi/studio-podcastowe" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Studio Podcastowe", url: "https://www.fotz-studio.pl/uslugi/studio-podcastowe" }
         ]}/>
       <OrganizationSchema />
 

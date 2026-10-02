@@ -28,7 +28,7 @@ export function PageBreadcrumbs({ items = [], path }: PageBreadcrumbsProps) {
           }))
       : [];
 
-  const trail = normalizedItems.filter(item => !["/", "https://fotz.pl", "https://fotz.pl/"].includes(item.href ?? item.url ?? item.path ?? ""));
+  const trail = normalizedItems.filter(item => !["/", "https://www.fotz-studio.pl", "https://www.fotz-studio.pl/"].includes(item.href ?? item.url ?? item.path ?? ""));
 
   return (
     <nav aria-label="Ścieżka nawigacji" className="container-wide px-6 md:px-12 pt-28 pb-4">

@@ -44,21 +44,21 @@ export default function BlogStructuredLoggingCoTo() {
       <SEOHead
         title="Structured Logging — co to jest, Loki, ELK Stack, Fluentd, Kibana, Grafana?"
         description="Structured Logging: JSON logs, Loki vs ELK Stack, Promtail, Fluentd, Kibana, log levels, correlation ID, GDPR compliance i wyszukiwanie logów w Grafana."
-        canonical="https://fotz.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana"
+        canonical="https://www.fotz-studio.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana"
 
         keywords="Structured Logging co to jest, Structured Logging definicja, czym jest Structured Logging, Structured Logging przykłady, jak działa Structured Logging, Structured Logging znaczenie, Structured Logging przewodnik"
       />
       <ArticleSchema
         title="Structured Logging — co to jest, Loki, ELK Stack, Fluentd, Kibana, Grafana?"
         description="Structured Logging: 6 stacków (Loki/ELK/EFK/OpenSearch/Datadog/Splunk), JSON logs, correlation ID, log levels, GDPR, LogQL i KQL queries."
-        url="https://fotz.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana"
+        url="https://www.fotz-studio.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Structured Logging", url: "https://fotz.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Structured Logging", url: "https://www.fotz-studio.pl/blog/structured-logging-co-to-jest-loki-elk-fluentd-kibana-grafana" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-zinc-950 text-white py-20 px-4">

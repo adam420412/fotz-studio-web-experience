@@ -181,7 +181,7 @@ export default function StronyInternetoweRzeszow() {
       <SEOHead
         title="Strony Internetowe Rzeszów | Tworzenie Stron WWW"
         description="Strony internetowe Rzeszów — profesjonalne tworzenie stron www, projektowanie stron, sklepy e-commerce i SEO dla firm. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/rzeszow"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/rzeszow"
         keywords="strony internetowe rzeszów, tworzenie stron internetowych rzeszów, strony www rzeszów, projektowanie stron rzeszów, agencja webdesign rzeszów, sklep internetowy rzeszów"
       />
 
@@ -191,7 +191,7 @@ export default function StronyInternetoweRzeszow() {
         provider="Fotz Studio"
         areaServed="Rzeszów"
       />
-      <BreadcrumbSchema items={breadcrumbs.map(item => ({ ...item, url: `https://fotz.pl${item.url}` }))} />
+      <BreadcrumbSchema items={breadcrumbs.map(item => ({ ...item, url: `https://www.fotz-studio.pl${item.url}` }))} />
       <FAQSchema items={faqItems} />
 
       <Layout>

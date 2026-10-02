@@ -74,21 +74,21 @@ export default function BlogViralCoefficientCoTo() {
       <SEOHead
         title="Viral Coefficient — co to jest i jak mierzyć viralność? | Fotz.pl"
         description="Kompletny przewodnik po Viral Coefficient: formuła, mechanizmy viralności, viral funnel i jak budować viral loop."
-        canonical="https://fotz.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
+        canonical="https://www.fotz-studio.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
 
         keywords="Viral Coefficient co to jest, Viral Coefficient definicja, czym jest Viral Coefficient, Viral Coefficient przykłady, jak działa Viral Coefficient, Viral Coefficient znaczenie, Viral Coefficient przewodnik"
       />
       <ArticleSchema
         title="Viral Coefficient — co to jest i jak mierzyć viralność?"
         description="Kompletny przewodnik po Viral Coefficient: formuła, mechanizmy viralności, viral funnel i jak budować viral loop."
-        url="https://fotz.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
+        url="https://www.fotz-studio.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu"
         datePublished="2024-02-06"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Viral Coefficient", url: "https://fotz.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Viral Coefficient", url: "https://www.fotz-studio.pl/blog/viral-coefficient-wspolczynnik-viralnosci-produktu" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-slate-900 text-white py-20 px-4">

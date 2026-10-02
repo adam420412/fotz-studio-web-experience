@@ -88,12 +88,12 @@ const StronyInternetoweKamionki = () => {
       <SEOHead
         title="Strony Internetowe Kamionki | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Kamionki — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Kamionek. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/kamionki"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/kamionki"
         keywords="strony internetowe kamionki, tworzenie stron kamionki, strony www kamionki"
       />
       
       <ServiceSchema name="Strony Internetowe Kamionki" description="Profesjonalne tworzenie stron internetowych dla firm z Kamionek." provider="FOTZ Studio" areaServed="Kamionki" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Kamionki", url: "https://fotz.pl/uslugi/strony-internetowe/kamionki" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Kamionki", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/kamionki" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

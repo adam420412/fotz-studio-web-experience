@@ -36,21 +36,21 @@ const BlogAIMarketing = () => {
         title="AI w marketingu - praktyczne zastosowania dla MŚP w 2025"
         description="AI w marketingu — jak wykorzystać sztuczną inteligencję w content marketingu, reklamach i SEO. Praktyczne zastosowania AI marketing dla MŚP. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/ai-w-marketingu-msp-2025"
+        canonical="https://www.fotz-studio.pl/blog/ai-w-marketingu-msp-2025"
         keywords="AI marketing, sztuczna inteligencja, marketing MŚP, automatyzacja marketingu, ChatGPT, narzędzia AI, marketing 2025"
       />
       <ArticleSchema
         title="AI w marketingu - praktyczne zastosowania dla MŚP w 2025"
         description="Poznaj praktyczne zastosowania sztucznej inteligencji w marketingu dla małych i średnich firm."
-        url="https://fotz.pl/blog/ai-w-marketingu-msp-2025"
+        url="https://www.fotz-studio.pl/blog/ai-w-marketingu-msp-2025"
         datePublished="2025-01-04"
         dateModified="2026-04-01"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AI w marketingu dla MŚP", url: "https://fotz.pl/blog/ai-w-marketingu-msp-2025" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AI w marketingu dla MŚP", url: "https://www.fotz-studio.pl/blog/ai-w-marketingu-msp-2025" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

@@ -98,7 +98,7 @@ const MarketingNieruchomosci = () => {
       <SEOHead
         title="Marketing dla Nieruchomości | Deweloperzy, Biura, Architekci | Fotz Studio"
         description="Marketing dla branży nieruchomości - wizualizacje 3D, spoty promocyjne, sesje zdjęciowe, kampanie lead generation. Sprzedawaj szybciej."
-        canonical="https://fotz.pl/dla-kogo/nieruchomosci"
+        canonical="https://www.fotz-studio.pl/dla-kogo/nieruchomosci"
         keywords="marketing nieruchomości, agencja marketingowa nieruchomości, marketing dewelopera, reklama nieruchomości, wizualizacje 3d nieruchomości, kampanie lead generation nieruchomości, marketing biura nieruchomości"
       />
 
@@ -109,9 +109,9 @@ const MarketingNieruchomosci = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Nieruchomości", url: "https://fotz.pl/dla-kogo/nieruchomosci" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Nieruchomości", url: "https://www.fotz-studio.pl/dla-kogo/nieruchomosci" },
         ]}
       />
       <FAQSchema items={faqItems} />

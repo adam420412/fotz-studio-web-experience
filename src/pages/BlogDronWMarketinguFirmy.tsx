@@ -28,7 +28,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/dron-w-marketingu-firmy";
+const CANONICAL = "https://www.fotz-studio.pl/blog/dron-w-marketingu-firmy";
 
 export default function BlogDronWMarketinguFirmy() {
   return (
@@ -48,8 +48,8 @@ export default function BlogDronWMarketinguFirmy() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Dron w marketingu firmy", url: CANONICAL },
         ]}
       />

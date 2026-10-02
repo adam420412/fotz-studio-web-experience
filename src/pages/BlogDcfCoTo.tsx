@@ -65,21 +65,21 @@ export default function BlogDcfCoTo() {
       <SEOHead
         title="DCF — co to jest? Discounted Cash Flow, NPV i wycena spółek"
         description="Kompletny przewodnik po DCF: formuła, NPV, WACC, Terminal Value i analiza sensytywności."
-        canonical="https://fotz.pl/blog/dcf-discounted-cash-flow-co-to"
+        canonical="https://www.fotz-studio.pl/blog/dcf-discounted-cash-flow-co-to"
 
         keywords="DCF co to jest, DCF definicja, czym jest DCF, DCF przykłady, jak działa DCF, DCF znaczenie, DCF przewodnik"
       />
       <ArticleSchema
         title="DCF (Discounted Cash Flow) — co to jest i jak obliczyć wycenę?"
         description="Kompletny przewodnik po DCF: formuła, NPV, WACC, Terminal Value i analiza sensytywności."
-        url="https://fotz.pl/blog/dcf-discounted-cash-flow-co-to"
+        url="https://www.fotz-studio.pl/blog/dcf-discounted-cash-flow-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "DCF — Discounted Cash Flow", url: "https://fotz.pl/blog/dcf-discounted-cash-flow-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "DCF — Discounted Cash Flow", url: "https://www.fotz-studio.pl/blog/dcf-discounted-cash-flow-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -87,7 +87,7 @@ export default function BlogDcfCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "DCF — Discounted Cash Flow", url: "https://fotz.pl" },
+              { name: "DCF — Discounted Cash Flow", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             DCF — co to jest i jak obliczyć wycenę?

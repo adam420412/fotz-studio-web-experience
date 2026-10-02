@@ -62,7 +62,7 @@ export default function BlogDigitalPRCoTo() {
       <SEOHead
         title="Digital PR — co to jest i jak zdobywać backlinki przez PR?"
         description="Digital PR co to jest — wyjaśniamy czym jest Digital PR, jak zdobywać backlinki przez media, HARO, linkable assets i jak mierzyć efekty kampanii."
-        canonical="https://fotz.pl/blog/digital-pr-co-to"
+        canonical="https://www.fotz-studio.pl/blog/digital-pr-co-to"
 
         keywords="Digital PR co to jest, Digital PR definicja, czym jest Digital PR, Digital PR przykłady, jak działa Digital PR, Digital PR znaczenie, Digital PR przewodnik"
       />
@@ -71,7 +71,7 @@ export default function BlogDigitalPRCoTo() {
         description="Czym jest Digital PR, różnica vs link building, taktyki (data journalism, HARO, linkable assets), jak zdobywać backlinki z mediów i mierzyć ROI."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/digital-pr-co-to"
+        url="https://www.fotz-studio.pl/blog/digital-pr-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

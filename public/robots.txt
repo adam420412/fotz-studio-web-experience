@@ -15,4 +15,4 @@ Disallow: /filter/
 Disallow: /*?filter=
 Disallow: /*?sort=
 
-Sitemap: https://fotz.pl/sitemap-index.xml
+Sitemap: https://www.fotz-studio.pl/sitemap-index.xml

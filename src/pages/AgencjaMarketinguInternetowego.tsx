@@ -177,7 +177,7 @@ export default function AgencjaMarketinguInternetowego() {
       <SEOHead
         title="Agencja Marketingu Internetowego | Fotz Studio"
         description="Agencja marketingu internetowego Fotz Studio — SEO, Google Ads, Social Media i content marketing dla firm. Skuteczne kampanie online, audyt i strategia, dzięki którym skupisz się na swojej podstawowej działalności."
-        canonical="https://fotz.pl/agencja-marketingu-internetowego"
+        canonical="https://www.fotz-studio.pl/agencja-marketingu-internetowego"
         keywords="agencja marketingu internetowego, marketing internetowy, pozycjonowanie stron, SEO, SEM, Google Ads, kampanie reklamowe, digital marketing, performance marketing"
       />
 
@@ -189,9 +189,9 @@ export default function AgencjaMarketinguInternetowego() {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Agencja Marketingu Internetowego", url: "https://fotz.pl/agencja-marketingu-internetowego" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Agencja Marketingu Internetowego", url: "https://www.fotz-studio.pl/agencja-marketingu-internetowego" }
         ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}

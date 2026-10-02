@@ -102,12 +102,12 @@ export default function UslugiCluster() {
         <SEOHead
           title="Usługi Marketingowe | Strony, SEO, Ads, Branding — FOTZ Studio"
           description="Pełny zakres usług marketingowych: strony internetowe, SEO, Google Ads, branding, fotografia, wideo, e-commerce i social media. Poznań i cała Polska."
-          canonical="https://fotz.pl/uslugi"
+          canonical="https://www.fotz-studio.pl/uslugi"
         />
         <BreadcrumbSchema
           items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Usługi", url: "https://fotz.pl/uslugi" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
           ]}
         />
         <FAQSchema items={faqItems} />

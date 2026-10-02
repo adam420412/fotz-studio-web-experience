@@ -51,21 +51,21 @@ export default function BlogNrrGrrCoTo() {
       <SEOHead
         title="NRR i GRR — co to jest Net Revenue Retention i jak poprawić?"
         description="NRR (Net Revenue Retention) i GRR (Gross Revenue Retention): formuły, benchmarki, segmentacja, strategie poprawy i wpływ na wycenę firmy SaaS."
-        canonical="https://fotz.pl/blog/nrr-grr-net-revenue-retention-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/nrr-grr-net-revenue-retention-co-to-jest"
 
         keywords="NRR i GRR co to jest, NRR i GRR definicja, czym jest NRR i GRR, NRR i GRR przykłady, jak działa NRR i GRR, NRR i GRR znaczenie, NRR i GRR przewodnik"
       />
       <ArticleSchema
         title="NRR i GRR — co to jest Net Revenue Retention i jak poprawić?"
         description="NRR i GRR: formuły, obliczenia, benchmarki (Snowflake 135%, Datadog 130%), segmentacja per cohort, strategie poprawy retencji i ekspansji w SaaS."
-        url="https://fotz.pl/blog/nrr-grr-net-revenue-retention-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/nrr-grr-net-revenue-retention-co-to-jest"
         datePublished="2024-03-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "NRR i GRR", url: "https://fotz.pl/blog/nrr-grr-net-revenue-retention-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "NRR i GRR", url: "https://www.fotz-studio.pl/blog/nrr-grr-net-revenue-retention-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 px-4">

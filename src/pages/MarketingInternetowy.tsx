@@ -174,7 +174,7 @@ export default function MarketingInternetowy() {
       <SEOHead
         title="Marketing internetowy | Fotz Studio"
         description="Marketing internetowy dla firm w Polsce. SEO, Google Ads, Facebook i Instagram, social media, content marketing. Kompleksowe usługi online dla Twojej firmy i bezpłatna strategia marketingowa na start."
-        canonical="https://fotz.pl/uslugi/marketing-internetowy"
+        canonical="https://www.fotz-studio.pl/uslugi/marketing-internetowy"
         keywords="marketing internetowy, marketing online, marketing cyfrowy, usługi marketingowe online, agencja marketingu internetowego, digital marketing"
       />
 

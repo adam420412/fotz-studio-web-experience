@@ -97,21 +97,21 @@ export default function BlogEmployeeAdvocacyCoTo() {
       <SEOHead
         title="Employee Advocacy — co to jest? Pracownicy jako ambasadorzy marki"
         description="Employee advocacy — definicja, dlaczego pracownicy są 8× skuteczniejsi niż posty korporacyjne, 6-etapowy program i jak mierzyć ROI. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/employee-advocacy-co-to"
+        canonical="https://www.fotz-studio.pl/blog/employee-advocacy-co-to"
 
         keywords="Employee Advocacy co to jest, Employee Advocacy definicja, czym jest Employee Advocacy, Employee Advocacy startup, Employee Advocacy jak liczyć, Employee Advocacy wzór, Employee Advocacy przykłady"
       />
       <ArticleSchema
         title="Employee Advocacy — co to jest i jak budować program?"
         description="Kompletny przewodnik po employee advocacy: korzyści, 6-etapowy program, gamification i metryki efektywności."
-        url="https://fotz.pl/blog/employee-advocacy-co-to"
+        url="https://www.fotz-studio.pl/blog/employee-advocacy-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Employee Advocacy", url: "https://fotz.pl/blog/employee-advocacy-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Employee Advocacy", url: "https://www.fotz-studio.pl/blog/employee-advocacy-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -119,7 +119,7 @@ export default function BlogEmployeeAdvocacyCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Employee Advocacy", url: "https://fotz.pl" },
+              { name: "Employee Advocacy", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Employee Advocacy — co to jest i jak działa?

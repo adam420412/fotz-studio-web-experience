@@ -44,21 +44,21 @@ export default function BlogAiCodingToolsCoTo() {
       <SEOHead
         title="AI coding tools 2024 — GitHub Copilot, Cursor, Windsurf, Continue.dev i Aider?"
         description="6 narzędzi AI do kodowania (Copilot/Cursor/Windsurf/Continue.dev/Aider/Claude Code) — modele, workflow, prompting best practices i wpływ na produktywność developera."
-        canonical="https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
+        canonical="https://www.fotz-studio.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
 
         keywords="AI coding tools 2024 co to jest, AI coding tools 2024 definicja, czym jest AI coding tools 2024, AI coding tools 2024 przykłady, jak działa AI coding tools 2024, AI coding tools 2024 znaczenie, AI coding tools 2024 przewodnik"
       />
       <ArticleSchema
         title="AI coding tools 2024 — GitHub Copilot, Cursor, Windsurf, Continue.dev i Aider?"
         description="6 narzędzi AI do kodowania (Copilot/Cursor/Windsurf/Continue.dev/Aider/Claude Code) — modele, workflow, prompting best practices i wpływ na produktywność developera."
-        url="https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
+        url="https://www.fotz-studio.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024"
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AI Coding Tools 2024", url: "https://fotz.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AI Coding Tools 2024", url: "https://www.fotz-studio.pl/blog/ai-coding-tools-copilot-cursor-windsurf-continue-aider-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-sky-950 text-white py-20 px-4">

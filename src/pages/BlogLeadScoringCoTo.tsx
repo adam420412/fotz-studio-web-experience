@@ -108,26 +108,26 @@ export default function BlogLeadScoringCoTo() {
       <SEOHead
         title="Lead Scoring — co to jest i jak oceniać leady? | Fotz Studio"
         description="Lead scoring — definicja, 4 wymiary scoringu (demograficzne, firmograficzne, behawioralne), MQL vs SQL, 6-krokowy proces i narzędzia. Kompletny przewodnik B2B."
-        canonical="https://fotz.pl/blog/lead-scoring-co-to"
+        canonical="https://www.fotz-studio.pl/blog/lead-scoring-co-to"
 
         keywords="Lead Scoring co to jest, Lead Scoring definicja, czym jest Lead Scoring, Lead Scoring w marketingu, Lead Scoring przykłady, jak działa Lead Scoring, Lead Scoring strategia"
       />
       <ArticleSchema
         title="Lead Scoring — co to jest i jak oceniać leady?"
         description="Kompletny przewodnik po lead scoringu: 4 wymiary, MQL vs SQL, predictive scoring i narzędzia: HubSpot, Marketo, Salesforce Einstein."
-        url="https://fotz.pl/blog/lead-scoring-co-to"
+        url="https://www.fotz-studio.pl/blog/lead-scoring-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Lead Scoring", url: "https://fotz.pl/blog/lead-scoring-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Lead Scoring", url: "https://www.fotz-studio.pl/blog/lead-scoring-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Lead Scoring", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Lead Scoring", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Lead Scoring — co to jest i jak oceniać leady?
           </h1>

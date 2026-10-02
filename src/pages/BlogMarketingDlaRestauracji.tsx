@@ -150,7 +150,7 @@ export default function BlogMarketingDlaRestauracji() {
       <SEOHead
         title="Marketing dla restauracji — kompletny poradnik 2025"
         description="Marketing dla restauracji: strategie social media, Google Moja Firma, rezerwacje online, fotografia kulinarna, Google Ads lokalne, email marketing, opinie online, programy lojalnościowe."
-        canonical="https://fotz.pl/blog/marketing-dla-restauracji"
+        canonical="https://www.fotz-studio.pl/blog/marketing-dla-restauracji"
 
         keywords="Marketing dla restauracji, Marketing dla restauracji poradnik, Marketing dla restauracji strategia, Marketing dla restauracji jak zrobić, Marketing dla restauracji marketing, Marketing dla restauracji przykłady, Marketing dla restauracji w Polsce"
       />
@@ -159,7 +159,7 @@ export default function BlogMarketingDlaRestauracji() {
         description="Marketing dla restauracji: strategie social media, Google Moja Firma, rezerwacje online, fotografia kulinarna, Google Ads lokalne, email marketing, opinie online, programy lojalnościowe."
         datePublished="2025-03-10"
         dateModified="2025-07-20"
-        url="https://fotz.pl/blog/marketing-dla-restauracji"
+        url="https://www.fotz-studio.pl/blog/marketing-dla-restauracji"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[

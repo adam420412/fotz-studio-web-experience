@@ -106,21 +106,21 @@ export default function BlogCustomerRetentionCoTo() {
       <SEOHead
         title="Customer Retention — co to jest i jak ją mierzyć?"
         description="Customer retention — definicja, jak obliczać CRR, NRR i LTV, 6 strategii utrzymania klientów. Kompletny przewodnik po retencji klientów i redukcji churnu."
-        canonical="https://fotz.pl/blog/customer-retention-co-to"
+        canonical="https://www.fotz-studio.pl/blog/customer-retention-co-to"
 
         keywords="Customer Retention co to jest, Customer Retention definicja, czym jest Customer Retention, Customer Retention przykłady, jak działa Customer Retention, Customer Retention znaczenie, Customer Retention przewodnik"
       />
       <ArticleSchema
         title="Customer Retention — co to jest i jak ją mierzyć?"
         description="Kompletny przewodnik po customer retention: metryki CRR, NRR, LTV oraz 6 strategii utrzymania klientów."
-        url="https://fotz.pl/blog/customer-retention-co-to"
+        url="https://www.fotz-studio.pl/blog/customer-retention-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Customer Retention", url: "https://fotz.pl/blog/customer-retention-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Customer Retention", url: "https://www.fotz-studio.pl/blog/customer-retention-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -128,7 +128,7 @@ export default function BlogCustomerRetentionCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Customer Retention", url: "https://fotz.pl" },
+              { name: "Customer Retention", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Customer Retention — co to jest i jak ją mierzyć?

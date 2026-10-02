@@ -44,21 +44,21 @@ export default function BlogRateLimitingCoTo() {
       <SEOHead
         title="Rate Limiting — co to jest, Token Bucket, Redis, Nginx, Kong, AWS API Gateway?"
         description="Rate Limiting: Token Bucket vs Leaky Bucket vs Sliding Window, implementacja z Redis, Kong, AWS API Gateway, Cloudflare i Exponential Backoff dla klientów API."
-        canonical="https://fotz.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
+        canonical="https://www.fotz-studio.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
 
         keywords="Rate Limiting co to jest, Rate Limiting jak działa, Rate Limiting tutorial, Rate Limiting przykład, czym jest Rate Limiting, Rate Limiting dokumentacja, Rate Limiting przewodnik"
       />
       <ArticleSchema
         title="Rate Limiting — co to jest, Token Bucket, Redis, Nginx, Kong, AWS API Gateway?"
         description="Rate Limiting: 6 algorytmów (Fixed Window/Token Bucket/Leaky Bucket/Sliding Window/GCRA), Redis implementacja, Kong/AWS Gateway, Exponential Backoff."
-        url="https://fotz.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
+        url="https://www.fotz-studio.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Rate Limiting", url: "https://fotz.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Rate Limiting", url: "https://www.fotz-studio.pl/blog/rate-limiting-co-to-jest-token-bucket-redis-nginx-kong-aws-api-gateway" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-pink-950 text-white py-20 px-4">

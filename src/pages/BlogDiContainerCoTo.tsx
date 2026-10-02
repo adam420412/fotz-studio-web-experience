@@ -44,21 +44,21 @@ export default function BlogDiContainerCoTo() {
       <SEOHead
         title="Dependency Injection, SOLID, Design Patterns | Fotz Studio"
         description="6 wzorców DI i architekturalnych (Constructor DI/Inversify/Pure DI/Factory/Repository/Service Locator) — SOLID, GoF patterns, Clean Architecture w TypeScript."
-        canonical="https://fotz.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
+        canonical="https://www.fotz-studio.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
 
         keywords="Dependency Injection, SOLID, Design Patterns co to jest, Dependency Injection, SOLID, Design Patterns jak działa, Dependency Injection, SOLID, Design Patterns tutorial, Dependency Injection, SOLID, Design Patterns przykład, czym jest Dependency Injection, SOLID, Design Patterns, Dependency Injection, SOLID, Design Patterns dokumentacja, Dependency Injection, SOLID, Design Patterns przewodnik"
       />
       <ArticleSchema
         title="Dependency Injection, SOLID, Design Patterns — TypeScript Node.js?"
         description="6 wzorców DI i architekturalnych (Constructor DI/Inversify/Pure DI/Factory/Repository/Service Locator) — SOLID, GoF patterns, Clean Architecture w TypeScript."
-        url="https://fotz.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
+        url="https://www.fotz-studio.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Dependency Injection i SOLID", url: "https://fotz.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Dependency Injection i SOLID", url: "https://www.fotz-studio.pl/blog/dependency-injection-solid-design-patterns-typescript-nodejs" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-950 text-white py-20 px-4">

@@ -85,12 +85,12 @@ export default function DlaKogo() {
       <SEOHead
         title="Dla Kogo Pracujemy — Marketing dla Firm, E-commerce i Instytucji"
         description="Fotz Studio pracuje dla firm lokalnych, e-commerce, marek premium, instytucji i startupów. Marketing internetowy, SEO, social media i produkcja wideo dopasowane do specyfiki Twojej branży."
-        canonical="https://fotz.pl/dla-kogo"
+        canonical="https://www.fotz-studio.pl/dla-kogo"
         keywords="dla kogo usługi marketingowe, marketing dla branż, agencja marketingowa dla firm, digital marketing branże, marketing b2b b2c"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" }
         ]}/>
       <ServiceSchema 
         name="Usługi marketingowe dla branż"

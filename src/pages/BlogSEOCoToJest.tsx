@@ -66,7 +66,7 @@ export default function BlogSEOCoToJest() {
       <SEOHead
         title="SEO co to jest — jak działa pozycjonowanie stron? Poradnik"
         description="Czym jest SEO, jak działa pozycjonowanie organiczne, filar on-page, off-page i technical SEO. Ile kosztuje i ile trwa."
-        canonical="https://fotz.pl/blog/seo-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/seo-co-to-jest"
 
         keywords="SEO co to jest, SEO definicja, czym jest SEO, SEO w marketingu, SEO przykłady, jak działa SEO, SEO strategia"
       />
@@ -75,7 +75,7 @@ export default function BlogSEOCoToJest() {
         description="Czym jest SEO, jak działa pozycjonowanie organiczne, filar on-page, off-page i technical SEO. Ile kosztuje i ile trwa."
         datePublished="2025-01-20"
         dateModified="2025-03-30"
-        url="https://fotz.pl/blog/seo-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/seo-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

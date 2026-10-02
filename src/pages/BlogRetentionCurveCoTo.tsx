@@ -78,21 +78,21 @@ export default function BlogRetentionCurveCoTo() {
       <SEOHead
         title="Krzywa retencji — co to jest i jak poprawić retencję? | Fotz.pl"
         description="Retention curve — jak analizować krzywe retencji, typy krzywych, benchmarki dla SaaS i consumer apps, dźwignie poprawy retencji. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
 
         keywords="Krzywa retencji co to jest, Krzywa retencji definicja, czym jest Krzywa retencji, Krzywa retencji przykłady, jak działa Krzywa retencji, Krzywa retencji znaczenie, Krzywa retencji przewodnik"
       />
       <ArticleSchema
         title="Krzywa retencji — co to jest i jak poprawić retencję?"
         description="Retention curve: typy krzywych retencji, benchmarki, etapy retencji i dźwignie poprawy. Jak mierzyć i interpretować retencję w SaaS i consumer apps."
-        url="https://fotz.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/retention-curve-krzywa-retencji-co-to-jest"
         datePublished="2024-02-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Krzywa retencji", url: "https://fotz.pl/blog/retention-curve-krzywa-retencji-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Krzywa retencji", url: "https://www.fotz-studio.pl/blog/retention-curve-krzywa-retencji-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white py-20 px-4">

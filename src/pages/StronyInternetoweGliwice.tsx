@@ -88,12 +88,12 @@ const StronyInternetoweGliwice = () => {
       <SEOHead
         title="Strony Internetowe Gliwice | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Gliwice — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Gliwic. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/gliwice"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/gliwice"
         keywords="strony internetowe gliwice, tworzenie stron gliwice, strony www gliwice, projektowanie stron gliwice"
       />
       
       <ServiceSchema name="Strony Internetowe Gliwice" description="Profesjonalne tworzenie stron internetowych dla firm z Gliwic." provider="FOTZ Studio" areaServed="Gliwice" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Gliwice", url: "https://fotz.pl/uslugi/strony-internetowe/gliwice" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Gliwice", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/gliwice" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

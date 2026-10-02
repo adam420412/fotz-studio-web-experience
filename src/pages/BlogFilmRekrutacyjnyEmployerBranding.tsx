@@ -38,7 +38,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/film-rekrutacyjny-employer-branding";
+const CANONICAL = "https://www.fotz-studio.pl/blog/film-rekrutacyjny-employer-branding";
 
 export default function BlogFilmRekrutacyjnyEmployerBranding() {
   return (
@@ -58,8 +58,8 @@ export default function BlogFilmRekrutacyjnyEmployerBranding() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Film rekrutacyjny: jak przyciągnąć kandydatów, którzy sami się zgłoszą", url: CANONICAL },
         ]}
       />

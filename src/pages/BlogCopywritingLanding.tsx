@@ -38,21 +38,21 @@ export default function BlogCopywritingLanding() {
         title="Copywriting dla Landing Page — Jak Pisać Teksty, które Konwertują"
         description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."
         ogType="article"
-        canonical="https://fotz.pl/content-marketing/copywriting-landing"
+        canonical="https://www.fotz-studio.pl/content-marketing/copywriting-landing"
         keywords="copywriting landing page, teksty na landing page, copywriter strona internetowa, copywriting sprzedażowy, teksty reklamowe"
       />
       <ArticleSchema
         title="Copywriting dla landing pages - jak pisać teksty, które konwertują"
         description="Copywriting dla landing pages: headlines, CTA, bullet points, social proof. Praktyczny poradnik pisania tekstów."
-        url="https://fotz.pl/content-marketing/copywriting-landing"
+        url="https://www.fotz-studio.pl/content-marketing/copywriting-landing"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Copywriting Landing Page", url: "https://fotz.pl/content-marketing/copywriting-landing" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Copywriting Landing Page", url: "https://www.fotz-studio.pl/content-marketing/copywriting-landing" },
         ]}/>
       <FAQSchema items={faqItems} />
 

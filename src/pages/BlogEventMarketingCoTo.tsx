@@ -96,21 +96,21 @@ export default function BlogEventMarketingCoTo() {
       <SEOHead
         title="Event Marketing — co to jest i jak działa? Kompletny przewodnik"
         description="Event marketing — definicja, rodzaje eventów, jak mierzyć ROI i metryki sukcesu. Kompletny przewodnik po organizowaniu skutecznych wydarzeń marketingowych."
-        canonical="https://fotz.pl/blog/event-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/event-marketing-co-to"
 
         keywords="Event Marketing co to jest, Event Marketing definicja, czym jest Event Marketing, Event Marketing w marketingu, Event Marketing przykłady, jak działa Event Marketing, Event Marketing strategia"
       />
       <ArticleSchema
         title="Event Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po event marketingu: rodzaje eventów, metryki ROI i jak organizować skuteczne wydarzenia marketingowe."
-        url="https://fotz.pl/blog/event-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/event-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Event Marketing", url: "https://fotz.pl/blog/event-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Event Marketing", url: "https://www.fotz-studio.pl/blog/event-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -118,7 +118,7 @@ export default function BlogEventMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Event Marketing", url: "https://fotz.pl" },
+              { name: "Event Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Event Marketing — co to jest i jak działa?

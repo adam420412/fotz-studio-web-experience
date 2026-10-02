@@ -78,26 +78,26 @@ export default function BlogNetworkEffectsCoTo() {
       <SEOHead
         title="Efekty Sieciowe (Network Effects) | Fotz Studio"
         description="Kompletny przewodnik po efektach sieciowych: 4 typy network effects, cold start problem, winner-takes-all i przykłady (Facebook, LinkedIn, Uber)."
-        canonical="https://fotz.pl/blog/efekty-sieciowe-network-effects"
+        canonical="https://www.fotz-studio.pl/blog/efekty-sieciowe-network-effects"
 
         keywords="Efekty Sieciowe (Network Effects) co to jest, Efekty Sieciowe (Network Effects) definicja, czym jest Efekty Sieciowe (Network Effects), Efekty Sieciowe (Network Effects) przykłady, jak działa Efekty Sieciowe (Network Effects), Efekty Sieciowe (Network Effects) znaczenie, Efekty Sieciowe (Network Effects) przewodnik"
       />
       <ArticleSchema
         title="Efekty Sieciowe (Network Effects) — co to jest i jak budują przewagę?"
         description="Kompletny przewodnik po efektach sieciowych: 4 typy network effects, cold start problem, winner-takes-all i przykłady (Facebook, LinkedIn, Uber)."
-        url="https://fotz.pl/blog/efekty-sieciowe-network-effects"
+        url="https://www.fotz-studio.pl/blog/efekty-sieciowe-network-effects"
         datePublished="2024-02-05"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Efekty Sieciowe", url: "https://fotz.pl/blog/efekty-sieciowe-network-effects" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Efekty Sieciowe", url: "https://www.fotz-studio.pl/blog/efekty-sieciowe-network-effects" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Efekty Sieciowe", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Efekty Sieciowe", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Efekty Sieciowe (Network Effects) — co to jest?
           </h1>

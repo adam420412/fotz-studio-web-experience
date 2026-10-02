@@ -44,21 +44,21 @@ export default function BlogWebWorkersCoTo() {
       <SEOHead
         title="Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer"
         description="6 technologii wielowątkowych (Dedicated Worker/Shared Worker/Service Worker/Audio Worklet/Comlink/OffscreenCanvas) — przenoszenie ciężkich obliczeń poza main thread."
-        canonical="https://fotz.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024"
+        canonical="https://www.fotz-studio.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024"
 
         keywords="Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer co to jest, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer definicja, czym jest Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer startup, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer jak liczyć, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer wzór, Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer przykłady"
       />
       <ArticleSchema
         title="Web Workers, Comlink, OffscreenCanvas i SharedArrayBuffer — wielowątkowość JavaScript 2024?"
         description="6 technologii wielowątkowych (Dedicated Worker/Shared Worker/Service Worker/Audio Worklet/Comlink/OffscreenCanvas) — przenoszenie ciężkich obliczeń poza main thread."
-        url="https://fotz.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024"
+        url="https://www.fotz-studio.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Web Workers i wielowątkowość", url: "https://fotz.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Web Workers i wielowątkowość", url: "https://www.fotz-studio.pl/blog/web-workers-comlink-offscreencanvas-shared-array-buffer-javascript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-yellow-950 text-white py-20 px-4">

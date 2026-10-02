@@ -44,21 +44,21 @@ export default function BlogPasskeysWebAuthnCoTo() {
       <SEOHead
         title="Passkeys i WebAuthn — implementacja w Next.js, SimpleWebAuthn i UX 2024?"
         description="6 aspektów passkeys vs hasła (phishing/reuse/brute force/data breach/UX/wsparcie) — WebAuthn API, SimpleWebAuthn Next.js, conditional UI, YubiKey enterprise i Auth.js v5."
-        canonical="https://fotz.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024"
+        canonical="https://www.fotz-studio.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024"
 
         keywords="Passkeys i WebAuthn co to jest, Passkeys i WebAuthn jak działa, Passkeys i WebAuthn tutorial, Passkeys i WebAuthn przykład, czym jest Passkeys i WebAuthn, Passkeys i WebAuthn dokumentacja, Passkeys i WebAuthn przewodnik"
       />
       <ArticleSchema
         title="Passkeys i WebAuthn — implementacja w Next.js, SimpleWebAuthn i UX 2024?"
         description="6 aspektów passkeys vs hasła (phishing/reuse/brute force/data breach/UX/wsparcie) — WebAuthn API, SimpleWebAuthn Next.js, conditional UI, YubiKey enterprise i Auth.js v5."
-        url="https://fotz.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024"
+        url="https://www.fotz-studio.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024"
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Passkeys i WebAuthn", url: "https://fotz.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Passkeys i WebAuthn", url: "https://www.fotz-studio.pl/blog/passkeys-webauthn-implementacja-nextjs-simplewebauthn-fido2-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-green-950 text-white py-20 px-4">

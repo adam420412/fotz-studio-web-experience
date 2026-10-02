@@ -65,9 +65,9 @@ export default function BlogGrowthMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="Growth Marketing — co to jest i jak działa? | fotz.pl"
+        title="Growth Marketing — co to jest i jak działa? | FOTZ Studio"
         description="Growth Marketing co to jest — wyjaśniamy czym jest growth marketing, framework AARRR, jak prowadzić eksperymenty, kanały wzrostu i kluczowe metryki."
-        canonical="https://fotz.pl/blog/growth-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/growth-marketing-co-to"
 
         keywords="Growth Marketing co to jest, Growth Marketing definicja, czym jest Growth Marketing, Growth Marketing w marketingu, Growth Marketing przykłady, jak działa Growth Marketing, Growth Marketing strategia"
       />
@@ -76,7 +76,7 @@ export default function BlogGrowthMarketingCoTo() {
         description="Czym jest Growth Marketing, różnica growth marketing vs growth hacking, framework AARRR, eksperymenty, kanały wzrostu, metryki i narzędzia growth marketerów."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/growth-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/growth-marketing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -53,21 +53,21 @@ export default function BlogBurnMultipleCoTo() {
       <SEOHead
         title="Burn Multiple — co to jest i jak obliczać? | Fotz.pl"
         description="Burn Multiple w SaaS i startupach — formuła, benchmarki, różnica vs Runway i jak poprawić efektywność kapitałową. Kompletny przewodnik dla founderów i CFO."
-        canonical="https://fotz.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas"
+        canonical="https://www.fotz-studio.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas"
 
         keywords="Burn Multiple co to jest, Burn Multiple definicja, czym jest Burn Multiple, Burn Multiple startup, Burn Multiple jak liczyć, Burn Multiple wzór, Burn Multiple przykłady"
       />
       <ArticleSchema
         title="Burn Multiple — co to jest i jak obliczać?"
         description="Kompletny przewodnik po Burn Multiple: formuła, benchmarki, czynniki wpływające i jak poprawić efektywność."
-        url="https://fotz.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas"
+        url="https://www.fotz-studio.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas"
         datePublished="2024-02-24"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Burn Multiple", url: "https://fotz.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Burn Multiple", url: "https://www.fotz-studio.pl/blog/burn-multiple-efektywnosc-kapitalowa-saas" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-slate-900 text-white py-20 px-4">

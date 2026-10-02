@@ -99,7 +99,7 @@ export default function BlogUserOnboardingCoTo() {
       <SEOHead
         title="User Onboarding — co to jest? Wdrożenie użytkownika w SaaS"
         description="User onboarding co to jest — wyjaśniamy czym jest wdrożenie użytkownika, aha moment, wzorce onboardingu, metryki i różnice B2B vs B2C w produktach SaaS."
-        canonical="https://fotz.pl/blog/user-onboarding-co-to"
+        canonical="https://www.fotz-studio.pl/blog/user-onboarding-co-to"
 
         keywords="User Onboarding co to jest, User Onboarding definicja, czym jest User Onboarding, User Onboarding startup, User Onboarding jak liczyć, User Onboarding wzór, User Onboarding przykłady"
       />
@@ -108,7 +108,7 @@ export default function BlogUserOnboardingCoTo() {
         description="Czym jest user onboarding, aha moment, wzorce (product tour, checklist, email sequence), metryki (activation rate, TTV) i narzędzia onboardingowe."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/user-onboarding-co-to"
+        url="https://www.fotz-studio.pl/blog/user-onboarding-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -44,21 +44,21 @@ export default function BlogJsProposalsCoTo() {
       <SEOHead
         title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024?"
         description="ES2024 (Object.groupBy, Array.toSorted), TC39 Stage 3 (Decorators, Iterator Helpers, Temporal API), Pattern Matching, Records/Tuples i nowoczesne JS metody."
-        canonical="https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
+        canonical="https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
 
         keywords="Nowe funkcje JavaScript co to jest, Nowe funkcje JavaScript jak działa, Nowe funkcje JavaScript tutorial, Nowe funkcje JavaScript przykład, czym jest Nowe funkcje JavaScript, Nowe funkcje JavaScript dokumentacja, Nowe funkcje JavaScript przewodnik"
       />
       <ArticleSchema
         title="Nowe funkcje JavaScript — ES2024, TC39 proposals, Temporal API i Iterator Helpers 2024?"
         description="6 propozycji JS (Object.groupBy/Array.toSorted/Decorators/Pattern Matching/Iterator Helpers/Temporal) — ES2024, Stage 3 proposals i przyszłość JavaScript."
-        url="https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
+        url="https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Nowe funkcje JavaScript ES2024", url: "https://fotz.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Nowe funkcje JavaScript ES2024", url: "https://www.fotz-studio.pl/blog/nowe-funkcje-javascript-es2024-tc39-proposals-temporal-iterator-helpers" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-amber-950 text-white py-20 px-4">

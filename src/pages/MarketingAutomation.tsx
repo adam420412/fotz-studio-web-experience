@@ -118,9 +118,9 @@ export default function MarketingAutomation() {
   return (
     <>
       <SEOHead
-        title="Marketing Automation — wdrożenie i obsługa | fotz.pl"
+        title="Marketing Automation — wdrożenie i obsługa | FOTZ Studio"
         description="Marketing automation dla firm — wdrożenie automatyzacji emaili, lead scoringu, CRM i nurturingu. Pracuj mądrzej, nie więcej. Sprawdź ofertę i cennik!"
-        canonical="https://fotz.pl/uslugi/marketing-automation"
+        canonical="https://www.fotz-studio.pl/uslugi/marketing-automation"
         keywords="marketing automation, automatyzacja marketingu, marketing automation dla firm, narzędzia marketing automation, marketing automation crm"
       />
       <ServiceSchema

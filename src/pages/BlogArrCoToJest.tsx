@@ -85,21 +85,21 @@ export default function BlogArrCoToJest() {
       <SEOHead
         title="ARR co to jest — Annual Recurring Revenue w SaaS | Fotz.pl"
         description="Kompletny przewodnik po ARR: definicja, formuła, komponenty i benchmarki wzrostu."
-        canonical="https://fotz.pl/blog/arr-annual-recurring-revenue-co-to"
+        canonical="https://www.fotz-studio.pl/blog/arr-annual-recurring-revenue-co-to"
 
         keywords="ARR co to jest, ARR definicja, czym jest ARR, ARR startup, ARR jak liczyć, ARR wzór, ARR przykłady"
       />
       <ArticleSchema
         title="ARR co to jest — Annual Recurring Revenue w SaaS"
         description="Kompletny przewodnik po ARR: definicja, formuła, komponenty i benchmarki wzrostu."
-        url="https://fotz.pl/blog/arr-annual-recurring-revenue-co-to"
+        url="https://www.fotz-studio.pl/blog/arr-annual-recurring-revenue-co-to"
         datePublished="2024-01-26"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "ARR co to jest", url: "https://fotz.pl/blog/arr-annual-recurring-revenue-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "ARR co to jest", url: "https://www.fotz-studio.pl/blog/arr-annual-recurring-revenue-co-to" },
         ]}/>
 
       {/* Hero */}

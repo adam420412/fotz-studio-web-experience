@@ -98,21 +98,21 @@ export default function BlogAwsCoTo() {
       <SEOHead
         title="AWS — co to jest? Amazon Web Services, usługi i certyfikacje"
         description="AWS (Amazon Web Services) — definicja, kluczowe usługi (EC2, S3, Lambda, RDS, VPC), modele cenowe i certyfikacje. Kompletny przewodnik po Amazon Web Services."
-        canonical="https://fotz.pl/blog/aws-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/aws-co-to-jest"
 
         keywords="AWS co to jest, AWS jak działa, AWS tutorial, AWS przykład, czym jest AWS, AWS dokumentacja, AWS przewodnik"
       />
       <ArticleSchema
         title="AWS — co to jest i jak działa? Kompletny przewodnik po Amazon Web Services"
         description="Kompletny przewodnik po AWS: kluczowe usługi, modele cenowe, certyfikacje i porównanie z Azure i GCP."
-        url="https://fotz.pl/blog/aws-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/aws-co-to-jest"
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AWS", url: "https://fotz.pl/blog/aws-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AWS", url: "https://www.fotz-studio.pl/blog/aws-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -120,7 +120,7 @@ export default function BlogAwsCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "AWS", url: "https://fotz.pl" },
+              { name: "AWS", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             AWS — co to jest i jak działa?

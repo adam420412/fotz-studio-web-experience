@@ -163,14 +163,14 @@ export default function AgencjaMarketingowaPoznan() {
       <SEOHead
         title="Agencja Marketingowa Poznań | Fotz Studio"
         description="Agencja marketingowa Poznań ✓ SEO, Google Ads, Social Media, strony WWW. Marketing internetowy i reklama internetowa dla firm z Poznania i Wielkopolski. Kompleksowa oferta Fotz Studio w jednym miejscu."
-        canonical="https://fotz.pl/agencja-marketingowa/poznan"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/poznan"
         keywords="agencja marketingowa poznań, marketing internetowy poznań, agencja reklamowa poznań, seo poznań, google ads poznań, firma marketingowa poznań, reklama internetowa poznań, marketing dla firm poznań"
       />
 
       <BreadcrumbSchema items={[
-          { name: "FOTZ", url: "https://fotz.pl" },
-          { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Poznań", url: "https://fotz.pl" },
+          { name: "FOTZ", url: "https://www.fotz-studio.pl" },
+          { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Poznań", url: "https://www.fotz-studio.pl" },
         ]}/>
 
       <ServiceSchema

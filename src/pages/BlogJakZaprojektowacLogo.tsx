@@ -50,21 +50,21 @@ export default function BlogJakZaprojektowacLogo() {
         title="Jak Zaprojektować Logo dla Firmy? Poradnik Krok po Kroku"
         description="Jak zaprojektować logo dla firmy? Poznaj etapy projektowania logo — od briefu po gotowe pliki. Porównanie: DIY vs. agencja. Pobierz checklist!"
         ogType="article"
-        canonical="https://fotz.pl/blog/jak-zaprojektowac-logo-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/jak-zaprojektowac-logo-dla-firmy"
         keywords="jak zaprojektować logo, projekt logo, logo dla firmy, tworzenie logo, design logo, profesjonalne logo"
       />
       <ArticleSchema
         title="Jak Zaprojektować Logo dla Firmy? Poradnik Krok po Kroku"
         description="Pełny poradnik projektowania logo. Od analizy rynku, poprzez process tworzenia, aż do gotowych plików i formatów."
-        url="https://fotz.pl/blog/jak-zaprojektowac-logo-dla-firmy"
+        url="https://www.fotz-studio.pl/blog/jak-zaprojektowac-logo-dla-firmy"
         datePublished="2025-02-20"
         dateModified="2026-04-11"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Jak Zaprojektować Logo", url: "https://fotz.pl/blog/jak-zaprojektowac-logo-dla-firmy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Jak Zaprojektować Logo", url: "https://www.fotz-studio.pl/blog/jak-zaprojektowac-logo-dla-firmy" },
         ]}/>
       <FAQSchema items={faqItems} />
 

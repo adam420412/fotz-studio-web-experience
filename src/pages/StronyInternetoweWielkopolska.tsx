@@ -97,14 +97,14 @@ export default function StronyInternetoweWielkopolska() {
   return (
     <>
       <SEOHead
-        title="Strony internetowe Wielkopolska | Poznań | fotz.pl"
+        title="Strony internetowe Wielkopolska | Poznań | FOTZ Studio"
         description="Profesjonalne strony internetowe dla firm z Wielkopolski i Poznania. Mamy siedzibę w Poznaniu, specjalizujemy się w SEO dla branż lokalnych. Wycena od 499 zł."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/wielkopolska"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/wielkopolska"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "name": "fotz.pl - Strony Internetowe Wielkopolska",
-          "image": "https://fotz.pl/logo-fotz.jpg",
+          "image": "https://www.fotz-studio.pl/logo-fotz.jpg",
           "description": "Tworzenie stron internetowych dla firm z Wielkopolski i Poznania. Zespół w Poznaniu, SEO, hosting, wsparcie.",
           "address": {
             "@type": "PostalAddress",
@@ -116,7 +116,7 @@ export default function StronyInternetoweWielkopolska() {
             {"@type": "City", "name": "Poznań"},
             {"@type": "State", "name": "Wielkopolskie"}
           ],
-          "url": "https://fotz.pl/uslugi/strony-internetowe/wielkopolska",
+          "url": "https://www.fotz-studio.pl/uslugi/strony-internetowe/wielkopolska",
           "telephone": "+48790814814",
           "priceRange": "$$",
           "serviceType": "Web Design & Development"

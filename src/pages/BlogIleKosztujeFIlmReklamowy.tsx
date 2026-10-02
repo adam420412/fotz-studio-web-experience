@@ -33,7 +33,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/ile-kosztuje-film-reklamowy";
+const CANONICAL = "https://www.fotz-studio.pl/blog/ile-kosztuje-film-reklamowy";
 
 export default function BlogIleKosztujeFIlmReklamowy() {
   return (
@@ -53,8 +53,8 @@ export default function BlogIleKosztujeFIlmReklamowy() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Ile kosztuje film reklamowy", url: CANONICAL },
         ]}
       />

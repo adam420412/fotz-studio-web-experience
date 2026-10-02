@@ -70,9 +70,9 @@ export default function BlogPitchDeck() {
   return (
     <>
       <SEOHead
-        title="Pitch deck — co to jest i jak go przygotować? | fotz.pl"
+        title="Pitch deck — co to jest i jak go przygotować? | FOTZ Studio"
         description="Pitch deck co to jest — wyjaśniamy czym jest prezentacja dla inwestorów, ile powinna mieć slajdów, jak napisać dobry pitch deck i jak wysłać do VC."
-        canonical="https://fotz.pl/blog/pitch-deck-co-to"
+        canonical="https://www.fotz-studio.pl/blog/pitch-deck-co-to"
 
         keywords="Pitch deck co to jest, Pitch deck definicja, czym jest Pitch deck, Pitch deck przykłady, jak działa Pitch deck, Pitch deck znaczenie, Pitch deck przewodnik"
       />
@@ -81,7 +81,7 @@ export default function BlogPitchDeck() {
         description="Czym jest pitch deck, ile slajdów powinien mieć, jak napisać dobry deck dla inwestorów VC i jak wysłać prezentację do funduszu."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/pitch-deck-co-to"
+        url="https://www.fotz-studio.pl/blog/pitch-deck-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

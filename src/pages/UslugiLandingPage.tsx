@@ -218,7 +218,7 @@ export default function UslugiLandingPage() {
       <SEOHead
         title="Landing Page — Tworzenie Stron Lądowania dla Kampanii"
         description="Landing page dla firm — projektujemy skuteczne strony lądowania do kampanii Google Ads, Meta Ads i e-mail marketingu. Wysoka konwersja, szybkie wdrożenie i jeden jasny cel na stronie."
-        canonical="https://fotz.pl/uslugi/landing-page"
+        canonical="https://www.fotz-studio.pl/uslugi/landing-page"
         keywords="landing page, strona lądowania, landing page tworzenie, landing page dla firmy, landing page cena, konwersja landing page"
       />
 
@@ -230,9 +230,9 @@ export default function UslugiLandingPage() {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Landing Page", url: "https://fotz.pl/uslugi/landing-page" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Landing Page", url: "https://www.fotz-studio.pl/uslugi/landing-page" },
         ]}/>
 
       <FAQSchema

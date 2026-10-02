@@ -57,7 +57,7 @@ const BlogWordPressVsCustom = () => {
         title="WordPress vs Strona na Zamówienie — Co Wybrać dla Firmy?"
         description="WordPress czy strona na zamówienie? Porównanie kosztów, czasu, wydajności i SEO. Kiedy wybrać WordPress, a kiedy dedykowaną stronę — wycena i porady"
         ogType="article"
-        canonical="https://fotz.pl/blog/wordpress-vs-strona-na-zamowienie"
+        canonical="https://www.fotz-studio.pl/blog/wordpress-vs-strona-na-zamowienie"
         keywords="WordPress vs strona na zamówienie, WordPress czy własna strona, koszt WordPress, jak wybrać platformę"
         schemaJson={[
           {
@@ -74,7 +74,7 @@ const BlogWordPressVsCustom = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2026-04-11",
@@ -84,8 +84,8 @@ const BlogWordPressVsCustom = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "WordPress vs strona na zamówienie" }
             ]
           },

@@ -44,21 +44,21 @@ export default function BlogCssAnchorPopoverCoTo() {
       <SEOHead
         title="CSS Anchor Positioning, Popover API i :has() | Fotz Studio"
         description="6 nowych CSS API (Anchor Positioning/Popover/:has()/View Transitions/Scroll-Driven/@starting-style) — natywne tooltips, popupy, animacje i scroll bez JavaScript."
-        canonical="https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
+        canonical="https://www.fotz-studio.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
 
         keywords="CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 co to jest, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 jak działa, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 tutorial, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 przykład, czym jest CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 dokumentacja, CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024 przewodnik"
       />
       <ArticleSchema
         title="CSS Anchor Positioning, Popover API, :has(), View Transitions i Scroll-Driven 2024?"
         description="6 nowych CSS API (Anchor Positioning/Popover/:has()/View Transitions/Scroll-Driven/@starting-style) — natywne tooltips, popupy, animacje i scroll bez JavaScript."
-        url="https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
+        url="https://www.fotz-studio.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024"
         datePublished="2024-06-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Nowe CSS API 2024", url: "https://fotz.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Nowe CSS API 2024", url: "https://www.fotz-studio.pl/blog/css-anchor-positioning-popover-api-has-view-transitions-scroll-driven-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-emerald-950 text-white py-20 px-4">

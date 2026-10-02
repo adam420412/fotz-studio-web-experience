@@ -48,7 +48,7 @@ export default function FacebookAdsKrakow() {
         <SEOHead
           title="Agencja Facebook Ads Kraków — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Kraków ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści, wyniki od 48h. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/facebook-ads/krakow"
+          canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/krakow"
           keywords="facebook ads krakow, meta ads krakow, reklamy facebook krakow, agencja facebook ads krakow, kampanie facebook krakow, instagram ads krakow, facebook ads dla firm krakow, reklama na facebooku krakow, meta ads agencja krakow, facebook ads cennik krakow"
         />
 
@@ -60,10 +60,10 @@ export default function FacebookAdsKrakow() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-            { name: "Facebook Ads Kraków", url: "https://fotz.pl/performance-marketing/facebook-ads/krakow" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads Kraków", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/krakow" },
           ]}/>
 
         <FAQSchema items={faqItems} />

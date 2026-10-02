@@ -79,21 +79,21 @@ export default function BlogUsageBasedPricingCoTo() {
       <SEOHead
         title="Usage-Based Pricing — co to jest i jak wdrożyć? | Fotz.pl"
         description="Usage-Based Pricing (UBP) — modele cenowe pay-as-you-go, wpływ na metryki SaaS, kiedy stosować i jak budować pricing page. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz"
+        canonical="https://www.fotz-studio.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz"
 
         keywords="Usage-Based Pricing co to jest, Usage-Based Pricing definicja, czym jest Usage-Based Pricing, Usage-Based Pricing przykłady, jak działa Usage-Based Pricing, Usage-Based Pricing znaczenie, Usage-Based Pricing przewodnik"
       />
       <ArticleSchema
         title="Usage-Based Pricing — co to jest i jak wdrożyć?"
         description="Kompletny przewodnik po Usage-Based Pricing: modele UBP, metryki, kiedy stosować i jak budować pricing page dla produktu SaaS."
-        url="https://fotz.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz"
+        url="https://www.fotz-studio.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz"
         datePublished="2024-02-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Usage-Based Pricing", url: "https://fotz.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Usage-Based Pricing", url: "https://www.fotz-studio.pl/blog/usage-based-pricing-co-to-jest-jak-wdrozyz" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">

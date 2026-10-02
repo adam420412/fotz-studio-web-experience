@@ -131,7 +131,7 @@ const FotografPoznan = () => {
       <SEOHead
         title="Fotograf Poznań — Fotografia Biznesowa i Firmowa | Fotz Studio"
         description="Fotograf Poznań — profesjonalna fotografia firmowa, korporacyjna, produktowa i eventowa dla firm z Poznania. Studio fotograficzne Fotz."
-        canonical="https://fotz.pl/uslugi/fotografia"
+        canonical="https://www.fotz-studio.pl/uslugi/fotografia"
         keywords="fotograf poznań, sesja zdjęciowa poznań, zdjęcia biznesowe poznań, fotografia firmowa poznań, fotograf biznesowy poznań"
       />
 

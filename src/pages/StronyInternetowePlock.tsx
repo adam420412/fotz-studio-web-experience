@@ -89,12 +89,12 @@ const StronyInternetowePlock = () => {
       <SEOHead
         title="Strony Internetowe Płock | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Płock — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Płocka. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/plock"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/plock"
         keywords="strony internetowe płock, tworzenie stron płock, strony www płock, projektowanie stron płock"
       />
       
       <ServiceSchema name="Strony Internetowe Płock" description="Profesjonalne tworzenie stron internetowych dla firm z Płocka." provider="FOTZ Studio" areaServed="Płock" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Płock", url: "https://fotz.pl/uslugi/strony-internetowe/plock" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Płock", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/plock" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

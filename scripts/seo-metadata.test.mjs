@@ -14,11 +14,11 @@ test('preserves complete quoted metadata, resolves imported literals and noIndex
       import { URL_PATH as route } from './constants';
       const seo = { title: ${JSON.stringify(title)}, description: 'Sprawdź zakres audytu i przygotowanie do konsultacji.' };
       export const Page = () => <SEOHead title={seo.title} description={seo.description}
-        canonical={\`https://fotz.pl\${route}\`} noIndex={false} og={{ type: 'article' }} />;
+        canonical={\`https://www.fotz-studio.pl\${route}\`} noIndex={false} og={{ type: 'article' }} />;
     `);
     const result = extractMetadata(path.join(dir, 'page.tsx'));
     assert.equal(result.title, title);
-    assert.equal(result.canonical, 'https://fotz.pl/agencja-social-media/audyt');
+    assert.equal(result.canonical, 'https://www.fotz-studio.pl/agencja-social-media/audyt');
     assert.equal(result.noIndex, false);
     assert.equal(result.ogType, 'article');
     assert.equal(escapeHtml('"A & B" <C>'), '&quot;A &amp; B&quot; &lt;C&gt;');
@@ -32,7 +32,7 @@ test('supports literal JSX entities, relative canonicals and bare noIndex', () =
     fs.writeFileSync(file, '<SEOHead title="A &amp; B" description="Opis strony." canonical="/podziekowanie/" noIndex />');
     const result = extractMetadata(file);
     assert.equal(result.title, 'A & B');
-    assert.equal(result.canonical, 'https://fotz.pl/podziekowanie');
+    assert.equal(result.canonical, 'https://www.fotz-studio.pl/podziekowanie');
     assert.equal(result.noIndex, true);
   } finally { fs.rmSync(dir, { recursive: true }); }
 });

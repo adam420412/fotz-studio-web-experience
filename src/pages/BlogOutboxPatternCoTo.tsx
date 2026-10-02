@@ -44,21 +44,21 @@ export default function BlogOutboxPatternCoTo() {
       <SEOHead
         title="Transactional Outbox Pattern — co to jest, Debezium CDC, Inbox Pattern, Spring?"
         description="Transactional Outbox Pattern: dual write problem, Debezium CDC, Inbox Pattern dla exactly-once, implementacja w Spring Boot i Axon, alternatywy Event Sourcing."
-        canonical="https://fotz.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring"
+        canonical="https://www.fotz-studio.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring"
 
         keywords="Transactional Outbox Pattern co to jest, Transactional Outbox Pattern definicja, czym jest Transactional Outbox Pattern, Transactional Outbox Pattern przykłady, jak działa Transactional Outbox Pattern, Transactional Outbox Pattern znaczenie, Transactional Outbox Pattern przewodnik"
       />
       <ArticleSchema
         title="Transactional Outbox Pattern — co to jest, Debezium CDC, Inbox Pattern, Spring?"
         description="Outbox Pattern: dual write, Debezium CDC, Inbox exactly-once, Spring Boot implementacja, Event Sourcing jako alternatywa — 6 wzorców porównanych."
-        url="https://fotz.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring"
+        url="https://www.fotz-studio.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Transactional Outbox", url: "https://fotz.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Transactional Outbox", url: "https://www.fotz-studio.pl/blog/transactional-outbox-pattern-co-to-jest-debezium-cdc-inbox-spring" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">

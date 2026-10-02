@@ -98,7 +98,7 @@ const MarketingNGO = () => {
       <SEOHead
         title="Marketing dla NGO i Fundacji | Organizacje Pozarządowe | Fotz Studio"
         description="Marketing dla organizacji pozarządowych - strony dla fundacji, kampanie fundraisingowe, filmy społeczne. Zwiększ wpływy z darowizn i buduj społeczność."
-        canonical="https://fotz.pl/dla-kogo/ngo"
+        canonical="https://www.fotz-studio.pl/dla-kogo/ngo"
         keywords="marketing ngo, marketing fundacji, marketing organizacji pozarządowych, kampanie fundraisingowe, marketing non-profit, social media ngo, reklama fundacji, filmy społeczne"
       />
 
@@ -109,9 +109,9 @@ const MarketingNGO = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "NGO", url: "https://fotz.pl/dla-kogo/ngo" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "NGO", url: "https://www.fotz-studio.pl/dla-kogo/ngo" },
         ]}
       />
       <FAQSchema items={faqItems} />

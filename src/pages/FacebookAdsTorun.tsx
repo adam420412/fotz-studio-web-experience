@@ -7,7 +7,7 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 import { Link } from "react-router-dom";
 
 function FacebookAdsTorun() {
-  const canonicalUrl = "https://fotz.pl/performance-marketing/facebook-ads/torun";
+  const canonicalUrl = "https://www.fotz-studio.pl/performance-marketing/facebook-ads/torun";
 
   const faqs = [
     {
@@ -48,9 +48,9 @@ function FacebookAdsTorun() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://fotz.pl" },
-      { "@type": "ListItem", position: 2, name: "Kampanie reklamowe", item: "https://fotz.pl/performance-marketing" },
-      { "@type": "ListItem", position: 3, name: "Facebook Ads", item: "https://fotz.pl/performance-marketing/facebook-ads" },
+      { "@type": "ListItem", position: 1, name: "Strona główna", item: "https://www.fotz-studio.pl" },
+      { "@type": "ListItem", position: 2, name: "Kampanie reklamowe", item: "https://www.fotz-studio.pl/performance-marketing" },
+      { "@type": "ListItem", position: 3, name: "Facebook Ads", item: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
       { "@type": "ListItem", position: 4, name: "Facebook Ads Toruń", item: canonicalUrl },
     ],
   };

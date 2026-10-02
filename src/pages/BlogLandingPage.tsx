@@ -36,21 +36,21 @@ const BlogLandingPage = () => {
         title="Landing Page — Jak Stworzyć Skuteczną Stronę Lądowania? Poradnik"
         description="Jak stworzyć skuteczny landing page? Elementy konwertującej strony lądowania, przykłady i najlepsze praktyki. Poradnik tworzenia landing page 2025. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/jak-stworzyc-landing-page"
+        canonical="https://www.fotz-studio.pl/blog/jak-stworzyc-landing-page"
         keywords="landing page, strona lądowania, konwersja, CTA, UX, copywriting, lead generation, optymalizacja"
       />
       <ArticleSchema
         title="Jak stworzyć skuteczny landing page - poradnik z przykładami"
         description="Kompletny poradnik tworzenia landing page z wysoką konwersją."
-        url="https://fotz.pl/blog/jak-stworzyc-landing-page"
+        url="https://www.fotz-studio.pl/blog/jak-stworzyc-landing-page"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Jak stworzyć landing page", url: "https://fotz.pl/blog/jak-stworzyc-landing-page" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Jak stworzyć landing page", url: "https://www.fotz-studio.pl/blog/jak-stworzyc-landing-page" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

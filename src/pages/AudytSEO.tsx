@@ -11,10 +11,10 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 export default function AudytSEO() {
   const breadcrumbs = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Usługi", url: "https://fotz.pl/uslugi" },
-    { name: "Pozycjonowanie", url: "https://fotz.pl/seo/pozycjonowanie" },
-    { name: "Audyt SEO", url: "https://fotz.pl/uslugi/audyt-seo" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+    { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
+    { name: "Audyt SEO", url: "https://www.fotz-studio.pl/uslugi/audyt-seo" }
   ];
 
   const auditAreas = [
@@ -116,9 +116,9 @@ export default function AudytSEO() {
   return (
     <>
       <SEOHead
-        title="Audyt SEO | Profesjonalna analiza strony | fotz.pl"
+        title="Audyt SEO | Profesjonalna analiza strony | FOTZ Studio"
         description="Audyt SEO — szczegółowa analiza Twojej strony internetowej. Identyfikujemy błędy, które blokują Twoje pozycje w Google. Zamów audyt SEO!"
-        canonical="https://fotz.pl/seo/audyt"
+        canonical="https://www.fotz-studio.pl/seo/audyt"
         keywords="audyt seo, darmowy audyt seo, audyt seo online, audyt strony internetowej, analiza seo strony, audyt techniczny seo, bezpłatny audyt seo, audyt seo cena, sprawdź seo strony, audyt pozycjonowania, co to jest audyt seo, audyt seo co obejmuje"
       />
       <ServiceSchema

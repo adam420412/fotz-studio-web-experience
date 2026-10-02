@@ -64,7 +64,7 @@ export default function StronaInternetowaDlaFotografa() {
       <SEOHead
         title="Strona internetowa dla fotografa — portfolio, SEO, galerie"
         description="Strona internetowa dla fotografa — profesjonalne portfolio z galerią, SEO lokalne, blog fotograficzny i formularz zapytań. Strony dla fotografów od 1500 zł, dzięki którym klienci znajdą Cię w Google."
-        canonical="https://fotz.pl/uslugi/strona-internetowa-dla-fotografa"
+        canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-fotografa"
         keywords="strona internetowa dla fotografa, portfolio fotografa, strona www fotograf, strona fotografa cennik, strona fotografa online"
       />
       <ServiceSchema

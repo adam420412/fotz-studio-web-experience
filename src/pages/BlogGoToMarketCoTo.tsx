@@ -93,7 +93,7 @@ export default function BlogGoToMarketCoTo() {
       <SEOHead
         title="Go-to-Market Strategy — co to jest? Strategia wejścia na rynek"
         description="Go-to-Market strategy co to jest — wyjaśniamy czym jest GTM strategy, GTM motions (SLG, MLG, PLG, CLG), ICP, jak napisać GTM plan i najczęstsze błędy."
-        canonical="https://fotz.pl/blog/go-to-market-strategy-co-to"
+        canonical="https://www.fotz-studio.pl/blog/go-to-market-strategy-co-to"
 
         keywords="Go-to-Market Strategy co to jest, Go-to-Market Strategy definicja, czym jest Go-to-Market Strategy, Go-to-Market Strategy przykłady, jak działa Go-to-Market Strategy, Go-to-Market Strategy znaczenie, Go-to-Market Strategy przewodnik"
       />
@@ -102,7 +102,7 @@ export default function BlogGoToMarketCoTo() {
         description="Czym jest go-to-market strategy, GTM motions (Sales-Led, Marketing-Led, Product-Led, Community-Led), ICP, komponenty GTM i błędy przy planowaniu."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/go-to-market-strategy-co-to"
+        url="https://www.fotz-studio.pl/blog/go-to-market-strategy-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

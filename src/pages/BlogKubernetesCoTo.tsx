@@ -81,21 +81,21 @@ export default function BlogKubernetesCoTo() {
       <SEOHead
         title="Kubernetes — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po Kubernetes: architektura klastra, kluczowe obiekty K8s i workflow wdrożeń."
-        canonical="https://fotz.pl/blog/kubernetes-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/kubernetes-co-to-jest"
 
         keywords="Kubernetes co to jest, Kubernetes jak działa, Kubernetes tutorial, Kubernetes przykład, czym jest Kubernetes, Kubernetes dokumentacja, Kubernetes przewodnik"
       />
       <ArticleSchema
         title="Kubernetes — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po Kubernetes: architektura klastra, kluczowe obiekty K8s i workflow wdrożeń."
-        url="https://fotz.pl/blog/kubernetes-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/kubernetes-co-to-jest"
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Kubernetes", url: "https://fotz.pl/blog/kubernetes-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Kubernetes", url: "https://www.fotz-studio.pl/blog/kubernetes-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -103,7 +103,7 @@ export default function BlogKubernetesCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Kubernetes", url: "https://fotz.pl" },
+              { name: "Kubernetes", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Kubernetes — co to jest i jak działa?

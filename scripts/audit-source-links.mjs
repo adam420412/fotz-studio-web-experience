@@ -16,7 +16,9 @@ const broken = [], all = [];
 for (const file of files(path.join(root, 'src'))) {
   const ctx = readSource(file);
   function inspect(value, node) {
-    if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return;
+    if (typeof value !== 'string') return;
+    if (value.startsWith('https://www.fotz-studio.pl/')) value = value.slice('https://www.fotz-studio.pl'.length);
+    if (!value.startsWith('/') || value.startsWith('//')) return;
     const target = decodeURI(value.split(/[?#]/)[0]).replace(/\/$/, '') || '/';
     const row = { file: path.relative(root, file), line: ctx.source.getLineAndCharacterOfPosition(node.getStart()).line + 1, target };
     all.push(row);

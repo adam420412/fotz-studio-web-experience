@@ -74,7 +74,7 @@ export default function AgencjaMarketingowaGliwice() {
         <SEOHead
           title="Agencja marketingowa Gliwice - fotz studio | Marketing dla firm"
           description="Agencja marketingowa Gliwice. Fotz Studio — strony WWW, SEO, kampanie Google/Meta, social media dla firm z Gliwic. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa/gliwice"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/gliwice"
           keywords="agencja marketingowa gliwice, marketing internetowy gliwice, agencja reklamowa gliwice, seo gliwice, google ads gliwice, agencja marketingowa śląsk"
         />
 
@@ -85,8 +85,8 @@ export default function AgencjaMarketingowaGliwice() {
           areaServed="Gliwice"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Gliwice", url: "https://fotz.pl/agencja-marketingowa/gliwice" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja Marketingowa Gliwice", url: "https://www.fotz-studio.pl/agencja-marketingowa/gliwice" }
           ]}/>
         <FAQSchema items={faqItems} />
 

@@ -60,7 +60,7 @@ export default function GoogleMojaFirma() {
       <SEOHead
         title="Google Moja Firma — jak założyć i zoptymalizować wizytówkę?"
         description="Google Moja Firma (Google Business Profile) — kompletny poradnik. Jak założyć, zweryfikować i zoptymalizować wizytówkę Google. Bezpłatnie, krok po kroku."
-        canonical="https://fotz.pl/blog/google-moja-firma"
+        canonical="https://www.fotz-studio.pl/blog/google-moja-firma"
         keywords="google moja firma, wizytówka google, google my business, google business profile, pozycjonowanie google maps, profil google moja firma, optymalizacja gmb, wizytówka google moja firma, zakładanie google moja firma, jak założyć wizytówkę google, optymalizacja wizytówki google, pozycjonowanie lokalne"
       />
       <ArticleSchema
@@ -68,7 +68,7 @@ export default function GoogleMojaFirma() {
         description="Jak założyć Google Moja Firma, zweryfikować i zoptymalizować profil. Wszystko co musisz wiedzieć o wizytówce Google."
         datePublished="2025-01-20"
         dateModified="2025-03-10"
-        url="https://fotz.pl/blog/google-moja-firma"
+        url="https://www.fotz-studio.pl/blog/google-moja-firma"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

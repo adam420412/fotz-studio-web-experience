@@ -66,9 +66,9 @@ export default function BlogContentStrategyCoTo() {
   return (
     <>
       <SEOHead
-        title="Content Strategy — co to jest i jak stworzyć? | fotz.pl"
+        title="Content Strategy — co to jest i jak stworzyć? | FOTZ Studio"
         description="Content Strategy co to jest — wyjaśniamy czym jest strategia treści, jak ją stworzyć, pillar-cluster model, KPI content marketingu i koszty."
-        canonical="https://fotz.pl/blog/content-strategy-co-to"
+        canonical="https://www.fotz-studio.pl/blog/content-strategy-co-to"
 
         keywords="Content Strategy co to jest, Content Strategy definicja, czym jest Content Strategy, Content Strategy przykłady, jak działa Content Strategy, Content Strategy znaczenie, Content Strategy przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogContentStrategyCoTo() {
         description="Czym jest Content Strategy (strategia treści), jak ją stworzyć krok po kroku, pillar-cluster model, mierzenie efektywności i koszty content marketingu."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/content-strategy-co-to"
+        url="https://www.fotz-studio.pl/blog/content-strategy-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

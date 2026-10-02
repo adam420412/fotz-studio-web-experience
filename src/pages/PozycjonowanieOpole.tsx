@@ -80,7 +80,7 @@ export default function PozycjonowanieOpole() {
         <SEOHead
           title="Pozycjonowanie stron Opole | Agencja SEO fotz.pl"
           description="Pozycjonowanie stron internetowych w Opolu. Skuteczne SEO dla firm z Opolszczyzny. Wyższe pozycje w Google. Bezpłatna wycena!"
-          canonical="https://fotz.pl/uslugi/pozycjonowanie/opole"
+          canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/opole"
           keywords="pozycjonowanie opole, agencja seo opole, seo opole, pozycjonowanie stron opole, seo dla firm opole, seo opolskie, pozycjonowanie lokalne opole"
         />
 
@@ -91,10 +91,10 @@ export default function PozycjonowanieOpole() {
           areaServed="Opole"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Usługi", url: "https://fotz.pl/uslugi" },
-            { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-            { name: "Pozycjonowanie Opole", url: "https://fotz.pl/uslugi/pozycjonowanie/opole" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+            { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+            { name: "Pozycjonowanie Opole", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/opole" }
           ]}/>
         <FAQSchema items={faqItems} />
 

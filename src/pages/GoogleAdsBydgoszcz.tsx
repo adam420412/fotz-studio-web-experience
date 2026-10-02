@@ -211,15 +211,15 @@ export default function GoogleAdsBydgoszcz() {
       <SEOHead
         title="Agencja Google Ads Bydgoszcz | Fotz Studio"
         description="Google Ads Bydgoszcz ✓ Kampanie dla firm z Bydgoszczy i Kujaw. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/google-ads/bydgoszcz"
+        canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/bydgoszcz"
         keywords="google ads bydgoszcz, kampanie google ads bydgoszcz, agencja google ads bydgoszcz, reklamy google bydgoszcz, google adwords bydgoszcz, sem bydgoszcz, google ads dla firm bydgoszcz, prowadzenie google ads bydgoszcz, google ads cennik bydgoszcz, reklama w google bydgoszcz"
       />
 
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-        { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-        { name: "Bydgoszcz", url: "https://fotz.pl/performance-marketing/google-ads/bydgoszcz" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+        { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+        { name: "Bydgoszcz", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/bydgoszcz" }
       ]}/>
 
       <ServiceSchema
@@ -238,7 +238,7 @@ export default function GoogleAdsBydgoszcz() {
         { name: "Strona główna", url: "/" },
         { name: "Performance Marketing", url: "/performance-marketing" },
         { name: "Google Ads", url: "/performance-marketing/google-ads" },
-        { name: "Bydgoszcz", url: "https://fotz.pl" }
+        { name: "Bydgoszcz", url: "https://www.fotz-studio.pl" }
       ]}/>
 
       {/* Hero Section */}

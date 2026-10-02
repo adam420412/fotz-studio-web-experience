@@ -101,7 +101,7 @@ const MarketingMedyczny = () => {
       <SEOHead
         title="Marketing dla Branży Medycznej | Gabinety, Kliniki, Lekarze | Fotz Studio"
         description="Marketing dla branży medycznej - systemy rezerwacji online, strony WWW dla gabinetów, SEO medyczne. Kampanie zgodne z prawem. Zwiększ liczbę pacjentów."
-        canonical="https://fotz.pl/dla-kogo/branza-medyczna"
+        canonical="https://www.fotz-studio.pl/dla-kogo/branza-medyczna"
         keywords="marketing medyczny, agencja marketingowa medyczna, marketing kliniki, marketing gabinetu lekarskiego, seo medyczne, reklama lekarza, marketing stomatologiczny, kampanie google ads medycyna"
       />
 
@@ -112,9 +112,9 @@ const MarketingMedyczny = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Branża medyczna", url: "https://fotz.pl/dla-kogo/branza-medyczna" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Branża medyczna", url: "https://www.fotz-studio.pl/dla-kogo/branza-medyczna" },
         ]}
       />
       <FAQSchema items={faqItems} />

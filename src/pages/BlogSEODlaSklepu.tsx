@@ -165,9 +165,9 @@ export default function BlogSEODlaSklepu() {
   return (
     <>
       <SEOHead
-        title="SEO dla sklepu internetowego - praktyczny poradnik 2025 | fotz.pl"
+        title="SEO dla sklepu internetowego - praktyczny poradnik 2025 | FOTZ Studio"
         description="Praktyczne kroki SEO dla sklepów e-commerce. Optymalizacja produktów, kategorii, Core Web Vitals, schematy produktowe i unikanie błędów SEO w sklepach."
-        canonical="https://fotz.pl/blog/seo-dla-sklepu-internetowego"
+        canonical="https://www.fotz-studio.pl/blog/seo-dla-sklepu-internetowego"
 
         keywords="SEO dla sklepu internetowego - praktyczny poradnik 2025, SEO dla sklepu internetowego - praktyczny poradnik 2025 poradnik, SEO dla sklepu internetowego - praktyczny poradnik 2025 strategia, SEO dla sklepu internetowego - praktyczny poradnik 2025 jak zrobić, SEO dla sklepu internetowego - praktyczny poradnik 2025 marketing, SEO dla sklepu internetowego - praktyczny poradnik 2025 przykłady, SEO dla sklepu internetowego - praktyczny poradnik 2025 w Polsce"
       />
@@ -177,7 +177,7 @@ export default function BlogSEODlaSklepu() {
         author="Fotz Studio"
         datePublished="2025-03-05"
         dateModified="2025-07-22"
-        url="https://fotz.pl/blog/seo-dla-sklepu-internetowego"
+        url="https://www.fotz-studio.pl/blog/seo-dla-sklepu-internetowego"
       />
       <BreadcrumbSchema items={[
         { name: "Strona główna", url: "/" },

@@ -228,16 +228,16 @@ const AgencjaMarketingowaWarszawa = () => {
       <SEOHead
         title="Agencja Marketingowa Warszawa | Fotz Studio"
         description="Agencja marketingowa Warszawa ✓ SEO, Google Ads, Social Media, strony internetowe. Marketing internetowy Warszawa — 200+ projektów dla firm. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/warszawa"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/warszawa"
         keywords="agencja marketingowa warszawa, marketing internetowy warszawa, agencja reklamowa warszawa, seo warszawa, google ads warszawa, firma marketingowa warszawa, reklama internetowa warszawa"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
           {
             name: "Warszawa",
-            url: "https://fotz.pl/agencja-marketingowa/warszawa",
+            url: "https://www.fotz-studio.pl/agencja-marketingowa/warszawa",
           },
         ]}/>
 

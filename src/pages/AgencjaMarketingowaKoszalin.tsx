@@ -160,7 +160,7 @@ export default function AgencjaMarketingowaKoszalin() {
         <SEOHead
           title="Agencja Marketingowa Koszalin - SEO, Google Ads, Social Media"
           description="Agencja marketingowa w Koszalinie. Profesjonalne usługi SEO lokalne, Google Ads, Facebook Ads, zarządzanie social media i tworzenie stron dla firm turystycznych, handlowych i usługowych z Pomorza Środkowego."
-          canonical="https://fotz.pl/agencja-marketingowa/koszalin"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/koszalin"
         keywords="agencja marketingowa koszalin, marketing internetowy koszalin, agencja reklamowa koszalin, seo koszalin"
         />
 
@@ -170,9 +170,9 @@ export default function AgencjaMarketingowaKoszalin() {
           areaServed="Koszalin"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-            { name: "Koszalin", url: "https://fotz.pl/agencja-marketingowa/koszalin" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+            { name: "Koszalin", url: "https://www.fotz-studio.pl/agencja-marketingowa/koszalin" },
           ]}/>
         <FAQSchema items={faqItems} />
 

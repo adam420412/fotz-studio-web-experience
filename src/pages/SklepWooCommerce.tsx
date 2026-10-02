@@ -71,9 +71,9 @@ export default function SklepWooCommerce() {
   return (
     <>
       <SEOHead
-        title="Sklep WooCommerce — tworzenie sklepów internetowych | fotz.pl"
+        title="Sklep WooCommerce — tworzenie sklepów internetowych | FOTZ Studio"
         description="Sklep WooCommerce — profesjonalne wdrożenia e-commerce na WordPress. Płatności, wysyłka, SEO, integracje. Ceny od 3000 zł. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/sklep-woocommerce"
+        canonical="https://www.fotz-studio.pl/uslugi/sklep-woocommerce"
         keywords="sklep woocommerce, tworzenie sklepu woocommerce, woocommerce wordpress, sklep internetowy woocommerce, woocommerce cena, woocommerce konfiguracja"
       />
       <ServiceSchema

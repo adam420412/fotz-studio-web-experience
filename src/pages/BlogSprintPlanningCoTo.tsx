@@ -51,21 +51,21 @@ export default function BlogSprintPlanningCoTo() {
       <SEOHead
         title="Sprint Planning — co to jest i jak przeprowadzić? | Fotz.pl"
         description="Sprint planning: przebieg ceremonii Scrum, estymacja (story points, planning poker), velocity, Sprint Goal i najczęstsze błędy w planowaniu sprintów."
-        canonical="https://fotz.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic"
+        canonical="https://www.fotz-studio.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic"
 
         keywords="Sprint Planning co to jest, Sprint Planning definicja, czym jest Sprint Planning, Sprint Planning przykłady, jak działa Sprint Planning, Sprint Planning znaczenie, Sprint Planning przewodnik"
       />
       <ArticleSchema
         title="Sprint Planning — co to jest i jak przeprowadzić?"
         description="Sprint planning: agenda, estymacja, velocity, Sprint Goal, Definition of Ready i jak unikać najczęstszych problemów w planowaniu sprintów Scrum."
-        url="https://fotz.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic"
+        url="https://www.fotz-studio.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic"
         datePublished="2024-02-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Sprint Planning", url: "https://fotz.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Sprint Planning", url: "https://www.fotz-studio.pl/blog/sprint-planning-co-to-jest-jak-przeprowadzic" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">

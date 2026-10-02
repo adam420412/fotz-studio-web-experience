@@ -53,7 +53,7 @@ const BlogKosztStrony = () => {
         title="Ile Kosztuje Strona Internetowa w 2026? Cennik i Aktualne Koszty"
         description="Ile kosztuje strona internetowa w 2026? Cennik stron www: landing page od 2 000 zł, strona firmowa od 5 000 zł, sklep e-commerce od 10 000 zł. Aktualne koszty, typy stron i czynniki wpływające na cenę."
         ogType="article"
-        canonical="https://fotz.pl/blog/ile-kosztuje-strona-internetowa"
+        canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-strona-internetowa"
         keywords="ile kosztuje strona internetowa, cennik stron internetowych, koszt strony www, cena strony internetowej 2025"
         schemaJson={[
           {
@@ -70,7 +70,7 @@ const BlogKosztStrony = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2024-12-20",
@@ -80,8 +80,8 @@ const BlogKosztStrony = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Ile kosztuje strona internetowa w 2025?" }
             ]
           },

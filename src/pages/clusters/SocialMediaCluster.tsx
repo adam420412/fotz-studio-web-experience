@@ -102,13 +102,13 @@ export default function SocialMediaCluster() {
       <SEOHead
         title="Social Media Marketing | Obsługa SM | Fotz Studio"
         description="Obsługa social media, influencer marketing, Reels i TikTok. Zwiększ zasięg i zaangażowanie. Agencja social media Poznań."
-        canonical="https://fotz.pl/social-media"
+        canonical="https://www.fotz-studio.pl/social-media"
         keywords="social media marketing, obsługa social media, influencer marketing, TikTok biznes, Reels, Instagram, Facebook, agencja social media Poznań"
       />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Social Media", url: "https://fotz.pl/social-media" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Social Media", url: "https://www.fotz-studio.pl/social-media" },
         ]}
       />
       <ServiceSchema

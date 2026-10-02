@@ -94,7 +94,7 @@ const PozycjonowaniePoznan = () => {
       <SEOHead
         title="Pozycjonowanie Poznań — Lokalna Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron internetowych Poznań. Fotz Studio — lokalna agencja SEO z Poznania. Audyt, optymalizacja i link building. Znamy rynek poznański od lat i wiemy, jak zdobyć w nim widoczność."
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/poznan"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/poznan"
         keywords="pozycjonowanie poznań, agencja seo poznań, seo poznań, pozycjonowanie stron poznań, seo dla firm poznań, seo wielkopolska, audyt seo poznań, pozycjonowanie lokalne poznań"
       />
       <ServiceSchema
@@ -104,10 +104,10 @@ const PozycjonowaniePoznan = () => {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Poznań", url: "https://fotz.pl/uslugi/pozycjonowanie/poznan" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Poznań", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/poznan" },
         ]}/>
       <FAQSchema items={faqItems} />
 

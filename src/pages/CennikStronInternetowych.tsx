@@ -161,7 +161,7 @@ const CennikStronInternetowych = () => {
       <SEOHead
         title="Cennik Stron Internetowych 2025/2026 — od 499 zł netto"
         description="Cennik stron internetowych Fotz Studio. Strony od 499 zł netto — pakiety Start, Business, Pro i sklepy e-commerce. Transparentne ceny, pełna własność kodu, responsywność i SSL w każdym pakiecie."
-        canonical="https://fotz.pl/cennik-stron-internetowych"
+        canonical="https://www.fotz-studio.pl/cennik-stron-internetowych"
         keywords="cennik stron internetowych, ile kosztuje strona internetowa, cena strony internetowej, tworzenie stron internetowych cennik, strona internetowa cena 2025, ile kosztuje strona www"
       />
       <ServiceSchema
@@ -171,10 +171,10 @@ const CennikStronInternetowych = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Strony internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Cennik", url: "https://fotz.pl/cennik-stron-internetowych" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Cennik", url: "https://www.fotz-studio.pl/cennik-stron-internetowych" },
         ]}/>
       <FAQSchema items={faqItems} />
 

@@ -92,7 +92,7 @@ export default function BlogCustomerSegmentationCoTo() {
       <SEOHead
         title="Customer Segmentation — co to jest? Segmentacja klientów"
         description="Customer segmentation co to jest — wyjaśniamy czym jest segmentacja klientów, typy segmentacji, analiza RFM, różnica vs persona i zastosowania w marketingu."
-        canonical="https://fotz.pl/blog/customer-segmentation-co-to"
+        canonical="https://www.fotz-studio.pl/blog/customer-segmentation-co-to"
 
         keywords="Customer Segmentation co to jest, Customer Segmentation definicja, czym jest Customer Segmentation, Customer Segmentation przykłady, jak działa Customer Segmentation, Customer Segmentation znaczenie, Customer Segmentation przewodnik"
       />
@@ -101,7 +101,7 @@ export default function BlogCustomerSegmentationCoTo() {
         description="Czym jest customer segmentation, typy segmentacji (demograficzna, behawioralna, RFM), jak przeprowadzić, różnica vs persona i zastosowania w marketingu cyfrowym."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/customer-segmentation-co-to"
+        url="https://www.fotz-studio.pl/blog/customer-segmentation-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

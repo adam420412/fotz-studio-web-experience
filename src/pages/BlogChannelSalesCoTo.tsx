@@ -77,21 +77,21 @@ export default function BlogChannelSalesCoTo() {
       <SEOHead
         title="Channel Sales — sprzedaż przez kanały partnerskie | Fotz.pl"
         description="Kompletny przewodnik po Channel Sales: typy partnerów, budowanie programu, tiery i metryki partner revenue."
-        canonical="https://fotz.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
 
         keywords="Channel Sales co to jest, Channel Sales definicja, czym jest Channel Sales, Channel Sales w sprzedaży, Channel Sales strategia, Channel Sales przykłady, jak używać Channel Sales"
       />
       <ArticleSchema
         title="Channel Sales — sprzedaż przez kanały partnerskie"
         description="Kompletny przewodnik po Channel Sales: typy partnerów, budowanie programu, tiery i metryki partner revenue."
-        url="https://fotz.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest"
         datePublished="2024-02-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Channel Sales", url: "https://fotz.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Channel Sales", url: "https://www.fotz-studio.pl/blog/channel-sales-sprzedaz-partnerska-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 text-white py-20 px-4">

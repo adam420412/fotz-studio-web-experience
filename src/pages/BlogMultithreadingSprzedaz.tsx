@@ -78,21 +78,21 @@ export default function BlogMultithreadingSprzedaz() {
       <SEOHead
         title="Multithreading w sprzedaży B2B — angażowanie buying committee"
         description="Multithreading w sprzedaży B2B — jak angażować buying committee, mapować stakeholderów i budować wielowątkowe deale w enterprise. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/multithreading-sprzedaz-b2b-buying-committee"
+        canonical="https://www.fotz-studio.pl/blog/multithreading-sprzedaz-b2b-buying-committee"
 
         keywords="Multithreading w sprzedaży B2B, Multithreading w sprzedaży B2B co to jest, Multithreading w sprzedaży B2B jak działa, Multithreading w sprzedaży B2B definicja, Multithreading w sprzedaży B2B przykłady, Multithreading w sprzedaży B2B poradnik, Multithreading w sprzedaży B2B przewodnik"
       />
       <ArticleSchema
         title="Multithreading w sprzedaży B2B — angażowanie buying committee"
         description="Kompletny przewodnik po multithreadingu: buying committee, mapa stakeholderów i playbook zaangażowania."
-        url="https://fotz.pl/blog/multithreading-sprzedaz-b2b-buying-committee"
+        url="https://www.fotz-studio.pl/blog/multithreading-sprzedaz-b2b-buying-committee"
         datePublished="2024-02-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Multithreading sprzedaży", url: "https://fotz.pl/blog/multithreading-sprzedaz-b2b-buying-committee" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Multithreading sprzedaży", url: "https://www.fotz-studio.pl/blog/multithreading-sprzedaz-b2b-buying-committee" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white py-20 px-4">

@@ -52,21 +52,21 @@ export default function BlogWasmCoTo() {
       <SEOHead
         title="WebAssembly (Wasm) — co to jest, Rust, C++ i Emscripten w przeglądarce?"
         description="WebAssembly: jak działa, Rust+wasm-pack, C++/Emscripten, WASI poza przeglądarką, edge computing i praktyczne use cases (FFmpeg, Figma, gry)."
-        canonical="https://fotz.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten"
+        canonical="https://www.fotz-studio.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten"
 
         keywords="WebAssembly (Wasm) co to jest, WebAssembly (Wasm) definicja, czym jest WebAssembly (Wasm), WebAssembly (Wasm) przykłady, jak działa WebAssembly (Wasm), WebAssembly (Wasm) znaczenie, WebAssembly (Wasm) przewodnik"
       />
       <ArticleSchema
         title="WebAssembly (Wasm) — co to jest, Rust, C++ i Emscripten w przeglądarce?"
         description="WebAssembly: 6 use cases, 5 języków/toolchainów, WASI edge computing, Rust wasm-pack, C++ Emscripten — kiedy i jak używać Wasm w projektach webowych."
-        url="https://fotz.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten"
+        url="https://www.fotz-studio.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten"
         datePublished="2024-04-09"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "WebAssembly", url: "https://fotz.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "WebAssembly", url: "https://www.fotz-studio.pl/blog/webassembly-wasm-co-to-jest-rust-cpp-emscripten" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-zinc-900 to-slate-900 text-white py-20 px-4">

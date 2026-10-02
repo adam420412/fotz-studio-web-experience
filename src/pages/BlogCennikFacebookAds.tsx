@@ -71,21 +71,21 @@ export default function BlogCennikFacebookAds() {
       <SEOHead
         title="Cennik Facebook Ads 2025 — ile kosztuje reklama na Facebooku?"
         description="Cennik Facebook Ads 2025: CPC, CPM, CPA, budżet minimalny, obsługa agencji. Stawki wg branż, modele rozliczania, rekomendacje budżetów dla małych firm."
-        canonical="https://fotz.pl/blog/cennik-facebook-ads"
+        canonical="https://www.fotz-studio.pl/blog/cennik-facebook-ads"
 
         keywords="Cennik Facebook Ads 2025, Cennik Facebook Ads 2025 poradnik, Cennik Facebook Ads 2025 strategia, Cennik Facebook Ads 2025 jak zrobić, Cennik Facebook Ads 2025 marketing, Cennik Facebook Ads 2025 przykłady, Cennik Facebook Ads 2025 w Polsce"
       />
       <ArticleSchema
         title="Cennik Facebook Ads 2025 — ile kosztuje reklama na Facebooku?"
         description="Kompleksowy przewodnik po kosztach Facebook Ads: CPC, CPM, CPA w poszczególnych branżach, budżety reklamowe, obsługa agencji, porównanie z Google Ads."
-        url="https://fotz.pl/blog/cennik-facebook-ads"
+        url="https://www.fotz-studio.pl/blog/cennik-facebook-ads"
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Cennik Facebook Ads", url: "https://fotz.pl/blog/cennik-facebook-ads" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Cennik Facebook Ads", url: "https://www.fotz-studio.pl/blog/cennik-facebook-ads" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-900 text-white py-20 px-4">

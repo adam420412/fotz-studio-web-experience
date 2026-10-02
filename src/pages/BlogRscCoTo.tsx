@@ -44,21 +44,21 @@ export default function BlogRscCoTo() {
       <SEOHead
         title="React Server Components, Server Actions, PPR | Fotz Studio"
         description="React Server Components vs Client Components, Server Actions, Partial Prerendering, React 19, Next.js App Router vs Pages Router — architektura 2024."
-        canonical="https://fotz.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024"
+        canonical="https://www.fotz-studio.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024"
 
         keywords="React Server Components, Server Actions, PPR co to jest, React Server Components, Server Actions, PPR jak działa, React Server Components, Server Actions, PPR tutorial, React Server Components, Server Actions, PPR przykład, czym jest React Server Components, Server Actions, PPR, React Server Components, Server Actions, PPR dokumentacja, React Server Components, Server Actions, PPR przewodnik"
       />
       <ArticleSchema
         title="React Server Components, Server Actions, PPR — Next.js App Router 2024?"
         description="6 rendering strategies (SSG/ISR/SSR/RSC/PPR/CSR) — Server Components vs Client Components, Server Actions, React 19, Next.js App Router architektura."
-        url="https://fotz.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024"
+        url="https://www.fotz-studio.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Server Components", url: "https://fotz.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Server Components", url: "https://www.fotz-studio.pl/blog/react-server-components-server-actions-ppr-nextjs-app-router-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-violet-950 text-white py-20 px-4">

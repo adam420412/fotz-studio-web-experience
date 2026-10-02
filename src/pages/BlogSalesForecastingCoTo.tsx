@@ -92,21 +92,21 @@ export default function BlogSalesForecastingCoTo() {
       <SEOHead
         title="Sales Forecasting — co to jest? Prognozowanie sprzedaży i metody"
         description="Sales Forecasting — definicja, 4 metody prognozowania, pipeline metrics (Win Rate, Coverage), kategorie (Commit/Best Case) i jak poprawić dokładność prognoz."
-        canonical="https://fotz.pl/blog/sales-forecasting-prognozowanie-sprzedazy"
+        canonical="https://www.fotz-studio.pl/blog/sales-forecasting-prognozowanie-sprzedazy"
 
         keywords="Sales Forecasting co to jest, Sales Forecasting definicja, czym jest Sales Forecasting, Sales Forecasting w sprzedaży, Sales Forecasting strategia, Sales Forecasting przykłady, jak używać Sales Forecasting"
       />
       <ArticleSchema
         title="Sales Forecasting — co to jest i jak prognozować sprzedaż?"
         description="Kompletny przewodnik po sales forecasting: metody, metryki pipeline i jak poprawić dokładność prognoz."
-        url="https://fotz.pl/blog/sales-forecasting-prognozowanie-sprzedazy"
+        url="https://www.fotz-studio.pl/blog/sales-forecasting-prognozowanie-sprzedazy"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Sales Forecasting", url: "https://fotz.pl/blog/sales-forecasting-prognozowanie-sprzedazy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Sales Forecasting", url: "https://www.fotz-studio.pl/blog/sales-forecasting-prognozowanie-sprzedazy" },
         ]}/>
 
       {/* Hero */}
@@ -114,7 +114,7 @@ export default function BlogSalesForecastingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Sales Forecasting", url: "https://fotz.pl" },
+              { name: "Sales Forecasting", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Sales Forecasting — co to jest i jak prognozować sprzedaż?

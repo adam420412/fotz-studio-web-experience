@@ -44,21 +44,21 @@ export default function BlogAngularSignalsCoTo() {
       <SEOHead
         title="Angular Signals, Standalone Components, Defer | Fotz Studio"
         description="Angular 17+ Signals, Standalone Components, @defer, nowy Control Flow, RxJS Observable, Reactive Forms i Angular vs React vs Vue — kiedy wybrać Angular."
-        canonical="https://fotz.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024"
+        canonical="https://www.fotz-studio.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024"
 
         keywords="Angular Signals, Standalone Components, Defer co to jest, Angular Signals, Standalone Components, Defer jak działa, Angular Signals, Standalone Components, Defer tutorial, Angular Signals, Standalone Components, Defer przykład, czym jest Angular Signals, Standalone Components, Defer, Angular Signals, Standalone Components, Defer dokumentacja, Angular Signals, Standalone Components, Defer przewodnik"
       />
       <ArticleSchema
         title="Angular Signals, Standalone Components, Defer — Angular 17+ nowości 2024?"
         description="6 nowych funkcji Angular 17+ (Signals/Standalone/Defer/Control Flow/Zoneless/Typed Forms) — RxJS Observable, Angular vs React vs Vue, kiedy Angular wybrać."
-        url="https://fotz.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024"
+        url="https://www.fotz-studio.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Angular Signals", url: "https://fotz.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Angular Signals", url: "https://www.fotz-studio.pl/blog/angular-signals-standalone-components-defer-angular-17-nowosci-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-rose-950 text-white py-20 px-4">

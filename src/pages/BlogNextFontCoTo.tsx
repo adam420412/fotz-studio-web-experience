@@ -44,21 +44,21 @@ export default function BlogNextFontCoTo() {
       <SEOHead
         title="next/font, Variable Fonts, FOUT/FOIT i Font Optimization"
         description="6 opcji fontów (next/font Google/Local/Fontsource/Google CDN/Variable/System Stack) — self-hosting, CLS eliminacja, font-display: optional i GDPR compliance."
-        canonical="https://fotz.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024"
+        canonical="https://www.fotz-studio.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024"
 
         keywords="next/font, Variable Fonts, FOUT/FOIT i Font Optimization co to jest, next/font, Variable Fonts, FOUT/FOIT i Font Optimization jak działa, next/font, Variable Fonts, FOUT/FOIT i Font Optimization tutorial, next/font, Variable Fonts, FOUT/FOIT i Font Optimization przykład, czym jest next/font, Variable Fonts, FOUT/FOIT i Font Optimization, next/font, Variable Fonts, FOUT/FOIT i Font Optimization dokumentacja, next/font, Variable Fonts, FOUT/FOIT i Font Optimization przewodnik"
       />
       <ArticleSchema
         title="next/font, Variable Fonts, FOUT/FOIT i Font Optimization — Next.js 2024?"
         description="6 opcji fontów (next/font Google/Local/Fontsource/Google CDN/Variable/System Stack) — self-hosting, CLS eliminacja, font-display: optional i GDPR compliance."
-        url="https://fotz.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024"
+        url="https://www.fotz-studio.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Font Optimization Next.js", url: "https://fotz.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Font Optimization Next.js", url: "https://www.fotz-studio.pl/blog/nextjs-font-optimization-variable-fonts-fout-foit-google-fonts-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-violet-950 text-white py-20 px-4">

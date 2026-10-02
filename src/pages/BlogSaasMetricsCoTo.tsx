@@ -59,26 +59,26 @@ export default function BlogSaasMetricsCoTo() {
       <SEOHead
         title="Metryki SaaS — co to jest? MRR, ARR, LTV, CAC, Churn Rate i NRR"
         description="Metryki SaaS — definicje MRR, ARR, Churn Rate, NRR, LTV, CAC i Activation Rate. Jak obliczać, benchmarki i rozbicie MRR (New, Expansion, Churned). Przewodnik."
-        canonical="https://fotz.pl/blog/saas-metrics-co-to"
+        canonical="https://www.fotz-studio.pl/blog/saas-metrics-co-to"
 
         keywords="Metryki SaaS co to jest, Metryki SaaS definicja, czym jest Metryki SaaS, Metryki SaaS startup, Metryki SaaS jak liczyć, Metryki SaaS wzór, Metryki SaaS przykłady"
       />
       <ArticleSchema
         title="Metryki SaaS — co to jest i jak je mierzyć?"
         description="Kompletny przewodnik po metrykach SaaS: MRR, ARR, Churn Rate, NRR, LTV/CAC, Activation Rate — definicje, wzory i benchmarki."
-        url="https://fotz.pl/blog/saas-metrics-co-to"
+        url="https://www.fotz-studio.pl/blog/saas-metrics-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Metryki SaaS", url: "https://fotz.pl/blog/saas-metrics-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Metryki SaaS", url: "https://www.fotz-studio.pl/blog/saas-metrics-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Metryki SaaS", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Metryki SaaS", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Metryki SaaS — MRR, ARR, Churn Rate, LTV, CAC i NRR
           </h1>

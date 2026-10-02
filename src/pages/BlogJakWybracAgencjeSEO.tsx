@@ -46,13 +46,13 @@ const BlogJakWybracAgencjeSEO = () => {
     '@type': 'Article',
     headline: 'Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025',
     description: 'Kompleksowy poradnik jak wybrać najlepszą agencję SEO dla Twojej firmy. Poznaj 10 kluczowych pytań, czerwone flagi i jak weryfikować portfolio.',
-    image: 'https://fotz.pl/og-image.jpg',
+    image: 'https://www.fotz-studio.pl/og-image.jpg',
     datePublished: '2025-03-01',
     dateModified: '2025-04-05',
     author: {
       '@type': 'Organization',
       name: 'FOTZ - Agencja SEO',
-      url: 'https://fotz.pl',
+      url: 'https://www.fotz-studio.pl',
     },
   };
 
@@ -63,7 +63,7 @@ const BlogJakWybracAgencjeSEO = () => {
       '@type': 'ListItem',
       position: index + 1,
       name: item.label,
-      item: `https://fotz.pl${item.url}`,
+      item: `https://www.fotz-studio.pl${item.url}`,
     })),
   };
 
@@ -85,7 +85,7 @@ const BlogJakWybracAgencjeSEO = () => {
       <SEOHead
         title="Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025"
         description="Kompleksowy poradnik jak wybrać najlepszą agencję SEO dla Twojej firmy. Poznaj 10 kluczowych pytań, czerwone flagi i jak weryfikować portfolio."
-        canonical="https://fotz.pl/blog/jak-wybrac-agencje-seo"
+        canonical="https://www.fotz-studio.pl/blog/jak-wybrac-agencje-seo"
 
         keywords="Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 poradnik, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 strategia, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 jak zrobić, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 marketing, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 przykłady, Jak wybrać agencję SEO? 10 pytań, które musisz zadać w 2025 w Polsce"
       />

@@ -87,12 +87,12 @@ const StronyInternetoweZabrze = () => {
       <SEOHead
         title="Strony Internetowe Zabrze | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Zabrze — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Zabrza i Górnego Śląska. Fotz Studio tworzy strony, które pozyskują klientów."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/zabrze"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/zabrze"
         keywords="strony internetowe zabrze, tworzenie stron zabrze, strony www zabrze, projektowanie stron zabrze"
       />
 
       <ServiceSchema name="Strony Internetowe Zabrze" description="Profesjonalne tworzenie stron internetowych dla firm z Zabrza i Górnego Śląska." provider="FOTZ Studio" areaServed="Zabrze" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Zabrze", url: "https://fotz.pl/uslugi/strony-internetowe/zabrze" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Zabrze", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/zabrze" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

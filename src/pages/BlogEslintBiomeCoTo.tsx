@@ -44,21 +44,21 @@ export default function BlogEslintBiomeCoTo() {
       <SEOHead
         title="ESLint, Biome, Prettier, Husky — linting i code quality w TypeScript 2024?"
         description="ESLint Flat Config, Biome (Rust linter+formatter), Prettier, Oxlint, Husky, Commitlint, Conventional Commits — code quality workflow TypeScript 2024."
-        canonical="https://fotz.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024"
 
         keywords="ESLint, Biome, Prettier, Husky co to jest, ESLint, Biome, Prettier, Husky jak działa, ESLint, Biome, Prettier, Husky tutorial, ESLint, Biome, Prettier, Husky przykład, czym jest ESLint, Biome, Prettier, Husky, ESLint, Biome, Prettier, Husky dokumentacja, ESLint, Biome, Prettier, Husky przewodnik"
       />
       <ArticleSchema
         title="ESLint, Biome, Prettier, Husky — linting i code quality w TypeScript 2024?"
         description="6 narzędzi code quality (ESLint/Biome/Oxlint/Prettier/TypeScript/Husky) — Flat Config, Rust linters, conventional commits, lint-staged i CI workflow."
-        url="https://fotz.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "ESLint i Biome", url: "https://fotz.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "ESLint i Biome", url: "https://www.fotz-studio.pl/blog/eslint-biome-prettier-husky-linting-code-quality-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-violet-950 text-white py-20 px-4">

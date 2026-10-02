@@ -109,21 +109,21 @@ export default function BlogUsabilityTestingCoTo() {
       <SEOHead
         title="Usability Testing — co to jest? Testy użyteczności i badania UX"
         description="Kompletny przewodnik po usability testing: 4 metody, reguła 5 użytkowników Nielsena, SUS Score, think-aloud i jak projektować dobre zadania testowe."
-        canonical="https://fotz.pl/blog/usability-testing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/usability-testing-co-to"
 
         keywords="Usability Testing co to jest, Usability Testing definicja, czym jest Usability Testing, Usability Testing przykłady, jak działa Usability Testing, Usability Testing znaczenie, Usability Testing przewodnik"
       />
       <ArticleSchema
         title="Usability Testing — co to jest i jak przeprowadzać testy użyteczności?"
         description="Kompletny przewodnik po usability testing: 4 metody, reguła 5 użytkowników Nielsena, SUS Score, think-aloud i jak projektować dobre zadania testowe."
-        url="https://fotz.pl/blog/usability-testing-co-to"
+        url="https://www.fotz-studio.pl/blog/usability-testing-co-to"
         datePublished="2024-01-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Usability Testing", url: "https://fotz.pl/blog/usability-testing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Usability Testing", url: "https://www.fotz-studio.pl/blog/usability-testing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -131,7 +131,7 @@ export default function BlogUsabilityTestingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Usability Testing", url: "https://fotz.pl" },
+              { name: "Usability Testing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Usability Testing — co to jest i jak testować użyteczność?

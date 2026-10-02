@@ -78,21 +78,21 @@ export default function BlogCustomerAcquisitionCoTo() {
       <SEOHead
         title="Customer Acquisition — co to jest i jak działa?"
         description="Kompletny przewodnik po customer acquisition: definicja CAC, kanały pozyskiwania klientów i lejek akwizycji."
-        canonical="https://fotz.pl/blog/customer-acquisition-co-to"
+        canonical="https://www.fotz-studio.pl/blog/customer-acquisition-co-to"
 
         keywords="Customer Acquisition co to jest, Customer Acquisition definicja, czym jest Customer Acquisition, Customer Acquisition startup, Customer Acquisition jak liczyć, Customer Acquisition wzór, Customer Acquisition przykłady"
       />
       <ArticleSchema
         title="Customer Acquisition — co to jest i jak działa?"
         description="Kompletny przewodnik po customer acquisition: definicja CAC, kanały pozyskiwania klientów i lejek akwizycji."
-        url="https://fotz.pl/blog/customer-acquisition-co-to"
+        url="https://www.fotz-studio.pl/blog/customer-acquisition-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Customer Acquisition", url: "https://fotz.pl/blog/customer-acquisition-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Customer Acquisition", url: "https://www.fotz-studio.pl/blog/customer-acquisition-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -100,7 +100,7 @@ export default function BlogCustomerAcquisitionCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Customer Acquisition", url: "https://fotz.pl" },
+              { name: "Customer Acquisition", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Customer Acquisition — co to jest i jak liczyć CAC?

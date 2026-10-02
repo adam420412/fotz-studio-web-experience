@@ -170,7 +170,7 @@ export default function BlogRebrandingPoradnik() {
       <SEOHead
         title="Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025"
         description="Pełny przewodnik po procesie rebranding: sygnały do zmiany, etapy, koszty, błędy do uniknięcia."
-        canonical="https://fotz.pl/blog/rebranding-kiedy-i-jak"
+        canonical="https://www.fotz-studio.pl/blog/rebranding-kiedy-i-jak"
 
         keywords="Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 poradnik, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 strategia, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 jak zrobić, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 marketing, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 przykłady, Rebranding firmy - kiedy i jak przeprowadzić? Poradnik 2025 w Polsce"
       />

@@ -236,7 +236,7 @@ const FotografiaProduktowa = () => {
       <SEOHead
         title="Fotografia Produktowa — Profesjonalne Zdjęcia Produktów"
         description="Profesjonalna fotografia produktowa dla e-commerce i marek. Fotz Studio — zdjęcia produktów, sesje packshot, fotografia białe tło. Zamów wycenę!"
-        canonical="https://fotz.pl/uslugi/fotografia-produktowa"
+        canonical="https://www.fotz-studio.pl/uslugi/fotografia-produktowa"
         keywords="fotografia produktowa, zdjęcia produktowe, packshot, fotografia produktowa cennik, zdjęcia reklamowe produktów, fotograf produktowy, zdjęcia packshot, sesja produktowa, fotografia e-commerce, zdjęcia do sklepu internetowego, studio fotograficzne, ile kosztuje fotografia produktowa"
       />
       <ServiceSchema
@@ -246,9 +246,9 @@ const FotografiaProduktowa = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Fotografia produktowa", url: "https://fotz.pl/uslugi/fotografia-produktowa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Fotografia produktowa", url: "https://www.fotz-studio.pl/uslugi/fotografia-produktowa" },
         ]}/>
       <FAQSchema items={faqItems} />
 

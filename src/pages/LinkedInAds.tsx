@@ -142,7 +142,7 @@ const LinkedInAds = () => {
       <SEOHead
         title="LinkedIn Ads Polska — Reklamy LinkedIn dla Firm B2B | Fotz Studio"
         description="LinkedIn Ads Polska ✓ Kampanie reklamowe B2B na LinkedIn. Sponsored Content, InMail, Lead Gen Forms, ABM. Specjaliści LinkedIn Campaign Manager. Bezpłatna konsultacja dla firm B2B."
-        canonical="https://fotz.pl/performance-marketing/linkedin-ads"
+        canonical="https://www.fotz-studio.pl/performance-marketing/linkedin-ads"
         keywords="linkedin ads polska, reklamy linkedin, kampanie linkedin b2b, linkedin campaign manager, agencja linkedin ads, marketing b2b linkedin"
       />
       <ServiceSchema
@@ -151,9 +151,9 @@ const LinkedInAds = () => {
         provider="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "LinkedIn Ads", url: "https://fotz.pl/performance-marketing/linkedin-ads" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
+          { name: "LinkedIn Ads", url: "https://www.fotz-studio.pl/performance-marketing/linkedin-ads" },
         ]}/>
       <FAQSchema items={faqItems} />
 

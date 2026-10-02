@@ -12,14 +12,14 @@ export default function FacebookAdsRzeszow() {
       <SEOHead
         title="Agencja Facebook Ads Rzeszów — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Rzeszów ✓ Kampanie Meta Ads dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/facebook-ads/rzeszow"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/rzeszow"
         keywords="facebook ads rzeszow, meta ads rzeszow, reklamy facebook rzeszow, agencja facebook ads rzeszow, kampanie facebook rzeszow, instagram ads rzeszow, facebook ads dla firm rzeszow, reklama na facebooku rzeszow, meta ads agencja rzeszow, facebook ads cennik rzeszow"
       />
       <BreadcrumbSchema items={[
-          { name: "Fotz.pl", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-          { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Rzeszów", url: "https://fotz.pl" }
+          { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+          { name: "Rzeszów", url: "https://www.fotz-studio.pl" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Rzeszów"
@@ -32,7 +32,7 @@ export default function FacebookAdsRzeszow() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { name: "Rzeszów", url: "https://fotz.pl" }
+            { name: "Rzeszów", url: "https://www.fotz-studio.pl" }
           ]}/>
 
         {/* HERO SECTION */}

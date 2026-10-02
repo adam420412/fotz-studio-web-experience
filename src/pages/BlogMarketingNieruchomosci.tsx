@@ -58,7 +58,7 @@ const BlogMarketingNieruchomosci = () => {
         title="Marketing nieruchomości - jak skutecznie reklamować oferty? 2025"
         description="Kompletny przewodnik marketingu nieruchomości. Strategie dla biur nieruchomości, fotografia, video, SEO, social media i Google Ads. Jak zdobywać kupujących i zwiększać liczbę zapytań o oferty."
         ogType="article"
-        canonical="https://fotz.pl/blog/marketing-nieruchomosci"
+        canonical="https://www.fotz-studio.pl/blog/marketing-nieruchomosci"
         keywords="marketing nieruchomości, reklama nieruchomości, promocja oferty, biuro nieruchomości marketing, SEO nieruchomości"
         schemaJson={[
           {
@@ -75,7 +75,7 @@ const BlogMarketingNieruchomosci = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -85,8 +85,8 @@ const BlogMarketingNieruchomosci = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Marketing nieruchomości" }
             ]
           },

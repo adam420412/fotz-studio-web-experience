@@ -64,15 +64,15 @@ export default function BlogBlogFirmowy() {
       <SEOHead
         title="Blog firmowy | Fotz Studio"
         description="Dowiedz sie jak prowadzic blog firmowy aby generowal leady i podniosl SEO. Strategia, content ideas, FAQ i case studies. Poradnik 2025."
-        canonical="https://fotz.pl/blog/blog-firmowy-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/blog-firmowy-poradnik"
 
         keywords="Blog firmowy, Blog firmowy co to jest, Blog firmowy jak działa, Blog firmowy definicja, Blog firmowy przykłady, Blog firmowy poradnik, Blog firmowy przewodnik"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Blog firmowy poradnik", url: "https://fotz.pl/blog/blog-firmowy-poradnik" }
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Blog firmowy poradnik", url: "https://www.fotz-studio.pl/blog/blog-firmowy-poradnik" }
         ]}/>
 
       <ArticleSchema
@@ -81,7 +81,7 @@ export default function BlogBlogFirmowy() {
         datePublished="2025-01-15"
         dateModified="2025-04-12"
         authorName="Fotz.pl"
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
       />
 
       <FAQSchema items={faqItems} />

@@ -83,21 +83,21 @@ export default function BlogDarkSocialCoTo() {
       <SEOHead
         title="Dark Social — co to jest i jak go mierzyć? | Fotz Studio"
         description="Kompletny przewodnik po dark social: kanały, metody pomiaru i strategie optymalizacji niewidocznego ruchu z prywatnych udostępnień."
-        canonical="https://fotz.pl/blog/dark-social-co-to"
+        canonical="https://www.fotz-studio.pl/blog/dark-social-co-to"
 
         keywords="Dark Social co to jest, Dark Social definicja, czym jest Dark Social, Dark Social w marketingu, Dark Social przykłady, jak działa Dark Social, Dark Social strategia"
       />
       <ArticleSchema
         title="Dark Social — co to jest i jak go mierzyć?"
         description="Kompletny przewodnik po dark social: kanały, metody pomiaru i strategie optymalizacji niewidocznego ruchu z prywatnych udostępnień."
-        url="https://fotz.pl/blog/dark-social-co-to"
+        url="https://www.fotz-studio.pl/blog/dark-social-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Dark Social", url: "https://fotz.pl/blog/dark-social-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Dark Social", url: "https://www.fotz-studio.pl/blog/dark-social-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -105,7 +105,7 @@ export default function BlogDarkSocialCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Dark Social", url: "https://fotz.pl" },
+              { name: "Dark Social", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Dark Social — co to jest i jak go mierzyć?

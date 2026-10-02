@@ -61,7 +61,7 @@ export default function BlogReklamaWGoogle() {
       <SEOHead
         title="Reklama w Google 2025 | Fotz Studio"
         description="Reklama w Google 2025. Poradnik: Google Ads, Search, Display, Shopping, YouTube, ile kosztuje, CPC, budżet, samodzielnie czy agencja, błędy."
-        canonical="https://fotz.pl/blog/reklama-w-google"
+        canonical="https://www.fotz-studio.pl/blog/reklama-w-google"
         keywords="reklama w Google, Google Ads, Search Ads, Display Ads, Shopping Ads, ile kosztuje, poradnik"
       />
 
@@ -71,7 +71,7 @@ export default function BlogReklamaWGoogle() {
         author="Fotz"
         datePublished={publicationDate}
         dateModified={modifiedDate}
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

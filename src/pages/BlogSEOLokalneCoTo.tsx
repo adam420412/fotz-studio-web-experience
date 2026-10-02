@@ -68,7 +68,7 @@ export default function BlogSEOLokalneCoTo() {
       <SEOHead
         title="SEO Lokalne — co to jest i jak wypozycjonować firmę lokalnie?"
         description="SEO Lokalne co to jest — wyjaśniamy czym jest Local SEO, jak zoptymalizować Google Moja Firma, zbierać recenzje, Local Pack i on-page SEO lokalnie."
-        canonical="https://fotz.pl/blog/seo-lokalne-co-to"
+        canonical="https://www.fotz-studio.pl/blog/seo-lokalne-co-to"
 
         keywords="SEO Lokalne co to jest, SEO Lokalne definicja, czym jest SEO Lokalne, SEO Lokalne w marketingu, SEO Lokalne przykłady, jak działa SEO Lokalne, SEO Lokalne strategia"
       />
@@ -77,7 +77,7 @@ export default function BlogSEOLokalneCoTo() {
         description="Czym jest SEO Lokalne (Local SEO), Google Business Profile optymalizacja, Local Pack, zbieranie recenzji, on-page local SEO i katalogi lokalne w Polsce."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/seo-lokalne-co-to"
+        url="https://www.fotz-studio.pl/blog/seo-lokalne-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

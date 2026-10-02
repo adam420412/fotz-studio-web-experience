@@ -74,7 +74,7 @@ export default function AgencjaMarketingowaZabrze() {
         <SEOHead
           title="Agencja marketingowa Zabrze - fotz studio | Marketing dla firm"
           description="Agencja marketingowa Zabrze. Fotz Studio — strony WWW, SEO, kampanie Google/Meta, social media dla firm z Zabrza. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa/zabrze"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/zabrze"
           keywords="agencja marketingowa zabrze, marketing internetowy zabrze, agencja reklamowa zabrze, seo zabrze"
         />
 
@@ -85,8 +85,8 @@ export default function AgencjaMarketingowaZabrze() {
           areaServed="Zabrze"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Zabrze", url: "https://fotz.pl/agencja-marketingowa/zabrze" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja Marketingowa Zabrze", url: "https://www.fotz-studio.pl/agencja-marketingowa/zabrze" }
           ]}/>
         <FAQSchema items={faqItems} />
 

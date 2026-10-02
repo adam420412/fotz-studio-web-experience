@@ -84,26 +84,26 @@ export default function BlogWireframeCoTo() {
       <SEOHead
         title="Wireframe — co to jest? Wireframing w projektowaniu UX"
         description="Kompletny przewodnik po wireframingu: 3 typy (lo-fi, mid-fi, hi-fi), elementy, adnotacje, narzędzia i kiedy używać wireframów w procesie UX."
-        canonical="https://fotz.pl/blog/wireframe-co-to"
+        canonical="https://www.fotz-studio.pl/blog/wireframe-co-to"
 
         keywords="Wireframe co to jest, Wireframe definicja, czym jest Wireframe, Wireframe przykłady, jak działa Wireframe, Wireframe znaczenie, Wireframe przewodnik"
       />
       <ArticleSchema
         title="Wireframe — co to jest i jak tworzyć szkielety UX?"
         description="Kompletny przewodnik po wireframingu: 3 typy (lo-fi, mid-fi, hi-fi), elementy, adnotacje, narzędzia i kiedy używać wireframów w procesie UX."
-        url="https://fotz.pl/blog/wireframe-co-to"
+        url="https://www.fotz-studio.pl/blog/wireframe-co-to"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Wireframe", url: "https://fotz.pl/blog/wireframe-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Wireframe", url: "https://www.fotz-studio.pl/blog/wireframe-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Wireframe", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Wireframe", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Wireframe — co to jest i jak tworzyć szkielety UX?
           </h1>

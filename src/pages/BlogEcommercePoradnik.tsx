@@ -48,7 +48,7 @@ const BlogEcommercePoradnik = () => {
         title="Jak założyć sklep internetowy? Poradnik krok po kroku 2025"
         description="Kompleksowy poradnik założenia sklepu internetowego. Wybór platformy, koszty, płatności, logistyka, SEO. Wszystko co musisz wiedzieć w 2025 roku."
         ogType="article"
-        canonical="https://fotz.pl/blog/jak-zalozyc-sklep-internetowy"
+        canonical="https://www.fotz-studio.pl/blog/jak-zalozyc-sklep-internetowy"
         keywords="sklep internetowy, e-commerce, jak założyć sklep online, platformy e-commerce, WooCommerce, Shopify, Shoper"
         schemaJson={[
           {
@@ -65,7 +65,7 @@ const BlogEcommercePoradnik = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -75,9 +75,9 @@ const BlogEcommercePoradnik = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Jak założyć sklep internetowy", "item": "https://fotz.pl/blog/jak-zalozyc-sklep-internetowy" }
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Jak założyć sklep internetowy", "item": "https://www.fotz-studio.pl/blog/jak-zalozyc-sklep-internetowy" }
             ]
           },
           {

@@ -98,7 +98,7 @@ const MarketingEdukacja = () => {
       <SEOHead
         title="Marketing dla Edukacji | Szkoły, Uczelnie, Kursy | Fotz Studio"
         description="Marketing dla placówek edukacyjnych - strony dla szkół, kampanie rekrutacyjne, e-learning. Zwiększ liczbę zgłoszeń i buduj prestiż placówki."
-        canonical="https://fotz.pl/dla-kogo/edukacja"
+        canonical="https://www.fotz-studio.pl/dla-kogo/edukacja"
         keywords="marketing edukacyjny, marketing dla szkół, marketing uczelni, reklama szkoły, kampanie rekrutacyjne uczelnie, marketing kursów online, agencja marketingowa edukacja"
       />
 
@@ -109,9 +109,9 @@ const MarketingEdukacja = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Edukacja", url: "https://fotz.pl/dla-kogo/edukacja" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Edukacja", url: "https://www.fotz-studio.pl/dla-kogo/edukacja" },
         ]}
       />
       <FAQSchema items={faqItems} />

@@ -44,21 +44,21 @@ export default function BlogNodeVersionMgrCoTo() {
       <SEOHead
         title="Volta, fnm, mise, nvm i Corepack | Fotz Studio"
         description="6 narzędzi zarządzania wersjami Node.js (Volta/fnm/mise/nvm/nvm-windows/Corepack) — szybkość, cross-platform, package.json pin, polyglot i Docker best practices."
-        canonical="https://fotz.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024"
+        canonical="https://www.fotz-studio.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024"
 
         keywords="Volta, fnm, mise, nvm i Corepack co to jest, Volta, fnm, mise, nvm i Corepack jak działa, Volta, fnm, mise, nvm i Corepack tutorial, Volta, fnm, mise, nvm i Corepack przykład, czym jest Volta, fnm, mise, nvm i Corepack, Volta, fnm, mise, nvm i Corepack dokumentacja, Volta, fnm, mise, nvm i Corepack przewodnik"
       />
       <ArticleSchema
         title="Volta, fnm, mise, nvm i Corepack — Node.js version managers 2024?"
         description="6 narzędzi zarządzania wersjami Node.js (Volta/fnm/mise/nvm/nvm-windows/Corepack) — szybkość, cross-platform, package.json pin, polyglot i Docker best practices."
-        url="https://fotz.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024"
+        url="https://www.fotz-studio.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024"
         datePublished="2024-07-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Node.js Version Managers", url: "https://fotz.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Node.js Version Managers", url: "https://www.fotz-studio.pl/blog/volta-fnm-mise-nvm-corepack-nodejs-version-managers-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-lime-950 text-white py-20 px-4">

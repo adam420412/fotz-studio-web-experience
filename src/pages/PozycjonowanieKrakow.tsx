@@ -93,7 +93,7 @@ const PozycjonowanieKrakow = () => {
       <SEOHead
         title="Pozycjonowanie Kraków — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron internetowych Kraków. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Zwiększamy ruch firm krakowskich. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/krakow"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/krakow"
         keywords="pozycjonowanie kraków, agencja seo kraków, seo kraków, pozycjonowanie stron kraków, seo dla firm kraków, seo małopolska, audyt seo kraków, pozycjonowanie lokalne kraków"
       />
       <ServiceSchema
@@ -103,10 +103,10 @@ const PozycjonowanieKrakow = () => {
         areaServed="Kraków"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Kraków", url: "https://fotz.pl/uslugi/pozycjonowanie/krakow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Kraków", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/krakow" },
         ]}/>
       <FAQSchema items={faqItems} />
 

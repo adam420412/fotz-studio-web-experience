@@ -44,21 +44,21 @@ export default function BlogReactFlowCoTo() {
       <SEOHead
         title="React Flow (xyflow), Mermaid.js i grafy w React | Fotz"
         description="6 bibliotek graph viz (React Flow/Mermaid/Cytoscape/Sigma/G6/D3 Force) — node editors, custom nodes, dagre layout, workflow builders i Next.js integration."
-        canonical="https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
 
         keywords="React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 co to jest, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 jak działa, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 tutorial, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 przykład, czym jest React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 dokumentacja, React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024 przewodnik"
       />
       <ArticleSchema
         title="React Flow (xyflow), Mermaid.js i Graph Visualization w React 2024?"
         description="6 bibliotek graph viz (React Flow/Mermaid/Cytoscape/Sigma/G6/D3 Force) — node editors, custom nodes, dagre layout, workflow builders i Next.js integration."
-        url="https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
+        url="https://www.fotz-studio.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Flow i Graph Viz", url: "https://fotz.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Flow i Graph Viz", url: "https://www.fotz-studio.pl/blog/react-flow-xyflow-mermaid-graph-visualization-diagramy-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

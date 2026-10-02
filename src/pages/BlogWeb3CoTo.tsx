@@ -52,21 +52,21 @@ export default function BlogWeb3CoTo() {
       <SEOHead
         title="Web3 i Blockchain dla firm — smart contracts, DeFi, tokenizacja aktywów"
         description="Web3 i blockchain w biznesie: smart contracts, NFT tokenizacja aktywów, DeFi, DAO, supply chain, trade finance — jak wdrożyć w przedsiębiorstwie."
-        canonical="https://fotz.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow"
+        canonical="https://www.fotz-studio.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow"
 
         keywords="Web3 i Blockchain dla firm co to jest, Web3 i Blockchain dla firm definicja, czym jest Web3 i Blockchain dla firm, Web3 i Blockchain dla firm przykłady, jak działa Web3 i Blockchain dla firm, Web3 i Blockchain dla firm znaczenie, Web3 i Blockchain dla firm przewodnik"
       />
       <ArticleSchema
         title="Web3 i Blockchain dla firm — smart contracts, DeFi, tokenizacja aktywów"
         description="Web3: 5 blockchainów, 6 enterprise use cases, smart contracts, NFT tokenizacja, DeFi zastosowania i jak wdrożyć blockchain w organizacji."
-        url="https://fotz.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow"
+        url="https://www.fotz-studio.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow"
         datePublished="2024-04-08"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Web3 / Blockchain", url: "https://fotz.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Web3 / Blockchain", url: "https://www.fotz-studio.pl/blog/web3-blockchain-dla-firm-smart-contracts-tokenizacja-aktywow" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-indigo-950 text-white py-20 px-4">

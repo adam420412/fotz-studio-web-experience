@@ -93,21 +93,21 @@ export default function BlogMvpCoTo() {
       <SEOHead
         title="MVP — co to jest? Minimum Viable Product w Lean Startup"
         description="MVP (Minimum Viable Product) — definicja, 4 typy (Landing Page, Concierge, Wizard of Oz, Piecemeal), proces 7 kroków i różnica vs prototyp. Przewodnik po MVP."
-        canonical="https://fotz.pl/blog/mvp-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/mvp-co-to-jest"
 
         keywords="MVP co to jest, MVP definicja, czym jest MVP, MVP startup, MVP jak liczyć, MVP wzór, MVP przykłady"
       />
       <ArticleSchema
         title="MVP (Minimum Viable Product) — co to jest i jak budować?"
         description="Kompletny przewodnik po MVP: 4 typy MVP, 7-krokowy proces, porównanie z MMP/MLP/prototypem i przykłady (Dropbox, Airbnb, Buffer)."
-        url="https://fotz.pl/blog/mvp-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/mvp-co-to-jest"
         datePublished="2024-01-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "MVP — Minimum Viable Product", url: "https://fotz.pl/blog/mvp-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "MVP — Minimum Viable Product", url: "https://www.fotz-studio.pl/blog/mvp-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -115,7 +115,7 @@ export default function BlogMvpCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "MVP", url: "https://fotz.pl" },
+              { name: "MVP", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             MVP (Minimum Viable Product) — co to jest i jak budować?

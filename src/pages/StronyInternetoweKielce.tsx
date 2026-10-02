@@ -37,7 +37,7 @@ export default function StronyInternetoweKielce() {
       <SEOHead
         title="Strony Internetowe Kielce | Projektowanie Stron WWW"
         description="Nowoczesne strony internetowe dla firm w Kielcach. Projektowanie, programowanie i optymalizacja stron WWW. Sprawdzone rozwiązania dla biznesu."
-        canonical="https://fotz.pl/strony-internetowe/kielce"
+        canonical="https://www.fotz-studio.pl/strony-internetowe/kielce"
         keywords="strony internetowe kielce, tworzenie stron internetowych kielce, strony www kielce, projektowanie stron kielce, agencja webdesign kielce, sklep internetowy kielce"
       />
 
@@ -48,9 +48,9 @@ export default function StronyInternetoweKielce() {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Kielce", url: "https://fotz.pl/strony-internetowe/kielce" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Kielce", url: "https://www.fotz-studio.pl/strony-internetowe/kielce" }
         ]}/>
 
       <FAQSchema items={faqs} />

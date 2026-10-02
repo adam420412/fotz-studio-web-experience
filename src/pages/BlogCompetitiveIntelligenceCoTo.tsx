@@ -106,21 +106,21 @@ export default function BlogCompetitiveIntelligenceCoTo() {
       <SEOHead
         title="Competitive Intelligence — co to jest i jak stosować?"
         description="Kompletny przewodnik po competitive intelligence: frameworki analizy, źródła danych i system ciągłego monitorowania konkurencji."
-        canonical="https://fotz.pl/blog/competitive-intelligence-co-to"
+        canonical="https://www.fotz-studio.pl/blog/competitive-intelligence-co-to"
 
         keywords="Competitive Intelligence co to jest, Competitive Intelligence definicja, czym jest Competitive Intelligence, Competitive Intelligence przykłady, jak działa Competitive Intelligence, Competitive Intelligence znaczenie, Competitive Intelligence przewodnik"
       />
       <ArticleSchema
         title="Competitive Intelligence — co to jest i jak stosować?"
         description="Kompletny przewodnik po competitive intelligence: frameworki analizy, źródła danych i system ciągłego monitorowania konkurencji."
-        url="https://fotz.pl/blog/competitive-intelligence-co-to"
+        url="https://www.fotz-studio.pl/blog/competitive-intelligence-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Competitive Intelligence", url: "https://fotz.pl/blog/competitive-intelligence-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Competitive Intelligence", url: "https://www.fotz-studio.pl/blog/competitive-intelligence-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -128,7 +128,7 @@ export default function BlogCompetitiveIntelligenceCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Competitive Intelligence", url: "https://fotz.pl" },
+              { name: "Competitive Intelligence", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Competitive Intelligence — co to jest i jak stosować?

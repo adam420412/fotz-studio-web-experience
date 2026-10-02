@@ -12,10 +12,10 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 export default function TworzenieStronBydgoszcz() {
   const breadcrumbs = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Usługi", url: "https://fotz.pl/uslugi" },
-    { name: "Tworzenie stron internetowych", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych" },
-    { name: "Bydgoszcz", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych/bydgoszcz" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+    { name: "Tworzenie stron internetowych", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych" },
+    { name: "Bydgoszcz", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/bydgoszcz" }
   ];
 
   const stats = [
@@ -135,7 +135,7 @@ export default function TworzenieStronBydgoszcz() {
       <SEOHead
         title="Tworzenie stron internetowych Bydgoszcz | Fotz Studio"
         description="Tworzenie stron internetowych Bydgoszcz — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/bydgoszcz"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/bydgoszcz"
         keywords="tworzenie stron internetowych bydgoszcz, strony internetowe bydgoszcz, tworzenie stron www bydgoszcz, projektowanie stron internetowych bydgoszcz, strony www bydgoszcz, tworzenie stron bydgoszcz, strona internetowa bydgoszcz, agencja webdesign bydgoszcz, projektowanie stron www bydgoszcz, sklep internetowy bydgoszcz"
       />
       <ServiceSchema name="Tworzenie stron internetowych Bydgoszcz" description="Profesjonalne tworzenie stron internetowych dla firm z Bydgoszczy i Kujawsko-Pomorskiego." areaServed={["PL"]} />

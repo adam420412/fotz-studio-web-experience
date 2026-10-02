@@ -37,13 +37,13 @@ const CaseStudyRPPG = () => {
       <SEOHead
         title="RPPG - Rada Polskich Przedsiębiorców Globalnych - Case Study"
         description="Case study RPPG Rada Polskich Przedsiębiorców Globalnych: strona internetowa dla organizacji biznesowej. Design i UX. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/rppg"
+        canonical="https://www.fotz-studio.pl/realizacje/rppg"
         keywords="case study gry, marketing dla gier realizacja"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "RPPG", url: "https://fotz.pl/realizacje/rppg" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "RPPG", url: "https://www.fotz-studio.pl/realizacje/rppg" }
       ]}/>
       <ArticleSchema
         title="RPPG - Rada Polskich Przedsiębiorców Globalnych - Case Study"
@@ -51,8 +51,8 @@ const CaseStudyRPPG = () => {
         author="Fotz Studio"
         datePublished="2024-05-20"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/rppg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/rppg"
       />
 
       {/* Hero */}

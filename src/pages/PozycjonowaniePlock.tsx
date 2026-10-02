@@ -89,7 +89,7 @@ const PozycjonowaniePlock = () => {
       <SEOHead
         title="Pozycjonowanie Płock - Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron Płock. Agencja SEO Fotz Studio - audyt SEO, optymalizacja i link building dla firm z Płocku. Bezpłatny audyt SEO!"
-        canonical="https://fotz.pl/pozycjonowanie/plock"
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/plock"
         keywords="pozycjonowanie płock, agencja seo płock, seo płock, pozycjonowanie stron płock, seo dla firm płock, seo mazowsze, pozycjonowanie lokalne płock"
       />
       <ServiceSchema

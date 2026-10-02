@@ -44,21 +44,21 @@ export default function BlogRechartsCoTo() {
       <SEOHead
         title="Recharts, Nivo, Chart.js — wykresy i data visualization w React 2024?"
         description="Recharts, Nivo, Tremor, Chart.js (react-chartjs-2), Apache ECharts i @visx — line/bar/pie charts, mapy (react-leaflet, deck.gl) i real-time charts w React."
-        canonical="https://fotz.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
+        canonical="https://www.fotz-studio.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
 
         keywords="Recharts, Nivo, Chart.js co to jest, Recharts, Nivo, Chart.js jak działa, Recharts, Nivo, Chart.js tutorial, Recharts, Nivo, Chart.js przykład, czym jest Recharts, Nivo, Chart.js, Recharts, Nivo, Chart.js dokumentacja, Recharts, Nivo, Chart.js przewodnik"
       />
       <ArticleSchema
         title="Recharts, Nivo, Chart.js — wykresy i data visualization w React 2024?"
         description="6 bibliotek wykresów (Recharts/Nivo/Tremor/Chart.js/ECharts/@visx) — SVG vs Canvas, SSR, real-time charts, D3 integracja i mapy z react-leaflet i deck.gl."
-        url="https://fotz.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
+        url="https://www.fotz-studio.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Recharts i Data Visualization", url: "https://fotz.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Recharts i Data Visualization", url: "https://www.fotz-studio.pl/blog/recharts-nivo-chartjs-data-visualization-react-wykresy-mapy-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">

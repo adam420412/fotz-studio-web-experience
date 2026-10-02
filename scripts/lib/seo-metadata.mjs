@@ -98,8 +98,8 @@ export function extractMetadata(file) {
   if (!props?.title || !props.canonical) return null;
   return {
     title: props.title.trim(), description: (props.description || '').trim(),
-    canonical: new URL(props.canonical, 'https://fotz.pl').href.replace(/\/+$/, ''),
-    ogImage: props.og?.image ?? props.ogImage ?? 'https://fotz.pl/og-image.jpg',
+    canonical: new URL(props.canonical, 'https://www.fotz-studio.pl').href.replace(/\/+$/, ''),
+    ogImage: props.og?.image ?? props.ogImage ?? 'https://www.fotz-studio.pl/og-image.jpg',
     ogType: props.og?.type ?? props.ogType ?? 'website',
     ogTitle: props.og?.title ?? props.title.trim(),
     ogDescription: props.og?.description ?? (props.description || '').trim(),

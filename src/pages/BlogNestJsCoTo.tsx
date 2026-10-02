@@ -44,21 +44,21 @@ export default function BlogNestJsCoTo() {
       <SEOHead
         title="NestJS — co to jest, moduły, guardy, mikrousługi, vs Express i Fastify?"
         description="NestJS: 6 komponentów (Module/Controller/Service/Guard/Interceptor/Pipe) — DI, TypeORM/Prisma, WebSocket, microservices, GraphQL i kiedy wybrać NestJS."
-        canonical="https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
+        canonical="https://www.fotz-studio.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
 
         keywords="NestJS co to jest, NestJS definicja, czym jest NestJS, NestJS przykłady, jak działa NestJS, NestJS znaczenie, NestJS przewodnik"
       />
       <ArticleSchema
         title="NestJS — co to jest, moduły, guardy, mikrousługi, vs Express i Fastify?"
         description="NestJS: 6 komponentów (Module/Controller/Service/Guard/Interceptor/Pipe) — DI, TypeORM/Prisma, WebSocket, microservices, GraphQL i kiedy wybrać NestJS."
-        url="https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
+        url="https://www.fotz-studio.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "NestJS", url: "https://fotz.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "NestJS", url: "https://www.fotz-studio.pl/blog/nestjs-co-to-jest-moduly-guardy-mikrouslugi-vs-express-fastify" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-pink-950 text-white py-20 px-4">

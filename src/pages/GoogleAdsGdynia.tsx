@@ -160,7 +160,7 @@ export default function GoogleAdsGdynia() {
         <SEOHead
           title="Agencja Google Ads Gdynia — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Gdynia ✓ Kampanie dla firm z Gdyni i Trójmiasta. Od 400 zł/mies. Certyfikowani specjaliści. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/gdynia"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/gdynia"
         keywords="google ads gdynia, kampanie google ads gdynia, agencja google ads gdynia, reklamy google gdynia, google adwords gdynia, sem gdynia, google ads dla firm gdynia, prowadzenie google ads gdynia, google ads cennik gdynia, reklama w google gdynia"
         />
 
@@ -171,10 +171,10 @@ export default function GoogleAdsGdynia() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-            { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-            { name: "Gdynia", url: "https://fotz.pl/performance-marketing/google-ads/gdynia" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+            { name: "Gdynia", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/gdynia" },
           ]}/>
 
         <FAQSchema items={faqItems} />
@@ -184,7 +184,7 @@ export default function GoogleAdsGdynia() {
             { name: "Strona główna", url: "/" },
             { name: "Performance Marketing", url: "/performance-marketing" },
             { name: "Google Ads", url: "/performance-marketing/google-ads" },
-            { name: "Gdynia", url: "https://fotz.pl" },
+            { name: "Gdynia", url: "https://www.fotz-studio.pl" },
           ]}/>
 
         {/* Hero Section */}

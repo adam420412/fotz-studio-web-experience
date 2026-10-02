@@ -196,13 +196,13 @@ const KompleksowaObsluga = () => {
       <SEOHead
         title="Kompleksowa Obsługa Marketingowa Firm | Fotz Studio"
         description="Kompleksowa obsługa marketingowa firm — marketing 360°: SEO, social media, content, reklamy Google i Meta, produkcja wideo. Jeden partner dla całego marketingu Twojej firmy."
-        canonical="https://fotz.pl/kompleksowa-obsluga-marketingowa"
+        canonical="https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa"
         keywords="kompleksowa obsługa marketingowa, pełna obsługa marketingu, agencja marketingowa kompleksowa, marketing 360, outsourcing marketingu"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Kompleksowa obsługa", url: "https://fotz.pl/kompleksowa-obsluga-marketingowa" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Kompleksowa obsługa", url: "https://www.fotz-studio.pl/kompleksowa-obsluga-marketingowa" }
         ]}/>
       <ServiceSchema 
         name="Kompleksowa obsługa marketingowa"

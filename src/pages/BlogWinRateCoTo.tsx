@@ -52,21 +52,21 @@ export default function BlogWinRateCoTo() {
       <SEOHead
         title="Win Rate — co to jest i jak poprawić wskaźnik wygranych?"
         description="Win Rate: jak obliczać, analiza przyczyn przegranej (loss analysis), segmentacja po AE/source/competitor, strategie poprawy i benchmarki dla zespołów SaaS."
-        canonical="https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
+        canonical="https://www.fotz-studio.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
 
         keywords="Win Rate co to jest, Win Rate definicja, czym jest Win Rate, Win Rate przykłady, jak działa Win Rate, Win Rate znaczenie, Win Rate przewodnik"
       />
       <ArticleSchema
         title="Win Rate — co to jest i jak poprawić wskaźnik wygranych?"
         description="Win Rate: formuły, loss analysis, segmentacja (SMB vs. Enterprise, inbound vs. outbound), 6 strategii poprawy, najczęstsze powody przegranej i benchmarki SaaS."
-        url="https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
+        url="https://www.fotz-studio.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic"
         datePublished="2024-03-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Win Rate", url: "https://fotz.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Win Rate", url: "https://www.fotz-studio.pl/blog/win-rate-wskaznik-wygranych-jak-poprawic" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-slate-900 text-white py-20 px-4">

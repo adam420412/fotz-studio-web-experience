@@ -39,21 +39,21 @@ export default function BlogUXEcommerce() {
         title="UX E-commerce — Jak Projektować Sklep Internetowy pod Konwersję?"
         description="Kompletny poradnik UX/UI dla sklepów internetowych. Jak projektować sklepy e-commerce zwiększające konwersję."
         ogType="article"
-        canonical="https://fotz.pl/blog/ux-ui-ecommerce"
+        canonical="https://www.fotz-studio.pl/blog/ux-ui-ecommerce"
         keywords="UX e-commerce, UI sklep internetowy, projektowanie sklepów, konwersja e-commerce, user experience"
       />
       <ArticleSchema
         title="UX/UI w e-commerce - jak projektować sklepy które sprzedają"
         description="Kompletny poradnik UX/UI dla sklepów internetowych. Jak projektować sklepy e-commerce zwiększające konwersję."
-        url="https://fotz.pl/blog/ux-ui-ecommerce"
+        url="https://www.fotz-studio.pl/blog/ux-ui-ecommerce"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "UX/UI e-commerce", url: "https://fotz.pl/blog/ux-ui-ecommerce" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "UX/UI e-commerce", url: "https://www.fotz-studio.pl/blog/ux-ui-ecommerce" },
         ]}/>
       <FAQSchema items={faqItems} />
 

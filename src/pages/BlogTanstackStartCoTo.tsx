@@ -43,21 +43,21 @@ export default function BlogTanstackStartCoTo() {
       <SEOHead
         title="TanStack Start — full-stack React z TanStack Router, Server Functions i Vinxi 2024?"
         description="6 frameworków full-stack React (TanStack Start/Next.js/Remix/Astro/SvelteKit/Waku) — TanStack Router type-safe, Server Functions, TanStack Query SSR i kiedy wybrać."
-        canonical="https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
+        canonical="https://www.fotz-studio.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
 
         keywords="TanStack Start co to jest, TanStack Start jak działa, TanStack Start tutorial, TanStack Start przykład, czym jest TanStack Start, TanStack Start dokumentacja, TanStack Start przewodnik"
       />
       <ArticleSchema
         title="TanStack Start — full-stack React z TanStack Router, Server Functions i Vinxi 2024?"
         description="6 frameworków full-stack React (TanStack Start/Next.js/Remix/Astro/SvelteKit/Waku) — TanStack Router type-safe, Server Functions, TanStack Query SSR i kiedy wybrać."
-        url="https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
+        url="https://www.fotz-studio.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024"
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TanStack Start", url: "https://fotz.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TanStack Start", url: "https://www.fotz-studio.pl/blog/tanstack-start-fullstack-react-router-server-functions-vinxi-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-orange-950 text-white py-20 px-4">

@@ -51,21 +51,21 @@ export default function BlogObservabilityCoTo() {
       <SEOHead
         title="Observability — co to jest, OpenTelemetry, Prometheus i Grafana?"
         description="Observability: 4 filary, OpenTelemetry wdrożenie, Prometheus+Grafana+Loki+Tempo stack, Distributed Tracing, SLOs/SLIs/Error Budget i narzędzia."
-        canonical="https://fotz.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana"
+        canonical="https://www.fotz-studio.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana"
 
         keywords="Observability co to jest, Observability definicja, czym jest Observability, Observability przykłady, jak działa Observability, Observability znaczenie, Observability przewodnik"
       />
       <ArticleSchema
         title="Observability — co to jest, OpenTelemetry, Prometheus i Grafana?"
         description="Observability: 4 filary, OpenTelemetry wdrożenie, Prometheus+Grafana+Loki+Tempo stack, Distributed Tracing, SLOs/SLIs/Error Budget i narzędzia."
-        url="https://fotz.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana"
+        url="https://www.fotz-studio.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana"
         datePublished="2024-03-27"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Observability", url: "https://fotz.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Observability", url: "https://www.fotz-studio.pl/blog/observability-co-to-jest-opentelemetry-prometheus-grafana" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-slate-900 text-white py-20 px-4">

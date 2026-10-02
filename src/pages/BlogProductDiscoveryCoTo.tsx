@@ -82,21 +82,21 @@ export default function BlogProductDiscoveryCoTo() {
       <SEOHead
         title="Product Discovery — co to jest i jak przeprowadzić? | Fotz.pl"
         description="Kompletny przewodnik po Product Discovery: techniki, Customer Interview, Continuous Discovery i Discovery vs Delivery."
-        canonical="https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
+        canonical="https://www.fotz-studio.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
 
         keywords="Product Discovery co to jest, Product Discovery definicja, czym jest Product Discovery, Product Discovery przykłady, jak działa Product Discovery, Product Discovery znaczenie, Product Discovery przewodnik"
       />
       <ArticleSchema
         title="Product Discovery — co to jest i jak przeprowadzić?"
         description="Kompletny przewodnik po Product Discovery: techniki, Customer Interview, Continuous Discovery i Discovery vs Delivery."
-        url="https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
+        url="https://www.fotz-studio.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic"
         datePublished="2024-02-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Product Discovery", url: "https://fotz.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Product Discovery", url: "https://www.fotz-studio.pl/blog/product-discovery-co-to-jest-jak-przeprowadzic" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-slate-900 text-white py-20 px-4">

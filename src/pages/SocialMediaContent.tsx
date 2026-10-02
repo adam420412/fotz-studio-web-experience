@@ -37,7 +37,7 @@ const SocialMediaContent = () => {
       <SEOHead
         title="Content Social Media — Tworzenie Treści na Social Media"
         description="Tworzenie contentu na social media — posty, grafiki, rolki, stories. Profesjonalna produkcja treści dla Facebooka, Instagrama i LinkedIn. Fotz Studio."
-        canonical="https://fotz.pl/social-media/content"
+        canonical="https://www.fotz-studio.pl/social-media/content"
         keywords="content social media, tworzenie treści social media, posty na social media, grafiki social media, materiały social media, content creator"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const SocialMediaContent = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Social Media", url: "https://fotz.pl/social-media" },
-        { name: "Tworzenie Treści Social Media", url: "https://fotz.pl/social-media/content" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Social Media", url: "https://www.fotz-studio.pl/social-media" },
+        { name: "Tworzenie Treści Social Media", url: "https://www.fotz-studio.pl/social-media/content" },
       ]}/>
       <FAQSchema items={faqItems} />
 

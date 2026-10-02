@@ -67,7 +67,7 @@ export default function BlogNIPCoToJest() {
       <SEOHead
         title="NIP - co to jest? Numer Identyfikacji Podatkowej - poradnik"
         description="NIP co to jest - wyjasniamy czym jest Numer Identyfikacji Podatkowej, jak go uzyskac, jak sprawdzic NIP firmy i czym rozni sie od REGON i PESEL."
-        canonical="https://fotz.pl/blog/nip-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/nip-co-to-jest"
 
         keywords="NIP - co to jest, NIP - definicja, czym jest NIP -, NIP - przykłady, jak działa NIP -, NIP - znaczenie, NIP - przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogNIPCoToJest() {
         description="Czym jest NIP (Numer Identyfikacji Podatkowej), jak uzyskac NIP, sprawdzic NIP firmy, roznica NIP vs REGON i co to jest NIP-EU (VAT UE)."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/nip-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/nip-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

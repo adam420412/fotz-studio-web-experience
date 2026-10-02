@@ -86,26 +86,26 @@ export default function BlogPricingPageOptimizationCoTo() {
       <SEOHead
         title="Optymalizacja Strony Cennikowej — jak zbudować pricing page która konwertuje?"
         description="Kompletny przewodnik po stronach cennikowych: 6 kluczowych elementów, psychologia cen, anchoring, decoy effect i optymalizacje konwersji."
-        canonical="https://fotz.pl/blog/optymalizacja-strony-cennikowej"
+        canonical="https://www.fotz-studio.pl/blog/optymalizacja-strony-cennikowej"
 
         keywords="Optymalizacja Strony Cennikowej co to jest, Optymalizacja Strony Cennikowej definicja, czym jest Optymalizacja Strony Cennikowej, Optymalizacja Strony Cennikowej przykłady, jak działa Optymalizacja Strony Cennikowej, Optymalizacja Strony Cennikowej znaczenie, Optymalizacja Strony Cennikowej przewodnik"
       />
       <ArticleSchema
         title="Optymalizacja Strony Cennikowej — jak zbudować pricing page która konwertuje?"
         description="Kompletny przewodnik po stronach cennikowych: 6 kluczowych elementów, psychologia cen, anchoring, decoy effect i optymalizacje konwersji."
-        url="https://fotz.pl/blog/optymalizacja-strony-cennikowej"
+        url="https://www.fotz-studio.pl/blog/optymalizacja-strony-cennikowej"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Strona Cennikowa", url: "https://fotz.pl/blog/optymalizacja-strony-cennikowej" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Strona Cennikowa", url: "https://www.fotz-studio.pl/blog/optymalizacja-strony-cennikowej" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Strona Cennikowa", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Strona Cennikowa", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Strona Cennikowa — co powinna zawierać i jak optymalizować?
           </h1>

@@ -98,7 +98,7 @@ const PozycjonowanieSzczecin = () => {
       <SEOHead
         title="Pozycjonowanie Szczecin — Agencja SEO Zachodniopomorskie"
         description="Pozycjonowanie stron Szczecin i Zachodniopomorskie. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building. SEO dla rynku PL i DE. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/szczecin"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/szczecin"
         keywords="pozycjonowanie szczecin, agencja seo szczecin, seo szczecin, pozycjonowanie stron szczecin, seo dla firm szczecin, seo zachodniopomorskie, pozycjonowanie lokalne szczecin"
       />
       <ServiceSchema
@@ -108,10 +108,10 @@ const PozycjonowanieSzczecin = () => {
         areaServed="Szczecin, Zachodniopomorskie"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Szczecin", url: "https://fotz.pl/uslugi/pozycjonowanie/szczecin" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Szczecin", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/szczecin" },
         ]}/>
       <FAQSchema items={faqItems} />
 

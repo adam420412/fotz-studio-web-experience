@@ -154,7 +154,7 @@ export default function SklepyInternetoweKrakow() {
       <SEOHead
         title="Sklepy Internetowe Kraków — Tworzenie Sklepów E-commerce"
         description="Tworzenie sklepów internetowych Kraków — sklep online WooCommerce, Shopify dla firm z Krakowa. E-commerce z SEO, integracjami płatności i obsługą. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/sklepy-internetowe/krakow"
+        canonical="https://www.fotz-studio.pl/uslugi/sklepy-internetowe/krakow"
         keywords="tworzenie sklepów internetowych Kraków, sklep internetowy Kraków, wdrożenie e-commerce Kraków, agencja e-commerce Kraków, Shopify Kraków, WooCommerce Kraków, sklep online Kraków, platforma e-commerce Kraków, PrestaShop Kraków, pozycjonowanie sklepu internetowego Kraków, sklep internetowy dla firmy Kraków"
       />
 
@@ -165,10 +165,10 @@ export default function SklepyInternetoweKrakow() {
         areaServed="Kraków"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Sklepy internetowe", url: "https://fotz.pl/uslugi/sklepy-internetowe" },
-          { name: "Kraków", url: "https://fotz.pl/uslugi/sklepy-internetowe/krakow" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Sklepy internetowe", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe" },
+          { name: "Kraków", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/krakow" }
         ]}/>
       <FAQSchema items={faqItems} />
 

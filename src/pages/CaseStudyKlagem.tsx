@@ -46,19 +46,19 @@ const CaseStudyKlagem = () => {
       <SEOHead
         title="Klagem - Konfigurator 3D i strona B2B | Fotz Studio"
         description="Case study Klagem: strona B2B z konfiguratorem produktów 3D dla producenta modułowych systemów meblowych. SEO i responsywny design. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/klagem"
+        canonical="https://www.fotz-studio.pl/realizacje/klagem"
         keywords="case study google ads, realizacja kampanii google, google ads case study"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-          { name: "Klagem", url: "https://fotz.pl/realizacje/klagem" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+          { name: "Klagem", url: "https://www.fotz-studio.pl/realizacje/klagem" }
         ]}/>
       <ArticleSchema 
         title="Klagem - Konfigurator 3D i strona B2B"
         description="Case study: strona internetowa z konfiguratorem produktów 3D dla producenta mebli modułowych"
-        url="https://fotz.pl/realizacje/klagem"
-        image={`https://fotz.pl${klagemImg}`}
+        url="https://www.fotz-studio.pl/realizacje/klagem"
+        image={`https://www.fotz-studio.pl${klagemImg}`}
         datePublished="2024-03-15"
         dateModified="2026-01-09"
       />

@@ -158,7 +158,7 @@ export default function AgencjaMarketingowaKalisz() {
         <SEOHead
           title="Agencja Marketingowa Kalisz — SEO, Google Ads, Social Media"
           description="Agencja marketingowa w Kaliszu. Profesjonalne usługi SEO lokalne, Google Ads, Facebook Ads, zarządzanie social media i tworzenie stron dla firm z Kalisza."
-          canonical="https://fotz.pl/agencja-marketingowa/kalisz"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/kalisz"
         keywords="agencja marketingowa kalisz, marketing internetowy kalisz, agencja reklamowa kalisz, seo kalisz, google ads kalisz"
         />
 
@@ -168,9 +168,9 @@ export default function AgencjaMarketingowaKalisz() {
           areaServed="Kalisz"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-            { name: "Kalisz", url: "https://fotz.pl/agencja-marketingowa/kalisz" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+            { name: "Kalisz", url: "https://www.fotz-studio.pl/agencja-marketingowa/kalisz" },
           ]}/>
         <FAQSchema items={faqItems} />
 

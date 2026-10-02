@@ -51,21 +51,21 @@ export default function BlogVectorDatabaseCoTo() {
       <SEOHead
         title="Vector Database — co to jest i jak wybrać? | Fotz.pl"
         description="Vector Database: embeddings, similarity search, hybrid search, Pinecone, Qdrant, Weaviate, pgvector, architektura RAG i zastosowania w aplikacjach AI."
-        canonical="https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac"
+        canonical="https://www.fotz-studio.pl/blog/vector-database-co-to-jest-jak-wybrac"
 
         keywords="Vector Database co to jest, Vector Database jak działa, Vector Database tutorial, Vector Database przykład, czym jest Vector Database, Vector Database dokumentacja, Vector Database przewodnik"
       />
       <ArticleSchema
         title="Vector Database — co to jest i jak wybrać?"
         description="Vector Database: embeddings, ANN search, hybrid search, porównanie platform (Pinecone, Qdrant, Weaviate, Chroma, pgvector) i architektura RAG dla aplikacji AI/LLM."
-        url="https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac"
+        url="https://www.fotz-studio.pl/blog/vector-database-co-to-jest-jak-wybrac"
         datePublished="2024-03-02"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Vector Database", url: "https://fotz.pl/blog/vector-database-co-to-jest-jak-wybrac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Vector Database", url: "https://www.fotz-studio.pl/blog/vector-database-co-to-jest-jak-wybrac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

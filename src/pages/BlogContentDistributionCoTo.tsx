@@ -83,26 +83,26 @@ export default function BlogContentDistributionCoTo() {
       <SEOHead
         title="Content Distribution — co to jest i jak dystrybuować treści?"
         description="Kompletny przewodnik po dystrybucji treści: model Owned/Earned/Paid, kanały dystrybucji, content repurposing i metryki zasięgu."
-        canonical="https://fotz.pl/blog/content-distribution-co-to"
+        canonical="https://www.fotz-studio.pl/blog/content-distribution-co-to"
 
         keywords="Content Distribution co to jest, Content Distribution definicja, czym jest Content Distribution, Content Distribution przykłady, jak działa Content Distribution, Content Distribution znaczenie, Content Distribution przewodnik"
       />
       <ArticleSchema
         title="Content Distribution — co to jest i jak dystrybuować treści?"
         description="Kompletny przewodnik po dystrybucji treści: model Owned/Earned/Paid, kanały dystrybucji, content repurposing i metryki zasięgu."
-        url="https://fotz.pl/blog/content-distribution-co-to"
+        url="https://www.fotz-studio.pl/blog/content-distribution-co-to"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Content Distribution", url: "https://fotz.pl/blog/content-distribution-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Content Distribution", url: "https://www.fotz-studio.pl/blog/content-distribution-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Content Distribution", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Content Distribution", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Content Distribution — co to jest i jak dystrybuować treści?
           </h1>

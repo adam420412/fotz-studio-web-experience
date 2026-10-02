@@ -44,21 +44,21 @@ export default function BlogHonoFastifyCoTo() {
       <SEOHead
         title="Hono, Fastify, Express — Node.js backend frameworks 2024, co wybrać?"
         description="Hono (edge), Fastify (schema), Express 5, NestJS, Elysia (Bun) — porównanie Node.js frameworks, REST API best practices, kiedy co wybrać w 2024."
-        canonical="https://fotz.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
+        canonical="https://www.fotz-studio.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
 
         keywords="Hono, Fastify, Express co to jest, Hono, Fastify, Express jak działa, Hono, Fastify, Express tutorial, Hono, Fastify, Express przykład, czym jest Hono, Fastify, Express, Hono, Fastify, Express dokumentacja, Hono, Fastify, Express przewodnik"
       />
       <ArticleSchema
         title="Hono, Fastify, Express — Node.js backend frameworks 2024, co wybrać?"
         description="6 Node.js backend frameworks (Hono/Fastify/Express/NestJS/Elysia/Nitro) — edge computing, schema validation, TypeScript, REST API best practices i kiedy co wybrać."
-        url="https://fotz.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
+        url="https://www.fotz-studio.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Hono, Fastify, Express", url: "https://fotz.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Hono, Fastify, Express", url: "https://www.fotz-studio.pl/blog/hono-fastify-express-nodejs-backend-frameworks-co-wybrac-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">

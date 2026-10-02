@@ -50,21 +50,21 @@ export default function BlogPartnerEcosystemCoTo() {
       <SEOHead
         title="Partner Ecosystem — jak budować ekosystem partnerski? | Fotz.pl"
         description="Partner ecosystem: typy partnerów, jak budować program partnerski, tiers, metryki i najczęstsze błędy. Kompletny przewodnik dla firm SaaS i scaleupów."
-        canonical="https://fotz.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
+        canonical="https://www.fotz-studio.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
 
         keywords="Partner Ecosystem co to jest, Partner Ecosystem definicja, czym jest Partner Ecosystem, Partner Ecosystem przykłady, jak działa Partner Ecosystem, Partner Ecosystem znaczenie, Partner Ecosystem przewodnik"
       />
       <ArticleSchema
         title="Partner Ecosystem — jak budować ekosystem partnerski?"
         description="Partner ecosystem: typy (referral, VAR, SI, ISV, strategic), program partnerski, tier system, metryki i jak unikać błędów przy budowaniu ekosystemu partnerskiego."
-        url="https://fotz.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
+        url="https://www.fotz-studio.pl/blog/partner-ecosystem-ekosystem-partnerski-saas"
         datePublished="2024-02-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Partner Ecosystem", url: "https://fotz.pl/blog/partner-ecosystem-ekosystem-partnerski-saas" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Partner Ecosystem", url: "https://www.fotz-studio.pl/blog/partner-ecosystem-ekosystem-partnerski-saas" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-slate-900 text-white py-20 px-4">

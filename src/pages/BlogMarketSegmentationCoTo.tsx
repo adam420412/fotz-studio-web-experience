@@ -104,26 +104,26 @@ export default function BlogMarketSegmentationCoTo() {
       <SEOHead
         title="Segmentacja Rynku — co to jest? Rodzaje segmentacji i model STP"
         description="Kompletny przewodnik po segmentacji rynku: 5 typów segmentacji, model STP (Segmentation-Targeting-Positioning) i kryteria oceny atrakcyjności segmentu."
-        canonical="https://fotz.pl/blog/segmentacja-rynku-co-to"
+        canonical="https://www.fotz-studio.pl/blog/segmentacja-rynku-co-to"
 
         keywords="Segmentacja Rynku co to jest, Segmentacja Rynku definicja, czym jest Segmentacja Rynku, Segmentacja Rynku przykłady, jak działa Segmentacja Rynku, Segmentacja Rynku znaczenie, Segmentacja Rynku przewodnik"
       />
       <ArticleSchema
         title="Segmentacja Rynku — co to jest i jak stosować model STP?"
         description="Kompletny przewodnik po segmentacji rynku: 5 typów segmentacji, model STP (Segmentation-Targeting-Positioning) i kryteria oceny atrakcyjności segmentu."
-        url="https://fotz.pl/blog/segmentacja-rynku-co-to"
+        url="https://www.fotz-studio.pl/blog/segmentacja-rynku-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Segmentacja Rynku", url: "https://fotz.pl/blog/segmentacja-rynku-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Segmentacja Rynku", url: "https://www.fotz-studio.pl/blog/segmentacja-rynku-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Segmentacja Rynku", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Segmentacja Rynku", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Segmentacja Rynku — co to jest i jak stosować?
           </h1>

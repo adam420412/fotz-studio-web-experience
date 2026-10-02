@@ -44,21 +44,21 @@ export default function BlogStorybook8CoTo() {
       <SEOHead
         title="Storybook 8 — CSF 3, Vitest addon, autodocs i Component-Driven Development 2024?"
         description="6 addonów Storybook (essentials/a11y/interactions/test-runner/Chromatic/themes) — CSF 3, play functions, visual regression testing i Component-Driven Development workflow."
-        canonical="https://fotz.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024"
+        canonical="https://www.fotz-studio.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024"
 
         keywords="Storybook 8 co to jest, Storybook 8 definicja, czym jest Storybook 8, Storybook 8 przykłady, jak działa Storybook 8, Storybook 8 znaczenie, Storybook 8 przewodnik"
       />
       <ArticleSchema
         title="Storybook 8 — CSF 3, Vitest addon, autodocs i Component-Driven Development 2024?"
         description="6 addonów Storybook (essentials/a11y/interactions/test-runner/Chromatic/themes) — CSF 3, play functions, visual regression testing i Component-Driven Development workflow."
-        url="https://fotz.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024"
+        url="https://www.fotz-studio.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Storybook 8 i CDD", url: "https://fotz.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Storybook 8 i CDD", url: "https://www.fotz-studio.pl/blog/storybook-8-csf-vitest-autodocs-chromatic-component-driven-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-pink-950 text-white py-20 px-4">

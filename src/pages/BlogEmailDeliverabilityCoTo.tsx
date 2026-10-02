@@ -95,26 +95,26 @@ export default function BlogEmailDeliverabilityCoTo() {
       <SEOHead
         title="Email Deliverability — co to jest i jak poprawić dostarczalność emaili?"
         description="Kompletny przewodnik po email deliverability: SPF, DKIM, DMARC, 6 czynników reputacji, metryki i strategie poprawy dostarczalności."
-        canonical="https://fotz.pl/blog/email-deliverability-co-to"
+        canonical="https://www.fotz-studio.pl/blog/email-deliverability-co-to"
 
         keywords="Email Deliverability co to jest, Email Deliverability definicja, czym jest Email Deliverability, Email Deliverability przykłady, jak działa Email Deliverability, Email Deliverability znaczenie, Email Deliverability przewodnik"
       />
       <ArticleSchema
         title="Email Deliverability — co to jest i jak poprawić dostarczalność emaili?"
         description="Kompletny przewodnik po email deliverability: SPF, DKIM, DMARC, 6 czynników reputacji, metryki i strategie poprawy dostarczalności."
-        url="https://fotz.pl/blog/email-deliverability-co-to"
+        url="https://www.fotz-studio.pl/blog/email-deliverability-co-to"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Email Deliverability", url: "https://fotz.pl/blog/email-deliverability-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Email Deliverability", url: "https://www.fotz-studio.pl/blog/email-deliverability-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Email Deliverability", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Email Deliverability", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Email Deliverability — co to jest i jak ją poprawić?
           </h1>

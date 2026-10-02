@@ -87,26 +87,26 @@ export default function BlogBrandGuidelinesCoTo() {
       <SEOHead
         title="Brand Guidelines — co to jest? Wytyczne marki i brand book"
         description="Kompletny przewodnik po brand guidelines: 6 kluczowych sekcji, zasada 60-30-10 kolorów, wybór typografii i 5 błędów do unikania."
-        canonical="https://fotz.pl/blog/brand-guidelines-co-to"
+        canonical="https://www.fotz-studio.pl/blog/brand-guidelines-co-to"
 
         keywords="Brand Guidelines co to jest, Brand Guidelines definicja, czym jest Brand Guidelines, Brand Guidelines w marketingu, Brand Guidelines przykłady, jak działa Brand Guidelines, Brand Guidelines strategia"
       />
       <ArticleSchema
         title="Brand Guidelines — co to jest i jak tworzyć wytyczne marki?"
         description="Kompletny przewodnik po brand guidelines: 6 kluczowych sekcji, zasada 60-30-10 kolorów, wybór typografii i 5 błędów do unikania."
-        url="https://fotz.pl/blog/brand-guidelines-co-to"
+        url="https://www.fotz-studio.pl/blog/brand-guidelines-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Brand Guidelines", url: "https://fotz.pl/blog/brand-guidelines-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Brand Guidelines", url: "https://www.fotz-studio.pl/blog/brand-guidelines-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Brand Guidelines", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Brand Guidelines", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Guidelines — co to jest i jak tworzyć wytyczne marki?
           </h1>

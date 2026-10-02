@@ -89,12 +89,12 @@ const StronyInternetoweSzczecin = () => {
       <SEOHead
         title="Strony Internetowe Szczecin | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Szczecin — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Szczecina. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/szczecin"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/szczecin"
         keywords="strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron szczecin, sklepy internetowe szczecin, wykonanie strony internetowej szczecin, responsywna strona www szczecin, wordpress szczecin, nowoczesne strony www szczecin, agencja stron internetowych szczecin"
       />
       
       <ServiceSchema name="Strony Internetowe Szczecin" description="Profesjonalne tworzenie stron internetowych dla firm ze Szczecina." provider="FOTZ Studio" areaServed="Szczecin" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Szczecin", url: "https://fotz.pl/uslugi/strony-internetowe/szczecin" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Szczecin", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/szczecin" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

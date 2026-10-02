@@ -74,21 +74,21 @@ export default function BlogCapTableCoTo() {
       <SEOHead
         title="Cap Table — co to jest i jak zarządzać strukturą udziałów?"
         description="Cap table (tabela kapitalizacji): struktura udziałów, typy instrumentów, dilucja, liquidation preference, narzędzia (Carta, Capdesk) i przykłady exit scenarios."
-        canonical="https://fotz.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest"
 
         keywords="Cap Table co to jest, Cap Table definicja, czym jest Cap Table, Cap Table przykłady, jak działa Cap Table, Cap Table znaczenie, Cap Table przewodnik"
       />
       <ArticleSchema
         title="Cap Table — co to jest i jak zarządzać strukturą udziałów?"
         description="Cap table: typy udziałów, dilucja, liquidation preference, option pool, SAFE i narzędzia do zarządzania. Przewodnik dla założycieli startupów."
-        url="https://fotz.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest"
         datePublished="2024-02-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Cap Table", url: "https://fotz.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Cap Table", url: "https://www.fotz-studio.pl/blog/cap-table-tabela-kapitalizacji-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 px-4">

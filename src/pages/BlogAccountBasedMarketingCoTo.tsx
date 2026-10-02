@@ -84,26 +84,26 @@ export default function BlogAccountBasedMarketingCoTo() {
       <SEOHead
         title="Account-Based Marketing (ABM) — co to jest? Strategia ABM w B2B"
         description="Account-Based Marketing — definicja, 3 typy ABM (strategic, lite, programmatic), 6-krokowy proces, ICP, buying committee i narzędzia. Kompletny przewodnik B2B."
-        canonical="https://fotz.pl/blog/account-based-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/account-based-marketing-co-to"
 
         keywords="Account-Based Marketing (ABM) co to jest, Account-Based Marketing (ABM) definicja, czym jest Account-Based Marketing (ABM), Account-Based Marketing (ABM) w marketingu, Account-Based Marketing (ABM) przykłady, jak działa Account-Based Marketing (ABM), Account-Based Marketing (ABM) strategia"
       />
       <ArticleSchema
         title="Account-Based Marketing (ABM) — co to jest i jak wdrożyć?"
         description="Kompletny przewodnik po ABM: 3 tiery (1:1, 1:Few, 1:Many), 6-krokowy proces, ICP, buying committee i narzędzia: 6sense, Demandbase, LinkedIn."
-        url="https://fotz.pl/blog/account-based-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/account-based-marketing-co-to"
         datePublished="2024-01-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Account-Based Marketing", url: "https://fotz.pl/blog/account-based-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Account-Based Marketing", url: "https://www.fotz-studio.pl/blog/account-based-marketing-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Account-Based Marketing", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Account-Based Marketing", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Account-Based Marketing (ABM) — co to jest i jak wdrożyć?
           </h1>

@@ -69,7 +69,7 @@ export default function BlogVoiceSearchCoTo() {
       <SEOHead
         title="Voice Search — co to jest i jak optymalizować SEO pod głos?"
         description="Voice search co to jest — wyjaśniamy czym jest wyszukiwanie głosowe, jak wpływa na SEO, jak optymalizować treść pod Siri i Google Assistant."
-        canonical="https://fotz.pl/blog/voice-search-seo"
+        canonical="https://www.fotz-studio.pl/blog/voice-search-seo"
 
         keywords="Voice Search co to jest, Voice Search definicja, czym jest Voice Search, Voice Search w marketingu, Voice Search przykłady, jak działa Voice Search, Voice Search strategia"
       />
@@ -78,7 +78,7 @@ export default function BlogVoiceSearchCoTo() {
         description="Czym jest voice search (wyszukiwanie głosowe), jak wpływa na SEO, taktyki optymalizacji i różnica między voice search a conversational AI."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/voice-search-seo"
+        url="https://www.fotz-studio.pl/blog/voice-search-seo"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -90,9 +90,9 @@ export default function BlogMarketResearchCoTo() {
   return (
     <>
       <SEOHead
-        title="Market Research — co to jest? Badanie rynku w biznesie | fotz.pl"
+        title="Market Research — co to jest? Badanie rynku w biznesie | FOTZ Studio"
         description="Czym jest market research, metody (jakościowe vs ilościowe), jak przeprowadzić, ile kosztuje, narzędzia i zastosowania w strategii marketingowej."
-        canonical="https://fotz.pl/blog/market-research-co-to"
+        canonical="https://www.fotz-studio.pl/blog/market-research-co-to"
 
         keywords="Market Research co to jest, Market Research definicja, czym jest Market Research, Market Research przykłady, jak działa Market Research, Market Research znaczenie, Market Research przewodnik"
       />
@@ -101,7 +101,7 @@ export default function BlogMarketResearchCoTo() {
         description="Czym jest market research, metody (jakościowe vs ilościowe), jak przeprowadzić, ile kosztuje, narzędzia i zastosowania w strategii marketingowej."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/market-research-co-to"
+        url="https://www.fotz-studio.pl/blog/market-research-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -67,7 +67,7 @@ export default function BlogJakSprzedawacNaAllegro() {
       <SEOHead
         title="Jak sprzedawać na Allegro — poradnik dla sprzedawców 2025"
         description="Jak sprzedawać na Allegro — krok po kroku od rejestracji konta, przez wystawianie ofert, po zwiększanie sprzedaży. Prowizje Allegro i Allegro Smart! wyjaśnione."
-        canonical="https://fotz.pl/blog/jak-sprzedawac-na-allegro"
+        canonical="https://www.fotz-studio.pl/blog/jak-sprzedawac-na-allegro"
 
         keywords="Jak sprzedawać na Allegro, Jak sprzedawać na Allegro co to jest, Jak sprzedawać na Allegro jak działa, Jak sprzedawać na Allegro definicja, Jak sprzedawać na Allegro przykłady, Jak sprzedawać na Allegro poradnik, Jak sprzedawać na Allegro przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogJakSprzedawacNaAllegro() {
         description="Jak założyć konto sprzedawcy na Allegro, wystawiać oferty, ile wynosi prowizja i jak zwiększyć sprzedaż przez Allegro Smart! i Allegro Ads."
         datePublished="2025-04-06"
         dateModified="2025-04-09"
-        url="https://fotz.pl/blog/jak-sprzedawac-na-allegro"
+        url="https://www.fotz-studio.pl/blog/jak-sprzedawac-na-allegro"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

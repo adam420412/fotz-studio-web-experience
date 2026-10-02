@@ -40,9 +40,9 @@ export default function AgencjaMarketingowaWroclaw() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "FOTZ - Agencja Marketingowa Wrocław",
-      "image": "https://fotz.pl/logo-fotz.jpg",
+      "image": "https://www.fotz-studio.pl/logo-fotz.jpg",
       "description": "Agencja marketingowa w Wrocławiu specjalizująca się w SEO, Google Ads, Social Media oraz tworzeniu stron internetowych.",
-      "url": "https://fotz.pl/agencja-marketingowa/wroclaw",
+      "url": "https://www.fotz-studio.pl/agencja-marketingowa/wroclaw",
       "telephone": "+48 790 814 814",
       "email": "kontakt@fotz.pl",
       "address": {
@@ -91,14 +91,14 @@ export default function AgencjaMarketingowaWroclaw() {
       <SEOHead
         title="Agencja Marketingowa Wrocław | Fotz Studio"
         description="Agencja marketingowa Wrocław ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Wrocławia i Dolnego Śląska. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/wroclaw"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/wroclaw"
         keywords="agencja marketingowa wrocław, marketing internetowy wrocław, agencja reklamowa wrocław, kampanie reklamowe wrocław, seo wrocław, google ads wrocław, agencja marketingowa dolny śląsk"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Wrocław", url: "https://fotz.pl/agencja-marketingowa/wroclaw" }
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Wrocław", url: "https://www.fotz-studio.pl/agencja-marketingowa/wroclaw" }
         ]}/>
 
       <FAQSchema items={faqData} />

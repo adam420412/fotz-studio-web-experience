@@ -44,21 +44,21 @@ export default function BlogSpeechAiCoTo() {
       <SEOHead
         title="Speech AI w TypeScript — Whisper, ElevenLabs, Deepgram i Web Speech API 2024?"
         description="6 narzędzi Speech AI (Whisper/whisper.cpp/ElevenLabs/OpenAI TTS/Deepgram/Web Speech API) — STT/TTS TypeScript, real-time streaming, voice chat pipeline i React hooks."
-        canonical="https://fotz.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024"
 
         keywords="Speech AI w TypeScript co to jest, Speech AI w TypeScript jak działa, Speech AI w TypeScript tutorial, Speech AI w TypeScript przykład, czym jest Speech AI w TypeScript, Speech AI w TypeScript dokumentacja, Speech AI w TypeScript przewodnik"
       />
       <ArticleSchema
         title="Speech AI w TypeScript — Whisper, ElevenLabs, Deepgram i Web Speech API 2024?"
         description="6 narzędzi Speech AI (Whisper/whisper.cpp/ElevenLabs/OpenAI TTS/Deepgram/Web Speech API) — STT/TTS TypeScript, real-time streaming, voice chat pipeline i React hooks."
-        url="https://fotz.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024"
         datePublished="2024-05-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Speech AI TypeScript", url: "https://fotz.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Speech AI TypeScript", url: "https://www.fotz-studio.pl/blog/speech-ai-whisper-elevenlabs-deepgram-text-to-speech-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

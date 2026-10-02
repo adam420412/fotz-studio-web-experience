@@ -56,26 +56,26 @@ export default function BlogSwitchingCostsCoTo() {
       <SEOHead
         title="Switching Costs — co to są koszty zmiany dostawcy? Moat biznesowy"
         description="Kompletny przewodnik po switching costs: 6 rodzajów kosztów, strategie budowania, vendor lock-in i przykłady (Salesforce, SAP, AWS)."
-        canonical="https://fotz.pl/blog/switching-costs-co-to"
+        canonical="https://www.fotz-studio.pl/blog/switching-costs-co-to"
 
         keywords="Switching Costs co to jest, Switching Costs definicja, czym jest Switching Costs, Switching Costs przykłady, jak działa Switching Costs, Switching Costs znaczenie, Switching Costs przewodnik"
       />
       <ArticleSchema
         title="Switching Costs — co to są koszty zmiany i jak budować moat?"
         description="Kompletny przewodnik po switching costs: 6 rodzajów kosztów, strategie budowania, vendor lock-in i przykłady (Salesforce, SAP, AWS)."
-        url="https://fotz.pl/blog/switching-costs-co-to"
+        url="https://www.fotz-studio.pl/blog/switching-costs-co-to"
         datePublished="2024-02-06"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Switching Costs", url: "https://fotz.pl/blog/switching-costs-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Switching Costs", url: "https://www.fotz-studio.pl/blog/switching-costs-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Switching Costs", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Switching Costs", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Switching Costs — co to są koszty zmiany i jak budować moat?
           </h1>

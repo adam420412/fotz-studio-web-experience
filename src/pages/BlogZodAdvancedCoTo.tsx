@@ -44,21 +44,21 @@ export default function BlogZodAdvancedCoTo() {
       <SEOHead
         title="Zod zaawansowany — discriminated unions, branded types, transforms i recursive schemas TypeScript 2024?"
         description="6 zaawansowanych wzorców Zod (discriminatedUnion/brand/transform/refine/lazy/pipe) — React Hook Form, tRPC, env validation, Prisma/Drizzle i schema composition."
-        canonical="https://fotz.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
 
         keywords="Zod zaawansowany co to jest, Zod zaawansowany definicja, czym jest Zod zaawansowany, Zod zaawansowany w marketingu, Zod zaawansowany przykłady, jak działa Zod zaawansowany, Zod zaawansowany strategia"
       />
       <ArticleSchema
         title="Zod zaawansowany — discriminated unions, branded types, transforms i recursive schemas TypeScript 2024?"
         description="6 zaawansowanych wzorców Zod (discriminatedUnion/brand/transform/refine/lazy/pipe) — React Hook Form, tRPC, env validation, Prisma/Drizzle i schema composition."
-        url="https://fotz.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Zod zaawansowany", url: "https://fotz.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Zod zaawansowany", url: "https://www.fotz-studio.pl/blog/zod-zaawansowany-discriminated-unions-branded-types-transforms-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-pink-950 text-white py-20 px-4">

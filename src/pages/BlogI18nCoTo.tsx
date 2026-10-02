@@ -44,21 +44,21 @@ export default function BlogI18nCoTo() {
       <SEOHead
         title="i18n internacjonalizacja — next-intl, react-i18next, Paraglide Next.js 2024?"
         description="Internationalization (i18n) w Next.js: next-intl, App Router locale routing, Intl API, hreflang SEO, pluralizacja ICU, CMS tłumaczeń Lokalise i Tolgee."
-        canonical="https://fotz.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
+        canonical="https://www.fotz-studio.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
 
         keywords="i18n internacjonalizacja co to jest, i18n internacjonalizacja jak działa, i18n internacjonalizacja tutorial, i18n internacjonalizacja przykład, czym jest i18n internacjonalizacja, i18n internacjonalizacja dokumentacja, i18n internacjonalizacja przewodnik"
       />
       <ArticleSchema
         title="i18n internacjonalizacja — next-intl, react-i18next, Paraglide Next.js 2024?"
         description="6 bibliotek i18n (next-intl/next-i18next/react-i18next/Paraglide/Tolgee/Intl) — locale routing, ICU pluralization, hreflang SEO, Intl.NumberFormat i TMS workflow."
-        url="https://fotz.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "i18n Internationalization", url: "https://fotz.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "i18n Internationalization", url: "https://www.fotz-studio.pl/blog/i18n-internationalization-next-intl-react-i18next-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">

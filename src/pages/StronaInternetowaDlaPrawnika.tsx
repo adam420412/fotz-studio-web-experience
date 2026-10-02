@@ -62,9 +62,9 @@ export default function StronaInternetowaDlaPrawnika() {
   return (
     <>
       <SEOHead
-        title="Strona internetowa dla prawnika — kancelaria, SEO, blog | fotz.pl"
+        title="Strona internetowa dla prawnika — kancelaria, SEO, blog | FOTZ Studio"
         description="Strona internetowa dla prawnika i kancelarii — SEO lokalne, blog prawniczy, formularz kontaktowy, prezentacja specjalizacji. Profesjonalne strony od 2000 zł, które budują autorytet i zdobywają klientów."
-        canonical="https://fotz.pl/uslugi/strona-internetowa-dla-prawnika"
+        canonical="https://www.fotz-studio.pl/uslugi/strona-internetowa-dla-prawnika"
         keywords="strona internetowa dla prawnika, strona www kancelarii, strona prawnika, strona kancelarii prawnej, landing page prawnika"
       />
       <ServiceSchema

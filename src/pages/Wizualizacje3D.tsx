@@ -408,7 +408,7 @@ const Wizualizacje3D = () => {
       <SEOHead
         title="Wizualizacje 3D Poznań | Fotz Studio"
         description="Wizualizacje 3D Poznań — profesjonalne renderingi architektoniczne, wizualizacje wnętrz i produktów. Animacje 3D, wirtualne spacery i prezentacje inwestycji w Fotz Studio."
-        canonical="https://fotz.pl/wizualizacje-3d"
+        canonical="https://www.fotz-studio.pl/wizualizacje-3d"
         keywords="wizualizacje 3D, wizualizacje architektoniczne, wizualizacje wnętrz, renderingi 3D, animacje 3D, Poznań"
       />
       
@@ -420,9 +420,9 @@ const Wizualizacje3D = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Wizualizacje 3D", url: "https://fotz.pl/wizualizacje-3d" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Wizualizacje 3D", url: "https://www.fotz-studio.pl/wizualizacje-3d" },
         ]}/>
       
       <FAQSchema items={faqItems} />

@@ -20,9 +20,9 @@ export default function PozycjonowanieLokalne() {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie lokalne | SEO dla firm lokalnych | fotz.pl"
+        title="Pozycjonowanie lokalne | SEO dla firm lokalnych | FOTZ Studio"
         description="Pozycjonowanie lokalne dla firm — dominuj w Google Maps i lokalnych wynikach. Więcej klientów z Twojej okolicy. Sprawdź ofertę!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie-lokalne"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie-lokalne"
         keywords="pozycjonowanie lokalne, seo lokalne, pozycjonowanie lokalne firmy, seo dla lokalnych firm, pozycjonowanie lokalne google maps, lokalne wyniki google, seo lokalne cennik, pozycjonowanie lokalne poradnik"
       />
       <ServiceSchema

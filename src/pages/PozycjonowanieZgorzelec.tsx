@@ -39,7 +39,7 @@ export default function PozycjonowanieZgorzelec() {
       <SEOHead
         title="Pozycjonowanie Zgorzelec | SEO dla firm | Fotz Studio"
         description="Profesjonalne pozycjonowanie stron w Zgorzelcu. Specjalizujemy się w SEO dla turystyki, handlu i usług lokalnych. Pakiety od 1500 zł. Rezultaty w 3-6 miesięcy."
-        canonical="https://fotz.pl/pozycjonowanie/zgorzelec"
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/zgorzelec"
         keywords="pozycjonowanie zgorzelec, agencja seo zgorzelec, seo zgorzelec, pozycjonowanie stron zgorzelec, seo dla firm zgorzelec, seo dolny śląsk, pozycjonowanie lokalne zgorzelec"
       />
       <BreadcrumbSchema items={breadcrumbs} />

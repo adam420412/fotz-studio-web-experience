@@ -88,9 +88,9 @@ export default function AgencjaMarketingowaOpole() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja Marketingowa Opole | fotz.pl – Marketing dla firm"
+          title="Agencja Marketingowa Opole | FOTZ Studio – Marketing dla firm"
           description="Agencja marketingowa w Opolu. Marketing internetowy dla firm z Opolszczyzny. SEO, Google Ads, social media. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/agencja-marketingowa-opole"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa-opole"
           keywords="agencja marketingowa Opole, marketing Opole, agencja SEO Opole, kampanie Google Ads Opole, social media Opole"
         />
 
@@ -101,8 +101,8 @@ export default function AgencjaMarketingowaOpole() {
           areaServed="Opole"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencja Marketingowa Opole", url: "https://fotz.pl/agencja-marketingowa-opole" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencja Marketingowa Opole", url: "https://www.fotz-studio.pl/agencja-marketingowa-opole" }
           ]}/>
         <FAQSchema items={faqItems} />
 

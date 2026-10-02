@@ -133,14 +133,14 @@ export default function AgencjaMarketingowaGdansk() {
       <SEOHead
         title="Agencja Marketingowa Gdańsk | FOTZ – Marketing Dla Firm w Gdańsku"
         description="Agencja marketingowa Gdańsk ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdańska i Trójmiasta. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/gdansk"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/gdansk"
         keywords="agencja marketingowa gdańsk, marketing internetowy gdańsk, agencja reklamowa gdańsk, kampanie reklamowe gdańsk, seo gdańsk, google ads gdańsk, agencja marketingowa trójmiasto"
       />
 
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Agencje marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-        { name: "Gdańsk", url: "https://fotz.pl/agencja-marketingowa/gdansk" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Agencje marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+        { name: "Gdańsk", url: "https://www.fotz-studio.pl/agencja-marketingowa/gdansk" }
       ]}/>
 
       <ServiceSchema

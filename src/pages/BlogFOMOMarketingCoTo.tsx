@@ -93,21 +93,21 @@ export default function BlogFOMOMarketingCoTo() {
       <SEOHead
         title="FOMO Marketing — co to jest i jak działa? | Fotz Studio"
         description="FOMO marketing — definicja, 6 technik (countdown, scarcity, social proof live), psychologia niedoboru i jak stosować FOMO etycznie. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/fomo-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/fomo-marketing-co-to"
 
         keywords="FOMO Marketing co to jest, FOMO Marketing definicja, czym jest FOMO Marketing, FOMO Marketing w marketingu, FOMO Marketing przykłady, jak działa FOMO Marketing, FOMO Marketing strategia"
       />
       <ArticleSchema
         title="FOMO Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po FOMO marketingu: techniki, psychologia niedoboru i pilności, jak stosować etycznie."
-        url="https://fotz.pl/blog/fomo-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/fomo-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "FOMO Marketing", url: "https://fotz.pl/blog/fomo-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "FOMO Marketing", url: "https://www.fotz-studio.pl/blog/fomo-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -115,7 +115,7 @@ export default function BlogFOMOMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "FOMO Marketing", url: "https://fotz.pl" },
+              { name: "FOMO Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             FOMO Marketing — co to jest i jak działa?

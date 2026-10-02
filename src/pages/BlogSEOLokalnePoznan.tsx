@@ -36,21 +36,21 @@ const BlogSEOLokalnePoznan = () => {
         title="SEO Lokalne Poznań — Jak Wygrać Local Pack Google w Poznaniu?"
         description="SEO lokalne Poznań — jak wygrać Local Pack Google, optymalizować Google Moja Firma i pozycjonować stronę na frazy lokalne. Kompletny poradnik lokalnego SEO dla firm z Poznania."
         ogType="article"
-        canonical="https://fotz.pl/seo/lokalne-poznan"
+        canonical="https://www.fotz-studio.pl/seo/lokalne-poznan"
         keywords="SEO lokalne Poznań, pozycjonowanie lokalne, Google Moja Firma, Google Maps, NAP, lokalne wyszukiwanie, SEO dla firm lokalnych"
       />
       <ArticleSchema
         title="SEO lokalne dla firm w Poznaniu - kompletny poradnik 2025"
         description="Jak wypozycjonować firmę lokalnie w Poznaniu? Kompletny poradnik SEO lokalnego."
-        url="https://fotz.pl/seo/lokalne-poznan"
+        url="https://www.fotz-studio.pl/seo/lokalne-poznan"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SEO lokalne Poznań", url: "https://fotz.pl/seo/lokalne-poznan" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SEO lokalne Poznań", url: "https://www.fotz-studio.pl/seo/lokalne-poznan" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

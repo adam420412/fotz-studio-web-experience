@@ -12,10 +12,10 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 export default function TworzenieStronKatowice() {
   const breadcrumbs = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Usługi", url: "https://fotz.pl/uslugi" },
-    { name: "Tworzenie stron internetowych", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych" },
-    { name: "Katowice", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych/katowice" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+    { name: "Tworzenie stron internetowych", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych" },
+    { name: "Katowice", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/katowice" }
   ];
 
   const stats = [
@@ -135,7 +135,7 @@ export default function TworzenieStronKatowice() {
       <SEOHead
         title="Tworzenie stron internetowych Katowice | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Katowice i Śląsk — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/katowice"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/katowice"
         keywords="tworzenie stron internetowych katowice, strony internetowe katowice, tworzenie stron www katowice, projektowanie stron internetowych katowice, strony www katowice, strony internetowe śląsk, tworzenie stron katowice, strona internetowa katowice, projektowanie stron katowice, sklep internetowy katowice"
       />
       <ServiceSchema name="Tworzenie stron internetowych Katowice" description="Profesjonalne tworzenie stron internetowych dla firm z Katowic, Śląska i metropolii GZM." areaServed={["PL"]} />

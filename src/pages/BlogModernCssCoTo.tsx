@@ -44,21 +44,21 @@ export default function BlogModernCssCoTo() {
       <SEOHead
         title="Modern CSS — Container Queries, :has(), @layer, View Transitions i Scroll Animations 2024?"
         description="6 funkcji nowoczesnego CSS (Container Queries/:has()/@layer/CSS Nesting/View Transitions/Scroll-driven Animations) — component queries, parent selectors, cascade layers i animacje bez JavaScript."
-        canonical="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
+        canonical="https://www.fotz-studio.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
 
         keywords="Modern CSS co to jest, Modern CSS definicja, czym jest Modern CSS, Modern CSS przykłady, jak działa Modern CSS, Modern CSS znaczenie, Modern CSS przewodnik"
       />
       <ArticleSchema
         title="Modern CSS — Container Queries, :has(), @layer, View Transitions i Scroll Animations 2024?"
         description="6 funkcji nowoczesnego CSS (Container Queries/:has()/@layer/CSS Nesting/View Transitions/Scroll-driven Animations) — component queries, parent selectors, cascade layers i animacje bez JavaScript."
-        url="https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
+        url="https://www.fotz-studio.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Modern CSS 2024", url: "https://fotz.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Modern CSS 2024", url: "https://www.fotz-studio.pl/blog/modern-css-container-queries-has-view-transitions-scroll-driven-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-sky-950 text-white py-20 px-4">

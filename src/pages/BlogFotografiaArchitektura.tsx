@@ -88,7 +88,7 @@ export default function BlogFotografiaArchitektura() {
         title="Fotografia architektury i wnętrz - jak wykonać ją dobrze?"
         description="Kompletny poradnik fotografii architektonicznej i wnętrz: typy sesji, ceny, sprzęt, techniki i to, kiedy wynająć profesjonalistę. Dowiedz się, jak dobre zdjęcia wpływają na sprzedaż nieruchomości i wizerunek architekta."
         ogType="article"
-        canonical="https://fotz.pl/blog/fotografia-architektury-wnetrz"
+        canonical="https://www.fotz-studio.pl/blog/fotografia-architektury-wnetrz"
         keywords="fotografia architektury, fotografia wnętrz, fotografia nieruchomości, wirtualny spacer 360, fotografia hotelowa, cena sesji architektonicznej"
         schemaJson={[
           {
@@ -105,7 +105,7 @@ export default function BlogFotografiaArchitektura() {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2026-04-12",
@@ -115,8 +115,8 @@ export default function BlogFotografiaArchitektura() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Fotografia architektury i wnętrz" }
             ]
           },

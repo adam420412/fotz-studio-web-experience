@@ -98,7 +98,7 @@ const PozycjonowanieLublin = () => {
       <SEOHead
         title="Pozycjonowanie Lublin — Agencja SEO Lubelskie | Fotz Studio"
         description="Pozycjonowanie stron Lublin i Lubelskie. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/lublin"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin"
         keywords="pozycjonowanie lublin, agencja seo lublin, seo lublin, pozycjonowanie stron lublin, seo dla firm lublin, seo lubelskie, pozycjonowanie lokalne lublin"
       />
       <ServiceSchema
@@ -108,10 +108,10 @@ const PozycjonowanieLublin = () => {
         areaServed="Lublin, Lubelskie"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Lublin", url: "https://fotz.pl/uslugi/pozycjonowanie/lublin" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Lublin", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/lublin" },
         ]}/>
       <FAQSchema items={faqItems} />
 

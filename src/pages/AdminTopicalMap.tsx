@@ -217,7 +217,7 @@ export default function AdminTopicalMap() {
       <SEOHead
         title="Topical Map — Admin"
         description="Panel generowania artykułów z briefów topical map."
-        canonical="https://fotz.pl/admin/topical-map"
+        canonical="https://www.fotz-studio.pl/admin/topical-map"
         noIndex
       />
 

@@ -67,21 +67,21 @@ export default function BlogKafkaCoTo() {
       <SEOHead
         title="Apache Kafka — co to jest i jak działa? Kompletny przewodnik"
         description="Apache Kafka — definicja, architektura (Topic, Partition, Broker, Consumer Group), przypadki użycia i porównanie z RabbitMQ. Kompletny przewodnik po Kafka."
-        canonical="https://fotz.pl/blog/kafka-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/kafka-co-to-jest"
 
         keywords="Apache Kafka co to jest, Apache Kafka definicja, czym jest Apache Kafka, Apache Kafka przykłady, jak działa Apache Kafka, Apache Kafka znaczenie, Apache Kafka przewodnik"
       />
       <ArticleSchema
         title="Apache Kafka — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po Apache Kafka: architektura, kluczowe pojęcia, zastosowania i porównanie z alternatywami."
-        url="https://fotz.pl/blog/kafka-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/kafka-co-to-jest"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Apache Kafka", url: "https://fotz.pl/blog/kafka-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Apache Kafka", url: "https://www.fotz-studio.pl/blog/kafka-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -89,7 +89,7 @@ export default function BlogKafkaCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Apache Kafka", url: "https://fotz.pl" },
+              { name: "Apache Kafka", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Apache Kafka — co to jest i jak działa?

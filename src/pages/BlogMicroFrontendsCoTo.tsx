@@ -52,21 +52,21 @@ export default function BlogMicroFrontendsCoTo() {
       <SEOHead
         title="Micro Frontends — co to jest i jak wdrożyć Module Federation?"
         description="Micro Frontends: definicja, 5 technik (Module Federation, Single-SPA, Web Components), shared state, design system, performance i wyzwania SEO."
-        canonical="https://fotz.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation"
+        canonical="https://www.fotz-studio.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation"
 
         keywords="Micro Frontends co to jest, Micro Frontends definicja, czym jest Micro Frontends, Micro Frontends przykłady, jak działa Micro Frontends, Micro Frontends znaczenie, Micro Frontends przewodnik"
       />
       <ArticleSchema
         title="Micro Frontends — co to jest i jak wdrożyć Module Federation?"
         description="Micro Frontends: 5 technik implementacji, Module Federation w praktyce, shared state/design system, performance i 6 wspólnych wyzwań."
-        url="https://fotz.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation"
+        url="https://www.fotz-studio.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation"
         datePublished="2024-04-06"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Micro Frontends", url: "https://fotz.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Micro Frontends", url: "https://www.fotz-studio.pl/blog/micro-frontends-co-to-jest-jak-wdrozyz-module-federation" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-slate-900 text-white py-20 px-4">

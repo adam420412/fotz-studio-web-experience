@@ -123,7 +123,7 @@ export default function DlaKogoInstytucje() {
       <SEOHead
         title="Marketing dla Instytucji i Wydarzeń — Promocja Eventów i Kultury"
         description="Marketing dla instytucji kultury, organizacji i wydarzeń — promocja eventów, reklama imprez, social media i produkcja wideo. Fotz Studio wspiera organizatorów w budowaniu zasięgów i sprzedaży biletów."
-        canonical="https://fotz.pl/dla-kogo/instytucje"
+        canonical="https://www.fotz-studio.pl/dla-kogo/instytucje"
         keywords="marketing dla instytucji, strona internetowa instytucji, digital marketing organizacje, marketing nonprofit"
       />
       
@@ -133,9 +133,9 @@ export default function DlaKogoInstytucje() {
         description="Kompleksowe usługi marketingowe dla instytucji kultury i organizatorów wydarzeń - promocja eventów, dokumentacja, social media."
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Instytucje i eventy", url: "https://fotz.pl/dla-kogo/instytucje" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Instytucje i eventy", url: "https://www.fotz-studio.pl/dla-kogo/instytucje" },
         ]}/>
       <FAQSchema items={faqItems} />
 

@@ -204,7 +204,7 @@ const KampanieReklamowePoznan = () => {
       <SEOHead
         title="Kampanie Reklamowe Poznań — Google Ads i Meta Ads dla Firm"
         description="Kampanie reklamowe Poznań — Google Ads, Facebook Ads, Instagram Ads dla firm z Poznania. Prowadzenie i optymalizacja kampanii PPC. Fotz Studio."
-        canonical="https://fotz.pl/kampanie-reklamowe-poznan"
+        canonical="https://www.fotz-studio.pl/kampanie-reklamowe-poznan"
         keywords="kampanie reklamowe poznań, reklamy internetowe poznań, agencja reklamowa poznań, google ads poznań, facebook ads poznań, marketing poznań"
       />
       <ServiceSchema 
@@ -220,10 +220,10 @@ const KampanieReklamowePoznan = () => {
         priceRange="$$"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Kampanie Reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "Kampanie Reklamowe Poznań", url: "https://fotz.pl/kampanie-reklamowe-poznan" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Kampanie Reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
+          { name: "Kampanie Reklamowe Poznań", url: "https://www.fotz-studio.pl/kampanie-reklamowe-poznan" },
         ]}/>
       <FAQSchema 
         items={faqItems.map(item => ({ question: item.question, answer: item.answer }))}

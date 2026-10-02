@@ -44,21 +44,21 @@ export default function BlogCoreWebVitalsCoTo() {
       <SEOHead
         title="Core Web Vitals — LCP, INP, CLS, optymalizacja wydajności web 2024?"
         description="Core Web Vitals: LCP, INP (następca FID), CLS — jak optymalizować, narzędzia pomiaru, Lighthouse CI, performance budgeting i wpływ na SEO Google."
-        canonical="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
+        canonical="https://www.fotz-studio.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
 
         keywords="Core Web Vitals co to jest, Core Web Vitals definicja, czym jest Core Web Vitals, Core Web Vitals przykłady, jak działa Core Web Vitals, Core Web Vitals znaczenie, Core Web Vitals przewodnik"
       />
       <ArticleSchema
         title="Core Web Vitals — LCP, INP, CLS, optymalizacja wydajności web 2024?"
         description="6 metryk wydajności (LCP/INP/CLS/FCP/TTFB/TBT) — optymalizacja obrazów, Long Tasks, layout shift, Lighthouse CI, monitoring RUM i wpływ na SEO."
-        url="https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
+        url="https://www.fotz-studio.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Core Web Vitals", url: "https://fotz.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Core Web Vitals", url: "https://www.fotz-studio.pl/blog/core-web-vitals-lcp-inp-cls-optymalizacja-wydajnosci-web-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-green-950 text-white py-20 px-4">

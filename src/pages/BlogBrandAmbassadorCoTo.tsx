@@ -105,21 +105,21 @@ export default function BlogBrandAmbassadorCoTo() {
       <SEOHead
         title="Brand Ambassador — co to jest i jak budować program ambasadorski?"
         description="Kompletny przewodnik po brand ambassador: 5 typów ambasadorów, 6-etapowy program, koszty i jak wybrać właściwą osobę."
-        canonical="https://fotz.pl/blog/brand-ambassador-co-to"
+        canonical="https://www.fotz-studio.pl/blog/brand-ambassador-co-to"
 
         keywords="Brand Ambassador co to jest, Brand Ambassador definicja, czym jest Brand Ambassador, Brand Ambassador w marketingu, Brand Ambassador przykłady, jak działa Brand Ambassador, Brand Ambassador strategia"
       />
       <ArticleSchema
         title="Brand Ambassador — co to jest i jak budować program ambasadorski?"
         description="Kompletny przewodnik po brand ambassador: 5 typów ambasadorów, 6-etapowy program, koszty i jak wybrać właściwą osobę."
-        url="https://fotz.pl/blog/brand-ambassador-co-to"
+        url="https://www.fotz-studio.pl/blog/brand-ambassador-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Brand Ambassador", url: "https://fotz.pl/blog/brand-ambassador-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Brand Ambassador", url: "https://www.fotz-studio.pl/blog/brand-ambassador-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -127,7 +127,7 @@ export default function BlogBrandAmbassadorCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Ambassador", url: "https://fotz.pl" },
+              { name: "Brand Ambassador", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Ambassador — co to jest i jak budować program ambasadorski?

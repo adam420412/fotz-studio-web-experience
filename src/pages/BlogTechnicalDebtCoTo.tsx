@@ -53,21 +53,21 @@ export default function BlogTechnicalDebtCoTo() {
       <SEOHead
         title="Dług techniczny — co to jest, jak mierzyć, zarządzać i redukować?"
         description="Dług techniczny: rodzaje, pomiar (SonarQube, Codescene), strategie redukcji (Strangler Fig, Boy Scout Rule), jak rozmawiać z biznesem i zapobiegać."
-        canonical="https://fotz.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac"
+        canonical="https://www.fotz-studio.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac"
 
         keywords="Dług techniczny co to jest, Dług techniczny definicja, czym jest Dług techniczny, Dług techniczny przykłady, jak działa Dług techniczny, Dług techniczny znaczenie, Dług techniczny przewodnik"
       />
       <ArticleSchema
         title="Dług techniczny — co to jest, jak mierzyć, zarządzać i redukować?"
         description="Technical Debt: 6 rodzajów, 6 strategii redukcji, pomiar SonarQube/Codescene, komunikacja z biznesem (ROI), procesy zapobiegania i kultury jakości."
-        url="https://fotz.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac"
+        url="https://www.fotz-studio.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac"
         datePublished="2024-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Dług techniczny", url: "https://fotz.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Dług techniczny", url: "https://www.fotz-studio.pl/blog/dlug-techniczny-co-to-jest-jak-mierzyc-zarzadzac-redukowac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-stone-900 to-slate-900 text-white py-20 px-4">

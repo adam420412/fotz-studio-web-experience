@@ -57,26 +57,26 @@ export default function BlogTechDebtCoTo() {
       <SEOHead
         title="Dług techniczny (tech debt) — co to jest? Jak zarządzać i spłacać"
         description="Kompletny przewodnik po długu technicznym: quadrant Fowlera, 6 typów tech debt, jak mierzyć i 5 strategii zarządzania (Boy Scout Rule, 20%, hardening sprint)."
-        canonical="https://fotz.pl/blog/dług-techniczny-co-to"
+        canonical="https://www.fotz-studio.pl/blog/dług-techniczny-co-to"
 
         keywords="Dług techniczny (tech debt) co to jest, Dług techniczny (tech debt) definicja, czym jest Dług techniczny (tech debt), Dług techniczny (tech debt) przykłady, jak działa Dług techniczny (tech debt), Dług techniczny (tech debt) znaczenie, Dług techniczny (tech debt) przewodnik"
       />
       <ArticleSchema
         title="Dług techniczny (tech debt) — co to jest i jak zarządzać?"
         description="Kompletny przewodnik po długu technicznym: quadrant Fowlera, 6 typów tech debt, jak mierzyć i 5 strategii zarządzania (Boy Scout Rule, 20%, hardening sprint)."
-        url="https://fotz.pl/blog/dług-techniczny-co-to"
+        url="https://www.fotz-studio.pl/blog/dług-techniczny-co-to"
         datePublished="2024-01-25"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Dług Techniczny", url: "https://fotz.pl/blog/dług-techniczny-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Dług Techniczny", url: "https://www.fotz-studio.pl/blog/dług-techniczny-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Dług Techniczny", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Dług Techniczny", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Dług Techniczny (Tech Debt) — co to jest i jak zarządzać?
           </h1>

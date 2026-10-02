@@ -88,12 +88,12 @@ const StronyInternetoweWalbrzych = () => {
       <SEOHead
         title="Strony Internetowe Walbrzych | Fotz Studio"
         description="Strony internetowe Walbrzych — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wałbrzycha. Fotz Studio."
-        canonical="https://fotz.pl/strony-internetowe/walbrzych"
+        canonical="https://www.fotz-studio.pl/strony-internetowe/walbrzych"
         keywords="strony internetowe wałbrzych, tworzenie stron internetowych wałbrzych, strony www wałbrzych, projektowanie stron wałbrzych"
       />
 
       <ServiceSchema name="Strony Internetowe Walbrzych" description="Profesjonalne tworzenie stron internetowych dla firm z Wałbrzycha." provider="FOTZ Studio" areaServed="Walbrzych" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Wałbrzych", url: "https://fotz.pl/strony-internetowe/walbrzych" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Wałbrzych", url: "https://www.fotz-studio.pl/strony-internetowe/walbrzych" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

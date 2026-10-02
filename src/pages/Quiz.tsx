@@ -216,7 +216,7 @@ const Quiz = () => {
       <SEOHead
         title="Quiz Marketingowy — Sprawdź Stan Marketingu Swojej Firmy"
         description="Quiz marketingowy Fotz Studio — sprawdź stan marketingu swojej firmy online. Analiza SEO, social media i reklam w 5 minut. Bezpłatne narzędzie diagnostyczne."
-        canonical="https://fotz.pl/quiz"
+        canonical="https://www.fotz-studio.pl/quiz"
         keywords="quiz marketingowy, usługi marketingowe, test marketingowy"
       />
       <Layout>

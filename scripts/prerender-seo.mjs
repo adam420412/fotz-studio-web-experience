@@ -19,10 +19,11 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { extractMetadata, escapeHtml, readSource, literal } from './lib/seo-metadata.mjs';
+import { getBlogMetadata } from '../src/lib/blog-seo.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const DIST = path.join(ROOT, 'dist');
+const DIST = path.resolve(process.env.FOTZ_BUILD_DIR || path.join(ROOT, 'dist'));
 const SRC = path.join(ROOT, 'src');
 
 // Read the built index.html as template
@@ -167,9 +168,16 @@ for (const cluster of clusters) {
   if (!routes.some(route => route.path === cluster.path)) {
     routes.push({ path: cluster.path, component: 'SocialMediaClusterHub', meta: {
       title: cluster.metaTitle, description: cluster.metaDescription,
-      canonical: `https://fotz.pl${cluster.path}`, ogImage: 'https://fotz.pl/og-image.jpg', noIndex: false,
+      canonical: `https://www.fotz-studio.pl${cluster.path}`, ogImage: 'https://www.fotz-studio.pl/og-image.jpg', noIndex: false,
     }});
   }
+}
+// A reviewed public metadata snapshot keeps builds reproducible and offline.
+// Refresh with scripts/sync-blog-seo.mjs after CMS publication, then rebuild maps.
+const blogSnapshot = JSON.parse(fs.readFileSync(path.join(SRC, 'data/blog-seo.json'), 'utf8'));
+for (const article of blogSnapshot.articles) {
+  const routePath = `/blog/${article.slug}`;
+  if (!routes.some(route => route.path === routePath)) routes.push({ path: routePath, component: 'BlogArticleDynamic', meta: getBlogMetadata(article) });
 }
 console.log(`   Found ${routes.length} routes`);
 
@@ -237,8 +245,8 @@ console.log(`\n📁 Output: ${DIST}`);
 const notFoundMeta = {
   title: '404 — Strona nie istnieje | Fotz Studio',
   description: 'Przepraszamy, strona której szukasz nie została znaleziona. Wróć na stronę główną Fotz Studio lub skorzystaj z menu.',
-  canonical: 'https://fotz.pl/',
-  ogImage: 'https://fotz.pl/og-image.jpg',
+  canonical: 'https://www.fotz-studio.pl/',
+  ogImage: 'https://www.fotz-studio.pl/og-image.jpg',
   noIndex: true,
 };
 const notFoundHtml = injectMeta(template, notFoundMeta);
@@ -265,7 +273,15 @@ const dynamicPatterns = uniqueRoutes
   .filter((p) => (p.includes(':') || p.includes('*')) && p !== '*')
   .map((p) => p.replace(/:([a-zA-Z_]+)/g, '[^/]+').replace(/\*/g, '.*'));
 
+function publicFiles(dir, prefix = '') {
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => {
+    const relative = `${prefix}/${entry.name}`;
+    return entry.isDirectory() ? publicFiles(path.join(dir, entry.name), relative) : [relative.split('/').map(encodeURIComponent).join('/')];
+  });
+}
+
 const manifest = {
+  staticFiles: publicFiles(path.join(ROOT, 'public')),
   generatedAt: new Date().toISOString(),
   staticRoutes: knownStaticRoutes,
   dynamicPatterns,

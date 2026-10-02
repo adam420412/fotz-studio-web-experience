@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 interface SEOHeadProps {
   title: string;
   description: string;
-  canonical: string; // Required - must be full URL like https://fotz.pl/path
+  canonical: string; // Required - must be full URL like https://www.fotz-studio.pl/path
   ogImage?: string;
   ogType?: "website" | "article";
   og?: {
@@ -30,7 +30,7 @@ interface SEOHeadProps {
  * - Twitter Card tags
  * - Optional JSON-LD structured data
  * 
- * URL Policy: https://fotz.pl/path (NO trailing slash)
+ * URL Policy: https://www.fotz-studio.pl/path (NO trailing slash)
  * - Matches sitemap.xml format
  * - Matches vercel.json trailingSlash: false
  * - Matches _redirects normalization
@@ -39,7 +39,7 @@ export function SEOHead({
   title,
   description,
   canonical,
-  ogImage = "https://fotz.pl/og-image.jpg",
+  ogImage = "https://www.fotz-studio.pl/og-image.jpg",
   ogType = "website",
   og,
   noIndex = false,
@@ -49,7 +49,7 @@ export function SEOHead({
   keywords,
   children,
 }: SEOHeadProps) {
-  const canonicalUrl = new URL(canonical, "https://fotz.pl").href.replace(/\/+$/, "");
+  const canonicalUrl = new URL(canonical, "https://www.fotz-studio.pl").href.replace(/\/+$/, "");
   
   // Preserve complete, authored metadata. Search engines decide how much
   // to display; cutting strings here can remove the city or service name.

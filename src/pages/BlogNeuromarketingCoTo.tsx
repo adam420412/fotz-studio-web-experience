@@ -87,21 +87,21 @@ export default function BlogNeuromarketingCoTo() {
       <SEOHead
         title="Neuromarketing — co to jest i jak stosować w praktyce?"
         description="Neuromarketing — definicja, kluczowe odkrycia (anchoring, paradoks wyboru, loss aversion), psychologia kolorów i praktyczne zastosowania. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/neuromarketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/neuromarketing-co-to"
 
         keywords="Neuromarketing co to jest, Neuromarketing definicja, czym jest Neuromarketing, Neuromarketing w marketingu, Neuromarketing przykłady, jak działa Neuromarketing, Neuromarketing strategia"
       />
       <ArticleSchema
         title="Neuromarketing — co to jest i jak stosować?"
         description="Kompletny przewodnik po neuromarketingu: odkrycia naukowe, techniki i praktyczne zastosowania."
-        url="https://fotz.pl/blog/neuromarketing-co-to"
+        url="https://www.fotz-studio.pl/blog/neuromarketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Neuromarketing", url: "https://fotz.pl/blog/neuromarketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Neuromarketing", url: "https://www.fotz-studio.pl/blog/neuromarketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -109,7 +109,7 @@ export default function BlogNeuromarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Neuromarketing", url: "https://fotz.pl" },
+              { name: "Neuromarketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Neuromarketing — co to jest i jak stosować?

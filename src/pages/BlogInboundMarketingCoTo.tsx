@@ -78,21 +78,21 @@ export default function BlogInboundMarketingCoTo() {
       <SEOHead
         title="Inbound Marketing — co to jest i jak działa? Kompletny przewodnik"
         description="Inbound marketing — definicja, 4 etapy (Attract, Convert, Close, Delight), narzędzia i typy contentu. Kompletny przewodnik po marketingu przychodzącym."
-        canonical="https://fotz.pl/blog/inbound-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/inbound-marketing-co-to"
 
         keywords="Inbound Marketing co to jest, Inbound Marketing definicja, czym jest Inbound Marketing, Inbound Marketing w marketingu, Inbound Marketing przykłady, jak działa Inbound Marketing, Inbound Marketing strategia"
       />
       <ArticleSchema
         title="Inbound Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po inbound marketingu: 4 etapy metodologii, typy contentu i narzędzia."
-        url="https://fotz.pl/blog/inbound-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/inbound-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Inbound Marketing", url: "https://fotz.pl/blog/inbound-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Inbound Marketing", url: "https://www.fotz-studio.pl/blog/inbound-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -100,7 +100,7 @@ export default function BlogInboundMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Inbound Marketing", url: "https://fotz.pl" },
+              { name: "Inbound Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Inbound Marketing — co to jest i jak działa?

@@ -44,21 +44,21 @@ export default function BlogLlmToolCallingCoTo() {
       <SEOHead
         title="LLM Tool Calling, AI Agenci i RAG | Fotz Studio"
         description="6 narzędzi AI (Vercel AI SDK/OpenAI/Anthropic/LangChain.js/LlamaIndex/Mastra) — tool calling, agentic loops, structured output (Zod), RAG z pgvector i generative UI."
-        canonical="https://fotz.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024"
 
         keywords="LLM Tool Calling, AI Agenci i RAG co to jest, LLM Tool Calling, AI Agenci i RAG jak działa, LLM Tool Calling, AI Agenci i RAG tutorial, LLM Tool Calling, AI Agenci i RAG przykład, czym jest LLM Tool Calling, AI Agenci i RAG, LLM Tool Calling, AI Agenci i RAG dokumentacja, LLM Tool Calling, AI Agenci i RAG przewodnik"
       />
       <ArticleSchema
         title="LLM Tool Calling, AI Agenci i RAG — Vercel AI SDK, OpenAI Functions TypeScript 2024?"
         description="6 narzędzi AI (Vercel AI SDK/OpenAI/Anthropic/LangChain.js/LlamaIndex/Mastra) — tool calling, agentic loops, structured output (Zod), RAG z pgvector i generative UI."
-        url="https://fotz.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "LLM Tool Calling i AI Agenci", url: "https://fotz.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "LLM Tool Calling i AI Agenci", url: "https://www.fotz-studio.pl/blog/llm-tool-calling-ai-agenci-rag-vercel-ai-sdk-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-indigo-950 text-white py-20 px-4">

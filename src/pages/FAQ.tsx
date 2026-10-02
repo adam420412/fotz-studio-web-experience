@@ -185,7 +185,7 @@ export default function FAQ() {
       <SEOHead
         title="FAQ — Najczęściej Zadawane Pytania o Marketing, SEO i Strony WWW"
         description="FAQ Fotz Studio — odpowiedzi na najczęstsze pytania o SEO, marketing internetowy, tworzenie stron www, Google Ads i social media. Wszystko, co chcesz wiedzieć o naszych usługach, cenach i procesie współpracy."
-        canonical="https://fotz.pl/faq"
+        canonical="https://www.fotz-studio.pl/faq"
         keywords="faq fotz studio, pytania i odpowiedzi, pomoc, kontakt"
       />
 

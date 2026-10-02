@@ -93,7 +93,7 @@ const PozycjonowanieWalbrzych = () => {
       <SEOHead
         title="Pozycjonowanie Wałbrzych - SEO lokalne dla firm | fotz studio"
         description="Pozycjonowanie stron Wałbrzych. Agencja SEO Fotz Studio — audyt SEO, optymalizacja dla turystyki, usług lokalnych i handlu. Pomagamy firmom z Wałbrzycha zdobyć pierwszą stronę Google."
-        canonical="https://fotz.pl/pozycjonowanie/walbrzych"
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/walbrzych"
         keywords="pozycjonowanie wałbrzych, agencja seo wałbrzych, seo wałbrzych, pozycjonowanie stron wałbrzych, seo dla firm wałbrzych, seo dolny śląsk, pozycjonowanie lokalne wałbrzych"
       />
       <ServiceSchema
@@ -103,10 +103,10 @@ const PozycjonowanieWalbrzych = () => {
         areaServed="Wałbrzych"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Wałbrzych", url: "https://fotz.pl/pozycjonowanie/walbrzych" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Wałbrzych", url: "https://www.fotz-studio.pl/pozycjonowanie/walbrzych" },
         ]}/>
       <FAQSchema items={faqItems} />
 

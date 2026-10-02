@@ -64,7 +64,7 @@ export default function TikTokAdsWarszawa() {
       <SEOHead
         title="TikTok Ads Warszawa | Fotz Studio"
         description="Reklamy TikTok Ads Warszawa — agencja Fotz.pl. Kampanie TikTok dla firm: In-Feed Ads, Spark Ads, TopView, Hashtag Challenge. Targetowanie Gen Z i Millenialsów oraz kreacje wideo, które angażują."
-        canonical="https://fotz.pl/performance-marketing/tiktok-ads/warszawa"
+        canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads/warszawa"
         keywords="tiktok ads warszawa, reklamy tiktok warszawa, agencja tiktok ads warszawa, kampanie tiktok warszawa, tiktok for business warszawa, in-feed ads warszawa, reklama na tiktoku warszawa"
       />
 
@@ -76,10 +76,10 @@ export default function TikTokAdsWarszawa() {
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-          { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
-          { name: "TikTok Ads Warszawa", url: "https://fotz.pl/performance-marketing/tiktok-ads/warszawa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "TikTok Ads", url: "https://www.fotz-studio.pl/performance-marketing/tiktok-ads" },
+          { name: "TikTok Ads Warszawa", url: "https://www.fotz-studio.pl/performance-marketing/tiktok-ads/warszawa" },
         ]}/>
 
       <FAQSchema items={faqItems} />

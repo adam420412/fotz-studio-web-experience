@@ -83,21 +83,21 @@ export default function BlogTermSheetCoTo() {
       <SEOHead
         title="Term sheet — co to jest i jak negocjować? | Fotz.pl"
         description="Term sheet w VC i M&A — kluczowe elementy, liquidation preference, anti-dilution, board composition i red flags. Kompletny przewodnik dla founderów."
-        canonical="https://fotz.pl/blog/term-sheet-co-to-jest-vc-inwestycje"
+        canonical="https://www.fotz-studio.pl/blog/term-sheet-co-to-jest-vc-inwestycje"
 
         keywords="Term sheet co to jest, Term sheet definicja, czym jest Term sheet, Term sheet przykłady, jak działa Term sheet, Term sheet znaczenie, Term sheet przewodnik"
       />
       <ArticleSchema
         title="Term sheet — co to jest i jak negocjować?"
         description="Kompletny przewodnik po term sheet: kluczowe elementy, liquidation preference, anti-dilution i red flags."
-        url="https://fotz.pl/blog/term-sheet-co-to-jest-vc-inwestycje"
+        url="https://www.fotz-studio.pl/blog/term-sheet-co-to-jest-vc-inwestycje"
         datePublished="2024-02-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Term Sheet", url: "https://fotz.pl/blog/term-sheet-co-to-jest-vc-inwestycje" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Term Sheet", url: "https://www.fotz-studio.pl/blog/term-sheet-co-to-jest-vc-inwestycje" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

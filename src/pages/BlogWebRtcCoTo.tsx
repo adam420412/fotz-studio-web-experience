@@ -50,21 +50,21 @@ export default function BlogWebRtcCoTo() {
       <SEOHead
         title="WebRTC — co to jest i jak budować real-time komunikację?"
         description="WebRTC: definicja, ICE/STUN/TURN, SDP, topologie (Mesh/SFU/MCU), jak budować aplikację, LiveKit, mediasoup i WebRTC vs. WebSockets."
-        canonical="https://fotz.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje"
+        canonical="https://www.fotz-studio.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje"
 
         keywords="WebRTC co to jest, WebRTC definicja, czym jest WebRTC, WebRTC przykłady, jak działa WebRTC, WebRTC znaczenie, WebRTC przewodnik"
       />
       <ArticleSchema
         title="WebRTC — co to jest i jak budować real-time komunikację?"
         description="WebRTC: ICE/STUN/TURN, SDP, topologie Mesh/SFU/MCU, stack (6 warstw), jak zbudować aplikację, LiveKit i WebRTC vs. WebSockets."
-        url="https://fotz.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje"
+        url="https://www.fotz-studio.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje"
         datePublished="2024-04-04"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "WebRTC", url: "https://fotz.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "WebRTC", url: "https://www.fotz-studio.pl/blog/webrtc-co-to-jest-jak-budowac-real-time-komunikacje" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900 text-white py-20 px-4">

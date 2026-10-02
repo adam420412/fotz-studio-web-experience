@@ -47,14 +47,14 @@ export default function BlogPinterestDlaFirmy() {
       <SEOHead
         title="Pinterest dla firmy - SEO, Pin Academy i strategie"
         description="Kompleksowy poradnik Pinterest dla firmy: optymalizacja profilu, typy pinów, Pinterest SEO, Pinterest Ads, analityka. Jak marki zarabiają na Pintereście."
-        canonical="https://fotz.pl/blog/pinterest-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/pinterest-dla-firmy"
         keywords="Pinterest dla firmy, Pinterest business, Pinterest marketing, Pinterest SEO, Pinterest Ads, strategie Pinteresta, Pinterest e-commerce"
         ogType="article"
       />
       <ArticleSchema
         title="Pinterest dla firmy - przewodnik po Pinterest Business, SEO i kampaniach"
         description="Kompleksowy poradnik Pinterest dla firmy: optymalizacja profilu, typy pinów, Pinterest SEO, Pinterest Ads, analityka. Jak marki zarabiają na Pintereście."
-        url="https://fotz.pl/blog/pinterest-dla-firmy"
+        url="https://www.fotz-studio.pl/blog/pinterest-dla-firmy"
         datePublished="2025-03-15"
         dateModified="2025-07-01"
         author="Fotz Studio"

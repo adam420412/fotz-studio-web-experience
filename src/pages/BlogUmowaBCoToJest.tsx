@@ -67,9 +67,9 @@ export default function BlogUmowaBCoToJest() {
   return (
     <>
       <SEOHead
-        title="Umowa B2B — co to jest? Kontrakt B2B vs etat | fotz.pl"
+        title="Umowa B2B — co to jest? Kontrakt B2B vs etat | FOTZ Studio"
         description="Umowa B2B co to jest — wyjasnamy czym jest kontrakt B2B, ile zarabia sie netto, B2B vs etat vs zlecenie i co powinna zawierac umowa B2B."
-        canonical="https://fotz.pl/blog/umowa-b2b-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/umowa-b2b-co-to-jest"
 
         keywords="Umowa B2B co to jest, Umowa B2B definicja, czym jest Umowa B2B, Umowa B2B przykłady, jak działa Umowa B2B, Umowa B2B znaczenie, Umowa B2B przewodnik"
       />
@@ -78,7 +78,7 @@ export default function BlogUmowaBCoToJest() {
         description="Czym jest umowa B2B (kontrakt), zarobki netto, legalnosc samozatrudnienia, elementy umowy B2B, B2B vs zlecenie i jak wystawic fakture B2B."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/umowa-b2b-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/umowa-b2b-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

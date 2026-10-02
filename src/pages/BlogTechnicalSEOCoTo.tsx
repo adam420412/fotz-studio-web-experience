@@ -66,9 +66,9 @@ export default function BlogTechnicalSEOCoTo() {
   return (
     <>
       <SEOHead
-        title="Technical SEO — co to jest i jak przeprowadzić audyt? | fotz.pl"
+        title="Technical SEO — co to jest i jak przeprowadzić audyt? | FOTZ Studio"
         description="Technical SEO co to jest — wyjaśniamy czym jest techniczne SEO, Core Web Vitals, crawlability, jak audytować stronę i optymalizować szybkość strony."
-        canonical="https://fotz.pl/blog/technical-seo-co-to"
+        canonical="https://www.fotz-studio.pl/blog/technical-seo-co-to"
 
         keywords="Technical SEO co to jest, Technical SEO definicja, czym jest Technical SEO, Technical SEO w marketingu, Technical SEO przykłady, jak działa Technical SEO, Technical SEO strategia"
       />
@@ -77,7 +77,7 @@ export default function BlogTechnicalSEOCoTo() {
         description="Czym jest Technical SEO, Core Web Vitals (LCP, INP, CLS), jak przeprowadzić audyt techniczny, optymalizacja szybkości strony, Crawl Budget i narzędzia."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/technical-seo-co-to"
+        url="https://www.fotz-studio.pl/blog/technical-seo-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

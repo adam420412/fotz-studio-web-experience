@@ -53,21 +53,21 @@ export default function BlogQuicHttp3CoTo() {
       <SEOHead
         title="QUIC i HTTP/3 — co to jest i jak wpływa na web performance?"
         description="QUIC i HTTP/3: definicja, QUIC vs TCP, 0-RTT, connection migration, HoL Blocking, adopcja, konfiguracja serwera (Nginx, Caddy) i WebTransport."
-        canonical="https://fotz.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance"
+        canonical="https://www.fotz-studio.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance"
 
         keywords="QUIC i HTTP/3 co to jest, QUIC i HTTP/3 definicja, czym jest QUIC i HTTP/3, QUIC i HTTP/3 przykłady, jak działa QUIC i HTTP/3, QUIC i HTTP/3 znaczenie, QUIC i HTTP/3 przewodnik"
       />
       <ArticleSchema
         title="QUIC i HTTP/3 — co to jest i jak wpływa na web performance?"
         description="QUIC i HTTP/3: techniczne różnice vs TCP+HTTP/2, 0-RTT, connection migration, 4 kluczowe korzyści, konfiguracja i WebTransport."
-        url="https://fotz.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance"
+        url="https://www.fotz-studio.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance"
         datePublished="2024-04-07"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "QUIC i HTTP/3", url: "https://fotz.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "QUIC i HTTP/3", url: "https://www.fotz-studio.pl/blog/quic-http3-co-to-jest-jak-wplywa-na-web-performance" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-blue-950 text-white py-20 px-4">

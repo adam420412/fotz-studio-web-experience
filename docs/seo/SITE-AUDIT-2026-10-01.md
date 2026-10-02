@@ -4,6 +4,8 @@ Data: 1 października 2026. Baza: `5ab99d8c340b13dc75c3d6e39527ced32c6330a7`, ga
 
 Status: pakiet zmian do przeglądu. Nie scalono do main i nie opublikowano na produkcji. Audyt obejmuje 1024 publiczne trasy aplikacji, wspólne komponenty i mapy witryny. Każda trasa przeszła kontrolę DOM; ręczna ocena wizualna dotyczy reprezentatywnych szablonów i wykrytych wyjątków, a nie przeczytania każdego akapitu 1024 stron.
 
+Uzupełnienie z 2 października: objęto kontrolą także 61 opublikowanych artykułów CMS, wcześniej nieobecnych w prerenderze. Wyniki tabeli poniżej dokumentują pierwszy etap 1024 tras; odbiór rozszerzenia jest opisany w raporcie GSC.
+
 ## Co zmieniono
 
 - Generator odczytuje pełne metadane z drzewa składni TypeScript, również z importowanych stałych i szablonów. Nie uruchamia kodu stron. Poprzedni odczyt pomijał część tras i niektóre strony otrzymywały tytuł strony głównej. Prerender generuje teraz 1024 strony, bez pominięć. Brak źródła/metadanych przerywa build błędem.
@@ -44,7 +46,7 @@ Dowody robocze są w lokalnym `docs/seo/qa-2026-10-01/`: wyniki HTTP, metadane, 
 
 ```sh
 npm ci
-node --test scripts/seo-metadata.test.mjs scripts/booking-calendar.test.mjs
+node --test scripts/seo-metadata.test.mjs scripts/booking-calendar.test.mjs scripts/blog-seo.test.mjs scripts/middleware-seo.test.mjs
 npx tsc --noEmit -p tsconfig.app.json
 npm run build
 node scripts/audit-source-links.mjs
@@ -52,13 +54,13 @@ python3 scripts/audit-built-site.py
 node scripts/validate-sitemap-indexable.mjs
 ```
 
-Po świadomej aktualizacji tras/metadanych: `python3 scripts/sync-sitemaps.py`, ponowny audyt i `python3 scripts/sync-html-sitemap.py`. Skrypty aktualizujące mapy modyfikują `public/`; przed publikacją wykonać build po zmianach. Prerender można uruchomić ponownie bez powielania kontrolowanych tagów i fallbacku.
+Test middleware wymaga manifestu z `npm run build`. Dla artykułów CMS najpierw odświeżyć `node scripts/sync-blog-seo.mjs`. Po świadomej aktualizacji tras/metadanych: `python3 scripts/sync-sitemaps.py`, ponowny audyt i `python3 scripts/sync-html-sitemap.py`. Skrypty aktualizujące mapy modyfikują `public/`; przed publikacją wykonać build po zmianach. Prerender można uruchomić ponownie bez powielania kontrolowanych tagów i fallbacku.
 
 ## Pozostające decyzje i granice odbioru
 
-1. **Domena główna:** istnieją publiczne `fotz.pl` i `www.fotz-studio.pl`, a większość repozytorium wskazuje canonical `fotz.pl`. Nie przeprowadzono migracji domeny ani masowego przełączenia canonicali. Wymagana decyzja właściciela i dostęp do właściwego hostingu, przekierowań i Search Console.
+1. **Domena główna — decyzja potwierdzona:** właściciel wskazał fotz-studio.pl. Kolejny etap pakietu ujednolica URL-e do `https://www.fotz-studio.pl`, zgodnie z obecnym docelowym hostem. Produkcyjne przekierowanie bez www ma obecnie status 307 i wymaga kontroli w panelu Vercel przy wdrożeniu. Nie zmieniono osobnego hostingu fotz.pl.
 2. **Dane firmy i oferta:** do potwierdzenia pozostają zaproszenia do biura/studia, adresy biur na stronach miejskich, ceny i deklarowane wyniki/liczby klientów. Zmiany nie są audytem prawdziwości wszystkich istniejących twierdzeń. Bez potwierdzenia nie należy traktować tych danych jako zweryfikowanych.
-3. **Search Console:** dostępne konto nie miało dostępu do dokładnej właściwości `https://www.fotz-studio.pl/`. Nie potwierdzono indeksacji, pozycji, ruchu ani Core Web Vitals. Nie zmieniano uprawnień ani weryfikacji domeny.
+3. **Search Console — dostęp potwierdzony w kolejnym etapie:** odczytano właściwość domenową oraz prefiks HTTPS z www. Pełny opis danych, konfliktu canonicali, błędnych plików w indeksie i kolejnych działań: [GSC-AUDIT-2026-10-02.md](GSC-AUDIT-2026-10-02.md). Nie zmieniano uprawnień ani weryfikacji domeny. Raporty GSC mają opóźnienia; inspekcja Wrocławia była już korzystniejsza niż starsza lista wykluczeń.
 4. **Integracje:** nie wysłano wiadomości kontaktowej, newslettera ani rezerwacji produkcyjnej; testy kalendarza używają atrap. Doręczenia e-maili, CRM, konflikty jednoczesnych rezerwacji i dostępność usług wymagają oddzielnego odbioru. Nie mierzono Lighthouse.
 5. **Publikacja:** lokalny build i przegląd nie potwierdzają aktywacji zmian na hostingu. Przekierowania HTTP, nagłówki oraz działanie publicznych HTML-i trzeba potwierdzić po wdrożeniu. Nie uruchamiano automatycznej publikacji ani scalania.
 

@@ -134,7 +134,7 @@ const FacebookAds = () => {
       <SEOHead
         title="Facebook Ads — Reklama na Facebooku dla Firm | Kampanie Meta Ads"
         description="Facebook Ads — tworzenie i prowadzenie kampanii reklamowych na Facebooku. Targetowanie, kreacje, retargeting i optymalizacja ROAS. Fotz Studio."
-        canonical="https://fotz.pl/performance-marketing/facebook-ads"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads"
         keywords="facebook ads polska, agencja facebook ads, kampanie facebook ads, reklamy facebook, meta ads polska, instagram ads polska, facebook ads dla firm, reklama na facebooku, facebook ads cennik, prowadzenie facebook ads, facebook ads agencja"
       />
 
@@ -145,9 +145,9 @@ const FacebookAds = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: typeof item.answer === 'string' ? item.answer : 'Szczegółowa odpowiedź dostępna na stronie.' }))} />
 

@@ -98,7 +98,7 @@ const MarketingAutomotive = () => {
       <SEOHead
         title="Marketing dla Branży Motoryzacyjnej | Salony, Dealerzy, Serwisy | Fotz Studio"
         description="Marketing dla branży motoryzacyjnej - strony dla dealerów, fotografia samochodów, spoty reklamowe, kampanie leadowe. Zwiększ sprzedaż w salonie."
-        canonical="https://fotz.pl/dla-kogo/automotive"
+        canonical="https://www.fotz-studio.pl/dla-kogo/automotive"
         keywords="marketing motoryzacyjny, marketing dla dealerów, agencja marketingowa motoryzacja, reklama salonu samochodowego, kampanie google ads motoryzacja, social media motoryzacja, fotografia motoryzacyjna, marketing serwisu samochodowego"
       />
 
@@ -109,9 +109,9 @@ const MarketingAutomotive = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Automotive", url: "https://fotz.pl/dla-kogo/automotive" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Automotive", url: "https://www.fotz-studio.pl/dla-kogo/automotive" },
         ]}
       />
       <FAQSchema items={faqItems} />

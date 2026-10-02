@@ -40,7 +40,7 @@ const BlogKosztGoogleAds = () => {
         title="Ile Kosztuje Reklama w Google? Cennik Google Ads 2026"
         description="Ile kosztuje Google Ads? Poznaj realne koszty reklamy w Google: CPC w Polsce, budżety kampanii, ROI. Cennik usług Google Ads na 2026 rok."
         ogType="article"
-        canonical="https://fotz.pl/blog/ile-kosztuje-reklama-w-google"
+        canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-reklama-w-google"
         keywords="ile kosztuje reklama w google, cennik google ads, koszty google ads, cpc google, budżet google ads"
         schemaJson={[
           {
@@ -57,7 +57,7 @@ const BlogKosztGoogleAds = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2026-04-10",
@@ -67,8 +67,8 @@ const BlogKosztGoogleAds = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Ile kosztuje reklama w Google?" }
             ]
           },

@@ -44,21 +44,21 @@ export default function BlogFirebaseSupabaseCoTo() {
       <SEOHead
         title="Firebase vs Supabase vs Convex — BaaS porównanie 2024, co wybrać?"
         description="Firebase (Firestore), Supabase (PostgreSQL + RLS), Convex (reactive), PocketBase (self-host), Appwrite, Nhost — porównanie BaaS dla startupów i projektów 2024."
-        canonical="https://fotz.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024"
+        canonical="https://www.fotz-studio.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024"
 
         keywords="Firebase vs Supabase vs Convex co to jest, Firebase vs Supabase vs Convex definicja, czym jest Firebase vs Supabase vs Convex, Firebase vs Supabase vs Convex przykłady, jak działa Firebase vs Supabase vs Convex, Firebase vs Supabase vs Convex znaczenie, Firebase vs Supabase vs Convex przewodnik"
       />
       <ArticleSchema
         title="Firebase vs Supabase vs Convex — BaaS porównanie 2024, co wybrać?"
         description="6 platform BaaS (Firebase/Supabase/Convex/PocketBase/Appwrite/Nhost) — Firestore, PostgreSQL RLS, Row-Level Security, Auth, Realtime i self-hosting."
-        url="https://fotz.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024"
+        url="https://www.fotz-studio.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Firebase vs Supabase", url: "https://fotz.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Firebase vs Supabase", url: "https://www.fotz-studio.pl/blog/firebase-supabase-convex-baas-porownanie-co-wybrac-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-yellow-950 text-white py-20 px-4">

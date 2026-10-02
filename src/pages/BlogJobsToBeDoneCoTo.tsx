@@ -68,21 +68,21 @@ export default function BlogJobsToBeDoneCoTo() {
       <SEOHead
         title="Jobs To Be Done (JTBD) — co to jest i jak stosować? | Fotz.pl"
         description="Jobs To Be Done (JTBD) — teoria innowacji Christensena, typy jobów, Switch Interview i zastosowanie w product development. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
 
         keywords="Jobs To Be Done (JTBD) co to jest, Jobs To Be Done (JTBD) definicja, czym jest Jobs To Be Done (JTBD), Jobs To Be Done (JTBD) przykłady, jak działa Jobs To Be Done (JTBD), Jobs To Be Done (JTBD) znaczenie, Jobs To Be Done (JTBD) przewodnik"
       />
       <ArticleSchema
         title="Jobs To Be Done (JTBD) — co to jest i jak stosować?"
         description="Kompletny przewodnik po JTBD: typy jobów, Switch Interview, przykłady i zastosowanie w produkcie."
-        url="https://fotz.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/jobs-to-be-done-jtbd-co-to-jest"
         datePublished="2024-02-25"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Jobs To Be Done", url: "https://fotz.pl/blog/jobs-to-be-done-jtbd-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Jobs To Be Done", url: "https://www.fotz-studio.pl/blog/jobs-to-be-done-jtbd-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-slate-900 text-white py-20 px-4">

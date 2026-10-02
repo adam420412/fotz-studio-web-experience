@@ -43,13 +43,13 @@ const CaseStudyCuteDumpling = () => {
       <SEOHead
         title="Cute as a Dumpling - Sklep z Ozdobami Świątecznymi - Case Study"
         description="Case study: sklep e-commerce dla Cute as a Dumpling — ręcznie robione ozdoby świąteczne. Design, UX i optymalizacja konwersji. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/cute-dumpling"
+        canonical="https://www.fotz-studio.pl/realizacje/cute-dumpling"
         keywords="case study restauracja, marketing gastronomia realizacja, facebook ads restauracja"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Cute as a Dumpling", url: "https://fotz.pl/realizacje/cute-dumpling" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Cute as a Dumpling", url: "https://www.fotz-studio.pl/realizacje/cute-dumpling" }
       ]}/>
       <ArticleSchema
         title="Cute as a Dumpling - Sklep z Ozdobami Świątecznymi - Case Study"
@@ -57,8 +57,8 @@ const CaseStudyCuteDumpling = () => {
         author="Fotz Studio"
         datePublished="2024-01-15"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/cute-dumpling"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/cute-dumpling"
       />
 
       {/* Hero */}

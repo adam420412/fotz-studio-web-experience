@@ -44,21 +44,21 @@ export default function BlogExpoRouterCoTo() {
       <SEOHead
         title="Expo Router v3, React Navigation | Fotz Studio"
         description="Expo Router v3 (file-based), React Navigation v6 (Stack/Tab/Drawer), typed navigation TypeScript, EAS Update, Zustand+MMKV i React Native Web universal apps."
-        canonical="https://fotz.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024"
+        canonical="https://www.fotz-studio.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024"
 
         keywords="Expo Router v3, React Navigation co to jest, Expo Router v3, React Navigation jak działa, Expo Router v3, React Navigation tutorial, Expo Router v3, React Navigation przykład, czym jest Expo Router v3, React Navigation, Expo Router v3, React Navigation dokumentacja, Expo Router v3, React Navigation przewodnik"
       />
       <ArticleSchema
         title="Expo Router v3, React Navigation — React Native nawigacja i universal apps 2024?"
         description="6 opcji nawigacji RN (Expo Router/React Navigation/RNN/Expo+Next.js/NativeWind/Tamagui) — file-based routing, typed params, Zustand+MMKV i universal apps."
-        url="https://fotz.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024"
+        url="https://www.fotz-studio.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Expo Router i React Navigation", url: "https://fotz.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Expo Router i React Navigation", url: "https://www.fotz-studio.pl/blog/expo-router-react-navigation-react-native-nawigacja-universal-apps-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-950 text-white py-20 px-4">

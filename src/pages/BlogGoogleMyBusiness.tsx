@@ -99,7 +99,7 @@ export default function BlogGoogleMyBusiness() {
       <SEOHead
         title="Google Moja Firma - jak zoptymalizować wizytówkę Google?"
         description="Google Moja Firma optymalizacja - poradnik krok po kroku. Jak założyć, zweryfikować i zoptymalizować profil. Zbieranie opinii, zdjęcia, posty. +600 szukających."
-        canonical="https://fotz.pl/blog/google-moja-firma-optymalizacja"
+        canonical="https://www.fotz-studio.pl/blog/google-moja-firma-optymalizacja"
 
         keywords="Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 co to jest, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 jak działa, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 definicja, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 przykłady, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 poradnik, Google Moja Firma - jak zoptymalizować wizytówkę Google? Poradnik 2025 przewodnik"
       />
@@ -108,7 +108,7 @@ export default function BlogGoogleMyBusiness() {
         description="Przewodnik optymalizacji Google Moja Firma. Elementy profilu, zdjęcia, zbieranie opinii, posty, Q&A. Praktyczne porady które działają."
         datePublished="2025-04-12"
         dateModified="2025-04-12"
-        url="https://fotz.pl/blog/google-moja-firma-optymalizacja"
+        url="https://www.fotz-studio.pl/blog/google-moja-firma-optymalizacja"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

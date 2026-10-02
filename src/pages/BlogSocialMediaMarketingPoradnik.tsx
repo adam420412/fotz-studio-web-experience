@@ -53,7 +53,7 @@ export default function BlogSocialMediaMarketingPoradnik() {
       <SEOHead
         title="Social media marketing | Fotz Studio"
         description="Kompleksowy poradnik dotyczący strategii social media marketing, wyboru platform, tworzenia treści i mierzenia efektywności kampanii."
-        canonical="https://fotz.pl/blog/social-media-marketing-poradnik"
+        canonical="https://www.fotz-studio.pl/blog/social-media-marketing-poradnik"
         keywords="social media marketing poradnik, jak zacząć social media marketing, social media poradnik, marketing na facebooku poradnik"
       />
 

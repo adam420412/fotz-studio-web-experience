@@ -50,21 +50,21 @@ export default function BlogBrandingStartupy() {
         title="Branding dla Startupów — Jak Zbudować Silną Markę od Zera"
         description="Branding dla startupów — identyfikacja wizualna, naming, strategia marki i pozycjonowanie. Jak zbudować silny branding startup? Poradnik Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/branding-dla-startupow"
+        canonical="https://www.fotz-studio.pl/blog/branding-dla-startupow"
         keywords="branding startup, budowanie marki, identyfikacja wizualna, strategia marki, logo startup, brand book, pozycjonowanie marki"
       />
       <ArticleSchema
         title="Branding dla Startupów - Jak Zbudować Silną Markę od Zera"
         description="Kompletny poradnik budowania marki dla startupów. Strategia brandingowa, identyfikacja wizualna, tone of voice."
-        url="https://fotz.pl/blog/branding-dla-startupow"
+        url="https://www.fotz-studio.pl/blog/branding-dla-startupow"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Branding dla startupów", url: "https://fotz.pl/blog/branding-dla-startupow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Branding dla startupów", url: "https://www.fotz-studio.pl/blog/branding-dla-startupow" },
         ]}/>
       <FAQSchema items={faqItems} />
 

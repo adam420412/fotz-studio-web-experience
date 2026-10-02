@@ -89,21 +89,21 @@ export default function BlogOkrCoTo() {
       <SEOHead
         title="OKR — co to jest i jak pisać Objectives and Key Results?"
         description="OKR (Objectives and Key Results) — definicja, struktura, przykłady, różnica vs KPI i 5 najczęstszych błędów. Kompletny przewodnik po OKR dla firm i zespołów."
-        canonical="https://fotz.pl/blog/okr-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/okr-co-to-jest"
 
         keywords="OKR co to jest, OKR definicja, czym jest OKR, OKR przykłady, jak działa OKR, OKR znaczenie, OKR przewodnik"
       />
       <ArticleSchema
         title="OKR — co to jest i jak pisać Objectives and Key Results?"
         description="Kompletny przewodnik po OKR: struktura Objective + Key Results, 3 poziomy OKR, przykłady i najczęstsze błędy przy wdrożeniu."
-        url="https://fotz.pl/blog/okr-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/okr-co-to-jest"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "OKR — Objectives and Key Results", url: "https://fotz.pl/blog/okr-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "OKR — Objectives and Key Results", url: "https://www.fotz-studio.pl/blog/okr-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -111,7 +111,7 @@ export default function BlogOkrCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "OKR", url: "https://fotz.pl" },
+              { name: "OKR", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             OKR — co to jest i jak pisać Objectives and Key Results?

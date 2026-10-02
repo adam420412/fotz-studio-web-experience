@@ -44,21 +44,21 @@ export default function BlogCloudflareWorkersCoTo() {
       <SEOHead
         title="Cloudflare Workers — KV, D1, R2, Durable Objects i Workers AI na edge 2024?"
         description="6 produktów Cloudflare (Workers/KV/D1/R2/Durable Objects/Workers AI) — V8 isolates, SQLite na edge, S3 bez egress, stateful WebSockets i AI inference na GPU."
-        canonical="https://fotz.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
+        canonical="https://www.fotz-studio.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
 
         keywords="Cloudflare Workers co to jest, Cloudflare Workers definicja, czym jest Cloudflare Workers, Cloudflare Workers przykłady, jak działa Cloudflare Workers, Cloudflare Workers znaczenie, Cloudflare Workers przewodnik"
       />
       <ArticleSchema
         title="Cloudflare Workers — KV, D1, R2, Durable Objects i Workers AI na edge 2024?"
         description="6 produktów Cloudflare (Workers/KV/D1/R2/Durable Objects/Workers AI) — V8 isolates, SQLite na edge, S3 bez egress, stateful WebSockets i AI inference na GPU."
-        url="https://fotz.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
+        url="https://www.fotz-studio.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Cloudflare Workers", url: "https://fotz.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Cloudflare Workers", url: "https://www.fotz-studio.pl/blog/cloudflare-workers-kv-d1-r2-durable-objects-workers-ai-edge-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-orange-950 text-white py-20 px-4">

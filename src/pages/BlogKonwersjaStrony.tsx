@@ -47,7 +47,7 @@ export default function BlogKonwersjaStrony() {
       <SEOHead
         title="Jak zwiększyć konwersję strony - Kompletny przewodnik 2025"
         description="Dowiedz się, jak zwiększyć konwersję strony internetowej. 7 sprawdzonych strategii, testy A/B, optymalizacja UX i case studies. Poradnik od Fotz Studio."
-        canonical="https://fotz.pl/blog/jak-zwiekszyc-konwersje-strony"
+        canonical="https://www.fotz-studio.pl/blog/jak-zwiekszyc-konwersje-strony"
         keywords="konwersja strony, optymalizacja konwersji, CTA, testy A/B, landing page, UX, zwiększyć konwersję"
       />
 
@@ -58,7 +58,7 @@ export default function BlogKonwersjaStrony() {
         author="Fotz Studio"
         datePublished="2025-01-15"
         dateModified="2025-06-01"
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
       />
       <FAQSchema items={faqItems} />
 

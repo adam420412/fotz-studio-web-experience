@@ -75,21 +75,21 @@ export default function BlogTerritoryPlanningCoTo() {
       <SEOHead
         title="Territory Planning — jak planować terytoria sprzedażowe?"
         description="Territory planning: modele podziału (geograficzny, vertical, named accounts), równość terytoriów, named accounts management i wpływ na wyniki sprzedaży."
-        canonical="https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
+        canonical="https://www.fotz-studio.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
 
         keywords="Territory Planning co to jest, Territory Planning definicja, czym jest Territory Planning, Territory Planning w sprzedaży, Territory Planning strategia, Territory Planning przykłady, jak używać Territory Planning"
       />
       <ArticleSchema
         title="Territory Planning — jak planować terytoria sprzedażowe?"
         description="Territory planning: modele podziału terytoriów, jak zapewnić równość, named accounts management i jak territory planning wpływa na wyniki działu sprzedaży."
-        url="https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
+        url="https://www.fotz-studio.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych"
         datePublished="2024-02-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Territory Planning", url: "https://fotz.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Territory Planning", url: "https://www.fotz-studio.pl/blog/territory-planning-planowanie-terytoriow-sprzedazowych" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">

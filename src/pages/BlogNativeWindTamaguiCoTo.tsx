@@ -44,21 +44,21 @@ export default function BlogNativeWindTamaguiCoTo() {
       <SEOHead
         title="NativeWind, Tamagui, gluestack-ui i Unistyles | Fotz Studio"
         description="6 narzędzi React Native styling (NativeWind/Tamagui/gluestack-ui/Unistyles/RN Paper/StyleSheet) — universal apps, cross-platform, Expo Router i performance best practices."
-        canonical="https://fotz.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024"
+        canonical="https://www.fotz-studio.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024"
 
         keywords="NativeWind, Tamagui, gluestack-ui i Unistyles co to jest, NativeWind, Tamagui, gluestack-ui i Unistyles jak działa, NativeWind, Tamagui, gluestack-ui i Unistyles tutorial, NativeWind, Tamagui, gluestack-ui i Unistyles przykład, czym jest NativeWind, Tamagui, gluestack-ui i Unistyles, NativeWind, Tamagui, gluestack-ui i Unistyles dokumentacja, NativeWind, Tamagui, gluestack-ui i Unistyles przewodnik"
       />
       <ArticleSchema
         title="NativeWind, Tamagui, gluestack-ui i Unistyles — React Native styling 2024?"
         description="6 narzędzi React Native styling (NativeWind/Tamagui/gluestack-ui/Unistyles/RN Paper/StyleSheet) — universal apps, cross-platform, Expo Router i performance best practices."
-        url="https://fotz.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024"
+        url="https://www.fotz-studio.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024"
         datePublished="2024-11-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Native Styling 2024", url: "https://fotz.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Native Styling 2024", url: "https://www.fotz-studio.pl/blog/nativewind-tamagui-gluestack-unistyles-react-native-styling-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-fuchsia-950 to-purple-950 text-white py-20 px-4">

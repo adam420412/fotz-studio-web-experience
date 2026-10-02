@@ -69,9 +69,9 @@ export default function BlogEmployerBrandingCoTo() {
   return (
     <>
       <SEOHead
-        title="Employer Branding — co to jest? Marka pracodawcy | fotz.pl"
+        title="Employer Branding — co to jest? Marka pracodawcy | FOTZ Studio"
         description="Employer branding co to jest — wyjaśniamy czym jest marka pracodawcy, EVP, jak budować stronę kariery, mierzyć efektywność i employer branding dla małych firm."
-        canonical="https://fotz.pl/blog/employer-branding-co-to"
+        canonical="https://www.fotz-studio.pl/blog/employer-branding-co-to"
 
         keywords="Employer Branding co to jest, Employer Branding definicja, czym jest Employer Branding, Employer Branding w marketingu, Employer Branding przykłady, jak działa Employer Branding, Employer Branding strategia"
       />
@@ -80,7 +80,7 @@ export default function BlogEmployerBrandingCoTo() {
         description="Czym jest employer branding, EVP (Employee Value Proposition), kanały (LinkedIn, Glassdoor, strona kariery), metryki i employer branding dla startupów."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/employer-branding-co-to"
+        url="https://www.fotz-studio.pl/blog/employer-branding-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

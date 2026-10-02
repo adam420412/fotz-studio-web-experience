@@ -45,21 +45,21 @@ export default function BlogFramerMotionCoTo() {
       <SEOHead
         title="Framer Motion, GSAP, CSS Animations | Fotz Studio"
         description="6 narzędzi animacji (Framer Motion/GSAP/CSS/ScrollTrigger/WAAPI/Motion One) — motion components, spring physics, ScrollTrigger, GPU acceleration i performance."
-        canonical="https://fotz.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024"
 
         keywords="Framer Motion, GSAP, CSS Animations co to jest, Framer Motion, GSAP, CSS Animations jak działa, Framer Motion, GSAP, CSS Animations tutorial, Framer Motion, GSAP, CSS Animations przykład, czym jest Framer Motion, GSAP, CSS Animations, Framer Motion, GSAP, CSS Animations dokumentacja, Framer Motion, GSAP, CSS Animations przewodnik"
       />
       <ArticleSchema
         title="Framer Motion, GSAP, CSS Animations — web animacje React 2024?"
         description="6 narzędzi animacji (Framer Motion/GSAP/CSS/ScrollTrigger/WAAPI/Motion One) — motion components, spring physics, ScrollTrigger, GPU acceleration i performance."
-        url="https://fotz.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024"
+        url="https://www.fotz-studio.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Framer Motion i Animacje", url: "https://fotz.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Framer Motion i Animacje", url: "https://www.fotz-studio.pl/blog/framer-motion-gsap-css-animations-web-animacje-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-fuchsia-950 text-white py-20 px-4">

@@ -45,21 +45,21 @@ export default function BlogNextImageCoTo() {
       <SEOHead
         title="next/image, WebP/AVIF, Cloudinary i Image Optimization"
         description="6 narzędzi optymalizacji obrazów (next/image/Cloudinary/Imgix/sharp/Bunny.net/Plaiceholder) — WebP/AVIF, lazy loading, IntersectionObserver, SVG i SVGR."
-        canonical="https://fotz.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024"
+        canonical="https://www.fotz-studio.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024"
 
         keywords="next/image, WebP/AVIF, Cloudinary i Image Optimization co to jest, next/image, WebP/AVIF, Cloudinary i Image Optimization jak działa, next/image, WebP/AVIF, Cloudinary i Image Optimization tutorial, next/image, WebP/AVIF, Cloudinary i Image Optimization przykład, czym jest next/image, WebP/AVIF, Cloudinary i Image Optimization, next/image, WebP/AVIF, Cloudinary i Image Optimization dokumentacja, next/image, WebP/AVIF, Cloudinary i Image Optimization przewodnik"
       />
       <ArticleSchema
         title="next/image, WebP/AVIF, Cloudinary i Image Optimization — React i Next.js 2024?"
         description="6 narzędzi optymalizacji obrazów (next/image/Cloudinary/Imgix/sharp/Bunny.net/Plaiceholder) — WebP/AVIF, lazy loading, IntersectionObserver, SVG i SVGR."
-        url="https://fotz.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024"
+        url="https://www.fotz-studio.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Image Optimization Next.js", url: "https://fotz.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Image Optimization Next.js", url: "https://www.fotz-studio.pl/blog/nextjs-image-optimization-webp-avif-cloudinary-sharp-svgr-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">

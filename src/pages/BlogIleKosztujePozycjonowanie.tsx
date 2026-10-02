@@ -51,7 +51,7 @@ const BlogIleKosztujePozycjonowanie = () => {
         title="Ile kosztuje pozycjonowanie stron w 2025? Kompletny cennik SEO"
         description="Sprawdź aktualne ceny pozycjonowania stron internetowych w 2025 roku. Cennik SEO, pakiety, co wpływa na koszt i jak wybrać najlepszą ofertę dla Twojej firmy."
         ogType="article"
-        canonical="https://fotz.pl/blog/ile-kosztuje-pozycjonowanie"
+        canonical="https://www.fotz-studio.pl/blog/ile-kosztuje-pozycjonowanie"
         keywords="ile kosztuje pozycjonowanie, koszt pozycjonowania strony, pozycjonowanie cena miesięcznie, seo cennik agencja, pozycjonowanie stron internetowych cena, abonament seo cena, pozycjonowanie ile trwa, seo cennik 2025"
         schemaJson={[
           {
@@ -68,7 +68,7 @@ const BlogIleKosztujePozycjonowanie = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-01-15",
@@ -78,8 +78,8 @@ const BlogIleKosztujePozycjonowanie = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Ile kosztuje pozycjonowanie w 2025?" }
             ]
           }

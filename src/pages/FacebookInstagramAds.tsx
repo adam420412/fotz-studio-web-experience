@@ -205,7 +205,7 @@ export default function FacebookInstagramAds() {
       <SEOHead
         title="Kampania Facebook Ads - Reklama na Facebooku dla Firm | Cennik"
         description="Kampanie Facebook Ads dla firm — reklama na Facebooku i Instagramie. Formy reklamy, targetowanie odbiorców, cennik. Agencja Facebook Ads — bezpłatna wycena 24h."
-        canonical="https://fotz.pl/performance-marketing/meta-ads"
+        canonical="https://www.fotz-studio.pl/performance-marketing/meta-ads"
         keywords="meta ads agencja, kampania facebook ads, reklama na facebooku, facebook instagram ads, meta business suite, kampanie meta ads, reklamy meta, facebook ads instagram ads, meta ads polska, agencja meta ads, meta ads cennik"
       />
       <ServiceSchema
@@ -215,9 +215,9 @@ export default function FacebookInstagramAds() {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "Facebook & Instagram Ads", url: "https://fotz.pl/performance-marketing/meta-ads" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
+          { name: "Facebook & Instagram Ads", url: "https://www.fotz-studio.pl/performance-marketing/meta-ads" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

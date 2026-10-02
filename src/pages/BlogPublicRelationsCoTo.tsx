@@ -81,21 +81,21 @@ export default function BlogPublicRelationsCoTo() {
       <SEOHead
         title="Public Relations (PR) — co to jest i jak działa?"
         description="Public relations — definicja, 6 rodzajów PR (media relations, crisis PR, corporate PR), 5-etapowy proces i jak mierzyć efektywność. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/public-relations-co-to"
+        canonical="https://www.fotz-studio.pl/blog/public-relations-co-to"
 
         keywords="Public Relations (PR) co to jest, Public Relations (PR) definicja, czym jest Public Relations (PR), Public Relations (PR) przykłady, jak działa Public Relations (PR), Public Relations (PR) znaczenie, Public Relations (PR) przewodnik"
       />
       <ArticleSchema
         title="Public Relations (PR) — co to jest i jak działa?"
         description="Kompletny przewodnik po public relations: typy PR, media relations, crisis management, 5-etapowy proces i metryki efektywności."
-        url="https://fotz.pl/blog/public-relations-co-to"
+        url="https://www.fotz-studio.pl/blog/public-relations-co-to"
         datePublished="2024-01-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Public Relations", url: "https://fotz.pl/blog/public-relations-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Public Relations", url: "https://www.fotz-studio.pl/blog/public-relations-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -103,7 +103,7 @@ export default function BlogPublicRelationsCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Public Relations", url: "https://fotz.pl" },
+              { name: "Public Relations", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Public Relations (PR) — co to jest i jak działa?

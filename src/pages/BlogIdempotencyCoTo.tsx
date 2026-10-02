@@ -44,21 +44,21 @@ export default function BlogIdempotencyCoTo() {
       <SEOHead
         title="Idempotencja API — co to jest, Idempotency Key, Redis, płatności, Kafka?"
         description="Idempotencja API: Idempotency Keys, Redis implementacja, ochrona przed podwójną płatnością, idempotent consumers w Kafka, Inbox Pattern i HTTP metody."
-        canonical="https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
+        canonical="https://www.fotz-studio.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
 
         keywords="Idempotencja API co to jest, Idempotencja API jak działa, Idempotencja API tutorial, Idempotencja API przykład, czym jest Idempotencja API, Idempotencja API dokumentacja, Idempotencja API przewodnik"
       />
       <ArticleSchema
         title="Idempotencja API — co to jest, Idempotency Key, Redis, płatności, Kafka?"
         description="Idempotencja: 6 wzorców (Idempotency Key/Natural HTTP/DB UNIQUE/Inbox/Optimistic Lock/Kafka EOS), implementacja, ochrona płatności i PUT vs PATCH."
-        url="https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
+        url="https://www.fotz-studio.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Idempotencja API", url: "https://fotz.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Idempotencja API", url: "https://www.fotz-studio.pl/blog/idempotencja-api-co-to-jest-idempotency-key-redis-platnosci-kafka" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-cyan-950 text-white py-20 px-4">

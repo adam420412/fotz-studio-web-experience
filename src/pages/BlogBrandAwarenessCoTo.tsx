@@ -66,7 +66,7 @@ export default function BlogBrandAwarenessCoTo() {
       <SEOHead
         title="Brand Awareness — co to jest i jak budowac swiadomosc marki?"
         description="Brand Awareness co to jest — wyjasnamy czym jest swiadomosc marki, jak ja budowac i mierzyc, roznica brand awareness vs brand equity i koszty kampanii."
-        canonical="https://fotz.pl/blog/brand-awareness-co-to"
+        canonical="https://www.fotz-studio.pl/blog/brand-awareness-co-to"
 
         keywords="Brand Awareness co to jest, Brand Awareness definicja, czym jest Brand Awareness, Brand Awareness w marketingu, Brand Awareness przykłady, jak działa Brand Awareness, Brand Awareness strategia"
       />
@@ -75,7 +75,7 @@ export default function BlogBrandAwarenessCoTo() {
         description="Czym jest Brand Awareness, poziomy swiadomosci marki, jak mierzyc i budowac brand awareness, roznica vs Brand Equity i koszty kampanii."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/brand-awareness-co-to"
+        url="https://www.fotz-studio.pl/blog/brand-awareness-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

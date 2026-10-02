@@ -65,9 +65,9 @@ export default function BlogLinkedInMarketingCoTo() {
   return (
     <>
       <SEOHead
-        title="LinkedIn Marketing — co to jest i jak prowadzić? | fotz.pl"
+        title="LinkedIn Marketing — co to jest i jak prowadzić? | FOTZ Studio"
         description="LinkedIn Marketing co to jest — wyjaśniamy jak prowadzić marketing na LinkedIn, LinkedIn Ads, Social Selling, zasięg organiczny i jak mierzyć efektywność."
-        canonical="https://fotz.pl/blog/linkedin-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/linkedin-marketing-co-to"
 
         keywords="LinkedIn Marketing co to jest, LinkedIn Marketing definicja, czym jest LinkedIn Marketing, LinkedIn Marketing w marketingu, LinkedIn Marketing przykłady, jak działa LinkedIn Marketing, LinkedIn Marketing strategia"
       />
@@ -76,7 +76,7 @@ export default function BlogLinkedInMarketingCoTo() {
         description="Czym jest LinkedIn Marketing, formaty treści, LinkedIn Ads koszty, Social Selling, budowanie zasięgu organicznego i mierzenie efektywności działań na LinkedIn."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/linkedin-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/linkedin-marketing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

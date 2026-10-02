@@ -12,14 +12,14 @@ export default function FacebookAdsLublin() {
       <SEOHead
         title="Agencja Facebook Ads Lublin — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Lublin ✓ Kampanie Meta Ads dla firm z Lublina i Lubelszczyzny. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/facebook-ads/lublin"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/lublin"
         keywords="facebook ads lublin, meta ads lublin, reklamy facebook lublin, agencja facebook ads lublin, kampanie facebook lublin, instagram ads lublin, facebook ads dla firm lublin, reklama na facebooku lublin, meta ads agencja lublin, facebook ads cennik lublin"
       />
       <BreadcrumbSchema items={[
-          { name: "Fotz.pl", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-          { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Lublin", url: "https://fotz.pl" }
+          { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+          { name: "Lublin", url: "https://www.fotz-studio.pl" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Lublin"
@@ -32,7 +32,7 @@ export default function FacebookAdsLublin() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { name: "Lublin", url: "https://fotz.pl" }
+            { name: "Lublin", url: "https://www.fotz-studio.pl" }
           ]}/>
 
         {/* HERO SECTION */}

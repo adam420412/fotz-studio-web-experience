@@ -81,26 +81,26 @@ export default function BlogBurnRateCoTo() {
       <SEOHead
         title="Burn Rate i Runway — co to jest i jak obliczać?"
         description="Burn rate i runway — definicja, wzory (gross burn, net burn, runway, burn multiple), benchmarki i jak zmniejszyć burn rate. Kompletny przewodnik dla startupów."
-        canonical="https://fotz.pl/blog/burn-rate-runway-co-to"
+        canonical="https://www.fotz-studio.pl/blog/burn-rate-runway-co-to"
 
         keywords="Burn Rate i Runway co to jest, Burn Rate i Runway definicja, czym jest Burn Rate i Runway, Burn Rate i Runway startup, Burn Rate i Runway jak liczyć, Burn Rate i Runway wzór, Burn Rate i Runway przykłady"
       />
       <ArticleSchema
         title="Burn Rate i Runway — co to jest i jak obliczać?"
         description="Kompletny przewodnik po burn rate i runway: 4 wzory, burn multiple benchmarki (Bessemer), jak zmniejszyć burn bez zabijania wzrostu."
-        url="https://fotz.pl/blog/burn-rate-runway-co-to"
+        url="https://www.fotz-studio.pl/blog/burn-rate-runway-co-to"
         datePublished="2024-01-27"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Burn Rate i Runway", url: "https://fotz.pl/blog/burn-rate-runway-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Burn Rate i Runway", url: "https://www.fotz-studio.pl/blog/burn-rate-runway-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Burn Rate i Runway", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Burn Rate i Runway", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Burn Rate i Runway — co to jest i jak obliczać?
           </h1>

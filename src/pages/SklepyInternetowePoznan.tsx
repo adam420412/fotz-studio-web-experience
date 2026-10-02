@@ -66,7 +66,7 @@ export default function SklepyInternetowePoznan() {
       <SEOHead
         title="Sklepy Internetowe Poznań — Tworzenie E-commerce i Sklepów Online"
         description="Tworzenie sklepów internetowych Poznań — e-commerce WooCommerce, Shopify, PrestaShop dla firm z Poznania. Projektowanie sklepów online z integracjami, SEO i doradztwem w wyborze platformy."
-        canonical="https://fotz.pl/uslugi/sklepy-internetowe/poznan"
+        canonical="https://www.fotz-studio.pl/uslugi/sklepy-internetowe/poznan"
         keywords="sklepy internetowe Poznań, tworzenie sklepu internetowego Poznań, e-commerce Poznań, sklep online Poznań, Shopify Poznań, WooCommerce Poznań, sklep www Poznań, platforma e-commerce Poznań, PrestaShop Poznań, pozycjonowanie sklepu internetowego Poznań, wdrożenie sklepu internetowego Poznań"
       />
 
@@ -77,9 +77,9 @@ export default function SklepyInternetowePoznan() {
         areaServed="Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Sklepy Internetowe Poznań", url: "https://fotz.pl/uslugi/sklepy-internetowe/poznan" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Sklepy Internetowe Poznań", url: "https://www.fotz-studio.pl/uslugi/sklepy-internetowe/poznan" }
         ]}/>
       <FAQSchema items={faqItems.map(i => ({ question: i.question, answer: i.answer }))} />
 

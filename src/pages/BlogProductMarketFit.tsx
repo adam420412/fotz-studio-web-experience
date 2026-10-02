@@ -66,9 +66,9 @@ export default function BlogProductMarketFit() {
   return (
     <>
       <SEOHead
-        title="Product-Market Fit — co to jest i jak osiagnac? | fotz.pl"
+        title="Product-Market Fit — co to jest i jak osiagnac? | FOTZ Studio"
         description="Product-Market Fit co to jest — wyjasnamy czym jest PMF, jak mierzyc Product-Market Fit (Sean Ellis Test, NPS, retencja) i kiedy skalowac startup."
-        canonical="https://fotz.pl/blog/product-market-fit-co-to"
+        canonical="https://www.fotz-studio.pl/blog/product-market-fit-co-to"
 
         keywords="Product-Market Fit co to jest, Product-Market Fit definicja, czym jest Product-Market Fit, Product-Market Fit przykłady, jak działa Product-Market Fit, Product-Market Fit znaczenie, Product-Market Fit przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogProductMarketFit() {
         description="Czym jest Product-Market Fit, jak mierzyc PMF (Sean Ellis Test, retention, NPS), jak go osiagnac i kiedy skalowac marketing i sprzedaz."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/product-market-fit-co-to"
+        url="https://www.fotz-studio.pl/blog/product-market-fit-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

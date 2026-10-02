@@ -53,21 +53,21 @@ export default function BlogChaosEngineeringCoTo() {
       <SEOHead
         title="Chaos Engineering — co to jest i jak wdrożyć w SaaS? | Fotz.pl"
         description="Chaos Engineering: definicja, zasady, typy eksperymentów, narzędzia (Litmus, Chaos Mesh, Gremlin, AWS FIS), Game Days i jak budować kulturę odpornych systemów."
-        canonical="https://fotz.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz"
+        canonical="https://www.fotz-studio.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz"
 
         keywords="Chaos Engineering co to jest, Chaos Engineering definicja, czym jest Chaos Engineering, Chaos Engineering startup, Chaos Engineering jak liczyć, Chaos Engineering wzór, Chaos Engineering przykłady"
       />
       <ArticleSchema
         title="Chaos Engineering — co to jest i jak wdrożyć w SaaS?"
         description="Chaos Engineering: zasady, 6 typów eksperymentów, 6 narzędzi, Game Days vs. Fire Drills, budowanie kultury i Chaos Engineering Maturity Model."
-        url="https://fotz.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz"
+        url="https://www.fotz-studio.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz"
         datePublished="2024-03-26"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Chaos Engineering", url: "https://fotz.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Chaos Engineering", url: "https://www.fotz-studio.pl/blog/chaos-engineering-co-to-jest-jak-wdrozyz" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">

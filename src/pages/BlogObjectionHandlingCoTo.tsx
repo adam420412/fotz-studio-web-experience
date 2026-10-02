@@ -130,21 +130,21 @@ export default function BlogObjectionHandlingCoTo() {
       <SEOHead
         title="Objection Handling — co to jest? Obsługa obiekcji w sprzedaży B2B"
         description="Objection Handling — definicja, 5 najczęstszych obiekcji (cena, czas, konkurencja, status quo, autorytet), techniki LAER, Feel-Felt-Found i jak je stosować."
-        canonical="https://fotz.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
+        canonical="https://www.fotz-studio.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
 
         keywords="Objection Handling co to jest, Objection Handling definicja, czym jest Objection Handling, Objection Handling w sprzedaży, Objection Handling strategia, Objection Handling przykłady, jak używać Objection Handling"
       />
       <ArticleSchema
         title="Objection Handling — co to jest i jak obsługiwać obiekcje w sprzedaży?"
         description="Kompletny przewodnik po objection handling: 5 najczęstszych obiekcji, techniki LAER i praktyczne odpowiedzi."
-        url="https://fotz.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
+        url="https://www.fotz-studio.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Objection Handling", url: "https://fotz.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Objection Handling", url: "https://www.fotz-studio.pl/blog/objection-handling-obsluga-obiekcji-sprzedaz" },
         ]}/>
 
       {/* Hero */}
@@ -152,7 +152,7 @@ export default function BlogObjectionHandlingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Objection Handling", url: "https://fotz.pl" },
+              { name: "Objection Handling", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Objection Handling — obsługa obiekcji w sprzedaży B2B

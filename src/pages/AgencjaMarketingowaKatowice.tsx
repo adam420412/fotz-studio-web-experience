@@ -142,7 +142,7 @@ export default function AgencjaMarketingowaKatowice() {
         <SEOHead
           title="Agencja Marketingowa Katowice | Fotz Studio"
           description="Agencja marketingowa Katowice ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Katowic i Śląska. Bezpłatna wycena!"
-          canonical="https://fotz.pl/agencja-marketingowa/katowice"
+          canonical="https://www.fotz-studio.pl/agencja-marketingowa/katowice"
         keywords="agencja marketingowa katowice, marketing internetowy katowice, agencja reklamowa katowice, kampanie reklamowe katowice, seo katowice, google ads katowice, agencja marketingowa śląsk"
         />
 
@@ -153,9 +153,9 @@ export default function AgencjaMarketingowaKatowice() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-            { name: "Katowice", url: "https://fotz.pl/agencja-marketingowa/katowice" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+            { name: "Katowice", url: "https://www.fotz-studio.pl/agencja-marketingowa/katowice" }
           ]}/>
 
         <FAQSchema items={faqItems} />

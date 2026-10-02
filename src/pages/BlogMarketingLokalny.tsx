@@ -124,7 +124,7 @@ const BlogMarketingLokalny = () => {
         title="Marketing lokalny - jak pozyskiwać klientów w swoim mieście"
         description="Kompletny przewodnik marketingu lokalnego dla firm. Google Business Profile, SEO lokalne, opinie, budżet. Strategie do pozyskania klientów w swoim mieście."
         ogType="article"
-        canonical="https://fotz.pl/blog/marketing-lokalny-dla-firm"
+        canonical="https://www.fotz-studio.pl/blog/marketing-lokalny-dla-firm"
         keywords="marketing lokalny, marketing dla lokalnych firm, SEO lokalne, Google Business Profile, pozyskanie klientów lokalnych"
         schemaJson={[
           {
@@ -141,7 +141,7 @@ const BlogMarketingLokalny = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -151,8 +151,8 @@ const BlogMarketingLokalny = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
               { "@type": "ListItem", "position": 3, "name": "Marketing lokalny dla firm" }
             ]
           },

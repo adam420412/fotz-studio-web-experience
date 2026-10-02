@@ -116,7 +116,7 @@ const MarketingTurystyka = () => {
       <SEOHead
         title="Marketing dla Turystyki | Hotele, Biura Podróży | Fotz Studio"
         description="Marketing dla turystyki - strony dla hoteli, systemy rezerwacji, wirtualne spacery 360°. Zwiększ rezerwacje bezpośrednie i buduj markę destynacji."
-        canonical="https://fotz.pl/dla-kogo/turystyka"
+        canonical="https://www.fotz-studio.pl/dla-kogo/turystyka"
         keywords="marketing turystyczny, marketing hotelu, agencja marketingowa turystyka, reklama hotelu, marketing biura podróży, wirtualne spacery hotel, kampanie google ads hotel, marketing agroturystyki"
       />
 
@@ -127,9 +127,9 @@ const MarketingTurystyka = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Turystyka", url: "https://fotz.pl/dla-kogo/turystyka" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Turystyka", url: "https://www.fotz-studio.pl/dla-kogo/turystyka" },
         ]}
       />
       <FAQSchema items={faqItems} />

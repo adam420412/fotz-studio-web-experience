@@ -48,7 +48,7 @@ const BlogSklepInternetowyNaWlasnej = () => {
         title="Własny sklep internetowy - WooCommerce czy Shopify? Poradnik"
         description="Czy warto zakładać sklep na wlasnej domenie czy lepiej sprzedawać przez Allegro? Porównanie kosztów, SEO, kontroli, ryzyk. Przewodnik dla przedsiębiorców."
         ogType="article"
-        canonical="https://fotz.pl/blog/sklep-internetowy-na-wlasnej-domenie"
+        canonical="https://www.fotz-studio.pl/blog/sklep-internetowy-na-wlasnej-domenie"
         keywords="sklep na wlasnej domenie, wlasny sklep internetowy, WooCommerce, Shopify, Shoper, Allegro vs wlasny sklep, e-commerce poradnik"
         schemaJson={[
           {
@@ -65,7 +65,7 @@ const BlogSklepInternetowyNaWlasnej = () => {
               "name": "FOTZ",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-04-12",
@@ -75,9 +75,9 @@ const BlogSklepInternetowyNaWlasnej = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Sklep na wlasnej domenie", "item": "https://fotz.pl/blog/sklep-internetowy-na-wlasnej-domenie" }
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Sklep na wlasnej domenie", "item": "https://www.fotz-studio.pl/blog/sklep-internetowy-na-wlasnej-domenie" }
             ]
           },
           {

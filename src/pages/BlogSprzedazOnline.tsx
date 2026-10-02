@@ -40,21 +40,21 @@ const BlogSprzedazOnline = () => {
         title="Sprzedaż Online — Jak Sprzedawać w Internecie? Poradnik dla Firm"
         description="Jak sprzedawać online? Kanały sprzedaży internetowej: sklep własny, marketplace, social commerce. 12 sprawdzonych metod, jak zwiększyć sprzedaż przez internet — praktyczny poradnik dla firm."
         ogType="article"
-        canonical="https://fotz.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet"
+        canonical="https://www.fotz-studio.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet"
         keywords="jak zwiększyć sprzedaż przez internet, zwiększenie sprzedaży online, sprzedaż w internecie, jak sprzedawać więcej online, strategie sprzedaży online, marketing internetowy sprzedaż"
       />
       <ArticleSchema
         title="Jak zwiększyć sprzedaż przez internet? 12 sprawdzonych metod [2025]"
         description="Praktyczny przewodnik: jak zwiększyć sprzedaż online krok po kroku."
-        url="https://fotz.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet"
+        url="https://www.fotz-studio.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet"
         datePublished="2025-02-10"
         dateModified="2026-03-15"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Jak zwiększyć sprzedaż przez internet", url: "https://fotz.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Jak zwiększyć sprzedaż przez internet", url: "https://www.fotz-studio.pl/blog/jak-zwiekszyc-sprzedaz-przez-internet" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>

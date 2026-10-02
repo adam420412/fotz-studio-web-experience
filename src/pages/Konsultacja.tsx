@@ -181,12 +181,12 @@ export default function Konsultacja() {
       <SEOHead
         title="Bezpłatna Konsultacja Marketingowa | Fotz Studio"
         description="Bezpłatna konsultacja marketingowa Fotz Studio — omów SEO, strategię online, kampanie Google Ads i social media z ekspertem. Umów się na 30-minutową rozmowę i otrzymaj konkretne rekomendacje bez zobowiązań."
-        canonical="https://fotz.pl/konsultacja"
+        canonical="https://www.fotz-studio.pl/konsultacja"
         keywords="konsultacja marketingowa, darmowa konsultacja, marketing Poznań, strategia marketingowa"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Konsultacja", url: "https://fotz.pl/konsultacja" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Konsultacja", url: "https://www.fotz-studio.pl/konsultacja" },
         ]}/>
       <FAQSchema items={faqs} />
       <LocalBusinessSchema />

@@ -13,11 +13,11 @@ export default function AgencjaMarketingowaJeleniaGora() {
     name: "Fotz Studio - Agencja Marketingowa Jelenia Góra",
     description:
       "Profesjonalna agencja marketingowa w Jeleniej Górze. Oferujemy SEO, SEM, social media, tworzenie stron internetowych i kampanie Google Ads.",
-    url: "https://fotz.pl/agencja-marketingowa/jelenia-gora",
+    url: "https://www.fotz-studio.pl/agencja-marketingowa/jelenia-gora",
     telephone: "+48 790 814 814",
     areaServed: "Jelenia Góra",
     priceRange: "PLN",
-    image: "https://fotz.pl/og-image.jpg",
+    image: "https://www.fotz-studio.pl/og-image.jpg",
     sameAs: [
       "https://www.facebook.com/fotzstudio",
       "https://www.linkedin.com/company/fotz-studio",
@@ -32,19 +32,19 @@ export default function AgencjaMarketingowaJeleniaGora() {
         "@type": "ListItem",
         position: 1,
         name: "Strona glowna",
-        item: "https://fotz.pl",
+        item: "https://www.fotz-studio.pl",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Agencja marketingowa",
-        item: "https://fotz.pl/agencja-marketingowa",
+        item: "https://www.fotz-studio.pl/agencja-marketingowa",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Jelenia Gora",
-        item: "https://fotz.pl/agencja-marketingowa/jelenia-gora",
+        item: "https://www.fotz-studio.pl/agencja-marketingowa/jelenia-gora",
       },
     ],
   };
@@ -101,8 +101,8 @@ export default function AgencjaMarketingowaJeleniaGora() {
       <SEOHead
         title="Agencja Marketingowa Jelenia Gora | Fotz Studio"
         description="Profesjonalna agencja marketingowa w Jeleniej Gorze. SEO, SEM, social media, strony internetowe i kampanie Google Ads dla firm lokalnych."
-        canonical="https://fotz.pl/agencja-marketingowa/jelenia-gora"
-        ogImage="https://fotz.pl/og-image.jpg"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/jelenia-gora"
+        ogImage="https://www.fotz-studio.pl/og-image.jpg"
         keywords="agencja marketingowa jelenia góra, marketing internetowy jelenia góra, agencja reklamowa jelenia góra, seo jelenia góra"
       />
       

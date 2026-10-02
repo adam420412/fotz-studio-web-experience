@@ -185,7 +185,7 @@ const StronyInternetowePoznan = () => {
       <SEOHead
         title="Strony Internetowe Poznań | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Poznań — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Poznania. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/poznan"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan"
         keywords="strony internetowe poznań, tworzenie stron poznań, strony www poznań, projektowanie stron poznań, sklep internetowy poznań"
       />
       
@@ -197,9 +197,9 @@ const StronyInternetowePoznan = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" },
-          { name: "Poznań", url: "https://fotz.pl/uslugi/strony-internetowe/poznan" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" },
+          { name: "Poznań", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/poznan" },
         ]}/>
       
       <FAQSchema 

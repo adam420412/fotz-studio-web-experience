@@ -8,9 +8,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { format } from "date-fns";
 import { pl } from "date-fns/locale";
+import { getBlogMetadata, normalizeSchemaUrls, prepareBlogHtml } from "@/lib/blog-seo.mjs";
 
 /**
  * BabyLove may store keywords as `["a","b"]`, `{ keywords: ["a","b"] }`,
@@ -63,23 +63,15 @@ export default function BlogArticleDynamic() {
     ? format(new Date(article.published_at), "d MMMM yyyy", { locale: pl })
     : "";
 
-  const canonicalUrl = `https://fotz.pl/blog/${article.slug}`;
+  const canonicalUrl = `https://www.fotz-studio.pl/blog/${article.slug}`;
 
   const keywordsList = extractKeywords(article.keywords);
   const seoKeywords = keywordsList.length ? keywordsList.join(", ") : undefined;
 
-  // Prefer the BabyLove excerpt for the visible lead and the meta description,
-  // falling back to the existing meta_description / title chain.
-  const lead = article.excerpt || article.meta_description || "";
-
-  // Build a description of at least 120 chars for SEO
-  const rawDesc = article.excerpt || article.meta_description || article.title;
-  const metaDescription = rawDesc.length >= 120
-    ? rawDesc
-    : `${rawDesc} — przeczytaj artykuł na blogu Fotz Studio i dowiedz się więcej o marketingu, SEO i tworzeniu stron internetowych.`;
-
-  // Noindex test/draft articles with very short descriptions (likely test content)
-  const isTestArticle = rawDesc.length < 80 && article.title.toLowerCase().includes("test");
+  const metadata = getBlogMetadata(article);
+  const metaDescription = metadata.description;
+  const lead = metadata.description;
+  const isTestArticle = metadata.noIndex;
 
   const hasCmsArticleSchema = !!article.json_ld;
   const hasCmsFaqSchema = !!article.faq_json_ld;
@@ -87,16 +79,17 @@ export default function BlogArticleDynamic() {
   return (
     <Layout>
       <SEOHead
-        title={`${article.title} | Blog FOTZ`}
+        title={metadata.title}
         description={metaDescription}
         canonical={canonicalUrl}
-        ogImage={article.hero_image_url || undefined}
+        ogImage={metadata.ogImage}
+        ogType="article"
         noIndex={isTestArticle}
         keywords={seoKeywords}
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: article.title, url: canonicalUrl },
         ]}/>
       {/* Prefer CMS-provided JSON-LD when available, otherwise emit our own. */}
@@ -105,7 +98,7 @@ export default function BlogArticleDynamic() {
           title={article.title}
           description={metaDescription}
           url={canonicalUrl}
-          image={article.hero_image_url || "https://fotz.pl/og-image.jpg"}
+          image={metadata.ogImage}
           datePublished={article.published_at || article.created_at}
           dateModified={article.published_at || article.created_at}
           author="Zespół FOTZ"
@@ -115,12 +108,12 @@ export default function BlogArticleDynamic() {
         <Helmet>
           {hasCmsArticleSchema && (
             <script type="application/ld+json">
-              {JSON.stringify(article.json_ld)}
+              {JSON.stringify(normalizeSchemaUrls(article.json_ld))}
             </script>
           )}
           {hasCmsFaqSchema && (
             <script type="application/ld+json">
-              {JSON.stringify(article.faq_json_ld)}
+              {JSON.stringify(normalizeSchemaUrls(article.faq_json_ld))}
             </script>
           )}
         </Helmet>
@@ -159,22 +152,14 @@ export default function BlogArticleDynamic() {
               </span>
             </div>
 
-            {keywordsList.length > 0 && (
-              <div className="mt-6 flex flex-wrap gap-2" aria-label="Słowa kluczowe">
-                {keywordsList.slice(0, 12).map((kw) => (
-                  <Badge key={kw} variant="secondary" className="text-xs font-medium">
-                    {kw}
-                  </Badge>
-                ))}
-              </div>
-            )}
+
           </header>
 
           {/* Hero image */}
           {article.hero_image_url && (
             <div className="relative aspect-video rounded-2xl overflow-hidden mb-12">
               <img
-                src={article.hero_image_url}
+                src={metadata.ogImage}
                 alt={article.title}
                 className="w-full h-full object-cover"
                 loading="eager"
@@ -198,9 +183,7 @@ export default function BlogArticleDynamic() {
                 prose-blockquote:border-primary prose-blockquote:text-muted-foreground"
               dangerouslySetInnerHTML={{
                 // Replace any <h1> tags in CMS content with <h2> to avoid duplicate H1 on page
-                __html: article.content_html
-                  .replace(/<h1(\s[^>]*)?>/gi, '<h2$1>')
-                  .replace(/<\/h1>/gi, '</h2>'),
+                __html: prepareBlogHtml(article.content_html),
               }}
             />
           )}

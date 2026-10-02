@@ -87,26 +87,26 @@ export default function BlogHeatmapCoTo() {
       <SEOHead
         title="Heatmapa Strony — co to jest? Click scroll i move heatmaps w UX"
         description="Kompletny przewodnik po heatmapach: 4 typy (click, scroll, move, rage clicks), narzędzia, interpretacja wyników i typowe insighty UX."
-        canonical="https://fotz.pl/blog/heatmapa-co-to"
+        canonical="https://www.fotz-studio.pl/blog/heatmapa-co-to"
 
         keywords="Heatmapa Strony co to jest, Heatmapa Strony definicja, czym jest Heatmapa Strony, Heatmapa Strony przykłady, jak działa Heatmapa Strony, Heatmapa Strony znaczenie, Heatmapa Strony przewodnik"
       />
       <ArticleSchema
         title="Heatmapa Strony Internetowej — co to jest i jak używać?"
         description="Kompletny przewodnik po heatmapach: 4 typy (click, scroll, move, rage clicks), narzędzia, interpretacja wyników i typowe insighty UX."
-        url="https://fotz.pl/blog/heatmapa-co-to"
+        url="https://www.fotz-studio.pl/blog/heatmapa-co-to"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Heatmapa", url: "https://fotz.pl/blog/heatmapa-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Heatmapa", url: "https://www.fotz-studio.pl/blog/heatmapa-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Heatmapa", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Heatmapa", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Heatmapa Strony — co to jest i jak używać?
           </h1>

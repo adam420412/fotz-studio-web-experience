@@ -113,21 +113,21 @@ export default function BlogTerraformCoTo() {
       <SEOHead
         title="Terraform — co to jest? IaC, HCL, resources i workflow"
         description="Terraform — definicja, Infrastructure as Code, pojęcia (Provider, Resource, Module, State), workflow i best practices. Kompletny przewodnik po Terraform."
-        canonical="https://fotz.pl/blog/terraform-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/terraform-co-to-jest"
 
         keywords="Terraform co to jest, Terraform definicja, czym jest Terraform, Terraform przykłady, jak działa Terraform, Terraform znaczenie, Terraform przewodnik"
       />
       <ArticleSchema
         title="Terraform — co to jest i jak działa? Kompletny przewodnik po IaC"
         description="Kompletny przewodnik po Terraform: Infrastructure as Code, kluczowe pojęcia, workflow i najlepsze praktyki."
-        url="https://fotz.pl/blog/terraform-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/terraform-co-to-jest"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Terraform", url: "https://fotz.pl/blog/terraform-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Terraform", url: "https://www.fotz-studio.pl/blog/terraform-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -135,7 +135,7 @@ export default function BlogTerraformCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Terraform", url: "https://fotz.pl" },
+              { name: "Terraform", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Terraform — co to jest i jak działa?

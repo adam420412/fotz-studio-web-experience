@@ -219,7 +219,7 @@ export default function GoogleAdsLodz() {
       <SEOHead
         title="Agencja Google Ads Łódź — kampanie reklamowe dla firm | Fotz.pl"
         description="Google Ads Łódź — agencja certyfikowana Fotz.pl. Kampanie od 400 zł/mies., wyniki od 24-48h. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/google-ads/lodz"
+        canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/lodz"
         keywords="google ads łódź, agencja google ads łódź, kampanie google ads łódź, reklamy google łódź, google ads dla firm łódź, sem łódź"
       />
       <ServiceSchema
@@ -229,9 +229,9 @@ export default function GoogleAdsLodz() {
         areaServed="Lodz"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-          { name: "Google Ads Łódź", url: "https://fotz.pl/performance-marketing/google-ads/lodz" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "Google Ads Łódź", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/lodz" }
         ]}/>
       <FAQSchema items={faqItems} />
 

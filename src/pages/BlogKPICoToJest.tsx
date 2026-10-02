@@ -82,7 +82,7 @@ export default function BlogKPICoToJest() {
       <SEOHead
         title="KPI — co to jest i jak mierzyć wyniki? Wskaźniki efektywności"
         description="Czym są KPI (Key Performance Indicators), jak je wyznaczać, przykłady KPI marketingowych i sprzedażowych oraz narzędzia do monitorowania."
-        canonical="https://fotz.pl/blog/kpi-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/kpi-co-to-jest"
 
         keywords="KPI co to jest, KPI definicja, czym jest KPI, KPI przykłady, jak działa KPI, KPI znaczenie, KPI przewodnik"
       />
@@ -91,7 +91,7 @@ export default function BlogKPICoToJest() {
         description="Czym są KPI (Key Performance Indicators), jak je wyznaczać, przykłady KPI marketingowych i sprzedażowych oraz narzędzia do monitorowania."
         datePublished="2025-03-10"
         dateModified="2025-04-05"
-        url="https://fotz.pl/blog/kpi-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/kpi-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -49,21 +49,21 @@ export default function BlogStrategiaCenowa() {
         title="Strategia Cenowa - Jak Ustalić Ceny Produktów i Usług? 2025"
         description="Kompletny przewodnik po strategii cenowej: modele cenowe, analiza, wpływ na rentowność, najczęstsze błędy."
         ogType="article"
-        canonical="https://fotz.pl/blog/strategia-cenowa"
+        canonical="https://www.fotz-studio.pl/blog/strategia-cenowa"
         keywords="strategia cenowa, polityka cenowa firmy, ustalanie cen, modele cenowe, pricing strategy, analiza kosztów"
       />
       <ArticleSchema
         title="Strategia cenowa - jak ustalić ceny produktów i usług"
         description="Kompletny przewodnik po strategii cenowej: modele cenowe, analiza, wpływ na rentowność, najczęstsze błędy."
-        url="https://fotz.pl/blog/strategia-cenowa"
+        url="https://www.fotz-studio.pl/blog/strategia-cenowa"
         datePublished="2025-01-15"
         dateModified="2026-01-15"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Strategia cenowa", url: "https://fotz.pl/blog/strategia-cenowa" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Strategia cenowa", url: "https://www.fotz-studio.pl/blog/strategia-cenowa" },
         ]}/>
       <FAQSchema items={faqItems} />
 

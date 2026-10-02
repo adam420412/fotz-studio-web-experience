@@ -53,21 +53,21 @@ export default function BlogEbpfCoTo() {
       <SEOHead
         title="eBPF — co to jest i jak używać w Kubernetes i observability?"
         description="eBPF: co to jest, architektura (BPF Maps, XDP, kprobes), zastosowania (networking, observability, security), Cilium, Pixie, Falco i jak zacząć."
-        canonical="https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
+        canonical="https://www.fotz-studio.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
 
         keywords="eBPF co to jest, eBPF jak działa, eBPF tutorial, eBPF przykład, czym jest eBPF, eBPF dokumentacja, eBPF przewodnik"
       />
       <ArticleSchema
         title="eBPF — co to jest i jak używać w Kubernetes i observability?"
         description="eBPF: architektura (verifier, JIT, maps), 6 obszarów zastosowań, Cilium/Pixie/Falco/bpftrace, XDP networking i learning path."
-        url="https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
+        url="https://www.fotz-studio.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability"
         datePublished="2024-03-31"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "eBPF", url: "https://fotz.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "eBPF", url: "https://www.fotz-studio.pl/blog/ebpf-co-to-jest-jak-uzywac-kubernetes-observability" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">

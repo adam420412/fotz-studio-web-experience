@@ -33,7 +33,7 @@ export default function BlogSEOvsGoogleAds() {
       <SEOHead
         title="SEO vs Google Ads - Porównanie pozycjonowania i reklamy | Fotz"
         description="Porównanie SEO i Google Ads: różnice, zalety, wady i kiedy wybrać każdą strategię. Przewodnik dla firm chcących zwiększyć widoczność online."
-        canonical="https://fotz.pl/blog/seo-vs-google-ads"
+        canonical="https://www.fotz-studio.pl/blog/seo-vs-google-ads"
 
         keywords="SEO vs Google Ads - Porównanie pozycjonowania i reklamy, SEO vs Google Ads - Porównanie pozycjonowania i reklamy poradnik, SEO vs Google Ads - Porównanie pozycjonowania i reklamy strategia, SEO vs Google Ads - Porównanie pozycjonowania i reklamy jak zrobić, SEO vs Google Ads - Porównanie pozycjonowania i reklamy marketing, SEO vs Google Ads - Porównanie pozycjonowania i reklamy przykłady, SEO vs Google Ads - Porównanie pozycjonowania i reklamy w Polsce"
       />
@@ -45,7 +45,7 @@ export default function BlogSEOvsGoogleAds() {
       <ArticleSchema
         headline="SEO vs Google Ads - Kompleksowe porównanie pozycjonowania i reklamy"
         description="Poznaj różnice między SEO a Google Ads, zalety każdej strategii i dowiedz się, kiedy wybrać każdą z nich."
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         author="Fotz Studio"
         datePublished="2025-02-15"
         dateModified="2025-07-10"

@@ -92,7 +92,7 @@ export default function BlogRetentionMarketingCoTo() {
       <SEOHead
         title="Retention Marketing — co to jest? Strategie utrzymania klientów"
         description="Retention marketing co to jest — wyjaśniamy czym jest marketing retencji, strategie (churn, CLV, NPS), narzędzia i różnice między e-commerce a SaaS."
-        canonical="https://fotz.pl/blog/retention-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/retention-marketing-co-to"
 
         keywords="Retention Marketing co to jest, Retention Marketing definicja, czym jest Retention Marketing, Retention Marketing w marketingu, Retention Marketing przykłady, jak działa Retention Marketing, Retention Marketing strategia"
       />
@@ -101,7 +101,7 @@ export default function BlogRetentionMarketingCoTo() {
         description="Czym jest retention marketing, strategie (program lojalnościowy, email, community), metryki (churn, CLV, NPS), narzędzia i różnice e-commerce vs SaaS."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/retention-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/retention-marketing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

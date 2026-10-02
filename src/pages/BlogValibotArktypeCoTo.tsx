@@ -44,21 +44,21 @@ export default function BlogValibotArktypeCoTo() {
       <SEOHead
         title="Valibot, ArkType, TypeBox i Zod v4 | Fotz Studio"
         description="6 bibliotek schema validation (Zod v4/Valibot/ArkType/TypeBox/Yup/Superstruct) — bundle size, TypeScript, JSON Schema, performance i kiedy wybrać w 2024."
-        canonical="https://fotz.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024"
 
         keywords="Valibot, ArkType, TypeBox i Zod v4 co to jest, Valibot, ArkType, TypeBox i Zod v4 jak działa, Valibot, ArkType, TypeBox i Zod v4 tutorial, Valibot, ArkType, TypeBox i Zod v4 przykład, czym jest Valibot, ArkType, TypeBox i Zod v4, Valibot, ArkType, TypeBox i Zod v4 dokumentacja, Valibot, ArkType, TypeBox i Zod v4 przewodnik"
       />
       <ArticleSchema
         title="Valibot, ArkType, TypeBox i Zod v4 — schema validation TypeScript 2024?"
         description="6 bibliotek schema validation (Zod v4/Valibot/ArkType/TypeBox/Yup/Superstruct) — bundle size, TypeScript, JSON Schema, performance i kiedy wybrać w 2024."
-        url="https://fotz.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Schema Validation TypeScript", url: "https://fotz.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Schema Validation TypeScript", url: "https://www.fotz-studio.pl/blog/valibot-arktype-typebox-zod-v4-schema-validation-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">

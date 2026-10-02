@@ -65,7 +65,7 @@ export default function BlogKRSCoToJest() {
       <SEOHead
         title="KRS — co to jest? Krajowy Rejestr Sadowy — jak sprawdzic"
         description="KRS co to jest — wyjasnamy czym jest Krajowy Rejestr Sadowy, jak sprawdzic firme w KRS, kto musi byc wpisany i czym rozni sie KRS od CEIDG."
-        canonical="https://fotz.pl/blog/krs-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/krs-co-to-jest"
 
         keywords="KRS co to jest, KRS definicja, czym jest KRS, KRS przykłady, jak działa KRS, KRS znaczenie, KRS przewodnik"
       />
@@ -74,7 +74,7 @@ export default function BlogKRSCoToJest() {
         description="Czym jest KRS (Krajowy Rejestr Sadowy), jak sprawdzic firme w KRS, kto musi byc wpisany, jak rejestrowac spolke i roznica KRS vs CEIDG."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/krs-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/krs-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

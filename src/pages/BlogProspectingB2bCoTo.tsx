@@ -88,21 +88,21 @@ export default function BlogProspectingB2bCoTo() {
       <SEOHead
         title="Prospecting B2B — co to jest i jak generować leady? | Fotz.pl"
         description="Prospecting B2B — kanały (cold email, LinkedIn, cold calling), jak pisać cold emaile, budować pipeline i sekwencje outreach. Kompletny przewodnik dla Sales."
-        canonical="https://fotz.pl/blog/prospecting-b2b-generowanie-leadow"
+        canonical="https://www.fotz-studio.pl/blog/prospecting-b2b-generowanie-leadow"
 
         keywords="Prospecting B2B co to jest, Prospecting B2B definicja, czym jest Prospecting B2B, Prospecting B2B w marketingu, Prospecting B2B przykłady, jak działa Prospecting B2B, Prospecting B2B strategia"
       />
       <ArticleSchema
         title="Prospecting B2B — co to jest i jak generować leady?"
         description="Kompletny przewodnik po prospectingu B2B: kanały, cold email, LinkedIn, cold calling i sekwencje outreach."
-        url="https://fotz.pl/blog/prospecting-b2b-generowanie-leadow"
+        url="https://www.fotz-studio.pl/blog/prospecting-b2b-generowanie-leadow"
         datePublished="2024-02-09"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Prospecting B2B", url: "https://fotz.pl/blog/prospecting-b2b-generowanie-leadow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Prospecting B2B", url: "https://www.fotz-studio.pl/blog/prospecting-b2b-generowanie-leadow" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white py-20 px-4">

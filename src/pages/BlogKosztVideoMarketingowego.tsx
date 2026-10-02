@@ -94,22 +94,22 @@ export default function BlogKosztVideoMarketingowego() {
       <SEOHead
         title="Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025"
         description="Kompleksowy poradnik kosztów produkcji wideo w Polsce. Ceny spotów reklamowych, filmów produktowych, animacji, webinarów i szkoleń video."
-        canonical="https://fotz.pl/blog/koszt-produkcji-wideo"
+        canonical="https://www.fotz-studio.pl/blog/koszt-produkcji-wideo"
 
         keywords="Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 co to jest, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 jak działa, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 definicja, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 przykłady, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 poradnik, Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025 przewodnik"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           {
             name: "Ile kosztuje produkcja wideo",
-            url: "https://fotz.pl/blog/koszt-produkcji-wideo",
+            url: "https://www.fotz-studio.pl/blog/koszt-produkcji-wideo",
           },
         ]}/>
       <ArticleSchema
         headline="Ile kosztuje produkcja wideo - cennik, poradnik, ROI 2025"
         description="Kompleksowy poradnik kosztów produkcji wideo w Polsce. Ceny spotów reklamowych, filmów produktowych, animacji, webinarów i szkoleń video."
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         datePublished="2025-04-12"
         author="Fotz Studio"
       />

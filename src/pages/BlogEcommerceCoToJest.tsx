@@ -66,9 +66,9 @@ export default function BlogEcommerceCoToJest() {
   return (
     <>
       <SEOHead
-        title="E-commerce — co to jest? Sklep internetowy — poradnik | fotz.pl"
+        title="E-commerce — co to jest? Sklep internetowy — poradnik | FOTZ Studio"
         description="E-commerce co to jest — wyjasnamy czym jest handel elektroniczny, jak zalozyc sklep internetowy, koszty, Allegro vs wlasny sklep i jak zwiekszyc sprzedaz."
-        canonical="https://fotz.pl/blog/e-commerce-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/e-commerce-co-to-jest"
 
         keywords="E-commerce co to jest, E-commerce definicja, czym jest E-commerce, E-commerce przykłady, jak działa E-commerce, E-commerce znaczenie, E-commerce przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogEcommerceCoToJest() {
         description="Czym jest e-commerce, modele (B2C, B2B, D2C), jak zalozyc sklep internetowy, koszty, Allegro vs wlasny sklep i kluczowe metryki sklepu online."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/e-commerce-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/e-commerce-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

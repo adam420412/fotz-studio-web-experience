@@ -43,9 +43,9 @@ export default function BlogLandingPageCena() {
     <>
       <Layout>
         <SEOHead
-          title="Ile kosztuje landing page? Ceny 2025 | fotz.pl"
+          title="Ile kosztuje landing page? Ceny 2025 | FOTZ Studio"
           description="Ile kosztuje landing page? Ceny od agencji, freelancera i builderów. Porównanie kosztów. Sprawdź co wpływa na cenę landing page!"
-          canonical="https://fotz.pl/blog/landing-page-cena"
+          canonical="https://www.fotz-studio.pl/blog/landing-page-cena"
           keywords="landing page cena, ile kosztuje landing page, cennik landing page, ceny landing page 2025"
         />
 
@@ -54,13 +54,13 @@ export default function BlogLandingPageCena() {
           description="Kompletny przegląd cen landing page: budujemy, freelancerami agencjami. Jakie czynniki wpływają na cenę? Kiedy co wybrać?"
           author="Fotz Studio"
           datePublished={publicationDate}
-          image="https://fotz.pl/og-image.jpg"
+          image="https://www.fotz-studio.pl/og-image.jpg"
         />
 
         <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Landing page cena", url: "https://fotz.pl/blog/landing-page-cena" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Landing page cena", url: "https://www.fotz-studio.pl/blog/landing-page-cena" }
         ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

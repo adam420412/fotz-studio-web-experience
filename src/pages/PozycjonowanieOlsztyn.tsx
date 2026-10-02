@@ -80,7 +80,7 @@ export default function PozycjonowanieOlsztyn() {
         <SEOHead
           title="Pozycjonowanie stron Olsztyn | Agencja SEO fotz.pl"
           description="Pozycjonowanie stron internetowych w Olsztynie. SEO dla firm z Warmii i Mazur. Wyższe pozycje w Google. Bezpłatna wycena!"
-          canonical="https://fotz.pl/uslugi/pozycjonowanie/olsztyn"
+          canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/olsztyn"
           keywords="pozycjonowanie olsztyn, agencja seo olsztyn, seo olsztyn, pozycjonowanie stron olsztyn, seo dla firm olsztyn, seo warmia mazury, pozycjonowanie lokalne olsztyn"
         />
 
@@ -91,10 +91,10 @@ export default function PozycjonowanieOlsztyn() {
           areaServed="Olsztyn"
         />
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Usługi", url: "https://fotz.pl/uslugi" },
-            { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-            { name: "Pozycjonowanie Olsztyn", url: "https://fotz.pl/uslugi/pozycjonowanie/olsztyn" }
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+            { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+            { name: "Pozycjonowanie Olsztyn", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/olsztyn" }
           ]}/>
         <FAQSchema items={faqItems} />
 

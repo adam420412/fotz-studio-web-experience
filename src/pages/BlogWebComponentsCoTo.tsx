@@ -44,21 +44,21 @@ export default function BlogWebComponentsCoTo() {
       <SEOHead
         title="Web Components, Lit, Stencil i Micro-frontends | Fotz Studio"
         description="6 narzędzi Web Components (Lit/Stencil/Shoelace/Astro+WC/Module Federation/Single SPA) — Custom Elements, Shadow DOM, SSR, micro-frontends i framework interop."
-        canonical="https://fotz.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024"
+        canonical="https://www.fotz-studio.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024"
 
         keywords="Web Components, Lit, Stencil i Micro-frontends co to jest, Web Components, Lit, Stencil i Micro-frontends definicja, czym jest Web Components, Lit, Stencil i Micro-frontends, Web Components, Lit, Stencil i Micro-frontends przykłady, jak działa Web Components, Lit, Stencil i Micro-frontends, Web Components, Lit, Stencil i Micro-frontends znaczenie, Web Components, Lit, Stencil i Micro-frontends przewodnik"
       />
       <ArticleSchema
         title="Web Components, Lit, Stencil i Micro-frontends — natywne komponenty przeglądarki 2024?"
         description="6 narzędzi Web Components (Lit/Stencil/Shoelace/Astro+WC/Module Federation/Single SPA) — Custom Elements, Shadow DOM, SSR, micro-frontends i framework interop."
-        url="https://fotz.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024"
+        url="https://www.fotz-studio.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Web Components i Lit", url: "https://fotz.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Web Components i Lit", url: "https://www.fotz-studio.pl/blog/web-components-lit-stencil-shadow-dom-micro-frontends-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-pink-950 text-white py-20 px-4">

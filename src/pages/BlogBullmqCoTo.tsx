@@ -44,21 +44,21 @@ export default function BlogBullmqCoTo() {
       <SEOHead
         title="BullMQ, Inngest i job queues — background jobs w Node.js Next.js 2024?"
         description="6 rozwiązań job queue (BullMQ/Inngest/Trigger.dev/Qstash/Temporal/pg-boss) — Redis, managed queues, priority, flows, rate limiting i praktyczne zastosowania."
-        canonical="https://fotz.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
+        canonical="https://www.fotz-studio.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
 
         keywords="BullMQ, Inngest i job queues co to jest, BullMQ, Inngest i job queues jak działa, BullMQ, Inngest i job queues tutorial, BullMQ, Inngest i job queues przykład, czym jest BullMQ, Inngest i job queues, BullMQ, Inngest i job queues dokumentacja, BullMQ, Inngest i job queues przewodnik"
       />
       <ArticleSchema
         title="BullMQ, Inngest i job queues — background jobs w Node.js Next.js 2024?"
         description="6 rozwiązań job queue (BullMQ/Inngest/Trigger.dev/Qstash/Temporal/pg-boss) — Redis, managed queues, priority, flows, rate limiting i praktyczne zastosowania."
-        url="https://fotz.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "BullMQ i Job Queues", url: "https://fotz.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "BullMQ i Job Queues", url: "https://www.fotz-studio.pl/blog/bullmq-inngest-job-queues-background-jobs-nodejs-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-rose-950 text-white py-20 px-4">

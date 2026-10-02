@@ -79,12 +79,12 @@ const StronyInternetoweElblag = () => {
       <SEOHead
         title="Strony Internetowe Elbląg | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Elbląg — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Elbląga. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/elblag"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/elblag"
         keywords="strony internetowe elbląg, tworzenie stron elbląg, strony www elbląg, projektowanie stron elbląg"
       />
       
       <ServiceSchema name="Strony Internetowe Elbląg" description="Tworzenie stron internetowych dla firm z Elbląga." provider="FOTZ Studio" areaServed="Elbląg" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Elbląg", url: "https://fotz.pl/uslugi/strony-internetowe/elblag" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Elbląg", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/elblag" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

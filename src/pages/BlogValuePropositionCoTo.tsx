@@ -64,9 +64,9 @@ export default function BlogValuePropositionCoTo() {
   return (
     <>
       <SEOHead
-        title="Value Proposition — co to jest i jak napisac? | fotz.pl"
+        title="Value Proposition — co to jest i jak napisac? | FOTZ Studio"
         description="Value Proposition co to jest — wyjasnamy czym jest propozycja wartosci, jak napisac Value Proposition, roznica vs USP i przyklady dobrego VP dla B2B i B2C."
-        canonical="https://fotz.pl/blog/value-proposition-co-to"
+        canonical="https://www.fotz-studio.pl/blog/value-proposition-co-to"
 
         keywords="Value Proposition co to jest, Value Proposition jak działa, Value Proposition tutorial, Value Proposition przykład, czym jest Value Proposition, Value Proposition dokumentacja, Value Proposition przewodnik"
       />
@@ -75,7 +75,7 @@ export default function BlogValuePropositionCoTo() {
         description="Czym jest Value Proposition (propozycja wartosci), jak ja napisac, roznica vs USP, gdzie umiescic na stronie i jak testowac skutecznosc."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/value-proposition-co-to"
+        url="https://www.fotz-studio.pl/blog/value-proposition-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

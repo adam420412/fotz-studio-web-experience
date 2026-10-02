@@ -164,7 +164,7 @@ const TikTokAds = () => {
       <SEOHead
         title="Agencja TikTok Ads — Reklamy na TikToku dla Firm | Fotz Studio"
         description="Agencja TikTok Ads ✓ Tworzenie i prowadzenie kampanii na TikToku. In-Feed Ads, Spark Ads, TopView, TikTok for Business. Skuteczne reklamy TikTok, które zatrzymują scroll i generują konwersje."
-        canonical="https://fotz.pl/performance-marketing/tiktok-ads"
+        canonical="https://www.fotz-studio.pl/performance-marketing/tiktok-ads"
         keywords="agencja tiktok ads, tiktok ads, reklamy tiktok, kampanie tiktok, tiktok ads manager, tiktok for business, tiktok pixel, in-feed ads"
       />
       <ServiceSchema
@@ -173,9 +173,9 @@ const TikTokAds = () => {
         provider="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "TikTok Ads", url: "https://fotz.pl/performance-marketing/tiktok-ads" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
+          { name: "TikTok Ads", url: "https://www.fotz-studio.pl/performance-marketing/tiktok-ads" },
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

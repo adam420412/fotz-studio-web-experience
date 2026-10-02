@@ -44,21 +44,21 @@ export default function BlogLegendStateNanostoresCoTo() {
       <SEOHead
         title="Legend State, Nanostores, Valtio i Signals | Fotz Studio"
         description="6 nowoczesnych bibliotek state management (Legend State/Nanostores/Valtio/Signals/Zustand/Jotai) — signals, proxy, atoms i porównanie bundle size."
-        canonical="https://fotz.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
 
         keywords="Legend State, Nanostores, Valtio i Signals co to jest, Legend State, Nanostores, Valtio i Signals jak działa, Legend State, Nanostores, Valtio i Signals tutorial, Legend State, Nanostores, Valtio i Signals przykład, czym jest Legend State, Nanostores, Valtio i Signals, Legend State, Nanostores, Valtio i Signals dokumentacja, Legend State, Nanostores, Valtio i Signals przewodnik"
       />
       <ArticleSchema
         title="Legend State, Nanostores, Valtio i Signals — state management React 2024?"
         description="6 nowoczesnych bibliotek state management (Legend State/Nanostores/Valtio/Signals/Zustand/Jotai) — signals, proxy, atoms i porównanie bundle size."
-        url="https://fotz.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
+        url="https://www.fotz-studio.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "State Management React 2024", url: "https://fotz.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "State Management React 2024", url: "https://www.fotz-studio.pl/blog/legend-state-nanostores-valtio-signals-state-management-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

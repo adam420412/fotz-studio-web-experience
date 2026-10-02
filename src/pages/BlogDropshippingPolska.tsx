@@ -56,7 +56,7 @@ export default function BlogDropshippingPolska() {
       <SEOHead
         title="Dropshipping w Polsce 2025 | Fotz Studio"
         description="Dropshipping w Polsce 2025. Poradnik: jak zacząć, platformy, dostawcy, koszty, marże, VAT, RODO. Sprawdź czy dropshipping jest dla Ciebie."
-        canonical="https://fotz.pl/blog/dropshipping-polska"
+        canonical="https://www.fotz-studio.pl/blog/dropshipping-polska"
         keywords="dropshipping Polska, jak zacząć dropshipping, platformy dropshipping, dostawcy, koszty, marża"
       />
 
@@ -66,7 +66,7 @@ export default function BlogDropshippingPolska() {
         author="Fotz"
         datePublished={publicationDate}
         dateModified={modifiedDate}
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
       />
 
       <BreadcrumbSchema items={breadcrumbs} />

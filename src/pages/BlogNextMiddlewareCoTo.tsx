@@ -44,21 +44,21 @@ export default function BlogNextMiddlewareCoTo() {
       <SEOHead
         title="Next.js Middleware — auth, i18n, rate limiting, A/B testing i Edge security 2024?"
         description="Next.js Middleware (edge runtime), auth (Clerk/Auth.js v5), i18n (next-intl), rate limiting (Upstash), A/B testing, geolocation i security headers na edge."
-        canonical="https://fotz.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024"
+        canonical="https://www.fotz-studio.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024"
 
         keywords="Next.js Middleware co to jest, Next.js Middleware jak działa, Next.js Middleware tutorial, Next.js Middleware przykład, czym jest Next.js Middleware, Next.js Middleware dokumentacja, Next.js Middleware przewodnik"
       />
       <ArticleSchema
         title="Next.js Middleware — auth, i18n, rate limiting, A/B testing i Edge security 2024?"
         description="6 zastosowań Middleware (autentykacja/i18n/rate limiting/A/B testing/geolocation/security headers) — Edge Runtime, Clerk, next-intl, Upstash i Arcjet."
-        url="https://fotz.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024"
+        url="https://www.fotz-studio.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Next.js Middleware", url: "https://fotz.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Next.js Middleware", url: "https://www.fotz-studio.pl/blog/nextjs-middleware-edge-auth-i18n-rate-limiting-ab-testing-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-green-950 text-white py-20 px-4">

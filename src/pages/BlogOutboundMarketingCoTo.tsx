@@ -101,21 +101,21 @@ export default function BlogOutboundMarketingCoTo() {
       <SEOHead
         title="Outbound Marketing — co to jest i jak działa? | Fotz Studio"
         description="Outbound marketing — definicja, 6 kanałów (cold email, LinkedIn, PPC, direct mail), porównanie z inbound i jak skutecznie prowadzić kampanie wychodzące."
-        canonical="https://fotz.pl/blog/outbound-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/outbound-marketing-co-to"
 
         keywords="Outbound Marketing co to jest, Outbound Marketing definicja, czym jest Outbound Marketing, Outbound Marketing w marketingu, Outbound Marketing przykłady, jak działa Outbound Marketing, Outbound Marketing strategia"
       />
       <ArticleSchema
         title="Outbound Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po outbound marketingu: kanały, strategie i porównanie z inbound marketingiem."
-        url="https://fotz.pl/blog/outbound-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/outbound-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Outbound Marketing", url: "https://fotz.pl/blog/outbound-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Outbound Marketing", url: "https://www.fotz-studio.pl/blog/outbound-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -123,7 +123,7 @@ export default function BlogOutboundMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Outbound Marketing", url: "https://fotz.pl" },
+              { name: "Outbound Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Outbound Marketing — co to jest i jak działa?

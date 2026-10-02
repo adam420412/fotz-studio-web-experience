@@ -74,21 +74,21 @@ export default function BlogMicroInfluencerCoTo() {
       <SEOHead
         title="Micro Influencer — co to jest? Marketing z mikroinfluencerami"
         description="Kompletny przewodnik po micro influencer marketingu: porównanie z macro, koszty, jak znajdować twórców i mierzyć ROI."
-        canonical="https://fotz.pl/blog/micro-influencer-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/micro-influencer-marketing-co-to"
 
         keywords="Micro Influencer co to jest, Micro Influencer definicja, czym jest Micro Influencer, Micro Influencer w marketingu, Micro Influencer przykłady, jak działa Micro Influencer, Micro Influencer strategia"
       />
       <ArticleSchema
         title="Micro Influencer — co to jest i jak z nimi współpracować?"
         description="Kompletny przewodnik po micro influencer marketingu: porównanie z macro, koszty, jak znajdować twórców i mierzyć ROI."
-        url="https://fotz.pl/blog/micro-influencer-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/micro-influencer-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Micro Influencer Marketing", url: "https://fotz.pl/blog/micro-influencer-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Micro Influencer Marketing", url: "https://www.fotz-studio.pl/blog/micro-influencer-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -96,7 +96,7 @@ export default function BlogMicroInfluencerCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Micro Influencer Marketing", url: "https://fotz.pl" },
+              { name: "Micro Influencer Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Micro Influencer Marketing — co to jest i jak działa?

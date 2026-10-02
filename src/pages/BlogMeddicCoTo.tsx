@@ -113,21 +113,21 @@ export default function BlogMeddicCoTo() {
       <SEOHead
         title="MEDDIC — co to jest? Framework kwalifikacji sprzedaży B2B"
         description="Kompletny przewodnik po MEDDIC: 6 elementów, porównanie z BANT, MEDDICC/MEDDPICC i deal scoring."
-        canonical="https://fotz.pl/blog/meddic-kwalifikacja-sprzedazy-b2b"
+        canonical="https://www.fotz-studio.pl/blog/meddic-kwalifikacja-sprzedazy-b2b"
 
         keywords="MEDDIC co to jest, MEDDIC definicja, czym jest MEDDIC, MEDDIC w sprzedaży, MEDDIC strategia, MEDDIC przykłady, jak używać MEDDIC"
       />
       <ArticleSchema
         title="MEDDIC — co to jest i jak kwalifikować szanse sprzedażowe B2B?"
         description="Kompletny przewodnik po MEDDIC: 6 elementów, porównanie z BANT, MEDDICC/MEDDPICC i deal scoring."
-        url="https://fotz.pl/blog/meddic-kwalifikacja-sprzedazy-b2b"
+        url="https://www.fotz-studio.pl/blog/meddic-kwalifikacja-sprzedazy-b2b"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "MEDDIC", url: "https://fotz.pl/blog/meddic-kwalifikacja-sprzedazy-b2b" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "MEDDIC", url: "https://www.fotz-studio.pl/blog/meddic-kwalifikacja-sprzedazy-b2b" },
         ]}/>
 
       {/* Hero */}
@@ -135,7 +135,7 @@ export default function BlogMeddicCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "MEDDIC", url: "https://fotz.pl" },
+              { name: "MEDDIC", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             MEDDIC — co to jest i jak kwalifikować deale B2B?

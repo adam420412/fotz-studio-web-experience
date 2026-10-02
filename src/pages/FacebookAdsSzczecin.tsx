@@ -12,14 +12,14 @@ export default function FacebookAdsSzczecin() {
       <SEOHead
         title="Agencja Facebook Ads Szczecin — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Szczecin ✓ Kampanie Meta Ads dla firm z Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/facebook-ads/szczecin"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/szczecin"
         keywords="facebook ads szczecin, meta ads szczecin, reklamy facebook szczecin, agencja facebook ads szczecin, kampanie facebook szczecin, instagram ads szczecin, facebook ads dla firm szczecin, reklama na facebooku szczecin, meta ads agencja szczecin, facebook ads cennik szczecin"
       />
       <BreadcrumbSchema items={[
-          { name: "Fotz.pl", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-          { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Szczecin", url: "https://fotz.pl" }
+          { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+          { name: "Szczecin", url: "https://www.fotz-studio.pl" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Szczecin"
@@ -32,7 +32,7 @@ export default function FacebookAdsSzczecin() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { name: "Szczecin", url: "https://fotz.pl" }
+            { name: "Szczecin", url: "https://www.fotz-studio.pl" }
           ]}/>
 
         {/* HERO SECTION */}

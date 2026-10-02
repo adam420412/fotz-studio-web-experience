@@ -44,21 +44,21 @@ export default function BlogPandaCssUnoCoTo() {
       <SEOHead
         title="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX"
         description="6 CSS frameworków (Tailwind/UnoCSS/Panda CSS/Vanilla Extract/StyleX/Open Props) — zero-runtime, atomic CSS, TypeScript DX, design tokens i kiedy wybrać w 2024."
-        canonical="https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
+        canonical="https://www.fotz-studio.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
 
         keywords="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX co to jest, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX definicja, czym jest Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX przykłady, jak działa Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX znaczenie, Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX przewodnik"
       />
       <ArticleSchema
         title="Panda CSS, UnoCSS, Open Props, Vanilla Extract i StyleX — atomic CSS 2024?"
         description="6 CSS frameworków (Tailwind/UnoCSS/Panda CSS/Vanilla Extract/StyleX/Open Props) — zero-runtime, atomic CSS, TypeScript DX, design tokens i kiedy wybrać w 2024."
-        url="https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
+        url="https://www.fotz-studio.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024"
         datePublished="2024-07-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Atomic CSS 2024", url: "https://fotz.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Atomic CSS 2024", url: "https://www.fotz-studio.pl/blog/panda-css-unocss-open-props-vanilla-extract-stylex-atomic-css-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-rose-950 text-white py-20 px-4">

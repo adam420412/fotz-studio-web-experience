@@ -44,21 +44,21 @@ export default function BlogSagaPatternCoTo() {
       <SEOHead
         title="Saga Pattern — co to jest, Choreography vs Orchestration, Temporal.io, Kafka?"
         description="Saga Pattern: distributed transactions w mikrousługach, Choreography vs Orchestration, Temporal.io durable workflows, implementacja z Kafka i Event Store."
-        canonical="https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
+        canonical="https://www.fotz-studio.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
 
         keywords="Saga Pattern co to jest, Saga Pattern definicja, czym jest Saga Pattern, Saga Pattern przykłady, jak działa Saga Pattern, Saga Pattern znaczenie, Saga Pattern przewodnik"
       />
       <ArticleSchema
         title="Saga Pattern — co to jest, Choreography vs Orchestration, Temporal.io, Kafka?"
         description="Saga Pattern: zamiast 2PC, choreography vs orchestration, Temporal.io, Kafka, compensating transactions, pułapki i anty-wzorce."
-        url="https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
+        url="https://www.fotz-studio.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Saga Pattern", url: "https://fotz.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Saga Pattern", url: "https://www.fotz-studio.pl/blog/saga-pattern-co-to-jest-choreography-orchestration-temporal-kafka" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-violet-950 text-white py-20 px-4">

@@ -44,21 +44,21 @@ export default function BlogAstroCoTo() {
       <SEOHead
         title="Astro, SvelteKit, Remix — Island Architecture, co to jest, kiedy wybrać?"
         description="Astro Island Architecture, SvelteKit nested routing i actions, Remix progressive enhancement — porównanie z Next.js i Qwik, kiedy wybrać w 2024."
-        canonical="https://fotz.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac"
+        canonical="https://www.fotz-studio.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac"
 
         keywords="Astro, SvelteKit, Remix co to jest, Astro, SvelteKit, Remix jak działa, Astro, SvelteKit, Remix tutorial, Astro, SvelteKit, Remix przykład, czym jest Astro, SvelteKit, Remix, Astro, SvelteKit, Remix dokumentacja, Astro, SvelteKit, Remix przewodnik"
       />
       <ArticleSchema
         title="Astro, SvelteKit, Remix — Island Architecture, co to jest, kiedy wybrać?"
         description="Astro Island Architecture, SvelteKit, Remix, Qwik, Nuxt — 6 frameworków porównane (rendering/JS/ekosystem/zastosowanie), content collections, loaders, actions."
-        url="https://fotz.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac"
+        url="https://www.fotz-studio.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Astro, SvelteKit, Remix", url: "https://fotz.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Astro, SvelteKit, Remix", url: "https://www.fotz-studio.pl/blog/astro-sveltekit-remix-island-architecture-co-to-jest-kiedy-wybrac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-pink-950 text-white py-20 px-4">

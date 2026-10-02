@@ -74,21 +74,21 @@ export default function BlogQuotaPlanningCoTo() {
       <SEOHead
         title="Quota Planning — jak ustalać targety sprzedażowe w SaaS?"
         description="Quota Planning: metodologie (top-down, bottom-up, market-based), ramp schedule, quota attainment benchmarks, metryki i jak planować quoty na rok."
-        canonical="https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
+        canonical="https://www.fotz-studio.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
 
         keywords="Quota Planning co to jest, Quota Planning definicja, czym jest Quota Planning, Quota Planning startup, Quota Planning jak liczyć, Quota Planning wzór, Quota Planning przykłady"
       />
       <ArticleSchema
         title="Quota Planning — jak ustalać targety sprzedażowe w SaaS?"
         description="Quota Planning: metodologie ustalania quotów, quota-to-OTE ratio, ramp schedule, quota coverage, attainment benchmarks i Quota Planning Calendar dla zespołów SaaS."
-        url="https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
+        url="https://www.fotz-studio.pl/blog/quota-planning-targetowanie-sprzedazowe-saas"
         datePublished="2024-03-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Quota Planning", url: "https://fotz.pl/blog/quota-planning-targetowanie-sprzedazowe-saas" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Quota Planning", url: "https://www.fotz-studio.pl/blog/quota-planning-targetowanie-sprzedazowe-saas" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 text-white py-20 px-4">

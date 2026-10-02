@@ -49,21 +49,21 @@ export default function BlogCustomerHealthScoreCoTo() {
       <SEOHead
         title="Customer Health Score — co to jest i jak zbudować? | Fotz.pl"
         description="Customer Health Score: jak zbudować model, sygnały (usage, NPS, support, engagement), progi RAG, playbooks CSM i narzędzia (Gainsight, ChurnZero, Planhat)."
-        canonical="https://fotz.pl/blog/customer-health-score-co-to"
+        canonical="https://www.fotz-studio.pl/blog/customer-health-score-co-to"
 
         keywords="Customer Health Score co to jest, Customer Health Score definicja, czym jest Customer Health Score, Customer Health Score przykłady, jak działa Customer Health Score, Customer Health Score znaczenie, Customer Health Score przewodnik"
       />
       <ArticleSchema
         title="Customer Health Score — co to jest i jak zbudować?"
         description="Customer Health Score: budowanie modelu, sygnały (product usage, NPS, support, engagement, commercial), progi RAG, playbooks CSM i narzędzia Customer Success."
-        url="https://fotz.pl/blog/customer-health-score-co-to"
+        url="https://www.fotz-studio.pl/blog/customer-health-score-co-to"
         datePublished="2024-03-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Customer Health Score", url: "https://fotz.pl/blog/customer-health-score-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Customer Health Score", url: "https://www.fotz-studio.pl/blog/customer-health-score-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">

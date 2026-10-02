@@ -113,9 +113,9 @@ export default function AgencjaSEOWroclaw() {
     <>
       <Layout>
         <SEOHead
-          title="Agencja SEO Wrocław | Pozycjonowanie stron Wrocław | fotz.pl"
+          title="Agencja SEO Wrocław | Pozycjonowanie stron Wrocław | FOTZ Studio"
           description="Agencja SEO Wrocław — pozycjonujemy strony firm z Wrocławia. Top 10 Google. Sprawdź pakiety SEO dla firm wrocławskich!"
-          canonical="https://fotz.pl/agencja-seo-wroclaw"
+          canonical="https://www.fotz-studio.pl/agencja-seo-wroclaw"
           keywords="agencja seo wrocław, pozycjonowanie wrocław, seo wrocław, agencja seo wrocław cena, pozycjonowanie stron wrocław, seo dla firm wrocław, audyt seo wrocław, optymalizacja seo wrocław, pozycjonowanie lokalne wrocław, link building wrocław"
         />
 
@@ -127,9 +127,9 @@ export default function AgencjaSEOWroclaw() {
         />
 
         <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja SEO", url: "https://fotz.pl/seo/pozycjonowanie" },
-          { name: "Wrocław", url: "https://fotz.pl/agencja-seo-wroclaw" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja SEO", url: "https://www.fotz-studio.pl/seo/pozycjonowanie" },
+          { name: "Wrocław", url: "https://www.fotz-studio.pl/agencja-seo-wroclaw" }
         ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

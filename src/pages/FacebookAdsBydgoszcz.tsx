@@ -12,14 +12,14 @@ export default function FacebookAdsBydgoszcz() {
       <SEOHead
         title="Agencja Facebook Ads Bydgoszcz — reklamy Meta dla firm | Fotz.pl"
         description="Facebook Ads Bydgoszcz ✓ Kampanie Meta Ads dla firm z Bydgoszczy i Kujaw. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/facebook-ads/bydgoszcz"
+        canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/bydgoszcz"
         keywords="facebook ads bydgoszcz, meta ads bydgoszcz, reklamy facebook bydgoszcz, agencja facebook ads bydgoszcz, kampanie facebook bydgoszcz, instagram ads bydgoszcz, facebook ads dla firm bydgoszcz, reklama na facebooku bydgoszcz, meta ads agencja bydgoszcz, facebook ads cennik bydgoszcz"
       />
       <BreadcrumbSchema items={[
-          { name: "Fotz.pl", url: "https://fotz.pl" },
-          { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-          { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-          { name: "Bydgoszcz", url: "https://fotz.pl" }
+          { name: "Fotz.pl", url: "https://www.fotz-studio.pl" },
+          { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+          { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+          { name: "Bydgoszcz", url: "https://www.fotz-studio.pl" }
         ]}/>
       <ServiceSchema
         name="Facebook Ads Bydgoszcz"
@@ -32,7 +32,7 @@ export default function FacebookAdsBydgoszcz() {
             { name: "Home", path: "/" },
             { name: "Performance Marketing", path: "/performance-marketing" },
             { name: "Facebook Ads", path: "/performance-marketing/facebook-ads" },
-            { name: "Bydgoszcz", url: "https://fotz.pl" }
+            { name: "Bydgoszcz", url: "https://www.fotz-studio.pl" }
           ]}/>
 
         {/* HERO SECTION */}

@@ -78,21 +78,21 @@ export default function BlogFeatureFlagCoTo() {
       <SEOHead
         title="Feature Flags — co to jest i jak stosować? | Fotz.pl"
         description="Kompletny przewodnik po Feature Flags: typy, korzyści, platformy i best practices dla Continuous Delivery."
-        canonical="https://fotz.pl/blog/feature-flags-co-to-jest-jak-stosowac"
+        canonical="https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-jak-stosowac"
 
         keywords="Feature Flags co to jest, Feature Flags definicja, czym jest Feature Flags, Feature Flags przykłady, jak działa Feature Flags, Feature Flags znaczenie, Feature Flags przewodnik"
       />
       <ArticleSchema
         title="Feature Flags — co to jest i jak stosować?"
         description="Kompletny przewodnik po Feature Flags: typy, korzyści, platformy i best practices dla Continuous Delivery."
-        url="https://fotz.pl/blog/feature-flags-co-to-jest-jak-stosowac"
+        url="https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-jak-stosowac"
         datePublished="2024-02-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Feature Flags", url: "https://fotz.pl/blog/feature-flags-co-to-jest-jak-stosowac" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Feature Flags", url: "https://www.fotz-studio.pl/blog/feature-flags-co-to-jest-jak-stosowac" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

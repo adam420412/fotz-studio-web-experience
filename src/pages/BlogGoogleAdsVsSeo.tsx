@@ -87,21 +87,21 @@ export default function BlogGoogleAdsVsSeo() {
       <SEOHead
         title="Google Ads vs SEO — co wybrać w 2025? Porównanie kosztów i efektów"
         description="Kompleksowe porównanie Google Ads i SEO: koszty, czas efektów, ROI, kiedy wybrać każdą strategię i jak je łączyć dla najlepszych wyników."
-        canonical="https://fotz.pl/blog/google-ads-vs-seo"
+        canonical="https://www.fotz-studio.pl/blog/google-ads-vs-seo"
 
         keywords="Google Ads vs SEO, Google Ads vs SEO poradnik, Google Ads vs SEO strategia, Google Ads vs SEO jak zrobić, Google Ads vs SEO marketing, Google Ads vs SEO przykłady, Google Ads vs SEO w Polsce"
       />
       <ArticleSchema
         title="Google Ads vs SEO — co wybrać w 2025? Porównanie kosztów i efektów"
         description="Kompleksowe porównanie Google Ads i SEO: koszty, czas efektów, ROI, kiedy wybrać każdą strategię i jak je łączyć dla najlepszych wyników."
-        url="https://fotz.pl/blog/google-ads-vs-seo"
+        url="https://www.fotz-studio.pl/blog/google-ads-vs-seo"
         datePublished="2025-04-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Google Ads vs SEO", url: "https://fotz.pl/blog/google-ads-vs-seo" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Google Ads vs SEO", url: "https://www.fotz-studio.pl/blog/google-ads-vs-seo" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-900 text-white py-20 px-4">

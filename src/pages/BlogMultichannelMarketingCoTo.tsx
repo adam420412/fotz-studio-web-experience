@@ -81,21 +81,21 @@ export default function BlogMultichannelMarketingCoTo() {
       <SEOHead
         title="Multichannel Marketing — co to jest i jak wdrożyć?"
         description="Multichannel marketing — definicja, różnice vs. omnichannel, 6 kanałów (sklep, www, email, social, ads, marketplace), 5-krokowy proces. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/multichannel-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/multichannel-marketing-co-to"
 
         keywords="Multichannel Marketing co to jest, Multichannel Marketing definicja, czym jest Multichannel Marketing, Multichannel Marketing w marketingu, Multichannel Marketing przykłady, jak działa Multichannel Marketing, Multichannel Marketing strategia"
       />
       <ArticleSchema
         title="Multichannel Marketing — co to jest i jak wdrożyć?"
         description="Kompletny przewodnik po multichannel marketingu: porównanie z omnichannel, matryca kanałów i 5-krokowy proces wdrożenia."
-        url="https://fotz.pl/blog/multichannel-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/multichannel-marketing-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Multichannel Marketing", url: "https://fotz.pl/blog/multichannel-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Multichannel Marketing", url: "https://www.fotz-studio.pl/blog/multichannel-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -103,7 +103,7 @@ export default function BlogMultichannelMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Multichannel Marketing", url: "https://fotz.pl" },
+              { name: "Multichannel Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Multichannel Marketing — co to jest i jak wdrożyć?

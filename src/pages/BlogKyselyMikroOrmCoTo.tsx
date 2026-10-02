@@ -44,21 +44,21 @@ export default function BlogKyselyMikroOrmCoTo() {
       <SEOHead
         title="Kysely, MikroORM, Drizzle, Prisma i TypeORM | Fotz Studio"
         description="6 bibliotek ORM i query builderów TypeScript (Prisma/Drizzle/Kysely/MikroORM/TypeORM/Sequelize) — podejście, bundle size, edge-compatibility i kiedy wybrać."
-        canonical="https://fotz.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024"
 
         keywords="Kysely, MikroORM, Drizzle, Prisma i TypeORM co to jest, Kysely, MikroORM, Drizzle, Prisma i TypeORM jak działa, Kysely, MikroORM, Drizzle, Prisma i TypeORM tutorial, Kysely, MikroORM, Drizzle, Prisma i TypeORM przykład, czym jest Kysely, MikroORM, Drizzle, Prisma i TypeORM, Kysely, MikroORM, Drizzle, Prisma i TypeORM dokumentacja, Kysely, MikroORM, Drizzle, Prisma i TypeORM przewodnik"
       />
       <ArticleSchema
         title="Kysely, MikroORM, Drizzle, Prisma i TypeORM — ORM TypeScript 2024?"
         description="6 bibliotek ORM i query builderów TypeScript (Prisma/Drizzle/Kysely/MikroORM/TypeORM/Sequelize) — podejście, bundle size, edge-compatibility i kiedy wybrać."
-        url="https://fotz.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "ORM TypeScript 2024", url: "https://fotz.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "ORM TypeScript 2024", url: "https://www.fotz-studio.pl/blog/kysely-mikro-orm-drizzle-prisma-typeorm-porownanie-orm-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">

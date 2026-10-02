@@ -78,26 +78,26 @@ export default function BlogCustomerLtvCoTo() {
       <SEOHead
         title="Customer Lifetime Value — co to jest? CLV LTV obliczanie i wzory"
         description="Customer Lifetime Value (CLV/LTV) — definicja, 3 wzory obliczania, stosunek LTV:CAC, 6 driverów wzrostu i segmentacja klientów według CLV. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/customer-ltv-co-to"
+        canonical="https://www.fotz-studio.pl/blog/customer-ltv-co-to"
 
         keywords="Customer Lifetime Value co to jest, Customer Lifetime Value definicja, czym jest Customer Lifetime Value, Customer Lifetime Value startup, Customer Lifetime Value jak liczyć, Customer Lifetime Value wzór, Customer Lifetime Value przykłady"
       />
       <ArticleSchema
         title="Customer Lifetime Value — co to jest i jak obliczać CLV?"
         description="Kompletny przewodnik po Customer Lifetime Value: 3 formuły, benchmark LTV:CAC, 6 driverów wzrostu i segmentacja klientów."
-        url="https://fotz.pl/blog/customer-ltv-co-to"
+        url="https://www.fotz-studio.pl/blog/customer-ltv-co-to"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Customer Lifetime Value", url: "https://fotz.pl/blog/customer-ltv-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Customer Lifetime Value", url: "https://www.fotz-studio.pl/blog/customer-ltv-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Customer Lifetime Value", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Customer Lifetime Value", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Customer Lifetime Value — co to jest i jak obliczać?
           </h1>

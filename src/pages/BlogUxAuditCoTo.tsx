@@ -88,26 +88,26 @@ export default function BlogUxAuditCoTo() {
       <SEOHead
         title="Audyt UX — co to jest? UX audit heurystyki i metodologia"
         description="Kompletny przewodnik po audycie UX: 4 frameworki, 10 heurystyk Nielsena, skala severity i kiedy zlecić UX audit."
-        canonical="https://fotz.pl/blog/ux-audit-co-to"
+        canonical="https://www.fotz-studio.pl/blog/ux-audit-co-to"
 
         keywords="Audyt UX co to jest, Audyt UX definicja, czym jest Audyt UX, Audyt UX przykłady, jak działa Audyt UX, Audyt UX znaczenie, Audyt UX przewodnik"
       />
       <ArticleSchema
         title="Audyt UX — co to jest i jak go przeprowadzić?"
         description="Kompletny przewodnik po audycie UX: 4 frameworki, 10 heurystyk Nielsena, skala severity i kiedy zlecić UX audit."
-        url="https://fotz.pl/blog/ux-audit-co-to"
+        url="https://www.fotz-studio.pl/blog/ux-audit-co-to"
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Audyt UX", url: "https://fotz.pl/blog/ux-audit-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Audyt UX", url: "https://www.fotz-studio.pl/blog/ux-audit-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Audyt UX", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Audyt UX", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Audyt UX — co to jest i jak go przeprowadzić?
           </h1>

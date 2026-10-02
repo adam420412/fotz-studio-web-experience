@@ -48,7 +48,7 @@ export default function GoogleAdsWarszawa() {
         <SEOHead
           title="Agencja Google Ads Warszawa | Fotz Studio"
           description="Google Ads Warszawa — agencja certyfikowana Fotz.pl. Kampanie od 500 zł/mies., wyniki od 24-48h, specjaliści z certyfikatem Google. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/warszawa"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/warszawa"
           keywords="google ads warszawa, agencja google ads warszawa, kampanie google ads warszawa, reklamy google warszawa, google ads dla firm warszawa, sem warszawa, adwords warszawa"
         />
 
@@ -60,10 +60,10 @@ export default function GoogleAdsWarszawa() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-            { name: "Google Ads Warszawa", url: "https://fotz.pl/performance-marketing/google-ads/warszawa" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+            { name: "Google Ads Warszawa", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/warszawa" },
           ]}/>
 
         <FAQSchema items={faqItems} />

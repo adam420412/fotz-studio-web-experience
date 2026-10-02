@@ -259,7 +259,7 @@ export default function BlogJakStworzyc() {
       <SEOHead
         title="Jak stworzyć stronę internetową? Kompletny poradnik 2025"
         description="Dowiedz się jak stworzyć stronę internetową krok po kroku. Porównanie metod: WordPress, Wix, własny kod. Ile kosztuje, ile trwa i co wybrać?"
-        canonical="https://fotz.pl/blog/jak-stworzyc-strone-internetowa"
+        canonical="https://www.fotz-studio.pl/blog/jak-stworzyc-strone-internetowa"
 
         keywords="Jak stworzyć stronę internetową? Kompletny poradnik 2025, Jak stworzyć stronę internetową? Kompletny poradnik 2025 co to jest, Jak stworzyć stronę internetową? Kompletny poradnik 2025 jak działa, Jak stworzyć stronę internetową? Kompletny poradnik 2025 definicja, Jak stworzyć stronę internetową? Kompletny poradnik 2025 przykłady, Jak stworzyć stronę internetową? Kompletny poradnik 2025 poradnik, Jak stworzyć stronę internetową? Kompletny poradnik 2025 przewodnik"
       />

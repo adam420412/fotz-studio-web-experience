@@ -37,21 +37,21 @@ export default function BlogPsychologiaCen() {
         title="Psychologia Cen — Strategie Cenowe, które Zwiększają Sprzedaż"
         description="Psychologia cen w marketingu — strategie cenowe, efekt zakotwiczenia, ceny .99 i bundling. Jak psychologia cenowa zwiększa konwersję i sprzedaż. Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/psychologia-cen"
+        canonical="https://www.fotz-studio.pl/blog/psychologia-cen"
         keywords="psychologia cen, pricing psychology, ustalanie cen, kotwiczenie cen, charm pricing, strategia cenowa"
       />
       <ArticleSchema
         title="Psychologia cen - jak ustalać ceny, które sprzedają"
         description="Psychologia cen w praktyce: kotwiczenie, charm pricing, decoy effect. Techniki cenowe zwiększające konwersję."
-        url="https://fotz.pl/blog/psychologia-cen"
+        url="https://www.fotz-studio.pl/blog/psychologia-cen"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Psychologia cen", url: "https://fotz.pl/blog/psychologia-cen" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Psychologia cen", url: "https://www.fotz-studio.pl/blog/psychologia-cen" },
         ]}/>
       <FAQSchema items={faqItems} />
 

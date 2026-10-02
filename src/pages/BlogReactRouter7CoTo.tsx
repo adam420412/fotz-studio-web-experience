@@ -44,21 +44,21 @@ export default function BlogReactRouter7CoTo() {
       <SEOHead
         title="React Router 7 — Framework Mode, loaders, actions, typegen i vs Next.js 2024?"
         description="React Router 7 i Framework Mode: file-based routing, loaders, actions, SSR, typegen, pending states, optimistic UI i porównanie z Next.js/TanStack Start/Astro."
-        canonical="https://fotz.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
+        canonical="https://www.fotz-studio.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
 
         keywords="React Router 7 co to jest, React Router 7 jak działa, React Router 7 tutorial, React Router 7 przykład, czym jest React Router 7, React Router 7 dokumentacja, React Router 7 przewodnik"
       />
       <ArticleSchema
         title="React Router 7 — Framework Mode, loaders, actions, typegen i vs Next.js 2024?"
         description="React Router 7 i Framework Mode: file-based routing, loaders, actions, SSR, typegen, pending states, optimistic UI i porównanie z Next.js/TanStack Start/Astro."
-        url="https://fotz.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Router 7", url: "https://fotz.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Router 7", url: "https://www.fotz-studio.pl/blog/react-router-7-framework-mode-loaders-actions-typegen-vs-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-pink-950 text-white py-20 px-4">

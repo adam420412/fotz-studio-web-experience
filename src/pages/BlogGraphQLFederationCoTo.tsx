@@ -53,21 +53,21 @@ export default function BlogGraphQLFederationCoTo() {
       <SEOHead
         title="GraphQL Federation — co to jest, Apollo Federation, supergraph i subgraphy?"
         description="GraphQL Federation: subgraphy, Apollo Router, @key directive, N+1 DataLoader, schema registry, GraphQL vs REST vs gRPC i security w produkcji."
-        canonical="https://fotz.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy"
+        canonical="https://www.fotz-studio.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy"
 
         keywords="GraphQL Federation co to jest, GraphQL Federation jak działa, GraphQL Federation tutorial, GraphQL Federation przykład, czym jest GraphQL Federation, GraphQL Federation dokumentacja, GraphQL Federation przewodnik"
       />
       <ArticleSchema
         title="GraphQL Federation — co to jest, Apollo Federation, supergraph i subgraphy?"
         description="GraphQL Federation: 6 konceptów (key/extend/resolveReference), Apollo Router, DataLoader N+1, schema registry, security i monitoring w produkcji."
-        url="https://fotz.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy"
+        url="https://www.fotz-studio.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy"
         datePublished="2024-04-09"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "GraphQL Federation", url: "https://fotz.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "GraphQL Federation", url: "https://www.fotz-studio.pl/blog/graphql-federation-co-to-jest-apollo-supergraph-subgraphy" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-pink-950 to-rose-950 text-white py-20 px-4">

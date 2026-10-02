@@ -66,7 +66,7 @@ export default function BlogAPICoToJest() {
       <SEOHead
         title="API — co to jest i jak działa? Interfejs programowania aplikacji"
         description="Czym jest API (Application Programming Interface), rodzaje API (REST, GraphQL, WebSocket), zastosowanie w stronach internetowych i biznesie."
-        canonical="https://fotz.pl/blog/api-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/api-co-to-jest"
 
         keywords="API co to jest, API jak działa, API tutorial, API przykład, czym jest API, API dokumentacja, API przewodnik"
       />
@@ -75,7 +75,7 @@ export default function BlogAPICoToJest() {
         description="Czym jest API (Application Programming Interface), rodzaje API (REST, GraphQL, WebSocket), zastosowanie w stronach internetowych i biznesie."
         datePublished="2025-03-15"
         dateModified="2025-04-05"
-        url="https://fotz.pl/blog/api-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/api-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

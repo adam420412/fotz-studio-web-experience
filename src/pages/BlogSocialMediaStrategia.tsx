@@ -49,21 +49,21 @@ export default function BlogSocialMediaStrategia() {
         title="Strategia Social Media Marketing 2026 - Poradnik dla Biznesu"
         description="Jak stworzyć skuteczną strategię social media marketingu, planować content, mierzyć rezultaty i unikać błędów."
         ogType="article"
-        canonical="https://fotz.pl/blog/strategia-social-media-marketing"
+        canonical="https://www.fotz-studio.pl/blog/strategia-social-media-marketing"
         keywords="strategia social media, jak stworzyć strategię social media, plan działań social media, social media content plan"
       />
       <ArticleSchema 
         title="Strategia Social Media Marketing 2026 - Kompleksowy Poradnik dla Biznesu"
         description="Jak stworzyć skuteczną strategię social media marketingu, planować content, mierzyć rezultaty i unikać błędów."
-        url="https://fotz.pl/blog/strategia-social-media-marketing"
+        url="https://www.fotz-studio.pl/blog/strategia-social-media-marketing"
         datePublished="2026-04-10"
         dateModified="2026-04-10"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Blog", url: "https://fotz.pl/blog" },
-        { name: "Strategia Social Media Marketing", url: "https://fotz.pl/blog/strategia-social-media-marketing" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+        { name: "Strategia Social Media Marketing", url: "https://www.fotz-studio.pl/blog/strategia-social-media-marketing" }
       ]}/>
       <FAQSchema items={faqItems} />
 

@@ -127,15 +127,15 @@ export default function BlogMarketingDlaKancelarii() {
   ];
 
   const breadcrumbSchema = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Blog", url: "https://fotz.pl/blog" },
-    { name: "Marketing dla kancelarii", url: "https://fotz.pl/blog/marketing-dla-kancelarii" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+    { name: "Marketing dla kancelarii", url: "https://www.fotz-studio.pl/blog/marketing-dla-kancelarii" }
   ];
 
   const articleSchema = {
     title: "Marketing dla kancelarii prawnej - Praktyczny poradnik 2025",
     description: "Kompleksowy poradnik marketingu dla kancelarii adwokackich w Polsce. Strategie SEO, content marketing, Google Moja Firma i etyczne formy promocji prawników.",
-    url: "https://fotz.pl/blog/marketing-dla-kancelarii",
+    url: "https://www.fotz-studio.pl/blog/marketing-dla-kancelarii",
     datePublished: "2025-04-20",
     dateModified: "2025-08-08",
     author: "Fotz Studio"
@@ -146,7 +146,7 @@ export default function BlogMarketingDlaKancelarii() {
       <SEOHead
         title="Marketing dla kancelarii prawnej - Poradnik 2025"
         description="Kompleksowy poradnik marketingu dla kancelarii adwokackich w Polsce. Strategie SEO, content marketing, Google Moja Firma i etyczne formy promocji dla prawników."
-        canonical="https://fotz.pl/blog/marketing-dla-kancelarii"
+        canonical="https://www.fotz-studio.pl/blog/marketing-dla-kancelarii"
         ogType="article"
         schemaJson={[
           <BreadcrumbSchema items={breadcrumbSchema}

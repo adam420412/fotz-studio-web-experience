@@ -89,21 +89,21 @@ export default function BlogChampionBuildingCoTo() {
       <SEOHead
         title="Champion Building — jak budować Championa w sprzedaży B2B?"
         description="Champion Building w sprzedaży enterprise — jak identyfikować, testować i rozwijać Championa który sprzedaje Twój produkt wewnątrz organizacji klienta."
-        canonical="https://fotz.pl/blog/champion-building-sprzedaz-b2b-enterprise"
+        canonical="https://www.fotz-studio.pl/blog/champion-building-sprzedaz-b2b-enterprise"
 
         keywords="Champion Building co to jest, Champion Building definicja, czym jest Champion Building, Champion Building w sprzedaży, Champion Building strategia, Champion Building przykłady, jak używać Champion Building"
       />
       <ArticleSchema
         title="Champion Building — jak budować Championa w sprzedaży B2B?"
         description="Kompletny przewodnik po Champion Building: identyfikacja, profil Championa, playbook i testy."
-        url="https://fotz.pl/blog/champion-building-sprzedaz-b2b-enterprise"
+        url="https://www.fotz-studio.pl/blog/champion-building-sprzedaz-b2b-enterprise"
         datePublished="2024-02-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Champion Building", url: "https://fotz.pl/blog/champion-building-sprzedaz-b2b-enterprise" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Champion Building", url: "https://www.fotz-studio.pl/blog/champion-building-sprzedaz-b2b-enterprise" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

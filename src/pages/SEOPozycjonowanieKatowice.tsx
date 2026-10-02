@@ -28,7 +28,7 @@ const SEOPozycjonowanieKatowice = () => {
       <SEOHead
         title="Pozycjonowanie Katowice — Agencja SEO dla Firm z Katowic"
         description="Pozycjonowanie stron internetowych Katowice — SEO dla firm z Katowic i Śląska. Audyt SEO, optymalizacja, link building. Fotz Studio."
-        canonical="https://fotz.pl/seo/pozycjonowanie-katowice"
+        canonical="https://www.fotz-studio.pl/seo/pozycjonowanie-katowice"
         keywords="pozycjonowanie katowice, agencja seo katowice, seo katowice, pozycjonowanie śląsk, pozycjonowanie stron katowice, agencja seo śląsk, seo dla firm katowice, pozycjonowanie lokalne katowice"
       />
       <ServiceSchema
@@ -38,9 +38,9 @@ const SEOPozycjonowanieKatowice = () => {
         areaServed="Katowice"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "Pozycjonowanie Katowice", url: "https://fotz.pl/seo/pozycjonowanie-katowice" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "Pozycjonowanie Katowice", url: "https://www.fotz-studio.pl/seo/pozycjonowanie-katowice" },
       ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

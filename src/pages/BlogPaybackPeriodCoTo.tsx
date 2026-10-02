@@ -85,21 +85,21 @@ export default function BlogPaybackPeriodCoTo() {
       <SEOHead
         title="CAC Payback Period — co to jest i jak obliczyć? | Fotz.pl"
         description="CAC Payback Period — co to jest, formuła, benchmarki per segment i jak skrócić okres zwrotu kosztu pozyskania klienta. Kompletny przewodnik dla SaaS."
-        canonical="https://fotz.pl/blog/cac-payback-period-co-to"
+        canonical="https://www.fotz-studio.pl/blog/cac-payback-period-co-to"
 
         keywords="CAC Payback Period co to jest, CAC Payback Period definicja, czym jest CAC Payback Period, CAC Payback Period startup, CAC Payback Period jak liczyć, CAC Payback Period wzór, CAC Payback Period przykłady"
       />
       <ArticleSchema
         title="CAC Payback Period — co to jest i jak obliczyć?"
         description="Kompletny przewodnik po CAC Payback Period: formuła, benchmarki i strategie skrócenia okresu zwrotu."
-        url="https://fotz.pl/blog/cac-payback-period-co-to"
+        url="https://www.fotz-studio.pl/blog/cac-payback-period-co-to"
         datePublished="2024-02-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CAC Payback Period", url: "https://fotz.pl/blog/cac-payback-period-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CAC Payback Period", url: "https://www.fotz-studio.pl/blog/cac-payback-period-co-to" },
         ]}/>
 
       {/* Hero */}

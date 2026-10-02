@@ -44,21 +44,21 @@ export default function BlogQwikCoTo() {
       <SEOHead
         title="Qwik framework — Resumability, useSignal, Qwik City i zerowa hydration TypeScript 2024?"
         description="6 frameworków (Qwik/React/Astro/SvelteKit/SolidJS/Remix) — Resumability vs Hydration, useSignal, Qwik City (loaders/actions), Qwik Insights i deployment na Cloudflare."
-        canonical="https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
+        canonical="https://www.fotz-studio.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
 
         keywords="Qwik framework co to jest, Qwik framework jak działa, Qwik framework tutorial, Qwik framework przykład, czym jest Qwik framework, Qwik framework dokumentacja, Qwik framework przewodnik"
       />
       <ArticleSchema
         title="Qwik framework — Resumability, useSignal, Qwik City i zerowa hydration TypeScript 2024?"
         description="6 frameworków (Qwik/React/Astro/SvelteKit/SolidJS/Remix) — Resumability vs Hydration, useSignal, Qwik City (loaders/actions), Qwik Insights i deployment na Cloudflare."
-        url="https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
+        url="https://www.fotz-studio.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Qwik framework", url: "https://fotz.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Qwik framework", url: "https://www.fotz-studio.pl/blog/qwik-framework-resumability-usesignal-qwik-city-zerowa-hydration-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

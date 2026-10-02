@@ -71,7 +71,7 @@ export default function BlogBounceRateCoTo() {
       <SEOHead
         title="Bounce Rate — co to jest i jak obniżyć wskaźnik odrzuceń?"
         description="Bounce Rate co to jest — wyjaśniamy czym jest wskaźnik odrzuceń, jak go mierzyć w GA4, jaki jest dobry bounce rate i jak go obniżyć na stronie."
-        canonical="https://fotz.pl/blog/bounce-rate-co-to"
+        canonical="https://www.fotz-studio.pl/blog/bounce-rate-co-to"
 
         keywords="Bounce Rate co to jest, Bounce Rate definicja, czym jest Bounce Rate, Bounce Rate przykłady, jak działa Bounce Rate, Bounce Rate znaczenie, Bounce Rate przewodnik"
       />
@@ -80,7 +80,7 @@ export default function BlogBounceRateCoTo() {
         description="Czym jest Bounce Rate (wskaźnik odrzuceń), benchmarki branżowe, jak mierzyć w GA4, przyczyny wysokiego bounce rate i jak go obniżyć."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/bounce-rate-co-to"
+        url="https://www.fotz-studio.pl/blog/bounce-rate-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

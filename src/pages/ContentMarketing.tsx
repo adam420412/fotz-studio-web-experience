@@ -153,7 +153,7 @@ export default function ContentMarketing() {
       <SEOHead
         title="Co to jest Content Marketing? Definicja, Zalety i Kampania SEO"
         description="Content marketing dla firm — artykuły SEO, blogi, video content, email marketing. Poznaj definicję, zalety i sprawdź jak działa content marketing. Fotz Studio."
-        canonical="https://fotz.pl/content-marketing/strategia"
+        canonical="https://www.fotz-studio.pl/content-marketing/strategia"
         keywords="content marketing, marketing treści, tworzenie treści, strategia content marketing, content marketing dla firm, blog firmowy, content seo"
       />
 
@@ -161,16 +161,16 @@ export default function ContentMarketing() {
       <WebPageSchema
         title="Content Marketing - Definicja, Zalety i Strategia SEO"
         description="Co to jest content marketing? Poznaj definicję, zalety marketingu treści i dowiedz się jak mierzyć efekty kampanii SEO."
-        url="https://fotz.pl/content-marketing/strategia"
+        url="https://www.fotz-studio.pl/content-marketing/strategia"
       />
       <ServiceSchema
         name="Content Marketing - Marketing Treści"
         description="Kompleksowe usługi content marketingu - strategia, tworzenie wartościowych treści, dystrybucja i analiza efektów kampanii SEO."
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Content Marketing", url: "https://fotz.pl/content-marketing/strategia" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Content Marketing", url: "https://www.fotz-studio.pl/content-marketing/strategia" },
         ]}/>
       <FAQSchema items={faqItems} />
 

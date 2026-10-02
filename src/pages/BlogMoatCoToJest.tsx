@@ -86,21 +86,21 @@ export default function BlogMoatCoToJest() {
       <SEOHead
         title="Moat (przewaga konkurencyjna) — co to jest w biznesie? | Fotz.pl"
         description="Economic moat — rodzaje przewagi konkurencyjnej (network effects, switching costs, cost advantage), jak zidentyfikować moat i wpływ na wycenę firmy."
-        canonical="https://fotz.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
 
         keywords="Moat (przewaga konkurencyjna) co to jest, Moat (przewaga konkurencyjna) definicja, czym jest Moat (przewaga konkurencyjna), Moat (przewaga konkurencyjna) przykłady, jak działa Moat (przewaga konkurencyjna), Moat (przewaga konkurencyjna) znaczenie, Moat (przewaga konkurencyjna) przewodnik"
       />
       <ArticleSchema
         title="Moat (przewaga konkurencyjna) — co to jest w biznesie?"
         description="Kompletny przewodnik po economic moat: typy moatów, jak ocenić i jak moat wpływa na wycenę firmy."
-        url="https://fotz.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/moat-przewaga-konkurencyjna-co-to-jest"
         datePublished="2024-02-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Moat — przewaga konkurencyjna", url: "https://fotz.pl/blog/moat-przewaga-konkurencyjna-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Moat — przewaga konkurencyjna", url: "https://www.fotz-studio.pl/blog/moat-przewaga-konkurencyjna-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-stone-900 to-slate-900 text-white py-20 px-4">

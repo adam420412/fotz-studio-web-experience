@@ -75,21 +75,21 @@ export default function BlogSrePracticeCoTo() {
       <SEOHead
         title="SRE — co to jest Site Reliability Engineering? | Fotz.pl"
         description="SRE (Site Reliability Engineering): SLI, SLO, SLA, error budget, on-call, toil reduction i kluczowe praktyki. Przewodnik po podejściu Google do reliability."
-        canonical="https://fotz.pl/blog/sre-site-reliability-engineering-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/sre-site-reliability-engineering-co-to-jest"
 
         keywords="SRE co to jest, SRE definicja, czym jest SRE, SRE przykłady, jak działa SRE, SRE znaczenie, SRE przewodnik"
       />
       <ArticleSchema
         title="SRE — co to jest Site Reliability Engineering?"
         description="SRE: SLI, SLO, SLA, error budget, on-call management, toil reduction, blameless postmortem i narzędzia. Kompleksowy przewodnik po Site Reliability Engineering."
-        url="https://fotz.pl/blog/sre-site-reliability-engineering-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/sre-site-reliability-engineering-co-to-jest"
         datePublished="2024-02-24"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "SRE", url: "https://fotz.pl/blog/sre-site-reliability-engineering-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "SRE", url: "https://www.fotz-studio.pl/blog/sre-site-reliability-engineering-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">

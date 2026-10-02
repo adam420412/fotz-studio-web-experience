@@ -93,7 +93,7 @@ const PozycjonowanieWroclaw = () => {
       <SEOHead
         title="Pozycjonowanie Wrocław — Agencja SEO | Fotz Studio"
         description="Pozycjonowanie stron internetowych Wrocław. Agencja SEO Fotz Studio — audyt SEO, optymalizacja, link building dla firm z Wrocławia. Bezpłatny audyt!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie/wroclaw"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie/wroclaw"
         keywords="pozycjonowanie wrocław, agencja seo wrocław, seo wrocław, pozycjonowanie stron wrocław, seo dla firm wrocław, seo dolny śląsk, audyt seo wrocław, pozycjonowanie lokalne wrocław"
       />
       <ServiceSchema
@@ -103,10 +103,10 @@ const PozycjonowanieWroclaw = () => {
         areaServed="Wrocław"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Wrocław", url: "https://fotz.pl/uslugi/pozycjonowanie/wroclaw" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Wrocław", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie/wroclaw" },
         ]}/>
       <FAQSchema items={faqItems} />
 

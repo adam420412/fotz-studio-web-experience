@@ -44,21 +44,21 @@ export default function BlogDockerNodeCoTo() {
       <SEOHead
         title="Docker dla Node.js i Next.js — Dockerfile, Docker Compose, GitHub Actions CI/CD 2024?"
         description="6 konceptów Docker (multi-stage/Compose/GitHub Actions/non-root user/health checks/Kubernetes) — optymalny obraz Next.js, CI/CD pipeline i security best practices."
-        canonical="https://fotz.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
+        canonical="https://www.fotz-studio.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
 
         keywords="Docker dla Node.js i Next.js co to jest, Docker dla Node.js i Next.js jak działa, Docker dla Node.js i Next.js tutorial, Docker dla Node.js i Next.js przykład, czym jest Docker dla Node.js i Next.js, Docker dla Node.js i Next.js dokumentacja, Docker dla Node.js i Next.js przewodnik"
       />
       <ArticleSchema
         title="Docker dla Node.js i Next.js — Dockerfile, Docker Compose, GitHub Actions CI/CD 2024?"
         description="6 konceptów Docker (multi-stage/Compose/GitHub Actions/non-root user/health checks/Kubernetes) — optymalny obraz Next.js, CI/CD pipeline i security best practices."
-        url="https://fotz.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
+        url="https://www.fotz-studio.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Docker Node.js i Next.js", url: "https://fotz.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Docker Node.js i Next.js", url: "https://www.fotz-studio.pl/blog/docker-nodejs-nextjs-dockerfile-compose-github-actions-kubernetes-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-sky-950 text-white py-20 px-4">

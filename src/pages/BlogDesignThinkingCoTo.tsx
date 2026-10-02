@@ -92,9 +92,9 @@ export default function BlogDesignThinkingCoTo() {
   return (
     <>
       <SEOHead
-        title="Design Thinking — co to jest? Metodologia projektowania | fotz.pl"
+        title="Design Thinking — co to jest? Metodologia projektowania | FOTZ Studio"
         description="Design Thinking co to jest — wyjaśniamy czym jest myślenie projektowe, 5 faz (Empathize, Define, Ideate, Prototype, Test), narzędzia i jak wdrożyć w firmie."
-        canonical="https://fotz.pl/blog/design-thinking-co-to"
+        canonical="https://www.fotz-studio.pl/blog/design-thinking-co-to"
 
         keywords="Design Thinking co to jest, Design Thinking definicja, czym jest Design Thinking, Design Thinking przykłady, jak działa Design Thinking, Design Thinking znaczenie, Design Thinking przewodnik"
       />
@@ -103,7 +103,7 @@ export default function BlogDesignThinkingCoTo() {
         description="Czym jest Design Thinking, 5 faz procesu, narzędzia, warsztaty, różnica vs Agile i jak mierzyć wyniki."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/design-thinking-co-to"
+        url="https://www.fotz-studio.pl/blog/design-thinking-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

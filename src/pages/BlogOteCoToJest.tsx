@@ -88,21 +88,21 @@ export default function BlogOteCoToJest() {
       <SEOHead
         title="OTE (On-Target Earnings) — co to jest w sprzedaży? | Fotz.pl"
         description="OTE (On-Target Earnings) w sprzedaży B2B — definicja, split base vs. komisja, acceleratory i benchmarki OTE dla SDR, AE i VP Sales. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/ote-on-target-earnings-sprzedaz-b2b"
+        canonical="https://www.fotz-studio.pl/blog/ote-on-target-earnings-sprzedaz-b2b"
 
         keywords="OTE (On-Target Earnings) co to jest, OTE (On-Target Earnings) definicja, czym jest OTE (On-Target Earnings), OTE (On-Target Earnings) w sprzedaży, OTE (On-Target Earnings) strategia, OTE (On-Target Earnings) przykłady, jak używać OTE (On-Target Earnings)"
       />
       <ArticleSchema
         title="OTE (On-Target Earnings) — co to jest w sprzedaży?"
         description="Kompletny przewodnik po OTE: split base/komisja, acceleratory, benchmarki i jak porównywać oferty."
-        url="https://fotz.pl/blog/ote-on-target-earnings-sprzedaz-b2b"
+        url="https://www.fotz-studio.pl/blog/ote-on-target-earnings-sprzedaz-b2b"
         datePublished="2024-02-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "OTE", url: "https://fotz.pl/blog/ote-on-target-earnings-sprzedaz-b2b" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "OTE", url: "https://www.fotz-studio.pl/blog/ote-on-target-earnings-sprzedaz-b2b" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 text-white py-20 px-4">

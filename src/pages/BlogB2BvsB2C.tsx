@@ -38,21 +38,21 @@ export default function BlogB2BvsB2C() {
         title="Marketing B2B vs B2C — Różnice, Strategie i Kanały Marketingowe"
         description="Marketing B2B vs B2C — kluczowe różnice w strategii, kanałach i treściach. Jak prowadzić skuteczny marketing B2B i B2C? Poradnik Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/marketing-b2b-vs-b2c"
+        canonical="https://www.fotz-studio.pl/blog/marketing-b2b-vs-b2c"
         keywords="marketing b2b, marketing b2c, b2b vs b2c, strategia b2b, sprzedaż b2b, lead generation b2b"
       />
       <ArticleSchema
         title="Marketing B2B vs B2C - kluczowe różnice i strategie"
         description="Marketing B2B vs B2C: kluczowe różnice w strategii, kanałach i komunikacji. Jak dostosować marketing do modelu biznesowego."
-        url="https://fotz.pl/blog/marketing-b2b-vs-b2c"
+        url="https://www.fotz-studio.pl/blog/marketing-b2b-vs-b2c"
         datePublished="2025-01-04"
         dateModified="2026-01-09"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Marketing B2B vs B2C", url: "https://fotz.pl/blog/marketing-b2b-vs-b2c" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Marketing B2B vs B2C", url: "https://www.fotz-studio.pl/blog/marketing-b2b-vs-b2c" },
         ]}/>
       <FAQSchema items={faqItems} />
 

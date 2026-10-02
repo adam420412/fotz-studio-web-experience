@@ -80,21 +80,21 @@ export default function BlogPromptEngineeringCoTo() {
       <SEOHead
         title="Prompt Engineering — co to jest i jak pisać skuteczne prompty?"
         description="Prompt Engineering: techniki (zero-shot, few-shot, Chain-of-Thought, Role Prompting), system prompt, ewaluacja promptów i anti-patterns dla aplikacji LLM."
-        canonical="https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
+        canonical="https://www.fotz-studio.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
 
         keywords="Prompt Engineering co to jest, Prompt Engineering definicja, czym jest Prompt Engineering, Prompt Engineering przykłady, jak działa Prompt Engineering, Prompt Engineering znaczenie, Prompt Engineering przewodnik"
       />
       <ArticleSchema
         title="Prompt Engineering — co to jest i jak pisać skuteczne prompty?"
         description="Prompt Engineering: techniki (zero-shot, few-shot, CoT, role prompting, structured output), system prompt best practices, ewaluacja i anty-patterns dla LLM apps."
-        url="https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
+        url="https://www.fotz-studio.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty"
         datePublished="2024-03-06"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Prompt Engineering", url: "https://fotz.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Prompt Engineering", url: "https://www.fotz-studio.pl/blog/prompt-engineering-co-to-jest-jak-pisac-prompty" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

@@ -44,21 +44,21 @@ export default function BlogReactPatternsCoTo() {
       <SEOHead
         title="React wzorce — Compound Components, Custom Hooks, HOC, Error Boundary?"
         description="React design patterns: Compound Components, Custom Hooks, Render Props, HOC, Provider Pattern, Error Boundary, Suspense, React.memo i performance patterns."
-        canonical="https://fotz.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary"
+        canonical="https://www.fotz-studio.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary"
 
         keywords="React wzorce co to jest, React wzorce jak działa, React wzorce tutorial, React wzorce przykład, czym jest React wzorce, React wzorce dokumentacja, React wzorce przewodnik"
       />
       <ArticleSchema
         title="React wzorce — Compound Components, Custom Hooks, HOC, Error Boundary?"
         description="6 React patterns (Compound/Hooks/Render Props/HOC/Provider/Error Boundary) — implementacja, przykłady, React.memo, Suspense i performance optimization."
-        url="https://fotz.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary"
+        url="https://www.fotz-studio.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React wzorce", url: "https://fotz.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React wzorce", url: "https://www.fotz-studio.pl/blog/react-wzorce-compound-components-custom-hooks-hoc-error-boundary" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-purple-950 text-white py-20 px-4">

@@ -96,7 +96,7 @@ export default function BlogMicroMomentsCoTo() {
       <SEOHead
         title="Micro-Moments — co to jest? Chwile decyzyjne w marketingu mobilnym"
         description="Czym są micro-moments, 4 typy (I-Want-to-Know/Go/Do/Buy), strategia SEO i content per moment, rola mobile i pomiar micro-moments w GA4."
-        canonical="https://fotz.pl/blog/micro-moments-co-to"
+        canonical="https://www.fotz-studio.pl/blog/micro-moments-co-to"
 
         keywords="Micro-Moments co to jest, Micro-Moments definicja, czym jest Micro-Moments, Micro-Moments w marketingu, Micro-Moments przykłady, jak działa Micro-Moments, Micro-Moments strategia"
       />
@@ -105,7 +105,7 @@ export default function BlogMicroMomentsCoTo() {
         description="Czym są micro-moments, 4 typy (I-Want-to-Know/Go/Do/Buy), strategia SEO i content per moment, rola mobile i pomiar micro-moments w GA4."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/micro-moments-co-to"
+        url="https://www.fotz-studio.pl/blog/micro-moments-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

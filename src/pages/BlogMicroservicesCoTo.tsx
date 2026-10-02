@@ -58,21 +58,21 @@ export default function BlogMicroservicesCoTo() {
       <SEOHead
         title="Mikroserwisy — co to jest? Architektura microservices vs monolit"
         description="Kompletny przewodnik po mikroserwisach: porównanie z monolitem, 5 wzorców architektonicznych, API Gateway i Service Mesh."
-        canonical="https://fotz.pl/blog/mikroserwisy-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/mikroserwisy-co-to-jest"
 
         keywords="Mikroserwisy co to jest, Mikroserwisy definicja, czym jest Mikroserwisy, Mikroserwisy przykłady, jak działa Mikroserwisy, Mikroserwisy znaczenie, Mikroserwisy przewodnik"
       />
       <ArticleSchema
         title="Mikroserwisy — co to jest i kiedy używać architektury microservices?"
         description="Kompletny przewodnik po mikroserwisach: porównanie z monolitem, 5 wzorców architektonicznych, API Gateway i Service Mesh."
-        url="https://fotz.pl/blog/mikroserwisy-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/mikroserwisy-co-to-jest"
         datePublished="2024-01-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Mikroserwisy", url: "https://fotz.pl/blog/mikroserwisy-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Mikroserwisy", url: "https://www.fotz-studio.pl/blog/mikroserwisy-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -80,7 +80,7 @@ export default function BlogMicroservicesCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Mikroserwisy", url: "https://fotz.pl" },
+              { name: "Mikroserwisy", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Mikroserwisy — co to jest i kiedy wybrać zamiast monolitu?

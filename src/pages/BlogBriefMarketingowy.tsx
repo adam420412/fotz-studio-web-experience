@@ -36,21 +36,21 @@ const BlogBriefMarketingowy = () => {
         title="Brief Marketingowy — Jak Napisać Brief? Wzór i Checklista [2025]"
         description="Jak napisać brief marketingowy? Wzór i checklista 2025. Brief strony internetowej, kampanii i identyfikacji wizualnej — praktyczny poradnik Fotz Studio."
         ogType="article"
-        canonical="https://fotz.pl/blog/jak-napisac-brief-marketingowy"
+        canonical="https://www.fotz-studio.pl/blog/jak-napisac-brief-marketingowy"
         keywords="brief marketingowy, jak napisać brief, brief reklamowy wzór, brief dla agencji, brief marketingowy przykład, szablon briefu marketingowego, brief kreatywny"
       />
       <ArticleSchema
         title="Jak napisać brief marketingowy? Wzór + checklista [2025]"
         description="Kompletny poradnik: jak napisać dobry brief marketingowy krok po kroku."
-        url="https://fotz.pl/blog/jak-napisac-brief-marketingowy"
+        url="https://www.fotz-studio.pl/blog/jak-napisac-brief-marketingowy"
         datePublished="2025-03-05"
         dateModified="2026-03-15"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Jak napisać brief marketingowy", url: "https://fotz.pl/blog/jak-napisac-brief-marketingowy" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Jak napisać brief marketingowy", url: "https://www.fotz-studio.pl/blog/jak-napisac-brief-marketingowy" },
         ]}/>
       <FAQSchema items={faqItems} />
       <Layout>
@@ -288,7 +288,7 @@ const BlogBriefMarketingowy = () => {
                     </div>
                   ))}
 
-                  <p className="text-primary/50 text-xs mt-4">© Fotz Studio | fotz.pl — kopiowanie i użytek dozwolony</p>
+                  <p className="text-primary/50 text-xs mt-4">© Fotz Studio | FOTZ Studio — kopiowanie i użytek dozwolony</p>
                 </div>
               </motion.div>
 

@@ -92,21 +92,21 @@ export default function BlogPositioningStatementCoTo() {
       <SEOHead
         title="Positioning Statement — co to jest i jak go napisać?"
         description="Kompletny przewodnik po positioning statement: 3 formuły, 4 kluczowe elementy (target, kategoria, POD, RTB) i przykłady."
-        canonical="https://fotz.pl/blog/positioning-statement-co-to"
+        canonical="https://www.fotz-studio.pl/blog/positioning-statement-co-to"
 
         keywords="Positioning Statement co to jest, Positioning Statement definicja, czym jest Positioning Statement, Positioning Statement przykłady, jak działa Positioning Statement, Positioning Statement znaczenie, Positioning Statement przewodnik"
       />
       <ArticleSchema
         title="Positioning Statement — co to jest i jak go napisać?"
         description="Kompletny przewodnik po positioning statement: 3 formuły, 4 kluczowe elementy (target, kategoria, POD, RTB) i przykłady."
-        url="https://fotz.pl/blog/positioning-statement-co-to"
+        url="https://www.fotz-studio.pl/blog/positioning-statement-co-to"
         datePublished="2024-01-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Positioning Statement", url: "https://fotz.pl/blog/positioning-statement-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Positioning Statement", url: "https://www.fotz-studio.pl/blog/positioning-statement-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -114,7 +114,7 @@ export default function BlogPositioningStatementCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Positioning Statement", url: "https://fotz.pl" },
+              { name: "Positioning Statement", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Positioning Statement — co to jest i jak go napisać?

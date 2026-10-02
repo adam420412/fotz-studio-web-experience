@@ -89,12 +89,12 @@ const StronyInternetoweWroclaw = () => {
       <SEOHead
         title="Strony Internetowe Wrocław | Tworzenie i Projektowanie Stron WWW"
         description="Strony internetowe Wrocław — profesjonalne tworzenie stron www, projektowanie stron internetowych, sklepy e-commerce i SEO dla firm z Wrocławia. Fotz Studio."
-        canonical="https://fotz.pl/uslugi/strony-internetowe/wroclaw"
+        canonical="https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw"
         keywords="strony internetowe wrocław, tworzenie stron www wrocław, projektowanie stron wrocław, sklepy internetowe wrocław, wykonanie strony internetowej wrocław, responsywna strona www wrocław, wordpress wrocław, nowoczesne strony www wrocław, agencja stron internetowych wrocław"
       />
       
       <ServiceSchema name="Strony Internetowe Wrocław" description="Profesjonalne tworzenie stron internetowych dla firm z Wrocławia." provider="FOTZ Studio" areaServed="Wrocław" />
-      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://fotz.pl" }, { name: "Strony Internetowe", url: "https://fotz.pl/uslugi/strony-internetowe" }, { name: "Wrocław", url: "https://fotz.pl/uslugi/strony-internetowe/wroclaw" }]}/>
+      <BreadcrumbSchema items={[{ name: "Strona główna", url: "https://www.fotz-studio.pl" }, { name: "Strony Internetowe", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe" }, { name: "Wrocław", url: "https://www.fotz-studio.pl/uslugi/strony-internetowe/wroclaw" }]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 
       <OrganizationSchema />

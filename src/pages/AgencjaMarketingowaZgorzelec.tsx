@@ -39,8 +39,8 @@ export default function AgencjaMarketingowaZgorzelec() {
     name: "Agencja Marketingowa Zgorzelec - FOTZ",
     description: "Profesjonalna agencja marketingowa w Zgorzelcu specjalizujaca sie w SEO, tworzeniu stron internetowych i marketingu cyfrowym dla firm lokalnych",
     areaServed: "Zgorzelec",
-    image: "https://fotz.pl/og-image.jpg",
-    url: "https://fotz.pl/agencja-marketingowa/zgorzelec",
+    image: "https://www.fotz-studio.pl/og-image.jpg",
+    url: "https://www.fotz-studio.pl/agencja-marketingowa/zgorzelec",
     telephone: "+48 790 814 814",
     address: {
       "@type": "PostalAddress",
@@ -56,7 +56,7 @@ export default function AgencjaMarketingowaZgorzelec() {
       <SEOHead
         title="Agencja Marketingowa Zgorzelec - SEO, Strony WWW | FOTZ"
         description="Agencja marketingowa w Zgorzelcu oferuje usługi SEO, tworzenie stron internetowych, Google Ads i marketing cyfrowy dla firm lokalnych i działających w regionie przygranicznym."
-        canonical="https://fotz.pl/agencja-marketingowa/zgorzelec"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/zgorzelec"
         keywords="agencja marketingowa zgorzelec, marketing internetowy zgorzelec, agencja reklamowa zgorzelec, seo zgorzelec"
       />
       

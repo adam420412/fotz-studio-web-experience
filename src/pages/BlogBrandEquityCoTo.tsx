@@ -80,21 +80,21 @@ export default function BlogBrandEquityCoTo() {
       <SEOHead
         title="Brand Equity — co to jest i jak budować kapitał marki?"
         description="Brand equity (kapitał marki) — definicja, model Kellera (4 poziomy), czynniki budowania i jak mierzyć wartość marki. Kompletny przewodnik po brand equity."
-        canonical="https://fotz.pl/blog/brand-equity-co-to"
+        canonical="https://www.fotz-studio.pl/blog/brand-equity-co-to"
 
         keywords="Brand Equity co to jest, Brand Equity definicja, czym jest Brand Equity, Brand Equity w marketingu, Brand Equity przykłady, jak działa Brand Equity, Brand Equity strategia"
       />
       <ArticleSchema
         title="Brand Equity — co to jest i jak budować kapitał marki?"
         description="Kompletny przewodnik po brand equity: piramida Kellera, czynniki budowania i metody pomiaru wartości marki."
-        url="https://fotz.pl/blog/brand-equity-co-to"
+        url="https://www.fotz-studio.pl/blog/brand-equity-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Brand Equity", url: "https://fotz.pl/blog/brand-equity-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Brand Equity", url: "https://www.fotz-studio.pl/blog/brand-equity-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -102,7 +102,7 @@ export default function BlogBrandEquityCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Equity", url: "https://fotz.pl" },
+              { name: "Brand Equity", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Equity — co to jest i jak budować kapitał marki?

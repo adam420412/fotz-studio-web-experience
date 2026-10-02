@@ -50,21 +50,21 @@ export default function BlogConversionFunnelCoTo() {
       <SEOHead
         title="Lejek Konwersji — co to jest i jak optymalizować Conversion Funnel?"
         description="Conversion Funnel: etapy (TOFU/MOFU/BOFU), metryki konwersji, benchmarki B2B SaaS, optymalizacja każdego etapu i narzędzia (HubSpot, Salesforce, Mixpanel)."
-        canonical="https://fotz.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest"
 
         keywords="Lejek Konwersji co to jest, Lejek Konwersji definicja, czym jest Lejek Konwersji, Lejek Konwersji przykłady, jak działa Lejek Konwersji, Lejek Konwersji znaczenie, Lejek Konwersji przewodnik"
       />
       <ArticleSchema
         title="Lejek Konwersji — co to jest i jak optymalizować Conversion Funnel?"
         description="Conversion Funnel: TOFU/MOFU/BOFU etapy, metryki konwersji (lead, MQL, SQL), benchmarki B2B SaaS, optymalizacja i narzędzia dla Growth i Marketing teams."
-        url="https://fotz.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest"
         datePublished="2024-03-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Lejek Konwersji", url: "https://fotz.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Lejek Konwersji", url: "https://www.fotz-studio.pl/blog/lejek-konwersji-conversion-funnel-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-slate-900 text-white py-20 px-4">

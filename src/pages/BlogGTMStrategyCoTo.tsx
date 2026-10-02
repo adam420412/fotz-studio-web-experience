@@ -66,9 +66,9 @@ export default function BlogGTMStrategyCoTo() {
   return (
     <>
       <SEOHead
-        title="GTM Strategy — co to jest strategia Go-to-Market? | fotz.pl"
+        title="GTM Strategy — co to jest strategia Go-to-Market? | FOTZ Studio"
         description="GTM Strategy co to jest — wyjasnamy czym jest Go-to-Market Strategy, elementy GTM, jak napisac strategię GTM i czym rozni sie od business planu."
-        canonical="https://fotz.pl/blog/gtm-strategy-co-to"
+        canonical="https://www.fotz-studio.pl/blog/gtm-strategy-co-to"
 
         keywords="GTM Strategy co to jest, GTM Strategy definicja, czym jest GTM Strategy, GTM Strategy przykłady, jak działa GTM Strategy, GTM Strategy znaczenie, GTM Strategy przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogGTMStrategyCoTo() {
         description="Czym jest GTM Strategy (Go-to-Market), elementy strategii GTM, PLG vs SLG, jak napisac GTM i jak mierzyc jego sukces."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/gtm-strategy-co-to"
+        url="https://www.fotz-studio.pl/blog/gtm-strategy-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -62,21 +62,21 @@ export default function BlogScrumMasterCoTo() {
       <SEOHead
         title="Scrum Master — co to jest? Rola SM w Scrum i Agile"
         description="Scrum Master — definicja, obowiązki (dla Teamu, PO i organizacji), różnica vs. Project Manager, 5 anty-wzorców i certyfikaty CSM/PSM. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/scrum-master-co-to"
+        canonical="https://www.fotz-studio.pl/blog/scrum-master-co-to"
 
         keywords="Scrum Master co to jest, Scrum Master definicja, czym jest Scrum Master, Scrum Master przykłady, jak działa Scrum Master, Scrum Master znaczenie, Scrum Master przewodnik"
       />
       <ArticleSchema
         title="Scrum Master — co to jest i czym zajmuje się SM?"
         description="Kompletny przewodnik po roli Scrum Master: obowiązki dla teamu i PO, różnica vs. Project Manager, anty-wzorce i certyfikaty."
-        url="https://fotz.pl/blog/scrum-master-co-to"
+        url="https://www.fotz-studio.pl/blog/scrum-master-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Scrum Master", url: "https://fotz.pl/blog/scrum-master-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Scrum Master", url: "https://www.fotz-studio.pl/blog/scrum-master-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -84,7 +84,7 @@ export default function BlogScrumMasterCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Scrum Master", url: "https://fotz.pl" },
+              { name: "Scrum Master", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Scrum Master — co to jest i czym zajmuje się SM?

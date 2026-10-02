@@ -13,7 +13,7 @@ export default function GoogleAdsRzeszow() {
       <SEOHead
           title="Agencja Google Ads Rzeszów | Fotz Studio"
           description="Google Ads Rzeszów ✓ Kampanie dla firm z Rzeszowa i Podkarpacia. Od 400 zł/mies. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/rzeszow"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/rzeszow"
         keywords="google ads rzeszow, kampanie google ads rzeszow, agencja google ads rzeszow, reklamy google rzeszow, google adwords rzeszow, sem rzeszow, google ads dla firm rzeszow, prowadzenie google ads rzeszow, google ads cennik rzeszow, reklama w google rzeszow"
         />
 
@@ -23,9 +23,9 @@ export default function GoogleAdsRzeszow() {
         areaServed="Rzeszow"
       />
       <BreadcrumbSchema items={[
-        { name: 'Strona główna', url: 'https://fotz.pl' },
-        { name: 'Google Ads', url: 'https://fotz.pl/performance-marketing/google-ads' },
-        { name: 'Rzeszów', url: 'https://fotz.pl/performance-marketing/google-ads/rzeszow' }
+        { name: 'Strona główna', url: 'https://www.fotz-studio.pl' },
+        { name: 'Google Ads', url: 'https://www.fotz-studio.pl/performance-marketing/google-ads' },
+        { name: 'Rzeszów', url: 'https://www.fotz-studio.pl/performance-marketing/google-ads/rzeszow' }
       ]}/>
       <FAQSchema items={[
         {

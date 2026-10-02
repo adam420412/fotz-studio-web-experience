@@ -173,9 +173,9 @@ export default function SocialMediaMarketing() {
   return (
     <>
       <SEOHead
-        title="Social Media Marketing | Agencja Social Media | fotz.pl"
+        title="Social Media Marketing | Agencja Social Media | FOTZ Studio"
         description="Social media marketing dla firm — kompleksowa obsługa Facebook, Instagram, LinkedIn, TikTok. Strategia, content, reklamy Meta Ads. Sprawdź ofertę agencji!"
-        canonical="https://fotz.pl/uslugi/social-media-marketing"
+        canonical="https://www.fotz-studio.pl/uslugi/social-media-marketing"
         keywords="social media marketing, marketing w mediach społecznościowych, agencja social media, strategia social media, content social media, social media dla firm"
       />
       <ServiceSchema

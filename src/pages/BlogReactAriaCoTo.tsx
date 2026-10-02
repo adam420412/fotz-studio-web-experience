@@ -44,21 +44,21 @@ export default function BlogReactAriaCoTo() {
       <SEOHead
         title="React Aria, AriaKit i WCAG — dostępność komponentów React a11y 2024?"
         description="6 bibliotek a11y (react-aria/AriaKit/Radix UI/jest-axe/Storybook a11y/Base UI) — WAI-ARIA patterns, screen reader testing i praktyczna implementacja dostępności w React."
-        canonical="https://fotz.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024"
 
         keywords="React Aria, AriaKit i WCAG co to jest, React Aria, AriaKit i WCAG jak działa, React Aria, AriaKit i WCAG tutorial, React Aria, AriaKit i WCAG przykład, czym jest React Aria, AriaKit i WCAG, React Aria, AriaKit i WCAG dokumentacja, React Aria, AriaKit i WCAG przewodnik"
       />
       <ArticleSchema
         title="React Aria, AriaKit i WCAG — dostępność komponentów React a11y 2024?"
         description="6 bibliotek a11y (react-aria/AriaKit/Radix UI/jest-axe/Storybook a11y/Base UI) — WAI-ARIA patterns, screen reader testing i praktyczna implementacja dostępności w React."
-        url="https://fotz.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024"
+        url="https://www.fotz-studio.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Aria i dostępność a11y", url: "https://fotz.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Aria i dostępność a11y", url: "https://www.fotz-studio.pl/blog/react-aria-ariakit-wcag-dostepnosc-a11y-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">

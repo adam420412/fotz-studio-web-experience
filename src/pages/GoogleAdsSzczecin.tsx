@@ -211,15 +211,15 @@ export default function GoogleAdsSzczecin() {
       <SEOHead
         title="Agencja Google Ads Szczecin | Fotz Studio"
         description="Google Ads Szczecin ✓ Kampanie dla firm ze Szczecina i Zachodniopomorskiego. Od 400 zł/mies. Bezpłatna konsultacja!"
-        canonical="https://fotz.pl/performance-marketing/google-ads/szczecin"
+        canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/szczecin"
         keywords="google ads szczecin, kampanie google ads szczecin, agencja google ads szczecin, reklamy google szczecin, google adwords szczecin, sem szczecin, google ads dla firm szczecin, prowadzenie google ads szczecin, google ads cennik szczecin, reklama w google szczecin"
       />
 
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-        { name: "Google Ads", url: "https://fotz.pl/performance-marketing/google-ads" },
-        { name: "Szczecin", url: "https://fotz.pl/performance-marketing/google-ads/szczecin" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+        { name: "Google Ads", url: "https://www.fotz-studio.pl/performance-marketing/google-ads" },
+        { name: "Szczecin", url: "https://www.fotz-studio.pl/performance-marketing/google-ads/szczecin" }
       ]}/>
 
       <ServiceSchema
@@ -238,7 +238,7 @@ export default function GoogleAdsSzczecin() {
         { name: "Strona główna", url: "/" },
         { name: "Performance Marketing", url: "/performance-marketing" },
         { name: "Google Ads", url: "/performance-marketing/google-ads" },
-        { name: "Szczecin", url: "https://fotz.pl" }
+        { name: "Szczecin", url: "https://www.fotz-studio.pl" }
       ]}/>
 
       {/* Hero Section */}

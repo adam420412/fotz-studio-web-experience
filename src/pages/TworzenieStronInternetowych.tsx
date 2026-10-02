@@ -285,7 +285,7 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
       <SEOHead
         title="Tworzenie stron internetowych | Profesjonalne strony WWW"
         description="Tworzymy profesjonalne strony internetowe dla firm. Szybkie, responsywne, zoptymalizowane pod SEO. Od 499 zł. Bezpłatna wycena w 24h!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych"
         keywords="tworzenie stron internetowych, tworzenie stron www, projektowanie stron internetowych, strony internetowe dla firm, tworzenie stron cena"
       />
 
@@ -297,9 +297,9 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
       />
 
       <BreadcrumbSchema items={[
-          { name: 'Strona główna', url: 'https://fotz.pl' },
-          { name: 'Usługi', url: 'https://fotz.pl/uslugi' },
-          { name: 'Tworzenie stron internetowych', url: 'https://fotz.pl/uslugi/tworzenie-stron-internetowych' },
+          { name: 'Strona główna', url: 'https://www.fotz-studio.pl' },
+          { name: 'Usługi', url: 'https://www.fotz-studio.pl/uslugi' },
+          { name: 'Tworzenie stron internetowych', url: 'https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych' },
         ]}/>
 
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
@@ -307,7 +307,7 @@ Dla e-commerce to jeszcze prostsze: strona robi za Ciebie 24h sprzedaż. Jedna d
       <Layout>
         <PageBreadcrumbs items={[
             { name: 'Usługi', url: '/uslugi' },
-            { name: 'Tworzenie stron internetowych', url: "https://fotz.pl" },
+            { name: 'Tworzenie stron internetowych', url: "https://www.fotz-studio.pl" },
           ]}/>
 
         {/* Hero Section */}

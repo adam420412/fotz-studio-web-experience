@@ -44,21 +44,21 @@ export default function BlogCrdtCollabCoTo() {
       <SEOHead
         title="CRDT, Y.js, Liveblocks i PartyKit | Fotz Studio"
         description="6 narzędzi collaborative editing (Y.js/Liveblocks/PartyKit/Hocuspocus/Automerge/ElectricSQL) — CRDTs, offline-first, presence, shared cursors i Tiptap integration."
-        canonical="https://fotz.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024"
 
         keywords="CRDT, Y.js, Liveblocks i PartyKit co to jest, CRDT, Y.js, Liveblocks i PartyKit jak działa, CRDT, Y.js, Liveblocks i PartyKit tutorial, CRDT, Y.js, Liveblocks i PartyKit przykład, czym jest CRDT, Y.js, Liveblocks i PartyKit, CRDT, Y.js, Liveblocks i PartyKit dokumentacja, CRDT, Y.js, Liveblocks i PartyKit przewodnik"
       />
       <ArticleSchema
         title="CRDT, Y.js, Liveblocks i PartyKit — real-time collaborative editing React 2024?"
         description="6 narzędzi collaborative editing (Y.js/Liveblocks/PartyKit/Hocuspocus/Automerge/ElectricSQL) — CRDTs, offline-first, presence, shared cursors i Tiptap integration."
-        url="https://fotz.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024"
+        url="https://www.fotz-studio.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CRDT i Collaborative Editing", url: "https://fotz.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CRDT i Collaborative Editing", url: "https://www.fotz-studio.pl/blog/crdt-yjs-liveblocks-partykit-collaborative-editing-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-violet-950 text-white py-20 px-4">

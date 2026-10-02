@@ -93,26 +93,26 @@ export default function BlogSubscriptionModelCoTo() {
       <SEOHead
         title="Model Subskrypcyjny — co to jest? Subscription model MRR i churn"
         description="Kompletny przewodnik po modelu subskrypcyjnym: 5 typów, składniki MRR (New, Expansion, Churned), benchmarki churn i strategie retencji."
-        canonical="https://fotz.pl/blog/subscription-model-co-to"
+        canonical="https://www.fotz-studio.pl/blog/subscription-model-co-to"
 
         keywords="Model Subskrypcyjny co to jest, Model Subskrypcyjny definicja, czym jest Model Subskrypcyjny, Model Subskrypcyjny startup, Model Subskrypcyjny jak liczyć, Model Subskrypcyjny wzór, Model Subskrypcyjny przykłady"
       />
       <ArticleSchema
         title="Model Subskrypcyjny — co to jest i jak go zbudować?"
         description="Kompletny przewodnik po modelu subskrypcyjnym: 5 typów, składniki MRR (New, Expansion, Churned), benchmarki churn i strategie retencji."
-        url="https://fotz.pl/blog/subscription-model-co-to"
+        url="https://www.fotz-studio.pl/blog/subscription-model-co-to"
         datePublished="2024-01-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Model Subskrypcyjny", url: "https://fotz.pl/blog/subscription-model-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Model Subskrypcyjny", url: "https://www.fotz-studio.pl/blog/subscription-model-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Model Subskrypcyjny", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Model Subskrypcyjny", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Model Subskrypcyjny — co to jest i jak go zbudować?
           </h1>

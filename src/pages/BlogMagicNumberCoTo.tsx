@@ -52,21 +52,21 @@ export default function BlogMagicNumberCoTo() {
       <SEOHead
         title="Magic Number — efektywność sprzedaży w SaaS | Fotz.pl"
         description="Magic Number (Sales Efficiency Ratio) w SaaS — formuła, benchmarki, jak obliczać i co wpływa na efektywność S&M. Kompletny przewodnik dla founders i CFO."
-        canonical="https://fotz.pl/blog/magic-number-efektywnosc-sprzedazy-saas"
+        canonical="https://www.fotz-studio.pl/blog/magic-number-efektywnosc-sprzedazy-saas"
 
         keywords="Magic Number co to jest, Magic Number definicja, czym jest Magic Number, Magic Number startup, Magic Number jak liczyć, Magic Number wzór, Magic Number przykłady"
       />
       <ArticleSchema
         title="Magic Number — efektywność sprzedaży w SaaS"
         description="Kompletny przewodnik po Magic Number: formuła, benchmarki, drivery i różnica vs CAC Payback Period."
-        url="https://fotz.pl/blog/magic-number-efektywnosc-sprzedazy-saas"
+        url="https://www.fotz-studio.pl/blog/magic-number-efektywnosc-sprzedazy-saas"
         datePublished="2024-02-08"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Magic Number", url: "https://fotz.pl/blog/magic-number-efektywnosc-sprzedazy-saas" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Magic Number", url: "https://www.fotz-studio.pl/blog/magic-number-efektywnosc-sprzedazy-saas" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-yellow-950 to-slate-900 text-white py-20 px-4">

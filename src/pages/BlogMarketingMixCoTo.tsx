@@ -111,21 +111,21 @@ export default function BlogMarketingMixCoTo() {
       <SEOHead
         title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"
         description="Kompletny przewodnik po marketing mix: model 4P i 7P, kluczowe pytania dla każdego P, przykłady i nowoczesne alternatywy."
-        canonical="https://fotz.pl/blog/marketing-mix-co-to"
+        canonical="https://www.fotz-studio.pl/blog/marketing-mix-co-to"
 
         keywords="Marketing Mix co to jest, Marketing Mix definicja, czym jest Marketing Mix, Marketing Mix w marketingu, Marketing Mix przykłady, jak działa Marketing Mix, Marketing Mix strategia"
       />
       <ArticleSchema
         title="Marketing Mix — co to jest? 4P i 7P w strategii marketingowej"
         description="Kompletny przewodnik po marketing mix: model 4P i 7P, kluczowe pytania dla każdego P, przykłady i nowoczesne alternatywy."
-        url="https://fotz.pl/blog/marketing-mix-co-to"
+        url="https://www.fotz-studio.pl/blog/marketing-mix-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Marketing Mix", url: "https://fotz.pl/blog/marketing-mix-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Marketing Mix", url: "https://www.fotz-studio.pl/blog/marketing-mix-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -133,7 +133,7 @@ export default function BlogMarketingMixCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Marketing Mix", url: "https://fotz.pl" },
+              { name: "Marketing Mix", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Marketing Mix — co to jest? 4P i 7P w strategii marketingowej

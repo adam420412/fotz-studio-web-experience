@@ -97,7 +97,7 @@ const PozycjonowanieSosnowiec = () => {
       <SEOHead
         title="Pozycjonowanie Sosnowiec - SEO lokalne dla firm | fotz studio"
         description="Pozycjonowanie stron Sosnowiec. Agencja SEO Fotz Studio — audyt SEO, optymalizacja dla usług lokalnych, handlu i transportu. Pomagamy firmom z Sosnowca i GOM zdobyć pierwszą stronę Google."
-        canonical="https://fotz.pl/pozycjonowanie/sosnowiec"
+        canonical="https://www.fotz-studio.pl/pozycjonowanie/sosnowiec"
         keywords="pozycjonowanie sosnowiec, agencja seo sosnowiec, seo sosnowiec, pozycjonowanie stron sosnowiec, seo dla firm sosnowiec, seo śląsk, pozycjonowanie lokalne sosnowiec"
       />
       <ServiceSchema
@@ -107,10 +107,10 @@ const PozycjonowanieSosnowiec = () => {
         areaServed="Sosnowiec"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
-          { name: "Sosnowiec", url: "https://fotz.pl/pozycjonowanie/sosnowiec" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
+          { name: "Sosnowiec", url: "https://www.fotz-studio.pl/pozycjonowanie/sosnowiec" },
         ]}/>
       <FAQSchema items={faqItems} />
 

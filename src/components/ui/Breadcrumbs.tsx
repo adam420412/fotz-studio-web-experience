@@ -89,7 +89,7 @@ export function Breadcrumbs({ items, className = "" }: BreadcrumbsProps) {
   // Schema data for SEO
   const schemaItems = breadcrumbItems.map((item) => ({
     name: item.label,
-    url: `https://fotz.pl${item.href}`,
+    url: `https://www.fotz-studio.pl${item.href}`,
   }));
 
   return (

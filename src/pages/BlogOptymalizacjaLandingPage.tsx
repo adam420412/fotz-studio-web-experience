@@ -56,14 +56,14 @@ export default function BlogOptymalizacjaLandingPage() {
       <SEOHead
         title="Optymalizacja landing page — poradnik konwersji 2025 | Fotz.pl"
         description="Poradnik optymalizacji landing page: elementy, testy A/B, narzędzia, błędy, mobile, szybkość. Zwiększ konwersję o 30–50%."
-        canonical="https://fotz.pl/blog/optymalizacja-landing-page"
+        canonical="https://www.fotz-studio.pl/blog/optymalizacja-landing-page"
 
         keywords="Optymalizacja landing page, Optymalizacja landing page co to jest, Optymalizacja landing page jak działa, Optymalizacja landing page definicja, Optymalizacja landing page przykłady, Optymalizacja landing page poradnik, Optymalizacja landing page przewodnik"
       />
       <ArticleSchema
         title="Optymalizacja landing page — kompletny poradnik konwersji"
         description="Poradnik optymalizacji landing page: elementy, testy A/B, narzędzia, błędy, mobile, szybkość. Zwiększ konwersję o 30–50%."
-        url="https://fotz.pl/blog/optymalizacja-landing-page"
+        url="https://www.fotz-studio.pl/blog/optymalizacja-landing-page"
         datePublished="2025-02-25"
         author="Fotz Studio"
       />

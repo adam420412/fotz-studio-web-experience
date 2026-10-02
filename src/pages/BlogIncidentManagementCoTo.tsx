@@ -44,21 +44,21 @@ export default function BlogIncidentManagementCoTo() {
       <SEOHead
         title="Incident Management — co to jest, severity, PagerDuty, postmortem, on-call SLA?"
         description="Incident Management: severity levels, PagerDuty vs Opsgenie vs Incident.io, Runbook, Blameless Postmortem, on-call rotations, SLO/SLA/Error Budget."
-        canonical="https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
+        canonical="https://www.fotz-studio.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
 
         keywords="Incident Management co to jest, Incident Management definicja, czym jest Incident Management, Incident Management przykłady, jak działa Incident Management, Incident Management znaczenie, Incident Management przewodnik"
       />
       <ArticleSchema
         title="Incident Management — co to jest, severity, PagerDuty, postmortem, on-call SLA?"
         description="Incident Management: 6 narzędzi (PagerDuty/Opsgenie/Incident.io/VictorOps/Statuspage/Rootly), severity levels, blameless postmortem, on-call, SLO/SLA."
-        url="https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
+        url="https://www.fotz-studio.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Incident Management", url: "https://fotz.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Incident Management", url: "https://www.fotz-studio.pl/blog/incident-management-co-to-jest-severity-pagerduty-postmortem-on-call-sla" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-rose-950 text-white py-20 px-4">

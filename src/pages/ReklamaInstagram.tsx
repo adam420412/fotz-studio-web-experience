@@ -77,9 +77,9 @@ export default function ReklamaInstagram() {
   return (
     <>
       <SEOHead
-        title="Reklama Instagram — agencja Instagram Ads | fotz.pl"
+        title="Reklama Instagram — agencja Instagram Ads | FOTZ Studio"
         description="Reklama na Instagramie — kampanie Meta Ads dla firm. Reels Ads, Stories, Shopping. Obsługa Instagram Ads od 799 zł/mies. Bezpłatny audyt kampanii!"
-        canonical="https://fotz.pl/uslugi/reklama-instagram"
+        canonical="https://www.fotz-studio.pl/uslugi/reklama-instagram"
         keywords="reklama instagram, reklamy na instagramie, instagram ads, kampanie instagram, reklama instagram cena, instagram dla firm"
       />
       <ServiceSchema

@@ -177,7 +177,7 @@ export default function BlogLinkedInDlaFirmy() {
       <SEOHead
         title="LinkedIn dla firmy — jak budować markę i generować leady? 2025"
         description="LinkedIn dla firmy — kompletny poradnik: optymalizacja profilu, strategie treści, LinkedIn Ads, generowanie leadów B2B. Praktyczne porady dla agencji i SaaS."
-        canonical="https://fotz.pl/blog/linkedin-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/linkedin-dla-firmy"
 
         keywords="LinkedIn dla firmy, LinkedIn dla firmy poradnik, LinkedIn dla firmy strategia, LinkedIn dla firmy jak zrobić, LinkedIn dla firmy marketing, LinkedIn dla firmy przykłady, LinkedIn dla firmy w Polsce"
       />
@@ -186,7 +186,7 @@ export default function BlogLinkedInDlaFirmy() {
         description="Jak efektywnie wykorzystać LinkedIn dla Business Profile: optymalizacja profilu, content strategy, LinkedIn Ads, lead generation, mierzenie ROI w 2025."
         datePublished="2025-04-12"
         dateModified="2025-04-12"
-        url="https://fotz.pl/blog/linkedin-dla-firmy"
+        url="https://www.fotz-studio.pl/blog/linkedin-dla-firmy"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

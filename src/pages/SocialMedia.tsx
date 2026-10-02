@@ -273,7 +273,7 @@ const SocialMedia = () => {
       <SEOHead
         title="Obsługa i Prowadzenie Social Media Facebook Instagram - Cennik"
         description="Obsługa social media dla firm — prowadzenie Facebooka, Instagrama, LinkedIn. Strategia, content, kampanie Facebook Ads. Cennik prowadzenia social media i zakres usług agencji w jednym miejscu."
-        canonical="https://fotz.pl/social-media/obsluga"
+        canonical="https://www.fotz-studio.pl/social-media/obsluga"
         keywords="obsługa social media, prowadzenie social media, prowadzenie fanpage, obsługa mediów społecznościowych, agencja social media, zarządzanie social media, prowadzenie facebooka, prowadzenie instagrama, community management, cennik social media, social media marketing, agencja reklamowa social media"
       />
       
@@ -285,9 +285,9 @@ const SocialMedia = () => {
       />
       
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Social Media", url: "https://fotz.pl/social-media/obsluga" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Social Media", url: "https://www.fotz-studio.pl/social-media/obsluga" },
         ]}/>
       
       <FAQSchema 

@@ -13,7 +13,7 @@ const faqItems = [
   },
   {
     question: "React Email — szablony emaili z React komponentami?",
-    answer: "React Email: biblioteka do budowania emaili jako React komponenty. Compatibility across email clients (Gmail, Outlook, Apple Mail). Preview w przeglądarce. Export do HTML. Instalacja: npm install @react-email/components react-email. Komponenty: Html, Head, Body, Container, Section, Row, Column. Text, Heading, Button, Link, Hr, Img. Preview server: npx react-email dev. Preview na localhost:3000. Hot reload. Przykład template: import {Html, Body, Container, Text, Button, Img} from '@react-email/components'. export function WelcomeEmail({name}: {name: string}) {return Html lang='pl' {Body style={{fontFamily: 'sans-serif'}} {Container {Text Witaj, {name}. Text Dziękujemy za rejestrację. Button href='https://fotz.pl' Zaloguj się. }}}. Integracja z Resend: resend.emails.send({react: WelcomeEmail({name: 'Adam'})}). Resend konwertuje React do HTML automatycznie. react-email + Nodemailer: renderToStaticMarkup(EmailTemplate()). nodemailer.sendMail({html: renderedHtml}). Tailwind w React Email: Tailwind component (experimental). CSS inline dla email clients. Responsive email: sprawdź campaign.monitor, emailonacid do testowania. Przykładowe szablony: resetPassword, orderConfirmation, invoiceEmail, verifyEmail, welcomeEmail, subscriptionRenewal. Dostępne na react.email/examples. Litmus/Email on Acid: testowanie w 50+ klientach. Kosztowne ale ważne. Szybka alternatywa: MJML (XML-based email framework), zcompiluje do HTML.",
+    answer: "React Email: biblioteka do budowania emaili jako React komponenty. Compatibility across email clients (Gmail, Outlook, Apple Mail). Preview w przeglądarce. Export do HTML. Instalacja: npm install @react-email/components react-email. Komponenty: Html, Head, Body, Container, Section, Row, Column. Text, Heading, Button, Link, Hr, Img. Preview server: npx react-email dev. Preview na localhost:3000. Hot reload. Przykład template: import {Html, Body, Container, Text, Button, Img} from '@react-email/components'. export function WelcomeEmail({name}: {name: string}) {return Html lang='pl' {Body style={{fontFamily: 'sans-serif'}} {Container {Text Witaj, {name}. Text Dziękujemy za rejestrację. Button href='https://www.fotz-studio.pl' Zaloguj się. }}}. Integracja z Resend: resend.emails.send({react: WelcomeEmail({name: 'Adam'})}). Resend konwertuje React do HTML automatycznie. react-email + Nodemailer: renderToStaticMarkup(EmailTemplate()). nodemailer.sendMail({html: renderedHtml}). Tailwind w React Email: Tailwind component (experimental). CSS inline dla email clients. Responsive email: sprawdź campaign.monitor, emailonacid do testowania. Przykładowe szablony: resetPassword, orderConfirmation, invoiceEmail, verifyEmail, welcomeEmail, subscriptionRenewal. Dostępne na react.email/examples. Litmus/Email on Acid: testowanie w 50+ klientach. Kosztowne ale ważne. Szybka alternatywa: MJML (XML-based email framework), zcompiluje do HTML.",
   },
   {
     question: "SendGrid, Mailgun i AWS SES — enterprise email services?",
@@ -44,21 +44,21 @@ export default function BlogEmailResendCoTo() {
       <SEOHead
         title="Resend, SendGrid, Nodemailer — emaile transakcyjne w Next.js TypeScript?"
         description="6 serwisów email (Resend/SendGrid/Mailgun/Postmark/AWS SES/Nodemailer) — React Email, Server Actions, kolejkowanie BullMQ, rate limiting i RODO compliance."
-        canonical="https://fotz.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024"
+        canonical="https://www.fotz-studio.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024"
 
         keywords="Resend, SendGrid, Nodemailer co to jest, Resend, SendGrid, Nodemailer jak działa, Resend, SendGrid, Nodemailer tutorial, Resend, SendGrid, Nodemailer przykład, czym jest Resend, SendGrid, Nodemailer, Resend, SendGrid, Nodemailer dokumentacja, Resend, SendGrid, Nodemailer przewodnik"
       />
       <ArticleSchema
         title="Resend, SendGrid, Nodemailer — emaile transakcyjne w Next.js TypeScript?"
         description="6 serwisów email (Resend/SendGrid/Mailgun/Postmark/AWS SES/Nodemailer) — React Email, Server Actions, kolejkowanie BullMQ, rate limiting i RODO compliance."
-        url="https://fotz.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Email i Resend", url: "https://fotz.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Email i Resend", url: "https://www.fotz-studio.pl/blog/resend-sendgrid-nodemailer-emaile-transakcyjne-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-cyan-950 text-white py-20 px-4">

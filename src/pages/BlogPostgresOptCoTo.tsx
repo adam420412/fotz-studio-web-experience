@@ -44,21 +44,21 @@ export default function BlogPostgresOptCoTo() {
       <SEOHead
         title="PostgreSQL optymalizacja — EXPLAIN ANALYZE, indeksy, partitioning, PgBouncer, Patroni?"
         description="PostgreSQL optimization: EXPLAIN ANALYZE, B-tree/GIN/GiST indeksy, RANGE partitioning, PgBouncer connection pooling, streaming replication i Patroni HA."
-        canonical="https://fotz.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
+        canonical="https://www.fotz-studio.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
 
         keywords="PostgreSQL optymalizacja co to jest, PostgreSQL optymalizacja jak działa, PostgreSQL optymalizacja tutorial, PostgreSQL optymalizacja przykład, czym jest PostgreSQL optymalizacja, PostgreSQL optymalizacja dokumentacja, PostgreSQL optymalizacja przewodnik"
       />
       <ArticleSchema
         title="PostgreSQL optymalizacja — EXPLAIN ANALYZE, indeksy, partitioning, PgBouncer, Patroni?"
         description="PostgreSQL optimization: 6 technik (EXPLAIN ANALYZE/Indexing/Partitioning/Connection Pooling/Vacuum/Replication), PgBouncer, Patroni HA."
-        url="https://fotz.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
+        url="https://www.fotz-studio.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "PostgreSQL optymalizacja", url: "https://fotz.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "PostgreSQL optymalizacja", url: "https://www.fotz-studio.pl/blog/postgresql-optymalizacja-explain-analyze-indeksy-partitioning-pgbouncer-patroni" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 text-white py-20 px-4">

@@ -43,13 +43,13 @@ const CaseStudyVictoryCars = () => {
       <SEOHead
         title="Victory Cars - Dealer Samochodów Premium Poznań - Case Study"
         description="Case study Victory Cars Poznań: strona internetowa dla dealera samochodów premium. Katalog pojazdów, SEO motoryzacyjne i produkcja foto/video. Fotz Studio."
-        canonical="https://fotz.pl/realizacje/victory-cars"
+        canonical="https://www.fotz-studio.pl/realizacje/victory-cars"
         keywords="case study automotive dealership, marketing samochodowy realizacja"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Realizacje", url: "https://fotz.pl/realizacje" },
-        { name: "Victory Cars", url: "https://fotz.pl/realizacje/victory-cars" }
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Realizacje", url: "https://www.fotz-studio.pl/realizacje" },
+        { name: "Victory Cars", url: "https://www.fotz-studio.pl/realizacje/victory-cars" }
       ]}/>
       <ArticleSchema
         title="Victory Cars - Dealer Samochodów Premium Poznań - Case Study"
@@ -57,8 +57,8 @@ const CaseStudyVictoryCars = () => {
         author="Fotz Studio"
         datePublished="2024-02-18"
         dateModified="2026-01-09"
-        image="https://fotz.pl/og-image.jpg"
-        url="https://fotz.pl/realizacje/victory-cars"
+        image="https://www.fotz-studio.pl/og-image.jpg"
+        url="https://www.fotz-studio.pl/realizacje/victory-cars"
       />
 
       {/* Hero */}

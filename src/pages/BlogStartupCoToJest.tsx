@@ -65,9 +65,9 @@ export default function BlogStartupCoToJest() {
   return (
     <>
       <SEOHead
-        title="Startup — co to jest i jak założyć startup? | fotz.pl"
+        title="Startup — co to jest i jak założyć startup? | FOTZ Studio"
         description="Startup co to jest — wyjaśniamy czym jest startup, jak różni się od zwykłej firmy, jak go założyć, etapy rozwoju i product-market fit. Poradnik dla founderów."
-        canonical="https://fotz.pl/blog/startup-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/startup-co-to-jest"
 
         keywords="Startup co to jest, Startup definicja, czym jest Startup, Startup startup, Startup jak liczyć, Startup wzór, Startup przykłady"
       />
@@ -76,7 +76,7 @@ export default function BlogStartupCoToJest() {
         description="Czym jest startup, różnica startup vs SMB, jak założyć startup, etapy rozwoju (seed-IPO), product-market fit i polska scena startupowa."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/startup-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/startup-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

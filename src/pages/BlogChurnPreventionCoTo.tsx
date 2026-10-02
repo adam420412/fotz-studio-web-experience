@@ -51,21 +51,21 @@ export default function BlogChurnPreventionCoTo() {
       <SEOHead
         title="Churn Prevention — jak zapobiegać odejściom klientów? | Fotz.pl"
         description="Churn Prevention w SaaS — przyczyny churnu, Early Warning System, retention playbook i kluczowe metryki (NRR, GRR). Kompletny przewodnik dla Customer Success."
-        canonical="https://fotz.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
+        canonical="https://www.fotz-studio.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
 
         keywords="Churn Prevention co to jest, Churn Prevention definicja, czym jest Churn Prevention, Churn Prevention startup, Churn Prevention jak liczyć, Churn Prevention wzór, Churn Prevention przykłady"
       />
       <ArticleSchema
         title="Churn Prevention — jak zapobiegać odejściom klientów?"
         description="Kompletny przewodnik po Churn Prevention: przyczyny churnu, Early Warning System, retention playbook i metryki."
-        url="https://fotz.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
+        url="https://www.fotz-studio.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow"
         datePublished="2024-02-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Churn Prevention", url: "https://fotz.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Churn Prevention", url: "https://www.fotz-studio.pl/blog/churn-prevention-zapobieganie-odejsciom-klientow" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">

@@ -44,21 +44,21 @@ export default function BlogCssInJsCoTo() {
       <SEOHead
         title="CSS-in-JS, vanilla-extract, StyleX, Linaria | Fotz Studio"
         description="6 podejść CSS (Tailwind/vanilla-extract/StyleX/CSS Modules/Linaria/Emotion) — runtime vs zero-runtime, TypeScript, React Server Components i wybór 2024."
-        canonical="https://fotz.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024"
+        canonical="https://www.fotz-studio.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024"
 
         keywords="CSS-in-JS, vanilla-extract, StyleX, Linaria co to jest, CSS-in-JS, vanilla-extract, StyleX, Linaria definicja, czym jest CSS-in-JS, vanilla-extract, StyleX, Linaria, CSS-in-JS, vanilla-extract, StyleX, Linaria przykłady, jak działa CSS-in-JS, vanilla-extract, StyleX, Linaria, CSS-in-JS, vanilla-extract, StyleX, Linaria znaczenie, CSS-in-JS, vanilla-extract, StyleX, Linaria przewodnik"
       />
       <ArticleSchema
         title="CSS-in-JS, vanilla-extract, StyleX, Linaria — zero-runtime styles 2024?"
         description="6 podejść CSS (Tailwind/vanilla-extract/StyleX/CSS Modules/Linaria/Emotion) — runtime vs zero-runtime, TypeScript, React Server Components i wybór 2024."
-        url="https://fotz.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024"
+        url="https://www.fotz-studio.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CSS-in-JS Zero Runtime", url: "https://fotz.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CSS-in-JS Zero Runtime", url: "https://www.fotz-studio.pl/blog/css-in-js-vanilla-extract-stylex-linaria-zero-runtime-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-teal-950 text-white py-20 px-4">

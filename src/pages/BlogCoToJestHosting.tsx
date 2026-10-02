@@ -73,9 +73,9 @@ export default function BlogCoToJestHosting() {
   return (
     <>
       <SEOHead
-        title="Co to jest hosting? Poradnik dla początkujących 2025 | fotz.pl"
+        title="Co to jest hosting? Poradnik dla początkujących 2025 | FOTZ Studio"
         description="Czym jest hosting, rodzaje hostingów, ile kosztują i jak wybrać właściwy dla strony internetowej lub sklepu."
-        canonical="https://fotz.pl/blog/co-to-jest-hosting"
+        canonical="https://www.fotz-studio.pl/blog/co-to-jest-hosting"
 
         keywords="co to jest, definicja, czym jest, przykłady, jak działa, znaczenie, przewodnik"
       />
@@ -84,7 +84,7 @@ export default function BlogCoToJestHosting() {
         description="Czym jest hosting, rodzaje hostingów, ile kosztują i jak wybrać właściwy dla strony internetowej lub sklepu."
         datePublished="2025-01-15"
         dateModified="2025-03-25"
-        url="https://fotz.pl/blog/co-to-jest-hosting"
+        url="https://www.fotz-studio.pl/blog/co-to-jest-hosting"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

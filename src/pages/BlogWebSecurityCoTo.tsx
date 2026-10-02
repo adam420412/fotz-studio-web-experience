@@ -44,21 +44,21 @@ export default function BlogWebSecurityCoTo() {
       <SEOHead
         title="Web Security — XSS, CSRF, CSP, SQL Injection, OWASP Top 10, Node.js?"
         description="6 obszarów bezpieczeństwa web (XSS/SQL Injection/Auth/Headers/Supply Chain/CSRF) — OWASP Top 10, CSP nonce, bcrypt, Argon2, MFA, HTTPS, CORS i npm audit."
-        canonical="https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
+        canonical="https://www.fotz-studio.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
 
         keywords="Web Security co to jest, Web Security jak działa, Web Security tutorial, Web Security przykład, czym jest Web Security, Web Security dokumentacja, Web Security przewodnik"
       />
       <ArticleSchema
         title="Web Security — XSS, CSRF, CSP, SQL Injection, OWASP Top 10, Node.js?"
         description="6 obszarów bezpieczeństwa web (XSS/SQL Injection/Auth/Headers/Supply Chain/CSRF) — OWASP Top 10, CSP nonce, bcrypt, Argon2, MFA, HTTPS, CORS i npm audit."
-        url="https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
+        url="https://www.fotz-studio.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Web Security", url: "https://fotz.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Web Security", url: "https://www.fotz-studio.pl/blog/web-security-xss-csrf-csp-sql-injection-owasp-nodejs-nextjs" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-orange-950 text-white py-20 px-4">

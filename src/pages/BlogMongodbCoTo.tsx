@@ -121,21 +121,21 @@ export default function BlogMongodbCoTo() {
       <SEOHead
         title="MongoDB — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po MongoDB: dokumenty, kolekcje, zapytania, aggregation pipeline i skalowanie."
-        canonical="https://fotz.pl/blog/mongodb-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/mongodb-co-to-jest"
 
         keywords="MongoDB co to jest, MongoDB jak działa, MongoDB tutorial, MongoDB przykład, czym jest MongoDB, MongoDB dokumentacja, MongoDB przewodnik"
       />
       <ArticleSchema
         title="MongoDB — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po MongoDB: dokumenty, kolekcje, zapytania, aggregation pipeline i skalowanie."
-        url="https://fotz.pl/blog/mongodb-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/mongodb-co-to-jest"
         datePublished="2024-01-19"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "MongoDB", url: "https://fotz.pl/blog/mongodb-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "MongoDB", url: "https://www.fotz-studio.pl/blog/mongodb-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -143,7 +143,7 @@ export default function BlogMongodbCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "MongoDB", url: "https://fotz.pl" },
+              { name: "MongoDB", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             MongoDB — co to jest i jak działa?

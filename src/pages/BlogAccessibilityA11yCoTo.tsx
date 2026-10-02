@@ -44,21 +44,21 @@ export default function BlogAccessibilityA11yCoTo() {
       <SEOHead
         title="Dostępność web (a11y), WCAG, ARIA, keyboard navigation"
         description="Web Accessibility (a11y): WCAG 2.2 AA, semantyczny HTML, ARIA, keyboard nav, kontrast kolorów, screen reader testing, axe-core i Lighthouse dostępność."
-        canonical="https://fotz.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie"
+        canonical="https://www.fotz-studio.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie"
 
         keywords="Dostępność web (a11y), WCAG, ARIA, keyboard navigation co to jest, Dostępność web (a11y), WCAG, ARIA, keyboard navigation definicja, czym jest Dostępność web (a11y), WCAG, ARIA, keyboard navigation, Dostępność web (a11y), WCAG, ARIA, keyboard navigation przykłady, jak działa Dostępność web (a11y), WCAG, ARIA, keyboard navigation, Dostępność web (a11y), WCAG, ARIA, keyboard navigation znaczenie, Dostępność web (a11y), WCAG, ARIA, keyboard navigation przewodnik"
       />
       <ArticleSchema
         title="Dostępność web (a11y), WCAG, ARIA, keyboard navigation — jak testować?"
         description="6 obszarów dostępności (HTML/kontrast/keyboard/focus/alt/motion) — WCAG 2.2 AA, semantyczny HTML, ARIA patterns, axe-core, screen reader testing."
-        url="https://fotz.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie"
+        url="https://www.fotz-studio.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Dostępność web a11y", url: "https://fotz.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Dostępność web a11y", url: "https://www.fotz-studio.pl/blog/dostepnosc-web-a11y-wcag-aria-keyboard-navigation-testowanie" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-orange-950 text-white py-20 px-4">

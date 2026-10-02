@@ -51,21 +51,21 @@ export default function BlogTimeToValueCoTo() {
       <SEOHead
         title="Time to Value — co to jest i jak skrócić TtV w SaaS? | Fotz.pl"
         description="Time to Value (TtV): definicja, pomiar, związek z Aha Moment, strategie skrócenia, benchmarki (PLG vs. SLG) i jak TtV wpływa na retencję i churn SaaS."
-        canonical="https://fotz.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv"
+        canonical="https://www.fotz-studio.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv"
 
         keywords="Time to Value co to jest, Time to Value definicja, czym jest Time to Value, Time to Value startup, Time to Value jak liczyć, Time to Value wzór, Time to Value przykłady"
       />
       <ArticleSchema
         title="Time to Value — co to jest i jak skrócić TtV w SaaS?"
         description="Time to Value: definicja i pomiar, Aha Moment, onboarding optymalizacja, 6 taktyk skrócenia TtV, benchmarki PLG vs. SLG i związek z retencją i churnem."
-        url="https://fotz.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv"
+        url="https://www.fotz-studio.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv"
         datePublished="2024-03-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Time to Value", url: "https://fotz.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Time to Value", url: "https://www.fotz-studio.pl/blog/time-to-value-co-to-jest-jak-skrocic-ttv" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">

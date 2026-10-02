@@ -49,21 +49,21 @@ export default function BlogFinOpsCoTo() {
       <SEOHead
         title="FinOps — co to jest i jak optymalizować koszty cloud? | Fotz.pl"
         description="FinOps: definicja, 3 fazy (Inform/Optimize/Operate), tagowanie kosztów, Reserved Instances, rightsizing, unit economics cloud i jak budować kulturę FinOps."
-        canonical="https://fotz.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud"
+        canonical="https://www.fotz-studio.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud"
 
         keywords="FinOps co to jest, FinOps definicja, czym jest FinOps, FinOps przykłady, jak działa FinOps, FinOps znaczenie, FinOps przewodnik"
       />
       <ArticleSchema
         title="FinOps — co to jest i jak optymalizować koszty cloud?"
         description="FinOps: 3 fazy lifecycle, alokacja kosztów, 5 kategorii cloud waste, optymalizacja (RI, Spot, rightsizing), unit economics i budowanie kultury FinOps."
-        url="https://fotz.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud"
+        url="https://www.fotz-studio.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud"
         datePublished="2024-04-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "FinOps", url: "https://fotz.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "FinOps", url: "https://www.fotz-studio.pl/blog/finops-co-to-jest-jak-optymalizowac-koszty-cloud" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">

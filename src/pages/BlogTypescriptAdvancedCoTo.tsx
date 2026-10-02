@@ -44,21 +44,21 @@ export default function BlogTypescriptAdvancedCoTo() {
       <SEOHead
         title="TypeScript zaawansowany — generics, conditional types, decorators, TypeScript 5.x?"
         description="TypeScript advanced: generics z constraints, conditional types, mapped types, template literal types, decorators Stage 3, type guards i TypeScript 5.x nowości."
-        canonical="https://fotz.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
+        canonical="https://www.fotz-studio.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
 
         keywords="TypeScript zaawansowany co to jest, TypeScript zaawansowany jak działa, TypeScript zaawansowany tutorial, TypeScript zaawansowany przykład, czym jest TypeScript zaawansowany, TypeScript zaawansowany dokumentacja, TypeScript zaawansowany przewodnik"
       />
       <ArticleSchema
         title="TypeScript zaawansowany — generics, conditional types, decorators, TypeScript 5.x?"
         description="6 zaawansowanych funkcji TypeScript (generics/conditional/mapped/template/decorators/guards) — infer, satisfies, using, NoInfer, TypeScript 5.5 inferred predicates."
-        url="https://fotz.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
+        url="https://www.fotz-studio.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TypeScript zaawansowany", url: "https://fotz.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TypeScript zaawansowany", url: "https://www.fotz-studio.pl/blog/typescript-zaawansowany-generics-conditional-types-decorators-typescript-5" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 text-white py-20 px-4">

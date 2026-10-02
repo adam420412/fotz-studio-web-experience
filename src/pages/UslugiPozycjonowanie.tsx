@@ -243,7 +243,7 @@ const UslugiPozycjonowanie = () => {
       <SEOHead
         title="Pozycjonowanie Stron Internetowych — Agencja SEO | Fotz Studio"
         description="Profesjonalne pozycjonowanie stron internetowych w Google. Agencja SEO Fotz Studio — audyt, optymalizacja, link building. Sprawdź pakiety od 800 zł/mies.!"
-        canonical="https://fotz.pl/uslugi/pozycjonowanie"
+        canonical="https://www.fotz-studio.pl/uslugi/pozycjonowanie"
         keywords="pozycjonowanie stron internetowych, usługi seo, agencja seo, seo dla firm, pozycjonowanie google, seo pozycjonowanie cennik, kampanie seo, pozycjonowanie stron cennik, seo audyt, pozycjonowanie organiczne"
       />
       <ServiceSchema
@@ -253,9 +253,9 @@ const UslugiPozycjonowanie = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl/" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Pozycjonowanie", url: "https://fotz.pl/uslugi/pozycjonowanie" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl/" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Pozycjonowanie", url: "https://www.fotz-studio.pl/uslugi/pozycjonowanie" },
         ]}/>
       <FAQSchema items={faqItems} />
 

@@ -44,21 +44,21 @@ export default function BlogReactConcurrentCoTo() {
       <SEOHead
         title="React Concurrent — Suspense, useTransition, useDeferredValue i React 19 hooks 2024?"
         description="6 Concurrent React features (Suspense/useTransition/useDeferredValue/batching/use()/useOptimistic) — React Fiber, priorytety, streaming SSR i React 19 hooks."
-        canonical="https://fotz.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024"
+        canonical="https://www.fotz-studio.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024"
 
         keywords="React Concurrent co to jest, React Concurrent jak działa, React Concurrent tutorial, React Concurrent przykład, czym jest React Concurrent, React Concurrent dokumentacja, React Concurrent przewodnik"
       />
       <ArticleSchema
         title="React Concurrent — Suspense, useTransition, useDeferredValue i React 19 hooks 2024?"
         description="6 Concurrent React features (Suspense/useTransition/useDeferredValue/batching/use()/useOptimistic) — React Fiber, priorytety, streaming SSR i React 19 hooks."
-        url="https://fotz.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024"
+        url="https://www.fotz-studio.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "React Concurrent", url: "https://fotz.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "React Concurrent", url: "https://www.fotz-studio.pl/blog/react-concurrent-suspense-usetransition-usedeferredvalue-react-19-hooks-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-teal-950 text-white py-20 px-4">

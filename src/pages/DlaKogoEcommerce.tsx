@@ -121,7 +121,7 @@ export default function DlaKogoEcommerce() {
       <SEOHead
         title="Marketing dla E-commerce | Fotz Studio"
         description="Marketing e-commerce: SEO sklepów internetowych, Google Shopping, Meta Ads, email marketing i automatyzacja. Fotz Studio pomaga sklepom online skalować sprzedaż przez performance marketing i optymalizację konwersji."
-        canonical="https://fotz.pl/dla-kogo/ecommerce"
+        canonical="https://www.fotz-studio.pl/dla-kogo/ecommerce"
         keywords="marketing dla e-commerce, reklama sklepu internetowego, google ads e-commerce, facebook ads sklep, seo dla sklepu"
       />
       
@@ -131,9 +131,9 @@ export default function DlaKogoEcommerce() {
         description="Kompleksowe usługi marketingowe dla sklepów internetowych - performance marketing, CRO, remarketing i automatyzacja."
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "E-commerce", url: "https://fotz.pl/dla-kogo/ecommerce" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "E-commerce", url: "https://www.fotz-studio.pl/dla-kogo/ecommerce" },
         ]}/>
       <FAQSchema items={faqItems} />
 

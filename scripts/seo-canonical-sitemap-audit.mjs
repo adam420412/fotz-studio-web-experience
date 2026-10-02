@@ -11,7 +11,7 @@ import fs from 'fs';
 import path from 'path';
 
 const SITEMAP_PATH = 'public/sitemap.xml';
-const DOMAIN = 'https://fotz.pl';
+const DOMAIN = 'https://www.fotz-studio.pl';
 
 // Funkcja do ekstrakcji URL-i z sitemap.xml
 function extractSitemapUrls() {

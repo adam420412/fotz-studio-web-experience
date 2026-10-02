@@ -11,11 +11,11 @@ const BlogSEODlaMalychFirm = () => {
   const articleData = {
     headline: "SEO dla Małych Firm – Kompletny Poradnik 2026",
     description: "SEO dla małych firm od podstaw. Dowiedz się jak pozycjonować lokalny biznes, zoptymalizować Google My Business i zdobyć klientów online. Praktyczne wskazówki.",
-    image: "https://fotz.pl/og-image.jpg",
+    image: "https://www.fotz-studio.pl/og-image.jpg",
     datePublished: "2026-03-15",
     dateModified: "2026-03-15",
     author: "Zespół FOTZ",
-    url: "https://fotz.pl/blog/seo-dla-malych-firm",
+    url: "https://www.fotz-studio.pl/blog/seo-dla-malych-firm",
   };
 
   const breadcrumbs = [
@@ -53,7 +53,7 @@ const BlogSEODlaMalychFirm = () => {
         title="SEO dla Małych Firm – Kompletny Poradnik 2026"
         description="SEO dla małych firm od podstaw. Dowiedz się jak pozycjonować lokalny biznes, zoptymalizować Google My Business i zdobyć klientów online ✓ Praktyczne wskazówki"
         keywords="SEO dla małych firm, pozycjonowanie lokalne, Google My Business, SEO 2026"
-        canonical="https://fotz.pl/blog/seo-dla-malych-firm"
+        canonical="https://www.fotz-studio.pl/blog/seo-dla-malych-firm"
         ogType="article"
       />
 

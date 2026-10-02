@@ -98,7 +98,7 @@ const MarketingBeauty = () => {
       <SEOHead
         title="Marketing dla Beauty & Wellness | Salony, SPA, Fryzjerzy | Fotz Studio"
         description="Marketing dla salonów kosmetycznych, fryzjerskich i SPA - Instagram, systemy rezerwacji, sesje metamorfoz. Przyciągnij więcej klientek."
-        canonical="https://fotz.pl/dla-kogo/beauty-wellness"
+        canonical="https://www.fotz-studio.pl/dla-kogo/beauty-wellness"
         keywords="marketing salonu kosmetycznego, marketing beauty, agencja marketingowa beauty, reklama salonu urody, instagram beauty, marketing spa, marketing wellness, kampanie facebook beauty"
       />
 
@@ -109,9 +109,9 @@ const MarketingBeauty = () => {
       />
       <BreadcrumbSchema 
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dla kogo", url: "https://fotz.pl/dla-kogo" },
-          { name: "Beauty & Wellness", url: "https://fotz.pl/dla-kogo/beauty-wellness" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dla kogo", url: "https://www.fotz-studio.pl/dla-kogo" },
+          { name: "Beauty & Wellness", url: "https://www.fotz-studio.pl/dla-kogo/beauty-wellness" },
         ]}
       />
       <FAQSchema items={faqItems} />

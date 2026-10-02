@@ -44,21 +44,21 @@ export default function BlogLocalFirstCoTo() {
       <SEOHead
         title="Local-First Software — Jazz.tools, PowerSync, ElectricSQL, Dexie i PGlite 2024?"
         description="6 narzędzi local-first (Jazz/PowerSync/ElectricSQL/Dexie/PGlite/Automerge) — CRDT, Postgres sync, IndexedDB i offline-first architecture patterns."
-        canonical="https://fotz.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
+        canonical="https://www.fotz-studio.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
 
         keywords="Local-First Software co to jest, Local-First Software jak działa, Local-First Software tutorial, Local-First Software przykład, czym jest Local-First Software, Local-First Software dokumentacja, Local-First Software przewodnik"
       />
       <ArticleSchema
         title="Local-First Software — Jazz.tools, PowerSync, ElectricSQL, Dexie i PGlite 2024?"
         description="6 narzędzi local-first (Jazz/PowerSync/ElectricSQL/Dexie/PGlite/Automerge) — CRDT, Postgres sync, IndexedDB i offline-first architecture patterns."
-        url="https://fotz.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
+        url="https://www.fotz-studio.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Local-First Software 2024", url: "https://fotz.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Local-First Software 2024", url: "https://www.fotz-studio.pl/blog/local-first-jazz-tools-powersync-electricsql-dexie-pglite-offline-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-emerald-950 text-white py-20 px-4">

@@ -81,23 +81,23 @@ export default function BlogStronaDlaFirmy() {
         title="Strona Internetowa Dla Firmy - Kompletny Poradnik 2026"
         description="Jak stworzyć stronę internetową dla firmy? Poradnik: typy stron, koszty, technologie i wskazówki SEO. Praktyczne porady 2026."
         ogType="article"
-        canonical="https://fotz.pl/blog/strona-internetowa-dla-firmy"
+        canonical="https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy"
         keywords="strona internetowa dla firmy, strona www dla firmy, jak stworzyć stronę firmową, strona biznesowa, website dla firm"
       />
       <ArticleSchema
         title="Strona Internetowa Dla Firmy - Kompletny Poradnik 2026"
         description="Kompleksowy poradnik dotyczący tworzenia profesjonalnej strony internetowej dla firmy. Dowiedz się o typach stron, kosztach, technologiach i strategiach SEO."
-        url="https://fotz.pl/blog/strona-internetowa-dla-firmy"
+        url="https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy"
         datePublished="2026-04-10"
         dateModified="2026-04-10"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Fotz", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Fotz", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           {
             name: "Strona Internetowa Dla Firmy",
-            url: "https://fotz.pl/blog/strona-internetowa-dla-firmy",
+            url: "https://www.fotz-studio.pl/blog/strona-internetowa-dla-firmy",
           },
         ]}/>
       <FAQSchema items={faqItems} />

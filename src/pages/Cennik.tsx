@@ -775,17 +775,17 @@ export default function Cennik() {
       <SEOHead
         title="Cennik Usług Marketingowych | Fotz Studio"
         description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo. Transparentne ceny i możliwość zbudowania własnego pakietu usług."
-        canonical="https://fotz.pl/cennik"
+        canonical="https://www.fotz-studio.pl/cennik"
         keywords="cennik marketing, cennik usług, konfigurator cen, strony internetowe cena, social media cena, SEO cena"
       />
       <WebPageSchema
         title="Cennik Usług Marketingowych — Fotz Studio"
         description="Cennik usług marketingowych Fotz Studio — ile kosztuje SEO, strona internetowa, kampanie Google Ads, social media i produkcja wideo."
-        url="https://fotz.pl/cennik"
+        url="https://www.fotz-studio.pl/cennik"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Cennik", url: "https://fotz.pl/cennik" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Cennik", url: "https://www.fotz-studio.pl/cennik" },
       ]}/>
       <FAQSchema items={[
         { question: "Ile kosztuje strona internetowa w Fotz Studio?", answer: "Strona wizytówkowa od 3000 zł, strona firmowa z CMS od 5000 zł, sklep internetowy od 8000 zł, rozbudowany portal od 15000 zł. Każda wycena jest indywidualna i bezpłatna — zależy od liczby podstron, funkcjonalności i projektu graficznego." },

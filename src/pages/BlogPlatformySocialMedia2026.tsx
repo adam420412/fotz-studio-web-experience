@@ -28,7 +28,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/platformy-social-media-2026";
+const CANONICAL = "https://www.fotz-studio.pl/blog/platformy-social-media-2026";
 
 export default function BlogPlatformySocialMedia2026() {
   return (
@@ -48,8 +48,8 @@ export default function BlogPlatformySocialMedia2026() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Platformy social media 2026", url: CANONICAL },
         ]}
       />

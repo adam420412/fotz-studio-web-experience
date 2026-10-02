@@ -44,21 +44,21 @@ export default function BlogCssCustomPropsCoTo() {
       <SEOHead
         title="CSS Custom Properties — Design Tokens, @property, Theming i Dark Mode 2024?"
         description="6 wzorców CSS Variables (primitive tokens/semantic/dark mode/@property/fluid/scoping) — design tokens, animacje, multi-theme system, TypeScript i zaawansowane CSS patterns."
-        canonical="https://fotz.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
+        canonical="https://www.fotz-studio.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
 
         keywords="CSS Custom Properties co to jest, CSS Custom Properties definicja, czym jest CSS Custom Properties, CSS Custom Properties przykłady, jak działa CSS Custom Properties, CSS Custom Properties znaczenie, CSS Custom Properties przewodnik"
       />
       <ArticleSchema
         title="CSS Custom Properties — Design Tokens, @property, Theming i Dark Mode 2024?"
         description="6 wzorców CSS Variables (primitive tokens/semantic/dark mode/@property/fluid/scoping) — design tokens, animacje, multi-theme system, TypeScript i zaawansowane CSS patterns."
-        url="https://fotz.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
+        url="https://www.fotz-studio.pl/blog/css-custom-properties-variables-design-tokens-theming-2024"
         datePublished="2024-05-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CSS Custom Properties", url: "https://fotz.pl/blog/css-custom-properties-variables-design-tokens-theming-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CSS Custom Properties", url: "https://www.fotz-studio.pl/blog/css-custom-properties-variables-design-tokens-theming-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-purple-950 text-white py-20 px-4">

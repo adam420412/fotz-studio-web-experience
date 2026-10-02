@@ -576,7 +576,7 @@ export default function Blog() {
     return dbArticles.map((article) => ({
       id: article.slug,
       title: article.title,
-      excerpt: article.excerpt || article.meta_description || "",
+      excerpt: article.meta_description?.trim() || article.excerpt?.trim() || "",
       category: "Poradniki",
       author: "Zespół FOTZ",
       date: article.published_at 
@@ -650,12 +650,12 @@ export default function Blog() {
         title="Blog Marketingowy — Artykuły o SEO, Google Ads i Social Media"
         description="Blog marketingowy Fotz Studio — artykuły, poradniki i case studies o SEO, Google Ads, content marketingu, social media i tworzeniu stron. Praktyczna wiedza, która pomoże Ci rozwijać marketing Twojej firmy."
         ogType="article"
-        canonical="https://fotz.pl/blog"
+        canonical="https://www.fotz-studio.pl/blog"
         keywords="blog marketingowy, poradniki marketing, SEO, social media, Google Ads"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" }
         ]}/>
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background">

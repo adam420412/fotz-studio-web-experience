@@ -65,9 +65,9 @@ export default function BlogCEIDGCoToJest() {
   return (
     <>
       <SEOHead
-        title="CEIDG — co to jest? Jak zarejestrowac firme online | fotz.pl"
+        title="CEIDG — co to jest? Jak zarejestrowac firme online | FOTZ Studio"
         description="CEIDG co to jest — wyjasnamy czym jest Centralna Ewidencja Dzialalnosci Gospodarczej, jak zarejestrowac JDG, sprawdzic firme i roznica CEIDG vs KRS."
-        canonical="https://fotz.pl/blog/ceidg-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/ceidg-co-to-jest"
 
         keywords="CEIDG co to jest, CEIDG definicja, czym jest CEIDG, CEIDG przykłady, jak działa CEIDG, CEIDG znaczenie, CEIDG przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogCEIDGCoToJest() {
         description="Czym jest CEIDG, jak zarejestrowac JDG krok po kroku, jak sprawdzic firme w CEIDG, zawieszenie i zamkniecie dzialalnosci oraz CEIDG vs KRS."
         datePublished="2025-04-11"
         dateModified="2025-04-11"
-        url="https://fotz.pl/blog/ceidg-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/ceidg-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -73,9 +73,9 @@ export default function BlogDropshippingCoToJest() {
   return (
     <>
       <SEOHead
-        title="Dropshipping — co to jest i jak zacząć? Poradnik 2025 | fotz.pl"
+        title="Dropshipping — co to jest i jak zacząć? Poradnik 2025 | FOTZ Studio"
         description="Dropshipping co to jest — wyjaśniamy jak działa dropshipping, ile można zarobić, jak zacząć w Polsce i czy to się opłaca. Porównanie Shopify vs WooCommerce."
-        canonical="https://fotz.pl/blog/dropshipping-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/dropshipping-co-to-jest"
 
         keywords="Dropshipping co to jest, Dropshipping definicja, czym jest Dropshipping, Dropshipping przykłady, jak działa Dropshipping, Dropshipping znaczenie, Dropshipping przewodnik"
       />
@@ -84,7 +84,7 @@ export default function BlogDropshippingCoToJest() {
         description="Czym jest dropshipping, jak działa model bez własnego magazynu, zalety i wady, jak zacząć w Polsce i które platformy wybrać."
         datePublished="2025-04-05"
         dateModified="2025-04-09"
-        url="https://fotz.pl/blog/dropshipping-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/dropshipping-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

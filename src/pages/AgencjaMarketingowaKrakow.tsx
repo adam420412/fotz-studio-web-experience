@@ -213,14 +213,14 @@ export default function AgencjaMarketingowaKrakow() {
       <SEOHead
         title="Agencja Marketingowa Kraków | Fotz Studio"
         description="Agencja marketingowa Kraków ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Krakowa i Małopolski. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/krakow"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/krakow"
         keywords="agencja marketingowa kraków, marketing internetowy kraków, agencja reklamowa kraków, kampanie reklamowe kraków, seo kraków, google ads kraków, agencja marketingowa małopolska"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencja Marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Kraków", url: "https://fotz.pl/agencja-marketingowa/krakow" },
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja Marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Kraków", url: "https://www.fotz-studio.pl/agencja-marketingowa/krakow" },
         ]}/>
 
       <ServiceSchema

@@ -92,21 +92,21 @@ export default function BlogLoyaltyProgramCoTo() {
       <SEOHead
         title="Program Lojalnościowy — co to jest i jak działa?"
         description="Program lojalnościowy — definicja, 5 rodzajów (punktowy, tierowy, cashback, paid membership), jak projektować skuteczny program i jakie metryki mierzyć."
-        canonical="https://fotz.pl/blog/loyalty-program-co-to"
+        canonical="https://www.fotz-studio.pl/blog/loyalty-program-co-to"
 
         keywords="Program Lojalnościowy co to jest, Program Lojalnościowy definicja, czym jest Program Lojalnościowy, Program Lojalnościowy przykłady, jak działa Program Lojalnościowy, Program Lojalnościowy znaczenie, Program Lojalnościowy przewodnik"
       />
       <ArticleSchema
         title="Program Lojalnościowy — co to jest i jak działa?"
         description="Kompletny przewodnik po programach lojalnościowych: rodzaje, zasady projektowania i kluczowe metryki."
-        url="https://fotz.pl/blog/loyalty-program-co-to"
+        url="https://www.fotz-studio.pl/blog/loyalty-program-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Program Lojalnościowy", url: "https://fotz.pl/blog/loyalty-program-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Program Lojalnościowy", url: "https://www.fotz-studio.pl/blog/loyalty-program-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -114,7 +114,7 @@ export default function BlogLoyaltyProgramCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Program Lojalnościowy", url: "https://fotz.pl" },
+              { name: "Program Lojalnościowy", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Program Lojalnościowy — co to jest i jak działa?

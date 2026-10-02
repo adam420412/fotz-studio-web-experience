@@ -80,21 +80,21 @@ export default function BlogTwoSidedMarketplaceCoTo() {
       <SEOHead
         title="Two-Sided Marketplace — co to jest i jak budować? | Fotz.pl"
         description="Dwustronny rynek (two-sided marketplace): jak działa, cold start problem, modele monetyzacji, efekty sieciowe i kluczowe metryki. Przewodnik dla założycieli."
-        canonical="https://fotz.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
 
         keywords="Two-Sided Marketplace co to jest, Two-Sided Marketplace definicja, czym jest Two-Sided Marketplace, Two-Sided Marketplace przykłady, jak działa Two-Sided Marketplace, Two-Sided Marketplace znaczenie, Two-Sided Marketplace przewodnik"
       />
       <ArticleSchema
         title="Two-Sided Marketplace — co to jest i jak budować?"
         description="Dwustronny rynek (two-sided marketplace): cold start problem, efekty sieciowe, modele monetyzacji, typy marketplace i kluczowe metryki dla założycieli."
-        url="https://fotz.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest"
         datePublished="2024-02-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Two-Sided Marketplace", url: "https://fotz.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Two-Sided Marketplace", url: "https://www.fotz-studio.pl/blog/two-sided-marketplace-dwustronny-rynek-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

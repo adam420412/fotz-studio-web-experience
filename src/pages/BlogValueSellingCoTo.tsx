@@ -69,21 +69,21 @@ export default function BlogValueSellingCoTo() {
       <SEOHead
         title="Value Selling — co to jest i jak sprzedawać przez wartość?"
         description="Value Selling — metodologia sprzedaży przez wartość i ROI: co to jest, jak zbudować business case, framework discovery i dla kogo sprawdza się najlepiej."
-        canonical="https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc"
+        canonical="https://www.fotz-studio.pl/blog/value-selling-sprzedaz-przez-wartosc"
 
         keywords="Value Selling co to jest, Value Selling definicja, czym jest Value Selling, Value Selling przykłady, jak działa Value Selling, Value Selling znaczenie, Value Selling przewodnik"
       />
       <ArticleSchema
         title="Value Selling — co to jest i jak sprzedawać przez wartość?"
         description="Kompletny przewodnik po Value Selling: framework, business case, ROI calculation i praktyczne zastosowania."
-        url="https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc"
+        url="https://www.fotz-studio.pl/blog/value-selling-sprzedaz-przez-wartosc"
         datePublished="2024-02-04"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Value Selling", url: "https://fotz.pl/blog/value-selling-sprzedaz-przez-wartosc" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Value Selling", url: "https://www.fotz-studio.pl/blog/value-selling-sprzedaz-przez-wartosc" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-amber-950 to-slate-900 text-white py-20 px-4">

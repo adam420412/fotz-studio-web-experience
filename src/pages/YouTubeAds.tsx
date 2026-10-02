@@ -142,7 +142,7 @@ const YouTubeAds = () => {
       <SEOHead
         title="YouTube Ads Warszawa — Reklama Wideo na YouTube dla Firm"
         description="YouTube Ads Warszawa ✓ Kampanie wideo na YouTube: TrueView, Bumper Ads, Discovery Ads. Agencja YouTube Ads — skuteczna reklama wideo od 2000 zł/mies. dla firm z Warszawy i całej Polski."
-        canonical="https://fotz.pl/performance-marketing/youtube-ads"
+        canonical="https://www.fotz-studio.pl/performance-marketing/youtube-ads"
         keywords="youtube ads warszawa, reklama na youtube, kampanie youtube, youtube advertising, agencja youtube ads, reklamy wideo warszawa, video marketing"
       />
       <ServiceSchema
@@ -151,9 +151,9 @@ const YouTubeAds = () => {
         provider="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kampanie reklamowe", url: "https://fotz.pl/kampanie-reklamowe" },
-          { name: "YouTube Ads", url: "https://fotz.pl/performance-marketing/youtube-ads" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/kampanie-reklamowe" },
+          { name: "YouTube Ads", url: "https://www.fotz-studio.pl/performance-marketing/youtube-ads" },
         ]}/>
       <FAQSchema items={faqItems} />
 

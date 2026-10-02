@@ -123,7 +123,7 @@ export default function OptymalizacjaStronyInternetowej() {
         <SEOHead
           title="Optymalizacja strony internetowej | Fotz Studio"
           description="Optymalizacja strony internetowej — przyspieszamy Twoją stronę, poprawiamy Core Web Vitals, zwiększamy konwersje. Sprawdź co możemy zrobić!"
-          canonical="https://fotz.pl/uslugi/optymalizacja-strony-internetowej"
+          canonical="https://www.fotz-studio.pl/uslugi/optymalizacja-strony-internetowej"
           keywords="optymalizacja strony internetowej, optymalizacja seo strony, przyspieszenie strony, core web vitals, optymalizacja wydajności strony, optymalizacja strony www"
         />
 
@@ -135,9 +135,9 @@ export default function OptymalizacjaStronyInternetowej() {
         />
 
         <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Optymalizacja strony internetowej", url: "https://fotz.pl/uslugi/optymalizacja-strony-internetowej" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Optymalizacja strony internetowej", url: "https://www.fotz-studio.pl/uslugi/optymalizacja-strony-internetowej" }
         ]}/>
 
         <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />

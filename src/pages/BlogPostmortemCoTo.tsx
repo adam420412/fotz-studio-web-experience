@@ -59,21 +59,21 @@ export default function BlogPostmortemCoTo() {
       <SEOHead
         title="Postmortem — co to jest i jak przeprowadzać analizę po incydencie?"
         description="Postmortem (analiza po incydencie) — definicja, blameless culture, struktura 8 sekcji, przykład 5 Whys i jak śledzić action items. Przewodnik po RCA i SRE."
-        canonical="https://fotz.pl/blog/postmortem-analiza-incydentu"
+        canonical="https://www.fotz-studio.pl/blog/postmortem-analiza-incydentu"
 
         keywords="Postmortem co to jest, Postmortem definicja, czym jest Postmortem, Postmortem przykłady, jak działa Postmortem, Postmortem znaczenie, Postmortem przewodnik"
       />
       <ArticleSchema
         title="Postmortem — co to jest i jak przeprowadzać analizę po incydencie?"
         description="Kompletny przewodnik po postmortem: blameless culture, struktura 8 sekcji, Root Cause Analysis metodą 5 Whys i śledzenie action items."
-        url="https://fotz.pl/blog/postmortem-analiza-incydentu"
+        url="https://www.fotz-studio.pl/blog/postmortem-analiza-incydentu"
         datePublished="2024-01-22"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Postmortem — Analiza Incydentu", url: "https://fotz.pl/blog/postmortem-analiza-incydentu" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Postmortem — Analiza Incydentu", url: "https://www.fotz-studio.pl/blog/postmortem-analiza-incydentu" },
         ]}/>
 
       {/* Hero */}
@@ -81,7 +81,7 @@ export default function BlogPostmortemCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Postmortem — Analiza Incydentu", url: "https://fotz.pl" },
+              { name: "Postmortem — Analiza Incydentu", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Postmortem — co to jest i jak analizować incydenty?

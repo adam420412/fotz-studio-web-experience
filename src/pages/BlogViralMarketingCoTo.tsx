@@ -88,21 +88,21 @@ export default function BlogViralMarketingCoTo() {
       <SEOHead
         title="Viral Marketing — co to jest i jak działa? Kompletny przewodnik"
         description="Viral marketing — definicja, mechanizmy viralowości, formaty kampanii i przykłady. Dowiedz się jak tworzyć treści, które użytkownicy chcą udostępniać."
-        canonical="https://fotz.pl/blog/viral-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/viral-marketing-co-to"
 
         keywords="Viral Marketing co to jest, Viral Marketing definicja, czym jest Viral Marketing, Viral Marketing w marketingu, Viral Marketing przykłady, jak działa Viral Marketing, Viral Marketing strategia"
       />
       <ArticleSchema
         title="Viral Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po viral marketingu: mechanizmy viralowości, formaty kampanii i przykłady skutecznych działań."
-        url="https://fotz.pl/blog/viral-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/viral-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Viral Marketing", url: "https://fotz.pl/blog/viral-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Viral Marketing", url: "https://www.fotz-studio.pl/blog/viral-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -110,7 +110,7 @@ export default function BlogViralMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Viral Marketing", url: "https://fotz.pl" },
+              { name: "Viral Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Viral Marketing — co to jest i jak działa?

@@ -68,7 +68,7 @@ export default function BlogEmailSequenceCoTo() {
       <SEOHead
         title="Email Sequence — co to jest i jak budować sekwencje emaili?"
         description="Email Sequence co to jest — wyjaśniamy czym są sekwencje emaili, typy (welcome, onboarding, nurture), narzędzia i jak pisać skuteczne subject lines."
-        canonical="https://fotz.pl/blog/email-sequence-co-to"
+        canonical="https://www.fotz-studio.pl/blog/email-sequence-co-to"
 
         keywords="Email Sequence co to jest, Email Sequence definicja, czym jest Email Sequence, Email Sequence przykłady, jak działa Email Sequence, Email Sequence znaczenie, Email Sequence przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogEmailSequenceCoTo() {
         description="Czym jest Email Sequence (drip campaign), typy sekwencji emaili, narzędzia (Klaviyo, ActiveCampaign), budowanie sekwencji i benchmarki email marketingu."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/email-sequence-co-to"
+        url="https://www.fotz-studio.pl/blog/email-sequence-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

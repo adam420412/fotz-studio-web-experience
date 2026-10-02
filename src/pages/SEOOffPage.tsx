@@ -37,7 +37,7 @@ const SEOOffPage = () => {
       <SEOHead
         title="SEO Off-Page — Link Building, Digital PR i Budowanie Autorytetu"
         description="SEO off-page — budowanie linków zewnętrznych, digital PR, guest posting i wzmacnianie autorytetu domeny. Skuteczne SEO poza stroną. Fotz Studio."
-        canonical="https://fotz.pl/seo/off-page"
+        canonical="https://www.fotz-studio.pl/seo/off-page"
         keywords="seo off-page, link building, linki zewnętrzne seo, budowanie linków, seo off site, pozycjonowanie off-page, profil linków seo, backlinki, seo poza stroną, link building agencja"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const SEOOffPage = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "SEO", url: "https://fotz.pl/seo" },
-        { name: "SEO Off-Page i Link Building", url: "https://fotz.pl/seo/off-page" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "SEO", url: "https://www.fotz-studio.pl/seo" },
+        { name: "SEO Off-Page i Link Building", url: "https://www.fotz-studio.pl/seo/off-page" },
       ]}/>
       <FAQSchema items={faqItems} />
 

@@ -67,26 +67,26 @@ export default function BlogNorthStarMetricCoTo() {
       <SEOHead
         title="North Star Metric — co to jest i jak wybrać metrykę Gwiazdy Polarnej?"
         description="North Star Metric (NSM) — definicja, przykłady (Airbnb, Spotify, Slack), jak wybrać NSM, input metrics i 4 antyprzykłady vanity metrics. Kompletny przewodnik."
-        canonical="https://fotz.pl/blog/north-star-metric-co-to"
+        canonical="https://www.fotz-studio.pl/blog/north-star-metric-co-to"
 
         keywords="North Star Metric co to jest, North Star Metric definicja, czym jest North Star Metric, North Star Metric przykłady, jak działa North Star Metric, North Star Metric znaczenie, North Star Metric przewodnik"
       />
       <ArticleSchema
         title="North Star Metric — co to jest i jak wybrać metrykę Gwiazdy Polarnej?"
         description="Kompletny przewodnik po North Star Metric: 8 przykładów (Airbnb, Spotify, Slack, Amazon), 6-krokowy framework wyboru i jak łączyć z input metrics."
-        url="https://fotz.pl/blog/north-star-metric-co-to"
+        url="https://www.fotz-studio.pl/blog/north-star-metric-co-to"
         datePublished="2024-01-29"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "North Star Metric", url: "https://fotz.pl/blog/north-star-metric-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "North Star Metric", url: "https://www.fotz-studio.pl/blog/north-star-metric-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "North Star Metric", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "North Star Metric", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             North Star Metric — co to jest i jak wybrać?
           </h1>

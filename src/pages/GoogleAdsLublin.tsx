@@ -13,7 +13,7 @@ export default function GoogleAdsLublin() {
       <SEOHead
           title="Agencja Google Ads Lublin — kampanie reklamowe dla firm | Fotz.pl"
           description="Google Ads Lublin ✓ Kampanie dla firm z Lublina i Lubelszczyzny. Od 400 zł/mies. Bezpłatna konsultacja!"
-          canonical="https://fotz.pl/performance-marketing/google-ads/lublin"
+          canonical="https://www.fotz-studio.pl/performance-marketing/google-ads/lublin"
         keywords="google ads lublin, kampanie google ads lublin, agencja google ads lublin, reklamy google lublin, google adwords lublin, sem lublin, google ads dla firm lublin, prowadzenie google ads lublin, google ads cennik lublin, reklama w google lublin"
         />
 
@@ -23,9 +23,9 @@ export default function GoogleAdsLublin() {
         areaServed="Lublin"
       />
       <BreadcrumbSchema items={[
-        { name: 'Strona główna', url: 'https://fotz.pl' },
-        { name: 'Google Ads', url: 'https://fotz.pl/performance-marketing/google-ads' },
-        { name: 'Lublin', url: 'https://fotz.pl/performance-marketing/google-ads/lublin' }
+        { name: 'Strona główna', url: 'https://www.fotz-studio.pl' },
+        { name: 'Google Ads', url: 'https://www.fotz-studio.pl/performance-marketing/google-ads' },
+        { name: 'Lublin', url: 'https://www.fotz-studio.pl/performance-marketing/google-ads/lublin' }
       ]}/>
       <FAQSchema items={[
         {

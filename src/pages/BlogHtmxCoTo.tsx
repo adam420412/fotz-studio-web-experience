@@ -44,21 +44,21 @@ export default function BlogHtmxCoTo() {
       <SEOHead
         title="HTMX — hypermedia, hx-get, hx-swap, OOB swaps i HTMX vs React 2024?"
         description="6 aspektów HTMX vs React (bundle/data format/state/build/interaktywność/kiedy) — hx-atrybuty, OOB swaps, SSE real-time, Alpine.js i server-side templates (Node/Go/Python)."
-        canonical="https://fotz.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
 
         keywords="HTMX co to jest, HTMX jak działa, HTMX tutorial, HTMX przykład, czym jest HTMX, HTMX dokumentacja, HTMX przewodnik"
       />
       <ArticleSchema
         title="HTMX — hypermedia, hx-get, hx-swap, OOB swaps i HTMX vs React 2024?"
         description="6 aspektów HTMX vs React (bundle/data format/state/build/interaktywność/kiedy) — hx-atrybuty, OOB swaps, SSE real-time, Alpine.js i server-side templates (Node/Go/Python)."
-        url="https://fotz.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
+        url="https://www.fotz-studio.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "HTMX", url: "https://fotz.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "HTMX", url: "https://www.fotz-studio.pl/blog/htmx-hypermedia-hx-get-swap-oob-sse-alpine-js-vs-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-rose-950 to-red-950 text-white py-20 px-4">

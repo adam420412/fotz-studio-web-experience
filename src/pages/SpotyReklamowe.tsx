@@ -117,7 +117,7 @@ export default function SpotyReklamowe() {
       <SEOHead
         title="Spoty Reklamowe | Fotz Studio"
         description="Produkcja spotów reklamowych — filmy reklamowe dla firm, reklamy video online, spoty TV i YouTube. Profesjonalna produkcja wideo: scenariusz, nagranie, montaż i postprodukcja w Fotz Studio."
-        canonical="https://fotz.pl/uslugi/produkcja-video"
+        canonical="https://www.fotz-studio.pl/uslugi/produkcja-video"
         keywords="spoty reklamowe, reklama wideo, spoty tv, produkcja reklam wideo, filmy reklamowe, spot reklamowy cena"
       />
       
@@ -127,9 +127,9 @@ export default function SpotyReklamowe() {
         description="Profesjonalna produkcja spotów reklamowych i filmów promocyjnych dla firm."
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Usługi", url: "https://fotz.pl/uslugi" },
-          { name: "Spoty reklamowe", url: "https://fotz.pl/uslugi/produkcja-video" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+          { name: "Spoty reklamowe", url: "https://www.fotz-studio.pl/uslugi/produkcja-video" }
         ]}/>
       <FAQSchema items={faqItems.map(item => ({ question: item.question, answer: item.answer }))} />
 

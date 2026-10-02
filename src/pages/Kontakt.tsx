@@ -207,12 +207,12 @@ export default function Kontakt() {
       <SEOHead
         title="Kontakt z Fotz Studio | Fotz Studio"
         description="Kontakt z Fotz Studio — agencja marketingowa Poznań. Napisz, zadzwoń lub odwiedź nas. Bezpłatna konsultacja marketingowa i wycena usług SEO, stron www i kampanii reklamowych."
-        canonical="https://fotz.pl/kontakt"
+        canonical="https://www.fotz-studio.pl/kontakt"
         keywords="kontakt agencja marketingowa, Fotz Studio kontakt, konsultacja marketingowa, Poznań"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Kontakt", url: "https://fotz.pl/kontakt" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Kontakt", url: "https://www.fotz-studio.pl/kontakt" }
         ]}/>
       <LocalBusinessSchema />
       {/* Hero */}

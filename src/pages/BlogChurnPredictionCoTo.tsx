@@ -52,21 +52,21 @@ export default function BlogChurnPredictionCoTo() {
       <SEOHead
         title="Churn Prediction — jak przewidywać i zapobiegać churnu klientów SaaS?"
         description="Churn Prediction: budowanie modelu ML, sygnały churnu (usage drop, NPS Detractor, champion loss), playbooks interwencji i metryki skuteczności dla firm SaaS."
-        canonical="https://fotz.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
+        canonical="https://www.fotz-studio.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
 
         keywords="Churn Prediction co to jest, Churn Prediction definicja, czym jest Churn Prediction, Churn Prediction startup, Churn Prediction jak liczyć, Churn Prediction wzór, Churn Prediction przykłady"
       />
       <ArticleSchema
         title="Churn Prediction — jak przewidywać i zapobiegać churnu klientów SaaS?"
         description="Churn Prediction: model ML, sygnały churnu, feature engineering, intervention playbooks (3 tiery), metryki (AUC-ROC, Save Rate) i narzędzia dla Customer Success."
-        url="https://fotz.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
+        url="https://www.fotz-studio.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu"
         datePublished="2024-03-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Churn Prediction", url: "https://fotz.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Churn Prediction", url: "https://www.fotz-studio.pl/blog/churn-prediction-jak-przewidywac-zapobiegac-churnu" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-red-950 to-slate-900 text-white py-20 px-4">

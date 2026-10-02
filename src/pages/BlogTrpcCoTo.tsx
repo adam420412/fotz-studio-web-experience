@@ -44,21 +44,21 @@ export default function BlogTrpcCoTo() {
       <SEOHead
         title="tRPC — co to jest, end-to-end type safety, Next.js, TanStack Query, vs GraphQL?"
         description="tRPC: end-to-end TypeScript type safety bez code generation, router i procedury, integracja z Next.js i TanStack Query, tRPC vs REST vs GraphQL vs Zodios."
-        canonical="https://fotz.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
+        canonical="https://www.fotz-studio.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
 
         keywords="tRPC co to jest, tRPC jak działa, tRPC tutorial, tRPC przykład, czym jest tRPC, tRPC dokumentacja, tRPC przewodnik"
       />
       <ArticleSchema
         title="tRPC — co to jest, end-to-end type safety, Next.js, TanStack Query, vs GraphQL?"
         description="tRPC: router/procedure/middleware/context, integracja Next.js + TanStack Query, 6 alternatyw (tRPC/GraphQL/REST/Zodios/oRPC/Hono), kiedy wybrać."
-        url="https://fotz.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
+        url="https://www.fotz-studio.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "tRPC", url: "https://fotz.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "tRPC", url: "https://www.fotz-studio.pl/blog/trpc-co-to-jest-end-to-end-type-safety-nextjs-tanstack-query-vs-graphql" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

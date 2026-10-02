@@ -102,21 +102,21 @@ export default function BlogBrandActivationCoTo() {
       <SEOHead
         title="Brand Activation — co to jest i jak działa? | Fotz Studio"
         description="Kompletny przewodnik po brand activation: rodzaje aktywacji marki, przykłady i jak mierzyć skuteczność."
-        canonical="https://fotz.pl/blog/brand-activation-co-to"
+        canonical="https://www.fotz-studio.pl/blog/brand-activation-co-to"
 
         keywords="Brand Activation co to jest, Brand Activation definicja, czym jest Brand Activation, Brand Activation w marketingu, Brand Activation przykłady, jak działa Brand Activation, Brand Activation strategia"
       />
       <ArticleSchema
         title="Brand Activation — co to jest i jak działa?"
         description="Kompletny przewodnik po brand activation: rodzaje aktywacji marki, przykłady i jak mierzyć skuteczność."
-        url="https://fotz.pl/blog/brand-activation-co-to"
+        url="https://www.fotz-studio.pl/blog/brand-activation-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Brand Activation", url: "https://fotz.pl/blog/brand-activation-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Brand Activation", url: "https://www.fotz-studio.pl/blog/brand-activation-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -124,7 +124,7 @@ export default function BlogBrandActivationCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Brand Activation", url: "https://fotz.pl" },
+              { name: "Brand Activation", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Brand Activation — co to jest i jak działa?

@@ -153,14 +153,14 @@ export default function AgencjaMarketingowaRzeszow() {
       <SEOHead
         title="Agencja Marketingowa Rzeszów | Fotz Studio"
         description="Agencja marketingowa Rzeszów ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Rzeszowa i Podkarpacia. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/rzeszow"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/rzeszow"
         keywords="agencja marketingowa rzeszów, marketing internetowy rzeszów, agencja reklamowa rzeszów, kampanie reklamowe rzeszów, seo rzeszów, google ads rzeszów"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Home", url: "https://fotz.pl" },
-          { name: "Agencje Marketingowe", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Rzeszów", url: "https://fotz.pl/agencja-marketingowa/rzeszow" }
+          { name: "Home", url: "https://www.fotz-studio.pl" },
+          { name: "Agencje Marketingowe", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Rzeszów", url: "https://www.fotz-studio.pl/agencja-marketingowa/rzeszow" }
         ]}/>
 
       <ServiceSchema

@@ -44,21 +44,21 @@ export default function BlogEffectTsCoTo() {
       <SEOHead
         title="Effect.ts, fp-ts i neverthrow — functional programming w TypeScript 2024?"
         description="6 bibliotek FP (Effect.ts/fp-ts/neverthrow/ts-results/remeda/vanilla patterns) — type-safe error handling, monads, dependency injection i functional TypeScript."
-        canonical="https://fotz.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024"
+        canonical="https://www.fotz-studio.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024"
 
         keywords="Effect.ts, fp-ts i neverthrow co to jest, Effect.ts, fp-ts i neverthrow jak działa, Effect.ts, fp-ts i neverthrow tutorial, Effect.ts, fp-ts i neverthrow przykład, czym jest Effect.ts, fp-ts i neverthrow, Effect.ts, fp-ts i neverthrow dokumentacja, Effect.ts, fp-ts i neverthrow przewodnik"
       />
       <ArticleSchema
         title="Effect.ts, fp-ts i neverthrow — functional programming w TypeScript 2024?"
         description="6 bibliotek FP (Effect.ts/fp-ts/neverthrow/ts-results/remeda/vanilla patterns) — type-safe error handling, monads, dependency injection i functional TypeScript."
-        url="https://fotz.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024"
+        url="https://www.fotz-studio.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Functional Programming TypeScript", url: "https://fotz.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Functional Programming TypeScript", url: "https://www.fotz-studio.pl/blog/effect-ts-fp-ts-neverthrow-functional-programming-typescript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-indigo-950 to-blue-950 text-white py-20 px-4">

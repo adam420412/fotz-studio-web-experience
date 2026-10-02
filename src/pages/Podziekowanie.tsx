@@ -51,12 +51,12 @@ export default function Podziekowanie() {
       <SEOHead
         title="Dziękujemy za zapytanie | Fotz Studio"
         description="Otrzymaliśmy Twoje zapytanie. Skontaktujemy się z Tobą w ciągu 24 godzin."
-        canonical="https://fotz.pl/podziekowanie"
+        canonical="https://www.fotz-studio.pl/podziekowanie"
         noIndex={true}
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Dziękujemy", url: "https://fotz.pl/podziekowanie" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Dziękujemy", url: "https://www.fotz-studio.pl/podziekowanie" }
         ]}/>
 
       <section className="min-h-[80vh] flex items-center justify-center pt-32 pb-20 bg-gradient-to-b from-background to-secondary/20">

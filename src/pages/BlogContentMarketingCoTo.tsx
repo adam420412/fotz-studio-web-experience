@@ -54,7 +54,7 @@ export default function BlogContentMarketingCoTo() {
       <SEOHead
         title="Content marketing — co to jest i jak działa? | Blog fotz.pl"
         description="Kompletny przewodnik po content marketingu — definicja, formaty, jak zacząć i mierzyć wyniki."
-        canonical="https://fotz.pl/blog/content-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/content-marketing-co-to"
 
         keywords="Content marketing co to jest, Content marketing definicja, czym jest Content marketing, Content marketing w marketingu, Content marketing przykłady, jak działa Content marketing, Content marketing strategia"
       />
@@ -63,7 +63,7 @@ export default function BlogContentMarketingCoTo() {
         description="Kompletny przewodnik po content marketingu — definicja, formaty, jak zacząć i mierzyć wyniki."
         datePublished="2024-12-01"
         dateModified="2025-02-15"
-        url="https://fotz.pl/blog/content-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/content-marketing-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 
@@ -76,7 +76,7 @@ export default function BlogContentMarketingCoTo() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 7 min czytania</span>
-                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół fotz.pl</span>
+                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół FOTZ Studio</span>
                 <span className="flex items-center gap-1"><BookOpen className="w-4 h-4" /> Marketing</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">

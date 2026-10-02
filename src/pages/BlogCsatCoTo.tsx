@@ -67,21 +67,21 @@ export default function BlogCsatCoTo() {
       <SEOHead
         title="CSAT — co to jest? Customer Satisfaction Score i jak go mierzyć"
         description="CSAT — definicja, formuła, porównanie z NPS i CES, benchmarki branżowe, jak poprawić wynik i best practices zbierania feedbacku. Kompletny przewodnik po CSAT."
-        canonical="https://fotz.pl/blog/csat-customer-satisfaction-score-co-to"
+        canonical="https://www.fotz-studio.pl/blog/csat-customer-satisfaction-score-co-to"
 
         keywords="CSAT co to jest, CSAT definicja, czym jest CSAT, CSAT przykłady, jak działa CSAT, CSAT znaczenie, CSAT przewodnik"
       />
       <ArticleSchema
         title="CSAT — co to jest i jak mierzyć satysfakcję klientów?"
         description="Kompletny przewodnik po CSAT: definicja, benchmarki, porównanie z NPS i CES oraz jak poprawiać wynik."
-        url="https://fotz.pl/blog/csat-customer-satisfaction-score-co-to"
+        url="https://www.fotz-studio.pl/blog/csat-customer-satisfaction-score-co-to"
         datePublished="2024-01-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CSAT", url: "https://fotz.pl/blog/csat-customer-satisfaction-score-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CSAT", url: "https://www.fotz-studio.pl/blog/csat-customer-satisfaction-score-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -89,7 +89,7 @@ export default function BlogCsatCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "CSAT", url: "https://fotz.pl" },
+              { name: "CSAT", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             CSAT — co to jest i jak mierzyć satysfakcję klientów?

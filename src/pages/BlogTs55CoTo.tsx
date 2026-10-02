@@ -44,21 +44,21 @@ export default function BlogTs55CoTo() {
       <SEOHead
         title="TypeScript 5.5, 5.6 — Inferred Predicates, using, Isolated Declarations 2024?"
         description="TypeScript 5.5/5.6 nowości: Inferred Type Predicates, using/await using (Symbol.dispose), Isolated Declarations, verbatimModuleSyntax, const type params i narzędzia ts-reset/type-fest."
-        canonical="https://fotz.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
+        canonical="https://www.fotz-studio.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
 
         keywords="TypeScript 5.5, 5.6 co to jest, TypeScript 5.5, 5.6 jak działa, TypeScript 5.5, 5.6 tutorial, TypeScript 5.5, 5.6 przykład, czym jest TypeScript 5.5, 5.6, TypeScript 5.5, 5.6 dokumentacja, TypeScript 5.5, 5.6 przewodnik"
       />
       <ArticleSchema
         title="TypeScript 5.5, 5.6 — Inferred Predicates, using, Isolated Declarations 2024?"
         description="TypeScript 5.5/5.6 nowości: Inferred Type Predicates, using/await using (Symbol.dispose), Isolated Declarations, verbatimModuleSyntax, const type params i narzędzia ts-reset/type-fest."
-        url="https://fotz.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
+        url="https://www.fotz-studio.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024"
         datePublished="2024-12-01"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TypeScript 5.5 / 5.6", url: "https://fotz.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TypeScript 5.5 / 5.6", url: "https://www.fotz-studio.pl/blog/typescript-5-5-5-6-inferred-predicates-using-isolated-declarations-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white py-20 px-4">

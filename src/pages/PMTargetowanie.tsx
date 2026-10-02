@@ -37,7 +37,7 @@ const PMTargetowanie = () => {
       <SEOHead
         title="Targetowanie Reklam — Precyzyjne Dotarcie do Grupy Docelowej"
         description="Targetowanie reklam — budowanie grup odbiorców, Custom Audiences, Lookalike, retargeting i remarketing. Precyzyjne kampanie dla firm. Fotz Studio."
-        canonical="https://fotz.pl/performance-marketing/targetowanie"
+        canonical="https://www.fotz-studio.pl/performance-marketing/targetowanie"
         keywords="targetowanie reklam, grupy docelowe reklamy, lookalike audience, retargeting, targetowanie google ads, targetowanie facebook ads, custom audience, precyzyjne targetowanie, grupy odbiorców facebook, targetowanie behawioralne"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const PMTargetowanie = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Performance Marketing", url: "https://fotz.pl/performance-marketing" },
-        { name: "Targetowanie Reklam", url: "https://fotz.pl/performance-marketing/targetowanie" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Performance Marketing", url: "https://www.fotz-studio.pl/performance-marketing" },
+        { name: "Targetowanie Reklam", url: "https://www.fotz-studio.pl/performance-marketing/targetowanie" },
       ]}/>
       <FAQSchema items={faqItems} />
 

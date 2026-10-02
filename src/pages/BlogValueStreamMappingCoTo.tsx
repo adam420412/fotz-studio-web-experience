@@ -60,26 +60,26 @@ export default function BlogValueStreamMappingCoTo() {
       <SEOHead
         title="Value Stream Mapping — co to jest? Mapowanie strumienia wartości"
         description="Kompletny przewodnik po VSM: 8 strat Lean w software, kluczowe metryki (Lead Time, Cycle Time, Process Efficiency) i jak tworzyć current i future state map."
-        canonical="https://fotz.pl/blog/value-stream-mapping-co-to"
+        canonical="https://www.fotz-studio.pl/blog/value-stream-mapping-co-to"
 
         keywords="Value Stream Mapping co to jest, Value Stream Mapping definicja, czym jest Value Stream Mapping, Value Stream Mapping przykłady, jak działa Value Stream Mapping, Value Stream Mapping znaczenie, Value Stream Mapping przewodnik"
       />
       <ArticleSchema
         title="Value Stream Mapping — co to jest i jak mapować strumień wartości?"
         description="Kompletny przewodnik po VSM: 8 strat Lean w software, kluczowe metryki (Lead Time, Cycle Time, Process Efficiency) i jak tworzyć current i future state map."
-        url="https://fotz.pl/blog/value-stream-mapping-co-to"
+        url="https://www.fotz-studio.pl/blog/value-stream-mapping-co-to"
         datePublished="2024-01-26"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Value Stream Mapping", url: "https://fotz.pl/blog/value-stream-mapping-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Value Stream Mapping", url: "https://www.fotz-studio.pl/blog/value-stream-mapping-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Value Stream Mapping", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Value Stream Mapping", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Value Stream Mapping — co to jest i jak mapować strumień wartości?
           </h1>

@@ -39,7 +39,7 @@ export default function BlogMarketingMedyczny() {
       <SEOHead
         title="Marketing medyczny i marketing dla lekarza | Fotz Studio"
         description="Strategie marketingu medycznego, SEO dla klinik, Google Moja Firma, content marketing i budowanie zaufania pacjentów."
-        canonical="https://fotz.pl/blog/marketing-medyczny"
+        canonical="https://www.fotz-studio.pl/blog/marketing-medyczny"
         ogType="article"
 
         keywords="Marketing medyczny i marketing dla lekarza, Marketing medyczny i marketing dla lekarza poradnik, Marketing medyczny i marketing dla lekarza strategia, Marketing medyczny i marketing dla lekarza jak zrobić, Marketing medyczny i marketing dla lekarza marketing, Marketing medyczny i marketing dla lekarza przykłady, Marketing medyczny i marketing dla lekarza w Polsce"
@@ -48,7 +48,7 @@ export default function BlogMarketingMedyczny() {
       <ArticleSchema
         headline="Marketing medyczny: Kompletny poradnik dla lekarzy i gabinetów"
         description="Strategie marketingu medycznego, SEO dla klinik, Google Moja Firma, content marketing i budowanie zaufania pacjentów."
-        image="https://fotz.pl/og-image.jpg"
+        image="https://www.fotz-studio.pl/og-image.jpg"
         author="Fotz Studio"
         datePublished="2025-04-22"
         dateModified="2025-08-10"

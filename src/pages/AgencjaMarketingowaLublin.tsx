@@ -153,14 +153,14 @@ export default function AgencjaMarketingowaLublin() {
       <SEOHead
         title="Agencja Marketingowa Lublin | Fotz Studio"
         description="Agencja marketingowa Lublin ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Lublina i Lubelszczyzny. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/lublin"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/lublin"
         keywords="agencja marketingowa lublin, marketing internetowy lublin, agencja reklamowa lublin, kampanie reklamowe lublin, seo lublin, google ads lublin"
       />
 
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Agencja marketingowa", url: "https://fotz.pl/agencja-marketingowa" },
-          { name: "Lublin", url: "https://fotz.pl/agencja-marketingowa/lublin" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Agencja marketingowa", url: "https://www.fotz-studio.pl/agencja-marketingowa" },
+          { name: "Lublin", url: "https://www.fotz-studio.pl/agencja-marketingowa/lublin" }
         ]}/>
 
       <section className="py-12 bg-gradient-to-b from-blue-50 to-white">

@@ -89,21 +89,21 @@ export default function BlogProgrammaticAdvertisingCoTo() {
       <SEOHead
         title="Programmatic Advertising — co to jest i jak działa reklama programatyczna?"
         description="Kompletny przewodnik po programmatic advertising: jak działa RTB, ekosystem DSP/SSP/DMP, 4 typy zakupu i kluczowe metryki."
-        canonical="https://fotz.pl/blog/programmatic-advertising-co-to"
+        canonical="https://www.fotz-studio.pl/blog/programmatic-advertising-co-to"
 
         keywords="Programmatic Advertising co to jest, Programmatic Advertising definicja, czym jest Programmatic Advertising, Programmatic Advertising w marketingu, Programmatic Advertising przykłady, jak działa Programmatic Advertising, Programmatic Advertising strategia"
       />
       <ArticleSchema
         title="Programmatic Advertising — co to jest i jak działa reklama programatyczna?"
         description="Kompletny przewodnik po programmatic advertising: jak działa RTB, ekosystem DSP/SSP/DMP, 4 typy zakupu i kluczowe metryki."
-        url="https://fotz.pl/blog/programmatic-advertising-co-to"
+        url="https://www.fotz-studio.pl/blog/programmatic-advertising-co-to"
         datePublished="2024-01-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Programmatic Advertising", url: "https://fotz.pl/blog/programmatic-advertising-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Programmatic Advertising", url: "https://www.fotz-studio.pl/blog/programmatic-advertising-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -111,7 +111,7 @@ export default function BlogProgrammaticAdvertisingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Programmatic Advertising", url: "https://fotz.pl" },
+              { name: "Programmatic Advertising", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Programmatic Advertising — co to jest i jak działa?

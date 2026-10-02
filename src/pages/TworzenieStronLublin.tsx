@@ -12,10 +12,10 @@ import { PageBreadcrumbs } from "@/components/PageBreadcrumbs";
 
 export default function TworzenieStronLublin() {
   const breadcrumbs = [
-    { name: "Strona główna", url: "https://fotz.pl" },
-    { name: "Usługi", url: "https://fotz.pl/uslugi" },
-    { name: "Tworzenie stron internetowych", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych" },
-    { name: "Lublin", url: "https://fotz.pl/uslugi/tworzenie-stron-internetowych/lublin" }
+    { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+    { name: "Usługi", url: "https://www.fotz-studio.pl/uslugi" },
+    { name: "Tworzenie stron internetowych", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych" },
+    { name: "Lublin", url: "https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/lublin" }
   ];
 
   const stats = [
@@ -135,7 +135,7 @@ export default function TworzenieStronLublin() {
       <SEOHead
         title="Tworzenie stron internetowych Lublin | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Lublin — profesjonalne strony dla firm. Od 499 zł netto. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/lublin"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/lublin"
         keywords="tworzenie stron internetowych lublin, strony internetowe lublin, tworzenie stron www lublin, projektowanie stron internetowych lublin, strony www lublin, tworzenie stron lublin, strona internetowa lublin, sklepy internetowe lublin, agencja webdesign lublin, projektowanie stron www lublin"
       />
       <ServiceSchema name="Tworzenie stron internetowych Lublin" description="Profesjonalne tworzenie stron internetowych dla firm z Lublina i wschodniej Polski." areaServed={["PL"]} />

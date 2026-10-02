@@ -123,7 +123,7 @@ const BlogMarketingDlaSalonuPieknosci = () => {
         title="Marketing dla salonu piękności 2025 - jak pozyskać klientki?"
         description="Kompletny przewodnik marketingu dla salonu urody i piękności. Instagram, TikTok, Google Moja Firma, Booksy, email, kampanie Facebook. Strategie na 2025."
         ogType="article"
-        canonical="https://fotz.pl/blog/marketing-dla-salonu-pieknosci"
+        canonical="https://www.fotz-studio.pl/blog/marketing-dla-salonu-pieknosci"
         keywords="marketing dla salonu piękności, reklama salonu urody, marketing salon kosmetyczny, Instagram salon piękności, TikTok salon, Google Moja Firma salon"
         schemaJson={[
           {
@@ -140,7 +140,7 @@ const BlogMarketingDlaSalonuPieknosci = () => {
               "name": "Fotz Studio",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://fotz.pl/logo-fotz.jpg"
+                "url": "https://www.fotz-studio.pl/logo-fotz.jpg"
               }
             },
             "datePublished": "2025-03-20",
@@ -150,9 +150,9 @@ const BlogMarketingDlaSalonuPieknosci = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://fotz.pl" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fotz.pl/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Marketing dla salonu piękności", "item": "https://fotz.pl/blog/marketing-dla-salonu-pieknosci" }
+              { "@type": "ListItem", "position": 1, "name": "Strona główna", "item": "https://www.fotz-studio.pl" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.fotz-studio.pl/blog" },
+              { "@type": "ListItem", "position": 3, "name": "Marketing dla salonu piękności", "item": "https://www.fotz-studio.pl/blog/marketing-dla-salonu-pieknosci" }
             ]
           },
           {

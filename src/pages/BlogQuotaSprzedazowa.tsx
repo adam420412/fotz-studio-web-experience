@@ -81,21 +81,21 @@ export default function BlogQuotaSprzedazowa() {
       <SEOHead
         title="Quota sprzedażowa — co to jest i jak ustalić? | Fotz.pl"
         description="Quota sprzedażowa — rodzaje quota, jak ustalić OTE i plan sprzedaży, benchmarki dla AE i SDR oraz struktura komisji. Kompletny przewodnik dla Sales Managerów."
-        canonical="https://fotz.pl/blog/quota-sprzedazowa-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/quota-sprzedazowa-co-to-jest"
 
         keywords="Quota sprzedażowa co to jest, Quota sprzedażowa definicja, czym jest Quota sprzedażowa, Quota sprzedażowa w sprzedaży, Quota sprzedażowa strategia, Quota sprzedażowa przykłady, jak używać Quota sprzedażowa"
       />
       <ArticleSchema
         title="Quota sprzedażowa — co to jest i jak ustalić?"
         description="Kompletny przewodnik po quota sprzedażowej: typy, OTE, benchmarki, komisja i zarządzanie wykonaniem."
-        url="https://fotz.pl/blog/quota-sprzedazowa-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/quota-sprzedazowa-co-to-jest"
         datePublished="2024-02-12"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Quota sprzedażowa", url: "https://fotz.pl/blog/quota-sprzedazowa-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Quota sprzedażowa", url: "https://www.fotz-studio.pl/blog/quota-sprzedazowa-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-slate-900 text-white py-20 px-4">

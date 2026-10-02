@@ -44,21 +44,21 @@ export default function BlogMswTestingCoTo() {
       <SEOHead
         title="MSW 2.0, Storybook mocking i Contract Testing | Fotz Studio"
         description="MSW 2.0 (http/HttpResponse, Browser+Node), integracja z Vitest+RTL+Storybook, contract testing z Pact — API mocking dla React i TypeScript 2024."
-        canonical="https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
+        canonical="https://www.fotz-studio.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
 
         keywords="MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact co to jest, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact definicja, czym jest MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact przykłady, jak działa MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact znaczenie, MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact przewodnik"
       />
       <ArticleSchema
         title="MSW Mock Service Worker 2.0, Storybook mocking i Contract Testing z Pact?"
         description="6 narzędzi API mocking (MSW/nock/fetch-mock/axios-mock-adapter/Pact/WireMock) — setup MSW 2.0, Vitest+RTL+Storybook integracja i contract testing."
-        url="https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
+        url="https://www.fotz-studio.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024"
         datePublished="2024-04-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "MSW i API Mocking", url: "https://fotz.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "MSW i API Mocking", url: "https://www.fotz-studio.pl/blog/msw-mock-service-worker-storybook-pact-contract-testing-react-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-green-950 text-white py-20 px-4">

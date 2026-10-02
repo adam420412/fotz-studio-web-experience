@@ -203,7 +203,7 @@ export default function TworzenieStronSzczecin() {
       <SEOHead
         title="Tworzenie stron internetowych Szczecin | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Szczecin — profesjonalne strony WWW dla firm. Od 499 zł netto. Wersje PL+DE. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/szczecin"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/szczecin"
         keywords="tworzenie stron internetowych szczecin, strony internetowe szczecin, tworzenie stron www szczecin, projektowanie stron internetowych szczecin, strony www szczecin, projektowanie i tworzenie stron internetowych szczecin, tworzenie stron szczecin, strona internetowa szczecin, agencja webdesign szczecin, sklep internetowy szczecin"
       />
       <ServiceSchema

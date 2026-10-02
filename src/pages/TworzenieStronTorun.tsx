@@ -202,7 +202,7 @@ export default function TworzenieStronTorun() {
       <SEOHead
         title="Tworzenie stron internetowych Toruń | Profesjonalne strony WWW"
         description="Tworzenie stron internetowych Toruń — profesjonalne strony WWW dla lokalnych firm. Od 499 zł netto. Szybko, z wynikami. Bezpłatna wycena!"
-        canonical="https://fotz.pl/uslugi/tworzenie-stron-internetowych/torun"
+        canonical="https://www.fotz-studio.pl/uslugi/tworzenie-stron-internetowych/torun"
         keywords="tworzenie stron internetowych toruń, strony internetowe toruń, tworzenie stron www toruń, projektowanie stron internetowych toruń, strony www toruń, tworzenie stron toruń, strona internetowa toruń, agencja webdesign toruń, projektowanie stron toruń, sklep internetowy toruń"
       />
       <ServiceSchema

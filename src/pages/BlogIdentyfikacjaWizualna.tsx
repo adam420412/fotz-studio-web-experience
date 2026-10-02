@@ -50,21 +50,21 @@ export default function BlogIdentyfikacjaWizualna() {
         title="Co to jest identyfikacja wizualna? Kompletny przewodnik"
         description="Identyfikacja wizualna firmy — co to jest, z czego się składa i dlaczego jest ważna. Kompletny przewodnik z przykładami. Poznaj elementy CI i CD."
         ogType="article"
-        canonical="https://fotz.pl/blog/co-to-jest-identyfikacja-wizualna"
+        canonical="https://www.fotz-studio.pl/blog/co-to-jest-identyfikacja-wizualna"
         keywords="identyfikacja wizualna, corporate identity, corporate design, branding, logo, grafika korporacyjna, CI CD, tożsamość marki"
       />
       <ArticleSchema
         title="Co to jest identyfikacja wizualna firmy? Kompletny przewodnik"
         description="Pełny przewodnik po identyfikacji wizualnej. Czym jest CI i CD, jakie elementy się na nią składają i dlaczego jest ważna dla Twojej marki."
-        url="https://fotz.pl/blog/co-to-jest-identyfikacja-wizualna"
+        url="https://www.fotz-studio.pl/blog/co-to-jest-identyfikacja-wizualna"
         datePublished="2025-03-15"
         dateModified="2026-04-11"
         author="Fotz Studio"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Identyfikacja Wizualna", url: "https://fotz.pl/blog/co-to-jest-identyfikacja-wizualna" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Identyfikacja Wizualna", url: "https://www.fotz-studio.pl/blog/co-to-jest-identyfikacja-wizualna" },
         ]}/>
       <FAQSchema items={faqItems} />
 

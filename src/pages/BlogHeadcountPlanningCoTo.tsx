@@ -77,21 +77,21 @@ export default function BlogHeadcountPlanningCoTo() {
       <SEOHead
         title="Headcount Planning — jak planować zatrudnienie w startupie?"
         description="Headcount planning: jak planować zatrudnienie, obliczać koszty, unikać błędów i łączyć plan HC z revenue targets. Przewodnik dla startupów i scaleupów SaaS."
-        canonical="https://fotz.pl/blog/headcount-planning-planowanie-zatrudnienia-startup"
+        canonical="https://www.fotz-studio.pl/blog/headcount-planning-planowanie-zatrudnienia-startup"
 
         keywords="Headcount Planning co to jest, Headcount Planning definicja, czym jest Headcount Planning, Headcount Planning startup, Headcount Planning jak liczyć, Headcount Planning wzór, Headcount Planning przykłady"
       />
       <ArticleSchema
         title="Headcount Planning — jak planować zatrudnienie w startupie?"
         description="Headcount planning: proces, kluczowe metryki, jak planować Sales i Engineering HC, najczęstsze błędy i jak powiązać plan zatrudnienia z celami biznesowymi."
-        url="https://fotz.pl/blog/headcount-planning-planowanie-zatrudnienia-startup"
+        url="https://www.fotz-studio.pl/blog/headcount-planning-planowanie-zatrudnienia-startup"
         datePublished="2024-02-14"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Headcount Planning", url: "https://fotz.pl/blog/headcount-planning-planowanie-zatrudnienia-startup" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Headcount Planning", url: "https://www.fotz-studio.pl/blog/headcount-planning-planowanie-zatrudnienia-startup" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-slate-900 text-white py-20 px-4">

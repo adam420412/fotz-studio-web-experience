@@ -44,21 +44,21 @@ export default function BlogNodeStreamsCoTo() {
       <SEOHead
         title="Node.js Streams — Readable, Writable, Transform, pipeline i Web Streams API 2024?"
         description="6 typów streamów (Readable/Writable/Duplex/Transform/Web ReadableStream/PassThrough) — pipeline, backpressure, HTTP streaming, SSE i Next.js App Router streaming."
-        canonical="https://fotz.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024"
+        canonical="https://www.fotz-studio.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024"
 
         keywords="Node.js Streams co to jest, Node.js Streams jak działa, Node.js Streams tutorial, Node.js Streams przykład, czym jest Node.js Streams, Node.js Streams dokumentacja, Node.js Streams przewodnik"
       />
       <ArticleSchema
         title="Node.js Streams — Readable, Writable, Transform, pipeline i Web Streams API 2024?"
         description="6 typów streamów (Readable/Writable/Duplex/Transform/Web ReadableStream/PassThrough) — pipeline, backpressure, HTTP streaming, SSE i Next.js App Router streaming."
-        url="https://fotz.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024"
+        url="https://www.fotz-studio.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Node.js Streams", url: "https://fotz.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Node.js Streams", url: "https://www.fotz-studio.pl/blog/nodejs-streams-readable-writable-transform-pipeline-web-streams-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-lime-950 to-green-950 text-white py-20 px-4">

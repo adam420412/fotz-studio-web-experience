@@ -77,21 +77,21 @@ export default function BlogAiAgentsCoTo() {
       <SEOHead
         title="AI Agents — co to jest i jak działają? | Fotz.pl"
         description="AI Agents: agentic loop, ReAct, multi-agent systems, narzędzia (tools), frameworki (LangChain, CrewAI, AutoGen, LangGraph) i wyzwania produkcyjne."
-        canonical="https://fotz.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest"
 
         keywords="AI Agents co to jest, AI Agents definicja, czym jest AI Agents, AI Agents przykłady, jak działa AI Agents, AI Agents znaczenie, AI Agents przewodnik"
       />
       <ArticleSchema
         title="AI Agents — co to jest i jak działają?"
         description="AI Agents: architektura agentyczna, agentic loop, wzorce (ReAct, Plan-Execute, Reflection, Multi-Agent), tools i wyzwania produkcyjne autonomicznych agentów AI."
-        url="https://fotz.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest"
         datePublished="2024-03-05"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "AI Agents", url: "https://fotz.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "AI Agents", url: "https://www.fotz-studio.pl/blog/ai-agents-autonomiczne-agenty-co-to-jest" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-900 text-white py-20 px-4">

@@ -44,21 +44,21 @@ export default function BlogDateLibrariesCoTo() {
       <SEOHead
         title="date-fns, Day.js, Luxon, Temporal API | Fotz Studio"
         description="date-fns vs Day.js vs Luxon vs Moment.js vs Temporal API — parsowanie dat, strefy czasowe, DST, ISO 8601, locale PL i walidacja Zod w TypeScript i Next.js."
-        canonical="https://fotz.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024"
+        canonical="https://www.fotz-studio.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024"
 
         keywords="date-fns, Day.js, Luxon, Temporal API co to jest, date-fns, Day.js, Luxon, Temporal API jak działa, date-fns, Day.js, Luxon, Temporal API tutorial, date-fns, Day.js, Luxon, Temporal API przykład, czym jest date-fns, Day.js, Luxon, Temporal API, date-fns, Day.js, Luxon, Temporal API dokumentacja, date-fns, Day.js, Luxon, Temporal API przewodnik"
       />
       <ArticleSchema
         title="date-fns, Day.js, Luxon, Temporal API — biblioteki dat JavaScript 2024?"
         description="6 bibliotek dat (date-fns/Day.js/Luxon/Moment.js/Temporal/Intl) — formatowanie, parsowanie, strefy czasowe, DST, ISO 8601 i walidacja Zod dla TypeScript."
-        url="https://fotz.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024"
+        url="https://www.fotz-studio.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Biblioteki Dat JavaScript", url: "https://fotz.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Biblioteki Dat JavaScript", url: "https://www.fotz-studio.pl/blog/date-fns-dayjs-luxon-temporal-api-biblioteki-dat-javascript-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-emerald-950 to-green-950 text-white py-20 px-4">

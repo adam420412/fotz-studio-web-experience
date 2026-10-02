@@ -92,26 +92,26 @@ export default function BlogPaidSocialCoTo() {
       <SEOHead
         title="Paid Social — co to jest i jak prowadzić reklamy w Social Media?"
         description="Kompletny przewodnik po paid social: porównanie platform (Meta vs LinkedIn vs TikTok), formaty, metryki i strategie targetowania."
-        canonical="https://fotz.pl/blog/paid-social-co-to"
+        canonical="https://www.fotz-studio.pl/blog/paid-social-co-to"
 
         keywords="Paid Social co to jest, Paid Social definicja, czym jest Paid Social, Paid Social w marketingu, Paid Social przykłady, jak działa Paid Social, Paid Social strategia"
       />
       <ArticleSchema
         title="Paid Social — co to jest i jak prowadzić reklamy w Social Media?"
         description="Kompletny przewodnik po paid social: porównanie platform (Meta vs LinkedIn vs TikTok), formaty, metryki i strategie targetowania."
-        url="https://fotz.pl/blog/paid-social-co-to"
+        url="https://www.fotz-studio.pl/blog/paid-social-co-to"
         datePublished="2024-01-21"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Paid Social", url: "https://fotz.pl/blog/paid-social-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Paid Social", url: "https://www.fotz-studio.pl/blog/paid-social-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Paid Social", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Paid Social", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Paid Social — co to jest i jak prowadzić reklamy w Social Media?
           </h1>

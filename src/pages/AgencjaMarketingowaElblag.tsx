@@ -48,7 +48,7 @@ export const AgencjaMarketingowaElblag = () => {
       <SEOHead
         title={seoTitle}
         description={seoDescription}
-        canonical="https://fotz.pl/agencja-marketingowa/elblag"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/elblag"
         keywords="agencja marketingowa elbląg, marketing internetowy elbląg, usługi marketingowe elbląg, agencja reklamowa elbląg"
       />
 

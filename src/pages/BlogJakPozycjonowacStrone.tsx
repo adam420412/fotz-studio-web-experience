@@ -101,7 +101,7 @@ export default function BlogJakPozycjonowacStrone() {
       <SEOHead
         title="Jak pozycjonować stronę w Google? Praktyczny poradnik 2025"
         description="Krok po kroku jak pozycjonować stronę — słowa kluczowe, on-page SEO, technical SEO, link building i monitoring."
-        canonical="https://fotz.pl/blog/jak-pozycjonowac-strone"
+        canonical="https://www.fotz-studio.pl/blog/jak-pozycjonowac-strone"
 
         keywords="Jak pozycjonować stronę w Google? Praktyczny poradnik 2025, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 co to jest, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 jak działa, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 definicja, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 przykłady, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 poradnik, Jak pozycjonować stronę w Google? Praktyczny poradnik 2025 przewodnik"
       />
@@ -110,7 +110,7 @@ export default function BlogJakPozycjonowacStrone() {
         description="Krok po kroku jak pozycjonować stronę — słowa kluczowe, on-page SEO, technical SEO, link building i monitoring."
         datePublished="2025-02-05"
         dateModified="2025-04-01"
-        url="https://fotz.pl/blog/jak-pozycjonowac-strone"
+        url="https://www.fotz-studio.pl/blog/jak-pozycjonowac-strone"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

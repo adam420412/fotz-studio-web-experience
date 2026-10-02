@@ -104,21 +104,21 @@ export default function BlogNetPromoterScoreCoTo() {
       <SEOHead
         title="Net Promoter Score (NPS) — co to jest i jak mierzyć lojalność klientów?"
         description="Net Promoter Score (NPS) — definicja, wzór obliczania, Promotorzy vs Krytycy, benchmarki branżowe i różnica vs CSAT i CES. Kompletny przewodnik po NPS."
-        canonical="https://fotz.pl/blog/net-promoter-score-co-to"
+        canonical="https://www.fotz-studio.pl/blog/net-promoter-score-co-to"
 
         keywords="Net Promoter Score (NPS) co to jest, Net Promoter Score (NPS) definicja, czym jest Net Promoter Score (NPS), Net Promoter Score (NPS) przykłady, jak działa Net Promoter Score (NPS), Net Promoter Score (NPS) znaczenie, Net Promoter Score (NPS) przewodnik"
       />
       <ArticleSchema
         title="Net Promoter Score (NPS) — co to jest i jak mierzyć lojalność klientów?"
         description="Kompletny przewodnik po NPS: wzór, 3 grupy klientów, benchmarki, porównanie z CSAT i CES, program NPS krok po kroku."
-        url="https://fotz.pl/blog/net-promoter-score-co-to"
+        url="https://www.fotz-studio.pl/blog/net-promoter-score-co-to"
         datePublished="2024-01-20"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Net Promoter Score", url: "https://fotz.pl/blog/net-promoter-score-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Net Promoter Score", url: "https://www.fotz-studio.pl/blog/net-promoter-score-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -126,7 +126,7 @@ export default function BlogNetPromoterScoreCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Net Promoter Score (NPS)", url: "https://fotz.pl" },
+              { name: "Net Promoter Score (NPS)", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Net Promoter Score (NPS) — co to jest i jak działa?

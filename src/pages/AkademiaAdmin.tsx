@@ -419,7 +419,7 @@ const AkademiaAdmin = () => {
       <SEOHead
         title="Panel Administracyjny | Akademia FOTZ"
         description="Panel administracyjny Akademii FOTZ"
-        canonical="https://fotz.pl/zasoby"
+        canonical="https://www.fotz-studio.pl/zasoby"
         noIndex={true}
       />
 

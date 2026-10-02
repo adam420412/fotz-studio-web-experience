@@ -64,9 +64,9 @@ export default function BlogDueDiligence() {
   return (
     <>
       <SEOHead
-        title="Due diligence — co to jest i jak przebiega? Poradnik | fotz.pl"
+        title="Due diligence — co to jest i jak przebiega? Poradnik | FOTZ Studio"
         description="Due diligence co to jest — wyjaśniamy czym jest due diligence w transakcjach M&A, rodzaje (finansowe, prawne, komercyjne), ile trwa i kosztuje."
-        canonical="https://fotz.pl/blog/due-diligence-co-to"
+        canonical="https://www.fotz-studio.pl/blog/due-diligence-co-to"
 
         keywords="Due diligence co to jest, Due diligence definicja, czym jest Due diligence, Due diligence przykłady, jak działa Due diligence, Due diligence znaczenie, Due diligence przewodnik"
       />
@@ -75,7 +75,7 @@ export default function BlogDueDiligence() {
         description="Czym jest due diligence, rodzaje (finansowe, prawne, komercyjne, IT), kiedy przeprowadzać, ile trwa i kosztuje oraz co to jest data room."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/due-diligence-co-to"
+        url="https://www.fotz-studio.pl/blog/due-diligence-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

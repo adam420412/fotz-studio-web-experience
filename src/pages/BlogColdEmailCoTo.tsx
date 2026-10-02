@@ -67,7 +67,7 @@ export default function BlogColdEmailCoTo() {
       <SEOHead
         title="Cold Email — co to jest i jak pisac skuteczne wiadomosci?"
         description="Czym jest cold email, jak pisać skuteczne zimne e-maile B2B, benchmarki open rate i reply rate, narzędzia, legalność w Polsce (RODO) i dostarczalność."
-        canonical="https://fotz.pl/blog/cold-email-co-to"
+        canonical="https://www.fotz-studio.pl/blog/cold-email-co-to"
 
         keywords="Cold Email co to jest, Cold Email definicja, czym jest Cold Email, Cold Email przykłady, jak działa Cold Email, Cold Email znaczenie, Cold Email przewodnik"
       />
@@ -76,7 +76,7 @@ export default function BlogColdEmailCoTo() {
         description="Czym jest cold email, jak pisać skuteczne zimne e-maile B2B, benchmarki open rate i reply rate, narzędzia, legalność w Polsce (RODO) i dostarczalność."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/cold-email-co-to"
+        url="https://www.fotz-studio.pl/blog/cold-email-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

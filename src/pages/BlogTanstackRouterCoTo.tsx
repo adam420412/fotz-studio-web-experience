@@ -43,21 +43,21 @@ export default function BlogTanstackRouterCoTo() {
       <SEOHead
         title="TanStack Router, React Router v7 i type-safe routing w React 2024"
         description="6 routerów React (TanStack Router/React Router v7/v6/Next.js/Wouter/Expo Router) — type-safe params, search params, loaders i file-based routing."
-        canonical="https://fotz.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
+        canonical="https://www.fotz-studio.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
 
         keywords="TanStack Router, React Router v7 i type-safe routing w React 2024 co to jest, TanStack Router, React Router v7 i type-safe routing w React 2024 jak działa, TanStack Router, React Router v7 i type-safe routing w React 2024 tutorial, TanStack Router, React Router v7 i type-safe routing w React 2024 przykład, czym jest TanStack Router, React Router v7 i type-safe routing w React 2024, TanStack Router, React Router v7 i type-safe routing w React 2024 dokumentacja, TanStack Router, React Router v7 i type-safe routing w React 2024 przewodnik"
       />
       <ArticleSchema
         title="TanStack Router, React Router v7 i type-safe routing w React 2024?"
         description="6 routerów React (TanStack Router/React Router v7/v6/Next.js/Wouter/Expo Router) — type-safe params, search params, loaders i file-based routing."
-        url="https://fotz.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
+        url="https://www.fotz-studio.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "TanStack Router i React Router v7", url: "https://fotz.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "TanStack Router i React Router v7", url: "https://www.fotz-studio.pl/blog/tanstack-router-react-router-v7-type-safe-routing-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-orange-950 to-red-950 text-white py-20 px-4">

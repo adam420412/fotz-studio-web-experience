@@ -119,9 +119,9 @@ export default function ReklamaFacebook() {
   return (
     <>
       <SEOHead
-        title="Reklama Facebook — agencja Meta Ads | fotz.pl"
+        title="Reklama Facebook — agencja Meta Ads | FOTZ Studio"
         description="Reklama na Facebooku — kampanie Meta Ads które sprzedają. Remarketing, Lookalike, Lead Ads. Obsługa Facebook Ads dla firm od 799 zł/mies. Sprawdź!"
-        canonical="https://fotz.pl/uslugi/reklama-facebook"
+        canonical="https://www.fotz-studio.pl/uslugi/reklama-facebook"
         keywords="reklama facebook, reklamy na facebooku, facebook ads, kampanie facebook, reklama facebook ads cena, facebook reklama dla firm"
       />
       <ServiceSchema

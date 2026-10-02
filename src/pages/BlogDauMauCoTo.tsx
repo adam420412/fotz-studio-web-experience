@@ -51,21 +51,21 @@ export default function BlogDauMauCoTo() {
       <SEOHead
         title="DAU, MAU i Stickiness — metryki zaangażowania użytkowników"
         description="Kompletny przewodnik po DAU, MAU i Stickiness: definicje, benchmarki, błędy i jak poprawiać zaangażowanie."
-        canonical="https://fotz.pl/blog/dau-mau-stickiness-metryki-zaangazowania"
+        canonical="https://www.fotz-studio.pl/blog/dau-mau-stickiness-metryki-zaangazowania"
 
         keywords="DAU, MAU i Stickiness co to jest, DAU, MAU i Stickiness definicja, czym jest DAU, MAU i Stickiness, DAU, MAU i Stickiness przykłady, jak działa DAU, MAU i Stickiness, DAU, MAU i Stickiness znaczenie, DAU, MAU i Stickiness przewodnik"
       />
       <ArticleSchema
         title="DAU, MAU i Stickiness — metryki zaangażowania użytkowników"
         description="Kompletny przewodnik po DAU, MAU i Stickiness: definicje, benchmarki, błędy i jak poprawiać zaangażowanie."
-        url="https://fotz.pl/blog/dau-mau-stickiness-metryki-zaangazowania"
+        url="https://www.fotz-studio.pl/blog/dau-mau-stickiness-metryki-zaangazowania"
         datePublished="2024-02-07"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "DAU MAU Stickiness", url: "https://fotz.pl/blog/dau-mau-stickiness-metryki-zaangazowania" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "DAU MAU Stickiness", url: "https://www.fotz-studio.pl/blog/dau-mau-stickiness-metryki-zaangazowania" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 text-white py-20 px-4">

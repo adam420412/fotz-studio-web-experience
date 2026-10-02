@@ -44,21 +44,21 @@ export default function BlogDeploymentPlatformsCoTo() {
       <SEOHead
         title="Vercel, Netlify, Cloudflare Pages, Railway | Fotz Studio"
         description="Vercel vs Netlify vs Cloudflare Pages vs Railway vs Fly.io vs VPS (Hetzner+Coolify) — hosting Next.js, CI/CD, preview deployments, Docker i infrastruktura 2024."
-        canonical="https://fotz.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
+        canonical="https://www.fotz-studio.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
 
         keywords="Vercel, Netlify, Cloudflare Pages, Railway co to jest, Vercel, Netlify, Cloudflare Pages, Railway jak działa, Vercel, Netlify, Cloudflare Pages, Railway tutorial, Vercel, Netlify, Cloudflare Pages, Railway przykład, czym jest Vercel, Netlify, Cloudflare Pages, Railway, Vercel, Netlify, Cloudflare Pages, Railway dokumentacja, Vercel, Netlify, Cloudflare Pages, Railway przewodnik"
       />
       <ArticleSchema
         title="Vercel, Netlify, Cloudflare Pages, Railway — deployment Next.js 2024?"
         description="6 platform deploymentu (Vercel/Netlify/Cloudflare/Railway/Fly.io/VPS) — serverless, edge, PaaS, Docker, CI/CD GitHub Actions i preview deployments."
-        url="https://fotz.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
+        url="https://www.fotz-studio.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024"
         datePublished="2024-04-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Deployment Platforms", url: "https://fotz.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Deployment Platforms", url: "https://www.fotz-studio.pl/blog/vercel-netlify-cloudflare-pages-railway-deployment-nextjs-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-gray-950 text-white py-20 px-4">

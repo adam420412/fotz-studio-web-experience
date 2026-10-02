@@ -66,9 +66,9 @@ export default function BlogSaaSPricingCoTo() {
   return (
     <>
       <SEOHead
-        title="SaaS Pricing — modele cenowe i jak wycenić produkt? | fotz.pl"
+        title="SaaS Pricing — modele cenowe i jak wycenić produkt? | FOTZ Studio"
         description="SaaS Pricing co to jest — wyjaśniamy modele cenowe SaaS (per seat, usage-based, tiered), jak wycenić produkt, ACV i jak przeprowadzić A/B test cen."
-        canonical="https://fotz.pl/blog/saas-pricing-modele-cenowe"
+        canonical="https://www.fotz-studio.pl/blog/saas-pricing-modele-cenowe"
 
         keywords="SaaS Pricing co to jest, SaaS Pricing definicja, czym jest SaaS Pricing, SaaS Pricing startup, SaaS Pricing jak liczyć, SaaS Pricing wzór, SaaS Pricing przykłady"
       />
@@ -77,7 +77,7 @@ export default function BlogSaaSPricingCoTo() {
         description="Modele cenowe SaaS (per seat, usage-based, tiered, freemium), jak wycenić produkt SaaS, ACV, A/B testing cen i kiedy podnosić ceny."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/saas-pricing-modele-cenowe"
+        url="https://www.fotz-studio.pl/blog/saas-pricing-modele-cenowe"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

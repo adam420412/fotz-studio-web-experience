@@ -73,9 +73,9 @@ export default function BlogB2BCoToJest() {
   return (
     <>
       <SEOHead
-        title="B2B — co to jest? Biznes między firmami — poradnik | fotz.pl"
+        title="B2B — co to jest? Biznes między firmami — poradnik | FOTZ Studio"
         description="B2B co to jest — wyjaśniamy czym jest model B2B, jak różni się od B2C, jak pozyskiwać klientów B2B i co to jest lead B2B. Kompletny poradnik."
-        canonical="https://fotz.pl/blog/b2b-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/b2b-co-to-jest"
 
         keywords="B2B co to jest, B2B definicja, czym jest B2B, B2B przykłady, jak działa B2B, B2B znaczenie, B2B przewodnik"
       />
@@ -84,7 +84,7 @@ export default function BlogB2BCoToJest() {
         description="Czym jest B2B (Business to Business), różnica B2B vs B2C, jak pozyskiwać klientów B2B, lead B2B i cykl sprzedaży w modelu biznesowym B2B."
         datePublished="2025-04-10"
         dateModified="2025-04-10"
-        url="https://fotz.pl/blog/b2b-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/b2b-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

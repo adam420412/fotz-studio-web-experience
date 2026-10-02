@@ -106,21 +106,21 @@ export default function BlogDemoSalesCoTo() {
       <SEOHead
         title="Demo sprzedażowe — jak prowadzić i przygotować? | Fotz.pl"
         description="Demo sprzedażowe B2B — jak przygotować i prowadzić skuteczną demo, typy demo, flow prezentacji i sygnały zakupu. Kompletny przewodnik dla handlowców."
-        canonical="https://fotz.pl/blog/demo-sprzedazowe-jak-prowadzic"
+        canonical="https://www.fotz-studio.pl/blog/demo-sprzedazowe-jak-prowadzic"
 
         keywords="Demo sprzedażowe co to jest, Demo sprzedażowe definicja, czym jest Demo sprzedażowe, Demo sprzedażowe w sprzedaży, Demo sprzedażowe strategia, Demo sprzedażowe przykłady, jak używać Demo sprzedażowe"
       />
       <ArticleSchema
         title="Demo sprzedażowe — jak prowadzić i przygotować?"
         description="Kompletny przewodnik po demo sprzedażowym B2B: typy demo, flow prezentacji, błędy i sygnały zakupu."
-        url="https://fotz.pl/blog/demo-sprzedazowe-jak-prowadzic"
+        url="https://www.fotz-studio.pl/blog/demo-sprzedazowe-jak-prowadzic"
         datePublished="2024-02-10"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Demo sprzedażowe", url: "https://fotz.pl/blog/demo-sprzedazowe-jak-prowadzic" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Demo sprzedażowe", url: "https://www.fotz-studio.pl/blog/demo-sprzedazowe-jak-prowadzic" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

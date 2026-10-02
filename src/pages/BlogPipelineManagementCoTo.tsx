@@ -60,21 +60,21 @@ export default function BlogPipelineManagementCoTo() {
       <SEOHead
         title="Pipeline Management — zarządzanie pipeline sprzedaży B2B"
         description="Pipeline management w sprzedaży B2B — etapy pipeline, coverage ratio, metryki zdrowia i jak adresować problemy. Kompletny przewodnik dla liderów sprzedaży."
-        canonical="https://fotz.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b"
+        canonical="https://www.fotz-studio.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b"
 
         keywords="Pipeline Management co to jest, Pipeline Management definicja, czym jest Pipeline Management, Pipeline Management w sprzedaży, Pipeline Management strategia, Pipeline Management przykłady, jak używać Pipeline Management"
       />
       <ArticleSchema
         title="Pipeline Management — zarządzanie pipeline sprzedaży B2B"
         description="Kompletny przewodnik po pipeline management: etapy, coverage, metryki zdrowia i działania naprawcze."
-        url="https://fotz.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b"
+        url="https://www.fotz-studio.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b"
         datePublished="2024-02-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Pipeline Management", url: "https://fotz.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Pipeline Management", url: "https://www.fotz-studio.pl/blog/pipeline-management-zarzadzanie-sprzedaza-b2b" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-teal-950 to-slate-900 text-white py-20 px-4">

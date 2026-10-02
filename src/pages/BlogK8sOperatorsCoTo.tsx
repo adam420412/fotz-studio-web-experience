@@ -52,21 +52,21 @@ export default function BlogK8sOperatorsCoTo() {
       <SEOHead
         title="Kubernetes Operators — co to jest, Kubebuilder, CloudNativePG, Strimzi?"
         description="Kubernetes Operators: Operator SDK, Kubebuilder, CloudNativePG PostgreSQL, Strimzi Kafka, Prometheus Operator, OLM — jak budować i używać Operatorów w K8s."
-        canonical="https://fotz.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi"
+        canonical="https://www.fotz-studio.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi"
 
         keywords="Kubernetes Operators co to jest, Kubernetes Operators jak działa, Kubernetes Operators tutorial, Kubernetes Operators przykład, czym jest Kubernetes Operators, Kubernetes Operators dokumentacja, Kubernetes Operators przewodnik"
       />
       <ArticleSchema
         title="Kubernetes Operators — co to jest, Kubebuilder, CloudNativePG, Strimzi?"
         description="K8s Operators: 5 capability levels, 6 produkcyjnych Operatorów, Kubebuilder/Operator SDK, CloudNativePG, Strimzi Kafka i OLM lifecycle management."
-        url="https://fotz.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi"
+        url="https://www.fotz-studio.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi"
         datePublished="2024-04-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Kubernetes Operators", url: "https://fotz.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Kubernetes Operators", url: "https://www.fotz-studio.pl/blog/kubernetes-operators-co-to-jest-kubebuilder-cloudnativepg-strimzi" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-sky-950 to-blue-950 text-white py-20 px-4">

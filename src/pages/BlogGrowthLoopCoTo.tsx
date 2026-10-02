@@ -87,26 +87,26 @@ export default function BlogGrowthLoopCoTo() {
       <SEOHead
         title="Growth Loop — co to jest? Pętla wzrostu zamiast lejka konwersji"
         description="Kompletny przewodnik po growth loops: 5 typów pętli (viral, content SEO, paid, product, community), 6-krokowy framework projektowania i kluczowe metryki."
-        canonical="https://fotz.pl/blog/growth-loop-co-to"
+        canonical="https://www.fotz-studio.pl/blog/growth-loop-co-to"
 
         keywords="Growth Loop co to jest, Growth Loop definicja, czym jest Growth Loop, Growth Loop przykłady, jak działa Growth Loop, Growth Loop znaczenie, Growth Loop przewodnik"
       />
       <ArticleSchema
         title="Growth Loop — co to jest i jak projektować pętle wzrostu?"
         description="Kompletny przewodnik po growth loops: 5 typów pętli (viral, content SEO, paid, product, community), 6-krokowy framework projektowania i kluczowe metryki."
-        url="https://fotz.pl/blog/growth-loop-co-to"
+        url="https://www.fotz-studio.pl/blog/growth-loop-co-to"
         datePublished="2024-02-03"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Growth Loop", url: "https://fotz.pl/blog/growth-loop-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Growth Loop", url: "https://www.fotz-studio.pl/blog/growth-loop-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Growth Loop", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Growth Loop", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Growth Loop — co to jest i jak projektować pętle wzrostu?
           </h1>

@@ -71,21 +71,21 @@ export default function BlogVestingScheduleCoTo() {
       <SEOHead
         title="Vesting Schedule — co to jest i jak działa equity vesting?"
         description="Vesting schedule: cliff, founder vesting, opcje ESOP, acceleration (single/double trigger). Jak działa harmonogram nabywania uprawnień do equity w startupie."
-        canonical="https://fotz.pl/blog/vesting-schedule-co-to-jest-equity-startup"
+        canonical="https://www.fotz-studio.pl/blog/vesting-schedule-co-to-jest-equity-startup"
 
         keywords="Vesting Schedule co to jest, Vesting Schedule definicja, czym jest Vesting Schedule, Vesting Schedule przykłady, jak działa Vesting Schedule, Vesting Schedule znaczenie, Vesting Schedule przewodnik"
       />
       <ArticleSchema
         title="Vesting Schedule — co to jest i jak działa equity vesting?"
         description="Vesting schedule: standardy (4Y/1Y cliff), founder vesting, ESOP opcje, acceleration (single vs double trigger) i jak negocjować warunki vestingu."
-        url="https://fotz.pl/blog/vesting-schedule-co-to-jest-equity-startup"
+        url="https://www.fotz-studio.pl/blog/vesting-schedule-co-to-jest-equity-startup"
         datePublished="2024-02-18"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Vesting Schedule", url: "https://fotz.pl/blog/vesting-schedule-co-to-jest-equity-startup" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Vesting Schedule", url: "https://www.fotz-studio.pl/blog/vesting-schedule-co-to-jest-equity-startup" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-green-950 to-slate-900 text-white py-20 px-4">

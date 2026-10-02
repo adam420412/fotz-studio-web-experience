@@ -130,17 +130,17 @@ const Zasoby = () => {
       <SEOHead
         title="Zasoby Marketingowe — Poradniki i Narzędzia | Fotz Studio"
         description="Zasoby marketingowe Fotz Studio: poradniki, generator briefu i kalkulatory online. Sprawdź narzędzia i zapytaj o dostępność e-booków oraz checklist."
-        canonical="https://fotz.pl/zasoby"
+        canonical="https://www.fotz-studio.pl/zasoby"
         keywords="darmowe zasoby marketingowe, e-book marketing darmowy, checklisty SEO, szablony briefu marketingowego, darmowe materiały marketing, checklisty Google Ads"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Zasoby", url: "https://fotz.pl/zasoby" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Zasoby", url: "https://www.fotz-studio.pl/zasoby" }
         ]}/>
       <WebPageSchema 
         title="Darmowe zasoby marketingowe"
         description="Poradniki i narzędzia marketingowe online oraz informacje o materiałach do pobrania."
-        url="https://fotz.pl/zasoby"
+        url="https://www.fotz-studio.pl/zasoby"
       />
       <Layout>
         {/* Hero */}

@@ -66,9 +66,9 @@ export default function BlogColdCallingCoTo() {
   return (
     <>
       <SEOHead
-        title="Cold calling — co to jest i jak skutecznie dzwonić? | fotz.pl"
+        title="Cold calling — co to jest i jak skutecznie dzwonić? | FOTZ Studio"
         description="Czym jest cold calling, skuteczność zimnych telefonów, jak napisać skrypt i kiedy cold calling ma sens versus inbound marketing."
-        canonical="https://fotz.pl/blog/cold-calling-co-to"
+        canonical="https://www.fotz-studio.pl/blog/cold-calling-co-to"
 
         keywords="Cold calling co to jest, Cold calling definicja, czym jest Cold calling, Cold calling przykłady, jak działa Cold calling, Cold calling znaczenie, Cold calling przewodnik"
       />
@@ -77,7 +77,7 @@ export default function BlogColdCallingCoTo() {
         description="Czym jest cold calling, skuteczność zimnych telefonów, jak napisać skrypt i kiedy cold calling ma sens versus inbound marketing."
         datePublished="2025-04-08"
         dateModified="2025-04-09"
-        url="https://fotz.pl/blog/cold-calling-co-to"
+        url="https://www.fotz-studio.pl/blog/cold-calling-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

@@ -59,7 +59,7 @@ export default function BlogCopywritingCoTo() {
       <SEOHead
         title="Copywriting — co to jest, rodzaje i ile zarabia copywriter"
         description="Copywriting co to — kompleksowy przewodnik. Definicja, rodzaje copywritingu, ile zarabia copywriter i jak napisać dobry tekst marketingowy. Przeczytaj!"
-        canonical="https://fotz.pl/blog/copywriting-co-to"
+        canonical="https://www.fotz-studio.pl/blog/copywriting-co-to"
 
         keywords="Copywriting co to jest, Copywriting definicja, czym jest Copywriting, Copywriting przykłady, jak działa Copywriting, Copywriting znaczenie, Copywriting przewodnik"
       />
@@ -68,7 +68,7 @@ export default function BlogCopywritingCoTo() {
         description="Kompletny przewodnik po copywritingu — definicja, rodzaje, jak zostać copywriterem i ile zarabiają."
         datePublished="2024-11-01"
         dateModified="2025-02-01"
-        url="https://fotz.pl/blog/copywriting-co-to"
+        url="https://www.fotz-studio.pl/blog/copywriting-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 
@@ -81,7 +81,7 @@ export default function BlogCopywritingCoTo() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
               <div className="flex items-center gap-4 text-sm text-slate-400 mb-4">
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 7 min czytania</span>
-                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół fotz.pl</span>
+                <span className="flex items-center gap-1"><User className="w-4 h-4" /> Zespół FOTZ Studio</span>
                 <span className="flex items-center gap-1"><BookOpen className="w-4 h-4" /> Marketing</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">

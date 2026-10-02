@@ -93,21 +93,21 @@ export default function BlogProductLaunchCoTo() {
       <SEOHead
         title="Product Launch — co to jest i jak zaplanować premierę produktu?"
         description="Kompletny przewodnik po product launch: 3 fazy, checklist, kanały komunikacji i metryki sukcesu premiery."
-        canonical="https://fotz.pl/blog/product-launch-co-to"
+        canonical="https://www.fotz-studio.pl/blog/product-launch-co-to"
 
         keywords="Product Launch co to jest, Product Launch definicja, czym jest Product Launch, Product Launch przykłady, jak działa Product Launch, Product Launch znaczenie, Product Launch przewodnik"
       />
       <ArticleSchema
         title="Product Launch — co to jest i jak zaplanować premierę produktu?"
         description="Kompletny przewodnik po product launch: 3 fazy, checklist, kanały komunikacji i metryki sukcesu premiery."
-        url="https://fotz.pl/blog/product-launch-co-to"
+        url="https://www.fotz-studio.pl/blog/product-launch-co-to"
         datePublished="2024-01-13"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Product Launch", url: "https://fotz.pl/blog/product-launch-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Product Launch", url: "https://www.fotz-studio.pl/blog/product-launch-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -115,7 +115,7 @@ export default function BlogProductLaunchCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Product Launch", url: "https://fotz.pl" },
+              { name: "Product Launch", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Product Launch — co to jest i jak zaplanować premierę?

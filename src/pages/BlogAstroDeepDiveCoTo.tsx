@@ -44,21 +44,21 @@ export default function BlogAstroDeepDiveCoTo() {
       <SEOHead
         title="Astro 4 — Content Collections, View Transitions, Islands, Astro DB i Actions 2024?"
         description="6 funkcji Astro (Zero JS/Islands/Content Collections/View Transitions/Multi-framework/Astro DB) — type-safe treści, Islands architecture, Astro Actions i deployment na Vercel/Cloudflare."
-        canonical="https://fotz.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024"
+        canonical="https://www.fotz-studio.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024"
 
         keywords="Astro 4 co to jest, Astro 4 jak działa, Astro 4 tutorial, Astro 4 przykład, czym jest Astro 4, Astro 4 dokumentacja, Astro 4 przewodnik"
       />
       <ArticleSchema
         title="Astro 4 — Content Collections, View Transitions, Islands, Astro DB i Actions 2024?"
         description="6 funkcji Astro (Zero JS/Islands/Content Collections/View Transitions/Multi-framework/Astro DB) — type-safe treści, Islands architecture, Astro Actions i deployment na Vercel/Cloudflare."
-        url="https://fotz.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024"
+        url="https://www.fotz-studio.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024"
         datePublished="2024-04-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Astro 4", url: "https://fotz.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Astro 4", url: "https://www.fotz-studio.pl/blog/astro-4-content-collections-view-transitions-islands-astro-db-actions-2024" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-purple-950 to-fuchsia-950 text-white py-20 px-4">

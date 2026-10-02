@@ -27,7 +27,7 @@ const faqItems = [
   },
 ];
 
-const CANONICAL = "https://fotz.pl/blog/modele-rozliczen-agencja-social-media";
+const CANONICAL = "https://www.fotz-studio.pl/blog/modele-rozliczen-agencja-social-media";
 
 export default function BlogModeleRozliczenAgencjaSocialMedia() {
   return (
@@ -47,8 +47,8 @@ export default function BlogModeleRozliczenAgencjaSocialMedia() {
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema
         items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
           { name: "Modele rozliczeń z agencją social media", url: CANONICAL },
         ]}
       />

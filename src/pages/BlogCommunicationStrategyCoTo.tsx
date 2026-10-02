@@ -87,21 +87,21 @@ export default function BlogCommunicationStrategyCoTo() {
       <SEOHead
         title="Strategia komunikacji — co to jest i jak ją budować?"
         description="Kompletny przewodnik po strategii komunikacji: 6-elementowy framework, hierarchia komunikatów, key messages, ton marki i kanały."
-        canonical="https://fotz.pl/blog/strategia-komunikacji-co-to"
+        canonical="https://www.fotz-studio.pl/blog/strategia-komunikacji-co-to"
 
         keywords="Strategia komunikacji co to jest, Strategia komunikacji definicja, czym jest Strategia komunikacji, Strategia komunikacji przykłady, jak działa Strategia komunikacji, Strategia komunikacji znaczenie, Strategia komunikacji przewodnik"
       />
       <ArticleSchema
         title="Strategia komunikacji — co to jest i jak ją budować?"
         description="Kompletny przewodnik po strategii komunikacji: 6-elementowy framework, hierarchia komunikatów, key messages, ton marki i kanały."
-        url="https://fotz.pl/blog/strategia-komunikacji-co-to"
+        url="https://www.fotz-studio.pl/blog/strategia-komunikacji-co-to"
         datePublished="2024-01-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Strategia Komunikacji", url: "https://fotz.pl/blog/strategia-komunikacji-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Strategia Komunikacji", url: "https://www.fotz-studio.pl/blog/strategia-komunikacji-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -109,7 +109,7 @@ export default function BlogCommunicationStrategyCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Strategia Komunikacji", url: "https://fotz.pl" },
+              { name: "Strategia Komunikacji", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Strategia komunikacji — co to jest i jak ją budować?

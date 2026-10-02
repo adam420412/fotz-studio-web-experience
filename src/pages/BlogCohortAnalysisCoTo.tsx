@@ -104,21 +104,21 @@ export default function BlogCohortAnalysisCoTo() {
       <SEOHead
         title="Cohort Analysis — co to jest i jak analizować retencję użytkowników?"
         description="Cohort analysis — definicja, 3 typy kohort, wzorce krzywej retencji, kluczowe metryki i jak czytać tablicę retencji. Kompletny przewodnik po analizie kohort."
-        canonical="https://fotz.pl/blog/cohort-analysis-co-to"
+        canonical="https://www.fotz-studio.pl/blog/cohort-analysis-co-to"
 
         keywords="Cohort Analysis co to jest, Cohort Analysis definicja, czym jest Cohort Analysis, Cohort Analysis przykłady, jak działa Cohort Analysis, Cohort Analysis znaczenie, Cohort Analysis przewodnik"
       />
       <ArticleSchema
         title="Cohort Analysis — co to jest i jak analizować retencję użytkowników?"
         description="Kompletny przewodnik po cohort analysis: 3 typy kohort, 4 wzorce krzywej retencji, metryki i praktyczne zastosowania."
-        url="https://fotz.pl/blog/cohort-analysis-co-to"
+        url="https://www.fotz-studio.pl/blog/cohort-analysis-co-to"
         datePublished="2024-01-15"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Cohort Analysis", url: "https://fotz.pl/blog/cohort-analysis-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Cohort Analysis", url: "https://www.fotz-studio.pl/blog/cohort-analysis-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -126,7 +126,7 @@ export default function BlogCohortAnalysisCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Cohort Analysis", url: "https://fotz.pl" },
+              { name: "Cohort Analysis", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Cohort Analysis — co to jest i jak analizować retencję?

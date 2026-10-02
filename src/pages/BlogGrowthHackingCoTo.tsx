@@ -83,26 +83,26 @@ export default function BlogGrowthHackingCoTo() {
       <SEOHead
         title="Growth Hacking — co to jest? Strategie wzrostu i AARRR framework"
         description="Kompletny przewodnik po growth hackingu: AARRR framework, viral coefficient, 4 growth loops i jak budować kulturę eksperymentowania."
-        canonical="https://fotz.pl/blog/growth-hacking-co-to"
+        canonical="https://www.fotz-studio.pl/blog/growth-hacking-co-to"
 
         keywords="Growth Hacking co to jest, Growth Hacking definicja, czym jest Growth Hacking, Growth Hacking startup, Growth Hacking jak liczyć, Growth Hacking wzór, Growth Hacking przykłady"
       />
       <ArticleSchema
         title="Growth Hacking — co to jest i jak znaleźć mechanizmy wzrostu?"
         description="Kompletny przewodnik po growth hackingu: AARRR framework, viral coefficient, 4 growth loops i jak budować kulturę eksperymentowania."
-        url="https://fotz.pl/blog/growth-hacking-co-to"
+        url="https://www.fotz-studio.pl/blog/growth-hacking-co-to"
         datePublished="2024-01-16"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Growth Hacking", url: "https://fotz.pl/blog/growth-hacking-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Growth Hacking", url: "https://www.fotz-studio.pl/blog/growth-hacking-co-to" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 to-slate-900 text-white py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Growth Hacking", url: "https://fotz.pl" }]}/>
+          <PageBreadcrumbs items={[{ name: "Blog", url: "/blog" }, { name: "Growth Hacking", url: "https://www.fotz-studio.pl" }]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Growth Hacking — co to jest i jak znaleźć mechanizmy wzrostu?
           </h1>

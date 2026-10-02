@@ -178,21 +178,21 @@ export default function BlogGraphqlCoTo() {
       <SEOHead
         title="GraphQL — co to jest? Query, Mutation, Schema i różnice od REST"
         description="GraphQL — definicja, 3 operacje (Query/Mutation/Subscription), schema SDL, resolvers i kiedy używać zamiast REST. Kompletny przewodnik po GraphQL."
-        canonical="https://fotz.pl/blog/graphql-co-to"
+        canonical="https://www.fotz-studio.pl/blog/graphql-co-to"
 
         keywords="GraphQL co to jest, GraphQL jak działa, GraphQL tutorial, GraphQL przykład, czym jest GraphQL, GraphQL dokumentacja, GraphQL przewodnik"
       />
       <ArticleSchema
         title="GraphQL — co to jest i jak działa? Kompletny przewodnik"
         description="Kompletny przewodnik po GraphQL: operacje, schema, resolvers, ekosystem i porównanie z REST API."
-        url="https://fotz.pl/blog/graphql-co-to"
+        url="https://www.fotz-studio.pl/blog/graphql-co-to"
         datePublished="2024-01-17"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "GraphQL", url: "https://fotz.pl/blog/graphql-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "GraphQL", url: "https://www.fotz-studio.pl/blog/graphql-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -200,7 +200,7 @@ export default function BlogGraphqlCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "GraphQL", url: "https://fotz.pl" },
+              { name: "GraphQL", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             GraphQL — co to jest i jak działa?

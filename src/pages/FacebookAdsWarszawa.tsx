@@ -48,7 +48,7 @@ export default function FacebookAdsWarszawa() {
         <SEOHead
           title="Agencja Facebook Ads Warszawa — reklamy Meta dla firm | Fotz.pl"
           description="Facebook Ads Warszawa ✓ Kampanie Meta Ads (Facebook, Instagram) od 400 zł/mies. Certyfikowani specjaliści Meta i skuteczne reklamy na Facebooku dla firm z Warszawy. Bezpłatna konsultacja na start."
-          canonical="https://fotz.pl/performance-marketing/facebook-ads/warszawa"
+          canonical="https://www.fotz-studio.pl/performance-marketing/facebook-ads/warszawa"
           keywords="facebook ads warszawa, meta ads warszawa, instagram ads warszawa, reklamy facebook, reklamy na facebooku, kampanie meta, agencja facebook ads warszawa"
         />
 
@@ -60,10 +60,10 @@ export default function FacebookAdsWarszawa() {
         />
 
         <BreadcrumbSchema items={[
-            { name: "Strona główna", url: "https://fotz.pl" },
-            { name: "Kampanie reklamowe", url: "https://fotz.pl/performance-marketing" },
-            { name: "Facebook Ads", url: "https://fotz.pl/performance-marketing/facebook-ads" },
-            { name: "Facebook Ads Warszawa", url: "https://fotz.pl/performance-marketing/facebook-ads/warszawa" },
+            { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+            { name: "Kampanie reklamowe", url: "https://www.fotz-studio.pl/performance-marketing" },
+            { name: "Facebook Ads", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads" },
+            { name: "Facebook Ads Warszawa", url: "https://www.fotz-studio.pl/performance-marketing/facebook-ads/warszawa" },
           ]}/>
 
         <FAQSchema items={faqItems} />

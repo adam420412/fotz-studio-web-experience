@@ -102,18 +102,18 @@ export default function ONas() {
       <SEOHead
         title="O Nas — Agencja Marketingowa Fotz Studio Poznań | Zespół i Misja"
         description="Fotz Studio — agencja marketingowa z Poznania. Poznaj nasz zespół, wartości i misję. SEO, strony internetowe, social media i produkcja wideo dla firm z całej Polski."
-        canonical="https://fotz.pl/o-nas"
+        canonical="https://www.fotz-studio.pl/o-nas"
         keywords="zespół marketingowy, agencja marketingowa Poznań, Fotz Studio, o nas, marketing team"
       />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "O nas", url: "https://fotz.pl/o-nas" }
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "O nas", url: "https://www.fotz-studio.pl/o-nas" }
         ]}/>
       <OrganizationSchema />
       <WebPageSchema 
         title="O nas - Fotz Studio"
         description="Poznaj zespół Fotz Studio - agencji marketingowej nowej generacji z Poznania"
-        url="https://fotz.pl/o-nas"
+        url="https://www.fotz-studio.pl/o-nas"
       />
       {/* Hero */}
       <section className="pt-40 pb-20 section-padding bg-background relative overflow-hidden">

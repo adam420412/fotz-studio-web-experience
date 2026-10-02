@@ -237,7 +237,7 @@ export default function AgencjaMarketingowaGdynia() {
       <SEOHead
         title="Agencja Marketingowa Gdynia | FOTZ – Marketing Dla Firm w Gdyni"
         description="Agencja marketingowa Gdynia ✓ SEO, Google Ads, Social Media, strony WWW. Ponad 200 projektów dla firm z Gdyni i Trójmiasta. Bezpłatna wycena!"
-        canonical="https://fotz.pl/agencja-marketingowa/gdynia"
+        canonical="https://www.fotz-studio.pl/agencja-marketingowa/gdynia"
         keywords="agencja marketingowa gdynia, marketing internetowy gdynia, agencja reklamowa gdynia, kampanie reklamowe gdynia, seo gdynia, agencja marketingowa trójmiasto"
       />
 

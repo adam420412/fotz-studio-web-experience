@@ -64,9 +64,9 @@ export default function BlogPozycjonowanieCoTo() {
   return (
     <>
       <SEOHead
-        title="Pozycjonowanie — co to jest i jak działa? Poradnik SEO | fotz.pl"
+        title="Pozycjonowanie — co to jest i jak działa? Poradnik SEO | FOTZ Studio"
         description="Pozycjonowanie co to jest — wyjaśniamy czym jest pozycjonowanie stron, jak działa, ile kosztuje i jak długo trwa. Rodzaje pozycjonowania i co wchodzi w cenę."
-        canonical="https://fotz.pl/blog/pozycjonowanie-co-to"
+        canonical="https://www.fotz-studio.pl/blog/pozycjonowanie-co-to"
         keywords="pozycjonowanie co to jest, co to jest pozycjonowanie, pozycjonowanie stron internetowych co to, seo co to jest, pozycjonowanie definicja, jak działa pozycjonowanie, pozycjonowanie stron www, seo dla firm"
       />
       <ArticleSchema
@@ -74,7 +74,7 @@ export default function BlogPozycjonowanieCoTo() {
         description="Czym jest pozycjonowanie stron internetowych, jak działają działania SEO, ile kosztują i czego oczekiwać."
         datePublished="2025-01-10"
         dateModified="2025-03-20"
-        url="https://fotz.pl/blog/pozycjonowanie-co-to"
+        url="https://www.fotz-studio.pl/blog/pozycjonowanie-co-to"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

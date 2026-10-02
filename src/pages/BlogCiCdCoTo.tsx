@@ -65,21 +65,21 @@ export default function BlogCiCdCoTo() {
       <SEOHead
         title="CI/CD — co to jest? Continuous Integration i Continuous Delivery"
         description="CI/CD — definicja, 8 etapów pipeline, 4 strategie wdrożenia (Blue-Green, Canary, Rolling, Feature Flags) i DORA Metrics. Kompletny przewodnik po CI/CD."
-        canonical="https://fotz.pl/blog/ci-cd-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/ci-cd-co-to-jest"
 
         keywords="CI/CD co to jest, CI/CD definicja, czym jest CI/CD, CI/CD przykłady, jak działa CI/CD, CI/CD znaczenie, CI/CD przewodnik"
       />
       <ArticleSchema
         title="CI/CD — co to jest i jak działa Continuous Integration i Delivery?"
         description="Kompletny przewodnik po CI/CD: definicja, 8 etapów pipeline, strategie wdrożenia i DORA Metrics do mierzenia efektywności."
-        url="https://fotz.pl/blog/ci-cd-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/ci-cd-co-to-jest"
         datePublished="2024-01-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "CI/CD", url: "https://fotz.pl/blog/ci-cd-co-to-jest" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "CI/CD", url: "https://www.fotz-studio.pl/blog/ci-cd-co-to-jest" },
         ]}/>
 
       {/* Hero */}
@@ -87,7 +87,7 @@ export default function BlogCiCdCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "CI/CD", url: "https://fotz.pl" },
+              { name: "CI/CD", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             CI/CD — co to jest i jak działa?

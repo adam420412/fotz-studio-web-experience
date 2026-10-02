@@ -51,21 +51,21 @@ export default function BlogFeatureAdoptionCoTo() {
       <SEOHead
         title="Feature Adoption — co to jest i jak zwiększyć adopcję funkcji?"
         description="Feature Adoption: lejek adopcji, breadth vs. depth, strategie zwiększenia, wpływ na NRR i expansion revenue, pułapki w mierzeniu i benchmarki SaaS."
-        canonical="https://fotz.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
+        canonical="https://www.fotz-studio.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
 
         keywords="Feature Adoption co to jest, Feature Adoption definicja, czym jest Feature Adoption, Feature Adoption przykłady, jak działa Feature Adoption, Feature Adoption znaczenie, Feature Adoption przewodnik"
       />
       <ArticleSchema
         title="Feature Adoption — co to jest i jak zwiększyć adopcję funkcji?"
         description="Feature Adoption: definicja, lejek (Exposed/Tried/Adopted/Retained), 6 strategii zwiększenia, wpływ na NRR, pułapki mierzenia i analiza breadth vs. depth."
-        url="https://fotz.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
+        url="https://www.fotz-studio.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji"
         datePublished="2024-03-23"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Feature Adoption", url: "https://fotz.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Feature Adoption", url: "https://www.fotz-studio.pl/blog/feature-adoption-co-to-jest-jak-zwiekszyc-adopcje-funkcji" },
         ]}/>
 
       <section className="bg-gradient-to-br from-slate-950 via-violet-950 to-slate-900 text-white py-20 px-4">

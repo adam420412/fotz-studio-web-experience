@@ -94,21 +94,21 @@ export default function BlogGuerrillaMarketingCoTo() {
       <SEOHead
         title="Guerrilla Marketing — co to jest i jak działa? | Fotz Studio"
         description="Kompletny przewodnik po guerrilla marketingu: rodzaje, przykłady kampanii partyzanckich i jak zaplanować skuteczną niekonwencjonalną akcję marketingową."
-        canonical="https://fotz.pl/blog/guerrilla-marketing-co-to"
+        canonical="https://www.fotz-studio.pl/blog/guerrilla-marketing-co-to"
 
         keywords="Guerrilla Marketing co to jest, Guerrilla Marketing definicja, czym jest Guerrilla Marketing, Guerrilla Marketing w marketingu, Guerrilla Marketing przykłady, jak działa Guerrilla Marketing, Guerrilla Marketing strategia"
       />
       <ArticleSchema
         title="Guerrilla Marketing — co to jest i jak działa?"
         description="Kompletny przewodnik po guerrilla marketingu: rodzaje, przykłady kampanii partyzanckich i jak zaplanować skuteczną niekonwencjonalną akcję marketingową."
-        url="https://fotz.pl/blog/guerrilla-marketing-co-to"
+        url="https://www.fotz-studio.pl/blog/guerrilla-marketing-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Guerrilla Marketing", url: "https://fotz.pl/blog/guerrilla-marketing-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Guerrilla Marketing", url: "https://www.fotz-studio.pl/blog/guerrilla-marketing-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -116,7 +116,7 @@ export default function BlogGuerrillaMarketingCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Guerrilla Marketing", url: "https://fotz.pl" },
+              { name: "Guerrilla Marketing", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Guerrilla Marketing — co to jest i jak działa?

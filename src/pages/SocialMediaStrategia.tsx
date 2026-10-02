@@ -37,7 +37,7 @@ const SocialMediaStrategia = () => {
       <SEOHead
         title="Strategia Social Media — Planowanie i Zarządzanie Social Media"
         description="Strategia social media dla firm — tworzenie strategii, calendar content, zarządzanie profilami i mierzenie efektów. Fotz Studio."
-        canonical="https://fotz.pl/social-media/strategia"
+        canonical="https://www.fotz-studio.pl/social-media/strategia"
         keywords="strategia social media, social media strategia, plan social media, strategia marketingowa social media, jak zbudować strategię social media"
       />
       <ServiceSchema
@@ -47,9 +47,9 @@ const SocialMediaStrategia = () => {
         areaServed="Polska"
       />
       <BreadcrumbSchema items={[
-        { name: "Strona główna", url: "https://fotz.pl" },
-        { name: "Social Media", url: "https://fotz.pl/social-media" },
-        { name: "Strategia Social Media", url: "https://fotz.pl/social-media/strategia" },
+        { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+        { name: "Social Media", url: "https://www.fotz-studio.pl/social-media" },
+        { name: "Strategia Social Media", url: "https://www.fotz-studio.pl/social-media/strategia" },
       ]}/>
       <FAQSchema items={faqItems} />
 

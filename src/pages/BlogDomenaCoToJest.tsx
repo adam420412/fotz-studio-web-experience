@@ -73,9 +73,9 @@ export default function BlogDomenaCoToJest() {
   return (
     <>
       <SEOHead
-        title="Domena — co to jest i jak wybrać nazwę domeny? | fotz.pl"
+        title="Domena — co to jest i jak wybrać nazwę domeny? | FOTZ Studio"
         description="Domena co to jest — wyjaśniamy czym jest domena internetowa, jak wybierać nazwę domeny, ile kosztuje .pl i jak domena wpływa na SEO. Poradnik 2025."
-        canonical="https://fotz.pl/blog/domena-co-to-jest"
+        canonical="https://www.fotz-studio.pl/blog/domena-co-to-jest"
 
         keywords="Domena co to jest, Domena definicja, czym jest Domena, Domena przykłady, jak działa Domena, Domena znaczenie, Domena przewodnik"
       />
@@ -84,7 +84,7 @@ export default function BlogDomenaCoToJest() {
         description="Czym jest domena internetowa, jak działają rozszerzenia domen, ile kosztuje i jak wybrać dobrą nazwę dla firmy."
         datePublished="2025-01-08"
         dateModified="2025-03-18"
-        url="https://fotz.pl/blog/domena-co-to-jest"
+        url="https://www.fotz-studio.pl/blog/domena-co-to-jest"
       />
       <BreadcrumbSchema items={breadcrumbs} />
 

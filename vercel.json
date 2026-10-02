@@ -4,8 +4,12 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "redirects": [
+    { "source": "/blog/content-marketing-dla-firmy", "destination": "/blog/content-marketing-poradnik", "permanent": true },
+    { "source": "/project-type/social-media", "destination": "/realizacje", "permanent": true },
+    { "source": "/produkcja-video-poznan", "destination": "/uslugi/produkcja-video", "permanent": true },
+    { "source": "/strony-internetowe/torun", "destination": "/uslugi/strony-internetowe/torun", "permanent": true },
     { "source": "/blog/customer-health-score-co-to-jest-jak-zbudowac", "destination": "/blog/customer-health-score-co-to", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.fotz.pl" }], "destination": "https://fotz.pl/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "fotz-studio.pl" }], "destination": "https://www.fotz-studio.pl/:path*", "permanent": true },
     { "source": "/strony-internetowe", "destination": "/uslugi/strony-internetowe", "permanent": true },
     { "source": "/strony-internetowe-:city", "destination": "/uslugi/strony-internetowe/:city", "permanent": true },
     { "source": "/sklepy-internetowe-:city", "destination": "/uslugi/sklepy-internetowe/:city", "permanent": true },

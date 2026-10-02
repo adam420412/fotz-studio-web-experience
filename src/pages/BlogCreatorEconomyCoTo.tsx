@@ -92,21 +92,21 @@ export default function BlogCreatorEconomyCoTo() {
       <SEOHead
         title="Creator Economy — co to jest i jak działa? | Fotz Studio"
         description="Creator economy — definicja, modele zarobkowe, tiery twórców (nano/micro/macro), platformy i jak marki mogą współpracować z creator economy."
-        canonical="https://fotz.pl/blog/creator-economy-co-to"
+        canonical="https://www.fotz-studio.pl/blog/creator-economy-co-to"
 
         keywords="Creator Economy co to jest, Creator Economy definicja, czym jest Creator Economy, Creator Economy przykłady, jak działa Creator Economy, Creator Economy znaczenie, Creator Economy przewodnik"
       />
       <ArticleSchema
         title="Creator Economy — co to jest i jak działa?"
         description="Kompletny przewodnik po creator economy: modele zarobkowe, tiery twórców, platformy i strategie dla marek."
-        url="https://fotz.pl/blog/creator-economy-co-to"
+        url="https://www.fotz-studio.pl/blog/creator-economy-co-to"
         datePublished="2024-01-11"
       />
       <FAQSchema items={faqItems} />
       <BreadcrumbSchema items={[
-          { name: "Strona główna", url: "https://fotz.pl" },
-          { name: "Blog", url: "https://fotz.pl/blog" },
-          { name: "Creator Economy", url: "https://fotz.pl/blog/creator-economy-co-to" },
+          { name: "Strona główna", url: "https://www.fotz-studio.pl" },
+          { name: "Blog", url: "https://www.fotz-studio.pl/blog" },
+          { name: "Creator Economy", url: "https://www.fotz-studio.pl/blog/creator-economy-co-to" },
         ]}/>
 
       {/* Hero */}
@@ -114,7 +114,7 @@ export default function BlogCreatorEconomyCoTo() {
         <div className="max-w-4xl mx-auto text-center">
           <PageBreadcrumbs items={[
               { name: "Blog", url: "/blog" },
-              { name: "Creator Economy", url: "https://fotz.pl" },
+              { name: "Creator Economy", url: "https://www.fotz-studio.pl" },
             ]}/>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-4">
             Creator Economy — co to jest i jak działa?
