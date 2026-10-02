@@ -16,51 +16,63 @@ const services = [
   {
     icon: Users,
     title: "Prowadzenie Facebooka",
+    href: "/social-media/facebook",
     description: "Profesjonalne zarządzanie fanpage, tworzenie angażujących postów i budowanie społeczności."
   },
   {
     icon: Camera,
     title: "Instagram & Stories",
+    href: "/social-media/instagram",
     description: "Tworzenie atrakcyjnych treści wizualnych, reels i stories dla Twojej marki."
   },
   {
     icon: Target,
     title: "Kampanie Meta Ads",
+    href: "/performance-marketing/meta-ads",
     description: "Precyzyjnie targetowane kampanie reklamowe generujące leady i sprzedaż."
   },
   {
     icon: MessageSquare,
     title: "LinkedIn B2B",
+    href: "/social-media/linkedin",
     description: "Budowanie profesjonalnego wizerunku i pozyskiwanie klientów biznesowych."
   },
   {
     icon: BarChart3,
     title: "Analityka i Raportowanie",
+    href: "/social-media/strategia",
     description: "Monitoring wyników, analiza KPI i optymalizacja działań w czasie rzeczywistym."
   },
   {
     icon: Zap,
     title: "Content Marketing",
+    href: "/content-marketing/strategia",
     description: "Strategiczne tworzenie treści, które angażują i konwertują odbiorców."
   }
 ];
 
 const caseStudies = [
   {
-    title: "Kampania na Facebooku",
-    description: "Lokalna firma z Poznania odnotowała znaczący wzrost leadów dzięki precyzyjnie targetowanej kampanii. Wykorzystaliśmy Meta Ads, aby dotrzeć do konkretnych segmentów rynku.",
-    icon: Target
+    title: "Enea Stadion",
+    description: "Zobacz opis współpracy przy komunikacji obiektu, materiałach video i mediach społecznościowych.",
+    icon: Target,
+    href: "/realizacje/enea-stadion",
+    cta: "Zobacz realizację",
   },
   {
-    title: "Wzrost zaangażowania na Instagramie",
-    description: "Dla marki odzieżowej zbudowaliśmy lojalną społeczność dzięki strategicznemu wykorzystaniu reels i stories oraz profesjonalnym sesjom zdjęciowym.",
-    icon: Heart
+    title: "Produkcje video",
+    description: "Przejrzyj portfolio i sprawdź formę materiałów, które mogą wspierać komunikację Twojej firmy.",
+    icon: Camera,
+    href: "/realizacje",
+    cta: "Przejdź do portfolio",
   },
   {
-    title: "Sesje zdjęciowe dla restauracji",
-    description: "Profesjonalne zdjęcia potraw i wnętrz restauracji znacząco podniosły atrakcyjność profilu, przekładając się na wzrost rezerwacji.",
-    icon: Camera
-  }
+    title: "Jak porównać oferty?",
+    description: "Przygotuj brief i pytania o zakres, produkcję oraz raportowanie przed wyborem agencji.",
+    icon: Heart,
+    href: "/blog/agencja-social-media-poznan",
+    cta: "Przeczytaj poradnik",
+  },
 ];
 
 const faqItems = [
@@ -256,6 +268,7 @@ export default function SocialMediaPoznan() {
                 </div>
                 <h3 className="text-xl font-heading font-semibold mb-3">{service.title}</h3>
                 <p className="text-muted-foreground">{service.description}</p>
+                <Link to={service.href} className="inline-flex items-center gap-2 mt-5 underline underline-offset-4" aria-label={`Sprawdź zakres: ${service.title}`}>Sprawdź zakres <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
               </motion.div>
             ))}
           </div>
@@ -334,10 +347,10 @@ export default function SocialMediaPoznan() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Case Studies i Sukcesy Klientów
+              Realizacje i materiały do porównania
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Przykłady naszych realizacji dla firm z Poznania
+              Zobacz nasze prace i przygotuj pytania przed rozpoczęciem współpracy
             </p>
           </motion.div>
 
@@ -356,6 +369,7 @@ export default function SocialMediaPoznan() {
                 </div>
                 <h3 className="text-xl font-heading font-semibold mb-3">{study.title}</h3>
                 <p className="text-muted-foreground">{study.description}</p>
+                <Link to={study.href} className="inline-flex items-center gap-2 mt-5 underline underline-offset-4">{study.cta}<ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
               </motion.div>
             ))}
           </div>

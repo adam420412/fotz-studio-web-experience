@@ -6,7 +6,8 @@ import {
   BreadcrumbSchema,
   ServiceSchema,
 } from "@/components/seo/StructuredData";
-import { SM_PILLAR_PATH } from "@/data/socialMediaClusters";
+import { getSocialMediaGuide } from "@/data/socialMediaGuides";
+import { SM_PILLAR_PATH, SM_CLUSTERS_BY_SLUG } from "@/data/socialMediaClusters";
 import { useClusterArticles } from "@/hooks/useClusterArticles";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -26,7 +27,7 @@ interface Tier {
 const TIERS: Tier[] = [
   {
     name: "Start",
-    tagline: "Wejście w profesjonalny social media",
+    tagline: "Start profesjonalnej komunikacji",
     pricePln: 2900,
     bestFor: "Firmy lokalne, MŚP wchodzące w SM",
     includes: [
@@ -83,7 +84,7 @@ const FAQS = [
   },
   {
     q: "Na jaki okres podpisujemy umowę?",
-    a: "Standardowo na 6 lub 12 miesięcy. Pakiet Start dostępny też w trybie 3-miesięcznym (test).",
+    a: "Okres współpracy i zasady wypowiedzenia określamy w ofercie oraz umowie. Warto dopasować harmonogram do celu i cyklu zakupowego klientów.",
   },
   {
     q: "Czy budżet reklamowy wlicza się w pakiet?",
@@ -91,7 +92,7 @@ const FAQS = [
   },
   {
     q: "Czy mogę zmienić pakiet w trakcie współpracy?",
-    a: "Tak — możesz przejść na wyższy pakiet w dowolnym momencie. Zmiana na niższy obowiązuje od kolejnego okresu rozliczeniowego.",
+    a: "Zmianę zakresu i jej wpływ na cenę oraz terminy uzgadniamy indywidualnie. Warunki zmiany powinny być potwierdzone przed rozpoczęciem dodatkowych prac.",
   },
   {
     q: "Czy oferujecie indywidualną wycenę?",
@@ -110,13 +111,14 @@ const faqJsonLd = {
 };
 
 export default function AgencjaSocialMediaCennik() {
-  const { data: articles = [] } = useClusterArticles("cennik");
+  const { data: articles = [], isError, refetch } = useClusterArticles("cennik");
+  const guide = getSocialMediaGuide(SM_CLUSTERS_BY_SLUG.cennik);
 
   return (
     <>
       <SEOHead
         title="Cennik agencji social media 2026 — pakiety od 2900 zł"
-        description="Aktualne pakiety obsługi social media: Start 2900 zł, Business 5900 zł, Premium 12900 zł netto/mies. Sprawdź zakres i wybierz tier dla Twojej marki."
+        description="Aktualne pakiety obsługi social media: Start 2900 zł, Business 5900 zł, Premium 12900 zł netto/mies. Sprawdź zakres i porównaj zakres dla swojej marki."
         canonical={CANONICAL}
         keywords="cennik agencja social media, pakiety social media, ceny obsługi social media"
       />
@@ -138,21 +140,21 @@ export default function AgencjaSocialMediaCennik() {
 
       <Layout>
         <section className="container-wide px-6 md:px-12 pt-40 pb-16">
-          <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground mb-8">
+          <nav aria-label="Ścieżka nawigacji" className="text-sm text-muted-foreground mb-8">
             <Link to="/" className="hover:text-foreground">Strona główna</Link>
             <span className="mx-2">/</span>
             <Link to={SM_PILLAR_PATH} className="hover:text-foreground">Agencja social media</Link>
             <span className="mx-2">/</span>
-            <span className="text-foreground">Cennik</span>
+            <span aria-current="page" className="text-foreground">Cennik</span>
           </nav>
 
-          <span className="dv-eyebrow-muted">Klaster tematyczny · 15</span>
+          <span className="dv-eyebrow-muted">Zakres i wycena</span>
           <h1 className="font-geist text-4xl md:text-6xl tracking-[-0.03em] mt-2 mb-6 max-w-3xl leading-[1.05]">
             Cennik agencji social media
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-            Trzy pakiety abonamentowe dopasowane do skali Twojej marki. Bez ukrytych kosztów,
-            bez setupu, bez prowizji od budżetu reklamowego. Ceny netto miesięcznie.
+            Porównaj zakres publikacji, produkcji i obsługi reklam. Ceny podano netto miesięcznie.
+            Ostateczny zakres, harmonogram i warunki współpracy potwierdzamy w ofercie.
           </p>
         </section>
 
@@ -173,14 +175,14 @@ export default function AgencjaSocialMediaCennik() {
                     {tier.badge}
                   </Badge>
                 )}
-                <CardContent className="p-8 flex flex-col h-full">
+                <CardContent className="p-6 lg:p-8 flex flex-col h-full">
                   <div className="mb-6">
                     <h2 className="font-geist text-2xl tracking-[-0.02em]">{tier.name}</h2>
                     <p className="text-sm text-muted-foreground mt-1">{tier.tagline}</p>
                   </div>
                   <div className="mb-6">
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-4xl font-medium">
+                    <div className="flex flex-col xl:flex-row xl:items-baseline gap-2">
+                      <span className="text-4xl font-medium whitespace-nowrap">
                         {tier.pricePln.toLocaleString("pl-PL")} zł
                       </span>
                       <span className="text-sm text-muted-foreground">netto / mies.</span>
@@ -212,10 +214,22 @@ export default function AgencjaSocialMediaCennik() {
           </div>
         </section>
 
+        <section className="container-wide px-6 md:px-12 pb-20">
+          <div className="grid md:grid-cols-2 gap-8">
+            {guide.map((section) => (
+              <div key={section.title} className="dv-panel p-6 md:p-8">
+                <h2 className="font-geist text-2xl mb-4">{section.title}</h2>
+                <p className="text-muted-foreground leading-relaxed">{section.text}</p>
+              </div>
+            ))}
+          </div>
+          <Link to="/kontakt" className="dv-btn dv-btn-secondary mt-6">Prześlij brief do wyceny <ArrowRight aria-hidden="true" className="w-4 h-4" /></Link>
+        </section>
+
         {/* Calculator teaser */}
         <section className="container-wide px-6 md:px-12 pb-20">
-          <div className="rounded-2xl border border-[color:var(--dv-hair)] bg-card/40 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
-            <div className="flex items-start gap-4 max-w-2xl">
+          <div className="rounded-2xl border border-[color:var(--dv-hair)] bg-card/40 p-6 md:p-12 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
+            <div className="flex flex-col sm:flex-row items-start gap-4 max-w-2xl">
               <div className="w-12 h-12 rounded-xl bg-[color:var(--dv-accent-pink)]/15 flex items-center justify-center shrink-0">
                 <Calculator className="w-5 h-5 text-[color:var(--dv-accent-pink)]" />
               </div>
@@ -224,8 +238,8 @@ export default function AgencjaSocialMediaCennik() {
                   Potrzebujesz precyzyjnej wyceny?
                 </h2>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Skorzystaj z interaktywnego kalkulatora — wybierz platformy, liczbę treści,
-                  zakres video i otrzymaj wstępną estymację w 2 minuty.
+                  Sprawdź orientacyjny zakres w kalkulatorze. Szczegółową wycenę przygotujemy
+                  po omówieniu celu, potrzebnych materiałów i sposobu współpracy.
                 </p>
               </div>
             </div>
@@ -252,6 +266,14 @@ export default function AgencjaSocialMediaCennik() {
           </div>
         </section>
 
+        {isError && (
+          <section className="container-wide px-6 md:px-12 pb-12" aria-label="Dodatkowe artykuły">
+            <div role="alert" className="dv-panel p-6">
+              <p className="text-muted-foreground mb-4">Nie udało się wczytać dodatkowych artykułów o cenach.</p>
+              <button type="button" onClick={() => void refetch()} className="dv-btn dv-btn-secondary">Spróbuj ponownie</button>
+            </div>
+          </section>
+        )}
         {/* Related articles from cluster */}
         {articles.length > 0 && (
           <section className="container-wide px-6 md:px-12 pb-20">
@@ -283,14 +305,14 @@ export default function AgencjaSocialMediaCennik() {
           <div className="rounded-2xl bg-gradient-to-r from-[#75143F] to-[#0F3053] p-10 md:p-14 text-center">
             <Sparkles className="w-8 h-8 text-white/80 mx-auto mb-4" />
             <h2 className="font-geist text-3xl md:text-4xl text-white tracking-[-0.02em] mb-4">
-              Nie wiesz który pakiet wybrać?
+              Nie wiesz, jaki zakres wybrać?
             </h2>
             <p className="text-white/80 max-w-xl mx-auto mb-8">
-              Umów 30-minutową bezpłatną konsultację. Doradzimy zakres dopasowany do Twoich celów,
+              Umów 15 minut rozmowy. Omówimy zakres dopasowany do Twoich celów,
               branży i etapu marki.
             </p>
             <Link
-              to="/kontakt"
+              to="/konsultacja"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-[#0E0E0E] font-medium hover:bg-white/90 transition-colors"
             >
               Bezpłatna konsultacja

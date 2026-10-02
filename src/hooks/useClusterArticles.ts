@@ -2,9 +2,10 @@ import { useQuery } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import type { BlogArticle } from "./useBlogArticles";
 
-export function useClusterArticles(clusterSlug: string) {
+export function useClusterArticles(clusterSlug: string, enabled = true) {
   return useQuery({
     queryKey: ["cluster-articles", clusterSlug],
+    enabled: enabled && Boolean(clusterSlug),
     queryFn: async () => {
       const { data, error } = await supabase
         .from("blog_articles")

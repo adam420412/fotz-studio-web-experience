@@ -10,31 +10,31 @@ export function Services() {
       num: "01",
       title: t("Kampanie reklamowe", "Advertising campaigns"),
       description: t(
-        "Jako agencja marketingowa oferujemy kompleksowy zakres usług, obejmujący tworzenie i realizację kampanii reklamowych na miarę Twoich potrzeb. Specjalizujemy się w kampaniach Meta Ads i Google Ads, zapewniając skuteczne dotarcie do Twojej grupy docelowej i maksymalny zwrot z inwestycji.",
+        "Łączymy pomysł, kreację i emisję reklam. Dobieramy kanały do celu kampanii, przygotowujemy materiały i sprawdzamy, które działania przynoszą wartościowe zapytania.",
         "As a marketing agency, we offer a comprehensive range of services, including creating and executing advertising campaigns tailored to your needs."
       ),
       features: ["Meta Ads", "Google Ads", "Remarketing", t("Optymalizacja ROI", "ROI optimization")],
-      href: "/uslugi",
+      href: "/kampanie-reklamowe",
     },
     {
       num: "02",
       title: t("Social Media Marketing", "Social Media Marketing"),
       description: t(
-        "Skuteczna obecność w social media to klucz do budowania świadomości marki i angażowania klientów. Nasza agencja oferuje kompleksową obsługę social media, od tworzenia strategii content marketing po realizację kampanii reklamowych na Facebooku, Instagramie i TikToku.",
+        "Od strategii i planu publikacji po zdjęcia, rolki i reklamy. Tworzymy spójną komunikację marki na Facebooku, Instagramie i TikToku, z zakresem dopasowanym do Twojej firmy.",
         "Effective social media presence is the key to building brand awareness and engaging customers."
       ),
       features: ["Facebook Ads", "Instagram Ads", "TikTok Ads", "Content marketing"],
-      href: "/uslugi",
+      href: "/agencja-social-media",
     },
     {
       num: "03",
       title: t("Google Ads & Performance", "Google Ads & Performance"),
       description: t(
-        "Google Ads to potężne narzędzie, które, właściwie wykorzystane, generuje wysoki przychód. Nasza agencja specjalizuje się w tworzeniu i optymalizacji kampanii Google Ads, zapewniając maksymalny zwrot z inwestycji. Dbamy o każdy detal, od doboru słów kluczowych po tworzenie angażujących kreacji.",
-        "Google Ads is a powerful tool that, when used properly, generates high revenue."
+        "Docieraj do osób, które szukają Twoich produktów i usług. Przygotowujemy kampanie Google Ads, pomiar konwersji oraz plan testów, a decyzje o budżecie opieramy na wynikach.",
+        "Reach people searching for your products and services. We prepare Google Ads campaigns, conversion measurement and tests, and use results to inform budget decisions."
       ),
       features: ["Search Ads", "Display Ads", "YouTube Ads", "Performance Max"],
-      href: "/uslugi",
+      href: "/performance-marketing/google-ads",
     },
   ];
 

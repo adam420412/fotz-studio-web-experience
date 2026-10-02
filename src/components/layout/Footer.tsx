@@ -197,7 +197,7 @@ export function Footer() {
       await submitWeb3Form({
         subject: "Newsletter signup - Footer",
         from_name: "Fotz Studio - Newsletter",
-        email: email,
+        email: result.data,
         message: "Zapis do newslettera z footera",
       });
       setIsSubmitted(true);
@@ -256,22 +256,27 @@ export function Footer() {
               Zapisz się do newslettera
             </h3>
             <p className="dv-mono uppercase tracking-[0.14em] text-[11px] text-white/50">
-              Porady marketingowe · checklisty · nowości — raz w miesiącu
+              Porady marketingowe · checklisty · nowości
             </p>
           </div>
           {isSubmitted ? (
-            <div className="flex items-center gap-2 text-[color:var(--dv-accent-pink)]">
+            <div role="status" className="flex items-center gap-2 text-[color:var(--dv-accent-pink)]">
               <CheckCircle className="w-5 h-5" strokeWidth={1.5} />
-              <span className="font-medium">Dziękujemy za zapis!</span>
+              <span className="font-medium">Prośba o zapis wysłana.</span>
             </div>
           ) : (
             <form
               onSubmit={handleNewsletterSubmit}
-              className="flex gap-2 w-full md:w-auto max-w-md"
+              className="flex flex-wrap gap-2 w-full md:w-auto max-w-md"
             >
               <div className="flex-1">
                 <Input
                   aria-label="Adres e-mail do newslettera"
+                  autoComplete="email"
+                  required
+                  disabled={isSubmitting}
+                  aria-invalid={Boolean(error)}
+                  aria-describedby={error ? "footer-newsletter-error footer-newsletter-privacy" : "footer-newsletter-privacy"}
                   type="email"
                   placeholder="Twój email"
                   value={email}
@@ -279,7 +284,7 @@ export function Footer() {
                   className="h-12 bg-white/5 border-white/15 text-white placeholder:text-white/40 focus-visible:ring-[color:var(--dv-accent-pink)]"
                 />
                 {error && (
-                  <p className="text-xs text-destructive mt-1">{error}</p>
+                  <p id="footer-newsletter-error" role="alert" className="text-xs text-red-300 mt-1">{error}</p>
                 )}
               </div>
               <button
@@ -288,7 +293,7 @@ export function Footer() {
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
-                  <Loader2 className="w-4 h-4 animate-spin" strokeWidth={1.5} />
+                  <><Loader2 aria-hidden="true" className="w-4 h-4 animate-spin" strokeWidth={1.5} /><span className="sr-only">Wysyłanie prośby o zapis</span></>
                 ) : (
                   <>
                     <Send className="w-3.5 h-3.5" strokeWidth={1.5} />
@@ -296,6 +301,9 @@ export function Footer() {
                   </>
                 )}
               </button>
+              <p id="footer-newsletter-privacy" className="basis-full text-xs text-white/60">
+                Zgłaszasz chęć otrzymywania newslettera. <Link to="/polityka-prywatnosci" className="underline underline-offset-2">Polityka prywatności</Link>.
+              </p>
             </form>
           )}
         </div>
