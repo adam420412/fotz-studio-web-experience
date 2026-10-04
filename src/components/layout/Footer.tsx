@@ -85,7 +85,7 @@ const footerLinks = {
   ],
   socialMedia: [
     { name: "Facebook dla firm", href: "/social-media/facebook" },
-    { name: "Instagram dla firm", href: "/social-media/instagram" },
+    { name: "Instagram dla firm", href: "/blog/instagram-dla-firmy" },
     { name: "TikTok dla firm", href: "/social-media/tiktok" },
     { name: "LinkedIn dla firm", href: "/social-media/linkedin" },
     { name: "YouTube dla firm", href: "/social-media/youtube" },
